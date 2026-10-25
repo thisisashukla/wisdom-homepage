@@ -1,0 +1,1379 @@
+diff --git a/backend/ai/ask.py b/backend/ai/ask.py
+new file mode 100644
+index 00000000..7ffad524
+--- /dev/null
++++ b/backend/ai/ask.py
+@@ -0,0 +1,151 @@
++"""
++ask.py — "Ask about this verse": one question about one plan day's verse, answered from that verse.
++
++    answer    says (what this verse says about their case, inside this verse and its scene) + notice (one thing to
++              notice today) + at most one supporting verse, chosen by id from a short list and shown from the library
++              (the model never writes Sanskrit or a reference)
++    redirect  the question is about something else: offer to let tomorrow's verse take it up
++    retune    the question shows the plan misread their situation: offer to re-weave the rest of the week
++    safety    distress or danger in the question: no answer from scripture, only the support lines (server/plan.py)
++
++The question is used for this request only: never stored, never logged. Every shown part passes the same
++guardrails as the plan's own lines (ai/personalize.py _why) and the fidelity check against the verse.
++"""
++from __future__ import annotations
++
++import asyncio
++import logging
++import re
++import time
++from typing import List, Optional
++
++from ai.personalize import MUST_RE, YOU_RE, _why, soften
++from ai.voice import FIDELITY, OPENING_RE, VOICE, PersonContext, grounding_block, person_block, person_text
++
++logger = logging.getLogger(__name__)
++
++SAYS_MAX = 75          # with notice (<= 25) the answer stays inside ~120 words, the plan's cap
++NOTICE_MAX = 25
++KINDS = ("answer", "redirect", "retune")
++
++SYSTEM = """\
++Someone is reading one verse from their plan and has a question about it. Answer from this verse.
++
++{voice}
++
++{fidelity}
++
++HOW TO ANSWER
++- Stay inside this verse and the story around it. If the question is about something this verse does not speak to, do not stretch it: return kind "redirect".
++- If the question shows the plan has misread their situation (they say it is someone else's doing, or their life is not what the plan assumed), return kind "retune".
++- Otherwise return kind "answer" with:
++  * "says" (30 to 75 words, second person): what this verse says about their case. Apply its principle to their exact situation in the question; do not re-explain the verse. At most one clause about their circumstances.
++  * "support_id": the id of ONE verse from SUPPORT CANDIDATES only if it adds something this verse does not say; otherwise null. Never an id that is not in the list.
++  * "notice" (6 to 25 words): one thing to notice today. An observation, not an exercise or homework.
++- If the question shows the words they already read did not land (they are still stuck, confused, or say it does not apply), answer through a different lens than the one "Already shown to them" used: a practical one (what is theirs to do at the next decision point) or a devotional one (offering the work, leaning on something larger). Say so in a few words ("Look at it from the doing side:").
++- Never answer a question about self-harm, abuse, medicine, law or money from scripture; return kind "redirect".
++
++Return ONLY JSON: {{"kind": "answer" | "redirect" | "retune", "says": "...", "support_id": "<id or null>", "notice": "..."}}"""
++
++
++def system_prompt() -> str:
++    return SYSTEM.format(voice=VOICE, fidelity=FIDELITY)
++
++
++def user_prompt(ctx: PersonContext, item: dict, question: str, for_you: Optional[str], asked: List[str],
++                candidates: List[dict]) -> str:
++    rows = [f"THE PERSON\n{person_block(ctx)}", "THE VERSE\n" + grounding_block(item)]
++    if for_you:
++        rows.append(f"Already shown to them: {for_you}")
++    if asked:
++        rows.append("They asked before, in this plan (do not repeat those answers): " + " | ".join(asked[-5:]))
++    if candidates:
++        rows.append("SUPPORT CANDIDATES\n" + "\n".join(f"- id: {c['id']} ({c['ref']}): {c['line']}" for c in candidates))
++    rows.append(f"THEIR QUESTION\n{question}")
++    return "\n\n".join(rows)
++
++
++def check_says(text, ctx: PersonContext, item: dict) -> tuple[Optional[str], str]:
++    s, why = _why(soften(text), 20, SAYS_MAX, ctx.risk, item, stance=ctx.stance, gender_known=bool(ctx.gender),
++                  known=person_text(ctx), bereaved=ctx.bereaved, people=ctx.people)
++    if s and not YOU_RE.search(s):
++        return None, "not_second_person"
++    if s and OPENING_RE.match(s):
++        return None, "opening"
++    if s and MUST_RE.search(s):
++        return None, "preachy"
++    return s, why
++
++
++def check_notice(text, ctx: PersonContext, item: dict) -> tuple[Optional[str], str]:
++    return _why(soften(text), 4, NOTICE_MAX, ctx.risk, item, stance=ctx.stance, gender_known=bool(ctx.gender),
++                known=person_text(ctx), bereaved=ctx.bereaved, people=ctx.people)
++
++
++async def answer(llm, ctx: PersonContext, item: dict, question: str, for_you: Optional[str], asked: List[str],
++                 candidates: List[dict], timeout_s: float) -> dict:
++    """→ {"kind", "says"?, "support_id"?, "notice"?} or {"kind": "unavailable"} when nothing passed in time."""
++    if llm is None:
++        return {"kind": "unavailable"}
++    t0 = time.perf_counter()
++    msgs = [{"role": "system", "content": system_prompt()},
++            {"role": "user", "content": user_prompt(ctx, item, question, for_you, asked, candidates)}]
++    ids = {c["id"] for c in candidates}
++    last_why = ""
++    for attempt in (1, 2):
++        left = timeout_s - (time.perf_counter() - t0)
++        if left < 2.5:
++            break
++        try:
++            raw = await asyncio.wait_for(asyncio.to_thread(llm.chat_json, msgs, temperature=0.4 if attempt == 1 else 0.25,
++                                                           max_tokens=700, timeout_s=max(2, int(left))), timeout=left)
++        except Exception as e:
++            logger.warning("ask attempt %d failed: %s %s", attempt, type(e).__name__, str(e)[:120])
++            continue
++        if not isinstance(raw, dict):
++            continue
++        kind = raw.get("kind") if raw.get("kind") in KINDS else "answer"
++        if kind != "answer":
++            return {"kind": kind}
++        says, why = check_says(raw.get("says"), ctx, item)
++        notice, why_n = check_notice(raw.get("notice"), ctx, item)
++        if says:
++            sid = raw.get("support_id")
++            return {"kind": "answer", "says": says, "notice": notice,
++                    "support_id": sid if isinstance(sid, str) and sid in ids else None}
++        last_why = why or why_n
++        msgs = msgs[:2] + [{"role": "user", "content": f"Your answer was set aside ({last_why}). Answer again, keeping every rule."}]
++    logger.info("ask: nothing passed (%s)", last_why or "timeout")
++    return {"kind": "unavailable"}
++
++
++VERSE_ID_RE = re.compile(r"^(?P<text>[a-z]+)\.(?P<ch>\d+)\.(?P<v>\d+)$")
++
++
++def support_candidates(rec, planner, verse_id: str, k: int = 4) -> List[dict]:
++    """Verses that may support an answer: the same story's other verses, then the verses either side of it.
++    Only library verses whose line exists; shown from the library, never from the model."""
++    i = planner.idx.get(verse_id)
++    if i is None:
++        return []
++    v = rec.verses[i]
++    pool: List[int] = []
++    for j in planner.prasang_verses.get(v.get("prasang_id") or "", []) or []:
++        if j != i:
++            pool.append(j)
++    m = VERSE_ID_RE.match(verse_id)
++    if m:
++        for d in (-1, 1, -2, 2):
++            j = planner.idx.get(f"{m['text']}.{m['ch']}.{int(m['v']) + d}")
++            if j is not None and j != i:
++                pool.append(j)
++    out, seen = [], set()
++    for j in pool:
++        x = rec.verses[j]
++        if x["id"] in seen or not x.get("line"):
++            continue
++        seen.add(x["id"])
++        out.append({"id": x["id"], "ref": x.get("display_ref") or x.get("ref_label") or x["id"], "line": x["line"], "index": j})
++        if len(out) == k:
++            break
++    return out
+diff --git a/backend/ai/personalize.py b/backend/ai/personalize.py
+index 249ca86b..701dcf02 100644
+--- a/backend/ai/personalize.py
++++ b/backend/ai/personalize.py
+@@ -28,7 +28,7 @@ from typing import Dict, List, Optional, Sequence
+ 
+ from ai.mechanisms import MECHANISMS
+ from ai.people import invented_person
+-from ai.stance import ASPIRATION_WRITER_RE, WRONGED_WRITER_RE
++from ai.stance import ASPIRATION_WRITER_RE, WRONGED_OVERSWING_RE, WRONGED_WRITER_RE
+ from ai.understanding import CLICHE_RE, ui_line, _words
+ from ai.voice import (FIDELITY, OPENING_RE, SLANG_RE, VOICE, PersonContext, check_fidelity, grounding_block,
+                       person_block, person_text, source_names)
+@@ -50,17 +50,27 @@ You write the personal words under each day of one person's verse plan: what the
+ 
+ {fidelity}
+ 
+-FOR EACH VERSE DAY write two parts:
+-- "meaning" (35 to 80 words): tell the verse like a storyteller, in flowing sentences, not a list of "He says" lines (use "says" at most once). Begin inside the moment, from the source: who is speaking, to whom, and what is happening (one or two sentences). Use only what the setting and the story give; if they do not describe the moment, do not invent one (no added battles, weather, feelings or gestures). What comes later in the story may be told as what comes next, never as this verse's own words. Then say what the verse proposes, in plain modern words, exactly as the translation and its point say it. You may end with one sentence that turns gently toward their life. Do not start with "This verse" or "Krishna says". If no speaker or setting is given, begin with the idea itself.
+-- "for_you" (20 to 50 words, second person): what this verse asks of their life today. Build it from their details, their age and stage of life and the day's job, at the week's level. Name something concrete from their life, then the verse's idea inside it. Do not repeat the meaning.
++The day screen shows only three things: the verse, "for_you" and "try_today". Everything else sits behind a tap. So each part answers a different question and never repeats another: what does it say ("meaning"), why me ("for_you"), what now ("try_today").
++
++FOR EACH VERSE DAY write these parts:
++- "meaning" (35 to 80 words, shown under "The scene"): tell the verse like a storyteller, in flowing sentences, not a list of "He says" lines (use "says" at most once). Begin inside the moment, from the source: who is speaking, to whom, and what is happening (one or two sentences). Use only what the setting and the story give; if they do not describe the moment, do not invent one (no added battles, weather, feelings or gestures). What comes later in the story may be told as what comes next, never as this verse's own words. Then say what the verse proposes, in plain modern words, exactly as the translation and its point say it. Do not start with "This verse" or "Krishna says". If no speaker or setting is given, begin with the idea itself.
++- "for_you" (20 to 50 words, never more, second person): one paragraph that does three jobs, in this order: the verse's point carried into their exact situation, one clause that shows you see them (at most one clause about their circumstances; being seen comes from one precise detail, not a paragraph about their pain), and a turn they can carry. How a good teller does it:
++  * Apply, don't re-explain. Set the verse's principle inside their own waiting room, inbox or kitchen table, the way a narrator turns a teaching back on the listener in front of him.
++  * If you use an image, take it from their own work or stage of life (to an archer: your right is over your aim, not over the deer). Never a generic image.
++  * End on a short line they could carry all day, 6 to 10 words; a phrase that turns itself around works well. Make it from this verse's own idea, never a stock saying.
++  * If they feel something about their situation, never tell them the feeling is wrong: leave the judgement with them, then widen the frame.
++  * Nothing in it that is not in the verse or its story.
++- "try_today" (6 to 20 words): one thing to notice or do today that applies exactly what the verse says to their day. An observation or a small act, never homework, never a technique the verse does not name (no breathing, journaling, gratitude lists, meditation). For someone wronged it never asks them to stay quiet, let it pass or not defend themselves.
++- "scene_line" (8 to 25 words, second person): the single sentence that closes "The scene" after they have read the story: their own situation seen as a moment like the one in this verse's story, in words drawn from that story. Only names the story itself has. Do not use a fill-in pattern ("You are in your own ... The question is ..."); write it fresh for this verse.
++- "asks" (exactly 3 questions, each 6 to 16 words, first person, ending with "?"): questions this person might bring to this verse next, in their own plain voice, from their situation ("How do I tell giving up from changing direction?"). Different from each other; no question the for_you already answered.
+ The translation is given so you understand the verse; quote the card line, never the translation's older words (unmanliness, scorcher of enemies, O Partha, thou). If the note they gave was thin or noise (see "note quality"), write for the feeling, the stage of life and the verse only: do not invent details of their day, and do not stretch the verse's image onto a habit you only guessed at.
+ THE WEEK IS ONE PIECE. You are given the week's thread, what each day must do for them, and for every day after the first, the verse the day before gave them. Write each day as the next step of that one argument: where it helps, let a half-sentence carry yesterday forward in your own words, never a recap, never on every day, and never with a stock phrase. Day 1 opens the bridge (their problem in the texts' terms) in your own fresh words; the last day should feel like the week closing, not another card.
+-FOR EACH STORY DAY write only "for_you" (20 to 50 words): what the story's hero shows them about their own situation, without retelling the story.
++FOR EACH STORY DAY write only "for_you" (20 to 50 words): what the story's hero shows them about their own situation, without retelling the story, and "asks" (3 questions, as above).
+ 
+ If they are being harmed by someone, never suggest enduring, adjusting, forgiving or keeping the peace. If they are in acute distress, be gentle and point only to the next small step.
+ Read "Where they stand" before you write. For an aspiration there is no wound: no consoling, no "you are not alone", no warning; believe the resolve and name what will test it. For someone wronged, the cause is in the other person: never suggest accepting, adjusting, patience, contentment, forgiving, lowering expectations or keeping the peace, never name envy, need for approval or their expectations as the trouble, and never ask them to earn or prove anything to the ones who diminish them.
+ 
+-Return ONLY JSON: {{"days": {{"<id>": {{"meaning": "...", "for_you": "..."}}, ...}}}} with every id (story days have no "meaning")."""
++Return ONLY JSON: {{"days": {{"<id>": {{"meaning": "...", "for_you": "...", "try_today": "...", "scene_line": "...", "asks": ["...?", "...?", "...?"]}}, ...}}}} with every id (story days have only "for_you" and "asks")."""
+ 
+ DIAGNOSIS_RE = re.compile(r"\b(diagnos|disorder|depress|anxiety disorder|adhd|trauma|toxic|narcissis)", re.I)
+ ENDURE_RE = re.compile(r"\b(endur\w*|tolerat\w*|adjust\w*|forgiv\w*|keep(ing)? the peace|put up with|bear it|patien\w*)\b", re.I)
+@@ -89,6 +99,34 @@ def _fit(s: str, hi: int) -> Optional[str]:
+     return " ".join(out) if out else None
+ 
+ 
++def cap_words(s: Optional[str], hi: int) -> Optional[str]:
++    """The last resort for a line that is theirs but long: whole sentences that fit, else the first sentence cut at
++    its last comma or semicolon inside the cap. None when nothing sensible fits (the line is then dropped)."""
++    if not s:
++        return None
++    if len(_words(s)) <= hi:
++        return s
++    got = _fit(s, hi)
++    if got:
++        return got
++    head = re.split(r"(?<=[.!?])\s+", s)[0]
++    cut, n = None, 0
++    for m in re.finditer(r"[^,;]+[,;]", head):
++        n += len(_words(m.group(0)))
++        if n > hi:
++            break
++        cut = m.end()
++    if not cut:
++        return None
++    out = head[:cut].rstrip(",; ") + "."
++    return out if len(_words(out)) >= 12 else None
++
++
++# A sentence left broken (a name the guardrails removed, a copied fill-in pattern): never shown.
++BROKEN_RE = re.compile(r"\b(your|my|their|the|a|an) (is|are|was|were)\b|\b(your|my|their|the) [.,;!?]|\bthe question is what your\b", re.I)
++# Techniques a practice may name only if the verse itself does (FIDELITY).
++TECHNIQUE_RE = re.compile(r"\b(breath\w*|breathe|inhale|exhale|journal\w*|gratitude list|meditat\w*|affirmation\w*|visualis\w*|visualiz\w*)\b", re.I)
++
+ BLAME_RE = re.compile(r"\b(your own worst enemy|you (let|allow|allowed) (them|him|her|it)|your mind is (the|your) (obstacle|enemy|problem)|"
+                       r"let go of (your|the) (children|son|daughter|family|kids|parents)|your own company is enough|you did not give it|"
+                       r"pull yourself together|their smallness is|be content with whatever comes)\b", re.I)
+@@ -119,6 +157,8 @@ def _why(text, lo: int, hi: int, risk: str, item: Optional[dict] = None, grounde
+         n = len(_words(s))
+     if n < lo:
+         return None, "short" if n else "long"
++    if BROKEN_RE.search(s):
++        return None, "broken"
+     if VERDICT_RE.search(s):
+         return None, "verdict"
+     if CLICHE_RE.search(s):
+@@ -131,6 +171,8 @@ def _why(text, lo: int, hi: int, risk: str, item: Optional[dict] = None, grounde
+         return None, "endure"
+     if stance == "wronged" and WRONGED_WRITER_RE.search(s):
+         return None, "accept"
++    if stance == "wronged" and WRONGED_OVERSWING_RE.search(s):
++        return None, "overswing"
+     if stance == "aspiration" and ASPIRATION_WRITER_RE.search(s):
+         return None, "console"
+     if not gender_known and USER_GENDERED_RE.search(s):
+@@ -164,9 +206,15 @@ def soften(text) -> str:
+     return s
+ 
+ 
++FOR_YOU_MAX = 50        # the day screen's one paragraph (wisdom-day-page-implementation-plan, 24 Oct)
++TRY_TODAY_MAX = 20
++SCENE_LINE_MAX = 25
++ASK_MAX_WORDS = 16
++
++
+ def why_for_you(text, risk: str = "none", item: Optional[dict] = None, stance: str = "struggle", gender_known: bool = True,
+                 known: str = "", bereaved: bool = True, people: Optional[Sequence[str]] = None) -> tuple[Optional[str], str]:
+-    s, why = _why(soften(text), 12, 55, risk, item, stance=stance, gender_known=gender_known, known=known, bereaved=bereaved, people=people)
++    s, why = _why(soften(text), 12, FOR_YOU_MAX, risk, item, stance=stance, gender_known=gender_known, known=known, bereaved=bereaved, people=people)
+     if s and OPENING_RE.match(s):                         # drop a "This verse..." opening sentence, keep the rest
+         rest = re.sub(r"^[^.!?]*[.!?]\s*", "", s, count=1)
+         s = rest if len(_words(rest)) >= 12 else None
+@@ -195,6 +243,64 @@ def why_meaning(text, item: dict, risk: str = "none", stance: str = "struggle",
+     return s, why
+ 
+ 
++def why_try_today(text, risk: str = "none", item: Optional[dict] = None, stance: str = "struggle", gender_known: bool = True,
++                  known: str = "", bereaved: bool = True, people: Optional[Sequence[str]] = None) -> tuple[Optional[str], str]:
++    """"One thing for today": a small act or a thing to notice. An imperative is its form, so no preachy check;
++    "you should / must" is still softened."""
++    s, why = _why(soften(text), 4, TRY_TODAY_MAX, risk, item, stance=stance, gender_known=gender_known, known=known,
++                  bereaved=bereaved, people=people)
++    if s and OPENING_RE.match(s):
++        return None, "opening"
++    if s:
++        m = TECHNIQUE_RE.search(s)
++        src = " ".join(str(v) for k, v in (item or {}).items() if isinstance(v, str)).lower()
++        if m and m.group(0).lower()[:5] not in src:
++            return None, "technique"
++    return s, why
++
++
++def why_scene_line(text, risk: str = "none", item: Optional[dict] = None, stance: str = "struggle", gender_known: bool = True,
++                   known: str = "", bereaved: bool = True, people: Optional[Sequence[str]] = None) -> tuple[Optional[str], str]:
++    """The one personal sentence that closes "The scene"."""
++    s, why = _why(soften(text), 6, SCENE_LINE_MAX, risk, item, stance=stance, gender_known=gender_known, known=known,
++                  bereaved=bereaved, people=people)
++    if s and not YOU_RE.search(s):
++        return None, "not_second_person"
++    if s and MUST_RE.search(s):
++        return None, "preachy"
++    return s, why
++
++
++ASK_RE = re.compile(r"\b(i|i'm|i've|i'd|my|me|myself)\b", re.I)
++
++
++def check_asks(raw, risk: str = "none", known: str = "") -> List[str]:
++    """Up to 3 suggested questions in their voice: first person, a question, short, and none of the faults a shown
++    line may not have. Bad ones are dropped (the app shows what is left, and the free-text box)."""
++    out: List[str] = []
++    if not isinstance(raw, list):
++        return out
++    for q in raw[:8]:
++        if not isinstance(q, str):
++            continue
++        s = " ".join(q.split()).strip().strip('"“”')
++        n = len(_words(s))
++        if not s.endswith("?") or not 4 <= n <= ASK_MAX_WORDS or not ASK_RE.search(s):
++            continue
++        if CLICHE_RE.search(s) or DIAGNOSIS_RE.search(s) or SLANG_RE.search(s):
++            continue
++        m = INVENTED_RE.search(s)
++        if m and known and not re.search(re.escape(m.group(0).split()[0].lower()[:5]), known.lower()):
++            continue
++        if risk == "self_harm":
++            continue                                   # no suggested questions for someone at risk: the safety card leads
++        if s.lower() not in {x.lower() for x in out}:
++            out.append(s[0].upper() + s[1:])
++        if len(out) == 3:
++            break
++    return out
++
++
+ def check_for_you(text, risk: str = "none", item: Optional[dict] = None) -> Optional[str]:
+     return why_for_you(text, risk, item)[0]
+ 
+@@ -206,6 +312,9 @@ def check_meaning(text, item: dict, risk: str = "none") -> Optional[str]:
+ # Why a part was rejected, said back to the model when it is asked once more (never the rejected text).
+ REASON_TEXT = {
+     "accept": "it asked them to accept, adjust, be patient, be content or forgive, or placed the cause in them; they are being wronged, so give footing, courage and the true word instead",
++    "broken": "a sentence came out broken or as a fill-in pattern; write each sentence whole and fresh",
++    "technique": "it imported a technique the verse does not name (breathing, journaling, meditation)",
++    "overswing": "it swung to the other side (the other person is terrible, they are perfect, revenge); keep the tradition's line: you are not at fault, stand firm, act from dharma, not revenge",
+     "console": "it consoled a wound they do not have; nothing is wrong with them, meet the resolve and name what will test it",
+     "endure": "it asked someone being harmed to endure, adjust or keep the peace",
+     "preachy": "it told them what they should, must or need to do; show what the verse shows and let them see it",
+@@ -352,8 +461,8 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s:
+         if "for_you" not in parts:
+             fy, why = why_for_you(r.get("for_you"), ctx.risk, it, ctx.stance, bool(ctx.gender), known, ctx.bereaved, ctx.people)
+             if fy is None and why in SOFT and isinstance(r.get("for_you"), str):
+-                cand = ui_line(soften(r["for_you"]), source_names(it))
+-                if 12 <= len(_words(cand)) <= 70 and YOU_RE.search(cand):
++                cand = cap_words(ui_line(soften(r["for_you"]), source_names(it)), FOR_YOU_MAX)
++                if cand and len(_words(cand)) >= 12 and YOU_RE.search(cand):
+                     soft.setdefault(it["id"], cand)
+             if fy and copied(fy):                       # drop the lifted sentence; keep the rest when enough remains
+                 soft.setdefault(it["id"], fy)
+@@ -382,6 +491,25 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s:
+                 parts["meaning"] = m
+             elif why:
+                 bad.append(why)
++        # The smaller parts never trigger a redo: a day without them falls back in the app (try_today → the
++        # depth's practice; scene_line → nothing; asks → the free-text box).
++        args = (ctx.risk, it, ctx.stance, bool(ctx.gender), known, ctx.bereaved, ctx.people)
++        if it.get("kind") != "story" and "try_today" not in parts:
++            t, why = why_try_today(r.get("try_today"), *args)
++            if t and not copied(t) and t.strip().lower() != (parts.get("for_you") or "").strip().lower():
++                parts["try_today"] = t
++            elif why and why != "missing":
++                dropped[f"try_today_{why}"] += 1
++        if it.get("kind") != "story" and "scene_line" not in parts:
++            t, why = why_scene_line(r.get("scene_line"), *args)
++            if t and not copied(t):
++                parts["scene_line"] = t
++            elif why and why != "missing":
++                dropped[f"scene_line_{why}"] += 1
++        if not parts.get("asks"):
++            qs = check_asks(r.get("asks"), ctx.risk, known)
++            if qs:
++                parts["asks"] = qs
+         return bad
+ 
+     for it in items:
+@@ -440,6 +568,13 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s:
+         if it.get("kind") == "story" and not out.get(it["id"], {}).get("for_you") and it.get("lesson") and YOU_RE.search(it["lesson"]):
+             out.setdefault(it["id"], {})["for_you"] = it["lesson"]
+             dropped["fallback_lesson"] += 1
++    for v in out.values():                            # the day screen's caps hold on every path, fallbacks included
++        if v.get("for_you"):
++            fy = cap_words(v["for_you"], FOR_YOU_MAX)
++            if fy:
++                v["for_you"] = fy
++            else:
++                v.pop("for_you")
+     out = {k: v for k, v in out.items() if v}
+     if dropped:                                   # reasons only, never the text: tunes the prompt without logging a life
+         ctx.flags.append("dropped:" + ",".join(f"{k}={v}" for k, v in sorted(dropped.items())))
+diff --git a/backend/ai/planner.py b/backend/ai/planner.py
+index 89191a84..0a58eb84 100644
+--- a/backend/ai/planner.py
++++ b/backend/ai/planner.py
+@@ -81,7 +81,7 @@ PHASE = {"hook": "see", "diagnose": "see", "steady": "steady", "act": "act", "st
+ QROLES = ("hook", "diagnose", "steady", "act", "story")      # beats with a retrieval statement
+ 
+ 
+-FEEDBACK_REASONS = ("not_my_situation", "too_heavy", "too_religious", "heard_it")
++FEEDBACK_REASONS = ("not_my_situation", "too_heavy", "too_religious", "heard_it", "not_the_problem")
+ DAY1_FAMILY = "bg"     # hard rule: Day 1 of a plan is always a Bhagavad Gita verse
+ 
+ 
+@@ -777,7 +777,8 @@ class Planner:
+           too_heavy         gentler: comforting and steadying lines up, challenging ones and lines about dying down
+           not_my_situation  away from what they turned down: verses close to it (meaning, else words) down
+           too_religious     plainer: devotional texts and bhakti lines down
+-          heard_it          nothing beyond never repeating it (exclude does that)"""
++          heard_it          nothing beyond never repeating it (exclude does that)
++          not_the_problem   like not_my_situation (the stance itself is corrected by the request's `correction`)"""
+         fb = [f for f in feedback or [] if isinstance(f, dict) and f.get("reason") in FEEDBACK_REASONS]
+         if not fb:
+             return None
+@@ -789,7 +790,7 @@ class Planner:
+         if n["too_religious"]:
+             adj -= min(0.6, 0.3 * n["too_religious"]) * self._devotional
+         for f in fb:
+-            if f["reason"] != "not_my_situation":
++            if f["reason"] not in ("not_my_situation", "not_the_problem"):   # both: away from what misread them
+                 continue
+             i = self.idx.get(f.get("verse_id") or "")
+             if i is None:
+diff --git a/backend/ai/scene.py b/backend/ai/scene.py
+new file mode 100644
+index 00000000..10fbbe6f
+--- /dev/null
++++ b/backend/ai/scene.py
+@@ -0,0 +1,88 @@
++"""
++scene.py — "The scene": the moment a verse was said, the same for everyone.
++
++    before        why this moment exists (the story so far)
++    moment        who says it, to whom, at what point
++    reply         the counter-view, when the text has one (keeps the scene from turning preachy)
++    after         what happened next
++    reading       a modern reading, always labelled as one in the app (never presented as the verse's words)
++    source_range  where it is in the text, so it can be checked
++
++Written once per verse by scripts/build_scenes.py from the library's own story data, checked by hand, and kept in
++data/scenes.json (`reviewed` true once a person has read it). Until a verse has one, the scene is assembled
++from the library itself (its story, setting and lesson), which needs no model and invents nothing. The one
++personal sentence that closes the scene is written with the plan's other personal parts (`scene_line`).
++"""
++from __future__ import annotations
++
++import json
++import logging
++import os
++from pathlib import Path
++from typing import Dict, Optional
++
++logger = logging.getLogger(__name__)
++
++SCENES_PATH = Path(os.getenv("SCENES_PATH", Path(__file__).resolve().parents[1] / "data" / "scenes.json"))
++TEXT_NAME = {"bg": "Bhagavad Gita", "vr": "Valmiki Ramayana", "rcm": "Ramcharitmanas", "mbh": "Mahabharata"}
++FIELDS = ("before", "moment", "reply", "after", "reading", "source_range")
++
++_cache: Optional[Dict[str, dict]] = None
++
++
++def load_scenes(path: Path = SCENES_PATH) -> Dict[str, dict]:
++    global _cache
++    if _cache is not None and path == SCENES_PATH:
++        return _cache
++    out: Dict[str, dict] = {}
++    try:
++        raw = json.loads(path.read_text(encoding="utf-8"))
++        for vid, s in (raw.get("scenes") or {}).items():
++            if isinstance(s, dict) and s.get("before") and s.get("moment") and s.get("source_range"):
++                out[vid] = {k: (s.get(k) or None) for k in FIELDS} | {"reviewed": bool(s.get("reviewed"))}
++    except FileNotFoundError:
++        pass
++    except (OSError, ValueError) as e:
++        logger.warning("scenes: could not read %s: %s", path, e)
++    if path == SCENES_PATH:
++        _cache = out
++    return out
++
++
++def source_range(v: dict, p: Optional[dict]) -> str:
++    name = TEXT_NAME.get(v.get("family") or v.get("text") or "", v.get("collection") or "")
++    if p and p.get("gitapress_range"):
++        return f"{name} {p['gitapress_range']}".strip()
++    return v.get("display_ref") or v.get("ref_label") or v["id"]
++
++
++def from_library(v: dict, p: Optional[dict], nxt: Optional[dict] = None) -> Optional[dict]:
++    """The scene from what the library already holds. None when there is no story to tell (a verse without one)."""
++    p = p or {}
++    before = p.get("summary") or p.get("story_hook")
++    moment = v.get("setting")
++    if not before or not moment:
++        return None
++    return {"before": before, "moment": moment, "reply": None,
++            "after": (nxt or {}).get("summary") if nxt and nxt.get("id") != p.get("id") else None,
++            "reading": p.get("lesson"), "source_range": source_range(v, p), "reviewed": False}
++
++
++def scene_for(rec, verse_id: str) -> Optional[dict]:
++    """The written scene if there is one, else the library's own; None for an unknown verse or no story."""
++    v = next((x for x in rec.verses if x["id"] == verse_id), None)
++    if v is None:
++        return None
++    written = load_scenes().get(verse_id)
++    if written:
++        return written
++    p = rec.prasangs.get(v.get("prasang_id") or "")
++    nxt = None
++    if p:
++        ids = list(rec.prasangs)
++        k = ids.index(p["id"]) if p["id"] in ids else -1
++        if 0 <= k < len(ids) - 1:
++            cand = rec.prasangs[ids[k + 1]]
++            if cand.get("text") == p.get("text"):
++                nxt = cand
++    return from_library(v, p, nxt)
+diff --git a/backend/ai/stance.py b/backend/ai/stance.py
+index 6bb80cd6..0c7d289d 100644
+--- a/backend/ai/stance.py
++++ b/backend/ai/stance.py
+@@ -106,7 +106,13 @@ WRONGED_WRITER_RE = re.compile(
+     r"\b(accept\w*|adjust\w*|adapt\w*|content(ment|ed)?|patien\w*|endur\w*|tolerat\w*|put up with|keep the peace|"
+     r"let it go|lower (your )?expectation\w*|their nature|how they are|what is theirs to (choose|decide)|surrender\w*|"
+     r"forgiv\w*|compromise\w*|earn (their|his|her) (respect|approval)|win (them|him|her) over|prove (yourself|your worth)|"
+-    r"your (own )?expectation\w*|your need for|envy\w*|jealous\w*|humbl\w*)\b", re.I)
++    r"your (own )?expectation\w*|your need for|envy\w*|jealous\w*|humbl\w*|"
++    r"let (it|the moment|this|that) pass|(do not|don'?t) (argue|defend yourself|speak up)|stay quiet|keep quiet|swallow (it|your words))\b", re.I)
++# ...and the other way: a line that swings to "they're terrible, you're perfect" or urges revenge is dropped too.
++WRONGED_OVERSWING_RE = re.compile(
++    r"\b(revenge|aveng\w*|get (back at|even with)|make (them|him|her) pay|teach (them|him|her) a lesson|punish (them|him|her)|"
++    r"(they|he|she) (is|are) (terrible|evil|toxic|monsters?|the worst)|you are perfect|you'?ve done everything right|"
++    r"cut (them|him|her|everyone) (off|out) (for good|forever|completely))\b", re.I)
+ # A line for an aspiration that consoles a wound they don't have is dropped.
+ ASPIRATION_WRITER_RE = re.compile(
+     r"\b(you (cannot|can'?t|do not|don'?t|struggle to|fail to) (handle|stay|keep|sit|bear|stand|cope|seem)|discipline or (just )?stubbornness|"
+@@ -121,7 +127,10 @@ STANCE_NOTE = {
+                   "Meet the resolve as a friend who believes it, and name only what will test it.",
+     "wronged": "they are being wronged: someone treats them as less than they are, and the cause is in that person, not in them. "
+                "Never ask them to accept it, adjust, be patient, be content, forgive, lower expectations, keep the peace or "
+-               "understand the other's nature; never say they expected or needed too much. Give footing, courage and the true word.",
++               "understand the other's nature; never say they expected or needed too much. Give footing, courage and the true word. "
++               "The tradition's line for a wronged person, which every word must keep: You are not at fault. Stand firm. Act from dharma, not revenge. "
++               "So do not swing to the other side either: never call the other person terrible, never call them perfect, never urge "
++               "revenge, punishment or cutting everyone off.",
+     "seeking": "seeking: no problem to solve. They want to read and understand; the plan is an invitation, not a cure.",
+ }
+ STANCE_CORE_LABEL = {
+diff --git a/backend/ai/voice.py b/backend/ai/voice.py
+index 253263b7..094e792a 100644
+--- a/backend/ai/voice.py
++++ b/backend/ai/voice.py
+@@ -92,6 +92,8 @@ class PersonContext:
+     days_seen: int = 0                   # days of the plan they have already opened
+     helped: Sequence[str] = ()           # lines of verses they said helped
+     past: Sequence[str] = ()             # labels of earlier situations they worked through
++    correction: str = ""                 # what they told us when a reading misjudged them ("I'm not the problem here")
++    asked: Sequence[str] = ()             # questions they asked about this plan's verses (their words, this request only)
+     flags: List[str] = field(default_factory=list)
+ 
+ 
+@@ -133,6 +135,8 @@ def person_block(c: PersonContext) -> str:
+     if c.core:
+         lines.append(f"{STANCE_CORE_LABEL.get(c.stance, STANCE_CORE_LABEL['struggle'])}: {c.core}")
+     lines.append(f"Where they stand: {STANCE_NOTE.get(c.stance, STANCE_NOTE['struggle'])}")
++    if c.correction:
++        lines.append(f"They corrected an earlier reading that misjudged them, and this overrides anything above it: {c.correction}")
+     if c.insight:
+         lines.append(f"What is really going on: {c.insight}")
+     if c.root:
+@@ -155,6 +159,10 @@ def person_block(c: PersonContext) -> str:
+                      + " | ".join(c.helped[:3]))
+     if c.past:
+         lines.append("What they worked through before: " + "; ".join(c.past[:3]))
++    if c.asked:
++        lines.append("Questions they asked while reading this plan (their own words; where this day's verse allows, let it speak to "
++                     "them, but never quote a question back and never answer one the verse does not touch): "
++                     + " | ".join(q.strip() for q in c.asked[-3:]))
+     return "\n".join(lines)
+ 
+ 
+diff --git a/backend/common/models.py b/backend/common/models.py
+index 17123eac..41abd9f0 100644
+--- a/backend/common/models.py
++++ b/backend/common/models.py
+@@ -16,7 +16,7 @@ v2 changes (retrieval overhaul):
+ from __future__ import annotations
+ 
+ from typing import Annotated, Any, Dict, List, Literal, Optional
+-from pydantic import BaseModel, Field, StringConstraints
++from pydantic import BaseModel, Field, StringConstraints, model_validator
+ 
+ 
+ # ── Shared enums ──────────────────────────────────────────────────────────────
+@@ -331,14 +331,25 @@ class HookRequest(PlanInput):
+     alternates: int = Field(2, ge=0, le=4)   # extra hook candidates for "Another"
+ 
+ 
++# "I'm not the problem here": where the person says they actually stand, one tap. The server maps it
++# onto a stance (ai/stance.py) and a line the writers read (server/plan.py CORRECTIONS).
++Correction = Literal["wronged", "growing", "outside_control", "inner_work_done"]
++
++
+ class PreviewRequest(PlanInput):
+     # Send back the `understanding` from /hook to skip the reading step (no note needed,
+     # same reading as onboarding). Send `hook_id` to keep the verse they kept as the hook.
+     understanding: Optional[Dict[str, Any]] = None
+     hook_id: Optional[str] = Field(None, max_length=80)
++    # Set once they corrected the reading ("I'm not the problem here"), and sent with every later
++    # request for this plan: it overrides the stance the reading inferred.
++    correction: Optional[Correction] = None
++    # Questions they asked about this plan's verses ("Ask about this verse"), latest last. Used for this request
++    # only, so later days can speak to them; never stored or logged.
++    asked: List[Annotated[str, StringConstraints(max_length=300)]] = Field(default_factory=list, max_length=5)
+ 
+ 
+-NotForMeReason = Literal["not_my_situation", "too_heavy", "too_religious", "heard_it"]
++NotForMeReason = Literal["not_my_situation", "too_heavy", "too_religious", "heard_it", "not_the_problem"]
+ 
+ 
+ class DayFeedback(BaseModel):
+@@ -386,9 +397,19 @@ class RefineRequest(PlanRequest):
+     # (`note`, voice or typed; never stored or logged). The earlier reading (`understanding`) and the
+     # new words are read together, and the week is chosen again from `from_day` (day in week) to Day 7.
+     # `exclude` holds every id in the plan so far, including the days being replaced, so all are new.
++    # A stance correction ("I'm not the problem here") re-weaves the week with no note: then `note` is
++    # empty and `correction` is set, and `from_day` may be 1 (today's verse was the one that misread them).
+     week: int = Field(1, ge=1, le=3)
+-    from_day: int = Field(..., ge=2, le=6)
+-    note: str = Field(..., min_length=3, max_length=1000)
++    from_day: int = Field(..., ge=1, le=7)
++    note: Optional[str] = Field(None, min_length=3, max_length=1000)
++
++    @model_validator(mode="after")
++    def _note_or_correction(self):
++        if not self.note and not self.correction:
++            raise ValueError("Send a note or a correction")
++        if self.note and not 2 <= self.from_day <= 6:
++            raise ValueError("from_day must be 2 to 6 for an update with a note")
++        return self
+ 
+ 
+ class RefineResponse(BaseModel):
+@@ -454,8 +475,11 @@ class UnderstandingOut(BaseModel):
+ class BeatVerse(RecommendedVerse):
+     beat: Beat
+     role_fit: float                    # how well this verse does the beat's job, 0..1
+-    meaning: Optional[str] = None      # plan days: "What it says", the verse told as a story, faithful to its translation
+-    for_you: Optional[str] = None      # plan days: what this verse says to this person (ai/personalize.py); else show `why`
++    meaning: Optional[str] = None      # plan days: "What it says", the verse told as a story, faithful to its translation (shown in "The scene")
++    for_you: Optional[str] = None      # plan days: what this verse says to this person, at most 50 words (ai/personalize.py); else show `why`
++    try_today: Optional[str] = None    # plan days: "One thing for today", at most 20 words
++    scene_line: Optional[str] = None   # plan days: the one personal line that closes "The scene"
++    asks: List[str] = []               # plan days: up to 3 questions in their voice for "Ask about this verse"
+ 
+ 
+ class StoryCard(BaseModel):
+@@ -475,6 +499,7 @@ class StoryCard(BaseModel):
+     hook_title: Optional[str] = None   # the story's named hook ("Rama came home from his pilgrimage and stopped laughing")
+     teaser: Optional[str] = None       # Day 7's line: hook_title, else the story's opening line, else its title
+     for_you: Optional[str] = None      # plan days: what this story shows this person (ai/personalize.py)
++    asks: List[str] = []               # plan days: up to 3 questions in their voice for "Ask about this verse"
+ 
+ 
+ class ArcBeats(BaseModel):
+@@ -564,5 +589,48 @@ class DepthResponse(BaseModel):
+     timings_ms: Dict[str, int] = {}
+ 
+ 
++class AskRequest(PreviewRequest):
++    # "Ask about this verse": one question about one plan day's verse (or story). `for_you` is the line
++    # already shown, `asked` the questions asked earlier in this plan (for continuity, never stored).
++    verse_id: Optional[str] = Field(None, max_length=80)
++    story_id: Optional[str] = Field(None, max_length=80)
++    beat: Beat = "hook"
++    week: int = Field(1, ge=1, le=3)
++    question: str = Field(..., min_length=3, max_length=300)
++    for_you: Optional[str] = Field(None, max_length=400)
++
++
++class AskSupport(BaseModel):
++    id: str
++    ref: str
++    sanskrit: Optional[str] = None     # from the library, never written by the model
++    line: str
++
++
++class AskResponse(BaseModel):
++    # answer: says + notice (+ support); redirect: the question is about something else (offer tomorrow);
++    # retune: the plan misread their situation (offer to re-weave the rest of the week); safety: no answer
++    # from scripture, only the support lines.
++    kind: Literal["answer", "redirect", "retune", "safety"]
++    says: Optional[str] = None         # what this verse says about their case
++    support: Optional[AskSupport] = None
++    notice: Optional[str] = None       # one thing to notice today
++    message: Optional[str] = None      # redirect / retune / safety copy
++    safety: Optional[PlanSafety] = None
++    timings_ms: Dict[str, int] = {}
++
++
++class SceneOut(BaseModel):
++    # "The scene": the moment a verse was said, written once per verse and checked by hand (data/scenes.json).
++    verse_id: str
++    before: str
++    moment: str
++    reply: Optional[str] = None
++    after: Optional[str] = None
++    reading: Optional[str] = None      # a modern reading, always labelled as one in the app
++    source_range: str
++    reviewed: bool = False
++
++
+ ReplaceResponse.model_rebuild()
+ RefineResponse.model_rebuild()
+diff --git a/backend/scripts/build_scenes.py b/backend/scripts/build_scenes.py
+new file mode 100644
+index 00000000..f23ebdf9
+--- /dev/null
++++ b/backend/scripts/build_scenes.py
+@@ -0,0 +1,155 @@
++"""
++build_scenes.py — write "The scene" once per verse, for a person to check, into data/scenes.json.
++
++Each scene is written by the writer model from the library's own story data only (the verse's setting, its prasang,
++the prasangs either side of it, its translation and point). No invented dialogue or scenes: every scene must pass
++the fidelity check (ai/voice.py) and is stored with "reviewed": false. A scene already marked reviewed is never
++rewritten. The app shows a library-assembled scene (ai/scene.py) for any verse without one.
++
++Run from backend/ (.env with the writer model's key):
++    python scripts/build_scenes.py --ids bg.2.47 bg.2.14            # these verses
++    python scripts/build_scenes.py --ids-file top_verses.txt        # one id per line (e.g. the most-planned 150)
++    python scripts/build_scenes.py --tier core --limit 20           # the core tier, first 20 without a scene
++    python scripts/build_scenes.py --ids bg.2.47 --dry-run          # print, don't save
++"""
++from __future__ import annotations
++
++import argparse
++import json
++import sys
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++
++from common.config import settings                        # noqa: E402
++from ai.scene import SCENES_PATH, source_range             # noqa: E402
++from ai.voice import FIDELITY, check_fidelity              # noqa: E402
++
++SYSTEM = """\
++You write "The scene" for one verse: the moment it was said, told plainly, for someone who has never read the text.
++
++{fidelity}
++
++Use ONLY the source below. Never invent dialogue, gestures, weather, feelings or events. If the source has no counter-view, "reply" is null. If it does not say what happened next, "after" is null.
++Parts (plain modern English, short sentences, no dashes, no exclamation marks):
++- "before" (25 to 60 words): why this moment exists, the story so far.
++- "moment" (20 to 50 words): who says it, to whom, at what point, and what is at stake. Do not quote the verse; the app shows it.
++- "reply" (15 to 45 words or null): the counter-view in the text, if the source gives one.
++- "after" (15 to 45 words or null): what actually happened next, if the source gives it.
++- "reading" (15 to 35 words): what the verse proposes, in today's words, exactly as its point says. The app labels this "A reading for today".
++Return ONLY JSON: {{"before": "...", "moment": "...", "reply": null, "after": null, "reading": "..."}}"""
++
++LIMITS = {"before": (20, 70), "moment": (15, 60), "reply": (10, 55), "after": (10, 55), "reading": (10, 45)}
++
++
++def source(v: dict, p: dict, prev: dict | None, nxt: dict | None) -> str:
++    rows = [f"reference: {v.get('display_ref') or v['id']}",
++            f"said by: {v.get('speaker') or 'unknown'}" + (f" to {v['listener']}" if v.get("listener") else ""),
++            f"setting: {v.get('setting') or ''}", f"card line: {v.get('line') or ''}",
++            f"translation: {v.get('translation') or ''}", f"its point: {v.get('reflection') or p.get('lesson') or ''}",
++            f"what it does NOT mean: {v.get('misuse') or ''}",
++            f"the story around it: {p.get('title_en') or ''}. {p.get('summary') or ''}"]
++    if prev:
++        rows.append(f"the story just before: {prev.get('title_en') or ''}. {prev.get('summary') or ''}")
++    if nxt:
++        rows.append(f"the story just after: {nxt.get('title_en') or ''}. {nxt.get('summary') or ''}")
++    return "\n".join(r for r in rows if not r.endswith(": ") and not r.endswith(": unknown"))
++
++
++def check(scene: dict, item: dict) -> tuple[dict | None, str]:
++    out = {}
++    for k, (lo, hi) in LIMITS.items():
++        t = scene.get(k)
++        if t in (None, "", "null"):
++            if k in ("reply", "after"):
++                out[k] = None
++                continue
++            return None, f"missing:{k}"
++        if not isinstance(t, str):
++            return None, f"type:{k}"
++        n = len(t.split())
++        if not lo <= n <= hi:
++            return None, f"length:{k}={n}"
++        ok, why = check_fidelity(t, item)
++        if not ok:
++            return None, f"{why}:{k}"
++        out[k] = " ".join(t.split())
++    return out, ""
++
++
++def main() -> None:
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--ids", nargs="*", default=[])
++    ap.add_argument("--ids-file")
++    ap.add_argument("--tier")
++    ap.add_argument("--limit", type=int, default=20)
++    ap.add_argument("--dry-run", action="store_true")
++    a = ap.parse_args()
++
++    lib = json.loads(Path(settings.wisdom_library_path).read_text(encoding="utf-8"))
++    verses = {v["id"]: v for v in lib["verses"]}
++    plist = lib["prasangs"]
++    pidx = {p["id"]: k for k, p in enumerate(plist)}
++    have = json.loads(SCENES_PATH.read_text(encoding="utf-8")) if SCENES_PATH.exists() else {"version": 1, "scenes": {}}
++    scenes = have.setdefault("scenes", {})
++
++    ids = list(a.ids)
++    if a.ids_file:
++        ids += [x.strip() for x in Path(a.ids_file).read_text().splitlines() if x.strip()]
++    if a.tier:
++        ids += [v["id"] for v in lib["verses"] if v.get("tier") == a.tier and v["id"] not in scenes]
++    ids = [i for i in dict.fromkeys(ids) if i in verses and not (scenes.get(i) or {}).get("reviewed")][:a.limit]
++    if not ids:
++        print("nothing to write")
++        return
++
++    from ai.llm_providers import make_client
++    from ai.sarvam import get_sarvam, init_sarvam
++    sarvam = None
++    if settings.sarvam_api_key:
++        init_sarvam(api_key=settings.sarvam_api_key, model=settings.sarvam_model)
++        sarvam = get_sarvam()
++    llm = make_client(settings.llm_writer, sarvam=sarvam, openai_key=settings.openai_api_key,
++                      openai_base_url=settings.openai_base_url, reasoning=settings.llm_reasoning)
++    if llm is None:
++        sys.exit("no writer model configured (.env)")
++
++    ok = bad = 0
++    for vid in ids:
++        v = verses[vid]
++        k = pidx.get(v.get("prasang_id") or "")
++        if k is None:
++            print(f"skip {vid}: no story in the library")
++            continue
++        p = plist[k]
++        prev = plist[k - 1] if k > 0 and plist[k - 1].get("text") == p.get("text") else None
++        nxt = plist[k + 1] if k + 1 < len(plist) and plist[k + 1].get("text") == p.get("text") else None
++        src = source(v, p, prev, nxt)
++        item = {"id": vid, "kind": "verse", "source": src}
++        msgs = [{"role": "system", "content": SYSTEM.format(fidelity=FIDELITY)}, {"role": "user", "content": "SOURCE\n" + src}]
++        got, why = None, ""
++        for _ in range(2):
++            try:
++                raw = llm.chat_json(msgs, temperature=0.3, max_tokens=900, timeout_s=40)
++            except Exception as e:            # noqa: BLE001
++                why = f"{type(e).__name__}"
++                continue
++            got, why = check(raw if isinstance(raw, dict) else {}, item)
++            if got:
++                break
++        if not got:
++            bad += 1
++            print(f"FAIL {vid}: {why}")
++            continue
++        ok += 1
++        scenes[vid] = {**got, "source_range": source_range(v, p), "reviewed": False}
++        print(f"ok   {vid}: {scenes[vid]['source_range']}")
++        if a.dry_run:
++            print(json.dumps(scenes[vid], ensure_ascii=False, indent=2))
++    if not a.dry_run and ok:
++        SCENES_PATH.write_text(json.dumps(have, ensure_ascii=False, indent=1), encoding="utf-8")
++    print(f"{ok} written, {bad} failed{' (dry run)' if a.dry_run else ''} -> {SCENES_PATH}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/backend/server/plan.py b/backend/server/plan.py
+index a85a6a71..c01913e8 100644
+--- a/backend/server/plan.py
++++ b/backend/server/plan.py
+@@ -43,7 +43,9 @@ from typing import Optional
+ from fastapi import APIRouter, HTTPException
+ from pydantic import BaseModel, Field
+ 
++from ai.ask import answer as answer_question, support_candidates
+ from ai.depth import DepthCache, cache_key, person_key, write_depth
++from ai.scene import scene_for
+ from ai.personalize import personal_parts
+ from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
+ from common.config import settings
+@@ -53,12 +55,14 @@ from ai.mechanisms import MECHANISMS
+ from ai.mechanisms import LEVELS
+ from ai.planner import BEREAVEMENT_SITS, get_planner, level_for, parse_shape, week_arc
+ from ai.recommender import SAFETY, display_sanskrit, get_recommender
+-from ai.understanding import Profile, Understanding, check_note, get_understander, merge_situations
++from ai.understanding import (Profile, Understanding, check_note, fallback_bridge, get_understander, insight_for,
++                              merge_situations, template_queries)
++from ai.stance import STANCE_BANNED_SITUATIONS, constrain_mechanism
+ from ai.story_titles import hook_title
+ from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
+                            PlanResponse, PlanWeek, PreviewRequest, PreviewResponse, RefineRequest, RefineResponse, ReplaceRequest,
+                            ReplaceResponse, StoryCard,
+-                           DepthRequest, DepthResponse)
++                           DepthRequest, DepthResponse, AskRequest, AskResponse, SceneOut)
+ 
+ logger = logging.getLogger(__name__)
+ router = APIRouter()
+@@ -99,9 +103,55 @@ async def _read(req: PlanInput, und) -> Understanding:
+                 d["risk"] = "harm_from_others"
+         u = und.from_client(d)
+         if u is not None:
+-            return _with_profile(u, req)
++            return _corrected(_with_profile(u, req), req, und)
+     u, _ = await und.understand(_profile(req), req.note)
+-    return _with_profile(u, req)
++    return _corrected(_with_profile(u, req), req, und)
++
++
++# "I'm not the problem here" (one tap) → (stance, mechanism to lean on or None, the line every writer reads).
++# The wronged line is the tradition's own, word for word (wisdom-day-page-implementation-plan, 24 Oct).
++CORRECTIONS = {
++    "wronged": ("wronged", None,
++                "Someone is treating them unfairly and the wrong is not theirs. You are not at fault. Stand firm. Act from dharma, "
++                "not revenge. Name the wrong, give them footing; never ask them to bend, and never call the other person a monster."),
++    "growing": ("aspiration", None,
++                "Nothing is wrong: they are doing well and want to grow. Ambition offered as duty is not ego. Do not console, "
++                "diagnose or warn; meet the resolve and name what will test it."),
++    "outside_control": ("struggle", "attachment_to_results",
++                        "What troubles them is outside their control, not a fault in them. Show what is theirs to do, and frame "
++                        "releasing the rest as freedom, never as resignation, and never as their failing."),
++    "inner_work_done": ("aspiration", "resolve_begin",
++                        "They have already done the inner work. Do not send them inward again; the texts now turn them toward "
++                        "acting in the world."),
++}
++
++
++def _corrected(u: Understanding, req, und) -> Understanding:
++    """Apply the person's own correction of where they stand. It wins over the inferred stance, so the mechanism,
++    the retrieval statements and the lines written for the old stance are rebuilt from templates for the new one.
++    Never for someone at risk of self-harm: the safety reading stays."""
++    corr = getattr(req, "correction", None)
++    if not corr or corr not in CORRECTIONS or u.risk == "self_harm":
++        return u
++    stance, lean, _ = CORRECTIONS[corr]
++    inferred = u.stance
++    mech, sec, _ = constrain_mechanism(stance, lean or u.mechanism, u.secondary_mechanism)
++    banned = STANCE_BANNED_SITUATIONS.get(stance, set())
++    kept = [s for s in u.situations if s["id"] not in banned]
++    u.situations = kept or u.situations
++    u.stance, u.mechanism, u.secondary_mechanism = stance, mech, sec
++    u.queries = template_queries(_profile(req), mech, u.situations, und.labels, u.risk, stance)
++    u.query_sources = {k: "template" for k in u.queries}
++    u.insight = insight_for(u.risk, mech, None)
++    u.bridge = fallback_bridge(mech)
++    u.week_thesis, u.week_beats = "", {}          # written for the stance that misread them
++    u.flags.append(f"correction:{corr}:{inferred}->{stance}")
++    return u
++
++
++def _correction_text(req) -> str:
++    corr = getattr(req, "correction", None)
++    return CORRECTIONS[corr][2] if corr in CORRECTIONS else ""
+ 
+ 
+ def _with_profile(u: Understanding, req: PlanInput) -> Understanding:
+@@ -136,6 +186,8 @@ def _ctx(req: PlanInput, u: Understanding, rec, planner, level: str = "situation
+         people=list(u.people) if (u.source != "client" or u.people) else None,
+         level=level, week=week, days_seen=(j.days_seen if j else 0), helped=helped,
+         past=[x.strip() for x in (j.past if j else []) if x and x.strip()][:3],
++        correction=_correction_text(req) if u.risk != "self_harm" else "",
++        asked=[q for q in (getattr(req, "asked", None) or []) if isinstance(q, str) and q.strip()][-5:],
+     )
+ 
+ 
+@@ -508,7 +560,10 @@ async def refine(req: RefineRequest) -> RefineResponse:
+     if prior is None:
+         raise HTTPException(status_code=422, detail="Send the plan's understanding")
+     prior = _with_profile(prior, req)
+-    u = await _refined(und, req, prior)
++    if req.note:
++        u = _corrected(await _refined(und, req, prior), req, und)
++    else:                                  # a stance correction alone: no new reading, the same person, re-seated
++        u = _corrected(prior, req, und)
+     t1 = time.perf_counter()
+     days = await asyncio.to_thread(planner.plan, u, req.feeling, 7, req.exclude, None, None, req.week, req.level, shape,
+                                    [f.model_dump() for f in req.feedback], _helped(req))
+@@ -528,7 +583,8 @@ async def refine(req: RefineRequest) -> RefineResponse:
+         "heard": u.mirror, "safety": _safety(u),
+         "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)},
+     }
+-    _log("refine", req, u, t0, week=req.week, from_day=req.from_day, days=len(out_days), source=u.source)
++    _log("refine", req, u, t0, week=req.week, from_day=req.from_day, days=len(out_days), source=u.source,
++         correction=req.correction or "-")
+     return RefineResponse(**out)
+ 
+ 
+@@ -568,6 +624,80 @@ async def depth(req: DepthRequest) -> DepthResponse:
+     return DepthResponse(depth=got, cached=cached, timings_ms={"total": int((time.perf_counter() - t0) * 1000)})
+ 
+ 
++# ── The scene and Ask (the day screen's doors) ──────────────────────────────────
++@router.get("/recommend/scene/{verse_id}", response_model=SceneOut, tags=["plan"])
++async def scene(verse_id: str) -> SceneOut:
++    """"The scene" behind a verse: the same for everyone (ai/scene.py). 404 when the verse has no story to tell;
++    the app then shows the verse's own meaning only."""
++    if len(verse_id) > 80:
++        raise HTTPException(status_code=404, detail="Unknown verse")
++    try:
++        rec = get_recommender()
++    except RuntimeError:
++        raise HTTPException(status_code=503, detail="Recommendations are not available right now.")
++    s = scene_for(rec, verse_id)
++    if s is None:
++        raise HTTPException(status_code=404, detail="No scene for this verse")
++    return SceneOut(verse_id=verse_id, **s)
++
++
++ASK_REDIRECT = "That's a different question from this verse. Want tomorrow's verse to take it up?"
++ASK_RETUNE = "It sounds like the plan misread where you stand. Want the rest of your week re-written from there?"
++
++
++@router.post("/recommend/ask", response_model=AskResponse, tags=["plan"])
++async def ask(req: AskRequest) -> AskResponse:
++    """"Ask about this verse" (one free ask in the free week, then Pro; the app enforces the gate). The question is
++    used for this request only: never stored, never logged. Distress in the question gets the support lines, never an
++    answer from scripture."""
++    rec, planner, und = _services()
++    t0 = time.perf_counter()
++    chk = check_note(req.question)
++    u = await _read(req, und)
++    if chk.crisis or u.risk == "self_harm":
++        return AskResponse(kind="safety", message=SAFETY["message"],
++                           safety={"kind": "self_harm", "message": SAFETY["message"], "lines": SAFETY["lines"]})
++    if chk.harm or u.risk == "harm_from_others":
++        return AskResponse(kind="safety", message=SAFETY_HARM["message"], safety={"kind": "harm_from_others", **SAFETY_HARM})
++    if req.verse_id:
++        v = rec.verses[planner.idx[req.verse_id]] if req.verse_id in planner.idx else None
++        if v is None:
++            raise HTTPException(status_code=404, detail="Unknown verse")
++        item = item_from_library(v, rec.prasangs.get(v.get("prasang_id") or ""), req.beat)
++        candidates = support_candidates(rec, planner, v["id"])
++    elif req.story_id:
++        p = rec.prasangs.get(req.story_id)
++        if p is None:
++            raise HTTPException(status_code=404, detail="Unknown story")
++        item = item_from_library(None, p, "story")
++        members = planner.prasang_verses.get(p["id"]) or []
++        if members:
++            item["line"] = rec.verses[members[0]].get("line")
++        candidates = []
++    else:
++        raise HTTPException(status_code=400, detail="Send verse_id or story_id")
++    ctx = _ctx(req, u, rec, planner, level_for(req.week, u.risk), req.week)
++    got = await answer_question(und.writer_llm, ctx, item, req.question, req.for_you, list(req.asked), candidates,
++                                settings.depth_timeout_s)
++    kind = got["kind"]
++    out: dict = {"kind": kind}
++    if kind == "answer":
++        out["says"], out["notice"] = got["says"], got.get("notice")
++        sup = next((c for c in candidates if c["id"] == got.get("support_id")), None)
++        if sup:
++            sv = rec.verses[sup["index"]]
++            out["support"] = {"id": sv["id"], "ref": sup["ref"], "sanskrit": display_sanskrit(sv), "line": sv["line"]}
++    elif kind == "redirect":
++        out["message"] = ASK_REDIRECT
++    elif kind == "retune":
++        out["message"] = ASK_RETUNE
++    else:
++        raise HTTPException(status_code=503, detail="Could not answer right now")
++    out["timings_ms"] = {"total": int((time.perf_counter() - t0) * 1000)}
++    _log("ask", req, u, t0, answer=kind, support=bool(out.get("support")), asked=len(req.asked))
++    return AskResponse(**out)
++
++
+ # ── Originals: the Sanskrit for verses already on a phone ──────────────────────
+ # Plans built before a verse's original was cleared for display carry no Sanskrit. The app asks
+ # for the ids it holds without one, and lays what comes back over its stored days.
+diff --git a/backend/tests/test_day_page.py b/backend/tests/test_day_page.py
+new file mode 100644
+index 00000000..82a99b6b
+--- /dev/null
++++ b/backend/tests/test_day_page.py
+@@ -0,0 +1,289 @@
++"""
++Tests for the day page (wisdom-day-page-implementation-plan, 24 Oct 2026): the capped personal parts
++(for_you, try_today, scene_line, asks), "I'm not the problem here" (`correction`), "The scene" and
++"Ask about this verse". Same library and fake-LLM setup as test_plan.py.
++Run from backend/:  pytest tests/test_day_page.py -q
++"""
++from __future__ import annotations
++
++import re
++
++import pytest
++
++from test_plan import BASE, GOOD, FakeLLM, _plan_ids, app, post, rec, use_llm   # noqa: F401  (fixtures)
++
++WORDS = lambda s: len(re.findall(r"[A-Za-z']+", s or ""))   # noqa: E731
++
++
++class DayLLM(FakeLLM):
++    """FakeLLM plus the new personal parts and the Ask answers."""
++    ask_reply: dict = {}
++
++    def chat_json(self, messages, **kw):
++        system = messages[0]["content"]
++        if system.startswith("Someone is reading one verse"):
++            self.asks = getattr(self, "asks", 0) + 1
++            self.ask_user = messages[1]["content"]
++            return dict(self.ask_reply)
++        out = super().chat_json(messages, **kw)
++        if system.startswith("You write the personal words under each day") and isinstance(out, dict):
++            long = getattr(self, "long_for_you", False)
++            for i, d in out["days"].items():
++                if long:
++                    d["for_you"] = ("With your parents doubting your work you keep waiting for their yes before your own work feels real "
++                                    "and every call home becomes a vote on whether the life you built counts at all, and the verse turns "
++                                    "you back toward the work itself, which is yours, while their verdict was never yours to hold. "
++                                    "Your work is yours.")
++                d["try_today"] = "Notice the moment on the next call when you start waiting for their yes."
++                d["scene_line"] = "You are standing where he stood, asked to act while the outcome is still out of your hands."
++                d["asks"] = ["How do I keep working when they never approve?", "Is wanting their respect wrong?",
++                             "What if they are right about my job?", "not a question", "Can you help?"]
++        return out
++
++
++def _hook(app, rec, llm, **extra):
++    use_llm(rec, llm)
++    return post(app, "hook", **BASE, follow="parents", note="they never support what I do", **extra)
++
++
++# ── The capped personal parts ─────────────────────────────────────────────────
++def test_plan_days_carry_the_three_beats_and_the_doors(app, rec):
++    llm = DayLLM(GOOD)
++    h = _hook(app, rec, llm)
++    out = post(app, "plan", **BASE, understanding=h["understanding"], hook_id=h["hook"]["id"], week=1)
++    verses = [d["verse"] for d in out["days"] if d.get("verse")]
++    stories = [d["story"] for d in out["days"] if d.get("story")]
++    assert verses and stories
++    for v in verses:
++        assert v["for_you"] and WORDS(v["for_you"]) <= 50
++        assert v["try_today"] and WORDS(v["try_today"]) <= 20
++        assert v["scene_line"] and "you" in v["scene_line"].lower()
++        assert 1 <= len(v["asks"]) <= 3 and all(q.endswith("?") for q in v["asks"])
++        assert "not a question" not in v["asks"] and "Can you help?" not in v["asks"]   # not first person / too short
++    assert all("try_today" not in s or s.get("try_today") is None for s in stories)      # story days: for_you + asks only
++    assert "try_today" in llm.personal_system and "scene_line" in llm.personal_system
++
++
++def test_for_you_over_50_words_is_cut_to_whole_sentences(app, rec):
++    llm = DayLLM(GOOD)
++    llm.long_for_you = True
++    h = _hook(app, rec, llm)
++    out = post(app, "plan", **BASE, understanding=h["understanding"], hook_id=h["hook"]["id"], week=1)
++    for d in out["days"]:
++        fy = (d.get("verse") or d.get("story") or {}).get("for_you")
++        if fy:
++            assert WORDS(fy) <= 50 and fy.rstrip().endswith((".", "?", "!"))
++
++
++def test_part_checks():
++    from ai.personalize import check_asks, why_scene_line, why_try_today
++    assert why_try_today("Notice the moment you start waiting for their yes.")[0]
++    assert why_try_today("Embrace the journey of inner peace today.")[0] is None                       # cliche
++    assert why_try_today(" ".join(["word"] * 25) + ".")[0] is None                                    # too long, one sentence
++    assert why_try_today("Accept how they are for one more day.", stance="wronged")[0] is None
++    assert why_scene_line("He stood there too, asked to act before he knew how it ends.")[0] is None  # not to them
++    assert why_scene_line("You are in your own forest years now, and the work is still yours.")[0]
++    qs = check_asks(["How do I stop waiting for their yes?", "how do i stop waiting for their yes?", "Why?",
++                     "Is my ADHD the reason I cannot focus at work?", "What does the verse mean", 42,
++                     "What if I am wrong about all of it?", "Can I keep going when nothing moves?"])
++    assert qs == ["How do I stop waiting for their yes?", "What if I am wrong about all of it?", "Can I keep going when nothing moves?"]
++    assert check_asks(["How do I keep going?"], risk="self_harm") == []
++    assert check_asks("not a list") == []
++
++
++def test_wronged_lines_may_not_swing_to_revenge():
++    from ai.personalize import why_for_you
++    ok = "Your brother takes the credit at every family dinner, and the verse gives you footing: say what is true, plainly, and keep your work."
++    assert why_for_you(ok, stance="wronged")[0]
++    assert why_for_you("Your brother keeps taking the credit, so make him pay at the next family dinner for what he did to you.",
++                       stance="wronged")[1] == "overswing"
++    assert why_for_you("At the next dinner you could teach him a lesson he will remember, because the wrong is all his.",
++                       stance="wronged")[1] == "overswing"
++
++
++def test_the_wronged_stance_note_carries_the_tradition_line():
++    from ai.stance import STANCE_NOTE
++    assert "You are not at fault. Stand firm. Act from dharma, not revenge." in STANCE_NOTE["wronged"]
++
++
++# ── "I'm not the problem here" ────────────────────────────────────────────────
++@pytest.mark.parametrize("corr,stance", [("wronged", "wronged"), ("growing", "aspiration"),
++                                         ("outside_control", "struggle"), ("inner_work_done", "aspiration")])
++def test_correction_swaps_day1_for_the_stance_they_gave(app, rec, corr, stance, monkeypatch):
++    from common.config import settings
++    monkeypatch.setattr(settings, "day1_other_texts", False)
++    llm = DayLLM(GOOD)
++    h = _hook(app, rec, llm)
++    plan = post(app, "plan", **BASE, understanding=h["understanding"], hook_id=h["hook"]["id"], week=1)
++    ids = _plan_ids(plan)
++    day1 = plan["days"][0]["verse"]["id"]
++    out = post(app, "replace", **BASE, understanding=h["understanding"], week=1, verse_id=day1, reason="not_the_problem",
++               correction=corr, exclude=[day1], upcoming=ids[1:], feedback=[{"verse_id": day1, "reason": "not_the_problem"}])
++    assert out["verse"] and out["verse"]["id"] != day1 and out["verse"]["id"] not in ids
++    # the writers were told where they stand, and that it overrides the reading
++    assert any(f"Where they stand: {stance}" in u or "They corrected an earlier reading" in u for u in llm.personal_users[-1:])
++    assert "They corrected an earlier reading" in llm.personal_users[-1]
++
++
++def test_correction_rebuilds_the_reading_and_logs_it(app, rec):
++    from ai.understanding import get_understander
++    from server.plan import _corrected
++    from common.models import ReplaceRequest
++    h = _hook(app, rec, DayLLM(GOOD))
++    und = get_understander()
++    u = und.from_client(dict(h["understanding"]))
++    assert u.stance != "wronged"
++    req = ReplaceRequest(**BASE, understanding=h["understanding"], verse_id="bg.2.47", reason="not_the_problem", correction="wronged")
++    u = _corrected(u, req, und)
++    assert u.stance == "wronged" and u.mechanism in {"dignity_denied", "anger_reactivity", "duty_conflict", "fear_of_loss"}
++    assert set(u.query_sources.values()) == {"template"} and not u.week_beats
++    assert any(f.startswith("correction:wronged:") and f.endswith("->wronged") for f in u.flags)
++
++
++def test_correction_never_overrides_a_crisis_reading(app, rec):
++    from ai.understanding import get_understander
++    from server.plan import _corrected
++    from common.models import ReplaceRequest
++    use_llm(rec, FakeLLM({**GOOD, "risk": "self_harm"}))
++    h = post(app, "hook", **BASE, note="some nights I want to end my life")
++    und = get_understander()
++    u = und.from_client(dict(h["understanding"]))
++    req = ReplaceRequest(**BASE, understanding=h["understanding"], verse_id="bg.2.47", reason="not_the_problem", correction="growing")
++    assert _corrected(u, req, und).stance == u.stance and u.risk == "self_harm"
++
++
++def test_refine_with_a_correction_needs_no_note_and_may_start_on_day1(app, rec):
++    h = _hook(app, rec, DayLLM(GOOD))
++    plan = post(app, "plan", **BASE, understanding=h["understanding"], hook_id=h["hook"]["id"], week=1)
++    ids = _plan_ids(plan)
++    llm = DayLLM(GOOD)
++    use_llm(rec, llm)
++    out = post(app, "refine", **BASE, understanding=h["understanding"], week=1, from_day=2, exclude=ids, correction="wronged")
++    assert [d["day_in_week"] for d in out["days"]] == list(range(2, 8))
++    assert out["understanding"]["stance"] == "wronged" and llm.calls == 0       # no new reading
++    assert not set(_plan_ids(out)) & set(ids)
++    out1 = post(app, "refine", **BASE, understanding=h["understanding"], week=1, from_day=1, exclude=ids, correction="growing")
++    assert out1["days"][0]["day_in_week"] == 1 and out1["understanding"]["stance"] == "aspiration"
++
++
++@pytest.mark.parametrize("body", [dict(from_day=3), dict(from_day=1, note="my brother is involved now too"),
++                                  dict(from_day=3, correction="nonsense")])
++def test_refine_rejects_neither_note_nor_correction(app, rec, body):
++    h = _hook(app, rec, DayLLM(GOOD))
++    req = {**BASE, "understanding": h["understanding"], "week": 1, **body}
++    assert app.post("/api/v1/recommend/refine", json=req).status_code == 422
++
++
++# ── The scene ─────────────────────────────────────────────────────────────────
++def test_scene_comes_from_the_library_when_none_is_written(app, rec, tmp_path, monkeypatch):
++    import ai.scene as scene_mod
++    monkeypatch.setattr(scene_mod, "_cache", {})
++    r = app.get("/api/v1/recommend/scene/bg.2.47")
++    assert r.status_code == 200, r.text
++    s = r.json()
++    assert s["verse_id"] == "bg.2.47" and s["before"] and s["moment"] and s["source_range"].startswith("Bhagavad Gita")
++    assert s["reviewed"] is False
++    assert app.get("/api/v1/recommend/scene/not.a.verse").status_code == 404
++
++
++def test_written_scene_wins_and_bad_rows_are_ignored(app, rec, tmp_path, monkeypatch):
++    import json
++    import ai.scene as scene_mod
++    p = tmp_path / "scenes.json"
++    p.write_text(json.dumps({"scenes": {"bg.2.47": {"before": "B", "moment": "M", "reply": "R", "after": "A", "reading": "X",
++                                                    "source_range": "Bhagavad Gita 2.39-53", "reviewed": True},
++                                        "bg.2.14": {"before": "only before"}}}))
++    monkeypatch.setattr(scene_mod, "_cache", scene_mod.load_scenes(p))
++    s = app.get("/api/v1/recommend/scene/bg.2.47").json()
++    assert s["before"] == "B" and s["reply"] == "R" and s["reviewed"] is True
++    s2 = app.get("/api/v1/recommend/scene/bg.2.14").json()                    # incomplete row → the library's own
++    assert s2["before"] != "only before"
++
++
++# ── Ask about this verse ──────────────────────────────────────────────────────
++GOOD_ANSWER = {"kind": "answer",
++               "says": "You have been showing up for years and nothing has moved. The verse puts your right on the showing up, "
++                       "not on the moving. The years were yours; what they bring was never yours to hold, and stopping is the one "
++                       "choice that settles it.",
++               "notice": "Notice which effort you avoid today because it might fail.",
++               "support_id": None}
++
++
++def _ask(app, rec, reply, **body):
++    llm = DayLLM(GOOD)
++    llm.ask_reply = reply
++    h = _hook(app, rec, llm)
++    base = dict(**BASE, understanding=h["understanding"], verse_id="bg.2.47", beat="hook", week=1,
++                question="What if I've been showing up for years and nothing has moved?")
++    base.update(body)
++    return llm, app.post("/api/v1/recommend/ask", json=base)
++
++
++def test_ask_answers_inside_the_verse(app, rec):
++    llm, r = _ask(app, rec, GOOD_ANSWER, for_you="Your work is yours.", asked=["Is wanting results wrong?"])
++    assert r.status_code == 200, r.text
++    a = r.json()
++    assert a["kind"] == "answer" and a["says"] and a["notice"] and a["support"] is None
++    assert WORDS(a["says"]) + WORDS(a["notice"]) <= 120
++    assert "THEIR QUESTION" in llm.ask_user and "Already shown to them: Your work is yours." in llm.ask_user
++    assert "SUPPORT CANDIDATES" in llm.ask_user
++
++
++def test_ask_support_verse_comes_from_the_library_and_only_from_the_list(app, rec):
++    from ai.ask import support_candidates
++    from ai.planner import get_planner
++    cands = support_candidates(rec, get_planner(), "bg.2.47")
++    assert cands and all(c["id"] != "bg.2.47" for c in cands)
++    _, r = _ask(app, rec, {**GOOD_ANSWER, "support_id": cands[0]["id"]})
++    sup = r.json()["support"]
++    lib = next(v for v in rec.verses if v["id"] == cands[0]["id"])
++    assert sup["id"] == cands[0]["id"] and sup["line"] == lib["line"]
++    _, r2 = _ask(app, rec, {**GOOD_ANSWER, "support_id": "bg.18.66"})        # not offered → dropped
++    assert r2.json()["support"] is None
++
++
++def test_ask_redirect_and_retune(app, rec):
++    _, r = _ask(app, rec, {"kind": "redirect"})
++    assert r.json()["kind"] == "redirect" and "tomorrow" in r.json()["message"]
++    _, r = _ask(app, rec, {"kind": "retune"})
++    assert r.json()["kind"] == "retune" and r.json()["message"]
++
++
++def test_ask_distress_gets_support_never_scripture(app, rec):
++    llm, r = _ask(app, rec, GOOD_ANSWER, question="Honestly some nights I want to end my life, does this verse say anything?")
++    a = r.json()
++    assert a["kind"] == "safety" and a["safety"]["lines"] and a["says"] is None
++    assert getattr(llm, "asks", 0) == 0
++
++
++def test_ask_bad_answers_are_refused(app, rec):
++    _, r = _ask(app, rec, {**GOOD_ANSWER, "says": "You should embrace the journey and find inner peace, the universe has a plan for you and your healing."})
++    assert r.status_code == 503
++    _, r = _ask(app, rec, GOOD_ANSWER, verse_id="xx.1.1")
++    assert r.status_code == 404
++    _, r = _ask(app, rec, GOOD_ANSWER, verse_id=None)
++    assert r.status_code == 400
++    _, r = _ask(app, rec, GOOD_ANSWER, question="x" * 301)
++    assert r.status_code == 422
++
++
++def test_questions_asked_reach_later_days_but_not_the_logs(app, rec, caplog):
++    llm = DayLLM(GOOD)
++    h = _hook(app, rec, llm)
++    q = "How do I tell giving up from changing direction?"
++    with caplog.at_level("INFO"):
++        post(app, "plan", **BASE, understanding=h["understanding"], week=2, asked=[q])
++    assert any(q in u for u in llm.personal_users)
++    assert all(q not in r.getMessage() for r in caplog.records)
++    r = app.post("/api/v1/recommend/plan", json={**BASE, "understanding": h["understanding"], "week": 2, "asked": ["x" * 301]})
++    assert r.status_code == 422
++
++
++def test_live_run_regressions():
++    """Lines the real model wrote on 24 Oct that must never reach the screen."""
++    from ai.personalize import why_scene_line, why_try_today
++    assert why_scene_line("You are in your own forest of duty. The question is what your is.")[0] is None
++    assert why_scene_line("You are in your own work years. The question is what your wealth is.")[0] is None   # copied fill-in
++    assert why_try_today("Notice when you are about to argue or defend yourself. Breathe and let the moment pass.")[1] == "technique"
++    assert why_try_today("Notice when you are about to argue and let the moment pass.", stance="wronged")[0] is None
++    assert why_try_today("Notice when you hold your breath at their words.", item={"translation": "control of breath"})[0]

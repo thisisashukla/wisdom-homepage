@@ -81,7 +81,7 @@ PHASE = {"hook": "see", "diagnose": "see", "steady": "steady", "act": "act", "st
 QROLES = ("hook", "diagnose", "steady", "act", "story")      # beats with a retrieval statement
 
 
-FEEDBACK_REASONS = ("not_my_situation", "too_heavy", "too_religious", "heard_it")
+FEEDBACK_REASONS = ("not_my_situation", "too_heavy", "too_religious", "heard_it", "not_the_problem")
 DAY1_FAMILY = "bg"     # hard rule: Day 1 of a plan is always a Bhagavad Gita verse
 
 
@@ -777,7 +777,8 @@ class Planner:
           too_heavy         gentler: comforting and steadying lines up, challenging ones and lines about dying down
           not_my_situation  away from what they turned down: verses close to it (meaning, else words) down
           too_religious     plainer: devotional texts and bhakti lines down
-          heard_it          nothing beyond never repeating it (exclude does that)"""
+          heard_it          nothing beyond never repeating it (exclude does that)
+          not_the_problem   like not_my_situation (the stance itself is corrected by the request's `correction`)"""
         fb = [f for f in feedback or [] if isinstance(f, dict) and f.get("reason") in FEEDBACK_REASONS]
         if not fb:
             return None
@@ -789,7 +790,7 @@ class Planner:
         if n["too_religious"]:
             adj -= min(0.6, 0.3 * n["too_religious"]) * self._devotional
         for f in fb:
-            if f["reason"] != "not_my_situation":
+            if f["reason"] not in ("not_my_situation", "not_the_problem"):   # both: away from what misread them
                 continue
             i = self.idx.get(f.get("verse_id") or "")
             if i is None:

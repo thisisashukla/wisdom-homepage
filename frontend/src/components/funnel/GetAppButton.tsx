@@ -18,7 +18,7 @@ export default function GetAppButton({ pageName = 'unknown' }: { pageName?: stri
       rel={ios ? 'noopener' : undefined}
       onClick={() => trackLinkClick(pageName, ios ? 'nav_get_app' : 'nav_find_verse', href)}
     >
-      {ios ? 'Get the app' : 'Create my plan'}
+      {ios ? 'Get the app' : 'Week 1 free'}
     </a>
   )
 }

@@ -306,6 +306,50 @@
 .ob-payoff { display: flex; align-items: center; gap: 8px; margin-top: 12px; padding: 0 4px; font: italic 600 15px/22px var(--serif); color: var(--accent); opacity: 0; transform: translateY(8px); transition: opacity 480ms var(--premium) 500ms, transform 480ms var(--premium) 500ms; }
 .ob-day.is-sealed .ob-payoff { opacity: 1; transform: none; }
 
+.ob-veiled .ob-veil { display: inline; filter: blur(0); transition: filter 480ms var(--calm); user-select: none; }
+.ob-day.is-sealed .ob-veiled .ob-veil { filter: blur(5px); }
+.ob-rule-line { display: flex; align-items: center; gap: 6px; margin-top: 12px; padding: 0 4px; font: italic 600 15px/22px var(--serif); color: var(--accent); opacity: 0; transition: opacity 320ms var(--calm); }
+.ob-rule-line.is-in { opacity: 1; }
+.ob-s-verse { animation: ob-fade 900ms var(--calm) backwards; }
+.ob-feel { overflow-x: hidden; }
+
+/* ── Curating your plan: Day 1 … Day 7 under step 3 ── */
+.ob-find-days { display: flex; gap: 4px; margin: 8px 0 2px; }
+.ob-find-slot { position: relative; flex: 1; height: 40px; border-radius: 12px; border: 1px dashed var(--line-1); }
+.ob-find-day { position: absolute; inset: -1px; border-radius: 12px; background: var(--acc-surface); border: 1px solid var(--acc-border); display: flex; flex-direction: column; align-items: center; justify-content: center; animation: ob-lock var(--sp-node-d, 500ms) var(--sp-node, var(--premium)) both, ob-fade 150ms linear both; animation-delay: var(--d), var(--d); }
+.ob-find-day i { font: italic 400 9px/11px var(--serif); color: var(--accent); }
+.ob-find-day b { font: 700 15px/16px var(--serif); color: var(--ink); font-variant-numeric: tabular-nums; }
+.ob-find-day.is-story { background: var(--plum800); border-color: var(--gold400); }
+.ob-find-day.is-story i { color: var(--gold400); }
+.ob-find-day.is-story b { color: var(--on-dark); }
+
+/* ── Multi-select: the sub-line as a pill, square boxes ── */
+.ob-multi-pill { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--accent); background: var(--acc-surface); color: var(--accent); font: 600 17px/24px var(--serif); }
+.ob-checkbox { flex-shrink: 0; width: 22px; height: 22px; margin-right: -4px; border-radius: 6px; border: 2px solid var(--line-3); background: var(--cream100); display: grid; place-items: center; color: var(--cream100); transition: background 200ms, border-color 200ms; }
+.ob-checkbox.is-on { background: var(--accent); border-color: var(--accent); }
+.ob-row-art .ob-row-words { flex: 1; }
+
+/* ── How are you feeling: one portrait, the words ── */
+.ob-feel-hero { position: relative; width: 184px; height: 184px; margin: 20px auto 0; display: grid; place-items: center; }
+.ob-feel-halo { grid-area: 1 / 1; width: 184px; height: 184px; border-radius: 50%; background: var(--acc-surface); border: 1px solid rgba(244, 183, 64, 0.25); }
+.ob-feel-ghost { position: absolute; top: 60px; width: 64px; height: 64px; border-radius: 50%; opacity: 0.4; border: 3px solid var(--cream100); object-fit: cover; }
+.ob-feel-ghost.is-left { left: -76px; }
+.ob-feel-ghost.is-right { right: -76px; }
+.ob-feel-front { grid-area: 1 / 1; z-index: 1; width: 156px; height: 156px; border-radius: 50%; box-shadow: 0 8px 28px rgba(46, 24, 36, 0.16); animation: ob-feel-swap 500ms var(--calm) both; }
+.ob-feel-front.is-chosen { animation: ob-feel-pop var(--sp-pick-d, 500ms) var(--sp-pick, var(--premium)) both, ob-fade 160ms linear both; }
+.ob-feel-front img { display: block; width: 100%; height: 100%; border-radius: 50%; border: 4px solid var(--cream100); object-fit: cover; }
+@keyframes ob-feel-swap { from { opacity: 0.4; transform: scale(0.94); } to { opacity: 1; transform: none; } }
+@keyframes ob-feel-pop { from { transform: scale(0.88); } to { transform: none; } }
+.ob-feel-words { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin-top: 12px; min-height: 64px; }
+.ob-feel-name { font: italic 700 24px/32px var(--serif); color: var(--accent); }
+.ob-feel-line { font: italic 400 17px/26px var(--serif); color: var(--ink-2); margin-top: 2px; padding: 0 16px; }
+.ob-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 20px; }
+.ob-pill { min-height: 42px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line-1); background: var(--cream100); box-shadow: var(--shadow-sm); cursor: pointer; font: 600 17px/1 var(--serif); color: var(--ink); transition: background 200ms, border-color 200ms, color 200ms, transform 140ms var(--decel); }
+.ob-pill:active { transform: scale(0.96); }
+.ob-pill.is-light { background: var(--acc-surface); border-color: var(--acc-border); }
+.ob-pill.is-on { background: var(--plum800); border-color: var(--plum800); color: var(--cream100); box-shadow: var(--shadow-md); }
+.ob-pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
 /* ── Paywall ── */
 .ob-strip { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin-top: 28px; }
 .ob-strip-day { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 10px 0 12px; border-radius: 12px; background: var(--cream100); border: 1px solid var(--line-1); animation: ob-strip var(--sp-card-d, 700ms) var(--sp-card, var(--premium)) both, ob-fade 200ms linear both; animation-delay: var(--d), var(--d); }

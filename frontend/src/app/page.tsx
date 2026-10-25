@@ -9,7 +9,7 @@ import CreatePlanLink from '@/components/funnel/CreatePlanLink'
 import PlanPreview from '@/components/funnel/PlanPreview'
 import DevicePlans from '@/components/funnel/DevicePlans'
 import { getAllChapters, getAllVerseRefs, getVerse, getVerseAudio, chapterImage } from '@/lib/gita'
-import { appStoreUrl, WEB_PLAN_PRICE_INR } from '@/lib/app'
+import { appStoreUrl } from '@/lib/app'
 import { GITA_FOR } from '@/lib/gitaFor'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import PlatformOnly from '@/components/funnel/PlatformOnly'
@@ -80,7 +80,7 @@ const FAQ = [
   },
   {
     q: 'How does the 7-day plan work?',
-    a: `Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Day 1 is free. On iPhone the rest of week 1 is free in the app; on Android and computers it's ₹${WEB_PLAN_PRICE_INR} a week, after you sign in with Google.`,
+    a: `Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Week 1 is free: on iPhone in the app, and on Android and computers right here, after you sign in with Google.`,
   },
   {
     q: 'Is the Gita available in Hindi?',
@@ -88,7 +88,7 @@ const FAQ = [
   },
   {
     q: 'What does it cost?',
-    a: `Reading is free. On iPhone, week 1 of a plan is free and Pro opens weeks 2 and 3. On the web, a plan is ₹${WEB_PLAN_PRICE_INR} a week. Your bank sends a notice before each charge and you can cancel from your plan.`,
+    a: `Reading is free. Week 1 of a plan is free, on the web and on iPhone. On iPhone, Pro opens weeks 2 and 3.`,
   },
   {
     q: 'Is this a substitute for therapy?',
@@ -260,7 +260,7 @@ export default async function HomePage() {
           </figure>
           <div className="t-center rv" style={{ marginTop: 28 }}>
             <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_home_which_gita" location="home_which_gita_cta">
-              Create my 7-day Gita plan
+              Create my 7-day Gita plan · Week 1 free
             </CreatePlanLink>
           </div>
         </div>
@@ -388,10 +388,10 @@ export default async function HomePage() {
           <img src="/assets/chapter2.webp" alt="" aria-hidden="true" loading="lazy" className="final-band-art" />
           <div className="final-band-scrim" aria-hidden="true" />
           <div className="final-band-inner">
-          <h2>Start with <em>Day 1, free.</em></h2>
-          <p>A few questions, about two minutes. Your first verse is free.</p>
+          <h2>Start with <em>Week 1, free.</em></h2>
+          <p>A few questions, about two minutes. Your first seven days are free.</p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_final_band" location="final_cta_create_plan">Create my 7-day Gita plan</CreatePlanLink>
+            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_final_band" location="final_cta_create_plan">Create my 7-day Gita plan · Week 1 free</CreatePlanLink>
           </div>
           </div>
         </div>

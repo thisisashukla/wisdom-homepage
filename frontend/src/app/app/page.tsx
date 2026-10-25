@@ -5,7 +5,7 @@ import appSchemas from '@/lib/appSchemas'
 import BlogTracker from '@/components/BlogTracker'
 import HomeAnimations from '@/components/HomeAnimations'
 import Nav from '@/components/Nav'
-import { appStoreUrl, WEB_PLAN_PRICE_INR } from '@/lib/app'
+import { appStoreUrl } from '@/lib/app'
 import '../home.css'
 import '../home-v3.css'
 
@@ -42,7 +42,7 @@ const FAQ = [
   { q: 'What does Wisdom do?', a: 'It tunes the Bhagavad Gita to your life. You tell it what is going on and it picks one verse a day for it, with the Sanskrit, the meaning and what it says for you, read aloud, for seven days.' },
   { q: 'Is it only the Gita?', a: 'The Gita leads. When a story says it better, Wisdom also draws on the Ramayana, the Mahabharata and the Upanishads. Every verse comes with its original Sanskrit or Indian-language line.' },
   { q: 'How much does it cost?', a: 'Week 1 of your plan is free. Wisdom Pro opens weeks 2 and 3, monthly or yearly, with a free trial.' },
-  { q: 'Is it on Android?', a: `Not yet. On Android or a computer, get your verse on wisdomquotes.in and build a 7-day plan on the web for ₹${WEB_PLAN_PRICE_INR} a week.` },
+  { q: 'Is it on Android?', a: `Not yet. On Android or a computer, get your verse on wisdomquotes.in and build a 7-day plan on the web. Week 1 is free there too.` },
   { q: 'What happens to what I write?', a: 'Your words are sent once to choose your verses and are not stored or logged.' },
 ]
 
@@ -73,7 +73,7 @@ export default function AppLandingPage() {
               on={['ios', 'desktop']}
               fallback={
                 <a href="/start?ref=app_page_android" className="btn-read-gita btn-read-gita-primary" data-mp-location="app_hero_android_create_plan">
-                  Create my 7-day Gita plan →
+                  Create my 7-day Gita plan · Week 1 free →
                 </a>
               }
             >
@@ -199,7 +199,7 @@ export default function AppLandingPage() {
           <p style={{ fontSize: '14px', color: 'var(--text-dim)', marginTop: '24px' }}>
             On Android?{' '}
             <a href="/start?ref=app_page_final" style={{ color: 'var(--gold-light)', fontWeight: 600 }} data-mp-location="app_final_android">
-              Get your verse and a 7-day plan on the web →
+              Get your verse and a 7-day plan on the web, week 1 free →
             </a>
           </p>
         </div>

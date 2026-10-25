@@ -92,6 +92,8 @@ class PersonContext:
     days_seen: int = 0                   # days of the plan they have already opened
     helped: Sequence[str] = ()           # lines of verses they said helped
     past: Sequence[str] = ()             # labels of earlier situations they worked through
+    correction: str = ""                 # what they told us when a reading misjudged them ("I'm not the problem here")
+    asked: Sequence[str] = ()             # questions they asked about this plan's verses (their words, this request only)
     flags: List[str] = field(default_factory=list)
 
 
@@ -133,6 +135,8 @@ def person_block(c: PersonContext) -> str:
     if c.core:
         lines.append(f"{STANCE_CORE_LABEL.get(c.stance, STANCE_CORE_LABEL['struggle'])}: {c.core}")
     lines.append(f"Where they stand: {STANCE_NOTE.get(c.stance, STANCE_NOTE['struggle'])}")
+    if c.correction:
+        lines.append(f"They corrected an earlier reading that misjudged them, and this overrides anything above it: {c.correction}")
     if c.insight:
         lines.append(f"What is really going on: {c.insight}")
     if c.root:
@@ -155,6 +159,10 @@ def person_block(c: PersonContext) -> str:
                      + " | ".join(c.helped[:3]))
     if c.past:
         lines.append("What they worked through before: " + "; ".join(c.past[:3]))
+    if c.asked:
+        lines.append("Questions they asked while reading this plan (their own words; where this day's verse allows, let it speak to "
+                     "them, but never quote a question back and never answer one the verse does not touch): "
+                     + " | ".join(q.strip() for q in c.asked[-3:]))
     return "\n".join(lines)
 
 

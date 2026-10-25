@@ -4,15 +4,13 @@ import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Karma Quotes from the Bhagavad Gita — 10 Shlokas on Karma with Sanskrit & English Meaning",
-  description:
-    "The Bhagavad Gita's most important shlokas on karma, in one page. Sanskrit original, IAST transliteration, English meaning and the one-line essence for each verse. From 2.47 (karmanye vadhikaraste) to 4.37 (knowledge burns karma).",
+  title: "Karma Quotes in Sanskrit: 10 Gita Shlokas with Meaning",
+  description: "10 Sanskrit quotes on karma from the Bhagavad Gita, starting with 2.47 (karmanye vadhikaraste), each with transliteration, English meaning and essence.",
   keywords:
     "karma quotes bhagavad gita, gita shlok on karma, gita sloka on karma, quotes on karma from bhagavad gita, karma quotes in bhagavad gita, bhagwad geeta shlok on karma, karma quotes hindi, geeta quotes on karma, karma verses gita, shlokas on karma",
   openGraph: {
-    title: "Karma Quotes from the Bhagavad Gita — 10 Shlokas with Sanskrit & English",
-    description:
-      "10 karma quotes from the Bhagavad Gita — Sanskrit, IAST, English meaning and the one-line essence for each verse.",
+    title: "Karma Quotes in Sanskrit: 10 Gita Shlokas with Meaning",
+    description: "10 Sanskrit quotes on karma from the Bhagavad Gita, starting with 2.47 (karmanye vadhikaraste), each with transliteration, English meaning and essence.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/karma-quotes-bhagavad-gita",
     siteName: 'Wisdom',
@@ -22,9 +20,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Karma Quotes from the Bhagavad Gita — 10 Shlokas with Sanskrit & English",
-    description:
-      "10 karma quotes from the Bhagavad Gita — Sanskrit, IAST, English meaning and the one-line essence for each verse.",
+    title: "Karma Quotes in Sanskrit: 10 Gita Shlokas with Meaning",
+    description: "10 Sanskrit quotes on karma from the Bhagavad Gita, starting with 2.47 (karmanye vadhikaraste), each with transliteration, English meaning and essence.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {

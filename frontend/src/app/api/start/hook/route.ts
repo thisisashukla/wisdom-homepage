@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { backendPost, rateLimit } from '@/lib/server/backend'
+import { backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
 import { BackendVerse, cleanSanskrit, profileBody, refOf, StartProfile } from '@/lib/server/startShared'
 
@@ -10,7 +10,7 @@ export const maxDuration = 30
 /**
  * Onboarding "Finding your verse": the person's answers and (optionally) their
  * own words → their reading and Day 1's verse (POST /recommend/hook, as in the
- * app). Signed-in only. The note is passed through once and never stored.
+ * app). Open before sign-in (rate-limited by IP). The note is passed through once and never stored.
  */
 type HookBackend = {
   understanding?: Record<string, unknown> & { mirror?: string; insight?: string; weeks?: string[] }
@@ -21,8 +21,9 @@ type HookBackend = {
 
 export async function POST(req: Request) {
   const user = await verifyFirebaseToken(bearer(req))
-  if (!user) return NextResponse.json({ error: 'signin_required' }, { status: 401 })
-  if (!rateLimit(`start-hook:${user.uid}`, 12, 60 * 60 * 1000)) {
+  // Signed in or not: the value comes first, sign-in comes after Day 1. Anonymous callers are limited by IP.
+  const who = user ? user.uid : `ip:${clientIp(req)}`
+  if (!rateLimit(`start-hook:${who}`, user ? 12 : 6, 60 * 60 * 1000)) {
     return NextResponse.json({ error: 'rate_limited' }, { status: 429 })
   }
 

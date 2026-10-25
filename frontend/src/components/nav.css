@@ -169,3 +169,65 @@ nav.site-nav.site-nav--scrolled .nav-page-link {
 /* On the homepage the hero owns the CTA; the nav CTA appears once the hero is gone. */
 .site-nav--overlay:not(.site-nav--scrolled) .nav-cta { opacity: 0; pointer-events: none; }
 .site-nav--overlay .nav-cta { transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* ── App link: the one nav item that leads to the iPhone app. Outlined gold
+   pill so it reads as a destination, one step below the solid .nav-cta. ── */
+.nav-links a.nav-app-link,
+a.nav-app-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border: 1.5px solid rgba(245, 201, 106, 0.7);
+  border-radius: 999px;
+  background: rgba(245, 201, 106, 0.1);
+  color: #f5c96a;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.18s, border-color 0.18s;
+}
+.nav-links a.nav-app-link:hover,
+a.nav-app-link:hover {
+  background: rgba(245, 201, 106, 0.2);
+  border-color: #f5c96a;
+  color: #f5c96a;
+}
+a.nav-app-link:focus-visible {
+  outline: 2px solid #f5c96a;
+  outline-offset: 2px;
+}
+.nav-app-icon { flex-shrink: 0; }
+.hero-shell nav.site-nav.site-nav--overlay a.nav-app-link { text-shadow: none; }
+
+/* Mobile header copy of the App link (desktop list is hidden ≤960px). */
+.nav-app-link--mobile { display: none !important; }
+@media (max-width: 960px) {
+  .nav-app-link--mobile {
+    display: inline-flex !important;
+    min-height: 36px;
+    padding: 0 12px;
+    margin-right: 14px;
+  }
+  .nav-read-mobile { margin-right: 14px; }
+}
+/* Narrow phones: keep logo + App + menu on one line; "Read the Gita" is in the drawer. */
+@media (max-width: 400px) {
+  .nav-read-mobile { display: none; }
+  .nav-app-link--mobile { margin-left: auto; }
+}
+
+/* Drawer: the app is the first, filled row. */
+.mobile-nav-drawer a.mobile-nav-app {
+  display: block;
+  margin: 4px 0 10px;
+  padding: 13px 16px;
+  border-radius: 12px;
+  background: #c8881e;
+  color: #1a0606 !important;
+  font-weight: 700;
+  border-bottom: 0 !important;
+  text-decoration: none;
+}

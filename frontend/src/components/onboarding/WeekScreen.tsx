@@ -6,12 +6,14 @@ import { Cta } from './parts'
 import { haptic, reducedMotion } from './motion'
 
 /**
- * Your first week (wisdom/app/screens/onboarding/Ob07_PlanScreen.tsx): the
- * plan built around the verse they just uncovered, a gold thread through seven
- * days in three movements (see it, steady it, act on it). Today is revealed;
- * tomorrow's marker breathes; the later days show how their verse begins, then
- * seal: a veil closes over it and the lock stamps down. Day 7 is the story,
- * on the plum card. The list scrolls itself to the end; a touch hands control back.
+ * Your first week (wisdom/app/screens/onboarding/Ob07_PlanScreen.tsx), shown
+ * straight after "Curating your plan": a gold thread through seven days in
+ * three movements (see it, steady it, act on it). Every day is sealed, Day 1
+ * too: today's marker breathes and its card says "Ready"; each day shows how
+ * its verse begins, then frosted glass draws over the rest and the lock stamps
+ * down. Day 7 is the payoff: the story, on the plum card. The list scrolls
+ * itself to the end; a touch hands control back. "Reveal my first verse" opens
+ * Day 1 under sand (VerseScreen).
  */
 export type PreviewDay = { day: number; beat: string; phase: string; ref: string | null; line: string | null }
 
@@ -19,18 +21,28 @@ const WEEK_SHAPE = ['hook', 'diagnose', 'steady', 'steady', 'act', 'act', 'story
 const PHASE_OF: Record<string, string> = { hook: 'see', diagnose: 'see', steady: 'steady', act: 'act', story: 'story' }
 const PHASE_LABEL: Record<string, string> = { see: 'See it', steady: 'Steady it', act: 'Act on it', story: 'Someone lived it' }
 const BEAT_LABEL: Record<string, string> = { hook: 'Where you are', diagnose: "What's underneath", steady: 'What steadies you', act: 'What to do', story: 'A story' }
-const WEEKDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const dayName = (k: number) => {
-  if (k === 0) return 'Today'
-  if (k === 1) return 'Tomorrow'
-  const d = new Date()
-  d.setDate(d.getDate() + k)
-  return WEEKDAY[d.getDay()]
-}
-const STAGGER = 260
+// Today, Tomorrow, then just the day number: a day opens once the one before it is read,
+// so weekdays would promise dates the plan doesn't keep.
+const dayName = (k: number) => (k === 0 ? 'Today' : k === 1 ? 'Tomorrow' : `Day ${k + 1}`)
+const showsNumber = (k: number) => k < 2
+const STAGGER = 180
 const SEAL_DELAY = 420
-const SCROLL_SPEED = 62
+const SCROLL_SPEED = 150
 const LAST = 6
+
+/** A held-back line (the app's Veiled): the first words read clearly, the rest under frosted glass. */
+function Veiled({ text, lead = 3 }: { text: string; lead?: number }) {
+  const words = text.split(/\s+/).filter(Boolean)
+  const n = Math.max(0, Math.min(lead, words.length - 2))
+  const shown = words.slice(0, n).join(' ')
+  const rest = words.slice(n).join(' ')
+  return (
+    <p className="ob-day-line ob-veiled">
+      {shown && <span>{shown} </span>}
+      <span className="ob-veil" aria-hidden="true">{rest}</span>
+    </p>
+  )
+}
 
 export default function WeekScreen({
   preview,
@@ -59,6 +71,7 @@ export default function WeekScreen({
   const queued = useRef<boolean[]>(WEEK_SHAPE.map(() => false))
   const timers = useRef<ReturnType<typeof setTimeout>[]>([])
   const auto = useRef({ on: false, raf: 0 })
+  const byHand = useRef(false)
   const later = (fn: () => void, ms: number) => { timers.current.push(setTimeout(fn, ms)) }
 
   const reveal = (k: number) => {
@@ -74,7 +87,7 @@ export default function WeekScreen({
       setShown((s) => s.map((x, i) => (i === k ? true : x)))
       later(() => {
         setSealed((s) => s.map((x, i) => (i === k ? true : x)))
-        if (k > 0) haptic(k === LAST ? 12 : 4)
+        haptic(k === LAST ? 12 : 4)
       }, SEAL_DELAY + (k === 0 ? 0 : 180))
     }, wait)
   }
@@ -93,13 +106,14 @@ export default function WeekScreen({
   }
 
   const stopAuto = () => { auto.current.on = false; cancelAnimationFrame(auto.current.raf) }
+  const takeOver = () => { byHand.current = true; stopAuto() }
   useEffect(() => {
     if (reducedMotion()) return
     const START = 800
     later(check, START)
     later(() => {
       const sc = scroller.current
-      if (!sc) return
+      if (!sc || byHand.current) return
       auto.current.on = true
       let last = 0
       let y = sc.scrollTop
@@ -122,7 +136,7 @@ export default function WeekScreen({
 
   return (
     <>
-      <div className="ob-scroll" ref={scroller} onScroll={check} onPointerDown={stopAuto} onWheel={stopAuto} onTouchStart={stopAuto}>
+      <div className="ob-scroll" ref={scroller} onScroll={check} onPointerDown={takeOver} onWheel={takeOver} onTouchStart={takeOver}>
         <div className="ob-hero">
           <div className="ob-logo-slot" aria-hidden="true" />
           <h1 className="ob-title ob-rise ob-fit" style={{ '--d': '0ms' } as React.CSSProperties}>
@@ -130,7 +144,7 @@ export default function WeekScreen({
             <em>seven days</em>
           </h1>
           <p className="ob-sub ob-rise" style={{ '--d': '180ms' } as React.CSSProperties}>
-            One verse each morning: see it, steady it, act on it. On Day 7, a story ties it together.
+            One verse each morning: see it, steady it, act on it. Day 1 is ready to open.
           </p>
           {weekTitle && (
             <p className="ob-week-chip ob-rise" style={{ '--d': '320ms' } as React.CSSProperties}>
@@ -147,32 +161,35 @@ export default function WeekScreen({
             const today = k === 0
             const text = today ? hookLine ?? d?.line ?? null : d?.line ?? null
             const ref = today ? hookRef ?? d?.ref ?? null : d?.ref ?? null
+            const when = showsNumber(k) ? `${dayName(k)}, day ${k + 1}` : dayName(k)
+            const label = `${when}. ${BEAT_LABEL[beats[k]] ?? ''}.` + (today ? ' Ready to reveal.' : isStory ? ` ${text ?? ''}. Opens on its morning.` : ' Opens on its morning.')
             return (
               <div key={k} className={`ob-day${shown[k] ? ' is-in' : ''}${sealed[k] ? ' is-sealed' : ''}`} ref={(el) => { steps.current[k] = el }} style={{ '--tilt': `${(k % 2 ? -1 : 1) * (isStory ? 2 : 1.5)}deg` } as React.CSSProperties}>
                 {opens && <p className="ob-phase">{PHASE_LABEL[phase]}</p>}
                 <div className="ob-day-row">
-                  <span className={`ob-day-node${today ? ' is-today' : k === 1 ? ' is-next' : ''}${isStory ? ' is-story' : ''}`} aria-hidden="true">
-                    {today && <Icon name="check" weight="bold" size={10} />}
-                  </span>
-                  <div
-                    className={`ob-day-card${today ? ' is-today' : ''}${isStory ? ' is-story' : ''}`}
-                    aria-label={`${dayName(k)}, day ${k + 1}. ${BEAT_LABEL[beats[k]] ?? ''}. ${today || isStory ? text ?? '' : 'Opens on its morning.'}`}
-                  >
-                    <div className="ob-day-head">
+                  <span className={`ob-day-node${today ? ' is-next' : ''}${isStory ? ' is-story' : ''}`} aria-hidden="true" />
+                  <div className={`ob-day-card${today ? ' is-today' : ''}${isStory ? ' is-story' : ''}`} role="group" aria-label={label}>
+                    <div className="ob-day-head" aria-hidden="true">
                       <b>{dayName(k)}</b>
-                      <span>Day {k + 1}</span>
+                      {showsNumber(k) && <span>Day {k + 1}</span>}
                       <i />
-                      <span className="ob-stamp">{today ? <em>Revealed</em> : <Icon name="lock" size={14} />}</span>
+                      <span className="ob-stamp">{today ? <em>Ready</em> : <Icon name="lock" size={14} />}</span>
                     </div>
-                    <p className="ob-day-beat">{isStory ? 'A story' : BEAT_LABEL[beats[k]]}</p>
+                    <p className="ob-day-beat" aria-hidden="true">{isStory ? 'A story' : BEAT_LABEL[beats[k]]}</p>
                     {text ? (
-                      <p className={`ob-day-line${!today && !isStory ? ' is-glimpse' : ''}`}>{text}</p>
+                      isStory ? <p className="ob-day-line" aria-hidden="true">{text}</p> : <Veiled text={text} />
                     ) : (
                       <span className="ob-pending" />
                     )}
-                    {ref && <p className="ob-day-ref">{ref}</p>}
+                    {ref && <p className="ob-day-ref" aria-hidden="true">{ref}</p>}
                   </div>
                 </div>
+                {today && (
+                  <p className={`ob-rule-line${shown[1] ? ' is-in' : ''}`}>
+                    <Icon name="sparkle" size={14} />
+                    <span>One for each morning.</span>
+                  </p>
+                )}
                 {isStory && (
                   <p className="ob-payoff">
                     <Icon name="lotus" weight="duotone" size={16} />

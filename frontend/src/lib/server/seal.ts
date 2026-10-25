@@ -22,6 +22,13 @@ function key(): Buffer {
   return crypto.createHash('sha256').update(`wisdom-plan-seal:${secret}`).digest()
 }
 
+/**
+ * Week 1 is free and is built before sign-in, so the week is sealed to the
+ * flow itself rather than to a user; signing in (checked by /api/start/unseal)
+ * is what opens it.
+ */
+export const WEEK_AAD = 'wisdom-start-week-1'
+
 export function seal(data: unknown, uid: string): string {
   const iv = crypto.randomBytes(12)
   const c = crypto.createCipheriv('aes-256-gcm', key(), iv)

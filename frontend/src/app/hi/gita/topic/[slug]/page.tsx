@@ -111,6 +111,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
 export default async function TopicPageHi({ params }: { params: Params }) {
   const topic = await getTopic(params.slug)
+  // Retired slugs are 308'd by src/middleware.ts before reaching here.
   if (!topic) notFound()
   const verses = await getTopicVerses(topic.slug, 50)
   const cap = topic.label.replace(/\b\w/g, (c) => c.toUpperCase())

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { appStoreUrl, detectPlatform } from '@/lib/app'
 
 const links = [
-  { href: '/start?ref=menu', label: 'Create my 7-day Gita plan' },
+  { href: '/start?ref=menu', label: 'Create my 7-day Gita plan · Week 1 free' },
   { href: '/gita', label: 'Read the Gita' },
   { href: '/hi/gita', label: 'हिंदी गीता' },
   { href: '/gita/today', label: 'Verse of the Day' },
@@ -52,6 +52,16 @@ export function MobileNavToggle() {
         hidden={!open}
       >
         <ul>
+          <li>
+            <a
+              href={APP_LANDING_URL}
+              className="mobile-nav-app"
+              data-mp-location="mobile_nav_drawer_app"
+              onClick={() => setOpen(false)}
+            >
+              Get the Wisdom app for iPhone →
+            </a>
+          </li>
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -64,23 +74,6 @@ export function MobileNavToggle() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href={APP_LANDING_URL}
-              data-mp-location="mobile_nav_drawer_ios_app"
-              onClick={() => setOpen(false)}
-              style={{
-                display: 'block',
-                marginTop: 8,
-                padding: '13px 4px',
-                fontWeight: 700,
-                color: '#f5c96a',
-                borderBottom: 0,
-              }}
-            >
-              Wisdom for iPhone →
-            </a>
-          </li>
         </ul>
       </div>
     </>

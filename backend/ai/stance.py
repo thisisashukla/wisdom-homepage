@@ -106,7 +106,13 @@ WRONGED_WRITER_RE = re.compile(
     r"\b(accept\w*|adjust\w*|adapt\w*|content(ment|ed)?|patien\w*|endur\w*|tolerat\w*|put up with|keep the peace|"
     r"let it go|lower (your )?expectation\w*|their nature|how they are|what is theirs to (choose|decide)|surrender\w*|"
     r"forgiv\w*|compromise\w*|earn (their|his|her) (respect|approval)|win (them|him|her) over|prove (yourself|your worth)|"
-    r"your (own )?expectation\w*|your need for|envy\w*|jealous\w*|humbl\w*)\b", re.I)
+    r"your (own )?expectation\w*|your need for|envy\w*|jealous\w*|humbl\w*|"
+    r"let (it|the moment|this|that) pass|(do not|don'?t) (argue|defend yourself|speak up)|stay quiet|keep quiet|swallow (it|your words))\b", re.I)
+# ...and the other way: a line that swings to "they're terrible, you're perfect" or urges revenge is dropped too.
+WRONGED_OVERSWING_RE = re.compile(
+    r"\b(revenge|aveng\w*|get (back at|even with)|make (them|him|her) pay|teach (them|him|her) a lesson|punish (them|him|her)|"
+    r"(they|he|she) (is|are) (terrible|evil|toxic|monsters?|the worst)|you are perfect|you'?ve done everything right|"
+    r"cut (them|him|her|everyone) (off|out) (for good|forever|completely))\b", re.I)
 # A line for an aspiration that consoles a wound they don't have is dropped.
 ASPIRATION_WRITER_RE = re.compile(
     r"\b(you (cannot|can'?t|do not|don'?t|struggle to|fail to) (handle|stay|keep|sit|bear|stand|cope|seem)|discipline or (just )?stubbornness|"
@@ -121,7 +127,10 @@ STANCE_NOTE = {
                   "Meet the resolve as a friend who believes it, and name only what will test it.",
     "wronged": "they are being wronged: someone treats them as less than they are, and the cause is in that person, not in them. "
                "Never ask them to accept it, adjust, be patient, be content, forgive, lower expectations, keep the peace or "
-               "understand the other's nature; never say they expected or needed too much. Give footing, courage and the true word.",
+               "understand the other's nature; never say they expected or needed too much. Give footing, courage and the true word. "
+               "The tradition's line for a wronged person, which every word must keep: You are not at fault. Stand firm. Act from dharma, not revenge. "
+               "So do not swing to the other side either: never call the other person terrible, never call them perfect, never urge "
+               "revenge, punishment or cutting everyone off.",
     "seeking": "seeking: no problem to solve. They want to read and understand; the plan is an invitation, not a cure.",
 }
 STANCE_CORE_LABEL = {

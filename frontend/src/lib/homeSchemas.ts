@@ -69,7 +69,7 @@ const schemas = [
           {
             '@type': 'Question',
             name: "How does the Wisdom 7-day plan work?",
-            acceptedAnswer: { '@type': 'Answer', text: "Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Day 1 is free. On iPhone the rest of week 1 is free in the app; on Android and computers it is ₹89 a week, after you sign in with Google." },
+            acceptedAnswer: { '@type': 'Answer', text: "Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Week 1 is free: on iPhone in the app, and on Android and computers right here, after you sign in with Google." },
           },
           {
             '@type': 'Question',
@@ -79,7 +79,7 @@ const schemas = [
           {
             '@type': 'Question',
             name: "What does Wisdom cost?",
-            acceptedAnswer: { '@type': 'Answer', text: "Reading is free. On iPhone, week 1 of a plan is free and Pro opens weeks 2 and 3. On the web, a plan is ₹89 a week. Your bank sends a notice before each charge and you can cancel from your plan." },
+            acceptedAnswer: { '@type': 'Answer', text: "Reading is free. Week 1 of a plan is free, on the web and on iPhone. On iPhone, Pro opens weeks 2 and 3." },
           },
           {
             '@type': 'Question',

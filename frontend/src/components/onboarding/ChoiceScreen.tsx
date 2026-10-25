@@ -12,6 +12,8 @@ import { haptic } from './motion'
  * settles with one small bob; a second portrait slides out from behind the
  * first. A tap only selects (gold ring, check badge, the portrait lifts), so
  * the answer can change. Continue is always there, quiet until something is picked.
+ * Multi-select reads as "tick as many as you like": the sub-line sits in a pill
+ * with a check, each card gets a square box, and the button counts the picks.
  */
 export type ChoiceOption<T extends string> = { id: T; label: string; line?: string }
 
@@ -58,7 +60,14 @@ export default function ChoiceScreen<T extends string>({
   const ROWS_AT = 500 // D.normal + D.fast
   return (
     <>
-      <Hero title={title} accent={accent} sub={sub} />
+      <Hero title={title} accent={accent} sub={multi ? undefined : sub}>
+        {multi && (
+          <p className="ob-multi-pill ob-rise" style={{ '--d': '180ms' } as React.CSSProperties}>
+            <Icon name="check" weight="bold" size={14} />
+            <span>{sub}</span>
+          </p>
+        )}
+      </Hero>
       <div className={`ob-list${art ? ' has-art' : ''}${lined ? ' is-lined' : ''}`} role={multi ? 'group' : 'radiogroup'} aria-label={`${title} ${accent}`}>
         {options.map((o, i) => {
           const on = picked.includes(o.id)
@@ -75,6 +84,11 @@ export default function ChoiceScreen<T extends string>({
                 style={pics.length ? ({ '--stack': `${68 + 44 * (pics.length - 1)}px` } as React.CSSProperties) : undefined}
                 onClick={() => onRow(o.id)}
               >
+                {multi && pics.length > 0 && (
+                  <span className={`ob-checkbox${on ? ' is-on' : ''}`} aria-hidden="true">
+                    {on && <Icon name="check" weight="bold" size={14} />}
+                  </span>
+                )}
                 <span className="ob-row-words">
                   <span className="ob-row-label">{o.label}</span>
                   {o.line && <span className="ob-row-line">{o.line}</span>}
@@ -91,9 +105,11 @@ export default function ChoiceScreen<T extends string>({
                     <span className="ob-medal ob-medal-front" style={{ left: 0, '--d': `${delay + 180}ms` } as React.CSSProperties}>
                       <span className="ob-medal-face">
                         <img src={pics[0]} alt="" width={68} height={68} />
-                        <span className="ob-badge">
-                          <Icon name="check" weight="bold" size={12} />
-                        </span>
+                        {!multi && (
+                          <span className="ob-badge">
+                            <Icon name="check" weight="bold" size={12} />
+                          </span>
+                        )}
                       </span>
                     </span>
                   </span>
@@ -116,7 +132,7 @@ export default function ChoiceScreen<T extends string>({
           onDone(options.map((o) => o.id).filter((x) => picked.includes(x)))
         }}
       >
-        Continue
+        {!multi ? 'Continue' : picked.length ? `Continue with ${picked.length}` : 'Pick one or more'}
       </Cta>
     </>
   )

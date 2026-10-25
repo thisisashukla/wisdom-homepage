@@ -5,36 +5,39 @@ import { getRedirectResult } from 'firebase/auth'
 import { auth } from '@/lib/firebase'
 import { useAuth } from '@/context/AuthContext'
 import { trackEvent } from '@/lib/mixpanel'
-import { api, ApiError, identify, signInWithGoogle, startWeeklyPlanCheckout, takePending } from '@/lib/funnelClient'
-import { WEB_PLAN_PRICE_INR, situationById } from '@/lib/app'
+import { api, ApiError, identify, signInWithGoogle, takePending } from '@/lib/funnelClient'
+import { situationById } from '@/lib/app'
 import {
-  AGES, AGE_ART, FEELING_ART, LOGO_2X, NEEDS, SITUATION_FEELING, STAGE_ART, stagesFor,
+  AGES, AGE_ART, FEELING_ART, LOGO_2X, NEEDS, SITUATION_FEELING, STAGE_ART, emotionById, stagesFor,
   type AgeId, type NeedId, type StageId,
 } from '@/lib/onboarding/profile'
 import { springVars, reducedMotion } from './motion'
 import { BackButton } from './parts'
 import SplashScreen from './SplashScreen'
 import ChoiceScreen from './ChoiceScreen'
-import PhoneScreen from './PhoneScreen'
+import FeelingScreen from './FeelingScreen'
 import NoteScreen from './NoteScreen'
 import SignInScreen from './SignInScreen'
 import FindingScreen, { type FindChip } from './FindingScreen'
 import VerseScreen, { type HookVerse } from './VerseScreen'
 import WeekScreen, { type PreviewDay } from './WeekScreen'
-import PaywallScreen from './PaywallScreen'
 import PlanScreen, { type FullDay } from './PlanScreen'
 
 /**
  * The Wisdom app's onboarding, on the web (for Android and computers; iPhone
  * visitors are sent to the App Store). Same screens, copy, icons and motion as
- * wisdom/app/screens/onboarding on branch v3, in the same order, with two web
- * changes: Google sign-up comes once the questions are done (before the verse
- * is chosen, since it's chosen for this account), and the paywall sells the
- * ₹89 week instead of an App Store trial. The logo is drawn once by this
- * shell and never moves; each screen's words fade out and the next rise in.
+ * wisdom/app/screens/onboarding on branch v3, in the same order: age, life
+ * stage, feeling (in their own word), their note, "Curating your plan", the
+ * week with every day sealed, then Day 1 brushed open. Value first: no
+ * sign-in until Day 1 is read. Then Google sign-in sends the whole free week
+ * to their inbox and opens it here (no paywall; Week 1 is free). There is no
+ * Day 2 reminder screen or listen step (no push or narration on the web yet).
+ * The phone-hours screen is out of the
+ * flow, as in the app. The logo is drawn once by this shell and never moves;
+ * each screen's words fade out and the next rise in.
  */
 type Step = 'splash' | 'age' | 'stage' | 'phone' | 'feeling' | 'note' | 'signin' | 'finding' | 'verse' | 'week' | 'paywall' | 'plan'
-type Answers = { age?: AgeId; stages: StageId[]; phoneHours?: number; need?: NeedId; note?: string; noteSource?: 'voice' | 'text'; topic?: string; follow?: string }
+type Answers = { age?: AgeId; stages: StageId[]; phoneHours?: number; need?: NeedId; emotion?: string; note?: string; noteSource?: 'voice' | 'text'; topic?: string; follow?: string }
 type Results = {
   understanding?: Record<string, unknown> & { mirror?: string; insight?: string; weeks?: string[] }
   hook?: HookVerse | null
@@ -44,11 +47,15 @@ type Results = {
   sealed?: string
   days?: FullDay[] | null
   paid?: boolean
+  seen?: boolean
+  emailedTo?: string | null
 }
 type Saved = { v: 1; step: Step; answers: Answers; results: Results; at: number }
 
 const KEY = 'wisdom_start_v1'
-const BACK: Partial<Record<Step, Step>> = { age: 'splash', stage: 'age', phone: 'stage', feeling: 'phone', note: 'feeling', signin: 'note', finding: 'note', verse: 'note', week: 'verse', paywall: 'week' }
+const BACK: Partial<Record<Step, Step>> = { age: 'splash', stage: 'age', feeling: 'stage', note: 'feeling', signin: 'verse', finding: 'note', week: 'note', verse: 'week' }
+const PLAN_CAP = 9000 // ms "Curating your plan" waits for the week before moving on anyway
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 const load = (): Saved | null => {
   try {
     const s = JSON.parse(localStorage.getItem(KEY) || 'null') as Saved | null
@@ -59,7 +66,7 @@ const load = (): Saved | null => {
 }
 
 export default function StartFlow() {
-  const { user } = useAuth()
+  const { user, loading: authLoading } = useAuth()
   const [step, setStep] = useState<Step>('splash')
   const [answers, setAnswers] = useState<Answers>({ stages: [] })
   const [results, setResults] = useState<Results>({})
@@ -91,14 +98,14 @@ export default function StartFlow() {
       preset.follow = situation.follow
       preset.need = SITUATION_FEELING[situation.id]
     }
-    if (s && ['verse', 'week', 'paywall', 'plan'].includes(s.step) && s.results.hook) {
+    if (s && ['verse', 'week', 'signin', 'paywall', 'plan'].includes(s.step) && s.results.hook) {
       setAnswers(s.answers)
       setResults(s.results)
-      setStep(s.results.paid ? 'plan' : s.step === 'plan' ? 'plan' : s.step)
+      setStep(s.results.paid || s.step === 'paywall' ? 'plan' : s.step)
       setLogoUp(true)
     } else if (s && s.step !== 'splash') {
       setAnswers({ ...s.answers, ...preset })
-      setStep(s.step === 'finding' || s.step === 'signin' ? 'note' : s.step)
+      setStep(s.step === 'finding' || s.step === 'signin' ? 'note' : s.step === 'phone' ? 'feeling' : s.step)
       setLogoUp(true)
     } else {
       setAnswers((a) => ({ ...a, ...preset }))
@@ -145,12 +152,13 @@ export default function StartFlow() {
     const p = api<{ understanding: Results['understanding']; hook: HookVerse | null; safety: Results['safety']; library: { verses?: number; prasangs?: number } | null }>(
       '/api/start/hook',
       { body: { profile: profile(), note: a.note || undefined, noteSource: a.noteSource } },
-    ).then((r) => {
+    ).then(async (r) => {
       setResults({ understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety })
       resultsRef.current = { understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety }
       trackEvent('Verses Generated', { page: 'Start', ok: !!r.hook, has_note: !!a.note, crisis: !!(r.safety as { crisis?: boolean } | null)?.crisis })
       if (r.safety?.message) setSafetyOpen(true)
-      if (r.hook) void loadWeek()
+      // The week comes next, so "Curating your plan" finishes once it is in (or the cap passes).
+      if (r.hook) await Promise.race([loadWeek(), sleep(PLAN_CAP)])
       return { ok: !!r.hook, mirror: r.understanding?.mirror ?? null, library: r.library }
     }).catch((e) => {
       trackEvent('Verses Generated', { page: 'Start', ok: false, error: e instanceof ApiError ? e.code : 'network' })
@@ -159,18 +167,19 @@ export default function StartFlow() {
     setHookReq(p)
   }, [loadWeek])
 
-  // Arriving at "Finding" without a request (a resume, a redirect): start it, or sign in first.
+  // Arriving at "Curating" without a request (a resume, a redirect): start it. No sign-in needed yet.
   useEffect(() => {
     if (step !== 'finding' || hookReq) return
-    if (user) findVerse()
-    else setStep('signin')
-  }, [step, hookReq, user, findVerse])
+    findVerse()
+  }, [step, hookReq, findVerse])
 
   // ── Sign-in ───────────────────────────────────────────────────────────────
+  // Signed in after Day 1: the week opens here and goes to their inbox.
   const afterSignIn = useCallback(() => {
-    findVerse()
-    go('finding', { signed_in: true })
-  }, [findVerse, go])
+    go('plan', { signed_in: true })
+    void openWeek()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [go])
 
   useEffect(() => {
     getRedirectResult(auth)
@@ -188,7 +197,7 @@ export default function StartFlow() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const signIn = async (next: 'finding' | 'age') => {
+  const signIn = async (next: 'plan' | 'age') => {
     setError(null)
     setBusy(true)
     try {
@@ -205,51 +214,46 @@ export default function StartFlow() {
     }
   }
 
-  // ── Payment ───────────────────────────────────────────────────────────────
+  // ── Week 1 is free: the sealed week opens for its owner once Day 1 is read ──
   const unseal = async () => {
     const r = resultsRef.current
     if (!r.sealed) await (weekReq.current ?? loadWeek())
     const sealed = resultsRef.current.sealed
     if (!sealed) throw new Error('no_plan')
-    const plan = await api<{ days: FullDay[]; weeks: string[] }>('/api/start/unseal', { body: { sealed } })
-    setResults((p) => ({ ...p, days: plan.days, weeks: plan.weeks, paid: true }))
+    const plan = await api<{ days: FullDay[]; weeks: string[]; emailed?: boolean; email?: string | null }>('/api/start/unseal', { body: { sealed } })
+    const emailedTo = plan.emailed ? plan.email ?? null : null
+    resultsRef.current = { ...resultsRef.current, emailedTo }
+    setResults((p) => ({ ...p, days: plan.days, weeks: plan.weeks, paid: true, emailedTo }))
   }
-  const pay = async () => {
+  const opening = useRef(false)
+  const openWeek = useCallback(async () => {
+    if (opening.current) return
+    opening.current = true
     setError(null)
     setBusy(true)
     try {
-      try {
-        await unseal() // already subscribed: straight in
-        go('plan', { paid: true, via: 'existing' })
-        return
-      } catch (e) {
-        if (!(e instanceof ApiError && e.status === 402)) throw e
-      }
-      const ok = await startWeeklyPlanCheckout('start')
-      if (!ok) return
       await unseal()
-      go('plan', { paid: true, via: 'checkout' })
+      trackEvent('Onboarding Completed', { page: 'Start', outcome: 'free_week', emailed: !!resultsRef.current.emailedTo })
     } catch (e) {
+      if (e instanceof ApiError && e.status === 401) { setStep('signin'); return }
       setError(
-        e instanceof ApiError && e.code === 'payments_unavailable'
-          ? 'Payments are not switched on yet. Please try again soon.'
-          : e instanceof ApiError && e.status === 410
-            ? 'This plan has expired. Start again and we will build a fresh one.'
-            : 'Something went wrong. You have not been charged twice; please try again.',
+        e instanceof ApiError && e.status === 410
+          ? 'This plan has expired. Start again and we will build a fresh one.'
+          : "We couldn't open your week just now. Please try again.",
       )
     } finally {
+      opening.current = false
       setBusy(false)
     }
-  }
-  const cancel = async () => {
-    if (!window.confirm('Cancel your ₹89 weekly plan? It stays open until the end of the week you paid for.')) return
-    try {
-      await api('/api/pay/cancel', { body: {} })
-      window.alert('Cancelled. You will not be charged again.')
-    } catch {
-      window.alert('We could not cancel just now. Please try again, or write to us from the contact page.')
-    }
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  // Back on the plan with the week still sealed (a resume): open it.
+  useEffect(() => {
+    if (step !== 'plan' || results.paid || !results.hook || opening.current || authLoading) return
+    if (user || auth.currentUser) void openWeek()
+    else setStep('signin')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step, authLoading])
 
   // ── The answers flying into "Finding your verse" ───────────────────────────
   const chips = useMemo<FindChip[]>(() => {
@@ -261,7 +265,8 @@ export default function StartFlow() {
       const src = STAGE_ART[id]
       if (src) out.push({ key: `st-${id}`, src, label: stagesFor(a.age).find((x) => x.id === id)?.label ?? id })
     })
-    if (a.need) out.push({ key: 'feel', src: FEELING_ART[a.need], label: NEEDS.find((n) => n.id === a.need)?.label ?? '' })
+    const word = emotionById(a.emotion)
+    if (a.need) out.push({ key: 'feel', src: FEELING_ART[word?.art ?? a.need], label: word?.label ?? NEEDS.find((n) => n.id === a.need)?.label ?? '' })
     if (a.phoneHours) out.push({ key: 'phone', text: `${a.phoneHours}h`, label: `${a.phoneHours} hours a day on the phone` })
     if (a.note?.trim()) out.push({ key: 'note', icon: 'quote', label: 'Your own words' })
     return out.slice(0, 10)
@@ -285,7 +290,7 @@ export default function StartFlow() {
     case 'age':
       screen = (
         <ChoiceScreen<AgeId>
-          title="How old" accent="are you?" sub="Every age has its own light."
+          title="How old" accent="are you?" sub="So your verse fits your stage of life."
           options={AGES} art={AGE_ART}
           initial={answers.age ? [answers.age] : []}
           onToggle={(id) => setAnswers((a) => ({ ...a, age: id }))}
@@ -297,47 +302,43 @@ export default function StartFlow() {
       const options = stagesFor(answers.age)
       screen = (
         <ChoiceScreen<StageId>
-          title="Where are you" accent="in life?" sub="Pick all that fit."
+          title="Where are you" accent="in life?" sub="Choose all that apply"
           options={options} art={STAGE_ART} multi
           initial={answers.stages.filter((id) => options.some((o) => o.id === id))}
-          onDone={(ids) => { setAnswers((a) => ({ ...a, stages: ids })); go('phone', { life_stage: ids }) }}
+          onDone={(ids) => { setAnswers((a) => ({ ...a, stages: ids })); go('feeling', { life_stage: ids }) }}
         />
       )
       break
     }
-    case 'phone':
-      screen = <PhoneScreen initial={answers.phoneHours} onDone={(h, moved) => { setAnswers((a) => ({ ...a, phoneHours: h })); go('feeling', { phone_hours: h, moved_slider: moved }) }} />
-      break
     case 'feeling':
       screen = (
-        <ChoiceScreen<NeedId>
-          title="How are you feeling" accent="today?" sub="Choose the one that feels truest right now."
-          options={NEEDS} art={FEELING_ART}
-          initial={answers.need ? [answers.need] : []}
-          onDone={([id]) => { setAnswers((a) => ({ ...a, need: id })); go('note', { feeling: id }) }}
+        <FeelingScreen
+          initialEmotion={answers.emotion} initialNeed={answers.need}
+          onDone={(e) => { setAnswers((a) => ({ ...a, need: e.need, emotion: e.id })); go('note', { feeling: e.need, emotion: e.id, tone: e.tone }) }}
         />
       )
       break
     case 'note':
       screen = (
         <NoteScreen
-          need={answers.need} age={answers.age} stages={answers.stages}
+          need={answers.need} emotion={answers.emotion} age={answers.age} stages={answers.stages}
           initial={answers.note} initialSource={answers.noteSource}
           onDone={(note, source) => {
             setAnswers((a) => ({ ...a, note: note || undefined, noteSource: note ? source : undefined }))
             answersRef.current = { ...answersRef.current, note: note || undefined, noteSource: note ? source : undefined }
             const props = { has_note: !!note, note_source: note ? source : 'skipped', note_chars: note.length }
-            if (user) { findVerse(); go('finding', props) } else go('signin', props)
+            findVerse()
+            go('finding', props)
           }}
         />
       )
       break
     case 'signin':
-      screen = <SignInScreen busy={busy} error={error} onSignIn={() => signIn('finding')} />
+      screen = <SignInScreen busy={busy} error={error} weekTitle={weekTitle} onSignIn={() => signIn('plan')} />
       break
     case 'finding':
       screen = hookReq ? (
-        <FindingScreen chips={chips} hasNote={!!answers.note} request={hookReq} onRetry={findVerse} onDone={() => go('verse')} />
+        <FindingScreen chips={chips} hasNote={!!answers.note} request={hookReq} onRetry={findVerse} onDone={() => go('week')} />
       ) : null
       break
     case 'verse':
@@ -346,7 +347,10 @@ export default function StartFlow() {
           hook={results.hook ?? null}
           insight={results.understanding?.insight ?? null}
           stages={answers.stages} need={answers.need} usedNote={!!answers.note?.trim()}
-          onDone={() => { if (!resultsRef.current.preview) void loadWeek(); go('week') }}
+          seen={!!results.seen}
+          onRevealed={() => setResults((p) => ({ ...p, seen: true }))}
+          cta="Email me my free week"
+          onDone={() => (user || auth.currentUser ? afterSignIn() : go('signin'))}
         />
       )
       break
@@ -357,21 +361,8 @@ export default function StartFlow() {
           hookLine={results.hook?.line ?? null}
           hookRef={results.hook?.ref ?? null}
           weekTitle={weekTitle}
-          cta="Get all seven days"
-          onDone={() => go('paywall')}
-        />
-      )
-      break
-    case 'paywall':
-      screen = (
-        <PaywallScreen
-          price={WEB_PLAN_PRICE_INR}
-          weekTitle={weekTitle}
-          day1={results.hook ? { line: results.hook.line, ref: results.hook.ref } : null}
-          busy={busy}
-          error={error}
-          onPay={pay}
-          onSkip={() => { trackEvent('Onboarding Completed', { page: 'Start', outcome: 'day_1_only' }); go('plan', { paid: false }) }}
+          cta="Reveal my first verse"
+          onDone={() => go('verse')}
         />
       )
       break
@@ -382,9 +373,11 @@ export default function StartFlow() {
           preview={results.preview ?? null}
           hook={results.hook ? { sanskrit: results.hook.sanskrit, line: results.hook.line, ref: results.hook.ref } : null}
           weekTitle={weekTitle}
-          paid={!!results.paid}
-          onUnlock={() => go('paywall')}
-          onCancel={cancel}
+          open={!!results.paid}
+          loading={busy}
+          error={error}
+          emailedTo={results.emailedTo ?? null}
+          onRetry={() => (user || auth.currentUser ? openWeek() : go('signin'))}
         />
       )
       break

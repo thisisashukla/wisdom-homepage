@@ -43,7 +43,9 @@ from typing import Optional
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
+from ai.ask import answer as answer_question, support_candidates
 from ai.depth import DepthCache, cache_key, person_key, write_depth
+from ai.scene import scene_for
 from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
 from common.config import settings
@@ -53,12 +55,14 @@ from ai.mechanisms import MECHANISMS
 from ai.mechanisms import LEVELS
 from ai.planner import BEREAVEMENT_SITS, get_planner, level_for, parse_shape, week_arc
 from ai.recommender import SAFETY, display_sanskrit, get_recommender
-from ai.understanding import Profile, Understanding, check_note, get_understander, merge_situations
+from ai.understanding import (Profile, Understanding, check_note, fallback_bridge, get_understander, insight_for,
+                              merge_situations, template_queries)
+from ai.stance import STANCE_BANNED_SITUATIONS, constrain_mechanism
 from ai.story_titles import hook_title
 from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
                            PlanResponse, PlanWeek, PreviewRequest, PreviewResponse, RefineRequest, RefineResponse, ReplaceRequest,
                            ReplaceResponse, StoryCard,
-                           DepthRequest, DepthResponse)
+                           DepthRequest, DepthResponse, AskRequest, AskResponse, SceneOut)
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -99,9 +103,55 @@ async def _read(req: PlanInput, und) -> Understanding:
                 d["risk"] = "harm_from_others"
         u = und.from_client(d)
         if u is not None:
-            return _with_profile(u, req)
+            return _corrected(_with_profile(u, req), req, und)
     u, _ = await und.understand(_profile(req), req.note)
-    return _with_profile(u, req)
+    return _corrected(_with_profile(u, req), req, und)
+
+
+# "I'm not the problem here" (one tap) → (stance, mechanism to lean on or None, the line every writer reads).
+# The wronged line is the tradition's own, word for word (wisdom-day-page-implementation-plan, 24 Oct).
+CORRECTIONS = {
+    "wronged": ("wronged", None,
+                "Someone is treating them unfairly and the wrong is not theirs. You are not at fault. Stand firm. Act from dharma, "
+                "not revenge. Name the wrong, give them footing; never ask them to bend, and never call the other person a monster."),
+    "growing": ("aspiration", None,
+                "Nothing is wrong: they are doing well and want to grow. Ambition offered as duty is not ego. Do not console, "
+                "diagnose or warn; meet the resolve and name what will test it."),
+    "outside_control": ("struggle", "attachment_to_results",
+                        "What troubles them is outside their control, not a fault in them. Show what is theirs to do, and frame "
+                        "releasing the rest as freedom, never as resignation, and never as their failing."),
+    "inner_work_done": ("aspiration", "resolve_begin",
+                        "They have already done the inner work. Do not send them inward again; the texts now turn them toward "
+                        "acting in the world."),
+}
+
+
+def _corrected(u: Understanding, req, und) -> Understanding:
+    """Apply the person's own correction of where they stand. It wins over the inferred stance, so the mechanism,
+    the retrieval statements and the lines written for the old stance are rebuilt from templates for the new one.
+    Never for someone at risk of self-harm: the safety reading stays."""
+    corr = getattr(req, "correction", None)
+    if not corr or corr not in CORRECTIONS or u.risk == "self_harm":
+        return u
+    stance, lean, _ = CORRECTIONS[corr]
+    inferred = u.stance
+    mech, sec, _ = constrain_mechanism(stance, lean or u.mechanism, u.secondary_mechanism)
+    banned = STANCE_BANNED_SITUATIONS.get(stance, set())
+    kept = [s for s in u.situations if s["id"] not in banned]
+    u.situations = kept or u.situations
+    u.stance, u.mechanism, u.secondary_mechanism = stance, mech, sec
+    u.queries = template_queries(_profile(req), mech, u.situations, und.labels, u.risk, stance)
+    u.query_sources = {k: "template" for k in u.queries}
+    u.insight = insight_for(u.risk, mech, None)
+    u.bridge = fallback_bridge(mech)
+    u.week_thesis, u.week_beats = "", {}          # written for the stance that misread them
+    u.flags.append(f"correction:{corr}:{inferred}->{stance}")
+    return u
+
+
+def _correction_text(req) -> str:
+    corr = getattr(req, "correction", None)
+    return CORRECTIONS[corr][2] if corr in CORRECTIONS else ""
 
 
 def _with_profile(u: Understanding, req: PlanInput) -> Understanding:
@@ -136,6 +186,8 @@ def _ctx(req: PlanInput, u: Understanding, rec, planner, level: str = "situation
         people=list(u.people) if (u.source != "client" or u.people) else None,
         level=level, week=week, days_seen=(j.days_seen if j else 0), helped=helped,
         past=[x.strip() for x in (j.past if j else []) if x and x.strip()][:3],
+        correction=_correction_text(req) if u.risk != "self_harm" else "",
+        asked=[q for q in (getattr(req, "asked", None) or []) if isinstance(q, str) and q.strip()][-5:],
     )
 
 
@@ -508,7 +560,10 @@ async def refine(req: RefineRequest) -> RefineResponse:
     if prior is None:
         raise HTTPException(status_code=422, detail="Send the plan's understanding")
     prior = _with_profile(prior, req)
-    u = await _refined(und, req, prior)
+    if req.note:
+        u = _corrected(await _refined(und, req, prior), req, und)
+    else:                                  # a stance correction alone: no new reading, the same person, re-seated
+        u = _corrected(prior, req, und)
     t1 = time.perf_counter()
     days = await asyncio.to_thread(planner.plan, u, req.feeling, 7, req.exclude, None, None, req.week, req.level, shape,
                                    [f.model_dump() for f in req.feedback], _helped(req))
@@ -528,7 +583,8 @@ async def refine(req: RefineRequest) -> RefineResponse:
         "heard": u.mirror, "safety": _safety(u),
         "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)},
     }
-    _log("refine", req, u, t0, week=req.week, from_day=req.from_day, days=len(out_days), source=u.source)
+    _log("refine", req, u, t0, week=req.week, from_day=req.from_day, days=len(out_days), source=u.source,
+         correction=req.correction or "-")
     return RefineResponse(**out)
 
 
@@ -556,7 +612,9 @@ async def depth(req: DepthRequest) -> DepthResponse:
         raise HTTPException(status_code=400, detail="Send verse_id or story_id")
     lv = level_for(req.week, u.risk)
     ctx = _ctx(req, u, rec, planner, lv, req.week)
-    key = cache_key(item["id"], item["beat"], lv, u.core_struggle, u.mechanism, person_key(ctx))
+    # stance (and a correction) change what may be said: two people with one struggle but different footing never share
+    key = cache_key(item["id"], item["beat"], lv, u.core_struggle, u.mechanism,
+                    f"{person_key(ctx)}|{u.stance}|{getattr(req, 'correction', None) or ''}")
     cache = DepthCache(settings.depth_cache_dir)
     got = cache.get(key)
     cached = got is not None
@@ -566,6 +624,80 @@ async def depth(req: DepthRequest) -> DepthResponse:
             cache.put(key, got)
     _log("depth", req, u, t0, parts=len(got), cached=cached)
     return DepthResponse(depth=got, cached=cached, timings_ms={"total": int((time.perf_counter() - t0) * 1000)})
+
+
+# ── The scene and Ask (the day screen's doors) ──────────────────────────────────
+@router.get("/recommend/scene/{verse_id}", response_model=SceneOut, tags=["plan"])
+async def scene(verse_id: str) -> SceneOut:
+    """"The scene" behind a verse: the same for everyone (ai/scene.py). 404 when the verse has no story to tell;
+    the app then shows the verse's own meaning only."""
+    if len(verse_id) > 80:
+        raise HTTPException(status_code=404, detail="Unknown verse")
+    try:
+        rec = get_recommender()
+    except RuntimeError:
+        raise HTTPException(status_code=503, detail="Recommendations are not available right now.")
+    s = scene_for(rec, verse_id)
+    if s is None:
+        raise HTTPException(status_code=404, detail="No scene for this verse")
+    return SceneOut(verse_id=verse_id, **s)
+
+
+ASK_REDIRECT = "That's a different question from this verse. Want tomorrow's verse to take it up?"
+ASK_RETUNE = "It sounds like the plan misread where you stand. Want the rest of your week re-written from there?"
+
+
+@router.post("/recommend/ask", response_model=AskResponse, tags=["plan"])
+async def ask(req: AskRequest) -> AskResponse:
+    """"Ask about this verse" (one free ask in the free week, then Pro; the app enforces the gate). The question is
+    used for this request only: never stored, never logged. Distress in the question gets the support lines, never an
+    answer from scripture."""
+    rec, planner, und = _services()
+    t0 = time.perf_counter()
+    chk = check_note(req.question)
+    u = await _read(req, und)
+    if chk.crisis or u.risk == "self_harm":
+        return AskResponse(kind="safety", message=SAFETY["message"],
+                           safety={"kind": "self_harm", "message": SAFETY["message"], "lines": SAFETY["lines"]})
+    if chk.harm or u.risk == "harm_from_others":
+        return AskResponse(kind="safety", message=SAFETY_HARM["message"], safety={"kind": "harm_from_others", **SAFETY_HARM})
+    if req.verse_id:
+        v = rec.verses[planner.idx[req.verse_id]] if req.verse_id in planner.idx else None
+        if v is None:
+            raise HTTPException(status_code=404, detail="Unknown verse")
+        item = item_from_library(v, rec.prasangs.get(v.get("prasang_id") or ""), req.beat)
+        candidates = support_candidates(rec, planner, v["id"])
+    elif req.story_id:
+        p = rec.prasangs.get(req.story_id)
+        if p is None:
+            raise HTTPException(status_code=404, detail="Unknown story")
+        item = item_from_library(None, p, "story")
+        members = planner.prasang_verses.get(p["id"]) or []
+        if members:
+            item["line"] = rec.verses[members[0]].get("line")
+        candidates = []
+    else:
+        raise HTTPException(status_code=400, detail="Send verse_id or story_id")
+    ctx = _ctx(req, u, rec, planner, level_for(req.week, u.risk), req.week)
+    got = await answer_question(und.writer_llm, ctx, item, chk.text or req.question, req.for_you, list(req.asked), candidates,
+                                settings.depth_timeout_s)
+    kind = got["kind"]
+    out: dict = {"kind": kind}
+    if kind == "answer":
+        out["says"], out["notice"] = got["says"], got.get("notice")
+        sup = next((c for c in candidates if c["id"] == got.get("support_id")), None)
+        if sup:
+            sv = rec.verses[sup["index"]]
+            out["support"] = {"id": sv["id"], "ref": sup["ref"], "sanskrit": display_sanskrit(sv), "line": sv["line"]}
+    elif kind == "redirect":
+        out["message"] = ASK_REDIRECT
+    elif kind == "retune":
+        out["message"] = ASK_RETUNE
+    else:
+        raise HTTPException(status_code=503, detail="Could not answer right now")
+    out["timings_ms"] = {"total": int((time.perf_counter() - t0) * 1000)}
+    _log("ask", req, u, t0, answer=kind, support=bool(out.get("support")), asked=len(req.asked))
+    return AskResponse(**out)
 
 
 # ── Originals: the Sanskrit for verses already on a phone ──────────────────────

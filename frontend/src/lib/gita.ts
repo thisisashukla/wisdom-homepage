@@ -138,6 +138,15 @@ export const getChapterVerses = async (chapter: number): Promise<Verse[]> => {
 
 export const getAllTopics = (): TopicSummary[] => topicSummaries
 
+const topicSlugSet = new Set(topicSummaries.map((t) => t.slug))
+
+/** True when a /gita/topic/<slug> hub page exists for this tag. */
+export const hasTopic = (slug: string): boolean => topicSlugSet.has(slug)
+
+// Retired topic URLs (tags without a hub) are 308-redirected by
+// src/middleware.ts using src/content/gita/topic-redirects.json, which
+// scripts/build-topic-redirects.mjs generates at prebuild.
+
 export const getTopic = async (slug: string): Promise<Topic | null> => {
   try {
     const data = await import(`@/content/gita/topics/${slug}.json`)

@@ -12,7 +12,7 @@ const notoSerif = Noto_Serif_Devanagari({ subsets: ['devanagari'], weight: '700'
 
 export const metadata: Metadata = {
   title: 'Create your 7-day Gita plan',
-  description: 'A few questions, then a verse chosen for what is on your mind and a week of verses built around it. Day 1 is free.',
+  description: 'A few questions, then a verse chosen for what is on your mind and a week of verses built around it. Week 1 is free.',
   robots: { index: false, follow: true },
   alternates: { canonical: '/start' },
 }

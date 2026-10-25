@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained",
-  description: "The Gita is a single argument in 18 chapters: ethics, then cosmology, then devotion, then the final surrender of 18.66. Here is a summary of every chapter and how they connect into one arc.",
+  title: "Bhagavad Gita's 18 Chapters: Names, Summary & How It Ends",
+  description: "18 chapters (adhyays) in 3 parts of 6. Every chapter name with a short summary, from Arjuna's despair in Ch 1 to how it ends: total surrender in 18.66.",
   keywords: "bhagavad gita structure, bhagavad gita all chapters summary, bhagavad gita 18 chapters, how is bhagavad gita organised, bhagavad gita complete guide, bhagavad gita story arc, bhagavad gita vishwarupa, bhagavad gita chapter summary, gita 18.66 meaning, bhagavad gita arc, bhagavad gita 18 chapters summary, bhagavad gita storyline, bhagavad gita 18.66 meaning, bhagavad gita plot, bhagavad gita overview",
   openGraph: {
-    title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained | Wisdom",
-    description: "18 chapters, one argument. The Gita moves from Arjuna's breakdown to 18.66, the line that changes everything. Here is every chapter summarized.",
+    title: "Bhagavad Gita's 18 Chapters: Names, Summary & How It Ends",
+    description: "18 chapters (adhyays) in 3 parts of 6. Every chapter name with a short summary, from Arjuna's despair in Ch 1 to how it ends: total surrender in 18.66.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
     siteName: 'Wisdom',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained | Wisdom",
-    description: "18 chapters, one argument. The Gita moves from Arjuna's breakdown to 18.66, the line that changes everything. Here is every chapter summarized.",
+    title: "Bhagavad Gita's 18 Chapters: Names, Summary & How It Ends",
+    description: "18 chapters (adhyays) in 3 parts of 6. Every chapter name with a short summary, from Arjuna's despair in Ch 1 to how it ends: total surrender in 18.66.",
     images: ['https://wisdomquotes.in/assets/gita-montage.webp'],
   },
   alternates: {

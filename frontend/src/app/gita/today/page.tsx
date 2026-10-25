@@ -6,6 +6,7 @@ import {
   getChapter,
   verseUrl,
   chapterUrl,
+  hasTopic,
   topicUrl,
 } from '@/lib/gita'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
@@ -257,10 +258,10 @@ export default async function TodayPage() {
           </div>
         </div>
 
-        {verse.tags.length > 0 && (
+        {verse.tags.some(hasTopic) && (
           <div className="gita-meta-row">
             <span>Themes:</span>
-            {verse.tags.map((t) => (
+            {verse.tags.filter(hasTopic).map((t) => (
               <a key={t} href={topicUrl(t)} className="gita-tag" data-mp-location="today_tag">
                 {t}
               </a>

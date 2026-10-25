@@ -7,9 +7,10 @@ import { Cta } from './parts'
 import type { PreviewDay } from './WeekScreen'
 
 /**
- * The week, after the paywall. Paid: all seven days open, each one tapped
- * open to its Sanskrit, what it says and what it says to them. Not paid: Day
- * 1 open, the rest as on the week screen, with the unlock one tap away.
+ * The week, after Day 1. Week 1 is free: all seven days open, each one
+ * tapped open to its Sanskrit, what it says and what it says to them. While
+ * the week is opening (or if that fails), Day 1 is open and the rest show as
+ * on the week screen.
  */
 export type FullDay = {
   day: number
@@ -29,17 +30,21 @@ export default function PlanScreen({
   preview,
   hook,
   weekTitle,
-  paid,
-  onUnlock,
-  onCancel,
+  open: paid,
+  loading,
+  error,
+  emailedTo,
+  onRetry,
 }: {
   days: FullDay[] | null
   preview: PreviewDay[] | null
   hook: { sanskrit: string | null; line: string; ref: string | null } | null
   weekTitle: string | null
-  paid: boolean
-  onUnlock: () => void
-  onCancel: () => void
+  open: boolean
+  loading: boolean
+  error: string | null
+  emailedTo: string | null
+  onRetry: () => void
 }) {
   const [open, setOpen] = useState<number>(1)
   const list: (FullDay | (PreviewDay & { locked: true }))[] = paid && days ? days : (preview ?? []).map((d) => ({ ...d, locked: true as const }))
@@ -49,11 +54,11 @@ export default function PlanScreen({
         <div className="ob-hero">
           <div className="ob-logo-slot" aria-hidden="true" />
           <h1 className="ob-title ob-rise ob-fit" style={{ '--d': '0ms' } as React.CSSProperties}>
-            <span>{paid ? 'Your seven' : 'Your first'}</span>
-            <em>{paid ? 'days' : 'day'}</em>
+            <span>Your seven</span>
+            <em>days</em>
           </h1>
           <p className="ob-sub ob-rise" style={{ '--d': '180ms' } as React.CSSProperties}>
-            {paid ? 'One a day is enough. Open each on its morning.' : 'Day 1 is yours to keep. The rest of the week is ready when you are.'}
+            {paid ? 'Week 1 is yours, free. One a day is enough: open each on its morning.' : loading ? 'Opening your week…' : 'Day 1 is open. The rest of your week is a moment away.'}
           </p>
           {weekTitle && (
             <p className="ob-week-chip ob-rise" style={{ '--d': '320ms' } as React.CSSProperties}>
@@ -103,13 +108,13 @@ export default function PlanScreen({
         </div>
         {paid && (
           <p className="ob-plan-foot">
-            Your week is saved in this browser. ₹89 a week;{' '}
-            <button type="button" onClick={onCancel}>cancel any time</button>.
+            {emailedTo ? <>All seven days are in your inbox at <b>{emailedTo}</b>. They&apos;re saved in this browser too.</> : 'Your week is saved in this browser.'}
           </p>
         )}
+        {error && <p className="ob-error" role="alert">{error}</p>}
       </div>
       {!paid ? (
-        <Cta delay={700} onClick={onUnlock}>Get all seven days</Cta>
+        <Cta delay={700} busy={loading} onClick={onRetry}>{loading ? 'Opening your week' : 'Email me my free week'}</Cta>
       ) : (
         <div className="ob-foot ob-rise" style={{ '--d': '700ms' } as React.CSSProperties}>
           <a className="ob-cta ob-cta-link" href="/">

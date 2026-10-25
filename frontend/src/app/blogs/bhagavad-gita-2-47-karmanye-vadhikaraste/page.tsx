@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained",
-  description: "BG 2.47 is the Gita's most famous verse. Four instructions in one line: act, don't own the fruit, don't act for the fruit, don't use this to justify inaction. Full Sanskrit, transliteration, and meaning.",
+  title: "Karmanye Vadhikaraste Meaning: Bhagavad Gita 2.47 Explained",
+  description: "Karmanye vadhikaraste ma phaleshu kadachana: you have a right to your actions, never to their fruits. Gita 2.47 word by word, and its 4 instructions.",
   keywords: "karmanye vadhikaraste meaning, bhagavad gita 2.47 meaning in english, bhagavad gita 2.47 meaning in hindi, karmanyevadhikaraste te ma phaleshu kadachana, bhagavad gita verse on action, karma yoga 2.47, action without attachment gita, bhagavad gita most famous verse",
   openGraph: {
-    title: "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained | Wisdom",
-    description: "BG 2.47 is the Gita's most famous verse. Four instructions in one line: act, don't own the fruit, don't act for the fruit, don't use this to justify inaction.",
+    title: "Karmanye Vadhikaraste Meaning: Bhagavad Gita 2.47 Explained",
+    description: "Karmanye vadhikaraste ma phaleshu kadachana: you have a right to your actions, never to their fruits. Gita 2.47 word by word, and its 4 instructions.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste",
     siteName: 'Wisdom',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained | Wisdom",
-    description: "BG 2.47 is the Gita's most famous verse. Four instructions in one line: act, don't own the fruit, don't act for the fruit, don't use this to justify inaction.",
+    title: "Karmanye Vadhikaraste Meaning: Bhagavad Gita 2.47 Explained",
+    description: "Karmanye vadhikaraste ma phaleshu kadachana: you have a right to your actions, never to their fruits. Gita 2.47 word by word, and its 4 instructions.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {

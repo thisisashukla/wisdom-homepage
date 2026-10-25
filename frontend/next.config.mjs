@@ -23,7 +23,23 @@ const nextConfig = {
         destination: '/blogs',
         permanent: true,
       },
+      // NOTE: www → apex is handled by the Vercel domain setting (apex is the
+      // primary domain). Do NOT add a host redirect here: if the Vercel setting
+      // ever points apex → www again, a code-level www → apex rule loops forever.
+      // Legacy / mistyped URLs Google still crawls (GSC "Not found (404)").
+      { source: '/hi', destination: '/hi/gita', permanent: true },
+      { source: '/gita/topic', destination: '/gita', permanent: true },
+      { source: '/hi/gita/topic', destination: '/hi/gita', permanent: true },
+      { source: '/blogs/index.html', destination: '/blogs', permanent: true },
+      { source: '/blog', destination: '/blogs', permanent: true },
+      { source: '/blog/:slug', destination: '/blogs/:slug', permanent: true },
+      { source: '/support.html', destination: '/support', permanent: true },
     ]
+  },
+
+  // /support is the App Store support URL — served from public/support.html.
+  async rewrites() {
+    return [{ source: '/support', destination: '/support.html' }]
   },
 
   async headers() {

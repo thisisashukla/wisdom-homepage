@@ -28,7 +28,7 @@ from typing import Dict, List, Optional, Sequence
 
 from ai.mechanisms import MECHANISMS
 from ai.people import invented_person
-from ai.stance import ASPIRATION_WRITER_RE, WRONGED_WRITER_RE
+from ai.stance import ASPIRATION_WRITER_RE, WRONGED_OVERSWING_RE, WRONGED_WRITER_RE
 from ai.understanding import CLICHE_RE, ui_line, _words
 from ai.voice import (FIDELITY, OPENING_RE, SLANG_RE, VOICE, PersonContext, check_fidelity, grounding_block,
                       person_block, person_text, source_names)
@@ -50,17 +50,27 @@ You write the personal words under each day of one person's verse plan: what the
 
 {fidelity}
 
-FOR EACH VERSE DAY write two parts:
-- "meaning" (35 to 80 words): tell the verse like a storyteller, in flowing sentences, not a list of "He says" lines (use "says" at most once). Begin inside the moment, from the source: who is speaking, to whom, and what is happening (one or two sentences). Use only what the setting and the story give; if they do not describe the moment, do not invent one (no added battles, weather, feelings or gestures). What comes later in the story may be told as what comes next, never as this verse's own words. Then say what the verse proposes, in plain modern words, exactly as the translation and its point say it. You may end with one sentence that turns gently toward their life. Do not start with "This verse" or "Krishna says". If no speaker or setting is given, begin with the idea itself.
-- "for_you" (20 to 50 words, second person): what this verse asks of their life today. Build it from their details, their age and stage of life and the day's job, at the week's level. Name something concrete from their life, then the verse's idea inside it. Do not repeat the meaning.
+The day screen shows only three things: the verse, "for_you" and "try_today". Everything else sits behind a tap. So each part answers a different question and never repeats another: what does it say ("meaning"), why me ("for_you"), what now ("try_today").
+
+FOR EACH VERSE DAY write these parts:
+- "meaning" (35 to 80 words, shown under "The scene"): tell the verse like a storyteller, in flowing sentences, not a list of "He says" lines (use "says" at most once). Begin inside the moment, from the source: who is speaking, to whom, and what is happening (one or two sentences). Use only what the setting and the story give; if they do not describe the moment, do not invent one (no added battles, weather, feelings or gestures). What comes later in the story may be told as what comes next, never as this verse's own words. Then say what the verse proposes, in plain modern words, exactly as the translation and its point say it. Do not start with "This verse" or "Krishna says". If no speaker or setting is given, begin with the idea itself.
+- "for_you" (20 to 50 words, never more, second person): one paragraph that does three jobs, in this order: the verse's point carried into their exact situation, one clause that shows you see them (at most one clause about their circumstances; being seen comes from one precise detail, not a paragraph about their pain), and a turn they can carry. How a good teller does it:
+  * Apply, don't re-explain. Set the verse's principle inside their own waiting room, inbox or kitchen table, the way a narrator turns a teaching back on the listener in front of him.
+  * If you use an image, take it from their own work or stage of life (to an archer: your right is over your aim, not over the deer). Never a generic image.
+  * End on a short line they could carry all day, 6 to 10 words; a phrase that turns itself around works well. Make it from this verse's own idea, never a stock saying.
+  * If they feel something about their situation, never tell them the feeling is wrong: leave the judgement with them, then widen the frame.
+  * Nothing in it that is not in the verse or its story.
+- "try_today" (6 to 20 words): one thing to notice or do today that applies exactly what the verse says to their day. An observation or a small act, never homework, never a technique the verse does not name (no breathing, journaling, gratitude lists, meditation). For someone wronged it never asks them to stay quiet, let it pass or not defend themselves.
+- "scene_line" (8 to 25 words, second person): the single sentence that closes "The scene" after they have read the story: their own situation seen as a moment like the one in this verse's story, in words drawn from that story. Only names the story itself has. Do not use a fill-in pattern ("You are in your own ... The question is ..."); write it fresh for this verse.
+- "asks" (exactly 3 questions, each 6 to 16 words, first person, ending with "?"): questions this person might bring to this verse next, in their own plain voice, from their situation ("How do I tell giving up from changing direction?"). Different from each other; no question the for_you already answered.
 The translation is given so you understand the verse; quote the card line, never the translation's older words (unmanliness, scorcher of enemies, O Partha, thou). If the note they gave was thin or noise (see "note quality"), write for the feeling, the stage of life and the verse only: do not invent details of their day, and do not stretch the verse's image onto a habit you only guessed at.
 THE WEEK IS ONE PIECE. You are given the week's thread, what each day must do for them, and for every day after the first, the verse the day before gave them. Write each day as the next step of that one argument: where it helps, let a half-sentence carry yesterday forward in your own words, never a recap, never on every day, and never with a stock phrase. Day 1 opens the bridge (their problem in the texts' terms) in your own fresh words; the last day should feel like the week closing, not another card.
-FOR EACH STORY DAY write only "for_you" (20 to 50 words): what the story's hero shows them about their own situation, without retelling the story.
+FOR EACH STORY DAY write only "for_you" (20 to 50 words): what the story's hero shows them about their own situation, without retelling the story, and "asks" (3 questions, as above).
 
 If they are being harmed by someone, never suggest enduring, adjusting, forgiving or keeping the peace. If they are in acute distress, be gentle and point only to the next small step.
 Read "Where they stand" before you write. For an aspiration there is no wound: no consoling, no "you are not alone", no warning; believe the resolve and name what will test it. For someone wronged, the cause is in the other person: never suggest accepting, adjusting, patience, contentment, forgiving, lowering expectations or keeping the peace, never name envy, need for approval or their expectations as the trouble, and never ask them to earn or prove anything to the ones who diminish them.
 
-Return ONLY JSON: {{"days": {{"<id>": {{"meaning": "...", "for_you": "..."}}, ...}}}} with every id (story days have no "meaning")."""
+Return ONLY JSON: {{"days": {{"<id>": {{"meaning": "...", "for_you": "...", "try_today": "...", "scene_line": "...", "asks": ["...?", "...?", "...?"]}}, ...}}}} with every id (story days have only "for_you" and "asks")."""
 
 DIAGNOSIS_RE = re.compile(r"\b(diagnos|disorder|depress|anxiety disorder|adhd|trauma|toxic|narcissis)", re.I)
 ENDURE_RE = re.compile(r"\b(endur\w*|tolerat\w*|adjust\w*|forgiv\w*|keep(ing)? the peace|put up with|bear it|patien\w*)\b", re.I)
@@ -88,6 +98,36 @@ def _fit(s: str, hi: int) -> Optional[str]:
         n += k
     return " ".join(out) if out else None
 
+
+def cap_words(s: Optional[str], hi: int) -> Optional[str]:
+    """The last resort for a line that is theirs but long: whole sentences that fit, else the first sentence cut at
+    its last comma or semicolon inside the cap. None when nothing sensible fits (the line is then dropped)."""
+    if not s:
+        return None
+    if len(_words(s)) <= hi:
+        return s
+    got = _fit(s, hi)
+    if got:
+        return got
+    head = re.split(r"(?<=[.!?])\s+", s)[0]
+    cut, n = None, 0
+    for m in re.finditer(r"[^,;]+[,;]", head):
+        n += len(_words(m.group(0)))
+        if n > hi:
+            break
+        cut = m.end()
+    if not cut:
+        return None
+    out = head[:cut].rstrip(",; ") + "."
+    return out if len(_words(out)) >= 12 else None
+
+
+# A sentence left broken (a name the guardrails removed, a copied fill-in pattern): never shown.
+BROKEN_RE = re.compile(r"\b(your|my|their|the|a|an) (is|are|was|were)\b|\b(your|my|their|the) [.,;!?]|\bthe question is what your\b", re.I)
+# Sanskrit stays in the verse block: the personal lines are plain English (a term is transliterated and glossed).
+DEVANAGARI_RE = re.compile(r"[\u0900-\u097F]")
+# Techniques a practice may name only if the verse itself does (FIDELITY).
+TECHNIQUE_RE = re.compile(r"\b(breath\w*|breathe|inhale|exhale|journal\w*|gratitude list|meditat\w*|affirmation\w*|visualis\w*|visualiz\w*)\b", re.I)
 
 BLAME_RE = re.compile(r"\b(your own worst enemy|you (let|allow|allowed) (them|him|her|it)|your mind is (the|your) (obstacle|enemy|problem)|"
                       r"let go of (your|the) (children|son|daughter|family|kids|parents)|your own company is enough|you did not give it|"
@@ -119,6 +159,10 @@ def _why(text, lo: int, hi: int, risk: str, item: Optional[dict] = None, grounde
         n = len(_words(s))
     if n < lo:
         return None, "short" if n else "long"
+    if BROKEN_RE.search(s):
+        return None, "broken"
+    if DEVANAGARI_RE.search(s):
+        return None, "devanagari"
     if VERDICT_RE.search(s):
         return None, "verdict"
     if CLICHE_RE.search(s):
@@ -131,6 +175,8 @@ def _why(text, lo: int, hi: int, risk: str, item: Optional[dict] = None, grounde
         return None, "endure"
     if stance == "wronged" and WRONGED_WRITER_RE.search(s):
         return None, "accept"
+    if stance == "wronged" and WRONGED_OVERSWING_RE.search(s):
+        return None, "overswing"
     if stance == "aspiration" and ASPIRATION_WRITER_RE.search(s):
         return None, "console"
     if not gender_known and USER_GENDERED_RE.search(s):
@@ -164,9 +210,15 @@ def soften(text) -> str:
     return s
 
 
+FOR_YOU_MAX = 50        # the day screen's one paragraph (wisdom-day-page-implementation-plan, 24 Oct)
+TRY_TODAY_MAX = 20
+SCENE_LINE_MAX = 25
+ASK_MAX_WORDS = 16
+
+
 def why_for_you(text, risk: str = "none", item: Optional[dict] = None, stance: str = "struggle", gender_known: bool = True,
                 known: str = "", bereaved: bool = True, people: Optional[Sequence[str]] = None) -> tuple[Optional[str], str]:
-    s, why = _why(soften(text), 12, 55, risk, item, stance=stance, gender_known=gender_known, known=known, bereaved=bereaved, people=people)
+    s, why = _why(soften(text), 12, FOR_YOU_MAX, risk, item, stance=stance, gender_known=gender_known, known=known, bereaved=bereaved, people=people)
     if s and OPENING_RE.match(s):                         # drop a "This verse..." opening sentence, keep the rest
         rest = re.sub(r"^[^.!?]*[.!?]\s*", "", s, count=1)
         s = rest if len(_words(rest)) >= 12 else None
@@ -195,6 +247,64 @@ def why_meaning(text, item: dict, risk: str = "none", stance: str = "struggle", 
     return s, why
 
 
+def why_try_today(text, risk: str = "none", item: Optional[dict] = None, stance: str = "struggle", gender_known: bool = True,
+                  known: str = "", bereaved: bool = True, people: Optional[Sequence[str]] = None) -> tuple[Optional[str], str]:
+    """"One thing for today": a small act or a thing to notice. An imperative is its form, so no preachy check;
+    "you should / must" is still softened."""
+    s, why = _why(soften(text), 4, TRY_TODAY_MAX, risk, item, stance=stance, gender_known=gender_known, known=known,
+                  bereaved=bereaved, people=people)
+    if s and OPENING_RE.match(s):
+        return None, "opening"
+    if s:
+        m = TECHNIQUE_RE.search(s)
+        src = " ".join(str(v) for k, v in (item or {}).items() if isinstance(v, str)).lower()
+        if m and m.group(0).lower()[:5] not in src:
+            return None, "technique"
+    return s, why
+
+
+def why_scene_line(text, risk: str = "none", item: Optional[dict] = None, stance: str = "struggle", gender_known: bool = True,
+                   known: str = "", bereaved: bool = True, people: Optional[Sequence[str]] = None) -> tuple[Optional[str], str]:
+    """The one personal sentence that closes "The scene"."""
+    s, why = _why(soften(text), 6, SCENE_LINE_MAX, risk, item, stance=stance, gender_known=gender_known, known=known,
+                  bereaved=bereaved, people=people)
+    if s and not YOU_RE.search(s):
+        return None, "not_second_person"
+    if s and MUST_RE.search(s):
+        return None, "preachy"
+    return s, why
+
+
+ASK_RE = re.compile(r"\b(i|i'm|i've|i'd|my|me|myself)\b", re.I)
+
+
+def check_asks(raw, risk: str = "none", known: str = "") -> List[str]:
+    """Up to 3 suggested questions in their voice: first person, a question, short, and none of the faults a shown
+    line may not have. Bad ones are dropped (the app shows what is left, and the free-text box)."""
+    out: List[str] = []
+    if not isinstance(raw, list):
+        return out
+    for q in raw[:8]:
+        if not isinstance(q, str):
+            continue
+        s = " ".join(q.split()).strip().strip('"“”')
+        n = len(_words(s))
+        if not s.endswith("?") or not 4 <= n <= ASK_MAX_WORDS or not ASK_RE.search(s):
+            continue
+        if CLICHE_RE.search(s) or DIAGNOSIS_RE.search(s) or SLANG_RE.search(s):
+            continue
+        m = INVENTED_RE.search(s)
+        if m and known and not re.search(re.escape(m.group(0).split()[0].lower()[:5]), known.lower()):
+            continue
+        if risk == "self_harm":
+            continue                                   # no suggested questions for someone at risk: the safety card leads
+        if s.lower() not in {x.lower() for x in out}:
+            out.append(s[0].upper() + s[1:])
+        if len(out) == 3:
+            break
+    return out
+
+
 def check_for_you(text, risk: str = "none", item: Optional[dict] = None) -> Optional[str]:
     return why_for_you(text, risk, item)[0]
 
@@ -206,6 +316,10 @@ def check_meaning(text, item: dict, risk: str = "none") -> Optional[str]:
 # Why a part was rejected, said back to the model when it is asked once more (never the rejected text).
 REASON_TEXT = {
     "accept": "it asked them to accept, adjust, be patient, be content or forgive, or placed the cause in them; they are being wronged, so give footing, courage and the true word instead",
+    "devanagari": "it wrote Devanagari outside the verse; keep the lines in English and gloss a Sanskrit word if you use one",
+    "broken": "a sentence came out broken or as a fill-in pattern; write each sentence whole and fresh",
+    "technique": "it imported a technique the verse does not name (breathing, journaling, meditation)",
+    "overswing": "it swung to the other side (the other person is terrible, they are perfect, revenge); keep the tradition's line: you are not at fault, stand firm, act from dharma, not revenge",
     "console": "it consoled a wound they do not have; nothing is wrong with them, meet the resolve and name what will test it",
     "endure": "it asked someone being harmed to endure, adjust or keep the peace",
     "preachy": "it told them what they should, must or need to do; show what the verse shows and let them see it",
@@ -352,9 +466,11 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s: 
         if "for_you" not in parts:
             fy, why = why_for_you(r.get("for_you"), ctx.risk, it, ctx.stance, bool(ctx.gender), known, ctx.bereaved, ctx.people)
             if fy is None and why in SOFT and isinstance(r.get("for_you"), str):
-                cand = ui_line(soften(r["for_you"]), source_names(it))
-                if 12 <= len(_words(cand)) <= 70 and YOU_RE.search(cand):
-                    soft.setdefault(it["id"], cand)
+                cand = cap_words(ui_line(soften(r["for_you"]), source_names(it)), FOR_YOU_MAX)
+                # the cut line passes every check a written line passes (stance, fidelity, cliche), not just its length
+                cand2, why2 = why_for_you(cand, ctx.risk, it, ctx.stance, bool(ctx.gender), known, ctx.bereaved, ctx.people) if cand else (None, "")
+                if cand2 or (cand and why2 in ("repeat", "copied", "opening")):
+                    soft.setdefault(it["id"], cand2 or cand)
             if fy and copied(fy):                       # drop the lifted sentence; keep the rest when enough remains
                 soft.setdefault(it["id"], fy)
                 fy2 = " ".join(x for x in re.split(r"(?<=[.!?])\s+", fy) if not copied(x))
@@ -382,6 +498,25 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s: 
                 parts["meaning"] = m
             elif why:
                 bad.append(why)
+        # The smaller parts never trigger a redo: a day without them falls back in the app (try_today → the
+        # depth's practice; scene_line → nothing; asks → the free-text box).
+        args = (ctx.risk, it, ctx.stance, bool(ctx.gender), known, ctx.bereaved, ctx.people)
+        if it.get("kind") != "story" and "try_today" not in parts:
+            t, why = why_try_today(r.get("try_today"), *args)
+            if t and not copied(t) and t.strip().lower() != (parts.get("for_you") or "").strip().lower():
+                parts["try_today"] = t
+            elif why and why != "missing":
+                dropped[f"try_today_{why}"] += 1
+        if it.get("kind") != "story" and "scene_line" not in parts:
+            t, why = why_scene_line(r.get("scene_line"), *args)
+            if t and not copied(t):
+                parts["scene_line"] = t
+            elif why and why != "missing":
+                dropped[f"scene_line_{why}"] += 1
+        if not parts.get("asks"):
+            qs = check_asks(r.get("asks"), ctx.risk, known)
+            if qs:
+                parts["asks"] = qs
         return bad
 
     for it in items:
@@ -440,6 +575,13 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s: 
         if it.get("kind") == "story" and not out.get(it["id"], {}).get("for_you") and it.get("lesson") and YOU_RE.search(it["lesson"]):
             out.setdefault(it["id"], {})["for_you"] = it["lesson"]
             dropped["fallback_lesson"] += 1
+    for v in out.values():                            # the day screen's caps hold on every path, fallbacks included
+        if v.get("for_you"):
+            fy = cap_words(v["for_you"], FOR_YOU_MAX)
+            if fy:
+                v["for_you"] = fy
+            else:
+                v.pop("for_you")
     out = {k: v for k, v in out.items() if v}
     if dropped:                                   # reasons only, never the text: tunes the prompt without logging a life
         ctx.flags.append("dropped:" + ",".join(f"{k}={v}" for k, v in sorted(dropped.items())))

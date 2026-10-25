@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { WEB_PLAN_PRICE_INR, appStoreUrl, detectPlatform } from '@/lib/app'
+import { appStoreUrl, detectPlatform } from '@/lib/app'
 import { trackEvent, trackLinkClick } from '@/lib/mixpanel'
 import CreatePlanLink from './CreatePlanLink'
 
@@ -104,16 +104,14 @@ export default function DevicePlans({ pageName = 'Home' }: { pageName?: string }
           </div>
         </div>
         <div className="dp-body">
-          <p className="dp-price">
-            ₹{WEB_PLAN_PRICE_INR} a week <span>Day 1 free</span>
-          </p>
+          <p className="dp-price">Week 1 free</p>
           <ul className="dp-facts">
             <li>Answer a few questions and say what&apos;s going on in your own words. The seven verses are chosen for it.</li>
             <li>We don&apos;t store what you write.</li>
-            <li>Your bank tells you before every charge, and you can cancel from your plan in one tap.</li>
+            <li>Your first verse comes before any sign-in. Then sign in with Google and all seven days come to your inbox. No card needed.</li>
           </ul>
           <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_home_devices" location="home_devices_create_plan" pageName={pageName}>
-            Create my 7-day Gita plan
+            Create my 7-day Gita plan · Week 1 free
           </CreatePlanLink>
         </div>
       </div>

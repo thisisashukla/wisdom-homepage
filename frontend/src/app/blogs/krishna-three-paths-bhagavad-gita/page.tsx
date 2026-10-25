@@ -6,16 +6,16 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Krishna's Three Paths, Karma, Jnana, Bhakti | Bhagavad Gita's Three Yogas Explained",
-  description: "Krishna lays out three paths in the Bhagavad Gita, Karma Yoga (action), Jnana Yoga (knowledge), Bhakti Yoga (devotion). Each suits a different temperament; all three converge on the same supreme reality. A deeply researched reading with verses 2.47, 3.30, 4.34, 7.17, 9.22, 12.12, 13.24, 18.66, parallels from Tulsidas's Ramcharitmanas, and modern psychology.",
+  title: "Karma, Jnana & Bhakti Yoga: Krishna's Three Paths in the Gita",
+  description: "Karma Yoga (2.47), Jnana Yoga (4.34), Bhakti Yoga (9.22): what each of Krishna's three paths asks of you, and which one suits your temperament.",
   keywords: "krishna three paths, karma yoga, jnana yoga, bhakti yoga, bhagavad gita three paths, three yogas of bhagavad gita, paths of yoga, karm pradhan bisva kari rakha, hoihi soi jo rama rachi rakha, ramcharitmanas karma, tulsidas surrender, gita on devotion, gita on knowledge, gita on action, which path is mine bhagavad gita, krishna teachings on yoga, jnana karma bhakti difference, sarva dharman parityajya, nimitta matra arjuna, nishkama karma, jnani bhakta gita 7.17, kshetra kshetrajna, gita and mental health, ACT therapy bhagavad gita, attachment science bhakti, witness consciousness gita, why three paths in gita, which yoga is best",
   authors: [{ name: 'Ankur Shukla', url: 'https://wisdomquotes.in/about' }],
   creator: 'Ankur Shukla',
   publisher: 'Wisdom',
   category: 'Hindu Philosophy',
   openGraph: {
-    title: "Krishna's Three Paths, Karma, Jnana, Bhakti | The Three Yogas of the Bhagavad Gita",
-    description: "Krishna lays out three paths in the Bhagavad Gita, Action, Wisdom, Devotion, each shaped for a different temperament. A deep reading, grounded in the verses, with Tulsidas and modern psychology.",
+    title: "Karma, Jnana & Bhakti Yoga: Krishna's Three Paths in the Gita",
+    description: "Karma Yoga (2.47), Jnana Yoga (4.34), Bhakti Yoga (9.22): what each of Krishna's three paths asks of you, and which one suits your temperament.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita",
     siteName: 'Wisdom',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Krishna's Three Paths, Karma, Jnana, Bhakti | The Three Yogas of the Bhagavad Gita",
-    description: "Krishna lays out three paths in the Bhagavad Gita, Action, Wisdom, Devotion. A deep reading grounded in the verses, with Tulsidas and modern psychology.",
+    title: "Karma, Jnana & Bhakti Yoga: Krishna's Three Paths in the Gita",
+    description: "Karma Yoga (2.47), Jnana Yoga (4.34), Bhakti Yoga (9.22): what each of Krishna's three paths asks of you, and which one suits your temperament.",
     images: ['https://wisdomquotes.in/assets/3paths.webp'],
     creator: '@thisisashukla',
     site: '@sansearchapp',

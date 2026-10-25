@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Krishna Quotes — 50 Teachings from the Bhagavad Gita with Verse References",
-  description: "Krishna quotes stripped of context lose their meaning. Here are 50 sayings of Lord Krishna from the Bhagavad Gita — with Sanskrit verse references, honest translations, and the situation each was spoken in.",
+  title: "50 Krishna Quotes from the Bhagavad Gita, with Verse Numbers",
+  description: "50 one-line Krishna quotes in English from the Bhagavad Gita, like \"You have a right to action, never to its fruits\" (2.47). Each with verse number and context.",
   keywords: "krishna quotes, krishna quotes bhagavad gita, krishna sayings, lord krishna quotes, krishna quotes in sanskrit, krishna quotes on life, krishna quotes on love, krishna quotes on karma, krishna motivational quotes, krishna powerful quotes, bhagavad gita quotes, krishna teachings",
   openGraph: {
-    title: "Krishna Quotes — 50 Teachings from the Bhagavad Gita | Wisdom",
-    description: "50 Krishna quotes from the Bhagavad Gita, restored to their verse references and the context in which Krishna actually said them.",
+    title: "50 Krishna Quotes from the Bhagavad Gita, with Verse Numbers",
+    description: "50 one-line Krishna quotes in English from the Bhagavad Gita, like \"You have a right to action, never to its fruits\" (2.47). Each with verse number and context.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/krishna-quotes",
     siteName: 'Wisdom',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Krishna Quotes — 50 Teachings from the Bhagavad Gita | Wisdom",
-    description: "50 Krishna quotes from the Bhagavad Gita, restored to their verse references and the context in which Krishna actually said them.",
+    title: "50 Krishna Quotes from the Bhagavad Gita, with Verse Numbers",
+    description: "50 one-line Krishna quotes in English from the Bhagavad Gita, like \"You have a right to action, never to its fruits\" (2.47). Each with verse number and context.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {

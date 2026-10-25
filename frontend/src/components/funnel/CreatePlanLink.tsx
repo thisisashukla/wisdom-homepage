@@ -53,7 +53,7 @@ export function CreatePlanFine({ className }: { className?: string }) {
   useEffect(() => setPlatform(detectPlatform()), [])
   return (
     <p className={className}>
-      {platform === 'ios' ? 'Opens the App Store. Week 1 is free.' : 'Day 1 is free. A few questions, about two minutes.'}
+      {platform === 'ios' ? 'Opens the App Store. Week 1 is free.' : 'Week 1 is free. A few questions, about two minutes.'}
     </p>
   )
 }

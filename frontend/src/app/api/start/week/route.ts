@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
-import { backendPost, rateLimit } from '@/lib/server/backend'
+import { backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
-import { seal } from '@/lib/server/seal'
+import { seal, WEEK_AAD } from '@/lib/server/seal'
 import { BackendStory, BackendVerse, cleanSanskrit, FullDay, profileBody, refOf, StartProfile } from '@/lib/server/startShared'
 
 export const runtime = 'nodejs'
@@ -12,8 +12,8 @@ export const maxDuration = 60
  * Onboarding "Your next seven days": week 1 built around the verse they just
  * uncovered (POST /recommend/plan, as in the app). The week screen shows how
  * each later day begins, so only a glimpse of days 2 to 6 leaves in the clear;
- * the whole week comes back sealed to this user and opens after payment
- * (/api/start/unseal). The story's title is shown in full, as in the app.
+ * the whole week comes back sealed and opens once they sign in after Day 1
+ * (/api/start/unseal) once they sign in. The story's title is shown in full, as in the app.
  */
 type PlanBackend = {
   days: { day: number; phase: string; beat: string; verse?: BackendVerse | null; story?: BackendStory | null }[]
@@ -29,8 +29,9 @@ const glimpse = (s: string | null, words = 6) => {
 
 export async function POST(req: Request) {
   const user = await verifyFirebaseToken(bearer(req))
-  if (!user) return NextResponse.json({ error: 'signin_required' }, { status: 401 })
-  if (!rateLimit(`start-week:${user.uid}`, 8, 60 * 60 * 1000)) {
+  // Signed in or not: the value comes first, sign-in comes after Day 1. Anonymous callers are limited by IP.
+  const who = user ? user.uid : `ip:${clientIp(req)}`
+  if (!rateLimit(`start-week:${who}`, user ? 8 : 6, 60 * 60 * 1000)) {
     return NextResponse.json({ error: 'rate_limited' }, { status: 429 })
   }
 
@@ -74,7 +75,7 @@ export async function POST(req: Request) {
       }
     })
     const weeks = (out.weeks ?? []).map((w) => w.title).filter(Boolean)
-    // What the week screen may show before payment: Day 1 whole, how each later day begins, the story's title.
+    // What the week screen may show before the week opens: Day 1 whole, how each later day begins, the story's title.
     const preview = full.map((d) => ({
       day: d.day,
       beat: d.beat,
@@ -82,7 +83,7 @@ export async function POST(req: Request) {
       ref: d.ref,
       line: d.day === 1 || d.beat === 'story' ? d.line : glimpse(d.line),
     }))
-    return NextResponse.json({ weeks, safety: out.safety ?? null, preview, sealed: seal({ days: full, weeks }, user.uid) })
+    return NextResponse.json({ weeks, safety: out.safety ?? null, preview, sealed: seal({ days: full, weeks }, WEEK_AAD) })
   } catch (e) {
     console.error('[start/week]', e)
     return NextResponse.json({ error: 'backend_unavailable' }, { status: 502 })

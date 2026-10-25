@@ -6,17 +6,21 @@ import { Cta, Hero } from './parts'
 import { haptic, reducedMotion } from './motion'
 
 /**
- * Finding your verse (wisdom/app/screens/onboarding/Ob05_FindingScreen.tsx).
+ * Curating your plan (wisdom/app/screens/onboarding/Ob05_FindingScreen.tsx).
  * Three steps tick through while the backend works. While step 1 spins, the
- * answers they gave fly into its card one by one (portraits, feeling, phone
- * hours, their note); step 2 counts through the library; step 3 finishes when
- * the verse is in. Each step holds a minimum beat so the progression reads.
+ * answers they gave fly into its card one by one (portraits, feeling, their
+ * note); step 2 counts through the library; while step 3 spins, Day 1 to Day 7
+ * light up one by one under it, and it finishes once the verse and the week are
+ * in (the request waits for the week, up to a cap). Each step holds a minimum
+ * beat so the progression reads. Then "Show me my plan": the week, Day 1 sealed.
  */
 export type FindChip = { key: string; src?: string; text?: string; icon?: 'quote'; label: string }
 type Status = 'waiting' | 'active' | 'done' | 'failed'
 
 const STEP_MIN = [1500, 1900, 1300]
 const CHIP_STAGGER = 170
+const DAY_STAGGER = 240
+const WEEK = [0, 1, 2, 3, 4, 5, 6]
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 const fmt = (n: number) => n.toLocaleString('en-US')
 
@@ -70,7 +74,9 @@ export default function FindingScreen({
       if (!alive()) return
       set(1, 'done'); haptic()
       set(2, 'active')
-      const [r] = await Promise.all([request.catch(() => ({ ok: false } as { ok: boolean; mirror?: string | null; library?: null })), sleep(STEP_MIN[2])])
+      if (motion) WEEK.forEach((k) => setTimeout(() => { if (alive()) haptic(3) }, 180 + k * DAY_STAGGER))
+      const daysMs = motion ? WEEK.length * DAY_STAGGER + 320 : 0
+      const [r] = await Promise.all([request.catch(() => ({ ok: false } as { ok: boolean; mirror?: string | null; library?: null })), sleep(Math.max(STEP_MIN[2], daysMs))])
       if (!alive()) return
       if (r.library?.verses) setLib({ verses: r.library.verses, prasangs: r.library.prasangs ?? 462 })
       setMirror(r.mirror ?? null)
@@ -85,16 +91,17 @@ export default function FindingScreen({
     { title: 'Analysing your situation', detail: status[0] === 'done' && mirror ? mirror : hasNote ? 'Your answers and your own words' : 'Everything you told us' },
     { title: 'Sifting 5,000 years of wisdom', detail: status[1] === 'waiting' ? 'Gita, Upanishads, Ramayana and more' : `${fmt(count)} verses  ·  ${fmt(lib.prasangs)} stories` },
     {
-      title: 'Choosing your verse',
+      title: 'Curating your plan',
       detail: failed ? "We couldn't reach the library. Check your connection and try again."
-        : status[2] === 'done' ? 'Your verse, and the story behind it'
-        : 'Weighing each against what you shared',
+        : status[2] === 'done' ? 'Seven mornings, built around you'
+        : status[2] === 'active' ? 'A verse for each day of your week'
+        : 'Seven days, one verse each morning',
     },
   ]
 
   return (
     <>
-      <Hero title="Finding" accent="your verse." sub="Everything you shared is shaping this." />
+      <Hero title="Curating" accent="your plan." sub="Everything you shared is shaping this." />
       <div className="ob-steps" aria-live="polite">
         {steps.map((s, i) => {
           const st = status[i]
@@ -121,13 +128,24 @@ export default function FindingScreen({
                     ))}
                   </span>
                 )}
+                {i === 2 && st !== 'waiting' && st !== 'failed' && (
+                  <span className="ob-find-days" aria-label={st === 'done' ? 'Days 1 to 7, ready' : 'Days 1 to 7, being curated'}>
+                    {WEEK.map((k) => (
+                      <span key={k} className="ob-find-slot">
+                        <span className={`ob-find-day${k === WEEK.length - 1 ? ' is-story' : ''}`} style={{ '--d': `${k * DAY_STAGGER}ms` } as React.CSSProperties}>
+                          <i>Day</i><b>{k + 1}</b>
+                        </span>
+                      </span>
+                    ))}
+                  </span>
+                )}
                 <span className="ob-step-detail">{s.detail}</span>
               </span>
             </div>
           )
         })}
       </div>
-      {ready ? <Cta onClick={() => (failed ? onRetry() : onDone())}>{failed ? 'Try again' : 'Show my verse'}</Cta> : <div className="ob-foot-space" aria-hidden="true" />}
+      {ready ? <Cta onClick={() => (failed ? onRetry() : onDone())}>{failed ? 'Try again' : 'Show me my plan'}</Cta> : <div className="ob-foot-space" aria-hidden="true" />}
     </>
   )
 }

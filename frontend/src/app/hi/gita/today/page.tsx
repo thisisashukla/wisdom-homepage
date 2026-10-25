@@ -6,6 +6,7 @@ import {
   getChapter,
   verseUrl,
   chapterUrl,
+  hasTopic,
   topicUrl,
 } from '@/lib/gita'
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
@@ -242,10 +243,10 @@ export default async function TodayPageHi() {
           </div>
         </div>
 
-        {verse.tags.length > 0 && (
+        {verse.tags.some(hasTopic) && (
           <div className="gita-meta-row">
             <span>विषय:</span>
-            {verse.tags.map((t) => (
+            {verse.tags.filter(hasTopic).map((t) => (
               <a key={t} href={topicUrl(t, 'hi')} className="gita-tag" data-mp-location="today_tag">
                 {t}
               </a>

@@ -111,9 +111,9 @@ export default function PlanPreview({ pageName = 'Home' }: { pageName?: string }
           location={`home_plan_preview_create_${plan.id}`}
           pageName={pageName}
         >
-          Create my 7-day Gita plan
+          Create my 7-day Gita plan · Week 1 free
         </CreatePlanLink>
-        <p className="pp-fine">Yours is made for what you tell it. Day 1 is free.</p>
+        <p className="pp-fine">Yours is made for what you tell it. Week 1 is free.</p>
       </div>
       <p className="pp-foot">
         Real plans Wisdom made on {SAMPLE_PLANS_DATE}, one tap each, shown as returned. Day 1 is always from the Gita.

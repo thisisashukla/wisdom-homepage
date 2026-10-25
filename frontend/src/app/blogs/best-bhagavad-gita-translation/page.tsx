@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Best Bhagavad Gita Translation in English (2026), Compared",
-  description: "Which Bhagavad Gita translation is best for you? A side-by-side reader's guide to Eknath Easwaran, Winthrop Sargeant, Prabhupada's As It Is, Stephen Mitchell, Radhakrishnan, Bibek Debroy and more — with excerpts, honest criticisms, and who each version is actually written for.",
+  title: "Best Bhagavad Gita Translation: Which One to Read (2026)",
+  description: "Short answer: start with Eknath Easwaran for a clear first read, or Gita Press with Hindi tika. Then compare Prabhupada, Sargeant, Mitchell, Debroy and more.",
   keywords: "best bhagavad gita translation, which bhagavad gita to read, bhagavad gita as it is review, sadhak sanjivani english, eknath easwaran gita, gita press bhagavad gita, shankara gita bhashya english, bhagavad gita for beginners, gita rahasya tilak, jnaneshwari english, bibek debroy gita, bhagavad gita commentary comparison",
   openGraph: {
-    title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared",
-    description: "A side-by-side reader's guide to every major English Bhagavad Gita — Easwaran, Sargeant, Prabhupada, Mitchell, Radhakrishnan, Debroy — with excerpts, honest criticisms, and who each version is written for.",
+    title: "Best Bhagavad Gita Translation: Which One to Read (2026)",
+    description: "Short answer: start with Eknath Easwaran for a clear first read, or Gita Press with Hindi tika. Then compare Prabhupada, Sargeant, Mitchell, Debroy and more.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
     siteName: 'Wisdom',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared",
-    description: "A side-by-side reader's guide to every major English Bhagavad Gita — Easwaran, Sargeant, Prabhupada, Mitchell, Radhakrishnan, Debroy — with honest criticisms and who each is for.",
+    title: "Best Bhagavad Gita Translation: Which One to Read (2026)",
+    description: "Short answer: start with Eknath Easwaran for a clear first read, or Gita Press with Hindi tika. Then compare Prabhupada, Sargeant, Mitchell, Debroy and more.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {

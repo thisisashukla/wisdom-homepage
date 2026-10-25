@@ -5,7 +5,7 @@ import Icon from './Icon'
 import { Cta, Hero } from './parts'
 import { haptic, reducedMotion } from './motion'
 import { noteExamplesFor } from '@/lib/onboarding/noteExamples'
-import type { AgeId, NeedId, StageId } from '@/lib/onboarding/profile'
+import { noteHeading, type AgeId, type NeedId, type StageId } from '@/lib/onboarding/profile'
 
 /**
  * In their own words, optional (wisdom/app/screens/onboarding/Ob04_NoteScreen.tsx).
@@ -13,8 +13,9 @@ import type { AgeId, NeedId, StageId } from '@/lib/onboarding/profile'
  * looping; a touch pauses them. Below, a large mic: it breathes at rest;
  * tapped, it deepens, rings ripple out and a waveform follows while their
  * words appear where the examples were (Web Speech API where the browser has
- * it). "Type it instead" grows a text box into that space. Continue
- * ("Show me my verses") is live from the start.
+ * it). "Type it instead" grows a text box into that space. The heading is an
+ * instruction in their own word ("Hurt" → "Tell us what hurt you."). Continue
+ * ("Curate my plan") is live from the start.
  */
 const MAX = 1000
 const BARS = 29
@@ -31,6 +32,7 @@ const SpeechCtor = (): (new () => Rec) | null => {
 
 export default function NoteScreen({
   need,
+  emotion,
   age,
   stages,
   initial,
@@ -38,12 +40,14 @@ export default function NoteScreen({
   onDone,
 }: {
   need?: NeedId
+  emotion?: string
   age?: AgeId
   stages: StageId[]
   initial?: string
   initialSource?: 'voice' | 'text'
   onDone: (note: string, source?: 'voice' | 'text') => void
 }) {
+  const heading = noteHeading(emotion, need)
   const examples = useMemo(() => noteExamplesFor(need, age, stages), [need, age, stages])
   const [note, setNote] = useState(initial ?? '')
   const [source, setSource] = useState<'voice' | 'text' | undefined>(initialSource)
@@ -178,7 +182,7 @@ export default function NoteScreen({
 
   return (
     <>
-      <Hero title="Say it" accent="in your own words." sub="Optional. The way you'd tell a friend." />
+      <Hero title={heading.lead} accent={heading.accent} sub={<>Tap the mic and talk, or type it.<br />Your story shapes your reading plan.</>} />
       <div className={`ob-stage${typing ? ' is-typing' : ''}`}>
         <div className="ob-slot">
           {recording ? (
@@ -269,7 +273,7 @@ export default function NoteScreen({
           onDone(final, final ? (typing ? 'text' : source ?? (recording ? 'voice' : 'text')) : undefined)
         }}
       >
-        Show me my verses
+        Curate my plan
       </Cta>
     </>
   )

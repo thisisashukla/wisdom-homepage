@@ -108,3 +108,45 @@ export const SITUATION_FEELING: Record<string, NeedId> = {
   boss: 'replay', partner: 'replay', in_laws: 'replay', guilt: 'replay', money_tight: 'replay', cant_say_no: 'replay', midlife: 'replay',
   someone_lost: 'faith', far_from_home: 'faith',
 }
+
+// Screen 2 · "How are you feeling today?": the words people use, heavy then light
+// (wisdom/app/constants/onboardingEmotions.ts). Each routes to one of the six needs,
+// which is what the backend and the rest of the flow use. `art` is the need whose
+// portrait the word wears (the light words borrow Determined's and Curious's).
+export type EmotionTone = 'heavy' | 'light'
+export type Emotion = { id: string; label: string; need: NeedId; tone: EmotionTone; art: NeedId; line: string; ask: { lead: string; accent: string } }
+export const EMOTIONS: Emotion[] = [
+  { id: 'anxious', label: 'Anxious', need: 'quiet', tone: 'heavy', art: 'quiet', line: "My mind won't settle.", ask: { lead: "Tell us what's", accent: 'making you anxious.' } },
+  { id: 'overthinking', label: 'Overthinking', need: 'quiet', tone: 'heavy', art: 'quiet', line: "I can't switch my mind off.", ask: { lead: 'Tell us what you', accent: 'keep thinking about.' } },
+  { id: 'restless', label: 'Restless', need: 'quiet', tone: 'heavy', art: 'quiet', line: "I can't sit still with myself.", ask: { lead: "Tell us what's", accent: 'keeping your mind busy.' } },
+  { id: 'stuck', label: 'Stuck', need: 'nerve', tone: 'heavy', art: 'nerve', line: 'I keep going over something.', ask: { lead: 'Tell us what you', accent: 'keep going over.' } },
+  { id: 'guilty', label: 'Guilty', need: 'nerve', tone: 'heavy', art: 'nerve', line: 'I keep going back to what I did.', ask: { lead: 'Tell us what', accent: 'you keep going back to.' } },
+  { id: 'hurt', label: 'Hurt', need: 'replay', tone: 'heavy', art: 'replay', line: 'Something someone did stays with me.', ask: { lead: 'Tell us what', accent: 'hurt you.' } },
+  { id: 'angry', label: 'Angry', need: 'replay', tone: 'heavy', art: 'replay', line: "Something isn't fair, and it stays with me.", ask: { lead: "Tell us what's", accent: 'making you angry.' } },
+  { id: 'uneasy', label: 'Uneasy', need: 'replay', tone: 'heavy', art: 'replay', line: "Something doesn't sit right.", ask: { lead: 'Tell us what', accent: "doesn't sit right." } },
+  { id: 'lonely', label: 'Lonely', need: 'faith', tone: 'heavy', art: 'faith', line: 'I feel on my own with this.', ask: { lead: 'Tell us when you', accent: 'feel most alone.' } },
+  { id: 'lost', label: 'Lost', need: 'faith', tone: 'heavy', art: 'faith', line: "I don't know which way to go.", ask: { lead: 'Tell us where', accent: 'you feel lost.' } },
+  { id: 'empty', label: 'Empty', need: 'faith', tone: 'heavy', art: 'faith', line: 'Something feels missing.', ask: { lead: 'Tell us what', accent: 'feels missing.' } },
+  { id: 'hopeful', label: 'Hopeful', need: 'stick', tone: 'light', art: 'stick', line: 'Things are turning. I want to keep it going.', ask: { lead: 'Tell us what', accent: "you're hopeful about." } },
+  { id: 'determined', label: 'Determined', need: 'stick', tone: 'light', art: 'stick', line: "I'm ready to stick with it.", ask: { lead: "Tell us what you're", accent: 'ready to stick with.' } },
+  { id: 'inspired', label: 'Inspired', need: 'stick', tone: 'light', art: 'stick', line: 'I want to do something with this feeling.', ask: { lead: "Tell us what's", accent: 'inspiring you.' } },
+  { id: 'grateful', label: 'Grateful', need: 'faith', tone: 'light', art: 'stick', line: 'I want to hold on to this feeling.', ask: { lead: 'Tell us what', accent: "you're grateful for." } },
+  { id: 'peaceful', label: 'Peaceful', need: 'gita', tone: 'light', art: 'gita', line: "I'm calm, and I want to go deeper.", ask: { lead: "Tell us what's", accent: 'bringing you peace.' } },
+  { id: 'curious', label: 'Curious', need: 'gita', tone: 'light', art: 'gita', line: 'I want to read the Gita.', ask: { lead: 'Tell us what brings', accent: 'you to the Gita.' } },
+]
+export const emotionById = (id?: string | null) => EMOTIONS.find((e) => e.id === id)
+/** The word to show for a saved need when no word was saved (answers from before words existed). */
+export const emotionForNeed = (need?: NeedId | null) => EMOTIONS.find((e) => e.need === need)
+
+// The note screen's heading is an instruction in their own word ("Hurt" → "Tell us what hurt you."),
+// else the need's line, else the default (wisdom/app/screens/onboarding/Ob04_NoteScreen.tsx).
+const NOTE_HEADINGS: Record<NeedId, { lead: string; accent: string }> = {
+  quiet: { lead: "Tell us what's", accent: 'keeping your mind busy.' },
+  nerve: { lead: 'Tell us what you', accent: 'keep going over.' },
+  replay: { lead: 'Tell us what', accent: "doesn't sit right." },
+  stick: { lead: "Tell us what you're", accent: 'ready to stick with.' },
+  faith: { lead: "Tell us what you're", accent: 'searching for.' },
+  gita: { lead: 'Tell us what brings', accent: 'you to the Gita.' },
+}
+export const noteHeading = (emotion?: string | null, need?: NeedId | null) =>
+  emotionById(emotion)?.ask || (need ? NOTE_HEADINGS[need] : undefined) || { lead: "Tell us how you're", accent: 'feeling right now.' }

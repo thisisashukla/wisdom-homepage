@@ -16,7 +16,7 @@ v2 changes (retrieval overhaul):
 from __future__ import annotations
 
 from typing import Annotated, Any, Dict, List, Literal, Optional
-from pydantic import BaseModel, Field, StringConstraints
+from pydantic import BaseModel, Field, StringConstraints, model_validator
 
 
 # ── Shared enums ──────────────────────────────────────────────────────────────
@@ -331,14 +331,25 @@ class HookRequest(PlanInput):
     alternates: int = Field(2, ge=0, le=4)   # extra hook candidates for "Another"
 
 
+# "I'm not the problem here": where the person says they actually stand, one tap. The server maps it
+# onto a stance (ai/stance.py) and a line the writers read (server/plan.py CORRECTIONS).
+Correction = Literal["wronged", "growing", "outside_control", "inner_work_done"]
+
+
 class PreviewRequest(PlanInput):
     # Send back the `understanding` from /hook to skip the reading step (no note needed,
     # same reading as onboarding). Send `hook_id` to keep the verse they kept as the hook.
     understanding: Optional[Dict[str, Any]] = None
     hook_id: Optional[str] = Field(None, max_length=80)
+    # Set once they corrected the reading ("I'm not the problem here"), and sent with every later
+    # request for this plan: it overrides the stance the reading inferred.
+    correction: Optional[Correction] = None
+    # Questions they asked about this plan's verses ("Ask about this verse"), latest last. Used for this request
+    # only, so later days can speak to them; never stored or logged.
+    asked: List[Annotated[str, StringConstraints(max_length=300)]] = Field(default_factory=list, max_length=5)
 
 
-NotForMeReason = Literal["not_my_situation", "too_heavy", "too_religious", "heard_it"]
+NotForMeReason = Literal["not_my_situation", "too_heavy", "too_religious", "heard_it", "not_the_problem"]
 
 
 class DayFeedback(BaseModel):
@@ -386,9 +397,19 @@ class RefineRequest(PlanRequest):
     # (`note`, voice or typed; never stored or logged). The earlier reading (`understanding`) and the
     # new words are read together, and the week is chosen again from `from_day` (day in week) to Day 7.
     # `exclude` holds every id in the plan so far, including the days being replaced, so all are new.
+    # A stance correction ("I'm not the problem here") re-weaves the week with no note: then `note` is
+    # empty and `correction` is set, and `from_day` may be 1 (today's verse was the one that misread them).
     week: int = Field(1, ge=1, le=3)
-    from_day: int = Field(..., ge=2, le=6)
-    note: str = Field(..., min_length=3, max_length=1000)
+    from_day: int = Field(..., ge=1, le=7)
+    note: Optional[str] = Field(None, min_length=3, max_length=1000)
+
+    @model_validator(mode="after")
+    def _note_or_correction(self):
+        if not self.note and not self.correction:
+            raise ValueError("Send a note or a correction")
+        if self.note and not 2 <= self.from_day <= 6:
+            raise ValueError("from_day must be 2 to 6 for an update with a note")
+        return self
 
 
 class RefineResponse(BaseModel):
@@ -454,8 +475,11 @@ class UnderstandingOut(BaseModel):
 class BeatVerse(RecommendedVerse):
     beat: Beat
     role_fit: float                    # how well this verse does the beat's job, 0..1
-    meaning: Optional[str] = None      # plan days: "What it says", the verse told as a story, faithful to its translation
-    for_you: Optional[str] = None      # plan days: what this verse says to this person (ai/personalize.py); else show `why`
+    meaning: Optional[str] = None      # plan days: "What it says", the verse told as a story, faithful to its translation (shown in "The scene")
+    for_you: Optional[str] = None      # plan days: what this verse says to this person, at most 50 words (ai/personalize.py); else show `why`
+    try_today: Optional[str] = None    # plan days: "One thing for today", at most 20 words
+    scene_line: Optional[str] = None   # plan days: the one personal line that closes "The scene"
+    asks: List[str] = []               # plan days: up to 3 questions in their voice for "Ask about this verse"
 
 
 class StoryCard(BaseModel):
@@ -475,6 +499,7 @@ class StoryCard(BaseModel):
     hook_title: Optional[str] = None   # the story's named hook ("Rama came home from his pilgrimage and stopped laughing")
     teaser: Optional[str] = None       # Day 7's line: hook_title, else the story's opening line, else its title
     for_you: Optional[str] = None      # plan days: what this story shows this person (ai/personalize.py)
+    asks: List[str] = []               # plan days: up to 3 questions in their voice for "Ask about this verse"
 
 
 class ArcBeats(BaseModel):
@@ -562,6 +587,49 @@ class DepthResponse(BaseModel):
     depth: DepthOut
     cached: bool = False
     timings_ms: Dict[str, int] = {}
+
+
+class AskRequest(PreviewRequest):
+    # "Ask about this verse": one question about one plan day's verse (or story). `for_you` is the line
+    # already shown, `asked` the questions asked earlier in this plan (for continuity, never stored).
+    verse_id: Optional[str] = Field(None, max_length=80)
+    story_id: Optional[str] = Field(None, max_length=80)
+    beat: Beat = "hook"
+    week: int = Field(1, ge=1, le=3)
+    question: str = Field(..., min_length=3, max_length=300)
+    for_you: Optional[str] = Field(None, max_length=400)
+
+
+class AskSupport(BaseModel):
+    id: str
+    ref: str
+    sanskrit: Optional[str] = None     # from the library, never written by the model
+    line: str
+
+
+class AskResponse(BaseModel):
+    # answer: says + notice (+ support); redirect: the question is about something else (offer tomorrow);
+    # retune: the plan misread their situation (offer to re-weave the rest of the week); safety: no answer
+    # from scripture, only the support lines.
+    kind: Literal["answer", "redirect", "retune", "safety"]
+    says: Optional[str] = None         # what this verse says about their case
+    support: Optional[AskSupport] = None
+    notice: Optional[str] = None       # one thing to notice today
+    message: Optional[str] = None      # redirect / retune / safety copy
+    safety: Optional[PlanSafety] = None
+    timings_ms: Dict[str, int] = {}
+
+
+class SceneOut(BaseModel):
+    # "The scene": the moment a verse was said, written once per verse and checked by hand (data/scenes.json).
+    verse_id: str
+    before: str
+    moment: str
+    reply: Optional[str] = None
+    after: Optional[str] = None
+    reading: Optional[str] = None      # a modern reading, always labelled as one in the app
+    source_range: str
+    reviewed: bool = False
 
 
 ReplaceResponse.model_rebuild()

@@ -5,20 +5,20 @@ import Icon from './Icon'
 import { GoogleMark, Hero } from './parts'
 
 /**
- * Sign-up, once the questions are done (the app's Ob22b "Keep what you've
- * begun", with Google in place of Apple). It comes before the verse is
- * chosen, because the verse is chosen for this account.
+ * After Day 1 (the app's Ob22b "Keep what you've begun", with Google in place
+ * of Apple): they have had their verse; signing in sends the whole free week
+ * to their inbox and opens it here.
  */
 const KEPT = [
-  { icon: 'map', text: 'Your plan, and every verse you uncover' },
-  { icon: 'journal', text: 'What you said, used once to choose your verses' },
-  { icon: 'phone', text: 'Day 1 is free. No card to see it.' },
+  { icon: 'journal', text: 'All seven days in your inbox, to read each morning' },
+  { icon: 'map', text: 'Your week opens here too, right away' },
+  { icon: 'phone', text: 'Week 1 is free. No card needed.' },
 ]
 
-export default function SignInScreen({ onSignIn, busy, error }: { onSignIn: () => void; busy: boolean; error: string | null }) {
+export default function SignInScreen({ onSignIn, busy, error, weekTitle }: { onSignIn: () => void; busy: boolean; error: string | null; weekTitle?: string | null }) {
   return (
     <>
-      <Hero title="Keep what" accent="you've begun" sub="Sign in so your seven days stay yours." />
+      <Hero title="Get your week" accent="by email" sub={weekTitle ? <>Week 1, <i>{weekTitle.toLowerCase()}</i>: seven verses chosen for you, free.</> : 'Seven verses chosen for you, free. Sign in and we send them to you.'} />
       <div className="ob-kept ob-rise" style={{ '--d': '320ms', '--dy': '12px' } as React.CSSProperties}>
         {KEPT.map((k) => (
           <div key={k.text} className="ob-kept-row">
@@ -31,12 +31,12 @@ export default function SignInScreen({ onSignIn, busy, error }: { onSignIn: () =
       <div className="ob-foot ob-rise" style={{ '--d': '480ms', '--dy': '12px' } as React.CSSProperties}>
         <button type="button" className="ob-google" onClick={onSignIn} disabled={busy}>
           <GoogleMark />
-          <span>{busy ? 'One moment' : 'Continue with Google'}</span>
+          <span>{busy ? 'One moment' : 'Email me with Google'}</span>
         </button>
         {error && <p className="ob-error" role="alert">{error}</p>}
         <p className="ob-privacy">
           <Icon name="lock" weight="bold" size={12} />
-          <span>We don&apos;t post anything or send you marketing email.</span>
+          <span>Only your plan. No marketing email, and we never post anything.</span>
         </p>
       </div>
     </>

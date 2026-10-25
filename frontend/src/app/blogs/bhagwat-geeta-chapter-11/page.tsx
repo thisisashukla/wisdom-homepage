@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 11 — All 55 Verses, the Cosmic Form & Oppenheimer's Quote",
-  description: "Vishwarupa Darshana Yoga: Arjuna asked to see Krishna's true form — and immediately begged him to stop. All 55 verses with Sanskrit, Hindi and English meaning, including 11.32, the verse Oppenheimer quoted at Trinity.",
+  title: "Bhagavad Gita 11.32 (Oppenheimer) & Chapter 11: Cosmic Form",
+  description: "11.32, \"I am Time, the destroyer of worlds\", is the verse Oppenheimer recalled at Trinity. Read it and all 55 verses of Chapter 11 in Hindi and English.",
   keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote, Oppenheimer bhagavad gita verse, I am time the destroyer of worlds full context",
   openGraph: {
-    title: "Bhagavad Gita Chapter 11 — All 55 Verses, the Cosmic Form & Oppenheimer's Quote | Wisdom",
-    description: "Arjuna asked to see Krishna's real form and immediately begged him to stop. All 55 verses with meaning, including 11.32 — the verse Oppenheimer quoted at Trinity.",
+    title: "Bhagavad Gita 11.32 (Oppenheimer) & Chapter 11: Cosmic Form",
+    description: "11.32, \"I am Time, the destroyer of worlds\", is the verse Oppenheimer recalled at Trinity. Read it and all 55 verses of Chapter 11 in Hindi and English.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11",
     siteName: 'Wisdom',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 11 — All 55 Verses, the Cosmic Form & Oppenheimer's Quote | Wisdom",
-    description: "Arjuna asked to see Krishna's real form and immediately begged him to stop. All 55 verses with meaning, including 11.32 — the verse Oppenheimer quoted at Trinity.",
+    title: "Bhagavad Gita 11.32 (Oppenheimer) & Chapter 11: Cosmic Form",
+    description: "11.32, \"I am Time, the destroyer of worlds\", is the verse Oppenheimer recalled at Trinity. Read it and all 55 verses of Chapter 11 in Hindi and English.",
     images: ["https://wisdomquotes.in/assets/chapter11.webp"],
   },
   alternates: {

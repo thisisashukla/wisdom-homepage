@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses), 'Abandon All Duties' & the Final Teaching",
-  description: "Chapter 18 is the longest chapter of the Bhagavad Gita — 78 verses of Moksha Sannyasa Yoga, the final teaching. All verses with Sanskrit, Hindi and English meaning, including 18.66 'Abandon all duties, take refuge in me alone' and 18.47 on swadharma.",
+  title: "Bhagavad Gita Chapter 18 (Longest): 78 Shlokas & Meaning",
+  description: "Chapter 18 (Moksha Sannyasa Yoga) is the Gita's longest chapter: 78 shlokas, each with Sanskrit, Hindi and English meaning, including 18.66 on surrender.",
   keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
   openGraph: {
-    title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses) & the Final Teaching",
-    description: "Bhagavad Gita Chapter 18 is the longest chapter — 78 verses of the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
+    title: "Bhagavad Gita Chapter 18 (Longest): 78 Shlokas & Meaning",
+    description: "Chapter 18 (Moksha Sannyasa Yoga) is the Gita's longest chapter: 78 shlokas, each with Sanskrit, Hindi and English meaning, including 18.66 on surrender.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18",
     siteName: 'Wisdom',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses) & the Final Teaching",
-    description: "Bhagavad Gita Chapter 18 is the longest chapter — 78 verses of the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
+    title: "Bhagavad Gita Chapter 18 (Longest): 78 Shlokas & Meaning",
+    description: "Chapter 18 (Moksha Sannyasa Yoga) is the Gita's longest chapter: 78 shlokas, each with Sanskrit, Hindi and English meaning, including 18.66 on surrender.",
     images: ["https://wisdomquotes.in/assets/chapter18.webp"],
   },
   alternates: {

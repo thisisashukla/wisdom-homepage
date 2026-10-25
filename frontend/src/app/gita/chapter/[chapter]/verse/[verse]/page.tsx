@@ -12,6 +12,7 @@ import {
   verseUrl,
   chapterUrl,
   chapterImage,
+  hasTopic,
   topicUrl,
   findTopicForConcept,
 } from '@/lib/gita'
@@ -47,6 +48,19 @@ const trimToLength = (s: string, maxChars: number): string => {
   return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:—-]$/, '') + '…'
 }
 
+/** Whole sentences of `text` that fit in `max` chars; falls back to a word-boundary trim. */
+const fitSentences = (text: string | undefined, max: number): string => {
+  const clean = (text || '').replace(/\s+/g, ' ').trim()
+  if (clean.length <= max) return clean
+  let out = ''
+  for (const s of clean.split(/(?<=[.!?।॥])\s+/)) {
+    const next = out ? `${out} ${s}` : s
+    if (next.length > max) break
+    out = next
+  }
+  return out || trimToLength(clean, max)
+}
+
 /**
  * Extract the first pada (half-line) of a Devanagari shloka.
  * Splits on ।, ॥, |, ॥, and newlines. Trims to ~50 chars.
@@ -74,26 +88,18 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!verse) return { title: 'Verse not found' }
   const ch = getChapter(c)
 
-  // ── Title: leads with verse reference and includes the "BG c.v" shortform
-  //    that appears verbatim in ~40% of GSC queries ("bg 2.44", "bg 9.23",
-  //    "bg 18.78" etc.). Devanagari opening still fingerprints the verse. ──
-  const devaOpen = firstDevaPada(verse.sanskrit)
-  const englishHook = verse.essence || trimToLength(verse.englishTranslation, 60)
-  // Short enough not to be cut off in results (~55 chars before " | Wisdom");
-  // the Devanagari opening moves to the front of the description instead.
-  const title = `Bhagavad Gita ${c}.${v} Meaning in Hindi & English (BG ${c}.${v})`
-  void englishHook
+  // ── Title: "Bhagavad Gita c.v" + "BG c.v" (the two forms GSC queries use).
+  //    No "Hindi" here — /hi/gita/... is the Hindi page, and claiming both
+  //    made the two locales compete for the same query. ──
+  const title = `Bhagavad Gita ${c}.${v} (BG ${c}.${v}): Meaning & Commentary`
 
-  // ── Description: 150-160 chars; lead with simpleMeaning if we have it,
-  //    fall back to englishTranslation. Include chapter for context. ──
-  const descLead =
-    verse.simpleMeaning ||
-    verse.detailedMeaning ||
-    verse.englishTranslation
-  const description = trimToLength(
-    `${devaOpen ? `${devaOpen} · ` : ''}BG ${c}.${v} (Chapter ${c}, Verse ${v}${ch ? `, ${ch.enName}` : ''}): ${descLead}`,
-    158,
-  )
+  // ── Description: answer first. English searchers can't read the Devanagari
+  //    opening, so the plain-English meaning leads; then what's on the page. ──
+  const descLead = verse.simpleMeaning || verse.englishTranslation || verse.detailedMeaning
+  const descPrefix = `BG ${c}.${v} meaning: `
+  const descSuffix = ' Sanskrit, transliteration and word meanings.'
+  const description = `${descPrefix}${fitSentences(descLead, 158 - descPrefix.length - descSuffix.length)}${descSuffix}`
+  void firstDevaPada
 
   const ogImage = `https://wisdomquotes.in/api/og/gita/${c}/${v}`
   return {
@@ -410,7 +416,7 @@ export default async function VersePage({ params }: { params: Params }) {
         {verse.tags.length > 0 && (
           <div className="gita-meta-row">
             <span>Themes:</span>
-            {verse.tags.map((t) => (
+            {verse.tags.filter(hasTopic).map((t) => (
               <a
                 key={t}
                 href={topicUrl(t)}

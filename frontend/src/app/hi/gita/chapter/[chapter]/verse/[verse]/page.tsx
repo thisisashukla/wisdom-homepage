@@ -13,6 +13,7 @@ import {
   verseUrl,
   chapterUrl,
   chapterImage,
+  hasTopic,
   topicUrl,
   findTopicForConcept,
 } from '@/lib/gita'
@@ -46,6 +47,19 @@ const trimToLength = (s: string, maxChars: number): string => {
   return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:—-]$/, '') + '…'
 }
 
+/** Whole sentences of `text` that fit in `max` chars; falls back to a word-boundary trim. */
+const fitSentences = (text: string | undefined, max: number): string => {
+  const clean = (text || '').replace(/\s+/g, ' ').trim()
+  if (clean.length <= max) return clean
+  let out = ''
+  for (const s of clean.split(/(?<=[.!?।॥])\s+/)) {
+    const next = out ? `${out} ${s}` : s
+    if (next.length > max) break
+    out = next
+  }
+  return out || trimToLength(clean, max)
+}
+
 const firstDevaPada = (sanskrit: string, maxChars = 50): string => {
   if (!sanskrit) return ''
   const first = sanskrit
@@ -65,20 +79,25 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const verse = await getVerse(c, v)
   if (!verse) return { title: 'श्लोक नहीं मिला' }
   const ch = getChapter(c)
-  const devaOpen = firstDevaPada(verse.sanskrit)
-  const titleHook = verse.essence || trimToLength(verse.hindiTranslation || verse.englishTranslation, 60)
-  const title = devaOpen
-    ? `भगवद् गीता ${c}.${v} (BG ${c}.${v}) — ${devaOpen} | अर्थ, अनुवाद व टिप्पणी`
-    : `भगवद् गीता ${c}.${v} (BG ${c}.${v}) अर्थ – ${titleHook}${ch ? ` (${ch.hiName})` : ''}`
-  const descLead =
-    verse.simpleMeaning ||
-    verse.detailedMeaning ||
-    verse.hindiTranslation ||
-    verse.englishTranslation
-  const description = trimToLength(
-    `भगवद् गीता ${c}.${v} — अध्याय ${c}, श्लोक ${v}${ch ? ` (${ch.hiName})` : ''}: ${descLead}`,
-    158,
-  )
+  // ── Title: Hindi-first, with the shloka's opening pada as a fingerprint
+  //    ("गीता श्लोक … अर्थ सहित" is how Hindi searchers phrase it). Falls back
+  //    to a shorter form when the pada would push past ~60 characters. ──
+  const devaOpen = firstDevaPada(verse.sanskrit, 32)
+  const withPada = `गीता ${c}.${v} (BG ${c}.${v}): ${devaOpen} — अर्थ सहित`
+  const title = devaOpen && withPada.length <= 61
+    ? withPada
+    : `भगवद् गीता ${c}.${v} (BG ${c}.${v}) — श्लोक का हिंदी अर्थ`
+
+  // ── Description: always Hindi. simpleMeaning/detailedMeaning are English in
+  //    the corpus, so lead with the Hindi translation. ──
+  // A few corpus rows have a stub Hindi translation (e.g. 18.2 is just "॥");
+  // fall back to the Sanskrit shloka so the snippet stays Devanagari.
+  const hindiOk = (verse.hindiTranslation || '').replace(/[^\u0900-\u097F]/g, '').length >= 20
+  const descLead = hindiOk ? verse.hindiTranslation : verse.sanskrit
+  // Devanagari renders wider than Latin in results, so cap at ~140 chars.
+  const descPrefix = `गीता ${c}.${v} का अर्थ: `
+  const descSuffix = ' संस्कृत, हिंदी अर्थ व व्याख्या।'
+  const description = `${descPrefix}${fitSentences(descLead, 140 - descPrefix.length - descSuffix.length)}${descSuffix}`
   const ogImage = `https://wisdomquotes.in/api/og/gita/${c}/${v}`
   return {
     title,
@@ -397,7 +416,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
         {verse.tags.length > 0 && (
           <div className="gita-meta-row">
             <span>विषय:</span>
-            {verse.tags.map((t) => (
+            {verse.tags.filter(hasTopic).map((t) => (
               <a
                 key={t}
                 href={topicUrl(t, 'hi')}
