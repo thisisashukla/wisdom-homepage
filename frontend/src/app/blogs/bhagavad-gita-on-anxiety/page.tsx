@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-anxiety",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
     description: "In chapter 1 Arjuna trembles and his bow slips from his hand. Verses on fear, worry and the restless mind, with Sanskrit and English meaning.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-on-anxiety",
@@ -437,7 +437,7 @@ const schemas = [
     "description": "The Bhagavad Gita opens with Arjuna trembling and unable to fight. Here are the verses on fear, worry and the restless mind.",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-on-anxiety" },
     "author": {
       "@type": "Person",

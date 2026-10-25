@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
-    images: ['/og-image.webp'],
+    images: ['/og-image.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bhagavad Gita — All 18 Chapters with Sanskrit, Hindi & English',
     description: 'Read the Bhagavad Gita online — chapter by chapter, verse by verse.',
-    images: ['/og-image.webp'],
+    images: ['/og-image.jpg'],
   },
 }
 

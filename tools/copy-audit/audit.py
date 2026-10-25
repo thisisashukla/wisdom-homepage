@@ -28,6 +28,12 @@ PAGES = {
     'blog-cta': 'src/components/funnel/VerseFunnelCTA.tsx',
     'onboarding': sorted(glob.glob(os.path.join(FE, 'src/components/onboarding/*.tsx'))) + ['src/lib/onboarding/profile.ts'],
     'blogs-index': 'src/app/blogs/page.tsx',
+    'gita-jayanti': ['src/app/gita-jayanti/page.tsx', 'src/components/jayanti/JayantiCountdown.tsx',
+                     'src/components/jayanti/JayantiStartCTA.tsx', 'src/components/jayanti/ChapterRun.tsx'],
+    'jayanti-18-days': ['src/app/read-gita-in-18-days/page.tsx', 'src/lib/jayanti.ts'],
+    'jayanti-plan': ['src/app/gita-jayanti/reading-plan/page.tsx', 'src/components/jayanti/PlanFromToday.tsx'],
+    'jayanti-which': 'src/app/gita-jayanti/which-chapter-to-read/page.tsx',
+    'jayanti-related': 'src/components/jayanti/JayantiRelated.tsx',
 }
 for p in sorted(glob.glob(os.path.join(FE, 'src/app/blogs/*/page.tsx'))):
     PAGES['blog/' + p.split('/')[-2]] = p

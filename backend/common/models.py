@@ -244,6 +244,11 @@ class RecommendMatched(BaseModel):
     label: str
 
 
+class VerseWord(BaseModel):
+    sa: str                               # the word as it stands in the verse (Devanagari)
+    en: str                               # its gloss in English
+
+
 class RecommendedVerse(BaseModel):
     id: str
     ref: str
@@ -255,6 +260,7 @@ class RecommendedVerse(BaseModel):
     sanskrit: Optional[str] = None        # omitted where the library's Sanskrit isn't display-ready
     line: str                             # our own short English: only what the verse says
     translation: Optional[str] = None
+    words: List[VerseWord] = []           # word for word, in verse order (the day screen's turned card); [] when we don't have it
     why: Optional[str] = None             # the verse's reflection or its prasang's lesson
     misuse: Optional[str] = None          # show with the verse when present
     tone: Optional[str] = None
@@ -618,6 +624,11 @@ class AskResponse(BaseModel):
     message: Optional[str] = None      # redirect / retune / safety copy
     safety: Optional[PlanSafety] = None
     timings_ms: Dict[str, int] = {}
+
+
+class VerseWordsOut(BaseModel):
+    verse_id: str
+    words: List[VerseWord]
 
 
 class SceneOut(BaseModel):

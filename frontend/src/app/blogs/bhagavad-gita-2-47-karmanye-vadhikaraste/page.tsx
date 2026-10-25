@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Karmanye Vadhikaraste Meaning: Bhagavad Gita 2.47 Explained",
     description: "Karmanye vadhikaraste ma phaleshu kadachana: you have a right to your actions, never to their fruits. Gita 2.47 word by word, and its 4 instructions.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste",

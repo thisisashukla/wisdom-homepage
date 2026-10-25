@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     url: "https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained",
     description: "Sattva (clarity), rajas (drive) and tamas (inertia) — the three gunas of the Gita, and how to read your own state right now.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita",
@@ -421,7 +421,7 @@ const schemas = [
       "url": "https://wisdomquotes.in",
       "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     },
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita" },
     "mentions": [
       { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },

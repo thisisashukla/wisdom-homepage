@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
     description: "In chapter 1 Arjuna trembles and sets down his bow. Here are the verses from chapters 2 and 5 that answer his fear, with Sanskrit and plain meaning.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
@@ -410,7 +410,7 @@ const schemas = [
   "description": "Arjuna trembles and sets down his bow in chapter 1. Here is what chapters 2 and 5 say about fear, worry and a steady mind.",
   "datePublished": "2026-05-05",
   "dateModified": "2026-08-01",
-  "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+  "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace" },
   "author": {
     "@type": "Person",

@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bhagavad Gita — Verse of the Day',
     description: 'A new verse from the Bhagavad Gita each day.',
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   keywords: 'hindu verse of the day, bhagavad gita verse of the day, daily shloka, shloka of the day, sanskrit verse daily',
 }
@@ -305,6 +305,15 @@ export default async function TodayPage() {
             {context.story}
           </p>
         </div>
+      )}
+
+      {Date.now() < Date.UTC(2026, 11, 20, 18, 30) && (
+        <p style={{ margin: '28px 0 0', fontSize: 15, color: 'var(--text-dim)' }}>
+          Gita Jayanti 2026 is on Sunday, 20 December.{' '}
+          <a href="/gita-jayanti" data-mp-location="gita_today_jayanti" style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>
+            Read a chapter a day and finish the Gita on the day →
+          </a>
+        </p>
       )}
 
       <VerseFunnelCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />

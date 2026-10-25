@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://wisdomquotes.in',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630, alt: 'Wisdom: the Bhagavad Gita verse for what you are going through' }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630, alt: 'Wisdom: the Bhagavad Gita verse for what you are going through' }],
   },
   alternates: { canonical: 'https://wisdomquotes.in' },
 }
@@ -295,6 +295,21 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── GITA JAYANTI (shown until the end of 20 Dec 2026, IST) ── */}
+      {Date.now() < Date.UTC(2026, 11, 20, 18, 30) && (
+        <section className="jayanti-strip" data-mp-section="home_gita_jayanti">
+          <div className="wrap">
+            <a href="/gita-jayanti" className="jayanti-strip-link" data-mp-location="home_jayanti_strip">
+              <span className="jayanti-strip-eyebrow">Gita Jayanti 2026 · Sunday, 20 December</span>
+              <span className="jayanti-strip-line">
+                Read one chapter a day from 3 December and finish the Gita on the day.
+              </span>
+              <span className="jayanti-strip-go">See the date and plan →</span>
+            </a>
+          </div>
+        </section>
+      )}
+
       {/* ── READ THE GITA (compact library) ── */}
       <section className="section" id="chapters">
         <div className="wrap">
@@ -309,6 +324,7 @@ export default async function HomePage() {
           <div className="library-actions rv">
             <a href="/gita/chapter/1/verse/1" className="btn-read-gita btn-read-gita-primary" data-mp-location="home_library_start_1_1">Start at 1.1</a>
             <a href="/gita" className="btn-ghost" data-mp-location="home_chapters_all">Open the full index</a>
+            <a href="/read-gita-in-18-days" className="btn-ghost" data-mp-location="home_library_18_days">Read it in 18 days</a>
           </div>
           <div className="chapters-grid" data-stagger="25">
             {chapters.map((ch) => {

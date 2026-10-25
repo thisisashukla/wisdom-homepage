@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Best Bhagavad Gita Translation: Which One to Read (2026)",
     description: "Short answer: start with Eknath Easwaran for a clear first read, or Gita Press with Hindi tika. Then compare Prabhupada, Sargeant, Mitchell, Debroy and more.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",

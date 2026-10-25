@@ -7,6 +7,7 @@ import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
 import JayantiCountdown from '@/components/jayanti/JayantiCountdown'
 import ChapterRun, { type RunDay } from '@/components/jayanti/ChapterRun'
 import JayantiStartCTA from '@/components/jayanti/JayantiStartCTA'
+import JayantiRelated from '@/components/jayanti/JayantiRelated'
 import JayantiHeroArt from '@/components/jayanti/JayantiHeroArt'
 import { chapterFor, daysIncl } from '@/components/jayanti/jayantiDate'
 import { getAllChapters, getVerse, verseUrl, chapterUrl } from '@/lib/gita'
@@ -14,14 +15,15 @@ import { appStoreUrl } from '@/lib/app'
 import '../home.css'
 import '../home-v3.css'
 import './gita-jayanti.css'
+import './guides.css'
 
 // Hourly, so the server-rendered day count stays close before the client takes over.
 export const revalidate = 3600
 
 const URL = 'https://wisdomquotes.in/gita-jayanti'
-const TITLE = 'Gita Jayanti 2026: Date, Countdown and an 18-Day Reading Plan'
+const TITLE = 'Gita Jayanti 2026 Date, Countdown & 18-Day Gita Plan'
 const DESCRIPTION =
-  'Gita Jayanti 2026 is on Sunday, 20 December (Mokshada Ekadashi). Countdown, tithi timings, and one chapter a day from 3 December so you finish the Gita on the day.'
+  'Gita Jayanti 2026 is on Sunday, 20 December (Mokshada Ekadashi). Tithi timings, a countdown, and a plan to finish the Gita on the day.'
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | Wisdom` },
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     url: URL,
     type: 'article',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og/gita-jayanti-2026.jpg', width: 1200, height: 630 }],
   },
 }
 
@@ -49,14 +51,14 @@ const VERSES = [
   { chapter: 10, verse: 35, why: 'Krishna names the month', note: 'Margashirsha, the month Gita Jayanti falls in.' },
   { chapter: 4, verse: 7, why: 'Why Krishna comes', note: null },
   { chapter: 2, verse: 47, why: 'The verse most people know', note: null },
-  { chapter: 18, verse: 66, why: 'Near the end: do not grieve', note: null },
+  { chapter: 18, verse: 66, why: 'Krishna’s promise to Arjuna', note: null },
   { chapter: 18, verse: 78, why: 'The last verse of the Gita', note: 'Sanjaya closes the dialogue.' },
 ]
 
 const WAYS = [
   {
     title: 'Read it aloud',
-    body: 'The whole Gita in one sitting, as many temples and homes do, or one chapter. Chapters 12 and 15 are 20 verses each and often recited on the day.',
+    body: 'The whole Gita in one sitting, as many temples and homes do, or one chapter. Chapters 12 and 15 are the shortest, at 20 verses each.',
   },
   {
     title: 'Keep the Ekadashi',
@@ -87,7 +89,7 @@ const FAQ = [
   },
   {
     q: 'How long does it take to read the whole Gita?',
-    a: 'It has 700 verses in 18 chapters. Read straight through it takes a few hours. Split across the 18 days from 3 December, most days are 20 to 50 verses, and chapter 18 lands on Jayanti.',
+    a: 'It has 700 verses in 18 chapters: about two hours to read in English at an unhurried pace, or about three hours to recite in Sanskrit. Split across the 18 days from 3 December, each day is 4 to 13 minutes in English, and chapter 18 lands on Jayanti.',
   },
   {
     q: 'Which chapter should I read on the day if I only have a few minutes?',
@@ -131,6 +133,8 @@ export default async function GitaJayantiPage() {
         description: DESCRIPTION,
         inLanguage: 'en',
         datePublished: '2026-10-25',
+        dateModified: '2026-10-25',
+        image: 'https://wisdomquotes.in/og/gita-jayanti-2026.jpg',
         author: { '@type': 'Person', name: 'Ankur Shukla', url: 'https://wisdomquotes.in/about' },
         publisher: { '@type': 'Organization', name: 'Wisdom', logo: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
         mainEntityOfPage: URL,
@@ -161,10 +165,10 @@ export default async function GitaJayantiPage() {
           <div className="gj-hero-scrim" aria-hidden="true" />
 
           <div className="gj-hero-inner">
-            <p className="gj-eyebrow">
-              Gita Jayanti 2026 <span aria-hidden="true">·</span> <span lang="hi">गीता जयंती</span>
-            </p>
             <h1 className="gj-h1">
+              <span className="gj-eyebrow">
+                Gita Jayanti 2026 <span aria-hidden="true">·</span> <span lang="hi">गीता जयंती</span>
+              </span>
               The day Krishna <em>spoke to Arjuna.</em>
             </h1>
             <p className="gj-date"><span>Sunday, 20 December 2026</span> · <span>Mokshada Ekadashi</span></p>
@@ -215,6 +219,12 @@ export default async function GitaJayantiPage() {
                 Start on Thursday, 3 December with chapter 1. Read one chapter a day and chapter 18 falls on
                 Sunday, 20 December. Each chapter here has the Sanskrit, Hindi and English, and every verse can be
                 read aloud.
+              </p>
+              <p className="subtext">
+                For what each chapter covers and a verse from each, see{' '}
+                <a className="gj-link" href="/read-gita-in-18-days" data-mp-location="gita_jayanti_run_guide">Read the Gita in 18 days</a>.
+                If you start later, the <a className="gj-link" href="/gita-jayanti/reading-plan" data-mp-location="gita_jayanti_run_plan">Gita Jayanti reading plan</a>{' '}
+                has 9-day, 3-day and one-day versions.
               </p>
               <div className="gj-run-actions">
                 <a href="/gita-jayanti-18-days.ics" download className="gj-btn-ghost" data-mp-location="gita_jayanti_run_ics">
@@ -292,8 +302,16 @@ export default async function GitaJayantiPage() {
                 </div>
               ))}
             </div>
+            <p className="gj-ways-more">
+              Short on time on the day?{' '}
+              <a className="gj-link" href="/gita-jayanti/which-chapter-to-read" data-mp-location="gita_jayanti_ways_which">
+                Which chapter to read on Gita Jayanti
+              </a>
+            </p>
           </div>
         </section>
+
+        <JayantiRelated current="hub" heading="Plan your reading" />
 
         {/* ── FAQ ── */}
         <section className="section section-alt">

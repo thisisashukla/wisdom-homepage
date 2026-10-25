@@ -62,13 +62,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       url: `https://wisdomquotes.in${topicUrl(topic.slug)}`,
       type: 'article',
       siteName: 'Wisdom',
-      images: ['https://wisdomquotes.in/og-image.webp'],
+      images: ['https://wisdomquotes.in/og-image.jpg'],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://wisdomquotes.in/og-image.webp'],
+      images: ['https://wisdomquotes.in/og-image.jpg'],
     },
     keywords: aliases ? aliases.join(', ') : undefined,
   }

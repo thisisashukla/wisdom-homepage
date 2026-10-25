@@ -128,6 +128,16 @@ export default async function ChapterPage({ params }: { params: Params }) {
         Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
         <a href="/methodology" style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>Methodology →</a>
       </p>
+      <p style={{ fontSize: 13.5, color: 'var(--text-dim)', marginTop: 10 }}>
+        Reading a chapter a day? This is day {ch.number} of 18.{' '}
+        <a
+          href={`/read-gita-in-18-days#day-${ch.number}`}
+          data-mp-location={`chapter_${ch.number}_read18`}
+          style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
+        >
+          {ch.number === 18 ? 'Chapter 18 falls on Gita Jayanti in the 18-day plan →' : 'The 18-day plan →'}
+        </a>
+      </p>
 
       <figure className="gita-chapter-hero">
         <img src={chapterImage(ch.number).src} alt={chapterImage(ch.number).alt} loading="eager" />

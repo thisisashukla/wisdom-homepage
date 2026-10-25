@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     // site = the site's brand handle; creator = the author's handle.
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   icons: {
     icon: '/assets/new-light-logo.webp',

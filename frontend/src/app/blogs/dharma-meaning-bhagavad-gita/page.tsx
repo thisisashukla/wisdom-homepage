@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Dharma in the Bhagavad Gita: Meaning, Svadharma and Key Verses | Wisdom",
     description: "Dharma comes from dhṛ, to hold. In the Gita it is closer to 'your own nature, acted on' than to duty. Svadharma is Krishna's answer to Arjuna's paralysis.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita",

@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     url: "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Nishkama Karma: Krishna's Teaching on Selfless Action in the Bhagavad Gita",
     description: "Nishkama karma (निष्काम कर्म): action without attachment to results. What it means, and 5 verses that show how to practise it.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita",
@@ -445,7 +445,7 @@ const schemas = [
       "url": "https://wisdomquotes.in",
       "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     },
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita" },
     "mentions": [
       { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },

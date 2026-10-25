@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'hi_IN',
     alternateLocale: ['en_IN'],
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'भगवद् गीता — आज का श्लोक',
     description: 'हर दिन भगवद् गीता का एक श्लोक।',
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   keywords: 'aaj ka shlok, आज का श्लोक, hindu verse of the day, गीता का आज का श्लोक, daily gita shlok hindi',
 }

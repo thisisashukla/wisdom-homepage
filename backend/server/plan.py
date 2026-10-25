@@ -63,7 +63,7 @@ from ai.story_titles import hook_title
 from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
                            PlanResponse, PlanWeek, PreviewRequest, PreviewResponse, RefineRequest, RefineResponse, ReplaceRequest,
                            ReplaceResponse, StoryCard,
-                           DepthRequest, DepthResponse, AskRequest, AskResponse, SceneOut)
+                           DepthRequest, DepthResponse, AskRequest, AskResponse, SceneOut, VerseWordsOut)
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -642,6 +642,22 @@ async def depth(req: DepthRequest) -> DepthResponse:
             cache.put(key, got)
     _log("depth", req, u, t0, parts=len(got), cached=cached)
     return DepthResponse(depth=got, cached=cached, timings_ms={"total": int((time.perf_counter() - t0) * 1000)})
+
+
+# ── Word for word (the day screen's turned card) ───────────────────────────────
+@router.get("/recommend/words/{verse_id}", response_model=VerseWordsOut, tags=["plan"])
+async def verse_words(verse_id: str) -> VerseWordsOut:
+    """A verse word for word, for plans made before cards carried `words`. 404 when we don't have it."""
+    if len(verse_id) > 80:
+        raise HTTPException(status_code=404, detail="Unknown verse")
+    try:
+        rec = get_recommender()
+    except RuntimeError:
+        raise HTTPException(status_code=503, detail="Recommendations are not available right now.")
+    words = rec.words_of(verse_id)
+    if not words:
+        raise HTTPException(status_code=404, detail="No word for word for this verse")
+    return VerseWordsOut(verse_id=verse_id, words=words)
 
 
 # ── The scene and Ask (the day screen's doors) ──────────────────────────────────

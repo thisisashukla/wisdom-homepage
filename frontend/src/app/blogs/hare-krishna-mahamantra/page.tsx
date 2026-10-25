@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/hare-krishna-mahamantra",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Hare Krishna Mahamantra — Meaning, History, and the Practice of Kirtan | Wisdom",
     description: "A 16-word Sanskrit mantra that traveled from a minor Upanishad to a Bengali saint to the UK singles chart. What it means, where it came from, and how to chant it.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
+    images: ['https://wisdomquotes.in/og-image.jpg'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/hare-krishna-mahamantra",

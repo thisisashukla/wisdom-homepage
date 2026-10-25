@@ -209,6 +209,14 @@ class Recommender:
         n = len(self._sit_tokens)
         self._idf = {t: math.log(1 + n / c) for t, c in df.items()}   # rare words say more about a situation
         self._verse_sit = [set(v.get("situations") or []) for v in self.verses]
+        # Word for word (data/taxonomy/verse_words.json, scripts/build_verse_words.py): a sidecar, so the library's
+        # hash and the embedding caches keyed on it don't move. Missing file: cards simply carry no words.
+        words_path = library_path.with_name("verse_words.json")
+        try:
+            self.words: Dict[str, List[List[str]]] = json.loads(words_path.read_text(encoding="utf-8")) if words_path.exists() else {}
+        except Exception:
+            logger.exception("Recommender: could not read %s", words_path)
+            self.words = {}
         logger.info("Recommender: %d servable verses of %d (%d with their original, %d Sanskrit fixes), %d prasangs, %d situations (library %s)",
                     len(self.verses), len(lib["verses"]), int(self.has_original.sum()), fixed, len(self.prasangs), len(self.situations), self.version)
 
@@ -433,6 +441,10 @@ class Recommender:
             "library": self.library_size,
         }
 
+    def words_of(self, verse_id: str) -> List[dict]:
+        """The verse word for word, in its own order: [{"sa": surface, "en": gloss}], or [] when we don't have it."""
+        return [{"sa": sa, "en": en} for sa, en in self.words.get(verse_id) or []]
+
     def _card(self, v: dict, score: float, top_sits: List[str], weights: Counter) -> dict:
         jev = v.get("jev") or {}
         matched = sorted((s for s in v.get("situations") or [] if weights.get(s)), key=lambda s: -weights[s])
@@ -449,6 +461,7 @@ class Recommender:
             "sanskrit": display_sanskrit(v),
             "line": v.get("line"),
             "translation": v.get("translation"),
+            "words": self.words_of(v["id"]),
             "why": why,
             "misuse": v.get("misuse"),
             "tone": jev.get("tone"),

@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     locale: 'hi_IN',
     alternateLocale: ['en_IN'],
-    images: ['/og-image.webp'],
+    images: ['/og-image.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित',
     description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ।',
-    images: ['/og-image.webp'],
+    images: ['/og-image.jpg'],
   },
 }
 
