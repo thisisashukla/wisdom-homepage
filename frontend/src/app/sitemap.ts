@@ -88,6 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: langAlts('/', '/hi/gita'),
     },
     { url: `${BASE}/app`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/gita-jayanti`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE}/gita-for`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly', priority: 0.85 },
     ...GITA_FOR.map((p) => ({ url: `${BASE}/gita-for/${p.slug}`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly' as const, priority: 0.8 })),
     { url: `${BASE}/blogs`, lastModified: CORPUS_UPDATED, changeFrequency: 'weekly', priority: 0.8 },
