@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { appStoreUrl, detectPlatform } from '@/lib/app'
 
 const PLAN_HREF = '/start?ref=menu'
 const PLAN_LABEL = 'Create my 7-day Gita plan'
@@ -19,8 +18,6 @@ const links = [
 
 export function MobileNavToggle() {
   const [open, setOpen] = useState(false)
-  const [ios, setIos] = useState(false)
-  useEffect(() => setIos(detectPlatform() === 'ios'), [])
 
   useEffect(() => {
     if (!open) return
@@ -61,9 +58,7 @@ export function MobileNavToggle() {
         <ul>
           <li>
             <a
-              href={ios ? appStoreUrl('web_menu') : PLAN_HREF}
-              target={ios ? '_blank' : undefined}
-              rel={ios ? 'noopener' : undefined}
+              href={PLAN_HREF}
               className="mobile-nav-app"
               data-mp-location="mobile_nav_drawer_app"
               onClick={() => setOpen(false)}

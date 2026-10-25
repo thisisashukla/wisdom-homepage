@@ -1,13 +1,12 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
-import { appStoreUrl, detectPlatform, startUrl, type Platform } from '@/lib/app'
+import React from 'react'
+import { startUrl } from '@/lib/app'
 import { trackLinkClick } from '@/lib/mixpanel'
 
 /**
- * Every "Create my 7-day Gita plan" on the site. On iPhone it opens the App
- * Store; on Android and computers it opens /start (the app's onboarding on the
- * web). The server renders the /start link; iPhones switch after hydration.
+ * Every "Create my 7-day Gita plan" on the site. Opens /start (the app's
+ * onboarding on the web) on every device, iPhone included.
  */
 export default function CreatePlanLink({
   children,
@@ -28,17 +27,12 @@ export default function CreatePlanLink({
   pageName?: string
   style?: React.CSSProperties
 }) {
-  const [platform, setPlatform] = useState<Platform>('desktop')
-  useEffect(() => setPlatform(detectPlatform()), [])
-  const ios = platform === 'ios'
-  const href = ios ? appStoreUrl(campaign) : startUrl({ s: situation, ref: refTag ?? campaign })
+  const href = startUrl({ s: situation, ref: refTag ?? campaign })
   return (
     <a
       href={href}
       className={className}
       style={style}
-      target={ios ? '_blank' : undefined}
-      rel={ios ? 'noopener' : undefined}
       data-mp-location={location}
       onClick={() => trackLinkClick(pageName, location, href)}
     >
@@ -47,13 +41,7 @@ export default function CreatePlanLink({
   )
 }
 
-/** The line under a create-plan button: honest about what happens on this device. */
+/** The line under a create-plan button. */
 export function CreatePlanFine({ className }: { className?: string }) {
-  const [platform, setPlatform] = useState<Platform>('desktop')
-  useEffect(() => setPlatform(detectPlatform()), [])
-  return (
-    <p className={className}>
-      {platform === 'ios' ? 'Opens the App Store. Week 1 is free.' : 'Week 1 is free. A few questions, about two minutes.'}
-    </p>
-  )
+  return <p className={className}>Week 1 is free. A few questions, about two minutes.</p>
 }

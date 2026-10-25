@@ -24,8 +24,7 @@ import WeekScreen, { type PreviewDay } from './WeekScreen'
 import PlanScreen, { type FullDay } from './PlanScreen'
 
 /**
- * The Wisdom app's onboarding, on the web (for Android and computers; iPhone
- * visitors are sent to the App Store). Same screens, copy, icons and motion as
+ * The Wisdom app's onboarding, on the web (every device, iPhone included). Same screens, copy, icons and motion as
  * wisdom/app/screens/onboarding on branch v3, in the same order: age, life
  * stage, feeling (in their own word), their note, "Curating your plan", the
  * week with every day sealed, then Day 1 brushed open. Value first: no
