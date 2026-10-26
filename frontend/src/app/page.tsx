@@ -404,7 +404,7 @@ export default async function HomePage() {
           <h2>Start with <em>Week 1, free.</em></h2>
           <p>A few questions, about two minutes.</p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_final_band" location="final_cta_create_plan">Create my 7-day Gita plan</CreatePlanLink>
+            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_final_band" location="final_cta_create_plan">Create my free Gita reading plan</CreatePlanLink>
           </div>
           </div>
         </div>

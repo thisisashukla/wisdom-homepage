@@ -284,7 +284,7 @@ export default function YourVerse({
       {stage === 'intro' && (
         <div className="yv-intro">
           <button type="button" className="btn-read-gita btn-read-gita-primary yv-go yv-cta" onClick={start}>
-            Create my 7-day Gita plan
+            Create my free Gita reading plan
           </button>
           <p className="yv-fine yv-intro-fine">Day 1 is free. One question, 30 seconds.</p>
         </div>

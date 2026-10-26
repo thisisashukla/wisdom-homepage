@@ -111,7 +111,7 @@ export default function DevicePlans({ pageName = 'Home' }: { pageName?: string }
             <li>Your first verse comes before any sign-in. Then sign in with Google and all seven days come to your inbox. No card needed.</li>
           </ul>
           <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_home_devices" location="home_devices_create_plan" pageName={pageName}>
-            Create my 7-day Gita plan
+            Create my free Gita reading plan
           </CreatePlanLink>
         </div>
       </div>

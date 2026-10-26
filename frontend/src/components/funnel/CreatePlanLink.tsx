@@ -5,7 +5,7 @@ import { startUrl } from '@/lib/app'
 import { trackLinkClick } from '@/lib/mixpanel'
 
 /**
- * Every "Create my 7-day Gita plan" on the site. Opens /start (the app's
+ * Every "Create my free Gita reading plan" on the site. Opens /start (the app's
  * onboarding on the web) on every device, iPhone included.
  */
 export default function CreatePlanLink({

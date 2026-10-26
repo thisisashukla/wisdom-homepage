@@ -111,7 +111,7 @@ export default function PlanPreview({ pageName = 'Home' }: { pageName?: string }
           location={`home_plan_preview_create_${plan.id}`}
           pageName={pageName}
         >
-          Create my 7-day Gita plan
+          Create my free Gita reading plan
         </CreatePlanLink>
         <p className="pp-fine">Yours is made from what you tell it. Week 1 is free.</p>
       </div>

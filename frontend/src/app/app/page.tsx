@@ -74,7 +74,7 @@ export default function AppLandingPage() {
               on={['ios', 'desktop']}
               fallback={
                 <a href="/start?ref=app_page_android" className="btn-read-gita btn-read-gita-primary" data-mp-location="app_hero_android_create_plan">
-                  Create my 7-day Gita plan · Week 1 free →
+                  Create my free Gita reading plan →
                 </a>
               }
             >

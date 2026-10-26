@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 const PLAN_HREF = '/start?ref=menu'
-const PLAN_LABEL = 'Create my 7-day Gita plan'
+const PLAN_LABEL = 'Create my free Gita reading plan'
 
 const links = [
   { href: '/gita', label: 'Read the Gita' },

@@ -11,7 +11,7 @@ const tiro = Tiro_Devanagari_Sanskrit({ subsets: ['devanagari', 'latin'], weight
 const notoSerif = Noto_Serif_Devanagari({ subsets: ['devanagari'], weight: '700', display: 'swap', variable: '--ob-deva' })
 
 export const metadata: Metadata = {
-  title: 'Create your 7-day Gita plan',
+  title: 'Create your free Gita reading plan',
   description: 'A few questions, then a verse chosen for what is on your mind and a week of verses built around it. Week 1 is free.',
   robots: { index: false, follow: true },
   alternates: { canonical: '/start' },
