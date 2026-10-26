@@ -22,6 +22,7 @@ import FindingScreen, { type FindChip } from './FindingScreen'
 import VerseScreen, { type HookVerse } from './VerseScreen'
 import WeekScreen, { type PreviewDay } from './WeekScreen'
 import PlanScreen, { type FullDay } from './PlanScreen'
+import WelcomeScreen from './WelcomeScreen'
 
 /**
  * The Wisdom app's onboarding, on the web (every device, iPhone included). Same screens, copy, icons and motion as
@@ -35,7 +36,7 @@ import PlanScreen, { type FullDay } from './PlanScreen'
  * flow, as in the app. The logo is drawn once by this shell and never moves;
  * each screen's words fade out and the next rise in.
  */
-type Step = 'splash' | 'age' | 'stage' | 'phone' | 'feeling' | 'note' | 'signin' | 'finding' | 'verse' | 'week' | 'paywall' | 'plan'
+type Step = 'splash' | 'age' | 'stage' | 'phone' | 'feeling' | 'note' | 'signin' | 'finding' | 'verse' | 'week' | 'paywall' | 'welcome' | 'plan'
 type Answers = { age?: AgeId; stages: StageId[]; phoneHours?: number; need?: NeedId; emotion?: string; note?: string; noteSource?: 'voice' | 'text'; topic?: string; follow?: string }
 type Results = {
   understanding?: Record<string, unknown> & { mirror?: string; insight?: string; weeks?: string[] }
@@ -97,10 +98,10 @@ export default function StartFlow() {
       preset.follow = situation.follow
       preset.need = SITUATION_FEELING[situation.id]
     }
-    if (s && ['verse', 'week', 'signin', 'paywall', 'plan'].includes(s.step) && s.results.hook) {
+    if (s && ['verse', 'week', 'signin', 'paywall', 'welcome', 'plan'].includes(s.step) && s.results.hook) {
       setAnswers(s.answers)
       setResults(s.results)
-      setStep(s.results.paid || s.step === 'paywall' ? 'plan' : s.step)
+      setStep(s.results.paid || s.step === 'paywall' || s.step === 'welcome' ? 'plan' : s.step)
       setLogoUp(true)
     } else if (s && s.step !== 'splash') {
       setAnswers({ ...s.answers, ...preset })
@@ -173,9 +174,9 @@ export default function StartFlow() {
   }, [step, hookReq, findVerse])
 
   // ── Sign-in ───────────────────────────────────────────────────────────────
-  // Signed in after Day 1: the week opens here and goes to their inbox.
+  // Signed in after Day 1: a welcome, while the week opens behind it (and goes to their inbox).
   const afterSignIn = useCallback(() => {
-    go('plan', { signed_in: true })
+    go('welcome', { signed_in: true })
     void openWeek()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [go])
@@ -206,7 +207,8 @@ export default function StartFlow() {
       trackEvent('Onboarding Signin Completed', { page: 'Start', method: 'popup' })
       if (next === 'age') go('age')
       else afterSignIn()
-    } catch {
+    } catch (e) {
+      trackEvent('Onboarding Signin Failed', { page: 'Start', at: next, code: (e as { code?: string })?.code || 'unknown' })
       setError('Google sign-in did not go through. Please try again.')
     } finally {
       setBusy(false)
@@ -348,7 +350,7 @@ export default function StartFlow() {
           stages={answers.stages} need={answers.need} usedNote={!!answers.note?.trim()}
           seen={!!results.seen}
           onRevealed={() => setResults((p) => ({ ...p, seen: true }))}
-          cta="Email me my free week"
+          cta={user || auth.currentUser ? 'Open my week' : 'Email me my free week'}
           onDone={() => (user || auth.currentUser ? afterSignIn() : go('signin'))}
         />
       )
@@ -362,6 +364,19 @@ export default function StartFlow() {
           weekTitle={weekTitle}
           cta="Reveal my first verse"
           onDone={() => go('verse')}
+        />
+      )
+      break
+    case 'welcome':
+      screen = (
+        <WelcomeScreen
+          name={(user ?? auth.currentUser)?.displayName ?? null}
+          weekTitle={weekTitle}
+          emailedTo={results.emailedTo ?? null}
+          ready={!!results.paid}
+          busy={busy}
+          error={error}
+          onOpen={() => (results.paid ? go('plan') : openWeek())}
         />
       )
       break

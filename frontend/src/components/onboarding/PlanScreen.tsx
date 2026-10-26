@@ -114,7 +114,7 @@ export default function PlanScreen({
         {error && <p className="ob-error" role="alert">{error}</p>}
       </div>
       {!paid ? (
-        <Cta delay={700} busy={loading} onClick={onRetry}>{loading ? 'Opening your week' : 'Email me my free week'}</Cta>
+        <Cta delay={700} busy={loading} onClick={onRetry}>{loading ? 'Opening your week' : 'Open my week'}</Cta>
       ) : (
         <div className="ob-foot ob-rise" style={{ '--d': '700ms' } as React.CSSProperties}>
           <a className="ob-cta ob-cta-link" href="/">
