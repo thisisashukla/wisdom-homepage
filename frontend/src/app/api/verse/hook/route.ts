@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { FEELINGS, situationById, type FeelingId } from '@/lib/app'
-import { backendPost, clientIp, rateLimit } from '@/lib/server/backend'
+import { BACKEND_TIMEOUT, backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, isIOSRequest, verifyFirebaseToken } from '@/lib/server/firebaseToken'
 import { upsertWebUser } from '@/lib/server/supabase'
 
@@ -79,7 +79,7 @@ export async function POST(req: Request) {
       follow: situation?.follow,
       alternates: 1,
       exclude: Array.isArray(body.exclude) ? body.exclude.slice(0, 50) : [],
-    })
+    }, BACKEND_TIMEOUT.hook)
     if (user) {
       void upsertWebUser({
         uid: user.uid,

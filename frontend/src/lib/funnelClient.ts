@@ -66,12 +66,30 @@ export class ApiError extends Error {
   }
 }
 
-export async function api<T>(path: string, init: { method?: string; body?: unknown } = {}): Promise<T> {
-  const res = await fetch(path, {
-    method: init.method ?? (init.body ? 'POST' : 'GET'),
-    headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
-    body: init.body ? JSON.stringify(init.body) : undefined,
-  })
+/**
+ * How long the browser waits for our own routes. Each is a little above the route's maxDuration, so
+ * the route's own answer (a 502 when the backend is slow) arrives first; the browser only gives up
+ * when the route itself never answers. Everything else is quick.
+ */
+export const API_TIMEOUT = { default: 20_000, hook: 65_000, plan: 65_000 } as const
+
+export async function api<T>(path: string, init: { method?: string; body?: unknown; timeoutMs?: number } = {}): Promise<T> {
+  const ctrl = new AbortController()
+  const timer = setTimeout(() => ctrl.abort(), init.timeoutMs ?? API_TIMEOUT.default)
+  let res: Response
+  try {
+    res = await fetch(path, {
+      method: init.method ?? (init.body ? 'POST' : 'GET'),
+      headers: { 'Content-Type': 'application/json', ...(await authHeaders()) },
+      body: init.body ? JSON.stringify(init.body) : undefined,
+      signal: ctrl.signal,
+    })
+  } catch {
+    if (ctrl.signal.aborted) throw new ApiError(0, 'timeout')
+    throw new ApiError(0, 'network')
+  } finally {
+    clearTimeout(timer)
+  }
   const data = await res.json().catch(() => ({}))
   if (!res.ok) throw new ApiError(res.status, (data as { error?: string }).error || `http_${res.status}`)
   return data as T

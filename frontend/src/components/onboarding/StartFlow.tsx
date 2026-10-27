@@ -5,7 +5,7 @@ import { getRedirectResult } from 'firebase/auth'
 import { auth } from '@/lib/firebase'
 import { useAuth } from '@/context/AuthContext'
 import { trackEvent } from '@/lib/mixpanel'
-import { api, ApiError, identify, signInWithGoogle, takePending } from '@/lib/funnelClient'
+import { api, API_TIMEOUT, ApiError, identify, signInWithGoogle, takePending } from '@/lib/funnelClient'
 import { situationById } from '@/lib/app'
 import {
   AGES, AGE_ART, FEELING_ART, LOGO_2X, NEEDS, SITUATION_FEELING, STAGE_ART, emotionById, stagesFor,
@@ -142,6 +142,7 @@ export default function StartFlow() {
     if (!r.understanding || !r.hook) return Promise.resolve()
     weekReq.current = api<{ weeks: string[]; preview: PreviewDay[]; sealed: string }>('/api/start/week', {
       body: { profile: profile(), understanding: r.understanding, hookId: r.hook.id },
+      timeoutMs: API_TIMEOUT.plan,
     })
       .then((w) => setResults((p) => ({ ...p, weeks: w.weeks, preview: w.preview, sealed: w.sealed })))
       .catch(() => {})
@@ -151,7 +152,7 @@ export default function StartFlow() {
     const a = answersRef.current
     const p = api<{ understanding: Results['understanding']; hook: HookVerse | null; safety: Results['safety']; library: { verses?: number; prasangs?: number } | null }>(
       '/api/start/hook',
-      { body: { profile: profile(), note: a.note || undefined, noteSource: a.noteSource } },
+      { body: { profile: profile(), note: a.note || undefined, noteSource: a.noteSource }, timeoutMs: API_TIMEOUT.hook },
     ).then(async (r) => {
       setResults({ understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety })
       resultsRef.current = { understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety }

@@ -6,7 +6,14 @@ export const BACKEND_URL = (
   'https://wisdom-homepage-2tf6-neon.vercel.app'
 ).replace(/\/$/, '')
 
-export async function backendPost<T>(path: string, body: unknown, timeoutMs = 25_000): Promise<T> {
+/**
+ * How long a route waits for the backend. /recommend/hook was measured at 7-15s for a new note and
+ * /recommend/plan at 14-16s, plus a few seconds on a cold start. Each route's maxDuration sits above
+ * its limit here, so the route answers 502 itself instead of Vercel killing it with a 504.
+ */
+export const BACKEND_TIMEOUT = { default: 25_000, hook: 45_000, plan: 55_000 } as const
+
+export async function backendPost<T>(path: string, body: unknown, timeoutMs: number = BACKEND_TIMEOUT.default): Promise<T> {
   const controller = new AbortController()
   const t = setTimeout(() => controller.abort(), timeoutMs)
   try {
@@ -19,6 +26,9 @@ export async function backendPost<T>(path: string, body: unknown, timeoutMs = 25
     })
     if (!res.ok) throw new Error(`backend ${path} ${res.status}`)
     return (await res.json()) as T
+  } catch (e) {
+    if (controller.signal.aborted) throw new Error(`backend ${path} timed out after ${timeoutMs}ms`)
+    throw e
   } finally {
     clearTimeout(t)
   }

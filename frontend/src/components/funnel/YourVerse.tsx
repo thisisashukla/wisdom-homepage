@@ -18,6 +18,7 @@ import { trackEvent, trackLinkClick } from '@/lib/mixpanel'
 import {
   ApiError,
   api,
+  API_TIMEOUT,
   bgLink,
   identify,
   signInWithGoogle,
@@ -116,7 +117,7 @@ export default function YourVerse({
       setStage('loading')
       setError(null)
       try {
-        const out = await api<HookResult>('/api/verse/hook', { body: { feeling: f, situation: s, source, exclude } })
+        const out = await api<HookResult>('/api/verse/hook', { body: { feeling: f, situation: s, source, exclude }, timeoutMs: API_TIMEOUT.hook })
         setResult(out)
         setVerse(out.hook)
         if (out.hook) setSeen((prev) => [...prev, out.hook!.id])
@@ -256,7 +257,7 @@ export default function YourVerse({
         }
       }
       setStage('planning')
-      const out = await api<WebPlanData>('/api/verse/plan', { body: { feeling, situation, note } })
+      const out = await api<WebPlanData>('/api/verse/plan', { body: { feeling, situation, note }, timeoutMs: API_TIMEOUT.plan })
       setPlan(out)
       setStage('plan')
       trackEvent('Web Plan Generated', props({ days: out.days.length }))

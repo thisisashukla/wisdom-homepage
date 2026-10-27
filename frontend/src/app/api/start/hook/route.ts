@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server'
-import { backendPost, clientIp, rateLimit } from '@/lib/server/backend'
+import { BACKEND_TIMEOUT, backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
 import { BackendVerse, cleanSanskrit, profileBody, refOf, StartProfile } from '@/lib/server/startShared'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
-export const maxDuration = 30
+export const maxDuration = 60
 
 /**
  * Onboarding "Finding your verse": the person's answers and (optionally) their
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
         note_source: note ? (body.noteSource === 'voice' ? 'voice' : 'text') : null,
         alternates: 0,
       },
-      25_000,
+      BACKEND_TIMEOUT.hook,
     )
     const h = out.hook
     return NextResponse.json({

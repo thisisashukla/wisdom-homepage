@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { FEELINGS, situationById } from '@/lib/app'
-import { backendPost, rateLimit } from '@/lib/server/backend'
+import { BACKEND_TIMEOUT, backendPost, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
 import { getSubscription, isActive } from '@/lib/server/supabase'
 
@@ -77,7 +77,7 @@ export async function POST(req: Request) {
         note_source: note ? 'text' : undefined,
         week: 1,
       },
-      55_000,
+      BACKEND_TIMEOUT.plan,
     )
     return NextResponse.json({
       mirror: out.understanding?.mirror ?? null,

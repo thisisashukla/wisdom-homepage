@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { backendPost, clientIp, rateLimit } from '@/lib/server/backend'
+import { BACKEND_TIMEOUT, backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
 import { seal, WEEK_AAD } from '@/lib/server/seal'
 import { BackendStory, BackendVerse, cleanSanskrit, FullDay, profileBody, refOf, StartProfile } from '@/lib/server/startShared'
@@ -57,7 +57,7 @@ export async function POST(req: Request) {
         shape: null,
         feedback: [],
       },
-      55_000,
+      BACKEND_TIMEOUT.plan,
     )
     const full: FullDay[] = out.days.map((d) => {
       const v = d.verse
