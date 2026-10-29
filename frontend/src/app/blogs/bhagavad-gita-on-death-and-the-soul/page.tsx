@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "What the Bhagavad Gita Says About Death — The Soul Is Never Born, Never Dies (BG 2.19-2.25)",
     description: "Krishna's answer to a grieving Arjuna: the soul is never born and never dies. Weapons cannot cut it, fire cannot burn it. BG 2.19-2.25 in Sanskrit and English.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
@@ -409,7 +409,7 @@ const schemas = [
     "description": "Krishna tells a grieving Arjuna that the atman cannot be destroyed: weapons cannot cut it, fire cannot burn it, water cannot wet it (BG 2.23).",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul" },
     "author": {
       "@type": "Person",

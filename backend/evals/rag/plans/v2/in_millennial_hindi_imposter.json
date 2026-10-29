@@ -1,0 +1,728 @@
+{
+ "situation": {
+  "id": "in_millennial_hindi_imposter",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3
+  },
+  "note": "हिंदी मीडियम से हूँ, अब बड़ी कंपनी में हूँ। मीटिंग में बोलने से डर लगता है कि अंग्रेज़ी गलत हो जाएगी, सब हँसेंगे।",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Indore)",
+  "lang": "hindi",
+  "slices": [
+   "fear",
+   "hindi",
+   "lang:hindi",
+   "work"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "fear of being laughed at",
+   "bridge": "The fear that your english will be wrong and they will laugh is what the Gita calls fear of loss: imagining a future where they see you as small.",
+   "week_thesis": "Seven days from fearing the room to speaking in it, with the truth that your worth is not in your english.",
+   "week_beats": {
+    "hook": "You recognise the fear of being laughed at in the meeting room, named without judgement.",
+    "diagnose": "You see that the fear is of being seen as less, and that it multiplies what has not happened.",
+    "steady": "You hold that what is real in you cannot be lost by their laughter.",
+    "act": "You try speaking the true thing you know, even if the words are not perfect.",
+    "story": "A man of learning who feared his words were not enough shows you what it looks like to speak anyway."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "An educated professional from a hindi medium background fears being laughed at for their english in meetings and keeps replaying the fear.",
+   "mirror": "You have the work, and in the meeting you are replaying the words that might come out wrong.",
+   "insight": "You know the work. The meeting room is where you replay the words that might come out wrong, and who might laugh.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.539,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.405,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The fear of being laughed at for your english in the meeting, and the replaying of every word that might come out wrong. I feel like an imposter.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be taken by their laughter; your worth is not decided by how you speak in a room.",
+    "act": "Speak the true thing you know, even if the words are not perfect; let the work speak, and let the room hear it.",
+    "story": "A man of learning who feared his words were not enough, who spoke anyway, and found that the room heard him."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The room and the fear",
+    "What is real in you",
+    "The work that speaks"
+   ],
+   "seat": "an educated professional who fears being judged for their english in meetings",
+   "life_context": "A working professional in their late twenties or early thirties, now in a large company; the fear of being laughed at for their english in meetings keeps replaying, especially after the meeting ends.",
+   "details": [
+    "studied in hindi medium",
+    "now works in a large company",
+    "fears speaking in meetings because of english",
+    "worries others will laugh at mistakes"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:48=0.0,2=0.6,5=0.6,15=0.0,7=0.0,532=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.67",
+    "redo:4",
+    "redo_fixed:1",
+    "dropped:repeat=4,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.48",
+     "ref": "Bhagavad Gita 18.48",
+     "ref_iast": "Bhagavad Gītā 18.48",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥",
+     "line": "Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke.",
+     "translation": "One should not give up the work suited to one's nature, Kaunteya, even if it has faults; for all undertakings are clouded by faults, as fire is by smoke.",
+     "words": [
+      {
+       "sa": "सहजं",
+       "en": "natural"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "सदोषम्",
+       "en": "faulty"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "त्यजेत्",
+       "en": "should abandon"
+      },
+      {
+       "sa": "सर्वारम्भा",
+       "en": "all beginnings"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "दोषेण",
+       "en": "by fault"
+      },
+      {
+       "sa": "धूमेन",
+       "en": "by smoke"
+      },
+      {
+       "sa": "अग्नि",
+       "en": "fire"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आवृताः",
+       "en": "covered"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'never change jobs'. It answers perfectionism, not a reason to stay where you're harmed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.6876,
+     "beat": "hook",
+     "role_fit": 0.19,
+     "meaning": "Krishna is telling Arjuna that you could not abandon the work that fits your nature, even if it has flaws. He uses the image of fire and smoke. Every action you take has some imperfection, just as a fire always has smoke. The point is to do your own work as an offering, accepting that it will not be perfect. You do not need to abandon your path just because it has faults.",
+     "for_you": "You sit in the meeting room and hear the smoke of your own mistakes before you have even spoken. You studied in Hindi medium and now you work in a large company, and you fear that your English will be the smoke that makes them laugh.",
+     "try_today": "Notice one moment today where your English is enough.",
+     "scene_line": "You are the fire, and the smoke of your English is only smoke.",
+     "asks": [
+      "How do I stop hearing the smoke before I speak?",
+      "Can I do my work without the smoke?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.256.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 256",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Ram",
+     "setting": "Bharat, once Ram and their teacher have reassured him, admits what his dread was made of.",
+     "sanskrit": "अपडर डरेउँ न सोच समूलें। रबिहि न दोसु देव दिसि भूलें॥ मोर अभागु मातु कुटिलाई। बिधि गति बिषम काल कठिनाई ॥",
+     "line": "I was frightened by fears I had imagined. My worry had no root at all.",
+     "translation": "\"I was afraid of imagined fears; my worry had no root at all. If one loses one's direction, the sun is not to blame. It was my misfortune, my mother's crookedness, the hard turn of fate and the difficulty of the times...\"",
+     "words": [
+      {
+       "sa": "अपडर",
+       "en": "false fear"
+      },
+      {
+       "sa": "डरेउँ",
+       "en": "I was afraid"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "सोच",
+       "en": "sorrow, worry"
+      },
+      {
+       "sa": "समूलें",
+       "en": "at the root"
+      },
+      {
+       "sa": "रबिहि",
+       "en": "the sun"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "दोसु",
+       "en": "fault"
+      },
+      {
+       "sa": "देव",
+       "en": "O divine one"
+      },
+      {
+       "sa": "दिसि",
+       "en": "direction"
+      },
+      {
+       "sa": "भूलें",
+       "en": "having lost"
+      },
+      {
+       "sa": "मोर",
+       "en": "my"
+      },
+      {
+       "sa": "अभागु",
+       "en": "misfortune"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कुटिलाई",
+       "en": "crookedness"
+      },
+      {
+       "sa": "बिधि",
+       "en": "fate"
+      },
+      {
+       "sa": "गति",
+       "en": "course"
+      },
+      {
+       "sa": "बिषम",
+       "en": "crooked, harsh"
+      },
+      {
+       "sa": "काल",
+       "en": "time"
+      },
+      {
+       "sa": "कठिनाई",
+       "en": "hardness"
+      }
+     ],
+     "why": "In family conflict, let each speak; name love plainly; lift needless shame.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.chitrakoot_assembly",
+      "title": "The family council at Chitrakoot",
+      "summary": "Vasishtha asks how Ram can be brought home, noting that grieving people cannot judge well. Bharat recalls a brother who never broke his heart and let him win at games, and blames himself. Ram tells him his shame is needless, that love and hostility cannot be hidden, and asks him to say freely what he wants.",
+      "story_hook": "",
+      "lesson": "In family conflict, let each speak; name love plainly; lift needless shame."
+     },
+     "score": 3.3031,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bharat, after Ram and their teacher reassure him, lays out what his dread was truly made of. He says he was frightened by fears he had imagined, and his worry had no root at all. He admits the trouble was not the sun, but his own misfortune, his mother's crookedness, the hard turn of fate and the difficulty of the times.",
+     "for_you": "You are sitting in the meeting room and hearing a voice that sounds like Bharat, blaming the sun for your own shadow. The fear that they will laugh at your English is a worry with no root, a story you are telling yourself about a future that has not arrived.",
+     "try_today": "Name one imagined fear about your English and let it go.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 2.9664,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "After Sita is taken, Ram is lost in grief. He returns to an empty hut. He searches, questions trees and animals, and finally rages that he will destroy the world. Lakshman calms him. He says trouble touches everyone. It flares up like fire and passes. The point is that a steady friend can stop grief from turning into destruction. Trouble is a visitor, not a permanent resident.",
+     "for_you": "The meeting room feels like that empty hut right now. But your fear of being laughed at is the fire Lakshman speaks of. It flares up when you replay your words, then passes. Your worth is not the words you speak.",
+     "try_today": "Notice when the fear flares, and watch it pass without acting on it.",
+     "scene_line": "You stand in an empty room, and the fire of imagined laughter flares and passes.",
+     "asks": [
+      "How do I tell the flare of fear from the steady person inside me?",
+      "How do I keep my worth when the room feels empty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.2795,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu speaks to Nidagha, a householder who is busy with the world. Ribhu tells him that a free person can be fully active on the outside while remaining still and unhurried within. They do the work at hand, let go of what is lost, and take up what comes, all with a clear mind. The idea is to move through the world without letting the actions agitate the inner self.",
+     "for_you": "The meeting is the work at hand. Your english is the outward action, but your worth is the clear mind moving through it. They will hear the accent, but they cannot take the steadiness of your mind. Your value is not in the words they might laugh at.",
+     "try_today": "Notice when your mind races after the meeting ends and let the thought pass without chasing it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "words": [
+      {
+       "sa": "अनुद्वेगकरं",
+       "en": "not-agitating"
+      },
+      {
+       "sa": "वाक्यं",
+       "en": "speech"
+      },
+      {
+       "sa": "सत्यं",
+       "en": "truthful"
+      },
+      {
+       "sa": "प्रियहितं",
+       "en": "kind and beneficial"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "यत्",
+       "en": "that"
+      },
+      {
+       "sa": "स्वाध्यायाभ्यसनं",
+       "en": "self-study and practice"
+      },
+      {
+       "sa": "चैव",
+       "en": "also"
+      },
+      {
+       "sa": "वाङ्मयं",
+       "en": "of words"
+      },
+      {
+       "sa": "तप",
+       "en": "discipline"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 2.9541,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is explaining to Arjuna what true discipline in speech looks like. It is not about sounding polished or impressive. It is about choosing words that do not wound, that are true, kind, and helpful. The point is to drop the show and give without strings. It means saying what is needed without cruelty, and letting your speech be a support rather than a weapon against yourself.",
+     "for_you": "You are rehearsing the wrong words in your head after the meeting ends. The Gita says your discipline is not in sounding perfect. It is in speaking true, kind, and helpful words, even if your English is not polished. Let your next contribution be the true thing you know.",
+     "try_today": "Say one true thing in a meeting, even if your words are not perfect.",
+     "scene_line": "You stand in the meeting room, choosing a true word over a polished one.",
+     "asks": [
+      "How do I know what is true and not just what is safe?",
+      "What if my true words are still judged?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.1.146",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+     "family": "vr",
+     "speaker": "Beings of the sky",
+     "listener": "Hanuman",
+     "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+     "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+     "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+     "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+     "words": [],
+     "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.hanuman_leap",
+      "title": "Hanuman's leap",
+      "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+      "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+      "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+     },
+     "score": 2.5072,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "After Hanuman outwits Surasa and Simhika in the sky, the watching beings praise his four qualities: steadiness, clear sight, good judgement and skill. They tell him that with these, he will never sink in his work. The verse proposes that true competence is not about being the loudest or the fastest, but about holding your center and seeing clearly. It says that a steady mind and a clear eye are enough to carry you through any task without being overwhelmed by it.",
+     "for_you": "You are in the room where the fear replays. The verse says steadiness and clear sight are what keep a person from sinking. Your worth in that meeting is not in perfect English. It is in the steadiness of your mind and the clarity of what you know.",
+     "try_today": "Notice one moment in the meeting where your mind is steady.",
+     "scene_line": "You are the watcher who sees the leap and trusts the four qualities.",
+     "asks": [
+      "How do I tell steadiness from stillness?",
+      "Can clear sight mean seeing my own worth?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "words": [],
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "imposter",
+        "label": "I feel like an imposter"
+       },
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "Jambavan saw the power in Hanuman that the others missed. Your hindi medium years and your work are not separate lives. The meeting room is where you could remember what you already know. The words are already in you.",
+     "asks": [
+      "How do I stop waiting for someone to remind me?",
+      "What if I leap and the words still fall short?",
+      "Who is my Jambavan in the office?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The room and the fear",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12921,
+   "total": 12924
+  },
+  "_ms": 12927
+ }
+}

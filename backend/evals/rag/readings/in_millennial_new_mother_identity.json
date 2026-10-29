@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "A new mother who loves her four-month-old but is grieving who she was before, and feels she is a bad mother for missing that self.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "new_parent",
+   "weight": 1.775,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "shame",
+   "weight": 0.38,
+   "source": "note"
+  },
+  {
+   "id": "midlife",
+   "weight": 0.373,
+   "source": "note"
+  }
+ ],
+ "mirror": "Everyone says enjoy this phase, and you feel like a bad mother for not being able to.",
+ "queries": {
+  "hook": "Loving the baby and missing the self you were, with the guilt of feeling like a bad mother for both.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+  "steady": "What is real in you cannot be lost; the self you were is not gone, it is only changed, and love can hold both.",
+  "act": "Let the grief have its place; speak it to one person who will not judge it, and do one small thing that is just yours before the day begins.",
+  "story": "A mother who mourned the life she had lost, and found that her love was not less for the grief she carried."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "template",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The grief and the guilt",
+  "What is real in you",
+  "More than a mother"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "loving and grieving",
+ "bridge": "What you call missing the self you were, the texts call grief for a bond that was real, and it is not the same as not loving the one you have.",
+ "week_thesis": "Seven days from feeling like a bad mother to understanding that the grief is love with nowhere to go, and that you are allowed to hold both.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the love and the grief together, and the guilt, without judgement.",
+  "diagnose": "You see that the grief is real and the guilt is added on top. They are not the same thing.",
+  "steady": "You hold that what is real in you cannot be lost, and your love is not less for the grief.",
+  "act": "You try letting the grief have its place, speaking it to one safe person, and doing one small thing that is just yours.",
+  "story": "A mother who mourned the life she had lost shows you that love and grief can live in the same heart."
+ },
+ "insight": "You are not a bad mother. You are a person who is grieving a self that is still real to you, and that grief has nowhere to go.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "baby is four months old",
+  "feels like a bad mother for thinking this"
+ ],
+ "age": "25_34",
+ "stages": [
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "mechanism:grief_without_death",
+  "diagnose:diagnose_not_causal"
+ ]
+}

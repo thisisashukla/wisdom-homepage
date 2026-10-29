@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.6,
+ "core_struggle": "Grieving two friends who died this year, he lies awake at night afraid of death and wants to be ready for what comes after.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "fear_death",
+   "weight": 1.46,
+   "source": "note"
+  },
+  {
+   "id": "grief_general",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.55,
+   "source": "profile"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.393,
+   "source": "note"
+  }
+ ],
+ "mirror": "Two friends gone this year, and at night the question is not if but when.",
+ "queries": {
+  "hook": "The grief for friends who have left the world and the fear at night that you will soon follow, and the wish to be ready for what comes after.",
+  "diagnose": "Grief is love with nowhere to go when the body is gone; fear grows from imagining the future and from forgetting that what is real in us cannot be lost.",
+  "steady": "What is real in you cannot be cut by the body, cannot be burned by fire, cannot be wetted by water; it is the one thing that does not pass.",
+  "act": "Turn your mind to what does not pass; let the grief be love, and let the fear be the mind running after what it cannot hold.",
+  "story": "A king who lost everyone he loved and stood at the edge of the world, asking what does not die, and was told what does not die is the."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Missing them",
+  "Love that holds on",
+  "Love that doesn't end"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and afraid of dying",
+ "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+ "week_thesis": "Seven days from grieving and afraid at night to holding that what is real in you cannot be lost.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend"
+ ],
+ "week_beats": {
+  "hook": "You recognise the grief for your friends and the fear at night, named without judgement.",
+  "diagnose": "You see that grief is love with nowhere to go, and fear is the mind running after what it cannot hold.",
+  "steady": "You hold that what is real in you cannot be cut or burned or wetted. It is the one thing that does not pass.",
+  "act": "You try turning your mind to what does not pass, and letting the grief be love.",
+  "story": "A king who lost everyone he loved and stood at the edge of the world shows you what does not die."
+ },
+ "insight": "You are grieving and afraid at night because what you loved has left the world, and you are afraid you will soon follow.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "is elderly",
+  "two friends died this year",
+  "thinks about death at night",
+  "wants to be ready, not afraid of what comes after"
+ ],
+ "age": "55p",
+ "stages": [
+  "retired"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess"
+ ]
+}

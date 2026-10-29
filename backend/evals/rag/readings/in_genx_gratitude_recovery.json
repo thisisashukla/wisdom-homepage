@@ -1,0 +1,101 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.6,
+ "core_struggle": "His wife returned from three weeks in the ICU, and he wants to sit with the gratitude without letting it slip away.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "illness_family",
+   "weight": 1.643,
+   "source": "note"
+  },
+  {
+   "id": "gratitude",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "no_meaning",
+   "weight": 0.59,
+   "source": "note"
+  },
+  {
+   "id": "fear_death",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.436,
+   "source": "note"
+  }
+ ],
+ "mirror": "Your wife is home, and you are sitting with a gratitude that has no words.",
+ "queries": {
+  "hook": "The silence of a man who has just watched death come close, and the gratitude that has no words to hold it.",
+  "diagnose": "When we have seen what can be lost, the heart holds on to gratitude like a rope; but the fear of losing it can turn the rope into a knot that tightens.",
+  "steady": "What is real in us cannot be taken away by the body; the love you are sitting with is already beyond the hospital room.",
+  "act": "Sit with the gratitude without trying to name it; speak the true thing to her, even if it is only that you are here, and let this moment be enough.",
+  "story": "A man whose wife was taken and returned, who sat with the silence of it and learned that love is not the same as possession."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The silence of the ICU",
+  "What the heart holds too tight",
+  "The love that outlasts the body"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "overwhelmed with gratitude and fear of forgetting",
+ "bridge": "The gratitude you cannot name is what the Upanishads call the truth that does not pass, and the fear of losing it is what makes the heart hold it tight.",
+ "week_thesis": "Seven days from the silence of the ICU to the words that can hold what happened, without letting the fear of loss take the gratitude.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "partner",
+  "work",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the silence and the gratitude, named without being rushed to name it.",
+  "diagnose": "You see that the fear of losing it is what makes the heart hold on too tight.",
+  "steady": "You hold that what is real in you cannot be taken away by the body.",
+  "act": "You try sitting with the gratitude without naming it, and saying the true thing to her.",
+  "story": "A man whose wife was taken and returned shows you how love can survive the silence of the ICU."
+ },
+ "insight": "You have no words because the moment is too full. What you are holding is the gratitude of someone who has seen death close up and come back.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "wife home from ICU after three weeks",
+  "does not have words",
+  "wants to sit with gratitude and not forget it"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "mechanism:grief_without_death"
+ ]
+}

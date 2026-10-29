@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { getAllChapters, getAllTopics, getAllVerseRefs, chapterUrl, verseUrl, topicUrl } from '@/lib/gita'
 import { GITA_FOR } from '@/lib/gitaFor'
+import { THEME_SLUGS, THEME_PLANS_PUBLISHED, plansForVerse } from '@/lib/themePlans'
 
 const BASE = 'https://wisdomquotes.in'
 
@@ -92,8 +93,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/read-gita-in-18-days`, lastModified: new Date('2026-10-25'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti/reading-plan`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti/which-chapter-to-read`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
-    { url: `${BASE}/gita-for`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly', priority: 0.85 },
-    ...GITA_FOR.map((p) => ({ url: `${BASE}/gita-for/${p.slug}`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly' as const, priority: 0.8 })),
+    { url: `${BASE}/reading-plans`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE}/gita-for`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'monthly', priority: 0.85 },
+    ...GITA_FOR.map((p) => {
+      const plan = THEME_SLUGS.includes(p.slug)
+      return { url: `${BASE}/gita-for/${p.slug}`, lastModified: new Date(plan ? THEME_PLANS_PUBLISHED : '2026-10-19'), changeFrequency: 'monthly' as const, priority: plan ? 0.9 : 0.8 }
+    }),
+    ...THEME_SLUGS.filter((slug) => !GITA_FOR.some((p) => p.slug === slug)).map((slug) => ({
+      url: `${BASE}/gita-for/${slug}`,
+      lastModified: new Date(THEME_PLANS_PUBLISHED),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    })),
     { url: `${BASE}/blogs`, lastModified: CORPUS_UPDATED, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/about`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/methodology`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
@@ -169,10 +180,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const versePages: MetadataRoute.Sitemap = refs.flatMap((r) => {
     const en = verseUrl(r.chapter, r.verse, 'en')
     const hi = verseUrl(r.chapter, r.verse, 'hi')
+    // Verses used in a 7-day plan now link to it, so their English page changed on the plans' launch day.
+    const inPlan = plansForVerse(r.chapter, r.verse).length > 0
     return [
       {
         url: `${BASE}${en}`,
-        lastModified: CORPUS_UPDATED,
+        lastModified: inPlan ? new Date(THEME_PLANS_PUBLISHED) : CORPUS_UPDATED,
         changeFrequency: 'yearly',
         priority: 0.7,
         alternates: langAlts(en, hi),

@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.9,
+ "core_struggle": "Has quit a job and gone all in on a brand, feeling more alive than ever, and wants to keep that fire when the first hard month arrives.",
+ "mechanism": "resolve_begin",
+ "secondary_mechanism": "attachment_to_results",
+ "situations": [
+  {
+   "id": "side_project",
+   "weight": 1.5,
+   "source": "note"
+  },
+  {
+   "id": "discipline",
+   "weight": 1.05,
+   "source": "note"
+  },
+  {
+   "id": "change_life",
+   "weight": 0.663,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "quit_or_stay",
+   "weight": 0.45,
+   "source": "note"
+  }
+ ],
+ "mirror": "You quit the job, the brand is yours alone, and for the first time in a while you feel awake.",
+ "queries": {
+  "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+  "diagnose": "Resolve fades when the mind runs ahead to the feeling or looks sideways at the prize; it holds when the work itself is the reward.",
+  "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+  "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+  "story": "A young builder who left security to build something of their own, faced the first dry month, and kept going without the feeling."
+ },
+ "query_sources": {
+  "hook": "template",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Your turn to begin",
+  "What tests a resolve",
+  "The one who acts"
+ ],
+ "stance": "aspiration",
+ "gender": null,
+ "emotion": "alive and afraid of losing it",
+ "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+ "week_thesis": "The fire that feels alive now becomes, over seven days, a resolve that can survive the first hard month.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the fire as yours, not borrowed from the moment.",
+  "diagnose": "You see that the feeling will fade, and that is when resolve must hold.",
+  "story": "A young builder who left security and faced the first dry month shows you how resolve survives without the feeling."
+ },
+ "insight": "You feel more alive than ever because the work is yours. What will test you is the month when the feeling fades and only the work remains.",
+ "seat": "",
+ "life_context": "A student or young worker under twenty-five with no income now; they quit a job last week to build a brand, and for the first time in a long while they feel fully alive.",
+ "details": [
+  "quit their job last week",
+  "is all in on a brand",
+  "has no income yet",
+  "feels more alive than ever"
+ ],
+ "age": "u25",
+ "stages": [
+  "own_thing"
+ ],
+ "version": 1,
+ "flags": [
+  "hook:hook_laments_aspiration",
+  "bridge:copied_example",
+  "seat:missing"
+ ]
+}

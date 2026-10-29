@@ -1,0 +1,728 @@
+{
+ "situation": {
+  "id": "uk_millennial_people_pleaser",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "I said yes to covering a colleague's shift again. third time this month. I can't say no to anyone and then I resent them quietly.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "UK (Leeds)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "people_pleasing"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "resentful and trapped",
+   "bridge": "The yes you cannot stop saying is what the Gita calls attachment to results you cannot control: you say yes to keep the peace, and the peace never comes.",
+   "week_thesis": "By the end of the week the yes you cannot stop saying has a name, and you try one no that is yours.",
+   "week_beats": {
+    "hook": "You recognise the quiet resentment and the yes that feeds it, named without judgement.",
+    "diagnose": "You see that it is the need for approval, not the colleagues, that keeps you saying yes.",
+    "steady": "You hold that your time is yours to give or keep, and that approval is not something you must earn.",
+    "act": "You try saying no to one request, with a reason that is yours, and you let the discomfort pass.",
+    "story": "A man who could not say no to his own family shows you what one no can begin."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "They cannot say no to anyone and then quietly resent them for it.",
+   "mirror": "You say yes, and then the quiet resentment sits in you like a stone.",
+   "insight": "You say yes to keep the peace, and the peace never comes. The resentment is not at them. It is at the part of you that cannot say no.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "people_pleasing",
+     "label": "I can't say no to people",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 1.098,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 0.37,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet resentment that builds after every yes you cannot stop saying, and the exhaustion of being the one everyone counts on. I can't say no to people.",
+    "diagnose": "When your worth depends on others' approval, every word of blame shakes you; craving approval keeps the mind unsteady, and the mind says yes to keep the peace.",
+    "steady": "Praise and blame come and go; what is yours cannot be taken, and your time is yours to give or keep.",
+    "act": "Practise saying no with a reason that is yours: I have a prior commitment, I need the evening, I will not be able to do it this time. Let the discomfort pass.",
+    "story": "A man who could not say no to his own family, and the cost of it, shows you what a single no can begin."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The yes you cannot stop",
+    "What approval costs",
+    "The one who says no"
+   ],
+   "seat": "a person who cannot say no and then carries the resentment alone",
+   "life_context": "In their late twenties or early thirties and working; they keep covering shifts for colleagues, and the cost is a quiet resentment that builds because they cannot refuse.",
+   "details": [
+    "covered a colleague's shift for the third time this month",
+    "cannot say no to anyone",
+    "resents them quietly after agreeing"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_sim:mean=0.58,max=0.68",
+    "dropped:fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.7.27",
+     "ref": "Bhagavad Gita 7.27",
+     "ref_iast": "Bhagavad Gītā 7.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on those who miss him and those who know him.",
+     "sanskrit": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत । सर्वभूतानि संमोहं सर्गे यान्ति परन्तप ॥",
+     "line": "From the pull of want and push of dislike comes the confusion that traps every being.",
+     "translation": "Through the delusion of the pairs of opposites, arising from desire and aversion, Bharata, all beings fall into confusion at birth, scorcher of enemies.",
+     "words": [
+      {
+       "sa": "इच्छा",
+       "en": "desire"
+      },
+      {
+       "sa": "द्वेष",
+       "en": "aversion"
+      },
+      {
+       "sa": "समुत्थेन",
+       "en": "arising"
+      },
+      {
+       "sa": "द्वन्द्व",
+       "en": "conflict"
+      },
+      {
+       "sa": "मोहेन",
+       "en": "confusion"
+      },
+      {
+       "sa": "भारत",
+       "en": "O Bharata"
+      },
+      {
+       "sa": "सर्व",
+       "en": "all"
+      },
+      {
+       "sa": "भूतानि",
+       "en": "beings"
+      },
+      {
+       "sa": "संमोहं",
+       "en": "into delusion"
+      },
+      {
+       "sa": "सर्गे",
+       "en": "in creation"
+      },
+      {
+       "sa": "यान्ति",
+       "en": "go"
+      },
+      {
+       "sa": "परन्तप",
+       "en": "O scorcher of foes"
+      }
+     ],
+     "why": "Pull and push of like and dislike are what confuse us.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p07.5",
+      "title": "Those who miss the Lord and those who know him",
+      "summary": "The deluded see only the outer form; desire and aversion confuse all beings. Those freed from confusion come to know the divine fully.",
+      "story_hook": "",
+      "lesson": "Pull and push of like and dislike are what confuse us."
+     },
+     "score": 2.0727,
+     "beat": "hook",
+     "role_fit": 0.165,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, explaining how beings become trapped by the world. He says that desire and aversion, the pull of what we want and the push of what we dislike, create a delusion of opposites. This confusion binds every being from the very start, making us act against our own good.",
+     "for_you": "You covered a colleague's shift for the third time this month. You said yes because you cannot refuse, but the quiet resentment that follows shows the push and pull at work. The peace you hoped for never arrived because you acted from a habit of wanting approval.",
+     "try_today": "Notice the moment you feel the pull to say yes.",
+     "scene_line": "You stand where the yes and the resentment meet, trapped by the push and pull of approval.",
+     "asks": [
+      "How do I see the pull to say yes as a reflex?",
+      "What does the push of resentment want from me?",
+      "Can I let the confusion of opposites clear without acting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.61",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 61",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own heart",
+     "setting": "Opening verse of 'Advice to the Mind'.",
+     "sanskrit": "परेषां चेतांसि प्रतिदिवसमाराध्य बहुधा प्रसादं किं नेतुं विशसि हृदय क्लेशकलितम् । प्रसन्ने त्वय्यन्तः स्वयमुदितचिन्तामणिगणो विविक्तः संकल्पः किमभिलषितं पुष्यति न ते ॥",
+     "line": "Why exhaust yourself daily winning others' approval? Settle inside, and your own clarity grants every wish.",
+     "translation": "O heart, why do you enter into weariness, day after day trying to please the minds of others in so many ways, to win their favour? When you are at peace within, your own clear resolve rises by itself like a cluster of wish-granting gems: what wish of yours would it not fulfil?",
+     "words": [],
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "people_pleasing",
+       "label": "I can't say no to people"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 2.9283,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bhartrihari speaks to his own mind. He asks why it wears itself out, day after day, trying to win the favour of others. When you are at peace within, your own clear resolve rises by itself, like a cluster of wish-granting gems. What wish of yours would it not fulfil?",
+     "for_you": "The quiet resentment you carry after covering that third shift is not about the work. It is about the need to be approved of. If you settle inside, you will see that your own clarity is enough, and the wish to be liked will lose its grip.",
+     "try_today": "Notice one moment today when you say yes just to be liked.",
+     "scene_line": "You are exhausting yourself daily to win the favour of minds that do not belong to you.",
+     "asks": [
+      "How does my need for approval trap me in saying yes?",
+      "What wish of mine would my own clarity fulfil?",
+      "Why do I rehearse outcomes to win the favour of others?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.7416,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": null,
+     "for_you": "Praise and blame are only words that come and go; your worth rests on your own conduct, not on their opinion.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.12.19",
+     "ref": "Bhagavad Gita 12.19",
+     "ref_iast": "Bhagavad Gītā 12.19",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna, describing the qualities of the person dear to God.",
+     "sanskrit": "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येनकेनचित् । अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः ॥",
+     "line": "Praise and blame weigh the same. Quiet, content with what comes, rooted in steadiness, not status.",
+     "translation": "to whom blame and praise are equal, who is silent, content with whatever comes, without a fixed home, steady in mind and full of devotion, that person is dear to me.",
+     "words": [
+      {
+       "sa": "तुल्यनिन्दास्तुतिर्मौनी",
+       "en": "equal in blame and praise, silent"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "येनकेनचित्",
+       "en": "by whatever"
+      },
+      {
+       "sa": "अनिकेतः",
+       "en": "homeless"
+      },
+      {
+       "sa": "स्थिरमतिर्भक्ितमान्",
+       "en": "steady-minded, devoted"
+      },
+      {
+       "sa": "मे",
+       "en": "to me"
+      },
+      {
+       "sa": "प्रियो",
+       "en": "dear"
+      },
+      {
+       "sa": "नरः",
+       "en": "person"
+      }
+     ],
+     "why": "Kindness without hatred, steadiness in praise and blame: that's what's loved.",
+     "misuse": "Not 'never ask for credit'. You can advocate for yourself without letting praise or blame define you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p12.2",
+      "title": "The marks of one dear to God",
+      "summary": "Krishna lists the marks of one dear to him: no hatred, friendly and compassionate, forgiving, content, disturbing no one and disturbed by no one, the same in praise and blame.",
+      "story_hook": "",
+      "lesson": "Kindness without hatred, steadiness in praise and blame: that's what's loved."
+     },
+     "score": 3.7462,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Krishna speaks to Arjuna about the person dear to God. He says this person does not hate, is content, and does not disturb or get disturbed. Praise and blame weigh the same to them. They are steady in mind, without a fixed home, and full of devotion.",
+     "for_you": "The yes you keep saying is not peace. It is a way to earn approval you already have. Your time is yours to give or keep. Settle inside, and your own clarity grants every wish. The steady don't step off the right path.",
+     "try_today": "Notice the next time you say yes and feel the tightness in your chest.",
+     "scene_line": "You are the steady one who does not disturb or get disturbed, even when you say yes again.",
+     "asks": [
+      "How can I stop letting praise and blame weigh me down?",
+      "What does it mean to be steady when I am not?",
+      "Where does my steadiness live if not in their praise?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.2.11.3",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 11.3",
+     "family": "vr",
+     "speaker": "Kaikeyi",
+     "listener": "Dasharatha",
+     "setting": "The old king begs his favourite queen to say why she is upset; she sets her trap.",
+     "sanskrit": "प्रतिज्ञा प्रतिजानीष्व यदि त्वं कर्तुमिच्छसि। अथ ते व्याहरिष्यामि यथाभिप्रार्थितं मया॥",
+     "line": "'Promise first, then I'll tell you what I want.' Never agree before you know the ask.",
+     "translation": "Make me a promise first, if you are willing to do it. Then I will tell you what I want.",
+     "words": [],
+     "why": "Envy grows when fed; never promise before you know what you are being asked.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "people_pleasing",
+       "label": "I can't say no to people"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kaikeyi_boons",
+      "title": "Kaikeyi's boons and the king's blind promise",
+      "summary": "The maid Manthara works on Queen Kaikeyi's insecurity until she is consumed by fear for her son's future. Kaikeyi makes the doting old king promise before she names her wish, then demands Ram's exile and Bharata's coronation. Bound by his word, Dasharatha pleads, rages and collapses.",
+      "story_hook": "The old king would have promised her anything to stop her crying, and that was exactly the problem.",
+      "lesson": "Envy grows when fed; never promise before you know what you are being asked."
+     },
+     "score": 3.0331,
+     "beat": "act",
+     "role_fit": 0.626,
+     "meaning": "Dasharatha begs his wife Kaikeyi to tell him why she is so upset. Kaikeyi holds the power. She will not name her demand until she has a promise from him. She makes him promise first, then she tells him she wants Ram exiled for fourteen years and Bharata made king. The old king is bound by his word, and the kingdom falls apart. The verse warns that if you promise before you know the ask, you give your enemy the rope to hang you.",
+     "for_you": "You keep saying yes to shifts you do not want, and you build a quiet resentment. Kaikeyi shows how a demand grows when it is fed. You are giving your yes before you know the cost. The next time a request comes, ask what it is before you agree.",
+     "try_today": "Before you say yes to the next request, ask what it is.",
+     "scene_line": "You are the king, bound to a promise before the ask is named.",
+     "asks": [
+      "What is the ask before I say yes?",
+      "How do I say I need to know the ask first?",
+      "What if the ask is a shift I do not want?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.1883,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him that his right extends only to the action itself, never to the fruit of that action. He says do not let the outcome be your motive, and do not cling to inaction out of fear. The teaching is to act fully, but to release your claim on the result. This means you can cover the shift and leave the resentment behind, because the work was done and the result was never yours to hold.",
+     "for_you": "You said yes to the shift again, and now you carry the weight of it. The work was done, but the fruit of resentment was never yours to hold. The quiet anger is not at the colleague. It is at the yes you could not stop.",
+     "try_today": "When you agree to the next request, name your own reason for saying yes out loud before you do it.",
+     "scene_line": "You stand at the edge of the shift you agreed to, holding a result that was never yours.",
+     "asks": [
+      "How do I know when the work is done and the result is not mine?",
+      "Can I still care about the outcome without letting it own me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ocean",
+     "title": "Three days at the ocean: humble first, firm after",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Vibhishan",
+      "Lakshman",
+      "the Ocean"
+     ],
+     "story_hook": "Ram sat on the shore and asked the ocean, politely, to move.",
+     "summary": "On Vibhishan's advice, Ram first asks the ocean politely to let his army cross, and waits three days. When nothing changes, he takes up his bow, observing that counsel to the unwilling is like seed on barren soil. The ocean appears, apologises, and shows him how to build a bridge.",
+     "lesson": "Always ask humbly first. But don't let humility be taken for weakness.",
+     "matched": [
+      {
+       "id": "people_pleasing",
+       "label": "I can't say no to people"
+      },
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.48.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 48",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ram",
+      "setting": "At the shore, Ram asks how to cross the ocean, and Vibhishan advises.",
+      "sanskrit": "कह लंकेस सुनहु रघुनायक। कोटि सिंधु सोषक तव सायक॥ जद्यपि तदपि नीति असि गाई। बिनय करिअ सागर सन जाई ॥",
+      "line": "Even when you have the power to force it, ask politely first.",
+      "translation": "Raghunath, though a single arrow of yours could dry up countless oceans, good policy says: first go and ask the ocean politely.",
+      "words": [
+       {
+        "sa": "कह",
+        "en": "said"
+       },
+       {
+        "sa": "लंकेस",
+        "en": "lord of Lanka, Vibhishana"
+       },
+       {
+        "sa": "सुनहु",
+        "en": "listen"
+       },
+       {
+        "sa": "रघुनायक",
+        "en": "Lord of the Raghu clan"
+       },
+       {
+        "sa": "कोटि",
+        "en": "crores, millions"
+       },
+       {
+        "sa": "सिंधु",
+        "en": "oceans"
+       },
+       {
+        "sa": "सोषक",
+        "en": "drying up"
+       },
+       {
+        "sa": "तव",
+        "en": "your"
+       },
+       {
+        "sa": "सायक",
+        "en": "arrow) // जद्यपि (although"
+       },
+       {
+        "sa": "तदपि",
+        "en": "even so"
+       },
+       {
+        "sa": "नीति",
+        "en": "right conduct"
+       },
+       {
+        "sa": "असि",
+        "en": "is"
+       },
+       {
+        "sa": "गाई",
+        "en": "said"
+       },
+       {
+        "sa": "बिनय",
+        "en": "humble request"
+       },
+       {
+        "sa": "करिअ",
+        "en": "should be done"
+       },
+       {
+        "sa": "सागर",
+        "en": "sea"
+       },
+       {
+        "sa": "सन",
+        "en": "with"
+       },
+       {
+        "sa": "जाई",
+        "en": "going"
+       }
+      ],
+      "why": "Always ask humbly first. But don't let humility be taken for weakness.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "boundaries_family",
+        "label": "I need to set boundaries with family"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ocean",
+       "title": "Three days at the ocean: humble first, firm after",
+       "summary": "On Vibhishan's advice, Ram first asks the ocean politely to let his army cross, and waits three days. When nothing changes, he takes up his bow, observing that counsel to the unwilling is like seed on barren soil. The ocean appears, apologises, and shows him how to build a bridge.",
+       "story_hook": "Ram sat on the shore and asked the ocean, politely, to move.",
+       "lesson": "Always ask humbly first. But don't let humility be taken for weakness."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram asked the ocean, politely, to move, and waited three days",
+     "teaser": "Ram asked the ocean, politely, to move, and waited three days",
+     "for_you": "You have already asked three times this month. You are waiting for the ocean to part on its own. The next step is not to build the bridge, but to pick up your bow and state your boundary. A quiet no is not violence.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The yes you cannot stop",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 22323,
+   "total": 22327
+  },
+  "_ms": 22330
+ }
+}

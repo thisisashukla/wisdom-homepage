@@ -1,0 +1,744 @@
+{
+ "situation": {
+  "id": "in_millennial_marriage_silence",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3
+  },
+  "note": "my husband and I only talk about kids and bills now. we sleep in the same bed like two colleagues. I don't even know when it happened.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Gurgaon)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "marriage"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and distant",
+   "bridge": "The marriage you describe as colleagues is what the texts call a bond without the heart. The loneliness is real, and it is not yours to carry alone.",
+   "week_thesis": "Seven days from feeling the loneliness of the distance to naming it and finding one moment that is not about children or bills.",
+   "week_beats": {
+    "hook": "You recognise the loneliness of the distance, named without blame.",
+    "diagnose": "You see that the bond was real, and real things can be found again.",
+    "steady": "You hold that the distance is real, and it is not yours to carry alone.",
+    "act": "You try naming the feeling to your husband, and find one moment that is not about children or bills.",
+    "story": "A couple who shared a bed and a life shows you that the distance was real and the words to name it can be found."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "The marriage has become a practical arrangement of bills and children, and she feels the distance without knowing when it grew.",
+   "mirror": "You share a bed and a life, and the one thing you miss is the one you don't even know how to name.",
+   "insight": "The marriage has become a practical arrangement, and you are the only one who feels the loneliness of it. The distance is real, and it is not yours to carry alone.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 1.786,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.825,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "sibling_rift",
+     "label": "I've fallen out with my sibling",
+     "weight": 0.416,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Sharing a bed and a life with someone who feels like a colleague, and the loneliness of not knowing when the connection left.",
+    "diagnose": "When a bond is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The bond was real, and real things can be found again; you are not alone in feeling the distance, and it is not yours to carry alone.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A couple who shared a bed and a life, and one of them felt the distance grow, who found the words to name it and the courage to begin again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The distance is real",
+    "What the bond was",
+    "The one who names it"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "husband and wife only talk about kids and bills",
+    "sleep in same bed like colleagues",
+    "does not know when distance grew",
+    "no intimacy or connection"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:44=0.0,126=0.0,80=0.6,61=0.3,31=0.0,29=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.62",
+    "dropped:cliche=2,fallback_line=1,repeat=1,scene_line_verdict=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.44",
+     "ref": "Bhagavad Gita 11.44",
+     "ref_iast": "Bhagavad Gītā 11.44",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shaken by the cosmic vision, asks Krishna to forgive his years of casual familiarity.",
+     "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥",
+     "line": "Bear with me as a father bears with a son, a friend with a friend, a lover with the beloved.",
+     "translation": "So, bowing and prostrating my body, I ask your grace, adorable Lord. As a father with his son, a friend with his friend, a lover with the beloved, please bear with me.",
+     "words": [
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "प्रणम्य",
+       "en": "bowing down"
+      },
+      {
+       "sa": "प्रणिधाय",
+       "en": "placing down"
+      },
+      {
+       "sa": "कायम्",
+       "en": "the body"
+      },
+      {
+       "sa": "प्रसादये",
+       "en": "I seek to please"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "You"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "ईशम्",
+       "en": "the Lord"
+      },
+      {
+       "sa": "ईड्यम्",
+       "en": "worthy of praise"
+      },
+      {
+       "sa": "पितेव",
+       "en": "like a father"
+      },
+      {
+       "sa": "पुत्रस्य",
+       "en": "of a son"
+      },
+      {
+       "sa": "सखा इव",
+       "en": "like a friend"
+      },
+      {
+       "sa": "सख्युः",
+       "en": "of a friend"
+      },
+      {
+       "sa": "प्रियः",
+       "en": "a beloved"
+      },
+      {
+       "sa": "प्रियायाः",
+       "en": "of a beloved"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "You should"
+      },
+      {
+       "sa": "देव",
+       "en": "O radiant one"
+      }
+     ],
+     "why": "We take those closest to us for granted; it is never too late to say sorry.",
+     "misuse": "Asking for forgiveness is not demanding it; the other person still decides.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "marriage_conflict",
+       "label": "My partner and I keep fighting"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p11.6",
+      "title": "Terrified, Arjuna prays to see the gentle four-armed form",
+      "summary": "Trembling, Arjuna praises Krishna, asks pardon for having treated him as just a friend, begs him to bear with him as a father, friend or lover would, and asks to see his familiar form.",
+      "story_hook": "Arjuna remembered every joke, every careless 'Hey, Krishna!' across years of friendship, and his voice broke.",
+      "lesson": "We take those closest to us for granted; it is never too late to say sorry."
+     },
+     "score": 1.4009,
+     "beat": "hook",
+     "role_fit": 0.78,
+     "meaning": "Arjuna has just seen the vast, terrifying form of the divine. He is trembling. He tells Krishna that he has treated him as a casual friend and asks him to forgive him, to bear with him like a father with a son, a friend with a friend, or a lover with a beloved. It is a plea to be met with patience after a long time of taking someone for granted.",
+     "for_you": "The distance in your marriage grew while you were busy with bills and children. You feel the loneliness of it now. It is not too late to ask for patience, to admit that the bond has become practical rather than personal. You do not need to carry this silence alone.",
+     "try_today": "Notice one moment today where your partner does something small for the children without being asked.",
+     "scene_line": "You are trembling, asking to be met with the patience of a father, a friend, or a lover.",
+     "asks": [
+      "How do I admit the distance without starting a fight?",
+      "Can I find the words to ask for a gentler tone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.8.1",
+     "ref": "Ashtavakra Gita 8.1",
+     "ref_iast": "Aṣṭāvakra Gītā 8.1",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra's shortest definition of bondage and freedom, given to Janaka.",
+     "sanskrit": "तदा बन्धो यदा चित्तं किञ्चिद् वाञ्छति शोचति । किञ्चिन् मुञ्चति गृण्हाति किञ्चिद् दृष्यति कुप्यति ॥ तदा मुक्तिर्यदा चित्तं न वाञ्छति न शोचति । न मुञ्चति न गृण्हाति न हृष्यति न कुप्यति ॥",
+     "line": "Bondage is a mind that wants, grieves, grabs and rages. Freedom is a mind that stops.",
+     "translation": "It is bondage when the mind wants something, grieves over something, drops or grabs something, is pleased or angered by something. It is freedom when the mind does not want, grieve, drop, grab, delight or rage.",
+     "words": [
+      {
+       "sa": "तदा",
+       "en": "then"
+      },
+      {
+       "sa": "बन्धो",
+       "en": "bondage"
+      },
+      {
+       "sa": "यदा",
+       "en": "when"
+      },
+      {
+       "sa": "चित्तं",
+       "en": "mind"
+      },
+      {
+       "sa": "किञ्चिद्",
+       "en": "something"
+      },
+      {
+       "sa": "वाञ्छति",
+       "en": "desires"
+      },
+      {
+       "sa": "शोचति",
+       "en": "grieves"
+      },
+      {
+       "sa": "किञ्चिन्",
+       "en": "something"
+      },
+      {
+       "sa": "मुञ्चति",
+       "en": "lets go"
+      },
+      {
+       "sa": "गृण्हाति",
+       "en": "takes"
+      },
+      {
+       "sa": "किञ्चिद्",
+       "en": "something"
+      },
+      {
+       "sa": "दृष्यति",
+       "en": "sees"
+      },
+      {
+       "sa": "कुप्यति",
+       "en": "gets angry"
+      }
+     ],
+     "why": "Freedom is not elsewhere; it is a mind that stops grabbing and pushing away.",
+     "misuse": "Not a call to stop feeling; it is about not being dragged by every feeling.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.bondage_freedom",
+      "title": "What bondage and freedom really are",
+      "summary": "In four verses Ashtavakra defines bondage as a mind that wants, grieves, grabs, rejects, delights and rages, and freedom as a mind that stops doing so. Where 'I' takes over, there is bondage.",
+      "story_hook": "",
+      "lesson": "Freedom is not elsewhere; it is a mind that stops grabbing and pushing away."
+     },
+     "score": 2.4405,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Ashtavakra speaks to Janaka, who is listening with his mind already made up to leave everything behind. Ashtavakra stops him. He says that bondage is not chains or a place. It is a mind that wants, grieves, grabs and rages. It is a mind that pushes and pulls. Freedom is a mind that stops. It does not mean the feelings vanish. It means the mind does not let itself be dragged by them. The mind rests in what is, without grasping or running away.",
+     "for_you": "The marriage you describe as colleagues was once a bond with a heart. That real thing can be found again.",
+     "try_today": "Notice one moment today when the mind grabs at the distance or the bills without your permission.",
+     "scene_line": null,
+     "asks": [
+      "How does the mind grab the distance without my knowing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "shambhu_gita.7.80",
+     "ref": "Shambhu Gita 7.80",
+     "ref_iast": "Śambhu Gītā 7.80",
+     "family": "gitas",
+     "speaker": "Shiva",
+     "listener": "The ancestors (pitris)",
+     "setting": "Shiva lists where he can be found among the things people honour.",
+     "sanskrit": "प्रेम्णा स्नेहेन भक्तया च श्रद्धयाऽपि प्रपूरितम् । स्पर्शेषु तु नमस्येष्वालिङ्गनं पितृपुङ्गवाः ! ॥",
+     "line": "Among all reverent touches, I am the embrace, full of love, warmth, devotion and trust.",
+     "translation": "Among the touches worthy of reverence, O best of ancestors, I am the embrace filled with love, affection, devotion and faith.",
+     "words": [
+      {
+       "sa": "प्रेम्णा",
+       "en": "with love"
+      },
+      {
+       "sa": "स्नेहेन",
+       "en": "with affection"
+      },
+      {
+       "sa": "भक्तया",
+       "en": "with devotion"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "श्रद्धयाऽपि",
+       "en": "also with trust"
+      },
+      {
+       "sa": "प्रपूरितम्",
+       "en": "filled"
+      },
+      {
+       "sa": "स्पर्शेषु",
+       "en": "in touches"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "नमस्येषु",
+       "en": "in greetings"
+      },
+      {
+       "sa": "आलिङ्गनं",
+       "en": "embracing"
+      },
+      {
+       "sa": "पितृपुङ्गवाः",
+       "en": "noble fathers"
+      }
+     ],
+     "why": "You can hand over the outcome and still keep working, with devotion woven through.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "shambhu_gita.p.pitris_hymn",
+      "title": "The ancestors' hymn to Shiva and his easy way",
+      "summary": "Bewildered by Shiva's limitless form, the ancestors praise him and finally hand him the outcome: do whatever is truly good for us. Shiva tells them their work needs a mind joined to him, then gives an easy way: see him everywhere, even in a loving embrace, so devotion never lapses amid hard work.",
+      "story_hook": "",
+      "lesson": "You can hand over the outcome and still keep working, with devotion woven through."
+     },
+     "score": 2.8277,
+     "beat": "steady",
+     "role_fit": 0.585,
+     "meaning": null,
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+     "try_today": "Notice one moment of physical warmth with your children today.",
+     "scene_line": "You stand at the center of a marriage that has become a practical arrangement, seeking a place to rest.",
+     "asks": [
+      "Where can I find warmth in my day today?",
+      "How do I let go of the outcome in my marriage?",
+      "What does devotion look like in my daily work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.491,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim speaks to the reader of a love so close it needs no news. He says that to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling? The verse proposes that the deepest connection does not run on updates, but on a shared space where feelings are simply known. It is not a call to confess, but a recognition that some bonds are already full.",
+     "for_you": "You sit in the quiet of the same bed and feel the weight of a silence that has no name. You do not need to explain the ache to the one who shares your life.",
+     "try_today": "Notice one small thing they do without needing an explanation.",
+     "scene_line": "You are in the same room, but the heart is a room with the door closed.",
+     "asks": [
+      "How do I live with a knowing that stays silent?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.16.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 16.8",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the fourth gatekeeper: good company (satsanga).",
+     "sanskrit": "अपि कष्टतरां प्राप्तैर्दशां विवशतां गतैः । मनागपि न संत्याज्या मानवैः साधुसंगतिः ॥",
+     "line": "Even at your lowest and most helpless, don't let go of good company.",
+     "translation": "Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "words": [],
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.6822,
+     "beat": "act",
+     "role_fit": 0.634,
+     "meaning": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others. Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little. He is saying that when you feel lowest and most helpless, you still hold to the company of those who steady the mind.",
+     "for_you": "You have been holding the loneliness of the distance alone. Vasishtha says even in helplessness, you do not let go of good company. This is not about finding a new friend today. It is about letting the calm of good company into the room where you and your partner sleep.",
+     "try_today": "Name the feeling in one sentence to your partner.",
+     "scene_line": "You sit in the quiet room with your partner and let good company begin.",
+     "asks": [
+      "How do I find calm when my partner is not there?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.29",
+     "ref": "Bhagavad Gita 6.29",
+     "ref_iast": "Bhagavad Gītā 6.29",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥",
+     "line": "See yourself in every being and every being in yourself, and you see the same everywhere.",
+     "translation": "One whose self is joined in yoga sees the self in all beings and all beings in the self; he sees the same everywhere.",
+     "words": [
+      {
+       "sa": "सर्वभूतस्थम्",
+       "en": "in all beings"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "the true self"
+      },
+      {
+       "sa": "सर्वभूतानि",
+       "en": "all beings"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the true self"
+      },
+      {
+       "sa": "ईक्षते",
+       "en": "sees"
+      },
+      {
+       "sa": "योगयुक्तात्मा",
+       "en": "the yogi united in yoga"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "समदर्शनः",
+       "en": "with equal vision"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.2494,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Krishna is teaching Arjuna how to sit and breathe when the mind is scattered. He speaks of moderation in food and sleep, and of the mind as a lamp that does not flicker in a windless place. The teaching is that the mind wanders, and the practice is to bring it back, again and again, with gentle persistence. To see the self in every being and every being in the self is the result of this settled attention. It is a mind that stops its own grabbing and returns to what is steady.",
+     "for_you": "You live in a house where the words are about bills and schedules, and you feel the distance without knowing when it grew.",
+     "try_today": "Tell your partner one true thing about the distance between you, and then let the silence hold it.",
+     "scene_line": "You are in your own quiet room, and the lamp of your mind is steady enough to see the room clearly.",
+     "asks": [
+      "How do I name this distance without starting a fight?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_sita_marriage",
+     "title": "Ram and Sita's early marriage",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Sita"
+     ],
+     "story_hook": "Their marriage began as their fathers' arrangement; what happened next was their own.",
+     "summary": "Back in Ayodhya after the wedding, Ram and Sita settle into married life. Valmiki notes that their love, though it began as an arranged match, deepened because each came to know and value the other; she could read his heart without words.",
+     "lesson": "Love deepens by paying attention to who the other person really is.",
+     "matched": [
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      },
+      {
+       "id": "marriage_conflict",
+       "label": "My partner and I keep fighting"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.77.20",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 77.20",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "After the wedding, Valmiki describes Ram and Sita's early married life in Ayodhya.",
+      "sanskrit": "प्रिया तु सीता रामस्य दारा पितृकृता इति॥ गुणाद् रूपगुणाच्चापि प्रीतिर्भूयोऽभिवर्धते। तस्याश्च भर्ता द्विगुणं हृदये परिवर्तते॥",
+      "line": "Love that began by arrangement kept growing because of who each one was.",
+      "translation": "Sita was dear to Ram as the wife his father chose; yet his love kept growing because of who she was, and in her heart he lived twice over.",
+      "words": [],
+      "why": "Love deepens by paying attention to who the other person really is.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "marriage_distance",
+        "label": "My marriage feels distant"
+       },
+       {
+        "id": "marriage_conflict",
+        "label": "My partner and I keep fighting"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_sita_marriage",
+       "title": "Ram and Sita's early marriage",
+       "summary": "Back in Ayodhya after the wedding, Ram and Sita settle into married life. Valmiki notes that their love, though it began as an arranged match, deepened because each came to know and value the other; she could read his heart without words.",
+       "story_hook": "Their marriage began as their fathers' arrangement; what happened next was their own.",
+       "lesson": "Love deepens by paying attention to who the other person really is."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram and Sita's marriage was arranged, and what came after was their own",
+     "teaser": "Ram and Sita's marriage was arranged, and what came after was their own",
+     "for_you": "Ram and Sita began as an arrangement, yet they built something real by seeing who the other was. You feel the distance now without knowing when it grew, but the words to name it are already yours. You are not failing at this.",
+     "asks": [
+      "What is one small thing about them I still notice?",
+      "When did I last feel seen by them?",
+      "What would it mean to choose one moment just for me?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The distance is real",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16981,
+   "total": 16984
+  },
+  "_ms": 16988
+ }
+}

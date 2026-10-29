@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "A man who just became director is fighting the pride that comes with it and snapped at an old teammate, wanting to stay grounded.",
+ "mechanism": "resolve_begin",
+ "secondary_mechanism": "duty_conflict",
+ "situations": [
+  {
+   "id": "success_pride",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "criticism",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "discipline",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "anger_outburst",
+   "weight": 0.413,
+   "source": "note"
+  },
+  {
+   "id": "procrastination",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "retirement",
+   "weight": 0.396,
+   "source": "note"
+  }
+ ],
+ "mirror": "You made director, and the first thing it did was make you snap at the person who helped you get there.",
+ "queries": {
+  "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+  "diagnose": "Pride and the need to be seen as the doer make us fragile; ego takes credit, resents others, and falls hard.",
+  "steady": "The one who does the work without claiming it is the one who is never shaken; your worth is not the title you hold.",
+  "act": "Do your duty without claiming the doership; when pride rises, see the person before you, not the title between you.",
+  "story": "A warrior who won a great victory, was praised for it, and was taught by his teacher that the one who claims the win is the one who falls."
+ },
+ "query_sources": {
+  "hook": "template",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The title and the ego",
+  "Who you are beyond it",
+  "The work without the claim"
+ ],
+ "stance": "aspiration",
+ "gender": null,
+ "emotion": "thrilled and afraid of losing it",
+ "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+ "week_thesis": "The title is new, but the ego that wants credit is old. The week is about doing the work without claiming it, and seeing the person before you.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the thrill and the fear, and the snap at the teammate, named without judgement.",
+  "diagnose": "You see that it is the ego that wants credit, not the title, that makes you snap.",
+  "steady": "You hold that the one who does the work without claiming it is never shaken.",
+  "act": "You try doing the work without claiming it, and seeing the person before you, not the title.",
+  "story": "A warrior who won and was praised shows you what it means to do the work without claiming it."
+ },
+ "insight": "You want to stay grounded. What will test that is the morning you walk into the room and the title is the first thing you see.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "just made director",
+  "snapped at an old teammate",
+  "wants to stay grounded"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "mechanism_off_stance:ego_pride",
+  "hook:hook_laments_aspiration"
+ ]
+}

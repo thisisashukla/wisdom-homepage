@@ -24,6 +24,7 @@ import FeedbackWidget from '@/components/FeedbackWidget'
 import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import { plansForVerse, PHASE_LABEL } from '@/lib/themePlans'
 import VerseNavReveal from '@/components/gita/VerseNavReveal'
 import SanskritText from '@/components/gita/SanskritText'
 import MantraCards from '@/components/gita/MantraCards'
@@ -155,6 +156,7 @@ export default async function VersePage({ params }: { params: Params }) {
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const audio = getVerseAudio(c, v)
   const blogLinks = getBlogLinksForVerse(c, v)
+  const inPlans = plansForVerse(c, v)
 
   // ── V3 enrichment: raw pipeline labels → human copy ──
   const typeLabel = ({
@@ -599,6 +601,29 @@ export default async function VersePage({ params }: { params: Params }) {
               ))}
             </p>
           )}
+        </section>
+      )}
+
+      {/* ── 7-day plans that use this verse ── */}
+      {inPlans.length > 0 && (
+        <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="Reading plans with this verse">
+          <div className="gv-sechead">
+            <span className="gv-sechead-label">Part of a 7-verse reading plan</span>
+          </div>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '10px' }}>
+            {inPlans.map(({ plan, day }) => (
+              <li key={`${plan.slug}-${day.day}`} style={{ fontSize: '15px', lineHeight: 1.6, color: 'var(--text-dim)' }}>
+                <a
+                  href={`/gita-for/${plan.slug}#verse-${day.day}`}
+                  style={{ color: 'var(--gold-light)', fontWeight: 600 }}
+                  data-mp-location={`verse_${c}_${v}_plan_${plan.slug}`}
+                >
+                  Verse {day.day} in the reading plan for {plan.label.toLowerCase()}
+                </a>
+                {' · '}{PHASE_LABEL[day.phase]}: {day.heading}
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

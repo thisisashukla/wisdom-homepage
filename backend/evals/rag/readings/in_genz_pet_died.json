@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "His -year-old dog died yesterday, the house is quiet, and people dismiss the loss as 'just a dog'.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "dignity_denied",
+ "situations": [
+  {
+   "id": "pet_loss",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.359,
+   "source": "note"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "The bowl is still there, and the house is so quiet.",
+ "queries": {
+  "hook": "The silence after someone who was always there, and the loneliness of people who do not see what you lost.",
+  "diagnose": "Grief is love with nowhere to go; the heart aches because the bond was real, and it is made heavier when others cannot see it.",
+  "steady": "What is real in us cannot be taken away; the love that made the house full is still yours, even in its absence.",
+  "act": "Let the grief have its time; speak the true thing to those who cannot see it, and let the love go where it needs to go.",
+  "story": "A man who lost his companion and found, in the quiet, that the love was real and the silence was his to carry."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The quiet and the bowl",
+  "What grief really is",
+  "The love that remains"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and lonely",
+ "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+ "week_thesis": "The quiet of the house is real, and the love that filled it is not lost. Over seven days you give the grief its shape and its voice.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the silence and the loneliness, named without judgement.",
+  "diagnose": "You see that the bond was real and the dismissal is theirs, not the measure of your loss.",
+  "steady": "You hold that what is real in you cannot be taken away.",
+  "act": "You try letting the grief have its time, and speaking the true thing to someone.",
+  "story": "A man who lost his companion shows you that love is real even when the one who gave it is gone."
+ },
+ "insight": "The dog was not just a dog. The quiet is real, and the people who say it is small are naming their own limits, not your loss.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "dog died yesterday",
+  "the dog was teenage",
+  "the house is so quiet",
+  "keeps looking at the bowl"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess"
+ ]
+}

@@ -1,0 +1,673 @@
+{
+ "situation": {
+  "id": "us_millennial_promotion_pride",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "stick",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "just made director. I'm thrilled but I can feel it going to my head, I snapped at my old teammate yesterday like I'm above him. I want to stay grounded.",
+  "note_source": "text",
+  "expect_stance": "aspiration",
+  "expect_risk": null,
+  "market": "USA (Seattle)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "positive",
+   "pride"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "thrilled and afraid of losing it",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "The title is new, but the ego that wants credit is old. The week is about doing the work without claiming it, and seeing the person before you.",
+   "week_beats": {
+    "hook": "You recognise the thrill and the fear, and the snap at the teammate, named without judgement.",
+    "diagnose": "You see that it is the ego that wants credit, not the title, that makes you snap.",
+    "steady": "You hold that the one who does the work without claiming it is never shaken.",
+    "act": "You try doing the work without claiming it, and seeing the person before you, not the title.",
+    "story": "A warrior who won and was praised shows you what it means to do the work without claiming it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A man who just became director is fighting the pride that comes with it and snapped at an old teammate, wanting to stay grounded.",
+   "mirror": "You made director, and the first thing it did was make you snap at the person who helped you get there.",
+   "insight": "You want to stay grounded. What will test that is the morning you walk into the room and the title is the first thing you see.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.413,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.396,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Pride and the need to be seen as the doer make us fragile; ego takes credit, resents others, and falls hard.",
+    "steady": "The one who does the work without claiming it is the one who is never shaken; your worth is not the title you hold.",
+    "act": "Do your duty without claiming the doership; when pride rises, see the person before you, not the title between you.",
+    "story": "A warrior who won a great victory, was praised for it, and was taught by his teacher that the one who claims the win is the one who falls."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The title and the ego",
+    "Who you are beyond it",
+    "The work without the claim"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "just made director",
+    "snapped at an old teammate",
+    "wants to stay grounded"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:47=0.3,107=0.3,84=0.6,51=0.6,16=0.3,20=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.69",
+    "redo:5",
+    "redo_fixed:1",
+    "dropped:repeat=5,soft_kept=5",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.3666,
+     "beat": "hook",
+     "role_fit": 0.085,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, telling them to fight with all their might but not to carry the weight of the outcome. The verse proposes that you own the action, the effort, the doing, but the result belongs to the wider order. It is a call to act with full force and then step back, letting the result live on its own without letting it bind you.",
+     "for_you": "You feel the rush of the new title and the fear of losing it. You snapped at your teammate because the title feels like a fragile thing you could defend. The verse suggests you can still lead with full force, but you do not need to own the reaction.",
+     "try_today": "Notice the moment you claim the title and let it go.",
+     "scene_line": null,
+     "asks": [
+      "How do I act without letting the title own me?",
+      "Can I give my work without claiming the result?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.8",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 8",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "The poet looks back on his own youthful arrogance.",
+     "sanskrit": "यदा किञ्चिज्ज्ञोऽहं गज इव मदान्धः समभवम् तदा सर्वज्ञोऽस्मीत्यभवदवलिप्तं मम मनः । यदा किञ्चित्किञ्चिद्बुधजनसकाशादवगतम् तदा मूर्खोऽस्मीति ज्वर इव मदो मे व्यपगतः ॥",
+     "line": "When I knew a little, I thought I knew everything. Learning from the wise, my fever of pride broke.",
+     "translation": "When I knew a little, I was blind with pride like an elephant in rut, and my mind swelled: 'I know everything.' When, little by little, I learned from the wise, I realised 'I am a fool', and my pride left me like a fever.",
+     "words": [],
+     "why": "Spend your effort where it can land; some minds will not move, and the first one to check is yours.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      },
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.murkha",
+      "title": "Nitishatakam: On fools and the half-learned",
+      "summary": "Twelve verses on the futility of arguing with the closed or half-educated mind, framed as satire. The poet admits his own early arrogance (Niti 8) and ends by preferring wild mountains to the company of fools.",
+      "story_hook": "",
+      "lesson": "Spend your effort where it can land; some minds will not move, and the first one to check is yours."
+     },
+     "score": 2.7518,
+     "beat": "diagnose",
+     "role_fit": 0.55,
+     "meaning": "The poet Bhartrihari looks back on his own youth, when a little learning made him blind with pride like an elephant in rut. He admits his mind swelled with the thought that he knew everything. Then, little by little, he spent time with the wise, and his fever of pride broke. He realised he was a fool, and the arrogance simply left him.",
+     "for_you": "You snapped at an old teammate because the ego that wants credit is old, not the new title. The work is yours, but the credit is not. You do not need to prove you belong in the room. You could let the room belong to the work.",
+     "try_today": "Notice one moment when the title feels heavy and let the work speak instead.",
+     "scene_line": null,
+     "asks": [
+      "How do I tell the work from the title I want to own?",
+      "How do I stop the title from becoming the first thing I see?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0268,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from a section on steadfastness. He says the steady person does not move a step from the right path. Let others praise or blame, let money come or go, let death arrive today or ages hence. The steadfast person simply keeps going. They do not step off because the path itself is what they hold to.",
+     "for_you": "You are in a room where the title is the first thing anyone sees. The steady do not step off the path because the work itself is what they hold to. You have what you need. The title is a name on a door, not the wall you build.",
+     "try_today": "Notice one moment when you do the work without naming it to anyone.",
+     "scene_line": "You are in your own room where the title is the first thing anyone sees.",
+     "asks": [
+      "How do I hold the work when the title feels like the only thing?",
+      "How do I know if I am steady or just stubborn?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.56",
+     "ref": "Bhagavad Gita 2.56",
+     "ref_iast": "Bhagavad Gītā 2.56",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥",
+     "line": "Unshaken in sorrow, not craving in joy, free of clinging, fear and anger: that is a steady mind.",
+     "translation": "One whose mind is not shaken by sorrow, who has no craving for pleasures, and who is free from attachment, fear and anger, is called a sage of steady mind.",
+     "words": [
+      {
+       "sa": "दुःखेषु",
+       "en": "in pains"
+      },
+      {
+       "sa": "अनुद्विग्न",
+       "en": "untroubled"
+      },
+      {
+       "sa": "मनाः",
+       "en": "mind"
+      },
+      {
+       "sa": "सुखेषु",
+       "en": "in pleasures"
+      },
+      {
+       "sa": "विगतस्पृहः",
+       "en": "free from desire"
+      },
+      {
+       "sa": "वीतराग",
+       "en": "without attachment"
+      },
+      {
+       "sa": "भय",
+       "en": "fear"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "स्थितधीः",
+       "en": "steady-minded"
+      },
+      {
+       "sa": "मुनिः",
+       "en": "sage"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "A steady mind still feels; it just isn't run by sorrow, fear or anger.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.8976,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Krishna is answering Arjuna's question about what a steady person looks like. He says such a person is not shaken by sorrow, does not crave pleasure, and is free from attachment, fear, and anger. This steadiness is built by guarding where your attention goes, because anger begins the moment you dwell on something.",
+     "for_you": "You have the title now, and it is loud. You snapped at your teammate, and that was the ego speaking. The steady mind does not claim the work as its own, so it is not shaken when praise or blame arrives.",
+     "try_today": "Notice where your attention lands when you feel the title swell.",
+     "scene_line": "You are the one whose mind is not shaken by sorrow.",
+     "asks": [
+      "What does it mean to guard my attention today?",
+      "How do I stop the title from taking my whole mind?",
+      "Where does the anger start in me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.6.65.4",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 65.4",
+     "family": "vr",
+     "speaker": "Kumbhakarna",
+     "listener": "Mahodara and Ravana",
+     "setting": "A courtier boasts and flatters; Kumbhakarna answers before going out to fight.",
+     "sanskrit": "न मर्षयन्ति चात्मानं संभावयितुमात्मना। अदर्शयित्वा शूरास्तु कर्म कुर्वन्ति दुष्करम्॥",
+     "line": "The brave don't praise themselves. They quietly do the hard thing.",
+     "translation": "The truly brave do not put up with praising themselves. Without showing off, they do what is hard.",
+     "words": [],
+     "why": "You can tell family the hard truth and still stand by them; humility does, boasting talks.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kumbhakarna",
+      "title": "Kumbhakarna's loyalty",
+      "summary": "Woken from months of sleep, Kumbhakarna tells Ravana bluntly that his pride caused this disaster and he acted in the wrong order. Then, loyal to his brother, he goes out to fight anyway, scorning boastful courtiers: the brave don't praise themselves, they act.",
+      "story_hook": "The giant woke after nine months asleep and told his brother exactly what he had done wrong.",
+      "lesson": "You can tell family the hard truth and still stand by them; humility does, boasting talks."
+     },
+     "score": 2.6594,
+     "beat": "act",
+     "role_fit": 0.276,
+     "meaning": "Kumbhakarna speaks in Ravana’s court. Courtiers are boasting and flattering the king. Kumbhakarna tells them the hard truth about their pride. He says the truly brave do not put up with praising themselves. Without showing off, they do what is hard. He acts on his loyalty even while he disagrees. The point is that humility and action matter more than words.",
+     "for_you": "The title is new, but the ego that wants credit is old. You can do the work without claiming it. Let the title sit on the door. You are the one who shows up. The work is yours. The praise is not your part. Let the title do the talking.",
+     "try_today": "Do one small, concrete task without mentioning the title. Let the work speak for itself.",
+     "scene_line": "You are in your own court, hearing the flatterers and choosing the hard work.",
+     "asks": [
+      "How do I keep the title from owning me?",
+      "Can I see the person before the role?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.8099,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "A seer speaks to the reader about how to live and work. The text says to do your work and wish to live a full hundred years. The point is that you could do your part, but hold it lightly, without clinging to the results. You build, you create, you lead, but you do not let your identity stick to what you have made or what you have become. The action is yours, but it does not own you.",
+     "for_you": "You have a new title and you feel the pull to claim it. You want to stay grounded, so you do the work of the director, but you do not let the title become the whole story of who you are.",
+     "try_today": "Notice one moment when you are about to claim credit for a good outcome.",
+     "scene_line": "You are in a room where the name is new and the work is old.",
+     "asks": [
+      "How do I do the work without letting it own me?",
+      "What does it look like to hold my new title lightly?",
+      "How do I see the person before me, not the role?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "viv.p.karma_yoga.vyadha",
+     "title": "The proud ascetic, the housewife and the butcher",
+     "kind": "story",
+     "family": "viv",
+     "characters": [
+      "Swami Vivekananda",
+      "A young sannyasin",
+      "A housewife",
+      "The Vyadha (a butcher)"
+     ],
+     "story_hook": "A young yogi glared at a crow and it fell dead, and for the rest of the day he was sure he had become a very great man.",
+     "summary": "A young ascetic who can burn a bird with a glance is humbled by a housewife who knows what he did, and she sends him to a butcher in the market for teaching. The butcher, doing his trade honestly and caring for his parents, teaches him the highest truth. Doing the duty in front of you, without attachment, is itself the path.",
+     "lesson": "No honest work is beneath you; doing it well is the practice.",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "anchor": null,
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A young yogi burned a crow with a glance, and a housewife put him in his place",
+     "teaser": "A young yogi burned a crow with a glance, and a housewife put him in his place",
+     "for_you": "The butcher in the market does not think of himself as a teacher, yet his hands are steady. You have the title now, but the work is still the same. The old teammate is just another person in front of you.",
+     "asks": [
+      "How do I do the work without needing the title to feel real?",
+      "What does it mean to care for my parents while I am busy proving myself?",
+      "Is there a difference between being proud of my work and claiming it as mine?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The title and the ego",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 20709,
+   "total": 20711
+  },
+  "_ms": 20715
+ }
+}

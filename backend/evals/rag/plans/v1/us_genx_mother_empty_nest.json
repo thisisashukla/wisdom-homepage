@@ -1,0 +1,741 @@
+{
+ "situation": {
+  "id": "us_genx_mother_empty_nest",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "market": "USA (Texas)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and unmoored",
+   "bridge": "The silence of that four-hour drive and the mother who no longer sees you are what the texts call the mind running after what is passing. It cannot hold.",
+   "week_thesis": "The silence of that drive and the mother who no longer sees you become, over seven days, the ground beneath your feet rather than the wind in your mind.",
+   "week_beats": {
+    "hook": "You recognise the unmoored feeling, named without judgement.",
+    "diagnose": "You see that it is grief for two futures dissolving at once, and that the mind cannot settle while it tries to hold both.",
+    "steady": "You hold that what is real in you cannot be lost, and that love remains even when the form it wore is gone.",
+    "act": "You try letting the grief have its voice and offering one act of care that is yours alone.",
+    "story": "A man who lost his father and had to rebuild his life shows you how love continues after the one who held it is gone."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "Caring for a mother whose memory is fading, while the child who needed her most has just left for college; mind will not settle.",
+   "mirror": "You dropped your child at college and drove home in silence.",
+   "insight": "Two loves are letting go at once, and the mind will not settle because it is trying to hold both. Underneath is grief for the future you imagined.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.485,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind will not settle, caught between the child who no longer needs you and the mother who no longer knows you.",
+    "diagnose": "When what we love is passing, the heart aches because the bond was real; grief is love with nowhere to go.",
+    "steady": "What is real in us cannot be lost; the love that shaped you remains even when the form it wore is gone.",
+    "act": "Let the grief have its voice, offer one act of care that is yours alone, and let the rest go.",
+    "story": "A man who lost his father and had to rebuild his life shows what it means to carry love forward after the one who held it is gone."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The two losses",
+    "What grief needs",
+    "The love that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college",
+    "drove four hours in silence",
+    "feels needed less by both"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:34=0.8,40=0.7,107=0.9,13=0.6,1=0.9,45=0.6",
+    "week_same:13",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.56,max=0.65",
+    "dropped:copied=1,fallback_line=1,missing=2,repeat=1,soft_kept=2,try_today_long=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.5414,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.1305,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth. Ashma says that pain comes from what we didn't want or what we lost. Meetings end. Days don't return. Ask who you are and steady the mind.",
+     "for_you": "You are holding two letting-go's at once. Ask where you came from, where you are going, and who you are. That steadies the mind without dismissing the grief.",
+     "try_today": "Ask yourself where you came from, where you are going, and who you are.",
+     "scene_line": "You are on a four-hour drive with a mother who no longer sees you.",
+     "asks": [
+      "Where did I come from, really?",
+      "Where am I going now?",
+      "Who am I in this silence?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.107",
+     "ref": "Sursagar vinay pada",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "Hari",
+     "setting": "Surdas, looking back on hard times, almost misses them for how close God felt.",
+     "sanskrit": "अब वे बिपदा हू न रहीं। मनसा करि सुमिरत हे जब-जब, मिलते तब-तबहीं ॥ अपने दीन दास के हित लगि, फिरते सँग-सँगहीं । लेते राखि पलक गोलक ज्यों, संतत तिन सबहीं ॥",
+     "line": "In the hardest days he walked beside me and kept me as the eyelid keeps the eye.",
+     "translation": "Now even those troubles are gone. Back then, whenever I remembered you in my heart, you met me right then. For the good of your poor servant you walked along beside me, and kept me through all of it as the eyelid keeps the eye.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": null,
+     "score": 3.0425,
+     "beat": "steady",
+     "role_fit": 0.63,
+     "meaning": "Surdas remembers a time when God walked beside him through hardship. He says that whenever he remembered God in his heart, God was there. For the good of his poor servant, God kept him through everything, just as an eyelid protects and keeps the eye safe.",
+     "for_you": "The silence of that drive and the mother who no longer sees you are what the texts call the mind running after what is passing. It cannot hold. You are not the one who is failing.",
+     "try_today": null,
+     "scene_line": "You are walking a road where the one who walked beside you has become the silence itself.",
+     "asks": [
+      "How do I know the love is still there if I cannot see it?",
+      "What does it mean to keep someone if they no longer know me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.20",
+     "ref": "Bhagavad Gita 2.20",
+     "ref_iast": "Bhagavad Gītā 2.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणोन हन्यते हन्यमाने शरीरे ॥",
+     "line": "The self was never born and never dies. It is not killed when the body is.",
+     "translation": "It is never born and never dies; having been, it will not cease to be. Unborn, eternal, constant and ancient, it is not slain when the body is slain.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "जायते",
+       "en": "is born"
+      },
+      {
+       "sa": "म्रियते",
+       "en": "dies"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "कदाचि",
+       "en": "ever"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आयं",
+       "en": "this"
+      },
+      {
+       "sa": "भूत्वा",
+       "en": "having become"
+      },
+      {
+       "sa": "भविता",
+       "en": "will be"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "भूयः",
+       "en": "again"
+      },
+      {
+       "sa": "अजो",
+       "en": "unborn"
+      },
+      {
+       "sa": "नित्यः",
+       "en": "eternal"
+      },
+      {
+       "sa": "शाश्वतः",
+       "en": "everlasting"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "पुराणः",
+       "en": "ancient"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "हन्यते",
+       "en": "is killed"
+      },
+      {
+       "sa": "हन्यमाने",
+       "en": "being killed"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to skip mourning or to take loss lightly; it is comfort about what remains.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.8959,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna has laid down his weapons and is refusing to fight because he is paralyzed by grief and attachment. Krishna tells him that the true Self, the core of who a person is, was never born and will never die. It is eternal, unborn, and ancient. When the body is destroyed, the Self is not destroyed. It simply changes form. The verse proposes that what you truly are outlasts every loss and every passing pain. It is the constant beneath the changing world.",
+     "for_you": "You are holding the silence of that drive and the fading memory of your mother, and the mind is trying to hold both. You feel unmoored because the forms of your life are changing. The verse says the core of who you are was never born and will never die.",
+     "try_today": "When the mind races, rest in the fact that the love you feel is not gone, only changed.",
+     "scene_line": "You are in a car with a fading mother and a future that is no longer yours to hold.",
+     "asks": [
+      "How do I hold love when the shape of it is gone?",
+      "What does it mean to be real when everything around me is changing?",
+      "How do I stay steady when the people I love are leaving?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "words": [
+      {
+       "sa": "यह",
+       "en": "this"
+      },
+      {
+       "sa": "बिचारि",
+       "en": "thinking"
+      },
+      {
+       "sa": "नहिं",
+       "en": "not"
+      },
+      {
+       "sa": "करउँ",
+       "en": "I do"
+      },
+      {
+       "sa": "हठ",
+       "en": "stubbornness"
+      },
+      {
+       "sa": "झूठ",
+       "en": "false"
+      },
+      {
+       "sa": "सनेहु",
+       "en": "affection"
+      },
+      {
+       "sa": "बढ़ाइ",
+       "en": "increasing"
+      },
+      {
+       "sa": "मानि",
+       "en": "accepting"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कर",
+       "en": "of"
+      },
+      {
+       "sa": "नात",
+       "en": "bond"
+      },
+      {
+       "sa": "बलि",
+       "en": "I bow"
+      },
+      {
+       "sa": "सुरति",
+       "en": "memory"
+      },
+      {
+       "sa": "बिसरि",
+       "en": "forget"
+      },
+      {
+       "sa": "जनि",
+       "en": "do not"
+      },
+      {
+       "sa": "जाइ",
+       "en": "go"
+      }
+     ],
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.2041,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya sits with Ram as he prepares to leave for fourteen years in the forest. She knows that keeping him by her side would be a comfort she cannot afford him. She tells him she will not hold him back with false affection. She blesses his path and asks only that he keep the bond of a mother, and never forget her.",
+     "for_you": "The silence on the drive and the mother who no longer knows your face are a letting go. You are not abandoning them by letting the grief speak. You can offer one act of care that is yours alone today. This is love at its hardest.",
+     "try_today": "Write one sentence of what your grief needs to say.",
+     "scene_line": "You sit at the edge of a long goodbye, choosing a blessing over a hold.",
+     "asks": [
+      "What does my grief need to say to me?",
+      "How do I let go without forgetting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.3985,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma tells Yudhishthira that a good life is not built from great deeds alone. It is built from small daily conduct. He says do not sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder. That is how a long life is won. The point is that respect is not a feeling to wait for. It is an action to begin the day with. A life of care is made of these small, repeated acts of honor.",
+     "for_you": "The drive ended and the house is quiet now. The silence is not empty, it is full of the two loves letting go. Your mind wants to hold both the child and the mother at once and it cannot. The verse offers a different rhythm.",
+     "try_today": "Greet your mother and father first thing in the morning.",
+     "scene_line": "You stand in the quiet house after the long drive, offering the morning greeting.",
+     "asks": [
+      "How do I greet a mother who no longer sees me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_consents",
+     "title": "Kausalya lets Ram go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+     "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+     "lesson": "Love sometimes means staying behind to care for someone else.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.24.20",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 24.20",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Kausalya",
+      "setting": "Ram's mother wants to follow him into exile; he asks her instead to stay and look after his grieving father.",
+      "sanskrit": "यथा मयि तु निष्क्रान्ते पुत्रशोकेन पार्थिवः॥ श्रमं नावाप्नुयात् किंचिदप्रमत्ता तथा कुरु। दारुणश्चाप्ययं शोको यथैनं न विनाशयेत्॥ राज्ञो वृद्धस्य सततं हितं चर समाहिता।",
+      "line": "When I'm gone, look after him. Don't let his grief wear him down.",
+      "translation": "Take care that when I am gone the king does not wear himself out with grief for his son, that this terrible sorrow does not destroy him. Look after the old king's welfare always.",
+      "words": [],
+      "why": "Love sometimes means staying behind to care for someone else.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.kausalya_consents",
+       "title": "Kausalya lets Ram go",
+       "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+       "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+       "lesson": "Love sometimes means staying behind to care for someone else."
+      },
+      "score": 3.1393
+     },
+     "score": 3.1393,
+     "why": null,
+     "hook_title": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "teaser": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "for_you": "Ram's love did not end when he left the forest. He asked his mother to stay behind not because he stopped needing her, but because she was needed to hold the home together. You are being asked to hold two places at once.",
+     "asks": [
+      "How do I let my child go without letting go of my role?",
+      "How do I hold my mother's fading mind without losing myself?",
+      "How do I greet them when the silence is so heavy?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The two losses",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16724,
+   "total": 16725
+  },
+  "_ms": 16730
+ }
+}

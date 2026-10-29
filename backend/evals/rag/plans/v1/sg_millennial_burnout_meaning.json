@@ -1,0 +1,771 @@
+{
+ "situation": {
+  "id": "sg_millennial_burnout_meaning",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "14 hour days at the bank for 10 years. good money. I sit in the MRT and feel nothing. I'm not sad. I'm just empty.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "Singapore",
+  "lang": "english",
+  "slices": [
+   "burnout",
+   "lang:english",
+   "meaning"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "empty and numb",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "Seven days from feeling nothing on the MRT to finding the first thread of what is real and does not pass.",
+   "week_beats": {
+    "hook": "You recognise the emptiness and the restlessness, named without judgement.",
+    "diagnose": "You see that the money and the hours are not the same as what you are missing.",
+    "steady": "You hold that the self that is real cannot be lost to a job.",
+    "act": "You try one question a day that has nothing to do with the job, and sit with the answer.",
+    "story": "A man who has everything the world counts and nothing that counts to him meets a teacher who shows him the way."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A man in his late thirties has worked -hour days at a bank for ten years, and now sits in the MRT feeling empty, not sad.",
+   "mirror": "You give the day fourteen hours and the MRT gives you nothing back.",
+   "insight": "You are not sad. You are not there. The money is real and the emptiness is real, and the two are not the same thing.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.262,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.93,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.391,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The emptiness of a life that is not sad but not there, and the restlessness that comes from feeling cut off from yourself.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self that is real cannot be lost to a job, and what passes is not all there is.",
+    "act": "Ask one question each day that has nothing to do with the job, and sit with the answer without fixing it.",
+    "story": "A man who has everything the world counts and nothing that counts to him, who meets a teacher and begins to see what he has been missing."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What is missing",
+    "What does not pass",
+    "The one who asks"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "works hours a day at a bank for ten years",
+    "sits in the MRT and feels nothing",
+    "is not sad, just empty"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:8=0.0,44=0.3,536=0.0,1=0.0,2=0.3,29=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.70",
+    "dropped:fallback_lesson=1,not_second_person=1,repeat=1,soft_kept=1,try_today_long=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 3.51,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield. He has collapsed, refusing to fight. He tells Krishna that even if he won everything, the kingdom, the wealth, the rule over the gods, it would not touch the grief drying him up. He admits he cannot see a way out of this sorrow himself.",
+     "for_you": "You have sat in the MRT for ten years, and the emptiness is real. You are not sad, you are just not there. The work is real, the money is real, but the feeling is cut off. You do not need to know what to do next.",
+     "try_today": "Notice one thing about the feeling of emptiness without judging it.",
+     "scene_line": "You are on your own battlefield, refusing to move forward.",
+     "asks": [
+      "How do I tell the difference between being sad and being empty?",
+      "What does it mean to admit I do not know what to do?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.44",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 44",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time'.",
+     "sanskrit": "रात्रिः सैव पुनः स एव दिवसो मत्वा मुधा जन्तवो धावन्त्युद्यमिनस्तथैव निभृतप्रारब्धतत्तत्क्रियाः । व्यापारैः पुनरुक्तभूत विषयैरित्थंविधेनामुना संसारेण कदर्थिता वयमहो मोहान्न लज्जामहे ॥",
+     "line": "Same night, same day, the same tasks on repeat. We run in circles and call it living.",
+     "translation": "Thinking 'it is the same night again, the same day', creatures run about in vain, busy as ever with the tasks they have set going; with work full of the same repeated things, tormented by this round of existence, alas, out of delusion we feel no shame.",
+     "words": [],
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 3.202,
+     "beat": "diagnose",
+     "role_fit": 0.44,
+     "meaning": "Bhartrihari speaks to you from a place of deep weariness. They have seen how the same hours return, how the same tasks repeat, and how people call this living. The verse says that creatures run about in vain, busy with the tasks they set going. They are tormented by this round, and out of delusion they feel no shame. The point is that time is passing while you are busy, and you could notice it before it is gone.",
+     "for_you": "You are on the MRT and the hours at the bank are all the same. The money is real, but the tasks are a loop. You run through them and call it living. Notice the loop. The day is passing while you are busy.",
+     "try_today": "Notice one task on repeat today without changing it.",
+     "scene_line": "You are on the MRT again, running through the same day.",
+     "asks": [
+      "How do I notice the time passing?",
+      "What is the task I keep setting going?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.6a.115.43",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 115.43",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha's closing advice to Rama on living in the world after the three vows.",
+     "sanskrit": "अन्तर्मुखः सन्सततं समस्तं कुर्वन्बहिष्ठं खलु कार्यजातम् । न खेदमायासि कदाचिदेव निराकृताहंकृतितामुपैषि ॥",
+     "line": "Stay anchored within while you do all your outer work, and you won't burn out.",
+     "translation": "Staying turned inward while doing all the outer work that comes to you, you will never grow weary, and you will be free of the sense of being the doer.",
+     "words": [],
+     "why": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.three_vows",
+      "title": "Shiva's three vows: be a great doer, enjoyer and letter-go",
+      "summary": "Vasishtha gives Rama three vows that Shiva once gave his devotee Bhringi: be a great doer, a great enjoyer, and a great renouncer. A great doer acts fully and on time without clinging; a great enjoyer takes in joys and sorrows evenly, like the ocean takes in rivers; a great renouncer lets go inside. Live this way and work won't wear you out.",
+      "story_hook": "",
+      "lesson": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out."
+     },
+     "score": 3.1255,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Vasishtha is speaking to Rama after Rama has taken three vows about how to live in the world. He tells Rama to turn inward while doing all the outer work that comes to him. He says that by staying turned inward, Rama will never grow weary. He will also be free from the feeling that he is the one doing everything. The idea is that a person can work fully and enjoy fully, but the real self stays anchored inside. This way, the outer work does not burn out the inner life.",
+     "for_you": "You work ten hours a day and the MRT feels like a tunnel with no exit. The emptiness is not because the work is bad, but because the self doing the work has been left out of the room.",
+     "try_today": null,
+     "scene_line": "You sit in the MRT while the vows of the outer world play on a loop around you.",
+     "asks": [
+      "How do I turn inward while the work is still in front of me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.17.7",
+     "ref": "Ashtavakra Gita 17.7",
+     "ref_iast": "Aṣṭāvakra Gītā 17.7",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra describes the person who has truly understood.",
+     "sanskrit": "वाञ्छा न विश्वविलये न द्वेषस्तस्य च स्थितौ । यथा जीविकया तस्माद् धन्य आस्ते यथा सुखम् ॥",
+     "line": "Not wishing life away, not resenting it, the blessed one lives happily on whatever comes.",
+     "translation": "He neither longs for the world to end nor resents its going on; so the blessed one lives happily on whatever livelihood comes.",
+     "words": [
+      {
+       "sa": "वाञ्छा",
+       "en": "desire"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विश्वविलये",
+       "en": "world's destruction"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "द्वेषः",
+       "en": "hatred"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "स्थितौ",
+       "en": "state"
+      },
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "जीविकया",
+       "en": "by livelihood"
+      },
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "धन्यः",
+       "en": "blessed"
+      },
+      {
+       "sa": "आस्ते",
+       "en": "exists"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      }
+     ],
+     "why": "Contentment looks like not replaying the past or chasing the next thing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.true_knower",
+      "title": "Portrait of the one who knows",
+      "summary": "Ashtavakra describes the person who has understood: content alone, not replaying old pleasures or craving new ones, living happily on whatever comes, unmoved by praise or blame.",
+      "story_hook": "",
+      "lesson": "Contentment looks like not replaying the past or chasing the next thing."
+     },
+     "score": 2.4418,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Ashtavakra speaks to Janaka about the one who has truly understood. He describes a person who does not wish life away or resent its going on. This person lives happily on whatever comes, untouched by praise or blame. The point is that contentment is not about chasing the next thing or replaying the past. It is about resting in the present moment, whatever it holds, without wanting to escape it or change it.",
+     "for_you": "The MRT is the same every day, and the work is the same. You are not sad, but you are not there. You do not have to wish these ten years away or resent the next one.",
+     "try_today": "Notice one small detail of the ride or the desk, without judging it good or bad.",
+     "scene_line": "You sit in the MRT, and the day unfolds without asking your permission.",
+     "asks": [
+      "How do I stop the hours from feeling like a punishment?",
+      "Can I be empty and still be here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.6912,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer tells the reader to live a full hundred years and do their work, not because the work matters in itself, but because the way they do it does. When they act without clinging to the results, their actions do not stick to them like tar. This is how the texts describe a life that is fully lived but not fully owned by the living. It is a call to keep moving forward while holding the outcome lightly.",
+     "for_you": "The MRT ride and the bank hours are your work, but they do not have to own you. You can sit with the numbness and still do what is in front of you without gripping the day for results. Your part is simply to stay present with the task.",
+     "try_today": "Pick one small question about your own life and sit with the answer.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.29",
+     "ref": "Bhagavad Gita 6.29",
+     "ref_iast": "Bhagavad Gītā 6.29",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥",
+     "line": "See yourself in every being and every being in yourself, and you see the same everywhere.",
+     "translation": "One whose self is joined in yoga sees the self in all beings and all beings in the self; he sees the same everywhere.",
+     "words": [
+      {
+       "sa": "सर्वभूतस्थम्",
+       "en": "in all beings"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "the true self"
+      },
+      {
+       "sa": "सर्वभूतानि",
+       "en": "all beings"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the true self"
+      },
+      {
+       "sa": "ईक्षते",
+       "en": "sees"
+      },
+      {
+       "sa": "योगयुक्तात्मा",
+       "en": "the yogi united in yoga"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "समदर्शनः",
+       "en": "with equal vision"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 1.8269,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Krishna is teaching Arjuna how to settle the mind. He describes a person who has joined their self in yoga. This person sees their own self in every living being. They see every other being inside themselves. When they look around, they see the same thread running through everything. The teaching is about moderation. When the mind wanders, you bring it back gently, again and again.",
+     "for_you": "You sit on the MRT and feel nothing because your mind has learned to look only at the numbers. Today, try to see the same life in the person standing next to you. They are not just a body in a seat. They are a whole world, like you.",
+     "try_today": "Notice one stranger today and see their life as complete as your own.",
+     "scene_line": "You are in the MRT, and the one beside you is a world you have not yet seen.",
+     "asks": [
+      "How can I see a stranger as a whole world?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "asks": [
+      "How do I let the work be there and let the mind rest?",
+      "Can I find a lighter way to hold the life I already have?",
+      "What is the difference between leaving a life and changing how I hold it?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What is missing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14891,
+   "total": 14893
+  },
+  "_ms": 14903
+ }
+}

@@ -1,0 +1,661 @@
+{
+ "situation": {
+  "id": "uk_boomer_hindi_greatgrandmother",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 1
+  },
+  "note": "मेरे पोते-पोतियाँ अब हिंदी नहीं बोलते। मंदिर कोई नहीं आता। लगता है मेरे जाने के बाद सब खत्म हो जाएगा।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "UK (Southall)",
+  "lang": "hindi",
+  "slices": [
+   "ageing",
+   "hindi",
+   "lang:hindi",
+   "migration"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "Seven days from watching the house go quiet to finding the one thing that does not pass, so the house is never truly empty.",
+   "week_beats": {
+    "hook": "You recognise the loss of language and ritual as a real grief, and the search for what endures.",
+    "diagnose": "You see that the fear is not the silence itself, but the belief that you are the only one who holds what is leaving.",
+    "steady": "You hold that what is real in us cannot be lost.",
+    "act": "You try reading one verse a day and sitting with what it says about what does not pass.",
+    "story": "A seeker who held the fire of knowledge and found that what they carried was never theirs alone."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [],
+   "confidence": 0.5,
+   "core_struggle": "My kids have left home",
+   "mirror": "Your grandchildren speak a different tongue now, and the temple you kept has no one left to light the lamp.",
+   "insight": "The language and the ritual are leaving the house, and what you fear is not the silence but the belief that you are the only one who holds them.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.928,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.433,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Watching the language and the faith you kept leave the house, and searching for what will remain after you are gone.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What is real in us cannot be lost; the self that was never born and will never die is what remains when all else changes.",
+    "act": "Read and reflect on what does not pass; let the texts show you what is real, and rest in that knowing.",
+    "story": "A seeker who held the fire of knowledge and watched the world change around them, finding that what they carried was never theirs alone."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The house is quiet",
+    "What does not pass",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "no one comes to the temple",
+    "fears everything will end after they are gone",
+    "has a quiet house"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:11=0.0,612=0.0,13=0.6,11=0.3,1=0.6,2=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.67",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:repeat=1,soft_kept=1,verdict=2",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "words": [
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अनुकम्पा-अर्थम्",
+       "en": "for compassion"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "अज्ञान-जम्",
+       "en": "born of ignorance"
+      },
+      {
+       "sa": "तमः",
+       "en": "darkness"
+      },
+      {
+       "sa": "नाशयामि",
+       "en": "I destroy"
+      },
+      {
+       "sa": "आत्म-भाव-स्थः",
+       "en": "abiding in their own being"
+      },
+      {
+       "sa": "ज्ञान-दीपेन",
+       "en": "with the lamp of knowledge"
+      },
+      {
+       "sa": "भास्वता",
+       "en": "shining"
+      }
+     ],
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 1.7602,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He is explaining the nature of true devotion. He says that when people gather with joy to speak of the divine, dwells in their hearts. Out of compassion, uses the lamp of understanding to clear away the darkness born of ignorance.",
+     "for_you": "The quiet in your house is not just empty space. It is the silence where the language and the ritual used to live. You are grieving the loss of what used to fill the rooms with meaning. The lamp is already in your hands.",
+     "try_today": "Notice one small detail in your quiet house and let it hold your full attention.",
+     "scene_line": "You are in your own quiet house, and the question is what light you will trust.",
+     "asks": [
+      "How do I keep the lamp lit when the house is so quiet?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.28.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 28.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama on how everything changes.",
+     "sanskrit": "दिवसास्ते महान्तस्ते संपदस्ताः क्रियाश्च ताः । सर्वं स्मृतिपथं यातं यामो वयमपि क्षणात् ॥",
+     "line": "Those days, those people, that wealth, those deeds are memories now. We too will pass soon.",
+     "translation": "Those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a call to despair; it wakes Rama up to what matters now.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.6341,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Rama sits with Vishvamitra and Vasishtha. They have just asked him to speak about what he has seen of the world. Rama answers by naming what is slipping away. He says those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment. He is not offering a solution. He is naming honestly what feels empty. This is the first step, a question asked into the quiet.",
+     "for_you": "You sit in the quiet house and feel the temple empty, the rituals fading, and you fear you are the only one holding them. That is a heavy belief to carry alone. Naming this loss honestly is the first step. You are not the only one who holds this.",
+     "try_today": "Notice one empty space in the house and name what it held.",
+     "scene_line": "You are in your own quiet room, naming what has passed into memory.",
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "words": [
+      {
+       "sa": "देहिनः",
+       "en": "the embodied self"
+      },
+      {
+       "sa": "अस्मिन्यथा",
+       "en": "in this"
+      },
+      {
+       "sa": "देहे",
+       "en": "body"
+      },
+      {
+       "sa": "कौमारं",
+       "en": "childhood"
+      },
+      {
+       "sa": "यौवनं",
+       "en": "youth"
+      },
+      {
+       "sa": "जरा",
+       "en": "old age"
+      },
+      {
+       "sa": "तथा",
+       "en": "likewise"
+      },
+      {
+       "sa": "देहान्तरप्राप्तिः",
+       "en": "arrival at another body"
+      },
+      {
+       "sa": "धीः",
+       "en": "the wise"
+      },
+      {
+       "sa": "तत्र",
+       "en": "there"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "मुह्यति",
+       "en": "is deluded/confused"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.4501,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is broken by grief at the thought of killing his own kin. Krishna says that just as the body moves from childhood to youth to old age, the true self moves from one body to another. The wise do not let this change shake them. The self that is in us is never born and never dies.",
+     "for_you": "The house has gone quiet because your children are living their own lives. That is a change, not a loss. The part of you that holds the temple, the language, the ritual, that part does not pass. It remains steady even when the rooms are still.",
+     "try_today": "Notice one thing that has not changed in your quiet house today.",
+     "scene_line": "You are in your own quiet house, watching the day change.",
+     "asks": [
+      "How do I hold what is real when everything else is leaving?",
+      "What is the self that does not pass, if not my body?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.6.11",
+     "ref": "Shvetashvatara Upanishad 6.11",
+     "ref_iast": "Śvetāśvatara Upaniṣad 6.11",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "One of the best-known verses of the Upanishad, on the God within all.",
+     "sanskrit": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा। कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+     "line": "One God is hidden in every being: the inner self of all, the quiet witness of all we do.",
+     "translation": "One God is hidden in all beings: all-pervading, the inner self of every being, overseer of all action, dwelling in all beings, the witness, pure awareness, alone, beyond all qualities.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.2843,
+     "beat": "steady",
+     "role_fit": 0.684,
+     "meaning": "In the Shvetashvatara Upanishad, a seer speaks to those who are asking what governs the world and their own joys and sorrows. The verse says that one God is hidden in every being, the inner self of all, the quiet witness of all we do. This means that what is real in us is not the changing body or the passing memories, but a hidden presence that remains. It is the overseer of all action, dwelling within, pure awareness alone.",
+     "for_you": "The house is quiet now, and the rituals feel like memories of a life that is passing. But the verse says the inner self is the quiet witness of all we do. You do not have to hold the language or the ritual alone.",
+     "try_today": "Sit in the quiet house and notice the one thing that is not changing.",
+     "scene_line": "You are the quiet witness of a house that has gone silent.",
+     "asks": [
+      "How do I let go of holding everything alone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ashtavakra.16.1",
+     "ref": "Ashtavakra Gita 16.1",
+     "ref_iast": "Aṣṭāvakra Gītā 16.1",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra's 'special instruction' to Janaka on why striving and study do not bring peace.",
+     "sanskrit": "आचक्ष्व श‍ृणु वा तात नानाशास्त्राण्यनेकशः । तथापि न तव स्वास्थ्यं सर्वविस्मरणाद् ऋते ॥",
+     "line": "Read and recite all the scriptures you like; peace comes when you set them all down.",
+     "translation": "My son, you may recite or hear many scriptures again and again, but you will not be at ease until you forget them all.",
+     "words": [
+      {
+       "sa": "आचक्ष्व",
+       "en": "Speak"
+      },
+      {
+       "sa": "शृणु",
+       "en": "Listen"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "तात",
+       "en": "son"
+      },
+      {
+       "sa": "नानाशास्त्राणि",
+       "en": "many scriptures"
+      },
+      {
+       "sa": "अनेकशः",
+       "en": "in many ways"
+      },
+      {
+       "sa": "तथापि",
+       "en": "yet"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "स्वास्थ्यं",
+       "en": "health"
+      },
+      {
+       "sa": "सर्वविस्मरणाद्",
+       "en": "without forgetting all"
+      },
+      {
+       "sa": "ऋते",
+       "en": "without"
+      }
+     ],
+     "why": "Peace isn't another achievement; strain less, and stop expecting escape to fix you.",
+     "misuse": "Not anti-learning; it warns against mistaking information for peace.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.special_instruction",
+      "title": "Why striving and study do not bring peace",
+      "summary": "Ashtavakra warns that reading scriptures, working or meditating will not bring peace on their own; everyone suffers from straining, and running away from the world doesn't end pain. Even pride in being free is just more suffering.",
+      "story_hook": "",
+      "lesson": "Peace isn't another achievement; strain less, and stop expecting escape to fix you."
+     },
+     "score": 2.955,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Ashtavakra speaks to Janaka, the king who has everything but still feels unrest. He tells him to read and recite every scripture he can find. Yet peace will not come from this effort alone. Ashtavakra says peace arrives only when he sets all those texts down. The teaching is that peace is not another achievement to earn through study. It comes when he stops straining and stops expecting escape to fix him.",
+     "for_you": "The scriptures you have held close all your life are not the silence you fear. They are the weight of knowing what to do when no one is left to witness it. Set down the need to prove the house was not empty. The quiet is not a void.",
+     "try_today": "Read one verse and then close the book.",
+     "scene_line": "You are a king who has read every text and still waits for peace to arrive.",
+     "asks": [
+      "What arrives when I stop waiting for the noise to end?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_chhandogya.268",
+     "ref": "Chhandogya Upanishad 3.17.4",
+     "ref_iast": "Chāndogya Upaniṣad 3.17.4",
+     "family": "up",
+     "speaker": "Ghora Angirasa",
+     "listener": "Krishna, son of Devaki",
+     "setting": "Life described as a sacrifice; these are its true gifts.",
+     "sanskrit": "अथ यत्तपो दानमार्जवमहिꣳसा सत्यवचनमिति ता अस्य दक्षिणाः ॥",
+     "line": "Self-discipline, giving, honesty, non-harm and truthful speech: these are the real offerings of a life.",
+     "translation": "And discipline, generosity, straightforwardness, non-harming and truthful speech: these are its gifts to the priests.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.2897,
+     "beat": "act",
+     "role_fit": 0.44,
+     "meaning": "Ghora Angirasa tells Krishna, son of Devaki, about the true gifts of life. He says that self-discipline, giving, honesty, non-harm and truthful speech are the real offerings. This is the meaning of life. The body and all our actions are temporary. The wise do not worry about the next change because they know what does not pass. The one God is hidden in every being. The inner self is the quiet witness of all we do. These are the true gifts of a life well spent.",
+     "for_you": "The house is quiet now, and the daily rituals feel like they are fading with the noise. You are wondering if the meaning of it all was only in the doing. But the gifts Ghora describes are not in the temple crowd or the daily routine.",
+     "try_today": "Say one true thing out loud to the quiet room.",
+     "scene_line": "You are the witness to a life that is already given.",
+     "asks": [
+      "How do I know what does not pass?",
+      "What is my part in this quiet house?",
+      "How do I let the rituals go?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You still live in a quiet house, and the temple visits are yours alone. You do not have to leave your life to change it. Do the day's work with a mind that does not clutch.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The house is quiet",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 11159,
+   "total": 11163
+  },
+  "_ms": 11166
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.65,
+ "core_struggle": "A woman working -hour night shifts and sending money home feels she is failing a test she never agreed to take, because every call ends with when are you getting married.",
+ "mechanism": "need_for_approval",
+ "secondary_mechanism": "expectation_of_others",
+ "situations": [
+  {
+   "id": "parents_expectations",
+   "weight": 1.648,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 1.05,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.66,
+   "source": "note"
+  },
+  {
+   "id": "career_switch",
+   "weight": 0.525,
+   "source": "note"
+  },
+  {
+   "id": "midlife",
+   "weight": 0.427,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You send them half your salary, and every call ends with the same question you never asked.",
+ "queries": {
+  "hook": "The pride in their voice and the question at the end of every call, and the restless mind that cannot settle between the two. My parents' expectations weigh on me.",
+  "diagnose": "When your worth depends on their approval, every word of blame or pressure shakes you; craving approval keeps the mind unsteady.",
+  "steady": "Praise and blame come and go like the wind; what is yours to do is yours to do, and no one else can take that from you.",
+  "act": "Practise being on your own side; let their praise and their questions come and go without letting either decide your worth today.",
+  "story": "A woman who built something for her family with her own hands, faced the same question again and again, and found a way to stand in her own worth."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The test you never agreed to",
+  "Whose approval you need",
+  "No one else can take what is yours"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "restless and failing",
+ "bridge": "What you are living with is what the texts call needing their approval, and that is where this week begins.",
+ "week_thesis": "By the end of the week the test you feel you are failing is named, and the part of you that can stand in its own worth has the floor.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the pride and the question, and the restless mind between them, named without blame.",
+  "diagnose": "You see that the restless mind comes from needing their approval to settle a clock that is not yours.",
+  "steady": "You hold that praise and blame come and go, and what is yours to do is yours to do.",
+  "act": "You try being on your own side for one evening, letting their praise and their questions come and go without deciding your worth."
+ },
+ "insight": "You are building something for them with your work, and the test you feel you are failing is the one they keep asking about.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "works -hour night shifts",
+  "sends half salary home",
+  "parents are proud but end every call with marriage"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation"
+ ]
+}

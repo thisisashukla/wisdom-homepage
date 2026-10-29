@@ -1,0 +1,104 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "I keep fighting with my parents",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "duty_conflict",
+ "situations": [
+  {
+   "id": "parent_conflict",
+   "weight": 0.888,
+   "source": "note"
+  },
+  {
+   "id": "teen_conflict",
+   "weight": 0.55,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "betrayal",
+   "weight": 0.398,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.36,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You found out, he lied, and your husband told you it was your fault for being soft.",
+ "queries": {
+  "hook": "The anger of being blamed for your son's behaviour and the fear of not knowing whether to be strict or kind with him.",
+  "diagnose": "When a child's actions become a verdict on the parent, self-blame grows from believing the outcome alone measures our worth, and it clouds the answer.",
+  "steady": "A child's choices are his own, and your worth as a parent is not measured by his; your duty is to be steady in your love, not to win his approval.",
+  "act": "Lift yourself up instead of pushing yourself down; speak to your son with steady love, set a clear boundary with him, and speak to your husband with the truth of what is his to carry.",
+  "story": "A mother who found her son in trouble, faced his father's blame, and held her ground with love and a clear boundary."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Blamed for his choices",
+  "Whose to carry what",
+  "Steady in your love"
+ ],
+ "stance": "struggle",
+ "gender": "man",
+ "emotion": "angry and afraid",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "Seven days from being blamed by your husband for your son's choices to standing in your own truth with both of them.",
+ "undisclosed": true,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent",
+  "friend"
+ ],
+ "week_beats": {
+  "hook": "You recognise the anger and the blame, named without judgement.",
+  "diagnose": "You see that the blame is not the answer, and that your son's choices are his own.",
+  "steady": "You hold that your worth as a parent is not measured by his choices.",
+  "act": "You try speaking to your son with steady love and a clear boundary, and speaking to your husband with the truth.",
+  "story": "A mother who stood between her son's trouble and her husband's blame shows you what holding your ground looks like."
+ },
+ "insight": "The fight is between you and your husband about who is to blame. The real question is how to be with your son, and that is yours to answer.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "son has been taking something with college friends",
+  "son lies to her face",
+  "she is torn between strict and kind"
+ ],
+ "age": "45_54",
+ "stages": [
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example",
+  "core:invented_person",
+  "core_struggle_fallback",
+  "seat:invented_person",
+  "life:invented_person",
+  "life_context:missing",
+  "seat:missing"
+ ]
+}

@@ -1,0 +1,769 @@
+{
+ "situation": {
+  "id": "in_boomer_mother_son_abroad",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "India (Chennai)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restless and waiting",
+   "bridge": "The waiting you cannot stop is what the texts call grief: love with nowhere to go, and the heart aching because the bond was real.",
+   "week_thesis": "By the end of the week the waiting has a name, and the love that cannot land is given a place to rest.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the waiting, named without judgement.",
+    "diagnose": "You see that the waiting is not a failure. It is love with nowhere to go.",
+    "steady": "You hold that what is real in you cannot be taken by distance.",
+    "act": "You try giving the love a form it can hold, and sitting with the ache without fighting it.",
+    "story": "A father who waited for a son he thought lost shows you how to let the waiting become something you can carry."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "partner",
+    "inlaws"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A retired teacher who shaped thousands of students cannot teach his own heart to stop waiting for his son abroad.",
+   "mirror": "You taught two thousand children, and the one you cannot teach is your own heart.",
+   "insight": "You have taught two thousand children. The one you cannot teach is your own heart, and the reason is that the bond is still real.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.845,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "raising_kids_values",
+     "label": "How do I pass on our values to my kids abroad",
+     "weight": 0.42,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The restless waiting for a son who is not coming back, and the ache of a love that has no place to land.",
+    "diagnose": "Grief is love with nowhere to go; the heart aches because the bond was real, and nothing can be done to make the waiting stop.",
+    "steady": "What is real in us cannot be taken by distance, and the bond that made you a father is not undone by years.",
+    "act": "Let the waiting be what it is, and give the love a form it can hold: write him a letter you do not send, or sit with the ache without fighting it.",
+    "story": "A father who waited for a son he thought lost, and found that the waiting itself was the last lesson he had to teach."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The waiting has a name",
+    "Love with nowhere to go",
+    "More than the distance"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "son has been in Germany for nine years",
+    "son's wife is",
+    "knows they will not come back"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:8=1.0,14=1.0,39=0.3,49=0.0,1=1.0,1=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.65",
+    "redo:4",
+    "redo_fixed:0",
+    "dropped:repeat=1,scene_line_gendered=1,soft_kept=4,try_today_technique=1,verdict=3",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.8903,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "The battlefield is silent. Arjuna stands before Krishna, his body heavy with sorrow. He has collapsed into grief, refusing to fight his own kin. He tells Krishna that even winning a prosperous kingdom or ruling the gods would not touch the grief drying him up. He admits he cannot see a way out, that he does not know what is right. He asks Krishna to teach him. The verse says that admitting you do not know and asking for help is where clarity begins.",
+     "for_you": "You have taught thousands of students, but right now you are facing a class you cannot prepare for. The waiting for your son has dried up your peace. You do not need to solve this grief alone. You can admit that you do not know how to stop waiting.",
+     "try_today": "Tell the waiting exactly what it is doing to your peace today.",
+     "scene_line": "You have collapsed into grief over your son's absence and refuse to rest until the answer comes.",
+     "asks": [
+      "How do I teach my heart to stop waiting?",
+      "Can I admit I do not know how to fix this?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 2.8258,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya speaks to Dasharatha after he asks for her forgiveness. She tells him that grief is not a small sadness. It is an enemy that wears away a person’s steadiness and judgement. She says grief destroys everything. The point is that sorrow can make us wound the ones we love, and a quick apology heals more than being right.",
+     "for_you": "You are not failing because you still wait. The love you have for your son is real, and that bond is why your heart aches. You have shaped thousands of lives, but this is one heart you cannot teach. The waiting is not your fault.",
+     "try_today": "Notice when your mind asks what your son is doing right now.",
+     "scene_line": null,
+     "asks": [
+      "How do I stop my mind from waiting for the phone to ring?",
+      "Can I be steady while I am still grieving?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.272.23",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 272.23",
+     "family": "mbh",
+     "speaker": "Chirakari",
+     "listener": "Himself",
+     "setting": "Ordered to kill his mother, Chirakari first weighs what a father is.",
+     "sanskrit": "मुच्यते बन्धनात्पुरुषं फलं वृक्षान्प्रमुच्यते / क्लिश्यन्नपि सुतस्नेहैः पिता पुत्रं न मुञ्चति",
+     "line": "Children grow and leave like fruit from a tree. A father's love, even when it hurts him, never lets go.",
+     "translation": "A grown person is freed from his bonds as fruit drops from the tree. But a father, even suffering through his love, never lets go of his child.",
+     "words": [],
+     "why": "In anger, and when loved ones seem to have wronged you, slow down.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.chirakari",
+      "title": "Chirakari, the one who acts slowly",
+      "summary": "In a jealous rage, the sage Gautama orders his son Chirakari to kill his mother and storms off. Chirakari, famous for slowness, weighs a father's word against a mother's worth for so long that Gautama returns, regretful, and finds them both alive.",
+      "story_hook": "Ordered by his furious father to kill his mother, Chirakari did what he always did: he thought about it.",
+      "lesson": "In anger, and when loved ones seem to have wronged you, slow down."
+     },
+     "score": 2.7272,
+     "beat": "steady",
+     "role_fit": 0.374,
+     "meaning": "Chirakari was told to kill his mother. He stood still. He did not rush. He asked himself what a father is. He found that a father's love is a chain he cannot break even to save his own life. The verse says this is natural. It does not ask you to cut the bond. It asks you to see that love does not end because a person moves far away.",
+     "for_you": "The love you feel for your son is real and it has not ended. It is not a wound you could heal. It is a steady thing you can carry with you. The waiting is not a failure. It is the proof that the bond was real.",
+     "try_today": "Notice one moment when you feel the love for your son without the waiting.",
+     "scene_line": "You are in your own kitchen, holding the weight of a father's love that will not let go.",
+     "asks": [
+      "How do I know if I am waiting or if I am just living?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "words": [
+      {
+       "sa": "देहः",
+       "en": "body"
+      },
+      {
+       "sa": "तिष्ठतु",
+       "en": "may remain"
+      },
+      {
+       "sa": "कल्पान्तं",
+       "en": "until the end of the kalpa"
+      },
+      {
+       "sa": "गच्छतु",
+       "en": "may go"
+      },
+      {
+       "sa": "अद्यैव",
+       "en": "even today"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "पुनः",
+       "en": "again"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "हानिः",
+       "en": "loss"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "चिन्मात्ररूपिणः",
+       "en": "of the form of pure consciousness"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.0986,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra speaks to Janaka in the court, pressing home the core teaching that he is not the roles he plays. He asks whether the body lasts a hundred years or ends today, what gain or loss that is to pure awareness. The idea is that you are the ocean, not the waves. Let them rise and fall without losing yourself.",
+     "for_you": "The waiting has dried up your steadiness because the bond is still real. You are not the waiting heart. What you are is the space in which the waiting happens, and that space is untouched.",
+     "try_today": "Notice the difference between the ache and the one who feels it.",
+     "scene_line": "You are the court in which grief rises and falls, not the king who loses himself to it.",
+     "asks": [
+      "How do I feel like a space instead of a waiting room?",
+      "What part of me is not the father who waits?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "words": [
+      {
+       "sa": "यह",
+       "en": "this"
+      },
+      {
+       "sa": "बिचारि",
+       "en": "thinking"
+      },
+      {
+       "sa": "नहिं",
+       "en": "not"
+      },
+      {
+       "sa": "करउँ",
+       "en": "I do"
+      },
+      {
+       "sa": "हठ",
+       "en": "stubbornness"
+      },
+      {
+       "sa": "झूठ",
+       "en": "false"
+      },
+      {
+       "sa": "सनेहु",
+       "en": "affection"
+      },
+      {
+       "sa": "बढ़ाइ",
+       "en": "increasing"
+      },
+      {
+       "sa": "मानि",
+       "en": "accepting"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कर",
+       "en": "of"
+      },
+      {
+       "sa": "नात",
+       "en": "bond"
+      },
+      {
+       "sa": "बलि",
+       "en": "I bow"
+      },
+      {
+       "sa": "सुरति",
+       "en": "memory"
+      },
+      {
+       "sa": "बिसरि",
+       "en": "forget"
+      },
+      {
+       "sa": "जनि",
+       "en": "do not"
+      },
+      {
+       "sa": "जाइ",
+       "en": "go"
+      }
+     ],
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.0474,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya, Ram's mother, knows he must leave for the forest. She tells him she will not hold him back with false affection. She blesses his path and asks only that he not forget her. The verse shows that true love sometimes means letting go. It does not mean the bond is broken. It means the love is given a different shape, one that does not need to hold on to be real.",
+     "for_you": "You wait for your son in Germany. The waiting is love with nowhere to go. You cannot teach your own heart to stop waiting, because the bond is still real. You can let the love go forward without holding it back.",
+     "try_today": "Send a message to your son that carries only a blessing.",
+     "scene_line": "You stand at the door, choosing to bless the parting instead of holding it back.",
+     "asks": [
+      "How do I send my love without asking for anything back?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.28",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.28",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage to the ruined prince Kshemadarshi, who keeps longing for what he lost.",
+     "sanskrit": "अवाप्यान्कामयन्नर्थान्नानवाप्यान्कदाचन / प्रत्युत्पन्नाननुभवन्मा शुचस्त्वमनागतान्",
+     "line": "Want what is within reach. Enjoy what is here now. Don't grieve over what hasn't happened.",
+     "translation": "Wish for what can be had, never for what cannot. Enjoy what is in front of you now, and do not grieve over what has not yet come.",
+     "words": [],
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 2.1545,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": "The sage Kalakavrikshiya speaks to Prince Kshemadarshi, who has lost his kingdom and wealth and keeps longing for what he lost. The sage tells him to wish for what can be had, never for what cannot. He says to enjoy what is in front of you now, and do not grieve over what has not yet come. The point is clear: grief cannot restore what is gone, so want what is within reach and make peace with the success of others.",
+     "for_you": "The waiting for your son has become a habit that keeps you from the world that is still here. The love you hold is real, but it has no place to land right now. You can let it rest by turning your attention to what is within reach.",
+     "try_today": "Name one thing within reach and let your attention rest there.",
+     "scene_line": "You are the ruined prince, and the sage is speaking to you in your own quiet room.",
+     "asks": [
+      "What is here now that I can enjoy?",
+      "How do I let the love rest without fighting the waiting?",
+      "What can I want that is within my reach today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "words": [],
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "You have kept your heart open for nine years, waiting for a return that will not happen. That waiting is not a failure of teaching. It is the same faithful gathering. The love you feel is real, and it can be a quiet offering instead of a wound.",
+     "asks": [
+      "How do I let the waiting become something I can carry?",
+      "Can the love I feel find a place to rest?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The waiting has a name",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 11584,
+   "total": 11588
+  },
+  "_ms": 11591
+ }
+}

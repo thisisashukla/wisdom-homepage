@@ -1,0 +1,678 @@
+{
+ "situation": {
+  "id": "in_millennial_sibling_property",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 3
+  },
+  "note": "my elder brother wants the ancestral house sold, I want to keep it for maa. we have stopped speaking. relatives are taking sides. it's breaking my mother.",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Lucknow)",
+  "lang": "english",
+  "slices": [
+   "anger",
+   "family",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "heartbroken and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being asked to accept the sale of a home that holds your mother's life to standing in your own truth and speaking it.",
+   "week_beats": {
+    "hook": "You recognise being asked to accept the sale, the brother's insistence, the relatives' sides, and the mother breaking from it.",
+    "diagnose": "You see that the house is not the issue. The issue is what they are asking you to become.",
+    "act": "You try holding your ground, speaking the true thing to your brother, and doing your own duty without shrinking."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "sibling",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "Their brother wants the ancestral house sold, they want to keep it for their mother, relatives are taking sides, and the mother is breaking from the conflict.",
+   "mirror": "The relatives are taking sides, and your mother is the one breaking from it.",
+   "insight": "Your brother wants the house sold. You want it kept for your mother. The relatives have picked sides. The one who is breaking from this is your mother.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "sibling_rift",
+     "label": "I've fallen out with my sibling",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.394,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.387,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being asked to accept the sale of a home that holds your mother's life, while your brother insists, relatives pick sides, and your mother breaks from the silence between you.",
+    "diagnose": "When others see only their own interest, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Hold your ground on what is yours, speak the true thing gently and firmly, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of learning who was dismissed by her own family for choosing the right thing, and who stood in her truth until the truth itself was proven right."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The house and the silence",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wants to keep the ancestral house for their mother",
+    "the brother wants it sold",
+    "they have stopped speaking",
+    "relatives are taking sides"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:35=0.3,15=0.6,50=0.6,4=0.0,532=0.0,7=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.65",
+    "redo:2",
+    "redo_fixed:2",
+    "day1:third_try",
+    "dropped:accept=3,fallback_line=1,scene_line_invented=1,try_today_accept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 1.2424,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is shaken, and Krishna is guiding him toward action. The point is clear: a path walked by someone else, even if it looks perfect, carries a hidden fear. Your own way, lived out with your own limits and your own truth, is the only one that holds. It is better to be yourself, imperfectly, than to wear a mask that was never yours to begin with.",
+     "for_you": "Your brother wants to sell the house, but you are holding to what your mother needs. That is your path, and it is not borrowed from him. The relatives are loud, but they do not hold your mother's memory in their hands. You are not at fault. Stand firm.",
+     "try_today": "Notice the exact moment you feel the urge to agree to the sale.",
+     "scene_line": "You are being asked to wear a borrowed duty that does not fit.",
+     "asks": [
+      "How do I walk my own path when everyone wants me to follow theirs?",
+      "What does it mean to do my duty imperfectly?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 2.8007,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": "Bhishma speaks to Yudhishthira on how to bear public slander. Yudhishthira has just asked how to respond when a fool insults you in an assembly. Bhishma tells him to let the words pass like a crow cawing. The person who speaks ill of others only puts their own faults on display, just as a snake raises its hood to show its own danger.",
+     "for_you": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+     "try_today": "Notice when someone speaks of you in a crowd. See their own faults on display.",
+     "scene_line": "You stand in the assembly while your brother raises his hood.",
+     "asks": [
+      "How do I tell the difference between his words and my own worth?",
+      "What fault is he showing by asking me to sell?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_taittiriya.50",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address continues.",
+     "sanskrit": "आचार्याय प्रियं धनमाहृत्य प्रजातन्तुं मा व्यवच्छेत्सीः । सत्यान्न प्रमदितव्यम् । धर्मान्न प्रमदितव्यम् । कुशलान्न प्रमदितव्यम् । भूत्यै न प्रमदितव्यम् । स्वाध्यायप्रवचनाभ्यां न प्रमदितव्यम् ॥",
+     "line": "Do not drift from truth or duty. Do not neglect your wellbeing, your prosperity, or your learning.",
+     "translation": "Having brought your teacher the gift he values, do not cut off the line of your family. Do not drift from truth. Do not drift from what is right. Do not neglect your wellbeing. Do not neglect your prosperity. Do not neglect study and teaching.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.8758,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "A teacher speaks to a graduating student at the end of their studies. The student has offered the traditional gift. The teacher tells them not to sever the line of their family. They say do not drift from truth. Do not drift from what is right. Do not neglect your wellbeing. Do not neglect your prosperity. Do not neglect study and teaching.",
+     "for_you": "You want to keep the house for your mother. Your brother wants it sold. The relatives are taking sides. The mother is breaking from the conflict. This verse asks you to hold your ground. Keep your truth. Keep your duty to her.",
+     "try_today": "Tell your mother one true thing about the house today.",
+     "scene_line": null,
+     "asks": [
+      "How do I hold my ground without breaking the family line?",
+      "What does my duty to my mother look like today?",
+      "How do I keep my own wellbeing while this breaks me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "words": [
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "अनन्त",
+       "en": "infinite"
+      },
+      {
+       "sa": "महाम्भोधौ",
+       "en": "great ocean"
+      },
+      {
+       "sa": "विश्ववीचिः",
+       "en": "universal wave"
+      },
+      {
+       "sa": "स्वभावतः",
+       "en": "by nature"
+      },
+      {
+       "sa": "उदेतु",
+       "en": "rises"
+      },
+      {
+       "sa": "वास्तमायातु",
+       "en": "and sets"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "क्षतिः",
+       "en": "decline"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.4821,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra tells Janaka that the world is just waves on the ocean. The ocean does not gain or lose when waves rise or fall. You are the ocean, and the world is just waves.",
+     "for_you": "The house is not the only thing in your life, and your brother is not the only thing in your life. You have your work and your mother, and you have your own truth. You do not have to drown in the noise of the sale.",
+     "try_today": "Notice one thing in your work today that is steady and true.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.103.34",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 103.34",
+     "family": "mbh",
+     "speaker": "Brihaspati (retold by Bhishma)",
+     "listener": "Indra",
+     "setting": "Brihaspati counsels Indra on how to hold authority among difficult people.",
+     "sanskrit": "मृदुमप्यवमन्यन्ते तीक्ष्णादुद्विजते जनः / मातीक्ष्णो मा मृदुर्भूस्त्वं तीक्ष्णो भव मृदुर्भव",
+     "line": "People walk over the soft and fear the harsh. Be firm when it's needed, gentle when it's needed.",
+     "translation": "People look down even on the gentle, and they shrink from the harsh. Do not be only harsh, do not be only soft: be firm when firmness is needed and gentle when gentleness is.",
+     "words": [],
+     "why": null,
+     "misuse": "Firmness here means clarity, not cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0518,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "Brihaspati speaks to Indra about ruling, and tells him that people will walk all over the gentle and shrink from the harsh. The verse says to be neither only harsh nor only soft. It says to be firm when firmness is needed and gentle when gentleness is needed, because extremes invite disrespect.",
+     "for_you": "Your brother is reading your softness as permission to sell the house. The relatives are watching to see if you will shrink. You do not have to choose between a shouting match and giving in. You can hold the line with clarity, not cruelty.",
+     "try_today": "Speak one clear sentence to your brother about keeping the house for your mother.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.9323,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to think less of himself or settle for little. She says to set his mind on what is truly good and stop fearing. She urges him to pull himself together and rise again.",
+     "for_you": "Your brother's side and the relatives have tried to make you small. They want you to settle for the sale. The house is your mother's life. You do not need to win the argument today. You could stop thinking less of yourself.",
+     "try_today": "Say to your brother that you will not agree to sell the house for your mother's sake.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.vibhishan_counsel",
+     "title": "Vibhishan speaks up and is kicked",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Vibhishan",
+      "Ravana",
+      "Malyavan"
+     ],
+     "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+     "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+     "lesson": "Say the hard thing with respect; if you are struck for it, you may go.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.36.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 36",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ravana",
+      "setting": "Vibhishan, Ravana's younger brother, advises him in open court.",
+      "sanskrit": "चौदह भुवन एक पति होई। भूत द्रोह तिष्टइ नहिं सोई॥ गुन सागर नागर नर जोऊ। अलप लोभ भल कहइ न कोऊ ॥",
+      "line": "You may be gifted and clever, but even a little greed and people stop calling you good.",
+      "translation": "Even a sole master of the fourteen worlds cannot last if he makes enemies of living beings. A person may be an ocean of virtues and clever too, but if he has even a little greed, no one calls him good.",
+      "words": [
+       {
+        "sa": "चौदह",
+        "en": "fourteen"
+       },
+       {
+        "sa": "भुवन",
+        "en": "worlds"
+       },
+       {
+        "sa": "एक",
+        "en": "one"
+       },
+       {
+        "sa": "पति",
+        "en": "lord"
+       },
+       {
+        "sa": "होई",
+        "en": "is"
+       },
+       {
+        "sa": "भूत",
+        "en": "living beings"
+       },
+       {
+        "sa": "द्रोह",
+        "en": "hatred"
+       },
+       {
+        "sa": "तिष्टइ",
+        "en": "endures"
+       },
+       {
+        "sa": "नहिं",
+        "en": "not"
+       },
+       {
+        "sa": "सोई",
+        "en": "that"
+       },
+       {
+        "sa": "गुन",
+        "en": "virtues"
+       },
+       {
+        "sa": "सागर",
+        "en": "ocean"
+       },
+       {
+        "sa": "नागर",
+        "en": "wise"
+       },
+       {
+        "sa": "नर",
+        "en": "man"
+       },
+       {
+        "sa": "जोऊ",
+        "en": "who"
+       },
+       {
+        "sa": "अलप",
+        "en": "little"
+       },
+       {
+        "sa": "लोभ",
+        "en": "greed"
+       },
+       {
+        "sa": "भल",
+        "en": "good"
+       },
+       {
+        "sa": "कहइ",
+        "en": "says"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "कोऊ",
+        "en": "anyone"
+       }
+      ],
+      "why": "Say the hard thing with respect; if you are struck for it, you may go.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.vibhishan_counsel",
+       "title": "Vibhishan speaks up and is kicked",
+       "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+       "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+       "lesson": "Say the hard thing with respect; if you are struck for it, you may go."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "teaser": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "for_you": "Your brother has drawn a line in the sand, and you have drawn another. The relatives have chosen sides, and your mother is caught between them. This is not your failure. It is the cost of speaking a truth that others do not want to hear.",
+     "asks": [
+      "How do I speak the truth without breaking what is left of my family?",
+      "Where do I find the strength to stay when everyone is against me?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The house and the silence",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19399,
+   "total": 19401
+  },
+  "_ms": 19407
+ }
+}

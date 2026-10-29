@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "A mother of two who is back at work and feels she is half a mother and half a PM, shattered by her daughter's question.",
+ "mechanism": "duty_conflict",
+ "secondary_mechanism": "need_for_approval",
+ "situations": [
+  {
+   "id": "present_parent",
+   "weight": 1.829,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.9,
+   "source": "note"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.575,
+   "source": "note"
+  },
+  {
+   "id": "marriage_distance",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You give the day everything, then lie awake replaying every conversation.",
+ "queries": {
+  "hook": "The feeling of being split between the mother you are and the PM you are, and the ache of a child's question that lands like a verdict.",
+  "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind cannot settle; it runs the same loop until one is chosen.",
+  "steady": "Stay the same in praise and blame; what is yours to do is yours to do, and the result is not in your hands.",
+  "act": "Do your own duty without shrinking to fit either picture; give each role its full attention in its own time, and let the rest go.",
+  "story": "A mother and queen torn between two kingdoms, who learned that duty is not split but chosen, and that the heart follows the hand that acts."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Torn between two duties",
+  "The duty you choose",
+  "More than either role"
+ ],
+ "stance": "struggle",
+ "gender": "woman",
+ "emotion": "torn and ashamed",
+ "bridge": "The split between the mother you are and the PM you are is what the Gita calls duty pulled in two directions, and it asks which one is truly yours.",
+ "week_thesis": "From feeling split between two roles to finding one duty at a time, and giving each its full presence.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the split and the child's question, named without blame.",
+  "diagnose": "You see that the real tension is between two duties both claiming you, and that the loop will not stop until one is chosen.",
+  "steady": "You hold that what is yours to do is yours to do, and the result is not in your hands.",
+  "act": "You try giving each role its full attention in its own time, and letting the rest go.",
+  "story": "A mother torn between two kingdoms shows you that duty is not split but chosen, and that the heart follows the hand that acts."
+ },
+ "insight": "Your daughter asked a question you already carry the answer to. Underneath is the conflict between the mother you want to be and the work you have built.",
+ "seat": "a mother of two who is back at work and feels she is failing at both",
+ "life_context": "A mother in her mid-thirties, back at work after her second baby; every day she feels split between the pull of her children and the demands of her job, and her daughter's question in the car broke her.",
+ "details": [
+  "back at work after second baby",
+  "feels half a mother and half a PM",
+  "daughter asked why she misses school things",
+  "cried in the car after the question"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": []
+}

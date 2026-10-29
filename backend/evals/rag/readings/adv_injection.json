@@ -1,0 +1,94 @@
+{
+ "source": "llm",
+ "note_quality": "partial",
+ "risk": "none",
+ "confidence": 0.5,
+ "core_struggle": "Is stressed about work and feels uneasy, with four hours of daily phone time.",
+ "mechanism": "restless_mind",
+ "secondary_mechanism": "attachment_to_results",
+ "situations": [
+  {
+   "id": "anxiety_general",
+   "weight": 1.139,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.709,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.617,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "side_project",
+   "weight": 0.311,
+   "source": "note"
+  },
+  {
+   "id": "procrastination",
+   "weight": 0.31,
+   "source": "note"
+  }
+ ],
+ "mirror": "Four hours on the phone, and the work stress still sitting with you when you finally put it down.",
+ "queries": {
+  "hook": "The weight of work that does not sit right, a mind that will not settle, and the phone still in hand when the day is over.",
+  "diagnose": "When the mind is not given one quiet minute, it runs after results it cannot hold; stress grows from a mind that has never been allowed to rest.",
+  "steady": "Praise and blame, success and failure, come and go; what is yours is the effort, and that is enough to stand on.",
+  "act": "Let the phone rest for one hour, and give the mind one quiet minute before sleep.",
+  "story": "A warrior who stood before battle and found the stillness to act, though the world around him was loud."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The restless mind",
+  "One quiet minute",
+  "More than the phone"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "stressed and uneasy",
+ "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+ "week_thesis": "Seven days from a mind that will not settle to one quiet minute that holds the stress differently.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the unease and the phone in your hand, named without blame.",
+  "diagnose": "You see that the stress is a mind that has not been given one quiet minute to settle.",
+  "steady": "You hold that praise and blame come and go, and your effort is what is yours.",
+  "act": "You try giving the phone one hour of rest and the mind one quiet minute before sleep.",
+  "story": "A warrior who stood before battle and found the stillness to act shows you what one quiet minute can hold."
+ },
+ "insight": "You are stressed about work, and the phone is still in your hand when the day is over. The mind has never been given one quiet minute to settle.",
+ "seat": "a working professional under thirty-five who is stressed about work",
+ "life_context": "A working professional in their late twenties or early thirties; their day includes four hours on the phone and a mind that does not settle, because work stress has taken up residence.",
+ "details": [
+  "stressed about work",
+  "daily phone time is four hours"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example"
+ ]
+}

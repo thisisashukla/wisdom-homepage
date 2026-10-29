@@ -1,0 +1,721 @@
+{
+ "situation": {
+  "id": "us_genx_mother_empty_nest",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "market": "USA (Texas)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and unmoored",
+   "bridge": "The silence of that four-hour drive and the mother who no longer sees you are what the texts call the mind running after what is passing. It cannot hold.",
+   "week_thesis": "The silence of that drive and the mother who no longer sees you become, over seven days, the ground beneath your feet rather than the wind in your mind.",
+   "week_beats": {
+    "hook": "You recognise the unmoored feeling, named without judgement.",
+    "diagnose": "You see that it is grief for two futures dissolving at once, and that the mind cannot settle while it tries to hold both.",
+    "steady": "You hold that what is real in you cannot be lost, and that love remains even when the form it wore is gone.",
+    "act": "You try letting the grief have its voice and offering one act of care that is yours alone.",
+    "story": "A man who lost his father and had to rebuild his life shows you how love continues after the one who held it is gone."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "Caring for a mother whose memory is fading, while the child who needed her most has just left for college; mind will not settle.",
+   "mirror": "You dropped your child at college and drove home in silence.",
+   "insight": "Two loves are letting go at once, and the mind will not settle because it is trying to hold both. Underneath is grief for the future you imagined.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.485,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind will not settle, caught between the child who no longer needs you and the mother who no longer knows you.",
+    "diagnose": "When what we love is passing, the heart aches because the bond was real; grief is love with nowhere to go.",
+    "steady": "What is real in us cannot be lost; the love that shaped you remains even when the form it wore is gone.",
+    "act": "Let the grief have its voice, offer one act of care that is yours alone, and let the rest go.",
+    "story": "A man who lost his father and had to rebuild his life shows what it means to carry love forward after the one who held it is gone."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The two losses",
+    "What grief needs",
+    "The love that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college",
+    "drove four hours in silence",
+    "feels needed less by both"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:8=0.6,29=0.0,107=0.3,13=0.6,15=0.0,45=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.64",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:copied=1,repeat=1,scene_line_long=1,soft_kept=2,try_today_long=2",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.0384,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has collapsed on the battlefield, weeping and refusing to fight. Krishna asks why he is acting so weakly. Arjuna says that even if he won everything, even an unrivalled kingdom or rule over the gods, he could not touch this grief. He says he sees no way to drive away the sorrow that is drying up his senses. He admits he does not know what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "for_you": "You drove four hours in silence after dropping your younger child at college. You feel needed less by both. That grief is real. You do not know what is right now. Ask for what you need.",
+     "try_today": "Name one thing you cannot fix today.",
+     "scene_line": "You are on a four-hour drive with a grief that will not end.",
+     "asks": [
+      "What would it mean to admit I do not know?",
+      "Who can I ask to teach me what is right?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.173.53",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 173.53",
+     "family": "mbh",
+     "speaker": "A brahmin (retold by Bhishma)",
+     "listener": "King Senajit",
+     "setting": "The brahmin explains to King Senajit why loss hurts so much.",
+     "sanskrit": "किंचिदेव ममत्वेन यदा भवति कल्पितम् / तदेव परितापाय नाशे संपद्यते तदा",
+     "line": "Whatever you start calling 'mine' becomes a source of pain the day you lose it.",
+     "translation": "Whatever a person begins to think of as 'mine', that very thing becomes a source of anguish when it is lost.",
+     "words": [],
+     "why": "No one suffers forever. Meet what comes with an undefeated heart.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.senajit_brahmin",
+      "title": "King Senajit and the brahmin's consolation",
+      "summary": "King Senajit is crushed by his son's death. A brahmin comforts him: everyone suffers, no sorrow lasts forever, effort beats idleness, and whatever we call 'mine' becomes a source of pain.",
+      "story_hook": "",
+      "lesson": "No one suffers forever. Meet what comes with an undefeated heart."
+     },
+     "score": 2.5594,
+     "beat": "diagnose",
+     "role_fit": 0.605,
+     "meaning": "King Senajit is broken by the death of his son. A brahmin comes to him and speaks plainly. He says that whatever we begin to call mine, that very thing becomes a source of pain the day it is lost. The brahmin is not denying the grief. He is naming the shape of it. The mind is not a container. It is a river. It cannot hold the water. It can only meet the current. So the instruction is not to stop the loss. It is to meet it with an undefeated heart.",
+     "for_you": "The four hours of silence and the mother who no longer sees you are both losses you have started to call yours. The mind is trying to hold the empty seat at the kitchen table and the empty room upstairs at the same time. It cannot.",
+     "try_today": "Notice one moment when the mind tries to hold both losses at once. Let it pass.",
+     "scene_line": "You are in the silence of the four-hour drive, watching the road unroll.",
+     "asks": [
+      "How do I stop the mind from holding both losses at once?",
+      "What does an undefeated heart feel like when I am driving alone?",
+      "How do I let the loss pass through without it passing through me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.107",
+     "ref": "Sursagar vinay pada",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "Hari",
+     "setting": "Surdas, looking back on hard times, almost misses them for how close God felt.",
+     "sanskrit": "अब वे बिपदा हू न रहीं। मनसा करि सुमिरत हे जब-जब, मिलते तब-तबहीं ॥ अपने दीन दास के हित लगि, फिरते सँग-सँगहीं । लेते राखि पलक गोलक ज्यों, संतत तिन सबहीं ॥",
+     "line": "In the hardest days he walked beside me and kept me as the eyelid keeps the eye.",
+     "translation": "Now even those troubles are gone. Back then, whenever I remembered you in my heart, you met me right then. For the good of your poor servant you walked along beside me, and kept me through all of it as the eyelid keeps the eye.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": null,
+     "score": 2.983,
+     "beat": "steady",
+     "role_fit": 0.63,
+     "meaning": "Surdas, an old blind poet, speaks from memory. He remembers a time when God was so close he almost missed the hardship, because the divine presence felt like his own eyelid, keeping the eye safe without him thinking about it. He says that even those hard days are gone now, but in them, remembering God was enough to bring immediate help. The verse proposes that the one who protects you is not a distant figure, but the very thing that lets you see, holding you without your asking.",
+     "for_you": "The mother who no longer sees you and the child who has driven away are both forms that have changed. The love you feel, the care you gave, is not gone. It is the eyelid keeping the eye.",
+     "try_today": null,
+     "scene_line": "You are the eye that the eyelid keeps, walking through the silence of the drive.",
+     "asks": [
+      "How do I hold onto love when the person I loved is no longer there?",
+      "Can I feel protected when I am the one doing all the caring?",
+      "What does it mean to be kept when I feel I am the one holding everything?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "words": [
+      {
+       "sa": "देहिनः",
+       "en": "the embodied self"
+      },
+      {
+       "sa": "अस्मिन्यथा",
+       "en": "in this"
+      },
+      {
+       "sa": "देहे",
+       "en": "body"
+      },
+      {
+       "sa": "कौमारं",
+       "en": "childhood"
+      },
+      {
+       "sa": "यौवनं",
+       "en": "youth"
+      },
+      {
+       "sa": "जरा",
+       "en": "old age"
+      },
+      {
+       "sa": "तथा",
+       "en": "likewise"
+      },
+      {
+       "sa": "देहान्तरप्राप्तिः",
+       "en": "arrival at another body"
+      },
+      {
+       "sa": "धीः",
+       "en": "the wise"
+      },
+      {
+       "sa": "तत्र",
+       "en": "there"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "मुह्यति",
+       "en": "is deluded/confused"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.6111,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, where Arjuna has laid down his bow and refused to fight. The grief is immediate and total. Krishna tells him that the soul inside the body passes through childhood, youth, and old age, and then moves on to another body. The one who is steady does not lose their footing at this. The idea is that what is truly you outlasts every loss and every passing pain.",
+     "for_you": "Your part is not to stop the change, but to trust that the love you carry is not the body itself. It remains. What is real in you cannot be lost.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": [
+      "How do I hold the love when the body is no longer here?",
+      "What is real in me that the grief cannot touch?",
+      "How do I stop my mind from running after the silence?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "words": [
+      {
+       "sa": "यह",
+       "en": "this"
+      },
+      {
+       "sa": "बिचारि",
+       "en": "thinking"
+      },
+      {
+       "sa": "नहिं",
+       "en": "not"
+      },
+      {
+       "sa": "करउँ",
+       "en": "I do"
+      },
+      {
+       "sa": "हठ",
+       "en": "stubbornness"
+      },
+      {
+       "sa": "झूठ",
+       "en": "false"
+      },
+      {
+       "sa": "सनेहु",
+       "en": "affection"
+      },
+      {
+       "sa": "बढ़ाइ",
+       "en": "increasing"
+      },
+      {
+       "sa": "मानि",
+       "en": "accepting"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कर",
+       "en": "of"
+      },
+      {
+       "sa": "नात",
+       "en": "bond"
+      },
+      {
+       "sa": "बलि",
+       "en": "I bow"
+      },
+      {
+       "sa": "सुरति",
+       "en": "memory"
+      },
+      {
+       "sa": "बिसरि",
+       "en": "forget"
+      },
+      {
+       "sa": "जनि",
+       "en": "do not"
+      },
+      {
+       "sa": "जाइ",
+       "en": "go"
+      }
+     ],
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 2.8799,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya is alone in her chambers, preparing to let her son go. She speaks to Ram, who has come to her for a blessing before his exile. She tells him she will not hold him back with false affection. She blesses him and asks only that he not forget the bond of a mother. This is love at its hardest. It is letting go with your eyes open.",
+     "for_you": "You are the one who has dropped a child at college and is now driving in silence. Kausalya does not ask you to forget. She asks only that the bond remain, even when the body changes and the mind will not settle. Your grief is not false.",
+     "try_today": "Write one sentence to your mother that does not ask for anything.",
+     "scene_line": "You are in your own palace of silence, blessing the ones who leave.",
+     "asks": [
+      "How do I keep the bond when the mind will not settle?",
+      "What do I say when the one I love no longer sees me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.2845,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma is answering Yudhishthira's question about a long and good life. He says to rise before sunrise and greet your mother and father, and your teacher or another elder. This daily act of respect is what builds a long life. It is not a grand gesture but a small, steady habit of honoring the ones who gave you life.",
+     "for_you": "The four-hour drive home is the silence of a daily greeting you can no longer offer. Your mother's fading memory and your child's departure are two mornings you cannot greet. Yet the small act of care you give now is yours alone. It is the only greeting left to give.",
+     "try_today": "Greet your mother softly at the start of the day, even if she does not recognize you.",
+     "scene_line": "You are at the start of a morning that holds two empty chairs.",
+     "asks": [
+      "How do I greet someone who no longer sees me?",
+      "Where do I find the strength for this new routine?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "words": [],
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Kausalya sat with a mother whose memory was failing, and her own son was far away. She did not fix the grief. She simply held the space for it. Your four-hour drive and your mother’s fading memory are not failures of your love. They are the new shape of it.",
+     "asks": [
+      "How do I keep showing up when the person I care for no longer sees me?",
+      "What does it mean to let go of the grief I imagined?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The two losses",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15955,
+   "total": 15958
+  },
+  "_ms": 15966
+ }
+}

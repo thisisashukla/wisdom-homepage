@@ -1,0 +1,739 @@
+{
+ "situation": {
+  "id": "us_genx_wife_affair_discovered",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "found messages on my wife's phone. she says it was only talking. I can't look at her. I can't leave because of the kids. I'm boiling inside all day.",
+  "note_source": "text",
+  "expect_stance": "wronged",
+  "expect_risk": null,
+  "market": "USA (New Jersey)",
+  "lang": "english",
+  "slices": [
+   "anger",
+   "betrayal",
+   "lang:english",
+   "marriage"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "harm_from_others",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "betrayed and trapped",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "From boiling inside and feeling trapped by the children, to speaking the true thing and finding the courage to act without letting the family become your only reason to stay.",
+   "week_beats": {
+    "hook": "You recognise the betrayal and the anger, named without judgement.",
+    "diagnose": "You see that the harm deepens only if you let their word replace what you know in your body.",
+    "steady": "You hold that what you know in your body cannot be made smaller by what they say.",
+    "act": "You try speaking the true thing to her, gently and firmly, and find the courage the moment asks for.",
+    "story": "A man whose trust was broken questions his wife and finds the footing to act without letting the family become his prison."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "He found messages on his wife's phone, was told it was only talking, and now feels betrayed, boiling inside, and trapped by the children.",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "betrayal",
+     "label": "Someone I trusted betrayed me",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.66,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.621,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.422,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A man whose trust was broken by his own, who questioned her openly, and found the footing to act without letting the family become his prison."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "The wound",
+    "Whose word it is",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "found messages on wife's phone",
+    "cannot leave because of the kids"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:29=0.7,12=0.6,5=0.3,6=0.6,9=0.7,40=0.7",
+    "week_same:12",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.63",
+    "redo:4",
+    "redo_fixed:4",
+    "dropped:fallback_line=3,gendered=3,invented=1,scene_line_invented=1,try_today_accept=1,try_today_gendered=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.1612,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands on the battlefield. He sees his own kin, his teachers, and his elders arrayed against him on the other side. He tells Krishna that his limbs give way, his mouth is parched, his body trembles, and his hair stands on end. He drops his bow and his mind goes blank. The Gita begins here, with a man who cannot stand, not with a warrior who is ready to fight. The teaching starts from the breakdown, not from the hero.",
+     "for_you": "You found the messages and your body knew before your mind did. The betrayal is real. The anger is real. You do not have to stand straight right now. Let the trembling be the truth of what you are holding.",
+     "try_today": "Notice where in your body the betrayal is sitting today.",
+     "scene_line": "You are on the field where your own kin are drawn against you.",
+     "asks": [
+      "Why does my body betray me when my mind wants to stand?",
+      "How do I hold the children and still feel this rage?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "words": [
+      {
+       "sa": "दीनताजं",
+       "en": "from humility"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "माने",
+       "en": "in honor"
+      },
+      {
+       "sa": "गुणे",
+       "en": "in virtue"
+      },
+      {
+       "sa": "खलभयं",
+       "en": "fear of wickedness"
+      },
+      {
+       "sa": "खलु",
+       "en": "indeed"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "निन्दकजं",
+       "en": "born of criticism"
+      },
+      {
+       "sa": "शक्तौ",
+       "en": "in strength"
+      },
+      {
+       "sa": "विद्यायां",
+       "en": "in knowledge"
+      },
+      {
+       "sa": "वादिनं",
+       "en": "of the debater"
+      },
+      {
+       "sa": "भयम्",
+       "en": "fear"
+      }
+     ],
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 2.3375,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Vishnu is speaking to the gods, who have just been shaken by a great disturbance and are asking how to become fearless. He tells them that fear is not an accident. It is the price of every possession. Honour brings the fear of disgrace. Virtue brings the fear of the wicked. Power brings the fear of critics. Learning brings the fear of rival debaters. Every gain carries its own shadow. The only freedom from this is to hold what you have lightly.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": "Notice one moment when her word tries to replace your own knowing.",
+     "scene_line": "You stand in the room where the messages were found, and the question is what you will honour.",
+     "asks": [
+      "How do I know what I know when she says it is only talking?",
+      "If I hold my family lightly, does that mean I do not love them?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "words": [
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "अनन्त",
+       "en": "infinite"
+      },
+      {
+       "sa": "महाम्भोधौ",
+       "en": "great ocean"
+      },
+      {
+       "sa": "विश्ववीचिः",
+       "en": "universal wave"
+      },
+      {
+       "sa": "स्वभावतः",
+       "en": "by nature"
+      },
+      {
+       "sa": "उदेतु",
+       "en": "rises"
+      },
+      {
+       "sa": "वास्तमायातु",
+       "en": "and sets"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "क्षतिः",
+       "en": "decline"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.8546,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra speaks to Janaka. He tells him that he is not the body, the mind, or the roles he plays. He is the boundless ocean. The waves of the world, with all their turmoil, rise and fall in him. They do not make him larger, and they do not make him smaller. He neither gains nor loses anything from the storm. The verse proposes that you are the ocean, not the waves. Let the waves of the world rise and fall by their own nature. You neither grow nor shrink.",
+     "for_you": "The messages on the phone were a wave, and the anger that followed was another. Your partner's words are waves too. They rise and fall, but they do not change the depth of who you are. You are the ocean.",
+     "try_today": null,
+     "scene_line": "You are the ocean in which the wave of betrayal rises and falls.",
+     "asks": [
+      "How do I stop the waves from drowning me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_mundaka.3.1.6",
+     "ref": "Mundaka Upanishad 3.1.6",
+     "ref_iast": "Muṇḍaka Upaniṣad 3.1.6",
+     "family": "up",
+     "speaker": "Angiras",
+     "listener": "Shaunaka",
+     "setting": "Angiras on truth as the path.",
+     "sanskrit": "सत्यमेव जयते नानृतं सत्येन पन्था विततो देवयानः । येनाऽऽक्रमन्त्यृषयो ह्याप्तकामा यत्र तत् सत्यस्य परमं निधानम् ॥",
+     "line": "Truth alone wins, not falsehood. Truth lays the road that the wise walk.",
+     "translation": "Truth alone wins, not falsehood. By truth the divine path is laid out, by which the sages, their desires fulfilled, travel to where the highest treasure of truth is.",
+     "words": [],
+     "why": "There is a calm witness in you that the anxious part can turn to.",
+     "misuse": "Truth wins in the long run; it is not a promise of quick victory.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "betrayal",
+       "label": "Someone I trusted betrayed me"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.mundaka.two_birds",
+      "title": "Two birds on one tree",
+      "summary": "Two birds sit on one tree: one eats the fruit and grieves, the other simply watches. When the anxious bird sees the calm one beside it, its sorrow falls away. The section goes on to praise truth, effort and freedom from craving.",
+      "story_hook": "",
+      "lesson": "There is a calm witness in you that the anxious part can turn to."
+     },
+     "score": 2.7334,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": null,
+     "for_you": "The messages on the phone are a truth your body knows. Your partner may call it only talking, but that does not make your knowledge smaller. You are the calm bird on the branch, watching the grief of the other. Your body is not wrong to know what happened.",
+     "try_today": "Notice one moment when your body knows something true before your mind speaks.",
+     "scene_line": null,
+     "asks": [
+      "How do I tell the truth I feel from the fear I carry?",
+      "What does it mean to let truth win when I am the one hurt?",
+      "Can the calm bird beside me help me breathe again?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.21.9",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.9",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha on getting through crises.",
+     "sanskrit": "एकं विवेकं सुहृदमेकां प्रौढसखीं धियम् । आदाय विहरन्नेव संकटेषु न मुह्यति ॥",
+     "line": "Make good judgment your friend and wisdom your companion, and crises won't bewilder you.",
+     "translation": "Taking discernment as your one true friend and wisdom as your seasoned companion, you can move through life and not lose your way in crises.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 2.6407,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Rama after a story of two brothers grieving their parents. Punya gently guides his weeping brother Pavana, showing him that the bonds of loss are made in the mind, and that worry grows only when we feed it. Vasishtha tells Rama to take discernment as a friend and wisdom as a companion, so that crises do not bewilder them. The verse proposes that we can move through life without losing our way when we choose a clear mind over endless rumination.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": null,
+     "scene_line": "You are in your own living room, choosing between the waves of worry and the steady ocean of your own judgment.",
+     "asks": [
+      "How do I tell good judgment from blame?",
+      "What is the true thing I need to say?",
+      "How do I stop feeding this worry?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.2534,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna tells Arjuna that on this path, no sincere effort is ever wasted. Even a little of this practice protects one from great fear. The point is to work wholeheartedly, give up clinging to the outcome, and keep a single steady purpose.",
+     "for_you": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+     "try_today": null,
+     "scene_line": "You stand in the kitchen, the children upstairs, and you speak the one true thing.",
+     "asks": [
+      "How do I speak the true thing without starting a war?",
+      "What is my steady purpose when the children are my only anchor?",
+      "Can a small effort protect me from the fear of what might happen?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Bharata",
+      "Kaikeyi",
+      "Kausalya"
+     ],
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+     "matched": [
+      {
+       "id": "betrayal",
+       "label": "Someone I trusted betrayed me"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.75.15",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+      "family": "vr",
+      "speaker": "Bharata",
+      "listener": "Kausalya",
+      "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+      "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+      "line": "Why blame me, who knew nothing? You know what I feel for him.",
+      "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+      "words": [],
+      "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "betrayal",
+        "label": "Someone I trusted betrayed me"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.bharata_blamed",
+       "title": "Bharata wrongly blamed",
+       "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+       "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+       "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Bharata had done nothing, and Kausalya was sure he had done it all",
+     "teaser": "Bharata had done nothing, and Kausalya was sure he had done it all",
+     "for_you": "You stand in a room where your truth is being questioned, and the person asking is the one who broke your trust. Bharata, the king's son, was blamed by the one he loved most. He did not turn away.",
+     "asks": [
+      "How do I speak my truth without burning the room down?",
+      "How do I know when my anger is protecting me?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The wound",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14355,
+   "total": 14358
+  },
+  "_ms": 14363
+ }
+}

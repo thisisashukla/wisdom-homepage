@@ -5,12 +5,14 @@ import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy policy for the Wisdom app and wisdomquotes.in. We do not sell your data.',
+  description: 'How the Wisdom app and wisdomquotes.in handle your data: what we collect, which AI reads your words and only with your yes, and how to delete your account.',
   alternates: { canonical: 'https://wisdomquotes.in/privacy' },
   robots: { index: true, follow: true },
 }
 
 const SUPPORT_EMAIL = 'work.ankurshukla@gmail.com'
+
+const ext = { target: '_blank', rel: 'noopener noreferrer' } as const
 
 export default function PrivacyPage() {
   return (
@@ -24,119 +26,130 @@ export default function PrivacyPage() {
         <div className="legal-wrap">
           <div className="legal-eyebrow">Legal</div>
           <h1 className="legal-h1">Privacy Policy</h1>
-          <p className="legal-meta">Last updated: May 2026 &nbsp;·&nbsp; Wisdom App &amp; wisdomquotes.in</p>
+          <p className="legal-meta">Last updated: 29 October 2026 &nbsp;·&nbsp; Wisdom app (iPhone) &amp; wisdomquotes.in</p>
 
           <div className="legal-body">
 
-            <p>Wisdom is a daily shloka and Bhagavad Gita app built by Ankur Shukla, an independent developer. This policy describes what data we collect, why, and your rights. We believe in minimal data collection and full transparency.</p>
+            <p>Wisdom is made by Ankur Shukla, an independent developer in India (&ldquo;we&rdquo;). This policy explains what the Wisdom iPhone app and wisdomquotes.in collect, why, who else handles it, and how to delete it.</p>
 
             <div className="highlight-box">
-              <strong>Our commitment:</strong> We do not sell your data. We do not share it with advertisers. The only third party we share anonymised usage data with is Mixpanel, solely to understand how people use the app so we can improve it.
+              <strong>In short:</strong> we don&apos;t sell your data, show ads, or track you across other apps and websites. What you write about your life is read by an AI model only after you tap <em>Allow</em>, only to choose your verses, and under the providers&apos; terms it isn&apos;t used to train AI models. You can delete your account and its data from <em>Settings → Account</em> at any time.
             </div>
 
-            <h2>1. Data we collect</h2>
-
-            <h3>In the Wisdom iPhone app</h3>
+            <h2>1. What the app collects</h2>
             <table className="data-table">
               <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Data</th>
-                  <th>Purpose</th>
-                  <th>Linked to you?</th>
-                </tr>
+                <tr><th>Data</th><th>What it is</th><th>Why</th><th>Linked to you?</th></tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Analytics</td>
-                  <td>Anonymous usage events (screens visited, features tapped)</td>
-                  <td>Understand how people use the app</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <td>Account (optional)</td>
-                  <td>Email address, unique user ID (if you sign in)</td>
-                  <td>Save verses and journal entries across devices</td>
+                  <td>User ID</td>
+                  <td>A random ID created the first time you open the app (an anonymous Supabase account, no sign-in needed)</td>
+                  <td>Keeps your purchases, analytics and backup together</td>
                   <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>User content (optional)</td>
-                  <td>Journal entries, saved verses (if you sign in)</td>
-                  <td>Persist your personal practice data</td>
+                  <td>Email and name</td>
+                  <td>Only if you back up your journal with Sign in with Apple or Google. Apple lets you hide your email.</td>
+                  <td>Restore your journal on a new phone</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Your answers</td>
+                  <td>Age range, stage of life, what weighs on you, time on your phone</td>
+                  <td>Choose the verses for your plan</td>
+                  <td>Sent without your user ID; kept on your phone</td>
+                </tr>
+                <tr>
+                  <td>Your words</td>
+                  <td>The note you type or speak, questions you ask about a verse, and anything you add when your situation changes</td>
+                  <td>Read by an AI model to choose and explain your verses, <strong>only if you allow it</strong> (section 2)</td>
+                  <td>Sent without your user ID; not stored by us</td>
+                </tr>
+                <tr>
+                  <td>Journal backup</td>
+                  <td>Your reflections, only if you back up your journal</td>
+                  <td>Keep them safe across phones</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Usage</td>
+                  <td>Screens opened, buttons tapped, plan progress, an app-generated device ID, and the city and country Mixpanel infers from your IP address</td>
+                  <td>Understand what helps and fix what doesn&apos;t</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Feature requests</td>
+                  <td>The text you send from <em>Settings → Request a feature</em></td>
+                  <td>Read by us to shape the app</td>
                   <td>Yes</td>
                 </tr>
                 <tr>
                   <td>Purchases</td>
-                  <td>Subscription status (active / expired)</td>
-                  <td>Unlock premium features</td>
-                  <td>Yes (processed by Apple)</td>
+                  <td>Your subscription, its status and dates</td>
+                  <td>Unlock Wisdom Pro</td>
+                  <td>Yes</td>
                 </tr>
               </tbody>
             </table>
+            <p>When you speak your note, your iPhone turns your voice into text with Apple&apos;s speech recognition. Only the text can ever reach us; your voice recording never does.</p>
 
-            <p>As indicated on the App Store, <strong>the Wisdom app does not collect any data from users who do not sign in</strong>. Anonymous analytics events do not contain a name, email, or device identifier that can be traced back to you.</p>
-
-            <h3>On this website (wisdomquotes.in)</h3>
-            <p>Mixpanel is used for anonymous analytics — page views, link clicks, and App Store button taps. No personally identifiable information is attached to these events. IP addresses are not stored.</p>
-
-            <h2>2. Subscriptions and payments</h2>
-            <p>Wisdom offers optional auto-renewing subscriptions (monthly and yearly) to unlock premium features. All payment processing is handled entirely by <strong>Apple</strong> through the App Store. We never see or store your credit card number or any payment details. Apple may collect purchase history as part of their platform — see <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple&apos;s Privacy Policy</a>.</p>
-            <p>Subscription receipts are verified server-side to confirm your plan status. Only the subscription status (active / expired) and your account ID are stored on our servers.</p>
-            <p>You can manage or cancel your subscription at any time in <strong>Settings → Apple ID → Subscriptions</strong> on your iPhone.</p>
-
-            <h2>3. Third-party services</h2>
+            <h2>2. AI and your words</h2>
+            <p>Before anything you write leaves your phone, the app asks you. If you tap <em>Allow</em>:</p>
             <ul>
-              <li><strong>Mixpanel</strong> — anonymous analytics to understand user behaviour. We only share anonymised usage events. Your data is not used for advertising. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Mixpanel Privacy Policy →</a></li>
-              <li><strong>Google Firebase</strong> — authentication and database (optional, only if you sign in). <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy →</a></li>
-              <li><strong>Apple App Store</strong> — app distribution and in-app purchases. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy →</a></li>
-              <li><strong>Google Fonts</strong> — font delivery on the website. No cookies set. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy →</a></li>
+              <li><strong>What is sent:</strong> your answers (section 1) and your words: your note, your questions about a verse, and what you add when your situation changes.</li>
+              <li><strong>Who reads it:</strong> our server (hosted on Vercel) passes it to <strong>Sarvam AI</strong> (Axonwise Private Limited, India), whose language model reads it to choose your verses and write the lines meant for you. <strong>Cloudflare</strong> (Workers AI) turns short descriptions of your situation into search vectors so the right verses can be found. Sarvam AI&apos;s voice model reads your daily audio aloud.</li>
+              <li><strong>What it&apos;s used for:</strong> only to make and explain your plan. Under Sarvam AI&apos;s and Cloudflare&apos;s terms it isn&apos;t used to train their AI models.</li>
+              <li><strong>What we keep:</strong> we don&apos;t store or log your note or your questions. To give the same answers the same verse, we keep the chosen first verse and our reading of the situation (never your note) for up to 7 days, under a one-way code that isn&apos;t linked to your account. Audio readings are saved as files named by a one-way code so the same reading isn&apos;t made twice.</li>
+            </ul>
+            <p>If you tap <em>Not now</em>, nothing you write is sent. Your plan is chosen from your answers alone, with no AI model, and your note stays on your phone. You can change this at any time in <em>Settings → Your words</em>. If we ever change which AI providers read your words, the app will ask you again.</p>
+            <p>Wisdom offers reflection from scripture. It isn&apos;t medical or mental-health advice. If something you write suggests you may be in danger, the app shows helplines instead of verses.</p>
+
+            <h2>3. On this website</h2>
+            <ul>
+              <li><strong>Analytics:</strong> Mixpanel records page views and taps, under a random browser ID.</li>
+              <li><strong>Your week by email (wisdomquotes.in/start):</strong> what you choose and write on <em>/start</em> is sent to our server and read by Sarvam AI, as in section 2, to build your Day 1 and your week. If you then sign in with Google (through Firebase Authentication) to get the week by email, we keep your email, name, the kind of device, and the feeling and situation you picked, and we email your week through Resend.</li>
             </ul>
 
-            <h2>4. How we use your data</h2>
+            <h2>4. Who handles your data</h2>
             <ul>
-              <li>To understand how the app and website are used, so we can improve them (Mixpanel analytics)</li>
-              <li>To save your verses, journal entries, and reading preferences across devices (if you sign in)</li>
-              <li>To verify your subscription status and unlock premium features</li>
-              <li>We <strong>do not</strong> sell, trade, rent, or share your data with any third party for marketing, advertising, or commercial purposes</li>
+              <li><strong>Supabase:</strong> accounts, the journal backup and our database. <a href="https://supabase.com/privacy" {...ext}>Privacy →</a></li>
+              <li><strong>Vercel:</strong> hosts our server. <a href="https://vercel.com/legal/privacy-policy" {...ext}>Privacy →</a></li>
+              <li><strong>Sarvam AI:</strong> language and voice models, only with your permission (section 2). <a href="https://www.sarvam.ai/privacy-policy" {...ext}>Privacy →</a></li>
+              <li><strong>Cloudflare:</strong> Workers AI for verse search (section 2). <a href="https://www.cloudflare.com/privacypolicy/" {...ext}>Privacy →</a></li>
+              <li><strong>Mixpanel:</strong> usage analytics. <a href="https://mixpanel.com/legal/privacy-policy/" {...ext}>Privacy →</a></li>
+              <li><strong>RevenueCat:</strong> manages subscriptions with the App Store. <a href="https://www.revenuecat.com/privacy" {...ext}>Privacy →</a></li>
+              <li><strong>Apple:</strong> the App Store, payments, Sign in with Apple and speech recognition. <a href="https://www.apple.com/legal/privacy/" {...ext}>Privacy →</a></li>
+              <li><strong>Google:</strong> Google Sign-In in the app, Firebase Authentication on the website, and fonts on the website. <a href="https://policies.google.com/privacy" {...ext}>Privacy →</a></li>
+              <li><strong>Resend:</strong> sends your week by email, if you ask for it on the website. <a href="https://resend.com/legal/privacy-policy" {...ext}>Privacy →</a></li>
+            </ul>
+            <p>We don&apos;t sell, rent or trade your data, and we don&apos;t share it with advertisers or data brokers.</p>
+
+            <h2>5. Subscriptions and payments</h2>
+            <p>Wisdom Pro is an auto-renewing subscription (monthly or yearly) paid through Apple. We never see your card details. RevenueCat tells the app whether your subscription is active. You can manage or cancel it in <em>Settings → Account → Manage subscription</em> in the app, or in your iPhone&apos;s <em>Settings → Apple ID → Subscriptions</em>.</p>
+
+            <h2>6. Keeping and deleting your data</h2>
+            <ul>
+              <li><strong>Delete your account in the app:</strong> <em>Settings → Account → Delete account</em>. This immediately deletes your account, your journal backup and everything stored with your user ID in our database, and clears the app on your phone. Deleting your account doesn&apos;t cancel an App Store subscription; cancel that in <em>Manage subscription</em>.</li>
+              <li><strong>Analytics and purchase records:</strong> usage analytics held by Mixpanel and subscription records held by RevenueCat and Apple aren&apos;t deleted automatically. Email us and we&apos;ll have your analytics deleted within 30 days. Purchase records are kept as long as accounting and tax rules require.</li>
+              <li><strong>Website data:</strong> email us and we&apos;ll delete your email sign-up within 30 days.</li>
+              <li>Otherwise, account data is kept while your account exists, and analytics are kept under Mixpanel&apos;s retention policy.</li>
             </ul>
 
-            <h2>5. Data sharing</h2>
-            <p>The only third party we share data with is <strong>Mixpanel</strong>, for anonymous usage analytics. This data contains no personal identifiers. We share no personal data with any other company, advertiser, or data broker.</p>
+            <h2>7. Children</h2>
+            <p>Wisdom isn&apos;t meant for children under 13, and we don&apos;t knowingly collect their data. If you think a child has given us personal data, email us and we&apos;ll delete it.</p>
 
-            <h2>6. Cookies and local storage</h2>
-            <p>The Wisdom app uses on-device storage to persist your reading preferences and saved content. The website uses <code>localStorage</code> for anonymous Mixpanel session tracking and reading preferences. No third-party advertising cookies are used.</p>
+            <h2>8. Your rights</h2>
+            <p>You can ask to see, correct, export or delete the data we hold about you, and you can withdraw your permission for AI at any time in <em>Settings → Your words</em>. Email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> and we&apos;ll reply within 30 days.</p>
 
-            <h2>7. Data retention</h2>
-            <ul>
-              <li><strong>Analytics:</strong> Retained by Mixpanel per their data retention policy</li>
-              <li><strong>Account data:</strong> Retained as long as your account is active</li>
-              <li><strong>Subscription status:</strong> Retained to validate active plans</li>
-            </ul>
-            <p>You may request deletion of your account and all associated data at any time by emailing us.</p>
+            <h2>9. Security</h2>
+            <p>Data travels over HTTPS. Our database is protected by row-level security, so one account can&apos;t read another&apos;s data. We don&apos;t store passwords: sign-in is handled by Apple, Google and Supabase.</p>
 
-            <h2>8. Children&apos;s privacy</h2>
-            <p>The Wisdom app is rated 4+ on the App Store. We do not knowingly collect personal data from children under 13. If you believe a child has provided personal information, contact us immediately and we will delete it.</p>
+            <h2>10. Changes</h2>
+            <p>If this policy changes, we&apos;ll update the date at the top. If we change who reads your words, the app will ask for your permission again before sending anything.</p>
 
-            <h2>9. Your rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-              <li>Access the personal data we hold about you</li>
-              <li>Correct inaccurate data</li>
-              <li>Request deletion of your data</li>
-              <li>Opt out of analytics by not signing in (the app collects no identifiable data from unsigned-in users)</li>
-            </ul>
-            <p>To exercise any of these rights, email us at <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.</p>
-
-            <h2>10. Security</h2>
-            <p>We use industry-standard practices to protect any data we hold. Account data is stored on Firebase, which is secured with Google Cloud infrastructure. We do not store passwords — authentication is handled by Firebase.</p>
-
-            <h2>11. Changes to this policy</h2>
-            <p>We may update this policy from time to time. Material changes will be reflected with a revised date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-            <h2>12. Contact &amp; support</h2>
-            <p>For privacy questions, data deletion requests, or support:</p>
-            <p><strong>Email:</strong> <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a></p>
-            <p><strong>Developer:</strong> Ankur Shukla, independent developer</p>
+            <h2>11. Contact</h2>
+            <p><strong>Email:</strong> <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a><br /><strong>Developer:</strong> Ankur Shukla, independent developer, India</p>
 
           </div>
         </div>

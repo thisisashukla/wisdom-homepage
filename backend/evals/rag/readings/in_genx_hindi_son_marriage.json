@@ -1,0 +1,101 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.5,
+ "core_struggle": "My teenager won't listen to me",
+ "mechanism": "expectation_of_others",
+ "secondary_mechanism": "grief_attachment",
+ "situations": [
+  {
+   "id": "teen_conflict",
+   "weight": 1.75,
+   "source": "note"
+  },
+  {
+   "id": "inlaws",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.383,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.2,
+   "source": "profile"
+  }
+ ],
+ "mirror": "Your son refuses to marry your choice, and you feel something doesn't sit right.",
+ "queries": {
+  "hook": "The silence between a mother and her son over the one thing that matters, and the shame of being taunted by relatives for a bond that is breaking.",
+  "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+  "steady": "Praise and blame from outside come and go; what is yours is the love you hold for him, not the marriage he chooses.",
+  "act": "Let the relatives' words go, and speak to your son not about the choice but about the silence between you.",
+  "story": "A mother whose son would not speak to her, and who found the words to reach him through the silence."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The silence between mother and son",
+  "Whose story it is",
+  "More than the marriage"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "hurt and powerless",
+ "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+ "week_thesis": "Seven days from the silence and the taunts to finding the words that can reach him, and the peace that does not depend on his answer.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the silence and the taunts, named without blame.",
+  "diagnose": "You see that the relatives' taunts and the son's silence are not your fault, and that the wound is real.",
+  "steady": "You hold that your love for him is not the marriage he chooses, and that praise and blame come and go.",
+  "act": "You try letting the relatives' words go, and speak to your son about the silence, not the choice.",
+  "story": "A mother who could not reach her son through silence shows you what words can do when they are spoken from love, not demand."
+ },
+ "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "relatives are taunting them about it"
+ ],
+ "age": "45_54",
+ "stages": [
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "core:invented_person",
+  "core_struggle_fallback",
+  "life:invented_person",
+  "mirror:fallback",
+  "life_context:missing",
+  "mirror:rewritten"
+ ]
+}

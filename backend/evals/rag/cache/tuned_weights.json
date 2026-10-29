@@ -1,0 +1,78 @@
+{
+ "weights": {
+  "hook": {
+   "sem": 1.6,
+   "sit": 0.48,
+   "mech": 0.1,
+   "job": 0.55
+  },
+  "diagnose": {
+   "sem": 1.4,
+   "sit": 0.3,
+   "mech": 0.36,
+   "job": 1.0
+  },
+  "steady": {
+   "sem": 1.4,
+   "sit": 0.35,
+   "mech": 0.55,
+   "job": 1.0
+  },
+  "act": {
+   "sem": 2.24,
+   "sit": 0.45,
+   "mech": 0.5,
+   "job": 1.6
+  }
+ },
+ "done": [
+  "0:hook.sem",
+  "0:hook.sit",
+  "0:hook.mech",
+  "0:hook.job",
+  "0:diagnose.sem",
+  "0:diagnose.sit",
+  "0:diagnose.mech",
+  "0:diagnose.job",
+  "0:steady.sem",
+  "0:steady.sit",
+  "0:steady.mech",
+  "0:steady.job",
+  "0:act.sem",
+  "0:act.sit",
+  "0:act.mech",
+  "0:act.job"
+ ],
+ "history": [
+  [
+   "0:hook.sit",
+   0.48,
+   0.5811
+  ],
+  [
+   "0:diagnose.mech",
+   0.36,
+   0.5859
+  ],
+  [
+   "0:act.sem",
+   1.75,
+   0.593
+  ],
+  [
+   "0:act.sem",
+   2.24,
+   0.6017
+  ],
+  [
+   "0:act.job",
+   1.6,
+   0.6048
+  ]
+ ],
+ "holdout": {
+  "current": 0.5931,
+  "tuned": 0.577
+ },
+ "train_best": 0.6048
+}

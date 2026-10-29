@@ -1,0 +1,792 @@
+{
+ "situation": {
+  "id": "in_genx_business_debt_hindi",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "धंधे में बहुत घाटा हो गया है, कर्ज़ चढ़ गया है। बच्चों की फीस भरनी है। रात भर नींद नहीं आती, किसी से कह भी नहीं सकता।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Surat)",
+  "lang": "hindi",
+  "slices": [
+   "hindi",
+   "lang:hindi",
+   "money"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and alone",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the sleeplessness and the debt as a fear that has a name.",
+    "diagnose": "You see that the sleeplessness is the fear of what it might mean, not the debt itself.",
+    "steady": "You hold that what is real in you cannot be taken by what has happened.",
+    "act": "You try doing one thing you can control today, and saying one true thing to one person.",
+    "story": "A man who lost everything shows you what standing again looks like from the inside."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "His business has suffered heavy losses and debt has piled up; with children's fees due, he cannot sleep and cannot tell anyone.",
+   "mirror": "You lie awake with the numbers and the children's fees, and you cannot bring yourself to say it out loud.",
+   "insight": "The debt is real, but the sleeplessness is the fear of what it might mean for your children and your name. The two are not the same thing.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 1.655,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.521,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a failing business and mounting debt, with children's fees due, and the silence of not being able to tell anyone.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in you cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be taken by what has happened; the effort you made is yours, and no result can take that away.",
+    "act": "Do your duty with the work you can control today, let the result go, and speak one true thing to one person you trust.",
+    "story": "A man who lost everything he built, facing his family and his own fear, yet finding the courage to stand again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the numbers",
+    "What the fear is",
+    "What remains when it is gone"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "business has suffered heavy losses",
+    "debt has piled up",
+    "children's school fees are due",
+    "cannot sleep at night"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.3,6=0.3,47=0.6,22=0.0,1=0.6,32=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.69",
+    "redo:4",
+    "redo_fixed:2",
+    "dropped:invented=1,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.7203,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield, and he has collapsed in tears. He tells Krishna that even if he won an unrivalled kingdom or ruled over the gods, it would not touch the grief drying him up inside. He admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him. The verse proposes that admitting you do not know and asking for help is where clarity begins.",
+     "for_you": "The sleeplessness and the debt are a fear that has a name. You are in the dark, and your mind is racing with what might happen. You do not need to have the answer tonight. You only need to let the confusion be seen.",
+     "try_today": "Tell one true thing to one safe person.",
+     "scene_line": "You are on the edge of your own battlefield, and the grief is drying you up.",
+     "asks": [
+      "How do I stop the mind from racing at night?",
+      "Is it weak to admit I do not know the next step?",
+      "Can I ask for help without losing my standing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.11.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 11.6",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "his own mind",
+     "setting": "Janaka, having chosen to keep ruling, talks gently to his own restless mind at night.",
+     "sanskrit": "यथा यथा विकल्पौघान्संकल्पयसि हेलया । तथा तथैति स्फारत्वं संसारस्तव चिन्तया ॥",
+     "line": "The more scenarios you spin, the bigger your world of worry grows.",
+     "translation": "The more you casually spin up fancies and possibilities, the more your world of troubles swells, through your own worrying.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.131,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "King Janaka stands on his palace roof at night, his mind spinning through every ruin he can imagine. He speaks to his own restless mind. He says that the more he casually spins up fancies and possibilities, the more his world of troubles swells, through his own worrying. The verse proposes that you do not have to leave your life to change it. You do the day's work with a mind that does not clutch.",
+     "for_you": "Your sleepless nights are not just about the debt. They are about the stories your mind is spinning about what the debt might mean. You can keep running your business and caring for your children. You do not have to run away. The work is still there.",
+     "try_today": "Notice one spinning thought and let it go without arguing.",
+     "scene_line": "You are on your own roof at night, your mind spinning futures into ruin.",
+     "asks": [
+      "How do I stop the mind from spinning?",
+      "Is the debt bigger than my worrying?",
+      "How do I rest when the fees are due?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.4394,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. The war is about to begin, and Arjuna is frozen with grief and fear of what will happen, to himself and to his family. Krishna tells him to do his work, his duty, with full attention and care. He says the right belongs only to the action itself, never to the fruit or result. The results are not yours to hold. Do not let that make you stop.",
+     "for_you": "The business losses and the debt are real, but the fear of what they mean is a story your mind is still writing. You are running on empty because you are trying to hold both the work and the result at once. Your right is to the work alone.",
+     "try_today": "Notice the work you do today, and let the result go.",
+     "scene_line": "You are on the field, and the work is yours alone.",
+     "asks": [
+      "How do I separate the work from the result?",
+      "What is the next small thing I can do?",
+      "How do I stop the result from owning me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "words": [
+      {
+       "sa": "व्यसने",
+       "en": "in grief"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "अर्थकृच्छ्रे",
+       "en": "in loss of wealth"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "भये",
+       "en": "in fear"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "जीवितान्तके",
+       "en": "at life's end"
+      },
+      {
+       "sa": "विमृशन्वै",
+       "en": "one who is patient"
+      },
+      {
+       "sa": "स्वया",
+       "en": "by own"
+      },
+      {
+       "sa": "बुद्ध्या",
+       "en": "wisdom"
+      },
+      {
+       "sa": "धृतिमान्",
+       "en": "steadfast"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आवसीदति",
+       "en": "despairs"
+      }
+     ],
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.1421,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Ram is broken, and Sugriva is the one who holds the ground. Sugriva has lost his wife and his kingdom, yet he is the one who steadies Ram. Ram has just seen the jewels Sita dropped, and he falls apart. Sugriva is the steady one here. He tells Ram that even when disaster strikes, when money is gone and fear is high, the steady person uses their own mind to think it through. They do not sink. Two people in trouble can carry each other.",
+     "for_you": "You are the one who has to keep the lights on, and that makes the dark feel heavier. But your mind is still your own. It can hold the numbers and the fear without letting them drown you.",
+     "try_today": "Write down one thing that is actually in your control right now.",
+     "scene_line": "You are in your own quiet room, holding the weight of the business and the children, with no one else to steady you.",
+     "asks": [
+      "How do I steady my mind when the numbers are so bad?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.656,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "The sage Vasishtha speaks to Bharat, who is shattered by his father's death and his brother Ram's exile. The ministers and his mother urge him to take the throne, but Bharat feels the crown means nothing without Ram. Vasishtha tells him to keep courage in his heart and do what this moment asks of him today. The verse proposes that when your head and heart disagree, you could go and face the person you think you wronged.",
+     "for_you": "That is the person you could face today. You can tell one true thing to one person. Your work is yours to do.",
+     "try_today": "Tell one true thing to one person today.",
+     "scene_line": "You are in your own forest, ready to face the one you think you wronged.",
+     "asks": [
+      "How do I face the one I think I wronged?",
+      "What is the one true thing I can say today?",
+      "Can I do what this moment asks of me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.2593,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha how a person who is truly free moves through the world. He says that a person should always do the work that is right in front of them, without clinging to success or failure. They should treat friends and enemies with the same even mind, free from craving and aversion. When they speak, they should say what is agreeable and true to all, and they should try to understand the hearts of others.",
+     "for_you": "Your mind is spinning with what might happen next, but the only thing you can hold is the work right in front of you. The debt is heavy, and the fear is real, but the work is still yours to do. Do not let the worry make you stop.",
+     "try_today": "Do one small thing you can control, and say one true thing to someone you trust.",
+     "scene_line": "You are at the kitchen table, the bills are spread out, and you are choosing one true word to say.",
+     "asks": [
+      "How do I know when I am just spinning and when I am planning?",
+      "What if the work I do today does not fix anything?",
+      "How do I find the words to speak one true thing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.5.12.10",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+      "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+      "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+      "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+      "words": [],
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "You are in your own Lanka, searching the dark corners of this problem. The night is long, and the fear of finding nothing is heavy. But the one who searches does not let the night win. You do not need to see the end of the search to keep moving.",
+     "asks": [
+      "What is the next small corner I have not yet checked?",
+      "How do I keep the lamp lit when the dark feels endless?",
+      "What does it mean to search again when I am so tired?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the numbers",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 21679,
+   "total": 21682
+  },
+  "_ms": 21684
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.85,
+ "core_struggle": "Lost a baby at eleven weeks, and the words meant to comfort her are making the grief feel heavier and more alone.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "grief_general",
+   "weight": 1.646,
+   "source": "note"
+  },
+  {
+   "id": "criticism",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "grief_parent",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  }
+ ],
+ "mirror": "At eleven weeks, and the world tells you it was early, as if early makes it smaller.",
+ "queries": {
+  "hook": "I'm grieving someone I loved. Inside, my mind won't settle, and I don't know how to carry it.",
+  "diagnose": "Grief is love with nowhere to go; the more the bond was real, the deeper the ache when it is taken away, and no one else can give it back.",
+  "steady": "What is real in us cannot be lost, even when what we loved is taken away; the love remains and so does the ache.",
+  "act": "Let the love have its place, speak the true thing about what was lost, and let the grief move without forcing it to be grateful.",
+  "story": "A mother who lost her child early, surrounded by those who could not see her pain, who found her footing in the truth of what she had loved."
+ },
+ "query_sources": {
+  "hook": "template",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The love that was real",
+  "The grief that has nowhere to go",
+  "What remains when the loss is taken away"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and unseen",
+ "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+ "week_thesis": "From being told to be grateful for a loss to letting the love that was real have its full place, without apology.",
+ "undisclosed": true,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the grief as real and the loneliness as real, named without judgement.",
+  "diagnose": "You see that the love was real and the loss was real, and that no one else's comfort can change that.",
+  "steady": "You hold that what is real in you cannot be taken away.",
+  "act": "You try letting the grief move without forcing gratitude, and speaking the true thing about what was lost.",
+  "story": "A mother who lost her child early shows you what it means to stand in the truth of your love."
+ },
+ "insight": "You are grieving something that was yours and real. The comfort that doesn't fit is the part that hurts most.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "lost a baby at eleven weeks",
+  "others say it's common and early",
+  "feels those words make it worse, not better"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:hook_gives_advice"
+ ]
+}

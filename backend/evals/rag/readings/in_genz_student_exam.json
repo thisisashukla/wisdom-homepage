@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "Three weeks from exams, she can't focus, opens Instagram, and feels she is wasting the two lakh her father paid for coaching.",
+ "mechanism": "restless_mind",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "restless_mind",
+   "weight": 1.29,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.93,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "money_stress",
+   "weight": 0.407,
+   "source": "note"
+  },
+  {
+   "id": "procrastination",
+   "weight": 0.398,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.3,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You sit down to study and open Instagram, then lie awake at night replaying the two lakh your father paid.",
+ "queries": {
+  "hook": "The weight of an exam three weeks away and a mind that won't settle, replaying every rupee your father spent on you.",
+  "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+  "steady": "Praise and blame come and go, but what is yours cannot be taken; the effort is yours and the result is not.",
+  "act": "Practise steadying the mind for ten minutes before you open the book; let the result go and give the work its full attention.",
+  "story": "A student before a great exam, whose mind runs wild until he learns to hold it, and finds the focus to pass."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The mind that won't settle",
+  "The money and the mind",
+  "The one who steadies it"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "anxious and ashamed",
+ "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+ "week_thesis": "Seven days from a mind that won't settle to a mind that can hold still for twenty minutes.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the restlessness and the guilt, named without judgement.",
+  "diagnose": "You see that the phone and the replaying are the same thing: a mind that has never been given one quiet minute.",
+  "steady": "You hold that your worth is not the exam, and the effort is yours.",
+  "act": "You try one ten-minute practice to steady the mind before you open the book.",
+  "story": "A student before a great exam shows you how to hold the mind still and find the focus."
+ },
+ "insight": "The two lakh is real, but the mind that can't focus is not your fault. It is a mind that has never been trained to rest.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "sem exams in three weeks",
+  "can't focus for twenty minutes",
+  "opens Instagram repeatedly"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess"
+ ]
+}

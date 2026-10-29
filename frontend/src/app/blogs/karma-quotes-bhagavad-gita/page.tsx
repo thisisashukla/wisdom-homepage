@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/karma-quotes-bhagavad-gita",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Karma Quotes in Sanskrit: 10 Gita Shlokas with Meaning",
     description: "10 Sanskrit quotes on karma from the Bhagavad Gita, starting with 2.47 (karmanye vadhikaraste), each with transliteration, English meaning and essence.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/karma-quotes-bhagavad-gita",

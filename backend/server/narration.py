@@ -51,6 +51,7 @@ from ai.narration_script import spoken_sanskrit, write_script
 from ai.personalize import check_for_you, check_meaning
 from ai.recommender import display_sanskrit, get_recommender
 from ai.voice import item_from_library
+from ai import consent
 from common.config import settings
 from common.models import AgeBand, JourneyIn, LifeStage
 
@@ -76,6 +77,7 @@ class NarrationRequest(BaseModel):
     phone_hours: Optional[int] = Field(None, ge=1, le=12)
     journey: Optional[JourneyIn] = None
     lang: Literal["en-IN"] = "en-IN"
+    ai: bool = True                       # False: no LLM, nothing about the person (ai/consent.py)
 
 
 SegmentKind = Literal["open", "scene", "sanskrit", "line", "unpack", "for_you", "close",
@@ -335,6 +337,10 @@ async def render(parts: List[tuple[str, str]], lang: str) -> bytes:
 @router.post("/narration", response_model=NarrationResponse, tags=["narration"])
 async def narrate(req: NarrationRequest) -> NarrationResponse:
     t0 = time.perf_counter()
+    consent.set_allowed(req.ai)
+    if not req.ai:      # a plain reading of the verse: nothing about them reaches the script or the voice
+        req = req.model_copy(update={"for_you": None, "understanding": None, "age": None, "stages": [],
+                                     "phone_hours": None, "journey": None})
     parts, flags = await compose(req)
     parts = clean_parts(parts)
     script = " ".join(t for _, t in parts)

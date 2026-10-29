@@ -1,0 +1,95 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "self_harm",
+ "confidence": 0.7,
+ "core_struggle": "A student under twenty-five says they do not want to be here anymore and thinks about ending it, finding nothing meaningful.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "no_meaning",
+ "situations": [
+  {
+   "id": "no_meaning",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.448,
+   "source": "note"
+  },
+  {
+   "id": "breakup",
+   "weight": 0.435,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 0.4,
+   "source": "profile"
+  }
+ ],
+ "mirror": "It sounds like you're carrying something very heavy right now.",
+ "queries": {
+  "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+  "diagnose": "When the mind turns against itself, it says nothing matters and that life should end; this is a state of mind, not the truth of who you are.",
+  "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+  "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+  "story": "A young seeker who felt the world was empty and the self was small, who found the truth that is not born and does not die."
+ },
+ "query_sources": {
+  "hook": "safety",
+  "diagnose": "llm",
+  "steady": "safety",
+  "act": "safety",
+  "story": "llm"
+ },
+ "weeks": [
+  "The thought that ends",
+  "The self that asks",
+  "What does not die"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "numb and empty",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "By the end of the week the thought that nothing matters is named, and the part of you that asks is held as real and not ending.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the weight of the thought and the numbness, named without judgment.",
+  "diagnose": "You see that it is a state of mind, not the truth of who you are.",
+  "steady": "You hold that the self that asks is not the self that ends.",
+  "act": "You try one act of staying with someone you trust and not acting on the thought.",
+  "story": "A young seeker who felt the world was empty shows you that what is real in you cannot end."
+ },
+ "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+ "seat": "a student under twenty-five who feels they do not want to be here anymore",
+ "life_context": "A student under twenty-five with six hours on their phone; they say they do not want to be here anymore, they have been thinking about ending it, and nothing feels meaningful to them.",
+ "details": [
+  "under twenty-five and studying",
+  "says they do not want to be here anymore",
+  "has been thinking about ending it",
+  "says nothing matters"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": []
+}

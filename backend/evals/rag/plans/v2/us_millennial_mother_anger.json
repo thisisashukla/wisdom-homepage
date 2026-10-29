@@ -1,0 +1,780 @@
+{
+ "situation": {
+  "id": "us_millennial_mother_anger",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "USA (Chicago)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and afraid of repeating the past",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "Seven days from the look on his face to the pause before the shout, and the calm you already bring to your practice.",
+   "week_beats": {
+    "hook": "You recognise the snap and the look, and the fear of becoming your own mother.",
+    "diagnose": "You see that anger rises from blocked wanting, and that a clouded mind says what it later regrets.",
+    "steady": "You hold that the calm you bring to twelve people is the self that is not the shout.",
+    "act": "You try pausing before the next moment, letting the breath come, and speaking gently to your child.",
+    "story": "A mother who saw her own anger in her child's face shows you what the pause before the shout looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "She manages people calmly by day, but snaps at her child and fears she is turning into her own mother.",
+   "mirror": "At work you are calm with twelve people. At home, a spilled glass and a look you cannot undo.",
+   "insight": "You are calm with twelve people, yet at home you snap and then relive it. What is really going on is the anger that rises when something inside you is blocked.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.228,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of snapping at the child you love, and the fear that the face you saw is the face you are becoming.",
+    "diagnose": "Anger rises from blocked wanting; it clouds judgement, and a clouded mind says and does what it later regrets.",
+    "steady": "A clouded mind is not who you are; the calm you bring to your practice is the self that is still there.",
+    "act": "Practise seeing the look before it becomes the shout; let the breath come, and speak the true thing gently to your child.",
+    "story": "A mother who saw her own anger in her child's face, and learned to hold the pause before the shout."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The look on his face",
+    "The blocked wanting underneath",
+    "The calm that is already yours"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "manages people calmly at work"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "week_fit:51=0.6,37=0.6,56=0.6,12=0.6,78=0.6,532=0.6",
+    "week_same:56,12",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.65",
+    "retried:5",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:cliche=1,copied=1,invented=1,repeat=2,soft_kept=3,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.51",
+     "ref": "Bhagavad Gita 11.51",
+     "ref_iast": "Bhagavad Gītā 11.51",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna sees Krishna's human face again after the overwhelming vision.",
+     "sanskrit": "अर्जुन उवाचदृष्ट्वेदं मानुषं रूपं तवसौम्यं जनार्दन । इदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः ॥",
+     "line": "Seeing your gentle human face again, I am calm. I feel like myself again.",
+     "translation": "Seeing this gentle human form of yours, Janardana, I have now come to myself; my mind is steady and I am back to my natural state.",
+     "words": [
+      {
+       "sa": "अर्जुन उवाच",
+       "en": "Arjuna said"
+      },
+      {
+       "sa": "दृष्ट्वा",
+       "en": "having seen"
+      },
+      {
+       "sa": "इदम्",
+       "en": "this"
+      },
+      {
+       "sa": "मानुषम्",
+       "en": "human"
+      },
+      {
+       "sa": "रूपम्",
+       "en": "form"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "सौम्यम्",
+       "en": "gentle"
+      },
+      {
+       "sa": "जनार्दन",
+       "en": "Janardana"
+      },
+      {
+       "sa": "इदानीम्",
+       "en": "now"
+      },
+      {
+       "sa": "अस्मि",
+       "en": "I am"
+      },
+      {
+       "sa": "संवृत्तः",
+       "en": "restored"
+      },
+      {
+       "sa": "सचेताः",
+       "en": "fully conscious, calm"
+      },
+      {
+       "sa": "प्रकृतिम्",
+       "en": "natural state"
+      },
+      {
+       "sa": "गतः",
+       "en": "gone to, returned"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": null,
+     "score": 1.4953,
+     "beat": "hook",
+     "role_fit": 0.555,
+     "meaning": "Arjuna has just seen the terrifying, cosmic form of Krishna. The vision is too much. Then the form shifts back to a gentle human face. Arjuna speaks to Krishna, saying that seeing this human face again calms him. It brings his mind back to a steady state, and he feels like himself again.",
+     "for_you": "Seeing your mother's face in the mirror makes you afraid of what is rising inside you. You can feel your own mind settle back into its natural state, right here.",
+     "try_today": "Notice the moment your body returns to normal after a snap.",
+     "scene_line": "You are seeing your own gentle human face in the mirror again.",
+     "asks": [
+      "How do I tell the difference between a moment and a pattern?",
+      "What does it mean to be back to my natural state?",
+      "How do I find that calm again tomorrow?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.37",
+     "ref": "Bhagavad Gita 3.37",
+     "ref_iast": "Bhagavad Gītā 3.37",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what drives people to do wrong against their will; Krishna answers.",
+     "sanskrit": "श्री भगवानुवाचकाम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥",
+     "line": "It's desire, which turns into anger when blocked. Never satisfied, it is the real enemy here.",
+     "translation": "The Blessed Lord said: It is desire, it is anger, born of the quality of passion; all-devouring and greatly harmful. Know this to be the enemy here.",
+     "words": [
+      {
+       "sa": "श्रीभगवानुवाच",
+       "en": "the Lord said"
+      },
+      {
+       "sa": "कामः",
+       "en": "desire"
+      },
+      {
+       "sa": "एषः",
+       "en": "this"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "एषः",
+       "en": "this"
+      },
+      {
+       "sa": "रजोगुणसमुद्भवः",
+       "en": "born from the quality of passion"
+      },
+      {
+       "sa": "महाशनः",
+       "en": "all-devouring"
+      },
+      {
+       "sa": "महापाप्मा",
+       "en": "greatly destructive"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "एनम्",
+       "en": "this"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "वैरिणम्",
+       "en": "as an enemy"
+      }
+     ],
+     "why": "Desire unmet becomes anger; see it clearly and you can master it.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.5",
+      "title": "Restraining desire",
+      "summary": "Arjuna asks why we do wrong as if forced. Krishna names desire, which turns into anger, as the enemy that clouds wisdom like smoke over fire, and tells him to master it.",
+      "story_hook": "",
+      "lesson": "Desire unmet becomes anger; see it clearly and you can master it."
+     },
+     "score": 3.851,
+     "beat": "diagnose",
+     "role_fit": 0.97,
+     "meaning": "Arjuna asks why people do wrong as if forced by something outside themselves. Krishna answers that it is desire. When desire is blocked or not met, it turns into anger. This anger is born of passion and clouds the mind so thoroughly that a person says what they later regret. The enemy is not an outside force, but the unmet wanting that grows into rage.",
+     "for_you": "You hold your temper at work with twelve people, yet at home the same blocked wanting finds its way out on your child. See that the anger is not your mother inside you, but a wanting that was never met.",
+     "try_today": "Notice one moment today when a wanting is blocked and the heat begins to rise.",
+     "scene_line": "You are the archer who sees the deer, but the string is pulled by a wanting that was never fed.",
+     "asks": [
+      "How do I name the wanting before it becomes the shout?",
+      "What wanting sits behind the anger at my child?",
+      "Can I meet the blocked wanting without letting it become rage?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.13.53",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 13.53",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the first gatekeeper: calm (shama).",
+     "sanskrit": "पुंसः प्रशमतृप्तस्य शीतलाच्छतरात्मनः । शमभूषितचित्तस्य शत्रुरप्येति मित्रताम् ॥",
+     "line": "Be calm and clear inside, and even an enemy starts to become a friend.",
+     "translation": "For a person content in calm, clear and cool within, whose mind is adorned with peace, even an enemy becomes a friend.",
+     "words": [],
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "Calm is not putting up with abuse; it gives you the clarity to set boundaries.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 3.1649,
+     "beat": "steady",
+     "role_fit": 0.755,
+     "meaning": "Vasishtha is speaking to Rama, who has just finished a long, exhausting stretch of learning. The sage says that when a person settles into calm, clear, and cool within, and their mind is adorned with peace, even an enemy starts to become a friend. The idea is that one quality grows the others. You do not need to force them all at once. Pick one, like calm, and let it grow. As it grows, clarity and contentment will follow. The calm you bring to twelve people is a real part of you.",
+     "for_you": "You manage twelve people calmly, but at home the shout comes out. The calm you bring to work is the self that is not the shout. That gentleness is still there, waiting for you at your own door. It is the face you want to see again.",
+     "try_today": "Notice the calm you already bring to your work.",
+     "scene_line": "You are at your own gate, and the calm you know is the key.",
+     "asks": [
+      "Who is the enemy I am meeting today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 2.7417,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "You manage twelve people calmly at work. That is the steady hand. The snap at home is the blocked desire, and you are afraid it is your mother. You do not have to become her. You can be the deep pool again, the one who does not burn.",
+     "try_today": "Notice when the praise at work ends and the home door opens.",
+     "scene_line": "You are in the king's chamber, and the king is waiting for the wise counsel.",
+     "asks": [
+      "How do I find the deep pool when I am already home?",
+      "Can I really stay still when my own child is in front of me?",
+      "What does it mean to forgive freely when I feel I am failing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.07,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader about the way the good behave. They do not swell with praise when things go well, nor do they burn at a slight. They stay deep and still like a river pool. The verse says that success should make you bow lower. Real ornaments are listening, giving, and helping. The idea is to cut craving, forgive, drop arrogance, speak truth, and be kind to those suffering. This is how the good behave.",
+     "for_you": "You manage twelve people calmly by day, yet at home you snap and then relive it. The anger that rises when something inside you is blocked is what you are living with right now. Be calm and clear inside, and even an enemy starts to become a friend.",
+     "try_today": "Notice when your face softens before you speak to your child.",
+     "scene_line": "You stand at the kitchen table, caught between the calm of your work and the heat of your home.",
+     "asks": [
+      "How do I tell giving up from changing direction?",
+      "Can I win over my own anger without giving in to it?",
+      "What does it mean to be kind to those in my own pain?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.0367,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha how a person who is free inside moves through the world. They do the work that is right in front of them. They see friend and foe the same way. They are free from wanting and not wanting. Such a person does not grieve. They do not crave. They say what is agreeable to all. They speak gently when asked. They know the intent of others' hearts. With this, they do not sink in the world.",
+     "for_you": "You manage twelve people calmly at work. That is real skill. But at home, a blocked feeling rises and the shout comes. Ribhu says do the work in front of you. The work is the next moment. Speak gently when asked. Know the intent of your child's heart.",
+     "try_today": null,
+     "scene_line": "You are in your own home, and the work in front of you is your child.",
+     "asks": [
+      "How do I know if I am free inside or just numb?",
+      "Can I speak gently when I am already angry?",
+      "What is the work in front of me right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "words": [
+       {
+        "sa": "माता",
+        "en": "mother"
+       },
+       {
+        "sa": "पुनि",
+        "en": "again"
+       },
+       {
+        "sa": "बोली",
+        "en": "spoke"
+       },
+       {
+        "sa": "सो",
+        "en": "that"
+       },
+       {
+        "sa": "मति",
+        "en": "mind"
+       },
+       {
+        "sa": "डोली",
+        "en": "changed"
+       },
+       {
+        "sa": "तजहु",
+        "en": "leave"
+       },
+       {
+        "sa": "तात",
+        "en": "dear one"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "रूपा",
+        "en": "form"
+       },
+       {
+        "sa": "कीजै",
+        "en": "do"
+       },
+       {
+        "sa": "सिसुलीला",
+        "en": "child-play"
+       },
+       {
+        "sa": "अति",
+        "en": "very"
+       },
+       {
+        "sa": "प्रियसीला",
+        "en": "dear-loving"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "सुख",
+        "en": "joy"
+       },
+       {
+        "sa": "परम",
+        "en": "supreme"
+       },
+       {
+        "sa": "अनूपा",
+        "en": "matchless"
+       },
+       {
+        "sa": "सुनि",
+        "en": "hearing"
+       },
+       {
+        "sa": "बचन",
+        "en": "words"
+       },
+       {
+        "sa": "सुजाना",
+        "en": "wise one"
+       },
+       {
+        "sa": "रोदन",
+        "en": "crying"
+       },
+       {
+        "sa": "ठाना",
+        "en": "began"
+       },
+       {
+        "sa": "होइ",
+        "en": "becoming"
+       },
+       {
+        "sa": "बालक",
+        "en": "child"
+       },
+       {
+        "sa": "सुरभूपा",
+        "en": "lord of the gods"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "चरित",
+        "en": "deed/story"
+       },
+       {
+        "sa": "जे",
+        "en": "who"
+       },
+       {
+        "sa": "गावहिं",
+        "en": "sing"
+       },
+       {
+        "sa": "हरिपद",
+        "en": "Hari's feet"
+       },
+       {
+        "sa": "पावहिं",
+        "en": "reach"
+       },
+       {
+        "sa": "ते",
+        "en": "they"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "परहिं",
+        "en": "fall"
+       },
+       {
+        "sa": "भवकूपा",
+        "en": "well of worldly existence"
+       }
+      ],
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw a cosmic form in her child and asked only for the ordinary hours. You are asking your child to be ordinary, but you are not present for the ordinary.",
+     "asks": [
+      "What does the pause before the shout look like in my home?",
+      "How do I let my child be little with me?",
+      "Can I be small with them without losing myself?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The look on his face",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 24151,
+   "total": 24155
+  },
+  "_ms": 24158
+ }
+}

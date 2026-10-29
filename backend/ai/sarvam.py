@@ -19,6 +19,8 @@ from typing import Any, Iterator
 
 from sarvamai import SarvamAI
 
+from ai import consent
+
 logger = logging.getLogger(__name__)
 
 
@@ -46,6 +48,7 @@ class SarvamClient:
         json_mode: bool = False,
         retries: int = 1,
     ) -> Any:
+        consent.guard()
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_content},
@@ -209,6 +212,7 @@ class SarvamClient:
         a hard HTTP timeout and no retries: callers that sit on a user-facing path
         (onboarding) own their own deadline and fallback.
         """
+        consent.guard()
         resp = self._client.chat.completions(
             model=self.model,
             messages=messages,

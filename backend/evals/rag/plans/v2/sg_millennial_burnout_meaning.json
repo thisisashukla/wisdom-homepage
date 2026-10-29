@@ -1,0 +1,758 @@
+{
+ "situation": {
+  "id": "sg_millennial_burnout_meaning",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "14 hour days at the bank for 10 years. good money. I sit in the MRT and feel nothing. I'm not sad. I'm just empty.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "Singapore",
+  "lang": "english",
+  "slices": [
+   "burnout",
+   "lang:english",
+   "meaning"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "empty and numb",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "Seven days from feeling nothing on the MRT to finding the first thread of what is real and does not pass.",
+   "week_beats": {
+    "hook": "You recognise the emptiness and the restlessness, named without judgement.",
+    "diagnose": "You see that the money and the hours are not the same as what you are missing.",
+    "steady": "You hold that the self that is real cannot be lost to a job.",
+    "act": "You try one question a day that has nothing to do with the job, and sit with the answer.",
+    "story": "A man who has everything the world counts and nothing that counts to him meets a teacher who shows him the way."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A man in his late thirties has worked -hour days at a bank for ten years, and now sits in the MRT feeling empty, not sad.",
+   "mirror": "You give the day fourteen hours and the MRT gives you nothing back.",
+   "insight": "You are not sad. You are not there. The money is real and the emptiness is real, and the two are not the same thing.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.262,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.93,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.391,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The emptiness of a life that is not sad but not there, and the restlessness that comes from feeling cut off from yourself.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self that is real cannot be lost to a job, and what passes is not all there is.",
+    "act": "Ask one question each day that has nothing to do with the job, and sit with the answer without fixing it.",
+    "story": "A man who has everything the world counts and nothing that counts to him, who meets a teacher and begins to see what he has been missing."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What is missing",
+    "What does not pass",
+    "The one who asks"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "works hours a day at a bank for ten years",
+    "sits in the MRT and feels nothing",
+    "is not sad, just empty"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:8=0.6,44=0.6,81=0.8,21=0.8,17=0.9,2=0.9",
+    "week_sim:mean=0.60,max=0.69",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 3.0487,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna sits on the battlefield, his body trembling, and tells Krishna he sees no way out. He says that even if he won every kingdom on earth, it would not touch the grief drying him up inside. He admits he is confused, that he cannot see which choice is right, and asks Krishna to teach him. The verse shows that clarity begins when you admit you do not know and ask for help.",
+     "for_you": "Ten years at the bank, and now the MRT feels like a holding pattern. You are not sad, just empty, and that emptiness is its own weight. You do not need to solve this today.",
+     "try_today": "Name one thing you are not sure about today.",
+     "scene_line": "You are on a platform of your own, unable to see which way forward is right.",
+     "asks": [
+      "What would it look like to admit I do not know the way forward?",
+      "How can I ask for help when I do not even know what I need?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.44",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 44",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time'.",
+     "sanskrit": "रात्रिः सैव पुनः स एव दिवसो मत्वा मुधा जन्तवो धावन्त्युद्यमिनस्तथैव निभृतप्रारब्धतत्तत्क्रियाः । व्यापारैः पुनरुक्तभूत विषयैरित्थंविधेनामुना संसारेण कदर्थिता वयमहो मोहान्न लज्जामहे ॥",
+     "line": "Same night, same day, the same tasks on repeat. We run in circles and call it living.",
+     "translation": "Thinking 'it is the same night again, the same day', creatures run about in vain, busy as ever with the tasks they have set going; with work full of the same repeated things, tormented by this round of existence, alas, out of delusion we feel no shame.",
+     "words": [],
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 2.7915,
+     "beat": "diagnose",
+     "role_fit": 0.44,
+     "meaning": "Bhartrihari speaks to the reader from a place of quiet weariness. He watches people rush through the same night and day, repeating the same tasks endlessly. He says they are busy as ever, trapped in a round of work that feels the same every single time. Tormented by this endless cycle, they feel no shame. The verse asks you to notice that time is slipping away while you are busy doing the same thing over and over.",
+     "for_you": "You have spent ten years at the bank doing the same tasks. The hours pass and the MRT rides blend into one long empty stretch. The money is real but it is not the same as what you are missing. The numbness is not sadness.",
+     "try_today": "Notice one task at work that is the same as yesterday.",
+     "scene_line": "You sit in the MRT, watching the same day run in circles.",
+     "asks": [
+      "How do I see the pattern without judging my work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.7759,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ashtavakra is speaking to Janaka in the closing chapter of the text, painting the picture of a mind that has found its ground. He says a person does not beg for gain, nor grieve over loss. The mind of the steady one stays cool and full, as if filled with nectar. The idea is that calm is not a prize to chase. It is simply how you hold your ordinary life, right where you are, without needing to change it.",
+     "for_you": "The MRT and the ten years of banking are not a loss to grieve, and the emptiness is not a gain to beg for. Your steady mind is already full, even if the feeling is numb. Let the routine be the ground beneath you.",
+     "try_today": "Let the MRT ride be the steady ground today.",
+     "scene_line": "You are the steady one in the moving carriage.",
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.21",
+     "ref": "Bhagavad Gita 5.21",
+     "ref_iast": "Bhagavad Gītā 5.21",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् । स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते ॥",
+     "line": "Unhooked from outside pleasures, you find a joy within that doesn't run out.",
+     "translation": "One whose self is unattached to outer contacts finds the happiness that is in the self. Joined to Brahman by yoga, he enjoys undying happiness.",
+     "words": [
+      {
+       "sa": "बाह्यस्पर्शेषु",
+       "en": "to external contacts"
+      },
+      {
+       "sa": "असक्तात्मा",
+       "en": "detached self"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "finds"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the self"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "स",
+       "en": "that person"
+      },
+      {
+       "sa": "ब्रह्मयोगयुक्तात्मा",
+       "en": "united with supreme reality"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "अक्षयम्",
+       "en": "imperishable"
+      },
+      {
+       "sa": "अश्नुते",
+       "en": "attains"
+      }
+     ],
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 1.984,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Krishna is telling Arjuna that happiness which comes from outside things is always temporary. If your mind is tied to results, to what you get or lose, you will always be up and down. The wise person unhooks from these outer contacts and rests in the self. That inner joy does not run out because it does not depend on anything happening around you.",
+     "for_you": "You have sat in that MRT for years, and the work is real, but the emptiness is not the work itself. It is the mind that has unhooked from the self and tied itself to the bank.",
+     "try_today": "Notice one moment at work where you do something without wanting a result from it.",
+     "scene_line": "You are the one who unhooks from the bank and rests in the self.",
+     "asks": [
+      "How do I unhook from the bank without leaving it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.1.31.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 31.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vasishtha and Vishvamitra",
+     "setting": "Rama, ending his questions, asks for one practical skill.",
+     "sanskrit": "व्यवहारवतो युक्त्या दुःखं नायाति मे यया । अथवा व्यवहारस्य ब्रूत तां युक्तिमुत्तमाम् ॥",
+     "line": "Teach me how to keep working in the world without the work filling me with sorrow.",
+     "translation": "Tell me the skill by which sorrow doesn't come to me while I go about my work, or else tell me the best way of dealing with life itself.",
+     "words": [],
+     "why": "The real question isn't whether to quit life, but how to live it without being swallowed.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_questions",
+      "title": "Rama asks how to live in the world without being crushed by it",
+      "summary": "After his lament Rama turns to questions. How did King Janaka and others stay free while running kingdoms? How can a person work in the world untouched, like water on a lotus leaf? He asks for one practical skill that lets him work without sorrow.",
+      "story_hook": "Having said what was wrong, Rama finally asked the question that matters: how do the wise do it?",
+      "lesson": "The real question isn't whether to quit life, but how to live it without being swallowed."
+     },
+     "score": 3.2016,
+     "beat": "act",
+     "role_fit": 0.544,
+     "meaning": "Rama, just after listing all the ways the world breaks the heart, asks you for one skill. Not a way out, but a way through. He wants to know how to work in the world without the work filling him with sorrow. The answer he gets is that sorrow comes from tying your happiness to results, to things outside your own mind. If you stop reaching for what you cannot control, you can do the work without being swallowed by it. The skill is to act, but not to let the outcome own you.",
+     "for_you": "For ten years at the bank, you have done the work without letting the result own you. Now the numbness is telling you that the doing itself has become a trap.",
+     "try_today": "Ask one question that has nothing to do with work, and sit with the answer.",
+     "scene_line": "You are Rama, asking for the skill to work without being swallowed.",
+     "asks": [
+      "How do I tell the work from the sorrow?",
+      "How do I stop the work from filling me with sorrow?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.2459,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The Seer speaks to the reader. They tell them to live fully and work hard for a hundred years. The point is not to stop working, but to do it without holding on. When you act without grasping the results, your work does not stick to you. It keeps you moving without weighing you down.",
+     "for_you": "You sit in the MRT and the work does not stick, but neither does the rest of the world. The Seer asks you to work the full day and still let go.",
+     "try_today": "Ask one question about your life that has nothing to do with the bank.",
+     "scene_line": "You are working a full day and letting the work go.",
+     "asks": [
+      "How do I ask a question that is not about work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bali",
+     "title": "Bali tires of endless days and asks his father's riddle",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bali",
+      "Virochana",
+      "Shukra"
+     ],
+     "story_hook": "Bali had conquered everything there was to conquer, and one evening he realised he was bored.",
+     "summary": "The demon king Bali has ruled the three worlds for ages. One day at his window he realises he is doing the same things day after day, night after night, and asks what any of it adds up to. He remembers a riddle his father Virochana once told him: a vast realm ruled by a silent king and an all-powerful minister. The minister is the mind; win it over, by practice, and everything is won.",
+     "lesson": "When life feels like a loop, the work is not more of it but mastering the mind that runs it.",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.24.19",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 24.19",
+      "family": "yv",
+      "speaker": "Virochana",
+      "listener": "Bali",
+      "setting": "Bali's father Virochana tells him the secret of mastering the mind.",
+      "sanskrit": "एषा ह्यत्यन्तदुष्प्रापा सुप्रापा च महामते । अनभ्यस्तातिदुष्प्रापा स्वभ्यस्ता प्राप्यते सुखम् ॥",
+      "line": "Unpractised, it feels impossible. Well practised, it comes easily.",
+      "translation": "This is extremely hard to attain and also easy, great-minded one: unpractised, it is very hard to reach; well practised, it comes easily.",
+      "words": [],
+      "why": "When life feels like a loop, the work is not more of it but mastering the mind that runs it.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "restless_mind",
+        "label": "I can't focus, my mind is restless"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.bali",
+       "title": "Bali tires of endless days and asks his father's riddle",
+       "summary": "The demon king Bali has ruled the three worlds for ages. One day at his window he realises he is doing the same things day after day, night after night, and asks what any of it adds up to. He remembers a riddle his father Virochana once told him: a vast realm ruled by a silent king and an all-powerful minister. The minister is the mind; win it over, by practice, and everything is won.",
+       "story_hook": "Bali had conquered everything there was to conquer, and one evening he realised he was bored.",
+       "lesson": "When life feels like a loop, the work is not more of it but mastering the mind that runs it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A demon king who had conquered everything realised one evening that he was bored",
+     "teaser": "A demon king who had conquered everything realised one evening that he was bored",
+     "for_you": "You have sat in the MRT for ten years, watching the same stops appear, and the world you built at the bank feels just as looped. The riddle Bali faced was that the mind can be a minister who runs everything, or a prisoner who just watches the same walls.",
+     "asks": [
+      "How do I tell a practiced mind from a distracted one?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What is missing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17990,
+   "total": 17992
+  },
+  "_ms": 17999
+ }
+}

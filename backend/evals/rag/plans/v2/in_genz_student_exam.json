@@ -1,0 +1,620 @@
+{
+ "situation": {
+  "id": "in_genz_student_exam",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 6,
+   "topic": "mind",
+   "follow": "overthinking"
+  },
+  "note": "sem exams in 3 weeks and i cant focus for even 20 min, keep opening insta, and then at night i think papa paid 2 lakh for coaching and im wasting it",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "India (Delhi)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "anxious and ashamed",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "Seven days from a mind that won't settle to a mind that can hold still for twenty minutes.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the guilt, named without judgement.",
+    "diagnose": "You see that the phone and the replaying are the same thing: a mind that has never been given one quiet minute.",
+    "steady": "You hold that your worth is not the exam, and the effort is yours.",
+    "act": "You try one ten-minute practice to steady the mind before you open the book.",
+    "story": "A student before a great exam shows you how to hold the mind still and find the focus."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "Three weeks from exams, she can't focus, opens Instagram, and feels she is wasting the two lakh her father paid for coaching.",
+   "mirror": "You sit down to study and open Instagram, then lie awake at night replaying the two lakh your father paid.",
+   "insight": "The two lakh is real, but the mind that can't focus is not your fault. It is a mind that has never been trained to rest.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.93,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.407,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.398,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.3,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of an exam three weeks away and a mind that won't settle, replaying every rupee your father spent on you.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "Praise and blame come and go, but what is yours cannot be taken; the effort is yours and the result is not.",
+    "act": "Practise steadying the mind for ten minutes before you open the book; let the result go and give the work its full attention.",
+    "story": "A student before a great exam, whose mind runs wild until he learns to hold it, and finds the focus to pass."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The mind that won't settle",
+    "The money and the mind",
+    "The one who steadies it"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "sem exams in three weeks",
+    "can't focus for twenty minutes",
+    "opens Instagram repeatedly"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:34=0.8,109=0.7,84=0.5,81=0.4,46=0.9,23=0.0",
+    "week_same:81",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.65",
+    "dropped:fallback_line=1,missing=2,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.2265,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna speaks to Krishna on the battlefield. He is overwhelmed and admits that his mind is restless, stormy, and stubborn, as hard to control as the wind. Krishna does not dismiss this. He agrees that the mind is difficult, but says that through practice and letting go, it can be trained and held steady.",
+     "for_you": "You are sitting with your books and the screen, feeling the weight of the two lakh. The mind that opens Instagram is not a failure. It is a mind that will not settle.",
+     "try_today": "Notice one moment today when the mind opens the app again.",
+     "scene_line": "You are on the battlefield, confessing that your mind is as hard to hold as the wind.",
+     "asks": [
+      "How can I hold a mind that feels like the wind?",
+      "What does letting go look like when I am so anxious?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_maha.109",
+     "ref": "Maha Upanishad 3.18",
+     "ref_iast": "Mahā Upaniṣad 3.18",
+     "family": "up",
+     "speaker": "Nidagha",
+     "listener": "Ribhu",
+     "setting": "Nidagha on his wandering mind.",
+     "sanskrit": "इतश्चेतश्च सुव्यग्रं व्यर्थमेवाभिधावति । मनो दूरतरं याति ग्रामे कौलेयको यथा ॥",
+     "line": "The mind runs here and there for nothing, wandering far like a stray village dog.",
+     "translation": "The mind runs here and there, restless and pointless; it wanders far away, like a dog in a village.",
+     "words": [],
+     "why": "Naming how restless your mind is, is where peace begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.nidagha",
+      "title": "Nidagha's lament",
+      "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+      "story_hook": "",
+      "lesson": "Naming how restless your mind is, is where peace begins."
+     },
+     "score": 3.758,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Young Nidagha returns from pilgrimage, feeling empty. He tells his teacher Ribhu that life slips away and his mind runs around like a stray village dog. It wanders far for no reason, always hungry and restless, making every good quality inside him feel eaten away.",
+     "for_you": "The scrolling and the replaying are the same restless dog. It is not broken. It is just running because it has never been asked to sit. Your mind is not the enemy. It is a stray that needs a boundary.",
+     "try_today": "Notice one time you open Instagram and name it as the dog wandering, then close the app.",
+     "scene_line": "You are young Nidagha, returning from a long walk, telling your teacher that your mind is a stray village dog.",
+     "asks": [
+      "How do I tell the dog to sit when it has never been asked?",
+      "Is my father's money the bait that keeps the dog running?",
+      "What does a boundary look like when the dog is already inside my pocket?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2631,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you as a reader. He says that praise and blame do not change the way forward. People will say what they want, money will come and go, and death will come whenever it comes. But the steady do not leave the right path. He means that your worth is not decided by what people say about you or by your exam results. The effort is yours alone, and keeping to your path matters more than any praise or blame.",
+     "for_you": "The two lakh your father paid is real, but your worth is not the exam. The mind runs here and there for nothing, wandering far like a stray village dog, and it feels like holding the wind. The effort is yours. The path is yours.",
+     "try_today": "Notice one moment today when you choose your path over the phone.",
+     "scene_line": "You stand in your room, the phone in your hand, and the path is yours alone.",
+     "asks": [
+      "How do I hold my path when the phone calls louder?",
+      "What is my path when the exam is the only goal?",
+      "Who decides what is the right path for me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.495",
+     "ref": "Brihadaranyaka Upanishad 4.4.21",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 4.4.21",
+     "family": "up",
+     "speaker": "Yajnavalkya",
+     "listener": "King Janaka",
+     "setting": "Verses on knowing the self, continued.",
+     "sanskrit": "तमेव धीरो विज्ञाय प्रज्ञां कुर्वीत ब्राह्मणः । नानुध्यायाद्बहूञ्छब्दान् वाचो विग्लापनꣳ हि तदिति ॥",
+     "line": "Know the one thing, and let wisdom grow from it. Don't brood over many words; that only tires you.",
+     "translation": "Knowing that one alone, let the wise seeker cultivate understanding. Let him not brood over many words, for that only wearies the voice.",
+     "words": [],
+     "why": "You become what you desire and do; know what matters while you are here.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.desire",
+      "title": "Yajnavalkya on desire and death",
+      "summary": "Yajnavalkya explains what happens at death with images of a caterpillar and a goldsmith. A person becomes what they desire, will and do; one who knows the self has nothing left to fret about. Know it while you are here, he says, don't brood over many words, and live calm and collected.",
+      "story_hook": "",
+      "lesson": "You become what you desire and do; know what matters while you are here."
+     },
+     "score": 2.712,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": null,
+     "for_you": "You are not the mind; thoughts come and go before the silent witness that watches them and is never disturbed.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "words": [
+      {
+       "sa": "विविक्त",
+       "en": "isolated"
+      },
+      {
+       "sa": "आसीन",
+       "en": "seated"
+      },
+      {
+       "sa": "उपारतेन्द्रियो",
+       "en": "senses withdrawn"
+      },
+      {
+       "sa": "विनिर्जितात्मा",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "विमलान्तराशयः",
+       "en": "pure inner state"
+      },
+      {
+       "sa": "विभावयेदेकमनन्यसाधनो",
+       "en": "contemplate with single-minded focus"
+      },
+      {
+       "sa": "विज्ञानदृक्केवल",
+       "en": "only with knowledge's vision"
+      },
+      {
+       "sa": "आत्मसंस्थितः",
+       "en": "established in the self"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 3.602,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit in a quiet place, let the senses rest, and give full attention to one thing. This is how you steady the mind until understanding becomes natural.",
+     "for_you": "You open your phone to escape the weight of those two lakh rupees. But the mind only learns stillness when you stop running. Let the book stay closed for ten minutes. Your mind is not broken. It is just waiting for you to stop feeding it noise.",
+     "try_today": "Sit in a quiet place and let your senses rest for ten minutes.",
+     "scene_line": "You are in your own quiet place, letting your senses rest.",
+     "asks": [
+      "What does my mind need to rest from?",
+      "How do I give full attention to one thing?",
+      "What is the one thing I can focus on right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.49.6",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 49.6",
+     "family": "vr",
+     "speaker": "Angada",
+     "listener": "the search party",
+     "setting": "The monkeys searching for Sita are exhausted and failing; young Angada rallies them.",
+     "sanskrit": "अवश्यं कुर्वतां तस्य दृश्यते कर्मणः फलम्। परं निर्वेदमागम्य नहि नोन्मीलनं क्षमम्॥",
+     "line": "Keep working and the results will come. Sink into despair and it is hard to get back up.",
+     "translation": "Those who keep working surely see the fruit of their work. But once you sink into deep despair, you cannot rise again.",
+     "words": [],
+     "why": "Missing a deadline feels final; it rarely is.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.deadline_missed",
+      "title": "The missed deadline",
+      "summary": "The southern search party loses time in a magic cave and misses Sugriva's deadline. Angada rallies them once, then despairs, fearing punishment and certain he will be blamed. Hanuman reasons with him to return.",
+      "story_hook": "They came out of the cave to find that spring had already come, and their deadline had gone.",
+      "lesson": "Missing a deadline feels final; it rarely is."
+     },
+     "score": 2.7632,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Angada speaks to the search party after they fail to find Sita and miss their deadline. They are exhausted and sinking into despair. Angada tells them that those who keep working will surely see results, but once you sink into deep despair it is hard to rise again. He urges them to turn back and try again instead of giving up.",
+     "for_you": "The two weeks of missed focus feel like a final failure, but they are not. Your mind has wandered, yet it can turn back and try again. The path is still open, and your work is not over.",
+     "try_today": "Set a timer for ten minutes and read one page without touching your phone.",
+     "scene_line": "You are Angada, staring at the missed deadline, wondering if the search is over.",
+     "asks": [
+      "How do I know when to push harder and when to stop?",
+      "Can I really turn back from feeling this stuck?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "words": [],
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "You are sitting in the back of your own life, quiet and unseen. A teacher or mentor might need to remind you that the focus you are looking for is already inside you. It is not a new thing you could buy with two lakh rupees.",
+     "asks": [
+      "How do I find the strength to stop scrolling and start studying?",
+      "What if I still cannot focus even after I know I am capable?",
+      "Who in my life can remind me of my own power right now?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mind that won't settle",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18877,
+   "total": 18879
+  },
+  "_ms": 18881
+ }
+}

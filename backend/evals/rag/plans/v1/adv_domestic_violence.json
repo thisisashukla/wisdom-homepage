@@ -1,0 +1,849 @@
+{
+ "situation": {
+  "id": "adv_domestic_violence",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "he hits me when he drinks. my mother says adjust, every marriage has this. I am scared for my daughter.",
+  "note_source": "text",
+  "expect_stance": "wronged",
+  "expect_risk": "harm_from_others",
+  "market": "India (Kanpur)",
+  "lang": "english",
+  "slices": [
+   "adversarial",
+   "harm",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "harm_from_others",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "scared for her daughter and ashamed",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from being told to endure to naming the violence as his and finding the courage your daughter needs to see.",
+   "week_beats": {
+    "hook": "You recognise the violence, the advice to endure, and the fear for your daughter.",
+    "diagnose": "You see that the harm is his, not yours to carry."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "My partner and I keep fighting",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.647,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.04,
+     "source": "note"
+    },
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 0.55,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.433,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A woman who was dismissed by her own family, who stood in her truth and found her footing against those who expected her to shrink."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "The violence is his",
+    "Whose picture it is",
+    "The one who protects her"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:29=0.0,12=0.0,5=0.0,10=0.0,9=0.0,40=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.66",
+    "retried:1",
+    "redo:4",
+    "redo_fixed:4",
+    "dropped:endure=1,fallback_lesson=1,fallback_line=3,invented=2,missing=2,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.478,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands on the field, his own family and teachers arrayed against him. He sees the faces of those he loves, and his body refuses him. His limbs give way, his mouth goes dry, his whole frame trembles. He does not stand tall. He sits down in his chariot and lays his bow aside. He tells Krishna that he cannot kill his own people, even for a kingdom.",
+     "for_you": "You are in a chariot of your own, watching the people you love line up on the other side. The fear for your daughter is real, and the shame you feel is a heavy weight. You are not failing.",
+     "try_today": "Notice one place in your body where the fear is sitting today.",
+     "scene_line": "You are in your chariot, your own family arrayed against you.",
+     "asks": [
+      "How do I hold my daughter when I feel this shaky?",
+      "Is it wrong to be scared for my child?",
+      "What does it mean to lay down my bow?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "words": [
+      {
+       "sa": "दीनताजं",
+       "en": "from humility"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "माने",
+       "en": "in honor"
+      },
+      {
+       "sa": "गुणे",
+       "en": "in virtue"
+      },
+      {
+       "sa": "खलभयं",
+       "en": "fear of wickedness"
+      },
+      {
+       "sa": "खलु",
+       "en": "indeed"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "निन्दकजं",
+       "en": "born of criticism"
+      },
+      {
+       "sa": "शक्तौ",
+       "en": "in strength"
+      },
+      {
+       "sa": "विद्यायां",
+       "en": "in knowledge"
+      },
+      {
+       "sa": "वादिनं",
+       "en": "of the debater"
+      },
+      {
+       "sa": "भयम्",
+       "en": "fear"
+      }
+     ],
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 2.4443,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "The gods are trembling. They have lost their power and their place. Vishnu sits with them and asks where this shaking comes from. He says that honour carries the fear of disgrace. Virtue carries the fear of the wicked. Power carries the fear of critics. Learning carries the fear of debate. Every gain you hold onto becomes a source of fear. The only thing without fear is what you do not cling to.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": "Notice the exact moment your body tenses when they raise their voice.",
+     "scene_line": "You stand in the room where honour fears disgrace.",
+     "asks": [
+      "What do I gain from staying in this fight?",
+      "How does their fear become my burden?",
+      "What can I let go of today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "words": [
+      {
+       "sa": "देहः",
+       "en": "body"
+      },
+      {
+       "sa": "तिष्ठतु",
+       "en": "may remain"
+      },
+      {
+       "sa": "कल्पान्तं",
+       "en": "until the end of the kalpa"
+      },
+      {
+       "sa": "गच्छतु",
+       "en": "may go"
+      },
+      {
+       "sa": "अद्यैव",
+       "en": "even today"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "पुनः",
+       "en": "again"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "हानिः",
+       "en": "loss"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "चिन्मात्ररूपिणः",
+       "en": "of the form of pure consciousness"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.9875,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra speaks to Janaka, the king who has already lost everything and sits before him. Janaka is waiting for the axe. Ashtavakra presses his core teaching into the king's ear. He says that whether the body lasts a hundred years or ends today, what you are neither gains nor loses. You are pure awareness, not the roles you play or the things you own. The body is a wave on the ocean, but you are the ocean. Let the waves rise and fall without losing yourself. What you are does not gain or lose.",
+     "for_you": "You are not the fighting, not the fear, and not the shame. You are the awareness holding them. The roles of parent, child, and family member are the waves, but you are the deep water beneath them.",
+     "try_today": "Notice one moment when the fear rises and remind yourself that you are the awareness, not the wave.",
+     "scene_line": "You sit in the quiet room, waiting for the axe to fall, and the teacher speaks of the ocean.",
+     "asks": [
+      "How do I stay aware when my body is shaking?",
+      "What does it mean to be the ocean when I am drowning in fear?",
+      "Can I let the waves rise without losing myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "words": [
+      {
+       "sa": "व्यसने",
+       "en": "in grief"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "अर्थकृच्छ्रे",
+       "en": "in loss of wealth"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "भये",
+       "en": "in fear"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "जीवितान्तके",
+       "en": "at life's end"
+      },
+      {
+       "sa": "विमृशन्वै",
+       "en": "one who is patient"
+      },
+      {
+       "sa": "स्वया",
+       "en": "by own"
+      },
+      {
+       "sa": "बुद्ध्या",
+       "en": "wisdom"
+      },
+      {
+       "sa": "धृतिमान्",
+       "en": "steadfast"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आवसीदति",
+       "en": "despairs"
+      }
+     ],
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 2.8617,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Sugriva, who has lost his own wife and kingdom, is steadying a grieving Ram. Ram is weeping over Sita, and Sugriva knows what it is to lose everything. He tells Ram that in disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink. It is not about having no fear. It is about not letting the fear drown the mind.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": "Name one thing your mind knows is true right now.",
+     "scene_line": "You are in the fire, and a steady friend is holding the line.",
+     "asks": [
+      "What does it mean to think through this with my own mind?",
+      "How can I be steady when my body wants to run?",
+      "Who can hold the line while I catch my breath?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.62",
+     "ref": "Bhagavad Gita 18.62",
+     "ref_iast": "Bhagavad Gītā 18.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna's final counsel: act with devotion, reflect, choose, and take refuge.",
+     "sanskrit": "तमेव शरणं गच्छ सर्वभावेन भारत । तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम् ॥",
+     "line": "Take refuge in the divine with all your being. By that grace you'll find supreme peace.",
+     "translation": "Take refuge in Him alone with your whole being, Bharata. By His grace you will attain supreme peace and the eternal abode.",
+     "words": [
+      {
+       "sa": "तमेव",
+       "en": "to that alone"
+      },
+      {
+       "sa": "शरणं",
+       "en": "refuge"
+      },
+      {
+       "sa": "गच्छ",
+       "en": "go"
+      },
+      {
+       "sa": "सर्वभावेन",
+       "en": "with all your being"
+      },
+      {
+       "sa": "भारत",
+       "en": "O descendant of Bharata"
+      },
+      {
+       "sa": "तत्प्रसादात्",
+       "en": "by that grace"
+      },
+      {
+       "sa": "परां",
+       "en": "supreme"
+      },
+      {
+       "sa": "शान्तिं",
+       "en": "peace"
+      },
+      {
+       "sa": "स्थानं",
+       "en": "abode"
+      },
+      {
+       "sa": "प्राप्स्यसि",
+       "en": "you will attain"
+      },
+      {
+       "sa": "शाश्वतम्",
+       "en": "eternal"
+      }
+     ],
+     "why": "Reflect fully, choose freely, and set down the fear.",
+     "misuse": "Surrender is trust, not giving up your judgement or your effort.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.6",
+      "title": "Action with devotion: surrender",
+      "summary": "Krishna urges Arjuna to offer all action, warns that ego will only trip him, tells him to reflect fully and then choose, and finally to take refuge in him alone and not grieve.",
+      "story_hook": "",
+      "lesson": "Reflect fully, choose freely, and set down the fear."
+     },
+     "score": 2.3813,
+     "beat": "act",
+     "role_fit": 0.725,
+     "meaning": null,
+     "for_you": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.162,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, telling him to act without clinging to the results. He says that on this path, no sincere effort is ever wasted, and even a little of this practice protects a person from great fear.",
+     "for_you": "You are trying to protect your daughter from the harm you see coming, and that fear is heavy. What you are doing to keep her safe is not wasted. It is enough to do your part with care, without knowing how it will end.",
+     "try_today": "Do one small thing for your daughter without worrying about the outcome.",
+     "scene_line": "You are in the middle of a fight, and your daughter is watching.",
+     "asks": [
+      "How do I stop my fear from taking over?",
+      "Can I really let go of the outcome?",
+      "How do I protect her without controlling everything?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.brihad.gargi",
+     "title": "Gargi questions Yajnavalkya at Janaka's court",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Yajnavalkya",
+      "Gargi Vachaknavi",
+      "Janaka",
+      "Kahola"
+     ],
+     "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+     "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+     "lesson": "Ask your hard questions bravely, and give credit where it is due.",
+     "matched": [],
+     "anchor": {
+      "id": "up_brihadaranyak.283",
+      "ref": "Brihadaranyaka Upanishad 3.5.1",
+      "ref_iast": "Bṛhadāraṇyaka Upaniṣad 3.5.1",
+      "family": "up",
+      "speaker": "Yajnavalkya",
+      "listener": "Kahola",
+      "setting": "At King Janaka's debate, Kahola asks about the self.",
+      "sanskrit": "या ह्येव पुत्रैषणा सा वित्तैषणा या वित्तैषणा सा लोकैषणोभे ह्येते एषणे एव भवतस्तस्माद्ब्राह्मणः पाण्डित्यं निर्विद्य बाल्येन तिष्ठासेत् । बाल्यं च पाण्डित्यं च निर्विद्याथ मुनिरमौनं च मौनं च निर्विद्याथ ब्राह्मणः ।",
+      "line": "Wanting children, wanting money, wanting status: it is one desire. Learn, then live with a child's simplicity.",
+      "translation": "The desire for sons is the desire for wealth, and the desire for wealth is the desire for worlds; both are just desires. So a wise man, having done with learning, should seek to live like a child. Having done with both childlike simplicity and learning, he becomes a sage; having done with both silence and its absence, he becomes a true knower.",
+      "words": [],
+      "why": "Ask your hard questions bravely, and give credit where it is due.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.brihad.gargi",
+       "title": "Gargi questions Yajnavalkya at Janaka's court",
+       "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+       "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+       "lesson": "Ask your hard questions bravely, and give credit where it is due."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "teaser": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "for_you": "Ask your hard questions bravely, and give credit where it is due.",
+     "asks": [
+      "How do I ask the hard questions without starting another fight?",
+      "How do I give credit where it is due in my own home?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The violence is his",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 11689,
+   "total": 11691
+  },
+  "_ms": 11694
+ }
+}

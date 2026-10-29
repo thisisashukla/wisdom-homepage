@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.85,
+ "core_struggle": "A CA who built her practice from zero is being told by her mother-in-law that she will leave it after the baby, while her husband stays silent and she feels herself being erased.",
+ "mechanism": "dignity_denied",
+ "secondary_mechanism": "duty_conflict",
+ "situations": [
+  {
+   "id": "inlaws",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "self_worth",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "career_switch",
+   "weight": 0.505,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "change_life",
+   "weight": 0.45,
+   "source": "note"
+  }
+ ],
+ "mirror": "You feel like you are slowly being erased while your husband changes the subject.",
+ "queries": {
+  "hook": "Being told the life you built will end, and the anger of watching yourself be erased while the one beside you says nothing. Tension with my in-laws.",
+  "diagnose": "When others see only a role, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+  "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+  "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+  "story": "A woman of learning and standing, dismissed by her husband's family, who questioned them openly and stood in her truth until they had no answer."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Erased",
+  "Whose picture it is",
+  "No smaller than you are"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "angry and erased",
+ "bridge": "The life you built from zero is what the Gita calls your own dharma: a duty that no one else can do, and no one else can take from you.",
+ "week_thesis": "Seven days from being told you will disappear to standing in the truth of what you are and what you built.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "inlaws",
+  "family",
+  "child",
+  "parent",
+  "work",
+  "partner"
+ ],
+ "week_beats": {
+  "hook": "You recognise being erased, and the anger of it, named without blame."
+ },
+ "insight": "You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "husband changes the subject"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "mirror:fallback",
+  "mirror:rewritten"
+ ]
+}

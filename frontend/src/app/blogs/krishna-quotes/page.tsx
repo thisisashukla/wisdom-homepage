@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/krishna-quotes",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "50 Krishna Quotes from the Bhagavad Gita, with Verse Numbers",
     description: "50 one-line Krishna quotes in English from the Bhagavad Gita, like \"You have a right to action, never to its fruits\" (2.47). Each with verse number and context.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/krishna-quotes",

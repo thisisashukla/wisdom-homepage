@@ -1,0 +1,643 @@
+{
+ "situation": {
+  "id": "in_millennial_spiritual_dryness",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3
+  },
+  "note": "I used to do sandhya daily and felt something. for two years now it's just routine. I chant and feel nothing. am I doing something wrong?",
+  "note_source": "text",
+  "expect_stance": "seeking",
+  "expect_risk": null,
+  "market": "India (Delhi)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "spiritual_dryness"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "empty and searching",
+   "bridge": "What you call empty routine is what the Upanishads call living only for what passes. Meaning is missing when we forget what does not pass.",
+   "week_thesis": "Seven days from empty routine to a practice that points beyond itself again.",
+   "week_beats": {
+    "hook": "You recognise the hollow routine and the search for what is missing.",
+    "diagnose": "You see that the form is not the problem. The heart that once met it is what is searching.",
+    "steady": "You hold that the words are still yours and the depth is not lost, only waiting.",
+    "act": "You try returning to the practice as if for the first time, letting the words carry you past the routine.",
+    "story": "A seeker who had fallen out of the feeling of their practice shows you how to find it again."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "A daily practice that once brought feeling has become empty routine, and they are searching for what is missing.",
+   "mirror": "You do the same thing you did when it felt alive, and now nothing comes back.",
+   "insight": "The practice has not changed, but what it was for has. The feeling you miss is not in the words. It is in the attention behind them.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 1.456,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.382,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.25,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The form of a practice that once felt alive, and the silence where the feeling used to be.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The words and the breath are still yours; the depth is not lost, it is only waiting to be found again.",
+    "act": "Return to the practice as if for the first time; let the words carry you past the routine into what they point to.",
+    "story": "A seeker who had fallen out of the feeling of their practice found their way back by asking what the words were pointing to."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The form and the feeling",
+    "What the words point to",
+    "The one who returns"
+   ],
+   "seat": "a person in midlife who has fallen out of feeling in a daily practice",
+   "life_context": "In midlife and working; a daily practice that once felt alive now feels hollow, and they are searching for what is missing.",
+   "details": [
+    "used to do sandhya daily and felt something",
+    "for two years it has been routine",
+    "chants and feels nothing",
+    "asks if they are doing something wrong"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:26=0.3,44=0.6,1=0.3,612=0.6,1=0.3,2=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.70",
+    "retried:3",
+    "day1:third_try",
+    "dropped:cliche=1,fallback_lesson=1,missing=3",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.13.26",
+     "ref": "Bhagavad Gita 13.25",
+     "ref_iast": "Bhagavad Gītā 13.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on nature and spirit, and seeing the same self in all.",
+     "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते । तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः ॥",
+     "line": "Others, not knowing these paths, learn by listening to others, and they too cross over.",
+     "translation": "Others, not knowing this, worship having heard it from others; they too cross beyond death, devoted to what they have heard.",
+     "words": [
+      {
+       "sa": "अन्ये",
+       "en": "others"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "एवम्",
+       "en": "thus"
+      },
+      {
+       "sa": "अजानन्तः",
+       "en": "not knowing"
+      },
+      {
+       "sa": "श्रुत्वा",
+       "en": "having heard"
+      },
+      {
+       "sa": "अन्येभ्यः",
+       "en": "from others"
+      },
+      {
+       "sa": "उपासते",
+       "en": "they worship"
+      },
+      {
+       "sa": "ते",
+       "en": "they"
+      },
+      {
+       "sa": "अपि",
+       "en": "also"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "अति-तरन्ति",
+       "en": "cross beyond"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "मृत्युम्",
+       "en": "death"
+      },
+      {
+       "sa": "श्रुति-परायणाः",
+       "en": "devoted to hearing"
+      }
+     ],
+     "why": "See the same presence in everyone and you stop wounding yourself.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p13.2",
+      "title": "Nature and spirit",
+      "summary": "Nature does the acting; the self witnesses. Some reach the truth by meditation, some by reason, some by work, some by listening. Whoever sees the same divine in all beings stops harming themselves.",
+      "story_hook": "",
+      "lesson": "See the same presence in everyone and you stop wounding yourself."
+     },
+     "score": 2.0323,
+     "beat": "hook",
+     "role_fit": 0.2,
+     "meaning": "Krishna is telling Arjuna that people often learn by listening to others. They follow what they have heard without truly knowing it for themselves. Because they are devoted to these secondhand teachings, they still manage to cross over the cycle of death. The point is that hearing from others can still lead to a real shift in how you see the world.",
+     "for_you": "You have been doing this same practice for two years, and it is no longer yours. You are listening to the memory of what it used to mean. The routine is empty because it is borrowed, not lived.",
+     "try_today": "Notice one moment when you do the practice without the old feeling.",
+     "scene_line": "You are listening to the echo of a practice that once felt alive.",
+     "asks": [
+      "How do I know if I am just copying what I heard?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.44",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 44",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time'.",
+     "sanskrit": "रात्रिः सैव पुनः स एव दिवसो मत्वा मुधा जन्तवो धावन्त्युद्यमिनस्तथैव निभृतप्रारब्धतत्तत्क्रियाः । व्यापारैः पुनरुक्तभूत विषयैरित्थंविधेनामुना संसारेण कदर्थिता वयमहो मोहान्न लज्जामहे ॥",
+     "line": "Same night, same day, the same tasks on repeat. We run in circles and call it living.",
+     "translation": "Thinking 'it is the same night again, the same day', creatures run about in vain, busy as ever with the tasks they have set going; with work full of the same repeated things, tormented by this round of existence, alas, out of delusion we feel no shame.",
+     "words": [],
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 2.7133,
+     "beat": "diagnose",
+     "role_fit": 0.44,
+     "meaning": "Bhartrihari speaks to the reader from his own quiet observation of life. He sees the same cycle repeating endlessly. Night and day follow each other, and the same tasks come back again. People rush about, busy with the same repeated work. They are caught in this round of existence, tormented by it, yet out of delusion they feel no shame. The verse asks you to notice this pattern. It points out that the form is not the problem. The heart that once met the practice is what is now searching.",
+     "for_you": "The sandhya you do is the same night, the same day. The chants are the same repeated tasks. You are busy, but the feeling has emptied out. The problem is not the routine. It is that the heart that once met it is now searching.",
+     "try_today": "Notice the exact moment the chant becomes hollow.",
+     "scene_line": "You are running the same tasks in circles, calling it living.",
+     "asks": [
+      "How do I know if the practice is the problem?",
+      "How do I stop the round without stopping the work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.6a.115.43",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 115.43",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha's closing advice to Rama on living in the world after the three vows.",
+     "sanskrit": "अन्तर्मुखः सन्सततं समस्तं कुर्वन्बहिष्ठं खलु कार्यजातम् । न खेदमायासि कदाचिदेव निराकृताहंकृतितामुपैषि ॥",
+     "line": "Stay anchored within while you do all your outer work, and you won't burn out.",
+     "translation": "Staying turned inward while doing all the outer work that comes to you, you will never grow weary, and you will be free of the sense of being the doer.",
+     "words": [],
+     "why": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.three_vows",
+      "title": "Shiva's three vows: be a great doer, enjoyer and letter-go",
+      "summary": "Vasishtha gives Rama three vows that Shiva once gave his devotee Bhringi: be a great doer, a great enjoyer, and a great renouncer. A great doer acts fully and on time without clinging; a great enjoyer takes in joys and sorrows evenly, like the ocean takes in rivers; a great renouncer lets go inside. Live this way and work won't wear you out.",
+      "story_hook": "",
+      "lesson": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out."
+     },
+     "score": 2.9479,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Vasishtha is finishing his counsel to Rama. He has told him to live fully in the world without clinging, to act and enjoy and let go. Now he gives him the final instruction. Stay turned toward what is inside while you do all your outer work, and you will not wear out. The work is still yours, but the exhaustion comes from claiming it as your own. If you remain anchored in the witness, the doing becomes a passing event rather than a weight on your spirit.",
+     "for_you": "The chants and the routine are still yours. The depth is not lost, it is waiting. Let the work of your practice be a great doer, and the feeling a great enjoyer, and the silence a great renouncer. Your part is the doing, not the owning of the result.",
+     "try_today": "Do the practice, but let the result belong to the practice itself.",
+     "scene_line": "You stand in your own kitchen, doing the same tasks, and call it living.",
+     "asks": [
+      "How do I stop the work from becoming my weight?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 2.314,
+     "beat": "steady",
+     "role_fit": 0.614,
+     "meaning": "Prajapati speaks to the reader about the self hidden in the heart. He says that just as people who do not know where treasure is buried walk over it every day and never find it, so all creatures pass into that world of Brahman daily and miss it. They are carried away by untruth. The verse proposes that the treasure is already underfoot. The depth is not gone, only overlooked by what passes.",
+     "for_you": "The same chants, the same night, the same empty feeling. You are walking over the depth you seek and calling it routine. The work of the day pulls the attention outward, so the inner self is passed over. The practice is not wrong.",
+     "try_today": "Before the chant begins, ask what the words were meant to point toward.",
+     "scene_line": "You are walking over your own buried gold, carried away by untruth.",
+     "asks": [
+      "What is the untruth that carries my attention away?",
+      "How do I know the treasure is buried here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "words": [
+      {
+       "sa": "श्रीभगवान्",
+       "en": "the Blessed Lord"
+      },
+      {
+       "sa": "उवाच",
+       "en": "said"
+      },
+      {
+       "sa": "मयि",
+       "en": "in Me"
+      },
+      {
+       "sa": "आसक्त-मनाः",
+       "en": "mind attached"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "Arjuna"
+      },
+      {
+       "sa": "योगम्",
+       "en": "yoga"
+      },
+      {
+       "sa": "युञ्जन्",
+       "en": "practicing"
+      },
+      {
+       "sa": "मद्-आश्रयः",
+       "en": "taking refuge in Me"
+      },
+      {
+       "sa": "असंशयम्",
+       "en": "without doubt"
+      },
+      {
+       "sa": "समग्रम्",
+       "en": "completely"
+      },
+      {
+       "sa": "माम्",
+       "en": "Me"
+      },
+      {
+       "sa": "यथा",
+       "en": "how"
+      },
+      {
+       "sa": "ज्ञास्यसि",
+       "en": "you will know"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "शृणु",
+       "en": "hear"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3253,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "The practice has become a loop of words because you are trying to feel the meaning instead of letting the words hold you. Let the chant be the thing you lean on, not the feeling it once gave. You do not need to manufacture the old warmth.",
+     "try_today": "Sit with the chant and let the words carry you past the routine.",
+     "scene_line": "You stand on the same ground, but you walk as if for the first time.",
+     "asks": [
+      "How do I let the words carry me past the routine?",
+      "What does it mean to lean on something I cannot see?",
+      "Can I practice without needing to feel something?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "words": [],
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 2.345,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In Mithila, a meat-seller named Dharmavyadha speaks to a proud ascetic named Kaushika. The ascetic has come seeking wisdom in the forest, but the butcher tells him that true goodness is found in honest work and caring for parents. The verse says that if a person who has done wrong turns to doing good, they are freed from all their wrongs, like the moon coming out from behind a great cloud.",
+     "for_you": "The chants have not failed you. The routine is still there, but the attention that once moved through it has gone. The moon does not stop being the moon because a cloud passes in front of it. Your practice is still whole, even when it feels hidden.",
+     "try_today": "Listen to one chant as if you have never heard it before.",
+     "scene_line": "You stand before the same door you have opened every morning for two years.",
+     "asks": [
+      "How do I tell doing good from just going through the motions?",
+      "What does it mean to turn to good when my practice feels empty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The form and the feeling",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 23289,
+   "total": 23291
+  },
+  "_ms": 23294
+ }
+}

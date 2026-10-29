@@ -1,0 +1,93 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.6,
+ "core_struggle": "A working person who wants to understand what the texts say about varna and marriage, so they can explain their view to a cousin.",
+ "mechanism": "no_meaning",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "interfaith",
+   "weight": 0.745,
+   "source": "note"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.56,
+   "source": "note"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "marriage_distance",
+   "weight": 0.375,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.275,
+   "source": "profile"
+  },
+  {
+   "id": "imposter",
+   "weight": 0.2,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You want to show your cousin what the shastras say, and you want to be sure you are right.",
+ "queries": {
+  "hook": "The wish to understand what the texts say about varna and marriage, and the question of what makes a person pure.",
+  "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+  "steady": "The self is not divided by birth; the one who sees the self in all sees no difference.",
+  "act": "Read the verses on the self and the one who sees the self in all, and let the text speak for itself.",
+  "story": "A seeker and a teacher, where the teacher shows that the self is one and not divided by birth."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "template",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "What the texts say",
+  "Purity of the self",
+  "The one who sees the self in all"
+ ],
+ "stance": "seeking",
+ "gender": null,
+ "emotion": "curious and looking for an answer",
+ "bridge": "You want to know what the Gita says about varna and marriage, and the text itself will show you that purity is of the self, not of birth.",
+ "week_thesis": "Seven days from wanting to know what the texts say about varna and marriage to seeing that the texts teach purity of the self, not of birth.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the wish to understand what the texts say about varna and marriage.",
+  "steady": "You hold that the self is not divided by birth, and that the one who sees the self in all sees no difference.",
+  "act": "You try reading the verses on the self and the one who sees the self in all, and let the text speak for itself.",
+  "story": "A seeker and a teacher, where the teacher shows that the self is one and not divided by birth."
+ },
+ "insight": "You want to know what the texts say about varna and marriage, and the Gita itself will show you that purity is of the self, not of birth.",
+ "seat": "a working person who wants to understand what the texts say about caste and marriage",
+ "life_context": "A working person in their late twenties or early thirties who wants to understand what the texts say about varna and marriage, so they can explain their view to a cousin.",
+ "details": [
+  "cousin wants to marry a girl from a lower caste"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "diagnose:diagnose_not_causal"
+ ]
+}

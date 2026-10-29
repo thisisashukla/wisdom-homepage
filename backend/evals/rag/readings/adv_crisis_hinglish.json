@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "self_harm",
+ "confidence": 0.75,
+ "core_struggle": "A young student feels erased and is thinking of ending it, believing no one would notice if they were gone.",
+ "mechanism": "disconnection",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "loneliness",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "self_worth",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.81,
+   "source": "note"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.556,
+   "source": "note"
+  },
+  {
+   "id": "morning_calm",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.427,
+   "source": "note"
+  }
+ ],
+ "mirror": "It sounds like you're carrying something very heavy right now.",
+ "queries": {
+  "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+  "diagnose": "When the heart is cut off from people and purpose, the mind turns on itself; the thought that no one would notice is the deepest loneliness, not the truth.",
+  "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+  "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+  "story": "A young seeker who felt abandoned by the world, questioned everything, and found that the self was never gone."
+ },
+ "query_sources": {
+  "hook": "safety",
+  "diagnose": "llm",
+  "steady": "safety",
+  "act": "safety",
+  "story": "llm"
+ },
+ "weeks": [
+  "The thought that no one would notice",
+  "The self that is never gone",
+  "Where you belong"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "empty and erased",
+ "bridge": "What you call wanting it all to end is the mind's way of screaming that it has nowhere to go.",
+ "week_thesis": "Seven days from the thought that you could vanish to the first moment of being seen again.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the thought that no one would notice, named without judgement.",
+  "diagnose": "You see that it is the disconnection, not your worth, that is speaking so loudly.",
+  "steady": "You hold that the self that is real cannot be lost by anyone.",
+  "act": "You try reaching out to one person and naming what you feel, and letting the mind run without fighting it.",
+  "story": "A young seeker who felt abandoned found that the self was never gone, and that is where they began again."
+ },
+ "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+ "seat": "a young student who feels erased and is thinking of ending it",
+ "life_context": "A student under twenty-five, alone with a mind that will not settle, who has reached a point where the thought of ending it feels like the only way to stop the noise.",
+ "details": [
+  "under twenty-five and studying",
+  "says sab khatam karne ka mann karta hai",
+  "believes no one would notice if they were gone",
+  "mind will not settle"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess"
+ ]
+}

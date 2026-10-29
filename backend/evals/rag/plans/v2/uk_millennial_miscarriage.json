@@ -1,0 +1,749 @@
+{
+ "situation": {
+  "id": "uk_millennial_miscarriage",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3
+  },
+  "note": "we lost the baby at 11 weeks. everyone says it's common and at least it was early. I don't know why that makes it worse.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "UK (Leicester)",
+  "lang": "english",
+  "slices": [
+   "bereavement",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and unseen",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "From being told to be grateful for a loss to letting the love that was real have its full place, without apology.",
+   "week_beats": {
+    "hook": "You recognise the grief as real and the loneliness as real, named without judgement.",
+    "diagnose": "You see that the love was real and the loss was real, and that no one else's comfort can change that.",
+    "steady": "You hold that what is real in you cannot be taken away.",
+    "act": "You try letting the grief move without forcing gratitude, and speaking the true thing about what was lost.",
+    "story": "A mother who lost her child early shows you what it means to stand in the truth of your love."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "Lost a baby at eleven weeks, and the words meant to comfort her are making the grief feel heavier and more alone.",
+   "mirror": "At eleven weeks, and the world tells you it was early, as if early makes it smaller.",
+   "insight": "You are grieving something that was yours and real. The comfort that doesn't fit is the part that hurts most.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.646,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm grieving someone I loved. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Grief is love with nowhere to go; the more the bond was real, the deeper the ache when it is taken away, and no one else can give it back.",
+    "steady": "What is real in us cannot be lost, even when what we loved is taken away; the love remains and so does the ache.",
+    "act": "Let the love have its place, speak the true thing about what was lost, and let the grief move without forcing it to be grateful.",
+    "story": "A mother who lost her child early, surrounded by those who could not see her pain, who found her footing in the truth of what she had loved."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The love that was real",
+    "The grief that has nowhere to go",
+    "What remains when the loss is taken away"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "lost a baby at eleven weeks",
+    "others say it's common and early",
+    "feels those words make it worse, not better"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:8=0.6,14=0.6,12=0.6,15=0.3,24=0.0,34=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.69",
+    "retried:1",
+    "dropped:fallback_line=1,invented_name=1,missing=2,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 3.5341,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the field and tells Krishna he cannot fight. He says that even a kingdom and rule over the gods would not dry up this grief. He admits he sees no way to end this sorrow. He asks for guidance because he cannot tell what is right. He is saying he does not know, and he needs help.",
+     "for_you": "The words that were meant to help have only made the loss feel smaller and more alone. That is a real thing. You do not need to defend the grief or explain it. Let the sorrow stay, even if it feels like it has no name.",
+     "try_today": "Notice one moment where the grief feels heavy today.",
+     "scene_line": "You stand in the field and tell the truth about what is drying you up.",
+     "asks": [
+      "How do I stop the comfort from making the grief feel smaller?",
+      "How do I ask for help without being told to be stronger?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.2831,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": null,
+     "for_you": "The people around you are trying to steady your mind, but their words are like hands on a wound that only makes it throb. Kausalya's grief was real, and so is yours. The love you gave was real, and that love is the thing that hurts now.",
+     "try_today": "Notice when someone tries to fix your grief with a word.",
+     "scene_line": "You stand in your own grief, watching others offer words that miss the mark.",
+     "asks": [
+      "How do I make my grief smaller without making my love smaller?",
+      "Is it wrong to want the comfort of my family to match the loss?",
+      "How do I stop my own mind from turning the grief inward?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.338.12",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.12, 11",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada gives Shuka a plain remedy for pain that cannot be fixed.",
+     "sanskrit": "भैषज्यमेतद्दुःखस्य यदेतन्नानुचिन्तयेत् / चिन्त्यमानं हि न व्येति भूयश्चापि प्रवर्धते दुःखोपघाते शारीरे मानसे चाप्युपस्थिते / यस्मिन्न शक्यते कर्तुं यत्नस्तन्नानुचिन्तयेत्",
+     "line": "Not dwelling on it is the medicine. Brooding doesn't make pain leave; it makes it grow.",
+     "translation": "When pain of body or mind arrives and nothing can be done about it, do not keep thinking about it. Not dwelling on it is the medicine for sorrow; brooding does not make it leave, it only makes it grow.",
+     "words": [],
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "Applies to what truly cannot be changed; where action is possible, act (see 12.338.15).",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.7889,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.15",
+     "ref": "Bhagavad Gita 2.15",
+     "ref_iast": "Bhagavad Gītā 2.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ । समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥",
+     "line": "The one who stays the same in pain and pleasure, undisturbed by either, is ready for real freedom.",
+     "translation": "The steady person whom these do not disturb, who stays the same in pain and pleasure, becomes fit for immortality.",
+     "words": [
+      {
+       "sa": "यं",
+       "en": "whom"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "व्यथयन्ति",
+       "en": "disturb"
+      },
+      {
+       "sa": "एते",
+       "en": "these"
+      },
+      {
+       "sa": "पुरुषं",
+       "en": "person"
+      },
+      {
+       "sa": "पुरुषर्षभ",
+       "en": "best among men"
+      },
+      {
+       "sa": "सम",
+       "en": "equally"
+      },
+      {
+       "sa": "दुःखसुखं",
+       "en": "pain and pleasure"
+      },
+      {
+       "sa": "धीरं",
+       "en": "steady"
+      },
+      {
+       "sa": "सः",
+       "en": "he"
+      },
+      {
+       "sa": "अमृतत्वाय",
+       "en": "for immortality"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Steadiness is not numbness or hiding what you feel.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.5969,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna speaks to Arjuna on the field, where Arjuna has laid down his bow. Arjuna is broken by grief for his kin. Krishna says that what is real in you is never born and never dies. Bodies pass like old clothes, and the self inside stays the same. Pain and pleasure come and go, but the core of who you are is not touched by them.",
+     "for_you": "That baby was real, and your love for them is real. The words that try to shrink your grief cannot take that away. What is real in you cannot be taken away.",
+     "try_today": "Notice one thing about yourself that stayed the same this morning.",
+     "scene_line": "You are on a field you did not choose, facing a grief that will not leave.",
+     "asks": [
+      "How can I hold onto what is real when everything else feels broken?",
+      "What part of me stayed the same when the grief hit hardest?",
+      "How do I let the pain be there without letting it take over?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.7865,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "King Janaka asks the sage Ashma how to bear the loss of family and wealth. Ashma tells him that pain comes from what we did not want or what we lost, that meetings end, and that days do not return. He asks Janaka to steady his mind by asking where he came from, where he is going, and who he is. The point is that grief is natural, but it must not consume the mind.",
+     "for_you": "The words of others feel like they are trying to fit your loss into a small box. The baby at eleven weeks was real and yours. The steadiness Ashma speaks of is not forgetting. It is letting the love that was there have its full place, without apology.",
+     "try_today": "Write down one true thing about what you lost today.",
+     "scene_line": "You are in your own waiting room, asking where you came from and where you are going.",
+     "asks": [
+      "How do I let the grief have its full place?",
+      "Who am I, really, when I am grieving?",
+      "How do I steady my mind without dismissing the loss?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": null,
+     "score": 2.0583,
+     "beat": "act",
+     "role_fit": 0.554,
+     "meaning": "A teacher is laying down rules for someone who has stepped away from ordinary life. The teacher says do not exhaust the body by chasing pleasure or running from pain. When praise comes, do not swell with pride. When blame comes, do not turn that anger outward at other people.",
+     "for_you": "The words that try to ease your loss are turning outward, making the hurt feel heavier. You are not wrong to feel unseen. Let the love you had for your child have its full place, without forcing it to be small. Let the truth of what was lost stand.",
+     "try_today": "Notice one moment when you are not pushing the grief away.",
+     "scene_line": "You stand at the edge of a fire, and the one who speaks does not tell you to step back.",
+     "asks": [
+      "How do I stop the comfort from making the hurt worse?",
+      "What is the true thing I am not saying out loud?",
+      "Can I let the loss be what it is, without apology?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.krauncha",
+     "title": "Grief becomes the first verse",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Valmiki",
+      "Brahma"
+     ],
+     "story_hook": "On the bank of the Tamasa, a poet watched a bird fall, and the sound that came out of him changed literature.",
+     "summary": "Valmiki sees a hunter shoot one of a pair of mating cranes and hears the survivor cry. His grief bursts out as a curse that falls into rhythm; he regrets the words but realises they are a new kind of verse. Brahma tells him to use it to tell Ram's story.",
+     "lesson": "Grief can be turned into something that helps others; even a sage regrets words spoken in pain.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.2.36",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 2.36",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Valmiki has watched a hunter kill one of a pair of cranes; his cry of grief came out as verse.",
+      "sanskrit": "समाक्षरैश्चतुर्भिर्यः पादैर्गीतो महर्षिणा। सोऽनुव्याहरणाद् भूयः शोकः श्लोकत्वमागतः॥",
+      "line": "His grief, said over and over, turned into a poem. Sorrow can become something you make.",
+      "translation": "Sung by the sage in four equal lines and repeated again and again, his grief became a shloka, a poem.",
+      "words": [
+       {
+        "sa": "समाक्षरैः",
+        "en": "with equal syllables"
+       },
+       {
+        "sa": "चतुर्भिः",
+        "en": "four"
+       },
+       {
+        "sa": "यः",
+        "en": "which"
+       },
+       {
+        "sa": "पादैः",
+        "en": "with lines"
+       },
+       {
+        "sa": "गीतः",
+        "en": "sung"
+       },
+       {
+        "sa": "महर्षिणा",
+        "en": "by the great sage"
+       },
+       {
+        "sa": "सः",
+        "en": "that"
+       },
+       {
+        "sa": "अनुव्याहरणात्",
+        "en": "through repeated recitation"
+       },
+       {
+        "sa": "भूयः",
+        "en": "again"
+       },
+       {
+        "sa": "श्लोकः",
+        "en": "verse"
+       },
+       {
+        "sa": "श्लोकत्वम्",
+        "en": "the state of being a verse"
+       },
+       {
+        "sa": "आगत:",
+        "en": "came to"
+       }
+      ],
+      "why": "Grief can be turned into something that helps others; even a sage regrets words spoken in pain.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "grief_general",
+        "label": "I'm grieving someone I loved"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.krauncha",
+       "title": "Grief becomes the first verse",
+       "summary": "Valmiki sees a hunter shoot one of a pair of mating cranes and hears the survivor cry. His grief bursts out as a curse that falls into rhythm; he regrets the words but realises they are a new kind of verse. Brahma tells him to use it to tell Ram's story.",
+       "story_hook": "On the bank of the Tamasa, a poet watched a bird fall, and the sound that came out of him changed literature.",
+       "lesson": "Grief can be turned into something that helps others; even a sage regrets words spoken in pain."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Valmiki watched a bird fall, and his grief became the first verse",
+     "teaser": "Valmiki watched a bird fall, and his grief became the first verse",
+     "for_you": "The story of the poet Valmiki shows what it looks like to let grief have its full voice, even when the words that come out feel like a mistake. When others tell you to be grateful or call it common, they are asking you to shrink the love you had.",
+     "asks": [
+      "How can I let the love I had be enough, without apology?",
+      "What if I never stop missing the life that was not fully lived?",
+      "Can I let my grief speak without feeling I have failed?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The love that was real",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19869,
+   "total": 19873
+  },
+  "_ms": 19876
+ }
+}

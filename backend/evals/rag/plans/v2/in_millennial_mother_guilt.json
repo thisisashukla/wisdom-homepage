@@ -1,0 +1,703 @@
+{
+ "situation": {
+  "id": "in_millennial_mother_guilt",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "India (Bengaluru)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and ashamed",
+   "bridge": "The split between the mother you are and the PM you are is what the Gita calls duty pulled in two directions, and it asks which one is truly yours.",
+   "week_thesis": "From feeling split between two roles to finding one duty at a time, and giving each its full presence.",
+   "week_beats": {
+    "hook": "You recognise the split and the child's question, named without blame.",
+    "diagnose": "You see that the real tension is between two duties both claiming you, and that the loop will not stop until one is chosen.",
+    "steady": "You hold that what is yours to do is yours to do, and the result is not in your hands.",
+    "act": "You try giving each role its full attention in its own time, and letting the rest go.",
+    "story": "A mother torn between two kingdoms shows you that duty is not split but chosen, and that the heart follows the hand that acts."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A mother of two who is back at work and feels she is half a mother and half a PM, shattered by her daughter's question.",
+   "mirror": "You give the day everything, then lie awake replaying every conversation.",
+   "insight": "Your daughter asked a question you already carry the answer to. Underneath is the conflict between the mother you want to be and the work you have built.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The feeling of being split between the mother you are and the PM you are, and the ache of a child's question that lands like a verdict.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind cannot settle; it runs the same loop until one is chosen.",
+    "steady": "Stay the same in praise and blame; what is yours to do is yours to do, and the result is not in your hands.",
+    "act": "Do your own duty without shrinking to fit either picture; give each role its full attention in its own time, and let the rest go.",
+    "story": "A mother and queen torn between two kingdoms, who learned that duty is not split but chosen, and that the heart follows the hand that acts."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Torn between two duties",
+    "The duty you choose",
+    "More than either role"
+   ],
+   "seat": "a mother of two who is back at work and feels she is failing at both",
+   "life_context": "A mother in her mid-thirties, back at work after her second baby; every day she feels split between the pull of her children and the demands of her job, and her daughter's question in the car broke her.",
+   "details": [
+    "back at work after second baby",
+    "feels half a mother and half a PM",
+    "daughter asked why she misses school things",
+    "cried in the car after the question"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:34=0.6,1=0.6,84=0.3,19=0.3,536=0.6,47=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.70",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.151,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that his mind is as hard to control as the wind. He feels the pull of his duties and cannot settle. Krishna agrees that the mind is restless and stubborn. He says that practice and letting go can train it, so it learns to stay steady.",
+     "for_you": "Your daughter asked why you miss her school things. That question hit the split you already feel between being a mother and being a project manager. You are not failing. You are learning to hold two strong currents at once.",
+     "try_today": "When you feel split, name the role you are in right now.",
+     "scene_line": "You are in your car, holding your daughter's question and the weight of two roles.",
+     "asks": [
+      "How do I choose between my children and my work?",
+      "Can my mind really learn to be steady?",
+      "What does letting go look like in my day?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.9.1",
+     "ref": "Ashtavakra Gita 9.1",
+     "ref_iast": "Aṣṭāvakra Gītā 9.1",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra teaches Janaka detachment by pointing at life's endless to-do list.",
+     "sanskrit": "कृताकृते च द्वन्द्वानि कदा शान्तानि कस्य वा । एवं ज्ञात्वेह निर्वेदाद् भव त्यागपरोऽव्रती ॥",
+     "line": "Done and not done: has that list ever ended for anyone? Knowing this, ease your grip.",
+     "translation": "For whom, and when, have the pairs of 'done' and 'not yet done' ever come to rest? Knowing this, through disenchantment become free, indifferent even to vows and rules.",
+     "words": [
+      {
+       "sa": "कृताकृते",
+       "en": "done and undone"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "द्वन्द्वानि",
+       "en": "pairs of opposites"
+      },
+      {
+       "sa": "कदा",
+       "en": "when"
+      },
+      {
+       "sa": "शान्तानि",
+       "en": "have ceased"
+      },
+      {
+       "sa": "कस्य",
+       "en": "of whom"
+      },
+      {
+       "sa": "वा",
+       "en": "ever"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "ज्ञात्वे",
+       "en": "knowing"
+      },
+      {
+       "sa": "ह",
+       "en": "indeed"
+      },
+      {
+       "sa": "निर्वेदात्",
+       "en": "dispassion"
+      },
+      {
+       "sa": "भव",
+       "en": "become"
+      },
+      {
+       "sa": "त्यागपरे",
+       "en": "beyond renunciation"
+      },
+      {
+       "sa": "अव्रती",
+       "en": "free from vows"
+      }
+     ],
+     "why": "The to-do list and life's ups and downs never end; peace comes from loosening your grip.",
+     "misuse": "Not permission to drop responsibilities; it is about the to-do list ruling your peace.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.detachment",
+      "title": "The list that never ends",
+      "summary": "Ashtavakra points out that the pairs of done and undone, gain and loss, never end for anyone at any age, and that even sages disagree endlessly. Seeing this, one can stop fighting life and take what comes.",
+      "story_hook": "",
+      "lesson": "The to-do list and life's ups and downs never end; peace comes from loosening your grip."
+     },
+     "score": 2.3885,
+     "beat": "diagnose",
+     "role_fit": 0.65,
+     "meaning": "Ashtavakra tells Janaka that no one escapes the endless cycle of what is done and what remains undone. He points out that this list of tasks and ups and downs never truly ends for anyone at any stage of life. Knowing this, he says, loosen your grip. Let go of the idea that finishing everything will bring you peace. Instead, rest in the understanding that the to-do list will always be there, and your calm does not depend on crossing every item off.",
+     "for_you": "You are caught between the PM who must finish the deck and the mother who must be in the car. The loop will not stop until you choose which duty gets your full presence today.",
+     "try_today": "Notice one moment when you choose to set the work aside and be fully with your children.",
+     "scene_line": "You are in your own endless to-do list, and the question is which item to set down first.",
+     "asks": [
+      "How do I choose which duty gets my full presence today?",
+      "Can I finish the list without letting it rule my peace?",
+      "What does it mean to ease my grip without dropping my duties?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 2.7746,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "King Dhritarashtra cannot sleep. He has asked his half-brother Vidura to sit with him. Vidura speaks of a man who does not swell with praise or burn at a slight. He says this person stays deep and still, like a river pool. The point is to decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "for_you": "You do not have to choose between your work and your children today. You can be fully present with one, and let the other rest in your mind. Let your daughter see your full attention when she is near you. Your presence is the gift she is waiting for.",
+     "try_today": "When you are with your daughter, put your phone away and listen to her fully.",
+     "scene_line": "You are in your own waiting room, holding a question from your daughter.",
+     "asks": [
+      "How can I be present with my daughter when my mind is at work?",
+      "What does it mean to forgive myself for not being everywhere at once?",
+      "How do I know when I am truly steady and not just numb?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.2339,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Arjuna is on the field of battle, frozen between duty and grief. Krishna tells him to act, to fight, but to let go of the outcome. He says your right is only to the work itself, never to the fruits it bears. The result belongs to a larger order. Do the action with your whole self, but do not let the success or failure become the master of your peace.",
+     "for_you": "You are a PM and a mother, and the day will pull you in both directions. You cannot control the exact moment your child feels seen, or the exact metric your job demands. Your part is to be present in each role fully. The tear in the car was yours.",
+     "try_today": "Notice one moment when you are doing your work, and let the result go for an hour.",
+     "scene_line": "You are in your own chariot, caught between the duty you feel and the result you fear.",
+     "asks": [
+      "How do I give my full attention to both roles without splitting myself?",
+      "Can I do my work well without owning its outcome?",
+      "How do I stop the result from owning my peace?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.8478,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu, the sage, is speaking to Nidagha, a householder. He is explaining how a person can be fully engaged in daily duties without being disturbed inside. Ribhu says that a free person is outwardly busy, yet inwardly unhurried. They let go of what is lost. They accept what comes. They do the work that is right in front of them. They speak gently. They treat the whole world as family. The point is to move through the world with a clear mind, doing what needs to be done without letting it agitate you.",
+     "for_you": "You are trying to be fully there for your children and your work. The problem is that your mind is trying to hold both at the same time. Let the school pickup be the job. Let the project report be the job.",
+     "try_today": "When your daughter asks you a question, give her your full attention for that minute and let the work wait.",
+     "scene_line": "You are in your own busy life, trying to hold two worlds in one hand.",
+     "asks": [
+      "How do I stop feeling guilty when I am at work?",
+      "Can I really let go of the other role when I am in one?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.3287,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader from his work on how good people act. He lists the things that shape a good life. Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering. He is saying that real success does not swell the chest. It makes a person bow lower. The true ornaments of a person are listening, giving and helping.",
+     "for_you": "You are trying to be a good mother and a good professional at the same time. The list of what you could do never ends. Let the list be there, but do not let it own you.",
+     "try_today": "When you are with your children, let your work phone stay in your bag.",
+     "scene_line": "You are in your own home, holding the weight of two rooms at once.",
+     "asks": [
+      "How do I know when I am fully present and when I am just pretending?",
+      "Can I really let go of the work list when I am with my family?",
+      "What does it mean to bow lower when I feel like I am already falling?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Your daughter asked why you miss her school things. Janaka did not leave his kingdom to find peace.",
+     "asks": [
+      "How do I do my work without letting it take my mind?",
+      "Can I be fully present for my daughter and still do my job well?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn between two duties",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12675,
+   "total": 12677
+  },
+  "_ms": 12682
+ }
+}

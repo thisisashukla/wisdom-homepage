@@ -1,5 +1,4 @@
 import MobileNavToggle from './MobileNavToggle'
-import GetAppButton from './funnel/GetAppButton'
 import './nav.css'
 
 interface NavProps {
@@ -11,7 +10,7 @@ interface NavProps {
   pageName?: string
 }
 
-export default function Nav({ extraLink, overlayHero, pageName = 'unknown' }: NavProps) {
+export default function Nav({ extraLink, overlayHero }: NavProps) {
   return (
     <nav className={`site-nav${overlayHero ? ' site-nav--overlay' : ''}`}>
       <div className="nav-inner">
@@ -36,7 +35,7 @@ export default function Nav({ extraLink, overlayHero, pageName = 'unknown' }: Na
           <li><a href="/gita" className="nav-page-link">Read the Gita</a></li>
           <li><a href="/hi/gita" hrefLang="hi" className="nav-page-link">हिंदी गीता</a></li>
           <li><a href="/gita/today" className="nav-page-link">Verse of the Day</a></li>
-          <li><a href="/gita-for" className="nav-page-link">Gita for Life</a></li>
+          <li><a href="/reading-plans" className="nav-page-link">Reading Plans</a></li>
           <li>
             <a href="/app" className="nav-app-link" data-nav-app="" data-mp-location="nav_app_desktop">
               <PhoneIcon />
@@ -50,9 +49,6 @@ export default function Nav({ extraLink, overlayHero, pageName = 'unknown' }: Na
               </a>
             </li>
           )}
-          <li>
-            <GetAppButton pageName={pageName} />
-          </li>
         </ul>
       </div>
     </nav>

@@ -1,0 +1,622 @@
+{
+ "situation": {
+  "id": "in_genx_father_layoff",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "market": "India (Pune)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and hollowed out",
+   "bridge": "The ten minute call that ended twenty two years is what the Gita calls a result that was never yours to hold. Your worth is not the one they took away.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "After twenty two years at one company, was let go in a ten minute call and is hiding it from their mother, waking each morning as if they still had to go.",
+   "mirror": "You gave them twenty two years, and they took it back in ten minutes.",
+   "insight": "You have not told your mother, and that silence is its own weight. The morning routine is what the body does when the mind has not yet caught up.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.275,
+     "source": "note"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.655,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go after twenty two years in a call that lasted ten minutes, and the hollow morning that follows when the office no longer exists. I lost a parent.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and the harm deepens when we hide it.",
+    "steady": "A failure is something that happened, not who you are; no one who has served with honesty is ever lost, and no one can take away what you have already built.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A man of long service who was dismissed and hid the loss from his own family, yet found the courage to stand again and offer what he had to offer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the ending",
+    "The verdict you keep passing",
+    "More than what you built"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years at one company",
+    "let go in a ten minute call",
+    "has not told their mother",
+    "still wakes at six to go to the office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:29=0.6,46=0.6,87=0.6,26=0.6,1=0.6,45=0.6",
+    "week_same:87,26",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.65",
+    "redo:4",
+    "redo_fixed:3",
+    "day1:third_try",
+    "dropped:cliche=1,copied=1,repeat=2,soft_kept=3",
+    "for_you:6/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 1.6491,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in his chariot, looking across the field. He sees his own people, the ones he grew up with, standing on the other side. The moment he recognizes them, his body gives out. His limbs shake, his mouth goes dry, and his skin prickles. He drops his bow and sits down, saying he would rather die than win by killing his own kin.",
+     "for_you": "The ten minute call that ended twenty two years is what the Gita calls a result that was never yours to hold. Your worth is not the one they took away. The morning routine is what the body does when the mind has not yet caught up.",
+     "try_today": "Notice where your body holds the morning routine before your mind wakes up.",
+     "scene_line": "You are in your own chariot, seeing your own kin across a field you no longer recognize.",
+     "asks": [
+      "What part of my body is telling the truth before my mind wakes up?",
+      "What would it mean to drop my bow and sit down today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.9.46",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "himself",
+     "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+     "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+     "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+     "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 2.9272,
+     "beat": "diagnose",
+     "role_fit": 0.766,
+     "meaning": "King Janaka stands alone on his palace roof, shaken by the words of wandering sages. He has ruled his kingdom, raised a family, and lived a life of great fortune. But now he sees that all those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes. He decides to get up and do his duties, but with a mind that no longer clutches.",
+     "for_you": "You wake at six and walk into the office because that is what the body does.",
+     "try_today": "Notice one moment when you let go of the morning routine without fighting it.",
+     "scene_line": "You stand on the roof of your own life, looking out at the day that still has to be lived.",
+     "asks": [
+      "How do I let go of the morning without letting go of the work?",
+      "What does it mean to accept a misfortune without changing my direction?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.3723,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ribhu tells Nidagha that people of steady goodness do not wilt in hard times, just as the golden lotus stays open at night. They do not reach for what is not at hand, and they find joy in what is good. The verse proposes that starting with calm or contentment is the path that lets the rest follow. It is not about changing the storm outside, but about standing in it without closing.",
+     "for_you": "You are still opening your eyes at six for a workplace that is no longer there. That is the wilt the verse speaks to, the body closing before the mind can rest. The lotus does not fight the night. It simply stays open and waits for what is already there.",
+     "try_today": "Sit with the morning coffee without reaching for your phone or your old schedule.",
+     "scene_line": "You are the lotus that stays open while the room is dark and the job is gone.",
+     "asks": [
+      "How do I stop my body from running a race that has ended?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.27",
+     "ref": "Bhagavad Gita 2.27",
+     "ref_iast": "Bhagavad Gītā 2.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च । तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥",
+     "line": "Whatever is born will die, and what dies is born again. Don't torment yourself over the unavoidable.",
+     "translation": "Death is certain for the one who is born, and birth is certain for the one who dies. So you should not grieve over what cannot be avoided.",
+     "words": [
+      {
+       "sa": "जातस्य",
+       "en": "of the born"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "ध्रुवो",
+       "en": "certain"
+      },
+      {
+       "sa": "मृत्यु",
+       "en": "death"
+      },
+      {
+       "sa": "ध्रुवं",
+       "en": "certain"
+      },
+      {
+       "sa": "जन्म",
+       "en": "birth"
+      },
+      {
+       "sa": "मृतस्य",
+       "en": "of the dead"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "अपरिहार्येऽर्थे",
+       "en": "in unavoidable matter"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "शोचितुम्",
+       "en": "to grieve"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "are worthy"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to stop caring for the sick or to rush someone's mourning.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.7881,
+     "beat": "steady",
+     "role_fit": 0.355,
+     "meaning": "Krishna speaks to Arjuna on the battlefield of as Arjuna lays down his bow, his body trembling, his mouth dry, his skin burning with grief. Krishna tells him that whatever is born must die, and what dies is born again. He asks Arjuna not to torment himself over what cannot be avoided. The body and the life within it are temporary, but the true self is eternal. It does not perish when the body perishes, nor does it perish when the body is born.",
+     "for_you": "The morning you still wake at six and move through the motions of a life that has not yet caught up with you is the body doing what it knows.",
+     "try_today": "Feel the weight of the body moving through the morning routine without judgment.",
+     "scene_line": "You are standing on a field where the body is laid down and the self remains.",
+     "asks": [
+      "How do I hold the worth they did not see?",
+      "How do I stop the morning from feeling like a lie?",
+      "What part of me is still here after the call?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "words": [],
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.9613,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Narada speaks to Shuka, the young seeker, seeing him overwhelmed by sorrow. He tells Shuka that sitting alone with grief only deepens the wound, much like a body left untreated. Narada says if a path to mend the trouble is clear, then one must move, for action is the true remedy. He teaches that brooding is not rest, but a kind of poison that swells the pain until it fills the whole chest.",
+     "for_you": "The hollow feeling in your chest is real, and it is not a sign of weakness. It is the body's way of registering a loss that the mind is still trying to outrun.",
+     "try_today": "Walk to the office and turn around at the corner.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.4006,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma, lying on his bed of arrows, answers Yudhishthira's question about a long and good life. He says do not sleep past sunrise. On waking, first greet your mother and father, and your teacher or another elder. That is how a long life is won. A good life is built from these small daily acts of respect. It is not one grand gesture but the steady habit of kind words and honest conduct that adds up. This is the foundation of a life well lived.",
+     "for_you": "Your mornings now begin with a ritual that no longer matches your life. The body wakes at six because it expects the office, but the mind is still hiding the call from your mother. That gap between what your body does and what you are living is heavy.",
+     "try_today": "Greet your mother or family before you check your phone.",
+     "scene_line": "You wake before dawn to a silence no one else knows.",
+     "asks": [
+      "How do I greet them when I am not sure what to say?",
+      "What if they ask why I am home?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_consents",
+     "title": "Kausalya lets Ram go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+     "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+     "lesson": "Love sometimes means staying behind to care for someone else.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.2.24.20",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 24.20",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Kausalya",
+      "setting": "Ram's mother wants to follow him into exile; he asks her instead to stay and look after his grieving father.",
+      "sanskrit": "यथा मयि तु निष्क्रान्ते पुत्रशोकेन पार्थिवः॥ श्रमं नावाप्नुयात् किंचिदप्रमत्ता तथा कुरु। दारुणश्चाप्ययं शोको यथैनं न विनाशयेत्॥ राज्ञो वृद्धस्य सततं हितं चर समाहिता।",
+      "line": "When I'm gone, look after him. Don't let his grief wear him down.",
+      "translation": "Take care that when I am gone the king does not wear himself out with grief for his son, that this terrible sorrow does not destroy him. Look after the old king's welfare always.",
+      "words": [],
+      "why": "Love sometimes means staying behind to care for someone else.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.kausalya_consents",
+       "title": "Kausalya lets Ram go",
+       "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+       "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+       "lesson": "Love sometimes means staying behind to care for someone else."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "teaser": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "for_you": null,
+     "asks": [
+      "How do I care for them without the words?",
+      "What if my mother sees the morning routine is empty?",
+      "Can I give respect without giving the whole truth?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the ending",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13291,
+   "total": 13294
+  },
+  "_ms": 13298
+ }
+}

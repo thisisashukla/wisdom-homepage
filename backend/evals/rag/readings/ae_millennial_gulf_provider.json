@@ -1,0 +1,104 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "An eleven-year migrant who has been sending money home faces his father's surgery and his brother's wedding, while his wife wants to return and he no longer knows what he needs.",
+ "mechanism": "restless_mind",
+ "secondary_mechanism": "duty_conflict",
+ "situations": [
+  {
+   "id": "parents_aging",
+   "weight": 1.875,
+   "source": "note"
+  },
+  {
+   "id": "money_stress",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "marriage_distance",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "breakup",
+   "weight": 0.419,
+   "source": "note"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.416,
+   "source": "note"
+  }
+ ],
+ "mirror": "You send money home for eleven years, and now the phone rings with two different needs at once.",
+ "queries": {
+  "hook": "A mind that has been the provider for eleven years and now cannot settle, with no hour of its own and no answer to what it needs. My parents are getting older far away.",
+  "diagnose": "When the mind is never given one quiet minute to rest, it begins to run after results it cannot hold; restlessness grows from a mind that has never been allowed to stop.",
+  "steady": "The mind that has never been given one quiet minute to rest is not a mind that is broken; it is a mind that has never been allowed to stop.",
+  "act": "Give your mind one quiet minute to rest, and let one person know what you need before you decide anything else.",
+  "story": "A man who has been the provider for his family for years, facing his own exhaustion and the question of what he needs, and finding the courage to ask."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The one who provides",
+  "What the mind needs",
+  "The one who asks"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "pulled apart and empty",
+ "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+ "week_thesis": "Seven days from being the one who always provides to being the one who asks what he needs, with a mind that can finally settle.",
+ "undisclosed": true,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "sibling",
+  "family",
+  "parent",
+  "partner",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the restlessness and the exhaustion, named without blame.",
+  "diagnose": "You see that the mind that cannot settle is not broken. It is a mind that has never been given one quiet minute to rest.",
+  "steady": "You hold that a mind that has never been given one quiet minute to rest is not a mind that is broken.",
+  "act": "You try giving your mind one quiet minute to rest, and letting one person know what you need before you decide anything else.",
+  "story": "A man who has been the provider for his family for years shows you what it looks like to ask what he needs."
+ },
+ "insight": "You have been the one who sends, the one who pays, the one who decides. The exhaustion is not in the work. It is in having no one left to ask what you need.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "eleven years in Dubai sending money home",
+  "father had heart surgery",
+  "brother got married this year",
+  "wife wants to return to India"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "bridge:copied_example",
+  "seat:missing"
+ ]
+}

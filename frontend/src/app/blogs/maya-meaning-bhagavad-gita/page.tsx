@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Maya Meaning: Illusion in the Bhagavad Gita | Wisdom",
     description: "In the Gita, maya is the power that makes the real appear as something other than it is. BG 7.14 calls it divine and hard to cross.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita',
@@ -299,7 +299,7 @@ const schemas = [
       url: 'https://wisdomquotes.in',
       logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
     },
-    image: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 },
+    image: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 },
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
     articleSection: 'Bhagavad Gita concepts',
     inLanguage: 'en',

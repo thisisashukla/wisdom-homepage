@@ -1,0 +1,756 @@
+{
+ "situation": {
+  "id": "in_millennial_hinglish_job_loss",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "phone_hours": 5
+  },
+  "note": "layoff ho gaya 2 mahine pehle, ghar pe abhi tak nahi bataya. roz office jaane ka natak karta hu, cafe me baith ke apply karta rehta hu. EMI chal rahi hai",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Bengaluru)",
+  "lang": "hinglish",
+  "slices": [
+   "career",
+   "hinglish",
+   "lang:hinglish",
+   "money"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and carrying it alone",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from carrying the layoff alone to speaking one truth and taking one step toward support.",
+   "week_beats": {
+    "hook": "You recognise the secret and the shame, named without judgement.",
+    "act": "You try speaking one truth you have been hiding, and asking for one thing you need today.",
+    "story": "A man who lost his job and hid it from his family shows you what facing them and beginning again looks like."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "I lost my job",
+   "mirror": "You leave the house for work each day, and the work is a cafe and a laptop.",
+   "insight": "You are applying from a cafe, and the EMI is still running. The guilt you carry is heavier than the job loss.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.245,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.419,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.382,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of a secret layoff, the daily performance of going to work, and the weight of an EMI that keeps running.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and it keeps us from asking for help.",
+    "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost, and the truth you hide is heavier than the job you lost.",
+    "act": "Lift yourself up instead of pushing yourself down; speak one truth you have been hiding, and ask for what you need today.",
+    "story": "A man who lost his position, hid the truth from his family, and found the courage to face them and begin again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the secret",
+    "The verdict you keep passing",
+    "More than the job you lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "laid off two months ago",
+    "pretends to go to office daily",
+    "applies for jobs from a cafe"
+   ],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "week_fit:34=0.9,58=0.9,66=0.8,40=0.7,1=0.9,5=0.9",
+    "week_sim:mean=0.60,max=0.72",
+    "retried:1",
+    "dropped:fallback_line=5,invented=2,invented_name=1,missing=2,not_second_person=2",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.6076,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield, and he tells Krishna that the mind is restless and stubborn. He says it is as hard to hold as the wind. Krishna agrees that the mind is powerful, but he says that practice and letting go are what train it. The verse proposes that the mind cannot be forced into stillness by willpower alone.",
+     "for_you": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+     "try_today": "Notice the mind wandering to the shame and let it pass.",
+     "scene_line": "You sit in the cafe, the application on the screen, and the mind is the wind you cannot hold.",
+     "asks": [
+      "How do I stop the mind from running to shame?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.0077,
+     "beat": "diagnose",
+     "role_fit": 0.76,
+     "meaning": null,
+     "for_you": "The self is untouched by your mistakes; it was never stained and cannot be made less, whatever you have done.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.66",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 66",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on the good.",
+     "sanskrit": "सम्पत्सु महतां चित्तं भवत्युत्पलकोमलम् । आपत्सु च महाशैलशिलासङ्घातकर्कशम् ॥",
+     "line": "In good times be soft as a lotus. In hard times be firm as mountain rock.",
+     "translation": "In prosperity the heart of the great becomes soft as a lotus; in adversity, hard as a mass of mountain rock.",
+     "words": [],
+     "why": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.sujana",
+      "title": "Nitishatakam: On the good",
+      "summary": "Portraits of good people: steady in trouble, humble in success, giving in secret and speaking of others' kindness aloud. Company, the verses say, makes us what we are.",
+      "story_hook": "",
+      "lesson": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet."
+     },
+     "score": 3.3757,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Bhartrihari wrote this from the quiet of his own life. He was not speaking to a king in a battle, but to anyone reading these lines. He says that in good times, a person of worth becomes soft as a lotus. In hard times, that same person becomes hard as mountain rock. The point is that your character is tested by the weather of your life. When the ground is solid, you open. When the ground shakes, you do not crack.",
+     "for_you": "Be on your own side as the self is on yours; make amends, learn, and begin again without carrying the old verdict.",
+     "try_today": "Sit in the cafe and feel the weight of the chair for one minute.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.40",
+     "ref": "Bhagavad Gita 6.40",
+     "ref_iast": "Bhagavad Gītā 6.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "श्री भगवानुवाचपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते । नहि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ॥",
+     "line": "Whoever does good never comes to ruin, my friend. Not here, not after.",
+     "translation": "The Blessed Lord said: Partha, there is no ruin for him either in this world or the next. No one who does good, my friend, ever comes to grief.",
+     "words": [
+      {
+       "sa": "श्री भगवानुवाच",
+       "en": "the Blessed One said"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O Partha"
+      },
+      {
+       "sa": "नैव",
+       "en": "not at all"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अमुत्र",
+       "en": "in the other world"
+      },
+      {
+       "sa": "विनाशः",
+       "en": "destruction"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of him"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "there is"
+      },
+      {
+       "sa": "नहि",
+       "en": "indeed not"
+      },
+      {
+       "sa": "कल्याणकृत्",
+       "en": "one who does good"
+      },
+      {
+       "sa": "कश्चित्",
+       "en": "anyone"
+      },
+      {
+       "sa": "दुर्गतिम्",
+       "en": "bad end"
+      },
+      {
+       "sa": "तात",
+       "en": "my dear"
+      },
+      {
+       "sa": "गच्छति",
+       "en": "goes"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 2.7825,
+     "beat": "steady",
+     "role_fit": 0.395,
+     "meaning": "Arjuna asks Krishna what happens to a seeker who begins the path and then falls away, afraid that their effort is lost like a torn cloud. Krishna answers that no sincere person is ever ruined. Their good work does not vanish, and they will rise again to strive. The effort already made carries them forward into the next attempt.",
+     "for_you": "You wake each morning and put on the clothes, then walk to the cafe to send out your applications. That is not pretending. It is the good you are doing now. The layoff happened, but it did not undo the work you are putting in today.",
+     "try_today": "Notice one small thing done well today.",
+     "scene_line": "You are the one who fell from the path, and the path is still open.",
+     "asks": [
+      "How do I trust my effort is not wasted?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.191,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+     "try_today": "Speak one truth about the job to someone you trust, or write it down where you can see it.",
+     "scene_line": "You sit in a cafe with a laptop, pretending the office is still there while your mind tells you to hide.",
+     "asks": [
+      "Who do I think I wronged by losing this job?",
+      "What is one truth I can speak today?",
+      "How does hiding from my family make the shame heavier?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.8465,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna tells Arjuna that he is his own best friend or his own worst enemy. The choice is his. You could lift yourself up by your own strength, without letting your mind drag you down into despair. This means taking full responsibility for your own inner state. You are not a victim of circumstance, but the one who must choose to be your own ally.",
+     "for_you": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+     "try_today": "Tell one person the truth about your job search today.",
+     "scene_line": "You are your own ally in this cafe.",
+     "asks": [
+      "How do I stop my mind from attacking me?",
+      "What does it mean to lift myself up?",
+      "Can I really be my own friend?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "words": [],
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "You are applying from a cafe and hiding the layoff, but Ram walked out of the palace knowing exactly where his duty lay. The news of the loss is already done, and your mind can show no change.",
+     "asks": [
+      "What truth can I speak to someone today?",
+      "How do I stop the shame from deciding my next step?",
+      "Who is the one person I can trust with this?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the secret",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19254,
+   "total": 19256
+  },
+  "_ms": 19259
+ }
+}

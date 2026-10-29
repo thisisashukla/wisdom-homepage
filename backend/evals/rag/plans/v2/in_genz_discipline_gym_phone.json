@@ -1,0 +1,638 @@
+{
+ "situation": {
+  "id": "in_genz_discipline_gym_phone",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "stick",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 8
+  },
+  "note": "every sunday I make a plan: gym, study, no reels. by tuesday it's gone. I want to actually stick to something for once.",
+  "note_source": "text",
+  "expect_stance": "aspiration",
+  "expect_risk": null,
+  "market": "India (Indore)",
+  "lang": "english",
+  "slices": [
+   "discipline",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "frustrated and tired",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "The Sunday plan has a name, and the Tuesday morning has a practice that does not ask the mind to be ready.",
+   "week_beats": {
+    "hook": "You recognise the cycle of the Sunday plan and the Tuesday collapse.",
+    "diagnose": "You see that waiting to feel ready is what keeps you stuck.",
+    "steady": "You hold that the mind is restless, and that the one who steadies it is the one who wins.",
+    "act": "You try beginning with the smallest part of the plan, and letting the mind learn from the doing.",
+    "story": "A young seeker who wanted to master their mind shows you that the first step is the only one that matters."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A student who makes a plan every Sunday to study and go to the gym, but by Tuesday it is gone.",
+   "mirror": "You make the plan every Sunday, and by Tuesday it is gone.",
+   "insight": "You want to stick with something. What you are up against is the mind that has never been trained to hold a single thing.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 2.1,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 1.296,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 0.574,
+     "source": "note"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.25,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.25,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The Sunday plan that feels so clear, and the Tuesday morning when it is already gone, and the exhaustion of wanting to actually stick with something.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "The mind is restless and stubborn and strong; holding it feels like holding the wind, but the one who learns to steady it is the one who wins.",
+    "act": "Practise one thing: begin with the smallest part of the plan, and let the rest wait; let the mind learn from the doing, not from the planning.",
+    "story": "A young seeker who wanted to master their mind, faced the restlessness that would not settle, and learned that the first step was the only one that mattered."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The Sunday plan",
+    "The Tuesday morning",
+    "The one who begins"
+   ],
+   "seat": "a student who makes plans they cannot keep",
+   "life_context": "A student under twenty-five with eight hours of phone time; every Sunday they write a plan for gym and study, and by Tuesday the plan has dissolved, leaving the same frustration.",
+   "details": [
+    "makes a plan every Sunday to study and go to the gym",
+    "by Tuesday the plan is gone",
+    "wants to actually stick with something for once",
+    "spends hours on the phone daily"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:35=0.6,26=0.0,5=0.6,20=0.6,15=0.6,8=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.67",
+    "retried:2",
+    "dropped:copied=1,fallback_line=1,missing=2,repeat=1,soft_kept=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.35",
+     "ref": "Bhagavad Gita 6.35",
+     "ref_iast": "Bhagavad Gītā 6.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "श्री भगवानुवाचअसंशयं महाबाहो मनो दुर्निग्रहं चलं । अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥",
+     "line": "Yes, the mind is restless and hard to hold. But practice and letting go can train it.",
+     "translation": "The Blessed Lord said: Undoubtedly, mighty-armed one, the mind is restless and hard to control. But it is held by practice and by detachment, Kaunteya.",
+     "words": [
+      {
+       "sa": "श्रीभगवानुवाच",
+       "en": "The Supreme Being spoke"
+      },
+      {
+       "sa": "असंशयं",
+       "en": "undoubtedly"
+      },
+      {
+       "sa": "महाबाहो",
+       "en": "O mighty-armed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "दुर्निग्रहं",
+       "en": "difficult to control"
+      },
+      {
+       "sa": "चलं",
+       "en": "restless"
+      },
+      {
+       "sa": "अभ्यासेन",
+       "en": "by practice"
+      },
+      {
+       "sa": "तु",
+       "en": "indeed"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "वैराग्येण",
+       "en": "by detachment"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.0885,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Arjuna sits on the battlefield, overwhelmed, and admits they cannot control the mind. It is like the wind, impossible to catch or hold. Krishna does not argue. He agrees the mind is restless. Then he says it can be trained, but only through practice and by letting go of the grip on the outcome.",
+     "for_you": "The Sunday plan and the Tuesday collapse are not a failure of will. They are the mind refusing to be held. You are not lazy, you are untrained. The plan asks the mind to be still before it knows how.",
+     "try_today": "Notice one moment when you reach for the phone without thinking, and let your hand rest.",
+     "scene_line": "You are on the battlefield, and the mind is the wind you cannot catch.",
+     "asks": [
+      "How can I practice when I feel stuck?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.33.85",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.85",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "षड्दोषाः पुरुषेणेह हातव्या भूतिमिच्छता / निद्रा तन्द्री भयं क्रोध आलस्यं दीर्घसूत्रता",
+     "line": "Six habits block every rise: oversleeping, drowsiness, fear, anger, laziness and procrastination.",
+     "translation": "Six faults must be given up by anyone who wants to prosper: too much sleep, drowsiness, fear, anger, laziness and procrastination.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.076,
+     "beat": "diagnose",
+     "role_fit": 0.495,
+     "meaning": null,
+     "for_you": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.6.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.18",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "ऐहिकः प्राक्तनं हन्ति प्राक्तनोऽद्यतनं बलात् । सर्वदा पुरुषस्पन्दस्तत्रानुद्वेगवाञ्जयी ॥",
+     "line": "Today's effort and yesterday's keep wrestling. Whoever stays calm through it wins.",
+     "translation": "Present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.1071,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Vasishtha sits with the young Rama, who is tired of trying. He says that today's effort and yesterday's keep wrestling. The past shapes what you see now, but what you do right now shapes what comes next. It is a contest between what you have done and what you are doing. The one who stays calm through the struggle of starting wins.",
+     "for_you": "You sit with the Sunday plan and the Tuesday collapse. The mind is restless, and the phone is its habit. But the one who stays calm through the wrestling wins. You do not need to win the whole week today.",
+     "try_today": "When the phone calls, pause and name the habit.",
+     "scene_line": "You are in the ring with yesterday's plan and today's effort.",
+     "asks": [
+      "How do I stay calm when the plan falls apart?",
+      "Can I change the past by starting now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.55",
+     "ref": "Bhagavad Gita 2.55",
+     "ref_iast": "Bhagavad Gītā 2.55",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "श्री भगवानुवाचप्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् । आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥",
+     "line": "When you stop chasing every desire and find contentment within yourself, your wisdom becomes steady.",
+     "translation": "The Blessed Lord said: When a person gives up all the desires of the mind and is content in the self by the self, then he is called one of steady wisdom.",
+     "words": [
+      {
+       "sa": "श्रीभगवानुवाच",
+       "en": "The Blessed Lord said"
+      },
+      {
+       "sa": "प्रजहाति",
+       "en": "abandons"
+      },
+      {
+       "sa": "यदा",
+       "en": "when"
+      },
+      {
+       "sa": "कामान्",
+       "en": "desires"
+      },
+      {
+       "sa": "सर्वान्",
+       "en": "all"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O son of Pritha"
+      },
+      {
+       "sa": "मनोगतान्",
+       "en": "that arise in the mind"
+      },
+      {
+       "sa": "आत्मन्येव",
+       "en": "in the self alone"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "तुष्टः",
+       "en": "content"
+      },
+      {
+       "sa": "स्थितप्रज्ञः",
+       "en": "steady in wisdom"
+      },
+      {
+       "sa": "तदा",
+       "en": "then"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is said"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.9057,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Arjuna asks Krishna what a person of steady mind looks like. Krishna answers by saying that when you stop chasing every desire and find contentment within yourself, your wisdom becomes steady. He explains that a steady person is not shaken by sorrow and has mastered their senses. Their steadiness comes from guarding where their attention goes, because anger and ruin begin when you dwell on what you lack.",
+     "for_you": "The Sunday plan is a desire you are chasing, and the Tuesday collapse is the mind that has not yet learned to stay still. You are not broken for wanting to study and move your body.",
+     "try_today": "Notice when your attention drifts to the phone, and let it go without fighting it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "words": [],
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.6547,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "In the Shanti Parva of the Mahabharata, a young man named Medhavin speaks to his father. His father is settling into a life of study and ritual, and Medhavin urges him not to keep postponing what truly matters. Medhavin says that days and nights fall like arrows, and death takes people mid-task. He tells his father to do tomorrow's work today, and the afternoon's in the morning. Time does not wait for you to be ready. The point is that life slips away while we stay busy, so do what matters now.",
+     "for_you": "You do not need to be ready to begin. You could begin to become ready. The phone is not the enemy.",
+     "try_today": "Open your notebook and write one sentence about what you will do today.",
+     "scene_line": "You are the son who wakes the father, and the father is the morning.",
+     "asks": [
+      "How do I start when the mind is not ready?",
+      "What is the smallest part of my plan?",
+      "How do I stop the Tuesday morning from arriving?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_chhandogya.581",
+     "ref": "Chhandogya Upanishad 7.21.1",
+     "ref_iast": "Chāndogya Upaniṣad 7.21.1",
+     "family": "up",
+     "speaker": "Sanatkumara",
+     "listener": "Narada",
+     "setting": "A step in Sanatkumara's ladder: faith rests on steadiness, steadiness on action.",
+     "sanskrit": "यदा वै करोत्यथ निस्तिष्ठति नाकृत्वा निस्तिष्ठति कृत्वैव निस्तिष्ठति कृतिस्त्वेव विजिज्ञासितव्येति कृतिं भगवो विजिज्ञास इति ॥",
+     "line": "Steadiness comes from doing. No one becomes steady without acting; act, and steadiness follows.",
+     "translation": "When one acts, one becomes steadfast. One does not become steadfast without acting; only by acting does one become steadfast. So action itself must be understood. 'Sir, I wish to understand action.'",
+     "words": [],
+     "why": "Success and learning don't cure sadness; only the infinite does.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.chhandogya.narada",
+      "title": "Narada: learned but sad",
+      "summary": "Narada, who has mastered every science of his day, comes to Sanatkumara and admits he is unhappy: he knows words, not himself. Sanatkumara leads him step by step from names up through action and joy to the infinite, teaching that happiness is found only in the vast, never in the small.",
+      "story_hook": "Narada knew every subject worth knowing, and still came to Sanatkumara feeling sad.",
+      "lesson": "Success and learning don't cure sadness; only the infinite does."
+     },
+     "score": 3.1578,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Sanatkumara is teaching Narada. Narada has mastered every subject but still feels empty. Sanatkumara tells him that steadiness is not found in knowing. It is found in the doing. When you act, you become steady. Without action, no one becomes steady. You cannot wait to feel ready. You could act, and steadiness will follow.",
+     "for_you": "You write a grand plan every Sunday, but the mind that has never been trained to hold a single thing dissolves it by Tuesday. Sanatkumara says steadiness does not come from wanting to study or wanting to be fit. It comes from the smallest action.",
+     "try_today": "Open the study book to one page and the gym app to one workout. Do not decide. Just open them.",
+     "scene_line": null,
+     "asks": [
+      "What is the smallest step I can take right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "anchor": {
+      "id": "yv.1.1.7",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 1.7",
+      "family": "yv",
+      "speaker": "Agastya",
+      "listener": "Sutikshna",
+      "setting": "The sage Agastya answers a student torn between action and knowledge.",
+      "sanskrit": "उभाभ्यामेव पक्षाभ्यां यथा खे पक्षिणां गतिः । तथैव ज्ञानकर्मभ्यां जायते परमं पदम् ॥",
+      "line": "A bird flies on two wings. You need both understanding and action to get anywhere that matters.",
+      "translation": "Just as birds fly through the sky on both their wings, the highest state is reached through both knowledge and action.",
+      "words": [],
+      "why": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "procrastination",
+        "label": "I keep procrastinating"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.karunya_two_wings",
+       "title": "Karunya stops acting: knowledge and action as two wings",
+       "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+       "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+       "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": "Karunya stopped moving because he thought he needed perfect understanding first. Your Sunday plan is already a kind of action, not a failure. The real freeze is the belief that you could be fully ready before you begin. You do not need to know the whole path.",
+     "asks": [
+      "How do I begin without knowing how it will end?",
+      "What is one small action I can take before I feel ready?",
+      "Can I let go of needing the whole plan to work?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The Sunday plan",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19702,
+   "total": 19706
+  },
+  "_ms": 19709
+ }
+}

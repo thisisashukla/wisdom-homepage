@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.6,
+ "core_struggle": "A student who makes a plan every Sunday to study and go to the gym, but by Tuesday it is gone.",
+ "mechanism": "inertia_doubt",
+ "secondary_mechanism": "desire_craving",
+ "situations": [
+  {
+   "id": "discipline",
+   "weight": 2.1,
+   "source": "note"
+  },
+  {
+   "id": "procrastination",
+   "weight": 1.296,
+   "source": "note"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "craving",
+   "weight": 0.574,
+   "source": "note"
+  },
+  {
+   "id": "change_life",
+   "weight": 0.25,
+   "source": "profile"
+  },
+  {
+   "id": "comparison",
+   "weight": 0.25,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You make the plan every Sunday, and by Tuesday it is gone.",
+ "queries": {
+  "hook": "The Sunday plan that feels so clear, and the Tuesday morning when it is already gone, and the exhaustion of wanting to actually stick with something.",
+  "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+  "steady": "The mind is restless and stubborn and strong; holding it feels like holding the wind, but the one who learns to steady it is the one who wins.",
+  "act": "Practise one thing: begin with the smallest part of the plan, and let the rest wait; let the mind learn from the doing, not from the planning.",
+  "story": "A young seeker who wanted to master their mind, faced the restlessness that would not settle, and learned that the first step was the only one that mattered."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The Sunday plan",
+  "The Tuesday morning",
+  "The one who begins"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "frustrated and tired",
+ "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+ "week_thesis": "The Sunday plan has a name, and the Tuesday morning has a practice that does not ask the mind to be ready.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the cycle of the Sunday plan and the Tuesday collapse.",
+  "diagnose": "You see that waiting to feel ready is what keeps you stuck.",
+  "steady": "You hold that the mind is restless, and that the one who steadies it is the one who wins.",
+  "act": "You try beginning with the smallest part of the plan, and letting the mind learn from the doing.",
+  "story": "A young seeker who wanted to master their mind shows you that the first step is the only one that matters."
+ },
+ "insight": "You want to stick with something. What you are up against is the mind that has never been trained to hold a single thing.",
+ "seat": "a student who makes plans they cannot keep",
+ "life_context": "A student under twenty-five with eight hours of phone time; every Sunday they write a plan for gym and study, and by Tuesday the plan has dissolved, leaving the same frustration.",
+ "details": [
+  "makes a plan every Sunday to study and go to the gym",
+  "by Tuesday the plan is gone",
+  "wants to actually stick with something for once",
+  "spends hours on the phone daily"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example"
+ ]
+}

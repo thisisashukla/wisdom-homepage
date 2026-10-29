@@ -27,6 +27,7 @@ export default function SiteFooter({ locale = 'en' }: { locale?: 'en' | 'hi' }) 
         <ul className="site-footer-links">
           <li><a href="/gita">Read the Gita</a></li>
           <li><a href="/hi/gita" hrefLang="hi">हिंदी गीता</a></li>
+          <li><a href="/reading-plans">Reading plans</a></li>
           <li><a href="/gita-for">Gita for life</a></li>
           <li><a href="/blogs">Blog</a></li>
           <li><a href="/app">iPhone app</a></li>

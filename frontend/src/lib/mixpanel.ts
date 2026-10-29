@@ -38,6 +38,17 @@ export function trackEvent(event: string, props?: Record<string, unknown>) {
   }
 }
 
+/** Same as trackEvent, but sent with sendBeacon so it survives the page being closed. */
+export function trackEventBeacon(event: string, props?: Record<string, unknown>) {
+  if (typeof window === 'undefined') return
+  initMixpanel()
+  try {
+    mixpanel.track(prefixEvent(event), props, { transport: 'sendBeacon' })
+  } catch {
+    // noop
+  }
+}
+
 export function trackPageViewed(page: string, path?: string) {
   trackEvent('Page Viewed', { page, path: path ?? (typeof window !== 'undefined' ? window.location.pathname : undefined) })
 }

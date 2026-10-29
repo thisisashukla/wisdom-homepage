@@ -1,0 +1,645 @@
+{
+ "situation": {
+  "id": "us_genz_abcd_identity",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "my parents keep asking when I'll 'settle down with a nice Gujarati boy' and I've been with my boyfriend for 2 years and he's not Indian. I feel like whichever way I go I lose a part of me",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "USA (New Jersey)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "torn and diminished",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being asked to choose between two parts of yourself to standing in the one you already have, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being asked to choose, and the anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A young woman is being told by her parents to choose between their expectation and the two-year relationship she already has, and feels she will lose part of herself whichever way she goes.",
+   "mirror": "My parents' expectations weigh on me",
+   "insight": "Your parents are asking you to choose between their picture and the life you already have. The loss you feel is not in choosing. It is in being asked to choose at all.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.878,
+     "source": "note"
+    },
+    {
+     "id": "interfaith",
+     "label": "Faith differences in my relationship",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "My parents' expectations weigh on me. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role for you, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit their picture.",
+    "story": "A young woman of learning and standing, dismissed by her own family for who she loves, who questioned them and held her ground until they had no answer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Who they see",
+    "Whose picture it is",
+    "More than one choice"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:47=0.3,15=0.6,7=0.6,5=0.3,19=0.6,49=0.6",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.56,max=0.64",
+    "redo:5",
+    "redo_fixed:5",
+    "dropped:accept=1,cliche=1,fallback_line=3,invented=1,repeat=2,scene_line_verdict=1,soft_kept=2,try_today_accept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "without virtue"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "performed"
+      },
+      {
+       "sa": "स्वभावनियतं",
+       "en": "fixed by nature"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "किल्बिषम्",
+       "en": "fault"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.983,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna has just laid down his weapons, refusing to fight. Krishna answers him not with force, but with the idea of work. He says that every action has flaws, but the right path is the one that comes from your own nature. It is better to do your own work, even if you are clumsy at it, than to take up someone else's work and do it well. The point is to act from your own truth, offering the effort itself without worrying about the result.",
+     "for_you": "Your parents are asking you to trade the life you already have for a picture of them. You do not have to choose between being their child and being with your partner. You can be both. Your own path is the one you are already walking, and it is enough.",
+     "try_today": "Notice the moment they ask you to choose.",
+     "scene_line": null,
+     "asks": [
+      "How do I stop shrinking to fit their picture?",
+      "What does my own work look like right now?",
+      "Can I honour them without choosing them?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 2.8442,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": "Bhishma is telling Yudhishthira how to handle a fool who insults you in public. The fool speaks ill of others to make themselves look big, but in doing so they only expose their own flaws. The wise person lets the noise pass by like a crow cawing. The fault belongs to the one who speaks, not to the one who is spoken to.",
+     "for_you": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+     "try_today": "Notice the next time your parents speak and ask yourself if they are showing their own fault.",
+     "scene_line": "You are in a room where your parents are trying to shrink you with their words.",
+     "asks": [
+      "How do I stop their words from becoming my own fault?",
+      "How do I keep my own shape when they want me to bend?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.3127,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Vidula, a queen, finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt, and not to settle for little. She says to set his mind on what is truly good, and to stop being afraid. She urges him to pull himself together and rise again, because past failure does not define who he is.",
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+     "try_today": "Notice the moment you feel diminished by their words.",
+     "scene_line": "You lie in your own quiet defeat, and someone must rouse you.",
+     "asks": [
+      "How do I stop settling for less than I am?",
+      "What is truly good for me right now?",
+      "How do I pull myself together?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 2.7835,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is giving rules to a renunciant. The teacher says do not torment the body too much for the sake of pleasure or pain. Praised, do not gloat. Blamed, do not curse others.",
+     "for_you": "You are being asked to sacrifice one part of your life for another. That pressure is heavy. Do not let their choice make you feel small. Set your mind on the path that is already yours, and stop fearing their anger.",
+     "try_today": null,
+     "scene_line": "You are in the renunciant's room, choosing between the teacher's rule and your own truth.",
+     "asks": [
+      "How do I stop feeling small when they demand a choice?",
+      "What is my own truth when they call it wrong?",
+      "Can I hold my ground without breaking them?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "words": [],
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.1141,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram has just heard Hanuman speak. Hanuman is a stranger, an envoy from Sugriva, and he has just talked to Ram. Ram is struck by how Hanuman spoke. Hanuman did not talk too long, or in a vague way, or in a rush, or in a strained way. His words came from the chest and throat in an even, middle tone. The point is that fear jumps ahead of facts, but calm, clear words build trust fast.",
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+     "try_today": "Speak one sentence today in a steady voice, with no rush.",
+     "scene_line": "You stand before your parents, and you speak with an even voice.",
+     "asks": [
+      "How do I find the even tone I need?",
+      "What is the one clear thing I must say?",
+      "Can I trust my own words to be enough?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.8627,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher stands before a student at graduation, sending them out to start family life. The teacher says: speak the truth. Practise what is right. Do not neglect your study. The teacher is giving a whole life in one breath: be honest, act rightly, and keep learning. It is a gift, not a burden, a way to walk through the world with your own feet.",
+     "for_you": "Your parents want you to speak a truth that is not yours, to practise a right that is not yours. You can still keep learning, keep seeing who you are. The truth you speak is the one you live, and the right you practise is the life you already have.",
+     "try_today": "Say one true thing about who you are, out loud.",
+     "scene_line": "You stand at graduation, and your teacher asks you to speak your own truth.",
+     "asks": [
+      "How do I keep learning while my parents decide my path?",
+      "Who is the teacher I am listening to when I am alone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.parvati_tapas",
+     "title": "Parvati holds to her choice",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Parvati",
+      "Narada",
+      "the Seven Sages",
+      "Mena",
+      "Himavan"
+     ],
+     "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+     "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+     "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.76.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 76",
+      "family": "rcm",
+      "speaker": "Parvati",
+      "listener": "the seven sages",
+      "setting": "Parvati answers the sages who mock her resolve to win Shiva through years of austerity.",
+      "sanskrit": "सत्य कहेहु गिरिभव तनु एहा। हठ न छूट छूटै बरु देहा॥ कनकउ पुनि पषान तें होई। जारेहुँ सहजु न परिहर सोई ॥",
+      "line": "Gold comes from stone, and even in fire it stays gold. Hold to what you are.",
+      "translation": "You speak truly: this body was born of a mountain, so its resolve will not break, even if the body does. Gold too is born of stone, and even in fire it does not give up its nature.",
+      "words": [
+       {
+        "sa": "सत्य",
+        "en": "truth"
+       },
+       {
+        "sa": "कहेहु",
+        "en": "you said"
+       },
+       {
+        "sa": "गिरिभव",
+        "en": "mountain-born"
+       },
+       {
+        "sa": "तनु",
+        "en": "body"
+       },
+       {
+        "sa": "एहा",
+        "en": "this"
+       },
+       {
+        "sa": "हठ",
+        "en": "stubbornness"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "छूट",
+        "en": "leaves"
+       },
+       {
+        "sa": "छूटै",
+        "en": "will leave"
+       },
+       {
+        "sa": "बरु",
+        "en": "rather"
+       },
+       {
+        "sa": "देहा",
+        "en": "body"
+       },
+       {
+        "sa": "कनकउ",
+        "en": "gold"
+       },
+       {
+        "sa": "पुनि",
+        "en": "again"
+       },
+       {
+        "sa": "पषान",
+        "en": "stone"
+       },
+       {
+        "sa": "तें",
+        "en": "from"
+       },
+       {
+        "sa": "होई",
+        "en": "comes"
+       },
+       {
+        "sa": "जारेहुँ",
+        "en": "even when burned"
+       },
+       {
+        "sa": "सहजु",
+        "en": "naturally"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "परिहर",
+        "en": "forsake"
+       },
+       {
+        "sa": "सोई",
+        "en": "that"
+       }
+      ],
+      "why": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+      "misuse": "Steadiness is not stubbornness; keep checking that the goal is still worth it.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.parvati_tapas",
+       "title": "Parvati holds to her choice",
+       "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+       "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+       "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The sages listed every flaw in the man Parvati had chosen",
+     "teaser": "The sages listed every flaw in the man Parvati had chosen",
+     "for_you": "Parvati chose Shiva when the sages called him unworthy. They tried to give her a better match. She held on. You are not choosing between two equal paths. You are holding to the life you already have while others call it flawed.",
+     "asks": [
+      "How do I hold to my choice when my own family calls it wrong?",
+      "Where do I find the strength to stay when everyone wants me to leave?",
+      "What if I have already chosen wrong and this is just stubbornness?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Who they see",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14508,
+   "total": 14510
+  },
+  "_ms": 14512
+ }
+}

@@ -45,7 +45,7 @@ from pydantic import BaseModel, Field
 
 from ai.ask import answer as answer_question, support_candidates
 from ai.depth import DepthCache, cache_key, person_key, write_depth
-from ai import hook_cache
+from ai import consent, hook_cache
 from ai.scene import scene_for
 from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
@@ -85,6 +85,18 @@ def _services():
         return get_recommender(), get_planner(), get_understander()
     except RuntimeError:
         raise HTTPException(status_code=503, detail="Recommendations are not available right now.")
+
+
+def _consent(req) -> None:
+    """App Review 5.1.2(i): with `ai: false` nothing they wrote is read and no LLM is called (ai/consent.py)."""
+    on = bool(getattr(req, "ai", True))
+    consent.set_allowed(on)
+    if not on:
+        for f in ("note", "note_source"):
+            if getattr(req, f, None) is not None:
+                setattr(req, f, None)
+        if getattr(req, "asked", None):
+            req.asked = []
 
 
 def _profile(req: PlanInput) -> Profile:
@@ -391,6 +403,7 @@ def _log(kind: str, req: PlanInput, u: Understanding, t0: float, **extra):
 @router.post("/recommend/hook", response_model=HookResponse, tags=["plan"])
 async def hook(req: HookRequest) -> HookResponse:
     """Onboarding: read the person and return the one verse that says "this is you"."""
+    _consent(req)
     rec, planner, und = _services()
     t0 = time.perf_counter()
     # The same answers get the same reading and Day 1 verse (ai/hook_cache.py): back, then the CTA again,
@@ -435,6 +448,7 @@ async def hook(req: HookRequest) -> HookResponse:
 @router.post("/recommend/preview", response_model=PreviewResponse, tags=["plan"])
 async def preview(req: PreviewRequest) -> PreviewResponse:
     """The arc for one person: hook → diagnose → act → story, plus their three week titles."""
+    _consent(req)
     rec, planner, und = _services()
     t0 = time.perf_counter()
     u = await _read(req, und)
@@ -463,6 +477,7 @@ async def preview(req: PreviewRequest) -> PreviewResponse:
 async def plan(req: PlanRequest) -> PlanResponse:
     """One week of the plan (`week`: 1 situation, 2 pattern, 3 self), or `days` days from week 1.
     Each week runs see → steady → act → story in the request's shape (default "2221")."""
+    _consent(req)
     rec, planner, und = _services()
     shape = _shape(req)
     first_week = req.week in (None, 1)
@@ -511,6 +526,7 @@ async def plan(req: PlanRequest) -> PlanResponse:
 async def replace(req: ReplaceRequest) -> ReplaceResponse:
     """"Not for me" on Day 1 of a week: another verse for the day, from the same reading, never one
     shown before or still to come in the plan, shifted by what they said (and said before)."""
+    _consent(req)
     rec, planner, und = _services()
     shape = _shape(req)
     t0 = time.perf_counter()
@@ -571,6 +587,7 @@ async def refine(req: RefineRequest) -> RefineResponse:
     their reading is renewed with it and the week is chosen again from `from_day` to Day 7, never repeating an
     id in `exclude`. The days before `from_day` are theirs already and stay. The new words are used for this
     request only: never stored, never logged."""
+    _consent(req)
     rec, planner, und = _services()
     shape = _shape(req)
     t0 = time.perf_counter()
@@ -610,6 +627,7 @@ async def refine(req: RefineRequest) -> RefineResponse:
 async def depth(req: DepthRequest) -> DepthResponse:
     """"Go deeper" on a plan day: what this verse asks of this person (ai/depth.py). Cached per
     verse and reading; anything that fails its check is left out and the app keeps the library."""
+    _consent(req)
     rec, planner, und = _services()
     t0 = time.perf_counter()
     u = await _read(req, und)
@@ -686,6 +704,9 @@ async def ask(req: AskRequest) -> AskResponse:
     """"Ask about this verse" (one free ask in the free week, then Pro; the app enforces the gate). The question is
     used for this request only: never stored, never logged. Distress in the question gets the support lines, never an
     answer from scripture."""
+    _consent(req)
+    if not req.ai:      # a question can only be answered by reading it; the app asks for consent first
+        raise HTTPException(status_code=403, detail="ai_consent_required")
     rec, planner, und = _services()
     t0 = time.perf_counter()
     chk = check_note(req.question)

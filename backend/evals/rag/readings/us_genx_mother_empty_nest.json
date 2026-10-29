@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "Caring for a mother whose memory is fading, while the child who needed her most has just left for college; mind will not settle.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "parents_aging",
+   "weight": 1.5,
+   "source": "note"
+  },
+  {
+   "id": "empty_nest",
+   "weight": 1.485,
+   "source": "note"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.44,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You dropped your child at college and drove home in silence.",
+ "queries": {
+  "hook": "The mind will not settle, caught between the child who no longer needs you and the mother who no longer knows you.",
+  "diagnose": "When what we love is passing, the heart aches because the bond was real; grief is love with nowhere to go.",
+  "steady": "What is real in us cannot be lost; the love that shaped you remains even when the form it wore is gone.",
+  "act": "Let the grief have its voice, offer one act of care that is yours alone, and let the rest go.",
+  "story": "A man who lost his father and had to rebuild his life shows what it means to carry love forward after the one who held it is gone."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The two losses",
+  "What grief needs",
+  "The love that remains"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and unmoored",
+ "bridge": "The silence of that four-hour drive and the mother who no longer sees you are what the texts call the mind running after what is passing. It cannot hold.",
+ "week_thesis": "The silence of that drive and the mother who no longer sees you become, over seven days, the ground beneath your feet rather than the wind in your mind.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the unmoored feeling, named without judgement.",
+  "diagnose": "You see that it is grief for two futures dissolving at once, and that the mind cannot settle while it tries to hold both.",
+  "steady": "You hold that what is real in you cannot be lost, and that love remains even when the form it wore is gone.",
+  "act": "You try letting the grief have its voice and offering one act of care that is yours alone.",
+  "story": "A man who lost his father and had to rebuild his life shows you how love continues after the one who held it is gone."
+ },
+ "insight": "Two loves are letting go at once, and the mind will not settle because it is trying to hold both. Underneath is grief for the future you imagined.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "dropped younger child at college",
+  "drove four hours in silence",
+  "feels needed less by both"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "seat:missing"
+ ]
+}

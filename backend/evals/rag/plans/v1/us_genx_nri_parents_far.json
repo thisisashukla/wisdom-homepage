@@ -1,0 +1,823 @@
+{
+ "situation": {
+  "id": "us_genx_nri_parents_far",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 3
+  },
+  "note": "my father fell in Pune and I was in a meeting when the call came. I can only fly in next week. every time the phone rings I panic. I chose this life and now I'm paying for it.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "USA (California)",
+  "lang": "english",
+  "slices": [
+   "caregiving",
+   "guilt",
+   "lang:english",
+   "migration"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "panicked and guilty",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from the phone ringing like a threat to the phone being a bridge she can cross without panic.",
+   "week_beats": {
+    "hook": "You recognise the panic and the guilt, named without blame.",
+    "diagnose": "You see that the waiting is grief with nowhere to land, and the phone is a trigger.",
+    "steady": "You hold that love does not end because you were not there.",
+    "act": "You try one breath before you lift the phone, and one moment of letting the voice come to you.",
+    "story": "A daughter far from her father when he fell shows you what love looks like when it is not measured in minutes."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "She was in a meeting when her father fell in Pune, and now she panics at every phone call, believing she chose a life that cost her this.",
+   "mirror": "You were in a meeting when the call came, and now every ring is a door you cannot open.",
+   "insight": "The call came while you were at work, and the panic is not about the fall. It is about the grief that has nowhere to go.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.664,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.575,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.79,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.25,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The panic that lives in the space between a ring and a voice, and the guilt of having been somewhere else when it mattered. My parents are getting older far away.",
+    "diagnose": "Grief is love with nowhere to go; the mind turns the waiting into a punishment, and the phone becomes a trigger for a loss that has not yet come.",
+    "steady": "What is real in us cannot be lost; the bond with your father is not broken by a fall or a delay, and love does not end because we were not there.",
+    "act": "When the phone rings, let the first sound land before you answer; breathe once before you lift it, and let the voice come to you.",
+    "story": "A daughter who was far from her father when he fell, and who had to learn that love does not measure itself in minutes."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The ring and the waiting",
+    "Grief with nowhere to go",
+    "Love that does not measure itself"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "can only fly in next week",
+    "every phone call now triggers panic"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:29=0.6,14=1.0,165=0.0,10=0.0,45=0.0,1=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.67",
+    "dropped:fallback_line=2,missing=4",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.4239,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna is on the battlefield. He looks at the ranks of the enemy and sees his own family, his teachers, his cousins. He is about to fight them. His body gives way. His mouth goes dry. His limbs shake. His hair stands on end. He is not a hero right now. He is a man facing the people he loves on the other side of a war, and his body is telling him it cannot do this. The Gita begins with a breakdown.",
+     "for_you": "You feel the phone vibrate and your body answers before your mind does. The panic is not a sign of weakness. It is the body's honest answer to a world where your parents are far away and every call might bring news.",
+     "try_today": "Notice your body's signal without judging it.",
+     "scene_line": "You are on the field, and your own kin are across the line, and your body knows it.",
+     "asks": [
+      "Is my body telling me the truth about the danger?",
+      "How do I stay in my life if every ring feels like a threat?",
+      "What is the difference between fear and love in my chest?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.0824,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya, the queen, has just lashed out at Dasharatha for exiling their son Ram. Dasharatha folds his hands and asks her forgiveness, and she is horrified by her own words. She explains that grief is not an enemy outside the door. It is a thief that wears away your steadiness and your judgement from the inside. It makes you wound the very people you love, and it destroys your learning. The point is that grief is a force that clouds the mind. It is not a reason to hold on to being right.",
+     "for_you": "The phone rings and the grief that has nowhere to land turns into a blow against your own family. Kausalya knows that grief makes you wound the ones closest to you. The panic is not the enemy. It is the unspent sorrow asking to be felt.",
+     "try_today": "Notice when the phone rings and name the grief before the panic speaks.",
+     "scene_line": "You are the queen who has just spoken the words she cannot take back.",
+     "asks": [
+      "How do I let the grief land without it destroying the next call?",
+      "Can I apologise to my family before the panic speaks again?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.15",
+     "ref": "Bhagavad Gita 2.15",
+     "ref_iast": "Bhagavad Gītā 2.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ । समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥",
+     "line": "The one who stays the same in pain and pleasure, undisturbed by either, is ready for real freedom.",
+     "translation": "The steady person whom these do not disturb, who stays the same in pain and pleasure, becomes fit for immortality.",
+     "words": [
+      {
+       "sa": "यं",
+       "en": "whom"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "व्यथयन्ति",
+       "en": "disturb"
+      },
+      {
+       "sa": "एते",
+       "en": "these"
+      },
+      {
+       "sa": "पुरुषं",
+       "en": "person"
+      },
+      {
+       "sa": "पुरुषर्षभ",
+       "en": "best among men"
+      },
+      {
+       "sa": "सम",
+       "en": "equally"
+      },
+      {
+       "sa": "दुःखसुखं",
+       "en": "pain and pleasure"
+      },
+      {
+       "sa": "धीरं",
+       "en": "steady"
+      },
+      {
+       "sa": "सः",
+       "en": "he"
+      },
+      {
+       "sa": "अमृतत्वाय",
+       "en": "for immortality"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Steadiness is not numbness or hiding what you feel.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1897,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is shaking, his mouth dry, his body failing. He has just laid down his weapons. Krishna looks at him and says that what is truly within us is never born and never dies. He tells Arjuna that the person who remains undisturbed by pain and pleasure, who stays the same when sorrow comes, is the one who is ready for real freedom. The teaching is that your true self outlasts every loss and every passing pain.",
+     "for_you": "You were at work when the call came. The panic in your chest now is the grief that has nowhere to go. Krishna does not ask you to stop feeling. He asks you to see that the love you carry for your parents is not a mistake.",
+     "try_today": "When the phone rings, notice the sound as a sound, not as a verdict on your life.",
+     "scene_line": "You are on the battlefield of your own grief, and your body is laying down its weapons.",
+     "asks": [
+      "How do I tell the panic from the grief?",
+      "Can the love I carry be steady even when I am not?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.2225,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "After Sita is taken, Ram searches the forest alone. He breaks down and wants to destroy everything. Lakshman finds him and says that trouble touches every living being. It flares up like fire and then passes. The verse says that in devastating loss, a steady friend can stop grief from turning into destruction.",
+     "for_you": "The phone rings and your body remembers the fall. Lakshman did not stop Sita from being taken. He simply sat with Ram while the pain burned. You are allowed to feel the panic and still reach for your parents. The love is not cancelled by the distance.",
+     "try_today": "Listen to the full ring without answering.",
+     "scene_line": "You are in your own forest, and the voice on the line is a steady hand.",
+     "asks": [
+      "How do I hold the phone without it holding me?",
+      "Can I be steady while the grief still burns?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 3.571,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": null,
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.2488,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.janaka_vidai",
+     "title": "Janaka says goodbye to his daughter",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Janaka",
+      "Sunayana",
+      "Sita",
+      "Ram"
+     ],
+     "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+     "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+     "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.318.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 318",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "the reader",
+      "setting": "King Janaka, famous for his detachment, as his daughter Sita leaves home after her wedding.",
+      "sanskrit": "सीय बिलोकि धीरता भागी। रहे कहावत परम बिरागी॥ लीन्हि रायँ उर लाइ जानकी। मिटी महामरजाद ग्यान की ॥",
+      "line": "Known for his calm, he held his daughter close as she left, and all his wisdom gave way.",
+      "translation": "He was known as supremely detached, yet on seeing Sita his composure fled. The king held Janaki to his heart, and the great banks of his wisdom gave way.",
+      "words": [
+       {
+        "sa": "सीय",
+        "en": "Sita"
+       },
+       {
+        "sa": "बिलोकि",
+        "en": "seeing"
+       },
+       {
+        "sa": "धीरता",
+        "en": "composure"
+       },
+       {
+        "sa": "भागी",
+        "en": "ran away"
+       },
+       {
+        "sa": "रहे",
+        "en": "remained"
+       },
+       {
+        "sa": "कहावत",
+        "en": "called"
+       },
+       {
+        "sa": "परम",
+        "en": "supreme"
+       },
+       {
+        "sa": "बिरागी",
+        "en": "detached"
+       },
+       {
+        "sa": "लीन्हि",
+        "en": "took"
+       },
+       {
+        "sa": "रायँ",
+        "en": "the king"
+       },
+       {
+        "sa": "उर",
+        "en": "to the heart"
+       },
+       {
+        "sa": "लाइ",
+        "en": "bringing"
+       },
+       {
+        "sa": "जानकी",
+        "en": "Janaki"
+       },
+       {
+        "sa": "मिटी",
+        "en": "dissolved"
+       },
+       {
+        "sa": "महामरजाद",
+        "en": "great boundary"
+       },
+       {
+        "sa": "ग्यान",
+        "en": "of knowledge"
+       },
+       {
+        "sa": "की",
+        "en": "of"
+       }
+      ],
+      "why": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.janaka_vidai",
+       "title": "Janaka says goodbye to his daughter",
+       "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+       "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+       "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "teaser": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "for_you": "Your father fell while you were at work, and the phone now feels like a threat. Janaka, the king who taught the world to let go, wept openly when Sita left. The work you do is not the thing that cost him his fall.",
+     "asks": [
+      "How do I know I am not abandoning them?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The ring and the waiting",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16278,
+   "total": 16281
+  },
+  "_ms": 16284
+ }
+}

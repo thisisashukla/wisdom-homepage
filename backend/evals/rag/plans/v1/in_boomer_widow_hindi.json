@@ -1,0 +1,656 @@
+{
+ "situation": {
+  "id": "in_boomer_widow_hindi",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2
+  },
+  "note": "पति को गए एक साल हो गया। घर में सब हैं पर मन नहीं लगता। पूजा करती हूँ पर लगता है भगवान भी सुन नहीं रहे।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Varanasi)",
+  "lang": "hindi",
+  "slices": [
+   "bereavement",
+   "hindi",
+   "lang:hindi",
+   "spiritual_dryness"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely in a full house and unheard",
+   "bridge": "The puja you perform and the silence you hear are what the Upanishads call the self seeking itself, not God.",
+   "week_thesis": "The search you feel after the puja is not for God to speak, but for the self to be heard, and that is where the Upanishads begin.",
+   "week_beats": {
+    "hook": "You recognise the empty room and the unanswered prayer as a real state, not a failing.",
+    "diagnose": "You see that the search is for meaning, and that meaning is found in what does not pass.",
+    "steady": "You hold that the self is what remains when all else falls away.",
+    "act": "You try sitting with the silence after the puja and letting the question be, without needing an answer.",
+    "story": "A seeker who lost her world and sat with the silence shows you that the search itself is the beginning of what you are looking for."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [],
+   "confidence": 0.5,
+   "core_struggle": "I feel lonely",
+   "mirror": "You light the lamp and speak to the empty room, and the house is full of people.",
+   "insight": "You are looking for something deeper, and the silence after the puja is where that search begins.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.279,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.442,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A heart that is full of people yet empty, and a search for something deeper than the rituals that have not yet spoken back.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self you seek is not elsewhere; it is the one that remains when the noise of the house and the ritual fall away.",
+    "act": "Sit with the silence after the puja and ask what is asking to be known, not what is owed to be answered.",
+    "story": "A woman who lost her husband and her familiar world, who sat with the silence and found that the search itself was the answer she was looking for."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The search after the puja",
+    "What does not pass",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "In retirement and widowed for a year; the house is full of people, yet the heart is searching and the puja feels unanswered.",
+   "details": [
+    "still performs puja but feels God is not listening"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_sim:mean=0.59,max=0.64",
+    "retried:4",
+    "dropped:copied=1,fallback_line=3,invented_name=1,missing=4,repeat=1,soft_kept=2",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "words": [
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अनुकम्पा-अर्थम्",
+       "en": "for compassion"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "अज्ञान-जम्",
+       "en": "born of ignorance"
+      },
+      {
+       "sa": "तमः",
+       "en": "darkness"
+      },
+      {
+       "sa": "नाशयामि",
+       "en": "I destroy"
+      },
+      {
+       "sa": "आत्म-भाव-स्थः",
+       "en": "abiding in their own being"
+      },
+      {
+       "sa": "ज्ञान-दीपेन",
+       "en": "with the lamp of knowledge"
+      },
+      {
+       "sa": "भास्वता",
+       "en": "shining"
+      }
+     ],
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 3.1047,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": null,
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.0731,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "King Janaka asks the sage Ashma how to bear the loss of family and wealth. Ashma tells him to ask where he came from, where he is going, and who he is. These questions do not erase the pain of what was lost. They steady the mind by reminding it that grief is for things that pass. The days are gone. The people are gone. What remains is the self asking itself why it grieves. Ask these questions, and let them hold you steady.",
+     "for_you": "The puja is silent. The people in the house are present. You are searching for a voice that answers, but the search itself is the steadiness. The loss is real. Let the questions about where you came from and who you are now hold the room where the silence is.",
+     "try_today": "Ask one of the three questions aloud during the puja.",
+     "scene_line": "You stand in the silence after the puja, asking the same questions the sage asked the king.",
+     "asks": [
+      "How do I steady my mind when the silence is all I hear?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.7.49.10",
+     "ref": "Valmiki Ramayana · Uttara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Uttara Kāṇḍa 49.10",
+     "family": "vr",
+     "speaker": "Valmiki",
+     "listener": "Sita",
+     "setting": "Valmiki finds Sita weeping alone by the river and brings her to his hermitage.",
+     "sanskrit": "इदमऱ्या प्रतीच्छ त्वं विस्रब्धा विगतज्वरा। यथा स्वगृहमभ्येत्य विषादं चैव मा कृथाः॥ श्रुत्वा तु भाषितं सीता मुनेः परममद्भुतम्। शिरसा वन्द्य चरणौ तथेत्याह कृताञ्जलिः॥",
+     "line": "Trust me and rest. Think of this as your own home.",
+     "translation": "Accept this welcome, trust me and let your fever of worry pass. Think of this as coming to your own home, and do not despair.",
+     "words": [],
+     "why": "Injustice from those we love is real grief; a stranger's kindness can become home.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sita_left_in_forest",
+      "title": "Sita left in the forest",
+      "summary": "Hearing that people gossip about Sita's time in Lanka, Ram orders Lakshman to leave her, pregnant, near Valmiki's hermitage. Lakshman obeys in anguish. Sita grieves that she is cut off from everyone and slandered though innocent. Valmiki finds her, says he knows she is blameless, and tells her to treat his home as her own.",
+      "story_hook": "Lakshman stopped the chariot at the river and could not bring himself to say why.",
+      "lesson": "Injustice from those we love is real grief; a stranger's kindness can become home."
+     },
+     "score": 3.1879,
+     "beat": "steady",
+     "role_fit": 0.725,
+     "meaning": "Valmiki finds Sita alone by the river, grieving that she is cut off from everyone and slandered though she is blameless. He tells her to accept his welcome, trust him, and let her fever of worry pass. He asks her to think of this place as her own home and not despair.",
+     "for_you": "The one self lives in every heart; seen truly, you were never separate from others or from the divine.",
+     "try_today": "Rest in the room where you perform the puja and call it your own home.",
+     "scene_line": "You are Sita by the river, cut off and weeping, and a stranger offers you a home.",
+     "asks": [
+      "How do I know if this silence is God or my own mind?",
+      "What does it mean to trust a stranger when my own have turned away?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.127.doha.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.127 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.127",
+     "family": "rcm",
+     "speaker": "Valmiki",
+     "listener": "Ram",
+     "setting": "Valmiki ends his list of the hearts Ram lives in.",
+     "sanskrit": "जाहि न चाहिअ कबहुँ कछु तुम्ह सन सहज सनेहु। बसहु निरंतर तासु मन सो राउर निज गेहु ॥",
+     "line": "The one who wants nothing from you and simply loves you: that heart is your own home.",
+     "translation": "One who never wants anything from you and simply loves you: live in that mind always; it is your own home.",
+     "words": [
+      {
+       "sa": "जाहि",
+       "en": "to whom"
+      },
+      {
+       "sa": "न चाहिअ",
+       "en": "is not wanted"
+      },
+      {
+       "sa": "कबहुँ",
+       "en": "ever"
+      },
+      {
+       "sa": "कछु",
+       "en": "anything"
+      },
+      {
+       "sa": "तुम्ह सन",
+       "en": "from you"
+      },
+      {
+       "sa": "सहज सनेहु",
+       "en": "natural love"
+      },
+      {
+       "sa": "बसहु",
+       "en": "dwell"
+      },
+      {
+       "sa": "निरंतर",
+       "en": "continually"
+      },
+      {
+       "sa": "तासु मन",
+       "en": "in that mind"
+      },
+      {
+       "sa": "सो",
+       "en": "that"
+      },
+      {
+       "sa": "राउर",
+       "en": "your"
+      },
+      {
+       "sa": "निज गेहु",
+       "en": "own home"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9139,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Valmiki has just finished listing the many hearts where Ram lives. He tells him that the one heart which wants nothing in return and simply loves him is his own true home. This is not about a place of worship or a temple. It is about the quiet, steady mind that asks for nothing. Valmiki is telling Ram that when the world falls away, this loving mind is where he can rest. It is the one place he can always return to without asking for anything.",
+     "for_you": "The puja you do is a reaching out. The silence after is the room where you are alone with your own mind. Valmiki is telling Ram that the heart which simply loves, without asking for a reply, is the real home. That is your own mind, quiet and steady.",
+     "try_today": "After the puja, sit in the silence without asking for a sign.",
+     "scene_line": "You stand in the quiet after the puja, asking for a reply.",
+     "asks": [
+      "How do I hear my own mind in the silence?",
+      "Is the silence a sign that I am alone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.314.114",
+     "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+     "ref_iast": "Mahābhārata, Vana Parva 314.114–115",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "the Yaksha (Dharma in disguise)",
+     "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+     "sanskrit": "प्रियवचनवादी किं लभते / विमृशितकार्यकरः किं लभते / बहुमित्रकरः किं लभते / धर्मे रतः किं लभते कथय ॥ प्रियवचनवादी प्रियो भवति / विमृशितकार्यकरोऽधिकं जयति / बहुमित्रकरः सुखं वसति / यश्च धर्मरतः स गतिं लभते",
+     "line": "Speak kindly and you'll be loved; think before acting and you'll win more; make friends and live happily.",
+     "translation": "Yaksha: 'What does one gain by speaking kindly? By acting after careful thought? By making many friends? By devotion to what is right?' Yudhishthira: 'One who speaks kindly is loved; one who acts after careful thought wins more; one with many friends lives happily; one devoted to what is right reaches the goal.'",
+     "words": [],
+     "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yaksha_prashna",
+      "title": "Yaksha Prashna: the questions at the lake",
+      "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+      "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+      "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+     },
+     "score": 2.9267,
+     "beat": "act",
+     "role_fit": 0.638,
+     "meaning": null,
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.29",
+     "ref": "Bhagavad Gita 6.29",
+     "ref_iast": "Bhagavad Gītā 6.29",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥",
+     "line": "See yourself in every being and every being in yourself, and you see the same everywhere.",
+     "translation": "One whose self is joined in yoga sees the self in all beings and all beings in the self; he sees the same everywhere.",
+     "words": [
+      {
+       "sa": "सर्वभूतस्थम्",
+       "en": "in all beings"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "the true self"
+      },
+      {
+       "sa": "सर्वभूतानि",
+       "en": "all beings"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the true self"
+      },
+      {
+       "sa": "ईक्षते",
+       "en": "sees"
+      },
+      {
+       "sa": "योगयुक्तात्मा",
+       "en": "the yogi united in yoga"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "समदर्शनः",
+       "en": "with equal vision"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.4374,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Krishna is in the middle of telling Arjuna how to sit and hold the mind still. He is not talking about a god in the sky. He is talking about the self inside the body. He says to see your own self in every other person, and to see that same self in you. When you do that, you see the same thing everywhere you look. It does not mean you could stop thinking. It means you stop looking for something outside of yourself to fix you.",
+     "for_you": "The house is full of people, but you feel cut off from your own heart. When you finish the puja and the silence comes, you search for a voice. Krishna says to look for the self in the people around you, and to see your own self in them.",
+     "try_today": "After the puja, sit with the silence and let the question be.",
+     "scene_line": "You stand in the quiet room and see the same self in the faces around you.",
+     "asks": [
+      "How do I see my own self in my own family?",
+      "How do I bring my wandering mind back gently?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "words": [],
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari waited in a forest no one else entered. They called it waiting, but she knew it as keeping her heart open. The puja you perform and the silence you hear are the same.",
+     "asks": [
+      "How do I know if my waiting is empty or full?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The search after the puja",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16068,
+   "total": 16070
+  },
+  "_ms": 16073
+ }
+}

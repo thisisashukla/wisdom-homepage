@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Karma in the Bhagavad Gita: Meaning and 7 Key Verses (Chapters 2 to 4)",
     description: "Karma means action. Chapters 2 to 4 of the Bhagavad Gita teach acting without attachment to results. The meaning plus 7 karma shlokas with Sanskrit and English.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",

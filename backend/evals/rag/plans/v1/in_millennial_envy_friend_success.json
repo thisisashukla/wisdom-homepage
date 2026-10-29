@@ -1,0 +1,748 @@
+{
+ "situation": {
+  "id": "in_millennial_envy_friend_success",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "my closest friend just got into Harvard and I said congrats and then cried in the bathroom. I hate that I'm not happy for her.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Mumbai)",
+  "lang": "english",
+  "slices": [
+   "envy",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and hollow",
+   "bridge": "The envy you feel at her win is what the Gita calls measuring your life against another's. The shame is what happens when you turn that measure against yourself.",
+   "week_thesis": "Seven days from hating what you feel to understanding what it is, and the footing to hold it without shame.",
+   "week_beats": {
+    "hook": "You recognise the envy and the shame, named without judgement.",
+    "diagnose": "You see that it is the measuring, not the person, that is stealing your contentment.",
+    "steady": "You hold that what is yours is the effort, not the place on the list.",
+    "act": "You try one practice of seeing your own path without their ruler, and one truth you speak to yourself.",
+    "story": "A friend who watched someone she loved win and found, in that watching, the one thing she had to build for herself."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "Jealousy at a close friend's success is followed by shame, and the person is stuck replaying the moment alone in the bathroom.",
+   "mirror": "You said congratulations, and then you were alone in the bathroom hating what you felt.",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.23,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.12,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.78,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.367,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.367,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The hollow feeling of being happy for someone you love, and the shame that follows, replayed alone after the congratulations.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Praise and blame, success and failure, come and go; what is yours is the effort, not the place on the list.",
+    "act": "Practise seeing your own path without the ruler of their path; speak the truth to yourself gently, and let the feeling be what it is.",
+    "story": "A friend who watched someone she loved win and found, in that watching, the one thing she had to build for herself."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Measuring against another",
+    "The ruler of another's path",
+    "Your own place on the list"
+   ],
+   "seat": "",
+   "life_context": "A working adult in their late twenties or early thirties; after congratulating their closest friend on a acceptance, they went to the bathroom and cried, hating what they felt.",
+   "details": [
+    "closest friend got into",
+    "said congratulations and then cried in the bathroom",
+    "cried alone after the public moment"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:41=0.3,17=0.6,22=0.6,16=0.6,78=0.0,33=0.6",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.64,max=0.74",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.41",
+     "ref": "Bhagavad Gita 10.41",
+     "ref_iast": "Bhagavad Gītā 10.41",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna names the chief glories in which the divine shows itself.",
+     "sanskrit": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा । तत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम् ॥",
+     "line": "Whatever shines with excellence, beauty or power, see it as a spark of the divine.",
+     "translation": "Whatever is glorious, prosperous or powerful, know that it springs from a spark of my splendour.",
+     "words": [
+      {
+       "sa": "यद्यत्",
+       "en": "whatever"
+      },
+      {
+       "sa": "विभूतिमत्",
+       "en": "manifestation"
+      },
+      {
+       "sa": "सत्त्वं",
+       "en": "being"
+      },
+      {
+       "sa": "श्रीमत्",
+       "en": "glorious"
+      },
+      {
+       "sa": "ऊर्जितम्",
+       "en": "powerful"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "तद्",
+       "en": "that"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अवगच्छ",
+       "en": "understand"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "तेजः",
+       "en": "energy"
+      },
+      {
+       "sa": "अशः",
+       "en": "portion"
+      },
+      {
+       "sa": "सम्भवम्",
+       "en": "originated"
+      }
+     ],
+     "why": "Whatever excellence you admire is a spark of the divine.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      },
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.4",
+      "title": "Krishna describes his glories",
+      "summary": "Krishna lists his manifestations: among lights the sun, among rivers the Ganga, and ends by saying any excellence is a spark of his splendour.",
+      "story_hook": "",
+      "lesson": "Whatever excellence you admire is a spark of the divine."
+     },
+     "score": 2.2446,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna is telling Arjuna that any excellence they see in the world comes from a spark of his own splendour. The sun, the Ganga, anything that shines with power or beauty, is a manifestation of the divine. The verse proposes that when you admire something or someone, you are looking at a spark of the divine itself.",
+     "for_you": "You stood in the bathroom after your friend's win, and the shame felt like a wall. But the excellence you saw in them is not a measure against your own smallness. It is a spark of the same divine splendour you carry. Your life is not small next to theirs.",
+     "try_today": "Notice one thing of excellence today and let it be a spark, not a measure.",
+     "scene_line": "You are standing in a bathroom after a friend's win, seeing their excellence as a spark of the divine.",
+     "asks": [
+      "How do I see my own spark when I feel small?",
+      "Can I admire a spark without feeling small?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.7.117.chaupai.17",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi continues listing the diseases of the mind.",
+     "sanskrit": "ममता दादु कंडु इरषाई। हरष बिषाद गरह बहुताई॥ पर सुख देखि जरनि सोइ छई। कुष्ट दुष्टता मन कुटिलई ॥",
+     "line": "Envy is an itch. Burning at another's happiness is a wasting disease of the mind.",
+     "translation": "Possessiveness is ringworm and envy is the itch; the swings of elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy.",
+     "words": [],
+     "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      },
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.garuda_questions",
+      "title": "Garuda's seven questions",
+      "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+      "story_hook": "",
+      "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+     },
+     "score": 4.0203,
+     "beat": "diagnose",
+     "role_fit": 0.705,
+     "meaning": "Kakbhushundi is telling Garuda about the illnesses that live inside the mind. He says envy is an itch, and the sickness that burns when you see someone else happy is a wasting disease. He names the mind's hidden poisons so you can know them for what they are.",
+     "for_you": "The itch is not the friend. It is the measuring itself, a habit that leaves you hollow.",
+     "try_today": "Notice the exact moment you start comparing your life to theirs.",
+     "scene_line": "You stand in the bathroom, and the itch is already burning.",
+     "asks": [
+      "Can I name this feeling without hating myself for it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      },
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 4.3226,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna tells Arjuna that the wise do not envy what comes to them. They accept whatever arrives without asking. They stay beyond the pairs of opposites like success and failure. Because they are free from envy, they can act in the world yet remain unbound by their actions.",
+     "for_you": "You went to the bathroom to hide what you felt. The shame came because you measured your life against her win. Your part is the effort you put in, not the place on the list. The envy is the itch. The steady work is what you can hold.",
+     "try_today": "Notice one small part of your own work you can hold onto today.",
+     "scene_line": "You stand in the bathroom, measuring your life against her win.",
+     "asks": [
+      "How do I separate the win from my own worth?",
+      "What if I let the list go for today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "words": [
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "व्याप्तम्",
+       "en": "pervaded"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "विश्वं",
+       "en": "world"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "प्रोतं",
+       "en": "woven"
+      },
+      {
+       "sa": "यथार्थतः",
+       "en": "truly"
+      },
+      {
+       "sa": "शुद्धबुद्धस्वरूपः",
+       "en": "pure-consciousness-form"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "गमः",
+       "en": "go, be affected"
+      },
+      {
+       "sa": "क्षुद्रचित्तताम्",
+       "en": "by petty minds"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      },
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 2.6561,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "The sage Ashtavakra speaks to King Janaka, telling him that his true nature is pure awareness, far larger than any worry. He warns that the mind can shrink into pettiness, but the self is not small. To know this is to refuse the smallness of envy and fear.",
+     "for_you": "You are wider than the hollow feeling in your chest. The envy is a small story the mind tells, but you are the space it happens in, not the story itself.",
+     "try_today": "Notice the space inside the hollow feeling.",
+     "scene_line": "You are the wide room where the small feeling appears.",
+     "asks": [
+      "How do I stop shrinking into pettiness?",
+      "What is the difference between me and my mind?",
+      "How do I stay wide when I feel small?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.34",
+     "ref": "Bhagavad Gita 4.34",
+     "ref_iast": "Bhagavad Gītā 4.34",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+     "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+     "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+     "words": [
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "प्रणिपातेन",
+       "en": "by prostration"
+      },
+      {
+       "sa": "परिप्रश्नेन",
+       "en": "by sincere questioning"
+      },
+      {
+       "sa": "सेवया",
+       "en": "by service"
+      },
+      {
+       "sa": "उपदेक्ष्यन्ति",
+       "en": "will teach"
+      },
+      {
+       "sa": "ते",
+       "en": "to you"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "knowledge"
+      },
+      {
+       "sa": "ज्ञानिनः",
+       "en": "the knowers"
+      },
+      {
+       "sa": "तत्त्वदर्शिनः",
+       "en": "who see reality"
+      }
+     ],
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 3.1494,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": "Krishna speaks to Arjuna on a battlefield, telling him that confusion and guilt end only when a person stops guessing and starts learning. He says to approach those who see the truth with humility, to ask real questions, and to serve. The teaching is that knowledge is not a prize for the proud. It is a gift given to the one who kneels. To learn this way is to trust the path and cut through the noise of doubt so you can stand up and act.",
+     "for_you": "The shame in the bathroom comes from treating your own worth as a grade on someone else's test. You can step off that scale by asking one true question of yourself about what you actually want, not what you feel you lack. Your own path is wide enough.",
+     "try_today": "Ask one true question about your own path.",
+     "scene_line": "You are in your own classroom, learning to stand without her ruler.",
+     "asks": [
+      "How do I ask a true question of myself?",
+      "What does humility look like in my work?",
+      "How do I trust the process?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.33",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.33",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage warns the deposed prince against resenting others' success.",
+     "sanskrit": "सहस्व श्रियमन्येषां यद्यपि त्वयि नास्ति सा / अन्यत्रापि सतीं लक्ष्मीं कुशला भुञ्जते नराः / अभिनिष्यन्दते देही श्रीभूतश्च द्विषज्जनात्",
+     "line": "Make peace with other people's success, even when you lack it. The wise can enjoy good fortune that isn't theirs.",
+     "translation": "Bear the good fortune of others, even though it is not with you. Wise people know how to enjoy good fortune even when it belongs to someone else; good fortune drains away from the one who resents.",
+     "words": [],
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      },
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.5324,
+     "beat": "act",
+     "role_fit": 0.539,
+     "meaning": "The sage Kalakavrikshiya speaks to the deposed prince Kshemadarshi, who has lost his kingdom. The sage says grief cannot bring back what is gone. Want what is within your reach instead. A wise person can enjoy another's good fortune without resentment. The one who resents it simply loses their own peace.",
+     "for_you": "After you said congratulations and then cried alone in the bathroom, you are still measuring your life against her win. The envy is the itch, but the shame is the poison that drains your own peace. What is within your reach is your own next step, not her acceptance.",
+     "try_today": "Notice one thing you are already doing well without comparing it to her.",
+     "scene_line": "You are the prince who has lost the kingdom and now watches another wear the crown.",
+     "asks": [
+      "How do I know what is within my reach right now?",
+      "Can I enjoy her success without losing my own peace?",
+      "What does my own next step look like today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sugriva_remorse",
+     "title": "Sugriva's remorse",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sugriva",
+      "Tara",
+      "Ram"
+     ],
+     "story_hook": "He had the crown at last, and could not bear to look at it.",
+     "summary": "Sugriva has won, but seeing Tara's grief he is crushed by remorse: how could anyone enjoy a kingdom bought with a brother's life? He remembers Vali only ever said 'don't do it again.'",
+     "lesson": "Winning against family rarely feels like winning.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.24.9",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 24.9",
+      "family": "vr",
+      "speaker": "Sugriva",
+      "listener": "Ram",
+      "setting": "Sugriva has won the throne through Vali's death and is overwhelmed with remorse.",
+      "sanskrit": "भ्राता कथं नाम महागुणस्य भ्रातुर्वधं राम विरोचयेत। राज्यस्य दुःखस्य च वीर सारं विचिन्तयन्कामपुरस्कृतोऽपि॥",
+      "line": "Weigh the prize against the grief of what it cost. No win is worth a brother.",
+      "translation": "How could a brother, however greedy, take pleasure in killing a brother of such great worth, once he weighs the joy of a kingdom against this grief?",
+      "words": [],
+      "why": "Winning against family rarely feels like winning.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sugriva_remorse",
+       "title": "Sugriva's remorse",
+       "summary": "Sugriva has won, but seeing Tara's grief he is crushed by remorse: how could anyone enjoy a kingdom bought with a brother's life? He remembers Vali only ever said 'don't do it again.'",
+       "story_hook": "He had the crown at last, and could not bear to look at it.",
+       "lesson": "Winning against family rarely feels like winning."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Sugriva finally had the crown, and could not bear to look at it",
+     "teaser": "Sugriva finally had the crown, and could not bear to look at it",
+     "for_you": "Tara sees your friend's win and feels only the cost, not the crown. You saw the win and felt only the cost, not the crown. The shame is not that you wanted it.",
+     "asks": [
+      "What if the win is not a mirror for my own lack?",
+      "How do I hold my own smallness without hating it?",
+      "What if I stop measuring my life against hers today?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Measuring against another",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14308,
+   "total": 14309
+  },
+  "_ms": 14316
+ }
+}

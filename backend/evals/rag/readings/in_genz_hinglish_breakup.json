@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "Her three-year relationship ended with a single text, and now she cannot stop watching his story and wondering if she is going mad.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "breakup",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.78,
+   "source": "note"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.401,
+   "source": "note"
+  },
+  {
+   "id": "sibling_rift",
+   "weight": 0.394,
+   "source": "note"
+  },
+  {
+   "id": "guilt",
+   "weight": 0.3,
+   "source": "profile"
+  }
+ ],
+ "mirror": "Three years, one text, and now the story you cannot look away from.",
+ "queries": {
+  "hook": "The ache of a love that was real and has now ended, and the mind that will not stop replaying the moment it left.",
+  "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+  "steady": "What is real in you cannot be taken; the love was real, the ending was real, and both can be true at once.",
+  "act": "Let the heart feel what it feels, and let the mind rest; do not watch the story again today, and write down what the bond gave you.",
+  "story": "A woman who loved deeply and was left by a single text, who learned that grief is love with nowhere to go, and found her footing again."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The bond was real",
+  "Grief is love with nowhere to go",
+  "More than the ending"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "heartbroken and unable to let go",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the ache and the replaying, named without blame.",
+  "diagnose": "You see that grief is love with nowhere to go, and that is why the heart aches.",
+  "steady": "You hold that what is real in you cannot be taken, and both the love and the ending can be true.",
+  "act": "You try one act of letting the heart feel, and one act of turning away from the story.",
+  "story": "A woman who loved and was left shows you that grief is love with nowhere to go, and that you can survive it."
+ },
+ "insight": "You are not going mad. You are grieving a real bond that ended by a text, and the mind will not let it rest until it is named.",
+ "seat": "",
+ "life_context": "",
+ "details": [],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "mechanism:grief_without_death",
+  "bridge:copied_example",
+  "week_thesis:missing",
+  "seat:missing"
+ ]
+}

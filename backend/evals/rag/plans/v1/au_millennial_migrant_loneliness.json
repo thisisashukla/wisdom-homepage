@@ -1,0 +1,556 @@
+{
+ "situation": {
+  "id": "au_millennial_migrant_loneliness",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 5
+  },
+  "note": "two years in Perth. good job, nobody to call on a Saturday. I talk to my mum on video and pretend everything is great. I eat dinner watching Indian youtube.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "Australia (Perth)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "loneliness",
+   "migration"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and performing",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "Seven days from performing on the screen to letting the Saturday be seen for what it is, and finding one real connection.",
+   "week_beats": {
+    "hook": "You recognise the Saturday and the performance, named without judgement.",
+    "diagnose": "You see that the loneliness is not the place but the separation from people and purpose.",
+    "steady": "You hold that the self is not cut off from itself.",
+    "story": "A traveler far from home who felt the distance most on a quiet evening shows you what home can mean when it is not a place."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "Two years abroad with a good job but no one to call on a Saturday, and on video calls home they pretend everything is fine.",
+   "mirror": "You have a good job, and on Saturday you eat dinner watching Indian YouTube.",
+   "insight": "You are performing on the calls home. What is not being said is that the Saturday is the hardest part.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.433,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The Saturday that has no one to call, the performance on the screen, and the loneliness that does not match the life you have built. I feel lonely.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to one person this week without performing; find one place or practice where you are not alone in the way you are.",
+    "story": "A traveler far from home who felt the distance most on a quiet evening, and who found that the self does not need to be in the same room to be at home."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The Saturday",
+    "The performance",
+    "The belonging"
+   ],
+   "seat": "a working person in a new country, performing well while feeling alone",
+   "life_context": "A working person in their mid-twenties to mid-thirties, two years; the job is good, the Saturday is empty, and on video calls they perform a version of themselves that is not the one they live.",
+   "details": [
+    "two years",
+    "has a good job",
+    "no one to call on a Saturday",
+    "pretends everything is great on video calls with mother"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:29=0.0,44=0.0,219=0.6,61=0.6,29=0.0,536=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.54,max=0.61",
+    "dropped:cliche=1,fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 1.5294,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": null,
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_maha.109",
+     "ref": "Maha Upanishad 3.18",
+     "ref_iast": "Mahā Upaniṣad 3.18",
+     "family": "up",
+     "speaker": "Nidagha",
+     "listener": "Ribhu",
+     "setting": "Nidagha on his wandering mind.",
+     "sanskrit": "इतश्चेतश्च सुव्यग्रं व्यर्थमेवाभिधावति । मनो दूरतरं याति ग्रामे कौलेयको यथा ॥",
+     "line": "The mind runs here and there for nothing, wandering far like a stray village dog.",
+     "translation": "The mind runs here and there, restless and pointless; it wanders far away, like a dog in a village.",
+     "words": [],
+     "why": "Naming how restless your mind is, is where peace begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.nidagha",
+      "title": "Nidagha's lament",
+      "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+      "story_hook": "",
+      "lesson": "Naming how restless your mind is, is where peace begins."
+     },
+     "score": 2.7135,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": null,
+     "for_you": "On the video call you shape the words your mother expects, and the mind runs to fill the empty Saturday with noise. The loneliness is not the empty flat but the separation from your own life. The mind is a stray dog, not a failure.",
+     "try_today": "Sit with the phone off and let the mind wander without calling it back.",
+     "scene_line": "You are sitting with a phone that is silent, and the mind runs like a stray village dog.",
+     "asks": [
+      "How do I stop the mind from running on an empty Saturday?",
+      "Can I let the mind run without feeling I must catch it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.219",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 219)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas asks to be kept in shelter.",
+     "sanskrit": "अब मोहि सरन राखिये नाथ ! कृपा करी जो गुरुजन पठए, बह्यो जात गह्यो हाथ ॥",
+     "line": "Keep me in your shelter now. I was being swept away, and your grace sent people who caught my hand.",
+     "translation": "Now keep me in your shelter, Lord. By your grace the elders were sent; as I was being swept away, they caught my hand.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8329,
+     "beat": "steady",
+     "role_fit": 0.54,
+     "meaning": "Surdas speaks to the Lord after being rescued. He was being swept away in the current of the world, and by divine grace, elders reached out and caught his hand. He asks to be kept in that shelter now. The verse proposes that you do not have to rely on your own strength when you are in danger. You can let yourself be held by something larger, by the people and grace that are already reaching for you.",
+     "for_you": "You are performing on the calls home while the Saturday stretches out empty. The verse shows that the self is not cut off from itself. The grace that caught Surdas was not a miracle from above. It was the hand of elders who saw him.",
+     "try_today": "Notice one moment today when you are not performing.",
+     "scene_line": "You are the one being swept away, and the elders are still reaching.",
+     "asks": [
+      "How do I stop being the one who has to catch my own hand?",
+      "What does it mean to let someone else hold me?",
+      "Where is the hand that is already reaching for me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.3086,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim is not writing to a distant god. He is speaking to a presence that already lives inside him. The one who has made a home in your heart already knows your joys and sorrows. Nothing needs explaining. The verse asks you to stop performing for that inner witness. You do not need to prove you are okay. The feeling is known, and the knowing is enough.",
+     "for_you": "The Saturday is empty. The calls home are a performance. You are trying to show your mother a version of yourself that is whole and settled. But the one who lives in your heart already knows the truth of that quiet room. You do not need to explain the loneliness.",
+     "try_today": "Let one small truth sit with you today.",
+     "scene_line": "You are in your own quiet room, and the one who lives in your heart already knows.",
+     "asks": [
+      "How do I stop performing for the one who already knows?",
+      "Can I let the Saturday be empty without filling it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.0694,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu tells Nidagha to live with a clear mind. The world will keep its noise and its demands. You will keep your duties. But you do not have to let the world pull the strings inside your chest. You move through your day, and you take what comes. You let go of what is lost. You act, but you do not let the action shake the ground under your feet.",
+     "for_you": "The Saturday is empty and the calls are a performance. That is the outside noise. The inside noise is the worry that you are not enough. You can let the job be the job and let the Saturday be the Saturday.",
+     "try_today": "When the mind races, name one thing you see and one thing you hear.",
+     "scene_line": "You are on the call, and the Saturday is waiting.",
+     "asks": [
+      "How do I stop the performance from taking over my whole day?",
+      "Can I let the Saturday be empty without filling it with noise?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.6",
+     "ref": "Isha Upanishad 6",
+     "ref_iast": "Īśa Upaniṣad 6",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The Isha on seeing one life in all beings.",
+     "sanskrit": "यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति । सर्वभूतेषु चात्मानं ततो न विजुगुप्सते ॥",
+     "line": "See yourself in everyone and everyone in yourself, and you stop recoiling from people.",
+     "translation": "One who sees all beings in the self, and the self in all beings, no longer shrinks away from anyone.",
+     "words": [],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.8245,
+     "beat": "act",
+     "role_fit": 0.655,
+     "meaning": "A seer is speaking to you, the one reading these lines. They have just said that everything in the world belongs to a deeper presence, so we should enjoy what we have without grasping. Now they say we should live a full life and work, but without being bound by it. The verse says see yourself in everyone and everyone in yourself, and you stop recoiling from people.",
+     "for_you": "You are performing for your mother while the Saturday empties out. The verse says you stop recoiling when you see yourself in everyone. Let the work be there, and let the Saturday be a place where you meet the same loneliness you feel in others. The screen can wait.",
+     "try_today": "Let the performance on the call end a little early, or let one real worry slip through the cracks.",
+     "scene_line": "You are on a video call pretending, while the Saturday waits empty.",
+     "asks": [
+      "How do I stop recoiling when I am alone?",
+      "Can I see my own loneliness in other people?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.ram_despondency",
+     "title": "Rama comes home from his pilgrimage and loses interest in everything",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Rama",
+      "Dasharatha",
+      "Rama's attendants",
+      "Vishvamitra",
+      "Vasishtha"
+     ],
+     "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+     "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+     "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.1.10.9",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 10.9",
+      "family": "yv",
+      "speaker": "Rama's attendant",
+      "listener": "King Dasharatha",
+      "setting": "Rama's attendants tell King Dasharatha how the prince has changed since his pilgrimage.",
+      "sanskrit": "रामो राजीवपत्राक्षो यतःप्रभृति चागतः । सविप्रस्तीर्थयात्रायास्ततःप्रभृति दुर्मनाः ॥",
+      "line": "Ever since he came back from the trip, he hasn't been himself.",
+      "translation": "Ever since lotus-eyed Rama came back from his pilgrimage with the brahmins, he has been low in spirit.",
+      "words": [],
+      "why": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.ram_despondency",
+       "title": "Rama comes home from his pilgrimage and loses interest in everything",
+       "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+       "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+       "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Rama came home from his pilgrimage and stopped laughing",
+     "teaser": "Rama came home from his pilgrimage and stopped laughing",
+     "for_you": "Rama sat still when the world expected him to perform, and that stillness held the first real question. Your Saturday stillness might be the same kind of quiet, not a failure but the start of something. The people you perform for do not need the show, only the real you.",
+     "asks": [
+      "How do I let my stillness be enough?",
+      "What if my quiet is not weakness?",
+      "How do I ask for help without performing?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The Saturday",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18094,
+   "total": 18097
+  },
+  "_ms": 18100
+ }
+}

@@ -21,6 +21,8 @@ from typing import Any, Optional
 
 import httpx
 
+from ai import consent
+
 logger = logging.getLogger(__name__)
 
 
@@ -45,6 +47,7 @@ class OpenAICompatClient:
         return self.model.startswith(("gpt-5", "gpt-6", "o1", "o3", "o4")) and "chat" not in self.model
 
     def chat_json(self, messages: list[dict], *, temperature: float = 0.2, max_tokens: int = 1400, timeout_s: int = 10) -> dict:
+        consent.guard()
         body: dict = {"model": self.model, "messages": messages, "response_format": {"type": "json_object"}}
         if self._reasoning_model:
             body["max_completion_tokens"] = max_tokens + 400     # a little headroom for the reasoning tokens

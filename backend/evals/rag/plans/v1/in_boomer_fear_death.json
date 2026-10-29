@@ -1,0 +1,745 @@
+{
+ "situation": {
+  "id": "in_boomer_fear_death",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2
+  },
+  "note": "I am 74. two of my friends died this year. at night I think about death a lot. what happens after. I want to be ready, not afraid.",
+  "note_source": "voice",
+  "expect_stance": "seeking",
+  "expect_risk": null,
+  "market": "India (Pune)",
+  "lang": "english",
+  "slices": [
+   "ageing",
+   "fear",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and afraid of dying",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "Seven days from grieving and afraid at night to holding that what is real in you cannot be lost.",
+   "week_beats": {
+    "hook": "You recognise the grief for your friends and the fear at night, named without judgement.",
+    "diagnose": "You see that grief is love with nowhere to go, and fear is the mind running after what it cannot hold.",
+    "steady": "You hold that what is real in you cannot be cut or burned or wetted. It is the one thing that does not pass.",
+    "act": "You try turning your mind to what does not pass, and letting the grief be love.",
+    "story": "A king who lost everyone he loved and stood at the edge of the world shows you what does not die."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "Grieving two friends who died this year, he lies awake at night afraid of death and wants to be ready for what comes after.",
+   "mirror": "Two friends gone this year, and at night the question is not if but when.",
+   "insight": "You are grieving and afraid at night because what you loved has left the world, and you are afraid you will soon follow.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.46,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.393,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The grief for friends who have left the world and the fear at night that you will soon follow, and the wish to be ready for what comes after.",
+    "diagnose": "Grief is love with nowhere to go when the body is gone; fear grows from imagining the future and from forgetting that what is real in us cannot be lost.",
+    "steady": "What is real in you cannot be cut by the body, cannot be burned by fire, cannot be wetted by water; it is the one thing that does not pass.",
+    "act": "Turn your mind to what does not pass; let the grief be love, and let the fear be the mind running after what it cannot hold.",
+    "story": "A king who lost everyone he loved and stood at the edge of the world, asking what does not die, and was told what does not die is the."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Missing them",
+    "Love that holds on",
+    "Love that doesn't end"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "is elderly",
+    "two friends died this year",
+    "thinks about death at night",
+    "wants to be ready, not afraid of what comes after"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:22=0.9,14=0.8,52=0.7,15=0.5,28=0.4,45=0.3",
+    "week_same:15",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.66",
+    "retried:6",
+    "dropped:fallback_line=3,invented=1,missing=5,try_today_long=1",
+    "for_you:6/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "words": [
+      {
+       "sa": "वासांसि",
+       "en": "clothes"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "विहायनवानि",
+       "en": "leaving new"
+      },
+      {
+       "sa": "गृह्णाति",
+       "en": "takes"
+      },
+      {
+       "sa": "नरोऽपराणि",
+       "en": "a person other"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "शरीराणि",
+       "en": "bodies"
+      },
+      {
+       "sa": "विहाय",
+       "en": "leaving"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "अन्यानि",
+       "en": "other"
+      },
+      {
+       "sa": "संयाति",
+       "en": "enters"
+      },
+      {
+       "sa": "नवानि",
+       "en": "new"
+      },
+      {
+       "sa": "देही",
+       "en": "the embodied self"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.7171,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna tells Arjuna that the self is eternal, outlasting every loss and every passing pain. The self leaves a worn body for a new one, just as we cast off worn-out clothes and put on new ones.",
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": "Feel the weight of the body at rest and know the life inside remains.",
+     "scene_line": "You are standing at the edge of the night, watching a worn body rest while the life you are remains awake.",
+     "asks": [
+      "How do I hold on to what remains when the body rests?",
+      "What part of me is not afraid of the night?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.2987,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya speaks to Dasharatha after she has lashed out at him over Rama's exile. She tells him that grief wears away steadiness and judgement. It is an enemy that destroys everything. She is saying that sorrow makes us wound those we love, and that a quick apology heals more than being right.",
+     "for_you": "Your mind races at night because it is trying to hold what it cannot. That is not weakness. It is love looking for a place to rest. Grief is love with nowhere to go. You do not have to fix it tonight. Just let it be what it is.",
+     "try_today": "When the mind races at night, name it as grief and let it stay.",
+     "scene_line": "You are in your own dark room, speaking to the one you lost.",
+     "asks": [
+      "How do I let grief be without fighting it?",
+      "What does it mean to be steady when I am grieving?",
+      "How do I know when I have hurt someone I love?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.52",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.52",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "नायमत्यन्तसंवासो लभ्यते जातु केनचित् / अपि स्वेन शरीरेण किमुतान्येन केनचित्",
+     "line": "No one gets to stay with anyone forever, not even with their own body.",
+     "translation": "No one ever gets to live together with anyone forever, not even with one's own body, let alone with anyone else.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.996,
+     "beat": "steady",
+     "role_fit": 0.444,
+     "meaning": null,
+     "for_you": "The self in the one you love and the self in you were never born and never pass away; love was a meeting of what lasts.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "avadhuta.3.34",
+     "ref": "Avadhuta Gita 3.34",
+     "ref_iast": "Avadhūta Gītā 3.34",
+     "family": "gitas",
+     "speaker": "Dattatreya",
+     "listener": "his own mind / the seeker",
+     "setting": "Dattatreya's refrain to a grieving friend: why do you weep?",
+     "sanskrit": "किं नाम रोदिषि सखे न जरा न मृत्युः किं नाम रोदिषि सखे न च जन्म दुःखम् । किं नाम रोदिषि सखे न च ते विकारो ज्ञानामृतं समरसं गगनोपमोऽहम् ॥",
+     "line": "Why weep, friend? What you truly are does not age, die or change.",
+     "translation": "Why do you weep, friend? You have no old age, no death. Why weep, friend? Birth is no sorrow to you. Why weep, friend? You do not change.",
+     "words": [
+      {
+       "sa": "किं",
+       "en": "why"
+      },
+      {
+       "sa": "नाम",
+       "en": "name"
+      },
+      {
+       "sa": "रोदिषि",
+       "en": "do you weep"
+      },
+      {
+       "sa": "सखे",
+       "en": "friend"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "जरा",
+       "en": "old age"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "मृत्युः",
+       "en": "death"
+      },
+      {
+       "sa": "किं",
+       "en": "why"
+      },
+      {
+       "sa": "नाम",
+       "en": "name"
+      },
+      {
+       "sa": "रोदिषि",
+       "en": "do you weep"
+      },
+      {
+       "sa": "सखे",
+       "en": "friend"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जन्म",
+       "en": "birth"
+      },
+      {
+       "sa": "दुःखम्",
+       "en": "suffering"
+      },
+      {
+       "sa": "किं",
+       "en": "why"
+      },
+      {
+       "sa": "नाम",
+       "en": "why"
+      },
+      {
+       "sa": "रोदिषि",
+       "en": "do you weep"
+      },
+      {
+       "sa": "सखे",
+       "en": "friend"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "विकारो",
+       "en": "faults"
+      },
+      {
+       "sa": "ज्ञानामृतं",
+       "en": "nectar of wisdom"
+      },
+      {
+       "sa": "समरसं",
+       "en": "pure essence"
+      },
+      {
+       "sa": "गगनोपमोऽहम्",
+       "en": "I am like the sky"
+      }
+     ],
+     "why": "In grief, remember there is something in you that loss cannot touch.",
+     "misuse": "Tears are allowed; this offers comfort, not a ban on grief.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "avadhuta.p.why_weep",
+      "title": "Why do you weep, friend?",
+      "summary": "In a long hymn with the refrain 'I am the nectar of knowledge, vast as the sky', Dattatreya asks a friend again and again why he weeps, since what he truly is does not age, die or change.",
+      "story_hook": "",
+      "lesson": "In grief, remember there is something in you that loss cannot touch."
+     },
+     "score": 2.8036,
+     "beat": "steady",
+     "role_fit": 0.374,
+     "meaning": "Dattatreya, the wandering teacher, asks a grieving friend why he weeps. The friend has lost something precious and feels the weight of it. Dattatreya does not tell him to stop crying. He asks him to look deeper, to the part of him that does not age, die or change. The verse says that what you truly are is untouched by loss. It cannot be burned, wetted, or cut. It is the one thing that remains when everything else passes away.",
+     "for_you": "At night, when your friends feel far away, your mind races with fear. But there is a part of you that loss cannot touch. It is not a new thought. It is the quiet ground beneath your grief. You can hold onto that. The real you remains.",
+     "try_today": "Feel your own presence without judging it.",
+     "scene_line": "You are a friend weeping in the dark.",
+     "asks": [
+      "How do I find what does not change?",
+      "How do I know this is real?",
+      "How do I stop the fear?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.28",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.28",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage to the ruined prince Kshemadarshi, who keeps longing for what he lost.",
+     "sanskrit": "अवाप्यान्कामयन्नर्थान्नानवाप्यान्कदाचन / प्रत्युत्पन्नाननुभवन्मा शुचस्त्वमनागतान्",
+     "line": "Want what is within reach. Enjoy what is here now. Don't grieve over what hasn't happened.",
+     "translation": "Wish for what can be had, never for what cannot. Enjoy what is in front of you now, and do not grieve over what has not yet come.",
+     "words": [],
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 2.8845,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": null,
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "words": [],
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.7606,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Narada comes to the young Shuka, who is sitting alone in his grief. Narada tells him not to sit brooding over a pain that every human being must face. He says that if a wound can be treated, you could tend to it. The mind is like the body. It needs care and action, not just sorrow, to find its health again.",
+     "for_you": "The two friends who died are not coming back into the world, and that absence is what keeps you awake at night. It is not a problem to be solved. It is love that has lost its shape.",
+     "try_today": null,
+     "scene_line": "You are sitting alone with a grief that everyone must meet, and the question is what to do with your hands.",
+     "asks": [
+      "How do I know when my mind needs medicine instead of rest?",
+      "What is the difference between tending to my mind and running from it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.lila",
+     "title": "Queen Lila fears losing her husband",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Lila",
+      "King Padma",
+      "Sarasvati",
+      "the brahmins"
+     ],
+     "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+     "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+     "lesson": "Love brings the fear of loss; trying to control death only deepens the fear.",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "yv.3.16.24",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Utpatti 16.24",
+      "family": "yv",
+      "speaker": "The brahmins",
+      "listener": "Queen Lila",
+      "setting": "Queen Lila, terrified of losing her husband, asks wise brahmins how to make him immortal.",
+      "sanskrit": "तपोजपयमैर्देवि समस्ताः सिद्धसिद्धयः । संप्राप्यन्तेऽमरत्वं तु न कदाचन लभ्यते ॥",
+      "line": "Discipline and prayer can achieve almost anything, but no one can win freedom from death.",
+      "translation": "O queen, by austerity, prayer and discipline every kind of attainment can be reached; but immortality is never gained.",
+      "words": [],
+      "why": "Love brings the fear of loss; trying to control death only deepens the fear.",
+      "misuse": "Not fatalism about care: look after the sick fully. This is about the fear itself.",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "fear_death",
+        "label": "I'm afraid of death"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.lila",
+       "title": "Queen Lila fears losing her husband",
+       "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+       "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+       "lesson": "Love brings the fear of loss; trying to control death only deepens the fear."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Lila was so happy that she became terrified of losing her husband",
+     "teaser": "Queen Lila was so happy that she became terrified of losing her husband",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Missing them",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16595,
+   "total": 16598
+  },
+  "_ms": 16601
+ }
+}

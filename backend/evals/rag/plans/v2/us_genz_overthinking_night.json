@@ -1,0 +1,682 @@
+{
+ "situation": {
+  "id": "us_genz_overthinking_night",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "u25",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 7
+  },
+  "note": "replaying a conversation from 2019 at 2am again. I know it doesn't matter. my brain won't let it go.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "USA (Austin)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "overthinking"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "stuck and tired",
+   "bridge": "The 2am replay you cannot stop is what the Upanishads call the untrained mind: running like the wind, and left to itself it becomes its own enemy.",
+   "week_thesis": "The 2am replay has a name, and the mind has a way out that does not require forgetting.",
+   "week_beats": {
+    "hook": "You recognise the replaying and the exhaustion, named without blame.",
+    "diagnose": "You see that the mind is doing what untrained minds do: it reopens the past and calls it present.",
+    "steady": "You hold that the mind is not your fault, and that it can be steadied.",
+    "act": "You try letting the thought come, letting it go, and returning to the breath, one time at a time.",
+    "story": "A young seeker who could not still their mind, who sat with a teacher and learned that the mind's restlessness is not their fault."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A young worker who knows a conversation doesn't matter but cannot stop replaying it am.",
+   "mirror": "You know it doesn't matter, and am your mind says it does anyway.",
+   "insight": "The conversation is from years ago, and your mind has never been given one quiet minute to settle since.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 2.05,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 1.19,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.738,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.325,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a mind that will not let go of something you know does not matter, and the exhaustion of replaying it am.",
+    "diagnose": "A mind that runs like the wind, replaying and imagining, becomes its own enemy when left to itself; it turns the past into a present it cannot close.",
+    "steady": "The mind is restless, stormy, stubborn and strong; holding it feels like holding the wind, and that is not your failure.",
+    "act": "Practise steadying the mind; let the thought come, let it go, and return your attention to the breath, one time at a time.",
+    "story": "A young seeker who could not still their mind, who sat with a teacher and learned that the mind's restlessness is not their fault."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The 2am loop",
+    "What the mind does",
+    "More than the mind"
+   ],
+   "seat": "a young worker whose mind won't stop replaying a past conversation",
+   "life_context": "A young worker with too much phone time; am their mind returns to a conversation from years ago, and they know it doesn't matter yet they cannot let it go.",
+   "details": [
+    "replays a conversation am",
+    "knows it doesn't matter",
+    "mind won't let it go"
+   ],
+   "age": "u25",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=0.6,11=0.6,58=0.3,178=0.0,23=0.0,46=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.63,max=0.69",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:not_second_person=1,repeat=1,scene_line_blame=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.916,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, turbulent, powerful and stubborn, and as hard to hold as the wind. Krishna agrees, but says that through practice and letting go, the mind can be trained.",
+     "for_you": "The conversation from years ago plays on a loop while your phone stays open. The mind is not your enemy here. It is simply running wild. Practice and letting go are the only way to train it, not force.",
+     "try_today": "Notice the phone screen without opening it.",
+     "scene_line": "You are Arjuna, confessing that your mind is as hard to hold as the wind.",
+     "asks": [
+      "How do I stop the 2am replay?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.4627,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "At the end of his long speech, Rama asks a quiet but heavy question. He has seen how wealth hardens people and how time eats everything. He says that our own senses turn against us. The self strikes the self. The mind becomes the mind's own enemy. He is not giving the answer yet. He is naming what feels empty. He is showing that the real hurt does not always come from outside. Sometimes it comes from within.",
+     "for_you": "That conversation from years ago is a story your mind keeps retelling. It feels like the wound is still open. But Rama is pointing to the storyteller, not just the story. The hurt is not just the past. It is the mind that will not let the page turn.",
+     "try_today": "When the replay starts, notice the mind turning past into present.",
+     "scene_line": "You are Rama, asking what the point is while the mind turns the past into a present wound.",
+     "asks": [
+      "How do I stop the mind from calling the past present?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.58",
+     "ref": "Ashtavakra Gita 18.58",
+     "ref_iast": "Aṣṭāvakra Gītā 18.58",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "अकुर्वन्नपि सङ्क्षोभाद् व्यग्रः सर्वत्र मूढधीः । कुर्वन्नपि तु कृत्यानि कुशलो हि निराकुलः ॥",
+     "line": "A restless mind is agitated even doing nothing; a skilled one stays calm doing everything.",
+     "translation": "The fool is restless even when doing nothing; the skilful one stays calm even when doing everything that needs doing.",
+     "words": [
+      {
+       "sa": "अकुर्वन्",
+       "en": "not-doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "सङ्क्षोभात्",
+       "en": "from disturbance"
+      },
+      {
+       "sa": "व्यग्रः",
+       "en": "restless"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "मूढधीः",
+       "en": "ignorant-mind"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "कृत्यानि",
+       "en": "actions"
+      },
+      {
+       "sa": "कुशलः",
+       "en": "skilled"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "निराकुलः",
+       "en": "untroubled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.4333,
+     "beat": "steady",
+     "role_fit": 0.615,
+     "meaning": "In the final chapter of the Gita, the sage Ashtavakra speaks to Janaka about the calm that comes from skill in life. He says the fool is restless even when doing nothing. The one who is skilful stays calm even when doing everything that needs doing. The point is that peace is not something you chase by sitting still or changing your surroundings. It is the way you hold ordinary life when your hands are full.",
+     "for_you": "Your mind is racing while you work, and the old conversation comes back uninvited. That restlessness is not a failure in you. It is the untrained mind running like the wind. The way out is not to force the conversation away.",
+     "try_today": "Notice when your hands are doing a task and your mind is elsewhere.",
+     "scene_line": "You are the fool who is restless even while doing nothing, and the skilful one who stays calm even while doing everything.",
+     "asks": [
+      "How do I find calm when my mind is already racing?",
+      "What does it mean to be skilful while my thoughts are loud?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.6a.26.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 26.8",
+     "family": "yv",
+     "speaker": "Bhushunda",
+     "listener": "Vasishtha",
+     "setting": "Bhushunda, the ancient crow who has watched the ages pass, tells Vasishtha why he lives long and well.",
+     "sanskrit": "न भूतं न भविष्यं च चिन्तयामि कदाचन । दृष्टिमालम्ब्य तिष्ठामि वर्तमानामिहात्मना ॥",
+     "line": "I don't brood over the past or the future. I keep my attention on now.",
+     "translation": "I never brood over the past or the future. I hold my attention on the present, here, with myself.",
+     "words": [],
+     "why": "A long, steady life comes from a mind that stays in the present, wants little and stays kind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhushunda",
+      "title": "Bhushunda, the crow who outlived the ages",
+      "summary": "Vasishtha travels to a wish-fulfilling tree on Mount Meru to meet Bhushunda, a crow who has watched world-ages come and go. Asked how he has lived so long, untroubled, Bhushunda lists his habits: he doesn't brood on the past or future, doesn't fret about what he'll get next, doesn't grow arrogant from knowing, and shares in others' joys and sorrows.",
+      "story_hook": "High on a mountain lived a crow who had watched whole ages of the world rise and fall.",
+      "lesson": "A long, steady life comes from a mind that stays in the present, wants little and stays kind."
+     },
+     "score": 2.7164,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Bhushunda, the ancient crow who has watched ages pass, tells Vasishtha how he stays well. He says he never broods over what has already happened or what might happen next. He holds his attention right here, in this present moment, with himself. This is not a trick. It is a habit built over a long life. When the mind stops chasing time, it settles into a quiet strength.",
+     "for_you": "You are not broken for replaying that old conversation. The mind has simply been left to run without a hand on the reins. It is not your fault it is stormy.",
+     "try_today": "When the replay starts, name the room you are in right now. Let your eyes find one steady thing.",
+     "scene_line": "You are the crow on the mountain, asked how to outlive the storm of your own thoughts.",
+     "asks": [
+      "How do I stop the past from pulling me back at night?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "words": [
+      {
+       "sa": "विविक्त",
+       "en": "isolated"
+      },
+      {
+       "sa": "आसीन",
+       "en": "seated"
+      },
+      {
+       "sa": "उपारतेन्द्रियो",
+       "en": "senses withdrawn"
+      },
+      {
+       "sa": "विनिर्जितात्मा",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "विमलान्तराशयः",
+       "en": "pure inner state"
+      },
+      {
+       "sa": "विभावयेदेकमनन्यसाधनो",
+       "en": "contemplate with single-minded focus"
+      },
+      {
+       "sa": "विज्ञानदृक्केवल",
+       "en": "only with knowledge's vision"
+      },
+      {
+       "sa": "आत्मसंस्थितः",
+       "en": "established in the self"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 3.0138,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit in a quiet place, rest the senses, and give full attention to one thing. The idea is that quiet sitting and steady faith carry you until understanding becomes natural on its own.",
+     "for_you": "The conversation replays am. You know it does not matter, yet the mind will not let it go. Rama is not asking you to empty the room. He asks you to rest the senses and return to one thing, one time at a time.",
+     "try_today": "Rest the senses and give attention to one thing, for one minute.",
+     "scene_line": "You are sitting in the quiet after the war, and the sea of confusion asks how to be crossed.",
+     "asks": [
+      "How do I let a thought go without fighting it?",
+      "Can I really rest my senses while my mind races?",
+      "What is the one thing I should give my full attention to?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "words": [],
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 2.6663,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": "Bhartrihari speaks to his own mind. He asks why it wanders in vain. It replays the past and scripts the future. He tells it to rest. Whatever is to happen will happen. He will enjoy what comes unlooked-for. The verse proposes stopping the rehearsal. It asks the mind to take what comes instead of seeking approval or control.",
+     "for_you": "That conversation from years ago is still playing because your mind is still seeking an answer it will never find. You cannot control what happened. You can only choose to let the mind rest. The calm you want is already inside you, waiting for you to stop rehearsing.",
+     "try_today": "When the replay starts, say to your mind: rest here, for now.",
+     "scene_line": "You are in your own quiet room, and the mind asks: why wander?",
+     "asks": [
+      "Why does my mind wander when I want it to rest?",
+      "How do I stop scripting the future in my head?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "A mind that has heard a deeper truth still has to answer the door. You are in your own spring garden, hearing a song that unsettles you, and you still have to walk back to your desk. The work does not stop. The mind does not have to clutch.",
+     "asks": [
+      "What is the one thing I am supposed to do today?",
+      "Can I let the past sit at the door without running?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The 2am loop",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12049,
+   "total": 12051
+  },
+  "_ms": 12055
+ }
+}

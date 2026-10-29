@@ -1,0 +1,641 @@
+{
+ "situation": {
+  "id": "in_millennial_procrastination_thesis",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "stick",
+   "age": "25_34",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 6
+  },
+  "note": "PhD thesis deadline in 5 months. I have written 12 pages in a year. every morning I promise today, every night I hate myself.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Kolkata)",
+  "lang": "english",
+  "slices": [
+   "discipline",
+   "lang:english",
+   "shame"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "determined and hating themselves",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "Seven days from hating yourself at night to finding one small thing you can do before the sun rises, and letting it be enough.",
+   "week_beats": {
+    "hook": "You recognise the morning promise and the night hate, named without judgement.",
+    "diagnose": "You see that the promise is the problem, not the lack of pages.",
+    "steady": "You hold that the work itself is the reward, and no honest effort is ever lost.",
+    "act": "You try doing one small thing before the promise can become a punishment, and letting the result go.",
+    "story": "A scholar who faced a mountain of work and found the one step that mattered shows you how to begin again."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "Twelve pages in a year, a deadline five months away, and a morning promise that becomes a nightly self-hatred.",
+   "mirror": "You wake up with a promise and go to bed with a sentence against yourself.",
+   "insight": "You are stuck in a loop where the promise becomes the punishment. Underneath is a doubt that makes the page impossible before you begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 2.05,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.886,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.437,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a promise you make each morning and a sentence you write on yourself each night, with a thesis that will not write itself.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps you stuck, and the unacted-on promise becomes its own punishment.",
+    "steady": "The work itself is the reward; no honest effort is ever lost, and the page is not the measure of the mind.",
+    "act": "Do one thing, however small, before the promise can turn into a punishment; let the result go and begin again tomorrow.",
+    "story": "A scholar who faced a mountain of work, found the one step that mattered, and kept taking it until the mountain was crossed."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The promise and the punishment",
+    "The one small step",
+    "More than the page"
+   ],
+   "seat": "a student with a thesis deadline and a year of silence behind them",
+   "life_context": "A student in their late twenties with a thesis due in five months; a year has passed with twelve pages written, and each morning they promise to begin, each night they turn on themselves.",
+   "details": [
+    "PhD thesis deadline in five months",
+    "twelve pages written in one year",
+    "promises themselves every morning",
+    "hates themselves every night"
+   ],
+   "age": "25_34",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:8=0.3,26=0.3,81=0.3,16=0.6,15=0.6,31=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.68",
+    "retried:4",
+    "dropped:fallback_line=1,invented=1,missing=2,repeat=3,scene_line_invented=1,soft_kept=3",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.8",
+     "ref": "Bhagavad Gita 3.8",
+     "ref_iast": "Bhagavad Gītā 3.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥",
+     "line": "Do the work that's yours. Doing something beats doing nothing; even living needs action.",
+     "translation": "Do your allotted work, for action is better than inaction. Even the maintenance of your body would not be possible without action.",
+     "words": [
+      {
+       "sa": "नियतं",
+       "en": "prescribed"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "ज्यायः",
+       "en": "better"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "than inaction"
+      },
+      {
+       "sa": "अपि",
+       "en": "even body maintenance"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "प्रसिद्ध्येत",
+       "en": "can be sustained"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "without action"
+      }
+     ],
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 1.6329,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna is answering Arjuna, who is asking why he must act at all if understanding is higher. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction. Doing your allotted work is better than doing nothing. Even the maintenance of your body would not be possible without action.",
+     "for_you": "You wake up and promise to write, then turn on yourself at night. That is a loop, not a character flaw. The next morning, the page is still there. The work is yours, and doing it beats the silence.",
+     "try_today": "Write one sentence before you check your phone.",
+     "scene_line": "You stand at the edge of your desk, and the page waits.",
+     "asks": [
+      "How do I break the loop of promise and hate?",
+      "How can I do my work without hating myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.33.85",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.85",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "षड्दोषाः पुरुषेणेह हातव्या भूतिमिच्छता / निद्रा तन्द्री भयं क्रोध आलस्यं दीर्घसूत्रता",
+     "line": "Six habits block every rise: oversleeping, drowsiness, fear, anger, laziness and procrastination.",
+     "translation": "Six faults must be given up by anyone who wants to prosper: too much sleep, drowsiness, fear, anger, laziness and procrastination.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 2.7905,
+     "beat": "diagnose",
+     "role_fit": 0.495,
+     "meaning": null,
+     "for_you": "You promised yourself this morning again. That promise is not the answer. It is one of the six habits Vidura names. It is drowsiness, a way of hiding from the work. The page is not the enemy. The loop of promise and self-hatred is.",
+     "try_today": "When you wake tomorrow, do not make a promise. Open the document and type one sentence. That is all.",
+     "scene_line": null,
+     "asks": [
+      "How do I stop my morning promise?",
+      "Is my self-hatred a form of laziness?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.50",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.50",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "कुर्वतो नार्थसिद्धिर्मे भवतीति ह भारत / निर्वेदो नात्र गन्तव्यो द्वावन्तौ यस्य कर्मणः",
+     "line": "Don't despair because effort hasn't paid off yet. Every attempt can go either way.",
+     "translation": "'I keep working and still don't succeed' is no reason to despair. Every effort can end two ways, in success or not; only by not acting is the outcome certain.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 2.8962,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "words": [
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "व्याप्तम्",
+       "en": "pervaded"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "विश्वं",
+       "en": "world"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "प्रोतं",
+       "en": "woven"
+      },
+      {
+       "sa": "यथार्थतः",
+       "en": "truly"
+      },
+      {
+       "sa": "शुद्धबुद्धस्वरूपः",
+       "en": "pure-consciousness-form"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "गमः",
+       "en": "go, be affected"
+      },
+      {
+       "sa": "क्षुद्रचित्तताम्",
+       "en": "by petty minds"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 2.2117,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka, the ruler of Mithila, asks the young sage Ashtavakra how to be free. Ashtavakra answers at once. This whole universe is pervaded by you and strung on you. By nature you are pure awareness. Do not fall into smallness of mind. He is telling Janaka that freedom is not something to be earned by doing more. It is the recognition that you are the awareness in which these worries appear, not the worries themselves.",
+     "for_you": "The thesis is a mountain, but you are not the mountain. You are the one who sees it. Every morning you promise to move the stone, and every night you hate yourself for the stone's weight. That is the smallness of mind. The page is not your whole self.",
+     "try_today": "Before you open the document, name one thing you are aware of right now.",
+     "scene_line": "You are the awareness in which the thesis waits.",
+     "asks": [
+      "How do I see myself as more than the pages I have not written?",
+      "Can I let the work be the work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "words": [],
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.7324,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Medhavin speaks to his father, who is caught in the routine of study and ritual. The son says the days and nights fall like arrows, and death takes people mid-task. He tells his father to do tomorrow's work today, and the afternoon's in the morning. The point is that life slips away while we wait to be ready. You are asked to do what matters now, before the time for it is gone.",
+     "for_you": "You wake up and make the same promise you made yesterday, and you hate yourself when you fail it again at night. Medhavin's point is not to promise more, but to do today's work before the day ends. Let the morning be the only time you give to the page.",
+     "try_today": "Write one paragraph before you check anything else.",
+     "scene_line": "You are the son waking the father from his sleep of delay.",
+     "asks": [
+      "How do I stop the night from being the judge?",
+      "What is the smallest work I can do before noon?",
+      "Does this mean I stop making promises to myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.255",
+     "ref": "Maha Upanishad 4.106-107",
+     "ref_iast": "Mahā Upaniṣad 4.106-107",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on self-reliance.",
+     "sanskrit": "तृष्णाग्राहगृहीतानां संसारार्णवपातिनाम् । आवर्तैरूह्यमानानां दूरं स्वमन एव नौः ॥ मनसैव मनश्छित्त्वा पाशं परमबन्धनम् । भवादुत्तारयात्मानं नासावन्येन तार्यते ॥",
+     "line": "Use the mind to cut the mind's own noose. Lift yourself out; no one else can do it for you.",
+     "translation": "For those seized by the crocodile of craving and falling into the ocean of worldly life, swept along by its whirlpools, one's own mind is the boat. Cutting with the mind the mind's noose, the strongest of bonds, lift yourself across; no one else can carry you over.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 2.6152,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "Ribhu speaks to Nidagha about the mind as its own boat and its own noose. He says that for those caught in the ocean of worldly life, swept by its whirlpools, the mind itself is the vessel. You could cut the mind's noose, the strongest of bonds, with the mind. You could lift yourself across. No one else can carry you over.",
+     "for_you": "You are trying to use your mind to escape the trap, but right now it is the noose. The promise you make each morning is a knot you pull tighter by night. You are the boat and the current.",
+     "try_today": "Cut one thread of the noose with a small, calm act before the day asks for more.",
+     "scene_line": "You are the boat, and the noose is in your own hands.",
+     "asks": [
+      "How do I cut the noose without pulling it tighter?",
+      "Can I lift myself out without the page?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "anchor": {
+      "id": "yv.1.1.7",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 1.7",
+      "family": "yv",
+      "speaker": "Agastya",
+      "listener": "Sutikshna",
+      "setting": "The sage Agastya answers a student torn between action and knowledge.",
+      "sanskrit": "उभाभ्यामेव पक्षाभ्यां यथा खे पक्षिणां गतिः । तथैव ज्ञानकर्मभ्यां जायते परमं पदम् ॥",
+      "line": "A bird flies on two wings. You need both understanding and action to get anywhere that matters.",
+      "translation": "Just as birds fly through the sky on both their wings, the highest state is reached through both knowledge and action.",
+      "words": [],
+      "why": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "procrastination",
+        "label": "I keep procrastinating"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.karunya_two_wings",
+       "title": "Karunya stops acting: knowledge and action as two wings",
+       "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+       "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+       "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": "You are frozen between the promise and the page, waiting to be sure before you begin. Karunya stopped moving because he needed one wing to be perfect. Your thesis does not ask for perfect understanding. It asks for the next small act, done with what you know now.",
+     "asks": [
+      "How do I begin before I feel sure?",
+      "What does action look like when I am still confused?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The promise and the punishment",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18295,
+   "total": 18297
+  },
+  "_ms": 18300
+ }
+}

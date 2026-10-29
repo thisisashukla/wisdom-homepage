@@ -1,0 +1,840 @@
+{
+ "situation": {
+  "id": "us_boomer_widower_faith",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "someone_lost"
+  },
+  "note": "Lost my wife of 44 years in March. I do the temple seva, I keep busy. But the evenings. I want to understand what the Gita actually says about where she is now, not what people tell me to make me feel better.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "USA (California)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching",
+   "bridge": "What you lost was real, and the Gita does not ask you to pretend it was not. It asks you to see what cannot be lost.",
+   "week_thesis": "The Gita does not ask you to lower the loss. It offers a truth that can hold the loss without breaking.",
+   "week_beats": {
+    "hook": "You recognise the real loss and the search for the Gita's own words, not comfort.",
+    "diagnose": "You see that grief is love with nowhere to go, and the bond was real.",
+    "steady": "You hold that what is real in us cannot be cut or taken.",
+    "act": "You read the verses on the self that cannot be cut, and let the truth stand without asking it to make the ache smaller.",
+    "story": "A king who lost everything and was taught the self is untouched by death shows you what holding the truth looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A widower of forty-four years keeps busy with seva but wants the Gita's own teaching on where his wife is now, not the comfort others give.",
+   "mirror": "You keep busy all day, and at night the question opens that no one else will answer for you.",
+   "insight": "You miss them every day, and the ache is as big as the love was.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.628,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.745,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.71,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The real loss of a forty-four-year bond, and the search for what the Gita itself says about where she is now, not what anyone else will tell you.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real, not because it was wrong.",
+    "steady": "What is real in us cannot be cut or taken; the self is not the body that parts, and that which was yours is not lost.",
+    "act": "Read the verses on the self that cannot be cut, burned or dried; sit with them, and let the truth stand without asking it to make the ache smaller.",
+    "story": "A king who lost his wife and his kingdom, who was told the self is untouched by death, and who sat with that truth until it held him."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The loss and the question",
+    "What cannot be cut",
+    "The one who was yours"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "widowed in March after years",
+    "does temple seva and stays busy",
+    "the evenings are hard"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:8=0.6,40=0.3,22=0.3,1=0.0,71=0.6,34=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.67",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:invented_name=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 3.1397,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "On the battlefield, Arjuna is overwhelmed by grief. He tells Krishna that even winning an empire or ruling the gods could not stop this sorrow that is draining him. He admits he sees no way to escape this pain. The verse shows him laying his confusion bare and asking for guidance. It proposes that true clarity begins only when you stop pretending to have the answers and ask for help.",
+     "for_you": "You have lost a real part of your life. It shows that admitting you do not know what comes next is where the path back to yourself begins.",
+     "try_today": "Notice one moment when the grief feels too large.",
+     "scene_line": "You are on the field of grief, with nothing to win that could touch it.",
+     "asks": [
+      "How do I know this grief is not a failure of faith?",
+      "Where does my searching end and my own mind begin?",
+      "What is the difference between comfort and the truth I want?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.2275,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya speaks to Dasharatha after she lashed out at him over Ram's exile. She apologises, saying grief wore away her steadiness and her judgement. She tells him there is no enemy like grief. The verse proposes that sorrow makes us wound those we love, and that apologising quickly heals more than being right. It is a warning not to let sorrow make your decisions.",
+     "for_you": "The evenings are hard because the love you shared has nowhere to go right now. You did not lash out at anyone. But grief can still make your mind wound itself with doubt. The love was real. The bond was real. What you lost was real.",
+     "try_today": "When the doubt comes, name it as grief and not as a truth about your love.",
+     "scene_line": "You are Kausalya in her grief, speaking to the one she loves after the storm has passed.",
+     "asks": [
+      "How do I know the love is not gone?",
+      "What steadiness is left to me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "words": [
+      {
+       "sa": "वासांसि",
+       "en": "clothes"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "विहायनवानि",
+       "en": "leaving new"
+      },
+      {
+       "sa": "गृह्णाति",
+       "en": "takes"
+      },
+      {
+       "sa": "नरोऽपराणि",
+       "en": "a person other"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "शरीराणि",
+       "en": "bodies"
+      },
+      {
+       "sa": "विहाय",
+       "en": "leaving"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "अन्यानि",
+       "en": "other"
+      },
+      {
+       "sa": "संयाति",
+       "en": "enters"
+      },
+      {
+       "sa": "नवानि",
+       "en": "new"
+      },
+      {
+       "sa": "देही",
+       "en": "the embodied self"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.3798,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, where Arjuna is frozen in grief over the men he must fight. Krishna says that just as a person puts off worn-out clothes and takes on new ones, the true self leaves one body and enters another. The teaching is that the core of who you are cannot be cut, burned, wet, or dried. It does not change when the body does.",
+     "for_you": "The ache for your partner is real. The Gita does not ask you to pretend the loss is not there. It asks you to hold onto the truth that your love and your core self cannot be taken by death.",
+     "try_today": "When the evening comes, sit with the loss without naming it as an end.",
+     "scene_line": "You are sitting in the quiet of the evening, holding a loss that the self cannot wear out.",
+     "asks": [
+      "How do I hold the truth of what cannot be lost?",
+      "Can the love I had be real if the body is gone?",
+      "How do I sit with the evening without naming it as an end?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.3.20",
+     "ref": "Shvetashvatara Upanishad 3.20",
+     "ref_iast": "Śvetāśvatara Upaniṣad 3.20",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "The seer on where the Lord is found and how one comes to see him.",
+     "sanskrit": "अणोरणीयान् महतो महीयानात्मा गुहायां निहितोऽस्य जन्तोः । तमक्रतुः पश्यति वीतशोको धातुः प्रसादान्महिमानमीशम् ॥",
+     "line": "The Lord is hidden in your own heart. By his grace one sees him, and sorrow lifts.",
+     "translation": "Smaller than the small, greater than the great, the Self is hidden in the heart of every creature. One free of grasping sees him, the Lord in his greatness, by the grace of the Creator, and is free of sorrow.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "Grace here is not a reward for being good enough; the verse pairs it with letting go of grasping.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.8987,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "The seer is speaking to people who have asked what rules over their joys and sorrows. They have been searching for what governs the world. The seer tells them that the Self is hidden in the heart, smaller than the smallest and greater than the greatest. One who is free of grasping sees this Lord by the grace of the Creator, and that sight lifts sorrow.",
+     "for_you": "You have spent these years asking where she is now, and that question is honest. The verse says the answer is not in another place but hidden in the heart that still holds her. You do not need to let go of her to see where she lives now.",
+     "try_today": "Rest your hand on your chest and feel the steady beat of your own heart.",
+     "scene_line": "You are asking the world for her, and the world gives you nothing but silence.",
+     "asks": [
+      "How do I see what is hidden without grasping for it?",
+      "Can sorrow lift without the person I lost returning?",
+      "What does it mean to be free of grasping when I hold nothing else?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.34",
+     "ref": "Bhagavad Gita 4.34",
+     "ref_iast": "Bhagavad Gītā 4.34",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+     "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+     "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+     "words": [
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "प्रणिपातेन",
+       "en": "by prostration"
+      },
+      {
+       "sa": "परिप्रश्नेन",
+       "en": "by sincere questioning"
+      },
+      {
+       "sa": "सेवया",
+       "en": "by service"
+      },
+      {
+       "sa": "उपदेक्ष्यन्ति",
+       "en": "will teach"
+      },
+      {
+       "sa": "ते",
+       "en": "to you"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "knowledge"
+      },
+      {
+       "sa": "ज्ञानिनः",
+       "en": "the knowers"
+      },
+      {
+       "sa": "तत्त्वदर्शिनः",
+       "en": "who see reality"
+      }
+     ],
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 3.0451,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": "Krishna speaks to Arjuna after explaining that the self cannot be cut or burned by any weapon. He tells Arjuna that the truth about the self can only be known through a clear mind and a humble heart, by learning from those who have truly seen it. He says you could approach with respect, ask real questions, and serve. The knowledge itself is the teacher, and it carries a person across every difficulty.",
+     "for_you": "It offers a truth that can hold the loss without breaking. You keep the temple seva going. Let the self that cannot be cut be your footing for the evening. You are not losing them again.",
+     "try_today": "Notice the part of you that remains steady during the seva.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.2294,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer speaks to the reader about how to live. They say you could do your work and wish to live a full hundred years. The point is that if you do your work with the spirit of letting go, your actions will not cling to you. The idea is to hold what you have lightly, keep working, and see yourself in everyone.",
+     "for_you": "After forty-four years, the work of living is different. The seva keeps the hands busy, but the evenings ask for a different kind of holding. You do not need to lower the loss.",
+     "try_today": "Watch how the hands move through the evening ritual without holding the grief.",
+     "scene_line": "You stand at the threshold of the evening, doing the work of the day without clinging to the loss.",
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sampati",
+     "title": "Sampati, the bird who could not fly",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sampati",
+      "Angada",
+      "Hanuman",
+      "Nishakara"
+     ],
+     "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+     "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+     "lesson": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.62.13",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+      "family": "vr",
+      "speaker": "Sage Nishakara",
+      "listener": "Sampati (recounted)",
+      "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+      "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+      "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+      "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+      "words": [],
+      "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "retirement",
+        "label": "I've retired and feel lost"
+       },
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sampati",
+       "title": "Sampati, the bird who could not fly",
+       "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+       "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+       "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "An old bird with burnt wings had waited thousands of years for this moment",
+     "teaser": "An old bird with burnt wings had waited thousands of years for this moment",
+     "for_you": "The Gita does not ask you to lower the loss. It offers a truth that can hold the loss without breaking. For forty-four years, your partner was the one who knew the shape of your days. Now the evenings are empty. The text says the self is untouched by death.",
+     "asks": [
+      "How does the self being untouched change how I feel the loss?",
+      "If my partner is not in the body, where do I feel them now?",
+      "What is my part now that the daily routine is gone?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The loss and the question",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16008,
+   "total": 16010
+  },
+  "_ms": 16016
+ }
+}

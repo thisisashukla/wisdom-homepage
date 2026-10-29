@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.65,
+ "core_struggle": "His visa depends on a job rating; his wife gave up her career for this; his mind checks work am and has not rested in weeks.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "attachment_to_results",
+ "situations": [
+  {
+   "id": "outcome_anxiety",
+   "weight": 1.525,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 1.26,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "layoff",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "retirement",
+   "weight": 0.429,
+   "source": "note"
+  },
+  {
+   "id": "quit_or_stay",
+   "weight": 0.414,
+   "source": "note"
+  }
+ ],
+ "mirror": "You check the messages am, and the weekend you planned to rest is already a thought about work.",
+ "queries": {
+  "hook": "The terror of a rating that could end the visa, and the mind that will not stop running until it has checked every message.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+  "steady": "What is real in you cannot be lost, and what is not real is what you are losing sleep over; hold to what is real and let the rest go.",
+  "act": "Let go of the result you cannot control, and give your mind one hour of rest a day; when the 2am thought comes, let it pass and return to sleep.",
+  "story": "A man who stood on foreign soil with his family, facing a future he could not control, found that his own steadiness was what kept them safe."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The 2am check",
+  "What is real",
+  "The one thing you hold"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "terrified and overthinking",
+ "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+ "week_thesis": "Seven days from the 2am check to one hour of rest, and from terror to the one thing you can actually hold.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "partner",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the terror and the 2am check, named without judgement.",
+  "diagnose": "You see that the fear is real but the 2am run is not. The mind is taking the reins of your peace.",
+  "steady": "You hold that what is real in you cannot be lost.",
+  "act": "You try giving your mind one hour of rest a day, and letting the 2am thought pass.",
+  "story": "A man who could not control the future found that his own steadiness was what kept his family safe."
+ },
+ "insight": "The visa is real and the fear is real. But the 2am check is the mind taking the reins of your peace and running with them.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "checks work messages am",
+  "has not had a weekend free of work thoughts"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "bridge:copied_example",
+  "seat:invented_person",
+  "seat:missing"
+ ]
+}

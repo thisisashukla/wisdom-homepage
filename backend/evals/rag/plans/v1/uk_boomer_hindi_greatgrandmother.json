@@ -1,0 +1,628 @@
+{
+ "situation": {
+  "id": "uk_boomer_hindi_greatgrandmother",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 1
+  },
+  "note": "मेरे पोते-पोतियाँ अब हिंदी नहीं बोलते। मंदिर कोई नहीं आता। लगता है मेरे जाने के बाद सब खत्म हो जाएगा।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "UK (Southall)",
+  "lang": "hindi",
+  "slices": [
+   "ageing",
+   "hindi",
+   "lang:hindi",
+   "migration"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "Seven days from watching the house go quiet to finding the one thing that does not pass, so the house is never truly empty.",
+   "week_beats": {
+    "hook": "You recognise the loss of language and ritual as a real grief, and the search for what endures.",
+    "diagnose": "You see that the fear is not the silence itself, but the belief that you are the only one who holds what is leaving.",
+    "steady": "You hold that what is real in us cannot be lost.",
+    "act": "You try reading one verse a day and sitting with what it says about what does not pass.",
+    "story": "A seeker who held the fire of knowledge and found that what they carried was never theirs alone."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [],
+   "confidence": 0.5,
+   "core_struggle": "My kids have left home",
+   "mirror": "Your grandchildren speak a different tongue now, and the temple you kept has no one left to light the lamp.",
+   "insight": "The language and the ritual are leaving the house, and what you fear is not the silence but the belief that you are the only one who holds them.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.928,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.433,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Watching the language and the faith you kept leave the house, and searching for what will remain after you are gone.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What is real in us cannot be lost; the self that was never born and will never die is what remains when all else changes.",
+    "act": "Read and reflect on what does not pass; let the texts show you what is real, and rest in that knowing.",
+    "story": "A seeker who held the fire of knowledge and watched the world change around them, finding that what they carried was never theirs alone."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The house is quiet",
+    "What does not pass",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "no one comes to the temple",
+    "fears everything will end after they are gone",
+    "has a quiet house"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:11=0.6,612=0.6,13=0.3,11=0.6,1=0.3,2=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.54,max=0.60",
+    "dropped:fallback_line=3,missing=2,verdict=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "words": [
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अनुकम्पा-अर्थम्",
+       "en": "for compassion"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "अज्ञान-जम्",
+       "en": "born of ignorance"
+      },
+      {
+       "sa": "तमः",
+       "en": "darkness"
+      },
+      {
+       "sa": "नाशयामि",
+       "en": "I destroy"
+      },
+      {
+       "sa": "आत्म-भाव-स्थः",
+       "en": "abiding in their own being"
+      },
+      {
+       "sa": "ज्ञान-दीपेन",
+       "en": "with the lamp of knowledge"
+      },
+      {
+       "sa": "भास्वता",
+       "en": "shining"
+      }
+     ],
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.0786,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": null,
+     "for_you": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9783,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "Prajapati is teaching about the self that lives in the heart. It is the one we visit every night in deep sleep without knowing it. He says it is like people walking every day over a buried treasure of gold. They pass right over it and never find it, because they do not know the spot. The teaching says that all living beings walk into that hidden world of Brahman every day, yet they do not find it. They are carried away by untruth.",
+     "for_you": "The quiet house is the buried gold, and you are the one who walks over it every day without seeing it. The fear that everything will end is the untruth that carries you away. You think you could hold the temple and the rituals alone.",
+     "try_today": "Stand in the quiet room and ask what is walking over the gold today.",
+     "scene_line": "You are the one walking over the hidden gold in your own house.",
+     "asks": [
+      "How do I know I am walking over the gold?",
+      "What is the untruth carrying me away right now?",
+      "Where is the self that visits me in sleep?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.12",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 12",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Mockery of Giving Up Pleasures'.",
+     "sanskrit": "अवश्यं यातारश्चिरतरमुषित्वापि विषया वियोगे को भेदस्त्यजति न जनो यत्स्वयममून् । व्रजन्तः स्वातन्त्र्यादतुलपरितापाय मनसः स्वयं त्यक्ता ह्येते शमसुखमनन्तं विदधति ॥",
+     "line": "Every pleasure leaves someday. Released freely, it brings peace; torn away, it brings torment.",
+     "translation": "Pleasures will certainly leave, however long they stay with us. Then what difference is there in parting? Only that people do not let them go themselves. Leaving of their own accord, they bring the mind unequalled torment; given up by oneself, they bring endless peace.",
+     "words": [],
+     "why": "Let go before you are forced to, and stop calling relief happiness.",
+     "misuse": "About things and pleasures; not advice to leave people before they leave you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.vishaya",
+      "title": "Vairagyashatakam: The mockery of giving up pleasures",
+      "summary": "Pleasures will leave us anyway; letting them go freely brings peace, being dragged from them brings torment. We are worse than the moth, because we know the flame burns.",
+      "story_hook": "",
+      "lesson": "Let go before you are forced to, and stop calling relief happiness."
+     },
+     "score": 2.8378,
+     "beat": "steady",
+     "role_fit": 0.405,
+     "meaning": "Bhartrihari speaks to the reader from his life as a king who gave up the throne. He says that pleasures will certainly leave, no matter how long they stay. The difference between parting with them willingly and having them torn away is the mind's own torment. If you release them freely, you find peace. If they are taken from you, you suffer. The verse asks you to let go before you are forced to, and to stop calling the relief of release a happiness you could earn.",
+     "for_you": "You feel the weight of the quiet house and the fear of what comes next. You have lived a life of holding things, and now the holding is done. You do not need to force the silence away.",
+     "try_today": "Notice one pleasure you are still holding and let it go freely.",
+     "scene_line": "You stand in your quiet house and choose to let the silence go.",
+     "asks": [
+      "How do I let go of the house without letting go of my life?",
+      "Can I release the quiet without losing myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.6.11",
+     "ref": "Shvetashvatara Upanishad 6.11",
+     "ref_iast": "Śvetāśvatara Upaniṣad 6.11",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "One of the best-known verses of the Upanishad, on the God within all.",
+     "sanskrit": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा। कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+     "line": "One God is hidden in every being: the inner self of all, the quiet witness of all we do.",
+     "translation": "One God is hidden in all beings: all-pervading, the inner self of every being, overseer of all action, dwelling in all beings, the witness, pure awareness, alone, beyond all qualities.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.5233,
+     "beat": "steady",
+     "role_fit": 0.684,
+     "meaning": "A seer is speaking to seekers who want to know what governs the world. They have asked what causes their joys and sorrows. The seer answers that one God is hidden in every being. This is the inner self of all. It watches everything we do. It lives in all of us. It is pure awareness, alone, and beyond all qualities.",
+     "for_you": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+     "try_today": "Notice the one thing that does not pass.",
+     "scene_line": "You are the quiet witness of your own quiet house.",
+     "asks": [
+      "How do I hold on to what does not pass?",
+      "Where is this quiet witness in my daily life?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.7068,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer speaks to the reader, right after telling them to enjoy what is offered. The verse asks you to live a full hundred years and do your work. The point is that you could do this while knowing that nothing truly belongs to you alone. The idea is to hold your actions and your time lightly, to keep working without clinging, and to see the same self in everyone you meet.",
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+     "try_today": "Do one small task today and let it go when it is done.",
+     "scene_line": "You are in your quiet house, holding the day lightly.",
+     "asks": [
+      "How do I let go of a life that is ending?",
+      "Can I see myself in the silence?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.12.26",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.26",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha, after Janaka's story, praises clear understanding (prajna).",
+     "sanskrit": "य एव यत्नः क्रियते बाह्यार्थोपार्जने जनैः । स एव यत्नः कर्तव्यः पूर्वं प्रज्ञाविवर्धने ॥",
+     "line": "Put the effort you spend earning money into growing wiser first.",
+     "translation": "The very effort people put into earning outer wealth should first be put into growing wisdom.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 2.2199,
+     "beat": "act",
+     "role_fit": 0.865,
+     "meaning": "Vasishtha is speaking to Rama. Rama has just heard the story of King Janaka, who stood on his palace roof questioning everything he had lived for, only to step down and do his duties with a mind that no longer clutches. Vasishtha now tells Rama to put the effort they spend earning money into growing wiser first. The idea is that you do not have to leave your life to change it. You can do the day's work with a mind that does not clutch at the results.",
+     "for_you": "The quiet house is asking you to put your effort into what does not pass. The temple is empty because the ritual has left your hands. You do not have to run away to find what you are looking for.",
+     "try_today": "Sit with your hands empty and notice what does not pass today.",
+     "scene_line": "You stand in your quiet house with a mind that no longer clutches.",
+     "asks": [
+      "How do I put effort into growing wiser first?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "words": [],
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "You spent a lifetime gathering things to keep the house from going quiet. Now the rooms are still and the gathering is done. Bhasa and Vilasa found that all their effort did not bring peace. You are not failing because the house is empty.",
+     "asks": [
+      "How do I let the house be empty?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The house is quiet",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16777,
+   "total": 16779
+  },
+  "_ms": 16781
+ }
+}

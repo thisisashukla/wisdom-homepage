@@ -1,0 +1,631 @@
+{
+ "situation": {
+  "id": "in_genx_toxic_boss_hinglish",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3
+  },
+  "note": "naya boss mujhse 15 saal chhota hai, sabke saamne insult karta hai. resign kar nahi sakta, bete ka admission hai. har meeting ke baad haath kaanpte hai",
+  "note_source": "voice",
+  "expect_stance": "wronged",
+  "expect_risk": null,
+  "market": "India (Noida)",
+  "lang": "hinglish",
+  "slices": [
+   "hinglish",
+   "lang:hinglish",
+   "work",
+   "wronged"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "humiliated and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being publicly diminished to standing in the truth of what you are, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise the public insult and the trapped feeling, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A father who leads a team is being publicly insulted by a younger boss and cannot leave because his son's college admission is pending.",
+   "mirror": "You lead a team, and after every meeting your hands shake.",
+   "insight": "You cannot resign while your son's admission is pending, so the humiliation stays. That is what makes the hands shake.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.383,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.376,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.36,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being publicly diminished by a younger boss and trapped by a son's pending admission, the anger and shame of it settling in your body after every meeting.",
+    "diagnose": "When others see only a role they can insult, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man of standing and learning, publicly dismissed by his own people, who questioned them openly and stood in his truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "new boss is years younger",
+    "hands tremble after every meeting"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:29=1.0,15=1.0,10=1.0,17=1.0,7=1.0,49=0.3",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.57,max=0.63",
+    "retried:3",
+    "dropped:accept=1,fallback_lesson=1,fallback_line=1,missing=3,scene_line_invented=1,slang=1",
+    "for_you:7/7",
+    "meaning:3/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.0484,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna, the greatest archer, is on a battlefield. He looks at the enemy lines and sees his own teachers, his cousins, his grand-uncles. He is not facing a stranger. In that instant, his body gives out. His limbs shake, his mouth goes dry, his hair stands on end. He drops his bow and sits down. The Gita does not begin with a hero. It begins with a man who is overwhelmed by what he sees and cannot move.",
+     "for_you": "Your hands tremble after every meeting because you are standing in a place where your own dignity is being questioned, and you cannot walk away. The Gita shows us that this is not weakness. It is the body telling the truth. The trembling is not a failure.",
+     "try_today": "Notice the exact moment your hands begin to tremble after a meeting.",
+     "scene_line": "You are in your own chariot, watching your own kin stand against you.",
+     "asks": [
+      "How can I tell my own body's truth from a sign of failure?",
+      "How do I stand firm when I am forced to stay?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 3.221,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": null,
+     "for_you": "When your boss speaks in that meeting, they are raising their hood, not exposing your work. The trembling in your hands is not the truth of your worth. Let the sound pass, like a crow in the morning. You are not the one on display.",
+     "try_today": "Notice the moment the insult lands, and name it to yourself as their fault, not yours.",
+     "scene_line": "You are in the assembly, and the hood is raised on the wrong neck.",
+     "asks": [
+      "How do I stop my body from believing the lie?",
+      "Can I stand in that room without shrinking?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.10",
+     "ref": "Bhagavad Gita 5.10",
+     "ref_iast": "Bhagavad Gītā 5.10",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥",
+     "line": "Like a lotus leaf in water, do your work without letting the mess soak in.",
+     "translation": "One who acts offering all actions to the Supreme, giving up attachment, is not touched by wrong, as a lotus leaf is not wet by water.",
+     "words": [
+      {
+       "sa": "ब्रह्मण्य",
+       "en": "to the supreme reality"
+      },
+      {
+       "sa": "अधाय",
+       "en": "placing"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "सङ्गं",
+       "en": "attachment"
+      },
+      {
+       "sa": "त्यक्त्वा",
+       "en": "having abandoned"
+      },
+      {
+       "sa": "करोति",
+       "en": "does"
+      },
+      {
+       "sa": "यः",
+       "en": "who"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "is stained"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "स",
+       "en": "he"
+      },
+      {
+       "sa": "पापेन",
+       "en": "by wrongdoing"
+      },
+      {
+       "sa": "पद्मपत्रमिव",
+       "en": "like a lotus leaf"
+      },
+      {
+       "sa": "आम्भसा",
+       "en": "by water"
+      }
+     ],
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "Staying unstained isn't staying silent about wrongdoing at work; you can act and still keep your peace.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 3.2837,
+     "beat": "steady",
+     "role_fit": 0.385,
+     "meaning": null,
+     "for_you": "You are in the office, and the water of this humiliation is all around you. The shaking and the dry mouth are the body trying to keep its head above water. You do not have to let this stain your sense of who you are.",
+     "try_today": "Notice the water on your lotus leaf after the next meeting.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2527,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying out the rules for a person who has stepped away from the world. The teacher says let them not wear out the body too much for the sake of pleasure or pain. Praised, let them not gloat. Blamed, let them not curse others.",
+     "for_you": "The shaking in your hands is your body wearing itself out. The boss's blame is not a reason to curse them back. Your part is to let the blame land without letting it ruin your body.",
+     "try_today": "Notice your hands after a meeting and let them rest without judgment.",
+     "scene_line": "You are the renunciant, waiting out the public blame.",
+     "asks": [
+      "How do I stop my body from wearing out?",
+      "How do I rest my body when the work is not done?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.5211,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "words": [],
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.5032,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram has just watched Hanuman, a stranger who arrived with a message, speak to him. Ram notices how Hanuman spoke. His words were not long-winded, not ambiguous, not rushed, not strained. They came from the chest and throat in an even, middle tone. Ram sees that the way to be heard and trusted is not to shout or plead, but to speak with calm clarity, letting the facts stand on their own without fear rushing ahead of them.",
+     "for_you": "In the meeting room, your hands shake because fear is running ahead of what is actually true. You do not need to shout or shrink. You could speak in an even, middle tone, letting your facts stand on their own.",
+     "try_today": "Speak one sentence in a calm, even tone, without rushing or raising your voice.",
+     "scene_line": null,
+     "asks": [
+      "How do I find my middle tone when my hands shake?",
+      "What is the fact I need to stand on today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.nriga",
+     "title": "King Nriga and the petitioners who waited",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman",
+      "Nriga"
+     ],
+     "story_hook": "Two men waited at a king's gate for days, and no one let them in.",
+     "summary": "After four days of neglecting his work, Ram calls in everyone waiting, and tells of King Nriga: two men brought him a dispute, waited for days at his gate and were never admitted, and their anger cost him dearly.",
+     "lesson": "Delay is a decision too; people waiting on you are paying for it.",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.7.53.4",
+      "ref": "Valmiki Ramayana · Uttara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Uttara Kāṇḍa 53.4",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Lakshman",
+      "setting": "Grieving, Ram has not held court for four days; he calls in everyone who has been waiting.",
+      "sanskrit": "चत्वारो दिवसाः सौम्य कार्यं पौरजनस्य च । अकुर्वाणस्य सौमित्रे तन्मे मर्माणि कृन्तति॥",
+      "line": "Four days of putting off what people needed from me, and it cuts me to the core.",
+      "translation": "Four days now I have not attended to the people's business, gentle Lakshman, and it cuts me to the core.",
+      "words": [],
+      "why": "Delay is a decision too; people waiting on you are paying for it.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "toxic_boss",
+        "label": "My boss makes my work life miserable"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.nriga",
+       "title": "King Nriga and the petitioners who waited",
+       "summary": "After four days of neglecting his work, Ram calls in everyone waiting, and tells of King Nriga: two men brought him a dispute, waited for days at his gate and were never admitted, and their anger cost him dearly.",
+       "story_hook": "Two men waited at a king's gate for days, and no one let them in.",
+       "lesson": "Delay is a decision too; people waiting on you are paying for it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two men waited days at a king's gate, and no one let them in",
+     "teaser": "Two men waited days at a king's gate, and no one let them in",
+     "for_you": "Delay is a decision too; people waiting on you are paying for it.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15682,
+   "total": 15683
+  },
+  "_ms": 15687
+ }
+}

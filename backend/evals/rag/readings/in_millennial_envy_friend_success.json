@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "Jealousy at a close friend's success is followed by shame, and the person is stuck replaying the moment alone in the bathroom.",
+ "mechanism": "comparison_envy",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "envy",
+   "weight": 1.23,
+   "source": "note"
+  },
+  {
+   "id": "comparison",
+   "weight": 1.12,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.78,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.367,
+   "source": "note"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.367,
+   "source": "note"
+  }
+ ],
+ "mirror": "You said congratulations, and then you were alone in the bathroom hating what you felt.",
+ "queries": {
+  "hook": "The hollow feeling of being happy for someone you love, and the shame that follows, replayed alone after the congratulations.",
+  "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+  "steady": "Praise and blame, success and failure, come and go; what is yours is the effort, not the place on the list.",
+  "act": "Practise seeing your own path without the ruler of their path; speak the truth to yourself gently, and let the feeling be what it is.",
+  "story": "A friend who watched someone she loved win and found, in that watching, the one thing she had to build for herself."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Measuring against another",
+  "The ruler of another's path",
+  "Your own place on the list"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and hollow",
+ "bridge": "The envy you feel at her win is what the Gita calls measuring your life against another's. The shame is what happens when you turn that measure against yourself.",
+ "week_thesis": "Seven days from hating what you feel to understanding what it is, and the footing to hold it without shame.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the envy and the shame, named without judgement.",
+  "diagnose": "You see that it is the measuring, not the person, that is stealing your contentment.",
+  "steady": "You hold that what is yours is the effort, not the place on the list.",
+  "act": "You try one practice of seeing your own path without their ruler, and one truth you speak to yourself.",
+  "story": "A friend who watched someone she loved win and found, in that watching, the one thing she had to build for herself."
+ },
+ "insight": "Your life looks small only next to the lives you keep measuring it against.",
+ "seat": "",
+ "life_context": "A working adult in their late twenties or early thirties; after congratulating their closest friend on a acceptance, they went to the bathroom and cried, hating what they felt.",
+ "details": [
+  "closest friend got into",
+  "said congratulations and then cried in the bathroom",
+  "cried alone after the public moment"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "insight:template",
+  "seat:missing"
+ ]
+}

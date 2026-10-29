@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://wisdomquotes.in/app',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630, alt: 'Wisdom app for iPhone' }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630, alt: 'Wisdom app for iPhone' }],
   },
   alternates: { canonical: 'https://wisdomquotes.in/app' },
 }

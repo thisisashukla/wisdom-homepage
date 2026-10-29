@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-saar",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Bhagwat Geeta Saar — The Essence of the Bhagavad Gita in 18 Verses | Wisdom",
     description: "The viral 'Geeta Saar' quote comes from later devotional writing. Below, Krishna's own teaching: one core verse per chapter.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-saar",

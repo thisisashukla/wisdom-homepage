@@ -1,0 +1,645 @@
+{
+ "situation": {
+  "id": "in_millennial_hinglish_job_loss",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "phone_hours": 5
+  },
+  "note": "layoff ho gaya 2 mahine pehle, ghar pe abhi tak nahi bataya. roz office jaane ka natak karta hu, cafe me baith ke apply karta rehta hu. EMI chal rahi hai",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Bengaluru)",
+  "lang": "hinglish",
+  "slices": [
+   "career",
+   "hinglish",
+   "lang:hinglish",
+   "money"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and carrying it alone",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from carrying the layoff alone to speaking one truth and taking one step toward support.",
+   "week_beats": {
+    "hook": "You recognise the secret and the shame, named without judgement.",
+    "act": "You try speaking one truth you have been hiding, and asking for one thing you need today.",
+    "story": "A man who lost his job and hid it from his family shows you what facing them and beginning again looks like."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "I lost my job",
+   "mirror": "You leave the house for work each day, and the work is a cafe and a laptop.",
+   "insight": "You are applying from a cafe, and the EMI is still running. The guilt you carry is heavier than the job loss.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.245,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.419,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.382,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of a secret layoff, the daily performance of going to work, and the weight of an EMI that keeps running.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and it keeps us from asking for help.",
+    "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost, and the truth you hide is heavier than the job you lost.",
+    "act": "Lift yourself up instead of pushing yourself down; speak one truth you have been hiding, and ask for what you need today.",
+    "story": "A man who lost his position, hid the truth from his family, and found the courage to face them and begin again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the secret",
+    "The verdict you keep passing",
+    "More than the job you lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "laid off two months ago",
+    "pretends to go to office daily",
+    "applies for jobs from a cafe"
+   ],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "week_fit:47=0.3,46=0.6,165=0.6,22=0.6,1=0.6,7=0.0",
+    "week_same:165",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.70",
+    "dropped:fallback_line=2,missing=2,repeat=1,scene_line_invented=1,soft_kept=1,verdict=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "without virtue"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "performed"
+      },
+      {
+       "sa": "स्वभावनियतं",
+       "en": "fixed by nature"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "किल्बिषम्",
+       "en": "fault"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 1.4978,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Arjuna is standing on the battlefield, unsure of his place in the world. Krishna tells him that it is better to do your own work, even if it is not perfect, than to do someone else's work perfectly. When you do the work that fits your own nature, you do no wrong. It is about finding a path that is honest for you and doing it as an offering, rather than copying another.",
+     "for_you": "You are sitting in that cafe, applying for work that does not quite fit, and pretending the office still holds you. The shame you feel is not about the layoff, it is about the fear that you are not good enough for the next step.",
+     "try_today": "Notice the shame without letting it steer your next click.",
+     "scene_line": "You are on the battlefield of your own doubt, unsure of your place.",
+     "asks": [
+      "What is my own path when I do not know what comes next?",
+      "How do I do my work imperfectly without feeling like a failure?",
+      "What does it mean to do my work as an offering right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.9.46",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "himself",
+     "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+     "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+     "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+     "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.4131,
+     "beat": "diagnose",
+     "role_fit": 0.766,
+     "meaning": null,
+     "for_you": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.66",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 66",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on the good.",
+     "sanskrit": "सम्पत्सु महतां चित्तं भवत्युत्पलकोमलम् । आपत्सु च महाशैलशिलासङ्घातकर्कशम् ॥",
+     "line": "In good times be soft as a lotus. In hard times be firm as mountain rock.",
+     "translation": "In prosperity the heart of the great becomes soft as a lotus; in adversity, hard as a mass of mountain rock.",
+     "words": [],
+     "why": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.sujana",
+      "title": "Nitishatakam: On the good",
+      "summary": "Portraits of good people: steady in trouble, humble in success, giving in secret and speaking of others' kindness aloud. Company, the verses say, makes us what we are.",
+      "story_hook": "",
+      "lesson": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet."
+     },
+     "score": 3.6012,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Bhartrihari is speaking to the reader about the nature of a steady character. He says that in good times, the heart of a good person becomes soft as a lotus. In hard times, it becomes firm as a mass of mountain rock. The point is that you could be soft when things are prosperous and firm when they are difficult, and your good deeds should remain quiet, without needing to be announced.",
+     "for_you": "You are pretending to go to the office every day. That is a kind of firmness, but it is only for the outside. The mountain rock is meant for inside. Your good deeds are applying for jobs from the cafe. Let them stay quiet.",
+     "try_today": "Notice one thing today that is firm in you without you announcing it.",
+     "scene_line": "You are a mountain rock in the cafe, pretending the office is open.",
+     "asks": [
+      "How do I stop announcing my struggle to myself?",
+      "Can I be soft without anyone knowing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.14.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 14.11",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the second gatekeeper: inquiry (vichara).",
+     "sanskrit": "या विवेकविकासिन्यो मतयो महतामिह । न ता विपदि मज्जन्ति तुम्बकानीव वारिणि ॥",
+     "line": "A mind opened by clear thinking doesn't sink in hard times. It floats, like a gourd on water.",
+     "translation": "Minds that have been opened by discernment do not sink in misfortune, just as gourds do not sink in water.",
+     "words": [],
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 3.1724,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Vasishtha is speaking to Rama after he has left the palace and is sitting with the sage in the forest. Vasishtha tells him that four qualities guard the door to freedom: calm, inquiry, contentment, and good company. He explains that you only need to start with one of them. If you choose clear thinking, the mind learns to float through hard times, just like a gourd stays on top of the water instead of sinking.",
+     "for_you": "You are sitting in a cafe with your phone, trying to look like you are working, while the shame of the layoff sits in your chest. This verse does not ask you to fix your resume right now. It asks you to pick one clear thought and hold it.",
+     "try_today": "Notice one clear thought and hold it while you apply for jobs.",
+     "scene_line": "You are in your own cafe, with a mind that must learn to float.",
+     "asks": [
+      "How do I start with just one clear thought?",
+      "Can I really float when the EMI is due?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.3431,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat in the Ayodhya Kand. Bharat is broken by his father's death and Ram's exile. The ministers and Kausalya tell Bharat to take the throne. Bharat agrees but his heart will not rest. Vasishtha tells him to keep courage and do what the moment asks. Bharat rises and prepares to go to the forest. He decides to admit his fault to Ram and trust his brother to forgive him.",
+     "for_you": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+     "try_today": "Speak one truth you have been hiding and ask for one thing you need.",
+     "scene_line": null,
+     "asks": [
+      "How do I speak one truth without feeling more shame?",
+      "Who is the one person I can trust with this?",
+      "What is one thing I can ask for right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "words": [],
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 2.8518,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In Mithila, a meat-seller named Dharmavyadha speaks to a proud ascetic named Kaushika. Kaushika has come to learn what goodness is from a man who sells meat. The butcher tells him that if a person has done wrong, they can free themselves from it simply by turning to good deeds. The moon does not fight the cloud. It waits, and then it appears again.",
+     "for_you": "The guilt you feel is not the job loss. It is the story you are telling alone at the cafe. You do not need to fix the past. You only need to choose one small good thing today. Let someone in.",
+     "try_today": "Tell one person the truth about the layoff, even if it is just to say you are looking.",
+     "scene_line": "You sit in the cafe, and the moon is still there behind the cloud of your silence.",
+     "asks": [
+      "What wrong am I really turning from?",
+      "Who can I ask for one small thing today?",
+      "How do I let the cloud part a little?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "words": [],
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "Ram had just lost his kingdom, and his mind showed no change. You are sitting in a cafe pretending the routine is still yours, but the loss is real. The shame you carry is not the job loss. It is the silence around it.",
+     "asks": [
+      "What would change if I told my family today?",
+      "How do I tell the truth without feeling smaller?",
+      "Who is the one person I can trust right now?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the secret",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15569,
+   "total": 15572
+  },
+  "_ms": 15574
+ }
+}

@@ -1,0 +1,740 @@
+{
+ "situation": {
+  "id": "in_millennial_daughter_mother_cancer",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4
+  },
+  "note": "Maa's chemo started this week. I am the only one handling hospital, office and home. I keep googling survival rates at 3am.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Kolkata)",
+  "lang": "english",
+  "slices": [
+   "fear",
+   "illness",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and alone",
+   "bridge": "The 3am search for survival rates is what the texts call fear: worry that multiplies what has not happened, and what is real in you cannot be lost.",
+   "week_thesis": "From the 3am search for a number you cannot hold, to the truth that what is real in you cannot be lost.",
+   "week_beats": {
+    "hook": "You recognise the terror of being the only one holding everything together.",
+    "diagnose": "You see that the search for a number am is fear multiplying what has not happened.",
+    "steady": "You hold that what is real in you cannot be lost, and your love is not a number.",
+    "act": "You try doing only what you can do today, and letting the rest go, and speaking your fear to one person.",
+    "story": "A son or daughter who held everything together for a parent in illness shows you what love can carry."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "Her mother's chemo started this week, and she is the only one handling hospital, office and home, which leaves her alone with her fear am.",
+   "mirror": "You carry the hospital, the office and the home, and am the search for a number you cannot control.",
+   "insight": "The search for survival rates am is not about the data. It is about the terror that if you stop holding everything, your mother will be alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 2.025,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.559,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.518,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Holding everything together for the one you love, and the terror that comes alone am when the search for a number is the only thing left. Someone I love is seriously ill.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost; your love is not a number you can, and it is what will carry you through.",
+    "act": "Do what you can do today for her, and let the rest go; speak your fear to one person you trust, and let the night have its own hour.",
+    "story": "A son or daughter who stood where you stand, holding the world together for a parent in illness, and found that what they carried was not the burden alone but the love that made it bearable."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The terror of 3am",
+    "What is real cannot be lost",
+    "The love that carries you"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "mother started chemo this week",
+    "only one handling hospital, office and home",
+    "keeps googling survival rates am"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_sim:mean=0.58,max=0.64",
+    "retried:6",
+    "dropped:fallback_line=1,invented_name=1,missing=3",
+    "for_you:6/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.12.7",
+     "ref": "Bhagavad Gita 12.7",
+     "ref_iast": "Bhagavad Gītā 12.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which way of devotion is best; Krishna promises what he does for those who turn to him.",
+     "sanskrit": "तेषामहं समुद्धर्ता मृत्युसंसारसागरात् । भवामि नचिरात्पार्थ मय्यावेशितचेतसाम् ॥",
+     "line": "Whoever rests their heart in me, I lift out of the drowning sea, and soon.",
+     "translation": "For those whose minds are absorbed in me, O Partha, I very soon become the one who lifts them out of the ocean of death and endless change.",
+     "words": [
+      {
+       "sa": "तेषाम्",
+       "en": "of those"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "समुद्धर्ता",
+       "en": "the rescuer"
+      },
+      {
+       "sa": "मृत्यु-संसार-सागरात्",
+       "en": "from the ocean of mortal existence"
+      },
+      {
+       "sa": "भवामि",
+       "en": "become"
+      },
+      {
+       "sa": "नचिरात्",
+       "en": "not after long"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O Partha"
+      },
+      {
+       "sa": "मयि",
+       "en": "in me"
+      },
+      {
+       "sa": "आवेशित-चेतसाम्",
+       "en": "of those whose minds are fixed"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": null,
+     "score": 2.3159,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": null,
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "words": [
+      {
+       "sa": "दीनताजं",
+       "en": "from humility"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "माने",
+       "en": "in honor"
+      },
+      {
+       "sa": "गुणे",
+       "en": "in virtue"
+      },
+      {
+       "sa": "खलभयं",
+       "en": "fear of wickedness"
+      },
+      {
+       "sa": "खलु",
+       "en": "indeed"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "निन्दकजं",
+       "en": "born of criticism"
+      },
+      {
+       "sa": "शक्तौ",
+       "en": "in strength"
+      },
+      {
+       "sa": "विद्यायां",
+       "en": "in knowledge"
+      },
+      {
+       "sa": "वादिनं",
+       "en": "of the debater"
+      },
+      {
+       "sa": "भयम्",
+       "en": "fear"
+      }
+     ],
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 3.4635,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "The frightened gods ask Vishnu how to become fearless, and he tells them that fear is the price of every gain. The body fears decay, wealth fears thieves, and power fears critics. Every possession carries its own worry. The only way out is to hold things lightly, to let go of the grip that tightens around the heart.",
+     "for_you": "The survival rates you are searching for are not a shield. They are another possession that carries its own fear, the fear of what the number might say. What you are holding is not your mother. It is the terror of letting go.",
+     "try_today": "Notice one thing you are holding too tightly today.",
+     "scene_line": "You are the frightened god, and the survival rate is the treasure that carries its own thief.",
+     "asks": [
+      "What am I holding that I can loosen today?",
+      "How do I hold my mother without holding her fear?",
+      "What if the number does not change what I already know?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.4836,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ribhu speaks to Nidagha about the nature of a steady heart. He says that people of calm and good character do not wilt in hard times. They are like a golden lotus that stays open at night. It does not close when the world gets dark. They want nothing beyond what is at hand, and they find joy in doing what is right. The point is simple. Start with a calm heart, and the rest of your life will follow.",
+     "for_you": "The hospital, the office and the house are asking everything of you. Your mind is trying to solve the unsolvable by searching for a number that does not exist. This verse says the lotus stays open.",
+     "try_today": "Notice one thing you can hold onto, right now.",
+     "scene_line": "You are the lotus open in the dark night of the hospital ward.",
+     "asks": [
+      "What is at hand that I can delight in today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "words": [
+      {
+       "sa": "देहः",
+       "en": "body"
+      },
+      {
+       "sa": "तिष्ठतु",
+       "en": "may remain"
+      },
+      {
+       "sa": "कल्पान्तं",
+       "en": "until the end of the kalpa"
+      },
+      {
+       "sa": "गच्छतु",
+       "en": "may go"
+      },
+      {
+       "sa": "अद्यैव",
+       "en": "even today"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "पुनः",
+       "en": "again"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "हानिः",
+       "en": "loss"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "चिन्मात्ररूपिणः",
+       "en": "of the form of pure consciousness"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.2887,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra speaks to Janaka in the royal court. He says that whether the body lasts for a hundred years or ends today, what you are, pure awareness, neither gains nor loses. The point is that you are the ocean, not the waves. Let the waves of life, of thought and feeling, rise and fall without losing yourself. The body is one wave, the mind is another, but you are the vast water in which they move.",
+     "for_you": "Your mother's treatment is a wave, and your fear is another. You are not the wave, and you are not the fear. You are the water that holds them both, and that water cannot be lost.",
+     "try_today": "When you search for survival rates, notice the body that is afraid.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "words": [],
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 3.4743,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman has found Sita, but she is terrified. He knows that speaking to her must be done in ordinary human words that carry meaning. He does not use grand court language or gamble on a fight. He thinks carefully about how she will hear him. He starts by gently praising Ram so she can trust him. He sings Ram's story softly from the tree. She hears hope for the first time, and joy comes to the one who stays alive.",
+     "for_you": "The 3am search for a number is your ordinary language right now. You are trying to find a way to hold the future. Let that search be your ordinary human words. Speak your fear to one person today. The one who stays alive is the one who speaks.",
+     "try_today": "Tell one person exactly what you are afraid of losing.",
+     "scene_line": "You are on the tree, singing your own story softly so they can hear hope.",
+     "asks": [
+      "How do I find the words to speak my fear without breaking down?",
+      "Who is the one person I can speak to without being judged?",
+      "What does it mean to stay alive when I am doing so much?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.5774,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "The terror of the survival rates is not a search for data. It is the fear that if you stop holding everything together, your mother will be alone. That is the weight you carry.",
+     "try_today": "Tell your fear to one person, even if it is just the words themselves.",
+     "scene_line": "You stand in the hospital corridor, holding a crown you never asked for.",
+     "asks": [
+      "What does this moment ask of me today?",
+      "How do I speak my fear without collapsing?",
+      "Who is the one person I can tell?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "words": [],
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "anxiety_general",
+        "label": "I feel anxious most of the time"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The terror of 3am",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14174,
+   "total": 14175
+  },
+  "_ms": 14177
+ }
+}

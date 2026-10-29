@@ -1,0 +1,653 @@
+{
+ "situation": {
+  "id": "in_millennial_hindi_imposter",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3
+  },
+  "note": "हिंदी मीडियम से हूँ, अब बड़ी कंपनी में हूँ। मीटिंग में बोलने से डर लगता है कि अंग्रेज़ी गलत हो जाएगी, सब हँसेंगे।",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Indore)",
+  "lang": "hindi",
+  "slices": [
+   "fear",
+   "hindi",
+   "lang:hindi",
+   "work"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "fear of being laughed at",
+   "bridge": "The fear that your english will be wrong and they will laugh is what the Gita calls fear of loss: imagining a future where they see you as small.",
+   "week_thesis": "Seven days from fearing the room to speaking in it, with the truth that your worth is not in your english.",
+   "week_beats": {
+    "hook": "You recognise the fear of being laughed at in the meeting room, named without judgement.",
+    "diagnose": "You see that the fear is of being seen as less, and that it multiplies what has not happened.",
+    "steady": "You hold that what is real in you cannot be lost by their laughter.",
+    "act": "You try speaking the true thing you know, even if the words are not perfect.",
+    "story": "A man of learning who feared his words were not enough shows you what it looks like to speak anyway."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "An educated professional from a hindi medium background fears being laughed at for their english in meetings and keeps replaying the fear.",
+   "mirror": "You have the work, and in the meeting you are replaying the words that might come out wrong.",
+   "insight": "You know the work. The meeting room is where you replay the words that might come out wrong, and who might laugh.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.539,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.405,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The fear of being laughed at for your english in the meeting, and the replaying of every word that might come out wrong. I feel like an imposter.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be taken by their laughter; your worth is not decided by how you speak in a room.",
+    "act": "Speak the true thing you know, even if the words are not perfect; let the work speak, and let the room hear it.",
+    "story": "A man of learning who feared his words were not enough, who spoke anyway, and found that the room heard him."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The room and the fear",
+    "What is real in you",
+    "The work that speaks"
+   ],
+   "seat": "an educated professional who fears being judged for their english in meetings",
+   "life_context": "A working professional in their late twenties or early thirties, now in a large company; the fear of being laughed at for their english in meetings keeps replaying, especially after the meeting ends.",
+   "details": [
+    "studied in hindi medium",
+    "now works in a large company",
+    "fears speaking in meetings because of english",
+    "worries others will laugh at mistakes"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:24=0.6,98=0.3,33=0.6,9=0.3,7=0.3,47=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.66",
+    "retried:1",
+    "dropped:repeat=3,soft_kept=3,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.24",
+     "ref": "Bhagavad Gita 11.24",
+     "ref_iast": "Bhagavad Gītā 11.24",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shown Krishna's cosmic form, is overwhelmed by its scale.",
+     "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम् । दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो ॥",
+     "line": "Seeing something too big to take in, my heart trembles and I can't find steadiness or calm.",
+     "translation": "Seeing you touching the sky, blazing with many colours, mouths wide open, with huge fiery eyes, my inner self trembles, Vishnu, and I find neither courage nor peace.",
+     "words": [
+      {
+       "sa": "नभःस्पृशम्",
+       "en": "touching the sky"
+      },
+      {
+       "sa": "दीप्तम्",
+       "en": "blazing"
+      },
+      {
+       "sa": "अनेकवर्णम्",
+       "en": "of many colors"
+      },
+      {
+       "sa": "व्यात्ताननम्",
+       "en": "with spread-open mouths"
+      },
+      {
+       "sa": "दीप्तविशालनेत्रम्",
+       "en": "with blazing vast eyes"
+      },
+      {
+       "sa": "दृष्ट्वा",
+       "en": "having seen"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "you"
+      },
+      {
+       "sa": "प्रव्यथितान्तरात्मा",
+       "en": "with shaken inner being"
+      },
+      {
+       "sa": "धृतिम्",
+       "en": "steadiness"
+      },
+      {
+       "sa": "न विन्दामि",
+       "en": "I do not find"
+      },
+      {
+       "sa": "शमम्",
+       "en": "peace"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "विष्णो",
+       "en": "O Vishnu"
+      }
+     ],
+     "why": "Facing something vast can shake you to the core, and that's human.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p11.4",
+      "title": "Arjuna sees the cosmic form and praises it",
+      "summary": "Arjuna sees all beings, gods and worlds in Krishna, and warriors rushing into his mouths like moths into flame. Terrified, he asks who Krishna really is.",
+      "story_hook": "Arjuna saw everything at once, and for the first time in his life he could not find his footing.",
+      "lesson": "Facing something vast can shake you to the core, and that's human."
+     },
+     "score": 2.0766,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has just seen Krishna's cosmic form, a sight too vast to take in. His heart trembles and he cannot find steadiness or calm. Facing something vast can shake you to the core, and that is simply human.",
+     "for_you": "The meeting room feels like that vast form right now. You are not weak for trembling. Your fear of being laughed at is a human response to a space that feels too large. Keep this thought with you: the trembling is not a failure.",
+     "try_today": "Notice the moment your heart trembles in the meeting room and name it as a human response.",
+     "scene_line": "You are Arjuna in the meeting room, seeing something too vast to take in.",
+     "asks": [
+      "Why does my heart tremble when I am in the meeting room?",
+      "How do I find steadiness when I feel so small?",
+      "Can I separate my worth from the fear of being laughed at?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.11.5",
+     "ref": "Ashtavakra Gita 11.5",
+     "ref_iast": "Aṣṭāvakra Gītā 11.5",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra lists the certainties that make the wise calm.",
+     "sanskrit": "चिन्तया जायते दुःखं नान्यथेहेति निश्चयी । तया हीनः सुखी शान्तः सर्वत्र गलितस्पृहः ॥",
+     "line": "Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "translation": "One who knows for certain that suffering here is born of worry and nothing else is free of it, happy, at peace, and unattached everywhere.",
+     "words": [
+      {
+       "sa": "चिन्तया",
+       "en": "by worry"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      },
+      {
+       "sa": "दुःखं",
+       "en": "suffering"
+      },
+      {
+       "sa": "नान्यथे",
+       "en": "not otherwise"
+      },
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "निश्चयी",
+       "en": "one who is certain"
+      },
+      {
+       "sa": "तया",
+       "en": "by that"
+      },
+      {
+       "sa": "हीनः",
+       "en": "devoid"
+      },
+      {
+       "sa": "सुखी",
+       "en": "happy"
+      },
+      {
+       "sa": "शान्तः",
+       "en": "calm"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "गलितस्पृहः",
+       "en": "desire dissolved"
+      }
+     ],
+     "why": "Most suffering is made of worry; knowing what you can't control loosens it.",
+     "misuse": "Real problems still need attention; this is about the extra pain rumination adds.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.wisdom",
+      "title": "The certainties of the calm",
+      "summary": "Ashtavakra lists convictions that make a person calm: things arise and pass by nature, fortune and misfortune come in their time, and suffering is born of worry alone.",
+      "story_hook": "",
+      "lesson": "Most suffering is made of worry; knowing what you can't control loosens it."
+     },
+     "score": 3.3823,
+     "beat": "diagnose",
+     "role_fit": 0.831,
+     "meaning": "Ashtavakra is telling Janaka that the only real source of suffering is worry. He says that if you know for certain that suffering is born of worry and nothing else, you become free, happy, and at peace. The verse points to the idea that most of our pain comes from the stories we tell ourselves about what might happen. It proposes that by knowing what is outside your control, you can loosen the grip of that extra pain.",
+     "for_you": "The verse says this loop of what might happen is the real source of the hurt. Your worth is not in your english. The worth is in the steadiness you already have.",
+     "try_today": "Notice when your mind builds a future where they laugh.",
+     "scene_line": "You are in your own meeting room, hearing a voice that has not yet spoken.",
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.2257,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Vidula finds her son Sanjaya lying on the ground, broken after losing his kingdom. She tells him not to hold himself in contempt, and not to settle for too little. She says to set his mind on what is truly good, and to stop fearing. The idea is that past failure does not define you. The results are uncertain, but those who never try never succeed. It asks him to pull himself together and act again.",
+     "for_you": "After the meeting, you replay the words that might have come out wrong, and who might have laughed. Vidula tells her son not to hold himself in contempt. Your worth is not in the room, and it cannot be lost by their laughter.",
+     "try_today": "Notice when your mind settles on a past mistake.",
+     "scene_line": "You lie in the quiet after the meeting, defeated by a kingdom you did not lose.",
+     "asks": [
+      "How do I stop replaying the words I might say?",
+      "What if I set my mind on something good today?",
+      "How do I pull myself together before the next meeting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 2.914,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "After Sita is taken, Ram returns to the empty hut. He searches, questions the trees and animals, breaks down, and finally rages that he will destroy the whole world. Lakshman comes to him and says: take heart. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment. A steady friend can stop grief from turning into destruction.",
+     "for_you": "The meeting room feels like that empty hut. You search for the right words and fear the fire of their laughter. But Ram's grief was real, and Lakshman did not promise it would never come. He only said it passes. Your worth is not the English you speak.",
+     "try_today": null,
+     "scene_line": "You are in the empty hut of the meeting room, and the fire of their laughter is passing.",
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.0478,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha how a free person moves through the world. He says that whoever always does the work that comes to them, who sees friend and foe as the same, and who is free of wanting and not wanting, such a person neither grieves nor craves. When asked, they speak gently and kindly to all, and they know the true intent of people's hearts. Because of this, they do not sink in the world.",
+     "for_you": "Ribhu says do the work in front of you. Let the words be exactly what you know, even if they are not perfect.",
+     "try_today": "Speak the one true thing you know in a meeting today.",
+     "scene_line": "You stand in the meeting room with the work in front of you.",
+     "asks": [
+      "How do I speak gently when my heart is racing?",
+      "What is the work in front of me right now?",
+      "How do I know the intent of their hearts?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.1.146",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+     "family": "vr",
+     "speaker": "Beings of the sky",
+     "listener": "Hanuman",
+     "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+     "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+     "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+     "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+     "words": [],
+     "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.hanuman_leap",
+      "title": "Hanuman's leap",
+      "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+      "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+      "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+     },
+     "score": 2.5654,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "The sky beings praise Hanuman after he outwits Surasa and defeats Simhika in flight. They tell him that steadiness, clear sight, judgement and skill are what keep a person from sinking in their work. The verse says that having these four qualities, as Hanuman clearly does, means you will never fall in your task. It is not about having perfect words or a perfect voice. It is about keeping your aim steady and seeing the moment clearly, whether you take up a whole room or shrink to fit it.",
+     "for_you": "In your meeting room, you replay the fear of a wrong word. But the sky beings praise Hanuman for his skill, not for his grammar. Your steadiness is already there when you walk in. Let your clear sight see the work, not the watcher. Trust the skill you carry.",
+     "try_today": "Speak the one true point you know in the next meeting, even if the words feel rough.",
+     "scene_line": "You stand at the edge of the room, ready to leap across the silence.",
+     "asks": [
+      "How do I know when to speak up and when to stay quiet?",
+      "What if my skill is not enough to keep me from sinking?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "words": [],
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "imposter",
+        "label": "I feel like an imposter"
+       },
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "You sit in the meeting room and your mind tells you the words will come out wrong, and they will laugh.",
+     "asks": [
+      "What if the words I need are already in my head?",
+      "How do I stop the replay before it starts?",
+      "What is the one thing I know for sure about this work?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The room and the fear",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14831,
+   "total": 14834
+  },
+  "_ms": 14837
+ }
+}

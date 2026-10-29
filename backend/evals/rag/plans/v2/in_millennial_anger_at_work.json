@@ -1,0 +1,767 @@
+{
+ "situation": {
+  "id": "in_millennial_anger_at_work",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3
+  },
+  "note": "I shouted at a junior in front of the whole team today. he made a small mistake. I was not angry at him, I was angry at everything. I can't take it back.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Chennai)",
+  "lang": "english",
+  "slices": [
+   "anger",
+   "guilt",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "angry and ashamed",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "The shame of the outburst is named, the real source of the anger is seen, and the team is given the truth so it does not sit in the room unseen.",
+   "week_beats": {
+    "hook": "You recognise the shame and the sense that the anger was not really at the junior.",
+    "diagnose": "You see that the outburst was blocked wanting, not the mistake.",
+    "steady": "You hold that praise and blame come and go, and your worth is not the outburst.",
+    "act": "You try speaking the true thing to the junior and naming what you were really carrying.",
+    "story": "A leader who lost his temper and regretted it shows you what it looks like to face the team and mend what was broken."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "Shouted at a junior in front of the team and now cannot take it back, carrying the shame and the anger that was not really at the junior.",
+   "mirror": "You shouted at a small mistake in front of everyone, and the shame of it is still with you.",
+   "insight": "The junior made a small mistake and you lost your temper. What you are angry at is not the mistake, and that is why you cannot take it back.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.387,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of an outburst in front of the team, and the knowledge that the anger was not really at the person in front of you.",
+    "diagnose": "Anger rises from blocked wanting; it clouds judgement, and a clouded mind says and does what it later regrets.",
+    "steady": "Praise and blame, honour and disgrace, come and go like the weather; stay the same in the midst of them.",
+    "act": "Speak the true thing to the junior, gently and firmly, and name what you were really carrying so it does not sit in the room unseen.",
+    "story": "A man who lost his temper and regretted it, facing the one he wronged and the team he led, and finding the words to mend what he broke."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The outburst and its shame",
+    "What the anger was really about",
+    "The leader who mends what he broke"
+   ],
+   "seat": "a working professional who lost their temper and now carries the shame",
+   "life_context": "In their mid-twenties or early thirties and working; a small mistake set off an outburst in front of the whole team, and the shame of it is still with them.",
+   "details": [
+    "shouted at a junior in front of the whole team",
+    "the mistake was small",
+    "was not angry at the junior",
+    "was angry at everything"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:63=0.6,1=0.6,7=0.3,8=0.3,532=0.6,3=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.66",
+    "dropped:blame=1,fallback_line=1,invented=1,not_second_person=1",
+    "for_you:6/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.63",
+     "ref": "Bhagavad Gita 2.63",
+     "ref_iast": "Bhagavad Gītā 2.63",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥",
+     "line": "Anger clouds judgement, clouded judgement loses memory, lost memory wrecks reason, and then you fall.",
+     "translation": "From anger comes delusion; from delusion, confusion of memory; from confusion of memory, the ruin of understanding; and with understanding ruined, a person is lost.",
+     "words": [
+      {
+       "sa": "क्रोधाद्भवति",
+       "en": "from anger arises"
+      },
+      {
+       "sa": "संमोहः",
+       "en": "delusion"
+      },
+      {
+       "sa": "संमोहात्",
+       "en": "from delusion"
+      },
+      {
+       "sa": "स्मृतिविभ्रमः",
+       "en": "memory confusion"
+      },
+      {
+       "sa": "स्मृतिभ्रंशाद्",
+       "en": "from memory loss"
+      },
+      {
+       "sa": "बुद्धिनाशो",
+       "en": "destruction of intellect"
+      },
+      {
+       "sa": "बुद्धिनाशात्",
+       "en": "from intellect destruction"
+      },
+      {
+       "sa": "प्रणश्यति",
+       "en": "one perishes"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "Not 'never feel anger'. It warns about anger that takes over judgement, not about naming wrongs.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.7604,
+     "beat": "hook",
+     "role_fit": 0.105,
+     "meaning": "Arjuna asks Krishna what a steady person looks like. Krishna says such a person is calm and in control of their senses. He explains that when you keep dwelling on things, anger builds. This anger clouds your judgement. Once your judgement is clouded, you lose your memory of what matters. Your understanding breaks down, and then you fall. The verse proposes that steadiness is built by guarding what you give your attention to, because anger always starts with what you dwell on.",
+     "for_you": "You shouted at a junior over a small mistake, and the shame of it is still sitting with you. The anger was not really at the junior. It was at everything. The verse shows that anger starts with what you dwell on. That is the real source of your trouble.",
+     "try_today": "Notice the first sign that anger is building before it takes over.",
+     "scene_line": "You are in your own office, and the question is what steadiness looks like.",
+     "asks": [
+      "How do I know when I am dwelling on things?",
+      "What does it mean to guard my attention?",
+      "How do I stop the anger before it clouds my judgement?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.1.261.doha.1",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 261",
+     "family": "rcm",
+     "speaker": "Lakshman",
+     "listener": "Parashurama",
+     "setting": "Lakshman, half-teasing, to the raging sage Parashurama.",
+     "sanskrit": "लखन कहेउ हँसि सुनहु मुनि क्रोधु पाप कर मूल। जेहि बस जन अनुचित करहिं चरहिं बिस्व प्रतिकूल ॥",
+     "line": "Anger is the root of wrongdoing; in its grip we do what we shouldn't.",
+     "translation": "Lakshman laughed and said, 'Listen, sage: anger is the root of wrongdoing. In its grip people do what they shouldn't and set themselves against the whole world.'",
+     "words": [
+      {
+       "sa": "लखन",
+       "en": "Lakshman"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "हँसि",
+       "en": "smiling"
+      },
+      {
+       "sa": "सुनहु",
+       "en": "listen"
+      },
+      {
+       "sa": "मुनि",
+       "en": "O sage"
+      },
+      {
+       "sa": "क्रोधु",
+       "en": "anger"
+      },
+      {
+       "sa": "पाप",
+       "en": "sin/wrongdoing"
+      },
+      {
+       "sa": "कर",
+       "en": "do"
+      },
+      {
+       "sa": "मूल",
+       "en": "root"
+      },
+      {
+       "sa": "जेहि",
+       "en": "whoever"
+      },
+      {
+       "sa": "बस",
+       "en": "under control"
+      },
+      {
+       "sa": "जन",
+       "en": "person"
+      },
+      {
+       "sa": "अनुचित",
+       "en": "improper"
+      },
+      {
+       "sa": "करहिं",
+       "en": "do"
+      },
+      {
+       "sa": "चरहिं",
+       "en": "commit"
+      },
+      {
+       "sa": "बिस्व",
+       "en": "world"
+      },
+      {
+       "sa": "प्रतिकूल",
+       "en": "harmful/adverse"
+      }
+     ],
+     "why": "Clever replies feed anger; calm, humble words put it out.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.parashurama",
+      "title": "Parashurama's rage, Lakshman's taunts, Ram's calm",
+      "summary": "Parashurama storms into the wedding hall furious that Shiva's bow is broken. Lakshman answers every threat with a joke, and each reply feeds the fire. Ram steps in with soft words, takes the blame on himself, and calmly points out that an old bow broke at a touch; the sage's anger finally turns to recognition.",
+      "story_hook": "The bow was already broken, and the man who had come to avenge it was carrying an axe.",
+      "lesson": "Clever replies feed anger; calm, humble words put it out."
+     },
+     "score": 3.561,
+     "beat": "diagnose",
+     "role_fit": 0.816,
+     "meaning": "Parashurama, the warrior-sage, has stormed into the wedding hall furious because Shiva's bow has been broken. Lakshman, the young prince, answers every threat with a joke, and each clever reply feeds the fire. The point is that anger is the root of wrongdoing. In its grip people do what they shouldn't and set themselves against the whole world. Calm, humble words put it out. Ram steps in with soft words and takes the blame, and the sage's anger turns to recognition.",
+     "for_you": "The junior's small mistake is not what set you off. It was a blocked wanting, a pressure you carried that found no way out. That is why the shame feels so heavy, because the outburst was not about the work.",
+     "try_today": "Notice what feeling was blocked right before you shouted.",
+     "scene_line": "You are in a wedding hall where an old bow broke at a touch.",
+     "asks": [
+      "How do I tell a blocked wanting from a real mistake?",
+      "What if the wanting I blocked was my own need to be right?",
+      "How do I speak the truth without setting myself against the team?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.1772,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "You are holding the shame of that outburst, and it feels like the whole room saw who you are. But that praise and blame come and go. Your worth is not the shouting. The anger was not about the small mistake. It was about everything else.",
+     "try_today": "Notice one moment today when the room feels quiet and steady.",
+     "scene_line": "You stand in the deep pool while the current of the morning still moves above you.",
+     "asks": [
+      "How do I tell my worth from the noise I made?",
+      "Can I forgive myself before the team does?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0504,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is giving rules to someone who has left ordinary life behind. The teacher says do not exhaust your body chasing pleasure or running from pain. If people praise you, do not swell with pride. If they blame you, do not curse them back. The idea is that your body and your peace should not be worn out by the push and pull of approval and blame. You are asked to let both praise and blame come and go without letting them shake your inner balance.",
+     "for_you": "You shouted because the anger was bigger than the mistake, and now the shame is eating at you. But your worth is not that outburst, and it is not the junior's mistake either. Let the praise and blame of that day come and go.",
+     "try_today": "Notice when the shame rises and name what is really behind it.",
+     "scene_line": "You stand in the room after the shouting, and the teacher asks you not to curse the blame.",
+     "asks": [
+      "How do I stop the shame from defining the day?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "words": [
+      {
+       "sa": "अनुद्वेगकरं",
+       "en": "not-agitating"
+      },
+      {
+       "sa": "वाक्यं",
+       "en": "speech"
+      },
+      {
+       "sa": "सत्यं",
+       "en": "truthful"
+      },
+      {
+       "sa": "प्रियहितं",
+       "en": "kind and beneficial"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "यत्",
+       "en": "that"
+      },
+      {
+       "sa": "स्वाध्यायाभ्यसनं",
+       "en": "self-study and practice"
+      },
+      {
+       "sa": "चैव",
+       "en": "also"
+      },
+      {
+       "sa": "वाङ्मयं",
+       "en": "of words"
+      },
+      {
+       "sa": "तप",
+       "en": "discipline"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.1708,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is explaining different kinds of discipline to Arjuna. He describes how a person should speak. The words should not cause pain to anyone. They should be true to reality. They should be pleasant to hear. They should also be useful to the listener. This kind of speech is a form of inner discipline. It is not about hiding your truth. It is about making sure your words do not add more harm to the world.",
+     "for_you": "Pause before you speak, hold back the harsh word, and answer anger with calm; forgive so the fire does not keep burning in you.",
+     "try_today": "Tell the junior the truth about what you were carrying.",
+     "scene_line": "You are in the room with your team, and the truth about your anger is still unseen.",
+     "asks": [
+      "How do I say the truth without making the shame worse?",
+      "What if they think I am making excuses for my outburst?",
+      "Can I name my anger without sounding cruel?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.55.3",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 55.3",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "After setting Lanka ablaze in fury, Hanuman fears he has harmed Sita and turns on his own anger.",
+     "sanskrit": "धन्याः खलु महात्मानो ये बुद्ध्या कोपमुत्थितम्। निरुन्धन्ति महात्मानो दीप्तमग्निमिवाम्भसा॥",
+     "line": "Blessed are those who use good sense to put out rising anger, the way water puts out fire.",
+     "translation": "Blessed indeed are the great-hearted who, with good sense, check anger the moment it rises, as water puts out a blazing fire.",
+     "words": [
+      {
+       "sa": "धन्यास्ते",
+       "en": "blessed are"
+      },
+      {
+       "sa": "पुरुषश्रेष्ठा",
+       "en": "the best among men"
+      },
+      {
+       "sa": "ये",
+       "en": "who"
+      },
+      {
+       "sa": "बुद्ध्या",
+       "en": "with wisdom"
+      },
+      {
+       "sa": "कोपमुत्थितम्",
+       "en": "arisen anger"
+      },
+      {
+       "sa": "निरुन्धन्ति",
+       "en": "restrain"
+      },
+      {
+       "sa": "महात्मानो",
+       "en": "great souls"
+      },
+      {
+       "sa": "दीप्तमग्निमिवाम्भसा",
+       "en": "like a blazing fire with water"
+      }
+     ],
+     "why": "Anger can win a small fight and ruin the real goal.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lanka_burning",
+      "title": "Hanuman's anger and the burning of Lanka",
+      "summary": "Hanuman decides to test the enemy, smashes a grove, is captured and has his tail set on fire. He burns the city in fury, then is horrified that Sita might have died in the fire: in anger, he says, he nearly wrecked the very thing he came to do.",
+      "story_hook": "The city was burning behind him, and then a terrible thought stopped him cold.",
+      "lesson": "Anger can win a small fight and ruin the real goal."
+     },
+     "score": 2.4942,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Hanuman has just burned the city of Lanka, and in the smoke and light, he turns on his own fury. He is afraid that his anger has destroyed Sita, the very person he came to find. He realizes that a hot temper can win a small battle and ruin the whole reason for the war. The verse says that a wise person puts out fire with water the moment it rises, before it burns down the house.",
+     "for_you": "The shame you carry is the smoke from that fire. You did not shout at the junior because of the mistake. You shouted at the whole room because your own anger had no other place to go. The junior is not the fire. Your temper is.",
+     "try_today": "Say to the junior the true reason for the outburst.",
+     "scene_line": "You turn on your own anger, afraid it has ruined what you came to protect.",
+     "asks": [
+      "How do I tell the junior what I was really angry at?",
+      "What if they think I am making excuses for shouting?",
+      "How do I put out this anger before it burns more?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.vishvamitra_anger",
+     "title": "Vishvamitra loses his temper, and begins again",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Vishvamitra",
+      "Rambha",
+      "Vasishtha",
+      "Brahma"
+     ],
+     "story_hook": "He had already started over once; then his temper threw it all away again.",
+     "summary": "Tested again, Vishvamitra explodes and curses the nymph Rambha, losing the fruit of his long effort. He vows not to give way to anger or speak in it, keeps a thousand-year silence, and this time obstacles shake him but anger cannot get in. He reaches his goal, and his old rival Vasishtha embraces him as a friend.",
+     "lesson": "Relapses happen; a clear vow and steady practice can make anger lose its grip, and rivals can become friends.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.64.15",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 64.15",
+      "family": "vr",
+      "speaker": "Narrator (Shatananda)",
+      "listener": "Ram",
+      "setting": "Vishvamitra has just cursed a nymph in a fit of temper and lost the merit of years of effort.",
+      "sanskrit": "कोपेन च महातेजास्तपोऽपहरणे कृते। इन्द्रियैरजितै राम न लेभे शान्तिमात्मनः॥ बभूवास्य मनश्चिन्ता तपोऽपहरणे कृते। नैवं क्रोधं गमिष्यामि न च वक्ष्ये कथंचन ॥",
+      "line": "Temper cost him years of work. He resolved: I won't give way to anger again, or speak from it.",
+      "translation": "In his anger he lost what his effort had earned, and with his senses unmastered he found no peace. Then he resolved: 'I will not give way to anger like this again, and I will not speak in it.'",
+      "words": [
+       {
+        "sa": "कोपेन",
+        "en": "by anger"
+       },
+       {
+        "sa": "सः",
+        "en": "he"
+       },
+       {
+        "sa": "महातेजाः",
+        "en": "highly powerful one"
+       },
+       {
+        "sa": "तपः-अपहरणे",
+        "en": "when the fruit of austerity was taken away"
+       },
+       {
+        "sa": "कृते",
+        "en": "having been done"
+       },
+       {
+        "sa": "इन्द्रियैः",
+        "en": "by the senses"
+       },
+       {
+        "sa": "अजितैः",
+        "en": "unconquered"
+       },
+       {
+        "sa": "राम",
+        "en": "O Rama"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "लेभे",
+        "en": "found"
+       },
+       {
+        "sa": "शान्तिम्",
+        "en": "peace"
+       },
+       {
+        "sa": "आत्मनः",
+        "en": "of his own self"
+       }
+      ],
+      "why": "Relapses happen; a clear vow and steady practice can make anger lose its grip, and rivals can become friends.",
+      "misuse": "A vow of restraint, not a vow to swallow every hurt in silence.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "anger_outburst",
+        "label": "I lost my temper and regret it"
+       },
+       {
+        "id": "guilt",
+        "label": "I feel guilty about something I did"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.vishvamitra_anger",
+       "title": "Vishvamitra loses his temper, and begins again",
+       "summary": "Tested again, Vishvamitra explodes and curses the nymph Rambha, losing the fruit of his long effort. He vows not to give way to anger or speak in it, keeps a thousand-year silence, and this time obstacles shake him but anger cannot get in. He reaches his goal, and his old rival Vasishtha embraces him as a friend.",
+       "story_hook": "He had already started over once; then his temper threw it all away again.",
+       "lesson": "Relapses happen; a clear vow and steady practice can make anger lose its grip, and rivals can become friends."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vishvamitra lost his temper, and years of effort went with it",
+     "teaser": "Vishvamitra lost his temper, and years of effort went with it",
+     "for_you": null,
+     "asks": [
+      "How can I face my team after I shouted?",
+      "What does a clear vow look like in my work?",
+      "How do I stop the anger from returning?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The outburst and its shame",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19370,
+   "total": 19372
+  },
+  "_ms": 19374
+ }
+}

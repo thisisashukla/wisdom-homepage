@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "20 Famous Sanskrit Shlokas — with Meaning in Hindi and English | Wisdom",
     description: "Twenty well-known Sanskrit shlokas worth knowing by heart. Devanagari, IAST, English, and Hindi meaning for each.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
@@ -166,7 +166,7 @@ const schemas = [
     "description": "Twenty well-known Sanskrit shlokas worth knowing by heart — from Vakratunda Mahakaya to Om Purnamadah — with accurate Devanagari, IAST, English, and Hindi meaning.",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-01",
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas" },
     "author": {
       "@type": "Person",

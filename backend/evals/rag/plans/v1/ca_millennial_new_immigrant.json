@@ -1,0 +1,698 @@
+{
+ "situation": {
+  "id": "ca_millennial_new_immigrant",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "Canada (Toronto)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving the present",
+   "bridge": "The life you left behind in Hyderabad is what the texts call a real loss. The life you are building now is what you are choosing, and the two are not the same.",
+   "week_thesis": "Seven days from grieving the past and feeling ruined to seeing the cost clearly and speaking the truth about the choice you made.",
+   "week_beats": {
+    "hook": "You recognise the grief for the life left behind and the feeling that you ruined the present.",
+    "diagnose": "You see that the cost of the move is real, but it is not the whole story of what you gave your family.",
+    "steady": "You hold that the life you left behind and the life you are building are both real, and neither erases the other.",
+    "act": "You try naming what you have given and what you have lost, and speaking the truth to your family about the choice you made."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A father who left a senior management role to drive at night abroad is grieving the present and feels he has ruined it for his family.",
+   "mirror": "You managed forty people, and now you drive through the night while your wife cries in the cold.",
+   "insight": "You left a role that defined you, and the man who held it is grieving. The cold and the crying are real, but they are not the whole story of what you gave them.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.437,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Leaving a life that defined you, and now watching the family you moved for pay the price in the cold and the silence.",
+    "diagnose": "When a move is made for someone else's future, the grief for what was left behind grows in the quiet moments; the present pain is real, but it is not the whole cost.",
+    "steady": "What you chose was real, and so is the grief; the life you built is not the life you lost, and both can be true.",
+    "act": "Name what you have given and what you have lost, speak the truth to your family about what this move meant, and hold your ground on the choice you made.",
+    "story": "A man who left his homeland and his standing to build a future for his child, who faced the loneliness and the loss, and found the strength to hold both."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The cost of the move",
+    "What you gave and what you lost",
+    "The man who chose"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife is unhappy with the cold",
+    "did it for son's future"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.0,17=0.3,1=0.6,61=0.6,10=0.0,6=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.59",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:copied=1,repeat=2,soft_kept=1,try_today_long=1,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.9192,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield, and he has dropped his bow. He tells Krishna that even if he won every kingdom and ruled the heavens, it would not touch the grief that is drying him up inside. He admits he sees no way forward and asks Krishna to teach him what to do.",
+     "for_you": "You are grieving the life in Hyderabad, the role that defined you. You are asking what comes next, and that is where clarity begins.",
+     "try_today": "Notice the exact moment you feel most cut off from the life you left behind.",
+     "scene_line": "You stand on the battlefield, having dropped the bow that once defined you.",
+     "asks": [
+      "How do I tell grief from guilt?",
+      "How do I ask for help without feeling weak?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.28.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 28.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama on how everything changes.",
+     "sanskrit": "दिवसास्ते महान्तस्ते संपदस्ताः क्रियाश्च ताः । सर्वं स्मृतिपथं यातं यामो वयमपि क्षणात् ॥",
+     "line": "Those days, those people, that wealth, those deeds are memories now. We too will pass soon.",
+     "translation": "Those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a call to despair; it wakes Rama up to what matters now.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.6069,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Rama is on the throne after a long exile and a great war. They have won back their kingdom, but the joy is missing. They speak to the sage Vasishtha and say that the old days, the old people, the old wealth, and the old deeds are now just memories. Everything is passing away, and they too will go in a moment. The verse says that naming what feels empty is the first step, but it is only a question, not the answer. It is a wake-up call to see what matters now.",
+     "for_you": "The life you left in Hyderabad and the man you were are real losses, and they are not the whole story. Your family has a roof and a future because of your choice.",
+     "try_today": "Notice one small sign of the life you are building.",
+     "scene_line": "You are the king who has won the war but cannot feel the victory.",
+     "asks": [
+      "How do I tell the loss from the choice?",
+      "What part of me is still mourning the old life?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.4.8.chaupai.1",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Sugriva",
+     "setting": "Ram to Sugriva, as they swear friendship by the fire.",
+     "sanskrit": "जे न मित्र दुख होहिं दुखारी। तिन्हहि बिलोकत पातक भारी॥ निज दुख गिरि सम रज करि जाना। मित्रक दुख रज मेरु समाना ॥",
+     "line": "A real friend treats his own troubles as dust and his friend's troubles as a mountain.",
+     "translation": "Those who are not pained by a friend's pain commit a grave wrong just by being seen. A true friend treats his own mountain of sorrow as a speck of dust, and his friend's speck of sorrow as a mountain.",
+     "words": [
+      {
+       "sa": "जे",
+       "en": "those who"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "मित्र",
+       "en": "friend"
+      },
+      {
+       "sa": "दुख",
+       "en": "suffering"
+      },
+      {
+       "sa": "होहिं",
+       "en": "feel"
+      },
+      {
+       "sa": "तिन्हहि",
+       "en": "to them"
+      },
+      {
+       "sa": "बिलोकत",
+       "en": "seeing"
+      },
+      {
+       "sa": "पातक",
+       "en": "sin/fault"
+      },
+      {
+       "sa": "निज",
+       "en": "own"
+      },
+      {
+       "sa": "दुख",
+       "en": "suffering"
+      },
+      {
+       "sa": "गिरि",
+       "en": "mountain"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "रज",
+       "en": "dust"
+      },
+      {
+       "sa": "करि",
+       "en": "making"
+      },
+      {
+       "sa": "मित्रक",
+       "en": "friend's"
+      },
+      {
+       "sa": "दुख",
+       "en": "suffering"
+      },
+      {
+       "sa": "रज",
+       "en": "dust"
+      },
+      {
+       "sa": "मेरु",
+       "en": "great mountain"
+      }
+     ],
+     "why": "A friend treats your trouble as bigger than their own.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.friendship_pact",
+      "title": "Ram and Sugriva become friends",
+      "summary": "Hanuman, sent to check whether the two strangers are Bali's spies, recognises Ram and brings him to Sugriva, who has been driven out by his brother. Before a fire as witness they become friends, and Ram describes what friendship asks: your friend's small trouble is a mountain, your own is dust; steer him right, hide his faults, love him more in hard times.",
+      "story_hook": "",
+      "lesson": "A friend treats your trouble as bigger than their own."
+     },
+     "score": 2.7465,
+     "beat": "steady",
+     "role_fit": 0.35,
+     "meaning": "Ram speaks to Sugriva as they stand by the fire and swear friendship. Ram tells him that a true friend treats their own troubles as a speck of dust and their friend's troubles as a mountain. He says that anyone who is not pained by a friend's pain commits a grave wrong simply by being seen. This is what friendship asks. It asks you to carry the other person's weight as if it were your own, to see their struggle as the only thing that matters in that moment.",
+     "for_you": "You are trying to hold your family together in a new country while you grieve the man you were. The cold and the crying are real, and they are your family's burden. But your sorrow is not the only thing in the room.",
+     "try_today": null,
+     "scene_line": "You are by the fire with your family, and your own mountain is dust while theirs are stone.",
+     "asks": [
+      "How can I carry my family's weight without burying my own grief?",
+      "What does it mean to treat my own loss as dust?",
+      "Can a mountain of sorrow for my family and my own loss both exist at once?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.5942,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim speaks from a place where love is so close it needs no news. He says that to the one who has made a home in your heart, what joy or sorrow is left that needs explaining? He is telling you that the person who lives in your heart already knows your joys and sorrows. Nothing needs explaining. The life you left behind in Hyderabad and the life you are building in Canada are both real, and neither erases the other.",
+     "for_you": "The partner and the children you are driving for at night already know the man who left Hyderabad. They know the cost of the cold and the late hours. You do not need to explain the grief that is drying you up. It is known.",
+     "try_today": "Notice one thing that does not need explaining today.",
+     "scene_line": "You are driving through the night, and the one who lives in your heart already knows your sorrows.",
+     "asks": [
+      "How do I hold the man I was and the man I am now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.8213,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari is speaking to a reader, laying out how the truly good live. They say that the good person gives up greed, forgives, drops arrogance, speaks the truth, and wins over enemies. They do not take pleasure in wrongdoing, but instead follow the path of the good, serve the wise, and show courtesy. Real success is not about holding power, but about bowing lower. True ornaments are the acts of listening, giving, and helping others.",
+     "for_you": "You traded the weight of your name in Hyderabad for the quiet of a Canadian night. That man in the corner office is still grieving. Speaking the truth to your family is not an apology. It is naming the price of the choice you made.",
+     "try_today": "Name one thing you gave up and one thing you gained.",
+     "scene_line": "You are at the kitchen table, choosing truth over silence.",
+     "asks": [
+      "How do I speak the truth without making them hate me?",
+      "What did I actually give up and what did I gain?",
+      "Can I honor the past without being trapped by it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.29",
+     "ref": "Bhagavad Gita 6.29",
+     "ref_iast": "Bhagavad Gītā 6.29",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥",
+     "line": "See yourself in every being and every being in yourself, and you see the same everywhere.",
+     "translation": "One whose self is joined in yoga sees the self in all beings and all beings in the self; he sees the same everywhere.",
+     "words": [
+      {
+       "sa": "सर्वभूतस्थम्",
+       "en": "in all beings"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "the true self"
+      },
+      {
+       "sa": "सर्वभूतानि",
+       "en": "all beings"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the true self"
+      },
+      {
+       "sa": "ईक्षते",
+       "en": "sees"
+      },
+      {
+       "sa": "योगयुक्तात्मा",
+       "en": "the yogi united in yoga"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "समदर्शनः",
+       "en": "with equal vision"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 1.9176,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Krishna is showing Arjuna what a still mind looks like. He tells him to see his own self inside every other person, and every other person inside his own self. When he can do that, he will see the same truth everywhere. The teaching is about coming back to this view again and again, gently and without forcing it.",
+     "for_you": "The man in Hyderabad is not the same man who drives the car at night. The self that managed people and the self that holds the wheel are both you. You do not have to choose between them. You can hold both and see the same life in both.",
+     "try_today": "When the cold makes them cry, see your own past in that cry.",
+     "scene_line": "You are in the car, holding a memory and a child's need in the same breath.",
+     "asks": [
+      "How can I see my old self in my family now?",
+      "Does my past life still live in my children?",
+      "Can I hold two lives at once?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "words": [],
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "You are caught in the same spinning. The years in Hyderabad and the nights on the road in Canada are both lists of things done, things being done, and things that must be done next. The cold and the crying are not the whole story.",
+     "asks": [
+      "How do I know I am not just busy to avoid the grief?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The cost of the move",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 8049,
+   "total": 8052
+  },
+  "_ms": 8054
+ }
+}

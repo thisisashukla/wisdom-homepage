@@ -1,0 +1,94 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "Shouted at a junior in front of the team and now cannot take it back, carrying the shame and the anger that was not really at the junior.",
+ "mechanism": "anger_reactivity",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "anger_outburst",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "guilt",
+   "weight": 0.387,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You shouted at a small mistake in front of everyone, and the shame of it is still with you.",
+ "queries": {
+  "hook": "The shame of an outburst in front of the team, and the knowledge that the anger was not really at the person in front of you.",
+  "diagnose": "Anger rises from blocked wanting; it clouds judgement, and a clouded mind says and does what it later regrets.",
+  "steady": "Praise and blame, honour and disgrace, come and go like the weather; stay the same in the midst of them.",
+  "act": "Speak the true thing to the junior, gently and firmly, and name what you were really carrying so it does not sit in the room unseen.",
+  "story": "A man who lost his temper and regretted it, facing the one he wronged and the team he led, and finding the words to mend what he broke."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The outburst and its shame",
+  "What the anger was really about",
+  "The leader who mends what he broke"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "angry and ashamed",
+ "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+ "week_thesis": "The shame of the outburst is named, the real source of the anger is seen, and the team is given the truth so it does not sit in the room unseen.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the shame and the sense that the anger was not really at the junior.",
+  "diagnose": "You see that the outburst was blocked wanting, not the mistake.",
+  "steady": "You hold that praise and blame come and go, and your worth is not the outburst.",
+  "act": "You try speaking the true thing to the junior and naming what you were really carrying.",
+  "story": "A leader who lost his temper and regretted it shows you what it looks like to face the team and mend what was broken."
+ },
+ "insight": "The junior made a small mistake and you lost your temper. What you are angry at is not the mistake, and that is why you cannot take it back.",
+ "seat": "a working professional who lost their temper and now carries the shame",
+ "life_context": "In their mid-twenties or early thirties and working; a small mistake set off an outburst in front of the whole team, and the shame of it is still with them.",
+ "details": [
+  "shouted at a junior in front of the whole team",
+  "the mistake was small",
+  "was not angry at the junior",
+  "was angry at everything"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": []
+}

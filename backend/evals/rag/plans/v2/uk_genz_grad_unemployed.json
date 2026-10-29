@@ -1,0 +1,679 @@
+{
+ "situation": {
+  "id": "uk_genz_grad_unemployed",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "u25",
+   "stages": [
+    "between"
+   ],
+   "phone_hours": 6,
+   "topic": "compare",
+   "follow": "everyone_ahead"
+  },
+  "note": "200 applications. my mates are at Goldman and Deloitte and I'm making flat whites. mum tells aunties I'm 'exploring options'. I don't open linkedin anymore",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "UK (London)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frozen",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "The gap between where you are and where they are has a name, and the sentence you keep writing about yourself has an answer.",
+   "week_beats": {
+    "hook": "You recognise the shame and the replaying, named without judgement.",
+    "diagnose": "You see that measuring yourself against them is what keeps you frozen.",
+    "steady": "You hold that another's win does not make your path any less real.",
+    "act": "You try measuring your own path today, and doing one thing that is yours to do.",
+    "story": "A young man who lost his way after a great fall shows you how to rebuild from the work you can still do."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "parent",
+    "family"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "Has sent applications and is now making coffee while his friends land at top firms and his mother tells aunties he is exploring options.",
+   "mirror": "You sent two hundred applications, and now you make coffee while they tell your mother you're exploring options.",
+   "insight": "Your friends' wins are real, but they are not the measure of your worth. What keeps you frozen is the sentence you keep writing about yourself.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.18,
+     "source": "note"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.445,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of being where you are while everyone you know is somewhere else, and the replaying that keeps you from moving.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "What is yours is yours; another's win does not make your path any less real or your effort any less yours.",
+    "act": "Measure your own path, not theirs; do one thing that is yours to do today and let the rest go.",
+    "story": "A young man who lost his way after a great fall, and had to rebuild from the work he could still do."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The gap",
+    "The sentence you keep writing",
+    "More than where you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "sent applications",
+    "friends at Goldman and Deloitte",
+    "making flat whites"
+   ],
+   "age": "u25",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "week_fit:34=1.0,17=1.0,22=1.0,92=1.0,35=1.0,78=1.0",
+    "week_sim:mean=0.59,max=0.70",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.4311,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is standing on the battlefield, looking at his own mind. He tells Krishna that the mind is restless, stormy and stubborn. It is as hard to hold as the wind. Krishna does not tell him to stop feeling this way. He agrees that the mind is hard to hold, and says that practice and letting go can train it.",
+     "for_you": "You are making flat whites while your friends land at top firms, and your mother tells aunties you are exploring options. The mind is restless, stormy and stubborn. It is as hard to hold as the wind. You are not broken for feeling this way.",
+     "try_today": "Notice the thought that says you are not enough, and let it pass like a cloud.",
+     "scene_line": "You are on a battlefield of your own, holding a mind as hard to hold as the wind.",
+     "asks": [
+      "How do I stop the mind from running to their wins?",
+      "What does practice look like when I am just making coffee?",
+      "Can I let go of the sentence I keep writing about myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.7.117.chaupai.17",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi continues listing the diseases of the mind.",
+     "sanskrit": "ममता दादु कंडु इरषाई। हरष बिषाद गरह बहुताई॥ पर सुख देखि जरनि सोइ छई। कुष्ट दुष्टता मन कुटिलई ॥",
+     "line": "Envy is an itch. Burning at another's happiness is a wasting disease of the mind.",
+     "translation": "Possessiveness is ringworm and envy is the itch; the swings of elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy.",
+     "words": [],
+     "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.garuda_questions",
+      "title": "Garuda's seven questions",
+      "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+      "story_hook": "",
+      "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+     },
+     "score": 4.0658,
+     "beat": "diagnose",
+     "role_fit": 0.705,
+     "meaning": "Kakbhushundi, the sage, is telling Garuda about the sicknesses of the mind. He says envy is an itch and burning at another's happiness is a wasting disease. He lists these ailments so a person can recognize them. The idea is to know your mind's diseases by name: confusion, anger, greed, envy, ego. You are not meant to cure them all at once. You are meant to see them clearly.",
+     "for_you": "You are watching your friends' success and your mother's stories about it, and a fire is building. That fire is envy. It is not a flaw in you. It is a disease of the mind that shows up when you compare your flat whites to their Goldman offers.",
+     "try_today": "Notice the exact moment you start measuring your worth against them.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 3.6279,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is speaking to Arjuna on the field, explaining how the wise move through the world. He tells him that the person who is content with whatever comes their way, who stays steady whether they win or lose, and who is free from envy, works in the world but is not bound by it. The wise do their part without needing the result to be a certain way, because their peace does not depend on the outcome.",
+     "for_you": "Your friends at Goldman and Deloitte are living in a different frame, but their wins do not shrink the ground you stand on. The sentence you keep writing about yourself is not the final draft. You are steady in the making.",
+     "try_today": "Notice one moment when you are making a flat white and let the steam be enough.",
+     "scene_line": "You are standing at the machine while another's win plays on the screen.",
+     "asks": [
+      "How do I stop the sentence I keep writing?",
+      "Can I work without needing the result to be certain?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.92",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 92",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Way of the Free Ascetic'.",
+     "sanskrit": "ब्रह्माण्डं मण्डलीमात्रं किं लोभाय मनस्विनः । शफरीस्फुरितेनाब्धिः क्षुब्धो न खलु जायते ॥",
+     "line": "The ocean is not stirred by a small fish's flick. Petty things needn't shake you.",
+     "translation": "For the high-minded the whole universe is a mere ring; what is there in it to be greedy for? The ocean is not churned up by the flicker of a little fish.",
+     "words": [],
+     "why": "Let others' labels and small things pass; contentment makes you rich.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.avadhuta",
+      "title": "Vairagyashatakam: The way of the free ascetic",
+      "summary": "Portraits of the wandering sage: unbothered when people argue over his caste, sleeping under the sky like a king, and finally bidding farewell to the five elements.",
+      "story_hook": "",
+      "lesson": "Let others' labels and small things pass; contentment makes you rich."
+     },
+     "score": 2.7009,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Bhartrihari is speaking to the reader from a place of deep quiet, after a life of wanting. He says that for the high-minded, the whole universe is just a small ring, and there is nothing in it to be greedy for. He uses a clear image: the ocean is not stirred by the flicker of a small fish. The point is that petty things do not need to shake you. Let others' labels and small things pass, and contentment makes you rich.",
+     "for_you": "The ocean is not stirred by a small fish's flick. Let the small flick of another's success pass without churning your mind.",
+     "try_today": "Watch the flicker of another's success pass without stirring your own ocean.",
+     "scene_line": "You stand at the counter while the ocean of your own work remains unchurned.",
+     "asks": [
+      "How do I stop the flicker of another's win from stirring my mind?",
+      "How do I hold my own ocean steady while friends land at top firms?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.774,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, where the two armies wait. He tells him that it is better to follow your own path, even if you stumble, than to copy someone else's. A borrowed life is full of fear because you are always trying to fit a shape that is not yours. Your own path, even with its flaws, gives you a ground to stand on that no one else can take.",
+     "for_you": "You are standing in your own kitchen, making flat whites for people who have already landed their first jobs. You are not failing at their path. You are walking your own. The fear comes from trying to live their story instead of your own.",
+     "try_today": "Measure your own progress against yesterday, not against your friends.",
+     "scene_line": "You are on your own path, making coffee and waiting for your own results to arrive.",
+     "asks": [
+      "What does my own path look like right now?",
+      "How do I know if I am on my own path?",
+      "What is my own duty in this moment?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.168,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader from the section on how the good behave. He tells them that true success is not in winning or taking. It is in giving. The mind that is steady in both success and failure does not need to show off. It does not need to win over enemies by force. It simply serves the wise and honours those who deserve it. The good behave by letting go of craving and arrogance. They find their worth in listening and in helping those who suffer. This is how a person stays free.",
+     "for_you": "You are making coffee and watching your friends get offers. Your family is talking about your options. The shame is heavy. But the texts say the good do not show off. They serve and they honour.",
+     "try_today": "Do one small thing that is yours to do today, without comparing it to what your friends are doing.",
+     "scene_line": "You are at the kitchen counter, making coffee, and someone is asking what you are doing with your life.",
+     "asks": [
+      "How do I stop comparing my coffee shop to their offices?",
+      "What does it mean to honour someone when I feel so small?",
+      "How do I know if I am serving or just giving up?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "words": [],
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "imposter",
+        "label": "I feel like an imposter"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "You are not the number your friends posted. You are the quiet one who can actually do the work. Your parents do not need to tell aunties about your plans. Your own power is enough to get you across the water.",
+     "asks": [
+      "What if I am not the one they named?",
+      "How do I stop holding myself back?",
+      "What is the leap I can take today?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The gap",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17310,
+   "total": 17313
+  },
+  "_ms": 17316
+ }
+}

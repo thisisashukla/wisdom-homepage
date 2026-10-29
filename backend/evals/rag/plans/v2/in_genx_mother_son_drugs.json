@@ -1,0 +1,729 @@
+{
+ "situation": {
+  "id": "in_genx_mother_son_drugs",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "found out my son has been taking something with his college friends. he lies to my face. his father says it's my fault for being soft. I don't know whether to be strict or kind.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Chandigarh)",
+  "lang": "english",
+  "slices": [
+   "family",
+   "lang:english",
+   "parenting"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "man",
+   "emotion": "angry and afraid",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from being blamed by your husband for your son's choices to standing in your own truth with both of them.",
+   "week_beats": {
+    "hook": "You recognise the anger and the blame, named without judgement.",
+    "diagnose": "You see that the blame is not the answer, and that your son's choices are his own.",
+    "steady": "You hold that your worth as a parent is not measured by his choices.",
+    "act": "You try speaking to your son with steady love and a clear boundary, and speaking to your husband with the truth.",
+    "story": "A mother who stood between her son's trouble and her husband's blame shows you what holding your ground looks like."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "friend"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "I keep fighting with my parents",
+   "mirror": "You found out, he lied, and your husband told you it was your fault for being soft.",
+   "insight": "The fight is between you and your husband about who is to blame. The real question is how to be with your son, and that is yours to answer.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 0.55,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "betrayal",
+     "label": "Someone I trusted betrayed me",
+     "weight": 0.398,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.36,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The anger of being blamed for your son's behaviour and the fear of not knowing whether to be strict or kind with him.",
+    "diagnose": "When a child's actions become a verdict on the parent, self-blame grows from believing the outcome alone measures our worth, and it clouds the answer.",
+    "steady": "A child's choices are his own, and your worth as a parent is not measured by his; your duty is to be steady in your love, not to win his approval.",
+    "act": "Lift yourself up instead of pushing yourself down; speak to your son with steady love, set a clear boundary with him, and speak to your husband with the truth of what is his to carry.",
+    "story": "A mother who found her son in trouble, faced his father's blame, and held her ground with love and a clear boundary."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Blamed for his choices",
+    "Whose to carry what",
+    "Steady in your love"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "son has been taking something with college friends",
+    "son lies to her face",
+    "she is torn between strict and kind"
+   ],
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:44=0.3,11=0.6,47=0.6,7=0.3,7=0.3,78=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.71",
+    "retried:5",
+    "dropped:fallback_line=5,invented=3,missing=4,scene_line_invented=1,try_today_invented=2",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.44",
+     "ref": "Bhagavad Gita 11.44",
+     "ref_iast": "Bhagavad Gītā 11.44",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shaken by the cosmic vision, asks Krishna to forgive his years of casual familiarity.",
+     "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥",
+     "line": "Bear with me as a father bears with a son, a friend with a friend, a lover with the beloved.",
+     "translation": "So, bowing and prostrating my body, I ask your grace, adorable Lord. As a father with his son, a friend with his friend, a lover with the beloved, please bear with me.",
+     "words": [
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "प्रणम्य",
+       "en": "bowing down"
+      },
+      {
+       "sa": "प्रणिधाय",
+       "en": "placing down"
+      },
+      {
+       "sa": "कायम्",
+       "en": "the body"
+      },
+      {
+       "sa": "प्रसादये",
+       "en": "I seek to please"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "You"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "ईशम्",
+       "en": "the Lord"
+      },
+      {
+       "sa": "ईड्यम्",
+       "en": "worthy of praise"
+      },
+      {
+       "sa": "पितेव",
+       "en": "like a father"
+      },
+      {
+       "sa": "पुत्रस्य",
+       "en": "of a son"
+      },
+      {
+       "sa": "सखा इव",
+       "en": "like a friend"
+      },
+      {
+       "sa": "सख्युः",
+       "en": "of a friend"
+      },
+      {
+       "sa": "प्रियः",
+       "en": "a beloved"
+      },
+      {
+       "sa": "प्रियायाः",
+       "en": "of a beloved"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "You should"
+      },
+      {
+       "sa": "देव",
+       "en": "O radiant one"
+      }
+     ],
+     "why": "We take those closest to us for granted; it is never too late to say sorry.",
+     "misuse": "Asking for forgiveness is not demanding it; the other person still decides.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p11.6",
+      "title": "Terrified, Arjuna prays to see the gentle four-armed form",
+      "summary": "Trembling, Arjuna praises Krishna, asks pardon for having treated him as just a friend, begs him to bear with him as a father, friend or lover would, and asks to see his familiar form.",
+      "story_hook": "Arjuna remembered every joke, every careless 'Hey, Krishna!' across years of friendship, and his voice broke.",
+      "lesson": "We take those closest to us for granted; it is never too late to say sorry."
+     },
+     "score": 1.7552,
+     "beat": "hook",
+     "role_fit": 0.78,
+     "meaning": null,
+     "for_you": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.129.11",
+     "ref": "Mahabharata · Udyoga Parva · Udyoga: Krishna's peace embassy",
+     "ref_iast": "Mahābhārata, Udyoga Parva 129.11",
+     "family": "mbh",
+     "speaker": "Gandhari",
+     "listener": "Dhritarashtra",
+     "setting": "Gandhari turns first on her husband, who has indulged their son for years.",
+     "sanskrit": "त्वं ह्येवात्र भृशं गर्ह्यो धृतराष्ट्र सुतप्रियः / यो जानन्पापतामस्य तत्प्रज्ञामनुवर्तसे",
+     "line": "A parent who sees a child's wrong and still goes along with it shares the blame.",
+     "translation": "You are the one most to blame here, Dhritarashtra, so fond of your son: you know his wrongdoing and still follow his lead.",
+     "words": [],
+     "why": "Master yourself first. Greed never made anyone rich, and indulgent parents share the blame.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      },
+      {
+       "id": "teen_conflict",
+       "label": "My teenager won't listen to me"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.gandhari_counsel",
+      "title": "Gandhari counsels her son",
+      "summary": "Summoned to the court, Queen Gandhari first blames her husband for indulging their son, then tells Duryodhana that whoever cannot rule himself cannot rule a kingdom, and that half the earth is enough.",
+      "story_hook": "",
+      "lesson": "Master yourself first. Greed never made anyone rich, and indulgent parents share the blame."
+     },
+     "score": 3.4159,
+     "beat": "diagnose",
+     "role_fit": 0.79,
+     "meaning": "Queen Gandhari stands in the court. She has seen her son Duryodhana refuse every peace offer. She turns on her husband Dhritarashtra, who has always followed their son’s lead. She tells him he is the one most to blame, because he knows his son's wrongdoing and still goes along with it. The verse says a parent who sees a child's wrong and still follows it shares the blame. You could master yourself first. Indulgence does not protect anyone.",
+     "for_you": "The self is untouched by your mistakes; it was never stained and cannot be made less, whatever you have done.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": [
+      "How do I stop carrying blame that is not mine?",
+      "What is my part in my son's choices?",
+      "How do I master myself when I am afraid?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "without virtue"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "performed"
+      },
+      {
+       "sa": "स्वभावनियतं",
+       "en": "fixed by nature"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "किल्बिषम्",
+       "en": "fault"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.0393,
+     "beat": "steady",
+     "role_fit": 0.245,
+     "meaning": "Krishna tells Arjuna that it is better to walk your own path imperfectly than to walk another's perfectly. He says doing the work that fits your own nature, even with flaws, brings no blame. The idea is that your duty is to act from your own truth, not to copy someone else's standard.",
+     "for_you": "Your worth as a parent is not measured by his choices. You are trying to find the right way to be with him, and that search itself is your work. The anger you feel is part of this search. Let your own path be enough for today.",
+     "try_today": "Notice one moment where you act from your own nature, not from how you think a parent should be.",
+     "scene_line": "You are on your own path, imperfectly walked, with your son.",
+     "asks": [
+      "How do I know my own path from his?",
+      "What is my work, not his?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 1.9578,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ashtavakra speaks to Janaka in the closing chapter of the text, painting the calm of the wise. The king has just sat in silence and seen the truth. Now Ashtavakra describes the steady mind. He says a person who is at peace does not pray for gain, nor grieve over loss. The cool mind of the steady one is filled as if with nectar. Calm is not found by chasing it or changing places. It is simply how you hold ordinary life.",
+     "for_you": "Be on your own side as the self is on yours; make amends, learn, and begin again without carrying the old verdict.",
+     "try_today": "Notice one moment today when you do not ask for approval.",
+     "scene_line": "You are a steady mind holding ordinary life while the room is empty.",
+     "asks": [
+      "How do I hold ordinary life when it is not ordinary?",
+      "What does a steady mind feel like in my body?",
+      "Can I be full even when the room is empty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.0262,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to you from a place of seeing how people behave when life is working. He says the good behave by cutting craving, practising forbearance, and giving up arrogance. They do not take delight in wrong, they speak the truth, and they follow the path of the good. They serve the wise, honour those worthy of honour, and win over even their enemies. This is not about being weak. It is about knowing that real ornaments are listening, giving, and helping. A steady mind stays cool and full.",
+     "for_you": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+     "try_today": null,
+     "scene_line": "You are the good in a house that is pulling you apart, and you could win over your own fear.",
+     "asks": [
+      "How do I speak truth without starting a fight?",
+      "How do I hold a boundary with my son?",
+      "How do I stop my husband's blame from landing as truth?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.5361,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": null,
+     "for_you": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sandals",
+     "title": "The sandals: a compromise between brothers",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Bharata",
+      "Ram",
+      "Vasishtha"
+     ],
+     "story_hook": "Neither brother would give way, so Bharata asked for his brother's sandals.",
+     "summary": "Bharata threatens to fast at Ram's door until he returns. Ram persuades him to rise, and they reach a compromise: Bharata takes Ram's sandals to rule in his name. At parting Ram asks him to drop his resentment of their mother.",
+     "lesson": "When neither can give way, find a form that honours both; and let go of blame.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.112.19",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 112.19",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Bharata",
+      "setting": "Parting at Chitrakoot, Ram asks Bharata to make peace with Kaikeyi.",
+      "sanskrit": "कामाद् वा तात लोभाद् वा मात्रा तुभ्यमिदं कृतम्। न तन्मनसि कर्तव्यं वर्तितव्यं च मातृवत्॥",
+      "line": "She did it for you, out of wanting or greed. Don't carry it; treat her as your mother still.",
+      "translation": "Whether from desire or greed, your mother did this for your sake. Do not hold it in your mind; treat her as a son treats his mother.",
+      "words": [],
+      "why": "When neither can give way, find a form that honours both; and let go of blame.",
+      "misuse": "Not a call to keep an abusive parent close; Ram asks Bharata to drop resentment, not his judgement.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       },
+       {
+        "id": "resentment",
+        "label": "I can't let go of resentment"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sandals",
+       "title": "The sandals: a compromise between brothers",
+       "summary": "Bharata threatens to fast at Ram's door until he returns. Ram persuades him to rise, and they reach a compromise: Bharata takes Ram's sandals to rule in his name. At parting Ram asks him to drop his resentment of their mother.",
+       "story_hook": "Neither brother would give way, so Bharata asked for his brother's sandals.",
+       "lesson": "When neither can give way, find a form that honours both; and let go of blame."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Neither brother would give way, so Bharata asked for Ram's sandals",
+     "teaser": "Neither brother would give way, so Bharata asked for Ram's sandals",
+     "for_you": "A mother who stood between her son's trouble and her husband's blame shows you what holding your ground looks like.",
+     "asks": [
+      "How do I hold my ground without breaking the peace at home?",
+      "Can I honour my son's path without taking his blame?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Blamed for his choices",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 22607,
+   "total": 22610
+  },
+  "_ms": 22614
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "They cannot say no to anyone and then quietly resent them for it.",
+ "mechanism": "need_for_approval",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "people_pleasing",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 1.098,
+   "source": "note"
+  },
+  {
+   "id": "boundaries_family",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "envy",
+   "weight": 0.37,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You say yes, and then the quiet resentment sits in you like a stone.",
+ "queries": {
+  "hook": "The quiet resentment that builds after every yes you cannot stop saying, and the exhaustion of being the one everyone counts on. I can't say no to people.",
+  "diagnose": "When your worth depends on others' approval, every word of blame shakes you; craving approval keeps the mind unsteady, and the mind says yes to keep the peace.",
+  "steady": "Praise and blame come and go; what is yours cannot be taken, and your time is yours to give or keep.",
+  "act": "Practise saying no with a reason that is yours: I have a prior commitment, I need the evening, I will not be able to do it this time. Let the discomfort pass.",
+  "story": "A man who could not say no to his own family, and the cost of it, shows you what a single no can begin."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The yes you cannot stop",
+  "What approval costs",
+  "The one who says no"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "resentful and trapped",
+ "bridge": "The yes you cannot stop saying is what the Gita calls attachment to results you cannot control: you say yes to keep the peace, and the peace never comes.",
+ "week_thesis": "By the end of the week the yes you cannot stop saying has a name, and you try one no that is yours.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the quiet resentment and the yes that feeds it, named without judgement.",
+  "diagnose": "You see that it is the need for approval, not the colleagues, that keeps you saying yes.",
+  "steady": "You hold that your time is yours to give or keep, and that approval is not something you must earn.",
+  "act": "You try saying no to one request, with a reason that is yours, and you let the discomfort pass.",
+  "story": "A man who could not say no to his own family shows you what one no can begin."
+ },
+ "insight": "You say yes to keep the peace, and the peace never comes. The resentment is not at them. It is at the part of you that cannot say no.",
+ "seat": "a person who cannot say no and then carries the resentment alone",
+ "life_context": "In their late twenties or early thirties and working; they keep covering shifts for colleagues, and the cost is a quiet resentment that builds because they cannot refuse.",
+ "details": [
+  "covered a colleague's shift for the third time this month",
+  "cannot say no to anyone",
+  "resents them quietly after agreeing"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "llm_mechanism_invalid",
+  "hook:anchored_to_situation"
+ ]
+}

@@ -1,0 +1,809 @@
+{
+ "situation": {
+  "id": "ca_millennial_new_immigrant",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "Canada (Toronto)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving the present",
+   "bridge": "The life you left behind in Hyderabad is what the texts call a real loss. The life you are building now is what you are choosing, and the two are not the same.",
+   "week_thesis": "Seven days from grieving the past and feeling ruined to seeing the cost clearly and speaking the truth about the choice you made.",
+   "week_beats": {
+    "hook": "You recognise the grief for the life left behind and the feeling that you ruined the present.",
+    "diagnose": "You see that the cost of the move is real, but it is not the whole story of what you gave your family.",
+    "steady": "You hold that the life you left behind and the life you are building are both real, and neither erases the other.",
+    "act": "You try naming what you have given and what you have lost, and speaking the truth to your family about the choice you made."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A father who left a senior management role to drive at night abroad is grieving the present and feels he has ruined it for his family.",
+   "mirror": "You managed forty people, and now you drive through the night while your wife cries in the cold.",
+   "insight": "You left a role that defined you, and the man who held it is grieving. The cold and the crying are real, but they are not the whole story of what you gave them.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.437,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Leaving a life that defined you, and now watching the family you moved for pay the price in the cold and the silence.",
+    "diagnose": "When a move is made for someone else's future, the grief for what was left behind grows in the quiet moments; the present pain is real, but it is not the whole cost.",
+    "steady": "What you chose was real, and so is the grief; the life you built is not the life you lost, and both can be true.",
+    "act": "Name what you have given and what you have lost, speak the truth to your family about what this move meant, and hold your ground on the choice you made.",
+    "story": "A man who left his homeland and his standing to build a future for his child, who faced the loneliness and the loss, and found the strength to hold both."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The cost of the move",
+    "What you gave and what you lost",
+    "The man who chose"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife is unhappy with the cold",
+    "did it for son's future"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.6,9=0.6,1=0.3,61=0.0,78=0.3,6=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.63",
+    "redo:5",
+    "redo_fixed:1",
+    "dropped:copied=1,fallback_line=1,repeat=3,soft_kept=4,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.6298,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield, his body heavy, his mind refusing to move. He has seen the faces of those he is meant to fight, and he tells Krishna that even if he wins everything, it will not touch the grief that is drying him up inside. He admits he sees no way to drive this sorrow away. The verse proposes that clarity begins when you admit you do not know and ask for help.",
+     "for_you": "You are in a car in the cold, and the life you left behind in Hyderabad is drying you up inside. The grief is real, and it is not just about the cold or the crying. It is about the man who managed people and now drives at night.",
+     "try_today": "Notice the grief without trying to fix it.",
+     "scene_line": "You are in your own car, the engine running, and the grief is drying you up inside.",
+     "asks": [
+      "How do I tell the grief from the cold?",
+      "What does it mean to admit I do not know?",
+      "Can I ask for help without feeling weak?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.338.9",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.9",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada teaches Shuka how to stop grief from multiplying.",
+     "sanskrit": "मृतं वा यदि वा नष्टं योऽतीतमनुशोचति / दुःखेन लभते दुःखं द्वावनर्थौ प्रपद्यते",
+     "line": "Dwelling on what is lost adds a second sorrow to the first.",
+     "translation": "Whoever keeps grieving over the past, over what has died or been lost, gets sorrow on top of sorrow: two misfortunes instead of one.",
+     "words": [],
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "Mourning is natural; this is about endless replaying.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.3757,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Narada finds the young Shuka drowning in sorrow and tells him that mourning is natural, but endlessly replaying the past is a second wound. He says that whoever keeps grieving over what is lost gets sorrow on top of sorrow: two misfortunes instead of one. The point is that brooding does not heal pain. It grows it. Care for the mind as you would the body. Act if you can fix it, and find contentment in what remains.",
+     "for_you": "You left the life in Hyderabad, and the man who held that role is grieving. The cost is not your family's loss.",
+     "try_today": "Notice when the past plays again, and name it as a second sorrow.",
+     "scene_line": "You sit in your car after a shift, and the past plays again.",
+     "asks": [
+      "How do I stop the past from playing again?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.4.8.chaupai.1",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Sugriva",
+     "setting": "Ram to Sugriva, as they swear friendship by the fire.",
+     "sanskrit": "जे न मित्र दुख होहिं दुखारी। तिन्हहि बिलोकत पातक भारी॥ निज दुख गिरि सम रज करि जाना। मित्रक दुख रज मेरु समाना ॥",
+     "line": "A real friend treats his own troubles as dust and his friend's troubles as a mountain.",
+     "translation": "Those who are not pained by a friend's pain commit a grave wrong just by being seen. A true friend treats his own mountain of sorrow as a speck of dust, and his friend's speck of sorrow as a mountain.",
+     "words": [
+      {
+       "sa": "जे",
+       "en": "those who"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "मित्र",
+       "en": "friend"
+      },
+      {
+       "sa": "दुख",
+       "en": "suffering"
+      },
+      {
+       "sa": "होहिं",
+       "en": "feel"
+      },
+      {
+       "sa": "तिन्हहि",
+       "en": "to them"
+      },
+      {
+       "sa": "बिलोकत",
+       "en": "seeing"
+      },
+      {
+       "sa": "पातक",
+       "en": "sin/fault"
+      },
+      {
+       "sa": "निज",
+       "en": "own"
+      },
+      {
+       "sa": "दुख",
+       "en": "suffering"
+      },
+      {
+       "sa": "गिरि",
+       "en": "mountain"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "रज",
+       "en": "dust"
+      },
+      {
+       "sa": "करि",
+       "en": "making"
+      },
+      {
+       "sa": "मित्रक",
+       "en": "friend's"
+      },
+      {
+       "sa": "दुख",
+       "en": "suffering"
+      },
+      {
+       "sa": "रज",
+       "en": "dust"
+      },
+      {
+       "sa": "मेरु",
+       "en": "great mountain"
+      }
+     ],
+     "why": "A friend treats your trouble as bigger than their own.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.friendship_pact",
+      "title": "Ram and Sugriva become friends",
+      "summary": "Hanuman, sent to check whether the two strangers are Bali's spies, recognises Ram and brings him to Sugriva, who has been driven out by his brother. Before a fire as witness they become friends, and Ram describes what friendship asks: your friend's small trouble is a mountain, your own is dust; steer him right, hide his faults, love him more in hard times.",
+      "story_hook": "",
+      "lesson": "A friend treats your trouble as bigger than their own."
+     },
+     "score": 2.7448,
+     "beat": "steady",
+     "role_fit": 0.35,
+     "meaning": "Ram is telling Sugriva what it means to be a friend. He says that if someone does not care when their friend is in pain, they do a great wrong simply by being near. A true friend looks at their own huge pile of trouble and sees it as nothing. Then they look at their friend's small trouble and see it as a mountain. They steer their friend toward what is right and hide their faults, loving them even more when things are hard.",
+     "for_you": "The life you left in Hyderabad is your mountain right now. The life you are building in Canada is your dust. You do not have to pretend the dust does not exist so you can carry the mountain.",
+     "try_today": "Notice one moment where you carry the mountain and the dust at the same time.",
+     "scene_line": "You stand before the fire of your new life, holding the mountain of your old self.",
+     "asks": [
+      "How do I let my partner see this mountain without making them carry it?",
+      "Where is the dust in my new life that I keep ignoring?",
+      "Can my children see the mountain without feeling it is their fault?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_isha.7",
+     "ref": "Isha Upanishad 7",
+     "ref_iast": "Īśa Upaniṣad 7",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Continues verse 6 on seeing oneness.",
+     "sanskrit": "यस्मिन्सर्वाणि भूतान्यात्मैवाभूद्विजानतः । तत्र को मोहः कः शोक एकत्वमनुपश्यतः ॥",
+     "line": "When you see the same life in everyone, where is there room for confusion or grief?",
+     "translation": "For the one who knows, in whom all beings have become the self, what confusion, what sorrow can there be, seeing oneness everywhere?",
+     "words": [
+      {
+       "sa": "यस्मिन्",
+       "en": "in which"
+      },
+      {
+       "sa": "सर्वाणि",
+       "en": "all"
+      },
+      {
+       "sa": "भूतानि",
+       "en": "beings"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "the true self alone"
+      },
+      {
+       "sa": "अभूत्",
+       "en": "became"
+      },
+      {
+       "sa": "विजानतः",
+       "en": "knowing"
+      },
+      {
+       "sa": "तत्र",
+       "en": "there"
+      },
+      {
+       "sa": "को",
+       "en": "who"
+      },
+      {
+       "sa": "मोहः",
+       "en": "delusion"
+      },
+      {
+       "sa": "कः",
+       "en": "who"
+      },
+      {
+       "sa": "शोकः",
+       "en": "sorrow"
+      },
+      {
+       "sa": "एकत्वम्",
+       "en": "oneness"
+      },
+      {
+       "sa": "अनुपश्यतः",
+       "en": "seeing"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.4303,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "The seer speaks to the reader. They have just explained that the divine is everything and that all of life is a gift. Now they ask a question about how to live in that truth. They say that when you truly know that the same life lives in everyone, there is no place left for confusion or grief. The point is to hold what you have lightly, keep doing your work, and see yourself in every person you meet.",
+     "for_you": "You are caught between two lives, and the cold in the car is real. But the grief is not just for the life you left. It is for the man who held that job. You can hold both truths.",
+     "try_today": "Notice one person at work and see your own life in them.",
+     "scene_line": "You are driving through the night, holding a life that belongs to the divine.",
+     "asks": [
+      "How do I let go of the life I left behind?",
+      "How do I see myself in my family right now?",
+      "What does it mean to hold my work lightly?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.0371,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari is speaking to you, the reader, from a section on how the good behave. He lists the marks of a noble life. He says to cut off craving, to give up arrogance, to speak the truth, and to show courtesy. He tells you to serve the wise and to be kind to those who are in pain. The point is that success should make you bow lower. The real ornaments of a life are listening, giving, and helping.",
+     "for_you": "The life you left in Hyderabad is not the only life you have given them. You have given them the chance to live in a new country. You are not ruined.",
+     "try_today": "Tell your partner, in your own words, what this choice cost you and what it gave them.",
+     "scene_line": "You are in the quiet of a drive, naming the cost of a choice made for love.",
+     "asks": [
+      "How do I speak the truth about my choice without sounding like I am making excuses?",
+      "What is the difference between the life I left and the one I am building now?",
+      "Can I name my grief without making my family feel it is their fault?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.3579,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha how a person who is truly free lives in the world. The free person does not cling to what is gone or chase what is not here. They simply take up the work that is in front of them right now. They speak gently and kindly to everyone they meet. They try to understand what is in another person's heart before they judge them. Because they are not pulled around by wanting or not wanting, they do not drown in the sorrows of the world.",
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+     "try_today": "Name one thing you gave up and one thing you are building now.",
+     "scene_line": "You are the free person, taking up the night shift, speaking gently to the one who cries.",
+     "asks": [
+      "How do I speak the truth without breaking what is left?",
+      "How do I let the past be dust and still feel it?",
+      "How do I know I am doing the work in front of me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.lakshman_sumitra",
+     "title": "Sumitra sends Lakshman with Ram",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Lakshman",
+      "Ram",
+      "Sumitra"
+     ],
+     "story_hook": "Lakshman went to his mother expecting to be told to stay.",
+     "summary": "Ram asks Lakshman to stay and care for their old father and grieving mothers; Lakshman cannot imagine life apart from him. He goes to his mother Sumitra, afraid she will stop him. Instead she tells him that home is wherever Ram is, as day is wherever the sun shines, and gives him one piece of advice for the road.",
+     "lesson": "Home is where your people are; a good send-off gives values, not just tears.",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.73.chaupai.2",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 73",
+      "family": "rcm",
+      "speaker": "Sumitra",
+      "listener": "Lakshman",
+      "setting": "Sumitra tells her son Lakshman to follow Ram into exile.",
+      "sanskrit": "अवध तहाँ जहँ राम निवासू। तहँइँ दिवसु जहँ भानु प्रकासू॥ जौं पै सीय रामु बन जाहीं। अवध तुम्हार काजु कछु नाहीं ॥",
+      "line": "Home is wherever your people are, as day is wherever the sun shines.",
+      "translation": "Ayodhya is wherever Ram lives; day is wherever the sun shines. If Sita and Ram really go to the forest, you have nothing to do in Ayodhya.",
+      "words": [
+       {
+        "sa": "अवध",
+        "en": "Ayodhya"
+       },
+       {
+        "sa": "तहाँ",
+        "en": "there"
+       },
+       {
+        "sa": "जहँ",
+        "en": "where"
+       },
+       {
+        "sa": "राम",
+        "en": "Ram"
+       },
+       {
+        "sa": "निवासू",
+        "en": "residence"
+       },
+       {
+        "sa": "तहँइँ",
+        "en": "there itself"
+       },
+       {
+        "sa": "दिवसु",
+        "en": "day"
+       },
+       {
+        "sa": "जहँ",
+        "en": "where"
+       },
+       {
+        "sa": "भानु",
+        "en": "sun"
+       },
+       {
+        "sa": "प्रकासू",
+        "en": "light"
+       },
+       {
+        "sa": "जौं",
+        "en": "if"
+       },
+       {
+        "sa": "पै",
+        "en": "indeed"
+       },
+       {
+        "sa": "सीय",
+        "en": "Sita"
+       },
+       {
+        "sa": "रामु",
+        "en": "Ram"
+       },
+       {
+        "sa": "बन",
+        "en": "forest"
+       },
+       {
+        "sa": "जाहीं",
+        "en": "go"
+       },
+       {
+        "sa": "अवध",
+        "en": "Ayodhya"
+       },
+       {
+        "sa": "तुम्हार",
+        "en": "your"
+       },
+       {
+        "sa": "काजु",
+        "en": "work"
+       },
+       {
+        "sa": "कछु",
+        "en": "some"
+       },
+       {
+        "sa": "नाहीं",
+        "en": "not"
+       }
+      ],
+      "why": "Home is where your people are; a good send-off gives values, not just tears.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "diaspora_identity",
+        "label": "I don't feel fully at home anywhere"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.lakshman_sumitra",
+       "title": "Sumitra sends Lakshman with Ram",
+       "summary": "Ram asks Lakshman to stay and care for their old father and grieving mothers; Lakshman cannot imagine life apart from him. He goes to his mother Sumitra, afraid she will stop him. Instead she tells him that home is wherever Ram is, as day is wherever the sun shines, and gives him one piece of advice for the road.",
+       "story_hook": "Lakshman went to his mother expecting to be told to stay.",
+       "lesson": "Home is where your people are; a good send-off gives values, not just tears."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman went to his mother Sumitra expecting to be told to stay",
+     "teaser": "Lakshman went to his mother Sumitra expecting to be told to stay",
+     "for_you": "Sumitra saw that home is wherever the people you love are, not the walls you built for them. The life you left in Hyderabad was a house of duty, but the life you are living now is a different kind of shelter. You did not ruin your family.",
+     "asks": [
+      "How do I tell the man I was from the father I am now?",
+      "Can I build a new home without the old one?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The cost of the move",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 24043,
+   "total": 24046
+  },
+  "_ms": 24051
+ }
+}

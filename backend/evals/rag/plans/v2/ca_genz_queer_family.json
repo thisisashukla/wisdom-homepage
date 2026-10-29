@@ -1,0 +1,673 @@
+{
+ "situation": {
+  "id": "ca_genz_queer_family",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged",
+  "market": "Canada (Vancouver)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "cut off and performing",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being the guest at your own table to standing in the truth of who you are, with the words to hold your ground.",
+   "week_beats": {
+    "hook": "You recognise being silenced and made a guest in your own home, named without blame."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher",
+    "work"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "After telling her parents about her girlfriend, they have gone silent and treat her like a guest at home, leaving her to perform normalcy at Diwali.",
+   "mirror": "You go home for Diwali and sit at the table while they talk about the weather.",
+   "insight": "They have stopped speaking to you, and at the table you are the one performing normalcy. The smaller role they have handed you is their silence.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.403,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.422,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as less than you are by the people who raised you, and the anger of sitting at your own table and performing normalcy. My parents' expectations weigh on me.",
+    "diagnose": "When others see only a role, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing, gently and firmly, hold your ground on what is yours, and find the courage the moment asks for.",
+    "story": "A woman who was told to be smaller by her own people, who stood in her truth and was proven right by her own feet."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The guest at home",
+    "Whose silence it is",
+    "The one who stands"
+   ],
+   "seat": "a student and worker who has been silenced by their parents after coming out",
+   "life_context": "",
+   "details": [
+    "told parents about girlfriend",
+    "parents respond with weather talk",
+    "feels like a guest at home during Diwali",
+    "the silence is a coldness"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "week_fit:5=0.3,7=0.0,11=0.6,17=0.3,1=0.6,532=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.65",
+    "redo:5",
+    "redo_fixed:2",
+    "dropped:cliche=1,repeat=4,slang=1,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.5695,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna tells Arjuna to be his own friend. He says you can raise yourself up or push yourself down. You are the one who decides which one you do. The self is the friend of the self. It is also the enemy. So do not let yourself sink when the cold comes. Stay steady in the silence.",
+     "for_you": "You are the one performing normalcy at the table. Your parents have handed you a smaller role. Now you can be your own friend. You do not have to sink into the silence they left. Lift yourself up. You are your own best friend.",
+     "try_today": "Notice one moment when you choose to lift yourself up today.",
+     "scene_line": "You are at your own table, and you are your own friend.",
+     "asks": [
+      "How can I be my own friend when they are silent?",
+      "What does lifting myself up look like today?",
+      "Who am I if I am not the guest at this table?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 2.8933,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": "Yudhishthira asks Bhishma how to handle being insulted in a public assembly. Bhishma tells him that the person who speaks ill of others in front of a crowd only puts their own faults on display, the way a snake raises its hood. The careless critic is the one on show, not the one being attacked. Let their words pass like a crow cawing.",
+     "for_you": "Your parents have made the table cold, but their silence is not your shame. It is their own fault laid bare, the way a snake raises its hood. You do not have to carry the weight of their coldness. Their words are a crow cawing, passing through.",
+     "try_today": "Notice the silence as their own fault, not yours.",
+     "scene_line": "You sit at your own table, while they raise the hood of their own fault.",
+     "asks": [
+      "How do I hold their silence without taking it in?",
+      "How do I stand firm when the table feels empty?",
+      "How do I tell their fault from my own worth?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.2.2.11",
+     "ref": "Katha Upanishad 2.2.11",
+     "ref_iast": "Kaṭha Upaniṣad 2.2.11",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the inner self and the world's pain.",
+     "sanskrit": "सूर्यो यथा सर्वलोकस्य चक्षुः न लिप्यते चाक्षुषैर्बाह्यदोषैः । एकस्तथा सर्वभूतान्तरात्मा न लिप्यते लोकदुःखेन बाह्यः ॥",
+     "line": "The sun shows every flaw yet stays untouched. Your deepest self stays untouched by the world's sorrow.",
+     "translation": "Just as the sun, the eye of the whole world, is not stained by the flaws the eyes see outside, so the one inner self of all beings is not stained by the sorrow of the world; it stands apart.",
+     "words": [],
+     "why": "Look inward; what lasts is not out there among passing things.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.katha.inward",
+      "title": "Turning the gaze inward",
+      "summary": "In the second half of his teaching, Yama explains that our senses face outward, so we miss what is within. The wise turn inward and stop looking for lasting things among passing ones; when the knots of the heart are cut, a person is free.",
+      "story_hook": "",
+      "lesson": "Look inward; what lasts is not out there among passing things."
+     },
+     "score": 2.7796,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Yama tells Nachiketa that just as the sun is not stained by the flaws it sees, the inner self is not stained by the world's sorrow. The wise turn inward because the senses look outward and miss what is within. When the knots of the heart are cut, a person is free.",
+     "for_you": "You are performing normalcy at a table that now belongs to them. The coldness is not a stain on who you are. Your deepest self stays untouched by their silence.",
+     "try_today": "Notice one thing you do that belongs only to you, not to the performance.",
+     "scene_line": "You are the sun, and their silence is the flaw they see.",
+     "asks": [
+      "How do I see myself when they only see a guest?",
+      "What does it mean to cut the knots of my heart?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.8",
+     "ref": "Ashtavakra Gita 15.8",
+     "ref_iast": "Aṣṭāvakra Gītā 15.8",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "श्रद्धस्व तात श्रद्धस्व नात्र मोऽहं कुरुष्व भोः । ज्ञानस्वरूपो भगवानात्मा त्वं प्रकृतेः परः ॥",
+     "line": "Have faith, my child, have faith. You are more than everything that happens to you.",
+     "translation": "Have faith, my son, have faith. Do not be confused about this. You are knowledge itself, the Lord, the Self beyond nature.",
+     "words": [
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "नात्र",
+       "en": "here not"
+      },
+      {
+       "sa": "मः",
+       "en": "illusion"
+      },
+      {
+       "sa": "कुरुष्व",
+       "en": "do"
+      },
+      {
+       "sa": "भोः",
+       "en": "oh"
+      },
+      {
+       "sa": "ज्ञानस्वरूपो",
+       "en": "embodiment of wisdom"
+      },
+      {
+       "sa": "भगवानात्मा",
+       "en": "supreme self"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "प्रकृतेः",
+       "en": "of nature"
+      },
+      {
+       "sa": "परः",
+       "en": "beyond"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.6439,
+     "beat": "steady",
+     "role_fit": 0.775,
+     "meaning": "Ashtavakra tells Janaka that he is the one who knows, not the one who suffers. The king has been told he is not the body or the mind, but the silent witness behind them. Ashtavakra asks him to stop doubting this. The teaching is that you are the space in which the storm happens, not the storm itself. The waves of life, the roles you play, and the pain they bring rise and fall, but they cannot touch the core of who you are.",
+     "for_you": "You are not that performance. You are the awareness in which this silence happens. Have faith in who you are.",
+     "try_today": "Notice when you start to perform and remember you are the one watching it happen.",
+     "scene_line": "You are the awareness in which their silence plays out.",
+     "asks": [
+      "How do I stop letting their silence define my day?",
+      "How do I hold faith when the performance is so tiring?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.497,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat after his father's death and Ram's exile. Bharat refuses the crown and decides to go to the forest to admit his fault to Ram. Vasishtha tells him to keep courage in his heart, and to do what today asks of him. The idea is that when your head and heart are in conflict, you could go and face the person you think you have wronged.",
+     "for_you": "The silence at your table is a heavy thing. Vasishtha is telling Bharat to go and face the one he hurt. You are not at fault, but you are carrying a silence that wants you to shrink. Let the coldness be their choice.",
+     "try_today": "Write one sentence about who you are, and read it to yourself.",
+     "scene_line": "You stand at the edge of your own home, ready to face the silence.",
+     "asks": [
+      "How do I face them when they will not speak to me?",
+      "What does it mean to be on my own side right now?",
+      "How do I keep my courage when I feel like a guest?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1099,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha how a person who is truly free lives among others. This is not about running away to a quiet cave. It is about staying right in the middle of life. You do the work that is in front of you. You speak gently, and you watch people with care. You stop wanting one thing and running from another. When you do this, you do not sink. You do not drown in the world's noise. You stay steady even when everything around you is rough.",
+     "for_you": "You are doing the work in front of you, performing normalcy at the table, and letting their silence sink you. Ribhu says do the work, speak gently, read their hearts, and you will not sink. You are not at fault. Stand firm.",
+     "try_today": "Do one small task at work with full attention, and let their silence be their own.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.brihad.gargi",
+     "title": "Gargi questions Yajnavalkya at Janaka's court",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Yajnavalkya",
+      "Gargi Vachaknavi",
+      "Janaka",
+      "Kahola"
+     ],
+     "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+     "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+     "lesson": "Ask your hard questions bravely, and give credit where it is due.",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "up_brihadaranyak.283",
+      "ref": "Brihadaranyaka Upanishad 3.5.1",
+      "ref_iast": "Bṛhadāraṇyaka Upaniṣad 3.5.1",
+      "family": "up",
+      "speaker": "Yajnavalkya",
+      "listener": "Kahola",
+      "setting": "At King Janaka's debate, Kahola asks about the self.",
+      "sanskrit": "या ह्येव पुत्रैषणा सा वित्तैषणा या वित्तैषणा सा लोकैषणोभे ह्येते एषणे एव भवतस्तस्माद्ब्राह्मणः पाण्डित्यं निर्विद्य बाल्येन तिष्ठासेत् । बाल्यं च पाण्डित्यं च निर्विद्याथ मुनिरमौनं च मौनं च निर्विद्याथ ब्राह्मणः ।",
+      "line": "Wanting children, wanting money, wanting status: it is one desire. Learn, then live with a child's simplicity.",
+      "translation": "The desire for sons is the desire for wealth, and the desire for wealth is the desire for worlds; both are just desires. So a wise man, having done with learning, should seek to live like a child. Having done with both childlike simplicity and learning, he becomes a sage; having done with both silence and its absence, he becomes a true knower.",
+      "words": [],
+      "why": "Ask your hard questions bravely, and give credit where it is due.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.brihad.gargi",
+       "title": "Gargi questions Yajnavalkya at Janaka's court",
+       "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+       "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+       "lesson": "Ask your hard questions bravely, and give credit where it is due."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "teaser": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "for_you": "They have handed you the smaller role. You are the one performing normalcy at the table while they stay silent. Gargi stood in a hall of men and asked the hard question twice without backing down.",
+     "asks": [
+      "How do I ask the hard question without starting a war?",
+      "What is my hard question right now?",
+      "How do I know when to step back like Gargi?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The guest at home",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 20397,
+   "total": 20401
+  },
+  "_ms": 20405
+ }
+}

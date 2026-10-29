@@ -1,0 +1,836 @@
+{
+ "situation": {
+  "id": "in_millennial_new_mother_identity",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 5
+  },
+  "note": "baby is 4 months. I love her but I miss who I was. everyone tells me to enjoy this phase. I feel like a bad mother for even thinking this.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Ahmedabad)",
+  "lang": "english",
+  "slices": [
+   "guilt",
+   "lang:english",
+   "parenting"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "loving and grieving",
+   "bridge": "What you call missing the self you were, the texts call grief for a bond that was real, and it is not the same as not loving the one you have.",
+   "week_thesis": "Seven days from feeling like a bad mother to understanding that the grief is love with nowhere to go, and that you are allowed to hold both.",
+   "week_beats": {
+    "hook": "You recognise the love and the grief together, and the guilt, without judgement.",
+    "diagnose": "You see that the grief is real and the guilt is added on top. They are not the same thing.",
+    "steady": "You hold that what is real in you cannot be lost, and your love is not less for the grief.",
+    "act": "You try letting the grief have its place, speaking it to one safe person, and doing one small thing that is just yours.",
+    "story": "A mother who mourned the life she had lost shows you that love and grief can live in the same heart."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A new mother who loves her four-month-old but is grieving who she was before, and feels she is a bad mother for missing that self.",
+   "mirror": "Everyone says enjoy this phase, and you feel like a bad mother for not being able to.",
+   "insight": "You are not a bad mother. You are a person who is grieving a self that is still real to you, and that grief has nowhere to go.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.775,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.38,
+     "source": "note"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.373,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Loving the baby and missing the self you were, with the guilt of feeling like a bad mother for both.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost; the self you were is not gone, it is only changed, and love can hold both.",
+    "act": "Let the grief have its place; speak it to one person who will not judge it, and do one small thing that is just yours before the day begins.",
+    "story": "A mother who mourned the life she had lost, and found that her love was not less for the grief she carried."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The grief and the guilt",
+    "What is real in you",
+    "More than a mother"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "baby is four months old",
+    "feels like a bad mother for thinking this"
+   ],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:34=0.3,2=0.6,22=0.6,452=0.6,45=0.0,7=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.63",
+    "retried:5",
+    "dropped:fallback_line=5,gendered=2,missing=4,verdict=1",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.488,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna speaks to Krishna after the great battle. He is shaken. He tells Krishna that the mind is restless, stormy, powerful and stubborn. He thinks it is as hard to hold as the wind. Krishna agrees with him. He says that the mind is hard to hold, but practice and letting go can train it.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": "Notice one moment when the mind feels like wind and let it pass.",
+     "scene_line": "You are in the middle of a mind that feels like wind.",
+     "asks": [
+      "How do I tell missing the past from not loving the present?",
+      "How do I hold the mind when it is restless?",
+      "Is it wrong to grieve the self I was?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.256.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 256",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Ram",
+     "setting": "Bharat, once Ram and their teacher have reassured him, admits what his dread was made of.",
+     "sanskrit": "अपडर डरेउँ न सोच समूलें। रबिहि न दोसु देव दिसि भूलें॥ मोर अभागु मातु कुटिलाई। बिधि गति बिषम काल कठिनाई ॥",
+     "line": "I was frightened by fears I had imagined. My worry had no root at all.",
+     "translation": "\"I was afraid of imagined fears; my worry had no root at all. If one loses one's direction, the sun is not to blame. It was my misfortune, my mother's crookedness, the hard turn of fate and the difficulty of the times...\"",
+     "words": [
+      {
+       "sa": "अपडर",
+       "en": "false fear"
+      },
+      {
+       "sa": "डरेउँ",
+       "en": "I was afraid"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "सोच",
+       "en": "sorrow, worry"
+      },
+      {
+       "sa": "समूलें",
+       "en": "at the root"
+      },
+      {
+       "sa": "रबिहि",
+       "en": "the sun"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "दोसु",
+       "en": "fault"
+      },
+      {
+       "sa": "देव",
+       "en": "O divine one"
+      },
+      {
+       "sa": "दिसि",
+       "en": "direction"
+      },
+      {
+       "sa": "भूलें",
+       "en": "having lost"
+      },
+      {
+       "sa": "मोर",
+       "en": "my"
+      },
+      {
+       "sa": "अभागु",
+       "en": "misfortune"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कुटिलाई",
+       "en": "crookedness"
+      },
+      {
+       "sa": "बिधि",
+       "en": "fate"
+      },
+      {
+       "sa": "गति",
+       "en": "course"
+      },
+      {
+       "sa": "बिषम",
+       "en": "crooked, harsh"
+      },
+      {
+       "sa": "काल",
+       "en": "time"
+      },
+      {
+       "sa": "कठिनाई",
+       "en": "hardness"
+      }
+     ],
+     "why": "In family conflict, let each speak; name love plainly; lift needless shame.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.chitrakoot_assembly",
+      "title": "The family council at Chitrakoot",
+      "summary": "Vasishtha asks how Ram can be brought home, noting that grieving people cannot judge well. Bharat recalls a brother who never broke his heart and let him win at games, and blames himself. Ram tells him his shame is needless, that love and hostility cannot be hidden, and asks him to say freely what he wants.",
+      "story_hook": "",
+      "lesson": "In family conflict, let each speak; name love plainly; lift needless shame."
+     },
+     "score": 3.0768,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bharat, once Ram and their teacher have reassured him, admits what his dread was made of. He tells Ram that his worry had no root in truth. He had been frightened by fears he himself had imagined. The verse says that when we lose our way, the world is not to blame. The sorrow is ours alone, born of our own mind. It asks us to look at our own fear and see that it is only a story we told ourselves.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": "Notice when your mind adds guilt to your grief and name it as a story, not a fact.",
+     "scene_line": "You are in your own Chitrakoot, admitting to Ram that your worry had no root at all.",
+     "asks": [
+      "How do I tell the difference between grief and guilt?",
+      "What if I am not the only one who feels this?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "words": [],
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 2.9769,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama speaks to Nachiketa about the self that never dies. He says the true self is not the body that changes and breaks. It is steady, great, and everywhere, even when the outside world is not. Knowing this means you see that what you most are cannot be lost. A quiet and honest life is how you find that steadiness.",
+     "for_you": "The grief for the person you were before the baby is real. You can hold both.",
+     "try_today": "Notice one moment today where you feel the old self and the new self at once.",
+     "scene_line": "You are in your own quiet room, holding a truth that does not change.",
+     "asks": [
+      "How do I know my love for my child is still real?",
+      "Can I hold my old self and this new life together?",
+      "What does a quiet and honest life look like for me now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.452",
+     "ref": "Maha Upanishad 5.170",
+     "ref_iast": "Mahā Upaniṣad 5.170",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on handling the world's give and take.",
+     "sanskrit": "अतो निदाघ तत्त्वज्ञ व्यवहारेषु संसृतेः । नष्टं नष्टमुपेक्षस्व प्राप्तं प्राप्तमुपाहर ॥",
+     "line": "Let what is lost go. Take up what comes.",
+     "translation": "So, Nidagha, knower of truth, in the dealings of worldly life, let go of whatever is lost, and take up whatever comes.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.258,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu is speaking to Nidagha, a student who wants to understand how to live in the world without being dragged down by it. The world is always changing. Things are gained and things are lost. Ribhu tells him to let go of whatever is lost and take up whatever comes. This is the way a free person moves. They do the work in front of them and speak gently, but inside they are calm and unhurried. The lesson is to live fully in the world while keeping a steady center.",
+     "for_you": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+     "try_today": "Notice one moment of grief for the self you were and let it be there without trying to fix it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "avadhuta.8.7",
+     "ref": "Avadhuta Gita 8.7",
+     "ref_iast": "Avadhūta Gītā 8.7",
+     "family": "gitas",
+     "speaker": "Dattatreya",
+     "listener": "his own mind / the seeker",
+     "setting": "Dattatreya explains each syllable of the word 'Avadhuta' as a mark of the free person.",
+     "sanskrit": "वासना वर्जिता येन वक्तव्यं च निरामयम् । वर्तमानेषु वर्तेत वकारं तस्य लक्षणम् ॥",
+     "line": "Let go of old cravings, speak only what heals, and live in the present.",
+     "translation": "One who has given up old cravings, whose speech is wholesome, and who lives in the present: that is the meaning of 'va'.",
+     "words": [
+      {
+       "sa": "वासना",
+       "en": "desire"
+      },
+      {
+       "sa": "वर्जिता",
+       "en": "free from"
+      },
+      {
+       "sa": "येन",
+       "en": "by whom"
+      },
+      {
+       "sa": "वक्तव्यं",
+       "en": "speech"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "निरामयम्",
+       "en": "without attachment"
+      },
+      {
+       "sa": "वर्तमानेषु",
+       "en": "in the present"
+      },
+      {
+       "sa": "वर्तेत",
+       "en": "dwells"
+      },
+      {
+       "sa": "वकारं",
+       "en": "the characteristic 'va'"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      }
+     ],
+     "why": "A free person seeks no honour, gives it freely, and lives in the present.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "avadhuta.p.marks_of_avadhuta",
+      "title": "The marks of a free person",
+      "summary": "The last chapter portrays the free sage as gentle, moderate, humble yet respectful to others, kind and truthful. Dattatreya then reads each syllable of 'A-va-dhu-ta' as a mark: free of expectation, living in the present, free of ego.",
+      "story_hook": "",
+      "lesson": "A free person seeks no honour, gives it freely, and lives in the present."
+     },
+     "score": 2.3985,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": null,
+     "for_you": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.40.12",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 40.12",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "इदं च त्वां सर्वपरं ब्रवीमि / पुण्यं पदं तात महाविशिष्टम् / न जातु कामान्न भयान्न लोभा- / द्धर्मं जह्याज्जीविस्यापि हेतोः",
+     "line": "Never give up what is right, not for desire, not from fear, not for money.",
+     "translation": "Here is the highest thing I can tell you, the purest and most valuable: never abandon what is right, not out of desire, not out of fear, not out of greed, not even to save your life.",
+     "words": [],
+     "why": "Don't trade what's right for desire, fear or money. Only your deeds stay with you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.40",
+      "title": "Vidura Niti: never abandon what is right",
+      "summary": "Vidura closes with the heart of his counsel: never give up what is right for desire, fear or greed; only our deeds go with us; ask the wise when unsure.",
+      "story_hook": "",
+      "lesson": "Don't trade what's right for desire, fear or money. Only your deeds stay with you."
+     },
+     "score": 1.8612,
+     "beat": "act",
+     "role_fit": 0.851,
+     "meaning": null,
+     "for_you": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "words": [
+       {
+        "sa": "माता",
+        "en": "mother"
+       },
+       {
+        "sa": "पुनि",
+        "en": "again"
+       },
+       {
+        "sa": "बोली",
+        "en": "spoke"
+       },
+       {
+        "sa": "सो",
+        "en": "that"
+       },
+       {
+        "sa": "मति",
+        "en": "mind"
+       },
+       {
+        "sa": "डोली",
+        "en": "changed"
+       },
+       {
+        "sa": "तजहु",
+        "en": "leave"
+       },
+       {
+        "sa": "तात",
+        "en": "dear one"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "रूपा",
+        "en": "form"
+       },
+       {
+        "sa": "कीजै",
+        "en": "do"
+       },
+       {
+        "sa": "सिसुलीला",
+        "en": "child-play"
+       },
+       {
+        "sa": "अति",
+        "en": "very"
+       },
+       {
+        "sa": "प्रियसीला",
+        "en": "dear-loving"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "सुख",
+        "en": "joy"
+       },
+       {
+        "sa": "परम",
+        "en": "supreme"
+       },
+       {
+        "sa": "अनूपा",
+        "en": "matchless"
+       },
+       {
+        "sa": "सुनि",
+        "en": "hearing"
+       },
+       {
+        "sa": "बचन",
+        "en": "words"
+       },
+       {
+        "sa": "सुजाना",
+        "en": "wise one"
+       },
+       {
+        "sa": "रोदन",
+        "en": "crying"
+       },
+       {
+        "sa": "ठाना",
+        "en": "began"
+       },
+       {
+        "sa": "होइ",
+        "en": "becoming"
+       },
+       {
+        "sa": "बालक",
+        "en": "child"
+       },
+       {
+        "sa": "सुरभूपा",
+        "en": "lord of the gods"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "चरित",
+        "en": "deed/story"
+       },
+       {
+        "sa": "जे",
+        "en": "who"
+       },
+       {
+        "sa": "गावहिं",
+        "en": "sing"
+       },
+       {
+        "sa": "हरिपद",
+        "en": "Hari's feet"
+       },
+       {
+        "sa": "पावहिं",
+        "en": "reach"
+       },
+       {
+        "sa": "ते",
+        "en": "they"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "परहिं",
+        "en": "fall"
+       },
+       {
+        "sa": "भवकूपा",
+        "en": "well of worldly existence"
+       }
+      ],
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw the whole universe in her son and still asked him to just be a baby. You are grieving the self you were, but the four-month-old in your arms is not the enemy.",
+     "asks": [
+      "How do I hold my child and my old self at once?",
+      "Can I love this baby and still mourn who I was?",
+      "What if my grief is not a sign I am failing?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The grief and the guilt",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 22263,
+   "total": 22265
+  },
+  "_ms": 22267
+ }
+}

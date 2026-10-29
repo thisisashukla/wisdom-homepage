@@ -97,13 +97,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       siteName: 'Wisdom',
       locale: 'hi_IN',
       alternateLocale: ['en_IN'],
-      images: ['https://wisdomquotes.in/og-image.jpg'],
+      images: ['https://wisdomquotes.in/og-image.webp'],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://wisdomquotes.in/og-image.jpg'],
+      images: ['https://wisdomquotes.in/og-image.webp'],
     },
     keywords: aliases ? aliases.join(', ') : undefined,
   }

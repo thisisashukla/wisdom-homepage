@@ -1,0 +1,639 @@
+{
+ "situation": {
+  "id": "in_genx_mother_son_drugs",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "found out my son has been taking something with his college friends. he lies to my face. his father says it's my fault for being soft. I don't know whether to be strict or kind.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Chandigarh)",
+  "lang": "english",
+  "slices": [
+   "family",
+   "lang:english",
+   "parenting"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "man",
+   "emotion": "angry and afraid",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from being blamed by your husband for your son's choices to standing in your own truth with both of them.",
+   "week_beats": {
+    "hook": "You recognise the anger and the blame, named without judgement.",
+    "diagnose": "You see that the blame is not the answer, and that your son's choices are his own.",
+    "steady": "You hold that your worth as a parent is not measured by his choices.",
+    "act": "You try speaking to your son with steady love and a clear boundary, and speaking to your husband with the truth.",
+    "story": "A mother who stood between her son's trouble and her husband's blame shows you what holding your ground looks like."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "friend"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "I keep fighting with my parents",
+   "mirror": "You found out, he lied, and your husband told you it was your fault for being soft.",
+   "insight": "The fight is between you and your husband about who is to blame. The real question is how to be with your son, and that is yours to answer.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 0.55,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "betrayal",
+     "label": "Someone I trusted betrayed me",
+     "weight": 0.398,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.36,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The anger of being blamed for your son's behaviour and the fear of not knowing whether to be strict or kind with him.",
+    "diagnose": "When a child's actions become a verdict on the parent, self-blame grows from believing the outcome alone measures our worth, and it clouds the answer.",
+    "steady": "A child's choices are his own, and your worth as a parent is not measured by his; your duty is to be steady in your love, not to win his approval.",
+    "act": "Lift yourself up instead of pushing yourself down; speak to your son with steady love, set a clear boundary with him, and speak to your husband with the truth of what is his to carry.",
+    "story": "A mother who found her son in trouble, faced his father's blame, and held her ground with love and a clear boundary."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Blamed for his choices",
+    "Whose to carry what",
+    "Steady in your love"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "son has been taking something with college friends",
+    "son lies to her face",
+    "she is torn between strict and kind"
+   ],
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:7=0.0,11=0.0,84=0.3,4=0.0,78=0.3,7=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.66",
+    "retried:3",
+    "redo:6",
+    "redo_fixed:3",
+    "dropped:fallback_line=3,invented=4,not_second_person=1,try_today_invented=3,try_today_long=1,verdict=1",
+    "for_you:6/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "words": [
+      {
+       "sa": "कार्पण्यदोषोपहतस्वभावः",
+       "en": "nature overcome by weakness"
+      },
+      {
+       "sa": "पृच्छामि",
+       "en": "I ask"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "you"
+      },
+      {
+       "sa": "धर्मसंमूढचेताः",
+       "en": "mind confused about duty"
+      },
+      {
+       "sa": "यत्",
+       "en": "which"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "the highest good"
+      },
+      {
+       "sa": "स्यात्",
+       "en": "may be"
+      },
+      {
+       "sa": "निश्चितम्",
+       "en": "certainly"
+      },
+      {
+       "sa": "ब्रूहि",
+       "en": "tell"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "मे",
+       "en": "to me"
+      },
+      {
+       "sa": "शिष्यः",
+       "en": "student"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "शाधि",
+       "en": "instruct"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "you"
+      },
+      {
+       "sa": "प्रपन्नम्",
+       "en": "one who has taken refuge"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.7595,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna stands on the battlefield, his body shaking, his mind a storm of grief and doubt. He turns to Krishna and says his nature is stricken, his mind confused about what is right. He asks Krishna to tell him plainly what is best and agrees to be his student, ready to learn. The verse proposes that admitting you do not know is not weakness, but the beginning of clarity. It is the moment a person stops pretending to have the answer and opens to being taught.",
+     "for_you": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+     "try_today": "Notice the moment you feel the anger rise, and name it to yourself without acting on it.",
+     "scene_line": "You stand at the edge of your own battlefield, and you do not know which way to turn.",
+     "asks": [
+      "How do I know what is right when both choices feel like a loss?",
+      "Can I admit I am confused without feeling like a bad parent?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.9972,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, after seeing how wealth hardens people and how life drips away, asks what the point of it all is. He sees that wealth, ego, and craving run us. He names the real enemy: our own senses are the enemies, and the mind becomes the mind's own enemy. This is not a reason to blame yourself. It is a question, and it names what feels empty. The mind strikes itself, and that is where the fight begins.",
+     "for_you": "The self is untouched by your mistakes; it was never stained and cannot be made less, whatever you have done.",
+     "try_today": "Notice when your mind starts blaming you, and name it as the mind's own work.",
+     "scene_line": "You are in your own lament, asking what the point of all this is.",
+     "asks": [
+      "How do I stop my mind from striking itself?",
+      "What does it mean to be my own enemy?",
+      "How do I stand in the middle without fighting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0516,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from a place of deep weariness. He has watched the world praise and blame, gain and lose, and he is telling you what he has learned. He says let them praise or blame, let money come or go: the steady don't step off the right path. He is not talking about ignoring the world. He is talking about holding your ground when your own mind is the loudest voice in the room.",
+     "for_you": "You are tired of being blamed for your son's choices. The steady parent does not step off the right path because of blame. Your worth is not measured by his choices. You are the steady one in this room. The path is yours to walk.",
+     "try_today": "Notice one moment when someone else's blame rises up, and let it pass like a cloud.",
+     "scene_line": "You stand on a path where your parents' blame cannot move you.",
+     "asks": [
+      "How do I hold my ground when my parents blame me?",
+      "What is the right path for me with my son?",
+      "How do I stop their words from becoming my own?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "words": [
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "अनन्त",
+       "en": "infinite"
+      },
+      {
+       "sa": "महाम्भोधौ",
+       "en": "great ocean"
+      },
+      {
+       "sa": "विश्ववीचिः",
+       "en": "universal wave"
+      },
+      {
+       "sa": "स्वभावतः",
+       "en": "by nature"
+      },
+      {
+       "sa": "उदेतु",
+       "en": "rises"
+      },
+      {
+       "sa": "वास्तमायातु",
+       "en": "and sets"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "क्षतिः",
+       "en": "decline"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.6332,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra speaks to Janaka, pressing home that he is not the doer or the thinker, but the boundless ocean itself. Let the waves of the world rise or fall by their own nature. You neither grow nor shrink. The verse asks you to see that your worth as a parent is not measured by his choices, but by the steady ground you stand on, the awareness you hold even when the water churns.",
+     "for_you": "You are caught between your son's choices and your parents' expectations, and you are trying to measure your worth by their reactions. You are not the doer of his actions, nor the judge of his path. You are the ocean that holds the waves. Stand in that steadiness.",
+     "try_today": "Notice when you measure your worth by his choices or your parents' words.",
+     "scene_line": "You stand at the edge of the water, watching the waves rise and fall, and you are the ocean.",
+     "asks": [
+      "How do I stop my worth from riding on his choices?",
+      "Can I be the ocean while the waves crash around me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.3316,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader from a place of steady wisdom. He is laying out the code of the good person. He says cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering. He means the real ornaments of a life are listening, giving and helping. Success should make you bow lower, not swell you up. He does not mean you could tolerate harm to be good.",
+     "for_you": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+     "try_today": null,
+     "scene_line": "You stand at the center, offering truth and a steady hand.",
+     "asks": [
+      "How do I tell giving up from changing direction?",
+      "What does it mean to bow lower in my home?",
+      "Can I win over my husband without winning the fight?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.3068,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to think less of himself or settle for a diminished life. She says to set his mind on what is truly good, and to stop fearing. She urges him to pull himself together, because those who never try never succeed.",
+     "for_you": "The way you talk to yourself about your son's choices is the fight with your parents all over again. They are not the ones who have to live in your head. You are trying to be both strict and kind because you are afraid you are neither.",
+     "try_today": null,
+     "scene_line": "You stand at the edge of your son's room, ready to face what comes next.",
+     "asks": [
+      "How do I hold a boundary without becoming the enemy?",
+      "Can I be kind and firm at the same time?",
+      "What do I say to my husband that is not a fight?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_consents",
+     "title": "Kausalya lets Ram go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+     "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+     "lesson": "Love sometimes means staying behind to care for someone else.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.24.20",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 24.20",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Kausalya",
+      "setting": "Ram's mother wants to follow him into exile; he asks her instead to stay and look after his grieving father.",
+      "sanskrit": "यथा मयि तु निष्क्रान्ते पुत्रशोकेन पार्थिवः॥ श्रमं नावाप्नुयात् किंचिदप्रमत्ता तथा कुरु। दारुणश्चाप्ययं शोको यथैनं न विनाशयेत्॥ राज्ञो वृद्धस्य सततं हितं चर समाहिता।",
+      "line": "When I'm gone, look after him. Don't let his grief wear him down.",
+      "translation": "Take care that when I am gone the king does not wear himself out with grief for his son, that this terrible sorrow does not destroy him. Look after the old king's welfare always.",
+      "words": [],
+      "why": "Love sometimes means staying behind to care for someone else.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.kausalya_consents",
+       "title": "Kausalya lets Ram go",
+       "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+       "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+       "lesson": "Love sometimes means staying behind to care for someone else."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "teaser": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "for_you": null,
+     "asks": [
+      "What am I supposed to hold while he is gone?",
+      "How do I look after my own grief?",
+      "What is my truth when he refuses my help?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Blamed for his choices",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14711,
+   "total": 14714
+  },
+  "_ms": 14718
+ }
+}

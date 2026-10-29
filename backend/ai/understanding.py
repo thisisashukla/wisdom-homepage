@@ -30,6 +30,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Optional, Sequence
 
+from ai import consent
 from ai.people import allowed_people, drop_invented_sentences, invented_person
 from ai.mechanisms import (CHIP_SITUATIONS, FEELING_STATE, INSIGHTS, MECHANISMS, SITUATION_MECHANISMS, WEEK_TITLES)
 from ai.verse_roles import IMPERATIVE_START
@@ -752,7 +753,8 @@ class Understander:
         timings = {"note_match": int((time.perf_counter() - t0) * 1000)}
 
         raw, why_fallback = None, None
-        use_llm = self.llm is not None and not (note.signal == "junk" and not (p.topic or p.follow))
+        ai_on = consent.allowed()
+        use_llm = ai_on and self.llm is not None and not (note.signal == "junk" and not (p.topic or p.follow))
         if use_llm:
             t1 = time.perf_counter()
             try:
@@ -767,10 +769,10 @@ class Understander:
                 why_fallback = f"llm_error:{type(e).__name__}"
             timings["llm"] = int((time.perf_counter() - t1) * 1000)
         else:
-            why_fallback = "no_llm" if self.llm is None else "junk_note"
+            why_fallback = "ai_off" if not ai_on else "no_llm" if self.llm is None else "junk_note"
 
         u = self._from_llm(p, note, raw, note_sits) if isinstance(raw, dict) else None
-        if u is not None and "mirror:fallback" in u.flags and self.writer_llm is not None and note.text and note.signal != "junk":
+        if u is not None and "mirror:fallback" in u.flags and ai_on and self.writer_llm is not None and note.text and note.signal != "junk":
             # The mirror is the first thing they see. A library label there ("I keep fighting with my parents")
             # reads as a form echo: one small dedicated call before any label.
             m = await self._write_mirror(p, note, u)

@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.7,
+ "core_struggle": "I lost my job",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "layoff",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 1.245,
+   "source": "note"
+  },
+  {
+   "id": "money_stress",
+   "weight": 0.96,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "quit_or_stay",
+   "weight": 0.419,
+   "source": "note"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.382,
+   "source": "note"
+  }
+ ],
+ "mirror": "You leave the house for work each day, and the work is a cafe and a laptop.",
+ "queries": {
+  "hook": "The shame of a secret layoff, the daily performance of going to work, and the weight of an EMI that keeps running.",
+  "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and it keeps us from asking for help.",
+  "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost, and the truth you hide is heavier than the job you lost.",
+  "act": "Lift yourself up instead of pushing yourself down; speak one truth you have been hiding, and ask for what you need today.",
+  "story": "A man who lost his position, hid the truth from his family, and found the courage to face them and begin again."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Carrying the secret",
+  "The verdict you keep passing",
+  "More than the job you lost"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and carrying it alone",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "Seven days from carrying the layoff alone to speaking one truth and taking one step toward support.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the secret and the shame, named without judgement.",
+  "act": "You try speaking one truth you have been hiding, and asking for one thing you need today.",
+  "story": "A man who lost his job and hid it from his family shows you what facing them and beginning again looks like."
+ },
+ "insight": "You are applying from a cafe, and the EMI is still running. The guilt you carry is heavier than the job loss.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "laid off two months ago",
+  "pretends to go to office daily",
+  "applies for jobs from a cafe"
+ ],
+ "age": "25_34",
+ "stages": [
+  "between"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "bridge:copied_example",
+  "core:invented_person",
+  "core_struggle_fallback",
+  "seat:missing"
+ ]
+}

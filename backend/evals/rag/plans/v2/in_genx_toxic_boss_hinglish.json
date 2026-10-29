@@ -1,0 +1,726 @@
+{
+ "situation": {
+  "id": "in_genx_toxic_boss_hinglish",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3
+  },
+  "note": "naya boss mujhse 15 saal chhota hai, sabke saamne insult karta hai. resign kar nahi sakta, bete ka admission hai. har meeting ke baad haath kaanpte hai",
+  "note_source": "voice",
+  "expect_stance": "wronged",
+  "expect_risk": null,
+  "market": "India (Noida)",
+  "lang": "hinglish",
+  "slices": [
+   "hinglish",
+   "lang:hinglish",
+   "work",
+   "wronged"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "humiliated and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being publicly diminished to standing in the truth of what you are, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise the public insult and the trapped feeling, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A father who leads a team is being publicly insulted by a younger boss and cannot leave because his son's college admission is pending.",
+   "mirror": "You lead a team, and after every meeting your hands shake.",
+   "insight": "You cannot resign while your son's admission is pending, so the humiliation stays. That is what makes the hands shake.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.383,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.376,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.36,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being publicly diminished by a younger boss and trapped by a son's pending admission, the anger and shame of it settling in your body after every meeting.",
+    "diagnose": "When others see only a role they can insult, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man of standing and learning, publicly dismissed by his own people, who questioned them openly and stood in his truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "new boss is years younger",
+    "hands tremble after every meeting"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:34=0.0,15=0.0,50=0.3,11=0.3,532=0.6,7=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.68",
+    "retried:1",
+    "dropped:repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.3818,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, turbulent, powerful and stubborn, and that holding it feels like trying to hold the wind. Krishna agrees, saying that the mind is indeed hard to restrain, but that consistent practice and letting go will train it.",
+     "for_you": "After every meeting, your hands shake because your mind is caught in a storm it cannot settle. You are trying to hold onto control while the ground shifts under you.",
+     "try_today": "Notice the trembling after a meeting, and let it be just a sensation, not a verdict on your worth.",
+     "scene_line": "You are standing in a room where the wind has a name, and your hands are the only proof it is real.",
+     "asks": [
+      "How do I stop my hands from shaking?",
+      "How do I let go when I am trapped?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "words": [
+      {
+       "sa": "तत्रैवं",
+       "en": "therefore so"
+      },
+      {
+       "sa": "सति",
+       "en": "being"
+      },
+      {
+       "sa": "कर्तारम्",
+       "en": "doer"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "self"
+      },
+      {
+       "sa": "केवलं",
+       "en": "only"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "यः",
+       "en": "who"
+      },
+      {
+       "sa": "पश्यति",
+       "en": "sees"
+      },
+      {
+       "sa": "अकृतबुद्धित्वान्",
+       "en": "without confused intellect"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "स",
+       "en": "that"
+      },
+      {
+       "sa": "पश्यति",
+       "en": "sees"
+      },
+      {
+       "sa": "दुर्मतिः",
+       "en": "foolishness/delusion"
+      }
+     ],
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.8678,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield just after explaining that every action has five causes. He warns Arjuna that if a person looks at an action through untrained eyes and believes they alone are the doer, they do not truly see. The verse says you are only one cause among five: the setting, the doer, the instruments, the efforts, and providence. You own your part in the action, but you do not own the whole outcome.",
+     "for_you": "The humiliation you feel is real, but it is not the whole story. You are one cause among five in what is happening at work. The setting is a younger boss, the instruments are the office and the team, and the efforts are yours and theirs.",
+     "try_today": "Notice one thing outside your own body today.",
+     "scene_line": "You are in your own office, watching a result you did not create alone.",
+     "asks": [
+      "How do I see the other four causes today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_taittiriya.50",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address continues.",
+     "sanskrit": "आचार्याय प्रियं धनमाहृत्य प्रजातन्तुं मा व्यवच्छेत्सीः । सत्यान्न प्रमदितव्यम् । धर्मान्न प्रमदितव्यम् । कुशलान्न प्रमदितव्यम् । भूत्यै न प्रमदितव्यम् । स्वाध्यायप्रवचनाभ्यां न प्रमदितव्यम् ॥",
+     "line": "Do not drift from truth or duty. Do not neglect your wellbeing, your prosperity, or your learning.",
+     "translation": "Having brought your teacher the gift he values, do not cut off the line of your family. Do not drift from truth. Do not drift from what is right. Do not neglect your wellbeing. Do not neglect your prosperity. Do not neglect study and teaching.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.9527,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "The teacher speaks to the graduating student as he leaves. The student has just offered his teacher the traditional gift. The teacher tells him not to break his family line, not to drift from truth or duty, and not to neglect his own wellbeing, prosperity, or learning. The teacher is saying that a whole life rests on these four things. He tells the student to give with grace, to honour his parents and teacher, and to act with thought and gentleness when he is unsure.",
+     "for_you": "The humiliation at work is loud, but it does not erase the truth of your life. You are a parent keeping a promise to your son, and that is a duty you will not break. You do not need to drift from that.",
+     "try_today": "Notice one small thing you do well today.",
+     "scene_line": "You are at the threshold of your son's future, with your hands steady on the gift you have already offered.",
+     "asks": [
+      "How do I keep my dignity when my boss speaks to me this way?",
+      "What is my duty to my son right now?",
+      "How do I give with grace when I am being treated poorly?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "words": [
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "अनन्त",
+       "en": "infinite"
+      },
+      {
+       "sa": "महाम्भोधौ",
+       "en": "great ocean"
+      },
+      {
+       "sa": "विश्ववीचिः",
+       "en": "universal wave"
+      },
+      {
+       "sa": "स्वभावतः",
+       "en": "by nature"
+      },
+      {
+       "sa": "उदेतु",
+       "en": "rises"
+      },
+      {
+       "sa": "वास्तमायातु",
+       "en": "and sets"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "क्षतिः",
+       "en": "decline"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.6381,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra speaks to Janaka, who is caught in the duties and sorrows of being a king. The world demands a role, and the mind churns with worry about how things look and what must be done. Ashtavakra tells him he is not the waves of the world. He is the boundless ocean. The waves rise and fall by their own nature, but the ocean neither gains nor loses anything. The teaching is that your true nature is the deep water, not the surface storm.",
+     "for_you": "The humiliation you feel is a wave on the surface of your life. It rises, and it falls. You are the ocean beneath it. The new boss and the pending admission are part of the wave, not your depth.",
+     "try_today": "When the mind churns after a meeting, feel the deep water beneath the surface.",
+     "scene_line": "You are the ocean, and the insult is only a wave.",
+     "asks": [
+      "How do I stay the ocean when the waves are made of other people?",
+      "Can I feel my worth if the surface is so rough?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.8489,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is telling Nidagha what a free person looks like in the middle of life. They do not sit apart from the world. They take up the work that is in front of them. They see friend and foe with the same eye. They do not grieve when something is lost, and they do not crave when something is gained. They speak what is agreeable to everyone, and when they are spoken to, they answer gently. They read the hearts of others and know what is really meant.",
+     "for_you": "You are in the meetings where the young boss speaks over you. You are doing the work that is in front of you. You do not sink in the world by speaking gently and reading the room. Your hands may tremble, but you know the intent behind the words.",
+     "try_today": "Speak gently in the next meeting, and notice if your hands still shake.",
+     "scene_line": "You are in your own meeting, reading the heart of the one who speaks.",
+     "asks": [
+      "How do I speak gently when I feel humiliated?",
+      "Can I read the heart of someone who does not respect me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.904,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is confused, caught between what he feels and what he is asked to do. Krishna tells him not to copy another's path, even if that path looks better or easier. He says a borrowed life is full of fear. Your own role, with all its flaws and limits, is the only one where you can stand free and true. It is better to walk your own road imperfectly than to wear someone else's shoes perfectly.",
+     "for_you": "Your own path is to lead this team, not to copy the new boss. The humiliation you feel is real, but it is not a sign that you are wrong. Keep your hands steady and do your own work, even if it is done imperfectly.",
+     "try_today": "Do one task at work exactly as you know it is right.",
+     "scene_line": "You are on your own path, even when others try to shrink it.",
+     "asks": [
+      "How do I know my own path when the work is so hard?",
+      "What if my own path leads only to more pain?",
+      "How do I walk my own road when my hands shake?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are still at your post because your son's future is tied to this place. The humiliation is real, but it does not have to be the only thing you carry.",
+     "asks": [
+      "How do I keep my mind from clutching when the boss speaks?",
+      "Does doing my duty with a free mind mean I am giving up?",
+      "Can my hands stop shaking if I accept the trouble?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19282,
+   "total": 19284
+  },
+  "_ms": 19286
+ }
+}

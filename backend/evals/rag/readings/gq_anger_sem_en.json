@@ -1,0 +1,91 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.75,
+ "core_struggle": "Loses their temper over small things, says hurtful words they regret, and is looking for what the texts teach about this.",
+ "mechanism": "anger_reactivity",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "anger_outburst",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.642,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "guilt",
+   "weight": 0.372,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "people_pleasing",
+   "weight": 0.24,
+   "source": "note"
+  }
+ ],
+ "mirror": "You lose your temper over small things and the words that come after are the ones you regret.",
+ "queries": {
+  "hook": "The anger that takes over over small things, and the words that follow that you cannot take back.",
+  "diagnose": "Blocked wanting turns into anger, and a clouded mind says and does what it later regrets.",
+  "steady": "Praise and blame come and go like the weather; your steadiness is not in what happens but in how you stand when it does.",
+  "act": "Practise watching the rise of anger as it happens, and let the words go until the mind is clear.",
+  "story": "A warrior who lost his temper and his bow, faced the cost, and learned to steady his mind before the next arrow."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The anger and the words",
+  "What is underneath the anger",
+  "The one who watches it rise"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "angry and regretful",
+ "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+ "week_thesis": "Seven days from the anger that takes over to the first moment you watch it rise and let it pass.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [],
+ "week_beats": {
+  "hook": "You recognise the anger and the regret, named without shame.",
+  "diagnose": "You see that the anger is blocked wanting, and the words are the mind speaking without you.",
+  "steady": "You hold that the anger is not you, and the steadiness is in watching it, not stopping it.",
+  "act": "You try watching the rise of anger one time a day, and letting the words go until the mind is clear.",
+  "story": "A warrior who lost his temper and his bow shows you what it looks like to stand in the fire and not be burned."
+ },
+ "insight": "You are asking what Krishna teaches about this because you know the words are not the real you, and you want the real you to have the floor.",
+ "seat": "",
+ "life_context": "Someone in a life stage of working and building; their anger keeps breaking out over small things, and the words they say afterward leave them with regret. They are looking for a teaching on what to do.",
+ "details": [
+  "keeps losing temper over small things",
+  "says hurtful words they regret later",
+  "is asking what Krishna teaches about this"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "seat:missing"
+ ]
+}

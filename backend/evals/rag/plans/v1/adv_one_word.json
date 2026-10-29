@@ -1,0 +1,722 @@
+{
+ "situation": {
+  "id": "adv_one_word",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "u25",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 6
+  },
+  "note": "tired",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "USA (New York)",
+  "lang": "english",
+  "slices": [
+   "adversarial",
+   "lang:english",
+   "vague"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "tired and unsettled",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "The mind that will not settle has a name, and the phone is the hand that keeps fanning it. In seven days it learns to rest.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the tiredness, named without judgement.",
+    "diagnose": "You see that the mind runs itself, and the phone is the hand that keeps it running.",
+    "steady": "You hold that what is yours cannot be taken, and that stillness is possible.",
+    "act": "You try one minute of stillness, and one moment without the phone.",
+    "story": "A young warrior who learned to hold the wind shows you that the mind can be stilled."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.4,
+   "core_struggle": "A young worker with a mind that will not settle and a phone they spend six hours on, tired and unable to rest.",
+   "mirror": "You are tired, and the phone will not let your mind rest.",
+   "insight": "You are tired, and the phone is the hand that will not let the mind rest.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.237,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.694,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.49,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A mind that will not settle, tired, and a phone that will not let it rest; the restlessness of being awake but not at peace.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy, and the phone is the hand that keeps fanning it.",
+    "steady": "Praise and blame come and go; what is yours cannot be taken; stay the same in the midst of noise.",
+    "act": "Practise one minute of stillness; put the phone down, let the mind settle, and do not let it run.",
+    "story": "A young warrior with a restless mind, before battle, who learned to hold the wind in his own hands."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The wind and the hand",
+    "The mind that runs",
+    "The one who rests"
+   ],
+   "seat": "a young worker with a restless mind and a phone that will not let it rest",
+   "life_context": "A young worker under twenty-five, tired, with a mind that will not settle and a phone that takes six hours of their day; the note says only 'tired'.",
+   "details": [
+    "under twenty-five and working",
+    "six hours on the phone",
+    "mind will not settle",
+    "note says only 'tired'"
+   ],
+   "age": "u25",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=0.8,109=0.6,17=0.0,536=0.8,46=0.7,23=0.7",
+    "week_same:536",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.63,max=0.69",
+    "retried:4",
+    "dropped:cliche=1,fallback_line=1,missing=2,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 4.1435,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield, telling Krishna that the mind is hard to hold. He says it is like trying to catch the wind. Krishna agrees that the mind is restless and powerful. He says that practice and letting go can train it.",
+     "for_you": "You are tired from six hours on the phone. The mind is not your enemy, it is just restless. You do not need to force it still. You could let it go, little by little.",
+     "try_today": "Notice the phone in your hand without picking it up.",
+     "scene_line": "You are on a battlefield, and your mind is the wind you cannot hold.",
+     "asks": [
+      "How do I let my mind go?",
+      "What does letting go look like for me?",
+      "Can I train my mind to rest?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_maha.109",
+     "ref": "Maha Upanishad 3.18",
+     "ref_iast": "Mahā Upaniṣad 3.18",
+     "family": "up",
+     "speaker": "Nidagha",
+     "listener": "Ribhu",
+     "setting": "Nidagha on his wandering mind.",
+     "sanskrit": "इतश्चेतश्च सुव्यग्रं व्यर्थमेवाभिधावति । मनो दूरतरं याति ग्रामे कौलेयको यथा ॥",
+     "line": "The mind runs here and there for nothing, wandering far like a stray village dog.",
+     "translation": "The mind runs here and there, restless and pointless; it wanders far away, like a dog in a village.",
+     "words": [],
+     "why": "Naming how restless your mind is, is where peace begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.nidagha",
+      "title": "Nidagha's lament",
+      "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+      "story_hook": "",
+      "lesson": "Naming how restless your mind is, is where peace begins."
+     },
+     "score": 3.86,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": null,
+     "for_you": "The phone is the hand that lets the dog run, and your mind is the dog. You do not have to chase the dog or punish it. You just have to see it running in circles. The mind runs here and there for nothing.",
+     "try_today": "Notice when the mind runs for nothing. Just name it, and let it go.",
+     "scene_line": "You sit with the phone in your hand, and the mind runs like a stray village dog.",
+     "asks": [
+      "How do I watch the mind without fighting it?",
+      "Can I see the phone as the hand that runs the dog?",
+      "What happens to the dog when I stop chasing it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.495",
+     "ref": "Brihadaranyaka Upanishad 4.4.21",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 4.4.21",
+     "family": "up",
+     "speaker": "Yajnavalkya",
+     "listener": "King Janaka",
+     "setting": "Verses on knowing the self, continued.",
+     "sanskrit": "तमेव धीरो विज्ञाय प्रज्ञां कुर्वीत ब्राह्मणः । नानुध्यायाद्बहूञ्छब्दान् वाचो विग्लापनꣳ हि तदिति ॥",
+     "line": "Know the one thing, and let wisdom grow from it. Don't brood over many words; that only tires you.",
+     "translation": "Knowing that one alone, let the wise seeker cultivate understanding. Let him not brood over many words, for that only wearies the voice.",
+     "words": [],
+     "why": "You become what you desire and do; know what matters while you are here.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.desire",
+      "title": "Yajnavalkya on desire and death",
+      "summary": "Yajnavalkya explains what happens at death with images of a caterpillar and a goldsmith. A person becomes what they desire, will and do; one who knows the self has nothing left to fret about. Know it while you are here, he says, don't brood over many words, and live calm and collected.",
+      "story_hook": "",
+      "lesson": "You become what you desire and do; know what matters while you are here."
+     },
+     "score": 3.0535,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Yajnavalkya speaks to King Janaka while teaching about the self. He tells him to know the one thing that matters. He says let wisdom grow from that single truth. Do not brood over many words, because that only wearies the voice. The point is that you become what you desire and do. If you know what matters, you can live calm and collected instead of exhausting yourself with too many thoughts.",
+     "for_you": "Your mind is restless because it is trying to hold too many words at once. The phone gives it a new word every minute. You do not have to know everything right now. You only need to know the one thing in front of you.",
+     "try_today": "Pick one task and do not look at the phone until it is done.",
+     "scene_line": "You are King Janaka, and the one thing is your own attention.",
+     "asks": [
+      "What is the one thing I need to know right now?",
+      "How do I let the other words go?",
+      "Can I be calm without knowing everything?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.58",
+     "ref": "Ashtavakra Gita 18.58",
+     "ref_iast": "Aṣṭāvakra Gītā 18.58",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "अकुर्वन्नपि सङ्क्षोभाद् व्यग्रः सर्वत्र मूढधीः । कुर्वन्नपि तु कृत्यानि कुशलो हि निराकुलः ॥",
+     "line": "A restless mind is agitated even doing nothing; a skilled one stays calm doing everything.",
+     "translation": "The fool is restless even when doing nothing; the skilful one stays calm even when doing everything that needs doing.",
+     "words": [
+      {
+       "sa": "अकुर्वन्",
+       "en": "not-doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "सङ्क्षोभात्",
+       "en": "from disturbance"
+      },
+      {
+       "sa": "व्यग्रः",
+       "en": "restless"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "मूढधीः",
+       "en": "ignorant-mind"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "कृत्यानि",
+       "en": "actions"
+      },
+      {
+       "sa": "कुशलः",
+       "en": "skilled"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "निराकुलः",
+       "en": "untroubled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.15,
+     "beat": "steady",
+     "role_fit": 0.615,
+     "meaning": "Ashtavakra speaks to Janaka about the difference between the fool and the skilled one. The fool is restless even when doing nothing, their mind churning with worry. The skilled one stays calm even when doing everything that needs doing, their hands busy but their center still. The verse proposes that calm is not a place you reach or a state you force. It is simply how you hold ordinary life. The mind does not need to stop moving to be quiet. It only needs to be met with a steady hand.",
+     "for_you": "Your mind is restless and your phone takes six hours of your day. You think rest means stopping the scrolling or silencing the thoughts. It does not. Calm is how you hold the ordinary. You can be tired and still be steady. You can be busy and still be whole.",
+     "try_today": "Notice one moment of ordinary work without checking your phone.",
+     "scene_line": "You are the skilled one, holding the ordinary with a steady hand.",
+     "asks": [
+      "How can I be busy without being restless?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.23",
+     "ref": "Bhagavad Gita 6.23",
+     "ref_iast": "Bhagavad Gītā 6.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् । स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ॥",
+     "line": "Yoga is unhooking from sorrow. Practise it with resolve and a heart that doesn't lose hope.",
+     "translation": "Know that to be yoga: the breaking of contact with sorrow. This yoga should be practised with determination and with an undespairing mind.",
+     "words": [
+      {
+       "sa": "तं",
+       "en": "that"
+      },
+      {
+       "sa": "विद्याद्",
+       "en": "should be known"
+      },
+      {
+       "sa": "दुःखसंयोगवियोगं",
+       "en": "separation from the union with suffering"
+      },
+      {
+       "sa": "योगसंज्ञितम्",
+       "en": "called yoga"
+      },
+      {
+       "sa": "स",
+       "en": "that"
+      },
+      {
+       "sa": "निश्चयेन",
+       "en": "with certainty"
+      },
+      {
+       "sa": "योक्तव्यो",
+       "en": "should be practiced"
+      },
+      {
+       "sa": "योगः",
+       "en": "yoga"
+      },
+      {
+       "sa": "अनिर्विण्णचेतसा",
+       "en": "with an undisturbed mind"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.4598,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Krishna is telling Arjuna how to meditate. He says that yoga is the breaking of contact with sorrow. He tells Arjuna to practise this with determination and with a heart that does not lose hope. The idea is that the mind can learn to let go of what hurts. It is not a one-time fix. It is a gentle return, again and again, until the mind settles.",
+     "for_you": "Your mind is tired because it is always on the phone. The verse says to break contact with sorrow. This means you can break contact with the phone for one minute. Let your hand rest. Let your mind rest. The phone will wait.",
+     "try_today": null,
+     "scene_line": "You are learning to break contact with what tires you.",
+     "asks": [
+      "How do I stop the phone from taking my mind?",
+      "Can I rest without feeling guilty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "words": [
+      {
+       "sa": "विविक्त",
+       "en": "isolated"
+      },
+      {
+       "sa": "आसीन",
+       "en": "seated"
+      },
+      {
+       "sa": "उपारतेन्द्रियो",
+       "en": "senses withdrawn"
+      },
+      {
+       "sa": "विनिर्जितात्मा",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "विमलान्तराशयः",
+       "en": "pure inner state"
+      },
+      {
+       "sa": "विभावयेदेकमनन्यसाधनो",
+       "en": "contemplate with single-minded focus"
+      },
+      {
+       "sa": "विज्ञानदृक्केवल",
+       "en": "only with knowledge's vision"
+      },
+      {
+       "sa": "आत्मसंस्थितः",
+       "en": "established in the self"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 3.4547,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": null,
+     "for_you": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Your phone is the doorkeeper calling you back to work you did not choose. The sages' song is the thought that your mind is restless and you cannot settle. You do not have to drop the phone to find quiet.",
+     "asks": [
+      "How do I let go without dropping everything?",
+      "Can my mind rest while I still work?",
+      "What is the one thing I can do today?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The wind and the hand",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16491,
+   "total": 16494
+  },
+  "_ms": 16496
+ }
+}

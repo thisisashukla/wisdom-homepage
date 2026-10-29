@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.55,
+ "core_struggle": "Spends five hours on the phone replaying the news, and is angry at the other side every day.",
+ "mechanism": "anger_reactivity",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "overthinking",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "criticism",
+   "weight": 0.682,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "marriage_conflict",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.448,
+   "source": "note"
+  }
+ ],
+ "mirror": "You open the news and the anger rises, then you keep going back to it.",
+ "queries": {
+  "hook": "The anger that rises every time you open the news, and the replaying that keeps you stuck in it.",
+  "diagnose": "When desire is blocked, anger rises and clouds judgement; the mind that is clouded says and does what it later regrets.",
+  "steady": "Praise and blame come and go, and what is real in you cannot be shaken by what is said or shown.",
+  "act": "Practise one hour of the day with the phone away, and when the anger rises, let it pass without speaking or acting.",
+  "story": "A warrior who faced an army that would not listen, and chose to fight only what was in front of him."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The anger you feed",
+  "The wanting behind it",
+  "The one who acts"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "angry and stuck",
+ "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+ "week_thesis": "The anger the news feeds becomes, over seven days, something you can meet without being carried by it.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [
+  "bg"
+ ],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the anger and the replaying as a felt state, named without blame.",
+  "diagnose": "You see that the anger rises from a wanting that cannot be satisfied, and that the mind is never given one quiet minute to settle.",
+  "steady": "You hold that what is real in you cannot be shaken by what is shown on the screen.",
+  "act": "You try one hour without the phone, and when the anger rises, you let it pass without speaking or acting.",
+  "story": "A warrior who faced an army that would not listen shows you how to fight only what is in front of you."
+ },
+ "insight": "The anger arrives before you choose it. By the time you notice, it has already spoken for you.",
+ "seat": "a working person in midlife whose days are shaped by the news they scroll",
+ "life_context": "A working person in their mid-thirties or early forties, with five hours of phone time a day; the news cycle keeps them angry and stuck, replaying the same stories.",
+ "details": [
+  "spends five hours on the phone",
+  "keeps going over the news",
+  "is angry at the other side",
+  "feels the country is being destroyed"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example",
+  "insight:template"
+ ]
+}

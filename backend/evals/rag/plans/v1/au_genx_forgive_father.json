@@ -1,0 +1,736 @@
+{
+ "situation": {
+  "id": "au_genx_forgive_father",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "my father was harsh with us growing up, hit us when he drank. he is old and sick now and wants me to visit. part of me wants to, part of me is still twelve.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "Australia (Sydney)",
+  "lang": "hinglish",
+  "slices": [
+   "family",
+   "forgive",
+   "lang:hinglish"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "harm_from_others",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn between pity and old fear",
+   "bridge": "The part of you that is still twelve is what the Upanishads call the self that cannot be lost, even when the body that held you was not safe.",
+   "week_thesis": "The twelve-year-old and the adult are not the same, and the visit can be made without either one being lost.",
+   "week_beats": {
+    "hook": "You recognise the two parts of you, and that both are real.",
+    "diagnose": "You see that the love that was given and the hurt that was given are not the same thing, and that the child is still alive.",
+    "steady": "You hold that what was real in you cannot be taken away, and that the adult you are is not the child who was hurt.",
+    "act": "You try letting the child be held, and going if your heart says so, and coming back to the adult you are."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "His harsh father is old and sick, and the adult wants to visit while the child who was hit is still alive inside.",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.593,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.384,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.3,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A son who was once a child before a harsh father, now grown, who must decide whether to go and what to carry with him."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "The child and the adult",
+    "What was real cannot be lost",
+    "More than the one who was hurt"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "father is old and sick now",
+    "part of them wants to visit",
+    "part of them is still twelve"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:34=0.3,42=0.3,10=0.6,5=0.6,22=0.0,40=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.67",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:repeat=2,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.866,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that their mind is restless, stormy, and stubborn, and holding it feels like trying to catch the wind. Krishna does not tell Arjuna to force it still. He says it is hard, but practice and letting go will train it. The mind is not a flaw. It is a force that needs a different kind of grip than the will can give.",
+     "for_you": "The adult who wants to visit and the child who was hurt are both in you. You do not have to silence the child to be the adult. You can let the mind be stormy and still choose your next step.",
+     "try_today": "Notice the storm without trying to stop it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.173.42",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 173.42",
+     "family": "mbh",
+     "speaker": "A brahmin (retold by Bhishma)",
+     "listener": "King Senajit",
+     "setting": "The brahmin to the grieving King Senajit, on why some people are always overwhelmed.",
+     "sanskrit": "शोकस्थानसहस्राणि भयस्थानशतानि च / दिवसेदिवसे मूढमाविशन्ति न पण्डितम्",
+     "line": "Every day brings a thousand reasons to grieve and a hundred to fear. The wise don't let them all in.",
+     "translation": "Thousands of reasons for grief and hundreds of reasons for fear rush in, day after day, on the unwise person, but not on the wise.",
+     "words": [],
+     "why": "No one suffers forever. Meet what comes with an undefeated heart.",
+     "misuse": "Anxiety is not a character flaw; this is about learning not to take every trigger in.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.senajit_brahmin",
+      "title": "King Senajit and the brahmin's consolation",
+      "summary": "King Senajit is crushed by his son's death. A brahmin comforts him: everyone suffers, no sorrow lasts forever, effort beats idleness, and whatever we call 'mine' becomes a source of pain.",
+      "story_hook": "",
+      "lesson": "No one suffers forever. Meet what comes with an undefeated heart."
+     },
+     "score": 2.5792,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "King Senajit is broken after his son dies. A brahmin comes and says that every day brings thousands of reasons to grieve and hundreds to fear, and these rush in on the unwise. They do not rush in on the wise. The brahmin means that suffering is not a life sentence. You do not have to accept every wave of grief or fear as your only truth. You can meet what comes without being defeated by it.",
+     "for_you": "Your mind is already full of reasons to visit your father and reasons to stay away, and both feel heavy. The child who was hurt and the adult who wants to heal are both real. You can let both of them exist without letting the fear choose for you.",
+     "try_today": "Notice one reason to fear and one reason to hope, and let them both sit.",
+     "scene_line": "You are the king in a room with a brahmin, and the door is open.",
+     "asks": [
+      "How do I know which reasons to let in?",
+      "How do I stop the reasons from rushing in?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "words": [
+      {
+       "sa": "देहः",
+       "en": "body"
+      },
+      {
+       "sa": "तिष्ठतु",
+       "en": "may remain"
+      },
+      {
+       "sa": "कल्पान्तं",
+       "en": "until the end of the kalpa"
+      },
+      {
+       "sa": "गच्छतु",
+       "en": "may go"
+      },
+      {
+       "sa": "अद्यैव",
+       "en": "even today"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "पुनः",
+       "en": "again"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "हानिः",
+       "en": "loss"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "चिन्मात्ररूपिणः",
+       "en": "of the form of pure consciousness"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.0286,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra speaks to Janaka, who sits in the palace after his father has died and his kingdom is gone. The teacher asks him to look past the body that was born and the body that will die, and to rest in what remains. He says whether the body lasts a hundred years or ends today, what you are neither gains nor loses. The point is to see that the self is the ocean, not the waves.",
+     "for_you": "The body that held you when you were twelve is the same one that is old now, and the adult you are today is not that child. The visit your adult wants to make is a choice of the present, not a surrender to the past.",
+     "try_today": "Notice the difference between the fear of the past and the choice of the present.",
+     "scene_line": "You are the space in which your father's old body and your own adult self both stand.",
+     "asks": [
+      "How do I visit without becoming the child again?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.2834,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "After Sita is taken, Ram wanders back to an empty hut. He asks the trees and animals where she went, and when they have no answer, he breaks down. He rages that he will burn the whole world to find her. Lakshman meets him there. He does not argue with the grief. He simply says that trouble touches everyone, and it flares up like fire and passes in a moment.",
+     "for_you": "The adult who wants to visit your father is not the child who was hurt. That child is safe inside you, and it cannot be taken away. The visit does not require you to lose that safety or to become the person you were. You are allowed to hold both.",
+     "try_today": "Notice the moment the fear of being twelve rises, and let it pass without acting.",
+     "scene_line": "You are in your own empty hut, raging, and a friend meets you there.",
+     "asks": [
+      "How do I let the fire pass without fighting it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.21.9",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.9",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha on getting through crises.",
+     "sanskrit": "एकं विवेकं सुहृदमेकां प्रौढसखीं धियम् । आदाय विहरन्नेव संकटेषु न मुह्यति ॥",
+     "line": "Make good judgment your friend and wisdom your companion, and crises won't bewilder you.",
+     "translation": "Taking discernment as your one true friend and wisdom as your seasoned companion, you can move through life and not lose your way in crises.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 2.5351,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Rama after Punya comforts his brother Pavana, who weeps in the forest over their dead parents. Punya shows that the ties of possession and loss are woven by the mind, not the world itself. Vasishtha carries this forward: let discernment be your friend and wisdom your companion, and crises will not confuse you. The point is not to stop loving, but to stop endlessly feeding the mind with what it cannot change.",
+     "for_you": "You do not have to choose between them, and you do not have to let either one drive the car.",
+     "try_today": "Notice the moment the twelve-year-old rises, and let the adult hold them for a minute without moving.",
+     "scene_line": "You are at the threshold where the child who was hurt and the adult who can choose meet.",
+     "asks": [
+      "How do I know which part is speaking right now?",
+      "Can I visit without the past taking over?",
+      "What does it mean to be held by the adult I am?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.1.146",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+     "family": "vr",
+     "speaker": "Beings of the sky",
+     "listener": "Hanuman",
+     "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+     "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+     "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+     "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+     "words": [],
+     "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_leap",
+      "title": "Hanuman's leap",
+      "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+      "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+      "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+     },
+     "score": 1.8924,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "After Hanuman outwits two monsters in mid-flight, the sky beings praise him. They say that steadiness, clear sight, good judgment, and skill are the four qualities that keep a person from sinking in their work. It is a moment of praise, but Hanuman does not let it slow him down. He holds the praise lightly and keeps his promise to press on. The verse proposes that you can hold your own steadiness and skill without letting the moment of being seen make you forget your purpose.",
+     "for_you": "Your parents are far away and your father is sick. You feel the old fear of your father's harshness, yet the adult in you knows a visit is the right thing. You can hold both the child who was hurt and the adult who is capable.",
+     "try_today": "Notice one small thing your body is telling you about this visit.",
+     "scene_line": "You are in your own sky, praised for your strength but still bound to your promise.",
+     "asks": [
+      "How do I keep my promise to visit without losing myself?",
+      "Can my old fear and my adult care live in the same room?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_kausalya",
+     "title": "Kausalya lets her son go",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Sita"
+     ],
+     "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+     "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+     "lesson": "Letting a child go with your blessing is love at its hardest.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.55.doha.1",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "Ram",
+      "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+      "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+      "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+      "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+      "words": [
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "बिचारि",
+        "en": "thinking"
+       },
+       {
+        "sa": "नहिं",
+        "en": "not"
+       },
+       {
+        "sa": "करउँ",
+        "en": "I do"
+       },
+       {
+        "sa": "हठ",
+        "en": "stubbornness"
+       },
+       {
+        "sa": "झूठ",
+        "en": "false"
+       },
+       {
+        "sa": "सनेहु",
+        "en": "affection"
+       },
+       {
+        "sa": "बढ़ाइ",
+        "en": "increasing"
+       },
+       {
+        "sa": "मानि",
+        "en": "accepting"
+       },
+       {
+        "sa": "मातु",
+        "en": "mother"
+       },
+       {
+        "sa": "कर",
+        "en": "of"
+       },
+       {
+        "sa": "नात",
+        "en": "bond"
+       },
+       {
+        "sa": "बलि",
+        "en": "I bow"
+       },
+       {
+        "sa": "सुरति",
+        "en": "memory"
+       },
+       {
+        "sa": "बिसरि",
+        "en": "forget"
+       },
+       {
+        "sa": "जनि",
+        "en": "do not"
+       },
+       {
+        "sa": "जाइ",
+        "en": "go"
+       }
+      ],
+      "why": "Letting a child go with your blessing is love at its hardest.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_kausalya",
+       "title": "Kausalya lets her son go",
+       "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+       "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+       "lesson": "Letting a child go with your blessing is love at its hardest."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya had the sweets ready for Ram's crowning when he came to say goodbye",
+     "teaser": "Kausalya had the sweets ready for Ram's crowning when he came to say goodbye",
+     "for_you": "Kausalya stood at the edge of her own sorrow and let her son go. The adult part of you wants to visit. You can hold both.",
+     "asks": [
+      "Can I visit without letting the old fear take over?",
+      "How do I hold the child and the adult at once?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The child and the adult",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15923,
+   "total": 15925
+  },
+  "_ms": 15927
+ }
+}

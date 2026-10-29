@@ -1,0 +1,102 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.5,
+ "core_struggle": "A midlife professional juggling work, children, and aging parents feels they are failing at a side project they have kept trying on for years, and wonders what they are doing wrong.",
+ "mechanism": "attachment_to_results",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "side_project",
+   "weight": 1.76,
+   "source": "note"
+  },
+  {
+   "id": "procrastination",
+   "weight": 0.887,
+   "source": "note"
+  },
+  {
+   "id": "no_meaning",
+   "weight": 0.71,
+   "source": "note"
+  },
+  {
+   "id": "failure_project",
+   "weight": 0.625,
+   "source": "note"
+  },
+  {
+   "id": "discipline",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.45,
+   "source": "profile"
+  }
+ ],
+ "mirror": "Years of trying and nothing to show for it, while the rest of your life asks for everything else.",
+ "queries": {
+  "hook": "The weight of years of trying and the doubt that you are failing at the one thing that is yours, while the rest of your life asks for everything else.",
+  "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps you stuck, and the unacted-on decision weighs more than the work itself.",
+  "steady": "Your own path walked imperfectly is enough; no honest effort on the right path is ever wasted.",
+  "act": "Rise and act; do the work fully and let the result go, one day at a time, and keep at it without waiting to feel ready.",
+  "story": "A man who spent years trying to build something of his own, met repeated failure, and kept going until the work itself became his answer."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The doubt and the delay",
+  "The effort that is yours",
+  "More than what you build"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "tired and searching",
+ "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+ "week_thesis": "",
+ "undisclosed": true,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the doubt and the weight of years of trying, named without judgement.",
+  "diagnose": "You see that doubt and delay feed each other, and that waiting to feel ready keeps you stuck.",
+  "steady": "You hold that your own path walked imperfectly is enough, and no honest effort is ever wasted.",
+  "story": "A man who kept going through years of failure shows you what it means to act without the result."
+ },
+ "insight": "You are tired of the side project, and you are tired of being told you are failing at it. The doubt has settled in because the effort has not yet met the result.",
+ "seat": "a midlife professional juggling work, children, aging parents, and a side project that keeps failing",
+ "life_context": "In their thirties or forties, working, raising children, and caring for parents; they have spent years trying to build apps on the side, and none have taken off, leaving them unsure whether to keep going.",
+ "details": [
+  "building apps on the side for years without success",
+  "has a job, children, and aging parents to care for",
+  "keeps trying despite repeated failure",
+  "does not know what they are doing wrong"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "own_thing",
+  "raising_kids",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "mechanism:inertia_for_a_keeper",
+  "week_thesis:missing"
+ ]
+}

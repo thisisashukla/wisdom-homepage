@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.7,
+ "core_struggle": "Her mother's chemo started this week, and she is the only one handling hospital, office and home, which leaves her alone with her fear am.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "duty_conflict",
+ "situations": [
+  {
+   "id": "illness_family",
+   "weight": 2.025,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 1.29,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "burnout",
+   "weight": 0.559,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.518,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You carry the hospital, the office and the home, and am the search for a number you cannot control.",
+ "queries": {
+  "hook": "Holding everything together for the one you love, and the terror that comes alone am when the search for a number is the only thing left. Someone I love is seriously ill.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+  "steady": "What is real in you cannot be lost; your love is not a number you can, and it is what will carry you through.",
+  "act": "Do what you can do today for her, and let the rest go; speak your fear to one person you trust, and let the night have its own hour.",
+  "story": "A son or daughter who stood where you stand, holding the world together for a parent in illness, and found that what they carried was not the burden alone but the love that made it bearable."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The terror of 3am",
+  "What is real cannot be lost",
+  "The love that carries you"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "terrified and alone",
+ "bridge": "The 3am search for survival rates is what the texts call fear: worry that multiplies what has not happened, and what is real in you cannot be lost.",
+ "week_thesis": "From the 3am search for a number you cannot hold, to the truth that what is real in you cannot be lost.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the terror of being the only one holding everything together.",
+  "diagnose": "You see that the search for a number am is fear multiplying what has not happened.",
+  "steady": "You hold that what is real in you cannot be lost, and your love is not a number.",
+  "act": "You try doing only what you can do today, and letting the rest go, and speaking your fear to one person.",
+  "story": "A son or daughter who held everything together for a parent in illness shows you what love can carry."
+ },
+ "insight": "The search for survival rates am is not about the data. It is about the terror that if you stop holding everything, your mother will be alone.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "mother started chemo this week",
+  "only one handling hospital, office and home",
+  "keeps googling survival rates am"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation"
+ ]
+}

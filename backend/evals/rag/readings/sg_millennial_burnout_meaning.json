@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.75,
+ "core_struggle": "A man in his late thirties has worked -hour days at a bank for ten years, and now sits in the MRT feeling empty, not sad.",
+ "mechanism": "disconnection",
+ "secondary_mechanism": "no_meaning",
+ "situations": [
+  {
+   "id": "no_meaning",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "burnout",
+   "weight": 1.262,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.93,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "retirement",
+   "weight": 0.391,
+   "source": "note"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You give the day fourteen hours and the MRT gives you nothing back.",
+ "queries": {
+  "hook": "The emptiness of a life that is not sad but not there, and the restlessness that comes from feeling cut off from yourself.",
+  "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+  "steady": "The self that is real cannot be lost to a job, and what passes is not all there is.",
+  "act": "Ask one question each day that has nothing to do with the job, and sit with the answer without fixing it.",
+  "story": "A man who has everything the world counts and nothing that counts to him, who meets a teacher and begins to see what he has been missing."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "What is missing",
+  "What does not pass",
+  "The one who asks"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "empty and numb",
+ "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+ "week_thesis": "Seven days from feeling nothing on the MRT to finding the first thread of what is real and does not pass.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the emptiness and the restlessness, named without judgement.",
+  "diagnose": "You see that the money and the hours are not the same as what you are missing.",
+  "steady": "You hold that the self that is real cannot be lost to a job.",
+  "act": "You try one question a day that has nothing to do with the job, and sit with the answer.",
+  "story": "A man who has everything the world counts and nothing that counts to him meets a teacher who shows him the way."
+ },
+ "insight": "You are not sad. You are not there. The money is real and the emptiness is real, and the two are not the same thing.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "works hours a day at a bank for ten years",
+  "sits in the MRT and feels nothing",
+  "is not sad, just empty"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "seat:missing"
+ ]
+}

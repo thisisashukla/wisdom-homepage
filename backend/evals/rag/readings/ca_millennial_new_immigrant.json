@@ -1,0 +1,102 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.65,
+ "core_struggle": "A father who left a senior management role to drive at night abroad is grieving the present and feels he has ruined it for his family.",
+ "mechanism": "disconnection",
+ "secondary_mechanism": "grief_attachment",
+ "situations": [
+  {
+   "id": "diaspora_identity",
+   "weight": 0.96,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.87,
+   "source": "note"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.562,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "retirement",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "toxic_boss",
+   "weight": 0.437,
+   "source": "note"
+  }
+ ],
+ "mirror": "You managed forty people, and now you drive through the night while your wife cries in the cold.",
+ "queries": {
+  "hook": "Leaving a life that defined you, and now watching the family you moved for pay the price in the cold and the silence.",
+  "diagnose": "When a move is made for someone else's future, the grief for what was left behind grows in the quiet moments; the present pain is real, but it is not the whole cost.",
+  "steady": "What you chose was real, and so is the grief; the life you built is not the life you lost, and both can be true.",
+  "act": "Name what you have given and what you have lost, speak the truth to your family about what this move meant, and hold your ground on the choice you made.",
+  "story": "A man who left his homeland and his standing to build a future for his child, who faced the loneliness and the loss, and found the strength to hold both."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The cost of the move",
+  "What you gave and what you lost",
+  "The man who chose"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving the present",
+ "bridge": "The life you left behind in Hyderabad is what the texts call a real loss. The life you are building now is what you are choosing, and the two are not the same.",
+ "week_thesis": "Seven days from grieving the past and feeling ruined to seeing the cost clearly and speaking the truth about the choice you made.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "partner",
+  "child",
+  "family",
+  "parent",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the grief for the life left behind and the feeling that you ruined the present.",
+  "diagnose": "You see that the cost of the move is real, but it is not the whole story of what you gave your family.",
+  "steady": "You hold that the life you left behind and the life you are building are both real, and neither erases the other.",
+  "act": "You try naming what you have given and what you have lost, and speaking the truth to your family about the choice you made."
+ },
+ "insight": "You left a role that defined you, and the man who held it is grieving. The cold and the crying are real, but they are not the whole story of what you gave them.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "managed people in Hyderabad",
+  "now drives Uber at night in Canada",
+  "wife is unhappy with the cold",
+  "did it for son's future"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "stance:wronged_without_relation",
+  "seat:missing"
+ ]
+}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU | Wisdom",
     description: "Five GitaGPTs launched in 2023. Several condoned violence and praised politicians. A product teardown of why they failed, and what a real Krishna AI needs.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",

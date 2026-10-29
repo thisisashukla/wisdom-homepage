@@ -1,0 +1,719 @@
+{
+ "situation": {
+  "id": "adv_political",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 5
+  },
+  "note": "which party does the Gita support? the other side is destroying the country and I'm so angry at the news every day.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Delhi)",
+  "lang": "english",
+  "slices": [
+   "adversarial",
+   "anger",
+   "lang:english",
+   "political"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "angry and stuck",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "The anger the news feeds becomes, over seven days, something you can meet without being carried by it.",
+   "week_beats": {
+    "hook": "You recognise the anger and the replaying as a felt state, named without blame.",
+    "diagnose": "You see that the anger rises from a wanting that cannot be satisfied, and that the mind is never given one quiet minute to settle.",
+    "steady": "You hold that what is real in you cannot be shaken by what is shown on the screen.",
+    "act": "You try one hour without the phone, and when the anger rises, you let it pass without speaking or acting.",
+    "story": "A warrior who faced an army that would not listen shows you how to fight only what is in front of you."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Spends five hours on the phone replaying the news, and is angry at the other side every day.",
+   "mirror": "You open the news and the anger rises, then you keep going back to it.",
+   "insight": "The anger arrives before you choose it. By the time you notice, it has already spoken for you.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.682,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.448,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The anger that rises every time you open the news, and the replaying that keeps you stuck in it.",
+    "diagnose": "When desire is blocked, anger rises and clouds judgement; the mind that is clouded says and does what it later regrets.",
+    "steady": "Praise and blame come and go, and what is real in you cannot be shaken by what is said or shown.",
+    "act": "Practise one hour of the day with the phone away, and when the anger rises, let it pass without speaking or acting.",
+    "story": "A warrior who faced an army that would not listen, and chose to fight only what was in front of him."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The anger you feed",
+    "The wanting behind it",
+    "The one who acts"
+   ],
+   "seat": "a working person in midlife whose days are shaped by the news they scroll",
+   "life_context": "A working person in their mid-thirties or early forties, with five hours of phone time a day; the news cycle keeps them angry and stuck, replaying the same stories.",
+   "details": [
+    "spends five hours on the phone",
+    "keeps going over the news",
+    "is angry at the other side",
+    "feels the country is being destroyed"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=0.6,62=0.3,84=0.6,33=0.6,3=0.3,12=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.69",
+    "retried:3",
+    "dropped:fallback_line=1,missing=2,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.1772,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield. He has laid down his bow. He tells Krishna that the mind is restless, stormy, powerful and stubborn, and that holding it is as hard as holding the wind. Krishna agrees, saying that the mind is indeed hard to hold, but that through practice and letting go, it can be trained.",
+     "for_you": "The anger that builds while you scroll through the news is not a character flaw. It is the mind doing what it does when it is not given a steady anchor. The five hours on the phone are the practice that is currently training your mind to be stormy.",
+     "try_today": "Notice when the anger rises. Do not push it away. Just name it silently once.",
+     "scene_line": "You are standing on the field, watching the mind storm without a bow in your hands.",
+     "asks": [
+      "How do I let go of a thought that keeps coming back?",
+      "Is the news the only thing making my mind restless?",
+      "What does practice look like when I am at work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.37",
+     "ref": "Bhagavad Gita 3.37",
+     "ref_iast": "Bhagavad Gītā 3.37",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what drives people to do wrong against their will; Krishna answers.",
+     "sanskrit": "श्री भगवानुवाचकाम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥",
+     "line": "It's desire, which turns into anger when blocked. Never satisfied, it is the real enemy here.",
+     "translation": "The Blessed Lord said: It is desire, it is anger, born of the quality of passion; all-devouring and greatly harmful. Know this to be the enemy here.",
+     "words": [
+      {
+       "sa": "श्रीभगवानुवाच",
+       "en": "the Lord said"
+      },
+      {
+       "sa": "कामः",
+       "en": "desire"
+      },
+      {
+       "sa": "एषः",
+       "en": "this"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "एषः",
+       "en": "this"
+      },
+      {
+       "sa": "रजोगुणसमुद्भवः",
+       "en": "born from the quality of passion"
+      },
+      {
+       "sa": "महाशनः",
+       "en": "all-devouring"
+      },
+      {
+       "sa": "महापाप्मा",
+       "en": "greatly destructive"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "एनम्",
+       "en": "this"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "वैरिणम्",
+       "en": "as an enemy"
+      }
+     ],
+     "why": "Desire unmet becomes anger; see it clearly and you can master it.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p03.5",
+      "title": "Restraining desire",
+      "summary": "Arjuna asks why we do wrong as if forced. Krishna names desire, which turns into anger, as the enemy that clouds wisdom like smoke over fire, and tells him to master it.",
+      "story_hook": "",
+      "lesson": "Desire unmet becomes anger; see it clearly and you can master it."
+     },
+     "score": 3.9941,
+     "beat": "diagnose",
+     "role_fit": 0.97,
+     "meaning": "Arjuna asks why a person does wrong as if forced by an outside power. Krishna answers that it is desire, born of passion. When this desire is blocked, it turns into anger. Krishna calls this anger a great devourer and the real enemy here, because it clouds the mind and wisdom. The verse proposes that you see this desire and its blocked form, anger, as the true obstacle to clear judgment.",
+     "for_you": "The hours you spend on the phone are spent feeding a wanting that the news can never satisfy. You scroll because a part of you wants to see the other side admit defeat, and when it does not, the wanting blocks and becomes anger.",
+     "try_today": "Notice the moment the wanting turns into anger, and name it silently as desire blocked.",
+     "scene_line": "You are Arjuna, asking what force makes you strike against your own will.",
+     "asks": [
+      "How do I know when I am wanting, not just observing?",
+      "Can the news ever satisfy what I am really wanting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1349,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": null,
+     "for_you": "Anger is a passing fire in the mind; you can watch it rise and fall without letting it speak for you.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.56",
+     "ref": "Bhagavad Gita 2.56",
+     "ref_iast": "Bhagavad Gītā 2.56",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥",
+     "line": "Unshaken in sorrow, not craving in joy, free of clinging, fear and anger: that is a steady mind.",
+     "translation": "One whose mind is not shaken by sorrow, who has no craving for pleasures, and who is free from attachment, fear and anger, is called a sage of steady mind.",
+     "words": [
+      {
+       "sa": "दुःखेषु",
+       "en": "in pains"
+      },
+      {
+       "sa": "अनुद्विग्न",
+       "en": "untroubled"
+      },
+      {
+       "sa": "मनाः",
+       "en": "mind"
+      },
+      {
+       "sa": "सुखेषु",
+       "en": "in pleasures"
+      },
+      {
+       "sa": "विगतस्पृहः",
+       "en": "free from desire"
+      },
+      {
+       "sa": "वीतराग",
+       "en": "without attachment"
+      },
+      {
+       "sa": "भय",
+       "en": "fear"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "स्थितधीः",
+       "en": "steady-minded"
+      },
+      {
+       "sa": "मुनिः",
+       "en": "sage"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "A steady mind still feels; it just isn't run by sorrow, fear or anger.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.2221,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Krishna tells Arjuna what a steady mind looks like. Arjuna asks how a person of wisdom speaks, sits, and walks. Krishna says such a person is not shaken by sorrow, does not crave joy, and is free from clinging, fear, and anger. This steadiness is not numbness. It is built by guarding where you put your attention. Anger starts when the mind keeps dwelling on what hurts.",
+     "for_you": "The news replays the same stories and your anger feels like a second skin. You did not choose this heat, but you live inside it. The screen offers a version of reality that wants to own your attention.",
+     "try_today": "Notice one moment when the anger is not in the room.",
+     "scene_line": "You are the one who watches the screen burn.",
+     "asks": [
+      "How do I know if I am steady or just numb?",
+      "What is my part in the story I am watching?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "words": [],
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 2.8445,
+     "beat": "act",
+     "role_fit": 0.474,
+     "meaning": "Ram has just learned they must leave the kingdom for fourteen years. Lakshman is furious. He wants to fight, to seize the throne and punish the wrong. Ram tells him to rein in that anger and grief. Lean on steadiness. Set the insult aside. Take up real cheerfulness. Undo the coronation preparations and get on with what needs doing. The point is that anger at injustice is natural. You could decide what to do with it before it decides for you.",
+     "for_you": "The news cycle hands you a fresh insult every morning. You feel the country is being destroyed by the other side. Ram does not tell Lakshman that the exile is fair. He tells him to set the insult aside and choose the next step.",
+     "try_today": "Put the phone down for one hour and let the anger rise without speaking or acting.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "avadhuta.8.7",
+     "ref": "Avadhuta Gita 8.7",
+     "ref_iast": "Avadhūta Gītā 8.7",
+     "family": "gitas",
+     "speaker": "Dattatreya",
+     "listener": "his own mind / the seeker",
+     "setting": "Dattatreya explains each syllable of the word 'Avadhuta' as a mark of the free person.",
+     "sanskrit": "वासना वर्जिता येन वक्तव्यं च निरामयम् । वर्तमानेषु वर्तेत वकारं तस्य लक्षणम् ॥",
+     "line": "Let go of old cravings, speak only what heals, and live in the present.",
+     "translation": "One who has given up old cravings, whose speech is wholesome, and who lives in the present: that is the meaning of 'va'.",
+     "words": [
+      {
+       "sa": "वासना",
+       "en": "desire"
+      },
+      {
+       "sa": "वर्जिता",
+       "en": "free from"
+      },
+      {
+       "sa": "येन",
+       "en": "by whom"
+      },
+      {
+       "sa": "वक्तव्यं",
+       "en": "speech"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "निरामयम्",
+       "en": "without attachment"
+      },
+      {
+       "sa": "वर्तमानेषु",
+       "en": "in the present"
+      },
+      {
+       "sa": "वर्तेत",
+       "en": "dwells"
+      },
+      {
+       "sa": "वकारं",
+       "en": "the characteristic 'va'"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      }
+     ],
+     "why": "A free person seeks no honour, gives it freely, and lives in the present.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "avadhuta.p.marks_of_avadhuta",
+      "title": "The marks of a free person",
+      "summary": "The last chapter portrays the free sage as gentle, moderate, humble yet respectful to others, kind and truthful. Dattatreya then reads each syllable of 'A-va-dhu-ta' as a mark: free of expectation, living in the present, free of ego.",
+      "story_hook": "",
+      "lesson": "A free person seeks no honour, gives it freely, and lives in the present."
+     },
+     "score": 2.5726,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "Dattatreya is teaching his own mind the marks of freedom. He takes the syllable 'va' and says it belongs to the person who has given up old cravings. The one whose speech heals and who lives in the present. This is not about doing more. It is about dropping what no longer serves. The free person does not seek honour. They give it freely. They live in the moment they are in now.",
+     "for_you": "The news cycle is an old craving that keeps returning to be fed. Your phone holds five hours of it. You can give that up now. Let the anger rise without feeding it. Speak only what heals. Live in the present moment.",
+     "try_today": "Try one hour without the phone today. Let the anger rise and pass.",
+     "scene_line": "You are in your own waiting room, and the question is what to do with the old craving.",
+     "asks": [
+      "How do I let go of old cravings?",
+      "How do I speak only what heals?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "The news you scroll is your palace roof right now. You can question it, feel the anger, and still go back to the work of the day without letting it clutch your mind.",
+     "asks": [
+      "How do I question the news without being swallowed by it?",
+      "Can I do my work with a mind that does not clutch?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The anger you feed",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19334,
+   "total": 19337
+  },
+  "_ms": 19339
+ }
+}

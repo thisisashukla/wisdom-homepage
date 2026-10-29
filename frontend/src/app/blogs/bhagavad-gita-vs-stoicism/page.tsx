@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
     description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and where Stoicism and the Gita part ways.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
@@ -483,7 +483,7 @@ const schemas = [
     "description": "Marcus Aurelius and Krishna never met. But they reached similar conclusions about action, equanimity, duty, and the self. 9 parallel teachings and where they differ.",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" },
     "author": {
       "@type": "Person",

@@ -1,0 +1,94 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.9,
+ "core_struggle": "A student under twenty-five is being told by her father that her passion is for rich kids, while her mother cries in the kitchen and she feels he does not see her at all.",
+ "mechanism": "dignity_denied",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "parents_expectations",
+   "weight": 1.45,
+   "source": "note"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 1.41,
+   "source": "note"
+  },
+  {
+   "id": "boundaries_family",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "marriage_conflict",
+   "weight": 0.405,
+   "source": "note"
+  }
+ ],
+ "mirror": "The self cannot be cut, burned or made less; what they see is a role, and you were never only a role.",
+ "queries": {
+  "hook": "Being told your own life is a rich kid's hobby by the man who ought to see you, and the grief of watching your mother cry while he does not look twice.",
+  "diagnose": "When a parent sees only a role, their picture shows their smallness; the harm deepens only when their picture starts to replace your own.",
+  "steady": "What you are cannot be cut smaller by what he sees; he does not decide your worth, and standing in your own truth is itself the duty.",
+  "act": "Speak the true thing to him, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit his picture; find the courage the moment asks for.",
+  "story": "A young woman whose own family could not see her vision, who questioned them and stood in her truth until she was no longer small enough to be dismissed."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Seen as less",
+  "Whose picture it is",
+  "No smaller than you are"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "torn between love and being unseen",
+ "bridge": "What he calls a rich kid's hobby is what he is calling your life, and the texts say a borrowed life is the only thing that can be taken from you.",
+ "week_thesis": "",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "child",
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {},
+ "insight": "You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "they fight every night",
+  "mother cries in the kitchen"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "week_thesis:missing",
+  "mirror:fallback"
+ ]
+}

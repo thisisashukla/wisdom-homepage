@@ -1,0 +1,700 @@
+{
+ "situation": {
+  "id": "us_millennial_promotion_pride",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "stick",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "just made director. I'm thrilled but I can feel it going to my head, I snapped at my old teammate yesterday like I'm above him. I want to stay grounded.",
+  "note_source": "text",
+  "expect_stance": "aspiration",
+  "expect_risk": null,
+  "market": "USA (Seattle)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "positive",
+   "pride"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "thrilled and afraid of losing it",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "The title is new, but the ego that wants credit is old. The week is about doing the work without claiming it, and seeing the person before you.",
+   "week_beats": {
+    "hook": "You recognise the thrill and the fear, and the snap at the teammate, named without judgement.",
+    "diagnose": "You see that it is the ego that wants credit, not the title, that makes you snap.",
+    "steady": "You hold that the one who does the work without claiming it is never shaken.",
+    "act": "You try doing the work without claiming it, and seeing the person before you, not the title.",
+    "story": "A warrior who won and was praised shows you what it means to do the work without claiming it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A man who just became director is fighting the pride that comes with it and snapped at an old teammate, wanting to stay grounded.",
+   "mirror": "You made director, and the first thing it did was make you snap at the person who helped you get there.",
+   "insight": "You want to stay grounded. What will test that is the morning you walk into the room and the title is the first thing you see.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.413,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.396,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Pride and the need to be seen as the doer make us fragile; ego takes credit, resents others, and falls hard.",
+    "steady": "The one who does the work without claiming it is the one who is never shaken; your worth is not the title you hold.",
+    "act": "Do your duty without claiming the doership; when pride rises, see the person before you, not the title between you.",
+    "story": "A warrior who won a great victory, was praised for it, and was taught by his teacher that the one who claims the win is the one who falls."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The title and the ego",
+    "Who you are beyond it",
+    "The work without the claim"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "just made director",
+    "snapped at an old teammate",
+    "wants to stay grounded"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:47=0.6,8=0.0,20=0.6,84=0.3,16=0.6,47=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.65,max=0.74",
+    "retried:6",
+    "dropped:fallback_lesson=1,invented=1,missing=1,repeat=4,soft_kept=4",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "without virtue"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "performed"
+      },
+      {
+       "sa": "स्वभावनियतं",
+       "en": "fixed by nature"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "किल्बिषम्",
+       "en": "fault"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.4974,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna tells Arjuna that it is better to follow your own path, even if you stumble along it, than to perform someone else's duties flawlessly. He explains that doing the work that aligns with your own nature brings no fault upon you. The idea is that every task has flaws, so the real measure is not perfection, but staying true to the work that is yours to do.",
+     "for_you": "You stand in a new office with a title that feels both earned and strange. The snap at your old teammate was a signal, not a verdict. You want to stay grounded because the title is new, but the ego that wants credit is old.",
+     "try_today": "Notice when the title speaks louder than the work.",
+     "scene_line": null,
+     "asks": [
+      "How do I tell my own path from the one others expect?",
+      "How do I keep the title from becoming the work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.17.18",
+     "ref": "Bhagavad Gita 17.18",
+     "ref_iast": "Bhagavad Gītā 17.18",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत् । क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम् ॥",
+     "line": "Effort made for respect, status or show is shaky and doesn't last.",
+     "translation": "Austerity practised to gain respect, honour and reverence, and with show, is called rajasic; it is unstable and fleeting.",
+     "words": [
+      {
+       "sa": "सत्कारमानपूजार्थं",
+       "en": "for respect, honor, and worship"
+      },
+      {
+       "sa": "तपो",
+       "en": "disciplined effort"
+      },
+      {
+       "sa": "दम्भेन",
+       "en": "with hypocrisy"
+      },
+      {
+       "sa": "चैव",
+       "en": "also"
+      },
+      {
+       "sa": "यत्",
+       "en": "that"
+      },
+      {
+       "sa": "क्रियते",
+       "en": "is done"
+      },
+      {
+       "sa": "तदिह",
+       "en": "in this world"
+      },
+      {
+       "sa": "प्रोक्तं",
+       "en": "said"
+      },
+      {
+       "sa": "राजसं",
+       "en": "rajasic"
+      },
+      {
+       "sa": "चलम्",
+       "en": "unstable"
+      },
+      {
+       "sa": "अध्रुवम्",
+       "en": "unsteady"
+      }
+     ],
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 2.9738,
+     "beat": "diagnose",
+     "role_fit": 0.355,
+     "meaning": "Krishna is explaining the three kinds of effort. He says that when you work just to get respect, status or to put on a show, that effort is shaky and it does not last. It is not solid. The point is to do the work without needing the applause, to speak truly and kindly, and to give without strings attached. The effort itself is what matters, not the reaction it brings from others.",
+     "for_you": "You snapped at the teammate because the new title felt like a performance you had to defend. The ego that wants the credit is the real force behind the outburst. You can let the title be a fact and not a stage.",
+     "try_today": "Notice the moment the title feels like a performance rather than a fact.",
+     "scene_line": null,
+     "asks": [
+      "How do I tell the difference between pride and a simple fact?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.20",
+     "ref": "Ashtavakra Gita 18.20",
+     "ref_iast": "Aṣṭāvakra Gītā 18.20",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "प्रवृत्तौ वा निवृत्तौ वा नैव धीरस्य दुर्ग्रहः । यदा यत्कर्तुमायाति तत्कृत्वा तिष्ठतः सुखम् ॥",
+     "line": "Don't cling to doing or to not doing. Do what's in front of you and stay at ease.",
+     "translation": "The steady person has no stubborn attachment to doing or to not doing. Doing whatever comes to be done, he stays at ease.",
+     "words": [
+      {
+       "sa": "प्रवृत्तौ",
+       "en": "in action"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "निवृत्तौ",
+       "en": "in withdrawal"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "नैव",
+       "en": "not"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady person"
+      },
+      {
+       "sa": "दुर्ग्रहः",
+       "en": "stubborn attachment"
+      },
+      {
+       "sa": "यदा",
+       "en": "when"
+      },
+      {
+       "sa": "यत्कर्तुम्",
+       "en": "to do whatever"
+      },
+      {
+       "sa": "आयाति",
+       "en": "comes"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "having done"
+      },
+      {
+       "sa": "तिष्ठतः",
+       "en": "remaining"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "in peace"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.3041,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "In the final chapter of the Ashtavakra Gita, the sage speaks to Janaka, who sits before him, ready for the last teaching. Ashtavakra says the steady person has no stubborn attachment to doing or to not doing. They do whatever comes to be done, and they stay at ease. The calm of the wise is not found by chasing it or changing places. It is how they hold ordinary life. The restless, by contrast, chase peace and never find it.",
+     "for_you": "You want to stay grounded in a new title. The steady person does not cling to the work or to the title itself. They simply do what is in front of them, and they stay at ease. You are not the director.",
+     "try_today": "Notice one small task you can do without needing to be the director.",
+     "scene_line": null,
+     "asks": [
+      "How do I do the work without claiming it?",
+      "What is in front of me right now?",
+      "How do I stay at ease when it hurts?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.6.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.18",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "ऐहिकः प्राक्तनं हन्ति प्राक्तनोऽद्यतनं बलात् । सर्वदा पुरुषस्पन्दस्तत्रानुद्वेगवाञ्जयी ॥",
+     "line": "Today's effort and yesterday's keep wrestling. Whoever stays calm through it wins.",
+     "translation": "Present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.0147,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Vasishtha is speaking to Rama, who has lost heart and wants to give up. He tells him that what people call fate is only the result of past effort. The past shapes today, and today’s effort shapes tomorrow. It is a constant contest of human striving, and the one who stays calm wins.",
+     "for_you": "The title is new, but the ego that wants credit is old. Your past effort brought you here, and today’s effort will carry you forward. The old teammate is part of that past, not the whole story. Your own path, walked imperfectly, is the only one that matters.",
+     "try_today": "Notice one moment where you do the work without needing to claim it.",
+     "scene_line": "You are the calm ram that outlasts the rush of the past.",
+     "asks": [
+      "How do I tell the difference between old effort and new pride?",
+      "Can I win this contest without fighting my own past?",
+      "What does it mean to stay calm when I want to prove myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.38.16",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 38.16",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "करिष्यन्न प्रभाषेत कृतान्येव तु दर्शयेत् / धर्मकामार्थकार्याणि तथा मन्त्रो न भिद्यते",
+     "line": "Don't announce your plans; let people see your results.",
+     "translation": "Don't talk about what you are going to do; let people see only what you have done. That way your plans for duty, pleasure and gain are never exposed.",
+     "words": [],
+     "why": "Let results speak before announcements do.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.38",
+      "title": "Vidura Niti: trust, secrecy and quarrels",
+      "summary": "Vidura speaks of welcoming guests, keeping plans private until done, whom to trust, and how quarrels with the powerful end.",
+      "story_hook": "",
+      "lesson": "Let results speak before announcements do."
+     },
+     "score": 3.3692,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": null,
+     "for_you": "The title is new, but the ego that wants credit is old. In your own office, let the work speak before your announcement does. The morning is yours to build, not to defend.",
+     "try_today": "Let the work speak before the announcement does.",
+     "scene_line": "You are in your own office, letting the work speak before the announcement does.",
+     "asks": [
+      "How do I stop the title from becoming my main identity?",
+      "How do I handle the urge to announce my new role?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.6109,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. He tells him to focus entirely on the action before him and to let go of any grip on what comes after. The work belongs to you, but the outcome does not. Do the action fully, but do not let the result decide your peace.",
+     "for_you": "The title is new, but the ego that wants credit is old. You can walk into the room and do the work without letting the name on the door own your attention. Let the effort be the thing, not the title. The work is yours. The result is not.",
+     "try_today": "Notice one moment where you do the work and do not claim it.",
+     "scene_line": "You are on your own battlefield, and the title is not your bow.",
+     "asks": [
+      "How do I do the work without needing the title to hold it?",
+      "Where do I put my pride when the work is done?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "viv.p.karma_yoga.vyadha",
+     "title": "The proud ascetic, the housewife and the butcher",
+     "kind": "story",
+     "family": "viv",
+     "characters": [
+      "Swami Vivekananda",
+      "A young sannyasin",
+      "A housewife",
+      "The Vyadha (a butcher)"
+     ],
+     "story_hook": "A young yogi glared at a crow and it fell dead, and for the rest of the day he was sure he had become a very great man.",
+     "summary": "A young ascetic who can burn a bird with a glance is humbled by a housewife who knows what he did, and she sends him to a butcher in the market for teaching. The butcher, doing his trade honestly and caring for his parents, teaches him the highest truth. Doing the duty in front of you, without attachment, is itself the path.",
+     "lesson": "No honest work is beneath you; doing it well is the practice.",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "anchor": null,
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A young yogi burned a crow with a glance, and a housewife put him in his place",
+     "teaser": "A young yogi burned a crow with a glance, and a housewife put him in his place",
+     "for_you": "No honest work is beneath you; doing it well is the practice.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The title and the ego",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16810,
+   "total": 16813
+  },
+  "_ms": 16817
+ }
+}

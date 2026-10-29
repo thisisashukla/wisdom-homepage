@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.5,
+ "core_struggle": "An educated professional from a hindi medium background fears being laughed at for their english in meetings and keeps replaying the fear.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "need_for_approval",
+ "situations": [
+  {
+   "id": "imposter",
+   "weight": 1.4,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 1.05,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.539,
+   "source": "note"
+  },
+  {
+   "id": "career_switch",
+   "weight": 0.525,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.405,
+   "source": "note"
+  }
+ ],
+ "mirror": "You have the work, and in the meeting you are replaying the words that might come out wrong.",
+ "queries": {
+  "hook": "The fear of being laughed at for your english in the meeting, and the replaying of every word that might come out wrong. I feel like an imposter.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+  "steady": "What is real in you cannot be taken by their laughter; your worth is not decided by how you speak in a room.",
+  "act": "Speak the true thing you know, even if the words are not perfect; let the work speak, and let the room hear it.",
+  "story": "A man of learning who feared his words were not enough, who spoke anyway, and found that the room heard him."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The room and the fear",
+  "What is real in you",
+  "The work that speaks"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "fear of being laughed at",
+ "bridge": "The fear that your english will be wrong and they will laugh is what the Gita calls fear of loss: imagining a future where they see you as small.",
+ "week_thesis": "Seven days from fearing the room to speaking in it, with the truth that your worth is not in your english.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the fear of being laughed at in the meeting room, named without judgement.",
+  "diagnose": "You see that the fear is of being seen as less, and that it multiplies what has not happened.",
+  "steady": "You hold that what is real in you cannot be lost by their laughter.",
+  "act": "You try speaking the true thing you know, even if the words are not perfect.",
+  "story": "A man of learning who feared his words were not enough shows you what it looks like to speak anyway."
+ },
+ "insight": "You know the work. The meeting room is where you replay the words that might come out wrong, and who might laugh.",
+ "seat": "an educated professional who fears being judged for their english in meetings",
+ "life_context": "A working professional in their late twenties or early thirties, now in a large company; the fear of being laughed at for their english in meetings keeps replaying, especially after the meeting ends.",
+ "details": [
+  "studied in hindi medium",
+  "now works in a large company",
+  "fears speaking in meetings because of english",
+  "worries others will laugh at mistakes"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "hook:anchored_to_situation"
+ ]
+}

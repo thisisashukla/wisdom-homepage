@@ -1,0 +1,644 @@
+{
+ "situation": {
+  "id": "in_boomer_widow_hindi",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2
+  },
+  "note": "पति को गए एक साल हो गया। घर में सब हैं पर मन नहीं लगता। पूजा करती हूँ पर लगता है भगवान भी सुन नहीं रहे।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Varanasi)",
+  "lang": "hindi",
+  "slices": [
+   "bereavement",
+   "hindi",
+   "lang:hindi",
+   "spiritual_dryness"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely in a full house and unheard",
+   "bridge": "The puja you perform and the silence you hear are what the Upanishads call the self seeking itself, not God.",
+   "week_thesis": "The search you feel after the puja is not for God to speak, but for the self to be heard, and that is where the Upanishads begin.",
+   "week_beats": {
+    "hook": "You recognise the empty room and the unanswered prayer as a real state, not a failing.",
+    "diagnose": "You see that the search is for meaning, and that meaning is found in what does not pass.",
+    "steady": "You hold that the self is what remains when all else falls away.",
+    "act": "You try sitting with the silence after the puja and letting the question be, without needing an answer.",
+    "story": "A seeker who lost her world and sat with the silence shows you that the search itself is the beginning of what you are looking for."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [],
+   "confidence": 0.5,
+   "core_struggle": "I feel lonely",
+   "mirror": "You light the lamp and speak to the empty room, and the house is full of people.",
+   "insight": "You are looking for something deeper, and the silence after the puja is where that search begins.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.279,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.442,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A heart that is full of people yet empty, and a search for something deeper than the rituals that have not yet spoken back.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self you seek is not elsewhere; it is the one that remains when the noise of the house and the ritual fall away.",
+    "act": "Sit with the silence after the puja and ask what is asking to be known, not what is owed to be answered.",
+    "story": "A woman who lost her husband and her familiar world, who sat with the silence and found that the search itself was the answer she was looking for."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The search after the puja",
+    "What does not pass",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "In retirement and widowed for a year; the house is full of people, yet the heart is searching and the puja feels unanswered.",
+   "details": [
+    "still performs puja but feels God is not listening"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:8=0.0,17=0.3,15=0.0,11=0.3,114=0.0,250=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.56,max=0.64",
+    "retried:2",
+    "redo:4",
+    "redo_fixed:1",
+    "dropped:fallback_line=1,invented_name=1,not_second_person=1,repeat=2,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.3887,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has collapsed in grief on the battlefield. He tells Krishna that he sees no way to escape this sorrow that is drying him up inside. He says that even winning an unrivalled, prosperous kingdom or ruling over the gods would not touch this grief. The verse proposes that admitting you do not know the answer and asking for help is where clarity begins.",
+     "for_you": "The puja is done and the room is full of people, but the silence after it is where the grief sits. You are not failing because the prayer feels unanswered. You are standing in the exact place where clarity begins.",
+     "try_today": "Notice the silence after the puja without trying to fill it.",
+     "scene_line": "You are on the battlefield of your own home, surrounded by voices, with no kingdom that can dry up this grief.",
+     "asks": [
+      "How do I know this grief is real and not a weakness?",
+      "Why does the puja feel unanswered when my faith is still there?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.28.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 28.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama on how everything changes.",
+     "sanskrit": "दिवसास्ते महान्तस्ते संपदस्ताः क्रियाश्च ताः । सर्वं स्मृतिपथं यातं यामो वयमपि क्षणात् ॥",
+     "line": "Those days, those people, that wealth, those deeds are memories now. We too will pass soon.",
+     "translation": "Those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a call to despair; it wakes Rama up to what matters now.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.4293,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "In the Yoga Vasishtha, Rama speaks to the sage Vasishtha and the hermit Vishvamitra. He has just returned from his wedding and is already seeing the truth of the world. He tells them that everything he once held dear is now a memory. Those days are gone. The great people are gone. The wealth is gone. The deeds are gone. He says that we too will pass away in a moment. He is not saying this to despair. He is naming honestly what feels empty so he can see what matters now.",
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+     "try_today": "Notice the silence after the puja as a question, not an answer.",
+     "scene_line": "You are in your own house, listening to the silence after the puja.",
+     "asks": [
+      "What is the silence asking me to notice today?",
+      "How does the grief for my partner show up in this silence?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.429",
+     "ref": "Brihadaranyaka Upanishad 4.3.5-6",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 4.3.5-6",
+     "family": "up",
+     "speaker": "Yajnavalkya",
+     "listener": "King Janaka",
+     "setting": "Janaka asks what light a person lives by.",
+     "sanskrit": "अस्तमित आदित्ये याज्ञवल्क्य चन्द्रमस्यस्तमिते शान्तेऽग्नौ किञ्ज्योतिरेवायं पुरुष इति । वागेवास्य ज्योतिर्भवतीति वाचैवायं ज्योतिषास्ते पल्ययते कर्म कुरुते विपल्येतीति । तस्माद्वै सम्राड् अपि यत्र स्वः पाणिर्न विनिर्ज्ञायतेऽथ यत्र वागुच्चरत्युपैव तत्रन्येतीत्येवमेवैतद् याज्ञवल्क्य ॥ अस्तमित आदित्ये याज्ञवल्क्य चन्द्रमस्यस्तमिते शान्तेऽग्नौ शान्तायां वाचि किञ्ज्योतिरेवायं पुरुष इत्यात्मैवास्य ज्योतिर्भवत्यात्मनैवायं ज्योतिषाऽऽस्ते पल्ययते कर्म कुरुते विपल्येतीति ॥",
+     "line": "When sun, moon and fire are gone and even voices fall silent, the self is your light.",
+     "translation": "'When the sun has set, Yajnavalkya, and the moon has set, and the fire has gone out, what light does a person have?' 'Speech is then his light; for when one cannot even see one's own hand, where a voice is heard, there one goes.' 'And when speech too is silent?' 'Then the self is his light. By the light of the self he sits, goes about, works and returns.'",
+     "words": [],
+     "why": "When every outer light fails, you still have your own.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.janaka",
+      "title": "Janaka asks: what is our light?",
+      "summary": "Yajnavalkya asks the rich, learned King Janaka where he will go when he dies, and the king admits he does not know. Later Janaka asks what light a person lives by: sun, then moon, then fire, then voice, and when all are gone, the self is one's own light.",
+      "story_hook": "",
+      "lesson": "When every outer light fails, you still have your own."
+     },
+     "score": 3.0295,
+     "beat": "steady",
+     "role_fit": 0.754,
+     "meaning": "Janaka asks Yajnavalkya what light remains when the sun, moon and fire are gone. Yajnavalkya answers that speech is the next light, and when even speech is silent, the self becomes one's own light. By this inner light, a person sits, goes about, works and returns.",
+     "for_you": "The house is full of voices, yet the silence after the puja feels heavier than any quiet. That is the space where the self asks to be known. You do not need an answer from God.",
+     "try_today": "Sit through the silence after puja without turning on the television.",
+     "scene_line": "You are the one who lights the lamp and then waits in the dark for a voice that is your own.",
+     "asks": [
+      "How do I hear my own voice when the house is so full?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.6.11",
+     "ref": "Shvetashvatara Upanishad 6.11",
+     "ref_iast": "Śvetāśvatara Upaniṣad 6.11",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "One of the best-known verses of the Upanishad, on the God within all.",
+     "sanskrit": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा। कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+     "line": "One God is hidden in every being: the inner self of all, the quiet witness of all we do.",
+     "translation": "One God is hidden in all beings: all-pervading, the inner self of every being, overseer of all action, dwelling in all beings, the witness, pure awareness, alone, beyond all qualities.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.5977,
+     "beat": "steady",
+     "role_fit": 0.684,
+     "meaning": "The Seer speaks to people who are asking hard questions. They want to know what rules their life and what causes their pain. The Seer says that one God is hidden in every living thing. This God is the quiet witness inside them, the awareness that sees all their actions. The verse says that finding this God is the end of asking, not the start of it. You do not find by running from your questions.",
+     "for_you": "After the puja, you wait for a voice that does not come. The verse says the true listener is the inner self, the quiet witness inside your own chest. It has been there through the year of loss. You do not need to build a bridge to God today.",
+     "try_today": "Sit with the silence after the puja and name one thing you see without judging it.",
+     "scene_line": "You are the quiet witness in a full house, watching the search for the self.",
+     "asks": [
+      "How do I hear the witness when the house is so loud?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.34",
+     "ref": "Bhagavad Gita 4.34",
+     "ref_iast": "Bhagavad Gītā 4.34",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+     "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+     "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+     "words": [
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "प्रणिपातेन",
+       "en": "by prostration"
+      },
+      {
+       "sa": "परिप्रश्नेन",
+       "en": "by sincere questioning"
+      },
+      {
+       "sa": "सेवया",
+       "en": "by service"
+      },
+      {
+       "sa": "उपदेक्ष्यन्ति",
+       "en": "will teach"
+      },
+      {
+       "sa": "ते",
+       "en": "to you"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "knowledge"
+      },
+      {
+       "sa": "ज्ञानिनः",
+       "en": "the knowers"
+      },
+      {
+       "sa": "तत्त्वदर्शिनः",
+       "en": "who see reality"
+      }
+     ],
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 2.8551,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": "Krishna is telling Arjuna that confusion and guilt end only when you stop trying to figure everything out alone. You could go to those who have already walked the path and let them guide you. They will teach you the way through humility, honest questioning, and quiet service.",
+     "for_you": "The house is full of people, but the heart is looking for a witness. You already have one. The quiet witness is inside you.",
+     "try_today": "Sit with the silence after the puja and let the question be.",
+     "scene_line": "You are sitting with the quiet witness after the puja.",
+     "asks": [
+      "How do I know who has seen the truth?",
+      "What does humble service look like for me now?",
+      "How do I approach with humility in my own home?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 1.8668,
+     "beat": "act",
+     "role_fit": 0.435,
+     "meaning": "Surdas speaks to the Lord, saying that never once delayed in answering. The Lord is naturally easy to reach, and remembering is enough to win over. He always gives devotees what lasts forever.",
+     "for_you": "The Lord has never once delayed you. The puja is the remembering, and the silence is the answer. Let the quiet hold you, and let the asking be enough.",
+     "try_today": "Sit with the silence after the puja and let the question be.",
+     "scene_line": "You are in the silence after the puja, waiting for a voice that has never delayed.",
+     "asks": [
+      "How do I know the silence is an answer?",
+      "What is the undying thing I am seeking?",
+      "Can I trust the silence to hold me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sampati",
+     "title": "Sampati, the bird who could not fly",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sampati",
+      "Angada",
+      "Hanuman",
+      "Nishakara"
+     ],
+     "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+     "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+     "lesson": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.62.13",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+      "family": "vr",
+      "speaker": "Sage Nishakara",
+      "listener": "Sampati (recounted)",
+      "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+      "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+      "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+      "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+      "words": [],
+      "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sampati",
+       "title": "Sampati, the bird who could not fly",
+       "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+       "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+       "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "An old bird with burnt wings had waited thousands of years for this moment",
+     "teaser": "An old bird with burnt wings had waited thousands of years for this moment",
+     "for_you": "Sampati sat for years on a mountain with wings that would not carry her, waiting for a reason to rise again. You sit in a full house with a puja that meets only silence, feeling your own voice has gone unheard. But your stillness is not emptiness.",
+     "asks": [
+      "How do I let my stillness speak to those around me?",
+      "Can I be useful in a house full of people?",
+      "What knowledge do I carry that they have not asked for?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The search after the puja",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17053,
+   "total": 17056
+  },
+  "_ms": 17060
+ }
+}

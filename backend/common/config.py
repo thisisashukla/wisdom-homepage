@@ -53,6 +53,16 @@ class Settings(BaseSettings):
     # Day 1 is a Gita verse. With this on, when no Gita candidate speaks to their situation (the rerank's best
     # Gita score under day1_gita_floor) and a verse from another text clearly does (+day1_other_margin), that
     # verse opens the plan instead. Off by default: "Bhagavad Gita tuned to your life" is the promise.
+    rag_sparse_w: float = 0.3            # RAG v2 step 4: weight of the BM25 leg in each beat's meaning score (0 = dense only)
+    rag_ce_w: float = 0.3                # RAG v2 step 5: weight of the cross-encoder rerank on each beat's top rag_ce_k (0 = off)
+    rag_ce_k: int = 40
+    rag_ce_cache: str = ""   # precomputed cross-encoder scores (ai/ce.py)
+    rag_ce_live: bool = True             # call the Cloudflare reranker for pairs not in the cache
+    rag_enrich_path: str = "./data/taxonomy/verse_enrich_v3.json"   # RAG v2 step 6: voice, emotions, standalone per verse
+    rag_persp_w: float = 0.0             # a verse voiced from the other side of their relationship loses this much
+    rag_emo_w: float = 0.0               # hook/steady: + this x overlap of their emotion with the verse's
+    rag_ctx_w: float = 0.5               # step 8: a verse that needs its neighbours to make sense loses this much
+    rag_pop_w: float = 0.35              # RAG v2 step 10: Day 1 hub verses (close to every situation) lose this x their hubness z-score
     day1_other_texts: bool = False       # tried on 21-22 Oct 2026: the other texts lack the Gita's curation and surfaced wounding Day 1 lines; off
     day1_gita_floor: float = 0.6         # the Gita opens the plan unless its best hook scores under this on the fit rerank...
     day1_other_margin: float = 0.25      # ...and a verse from another text beats it by this much

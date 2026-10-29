@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "harm_from_others",
+ "confidence": 0.65,
+ "core_struggle": "He found messages on his wife's phone, was told it was only talking, and now feels betrayed, boiling inside, and trapped by the children.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "betrayal",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.66,
+   "source": "note"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.621,
+   "source": "note"
+  },
+  {
+   "id": "empty_nest",
+   "weight": 0.525,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "marriage_conflict",
+   "weight": 0.422,
+   "source": "note"
+  }
+ ],
+ "mirror": "It sounds like home doesn't feel safe right now.",
+ "queries": {
+  "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+  "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+  "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+  "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+  "story": "A man whose trust was broken by his own, who questioned her openly, and found the footing to act without letting the family become his prison."
+ },
+ "query_sources": {
+  "hook": "safety",
+  "diagnose": "safety",
+  "steady": "safety",
+  "act": "safety",
+  "story": "llm"
+ },
+ "weeks": [
+  "The wound",
+  "Whose word it is",
+  "The one who acts"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "betrayed and trapped",
+ "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+ "week_thesis": "From boiling inside and feeling trapped by the children, to speaking the true thing and finding the courage to act without letting the family become your only reason to stay.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "partner",
+  "child",
+  "family",
+  "parent",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the betrayal and the anger, named without judgement.",
+  "diagnose": "You see that the harm deepens only if you let their word replace what you know in your body.",
+  "steady": "You hold that what you know in your body cannot be made smaller by what they say.",
+  "act": "You try speaking the true thing to her, gently and firmly, and find the courage the moment asks for.",
+  "story": "A man whose trust was broken questions his wife and finds the footing to act without letting the family become his prison."
+ },
+ "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "found messages on wife's phone",
+  "cannot leave because of the kids"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess"
+ ]
+}

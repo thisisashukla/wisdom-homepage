@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.5,
+ "core_struggle": "A parent who worked hard to give their child a better life is now shut out by that same teenager who says they would not understand.",
+ "mechanism": "expectation_of_others",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "teen_conflict",
+   "weight": 1.75,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.585,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "burnout",
+   "weight": 0.25,
+   "source": "profile"
+  }
+ ],
+ "mirror": "The door is closed, the headphones are on, and you are left with the work that was never enough.",
+ "queries": {
+  "hook": "The ache of a child who once needed you and now says you wouldn't understand; the door closed, the headphones on, and the work you did that now feels unreceived.",
+  "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+  "steady": "Praise and blame, success and failure, ease and struggle, come and go; the work you did was yours, and it was not wasted.",
+  "act": "Let go of the need for his understanding, speak your truth to him gently and without demand, and find one hour that is yours alone.",
+  "story": "A father and son, a door closed, and the father who learned that love does not end when it is not received."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The door you cannot open",
+  "What you gave and what he wants",
+  "Your peace is still yours"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "hurt and shut out",
+ "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+ "week_thesis": "Seven days from the ache of being shut out to seeing that his silence is his own, and your peace is still yours to keep.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the hurt of being dismissed by the child you gave everything for.",
+  "diagnose": "You see that the expectation of his understanding is what keeps the door closed.",
+  "steady": "You hold that your work was yours, and it was not wasted.",
+  "act": "You try letting go of his understanding, speaking your truth without demand, and taking one hour for yourself.",
+  "story": "A father who gave his son everything and was met with a closed door shows you that love does not end there."
+ },
+ "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+ "seat": "a working parent with a teenager who has closed the door",
+ "life_context": "In their mid-thirties or forties and working while raising a fifteen-year-old; the child has a closed door and headphones on, and the parent is left with the ache of effort that feels unreceived.",
+ "details": [
+  "a teenage son who won't talk",
+  "says 'you wouldn't understand'",
+  "the parent worked hard so the child would have it easier"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example"
+ ]
+}

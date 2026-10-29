@@ -324,6 +324,14 @@ class Planner:
         df = Counter(t for s in self._v_toks + self._p_toks for t in s)
         n = len(self._v_toks) + len(self._p_toks)
         self._idf = {t: math.log(1 + n / c) for t, c in df.items()}
+        self._bm25 = None          # RAG v2 step 4: keyword leg, built on first use (ai/sparse.py)
+        # RAG v2 step 6: enrichment v3 (voice, emotions, standalone), when the file is there
+        from common.config import settings as _st
+        _ep = Path(getattr(_st, "rag_enrich_path", "") or "")
+        _en = json.loads(_ep.read_text()) if _ep.is_file() else {}
+        self._voice = [(_en.get(v["id"]) or {}).get("voice", "any") for v in self.verses]
+        self._emos = [set((_en.get(v["id"]) or {}).get("emotions") or []) for v in self.verses]
+        self._needs_ctx = np.array([not (_en.get(v["id"]) or {}).get("standalone", 1) for v in self.verses])
         logger.info("Planner: %d verses with roles (%s), %d prasangs", len(self.verses),
                     f"{len(overrides)} LLM-labelled" if overrides else "heuristic", len(self.prasangs))
 
@@ -593,6 +601,82 @@ class Planner:
             out[i] = max(d.get(u.mechanism, 0.0), 0.6 * d.get(u.secondary_mechanism or "", 0.0))
         return out
 
+    # Whose side of a relationship the person is on, read off their top situations (RAG v2 step 6).
+    CHILD_SIDE = {"parents_expectations", "parent_conflict", "grief_parent", "parents_aging"}
+    PARENT_SIDE = {"teen_conflict", "present_parent", "raising_kids_values", "new_parent", "empty_nest"}
+    OTHER_SIDE = {"child": "parent", "parent": "child"}
+    EMO_WORDS = {"grief": r"griev|grief|loss|lost|mourn|miss", "fear": r"fear|afraid|scared|terrif|dread",
+                 "anxiety": r"anxi|worr|nervous|panic|uneasy|stress", "anger": r"anger|angry|rage|furious|boil|resent|irritat",
+                 "guilt": r"guilt|regret|sorry|failed", "shame": r"shame|ashamed|humiliat|embarrass", "envy": r"envy|jealous|compar",
+                 "loneliness": r"lonel|alone|isolat|unseen|empty", "confusion": r"confus|lost|torn|stuck|unsure|undecid",
+                 "restlessness": r"restless|racing|can't settle|scattered|distract", "despair": r"despair|hopeless|heavy|low|numb|drain",
+                 "hurt": r"hurt|wound|betray|shut out|rejected", "pride": r"proud|pride|ego", "craving": r"crav|addict|urge|hooked",
+                 "numbness": r"numb|nothing|empty|flat", "hope": r"hope|eager|excit", "gratitude": r"grateful|thankful|gratitude",
+                 "resolve": r"determin|resolve|ready|commit", "love": r"love|tender", "peace": r"calm|peace|still"}
+
+    def _side(self, u: Understanding) -> Optional[str]:
+        for s in u.situations[:3]:
+            if s["id"] in self.CHILD_SIDE:
+                return "child"
+            if s["id"] in self.PARENT_SIDE:
+                return "parent"
+        return None
+
+    def _emo_fit(self, u: Understanding) -> np.ndarray:
+        txt = (getattr(u, "emotion", "") or "").lower()
+        want = {e for e, rx in self.EMO_WORDS.items() if re.search(rx, txt)}
+        if not want:
+            return np.zeros(len(self.verses), dtype=np.float32)
+        return np.array([len(want & e) / len(want) for e in self._emos], dtype=np.float32)
+
+    def _hubness(self) -> np.ndarray:
+        """How close a verse sits to every situation at once (mean cosine to all situation centroids), as a z-score
+        clipped at 0. Hub verses ("the mind is restless") win Day 1 for almost anyone; RAG v2 step 10 discounts them."""
+        h = getattr(self, "_hub", None)
+        if h is None:
+            if self.rec.verse_vecs is None or self.rec.sit_vecs is None:
+                return np.zeros(len(self.verses), dtype=np.float32)
+            m = (self.rec.verse_vecs @ self.rec.sit_vecs.T).mean(axis=1)
+            h = np.clip((m - m.mean()) / (m.std() + 1e-6), 0, None).astype(np.float32)
+            self._hub = h
+        return h
+
+    def _sparse(self, text: str) -> np.ndarray:
+        """BM25 of a beat statement against each verse's document (ai/sparse.py)."""
+        if self._bm25 is None:
+            from ai.sparse import BM25
+            self._bm25 = BM25([_toks(self.rec._verse_doc(v) + " " + " ".join(v.get("themes") or [])) for v in self.verses])
+        return self._bm25.scores(_toks(text))
+
+    def _meaning(self, qvec: np.ndarray, text: str, ok: np.ndarray) -> np.ndarray:
+        """Dense meaning, blended with the BM25 leg when settings.rag_sparse_w > 0 (both on the query's own spread)."""
+        from common.config import settings
+        sem = self._relative(self.rec.verse_vecs @ qvec, ok)
+        w = float(getattr(settings, "rag_sparse_w", 0.0) or 0.0)
+        if w > 0 and text:
+            sp = self._sparse(text)
+            if sp.max() > 0:
+                sem = (1 - w) * sem + w * self._relative(sp, ok & (sp > 0)) * (sp > 0)
+        return sem
+
+    def _ce_blend(self, s: np.ndarray, ok: np.ndarray, text: str, w: float, k: int) -> np.ndarray:
+        """Cross-encoder rerank (ai/ce.py): the top `k` eligible verses by score get + w x their cross-encoder score,
+        min-max scaled within those k. Untouched when the scores aren't available."""
+        cand = np.where(ok, s, -np.inf)
+        top = np.argsort(-cand)[:k]
+        top = top[np.isfinite(cand[top])]
+        if len(top) < 2 or not text:
+            return s
+        from ai import ce
+        ids = [self.verses[i]["id"] for i in top]
+        sc = ce.score(text, ids, [self.rec._verse_doc(self.verses[i]) for i in top])
+        if sc is None:
+            return s
+        rel = (sc - sc.min()) / max(1e-6, float(sc.max() - sc.min()))
+        s = s.copy()
+        s[top] += w * rel
+        return s
+
     @staticmethod
     def _relative(sims: np.ndarray, ok: np.ndarray) -> np.ndarray:
         """BGE-M3 cosines bunch up (0.5-0.7), so rank closeness against this query's own spread."""
@@ -612,12 +696,25 @@ class Planner:
         if lc["fam"] and feeling != "gita":
             pri = pri + np.array([lc["fam"].get(f, 0.0) for f in self._family], dtype=np.float32)
         tones = [((v.get("jev") or {}).get("tone")) for v in self.verses]
-        texts = level_texts(u, level) if qvecs is None else None
+        texts = level_texts(u, level)
+        from common.config import settings
+        ce_w, ce_k = float(getattr(settings, "rag_ce_w", 0.0) or 0.0), int(getattr(settings, "rag_ce_k", 40) or 40)
+        persp_w = float(getattr(settings, "rag_persp_w", 0.0) or 0.0)
+        emo_w = float(getattr(settings, "rag_emo_w", 0.0) or 0.0)
+        ctx_w = float(getattr(settings, "rag_ctx_w", 0.0) or 0.0)
+        pop_w = float(getattr(settings, "rag_pop_w", 0.0) or 0.0)
+        side = self._side(u) if persp_w > 0 else None
+        if side:
+            other = self.OTHER_SIDE[side]
+            pri = pri - persp_w * np.array([vo == other for vo in self._voice], dtype=np.float32)
+        if ctx_w > 0:
+            pri = pri - ctx_w * self._needs_ctx
+        emo = self._emo_fit(u) if emo_w > 0 else None
         out = {}
         for k, role in enumerate(ROLES):
             w = BEAT_WEIGHTS[role]
             if qvecs is not None:
-                sem = self._relative(self.rec.verse_vecs @ qvecs[role], ok)
+                sem = self._meaning(qvecs[role], texts[role], ok)
             else:
                 sem = self._keyword_sims(texts[role], self._v_toks)
             job = self.role_mat[:, k] - 0.35 * np.max(np.delete(self.role_mat, k, axis=1), axis=1)
@@ -638,12 +735,25 @@ class Planner:
                 s -= 0.45 * self._comforting     # a resolve is met with a verse of rising, not consolation
             if role == "hook" and stance in ("aspiration", "wronged"):
                 s += 0.5 * mech                  # the hook is not a lament here: the stance mechanism carries it
+            if pop_w > 0 and role == "hook":
+                s = s - pop_w * self._hubness()   # RAG v2 step 10: Day 1 hubs step back
+            if emo is not None and role in ("hook", "steady"):
+                s = s + emo_w * emo               # RAG v2 step 6: meets the feeling they named
             if adjust is not None:
                 s = s + adjust                    # what they told us with "Not for me" (feedback_adjust)
             if u.risk == "harm_from_others" and role in ("diagnose", "steady", "act"):
                 s[~self._harm_ok] = -1e9       # only worth, courage, truth for someone being harmed
-            s[~ok] = -1e9
             out[role] = s
+        if ce_w > 0 and qvecs is not None:       # RAG v2 step 5: cross-encoder over each beat's top K, beats in parallel
+            from concurrent.futures import ThreadPoolExecutor
+            def _ce(role):
+                elig = ok & (out[role] > -1e8) & (self._gita if role == "hook" else True)
+                return role, self._ce_blend(out[role], elig, texts[role], ce_w, ce_k)
+            with ThreadPoolExecutor(len(ROLES)) as ex:
+                for role, s in ex.map(_ce, ROLES):
+                    out[role] = s
+        for role in ROLES:
+            out[role][~ok] = -1e9
         return out
 
     # ── Selection ────────────────────────────────────────────────────────────

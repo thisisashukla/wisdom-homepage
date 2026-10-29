@@ -1,0 +1,671 @@
+{
+ "situation": {
+  "id": "us_genz_college_anxiety_comparison",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 6
+  },
+  "note": "everyone here seems to have internships lined up and a startup on the side. i'm just trying to pass orgo. my parents tell their friends i'm doing great.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "USA (Boston)",
+  "lang": "english",
+  "slices": [
+   "comparison",
+   "exams",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restless and unseen",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "The restless mind that measures itself against others is the one that will learn to settle, by turning away from the noise and toward what is real.",
+   "week_beats": {
+    "hook": "You recognise the restlessness, and the noise that feeds it, named without blame.",
+    "diagnose": "You see that the mind is its own enemy when it runs after the noise of others' success.",
+    "steady": "You hold that what is real in you is not in any comparison, and that is what can settle you.",
+    "act": "You try giving your mind one quiet minute to settle, and bringing it back to what is in front of you.",
+    "story": "A young student who could not settle, running after the noise of a world that seemed ahead, shows you how rest begins."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I keep comparing myself to others",
+   "mirror": "You scroll through what everyone else is doing, and your own page feels like it is not enough.",
+   "insight": "The praise your parents give does not reach the part of you that is fighting to pass. That part is not being seen.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.54,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.76,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.638,
+     "source": "note"
+    },
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 0.431,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that will not settle, caught between the noise of others' success and the silence of your own effort.",
+    "diagnose": "When the mind runs after the noise of others, it becomes its own enemy; what is real in you cannot be found in any comparison.",
+    "steady": "Praise and blame come and go; what is yours to do is yours to do, and the self that does it is not in any of it.",
+    "act": "Practise giving your mind one quiet minute to settle; when it runs, bring it back to what is in front of you right now.",
+    "story": "A young student who could not settle, running after the noise of a world that seemed ahead, and the one thing that finally let her rest."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The noise and the mind",
+    "What is real",
+    "The one who settles"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "under twenty-five and studying",
+    "mind will not settle",
+    "others have internships and side startups"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:34=1.0,11=1.0,84=0.6,16=1.0,46=1.0,23=0.6",
+    "week_same:23",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.57,max=0.65",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:repeat=2,soft_kept=2,try_today_long=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.7908,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna speaks to Krishna on the battlefield. He says the mind is turbulent, powerful and stubborn. He thinks it is as hard to hold as the wind. Krishna agrees with him. He says practice and letting go can train it.",
+     "for_you": "Your mind will not settle, and the noise of other people's internships and startups makes it feel worse. You are not wrong to feel restless. The noise is real. Your part is to notice the wind, not fight it.",
+     "try_today": "Notice when your mind compares you to others.",
+     "scene_line": "You are on the battlefield, and the wind of other people's lives is blowing hard.",
+     "asks": [
+      "How do I stop my mind from comparing me to others?",
+      "What does practice look like when my mind is restless?",
+      "Is my restlessness a sign that I am failing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.5311,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, at the end of his long complaint about how life wears us down, speaks to the sages. He says that no outside force harms us as much as our own mind does. The mind becomes its own enemy. It is not other people or other lives that wound us most deeply. It is the mind, turning on itself, fighting its own battles, and creating the sense of emptiness that makes everything feel hollow.",
+     "for_you": "The mind you are fighting is the same mind that is measuring your life against theirs. It is not a flaw in you. It is the noise of comparison running its own course.",
+     "try_today": "Notice when your mind turns against itself and name it without blame.",
+     "scene_line": "Your mind is speaking to itself in a room full of other voices.",
+     "asks": [
+      "How do I stop my mind from becoming its own enemy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.305,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from inside the noise. They are praising or blaming, and money is coming or going. The world is spinning, and you are in it. The steady person does not step off the right path because of it. They stay. Setbacks rarely last for those who keep going on the right path. The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind. No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy. But the steady do not move.",
+     "for_you": "You are in the middle of all that. The praise from your parents and the noise from your friends are just noise. The right path is the work you do in your room when no one is watching. That is where the steady stay. Let the comparisons come and go.",
+     "try_today": "Watch the praise and the blame pass like clouds.",
+     "scene_line": "You are on the path while the world spins around you.",
+     "asks": [
+      "How do I know my path is the right one?",
+      "What if the noise is louder than my own mind?",
+      "Can I stay steady when nothing is changing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "words": [
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "व्याप्तम्",
+       "en": "pervaded"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "विश्वं",
+       "en": "world"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "प्रोतं",
+       "en": "woven"
+      },
+      {
+       "sa": "यथार्थतः",
+       "en": "truly"
+      },
+      {
+       "sa": "शुद्धबुद्धस्वरूपः",
+       "en": "pure-consciousness-form"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "गमः",
+       "en": "go, be affected"
+      },
+      {
+       "sa": "क्षुद्रचित्तताम्",
+       "en": "by petty minds"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 2.7949,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka sits with the young sage Ashtavakra, asking how a person becomes free. Ashtavakra answers that the whole universe is strung on the self. By nature you are pure awareness. You do not need to become anything, only stop falling into smallness of mind.",
+     "for_you": "Your mind measures itself against the internships and startups of others. That is the smallness of mind. What is real in you is not in any comparison. It is the quiet awareness that sees the noise without becoming it. Let that settle you.",
+     "try_today": "When the mind starts comparing, name one thing that is true about your own study right now.",
+     "scene_line": "You are the awareness watching the restlessness, not the restlessness itself.",
+     "asks": [
+      "How do I stop shrinking into smallness when I compare myself?",
+      "Can I be free while my parents are still worried about my future?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "words": [
+      {
+       "sa": "विविक्त",
+       "en": "isolated"
+      },
+      {
+       "sa": "आसीन",
+       "en": "seated"
+      },
+      {
+       "sa": "उपारतेन्द्रियो",
+       "en": "senses withdrawn"
+      },
+      {
+       "sa": "विनिर्जितात्मा",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "विमलान्तराशयः",
+       "en": "pure inner state"
+      },
+      {
+       "sa": "विभावयेदेकमनन्यसाधनो",
+       "en": "contemplate with single-minded focus"
+      },
+      {
+       "sa": "विज्ञानदृक्केवल",
+       "en": "only with knowledge's vision"
+      },
+      {
+       "sa": "आत्मसंस्थितः",
+       "en": "established in the self"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 3.3734,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit somewhere quiet, let the senses rest, and give full attention to one thing. This quiet sitting and steady faith carry you until understanding becomes natural, resting in the Self.",
+     "for_you": "Your mind is restless because it is measuring itself against the noise of internships and startups. The restlessness is not a flaw. It is the mind trying to find something real.",
+     "try_today": "Give your mind one quiet minute to settle, and bring it back to what is in front of you.",
+     "scene_line": "You are in your own quiet place, letting the senses rest while the world moves on.",
+     "asks": [
+      "How do I find a quiet place when I am always surrounded by people?",
+      "What is the one thing I can give my full attention to today?",
+      "How does steady faith feel when my mind is this restless?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.1.146",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+     "family": "vr",
+     "speaker": "Beings of the sky",
+     "listener": "Hanuman",
+     "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+     "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+     "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+     "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+     "words": [],
+     "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_leap",
+      "title": "Hanuman's leap",
+      "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+      "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+      "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+     },
+     "score": 2.2208,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "You have just outwitted two monsters in mid-air. The beings of the sky look down and tell you that you have four gifts. Steadiness, clear sight, judgement and skill. They say that with these four, you will never sink at work. The verse says that gratitude and focus can live together. You can feel the praise, but you do not let it make you stop. You keep your promise and your eyes on the path ahead.",
+     "for_you": "You have been praised by your family and friends for your mind, but it still will not settle. Let the praise stay where it is.",
+     "try_today": null,
+     "scene_line": "You are in your own sky, praised for what you have done, but you keep your eyes on the next step.",
+     "asks": [
+      "How do I hold a compliment without letting it weigh me down?",
+      "Can I be steady and still feel restless at the same time?",
+      "What is the next step I am meant to see right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "success_pride",
+        "label": "Success is going to my head"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are studying, and your mind is restless because it is comparing your life to the internships and side startups of others. You do not have to drop out or start over.",
+     "asks": [
+      "How do I stop my mind from clutching at what others have?",
+      "Can I find steadiness in the middle of my own life?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The noise and the mind",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 10860,
+   "total": 10862
+  },
+  "_ms": 10865
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "Promoted ahead of more credentialed colleagues, she believes she is an impostor and will be exposed, despite over-preparing.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "need_for_approval",
+ "situations": [
+  {
+   "id": "imposter",
+   "weight": 1.4,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 1.05,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.845,
+   "source": "note"
+  },
+  {
+   "id": "comparison",
+   "weight": 0.55,
+   "source": "note"
+  },
+  {
+   "id": "not_promoted",
+   "weight": 0.549,
+   "source": "note"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.387,
+   "source": "note"
+  }
+ ],
+ "mirror": "You over-prepare for every meeting and still feel sick before you present.",
+ "queries": {
+  "hook": "The weight of a promotion you cannot accept, and the replaying of a background that feels like proof you do not belong. I feel like an imposter.",
+  "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and the more we prove it, the more we need to.",
+  "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost.",
+  "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+  "story": "A woman who was told she was not enough, who kept proving it to herself, and who found the courage to see herself for the first time."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The verdict you keep passing",
+  "More than the background",
+  "The one who presents without fear"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "sick with fear of being found out",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the replaying and the sickness, named without judgement."
+ },
+ "insight": "You got the promotion, and your mind is replaying your background as proof you do not belong. The sickness is the verdict, not the presentation.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "got promoted ahead of people",
+  "over prepares for everything",
+  "feels sick before presenting"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "bridge:copied_example",
+  "week_thesis:missing"
+ ]
+}

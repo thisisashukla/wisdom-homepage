@@ -1,0 +1,94 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.6,
+ "core_struggle": "Has lost a parent recently, cannot come to terms with it, and is asking what the texts say about death and what follows.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "no_meaning",
+ "situations": [
+  {
+   "id": "grief_parent",
+   "weight": 1.622,
+   "source": "note"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.982,
+   "source": "note"
+  },
+  {
+   "id": "fear_death",
+   "weight": 0.93,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.2,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You lost your father, and the question you are asking is not 'how do I feel better,' but 'what happens after.'",
+ "queries": {
+  "hook": "The love that cannot let go of a father who is gone, and the search for what the texts say about death and what follows.",
+  "diagnose": "Grief is love with nowhere to go; the heart aches because the bond was real, and the mind searches for what does not pass.",
+  "steady": "What is real in us cannot be cut away by death; the love that was there is not lost, only changed in form.",
+  "act": "Sit with the one who is gone, and ask what is real in you that death cannot touch.",
+  "story": "A prince who lost his father and was given the teaching on what the self is, and what happens to it after death."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Love that cannot let go",
+  "What is real",
+  "The self that is not the body"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and searching",
+ "bridge": "The love you still have for your father is real, and the texts say that what is real in us cannot be cut away by death.",
+ "week_thesis": "Seven days from the raw ache of a new loss to the footing that what is real in us cannot be cut away by death.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family"
+ ],
+ "week_beats": {
+  "hook": "You recognise the love that cannot let go and the question that follows it.",
+  "diagnose": "You see that grief is love with nowhere to go, and the search is for what does not pass.",
+  "steady": "You hold that what is real in us cannot be cut away by death.",
+  "act": "You try sitting with the one who is gone and naming what is real in you that death cannot touch."
+ },
+ "insight": "You cannot come to terms with the loss because the bond was real. The texts do not ask you to accept it. They ask what is real in us that death cannot touch.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "lost their father recently",
+  "cannot come to terms with the loss",
+  "asks what Krishna says about what happens after death"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "stance:wronged_without_relation",
+  "seat:missing"
+ ]
+}

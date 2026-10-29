@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "A working professional with two offers, one with a % pay rise in Bangalore and one that keeps them near their parents, cannot stop replaying the choice and changes their mind every hour.",
+ "mechanism": "inertia_doubt",
+ "secondary_mechanism": "attachment_to_results",
+ "situations": [
+  {
+   "id": "big_decision",
+   "weight": 1.822,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.845,
+   "source": "note"
+  },
+  {
+   "id": "parents_expectations",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "quit_or_stay",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.379,
+   "source": "note"
+  }
+ ],
+ "mirror": "Two offers, two weeks of lists, and every hour the answer changes.",
+ "queries": {
+  "hook": "The weight of a choice that will not settle, and the exhaustion of replaying it every hour.",
+  "diagnose": "When the mind cannot hold the result, it keeps turning the choice over; doubt and delay feed each other, and the unacted-on decision weighs more than the work.",
+  "steady": "The path walked imperfectly is enough; no honest effort to find the right path is ever wasted.",
+  "act": "Do the work of choosing today, then let the result go; the choice itself is what you are meant to make.",
+  "story": "A young man who stood at a crossroads, made his choice, and found that the peace he sought came only after he let the lists go."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The lists are not the answer",
+  "What the choice costs",
+  "The one who walks the path"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "torn and exhausted",
+ "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+ "week_thesis": "By the end of the week the lists have served their purpose, and the mind has made the choice it was meant to make.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the exhaustion of a choice that will not settle, named without blame.",
+  "diagnose": "You see that the lists are not the answer. The answer is in the doing, not the knowing.",
+  "steady": "You hold that the path walked imperfectly is enough.",
+  "act": "You try making the choice today and letting the result go.",
+  "story": "A young man who stood at a crossroads shows you that peace comes after the lists are closed."
+ },
+ "insight": "You are caught between two paths and the lists are not the problem. The problem is that the mind is using the lists to avoid the one thing it cannot control: the result.",
+ "seat": "a working professional caught between a better salary and staying close to their parents",
+ "life_context": "In their late twenties or early thirties, working and weighing a move to Bangalore for a % pay rise against staying near their parents; the lists are long and the mind keeps turning.",
+ "details": [
+  "two job offers on the table",
+  "one pays % more in Bangalore",
+  "the other lets them stay near their parents",
+  "has made pros and cons lists for two weeks"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example"
+ ]
+}

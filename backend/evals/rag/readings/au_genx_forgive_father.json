@@ -1,0 +1,100 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "harm_from_others",
+ "confidence": 0.65,
+ "core_struggle": "His harsh father is old and sick, and the adult wants to visit while the child who was hit is still alive inside.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "parents_aging",
+   "weight": 1.593,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 1.14,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 1.05,
+   "source": "note"
+  },
+  {
+   "id": "illness_family",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "grief_parent",
+   "weight": 0.384,
+   "source": "note"
+  },
+  {
+   "id": "guilt",
+   "weight": 0.3,
+   "source": "profile"
+  }
+ ],
+ "mirror": "It sounds like home doesn't feel safe right now.",
+ "queries": {
+  "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+  "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+  "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+  "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+  "story": "A son who was once a child before a harsh father, now grown, who must decide whether to go and what to carry with him."
+ },
+ "query_sources": {
+  "hook": "safety",
+  "diagnose": "safety",
+  "steady": "safety",
+  "act": "safety",
+  "story": "llm"
+ },
+ "weeks": [
+  "The child and the adult",
+  "What was real cannot be lost",
+  "More than the one who was hurt"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "torn between pity and old fear",
+ "bridge": "The part of you that is still twelve is what the Upanishads call the self that cannot be lost, even when the body that held you was not safe.",
+ "week_thesis": "The twelve-year-old and the adult are not the same, and the visit can be made without either one being lost.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work",
+  "child"
+ ],
+ "week_beats": {
+  "hook": "You recognise the two parts of you, and that both are real.",
+  "diagnose": "You see that the love that was given and the hurt that was given are not the same thing, and that the child is still alive.",
+  "steady": "You hold that what was real in you cannot be taken away, and that the adult you are is not the child who was hurt.",
+  "act": "You try letting the child be held, and going if your heart says so, and coming back to the adult you are."
+ },
+ "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "father is old and sick now",
+  "part of them wants to visit",
+  "part of them is still twelve"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "mechanism:grief_without_death",
+  "insight:template"
+ ]
+}

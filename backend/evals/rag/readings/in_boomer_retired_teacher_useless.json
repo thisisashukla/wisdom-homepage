@@ -1,0 +1,92 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "A retired teacher of years is being treated as if she no longer understands anything, even for the house paint, by her adult son.",
+ "mechanism": "dignity_denied",
+ "secondary_mechanism": "disconnection",
+ "situations": [
+  {
+   "id": "inlaws",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "retirement",
+   "weight": 0.71,
+   "source": "note"
+  },
+  {
+   "id": "empty_nest",
+   "weight": 0.605,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "teen_conflict",
+   "weight": 0.45,
+   "source": "note"
+  }
+ ],
+ "mirror": "Thirty-eight years of teaching, and now your son decides you no longer understand even the paint on the wall.",
+ "queries": {
+  "hook": "Being treated as if you no longer understand anything, after a lifetime of teaching others to think, and the quiet anger of it. Tension with my in-laws.",
+  "diagnose": "When others see only a role, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+  "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+  "act": "Speak the true thing, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit their picture.",
+  "story": "A woman of learning and standing, dismissed by her own son, who stood in her truth and was proven right or found her footing."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Dismissed as if you do not understand",
+  "Whose picture it is",
+  "No smaller than you are"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "dismissed and small",
+ "bridge": "The life they see for you is their smallness, not your measure. What was yours to teach cannot be taken away by what they now think.",
+ "week_thesis": "Seven days from being dismissed as if you no longer understand to standing in the truth of what you have always known.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise being treated as if you no longer understand anything, and the quiet anger of it, named without blame."
+ },
+ "insight": "You spent years teaching others to think for themselves. Now your son has decided you no longer understand anything, and that is not a loss of ability, it is a loss of respect.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "retired after years of teaching"
+ ],
+ "age": "55p",
+ "stages": [
+  "retired"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation"
+ ]
+}

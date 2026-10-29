@@ -1,0 +1,697 @@
+{
+ "situation": {
+  "id": "au_genx_divorce",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "market": "Australia (Melbourne)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly grieving and afraid",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "The quiet house and the fear of your parents become, over seven days, a grief that is allowed to move and a truth that is spoken.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the fear, named without judgement.",
+    "diagnose": "You see that the quiet is grief, and the fear of your parents is what keeps it stuck.",
+    "steady": "You hold that the love you feel for your children is yours and cannot be taken.",
+    "act": "You try letting the quiet be quiet, and speaking the true thing to one person you trust.",
+    "story": "A woman who lost her marriage and her daily life with her children shows you what finding footing in the quiet looks like."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A separated mother who sees her children three nights a week; the house is quiet on the nights they are not there, and she has not told her parents in Chandigarh.",
+   "mirror": "You have the children three nights a week, and on the other nights the house is so quiet you leave the TV on.",
+   "insight": "You are grieving the life you had while also afraid of the life your parents will call a failure. The TV is the noise you keep between them.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet house on the nights the children are not here, and the fear of what your parents will say about it. I'm grieving someone I loved.",
+    "diagnose": "Grief is love with nowhere to go, and when it is held back by fear of blame, the mind becomes its own enemy.",
+    "steady": "What is real in us cannot be lost, and what is lost is not us; the love you feel for your children is your own, and it will not be taken from you.",
+    "act": "Let the grief have its place; speak the true thing to one person you trust; and let the quiet house be quiet for a while.",
+    "story": "A woman who has lost her marriage and her daily life with her children, who stood in the quiet and found her footing again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The quiet house",
+    "The fear of what they'll say",
+    "More than what was lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "sees children three nights a week",
+    "has not told parents in Chandigarh",
+    "house is quiet on nights children are absent"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.6,40=0.6,61=0.3,13=0.6,18=0.6,45=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.67",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.539,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has fallen on the battlefield and will not lift his bow. He tells Krishna he sees no comfort in any kingdom or power. The grief is drying him up. He admits he is lost and asks Krishna to teach him what is right.",
+     "for_you": "The quiet house on the nights the children are away is a grief that no success can fix. You are not weak for feeling this. You are asking for a way to see clearly.",
+     "try_today": "Notice one moment of the quiet house without trying to fill it.",
+     "scene_line": "You are on a battlefield you did not choose, asking for a way forward.",
+     "asks": [
+      "What does it mean to ask for help when I feel ashamed?",
+      "How do I tell the difference between grief and fear of my parents?",
+      "Can clarity really come when I feel so stuck?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.2943,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth. Ashma says that pain comes from what we didn't want or what we lost, and that meetings end. He tells Janaka to ask himself where he came from, where he is going, who he is, and why he is here. He tells him to ask why he should grieve, and for what. This steadies the mind.",
+     "for_you": "The quiet in the house is grief, and the fear of your parents is what keeps it stuck.",
+     "try_today": "Ask yourself where you came from, where you are going, and who you are. Let that steady you.",
+     "scene_line": null,
+     "asks": [
+      "How do I ask these questions when I am alone?",
+      "What if I don't know who I am?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "words": [
+      {
+       "sa": "वासांसि",
+       "en": "clothes"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "विहायनवानि",
+       "en": "leaving new"
+      },
+      {
+       "sa": "गृह्णाति",
+       "en": "takes"
+      },
+      {
+       "sa": "नरोऽपराणि",
+       "en": "a person other"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "शरीराणि",
+       "en": "bodies"
+      },
+      {
+       "sa": "विहाय",
+       "en": "leaving"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "अन्यानि",
+       "en": "other"
+      },
+      {
+       "sa": "संयाति",
+       "en": "enters"
+      },
+      {
+       "sa": "नवानि",
+       "en": "new"
+      },
+      {
+       "sa": "देही",
+       "en": "the embodied self"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1033,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, who stands paralyzed by the grief of fighting his own kin. Krishna tells him that the true self is never born and never dies. It is like a person who takes off a worn-out garment and puts on a new one. The body is merely a temporary covering, and the essence within moves. The teaching suggests that what is truly you outlasts every loss and every passing pain, even when the world feels like it is falling apart.",
+     "for_you": "You are grieving the life you had, and the quiet house on the nights the children are away is where that grief sits heavy. But the love you feel for your children is yours, and it cannot be taken from you.",
+     "try_today": "Notice one thing that shows your love for your children is still there, even when they are not.",
+     "scene_line": "You are standing in a quiet room, holding onto a love that outlasts the silence.",
+     "asks": [
+      "How do I hold onto this love when the house feels so empty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.127.doha.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.127 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.127",
+     "family": "rcm",
+     "speaker": "Valmiki",
+     "listener": "Ram",
+     "setting": "Valmiki ends his list of the hearts Ram lives in.",
+     "sanskrit": "जाहि न चाहिअ कबहुँ कछु तुम्ह सन सहज सनेहु। बसहु निरंतर तासु मन सो राउर निज गेहु ॥",
+     "line": "The one who wants nothing from you and simply loves you: that heart is your own home.",
+     "translation": "One who never wants anything from you and simply loves you: live in that mind always; it is your own home.",
+     "words": [
+      {
+       "sa": "जाहि",
+       "en": "to whom"
+      },
+      {
+       "sa": "न चाहिअ",
+       "en": "is not wanted"
+      },
+      {
+       "sa": "कबहुँ",
+       "en": "ever"
+      },
+      {
+       "sa": "कछु",
+       "en": "anything"
+      },
+      {
+       "sa": "तुम्ह सन",
+       "en": "from you"
+      },
+      {
+       "sa": "सहज सनेहु",
+       "en": "natural love"
+      },
+      {
+       "sa": "बसहु",
+       "en": "dwell"
+      },
+      {
+       "sa": "निरंतर",
+       "en": "continually"
+      },
+      {
+       "sa": "तासु मन",
+       "en": "in that mind"
+      },
+      {
+       "sa": "सो",
+       "en": "that"
+      },
+      {
+       "sa": "राउर",
+       "en": "your"
+      },
+      {
+       "sa": "निज गेहु",
+       "en": "own home"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 2.6374,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Valmiki is telling Ram that the heart which asks nothing and simply loves is the truest home. Ram is in the forest, having lost the kingdom he thought defined him, and Valmiki is reminding him that his real self is not the crown or the palace, but the love that belongs to him alone.",
+     "for_you": "The love your children hold for you is a home you carry inside. It does not need the house to be full or the nights to be quiet to be real. That love is the steady ground beneath the quiet.",
+     "try_today": "Notice one small thing your child did today that shows they still belong to you.",
+     "scene_line": "You are in your own quiet house, and the question is whose heart is your home.",
+     "asks": [
+      "Is the love they give me enough to build a home on?",
+      "How do I live in that love when the house is empty?",
+      "Can a heart that is loved become a home I can return to?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "words": [],
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 3.0005,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman has found Sita in the grove, but she is terrified and will not listen to grand words. He thinks carefully about how she will hear him. He decides to speak in ordinary human language, not the courtly Sanskrit that might frighten her further. He will use simple words that carry meaning. He knows there is no other way to comfort this blameless woman who has already suffered so much.",
+     "for_you": "The quiet house is not a place to fix. It is a place to let the grief sit. Speak one true thing to the person you trust most. The sound of your own voice saying it holds the house together. Let the quiet be quiet.",
+     "try_today": "Let the quiet be quiet for ten minutes without turning on the television.",
+     "scene_line": "You are in your own quiet house, speaking to the one you trust.",
+     "asks": [
+      "What is the true thing I can say today?",
+      "How do I let the quiet be quiet?",
+      "Who is the one person I can trust right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.314.114",
+     "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+     "ref_iast": "Mahābhārata, Vana Parva 314.114–115",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "the Yaksha (Dharma in disguise)",
+     "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+     "sanskrit": "प्रियवचनवादी किं लभते / विमृशितकार्यकरः किं लभते / बहुमित्रकरः किं लभते / धर्मे रतः किं लभते कथय ॥ प्रियवचनवादी प्रियो भवति / विमृशितकार्यकरोऽधिकं जयति / बहुमित्रकरः सुखं वसति / यश्च धर्मरतः स गतिं लभते",
+     "line": "Speak kindly and you'll be loved; think before acting and you'll win more; make friends and live happily.",
+     "translation": "Yaksha: 'What does one gain by speaking kindly? By acting after careful thought? By making many friends? By devotion to what is right?' Yudhishthira: 'One who speaks kindly is loved; one who acts after careful thought wins more; one with many friends lives happily; one devoted to what is right reaches the goal.'",
+     "words": [],
+     "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yaksha_prashna",
+      "title": "Yaksha Prashna: the questions at the lake",
+      "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+      "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+      "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+     },
+     "score": 2.6473,
+     "beat": "act",
+     "role_fit": 0.638,
+     "meaning": "Yudhishthira stands by a poisoned lake where his brothers lie dead. A Yaksha, Dharma in disguise, asks him four questions. First, what does one gain by speaking kindly? Yudhishthira answers that one who speaks kindly is loved. Then, what does one gain by acting after careful thought? He answers that one who acts with thought wins more. Finally, what does one gain by making many friends? He answers that one with many friends lives happily. The Yaksha is pleased and offers to revive one brother.",
+     "for_you": "You are keeping the quiet of the house and the silence from your parents, and that careful thought has kept you standing. Now let kindness outweigh the fear, and speak the true thing to one person you trust. The quiet can be quiet.",
+     "try_today": "Speak the true thing to one person you trust.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "words": [],
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "anxiety_general",
+        "label": "I feel anxious most of the time"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Sumitra, like you, has a house that goes quiet when her children are away. She does not offer solutions. She sits in the shared ache and reminds Kausalya that her son is not alone. You do not need to fill the silence in your home.",
+     "asks": [
+      "Who in my life knows the shape of this quiet without me explaining it?",
+      "How do I let the silence stay without rushing to fill it with noise?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16133,
+   "total": 16135
+  },
+  "_ms": 16139
+ }
+}

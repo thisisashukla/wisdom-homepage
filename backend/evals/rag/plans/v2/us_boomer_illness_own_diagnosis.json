@@ -1,0 +1,676 @@
+{
+ "situation": {
+  "id": "us_boomer_illness_own_diagnosis",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2
+  },
+  "note": "doctor says the tumour is back. I am not afraid of dying exactly. I am afraid of being a burden to my children and of the pain.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "USA (Florida)",
+  "lang": "english",
+  "slices": [
+   "ageing",
+   "fear",
+   "illness",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "afraid of burdening and of pain",
+   "bridge": "The fear is not of the end but of what it costs your children, and the texts ask what is real in you that cannot be lost.",
+   "week_thesis": "From the fear of pain and burden to the recognition that what is real in you cannot be lost, and the courage to let your children carry what they must.",
+   "week_beats": {
+    "hook": "You recognise the fear of pain and of becoming a burden, named without judgement.",
+    "diagnose": "You see that fear grows from imagining what will happen, and from forgetting what is real in you.",
+    "steady": "You hold that what is real in you cannot be lost, and what is lost was never you.",
+    "act": "You try remembering what is real in you and letting your children hold what they must.",
+    "story": "A mother who faced her own end, afraid of the pain and of her children's grief, shows you what could not be taken."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "Facing a returning tumour, she is not afraid of dying itself but is afraid of the pain and of becoming a burden to her children.",
+   "mirror": "You are not afraid of dying exactly. You are afraid of the pain and of what it will cost your children.",
+   "insight": "You are not afraid of dying itself, but of the pain and of becoming a burden. What is real in you cannot be lost, and that is what the texts speak of.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.34,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.395,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The fear of pain and of becoming a burden to your children, not the fear of dying itself. I'm afraid of death.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost, and what is lost was never you.",
+    "act": "Remember what is real in you and cannot be lost, and let your children hold what they must hold.",
+    "story": "A mother who faced her own end, afraid of the pain and of her children's grief, who found that what she was could not be taken."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The fear of pain",
+    "What is real",
+    "The one who cannot be lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "tumour has returned and doctor has said so",
+    "not afraid of dying itself",
+    "afraid of the pain"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:9=0.3,6=0.6,18=0.6,16=0.6,1=0.9,45=0.3",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.58,max=0.66",
+    "redo:3",
+    "redo_fixed:0",
+    "dropped:cliche=1,repeat=2,soft_kept=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.13.9",
+     "ref": "Bhagavad Gita 13.8",
+     "ref_iast": "Bhagavad Gītā 13.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the body as a field, and what true knowledge consists of.",
+     "sanskrit": "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च । जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् ॥",
+     "line": "Not chasing pleasures, not puffed up, and clear-eyed about birth, death, old age and illness.",
+     "translation": "detachment from sense objects, absence of ego, and seeing clearly the pain and flaw in birth, death, old age and sickness,",
+     "words": [
+      {
+       "sa": "इन्द्रियार्थेषु",
+       "en": "in sensory objects"
+      },
+      {
+       "sa": "वैराग्यम्",
+       "en": "detachment"
+      },
+      {
+       "sa": "अनहङ्कार",
+       "en": "no ego"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "जन्म",
+       "en": "birth"
+      },
+      {
+       "sa": "मृत्यु",
+       "en": "death"
+      },
+      {
+       "sa": "जरा",
+       "en": "aging"
+      },
+      {
+       "sa": "व्याधि",
+       "en": "illness"
+      },
+      {
+       "sa": "दुःख",
+       "en": "pain"
+      },
+      {
+       "sa": "दोष",
+       "en": "faults"
+      },
+      {
+       "sa": "अनुदर्शनम्",
+       "en": "repeated seeing"
+      }
+     ],
+     "why": "Real knowledge shows up as character: humility, patience, honesty.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p13.1",
+      "title": "The field and the knower of the field",
+      "summary": "Krishna calls the body the field and the self its knower, then lists what real knowledge looks like: humility, no pretence, patience, honesty, clear sight of ageing and illness.",
+      "story_hook": "",
+      "lesson": "Real knowledge shows up as character: humility, patience, honesty."
+     },
+     "score": 2.9186,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna tells Arjuna that true knowledge is not an idea but a way of standing in the world. It is not chasing after what feels good, not being puffed up with a sense of self, and looking at the body honestly. It means seeing birth, death, old age and illness not as surprises but as what is true for any body. The self that knows all this does not break when the body does. It stays steady.",
+     "for_you": "You are looking at a returning tumour and a future that holds pain. Real knowledge is not a belief.",
+     "try_today": "Notice one moment when you feel the fear of pain, and let it be there without pushing it away.",
+     "scene_line": "You stand in your own field, looking at the body as it is, without turning away.",
+     "asks": [
+      "How do I see clearly without losing hope?",
+      "Can I be clear-eyed and still be loved?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 3.0379,
+     "beat": "diagnose",
+     "role_fit": 0.751,
+     "meaning": "Vasishtha tells Rama this after the story of two grieving brothers. The younger brother, Pavana, wanders the forest weeping after their parents die. The elder, Punya, helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full. The verse proposes that you can stop feeding the worry, and when you do, it dies down on its own.",
+     "for_you": "The fear of pain and burden grows in the quiet moments when you picture what your children will face. You are not just afraid of the tumour. You are afraid of the weight your children will carry.",
+     "try_today": "Notice when the mind begins to picture the pain ahead.",
+     "scene_line": "You are in the forest, and the worry is the fire.",
+     "asks": [
+      "How do I stop the mind from adding fuel to the fear?",
+      "Can the children carry what I cannot see clearly?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.101.18",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 101.18",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman (unconscious)",
+     "setting": "Lakshman lies near death on the battlefield; Ram remembers what his brother has been to him.",
+     "sanskrit": "शोकार्तस्य प्रमत्तस्य पर्वतेषु वनेषु च॥ विषण्णस्य महाबाहो समाश्वासयिता मम।",
+     "line": "In every forest and every low moment, you were the one who lifted me up.",
+     "translation": "In the mountains and forests, when I was grief-stricken, careless and despairing, you were the one who comforted me, mighty brother.",
+     "words": [],
+     "why": "When someone you love is gravely ill, remember what they mean to you, and do what can be done.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_struck",
+      "title": "Lakshman struck down",
+      "summary": "Ravana's spear fells Lakshman. Ram breaks down: even victory means nothing without his brother, who comforted him in every low moment. The physician Sushena sees Lakshman still breathes and sends Hanuman for the healing herbs; Hanuman brings back the mountain peak.",
+      "story_hook": "Ram knelt over his brother in the dust and forgot there was a battle going on.",
+      "lesson": "When someone you love is gravely ill, remember what they mean to you, and do what can be done."
+     },
+     "score": 2.5889,
+     "beat": "steady",
+     "role_fit": 0.745,
+     "meaning": "In the Valmiki Ramayana, the Yuddha Kanda, Lakshmana lies unconscious on the battlefield, struck down by Ravana's spear. Ram is overcome with grief, seeing victory as meaningless without his brother. In that moment, Ram remembers how Lakshmana was the one who lifted him up through every forest and low moment. The verse tells us to remember what our loved ones mean to us when they are gravely ill, and to do what we can for them.",
+     "for_you": "When your children face your illness, they see the one who lifted them up. Hold that memory of what you are to them. The pain they feel is real, but so is the love you gave. Let them carry what they must. What you gave them remains.",
+     "try_today": "Notice one small thing your children did for you today without you asking.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.16",
+     "ref": "Bhagavad Gita 2.16",
+     "ref_iast": "Bhagavad Gītā 2.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "नासतो विद्यते भावो नाभावो विद्यते सतः । उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥",
+     "line": "What is unreal never truly lasts; what is real never stops being.",
+     "translation": "The unreal has no lasting being, and the real never ceases to be. Those who see the truth have seen the final word on both.",
+     "words": [
+      {
+       "sa": "na",
+       "en": "not"
+      },
+      {
+       "sa": "asataḥ",
+       "en": "unreal"
+      },
+      {
+       "sa": "vidyate",
+       "en": "exists"
+      },
+      {
+       "sa": "bhāvo",
+       "en": "being"
+      },
+      {
+       "sa": "na",
+       "en": "not"
+      },
+      {
+       "sa": "abhāvaḥ",
+       "en": "non-being"
+      },
+      {
+       "sa": "vidyate",
+       "en": "exists"
+      },
+      {
+       "sa": "sataḥ",
+       "en": "real"
+      },
+      {
+       "sa": "api",
+       "en": "of both also"
+      },
+      {
+       "sa": "dṛṣṭo",
+       "en": "seen"
+      },
+      {
+       "sa": "antaḥ",
+       "en": "end"
+      },
+      {
+       "sa": "anayoḥ",
+       "en": "of these two"
+      },
+      {
+       "sa": "tattva-darśibhiḥ",
+       "en": "by truth-seeing ones"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.8874,
+     "beat": "steady",
+     "role_fit": 0.614,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is grieving. He is afraid of the pain of losing his family, and of what it costs them. Krishna tells him that what is unreal has no lasting being, and what is real never stops being. The body changes like a garment, but the self within is never born and never dies. Grief is for what is temporary, not for what is eternal. The final truth is that what you truly are outlasts every loss and every passing pain.",
+     "for_you": "The fear of pain is real, and the love for your children is real. But the self that loves them is not the body that will suffer. What is real in you cannot be lost, and what is lost was never you.",
+     "try_today": "Notice one thing in you that does not change when the pain comes.",
+     "scene_line": "You stand at the edge of loss, holding the fear of what it costs them.",
+     "asks": [
+      "What part of me is not the body?",
+      "How do I hold the fear without letting it become me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 2.9366,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "You are afraid of becoming a burden, and that fear is a heavy weight. Vasishtha does not tell Bharat to stop grieving or to take the crown. He tells him to do what the moment asks, to rise and go. Your children do not need you to be fearless.",
+     "try_today": "Let one of your children carry what they must.",
+     "scene_line": "You stand at the edge of the forest, with a crown in one hand and a brother in the other.",
+     "asks": [
+      "What is the one thing my children can do for me today?",
+      "How do I face my children without feeling like a burden?",
+      "What does it mean to let my children carry what they must?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.28",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.28",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage to the ruined prince Kshemadarshi, who keeps longing for what he lost.",
+     "sanskrit": "अवाप्यान्कामयन्नर्थान्नानवाप्यान्कदाचन / प्रत्युत्पन्नाननुभवन्मा शुचस्त्वमनागतान्",
+     "line": "Want what is within reach. Enjoy what is here now. Don't grieve over what hasn't happened.",
+     "translation": "Wish for what can be had, never for what cannot. Enjoy what is in front of you now, and do not grieve over what has not yet come.",
+     "words": [],
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 2.5897,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": "The sage Kalakavrikshiya speaks to the ruined prince Kshemadarshi, who cannot stop longing for what he has lost. The sage tells him to wish for what can be had, to enjoy what is right here now, and to stop grieving over what has not yet happened. Grief cannot bring back a kingdom. It only burns what is left. The sage asks the prince to look at what is still within reach and to let go of the rest.",
+     "for_you": "You are afraid of the pain your children will carry, and you are grieving the life you are losing. The texts ask you to look at what is still within reach. Your children are here, and they can hold what you cannot.",
+     "try_today": "Notice one thing your children can do for you today, and let them do it.",
+     "scene_line": "You stand in your own ruined forest, and the question is what is within reach.",
+     "asks": [
+      "How do I know what is within reach?",
+      "What can I enjoy right here now?",
+      "How do I stop grieving what has not happened?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "words": [],
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Sumitra, who had also lost a son to the forest, did not offer empty comfort. She spoke of reunion because she knew the depth of Kausalya's fear. Your children carry your love, not your weight. What was given remains given. What is real in you cannot be lost.",
+     "asks": [
+      "What is the difference between my children carrying my grief and carrying my love?",
+      "How do I let them carry what they must without making it my fault?",
+      "What is the one thing I have given them that no pain can take back?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The fear of pain",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18669,
+   "total": 18671
+  },
+  "_ms": 18674
+ }
+}

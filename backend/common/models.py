@@ -331,6 +331,8 @@ class PlanInput(BaseModel):
     note_source: Optional[Literal["voice", "text"]] = None
     exclude: List[str] = Field(default_factory=list, max_length=200)
     journey: Optional[JourneyIn] = None   # later requests only (Home): what they have lived so far
+    # The person allowed third-party AI (App Review 5.1.2(i)). False: no LLM call, no note (ai/consent.py).
+    ai: bool = True
 
 
 class HookRequest(PlanInput):

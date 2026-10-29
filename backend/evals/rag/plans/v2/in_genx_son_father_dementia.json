@@ -1,0 +1,706 @@
+{
+ "situation": {
+  "id": "in_genx_son_father_dementia",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 3
+  },
+  "note": "papa has dementia now. yesterday he asked me who I was. I bathe him, I feed him, and I still lose my temper with him at night. then I can't sleep from guilt.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Noida)",
+  "lang": "english",
+  "slices": [
+   "caregiving",
+   "guilt",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "guilty and exhausted",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from drowning in guilt to seeing the grief beneath it, and finding the footing to forgive yourself and rest.",
+   "week_beats": {
+    "hook": "You recognise the exhaustion and the guilt, named without blame.",
+    "diagnose": "You see that it is the grief of losing your father, not the anger, that is the root cause of the guilt.",
+    "steady": "You hold that what is real in you cannot be lost, and grief is love with nowhere to go.",
+    "act": "You try forgiving yourself for the human moment, and letting yourself rest before the next day begins.",
+    "story": "A child who lost their temper while caring for a parent shows you what forgiving yourself and continuing looks like."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "Caring for a parent with dementia, losing their temper, and then losing sleep to guilt.",
+   "mirror": "You bathe and feed your papa, yet losing your temper at night leaves you awake with guilt.",
+   "insight": "You lose your temper at night, and then the guilt keeps you awake. Underneath is the grief of watching the person you love disappear.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.575,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.446,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The exhaustion of constant care, the shock of being asked who you are by the one you love, and the guilt that follows your own anger. Someone I love is seriously ill.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and grief turns into guilt.",
+    "steady": "What is real in you cannot be lost; the grief you feel is love with nowhere to go, and it is real, not a failure.",
+    "act": "Lift yourself up instead of pushing yourself down; forgive yourself for the human moment, and rest before the next day begins.",
+    "story": "A son or daughter who cared for a parent through decline, lost their temper, and then found the courage to forgive themselves and continue."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The grief beneath the guilt",
+    "What is real cannot be lost",
+    "The one who continues"
+   ],
+   "seat": "a middle-aged adult caring for a parent with dementia",
+   "life_context": "In midlife and caring for a parent with dementia; the care is constant, the nights are long, and the guilt after losing temper keeps them awake.",
+   "details": [
+    "father has dementia now",
+    "father asked who they were",
+    "they lose their temper at night"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:22=0.3,11=0.6,66=0.3,4=0.6,7=0.0,5=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.70",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:blame=2,soft_kept=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.22",
+     "ref": "Bhagavad Gita 6.22",
+     "ref_iast": "Bhagavad Gītā 6.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः । यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते ॥",
+     "line": "Find the gain beyond all gains, and even heavy sorrow can't shake you.",
+     "translation": "Having gained it, one thinks no other gain greater; established in it, one is not shaken even by heavy sorrow.",
+     "words": [
+      {
+       "sa": "यं",
+       "en": "which"
+      },
+      {
+       "sa": "लब्ध्वा",
+       "en": "having obtained"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "अपारं",
+       "en": "no greater"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "मन्यते",
+       "en": "considers"
+      },
+      {
+       "sa": "नाधिकं",
+       "en": "nothing more"
+      },
+      {
+       "sa": "ततः",
+       "en": "than that"
+      },
+      {
+       "sa": "यस्मिन्",
+       "en": "in which"
+      },
+      {
+       "sa": "स्थितो",
+       "en": "established"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "दुःखेन",
+       "en": "by suffering"
+      },
+      {
+       "sa": "गुरुणा",
+       "en": "great"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "विचाल्यते",
+       "en": "is shaken"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 1.734,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna is teaching Arjuna how to settle the mind through meditation. He describes a state of perfect stillness, where the mind is like a flame in a windless place. The heart is no longer shaken by heavy sorrow or the pull of desire. To reach this, one must practice moderation in eating, sleeping, and working. When the mind wanders, the task is not to fight it, but to gently bring it back to its object again and again. This steady return is the true gain, beyond all other gains.",
+     "for_you": "You are up late with guilt, replaying the moment you lost your temper. The exhaustion is real, and the mind is racing. The teaching says the mind will wander. You do not have to win every night.",
+     "try_today": null,
+     "scene_line": "You are in a windless room with a lamp that keeps going out.",
+     "asks": [
+      "How do I stop the guilt from taking over the night?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.4185,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, after seeing how wealth hardens people and how life drips away like water off a leaf, asks what the point of it all is. He says that our own senses are the enemies, truth has turned untrue, and the self strikes the self. The mind becomes its own worst enemy. This is not an answer. It is a confession. It names the empty feeling underneath the noise, without pretending to fix it.",
+     "for_you": "The anger at night is not the real thing. Underneath it is the grief of watching your father disappear. That grief is what makes you feel not good enough, and it turns your mind against you. The mind is not your enemy. It is only echoing the hurt.",
+     "try_today": "Notice what the grief feels like in your body before the guilt arrives.",
+     "scene_line": "You are sitting with a father who no longer knows you, and the grief is louder than the room.",
+     "asks": [
+      "How do I separate the grief from the guilt?",
+      "Why does my mind turn against me at night?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 2.9586,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ribhu speaks to Nidagha about the nature of steady people. He says that in hard times, good people do not wilt. They are like the golden lotus that does not close at night, staying open and calm. They want nothing more than what is right here in front of them, and they find their joy in doing what is good. This is not about being happy all the time. It is about finding a calm that does not depend on the world going well.",
+     "for_you": "You are holding your father through the night, and the weight of it is heavy. The lotus does not close because it has decided the night is safe. It simply stays open to the air it already has.",
+     "try_today": "Notice one small thing you do for your father that is already good.",
+     "scene_line": "You are the lotus staying open in the long night with your father.",
+     "asks": [
+      "How do I stop the night from feeling so long?",
+      "Can I find joy in the good when my mind is so tired?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.197.chaupai.4",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.197 (chaupai 4)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.197",
+     "family": "rcm",
+     "speaker": "Triveni (a voice from the rivers)",
+     "listener": "Bharat",
+     "setting": "Bharat is consumed by shame over the exile; the holy rivers answer him.",
+     "sanskrit": "तात भरत तुम्ह सब बिधि साधू। राम चरन अनुराग अगाधू॥ बादि गलानि करहु मन माहीं। तुम्ह सम रामहि कोउ प्रिय नाहीं ॥",
+     "line": "You torment yourself with guilt for nothing. No one is dearer to Ram than you.",
+     "translation": "Child Bharat, you are good in every way; your love for Ram's feet is boundless. You torment yourself with guilt for nothing; no one is dearer to Ram than you.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharat"
+      },
+      {
+       "sa": "तुम्ह",
+       "en": "you"
+      },
+      {
+       "sa": "सब बिधि",
+       "en": "in every way"
+      },
+      {
+       "sa": "साधू",
+       "en": "noble, good"
+      },
+      {
+       "sa": "राम",
+       "en": "Ram"
+      },
+      {
+       "sa": "चरन",
+       "en": "feet"
+      },
+      {
+       "sa": "अनुराग",
+       "en": "love, attachment"
+      },
+      {
+       "sa": "अगाधू",
+       "en": "boundless, unfathomable"
+      },
+      {
+       "sa": "बादि",
+       "en": "futile, in vain"
+      },
+      {
+       "sa": "गलानि",
+       "en": "self-blame, remorse"
+      },
+      {
+       "sa": "करहु",
+       "en": "you do"
+      },
+      {
+       "sa": "मन माहीं",
+       "en": "in the mind"
+      },
+      {
+       "sa": "तुम्ह सम",
+       "en": "equal to you"
+      },
+      {
+       "sa": "रामहि",
+       "en": "to Ram"
+      },
+      {
+       "sa": "कोउ",
+       "en": "anyone"
+      },
+      {
+       "sa": "प्रिय",
+       "en": "dear"
+      },
+      {
+       "sa": "नाहीं",
+       "en": "not"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": null,
+     "score": 2.523,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Bharat stands in the forest, drowning in shame for the exile he feels responsible for. The holy rivers speak to him, not with anger but with recognition. You torment yourself with guilt for nothing. No one is dearer to Ram than you. The verse says your worth is already settled, not by what you did or failed to do, but by the love that already lives in you. It asks you to stop measuring your care against your own anger, and to see that the guilt is a shadow, not the truth.",
+     "for_you": "You are holding your father, and you are holding your own exhaustion, and you are trying to be perfect at both. The guilt you feel after losing your temper at night is not proof that you are failing.",
+     "try_today": "Notice one small thing you did that day which showed care.",
+     "scene_line": "You are Bharat in the forest, and the rivers are telling you that your love is already enough.",
+     "asks": [
+      "How can I know my love is enough when I lose my temper?",
+      "What does it mean to be good in every way when I am so tired?",
+      "Can grief for my father and guilt for myself live in the same heart?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.5361,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": null,
+     "for_you": "The nights with your father are heavy, and the guilt after losing your temper is a second shift that never ends. That guilt is yours. But the exhaustion and the grief of watching your father disappear are not a failure you caused.",
+     "try_today": "Before you sleep, tell yourself one thing you did right today.",
+     "scene_line": "You stand at the edge of sleep, with your own mind as the only judge.",
+     "asks": [
+      "How do I stop being my own worst enemy?",
+      "What does it mean to be my own friend?",
+      "Can I forgive myself for losing my temper?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "words": [],
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 2.5744,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In Mithila, a meat-seller named Dharmavyadha tells a proud ascetic, Kaushika, that goodness is found in ordinary work and duty. He says that if a person who has done wrong turns to doing good, they are freed from all their wrongs, like the moon coming out from behind a great cloud. The butcher teaches that true wisdom is not in escaping the world but in caring for your parents and doing your work honestly, without envy.",
+     "for_you": "That is the cloud. But you are still here, still caring for your father. The next turn is not to punish yourself for the anger. It is to let the next small act be the moon.",
+     "try_today": "Before you lie down, name one small thing you will do for your father tomorrow.",
+     "scene_line": "You are the moon, waiting to come out from behind the cloud of your own guilt.",
+     "asks": [
+      "How do I tell giving up from changing direction?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.punya_pavana",
+     "title": "Punya consoles his younger brother Pavana after their parents die",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Punya",
+      "Pavana",
+      "Dirghatapas"
+     ],
+     "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+     "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+     "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "matched": [
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.21.6",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+      "family": "yv",
+      "speaker": "Vasishtha",
+      "listener": "Rama",
+      "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+      "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+      "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+      "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+      "words": [],
+      "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "sleep_mind",
+        "label": "I can't sleep, my mind is racing"
+       },
+       {
+        "id": "anxiety_general",
+        "label": "I feel anxious most of the time"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.punya_pavana",
+       "title": "Punya consoles his younger brother Pavana after their parents die",
+       "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+       "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+       "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Their parents died, and one brother lit the pyres while the other ran weeping into the forest",
+     "teaser": "Their parents died, and one brother lit the pyres while the other ran weeping into the forest",
+     "for_you": "Punya saw his brother drowning in grief and knew the mind makes the chains. You are not wrong for losing your temper. You are carrying a mind that thinks it must do everything alone.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The grief beneath the guilt",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 11191,
+   "total": 11193
+  },
+  "_ms": 11196
+ }
+}

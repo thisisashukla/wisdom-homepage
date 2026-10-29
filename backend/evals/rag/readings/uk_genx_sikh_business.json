@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "A -year-old man who has run a business for years is being undermined by his -year-old father in front of his staff, and he cannot speak up because of who his father is.",
+ "mechanism": "dignity_denied",
+ "secondary_mechanism": "duty_conflict",
+ "situations": [
+  {
+   "id": "inlaws",
+   "weight": 1.08,
+   "source": "note"
+  },
+  {
+   "id": "self_worth",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "parents_aging",
+   "weight": 0.691,
+   "source": "note"
+  },
+  {
+   "id": "boundaries_family",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.5,
+   "source": "profile"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  }
+ ],
+ "mirror": "At forty-seven, your father still changes your decisions in front of the people you lead.",
+ "queries": {
+  "hook": "Being treated as if your authority is his to give and take, by the man who gave you life, in the place you have built and run for fifteen years. Tension with my in-laws.",
+  "diagnose": "When a parent sees only a role instead of a person, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+  "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+  "act": "Speak the true thing, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit the picture they hold.",
+  "story": "A son who stood before his father and held his ground on the authority that was his to keep, and was proven right by the order he restored."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The borrowed authority",
+  "Whose picture it is",
+  "The one who acts"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "trapped and resentful",
+ "bridge": "The father who still walks in and changes your decisions is what the Gita calls living someone else's dharma: a borrowed authority, and it is not yours to carry.",
+ "week_thesis": "Seven days from being treated like a boy in his own business to standing in the authority he has already held for fifteen years.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work",
+  "child"
+ ],
+ "week_beats": {
+  "hook": "You recognise being treated as less than your role, and the anger of it, named without blame.",
+  "story": "A son who stood before his father and held his ground on the authority that was his to keep shows you what it looks like."
+ },
+ "insight": "You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "has run the business for years",
+  "father is and still walks in to change decisions",
+  "does it in front of the staff"
+ ],
+ "age": "45_54",
+ "stages": [
+  "own_thing",
+  "caring_parents",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation"
+ ]
+}

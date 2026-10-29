@@ -1,0 +1,658 @@
+{
+ "situation": {
+  "id": "adv_rant_long",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 6
+  },
+  "note": "ok so where do I even start. manager gave my project to the new guy who joined 3 months ago and everyone knows he's the VP's nephew, my landlord is increasing rent by 20% and wants me out if I don't pay, my girlfriend says I'm always complaining and she's tired of it, my mom calls every day asking about marriage and when I'll come home for Diwali which I can't because no leave, I haven't been to the gym in 4 months, gained 8 kilos, can't sleep before 3, my friends are all buying flats and I can't even save 10k a month, and honestly I don't even know why I'm typing this into an app",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Bengaluru)",
+  "lang": "english",
+  "slices": [
+   "adversarial",
+   "lang:english",
+   "rant",
+   "work"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "overwhelmed and stuck",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "Seven days from a mind that runs through every problem at once to one breath, one step, and one piece of the burden set down.",
+   "week_beats": {
+    "hook": "You recognise the exhaustion of holding too many things at once.",
+    "diagnose": "You see that the mind running through all of them is what makes each one feel heavier than it is.",
+    "steady": "You hold that what is yours cannot be taken by what they do, and that the mind can be steadied.",
+    "act": "You try one thing today: before the phone, one minute of stillness.",
+    "story": "A man who carried the weight of the world found that the first step was to set it down, one piece at a time."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "family",
+    "partner",
+    "parent",
+    "friend"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "His manager took his project to the VP's nephew, his landlord wants him out for more rent, and every part of his life is pressing at once.",
+   "mirror": "You have eight things pressing at once, and none of them will let you sleep before three.",
+   "insight": "The landlord, the manager, the girlfriend, the mother, the friends, the body, the money, the sleep: none of them will let you rest, and the mind is running through all of them at once.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.403,
+     "source": "note"
+    },
+    {
+     "id": "credit_taken",
+     "label": "My manager took credit for my work",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.895,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.725,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.61,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that runs through every problem at once, and the exhaustion of being the one who has to hold them all. My boss makes my work life miserable.",
+    "diagnose": "A mind that will not settle becomes its own enemy, replaying every wrong and every fear until it is too tired to act.",
+    "steady": "Praise and blame, gain and loss, praise and blame come and go like the wind; what is yours cannot be taken by what they do.",
+    "act": "Practise one thing today: before the phone, one minute of stillness, one breath, one step to the door.",
+    "story": "A man who carried the weight of the world on his shoulders, faced the first storm, and found that the first step was to set the burden down, not all at once, but one piece at a time."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The mind that runs",
+    "The mind that runs",
+    "The one who can steady it"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "manager gave project to VP's nephew",
+    "mother calls daily about marriage and Diwali"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=0.7,34=0.9,17=0.3,81=0.6,536=0.6,46=0.7",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.60,max=0.65",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:repeat=3,soft_kept=2,try_today_technique=2",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.8759,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna says the mind is restless, turbulent and stubborn. He says it is as hard to hold as the wind. Krishna agrees. He says the mind is hard to hold, but practice and letting go can train it.",
+     "for_you": "Your mind is running through the manager, the landlord and the daily calls, and it is exhausting. The texts call this a mind that will not settle, and they say practice and letting go can train it. You do not have to fix the wind today.",
+     "try_today": "Notice one moment when your mind jumps from the work problem to the landlord and back again.",
+     "scene_line": "You are in your own moment of confessing that the mind is as hard to hold as the wind.",
+     "asks": [
+      "How do I stop the mind from running through everything at once?",
+      "What does practice look like when I am this exhausted?",
+      "Can I really let go when the problems are still here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "words": [],
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.582,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Bhasa and Vilasa meet as old men after years apart. Bhasa asks if his friend is well, and Vilasa admits he has never known wellness. He says the mind is carried along on endless great waves of tasks. It never rests because it is caught in a net of reckonings, repeating, 'This I have done, this I am doing, this I must do.' The bird of the mind faints under this weight.",
+     "for_you": "You are not just dealing with the manager, the rent, and the calls. You are dealing with the mind that runs through all of them at once, making each one feel heavier than it is. The lists you carry are not just to-do items.",
+     "try_today": "Write down one task you will not think about until tomorrow.",
+     "scene_line": "You are Bhasa, meeting an old friend who admits he never found peace because the mind never stops its lists.",
+     "asks": [
+      "What is the one thing my mind is doing right now?",
+      "How do I stop the list from growing while I sleep?",
+      "What is the last task I actually finished today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1649,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from a place of deep weariness with the world. They have seen enough of praise and blame, of fortune's swings and the constant threat of death. They say that the truly steadfast do not move a step from the path of what is right, no matter what happens around them. The point is that setbacks rarely last for those who keep going on the right path.",
+     "for_you": "Your manager took your work, your landlord raised the rent, and your mother calls about marriage. All of it is pressing at once. The steady do not step off the right path, even when the world shifts under their feet. You do not need to fix the whole thing today.",
+     "try_today": "Notice one moment where you choose to stay on your own path.",
+     "scene_line": "You stand on the path while the world spins around you.",
+     "asks": [
+      "How do I hold my ground when everything is moving?",
+      "What is one thing I can let go of today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.8463,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "In the closing chapter of the Ashtavakra Gita, Ashtavakra speaks to Janaka about the calm of the wise. He paints a picture of a person who does not beg for gain and does not grieve over loss. The steady mind stays cool and full, as if filled with nectar. Calm is not found by chasing it or changing places. It is simply how you hold ordinary life, without stepping off the right path.",
+     "for_you": "Your manager took the project, and your mother calls about Diwali. You are in the middle of the storm, and it feels like everything is pressing at once. Yet the verse points to a mind that does not beg for gain or grieve over loss. It stays full and cool.",
+     "try_today": "Notice the mind's push to do, fix, or change what is happening right now.",
+     "scene_line": "You are the steady one in a room where nothing is steady.",
+     "asks": [
+      "How do I stop the mind from running through every problem at once?",
+      "Can I really stay cool when the rent is raised and the work is gone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.7268,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu tells Nidagha that a person can be fully engaged in the world while remaining untouched inside. The mind does not need to be stopped or forced into silence to find peace. It only needs to be allowed to rest in its own nature. When the outer life is active, the inner life can remain quiet. The work gets done, the words are spoken, but the self stays still. The agitation comes from believing that the outer noise must fill the inner space.",
+     "for_you": "The phone, the manager, the rent, the mother: they all come at once. You are busy on the outside and unhurried inside. The work is there. The calls are there. But they do not have to agitate you. Let the manager take the project. Let the landlord ask for more.",
+     "try_today": "Before the first call, let your hands rest on the desk for one minute.",
+     "scene_line": "You are busy on the outside and unhurried inside.",
+     "asks": [
+      "How do I keep the inside clear when the outside is so loud?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "words": [
+      {
+       "sa": "विविक्त",
+       "en": "isolated"
+      },
+      {
+       "sa": "आसीन",
+       "en": "seated"
+      },
+      {
+       "sa": "उपारतेन्द्रियो",
+       "en": "senses withdrawn"
+      },
+      {
+       "sa": "विनिर्जितात्मा",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "विमलान्तराशयः",
+       "en": "pure inner state"
+      },
+      {
+       "sa": "विभावयेदेकमनन्यसाधनो",
+       "en": "contemplate with single-minded focus"
+      },
+      {
+       "sa": "विज्ञानदृक्केवल",
+       "en": "only with knowledge's vision"
+      },
+      {
+       "sa": "आत्मसंस्थितः",
+       "en": "established in the self"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 3.011,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit in a quiet place, let the senses rest, and give undivided attention to one thing. This is not about running from the world. It is about finding the stillness inside the noise so the mind can settle.",
+     "for_you": "Your mind is running through every problem at once. The phone, the rent, the family calls, the work. You do not need to fix them all right now. You just need to find one minute where the noise drops. Let the senses rest. Give your full attention to one thing.",
+     "try_today": "Before you pick up the phone today, sit still for one minute with your eyes closed.",
+     "scene_line": "You are in your own quiet place, letting the senses rest.",
+     "asks": [
+      "How do I let the senses rest when the phone is always in my hand?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ocean_humility_firmness",
+     "title": "Ram at the ocean: humble first, firm after",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman",
+      "Samudra"
+     ],
+     "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+     "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+     "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "anchor": {
+      "id": "vr.6.21.6",
+      "ref": "Valmiki Ramayana · Yuddha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Lakshman",
+      "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+      "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+      "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+      "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+      "words": [],
+      "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+      "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "toxic_boss",
+        "label": "My boss makes my work life miserable"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ocean_humility_firmness",
+       "title": "Ram at the ocean: humble first, firm after",
+       "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+       "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+       "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "For three days Ram lay on grass by the sea, asking politely",
+     "teaser": "For three days Ram lay on grass by the sea, asking politely",
+     "for_you": "The one you are waiting on, whether it is the landlord or the manager, may not hear the quiet first. That is not your failure, it is theirs. When the silence becomes a wall, you do not break your own back against it.",
+     "asks": [
+      "How do I know when to stay quiet and when to stand firm?",
+      "What is the one thing I can do that is fully mine to control?",
+      "How do I stop my mind from running to every problem at once?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mind that runs",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17828,
+   "total": 17831
+  },
+  "_ms": 17840
+ }
+}

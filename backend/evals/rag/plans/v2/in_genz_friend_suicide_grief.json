@@ -1,0 +1,672 @@
+{
+ "situation": {
+  "id": "in_genz_friend_suicide_grief",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 6
+  },
+  "note": "my best friend from hostel died last month. accident. everyone moved on in a week. i still open our chat every night.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Hyderabad)",
+  "lang": "english",
+  "slices": [
+   "bereavement",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and alone",
+   "bridge": "The chat you open every night is grief with nowhere to go. The texts call it love that has lost its home.",
+   "week_thesis": "From the night you open the chat to the morning you can let the love move, seven days of grief that are given their due.",
+   "week_beats": {
+    "hook": "You recognise the ache and the loneliness, named without rushing you.",
+    "diagnose": "You see that the grief is the love, and the chat is where it has been trapped.",
+    "steady": "You hold that what was real does not vanish, and the bond is still yours.",
+    "act": "You try speaking the name of what you lost, and letting the love find a new place in you.",
+    "story": "A young person who lost their closest companion and found that love does not end with the body, only with the silence around it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "Their best friend from hostel died in an accident last month, and while everyone else has moved on, they are still alone with the loss.",
+   "mirror": "You open the chat every night, and the silence on the other side is what is breaking you.",
+   "insight": "Everyone else has moved on in a week, and you are still alone with the loss. The chat you open is love that has nowhere to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "pet_loss",
+     "label": "My pet died",
+     "weight": 0.382,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The ache of a bond that ended too soon, and the loneliness of being the only one who has not let it go. I'm grieving someone I loved.",
+    "diagnose": "Grief is love with nowhere to go; the heart aches because what came together was real, and now it has been torn apart.",
+    "steady": "What was real does not vanish; the bond you shared is still yours, even if the body is not.",
+    "act": "Let the grief have its time; speak the name of what you lost, and let the love you have for them find a new place in you.",
+    "story": "A young person who lost their closest companion and found that love does not end with the body, only with the silence around it."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Grief with nowhere to go",
+    "The bond that does not vanish",
+    "Love that moves on"
+   ],
+   "seat": "a student who lost their closest friend and has been left to grieve alone",
+   "life_context": "A student under twenty-five whose best friend from hostel died in an accident last month; everyone else seems to have moved on in a week, but they still open the chat every night.",
+   "details": [
+    "best friend from hostel died last month in an accident",
+    "others have moved on within a week",
+    "still opens the chat every night"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:8=0.6,40=0.3,12=0.6,13=0.0,24=0.0,78=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.68",
+    "dropped:fallback_line=1,missing=2,repeat=4,soft_kept=4",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.8976,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna sits on the battlefield, his body shaking, his eyes full of tears. He tells Krishna that no victory, no kingdom, no power over the gods could heal the grief that is drying him up from the inside. He admits he is lost, that he cannot see which path is right, and asks Krishna to teach him. The verse says that the moment you admit you do not know what to do and ask for help is the exact moment clarity begins.",
+     "for_you": "The grief you are living is not a failure of your mind. It is the size of the love you carry for your friend. While others have closed their tabs, you are still sitting in the chat, holding a space they have left. Your confusion is not weakness.",
+     "try_today": "Write down one thing you do not know about how to move forward.",
+     "scene_line": "You are on the battlefield of your grief, asking for a way to see.",
+     "asks": [
+      "How do I know when to ask for help?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.0337,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "King Janaka asks Ashma how to bear the loss of family and wealth. Ashma says pain comes from what we didn't want or what we lost. Meetings end. Days don't return. So in grief, ask: where did I come, where am I going, who am I? Let that steady you.",
+     "for_you": "The questions Ashma offers are not to dismiss your friend, but to steady the mind that is stuck in the past. They point you back to the living. The love is still there, but it can steady you now.",
+     "try_today": "Ask one of those three questions before you open the chat.",
+     "scene_line": "You are a king who has lost everything, asking where to go next.",
+     "asks": [
+      "How does asking 'who am I' help with the chat?",
+      "Who am I when my friend is gone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.338.12",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.12, 11",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada gives Shuka a plain remedy for pain that cannot be fixed.",
+     "sanskrit": "भैषज्यमेतद्दुःखस्य यदेतन्नानुचिन्तयेत् / चिन्त्यमानं हि न व्येति भूयश्चापि प्रवर्धते दुःखोपघाते शारीरे मानसे चाप्युपस्थिते / यस्मिन्न शक्यते कर्तुं यत्नस्तन्नानुचिन्तयेत्",
+     "line": "Not dwelling on it is the medicine. Brooding doesn't make pain leave; it makes it grow.",
+     "translation": "When pain of body or mind arrives and nothing can be done about it, do not keep thinking about it. Not dwelling on it is the medicine for sorrow; brooding does not make it leave, it only makes it grow.",
+     "words": [],
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "Applies to what truly cannot be changed; where action is possible, act (see 12.338.15).",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.5566,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.20",
+     "ref": "Bhagavad Gita 2.20",
+     "ref_iast": "Bhagavad Gītā 2.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणोन हन्यते हन्यमाने शरीरे ॥",
+     "line": "The self was never born and never dies. It is not killed when the body is.",
+     "translation": "It is never born and never dies; having been, it will not cease to be. Unborn, eternal, constant and ancient, it is not slain when the body is slain.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "जायते",
+       "en": "is born"
+      },
+      {
+       "sa": "म्रियते",
+       "en": "dies"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "कदाचि",
+       "en": "ever"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आयं",
+       "en": "this"
+      },
+      {
+       "sa": "भूत्वा",
+       "en": "having become"
+      },
+      {
+       "sa": "भविता",
+       "en": "will be"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "भूयः",
+       "en": "again"
+      },
+      {
+       "sa": "अजो",
+       "en": "unborn"
+      },
+      {
+       "sa": "नित्यः",
+       "en": "eternal"
+      },
+      {
+       "sa": "शाश्वतः",
+       "en": "everlasting"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "पुराणः",
+       "en": "ancient"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "हन्यते",
+       "en": "is killed"
+      },
+      {
+       "sa": "हन्यमाने",
+       "en": "being killed"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to skip mourning or to take loss lightly; it is comfort about what remains.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.6938,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, just after Arjuna has laid down his bow, refusing to fight. He is weeping, saying he will not kill his own kin. Krishna tells him that the true self is never born and never dies. It simply changes bodies the way a person changes clothes. What is real inside you has no end. This is the ground beneath your feet.",
+     "for_you": "The chat you open every night is love that has lost its home, but the bond itself is still yours. The person you miss is gone from the world of touch, yet the connection that shaped you remains. You are not losing them by remembering.",
+     "try_today": "Open the chat and read one old message, then close it.",
+     "scene_line": "You are in your own grief, asking where you came from, where you are going, who you are.",
+     "asks": [
+      "How do I keep their memory without it tearing me open?",
+      "Does the self that is never born mean I stop missing them?",
+      "What is the self, really, if not the body I am in now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.3.72.7",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 72.7",
+     "family": "vr",
+     "speaker": "Kabandha",
+     "listener": "Ram",
+     "setting": "Ram is lost and grieving; Kabandha tells him to seek Sugriva, who has also lost his wife and home.",
+     "sanskrit": "तदवश्यं त्वया कार्यः स सुहृत् सुहृदां वर। अकृत्वा नहि ते सिद्धिमहं पश्यामि चिन्तयन् ॥",
+     "line": "Find a friend who knows your kind of trouble. You won't get through this alone.",
+     "translation": "You must make him your friend, best of friends. Thinking it over, I see no success for you without it.",
+     "words": [],
+     "why": "When you are lost, look for someone who has been through the same thing.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kabandha",
+      "title": "Kabandha: find a friend who understands",
+      "summary": "Freed from a curse, the creature Kabandha tells the grieving brothers to seek out Sugriva, an exile who has also lost his wife and home. Only a friend in the same trouble, he says, can help them now.",
+      "story_hook": "Rising from his own funeral pyre, the strange creature gave the brothers one piece of advice.",
+      "lesson": "When you are lost, look for someone who has been through the same thing."
+     },
+     "score": 2.8709,
+     "beat": "act",
+     "role_fit": 0.435,
+     "meaning": "Kabandha speaks to Ram while Ram is lost in grief. He tells him that thinking alone will not bring success. He says Ram must make someone his friend, a best friend who knows this kind of trouble. He sees no way forward without it.",
+     "for_you": "The chat you open is love with nowhere to land, and it is drying you out. Kabandha says even winning the world would not touch this grief. Let the name of your friend sit in your mouth today, not as a wound but as a witness.",
+     "try_today": "Speak the name of what you lost out loud to yourself.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 1.8352,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader from the section on how the good behave. He lists the marks of a noble life. Cut craving, forgive, drop arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave. The verse proposes that true success is not in taking or winning, but in giving and listening.",
+     "for_you": "The chat you open is love that has nowhere to go. It is a heavy thing to carry alone. You can let that love move by being kind to yourself, the one who is in pain. Let your own company be the friend who stays in trouble.",
+     "try_today": "Say the name of your friend out loud, and let the love move.",
+     "scene_line": "You are a student in a hostel room, holding a phone.",
+     "asks": [
+      "How do I let love move without losing it?",
+      "Can I be kind to myself while I am this lonely?",
+      "What does it mean to win over my own pain?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_loses_sita",
+     "title": "Ram's grief and Lakshman's counsel",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "He came back to the hut calling her name, and no one answered.",
+     "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+     "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.66.5",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+      "family": "vr",
+      "speaker": "Lakshman",
+      "listener": "Ram",
+      "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+      "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+      "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+      "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+      "words": [],
+      "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.ram_loses_sita",
+       "title": "Ram's grief and Lakshman's counsel",
+       "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+       "story_hook": "He came back to the hut calling her name, and no one answered.",
+       "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+      },
+      "score": 2.7579
+     },
+     "score": 2.7579,
+     "why": null,
+     "hook_title": "Ram came back to the hut calling Sita's name, and no one answered",
+     "teaser": "Ram came back to the hut calling Sita's name, and no one answered",
+     "for_you": "The chat you open every night is love with nowhere to go. Ram raged at the whole world. You are not doing that, but the grief is still there, waiting in the empty room. Let Lakshman's steadiness be the friend who sits with you now.",
+     "asks": [
+      "What is the whole world I am punishing?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Grief with nowhere to go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17114,
+   "total": 17118
+  },
+  "_ms": 17121
+ }
+}

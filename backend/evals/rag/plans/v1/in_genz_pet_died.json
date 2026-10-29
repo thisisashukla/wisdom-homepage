@@ -1,0 +1,681 @@
+{
+ "situation": {
+  "id": "in_genz_pet_died",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 5
+  },
+  "note": "my dog Bruno died yesterday. 13 years. people say it's just a dog. the house is so quiet. I keep looking at his bowl.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Bengaluru)",
+  "lang": "english",
+  "slices": [
+   "bereavement",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and lonely",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "The quiet of the house is real, and the love that filled it is not lost. Over seven days you give the grief its shape and its voice.",
+   "week_beats": {
+    "hook": "You recognise the silence and the loneliness, named without judgement.",
+    "diagnose": "You see that the bond was real and the dismissal is theirs, not the measure of your loss.",
+    "steady": "You hold that what is real in you cannot be taken away.",
+    "act": "You try letting the grief have its time, and speaking the true thing to someone.",
+    "story": "A man who lost his companion shows you that love is real even when the one who gave it is gone."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "His -year-old dog died yesterday, the house is quiet, and people dismiss the loss as 'just a dog'.",
+   "mirror": "The bowl is still there, and the house is so quiet.",
+   "insight": "The dog was not just a dog. The quiet is real, and the people who say it is small are naming their own limits, not your loss.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "dignity_denied",
+   "situations": [
+    {
+     "id": "pet_loss",
+     "label": "My pet died",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.359,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The silence after someone who was always there, and the loneliness of people who do not see what you lost.",
+    "diagnose": "Grief is love with nowhere to go; the heart aches because the bond was real, and it is made heavier when others cannot see it.",
+    "steady": "What is real in us cannot be taken away; the love that made the house full is still yours, even in its absence.",
+    "act": "Let the grief have its time; speak the true thing to those who cannot see it, and let the love go where it needs to go.",
+    "story": "A man who lost his companion and found, in the quiet, that the love was real and the silence was his to carry."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The quiet and the bowl",
+    "What grief really is",
+    "The love that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dog died yesterday",
+    "the dog was teenage",
+    "the house is so quiet",
+    "keeps looking at the bowl"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:8=1.0,14=1.0,61=1.0,15=0.6,15=0.0,114=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.65",
+    "retried:5",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:fallback_lesson=1,fallback_line=2,invented_name=1,missing=5,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:3/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.845,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield, his body shaking, his mind gone blank. He tells Krishna that even if he were given the whole world, a kingdom without end, it would not touch the grief that is drying him up inside. He does not know what is right. He cannot see the way forward. He asks Krishna to teach him, because admitting he is lost is the only place where clarity can begin.",
+     "for_you": "You are standing in the quiet of the house, the bowl still in front of you, and people are telling you it is nothing. But the grief is real and it is drying you up. You do not have to know what to do next.",
+     "try_today": "Tell one person, or write it down, that you do not know how to carry this quiet yet.",
+     "scene_line": "You are on the edge of your own battlefield, the world gone quiet, and you do not know what to do next.",
+     "asks": [
+      "How do I say I am lost when no one else sees the loss?",
+      "What help is waiting for me in this quiet?",
+      "How do I tell the difference between grief and weakness?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.0184,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": null,
+     "for_you": "People say the loss was small, but that is their limit, not your grief. The quiet is real because the love was real. You did not lash out at anyone today, but the dismissal stings. Let the bowl be empty. The love was real.",
+     "try_today": "Notice the quiet and name it as love, not absence.",
+     "scene_line": "You are in your own quiet house, explaining the loss to the one who must listen.",
+     "asks": [
+      "How do I know my grief is not destroying my judgement?",
+      "How do I tell being right from being kind?",
+      "Why does grief make me wound the ones I love?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8366,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.15",
+     "ref": "Bhagavad Gita 2.15",
+     "ref_iast": "Bhagavad Gītā 2.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ । समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥",
+     "line": "The one who stays the same in pain and pleasure, undisturbed by either, is ready for real freedom.",
+     "translation": "The steady person whom these do not disturb, who stays the same in pain and pleasure, becomes fit for immortality.",
+     "words": [
+      {
+       "sa": "यं",
+       "en": "whom"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "व्यथयन्ति",
+       "en": "disturb"
+      },
+      {
+       "sa": "एते",
+       "en": "these"
+      },
+      {
+       "sa": "पुरुषं",
+       "en": "person"
+      },
+      {
+       "sa": "पुरुषर्षभ",
+       "en": "best among men"
+      },
+      {
+       "sa": "सम",
+       "en": "equally"
+      },
+      {
+       "sa": "दुःखसुखं",
+       "en": "pain and pleasure"
+      },
+      {
+       "sa": "धीरं",
+       "en": "steady"
+      },
+      {
+       "sa": "सः",
+       "en": "he"
+      },
+      {
+       "sa": "अमृतत्वाय",
+       "en": "for immortality"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Steadiness is not numbness or hiding what you feel.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.6351,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, who is overwhelmed by grief and despair over the coming battle. Krishna tells him that the true self is eternal, never born and never dying, while the body is merely a garment that changes. Pleasure and pain, joy and sorrow, are temporary visitors that come and go. The one who remains undisturbed by these passing states, who stays the same in pain and pleasure, is the one who is truly ready for real freedom.",
+     "for_you": "The quiet in your home is real, and so is the love that filled it. People calling it 'just a dog' are naming their own limits, not your loss. What you are living with is missing someone you love, and that is where this week begins.",
+     "try_today": "Notice one thing in the house that still holds the shape of your dog.",
+     "scene_line": "You are standing in your quiet home, holding the bowl, and the self that loved is still here.",
+     "asks": [
+      "How do I know the love is still here?",
+      "What does it mean to be undisturbed when I feel so much?",
+      "How do I find steadiness without becoming numb?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "words": [],
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 2.4531,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman finds Sita terrified and alone. He knows he must speak to her without frightening her further. He thinks about how she will hear him. He decides to use ordinary human words that carry meaning, not the court Sanskrit that would only impress. He speaks in a way that meets her fear, so she can receive his message of hope.",
+     "for_you": "The one who lives in your heart already knows this quiet and this grief. You do not need to explain the dog to anyone.",
+     "try_today": "Tell one person the true name of what you are carrying.",
+     "scene_line": "You are in your own quiet house, looking at the bowl, and you could speak to someone who cannot hear you.",
+     "asks": [
+      "How do I speak the truth without their fear?",
+      "How do I comfort myself with ordinary words?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 1.4719,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": null,
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "words": [],
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "overthinking",
+        "label": "I can't stop overthinking"
+       },
+       {
+        "id": "sleep_mind",
+        "label": "I can't sleep, my mind is racing"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet and the bowl",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12325,
+   "total": 12329
+  },
+  "_ms": 12331
+ }
+}

@@ -1,0 +1,760 @@
+{
+ "situation": {
+  "id": "in_millennial_new_mother_identity",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 5
+  },
+  "note": "baby is 4 months. I love her but I miss who I was. everyone tells me to enjoy this phase. I feel like a bad mother for even thinking this.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Ahmedabad)",
+  "lang": "english",
+  "slices": [
+   "guilt",
+   "lang:english",
+   "parenting"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "loving and grieving",
+   "bridge": "What you call missing the self you were, the texts call grief for a bond that was real, and it is not the same as not loving the one you have.",
+   "week_thesis": "Seven days from feeling like a bad mother to understanding that the grief is love with nowhere to go, and that you are allowed to hold both.",
+   "week_beats": {
+    "hook": "You recognise the love and the grief together, and the guilt, without judgement.",
+    "diagnose": "You see that the grief is real and the guilt is added on top. They are not the same thing.",
+    "steady": "You hold that what is real in you cannot be lost, and your love is not less for the grief.",
+    "act": "You try letting the grief have its place, speaking it to one safe person, and doing one small thing that is just yours.",
+    "story": "A mother who mourned the life she had lost shows you that love and grief can live in the same heart."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A new mother who loves her four-month-old but is grieving who she was before, and feels she is a bad mother for missing that self.",
+   "mirror": "Everyone says enjoy this phase, and you feel like a bad mother for not being able to.",
+   "insight": "You are not a bad mother. You are a person who is grieving a self that is still real to you, and that grief has nowhere to go.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.775,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.38,
+     "source": "note"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.373,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Loving the baby and missing the self you were, with the guilt of feeling like a bad mother for both.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost; the self you were is not gone, it is only changed, and love can hold both.",
+    "act": "Let the grief have its place; speak it to one person who will not judge it, and do one small thing that is just yours before the day begins.",
+    "story": "A mother who mourned the life she had lost, and found that her love was not less for the grief she carried."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The grief and the guilt",
+    "What is real in you",
+    "More than a mother"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "baby is four months old",
+    "feels like a bad mother for thinking this"
+   ],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:44=0.3,98=0.6,22=0.6,452=0.6,15=0.3,1=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.65",
+    "dropped:fallback_line=2,gendered=2,missing=1,repeat=1,soft_kept=1,try_today_verdict=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.44",
+     "ref": "Bhagavad Gita 11.44",
+     "ref_iast": "Bhagavad Gītā 11.44",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shaken by the cosmic vision, asks Krishna to forgive his years of casual familiarity.",
+     "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥",
+     "line": "Bear with me as a father bears with a son, a friend with a friend, a lover with the beloved.",
+     "translation": "So, bowing and prostrating my body, I ask your grace, adorable Lord. As a father with his son, a friend with his friend, a lover with the beloved, please bear with me.",
+     "words": [
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "प्रणम्य",
+       "en": "bowing down"
+      },
+      {
+       "sa": "प्रणिधाय",
+       "en": "placing down"
+      },
+      {
+       "sa": "कायम्",
+       "en": "the body"
+      },
+      {
+       "sa": "प्रसादये",
+       "en": "I seek to please"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "You"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "ईशम्",
+       "en": "the Lord"
+      },
+      {
+       "sa": "ईड्यम्",
+       "en": "worthy of praise"
+      },
+      {
+       "sa": "पितेव",
+       "en": "like a father"
+      },
+      {
+       "sa": "पुत्रस्य",
+       "en": "of a son"
+      },
+      {
+       "sa": "सखा इव",
+       "en": "like a friend"
+      },
+      {
+       "sa": "सख्युः",
+       "en": "of a friend"
+      },
+      {
+       "sa": "प्रियः",
+       "en": "a beloved"
+      },
+      {
+       "sa": "प्रियायाः",
+       "en": "of a beloved"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "You should"
+      },
+      {
+       "sa": "देव",
+       "en": "O radiant one"
+      }
+     ],
+     "why": "We take those closest to us for granted; it is never too late to say sorry.",
+     "misuse": "Asking for forgiveness is not demanding it; the other person still decides.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p11.6",
+      "title": "Terrified, Arjuna prays to see the gentle four-armed form",
+      "summary": "Trembling, Arjuna praises Krishna, asks pardon for having treated him as just a friend, begs him to bear with him as a father, friend or lover would, and asks to see his familiar form.",
+      "story_hook": "Arjuna remembered every joke, every careless 'Hey, Krishna!' across years of friendship, and his voice broke.",
+      "lesson": "We take those closest to us for granted; it is never too late to say sorry."
+     },
+     "score": 1.7487,
+     "beat": "hook",
+     "role_fit": 0.78,
+     "meaning": "Arjuna is trembling on the battlefield. The cosmic vision of Krishna has terrified him, and he bows down. He asks Krishna to forgive his years of treating him like a casual friend. He asks Krishna to bear with him, the way a father bears with a son, a friend with a friend, or a lover with the beloved. The verse proposes that we often take those closest to us for granted, and it is never too late to ask for forgiveness with humility.",
+     "for_you": "You are loving your baby and grieving your old self. The guilt is a heavy weight, but it does not erase the love. You can hold the grief and the care together without choosing between them. The love you feel is still real, even when it aches.",
+     "try_today": "Notice one moment of love for your baby without judging the grief that comes with it.",
+     "scene_line": "You are bowing under the weight of a new life, asking for grace to hold both the joy and the loss.",
+     "asks": [
+      "How do I ask for grace when I feel I have failed?",
+      "Can the love I feel for my child and the grief for myself exist at once?",
+      "What does it mean to be a friend to myself in this moment?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "words": [
+      {
+       "sa": "दीनताजं",
+       "en": "from humility"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "माने",
+       "en": "in honor"
+      },
+      {
+       "sa": "गुणे",
+       "en": "in virtue"
+      },
+      {
+       "sa": "खलभयं",
+       "en": "fear of wickedness"
+      },
+      {
+       "sa": "खलु",
+       "en": "indeed"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "निन्दकजं",
+       "en": "born of criticism"
+      },
+      {
+       "sa": "शक्तौ",
+       "en": "in strength"
+      },
+      {
+       "sa": "विद्यायां",
+       "en": "in knowledge"
+      },
+      {
+       "sa": "वादिनं",
+       "en": "of the debater"
+      },
+      {
+       "sa": "भयम्",
+       "en": "fear"
+      }
+     ],
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 3.1275,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": null,
+     "for_you": "The gods wanted to be fearless, but Vishnu showed them that every gain brings a fear. You gained a new life, and now you carry the fear of losing your old one. The grief is not a failure of love. It is the price of a life that has grown.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": [
+      "Can I let the guilt go without letting go of the baby?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "words": [],
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 3.1374,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama, the god of death, speaks to the young seeker Nachiketa. He tells him that the true self is not the body that changes and dies, but the steady, all-pervading presence within it. Knowing this, the wise do not grieve, because what is real inside you cannot be lost.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": "Notice one moment today when the grief feels heavy, and let it be there without fighting it.",
+     "scene_line": "You stand at the edge of a life that has changed, holding the steady self that remains.",
+     "asks": [
+      "How do I know if I am grieving or just failing?",
+      "Can I miss my old life and still be a good mother?",
+      "What is the steady part of me that is not changing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.452",
+     "ref": "Maha Upanishad 5.170",
+     "ref_iast": "Mahā Upaniṣad 5.170",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on handling the world's give and take.",
+     "sanskrit": "अतो निदाघ तत्त्वज्ञ व्यवहारेषु संसृतेः । नष्टं नष्टमुपेक्षस्व प्राप्तं प्राप्तमुपाहर ॥",
+     "line": "Let what is lost go. Take up what comes.",
+     "translation": "So, Nidagha, knower of truth, in the dealings of worldly life, let go of whatever is lost, and take up whatever comes.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.3695,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu speaks to Nidagha about how a person who is free inside lives among others. He says to let go of whatever is lost, and take up whatever comes next. This is not about giving up. It is about letting the old shape fall away so you can hold the new one. The wise person does not stop the world from changing. They simply do not let the change break what stays steady inside. They do the work at hand, they speak gently, and they move on.",
+     "for_you": "The baby is four months old. You love them, and you are grieving the self you were. Ribhu says to let the old shape fall away and take up the new one. Your love for the child is not less because you miss yourself. That grief is real.",
+     "try_today": null,
+     "scene_line": "You are holding a new shape while the old one still calls to you.",
+     "asks": [
+      "How do I hold both the baby and the old self?",
+      "Can I let the old shape fall away without breaking?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.583,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma is answering Yudhishthira's question about how to live a long and good life. He says it is built from small daily habits, not grand gestures. The verse tells Yudhishthira to rise before sunrise and greet his parents first. This is not about empty ritual. It is about starting the day by acknowledging the people who gave you life. The point is that a life is shaped by the quiet choices we make at the threshold of each morning.",
+     "for_you": "You wake up and the first thing your mind does is measure the distance between who you were and who you are now. That greeting is not a duty you owe to your child. It is a small act of respect for the life you are living.",
+     "try_today": "Before you reach for the baby, stand at the door of the room and greet the morning out loud.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.656,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Vidula finds her son Sanjaya lying in despair after he has lost his kingdom. She tells him to stop thinking poorly of himself and to stop living on too little. She says he should set his mind on what is truly good and stop being afraid. The point is that a past failure does not define who you are. The results of any action are uncertain, but those who never try never succeed.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": "Tell one safe person exactly what you feel right now.",
+     "scene_line": "You are in your own quiet room, and a voice says do not hold yourself in contempt.",
+     "asks": [
+      "How do I speak this grief out loud without shame?",
+      "What small thing can I do that is just for me?",
+      "How do I know if I am settling for too little?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "words": [
+       {
+        "sa": "माता",
+        "en": "mother"
+       },
+       {
+        "sa": "पुनि",
+        "en": "again"
+       },
+       {
+        "sa": "बोली",
+        "en": "spoke"
+       },
+       {
+        "sa": "सो",
+        "en": "that"
+       },
+       {
+        "sa": "मति",
+        "en": "mind"
+       },
+       {
+        "sa": "डोली",
+        "en": "changed"
+       },
+       {
+        "sa": "तजहु",
+        "en": "leave"
+       },
+       {
+        "sa": "तात",
+        "en": "dear one"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "रूपा",
+        "en": "form"
+       },
+       {
+        "sa": "कीजै",
+        "en": "do"
+       },
+       {
+        "sa": "सिसुलीला",
+        "en": "child-play"
+       },
+       {
+        "sa": "अति",
+        "en": "very"
+       },
+       {
+        "sa": "प्रियसीला",
+        "en": "dear-loving"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "सुख",
+        "en": "joy"
+       },
+       {
+        "sa": "परम",
+        "en": "supreme"
+       },
+       {
+        "sa": "अनूपा",
+        "en": "matchless"
+       },
+       {
+        "sa": "सुनि",
+        "en": "hearing"
+       },
+       {
+        "sa": "बचन",
+        "en": "words"
+       },
+       {
+        "sa": "सुजाना",
+        "en": "wise one"
+       },
+       {
+        "sa": "रोदन",
+        "en": "crying"
+       },
+       {
+        "sa": "ठाना",
+        "en": "began"
+       },
+       {
+        "sa": "होइ",
+        "en": "becoming"
+       },
+       {
+        "sa": "बालक",
+        "en": "child"
+       },
+       {
+        "sa": "सुरभूपा",
+        "en": "lord of the gods"
+       },
+       {
+        "sa": "यह",
+        "en": "this"
+       },
+       {
+        "sa": "चरित",
+        "en": "deed/story"
+       },
+       {
+        "sa": "जे",
+        "en": "who"
+       },
+       {
+        "sa": "गावहिं",
+        "en": "sing"
+       },
+       {
+        "sa": "हरिपद",
+        "en": "Hari's feet"
+       },
+       {
+        "sa": "पावहिं",
+        "en": "reach"
+       },
+       {
+        "sa": "ते",
+        "en": "they"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "परहिं",
+        "en": "fall"
+       },
+       {
+        "sa": "भवकूपा",
+        "en": "well of worldly existence"
+       }
+      ],
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw the whole universe in her son, but what she loved was the boy with curd on his face, running from dinner. You are looking at the whole new life that has arrived, and it is right to miss the ordinary hours that were yours alone.",
+     "asks": [
+      "How do I hold the grand new life and the small old one together?",
+      "Can I love this new world and still miss the one I left?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The grief and the guilt",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15737,
+   "total": 15741
+  },
+  "_ms": 15745
+ }
+}

@@ -1,0 +1,687 @@
+{
+ "situation": {
+  "id": "in_millennial_marriage_silence",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3
+  },
+  "note": "my husband and I only talk about kids and bills now. we sleep in the same bed like two colleagues. I don't even know when it happened.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Gurgaon)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "marriage"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and distant",
+   "bridge": "The marriage you describe as colleagues is what the texts call a bond without the heart. The loneliness is real, and it is not yours to carry alone.",
+   "week_thesis": "Seven days from feeling the loneliness of the distance to naming it and finding one moment that is not about children or bills.",
+   "week_beats": {
+    "hook": "You recognise the loneliness of the distance, named without blame.",
+    "diagnose": "You see that the bond was real, and real things can be found again.",
+    "steady": "You hold that the distance is real, and it is not yours to carry alone.",
+    "act": "You try naming the feeling to your husband, and find one moment that is not about children or bills.",
+    "story": "A couple who shared a bed and a life shows you that the distance was real and the words to name it can be found."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "The marriage has become a practical arrangement of bills and children, and she feels the distance without knowing when it grew.",
+   "mirror": "You share a bed and a life, and the one thing you miss is the one you don't even know how to name.",
+   "insight": "The marriage has become a practical arrangement, and you are the only one who feels the loneliness of it. The distance is real, and it is not yours to carry alone.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 1.786,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.825,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "sibling_rift",
+     "label": "I've fallen out with my sibling",
+     "weight": 0.416,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Sharing a bed and a life with someone who feels like a colleague, and the loneliness of not knowing when the connection left.",
+    "diagnose": "When a bond is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The bond was real, and real things can be found again; you are not alone in feeling the distance, and it is not yours to carry alone.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A couple who shared a bed and a life, and one of them felt the distance grow, who found the words to name it and the courage to begin again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The distance is real",
+    "What the bond was",
+    "The one who names it"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "husband and wife only talk about kids and bills",
+    "sleep in same bed like colleagues",
+    "does not know when distance grew",
+    "no intimacy or connection"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:67=0.3,61=0.6,80=0.6,17=0.6,31=0.3,29=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.56,max=0.63",
+    "retried:5",
+    "redo:1",
+    "redo_fixed:2",
+    "dropped:cliche=2,fallback_line=3,missing=5,scene_line_cliche=1",
+    "for_you:6/7",
+    "meaning:3/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "words": [
+      {
+       "sa": "इन्द्रियाणां",
+       "en": "of the senses"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "चरतां",
+       "en": "moving"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "अनुविधीयते",
+       "en": "follows"
+      },
+      {
+       "sa": "तदस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "हरति",
+       "en": "carries away"
+      },
+      {
+       "sa": "प्रज्ञां",
+       "en": "wisdom"
+      },
+      {
+       "sa": "नावम्",
+       "en": "boat"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आम्भसि",
+       "en": "on water"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 1.8109,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna is answering Arjuna's question about what a steady mind looks like. He explains that when the mind chases after wandering senses, it loses its balance. A person of steady wisdom is content within, but anyone who dwells on desires loses their understanding. Krishna traces how dwelling on an object leads to attachment, then anger, and finally confusion. The point is that steadiness is built by guarding where your attention goes.",
+     "for_you": "You live in a house where the connection has faded into logistics. The mind, looking for relief, can start to dwell on what is missing. That dwelling is what makes the distance feel heavier than it already is.",
+     "try_today": "Notice one moment when your mind wanders toward what is missing.",
+     "scene_line": "You are in a home where the mind chases what the senses cannot reach.",
+     "asks": [
+      "How do I stop my mind from dwelling on the distance?",
+      "What does it mean to guard my attention here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.641,
+     "beat": "diagnose",
+     "role_fit": 0.446,
+     "meaning": "Rahim speaks from a place where love is so close it needs no news. He asks the reader, who has been given body and mind and made a home in the heart, what joy or sorrow is left that needs telling. The verse proposes that the one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "for_you": "Your partner and your family know you are there, but they do not feel you are in the room.",
+     "try_today": "Sit in the same room as your partner without talking about bills or the children.",
+     "scene_line": "You are in a home where two people share a roof but not a heart.",
+     "asks": [
+      "How do I speak to someone who already knows I am tired?",
+      "Can I be seen without explaining the quiet?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "shambhu_gita.7.80",
+     "ref": "Shambhu Gita 7.80",
+     "ref_iast": "Śambhu Gītā 7.80",
+     "family": "gitas",
+     "speaker": "Shiva",
+     "listener": "The ancestors (pitris)",
+     "setting": "Shiva lists where he can be found among the things people honour.",
+     "sanskrit": "प्रेम्णा स्नेहेन भक्तया च श्रद्धयाऽपि प्रपूरितम् । स्पर्शेषु तु नमस्येष्वालिङ्गनं पितृपुङ्गवाः ! ॥",
+     "line": "Among all reverent touches, I am the embrace, full of love, warmth, devotion and trust.",
+     "translation": "Among the touches worthy of reverence, O best of ancestors, I am the embrace filled with love, affection, devotion and faith.",
+     "words": [
+      {
+       "sa": "प्रेम्णा",
+       "en": "with love"
+      },
+      {
+       "sa": "स्नेहेन",
+       "en": "with affection"
+      },
+      {
+       "sa": "भक्तया",
+       "en": "with devotion"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "श्रद्धयाऽपि",
+       "en": "also with trust"
+      },
+      {
+       "sa": "प्रपूरितम्",
+       "en": "filled"
+      },
+      {
+       "sa": "स्पर्शेषु",
+       "en": "in touches"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "नमस्येषु",
+       "en": "in greetings"
+      },
+      {
+       "sa": "आलिङ्गनं",
+       "en": "embracing"
+      },
+      {
+       "sa": "पितृपुङ्गवाः",
+       "en": "noble fathers"
+      }
+     ],
+     "why": "You can hand over the outcome and still keep working, with devotion woven through.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "shambhu_gita.p.pitris_hymn",
+      "title": "The ancestors' hymn to Shiva and his easy way",
+      "summary": "Bewildered by Shiva's limitless form, the ancestors praise him and finally hand him the outcome: do whatever is truly good for us. Shiva tells them their work needs a mind joined to him, then gives an easy way: see him everywhere, even in a loving embrace, so devotion never lapses amid hard work.",
+      "story_hook": "",
+      "lesson": "You can hand over the outcome and still keep working, with devotion woven through."
+     },
+     "score": 2.7712,
+     "beat": "steady",
+     "role_fit": 0.585,
+     "meaning": null,
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+     "try_today": "Notice one moment of genuine warmth, however small, in your day.",
+     "scene_line": null,
+     "asks": [
+      "How do I find warmth in a bed shared like a desk?",
+      "What does it mean to join my work to a mind that is not my own?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.3.17",
+     "ref": "Shvetashvatara Upanishad 3.17",
+     "ref_iast": "Śvetāśvatara Upaniṣad 3.17",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "Describing the one Lord who pervades all, the seer adds what he is to each of us.",
+     "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् । सर्वस्य प्रभुमीशानं सर्वस्य शरणं सुहृत् ॥",
+     "line": "The Lord of everything is also everyone's refuge and everyone's friend.",
+     "translation": "He shines through the powers of all the senses yet has no senses; he is the master and ruler of all, the refuge of all, the friend of all.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.4604,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "The one self lives in every heart; seen truly, you were never separate from others or from the divine.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.16.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 16.8",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the fourth gatekeeper: good company (satsanga).",
+     "sanskrit": "अपि कष्टतरां प्राप्तैर्दशां विवशतां गतैः । मनागपि न संत्याज्या मानवैः साधुसंगतिः ॥",
+     "line": "Even at your lowest and most helpless, don't let go of good company.",
+     "translation": "Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "words": [],
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.8216,
+     "beat": "act",
+     "role_fit": 0.634,
+     "meaning": "Vasishtha speaks to Rama on the fourth gatekeeper, good company. He says that even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little. The teaching is that you only need to begin with one of these four qualities. Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "for_you": "You have been carrying the loneliness of this marriage alone for a long time. The distance you feel is real. You can start by choosing one of these four gatekeepers.",
+     "try_today": "Choose one gatekeeper and grow it, even a little.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.4986,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": null,
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "words": [],
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "anxiety_general",
+        "label": "I feel anxious most of the time"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The distance is real",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 6466,
+   "total": 6469
+  },
+  "_ms": 6472
+ }
+}

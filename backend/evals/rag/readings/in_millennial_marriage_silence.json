@@ -1,0 +1,102 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "The marriage has become a practical arrangement of bills and children, and she feels the distance without knowing when it grew.",
+ "mechanism": "disconnection",
+ "secondary_mechanism": "grief_attachment",
+ "situations": [
+  {
+   "id": "marriage_distance",
+   "weight": 1.786,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.87,
+   "source": "note"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.825,
+   "source": "note"
+  },
+  {
+   "id": "marriage_conflict",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "sibling_rift",
+   "weight": 0.416,
+   "source": "note"
+  }
+ ],
+ "mirror": "You share a bed and a life, and the one thing you miss is the one you don't even know how to name.",
+ "queries": {
+  "hook": "Sharing a bed and a life with someone who feels like a colleague, and the loneliness of not knowing when the connection left.",
+  "diagnose": "When a bond is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+  "steady": "The bond was real, and real things can be found again; you are not alone in feeling the distance, and it is not yours to carry alone.",
+  "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+  "story": "A couple who shared a bed and a life, and one of them felt the distance grow, who found the words to name it and the courage to begin again."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "template",
+  "story": "llm"
+ },
+ "weeks": [
+  "The distance is real",
+  "What the bond was",
+  "The one who names it"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "lonely and distant",
+ "bridge": "The marriage you describe as colleagues is what the texts call a bond without the heart. The loneliness is real, and it is not yours to carry alone.",
+ "week_thesis": "Seven days from feeling the loneliness of the distance to naming it and finding one moment that is not about children or bills.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "partner",
+  "child",
+  "family",
+  "parent",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the loneliness of the distance, named without blame.",
+  "diagnose": "You see that the bond was real, and real things can be found again.",
+  "steady": "You hold that the distance is real, and it is not yours to carry alone.",
+  "act": "You try naming the feeling to your husband, and find one moment that is not about children or bills.",
+  "story": "A couple who shared a bed and a life shows you that the distance was real and the words to name it can be found."
+ },
+ "insight": "The marriage has become a practical arrangement, and you are the only one who feels the loneliness of it. The distance is real, and it is not yours to carry alone.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "husband and wife only talk about kids and bills",
+  "sleep in same bed like colleagues",
+  "does not know when distance grew",
+  "no intimacy or connection"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "act:act_not_actionable"
+ ]
+}

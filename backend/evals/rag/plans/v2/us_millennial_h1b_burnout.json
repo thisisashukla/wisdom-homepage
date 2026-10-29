@@ -1,0 +1,797 @@
+{
+ "situation": {
+  "id": "us_millennial_h1b_burnout",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "USA (Seattle)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and overthinking",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from the 2am check to one hour of rest, and from terror to the one thing you can actually hold.",
+   "week_beats": {
+    "hook": "You recognise the terror and the 2am check, named without judgement.",
+    "diagnose": "You see that the fear is real but the 2am run is not. The mind is taking the reins of your peace.",
+    "steady": "You hold that what is real in you cannot be lost.",
+    "act": "You try giving your mind one hour of rest a day, and letting the 2am thought pass.",
+    "story": "A man who could not control the future found that his own steadiness was what kept his family safe."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "His visa depends on a job rating; his wife gave up her career for this; his mind checks work am and has not rested in weeks.",
+   "mirror": "You check the messages am, and the weekend you planned to rest is already a thought about work.",
+   "insight": "The visa is real and the fear is real. But the 2am check is the mind taking the reins of your peace and running with them.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.525,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.26,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.429,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.414,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The terror of a rating that could end the visa, and the mind that will not stop running until it has checked every message.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost, and what is not real is what you are losing sleep over; hold to what is real and let the rest go.",
+    "act": "Let go of the result you cannot control, and give your mind one hour of rest a day; when the 2am thought comes, let it pass and return to sleep.",
+    "story": "A man who stood on foreign soil with his family, facing a future he could not control, found that his own steadiness was what kept them safe."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The 2am check",
+    "What is real",
+    "The one thing you hold"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "checks work messages am",
+    "has not had a weekend free of work thoughts"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:29=0.6,2=0.6,9=0.6,15=0.6,12=0.6,62=0.0",
+    "week_same:15",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.68",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "day1:third_try",
+    "dropped:fallback_lesson=1,fallback_line=2,gendered=1,missing=3,try_today_long=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.5663,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": null,
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.256.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 256",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Ram",
+     "setting": "Bharat, once Ram and their teacher have reassured him, admits what his dread was made of.",
+     "sanskrit": "अपडर डरेउँ न सोच समूलें। रबिहि न दोसु देव दिसि भूलें॥ मोर अभागु मातु कुटिलाई। बिधि गति बिषम काल कठिनाई ॥",
+     "line": "I was frightened by fears I had imagined. My worry had no root at all.",
+     "translation": "\"I was afraid of imagined fears; my worry had no root at all. If one loses one's direction, the sun is not to blame. It was my misfortune, my mother's crookedness, the hard turn of fate and the difficulty of the times...\"",
+     "words": [
+      {
+       "sa": "अपडर",
+       "en": "false fear"
+      },
+      {
+       "sa": "डरेउँ",
+       "en": "I was afraid"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "सोच",
+       "en": "sorrow, worry"
+      },
+      {
+       "sa": "समूलें",
+       "en": "at the root"
+      },
+      {
+       "sa": "रबिहि",
+       "en": "the sun"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "दोसु",
+       "en": "fault"
+      },
+      {
+       "sa": "देव",
+       "en": "O divine one"
+      },
+      {
+       "sa": "दिसि",
+       "en": "direction"
+      },
+      {
+       "sa": "भूलें",
+       "en": "having lost"
+      },
+      {
+       "sa": "मोर",
+       "en": "my"
+      },
+      {
+       "sa": "अभागु",
+       "en": "misfortune"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कुटिलाई",
+       "en": "crookedness"
+      },
+      {
+       "sa": "बिधि",
+       "en": "fate"
+      },
+      {
+       "sa": "गति",
+       "en": "course"
+      },
+      {
+       "sa": "बिषम",
+       "en": "crooked, harsh"
+      },
+      {
+       "sa": "काल",
+       "en": "time"
+      },
+      {
+       "sa": "कठिनाई",
+       "en": "hardness"
+      }
+     ],
+     "why": "In family conflict, let each speak; name love plainly; lift needless shame.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.chitrakoot_assembly",
+      "title": "The family council at Chitrakoot",
+      "summary": "Vasishtha asks how Ram can be brought home, noting that grieving people cannot judge well. Bharat recalls a brother who never broke his heart and let him win at games, and blames himself. Ram tells him his shame is needless, that love and hostility cannot be hidden, and asks him to say freely what he wants.",
+      "story_hook": "",
+      "lesson": "In family conflict, let each speak; name love plainly; lift needless shame."
+     },
+     "score": 3.2335,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bharat speaks to Ram in the forest of Chitrakoot. He has been calmed and now he names what he felt. He says his fear was made of imagined fears, that his worry had no root at all. He blames his own loss of direction, his mother's crookedness, and the hard turn of fate. He admits that the sun is not to blame if one loses one's way.",
+     "for_you": "The visa is real. You are not losing your way because the sun is wrong. You are frightened by imagined fears, and your worry has no root at all in the work itself.",
+     "try_today": "When the 2am check comes, name it as fear and let it go.",
+     "scene_line": "You are in your own Chitrakoot, naming the fears that have no root.",
+     "asks": [
+      "How do I tell the real fear from the imagined one?",
+      "What does it mean to lose my direction here?",
+      "How do I stop my mind from running the show?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "words": [
+      {
+       "sa": "व्यसने",
+       "en": "in grief"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "अर्थकृच्छ्रे",
+       "en": "in loss of wealth"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "भये",
+       "en": "in fear"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "जीवितान्तके",
+       "en": "at life's end"
+      },
+      {
+       "sa": "विमृशन्वै",
+       "en": "one who is patient"
+      },
+      {
+       "sa": "स्वया",
+       "en": "by own"
+      },
+      {
+       "sa": "बुद्ध्या",
+       "en": "wisdom"
+      },
+      {
+       "sa": "धृतिमान्",
+       "en": "steadfast"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आवसीदति",
+       "en": "despairs"
+      }
+     ],
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.0899,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Ram has just seen the jewels Sita dropped, and he breaks down. He is grieving, and he is afraid. Sugriva is also in trouble. He has lost his wife and his kingdom. But Sugriva steps in. He tells Ram that even when everything is falling apart, even when money is gone and fear is everywhere, a steady person uses their own mind to think it through. They do not sink. The verse proposes that two people in trouble can carry each other. You do not have to be the steady one alone.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": "Tell your partner one specific fear you have about the visa.",
+     "scene_line": "You are in the dark, and your partner is the steady hand that thinks it through.",
+     "asks": [
+      "How can I let my partner carry part of this weight?",
+      "Can I be steady without being alone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.6911,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Arjuna stands in the middle of two armies. His limbs shake. His mouth is dry. He cannot hold his bow. Krishna looks at him and says: your right is to the work alone, never to its fruits. Do the work fully. Let go of owning the result. Care, plan, and aim well. But do not let the outcome own you.",
+     "for_you": "You wake at two in the morning and check work. You cannot lose what is real in you. Your part is to do the work.",
+     "try_today": "Notice the difference between your part and the result.",
+     "scene_line": "You are Arjuna, and the result is the fruit you cannot hold.",
+     "asks": [
+      "How do I do my part without clinging to the result?",
+      "What is my work today, and what is the result?",
+      "How do I let go of the result without stopping work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.25",
+     "ref": "Bhagavad Gita 6.25",
+     "ref_iast": "Bhagavad Gītā 6.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+     "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+     "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+     "words": [
+      {
+       "sa": "slowly",
+       "en": "gradually"
+      },
+      {
+       "sa": "slowly",
+       "en": "gradually"
+      },
+      {
+       "sa": "surpass",
+       "en": "transcend"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.1138,
+     "beat": "act",
+     "role_fit": 0.704,
+     "meaning": "Krishna is teaching Arjuna how to sit with the mind, and what a settled mind looks like. He says that the mind must be brought back again and again, with patience and steady resolve. You do not force it. You simply return to the place of rest, letting other thoughts drift past like clouds. The point is that settling the mind is a gentle, repeated act of coming back to yourself.",
+     "for_you": "The mind that checks work am is trying to hold onto a future it cannot see. Little by little, you can let that thought go. You can sit with your breath for one hour and let the mind rest.",
+     "try_today": "Set a timer for one hour and let the phone stay silent.",
+     "scene_line": "You are the mind that must be brought back, again and again.",
+     "asks": [
+      "How do I let the mind rest when the fear is so loud?",
+      "How do I stop the 2am thoughts without fighting them?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.5837,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu tells Nidagha how a person who is truly free lives in the world. They do their work, speak gently, and treat everyone as family. Yet inside, they are not agitated by what comes or goes. They let go of what is lost and take up what comes next. The verse says to move through the world with a clear mind. It is an invitation to be fully active on the outside and unhurried on the inside. The idea is to do your part without letting the movement of life disturb your peace.",
+     "for_you": "You are checking work messages at two in the morning and carrying the weight of a visa and a partner's sacrifice. Ribhu says to act fully on the outside and stay unhurried inside. Your part is the work and the care you give. The rest is not yours to hold.",
+     "try_today": null,
+     "scene_line": "You stand at the edge of your bed, the phone in your hand, and choose to let the night pass.",
+     "asks": [
+      "How can I be busy outside and still let the inside rest?",
+      "What does it mean to treat the world as family when I feel so alone?",
+      "How do I let go of what is lost when the future feels so uncertain?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The 2am check",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16552,
+   "total": 16555
+  },
+  "_ms": 16558
+ }
+}

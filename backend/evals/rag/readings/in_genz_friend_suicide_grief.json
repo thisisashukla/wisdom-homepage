@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.85,
+ "core_struggle": "Their best friend from hostel died in an accident last month, and while everyone else has moved on, they are still alone with the loss.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "grief_general",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "pet_loss",
+   "weight": 0.382,
+   "source": "note"
+  }
+ ],
+ "mirror": "You open the chat every night, and the silence on the other side is what is breaking you.",
+ "queries": {
+  "hook": "The ache of a bond that ended too soon, and the loneliness of being the only one who has not let it go. I'm grieving someone I loved.",
+  "diagnose": "Grief is love with nowhere to go; the heart aches because what came together was real, and now it has been torn apart.",
+  "steady": "What was real does not vanish; the bond you shared is still yours, even if the body is not.",
+  "act": "Let the grief have its time; speak the name of what you lost, and let the love you have for them find a new place in you.",
+  "story": "A young person who lost their closest companion and found that love does not end with the body, only with the silence around it."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Grief with nowhere to go",
+  "The bond that does not vanish",
+  "Love that moves on"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and alone",
+ "bridge": "The chat you open every night is grief with nowhere to go. The texts call it love that has lost its home.",
+ "week_thesis": "From the night you open the chat to the morning you can let the love move, seven days of grief that are given their due.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the ache and the loneliness, named without rushing you.",
+  "diagnose": "You see that the grief is the love, and the chat is where it has been trapped.",
+  "steady": "You hold that what was real does not vanish, and the bond is still yours.",
+  "act": "You try speaking the name of what you lost, and letting the love find a new place in you.",
+  "story": "A young person who lost their closest companion and found that love does not end with the body, only with the silence around it."
+ },
+ "insight": "Everyone else has moved on in a week, and you are still alone with the loss. The chat you open is love that has nowhere to go.",
+ "seat": "a student who lost their closest friend and has been left to grieve alone",
+ "life_context": "A student under twenty-five whose best friend from hostel died in an accident last month; everyone else seems to have moved on in a week, but they still open the chat every night.",
+ "details": [
+  "best friend from hostel died last month in an accident",
+  "others have moved on within a week",
+  "still opens the chat every night"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "hook:anchored_to_situation"
+ ]
+}

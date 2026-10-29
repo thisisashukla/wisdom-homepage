@@ -1,0 +1,789 @@
+{
+ "situation": {
+  "id": "us_genz_abcd_identity",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "my parents keep asking when I'll 'settle down with a nice Gujarati boy' and I've been with my boyfriend for 2 years and he's not Indian. I feel like whichever way I go I lose a part of me",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "USA (New Jersey)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "torn and diminished",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being asked to choose between two parts of yourself to standing in the one you already have, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being asked to choose, and the anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A young woman is being told by her parents to choose between their expectation and the two-year relationship she already has, and feels she will lose part of herself whichever way she goes.",
+   "mirror": "My parents' expectations weigh on me",
+   "insight": "Your parents are asking you to choose between their picture and the life you already have. The loss you feel is not in choosing. It is in being asked to choose at all.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.878,
+     "source": "note"
+    },
+    {
+     "id": "interfaith",
+     "label": "Faith differences in my relationship",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "My parents' expectations weigh on me. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role for you, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit their picture.",
+    "story": "A young woman of learning and standing, dismissed by her own family for who she loves, who questioned them and held her ground until they had no answer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Who they see",
+    "Whose picture it is",
+    "More than one choice"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:5=0.6,15=0.3,11=1.0,8=1.0,49=0.6,532=0.6",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.56,max=0.65",
+    "retried:2",
+    "redo:2",
+    "redo_fixed:2",
+    "day1:third_try",
+    "dropped:accept=2,fallback_line=2,missing=4",
+    "for_you:7/7",
+    "meaning:2/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 0.2158,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": null,
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.1.8.chaupai.7",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, introducing his work, on how rarely people rejoice at someone else's rise.",
+     "sanskrit": "जग बहु नर सर सरि सम भाई। जे निज बाढ़ि बढ़हि जल पाई॥ सज्जन सकृत सिंधु सम कोई। देखि पूर बिधु बाढ़इ जोई ॥",
+     "line": "Most of us swell only at our own rise. Rare is the one who surges at another's.",
+     "translation": "Brother, most people in the world are like ponds and rivers: they swell only when their own waters rise. Rare is the good soul who, like the ocean, surges with joy on seeing another's moon grow full.",
+     "words": [
+      {
+       "sa": "जग",
+       "en": "world"
+      },
+      {
+       "sa": "बहु",
+       "en": "many"
+      },
+      {
+       "sa": "नर",
+       "en": "people"
+      },
+      {
+       "sa": "सर",
+       "en": "pond"
+      },
+      {
+       "sa": "सरि",
+       "en": "river"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "भाई",
+       "en": "brother"
+      },
+      {
+       "sa": "जे",
+       "en": "those who"
+      },
+      {
+       "sa": "निज",
+       "en": "their own"
+      },
+      {
+       "sa": "बाढ़ि",
+       "en": "increase"
+      },
+      {
+       "sa": "बढ़हि",
+       "en": "grow"
+      },
+      {
+       "sa": "जल",
+       "en": "water"
+      },
+      {
+       "sa": "पाई",
+       "en": "having received"
+      },
+      {
+       "sa": "सज्जन",
+       "en": "noble people"
+      },
+      {
+       "sa": "सकृत",
+       "en": "once"
+      },
+      {
+       "sa": "सिंधु",
+       "en": "ocean"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "कोई",
+       "en": "someone"
+      },
+      {
+       "sa": "देखि",
+       "en": "seeing"
+      },
+      {
+       "sa": "पूर",
+       "en": "fullness"
+      },
+      {
+       "sa": "बिधु",
+       "en": "moon"
+      },
+      {
+       "sa": "बाढ़इ",
+       "en": "swells"
+      },
+      {
+       "sa": "जोई",
+       "en": "who"
+      }
+     ],
+     "why": "Notice whether you can be glad at someone else's good work, not only your own.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.tulsi_humility",
+      "title": "Tulsidas on loving our own work",
+      "summary": "Tulsidas calls his own poetry plain and asks readers to forgive it. Along the way he notes that everyone loves their own work, that few are glad at another's success, and that most people swell only with their own rising waters.",
+      "story_hook": "",
+      "lesson": "Notice whether you can be glad at someone else's good work, not only your own."
+     },
+     "score": 2.8323,
+     "beat": "diagnose",
+     "role_fit": 0.5,
+     "meaning": null,
+     "for_you": "Your parents want you to shrink so they can fit their picture of you. They do not want to see your moon growing full in this life you have built. You are not the one who is small. You are the ocean.",
+     "try_today": "Notice one thing your partner does today that shows they see you fully.",
+     "scene_line": "You stand in your own river while they only watch their own water rise.",
+     "asks": [
+      "Why do I feel I must shrink for them to feel safe?",
+      "What part of me feels small when they ask me to choose?",
+      "How can I be glad at my own rising when they only watch theirs?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.2.2.11",
+     "ref": "Katha Upanishad 2.2.11",
+     "ref_iast": "Kaṭha Upaniṣad 2.2.11",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the inner self and the world's pain.",
+     "sanskrit": "सूर्यो यथा सर्वलोकस्य चक्षुः न लिप्यते चाक्षुषैर्बाह्यदोषैः । एकस्तथा सर्वभूतान्तरात्मा न लिप्यते लोकदुःखेन बाह्यः ॥",
+     "line": "The sun shows every flaw yet stays untouched. Your deepest self stays untouched by the world's sorrow.",
+     "translation": "Just as the sun, the eye of the whole world, is not stained by the flaws the eyes see outside, so the one inner self of all beings is not stained by the sorrow of the world; it stands apart.",
+     "words": [],
+     "why": "Look inward; what lasts is not out there among passing things.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.inward",
+      "title": "Turning the gaze inward",
+      "summary": "In the second half of his teaching, Yama explains that our senses face outward, so we miss what is within. The wise turn inward and stop looking for lasting things among passing ones; when the knots of the heart are cut, a person is free.",
+      "story_hook": "",
+      "lesson": "Look inward; what lasts is not out there among passing things."
+     },
+     "score": 2.8987,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": null,
+     "for_you": "But the deepest part of you is not stained by their demand. It stands apart.",
+     "try_today": "Rest your gaze on what is inside you today.",
+     "scene_line": null,
+     "asks": [
+      "How do I rest my gaze on what is inside me?",
+      "How do I know what is inside me is real?",
+      "How do I keep my gaze inside when they keep pulling me out?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.8",
+     "ref": "Ashtavakra Gita 15.8",
+     "ref_iast": "Aṣṭāvakra Gītā 15.8",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "श्रद्धस्व तात श्रद्धस्व नात्र मोऽहं कुरुष्व भोः । ज्ञानस्वरूपो भगवानात्मा त्वं प्रकृतेः परः ॥",
+     "line": "Have faith, my child, have faith. You are more than everything that happens to you.",
+     "translation": "Have faith, my son, have faith. Do not be confused about this. You are knowledge itself, the Lord, the Self beyond nature.",
+     "words": [
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "नात्र",
+       "en": "here not"
+      },
+      {
+       "sa": "मः",
+       "en": "illusion"
+      },
+      {
+       "sa": "कुरुष्व",
+       "en": "do"
+      },
+      {
+       "sa": "भोः",
+       "en": "oh"
+      },
+      {
+       "sa": "ज्ञानस्वरूपो",
+       "en": "embodiment of wisdom"
+      },
+      {
+       "sa": "भगवानात्मा",
+       "en": "supreme self"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "प्रकृतेः",
+       "en": "of nature"
+      },
+      {
+       "sa": "परः",
+       "en": "beyond"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.779,
+     "beat": "steady",
+     "role_fit": 0.775,
+     "meaning": "Ashtavakra is speaking to Janaka, who has been questioning his identity and place in the world. Ashtavakra tells him to have faith, not to be confused. He says that you are not the events that happen to you. You are knowledge itself, the Self beyond nature. You are the ocean, not the waves. The waves may rise and fall, but you remain the depth.",
+     "for_you": "They are treating you as if you can only be one thing at a time. But you are the whole ocean. You do not have to shrink to fit their picture.",
+     "try_today": "Notice one moment when you feel small and name the larger thing you are.",
+     "scene_line": "You are the depth beneath their demand to choose.",
+     "asks": [
+      "How do I hold their picture without losing mine?",
+      "Can I be both their child and my own person?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.0255,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": null,
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1319,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu speaks to Nidagha about how a free person lives. Ribhu says that a free person simply does the work that is in front of them, and they see friend and enemy with the same clear eye. They let go of wanting and not wanting. They say what is agreeable to everyone, they speak gently when asked, and they read the hearts of others. Because of this, such a person does not sink into the world's troubles.",
+     "for_you": "You are being asked to choose between two parts of your life, and that demand is making you feel less than you are. You can do the work in front of you today by treating your own heart with the same fairness you give a stranger.",
+     "try_today": "Do one small task that belongs only to you, without asking for anyone's approval.",
+     "scene_line": "You are in your own quiet room, facing the work that is yours alone.",
+     "asks": [
+      "How can I do my work without asking for their approval?",
+      "How do I speak gently when they are not listening?",
+      "How do I read my own heart when they demand a choice?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.parvati_tapas",
+     "title": "Parvati holds to her choice",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Parvati",
+      "Narada",
+      "the Seven Sages",
+      "Mena",
+      "Himavan"
+     ],
+     "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+     "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+     "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.76.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 76",
+      "family": "rcm",
+      "speaker": "Parvati",
+      "listener": "the seven sages",
+      "setting": "Parvati answers the sages who mock her resolve to win Shiva through years of austerity.",
+      "sanskrit": "सत्य कहेहु गिरिभव तनु एहा। हठ न छूट छूटै बरु देहा॥ कनकउ पुनि पषान तें होई। जारेहुँ सहजु न परिहर सोई ॥",
+      "line": "Gold comes from stone, and even in fire it stays gold. Hold to what you are.",
+      "translation": "You speak truly: this body was born of a mountain, so its resolve will not break, even if the body does. Gold too is born of stone, and even in fire it does not give up its nature.",
+      "words": [
+       {
+        "sa": "सत्य",
+        "en": "truth"
+       },
+       {
+        "sa": "कहेहु",
+        "en": "you said"
+       },
+       {
+        "sa": "गिरिभव",
+        "en": "mountain-born"
+       },
+       {
+        "sa": "तनु",
+        "en": "body"
+       },
+       {
+        "sa": "एहा",
+        "en": "this"
+       },
+       {
+        "sa": "हठ",
+        "en": "stubbornness"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "छूट",
+        "en": "leaves"
+       },
+       {
+        "sa": "छूटै",
+        "en": "will leave"
+       },
+       {
+        "sa": "बरु",
+        "en": "rather"
+       },
+       {
+        "sa": "देहा",
+        "en": "body"
+       },
+       {
+        "sa": "कनकउ",
+        "en": "gold"
+       },
+       {
+        "sa": "पुनि",
+        "en": "again"
+       },
+       {
+        "sa": "पषान",
+        "en": "stone"
+       },
+       {
+        "sa": "तें",
+        "en": "from"
+       },
+       {
+        "sa": "होई",
+        "en": "comes"
+       },
+       {
+        "sa": "जारेहुँ",
+        "en": "even when burned"
+       },
+       {
+        "sa": "सहजु",
+        "en": "naturally"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "परिहर",
+        "en": "forsake"
+       },
+       {
+        "sa": "सोई",
+        "en": "that"
+       }
+      ],
+      "why": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+      "misuse": "Steadiness is not stubbornness; keep checking that the goal is still worth it.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.parvati_tapas",
+       "title": "Parvati holds to her choice",
+       "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+       "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+       "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The sages listed every flaw in the man Parvati had chosen",
+     "teaser": "The sages listed every flaw in the man Parvati had chosen",
+     "for_you": "You are holding to a choice that the world calls foolish, and that takes a kind of courage. The sages came to Parvati with every reason to doubt her, and she saw them clearly. She did not change her mind.",
+     "asks": [
+      "How do I hold my ground without breaking my family?",
+      "What is the difference between stubbornness and holding my truth?",
+      "How do I keep my heart steady when they keep testing it?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Who they see",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16419,
+   "total": 16421
+  },
+  "_ms": 16432
+ }
+}

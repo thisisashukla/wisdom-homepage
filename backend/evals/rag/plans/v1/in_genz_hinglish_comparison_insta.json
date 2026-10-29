@@ -1,0 +1,762 @@
+{
+ "situation": {
+  "id": "in_genz_hinglish_comparison_insta",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 9
+  },
+  "note": "insta khol ke sab ki goa trip, new car, internship dekhta hu aur lagta hai main zindagi me kuch nahi kar raha. phir 3 ghante scroll hi karta rehta hu",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Delhi)",
+  "lang": "hinglish",
+  "slices": [
+   "comparison",
+   "hinglish",
+   "lang:hinglish",
+   "phone"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restless and behind",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "From measuring your life against theirs to doing one small thing that is yours, so the mind can settle.",
+   "week_beats": {
+    "hook": "You recognise the restless measuring and the feeling of being behind, named plainly.",
+    "diagnose": "You see that the scroll is not the problem, the measuring is.",
+    "steady": "You hold that your own path, walked imperfectly, is enough.",
+    "act": "You try closing the app and doing one small thing that belongs to your own work.",
+    "story": "A young seeker who watched others and fell behind shows you what one small step looks like."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A student who cannot stop scrolling and feels he is not doing anything with his life while watching others on trips and with internships.",
+   "mirror": "You open the app and see what everyone else is doing, and the hours pass without your mind settling.",
+   "insight": "The scroll shows you what others have, and your mind measures your life against theirs and finds it empty.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.708,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 1.642,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.88,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind will not settle while the screen keeps showing you a life that looks fuller, and the restless feeling of being behind.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment that was already yours.",
+    "steady": "What is yours to build cannot be measured against what another has; your own path walked imperfectly is enough.",
+    "act": "Let the scroll go, and do one thing that belongs to your own work, one small step, and see where it leads.",
+    "story": "A young seeker who watched others and fell behind, then found his own step and began again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What you see is not yours",
+    "The measuring mind",
+    "One small step"
+   ],
+   "seat": "",
+   "life_context": "A student under twenty-five whose phone has become a window onto other lives; the scroll goes on for hours, and when it ends the mind is still racing, still behind.",
+   "details": [
+    "scrolls social media for three hours",
+    "sees others on trips and with internships",
+    "mind will not settle"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:34=0.9,17=0.8,22=0.7,92=0.5,35=0.9,2=0.3",
+    "week_same:92",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.70",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:repeat=1,short=1,soft_kept=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.9413,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless and turbulent, like the wind. He says it is stubborn and strong, and impossible to hold. Krishna does not tell him to fight it harder. He says practice and letting go will train it.",
+     "for_you": "Your mind is restless because it measures your life against others on the screen. Practice is not about forcing the scroll away. It is about letting go of the comparison for a few minutes and doing one small thing that is yours.",
+     "try_today": "Put the phone away and do one small task without checking it.",
+     "scene_line": "You are holding the restless mind, and the wind is still moving.",
+     "asks": [
+      "How do I stop the mind from measuring itself against others?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.7.117.chaupai.17",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi continues listing the diseases of the mind.",
+     "sanskrit": "ममता दादु कंडु इरषाई। हरष बिषाद गरह बहुताई॥ पर सुख देखि जरनि सोइ छई। कुष्ट दुष्टता मन कुटिलई ॥",
+     "line": "Envy is an itch. Burning at another's happiness is a wasting disease of the mind.",
+     "translation": "Possessiveness is ringworm and envy is the itch; the swings of elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy.",
+     "words": [],
+     "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.garuda_questions",
+      "title": "Garuda's seven questions",
+      "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+      "story_hook": "",
+      "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+     },
+     "score": 3.9812,
+     "beat": "diagnose",
+     "role_fit": 0.705,
+     "meaning": "Kakbhushundi tells Garuda that envy is an itch. It burns at another person's happiness and wastes the mind. He lists it among the diseases of the mind, like greed or anger. The point is to know these feelings by their true names. When you see envy as an itch, you see what it is doing to you. It is not a sign that you are failing. It is just a sickness the mind can catch.",
+     "for_you": "The scroll is not the wound. It is the mirror that shows you the itch. That burning is envy, and it is a disease of the mind.",
+     "try_today": "Notice when the scroll makes your chest tighten and name it envy.",
+     "scene_line": "You are in your own scroll, watching others, and envy is the itch.",
+     "asks": [
+      "Is envy the only thing I feel when I scroll?",
+      "How do I know when envy becomes a disease?",
+      "What do I do once I name the itch?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 4.0118,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is speaking to Arjuna, explaining how the wise move through the world. He says that a person who is content with what comes unasked, who stays beyond envy, and who is steady in both success and failure, remains free even while doing their work. This means you can keep going without being chained to the results, and you do not burn up watching what others get.",
+     "for_you": "Your mind is still racing from the scroll, comparing your empty screen to their full lives. The wise stay steady without needing the same trips or internships. You can walk your own path, imperfectly, and it is enough. Your part is enough.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "words": [
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "व्याप्तम्",
+       "en": "pervaded"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "विश्वं",
+       "en": "world"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "प्रोतं",
+       "en": "woven"
+      },
+      {
+       "sa": "यथार्थतः",
+       "en": "truly"
+      },
+      {
+       "sa": "शुद्धबुद्धस्वरूपः",
+       "en": "pure-consciousness-form"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "गमः",
+       "en": "go, be affected"
+      },
+      {
+       "sa": "क्षुद्रचित्तताम्",
+       "en": "by petty minds"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 2.8952,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka sits before the young sage Ashtavakra, asking how a person becomes truly free. Ashtavakra looks at the king and says the whole universe is strung on you like a thread, and by nature you are pure awareness. You do not have to shrink into the smallness of your thoughts, your roles, or your worries. You are the wide space in which the storm of envy and restlessness moves, not the storm itself. Freedom is not something you earn by doing more.",
+     "for_you": "You are not the empty space between their trips and your desk. You are the awareness that watches the scroll and feels the ache.",
+     "try_today": null,
+     "scene_line": "You are the awareness watching the screen, not the person on it.",
+     "asks": [
+      "How do I stop shrinking when I see others doing more?",
+      "Can I hold my own path without measuring it against theirs?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.4096,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna is speaking to Arjuna, who is caught between two armies and unsure if he should fight or flee. Arjuna sees others doing their part and feels his own role is wrong. Krishna tells him that it is better to walk your own path, even with mistakes, than to copy another's life perfectly. Borrowed lives carry a hidden fear. The point is that your own duty, done with your own hands, is safer and truer than a borrowed one.",
+     "for_you": "You scroll through other people's paths and feel yours is empty. But your own work, even if it is small and messy right now, is the only one that fits you. Close the app and do one thing that belongs only to your own study.",
+     "try_today": "Close the app and do one small thing for your own study.",
+     "scene_line": "You are on the edge of your own path, hesitating to take the first step.",
+     "asks": [
+      "What is one small thing that is truly my own work today?",
+      "How do I stop measuring my progress against theirs?",
+      "What does my own path look like if I ignore the others?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 1.9482,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader about how the good behave. He lists ten ways to live with others. Cut craving. Forgive. Drop arrogance. Take no delight in wrong. Speak the truth. Follow the path of the good. Serve the wise. Honour those worthy of honour. Win over even your enemies. Show courtesy. Guard your good name. Be kind to those in pain. He says this is how the good behave. Real ornaments are listening, giving and helping. Success should make you bow lower.",
+     "for_you": "You sit in your room and scroll through lives that look brighter than your own. That comparison is a hunger that never fills. The verse asks you to look at what you can give instead of what you lack.",
+     "try_today": "Close the app and write one paragraph of your own work.",
+     "scene_line": "You are in your own room, the screen goes dark, and the work begins.",
+     "asks": [
+      "How do I stop craving what I see online?",
+      "What is my own work that I can do today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.vishvamitra_menaka",
+     "title": "Ten years gone: Vishvamitra and Menaka",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Vishvamitra",
+      "Menaka",
+      "Brahma"
+     ],
+     "story_hook": "He looked up one morning and realised ten years had gone by.",
+     "summary": "Deep into his effort to transform himself, Vishvamitra falls for the nymph Menaka and ten years pass like a day. When he wakes up to it, he is ashamed, lets her go kindly rather than blaming her, and starts again. Brahma tells him he is not there yet: he must first master his senses.",
+     "lesson": "Lost years are not the end; notice, stop blaming, and begin again.",
+     "matched": [
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.63.9",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 63.9",
+      "family": "vr",
+      "speaker": "Vishvamitra",
+      "listener": "himself",
+      "setting": "After ten years with the celestial Menaka, Vishvamitra wakes up to how far he drifted from his goal.",
+      "sanskrit": "अहोरात्रापदेशेन गताः संवत्सरा दश ॥ काममोहाभिभूतस्य विघ्नोऽयं प्रत्युपस्थितः।",
+      "line": "Ten years passed like a single day. Distraction rarely feels like lost time while it is happening.",
+      "translation": "Ten years went by as if they were a single day and night. Lost in desire, this obstacle came and I did not see it.",
+      "words": [
+       {
+        "sa": "अहोरात्रापदेशेन",
+        "en": "under the pretext of day and night"
+       },
+       {
+        "sa": "गताः",
+        "en": "passed"
+       },
+       {
+        "sa": "संवत्सराः",
+        "en": "years"
+       },
+       {
+        "sa": "दश",
+        "en": "ten"
+       },
+       {
+        "sa": "काममोहाभिभूतस्य",
+        "en": "of one overcome by desire and delusion"
+       },
+       {
+        "sa": "विघ्नः",
+        "en": "obstacle"
+       },
+       {
+        "sa": "अयम्",
+        "en": "this"
+       },
+       {
+        "sa": "समुपस्थितः",
+        "en": "has arisen"
+       }
+      ],
+      "why": "Lost years are not the end; notice, stop blaming, and begin again.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "phone_addiction",
+        "label": "I'm addicted to my phone"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.vishvamitra_menaka",
+       "title": "Ten years gone: Vishvamitra and Menaka",
+       "summary": "Deep into his effort to transform himself, Vishvamitra falls for the nymph Menaka and ten years pass like a day. When he wakes up to it, he is ashamed, lets her go kindly rather than blaming her, and starts again. Brahma tells him he is not there yet: he must first master his senses.",
+       "story_hook": "He looked up one morning and realised ten years had gone by.",
+       "lesson": "Lost years are not the end; notice, stop blaming, and begin again."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vishvamitra looked up one morning and ten years had gone",
+     "teaser": "Vishvamitra looked up one morning and ten years had gone",
+     "for_you": "Vishvamitra let ten years vanish into one day of distraction. You are not lost, only paused. Notice the scroll, set it down, and do one small thing that is yours.",
+     "asks": [
+      "What is one small thing I can do today?",
+      "How do I start again without shame?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What you see is not yours",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 16249,
+   "total": 16251
+  },
+  "_ms": 16263
+ }
+}

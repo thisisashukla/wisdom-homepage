@@ -1,0 +1,97 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.7,
+ "core_struggle": "Wants to stop anxiety medicine and use only meditation and the Gita, but is torn between faith and the doctor's warning.",
+ "mechanism": "duty_conflict",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "restless_mind",
+   "weight": 1.456,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 1.26,
+   "source": "note"
+  },
+  {
+   "id": "doubt_faith",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.422,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You want to lay down the pills and trust the Gita instead, and your doctor is saying no.",
+ "queries": {
+  "hook": "The mind will not settle, and the question of whether to trust faith over medicine is making it worse.",
+  "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps you stuck between two authorities, and the unacted-on decision weighs more than the work.",
+  "steady": "Your duty is to be well; the means that steadies the mind are not the enemy of the mind that seeks steadiness.",
+  "act": "Speak to your doctor about what you are feeling, and practise the one meditation you can do today while you both decide.",
+  "story": "A seeker who was torn between two paths to wisdom, who learned that the path is not the enemy, but the refusal to walk it is."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Faith and medicine",
+  "The duty to be well",
+  "The one that steadies"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "restless and torn",
+ "bridge": "The doctor and the Gita are both asking you to hold your ground. What they disagree on is whether the ground is faith or medicine.",
+ "week_thesis": "The week moves from being torn between faith and medicine to a steadiness that holds both without choosing between them.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [
+  "bg"
+ ],
+ "people": [
+  "doctor",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the restlessness and the tornness between faith and medicine, named without judgement.",
+  "diagnose": "You see that the unacted-on decision between two authorities is what feeds the restlessness.",
+  "steady": "You hold that your duty is to be well, and the means that steadies the mind are not its enemy.",
+  "act": "You try speaking to your doctor and doing one meditation, letting both be part of the path.",
+  "story": "A seeker torn between two paths to wisdom shows you that the path is not the enemy, only the refusal to walk it."
+ },
+ "insight": "Your faith and your doctor both want you to be well. The question is whether they can both be right, and what it means to trust one without abandoning the other.",
+ "seat": "a working person with anxiety who is torn between faith and medicine",
+ "life_context": "A working person in their late twenties or early thirties with a restless mind and anxiety; they want to stop their help and rely only on meditation and the Gita, while their doctor says no.",
+ "details": [
+  "wants to stop anxiety medicine and use only meditation and the Gita",
+  "doctor says no",
+  "is torn between faith and medical advice",
+  "mind will not settle"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": []
+}

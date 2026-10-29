@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.65,
+ "core_struggle": "Has sent applications and is now making coffee while his friends land at top firms and his mother tells aunties he is exploring options.",
+ "mechanism": "comparison_envy",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "comparison",
+   "weight": 1.18,
+   "source": "note"
+  },
+  {
+   "id": "imposter",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "career_switch",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "layoff",
+   "weight": 0.445,
+   "source": "note"
+  }
+ ],
+ "mirror": "You sent two hundred applications, and now you make coffee while they tell your mother you're exploring options.",
+ "queries": {
+  "hook": "The shame of being where you are while everyone you know is somewhere else, and the replaying that keeps you from moving.",
+  "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+  "steady": "What is yours is yours; another's win does not make your path any less real or your effort any less yours.",
+  "act": "Measure your own path, not theirs; do one thing that is yours to do today and let the rest go.",
+  "story": "A young man who lost his way after a great fall, and had to rebuild from the work he could still do."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The gap",
+  "The sentence you keep writing",
+  "More than where you are"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and frozen",
+ "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+ "week_thesis": "The gap between where you are and where they are has a name, and the sentence you keep writing about yourself has an answer.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend",
+  "parent",
+  "family"
+ ],
+ "week_beats": {
+  "hook": "You recognise the shame and the replaying, named without judgement.",
+  "diagnose": "You see that measuring yourself against them is what keeps you frozen.",
+  "steady": "You hold that another's win does not make your path any less real.",
+  "act": "You try measuring your own path today, and doing one thing that is yours to do.",
+  "story": "A young man who lost his way after a great fall shows you how to rebuild from the work you can still do."
+ },
+ "insight": "Your friends' wins are real, but they are not the measure of your worth. What keeps you frozen is the sentence you keep writing about yourself.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "sent applications",
+  "friends at Goldman and Deloitte",
+  "making flat whites"
+ ],
+ "age": "u25",
+ "stages": [
+  "between"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "bridge:copied_example"
+ ]
+}

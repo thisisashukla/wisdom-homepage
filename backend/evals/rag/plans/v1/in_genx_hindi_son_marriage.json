@@ -1,0 +1,616 @@
+{
+ "situation": {
+  "id": "in_genx_hindi_son_marriage",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "बेटा कहता है शादी अपनी पसंद से करेगा, हमसे पूछेगा भी नहीं। रिश्तेदार ताने मारते हैं। मैं माँ होकर भी उससे बात नहीं कर पा रही।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Patna)",
+  "lang": "hindi",
+  "slices": [
+   "family",
+   "hindi",
+   "lang:hindi",
+   "parenting"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "hurt and powerless",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "Seven days from the silence and the taunts to finding the words that can reach him, and the peace that does not depend on his answer.",
+   "week_beats": {
+    "hook": "You recognise the silence and the taunts, named without blame.",
+    "diagnose": "You see that the relatives' taunts and the son's silence are not your fault, and that the wound is real.",
+    "steady": "You hold that your love for him is not the marriage he chooses, and that praise and blame come and go.",
+    "act": "You try letting the relatives' words go, and speak to your son about the silence, not the choice.",
+    "story": "A mother who could not reach her son through silence shows you what words can do when they are spoken from love, not demand."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "My teenager won't listen to me",
+   "mirror": "Your son refuses to marry your choice, and you feel something doesn't sit right.",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 1.75,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.383,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.2,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The silence between a mother and her son over the one thing that matters, and the shame of being taunted by relatives for a bond that is breaking.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Praise and blame from outside come and go; what is yours is the love you hold for him, not the marriage he chooses.",
+    "act": "Let the relatives' words go, and speak to your son not about the choice but about the silence between you.",
+    "story": "A mother whose son would not speak to her, and who found the words to reach him through the silence."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The silence between mother and son",
+    "Whose story it is",
+    "More than the marriage"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "relatives are taunting them about it"
+   ],
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:34=0.6,2=0.6,179=0.6,17=0.6,23=0.8,158=0.0",
+    "week_same:179",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.62",
+    "dropped:repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.5597,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, stormy, and stubborn, and that holding it is as hard as holding the wind. Krishna agrees, and says that practice and letting go are what train it.",
+     "for_you": "The silence from your teenager and the taunts from relatives sit on your skin like a constant draft. You are trying to hold the picture of who they were meant to be, and it keeps slipping.",
+     "try_today": "Notice when you reach for the image of them and find only air.",
+     "scene_line": "You stand in the kitchen with the wind of their silence in your hands.",
+     "asks": [
+      "How do I stop holding the picture of who they are meant to be?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.90.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 90",
+     "family": "rcm",
+     "speaker": "Lakshman",
+     "listener": "Nishad Guha",
+     "setting": "Lakshman, keeping watch at night, to Guha who blames Kaikeyi for Ram sleeping on the ground.",
+     "sanskrit": "बोले लखन मधुर मृदु बानी। ग्यान बिराग भगति रस सानी॥ काहु न कोउ सुख दुख कर दाता। निज कृत करम भोग सबु भ्राता ॥",
+     "line": "No one else is the giver of your joy or sorrow. You live out the fruit of your own actions.",
+     "translation": "Then Lakshman spoke in a sweet, gentle voice, steeped in knowledge, detachment and devotion: \"No one is the giver of another's joy or sorrow, brother. Everyone lives out the fruit of their own actions.\"",
+     "words": [
+      {
+       "sa": "बोले",
+       "en": "spoke) लखन (Lakshman) मधुर (sweet) मृदु (gentle) बानी (speech"
+      },
+      {
+       "sa": "ग्यान",
+       "en": "wisdom) बिराग (detachment) भगति (devotion) रस (essence) सानी (filled"
+      },
+      {
+       "sa": "काहु",
+       "en": "anyone) न (not) कोउ (anyone) सुख (pleasure) दुख (pain) कर (do) दाता (giver"
+      }
+     ],
+     "why": "Before blaming someone for your pain, look at the whole chain of causes, including yourself.",
+     "misuse": "Not \"you deserve your suffering\"; it is about not handing your peace to others.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.nishad_lakshman",
+      "title": "Lakshman and Guha by the sleeping Ram",
+      "summary": "On the first night of exile, Guha the boatmen's chief sees Ram and Sita sleeping on grass and weeps with anger at Kaikeyi. Lakshman, keeping watch, tells him no one gives us joy or sorrow; we live out our own actions, so don't blame anyone needlessly.",
+      "story_hook": "",
+      "lesson": "Before blaming someone for your pain, look at the whole chain of causes, including yourself."
+     },
+     "score": 2.6538,
+     "beat": "diagnose",
+     "role_fit": 0.596,
+     "meaning": "Lakshman, keeping watch at night, speaks to Guha, who blames Kaikeyi for Ram sleeping on the ground. Lakshman tells him that no one else is the giver of your joy or sorrow. Everyone lives out the fruit of their own actions. Before blaming someone for your pain, look at the whole chain of causes, including yourself.",
+     "for_you": "The taunts from your relatives and your teenager's silence are not your fault to fix. Your peace is not a prize they can take away. You can look at the whole chain of causes without blaming yourself. You are allowed to feel the wound and still hold your own ground.",
+     "try_today": "Notice one moment today when you feel their silence and do not let it move you.",
+     "scene_line": "You stand by the sleeping Ram while Guha weeps, and you speak the truth about what causes joy and sorrow.",
+     "asks": [
+      "How do I stop letting their words decide my mood?",
+      "Where does my peace live if not in their hands?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.105",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 105",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on action.",
+     "sanskrit": "अप्रियवचनदरिद्रैः प्रियवचनाढ्यैः स्वदारपरितुष्टैः । परपरिवादनिवृत्तैः क्वचित्क्वचिन्मण्डिता वसुधा ॥",
+     "line": "The world is lit, here and there, by people poor in harsh words and rich in kind ones.",
+     "translation": "Only here and there is the earth adorned by people poor in harsh words and rich in kind ones, content with their own spouses, who keep away from speaking ill of others.",
+     "words": [],
+     "why": "Your actions are the one thing fate itself must answer to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.karma",
+      "title": "Nitishatakam: On action",
+      "summary": "The answer to the fate section: even fate only delivers the fruit of actions, so bow to action itself. Weigh outcomes before rash deeds, keep steady under humiliation, and speak kindly. The closing verses are miscellaneous maxims in some editions.",
+      "story_hook": "",
+      "lesson": "Your actions are the one thing fate itself must answer to."
+     },
+     "score": 2.8921,
+     "beat": "steady",
+     "role_fit": 0.385,
+     "meaning": "Bhartrihari speaks to you from a quiet place. He sees you sitting with the weight of others. He says the world is lit, here and there, by people poor in harsh words and rich in kind ones. These people are content with their own spouses, and they keep away from speaking ill of others. He is telling you that your actions are the one thing fate itself must answer to. Your part is to be one of these people. Your part is to speak kindly and to keep your own house in order.",
+     "for_you": "Your love for your teenager is not the marriage he chooses, and the taunts from your relatives are not the verdict on your life. You can be the one rich in kind words, even when the room is full of harsh ones. Choose the kind word.",
+     "try_today": "Say one kind word to your teenager that asks nothing of them.",
+     "scene_line": "You sit in the quiet of your own room while others fill the house with noise.",
+     "asks": [
+      "How do I keep my words kind when they are not?",
+      "What is my part when they will not listen?",
+      "Can I be at peace if they keep taunting me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 2.7606,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is giving rules to a renunciant who has left the world behind. The teacher tells this person not to exhaust the body by running after pleasure or running away from pain. Then the teacher gives a simple rule for the mind. When you are praised, do not swell with pride. When you are blamed, do not curse the one who blamed you. The teacher is saying that praise and blame are just two sides of the same passing wind. You could not let either one grip you or throw you off balance.",
+     "for_you": "You are hearing the taunts from relatives and feeling the sting of your teenager's silence. Both are heavy. The teacher is saying that praise and blame are like weather. They move through, but they do not own you.",
+     "try_today": "Notice the sting of a taunt or a cold shoulder and let it pass through you like wind.",
+     "scene_line": "You sit in the quiet of your home, praised by no one, blamed by many.",
+     "asks": [
+      "How do I stop the taunts from settling in my bones?",
+      "Can I hold my love without needing his answer?",
+      "What does it mean to not curse the one who blames me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.22.23",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 22.23",
+     "family": "vr",
+     "speaker": "Vali",
+     "listener": "Angada",
+     "setting": "Dying, Vali advises his young son Angada how to conduct himself at his uncle Sugriva's court.",
+     "sanskrit": "न चातिप्रणयः कार्यः कर्तव्योऽप्रणयश्च ते। उभयं हि महादोषं तस्मादन्तरदृग्भव॥",
+     "line": "Don't be too familiar, and don't be cold. Both are mistakes; find the middle.",
+     "translation": "Do not be too familiar, and do not be distant either; both are serious mistakes. So keep a sense of the middle.",
+     "words": [],
+     "why": "Rivalry seems huge until the end; then only the relationship matters.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.vali_last_words",
+      "title": "Vali's last words",
+      "summary": "Struck down by Ram's arrow during the duel, Vali rebukes Ram, then makes his peace. To Sugriva he says: don't hold my faults against me; we could not have both brotherhood and kingdom. He entrusts his son to his brother and tells Angada how to live.",
+      "story_hook": "Lying on the ground, the brother who had driven him out asked him for forgiveness.",
+      "lesson": "Rivalry seems huge until the end; then only the relationship matters."
+     },
+     "score": 3.0949,
+     "beat": "act",
+     "role_fit": 0.889,
+     "meaning": "Vali is dying, struck down by an arrow in a duel. He speaks to his young son Angada about how to survive at his uncle Sugriva's court. Vali warns Angada not to be too familiar with Sugriva, and not to be cold. Both are mistakes. He tells Angada to keep a sense of the middle. Vali knows that rivalry seems huge until the end, but then only the relationship matters.",
+     "for_you": "The taunts from relatives are a storm outside your door right now. Vali's warning to Angada about the middle ground is not about letting anyone walk over you. It is about knowing when to let the noise go and when to hold your ground.",
+     "try_today": "Let one taunt from a relative go without a reply.",
+     "scene_line": "You stand in your own court, learning the middle way with your son.",
+     "asks": [
+      "How do I find the middle when everyone is pushing me to a side?",
+      "Can I let the taunts pass without letting them land?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.26",
+     "ref": "Bhagavad Gita 3.26",
+     "ref_iast": "Bhagavad Gītā 3.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम् । जोषयेत्सर्वकर्माणि विद्वान् युक्तः समाचरन् ॥",
+     "line": "Don't unsettle people who are still learning by doing. Do the work well alongside them and show them.",
+     "translation": "The wise should not unsettle the minds of the ignorant who are attached to action. Working steadily themselves, they should encourage others in all their work.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "बुद्धिभेदं",
+       "en": "confusion of understanding"
+      },
+      {
+       "sa": "जनयेत्",
+       "en": "should generate"
+      },
+      {
+       "sa": "अज्ञानां",
+       "en": "of the ignorant"
+      },
+      {
+       "sa": "कर्मसङ्गिनाम्",
+       "en": "of those attached to action"
+      },
+      {
+       "sa": "जोषयेत्",
+       "en": "should encourage"
+      },
+      {
+       "sa": "सर्वकर्माणि",
+       "en": "all actions"
+      },
+      {
+       "sa": "विद्वान्",
+       "en": "the wise one"
+      },
+      {
+       "sa": "युक्तः",
+       "en": "steadfast, disciplined"
+      },
+      {
+       "sa": "समाचरन्",
+       "en": "while acting properly"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "teen_conflict",
+       "label": "My teenager won't listen to me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.3324,
+     "beat": "act",
+     "role_fit": 0.65,
+     "meaning": "Krishna speaks to Arjuna as they stand on the battlefield, unsure how to act. The wise, Krishna says, must not unsettle the minds of those who are still learning. They should work steadily themselves and show others the way through action, not by forcing a path onto them. The point is clear: your own path, imperfectly walked, beats a borrowed one.",
+     "for_you": "You have been trying to borrow a path for your son, expecting him to walk the one you imagined, and that has left you both stuck. Let the relatives' taunts go. Show him the way by walking your own, steady and clear. Your own path beats a borrowed one.",
+     "try_today": "Do one small task in front of your son without asking him to join.",
+     "scene_line": "You are in the middle of the battlefield, watching your son choose his own way.",
+     "asks": [
+      "How do I show without telling?",
+      "Can I let their words go today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.kaushitaki.father_son",
+     "title": "Father and son go back to school",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Chitra Gangyayani",
+      "Shvetaketu",
+      "Uddalaka Aruni"
+     ],
+     "story_hook": "When his son came home stumped, Uddalaka did something unusual for a famous teacher.",
+     "summary": "A patron asks young Shvetaketu a question he cannot answer. He asks his father, who admits he does not know either and suggests they both go to the patron as students. Chitra welcomes Uddalaka for his humility.",
+     "lesson": "A parent who says 'let's learn together' teaches more than any answer.",
+     "matched": [
+      {
+       "id": "teen_conflict",
+       "label": "My teenager won't listen to me"
+      }
+     ],
+     "anchor": {
+      "id": "up_kaushitaki.3",
+      "ref": "Kaushitaki Upanishad 1.1",
+      "ref_iast": "Kauṣītaki Upaniṣad 1.1",
+      "family": "up",
+      "speaker": "Shvetaketu and Uddalaka Aruni",
+      "listener": "Each other",
+      "setting": "A patron asks Shvetaketu a question he cannot answer; he goes to his father.",
+      "sanskrit": "स होवाच नाहमेतद्वेद हन्ताचार्यं प्रच्छानीति स ह पितरमासाद्य पप्रच्छेतीति स होवाचाहमप्येतन्न वेद सदस्येव वयं स्वाध्यायमधीत्य हरामहे यन्नः परे ददत्येह्युभौ गमिष्याव इति ॥",
+      "line": "'I don't know either,' the father told his son. 'Let's both go and learn, as students.'",
+      "translation": "He said, 'I do not know this. Let me ask my teacher.' He went to his father and asked. The father said, 'I too do not know it. We have studied the Veda and take what others give us. Come, let us both go.'",
+      "words": [],
+      "why": "A parent who says 'let's learn together' teaches more than any answer.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "teen_conflict",
+        "label": "My teenager won't listen to me"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.kaushitaki.father_son",
+       "title": "Father and son go back to school",
+       "summary": "A patron asks young Shvetaketu a question he cannot answer. He asks his father, who admits he does not know either and suggests they both go to the patron as students. Chitra welcomes Uddalaka for his humility.",
+       "story_hook": "When his son came home stumped, Uddalaka did something unusual for a famous teacher.",
+       "lesson": "A parent who says 'let's learn together' teaches more than any answer."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A famous teacher wasn't too proud to go back to school with his son",
+     "teaser": "A famous teacher wasn't too proud to go back to school with his son",
+     "for_you": "Your teenager's silence is not a wall, but a locked door. You cannot force it open with your old keys. The texts show that a parent who admits they do not have the answer teaches more than any command. You can offer the same humility.",
+     "asks": [
+      "What if my child never wants to learn with me?",
+      "How do I let go of the picture I hold of them?",
+      "Can I still be the parent they need without the answer?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence between mother and son",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14485,
+   "total": 14488
+  },
+  "_ms": 14491
+ }
+}

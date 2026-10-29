@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.7,
+ "core_struggle": "In his second drop year, his scores are falling and his father's loan hangs over him; he is afraid of facing his father if he fails again.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "failure_project",
+   "weight": 1.4,
+   "source": "note"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.7,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "anger_outburst",
+   "weight": 0.385,
+   "source": "note"
+  }
+ ],
+ "mirror": "You keep going over the scores, and over the loan, as if the next failure is already decided.",
+ "queries": {
+  "hook": "The weight of a loan you did not ask for, falling scores, and the fear of facing the man who took it for you. My project or startup failed.",
+  "diagnose": "When a result is feared, the mind turns against itself; self-blame grows from believing the outcome alone measures your worth.",
+  "steady": "A result is something that happens, not who you are; no one who tries to do good is ever lost, and your father's love is not a loan.",
+  "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again with the next mock.",
+  "story": "A young man who fell short of the mark his father believed in, and had to face him, then find his footing again."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Carrying the loan",
+  "The verdict you keep passing",
+  "More than the score"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and afraid",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "",
+ "undisclosed": true,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the replaying, the loan, and the fear of facing your father.",
+  "steady": "You hold that a result is something that happens, not who you are."
+ },
+ "insight": "Every mock score you go down is a verdict you are passing on yourself before the result is in. That is the weight you cannot put down.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "second drop year for NEET",
+  "father took a loan",
+  "mock scores are falling"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "bridge:copied_example",
+  "week_thesis:missing"
+ ]
+}

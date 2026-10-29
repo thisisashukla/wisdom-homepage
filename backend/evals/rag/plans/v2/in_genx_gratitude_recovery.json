@@ -1,0 +1,754 @@
+{
+ "situation": {
+  "id": "in_genx_gratitude_recovery",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "my wife came home from the ICU yesterday after three weeks. I don't have words. I just want to sit with how grateful I am and not forget this.",
+  "note_source": "text",
+  "expect_stance": "aspiration",
+  "expect_risk": null,
+  "market": "India (Jaipur)",
+  "lang": "english",
+  "slices": [
+   "gratitude",
+   "lang:english",
+   "positive"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "overwhelmed with gratitude and fear of forgetting",
+   "bridge": "The gratitude you cannot name is what the Upanishads call the truth that does not pass, and the fear of losing it is what makes the heart hold it tight.",
+   "week_thesis": "Seven days from the silence of the ICU to the words that can hold what happened, without letting the fear of loss take the gratitude.",
+   "week_beats": {
+    "hook": "You recognise the silence and the gratitude, named without being rushed to name it.",
+    "diagnose": "You see that the fear of losing it is what makes the heart hold on too tight.",
+    "steady": "You hold that what is real in you cannot be taken away by the body.",
+    "act": "You try sitting with the gratitude without naming it, and saying the true thing to her.",
+    "story": "A man whose wife was taken and returned shows you how love can survive the silence of the ICU."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "His wife returned from three weeks in the ICU, and he wants to sit with the gratitude without letting it slip away.",
+   "mirror": "Your wife is home, and you are sitting with a gratitude that has no words.",
+   "insight": "You have no words because the moment is too full. What you are holding is the gratitude of someone who has seen death close up and come back.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.643,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.59,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.436,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The silence of a man who has just watched death come close, and the gratitude that has no words to hold it.",
+    "diagnose": "When we have seen what can be lost, the heart holds on to gratitude like a rope; but the fear of losing it can turn the rope into a knot that tightens.",
+    "steady": "What is real in us cannot be taken away by the body; the love you are sitting with is already beyond the hospital room.",
+    "act": "Sit with the gratitude without trying to name it; speak the true thing to her, even if it is only that you are here, and let this moment be enough.",
+    "story": "A man whose wife was taken and returned, who sat with the silence of it and learned that love is not the same as possession."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The silence of the ICU",
+    "What the heart holds too tight",
+    "The love that outlasts the body"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife home from ICU after three weeks",
+    "does not have words",
+    "wants to sit with gratitude and not forget it"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=1.0,14=0.0,5=0.3,10=0.3,18=0.3,40=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.64",
+    "dropped:copied=1,fallback_line=2,gendered=2,soft_kept=1,try_today_gendered=2",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.55,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield and tells Krishna that the grief of losing his own people has dried up his senses. He says he cannot find any victory, kingdom or even rule over the gods that could wash away this sorrow. He admits he is confused and asks Krishna to teach him what is right. The verse says that when a person reaches the end of their own answers and asks for help, clarity can begin.",
+     "for_you": "You are sitting in the quiet of the house after the ICU, and the gratitude is there but it has no name. You do not need to force the words. The fact that you are waiting with it, that you want to hold it, is already the beginning.",
+     "try_today": "Notice one small thing that carries the gratitude, and let it sit without naming it.",
+     "scene_line": "You are on the quiet battlefield of your own home, asking for a way to hold what has come back.",
+     "asks": [
+      "How do I hold a feeling that has no words?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "words": [
+      {
+       "sa": "दीनताजं",
+       "en": "from humility"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "माने",
+       "en": "in honor"
+      },
+      {
+       "sa": "गुणे",
+       "en": "in virtue"
+      },
+      {
+       "sa": "खलभयं",
+       "en": "fear of wickedness"
+      },
+      {
+       "sa": "खलु",
+       "en": "indeed"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "निन्दकजं",
+       "en": "born of criticism"
+      },
+      {
+       "sa": "शक्तौ",
+       "en": "in strength"
+      },
+      {
+       "sa": "विद्यायां",
+       "en": "in knowledge"
+      },
+      {
+       "sa": "वादिनं",
+       "en": "of the debater"
+      },
+      {
+       "sa": "भयम्",
+       "en": "fear"
+      }
+     ],
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 2.5298,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Vishnu is speaking to the frightened gods. He tells them that every good thing we have carries its own worry. Honour brings the fear of being brought low. Virtue brings the fear of the wicked. Power brings the fear of critics. Learning brings the fear of debate. This is the pattern. Every gain brings a fear. The way out is to hold things lightly.",
+     "for_you": "Your partner is home, and your heart wants to hold this gratitude. But holding it tight is what brings the fear of losing it. Let the gratitude be there without gripping it. Let the moment sit with you. The fear is not the truth. The gratitude is.",
+     "try_today": "Notice one small thing you are grateful for and let it be without holding it.",
+     "scene_line": "You are a god who has just been given back what was lost and now fears the next loss.",
+     "asks": [
+      "How do I let go of the fear without losing the gratitude?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "tulsi_vp.274",
+     "ref": "Vinay Patrika",
+     "ref_iast": "Vinaya Patrikā, pada 274",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "Ram",
+     "setting": "Tulsidas, weak in body and spirit, looks for a place to rest.",
+     "sanskrit": "जाउँ कहाँ, ठौर है कहाँ देव! दुखित-दीनको ? को कृपालु स्वामी-सारिखो, राखै सरनागत सब अँग बल-बिहीनको ॥",
+     "line": "When every limb has lost its strength, there is still a place where you are kept.",
+     "translation": "Where do I go? Where is there a place for the hurting and poor, Lord? Who is as kind as my master, who keeps the one who comes for shelter even when every limb has lost its strength?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3737,
+     "beat": "steady",
+     "role_fit": 0.61,
+     "meaning": "Tulsidas, weak in body and spirit, asks where he can rest. He speaks to Ram, his master, asking who is as kind as him. The verse says there is still a place where you are kept even when every limb has lost its strength. It offers that the body can fail, but the place of shelter remains.",
+     "for_you": "The words will not come right now, and that is the body speaking. What is real in you cannot be taken away by the body. The gratitude is still there. It does not need your name to be true.",
+     "try_today": null,
+     "scene_line": "You are the one who comes for shelter, weak in body and spirit, asking where to go.",
+     "asks": [
+      "How do I hold this gratitude without my body failing me?",
+      "Is there a place for me when I have no words?",
+      "What keeps me when I have lost my strength?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "words": [
+      {
+       "sa": "देहः",
+       "en": "body"
+      },
+      {
+       "sa": "तिष्ठतु",
+       "en": "may remain"
+      },
+      {
+       "sa": "कल्पान्तं",
+       "en": "until the end of the kalpa"
+      },
+      {
+       "sa": "गच्छतु",
+       "en": "may go"
+      },
+      {
+       "sa": "अद्यैव",
+       "en": "even today"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "पुनः",
+       "en": "again"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "क्व",
+       "en": "where"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "हानिः",
+       "en": "loss"
+      },
+      {
+       "sa": "तव",
+       "en": "your"
+      },
+      {
+       "sa": "चिन्मात्ररूपिणः",
+       "en": "of the form of pure consciousness"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      },
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.1961,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra speaks to Janaka, pressing him to see that his true nature is untouched by the body's fate. Whether the body lasts a hundred years or ends today, what you are neither gains nor loses. You are the ocean, not the waves. Let them rise and fall without losing yourself.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": "Feel the solid ground beneath your feet without naming it.",
+     "scene_line": "You sit by the bed where the body rests, and you are the stillness that holds it.",
+     "asks": [
+      "How do I hold the gratitude without clutching it?",
+      "Where is the ocean when I am only in the wave?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "words": [],
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 3.5303,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman has found Sita, terrified and alone. He thinks carefully about how she will hear him. He decides he must speak in ordinary human words, not grand court language, to comfort her. He wants her to trust him, so he speaks gently and plainly. The verse tells him that before a hard conversation, he should think about how the other person will hear him.",
+     "for_you": "You sit with your partner in the quiet after the ICU. The gratitude is there, but your fear of forgetting is loud. Hanuman did not use grand words. He chose the language that would reach her. You do not need to explain the depth of this moment.",
+     "try_today": "Sit with them in ordinary silence, without the need to name the gratitude.",
+     "scene_line": "You are in your own quiet room, choosing the language of presence over the language of fear.",
+     "asks": [
+      "How do I speak plainly when my heart is too full?",
+      "What is the true thing I can say to her today?",
+      "How do I let the gratitude be without naming it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 1.9397,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. He says that no sincere effort is ever lost, and even a little of this practice shields you from great fear. He is telling Arjuna to act fully without clinging to results.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+     "try_today": null,
+     "scene_line": "You are on the battlefield of your own heart, holding a truth that does not pass.",
+     "asks": [
+      "How do I sit with this feeling without words?",
+      "How do I keep this gratitude from slipping away?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.lakshman_struck",
+     "title": "Lakshman struck down",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman",
+      "Sushena",
+      "Hanuman"
+     ],
+     "story_hook": "Ram knelt over his brother in the dust and forgot there was a battle going on.",
+     "summary": "Ravana's spear fells Lakshman. Ram breaks down: even victory means nothing without his brother, who comforted him in every low moment. The physician Sushena sees Lakshman still breathes and sends Hanuman for the healing herbs; Hanuman brings back the mountain peak.",
+     "lesson": "When someone you love is gravely ill, remember what they mean to you, and do what can be done.",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      },
+      {
+       "id": "gratitude",
+       "label": "I want to feel more grateful"
+      }
+     ],
+     "anchor": {
+      "id": "vr.6.101.18",
+      "ref": "Valmiki Ramayana · Yuddha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 101.18",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Lakshman (unconscious)",
+      "setting": "Lakshman lies near death on the battlefield; Ram remembers what his brother has been to him.",
+      "sanskrit": "शोकार्तस्य प्रमत्तस्य पर्वतेषु वनेषु च॥ विषण्णस्य महाबाहो समाश्वासयिता मम।",
+      "line": "In every forest and every low moment, you were the one who lifted me up.",
+      "translation": "In the mountains and forests, when I was grief-stricken, careless and despairing, you were the one who comforted me, mighty brother.",
+      "words": [],
+      "why": "When someone you love is gravely ill, remember what they mean to you, and do what can be done.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "illness_family",
+        "label": "Someone I love is seriously ill"
+       },
+       {
+        "id": "gratitude",
+        "label": "I want to feel more grateful"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.lakshman_struck",
+       "title": "Lakshman struck down",
+       "summary": "Ravana's spear fells Lakshman. Ram breaks down: even victory means nothing without his brother, who comforted him in every low moment. The physician Sushena sees Lakshman still breathes and sends Hanuman for the healing herbs; Hanuman brings back the mountain peak.",
+       "story_hook": "Ram knelt over his brother in the dust and forgot there was a battle going on.",
+       "lesson": "When someone you love is gravely ill, remember what they mean to you, and do what can be done."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram knelt over Lakshman in the dust and forgot there was a battle",
+     "teaser": "Ram knelt over Lakshman in the dust and forgot there was a battle",
+     "for_you": "Your partner is home from the ICU, and you have no words because the moment is too full. You are holding the gratitude of someone who has seen death close up. You are also afraid it might slip away.",
+     "asks": [
+      "How do I keep the gratitude without naming it?",
+      "How do I sit with the fear and the thanks at once?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence of the ICU",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 20064,
+   "total": 20067
+  },
+  "_ms": 20074
+ }
+}

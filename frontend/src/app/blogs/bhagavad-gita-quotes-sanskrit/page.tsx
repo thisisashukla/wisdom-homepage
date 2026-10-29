@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@thisisashukla',
     title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning | Wisdom",
     description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Verses on karma, atman, bhakti and surrender.",
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
     canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
@@ -166,7 +166,7 @@ const schemas = [
     "description": "The most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), with IAST transliteration, Hindi meaning, and English translation. Verses on karma, atman, bhakti and surrender.",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-01",
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.jpg", "width": 1200, "height": 630 },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit" },
     "author": {
       "@type": "Person",

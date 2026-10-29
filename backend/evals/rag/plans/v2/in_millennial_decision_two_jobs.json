@@ -1,0 +1,738 @@
+{
+ "situation": {
+  "id": "in_millennial_decision_two_jobs",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "two offers. one pays 40% more in Bangalore, the other lets me stay near my parents. I've made pros and cons lists for two weeks. I keep changing my mind every hour.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Hyderabad)",
+  "lang": "english",
+  "slices": [
+   "decision",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn and exhausted",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "By the end of the week the lists have served their purpose, and the mind has made the choice it was meant to make.",
+   "week_beats": {
+    "hook": "You recognise the exhaustion of a choice that will not settle, named without blame.",
+    "diagnose": "You see that the lists are not the answer. The answer is in the doing, not the knowing.",
+    "steady": "You hold that the path walked imperfectly is enough.",
+    "act": "You try making the choice today and letting the result go.",
+    "story": "A young man who stood at a crossroads shows you that peace comes after the lists are closed."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A working professional with two offers, one with a % pay rise in Bangalore and one that keeps them near their parents, cannot stop replaying the choice and changes their mind every hour.",
+   "mirror": "Two offers, two weeks of lists, and every hour the answer changes.",
+   "insight": "You are caught between two paths and the lists are not the problem. The problem is that the mind is using the lists to avoid the one thing it cannot control: the result.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.822,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.845,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.379,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a choice that will not settle, and the exhaustion of replaying it every hour.",
+    "diagnose": "When the mind cannot hold the result, it keeps turning the choice over; doubt and delay feed each other, and the unacted-on decision weighs more than the work.",
+    "steady": "The path walked imperfectly is enough; no honest effort to find the right path is ever wasted.",
+    "act": "Do the work of choosing today, then let the result go; the choice itself is what you are meant to make.",
+    "story": "A young man who stood at a crossroads, made his choice, and found that the peace he sought came only after he let the lists go."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The lists are not the answer",
+    "What the choice costs",
+    "The one who walks the path"
+   ],
+   "seat": "a working professional caught between a better salary and staying close to their parents",
+   "life_context": "In their late twenties or early thirties, working and weighing a move to Bangalore for a % pay rise against staying near their parents; the lists are long and the mind keeps turning.",
+   "details": [
+    "two job offers on the table",
+    "one pays % more in Bangalore",
+    "the other lets them stay near their parents",
+    "has made pros and cons lists for two weeks"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=1.0,26=0.6,84=0.6,81=0.6,47=1.0,15=0.3",
+    "week_same:84",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.74",
+    "retried:1",
+    "dropped:copied=1,fallback_line=1,missing=2,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.8785,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield, and they have just confessed that their mind is restless, turbulent, and stubborn. They tell Krishna that holding it feels like trying to catch the wind. Krishna agrees that the mind is hard to hold, but he says that practice and letting go are what train it over time.",
+     "for_you": "You are caught between your parents and a better salary, and the lists you have made are not solving anything because the mind is using them to avoid the result. The mind is hard to hold, and it is exhausting you.",
+     "try_today": "Put the pen down and do nothing about the lists for one hour.",
+     "scene_line": "You stand between your parents and a better salary, and the lists feel like holding the wind.",
+     "asks": [
+      "How do I stop the lists from taking over my evening?",
+      "Why does my mind feel like it has to decide right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.135.26",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 135.26-27",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "सर्वेषां कर्मणां तात फले नित्यमनित्यता / अनित्यमिति जानन्तो न भवन्ति भवन्ति च अथ ये नैव कुर्वन्ति नैव जातु भवन्ति ते / ऐकगुण्यमनीहायामभावः कर्मणां फलम्",
+     "line": "Every result is uncertain. Some who try succeed and some don't. Those who never try never do.",
+     "translation": "The result of every action is uncertain. Knowing this, some people act and succeed, some do not. But those who never act never succeed at all.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.1581,
+     "beat": "diagnose",
+     "role_fit": 0.85,
+     "meaning": null,
+     "for_you": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "without virtue"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "performed"
+      },
+      {
+       "sa": "स्वभावनियतं",
+       "en": "fixed by nature"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "किल्बिषम्",
+       "en": "fault"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.7541,
+     "beat": "steady",
+     "role_fit": 0.245,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna is frozen by the cost of fighting. Krishna tells him that doing the work that belongs to him, even if he stumbles, is better than doing someone else's work perfectly. The point is that you could offer your own work, with all its flaws, as it is. You do not incur wrong by doing what is natural to you.",
+     "for_you": "You are standing in the middle of your two lists, waiting for the math to feel safe. But the mind is not looking for certainty. It is looking for a path that is yours. The salary in Bangalore is someone else's path, even if it is paid in rupees.",
+     "try_today": "Pick one small task from the path you are leaning toward and start it.",
+     "scene_line": "You are on the field, with the choice before you and the work in your hands.",
+     "asks": [
+      "What does my own path look like without the math?",
+      "How do I know if a flaw is just a flaw?",
+      "What work am I actually offering right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.62,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "In the final chapter of the text, Ashtavakra speaks to Janaka about the calm of the wise. He describes someone who does not beg for gain, nor grieve over loss. This steady mind remains cool and full, as if filled with nectar. The verse proposes that calm is not something you chase or find by moving to a new city. It is the way you hold ordinary life. You carry while the lists turn and the offers sit on the table, and you remain steady.",
+     "for_you": "The lists are not the problem. The problem is that your mind is using them to avoid the one thing it cannot control, the result. You are caught between two paths and the lists are not the problem.",
+     "try_today": "Notice one moment when the lists turn. Let the choice sit without adding to it.",
+     "scene_line": "You stand at the table with two offers, and the mind turns.",
+     "asks": [
+      "How do I stop the lists from turning?",
+      "What if I choose the wrong path?",
+      "Can I be steady while I wait?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.90",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 90",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on fate: the verse that keeps choice alive.",
+     "sanskrit": "कर्मायत्तं फलं पुंसां बुद्धिः कर्मानुसारिणी । तथापि सुधिया भाव्यं सुविचार्यैव कुर्वता ॥",
+     "line": "Much is shaped by past actions. Still, think carefully before you act.",
+     "translation": "The fruit a person reaps depends on past actions, and even the mind follows one's actions. Even so, a wise person should act only after careful thought.",
+     "words": [],
+     "why": "Not everything is in your hands; that is a reason to act wisely, not to stop acting.",
+     "misuse": "Karma is not a reason to stop choosing well; the verse's own point is the second line.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.daiva",
+      "title": "Nitishatakam: On fate",
+      "summary": "Bhartrihari voices the case for fate with fables (Indra defeated, the rat that fed a starving snake, the bald man under the palm). Even here he insists one should still act after careful thought.",
+      "story_hook": "",
+      "lesson": "Not everything is in your hands; that is a reason to act wisely, not to stop acting."
+     },
+     "score": 3.5111,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": "Bhartrihari speaks to you from a section on fate. He knows that past actions shape what comes next, and even the mind is pulled by what has already been set in motion. But he does not stop there. He says that even with this in mind, you could still think carefully before you act. The verse holds two truths at once. One is that some things are beyond your control. The other is that your next move still matters. The point is not to freeze because the outcome is uncertain.",
+     "for_you": "The lists have helped you see the shape of each offer, but they cannot hold the future. You are not trying to control what will happen in Bangalore or how your parents will feel. You are only choosing the path you can walk with care.",
+     "try_today": "Pick the offer that feels right and tell yourself the outcome is not yours to carry.",
+     "scene_line": "You sit with two offers and the past is already writing the next chapter.",
+     "asks": [
+      "How do I know if I have thought enough?",
+      "Can I act wisely if the result is already written?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 4.0959,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna tells Arjuna on the battlefield that his right is only to the work itself, never to its fruits. He should do the action fully and give up clinging to outcomes. The result belongs to the whole, not to the individual actor. Care for the work, aim for it, and then release your grip on what comes after.",
+     "for_you": "You have been holding the lists and the outcome together for two weeks. Let the lists serve the work of choosing, then set the result down. The choice is yours to make. The future it creates is not yours to hold. The mind stops turning once the work is done.",
+     "try_today": "Pick one offer, close the laptop, and stop weighing the result.",
+     "scene_line": "You stand at the edge of the battlefield, two armies waiting, and you are told to act and then let go.",
+     "asks": [
+      "How do I choose without owning the outcome?",
+      "Can the lists help me act, or only delay?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are not Janaka, but you are standing on the same roof, looking down at two cities. The Bangalore offer and the familiar home are both kingdoms you could rule. The lists have shown you the map, but the map is not the road.",
+     "asks": [
+      "How do I know when the lists have done their work?",
+      "Can I change my mind one last time and still be free?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The lists are not the answer",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18599,
+   "total": 18601
+  },
+  "_ms": 18605
+ }
+}

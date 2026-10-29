@@ -1,0 +1,612 @@
+{
+ "situation": {
+  "id": "in_boomer_retired_empty",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking",
+  "market": "India (Lucknow)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and searching",
+   "bridge": "The quiet house and the forwarded shlokas are what the Gita calls living only for what passes. It invites you to read what does not pass.",
+   "week_thesis": "Seven days from forwarded shlokas to reading the Gita as a living text, with one chapter and one question.",
+   "week_beats": {
+    "hook": "You recognise the hunger for something deeper than forwarded shlokas.",
+    "diagnose": "You see that meaning is missing when we live only for what passes.",
+    "steady": "You hold that what does not pass is the, and the Gita is a living text.",
+    "act": "You try reading one chapter slowly, without looking for a takeaway.",
+    "story": "A seeker who left the life he knew to find what does not pass shows you the way."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A widower with time on his hands wants to read the Gita properly, not just forwarded shlokas, after his wife left and the house went quiet.",
+   "mirror": "You have time now, and the house is quiet, and you want to read the Gita properly.",
+   "insight": "The house is quiet and the forwarded shlokas are not enough. What you are reaching for is a way to read the Gita that speaks to the silence.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 2.061,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.175,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.437,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet after loss, and the hunger to read something that lasts instead of what passes.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What does not pass is the; the texts invite you to read what is real, not what is forwarded.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A seeker who left the life he knew to find what does not pass, and found it in the stillness."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The quiet and the forwarded shlokas",
+    "What does not pass",
+    "The chapter you read alone"
+   ],
+   "seat": "a widower whose days have opened up and who wants to read the Gita properly",
+   "life_context": "",
+   "details": [
+    "wife has left",
+    "house is very quiet",
+    "children call on Sunday",
+    "has time now"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:26=0.6,2=0.0,6=0.6,1=0.6,250=0.6,29=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.56,max=0.63",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:blame=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.9.26",
+     "ref": "Bhagavad Gita 9.26",
+     "ref_iast": "Bhagavad Gītā 9.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on simple, wholehearted devotion.",
+     "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥",
+     "line": "A leaf, a flower, a fruit, a little water: whatever is offered with love, I accept.",
+     "translation": "Whoever offers me with devotion a leaf, a flower, a fruit or water, that offering of love from the pure-hearted I accept.",
+     "words": [
+      {
+       "sa": "पत्रम्",
+       "en": "leaf"
+      },
+      {
+       "sa": "पुष्पम्",
+       "en": "flower"
+      },
+      {
+       "sa": "फलम्",
+       "en": "fruit"
+      },
+      {
+       "sa": "तोयम्",
+       "en": "water"
+      },
+      {
+       "sa": "यः",
+       "en": "who"
+      },
+      {
+       "sa": "मे",
+       "en": "to me"
+      },
+      {
+       "sa": "भक्त्या",
+       "en": "with devotion"
+      },
+      {
+       "sa": "प्रयच्छति",
+       "en": "offers"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "भक्त्युपहृतम्",
+       "en": "devotion-offered"
+      },
+      {
+       "sa": "प्रयतात्मनः",
+       "en": "of the pure-hearted person"
+      }
+     ],
+     "why": "Small offerings given with love matter; no one is beyond turning around.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p09.6",
+      "title": "The glory of selfless devotion",
+      "summary": "A leaf, flower, fruit or water offered with love is accepted. Offer everything you do; the divine hates no one, and even a wrongdoer who turns wholeheartedly is counted good.",
+      "story_hook": "",
+      "lesson": "Small offerings given with love matter; no one is beyond turning around."
+     },
+     "score": 1.8865,
+     "beat": "hook",
+     "role_fit": 0.19,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. The war is ready to begin. Krishna says that a person should not offer elaborate rituals if their heart is not in them. A simple leaf, a flower, a fruit, or a little water given with pure love and devotion is enough for the divine to accept. The offering is not measured by its size but by the love behind it.",
+     "for_you": "The house is very quiet now. The forwarded shlokas you receive do not fill that space. You are reaching for the Gita as a living text because you want something that speaks to this silence. You are offering your time and your attention to this reading.",
+     "try_today": "Place one leaf, one flower, or a small fruit on a clean cloth.",
+     "scene_line": "You are standing in your quiet room with a book in your hand.",
+     "asks": [
+      "How do I offer my time to a text I have never read?",
+      "Can a simple act of reading replace the rituals I have known?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "tulsi_vp.201",
+     "ref": "Vinay Patrika, pada 201",
+     "ref_iast": "Vinaya Patrikā, pada 201",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas questions a life lived only for oneself.",
+     "sanskrit": "लाभ कहा मानुष-तनु पाये। काय-बचन-मन सपनेहुँ कबहुँक घटत न काज पराये॥",
+     "line": "What is a human life for, if we never help with someone else's load?",
+     "translation": "What is gained by getting a human body, if in body, word and mind, not even in a dream, one ever helps with someone else's work?",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 2.1783,
+     "beat": "diagnose",
+     "role_fit": 0.06,
+     "meaning": "Tulsidas asks the reader what a human life is for if it is spent only on oneself. He says that a body is only gained if it is used to help with someone else's work. This means a life lived only for passing things, like the quiet of an empty house, is not a life at all. The verse invites you to use your time to carry another's load.",
+     "for_you": "The forwarded shlokas sit in the quiet house, but they do not fill it. The Gita calls this living only for what passes. You have time now. You could use it to help with someone else's load, even a small one.",
+     "try_today": "Ask a neighbor or family member if they need a small task done this week.",
+     "scene_line": "You are in a quiet house, holding a question about what a human life is for.",
+     "asks": [
+      "What small load can I carry today?",
+      "Does my time now belong to myself or to others?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "words": [],
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 2.4341,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ram lies on the shore for three days, asking the ocean for a way across. No answer comes. He tells Lakshman that calm and kind words are being read as weakness. The verse says to be humble first, but when patience is taken for weakness, to act firmly and stop once you are heard. It is not a call to fight, but to know when quiet respect has failed and a clear action is needed to move forward.",
+     "for_you": "The forwarded shlokas and the quiet house are being read as a sign that your search is weak. Ram held on to what was his own, the right to cross. The silence did not mean you could let go of your life.",
+     "try_today": "Notice one moment today where you act firmly to honor your own need for connection.",
+     "scene_line": "You stand at the edge of the quiet, asking the silence for a way across.",
+     "asks": [
+      "How do I tell the difference between patience and being ignored?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.127.doha.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.127 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.127",
+     "family": "rcm",
+     "speaker": "Valmiki",
+     "listener": "Ram",
+     "setting": "Valmiki ends his list of the hearts Ram lives in.",
+     "sanskrit": "जाहि न चाहिअ कबहुँ कछु तुम्ह सन सहज सनेहु। बसहु निरंतर तासु मन सो राउर निज गेहु ॥",
+     "line": "The one who wants nothing from you and simply loves you: that heart is your own home.",
+     "translation": "One who never wants anything from you and simply loves you: live in that mind always; it is your own home.",
+     "words": [
+      {
+       "sa": "जाहि",
+       "en": "to whom"
+      },
+      {
+       "sa": "न चाहिअ",
+       "en": "is not wanted"
+      },
+      {
+       "sa": "कबहुँ",
+       "en": "ever"
+      },
+      {
+       "sa": "कछु",
+       "en": "anything"
+      },
+      {
+       "sa": "तुम्ह सन",
+       "en": "from you"
+      },
+      {
+       "sa": "सहज सनेहु",
+       "en": "natural love"
+      },
+      {
+       "sa": "बसहु",
+       "en": "dwell"
+      },
+      {
+       "sa": "निरंतर",
+       "en": "continually"
+      },
+      {
+       "sa": "तासु मन",
+       "en": "in that mind"
+      },
+      {
+       "sa": "सो",
+       "en": "that"
+      },
+      {
+       "sa": "राउर",
+       "en": "your"
+      },
+      {
+       "sa": "निज गेहु",
+       "en": "own home"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.0538,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Valmiki has just finished telling Ram about all the hearts where he lives: a mother, a brother, a wife. Now he says where Ram truly belongs. The one who never asks for anything from you, who simply loves you: live in that mind always. It is your own home. The verse asks you to make your home the love that gives without wanting anything back.",
+     "for_you": "The house is quiet now that your partner has left. You have time to read, and you want the Gita to mean more than the forwarded shlokas. This verse says your real home is the love that asks for nothing. Carry that with you.",
+     "try_today": "Notice one moment today where you love without asking for anything back.",
+     "scene_line": "You are the one who wants nothing, and the house is your own home.",
+     "asks": [
+      "How do I find a love that asks for nothing?",
+      "Can the Gita replace the love I have lost?",
+      "What does it mean to make my home inside my own mind?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8638,
+     "beat": "act",
+     "role_fit": 0.435,
+     "meaning": "Surdas speaks from a lifetime of calling out into the silence. He says that the Lord never once delayed, that is easy to reach. The verse proposes that remembering the divine is enough to win the divine, and that what is given is undying. It is a direct statement about the nature of grace, offered without the conditions you might expect from a busy life.",
+     "for_you": "The house is quiet now, and the forwarded verses are not enough. This verse proposes that what is undying is reached by simple remembrance. You do not need to solve the silence today.",
+     "try_today": "Read one chapter of the Gita slowly, without looking for a takeaway.",
+     "scene_line": "You are in a quiet house, offering your attention without asking for anything in return.",
+     "asks": [
+      "How do I read without looking for a takeaway?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.16.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 16.8",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the fourth gatekeeper: good company (satsanga).",
+     "sanskrit": "अपि कष्टतरां प्राप्तैर्दशां विवशतां गतैः । मनागपि न संत्याज्या मानवैः साधुसंगतिः ॥",
+     "line": "Even at your lowest and most helpless, don't let go of good company.",
+     "translation": "Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "words": [],
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.5897,
+     "beat": "act",
+     "role_fit": 0.634,
+     "meaning": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He says you only need to start with one, because each one strengthens the others. The verse says that even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little. You do not need to master all four at once. You only need to hold on to one. Good company is the one that opens the door to the rest.",
+     "for_you": "The forwarded shlokas are like a single gatekeeper. They keep the door open, but they do not ask you to walk through. Today, try opening the gate of clear inquiry instead. Let the chapter sit with you without looking for a takeaway. Just read what is there.",
+     "try_today": "Read one chapter of the Gita slowly, without looking for a takeaway.",
+     "scene_line": "You are at the fourth gate, choosing good company to enter the quiet.",
+     "asks": [
+      "How do I begin when I feel I have nothing else to do?",
+      "What does it mean to let go of something I never held?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "words": [],
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "You have spent a lifetime keeping the house running and the family close. Now the quiet is loud, and the forwarded shlokas do not fill it. Bhasa's honest admission shows that even a full life of doing is not enough if the mind never rests.",
+     "asks": [
+      "How do I rest when my mind has never stopped working?",
+      "Can a text teach me to be still, or only to do more?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet and the forwarded shlokas",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17628,
+   "total": 17630
+  },
+  "_ms": 17633
+ }
+}

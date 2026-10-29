@@ -1,0 +1,92 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.6,
+ "core_struggle": "A person is asking whether the final thought decides where the soul goes, and what the texts say about it.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "fear_death",
+   "weight": 0.93,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.38,
+   "source": "note"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.362,
+   "source": "note"
+  },
+  {
+   "id": "doubt_faith",
+   "weight": 0.36,
+   "source": "note"
+  },
+  {
+   "id": "no_meaning",
+   "weight": 0.36,
+   "source": "note"
+  }
+ ],
+ "mirror": "You are asking what the texts say about the last thought and where the soul goes.",
+ "queries": {
+  "hook": "The question about the final thought and where the soul goes, asked with a mind that wants to know what the texts say. I'm afraid of death.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+  "steady": "The self is not the body, not the mind, not the thought; it is what remains when all of that is gone.",
+  "act": "Read the texts, reflect on what they say, and let the question lead you to what does not pass away.",
+  "story": "A seeker who asked the same question, and was told by a teacher that what matters is not the last thought but the life that led to it."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "template",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The one question",
+  "What does not pass away",
+  "The life that leads to the end"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "curious and unsettled",
+ "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+ "week_thesis": "Seven days from a question about the final moment to an invitation into the texts that answer it.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [],
+ "week_beats": {
+  "hook": "You recognise the question as one the texts were written to answer.",
+  "diagnose": "You see that the texts say the final thought is shaped by what has been lived, not by a single moment.",
+  "steady": "You hold that the self is not the body, not the mind, not the thought, but what remains when all of that is gone.",
+  "act": "You try reading one passage and reflecting on what it says about what does not pass away.",
+  "story": "A seeker who asked the same question and was told by a teacher that what matters is the life that led to the end."
+ },
+ "insight": "The texts say the final thought matters, but not in the way you might fear. What matters is what has been lived, not what is remembered at the end.",
+ "seat": "a person asking what the texts say about the final thought and the soul's journey",
+ "life_context": "A person is asking a question about the final moment and the soul's destination, and wants to know what the texts say.",
+ "details": [
+  "asks about the final moment",
+  "wants to know what decides the soul's destination"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "stance:seeking_over_pain",
+  "hook:anchored_to_situation",
+  "diagnose:diagnose_not_causal"
+ ]
+}

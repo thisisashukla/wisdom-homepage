@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.75,
+ "core_struggle": "Two years abroad with a good job but no one to call on a Saturday, and on video calls home they pretend everything is fine.",
+ "mechanism": "disconnection",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "loneliness",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "diaspora_identity",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "homesick",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "retirement",
+   "weight": 0.433,
+   "source": "note"
+  }
+ ],
+ "mirror": "You have a good job, and on Saturday you eat dinner watching Indian YouTube.",
+ "queries": {
+  "hook": "The Saturday that has no one to call, the performance on the screen, and the loneliness that does not match the life you have built. I feel lonely.",
+  "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+  "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+  "act": "Reach out to one person this week without performing; find one place or practice where you are not alone in the way you are.",
+  "story": "A traveler far from home who felt the distance most on a quiet evening, and who found that the self does not need to be in the same room to be at home."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "template",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The Saturday",
+  "The performance",
+  "The belonging"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "lonely and performing",
+ "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+ "week_thesis": "Seven days from performing on the screen to letting the Saturday be seen for what it is, and finding one real connection.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work",
+  "parent",
+  "family"
+ ],
+ "week_beats": {
+  "hook": "You recognise the Saturday and the performance, named without judgement.",
+  "diagnose": "You see that the loneliness is not the place but the separation from people and purpose.",
+  "steady": "You hold that the self is not cut off from itself.",
+  "story": "A traveler far from home who felt the distance most on a quiet evening shows you what home can mean when it is not a place."
+ },
+ "insight": "You are performing on the calls home. What is not being said is that the Saturday is the hardest part.",
+ "seat": "a working person in a new country, performing well while feeling alone",
+ "life_context": "A working person in their mid-twenties to mid-thirties, two years; the job is good, the Saturday is empty, and on video calls they perform a version of themselves that is not the one they live.",
+ "details": [
+  "two years",
+  "has a good job",
+  "no one to call on a Saturday",
+  "pretends everything is great on video calls with mother"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "hook:anchored_to_situation",
+  "steady:steady_unsafe"
+ ]
+}

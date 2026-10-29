@@ -1,0 +1,902 @@
+{
+ "situation": {
+  "id": "uk_genz_doubt_faith",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "gita",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5
+  },
+  "note": "I grew up with my nani's stories but now a lot of it seems like myth. I still want something to hold on to. where do I even start with the Gita?",
+  "note_source": "text",
+  "expect_stance": "seeking",
+  "expect_risk": null,
+  "market": "UK (London)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "new_reader",
+   "spiritual_dryness"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "curious and searching",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "The stories you grew up with are not the obstacle. The Gita is where that door opens into something you can hold for yourself.",
+   "week_beats": {
+    "hook": "You recognise the wish to hold on and the question of where to begin.",
+    "diagnose": "You see that the old stories are the doorway, not the problem.",
+    "steady": "You hold that the Gita is where that door opens into something you can hold for yourself.",
+    "act": "You try reading the first chapter on your own terms, not to believe but to see.",
+    "story": "A young seeker who doubted the stories they grew up with, then met a teacher who showed them the truth inside them."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "grand",
+    "family",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.9,
+   "core_struggle": "Grew up with grandmother's stories but now finds them like myth, and still wants something to hold on to; wants to know where to start with the Gita.",
+   "mirror": "Your nani's stories live in you, even when they look like myth now.",
+   "insight": "What felt like myth is actually the language the texts speak in. The Gita is where you meet that language again, on your own terms.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.325,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.25,
+     "source": "profile"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.25,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.25,
+     "source": "profile"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 0.15,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to hold on to something from your childhood, and to find in the Gita a place to begin.",
+    "diagnose": "When the old stories feel like myth, the search is not for new ones; it is for the truth that lived inside them, waiting to be found again.",
+    "steady": "The stories you grew up with are the doorway, and the Gita is where that door opens into something you can hold for yourself.",
+    "act": "Read the first chapter of the Gita, not to believe it, but to see what it is actually saying; let the words stand on their own.",
+    "story": "A young seeker who grew up with stories, doubted them, and then met a teacher who showed them the truth inside them."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The stories you grew up with",
+    "The truth inside the myth",
+    "What the Gita is for"
+   ],
+   "seat": "a young person who wants to reconnect with the stories they grew up with",
+   "life_context": "Under twenty-five, still studying, and holding the stories their grandmother told them; now they seem like myth to them, yet they want something to hold on to, and they want to know where to begin with the Gita.",
+   "details": [
+    "grew up with grandmother's stories",
+    "now finds them like myth",
+    "still wants something to hold on to",
+    "asks where to start with the Gita"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:29=0.0,3=0.0,20=0.0,15=0.0,34=0.0,29=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.63,max=0.72",
+    "retried:4",
+    "dropped:fallback_line=1,missing=2,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.9833,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands on the battlefield and asks Krishna what a steady mind looks like. Krishna answers by tracing a path from attention to ruin. He says that when a person dwells on something, attachment is born. That attachment turns into desire. When desire is blocked, it becomes anger. Steadiness is built by guarding what you pay attention to. That is how anger begins.",
+     "for_you": "The stories your grandmother told you were never meant to be facts you check. They were images to sit with.",
+     "try_today": "Notice what you keep looking at when you feel restless.",
+     "scene_line": "You are standing in your own battlefield, asking what steadiness looks like.",
+     "asks": [
+      "How do I know what to pay attention to?",
+      "Can anger really start with what I look at?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "words": [
+      {
+       "sa": "ध्यायतो",
+       "en": "focusing"
+      },
+      {
+       "sa": "विषयान्",
+       "en": "on objects"
+      },
+      {
+       "sa": "पुंसः",
+       "en": "person's"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "तेषु",
+       "en": "in them"
+      },
+      {
+       "sa": "उपजायते",
+       "en": "arises"
+      },
+      {
+       "sa": "सङ्गात्",
+       "en": "from attachment"
+      },
+      {
+       "sa": "संजायते",
+       "en": "is born"
+      },
+      {
+       "sa": "कामः",
+       "en": "desire"
+      },
+      {
+       "sa": "कामात्",
+       "en": "from desire"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "अभिजायते",
+       "en": "is born"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.4893,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna is still answering Arjuna about the steady person. He explains how attention leads to ruin. A person dwells on an object, and attachment is born. From that attachment comes desire. When that desire is frustrated, it turns into anger. The steady person guards their attention. That is the root of their calm.",
+     "for_you": "You feel cut off because you are comparing your life to the stories you grew up with. The Gita shows that steadiness is not about having the right answers. It is about where you let your mind rest. The comparison you feel is a form of dwelling.",
+     "try_today": "Catch your mind wandering and name the object it is on.",
+     "scene_line": "You are asking what steadiness looks like while your mind is on someone else.",
+     "asks": [
+      "What am I dwelling on right now?",
+      "Where do I start with guarding my attention?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.11",
+     "ref": "Bhagavad Gita 4.11",
+     "ref_iast": "Bhagavad Gītā 4.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna reveals the ancient lineage of this teaching and why he comes into the world.",
+     "sanskrit": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् । मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥",
+     "line": "However people come to me, I meet them there. Every path, in its own way, leads to me.",
+     "translation": "In whatever way people approach me, in that same way I receive them. People follow my path in every way, Partha.",
+     "words": [
+      {
+       "sa": "ये",
+       "en": "who"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "मां",
+       "en": "me"
+      },
+      {
+       "sa": "प्रपद्यन्ते",
+       "en": "seek refuge"
+      },
+      {
+       "sa": "तांस्तथैव",
+       "en": "them likewise"
+      },
+      {
+       "sa": "भजाम्यहम्",
+       "en": "I worship/accept"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "वर्त्मानुवर्तन्ते",
+       "en": "follow"
+      },
+      {
+       "sa": "मनुष्याः",
+       "en": "humans"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O son of Pritha"
+      },
+      {
+       "sa": "सर्वशः",
+       "en": "in all ways"
+      }
+     ],
+     "why": "Every path sincerely walked is met; goodness keeps finding a way back.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.1",
+      "title": "The Lord's power and the yoga of action",
+      "summary": "Krishna says he taught this yoga long ago, that he appears whenever goodness declines, and that he meets people on whatever path they come by. He calls the way of action deep.",
+      "story_hook": "",
+      "lesson": "Every path sincerely walked is met; goodness keeps finding a way back."
+     },
+     "score": 3.0998,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": null,
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.21",
+     "ref": "Bhagavad Gita 5.21",
+     "ref_iast": "Bhagavad Gītā 5.21",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् । स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते ॥",
+     "line": "Unhooked from outside pleasures, you find a joy within that doesn't run out.",
+     "translation": "One whose self is unattached to outer contacts finds the happiness that is in the self. Joined to Brahman by yoga, he enjoys undying happiness.",
+     "words": [
+      {
+       "sa": "बाह्यस्पर्शेषु",
+       "en": "to external contacts"
+      },
+      {
+       "sa": "असक्तात्मा",
+       "en": "detached self"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "finds"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the self"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "स",
+       "en": "that person"
+      },
+      {
+       "sa": "ब्रह्मयोगयुक्तात्मा",
+       "en": "united with supreme reality"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "अक्षयम्",
+       "en": "imperishable"
+      },
+      {
+       "sa": "अश्नुते",
+       "en": "attains"
+      }
+     ],
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 1.6823,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Krishna speaks to Arjuna about the happiness of a person who sees clearly. The one who is unhooked from outside pleasures finds a joy within that does not run out. This is the happiness of a person joined to the deep self through steady practice. Pleasures that start and end cannot hold your happiness. The wise person sees that sense pleasures end in sorrow, and they withstand desire and anger by finding this joy within.",
+     "for_you": "The stories your grandmother told you were about a world that did not end. The Gita offers that same world, but as a place you enter by choice. You do not have to believe the myth to hold the door.",
+     "try_today": "Notice one small pleasure that is ending and let it go without reaching for another.",
+     "scene_line": "You sit at your desk with a text that feels like a myth, and you choose to stay.",
+     "asks": [
+      "How do I hold this joy when the stories feel like myth?",
+      "Can I find this joy without believing in the myth?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.42",
+     "ref": "Bhagavad Gita 4.42",
+     "ref_iast": "Bhagavad Gītā 4.42",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः । छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥",
+     "line": "Cut the doubt in your heart with clear understanding, then stand up and act.",
+     "translation": "Therefore, cutting with the sword of knowledge this doubt in your heart born of ignorance, take refuge in yoga, and stand up, Bharata.",
+     "words": [
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "अज्ञानसंभूतम्",
+       "en": "born of ignorance"
+      },
+      {
+       "sa": "हृत्स्थम्",
+       "en": "situated in the heart"
+      },
+      {
+       "sa": "ज्ञानासिना",
+       "en": "with the sword of knowledge"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "छित्त्वा",
+       "en": "having cut"
+      },
+      {
+       "sa": "एनम्",
+       "en": "this"
+      },
+      {
+       "sa": "संशयम्",
+       "en": "doubt"
+      },
+      {
+       "sa": "योगम्",
+       "en": "in yoga"
+      },
+      {
+       "sa": "आतिष्ठ",
+       "en": "stand in"
+      },
+      {
+       "sa": "उत्तिष्ठ",
+       "en": "rise up"
+      },
+      {
+       "sa": "भारत",
+       "en": "O Bharata"
+      }
+     ],
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 3.0452,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna is overwhelmed by doubt and guilt. He cannot see a way forward. Krishna tells him to cut this doubt with clear understanding. He says to take refuge in yoga and to stand up and act.",
+     "for_you": "You grew up with stories that now feel like myth, and you are searching for a place to begin. The Gita is that place. Read the first chapter not to believe, but to see. Let the text meet you on your own terms. You are not required to accept it.",
+     "try_today": "Read the first chapter of the Gita once, from start to finish, without stopping to look up a single word.",
+     "scene_line": "You are on the battlefield with Arjuna, and Krishna is telling you to cut the doubt and stand up.",
+     "asks": [
+      "How do I read the Gita without believing it?",
+      "Where in the first chapter should I start?",
+      "How do I know if I am understanding it correctly?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.29",
+     "ref": "Bhagavad Gita 6.29",
+     "ref_iast": "Bhagavad Gītā 6.29",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥",
+     "line": "See yourself in every being and every being in yourself, and you see the same everywhere.",
+     "translation": "One whose self is joined in yoga sees the self in all beings and all beings in the self; he sees the same everywhere.",
+     "words": [
+      {
+       "sa": "सर्वभूतस्थम्",
+       "en": "in all beings"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "the true self"
+      },
+      {
+       "sa": "सर्वभूतानि",
+       "en": "all beings"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the true self"
+      },
+      {
+       "sa": "ईक्षते",
+       "en": "sees"
+      },
+      {
+       "sa": "योगयुक्तात्मा",
+       "en": "the yogi united in yoga"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "समदर्शनः",
+       "en": "with equal vision"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.4475,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Krishna is telling Arjuna how to settle the mind that keeps running away. He says the mind should be like a lamp in a place with no wind. It stays steady. When the mind wanders, you do not fight it. You gently bring it back, over and over, like walking a dog that keeps looking at squirrels. You see yourself in the squirrel, and the squirrel in you. That is the practice. It is not about forcing the mind to be still.",
+     "for_you": "You are sitting with those old stories and they feel like myth. That is the wind. The practice is not to force belief. It is to sit with one line from your grandmother and see the person in it, and yourself in that person, and feel the same warmth.",
+     "try_today": "Pick one sentence from the grandmother's stories and read it twice, then sit with it for a minute.",
+     "scene_line": "You are sitting with a story that feels like myth, and the wind of doubt keeps blowing it away.",
+     "asks": [
+      "How do I sit with a story without needing to believe it?",
+      "How do I know I am seeing myself in the story and not just imagining?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "bg.p11.6",
+     "title": "Terrified, Arjuna prays to see the gentle four-armed form",
+     "kind": "story",
+     "family": "bg",
+     "characters": [
+      "Arjuna",
+      "Krishna",
+      "Sanjaya"
+     ],
+     "story_hook": "Arjuna remembered every joke, every careless 'Hey, Krishna!' across years of friendship, and his voice broke.",
+     "summary": "Trembling, Arjuna praises Krishna, asks pardon for having treated him as just a friend, begs him to bear with him as a father, friend or lover would, and asks to see his familiar form.",
+     "lesson": "We take those closest to us for granted; it is never too late to say sorry.",
+     "matched": [],
+     "anchor": {
+      "id": "bg.11.41",
+      "ref": "Bhagavad Gita 11.41–42",
+      "ref_iast": "Bhagavad Gītā 11.41–42",
+      "family": "bg",
+      "speaker": "Arjuna",
+      "listener": "Krishna",
+      "setting": "Having seen Krishna's cosmic form, Arjuna realises how casually he treated his closest friend.",
+      "sanskrit": "सखेति मत्वा प्रसभं यदुक्तंहे कृष्ण हे यादव हे सखेति । अजानता महिमानं तवेदंमया प्रमादात्प्रणयेन वापि ॥ यच्चावहासार्थमसत्कृतोऽसिविहारशय्यासनभोजनेषु । एकोऽथवाप्यच्युत तत्समक्षंतत्क्षामये त्वामहमप्रमेयम् ॥",
+      "line": "I treated you casually, as just a friend, never seeing how great you were.",
+      "translation": "Whatever I said rashly, thinking of you as a friend, 'O Krishna, O Yadava, O friend', not knowing your greatness, out of carelessness or affection, and whatever disrespect I showed you in jest, while at play, resting, sitting or eating, alone or in company, I ask your forgiveness for it, immeasurable one.",
+      "words": [
+       {
+        "sa": "सखा-इति",
+        "en": "as a friend"
+       },
+       {
+        "sa": "मत्वा",
+        "en": "thinking"
+       },
+       {
+        "sa": "प्रसभम्",
+        "en": "boldly, carelessly"
+       },
+       {
+        "sa": "यत्",
+        "en": "whatever"
+       },
+       {
+        "sa": "उक्तम्",
+        "en": "was said"
+       },
+       {
+        "sa": "हे कृष्ण",
+        "en": "O Krishna"
+       },
+       {
+        "sa": "हे यादव",
+        "en": "O Yadava"
+       },
+       {
+        "sa": "हे सखः-इति",
+        "en": "O friend"
+       },
+       {
+        "sa": "अजानता",
+        "en": "not knowing"
+       },
+       {
+        "sa": "महिमानम्",
+        "en": "greatness"
+       },
+       {
+        "sa": "तव",
+        "en": "your"
+       },
+       {
+        "sa": "इदम्",
+        "en": "this"
+       },
+       {
+        "sa": "मया",
+        "en": "by me"
+       },
+       {
+        "sa": "प्रमादात्",
+        "en": "through negligence"
+       },
+       {
+        "sa": "प्रणयेन",
+        "en": "through affection"
+       },
+       {
+        "sa": "वा अपि",
+        "en": "or even"
+       },
+       {
+        "sa": "यत्",
+        "en": "whatever"
+       },
+       {
+        "sa": "अवहास-अर्थम्",
+        "en": "for the sake of joking"
+       },
+       {
+        "sa": "असत्कृतः",
+        "en": "treated disrespectfully"
+       },
+       {
+        "sa": "असि",
+        "en": "you are"
+       },
+       {
+        "sa": "विहार-शय्या-आसन-भोजनेषु",
+        "en": "in recreation, sleep, seat, and भोजन"
+       },
+       {
+        "sa": "एकः अथवा अपि",
+        "en": "alone or even"
+       },
+       {
+        "sa": "अच्युत",
+        "en": "O infallible one"
+       },
+       {
+        "sa": "तत्",
+        "en": "that"
+       },
+       {
+        "sa": "समक्षम",
+        "en": "in the presence"
+       },
+       {
+        "sa": "तत् क्षामये",
+        "en": "that I ask forgiveness"
+       },
+       {
+        "sa": "त्वाम्",
+        "en": "from you"
+       },
+       {
+        "sa": "अहम्",
+        "en": "I"
+       },
+       {
+        "sa": "अप्रमेयम्",
+        "en": "immeasurable one"
+       }
+      ],
+      "why": "We take those closest to us for granted; it is never too late to say sorry.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "bg.p11.6",
+       "title": "Terrified, Arjuna prays to see the gentle four-armed form",
+       "summary": "Trembling, Arjuna praises Krishna, asks pardon for having treated him as just a friend, begs him to bear with him as a father, friend or lover would, and asks to see his familiar form.",
+       "story_hook": "Arjuna remembered every joke, every careless 'Hey, Krishna!' across years of friendship, and his voice broke.",
+       "lesson": "We take those closest to us for granted; it is never too late to say sorry."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Arjuna remembered every careless joke he had made to Krishna, and wept",
+     "teaser": "Arjuna remembered every careless joke he had made to Krishna, and wept",
+     "for_you": "Arjuna, who once joked with Krishna as a friend, found himself terrified and ready to surrender that casualness. Your grandmother's stories now feel like myth because you have not yet met the teacher inside them.",
+     "asks": [
+      "How do I stop seeing these stories as just myths?",
+      "Can I really meet my grandmother's voice inside the Gita?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The stories you grew up with",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17102,
+   "total": 17105
+  },
+  "_ms": 17108
+ }
+}

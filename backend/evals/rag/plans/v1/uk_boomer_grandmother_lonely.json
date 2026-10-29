@@ -1,0 +1,786 @@
+{
+ "situation": {
+  "id": "uk_boomer_grandmother_lonely",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "market": "UK (Birmingham)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely and present",
+   "bridge": "The Ramayana you read each morning is not a book you open for answers. It is a companion you have chosen to keep, and the search is for what it keeps you company with.",
+   "week_thesis": "The Ramayana you already read is not a text to understand but a companion to keep. The week is about letting it be enough.",
+   "week_beats": {
+    "hook": "You recognise the morning reading as the one company you have chosen.",
+    "diagnose": "You see that the search is not for a new text, but for what the one you have already chosen is offering.",
+    "steady": "You hold that the company you seek is the one that stays when the phone goes silent.",
+    "act": "You try reading one verse as your only task for the day, and let it be enough.",
+    "story": "A woman who raised her children alone, found her only company in the Ramayana, and in that company found what she was searching for."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "A widowed retired mother seeks deeper meaning and company, finding it in the Ramayana after raising her children alone.",
+   "mirror": "On Sundays the house fills, and on other days the Ramayana is the one voice that stays with you.",
+   "insight": "You read the Ramayana because it is your only company. The search is not for a new text, but for what the one you have already chosen is offering.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.724,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A search that began with a book and has become the one company you ask for, the one voice that stays when the house is quiet.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass, and the Ramayana is the one thing that does not pass.",
+    "steady": "What you read in the morning is not a lesson to learn, but a presence to keep; the company you seek is the one that stays when the day is done.",
+    "act": "Read the Ramayana as you have been, and let the one verse that speaks to you that day be your only task.",
+    "story": "A woman who raised her children alone, found her only company in the Ramayana, and in that company found what she was searching for."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The one you already chose",
+    "What does not pass",
+    "The company that stays"
+   ],
+   "seat": "a widowed retired mother whose Sunday visits are filled with her children's phones",
+   "life_context": "In her later years and retired; her children visit on Sundays but stay on their phones, and the morning Ramayana is the one company she has chosen to keep.",
+   "details": [
+    "children are good but always on their phones",
+    "reads Ramayan in the morning",
+    "that reading is her only company"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:15=0.3,17=0.3,43=0.6,612=0.6,1=0.6,3=0.6",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.56,max=0.60",
+    "retried:6",
+    "dropped:fallback_lesson=1,missing=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.15.15",
+     "ref": "Bhagavad Gita 15.15",
+     "ref_iast": "Bhagavad Gītā 15.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on his power sustaining the world and dwelling in every heart.",
+     "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च । वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥",
+     "line": "I am seated in every heart. Memory, knowledge and their fading come from me.",
+     "translation": "I am seated in the hearts of all. From me come memory, knowledge and their loss. I alone am what is to be known by all the Vedas; I am the author of Vedanta and the knower of the Vedas.",
+     "words": [
+      {
+       "sa": "सर्वस्य",
+       "en": "of all"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "हृदि",
+       "en": "in the heart"
+      },
+      {
+       "sa": "सन्निविष्टः",
+       "en": "dwelling"
+      },
+      {
+       "sa": "मत्तः",
+       "en": "from Me"
+      },
+      {
+       "sa": "स्मृतिः",
+       "en": "memory"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "knowledge"
+      },
+      {
+       "sa": "अपोहनम्",
+       "en": "removal"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "वेदैः",
+       "en": "through the Vedas"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "सर्वैः",
+       "en": "all"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "वेद्यः",
+       "en": "to be known"
+      },
+      {
+       "sa": "वेदान्तकृत्",
+       "en": "maker of Vedanta"
+      },
+      {
+       "sa": "वेदविद्",
+       "en": "knower of the Vedas"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": "The sacred is seated in every heart.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p15.3",
+      "title": "The Supreme Lord and his power",
+      "summary": "Krishna is the light of sun and moon, the nourishment of plants, the digestive fire, and is seated in every heart.",
+      "story_hook": "",
+      "lesson": "The sacred is seated in every heart."
+     },
+     "score": 1.5868,
+     "beat": "hook",
+     "role_fit": 0.105,
+     "meaning": "Krishna speaks to Arjuna from the stillness of his own power. He tells him that he is seated in every heart. From him come memory, knowledge, and their fading. He alone is the truth known by all the Vedas, the author of Vedanta. The verse says the sacred is not far away. It is inside the chest where the heart beats. Memory and knowing come from that quiet seat. When they fade, they fade from there. The search is not for an outside answer. It is to know the one already seated within.",
+     "for_you": "The morning Ramayana is your chosen company. It is not just a story to read. It is the memory and knowing you have chosen to keep. The search is for what that quiet seat inside you is offering. Let the book be the companion.",
+     "try_today": "Before the Ramayana opens, sit with your hands still and feel the quiet seat behind your heart.",
+     "scene_line": "You are in your own quiet room, the one chosen seat where company is found.",
+     "asks": [
+      "How do I let the book be enough?",
+      "How do I sit with the quiet seat?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9152,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "Prajapati speaks to a student about the self that lives inside every heart. He says that when we sleep deeply, we enter a world within ourselves without knowing it. He compares this to people who walk over a buried treasure of gold every single day but never notice it is there. They do not find the gold because they are distracted by what seems more urgent. The teaching is that we carry the most valuable thing right in our own chest, yet we keep walking past it because we are looking outward.",
+     "for_you": "You sit with the Ramayana each morning, and your children sit with their screens in the afternoon. Both of you are walking over a hidden gold. You are not missing a new companion, but the one you already have. Your morning reading is not a duty to finish.",
+     "try_today": "When you open the Ramayana, do not look for a lesson.",
+     "scene_line": "You are walking again over a hidden gold, and the gold is your morning reading.",
+     "asks": [
+      "How do I stop looking for what is already here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.12",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 12",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Mockery of Giving Up Pleasures'.",
+     "sanskrit": "अवश्यं यातारश्चिरतरमुषित्वापि विषया वियोगे को भेदस्त्यजति न जनो यत्स्वयममून् । व्रजन्तः स्वातन्त्र्यादतुलपरितापाय मनसः स्वयं त्यक्ता ह्येते शमसुखमनन्तं विदधति ॥",
+     "line": "Every pleasure leaves someday. Released freely, it brings peace; torn away, it brings torment.",
+     "translation": "Pleasures will certainly leave, however long they stay with us. Then what difference is there in parting? Only that people do not let them go themselves. Leaving of their own accord, they bring the mind unequalled torment; given up by oneself, they bring endless peace.",
+     "words": [],
+     "why": "Let go before you are forced to, and stop calling relief happiness.",
+     "misuse": "About things and pleasures; not advice to leave people before they leave you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.vishaya",
+      "title": "Vairagyashatakam: The mockery of giving up pleasures",
+      "summary": "Pleasures will leave us anyway; letting them go freely brings peace, being dragged from them brings torment. We are worse than the moth, because we know the flame burns.",
+      "story_hook": "",
+      "lesson": "Let go before you are forced to, and stop calling relief happiness."
+     },
+     "score": 3.0301,
+     "beat": "steady",
+     "role_fit": 0.405,
+     "meaning": "Bhartrihari speaks to the reader from his own experience of loss. He says that every pleasure will certainly leave us, no matter how long it stays. The only difference between parting with something willingly and having it torn away is the mind's own resistance. When we release what must go, we find a quiet peace. When we cling and are forced to let go, we only bring ourselves endless torment. The point is to let go before the world takes it from you, and to stop mistaking forced relief for happiness.",
+     "for_you": "Your Ramayana is the pleasure you have chosen to hold. Your children's silence is not a theft, but a parting that is happening anyway.",
+     "try_today": "Sit with your Ramayana and let it be enough.",
+     "scene_line": "You sit with your chosen company while the world turns to its screens.",
+     "asks": [
+      "How do I know if I am letting go or just giving up?",
+      "How do I stop waiting for my children to leave?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.100",
+     "ref": "Ashtavakra Gita 18.100",
+     "ref_iast": "Aṣṭāvakra Gītā 18.100",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "न धावति जनाकीर्णं नारण्यमुपशान्तधीः । यथातथा यत्रतत्र सम एवावतिष्ठते ॥",
+     "line": "A calm mind doesn't need the crowd or the forest. It is the same wherever it is.",
+     "translation": "The calm mind does not run off to crowded places or to the forest. Whatever and wherever, it stays the same.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "धावति",
+       "en": "runs"
+      },
+      {
+       "sa": "जनाकीर्णं",
+       "en": "crowded with people"
+      },
+      {
+       "sa": "नारण्यम्",
+       "en": "forest"
+      },
+      {
+       "sa": "उपशान्तधीः",
+       "en": "one with peaceful intellect"
+      },
+      {
+       "sa": "यथातथा",
+       "en": "just as it is"
+      },
+      {
+       "sa": "यत्रतत्र",
+       "en": "here and there"
+      },
+      {
+       "sa": "सम",
+       "en": "equally"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अवतिष्ठते",
+       "en": "remains"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.6376,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Ashtavakra speaks to Janaka in a long closing chapter on peace, painting the calm of the wise. He says the calm mind does not run off to crowded places or to the forest. Whatever and wherever, it stays the same. He is telling Janaka that calm does not come from changing your surroundings or chasing quiet. It is a steadiness that holds ordinary life as it is.",
+     "for_you": "Your children fill the Sunday room, but their eyes stay on the screens. The Ramayana stays open on the table, and its company does not leave. The calm you seek is not a place to reach.",
+     "try_today": "Notice where your mind rests when the phone goes silent.",
+     "scene_line": "You sit in the same room where your children read their screens.",
+     "asks": [
+      "Can the room itself hold the calm I need?",
+      "What is the one thing I can hold still today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.1662,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is shattered by his father's death and Ram's exile. Bharat refuses the throne and his heart is not at peace. Vasishtha tells him to keep courage and do what today asks of him. Bharat then rises and prepares to go to the forest to admit his fault to Ram.",
+     "for_you": "You sit in your quiet house while your children look at their phones. You feel the room is empty, even when they are right there. Vasishtha tells Bharat to face what is before him, not to wait for his heart to feel ready.",
+     "try_today": "Read one verse of the Ramayana and let it be your only task.",
+     "scene_line": "You sit in your quiet house while your children look at their phones.",
+     "asks": [
+      "How do I face the silence when my children are near?",
+      "What does it mean to do what today asks of me?",
+      "How do I keep courage when my heart is not at peace?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.2162,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer speaks to the reader after the call to enjoy and let go. She says you may wish to live a full hundred years doing your work here. She adds that there is no other way. If you do your work in this spirit, action does not cling to you. She means you could hold what you have lightly, keep working, and see yourself in everyone.",
+     "for_you": "You read the Ramayana each morning because your children are on their phones on Sundays. You have chosen a companion, and now you are looking for what it offers.",
+     "try_today": "Read one verse of the Ramayana and let it be your only task for the day.",
+     "scene_line": "You are sitting with your morning Ramayana, and your children are on their phones across the room.",
+     "asks": [
+      "How do I let the Ramayana be enough for one day?",
+      "Can a single verse hold me if I let it?",
+      "What does it mean to see myself in the characters I read?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_sends_lakshman",
+     "title": "Sumitra sends Lakshman with Ram",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Lakshman",
+      "Ram",
+      "Sita"
+     ],
+     "story_hook": "His mother did not ask him to stay; she told him how to make the forest home.",
+     "summary": "As the exiles leave, Lakshman's mother blesses him: treat Ram as your father, Sita as your mother, and the forest as home. She tells him to go happily.",
+     "lesson": "Home is the people you are with; you can carry it into any wilderness.",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.40.8",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 40.8",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Lakshman",
+      "setting": "Lakshman's mother blesses him as he leaves to share Ram's fourteen years in the forest.",
+      "sanskrit": "लक्ष्मणं त्वेवमुक्त्वासौ संसिद्धं प्रियराघवम्। सुमित्रा गच्छ गच्छेति पुनः पुनरुवाच तम्॥ राम दशरथं विद्धि मां विद्धि जनकात्मजाम्। अयोध्यामटवीं विद्धि गच्छ तात यथासुखम्॥",
+      "line": "Treat the forest as home, and the people with you as family. Go well, my son.",
+      "translation": "Saying 'Go, go' again and again, Sumitra told him: Think of Ram as your father Dasharatha, of Sita as me, and of the forest as Ayodhya. Go happily, my son.",
+      "words": [],
+      "why": "Home is the people you are with; you can carry it into any wilderness.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "empty_nest",
+        "label": "My kids have left home"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_sends_lakshman",
+       "title": "Sumitra sends Lakshman with Ram",
+       "summary": "As the exiles leave, Lakshman's mother blesses him: treat Ram as your father, Sita as your mother, and the forest as home. She tells him to go happily.",
+       "story_hook": "His mother did not ask him to stay; she told him how to make the forest home.",
+       "lesson": "Home is the people you are with; you can carry it into any wilderness."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman's mother Sumitra didn't ask him to stay",
+     "teaser": "Lakshman's mother Sumitra didn't ask him to stay",
+     "for_you": "Home is the people you are with; you can carry it into any wilderness.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The one you already chose",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13843,
+   "total": 13846
+  },
+  "_ms": 13849
+ }
+}

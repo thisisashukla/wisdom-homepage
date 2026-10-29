@@ -1,0 +1,726 @@
+{
+ "situation": {
+  "id": "uk_genx_sikh_business",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged",
+  "market": "UK (Leicester)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "trapped and resentful",
+   "bridge": "The father who still walks in and changes your decisions is what the Gita calls living someone else's dharma: a borrowed authority, and it is not yours to carry.",
+   "week_thesis": "Seven days from being treated like a boy in his own business to standing in the authority he has already held for fifteen years.",
+   "week_beats": {
+    "hook": "You recognise being treated as less than your role, and the anger of it, named without blame.",
+    "story": "A son who stood before his father and held his ground on the authority that was his to keep shows you what it looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A -year-old man who has run a business for years is being undermined by his -year-old father in front of his staff, and he cannot speak up because of who his father is.",
+   "mirror": "At forty-seven, your father still changes your decisions in front of the people you lead.",
+   "insight": "You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as if your authority is his to give and take, by the man who gave you life, in the place you have built and run for fifteen years. Tension with my in-laws.",
+    "diagnose": "When a parent sees only a role instead of a person, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit the picture they hold.",
+    "story": "A son who stood before his father and held his ground on the authority that was his to keep, and was proven right by the order he restored."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The borrowed authority",
+    "Whose picture it is",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "has run the business for years",
+    "father is and still walks in to change decisions",
+    "does it in front of the staff"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:35=0.3,42=0.0,25=0.6,4=0.6,15=0.6,49=0.6",
+    "week_same:25",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.65",
+    "dropped:accept=1,fallback_line=2,missing=4,repeat=2,soft_kept=2,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:3/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.7286,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": null,
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.40",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 40",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how the world treats someone who has lost money.",
+     "sanskrit": "तानीन्द्रियाण्यविकलानि तदेव नाम सा बुद्धिरप्रतिहता वचनं तदेव । अर्थोष्मणा विरहितः पुरुषः क्षणेन सोऽप्यन्य एव भवतीति विचित्रमेतत् ॥",
+     "line": "Same person, same mind, same voice. Lose money, and people suddenly treat you as someone else.",
+     "translation": "The same faculties, unimpaired; the same name; the same unclouded mind; the same speech. Yet a man deprived of the warmth of wealth becomes, in a moment, someone else. How strange!",
+     "words": [],
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "The verse mocks how the world sees you; it does not measure your worth.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.6461,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari speaks to the reader from a quiet place of knowing. He lists the things that stay the same when a man loses his wealth: the mind, the voice, the name. Yet in a single moment, the world treats him as a stranger. He does not say the man has changed. He says the world has changed its mind about him.",
+     "for_you": "Your father walks in with the same authority he has always had, but the room sees him as the owner and you as the man who has not yet earned his place.",
+     "try_today": null,
+     "scene_line": "You are the man with the same mind and voice, treated as someone else.",
+     "asks": [
+      "How do I hold my own mind when others treat me as less?",
+      "Does my worth depend on how the room sees me?",
+      "Can I stand firm when my own father undoes my work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1546,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "Your father walks into the business and changes your decisions in front of your staff. You feel trapped and resentful. This is not a small thing. It is a borrowed authority that is not yours to carry.",
+     "try_today": "Notice the moment your father speaks and your hand wants to stop moving.",
+     "scene_line": "You are in the forest of your own business, and your father has taken the throne.",
+     "asks": [
+      "How do I do right when the right thing is ignored?",
+      "How do I work without waiting for him to leave?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "words": [
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "अनन्त",
+       "en": "infinite"
+      },
+      {
+       "sa": "महाम्भोधौ",
+       "en": "great ocean"
+      },
+      {
+       "sa": "विश्ववीचिः",
+       "en": "universal wave"
+      },
+      {
+       "sa": "स्वभावतः",
+       "en": "by nature"
+      },
+      {
+       "sa": "उदेतु",
+       "en": "rises"
+      },
+      {
+       "sa": "वास्तमायातु",
+       "en": "and sets"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "क्षतिः",
+       "en": "decline"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.8047,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "The self cannot be cut, burned or made less; what they see is a role, and you were never only a role.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "words": [
+      {
+       "sa": "अनुद्वेगकरं",
+       "en": "not-agitating"
+      },
+      {
+       "sa": "वाक्यं",
+       "en": "speech"
+      },
+      {
+       "sa": "सत्यं",
+       "en": "truthful"
+      },
+      {
+       "sa": "प्रियहितं",
+       "en": "kind and beneficial"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "यत्",
+       "en": "that"
+      },
+      {
+       "sa": "स्वाध्यायाभ्यसनं",
+       "en": "self-study and practice"
+      },
+      {
+       "sa": "चैव",
+       "en": "also"
+      },
+      {
+       "sa": "वाङ्मयं",
+       "en": "of words"
+      },
+      {
+       "sa": "तप",
+       "en": "discipline"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.2968,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is telling Arjuna about the three kinds of discipline. He says that true discipline of speech is using words that do not hurt, that are true, that are kind, and that are useful. The point is that speech should heal rather than harm, that it should be honest rather than cruel, and that it should help rather than just win. This is not about hiding what you feel. It is about speaking the hard truth without adding a wound.",
+     "for_you": "Your father changes your decisions in front of your staff. That is not discipline. That is a wound being opened. You can still speak words that are true and useful without making it a battle. You can say the facts plainly, without cruelty.",
+     "try_today": "Say one true and kind thing about the business to your father without asking for his permission.",
+     "scene_line": "You are in a room where your father rewrites your work in front of others.",
+     "asks": [
+      "How do I speak truth without adding more pain?",
+      "Can I say no without making it a war?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.9921,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher in ancient India speaks to a student on the day they leave to build a family. The teacher gives a short command for the road: speak the truth, do what is right, and never stop learning. This is not a list of rules. It is a map for a life that is already in motion, and the teacher gives it because the student is about to step into a world where they must stand on their own authority.",
+     "for_you": "Your father still walks in and changes your decisions in front of the staff. You have run the business for years, but his voice makes you feel like a boy again. The teacher's words are for the moment you step out of your father's shadow and into your own.",
+     "try_today": "When your father changes a decision, state the fact of the business calmly and clearly.",
+     "scene_line": "You are the graduate leaving the school, and your father is the one who still tries to call you back.",
+     "asks": [
+      "How do I speak the truth when he is in the room?",
+      "What does right action look like in my own office?",
+      "How do I keep learning when I already know the work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_bharat_resolution",
+     "title": "Ram and Bharat settle it",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Bharat",
+      "Vasishtha",
+      "Janaka"
+     ],
+     "story_hook": "Both brothers wanted the other to be king.",
+     "summary": "Ram tells Bharat that keeping their father's word is the duty of both brothers, and that the leader must be like the mouth, taking in only to nourish the whole body. He asks him to rule in his place, knowing it is the harder task. Bharat accepts, asking only for Ram's sandals to keep him going.",
+     "lesson": "A good resolution gives each person a role and something to hold on to.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.292.chaupai.4",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 292",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Bharat",
+      "setting": "Ram asks Bharat to rule in his place for fourteen years.",
+      "sanskrit": "जानि तुम्हहि मृदु कहउँ कठोरा। कुसमयँ तात न अनुचित मोरा॥ होहिं कुठायँ सुबंधु सहाए। ओड़िअहिं हाथ असनिहु के धाए ॥",
+      "line": "In bad times, good siblings are the hands that rise to block the blow.",
+      "translation": "Knowing you are gentle, I still say something hard; in hard times, brother, it isn't wrong of me. In bad times it is good brothers who help; it is the hands that rise to block a thunderbolt.",
+      "words": [
+       {
+        "sa": "जानि",
+        "en": "knowing"
+       },
+       {
+        "sa": "तुम्हहि",
+        "en": "you"
+       },
+       {
+        "sa": "मृदु",
+        "en": "gentle"
+       },
+       {
+        "sa": "कहउँ",
+        "en": "I speak"
+       },
+       {
+        "sa": "कठोरा",
+        "en": "harsh"
+       },
+       {
+        "sa": "कुसमयँ",
+        "en": "in a bad time"
+       },
+       {
+        "sa": "तात",
+        "en": "dear one"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "अनुचित",
+        "en": "improper"
+       },
+       {
+        "sa": "मोरा",
+        "en": "mine"
+       },
+       {
+        "sa": "होहिं",
+        "en": "become"
+       },
+       {
+        "sa": "कुठायँ",
+        "en": "in a crisis"
+       },
+       {
+        "sa": "सुबंधु",
+        "en": "true brother"
+       },
+       {
+        "sa": "सहाए",
+        "en": "helpers"
+       },
+       {
+        "sa": "ओड़िअहिं",
+        "en": "stop"
+       },
+       {
+        "sa": "हाथ",
+        "en": "hand"
+       },
+       {
+        "sa": "असनिहु",
+        "en": "lightning"
+       },
+       {
+        "sa": "के",
+        "en": "of"
+       },
+       {
+        "sa": "धाए",
+        "en": "strikes"
+       }
+      ],
+      "why": "A good resolution gives each person a role and something to hold on to.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.ram_bharat_resolution",
+       "title": "Ram and Bharat settle it",
+       "summary": "Ram tells Bharat that keeping their father's word is the duty of both brothers, and that the leader must be like the mouth, taking in only to nourish the whole body. He asks him to rule in his place, knowing it is the harder task. Bharat accepts, asking only for Ram's sandals to keep him going.",
+       "story_hook": "Both brothers wanted the other to be king.",
+       "lesson": "A good resolution gives each person a role and something to hold on to."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram and Bharat each wanted the other to be king",
+     "teaser": "Ram and Bharat each wanted the other to be king",
+     "for_you": "Bharat took his place and kept the sandals. You have already held the business for fifteen years. The authority is yours to keep. You do not need to step aside. You could stand in the authority that is already yours.",
+     "asks": [
+      "How do I hold my ground without breaking the bond?",
+      "How do I stop making room for the blow?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The borrowed authority",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17269,
+   "total": 17271
+  },
+  "_ms": 17275
+ }
+}

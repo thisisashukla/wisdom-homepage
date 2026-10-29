@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.8,
+ "core_struggle": "Facing a returning tumour, she is not afraid of dying itself but is afraid of the pain and of becoming a burden to her children.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "fear_death",
+   "weight": 1.34,
+   "source": "note"
+  },
+  {
+   "id": "illness_family",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "grief_general",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.55,
+   "source": "profile"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "career_switch",
+   "weight": 0.395,
+   "source": "note"
+  }
+ ],
+ "mirror": "You are not afraid of dying exactly. You are afraid of the pain and of what it will cost your children.",
+ "queries": {
+  "hook": "The fear of pain and of becoming a burden to your children, not the fear of dying itself. I'm afraid of death.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+  "steady": "What is real in you cannot be lost, and what is lost was never you.",
+  "act": "Remember what is real in you and cannot be lost, and let your children hold what they must hold.",
+  "story": "A mother who faced her own end, afraid of the pain and of her children's grief, who found that what she was could not be taken."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The fear of pain",
+  "What is real",
+  "The one who cannot be lost"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "afraid of burdening and of pain",
+ "bridge": "The fear is not of the end but of what it costs your children, and the texts ask what is real in you that cannot be lost.",
+ "week_thesis": "From the fear of pain and burden to the recognition that what is real in you cannot be lost, and the courage to let your children carry what they must.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the fear of pain and of becoming a burden, named without judgement.",
+  "diagnose": "You see that fear grows from imagining what will happen, and from forgetting what is real in you.",
+  "steady": "You hold that what is real in you cannot be lost, and what is lost was never you.",
+  "act": "You try remembering what is real in you and letting your children hold what they must.",
+  "story": "A mother who faced her own end, afraid of the pain and of her children's grief, shows you what could not be taken."
+ },
+ "insight": "You are not afraid of dying itself, but of the pain and of becoming a burden. What is real in you cannot be lost, and that is what the texts speak of.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "tumour has returned and doctor has said so",
+  "not afraid of dying itself",
+  "afraid of the pain"
+ ],
+ "age": "55p",
+ "stages": [
+  "retired"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation"
+ ]
+}

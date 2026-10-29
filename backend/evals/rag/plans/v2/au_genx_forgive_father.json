@@ -1,0 +1,652 @@
+{
+ "situation": {
+  "id": "au_genx_forgive_father",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "my father was harsh with us growing up, hit us when he drank. he is old and sick now and wants me to visit. part of me wants to, part of me is still twelve.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "Australia (Sydney)",
+  "lang": "hinglish",
+  "slices": [
+   "family",
+   "forgive",
+   "lang:hinglish"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "harm_from_others",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn between pity and old fear",
+   "bridge": "The part of you that is still twelve is what the Upanishads call the self that cannot be lost, even when the body that held you was not safe.",
+   "week_thesis": "The twelve-year-old and the adult are not the same, and the visit can be made without either one being lost.",
+   "week_beats": {
+    "hook": "You recognise the two parts of you, and that both are real.",
+    "diagnose": "You see that the love that was given and the hurt that was given are not the same thing, and that the child is still alive.",
+    "steady": "You hold that what was real in you cannot be taken away, and that the adult you are is not the child who was hurt.",
+    "act": "You try letting the child be held, and going if your heart says so, and coming back to the adult you are."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "His harsh father is old and sick, and the adult wants to visit while the child who was hit is still alive inside.",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.593,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.384,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.3,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A son who was once a child before a harsh father, now grown, who must decide whether to go and what to carry with him."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "The child and the adult",
+    "What was real cannot be lost",
+    "More than the one who was hurt"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "father is old and sick now",
+    "part of them wants to visit",
+    "part of them is still twelve"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.6,12=0.6,5=0.6,10=0.3,34=0.3,40=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.66",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:invented=1,not_second_person=1,opening=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 0.4242,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Krishna is speaking to Arjuna, who has collapsed on the battlefield in tears and refuses to fight. Arjuna says he sees nothing that could ease this grief, not even ruling the gods or the richest kingdom on earth. He admits he cannot see which choice is better and asks Krishna to teach him.",
+     "for_you": "You are sitting with two truths. One is the adult who knows your father is old and sick. The other is the twelve-year-old who still remembers the harshness. Both are real, and neither is wrong. The grief you feel is not just for the present moment.",
+     "try_today": "Notice where the adult and the child sit in your body today.",
+     "scene_line": "You are on the field of your life, torn between the grief that dries you up and the duty you cannot yet name.",
+     "asks": [
+      "Which part of me is speaking when I think about visiting?",
+      "What do I need to admit I do not know?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.12",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.12",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to stay steady when people and wealth come and go.",
+     "sanskrit": "मानसानां पुनर्योनिर्दुःखानां चित्तविभ्रमः / अनिष्टोपनिपातो वा तृतीयं नोपपद्यते",
+     "line": "Mental pain comes from two places: something you didn't want happened, or your mind is spinning. No third.",
+     "translation": "Sorrow of the mind has only two sources: a confused, wandering mind, or something unwanted happening to you. There is no third.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.4564,
+     "beat": "diagnose",
+     "role_fit": 0.816,
+     "meaning": "The sage Ashma answers King Janaka, who asks how to stay steady when people and wealth come and go. Ashma says sorrow of the mind has only two sources: a confused, wandering mind, or something unwanted happening to you. There is no third. The days that have gone are gone. You can grieve the loss, but then you steady yourself with the people still standing in front of you.",
+     "for_you": "The love your father gave and the harshness he gave are not the same thing.",
+     "try_today": "Notice when your mind starts spinning about the visit and name it as a thought, not a fact.",
+     "scene_line": "You are standing at the door with a father who is old and sick, while a child who was hit still lives inside.",
+     "asks": [
+      "How do I separate the man my father is now from the father I knew?",
+      "Can I visit my father without letting the twelve-year-old take over?",
+      "What does it mean to steady myself with the people still in front of me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.0243,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "After Sita is taken, Ram is lost in grief. He returns to an empty hut, questions the trees and animals, and finally rages that he will destroy the whole world. Lakshman steps in, telling him to take heart. He says trouble touches everyone. It flares up like fire and passes. He is telling Ram that devastating loss is a common human experience, and a steady friend can stop grief from turning into destruction.",
+     "for_you": "Your parents are far away and your father is sick. Both parts are real. The adult does not have to carry the child's fear into the room.",
+     "try_today": "Notice one moment when the adult's calm voice speaks louder than the child's fear.",
+     "scene_line": "You are in your own empty hut, and a steady hand is asking you to take heart.",
+     "asks": [
+      "How does the child's fear show up in my body today?",
+      "Where does the fire of this grief flare up in my day?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.444,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari speaks to the reader from the section on steadfastness. He says that a ball knocked down by the hand flies right back up, and that as a rule, the misfortunes of those who live rightly do not last. He proposes that setbacks are temporary and that the steady person keeps going on the right path.",
+     "for_you": "The part of you that was hurt at twelve is still real, and that truth cannot be knocked down. The adult who wants to visit is not the child who was afraid. You can hold onto what is true in you while you decide what to do next.",
+     "try_today": null,
+     "scene_line": "You are the ball that has been struck down, waiting for the next move.",
+     "asks": [
+      "How do I hold onto what is true while the fear is still here?",
+      "Can I be steady without pretending the hurt is gone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_mundaka.3.1.6",
+     "ref": "Mundaka Upanishad 3.1.6",
+     "ref_iast": "Muṇḍaka Upaniṣad 3.1.6",
+     "family": "up",
+     "speaker": "Angiras",
+     "listener": "Shaunaka",
+     "setting": "Angiras on truth as the path.",
+     "sanskrit": "सत्यमेव जयते नानृतं सत्येन पन्था विततो देवयानः । येनाऽऽक्रमन्त्यृषयो ह्याप्तकामा यत्र तत् सत्यस्य परमं निधानम् ॥",
+     "line": "Truth alone wins, not falsehood. Truth lays the road that the wise walk.",
+     "translation": "Truth alone wins, not falsehood. By truth the divine path is laid out, by which the sages, their desires fulfilled, travel to where the highest treasure of truth is.",
+     "words": [],
+     "why": "There is a calm witness in you that the anxious part can turn to.",
+     "misuse": "Truth wins in the long run; it is not a promise of quick victory.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.mundaka.two_birds",
+      "title": "Two birds on one tree",
+      "summary": "Two birds sit on one tree: one eats the fruit and grieves, the other simply watches. When the anxious bird sees the calm one beside it, its sorrow falls away. The section goes on to praise truth, effort and freedom from craving.",
+      "story_hook": "",
+      "lesson": "There is a calm witness in you that the anxious part can turn to."
+     },
+     "score": 2.171,
+     "beat": "act",
+     "role_fit": 0.474,
+     "meaning": null,
+     "for_you": "The adult in you knows the visit is right, but the child inside still hears the old voice. Let the child sit beside the adult, not behind them. You do not need to fix the resentment today, only to let the adult hold the door open.",
+     "try_today": "Before you leave, let the child hold the bag for a moment.",
+     "scene_line": "You stand at the door with two versions of yourself, and only one needs to step forward.",
+     "asks": [
+      "How do I let the child hold the bag without letting them lead?",
+      "What does the adult version of me look like when they are in charge?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.2463,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna is caught between what he feels he must do and the fear of what will come from it. Krishna tells him that any path taken with true effort is never lost. Even a small step, done without clinging to the outcome, shields the person from great fear. The work itself is the shield.",
+     "for_you": "The adult in you wants to visit your old father, but the twelve-year-old who was hurt is still guarding the door. The effort to go is not wasted even if the visit is hard. You can walk that road and let the outcome be what it is.",
+     "try_today": "Let the twelve-year-old rest while you go if your heart says so.",
+     "scene_line": "You stand at the door where the child and the adult meet.",
+     "asks": [
+      "How do I go without losing the child I was?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.father_one_more_night",
+     "title": "One more night: Ram leaves his father",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Dasharatha",
+      "Ram"
+     ],
+     "story_hook": "His father asked for only one thing: one more night.",
+     "summary": "The broken king begs Ram to stay one more night so his parents can see him. Ram gently refuses, saying a promise made must be kept and he will return in fourteen years. Dasharatha embraces him and collapses.",
+     "lesson": "Goodbyes to ageing parents are hard; leave with love and a promise to return.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.34.28",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 34.28",
+      "family": "vr",
+      "speaker": "Dasharatha",
+      "listener": "Ram",
+      "setting": "The heartbroken king, bound by his promise, cannot stop Ram going but begs for one more night.",
+      "sanskrit": "मातरं मां च सम्पश्यन् वसेमामद्य शर्वरीम्। तर्पितः सर्वकामैस्त्वं श्वः काल्ये साधयिष्यसि ॥",
+      "line": "Stay tonight. Let your mother and me see you. You can leave in the morning.",
+      "translation": "Stay tonight, see your mother and me. Rest, have everything you want, and set out early tomorrow.",
+      "words": [],
+      "why": "Goodbyes to ageing parents are hard; leave with love and a promise to return.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.father_one_more_night",
+       "title": "One more night: Ram leaves his father",
+       "summary": "The broken king begs Ram to stay one more night so his parents can see him. Ram gently refuses, saying a promise made must be kept and he will return in fourteen years. Dasharatha embraces him and collapses.",
+       "story_hook": "His father asked for only one thing: one more night.",
+       "lesson": "Goodbyes to ageing parents are hard; leave with love and a promise to return."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Dasharatha begged Ram for just one more night",
+     "teaser": "King Dasharatha begged Ram for just one more night",
+     "for_you": "Dasharatha asked Ram to stay one more night, to let his mother see him before he left. You feel the pull to see your father, to let him see you, but you are still the child who was hurt. The adult in you knows the visit is possible.",
+     "asks": [
+      "How do I keep a promise to myself while I am there?",
+      "What promise did the adult in me make to the child?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The child and the adult",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19321,
+   "total": 19323
+  },
+  "_ms": 19324
+ }
+}

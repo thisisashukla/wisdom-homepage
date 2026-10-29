@@ -1,0 +1,95 @@
+{
+ "source": "llm",
+ "note_quality": "partial",
+ "risk": "none",
+ "confidence": 0.5,
+ "core_struggle": "A student under twenty-five with a restless mind and seven hours of phone time, who feels stressed but cannot say why.",
+ "mechanism": "restless_mind",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "restless_mind",
+   "weight": 1.434,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 1.094,
+   "source": "note"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 0.892,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "money_stress",
+   "weight": 0.315,
+   "source": "note"
+  }
+ ],
+ "mirror": "You lie awake with a mind that will not settle, and the phone is the last thing you reach for.",
+ "queries": {
+  "hook": "A mind that will not settle, running on its own, and the phone that keeps it running.",
+  "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy and will not rest.",
+  "steady": "The mind is restless, stormy, stubborn and strong; holding it feels like holding the wind, but it can be stilled.",
+  "act": "Practise steadying the mind through one breath, one task, one moment at a time, and let the phone wait.",
+  "story": "A young student whose mind would not settle, who took up a practice and found that the wind can be stilled."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The running mind",
+  "What stills it",
+  "The quiet that is yours"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "stressed and unsettled",
+ "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+ "week_thesis": "Seven days from a mind that will not settle to one quiet minute a day where the wind stops.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "friend",
+  "teacher"
+ ],
+ "week_beats": {
+  "hook": "You recognise the restlessness and the phone as one thing, not two.",
+  "diagnose": "You see that the mind runs on its own and becomes its own enemy when left to itself.",
+  "steady": "You hold that the mind can be stilled, even if it feels like the wind now.",
+  "act": "You try one quiet minute before the phone, one task done fully, and one breath taken slowly.",
+  "story": "A young student who could not settle, who took up a practice and found that the wind can be stilled."
+ },
+ "insight": "You are stressed and you cannot say why. The truth is that the mind has been running on its own for too long.",
+ "seat": "a student whose mind will not settle and whose phone takes up most of the day",
+ "life_context": "A student under twenty-five, studying and staring at the phone for hours, with a mind that will not settle; the stress is there but the cause is not yet named.",
+ "details": [
+  "under twenty-five and studying",
+  "mind will not settle",
+  "daily phone time is seven hours",
+  "note is vague and uncertain"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying"
+ ],
+ "version": 1,
+ "flags": []
+}

@@ -1,0 +1,618 @@
+{
+ "situation": {
+  "id": "in_genx_hindi_son_marriage",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "phone_hours": 2
+  },
+  "note": "बेटा कहता है शादी अपनी पसंद से करेगा, हमसे पूछेगा भी नहीं। रिश्तेदार ताने मारते हैं। मैं माँ होकर भी उससे बात नहीं कर पा रही।",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Patna)",
+  "lang": "hindi",
+  "slices": [
+   "family",
+   "hindi",
+   "lang:hindi",
+   "parenting"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "hurt and powerless",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "Seven days from the silence and the taunts to finding the words that can reach him, and the peace that does not depend on his answer.",
+   "week_beats": {
+    "hook": "You recognise the silence and the taunts, named without blame.",
+    "diagnose": "You see that the relatives' taunts and the son's silence are not your fault, and that the wound is real.",
+    "steady": "You hold that your love for him is not the marriage he chooses, and that praise and blame come and go.",
+    "act": "You try letting the relatives' words go, and speak to your son about the silence, not the choice.",
+    "story": "A mother who could not reach her son through silence shows you what words can do when they are spoken from love, not demand."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "My teenager won't listen to me",
+   "mirror": "Your son refuses to marry your choice, and you feel something doesn't sit right.",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 1.75,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.383,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.2,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The silence between a mother and her son over the one thing that matters, and the shame of being taunted by relatives for a bond that is breaking.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Praise and blame from outside come and go; what is yours is the love you hold for him, not the marriage he chooses.",
+    "act": "Let the relatives' words go, and speak to your son not about the choice but about the silence between you.",
+    "story": "A mother whose son would not speak to her, and who found the words to reach him through the silence."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The silence between mother and son",
+    "Whose story it is",
+    "More than the marriage"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "relatives are taunting them about it"
+   ],
+   "age": "45_54",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:29=0.6,2=0.3,84=0.6,179=0.3,23=0.3,78=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.63",
+    "dropped:fallback_line=1,invented=1,missing=2,repeat=2,soft_kept=2,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 1.3364,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": null,
+     "for_you": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.11.5",
+     "ref": "Ashtavakra Gita 11.5",
+     "ref_iast": "Aṣṭāvakra Gītā 11.5",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra lists the certainties that make the wise calm.",
+     "sanskrit": "चिन्तया जायते दुःखं नान्यथेहेति निश्चयी । तया हीनः सुखी शान्तः सर्वत्र गलितस्पृहः ॥",
+     "line": "Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "translation": "One who knows for certain that suffering here is born of worry and nothing else is free of it, happy, at peace, and unattached everywhere.",
+     "words": [
+      {
+       "sa": "चिन्तया",
+       "en": "by worry"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      },
+      {
+       "sa": "दुःखं",
+       "en": "suffering"
+      },
+      {
+       "sa": "नान्यथे",
+       "en": "not otherwise"
+      },
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "निश्चयी",
+       "en": "one who is certain"
+      },
+      {
+       "sa": "तया",
+       "en": "by that"
+      },
+      {
+       "sa": "हीनः",
+       "en": "devoid"
+      },
+      {
+       "sa": "सुखी",
+       "en": "happy"
+      },
+      {
+       "sa": "शान्तः",
+       "en": "calm"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "गलितस्पृहः",
+       "en": "desire dissolved"
+      }
+     ],
+     "why": "Most suffering is made of worry; knowing what you can't control loosens it.",
+     "misuse": "Real problems still need attention; this is about the extra pain rumination adds.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.wisdom",
+      "title": "The certainties of the calm",
+      "summary": "Ashtavakra lists convictions that make a person calm: things arise and pass by nature, fortune and misfortune come in their time, and suffering is born of worry alone.",
+      "story_hook": "",
+      "lesson": "Most suffering is made of worry; knowing what you can't control loosens it."
+     },
+     "score": 2.474,
+     "beat": "diagnose",
+     "role_fit": 0.831,
+     "meaning": "Ashtavakra speaks to Janaka about what makes a person calm. He says that things arise and pass by nature. Fortune and misfortune come in their own time. Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "for_you": "The taunts from relatives and the silence from your child are not your fault. The real wound is the worry that keeps adding weight to what is already hard. The pain of a growing distance is real.",
+     "try_today": "Notice when worry about their silence takes over your day.",
+     "scene_line": "You stand in your kitchen while relatives' taunts echo, and your son's silence waits.",
+     "asks": [
+      "How do I tell the real problem from the worry I add to it?",
+      "Can I feel at peace while the tension with my family continues?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0717,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from a place of long observation. He has watched enough of life to know that the crowd will always offer its noise. Some will praise your choices, and others will blame them, but their words are like the weather. They shift with the wind. The true measure of a person is not found in how the world judges them. It is found in whether they remain standing on the path they know is right, even when the ground shakes beneath them. Setbacks are temporary.",
+     "for_you": "The relatives have made their noise, and you feel the sting of their words. But your love for him is not the marriage he chooses. The praise and blame will come and go, like guests who stay too long. What you hold is your own path.",
+     "try_today": "Notice the next time a taunt lands. Let it land and pass without letting it move you from your path.",
+     "scene_line": "You are the steady soul watching the crowd turn against your path.",
+     "asks": [
+      "How do I stop the taunts from moving me from my path?",
+      "Can I hold my ground without becoming the enemy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.179",
+     "ref": "Maha Upanishad 4.30",
+     "ref_iast": "Mahā Upaniṣad 4.30",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on calm, continued.",
+     "sanskrit": "मातरीव परं यान्ति विषमाणि मृदूनि च । विश्वासमिह भूतानि सर्वाणि शमशालिनि ॥",
+     "line": "Everyone, gentle or fierce, comes to trust a calm person, the way we trust a mother.",
+     "translation": "All beings, the harsh and the gentle alike, come to trust the person who is calm, as they would trust a mother.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "teen_conflict",
+       "label": "My teenager won't listen to me"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 2.8827,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": null,
+     "for_you": "Your relatives keep coming back with their taunts. You cannot make them stop. But you can rest in the calm that is yours alone. That is your ground.",
+     "try_today": null,
+     "scene_line": "You are the calm mind in the middle of their noise.",
+     "asks": [
+      "How do I find calm when the taunts keep coming?",
+      "Can I trust my own mind to lift me out?",
+      "Is my calm enough to hold all this?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.22.23",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 22.23",
+     "family": "vr",
+     "speaker": "Vali",
+     "listener": "Angada",
+     "setting": "Dying, Vali advises his young son Angada how to conduct himself at his uncle Sugriva's court.",
+     "sanskrit": "न चातिप्रणयः कार्यः कर्तव्योऽप्रणयश्च ते। उभयं हि महादोषं तस्मादन्तरदृग्भव॥",
+     "line": "Don't be too familiar, and don't be cold. Both are mistakes; find the middle.",
+     "translation": "Do not be too familiar, and do not be distant either; both are serious mistakes. So keep a sense of the middle.",
+     "words": [],
+     "why": "Rivalry seems huge until the end; then only the relationship matters.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.vali_last_words",
+      "title": "Vali's last words",
+      "summary": "Struck down by Ram's arrow during the duel, Vali rebukes Ram, then makes his peace. To Sugriva he says: don't hold my faults against me; we could not have both brotherhood and kingdom. He entrusts his son to his brother and tells Angada how to live.",
+      "story_hook": "Lying on the ground, the brother who had driven him out asked him for forgiveness.",
+      "lesson": "Rivalry seems huge until the end; then only the relationship matters."
+     },
+     "score": 2.6628,
+     "beat": "act",
+     "role_fit": 0.889,
+     "meaning": "Vali lies dying, struck down by Ram's arrow in the forest. He speaks to his son Angada, who is now entering the court of Sugriva, Vali's brother and rival. Vali tells him that when you face a rival who is also family, you could not be too familiar, as if you own the place, and you could not be cold, as if you have no claim. Both mistakes will break what little trust remains. He tells Angada to find the middle ground, to hold his place without forcing it.",
+     "for_you": "The relatives' taunts make you want to pull away completely, or to demand they see you differently. Neither will hold. Vali tells Angada to keep the middle ground. Your son's silence is not a kingdom to take by force. It is a court to enter with steady presence.",
+     "try_today": "Notice one moment of middle ground with your son, neither demanding nor withdrawing.",
+     "scene_line": "You are entering Sugriva's court, holding your place without forcing it.",
+     "asks": [
+      "How do I hold the middle ground when I feel so pushed away?",
+      "Can I trust the middle ground when the taunts keep coming?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.26",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 26",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section praising learning: the path every tradition shares.",
+     "sanskrit": "प्राणाघातान्निवृत्तिः परधनहरणे संयमः सत्यवाक्यं काले शक्त्या प्रदानं युवतिजनकथामूकभावः परेषाम् । तृष्णास्रोतोविभङ्गो गुरुषु च विनयः सर्वभूतानुकम्पा सामान्यः सर्वशास्त्रेष्वनुपहतविधिः श्रेयसामेष पन्थाः ॥",
+     "line": "Harm no one, take nothing that isn't yours, speak truly, give in time, cut craving, be kind to all.",
+     "translation": "Refraining from taking life, restraint from seizing others' wealth, truthful speech, timely giving as one is able, silence in gossip about others' wives, breaking the current of craving, humility before elders, compassion for all beings: this is the common path to the good, unbroken in all the scriptures.",
+     "words": [],
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 1.8104,
+     "beat": "act",
+     "role_fit": 0.544,
+     "meaning": "Bhartrihari speaks these words from the path shared by every tradition. He tells the reader that true wealth is not money or property, but what you learn and how you speak. He lists the qualities that form this wealth: not harming anyone, not taking what belongs to another, speaking the truth, giving when you can, cutting craving, and showing kindness to all. This is the unbroken path to good. The verse proposes that your learning and your speech are the one treasure no thief can steal.",
+     "for_you": "The relatives' taunts are trying to take that speech from you. Let them have their noise. What you learned years ago about patience is still yours. Your son hears more than you think from the calm in your voice. Let them have their noise.",
+     "try_today": "Let the relatives' words pass through you without answering them.",
+     "scene_line": "You stand on the path, letting the taunts pass, and holding the one wealth no thief can take.",
+     "asks": [
+      "How do I stop the taunts from shaking my voice?",
+      "Can my learning still reach him if I stop speaking?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.kaushitaki.father_son",
+     "title": "Father and son go back to school",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Chitra Gangyayani",
+      "Shvetaketu",
+      "Uddalaka Aruni"
+     ],
+     "story_hook": "When his son came home stumped, Uddalaka did something unusual for a famous teacher.",
+     "summary": "A patron asks young Shvetaketu a question he cannot answer. He asks his father, who admits he does not know either and suggests they both go to the patron as students. Chitra welcomes Uddalaka for his humility.",
+     "lesson": "A parent who says 'let's learn together' teaches more than any answer.",
+     "matched": [
+      {
+       "id": "teen_conflict",
+       "label": "My teenager won't listen to me"
+      }
+     ],
+     "anchor": {
+      "id": "up_kaushitaki.3",
+      "ref": "Kaushitaki Upanishad 1.1",
+      "ref_iast": "Kauṣītaki Upaniṣad 1.1",
+      "family": "up",
+      "speaker": "Shvetaketu and Uddalaka Aruni",
+      "listener": "Each other",
+      "setting": "A patron asks Shvetaketu a question he cannot answer; he goes to his father.",
+      "sanskrit": "स होवाच नाहमेतद्वेद हन्ताचार्यं प्रच्छानीति स ह पितरमासाद्य पप्रच्छेतीति स होवाचाहमप्येतन्न वेद सदस्येव वयं स्वाध्यायमधीत्य हरामहे यन्नः परे ददत्येह्युभौ गमिष्याव इति ॥",
+      "line": "'I don't know either,' the father told his son. 'Let's both go and learn, as students.'",
+      "translation": "He said, 'I do not know this. Let me ask my teacher.' He went to his father and asked. The father said, 'I too do not know it. We have studied the Veda and take what others give us. Come, let us both go.'",
+      "words": [],
+      "why": "A parent who says 'let's learn together' teaches more than any answer.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "teen_conflict",
+        "label": "My teenager won't listen to me"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.kaushitaki.father_son",
+       "title": "Father and son go back to school",
+       "summary": "A patron asks young Shvetaketu a question he cannot answer. He asks his father, who admits he does not know either and suggests they both go to the patron as students. Chitra welcomes Uddalaka for his humility.",
+       "story_hook": "When his son came home stumped, Uddalaka did something unusual for a famous teacher.",
+       "lesson": "A parent who says 'let's learn together' teaches more than any answer."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A famous teacher wasn't too proud to go back to school with his son",
+     "teaser": "A famous teacher wasn't too proud to go back to school with his son",
+     "for_you": "Chitra welcomed Uddalaka not for his answers but for his humility. Your family's taunts sting because they echo your own fear that you have failed to guide your teenager. But a home is not a classroom where the parent must always know the right answer.",
+     "asks": [
+      "How do I speak to my teenager without sounding like I am giving an order?",
+      "What does it mean to learn together when I am the parent?",
+      "How do I stop my family's taunts from defining my worth as a parent?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence between mother and son",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 23516,
+   "total": 23518
+  },
+  "_ms": 23520
+ }
+}

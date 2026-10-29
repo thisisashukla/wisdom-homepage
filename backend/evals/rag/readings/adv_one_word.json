@@ -1,0 +1,96 @@
+{
+ "source": "llm",
+ "note_quality": "partial",
+ "risk": "none",
+ "confidence": 0.4,
+ "core_struggle": "A young worker with a mind that will not settle and a phone they spend six hours on, tired and unable to rest.",
+ "mechanism": "restless_mind",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "restless_mind",
+   "weight": 1.237,
+   "source": "note"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 0.99,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.694,
+   "source": "note"
+  },
+  {
+   "id": "burnout",
+   "weight": 0.49,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.4,
+   "source": "profile"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You are tired, and the phone will not let your mind rest.",
+ "queries": {
+  "hook": "A mind that will not settle, tired, and a phone that will not let it rest; the restlessness of being awake but not at peace.",
+  "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy, and the phone is the hand that keeps fanning it.",
+  "steady": "Praise and blame come and go; what is yours cannot be taken; stay the same in the midst of noise.",
+  "act": "Practise one minute of stillness; put the phone down, let the mind settle, and do not let it run.",
+  "story": "A young warrior with a restless mind, before battle, who learned to hold the wind in his own hands."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The wind and the hand",
+  "The mind that runs",
+  "The one who rests"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "tired and unsettled",
+ "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+ "week_thesis": "The mind that will not settle has a name, and the phone is the hand that keeps fanning it. In seven days it learns to rest.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the restlessness and the tiredness, named without judgement.",
+  "diagnose": "You see that the mind runs itself, and the phone is the hand that keeps it running.",
+  "steady": "You hold that what is yours cannot be taken, and that stillness is possible.",
+  "act": "You try one minute of stillness, and one moment without the phone.",
+  "story": "A young warrior who learned to hold the wind shows you that the mind can be stilled."
+ },
+ "insight": "You are tired, and the phone is the hand that will not let the mind rest.",
+ "seat": "a young worker with a restless mind and a phone that will not let it rest",
+ "life_context": "A young worker under twenty-five, tired, with a mind that will not settle and a phone that takes six hours of their day; the note says only 'tired'.",
+ "details": [
+  "under twenty-five and working",
+  "six hours on the phone",
+  "mind will not settle",
+  "note says only 'tired'"
+ ],
+ "age": "u25",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "bridge:copied_example"
+ ]
+}

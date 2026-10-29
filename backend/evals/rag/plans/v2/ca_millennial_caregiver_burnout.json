@@ -1,0 +1,597 @@
+{
+ "situation": {
+  "id": "ca_millennial_caregiver_burnout",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 2
+  },
+  "note": "my mother in law had a stroke and lives with us now. two kids, full time job, night care. I'm exhausted and nobody even notices. and I feel terrible for being angry at a sick woman.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "Canada (Brampton)",
+  "lang": "english",
+  "slices": [
+   "burnout",
+   "caregiving",
+   "guilt",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "exhausted and guilty",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from carrying the weight alone to letting yourself be angry without becoming it, and finding one hour that is yours.",
+   "week_beats": {
+    "hook": "You recognise the exhaustion and the guilt, named without judgement.",
+    "diagnose": "You see that the guilt is what turns your anger into another weight, and that weight is what keeps you awake.",
+    "steady": "You hold that anger and guilt are both real, and that neither one is who you are.",
+    "act": "You try speaking the anger to one person, and you take one hour that is only yours.",
+    "story": "A woman who cared for a sick mother and her own children shows you how anger and love can live in the same heart."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "child",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A working mother of two who now also cares for her mother-in-law after a stroke; she is exhausted, unnoticed, and feels guilty for being angry at the woman she is caring for.",
+   "mirror": "You give the day everything, and the night too, and then lie awake with a mind that will not settle.",
+   "insight": "You are carrying three lives and nobody sees it. Underneath that is the guilt that makes you fight the anger, so you end up fighting yourself.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.585,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.945,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.526,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.413,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of carrying everyone, and the guilt that comes from being angry at the person you are caring for, and the exhaustion that has no name. Someone I love is seriously ill.",
+    "diagnose": "When the mind turns against itself, anger at the one you care for becomes guilt, and the guilt becomes another weight you carry alone.",
+    "steady": "Praise and blame, gain and loss, pleasure and pain come and go; what is yours is to stand in the middle and not be shaken.",
+    "act": "Lift yourself up instead of pushing yourself down; speak your anger gently to the one you are caring for, or to a friend, and let yourself be angry without becoming it.",
+    "story": "A woman who cared for a sick mother-in-law and her own children, who felt the anger she was not allowed to feel, and who learned to hold it without letting it become her."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the weight",
+    "The anger you are not allowed to feel",
+    "More than what you do"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "mother-in-law had a stroke and lives with them",
+    "caring for two kids, a full time job and night care",
+    "feels exhausted and unnoticed",
+    "feels guilty for being angry at a sick woman"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:46=0.6,11=0.9,17=0.6,7=0.7,7=0.0,532=0.9",
+    "week_same:17",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.65",
+    "retried:3",
+    "dropped:fallback_line=1,missing=3,repeat=2,soft_kept=2",
+    "for_you:6/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.46",
+     "ref": "Bhagavad Gita 18.46",
+     "ref_iast": "Bhagavad Gītā 18.46",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् । स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥",
+     "line": "Doing your own work well can be your worship of the source of all life.",
+     "translation": "By worshipping, through his own work, Him from whom all beings arise and by whom all this is pervaded, a person attains perfection.",
+     "words": [
+      {
+       "sa": "यतः",
+       "en": "from which"
+      },
+      {
+       "sa": "प्रवृत्तिः",
+       "en": "origin"
+      },
+      {
+       "sa": "भूतानां",
+       "en": "of beings"
+      },
+      {
+       "sa": "येन",
+       "en": "by which"
+      },
+      {
+       "sa": "सर्वम्",
+       "en": "all"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "ततम्",
+       "en": "pervades"
+      },
+      {
+       "sa": "स्वकर्मणा",
+       "en": "by own action"
+      },
+      {
+       "sa": "तम्",
+       "en": "that"
+      },
+      {
+       "sa": "अभ्यर्च्य",
+       "en": "worshiping"
+      },
+      {
+       "sa": "सिद्धिं",
+       "en": "success"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "attains"
+      },
+      {
+       "sa": "मानवः",
+       "en": "a person"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Work as worship doesn't mean overwork or tolerating exploitation.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 1.5224,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna tells Arjuna that a person reaches perfection by worshipping the source of all life through their own work. After describing duties by nature, he says that doing the work that fits you, with all its flaws, as an offering brings a person to fulfillment. The path of your own nature, even if imperfect, is better than taking up another's path. The perfection comes from the attitude of offering, not from flawless execution.",
+     "for_you": "You are doing the work that fits you, night care and all. The exhaustion is real. Let the work be your offering without demanding it be flawless. Your own path is enough.",
+     "try_today": "Notice one task you do as an offering rather than a burden.",
+     "scene_line": "You are in your own imperfect path, carrying the weight of three lives.",
+     "asks": [
+      "How can I offer my work without feeling like I am failing?",
+      "Can I stop demanding that my effort be flawless?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.2343,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, after seeing how wealth hardens people and how life drips away, asks what the point of it all is. He names the real enemy. It is not the world around him. It is the self turning on the self. The mind becomes its own worst enemy. The senses fight the self from the inside. Truth seems false because the mind is at war with itself. The verse proposes that the first step out of suffering is to name this honestly.",
+     "for_you": "You feel guilty for being angry at your mother-in-law, and that guilt turns the anger into another weight you carry alone. The verse shows that the mind can become its own enemy. It does not tell you to stop feeling angry.",
+     "try_today": "Notice one moment when your mind turns against itself today.",
+     "scene_line": "You are in your own lament, and the mind is the mind's own enemy.",
+     "asks": [
+      "How do I stop the guilt from becoming another weight?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "words": [
+      {
+       "sa": "जितात्मनः",
+       "en": "self-conquered"
+      },
+      {
+       "sa": "प्रशान्तस्य",
+       "en": "peaceful"
+      },
+      {
+       "sa": "परमात्मा",
+       "en": "supreme reality"
+      },
+      {
+       "sa": "समाहितः",
+       "en": "established"
+      },
+      {
+       "sa": "शीतोष्णसुखदुःखेषु",
+       "en": "in cold, heat, pleasure, pain"
+      },
+      {
+       "sa": "तथा",
+       "en": "and"
+      },
+      {
+       "sa": "मानापमानयोः",
+       "en": "in honor and dishonor"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.6019,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He tells him that the person who has mastered their own mind remains steady no matter what happens around them. This steadiness is not about becoming a stone. It is about being your own best friend. The self-mastered person does not let heat or cold, pleasure or pain, praise or insult shake them. They stay centred because they have chosen to be on their own side.",
+     "for_you": "The anger you feel at your mother-in-law is real. The guilt you feel for having that anger is also real. Neither of them is the whole of you. You are the one who is holding both, and that is a heavy thing to carry alone.",
+     "try_today": "When the anger rises, name it quietly as anger. Let it be there without fighting it.",
+     "scene_line": "You are on the battlefield of your own home, holding your own sword steady.",
+     "asks": [
+      "How do I hold the anger without letting it burn me?",
+      "Can I be steady without pretending everything is fine?",
+      "How do I stop my mind from becoming my own enemy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2492,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari tells the reader to let the world say what it will. People will praise or blame. Money will come or go. Death will come today or in ages. The steady person does not step off the right path. The text says setbacks rarely last for those who keep going on the right path.",
+     "for_you": "The anger and guilt you feel are real, and they are not who you are. Your in-laws, your children, and your parents all take up your time. Your work takes up your mind. You are carrying three lives and nobody sees it.",
+     "try_today": "Notice one moment when you choose the right path for yourself.",
+     "scene_line": "You are at the edge of the path, with the world shouting and the right way still ahead.",
+     "asks": [
+      "How do I keep going when the right path is invisible?",
+      "What does the right path look like when I am exhausted?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "words": [],
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 2.7788,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman finds Sita terrified in the grove. He thinks carefully before he speaks. He decides to use ordinary human words, not grand court Sanskrit. He wants to comfort this blameless woman without frightening her further. He knows that before a hard conversation, he must think about how the other person will hear him.",
+     "for_you": "You are carrying three lives and nobody sees it. The anger is real, but it is also a signal that your own voice has been pushed to the back of the room. Try speaking the anger to one person today. Say what is heavy without asking them to fix it.",
+     "try_today": "Speak the anger to one person, even if it is only to write it down and tear it up.",
+     "scene_line": "You are in your own grove, and you are terrified to speak.",
+     "asks": [
+      "How do I speak without frightening the people I love?",
+      "Can I ask for help without sounding ungrateful?",
+      "What if they cannot hear my anger at all?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.46",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.46",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "यत्कल्याणमभिध्यायेत्तत्रात्मानं नियोजयेत् / न पापं प्रति पापः स्यात्साधुरेव सदा भवेत्",
+     "line": "Don't become bad because someone was bad to you. Stay good.",
+     "translation": "Keep your mind on what is good and commit yourself to it. Do not become wicked in return for wickedness; always remain good.",
+     "words": [],
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "Staying good does not mean staying silent or unprotected.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 2.3195,
+     "beat": "act",
+     "role_fit": 0.794,
+     "meaning": null,
+     "for_you": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.lila",
+     "title": "Queen Lila fears losing her husband",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Lila",
+      "King Padma",
+      "Sarasvati",
+      "the brahmins"
+     ],
+     "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+     "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+     "lesson": "Love brings the fear of loss; trying to control death only deepens the fear.",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "anchor": {
+      "id": "yv.3.16.24",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Utpatti 16.24",
+      "family": "yv",
+      "speaker": "The brahmins",
+      "listener": "Queen Lila",
+      "setting": "Queen Lila, terrified of losing her husband, asks wise brahmins how to make him immortal.",
+      "sanskrit": "तपोजपयमैर्देवि समस्ताः सिद्धसिद्धयः । संप्राप्यन्तेऽमरत्वं तु न कदाचन लभ्यते ॥",
+      "line": "Discipline and prayer can achieve almost anything, but no one can win freedom from death.",
+      "translation": "O queen, by austerity, prayer and discipline every kind of attainment can be reached; but immortality is never gained.",
+      "words": [],
+      "why": "Love brings the fear of loss; trying to control death only deepens the fear.",
+      "misuse": "Not fatalism about care: look after the sick fully. This is about the fear itself.",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "illness_family",
+        "label": "Someone I love is seriously ill"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.lila",
+       "title": "Queen Lila fears losing her husband",
+       "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+       "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+       "lesson": "Love brings the fear of loss; trying to control death only deepens the fear."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Lila was so happy that she became terrified of losing her husband",
+     "teaser": "Queen Lila was so happy that she became terrified of losing her husband",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the weight",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18034,
+   "total": 18038
+  },
+  "_ms": 18041
+ }
+}

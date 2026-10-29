@@ -831,3 +831,39 @@ def test_bhartrihari_and_fixed_verses_show_their_sanskrit(rec):
 def test_originals_lookup_for_stored_plans(app, rec):
     out = post(app, "originals", ids=["bh.vairagya.44", "bg.2.47", "nope.1"])["originals"]
     assert "रात्रिः" in out["bh.vairagya.44"] and out["bg.2.47"] and out["nope.1"] is None
+
+
+# ── Consent (App Review 5.1.2(i)) ──────────────────────────────────────────────
+class GuardedLLM(FakeLLM):
+    """Like the real clients: refuses when the request has ai: false."""
+    def chat_json(self, messages, **kw):
+        from ai import consent
+        consent.guard()
+        return super().chat_json(messages, **kw)
+
+
+def test_ai_off_reads_nothing_and_calls_no_llm(app, rec):
+    llm = GuardedLLM(GOOD)
+    use_llm(rec, llm)
+    out = post(app, "hook", **BASE, follow="parents", note="we fight on every call, they say my job isn't real",
+               note_source="voice", ai=False)
+    u = out["understanding"]
+    assert llm.calls == 0 and llm.reranks == 0
+    assert u["source"] == "fallback" and "ai_off" in u.get("flags", [])
+    assert out["hook"]
+    plan = post(app, "plan", **BASE, follow="parents", understanding=u, ai=False)
+    assert plan["weeks"] or plan.get("days")
+    assert llm.calls == 0 and llm.reranks == 0
+
+
+def test_ai_off_refuses_ask(app, rec):
+    use_llm(rec, GuardedLLM(GOOD))
+    r = app.post("/api/v1/recommend/ask", json={**BASE, "verse_id": "BG 2.47", "question": "what does this mean for me", "ai": False})
+    assert r.status_code == 403
+
+
+def test_ai_on_is_the_default(app, rec):
+    llm = GuardedLLM(GOOD)
+    use_llm(rec, llm)
+    out = post(app, "hook", **BASE, follow="parents", note="we fight on every call, they say my job isn't real")
+    assert llm.calls == 1 and out["understanding"]["source"] == "llm"

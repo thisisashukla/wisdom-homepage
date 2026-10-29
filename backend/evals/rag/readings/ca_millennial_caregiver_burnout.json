@@ -1,0 +1,104 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "A working mother of two who now also cares for her mother-in-law after a stroke; she is exhausted, unnoticed, and feels guilty for being angry at the woman she is caring for.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "illness_family",
+   "weight": 1.585,
+   "source": "note"
+  },
+  {
+   "id": "burnout",
+   "weight": 1.45,
+   "source": "note"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.945,
+   "source": "note"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.526,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "inlaws",
+   "weight": 0.413,
+   "source": "note"
+  }
+ ],
+ "mirror": "You give the day everything, and the night too, and then lie awake with a mind that will not settle.",
+ "queries": {
+  "hook": "The weight of carrying everyone, and the guilt that comes from being angry at the person you are caring for, and the exhaustion that has no name. Someone I love is seriously ill.",
+  "diagnose": "When the mind turns against itself, anger at the one you care for becomes guilt, and the guilt becomes another weight you carry alone.",
+  "steady": "Praise and blame, gain and loss, pleasure and pain come and go; what is yours is to stand in the middle and not be shaken.",
+  "act": "Lift yourself up instead of pushing yourself down; speak your anger gently to the one you are caring for, or to a friend, and let yourself be angry without becoming it.",
+  "story": "A woman who cared for a sick mother-in-law and her own children, who felt the anger she was not allowed to feel, and who learned to hold it without letting it become her."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Carrying the weight",
+  "The anger you are not allowed to feel",
+  "More than what you do"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "exhausted and guilty",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "Seven days from carrying the weight alone to letting yourself be angry without becoming it, and finding one hour that is yours.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "inlaws",
+  "family",
+  "child",
+  "parent",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the exhaustion and the guilt, named without judgement.",
+  "diagnose": "You see that the guilt is what turns your anger into another weight, and that weight is what keeps you awake.",
+  "steady": "You hold that anger and guilt are both real, and that neither one is who you are.",
+  "act": "You try speaking the anger to one person, and you take one hour that is only yours.",
+  "story": "A woman who cared for a sick mother and her own children shows you how anger and love can live in the same heart."
+ },
+ "insight": "You are carrying three lives and nobody sees it. Underneath that is the guilt that makes you fight the anger, so you end up fighting yourself.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "mother-in-law had a stroke and lives with them",
+  "caring for two kids, a full time job and night care",
+  "feels exhausted and unnoticed",
+  "feels guilty for being angry at a sick woman"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "raising_kids",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "bridge:copied_example"
+ ]
+}

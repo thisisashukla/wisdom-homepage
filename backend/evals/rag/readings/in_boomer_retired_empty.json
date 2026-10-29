@@ -1,0 +1,104 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.65,
+ "core_struggle": "A widower with time on his hands wants to read the Gita properly, not just forwarded shlokas, after his wife left and the house went quiet.",
+ "mechanism": "disconnection",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "reconnect_faith",
+   "weight": 2.061,
+   "source": "note"
+  },
+  {
+   "id": "empty_nest",
+   "weight": 1.175,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "purpose_search",
+   "weight": 0.55,
+   "source": "profile"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.437,
+   "source": "note"
+  },
+  {
+   "id": "no_meaning",
+   "weight": 0.35,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You have time now, and the house is quiet, and you want to read the Gita properly.",
+ "queries": {
+  "hook": "The quiet after loss, and the hunger to read something that lasts instead of what passes.",
+  "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+  "steady": "What does not pass is the; the texts invite you to read what is real, not what is forwarded.",
+  "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+  "story": "A seeker who left the life he knew to find what does not pass, and found it in the stillness."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "template",
+  "story": "llm"
+ },
+ "weeks": [
+  "The quiet and the forwarded shlokas",
+  "What does not pass",
+  "The chapter you read alone"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "lonely and searching",
+ "bridge": "The quiet house and the forwarded shlokas are what the Gita calls living only for what passes. It invites you to read what does not pass.",
+ "week_thesis": "Seven days from forwarded shlokas to reading the Gita as a living text, with one chapter and one question.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [
+  "bg"
+ ],
+ "people": [
+  "partner",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the hunger for something deeper than forwarded shlokas.",
+  "diagnose": "You see that meaning is missing when we live only for what passes.",
+  "steady": "You hold that what does not pass is the, and the Gita is a living text.",
+  "act": "You try reading one chapter slowly, without looking for a takeaway.",
+  "story": "A seeker who left the life he knew to find what does not pass shows you the way."
+ },
+ "insight": "The house is quiet and the forwarded shlokas are not enough. What you are reaching for is a way to read the Gita that speaks to the silence.",
+ "seat": "a widower whose days have opened up and who wants to read the Gita properly",
+ "life_context": "",
+ "details": [
+  "wife has left",
+  "house is very quiet",
+  "children call on Sunday",
+  "has time now"
+ ],
+ "age": "55p",
+ "stages": [
+  "retired"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "stance:seeking_over_pain",
+  "mechanism:grief_without_death",
+  "act:act_not_actionable"
+ ]
+}

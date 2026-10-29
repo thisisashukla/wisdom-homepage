@@ -1,0 +1,765 @@
+{
+ "situation": {
+  "id": "uk_genx_sikh_business",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged",
+  "market": "UK (Leicester)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "trapped and resentful",
+   "bridge": "The father who still walks in and changes your decisions is what the Gita calls living someone else's dharma: a borrowed authority, and it is not yours to carry.",
+   "week_thesis": "Seven days from being treated like a boy in his own business to standing in the authority he has already held for fifteen years.",
+   "week_beats": {
+    "hook": "You recognise being treated as less than your role, and the anger of it, named without blame.",
+    "story": "A son who stood before his father and held his ground on the authority that was his to keep shows you what it looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A -year-old man who has run a business for years is being undermined by his -year-old father in front of his staff, and he cannot speak up because of who his father is.",
+   "mirror": "At forty-seven, your father still changes your decisions in front of the people you lead.",
+   "insight": "You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as if your authority is his to give and take, by the man who gave you life, in the place you have built and run for fifteen years. Tension with my in-laws.",
+    "diagnose": "When a parent sees only a role instead of a person, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit the picture they hold.",
+    "story": "A son who stood before his father and held his ground on the authority that was his to keep, and was proven right by the order he restored."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The borrowed authority",
+    "Whose picture it is",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "has run the business for years",
+    "father is and still walks in to change decisions",
+    "does it in front of the staff"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:35=0.0,16=0.3,11=0.6,8=0.6,49=0.6,532=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.63",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:repeat=3,soft_kept=3,try_today_accept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 1.9519,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna is speaking to Arjuna on the field, where the war is about to begin. Arjuna is paralyzed, unsure whether to fight or to step back. Krishna tells him that it is better to follow one's own path, even if it is done imperfectly, than to take on the path of another, even if it is done perfectly. Borrowing another's way of being, another's authority, carries a deep fear because it is not rooted in your own nature.",
+     "for_you": "You have been running your own business for years, yet your father walks in and changes your decisions in front of your staff. That is a borrowed authority, not yours to carry.",
+     "try_today": "Notice the exact moment your father speaks over you today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.40",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 40",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how the world treats someone who has lost money.",
+     "sanskrit": "तानीन्द्रियाण्यविकलानि तदेव नाम सा बुद्धिरप्रतिहता वचनं तदेव । अर्थोष्मणा विरहितः पुरुषः क्षणेन सोऽप्यन्य एव भवतीति विचित्रमेतत् ॥",
+     "line": "Same person, same mind, same voice. Lose money, and people suddenly treat you as someone else.",
+     "translation": "The same faculties, unimpaired; the same name; the same unclouded mind; the same speech. Yet a man deprived of the warmth of wealth becomes, in a moment, someone else. How strange!",
+     "words": [],
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "The verse mocks how the world sees you; it does not measure your worth.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.392,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari speaks to the reader from a quiet place, looking at how the world bends. He speaks of a person who has lost money. The faculties are the same. The mind is unclouded. The name is the same. The speech is the same. Yet the world treats this person as someone else. Bhartrihari calls it strange. He does not say the person is changed. He says the world is changed, and its warmth is gone. The verse asks you to see the difference between who you are and how the room treats you.",
+     "for_you": "The room where your father walks in and changes your decisions is cold, and it treats you as someone else. You are the same person who has run the business for years. The change is not in you. The change is in the air, and you can name it.",
+     "try_today": "Notice when the room goes cold and you become someone else. Name it silently to yourself, once. That is enough.",
+     "scene_line": "You are the same person in a room that suddenly treats you as someone else.",
+     "asks": [
+      "How do I tell the room's coldness from my own worth?",
+      "How do I stand in my own name when the room forgets it?",
+      "How do I stop borrowing their coldness?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.2.2.11",
+     "ref": "Katha Upanishad 2.2.11",
+     "ref_iast": "Kaṭha Upaniṣad 2.2.11",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the inner self and the world's pain.",
+     "sanskrit": "सूर्यो यथा सर्वलोकस्य चक्षुः न लिप्यते चाक्षुषैर्बाह्यदोषैः । एकस्तथा सर्वभूतान्तरात्मा न लिप्यते लोकदुःखेन बाह्यः ॥",
+     "line": "The sun shows every flaw yet stays untouched. Your deepest self stays untouched by the world's sorrow.",
+     "translation": "Just as the sun, the eye of the whole world, is not stained by the flaws the eyes see outside, so the one inner self of all beings is not stained by the sorrow of the world; it stands apart.",
+     "words": [],
+     "why": "Look inward; what lasts is not out there among passing things.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.inward",
+      "title": "Turning the gaze inward",
+      "summary": "In the second half of his teaching, Yama explains that our senses face outward, so we miss what is within. The wise turn inward and stop looking for lasting things among passing ones; when the knots of the heart are cut, a person is free.",
+      "story_hook": "",
+      "lesson": "Look inward; what lasts is not out there among passing things."
+     },
+     "score": 2.8499,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Yama says this to Nachiketa on the nature of the self. He tells him that the sun sees every flaw in the world yet remains untouched by them. In the same way, the deepest self within you is not stained by the sorrow or the judgment of the world. It stands apart. This means your worth is not something that is built or ruined by what others see or say about you. It is already there, waiting. The pain is real, but it does not reach the core of who you are.",
+     "for_you": "Your father walks in and changes the decisions you have held for fifteen years, and the staff watches. That hurts because it makes you feel small in the very place you have built. But your deepest self is not stained by his borrowed authority.",
+     "try_today": null,
+     "scene_line": "You stand in your own business, and the sun of your self sees every flaw yet stays untouched.",
+     "asks": [
+      "How do I hold my ground when my own father undoes my work?",
+      "Can my self really stay untouched when I am being treated like a boy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.8",
+     "ref": "Ashtavakra Gita 15.8",
+     "ref_iast": "Aṣṭāvakra Gītā 15.8",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "श्रद्धस्व तात श्रद्धस्व नात्र मोऽहं कुरुष्व भोः । ज्ञानस्वरूपो भगवानात्मा त्वं प्रकृतेः परः ॥",
+     "line": "Have faith, my child, have faith. You are more than everything that happens to you.",
+     "translation": "Have faith, my son, have faith. Do not be confused about this. You are knowledge itself, the Lord, the Self beyond nature.",
+     "words": [
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "नात्र",
+       "en": "here not"
+      },
+      {
+       "sa": "मः",
+       "en": "illusion"
+      },
+      {
+       "sa": "कुरुष्व",
+       "en": "do"
+      },
+      {
+       "sa": "भोः",
+       "en": "oh"
+      },
+      {
+       "sa": "ज्ञानस्वरूपो",
+       "en": "embodiment of wisdom"
+      },
+      {
+       "sa": "भगवानात्मा",
+       "en": "supreme self"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "प्रकृतेः",
+       "en": "of nature"
+      },
+      {
+       "sa": "परः",
+       "en": "beyond"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.8149,
+     "beat": "steady",
+     "role_fit": 0.775,
+     "meaning": "Ashtavakra is speaking to Janaka, pressing him to see past his royal duties. The old man is telling the king that his true nature is not the crown, not the kingdom, not even the mind that worries. He says you are knowledge itself, the Lord, the Self beyond nature. This means your worth is not the business you run or the decisions you make. It is the awareness in which all of that happens. The waves of praise and blame roll across you, but you remain the ocean.",
+     "for_you": "You have run that business for years. You know the numbers, the staff, the doors. The smallness he shows you is his own, not yours. Your authority is not borrowed.",
+     "try_today": "Notice one moment of your own competence today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.1886,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "The teacher speaks to a student who has finished his studies and is leaving to begin family life. He is not giving a lecture. He is giving the tools to live well. The teacher says to speak the truth. He says to do what is right. He says to keep learning. These are not separate tasks. They are the work of a whole life. The teacher is saying that a person does not need to be perfect to be good. They only need to keep moving forward with honesty and care.",
+     "for_you": "You have been running this business for years, but your father still walks in and changes your decisions in front of your staff. You feel trapped, and you feel smaller than you are. The teacher is not asking you to be perfect.",
+     "try_today": "State one decision you have already made and do not change it.",
+     "scene_line": "You are the student leaving the school, and your father is still telling you what to study.",
+     "asks": [
+      "How do I know what is the right thing to do here?",
+      "What does it mean to do what is right when I am afraid?",
+      "How do I keep learning when I feel I already know everything?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 2.7286,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha, the king's teacher, speaks to Bharat, who is shattered by his father's death and his brother Ram's exile. Bharat's heart is in conflict because he believes he is the reason for this pain. Vasishtha tells Bharat to keep courage in his heart and do what this moment asks of him today. The verse proposes that when your head and your heart are at war, you could go and face the person you believe you have wronged.",
+     "for_you": "You have carried the belief that you are the reason for your father's interference for fifteen years. That is the war in your heart. The courage Vasishtha asks for is not a speech to the staff.",
+     "try_today": "Stand in your own doorway before you enter the business room.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.vibhishan_counsel",
+     "title": "Vibhishan speaks up and is kicked",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Vibhishan",
+      "Ravana",
+      "Malyavan"
+     ],
+     "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+     "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+     "lesson": "Say the hard thing with respect; if you are struck for it, you may go.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.36.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 36",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ravana",
+      "setting": "Vibhishan, Ravana's younger brother, advises him in open court.",
+      "sanskrit": "चौदह भुवन एक पति होई। भूत द्रोह तिष्टइ नहिं सोई॥ गुन सागर नागर नर जोऊ। अलप लोभ भल कहइ न कोऊ ॥",
+      "line": "You may be gifted and clever, but even a little greed and people stop calling you good.",
+      "translation": "Even a sole master of the fourteen worlds cannot last if he makes enemies of living beings. A person may be an ocean of virtues and clever too, but if he has even a little greed, no one calls him good.",
+      "words": [
+       {
+        "sa": "चौदह",
+        "en": "fourteen"
+       },
+       {
+        "sa": "भुवन",
+        "en": "worlds"
+       },
+       {
+        "sa": "एक",
+        "en": "one"
+       },
+       {
+        "sa": "पति",
+        "en": "lord"
+       },
+       {
+        "sa": "होई",
+        "en": "is"
+       },
+       {
+        "sa": "भूत",
+        "en": "living beings"
+       },
+       {
+        "sa": "द्रोह",
+        "en": "hatred"
+       },
+       {
+        "sa": "तिष्टइ",
+        "en": "endures"
+       },
+       {
+        "sa": "नहिं",
+        "en": "not"
+       },
+       {
+        "sa": "सोई",
+        "en": "that"
+       },
+       {
+        "sa": "गुन",
+        "en": "virtues"
+       },
+       {
+        "sa": "सागर",
+        "en": "ocean"
+       },
+       {
+        "sa": "नागर",
+        "en": "wise"
+       },
+       {
+        "sa": "नर",
+        "en": "man"
+       },
+       {
+        "sa": "जोऊ",
+        "en": "who"
+       },
+       {
+        "sa": "अलप",
+        "en": "little"
+       },
+       {
+        "sa": "लोभ",
+        "en": "greed"
+       },
+       {
+        "sa": "भल",
+        "en": "good"
+       },
+       {
+        "sa": "कहइ",
+        "en": "says"
+       },
+       {
+        "sa": "न",
+        "en": "not"
+       },
+       {
+        "sa": "कोऊ",
+        "en": "anyone"
+       }
+      ],
+      "why": "Say the hard thing with respect; if you are struck for it, you may go.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.vibhishan_counsel",
+       "title": "Vibhishan speaks up and is kicked",
+       "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+       "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+       "lesson": "Say the hard thing with respect; if you are struck for it, you may go."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "teaser": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "for_you": "Vibhishan stood in the court and named the truth, and Ravana cast him out. You are already carrying the authority your father took. You do not need his approval to keep it. The space you leave when you step back is your own.",
+     "asks": [
+      "What is the one truth I have not spoken to my father?",
+      "How do I leave without feeling like I have failed?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The borrowed authority",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 20661,
+   "total": 20664
+  },
+  "_ms": 20668
+ }
+}

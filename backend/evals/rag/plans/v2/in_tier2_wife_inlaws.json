@@ -1,0 +1,698 @@
+{
+ "situation": {
+  "id": "in_tier2_wife_inlaws",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 2,
+   "topic": "someone",
+   "follow": "in_laws"
+  },
+  "note": "my mother in law keeps saying once the baby comes you will anyway leave all this CA work. I built my practice from zero. my husband just changes the subject. I feel like I am slowly being erased",
+  "note_source": "text",
+  "expect_stance": "wronged",
+  "market": "India (Indore)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "angry and erased",
+   "bridge": "The life you built from zero is what the Gita calls your own dharma: a duty that no one else can do, and no one else can take from you.",
+   "week_thesis": "Seven days from being told you will disappear to standing in the truth of what you are and what you built.",
+   "week_beats": {
+    "hook": "You recognise being erased, and the anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "child",
+    "parent",
+    "work",
+    "partner"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "A CA who built her practice from zero is being told by her mother-in-law that she will leave it after the baby, while her husband stays silent and she feels herself being erased.",
+   "mirror": "You feel like you are slowly being erased while your husband changes the subject.",
+   "insight": "You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.505,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being told the life you built will end, and the anger of watching yourself be erased while the one beside you says nothing. Tension with my in-laws.",
+    "diagnose": "When others see only a role, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of learning and standing, dismissed by her husband's family, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Erased",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "husband changes the subject"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:5=0.6,15=0.3,11=0.6,17=0.3,532=0.7,7=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.66",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:fallback_line=1,gendered=3,not_second_person=1,try_today_gendered=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.8727,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him to lift himself up by his own will. He says do not let yourself sink. The self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+     "try_today": "Notice the moment you start to shrink and stand straight.",
+     "scene_line": "Your partner changes the subject while your in-laws erase you.",
+     "asks": [
+      "How do I lift myself when no one else will?",
+      "What does it mean to be my own friend here?",
+      "How do I stop sinking into their words?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "words": [
+      {
+       "sa": "तत्रैवं",
+       "en": "therefore so"
+      },
+      {
+       "sa": "सति",
+       "en": "being"
+      },
+      {
+       "sa": "कर्तारम्",
+       "en": "doer"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "self"
+      },
+      {
+       "sa": "केवलं",
+       "en": "only"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "यः",
+       "en": "who"
+      },
+      {
+       "sa": "पश्यति",
+       "en": "sees"
+      },
+      {
+       "sa": "अकृतबुद्धित्वान्",
+       "en": "without confused intellect"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "स",
+       "en": "that"
+      },
+      {
+       "sa": "पश्यति",
+       "en": "sees"
+      },
+      {
+       "sa": "दुर्मतिः",
+       "en": "foolishness/delusion"
+      }
+     ],
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 3.0521,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, right after explaining that every action has five causes. Arjuna is standing in the middle of a great war, believing he alone is deciding the fate of the world. Krishna corrects this. He says that whoever looks at an action and sees only themselves as the sole doer, without seeing the full picture, is not seeing truly. The idea is simple. You are one cause among five. There is the setting, the doer, the tools, the effort, and what comes from beyond your control.",
+     "for_you": "Your in-laws are writing your ending before you have written it, and your partner's silence is adding to the erasure. This verse names the pattern. You are not the sole author of this conflict, so you do not carry the full blame for the tension either.",
+     "try_today": "Notice one cause outside yourself today.",
+     "scene_line": "You stand in your office, one cause among five, not the whole picture.",
+     "asks": [
+      "How do I hold my part without owning their silence?",
+      "What is the cause I am ignoring in this fight?",
+      "Can I see my own effort without taking their blame?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.2.2.11",
+     "ref": "Katha Upanishad 2.2.11",
+     "ref_iast": "Kaṭha Upaniṣad 2.2.11",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the inner self and the world's pain.",
+     "sanskrit": "सूर्यो यथा सर्वलोकस्य चक्षुः न लिप्यते चाक्षुषैर्बाह्यदोषैः । एकस्तथा सर्वभूतान्तरात्मा न लिप्यते लोकदुःखेन बाह्यः ॥",
+     "line": "The sun shows every flaw yet stays untouched. Your deepest self stays untouched by the world's sorrow.",
+     "translation": "Just as the sun, the eye of the whole world, is not stained by the flaws the eyes see outside, so the one inner self of all beings is not stained by the sorrow of the world; it stands apart.",
+     "words": [],
+     "why": "Look inward; what lasts is not out there among passing things.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.inward",
+      "title": "Turning the gaze inward",
+      "summary": "In the second half of his teaching, Yama explains that our senses face outward, so we miss what is within. The wise turn inward and stop looking for lasting things among passing ones; when the knots of the heart are cut, a person is free.",
+      "story_hook": "",
+      "lesson": "Look inward; what lasts is not out there among passing things."
+     },
+     "score": 2.9739,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Yama speaks to Nachiketa about the self that is untouched by the world's sorrow. He says that just as the sun shows every flaw but stays untouched, the inner self remains apart from the pain we see outside. The verse asks you to turn your gaze inward and look for what lasts there, instead of among passing things.",
+     "for_you": "Your mother-in-law's words are a passing thing, like a stain on a window. They do not touch the core of what you built from nothing. You do not have to carry the weight of their doubt.",
+     "try_today": null,
+     "scene_line": "You stand in your own practice, and the sun of your self shines on the doubt without being stained.",
+     "asks": [
+      "How do I tell my own steady self from the noise they make?",
+      "Where does my work end and their opinion begin?",
+      "How do I turn my gaze inward when they are all around me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.4",
+     "ref": "Ashtavakra Gita 15.4",
+     "ref_iast": "Aṣṭāvakra Gītā 15.4",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "न त्वं देहो न ते देहो भोक्ता कर्ता न वा भवान् । चिद्रूपोऽसि सदा साक्षी निरपेक्षः सुखं चर ॥",
+     "line": "You are not your body or your achievements. You are the awareness watching it all. Live lightly.",
+     "translation": "You are not the body, nor is the body yours; you are not the doer or the enjoyer. You are awareness itself, the ever-present witness, needing nothing. Live happily.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "देहो",
+       "en": "body"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "देहो",
+       "en": "body"
+      },
+      {
+       "sa": "भोक्ता",
+       "en": "experiencer"
+      },
+      {
+       "sa": "कर्ता",
+       "en": "doer"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "indeed"
+      },
+      {
+       "sa": "भवान्",
+       "en": "you"
+      },
+      {
+       "sa": "चिद्-रूपः",
+       "en": "consciousness-form"
+      },
+      {
+       "sa": "असि",
+       "en": "are"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "साक्षी",
+       "en": "witness"
+      },
+      {
+       "sa": "निरपेक्षः",
+       "en": "impartial"
+      },
+      {
+       "sa": "सुखं",
+       "en": "happy/at ease"
+      },
+      {
+       "sa": "चर",
+       "en": "moving/wandering"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.8033,
+     "beat": "steady",
+     "role_fit": 0.495,
+     "meaning": "Ashtavakra speaks to Janaka. He has spent the morning stripping away every role Janaka clings. Now he presses the final point. You are not the body, nor is the body yours. You are not the doer or the enjoyer. You are awareness itself, the ever-present witness. You need nothing. Live happily, he says, live lightly.",
+     "for_you": "The CA practice you built from zero is a wave rising in your awareness. Your mother-in-law's words are another wave. You are not the wave. You are the water. The erasure you feel is the wave claiming to be the water. Stand in the water. The practice is yours.",
+     "try_today": "When they speak, notice the gap between their words and the life you actually live.",
+     "scene_line": "You stand in your own office, building something from zero, while a smaller picture of you is handed to you.",
+     "asks": [
+      "How do I hold my own worth when others refuse to see it?",
+      "Can I be awareness without becoming cold to their cruelty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.5942,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha how a person who is free inside moves through the world. Ribhu says to do the work that is right in front of you. Speak gently to everyone, whether they are a friend or an enemy. Read what is in their hearts. When you do this, you will not sink in the world. This means you can live your life fully. You can work and speak and act. But you do not have to be pushed around by your wants or your grief.",
+     "for_you": "The work you do is your own dharma. Your in-laws are trying to make you sink with their words. But you can do your work and speak gently without letting their judgment drag you under. Your practice stands on its own. It does not disappear because someone says it will.",
+     "try_today": "Do one small task for your work today with full attention.",
+     "scene_line": "You are at your desk, and the world is trying to make you sink.",
+     "asks": [
+      "How do I do my work when the air at home is so heavy?",
+      "Can I stay calm inside when my husband stays silent?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.0073,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher speaks to a student leaving school for family life. The teacher says to speak the truth, practise what is right, and never stop learning. The teacher also tells the student to honour their parents and teachers, to give with grace, and to copy only the good conduct of those who came before them.",
+     "for_you": "The life you built is your own dharma, a duty no one else can do for you.",
+     "try_today": null,
+     "scene_line": "You are at the graduation of your own making, and someone is trying to hand you a smaller diploma.",
+     "asks": [
+      "How do I tell my husband that his silence is a choice?",
+      "What does it mean to practise what is right for my career?",
+      "How do I keep learning when everyone around me is trying to shrink me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.satyakama",
+     "title": "Satyakama Jabala, the honest boy",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Satyakama",
+      "Jabala",
+      "Haridrumata Gautama"
+     ],
+     "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+     "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+     "lesson": "Honesty about who you are is the best credential you can bring.",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "anchor": {
+      "id": "up_chhandogya.304",
+      "ref": "Chhandogya Upanishad 4.4.2",
+      "ref_iast": "Chāndogya Upaniṣad 4.4.2",
+      "family": "up",
+      "speaker": "Jabala",
+      "listener": "Her son Satyakama",
+      "setting": "A boy asks his mother his lineage before seeking a teacher.",
+      "sanskrit": "सा हैनमुवाच नाहमेतद्वेद तात यद्गोत्रस्त्वमसि बह्वहं चरन्ती परिचारिणी यौवने त्वामलभे साहमेतन्न वेद यद्गोत्रस्त्वमसि जबाला तु नामाहमस्मि सत्यकामो नाम त्वमसि स सत्यकाम एव जाबालो ब्रवीथा इति ॥",
+      "line": "His mother said, 'I don't know your father's line. I am Jabala, you are Satyakama. Say exactly that.'",
+      "translation": "She said to him: 'I do not know your lineage, my child. In my youth I moved about a great deal as a serving woman, and then I had you. So I do not know your lineage. My name is Jabala and your name is Satyakama. Just say you are Satyakama Jabala.'",
+      "words": [],
+      "why": "Honesty about who you are is the best credential you can bring.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "self_worth",
+        "label": "I don't feel worthy"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.chhandogya.satyakama",
+       "title": "Satyakama Jabala, the honest boy",
+       "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+       "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+       "lesson": "Honesty about who you are is the best credential you can bring."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "teaser": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "for_you": "Satyakama asked for a truth his mother could not give him, and he brought that exact truth to his teacher. Your mother-in-law offers a false picture of your future, but your own record of building a practice from nothing is the credential that matters.",
+     "asks": [
+      "How do I hold my worth when they call it temporary?",
+      "Can honesty about my past protect my future?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Erased",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19981,
+   "total": 19983
+  },
+  "_ms": 19985
+ }
+}

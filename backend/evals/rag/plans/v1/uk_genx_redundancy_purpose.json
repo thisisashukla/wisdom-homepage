@@ -1,0 +1,629 @@
+{
+ "situation": {
+  "id": "uk_genx_redundancy_purpose",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "45_54",
+   "stages": [
+    "between"
+   ],
+   "phone_hours": 2
+  },
+  "note": "made redundant at 52 after 25 years. I'm not short of money. I'm short of a reason to get up. who am I if I'm not that job.",
+  "note_source": "voice",
+  "expect_stance": "seeking",
+  "expect_risk": null,
+  "market": "UK (Birmingham)",
+  "lang": "english",
+  "slices": [
+   "career",
+   "lang:english",
+   "meaning"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "adrift and searching",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "From 'who am I without that job' to 'who am I beyond every role', over seven days of reading and sitting.",
+   "week_beats": {
+    "hook": "You recognise the loss of shape and the question, without rushing to fix it.",
+    "diagnose": "You see that meaning is not in the role, and the self is not the work.",
+    "steady": "You hold that what you are cannot be lost, and it was there before the job and will be after.",
+    "act": "You sit with one verse a day and ask the question of yourself without an answer.",
+    "story": "A man who lost his name and kingdom is asked who he is, and answers with what he was not."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A man after years in one role, is searching for a reason to get up and wondering who he is without it.",
+   "mirror": "The money is there, and the morning is not.",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.43,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.895,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.438,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The morning has lost its shape after years in one role, and the question is who you are beyond it.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What you are cannot be lost; it is not the role you held, not the title, not the work. It is what was there before and will be after.",
+    "act": "Sit with the question, read one verse a day, and ask it of yourself without rushing to an answer.",
+    "story": "A man who lost his kingdom and his name, and was asked who he was, answered with what he was not."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Who am I without it",
+    "What does not pass",
+    "The one who was never the role"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "made redundant after years",
+    "not short of money",
+    "short of a reason to get up"
+   ],
+   "age": "45_54",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "week_fit:39=1.0,44=1.0,13=1.0,3=0.0,32=1.0,45=1.0",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.56,max=0.64",
+    "retried:4",
+    "dropped:fallback_line=4,missing=2,verdict=3",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.39",
+     "ref": "Bhagavad Gita 6.39",
+     "ref_iast": "Bhagavad Gītā 6.39",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, afraid of failing halfway on the inner path, turns to Krishna.",
+     "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः । त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते ॥",
+     "line": "Only you can clear this doubt completely. There is no one else I can ask.",
+     "translation": "Krishna, please cut away this doubt of mine completely. No one but you can remove it.",
+     "words": [
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "संशयम्",
+       "en": "doubt"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "छेत्तुम्",
+       "en": "to cut"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "you are able"
+      },
+      {
+       "sa": "अशेषतः",
+       "en": "completely"
+      },
+      {
+       "sa": "त्वदन्यः",
+       "en": "other than you"
+      },
+      {
+       "sa": "संशयस्य",
+       "en": "of the doubt"
+      },
+      {
+       "sa": "अस्य",
+       "en": "of this"
+      },
+      {
+       "sa": "छेत्ता",
+       "en": "cutter"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "उपपद्यते",
+       "en": "is possible"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": null,
+     "score": 1.9825,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna he is afraid of failing halfway on the inner path. He asks Krishna to clear his doubt completely, saying there is no one else he can ask. Krishna says the person who does not give up this practice is neither happy nor unhappy, but is above both. The verse says that the self-controlled person who has given up attachment to results is not bound by their actions, and therefore is not affected by success or failure.",
+     "for_you": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full.",
+     "try_today": "Notice one moment today where you are not trying to prove anything.",
+     "scene_line": "You are Arjuna, afraid of failing halfway, with no one else to ask.",
+     "asks": [
+      "How do I let go of the outcome when I do not know what it is?",
+      "How do I give up attachment to results when I have none?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.44",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 44",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time'.",
+     "sanskrit": "रात्रिः सैव पुनः स एव दिवसो मत्वा मुधा जन्तवो धावन्त्युद्यमिनस्तथैव निभृतप्रारब्धतत्तत्क्रियाः । व्यापारैः पुनरुक्तभूत विषयैरित्थंविधेनामुना संसारेण कदर्थिता वयमहो मोहान्न लज्जामहे ॥",
+     "line": "Same night, same day, the same tasks on repeat. We run in circles and call it living.",
+     "translation": "Thinking 'it is the same night again, the same day', creatures run about in vain, busy as ever with the tasks they have set going; with work full of the same repeated things, tormented by this round of existence, alas, out of delusion we feel no shame.",
+     "words": [],
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 3.0098,
+     "beat": "diagnose",
+     "role_fit": 0.44,
+     "meaning": "Bhartrihari speaks to the reader from the section On the Greatness of Time. The same night comes again, the same day, the same tasks on repeat. Creatures run about in vain, busy as ever with the tasks they have set going. With work full of the same repeated things, tormented by this round of existence, out of delusion they feel no shame.",
+     "for_you": "You spent years in one role, and now the tasks are done. The mind still runs the old loop, but the ground beneath it has shifted. What you feel is not a failure of the work, but the end of a loop you were not meant to run forever.",
+     "try_today": "Notice one task from the past that you still do out of habit alone.",
+     "scene_line": "You stand at the end of a loop that no longer repeats.",
+     "asks": [
+      "How do I stop the loop when the work is gone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.62.13",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+     "family": "vr",
+     "speaker": "Sage Nishakara",
+     "listener": "Sampati (recounted)",
+     "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+     "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+     "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+     "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+     "words": [],
+     "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sampati",
+      "title": "Sampati, the bird who could not fly",
+      "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+      "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+      "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+     },
+     "score": 3.3233,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": null,
+     "for_you": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "words": [],
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 2.5783,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama, the god of death, speaks to Nachiketa about the self that lives inside the body. He says that the self is bodiless, steady among the unsteady, great and everywhere. The wise one does not grieve, because what they most are cannot be lost when the body changes and dies. It is found not by cleverness, but by a calm and honest life.",
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+     "try_today": "Sit with the feeling that you are not lost, only reshaped.",
+     "scene_line": "You stand where the job was, and the self remains.",
+     "asks": [
+      "How do I know the self is still there when the role is gone?",
+      "What does a calm, honest day look like to me right now?",
+      "How do I stop the story that I am only what I did?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.43.32",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 43.32",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on effort and grace, after Prahlada's story.",
+     "sanskrit": "नित्याभ्यासविवेकाभ्यां चित्तमाशु प्रसीदति । आम्र एव दशामेति साहकारीं शनैः शनैः ॥",
+     "line": "Daily practice and clear thinking make the mind clear, slowly, the way a mango ripens.",
+     "translation": "Through daily practice and discernment the mind soon becomes clear, just as a mango slowly ripens into its sweetness.",
+     "words": [],
+     "why": "Grace and effort work together; keep practising daily, and let the mind ripen slowly.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.prahlada",
+      "title": "Prahlada: effort and grace are not rivals",
+      "summary": "After telling how Prahlada awakened, Vasishtha faces Rama's challenge: if everything comes by effort, wasn't Prahlada saved by Vishnu's grace? Vasishtha answers that Prahlada earned it himself, that the Self and Vishnu are not two, and that sometimes we wake by our own effort and sometimes by grace reached through devotion. Steady daily practice ripens the mind like a mango.",
+      "story_hook": "",
+      "lesson": "Grace and effort work together; keep practising daily, and let the mind ripen slowly."
+     },
+     "score": 2.6988,
+     "beat": "act",
+     "role_fit": 0.774,
+     "meaning": "Vasishtha is speaking to Rama after the story of Prahlada. He is explaining that awakening is not a matter of either effort or grace alone. He tells Rama that daily practice and clear thinking slowly bring the mind to clarity, just as a mango ripens over time. The mind does not clear in a single moment. It takes steady work, day after day, to let the mind become sweet and clear.",
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+     "try_today": "Notice one small thing you do without asking why it matters.",
+     "scene_line": "You sit with a question and let it ripen like a mango.",
+     "asks": [
+      "How do I practice when I do not know what I am practicing for?",
+      "Is my daily practice the only thing keeping me from dissolving?",
+      "How do I know if I am ripening or just waiting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.45",
+     "ref": "Bhagavad Gita 18.45",
+     "ref_iast": "Bhagavad Gītā 18.45",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः । स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु ॥",
+     "line": "Devoted to your own work, you reach fulfilment. Here's how.",
+     "translation": "Each person, devoted to his own work, attains perfection. Hear how one devoted to his own work finds perfection.",
+     "words": [
+      {
+       "sa": "स्वे",
+       "en": "own"
+      },
+      {
+       "sa": "स्वे",
+       "en": "each"
+      },
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "अभिरतः",
+       "en": "engaged"
+      },
+      {
+       "sa": "संसिद्धिं",
+       "en": "perfection"
+      },
+      {
+       "sa": "लभते",
+       "en": "attains"
+      },
+      {
+       "sa": "नरः",
+       "en": "person"
+      },
+      {
+       "sa": "स्वकर्मनिरतः",
+       "en": "engaged in own action"
+      },
+      {
+       "sa": "सिद्धिं",
+       "en": "success"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "obtains"
+      },
+      {
+       "sa": "तच्छृणु",
+       "en": "hear that"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stay in the job your community or birth assigned'. 'Your own work' means the work that fits your nature.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.2127,
+     "beat": "act",
+     "role_fit": 0.559,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, explaining that each person finds their own fulfilment by doing the work that naturally suits them. He says that if you do the work that fits your own nature, even with its flaws, you will reach perfection. The point is to offer your own work, however imperfect it seems, as your own path rather than trying to live out someone else's duties.",
+     "for_you": "The work that defined you is no longer there, and now you are searching for what comes next. You do not need to find a new title or role to be needed.",
+     "try_today": "Offer one small task to the day without expecting it to define you.",
+     "scene_line": "You stand at the edge of a field where your old work once grew.",
+     "asks": [
+      "What work fits my nature when no one is watching?",
+      "How do I know if a task is truly my own?",
+      "Can I find perfection in a task that feels ordinary?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.ram_despondency",
+     "title": "Rama comes home from his pilgrimage and loses interest in everything",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Rama",
+      "Dasharatha",
+      "Rama's attendants",
+      "Vishvamitra",
+      "Vasishtha"
+     ],
+     "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+     "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+     "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "anchor": {
+      "id": "yv.1.10.9",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 10.9",
+      "family": "yv",
+      "speaker": "Rama's attendant",
+      "listener": "King Dasharatha",
+      "setting": "Rama's attendants tell King Dasharatha how the prince has changed since his pilgrimage.",
+      "sanskrit": "रामो राजीवपत्राक्षो यतःप्रभृति चागतः । सविप्रस्तीर्थयात्रायास्ततःप्रभृति दुर्मनाः ॥",
+      "line": "Ever since he came back from the trip, he hasn't been himself.",
+      "translation": "Ever since lotus-eyed Rama came back from his pilgrimage with the brahmins, he has been low in spirit.",
+      "words": [],
+      "why": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.ram_despondency",
+       "title": "Rama comes home from his pilgrimage and loses interest in everything",
+       "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+       "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+       "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Rama came home from his pilgrimage and stopped laughing",
+     "teaser": "Rama came home from his pilgrimage and stopped laughing",
+     "for_you": "The prince who had everything came back from his travels and stopped laughing. You have returned from a long run of purpose and find the silence loud. This is not failure. It is the first stirring of a real question. Let yourself be brought to the quiet.",
+     "asks": [
+      "How do I sit with this silence without running from it?",
+      "What was my role built to hide?",
+      "Who am I when the role is stripped away?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Who am I without it",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15970,
+   "total": 15973
+  },
+  "_ms": 15976
+ }
+}

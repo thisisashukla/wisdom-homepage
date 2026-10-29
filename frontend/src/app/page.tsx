@@ -11,6 +11,7 @@ import DevicePlans from '@/components/funnel/DevicePlans'
 import { getAllChapters, getAllVerseRefs, getVerse, getVerseAudio, chapterImage } from '@/lib/gita'
 import { appStoreUrl } from '@/lib/app'
 import { GITA_FOR } from '@/lib/gitaFor'
+import { THEME_SLUGS } from '@/lib/themePlans'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import PlatformOnly from '@/components/funnel/PlatformOnly'
 import './home.css'
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://wisdomquotes.in',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.jpg', width: 1200, height: 630, alt: 'Wisdom: the Bhagavad Gita verse for what you are going through' }],
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630, alt: 'Wisdom: the Bhagavad Gita verse for what you are going through' }],
   },
   alternates: { canonical: 'https://wisdomquotes.in' },
 }
@@ -288,10 +289,11 @@ export default async function HomePage() {
             {GITA_FOR.map((p) => (
               <a key={p.slug} href={`/gita-for/${p.slug}`} className="gita-for-tile rv" data-mp-location={`home_gita_for_${p.slug}`}>
                 <span className="gita-for-label">{p.label}</span>
-                <span className="gita-for-count">{p.verses.length} verses →</span>
+                <span className="gita-for-count">{THEME_SLUGS.includes(p.slug) ? '7 verses →' : `${p.verses.length} verses →`}</span>
               </a>
             ))}
           </div>
+          <p style={{ marginTop: '22px' }}><a href="/reading-plans" className="btn-ghost" data-mp-location="home_gita_for_all_plans">All reading plans →</a></p>
         </div>
       </section>
 

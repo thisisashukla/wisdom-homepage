@@ -1,0 +1,91 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.6,
+ "core_struggle": "Works hard but is consumed by whether they will get the promotion, and does not know how to hold effort and results.",
+ "mechanism": "attachment_to_results",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "outcome_anxiety",
+   "weight": 1.41,
+   "source": "note"
+  },
+  {
+   "id": "not_promoted",
+   "weight": 1.265,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.93,
+   "source": "note"
+  },
+  {
+   "id": "comparison",
+   "weight": 0.422,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.2,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You work hard, and then you work the outcome in your head until the two feel like one.",
+ "queries": {
+  "hook": "The weight of wanting something you cannot control, and the mind that will not stop working the outcome before it is decided.",
+  "diagnose": "When the mind clings to a result it cannot control, effort turns into anxiety; worrying multiplies what has not happened and steals the present.",
+  "steady": "Praise and blame, gain and loss, come and go; what is yours is the effort, not the outcome, and the effort is never wasted.",
+  "act": "Do your work fully, let the result go, and when the mind runs to the future, bring it back to what is in your hands today.",
+  "story": "A man who worked for a king and was tested on his attachment to results shows what it means to act and let go."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The mind and the result",
+  "What is yours to do",
+  "The one who acts"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "obsessed and anxious",
+ "bridge": "The promotion you want is a result you cannot hold. What the Gita calls attachment to results is what keeps you working and worrying at the same time.",
+ "week_thesis": "The seven days turn the question of effort versus results into a single practice: do the work, let the result go, and rest the mind.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the obsession and the weight of it, named without blame.",
+  "diagnose": "You see that the mind is running ahead to a result it cannot hold, and that is what is exhausting you.",
+  "steady": "You hold that the effort is yours and the outcome is not, and that the effort is never wasted.",
+  "story": "A man who served a king and was tested on his attachment to results shows you what it means to act and let go."
+ },
+ "insight": "You are trying to think your way into the promotion, and that is exhausting you before the decision is made. The mind has never been given one quiet minute to rest.",
+ "seat": "a worker whose mind is stuck on whether they will be promoted",
+ "life_context": "Working and waiting on a promotion; the mind runs ahead to the outcome, and the question of how to think about effort versus results will not let go.",
+ "details": [
+  "works hard but obsesses over the promotion",
+  "keeps asking how to think about effort versus results"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "llm_mechanism_invalid"
+ ]
+}

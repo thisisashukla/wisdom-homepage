@@ -1,0 +1,101 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.75,
+ "core_struggle": "Caring for a parent with dementia, losing their temper, and then losing sleep to guilt.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "grief_attachment",
+ "situations": [
+  {
+   "id": "illness_family",
+   "weight": 1.575,
+   "source": "note"
+  },
+  {
+   "id": "guilt",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "grief_parent",
+   "weight": 0.525,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.446,
+   "source": "note"
+  }
+ ],
+ "mirror": "You bathe and feed your papa, yet losing your temper at night leaves you awake with guilt.",
+ "queries": {
+  "hook": "The exhaustion of constant care, the shock of being asked who you are by the one you love, and the guilt that follows your own anger. Someone I love is seriously ill.",
+  "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and grief turns into guilt.",
+  "steady": "What is real in you cannot be lost; the grief you feel is love with nowhere to go, and it is real, not a failure.",
+  "act": "Lift yourself up instead of pushing yourself down; forgive yourself for the human moment, and rest before the next day begins.",
+  "story": "A son or daughter who cared for a parent through decline, lost their temper, and then found the courage to forgive themselves and continue."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The grief beneath the guilt",
+  "What is real cannot be lost",
+  "The one who continues"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "guilty and exhausted",
+ "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+ "week_thesis": "Seven days from drowning in guilt to seeing the grief beneath it, and finding the footing to forgive yourself and rest.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the exhaustion and the guilt, named without blame.",
+  "diagnose": "You see that it is the grief of losing your father, not the anger, that is the root cause of the guilt.",
+  "steady": "You hold that what is real in you cannot be lost, and grief is love with nowhere to go.",
+  "act": "You try forgiving yourself for the human moment, and letting yourself rest before the next day begins.",
+  "story": "A child who lost their temper while caring for a parent shows you what forgiving yourself and continuing looks like."
+ },
+ "insight": "You lose your temper at night, and then the guilt keeps you awake. Underneath is the grief of watching the person you love disappear.",
+ "seat": "a middle-aged adult caring for a parent with dementia",
+ "life_context": "In midlife and caring for a parent with dementia; the care is constant, the nights are long, and the guilt after losing temper keeps them awake.",
+ "details": [
+  "father has dementia now",
+  "father asked who they were",
+  "they lose their temper at night"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "hook:anchored_to_situation",
+  "bridge:copied_example",
+  "mirror:fallback",
+  "mirror:rewritten"
+ ]
+}

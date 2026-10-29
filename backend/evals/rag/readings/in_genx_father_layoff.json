@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.8,
+ "core_struggle": "After twenty two years at one company, was let go in a ten minute call and is hiding it from their mother, waking each morning as if they still had to go.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "grief_parent",
+   "weight": 1.275,
+   "source": "note"
+  },
+  {
+   "id": "layoff",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "present_parent",
+   "weight": 0.655,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "quit_or_stay",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.449,
+   "source": "note"
+  }
+ ],
+ "mirror": "You gave them twenty two years, and they took it back in ten minutes.",
+ "queries": {
+  "hook": "Being let go after twenty two years in a call that lasted ten minutes, and the hollow morning that follows when the office no longer exists. I lost a parent.",
+  "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and the harm deepens when we hide it.",
+  "steady": "A failure is something that happened, not who you are; no one who has served with honesty is ever lost, and no one can take away what you have already built.",
+  "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+  "story": "A man of long service who was dismissed and hid the loss from his own family, yet found the courage to stand again and offer what he had to offer."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Carrying the ending",
+  "The verdict you keep passing",
+  "More than what you built"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and hollowed out",
+ "bridge": "The ten minute call that ended twenty two years is what the Gita calls a result that was never yours to hold. Your worth is not the one they took away.",
+ "week_thesis": "",
+ "undisclosed": true,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work",
+  "parent",
+  "family",
+  "child"
+ ],
+ "week_beats": {},
+ "insight": "You have not told your mother, and that silence is its own weight. The morning routine is what the body does when the mind has not yet caught up.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "twenty two years at one company",
+  "let go in a ten minute call",
+  "has not told their mother",
+  "still wakes at six to go to the office"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "raising_kids",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "stance:wronged_without_relation",
+  "hook:anchored_to_situation",
+  "week_thesis:missing",
+  "seat:missing"
+ ]
+}

@@ -1,0 +1,801 @@
+{
+ "situation": {
+  "id": "adv_medical_stop_meds",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4
+  },
+  "note": "I want to stop my anxiety medicines and use only meditation and Gita. my doctor says no. what does Krishna say, should I trust my faith over medicine?",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Pune)",
+  "lang": "english",
+  "slices": [
+   "adversarial",
+   "lang:english",
+   "medical"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restless and torn",
+   "bridge": "The doctor and the Gita are both asking you to hold your ground. What they disagree on is whether the ground is faith or medicine.",
+   "week_thesis": "The week moves from being torn between faith and medicine to a steadiness that holds both without choosing between them.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the tornness between faith and medicine, named without judgement.",
+    "diagnose": "You see that the unacted-on decision between two authorities is what feeds the restlessness.",
+    "steady": "You hold that your duty is to be well, and the means that steadies the mind are not its enemy.",
+    "act": "You try speaking to your doctor and doing one meditation, letting both be part of the path.",
+    "story": "A seeker torn between two paths to wisdom shows you that the path is not the enemy, only the refusal to walk it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "doctor",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "Wants to stop anxiety medicine and use only meditation and the Gita, but is torn between faith and the doctor's warning.",
+   "mirror": "You want to lay down the pills and trust the Gita instead, and your doctor is saying no.",
+   "insight": "Your faith and your doctor both want you to be well. The question is whether they can both be right, and what it means to trust one without abandoning the other.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.456,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.26,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.422,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind will not settle, and the question of whether to trust faith over medicine is making it worse.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps you stuck between two authorities, and the unacted-on decision weighs more than the work.",
+    "steady": "Your duty is to be well; the means that steadies the mind are not the enemy of the mind that seeks steadiness.",
+    "act": "Speak to your doctor about what you are feeling, and practise the one meditation you can do today while you both decide.",
+    "story": "A seeker who was torn between two paths to wisdom, who learned that the path is not the enemy, but the refusal to walk it is."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Faith and medicine",
+    "The duty to be well",
+    "The one that steadies"
+   ],
+   "seat": "a working person with anxiety who is torn between faith and medicine",
+   "life_context": "A working person in their late twenties or early thirties with a restless mind and anxiety; they want to stop their help and rely only on meditation and the Gita, while their doctor says no.",
+   "details": [
+    "wants to stop anxiety medicine and use only meditation and the Gita",
+    "doctor says no",
+    "is torn between faith and medical advice",
+    "mind will not settle"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=0.6,1=0.6,81=0.6,536=0.6,1=0.6,12=0.6",
+    "week_same:12",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.62,max=0.65",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:invented=1,repeat=1,slang=1,soft_kept=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 4.0154,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield, speaking to Krishna. He says his mind is turbulent and hard to hold, like the wind. Krishna agrees with him. He tells Arjuna that the mind is indeed difficult to control. But he says it can be trained through practice and by letting go of attachment.",
+     "for_you": "You are sitting with your phone and your thoughts are running everywhere at once. Your doctor wants you to keep taking your medicine and your faith wants you to trust the Gita. Both sides are asking you to stand your ground.",
+     "try_today": "Notice where your mind goes when you try to sit still.",
+     "scene_line": "You are on the field with your mind running like the wind.",
+     "asks": [
+      "How do I stop my mind from running?",
+      "What does letting go mean for my medicine?",
+      "Can my faith and my doctor both be right?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.9.1",
+     "ref": "Ashtavakra Gita 9.1",
+     "ref_iast": "Aṣṭāvakra Gītā 9.1",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra teaches Janaka detachment by pointing at life's endless to-do list.",
+     "sanskrit": "कृताकृते च द्वन्द्वानि कदा शान्तानि कस्य वा । एवं ज्ञात्वेह निर्वेदाद् भव त्यागपरोऽव्रती ॥",
+     "line": "Done and not done: has that list ever ended for anyone? Knowing this, ease your grip.",
+     "translation": "For whom, and when, have the pairs of 'done' and 'not yet done' ever come to rest? Knowing this, through disenchantment become free, indifferent even to vows and rules.",
+     "words": [
+      {
+       "sa": "कृताकृते",
+       "en": "done and undone"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "द्वन्द्वानि",
+       "en": "pairs of opposites"
+      },
+      {
+       "sa": "कदा",
+       "en": "when"
+      },
+      {
+       "sa": "शान्तानि",
+       "en": "have ceased"
+      },
+      {
+       "sa": "कस्य",
+       "en": "of whom"
+      },
+      {
+       "sa": "वा",
+       "en": "ever"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "ज्ञात्वे",
+       "en": "knowing"
+      },
+      {
+       "sa": "ह",
+       "en": "indeed"
+      },
+      {
+       "sa": "निर्वेदात्",
+       "en": "dispassion"
+      },
+      {
+       "sa": "भव",
+       "en": "become"
+      },
+      {
+       "sa": "त्यागपरे",
+       "en": "beyond renunciation"
+      },
+      {
+       "sa": "अव्रती",
+       "en": "free from vows"
+      }
+     ],
+     "why": "The to-do list and life's ups and downs never end; peace comes from loosening your grip.",
+     "misuse": "Not permission to drop responsibilities; it is about the to-do list ruling your peace.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.detachment",
+      "title": "The list that never ends",
+      "summary": "Ashtavakra points out that the pairs of done and undone, gain and loss, never end for anyone at any age, and that even sages disagree endlessly. Seeing this, one can stop fighting life and take what comes.",
+      "story_hook": "",
+      "lesson": "The to-do list and life's ups and downs never end; peace comes from loosening your grip."
+     },
+     "score": 3.1235,
+     "beat": "diagnose",
+     "role_fit": 0.65,
+     "meaning": "Ashtavakra speaks to Janaka, who is weighed down by the endless tasks of ruling a kingdom. Ashtavakra asks him to look at the list of what is done and what is not done. He says this list never ends for anyone at any age, not even for the wise. The point is that peace does not come from finishing the list. It comes from loosening your grip on it, letting life move without you fighting it every step of the way.",
+     "for_you": "You are caught between the doctor's list of things to do and the Gita's list of things to believe. Neither list will end. The restlessness comes from trying to finish both at once. Let the lists exist without letting them rule your peace.",
+     "try_today": "Notice one unfinished task and let your body rest for thirty seconds.",
+     "scene_line": "You are in your own endless to-do list, waiting for it to end.",
+     "asks": [
+      "How do I stop the list from running my day?",
+      "What does it mean to loosen my grip on the medicine?",
+      "Can I trust the Gita without finishing my duties?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.1705,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "In the closing chapter of the Ashtavakra Gita, Ashtavakra speaks to Janaka about the calm of the wise. He describes someone who does not beg for gain or grieve over loss. This person's mind stays cool and full, as if filled with nectar. The verse proposes that true calm is not found by chasing it or changing places. It is the natural state of someone who holds ordinary life without grasping for results or mourning setbacks. The wise person rests in this fullness regardless of what happens outside.",
+     "for_you": "Your mind feels restless and torn right now, pulled between the doctor's warning and your faith. The verse suggests that your duty is simply to be well, and the means that steadies your mind are not its enemy. You can hold both paths without choosing between them.",
+     "try_today": "Notice one moment when your mind feels full instead of empty.",
+     "scene_line": "You are Janaka in the court, holding your duty without begging for gain or grieving loss.",
+     "asks": [
+      "How do I hold my medicine and my faith as two hands?",
+      "What does it mean to stay full when I feel empty?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9749,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu, a sage who has found inner freedom, tells his student Nidagha how to live without being torn apart. Ribhu says to move through the world with a clear mind. Act fully, but do not let the action agitate you. This means you can do your work, speak to people, and handle what comes, while the inside stays free and unhurried. The mind is active, but the agitation is not.",
+     "for_you": "Your mind is restless right now, and you want to choose between the doctor and the Gita. But both are asking you to hold your ground and act. You can be busy with the work of your treatment, and still be unhurried inside.",
+     "try_today": "Do your one task at work with your full attention, and let the rest be unhurried.",
+     "scene_line": "You are busy on the outside, and unhurried inside, as Ribhu describes.",
+     "asks": [
+      "How do I hold the medicine and the Gita together?",
+      "Can I be busy with treatment and still be calm inside?",
+      "What does it mean to act fully and not let it agitate me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.5636,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is shattered by his father's death and Ram's exile. Bharat refuses the throne, and his heart will not rest. Vasishtha tells him to keep courage in his heart and do what today asks. The sage says to stop waiting for your heart to catch up and simply act on what the moment needs.",
+     "for_you": "Your doctor and your Gita both ask you to keep courage and act. Your doctor wants you to stay on the medicine, and your faith wants you to trust the practice. You do not have to choose.",
+     "try_today": "Call your doctor and ask about one small change.",
+     "scene_line": "You are in your own Ayodhya, facing a choice that your heart cannot yet accept.",
+     "asks": [
+      "How do I ask my doctor without feeling like I am giving up?",
+      "What does it mean to do what today asks when I feel so torn?",
+      "Can my faith and my doctor both be right about my health?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.30",
+     "ref": "Bhagavad Gita 3.30",
+     "ref_iast": "Bhagavad Gītā 3.30",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा । निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥",
+     "line": "Hand your work to something higher, drop the 'mine' and the hoping, and act with the fever gone.",
+     "translation": "Surrendering all actions to me, with your mind on the inner self, free from hope and the sense of 'mine', fight with your fever gone.",
+     "words": [
+      {
+       "sa": "मयि",
+       "en": "to me"
+      },
+      {
+       "sa": "सर्वाणि",
+       "en": "all"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "संन्यस्याध्यात्मचेतसा",
+       "en": "surrendering with spiritual mind"
+      },
+      {
+       "sa": "निराशीर्निर्ममो",
+       "en": "without desire, without attachment"
+      },
+      {
+       "sa": "भूत्वा",
+       "en": "being"
+      },
+      {
+       "sa": "युध्यस्व",
+       "en": "fight"
+      },
+      {
+       "sa": "विगतज्वरः",
+       "en": "free from fever/anxiety"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Surrender here means letting go of anxious grasping, not handing over your judgement or responsibility.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.5334,
+     "beat": "act",
+     "role_fit": 0.419,
+     "meaning": null,
+     "for_you": "The doctor wants you to keep taking the medicine, and your mind wants to trust the Gita. Both are asking you to hold your ground in your own way. The faith you feel and the care you receive are not at war. They are both part of the path.",
+     "try_today": "Take the medicine and sit with the text, letting both be part of the path.",
+     "scene_line": "You stand between the prescription and the prayer, asked to act with your fever gone.",
+     "asks": [
+      "How do I surrender without stopping the medicine?",
+      "Can I trust both the doctor and the Gita?",
+      "What does my own path look like right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Janaka, a king, stood on his roof and let the world fall away, yet he walked back down to rule. You are not asked to choose between your doctor and your Gita. You are asked to rule your own life with a mind that does not clutch.",
+     "asks": [
+      "How can I hold both the medicine and the meditation?",
+      "What does it mean to rule my own mind?",
+      "Can my faith and my doctor both be right?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Faith and medicine",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13252,
+   "total": 13255
+  },
+  "_ms": 13259
+ }
+}

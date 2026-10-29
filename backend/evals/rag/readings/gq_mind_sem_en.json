@@ -1,0 +1,92 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.4,
+ "core_struggle": "A seeker who finds their mind restless during meditation and wants to know what the texts say about this experience.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "restless_mind",
+   "weight": 1.41,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "overthinking",
+   "weight": 0.426,
+   "source": "note"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 0.383,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.2,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You sit to still the mind and it runs like the wind, and you wonder if this is a failure or a sign.",
+ "queries": {
+  "hook": "The mind that will not settle in meditation, and the unease of not knowing whether this is a failure or a sign.",
+  "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+  "steady": "The mind is restless and stubborn, but it can be held; the one who holds it is the one who has not yet learned to steady it.",
+  "act": "Practise bringing the mind back to the object of meditation, and know that each return is a victory.",
+  "story": "Arjuna, on the battlefield, faced a mind that would not settle, and the teaching he received was how to steady it in the midst of action."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The restless mind",
+  "The one who steadies",
+  "The mind that is steady"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "uneasy and searching",
+ "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+ "week_thesis": "Seven days from wondering if the restless mind is a sign of failure to understanding it as the first obstacle to meet and learn to steady.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [],
+ "week_beats": {
+  "hook": "You recognise the restless mind as a felt experience, not a diagnosis.",
+  "diagnose": "You see that the mind left to itself becomes its own enemy, and that is what is being met.",
+  "steady": "You hold that the mind can be steadied, and that the one who has not yet learned to do so is not failing.",
+  "act": "You try the practice of bringing the mind back, and know that each return is a victory.",
+  "story": "Arjuna on the battlefield shows you that the restless mind is not a sign of failure but the first obstacle to meet."
+ },
+ "insight": "You are searching for what the restlessness means, and the texts say it is not a flaw in you but the nature of the untamed mind.",
+ "seat": "a seeker who finds their mind restless during meditation",
+ "life_context": "Someone who sits to meditate and finds their mind jumping from thought to thought, unable to focus; they are reaching for the texts to understand what this restlessness means.",
+ "details": [
+  "mind jumps from thought to thought during meditation",
+  "cannot focus for even a minute",
+  "asks if Arjuna faced this"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "stance:seeking_over_pain",
+  "bridge:copied_example"
+ ]
+}

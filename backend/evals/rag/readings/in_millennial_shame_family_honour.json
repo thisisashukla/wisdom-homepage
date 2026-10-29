@@ -1,0 +1,93 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.75,
+ "core_struggle": "After failing a bank exam four times, the whole village knows and his father has withdrawn from the chaupal; he cannot stop replaying it.",
+ "mechanism": "self_blame",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "failure_project",
+   "weight": 1.832,
+   "source": "note"
+  },
+  {
+   "id": "overthinking",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "guilt",
+   "weight": 1.14,
+   "source": "note"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "doubt_faith",
+   "weight": 0.428,
+   "source": "note"
+  },
+  {
+   "id": "resentment",
+   "weight": 0.3,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You keep going over the same failure, and the village is talking about it.",
+ "queries": {
+  "hook": "The weight of a failure everyone knows, and the shame that has reached your father, replayed in your mind until you cannot sleep. My project or startup failed.",
+  "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and it grows in the silence of the chaupal.",
+  "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost, and your father's love is not measured by the exam.",
+  "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+  "story": "A man who failed again and again, faced the village's silence and his own shame, yet found the courage to rise again."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Carrying the village's verdict",
+  "The one who failed",
+  "More than the result"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and watched",
+ "bridge": "The village is talking about you, but the one who cannot stop going over it is your own mind, and the Gita says that is the real enemy.",
+ "week_thesis": "",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {},
+ "insight": "You replayed the failure last night. Underneath is the belief that the whole village's verdict is the truth of you.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "failed a bank exam four times",
+  "the whole village knows",
+  "father has stopped going to the chaupal"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "week_thesis:missing"
+ ]
+}

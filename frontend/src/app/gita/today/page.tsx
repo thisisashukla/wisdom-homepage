@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bhagavad Gita — Verse of the Day',
     description: 'A new verse from the Bhagavad Gita each day.',
-    images: ['https://wisdomquotes.in/og-image.jpg'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
   keywords: 'hindu verse of the day, bhagavad gita verse of the day, daily shloka, shloka of the day, sanskrit verse daily',
 }

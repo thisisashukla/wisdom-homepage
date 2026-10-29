@@ -1,0 +1,99 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.75,
+ "core_struggle": "She manages people calmly by day, but snaps at her child and fears she is turning into her own mother.",
+ "mechanism": "anger_reactivity",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "present_parent",
+   "weight": 1.228,
+   "source": "note"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.537,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.5,
+   "source": "profile"
+  },
+  {
+   "id": "anger_outburst",
+   "weight": 0.45,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  }
+ ],
+ "mirror": "At work you are calm with twelve people. At home, a spilled glass and a look you cannot undo.",
+ "queries": {
+  "hook": "The shame of snapping at the child you love, and the fear that the face you saw is the face you are becoming.",
+  "diagnose": "Anger rises from blocked wanting; it clouds judgement, and a clouded mind says and does what it later regrets.",
+  "steady": "A clouded mind is not who you are; the calm you bring to your practice is the self that is still there.",
+  "act": "Practise seeing the look before it becomes the shout; let the breath come, and speak the true thing gently to your child.",
+  "story": "A mother who saw her own anger in her child's face, and learned to hold the pause before the shout."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The look on his face",
+  "The blocked wanting underneath",
+  "The calm that is already yours"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "ashamed and afraid of repeating the past",
+ "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+ "week_thesis": "Seven days from the look on his face to the pause before the shout, and the calm you already bring to your practice.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work",
+  "child"
+ ],
+ "week_beats": {
+  "hook": "You recognise the snap and the look, and the fear of becoming your own mother.",
+  "diagnose": "You see that anger rises from blocked wanting, and that a clouded mind says what it later regrets.",
+  "steady": "You hold that the calm you bring to twelve people is the self that is not the shout.",
+  "act": "You try pausing before the next moment, letting the breath come, and speaking gently to your child.",
+  "story": "A mother who saw her own anger in her child's face shows you what the pause before the shout looks like."
+ },
+ "insight": "You are calm with twelve people, yet at home you snap and then relive it. What is really going on is the anger that rises when something inside you is blocked.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "manages people calmly at work"
+ ],
+ "age": "35_44",
+ "stages": [
+  "working",
+  "raising_kids",
+  "own_thing"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "seat:missing"
+ ]
+}

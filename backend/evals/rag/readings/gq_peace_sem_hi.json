@@ -1,0 +1,90 @@
+{
+ "source": "llm",
+ "note_quality": "partial",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "An uneasy mind that wants to understand why it finds no happiness and how true peace is found.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "anxiety_general",
+   "weight": 1.147,
+   "source": "note"
+  },
+  {
+   "id": "restless_mind",
+   "weight": 0.905,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.35,
+   "source": "profile"
+  },
+  {
+   "id": "no_meaning",
+   "weight": 0.303,
+   "source": "note"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.2,
+   "source": "profile"
+  },
+  {
+   "id": "illness_family",
+   "weight": 0.2,
+   "source": "profile"
+  }
+ ],
+ "mirror": "Your question is the first step: the mind is restless, and you want to know why.",
+ "queries": {
+  "hook": "An uneasy mind that wants to understand why it finds no happiness and how true peace is found.",
+  "diagnose": "The mind is restless because it runs after what passes; peace is not found in what passes, but in what does not.",
+  "steady": "What is real in you cannot be lost; peace is found in what does not pass.",
+  "act": "Practise turning the mind from what passes to what does not; let go of what passes and hold to what is real.",
+  "story": "A seeker who asked why the mind is restless and how peace is found, and was told what is real and what passes."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Why the mind is restless",
+  "What does not pass",
+  "The peace that is found"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "uneasy and searching",
+ "bridge": "The unrest you feel is what the texts call the mind running after what passes. Peace is found not in the passing, but in what does not.",
+ "week_thesis": "The week moves from the restless mind that finds no happiness to the peace that is found in what does not pass.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [],
+ "week_beats": {
+  "hook": "You recognise the unease and the question, named without judgement.",
+  "diagnose": "You see that the mind is restless because it runs after what passes.",
+  "steady": "You hold that what is real in you cannot be lost.",
+  "act": "You try turning the mind from what passes to what does not.",
+  "story": "A seeker who asked how peace is found shows you what the texts say."
+ },
+ "insight": "You feel uneasy and you want to understand. The texts say the mind is restless because it runs after what passes, and peace is found in what does not pass.",
+ "seat": "a person seeking to understand the mind and peace",
+ "life_context": "A person who is uneasy and wants to understand why an agitated mind finds no happiness, and how true peace is to be found.",
+ "details": [
+  "asks why an agitated mind finds no happiness",
+  "asks how true peace is found"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "stance:seeking_over_pain"
+ ]
+}

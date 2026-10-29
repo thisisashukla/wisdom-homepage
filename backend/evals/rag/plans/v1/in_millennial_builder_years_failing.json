@@ -1,0 +1,706 @@
+{
+ "situation": {
+  "id": "in_millennial_builder_years_failing",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 3
+  },
+  "note": "I have been trying to build apps on the side for years now and none of them have really worked. I keep going but I don't know what I am doing wrong anymore. I have a job, kids, my parents to look after, and this thing I keep failing at.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "market": "India (Gurgaon)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "tired and searching",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the doubt and the weight of years of trying, named without judgement.",
+    "diagnose": "You see that doubt and delay feed each other, and that waiting to feel ready keeps you stuck.",
+    "steady": "You hold that your own path walked imperfectly is enough, and no honest effort is ever wasted.",
+    "story": "A man who kept going through years of failure shows you what it means to act without the result."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "A midlife professional juggling work, children, and aging parents feels they are failing at a side project they have kept trying on for years, and wonders what they are doing wrong.",
+   "mirror": "Years of trying and nothing to show for it, while the rest of your life asks for everything else.",
+   "insight": "You are tired of the side project, and you are tired of being told you are failing at it. The doubt has settled in because the effort has not yet met the result.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.887,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.71,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.625,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of years of trying and the doubt that you are failing at the one thing that is yours, while the rest of your life asks for everything else.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps you stuck, and the unacted-on decision weighs more than the work itself.",
+    "steady": "Your own path walked imperfectly is enough; no honest effort on the right path is ever wasted.",
+    "act": "Rise and act; do the work fully and let the result go, one day at a time, and keep at it without waiting to feel ready.",
+    "story": "A man who spent years trying to build something of his own, met repeated failure, and kept going until the work itself became his answer."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The doubt and the delay",
+    "The effort that is yours",
+    "More than what you build"
+   ],
+   "seat": "a midlife professional juggling work, children, aging parents, and a side project that keeps failing",
+   "life_context": "In their thirties or forties, working, raising children, and caring for parents; they have spent years trying to build apps on the side, and none have taken off, leaving them unsure whether to keep going.",
+   "details": [
+    "building apps on the side for years without success",
+    "has a job, children, and aging parents to care for",
+    "keeps trying despite repeated failure",
+    "does not know what they are doing wrong"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:37=0.0,104=0.3,43=0.6,85=0.6,31=0.0,2=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.70",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.37",
+     "ref": "Bhagavad Gita 6.37",
+     "ref_iast": "Bhagavad Gītā 6.37",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+     "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+     "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+     "words": [
+      {
+       "sa": "अर्जुन उवाच",
+       "en": "Arjuna said"
+      },
+      {
+       "sa": "अयतिः",
+       "en": "one without steady effort"
+      },
+      {
+       "sa": "श्रद्धयोपेतः",
+       "en": "endowed with faith"
+      },
+      {
+       "sa": "योगात्",
+       "en": "from yoga"
+      },
+      {
+       "sa": "चलितमानसः",
+       "en": "with a mind turned away"
+      },
+      {
+       "sa": "अप्राप्य",
+       "en": "without attaining"
+      },
+      {
+       "sa": "योगसंसिद्धिम्",
+       "en": "perfection in yoga"
+      },
+      {
+       "sa": "कां गतिम्",
+       "en": "what state"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "गच्छति",
+       "en": "does he go"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 2.3443,
+     "beat": "hook",
+     "role_fit": 0.6,
+     "meaning": "Arjuna asks Krishna what becomes of someone who believes but does not strive enough, whose mind falls away from the path before reaching the end. Krishna answers that no one who does good comes to ruin. The effort itself is never lost. What remains is the ground already covered. When the person chooses to strive again, they do not begin from nothing. They pick up exactly where they left off.",
+     "for_you": "The years of building those apps are not a blank page. They are a foundation. The doubt you feel is not proof that you are failing, but the weight of waiting for a result that has not yet arrived. Your effort carries forward. You pick up where you left off.",
+     "try_today": "Notice one small thing from your last attempt that still holds value.",
+     "scene_line": "You are in your own waiting room, asking what becomes of the one who has not yet finished.",
+     "asks": [
+      "What does it mean to pick up where I left off?",
+      "How do I know when to keep going and when to stop?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_kath.1.2.2",
+     "ref": "Katha Upanishad 1.2.2",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.2",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Nachiketa has refused wealth and long life; Yama begins teaching.",
+     "sanskrit": "श्रेयश्च प्रेयश्च मनुष्यमेतस्तौ सम्परीत्य विविनक्ति धीरः । श्रेयो हि धीरोऽभि प्रेयसो वृणीते प्रेयो मन्दो योगक्षेमाद्वृणीते ॥",
+     "line": "The good and the pleasant both knock. The wise choose the good; the foolish grab the pleasant.",
+     "translation": "The good and the pleasant both come to a person. The wise one examines them and tells them apart. The wise chooses the good over the pleasant; the dull chooses the pleasant, for getting and keeping.",
+     "words": [],
+     "why": "Every day offers a choice between what feels good and what is good.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.shreyas_preyas",
+      "title": "The good and the pleasant",
+      "summary": "Yama praises Nachiketa for choosing the good over the pleasant. He explains that both come to every person, and the wise tell them apart, while the foolish choose what is pleasant and lose their way.",
+      "story_hook": "",
+      "lesson": "Every day offers a choice between what feels good and what is good."
+     },
+     "score": 2.8429,
+     "beat": "diagnose",
+     "role_fit": 0.65,
+     "meaning": "Yama is speaking to Nachiketa, who has just refused the pleasant in favor of the good. Yama says that both the pleasant and the good come to a person. The wise examine them and tell them apart. The wise choose the good over the pleasant. The dull choose the pleasant, for getting and keeping.",
+     "for_you": "Your side project offers the pleasant escape from your day, but it also offers the good of something lasting. You are choosing the pleasant by waiting for the result to feel right.",
+     "try_today": "Notice one moment when you choose the pleasant over the good.",
+     "scene_line": "You are at the door, and both the pleasant and the good are knocking.",
+     "asks": [
+      "How do I tell the good from the pleasant in my own work?",
+      "How do I choose the good when the pleasant is so easy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.6a.115.43",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 115.43",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha's closing advice to Rama on living in the world after the three vows.",
+     "sanskrit": "अन्तर्मुखः सन्सततं समस्तं कुर्वन्बहिष्ठं खलु कार्यजातम् । न खेदमायासि कदाचिदेव निराकृताहंकृतितामुपैषि ॥",
+     "line": "Stay anchored within while you do all your outer work, and you won't burn out.",
+     "translation": "Staying turned inward while doing all the outer work that comes to you, you will never grow weary, and you will be free of the sense of being the doer.",
+     "words": [],
+     "why": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.three_vows",
+      "title": "Shiva's three vows: be a great doer, enjoyer and letter-go",
+      "summary": "Vasishtha gives Rama three vows that Shiva once gave his devotee Bhringi: be a great doer, a great enjoyer, and a great renouncer. A great doer acts fully and on time without clinging; a great enjoyer takes in joys and sorrows evenly, like the ocean takes in rivers; a great renouncer lets go inside. Live this way and work won't wear you out.",
+      "story_hook": "",
+      "lesson": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out."
+     },
+     "score": 3.3659,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Vasishtha is speaking to Rama, who is about to step back into a life of action after years of quiet study. The old sage is telling him that the heart can stay still even while the hands are busy. The point is that you can pour yourself into every task, into every app you build, and still hold a quiet center inside. You do not have to carry the weight of being the one who makes it all happen. The work is done, but the self remains untouched.",
+     "for_you": "You are building these apps while the rest of your life waits, and the doubt is loud. The effort itself is the anchor, not the download count or the praise. You do not have to prove the project is worth the hours. Let the work be the work.",
+     "try_today": "Work on the app for twenty minutes, then stop and feel the quiet in your chest.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.8998,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari speaks to you from his own years of turning away from a throne. He tells you that a ball struck down by a hand flies right back up. For those who live rightly, setbacks rarely last. He does not promise that every pain is brief. He simply says that a life of honest effort has its own momentum. The ball does not stay on the ground. It rises again.",
+     "for_you": "You have kept trying to build these apps even when nothing took off. That persistence is not wasted. The setbacks you meet are not proof that you could stop. They are the normal rhythm of a life that keeps going.",
+     "try_today": "Notice one small thing that went right in your day, however small.",
+     "scene_line": "You are the hand that keeps striking the ball, and the ball is still in play.",
+     "asks": [
+      "How do I know if my effort is the right kind of effort?",
+      "What does living rightly look like when I am just trying to survive?",
+      "Can I rest if I have not yet reached my goal?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.49.6",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 49.6",
+     "family": "vr",
+     "speaker": "Angada",
+     "listener": "the search party",
+     "setting": "The monkeys searching for Sita are exhausted and failing; young Angada rallies them.",
+     "sanskrit": "अवश्यं कुर्वतां तस्य दृश्यते कर्मणः फलम्। परं निर्वेदमागम्य नहि नोन्मीलनं क्षमम्॥",
+     "line": "Keep working and the results will come. Sink into despair and it is hard to get back up.",
+     "translation": "Those who keep working surely see the fruit of their work. But once you sink into deep despair, you cannot rise again.",
+     "words": [],
+     "why": "Missing a deadline feels final; it rarely is.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.deadline_missed",
+      "title": "The missed deadline",
+      "summary": "The southern search party loses time in a magic cave and misses Sugriva's deadline. Angada rallies them once, then despairs, fearing punishment and certain he will be blamed. Hanuman reasons with him to return.",
+      "story_hook": "They came out of the cave to find that spring had already come, and their deadline had gone.",
+      "lesson": "Missing a deadline feels final; it rarely is."
+     },
+     "score": 3.725,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Angada speaks to the monkeys after they have lost all hope. They have missed the deadline to find Sita. Angada feels the weight of failure and believes the punishment will destroy them. Hanuman reminds him that effort is what matters. The verse says that those who keep working will see their results. But once you sink into deep despair, you cannot rise again.",
+     "for_you": "The side project has not worked out, and you are tired of carrying that. You are not wrong to feel the weight of it. The work you put in is real. Keep showing up to the work itself, and the results will come.",
+     "try_today": "Do one small, concrete step on the side project.",
+     "scene_line": "You are the search party that missed the deadline, and the cave has swallowed your hope.",
+     "asks": [
+      "How do I know when to keep working and when to stop?",
+      "How do I stop sinking into despair when the results are slow?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.7139,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "A seer speaks to the reader. They have just asked how to live and work in a world that belongs to the divine. The seer tells them to do their work and wish for a full hundred years. The point is that if you do your work this way, the actions themselves do not cling to you. You keep working, but you do not hold on to how it turns out.",
+     "for_you": "Your side project is one of those actions. It has not clung to you with results, so it feels like a failure. But the work itself is not the failure. You are tired of the striving. Let the app exist without needing it to win.",
+     "try_today": "Work on the app for one small task without checking for success.",
+     "scene_line": "You are in your own workshop, and the work is done, but the results are not yet here.",
+     "asks": [
+      "How do I wish for a full life while my project stays stuck?",
+      "What does it mean for action to not cling to me?",
+      "Can I do the work without the result feeling like my own?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bhagiratha",
+     "title": "Bhagiratha brings the Ganga down",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sagara",
+      "Anshuman",
+      "Dilipa",
+      "Bhagiratha",
+      "Brahma"
+     ],
+     "story_hook": "Three kings in a row died trying to bring a river down from heaven; the fourth would not stop.",
+     "summary": "King Sagara's sixty thousand sons are burnt to ash; only the Ganga's water can free them. Sagara, his grandson Anshuman and Anshuman's son Dilipa each try and die without success. Bhagiratha finally persists until the river descends, and Brahma honours him for finishing what three generations began.",
+     "lesson": "Some goals take longer than one effort or one lifetime; keep going and others' work is not wasted.",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.44.10",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 44.10",
+      "family": "vr",
+      "speaker": "Brahma",
+      "listener": "Bhagiratha",
+      "setting": "Bhagiratha has finished what his great-grandfather, grandfather and father each tried and failed to do.",
+      "sanskrit": "सा त्वया समतिक्रान्ता प्रतिज्ञा पुरुषर्षभ। प्राप्तोऽसि परमं लोके यशः परमसम्मतम्॥",
+      "line": "Three generations tried and failed. You finished it. Effort carried forward is not wasted.",
+      "translation": "You have carried through the vow they could not keep, best of men. You have earned the highest honour in the world.",
+      "words": [
+       {
+        "sa": "सा",
+        "en": "that"
+       },
+       {
+        "sa": "त्वया",
+        "en": "by you"
+       },
+       {
+        "sa": "समनुक्रान्ता",
+        "en": "undertaken, carried through"
+       },
+       {
+        "sa": "प्रतिज्ञा",
+        "en": "vow"
+       },
+       {
+        "sa": "पुरुषर्षभ",
+        "en": "best among men"
+       },
+       {
+        "sa": "प्राप्तोऽसि",
+        "en": "you have attained"
+       },
+       {
+        "sa": "परमं",
+        "en": "supreme"
+       },
+       {
+        "sa": "लोके",
+        "en": "in the world"
+       },
+       {
+        "sa": "यशः",
+        "en": "renown, fame"
+       },
+       {
+        "sa": "परमसम्मतम्",
+        "en": "most honoured, most esteemed"
+       }
+      ],
+      "why": "Some goals take longer than one effort or one lifetime; keep going and others' work is not wasted.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "side_project",
+        "label": "I can't tell if continuing is discipline or stubbornness"
+       },
+       {
+        "id": "failure_project",
+        "label": "My project or startup failed"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.bhagiratha",
+       "title": "Bhagiratha brings the Ganga down",
+       "summary": "King Sagara's sixty thousand sons are burnt to ash; only the Ganga's water can free them. Sagara, his grandson Anshuman and Anshuman's son Dilipa each try and die without success. Bhagiratha finally persists until the river descends, and Brahma honours him for finishing what three generations began.",
+       "story_hook": "Three kings in a row died trying to bring a river down from heaven; the fourth would not stop.",
+       "lesson": "Some goals take longer than one effort or one lifetime; keep going and others' work is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Three kings died trying to bring down the Ganga, and Bhagiratha kept going",
+     "teaser": "Three kings died trying to bring down the Ganga, and Bhagiratha kept going",
+     "for_you": "You are standing where three generations of kings stood, trying to bring something down from above. You have sent your side project out into the world and watched it return empty, time after time. But the effort itself was never empty.",
+     "asks": [
+      "What part of this project belongs to me, and what part belongs to time?",
+      "How do I tell the difference between finishing and giving up?",
+      "What does it mean to act when the result is not in my hands?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The doubt and the delay",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 9260,
+   "total": 9262
+  },
+  "_ms": 9270
+ }
+}

@@ -1,0 +1,647 @@
+{
+ "situation": {
+  "id": "us_millennial_father_died_estranged",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3
+  },
+  "note": "My father passed two weeks ago. We hadn't spoken properly in six years. I keep thinking I should have called. I feel I failed him.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "USA (Atlanta)",
+  "lang": "english",
+  "slices": [
+   "bereavement",
+   "guilt",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and guilty",
+   "bridge": "The love that has nowhere to go after your father's death is what the Upanishads call grief, and they say it is real because the bond was real.",
+   "week_thesis": "Over seven days, the grief for a real bond is separated from the verdict of a silence, so the love has a place to go and the guilt can rest.",
+   "week_beats": {
+    "hook": "You recognise the replaying and the guilt, named without judgement.",
+    "diagnose": "You see that the mind turns love with nowhere to go into a verdict on the silence.",
+    "steady": "You hold that the bond was real, and the love was real, even when the words were not.",
+    "act": "You try giving the love a place to go, and let the verdict rest for one day.",
+    "story": "A child who fell silent with a parent and now faces the silence after the parent's death shows you what is real beneath the regret."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "Their father passed two weeks ago after six years of not speaking properly; they are replaying the silence as a failure to call.",
+   "mirror": "You are grieving a father you had not spoken to in six years, and the silence is now a weight you cannot set down.",
+   "insight": "You miss them every day, and the ache is as big as the love was.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.374,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.366,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.3,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.3,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a parent's death after years of silence, and the replaying of a call that was never made.",
+    "diagnose": "Grief is love with nowhere to go; the mind turns that love into guilt, and the silence becomes a verdict on a life.",
+    "steady": "What is real in us cannot be lost; the bond was real, and the love was real, even when the words were not.",
+    "act": "Give the love a place to go, make one amend if there is one you can actually make, and let the verdict rest.",
+    "story": "A son or daughter who had fallen silent with a parent, and now faces the silence after the parent's death, finding what is real beneath the regret."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The love with nowhere to go",
+    "The verdict and the bond",
+    "What remains when the words are gone"
+   ],
+   "seat": "an adult child who has lost a parent after years of silence",
+   "life_context": "",
+   "details": [
+    "father passed away two weeks ago",
+    "had not spoken properly in six years",
+    "keeps thinking they should have called"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.0,14=0.0,107=0.0,20=0.0,15=0.0,45=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.67",
+    "dropped:fallback_line=2,missing=5,repeat=2,soft_kept=2",
+    "for_you:6/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.6872,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield. He has laid down his bow and is weeping, refusing to fight his own family. He tells Krishna that even if he were to win an unrivalled kingdom or rule over the gods, it would not touch this grief that is drying him up inside. He admits he is confused, cannot see which choice is better, and asks Krishna to teach him what is right.",
+     "for_you": "You are sitting with the silence of the last six years, and it is heavy. The love you had is real, and the grief that follows is real too. You do not need to know what to do with this ache yet.",
+     "try_today": "Notice the grief without trying to fix it.",
+     "scene_line": "You have laid down your own bow, and the silence is heavy.",
+     "asks": [
+      "How do I hold this grief without letting it dry me up?",
+      "What do I do with the love that has nowhere to go?",
+      "Can I let the silence rest for a moment?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.156,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "words": [
+      {
+       "sa": "वासांसि",
+       "en": "clothes"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "विहायनवानि",
+       "en": "leaving new"
+      },
+      {
+       "sa": "गृह्णाति",
+       "en": "takes"
+      },
+      {
+       "sa": "नरोऽपराणि",
+       "en": "a person other"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "शरीराणि",
+       "en": "bodies"
+      },
+      {
+       "sa": "विहाय",
+       "en": "leaving"
+      },
+      {
+       "sa": "जीर्णानि",
+       "en": "old"
+      },
+      {
+       "sa": "अन्यानि",
+       "en": "other"
+      },
+      {
+       "sa": "संयाति",
+       "en": "enters"
+      },
+      {
+       "sa": "नवानि",
+       "en": "new"
+      },
+      {
+       "sa": "देही",
+       "en": "the embodied self"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1214,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, right after Arjuna has collapsed, saying he will not fight. Arjuna is grieving the people he must kill and the loss of his own kin. Krishna tells him that what is truly alive in us never dies. He says we leave a worn-out body the way a person puts off old clothes and puts on new ones. The love between you and your father was for a person who wore a body. The body has changed, but the bond that made you his child is still there.",
+     "for_you": "The silence was a wall, not the ground beneath it. Your father's body is gone, but the one who made you his child is not. Let the love you held for them move past the silence and rest where it belongs: with them, in memory, in your own blood.",
+     "try_today": "Feel the weight of the bond, not the weight of the silence.",
+     "scene_line": "You stand at the edge of a life that has changed clothes, holding a love that outlasts the body.",
+     "asks": [
+      "How do I hold the love when the body is gone?",
+      "Can the love I held for them still be real?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.5.34.5",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 34.5",
+     "family": "vr",
+     "speaker": "Sita",
+     "listener": "Hanuman",
+     "setting": "Captive for months, Sita hears news of Ram from Hanuman and remembers an old saying.",
+     "sanskrit": "कल्याणी वत गाथेयं लौकिकी प्रतिभाति मा। एति जीवन्तमानन्दो नरं वर्षशतादपि॥",
+     "line": "As long as you are still alive, joy can find you again, even after a hundred years.",
+     "translation": "How true this lovely old saying seems to me: joy comes to a person who stays alive, even if it takes a hundred years.",
+     "words": [],
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 2.5169,
+     "beat": "steady",
+     "role_fit": 0.82,
+     "meaning": "Sita is held captive, far from Ram, and she tells Hanuman an old saying. She says that joy can find a person again, even if it takes a hundred years, as long as they are still alive. She is saying that life itself is the condition for any future happiness. The verse proposes that staying alive is not the end of joy, but the only ground on which joy can return, no matter how long the wait.",
+     "for_you": "You are holding the fact of the bond while the words are gone. The love was real, and so is the grief. That love can find a place to go again, even if the silence lasted six years and the ache has lasted two weeks.",
+     "try_today": "Notice one small thing that keeps you alive today, even if it is only for a moment.",
+     "scene_line": "You sit in the long silence after the call, and the old saying finds you again.",
+     "asks": [
+      "How long must joy wait to find me again?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "words": [],
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 3.2069,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "The sage Narada sits with the young Shuka. Shuka is overwhelmed, and Narada tells him to stop sitting alone with a pain that belongs to everyone. Instead of letting sorrow grow by itself, he says, find a way to fix what you can. The mind is not a wound that needs only rest. It is a thing that needs care, just like the body needs medicine. If there is a path forward, walk it. If not, at least tend to the mind instead of letting it rot.",
+     "for_you": "You are carrying a verdict that you could have called, and the silence is louder than the love. The love was real, so the grief is real. For one day, let the verdict rest.",
+     "try_today": "Tend to your mind with one small, ordinary act of care.",
+     "scene_line": "You are sitting alone with a silence that now has no end.",
+     "asks": [
+      "How do I tend to a mind that will not stop replaying?",
+      "Can I care for my mind without fixing the past?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 1.6191,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": null,
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.punya_pavana",
+     "title": "Punya consoles his younger brother Pavana after their parents die",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Punya",
+      "Pavana",
+      "Dirghatapas"
+     ],
+     "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+     "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+     "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "matched": [
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.21.6",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+      "family": "yv",
+      "speaker": "Vasishtha",
+      "listener": "Rama",
+      "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+      "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+      "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+      "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+      "words": [],
+      "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "overthinking",
+        "label": "I can't stop overthinking"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.punya_pavana",
+       "title": "Punya consoles his younger brother Pavana after their parents die",
+       "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+       "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+       "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Their parents died, and one brother lit the pyres while the other ran weeping into the forest",
+     "teaser": "Their parents died, and one brother lit the pyres while the other ran weeping into the forest",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The love with nowhere to go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15978,
+   "total": 15982
+  },
+  "_ms": 15985
+ }
+}

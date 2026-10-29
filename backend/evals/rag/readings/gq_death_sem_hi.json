@@ -1,0 +1,90 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.7,
+ "core_struggle": "After the death of a loved one, wants to understand how to console the mind and what the Gita says about the soul.",
+ "mechanism": "grief_attachment",
+ "secondary_mechanism": null,
+ "situations": [
+  {
+   "id": "grief_general",
+   "weight": 1.17,
+   "source": "note"
+  },
+  {
+   "id": "doubt_faith",
+   "weight": 0.48,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "fear_death",
+   "weight": 0.423,
+   "source": "note"
+  },
+  {
+   "id": "grief_parent",
+   "weight": 0.39,
+   "source": "note"
+  },
+  {
+   "id": "reconnect_faith",
+   "weight": 0.36,
+   "source": "note"
+  }
+ ],
+ "mirror": "You are missing someone, and you want the Gita to say something true about the soul.",
+ "queries": {
+  "hook": "The ache of missing someone you love, and the mind's search for what is true about the soul after a death.",
+  "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+  "steady": "What is real in you cannot be cut by a sword, burned by fire, or dried by wind; it is the soul, and it is never born and never dies.",
+  "act": "Read the verses on the soul, and let the teaching sit with you without forcing it to end the missing.",
+  "story": "A warrior who stood at the edge of battle and was taught by his guide that the soul is not the body, and that what is real in us cannot be taken."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "template",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The ache of missing",
+  "What the Gita says about the soul",
+  "How to let it sit"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "grieving and searching",
+ "bridge": "The Gita does not tell you to stop missing them. It tells you the soul is not the body, and that what is real in you cannot be taken.",
+ "week_thesis": "Seven days from the ache of missing someone to the Gita's teaching that what is real in you cannot be taken, and how to let that teaching sit without forcing it.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [],
+ "week_beats": {
+  "hook": "You recognise the ache of missing someone, and the mind's search for what is true.",
+  "diagnose": "You see the Gita's teaching that what is real in us cannot be taken, and that grief is love with nowhere to go.",
+  "steady": "You hold that what is real in you cannot be cut, burned, or dried.",
+  "act": "You try reading the verses on the soul and letting them sit without forcing them to end the missing."
+ },
+ "insight": "You are grieving and you want to understand. The Gita offers a teaching on the soul that does not ask you to stop missing them.",
+ "seat": "a person grieving a loss who wants to understand the Gita's teaching on the soul",
+ "life_context": "Someone who has lost a close person and is turning to the Gita to understand the soul and how to hold the mind in the face of that loss.",
+ "details": [
+  "asks how to console the mind after a loved one's death",
+  "asks what the Gita says about the soul"
+ ],
+ "age": null,
+ "stages": [],
+ "version": 1,
+ "flags": [
+  "stance:seeking_over_pain",
+  "diagnose:diagnose_not_causal"
+ ]
+}

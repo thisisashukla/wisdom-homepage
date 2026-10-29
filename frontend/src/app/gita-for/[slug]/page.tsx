@@ -7,6 +7,9 @@ import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
 import { GITA_FOR, gitaForBySlug } from '@/lib/gitaFor'
 import { getVerse, verseUrl } from '@/lib/gita'
 import { appStoreUrl } from '@/lib/app'
+import { THEME_SLUGS, themePlanBySlug } from '@/lib/themePlans'
+import { themePlanMetadata } from '@/lib/themePlanMeta'
+import ThemePlanPage from './ThemePlanPage'
 import '../../home.css'
 import '../../home-v3.css'
 import '../gita-for.css'
@@ -15,10 +18,13 @@ import SiteFooter from '@/components/SiteFooter'
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return GITA_FOR.map((p) => ({ slug: p.slug }))
+  const slugs = new Set([...GITA_FOR.map((p) => p.slug), ...THEME_SLUGS])
+  return Array.from(slugs).map((slug) => ({ slug }))
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const plan = themePlanBySlug(params.slug)
+  if (plan) return themePlanMetadata(params.slug)
   const p = gitaForBySlug(params.slug)
   if (!p) return {}
   const url = `https://wisdomquotes.in/gita-for/${p.slug}`
@@ -32,6 +38,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default async function GitaForPage({ params }: { params: { slug: string } }) {
+  const plan = themePlanBySlug(params.slug)
+  if (plan) return <ThemePlanPage plan={plan} variant="in" />
   const page = gitaForBySlug(params.slug)
   if (!page) notFound()
   const verses = (

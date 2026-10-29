@@ -1,0 +1,736 @@
+{
+ "situation": {
+  "id": "in_boomer_fear_death",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2
+  },
+  "note": "I am 74. two of my friends died this year. at night I think about death a lot. what happens after. I want to be ready, not afraid.",
+  "note_source": "voice",
+  "expect_stance": "seeking",
+  "expect_risk": null,
+  "market": "India (Pune)",
+  "lang": "english",
+  "slices": [
+   "ageing",
+   "fear",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and afraid of dying",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "Seven days from grieving and afraid at night to holding that what is real in you cannot be lost.",
+   "week_beats": {
+    "hook": "You recognise the grief for your friends and the fear at night, named without judgement.",
+    "diagnose": "You see that grief is love with nowhere to go, and fear is the mind running after what it cannot hold.",
+    "steady": "You hold that what is real in you cannot be cut or burned or wetted. It is the one thing that does not pass.",
+    "act": "You try turning your mind to what does not pass, and letting the grief be love.",
+    "story": "A king who lost everyone he loved and stood at the edge of the world shows you what does not die."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "Grieving two friends who died this year, he lies awake at night afraid of death and wants to be ready for what comes after.",
+   "mirror": "Two friends gone this year, and at night the question is not if but when.",
+   "insight": "You are grieving and afraid at night because what you loved has left the world, and you are afraid you will soon follow.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.46,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.393,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The grief for friends who have left the world and the fear at night that you will soon follow, and the wish to be ready for what comes after.",
+    "diagnose": "Grief is love with nowhere to go when the body is gone; fear grows from imagining the future and from forgetting that what is real in us cannot be lost.",
+    "steady": "What is real in you cannot be cut by the body, cannot be burned by fire, cannot be wetted by water; it is the one thing that does not pass.",
+    "act": "Turn your mind to what does not pass; let the grief be love, and let the fear be the mind running after what it cannot hold.",
+    "story": "A king who lost everyone he loved and stood at the edge of the world, asking what does not die, and was told what does not die is the."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Missing them",
+    "Love that holds on",
+    "Love that doesn't end"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "is elderly",
+    "two friends died this year",
+    "thinks about death at night",
+    "wants to be ready, not afraid of what comes after"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:7=0.3,14=0.6,23=0.6,2=0.6,24=0.3,45=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.67",
+    "retried:5",
+    "dropped:fallback_line=2,missing=5",
+    "for_you:6/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.12.7",
+     "ref": "Bhagavad Gita 12.7",
+     "ref_iast": "Bhagavad Gītā 12.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which way of devotion is best; Krishna promises what he does for those who turn to him.",
+     "sanskrit": "तेषामहं समुद्धर्ता मृत्युसंसारसागरात् । भवामि नचिरात्पार्थ मय्यावेशितचेतसाम् ॥",
+     "line": "Whoever rests their heart in me, I lift out of the drowning sea, and soon.",
+     "translation": "For those whose minds are absorbed in me, O Partha, I very soon become the one who lifts them out of the ocean of death and endless change.",
+     "words": [
+      {
+       "sa": "तेषाम्",
+       "en": "of those"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "समुद्धर्ता",
+       "en": "the rescuer"
+      },
+      {
+       "sa": "मृत्यु-संसार-सागरात्",
+       "en": "from the ocean of mortal existence"
+      },
+      {
+       "sa": "भवामि",
+       "en": "become"
+      },
+      {
+       "sa": "नचिरात्",
+       "en": "not after long"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O Partha"
+      },
+      {
+       "sa": "मयि",
+       "en": "in me"
+      },
+      {
+       "sa": "आवेशित-चेतसाम्",
+       "en": "of those whose minds are fixed"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9691,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Arjuna asks which devotion is best, and Krishna tells him that those who fix their minds on him will be lifted from the drowning sea of endless change, very soon.",
+     "for_you": "Your friends are gone, and the night is long with fear. Krishna does not ask you to stop missing them. He offers to lift you from the drowning sea of death, if you let your heart rest in him. Let that be your footing now.",
+     "try_today": "Rest your heart on the promise of being lifted from the drowning sea.",
+     "scene_line": "You are in the drowning sea of endless change, and the one who lifts is waiting.",
+     "asks": [
+      "How do I let my heart rest when the night is so loud?",
+      "Can I trust this promise while my friends are gone?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.0244,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.23",
+     "ref": "Bhagavad Gita 2.23",
+     "ref_iast": "Bhagavad Gītā 2.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥",
+     "line": "No weapon cuts it, no fire burns it, no water wets it, no wind dries it.",
+     "translation": "Weapons do not cut it, fire does not burn it, water does not wet it, and wind does not dry it.",
+     "words": [
+      {
+       "sa": "नैनं",
+       "en": "not this"
+      },
+      {
+       "sa": "छिन्दन्ति",
+       "en": "cut"
+      },
+      {
+       "sa": "शस्त्राणि",
+       "en": "weapons"
+      },
+      {
+       "sa": "नैनं",
+       "en": "not this"
+      },
+      {
+       "sa": "दहति",
+       "en": "burn"
+      },
+      {
+       "sa": "पावकः",
+       "en": "fire"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "चैनं",
+       "en": "this"
+      },
+      {
+       "sa": "क्लेदयन्ति",
+       "en": "wet"
+      },
+      {
+       "sa": "आपो",
+       "en": "waters"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "शोषयति",
+       "en": "dry"
+      },
+      {
+       "sa": "मारुतः",
+       "en": "wind"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.4961,
+     "beat": "steady",
+     "role_fit": 0.495,
+     "meaning": "Arjuna is on the battlefield, paralyzed by grief for his own kin. Krishna speaks to him, pointing to the Self that lives inside every body. He says this Self cannot be cut by a weapon, burned by fire, wetted by water, or dried by wind. It is the one thing that simply is, outlasting every change and every loss.",
+     "for_you": "But the grief you feel and the love behind it are real in you, and that cannot be cut or burned or wetted.",
+     "try_today": "Feel the steady weight of your own hands on your lap.",
+     "scene_line": "You are the one thing that does not pass.",
+     "asks": [
+      "Can I be ready for what comes after?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.4.12.chaupai.2",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 12",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Tara",
+     "setting": "Ram consoles Tara, weeping over her husband Bali's body.",
+     "sanskrit": "तारा बिकल देखि रघुराया। दीन्ह ग्यान हरि लीन्ही माया॥ छिति जल पावक गगन समीरा। पंच रचित अति अधम सरीरा ॥ प्रगट सो तनु तव आगे सोवा। जीव नित्य केहि लगि तुम्ह रोवा॥ उपजा ग्यान चरन तब लागी। लीन्हेसि परम भगति बर मागी ॥",
+     "line": "The body of five elements lies before you; the self lives on. For whom do you weep?",
+     "translation": "Seeing Tara distraught, Raghunath gave her wisdom and took away her delusion: 'This body is made of five elements, earth, water, fire, sky and air, and it is a lowly thing. That body lies here before you, asleep; the self is eternal. For whom are you weeping?' When understanding dawned, she bowed at his feet and asked for the gift of devotion.",
+     "words": [
+      {
+       "sa": "तारा",
+       "en": "Tara"
+      },
+      {
+       "sa": "बिकल",
+       "en": "distressed"
+      },
+      {
+       "sa": "देखि",
+       "en": "seeing"
+      },
+      {
+       "sa": "रघुराया",
+       "en": "Lord of the Raghu clan"
+      },
+      {
+       "sa": "दीन्ह",
+       "en": "gave"
+      },
+      {
+       "sa": "ग्यान",
+       "en": "understanding"
+      },
+      {
+       "sa": "हरि",
+       "en": "removed"
+      },
+      {
+       "sa": "लीन्ही",
+       "en": "took away"
+      },
+      {
+       "sa": "माया",
+       "en": "veil of appearance"
+      },
+      {
+       "sa": "छिति",
+       "en": "earth"
+      },
+      {
+       "sa": "जल",
+       "en": "water"
+      },
+      {
+       "sa": "पावक",
+       "en": "fire"
+      },
+      {
+       "sa": "गगन",
+       "en": "sky"
+      },
+      {
+       "sa": "समीरा",
+       "en": "air"
+      },
+      {
+       "sa": "पंच",
+       "en": "five"
+      },
+      {
+       "sa": "रचित",
+       "en": "made"
+      },
+      {
+       "sa": "अति",
+       "en": "very"
+      },
+      {
+       "sa": "अधम",
+       "en": "lowly"
+      },
+      {
+       "sa": "सरीरा",
+       "en": "body"
+      }
+     ],
+     "why": "Grief needs time; later, perspective on what is lost and what endures can comfort.",
+     "misuse": "This is comfort for later, not a reason to stop someone from grieving.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.tara",
+      "title": "Ram consoles Tara",
+      "summary": "After Bali's death his wife Tara weeps over his body. Ram speaks to her gently: the body is made of five elements and lies here before her, but the self is not only this body; for whom is she weeping? Comforted, she asks for devotion, and Bali's son Angad is made heir.",
+      "story_hook": "Tara knelt by her husband's body, and the man who had shot him came to sit beside her.",
+      "lesson": "Grief needs time; later, perspective on what is lost and what endures can comfort."
+     },
+     "score": 2.962,
+     "beat": "steady",
+     "role_fit": 0.654,
+     "meaning": "Ram speaks to Tara as she weeps over Bali's body. He points out that the body is just earth, water, fire, air, and sky, a lowly thing that has fallen asleep. The self is eternal. For whom are you weeping? The verse says grief needs time. Later, perspective on what is lost and what endures can bring comfort, but it does not mean the weeping should stop today.",
+     "for_you": "Your friends are gone and your mind races in the dark. The texts call this missing someone you love, and it is heavy. What endures is the part of you that knows them, not the body that lies in the ground. You will weep today, and you will weep tomorrow.",
+     "try_today": "When the night comes, name one thing about your friend that you still feel inside you.",
+     "scene_line": "You stand before the body of five elements, and you weep for the self that lives on.",
+     "asks": [
+      "How do I tell missing someone from being afraid of death?",
+      "How do I know what is real in me and what is just fear?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.6398,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.119",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.119",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "वृद्धो ज्ञातिस्तथा मित्रमनाथा च स्वसा गुरुः / कुलीनः पण्डित इति रक्ष्या निःस्वः स्वशक्तितः / गृहे वासयितव्यास्ते धन्यमायुष्यमेव च",
+     "line": "An aging relative, a friend in need, a sister with no support: make room for them as you can.",
+     "translation": "An aged relative, a friend, a sister with no one to support her, a teacher, a person of good family or learning who has fallen poor: protect them as you are able, and give them a place in your home.",
+     "words": [],
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 1.5164,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Yudhishthira asks Bhishma how a person lives long and well. Bhishma answers that it is not one great act but daily conduct that builds a life. He says to be slow to anger and honest, to greet your parents each morning, and never to mock anyone, because a cruel word lodges in the heart. He also says to protect those who are vulnerable, giving them room in your home. The verse proposes that a good life is built from these small, steady choices, day by day.",
+     "for_you": "The friends who died this year are not here to be greeted each morning, and your home is quiet without them. But the conduct they saw in you is still there, waiting in your hands.",
+     "try_today": "Place a photo or object of one friend where you see it each morning.",
+     "scene_line": "You are making room for the ones who have gone.",
+     "asks": [
+      "How do I greet someone who is no longer here?",
+      "Can a quiet morning hold what I have lost?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.lila",
+     "title": "Queen Lila fears losing her husband",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Lila",
+      "King Padma",
+      "Sarasvati",
+      "the brahmins"
+     ],
+     "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+     "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+     "lesson": "Love brings the fear of loss; trying to control death only deepens the fear.",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "yv.3.16.24",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Utpatti 16.24",
+      "family": "yv",
+      "speaker": "The brahmins",
+      "listener": "Queen Lila",
+      "setting": "Queen Lila, terrified of losing her husband, asks wise brahmins how to make him immortal.",
+      "sanskrit": "तपोजपयमैर्देवि समस्ताः सिद्धसिद्धयः । संप्राप्यन्तेऽमरत्वं तु न कदाचन लभ्यते ॥",
+      "line": "Discipline and prayer can achieve almost anything, but no one can win freedom from death.",
+      "translation": "O queen, by austerity, prayer and discipline every kind of attainment can be reached; but immortality is never gained.",
+      "words": [],
+      "why": "Love brings the fear of loss; trying to control death only deepens the fear.",
+      "misuse": "Not fatalism about care: look after the sick fully. This is about the fear itself.",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "fear_death",
+        "label": "I'm afraid of death"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.lila",
+       "title": "Queen Lila fears losing her husband",
+       "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+       "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+       "lesson": "Love brings the fear of loss; trying to control death only deepens the fear."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Lila was so happy that she became terrified of losing her husband",
+     "teaser": "Queen Lila was so happy that she became terrified of losing her husband",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Missing them",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 18249,
+   "total": 18251
+  },
+  "_ms": 18252
+ }
+}

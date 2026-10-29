@@ -1,0 +1,628 @@
+{
+ "situation": {
+  "id": "in_genz_neet_drop_year",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 4
+  },
+  "note": "second drop year for NEET. papa took a loan for kota. mock scores going down. if I fail again I don't know how I'll face them.",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Kota)",
+  "lang": "english",
+  "slices": [
+   "exams",
+   "fear",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and afraid",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the replaying, the loan, and the fear of facing your father.",
+    "steady": "You hold that a result is something that happens, not who you are."
+   },
+   "undisclosed": true,
+   "hinglish": true,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "In his second drop year, his scores are falling and his father's loan hangs over him; he is afraid of facing his father if he fails again.",
+   "mirror": "You keep going over the scores, and over the loan, as if the next failure is already decided.",
+   "insight": "Every mock score you go down is a verdict you are passing on yourself before the result is in. That is the weight you cannot put down.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.7,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.385,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a loan you did not ask for, falling scores, and the fear of facing the man who took it for you. My project or startup failed.",
+    "diagnose": "When a result is feared, the mind turns against itself; self-blame grows from believing the outcome alone measures your worth.",
+    "steady": "A result is something that happens, not who you are; no one who tries to do good is ever lost, and your father's love is not a loan.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again with the next mock.",
+    "story": "A young man who fell short of the mark his father believed in, and had to face him, then find his footing again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the loan",
+    "The verdict you keep passing",
+    "More than the score"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "second drop year for NEET",
+    "father took a loan",
+    "mock scores are falling"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:29=0.3,11=0.6,40=0.3,47=0.3,7=0.3,59=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.66",
+    "retried:5",
+    "dropped:fallback_lesson=1,fallback_line=2,missing=5",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.2104,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna, the greatest archer of his time, stands in his chariot. He looks across the battlefield and sees his own family and teachers. He drops his bow. His body shakes, his mouth goes dry, and his hair stands on end. He is not facing an enemy army. He is facing his own people. He sits down and says he cannot fight. The Gita begins not with a hero, but with a man who has collapsed under the weight of his own fear and love.",
+     "for_you": "The mock scores keep dropping. The loan is still there. The fear of facing your father is sitting heavy in your chest. You feel like you are the only one who feels this way, but the Gita starts with a breakdown, not a battle.",
+     "try_today": "Notice one moment where your body feels the fear today.",
+     "scene_line": "You are sitting in your chariot, your bow slipping from your hand.",
+     "asks": [
+      "Why does my body shake when I think of my father?",
+      "How do I stop the scores from falling?",
+      "What if I cannot face my family again?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.1.11",
+     "ref": "Ashtavakra Gita 1.11",
+     "ref_iast": "Aṣṭāvakra Gītā 1.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "मुक्ताभिमानी मुक्तो हि बद्धो बद्धाभिमान्यपि । किंवदन्तीह सत्येयं या मतिः सा गतिर्भवेत् ॥",
+     "line": "Believe you are free and you are. Believe you are bound and you are. As you think, so you become.",
+     "translation": "One who thinks 'I am free' is free, and one who thinks 'I am bound' stays bound. The saying here is true: as you think, so you become.",
+     "words": [],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "This is about inner freedom; it does not deny real constraints or problems that need action.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.3279,
+     "beat": "diagnose",
+     "role_fit": 0.785,
+     "meaning": "King Janaka asks the young sage Ashtavakra how a person becomes free. Ashtavakra tells him that freedom is not something to be achieved in the future. It is a matter of belief. If you believe you are already free, you are free. If you believe you are bound, you remain bound. The way you see yourself is the very thing that makes you what you are.",
+     "for_you": "You are sitting in this room with a phone in your hand and a score that feels like a verdict. But the score is only a number on a screen.",
+     "try_today": "Notice the moment you think 'I am a failure,' and ask if that thought is the whole truth.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2849,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari is speaking to you, the reader, from his section on steadfastness. He says that a ball knocked down by the hand flies right back up. He means that setbacks rarely last for those who live rightly and keep going on the right path. It is not a promise that all suffering is always short, or that people who suffer long did something wrong. The story around it tells of the gods churning the ocean, past jewels and poison, until they found nectar. The steady do not leave the right path whatever people say.",
+     "for_you": "Your mock scores are falling and the loan hangs, so the future feels like a heavy weight. But a ball knocked down still flies back up. You are still on the right path, even if the numbers do not show it yet. The setback is not the whole story.",
+     "try_today": "Notice one thing today that shows you are still moving forward, no matter how small it seems.",
+     "scene_line": "You are the ball knocked down, and the hand that struck you is not the last word.",
+     "asks": [
+      "How do I know if the setback is ending or just changing shape?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.8517,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna is paralyzed by fear and doubt about the war. Krishna explains how the wise live. They accept whatever comes without asking for more. They are not swayed by success or failure. They do not envy others. Even while doing their work, they remain free inside. This is the way to act without being trapped by the results.",
+     "for_you": "The mock scores are falling, and the loan is sitting there. But you are not the score. The wise do not let results define them. They keep their feet moving even when the numbers go down. You can do your work without handing over your worth to the result.",
+     "try_today": "Notice one moment when you feel your worth dropping, and let it pass without judgment.",
+     "scene_line": "You stand in the field of your own making, waiting for the moment to act.",
+     "asks": [
+      "How do I separate my work from the result I fear?",
+      "Can I do this work without letting it own me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.7799,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.5.12",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 5.12",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "दोषः शाम्यत्यसंदेहं प्राक्तनोऽद्यतनैर्गुणैः । दृष्टान्तोऽत्र ह्यस्तनस्य दोषस्याद्य गुणैः क्षयः ॥",
+     "line": "Yesterday's mistake can be undone by what you do well today.",
+     "translation": "There is no doubt: past faults are calmed by present virtues. The proof is that yesterday's mistake is undone by today's good deeds.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 2.9961,
+     "beat": "act",
+     "role_fit": 0.711,
+     "meaning": null,
+     "for_you": "Be on your own side as the self is on yours; make amends, learn, and begin again without carrying the old verdict.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.12.10",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+      "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+      "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+      "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+      "words": [],
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "failure_project",
+        "label": "My project or startup failed"
+       },
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "When you have looked everywhere, look again; giving up costs too much.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the loan",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15296,
+   "total": 15297
+  },
+  "_ms": 15299
+ }
+}

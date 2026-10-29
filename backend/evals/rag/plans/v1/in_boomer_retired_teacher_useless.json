@@ -1,0 +1,619 @@
+{
+ "situation": {
+  "id": "in_boomer_retired_teacher_useless",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3
+  },
+  "note": "retired after 38 years of teaching. now my son treats me like I don't understand anything. my opinion is not asked even for the house paint.",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Bhopal)",
+  "lang": "english",
+  "slices": [
+   "ageing",
+   "family",
+   "lang:english"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "dismissed and small",
+   "bridge": "The life they see for you is their smallness, not your measure. What was yours to teach cannot be taken away by what they now think.",
+   "week_thesis": "Seven days from being dismissed as if you no longer understand to standing in the truth of what you have always known.",
+   "week_beats": {
+    "hook": "You recognise being treated as if you no longer understand anything, and the quiet anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A retired teacher of years is being treated as if she no longer understands anything, even for the house paint, by her adult son.",
+   "mirror": "Thirty-eight years of teaching, and now your son decides you no longer understand even the paint on the wall.",
+   "insight": "You spent years teaching others to think for themselves. Now your son has decided you no longer understand anything, and that is not a loss of ability, it is a loss of respect.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.71,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.605,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as if you no longer understand anything, after a lifetime of teaching others to think, and the quiet anger of it. Tension with my in-laws.",
+    "diagnose": "When others see only a role, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit their picture.",
+    "story": "A woman of learning and standing, dismissed by her own son, who stood in her truth and was proven right or found her footing."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Dismissed as if you do not understand",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "retired after years of teaching"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:7=0.0,40=0.3,13=1.0,17=0.0,532=0.6,49=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.56,max=0.62",
+    "retried:2",
+    "dropped:accept=1,copied=1,fallback_line=2,soft_kept=1,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "words": [
+      {
+       "sa": "कार्पण्यदोषोपहतस्वभावः",
+       "en": "nature overcome by weakness"
+      },
+      {
+       "sa": "पृच्छामि",
+       "en": "I ask"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "you"
+      },
+      {
+       "sa": "धर्मसंमूढचेताः",
+       "en": "mind confused about duty"
+      },
+      {
+       "sa": "यत्",
+       "en": "which"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "the highest good"
+      },
+      {
+       "sa": "स्यात्",
+       "en": "may be"
+      },
+      {
+       "sa": "निश्चितम्",
+       "en": "certainly"
+      },
+      {
+       "sa": "ब्रूहि",
+       "en": "tell"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "मे",
+       "en": "to me"
+      },
+      {
+       "sa": "शिष्यः",
+       "en": "student"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "शाधि",
+       "en": "instruct"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "you"
+      },
+      {
+       "sa": "प्रपन्नम्",
+       "en": "one who has taken refuge"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.5314,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna stands on the field, his body heavy, his mind scattered by grief, and he tells Krishna that he cannot see which path is right. He says his nature is weak and his understanding is lost, and he asks Krishna to teach him plainly. The verse says that clarity begins at the moment you admit you do not know, when you stop pretending and simply ask to be shown the way.",
+     "for_you": "You taught others to think for themselves. Your mind is not weak. It is the quiet anger of being made small that you feel.",
+     "try_today": "Name the exact moment you felt most dismissed today.",
+     "scene_line": "You stand where Arjuna stood, asking for clarity on a field of your own.",
+     "asks": [
+      "How do I teach someone who has decided I am no longer a teacher?",
+      "Is it weakness to ask for my own knowledge back?",
+      "What if I am right and they will not hear me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 2.7513,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": "Bhishma, the old commander on his bed of arrows, tells Yudhishthira what to do when a fool insults you in public. He says the person who runs others down in front of a crowd only puts their own faults on display. It is like a snake raising its hood. The careless critic shows what they themselves are. The verse proposes that you let the words pass like a crow's cawing.",
+     "for_you": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+     "try_today": "Notice when your son speaks and let the words pass like a crow's cawing.",
+     "scene_line": "You are on your bed of arrows while your son speaks ill of you in public.",
+     "asks": [
+      "How do I let the words pass like a crow's cawing?",
+      "What fault does my son display when he dismisses me?",
+      "How do I stop my own fault from rising like a hood?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.62.13",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+     "family": "vr",
+     "speaker": "Sage Nishakara",
+     "listener": "Sampati (recounted)",
+     "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+     "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+     "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+     "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+     "words": [],
+     "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sampati",
+      "title": "Sampati, the bird who could not fly",
+      "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+      "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+      "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+     },
+     "score": 2.9812,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "The old vulture Sampati has sat on the ground for ages with burned wings, certain he is finished. A sage tells him that by staying exactly where he is, he will serve the world. The sage could restore his wings, but Sampati is needed in his present state. The verse says that your value does not vanish when your old roles end. Your presence, with all you carry, is itself a form of usefulness.",
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+     "try_today": "Notice one moment when your old knowledge is exactly what is needed, even if no one asks.",
+     "scene_line": "You are Sampati on the ground, and the world still needs what you know.",
+     "asks": [
+      "How do I separate my worth from their dismissal?",
+      "What knowledge do I still hold that they do not see?",
+      "Can I stay where I am and still be of use?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "words": [
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "अनन्त",
+       "en": "infinite"
+      },
+      {
+       "sa": "महाम्भोधौ",
+       "en": "great ocean"
+      },
+      {
+       "sa": "विश्ववीचिः",
+       "en": "universal wave"
+      },
+      {
+       "sa": "स्वभावतः",
+       "en": "by nature"
+      },
+      {
+       "sa": "उदेतु",
+       "en": "rises"
+      },
+      {
+       "sa": "वास्तमायातु",
+       "en": "and sets"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "वृद्धिः",
+       "en": "growth"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "क्षतिः",
+       "en": "decline"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.6638,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra speaks to Janaka after a long teaching. He says you are the boundless ocean, not the waves. Let the waves of the world rise or fall by their own nature. You neither grow nor shrink. This means your true self is steady, untouched by the small judgments and changes of the world.",
+     "for_you": "Your son sees a wave, a passing opinion that you are out of touch. What you are is the ocean beneath it. That depth does not shrink because someone on the shore shouts. Hold to what you have always known about yourself.",
+     "try_today": "Notice one small thing your son says that you once taught to others.",
+     "scene_line": "You are the ocean, and the wave is only passing noise.",
+     "asks": [
+      "How do I know the wave is only passing noise?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "words": [],
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.1059,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram is listening to Hanuman, a stranger who has just spoken to them. Hanuman's words are not long, not vague, not rushed, not strained. They come from the chest and throat in an even, middle tone. The point is that fear jumps ahead of facts. Calm, clear words build trust fast.",
+     "for_you": "Your son has decided what you understand before he hears what you say. Your years of teaching still live in your voice, even if he has stopped listening. Let your next word be your own.",
+     "try_today": "Let your next word be your own.",
+     "scene_line": "You are in your own even voice.",
+     "asks": [
+      "How do I make my voice steady when he cuts me off?",
+      "Can I speak my truth without rushing to defend it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.8145,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher stands at a graduation and speaks to a student who is leaving to start a family. The teacher tells him to speak the truth, to do what is right, and to never stop studying. The teacher also tells the student to honour his parents and his teachers, to give with grace, and to copy only the good conduct of those around him. This is a whole life in one speech.",
+     "for_you": "Your son thinks you no longer understand the paint for the house, but that is his smallness, not your measure. That truth still lives in you. The teaching was not taken away.",
+     "try_today": "Speak one clear truth about the house to your son in an even voice.",
+     "scene_line": "You are in your own graduation, leaving to start a new life.",
+     "asks": [
+      "How do I speak the truth without starting a fight?",
+      "What is my part in the right action here?",
+      "How do I keep learning when I am being dismissed?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.satyakama",
+     "title": "Satyakama Jabala, the honest boy",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Satyakama",
+      "Jabala",
+      "Haridrumata Gautama"
+     ],
+     "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+     "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+     "lesson": "Honesty about who you are is the best credential you can bring.",
+     "matched": [],
+     "anchor": {
+      "id": "up_chhandogya.304",
+      "ref": "Chhandogya Upanishad 4.4.2",
+      "ref_iast": "Chāndogya Upaniṣad 4.4.2",
+      "family": "up",
+      "speaker": "Jabala",
+      "listener": "Her son Satyakama",
+      "setting": "A boy asks his mother his lineage before seeking a teacher.",
+      "sanskrit": "सा हैनमुवाच नाहमेतद्वेद तात यद्गोत्रस्त्वमसि बह्वहं चरन्ती परिचारिणी यौवने त्वामलभे साहमेतन्न वेद यद्गोत्रस्त्वमसि जबाला तु नामाहमस्मि सत्यकामो नाम त्वमसि स सत्यकाम एव जाबालो ब्रवीथा इति ॥",
+      "line": "His mother said, 'I don't know your father's line. I am Jabala, you are Satyakama. Say exactly that.'",
+      "translation": "She said to him: 'I do not know your lineage, my child. In my youth I moved about a great deal as a serving woman, and then I had you. So I do not know your lineage. My name is Jabala and your name is Satyakama. Just say you are Satyakama Jabala.'",
+      "words": [],
+      "why": "Honesty about who you are is the best credential you can bring.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.chhandogya.satyakama",
+       "title": "Satyakama Jabala, the honest boy",
+       "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+       "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+       "lesson": "Honesty about who you are is the best credential you can bring."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "teaser": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "for_you": "Satyakama did not hide what he did not know. The teacher sent him into the world with weak cows, and the world taught him more than any classroom could. Your son has decided you are small, but you spent years teaching others to think for themselves.",
+     "asks": [
+      "What truth about myself has my son decided not to see?",
+      "Where does my value live if not in his opinion of me?",
+      "What would it look like to teach him what I know?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Dismissed as if you do not understand",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14544,
+   "total": 14546
+  },
+  "_ms": 14548
+ }
+}

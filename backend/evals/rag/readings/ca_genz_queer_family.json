@@ -1,0 +1,98 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.85,
+ "core_struggle": "After telling her parents about her girlfriend, they have gone silent and treat her like a guest at home, leaving her to perform normalcy at Diwali.",
+ "mechanism": "dignity_denied",
+ "secondary_mechanism": "grief_attachment",
+ "situations": [
+  {
+   "id": "parents_expectations",
+   "weight": 1.403,
+   "source": "note"
+  },
+  {
+   "id": "loneliness",
+   "weight": 0.75,
+   "source": "note"
+  },
+  {
+   "id": "marriage_distance",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "fear_failure",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "parent_conflict",
+   "weight": 0.422,
+   "source": "note"
+  }
+ ],
+ "mirror": "You go home for Diwali and sit at the table while they talk about the weather.",
+ "queries": {
+  "hook": "Being treated as less than you are by the people who raised you, and the anger of sitting at your own table and performing normalcy. My parents' expectations weigh on me.",
+  "diagnose": "When others see only a role, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+  "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+  "act": "Speak the true thing, gently and firmly, hold your ground on what is yours, and find the courage the moment asks for.",
+  "story": "A woman who was told to be smaller by her own people, who stood in her truth and was proven right by her own feet."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The guest at home",
+  "Whose silence it is",
+  "The one who stands"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "cut off and performing",
+ "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+ "week_thesis": "Seven days from being the guest at your own table to standing in the truth of who you are, with the words to hold your ground.",
+ "undisclosed": true,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "partner",
+  "friend",
+  "teacher",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise being silenced and made a guest in your own home, named without blame."
+ },
+ "insight": "They have stopped speaking to you, and at the table you are the one performing normalcy. The smaller role they have handed you is their silence.",
+ "seat": "a student and worker who has been silenced by their parents after coming out",
+ "life_context": "",
+ "details": [
+  "told parents about girlfriend",
+  "parents respond with weather talk",
+  "feels like a guest at home during Diwali",
+  "the silence is a coldness"
+ ],
+ "age": "u25",
+ "stages": [
+  "studying",
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "hook:anchored_to_situation"
+ ]
+}

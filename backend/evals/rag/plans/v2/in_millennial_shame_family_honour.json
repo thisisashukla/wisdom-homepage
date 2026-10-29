@@ -1,0 +1,716 @@
+{
+ "situation": {
+  "id": "in_millennial_shame_family_honour",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3
+  },
+  "note": "I failed my bank exam for the fourth time. the whole village knows. my father has stopped going to the chaupal because people ask about me.",
+  "note_source": "voice",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Rohtak)",
+  "lang": "english",
+  "slices": [
+   "exams",
+   "family",
+   "lang:english",
+   "shame"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and watched",
+   "bridge": "The village is talking about you, but the one who cannot stop going over it is your own mind, and the Gita says that is the real enemy.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "After failing a bank exam four times, the whole village knows and his father has withdrawn from the chaupal; he cannot stop replaying it.",
+   "mirror": "You keep going over the same failure, and the village is talking about it.",
+   "insight": "You replayed the failure last night. Underneath is the belief that the whole village's verdict is the truth of you.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 1.832,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.428,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.3,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a failure everyone knows, and the shame that has reached your father, replayed in your mind until you cannot sleep. My project or startup failed.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and it grows in the silence of the chaupal.",
+    "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost, and your father's love is not measured by the exam.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A man who failed again and again, faced the village's silence and his own shame, yet found the courage to rise again."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Carrying the village's verdict",
+    "The one who failed",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "failed a bank exam four times",
+    "the whole village knows",
+    "father has stopped going to the chaupal"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:14=0.0,11=0.3,48=0.6,40=0.6,34=0.3,7=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.67",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:repeat=3,soft_kept=2,try_today_long=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.14",
+     "ref": "Bhagavad Gita 18.14",
+     "ref_iast": "Bhagavad Gītā 18.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on the five causes behind every action.",
+     "sanskrit": "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् । विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम् ॥",
+     "line": "Every result has five causes: the setting, the doer, the tools, the efforts, and the unseen. You're one of them.",
+     "translation": "The seat, the doer, the various instruments, the many kinds of effort, and fifth, providence: these are the five causes of every action.",
+     "words": [
+      {
+       "sa": "अधिष्ठानम्",
+       "en": "the basis"
+      },
+      {
+       "sa": "तथा",
+       "en": "and"
+      },
+      {
+       "sa": "कर्ता",
+       "en": "the doer"
+      },
+      {
+       "sa": "करणम्",
+       "en": "the instruments"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "पृथग्विधम्",
+       "en": "of many kinds"
+      },
+      {
+       "sa": "विविधाः",
+       "en": "varied"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "पृथक्",
+       "en": "separate"
+      },
+      {
+       "sa": "चेष्टाः",
+       "en": "efforts"
+      },
+      {
+       "sa": "दैवम्",
+       "en": "the unseen force"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अत्र",
+       "en": "here"
+      },
+      {
+       "sa": "पञ्चमम्",
+       "en": "the fifth"
+      }
+     ],
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not 'it wasn't my fault'. You own your part; you just aren't the only cause.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      },
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.582,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna is telling Arjuna about the five causes behind any action. He says that the seat, the doer, the instruments, the efforts, and providence are the five causes of every action. You are one cause among five. You own your part, not the whole outcome.",
+     "for_you": "The village knows about the failed exam, and your father has stopped going to the chaupal. You are one cause among five, and the whole outcome is not yours to carry alone. You did your part, and that is enough.",
+     "try_today": "Name one thing outside your control that contributed to the exam result.",
+     "scene_line": "You are one cause among five in the village's story about you.",
+     "asks": [
+      "How do I stop letting the village's verdict define me?",
+      "What is my part in this, and what is not?",
+      "How do I carry my part without carrying the whole?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.3.32.48",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.48-49",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi describes a farmer who ploughs and sows, then waits for rain.",
+     "sanskrit": "वृष्टिश्चेन्नानुगृह्णीयादनेनास्तत्र कर्षकः / यदन्यः पुरुषः कुर्यात्तत्कृतं सफलं मया तच्चेदं फलमस्माकमपराधो न मे क्वचित् / इति धीरोऽन्ववेक्ष्यैव नात्मानं तत्रगर्हयेत्",
+     "line": "You ploughed and sowed. If the rain didn't come, that isn't your failure. Don't condemn yourself.",
+     "translation": "If the rain does not favour him, the farmer is not to blame. He tells himself: 'Whatever anyone could have done, I have done.' If the result is still this, the fault is not mine. Seeing this, the wise do not condemn themselves.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      },
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.0171,
+     "beat": "diagnose",
+     "role_fit": 0.706,
+     "meaning": "Draupadi speaks to Yudhishthira in the forest. She tells him about a farmer who ploughs the field and sows the seed. He does his part and then waits for the rain. If the rain does not come, the farmer is not to blame. He tells himself that he did everything he could. If the result is still nothing, the fault is not his. The wise do not condemn themselves for what they could not control.",
+     "for_you": "You ploughed and sowed. The village knows about the exam, but the result is not yours alone. You did your part, and the rest is not your failure. The one replaying it is not the village. It is your own mind. Let the rain fall where it will.",
+     "try_today": "Notice one thing outside your own thoughts for ten minutes.",
+     "scene_line": "You are in the field, and the sky has not yet opened.",
+     "asks": [
+      "How do I know what is mine to hold?",
+      "Can the rain come when I am not waiting?",
+      "What if I did my part and it still failed?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.40",
+     "ref": "Bhagavad Gita 6.40",
+     "ref_iast": "Bhagavad Gītā 6.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "श्री भगवानुवाचपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते । नहि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ॥",
+     "line": "Whoever does good never comes to ruin, my friend. Not here, not after.",
+     "translation": "The Blessed Lord said: Partha, there is no ruin for him either in this world or the next. No one who does good, my friend, ever comes to grief.",
+     "words": [
+      {
+       "sa": "श्री भगवानुवाच",
+       "en": "the Blessed One said"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O Partha"
+      },
+      {
+       "sa": "नैव",
+       "en": "not at all"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अमुत्र",
+       "en": "in the other world"
+      },
+      {
+       "sa": "विनाशः",
+       "en": "destruction"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of him"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "there is"
+      },
+      {
+       "sa": "नहि",
+       "en": "indeed not"
+      },
+      {
+       "sa": "कल्याणकृत्",
+       "en": "one who does good"
+      },
+      {
+       "sa": "कश्चित्",
+       "en": "anyone"
+      },
+      {
+       "sa": "दुर्गतिम्",
+       "en": "bad end"
+      },
+      {
+       "sa": "तात",
+       "en": "my dear"
+      },
+      {
+       "sa": "गच्छति",
+       "en": "goes"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      },
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 3.4556,
+     "beat": "steady",
+     "role_fit": 0.395,
+     "meaning": "Arjuna is afraid that if he tries for yoga and falls, he is lost forever. Krishna tells him that a person who does good work never comes to ruin. The effort itself is not wasted, and the path opens again for them to try.",
+     "for_you": "You are replaying the exam because your mind believes the village verdict is the whole truth. The failure is one cause among five, and your sincere effort is not destroyed. The path is still open for you to try again.",
+     "try_today": "Notice the exact moment the replay starts, and name the effort you gave.",
+     "scene_line": "You are in your own field, holding the plough, waiting for rain that is not your fault.",
+     "asks": [
+      "How can I tell my effort from the result?",
+      "Where does the village end and I begin?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.9329,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is explaining how the wise work. They are content with whatever comes unasked and they are free from envy. They do not get carried away by success or crushed by failure. They act, but because they are steady in both, they are not bound by the results. This means you can do your work without letting the outcome tie you up in knots.",
+     "for_you": "The village knows about the failed exam, and your father's silence at the chaupal cuts deep. But the wise do not let another's gain or loss shake them. Your part is the honest work. The village's verdict is not your truth. You can act without being bound.",
+     "try_today": "Notice when your mind rehearses the failure, and let your hands return to the task at hand.",
+     "scene_line": "You stand in your own field, bound not by the harvest but by the act of sowing.",
+     "asks": [
+      "How do I stop the village's voice from becoming my own?",
+      "Can I find a way to rest without feeling I am giving up?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.55.16",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 55.16",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on his bed of arrows begins teaching Yudhishthira how to lead.",
+     "sanskrit": "विपन्ने च समारम्भे सन्तापं मा स्म वै कृथाः / घटेतैवं सदाऽऽत्मानं राज्ञामेष परो नयः",
+     "line": "When something you started fails, don't torment yourself. Gather yourself and apply yourself again.",
+     "translation": "If an undertaking fails, do not torment yourself over it. Keep applying yourself again and again; this is the highest rule for those who lead.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0403,
+     "beat": "act",
+     "role_fit": 0.361,
+     "meaning": "Bhishma, the great warrior lying on his bed of arrows, speaks to Yudhishthira, who is about to give up his rule. He tells him that when a task he started comes to nothing, he should not punish himself with endless regret. Instead, he must gather his strength and begin again. This is the first rule for anyone who must lead.",
+     "for_you": "Your mind is running the exam back, and the village is running it too. That is a heavy weight, and it is right to feel it. But the failure you carry is not the only story here. The one who must apply again is you.",
+     "try_today": "Write down one small step toward your next attempt.",
+     "scene_line": "You are in your own bed of arrows, waiting to be asked how you will rise.",
+     "asks": [
+      "How do I stop the replay?",
+      "Is my father's silence my fault?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "words": [],
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 2.9262,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In the town of Mithila, a meat-seller named Dharmavyadha is teaching a Brahmin ascetic named Kaushika about true wisdom. The ascetic had once struck a cow with a blade of grass and was told to learn from this ordinary butcher. The butcher tells him that if a person who has done wrong turns to doing good, they are freed from all their wrongs, just like the moon coming out from behind a great cloud.",
+     "for_you": "The village has become your cloud, hiding the moon of who you are. The four failures are behind you now. Care for your parents with the same honesty you would show in a market. You are free to be seen again.",
+     "try_today": "Do one small, honest task for your parents today.",
+     "scene_line": "You are the moon waiting behind the cloud of the village's talk.",
+     "asks": [
+      "How do I stop the village from defining me?",
+      "Can I really leave the past behind?",
+      "What does it mean to care for my parents now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.12.10",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+      "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+      "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+      "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+      "words": [],
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "failure_project",
+        "label": "My project or startup failed"
+       },
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "The village knows your name now, and your father sits at home. You have looked at the failure four times, and the mind has looked with you. The text shows that when a search seems empty, the next step is to refuse the despair, not to accept it. Look again.",
+     "asks": [
+      "When the mind says enough, how do I hear the next step?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the village's verdict",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 22357,
+   "total": 22358
+  },
+  "_ms": 22361
+ }
+}

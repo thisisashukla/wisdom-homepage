@@ -1,0 +1,694 @@
+{
+ "situation": {
+  "id": "adv_rant_long",
+  "source": "persona_v2",
+  "sets": [
+   "full"
+  ],
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 6
+  },
+  "note": "ok so where do I even start. manager gave my project to the new guy who joined 3 months ago and everyone knows he's the VP's nephew, my landlord is increasing rent by 20% and wants me out if I don't pay, my girlfriend says I'm always complaining and she's tired of it, my mom calls every day asking about marriage and when I'll come home for Diwali which I can't because no leave, I haven't been to the gym in 4 months, gained 8 kilos, can't sleep before 3, my friends are all buying flats and I can't even save 10k a month, and honestly I don't even know why I'm typing this into an app",
+  "note_source": "text",
+  "expect_stance": "struggle",
+  "expect_risk": null,
+  "market": "India (Bengaluru)",
+  "lang": "english",
+  "slices": [
+   "adversarial",
+   "lang:english",
+   "rant",
+   "work"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "overwhelmed and stuck",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "Seven days from a mind that runs through every problem at once to one breath, one step, and one piece of the burden set down.",
+   "week_beats": {
+    "hook": "You recognise the exhaustion of holding too many things at once.",
+    "diagnose": "You see that the mind running through all of them is what makes each one feel heavier than it is.",
+    "steady": "You hold that what is yours cannot be taken by what they do, and that the mind can be steadied.",
+    "act": "You try one thing today: before the phone, one minute of stillness.",
+    "story": "A man who carried the weight of the world found that the first step was to set it down, one piece at a time."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "family",
+    "partner",
+    "parent",
+    "friend"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "His manager took his project to the VP's nephew, his landlord wants him out for more rent, and every part of his life is pressing at once.",
+   "mirror": "You have eight things pressing at once, and none of them will let you sleep before three.",
+   "insight": "The landlord, the manager, the girlfriend, the mother, the friends, the body, the money, the sleep: none of them will let you rest, and the mind is running through all of them at once.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.403,
+     "source": "note"
+    },
+    {
+     "id": "credit_taken",
+     "label": "My manager took credit for my work",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.895,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.725,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.61,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that runs through every problem at once, and the exhaustion of being the one who has to hold them all. My boss makes my work life miserable.",
+    "diagnose": "A mind that will not settle becomes its own enemy, replaying every wrong and every fear until it is too tired to act.",
+    "steady": "Praise and blame, gain and loss, praise and blame come and go like the wind; what is yours cannot be taken by what they do.",
+    "act": "Practise one thing today: before the phone, one minute of stillness, one breath, one step to the door.",
+    "story": "A man who carried the weight of the world on his shoulders, faced the first storm, and found that the first step was to set the burden down, not all at once, but one piece at a time."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The mind that runs",
+    "The mind that runs",
+    "The one who can steady it"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "manager gave project to VP's nephew",
+    "mother calls daily about marriage and Diwali"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:27=0.6,11=0.6,84=0.3,81=0.3,536=0.6,23=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.68",
+    "dropped:fallback_line=2,missing=4,repeat=1,scene_line_not_second_person=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.27",
+     "ref": "Bhagavad Gita 3.27",
+     "ref_iast": "Bhagavad Gītā 3.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः । अहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते ॥",
+     "line": "Countless forces do the work; the ego, fooled, says 'I did it all'.",
+     "translation": "All actions are done by the qualities of nature, but the one deluded by ego thinks, 'I am the doer.'",
+     "words": [
+      {
+       "sa": "प्रकृतेः",
+       "en": "of nature"
+      },
+      {
+       "sa": "क्रियमाणानि",
+       "en": "being done"
+      },
+      {
+       "sa": "गुणैः",
+       "en": "by qualities"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "सर्वशः",
+       "en": "entirely"
+      },
+      {
+       "sa": "अहङ्कारविमूढात्मा",
+       "en": "ego-confused self"
+      },
+      {
+       "sa": "कर्ताऽहमिति",
+       "en": "I am the doer"
+      },
+      {
+       "sa": "मन्यते",
+       "en": "believes"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "credit_taken",
+       "label": "My manager took credit for my work"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.111,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": null,
+     "for_you": "You are not the mind; thoughts come and go before the silent witness that watches them and is never disturbed.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "words": [],
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.3728,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, sitting with the sages Vishvamitra and Vasishtha, has just described how the world works against us. He speaks of how sensory desire and craving turn truth to falsehood. He says the self strikes the self. This means that the force which makes your body ache and your inbox burn is the same mind running through all of them at once. It is not the landlord, the manager, or the mother calling. It is the mind becoming its own enemy, striking the self with every worry at once.",
+     "for_you": "You feel the weight of the landlord and the manager and the mother all pressing on your chest at once. That is the mind becoming its own enemy. It is not the people calling. It is the mind striking the self with every worry at once.",
+     "try_today": "When the manager calls, notice the mind striking the self.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2922,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher speaks to a renunciant, laying out the rules of a life that is stepping back. The teacher says that a person should not exhaust the body by chasing pleasure or running from pain. When praised, a person should not swell with pride. When blamed or attacked, they should not turn around and curse others. The teacher is pointing to a steadiness that does not depend on what happens outside.",
+     "for_you": "Your manager took the project, and your landlord wants more rent, but your body is the one that is running in circles. You do not have to exhaust yourself trying to fix every outside thing. When you are praised, you do not need to feel the win.",
+     "try_today": "When the body asks for rest, give it that rest.",
+     "scene_line": "You stand at the edge of your own exhaustion, waiting for the next blow.",
+     "asks": [
+      "How do I rest when the rent is due?",
+      "How do I stop my body from running?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.56",
+     "ref": "Bhagavad Gita 2.56",
+     "ref_iast": "Bhagavad Gītā 2.56",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥",
+     "line": "Unshaken in sorrow, not craving in joy, free of clinging, fear and anger: that is a steady mind.",
+     "translation": "One whose mind is not shaken by sorrow, who has no craving for pleasures, and who is free from attachment, fear and anger, is called a sage of steady mind.",
+     "words": [
+      {
+       "sa": "दुःखेषु",
+       "en": "in pains"
+      },
+      {
+       "sa": "अनुद्विग्न",
+       "en": "untroubled"
+      },
+      {
+       "sa": "मनाः",
+       "en": "mind"
+      },
+      {
+       "sa": "सुखेषु",
+       "en": "in pleasures"
+      },
+      {
+       "sa": "विगतस्पृहः",
+       "en": "free from desire"
+      },
+      {
+       "sa": "वीतराग",
+       "en": "without attachment"
+      },
+      {
+       "sa": "भय",
+       "en": "fear"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "स्थितधीः",
+       "en": "steady-minded"
+      },
+      {
+       "sa": "मुनिः",
+       "en": "sage"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "A steady mind still feels; it just isn't run by sorrow, fear or anger.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.1475,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Arjuna asks Krishna what a person of steady mind is like. Krishna describes someone unshaken by sorrow, free from craving, fear and anger. The mind does not become the mind's own enemy when it is guarded. Anger and ruin begin with what you dwell on, so you guard your attention and let countless forces do the work. The ego, fooled, claims it did it all.",
+     "for_you": "The mind runs through the landlord, the manager, the mother, the money and the sleep all at once. You feel the weight of it, and you feel it is your own. The mind becomes the mind's own enemy when it dwells on the hurt and claims it did it all.",
+     "try_today": "Watch what your mind dwells on when the phone rings.",
+     "scene_line": "You are Arjuna, asking what a steady mind looks like.",
+     "asks": [
+      "How do I guard my attention when everything presses at once?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.822,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu is speaking to Nidagha, a student who is tired of running the household and wants to escape it. Ribhu does not tell him to leave. He says a free person can be busy on the outside and unhurried inside. They do the work at hand, take up what comes, let go of what is lost, and treat the whole world as family. They do not let the doing agitate them. They act fully, but they are a non-doer within. The mind stays clear.",
+     "for_you": "Your mind is running through the project, the rent, and the calls all at once. You do not have to stop the world to find stillness. Just let the doing be the doing. Your part is the work, not the storm inside it.",
+     "try_today": "Before you touch the phone, let your body sit still for one minute.",
+     "scene_line": "You are busy on the outside and unhurried inside.",
+     "asks": [
+      "How do I let the work be the work?",
+      "Can I really be free while the rent is due?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "words": [
+      {
+       "sa": "विविक्त",
+       "en": "isolated"
+      },
+      {
+       "sa": "आसीन",
+       "en": "seated"
+      },
+      {
+       "sa": "उपारतेन्द्रियो",
+       "en": "senses withdrawn"
+      },
+      {
+       "sa": "विनिर्जितात्मा",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "विमलान्तराशयः",
+       "en": "pure inner state"
+      },
+      {
+       "sa": "विभावयेदेकमनन्यसाधनो",
+       "en": "contemplate with single-minded focus"
+      },
+      {
+       "sa": "विज्ञानदृक्केवल",
+       "en": "only with knowledge's vision"
+      },
+      {
+       "sa": "आत्मसंस्थितः",
+       "en": "established in the self"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 2.7823,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": null,
+     "for_you": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ocean",
+     "title": "Three days at the ocean: humble first, firm after",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Vibhishan",
+      "Lakshman",
+      "the Ocean"
+     ],
+     "story_hook": "Ram sat on the shore and asked the ocean, politely, to move.",
+     "summary": "On Vibhishan's advice, Ram first asks the ocean politely to let his army cross, and waits three days. When nothing changes, he takes up his bow, observing that counsel to the unwilling is like seed on barren soil. The ocean appears, apologises, and shows him how to build a bridge.",
+     "lesson": "Always ask humbly first. But don't let humility be taken for weakness.",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.48.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 48",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ram",
+      "setting": "At the shore, Ram asks how to cross the ocean, and Vibhishan advises.",
+      "sanskrit": "कह लंकेस सुनहु रघुनायक। कोटि सिंधु सोषक तव सायक॥ जद्यपि तदपि नीति असि गाई। बिनय करिअ सागर सन जाई ॥",
+      "line": "Even when you have the power to force it, ask politely first.",
+      "translation": "Raghunath, though a single arrow of yours could dry up countless oceans, good policy says: first go and ask the ocean politely.",
+      "words": [
+       {
+        "sa": "कह",
+        "en": "said"
+       },
+       {
+        "sa": "लंकेस",
+        "en": "lord of Lanka, Vibhishana"
+       },
+       {
+        "sa": "सुनहु",
+        "en": "listen"
+       },
+       {
+        "sa": "रघुनायक",
+        "en": "Lord of the Raghu clan"
+       },
+       {
+        "sa": "कोटि",
+        "en": "crores, millions"
+       },
+       {
+        "sa": "सिंधु",
+        "en": "oceans"
+       },
+       {
+        "sa": "सोषक",
+        "en": "drying up"
+       },
+       {
+        "sa": "तव",
+        "en": "your"
+       },
+       {
+        "sa": "सायक",
+        "en": "arrow) // जद्यपि (although"
+       },
+       {
+        "sa": "तदपि",
+        "en": "even so"
+       },
+       {
+        "sa": "नीति",
+        "en": "right conduct"
+       },
+       {
+        "sa": "असि",
+        "en": "is"
+       },
+       {
+        "sa": "गाई",
+        "en": "said"
+       },
+       {
+        "sa": "बिनय",
+        "en": "humble request"
+       },
+       {
+        "sa": "करिअ",
+        "en": "should be done"
+       },
+       {
+        "sa": "सागर",
+        "en": "sea"
+       },
+       {
+        "sa": "सन",
+        "en": "with"
+       },
+       {
+        "sa": "जाई",
+        "en": "going"
+       }
+      ],
+      "why": "Always ask humbly first. But don't let humility be taken for weakness.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.ocean",
+       "title": "Three days at the ocean: humble first, firm after",
+       "summary": "On Vibhishan's advice, Ram first asks the ocean politely to let his army cross, and waits three days. When nothing changes, he takes up his bow, observing that counsel to the unwilling is like seed on barren soil. The ocean appears, apologises, and shows him how to build a bridge.",
+       "story_hook": "Ram sat on the shore and asked the ocean, politely, to move.",
+       "lesson": "Always ask humbly first. But don't let humility be taken for weakness."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram asked the ocean, politely, to move, and waited three days",
+     "teaser": "Ram asked the ocean, politely, to move, and waited three days",
+     "for_you": "You asked your manager about the project and waited. The silence you received was the ocean's three days. Now you hold the bow. You do not need to shout. You could build the bridge, piece by piece, from your own bank.",
+     "asks": [
+      "How do I know when to wait and when to act?",
+      "What is the first piece of the bridge I can build?",
+      "How do I stay firm without becoming the threat?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mind that runs",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 19730,
+   "total": 19732
+  },
+  "_ms": 19735
+ }
+}

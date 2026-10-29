@@ -1,0 +1,95 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.8,
+ "core_struggle": "A father who leads a team is being publicly insulted by a younger boss and cannot leave because his son's college admission is pending.",
+ "mechanism": "dignity_denied",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "toxic_boss",
+   "weight": 1.65,
+   "source": "note"
+  },
+  {
+   "id": "money_stress",
+   "weight": 0.6,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  },
+  {
+   "id": "criticism",
+   "weight": 0.383,
+   "source": "note"
+  },
+  {
+   "id": "hard_conversation",
+   "weight": 0.376,
+   "source": "note"
+  },
+  {
+   "id": "career_switch",
+   "weight": 0.36,
+   "source": "note"
+  }
+ ],
+ "mirror": "You lead a team, and after every meeting your hands shake.",
+ "queries": {
+  "hook": "Being publicly diminished by a younger boss and trapped by a son's pending admission, the anger and shame of it settling in your body after every meeting.",
+  "diagnose": "When others see only a role they can insult, their picture shows their smallness; the harm deepens only when their picture begins to replace your own.",
+  "steady": "What you are cannot be cut smaller by what they see; they do not decide your worth, and standing in your own truth is itself the duty.",
+  "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+  "story": "A man of standing and learning, publicly dismissed by his own people, who questioned them openly and stood in his truth until they had no answer."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Seen as less",
+  "Whose picture it is",
+  "No smaller than you are"
+ ],
+ "stance": "wronged",
+ "gender": null,
+ "emotion": "humiliated and trapped",
+ "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+ "week_thesis": "Seven days from being publicly diminished to standing in the truth of what you are, with the words to say so.",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "work",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the public insult and the trapped feeling, named without blame."
+ },
+ "insight": "You cannot resign while your son's admission is pending, so the humiliation stays. That is what makes the hands shake.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "new boss is years younger",
+  "hands tremble after every meeting"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "bridge:copied_example"
+ ]
+}

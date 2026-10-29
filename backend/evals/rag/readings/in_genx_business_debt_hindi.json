@@ -1,0 +1,102 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.7,
+ "core_struggle": "His business has suffered heavy losses and debt has piled up; with children's fees due, he cannot sleep and cannot tell anyone.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "restless_mind",
+ "situations": [
+  {
+   "id": "money_stress",
+   "weight": 1.655,
+   "source": "note"
+  },
+  {
+   "id": "sleep_mind",
+   "weight": 1.2,
+   "source": "note"
+  },
+  {
+   "id": "burnout",
+   "weight": 0.72,
+   "source": "note"
+  },
+  {
+   "id": "new_parent",
+   "weight": 0.521,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.5,
+   "source": "profile"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 0.45,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You lie awake with the numbers and the children's fees, and you cannot bring yourself to say it out loud.",
+ "queries": {
+  "hook": "The weight of a failing business and mounting debt, with children's fees due, and the silence of not being able to tell anyone.",
+  "diagnose": "Fear grows from imagining the future and from forgetting that what is real in you cannot be lost; worry multiplies what has not happened.",
+  "steady": "What is real in you cannot be taken by what has happened; the effort you made is yours, and no result can take that away.",
+  "act": "Do your duty with the work you can control today, let the result go, and speak one true thing to one person you trust.",
+  "story": "A man who lost everything he built, facing his family and his own fear, yet finding the courage to stand again."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "Carrying the numbers",
+  "What the fear is",
+  "What remains when it is gone"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "terrified and alone",
+ "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+ "week_thesis": "",
+ "undisclosed": false,
+ "hinglish": true,
+ "texts": [],
+ "people": [
+  "work",
+  "child",
+  "family",
+  "parent"
+ ],
+ "week_beats": {
+  "hook": "You recognise the sleeplessness and the debt as a fear that has a name.",
+  "diagnose": "You see that the sleeplessness is the fear of what it might mean, not the debt itself.",
+  "steady": "You hold that what is real in you cannot be taken by what has happened.",
+  "act": "You try doing one thing you can control today, and saying one true thing to one person.",
+  "story": "A man who lost everything shows you what standing again looks like from the inside."
+ },
+ "insight": "The debt is real, but the sleeplessness is the fear of what it might mean for your children and your name. The two are not the same thing.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "business has suffered heavy losses",
+  "debt has piled up",
+  "children's school fees are due",
+  "cannot sleep at night"
+ ],
+ "age": "45_54",
+ "stages": [
+  "own_thing",
+  "raising_kids"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "bridge:copied_example",
+  "week_thesis:missing"
+ ]
+}

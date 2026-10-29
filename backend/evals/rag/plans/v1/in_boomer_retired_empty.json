@@ -1,0 +1,564 @@
+{
+ "situation": {
+  "id": "in_boomer_retired_empty",
+  "source": "persona_v1",
+  "sets": [
+   "fast",
+   "full"
+  ],
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking",
+  "market": "India (Lucknow)",
+  "lang": "english",
+  "slices": [
+   "lang:english",
+   "v1"
+  ]
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and searching",
+   "bridge": "The quiet house and the forwarded shlokas are what the Gita calls living only for what passes. It invites you to read what does not pass.",
+   "week_thesis": "Seven days from forwarded shlokas to reading the Gita as a living text, with one chapter and one question.",
+   "week_beats": {
+    "hook": "You recognise the hunger for something deeper than forwarded shlokas.",
+    "diagnose": "You see that meaning is missing when we live only for what passes.",
+    "steady": "You hold that what does not pass is the, and the Gita is a living text.",
+    "act": "You try reading one chapter slowly, without looking for a takeaway.",
+    "story": "A seeker who left the life he knew to find what does not pass shows you the way."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A widower with time on his hands wants to read the Gita properly, not just forwarded shlokas, after his wife left and the house went quiet.",
+   "mirror": "You have time now, and the house is quiet, and you want to read the Gita properly.",
+   "insight": "The house is quiet and the forwarded shlokas are not enough. What you are reaching for is a way to read the Gita that speaks to the silence.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 2.061,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.175,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.437,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet after loss, and the hunger to read something that lasts instead of what passes.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What does not pass is the; the texts invite you to read what is real, not what is forwarded.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A seeker who left the life he knew to find what does not pass, and found it in the stillness."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "The quiet and the forwarded shlokas",
+    "What does not pass",
+    "The chapter you read alone"
+   ],
+   "seat": "a widower whose days have opened up and who wants to read the Gita properly",
+   "life_context": "",
+   "details": [
+    "wife has left",
+    "house is very quiet",
+    "children call on Sunday",
+    "has time now"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "week_fit:9=0.6,44=0.6,6=0.3,1=0.0,176=0.6,6=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.57,max=0.62",
+    "dropped:fallback_line=2,missing=5",
+    "for_you:6/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.9",
+     "ref": "Bhagavad Gita 10.9",
+     "ref_iast": "Bhagavad Gītā 10.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् । कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥",
+     "line": "Their minds on me, they talk of me with each other, and find joy and contentment in it.",
+     "translation": "With minds fixed on me and lives given to me, enlightening one another and always speaking of me, they are content and delighted.",
+     "words": [
+      {
+       "sa": "मच्चित्ता",
+       "en": "with minds on Me"
+      },
+      {
+       "sa": "मद्गतप्राणा",
+       "en": "with lives directed toward Me"
+      },
+      {
+       "sa": "बोधयन्तः",
+       "en": "instructing, enlightening"
+      },
+      {
+       "sa": "परस्परम्",
+       "en": "one another"
+      },
+      {
+       "sa": "कथयन्तः",
+       "en": "speaking, telling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "माम्",
+       "en": "Me"
+      },
+      {
+       "sa": "नित्यम्",
+       "en": "always"
+      },
+      {
+       "sa": "तुष्यन्ति",
+       "en": "they are satisfied"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "रमन्ति",
+       "en": "they delight"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.6086,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna tells Arjuna that devotees who fix their minds on the divine and give their lives to it find joy and contentment. They enlighten one another and always speak of the divine together. Out of compassion, Krishna lights the lamp of knowledge in their hearts.",
+     "for_you": "You can find a small circle of people who share this hunger, so the light does not go out.",
+     "try_today": "Notice one moment when you feel the silence most clearly today.",
+     "scene_line": "You are in a quiet house, waiting for the light to return.",
+     "asks": [
+      "How do I find a group that talks of the Gita with me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.44",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 44",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time'.",
+     "sanskrit": "रात्रिः सैव पुनः स एव दिवसो मत्वा मुधा जन्तवो धावन्त्युद्यमिनस्तथैव निभृतप्रारब्धतत्तत्क्रियाः । व्यापारैः पुनरुक्तभूत विषयैरित्थंविधेनामुना संसारेण कदर्थिता वयमहो मोहान्न लज्जामहे ॥",
+     "line": "Same night, same day, the same tasks on repeat. We run in circles and call it living.",
+     "translation": "Thinking 'it is the same night again, the same day', creatures run about in vain, busy as ever with the tasks they have set going; with work full of the same repeated things, tormented by this round of existence, alas, out of delusion we feel no shame.",
+     "words": [],
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 2.5267,
+     "beat": "diagnose",
+     "role_fit": 0.44,
+     "meaning": "A poet named Bhartrihari looks at the reader and says that creatures run about in vain. They believe it is the same night and the same day returning, and they busy themselves with the same tasks on repeat. Tormented by this endless round, they feel no shame. He tells us to notice that time is passing while we are busy with our routines, before it empties everything we know into memory.",
+     "for_you": "The forwarded shlokas fill the quiet hours, but they are still tasks on repeat. You are running the same day over and over, waiting for Sunday. The Gita does not ask you to stop the call. It asks you to notice the silence between the rings.",
+     "try_today": "Notice one task you do only because it is Monday.",
+     "scene_line": "You are in your own quiet house, watching the same day repeat.",
+     "asks": [
+      "What part of my routine am I mistaking for living?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "words": [],
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 2.5773,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ram lies on the shore for three days, asking the ocean for a way across. No answer comes. He tells Lakshman that patience is being taken for weakness, and he takes up his bow. The ocean rises and offers a way.",
+     "for_you": "The forwarded shlokas and the quiet house are the ocean that does not answer. You can wait, or you can take up your bow and ask for a living text instead. What you ask for is not weakness.",
+     "try_today": "Write down one question the silence in your house is asking you.",
+     "scene_line": "You are on the shore, asking the quiet house for a way across.",
+     "asks": [
+      "How do I ask the quiet house for a way across?",
+      "What does it mean to take up my bow here?",
+      "How do I know when patience is being taken for weakness?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.6.11",
+     "ref": "Shvetashvatara Upanishad 6.11",
+     "ref_iast": "Śvetāśvatara Upaniṣad 6.11",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "One of the best-known verses of the Upanishad, on the God within all.",
+     "sanskrit": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा। कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+     "line": "One God is hidden in every being: the inner self of all, the quiet witness of all we do.",
+     "translation": "One God is hidden in all beings: all-pervading, the inner self of every being, overseer of all action, dwelling in all beings, the witness, pure awareness, alone, beyond all qualities.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 1.6137,
+     "beat": "steady",
+     "role_fit": 0.684,
+     "meaning": "In the Shvetashvatara Upanishad, a seeker asks what governs the world and our joys and sorrows. The seer answers that one God is hidden in every being, the inner self of all, the quiet witness of all we do. The verse proposes that this hidden presence is the true refuge we find after we have questioned honestly, not before. It is the steady awareness that remains while everything else passes.",
+     "for_you": "The forwarded shlokas speak to the passing noise, but this verse asks you to notice what remains when the house is quiet. You are not empty. You are the quiet witness of your own life. Let this be the ground you stand on while the silence settles.",
+     "try_today": "Notice the quiet witness within you before you open the Gita today.",
+     "scene_line": "You sit in the quiet house and ask what governs your days.",
+     "asks": [
+      "How do I find the witness in this quiet house?",
+      "What is the difference between the witness and my thoughts?",
+      "Can the witness be a refuge when I feel lonely?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "sur.vp.176",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 176)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas asks for steadiness in love.",
+     "sanskrit": "सोइ कछु कीजे दीन-दयाल ! जातें जन छन चरन न छाँड़े, करुना-सागर, भक्त-रसाल",
+     "line": "Do whatever it takes so that I never let go of your feet, not even for a moment.",
+     "translation": "Do whatever it takes, kind to the lowly, so that your servant never lets go of your feet even for a moment, ocean of compassion, delight of devotees.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7522,
+     "beat": "act",
+     "role_fit": 0.761,
+     "meaning": null,
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_shwetashwetar.1.15",
+     "ref": "Shvetashvatara Upanishad 1.15",
+     "ref_iast": "Śvetāśvatara Upaniṣad 1.15",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seeker",
+     "setting": "On how the self is found.",
+     "sanskrit": "तिलेषु तैलं दधिनीव सर्पिरापः स्रोतःस्वरणीषु चाग्निः । एवमात्माऽत्मनि गृह्यतेऽसौसत्येनैनं तपसायोऽनुपश्यति ॥",
+     "line": "Like oil in sesame or butter in curd, what you seek is already within. Sincere effort brings it out.",
+     "translation": "As oil in sesame seeds, butter in curd, water in springs and fire in fire-sticks, so is the self found within oneself by one who seeks it with truth and discipline.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 2.5293,
+     "beat": "act",
+     "role_fit": 0.45,
+     "meaning": null,
+     "for_you": "See yourself in all beings and all beings in yourself; reach out and serve, knowing there is no true distance.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "dheesh_gita.p.seers_find_peace",
+     "title": "Learned seers find no peace and go to Ganesha",
+     "kind": "story",
+     "family": "dheesh_gita",
+     "characters": [
+      "the seers",
+      "Dheesh (Ganesha)"
+     ],
+     "story_hook": "They knew every verse of every Veda, and still could not sleep.",
+     "summary": "Seers who had received all the Vedas still found no peace, so they went to Ganesha's world and took refuge in him. Ganesha tells them that though he has no form, loving devotees see him in the form they long for, and that knowing his highest form brings lasting peace.",
+     "lesson": "Learning alone may not settle the heart; turning to God can.",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "anchor": {
+      "id": "dheesh_gita.1.42",
+      "ref": "Dheesh Gita 1.42",
+      "ref_iast": "Dheesh Gītā 1.42",
+      "family": "gitas",
+      "speaker": "The seers",
+      "listener": "Dheesh (Ganesha)",
+      "setting": "Seers who had studied every Veda come to Ganesha's world because learning alone left them restless.",
+      "sanskrit": "अतो नेवाभवच्छान्तिरस्माकं चेतसि प्रभो!। वयं शरणमापन्ना भवल्लोकमुपस्थिताः ॥",
+      "line": "Lord, no peace came to our minds. So we have come to you for refuge.",
+      "translation": "So no peace came into our minds, Lord. We have come to your world and taken refuge in you.",
+      "words": [],
+      "why": "Learning alone may not settle the heart; turning to God can.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "dheesh_gita.p.seers_find_peace",
+       "title": "Learned seers find no peace and go to Ganesha",
+       "summary": "Seers who had received all the Vedas still found no peace, so they went to Ganesha's world and took refuge in him. Ganesha tells them that though he has no form, loving devotees see him in the form they long for, and that knowing his highest form brings lasting peace.",
+       "story_hook": "They knew every verse of every Veda, and still could not sleep.",
+       "lesson": "Learning alone may not settle the heart; turning to God can."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The seers knew every verse of every Veda, and still couldn't sleep",
+     "teaser": "The seers knew every verse of every Veda, and still couldn't sleep",
+     "for_you": null,
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet and the forwarded shlokas",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 15037,
+   "total": 15039
+  },
+  "_ms": 15042
+ }
+}

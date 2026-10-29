@@ -1,0 +1,101 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "none",
+ "confidence": 0.7,
+ "core_struggle": "She was in a meeting when her father fell in Pune, and now she panics at every phone call, believing she chose a life that cost her this.",
+ "mechanism": "fear_of_loss",
+ "secondary_mechanism": "self_blame",
+ "situations": [
+  {
+   "id": "parents_aging",
+   "weight": 1.664,
+   "source": "note"
+  },
+  {
+   "id": "illness_family",
+   "weight": 1.575,
+   "source": "note"
+  },
+  {
+   "id": "anxiety_general",
+   "weight": 1.05,
+   "source": "note"
+  },
+  {
+   "id": "uncertainty",
+   "weight": 0.79,
+   "source": "note"
+  },
+  {
+   "id": "grief_parent",
+   "weight": 0.525,
+   "source": "note"
+  },
+  {
+   "id": "homesick",
+   "weight": 0.25,
+   "source": "profile"
+  }
+ ],
+ "mirror": "You were in a meeting when the call came, and now every ring is a door you cannot open.",
+ "queries": {
+  "hook": "The panic that lives in the space between a ring and a voice, and the guilt of having been somewhere else when it mattered. My parents are getting older far away.",
+  "diagnose": "Grief is love with nowhere to go; the mind turns the waiting into a punishment, and the phone becomes a trigger for a loss that has not yet come.",
+  "steady": "What is real in us cannot be lost; the bond with your father is not broken by a fall or a delay, and love does not end because we were not there.",
+  "act": "When the phone rings, let the first sound land before you answer; breathe once before you lift it, and let the voice come to you.",
+  "story": "A daughter who was far from her father when he fell, and who had to learn that love does not measure itself in minutes."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The ring and the waiting",
+  "Grief with nowhere to go",
+  "Love that does not measure itself"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "panicked and guilty",
+ "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+ "week_thesis": "Seven days from the phone ringing like a threat to the phone being a bridge she can cross without panic.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "parent",
+  "family",
+  "work"
+ ],
+ "week_beats": {
+  "hook": "You recognise the panic and the guilt, named without blame.",
+  "diagnose": "You see that the waiting is grief with nowhere to land, and the phone is a trigger.",
+  "steady": "You hold that love does not end because you were not there.",
+  "act": "You try one breath before you lift the phone, and one moment of letting the voice come to you.",
+  "story": "A daughter far from her father when he fell shows you what love looks like when it is not measured in minutes."
+ },
+ "insight": "The call came while you were at work, and the panic is not about the fall. It is about the grief that has nowhere to go.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "can only fly in next week",
+  "every phone call now triggers panic"
+ ],
+ "age": "45_54",
+ "stages": [
+  "working",
+  "caring_parents"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "mechanism:grief_without_death",
+  "hook:anchored_to_situation",
+  "bridge:copied_example",
+  "seat:missing"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "source": "llm",
+ "note_quality": "useful",
+ "risk": "distress",
+ "confidence": 0.5,
+ "core_struggle": "His manager took his project to the VP's nephew, his landlord wants him out for more rent, and every part of his life is pressing at once.",
+ "mechanism": "restless_mind",
+ "secondary_mechanism": "fear_of_loss",
+ "situations": [
+  {
+   "id": "toxic_boss",
+   "weight": 1.403,
+   "source": "note"
+  },
+  {
+   "id": "credit_taken",
+   "weight": 1.08,
+   "source": "note"
+  },
+  {
+   "id": "burnout",
+   "weight": 0.895,
+   "source": "note"
+  },
+  {
+   "id": "money_stress",
+   "weight": 0.84,
+   "source": "note"
+  },
+  {
+   "id": "outcome_anxiety",
+   "weight": 0.725,
+   "source": "note"
+  },
+  {
+   "id": "phone_addiction",
+   "weight": 0.61,
+   "source": "note"
+  }
+ ],
+ "mirror": "You have eight things pressing at once, and none of them will let you sleep before three.",
+ "queries": {
+  "hook": "The mind that runs through every problem at once, and the exhaustion of being the one who has to hold them all. My boss makes my work life miserable.",
+  "diagnose": "A mind that will not settle becomes its own enemy, replaying every wrong and every fear until it is too tired to act.",
+  "steady": "Praise and blame, gain and loss, praise and blame come and go like the wind; what is yours cannot be taken by what they do.",
+  "act": "Practise one thing today: before the phone, one minute of stillness, one breath, one step to the door.",
+  "story": "A man who carried the weight of the world on his shoulders, faced the first storm, and found that the first step was to set the burden down, not all at once, but one piece at a time."
+ },
+ "query_sources": {
+  "hook": "llm",
+  "diagnose": "llm",
+  "steady": "llm",
+  "act": "llm",
+  "story": "llm"
+ },
+ "weeks": [
+  "The mind that runs",
+  "The mind that runs",
+  "The one who can steady it"
+ ],
+ "stance": "struggle",
+ "gender": null,
+ "emotion": "overwhelmed and stuck",
+ "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+ "week_thesis": "Seven days from a mind that runs through every problem at once to one breath, one step, and one piece of the burden set down.",
+ "undisclosed": false,
+ "hinglish": false,
+ "texts": [],
+ "people": [
+  "work",
+  "family",
+  "partner",
+  "parent",
+  "friend"
+ ],
+ "week_beats": {
+  "hook": "You recognise the exhaustion of holding too many things at once.",
+  "diagnose": "You see that the mind running through all of them is what makes each one feel heavier than it is.",
+  "steady": "You hold that what is yours cannot be taken by what they do, and that the mind can be steadied.",
+  "act": "You try one thing today: before the phone, one minute of stillness.",
+  "story": "A man who carried the weight of the world found that the first step was to set it down, one piece at a time."
+ },
+ "insight": "The landlord, the manager, the girlfriend, the mother, the friends, the body, the money, the sleep: none of them will let you rest, and the mind is running through all of them at once.",
+ "seat": "",
+ "life_context": "",
+ "details": [
+  "manager gave project to VP's nephew",
+  "mother calls daily about marriage and Diwali"
+ ],
+ "age": "25_34",
+ "stages": [
+  "working"
+ ],
+ "version": 1,
+ "flags": [
+  "gender:ignored_guess",
+  "hook:anchored_to_situation",
+  "bridge:copied_example",
+  "seat:missing"
+ ]
+}
