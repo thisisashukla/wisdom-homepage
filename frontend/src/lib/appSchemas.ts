@@ -22,6 +22,9 @@ const appSchemas = [
           'https://wisdomquotes.in/assets/app-v3/store-2.webp',
           'https://wisdomquotes.in/assets/app-v3/store-3.webp',
           'https://wisdomquotes.in/assets/app-v3/store-4.webp',
+          'https://wisdomquotes.in/assets/app-v3/store-5.webp',
+          'https://wisdomquotes.in/assets/app-v3/store-6.webp',
+          'https://wisdomquotes.in/assets/app-v3/store-7.webp',
         ],
       },
       {

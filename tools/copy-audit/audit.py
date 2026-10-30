@@ -33,6 +33,7 @@ PAGES = {
     'jayanti-18-days': ['src/app/read-gita-in-18-days/page.tsx', 'src/lib/jayanti.ts'],
     'jayanti-plan': ['src/app/gita-jayanti/reading-plan/page.tsx', 'src/components/jayanti/PlanFromToday.tsx'],
     'jayanti-which': 'src/app/gita-jayanti/which-chapter-to-read/page.tsx',
+    'searched-2026': ['src/app/most-searched-gita-verses-2026/page.tsx', 'src/components/searched/VerseIndexChart.tsx', 'src/components/searched/WeeklyChart.tsx'],
     'jayanti-related': 'src/components/jayanti/JayantiRelated.tsx',
 }
 for p in sorted(glob.glob(os.path.join(FE, 'src/app/blogs/*/page.tsx'))):

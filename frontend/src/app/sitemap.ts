@@ -93,6 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/read-gita-in-18-days`, lastModified: new Date('2026-10-25'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti/reading-plan`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti/which-chapter-to-read`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${BASE}/most-searched-gita-verses-2026`, lastModified: new Date('2026-10-29'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/reading-plans`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE}/gita-for`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'monthly', priority: 0.85 },
     ...GITA_FOR.map((p) => {
@@ -108,6 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/blogs`, lastModified: CORPUS_UPDATED, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/about`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/methodology`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${BASE}/resources`, lastModified: new Date('2026-10-29'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/tts`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.4 },
     { url: `${BASE}/search`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
     {

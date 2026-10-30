@@ -308,6 +308,12 @@ export default async function GitaJayantiPage() {
                 Which chapter to read on Gita Jayanti
               </a>
             </p>
+            <p className="gj-ways-more">
+              Which verses do people look up most?{' '}
+              <a className="gj-link" href="/most-searched-gita-verses-2026" data-mp-location="gita_jayanti_searched_2026">
+                The Gita verses people searched most in 2026
+              </a>
+            </p>
           </div>
         </section>
 

@@ -335,6 +335,10 @@ export default function TwentyFamousSanskritShlokasPage() {
         <p>
           The verses are grouped in five thematic sections. Within each group the arrangement moves roughly from the most universally known to the more specialised. Read one, chant it out loud, sit with its meaning, then move to the next.
         </p>
+        <p>
+          Which Gita verses do people search for most? See{' '}
+          <a href="/most-searched-gita-verses-2026" data-mp-location="blog_20shlokas_searched_2026">the Gita verses people searched most in 2026</a>.
+        </p>
 
         <h3>Part I: Opening Prayers (Mangalacharan)</h3>
         <p>

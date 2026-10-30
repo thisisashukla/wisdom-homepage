@@ -1,0 +1,426 @@
+{
+ "source": "Google Trends explore API (web search, category all), read in Chrome on 2026-10-29",
+ "window": "2026-01-01 to 2026-10-28, weekly points, tz IST",
+ "method": "Each verse = one Trends item OR-ing its common spellings (romanised + Devanagari, plus English for 11.32/11.12). Batches of 4 verses + anchor 2.47. Score = sum of weekly values / anchor sum x 100 (2.47 = 100). Verses under 2.5 re-run against a mid anchor (WW: 18.66 at 5.97; IN: 2.23 at 3.8) and chained.",
+ "anchor": "2.47",
+ "WW": {
+  "4.7": 119.98,
+  "2.47": 100,
+  "11.32": 87.58,
+  "4.8": 24.19,
+  "2.23": 6.35,
+  "18.66": 5.97,
+  "4.24": 3.05,
+  "2.50": 2.57,
+  "6.5": 2.129,
+  "2.20": 2.095,
+  "9.22": 1.32,
+  "2.48": 1.039,
+  "9.26": 0.681,
+  "7.19": 0.578,
+  "2.22": 0.507,
+  "4.39": 0.4,
+  "16.21": 0.396,
+  "2.27": 0.319,
+  "1.1": 0.294,
+  "2.14": 0.281,
+  "2.11": 0.277,
+  "3.21": 0.247,
+  "9.34": 0.098,
+  "3.35": 0.068,
+  "18.78": 0.06,
+  "2.63": 0.056,
+  "2.3": 0.056,
+  "4.38": 0.051,
+  "12.13": 0.047,
+  "2.62": 0.042,
+  "15.14": 0.03,
+  "6.6": 0.026,
+  "15.7": 0.021,
+  "6.35": 0.017,
+  "5.18": 0.017,
+  "6.26": 0.017,
+  "11.12": 0,
+  "3.27": 0,
+  "10.20": 0,
+  "2.38": 0,
+  "4.40": 0,
+  "8.7": 0
+ },
+ "IN": {
+  "4.7": 128.57,
+  "2.47": 100,
+  "4.8": 22.28,
+  "2.23": 3.8,
+  "18.66": 1.701,
+  "11.32": 1.32,
+  "9.22": 1.075,
+  "2.50": 1.018,
+  "2.48": 1.007,
+  "2.20": 0.774,
+  "2.14": 0.529,
+  "4.39": 0.467,
+  "2.3": 0.439,
+  "16.21": 0.42,
+  "6.26": 0.399,
+  "6.6": 0.291,
+  "4.24": 0.256,
+  "6.5": 0.199,
+  "9.26": 0.165,
+  "2.27": 0.08,
+  "2.22": 0.068,
+  "9.34": 0.063,
+  "3.35": 0.057,
+  "18.78": 0.051,
+  "5.18": 0.046,
+  "4.38": 0.028,
+  "1.1": 0.028,
+  "15.14": 0.028,
+  "2.62": 0.023,
+  "2.63": 0.023,
+  "15.7": 0.023,
+  "3.21": 0.017,
+  "2.11": 0.017,
+  "2.38": 0.017,
+  "6.35": 0,
+  "11.12": 0,
+  "3.27": 0,
+  "12.13": 0,
+  "7.19": 0,
+  "10.20": 0,
+  "4.40": 0,
+  "8.7": 0
+ },
+ "US_GB_note": "Per-verse US/GB runs were too sparse (single-week spikes at 100) to rank Sanskrit lines; not used. Headline comparisons below are direct 4-term requests.",
+ "US_direct": {
+  "terms": [
+   "i am become death",
+   "karmanye vadhikaraste (2.47 set)",
+   "yada yada hi dharmasya (4.7 set)",
+   "bhagavad gita"
+  ],
+  "sums": [
+   344,
+   6,
+   1,
+   2610
+  ]
+ },
+ "GB_direct": {
+  "terms": [
+   "i am become death",
+   "2.47 set",
+   "4.7 set",
+   "bhagavad gita"
+  ],
+  "sums": [
+   122,
+   1,
+   0,
+   2536
+  ]
+ },
+ "WW_11_32_split": {
+  "terms": [
+   "i am become death",
+   "kalo smi loka + Devanagari",
+   "2.47 set"
+  ],
+  "sums": [
+   2666,
+   0,
+   3068
+  ]
+ },
+ "IN_weekly_2026": {
+  "ids": [
+   "2.47",
+   "4.7",
+   "4.8",
+   "2.23",
+   "18.66"
+  ],
+  "note": "4.7 peaks at 100 in week of 30 Aug - 5 Sep (Janmashtami 4 Sep 2026); median of the 42 full weeks is 44. Jan = weeks starting 4-25 Jan, Oct = weeks starting 4-18 Oct.",
+  "jan_2.47": [
+   52,
+   46,
+   47,
+   39,
+   44
+  ],
+  "oct_2.47": [
+   33,
+   29,
+   25,
+   26
+  ],
+  "jan_4.7": [
+   57,
+   58,
+   55,
+   56,
+   45
+  ],
+  "oct_4.7": [
+   38,
+   34,
+   33,
+   30
+  ],
+  "janmashtami_week_4.7": 100,
+  "jul19_25_4.8": 22,
+  "full_series_247_47": {
+   "note": "week start date, 2.47, 4.7; one Trends request (IN) with 2.47, 4.7, 4.8, 2.23, 18.66; first and last weeks partial",
+   "rows": [
+    [
+     "2025-12-28",
+     52,
+     57
+    ],
+    [
+     "2026-01-04",
+     46,
+     58
+    ],
+    [
+     "2026-01-11",
+     47,
+     55
+    ],
+    [
+     "2026-01-18",
+     39,
+     56
+    ],
+    [
+     "2026-01-25",
+     44,
+     45
+    ],
+    [
+     "2026-02-01",
+     34,
+     52
+    ],
+    [
+     "2026-02-08",
+     30,
+     46
+    ],
+    [
+     "2026-02-15",
+     38,
+     43
+    ],
+    [
+     "2026-02-22",
+     42,
+     40
+    ],
+    [
+     "2026-03-01",
+     32,
+     46
+    ],
+    [
+     "2026-03-08",
+     37,
+     40
+    ],
+    [
+     "2026-03-15",
+     39,
+     48
+    ],
+    [
+     "2026-03-22",
+     42,
+     46
+    ],
+    [
+     "2026-03-29",
+     38,
+     40
+    ],
+    [
+     "2026-04-05",
+     35,
+     45
+    ],
+    [
+     "2026-04-12",
+     36,
+     38
+    ],
+    [
+     "2026-04-19",
+     41,
+     44
+    ],
+    [
+     "2026-04-26",
+     27,
+     37
+    ],
+    [
+     "2026-05-03",
+     27,
+     58
+    ],
+    [
+     "2026-05-10",
+     32,
+     42
+    ],
+    [
+     "2026-05-17",
+     32,
+     38
+    ],
+    [
+     "2026-05-24",
+     32,
+     45
+    ],
+    [
+     "2026-05-31",
+     29,
+     33
+    ],
+    [
+     "2026-06-07",
+     31,
+     30
+    ],
+    [
+     "2026-06-14",
+     37,
+     39
+    ],
+    [
+     "2026-06-21",
+     33,
+     42
+    ],
+    [
+     "2026-06-28",
+     32,
+     39
+    ],
+    [
+     "2026-07-05",
+     33,
+     32
+    ],
+    [
+     "2026-07-12",
+     32,
+     55
+    ],
+    [
+     "2026-07-19",
+     33,
+     58
+    ],
+    [
+     "2026-07-26",
+     32,
+     41
+    ],
+    [
+     "2026-08-02",
+     28,
+     45
+    ],
+    [
+     "2026-08-09",
+     34,
+     33
+    ],
+    [
+     "2026-08-16",
+     34,
+     48
+    ],
+    [
+     "2026-08-23",
+     36,
+     45
+    ],
+    [
+     "2026-08-30",
+     46,
+     100
+    ],
+    [
+     "2026-09-06",
+     33,
+     49
+    ],
+    [
+     "2026-09-13",
+     31,
+     37
+    ],
+    [
+     "2026-09-20",
+     28,
+     44
+    ],
+    [
+     "2026-09-27",
+     30,
+     38
+    ],
+    [
+     "2026-10-04",
+     33,
+     38
+    ],
+    [
+     "2026-10-11",
+     29,
+     34
+    ],
+    [
+     "2026-10-18",
+     25,
+     33
+    ],
+    [
+     "2026-10-25",
+     26,
+     30
+    ]
+   ]
+  }
+ },
+ "related_queries_IN": {
+  "2.47": "ma phaleshu kadachana 100, sloka 40, meaning 38, shlok 31, hindi 26, telugu 18, in hindi 17, ... movie 10, in kannada 8",
+  "4.7": "sloka 100, shlok 77, meaning 54, in hindi 35, sloka meaning 28, english 26, in english 21, ringtone 19"
+ },
+ "ahrefs_free_keyword_generator": {
+  "read": "2026-10-29, phrase-match ideas, first 20 shown, volumes bucketed",
+  "IN karmanye vadhikaraste": {
+   "ideas": 478,
+   "top": "karmanye vadhikaraste ma phaleshu kadachana >10,000; karmanye vadhikaraste >1000; shlok >1000; sloka >1000; movie >1000; full shloka >1000"
+  },
+  "IN yada yada hi dharmasya": {
+   "ideas": 1070,
+   "top": "sloka >10,000; yada yada hi dharmasya >10,000; shlok >1000; lyrics >1000; sloka meaning in hindi >1000; full shlok >1000; sloka meaning >1000; in hindi >1000; sloka hindi >1000"
+  },
+  "US i am become death": {
+   "ideas": 645,
+   "top": "i am become death >1000; i am become death destroyer of worlds >1000; now i am become death >100; i am become death fallout 76 >100; oppenheimer i am become death >100; bhagavad gita i am become death <100"
+  },
+  "US karmanye vadhikaraste": {
+   "ideas": 237,
+   "top": "ma phaleshu kadachana >100; karmanye vadhikaraste >100; movie >100; tattoo variants <100"
+  },
+  "US yada yada hi dharmasya": {
+   "ideas": 327,
+   "top": "sloka >100; yada yada hi dharmasya >100"
+  }
+ },
+ "janmashtami_2026": "Friday 4 September 2026 (Outlook India, Shubh Panchang)"
+}

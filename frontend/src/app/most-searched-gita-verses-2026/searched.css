@@ -1,0 +1,70 @@
+/* /most-searched-gita-verses-2026. Builds on guides.css (.gjg).
+   Chart colours: #c4861c (worldwide / 4.7) and #6b7fd6 (India / 2.47),
+   validated for lightness, chroma, colour-blind separation and contrast on #120505. */
+
+.sv .gjg-note a { color: var(--gold-light); }
+.sv-h3 { font-family: var(--font-playfair), 'Playfair Display', Georgia, serif; font-size: 26px; line-height: 1.2; color: #fff6e4; margin-bottom: 14px; font-weight: 600; }
+
+/* Findings */
+.sv-findings { list-style: none; counter-reset: f; border-top: 1px solid var(--border); }
+.sv-findings li { counter-increment: f; position: relative; padding: 18px 0 18px 44px; border-bottom: 1px solid var(--border); font-size: 16.5px; line-height: 1.7; color: var(--text-dim); }
+.sv-findings li::before { content: counter(f); position: absolute; left: 0; top: 18px; width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(245, 201, 106, 0.4); color: var(--gold-light); font-size: 13px; font-weight: 700; display: grid; place-items: center; }
+
+/* Chart chrome */
+.sv-chart { margin: 26px 0 12px; padding: 22px 22px 18px; border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--bg-card); }
+.sv-chart-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+.sv-chart-title span { display: block; font-size: 12.5px; font-weight: 400; color: var(--text-dimmer); margin-top: 3px; }
+.sv-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--text-dim); margin-bottom: 16px; }
+.sv-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.sv-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+.sv-legend i.is-line, .sv-tip i.is-line { height: 2px; width: 14px; border-radius: 1px; }
+
+/* Bars */
+.sv-bars { list-style: none; display: grid; gap: 2px; }
+.sv-row { position: relative; display: grid; grid-template-columns: minmax(150px, 34%) 1fr; gap: 14px; align-items: center; padding: 8px 6px; border-radius: 8px; outline: none; }
+.sv-row:hover, .sv-row.is-active, .sv-row:focus-visible { background: rgba(245, 201, 106, 0.05); }
+.sv-row:focus-visible { box-shadow: 0 0 0 1px rgba(245, 201, 106, 0.5); }
+.sv-row-label { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.sv-row-label a { font-size: 13px; font-weight: 700; color: var(--gold-light); letter-spacing: 0.02em; }
+.sv-row-label span { font-size: 13.5px; color: var(--text-dim); line-height: 1.35; }
+.sv-row-bars { display: grid; gap: 2px; }
+.sv-bar-line { display: flex; align-items: center; gap: 8px; height: 12px; }
+.sv-bar { display: block; height: 10px; border-radius: 0 4px 4px 0; }
+.sv-bar-val { font-size: 12px; color: var(--text-dim); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Tooltip */
+.sv-tip { position: absolute; z-index: 5; right: 8px; top: 50%; transform: translateY(-50%); display: grid; gap: 4px; min-width: 170px; padding: 10px 12px; border-radius: 10px; background: #241010; border: 1px solid rgba(245, 201, 106, 0.25); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45); font-size: 12.5px; color: var(--text-dim); pointer-events: none; }
+.sv-tip strong { color: var(--text); font-weight: 600; }
+.sv-tip-row { display: flex; align-items: center; gap: 8px; }
+.sv-tip-row i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.sv-tip-row b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; min-width: 28px; }
+
+/* Weekly line chart */
+.sv-weekly-wrap { position: relative; }
+.sv-weekly { display: block; width: 100%; height: auto; outline: none; touch-action: pan-y; }
+.sv-weekly:focus-visible { box-shadow: 0 0 0 1px rgba(245, 201, 106, 0.5); border-radius: 6px; }
+.sv-grid { stroke: rgba(245, 232, 204, 0.08); stroke-width: 1; }
+.sv-axis { fill: rgba(245, 232, 204, 0.45); font-size: 11px; }
+.sv-mark { stroke: rgba(245, 232, 204, 0.3); stroke-width: 1; }
+.sv-mark-label { fill: rgba(245, 232, 204, 0.6); font-size: 11px; }
+.sv-cross { stroke: rgba(245, 232, 204, 0.45); stroke-width: 1; }
+.sv-tip-float { top: 8px; right: auto; }
+
+/* Tables */
+.sv-caption { caption-side: top; text-align: left; font-size: 13px; color: var(--text-dimmer); padding-bottom: 10px; }
+.sv-full td:nth-child(4), .sv-full td:nth-child(5), .sv-full th:nth-child(4), .sv-full th:nth-child(5) { text-align: right; font-variant-numeric: tabular-nums; }
+.sv-full td:first-child { color: var(--text-dimmer); font-weight: 400; width: 36px; }
+
+/* Method */
+.sv-method { list-style: none; display: grid; gap: 14px; margin-bottom: 18px; }
+.sv-method li { font-size: 15.5px; line-height: 1.7; color: var(--text-dim); padding-left: 16px; border-left: 2px solid rgba(245, 201, 106, 0.3); }
+
+@media (max-width: 720px) {
+  .sv-chart { padding: 16px 12px 12px; }
+  .sv-row { grid-template-columns: 1fr; gap: 6px; }
+  .sv-tip { right: 4px; top: 4px; transform: none; }
+  .sv-tip-float { right: auto; top: 8px; }
+  .sv-weekly-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .sv-weekly { min-width: 600px; }
+  .sv-full td:nth-child(3), .sv-full th:nth-child(3) { min-width: 160px; }
+}

@@ -691,6 +691,11 @@ export default function BG247Page() {
           Much worry about the future is worry about whether an outcome will confirm or deny a person&apos;s worth. Read through 2.47, that worth sits in the quality of present action, the part you control.
         </p>
 
+        <p>
+          In 2026 only one Gita verse drew more Google searches than this one: 4.7, yada yada hi dharmasya. See{' '}
+          <a href="/most-searched-gita-verses-2026" data-mp-location="blog_247_searched_2026">the Gita verses people searched most in 2026</a>.
+        </p>
+
         <h2>The Verses That Build on This</h2>
         <p>
           The Gita returns to this teaching several times, each time from a slightly different angle. Two verses that extend the same idea:

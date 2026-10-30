@@ -32,6 +32,7 @@ export default function SiteFooter({ locale = 'en' }: { locale?: 'en' | 'hi' }) 
           <li><a href="/blogs">Blog</a></li>
           <li><a href="/app">iPhone app</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/resources">Resources</a></li>
           <li><a href="/privacy">Privacy</a></li>
           <li><a href="/terms">Terms</a></li>
           <li><a href="mailto:work.ankurshukla@gmail.com">Support</a></li>
