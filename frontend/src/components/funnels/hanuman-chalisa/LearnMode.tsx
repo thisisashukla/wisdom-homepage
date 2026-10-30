@@ -2,8 +2,8 @@
 
 /**
  * Learn by heart: four lines a day over 11 days. Each line can fade word by
- * word (three steps); "I can say it" marks it learned and turns its bead
- * tulsi green. Progress is saved on this device (localStorage, try/catch).
+ * word (three steps); "I can say it" marks it learned and fills its bead
+ * with gold. Progress is saved on this device (localStorage, try/catch).
  * The server renders day 1 with every word visible, so it works without JS.
  */
 
@@ -49,7 +49,7 @@ const T = {
     nextDay: (d: number) => `Go to day ${d}`,
     reset: 'Start again',
     resetAsk: 'Clear your learning progress on this device?',
-    mala: 'Mala: learned lines turn green. Tap a bead to open its day.',
+    mala: 'Mala: learned lines fill with gold. Tap a bead to open its day.',
     meaning: 'Meaning',
   },
   hi: {
@@ -67,7 +67,7 @@ const T = {
     nextDay: (d: number) => `दिन ${d} पर जाएं`,
     reset: 'फिर से शुरू करें',
     resetAsk: 'इस डिवाइस से आपकी प्रगति मिटा दें?',
-    mala: 'माला: याद हुई पंक्तियाँ हरी हो जाती हैं।',
+    mala: 'माला: याद हुई पंक्तियों के मनके सुनहरे हो जाते हैं।',
     meaning: 'अर्थ',
   },
 } as const
@@ -153,8 +153,8 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
   }
 
   return (
-    <div className="hc-hub">
-      <aside className="hc-hub-aside" aria-label={t.mala}>
+    <div className="hc-learn">
+      <aside className="hc-learn-aside" aria-label={t.mala}>
         <Mala beads={beads} locale={locale} page={page} mode="button" currentId={current} learned={learnedIds} onSelect={onBead} label={t.mala} caption={t.mala}>
           <span className="hc-mala-big">{learnedIds.length}</span>
           <span className="hc-mala-sub" lang={locale}>
@@ -184,9 +184,10 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
           ))}
         </ul>
 
-        <h2 className="hc-h2" lang={locale}>
+        <h2 className="hc-h2 hc-learn-h" lang={locale}>
           {t.of(day)}
         </h2>
+        <div className="hc-learn-list">
         {today.map((l) => {
           const lv = levels[l.id] ?? 0
           const isL = !!state.learned[l.id]
@@ -234,6 +235,7 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
             </div>
           )
         })}
+        </div>
 
         {(dayDone || allDone) && (
           <div className="hc-done" role="status" lang={locale}>
@@ -248,7 +250,7 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
           </div>
         )}
 
-        <p style={{ marginTop: 28 }}>
+        <p className="hc-reset">
           <button
             type="button"
             className="hc-btn"

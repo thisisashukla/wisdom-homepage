@@ -1,0 +1,430 @@
+/* Upanishads funnel in the house world. Built only from home.css tokens
+   (--bg, --maroon*, --gold*, --text*, --border, --bg-card) and the house
+   motion variables in home-v3.css (--ease, --ease-out, --t-quick/std/slow).
+   Scoped under .fx-upanishads. One orchestrated moment per page: the hero
+   line reveal, or Sit closer (Katha) / Neti, neti (Mandukya 7).
+   Reduced motion: opacity only, no loops. Nothing is hidden without JS. */
+
+.fx-upanishads {
+  --fx-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
+  --fx-display: var(--font-playfair), 'Playfair Display', var(--font-noto-devanagari), Georgia, serif;
+  --fx-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  --fx-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --fx-in: var(--ease, cubic-bezier(0.4, 0, 0.2, 1));
+  --fx-fb: var(--ease-out, cubic-bezier(0.2, 0, 0, 1));
+  --fx-line: rgba(245, 201, 106, 0.14);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--fx-ui);
+  overflow-x: clip;
+}
+.fx-upanishads:lang(hi) { font-family: var(--fx-deva); }
+.fx-upanishads :is(.tp-h1, .tp-h2, .heading, .gita-for-label, .fx-h3) { font-family: var(--fx-display); text-wrap: balance; }
+.fx-upanishads:lang(hi) :is(.tp-h1, .tp-h2, .heading, .gita-for-label, .fx-h3) { letter-spacing: 0; line-height: 1.3; }
+.fx-upanishads :focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; border-radius: 6px; }
+.fx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ── Script switch: one script at a time ─────────────────────────────── */
+.fx-upanishads .s-iast { display: none; }
+.fx-upanishads[data-script='iast'] .s-iast { display: block; }
+.fx-upanishads[data-script='iast'] .s-deva { display: none; }
+.fx-upanishads:not([data-script='iast']) .qc-iast { display: none; }
+.fx-upanishads[data-script='iast'] .qc-sa { display: none; }
+.fx-upanishads[data-script='iast'] .qc-iast { font-size: 20px; font-style: normal; color: var(--gold-light); margin-top: 0; }
+
+.fx-toggle { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; padding: 3px; gap: 2px; background: rgba(18, 5, 5, 0.45); flex: none; }
+.fx-toggle button {
+  min-height: 38px; min-width: 44px; padding: 0 14px; border: 0; border-radius: 999px; background: none;
+  color: var(--text-dim); font: 500 13px/1 var(--fx-ui); cursor: pointer;
+  transition: background-color var(--t-quick, 160ms) var(--fx-fb), color var(--t-quick, 160ms) var(--fx-fb);
+}
+.fx-toggle button span { font-family: var(--fx-sa); font-size: 14px; font-weight: 400; }
+.fx-toggle button:hover { color: var(--gold-light); }
+.fx-toggle button[aria-pressed='true'] { background: var(--gold); color: #1a0606; }
+
+/* ── Hero: typographic, the Sanskrit line is the visual ──────────────── */
+.fx-hero { position: relative; overflow: hidden; isolation: isolate; background: var(--bg); padding: 22px 0 72px; }
+.fx-hero::before {
+  content: ''; position: absolute; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    radial-gradient(ellipse 65% 55% at 50% 0%, rgba(200, 136, 30, 0.11) 0%, transparent 68%),
+    radial-gradient(ellipse 55% 75% at 76% 50%, rgba(92, 26, 26, 0.6) 0%, transparent 72%),
+    linear-gradient(180deg, var(--maroon-deep) 0%, var(--bg) 100%);
+}
+.fx-hero::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent); }
+.fx-hero-glow {
+  position: absolute; z-index: -1; pointer-events: none; width: 760px; height: 760px; right: -80px; top: 50%; margin-top: -380px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 201, 106, 0.15) 0%, rgba(200, 136, 30, 0.07) 34%, transparent 66%);
+  animation: fx-breathe 9s ease-in-out infinite alternate;
+}
+.fx-hero-inner { position: relative; }
+.fx-hero-top { display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap; margin-bottom: 30px; }
+.fx-crumbs ol { list-style: none; display: flex; flex-wrap: wrap; align-items: center; }
+.fx-crumbs li + li::before { content: '/'; margin: 0 7px; color: var(--text-dimmer); }
+.fx-crumbs a { display: inline-block; padding: 12px 0; color: var(--text-dim); }
+.fx-crumbs a:hover { color: var(--gold-light); }
+.fx-crumbs span { color: var(--text-dimmer); }
+
+.fx-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: 56px; align-items: center; }
+.fx-hero-text > * { max-width: 540px; }
+.fx-upanishads .fx-hero .tp-h1 { color: #fff; }
+.fx-upanishads:lang(hi) .fx-hero .tp-h1 { font-size: clamp(30px, 4.2vw, 46px); }
+.fx-hero .tp-sub { color: var(--text); }
+.fx-hero .tp-facts li { background: rgba(18, 5, 5, 0.55); }
+.fx-hero .btn-read-gita { min-height: 50px; justify-content: center; }
+.fx-hero-second { display: inline-flex; align-items: center; min-height: 44px; color: var(--gold-light); font-weight: 600; font-size: 15px; border-bottom: 1px solid rgba(245, 201, 106, 0.35); }
+.fx-hero-second:hover { color: #fff; border-color: var(--gold-light); }
+
+/* The line, framed like the verse card on the Gita verse page. */
+.fx-hline {
+  position: relative; margin: 0; padding: 46px 44px 38px; border-radius: var(--r-xl, 28px);
+  border: 1px solid rgba(245, 201, 106, 0.2);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(245, 201, 106, 0.1), transparent 60%),
+    linear-gradient(170deg, rgba(61, 12, 12, 0.7), rgba(26, 6, 6, 0.75));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.fx-hline::before { content: ''; position: absolute; left: 44px; right: 44px; top: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--gold-light), transparent); transform-origin: center; }
+.fx-hline-big { font-family: var(--fx-sa); font-size: clamp(88px, 16vw, 150px); line-height: 1; color: var(--gold-light); margin: 0 0 14px; text-shadow: 0 0 60px rgba(245, 201, 106, 0.35); }
+.fx-hline .fx-sa .s-deva { font-family: var(--fx-sa); color: var(--gold-light); font-size: clamp(36px, 4.6vw, 58px); line-height: 1.55; text-wrap: balance; }
+.fx-hline[data-len='mid'] .fx-sa .s-deva { font-size: clamp(30px, 3.6vw, 46px); }
+.fx-hline[data-len='long'] .fx-sa .s-deva { font-size: clamp(25px, 2.8vw, 34px); line-height: 1.65; }
+.fx-hline .fx-sa .s-iast { font-family: var(--fx-sa); font-style: italic; color: var(--gold-light); font-size: clamp(22px, 2.6vw, 30px); line-height: 1.5; }
+.fx-hline .fx-sa span { display: block; }
+.fx-hline-rule { display: block; width: 72px; height: 1px; margin: 22px 0 18px; background: var(--gold); transform-origin: left; }
+.fx-hline-en { font-family: var(--fx-display); font-style: italic; font-size: clamp(18px, 1.8vw, 21px); line-height: 1.5; color: var(--gold-pale); max-width: 34em; }
+.fx-upanishads:lang(hi) .fx-hline-en { font-family: var(--fx-deva); font-style: normal; }
+.fx-hline-cite { margin-top: 14px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dimmer); }
+.fx-upanishads:lang(hi) .fx-hline-cite { letter-spacing: 0.04em; font-size: 13px; }
+
+/* Hero entrance: text rises in (500ms, stagger to 300ms). */
+.fx-hero-text > * { animation: fx-rise var(--t-std, 500ms) var(--fx-in) both; }
+.fx-hero-text > :nth-child(2) { animation-delay: 80ms; }
+.fx-hero-text > :nth-child(3) { animation-delay: 160ms; }
+.fx-hero-text > :nth-child(4) { animation-delay: 240ms; }
+.fx-hero-text > :nth-child(5) { animation-delay: 300ms; }
+/* The line reveal (the page's orchestrated moment on line pages): card in
+   600ms, its lines at 140 to 440ms, the gold rule draws in 900ms. */
+.fx-hline { animation: fx-rise 600ms var(--fx-in) both; }
+.fx-hline::before { animation: fx-draw var(--t-slow, 900ms) var(--fx-in) 200ms both; }
+.fx-hline:not(.fx-hline-still) :is(.fx-hline-big, .fx-sa span:nth-child(1)) { animation: fx-rise var(--t-std, 500ms) var(--fx-in) 140ms both; }
+.fx-hline:not(.fx-hline-still) .fx-sa span:nth-child(2) { animation: fx-rise var(--t-std, 500ms) var(--fx-in) 240ms both; }
+.fx-hline:not(.fx-hline-still) .fx-sa span:nth-child(n + 3) { animation: fx-rise var(--t-std, 500ms) var(--fx-in) 320ms both; }
+.fx-hline:not(.fx-hline-still) .fx-hline-rule { animation: fx-draw var(--t-slow, 900ms) var(--fx-in) 300ms both; }
+.fx-hline:not(.fx-hline-still) :is(.fx-hline-en, .fx-hline-cite) { animation: fx-fade var(--t-std, 500ms) var(--fx-in) 440ms both; }
+
+/* ── Bands and heads ─────────────────────────────────────────────────── */
+.fx-upanishads .section { padding: 84px 0; }
+.fx-upanishads .fx-col { max-width: 760px; }
+.fx-head { margin-bottom: 28px; max-width: 680px; }
+.fx-head .eyebrow { margin-bottom: 10px; }
+.fx-upanishads .fx-head .heading { font-size: clamp(27px, 3.2vw, 38px); margin-bottom: 12px; }
+.fx-head .subtext { font-size: 16.5px; max-width: 62ch; }
+.fx-upanishads h3.fx-h3 { font-size: clamp(20px, 2.2vw, 24px); line-height: 1.3; color: #fff; margin: 0 0 12px; }
+.fx-upanishads .tp-h2 { margin-bottom: 18px; }
+
+.fx-prose > p,
+.fx-p { font-size: 16.5px; line-height: 1.75; color: var(--text); max-width: 68ch; margin: 0 0 16px; }
+.fx-prose > p:last-child { margin-bottom: 0; }
+.fx-upanishads :is(.fx-prose, .fx-p, .fx-v-note, .fx-card, .fx-sources, .tp-intro, .fx-bridge) a:not([class]) { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 4px; }
+.fx-upanishads :is(.fx-prose, .fx-p, .fx-v-note, .fx-card, .fx-sources, .tp-intro, .fx-bridge) a:not([class]):hover { color: #fff; text-decoration-color: var(--gold-light); }
+.fx-upanishads .tp-intro { margin-bottom: 0; max-width: 68ch; }
+.fx-upanishads .tp-intro + * { margin-top: 36px; }
+.fx-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--gold-light); font-weight: 600; font-size: 15px; border-bottom: 1px solid rgba(245, 201, 106, 0.35); }
+.fx-link:hover { color: #fff; border-color: var(--gold-light); }
+
+/* A plain card in house tokens. */
+.fx-card { padding: 24px 24px 22px; border-radius: var(--r-lg, 20px); border: 1px solid var(--border); background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)); }
+.fx-card p { font-size: 16px; line-height: 1.72; color: var(--text); margin: 0 0 12px; }
+.fx-card p:last-child { margin-bottom: 0; }
+.fx-card .tp-label { margin-bottom: 10px; color: var(--gold-light); }
+.fx-card-story { border-color: rgba(245, 201, 106, 0.3); background: radial-gradient(130% 90% at 100% 0%, rgba(245, 201, 106, 0.1), transparent 55%), linear-gradient(180deg, rgba(61, 12, 12, 0.55), rgba(26, 6, 6, 0.6)); }
+.fx-card-story .fx-scene { font-family: var(--fx-display); font-size: clamp(18px, 2vw, 20px); line-height: 1.65; color: var(--gold-pale); }
+.fx-upanishads:lang(hi) .fx-card-story .fx-scene { font-family: var(--fx-deva); font-size: 17px; line-height: 1.85; }
+.fx-who { display: inline-block; font-size: 12.5px; color: var(--text-dim); padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; margin-bottom: 16px; }
+.fx-grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+
+/* ── Sanskrit ────────────────────────────────────────────────────────── */
+.fx-sa p { margin: 0; }
+.fx-sa span { display: block; }
+.fx-sa .s-deva,
+.fx-sa .s-iast { font-family: var(--fx-sa); overflow-wrap: break-word; }
+.fx-sa-verse .s-deva { font-size: clamp(20px, 2.3vw, 23px); line-height: 1.8; color: var(--gold-light); }
+.fx-sa-verse .s-iast { font-size: 17.5px; line-height: 1.65; font-style: italic; color: var(--gold-light); }
+.fx-sa-small .s-deva { font-size: clamp(19px, 2.1vw, 21px); line-height: 1.8; color: var(--gold-light); }
+.fx-sa-small .s-iast { font-size: 16.5px; line-height: 1.65; font-style: italic; color: var(--gold-light); }
+
+/* ── Verse cards (complete texts, passages, plan days) ───────────────── */
+.fx-v {
+  position: relative; padding: 22px 24px 22px; border-radius: 16px; scroll-margin-top: 90px;
+  border: 1px solid var(--fx-line);
+  background: radial-gradient(120% 140% at 50% 0%, rgba(245, 201, 106, 0.06), transparent 60%), var(--bg-card);
+  transition: border-color var(--t-quick, 160ms) var(--fx-fb);
+}
+.fx-v + .fx-v,
+.fx-verses > * + * { margin-top: 14px; }
+.fx-v-ref { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 10px; }
+.fx-v-ref a { display: inline-flex; align-items: center; min-height: 32px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); }
+.fx-v-ref a:hover { color: #fff; }
+.fx-v-who { font-size: 12.5px; color: var(--text-dim); }
+.fx-v-en { font-size: 16.5px; line-height: 1.72; color: var(--text); margin: 14px 0 0; max-width: 64ch; }
+.fx-v-note { font-size: 14.5px; line-height: 1.65; color: var(--text-dim); margin: 16px 0 0; padding-top: 14px; border-top: 1px dashed var(--border); max-width: 64ch; }
+.fx-v:target { border-color: var(--gold-light); box-shadow: 0 0 0 4px rgba(245, 201, 106, 0.08); }
+.fx-v-ref-plain { font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); margin: 0 0 10px; }
+.fx-upanishads:lang(hi) .fx-v-ref-plain { letter-spacing: 0.04em; font-size: 13px; }
+
+/* Verse jump bar (Isha). */
+.fx-jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 28px; padding: 0; list-style: none; }
+.fx-jump a { display: inline-grid; place-items: center; min-width: 44px; min-height: 44px; padding: 0 10px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-card); font-size: 14px; font-weight: 600; color: var(--text-dim); transition: border-color var(--t-quick, 160ms) var(--fx-fb), color var(--t-quick, 160ms) var(--fx-fb); }
+.fx-jump a:hover { border-color: var(--gold-light); color: var(--gold-light); }
+
+/* ── Writing forms and print card ─────────────────────────────────────── */
+.fx-forms { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.fx-forms li { display: grid; gap: 4px; padding: 16px 18px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; }
+.fx-forms .f-sa { font-family: var(--fx-sa); font-size: 26px; line-height: 1.55; color: var(--gold-light); }
+.fx-forms .f-iast { font-family: var(--fx-sa); font-style: italic; font-size: 18px; color: var(--gold-light); }
+.fx-forms .f-label { font-size: 13px; color: var(--text-dim); }
+
+.fx-print { margin: 26px 0 0; display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 22px; align-items: center; }
+.fx-print-img { display: block; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--bg-card); transition: border-color var(--t-quick, 160ms) var(--fx-fb); }
+.fx-print-img:hover { border-color: var(--gold-light); }
+.fx-print img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+.fx-print figcaption p { margin: 0 0 8px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim); }
+.fx-print-links { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+.fx-print-links a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; font-size: 14.5px; color: var(--gold-light); }
+.fx-print-links a:hover { color: #fff; }
+
+/* "Share this line" divider, as on the Gita verse page. */
+.fx-share-label { display: flex; align-items: center; gap: 14px; margin: 44px 0 18px; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+.fx-share-label::before,
+.fx-share-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.fx-upanishads:lang(hi) .fx-share-label { letter-spacing: 0.06em; font-size: 13px; }
+
+/* ── Gita bridge rows ────────────────────────────────────────────────── */
+.fx-bridges { display: grid; gap: 10px; }
+.fx-bridge { margin: 0; padding: 14px 18px 14px 18px; border-left: 3px solid var(--gold-light); background: rgba(245, 201, 106, 0.06); border-radius: 0 12px 12px 0; font-size: 15.5px; line-height: 1.6; color: var(--text); max-width: 68ch; }
+.fx-upanishads .fx-bridge a { color: var(--gold-light); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 4px; }
+.fx-bridge-lead { color: var(--text-dim); }
+
+/* ── Tiles (related, lines, principal) ───────────────────────────────── */
+.fx-tiles { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.fx-tiles-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fx-tiles-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.fx-tiles > li { display: flex; }
+.fx-tile { width: 100%; min-height: 44px; }
+.fx-tile-sa { font-family: var(--fx-sa); font-size: 21px; line-height: 1.5; color: var(--gold-light); margin-bottom: 2px; }
+.fx-upanishads .fx-tile .gita-for-label { font-size: 17px; line-height: 1.35; color: #fff; }
+.fx-upanishads .fx-tile:hover .gita-for-label { color: var(--gold-light); }
+.fx-tile-sub { font-size: 13.5px; line-height: 1.5; color: var(--text-dim); }
+.fx-upanishads .fx-tile-sa + .gita-for-label { font-weight: 600; }
+
+.fx-ten { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fx-ten li { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 16px 18px; border-radius: 14px; border: 1px solid var(--border); background: var(--bg-card); }
+.fx-ten-name { font-family: var(--fx-display); font-size: 19px; font-weight: 700; color: var(--gold-light); }
+.fx-upanishads .fx-ten-name a { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.35); text-underline-offset: 4px; }
+.fx-ten-name a:hover { color: #fff; }
+.fx-ten-meta { font-size: 12.5px; color: var(--text-dimmer); }
+.fx-ten-about { font-size: 14.5px; line-height: 1.55; color: var(--text-dim); }
+.fx-ten li.has-link { border-color: rgba(245, 201, 106, 0.3); }
+
+/* Numbered reading order (a real sequence). */
+.fx-order { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.fx-order > li > :is(a, div) { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 4px 16px; padding: 18px 20px; border-radius: 16px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text); transition: border-color var(--t-quick, 160ms) var(--fx-fb); }
+.fx-order > li > a:hover { border-color: var(--gold-light); }
+.fx-order-n { grid-row: span 2; align-self: start; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(200, 136, 30, 0.45); font: 600 16px/1 var(--fx-display); color: var(--gold-light); }
+.fx-order-name { font-family: var(--fx-display); font-size: 20px; font-weight: 600; color: #fff; }
+.fx-order > li > a .fx-order-name { color: var(--gold-light); }
+.fx-order-why { font-size: 15px; line-height: 1.62; color: var(--text-dim); }
+
+.fx-books { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fx-books li { padding: 20px 22px; border-radius: 16px; border: 1px solid var(--border); background: var(--bg-card); font-size: 15px; line-height: 1.65; color: var(--text-dim); }
+.fx-books strong { font-family: var(--fx-display); font-weight: 600; font-size: 18px; line-height: 1.35; display: block; color: #fff; margin-bottom: 4px; }
+.fx-books em { font-style: normal; font-size: 13px; display: block; margin-bottom: 10px; color: var(--gold-light); }
+
+/* ── Plan days (Who am I) ────────────────────────────────────────────── */
+.fx-plan { display: grid; gap: 10px; }
+.fx-plan details { border: 1px solid var(--border); border-radius: 16px; background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)); scroll-margin-top: 90px; transition: border-color var(--t-quick, 160ms) var(--fx-fb); }
+.fx-plan details[open] { border-color: rgba(245, 201, 106, 0.32); }
+.fx-plan summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 64px minmax(0, 1fr) 20px; gap: 14px; align-items: center; padding: 14px 18px; min-height: 60px; }
+.fx-plan summary::-webkit-details-marker { display: none; }
+.fx-plan summary::after { content: '+'; color: var(--gold-light); font-size: 20px; line-height: 1; transition: transform var(--t-quick, 160ms) var(--fx-fb); }
+.fx-plan details[open] summary::after { transform: rotate(45deg); }
+.fx-plan .d-n { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); padding: 8px 0; border-right: 1px solid var(--border); text-align: center; }
+.fx-plan .d-t { font-family: var(--fx-display); font-size: 18px; color: #fff; }
+.fx-plan .d-body { padding: 4px 22px 22px; }
+.fx-plan .d-body > * + * { margin-top: 14px; }
+.fx-plan .d-sit { margin-top: 18px; }
+.fx-plan .d-sit p { margin: 0; font-size: 15.5px; line-height: 1.6; color: #fff; }
+
+/* ── Next step band ──────────────────────────────────────────────────── */
+.fx-upanishads .fx-next .heading { font-size: clamp(27px, 3.2vw, 38px); margin-bottom: 18px; }
+
+/* ── FAQ and sources ─────────────────────────────────────────────────── */
+.fx-sources { padding: 8px 0 72px; }
+.fx-sources h2 { font-family: var(--fx-ui); font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dimmer); margin: 0 0 12px; }
+.fx-upanishads:lang(hi) .fx-sources h2 { letter-spacing: 0.04em; font-size: 13px; }
+.fx-sources p { font-size: 13.5px; line-height: 1.7; color: var(--text-dim); margin: 0 0 10px; max-width: 72ch; }
+.fx-upanishads .tp-faq-item summary { min-height: 44px; }
+
+/* ── Sit closer (Katha): the page's orchestrated moment ──────────────── */
+.sc { margin-top: 18px; }
+.sc-progress { font-size: 13.5px; color: var(--text-dim); margin: 0; }
+.sc > .sc-progress:first-child { display: inline-block; padding: 7px 14px; border: 1px solid var(--border); border-radius: 999px; background: rgba(18, 5, 5, 0.45); }
+.sc-ex { margin-top: 48px; scroll-margin-top: 90px; }
+.fx-upanishads .sc-title { font-family: var(--fx-display); font-size: clamp(21px, 2.4vw, 26px); line-height: 1.25; color: #fff; margin: 0 0 14px; }
+.sc-cue { font-family: var(--fx-display); font-style: italic; color: var(--text-dim); font-size: 17px; line-height: 1.6; margin: 0 0 14px; max-width: 60ch; }
+.sc-ask > .fx-v + .fx-v { margin-top: 12px; }
+/* The teacher's answer hangs off a gold thread. */
+.sc-answer { position: relative; margin: 18px 0 0 8px; padding-left: 24px; }
+.sc-answer::before { content: ''; position: absolute; left: 0; top: 6px; bottom: 6px; width: 2px; border-radius: 2px; background: linear-gradient(180deg, var(--gold-light), var(--gold) 60%, rgba(200, 136, 30, 0.2)); transform-origin: top; }
+.sc-answer::after { content: ''; position: absolute; left: -4px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--gold-light); box-shadow: 0 0 0 5px rgba(245, 201, 106, 0.12), 0 0 18px rgba(245, 201, 106, 0.45); }
+.sc-answer .fx-v { border-color: rgba(245, 201, 106, 0.28); background: radial-gradient(130% 90% at 100% 0%, rgba(245, 201, 106, 0.1), transparent 55%), linear-gradient(180deg, rgba(61, 12, 12, 0.55), rgba(26, 6, 6, 0.6)); }
+.sc-answer .fx-v + .fx-v { margin-top: 12px; }
+.sc-answer:focus { outline: none; }
+.sc-on .sc-ex[data-new] .sc-answer { animation: fx-rise 600ms var(--fx-in) both; }
+.sc-on .sc-ex[data-new] .sc-answer::before { animation: fx-draw-y var(--t-slow, 900ms) var(--fx-in) both; }
+.sc-on .sc-ex[data-new] .sc-answer .fx-v-ref { animation: fx-rise var(--t-std, 500ms) var(--fx-in) 140ms both; }
+.sc-on .sc-ex[data-new] .sc-answer .fx-sa { animation: fx-rise var(--t-std, 500ms) var(--fx-in) 290ms both; }
+.sc-on .sc-ex[data-new] .sc-answer :is(.fx-v-en, .fx-v-note) { animation: fx-rise var(--t-std, 500ms) var(--fx-in) 440ms both; }
+.sc-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin: 20px 0 0 8px; padding: 6px 0 6px 24px; border-left: 2px dashed rgba(200, 136, 30, 0.35); }
+.sc-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 0 28px; border-radius: 10px; border: 1.5px solid var(--gold); background: var(--gold);
+  color: #1a0606; font: 700 15px/1 var(--fx-ui); cursor: pointer;
+  box-shadow: 0 12px 32px rgba(200, 136, 30, 0.28);
+  transition: background-color var(--t-quick, 160ms) var(--fx-fb), transform var(--t-quick, 160ms) var(--fx-fb);
+}
+.sc-btn:hover { background: #d49424; }
+.sc-btn:active { transform: scale(0.98); }
+.sc-all { min-height: 44px; border: 0; background: none; padding: 0; color: var(--text-dim); font: 14.5px var(--fx-ui); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--border); cursor: pointer; }
+.sc-all:hover { color: var(--gold-light); }
+.sc-done { margin-top: 28px; color: var(--gold-light); }
+
+/* ── Neti, neti (Mandukya 7) ─────────────────────────────────────────── */
+.fx-neti-wrap { overflow: hidden; margin: 18px 0 14px; padding: 28px 26px 26px; border-radius: var(--r-xl, 28px); border: 1px solid rgba(245, 201, 106, 0.28); background: radial-gradient(90% 70% at 50% 100%, rgba(245, 201, 106, 0.1), transparent 60%), linear-gradient(180deg, rgba(61, 12, 12, 0.6), rgba(26, 6, 6, 0.7)); scroll-margin-top: 90px; }
+.fx-neti-wrap .fx-h3 { margin-bottom: 8px; }
+.fx-neti-wrap > p { font-size: 15px; line-height: 1.6; color: var(--text-dim); margin: 0 0 20px; max-width: 60ch; }
+.neti { position: relative; }
+.neti-list { list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+.neti-list li { display: grid; gap: 2px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: rgba(18, 5, 5, 0.45); transition: opacity var(--t-std, 500ms) var(--fx-in), transform var(--t-std, 500ms) var(--fx-in); }
+.neti-list li[data-gone] { opacity: 0.14; transform: scale(0.97); }
+.neti-sa { font-family: var(--fx-sa); font-size: 19px; line-height: 1.5; color: var(--text); }
+.neti-sa.s-iast { font-style: italic; font-size: 16px; }
+.neti-en { font-size: 12.5px; color: var(--text-dim); }
+.neti-rest { position: relative; display: grid; gap: 2px; margin: 0 0 20px; padding: 18px 0 0; border-top: 1px solid var(--border); }
+.neti-rest::before { content: ''; position: absolute; left: -10%; right: -10%; top: -20px; bottom: -40px; z-index: 0; pointer-events: none; background: radial-gradient(50% 60% at 30% 50%, rgba(245, 201, 106, 0.22), transparent 70%); opacity: 0; transition: opacity var(--t-slow, 900ms) var(--fx-in); }
+.neti-rest > * { position: relative; }
+.neti-rest .s-deva,
+.neti-rest .s-iast { font-family: var(--fx-sa); font-size: clamp(28px, 4vw, 38px); line-height: 1.45; color: var(--text); transition: color var(--t-slow, 900ms) var(--fx-in); }
+.neti-rest .s-iast { font-style: italic; font-size: clamp(22px, 3vw, 28px); }
+.neti-rest .neti-en { font-size: 14px; }
+.neti[data-done] .neti-rest::before { opacity: 1; }
+.neti[data-done] .neti-rest .s-deva,
+.neti[data-done] .neti-rest .s-iast { color: var(--gold-light); }
+.neti-cta { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; }
+
+/* ── Motion ──────────────────────────────────────────────────────────── */
+@keyframes fx-rise { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes fx-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fx-draw { from { transform: scaleX(0); } to { transform: none; } }
+@keyframes fx-draw-y { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes fx-breathe { from { opacity: 0.65; } to { opacity: 1; } }
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 899px) {
+  .fx-hero { padding: 10px 0 48px; }
+  .fx-hero-top { margin-bottom: 14px; }
+  .fx-hero-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .fx-hero-visual { order: -1; }
+  .fx-hero-glow { width: 520px; height: 520px; right: 50%; margin-right: -260px; top: 40px; margin-top: 0; }
+  .fx-hero::before {
+    background:
+      radial-gradient(ellipse 90% 45% at 50% 18%, rgba(92, 26, 26, 0.65) 0%, transparent 72%),
+      linear-gradient(180deg, var(--maroon-deep) 0%, var(--bg) 100%);
+  }
+  .fx-hline { padding: 8px 0 0; border: 0; border-radius: 0; background: none; box-shadow: none; overflow: visible; }
+  .fx-hline::before { display: none; }
+  .fx-hline .fx-sa .s-deva { font-size: clamp(34px, 10vw, 44px); }
+  .fx-hline[data-len='mid'] .fx-sa .s-deva { font-size: clamp(28px, 8vw, 34px); }
+  .fx-hline[data-len='long'] .fx-sa .s-deva { font-size: clamp(23px, 6.2vw, 27px); }
+  .fx-hline .fx-sa .s-iast { font-size: clamp(21px, 6vw, 26px); }
+  .fx-hline-big { font-size: 84px; margin-bottom: 6px; }
+  .fx-hline-rule { margin: 14px 0 12px; }
+  .fx-hline-en { font-size: 17px; }
+  .fx-hline-cite { margin-top: 8px; }
+  .fx-upanishads .fx-hero .tp-h1 { font-size: clamp(28px, 8vw, 34px); margin-bottom: 10px; }
+  .fx-upanishads:lang(hi) .fx-hero .tp-h1 { font-size: clamp(25px, 7vw, 30px); }
+  .fx-hero .tp-sub { font-size: 15.5px; margin-bottom: 14px; }
+  .fx-hero .tp-facts { margin-bottom: 18px; gap: 6px; }
+  .fx-hero .tp-facts li { font-size: 12px; padding: 5px 11px; }
+  .fx-hero-text > * { max-width: none; }
+  .fx-grid-2, .fx-tiles-2, .fx-tiles-3, .fx-ten, .fx-books { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 580px) {
+  .fx-upanishads .section { padding: 56px 0; }
+  .fx-upanishads .wrap { padding: 0 20px; }
+  .fx-v { padding: 18px 18px 18px; }
+  .fx-card { padding: 20px 18px; }
+  .fx-print { grid-template-columns: minmax(0, 150px) minmax(0, 1fr); gap: 16px; align-items: start; }
+  .fx-neti-wrap { padding: 22px 18px; border-radius: 20px; }
+  .sc-answer { margin-left: 4px; padding-left: 18px; }
+  .sc-cta { margin-left: 4px; padding-left: 18px; }
+  .fx-order > li > :is(a, div) { grid-template-columns: 40px minmax(0, 1fr); gap: 4px 14px; padding: 16px; }
+  .fx-order-n { width: 34px; height: 34px; font-size: 14px; }
+  .fx-hero .tp-hero-actions .btn-read-gita { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-hero-glow { animation: none; }
+  .fx-hero-text > *,
+  .fx-hline,
+  .fx-hline:not(.fx-hline-still) :is(.fx-hline-big, .fx-sa span, .fx-hline-en, .fx-hline-cite),
+  .sc-on .sc-ex[data-new] .sc-answer,
+  .sc-on .sc-ex[data-new] .sc-answer :is(.fx-v-ref, .fx-sa, .fx-v-en, .fx-v-note) { animation: fx-fade 250ms linear both; }
+  .fx-hline::before,
+  .fx-hline-rule,
+  .sc-on .sc-ex[data-new] .sc-answer::before { animation: none !important; }
+  .neti-list li[data-gone] { transform: none; }
+  .sc-btn:active { transform: none; }
+}
+
+@media print {
+  .fx-toggle, .fx-next-band, .sc-cta, .neti-cta, .fx-crumbs, .fx-hero-glow { display: none; }
+  .fx-upanishads { background: #fff; color: #000; }
+}
+.fx-upanishads :is(h2, h3)[id] { scroll-margin-top: 90px; }
+
+/* ── Reading-order hero (which to read first) ────────────────────────── */
+.fx-hline-order ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.fx-hline-order li { display: flex; align-items: baseline; gap: 18px; }
+.fx-hline-order .s-deva { display: inline; font-family: var(--fx-sa); color: var(--gold-light); font-size: clamp(30px, 3.6vw, 44px); line-height: 1.45; }
+.fx-hline-order li:nth-child(n + 3) .s-deva { color: rgba(245, 201, 106, 0.72); }
+.fx-hline-order li:nth-child(n + 4) .s-deva { color: rgba(245, 201, 106, 0.5); }
+.fx-hline-n { flex: none; width: 26px; font: 600 15px/1 var(--fx-display); color: var(--text-dimmer); text-align: right; }
+.fx-hline-order li { animation: fx-rise var(--t-std, 500ms) var(--fx-in) both; }
+.fx-hline-order li:nth-child(1) { animation-delay: 140ms; }
+.fx-hline-order li:nth-child(2) { animation-delay: 210ms; }
+.fx-hline-order li:nth-child(3) { animation-delay: 280ms; }
+.fx-hline-order li:nth-child(4) { animation-delay: 350ms; }
+.fx-hline-order li:nth-child(5) { animation-delay: 420ms; }
+.fx-hline-order .fx-hline-en { animation: fx-fade var(--t-std, 500ms) var(--fx-in) 440ms both; }
+.fx-hline-order .fx-hline-rule { animation: fx-draw var(--t-slow, 900ms) var(--fx-in) 300ms both; }
+
+/* ── Mahavakya cards ─────────────────────────────────────────────────── */
+.fx-col-inline { max-width: 760px; margin: 0 auto 36px; }
+.fx-maha { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fx-maha-card { padding: 28px 28px 24px; border-radius: var(--r-lg, 20px); border: 1px solid rgba(245, 201, 106, 0.22); background: radial-gradient(120% 90% at 50% 0%, rgba(245, 201, 106, 0.08), transparent 60%), linear-gradient(180deg, rgba(61, 12, 12, 0.45), rgba(26, 6, 6, 0.5)); scroll-margin-top: 90px; }
+.fx-maha-card .fx-sa-verse .s-deva { font-size: clamp(32px, 3.6vw, 42px); line-height: 1.45; }
+.fx-maha-card .fx-sa-verse .s-iast { font-size: clamp(22px, 2.4vw, 28px); }
+.fx-maha-en { font-family: var(--fx-display); font-style: italic; font-size: 20px; line-height: 1.45; color: var(--gold-pale); margin: 10px 0 14px; }
+.fx-maha-note { font-size: 15.5px; line-height: 1.7; color: var(--text); margin: 0 0 6px; }
+.fx-maha-card .fx-who { margin-bottom: 12px; }
+@media (max-width: 899px) {
+  .fx-maha { grid-template-columns: minmax(0, 1fr); }
+  .fx-hline-order .s-deva { font-size: clamp(28px, 8vw, 34px); }
+}
+@media (max-width: 580px) { .fx-maha-card { padding: 22px 18px 20px; } }
+@media (prefers-reduced-motion: reduce) {
+  .fx-hline-order li, .fx-hline-order .fx-hline-en { animation: fx-fade 250ms linear both; }
+  .fx-hline-order .fx-hline-rule { animation: none; }
+}

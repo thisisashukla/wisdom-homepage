@@ -1,4 +1,5 @@
-import Shell, { Faq, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
+import Shell, { Band, Faq, Head, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
+import { PRINCIPAL } from '@/content/funnels/upanishads/principal'
 import { articleLd, faqLd, upMeta, DISCLOSURE_EN } from '@/lib/funnels/upanishads'
 
 const PATH = '/upanishads/which-to-read-first'
@@ -87,6 +88,7 @@ export default function Page() {
     articleLd({ headline: TITLE, description: DESC, path: PATH, citation: 'Principal Upanishads; translations by Gambhirananda, Nikhilananda, Easwaran, Olivelle, Gita Press, Paramananda.' }),
     faqLd(FAQ),
   ]
+  const order = ['isha', 'katha', 'kena', 'mundaka', 'mandukya'].map((id) => PRINCIPAL.find((u) => u.id === id)!)
   return (
     <Shell
       pageName={PAGE}
@@ -98,76 +100,109 @@ export default function Page() {
       ]}
       jsonLd={jsonLd}
       toggle={false}
+      hero={{
+        eyebrow: 'A reading order',
+        title: 'Which Upanishad to read first',
+        facts: ['Six steps', 'Five translations to buy', 'One free online'],
+        cta: { href: '#order', label: 'See the reading order', loc: 'which_first_hero_order' },
+        second: { href: '#books', label: 'Translations worth buying', loc: 'which_first_hero_books' },
+        visual: (
+          <figure className="fx-hline fx-hline-order" data-len="short">
+            <ol lang="sa">
+              {order.map((u, i) => (
+                <li key={u.id}>
+                  <span className="fx-hline-n" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <span className="s-deva">{u.hi}</span>
+                </li>
+              ))}
+            </ol>
+            <span className="fx-hline-rule" aria-hidden="true" />
+            <figcaption className="fx-hline-en" lang="en">
+              {order.map((u) => u.en).join(', ')}
+            </figcaption>
+          </figure>
+        ),
+      }}
     >
-      <header>
-        <h1>Which Upanishad to read first</h1>
-        <p id="quick-answer" className="fx-quick">
+      <Band labelledBy="order">
+        <p id="quick-answer" className="tp-intro rv">
           Read the Isha Upanishad first: eighteen verses you can finish in one sitting. Then the Katha, which tells the same ideas as a story, then the
           Kena, Mundaka and Mandukya. Leave the long prose Upanishads, the Chandogya and Brihadaranyaka, for later and read them in sections. For a
           translation, start with Gambhirananda or Easwaran.
         </p>
-      </header>
-
-      <section className="fx-sec" aria-labelledby="order">
-        <h2 id="order">A reading order</h2>
-        <ol className="fx-links" style={{ listStyle: 'none' }}>
-          {ORDER.map((o) =>
-            o.href ? (
-              <li key={o.n}>
+        <h2 id="order" className="tp-h2 rv">
+          A reading order
+        </h2>
+        <ol className="fx-order" data-stagger="60">
+          {ORDER.map((o) => (
+            <li key={o.n} className="rv">
+              {o.href ? (
                 <a href={o.href} data-mp-location={`which_first_${o.n}`}>
-                  <strong>
-                    {o.n}. {o.name}
-                  </strong>
-                  <span>{o.why}</span>
+                  <span className="fx-order-n">{o.n}</span>
+                  <strong className="fx-order-name">{o.name}</strong>
+                  <span className="fx-order-why">{o.why}</span>
                 </a>
-              </li>
-            ) : (
-              <li key={o.n} style={{ padding: '12px 0', borderBottom: '1px solid var(--rule)' }}>
-                <strong style={{ fontFamily: 'var(--fx-serif)', fontWeight: 500, fontSize: 19 }}>
-                  {o.n}. {o.name}
-                </strong>
-                <span style={{ display: 'block', fontSize: 15.5, color: 'var(--ash-ink)' }}>{o.why}</span>
-              </li>
-            ),
-          )}
+              ) : (
+                <div>
+                  <span className="fx-order-n">{o.n}</span>
+                  <strong className="fx-order-name">{o.name}</strong>
+                  <span className="fx-order-why">{o.why}</span>
+                </div>
+              )}
+            </li>
+          ))}
         </ol>
-      </section>
+      </Band>
 
-      <section className="fx-sec" aria-labelledby="how">
-        <h2 id="how">How to read one</h2>
-        <p>
-          Read a few verses aloud, slowly, once in Sanskrit if you can and once in English. Stop when one line stays with you, and carry that line for
-          the day. The Upanishads were taught this way, a little at a time, sitting close.
-        </p>
-      </section>
+      <Band alt labelledBy="how">
+        <div className="fx-card fx-card-story rv">
+          <h2 id="how" className="tp-label">
+            How to read one
+          </h2>
+          <p className="fx-scene">
+            Read a few verses aloud, slowly, once in Sanskrit if you can and once in English. Stop when one line stays with you, and carry that line for
+            the day. The Upanishads were taught this way, a little at a time, sitting close.
+          </p>
+        </div>
+      </Band>
 
-      <section className="fx-sec" aria-labelledby="books">
-        <h2 id="books">Translations worth buying</h2>
-        <p>We have no arrangement with any publisher. These are the books readers of Shankara&apos;s tradition and scholars recommend most often.</p>
-        <ul className="fx-books">
+      <Band wide labelledBy="books">
+        <Head id="books" sub="We have no arrangement with any publisher. These are the books readers of Shankara’s tradition and scholars recommend most often.">
+          Translations worth buying
+        </Head>
+        <ul className="fx-books" data-stagger="60">
           {BOOKS.map((b) => (
-            <li key={b.title + b.who}>
+            <li key={b.title + b.who} className="rv">
               <strong>{b.title}</strong>
               <em>{b.who}</em>
               {b.note}
             </li>
           ))}
         </ul>
-        <p style={{ marginTop: 18 }}>
-          Free: Swami Paramananda, <a href="https://www.gutenberg.org/ebooks/3283">The Upanishads (1919), on Project Gutenberg</a>.
-        </p>
-      </section>
-
-      <section className="fx-sec" aria-labelledby="plan">
-        <h2 id="plan">If you want one line a day instead</h2>
-        <p>
-          Seven lines from seven Upanishads, one a day, each with one thing to notice.{' '}
-          <a href="/upanishads/who-am-i" data-mp-location="which_first_plan">
-            Start the Who am I plan
+        <p className="fx-p rv" style={{ marginTop: 22 }}>
+          Free: Swami Paramananda,{' '}
+          <a href="https://www.gutenberg.org/ebooks/3283" className="fx-link">
+            The Upanishads (1919), on Project Gutenberg
           </a>
           .
         </p>
-      </section>
+      </Band>
+
+      <Band alt labelledBy="plan">
+        <div className="fx-card fx-card-story rv">
+          <h2 id="plan" className="fx-h3">
+            If you want one line a day instead
+          </h2>
+          <p>Seven lines from seven Upanishads, one a day, each with one thing to notice.</p>
+          <p style={{ marginTop: 18 }}>
+            <a href="/upanishads/who-am-i" className="btn-read-gita" data-mp-location="which_first_plan">
+              Start the Who am I plan
+            </a>
+          </p>
+        </div>
+      </Band>
 
       <UpNext locale="en" pageName={PAGE} pageKey={PAGE} placement="guide-end" heading="One line each morning" />
 

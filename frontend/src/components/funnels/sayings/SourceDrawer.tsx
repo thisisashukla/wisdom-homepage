@@ -10,6 +10,7 @@ import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { Icon } from '@/components/quotes/Icons'
 import { VERDICT_LABEL, type DrawerData, type Locale } from '@/lib/funnels/sayings/shared'
+import '@/components/quotes/card.css'
 import './sayings.css'
 
 const T = {
@@ -87,14 +88,16 @@ export default function SourceDrawer({ data, locale, onClose }: { data: DrawerDa
 
   const titleId = `fxd-${data.quoteId}`
   return createPortal(
-    <div className="fxd-wrap fx-sayings" data-hub="vivekananda" lang={locale}>
-      <div className="fxd-backdrop" onClick={onClose} aria-hidden="true" />
-      <div ref={ref} className="fxd" role="dialog" aria-modal="true" aria-labelledby={titleId}>
-        <button ref={closeRef} type="button" className="fxd-x" aria-label={t.close} onClick={onClose}>
+    <div className="qsheet-wrap fxd-wrap" data-hub="vivekananda" lang={locale}>
+      <div className="qsheet-backdrop" onClick={onClose} aria-hidden="true" />
+      <div ref={ref} className="qsheet fxd" role="dialog" aria-modal="true" aria-labelledby={titleId}>
+        <button ref={closeRef} type="button" className="qsheet-x" aria-label={t.close} onClick={onClose}>
           <Icon name="close" />
         </button>
-        <p className="fxd-stamp" data-verdict={data.verdict}>
-          {VERDICT_LABEL[data.verdict][locale]}
+        <p className="fxd-top">
+          <span className="fx-stamp" data-verdict={data.verdict}>
+            {VERDICT_LABEL[data.verdict][locale]}
+          </span>
         </p>
         <h2 id={titleId} className="fxd-title">
           {t.title}
@@ -109,7 +112,7 @@ export default function SourceDrawer({ data, locale, onClose }: { data: DrawerDa
         </blockquote>
         {data.translated && <p className="fxd-note">{t.translated}</p>}
         <p className="fxd-note">{t.dash}</p>
-        <a className="fxd-link" href={data.url} target="_blank" rel="noopener" data-mp-location="source_drawer">
+        <a className="qns-btn" href={data.url} target="_blank" rel="noopener" data-mp-location="source_drawer">
           {t.open}
         </a>
       </div>

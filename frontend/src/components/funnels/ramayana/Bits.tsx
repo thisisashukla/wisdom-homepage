@@ -5,42 +5,91 @@ export function JsonLd({ data }: { data: object | object[] }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, '\\u003c') }} />
 }
 
-export function Crumbs({ items, label }: { items: { name: string; href?: string }[]; label: string }) {
+/** A house band: .section (or .section-alt / .section-warm) with a left-aligned head and an inner column. */
+export function Band({
+  id,
+  tone,
+  eyebrow,
+  title,
+  lede,
+  wide,
+  className,
+  children,
+}: {
+  id?: string
+  tone?: 'alt' | 'warm'
+  eyebrow?: string
+  title?: ReactNode
+  lede?: ReactNode
+  wide?: boolean
+  className?: string
+  children?: ReactNode
+}) {
   return (
-    <nav className="rl-crumbs" aria-label={label}>
-      <ol>
-        {items.map((it, i) => (
-          <li key={i}>{it.href ? <a href={it.href}>{it.name}</a> : <span aria-current="page">{it.name}</span>}</li>
-        ))}
-      </ol>
-    </nav>
+    <section
+      className={`section rl-band${tone ? ` section-${tone}` : ''}${className ? ` ${className}` : ''}`}
+      aria-labelledby={title && id ? id : undefined}
+    >
+      <div className={`wrap${wide ? '' : ' rl-col'}`} data-stagger="60">
+        {(eyebrow || title || lede) && (
+          <div className="rl-head rv">
+            {eyebrow && <p className="rl-eyebrow">{eyebrow}</p>}
+            {title && (
+              <h2 className="rl-h2" id={id}>
+                {title}
+              </h2>
+            )}
+            {lede && <p className="rl-lede">{lede}</p>}
+          </div>
+        )}
+        {children}
+      </div>
+    </section>
   )
 }
 
-export function Faq({ heading, qas, id = 'faq' }: { heading: string; qas: { q: string; a: string }[]; id?: string }) {
+/** FAQ as the plan-page accordion (native details, readable without JS). */
+export function Faq({ heading, qas, id = 'faq', tone }: { heading: string; qas: { q: string; a: string }[]; id?: string; tone?: 'alt' | 'warm' }) {
   return (
-    <section className="rl-section" aria-labelledby={id}>
-      <h2 className="rl-h2" id={id}>
-        {heading}
-      </h2>
-      <dl className="rl-faq">
+    <Band id={id} title={heading} tone={tone}>
+      <div className="rl-faq rv">
         {qas.map((x) => (
-          <div key={x.q}>
-            <dt>{x.q}</dt>
-            <dd>{x.a}</dd>
-          </div>
+          <details key={x.q} className="rl-faq-item">
+            <summary>{x.q}</summary>
+            <p>{x.a}</p>
+          </details>
         ))}
-      </dl>
-    </section>
+      </div>
+    </Band>
   )
 }
 
 export function Sources({ heading, children }: { heading: string; children: ReactNode }) {
   return (
     <section className="rl-sources" aria-label={heading}>
-      <h2>{heading}</h2>
-      {children}
+      <div className="wrap rl-col">
+        <h2>{heading}</h2>
+        {children}
+      </div>
     </section>
+  )
+}
+
+/** Tiles for related pages, in the house .gita-for-tile pattern. */
+export function Tiles({ items, loc }: { items: { href: string; t: string; s: string; lang?: 'en' | 'hi' }[]; loc: (href: string) => string }) {
+  return (
+    <ul className="rl-tiles">
+      {items.map((x) => (
+        <li key={x.href} className="rv">
+          <a href={x.href} className="gita-for-tile rl-tile" data-mp-location={loc(x.href)} hrefLang={x.lang}>
+            <span className="gita-for-label rl-tile-label" lang={x.lang}>
+              {x.t}
+            </span>
+            <span className="rl-tile-sub">{x.s}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
   )
 }
 

@@ -23,7 +23,7 @@ const T = {
   hi: { copy: 'कॉपी', copied: 'कॉपी हो गया', wa: 'WhatsApp', save: 'इमेज सेव', fail: 'कॉपी नहीं हो पाया। श्लोक को दबाकर रखें और कॉपी करें।', group: 'इस श्लोक को इस्तेमाल करें' },
 } as const
 
-/** Copy, WhatsApp and (for share cards) Save image. Reuses the quote-card event names. */
+/** Copy, WhatsApp and (for share cards) Save image, in the house quote-card action row. Reuses the quote-card event names. */
 export default function LineActions({ lineId, domId, deva, meaning, source, path, cardId, page, locale }: Props) {
   const t = T[locale]
   const [done, setDone] = useState(false)
@@ -31,8 +31,9 @@ export default function LineActions({ lineId, domId, deva, meaning, source, path
     ensureToast()
   }, [])
 
-  const url = `${SITE_URL}${path}?utm_source=copy&utm_medium=quote#${domId}`
-  const text = [deva, '', `"${meaning}"`, source, url].join('\n')
+  const urlFor = (src: 'copy' | 'whatsapp') => `${SITE_URL}${path}?utm_source=${src}&utm_medium=quote#${domId}`
+  const text = [deva, '', `"${meaning}"`, source, urlFor('copy')].join('\n')
+  const waText = [deva, '', `"${meaning}"`, source, urlFor('whatsapp')].join('\n')
   const base = { quote_id: cardId ?? lineId, line_id: lineId }
 
   const onCopy = async () => {
@@ -48,24 +49,32 @@ export default function LineActions({ lineId, domId, deva, meaning, source, path
   }
 
   return (
-    <div className="mb-acts" role="group" aria-label={t.group}>
-      <button type="button" onClick={onCopy} data-done={done ? '' : undefined}>
+    <div className="qc-actions" role="group" aria-label={t.group}>
+      <button type="button" className="qc-act qc-copy" onClick={onCopy} data-done={done ? '' : undefined}>
+        <span className="qc-ico" aria-hidden="true">
+          <i className="qi qi-copy" />
+          <i className="qi qi-check" />
+        </span>
         {done ? t.copied : t.copy}
       </button>
-      <a
-        href={`https://wa.me/?text=${encodeURIComponent(text)}`}
+      <a data-mp-tracked=""
+        className="qc-act"
+        href={`https://wa.me/?text=${encodeURIComponent(waText)}`}
         target="_blank"
         rel="noopener"
         onClick={() => mbTrack('Quote Shared', page, locale, { ...base, channel: 'whatsapp' })}
       >
+        <i className="qi qi-whatsapp" aria-hidden="true" />
         {t.wa}
       </a>
       {cardId && (
-        <a
+        <a data-mp-tracked=""
+          className="qc-act"
           href={cardImageUrl(cardId, { format: 'post', lang: locale, download: true })}
           download={`mahabharata-${lineId.slice(4).replace(/\./g, '-')}.png`}
           onClick={() => mbTrack('Quote Image Saved', page, locale, { ...base, format: 'post', method: 'download' })}
         >
+          <i className="qi qi-save" aria-hidden="true" />
           {t.save}
         </a>
       )}

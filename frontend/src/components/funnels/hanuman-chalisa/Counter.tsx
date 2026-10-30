@@ -102,60 +102,66 @@ export default function Counter({ beads, page }: { beads: BeadInfo[]; page: stri
     }
   }
 
-  if (!ready || !s.goal) {
-    return (
-      <div>
-        <h2 className="hc-h2">Choose your sankalp</h2>
-        <ul className="hc-goals">
-          {GOALS.map((g) => (
-            <li key={String(g.goal)}>
-              <button type="button" className="hc-goal" onClick={() => setGoal(g.goal)} disabled={!ready}>
-                <strong>{g.title}</strong>
-                <span>{g.sub}</span>
-              </button>
-            </li>
-          ))}
-        </ul>
-        <p className="hc-note">Your count stays on this device. Nothing is sent anywhere.</p>
-      </div>
-    )
-  }
-
+  const picking = !ready || !s.goal
   const shown = Math.min(s.count, 108)
+
   return (
     <div className="hc-counter">
-      <Mala
-        beads={beads}
-        locale={locale}
-        page={page}
-        mode="anchor"
-        currentId={null}
-        outer={shown}
-        outerGoal={target <= 108 ? target : null}
-        label="Mala of 43 beads, one for each line of the text below"
-        caption="The outer ring gains a bead for each full recitation. The inner beads jump to a line of the text below."
-      >
-        <span className="hc-mala-big" aria-hidden="true">
-          {s.count}
-        </span>
-        <span className="hc-mala-sub" aria-hidden="true">
-          {isVow ? 'of 40 days' : `of ${target}`}
-        </span>
-      </Mala>
-      <p className="hc-status" role="status" aria-live="polite">
-        {msg || (isVow ? `${s.count} of 40 days kept.` : `${s.count} of ${target} recitations.`)}
-      </p>
-      <div className="hc-counter-acts">
-        <button type="button" className="hc-btn hc-btn-primary" onClick={count} disabled={doneToday || (s.reached && isVow)}>
-          {isVow ? (doneToday ? 'Done for today' : 'I recited it today') : 'I finished one recitation'}
-        </button>
-        <button type="button" className="hc-btn" onClick={undo} disabled={s.count === 0}>
-          Undo
-        </button>
-        <button type="button" className="hc-btn" onClick={reset}>
-          New sankalp
-        </button>
+      <div className="hc-counter-mala">
+        <Mala
+          beads={beads}
+          locale={locale}
+          page={page}
+          mode="anchor"
+          currentId={null}
+          outer={picking ? 0 : shown}
+          outerGoal={!picking && target <= 108 ? target : null}
+          label="Mala of 43 beads, one for each line of the text below"
+          caption="The outer ring gains a bead for each full recitation. The inner beads jump to a line of the text below."
+        >
+          <span className="hc-mala-big" aria-hidden="true">
+            {picking ? 108 : s.count}
+          </span>
+          <span className="hc-mala-sub" aria-hidden="true">
+            {picking ? 'beads on the outer ring' : isVow ? 'of 40 days' : `of ${target}`}
+          </span>
+        </Mala>
       </div>
+
+      {picking ? (
+        <div className="hc-counter-panel">
+          <h2 className="hc-h2">Choose your sankalp</h2>
+          <ul className="hc-goals">
+            {GOALS.map((g) => (
+              <li key={String(g.goal)}>
+                <button type="button" className="hc-goal" onClick={() => setGoal(g.goal)} disabled={!ready}>
+                  <strong>{g.title}</strong>
+                  <span>{g.sub}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+          <p className="hc-note">Your count stays on this device. Nothing is sent anywhere.</p>
+        </div>
+      ) : (
+        <div className="hc-counter-panel">
+          <p className="hc-status" role="status" aria-live="polite">
+            {msg || (isVow ? `${s.count} of 40 days kept.` : `${s.count} of ${target} recitations.`)}
+          </p>
+          <div className="hc-counter-acts">
+            <button type="button" className="hc-btn hc-btn-primary" onClick={count} disabled={doneToday || (s.reached && isVow)}>
+              {isVow ? (doneToday ? 'Done for today' : 'I recited it today') : 'I finished one recitation'}
+            </button>
+            <button type="button" className="hc-btn" onClick={undo} disabled={s.count === 0}>
+              Undo
+            </button>
+            <button type="button" className="hc-btn" onClick={reset}>
+              New sankalp
+            </button>
+          </div>
+          <p className="hc-note">Your count stays on this device. Nothing is sent anywhere.</p>
+        </div>
+      )}
     </div>
   )
 }

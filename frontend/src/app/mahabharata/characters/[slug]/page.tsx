@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Shell from '@/components/funnels/mahabharata/Shell'
+import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
 import LineCard from '@/components/funnels/mahabharata/LineCard'
 import GitaLink from '@/components/funnels/mahabharata/GitaLink'
 import ChoiceCard from '@/components/funnels/mahabharata/ChoiceCard'
@@ -8,7 +8,7 @@ import Faq from '@/components/funnels/mahabharata/Faq'
 import NextBlock from '@/components/funnels/mahabharata/NextBlock'
 import { CHARACTERS, characterBySlug } from '@/lib/funnels/mahabharata/characters'
 import { person, relationsOf } from '@/lib/funnels/mahabharata/family'
-import { line } from '@/lib/funnels/mahabharata/lines'
+import { heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
 import { PATHS, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 
 type Params = { slug: string }
@@ -56,18 +56,36 @@ export default function Page({ params }: { params: Params }) {
   )
   const others = CHARACTERS.filter((x) => x.slug !== c.slug)
   return (
-    <Shell page={page} crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: c.name }]} jsonLd={ld}>
-      <header className="mb-head">
-        <p className="mb-kicker">{p.role}</p>
-        <h1>
-          {c.h1} <span lang="hi">{p.hi}</span>
-        </h1>
-        <p id="quick-answer">{c.quickAnswer}</p>
+    <Shell
+      page={page}
+      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: c.name }]}
+      jsonLd={ld}
+      hero={{
+        eyebrow: 'People of the Mahabharata',
+        h1: (
+          <>
+            {c.h1} <span lang="hi">{p.hi}</span>
+          </>
+        ),
+        sub: p.role,
+        line: heroLineOf(c.heroLineId),
+        facts: [`${c.beats.length} turns in the story`, `${c.lineIds.length} lines in Sanskrit`, `On Day 1: ${p.side === 'pandava' ? 'Pandava side' : p.side === 'kaurava' ? 'Kaurava side' : 'not fighting'}`],
+        cta: (
+          <a href="#choice" className="btn-read-gita btn-read-gita-primary" data-mp-location="char_hero_choice">
+            Read {c.name}&apos;s choice
+          </a>
+        ),
+      }}
+    >
+      <Band className="mb-intro">
+        <p id="quick-answer" className="tp-intro rv">
+          {c.quickAnswer}
+        </p>
         <ChoiceCard person={c.slug} moment={c.choice.moment} page={page}>
           <LineCard line={line(c.choice.lineId)} page={page} path={path} />
           <p className="mb-choice-plain">{c.choice.plain}</p>
         </ChoiceCard>
-        <dl className="mb-lineage" aria-label={`${c.name}'s family`}>
+        <dl className="mb-lineage rv" aria-label={`${c.name}'s family`}>
           {rel.parents.length > 0 && (
             <div>
               <dt>Parents</dt>
@@ -98,14 +116,13 @@ export default function Page({ params }: { params: Params }) {
             </dd>
           </div>
         </dl>
-        {p.note && <p className="mb-note">{p.note}</p>}
-      </header>
+        {p.note && <p className="mb-note rv">{p.note}</p>}
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="arc-h" data-mp-section="arc">
-        <h2 id="arc-h">{c.name}&apos;s story, in {c.beats.length} turns</h2>
-        <ol className="mb-arc">
+      <Band alt mp="arc" h={<>{c.name}&apos;s story, in {c.beats.length} turns</>} hId="arc-h">
+        <ol className="mb-arc" data-stagger="60">
           {c.beats.map((b) => (
-            <li key={b.title}>
+            <li key={b.title} className="rv">
               <strong>{b.title}</strong>
               <p>
                 {b.text} {b.ref && <span className="mb-ref">{b.ref}</span>}
@@ -113,54 +130,48 @@ export default function Page({ params }: { params: Params }) {
             </li>
           ))}
         </ol>
-      </section>
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="lines-h" data-mp-section="lines">
-        <h2 id="lines-h">In {c.name}&apos;s words, and to {c.name}</h2>
+      <Band mp="lines" h={<>In {c.name}&apos;s words, and to {c.name}</>} hId="lines-h">
         {c.lineIds.map((id) => (
           <LineCard key={id} line={line(id)} page={page} path={path} />
         ))}
-      </section>
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="gita-h" data-mp-section="gita_bridge">
-        <h2 id="gita-h">Where the Gita meets {c.name}</h2>
-        <ul className="mb-bridge">
+      <Band alt mp="gita_bridge" h={<>Where the Gita meets {c.name}</>} hId="gita-h">
+        <ul className="mb-bridge" data-stagger="60">
           {c.gita.map((g) => (
-            <li key={g.label}>
+            <li key={g.label} className="rv">
               <GitaLink href={`/gita/chapter/${g.c}/verse/${g.v}`} from={`char_${c.slug}`} toRef={`${g.c}.${g.v}`} page={page} locale="en">
                 {g.label}
               </GitaLink>
               <p>{g.why}</p>
             </li>
           ))}
-          <li>
+          <li className="rv">
             <GitaLink href={PATHS.gita} from={`char_${c.slug}`} toRef="where-is-the-gita" page={page} locale="en">
               Where the Gita sits in the Mahabharata
             </GitaLink>
             <p>Book six, between the two armies, told by Sanjaya after Bhishma falls.</p>
           </li>
         </ul>
-      </section>
+      </Band>
 
       <Faq items={c.faq} heading={`Questions about ${c.name}`} />
-      <NextBlock page={page} />
+      <NextBlock page={page} alt />
 
-      <section className="mb-sec" aria-labelledby="more-h">
-        <h2 id="more-h">More people from the epic</h2>
-        <ul className="mb-links">
+      <Band mp="more_people" h="More people from the epic" hId="more-h" wide>
+        <div className="mb-tiles" data-stagger="60">
           {others.map((o) => (
-            <li key={o.slug}>
-              <a href={PATHS.character(o.slug)}>
-                <strong>{o.name}</strong>
-                <span>{o.choice.moment}</span>
-              </a>
-            </li>
+            <a key={o.slug} href={PATHS.character(o.slug)} className="mb-tile mb-person-tile rv">
+              <strong>{o.name}</strong>
+              <span>{o.choice.moment}</span>
+            </a>
           ))}
-        </ul>
-      </section>
+        </div>
+      </Band>
 
-      <section className="mb-sec mb-method" aria-labelledby="method-h">
-        <h2 id="method-h">Sources and method</h2>
+      <Band className="mb-method" alt h="Sources and method" hId="method-h">
         <p>
           Lines come from the Sanskrit we hold for books 3, 5, 12, 13 and 14, a southern-recension text whose numbering runs close to the
           Kumbhakonam edition, so verse numbers can differ from the Pune critical edition. Events from books we have yet to add in Sanskrit
@@ -168,7 +179,7 @@ export default function Page({ params }: { params: Params }) {
           public-domain translation consulted.
         </p>
         <p>Wisdom translation, edited by Ankur Shukla.</p>
-      </section>
+      </Band>
     </Shell>
   )
 }

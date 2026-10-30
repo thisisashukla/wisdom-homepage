@@ -1,13 +1,4 @@
-import { Archivo, Tiro_Devanagari_Hindi, Tiro_Devanagari_Sanskrit } from 'next/font/google'
-
-/** Archivo (variable width) for the Vivekananda hub's display type only: set condensed and bold. */
-export const archivo = Archivo({
-  subsets: ['latin'],
-  axes: ['wdth'],
-  display: 'swap',
-  variable: '--fx-archivo',
-  preload: false,
-})
+import { Tiro_Devanagari_Hindi, Tiro_Devanagari_Sanskrit } from 'next/font/google'
 
 /** Tiro Devanagari Hindi for Kabir's dohe (Hindi, Braj, Awadhi). */
 export const tiroHi = Tiro_Devanagari_Hindi({

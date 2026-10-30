@@ -36,6 +36,8 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
   const [army, setArmy] = useState(false)
   const [paths, setPaths] = useState<{ d: string; k: Rel }[]>([])
   const [motion, setMotion] = useState(false)
+  const [panelSeen, setPanelSeen] = useState(true)
+  const [treeSeen, setTreeSeen] = useState(false)
   const treeRef = useRef<HTMLDivElement>(null)
   const nodeRefs = useRef(new Map<string, HTMLButtonElement>())
   const panelRef = useRef<HTMLDivElement>(null)
@@ -130,6 +132,20 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
   }, [paths])
 
   useEffect(() => {
+    const el = panelRef.current
+    if (!el || typeof IntersectionObserver === 'undefined') return
+    const io = new IntersectionObserver(([e]) => setPanelSeen(e.isIntersecting), { threshold: 0.15 })
+    io.observe(el)
+    const tree = treeRef.current
+    const io2 = new IntersectionObserver(([e]) => setTreeSeen(e.isIntersecting), { threshold: 0 })
+    if (tree) io2.observe(tree)
+    return () => {
+      io.disconnect()
+      io2.disconnect()
+    }
+  }, [])
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setSel(null)
     }
@@ -152,82 +168,98 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
       </button>
     ))
 
+  const REL_LABEL: Record<Rel, string> = { self: '', parent: 'parent', spouse: 'married', child: 'child', kin: 'kin' }
+
   return (
     <div className="mb-tree-wrap" data-army={army ? '' : undefined}>
-      <div className="mb-tree-bar">
-        <button type="button" className="mb-army" aria-pressed={army} onClick={toggleArmy}>
-          <span className="mb-army-dot" aria-hidden="true" />
-          Day 1: who stood where
-        </button>
-        <p className="mb-tree-hint">Tap a name to pull its thread.</p>
-      </div>
-      <ul className="mb-legend" aria-hidden={!army}>
-        <li>
-          <i className="lg-p" /> Pandava side
-        </li>
-        <li>
-          <i className="lg-k" /> Kaurava side
-        </li>
-        <li>
-          <i className="lg-n" /> Not fighting
-        </li>
-      </ul>
-      <div className="mb-tree" ref={treeRef} data-sel={sel ? '' : undefined} data-army={army ? '' : undefined}>
-        <svg className="mb-threads" aria-hidden="true" data-motion={motion ? '' : undefined}>
-          {paths.map((x, i) => (
-            <path key={`${sel}-${i}`} d={x.d} data-k={x.k} className="draw" />
-          ))}
-        </svg>
-        {rows.map((row) => (
-          <div className="mb-row" key={row.label} role="group" aria-label={row.label}>
-            <p className="mb-row-label">{row.label}</p>
-            <div className="mb-row-groups">
-              {row.groups.map((g, gi) => (
-                <div className="mb-group" key={gi}>
-                  {g.label && <p className="mb-group-label">{g.label}</p>}
-                  {g.ids.map((id) => {
-                    const person = byId.get(id)
-                    if (!person) return null
-                    const r = relOf(id)
-                    return (
-                      <button
-                        key={id}
-                        type="button"
-                        className="mb-node"
-                        ref={(el) => {
-                          if (el) nodeRefs.current.set(id, el)
-                          else nodeRefs.current.delete(id)
-                        }}
-                        data-rel={r}
-                        data-side={person.side}
-                        data-page={person.page ? '' : undefined}
-                        aria-pressed={sel === id}
-                        aria-controls="mb-person"
-                        onClick={() => pick(id, 'tree')}
-                      >
-                        {person.name}
-                        {army && <small>{SIDE[person.side]}</small>}
-                        {!army && r && r !== 'self' && <small>{r}</small>}
-                      </button>
-                    )
-                  })}
-                </div>
-              ))}
+      <div className="mb-tree-main">
+        <div className="mb-tree-bar">
+          <button type="button" className="mb-army" aria-pressed={army} onClick={toggleArmy}>
+            <span className="mb-army-dot" aria-hidden="true" />
+            Day 1: who stood where
+          </button>
+          <ul className="mb-legend" aria-hidden={!army}>
+            <li>
+              <i className="lg-p" /> Pandava side
+            </li>
+            <li>
+              <i className="lg-k" /> Kaurava side
+            </li>
+            <li>
+              <i className="lg-n" /> Not fighting
+            </li>
+          </ul>
+        </div>
+        <div className="mb-tree" ref={treeRef} data-sel={sel ? '' : undefined} data-army={army ? '' : undefined}>
+          <svg className="mb-threads" aria-hidden="true" data-motion={motion ? '' : undefined}>
+            {paths.map((x, i) => (
+              <path key={`${sel}-${i}`} d={x.d} data-k={x.k} className="draw" />
+            ))}
+          </svg>
+          {rows.map((row, ri) => (
+            <div className="mb-row" key={row.label} role="group" aria-label={row.label} style={{ ['--r' as string]: ri }}>
+              <p className="mb-row-label">{row.label}</p>
+              <div className="mb-row-groups">
+                {row.groups.map((g, gi) => (
+                  <div className="mb-group" key={gi}>
+                    {g.label && <p className="mb-group-label">{g.label}</p>}
+                    {g.ids.map((id) => {
+                      const person = byId.get(id)
+                      if (!person) return null
+                      const r = relOf(id)
+                      return (
+                        <button
+                          key={id}
+                          type="button"
+                          className="mb-node"
+                          ref={(el) => {
+                            if (el) nodeRefs.current.set(id, el)
+                            else nodeRefs.current.delete(id)
+                          }}
+                          data-rel={r}
+                          data-side={person.side}
+                          data-page={person.page ? '' : undefined}
+                          aria-pressed={sel === id}
+                          aria-controls="mb-person"
+                          onClick={() => pick(id, 'tree')}
+                        >
+                          <span className="mb-node-name">{person.name}</span>
+                          {army && <small>{SIDE[person.side]}</small>}
+                          {!army && r && r !== 'self' && <small>{REL_LABEL[r]}</small>}
+                        </button>
+                      )
+                    })}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
+      {p && !panelSeen && treeSeen && (
+        <button
+          type="button"
+          className="mb-tree-pill"
+          onClick={() => panelRef.current?.scrollIntoView({ behavior: motion ? 'smooth' : 'auto', block: 'start' })}
+        >
+          <span>
+            See <b>{p.name}</b>&apos;s thread
+          </span>
+          <span aria-hidden="true">↓</span>
+        </button>
+      )}
 
       <div className="mb-person-slot" id="mb-person" ref={panelRef} aria-live="polite">
         {p && rel ? (
-          <div className="mb-person">
+          <div className="mb-person" key={p.id}>
+            {army && <p className="mb-person-k">On Day 1: {p.sideNote ?? SIDE[p.side]}</p>}
             <h3>
               {p.name}
               <span lang="hi">{p.hi}</span>
             </h3>
-            <p>{p.role}</p>
-            {p.note && <p className="mb-note">{p.note}</p>}
-            {army && <p className="mb-note">On Day 1: {p.sideNote ?? SIDE[p.side]}</p>}
+            <p className="mb-person-role">{p.role}</p>
+            {p.note && <p className="mb-person-note">{p.note}</p>}
             <div className="mb-person-rel">
               {rel.parents.length > 0 && (
                 <div>
@@ -255,26 +287,35 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
               )}
             </div>
             {ln && (
-              <div className="mb-line">
-                <p className="mb-deva" lang="sa">
+              <div className="mb-person-line">
+                <p className="qc-sa mb-deva" lang="sa">
                   {ln.deva.split('\n').map((r, i) => (
-                    <span key={i}>{r}</span>
+                    <span key={i} className="qc-pada">
+                      {r}
+                    </span>
                   ))}
                 </p>
-                <p className="mb-iast" lang="sa-Latn">
+                <p className="qc-iast mb-iast" lang="sa-Latn">
                   {ln.iast.split('\n').map((r, i) => (
-                    <span key={i}>{r}</span>
+                    <span key={i} className="qc-pada">
+                      {r}
+                    </span>
                   ))}
                 </p>
-                <p className="mb-meaning">{ln.en}</p>
-                <p className="mb-src">
-                  <span className="mb-ref">{ln.ref}</span>
-                  <span className="mb-speaker">{ln.speaker}</span>
+                <p className="qc-meaning">{ln.en}</p>
+                <p className="qc-source">
+                  <span className="qc-chip">
+                    {ln.speaker} · {ln.ref}
+                  </span>
                 </p>
               </div>
             )}
             <p className="mb-person-links">
-              {p.page && <a href={`/mahabharata/characters/${p.page}`}>Read {p.name}&apos;s story</a>}
+              {p.page && (
+                <a href={`/mahabharata/characters/${p.page}`} className="mb-person-page">
+                  Read {p.name}&apos;s story
+                </a>
+              )}
               {p.gita && (
                 <GitaLink
                   href={`/gita/chapter/${p.gita.c}/verse/${p.gita.v}`}
@@ -289,9 +330,12 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
             </p>
           </div>
         ) : (
-          <p className="mb-person-empty">
-            Names with a small bronze dot have their own page. Try Karna, then Kunti: the thread between them is the secret of the Udyoga Parva.
-          </p>
+          <div className="mb-person mb-person-empty">
+            <p className="mb-person-k">Tap a name to pull its thread</p>
+            <p>
+              Names with a small gold dot have their own page. Try Karna, then Kunti: the thread between them is the secret of the Udyoga Parva.
+            </p>
+          </div>
         )}
       </div>
     </div>

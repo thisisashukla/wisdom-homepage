@@ -4,6 +4,7 @@ import Mala from '@/components/funnels/hanuman-chalisa/Mala'
 import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { MeaningTracker, PrintButton } from '@/components/funnels/hanuman-chalisa/Trackers'
 import { Faq, FullText, HcNextStep, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
+import HcHero, { HeroLine } from '@/components/funnels/hanuman-chalisa/Hero'
 import {
   abs,
   AUTHOR_LD,
@@ -96,66 +97,86 @@ export default function HanumanChalisaHub() {
     { name: 'Hanuman Chalisa', path: HUB_PATH },
   ])
 
+  const d1 = units[0]
+
   return (
     <main className="hc-main">
       <BlogTracker pageName={PAGE} />
       <MeaningTracker page={PAGE} locale="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([workLd, listLd, crumbs, faqLd(FAQ)]) }} />
 
-      <nav className="hc-crumbs hc-noprint" aria-label="Breadcrumb">
-        <a href="/">Wisdom</a> / <span>Hanuman Chalisa</span> /{' '}
-        <a href="/hi/hanuman-chalisa" hrefLang="hi" lang="hi">
-          हिंदी में
-        </a>
-      </nav>
-
-      <div className="hc-intro">
-        <h1 className="hc-h1">Hanuman Chalisa in English, line by line</h1>
-        <p className="hc-quick" id="quick-answer">
-          The Hanuman Chalisa is a 43-line Awadhi hymn to Hanuman by Goswami Tulsidas: two opening dohas, forty chaupais and a closing
-          doha. Below is the full text in the Gita Press reading, in Devanagari or English letters, with the meaning of every line one
-          tap away. Each line also has its own page, word by word.
-        </p>
-
-        <div className="hc-controls hc-noprint">
-          <ScriptToggle locale="en" page={PAGE} />
-          <PrintButton label="Print the text" page={PAGE} locale="en" />
-        </div>
-        <p className="hc-note">
-          The English letters follow the way the Chalisa is sung: the short a at the end of a word is dropped, so जय reads jay and ज्ञान
-          reads jñān.
-        </p>
-        <ul className="hc-links hc-noprint">
-          <li>
-            <a className="hc-btn" href={LEARN_PATH} data-mp-location="hub_learn">
+      <HcHero
+        crumbs={
+          <nav className="hc-crumbs hc-noprint" aria-label="Breadcrumb">
+            <a href="/">Wisdom</a> / <span>Hanuman Chalisa</span> /{' '}
+            <a href="/hi/hanuman-chalisa" hrefLang="hi" lang="hi">
+              हिंदी में
+            </a>
+          </nav>
+        }
+        eyebrow="Tulsidas, in Awadhi"
+        title="Hanuman Chalisa in English, line by line"
+        sub={
+          <>
+            The Hanuman Chalisa is a 43-line Awadhi hymn to Hanuman by Goswami Tulsidas: two opening dohas, forty chaupais and a closing
+            doha. Below is the full text in the Gita Press reading, in Devanagari or English letters, with the meaning of every line one
+            tap away. Each line also has its own page, word by word.
+          </>
+        }
+        facts={['43 lines', 'Gita Press reading', 'Meaning for every line']}
+        actions={
+          <a href="#hc-text" className="btn-read-gita btn-read-gita-primary" data-mp-location="hub_hero_read">
+            Read it line by line
+          </a>
+        }
+        links={
+          <>
+            <a href={LEARN_PATH} data-mp-location="hub_learn">
               Learn it by heart, 4 lines a day
             </a>
-          </li>
-          <li>
-            <a className="hc-btn" href={COUNTER_PATH} data-mp-location="hub_counter">
+            <a href={COUNTER_PATH} data-mp-location="hub_counter">
               Count 11, 21 or 108
             </a>
-          </li>
-        </ul>
-      </div>
+          </>
+        }
+        visual={<HeroLine awadhi={d1.awadhi} iast={d1.iast} caption="Doha 1, the opening line" />}
+      />
 
-      <div className="hc-hub">
-        <aside className="hc-hub-aside" aria-label="Mala: one bead for each line">
-          <Mala beads={beadList} locale="en" page={PAGE} mode="anchor" currentId="hc.d1" label="Mala of 43 beads, one for each line" caption="One bead for each of the 43 lines. Tap a bead to go to its line.">
-            <span className="hc-mala-name">Hanuman Chalisa</span>
-            <span className="hc-mala-sub">2 dohas, 40 chaupais, 1 doha</span>
-          </Mala>
-        </aside>
-
-        <div>
-          <section className="hc-section" aria-labelledby="hc-text-h">
-            <h2 className="hc-h2" id="hc-text-h">
+      <section className="section hc-band" id="hc-text" aria-labelledby="hc-text-h">
+        <div className="wrap">
+          <div className="sec-head hc-sec-head rv">
+            <p className="eyebrow">43 lines</p>
+            <h2 className="heading" id="hc-text-h">
               The full text
             </h2>
-            <FullText units={units} locale="en" />
-          </section>
+            <div className="hc-controls hc-noprint">
+              <ScriptToggle locale="en" page={PAGE} />
+              <PrintButton label="Print the text" page={PAGE} locale="en" />
+            </div>
+            <p className="hc-note">
+              The English letters follow the way the Chalisa is sung: the short a at the end of a word is dropped, so जय reads jay and ज्ञान
+              reads jñān.
+            </p>
+          </div>
 
-          <section className="hc-section hc-noprint" aria-labelledby="hc-gita-h">
+          <div className="hc-read">
+            <aside className="hc-read-aside" aria-label="Mala: one bead for each line">
+              <Mala beads={beadList} locale="en" page={PAGE} mode="anchor" currentId="hc.d1" label="Mala of 43 beads, one for each line" caption="One bead for each of the 43 lines. Tap a bead to go to its line.">
+                <span className="hc-mala-name">Hanuman Chalisa</span>
+                <span className="hc-mala-sub">2 dohas, 40 chaupais, 1 doha</span>
+              </Mala>
+            </aside>
+            <div className="rv">
+              <FullText units={units} locale="en" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt hc-band hc-noprint" aria-labelledby="hc-gita-h">
+        <div className="wrap hc-col">
+          <div className="hc-bridge rv">
+            <p className="eyebrow">The thread to the Gita</p>
             <h2 className="hc-h2" id="hc-gita-h">
               Hanuman in the Gita
             </h2>
@@ -168,31 +189,36 @@ export default function HanumanChalisaHub() {
                 </a>
               </p>
             </div>
-          </section>
+          </div>
 
-          <section className="hc-section hc-noprint" aria-labelledby="hc-more-h">
-            <h2 className="hc-h2" id="hc-more-h">
-              Reciting it
-            </h2>
-            <ul className="hc-links">
-              <li>
-                <a className="hc-btn" href={HOW_MANY_PATH} data-mp-location="hub_how_many">
-                  How many times to recite it
-                </a>
-              </li>
-              <li>
-                <a className="hc-btn" href={JAYANTI_PATH} data-mp-location="hub_jayanti">
-                  Hanuman Jayanti, 20 April 2027
-                </a>
-              </li>
-            </ul>
-          </section>
+          <h2 className="hc-h2 rv" id="hc-more-h" style={{ marginTop: 56 }}>
+            Reciting it
+          </h2>
+          <ul className="hc-tiles" aria-labelledby="hc-more-h" data-stagger="60">
+            <li className="rv">
+              <a className="hc-tile" href={HOW_MANY_PATH} data-mp-location="hub_how_many">
+                <strong>How many times to recite it</strong>
+                <span>Once, 11, 21, 108, or a 40-day vow</span>
+              </a>
+            </li>
+            <li className="rv">
+              <a className="hc-tile" href={JAYANTI_PATH} data-mp-location="hub_jayanti">
+                <strong>Hanuman Jayanti, 20 April 2027</strong>
+                <span>A one-week family plan</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <Faq items={FAQ} locale="en" heading="Questions people ask" />
+      <Faq items={FAQ} locale="en" heading="Questions people ask" />
+
+      <section className="section section-alt hc-band">
+        <div className="wrap hc-col">
           <HcNextStep locale="en" pageName={PAGE} pageKey="hc-hub" placement="hub_end" />
           <Sources locale="en" />
         </div>
-      </div>
+      </section>
     </main>
   )
 }

@@ -125,7 +125,7 @@ export default function ToolPage({ locale }: { locale: RsLocale }) {
         <section className="rs-sec" id="faq" data-mp-section="rs_faq">
           <h2 className="rs-h2">{c.faqHeading}</h2>
           <div className="rs-faq">
-            <details className="rs-more" id="how" data-mp-section="rs_how">
+            <details className="rs-more" id="how" data-mp-section="rs_how" data-mp-disclosure="how_to_ask">
               <summary>{c.howHeading}</summary>
               <div>
                 <ol className="rs-steps" lang={locale}>
@@ -136,7 +136,7 @@ export default function ToolPage({ locale }: { locale: RsLocale }) {
                 <p className="rs-rules">{c.howRules}</p>
               </div>
             </details>
-            <details className="rs-more" id="grid" data-mp-section="rs_grid">
+            <details className="rs-more" id="grid" data-mp-section="rs_grid" data-mp-disclosure="full_grid">
               <summary>{c.tableHeading}</summary>
               <div>
                 <p className="rs-p">{c.tableNote}</p>
@@ -144,7 +144,7 @@ export default function ToolPage({ locale }: { locale: RsLocale }) {
               </div>
             </details>
             {c.faq.map((f, i) => (
-              <details key={i} className="rs-more">
+              <details key={i} className="rs-more" data-track="faq" data-q={f.q}>
                 <summary>{f.q}</summary>
                 <p>{f.a}</p>
               </details>

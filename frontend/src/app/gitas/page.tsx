@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import FxFrame from '@/components/funnels/other-gitas/FxFrame'
 import NextBand from '@/components/funnels/other-gitas/NextBand'
+import FxHero from '@/components/funnels/other-gitas/FxHero'
+import FxSources from '@/components/funnels/other-gitas/FxSources'
 import { abs } from '@/lib/funnels/other-gitas/data'
 import { DISCLOSURE } from '@/lib/funnels/other-gitas/content'
 import { GITAS, GITAS_QUICK, KIND_LABEL } from '@/lib/funnels/other-gitas/gitas'
 import { articleLd, breadcrumbLd, ldScript, pageMeta } from '@/lib/funnels/other-gitas/seo'
+
+/** The hero's visual: the names of the Gitas in Devanagari (decorative). */
+const NAMES = ['श्रीमद्भगवद्गीता', 'अष्टावक्रगीता', 'अवधूतगीता', 'उद्धवगीता', 'अनुगीता', 'गुरुगीता', 'ऋभुगीता', 'देवीगीता', 'गणेशगीता', 'रामगीता']
 
 const PAGE = 'gitas-hub'
 const PATH = '/gitas'
@@ -49,73 +55,107 @@ export default function GitasHubPage() {
       {ld.map((d, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
       ))}
-      <main className="fx-main">
-        <h1 className="fx-h1">Gitas beyond the Bhagavad Gita</h1>
-        <p id="quick-answer" className="fx-quick">
-          {GITAS_QUICK}
-        </p>
-        <hr className="fx-rule" aria-hidden="true" />
-        <p className="fx-body">
-          Below are twenty of them, with where each one sits, who speaks and what it is about. We say plainly when a text
-          is a later anthology or a modern publication, since many are sold or shared as if they came from a Purana.
-        </p>
+      <main>
+        <FxHero
+          crumbs={[{ label: 'Home', href: '/' }, { label: 'Gitas beyond the Bhagavad Gita' }]}
+          eyebrow="Gita means song"
+          title="Gitas beyond the Bhagavad Gita"
+          facts={[`The Bhagavad Gita and ${GITAS.length - 1} more`, 'Source and speakers for each', 'Later and modern works marked']}
+          cta={{ href: '#list', label: 'See all of them', location: 'gitas_hero_list' }}
+          alt={{ href: '/ashtavakra-gita', label: 'Read the Ashtavakra Gita', location: 'gitas_hero_ashtavakra' }}
+          art={
+            <ol className="og-names" lang="sa" aria-hidden="true">
+              {NAMES.map((n, i) => (
+                <li key={n} style={{ '--o': String(Math.max(0.28, 1 - i * 0.09)) } as CSSProperties}>
+                  {n}
+                </li>
+              ))}
+            </ol>
+          }
+        />
 
-        <ul className="fx-gitas">
-          {GITAS.map((g) => (
-            <li key={g.slug} id={g.slug}>
-              <span className="fx-kind" data-kind={g.kind}>
-                {KIND_LABEL[g.kind]}
-              </span>
-              <h2 className="fx-h3" style={{ margin: '0 0 6px', fontFamily: 'var(--fx-verse)', fontWeight: 500, fontSize: '1.4rem' }}>
-                {g.href ? (
-                  <a href={g.href} className={g.slug === 'bhagavad' ? 'fx-gita-link' : undefined}>
-                    {g.name}
-                  </a>
-                ) : (
-                  g.name
-                )}
-              </h2>
-              <p className="fx-body" style={{ margin: 0 }}>
-                {g.gist}
+        <section className="og-intro">
+          <div className="wrap og-col">
+            <div className="og-prose">
+              <p id="quick-answer" className="og-lead">
+                {GITAS_QUICK}
               </p>
-              <dl>
-                <dt>Source</dt>
-                <dd>{g.source}</dd>
-                <dt>Speakers</dt>
-                <dd>{g.speakers}</dd>
-                {g.size && (
-                  <>
-                    <dt>Length</dt>
-                    <dd>{g.size}</dd>
-                  </>
-                )}
-              </dl>
-            </li>
-          ))}
-        </ul>
+              <p>
+                Below are twenty of them, with where each one sits, who speaks and what it is about. We say plainly when a text
+                is a later anthology or a modern publication, since many are sold or shared as if they came from a Purana.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <h2 className="fx-h2">Where to begin</h2>
-        <p className="fx-body">
-          Most readers begin with the{' '}
-          <a className="fx-gita-link" href="/gita">
-            Bhagavad Gita
-          </a>
-          , then go to the Uddhava or Anu Gita for more of Krishna, or to the <a href="/ashtavakra-gita">Ashtavakra Gita</a>{' '}
-          for the shortest statement of Advaita. Our <a href="/ashtavakra-gita-vs-bhagavad-gita">side-by-side comparison</a>{' '}
-          can help you choose.
-        </p>
+        <section className="section" id="list" aria-label="The Gitas">
+          <div className="wrap">
+            <ul className="og-gitas" data-stagger="40">
+              {GITAS.map((g) => (
+                <li
+                  key={g.slug}
+                  id={g.slug}
+                  data-kind={g.kind}
+                  className={`og-gita rv${g.slug === 'bhagavad' ? ' is-feature' : g.href ? ' is-link' : ''}`}
+                >
+                  <span className="og-gita-kind">{KIND_LABEL[g.kind]}</span>
+                  <h2 className="og-gita-h">
+                    {g.href ? (
+                      <a href={g.href} className={g.slug === 'bhagavad' ? 'fx-gita-link' : undefined}>
+                        {g.name}
+                      </a>
+                    ) : (
+                      g.name
+                    )}
+                  </h2>
+                  <p className="og-gita-gist">{g.gist}</p>
+                  <dl>
+                    <dt>Source</dt>
+                    <dd>{g.source}</dd>
+                    <dt>Speakers</dt>
+                    <dd>{g.speakers}</dd>
+                    {g.size && (
+                      <>
+                        <dt>Length</dt>
+                        <dd>{g.size}</dd>
+                      </>
+                    )}
+                  </dl>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className="section section-alt">
+          <div className="wrap og-col">
+            <div className="og-head rv">
+              <h2 className="heading">Where to begin</h2>
+            </div>
+            <div className="og-prose rv">
+              <p>
+                Most readers begin with the{' '}
+                <a className="fx-gita-link" href="/gita">
+                  Bhagavad Gita
+                </a>
+                , then go to the Uddhava or Anu Gita for more of Krishna, or to the <a href="/ashtavakra-gita">Ashtavakra Gita</a>{' '}
+                for the shortest statement of Advaita. Our <a href="/ashtavakra-gita-vs-bhagavad-gita">side-by-side comparison</a>{' '}
+                can help you choose.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <NextBand pageKey={PAGE} />
 
-        <section className="fx-sources">
-          <h2 className="fx-h3">Sources and method</h2>
+        <FxSources>
           <p>
             Sources, speakers and chapter ranges were checked on 30 October 2026 against the list of Gitas at
             sanskritdocuments.org, Wikipedia&apos;s articles on each text, hindupedia and wisdomlib, and the Mahabharata
             critical edition for the Hamsa Gita. Sizes vary between editions. Where sources disagree, we name both.
           </p>
           <p>{DISCLOSURE}</p>
-        </section>
+        </FxSources>
       </main>
     </FxFrame>
   )

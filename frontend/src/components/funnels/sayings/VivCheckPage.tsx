@@ -8,9 +8,7 @@ import VivCard from './VivCard'
 import FxNextStep from './FxNextStep'
 import FactCheckTracker from './FactCheckTracker'
 import { vivShareText } from './VivHub'
-import { Crumbs, Faq, JsonLd, Method, Related } from './parts'
-import { archivo } from './fonts'
-import './sayings.css'
+import { DailyBand, Faq, Head, JsonLd, Method, Related, Sec, Shell } from './parts'
 
 /** Real lines to read instead, for shared lines that are not his. */
 const INSTEAD: Record<string, string[]> = {
@@ -55,7 +53,9 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
   const hub: VivLine | null = x.hubLine ? vivLine(x.hubLine) : null
   const instead = (INSTEAD[x.slug] ?? []).map((s) => vivLine(s)).filter((l): l is VivLine => Boolean(l))
   const theme = hub?.themes[0] ?? instead[0]?.themes[0] ?? 'fear-and-strength'
-  const more = vivLines().filter((l) => l.themes.includes(theme) && l.slug !== hub?.slug && !instead.some((i) => i.slug === l.slug)).slice(0, 2)
+  const more = vivLines()
+    .filter((l) => l.themes.includes(theme) && l.slug !== hub?.slug && !instead.some((i) => i.slug === l.slug))
+    .slice(0, 2)
   const r = x.real?.source
   const kindLine = r
     ? r.recordType === 'notes_by_disciple'
@@ -72,7 +72,10 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
   const faq = [
     {
       q: `Is "${short}" in the Complete Works of Swami Vivekananda?`,
-      a: x.verdict === 'not-found' ? `No. We searched volumes 1 to 8 with a fuzzy match and Wikisource across all nine volumes by phrase. Nothing comes close.` : `${answer} ${kindLine}`.trim(),
+      a:
+        x.verdict === 'not-found'
+          ? `No. We searched volumes 1 to 8 with a fuzzy match and Wikisource across all nine volumes by phrase. Nothing comes close.`
+          : `${answer} ${kindLine}`.trim(),
     },
     {
       q: 'How do you check a Vivekananda quote?',
@@ -86,69 +89,91 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
       { name: 'Did he say it?', path: `${VIV_PATH}#did-he-say` },
       { name: short, path },
     ]),
-    ldClaimReview({ claim: `Swami Vivekananda said: "${x.shared}"`, verdict: VERDICT_LABEL[x.verdict].en, rating: RATING[x.verdict], path, author: 'Swami Vivekananda' }),
-    ldArticle({ headline: h1, description: answer, path, locale: 'en', citation: vivEdition(), about: 'Swami Vivekananda', ...(hub?.card ? { image: cardOg(hub.id) } : {}) }),
+    ldClaimReview({
+      claim: `Swami Vivekananda said: "${x.shared}"`,
+      verdict: VERDICT_LABEL[x.verdict].en,
+      rating: RATING[x.verdict],
+      path,
+      author: 'Swami Vivekananda',
+    }),
+    ldArticle({
+      headline: h1,
+      description: answer,
+      path,
+      locale: 'en',
+      citation: vivEdition(),
+      about: 'Swami Vivekananda',
+      ...(hub?.card ? { image: cardOg(hub.id) } : {}),
+    }),
     ldFaq(faq),
-    ...(real ? [{ '@context': 'https://schema.org', ...ldQuotation({ text: real.line, author: 'Swami Vivekananda', path, locale: 'en', citation: `Complete Works of Swami Vivekananda, vol ${real.volume}, ${real.work}` }) }] : []),
+    ...(real
+      ? [
+          {
+            '@context': 'https://schema.org',
+            ...ldQuotation({
+              text: real.line,
+              author: 'Swami Vivekananda',
+              path,
+              locale: 'en',
+              citation: `Complete Works of Swami Vivekananda, vol ${real.volume}, ${real.work}`,
+            }),
+          },
+        ]
+      : []),
   ]
   return (
-    <div className={`fx-sayings ${archivo.variable}`} data-hub="vivekananda" lang="en">
+    <Shell hub="vivekananda" locale="en">
       <BlogTracker pageName={pageName} />
       <FactCheckTracker slug={x.slug} verdict={x.verdict} pageKey={pageKey} locale="en" />
       {ld.map((d, i) => (
         <JsonLd key={i} data={d} />
       ))}
-      <div className="fx-page">
-        <Crumbs items={[{ label: 'Home', href: '/' }, { label: 'Vivekananda quotes', href: VIV_PATH }, { label: 'Did he say it?', href: `${VIV_PATH}#did-he-say` }, { label: short }]} locale="en" />
-        <header className="fx-hero">
-          <h1 className="fx-h1">{h1}</h1>
-          <p className="fx-verdict-big" data-verdict={x.verdict}>
+      <Head
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Vivekananda quotes', href: VIV_PATH }, { label: 'Did he say it?', href: `${VIV_PATH}#did-he-say` }, { label: short }]}
+        locale="en"
+        h1={h1}
+      >
+        <p className="fx-verdict rv">
+          <span className="fx-stamp" data-verdict={x.verdict}>
             {VERDICT_LABEL[x.verdict].en}
-          </p>
-          <p id="quick-answer" className="fx-quick">
-            {[answer, kindLine, translated, x.note?.en].filter(Boolean).join(' ')}
-          </p>
-        </header>
+          </span>
+        </p>
+        <p id="quick-answer" className="fx-quick rv">
+          {[answer, kindLine, translated, x.note?.en].filter(Boolean).join(' ')}
+        </p>
+      </Head>
 
-        <section className="fx-sec" aria-labelledby="shared-h">
-          <h2 id="shared-h" className="fx-h2">
-            The version people share
-          </h2>
-          <p className="fx-shared">{x.verdict === 'not-found' ? <s>&ldquo;{x.shared}&rdquo;</s> : <>&ldquo;{x.shared}&rdquo;</>}</p>
-          <p className="fx-meta">{`Seen on: ${x.seenOn}.`}</p>
-        </section>
+      <div className="qp-sections">
+        <Sec hid="shared-h" heading="The version people share">
+          <p className="fx-shared rv">{x.verdict === 'not-found' ? <s>&ldquo;{x.shared}&rdquo;</s> : <>&ldquo;{x.shared}&rdquo;</>}</p>
+          <p className="fx-seen">{`Seen on: ${x.seenOn}.`}</p>
+        </Sec>
 
         {real && (
-          <section className="fx-sec" aria-labelledby="real-h">
-            <h2 id="real-h" className="fx-h2">
-              What he said
-            </h2>
-            <p className="fx-intro">Tap the source to read the whole paragraph.</p>
-            <VivCard
-              drawer={real}
-              cardId={hub?.card ? hub.id : undefined}
-              locale="en"
-              pageName={pageName}
-              pageKey={pageKey}
-              section="fact-check"
-              shareText={[real.line, '', `Swami Vivekananda, Complete Works vol ${real.volume}, ${real.work}`, `${abs(path)}?utm_source=copy&utm_medium=quote`].join('\n')}
-            />
+          <Sec hid="real-h" heading="What he said" intro="Tap the source to read the whole paragraph.">
+            <div className="qp-cards">
+              <VivCard
+                drawer={real}
+                cardId={hub?.card ? hub.id : undefined}
+                locale="en"
+                pageName={pageName}
+                pageKey={pageKey}
+                section="fact-check"
+                shareText={[real.line, '', `Swami Vivekananda, Complete Works vol ${real.volume}, ${real.work}`, `${abs(path)}?utm_source=copy&utm_medium=quote`].join('\n')}
+              />
+            </div>
             {x.also?.map((a) => (
-              <p key={a.text} className="fx-note-box">
-                <span className="fx-label">Also in his words</span>
-                <br />
+              <p key={a.text} className="fx-also">
+                <span>Also in his words</span>
                 &ldquo;{a.text}&rdquo; {`Complete Works vol ${a.source.volume}, ${a.source.work}.`}
               </p>
             ))}
-          </section>
+          </Sec>
         )}
 
         {(instead.length > 0 || more.length > 0) && (
-          <section className="fx-sec" aria-labelledby="instead-h">
-            <h2 id="instead-h" className="fx-h2">
-              {x.verdict === 'not-found' ? 'Lines he did say' : 'More in his words'}
-            </h2>
-            <div className="fx-list">
+          <Sec hid="instead-h" heading={x.verdict === 'not-found' ? 'Lines he did say' : 'More in his words'}>
+            <div className="qp-cards">
               {[...instead, ...more].slice(0, 3).map((l, i) => (
                 <VivCard
                   key={l.id}
@@ -163,32 +188,36 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
                 />
               ))}
             </div>
-          </section>
+          </Sec>
         )}
-
-        <section className="fx-next" aria-label="Keep one line with you">
-          <h2 className="fx-h2">Keep one line with you</h2>
-          <FxNextStep hub="vivekananda" locale="en" pageName={pageName} pageKey={pageKey} placement="end" />
-        </section>
-
-        <Faq items={faq} heading="Questions people ask" />
-        <Method heading="Sources and method">
-          <p>
-            Matched against The Complete Works of Swami Vivekananda, Mayavati Memorial Edition, vols 1 to 8 (9,239 paragraphs, Bengali translations checked separately), with Python difflib. In his words: 90 or more out of 100. Paraphrase: 70 to 90. Not in his works: under 70, and no hit in a phrase search of Wikisource across all volumes, including vol 9. This line scored {Math.round(x.score)}.
-          </p>
-        </Method>
-        <Related
-          heading="Read next"
-          links={[
-            { href: VIV_PATH, label: 'All 61 checked Vivekananda quotes' },
-            { href: vivThemePath(theme), label: VIV_THEME_COPY[theme].h1 },
-            ...vivChecks()
-              .filter((c) => c.slug !== x.slug && c.verdict !== 'in-his-words')
-              .slice(0, 3)
-              .map((c) => ({ href: vivCheckPath(c.slug), label: `Did he say "${checkShort(c.shared)}"?` })),
-          ]}
-        />
       </div>
-    </div>
+
+      <DailyBand heading="Keep one line with you">
+        <FxNextStep hub="vivekananda" locale="en" pageName={pageName} pageKey={pageKey} placement="end" />
+      </DailyBand>
+
+      <Faq items={faq} heading="Questions people ask" />
+      <Method heading="Sources and method">
+        <p>
+          Matched against The Complete Works of Swami Vivekananda, Mayavati Memorial Edition, vols 1 to 8 (9,239 paragraphs, Bengali translations checked separately), with Python
+          difflib. In his words: 90 or more out of 100. Paraphrase: 70 to 90. Not in his works: under 70, and no hit in a phrase search of Wikisource across all volumes, including
+          vol 9. This line scored {Math.round(x.score)}.
+        </p>
+      </Method>
+      <Related
+        heading="Read next"
+        links={[
+          { href: VIV_PATH, label: 'All 61 checked Vivekananda quotes' },
+          { href: vivThemePath(theme), label: VIV_THEME_COPY[theme].h1 },
+          ...vivChecks()
+            .filter((c) => c.slug !== x.slug && c.verdict !== 'in-his-words')
+            .slice(0, 3)
+            .map((c) => ({
+              href: vivCheckPath(c.slug),
+              label: `Did he say "${checkShort(c.shared)}"?`,
+            })),
+        ]}
+      />
+    </Shell>
   )
 }

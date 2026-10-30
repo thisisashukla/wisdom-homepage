@@ -10,6 +10,8 @@ import { useEffect, useState } from 'react'
 import { trackEvent } from '@/lib/mixpanel'
 import { cardImageUrl } from '@/lib/quotes-shared'
 import { ensureToast, showToast, writeClipboard } from '@/components/quotes/session'
+import { Icon } from '@/components/quotes/Icons'
+import '@/components/quotes/card.css'
 import { baseProps, SITE, type HcLocale } from '@/lib/funnels/hanuman-chalisa/shared'
 
 const T = {
@@ -63,20 +65,23 @@ export default function LineShare({
 
   return (
     <div className="hc-acts hc-noprint" role="group">
-      <button type="button" className="hc-act" onClick={onCopy} lang={locale}>
+      <button type="button" className="hc-act" data-done={tick ? '' : undefined} onClick={onCopy} lang={locale}>
+        <Icon name={tick ? 'check' : 'copy'} />
         {tick ? t.copied : t.copy}
       </button>
-      <a className="hc-act" href={waHref} target="_blank" rel="noopener" onClick={onWa}>
+      <a data-mp-tracked="" className="hc-act" href={waHref} target="_blank" rel="noopener" onClick={onWa}>
+        <Icon name="whatsapp" />
         {t.wa}
       </a>
       {cardId && (
-        <a
+        <a data-mp-tracked=""
           className="hc-act"
           href={cardImageUrl(cardId, { format: 'status', lang: locale, download: true })}
           download={`hanuman-chalisa-${cardId}.png`}
           lang={locale}
           onClick={() => trackEvent('Quote Image Saved', { ...props, format: 'status', method: 'download' })}
         >
+          <Icon name="save" />
           {t.save}
         </a>
       )}

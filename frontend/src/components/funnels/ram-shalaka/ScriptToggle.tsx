@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from '@/lib/mixpanel'
 
 /**
  * Devanagari or IAST, never both: flips data-rs-script on the target container.
@@ -11,6 +12,7 @@ export default function ScriptToggle({ target, label }: { target: string; label:
   const flip = () => {
     const v = !iast
     setIast(v)
+    trackEvent('Script Toggled', { funnel: 'ram-shalaka', target, to: v ? 'iast' : 'devanagari' })
     document.getElementById(target)?.setAttribute('data-rs-script', v ? 'iast' : 'deva')
   }
   return (

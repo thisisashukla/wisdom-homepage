@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import Shell from '@/components/funnels/mahabharata/Shell'
+import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
 import LineCard from '@/components/funnels/mahabharata/LineCard'
 import GitaLink from '@/components/funnels/mahabharata/GitaLink'
 import Faq from '@/components/funnels/mahabharata/Faq'
 import NextBlock from '@/components/funnels/mahabharata/NextBlock'
 import YakshaQuiz from '@/components/funnels/mahabharata/YakshaQuiz'
-import { line } from '@/lib/funnels/mahabharata/lines'
+import { heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
 import { CHOICE, LAST_FOUR, QA_PAIRS, QUIZ } from '@/lib/funnels/mahabharata/yaksha'
 import { PATHS, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 
@@ -39,42 +39,51 @@ export default function Page() {
     ]),
   )
   return (
-    <Shell page={PAGE} crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Yaksha prashna' }]} jsonLd={ld}>
-      <header className="mb-head">
-        <p className="mb-kicker">Vana Parva, at the lake</p>
-        <h1>The Yaksha&apos;s questions</h1>
-        <p id="quick-answer">
+    <Shell
+      page={PAGE}
+      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Yaksha prashna' }]}
+      jsonLd={ld}
+      hero={{
+        eyebrow: 'Vana Parva, at the lake',
+        h1: 'The Yaksha\'s questions',
+        line: heroLineOf('mbh.3.314.118'),
+        facts: ['MBh 3.313 to 3.315', 'Sanskrit with verse numbers', '10-question quiz'],
+        cta: (
+          <a href="#quiz" className="btn-read-gita btn-read-gita-primary" data-mp-location="yaksha_hero_quiz">
+            Try the 10-question quiz
+          </a>
+        ),
+      }}
+    >
+      <Band className="mb-intro">
+        <p id="quick-answer" className="tp-intro rv">
           The Yaksha prashna is the dialogue at a poisoned lake in the Vana Parva. A yaksha has struck down four of the Pandavas, and
           Yudhishthira answers his questions to win them back. Asked for the greatest wonder, he says people watch others die every day and
           still expect to live forever (MBh 3.314.118).
         </p>
-        <p className="mb-sub">
+        <p className="mb-sub rv">
           It is the twelfth year of exile. Thirsty, the brothers go one by one to a lake, ignore a voice that tells them to answer first, drink,
           and fall. Yudhishthira comes last, and stops to listen.
         </p>
-      </header>
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="qa-h" data-mp-section="yaksha_qa">
-        <h2 id="qa-h">Question and answer</h2>
-        <p className="mb-lede">In the order the Yaksha asks them. The question first, then Yudhishthira&apos;s answer.</p>
+      <Band alt mp="yaksha_qa" h="Question and answer" hId="qa-h" lede={<>In the order the Yaksha asks them. The question first, then Yudhishthira&apos;s answer.</>}>
         {QA_PAIRS.map((p) => (
-          <div className="mb-qa" key={p.q}>
+          <div className="mb-qa rv" key={p.q}>
             <h3>{p.topic}</h3>
-            <LineCard line={line(p.q)} page={PAGE} path={PATH} label="The Yaksha asks" actions={false} />
+            <LineCard line={line(p.q)} page={PAGE} path={PATH} label="The Yaksha asks" actions={false} className="mb-ask" />
             <LineCard line={line(p.a)} page={PAGE} path={PATH} label="Yudhishthira answers" />
           </div>
         ))}
-      </section>
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="four-h" data-mp-section="yaksha_last_four">
-        <h2 id="four-h">The last four questions</h2>
-        <p className="mb-lede">Answer these, the Yaksha says, and your brothers may live.</p>
-        <LineCard line={line(LAST_FOUR.q)} page={PAGE} path={PATH} label="The Yaksha asks" actions={false} />
+      <Band mp="yaksha_last_four" h="The last four questions" hId="four-h" lede="Answer these, the Yaksha says, and your brothers may live.">
+        <LineCard line={line(LAST_FOUR.q)} page={PAGE} path={PATH} label="The Yaksha asks" actions={false} className="mb-ask" />
         <LineCard line={line(LAST_FOUR.a[0])} page={PAGE} path={PATH} label="Who is happy" />
         <LineCard line={line(LAST_FOUR.a[1])} page={PAGE} path={PATH} label="The wonder" />
         <LineCard line={line(LAST_FOUR.a[2])} page={PAGE} path={PATH} label="The path" />
         <LineCard line={line(LAST_FOUR.a[3])} page={PAGE} path={PATH} label="The news" />
-        <ul className="mb-bridge">
+        <ul className="mb-bridge rv">
           <li>
             <GitaLink href="/gita/chapter/2/verse/27" from="yaksha_wonder" toRef="2.27" page={PAGE} locale="en">
               Gita 2.27
@@ -82,27 +91,36 @@ export default function Page() {
             <p>&quot;For the born, death is certain.&quot; Krishna tells Arjuna the same fact the Yaksha&apos;s wonder turns on.</p>
           </li>
         </ul>
-      </section>
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="choice-h" data-mp-section="yaksha_choice">
-        <h2 id="choice-h">One brother may live</h2>
-        <p className="mb-lede">Pleased with the answers, the Yaksha offers one brother back. Yudhishthira asks for Nakula, and the Yaksha asks why.</p>
-        <LineCard line={line(CHOICE.yaksha)} page={PAGE} path={PATH} label="The Yaksha asks" actions={false} />
+      <Band
+        alt
+        mp="yaksha_choice"
+        h="One brother may live"
+        hId="choice-h"
+        lede="Pleased with the answers, the Yaksha offers one brother back. Yudhishthira asks for Nakula, and the Yaksha asks why."
+      >
+        <LineCard line={line(CHOICE.yaksha)} page={PAGE} path={PATH} label="The Yaksha asks" actions={false} className="mb-ask" />
         {CHOICE.answer.map((id) => (
           <LineCard key={id} line={line(id)} page={PAGE} path={PATH} label="Yudhishthira answers" />
         ))}
-      </section>
+      </Band>
 
-      <section className="mb-sec" aria-labelledby="who-h" data-mp-section="yaksha_reveal">
-        <h2 id="who-h">Who the Yaksha was</h2>
-        <p className="mb-lede">
-          All four brothers rise. The Yaksha is Dharma, Yudhishthira&apos;s father, and he offers boons. For the last, Yudhishthira asks for
-          nothing outside himself.
-        </p>
+      <Band
+        mp="yaksha_reveal"
+        h="Who the Yaksha was"
+        hId="who-h"
+        lede={
+          <>
+            All four brothers rise. The Yaksha is Dharma, Yudhishthira&apos;s father, and he offers boons. For the last, Yudhishthira asks for
+            nothing outside himself.
+          </>
+        }
+      >
         {CHOICE.reveal.map((id) => (
           <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
         ))}
-        <ul className="mb-bridge">
+        <ul className="mb-bridge rv">
           <li>
             <GitaLink href="/gita/chapter/16/verse/21" from="yaksha_boon" toRef="16.21" page={PAGE} locale="en">
               Gita 16.21
@@ -110,19 +128,18 @@ export default function Page() {
             <p>Desire, anger and greed: the three gates Krishna tells Arjuna to close, the same three Yudhishthira asks to overcome.</p>
           </li>
         </ul>
-      </section>
+      </Band>
 
-      <section className="mb-sec" id="quiz" aria-labelledby="quiz-h" data-mp-section="yaksha_quiz">
-        <h2 id="quiz-h">Could you answer the Yaksha?</h2>
-        <p className="mb-lede">Ten questions from the lake. Each answer shows its verse.</p>
-        <YakshaQuiz quiz={QUIZ} refs={refs} page={PAGE} />
-      </section>
+      <Band alt id="quiz" mp="yaksha_quiz" h="Could you answer the Yaksha?" hId="quiz-h" lede="Ten questions from the lake. Each answer shows its verse.">
+        <div className="rv">
+          <YakshaQuiz quiz={QUIZ} refs={refs} page={PAGE} />
+        </div>
+      </Band>
 
       <Faq items={FAQ} heading="Questions people ask" />
-      <NextBlock page={PAGE} />
+      <NextBlock page={PAGE} alt />
 
-      <section className="mb-sec mb-method" aria-labelledby="method-h">
-        <h2 id="method-h">Sources and method</h2>
+      <Band className="mb-method" h="Sources and method" hId="method-h">
         <p>
           Sanskrit from a southern-recension text of the Vana Parva, chapters 313 to 315 in its numbering. Where the digital text had obvious
           typing errors we restored the standard reading and kept a record of each change. The English is Wisdom&apos;s own, read with
@@ -133,7 +150,7 @@ export default function Page() {
           More from the epic: <a href={PATHS.hub}>the family tree</a>, <a href={PATHS.character('yudhishthira')}>Yudhishthira</a>,{' '}
           <a href={PATHS.quotes}>25 lines from the Mahabharata</a>.
         </p>
-      </section>
+      </Band>
     </Shell>
   )
 }

@@ -16,8 +16,34 @@ import { fxTrack, type Hub, type Locale } from '@/lib/funnels/sayings/shared'
 const FxSheet = dynamic(() => import('./FxSheet'), { ssr: false })
 
 const T = {
-  en: { copy: 'Copy', copied: 'Copied', whatsapp: 'WhatsApp', save: 'Save image', post: 'Post', postSub: 'Feed, 4:5', status: 'Status', statusSub: 'Story or status, 9:16', saved: 'Saved', failed: 'Could not copy. Press and hold the line to copy it.', saveFailed: 'The image opened in a new tab. Press and hold it to save.', actions: 'Use this line' },
-  hi: { copy: 'कॉपी', copied: 'कॉपी हो गया', whatsapp: 'WhatsApp', save: 'इमेज सेव', post: 'पोस्ट', postSub: 'फ़ीड, 4:5', status: 'स्टेटस', statusSub: 'स्टोरी या स्टेटस, 9:16', saved: 'सेव हो गया', failed: 'कॉपी नहीं हो पाया। पंक्ति को दबाकर रखें और कॉपी करें।', saveFailed: 'इमेज नए टैब में खुली है। उसे दबाकर रखें और सेव करें।', actions: 'इस पंक्ति को इस्तेमाल करें' },
+  en: {
+    copy: 'Copy',
+    copied: 'Copied',
+    whatsapp: 'WhatsApp',
+    save: 'Save image',
+    post: 'Post',
+    postSub: 'Feed, 4:5',
+    status: 'Status',
+    statusSub: 'Story or status, 9:16',
+    saved: 'Saved',
+    failed: 'Could not copy. Press and hold the line to copy it.',
+    saveFailed: 'The image opened in a new tab. Press and hold it to save.',
+    actions: 'Use this line',
+  },
+  hi: {
+    copy: 'कॉपी',
+    copied: 'कॉपी हो गया',
+    whatsapp: 'WhatsApp',
+    save: 'इमेज सेव',
+    post: 'पोस्ट',
+    postSub: 'फ़ीड, 4:5',
+    status: 'स्टेटस',
+    statusSub: 'स्टोरी या स्टेटस, 9:16',
+    saved: 'सेव हो गया',
+    failed: 'कॉपी नहीं हो पाया। पंक्ति को दबाकर रखें और कॉपी करें।',
+    saveFailed: 'इमेज नए टैब में खुली है। उसे दबाकर रखें और सेव करें।',
+    actions: 'इस पंक्ति को इस्तेमाल करें',
+  },
 }
 
 export type CardActionsProps = {
@@ -57,7 +83,12 @@ export default function CardActions({ quoteId, domId, cardId, cardV, fileStem, t
   const saveBtnRef = useRef<HTMLButtonElement>(null)
   const blobs = useRef(new Map<CardFormat, Promise<Blob>>())
   const base = { page: pageKey, locale, hub }
-  const props = { quote_id: quoteId, page_name: pageName, moment: section ?? null, position: position ?? null }
+  const props = {
+    quote_id: quoteId,
+    page_name: pageName,
+    moment: section ?? null,
+    position: position ?? null,
+  }
 
   useEffect(() => {
     ensureToast()
@@ -87,7 +118,13 @@ export default function CardActions({ quoteId, domId, cardId, cardV, fileStem, t
     confirm('shared')
   }
 
-  const imgUrl = (format: CardFormat) => cardImageUrl(cardId ?? '', { format, lang: locale, v: cardV, download: true })
+  const imgUrl = (format: CardFormat) =>
+    cardImageUrl(cardId ?? '', {
+      format,
+      lang: locale,
+      v: cardV,
+      download: true,
+    })
   const fileName = (format: CardFormat) => `${fileStem}-${format}.png`
   const getBlob = (format: CardFormat): Promise<Blob> => {
     let p = blobs.current.get(format)
@@ -159,7 +196,7 @@ export default function CardActions({ quoteId, domId, cardId, cardV, fileStem, t
           </span>
           <span>{tick ? t.copied : t.copy}</span>
         </button>
-        <a className="qc-act" href={waHref} target="_blank" rel="noopener" onClick={onWhatsApp}>
+        <a data-mp-tracked="" className="qc-act" href={waHref} target="_blank" rel="noopener" onClick={onWhatsApp}>
           <Icon name="whatsapp" />
           <span>{t.whatsapp}</span>
         </a>
@@ -184,11 +221,11 @@ export default function CardActions({ quoteId, domId, cardId, cardV, fileStem, t
             </button>
             {saveOpen && (
               <div className="qc-menu" id={menuId}>
-                <a href={imgUrl('post')} download={fileName('post')} onClick={(e) => onSave(e, 'post')}>
+                <a data-mp-tracked="" href={imgUrl('post')} download={fileName('post')} onClick={(e) => onSave(e, 'post')}>
                   <strong>{t.post}</strong>
                   <span>{t.postSub}</span>
                 </a>
-                <a href={imgUrl('status')} download={fileName('status')} onClick={(e) => onSave(e, 'status')}>
+                <a data-mp-tracked="" href={imgUrl('status')} download={fileName('status')} onClick={(e) => onSave(e, 'status')}>
                   <strong>{t.status}</strong>
                   <span>{t.statusSub}</span>
                 </a>

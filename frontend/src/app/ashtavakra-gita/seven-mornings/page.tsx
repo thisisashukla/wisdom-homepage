@@ -3,6 +3,8 @@ import FxFrame from '@/components/funnels/other-gitas/FxFrame'
 import ScriptToggle from '@/components/funnels/other-gitas/ScriptToggle'
 import VerseLines from '@/components/funnels/other-gitas/VerseLines'
 import NextBand from '@/components/funnels/other-gitas/NextBand'
+import FxHero from '@/components/funnels/other-gitas/FxHero'
+import FxSources from '@/components/funnels/other-gitas/FxSources'
 import { startUrl } from '@/lib/app'
 import { abs, agVersePath, getVerseByKey, HUB_PATH } from '@/lib/funnels/other-gitas/data'
 import { DISCLOSURE, PLAN, PLAN_QUICK, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
@@ -40,69 +42,124 @@ export default function SevenMorningsPage() {
     },
   ]
 
+  const d1 = days[0]
+
   return (
     <FxFrame pageKey={PAGE}>
       {ld.map((d, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
       ))}
-      <main className="fx-main">
-        <nav className="fx-crumb" aria-label="Breadcrumb">
-          <a href={HUB_PATH}>Ashtavakra Gita</a>
-          <span aria-hidden="true">/</span>
-          <span>Seven mornings</span>
-        </nav>
-        <h1 className="fx-h1">Seven mornings with the Ashtavakra Gita</h1>
-        <p id="quick-answer" className="fx-quick">
-          {PLAN_QUICK}
-        </p>
-        <hr className="fx-rule" aria-hidden="true" />
-        <p className="fx-body">
-          Read the Sanskrit aloud once, even slowly, even badly. Read the English. Try the one thing. That is the whole
-          morning. Open a day to begin.
-        </p>
-        <ScriptToggle page={PAGE} />
+      <main>
+        <FxHero
+          crumbs={[{ label: 'Ashtavakra Gita', href: HUB_PATH }, { label: 'Seven mornings' }]}
+          eyebrow="7-morning reading plan"
+          title="Seven mornings with the Ashtavakra Gita"
+          facts={['7 verses', 'About 3 minutes a morning', 'Sanskrit and plain English']}
+          cta={{ href: '#day-1', label: 'Begin with day 1', location: 'ag_seven_mornings_hero_day_1' }}
+          art={
+            <div className="og-hero-verse" aria-hidden="true">
+              <p className="og-hero-ref">
+                Day 1, Ashtavakra Gita {d1.key}
+              </p>
+              <VerseLines verse={d1.x} />
+              <hr className="og-rule" />
+            </div>
+          }
+        />
 
-        <ol className="fx-days" style={{ marginTop: 20 }}>
-          {days.map((d) => (
-            <li key={d.day}>
-              <details data-fx-day={d.day} open={d.day === 1}>
-                <summary>
-                  <span className="fx-row-n">{d.day}</span>
-                  <span>
-                    <strong>{d.title}</strong>
-                    <em>Ashtavakra Gita {d.key}</em>
-                  </span>
-                </summary>
-                <div className="fx-day-body">
-                  <VerseLines verse={d.x} />
-                  <h3 className="fx-h3">This morning</h3>
-                  <p className="fx-body">{d.practice}</p>
-                  <p className="fx-small" style={{ margin: 0 }}>
-                    <a href={agVersePath(d.x.c, d.x.v)}>Word meanings and notes for {d.key}</a>
-                  </p>
-                </div>
-              </details>
-            </li>
-          ))}
-        </ol>
+        <section className="og-intro">
+          <div className="wrap og-col">
+            <div className="og-prose">
+              <p id="quick-answer" className="og-lead">
+                {PLAN_QUICK}
+              </p>
+              <p>
+                Read the Sanskrit aloud once, even slowly, even badly. Read the English. Try the one thing. That is the whole
+                morning. Open a day to begin.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <h2 className="fx-h2">After the seventh morning</h2>
-        <p className="fx-body">
-          If one of these verses stayed with you, read its chapter from the start. Chapter 1 is twenty verses and holds the
-          whole teaching. If you would rather keep a line each morning, the Bhagavad Gita is the place most people go next,
-          and you can have a week of it chosen for what you are going through.
-        </p>
+        <section className="section" aria-labelledby="the-week">
+          <div className="wrap og-col">
+            <div className="og-list-head">
+              <div className="og-head">
+                <h2 className="heading" id="the-week">
+                  The seven mornings
+                </h2>
+              </div>
+              <ScriptToggle page={PAGE} />
+            </div>
+            <ol className="og-days" data-stagger="60">
+              {days.map((d) => (
+                <li key={d.day} id={`day-${d.day}`} className="rv">
+                  <details className="og-day" data-fx-day={d.day} open={d.day === 1}>
+                    <summary>
+                      <span className="og-day-node" aria-hidden="true">
+                        {d.day}
+                      </span>
+                      <span>
+                        <strong className="og-day-h">
+                          {d.title}
+                        </strong>
+                        <em className="og-day-m">Day {d.day} · Ashtavakra Gita {d.key}</em>
+                      </span>
+                      <span className="og-day-x" aria-hidden="true">
+                        +
+                      </span>
+                    </summary>
+                    <div className="og-day-body">
+                      <div className="og-day-verse">
+                        <VerseLines verse={d.x} />
+                      </div>
+                      <div className="tp-today">
+                        <h3 className="tp-label">This morning</h3>
+                        <p>{d.practice}</p>
+                      </div>
+                      <p className="og-day-link">
+                        <a href={agVersePath(d.x.c, d.x.v)}>Word meanings and notes for {d.key}</a>
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
 
-        <NextBand pageKey={PAGE} />
-        <p className="fx-small" style={{ marginTop: 14 }}>
-          On a computer? <a href={startUrl({ ref: 'q-ag-seven-mornings-link' })} data-mp-location="ag_seven_mornings_start">Get a week of Gita readings by email</a>.
-        </p>
+        <section className="section section-alt">
+          <div className="wrap og-col">
+            <div className="og-head rv">
+              <h2 className="heading">After the seventh morning</h2>
+            </div>
+            <div className="og-prose rv">
+              <p>
+                If one of these verses stayed with you, read its chapter from the start. Chapter 1 is twenty verses and holds the
+                whole teaching. If you would rather keep a line each morning, the Bhagavad Gita is the place most people go next,
+                and you can have a week of it chosen for what you are going through.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <section className="fx-sources">
-          <h2 className="fx-h3">Sources and method</h2>
+        <NextBand
+          pageKey={PAGE}
+          after={
+            <>
+              On a computer?{' '}
+              <a href={startUrl({ ref: 'q-ag-seven-mornings-link' })} data-mp-location="ag_seven_mornings_start">
+                Get a week of Gita readings by email
+              </a>
+              .
+            </>
+          }
+        />
+
+        <FxSources>
           <p>{SOURCES_NOTE}</p>
           <p>{DISCLOSURE}</p>
-        </section>
+        </FxSources>
       </main>
     </FxFrame>
   )

@@ -1,8 +1,9 @@
 /**
  * Server blocks shared by the Chalisa pages: the full text with meaning on
- * tap, the FAQ, the next step, the sources note.
+ * tap, the FAQ, the next step, the sources note, and the house section head.
  */
 
+import type { ReactNode } from 'react'
 import NextStep from '@/components/quotes/NextStep'
 import { anchorId, NEXT_COPY, START_SITUATION, type HcLocale, type HcUnit } from '@/lib/funnels/hanuman-chalisa'
 import LineText from './LineText'
@@ -11,6 +12,19 @@ const T = {
   en: { meaning: 'Meaning', words: 'Word by word and where it happens' },
   hi: { meaning: 'अर्थ', words: 'शब्दार्थ (अंग्रेज़ी में)' },
 } as const
+
+/** House section head: left-aligned eyebrow, heading, subtext. */
+export function SecHead({ id, eyebrow, title, sub, lang }: { id: string; eyebrow?: string; title: ReactNode; sub?: ReactNode; lang?: HcLocale }) {
+  return (
+    <div className="sec-head hc-sec-head rv" lang={lang}>
+      {eyebrow && <p className="eyebrow">{eyebrow}</p>}
+      <h2 className="heading" id={id}>
+        {title}
+      </h2>
+      {sub && <p className="subtext">{sub}</p>}
+    </div>
+  )
+}
 
 export function FullText({ units, locale, withLinks = true }: { units: HcUnit[]; locale: HcLocale; withLinks?: boolean }) {
   const t = T[locale]
@@ -48,25 +62,27 @@ export function FullText({ units, locale, withLinks = true }: { units: HcUnit[];
 
 export function Faq({ items, locale, heading }: { items: { q: string; a: string }[]; locale: HcLocale; heading: string }) {
   return (
-    <section className="hc-section" aria-labelledby="hc-faq-h">
-      <h2 className="hc-h2" id="hc-faq-h" lang={locale}>
-        {heading}
-      </h2>
-      <dl className="hc-faq" lang={locale}>
-        {items.map((f) => (
-          <div key={f.q}>
-            <dt>{f.q}</dt>
-            <dd>{f.a}</dd>
-          </div>
-        ))}
-      </dl>
+    <section className="section hc-band" aria-labelledby="hc-faq-h">
+      <div className="wrap hc-col">
+        <h2 className="hc-h2 rv" id="hc-faq-h" lang={locale}>
+          {heading}
+        </h2>
+        <div className="hc-faq" lang={locale} data-stagger="60">
+          {items.map((f) => (
+            <details key={f.q} className="hc-faq-item rv">
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
 
 export function HcNextStep({ locale, pageName, pageKey, placement }: { locale: HcLocale; pageName: string; pageKey: string; placement: string }) {
   return (
-    <div className="hc-next-step">
+    <div className="hc-next-step rv">
       <NextStep funnel="hanuman-chalisa"
         locale={locale}
         pageName={pageName}
@@ -82,11 +98,11 @@ export function HcNextStep({ locale, pageName, pageKey, placement }: { locale: H
 export function Sources({ locale }: { locale: HcLocale }) {
   if (locale === 'hi') {
     return (
-      <section className="hc-section" aria-labelledby="hc-src-h">
-        <h2 className="hc-h2" id="hc-src-h" lang="hi">
+      <section className="hc-sources" aria-labelledby="hc-src-h">
+        <h2 className="hc-h3" id="hc-src-h" lang="hi">
           स्रोत और तरीका
         </h2>
-        <div className="hc-prose" lang="hi">
+        <div className="hc-prose hc-small" lang="hi">
           <p>
             मूल पाठ गोस्वामी तुलसीदास की अवधी रचना है, गीता प्रेस, गोरखपुर के प्रचलित पाठ के अनुसार। हमने इसे गीता प्रेस की तीन
             प्रतियों, जगद्गुरु रामभद्राचार्य की महावीरी व्याख्या के मूल पाठ और कविता कोश से मिलाया है। जहाँ पाठ अलग है, वहाँ
@@ -98,11 +114,11 @@ export function Sources({ locale }: { locale: HcLocale }) {
     )
   }
   return (
-    <section className="hc-section" aria-labelledby="hc-src-h">
-      <h2 className="hc-h2" id="hc-src-h">
+    <section className="hc-sources" aria-labelledby="hc-src-h">
+      <h2 className="hc-h3" id="hc-src-h">
         Sources and method
       </h2>
-      <div className="hc-prose">
+      <div className="hc-prose hc-small">
         <p>
           The Awadhi text is Goswami Tulsidas&apos;s, in the popular Gita Press, Gorakhpur reading. We checked every line against three
           Gita Press printings, the mool text of Jagadguru Rambhadracharya&apos;s Mahaviri commentary, and Kavita Kosh. Where editions

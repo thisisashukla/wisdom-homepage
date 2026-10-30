@@ -7,6 +7,7 @@ import Mala from '@/components/funnels/hanuman-chalisa/Mala'
 import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { LineOpenedOnView } from '@/components/funnels/hanuman-chalisa/Trackers'
 import { HcNextStep } from '@/components/funnels/hanuman-chalisa/Blocks'
+import HcHero from '@/components/funnels/hanuman-chalisa/Hero'
 import {
   abs,
   AUTHOR_LD,
@@ -135,47 +136,66 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
     { name: u.label.en, path },
   ])
 
+  const card = (
+    <article className="hc-card" aria-label={`${u.label.en}, Awadhi and meaning`}>
+      <div className="hc-card-head">
+        <p className="hc-card-label">{u.label.en}</p>
+        <ScriptToggle locale="en" page={page} />
+      </div>
+      <LineText awadhi={u.awadhi} iast={u.iast} as="blockquote" className="hc-line" />
+      <p className="hc-card-meaning">{u.meaning.en}</p>
+      <p className="hc-card-src">
+        <span className="hc-chip">{source}, Gita Press reading</span>
+      </p>
+      {u.audio && (
+        <audio className="hc-audio" controls preload="none" src={u.audio}>
+          <track kind="captions" />
+        </audio>
+      )}
+      <LineShare id={u.id} awadhi={u.awadhi} meaning={u.meaning.en} source={source} path={path} cardId={u.cardId} page={page} locale="en" />
+    </article>
+  )
+
   return (
     <main className="hc-main">
       <BlogTracker pageName={page} />
       <LineOpenedOnView line={u.id} page={page} locale="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([quoteLd, crumbs]) }} />
 
-      <nav className="hc-crumbs" aria-label="Breadcrumb">
-        <a href="/">Wisdom</a> / <a href={HUB_PATH}>Hanuman Chalisa</a> / <span>{u.label.en}</span>
-      </nav>
+      <HcHero
+        variant="mala"
+        crumbs={
+          <nav className="hc-crumbs" aria-label="Breadcrumb">
+            <a href="/">Wisdom</a> / <a href={HUB_PATH}>Hanuman Chalisa</a> / <span>{u.label.en}</span>
+          </nav>
+        }
+        eyebrow={`Hanuman Chalisa, ${u.label.en}`}
+        title={<>Meaning of &ldquo;{u.iast[0]}&rdquo;</>}
+        sub={u.quick}
+        below={card}
+        visual={
+          <Mala
+            beads={beads('en', 'page')}
+            locale="en"
+            page={page}
+            mode="page"
+            currentId={u.id}
+            label="Mala of 43 beads, one for each line"
+            caption="Tap a bead to open that line."
+          >
+            <span className="hc-mala-big">{u.pos}</span>
+            <span className="hc-mala-sub">of 43</span>
+          </Mala>
+        }
+      />
 
-      <div className="hc-intro">
-        <p className="hc-unit-label">Hanuman Chalisa, {u.label.en}</p>
-        <h1 className="hc-h1">Meaning of &ldquo;{u.iast[0]}&rdquo;</h1>
-        <p className="hc-quick" id="quick-answer">
-          {u.quick}
-        </p>
-      </div>
-
-      <div className="hc-hub">
-        <div>
-          <div className="hc-controls">
-            <ScriptToggle locale="en" page={page} />
-          </div>
-
-          <article className="hc-hero" aria-label={`${u.label.en}, Awadhi and meaning`}>
-            <LineText awadhi={u.awadhi} iast={u.iast} as="blockquote" className="hc-line" />
-            <p className="hc-hero-meaning">{u.meaning.en}</p>
-            <p className="hc-hero-src">{source}, Gita Press reading</p>
-            {u.audio && (
-              <audio className="hc-audio" controls preload="none" src={u.audio}>
-                <track kind="captions" />
-              </audio>
-            )}
-            <LineShare id={u.id} awadhi={u.awadhi} meaning={u.meaning.en} source={source} path={path} cardId={u.cardId} page={page} locale="en" />
-          </article>
-
-          <section className="hc-section" aria-labelledby="hc-words-h">
-            <h2 className="hc-h2" id="hc-words-h">
+      <section className="section hc-band">
+        <div className="wrap hc-col">
+          <section className="hc-block" aria-labelledby="hc-words-h">
+            <h2 className="hc-h2 rv" id="hc-words-h">
               Word by word
             </h2>
-            <dl className="hc-gloss">
+            <dl className="hc-gloss rv">
               {u.words.map((w, i) => (
                 <div className="hc-gloss-row" key={`${w.w}-${i}`}>
                   <dt>
@@ -192,12 +212,12 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
             </dl>
           </section>
 
-          <section className="hc-section" aria-labelledby="hc-ram-h">
-            <h2 className="hc-h2" id="hc-ram-h">
+          <section className="hc-block" aria-labelledby="hc-ram-h">
+            <h2 className="hc-h2 rv" id="hc-ram-h">
               Where this happens in the Ramayana
             </h2>
             {u.ramayana ? (
-              <div className="hc-prose">
+              <div className="hc-prose rv">
                 <p>{u.ramayana.en}</p>
                 {u.ramayana.refs.map((r) => (
                   <div className="hc-ref" key={r.id}>
@@ -211,7 +231,7 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
                 ))}
               </div>
             ) : (
-              <div className="hc-prose">
+              <div className="hc-prose rv">
                 <p>
                   This line praises Hanuman or speaks to the reader. It does not retell one episode, so there is no single place in the
                   Ramayana to point to.
@@ -221,11 +241,11 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
           </section>
 
           {u.variants.length > 0 && (
-            <section className="hc-section" aria-labelledby="hc-var-h">
-              <h2 className="hc-h2" id="hc-var-h">
+            <section className="hc-block" aria-labelledby="hc-var-h">
+              <h2 className="hc-h2 rv" id="hc-var-h">
                 Other readings
               </h2>
-              <ul className="hc-variants">
+              <ul className="hc-variants rv">
                 {u.variants.map((v) => (
                   <li key={v}>{v}</li>
                 ))}
@@ -234,7 +254,8 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
           )}
 
           {bridge && (
-            <section className="hc-section" aria-labelledby="hc-gita-h">
+            <section className="hc-block hc-bridge rv" aria-labelledby="hc-gita-h">
+              <p className="eyebrow">The thread to the Gita</p>
               <h2 className="hc-h2" id="hc-gita-h">
                 The same thought in the Gita
               </h2>
@@ -249,43 +270,49 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
             </section>
           )}
 
-          <nav className="hc-pager" aria-label="Previous and next line">
-            {prev && (
-              <a href={linePath(prev.slug)} rel="prev" data-mp-location="line_prev">
-                <small>Previous, {prev.label.en}</small>
-                <span lang="hi">{prev.awadhi[0].replace(/\s*[।॥]\s*$/, '')}</span>
-              </a>
-            )}
-            {next && (
-              <a href={linePath(next.slug)} rel="next" className="hc-next" data-mp-location="line_next">
-                <small>Next, {next.label.en}</small>
-                <span lang="hi">{next.awadhi[0].replace(/\s*[।॥]\s*$/, '')}</span>
-              </a>
-            )}
-          </nav>
+          <div className="hc-block">
+            <nav className="hc-pager rv" aria-label="Previous and next line">
+              {prev && (
+                <a href={linePath(prev.slug)} rel="prev" data-mp-location="line_prev">
+                  <small>Previous, {prev.label.en}</small>
+                  <span lang="hi">{prev.awadhi[0].replace(/\s*[।॥]\s*$/, '')}</span>
+                </a>
+              )}
+              {next && (
+                <a href={linePath(next.slug)} rel="next" className="hc-next" data-mp-location="line_next">
+                  <small>Next, {next.label.en}</small>
+                  <span lang="hi">{next.awadhi[0].replace(/\s*[।॥]\s*$/, '')}</span>
+                </a>
+              )}
+            </nav>
 
-          <ul className="hc-links">
-            <li>
-              <a className="hc-btn" href={`${HUB_PATH}#${u.id.replace('.', '-')}`} data-mp-location="line_hub">
-                See it in the full text
-              </a>
-            </li>
-            <li>
-              <a className="hc-btn" href={LEARN_PATH} data-mp-location="line_learn">
-                Learn it by heart
-              </a>
-            </li>
-            <li>
-              <a className="hc-btn" href={COUNTER_PATH} data-mp-location="line_counter">
-                Count recitations
-              </a>
-            </li>
-          </ul>
+            <ul className="hc-links rv">
+              <li>
+                <a className="hc-btn" href={`${HUB_PATH}#${u.id.replace('.', '-')}`} data-mp-location="line_hub">
+                  See it in the full text
+                </a>
+              </li>
+              <li>
+                <a className="hc-btn" href={LEARN_PATH} data-mp-location="line_learn">
+                  Learn it by heart
+                </a>
+              </li>
+              <li>
+                <a className="hc-btn" href={COUNTER_PATH} data-mp-location="line_counter">
+                  Count recitations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      <section className="section section-alt hc-band">
+        <div className="wrap hc-col">
           <HcNextStep locale="en" pageName={page} pageKey={`hc-line-${u.pos}`} placement="line_end" />
 
-          <section className="hc-section" aria-labelledby="hc-src-h">
-            <h2 className="hc-h2" id="hc-src-h">
+          <section className="hc-sources" aria-labelledby="hc-src-h">
+            <h2 className="hc-h3" id="hc-src-h">
               Sources and method
             </h2>
             <p className="hc-small">
@@ -294,21 +321,7 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
             </p>
           </section>
         </div>
-        <aside className="hc-hub-aside hc-aside-end" aria-label="Mala: one bead for each line">
-          <Mala
-            beads={beads('en', 'page')}
-            locale="en"
-            page={page}
-            mode="page"
-            currentId={u.id}
-            label="Mala of 43 beads, one for each line"
-            caption="Tap a bead to open that line."
-          >
-            <span className="hc-mala-big">{u.pos}</span>
-            <span className="hc-mala-sub">of 43</span>
-          </Mala>
-        </aside>
-      </div>
+      </section>
     </main>
   )
 }

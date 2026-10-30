@@ -1,4 +1,4 @@
-import Shell, { Faq, GitaBridge, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
+import Shell, { Band, Faq, GitaBridge, Head, HeroLine, SourcesNote, Tiles, UpNext } from '@/components/funnels/upanishads/Shell'
 import Sanskrit from '@/components/funnels/upanishads/Sanskrit'
 import { articleLd, faqLd, SITE, upMeta } from '@/lib/funnels/upanishads'
 import { LINES } from '@/content/funnels/upanishads/lines'
@@ -47,99 +47,94 @@ export default function Page() {
     faqLd(FAQ),
   ]
   return (
-    <Shell pageName={PAGE} locale="hi" crumbs={[{ name: 'होम', path: '/' }, { name: 'उपनिषद', path: PATH }]} jsonLd={jsonLd}>
-      <header>
-        <h1>उपनिषद क्या है, और कितने उपनिषद हैं</h1>
-        <p id="quick-answer" className="fx-quick">
+    <Shell
+      pageName={PAGE}
+      locale="hi"
+      crumbs={[{ name: 'होम', path: '/' }, { name: 'उपनिषद', path: PATH }]}
+      jsonLd={jsonLd}
+      hero={{
+        eyebrow: 'उपनिषद: गुरु के पास बैठकर',
+        title: 'उपनिषद क्या है, और कितने उपनिषद हैं',
+        facts: ['108 उपनिषद', '10 मुख्य उपनिषद', 'संस्कृत और हिंदी'],
+        cta: { href: '#how-many', label: '10 मुख्य उपनिषद देखें', loc: 'hub_hero_ten' },
+        second: { href: '#lines', label: 'प्रसिद्ध श्लोक', loc: 'hub_hero_lines' },
+        visual: <HeroLine sa={'सत्यमेव जयते नानृतं'} iast={'satyam eva jayate nānṛtam'} meaning="जीत सत्य की ही होती है, झूठ की नहीं।" cite="मुण्डक उपनिषद 3.1.6" lang="hi" />,
+      }}
+    >
+      <Band labelledBy="word">
+        <p id="quick-answer" className="tp-intro rv">
           उपनिषद वेदों का आख़िरी हिस्सा हैं, इसलिए इन्हें वेदांत कहते हैं। इनमें आत्मा और ब्रह्म की शिक्षा है, ज़्यादातर गुरु और शिष्य की बातचीत के रूप में।
           परंपरा 108 उपनिषद गिनती है। इनमें से 10 मुख्य उपनिषद कहलाते हैं, क्योंकि आदि शंकराचार्य ने इन पर भाष्य लिखा।
         </p>
-      </header>
-
-      <div className="fx-line">
-        <p className="fx-ref">मुण्डक उपनिषद 3.1.6</p>
-        <Sanskrit sa={'सत्यमेव जयते नानृतं'} iast={'satyam eva jayate nānṛtam'} size="hero" />
-        <p className="fx-en-line">जीत सत्य की ही होती है, झूठ की नहीं।</p>
-      </div>
-
-      <section className="fx-sec" aria-labelledby="word">
-        <h2 id="word">उपनिषद शब्द का अर्थ</h2>
-        <p>
-          उप (पास), नि (नीचे), षद् (बैठना): गुरु के पास नीचे बैठकर सुनी गई शिक्षा। शंकराचार्य इसी धातु का एक और अर्थ बताते हैं: वह ज्ञान जो अज्ञान की
-          पकड़ को ढीला कर दे।
-        </p>
-      </section>
-
-      <section className="fx-sec" aria-labelledby="how-many">
-        <h2 id="how-many">कितने उपनिषद हैं, और 10 मुख्य उपनिषद</h2>
-        <p>मुक्तिका उपनिषद में 108 उपनिषदों की सूची है। इनमें ये दस मुख्य हैं, जिन पर शंकराचार्य ने भाष्य लिखा:</p>
-        <div className="fx-table-wrap">
-          <table className="fx-table">
-            <thead>
-              <tr>
-                <th scope="col">उपनिषद</th>
-                <th scope="col">वेद</th>
-                <th scope="col">आकार</th>
-                <th scope="col">क्या है इसमें</th>
-              </tr>
-            </thead>
-            <tbody>
-              {PRINCIPAL.map((u) => (
-                <tr key={u.id}>
-                  <th scope="row">{u.hi}</th>
-                  <td>{u.veda.hi}</td>
-                  <td>{u.size.hi}</td>
-                  <td>{u.about.hi}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="fx-card fx-card-story rv">
+          <h2 id="word" className="tp-label">
+            उपनिषद शब्द का अर्थ
+          </h2>
+          <p className="fx-scene">
+            उप (पास), नि (नीचे), षद् (बैठना): गुरु के पास नीचे बैठकर सुनी गई शिक्षा। शंकराचार्य इसी धातु का एक और अर्थ बताते हैं: वह ज्ञान जो अज्ञान की
+            पकड़ को ढीला कर दे।
+          </p>
         </div>
-        <p style={{ marginTop: 14 }}>{SHVETASHVATARA.hi}</p>
-      </section>
+      </Band>
 
-      <section className="fx-sec" aria-labelledby="lines">
-        <h2 id="lines">उपनिषद के प्रसिद्ध श्लोक</h2>
-        <ul className="fx-links">
-          {hiLines.map((l) => (
-            <li key={l.slug}>
-              <a href={`/hi/upanishads/${l.slug}`} data-mp-location={`hub_line_${l.slug}`}>
-                <span className="fx-links-sa" lang="sa">
-                  {l.writing.forms[0].sa}
-                </span>
-                <strong>{l.hi?.h1}</strong>
-                <span>{l.ref}</span>
-              </a>
+      <Band alt wide labelledBy="how-many">
+        <Head id="how-many" sub="मुक्तिका उपनिषद में 108 उपनिषदों की सूची है। इनमें ये दस मुख्य हैं, जिन पर शंकराचार्य ने भाष्य लिखा:">
+          कितने उपनिषद हैं, और 10 मुख्य उपनिषद
+        </Head>
+        <ul className="fx-ten" data-stagger="40">
+          {PRINCIPAL.map((u) => (
+            <li key={u.id} className="rv">
+              <span className="fx-ten-name">{u.hi}</span>
+              <span className="fx-ten-meta">
+                {u.veda.hi}, {u.size.hi}
+              </span>
+              <span className="fx-ten-about">{u.about.hi}</span>
             </li>
           ))}
-          <li>
-            <a href="/upanishads" hrefLang="en" data-mp-location="hub_english">
-              <strong>सभी 10 प्रसिद्ध श्लोक और पूरे उपनिषद (अंग्रेज़ी)</strong>
-              <span>ईश, कठ और माण्डूक्य उपनिषद पूरे, संस्कृत के साथ</span>
-            </a>
-          </li>
         </ul>
-      </section>
-
-      <section className="fx-sec" aria-labelledby="first">
-        <h2 id="first">पढ़ना कहाँ से शुरू करें</h2>
-        <p>
-          ईश उपनिषद से। इसमें बस 18 मंत्र हैं, आज रात ख़त्म हो जाएगा। फिर कठ उपनिषद, जो एक कहानी है: बालक नचिकेता तीन रात यमराज के दरवाज़े पर बैठा रहता है
-          और जवाब लिए बिना नहीं लौटता। उसके बाद माण्डूक्य, 12 मंत्रों में जाग्रत, स्वप्न और गहरी नींद की बात।
+        <p className="fx-p rv" style={{ marginTop: 20 }}>
+          {SHVETASHVATARA.hi}
         </p>
-      </section>
+      </Band>
 
-      <section className="fx-sec" aria-labelledby="gita">
-        <h2 id="gita">उपनिषद और गीता</h2>
-        <p className="fx-ref">गीता ध्यानम्, श्लोक 4</p>
-        <Sanskrit sa={GITA_DHYANAM.sa} iast={GITA_DHYANAM.iast} size="small" />
-        <p className="fx-v-en" style={{ marginTop: 12 }}>
-          {GITA_DHYANAM.hi}
+      <Band wide labelledBy="lines">
+        <Head id="lines">उपनिषद के प्रसिद्ध श्लोक</Head>
+        <Tiles
+          cols={3}
+          items={[
+            ...hiLines.map((l) => ({ href: `/hi/upanishads/${l.slug}`, sa: l.writing.forms[0].sa, title: l.hi?.h1 ?? l.h1, sub: l.ref, loc: `hub_line_${l.slug}` })),
+            { href: '/upanishads', lang: 'en', title: 'सभी 10 प्रसिद्ध श्लोक और पूरे उपनिषद (अंग्रेज़ी)', sub: 'ईश, कठ और माण्डूक्य उपनिषद पूरे, संस्कृत के साथ', loc: 'hub_english' },
+          ]}
+        />
+      </Band>
+
+      <Band alt labelledBy="first">
+        <div className="fx-card fx-card-story rv">
+          <h2 id="first" className="tp-label">
+            पढ़ना कहाँ से शुरू करें
+          </h2>
+          <p className="fx-scene">
+            ईश उपनिषद से। इसमें बस 18 मंत्र हैं, आज रात ख़त्म हो जाएगा। फिर कठ उपनिषद, जो एक कहानी है: बालक नचिकेता तीन रात यमराज के दरवाज़े पर बैठा रहता है
+            और जवाब लिए बिना नहीं लौटता। उसके बाद माण्डूक्य, 12 मंत्रों में जाग्रत, स्वप्न और गहरी नींद की बात।
+          </p>
+        </div>
+      </Band>
+
+      <Band labelledBy="gita">
+        <Head id="gita">उपनिषद और गीता</Head>
+        <div className="fx-v rv">
+          <p className="fx-v-ref-plain">गीता ध्यानम्, श्लोक 4</p>
+          <Sanskrit sa={GITA_DHYANAM.sa} iast={GITA_DHYANAM.iast} size="small" />
+          <p className="fx-v-en">{GITA_DHYANAM.hi}</p>
+        </div>
+        <p className="fx-p rv" style={{ marginTop: 28 }}>
+          कठ उपनिषद में यमराज नचिकेता से जो कहते हैं, वही बात श्रीकृष्ण अर्जुन से लगभग उन्हीं शब्दों में कहते हैं:
         </p>
-        <p>कठ उपनिषद में यमराज नचिकेता से जो कहते हैं, वही बात श्रीकृष्ण अर्जुन से लगभग उन्हीं शब्दों में कहते हैं:</p>
-        <GitaBridge c={2} v={20} note="आत्मा न जन्म लेता है, न मरता है (कठ 1.2.18 से मिलाएँ)" locale="hi" />
-        <GitaBridge c={2} v={19} note="न मारने वाला समझता है, न मरने वाला (कठ 1.2.19 से मिलाएँ)" locale="hi" />
-      </section>
+        <div className="fx-bridges" data-stagger="60">
+          <GitaBridge c={2} v={20} note="आत्मा न जन्म लेता है, न मरता है (कठ 1.2.18 से मिलाएँ)" locale="hi" />
+          <GitaBridge c={2} v={19} note="न मारने वाला समझता है, न मरने वाला (कठ 1.2.19 से मिलाएँ)" locale="hi" />
+        </div>
+      </Band>
 
       <UpNext locale="hi" pageName={PAGE} pageKey={PAGE} placement="hub-end" heading="हर सुबह एक श्लोक" />
 

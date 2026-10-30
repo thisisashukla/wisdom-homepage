@@ -3,7 +3,7 @@
 /**
  * "Hold to be still": press and hold the verse (touch or mouse, 350ms), rest the pointer on it for 3s, or hold
  * the space bar while the verse is in view. Navigation, notes and the call to action fade over 2s, leaving the
- * line and a slow gold rule. On release the device-specific next step appears under the verse.
+ * line and a slow gold rule (house gold; the page puts <hr class="og-rule fx-keep"> inside the children). On release the device-specific next step appears under the verse.
  * Reduced motion: opacity only, no pulse (CSS). Without JS the verse simply reads as text.
  */
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
@@ -139,8 +139,8 @@ export default function HoldStill({ verseRef, page, children, after }: Props) {
           if (holding || startedAt.current !== null) e.preventDefault()
         }}
       >
+        <span className="og-ground" aria-hidden="true" />
         {children}
-        <hr className="fx-rule" aria-hidden="true" />
         {hint && (
           <p className="fx-hint">
             {hint === 'desktop'

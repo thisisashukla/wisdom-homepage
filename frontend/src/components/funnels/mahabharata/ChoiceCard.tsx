@@ -3,7 +3,7 @@
 import { useRef, type ReactNode } from 'react'
 import { mbTrack } from './track'
 
-/** "Their choice": the moment is visible; opening shows the verse and what it meant. */
+/** "Their choice": the moment is visible; opening shows the verse and what it meant. A house story card. */
 export default function ChoiceCard({
   person,
   moment,
@@ -18,7 +18,8 @@ export default function ChoiceCard({
   const sent = useRef(false)
   return (
     <details
-      className="mb-choice"
+      className="mb-choice rv"
+      id="choice"
       onToggle={(e) => {
         if ((e.currentTarget as HTMLDetailsElement).open && !sent.current) {
           sent.current = true
@@ -29,8 +30,9 @@ export default function ChoiceCard({
       <summary>
         <span className="mb-choice-k">Their choice</span>
         <span className="mb-choice-moment">{moment}</span>
-        <span className="mb-choice-cue" aria-hidden="true">
-          Read what they did
+        <span className="mb-choice-cue">
+          <span>Read what they did</span>
+          <i aria-hidden="true">+</i>
         </span>
       </summary>
       <div className="mb-choice-body">{children}</div>

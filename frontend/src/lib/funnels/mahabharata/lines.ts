@@ -48,3 +48,14 @@ export const domIdOf = (id: string): string => 'mbh-' + id.slice(4).replace(/[.]
 
 /** Short visible ref in the page language. */
 export const refOf = (l: MbhLine, locale: Locale): string => (locale === 'hi' ? l.refHi : l.ref)
+
+/** A line shaped for the typographic hero (Shell HeroLine). */
+export const heroLineOf = (id: string, locale: Locale = 'en') => {
+  const l = line(id)
+  return {
+    deva: l.deva,
+    iast: l.iast,
+    en: locale === 'hi' && l.hi ? l.hi : l.en,
+    source: `${l.speaker[locale]} · ${refOf(l, locale)}`,
+  }
+}

@@ -103,6 +103,7 @@ export default function NextStep({ locale, pageName, pageKey, placement, startSi
       <p className="qns-line">{t.line}</p>
       <a
         className="qns-btn"
+        data-mp-tracked="next_step"
         href={href}
         target={external ? '_blank' : undefined}
         rel={external ? 'noopener' : undefined}

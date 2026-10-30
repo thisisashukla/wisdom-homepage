@@ -1,330 +1,439 @@
-/* Mahabharata funnel: "Lamp before the war".
-   A night page lit by one lamp: palm-leaf text on night, bronze for the thread
-   you pull, teal and red only for the two armies, ash for what is quiet.
-   Wisdom gold (#f5c96a) appears only on links back to the Gita.
-   Mobile first (360 to 412px). Only transform and opacity animate.
-   Everything is visible without JS; reduced motion gets opacity only. */
+/* Mahabharata funnel on the house: maroon night, diya gold, Playfair and Inter, Tiro for Sanskrit.
+   Tokens come from app/home.css and app/home-v3.css; the hero, FAQ and story card come from
+   gita-for/theme-plan.css; verse cards from components/quotes/card.css (.qc). This file only adds
+   what the house does not have, built from those tokens, under .fx-mahabharata.
+   The one accent: the two armies on Day 1, gold-light (Pandava) and a muted maroon-rose (Kaurava).
+   Motion: transform and opacity only; .rv entrances via HomeAnimations; reduced motion is opacity only. */
 
 .fx-mahabharata {
-  --mb-night: #11131c;
-  --mb-night-2: #171a26;
-  --mb-leaf: #efe6d2;
-  --mb-leaf-2: rgba(239, 230, 210, 0.8);
-  --mb-leaf-3: rgba(239, 230, 210, 0.66);
-  --mb-bronze: #b07a3a;
-  --mb-bronze-hi: #d29a55;
-  --mb-pandu: #2f5d62;
-  --mb-kuru: #7a1f1f;
-  --mb-ash: #8a8578;
-  --mb-gold: #f5c96a;
-  --mb-rule: rgba(176, 122, 58, 0.28);
-  --mb-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, sans-serif;
-  --mb-head: var(--mb-display), 'Cormorant Garamond', var(--font-playfair), Georgia, serif;
-  --mb-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
-  --mb-in: cubic-bezier(0.4, 0, 0.2, 1);
-  --mb-fb: cubic-bezier(0.2, 0, 0, 1);
-
-  /* NextStep and the toast read these. */
-  --q-gold: var(--mb-bronze);
-  --q-gold-hi: var(--mb-bronze-hi);
-  --q-cream: var(--mb-leaf);
-  --q-cream-2: var(--mb-leaf-2);
-  --q-line: var(--mb-rule);
+  --mb-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), 'Noto Sans Devanagari', serif;
+  --mb-display: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  --mb-deva-ui: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  /* Day 1 armies: two restrained tints from the house palette. */
+  --mb-pandava-bg: rgba(245, 201, 106, 0.16);
+  --mb-pandava-line: rgba(245, 201, 106, 0.62);
+  --mb-pandava-ink: var(--gold-light);
+  --mb-kaurava-bg: rgba(92, 26, 26, 0.88);
+  --mb-kaurava-line: rgba(204, 140, 128, 0.72);
+  --mb-kaurava-ink: #e6b0a6;
+  --mb-card: #1b0908;
 
   display: block;
-  background:
-    radial-gradient(120% 60% at 12% 0%, rgba(176, 122, 58, 0.16), rgba(17, 19, 28, 0) 60%),
-    var(--mb-night);
-  color: var(--mb-leaf);
-  font-family: var(--mb-ui);
-  font-size: 16px;
-  line-height: 1.65;
-  padding: 0 0 72px;
-  min-height: 60vh;
+  position: relative;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, sans-serif;
+  overflow-x: clip;
 }
-.fx-mahabharata *,
-.fx-mahabharata *::before,
-.fx-mahabharata *::after { box-sizing: border-box; }
-.fx-mahabharata :focus-visible { outline: 2px solid var(--mb-bronze-hi); outline-offset: 3px; border-radius: 6px; }
-.fx-mahabharata a { color: var(--mb-leaf); text-decoration-color: var(--mb-bronze); text-underline-offset: 3px; }
-.fx-mahabharata a:hover { color: #fff; }
-.fx-mahabharata [lang='hi'],
-.fx-mahabharata:lang(hi) { font-family: var(--font-noto-devanagari), var(--mb-ui); }
-
-/* Column */
-.fx-mahabharata > * { width: min(100% - 32px, 720px); margin-inline: auto; }
-.fx-mahabharata .mb-wide { width: min(100% - 24px, 1040px); }
-
-/* Top bar: crumbs + script toggle */
-.mb-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 18px 0 6px; }
-.mb-crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 0; padding: 0; font-size: 13.5px; color: var(--mb-leaf-3); }
-.mb-crumbs li + li::before { content: '/'; margin-right: 6px; color: var(--mb-ash); }
-.mb-crumbs a { color: var(--mb-leaf-3); }
-.mb-script { display: inline-flex; align-items: center; gap: 2px; border: 1px solid var(--mb-rule); border-radius: 999px; padding: 3px; font-size: 13.5px; }
-.mb-script-label { color: var(--mb-ash); padding: 0 8px 0 10px; }
-.mb-script button {
-  min-height: 36px; min-width: 44px; padding: 4px 12px; border: 0; border-radius: 999px; background: transparent;
-  color: var(--mb-leaf-2); font: inherit; cursor: pointer; transition: background-color 160ms var(--mb-fb), color 160ms var(--mb-fb);
-}
-.mb-script button[lang='sa'] { font-family: var(--mb-sa); font-size: 15px; }
-.mb-script button[aria-pressed='true'] { background: var(--mb-bronze); color: var(--mb-night); }
+.fx-mahabharata:lang(hi) { font-family: var(--mb-deva-ui); }
+.fx-mahabharata :focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; border-radius: 8px; }
 
 /* Script toggle: Devanagari by default, IAST when chosen. Never both. */
 .fx-mahabharata .mb-iast { display: none; }
 .fx-mahabharata[data-script='iast'] .mb-iast { display: block; }
 .fx-mahabharata[data-script='iast'] .mb-deva { display: none; }
+.fx-mahabharata[data-script='iast'] .qc-iast { margin-top: 0; font-size: 19px; line-height: 1.65; color: var(--text); }
 
-/* Head */
-.mb-head { padding: 26px 0 8px; }
-.mb-kicker { margin: 0 0 10px; color: var(--mb-bronze-hi); font-size: 15px; }
-.mb-head h1 {
-  font-family: var(--mb-head); font-weight: 600; font-size: clamp(38px, 10vw, 60px); line-height: 1.04; letter-spacing: -0.01em;
-  margin: 0 0 18px; color: var(--mb-leaf); text-wrap: balance;
+/* ── Crumbs (both heroes) ─────────────────────────────────────────────── */
+.mb-crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.mb-crumbs li + li::before { content: '/'; margin-right: 8px; opacity: 0.6; }
+.mb-crumbs [aria-current] { color: var(--text-dim); }
+
+/* ── Art hero: theme-plan hero, art chosen per page ───────────────────── */
+.mb-hero .tp-hero-art img { object-position: 60% 30%; }
+.mb-hero .tp-h1:lang(hi) { font-family: var(--mb-deva-ui); font-weight: 700; line-height: 1.3; letter-spacing: 0; }
+
+/* ── Typographic hero: maroon diya glow, the line in Tiro as the visual ── */
+.mb-thero { position: relative; isolation: isolate; overflow: hidden; background: var(--bg); padding: 24px 0 52px; }
+.mb-thero-glow { position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(ellipse 90% 70% at 12% -12%, var(--maroon) 0%, rgba(61, 12, 12, 0) 72%),
+    linear-gradient(180deg, var(--maroon-deep) 0%, var(--bg) 80%); }
+.mb-thero-glow::after { content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 46% at 50% 62%, rgba(200, 136, 30, 0.16), rgba(200, 136, 30, 0) 70%);
+  animation: glow-breathe 9s ease-in-out infinite alternate; }
+.mb-thero-grid { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'crumbs' 'eyebrow' 'h1' 'sub' 'plate' 'facts' 'cta'; }
+.mb-thero-crumbs { grid-area: crumbs; margin-bottom: 22px; }
+.mb-thero-eyebrow { grid-area: eyebrow; }
+.mb-thero-h1 { grid-area: h1; margin-bottom: 10px; }
+.mb-thero-h1 [lang='hi'] { font-family: var(--mb-deva-ui); font-weight: 500; font-size: 0.6em; color: var(--gold-light); margin-left: 12px; letter-spacing: 0; }
+.mb-thero-sub { grid-area: sub; margin: 0 0 4px; max-width: 34em; color: var(--text-dim); }
+.mb-thero-facts { grid-area: facts; margin: 0 0 22px; }
+.mb-thero-cta { grid-area: cta; }
+
+.mb-plate { grid-area: plate; position: relative; margin: 18px 0 22px; padding: 30px 20px 22px; text-align: center; border-radius: var(--r-lg);
+  border: 1px solid rgba(245, 201, 106, 0.16);
+  background: radial-gradient(120% 140% at 50% 0%, rgba(245, 201, 106, 0.09), rgba(0, 0, 0, 0) 60%), rgba(0, 0, 0, 0.22); }
+.mb-plate-rule { position: absolute; top: -1px; left: 50%; width: 120px; margin-left: -60px; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, rgba(245, 201, 106, 0), var(--gold-light), rgba(245, 201, 106, 0)); }
+.mb-plate-sa { font-family: var(--mb-sa); font-size: clamp(22px, 5.9vw, 33px); line-height: 1.72; color: var(--gold-light); text-wrap: balance; }
+.mb-plate-row { display: block; }
+.mb-plate-iast { font-style: italic; font-size: clamp(18px, 4.6vw, 23px); line-height: 1.6; color: var(--text); }
+.mb-plate figcaption { margin-top: 14px; }
+.mb-plate-en { font-family: var(--mb-display); font-style: italic; font-size: clamp(16.5px, 1.8vw, 19.5px); line-height: 1.55; color: var(--gold-pale); max-width: 34em; margin: 0 auto; text-wrap: pretty; }
+.mb-plate-src { display: inline-flex; margin-top: 14px; padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: 12.5px; letter-spacing: 0.03em; color: var(--gold); }
+
+@media (min-width: 900px) {
+  .mb-thero { padding: 36px 0 64px; }
+  .mb-thero-grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); column-gap: 64px;
+    grid-template-areas: 'crumbs crumbs' '. plate' 'eyebrow plate' 'h1 plate' 'sub plate' 'facts plate' 'cta plate' '. plate';
+    grid-template-rows: auto 1fr auto auto auto auto auto 1fr; }
+  .mb-thero-crumbs { margin-bottom: 34px; }
+  .mb-plate { margin: 0; padding: 44px 36px 32px; align-self: start; }
+  .mb-thero-h1 { margin-bottom: 16px; }
+  .mb-thero-sub { margin-bottom: 20px; }
 }
-.mb-head h1 [lang='sa'], .mb-head h1 [lang='hi'] { font-family: var(--mb-sa); font-weight: 400; }
-#quick-answer, .mb-quick {
-  font-size: 18px; line-height: 1.62; color: var(--mb-leaf); margin: 0 0 6px; max-width: 62ch;
-  padding-left: 16px; border-left: 2px solid var(--mb-bronze);
-}
-.mb-head .mb-sub { color: var(--mb-leaf-2); margin: 14px 0 0; max-width: 62ch; }
 
-/* Sections */
-.mb-sec { padding: 38px 0 6px; }
-.mb-sec > h2, .mb-h2 {
-  font-family: var(--mb-head); font-weight: 600; font-size: clamp(28px, 7vw, 38px); line-height: 1.12;
-  margin: 0 0 14px; color: var(--mb-leaf); text-wrap: balance;
-}
-.mb-sec > h2:lang(hi) { font-family: var(--font-noto-devanagari), var(--mb-head); font-weight: 500; font-size: clamp(24px, 6.4vw, 32px); }
-.mb-sec h3 { font-family: var(--mb-head); font-weight: 600; font-size: 24px; line-height: 1.2; margin: 26px 0 8px; }
-.mb-sec p { max-width: 64ch; }
-.mb-lede { color: var(--mb-leaf-2); margin: 0 0 18px; }
-.mb-note { font-size: 14.5px; color: var(--mb-leaf-3); }
+/* Hero entrance: text follows through; the verse reveal is the page's one moment. */
+.mb-thero-grid > :not(.mb-plate) { animation: mbRise var(--t-std) var(--ease) both; }
+.mb-thero-eyebrow { animation-delay: 0ms !important; }
+.mb-thero-h1 { animation-delay: 80ms !important; }
+.mb-thero-sub { animation-delay: 160ms !important; }
+.mb-thero-facts { animation-delay: 260ms !important; }
+.mb-thero-cta { animation-delay: 360ms !important; }
+.mb-plate { animation: mbRise 600ms var(--ease) both; }
+.mb-thero:not([data-calm]) .mb-plate-rule { transform-origin: center; animation: mbDraw var(--t-slow) var(--ease) 200ms both; }
+.mb-thero:not([data-calm]) .mb-plate-row { animation: mbLine var(--t-std) var(--ease) both; animation-delay: calc(140ms + var(--i, 0) * 100ms); }
+.mb-thero:not([data-calm]) .mb-plate-en { animation: mbLine var(--t-std) var(--ease) 440ms both; }
+.mb-thero:not([data-calm]) .mb-plate-src { animation: mbLine var(--t-std) var(--ease) 520ms both; }
 
-/* Line card: a wick of bronze down the left, the Sanskrit large */
-.mb-line { position: relative; padding: 18px 0 16px 18px; margin: 0 0 14px; border-left: 2px solid var(--mb-rule); }
-.mb-line-label { margin: 0 0 6px; font-size: 13.5px; color: var(--mb-bronze-hi); }
-.mb-deva, .mb-iast { margin: 0 0 10px; }
-.mb-deva span, .mb-iast span { display: block; }
-.mb-deva { font-family: var(--mb-sa); font-size: clamp(21px, 5.6vw, 26px); line-height: 1.7; color: var(--mb-leaf); }
-.mb-iast { font-family: var(--mb-sa); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--mb-leaf); }
-.mb-meaning { margin: 0 0 8px; font-size: 17px; line-height: 1.6; color: var(--mb-leaf); }
-.mb-meaning[lang='hi'] { font-size: 18px; line-height: 1.75; }
-.mb-context { margin: 0 0 8px; font-size: 14.5px; color: var(--mb-leaf-3); }
-.mb-src { margin: 0; display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 13.5px; color: var(--mb-leaf-3); }
-.mb-ref { color: var(--mb-bronze-hi); font-variant-numeric: tabular-nums; }
-.mb-acts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.mb-acts button, .mb-acts a {
-  display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--mb-rule); border-radius: 999px;
-  background: transparent; color: var(--mb-leaf-2); font: inherit; font-size: 14px; text-decoration: none; cursor: pointer;
-  transition: border-color 160ms var(--mb-fb), color 160ms var(--mb-fb);
-}
-.mb-acts button:hover, .mb-acts a:hover { border-color: var(--mb-bronze); color: var(--mb-leaf); }
-.mb-acts [data-done] { border-color: var(--mb-bronze); color: var(--mb-bronze-hi); }
+/* ── Toolbar (script toggle) ──────────────────────────────────────────── */
+.mb-toolbar { display: flex; justify-content: flex-start; padding-top: 22px; }
+.mb-script { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-card); font-size: 13px; }
+.mb-script-label { padding: 0 8px 0 12px; color: var(--text-dimmer); }
+.mb-script button { min-height: 40px; min-width: 48px; padding: 4px 14px; border: 0; border-radius: 999px; background: transparent; color: var(--text-dim); font: inherit; cursor: pointer;
+  transition: color var(--t-quick) var(--ease-out); }
+.mb-script button[lang='sa'] { font-family: var(--mb-sa); font-size: 15px; }
+.mb-script button:hover { color: var(--gold-light); }
+.mb-script button[aria-pressed='true'] { background: var(--gold); color: #1a0606; font-weight: 600; }
 
-/* Gita links: the only gold on the page */
-.fx-mahabharata a.mb-gita { color: var(--mb-gold); text-decoration-color: rgba(245, 201, 106, 0.55); }
-.fx-mahabharata a.mb-gita:hover { color: #ffe3a3; }
-.mb-bridge { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
-.mb-bridge li { padding: 14px 16px; border: 1px solid rgba(245, 201, 106, 0.22); border-radius: 12px; }
-.mb-bridge a.mb-gita { font-weight: 600; }
-.mb-bridge p { margin: 4px 0 0; color: var(--mb-leaf-2); font-size: 15.5px; }
+/* ── Bands ────────────────────────────────────────────────────────────── */
+.fx-mahabharata .section.mb-band { padding: 72px 0; }
+.mb-col > * { max-width: 760px; }
+.mb-col-wide > * { max-width: none; }
+.mb-col > * + * { margin-top: 16px; }
+.mb-col > .mb-head + * { margin-top: 0; }
+.mb-head { margin-bottom: 28px; max-width: 760px; }
+.mb-head .heading { margin-bottom: 12px; text-wrap: balance; }
+.mb-head .subtext { max-width: 62ch; }
+.fx-mahabharata:lang(hi) .heading,
+.fx-mahabharata:lang(hi) .tp-faq-item summary { font-family: var(--mb-deva-ui); letter-spacing: 0; line-height: 1.4; }
+.fx-mahabharata .section.mb-intro { padding-top: 22px; }
+.mb-intro .tp-intro { margin: 0; }
+.mb-sub { font-size: 16px; line-height: 1.75; color: var(--text-dim); max-width: 66ch; }
+.mb-prose { font-size: 17px; line-height: 1.75; color: var(--text); max-width: 66ch; }
+.mb-band p a:not([class]) { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 3px; }
 
-/* Their choice */
-.mb-choice { margin: 26px 0 0; border: 1px solid var(--mb-bronze); border-radius: 14px; background: rgba(176, 122, 58, 0.06); }
-.mb-choice summary { list-style: none; cursor: pointer; padding: 16px 18px; display: grid; gap: 4px; min-height: 44px; }
+/* Gita links: gold-light, the way back to the Gita */
+.fx-mahabharata a.mb-gita { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 3px; }
+.fx-mahabharata a.mb-gita:hover { color: #fff; }
+.fx-mahabharata a.btn-read-gita.mb-gita { text-decoration: none; }
+
+/* ── Verse cards (.qc) ────────────────────────────────────────────────── */
+.mb-qc { scroll-margin-top: 90px; }
+.mb-qc-bare { padding-bottom: 20px; }
+.mb-qc .qc-badge { font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.mb-context { margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim); }
+
+/* Gita bridge: a gold-edged row back to the Gita verse */
+.mb-bridge { list-style: none; display: grid; gap: 10px; }
+.mb-bridge li { padding: 16px 18px; border-radius: 14px; border: 1px solid rgba(245, 201, 106, 0.3);
+  background: radial-gradient(120% 160% at 0% 0%, rgba(245, 201, 106, 0.09), rgba(0, 0, 0, 0) 60%), var(--bg-card); }
+.mb-bridge a.mb-gita { font-family: var(--mb-display); font-size: 18px; font-weight: 600; text-decoration: none; }
+.mb-bridge p { margin-top: 4px; font-size: 15px; line-height: 1.6; color: var(--text-dim); }
+
+/* ── Tiles (start here, people) ───────────────────────────────────────── */
+.mb-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.mb-tile { display: flex; flex-direction: column; gap: 6px; min-height: 44px; padding: 20px 20px 18px; border-radius: 16px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+  transition: transform var(--t-quick) var(--ease-out), border-color var(--t-quick) var(--ease-out); }
+.mb-tile:hover { transform: translateY(-2px); border-color: rgba(245, 201, 106, 0.55); }
+.mb-tile strong { font-family: var(--mb-display); font-size: 19px; font-weight: 700; line-height: 1.25; color: var(--gold-light); }
+.mb-tile span { font-size: 14.5px; line-height: 1.55; color: var(--text-dim); }
+.mb-tile-gita { border-color: rgba(245, 201, 106, 0.45); background: radial-gradient(120% 140% at 0% 0%, rgba(245, 201, 106, 0.12), rgba(0, 0, 0, 0) 60%), var(--bg-card); }
+@media (min-width: 900px) { .mb-tiles-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .mb-tiles:not(.mb-tiles-3) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* ── Eighteen books ───────────────────────────────────────────────────── */
+.mb-parvas { list-style: none; display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 40px; }
+.mb-parva { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 0 14px; padding: 16px 0; border-bottom: 1px solid var(--border); }
+.mb-parva-n { font-family: var(--mb-display); font-size: 22px; line-height: 1.2; color: var(--text-dimmer); text-align: right; font-variant-numeric: lining-nums; }
+.mb-parva h3 { font-family: var(--mb-display); font-size: 19px; font-weight: 600; line-height: 1.3; color: #fff; }
+.mb-parva h3 a { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 3px; }
+.mb-parva h3 [lang='hi'] { font-family: var(--mb-deva-ui); font-size: 14px; font-weight: 400; color: var(--text-dimmer); margin-left: 6px; }
+.mb-parva p { margin-top: 4px; font-size: 15px; line-height: 1.6; color: var(--text-dim); }
+.mb-parva-tag { display: inline-flex; margin-top: 8px; padding: 3px 10px; border: 1px solid var(--border); border-radius: 999px; font-size: 12px; color: var(--gold); }
+.mb-parva[data-held] .mb-parva-n { color: var(--gold); }
+.mb-parva[data-gita] { padding: 18px 16px 18px 0; border: 1px solid rgba(245, 201, 106, 0.45); border-radius: 16px; margin: 8px 0;
+  background: radial-gradient(120% 160% at 0% 0%, rgba(245, 201, 106, 0.12), rgba(0, 0, 0, 0) 60%), var(--bg-card); }
+.mb-parva[data-gita] .mb-parva-n { color: var(--gold-light); }
+.mb-parva-gita { font-weight: 600; }
+@media (min-width: 900px) { .mb-parvas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ── FAQ, next step, method ───────────────────────────────────────────── */
+.mb-faq .tp-faq { max-width: 760px; }
+.mb-method p { font-size: 14.5px; line-height: 1.7; color: var(--text-dim); max-width: 70ch; }
+.mb-method .heading { font-size: clamp(22px, 2.4vw, 28px); }
+.fx-mahabharata .section.mb-method { padding-bottom: 88px; }
+
+/* ── Character page: their choice (story card), lineage panel, the arc ── */
+.mb-choice { border-radius: var(--r-lg); border: 1px solid rgba(245, 201, 106, 0.32); overflow: hidden;
+  background: radial-gradient(130% 90% at 100% 0%, rgba(245, 201, 106, 0.12), rgba(0, 0, 0, 0) 55%), linear-gradient(180deg, rgba(61, 12, 12, 0.55), rgba(26, 6, 6, 0.6)); }
+.mb-choice summary { list-style: none; cursor: pointer; display: grid; gap: 8px; padding: 24px 22px 18px; }
 .mb-choice summary::-webkit-details-marker { display: none; }
-.mb-choice-k { font-size: 13.5px; color: var(--mb-bronze-hi); }
-.mb-choice-moment { font-family: var(--mb-head); font-size: 23px; line-height: 1.25; font-weight: 600; }
-.mb-choice-cue { font-size: 14px; color: var(--mb-leaf-3); text-decoration: underline; text-decoration-color: var(--mb-bronze); text-underline-offset: 3px; }
-.mb-choice[open] .mb-choice-cue { display: none; }
-.mb-choice-body { padding: 0 18px 12px; }
-.mb-choice-body .mb-line { border-left-color: var(--mb-bronze); }
-.mb-choice-plain { font-size: 17px; margin: 0 0 6px; }
+.mb-choice-k { font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
+.mb-choice-moment { font-family: var(--mb-display); font-size: clamp(21px, 2.6vw, 26px); line-height: 1.3; color: #fff; text-wrap: balance; }
+.mb-choice-cue { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14.5px; font-weight: 600; color: var(--gold-light); }
+.mb-choice-cue i { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(245, 201, 106, 0.5); font-style: normal; font-size: 17px; line-height: 1;
+  transition: transform var(--t-quick) var(--ease-out); }
+.mb-choice[open] .mb-choice-cue i { transform: rotate(45deg); }
+.mb-choice-body { padding: 0 22px 24px; }
+.mb-choice[open] .mb-choice-body { animation: mbRise var(--t-std) var(--ease) both; }
+.mb-choice-body .qc { background: rgba(0, 0, 0, 0.22); border-color: rgba(245, 201, 106, 0.16); }
+.mb-choice-plain { margin-top: 16px; padding: 14px 16px 14px 18px; border-left: 3px solid var(--gold-light); background: rgba(245, 201, 106, 0.06); border-radius: 0 12px 12px 0; font-size: 16px; line-height: 1.6; color: #fff; }
 
-/* Lineage strip */
-.mb-lineage { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 18px 0 0; padding: 12px 0; border-top: 1px solid var(--mb-rule); border-bottom: 1px solid var(--mb-rule); font-size: 14.5px; }
-.mb-lineage div { display: flex; flex-wrap: wrap; gap: 4px; align-items: baseline; }
-.mb-lineage dt { color: var(--mb-ash); margin-right: 4px; }
-.mb-lineage dd { margin: 0; }
+.mb-lineage { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+.mb-lineage > div { padding: 14px 16px; background: var(--bg); }
+.mb-lineage > div:last-child { grid-column: 1 / -1; }
+.mb-lineage dt { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dimmer); margin-bottom: 4px; }
+.mb-lineage dd { font-size: 15px; line-height: 1.5; color: var(--text); }
+.mb-lineage dd a { color: var(--gold-light); }
+.mb-lineage > div:last-child a { display: inline-flex; align-items: center; min-height: 32px; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 3px; }
+.mb-note { font-size: 14.5px; line-height: 1.6; color: var(--text-dim); font-style: italic; }
 
-/* Arc: a real sequence, so numbered */
-.mb-arc { list-style: none; margin: 0; padding: 0; counter-reset: beat; }
-.mb-arc li { counter-increment: beat; position: relative; padding: 0 0 18px 44px; }
-.mb-arc li::before {
-  content: counter(beat); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%;
-  border: 1px solid var(--mb-bronze); color: var(--mb-bronze-hi); display: grid; place-items: center; font-size: 14px;
-}
-.mb-arc li::after { content: ''; position: absolute; left: 15px; top: 34px; bottom: 4px; width: 1px; background: var(--mb-rule); }
+/* A real sequence, so numbered: nodes on a thread, as on the reading plans */
+.mb-arc { list-style: none; position: relative; counter-reset: beat; }
+.mb-arc li { position: relative; counter-increment: beat; padding: 0 0 26px 58px; }
+.mb-arc li::before { content: counter(beat); position: absolute; left: 0; top: 0; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center;
+  font: 600 15px/1 var(--mb-display); color: var(--gold-light); background: var(--bg); border: 1.5px solid rgba(200, 136, 30, 0.45); }
+.section-alt .mb-arc li::before { background: var(--bg-alt); }
+.mb-arc li::after { content: ''; position: absolute; left: 18px; top: 44px; bottom: 6px; width: 2px; border-radius: 2px; background: rgba(200, 136, 30, 0.2); }
+.mb-arc li:last-child { padding-bottom: 0; }
 .mb-arc li:last-child::after { display: none; }
-.mb-arc strong { display: block; font-family: var(--mb-head); font-size: 21px; font-weight: 600; line-height: 1.25; }
-.mb-arc p { margin: 2px 0 0; color: var(--mb-leaf-2); }
-.mb-arc .mb-ref { font-size: 13.5px; }
+.mb-arc strong { display: block; padding-top: 6px; font-family: var(--mb-display); font-size: 20px; font-weight: 600; line-height: 1.3; color: #fff; }
+.mb-arc p { margin-top: 6px; font-size: 16px; line-height: 1.7; color: var(--text-dim); }
+.mb-ref { display: inline-block; font-size: 12.5px; letter-spacing: 0.03em; color: var(--gold); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
-/* Lists of links (start here, characters, chapters) */
-.mb-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--mb-rule); }
-.mb-links li { border-bottom: 1px solid var(--mb-rule); }
-.mb-links a { display: block; padding: 14px 2px; text-decoration: none; min-height: 44px; }
-.mb-links a strong { display: block; font-family: var(--mb-head); font-size: 22px; font-weight: 600; line-height: 1.2; }
-.mb-links a span { display: block; color: var(--mb-leaf-3); font-size: 14.5px; }
+/* ── Where is the Gita: book six as a thread that draws to the Gita ───── */
+.mb-strip { list-style: none; position: relative; }
+.mb-strip::before { content: ''; position: absolute; left: 18px; top: 10px; bottom: 30px; width: 2px; border-radius: 2px; background: linear-gradient(180deg, rgba(200, 136, 30, 0.25), var(--gold-light) 70%, rgba(200, 136, 30, 0.25)); transform-origin: top; }
+.motion .mb-strip.rv::before { transform: scaleY(0); }
+.motion .mb-strip.rv.in::before { transform: scaleY(1); transition: transform var(--t-slow) var(--ease) 240ms; }
+.mb-strip li { position: relative; padding: 0 0 26px 58px; }
+.mb-strip li::before { content: ''; position: absolute; left: 11px; top: 8px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg-alt); border: 2px solid rgba(200, 136, 30, 0.55); }
+.mb-strip strong { display: block; font-family: var(--mb-display); font-size: 20px; font-weight: 600; line-height: 1.3; color: #fff; }
+.mb-strip strong:lang(hi) { font-family: var(--mb-deva-ui); }
+.mb-strip p { margin-top: 6px; font-size: 16px; line-height: 1.7; color: var(--text-dim); }
+.mb-strip li[data-gita] { margin: 0 0 26px; padding: 20px 20px 20px 58px; border-radius: 18px; border: 1px solid rgba(245, 201, 106, 0.45);
+  background: radial-gradient(120% 160% at 0% 0%, rgba(245, 201, 106, 0.14), rgba(0, 0, 0, 0) 60%), var(--mb-card); }
+.mb-strip li[data-gita]::before { left: 9px; top: 24px; width: 20px; height: 20px; background: var(--gold-light); border-color: var(--gold-light); box-shadow: 0 0 0 6px rgba(245, 201, 106, 0.12), 0 0 26px rgba(245, 201, 106, 0.35); }
+.mb-strip li[data-gita] strong { color: var(--gold-light); }
+.mb-strip li[data-gita] p { color: var(--text); }
+.mb-strip li[data-gita] p:last-child { margin-top: 12px; font-weight: 600; }
 
-/* Parvas */
-.mb-parvas { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-.mb-parva { display: grid; grid-template-columns: 34px 1fr; gap: 0 12px; padding: 12px 0; border-bottom: 1px solid var(--mb-rule); }
-.mb-parva-n { font-family: var(--mb-head); font-size: 24px; color: var(--mb-ash); line-height: 1.2; text-align: right; font-variant-numeric: lining-nums; }
-.mb-parva h3 { margin: 0; font-size: 21px; }
-.mb-parva p { margin: 2px 0 0; color: var(--mb-leaf-2); font-size: 15px; }
-.mb-parva-tag { display: inline-block; margin-top: 6px; font-size: 13px; color: var(--mb-bronze-hi); }
-.mb-parva[data-held] .mb-parva-n { color: var(--mb-bronze-hi); }
-.mb-parva[data-gita] { border-left: 2px solid var(--mb-gold); padding-left: 8px; margin-left: -10px; }
-.mb-parva[data-gita] .mb-parva-n { color: var(--mb-gold); }
+.mb-chapters { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.mb-chapters a { display: flex; flex-direction: column; gap: 2px; min-height: 44px; height: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-card);
+  font-size: 14px; font-weight: 600; line-height: 1.35; text-decoration: none !important; transition: transform var(--t-quick) var(--ease-out), border-color var(--t-quick) var(--ease-out); }
+.mb-chapters a:hover { transform: translateY(-1px); border-color: rgba(245, 201, 106, 0.55); }
+.mb-chapters a span { display: block; font-size: 12.5px; font-weight: 400; color: var(--text-dim); }
+.mb-read18 { font-weight: 600; }
+@media (min-width: 900px) { .mb-chapters { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
-/* Gita chapter grid */
-.mb-chapters { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
-.mb-chapters a { display: block; min-height: 44px; padding: 10px 12px; border: 1px solid rgba(245, 201, 106, 0.22); border-radius: 10px; text-decoration: none; font-size: 14.5px; line-height: 1.35; }
-.mb-chapters a span { display: block; color: var(--mb-leaf-3); font-size: 13px; }
+/* ── Yaksha: one card per question and answer ─────────────────────────── */
+.mb-qa { padding: 22px 20px 4px; border-radius: 16px; border: 1px solid var(--border); background: var(--mb-card); scroll-margin-top: 90px; }
+.mb-qa h3 { font-family: var(--mb-display); font-size: 21px; font-weight: 600; line-height: 1.3; color: #fff; margin-bottom: 14px; }
+.mb-qa .qc { padding: 0; background: none; border: 0; border-radius: 0; }
+.mb-qa .mb-ask { padding-bottom: 16px; margin-bottom: 18px; border-bottom: 1px dashed var(--border); }
+.mb-qa .mb-ask .qc-sa,
+.mb-ask.qc .qc-sa { font-size: clamp(18px, 4.8vw, 21px); color: var(--text); }
+.mb-ask .qc-badge { color: var(--text-dim); }
+.mb-ask .qc-meaning { font-size: 16px; color: var(--text-dim); }
+.mb-ask.mb-qc:not(.mb-qa .mb-ask) { background: transparent; border-style: dashed; }
 
-/* Bhishma Parva strip on where-is-the-gita */
-.mb-strip { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--mb-rule); }
-.mb-strip li { position: relative; padding: 0 0 16px 20px; }
-.mb-strip li::before { content: ''; position: absolute; left: -6px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--mb-night); border: 2px solid var(--mb-ash); }
-.mb-strip li[data-gita]::before { border-color: var(--mb-gold); background: var(--mb-gold); }
-.mb-strip strong { display: block; font-family: var(--mb-head); font-size: 21px; font-weight: 600; line-height: 1.25; }
-.mb-strip p { margin: 2px 0 0; color: var(--mb-leaf-2); font-size: 15.5px; }
-
-/* Yaksha Q and A */
-.mb-qa { margin: 0 0 24px; padding: 0 0 8px; border-bottom: 1px solid var(--mb-rule); }
-.mb-qa h3 { margin-top: 0; }
-.mb-qa .mb-line:first-of-type { border-left-color: var(--mb-ash); }
-.mb-qa .mb-line + .mb-line { border-left-color: var(--mb-bronze); }
-
-/* Quiz */
-.mb-quiz { border: 1px solid var(--mb-rule); border-radius: 16px; padding: 18px; background: var(--mb-night-2); }
-.mb-quiz-count { margin: 0 0 6px; font-size: 13.5px; color: var(--mb-ash); }
-.mb-quiz h3 { font-family: var(--mb-head); font-size: 25px; line-height: 1.2; margin: 0 0 14px; }
-.mb-quiz-opts { display: grid; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
-.mb-quiz-opts button {
-  width: 100%; min-height: 48px; text-align: left; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--mb-rule);
-  background: transparent; color: var(--mb-leaf); font: inherit; cursor: pointer; transition: border-color 160ms var(--mb-fb), background-color 160ms var(--mb-fb);
-}
-.mb-quiz-opts button:hover:not(:disabled) { border-color: var(--mb-bronze); }
+/* Quiz: house card and chips */
+.mb-quiz { border-radius: var(--r-lg); border: 1px solid rgba(245, 201, 106, 0.3); padding: 24px 20px 22px;
+  background: radial-gradient(120% 90% at 50% 0%, rgba(245, 201, 106, 0.08), rgba(0, 0, 0, 0) 60%), var(--mb-card); }
+.mb-quiz-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin-bottom: 14px; }
+.mb-quiz-count { font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
+.mb-quiz-dots { display: flex; gap: 6px; }
+.mb-quiz-dots i { width: 8px; height: 8px; border-radius: 50%; background: rgba(245, 201, 106, 0.2); }
+.mb-quiz-dots i[data-s='right'] { background: var(--gold-light); }
+.mb-quiz-dots i[data-s='wrong'] { background: rgba(245, 201, 106, 0.2); box-shadow: inset 0 0 0 1px var(--gold); }
+.mb-quiz-dots i[data-s='now'] { background: rgba(245, 201, 106, 0.55); transform: scale(1.25); }
+.mb-quiz h3 { font-family: var(--mb-display); font-size: clamp(21px, 2.6vw, 26px); font-weight: 600; line-height: 1.3; color: #fff; margin-bottom: 18px; text-wrap: balance; }
+.mb-quiz-q { animation: mbRise var(--t-std) var(--ease) both; }
+.mb-quiz-opts { list-style: none; display: grid; gap: 8px; margin-bottom: 16px; }
+@media (min-width: 700px) { .mb-quiz-opts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.mb-quiz-opts button { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; height: 100%; min-height: 52px; padding: 12px 18px; border-radius: 14px;
+  border: 1px solid rgba(200, 136, 30, 0.28); background: transparent; color: var(--text); font: inherit; font-size: 15.5px; line-height: 1.4; text-align: left; cursor: pointer;
+  transition: border-color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out), opacity var(--t-quick) var(--ease-out); }
+.mb-quiz-opts button:hover:not(:disabled) { border-color: rgba(200, 136, 30, 0.6); }
+.mb-quiz-opts button:active:not(:disabled) { transform: scale(0.98); }
 .mb-quiz-opts button:disabled { cursor: default; }
-.mb-quiz-opts button[data-state='right'] { border-color: var(--mb-bronze-hi); background: rgba(176, 122, 58, 0.18); }
-.mb-quiz-opts button[data-state='wrong'] { border-color: var(--mb-ash); opacity: 0.75; text-decoration: line-through; text-decoration-color: var(--mb-ash); }
-.mb-quiz-why { margin: 0 0 12px; color: var(--mb-leaf-2); }
-.mb-quiz-why strong { color: var(--mb-leaf); }
-.mb-btn {
-  display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 20px; border-radius: 999px; border: 0;
-  background: var(--mb-bronze); color: var(--mb-night); font: inherit; font-weight: 600; cursor: pointer; text-decoration: none;
+.mb-quiz-opts button[data-state='right'] { background: rgba(200, 136, 30, 0.16); border-color: var(--gold); color: var(--gold-light); }
+.mb-quiz-opts button[data-state='right']::after { content: '\2713'; font-weight: 700; }
+.mb-quiz-opts button[data-state='wrong'] { opacity: 0.75; border-style: dashed; border-color: rgba(245, 232, 204, 0.3); color: var(--text-dim); text-decoration: line-through; text-decoration-color: var(--text-dim); }
+.mb-quiz-opts button:disabled:not([data-state]) { opacity: 0.45; }
+.mb-quiz-why { margin-bottom: 16px; padding: 14px 16px 14px 18px; border-left: 3px solid var(--gold-light); background: rgba(245, 201, 106, 0.06); border-radius: 0 12px 12px 0;
+  font-size: 15.5px; line-height: 1.65; color: var(--text); animation: mbRise var(--t-std) var(--ease) both; }
+.mb-quiz-why strong { color: #fff; }
+.mb-quiz-score { font-family: var(--mb-display); font-size: clamp(44px, 8vw, 60px); line-height: 1; color: var(--gold-light); margin-bottom: 10px; }
+.fx-mahabharata button.btn-primary,
+.fx-mahabharata button.btn-ghost { border-style: solid; cursor: pointer; font-family: inherit; min-height: 48px; }
+.fx-mahabharata button.btn-primary { border: 0; }
+
+/* ── Quotes: jump chips ───────────────────────────────────────────────── */
+.mb-jump { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.mb-jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid rgba(200, 136, 30, 0.2); color: var(--text-dim); font-size: 14.5px;
+  transition: border-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out); }
+.mb-jump a:hover { border-color: rgba(200, 136, 30, 0.42); color: var(--text); }
+.mb-jump a:active { transform: scale(0.97); }
+.mb-screened { font-size: 14px; }
+
+/* ── Family tree: "Pull a thread" (the hub's one orchestrated moment) ── */
+.mb-tree-wrap { display: grid; gap: 16px; }
+@media (min-width: 1000px) {
+  .mb-tree-wrap { grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+  .mb-person-slot { position: sticky; top: 88px; }
 }
-.mb-btn:hover { background: var(--mb-bronze-hi); color: var(--mb-night); }
-.mb-btn-ghost { background: transparent; color: var(--mb-leaf); border: 1px solid var(--mb-rule); }
-.mb-btn-ghost:hover { background: transparent; border-color: var(--mb-bronze); color: var(--mb-leaf); }
-
-/* FAQ */
-.mb-faq dl { margin: 0; }
-.mb-faq-item { padding: 14px 0; border-bottom: 1px solid var(--mb-rule); }
-.mb-faq dt { font-family: var(--mb-head); font-size: 21px; font-weight: 600; line-height: 1.25; margin: 0 0 4px; }
-.mb-faq dt:lang(hi) { font-family: var(--font-noto-devanagari), var(--mb-head); font-size: 18px; font-weight: 500; }
-.mb-faq dd { margin: 0; color: var(--mb-leaf-2); }
-
-/* Sources and method */
-.mb-method { font-size: 14.5px; color: var(--mb-leaf-3); }
-.mb-method h2 { font-size: 24px !important; }
-
-/* Next step */
-.mb-next .qns { padding: 18px; border: 1px solid var(--mb-rule); border-radius: 16px; background: var(--mb-night-2); }
-
-/* ── Family tree: "Pull a thread" ── */
-.mb-tree-wrap { position: relative; }
-.mb-tree-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 0 0 14px; }
-.mb-army {
-  display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px 0 10px; border-radius: 999px;
-  border: 1px solid var(--mb-rule); background: transparent; color: var(--mb-leaf); font: inherit; font-size: 14.5px; cursor: pointer;
-}
-.mb-army-dot { width: 34px; height: 20px; border-radius: 999px; background: var(--mb-night-2); border: 1px solid var(--mb-ash); position: relative; }
-.mb-army-dot::after { content: ''; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--mb-ash); transition: transform 160ms var(--mb-fb), background-color 160ms var(--mb-fb); }
-.mb-army[aria-pressed='true'] .mb-army-dot::after { transform: translateX(14px); background: var(--mb-bronze-hi); }
-.mb-tree-hint { margin: 0; font-size: 14px; color: var(--mb-leaf-3); }
-.mb-legend { display: none; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 12px; padding: 0; list-style: none; font-size: 13.5px; color: var(--mb-leaf-2); }
-.mb-tree-wrap[data-army] .mb-legend { display: flex; }
-.mb-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.mb-tree-main { padding: 18px 16px 8px; border-radius: var(--r-xl); border: 1px solid var(--border);
+  background:
+    radial-gradient(80% 50% at 50% 0%, rgba(200, 136, 30, 0.1), rgba(200, 136, 30, 0) 70%),
+    radial-gradient(90% 70% at 0% 100%, rgba(61, 12, 12, 0.55), rgba(61, 12, 12, 0) 70%),
+    var(--bg); }
+@media (min-width: 700px) { .mb-tree-main { padding: 22px 24px 10px; } }
+.mb-tree-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.mb-army { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px 0 10px; border-radius: 999px; border: 1px solid rgba(200, 136, 30, 0.35); background: transparent;
+  color: var(--text); font: inherit; font-size: 14.5px; font-weight: 600; cursor: pointer; transition: transform var(--t-quick) var(--ease-out); }
+.mb-army:active { transform: scale(0.97); }
+.mb-army[aria-pressed='true'] { border-color: var(--gold); color: var(--gold-light); background: rgba(200, 136, 30, 0.12); }
+.mb-army-dot { position: relative; width: 36px; height: 20px; border-radius: 999px; border: 1px solid rgba(245, 232, 204, 0.3); background: rgba(0, 0, 0, 0.3); }
+.mb-army-dot::after { content: ''; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--text-dim); transition: transform var(--t-quick) var(--ease-out); }
+.mb-army[aria-pressed='true'] .mb-army-dot { border-color: var(--gold); }
+.mb-army[aria-pressed='true'] .mb-army-dot::after { transform: translateX(16px); background: var(--gold-light); }
+.mb-legend { display: none; flex-wrap: wrap; gap: 6px 16px; list-style: none; font-size: 13px; color: var(--text-dim); }
+.mb-tree-wrap[data-army] .mb-legend { display: flex; animation: mbFade var(--t-std) var(--ease) both; }
+.mb-legend li { display: inline-flex; align-items: center; gap: 7px; }
 .mb-legend i { display: inline-block; width: 14px; height: 14px; border-radius: 4px; }
-.mb-legend .lg-p { background: var(--mb-pandu); }
-.mb-legend .lg-k { background: var(--mb-kuru); }
-.mb-legend .lg-n { border: 1px dashed var(--mb-ash); }
+.mb-legend .lg-p { background: var(--mb-pandava-bg); border: 1px solid var(--mb-pandava-line); }
+.mb-legend .lg-k { background: var(--mb-kaurava-bg); border: 1px solid var(--mb-kaurava-line); }
+.mb-legend .lg-n { border: 1px dashed rgba(245, 232, 204, 0.35); }
 
-.mb-tree { position: relative; padding: 4px 0 6px; }
-.mb-threads { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
-.mb-threads path { fill: none; stroke: var(--mb-bronze-hi); stroke-width: 1.5; stroke-linecap: round; opacity: 0.85; }
-.mb-threads path[data-k='spouse'] { stroke-dasharray: 4 5; }
-.mb-threads[data-motion] path.draw:not([data-k='spouse']) { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: mb-draw 900ms var(--mb-in) forwards; }
-.mb-threads[data-motion] path.draw[data-k='spouse'] { animation: mb-fade 500ms var(--mb-in) both; }
-@keyframes mb-fade { from { opacity: 0; } to { opacity: 0.85; } }
-@keyframes mb-draw { to { stroke-dashoffset: 0; } }
+.mb-tree { position: relative; }
+.mb-threads { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 0; }
+.mb-threads path { fill: none; stroke: var(--gold-light); stroke-width: 1.6; stroke-linecap: round; opacity: 0.9; }
+.mb-threads path[data-k='spouse'] { stroke-dasharray: 3 5; opacity: 0.75; }
+.mb-threads path[data-k='kin'] { opacity: 0.5; }
+.mb-threads[data-motion] path.draw:not([data-k='spouse']) { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: mbStroke var(--t-slow) var(--ease) forwards; }
+.mb-threads[data-motion] path.draw[data-k='spouse'] { animation: mbFade var(--t-std) var(--ease) 200ms both; }
 
-.mb-row { position: relative; margin: 0 0 12px; }
-.mb-row-label { margin: 0 0 6px; font-size: 12.5px; color: var(--mb-ash); }
-.mb-row-groups { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.mb-row { position: relative; margin-bottom: 18px; }
+.mb-row-label { margin-bottom: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dimmer); }
+.mb-row-groups { display: flex; flex-wrap: wrap; gap: 12px 24px; }
 .mb-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; }
-.mb-group-label { flex-basis: 100%; margin: 0; font-size: 12px; color: var(--mb-ash); }
-.mb-node {
-  position: relative; z-index: 1; min-height: 44px; padding: 6px 12px; border-radius: 10px; border: 1px solid rgba(239, 230, 210, 0.22);
-  background: var(--mb-night-2); color: var(--mb-leaf); font: inherit; font-size: 14.5px; line-height: 1.2; cursor: pointer; text-align: left;
-  transition: opacity 260ms var(--mb-in), border-color 160ms var(--mb-fb), background-color 260ms var(--mb-in), color 260ms var(--mb-in);
-}
-.mb-node small { display: block; font-size: 11.5px; color: var(--mb-leaf-3); margin-top: 2px; }
-.mb-node:hover { border-color: var(--mb-bronze); }
-.mb-node[data-page]::after { content: ''; position: absolute; top: 6px; right: 6px; width: 5px; height: 5px; border-radius: 50%; background: var(--mb-bronze); }
-.mb-tree[data-sel] .mb-node { opacity: 0.34; }
-.mb-tree[data-sel] .mb-node[data-rel] { opacity: 1; border-color: var(--mb-bronze); background: rgba(176, 122, 58, 0.16); }
-.mb-tree[data-sel] .mb-node[data-rel='self'] { background: var(--mb-bronze); color: var(--mb-night); border-color: var(--mb-bronze-hi); }
-.mb-tree[data-sel] .mb-node[data-rel='self'] small { color: rgba(17, 19, 28, 0.75); }
-/* Day 1 armies */
-.mb-tree[data-army] .mb-node[data-side='pandava'] { background: var(--mb-pandu); border-color: #4d8a90; }
-.mb-tree[data-army] .mb-node[data-side='kaurava'] { background: var(--mb-kuru); border-color: #a8433f; }
-.mb-tree[data-army] .mb-node[data-side='none'] { background: transparent; border-style: dashed; border-color: var(--mb-ash); color: var(--mb-leaf-2); }
-.mb-tree[data-sel][data-army] .mb-node[data-rel] { box-shadow: 0 0 0 2px var(--mb-bronze-hi); }
-.mb-tree[data-sel][data-army] .mb-node[data-rel='self'] { color: var(--mb-leaf); }
+.mb-group-label { flex-basis: 100%; font-size: 12.5px; color: var(--text-dim); }
 
-.mb-person { margin: 14px 0 0; padding: 16px 18px; border: 1px solid var(--mb-bronze); border-radius: 14px; background: rgba(176, 122, 58, 0.06); }
-.mb-person h3 { margin: 0 0 4px; font-family: var(--mb-head); font-size: 28px; }
-.mb-person h3 [lang] { font-family: var(--mb-sa); font-weight: 400; font-size: 20px; color: var(--mb-leaf-3); margin-left: 8px; }
-.mb-person p { margin: 0 0 8px; }
-.mb-person-rel { display: grid; gap: 6px; margin: 8px 0 10px; font-size: 14.5px; }
-.mb-person-rel div { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
-.mb-person-rel span { color: var(--mb-ash); min-width: 64px; }
-.mb-person-rel button { min-height: 36px; padding: 2px 10px; border-radius: 8px; border: 1px solid var(--mb-rule); background: transparent; color: var(--mb-leaf); font: inherit; cursor: pointer; }
-.mb-person-rel button:hover { border-color: var(--mb-bronze); }
-.mb-person .mb-line { margin-top: 10px; border-left-color: var(--mb-bronze); }
-.mb-person-links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
-.mb-person-empty { color: var(--mb-leaf-3); font-size: 15px; margin: 14px 0 0; }
+.mb-node { position: relative; z-index: 1; isolation: isolate; min-height: 44px; padding: 7px 13px; border-radius: 12px; border: 1px solid rgba(245, 232, 204, 0.14); background: var(--mb-card);
+  color: var(--text); font: inherit; font-size: 14.5px; font-weight: 500; line-height: 1.2; text-align: left; cursor: pointer;
+  transition: opacity 260ms var(--ease), transform var(--t-quick) var(--ease-out); }
+.mb-node:hover { border-color: rgba(245, 201, 106, 0.5); }
+.mb-node:active { transform: scale(0.97); }
+.mb-node small { display: block; margin-top: 2px; font-size: 11px; font-weight: 500; color: var(--text-dimmer); }
+.mb-node-name { position: relative; }
+.mb-node[data-page] .mb-node-name::after { content: ''; display: inline-block; width: 5px; height: 5px; margin: 0 0 7px 5px; border-radius: 50%; background: var(--gold); vertical-align: middle; }
+/* Two fading layers per node (opacity only): ::before the Day 1 army tint, ::after the pulled thread. */
+.mb-node::before,
+.mb-node::after { content: ''; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; opacity: 0; pointer-events: none; transition: opacity 320ms var(--ease); }
+.mb-node::before { transition-delay: calc(min(var(--r, 0) * 80ms, 420ms)); }
+.mb-node::after { background: rgba(245, 201, 106, 0.1); border: 1px solid var(--gold-light); }
+.mb-tree[data-army] .mb-node[data-side='pandava']::before { opacity: 1; background: var(--mb-pandava-bg); border: 1px solid var(--mb-pandava-line); }
+.mb-tree[data-army] .mb-node[data-side='kaurava']::before { opacity: 1; background: var(--mb-kaurava-bg); border: 1px solid var(--mb-kaurava-line); }
+.mb-tree[data-army] .mb-node[data-side='none']::before { opacity: 1; background: var(--bg); border: 1px dashed rgba(245, 232, 204, 0.3); }
+.mb-tree[data-army] .mb-node[data-side='pandava'] small { color: var(--mb-pandava-ink); }
+.mb-tree[data-army] .mb-node[data-side='kaurava'] small { color: var(--mb-kaurava-ink); }
+.mb-tree[data-army] .mb-node[data-side='none'] { color: var(--text-dim); }
+.mb-tree[data-sel] .mb-node { opacity: 0.3; }
+.mb-tree[data-sel] .mb-node[data-rel] { opacity: 1; }
+.mb-tree[data-sel] .mb-node[data-rel]::after { opacity: 1; }
+.mb-tree[data-sel] .mb-node[data-rel] small { color: var(--gold-light); }
+.mb-tree[data-sel] .mb-node[data-rel='self'] { color: #1a0606; }
+.mb-tree[data-sel] .mb-node[data-rel='self']::after { background: var(--gold-light); box-shadow: 0 0 0 5px rgba(245, 201, 106, 0.12), 0 0 26px rgba(245, 201, 106, 0.35); }
+.mb-tree[data-sel] .mb-node[data-rel='self'] small { color: rgba(26, 6, 6, 0.72); }
+.mb-tree[data-sel] .mb-node[data-rel='self'] .mb-node-name::after { background: #1a0606; }
 
-.mb-family-list summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; color: var(--mb-leaf-2); }
-.mb-family-list dl { margin: 10px 0 0; font-size: 15px; }
-.mb-family-list dt { font-weight: 600; margin-top: 10px; }
-.mb-family-list dd { margin: 0; color: var(--mb-leaf-2); }
+/* The person you pulled: a story card beside the tree (below it on phones) */
+.mb-person { padding: 22px 20px 20px; border-radius: var(--r-lg); border: 1px solid rgba(245, 201, 106, 0.32);
+  background: radial-gradient(130% 90% at 100% 0%, rgba(245, 201, 106, 0.1), rgba(0, 0, 0, 0) 55%), linear-gradient(180deg, rgba(61, 12, 12, 0.55), rgba(26, 6, 6, 0.6));
+  animation: mbRise var(--t-std) var(--ease) both; }
+.mb-person-k { margin-bottom: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
+.mb-person h3 { font-family: var(--mb-display); font-size: 28px; font-weight: 700; line-height: 1.15; color: #fff; }
+.mb-person h3 [lang='hi'] { margin-left: 10px; font-family: var(--mb-deva-ui); font-size: 18px; font-weight: 400; color: var(--gold-light); }
+.mb-person-role { margin-top: 8px; font-size: 15.5px; line-height: 1.6; color: var(--text); }
+.mb-person-note { margin-top: 8px; font-size: 14px; line-height: 1.6; color: var(--text-dim); font-style: italic; }
+.mb-person-rel { display: grid; gap: 8px; margin-top: 16px; }
+.mb-person-rel div { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.mb-person-rel span { flex-basis: 100%; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dimmer); }
+.mb-person-rel button { min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid rgba(200, 136, 30, 0.3); background: transparent; color: var(--text); font: inherit; font-size: 14px; cursor: pointer;
+  transition: border-color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out); }
+.mb-person-rel button:hover { border-color: var(--gold); color: var(--gold-light); }
+.mb-person-rel button:active { transform: scale(0.97); }
+.mb-person-line.qc { margin-top: 16px; padding: 18px 16px 16px; background: rgba(0, 0, 0, 0.22); border-color: rgba(245, 201, 106, 0.16); text-align: left; }
+.mb-person-line .qc-sa { font-size: clamp(19px, 5vw, 22px); }
+.mb-person-line .qc-meaning { font-size: 15.5px; }
+.mb-person-links { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; font-size: 15px; line-height: 1.5; }
+.mb-person-page { display: inline-flex; align-self: flex-start; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 10px; background: var(--gold); color: #1a0606 !important; font-weight: 700; }
+.mb-person-empty { border-style: dashed; background: var(--bg-card); }
+.mb-person-empty p:last-child { font-size: 15px; line-height: 1.65; color: var(--text-dim); }
 
-/* Screened lines */
-.mb-screened { font-size: 14.5px; color: var(--mb-leaf-3); }
-.mb-screened code { font-family: inherit; color: var(--mb-leaf-2); }
+.mb-family-list { margin-top: 18px; }
+.mb-family-list summary { display: inline-flex; align-items: center; min-height: 44px; cursor: pointer; color: var(--gold-light); font-weight: 600; font-size: 14.5px; }
+.mb-family-list dl { margin-top: 10px; font-size: 14.5px; line-height: 1.6; columns: 2 320px; column-gap: 40px; }
+.mb-family-list dl > div { break-inside: avoid; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.mb-family-list dt { font-weight: 600; color: var(--text); }
+.mb-family-list dt a { color: var(--gold-light); }
+.mb-family-list dd { color: var(--text-dim); }
 
-@media (min-width: 760px) {
-  .mb-head { padding-top: 44px; }
-  .mb-faq dl { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
-  .mb-node { font-size: 15px; }
+/* ── Keyframes (transform and opacity only) ───────────────────────────── */
+@keyframes mbRise { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes mbLine { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes mbFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes mbDraw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes mbStroke { to { stroke-dashoffset: 0; } }
+
+/* ── Mobile ───────────────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .fx-mahabharata .section.mb-band { padding: 52px 0; }
+  .fx-mahabharata .section.mb-intro { padding-top: 18px; }
+  .mb-head { margin-bottom: 22px; }
+  .mb-tree-main { border-radius: var(--r-lg); }
+  .mb-node { padding: 7px 11px; font-size: 14px; }
+  .mb-row-groups { gap: 12px 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fx-mahabharata *, .fx-mahabharata *::before, .fx-mahabharata *::after { animation: none !important; transition-property: opacity !important; }
-  .mb-threads path.draw { stroke-dashoffset: 0 !important; }
+  .fx-mahabharata *,
+  .fx-mahabharata *::before,
+  .fx-mahabharata *::after { animation-name: mbFade !important; animation-duration: 250ms !important; animation-iteration-count: 1 !important; animation-delay: 0ms !important; }
+  .mb-thero-glow::after { animation: none !important; }
+  .mb-threads path.draw { stroke-dashoffset: 0 !important; stroke-dasharray: none; animation: none !important; }
+  .mb-threads path.draw[data-k='spouse'] { stroke-dasharray: 3 5; }
+  .motion .mb-strip.rv::before { transform: none; }
+  .mb-node::before { transition-delay: 0ms; }
+  .mb-node, .mb-tile, .mb-army, .mb-quiz-opts button, .mb-chapters a, .mb-jump a { transition-property: opacity; }
 }
 
-/* Hindi pages: Devanagari headings in Noto, not the Latin display face */
-.fx-mahabharata:lang(hi) :is(.mb-head h1, .mb-sec h2, .mb-sec h3, .mb-strip strong, .mb-faq dt, .mb-links strong) {
-  font-family: var(--font-noto-devanagari), var(--mb-ui);
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1.35;
-}
-.fx-mahabharata:lang(hi) .mb-head h1 { font-size: clamp(30px, 8vw, 44px); }
-.fx-mahabharata:lang(hi) #quick-answer, .fx-mahabharata:lang(hi) .mb-meaning { line-height: 1.8; }
+/* Gita verse card on where-is-the-gita: the link back sits under the chip */
+.mb-qc-go { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); font-weight: 600; font-size: 15px; }
+.mb-echo > * + * { margin-top: 10px; }
+
+/* Phones: the panel sits below the tree, so a pill points to it */
+.mb-tree-pill { position: fixed; left: 50%; bottom: 18px; z-index: 40; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; border-radius: 999px;
+  border: 1px solid rgba(245, 201, 106, 0.45); background: rgba(26, 6, 6, 0.92); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); color: var(--text); font: inherit; font-size: 14.5px; font-weight: 600; white-space: nowrap; cursor: pointer;
+  transform: translateX(-50%); animation: mbPill var(--t-std) var(--ease) both; }
+.mb-tree-pill b { color: var(--gold-light); font-weight: 700; }
+@keyframes mbPill { from { opacity: 0; transform: translate(-50%, 16px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@media (min-width: 1000px) { .mb-tree-pill { display: none; } }
+/* Long speaker refs wrap: keep the chip shape calm on two lines */
+.mb-qc .qc-chip, .mb-person-line .qc-chip { border-radius: 12px; }
+/* Hindi: Devanagari wants no tracking and a lighter heading weight */
+.fx-mahabharata:lang(hi) :is(.tp-eyebrow, .eyebrow, .qc-badge, .mb-quiz-count, .mb-person-k) { letter-spacing: 0.02em; }
+.fx-mahabharata:lang(hi) .heading { font-weight: 600; }
+.fx-mahabharata:lang(hi) .mb-bridge a.mb-gita { font-family: var(--mb-deva-ui); }

@@ -53,6 +53,9 @@ export type WhereCopy = {
   methodH: string
   method: string[]
   crumbs: { home: string; mbh: string; here: string }
+  /** Hero meta chips and art alt text (layout labels). */
+  facts: string[]
+  artAlt: string
 }
 
 export const EN: WhereCopy = {
@@ -60,6 +63,8 @@ export const EN: WhereCopy = {
   description:
     'The Bhagavad Gita is chapters 23 to 40 of the Bhishma Parva, book 6 of the Mahabharata. Who tells it, when, and what Arjuna asks after the war.',
   kicker: 'Bhishma Parva, the sixth of eighteen books',
+  facts: ['Book 6 of 18', 'Chapters 23 to 40 (Pune edition)', 'Told by Sanjaya'],
+  artAlt: 'Krishna shows Arjuna his universal form above the chariot, with the two armies drawn up on the field below.',
   h1: 'Where the Gita sits in the Mahabharata',
   quick:
     "The Bhagavad Gita is chapters 23 to 40 of the Bhishma Parva, the sixth of the Mahabharata's eighteen books, in the Pune critical edition (chapters 25 to 42 in the vulgate that Nilakantha commented on). Sanjaya tells it to the blind king Dhritarashtra, starting from the king's own question at Gita 1.1 (MBh 6.23.1).",
@@ -115,6 +120,8 @@ export const HI: WhereCopy = {
   description:
     'भगवद गीता महाभारत के छठे पर्व, भीष्म पर्व के अध्याय 23 से 40 में है। इसे कौन सुनाता है, कब, और युद्ध के बाद अर्जुन ने क्या माँगा।',
   kicker: 'भीष्म पर्व, अठारह में से छठा पर्व',
+  facts: ['18 में से छठा पर्व', 'पुणे संस्करण में अध्याय 23 से 40', 'संजय सुनाते हैं'],
+  artAlt: 'रथ के ऊपर श्रीकृष्ण अर्जुन को अपना विराट रूप दिखाते हैं, नीचे मैदान में दोनों सेनाएँ खड़ी हैं।',
   h1: 'महाभारत में गीता कहाँ है',
   quick:
     'भगवद गीता महाभारत के अठारह पर्वों में से छठे, भीष्म पर्व के अध्याय 23 से 40 में है (पुणे के क्रिटिकल एडिशन में; नीलकंठ की टीका वाले पाठ में अध्याय 25 से 42)। इसे संजय अंधे राजा धृतराष्ट्र को सुनाते हैं, राजा के अपने सवाल से शुरू करके, जो गीता 1.1 (महाभारत 6.23.1) है।',

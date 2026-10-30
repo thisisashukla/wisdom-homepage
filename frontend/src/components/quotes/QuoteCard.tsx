@@ -374,7 +374,7 @@ export default function QuoteCard({
           </span>
           <span>{copiedTick ? t.copied : bio ? t.copyBio : t.copy}</span>
         </button>
-        <a className="qc-act" href={waHref} target="_blank" rel="noopener" onClick={onWhatsApp}>
+        <a data-mp-tracked="" className="qc-act" href={waHref} target="_blank" rel="noopener" onClick={onWhatsApp}>
           <Icon name="whatsapp" />
           <span>{t.whatsapp}</span>
         </a>
@@ -392,11 +392,11 @@ export default function QuoteCard({
           </button>
           {saveOpen && (
             <div className="qc-menu" id={`${id}-save`}>
-              <a href={imgUrl('post')} download={fileName('post')} onClick={(e) => onSave(e, 'post')}>
+              <a data-mp-tracked="" href={imgUrl('post')} download={fileName('post')} onClick={(e) => onSave(e, 'post')}>
                 <strong>{t.post}</strong>
                 <span>{t.postSub}</span>
               </a>
-              <a href={imgUrl('status')} download={fileName('status')} onClick={(e) => onSave(e, 'status')}>
+              <a data-mp-tracked="" href={imgUrl('status')} download={fileName('status')} onClick={(e) => onSave(e, 'status')}>
                 <strong>{t.status}</strong>
                 <span>{t.statusSub}</span>
               </a>

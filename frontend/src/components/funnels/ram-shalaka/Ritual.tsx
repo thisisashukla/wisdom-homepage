@@ -692,7 +692,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
           </div>
           <h1 className="rs-kicker">{h1}</h1>
           <div className="rs-bar-r">
-            <a
+            <a data-mp-tracked=""
               className="rs-chip"
               href={langHref}
               hrefLang={locale === 'hi' ? 'en' : 'hi'}
@@ -922,7 +922,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
                 {ui.shareBtn}
               </button>
               <div className="rs-acts-row">
-                <a
+                <a data-mp-tracked=""
                   className="rs-ghost"
                   href={waHref}
                   target="_blank"
@@ -1021,7 +1021,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="rs-card-img" src={cardUrl || cardSrc} alt={ui.cardAlt} width={1080} height={1920} />
             <div className="rs-acts">
-              <a
+              <a data-mp-tracked=""
                 className="rs-cta gold"
                 href={cardUrl || cardSave}
                 download={`ram-shalaka-${line.slug}.png`}

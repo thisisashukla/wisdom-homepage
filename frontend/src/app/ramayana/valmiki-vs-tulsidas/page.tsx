@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import NextStep from '@/components/quotes/NextStep'
 import Shell from '@/components/funnels/ramayana/Shell'
-import { Crumbs, Faq, JsonLd, MethodEn } from '@/components/funnels/ramayana/Bits'
+import Hero from '@/components/funnels/ramayana/Hero'
+import { Band, Faq, JsonLd, MethodEn } from '@/components/funnels/ramayana/Bits'
+import { getLine, lineView } from '@/lib/funnels/ramayana/data'
 import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
 import { PATHS } from '@/lib/funnels/ramayana/paths'
 import { articleLd, breadcrumbLd, faqLd, pageMeta } from '@/lib/funnels/ramayana/seo'
@@ -101,25 +103,30 @@ export default function ComparePage() {
           faqLd(FAQ),
         ]}
       />
-      <Crumbs label="Breadcrumb" items={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana', href: PATHS.hub }, { name: 'Valmiki and Tulsidas' }]} />
+      <Hero
+        locale="en"
+        crumbLabel="Breadcrumb"
+        crumbs={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana', href: PATHS.hub }, { name: 'Valmiki and Tulsidas' }]}
+        eyebrow="Valmiki Ramayana and Ramcharitmanas"
+        h1="Valmiki and Tulsidas, side by side"
+        sub="Two tellings of one story, and the film between them."
+        facts={['Sanskrit and Awadhi', 'Seven kandas each', `${ROWS.filter((r) => r.scene).length} scenes compared`]}
+        cta={{ href: '#table', label: 'Compare the two texts', loc: 'hero_table' }}
+        lines={[lineView(getLine('vr-1-67-14'), 'en'), lineView(getLine('rcm-1-247-4'), 'en')]}
+        lineLabels={['Valmiki', 'Tulsidas']}
+      />
 
-      <header className="rl-hero">
-        <h1 className="rl-h1">Valmiki and Tulsidas, side by side</h1>
-        <p className="rl-promise">Two tellings of one story, and the film between them.</p>
-        <div className="rl-shore" aria-hidden="true" />
-        <p className="rl-quick" id="quick-answer">
+      <Band className="rl-introsec">
+        <p className="rl-intro rv" id="quick-answer">
           Valmiki&apos;s Ramayana is the Sanskrit epic in seven kandas, opening with Narada naming a man of every virtue. Tulsidas&apos;s
           Ramcharitmanas is an Awadhi retelling begun in 1574 (samvat 1631, Bal Kand), told by Shiva to Parvati, with Ram as God
           throughout. Many families in North India know the story through Tulsidas and the television Ramayan, which is why so many
           well-known scenes turn out to be his.
         </p>
-      </header>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="table">
-        <h2 className="rl-h2" id="table">
-          The two texts
-        </h2>
-        <div className="rl-table-wrap" role="region" aria-labelledby="table" tabIndex={0}>
+      <Band id="table" title="The two texts" tone="alt" wide>
+        <div className="rl-table-wrap rv" role="region" aria-labelledby="table" tabIndex={0}>
           <table className="rl-table">
             <caption>Scene rows link to the full check with the original lines.</caption>
             <thead>
@@ -139,20 +146,21 @@ export default function ComparePage() {
               {ROWS.map((r) => (
                 <tr key={r.k}>
                   <th scope="row">{r.scene ? <a href={PATHS.scene(r.scene)}>{r.k}</a> : r.k}</th>
-                  <td>{r.v}</td>
-                  <td>{r.t}</td>
+                  <td className="rl-td-v" data-label="Valmiki Ramayana">
+                    {r.v}
+                  </td>
+                  <td className="rl-td-t" data-label="Ramcharitmanas">
+                    {r.t}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      </section>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="film">
-        <h2 className="rl-h2" id="film">
-          What the film draws on
-        </h2>
-        <p className="rl-p">
+      <Band id="film" title="What the film draws on">
+        <p className="rl-p rv">
           The makers of Ramayana: Part 1 have not published a list of the texts they used, and reports on the credits name
           screenwriter Shridhar Raghavan for the story. The trailers show Ram breaking Shiva&apos;s bow (
           <a href="https://www.esquireindia.co.in/entertainment/at-the-movies/whos-playing-who-in-ramayana-part-1-and-a-few-things-the-trailer-holds-back" target="_blank" rel="noopener">
@@ -165,7 +173,7 @@ export default function ComparePage() {
           </a>
           ). Every one of these is in both Valmiki and Tulsidas.
         </p>
-        <p className="rl-p">
+        <p className="rl-p rv">
           Part 1 reportedly ends near Sita&apos;s abduction, with Hanuman arriving only at the end (
           <a href="https://www.theweek.in/news/entertainment/2026/09/01/ramayana-part-1-sunny-deol-hanuman-surprise.html" target="_blank" rel="noopener">
             The Week, 1 Sep 2026
@@ -174,18 +182,15 @@ export default function ComparePage() {
           Tulsidas and the tellings that came after him. If it shows Lakshman warning that the deer is Maricha, or Sita taken in
           person, it is following Valmiki. Both are old and loved; the pages below show the lines.
         </p>
-        <p className="rl-p">
+        <p className="rl-p rv">
           <a href={PATHS.original} data-mp-location="to_original">
             Check eleven film scenes against both texts
           </a>
         </p>
-      </section>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="reading">
-        <h2 className="rl-h2" id="reading">
-          Reading them alongside the Gita
-        </h2>
-        <p className="rl-p">
+      <Band id="reading" title="Reading them alongside the Gita" tone="warm">
+        <p className="rl-p rv">
           Both texts keep returning to what the Bhagavad Gita teaches outright: do your part, hold the result loosely, and stay
           steady when things come and go. Bharata ruling from Nandigram without calling the kingdom his is{' '}
           <a className="rl-gold" href="/gita/chapter/2/verse/71" data-mp-location="gita_2_71">
@@ -197,13 +202,15 @@ export default function ComparePage() {
           </a>
           .
         </p>
-      </section>
+      </Band>
 
-      <div className="rl-next">
-        <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-compare" placement="end" copy={NEXT_COPY.en} />
-      </div>
+      <Band>
+        <div className="rl-final rv">
+          <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-compare" placement="end" copy={NEXT_COPY.en} />
+        </div>
+      </Band>
 
-      <Faq heading="Questions people ask" qas={FAQ} />
+      <Faq heading="Questions people ask" qas={FAQ} tone="alt" />
       <MethodEn />
     </Shell>
   )

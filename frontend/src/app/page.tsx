@@ -14,6 +14,7 @@ import { GITA_FOR } from '@/lib/gitaFor'
 import { THEME_SLUGS } from '@/lib/themePlans'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import PlatformOnly from '@/components/funnel/PlatformOnly'
+import { tiro } from '@/components/quotes/fonts'
 import './home.css'
 import './home-v3.css'
 
@@ -98,14 +99,14 @@ const FAQ = [
   },
 ]
 
-const BEYOND: { key: string; href: string; label: string; note: string; lang?: string }[] = [
-  { key: 'ramayana', href: '/ramayana/in-the-original', label: 'Ramayana, in the original', note: 'Film scenes, checked against Valmiki and Tulsidas →' },
-  { key: 'hanuman_chalisa', href: '/hanuman-chalisa', label: 'Hanuman Chalisa', note: 'Every line, with its meaning →' },
-  { key: 'upanishads', href: '/upanishads', label: 'Upanishads', note: 'Tat tvam asi and nine more lines →' },
-  { key: 'mahabharata', href: '/mahabharata/where-is-the-gita', label: 'Mahabharata', note: 'Where the Gita sits in it →' },
-  { key: 'ashtavakra', href: '/ashtavakra-gita', label: 'Ashtavakra Gita', note: 'Janaka asks, Ashtavakra answers →' },
-  { key: 'vivekananda', href: '/vivekananda-quotes', label: 'Swami Vivekananda', note: 'Lines checked against his own words →' },
-  { key: 'ram_shalaka', href: '/hi/ram-shalaka', label: 'श्रीराम शलाका', note: 'मन में प्रश्न है? चौपाई से उत्तर →', lang: 'hi' },
+const BEYOND: { key: string; href: string; label: string; note: string; line: string; lineLang: string; feature?: boolean }[] = [
+  { key: 'ramayana', href: '/ramayana/in-the-original', label: 'Ramayana, in the original', note: 'Saw the film? Read what Valmiki and Tulsidas wrote, scene by scene.', line: 'रामो विग्रहवान् धर्मः', lineLang: 'sa', feature: true },
+  { key: 'hanuman_chalisa', href: '/hanuman-chalisa', label: 'Hanuman Chalisa', note: 'Every line, with its meaning', line: 'जय हनुमान ज्ञान गुन सागर', lineLang: 'awa' },
+  { key: 'upanishads', href: '/upanishads', label: 'Upanishads', note: 'Tat tvam asi and nine more lines', line: 'तत्त्वमसि', lineLang: 'sa' },
+  { key: 'mahabharata', href: '/mahabharata/where-is-the-gita', label: 'Mahabharata', note: 'Where the Gita sits in it', line: 'यतो धर्मस्ततो जयः', lineLang: 'sa' },
+  { key: 'ashtavakra', href: '/ashtavakra-gita', label: 'Ashtavakra Gita', note: 'Janaka asks, Ashtavakra answers', line: 'मुक्ताभिमानी मुक्तो हि', lineLang: 'sa' },
+  { key: 'vivekananda', href: '/vivekananda-quotes', label: 'Swami Vivekananda', note: 'Lines checked against his own words', line: 'Arise, awake.', lineLang: 'en' },
+  { key: 'ram_shalaka', href: '/hi/ram-shalaka', label: 'श्रीराम शलाका', note: 'मन में प्रश्न है? चौपाई से उत्तर', line: 'होइहि सोइ जो राम रचि राखा', lineLang: 'hi' },
 ]
 
 export default async function HomePage() {
@@ -314,11 +315,17 @@ export default async function HomePage() {
             <h2 className="heading">The Ramayana, the Upanishads and <em>the Chalisa you grew up with.</em></h2>
             <p className="subtext">Each line in its original, with plain English and where it comes from.</p>
           </div>
-          <div className="gita-for-grid" data-stagger="30">
+          <div className={`beyond-grid ${tiro.variable}`} data-stagger="60">
             {BEYOND.map((b) => (
-              <a key={b.key} href={b.href} className="gita-for-tile rv" data-mp-location={`home_beyond_${b.key}`} lang={b.lang}>
-                <span className="gita-for-label">{b.label}</span>
-                <span className="gita-for-count">{b.note}</span>
+              <a
+                key={b.key}
+                href={b.href}
+                className={`beyond-tile rv${b.feature ? ' beyond-tile--feature' : ''}`}
+                data-mp-location={`home_beyond_${b.key}`}
+              >
+                <span className="beyond-line" lang={b.lineLang}>{b.line}</span>
+                <span className="beyond-label" lang={b.key === 'ram_shalaka' ? 'hi' : undefined}>{b.label}</span>
+                <span className="beyond-note" lang={b.key === 'ram_shalaka' ? 'hi' : undefined}>{b.note}</span>
               </a>
             ))}
           </div>

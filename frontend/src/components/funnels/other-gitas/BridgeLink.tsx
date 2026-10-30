@@ -5,7 +5,7 @@ export default function BridgeLink({ from, bridge }: { from: string; bridge: AgB
   const to = `${bridge.c}.${bridge.v}`
   return (
     <a
-      className="fx-bridge"
+      className="og-bridge"
       href={gitaVersePath(bridge.c, bridge.v)}
       data-fx-event="Gita Bridge Tapped"
       data-fx-props={JSON.stringify({ from, to_ref: to })}

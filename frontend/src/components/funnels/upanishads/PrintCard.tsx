@@ -11,17 +11,17 @@ export default function PrintCard({ cardId, line, page, locale, alt, labels }: P
   const open = (format: string) => upTrack('Print Card Opened', page, locale, { line, format })
   return (
     <figure className="fx-print">
-      <a href={url('post')} target="_blank" rel="noopener" onClick={() => open('post')} className="fx-print-img">
+      <a data-mp-tracked="" href={url('post')} target="_blank" rel="noopener" onClick={() => open('post')} className="fx-print-img">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={url('post')} alt={alt} width={1080} height={1350} loading="lazy" decoding="async" />
       </a>
       <figcaption>
         <p>{labels.caption}</p>
         <p className="fx-print-links">
-          <a href={url('post')} target="_blank" rel="noopener" onClick={() => open('post')}>
+          <a data-mp-tracked="" href={url('post')} target="_blank" rel="noopener" onClick={() => open('post')}>
             {labels.post}
           </a>
-          <a href={url('status')} target="_blank" rel="noopener" onClick={() => open('status')}>
+          <a data-mp-tracked="" href={url('status')} target="_blank" rel="noopener" onClick={() => open('status')}>
             {labels.status}
           </a>
         </p>

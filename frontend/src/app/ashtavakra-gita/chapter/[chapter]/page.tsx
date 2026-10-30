@@ -4,6 +4,8 @@ import FxFrame from '@/components/funnels/other-gitas/FxFrame'
 import ScriptToggle from '@/components/funnels/other-gitas/ScriptToggle'
 import VerseLines from '@/components/funnels/other-gitas/VerseLines'
 import NextBand from '@/components/funnels/other-gitas/NextBand'
+import FxHero from '@/components/funnels/other-gitas/FxHero'
+import FxSources from '@/components/funnels/other-gitas/FxSources'
 import {
   agChapterPath,
   agVersePath,
@@ -58,63 +60,109 @@ export default function AshtavakraChapterPage({ params }: { params: Params }) {
     articleLd({ path, headline: `Ashtavakra Gita chapter ${n}: ${ch.title}`, description: ch.gist, about: 'Ashtavakra Gita' }),
   ]
 
+  const first = verses[0]
+
   return (
     <FxFrame pageKey={pageKey}>
       {ld.map((d, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
       ))}
-      <main className="fx-main">
-        <nav className="fx-crumb" aria-label="Breadcrumb">
-          <a href={HUB_PATH}>Ashtavakra Gita</a>
-          <span aria-hidden="true">/</span>
-          <span>Chapter {n}</span>
-        </nav>
-        <h1 className="fx-h1">
-          Ashtavakra Gita chapter {n}: {ch.title}
-        </h1>
-        <p id="quick-answer" className="fx-quick">
-          {quick(n)}
-        </p>
-        <hr className="fx-rule" aria-hidden="true" />
-        <ScriptToggle page={pageKey} />
+      <main>
+        <FxHero
+          crumbs={[{ label: 'Ashtavakra Gita', href: HUB_PATH }, { label: `Chapter ${n}` }]}
+          eyebrow={`Chapter ${n} of 20`}
+          title={
+            <>
+              Ashtavakra Gita chapter {n}: {ch.title}
+            </>
+          }
+          facts={[`${ch.count} verses`, speakerLabel(ch.speaker), 'Sanskrit and plain English']}
+          cta={{ href: `#v${first.v}`, label: `Read from verse ${n}.${first.v}`, location: `ag_ch_${n}_hero_start` }}
+          art={
+            <div className="og-hero-verse" aria-hidden="true">
+              <p className="og-hero-ref">
+                Verse {n}.{first.v}
+              </p>
+              <VerseLines verse={first} />
+              <hr className="og-rule" />
+            </div>
+          }
+        />
 
-        <h2 className="fx-h2">All {ch.count} verses</h2>
-        <ol style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-          {verses.map((x) => (
-            <li key={x.id} id={`v${x.v}`} className="fx-verse">
-              <div className="fx-verse-head">
-                <a href={agVersePath(x.c, x.v)}>
-                  {x.c}.{x.v}
-                </a>
-                <span className="fx-small">{isIndexable(x) ? 'Word meanings and notes' : ''}</span>
+        <section className="og-intro">
+          <div className="wrap og-col">
+            <div className="og-prose">
+              <p id="quick-answer" className="og-lead">
+                {quick(n)}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" aria-labelledby="all-verses">
+          <div className="wrap og-col">
+            <div className="og-list-head">
+              <div className="og-head">
+                <h2 className="heading" id="all-verses">
+                  All {ch.count} verses
+                </h2>
               </div>
-              <VerseLines verse={x} />
-            </li>
-          ))}
-        </ol>
+              <ScriptToggle page={pageKey} />
+            </div>
+            <ol className="og-vlist">
+              {verses.map((x) => (
+                <li key={x.id} id={`v${x.v}`} className="og-vcard rv">
+                  <div className="og-vcard-head">
+                    <a className="og-vcard-ref" href={agVersePath(x.c, x.v)}>
+                      {x.c}.{x.v}
+                    </a>
+                    {isIndexable(x) && (
+                      <a className="og-vcard-tag" href={agVersePath(x.c, x.v)}>
+                        Word meanings and notes
+                      </a>
+                    )}
+                  </div>
+                  <VerseLines verse={x} />
+                  <hr className="og-rule" aria-hidden="true" />
+                </li>
+              ))}
+            </ol>
 
-        <nav className="fx-pn" aria-label="Previous and next chapter">
-          {prev && (
-            <a href={agChapterPath(prev.n)} data-fx-event="Verse Nav Clicked" data-fx-props={JSON.stringify({ direction: 'prev', from: `ch${n}`, to: `ch${prev.n}` })}>
-              <small>Chapter {prev.n}</small>
-              {prev.title}
-            </a>
-          )}
-          {next && (
-            <a className="fx-next" href={agChapterPath(next.n)} data-fx-event="Verse Nav Clicked" data-fx-props={JSON.stringify({ direction: 'next', from: `ch${n}`, to: `ch${next.n}` })}>
-              <small>Chapter {next.n}</small>
-              {next.title}
-            </a>
-          )}
-        </nav>
+            <nav className="gita-pn og-pn-ch" aria-label="Previous and next chapter">
+              {prev ? (
+                <a
+                  className="gita-pn-link"
+                  href={agChapterPath(prev.n)}
+                  data-fx-event="Verse Nav Clicked"
+                  data-fx-props={JSON.stringify({ direction: 'prev', from: `ch${n}`, to: `ch${prev.n}` })}
+                >
+                  <div className="gita-pn-label">← Chapter {prev.n}</div>
+                  <div className="gita-pn-target">{prev.title}</div>
+                </a>
+              ) : (
+                <span />
+              )}
+              {next && (
+                <a
+                  className="gita-pn-link right"
+                  href={agChapterPath(next.n)}
+                  data-fx-event="Verse Nav Clicked"
+                  data-fx-props={JSON.stringify({ direction: 'next', from: `ch${n}`, to: `ch${next.n}` })}
+                >
+                  <div className="gita-pn-label">Chapter {next.n} →</div>
+                  <div className="gita-pn-target">{next.title}</div>
+                </a>
+              )}
+            </nav>
+          </div>
+        </section>
 
         <NextBand pageKey={pageKey} />
 
-        <section className="fx-sources">
-          <h2 className="fx-h3">Sources and method</h2>
+        <FxSources>
           <p>{SOURCES_NOTE}</p>
           <p>{DISCLOSURE}</p>
-        </section>
+        </FxSources>
       </main>
     </FxFrame>
   )

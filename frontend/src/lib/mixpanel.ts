@@ -18,6 +18,43 @@ function prefixEvent(event: string): string {
   return isDev() ? `dev_${event}` : event
 }
 
+/**
+ * Content funnel a path belongs to, so every event fired on a funnel page
+ * (Page Viewed, Scroll Depth, Link Clicked, Section Viewed, ...) can be
+ * segmented without each component passing it. Returns null for core pages.
+ */
+const FUNNEL_PREFIXES: [RegExp, string][] = [
+  [/^\/(hi\/)?ramayana(\/|$)/, 'ramayana'],
+  [/^\/(hi\/)?hanuman-chalisa(\/|$)/, 'hanuman-chalisa'],
+  [/^\/hanuman-jayanti-\d{4}(\/|$)/, 'hanuman-chalisa'],
+  [/^\/(hi\/)?mahabharata(\/|$)/, 'mahabharata'],
+  [/^\/(hi\/)?upanishads?(\/|$)/, 'upanishads'],
+  [/^\/(hi\/)?ashtavakra-gita/, 'other-gitas'],
+  [/^\/gitas(\/|$)/, 'other-gitas'],
+  [/^\/(hi\/)?(vivekananda-quotes|kabir-dohe-in-english|kabir-ke-dohe|chanakya-niti)(\/|$)/, 'sayings'],
+  [/^\/(hi\/)?ram-shalaka(\/|$)/, 'ram-shalaka'],
+]
+
+export function funnelForPath(path: string | undefined | null): string | null {
+  if (!path) return null
+  for (const [re, name] of FUNNEL_PREFIXES) if (re.test(path)) return name
+  return null
+}
+
+/** Adds funnel + locale from the current URL unless the caller already set them. */
+function withContext(props?: Record<string, unknown>): Record<string, unknown> {
+  const out: Record<string, unknown> = { ...(props ?? {}) }
+  if (typeof window === 'undefined') return out
+  const path = window.location.pathname
+  if (out.funnel === undefined || out.funnel === null) {
+    const f = funnelForPath(path)
+    if (f) out.funnel = f
+  }
+  if (out.path === undefined) out.path = path
+  if (out.locale === undefined) out.locale = path === '/hi' || path.startsWith('/hi/') ? 'hi' : 'en'
+  return out
+}
+
 export function initMixpanel() {
   if (initialised || typeof window === 'undefined') return
   mixpanel.init(TOKEN, {
@@ -32,7 +69,7 @@ export function trackEvent(event: string, props?: Record<string, unknown>) {
   if (typeof window === 'undefined') return
   initMixpanel()
   try {
-    mixpanel.track(prefixEvent(event), props)
+    mixpanel.track(prefixEvent(event), withContext(props))
   } catch {
     // noop
   }
@@ -43,7 +80,7 @@ export function trackEventBeacon(event: string, props?: Record<string, unknown>)
   if (typeof window === 'undefined') return
   initMixpanel()
   try {
-    mixpanel.track(prefixEvent(event), props, { transport: 'sendBeacon' })
+    mixpanel.track(prefixEvent(event), withContext(props), { transport: 'sendBeacon' })
   } catch {
     // noop
   }
@@ -64,7 +101,7 @@ export function trackLinkClick(page: string, location: string, href: string) {
     // sendBeacon survives same-tab navigation; track() over XHR can be cancelled.
     mixpanel.track(
       prefixEvent(eventName),
-      { page, location, href, is_app_store: isAppStore },
+      withContext({ page, location, href, is_app_store: isAppStore }),
       { transport: 'sendBeacon' }
     )
   } catch {

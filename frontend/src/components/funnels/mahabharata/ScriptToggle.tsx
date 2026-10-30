@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { mbTrack } from './track'
 
 type Script = 'deva' | 'iast'
 const KEY = 'mbh_script'
@@ -9,7 +10,7 @@ const KEY = 'mbh_script'
  * Devanagari or IAST, never both on one card. Sets data-script on the funnel root;
  * CSS hides the other. Without JS the root stays on Devanagari.
  */
-export default function ScriptToggle({ locale }: { locale: 'en' | 'hi' }) {
+export default function ScriptToggle({ locale, page }: { locale: 'en' | 'hi'; page: string }) {
   const [script, setScript] = useState<Script>('deva')
 
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function ScriptToggle({ locale }: { locale: 'en' | 'hi' }) {
   }, [script])
 
   const pick = (s: Script) => {
+    if (s !== script) mbTrack('Script Toggled', page, locale, { to: s === 'deva' ? 'devanagari' : 'iast' })
     setScript(s)
     try {
       window.localStorage.setItem(KEY, s)

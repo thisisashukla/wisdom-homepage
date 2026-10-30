@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Shell from '@/components/funnels/mahabharata/Shell'
-import WhereIsGita from '@/components/funnels/mahabharata/WhereIsGita'
+import WhereIsGita, { whereHero } from '@/components/funnels/mahabharata/WhereIsGita'
 import { EN } from '@/lib/funnels/mahabharata/whereGita'
 import { PATHS, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 
@@ -26,7 +26,7 @@ export default function Page() {
     ]),
   )
   return (
-    <Shell page={PAGE} crumbs={[{ label: EN.crumbs.home, href: '/' }, { label: EN.crumbs.mbh, href: PATHS.hub }, { label: EN.crumbs.here }]} jsonLd={ld}>
+    <Shell page={PAGE} crumbs={[{ label: EN.crumbs.home, href: '/' }, { label: EN.crumbs.mbh, href: PATHS.hub }, { label: EN.crumbs.here }]} jsonLd={ld} hero={whereHero(EN, 'en', PAGE)}>
       <WhereIsGita copy={EN} locale="en" page={PAGE} path={PATHS.gita} />
     </Shell>
   )

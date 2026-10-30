@@ -35,7 +35,7 @@ export default function VivCard({ drawer, meaning, meaningLang, cardId, locale, 
     fxTrack('Source Drawer Opened', { page: pageKey, locale, hub: 'vivekananda' }, { quote_id: drawer.quoteId, verdict: drawer.verdict })
   }
   return (
-    <article id={domId ?? drawer.quoteId} className="qc fx-card fx-viv-card" data-section={section}>
+    <article id={domId ?? drawer.quoteId} className="qc fx-card fx-viv-card rv" data-section={section}>
       <p className="fx-viv-line" lang="en">
         {drawer.line}
       </p>
@@ -46,7 +46,7 @@ export default function VivCard({ drawer, meaning, meaningLang, cardId, locale, 
       )}
       <p className="fx-viv-source">
         <button type="button" className="fx-chip" aria-haspopup="dialog" onClick={onChip}>
-          <span className="fx-chip-stamp" data-verdict={drawer.verdict}>
+          <span className="fx-stamp" data-verdict={drawer.verdict} lang={locale}>
             {VERDICT_LABEL[drawer.verdict][locale]}
           </span>
           <span className="fx-chip-text" lang="en">
@@ -54,12 +54,12 @@ export default function VivCard({ drawer, meaning, meaningLang, cardId, locale, 
           </span>
         </button>
         <noscript>
-          <a className="fx-check-link" href={drawer.url} rel="noopener">
+          <a className="fx-link" href={drawer.url} rel="noopener">
             {locale === 'hi' ? 'मूल पाठ' : 'Source text'}
           </a>
         </noscript>
         {checkHref && (
-          <a className="fx-check-link" href={checkHref} data-mp-location="card_fact_check">
+          <a className="fx-link" href={checkHref} data-mp-location="card_fact_check">
             {locale === 'hi' ? 'जाँच देखें' : 'See the check'}
           </a>
         )}

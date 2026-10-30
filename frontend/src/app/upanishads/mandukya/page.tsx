@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import Shell, { Faq, GitaBridge, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
+import Shell, { Band, Faq, GitaBridge, Head, HeroLine, SourcesNote, Tiles, UpNext } from '@/components/funnels/upanishads/Shell'
 import VerseBlock from '@/components/funnels/upanishads/VerseBlock'
 import NetiNeti, { type NetiItem } from '@/components/funnels/upanishads/NetiNeti'
 import { articleLd, faqLd, TEXTS, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
@@ -56,6 +56,7 @@ export default function Page() {
     articleLd({ headline: TITLE, description: DESC, path: PATH, citation: 'Mandukya Upanishad (Atharva Veda); Gaudapada’s Karika and Shankara’s commentary.', about: 'Mandukya Upanishad' }),
     faqLd(FAQ),
   ]
+  const v1 = t.verses[0]
   return (
     <Shell
       pageName={PAGE}
@@ -66,63 +67,69 @@ export default function Page() {
         { name: 'Mandukya', path: PATH },
       ]}
       jsonLd={jsonLd}
+      hero={{
+        eyebrow: 'Atharva Veda',
+        title: 'The Mandukya Upanishad, all twelve verses',
+        facts: ['12 verses', 'Waking, dream, deep sleep, the fourth', 'Sanskrit and plain English'],
+        cta: { href: '#neti-neti', label: 'Neti, neti: not this, not this', loc: 'mandukya_hero_neti' },
+        second: { href: '#text', label: 'The text', loc: 'mandukya_hero_text' },
+        visual: (
+          <HeroLine
+            still
+            big="ॐ"
+            sa={'इत्येतदक्षरमिदं सर्वं'}
+            iast={'ityetadakṣaramidaṃ sarvaṃ'}
+            meaning={v1.en.split(' Here is')[0]}
+            cite="Mandukya Upanishad 1"
+          />
+        ),
+      }}
     >
-      <header>
-        <p className="fx-ref">Atharva Veda</p>
-        <h1>The Mandukya Upanishad, all twelve verses</h1>
-        <p id="quick-answer" className="fx-quick">
+      <Band labelledBy="text">
+        <p id="quick-answer" className="tp-intro rv">
           The Mandukya Upanishad is twelve verses long, from the Atharva Veda. It says all of this is Om, that &quot;this Self is Brahman&quot; (verse
           2), and maps the Self through waking, dream and deep sleep to a fourth, turiya, which verse 7 describes by taking every description away.
         </p>
-      </header>
+        <h2 id="text" className="tp-h2 rv">
+          The text
+        </h2>
+        <div className="fx-verses">
+          {t.verses.map((v) => (
+            <div key={v.ref}>
+              <VerseBlock v={{ ...v, who: null }} label="Mandukya" note={NOTES[v.ref]} />
+              {v.ref === '7' && (
+                <div id="neti-neti" className="fx-neti-wrap" data-mp-section="neti">
+                  <h3 className="fx-h3">Neti, neti: not this, not this</h3>
+                  <p>Each tap sets one description aside. What is left is what the verse calls the fourth.</p>
+                  <NetiNeti items={NETI} rest={REST} page={PAGE} locale="en" />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </Band>
 
-      <section className="fx-part" aria-labelledby="text">
-        <h2 id="text">The text</h2>
-        {t.verses.map((v) => (
-          <div key={v.ref}>
-            <VerseBlock v={{ ...v, who: null }} label="Mandukya" note={NOTES[v.ref]} />
-            {v.ref === '7' && (
-              <div id="neti-neti" data-mp-section="neti">
-                <h3>Neti, neti: not this, not this</h3>
-                <p>Each tap sets one description aside. What is left is what the verse calls the fourth.</p>
-                <NetiNeti items={NETI} rest={REST} page={PAGE} locale="en" />
-              </div>
-            )}
-          </div>
-        ))}
-      </section>
-
-      <section className="fx-sec" aria-labelledby="gita">
-        <h2 id="gita">The Mandukya and the Gita</h2>
-        <GitaBridge c={8} v={13} note="Krishna on leaving the body while saying Om, the one syllable that is Brahman." />
-        <GitaBridge c={2} v={69} note="what is night for all beings is where the steady one is awake." />
-      </section>
+      <Band alt labelledBy="gita">
+        <Head id="gita">The Mandukya and the Gita</Head>
+        <div className="fx-bridges" data-stagger="60">
+          <GitaBridge c={8} v={13} note="Krishna on leaving the body while saying Om, the one syllable that is Brahman." />
+          <GitaBridge c={2} v={69} note="what is night for all beings is where the steady one is awake." />
+        </div>
+      </Band>
 
       <UpNext locale="en" pageName={PAGE} pageKey={PAGE} placement="text-end" heading="One line each morning" />
 
-      <section className="fx-sec" aria-labelledby="next-text">
-        <h2 id="next-text">Read next</h2>
-        <ul className="fx-links">
-          <li>
-            <a href="/upanishads/mahavakyas" data-mp-location="mandukya_next_mahavakyas">
-              <strong>The four mahavakyas</strong>
-              <span>Ayam atma brahma and the other three great sentences</span>
-            </a>
-          </li>
-          <li>
-            <a href="/upanishads/katha" data-mp-location="mandukya_next_katha">
-              <strong>The Katha Upanishad</strong>
-              <span>The same Self, taught by Death to a boy</span>
-            </a>
-          </li>
-          <li>
-            <a href="/upanishads/who-am-i" data-mp-location="mandukya_next_plan">
-              <strong>Who am I: a 7-verse plan</strong>
-              <span>Mandukya 2 is day 5</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <Band wide labelledBy="next-text">
+        <Head id="next-text">Read next</Head>
+        <Tiles
+          cols={3}
+          items={[
+            { href: '/upanishads/mahavakyas', title: 'The four mahavakyas', sub: 'Ayam atma brahma and the other three great sentences', loc: 'mandukya_next_mahavakyas' },
+            { href: '/upanishads/katha', title: 'The Katha Upanishad', sub: 'The same Self, taught by Death to a boy', loc: 'mandukya_next_katha' },
+            { href: '/upanishads/who-am-i', title: 'Who am I: a 7-verse plan', sub: 'Mandukya 2 is day 5', loc: 'mandukya_next_plan' },
+          ]}
+        />
+      </Band>
 
       <Faq items={FAQ} heading="Questions people ask" />
 

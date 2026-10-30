@@ -3,8 +3,14 @@
 /**
  * The mala: 43 beads, one per unit (2 dohas, 40 chaupais, the closing doha),
  * strung from the guru bead at the bottom, up the left, over the top and down
- * the right. The current line's bead glows sindoor; learned lines turn tulsi
- * green; on the counter an outer ring of 108 fills one bead per recitation.
+ * the right. The current line's bead glows gold; learned lines fill with gold;
+ * on the counter an outer ring of 108 fills one bead per recitation.
+ *
+ * The page's one orchestrated moment: when the mala first comes into view the
+ * thread fades in, the beads string on one by one from the guru bead (about
+ * 900ms), then the current bead's glow arrives. data-strung goes 'no' (hidden,
+ * only under html.motion) to 'on' (stringing) to 'done' (settled; later changes
+ * use 160ms feedback only). Reduced motion and no-JS: everything is visible.
  *
  * Beads are real links (hub, line and counter pages) or buttons (learn mode),
  * with labels, and one roving tab stop: arrow keys move between beads, Home
@@ -43,7 +49,7 @@ function pointAt(i: number, n: number, r: number) {
   const sweep = 360 - 2 * GAP_DEG
   const deg = start + (sweep * i) / (n - 1)
   const rad = (deg * Math.PI) / 180
-  return { x: 50 + r * Math.cos(rad), y: 50 + r * Math.sin(rad) }
+  return { x: Math.round((50 + r * Math.cos(rad)) * 1000) / 1000, y: Math.round((50 + r * Math.sin(rad)) * 1000) / 1000 }
 }
 
 const T = {
@@ -70,6 +76,33 @@ export default function Mala({
   const [focusIdx, setFocusIdx] = useState(() => Math.max(0, beads.findIndex((b) => b.id === currentId)))
   const refs = useRef<(HTMLElement | null)[]>([])
   const learnedSet = useMemo(() => new Set(learned), [learned])
+  const figRef = useRef<HTMLElement | null>(null)
+  const [strung, setStrung] = useState<'no' | 'on' | 'done'>('no')
+
+  // String the beads once, when the mala first comes into view.
+  useEffect(() => {
+    const el = figRef.current
+    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    if (!el || reduce || typeof IntersectionObserver === 'undefined') {
+      setStrung('done')
+      return
+    }
+    let timer: ReturnType<typeof setTimeout> | undefined
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting) return
+        io.disconnect()
+        setStrung('on')
+        timer = setTimeout(() => setStrung('done'), 1700)
+      },
+      { threshold: 0.25 },
+    )
+    io.observe(el)
+    return () => {
+      io.disconnect()
+      if (timer) clearTimeout(timer)
+    }
+  }, [])
 
   useEffect(() => {
     setCurrent(currentId)
@@ -148,8 +181,14 @@ export default function Mala({
   })()
 
   return (
-    <figure className="hc-mala-fig" style={{ margin: 0 }}>
-      <div className="hc-mala">
+    <figure
+      className="hc-mala-fig"
+      ref={(el) => {
+        figRef.current = el
+      }}
+      data-strung={strung}
+    >
+      <div className="hc-mala" data-outer={outer !== null ? '' : undefined}>
         <svg className="hc-mala-thread" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <path d={ringPath} vectorEffect="non-scaling-stroke" />
           <path d={`M 50 ${50 + R} L 50 96.5`} vectorEffect="non-scaling-stroke" />
@@ -162,7 +201,7 @@ export default function Mala({
             aria-hidden="true"
             data-on={outer !== null && i < outer ? '' : undefined}
             data-goal={outerGoal && i === outerGoal - 1 ? '' : undefined}
-            style={{ left: `${p.x}%`, top: `${p.y}%` }}
+            style={{ left: `${p.x}%`, top: `${p.y}%`, ['--o' as string]: i }}
           />
         ))}
         <ul className="hc-mala-beads" role="list" aria-label={label} onKeyDown={onKey}>
@@ -173,7 +212,7 @@ export default function Mala({
             const aria = [b.label, isLearned ? t.learned : null, isCur ? t.current : null].filter(Boolean).join(', ')
             const common = {
               className: 'hc-bead',
-              style: { left: `${p.x}%`, top: `${p.y}%` },
+              style: { left: `${p.x}%`, top: `${p.y}%`, ['--i' as string]: i },
               tabIndex: i === focusIdx ? 0 : -1,
               'aria-label': aria,
               'data-doha': b.id.startsWith('hc.d') ? '' : undefined,
@@ -195,7 +234,7 @@ export default function Mala({
                     <span />
                   </button>
                 ) : (
-                  <a
+                  <a data-mp-tracked=""
                     href={b.href}
                     {...common}
                     ref={(el) => {

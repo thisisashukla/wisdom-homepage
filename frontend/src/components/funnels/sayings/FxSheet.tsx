@@ -12,8 +12,16 @@ import '@/components/quotes/card.css'
 import './sayings.css'
 
 const TITLES: Record<Locale, Record<SheetAction, string>> = {
-  en: { copied: 'Copied. Want one every morning?', shared: 'Shared. Want one every morning?', saved: 'Saved. Want one every morning?' },
-  hi: { copied: 'कॉपी हो गया। हर सुबह एक पंक्ति चाहिए?', shared: 'शेयर हो गया। हर सुबह एक पंक्ति चाहिए?', saved: 'सेव हो गया। हर सुबह एक पंक्ति चाहिए?' },
+  en: {
+    copied: 'Copied. Want one every morning?',
+    shared: 'Shared. Want one every morning?',
+    saved: 'Saved. Want one every morning?',
+  },
+  hi: {
+    copied: 'कॉपी हो गया। हर सुबह एक पंक्ति चाहिए?',
+    shared: 'शेयर हो गया। हर सुबह एक पंक्ति चाहिए?',
+    saved: 'सेव हो गया। हर सुबह एक पंक्ति चाहिए?',
+  },
 }
 const LATER: Record<Locale, { later: string; close: string }> = {
   en: { later: 'Not now', close: 'Close' },
@@ -21,7 +29,14 @@ const LATER: Record<Locale, { later: string; close: string }> = {
 }
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
 
-export default function FxSheet({ action, hub, locale, pageName, pageKey, onClose }: {
+export default function FxSheet({
+  action,
+  hub,
+  locale,
+  pageName,
+  pageKey,
+  onClose,
+}: {
   action: SheetAction
   hub: Hub
   locale: Locale

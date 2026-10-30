@@ -11,6 +11,8 @@ export type Character = {
   h1: string
   quickAnswer: string
   choice: { moment: string; lineId: string; plain: string }
+  /** The line set large in the page hero (never the choice line, which the choice card reveals). */
+  heroLineId: string
   beats: Beat[]
   lineIds: string[]
   gita: GitaBridge[]
@@ -20,6 +22,7 @@ export type Character = {
 export const CHARACTERS: Character[] = [
   {
     slug: 'karna',
+    heroLineId: 'mbh.5.141.12',
     personId: 'karna',
     name: 'Karna',
     title: 'Karna in the Mahabharata: His Choice, in Sanskrit',
@@ -54,6 +57,7 @@ export const CHARACTERS: Character[] = [
   },
   {
     slug: 'draupadi',
+    heroLineId: 'mbh.3.32.3',
     personId: 'draupadi',
     name: 'Draupadi',
     title: 'Draupadi in the Mahabharata: Her Own Words',
@@ -88,6 +92,7 @@ export const CHARACTERS: Character[] = [
   },
   {
     slug: 'vidura',
+    heroLineId: 'mbh.5.33.85',
     personId: 'vidura',
     name: 'Vidura',
     title: 'Vidura in the Mahabharata: Counsel, in Sanskrit',
@@ -120,6 +125,7 @@ export const CHARACTERS: Character[] = [
   },
   {
     slug: 'kunti',
+    heroLineId: 'mbh.5.133.15',
     personId: 'kunti',
     name: 'Kunti',
     title: 'Kunti in the Mahabharata: Her Secret, in Sanskrit',
@@ -152,6 +158,7 @@ export const CHARACTERS: Character[] = [
   },
   {
     slug: 'bhishma',
+    heroLineId: 'mbh.5.147.20',
     personId: 'bhishma',
     name: 'Bhishma',
     title: 'Bhishma in the Mahabharata: The Vow He Kept',
@@ -185,6 +192,7 @@ export const CHARACTERS: Character[] = [
   },
   {
     slug: 'yudhishthira',
+    heroLineId: 'mbh.3.314.131',
     personId: 'yudhishthira',
     name: 'Yudhishthira',
     title: 'Yudhishthira: The Yaksha and the Choice',

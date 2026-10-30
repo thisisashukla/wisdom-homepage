@@ -1,4 +1,4 @@
-import Shell, { Faq, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
+import Shell, { Band, Faq, HeroLine, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
 import Sanskrit from '@/components/funnels/upanishads/Sanskrit'
 import { articleLd, faqLd, SITE, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
 import { MAHAVAKYAS } from '@/content/funnels/upanishads/mahavakyas'
@@ -55,39 +55,51 @@ export default function Page() {
         { name: 'Mahavakyas', path: PATH },
       ]}
       jsonLd={jsonLd}
+      hero={{
+        eyebrow: 'Four Upanishads, four Vedas',
+        title: 'The four mahavakyas',
+        facts: ['Rig, Yajur, Sama, Atharva', 'Sanskrit, IAST, English'],
+        cta: { href: `#${slug(MAHAVAKYAS[0].iast)}`, label: 'Read the four', loc: 'mahavakyas_hero_read' },
+        visual: (
+          <HeroLine
+            sa={MAHAVAKYAS.map((m) => m.sa).join('\n')}
+            iast={MAHAVAKYAS.map((m) => m.iast).join('\n')}
+          />
+        ),
+      }}
     >
-      <header>
-        <h1>The four mahavakyas</h1>
-        <p id="quick-answer" className="fx-quick">
-          The mahavakyas are four &quot;great sentences&quot; from four Upanishads, one from each Veda: prajnanam brahma (Aitareya 3.1.3), aham
-          brahmasmi (Brihadaranyaka 1.4.10), tat tvam asi (Chandogya 6.8.7) and ayam atma brahma (Mandukya 2). Each says, in its own way, that the
-          Self and Brahman are one.
-        </p>
-      </header>
-
-      {MAHAVAKYAS.map((m) => (
-        <section key={m.iast} id={slug(m.iast)} className="fx-sec" aria-labelledby={`h-${slug(m.iast)}`}>
-          <p className="fx-ref">
-            {m.ref}, {m.veda}
+      <Band wide label="The four mahavakyas">
+        <div className="fx-col fx-col-inline">
+          <p id="quick-answer" className="tp-intro rv">
+            The mahavakyas are four &quot;great sentences&quot; from four Upanishads, one from each Veda: prajnanam brahma (Aitareya 3.1.3), aham
+            brahmasmi (Brihadaranyaka 1.4.10), tat tvam asi (Chandogya 6.8.7) and ayam atma brahma (Mandukya 2). Each says, in its own way, that the
+            Self and Brahman are one.
           </p>
-          <h2 id={`h-${slug(m.iast)}`} className="fx-sr">
-            {m.iast}: {m.en}
-          </h2>
-          <Sanskrit sa={m.sa} iast={m.iast} size="hero" />
-          <p className="fx-en-line" style={{ fontFamily: 'var(--fx-serif)', fontSize: 22, margin: '8px 0 10px' }}>
-            {m.en}
-          </p>
-          <p className="fx-who">{m.kind}</p>
-          <p>{m.note}</p>
-          {!m.href.startsWith(PATH) && (
-            <p>
-              <a href={m.href} data-mp-location={`mahavakya_${slug(m.iast)}`}>
-                Read it in its place
-              </a>
-            </p>
-          )}
-        </section>
-      ))}
+        </div>
+        <div className="fx-maha" data-stagger="80">
+          {MAHAVAKYAS.map((m) => (
+            <section key={m.iast} id={slug(m.iast)} className="fx-maha-card rv" aria-labelledby={`h-${slug(m.iast)}`}>
+              <p className="fx-v-ref-plain">
+                {m.ref}, {m.veda}
+              </p>
+              <h2 id={`h-${slug(m.iast)}`} className="fx-sr">
+                {m.iast}: {m.en}
+              </h2>
+              <Sanskrit sa={m.sa} iast={m.iast} size="verse" />
+              <p className="fx-maha-en">{m.en}</p>
+              <p className="fx-who">{m.kind}</p>
+              <p className="fx-maha-note">{m.note}</p>
+              {!m.href.startsWith(PATH) && (
+                <p>
+                  <a href={m.href} className="fx-link" data-mp-location={`mahavakya_${slug(m.iast)}`}>
+                    Read it in its place
+                  </a>
+                </p>
+              )}
+            </section>
+          ))}
+        </div>
+      </Band>
 
       <UpNext locale="en" pageName={PAGE} pageKey={PAGE} placement="mahavakyas-end" heading="One line each morning" />
 

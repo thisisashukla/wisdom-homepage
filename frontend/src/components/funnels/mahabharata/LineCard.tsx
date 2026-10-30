@@ -17,7 +17,10 @@ type Props = {
   className?: string
 }
 
-/** One Sanskrit line: Devanagari or IAST (by the page toggle), our English, who says it, and the ref. */
+/**
+ * One Sanskrit line as a house quote card (.qc from components/quotes/card.css):
+ * Devanagari or IAST (by the page toggle), our English, then who says it and the ref as a chip.
+ */
 export default function LineCard({ line, locale = 'en', page, path, label, actions = true, showContext = true, domId, className }: Props) {
   const id = domId ?? domIdOf(line.id)
   const meaning = locale === 'hi' && line.hi ? line.hi : line.en
@@ -25,28 +28,38 @@ export default function LineCard({ line, locale = 'en', page, path, label, actio
   const speaker = line.speaker[locale]
   const devaRows = line.deva.split('\n')
   const iastRows = line.iast.split('\n')
+  const withActions = actions && !line.noShare
   return (
-    <article className={`mb-line${className ? ` ${className}` : ''}`} id={id}>
-      {label && <p className="mb-line-label">{label}</p>}
-      <p className="mb-deva" lang="sa">
+    <article className={`qc mb-qc rv${withActions ? '' : ' mb-qc-bare'}${className ? ` ${className}` : ''}`} id={id}>
+      {label && (
+        <p className="qc-badge">
+          <span>{label}</span>
+        </p>
+      )}
+      <p className="qc-sa mb-deva" lang="sa">
         {devaRows.map((r, i) => (
-          <span key={i}>{r}</span>
+          <span key={i} className="qc-pada">
+            {r}
+          </span>
         ))}
       </p>
-      <p className="mb-iast" lang="sa-Latn">
+      <p className="qc-iast mb-iast" lang="sa-Latn">
         {iastRows.map((r, i) => (
-          <span key={i}>{r}</span>
+          <span key={i} className="qc-pada">
+            {r}
+          </span>
         ))}
       </p>
-      <p className="mb-meaning" lang={locale === 'hi' && line.hi ? 'hi' : 'en'}>
+      <p className="qc-meaning" lang={locale === 'hi' && line.hi ? 'hi' : 'en'}>
         {meaning}
       </p>
       {showContext && line.context && locale === 'en' && <p className="mb-context">{line.context}</p>}
-      <p className="mb-src">
-        <span className="mb-ref">{ref}</span>
-        <span className="mb-speaker">{speaker}</span>
+      <p className="qc-source">
+        <span className="qc-chip">
+          {speaker} · {ref}
+        </span>
       </p>
-      {actions && !line.noShare && (
+      {withActions && (
         <LineActions
           lineId={line.id}
           domId={id}

@@ -5,7 +5,7 @@ const join = (ids: string[]) => ids.map((id) => person(id).name).join(', ')
 /** The family tree as text, for screen readers, crawlers and anyone without JS. */
 export default function FamilyList() {
   return (
-    <details className="mb-family-list" id="family-list">
+    <details className="mb-family-list" id="family-list" data-mp-disclosure="family_list">
       <summary>Read the family as a list</summary>
       <dl>
         {PEOPLE.map((p) => {

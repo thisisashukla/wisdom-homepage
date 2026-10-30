@@ -8,7 +8,7 @@ const lines = (s: string) =>
   s
     .split('\n')
     .flatMap((l) => l.split(/(?<=[।|])\s+(?=\S)/u))
-    .map((l) => l.trim())
+    .map((l) => l.trim().replace(/\s+([।॥|]+)/gu, '\u00a0$1'))
     .filter(Boolean)
 
 export default function Sanskrit({ sa, iast, size = 'verse' }: Props) {

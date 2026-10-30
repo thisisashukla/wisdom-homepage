@@ -7,14 +7,17 @@ import { cardOg, ldArticle, ldBreadcrumb, ldFaq, ldItemList, ldQuotation } from 
 import VivCard from './VivCard'
 import FxNextStep from './FxNextStep'
 import { vivShareText } from './VivHub'
-import { Crumbs, Faq, JsonLd, Method, Related } from './parts'
-import { archivo, tiroSa } from './fonts'
-import './sayings.css'
+import { DailyBand, Faq, Head, JsonLd, Method, Related, Sec, Shell } from './parts'
+import { tiroSa } from './fonts'
 
 const BRIDGE_FOR: Record<VivTheme, number[][]> = {
   students: [[2, 3]],
   education: [[13, 29]],
-  'fear-and-strength': [[2, 3], [2, 23], [2, 40]],
+  'fear-and-strength': [
+    [2, 3],
+    [2, 23],
+    [2, 40],
+  ],
   'work-and-success': [[2, 47]],
 }
 
@@ -24,7 +27,11 @@ export default function VivThemePage({ theme }: { theme: VivTheme }) {
   const pageKey = `viv-theme-${theme}`
   const pageName = `Vivekananda Quotes ${c.label}`
   const lines = vivByTheme(theme)
-  const checkByLine = new Map(vivChecks().filter((x) => x.hubLine).map((x) => [x.hubLine as string, x.slug]))
+  const checkByLine = new Map(
+    vivChecks()
+      .filter((x) => x.hubLine)
+      .map((x) => [x.hubLine as string, x.slug]),
+  )
   const bridge = vivBridge().filter((b) => BRIDGE_FOR[theme].some(([ch, v]) => b.chapter === ch && b.verse === v))
   const firstCard = lines.find((l) => l.card)
   const ld = [
@@ -33,29 +40,48 @@ export default function VivThemePage({ theme }: { theme: VivTheme }) {
       { name: 'Vivekananda quotes', path: VIV_PATH },
       { name: c.label, path },
     ]),
-    ldArticle({ headline: c.h1, description: c.description, path, locale: 'en', citation: vivEdition(), about: 'Swami Vivekananda', ...(firstCard ? { image: cardOg(firstCard.id) } : {}) }),
+    ldArticle({
+      headline: c.h1,
+      description: c.description,
+      path,
+      locale: 'en',
+      citation: vivEdition(),
+      about: 'Swami Vivekananda',
+      ...(firstCard ? { image: cardOg(firstCard.id) } : {}),
+    }),
     ldFaq(c.faq),
-    ldItemList(c.h1, lines.map((l) => ldQuotation({ text: l.text, author: 'Swami Vivekananda', path, anchor: l.id, locale: 'en', citation: `Complete Works of Swami Vivekananda, vol ${l.source.volume}, ${l.source.work}` }))),
+    ldItemList(
+      c.h1,
+      lines.map((l) =>
+        ldQuotation({
+          text: l.text,
+          author: 'Swami Vivekananda',
+          path,
+          anchor: l.id,
+          locale: 'en',
+          citation: `Complete Works of Swami Vivekananda, vol ${l.source.volume}, ${l.source.work}`,
+        }),
+      ),
+    ),
   ]
   return (
-    <div className={`fx-sayings ${archivo.variable} ${tiroSa.variable}`} data-hub="vivekananda" lang="en">
+    <Shell hub="vivekananda" locale="en" fonts={tiroSa.variable}>
       <BlogTracker pageName={pageName} />
       {ld.map((d, i) => (
         <JsonLd key={i} data={d} />
       ))}
-      <div className="fx-page">
-        <Crumbs items={[{ label: 'Home', href: '/' }, { label: 'Vivekananda quotes', href: VIV_PATH }, { label: c.label }]} locale="en" />
-        <header className="fx-hero">
-          <h1 className="fx-h1">{c.h1}</h1>
-          <p className="fx-promise">{c.promise}</p>
-          <p id="quick-answer" className="fx-quick">
-            {c.quick}
-          </p>
-          <p className="fx-meta">{`${lines.length} lines. ${THEME_INTRO[theme].en} Updated 30 October 2026.`}</p>
-        </header>
+      <Head
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Vivekananda quotes', href: VIV_PATH }, { label: c.label }]}
+        locale="en"
+        eyebrow={`${lines.length} lines. ${THEME_INTRO[theme].en} Updated 30 October 2026.`}
+        h1={c.h1}
+        promise={c.promise}
+        quick={c.quick}
+      />
 
-        <section className="fx-sec" aria-label={c.h1}>
-          <div className="fx-list">
+      <div className="qp-sections">
+        <section className="qp-section" aria-label={c.h1}>
+          <div className="qp-cards">
             {lines.map((l, i) => {
               const slug = checkByLine.get(l.slug)
               return (
@@ -77,14 +103,11 @@ export default function VivThemePage({ theme }: { theme: VivTheme }) {
         </section>
 
         {bridge.length > 0 && (
-          <section className="fx-sec" aria-labelledby="gita-h">
-            <h2 id="gita-h" className="fx-h2">
-              The Gita behind these lines
-            </h2>
-            <div className="fx-bridge">
+          <Sec hid="gita-h" heading="The Gita behind these lines">
+            <div className="qp-cards">
               {bridge.map((b) => (
-                <div key={`${b.chapter}-${b.verse}`} className="fx-bridge-item">
-                  <p className="fx-bridge-sa" lang="sa">
+                <div key={`${b.chapter}-${b.verse}`} className="qc fx-card rv">
+                  <p className="qc-sa" lang="sa">
                     {b.sanskritLine}
                   </p>
                   <p className="fx-bridge-his">&ldquo;{b.his}&rdquo;</p>
@@ -98,29 +121,35 @@ export default function VivThemePage({ theme }: { theme: VivTheme }) {
                 </div>
               ))}
             </div>
-          </section>
+          </Sec>
         )}
-
-        <section className="fx-next" aria-label="Keep one line with you">
-          <h2 className="fx-h2">Keep one line with you</h2>
-          <FxNextStep hub="vivekananda" locale="en" pageName={pageName} pageKey={pageKey} placement="end" />
-        </section>
-
-        <Faq items={c.faq} heading="Questions people ask" />
-        <Method heading="Sources and method">
-          <p>
-            Every line is matched against The Complete Works of Swami Vivekananda, Mayavati Memorial Edition (Advaita Ashrama), vols 1 to 8. Tap the source on a card to read the paragraph and open the full text. Dashes in the printed text are shown as commas.
-          </p>
-        </Method>
-        <Related
-          heading="Read next"
-          links={[
-            { href: VIV_PATH, label: 'All 61 checked Vivekananda quotes' },
-            ...VIV_THEMES.filter((t) => t !== theme).map((t) => ({ href: vivThemePath(t), label: VIV_THEME_COPY[t].h1 })),
-            { href: `${VIV_PATH}#did-he-say`, label: 'Lines he never said as written' },
-          ]}
-        />
       </div>
-    </div>
+
+      <DailyBand heading="Keep one line with you">
+        <FxNextStep hub="vivekananda" locale="en" pageName={pageName} pageKey={pageKey} placement="end" />
+      </DailyBand>
+
+      <Faq items={c.faq} heading="Questions people ask" />
+      <Method heading="Sources and method">
+        <p>
+          Every line is matched against The Complete Works of Swami Vivekananda, Mayavati Memorial Edition (Advaita Ashrama), vols 1 to 8. Tap the source on a card to read the
+          paragraph and open the full text. Dashes in the printed text are shown as commas.
+        </p>
+      </Method>
+      <Related
+        heading="Read next"
+        links={[
+          { href: VIV_PATH, label: 'All 61 checked Vivekananda quotes' },
+          ...VIV_THEMES.filter((t) => t !== theme).map((t) => ({
+            href: vivThemePath(t),
+            label: VIV_THEME_COPY[t].h1,
+          })),
+          {
+            href: `${VIV_PATH}#did-he-say`,
+            label: 'Lines he never said as written',
+          },
+        ]}
+      />
+    </Shell>
   )
 }

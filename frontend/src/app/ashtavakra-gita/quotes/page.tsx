@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import FxFrame from '@/components/funnels/other-gitas/FxFrame'
 import NextBand from '@/components/funnels/other-gitas/NextBand'
+import FxHero from '@/components/funnels/other-gitas/FxHero'
+import FxSources from '@/components/funnels/other-gitas/FxSources'
+import VerseLines from '@/components/funnels/other-gitas/VerseLines'
 import QuoteCard from '@/components/quotes/QuoteCard'
 import type { QuoteView } from '@/lib/quotes-shared'
 import { abs, agVersePath, getVerseByKey, HUB_PATH, padas, speakerLabel, type AgVerse } from '@/lib/funnels/other-gitas/data'
@@ -66,44 +69,68 @@ export default function AshtavakraQuotesPage() {
     },
   ]
 
+  const lead = verses[0]
+
   return (
     <FxFrame pageKey={PAGE}>
       {ld.map((d, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
       ))}
-      <main className="fx-main">
-        <nav className="fx-crumb" aria-label="Breadcrumb">
-          <a href={HUB_PATH}>Ashtavakra Gita</a>
-          <span aria-hidden="true">/</span>
-          <span>Quotes</span>
-        </nav>
-        <h1 className="fx-h1">Ashtavakra Gita quotes</h1>
-        <p id="quick-answer" className="fx-quick">
-          {QUOTES_QUICK}
-        </p>
-        <hr className="fx-rule" aria-hidden="true" />
-        <div className="fx-cards">
-          {verses.map((x, i) => (
-            <QuoteCard key={x.id} quote={view(x)} locale="en" pageName={PAGE} pageKey={PAGE} position={i + 1} />
-          ))}
-        </div>
+      <main>
+        <FxHero
+          crumbs={[{ label: 'Ashtavakra Gita', href: HUB_PATH }, { label: 'Quotes' }]}
+          eyebrow="20 lines to copy or share"
+          title="Ashtavakra Gita quotes"
+          facts={['20 lines', 'Sanskrit and plain English', 'Each with its verse']}
+          cta={{ href: '#lines', label: 'See the lines', location: 'ag_quotes_hero_lines' }}
+          art={
+            <div className="og-hero-verse" aria-hidden="true">
+              <p className="og-hero-ref">
+                Ashtavakra Gita {lead.c}.{lead.v}
+              </p>
+              <VerseLines verse={lead} />
+              <hr className="og-rule" />
+            </div>
+          }
+        />
 
-        <p className="fx-body" style={{ marginTop: 36 }}>
-          Each card links to its verse, with word meanings and a short commentary. If you are new to the text, start with
-          the <a href={HUB_PATH}>Ashtavakra Gita guide</a> or read it beside the{' '}
-          <a className="fx-gita-link" href="/ashtavakra-gita-vs-bhagavad-gita">
-            Bhagavad Gita
-          </a>
-          .
-        </p>
+        <section className="og-intro">
+          <div className="wrap og-col">
+            <div className="og-prose">
+              <p id="quick-answer" className="og-lead">
+                {QUOTES_QUICK}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="lines" aria-label="Ashtavakra Gita quotes">
+          <div className="wrap">
+            <div className="og-cards">
+              {verses.map((x, i) => (
+                <QuoteCard key={x.id} quote={view(x)} locale="en" pageName={PAGE} pageKey={PAGE} position={i + 1} />
+              ))}
+            </div>
+
+            <div className="og-prose" style={{ marginTop: 40 }}>
+              <p>
+                Each card links to its verse, with word meanings and a short commentary. If you are new to the text, start with
+                the <a href={HUB_PATH}>Ashtavakra Gita guide</a> or read it beside the{' '}
+                <a className="fx-gita-link" href="/ashtavakra-gita-vs-bhagavad-gita">
+                  Bhagavad Gita
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </section>
 
         <NextBand pageKey={PAGE} />
 
-        <section className="fx-sources">
-          <h2 className="fx-h3">Sources and method</h2>
+        <FxSources>
           <p>{SOURCES_NOTE} The card meanings are short versions of our verse translations.</p>
           <p>{DISCLOSURE}</p>
-        </section>
+        </FxSources>
       </main>
     </FxFrame>
   )

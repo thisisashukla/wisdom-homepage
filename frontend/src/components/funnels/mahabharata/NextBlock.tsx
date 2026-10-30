@@ -1,4 +1,5 @@
 import NextStep from '@/components/quotes/NextStep'
+import { Band } from './Shell'
 
 const COPY = {
   en: {
@@ -20,12 +21,13 @@ const COPY = {
 } as const
 
 /** Device-aware next step (shared NextStep) with funnel copy that promises only what the app has. */
-export default function NextBlock({ locale = 'en', page, placement = 'end' }: { locale?: 'en' | 'hi'; page: string; placement?: string }) {
+export default function NextBlock({ locale = 'en', page, placement = 'end', alt }: { locale?: 'en' | 'hi'; page: string; placement?: string; alt?: boolean }) {
   const c = COPY[locale]
   return (
-    <section className="mb-sec mb-next" aria-labelledby={`mb-next-${placement}`} data-mp-section="next_step">
-      <h2 id={`mb-next-${placement}`}>{c.head}</h2>
-      <NextStep funnel="mahabharata" locale={locale} pageName={page} pageKey={page} placement={placement} copy={c.copy} />
-    </section>
+    <Band alt={alt} mp="next_step" h={c.head} hId={`mb-next-${placement}`} className="mb-next">
+      <div className="rv">
+        <NextStep funnel="mahabharata" locale={locale} pageName={page} pageKey={page} placement={placement} copy={c.copy} />
+      </div>
+    </Band>
   )
 }

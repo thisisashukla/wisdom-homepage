@@ -3,9 +3,10 @@ import BlogTracker from '@/components/BlogTracker'
 import NextStep from '@/components/quotes/NextStep'
 import Shell from '@/components/funnels/ramayana/Shell'
 import KeepCards from '@/components/funnels/ramayana/KeepCards'
-import { Crumbs, JsonLd, MethodEn } from '@/components/funnels/ramayana/Bits'
+import Hero from '@/components/funnels/ramayana/Hero'
+import { Band, JsonLd, MethodEn, Tiles } from '@/components/funnels/ramayana/Bits'
 import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
-import { KAND_LABEL, SCENES } from '@/lib/funnels/ramayana/data'
+import { KAND_LABEL, SCENES, getLine, lineView } from '@/lib/funnels/ramayana/data'
 import { PATHS } from '@/lib/funnels/ramayana/paths'
 import { articleLd, breadcrumbLd, itemListLd, pageMeta } from '@/lib/funnels/ramayana/seo'
 
@@ -47,74 +48,65 @@ export default function RamayanaHub() {
           itemListLd('Ramayana on Wisdom', START.map((x) => ({ name: x.t, path: x.href }))),
         ]}
       />
-      <Crumbs label="Breadcrumb" items={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana' }]} />
+      <Hero
+        locale="en"
+        crumbLabel="Breadcrumb"
+        crumbs={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana' }]}
+        eyebrow="Valmiki and Tulsidas"
+        h1="The Ramayana behind the film"
+        sub="Read the scenes in Valmiki's Sanskrit and Tulsidas's Awadhi, then carry one line into your week."
+        facts={['Film opens 5 Nov 2026', `${SCENES.length} scenes checked`, 'Diwali, 8 Nov']}
+        cta={{ href: PATHS.original, label: 'Check the film scenes', loc: 'hero_original' }}
+        lines={[lineView(getLine('vr-5-12-10'), 'en')]}
+      />
 
-      <header className="rl-hero">
-        <h1 className="rl-h1">The Ramayana behind the film</h1>
-        <p className="rl-promise">Read the scenes in Valmiki&apos;s Sanskrit and Tulsidas&apos;s Awadhi, then carry one line into your week.</p>
-        <div className="rl-shore" aria-hidden="true" />
-        <p className="rl-quick" id="quick-answer">
+      <Band className="rl-introsec">
+        <p className="rl-intro rv" id="quick-answer">
           Ramayana: Part 1 releases worldwide on 5 November 2026 and reportedly tells the story up to Sita&apos;s abduction. In the
           texts, that is Bal, Ayodhya and Aranya Kand, in Valmiki&apos;s Ramayana and in Tulsidas&apos;s Ramcharitmanas. Start with
           the scene checks, read one line a morning in the week after, and read the homecoming behind Diwali on 8 November.
         </p>
-      </header>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="start">
-        <h2 className="rl-h2" id="start">
-          Start here
-        </h2>
-        <ul className="rl-links">
-          {START.map((x) => (
-            <li key={x.href}>
-              <a href={x.href} data-mp-location={`start_${x.href.split('/').pop()}`}>
-                <strong>{x.t}</strong>
-                <span>{x.s}</span>
-              </a>
-            </li>
+      <Band id="start" title="Start here" tone="alt" wide>
+        <Tiles
+          items={[...START, { href: PATHS.hiOriginal, t: 'हिंदी में पढ़ें', s: 'The scene checks and the homecoming, with Hindi meanings.', lang: 'hi' as const }]}
+          loc={(href) => (href === PATHS.hiOriginal ? 'start_hindi' : `start_${href.split('/').pop()}`)}
+        />
+      </Band>
+
+      <Band id="covers" title="What Part 1 covers in the text" wide>
+        <div className="rl-kands">
+          {KANDS.map((k) => (
+            <div key={k.id} className="rl-kand rv">
+              <h3 className="rl-kand-h">{KAND_LABEL[k.id].en}</h3>
+              <p className="rl-kand-p">{k.summary}</p>
+              <ul className="rl-rows">
+                {SCENES.filter((s) => s.kand === k.id).map((s) => (
+                  <li key={s.slug}>
+                    <a className="rl-row" href={PATHS.scene(s.slug)} data-mp-location={`covers_${s.slug}`}>
+                      <strong>{s.title.en}</strong>
+                      <span>{s.verdict.en}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-          <li>
-            <a href={PATHS.hiOriginal} hrefLang="hi" data-mp-location="start_hindi">
-              <strong lang="hi">हिंदी में पढ़ें</strong>
-              <span>The scene checks and the homecoming, with Hindi meanings.</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+        </div>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="covers">
-        <h2 className="rl-h2" id="covers">
-          What Part 1 covers in the text
-        </h2>
-        {KANDS.map((k) => (
-          <div key={k.id} className="rl-section" style={{ paddingTop: '1.2rem' }}>
-            <h3 className="rl-h3">{KAND_LABEL[k.id].en}</h3>
-            <p className="rl-p">{k.summary}</p>
-            <ul className="rl-links">
-              {SCENES.filter((s) => s.kand === k.id).map((s) => (
-                <li key={s.slug}>
-                  <a href={PATHS.scene(s.slug)} data-mp-location={`covers_${s.slug}`}>
-                    <strong>{s.title.en}</strong>
-                    <span>{s.verdict.en}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
+      <Band id="keep" title="Lines to keep" lede="Copy one, send it on WhatsApp, or save it as an image." tone="alt" wide>
+        <div className="rv">
+          <KeepCards ids={['ram-steadiness', 'ram-conduct', 'ram-own-deeds', 'ram-friend']} locale="en" page={PAGE} pageKey="ramayana-hub" path={PATHS.hub} />
+        </div>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="keep">
-        <h2 className="rl-h2" id="keep">
-          Lines to keep
-        </h2>
-        <p className="rl-lede">Copy one, send it on WhatsApp, or save it as an image.</p>
-        <KeepCards ids={['ram-steadiness', 'ram-conduct', 'ram-own-deeds', 'ram-friend']} locale="en" page={PAGE} pageKey="ramayana-hub" path={PATHS.hub} />
-      </section>
-
-      <div className="rl-next">
-        <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-hub" placement="end" copy={NEXT_COPY.en} />
-      </div>
+      <Band>
+        <div className="rl-final rv">
+          <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-hub" placement="end" copy={NEXT_COPY.en} />
+        </div>
+      </Band>
 
       <MethodEn />
     </Shell>

@@ -16,15 +16,17 @@ export default function LineText({
   className?: string
 }) {
   const Tag = as
+  // Keep the danda with its last word (display only; the data is unchanged).
+  const nb = (t: string) => t.replace(/ ([।॥|]+)/g, '\u00a0$1')
   return (
     <Tag className={className}>
       <span className="hc-deva" lang="hi">
-        <span className="hc-half">{awadhi[0]}</span>
-        <span className="hc-half">{awadhi[1]}</span>
+        <span className="hc-half">{nb(awadhi[0])}</span>
+        <span className="hc-half">{nb(awadhi[1])}</span>
       </span>
       <span className="hc-iast" lang="hi-Latn">
-        <span className="hc-half">{iast[0]}</span>
-        <span className="hc-half">{iast[1]}</span>
+        <span className="hc-half">{nb(iast[0])}</span>
+        <span className="hc-half">{nb(iast[1])}</span>
       </span>
     </Tag>
   )

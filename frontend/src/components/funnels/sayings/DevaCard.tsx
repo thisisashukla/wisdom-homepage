@@ -9,6 +9,7 @@
 
 import { useState, type ReactNode } from 'react'
 import { fxTrack, type Hub, type Locale } from '@/lib/funnels/sayings/shared'
+import { Icon } from '@/components/quotes/Icons'
 import CardActions from './CardActions'
 import '@/components/quotes/card.css'
 import './sayings.css'
@@ -41,35 +42,39 @@ export type DevaCardProps = {
   shareText: string
   fileStem: string
   variant?: 'list' | 'hero'
+  /** House scroll entrance (.rv). Off inside the situation picker, which has its own reveal. */
+  reveal?: boolean
 }
 
 const T = {
-  en: { wordHint: 'Tap an underlined word for its meaning', close: 'Close meaning' },
-  hi: { wordHint: 'रेखांकित शब्द पर टैप करें, अर्थ दिखेगा', close: 'अर्थ बंद करें' },
+  en: {
+    wordHint: 'Tap an underlined word for its meaning',
+    close: 'Close meaning',
+  },
+  hi: {
+    wordHint: 'रेखांकित शब्द पर टैप करें, अर्थ दिखेगा',
+    close: 'अर्थ बंद करें',
+  },
 }
 
 function GlossLine({ line, gloss, onTap, openWord, cardId }: { line: string; gloss: Gloss[]; onTap: (g: Gloss) => void; openWord: string | null; cardId: string }) {
+  // Keep a danda with the word before it, so it never wraps alone.
+  line = line.replace(/\s+([।॥])/gu, '\u00a0$1')
   if (!gloss.length) return <>{line}</>
   // Split on spaces, keep punctuation attached; a token is glossed when it starts with a glossed word.
-  const tokens = line.split(/(\s+)/)
+  const tokens = line.split(/([ \t\n]+)/)
   return (
     <>
       {tokens.map((tok, i) => {
         if (/^\s+$/.test(tok) || !tok) return tok
-        const core = tok.replace(/[।॥,;:?!.]+$/u, '')
+        const core = tok.replace(/[\u00a0।॥,;:?!.]+$/u, '')
         const tail = tok.slice(core.length)
         const g = gloss.find((x) => x.w === core)
         if (!g) return <span key={i}>{tok}</span>
         const on = openWord === g.w
         return (
           <span key={i}>
-            <button
-              type="button"
-              className="fx-word"
-              aria-expanded={on}
-              aria-controls={`${cardId}-gloss`}
-              onClick={() => onTap(g)}
-            >
+            <button type="button" className="fx-word" aria-expanded={on} aria-controls={`${cardId}-gloss`} onClick={() => onTap(g)}>
               {core}
             </button>
             {tail}
@@ -93,7 +98,7 @@ export default function DevaCard(p: DevaCardProps) {
     fxTrack('Word Meaning Tapped', { page: p.pageKey, locale: p.locale, hub: p.hub }, { doha: p.id, word: g.w })
   }
   return (
-    <article id={p.domId ?? p.id} className={`qc fx-card fx-deva-card fx-${p.variant ?? 'list'}`} data-section={p.section}>
+    <article id={p.domId ?? p.id} className={`qc fx-card fx-deva-card fx-${p.variant ?? 'list'}${p.reveal === false ? '' : ' rv'}`} data-section={p.section}>
       {p.seal && (
         <p className="fx-seal" aria-label={p.sealLabel}>
           <span aria-hidden="true">{p.seal}</span>
@@ -113,14 +118,19 @@ export default function DevaCard(p: DevaCardProps) {
           </span>
         ))}
       </p>
+      {gloss.length > 0 && p.variant === 'hero' && <p className="fx-word-hint fx-script-deva">{t.wordHint}</p>}
       <div id={`${p.domId ?? p.id}-gloss`} className="fx-gloss" aria-live="polite">
         {word && (
           <p className="fx-gloss-pop">
             <strong lang="hi">{word.w}</strong>
             <span lang={p.locale}>{p.locale === 'hi' ? word.hi : word.en}</span>
-            {p.locale === 'hi' && <span lang="en" className="fx-gloss-en">{word.en}</span>}
+            {p.locale === 'hi' && (
+              <span lang="en" className="fx-gloss-en">
+                {word.en}
+              </span>
+            )}
             <button type="button" className="fx-gloss-x" aria-label={t.close} onClick={() => setWord(null)}>
-              ×
+              <Icon name="close" />
             </button>
           </p>
         )}
@@ -137,13 +147,12 @@ export default function DevaCard(p: DevaCardProps) {
         <p className="fx-deva-source">
           {p.chip}
           {p.href && (
-            <a className="fx-more-link" href={p.href} data-mp-location="card_detail">
+            <a className="fx-link" href={p.href} data-mp-location="card_detail">
               {p.hrefLabel}
             </a>
           )}
         </p>
       )}
-      {gloss.length > 0 && p.variant === 'hero' && <p className="fx-hint">{t.wordHint}</p>}
       <CardActions
         quoteId={p.id}
         domId={p.domId}

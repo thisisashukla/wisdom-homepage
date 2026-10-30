@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Shell from '@/components/funnels/mahabharata/Shell'
-import WhereIsGita from '@/components/funnels/mahabharata/WhereIsGita'
+import WhereIsGita, { whereHero } from '@/components/funnels/mahabharata/WhereIsGita'
 import { HI } from '@/lib/funnels/mahabharata/whereGita'
 import { PATHS, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 
@@ -32,6 +32,7 @@ export default function Page() {
       locale="hi"
       crumbs={[{ label: HI.crumbs.home, href: '/' }, { label: HI.crumbs.mbh, href: PATHS.hub }, { label: HI.crumbs.here }]}
       jsonLd={ld}
+      hero={whereHero(HI, 'hi', PAGE)}
     >
       <WhereIsGita copy={HI} locale="hi" page={PAGE} path={PATHS.gitaHi} />
     </Shell>

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import Shell from '@/components/funnels/mahabharata/Shell'
+import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
 import LineCard from '@/components/funnels/mahabharata/LineCard'
 import GitaLink from '@/components/funnels/mahabharata/GitaLink'
 import Faq from '@/components/funnels/mahabharata/Faq'
 import NextBlock from '@/components/funnels/mahabharata/NextBlock'
-import { line } from '@/lib/funnels/mahabharata/lines'
+import { heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
 import data from '@/content/funnels/mahabharata/lines.json'
 import { PATHS, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 
@@ -61,29 +61,41 @@ export default function Page() {
       { name: 'Vidura Niti', path: PATH },
     ]),
   )
+  const count = ANGER.length + GROUPS.reduce((n, g) => n + g.ids.length, 0)
   return (
-    <Shell page={PAGE} crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Vidura Niti' }]} jsonLd={ld}>
-      <header className="mb-head">
-        <p className="mb-kicker">Udyoga Parva, the night before the message</p>
-        <h1>Vidura Niti</h1>
-        <p id="quick-answer">
+    <Shell
+      page={PAGE}
+      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Vidura Niti' }]}
+      jsonLd={ld}
+      hero={{
+        eyebrow: 'Udyoga Parva, the night before the message',
+        h1: 'Vidura Niti',
+        line: heroLineOf('mbh.5.37.15'),
+        facts: ['MBh 5.33 to 5.40', `${count} verses with meaning`, 'Sanskrit with verse numbers'],
+        cta: (
+          <a href="#anger" className="btn-read-gita btn-read-gita-primary" data-mp-location="vidura_hero_anger">
+            Read the seven verses on anger
+          </a>
+        ),
+      }}
+    >
+      <Band className="mb-intro">
+        <p id="quick-answer" className="tp-intro rv">
           Vidura Niti is the counsel Vidura gives the sleepless King Dhritarashtra in eight chapters of the Udyoga Parva (MBh 5.33 to 5.40).
           Its best-known line: people who say pleasant things are easy to find, but rare is the one who says the hard, helpful thing, and rare the
           one who listens (MBh 5.37.15).
         </p>
-        <p className="mb-sub">
+        <p className="mb-sub rv">
           Sanjaya has come back from the Pandavas and will deliver their message in the hall tomorrow. The king cannot sleep, and sends for his
           half-brother. <a href={PATHS.character('vidura')}>Who Vidura was</a>.
         </p>
-      </header>
+      </Band>
 
-      <section className="mb-sec" id="anger" aria-labelledby="anger-h" data-mp-section="vidura_anger">
-        <h2 id="anger-h">Seven verses on anger</h2>
-        <p className="mb-lede">From the gate anger opens to the ways it is won over.</p>
+      <Band alt id="anger" mp="vidura_anger" h="Seven verses on anger" hId="anger-h" lede="From the gate anger opens to the ways it is won over.">
         {ANGER.map((id) => (
           <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
         ))}
-        <ul className="mb-bridge">
+        <ul className="mb-bridge rv">
           <li>
             <GitaLink href="/gita/chapter/16/verse/21" from="vidura_anger" toRef="16.21" page={PAGE} locale="en">
               Gita 16.21
@@ -97,17 +109,15 @@ export default function Page() {
             <p>From anger comes confusion, and from confusion a lost memory. The Gita traces where anger leads.</p>
           </li>
         </ul>
-      </section>
+      </Band>
 
-      {GROUPS.map((g) => (
-        <section className="mb-sec" key={g.id} id={g.id} aria-labelledby={`${g.id}-h`} data-mp-section={`vidura_${g.id}`}>
-          <h2 id={`${g.id}-h`}>{g.h}</h2>
-          <p className="mb-lede">{g.lede}</p>
+      {GROUPS.map((g, gi) => (
+        <Band key={g.id} alt={gi % 2 === 1} id={g.id} mp={`vidura_${g.id}`} h={g.h} hId={`${g.id}-h`} lede={g.lede}>
           {g.ids.map((id) => (
             <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
           ))}
           {g.gita && (
-            <ul className="mb-bridge">
+            <ul className="mb-bridge rv">
               <li>
                 <GitaLink href={`/gita/chapter/${g.gita.c}/verse/${g.gita.v}`} from={`vidura_${g.id}`} toRef={`${g.gita.c}.${g.gita.v}`} page={PAGE} locale="en">
                   Gita {g.gita.c}.{g.gita.v}
@@ -116,14 +126,13 @@ export default function Page() {
               </li>
             </ul>
           )}
-        </section>
+        </Band>
       ))}
 
-      <Faq items={FAQ} heading="Questions people ask" />
-      <NextBlock page={PAGE} />
+      <Faq items={FAQ} heading="Questions people ask" alt={GROUPS.length % 2 === 1} />
+      <NextBlock page={PAGE} alt={GROUPS.length % 2 === 0} />
 
-      <section className="mb-sec mb-method" aria-labelledby="method-h">
-        <h2 id="method-h">Sources and method</h2>
+      <Band className="mb-method" alt={GROUPS.length % 2 === 1} h="Sources and method" hId="method-h">
         <p>
           Sanskrit from a southern-recension text of the Udyoga Parva, chapters 33 to 40. Where the digital text had obvious typing errors we
           restored the standard reading and kept a record. The English is Wisdom&apos;s own, read with Nilakantha&apos;s commentary, with K. M.
@@ -135,7 +144,7 @@ export default function Page() {
           The same goes for a handful of Anushasana Parva lines, a book many scholars read as a late teaching layer.
         </p>
         <p>Wisdom translation, edited by Ankur Shukla.</p>
-      </section>
+      </Band>
     </Shell>
   )
 }

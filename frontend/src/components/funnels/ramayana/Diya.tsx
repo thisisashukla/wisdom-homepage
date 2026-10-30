@@ -1,11 +1,11 @@
 import type { LampId, LampState } from '@/lib/funnels/ramayana/types'
 
 /**
- * A clay lamp drawn in code (no image, no deity art). The flame says the state:
+ * A clay lamp drawn in code (no image, no deity art), in house gold. The flame says the state:
  * full flame = in that version, low flame = mentioned only, no flame = not there,
- * dashed bowl = not yet known (film only). The bowl's rim carries the text's marker.
+ * dashed bowl = not yet known (film only). The rim carries the text's marker.
  */
-export default function Diya({ lamp, state, size = 44 }: { lamp: LampId; state: LampState; size?: number }) {
+export default function Diya({ lamp, state, size = 44 }: { lamp: LampId | 'plain'; state: LampState; size?: number }) {
   return (
     <svg
       className={`rl-diya rl-diya-${lamp}`}
@@ -16,7 +16,12 @@ export default function Diya({ lamp, state, size = 44 }: { lamp: LampId; state: 
       aria-hidden="true"
       focusable="false"
     >
-      {state === 'lit' && <circle className="rl-glow" cx="24" cy="20" r="15" />}
+      {(state === 'lit' || state === 'partial') && (
+        <g className="rl-glow">
+          <circle cx="24" cy="21" r="17" />
+          <circle cx="24" cy="21" r="10" />
+        </g>
+      )}
       {(state === 'lit' || state === 'partial') && (
         <g className="rl-flame">
           <path className="rl-flame-out" d="M24 7c4.6 6.2 6.4 10.6 6.4 14.1A6.4 6.4 0 0 1 24 27.5a6.4 6.4 0 0 1-6.4-6.4C17.6 17.6 19.4 13.2 24 7z" />

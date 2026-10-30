@@ -8,7 +8,13 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { fxTrack, type Locale } from '@/lib/funnels/sayings/shared'
 
-export default function SituationPicker({ situations, locale, pageKey, label, children }: {
+export default function SituationPicker({
+  situations,
+  locale,
+  pageKey,
+  label,
+  children,
+}: {
   situations: { id: string; label: string }[]
   locale: Locale
   pageKey: string
@@ -34,7 +40,7 @@ export default function SituationPicker({ situations, locale, pageKey, label, ch
     <div ref={root} className="fx-sit" data-js={js ? '' : undefined}>
       <div className="fx-sit-chips" role="group" aria-label={label}>
         {situations.map((s) => (
-          <button key={s.id} type="button" className="fx-sit-chip" aria-pressed={on === s.id} onClick={() => pick(s.id)} lang={locale}>
+          <button key={s.id} type="button" className="qchip" aria-pressed={on === s.id} onClick={() => pick(s.id)} lang={locale}>
             {s.label}
           </button>
         ))}

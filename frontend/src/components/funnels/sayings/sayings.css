@@ -1,268 +1,432 @@
-/* Sayings funnel (Vivekananda, Kabir, Chanakya). Everything is scoped under .fx-sayings
-   and varies by data-hub: each hub sets 5 custom properties and reuses the shared card
-   skeleton (src/components/quotes/card.css) by overriding its --q-* variables.
-   Wisdom gold (#f5c96a) marks every link back to the Gita.
-   Motion: entrance cubic-bezier(0.4,0,0.2,1), feedback cubic-bezier(0.2,0,0,1);
-   only user-opened layers animate. Mobile first, 360 to 412px. */
+/* Sayings hubs (Vivekananda, Kabir, Chanakya) on the house quote-page system.
+   The page root is `.qp.fx-sayings`: layout, header, chips, sections, FAQ, related
+   and the next step come from src/components/quotes/quotes.css and card.css
+   (maroon night, diya gold, cream; Playfair, Inter, Tiro). This file adds only
+   what those do not have, built from the same --q-* tokens:
+   - the card bodies (an English line, a doha, a Sanskrit verse),
+   - Vivekananda: the source drawer and its verdict stamp,
+   - Kabir: tap a word for its meaning,
+   - Chanakya: the situation picker.
+   One accent beyond gold: sindoor-tinted gold (--fx-sindoor), only on the
+   "not in his works" stamps. Never a background.
+   Motion: the house tokens and .rv entrances from src/app/home-v3.css (driven by
+   HomeAnimations, hiding only under html.motion); transform and opacity only. */
 
-.fx-sayings {
-  --fx-gold: #f5c96a;
-  --fx-in: cubic-bezier(0.4, 0, 0.2, 1);
-  --fx-fb: cubic-bezier(0.2, 0, 0, 1);
-  --fx-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, sans-serif;
-  --fx-serif: var(--font-playfair), 'Playfair Display', Georgia, serif;
-  --fx-deva-ui: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
-  background: var(--fx-bg);
-  color: var(--fx-ink);
-  font-family: var(--fx-ui);
-  min-height: 60vh;
-}
-.fx-sayings:lang(hi) { font-family: var(--fx-deva-ui); }
-.fx-sayings *:focus-visible { outline: 2px solid var(--fx-accent); outline-offset: 3px; border-radius: 4px; }
-
-/* ── palettes ── */
-.fx-sayings[data-hub='vivekananda'], .fxd-wrap, .fx-sheet[data-hub='vivekananda'] {
-  --fx-bg: #0d0d12; /* ink */
-  --fx-ink: #f4efe6; /* chalk */
-  --fx-accent: #ff7a1a; /* geru */
-  --fx-warm: #c2410c; /* ember */
-  --fx-quiet: #8a8f98; /* steel */
-  --fx-card: #15151c;
-}
-.fx-sayings[data-hub='kabir'], .fx-sheet[data-hub='kabir'] {
-  --fx-bg: #f3ead8; /* kora */
-  --fx-ink: #1b1b1b; /* ink */
-  --fx-accent: #1f2a5a; /* indigo */
-  --fx-warm: #e0a526; /* haldi */
-  --fx-quiet: #8a4521; /* mitti, darkened one step for AA on kora */
-  --fx-card: #fbf5e8;
-}
-.fx-sayings[data-hub='chanakya'], .fx-sheet[data-hub='chanakya'] {
-  --fx-bg: #f6f4ef; /* paper */
-  --fx-ink: #1e2329; /* slate */
-  --fx-accent: #b3261e; /* sindoor seal */
-  --fx-warm: #b08d57; /* brass */
-  --fx-quiet: #4a5562; /* iron */
-  --fx-card: #fffdf8;
+.fx-sayings,
+.fxd-wrap {
+  --fx-sindoor: #e38a5c;
+  --fx-hi: var(--fx-tiro-hi), 'Tiro Devanagari Hindi', var(--font-noto-devanagari), serif;
+  --fx-sa: var(--fx-tiro-sa), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
 }
 
-/* Kabir: a handloom weave drawn in CSS, warp and weft at very low contrast. */
-.fx-sayings[data-hub='kabir'] {
-  background-image:
-    repeating-linear-gradient(0deg, rgba(31, 42, 90, 0.035) 0 1px, transparent 1px 3px),
-    repeating-linear-gradient(90deg, rgba(160, 82, 45, 0.04) 0 1px, transparent 1px 4px);
+/* ── Hero: the house quote-page head with the homepage diya glow ── */
+.fx-sayings .qp-head { position: relative; padding-bottom: 4px; }
+.fx-sayings .qp-head::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: -70px;
+  width: 140vw;
+  max-width: 1100px;
+  height: 460px;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(ellipse 55% 52% at 50% 0%, rgba(200, 136, 30, 0.12) 0%, transparent 68%),
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(92, 26, 26, 0.55) 0%, transparent 72%);
+  pointer-events: none;
 }
-
-/* The shared card, next step and sheet take the hub's colours. */
-.fx-sayings .qc, .fx-sayings .qns, .fx-sheet, .fx-sheet .qns, .fx-sheet .qsheet {
-  --q-leaf: var(--fx-card);
-  --q-raise: var(--fx-card);
-  --q-line: color-mix(in srgb, var(--fx-quiet) 35%, transparent);
-  --q-line-strong: color-mix(in srgb, var(--fx-accent) 55%, transparent);
-  --q-gold: var(--fx-accent);
-  --q-gold-hi: var(--fx-accent);
-  --q-cream: var(--fx-ink);
-  --q-cream-2: color-mix(in srgb, var(--fx-ink) 82%, transparent);
-  --q-cream-3: var(--fx-quiet);
+.fx-sayings .qp-head > * { position: relative; z-index: 1; }
+.fx-sayings .qp-crumbs ol { align-items: center; }
+.fx-sayings .qp-crumbs a { display: inline-flex; align-items: center; min-height: 32px; }
+.fx-quick {
+  margin-top: 14px !important;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--q-cream-2);
+  max-width: 38em;
 }
-.fx-sheet .qsheet { background: var(--fx-card); color: var(--fx-ink); }
-.fx-sayings .qns-btn, .fx-sheet .qns-btn { background: var(--fx-accent); color: var(--fx-bg); }
-.fx-sayings[data-hub='vivekananda'] .qns-btn, .fx-sheet[data-hub='vivekananda'] .qns-btn { color: #0d0d12; }
-.fx-sayings[data-hub='kabir'] .qns-btn, .fx-sheet[data-hub='kabir'] .qns-btn,
-.fx-sayings[data-hub='chanakya'] .qns-btn, .fx-sheet[data-hub='chanakya'] .qns-btn { color: #fffdf8; }
-.fx-sayings .qns-btn:hover, .fx-sheet .qns-btn:hover { filter: brightness(1.08); background: var(--fx-accent); }
-
-/* ── page frame ── */
-.fx-page { max-width: 760px; margin: 0 auto; padding: 20px 18px 72px; }
-.fx-crumbs { font-size: 13px; color: var(--fx-quiet); margin: 4px 0 20px; }
-.fx-crumbs ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-.fx-crumbs li + li::before { content: '/'; margin-right: 6px; opacity: 0.6; }
-.fx-crumbs a { color: inherit; text-decoration: none; min-height: 44px; }
-.fx-crumbs a:hover { text-decoration: underline; }
-
-.fx-hero { margin-bottom: 28px; }
-.fx-h1 { font-family: var(--fx-serif); font-weight: 600; font-size: clamp(30px, 8vw, 46px); line-height: 1.12; margin: 0 0 14px; color: var(--fx-accent); letter-spacing: -0.005em; }
-.fx-h1:lang(hi) { font-family: var(--fx-deva-ui); font-weight: 500; line-height: 1.3; }
-.fx-promise { font-size: 17.5px; line-height: 1.6; margin: 0 0 16px; max-width: 62ch; }
-.fx-quick { font-size: 16.5px; line-height: 1.7; margin: 0 0 18px; max-width: 64ch; color: color-mix(in srgb, var(--fx-ink) 88%, transparent); }
 .fx-quick:lang(hi) { line-height: 1.85; }
-.fx-meta { font-size: 13.5px; color: var(--fx-quiet); margin: 0; }
+.fx-quick a { text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+.fx-head-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 14px; }
+.fx-hint { font-size: 13.5px; color: var(--q-cream-3); }
 
-.fx-jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 6px; padding: 0; list-style: none; }
-.fx-jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid color-mix(in srgb, var(--fx-quiet) 45%, transparent); border-radius: 999px; color: var(--fx-ink); text-decoration: none; font-size: 14.5px; }
-.fx-jump a:hover { border-color: var(--fx-accent); }
+/* Chips here are jump links to sections (house .qchip look). */
+.fx-sayings .qchips { margin-top: 16px; }
+.fx-sayings a.qchip { color: var(--q-cream-2); }
+.fx-sayings a.qchip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
 
-.fx-sec { margin: 44px 0 0; }
-.fx-h2 { font-family: var(--fx-serif); font-weight: 600; font-size: clamp(23px, 5.6vw, 30px); line-height: 1.25; margin: 0 0 10px; color: var(--fx-ink); }
-.fx-h2:lang(hi) { font-family: var(--fx-deva-ui); font-weight: 500; line-height: 1.45; }
-.fx-intro { font-size: 16px; line-height: 1.7; margin: 0 0 18px; max-width: 64ch; color: color-mix(in srgb, var(--fx-ink) 86%, transparent); }
-.fx-list { display: grid; gap: 16px; }
-.fx-prose p { font-size: 16px; line-height: 1.75; margin: 0 0 14px; max-width: 66ch; }
-.fx-prose a, .fx-intro a, .fx-quick a { color: var(--fx-ink); text-decoration: underline; text-decoration-color: var(--fx-accent); text-underline-offset: 3px; }
+/* Section intro link. */
+.fx-sayings .qp-intro a { color: var(--q-gold-hi); text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
 
-/* Links back to the Gita: the one Wisdom gold thread. */
-.fx-gita { color: var(--fx-ink); text-decoration: none; border-bottom: 2px solid var(--fx-gold); padding-bottom: 1px; }
-.fx-gita:hover { background: color-mix(in srgb, var(--fx-gold) 18%, transparent); }
+/* ── Card bodies ── */
+.fx-card { scroll-margin-top: 80px; }
 
-.fx-next { margin: 40px 0 0; padding: 22px 20px; border: 1px solid color-mix(in srgb, var(--fx-accent) 40%, transparent); border-radius: 16px; background: var(--fx-card); }
-.fx-next h2 { margin-top: 0; }
+/* Vivekananda: an English line, set in Playfair like the house quote lines. */
+.fx-viv-line {
+  font-family: var(--q-display);
+  font-weight: 400;
+  font-size: clamp(21px, 5.6vw, 25px);
+  line-height: 1.5;
+  color: var(--q-gold-hi);
+  text-wrap: pretty;
+}
+.fx-viv-line::before { content: '\201C'; margin-left: -0.45em; margin-right: 0.05em; color: var(--q-gold); }
+.fx-viv-line::after { content: '\201D'; color: var(--q-gold); }
+.fx-viv-meaning { margin-top: 14px !important; font-size: 17px; line-height: 1.75; color: var(--q-cream); }
+.fx-viv-meaning:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; }
+.fx-viv-source { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 14px !important; }
 
-.fx-faq details { border-top: 1px solid color-mix(in srgb, var(--fx-quiet) 35%, transparent); }
-.fx-faq details:last-child { border-bottom: 1px solid color-mix(in srgb, var(--fx-quiet) 35%, transparent); }
-.fx-faq summary { cursor: pointer; padding: 14px 0; min-height: 44px; font-weight: 500; font-size: 16px; line-height: 1.5; list-style: none; }
-.fx-faq summary::-webkit-details-marker { display: none; }
-.fx-faq summary::after { content: '+'; float: right; color: var(--fx-accent); margin-left: 12px; }
-.fx-faq details[open] summary::after { content: '\2212'; }
-.fx-faq p { margin: 0 0 16px; font-size: 15.5px; line-height: 1.7; max-width: 64ch; }
+/* The source chip: the house source chip, made a button, with the verdict stamp inside. */
+.fx-chip {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  min-height: 44px;
+  padding: 8px 14px 8px 8px;
+  border: 1px solid var(--q-line);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--q-gold);
+  font: inherit;
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out);
+}
+.fx-chip:hover { border-color: var(--q-line-strong); color: var(--q-gold-hi); }
+.fx-chip:active { transform: scale(0.98); }
+.fx-chip-open { font-size: 12px; color: var(--q-cream-3); letter-spacing: 0.02em; }
 
-.fx-method { margin-top: 40px; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--fx-quiet) 35%, transparent); font-size: 14px; line-height: 1.7; color: var(--fx-quiet); }
-.fx-method h2 { font-size: 15px; font-weight: 600; margin: 0 0 6px; color: var(--fx-ink); font-family: var(--fx-ui); }
-.fx-method:lang(hi) h2 { font-family: var(--fx-deva-ui); }
-.fx-method p { margin: 0 0 8px; max-width: 70ch; }
-.fx-method a { color: inherit; }
+/* Verdict stamps: gold for his words, dashed for a paraphrase, sindoor for not his. */
+.fx-stamp {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 2px 10px;
+  border: 1px solid var(--q-gold);
+  border-radius: 999px;
+  color: var(--q-gold-hi);
+  font-family: var(--q-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.fx-stamp:lang(hi) { font-family: var(--q-deva); }
+.fx-stamp[data-verdict='paraphrase'] { border-style: dashed; border-color: rgba(245, 232, 204, 0.45); color: var(--q-cream-2); }
+.fx-stamp[data-verdict='not-found'] { border-color: var(--fx-sindoor); color: var(--fx-sindoor); }
 
-.fx-related ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
-.fx-related a { display: flex; align-items: center; min-height: 44px; color: var(--fx-ink); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--fx-accent) 60%, transparent); text-underline-offset: 4px; }
-
-/* ── cards ── */
-.fx-card { position: relative; }
-.fx-card:target { border-color: var(--fx-accent); }
-
-/* Vivekananda: the line stands up on a geru bar. */
-.fx-viv-card { border-left: 3px solid var(--fx-accent); }
-.fx-viv-line { font-family: var(--fx-serif); font-size: clamp(20px, 5.4vw, 24px); line-height: 1.45; margin: 0; color: var(--fx-ink); }
-.fx-viv-meaning { margin: 12px 0 0; font-size: 16.5px; line-height: 1.75; color: color-mix(in srgb, var(--fx-ink) 86%, transparent); }
-.fx-viv-meaning:lang(hi) { font-family: var(--fx-deva-ui); }
-.fx-viv-source { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 14px 0 0; }
-.fx-chip { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 6px 12px 6px 6px; border: 1px solid color-mix(in srgb, var(--fx-quiet) 45%, transparent); border-radius: 10px; background: transparent; color: var(--fx-quiet); font: inherit; font-size: 13px; letter-spacing: 0.02em; text-align: left; cursor: pointer; transition: border-color 160ms var(--fx-fb), color 160ms var(--fx-fb); }
-.fx-chip:hover { border-color: var(--fx-accent); color: var(--fx-ink); }
-.fx-chip-stamp, .fxd-stamp, .fx-stamp { display: inline-block; padding: 3px 8px; border: 1.5px solid var(--fx-accent); border-radius: 4px; color: var(--fx-ink); font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; transform: rotate(-2deg); white-space: nowrap; }
-[data-verdict='paraphrase'].fx-chip-stamp, [data-verdict='paraphrase'].fxd-stamp, [data-verdict='paraphrase'].fx-stamp { border-color: var(--fx-quiet); border-style: dashed; }
-[data-verdict='not-found'].fx-chip-stamp, [data-verdict='not-found'].fxd-stamp, [data-verdict='not-found'].fx-stamp { border-color: var(--fx-warm); background: color-mix(in srgb, var(--fx-warm) 22%, transparent); }
-.fx-check-link, .fx-more-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; color: var(--fx-ink); text-decoration: underline; text-decoration-color: var(--fx-accent); text-underline-offset: 4px; }
-
-/* Vivekananda hero type: Archivo, condensed and bold. */
-.fx-sayings[data-hub='vivekananda'] .fx-hero { border-left: 6px solid var(--fx-accent); padding-left: 16px; }
-.fx-sayings[data-hub='vivekananda'] .fx-h1 { font-family: var(--fx-archivo), 'Archivo', var(--font-inter), sans-serif; font-weight: 700; font-stretch: 72%; font-variation-settings: 'wdth' 72; font-size: clamp(42px, 12.5vw, 84px); line-height: 0.95; letter-spacing: -0.01em; color: var(--fx-ink); }
-.fx-sayings[data-hub='vivekananda'] .fx-h1:lang(hi) { font-family: var(--fx-deva-ui); font-weight: 600; font-size: clamp(32px, 9vw, 56px); line-height: 1.2; }
-.fx-sayings[data-hub='vivekananda'] .fx-h2 { font-family: var(--fx-archivo), 'Archivo', var(--font-inter), sans-serif; font-weight: 700; font-stretch: 80%; font-variation-settings: 'wdth' 80; font-size: clamp(26px, 7vw, 36px); line-height: 1.05; }
-.fx-sayings[data-hub='vivekananda'] .fx-h2:lang(hi) { font-family: var(--fx-deva-ui); font-weight: 600; line-height: 1.35; }
-.fx-sayings[data-hub='vivekananda'] .fx-h1 + .fx-promise { margin-top: 16px; }
-
-/* The source drawer. */
-.fxd-wrap { position: fixed; inset: 0; z-index: 90; display: flex; align-items: flex-end; justify-content: center; font-family: var(--font-inter), system-ui, sans-serif; }
-.fxd-wrap:lang(hi) { font-family: var(--font-noto-devanagari), var(--font-inter), sans-serif; }
-.fxd-backdrop { position: absolute; inset: 0; background: rgba(5, 5, 8, 0.66); animation: fx-fade 260ms var(--fx-in) both; }
-.fxd { position: relative; width: 100%; max-width: 640px; max-height: 86vh; overflow-y: auto; background: #15151c; color: #f4efe6; border-top: 3px solid #ff7a1a; border-radius: 18px 18px 0 0; padding: 22px 20px calc(24px + env(safe-area-inset-bottom)); animation: fx-up 260ms var(--fx-in) both; }
-.fxd-x { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 50%; background: transparent; color: #8a8f98; cursor: pointer; }
-.fxd-x:hover { color: #f4efe6; }
-.fxd-title { font-family: var(--fx-archivo), 'Archivo', var(--font-inter), sans-serif; font-weight: 700; font-stretch: 80%; font-variation-settings: 'wdth' 80; font-size: 26px; line-height: 1.1; margin: 14px 0 6px; }
-.fxd-title:lang(hi) { font-family: var(--font-noto-devanagari), sans-serif; }
-.fxd-meta { margin: 0 0 14px; font-size: 14px; line-height: 1.6; color: #8a8f98; }
-.fxd-para { margin: 0 0 14px; padding: 0 0 0 14px; border-left: 2px solid rgba(138, 143, 152, 0.5); font-family: var(--fx-serif); font-size: 17px; line-height: 1.7; color: rgba(244, 239, 230, 0.86); }
-.fxd-para mark { background: rgba(255, 122, 26, 0.22); color: #f4efe6; padding: 1px 0; border-bottom: 2px solid #ff7a1a; }
-.fxd-note { margin: 0 0 10px; font-size: 13px; line-height: 1.6; color: #8a8f98; }
-.fxd-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; margin-top: 6px; border-radius: 999px; background: #ff7a1a; color: #0d0d12; font-weight: 600; font-size: 15px; text-decoration: none; }
-.fxd-link:focus-visible, .fxd-x:focus-visible { outline: 2px solid #f4efe6; outline-offset: 3px; }
-@keyframes fx-up { from { transform: translateY(100%); } to { transform: none; } }
-@keyframes fx-fade { from { opacity: 0; } to { opacity: 1; } }
+.fx-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  color: var(--q-cream-2);
+  text-decoration: underline;
+  text-decoration-color: var(--q-line-strong);
+  text-underline-offset: 4px;
+}
+.fx-link:hover { color: var(--q-gold-hi); }
 
 /* Devanagari cards (Kabir, Chanakya): one script at a time. */
 .fx-script-roman { display: none; }
 .fx-sayings[data-script='roman'] .fx-script-roman { display: block; }
 .fx-sayings[data-script='roman'] .fx-script-deva { display: none; }
-.fx-deva, .fx-roman { margin: 0; }
 .fx-pada { display: block; }
-.fx-deva { font-size: clamp(22px, 6.2vw, 27px); line-height: 1.75; color: var(--fx-accent); }
-.fx-sayings[data-hub='kabir'] .fx-deva { font-family: var(--fx-tiro-hi), 'Tiro Devanagari Hindi', var(--font-noto-devanagari), serif; }
-.fx-sayings[data-hub='chanakya'] .fx-deva { font-family: var(--fx-tiro-sa), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif; color: var(--fx-ink); font-size: clamp(20px, 5.6vw, 24px); }
-.fx-roman { font-family: var(--fx-tiro-sa), 'Tiro Devanagari Sanskrit', Georgia, serif; font-style: italic; font-size: 17px; line-height: 1.65; color: var(--fx-accent); }
-.fx-sayings[data-hub='chanakya'] .fx-roman { color: var(--fx-ink); }
-.fx-meaning { margin: 12px 0 0; font-size: 17px; line-height: 1.75; color: var(--fx-ink); }
-.fx-meaning:lang(en) { font-family: var(--fx-ui); line-height: 1.6; }
-.fx-meaning2 { margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: var(--fx-quiet); }
-.fx-deva-source { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 12px 0 0; }
-.fx-tag { display: inline-flex; align-items: center; min-height: 28px; padding: 2px 10px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--fx-quiet) 50%, transparent); color: var(--fx-quiet); font-size: 12.5px; letter-spacing: 0.02em; }
-.fx-hero-card .fx-deva { font-size: clamp(26px, 7.4vw, 34px); }
-.fx-hint { margin: 10px 0 0; font-size: 13px; color: var(--fx-quiet); }
+.fx-deva {
+  font-family: var(--fx-hi);
+  font-size: clamp(22px, 6vw, 28px);
+  line-height: 1.74;
+  color: var(--q-gold-hi);
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+.fx-deva[lang='sa'] { font-family: var(--fx-sa); }
+.fx-roman {
+  font-family: var(--fx-sa);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--q-gold-hi);
+}
+.fx-meaning { margin-top: 16px !important; font-size: 17px; line-height: 1.6; color: var(--q-cream); text-wrap: pretty; }
+.fx-meaning:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; line-height: 1.75; }
+.fx-meaning2 { margin-top: 8px !important; font-size: 15px; line-height: 1.6; color: var(--q-cream-3); }
+.fx-deva-source { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 14px !important; }
+.fx-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 4px 12px;
+  border: 1px solid var(--q-line);
+  border-radius: 999px;
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  color: var(--q-gold);
+}
+.fx-hero .qc { padding: 28px 22px 6px; border-radius: 18px; }
+.fx-hero .fx-deva { font-size: clamp(26px, 7.6vw, 36px); line-height: 1.72; }
+.fx-hero .fx-meaning { font-size: 18.5px; }
+.fx-hero .fx-meaning:lang(hi) { font-size: 19px; }
 
-/* Kabir: tap a word. */
-.fx-word { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; text-decoration: underline dotted; text-decoration-color: var(--fx-warm); text-decoration-thickness: 2px; text-underline-offset: 8px; min-height: 44px; }
-.fx-word[aria-expanded='true'] { background: color-mix(in srgb, var(--fx-warm) 28%, transparent); border-radius: 4px; }
+/* Chanakya: chapter and verse, a small gold seal in the corner. */
+.fx-seal {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 6px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--q-line-strong);
+  border-radius: 10px;
+  color: var(--q-gold-hi);
+  font-family: var(--fx-sa);
+  font-size: 16px;
+  line-height: 1;
+  box-shadow: inset 0 0 0 3px var(--q-leaf), inset 0 0 0 4px var(--q-line);
+}
+.fx-sayings[data-hub='chanakya'] .fx-deva-card .fx-script-deva,
+.fx-sayings[data-hub='chanakya'] .fx-deva-card .fx-script-roman { padding-right: 58px; }
+.fx-sayings[data-hub='chanakya'] .fx-deva { font-size: clamp(21px, 5.8vw, 26px); }
+
+/* ── Kabir: tap a word ── */
+.fx-word {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-color: rgba(200, 136, 30, 0.75);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 9px;
+  min-height: 44px;
+  border-radius: 6px;
+  transition: background-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out);
+}
+.fx-word:hover { color: var(--q-cream); }
+.fx-word[aria-expanded='true'] { color: var(--q-cream); text-decoration-style: solid; text-decoration-color: var(--q-gold-hi); }
 .fx-gloss:empty { display: none; }
-.fx-gloss-pop { position: relative; margin: 8px 0 0; padding: 10px 44px 10px 12px; border-radius: 10px; background: var(--fx-accent); color: #f3ead8; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; font-size: 15.5px; line-height: 1.5; animation: fx-pop 160ms var(--fx-fb) both; }
-.fx-gloss-pop strong { font-family: var(--fx-tiro-hi), var(--font-noto-devanagari), serif; font-weight: 400; font-size: 19px; color: #e0a526; }
-.fx-gloss-en { opacity: 0.8; font-size: 14px; }
-.fx-gloss-x { position: absolute; top: 0; right: 0; width: 44px; height: 44px; border: 0; background: none; color: inherit; font-size: 22px; cursor: pointer; }
-@keyframes fx-pop { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
-.fx-sayings[data-hub='kabir'] .fx-deva-card { border-left: 4px solid var(--fx-accent); }
+.fx-gloss-pop {
+  position: relative;
+  margin-top: 12px !important;
+  padding: 12px 48px 12px 14px;
+  border: 1px solid var(--q-line-strong);
+  border-radius: 12px;
+  background: var(--q-raise);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 12px;
+  align-items: baseline;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--q-cream);
+  animation: fx-pop var(--t-quick) var(--ease-out) both;
+}
+.fx-gloss-pop strong { font-family: var(--fx-hi); font-weight: 400; font-size: 21px; color: var(--q-gold-hi); }
+.fx-gloss-en { color: var(--q-cream-3); font-size: 14px; }
+.fx-gloss-x {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--q-cream-2);
+  cursor: pointer;
+}
+.fx-gloss-x:hover { color: var(--q-cream); }
+.fx-word-hint { display: flex; align-items: center; gap: 8px; margin-top: 12px !important; font-size: 13.5px; color: var(--q-cream-3); }
+.fx-word-hint::before { content: ''; width: 22px; border-bottom: 2px dotted rgba(200, 136, 30, 0.75); }
+@keyframes fx-pop { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 
-/* Chanakya: the seal. */
-.fx-seal { position: absolute; top: 16px; right: 16px; margin: 0; width: 56px; height: 56px; display: grid; place-items: center; border: 2px solid var(--fx-accent); border-radius: 6px; color: var(--fx-accent); font-family: var(--fx-tiro-sa), var(--font-noto-devanagari), serif; font-size: 17px; line-height: 1; box-shadow: inset 0 0 0 3px var(--fx-card), inset 0 0 0 4px color-mix(in srgb, var(--fx-accent) 60%, transparent); transform: rotate(-3deg); }
-.fx-sayings[data-hub='chanakya'] .fx-deva-card .fx-script-deva, .fx-sayings[data-hub='chanakya'] .fx-deva-card .fx-script-roman { padding-right: 64px; }
-.fx-sayings[data-hub='chanakya'] .fx-deva-card { border-top: 2px solid var(--fx-warm); }
+/* Word meanings list (doha page). */
+.fx-words { margin: 4px 0 0; display: grid; border-top: 1px solid var(--q-line); }
+.fx-words > div { display: grid; grid-template-columns: minmax(84px, auto) 1fr; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid var(--q-line); align-items: baseline; }
+.fx-words dt { font-family: var(--fx-hi); font-size: 21px; line-height: 1.4; color: var(--q-gold-hi); }
+.fx-words dd { margin: 0; font-size: 16px; line-height: 1.6; color: var(--q-cream); }
+.fx-words dd span { color: var(--q-cream-3); font-size: 14.5px; }
 
-/* Situation picker. */
-.fx-sit-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 18px; }
-.fx-sit-chip { min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--fx-ink); background: transparent; color: var(--fx-ink); font: inherit; font-size: 15px; cursor: pointer; transition: background-color 160ms var(--fx-fb), color 160ms var(--fx-fb); }
-.fx-sit-chip[aria-pressed='true'] { background: var(--fx-ink); color: var(--fx-bg); }
+/* ── Script toggle (house chip look, segmented) ── */
+.fx-script { display: inline-flex; padding: 3px; border: 1px solid var(--q-line); border-radius: 999px; }
+.fx-script button {
+  min-height: 38px;
+  min-width: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--q-cream-2);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out);
+}
+.fx-script button[aria-pressed='true'] { background: rgba(200, 136, 30, 0.16); color: var(--q-gold-hi); box-shadow: inset 0 0 0 1px var(--q-gold); }
+
+/* ── Chanakya: the situation picker (house line-picker panel) ── */
+.fx-sit-wrap { margin-top: 26px; }
+.fx-sit-wrap .qlf-q { margin-bottom: 6px; }
+.fx-sit-wrap .qp-intro { margin-top: 4px; }
+.fx-sit-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.fx-sit-chips .qchip { white-space: normal; text-align: left; }
 .fx-sit:not([data-js]) .fx-sit-chips { display: none; }
-.fx-sit:not([data-js]) .fx-sit-groups { display: block; }
-.fx-sit-group { display: grid; gap: 14px; margin-bottom: 18px; }
+.fx-sit-groups { margin-top: 4px; }
+.fx-sit[data-js] .fx-sit-groups:not(:has(.fx-sit-group:not([hidden]))) { display: none; }
+.fx-sit-group { position: relative; display: grid; gap: 14px; margin-top: 22px; padding-top: 18px; }
 .fx-sit-group[hidden] { display: none; }
-.fx-sit-group h3 { margin: 0; font-size: 15px; font-weight: 600; color: var(--fx-quiet); }
 .fx-sit-group:focus { outline: none; }
-.fx-sit-group:not([hidden]) { animation: fx-fade 500ms var(--fx-in) both; }
+.fx-sit-group::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--q-gold); transform-origin: left center; }
+.fx-sit-group h3 { margin: 0; font-size: 14px; font-weight: 500; color: var(--q-cream-3); }
+.fx-sit-group .qc { background: var(--q-night); }
+.fx-sit[data-js] .fx-sit-group:not([hidden])::before { animation: q-draw var(--t-slow) var(--ease) backwards; }
+.fx-sit[data-js] .fx-sit-group:not([hidden]) h3 { animation: q-rise var(--t-std) var(--ease) backwards; }
+.fx-sit[data-js] .fx-sit-group:not([hidden]) .qc { animation: q-rise 600ms var(--ease) backwards; }
+.fx-sit[data-js] .fx-sit-group:not([hidden]) .qc:nth-of-type(2) { animation-delay: 140ms; }
+.fx-sit[data-js] .fx-sit-group:not([hidden]) .qc:nth-of-type(3) { animation-delay: 290ms; }
+.fx-sit[data-js] .fx-sit-group:not([hidden]) .qc:nth-of-type(4) { animation-delay: 420ms; }
 
-/* Script toggle. */
-.fx-script { display: inline-flex; border: 1px solid color-mix(in srgb, var(--fx-quiet) 50%, transparent); border-radius: 999px; padding: 3px; margin: 8px 0 0; }
-.fx-script button { min-height: 40px; min-width: 44px; padding: 0 14px; border: 0; border-radius: 999px; background: transparent; color: var(--fx-ink); font: inherit; font-size: 14px; cursor: pointer; }
-.fx-script button[aria-pressed='true'] { background: var(--fx-accent); color: var(--fx-bg); }
-.fx-sayings[data-hub='kabir'] .fx-script button[aria-pressed='true'], .fx-sayings[data-hub='chanakya'] .fx-script button[aria-pressed='true'] { color: #fffdf8; }
+/* ── Mid-page next step: the house line-picker panel ── */
+.fx-next-panel { margin-top: 28px; }
+.fx-next-panel .qns { margin-top: 14px; }
 
-/* Fact checks. */
-.fx-checks { display: grid; gap: 12px; }
-.fx-check { display: grid; gap: 8px; padding: 16px; border-radius: 14px; background: var(--fx-card); border: 1px solid color-mix(in srgb, var(--fx-quiet) 30%, transparent); }
-.fx-check p { margin: 0; }
-.fx-check-q { font-family: var(--fx-serif); font-size: 17.5px; line-height: 1.5; }
-.fx-check-q:lang(hi) { font-family: var(--fx-deva-ui); }
-.fx-check a { color: var(--fx-ink); }
-.fx-verdict-big { font-family: var(--fx-archivo), 'Archivo', var(--font-inter), sans-serif; font-weight: 700; font-stretch: 80%; font-variation-settings: 'wdth' 80; font-size: 22px; transform: rotate(-2deg); display: inline-block; padding: 6px 14px; border: 2px solid var(--fx-accent); border-radius: 6px; margin: 4px 0 14px; }
-.fx-verdict-big[data-verdict='paraphrase'] { border-style: dashed; border-color: var(--fx-quiet); }
-.fx-verdict-big[data-verdict='not-found'] { border-color: var(--fx-warm); background: color-mix(in srgb, var(--fx-warm) 22%, transparent); }
-.fx-shared { margin: 0 0 18px; padding: 14px 16px; border-radius: 12px; border: 1px dashed color-mix(in srgb, var(--fx-quiet) 60%, transparent); font-family: var(--fx-serif); font-size: 18px; line-height: 1.55; }
-.fx-shared s { text-decoration-color: var(--fx-warm); }
-.fx-label { font-family: var(--fx-ui); font-size: 13px; color: var(--fx-quiet); margin: 0 0 6px; }
+/* End next step and FAQ spacing (house .qp-daily and .qp-faq). */
+.fx-sayings .qp-daily .qp-h2 + .qns { margin-top: 18px; }
 
-/* Gita bridge. */
-.fx-bridge { display: grid; gap: 14px; }
-.fx-bridge-item { padding: 16px; border-radius: 14px; border: 1px solid color-mix(in srgb, var(--fx-gold) 45%, transparent); background: var(--fx-card); }
-.fx-bridge-item p { margin: 0; }
-.fx-bridge-sa { font-family: var(--fx-tiro-sa), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif; font-size: 21px; line-height: 1.7; color: var(--fx-gold); }
-.fx-bridge-his { margin-top: 8px !important; font-family: var(--fx-serif); font-size: 17px; line-height: 1.55; }
-.fx-bridge-note { margin-top: 8px !important; font-size: 15px; line-height: 1.65; color: color-mix(in srgb, var(--fx-ink) 82%, transparent); }
-.fx-bridge-foot { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 10px !important; font-size: 13px; color: var(--fx-quiet); }
-.fx-bridge-foot a.fx-gita { display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; }
+/* ── Lines he never said (house "never said" rows) ── */
+.fx-sayings .qfakes { margin-top: 60px; }
+.fx-sayings .qfake .fx-stamp { margin-bottom: 4px; }
+.fx-fake-real { margin-top: 10px !important; font-size: 14.5px; line-height: 1.6; color: var(--q-cream-2); }
+.fx-fake-real q { font-family: var(--q-display); color: var(--q-cream); font-size: 16px; }
+.fx-more-box { margin-top: 20px; border-top: 1px solid var(--q-line); border-bottom: 1px solid var(--q-line); }
+.fx-more-box summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--q-cream);
+  cursor: pointer;
+  list-style: none;
+}
+.fx-more-box summary::-webkit-details-marker { display: none; }
+.fx-more-box summary::after { content: '+'; font-size: 22px; line-height: 1; color: var(--q-gold); transition: transform var(--t-quick) var(--ease-out); }
+.fx-more-box[open] summary::after { transform: rotate(45deg); }
+.fx-more-box ul { list-style: none; margin: 0; padding: 0 0 14px; display: grid; gap: 2px; }
+.fx-more-box li { font-size: 15px; line-height: 1.55; color: var(--q-cream-2); padding: 6px 0; }
+.fx-more-box li a { text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+.fx-more-box li a:hover { color: var(--q-gold-hi); }
+.fx-note { margin-top: 18px !important; padding: 16px 18px; border: 1px solid var(--q-line); border-radius: 16px; background: var(--q-leaf); font-size: 15px; line-height: 1.7; color: var(--q-cream-2); }
+.fx-note p + p { margin-top: 8px; }
+.fx-note .fx-meta { color: var(--q-cream-3); font-size: 13.5px; }
 
-/* Theme tiles (Vivekananda hub). */
-.fx-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0; padding: 0; list-style: none; }
-.fx-tiles a { display: flex; flex-direction: column; justify-content: flex-end; min-height: 88px; padding: 14px; border-radius: 12px; background: var(--fx-card); border: 1px solid color-mix(in srgb, var(--fx-quiet) 30%, transparent); color: var(--fx-ink); text-decoration: none; font-family: var(--fx-archivo), 'Archivo', var(--font-inter), sans-serif; font-weight: 700; font-stretch: 85%; font-variation-settings: 'wdth' 85; font-size: 19px; line-height: 1.1; }
-.fx-tiles a:hover { border-color: var(--fx-accent); }
-.fx-tiles small { font-family: var(--fx-ui); font-weight: 400; font-size: 12.5px; color: var(--fx-quiet); margin-top: 6px; }
+/* ── Gita lines he lived by: house verse cards, gold links back to the Gita ── */
+.fx-bridge-his { margin-top: 12px !important; font-family: var(--q-display); font-size: 18px; line-height: 1.55; color: var(--q-cream); }
+.fx-bridge-note { margin-top: 10px !important; font-size: 15.5px; line-height: 1.65; color: var(--q-cream-2); }
+.fx-bridge-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; margin-top: 14px !important; padding-bottom: 14px; font-size: 13px; color: var(--q-cream-3); }
+.fx-gita { color: var(--q-gold-hi); text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+.fx-bridge-foot .fx-gita { display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; }
+.fx-sayings .qp-related a.fx-gita { color: var(--q-gold-hi); text-decoration: none; }
 
-.fx-note-box { margin: 14px 0 0; padding: 14px 16px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--fx-quiet) 35%, transparent); font-size: 14.5px; line-height: 1.7; }
-.fx-note-box p { margin: 0 0 6px; }
-.fx-note-box ul { margin: 6px 0 0; padding-left: 18px; }
+/* ── Fact-check page: a calm verdict ── */
+.fx-verdict { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 18px !important; }
+.fx-verdict .fx-stamp { min-height: 34px; padding: 4px 14px; font-size: 13.5px; }
+.fx-shared {
+  margin-top: 14px !important;
+  padding: 18px 20px;
+  border: 1px dashed var(--q-line-strong);
+  border-radius: 16px;
+  font-family: var(--q-display);
+  font-size: clamp(19px, 5vw, 22px);
+  line-height: 1.5;
+  color: var(--q-cream-2);
+}
+.fx-shared s { text-decoration-thickness: 1px; text-decoration-color: rgba(200, 136, 30, 0.75); }
+.fx-seen { margin-top: 10px !important; font-size: 13.5px; color: var(--q-cream-3); }
+.fx-also { margin-top: 14px !important; padding: 14px 18px; border-left: 2px solid var(--q-line-strong); font-size: 15px; line-height: 1.65; color: var(--q-cream-2); }
+.fx-also span { display: block; font-size: 13px; color: var(--q-cream-3); margin-bottom: 4px; }
+
+/* ── Sources and method ── */
+.fx-method { margin-top: 52px; padding-top: 18px; border-top: 1px solid var(--q-line); font-size: 14px; line-height: 1.7; color: var(--q-cream-3); }
+.fx-method h2 { margin: 0 0 8px; font-family: var(--q-ui); font-size: 14.5px; font-weight: 600; color: var(--q-cream-2); }
+.fx-method:lang(hi) h2 { font-family: var(--q-deva); }
+.fx-method p { max-width: 42em; }
+.fx-method p + p { margin-top: 8px; }
+
+.fx-sayings .qp-extra a { color: var(--q-gold-hi); text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+.fx-meta { font-size: 13.5px; color: var(--q-cream-3); }
+
+/* ── The source drawer (house sheet) ── */
+.fxd-wrap { z-index: 1000; }
+.fxd { max-width: 600px; padding-top: 24px; }
+.fxd-top { display: flex; align-items: center; gap: 10px; padding-right: 44px; }
+.fxd-top .fx-stamp { min-height: 30px; font-size: 13px; }
+.fxd-title { margin-top: 14px !important; font-family: var(--q-display); font-weight: 600; font-size: 24px; line-height: 1.25; color: var(--q-cream); }
+.fxd-title:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.45; }
+.fxd-meta { margin-top: 6px !important; font-size: 14px; line-height: 1.6; color: var(--q-cream-3); }
+.fxd-para {
+  position: relative;
+  margin: 18px 0 0;
+  padding: 2px 0 2px 16px;
+  font-family: var(--q-display);
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--q-cream-2);
+}
+.fxd-para::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--q-gold); transform-origin: center top; }
+.fxd-para mark { background: rgba(200, 136, 30, 0.2); color: var(--q-gold-hi); padding: 1px 2px; border-radius: 3px; }
+.fxd-note { margin-top: 12px !important; font-size: 13px; line-height: 1.6; color: var(--q-cream-3); }
+.fxd .qns-btn { margin-top: 18px; }
+.fxd-close { display: block; min-height: 44px; margin-top: 6px; padding: 0 4px; background: none; border: 0; color: var(--q-cream-2); font: inherit; font-size: 14.5px; cursor: pointer; }
+
+/* The drawer's one orchestrated moment: sheet up, gold rule draws down the paragraph, stamp settles. */
+.fxd .fxd-top .fx-stamp { animation: fx-stamp 420ms var(--ease) 180ms backwards; }
+.fxd .fxd-para::before { animation: fx-rule var(--t-slow) var(--ease) 200ms backwards; }
+.fxd .fxd-para mark { animation: q-fade 600ms var(--ease) 520ms backwards; }
+@keyframes fx-stamp { from { opacity: 0; transform: scale(1.12) rotate(-4deg); } to { opacity: 1; transform: none; } }
+@keyframes fx-rule { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 
 @media (min-width: 720px) {
-  .fx-page { padding: 28px 24px 96px; }
-  .fx-tiles { grid-template-columns: repeat(4, 1fr); }
+  .fx-hero .qc { padding: 32px 30px 6px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fxd, .fxd-backdrop, .fx-gloss-pop, .fx-sit-group:not([hidden]) { animation: fx-fade 1ms linear both; }
-  .fx-chip, .fx-sit-chip { transition: none; }
+  .fx-gloss-pop,
+  .fxd .fxd-top .fx-stamp,
+  .fx-sit[data-js] .fx-sit-group:not([hidden]) h3,
+  .fx-sit[data-js] .fx-sit-group:not([hidden]) .qc { animation-name: q-fade; }
+  .fxd .fxd-para::before,
+  .fx-sit[data-js] .fx-sit-group:not([hidden])::before { animation: none; }
+  .fx-chip:active { transform: none; }
 }
 @media (forced-colors: active) {
-  .fx-chip-stamp, .fxd-stamp, .fx-stamp, .fx-seal { border-color: CanvasText; }
+  .fx-stamp, .fx-seal { border-color: CanvasText; }
 }
+
+/* House Sanskrit line, set in this funnel's Tiro instance. */
+.fx-sayings .qc-sa { font-family: var(--fx-sa); }
+
+/* Source list (Kabir: where these dohe are found). */
+.fx-sources { margin: 16px 0 0; display: grid; gap: 0; border-top: 1px solid var(--q-line); max-width: 38em; }
+.fx-sources > div { padding: 14px 0; border-bottom: 1px solid var(--q-line); }
+.fx-sources dt { font-family: var(--q-display); font-size: 17px; line-height: 1.45; color: var(--q-gold-hi); }
+.fx-sources dt:lang(hi), .fx-sayings:lang(hi) .fx-sources dt { font-family: var(--q-deva); font-weight: 500; }
+.fx-sources dd { margin: 4px 0 0; font-size: 15.5px; line-height: 1.65; color: var(--q-cream-2); }
+.fx-sayings > .fx-hero { margin-top: 22px; }

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import Shell from '@/components/funnels/mahabharata/Shell'
+import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
 import LineCard from '@/components/funnels/mahabharata/LineCard'
 import GitaLink from '@/components/funnels/mahabharata/GitaLink'
 import Faq from '@/components/funnels/mahabharata/Faq'
 import NextBlock from '@/components/funnels/mahabharata/NextBlock'
-import { line } from '@/lib/funnels/mahabharata/lines'
+import { heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
 import { PATHS, abs, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 
 const PAGE = 'mbh-quotes'
@@ -65,26 +65,48 @@ export default function Page() {
     ]),
   )
   return (
-    <Shell page={PAGE} crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Quotes' }]} jsonLd={ld}>
-      <header className="mb-head">
-        <p className="mb-kicker">25 lines, every one with its verse</p>
-        <h1>Mahabharata quotes, in the epic&apos;s own Sanskrit</h1>
-        <p id="quick-answer">
+    <Shell
+      page={PAGE}
+      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Quotes' }]}
+      jsonLd={ld}
+      hero={{
+        eyebrow: '25 lines, every one with its verse',
+        h1: <>Mahabharata quotes, in the epic&apos;s own Sanskrit</>,
+        line: heroLineOf('mbh.5.39.9'),
+        facts: [`${all.length} lines`, 'Speaker and verse number', 'Copy, WhatsApp or save as image'],
+        cta: (
+          <a href={`#${GROUPS[0].id}`} className="btn-read-gita btn-read-gita-primary" data-mp-location="quotes_hero_start">
+            Read the {all.length} lines
+          </a>
+        ),
+      }}
+    >
+      <Band className="mb-intro">
+        <p id="quick-answer" className="tp-intro rv">
           These are 25 lines from the Mahabharata&apos;s Sanskrit, each with its verse number and the person who says it. Among them is
           &quot;Where dharma is, there is victory&quot;, which Dhritarashtra says while refusing to act on it (MBh 5.39.9). Copy a line, send it
           on WhatsApp, or save it as an image.
         </p>
-      </header>
+        <nav aria-label="Themes on this page" className="rv">
+          <ul className="mb-jump">
+            {GROUPS.map((g) => (
+              <li key={g.id}>
+                <a href={`#${g.id}`} data-mp-location={`quotes_jump_${g.id}`}>
+                  {g.h.replace(/^On /, '').replace(/^./, (c) => c.toUpperCase())}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </Band>
 
-      {GROUPS.map((g) => (
-        <section className="mb-sec" key={g.id} id={g.id} aria-labelledby={`${g.id}-h`} data-mp-section={`quotes_${g.id}`}>
-          <h2 id={`${g.id}-h`}>{g.h}</h2>
-          <p className="mb-lede">{g.lede}</p>
+      {GROUPS.map((g, gi) => (
+        <Band key={g.id} alt={gi % 2 === 0} id={g.id} mp={`quotes_${g.id}`} h={g.h} hId={`${g.id}-h`} lede={g.lede}>
           {g.ids.map((id) => (
             <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
           ))}
           {g.id === 'self' && (
-            <ul className="mb-bridge">
+            <ul className="mb-bridge rv">
               <li>
                 <GitaLink href="/gita/chapter/6/verse/5" from="quotes_self" toRef="6.5" page={PAGE} locale="en">
                   Gita 6.5
@@ -93,14 +115,13 @@ export default function Page() {
               </li>
             </ul>
           )}
-        </section>
+        </Band>
       ))}
 
-      <Faq items={FAQ} heading="Questions people ask" />
-      <NextBlock page={PAGE} />
+      <Faq items={FAQ} heading="Questions people ask" alt={GROUPS.length % 2 === 0} />
+      <NextBlock page={PAGE} alt={GROUPS.length % 2 === 1} />
 
-      <section className="mb-sec mb-method" aria-labelledby="method-h">
-        <h2 id="method-h">Sources and method</h2>
+      <Band className="mb-method" h="Sources and method" hId="method-h">
         <p>
           Every line comes from the Sanskrit we hold for books 3, 5, 12, 13 and 14, a southern-recension text whose numbering runs close to the
           Kumbhakonam edition. Verse numbers can differ from the Pune critical edition. The English is Wisdom&apos;s own, read with
@@ -111,7 +132,7 @@ export default function Page() {
           <a href={`${PATHS.vidura}#left-out`}>the Vidura Niti page</a>.
         </p>
         <p>Wisdom translation, edited by Ankur Shukla.</p>
-      </section>
+      </Band>
     </Shell>
   )
 }

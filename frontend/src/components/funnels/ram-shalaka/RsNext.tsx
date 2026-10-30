@@ -69,7 +69,7 @@ export default function RsNext({ locale, pageKey, placement, copy, n = null, k =
         <small>{copy.planFree}</small>
       </a>
       {ios && (
-        <a
+        <a data-mp-tracked=""
           className="rs-applink"
           href={appHref}
           target="_blank"

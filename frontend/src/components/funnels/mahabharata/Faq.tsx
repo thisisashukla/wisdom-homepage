@@ -1,16 +1,17 @@
-/** FAQ as heading + list. The same items feed the FAQPage JSON-LD on each page. */
-export default function Faq({ items, heading, lang }: { items: { q: string; a: string }[]; heading: string; lang?: string }) {
+import { Band } from './Shell'
+
+/** FAQ as house accordions (.tp-faq). The same items feed the FAQPage JSON-LD on each page; answers stay in the HTML. */
+export default function Faq({ items, heading, lang, alt }: { items: { q: string; a: string }[]; heading: string; lang?: string; alt?: boolean }) {
   return (
-    <section className="mb-sec mb-faq" aria-labelledby="mb-faq-h" lang={lang} data-mp-section="faq">
-      <h2 id="mb-faq-h">{heading}</h2>
-      <dl>
+    <Band alt={alt} mp="faq" h={heading} hId="mb-faq-h" lang={lang} className="mb-faq">
+      <div className="tp-faq rv">
         {items.map((f) => (
-          <div key={f.q} className="mb-faq-item">
-            <dt>{f.q}</dt>
-            <dd>{f.a}</dd>
-          </div>
+          <details key={f.q} className="tp-faq-item" data-track="faq" data-q={f.q}>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
         ))}
-      </dl>
-    </section>
+      </div>
+    </Band>
   )
 }

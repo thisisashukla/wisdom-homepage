@@ -4,6 +4,7 @@ import Mala from '@/components/funnels/hanuman-chalisa/Mala'
 import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { MeaningTracker, PrintButton } from '@/components/funnels/hanuman-chalisa/Trackers'
 import { Faq, FullText, HcNextStep, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
+import HcHero, { HeroLine } from '@/components/funnels/hanuman-chalisa/Hero'
 import {
   abs,
   AUTHOR_LD,
@@ -90,68 +91,87 @@ export default function HanumanChalisaHubHi() {
     { name: 'हनुमान चालीसा', path: HUB_PATH_HI },
   ])
 
+  const d1 = units[0]
+
   return (
     <main className="hc-main">
       <BlogTracker pageName={PAGE} />
       <MeaningTracker page={PAGE} locale="hi" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([workLd, listLd, crumbs, faqLd(FAQ)]) }} />
 
-      <nav className="hc-crumbs hc-noprint" aria-label="ब्रेडक्रम्ब">
-        <a href="/">Wisdom</a> / <span>हनुमान चालीसा</span> /{' '}
-        <a href={HUB_PATH} hrefLang="en" lang="en">
-          In English
-        </a>
-      </nav>
-
-      <div className="hc-intro">
-        <h1 className="hc-h1" lang="hi">
-          हनुमान चालीसा अर्थ सहित
-        </h1>
-        <p className="hc-quick" id="quick-answer" lang="hi">
-          हनुमान चालीसा गोस्वामी तुलसीदास की अवधी रचना है, जिसमें शुरू के दो दोहे, चालीस चौपाइयाँ और अंत का एक दोहा है। नीचे गीता प्रेस
-          के पाठ के अनुसार पूरी चालीसा है। हर पंक्ति के नीचे &ldquo;अर्थ&rdquo; छूने पर उसका सरल हिंदी अर्थ खुल जाता है, जिसे आप प्रिंट भी
-          कर सकते हैं।
-        </p>
-
-        <div className="hc-controls hc-noprint">
-          <ScriptToggle locale="hi" page={PAGE} />
-          <PrintButton label="प्रिंट करें" page={PAGE} locale="hi" />
-        </div>
-        <ul className="hc-links hc-noprint">
-          <li>
-            <a className="hc-btn" href={LEARN_PATH} data-mp-location="hub_hi_learn" lang="hi">
+      <HcHero
+        lang="hi"
+        crumbs={
+          <nav className="hc-crumbs hc-noprint" aria-label="ब्रेडक्रम्ब">
+            <a href="/">Wisdom</a> / <span>हनुमान चालीसा</span> /{' '}
+            <a href={HUB_PATH} hrefLang="en" lang="en">
+              In English
+            </a>
+          </nav>
+        }
+        eyebrow="गोस्वामी तुलसीदास, अवधी में"
+        title="हनुमान चालीसा अर्थ सहित"
+        sub={
+          <>
+            हनुमान चालीसा गोस्वामी तुलसीदास की अवधी रचना है, जिसमें शुरू के दो दोहे, चालीस चौपाइयाँ और अंत का एक दोहा है। नीचे गीता प्रेस
+            के पाठ के अनुसार पूरी चालीसा है। हर पंक्ति के नीचे &ldquo;अर्थ&rdquo; छूने पर उसका सरल हिंदी अर्थ खुल जाता है, जिसे आप प्रिंट भी
+            कर सकते हैं।
+          </>
+        }
+        factsLabel="इस पेज के बारे में"
+        facts={['43 पंक्तियाँ', 'गीता प्रेस पाठ', 'हर पंक्ति का अर्थ']}
+        actions={
+          <a href="#hc-text" className="btn-read-gita btn-read-gita-primary" data-mp-location="hub_hi_hero_read" lang="hi">
+            पूरी चालीसा पढ़ें
+          </a>
+        }
+        links={
+          <>
+            <a href={LEARN_PATH} data-mp-location="hub_hi_learn" lang="hi">
               रोज़ 4 पंक्तियाँ याद करें (अंग्रेज़ी में)
             </a>
-          </li>
-          <li>
-            <a className="hc-btn" href={COUNTER_PATH} data-mp-location="hub_hi_counter" lang="hi">
+            <a href={COUNTER_PATH} data-mp-location="hub_hi_counter" lang="hi">
               11, 21 या 108 पाठ गिनें
             </a>
-          </li>
-        </ul>
-      </div>
+          </>
+        }
+        visual={<HeroLine awadhi={d1.awadhi} iast={d1.iast} caption="पहला दोहा" />}
+      />
 
-      <div className="hc-hub">
-        <aside className="hc-hub-aside" aria-label="माला: हर पंक्ति का एक मनका">
-          <Mala beads={beads('hi', 'anchor')} locale="hi" page={PAGE} mode="anchor" currentId="hc.d1" label="43 मनकों की माला, हर पंक्ति का एक" caption="हर पंक्ति का एक मनका। मनका छुएं, वही पंक्ति खुलेगी।">
-            <span className="hc-mala-name" lang="hi">
-              हनुमान चालीसा
-            </span>
-            <span className="hc-mala-sub" lang="hi">
-              2 दोहे, 40 चौपाई, 1 दोहा
-            </span>
-          </Mala>
-        </aside>
-
-        <div>
-          <section className="hc-section" aria-labelledby="hc-text-h">
-            <h2 className="hc-h2" id="hc-text-h" lang="hi">
+      <section className="section hc-band" id="hc-text" aria-labelledby="hc-text-h">
+        <div className="wrap">
+          <div className="sec-head hc-sec-head rv" lang="hi">
+            <p className="eyebrow">43 पंक्तियाँ</p>
+            <h2 className="heading" id="hc-text-h">
               पूरी हनुमान चालीसा
             </h2>
-            <FullText units={units} locale="hi" />
-          </section>
+            <div className="hc-controls hc-noprint">
+              <ScriptToggle locale="hi" page={PAGE} />
+              <PrintButton label="प्रिंट करें" page={PAGE} locale="hi" />
+            </div>
+          </div>
 
-          <section className="hc-section hc-noprint" aria-labelledby="hc-gita-h">
+          <div className="hc-read">
+            <aside className="hc-read-aside" aria-label="माला: हर पंक्ति का एक मनका">
+              <Mala beads={beads('hi', 'anchor')} locale="hi" page={PAGE} mode="anchor" currentId="hc.d1" label="43 मनकों की माला, हर पंक्ति का एक" caption="हर पंक्ति का एक मनका। मनका छुएं, वही पंक्ति खुलेगी।">
+                <span className="hc-mala-name" lang="hi">
+                  हनुमान चालीसा
+                </span>
+                <span className="hc-mala-sub" lang="hi">
+                  2 दोहे, 40 चौपाई, 1 दोहा
+                </span>
+              </Mala>
+            </aside>
+            <div className="rv">
+              <FullText units={units} locale="hi" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt hc-band hc-noprint" aria-labelledby="hc-gita-h">
+        <div className="wrap hc-col">
+          <div className="hc-bridge rv">
             <h2 className="hc-h2" id="hc-gita-h" lang="hi">
               गीता में हनुमान
             </h2>
@@ -164,19 +184,26 @@ export default function HanumanChalisaHubHi() {
                 </a>
               </p>
             </div>
-          </section>
+          </div>
 
-          <p className="hc-note hc-noprint" lang="hi">
-            <a href={JAYANTI_PATH} hrefLang="en">
-              हनुमान जयंती 2027: मंगलवार, 20 अप्रैल (अंग्रेज़ी में)
-            </a>
-          </p>
+          <ul className="hc-tiles" style={{ marginTop: 24 }}>
+            <li className="rv">
+              <a className="hc-tile" href={JAYANTI_PATH} hrefLang="en" lang="hi">
+                <strong>हनुमान जयंती 2027: मंगलवार, 20 अप्रैल (अंग्रेज़ी में)</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <Faq items={FAQ} locale="hi" heading="अक्सर पूछे जाने वाले सवाल" />
+      <Faq items={FAQ} locale="hi" heading="अक्सर पूछे जाने वाले सवाल" />
+
+      <section className="section section-alt hc-band">
+        <div className="wrap hc-col">
           <HcNextStep locale="hi" pageName={PAGE} pageKey="hc-hub-hi" placement="hub_end" />
           <Sources locale="hi" />
         </div>
-      </div>
+      </section>
     </main>
   )
 }

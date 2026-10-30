@@ -3,6 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import LineText from '@/components/funnels/hanuman-chalisa/LineText'
 import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { Faq, HcNextStep } from '@/components/funnels/hanuman-chalisa/Blocks'
+import HcHero, { HeroLine } from '@/components/funnels/hanuman-chalisa/Hero'
 import {
   abs,
   breadcrumbLd,
@@ -78,101 +79,138 @@ export default function HanumanJayantiPage() {
     { name: 'Hanuman Jayanti 2027', path: JAYANTI_PATH },
   ])
 
+  const c1 = getUnit('hc.c1')!
+
   return (
     <main className="hc-main">
       <BlogTracker pageName={PAGE} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([eventLd, crumbs, faqLd(FAQ)]) }} />
-      <nav className="hc-crumbs" aria-label="Breadcrumb">
-        <a href="/">Wisdom</a> / <a href={HUB_PATH}>Hanuman Chalisa</a> / <span>Hanuman Jayanti 2027</span>
-      </nav>
-      <h1 className="hc-h1">Hanuman Jayanti 2027 is on Tuesday, 20 April</h1>
-      <p className="hc-quick" id="quick-answer">
-        Hanuman Jayanti 2027 falls on Tuesday, 20 April, the full moon of Chaitra, per Drik Panchang. Tamil Nadu keeps Hanumath
-        Jayanthi on 7 January 2027, and many in North and West India worship Hanuman on Kali Chaudas, 7 November 2026. Below is a
-        one-week plan to recite the Chalisa 11 times as a family.
-      </p>
 
-      <section className="hc-section" aria-labelledby="h-dates">
-        <h2 className="hc-h2" id="h-dates">
-          Dates kept for Hanuman
-        </h2>
-        <ul className="hc-dates">
-          <li>
-            <strong>Saturday, 7 November 2026</strong>
-            Kali Chaudas, the day before Diwali. Hanuman puja in many homes in Gujarat and North India.
-          </li>
-          <li>
-            <strong>Thursday, 7 January 2027</strong>
-            Hanumath Jayanthi in Tamil Nadu, in the month of Margazhi.
-          </li>
-          <li>
-            <strong>Tuesday, 20 April 2027</strong>
-            Hanuman Jayanti on Chaitra Purnima, the date most of North India keeps.
-          </li>
-        </ul>
-        <p className="hc-note">Dates per Drik Panchang. Tithi times vary by city, so check your local panchang.</p>
+      <HcHero
+        crumbs={
+          <nav className="hc-crumbs" aria-label="Breadcrumb">
+            <a href="/">Wisdom</a> / <a href={HUB_PATH}>Hanuman Chalisa</a> / <span>Hanuman Jayanti 2027</span>
+          </nav>
+        }
+        eyebrow="Chaitra Purnima"
+        title="Hanuman Jayanti 2027 is on Tuesday, 20 April"
+        sub={
+          <>
+            Hanuman Jayanti 2027 falls on Tuesday, 20 April, the full moon of Chaitra, per Drik Panchang. Tamil Nadu keeps Hanumath
+            Jayanthi on 7 January 2027, and many in North and West India worship Hanuman on Kali Chaudas, 7 November 2026. Below is a
+            one-week plan to recite the Chalisa 11 times as a family.
+          </>
+        }
+        facts={['Tuesday, 20 April 2027', '11 recitations in 7 days']}
+        actions={
+          <a className="btn-read-gita btn-read-gita-primary" href="#h-plan" data-mp-location="jayanti_hero_plan">
+            See the week&apos;s plan
+          </a>
+        }
+        visual={<HeroLine awadhi={c1.awadhi} iast={c1.iast} caption="Chaupai 1" />}
+      />
+
+      <section className="section hc-band" aria-labelledby="h-dates">
+        <div className="wrap">
+          <div className="sec-head hc-sec-head rv">
+            <p className="eyebrow">2026 to 2027</p>
+            <h2 className="heading" id="h-dates">
+              Dates kept for Hanuman
+            </h2>
+          </div>
+          <ul className="hc-dates" data-stagger="60">
+            <li className="rv">
+              <strong>Saturday, 7 November 2026</strong>
+              Kali Chaudas, the day before Diwali. Hanuman puja in many homes in Gujarat and North India.
+            </li>
+            <li className="rv">
+              <strong>Thursday, 7 January 2027</strong>
+              Hanumath Jayanthi in Tamil Nadu, in the month of Margazhi.
+            </li>
+            <li className="rv" data-main="">
+              <strong>Tuesday, 20 April 2027</strong>
+              Hanuman Jayanti on Chaitra Purnima, the date most of North India keeps.
+            </li>
+          </ul>
+          <p className="hc-note rv">Dates per Drik Panchang. Tithi times vary by city, so check your local panchang.</p>
+        </div>
       </section>
 
-      <section className="hc-section" aria-labelledby="h-plan">
-        <h2 className="hc-h2" id="h-plan">
-          Recite it 11 times with your family this week
-        </h2>
-        <div className="hc-prose">
-          <p>
-            Eleven recitations over the seven days up to Jayanti, never more than four in a day, so children can sit through each one.
-            One recitation takes 6 to 10 minutes.
+      <section className="section section-alt hc-band" aria-labelledby="h-plan">
+        <div className="wrap">
+          <div className="sec-head hc-sec-head rv">
+            <p className="eyebrow">14 to 20 April</p>
+            <h2 className="heading" id="h-plan" style={{ scrollMarginTop: 96 }}>
+              Recite it 11 times with your family this week
+            </h2>
+            <p className="subtext">
+              Eleven recitations over the seven days up to Jayanti, never more than four in a day, so children can sit through each one.
+              One recitation takes 6 to 10 minutes.
+            </p>
+          </div>
+          <ol className="hc-plan" data-stagger="50">
+            {PLAN.map((p) => (
+              <li key={p.date} className="rv">
+                <b>
+                  {p.day}
+                  <small>{p.date}</small>
+                </b>
+                <p>
+                  <span className="hc-plan-count">{p.count === 1 ? 'Once' : `${p.count} times`}.</span> {p.what}{' '}
+                  {p.href && (
+                    <a href={p.href} data-mp-location="jayanti_plan_link">
+                      {p.link}
+                    </a>
+                  )}
+                </p>
+              </li>
+            ))}
+          </ol>
+          <ul className="hc-links rv">
+            <li>
+              <a className="hc-btn hc-btn-primary" href={COUNTER_PATH} data-mp-location="jayanti_counter">
+                Count the 11 on a mala
+              </a>
+            </li>
+            <li>
+              <a className="hc-btn" href={HUB_PATH} data-mp-location="jayanti_hub">
+                The full text with meaning
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="section hc-band" aria-labelledby="h-close">
+        <div className="wrap">
+          <div className="sec-head hc-sec-head rv">
+            <p className="eyebrow">The closing doha</p>
+            <h2 className="heading" id="h-close">
+              The line to end each recitation
+            </h2>
+            <div className="hc-controls" style={{ marginTop: 18 }}>
+              <ScriptToggle locale="en" page={PAGE} />
+            </div>
+          </div>
+          <figure className="hc-quote hc-quote-wide rv">
+            <LineText awadhi={d3.awadhi} iast={d3.iast} as="blockquote" className="hc-line" />
+            <figcaption>
+              {d3.meaning.en} <a href={linePath(d3.slug)}>The closing doha, word by word</a>.
+            </figcaption>
+          </figure>
+          <p className="hc-note rv">
+            <a href={HOW_MANY_PATH}>How many times to recite it</a>, and what the Chalisa says about itself.
           </p>
         </div>
-        <ol className="hc-plan">
-          {PLAN.map((p) => (
-            <li key={p.date}>
-              <b>
-                {p.day}
-                <small>{p.date}</small>
-              </b>
-              <p>
-                <span className="hc-plan-count">{p.count === 1 ? 'Once' : `${p.count} times`}.</span> {p.what}{' '}
-                {p.href && (
-                  <a href={p.href} data-mp-location="jayanti_plan_link">
-                    {p.link}
-                  </a>
-                )}
-              </p>
-            </li>
-          ))}
-        </ol>
-        <ul className="hc-links">
-          <li>
-            <a className="hc-btn hc-btn-primary" href={COUNTER_PATH} data-mp-location="jayanti_counter">
-              Count the 11 on a mala
-            </a>
-          </li>
-          <li>
-            <a className="hc-btn" href={HUB_PATH} data-mp-location="jayanti_hub">
-              The full text with meaning
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section className="hc-section" aria-labelledby="h-close">
-        <h2 className="hc-h2" id="h-close">
-          The line to end each recitation
-        </h2>
-        <div className="hc-controls">
-          <ScriptToggle locale="en" page={PAGE} />
-        </div>
-        <LineText awadhi={d3.awadhi} iast={d3.iast} as="blockquote" className="hc-line" />
-        <p className="hc-prose" style={{ marginTop: 8 }}>
-          {d3.meaning.en} <a href={linePath(d3.slug)}>The closing doha, word by word</a>.
-        </p>
-        <p className="hc-note">
-          <a href={HOW_MANY_PATH}>How many times to recite it</a>, and what the Chalisa says about itself.
-        </p>
       </section>
 
       <Faq items={FAQ} locale="en" heading="Questions people ask" />
-      <HcNextStep locale="en" pageName={PAGE} pageKey="hc-jayanti-2027" placement="jayanti_end" />
+
+      <section className="section section-alt hc-band">
+        <div className="wrap hc-col">
+          <HcNextStep locale="en" pageName={PAGE} pageKey="hc-jayanti-2027" placement="jayanti_end" />
+        </div>
+      </section>
     </main>
   )
 }

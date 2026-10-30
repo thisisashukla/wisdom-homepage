@@ -5,10 +5,11 @@ import Shell from '@/components/funnels/ramayana/Shell'
 import SceneLedger from '@/components/funnels/ramayana/SceneLedger'
 import LampLegend from '@/components/funnels/ramayana/LampLegend'
 import KeepCards from '@/components/funnels/ramayana/KeepCards'
-import { Crumbs, Faq, JsonLd, MethodEn } from '@/components/funnels/ramayana/Bits'
+import Hero from '@/components/funnels/ramayana/Hero'
+import { Band, Faq, JsonLd, MethodEn, Tiles } from '@/components/funnels/ramayana/Bits'
 import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
-import { SCENES } from '@/lib/funnels/ramayana/data'
-import { HUB_FAQ, HUB_QUICK } from '@/lib/funnels/ramayana/hubCopy'
+import { SCENES, getLine, lineView } from '@/lib/funnels/ramayana/data'
+import { HUB_COUNTS, HUB_FAQ, HUB_QUICK } from '@/lib/funnels/ramayana/hubCopy'
 import { PATHS } from '@/lib/funnels/ramayana/paths'
 import { articleLd, breadcrumbLd, faqLd, itemListLd, pageMeta } from '@/lib/funnels/ramayana/seo'
 
@@ -45,78 +46,64 @@ export default function InTheOriginalPage() {
           faqLd(HUB_FAQ.en),
         ]}
       />
-      <Crumbs label="Breadcrumb" items={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana', href: PATHS.hub }, { name: 'In the original' }]} />
+      <Hero
+        locale="en"
+        crumbLabel="Breadcrumb"
+        crumbs={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana', href: PATHS.hub }, { name: 'In the original' }]}
+        eyebrow="Film, Valmiki, Tulsidas"
+        h1="Ramayana, in the original"
+        sub="You watched it on the big screen. Read the line it came from."
+        facts={[`${HUB_COUNTS.total} scenes`, `${HUB_COUNTS.both} in both texts`, `${HUB_COUNTS.tulsidasOnly} from Tulsidas alone`]}
+        cta={{ href: '#scenes', label: 'See the scenes', loc: 'hero_scenes' }}
+        lines={[lineView(getLine('rcm-6-36-1'), 'en')]}
+      />
 
-      <header className="rl-hero">
-        <h1 className="rl-h1">Ramayana, in the original</h1>
-        <p className="rl-promise">You watched it on the big screen. Read the line it came from.</p>
-        <div className="rl-shore" aria-hidden="true" />
-        <p className="rl-quick" id="quick-answer">
+      <Band className="rl-introsec">
+        <p className="rl-intro rv" id="quick-answer">
           {HUB_QUICK.en}
         </p>
-      </header>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="lamps">
-        <h2 className="rl-h2" id="lamps">
-          Three lamps for every scene
-        </h2>
-        <p className="rl-lede">
-          Each scene has three diyas: the film, Valmiki and Tulsidas. A lit lamp means the moment is in that version. Tap a lamp
-          to read what that version has, in the original with plain English.
-        </p>
-        <LampLegend locale="en" />
-      </section>
+      <Band
+        id="lamps"
+        title="Three lamps for every scene"
+        tone="alt"
+        lede="Each scene has three diyas: the film, Valmiki and Tulsidas. A lit lamp means the moment is in that version. Tap a lamp to read what that version has, in the original with plain English."
+      >
+        <div className="rv">
+          <LampLegend locale="en" />
+        </div>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="scenes">
-        <h2 className="rl-h2" id="scenes">
-          The scenes, in story order
-        </h2>
+      <Band id="scenes" title="The scenes, in story order">
         <SceneLedger scenes={SCENES} locale="en" page={PAGE} />
-      </section>
+      </Band>
 
-      <section className="rl-section" aria-labelledby="next-read">
-        <h2 className="rl-h2" id="next-read">
-          After the credits
-        </h2>
-        <ul className="rl-links">
-          <li>
-            <a href={PATHS.afterFilm} data-mp-location="links_after_film">
-              <strong>Seven mornings after the film</strong>
-              <span>Four Ramayana lines, then three from the Bhagavad Gita, one a day.</span>
-            </a>
-          </li>
-          <li>
-            <a href={PATHS.compare} data-mp-location="links_compare">
-              <strong>Valmiki and Tulsidas, side by side</strong>
-              <span>Language, length, how each tells Ram, and what the film draws on.</span>
-            </a>
-          </li>
-          <li>
-            <a href={PATHS.diwali} data-mp-location="links_diwali">
-              <strong>The homecoming, as Valmiki and Tulsidas tell it</strong>
-              <span>The return to Ayodhya behind Diwali, line by line.</span>
-            </a>
-          </li>
-          <li>
-            <a href={PATHS.hiOriginal} hrefLang="hi" data-mp-location="links_hindi">
-              <strong lang="hi">हिंदी में पढ़ें</strong>
-              <span>The same scenes, with Hindi meanings.</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <Band id="next-read" title="After the credits" tone="alt" wide>
+        <Tiles
+          items={[
+            { href: PATHS.afterFilm, t: 'Seven mornings after the film', s: 'Four Ramayana lines, then three from the Bhagavad Gita, one a day.' },
+            { href: PATHS.compare, t: 'Valmiki and Tulsidas, side by side', s: 'Language, length, how each tells Ram, and what the film draws on.' },
+            { href: PATHS.diwali, t: 'The homecoming, as Valmiki and Tulsidas tell it', s: 'The return to Ayodhya behind Diwali, line by line.' },
+            { href: PATHS.hiOriginal, t: 'हिंदी में पढ़ें', s: 'The same scenes, with Hindi meanings.', lang: 'hi' },
+          ]}
+          loc={(href) =>
+            href === PATHS.afterFilm ? 'links_after_film' : href === PATHS.compare ? 'links_compare' : href === PATHS.diwali ? 'links_diwali' : 'links_hindi'
+          }
+        />
+      </Band>
 
-      <section className="rl-section" aria-labelledby="keep">
-        <h2 className="rl-h2" id="keep">
-          Lines to keep
-        </h2>
-        <p className="rl-lede">Copy one, send it on WhatsApp, or save it as an image.</p>
-        <KeepCards ids={['ram-anirveda', 'ram-trouble-passes', 'ram-all-things-part', 'ram-hundred-years']} locale="en" page={PAGE} pageKey="ramayana-original" path={PATHS.original} />
-      </section>
+      <Band id="keep" title="Lines to keep" lede="Copy one, send it on WhatsApp, or save it as an image." wide>
+        <div className="rv">
+          <KeepCards ids={['ram-anirveda', 'ram-trouble-passes', 'ram-all-things-part', 'ram-hundred-years']} locale="en" page={PAGE} pageKey="ramayana-original" path={PATHS.original} />
+        </div>
+      </Band>
 
-      <div className="rl-next">
-        <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-original" placement="end" copy={NEXT_COPY.en} />
-      </div>
+      <Band tone="alt">
+        <div className="rl-final rv">
+          <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-original" placement="end" copy={NEXT_COPY.en} />
+        </div>
+      </Band>
 
       <Faq heading="Questions people ask" qas={HUB_FAQ.en} />
       <MethodEn />
