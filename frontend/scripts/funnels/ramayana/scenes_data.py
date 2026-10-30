@@ -1,0 +1,383 @@
+"""Scene verdicts for /ramayana/in-the-original. Every verdict was checked in the corpus
+(sanscripts/wisdom_kb/out/verses.jsonl) before it was written; see lp/funnels/ramayana/REVIEW.md.
+
+Lamp states: lit (the moment is in that version), partial (mentioned, not shown),
+dark (not in that version), unknown (film only: not shown in trailers or by the makers).
+"""
+
+ESQ_TRAILER_1 = dict(label='Esquire India, trailer breakdown, 31 Jul 2026',
+                     url='https://www.esquireindia.co.in/entertainment/at-the-movies/whos-playing-who-in-ramayana-part-1-and-a-few-things-the-trailer-holds-back')
+ESQ_TRAILER_2 = dict(label='Esquire India, trailer report, 30 Jul 2026',
+                     url='https://www.esquireindia.co.in/entertainment/at-the-movies/ramayana-part-1-trailer-ranbir-kapoors-epic-journey-from-ayodhya-to-lanka-unveiled')
+GLAMSHAM_JATAYU = dict(label='GlamSham via IMDb News, 9 Sep 2024', url='https://m.imdb.com/news/ni64814228')
+
+UNKNOWN = dict(state='unknown', note=dict(
+    en='The trailers and the makers have not shown this scene, so the film’s version is still unknown.',
+    hi='अभी पता नहीं। ट्रेलर में या फ़िल्म बनाने वालों की ओर से यह दृश्य अब तक सामने नहीं आया है।'))
+
+SCENES = [
+    dict(
+        slug='ahalya', kand='bal',
+        title=dict(en='Ahalya and the stone', hi='अहल्या और पत्थर'),
+        question=dict(en='Did Valmiki write that Ahalya became a stone?', hi='क्या वाल्मीकि रामायण में अहल्या पत्थर बनी थी?'),
+        verdict=dict(en='Tulsidas adds the stone', hi='पत्थर तुलसीदास के यहाँ है'),
+        quick=dict(
+            en="No. In Valmiki's Ramayana (Bala Kanda, sargas 48 and 49), Gautama's curse leaves Ahalya living on air in the hermitage, unseen by every creature, until Ram arrives. Ram and Lakshman then touch her feet. The stone body, upal deh, comes from Tulsidas's Ramcharitmanas (Bal Kand), where the dust of Ram's feet frees her.",
+            hi='नहीं। वाल्मीकि रामायण (बालकाण्ड, सर्ग 48 और 49) में गौतम के श्राप से अहल्या आश्रम में हवा पर जीती है और राम के आने तक किसी प्राणी को दिखाई नहीं देती। फिर राम और लक्ष्मण उसके पाँव छूते हैं। पत्थर का शरीर, "उपल देह", तुलसीदास के रामचरितमानस (बालकाण्ड) में है, जहाँ राम के पाँव की धूल उसे मुक्त करती है।'),
+        lamps=dict(
+            film=UNKNOWN,
+            valmiki=dict(state='dark', lines=['vr-1-48-23', 'vr-1-49-15'], note=dict(
+                en='No stone. Ahalya lives unseen, on air, in the hermitage, and the princes bow at her feet.',
+                hi='पत्थर नहीं। अहल्या आश्रम में अदृश्य रहकर हवा पर जीती है, और दोनों राजकुमार उसके पाँव छूते हैं।')),
+            tulsidas=dict(state='lit', lines=['rcm-1-198-d1'], note=dict(
+                en="Ahalya waits as stone until Ram's foot touches her.",
+                hi='अहल्या पत्थर बनी इंतज़ार करती है, जब तक राम का पाँव उसे नहीं छूता।')),
+        ),
+        arc=dict(
+            en=["In Valmiki, Indra comes to the hermitage in Gautama's guise, and Gautama curses both Indra and Ahalya.",
+                'Ahalya spends long years in penance, unseen; when Ram enters, she becomes visible again, receives the princes as guests, and the gods praise her.',
+                "Tulsidas tells it as grace: a stone beside the road to Mithila, the touch of Ram's foot, and Ahalya standing with folded hands, singing his praise."],
+            hi=['वाल्मीकि के यहाँ इंद्र गौतम का रूप धरकर आश्रम आते हैं, और गौतम इंद्र और अहल्या, दोनों को श्राप देते हैं।',
+                'अहल्या बरसों अदृश्य रहकर तप करती है। राम के आने पर वह फिर दिखने लगती है, राजकुमारों का अतिथि की तरह सत्कार करती है, और देवता उसकी सराहना करते हैं।',
+                'तुलसीदास इसे कृपा की कथा बनाते हैं: मिथिला के रास्ते में एक पत्थर, राम के पाँव का स्पर्श, और हाथ जोड़े खड़ी अहल्या, जो राम की स्तुति गाती है।']),
+        asks=dict(
+            en='If someone near you is still paying for an old mistake, find one way this week to treat them the way the princes treated Ahalya.',
+            hi='अगर आपके आसपास कोई अब भी किसी पुरानी गलती की सज़ा भुगत रहा है, तो इस हफ़्ते उसके साथ वैसा बर्ताव करें जैसा राजकुमारों ने अहल्या के साथ किया।'),
+        gita=dict(chapter=6, verse=40, note=dict(
+            en='Krishna tells Arjuna that no one who does good comes to a bad end.',
+            hi='कृष्ण अर्जुन से कहते हैं कि भला करने वाले की कभी दुर्गति नहीं होती।')),
+        meta=dict(title='Did Ahalya become a stone in Valmiki? | Wisdom',
+                  description="Valmiki's Ahalya lives unseen, on air, until Ram comes (Bala Kanda 48 to 49). The stone is Tulsidas's. Both lines, with Sanskrit and plain English."),
+    ),
+    dict(
+        slug='sita-swayamvar-bow', kand='bal',
+        title=dict(en="Sita's swayamvar and the bow", hi='सीता स्वयंवर और धनुष'),
+        question=dict(en="Was there a swayamvar for Sita in Valmiki's Ramayana?", hi='क्या वाल्मीकि रामायण में सीता का स्वयंवर हुआ था?'),
+        verdict=dict(en='Both break the bow; Tulsidas adds the assembly', hi='धनुष दोनों में टूटता है, सभा तुलसीदास जोड़ते हैं'),
+        quick=dict(
+            en="Not as a gathering of kings. In Valmiki (Bala Kanda, sargas 66 and 67), Janaka tells how suitors came over the years and none could lift Shiva's bow. He has it brought for Ram, who strings it and breaks it before thousands of onlookers. The assembly where ten thousand kings fail together is Tulsidas's (Ramcharitmanas, Bal Kand).",
+            hi='राजाओं की सभा वाला स्वयंवर नहीं। वाल्मीकि (बालकाण्ड, सर्ग 66 और 67) में जनक बताते हैं कि बरसों में कई राजा आए और कोई शिव का धनुष उठा नहीं सका। फिर वे राम के लिए धनुष मँगवाते हैं, और राम हज़ारों लोगों के सामने उस पर डोरी चढ़ाकर उसे तोड़ देते हैं। दस हज़ार राजाओं के एक साथ हारने वाली सभा तुलसीदास के रामचरितमानस (बालकाण्ड) में है।'),
+        lamps=dict(
+            film=dict(state='lit', source=ESQ_TRAILER_1, note=dict(
+                en="In the film's telling (from trailers and the makers): the trailer shows Ram breaking Shiva's bow.",
+                hi='फ़िल्म में (ट्रेलर और फ़िल्म बनाने वालों के हिसाब से): ट्रेलर में राम शिव का धनुष तोड़ते दिखते हैं।')),
+            valmiki=dict(state='lit', lines=['vr-1-66-13', 'vr-1-67-14'], note=dict(
+                en='Ram breaks the bow. The kings had tried and failed earlier, on other days.',
+                hi='राम धनुष तोड़ते हैं। राजा पहले, अलग-अलग समय पर आकर हार चुके थे।')),
+            tulsidas=dict(state='lit', lines=['rcm-1-237-1', 'rcm-1-247-4'], note=dict(
+                en='Ten thousand kings fail together, then Ram breaks the bow before the full assembly.',
+                hi='दस हज़ार राजा एक साथ हारते हैं, फिर भरी सभा में राम धनुष तोड़ते हैं।')),
+        ),
+        arc=dict(
+            en=["Janaka found Sita in a ploughed field and set one condition for her marriage: the man who could string Shiva's bow.",
+                'Kings came, failed, and in anger laid siege to Mithila for a year. When Vishvamitra brings Ram, Janaka has the bow wheeled out on its eight-wheeled cart.',
+                'Tulsidas builds a full assembly around it: kings fail together, Janaka despairs aloud, Lakshman bristles, and Sita places the victory garland on Ram.'],
+            hi=['जनक को सीता हल चलाते समय खेत में मिली थीं, और उन्होंने विवाह की एक शर्त रखी: जो शिव के धनुष पर डोरी चढ़ा दे।',
+                'राजा आए, हारे, और गुस्से में एक साल तक मिथिला को घेरे रहे। जब विश्वामित्र राम को लाते हैं, तो जनक आठ पहियों की गाड़ी पर धनुष मँगवाते हैं।',
+                'तुलसीदास इसके चारों ओर पूरी सभा रचते हैं: राजा एक साथ हारते हैं, जनक खुलकर निराशा जताते हैं, लक्ष्मण तमतमा उठते हैं, और सीता राम के गले में जयमाला डालती हैं।']),
+        asks=dict(
+            en='Ram took up the bow when his teacher asked, and said little. This week, let one piece of your work speak before you do.',
+            hi='राम ने गुरु के कहने पर धनुष उठाया और ज़्यादा कुछ नहीं कहा। इस हफ़्ते अपने किसी काम को पहले बोलने दें, फिर खुद बोलें।'),
+        meta=dict(title='Was there a swayamvar in Valmiki Ramayana? | Wisdom',
+                  description='In Valmiki, Janaka has the bow brought for Ram after earlier suitors failed (Bala Kanda 66 to 67). The assembly of kings is Tulsidas’s.'),
+    ),
+    dict(
+        slug='kaikeyi-boons', kand='ayodhya',
+        title=dict(en="Kaikeyi's two boons", hi='कैकेयी के दो वर'),
+        question=dict(en="How do Valmiki and Tulsidas tell Kaikeyi's two boons?", hi='वाल्मीकि और तुलसीदास कैकेयी के दो वरों की कथा कैसे कहते हैं?'),
+        verdict=dict(en='In both; Tulsidas adds Saraswati', hi='दोनों में, सरस्वती तुलसीदास जोड़ते हैं'),
+        quick=dict(
+            en="Both texts have them. In Valmiki (Ayodhya Kanda, sargas 9 and 11), Manthara reminds Kaikeyi of two boons Dasharatha gave when she carried him wounded from battle, and Kaikeyi asks for Bharata's crowning and fourteen years of exile for Ram. Tulsidas (Ayodhya Kand, doha 12) adds that the gods sent Saraswati to turn Manthara's mind.",
+            hi='दोनों ग्रंथों में हैं। वाल्मीकि (अयोध्याकाण्ड, सर्ग 9 और 11) में मंथरा कैकेयी को वे दो वर याद दिलाती है जो दशरथ ने तब दिए थे जब कैकेयी घायल दशरथ को युद्ध से बचाकर लाई थीं। कैकेयी भरत का राजतिलक और राम के लिए चौदह बरस का वनवास माँगती हैं। तुलसीदास (अयोध्याकाण्ड, दोहा 12) जोड़ते हैं कि देवताओं ने सरस्वती को भेजकर मंथरा की बुद्धि फेरी।'),
+        lamps=dict(
+            film=dict(state='lit', source=ESQ_TRAILER_2, note=dict(
+                en="In the film's telling (from trailers and the makers): the trailer includes Ram accepting Kaikeyi's wish and giving up the throne.",
+                hi='फ़िल्म में (ट्रेलर और फ़िल्म बनाने वालों के हिसाब से): ट्रेलर में राम कैकेयी की इच्छा मानकर राजगद्दी छोड़ते दिखते हैं।')),
+            valmiki=dict(state='lit', lines=['vr-2-11-23'], note=dict(
+                en='Kaikeyi names the two boons herself: the crown for Bharata, the forest for Ram.',
+                hi='कैकेयी खुद दोनों वर माँगती हैं: भरत को राज, राम को वन।')),
+            tulsidas=dict(state='lit', lines=['rcm-2-13-d1', 'rcm-2-29-1', 'rcm-2-28-2'], note=dict(
+                en="The same two boons, with Saraswati turning Manthara's mind first.",
+                hi='वही दो वर, पर पहले सरस्वती मंथरा की बुद्धि फेरती हैं।')),
+        ),
+        arc=dict(
+            en=["In Valmiki, Kaikeyi first hears of Ram's coronation with joy and gives Manthara a jewel for the news.",
+                'Manthara works on her fear for Bharata until Kaikeyi lies down in the chamber of anger and holds Dasharatha to his old promise.',
+                'Tulsidas keeps the pain and moves part of the cause: the gods need Ram in the forest, Saraswati turns the maid, and later, at Chitrakoot, Kaikeyi is eaten up by remorse.'],
+            hi=['वाल्मीकि के यहाँ राम के राजतिलक की खबर सुनकर कैकेयी पहले खुश होती हैं और मंथरा को इनाम में गहना देती हैं।',
+                'मंथरा भरत को लेकर उनके डर को तब तक हवा देती है जब तक कैकेयी कोपभवन में नहीं लेट जातीं और दशरथ को उनके पुराने वचन से नहीं बाँध लेतीं।',
+                'तुलसीदास दर्द वही रखते हैं, पर कारण का एक हिस्सा बदल देते हैं: देवताओं को राम वन में चाहिए, सरस्वती दासी की बुद्धि फेरती हैं, और बाद में चित्रकूट में कैकेयी पछतावे से गल जाती हैं।']),
+        asks=dict(
+            en='When advice feeds your fear this week, ask who gains if you act on it, before you act.',
+            hi='इस हफ़्ते जब कोई सलाह आपके डर को बढ़ाए, तो कदम उठाने से पहले पूछें कि इससे फ़ायदा किसका है।'),
+        gita=dict(chapter=2, verse=62, note=dict(
+            en='Krishna traces how brooding on something grows into desire, then anger, then lost judgement.',
+            hi='कृष्ण बताते हैं कि किसी चीज़ के बारे में सोचते रहने से कैसे चाह, फिर गुस्सा, फिर विवेक का नाश होता है।')),
+        meta=dict(title="Kaikeyi's two boons in Valmiki and Tulsidas | Wisdom",
+                  description='Both texts have the boons (Valmiki, Ayodhya Kanda 9 to 11). Tulsidas adds Saraswati turning Manthara’s mind. The lines, with plain English.'),
+    ),
+    dict(
+        slug='kevat', kand='ayodhya',
+        title=dict(en="Kevat washes Ram's feet", hi='केवट ने राम के पाँव धोए'),
+        question=dict(en="Is Kevat washing Ram's feet in Valmiki's Ramayana?", hi='क्या वाल्मीकि रामायण में केवट राम के पाँव धोता है?'),
+        verdict=dict(en='Tulsidas adds', hi='तुलसीदास के यहाँ'),
+        quick=dict(
+            en="No. In Valmiki (Ayodhya Kanda, sarga 52), Guha, the Nishada chief, has a strong boat with a helmsman brought to the Ganga, and Ram, Sita and Lakshman cross. The boatman who will not take Ram aboard until he has washed his feet, and who asks no fare, is Tulsidas's (Ramcharitmanas, Ayodhya Kand, doha 100).",
+            hi='नहीं। वाल्मीकि (अयोध्याकाण्ड, सर्ग 52) में निषादराज गुह गंगा किनारे एक मज़बूत नाव और माँझी मँगवाते हैं, और राम, सीता और लक्ष्मण पार उतरते हैं। पाँव धोए बिना नाव पर न चढ़ाने वाला और उतराई न लेने वाला केवट तुलसीदास के रामचरितमानस (अयोध्याकाण्ड, दोहा 100) में है।'),
+        lamps=dict(
+            film=UNKNOWN,
+            valmiki=dict(state='dark', lines=['vr-2-52-5'], note=dict(
+                en="Guha's men bring a boat. No one washes Ram's feet.",
+                hi='गुह के लोग नाव लाते हैं। पाँव धोने की बात नहीं है।')),
+            tulsidas=dict(state='lit', lines=['rcm-2-98-2', 'rcm-2-98-ch1'], note=dict(
+                en='The boatman washes Ram’s feet first and refuses any fare.',
+                hi='केवट पहले राम के पाँव धोता है और उतराई लेने से मना कर देता है।')),
+        ),
+        arc=dict(
+            en=['In Valmiki the crossing is brief: Guha’s men bring the boat, Ram sends the charioteer Sumantra back to Ayodhya, and the three cross the Ganga.',
+                'Tulsidas slows down. The boatman has heard that the dust of Ram’s feet turned a stone into a woman, and his boat is his living.',
+                'He washes Ram’s feet, drinks the water with his family, ferries them across, and will not take Sita’s ring as fare.'],
+            hi=['वाल्मीकि में गंगा पार करना छोटा-सा प्रसंग है: गुह के लोग नाव लाते हैं, राम सारथी सुमंत्र को अयोध्या लौटाते हैं, और तीनों पार उतरते हैं।',
+                'तुलसीदास यहाँ ठहरते हैं। केवट ने सुना है कि राम के पाँव की धूल से पत्थर स्त्री बन गया था, और उसकी नाव ही उसकी रोज़ी है।',
+                'वह राम के पाँव धोता है, परिवार के साथ वह जल पीता है, सबको पार उतारता है, और उतराई में सीता की अँगूठी भी नहीं लेता।']),
+        asks=dict(
+            en='Some help has no price. This week, accept one kindness without rushing to pay it back.',
+            hi='कुछ मदद की कोई कीमत नहीं होती। इस हफ़्ते किसी की एक भलाई बिना उसका बदला चुकाने की जल्दी के स्वीकार करें।'),
+        gita=dict(chapter=9, verse=27, note=dict(
+            en='Krishna asks that whatever you do, eat, give or offer, you do as an offering to him.',
+            hi='कृष्ण कहते हैं कि जो भी करो, खाओ, दो या अर्पित करो, वह उन्हें अर्पण करके करो।')),
+        meta=dict(title="Is Kevat washing Ram's feet in Valmiki? | Wisdom",
+                  description='In Valmiki, Guha’s men bring a boat (Ayodhya Kanda 52). The boatman who washes Ram’s feet is Tulsidas’s (Ayodhya Kand 100). Both lines.'),
+    ),
+    dict(
+        slug='bharat-refuses-the-throne', kand='ayodhya',
+        title=dict(en='Bharat refuses the throne', hi='भरत ने राजगद्दी ठुकराई'),
+        question=dict(en='Does Bharat refuse the throne in the original Ramayana?', hi='क्या मूल रामायण में भरत राजगद्दी ठुकराते हैं?'),
+        verdict=dict(en='In both', hi='दोनों में'),
+        quick=dict(
+            en='Yes, in both. In Valmiki (Ayodhya Kanda, sarga 79), Bharata walks around the coronation things and tells the ministers that Ram, the eldest, will be king and that he will live in the forest himself. At Chitrakoot he asks Ram to step onto a pair of sandals and give them to him (sarga 112). Tulsidas tells it at length.',
+            hi='हाँ, दोनों में। वाल्मीकि (अयोध्याकाण्ड, सर्ग 79) में भरत राजतिलक की सामग्री की परिक्रमा करके मंत्रियों से कहते हैं कि बड़े भाई राम ही राजा होंगे और वन में वे खुद रहेंगे। चित्रकूट में वे राम से खड़ाऊँ पर पाँव रखकर उन्हें दे देने को कहते हैं (सर्ग 112)। तुलसीदास यही इनकार विस्तार से कहते हैं (अयोध्याकाण्ड)।'),
+        lamps=dict(
+            film=dict(state='unknown', note=dict(
+                en='Bharat is in the cast, but the trailers and the makers have not shown this scene, so the film’s version is still unknown.',
+                hi='अभी पता नहीं। भरत का किरदार फ़िल्म में है, पर ट्रेलर में यह दृश्य अब तक नहीं दिखा।')),
+            valmiki=dict(state='lit', lines=['vr-2-79-7', 'vr-2-112-21'], note=dict(
+                en='Bharata refuses in Ayodhya, then carries Ram’s sandals home from Chitrakoot.',
+                hi='भरत अयोध्या में मना करते हैं, फिर चित्रकूट से राम की खड़ाऊँ लेकर लौटते हैं।')),
+            tulsidas=dict(state='lit', lines=['rcm-2-176-1', 'rcm-2-302-2'], note=dict(
+                en='The same refusal, told slowly, ending with the sandals on Bharat’s head.',
+                hi='वही इनकार, धीरे-धीरे कहा हुआ, और अंत में भरत के सिर पर खड़ाऊँ।')),
+        ),
+        arc=dict(
+            en=['Bharata comes home to find his father dead and his brother exiled in his name, and he turns on his mother in grief.',
+                'He refuses the crown, walks to Chitrakoot with the army and the people of Ayodhya, and begs Ram to return. Ram holds to his father’s word.',
+                'Bharata goes back with Ram’s sandals, sets them on the throne, and rules for fourteen years from Nandigram, dressed as a hermit.'],
+            hi=['भरत घर लौटते हैं तो पाते हैं कि पिता नहीं रहे और उनके नाम पर भाई को वनवास मिला है। दुख में वे अपनी माँ पर बरस पड़ते हैं।',
+                'वे मुकुट ठुकराते हैं, सेना और अयोध्या के लोगों के साथ चित्रकूट जाते हैं और राम से लौटने की विनती करते हैं। राम पिता के वचन पर टिके रहते हैं।',
+                'भरत राम की खड़ाऊँ लेकर लौटते हैं, उन्हें सिंहासन पर रखते हैं, और चौदह बरस नंदिग्राम से तपस्वी के वेश में राज चलाते हैं।']),
+        asks=dict(
+            en='If you are holding something on someone else’s behalf, look after it this week the way they would.',
+            hi='अगर आप किसी की ओर से कुछ सँभाल रहे हैं, तो इस हफ़्ते उसे वैसे सँभालें जैसे वह खुद सँभालता।'),
+        gita=dict(chapter=9, verse=22, note=dict(
+            en='Bharata says the sandals will carry the people’s yoga-kshema, their welfare. Krishna uses the same word when he promises to carry it for those who turn to him.',
+            hi='भरत कहते हैं कि खड़ाऊँ प्रजा का योग-क्षेम सँभालेंगी। कृष्ण यही शब्द कहते हैं जब वे अपने भक्तों का योग-क्षेम खुद उठाने का वचन देते हैं।')),
+        meta=dict(title='Does Bharat refuse the throne in the Ramayana? | Wisdom',
+                  description='Yes, in Valmiki (Ayodhya Kanda 79 and 112) and in Tulsidas. Bharata’s own words in Sanskrit and Awadhi, in plain English, with references.'),
+    ),
+    dict(
+        slug='sita-into-the-fire', kand='aranya',
+        title=dict(en='Sita into the fire before the abduction', hi='हरण से पहले सीता का अग्नि में निवास'),
+        question=dict(en='Did the real Sita go into the fire before Ravana took her?', hi='क्या रावण के हरण से पहले असली सीता अग्नि में चली गई थीं?'),
+        verdict=dict(en='Tulsidas adds', hi='तुलसीदास के यहाँ'),
+        quick=dict(
+            en='Only in Tulsidas. In the Ramcharitmanas (Aranya Kand, doha 24), Ram asks Sita to live inside the fire until he has destroyed the rakshasas, and she leaves a reflection of herself in her place; even Lakshman does not know. Valmiki has no such exchange. In his Aranya Kanda (sarga 49), Ravana carries off Sita herself.',
+            hi='सिर्फ़ तुलसीदास के यहाँ। रामचरितमानस (अरण्यकाण्ड, दोहा 24) में राम सीता से कहते हैं कि राक्षसों के नाश तक वे अग्नि में रहें, और सीता अपनी जगह अपनी छवि छोड़ देती हैं। लक्ष्मण तक को यह भेद नहीं पता। वाल्मीकि में ऐसी कोई बात नहीं है। उनके अरण्यकाण्ड (सर्ग 49) में रावण खुद सीता को ले जाता है।'),
+        lamps=dict(
+            film=UNKNOWN,
+            valmiki=dict(state='dark', lines=[], note=dict(
+                en='No exchange of this kind. Ravana seizes Sita herself (Aranya Kanda, sarga 49).',
+                hi='ऐसी कोई बात नहीं। रावण खुद सीता को पकड़ता है (अरण्यकाण्ड, सर्ग 49)।')),
+            tulsidas=dict(state='lit', lines=['rcm-3-20-1', 'rcm-3-20-2'], note=dict(
+                en='Ram keeps the real Sita in the fire; her reflection stays in the hut.',
+                hi='राम असली सीता को अग्नि में रखते हैं, कुटिया में उनकी छवि रहती है।')),
+        ),
+        arc=dict(
+            en=["Valmiki's Sita is taken in person. She rebukes Ravana to his face and drops her ornaments for Ram to find.",
+                'Tulsidas, writing as a devotee, keeps the real Sita safe in the fire before the golden deer appears, so the Sita who is taken is her reflection.',
+                'He closes the loop in Lanka Kand, where the fire gives the real Sita back.'],
+            hi=['वाल्मीकि की सीता खुद हरी जाती हैं। वे रावण को मुँह पर फटकारती हैं और राम के लिए अपने गहने गिराती जाती हैं।',
+                'भक्त कवि तुलसीदास सोने के हिरण के आने से पहले ही असली सीता को अग्नि में सुरक्षित रखते हैं, इसलिए जो हरी जाती है वह उनकी छवि है।',
+                'लंकाकाण्ड में वे यह कथा पूरी करते हैं, जहाँ अग्नि असली सीता को लौटा देती है।']),
+        asks=dict(
+            en='Before a hard week starts, decide what you will keep out of the fight, and keep it there.',
+            hi='मुश्किल हफ़्ता शुरू होने से पहले तय कर लें कि किस चीज़ को झगड़े से दूर रखेंगे, और उसे वहीं रखें।'),
+        meta=dict(title='Did Sita enter the fire before her abduction? | Wisdom',
+                  description='Only in Tulsidas (Aranya Kand 24): the real Sita waits in the fire and her reflection is taken. Valmiki’s Sita is taken herself. The lines, with sources.'),
+    ),
+    dict(
+        slug='golden-deer', kand='aranya',
+        title=dict(en='The golden deer', hi='सोने का हिरण'),
+        question=dict(en='How is the golden deer told in Valmiki and Tulsidas?', hi='वाल्मीकि और तुलसीदास सोने के हिरण की कथा कैसे कहते हैं?'),
+        verdict=dict(en='In both, told differently', hi='दोनों में, अलग ढंग से'),
+        quick=dict(
+            en="Both tell it. In Valmiki (Aranya Kanda, sargas 42 to 44), Maricha takes the form of a jewelled deer; Lakshman warns that it is Maricha, Sita asks for it, and Ram goes after it. In Tulsidas (Ramcharitmanas, Aranya Kand, doha 27), Ram knows the whole reason and rises gladly to do the gods' work.",
+            hi='दोनों में है। वाल्मीकि (अरण्यकाण्ड, सर्ग 42 से 44) में मारीच रत्नों से सजे हिरण का रूप लेता है। लक्ष्मण चेताते हैं कि यह मारीच है, सीता उसे माँगती हैं, और राम उसके पीछे जाते हैं। तुलसीदास (रामचरितमानस, अरण्यकाण्ड, दोहा 27) में राम सारा कारण जानते हैं और देवताओं का काम करने खुशी से उठते हैं।'),
+        lamps=dict(
+            film=UNKNOWN,
+            valmiki=dict(state='lit', lines=['vr-3-43-8', 'vr-3-43-4'], note=dict(
+                en='Sita wants the deer; Lakshman says it is Maricha.',
+                hi='सीता को हिरण चाहिए, लक्ष्मण कहते हैं यह मारीच है।')),
+            tulsidas=dict(state='lit', lines=['rcm-3-23-1', 'rcm-3-23-3'], note=dict(
+                en='Ram knows what the deer is and goes anyway.',
+                hi='राम जानते हैं कि हिरण क्या है, फिर भी जाते हैं।')),
+        ),
+        arc=dict(
+            en=['Ravana forces Maricha into the plan. Maricha warns him first, then obeys out of fear.',
+                "The deer draws Ram far from the hermitage. Struck by Ram's arrow, Maricha cries out in Ram's voice for Sita and Lakshman.",
+                "In Valmiki, Ram hurries back in dread. In Tulsidas, the chase is part of Ram's play, and Maricha is given a high place for dying at his hands."],
+            hi=['रावण मारीच को इस चाल में ज़बरदस्ती शामिल करता है। मारीच पहले उसे चेताता है, फिर डर के मारे मान जाता है।',
+                'हिरण राम को आश्रम से दूर ले जाता है। राम का बाण लगते ही मारीच राम की आवाज़ में सीता और लक्ष्मण को पुकारता है।',
+                'वाल्मीकि में राम घबराकर लौटते हैं। तुलसीदास में यह पीछा राम की लीला है, और राम के हाथों मरकर मारीच को ऊँचा पद मिलता है।']),
+        asks=dict(
+            en='When something looks too good to be real this week, give it one night before you chase it.',
+            hi='इस हफ़्ते कोई चीज़ इतनी अच्छी लगे कि सच न लगे, तो उसके पीछे भागने से पहले एक रात रुकें।'),
+        gita=dict(chapter=2, verse=67, note=dict(
+            en='Krishna says a mind that follows the wandering senses is carried off like a boat in the wind.',
+            hi='कृष्ण कहते हैं कि भटकती इंद्रियों के पीछे चलने वाला मन हवा में नाव की तरह बह जाता है।')),
+        meta=dict(title='The golden deer in Valmiki and Tulsidas | Wisdom',
+                  description='Valmiki: Lakshman warns it is Maricha (Aranya Kanda 43). Tulsidas: Ram knows and goes anyway (Aranya Kand 27). The original lines in English.'),
+    ),
+    dict(
+        slug='sita-words-to-lakshman', kand='aranya',
+        title=dict(en="Sita's words to Lakshman", hi='सीता के वचन, लक्ष्मण से'),
+        question=dict(en='What did Sita say to Lakshman before he left her?', hi='लक्ष्मण के जाने से पहले सीता ने उनसे क्या कहा?'),
+        verdict=dict(en='In both, toned differently', hi='दोनों में, अलग सुर में'),
+        quick=dict(
+            en="Both texts have it. In Valmiki (Aranya Kanda, sarga 45), Sita hears the false cry; when Lakshman will not leave her, she accuses him at length, and he goes, placing her in the forest spirits' care. Tulsidas (Aranya Kand, doha 28) gives it one line: Sita spoke words that struck the heart.",
+            hi='दोनों ग्रंथों में है। वाल्मीकि (अरण्यकाण्ड, सर्ग 45) में सीता झूठी पुकार सुनती हैं। लक्ष्मण उन्हें छोड़कर जाने से मना करते हैं, तो सीता उन पर लंबे-लंबे आरोप लगाती हैं, और लक्ष्मण उन्हें वन देवताओं को सौंपकर चले जाते हैं। तुलसीदास (अरण्यकाण्ड, दोहा 28) इसे एक पंक्ति में कहते हैं: सीता ने मर्म को चुभने वाले वचन कहे।'),
+        lamps=dict(
+            film=UNKNOWN,
+            valmiki=dict(state='lit', lines=['vr-3-45-20', 'vr-3-45-25'], note=dict(
+                en='Sita speaks at length and harshly; Lakshman leaves her with a blessing.',
+                hi='सीता लंबी और कड़वी बातें कहती हैं, लक्ष्मण आशीर्वाद देकर जाते हैं।')),
+            tulsidas=dict(state='lit', lines=['rcm-3-24-3'], note=dict(
+                en='One line for her words, one for his leaving.',
+                hi='उनके वचनों के लिए एक पंक्ति, लक्ष्मण के जाने के लिए एक।')),
+        ),
+        arc=dict(
+            en=['Sita is terrified for Ram and cannot see why Lakshman stays, so she turns her fear on him.',
+                'Lakshman tells her no being could harm Ram. Hurt by her words, he answers sharply, calls the forest to witness, and goes.',
+                'Tulsidas, who reveres Sita, keeps the scene short: her words, his wavering mind, and his leaving her in the care of the forest and its gods.'],
+            hi=['सीता राम के लिए डरी हुई हैं और समझ नहीं पातीं कि लक्ष्मण रुके क्यों हैं, इसलिए उनका डर लक्ष्मण पर गुस्सा बनकर निकलता है।',
+                'लक्ष्मण कहते हैं कि कोई प्राणी राम का कुछ नहीं बिगाड़ सकता। उनकी बातों से आहत होकर वे कड़ा जवाब देते हैं, वन को साक्षी बनाते हैं और चले जाते हैं।',
+                'सीता को पूजने वाले तुलसीदास यह दृश्य छोटा रखते हैं: सीता के वचन, लक्ष्मण का डगमगाता मन, और उनका सीता को वन और देवताओं के भरोसे छोड़ना।']),
+        asks=dict(
+            en='Fear makes us speak hardest to whoever stands closest. If that happened this week, say the repair out loud.',
+            hi='डर में हम सबसे कड़वी बात उसी से कहते हैं जो सबसे पास होता है। इस हफ़्ते ऐसा हुआ हो, तो माफ़ी खुलकर माँगें।'),
+        gita=dict(chapter=17, verse=15, note=dict(
+            en='Krishna counts as discipline the speech that troubles no one and is true, kind and useful.',
+            hi='कृष्ण उस वाणी को तप कहते हैं जो किसी को चोट न पहुँचाए, सच हो, प्रिय हो और भला करे।')),
+        meta=dict(title="Sita's words to Lakshman in the Ramayana | Wisdom",
+                  description='Valmiki gives Sita’s harsh words at length (Aranya Kanda 45); Tulsidas gives them one line (Aranya Kand 28). Both, in the original with plain English.'),
+    ),
+    dict(
+        slug='lakshman-rekha', kand='aranya',
+        title=dict(en='The Lakshman Rekha', hi='लक्ष्मण रेखा'),
+        question=dict(en='Is the Lakshman Rekha in the original Ramayana?', hi='क्या लक्ष्मण रेखा मूल रामायण में है?'),
+        verdict=dict(en='Tulsidas mentions it', hi='तुलसीदास ज़िक्र भर करते हैं'),
+        quick=dict(
+            en="Valmiki's text has no line. In his Aranya Kanda (sarga 45), Lakshman leaves Sita with a blessing: may all the spirits of this forest protect you. Tulsidas's own telling of the scene has no line either (Aranya Kand, doha 28). His one mention comes later, in Lanka Kand, where Mandodari taunts Ravana for failing to cross the small line Lakshman drew.",
+            hi='वाल्मीकि रामायण में कोई रेखा नहीं है। अरण्यकाण्ड (सर्ग 45) में लक्ष्मण सीता को आशीर्वाद देकर जाते हैं: इस वन के सारे देवता आपकी रक्षा करें। तुलसीदास भी इस दृश्य में रेखा नहीं खिंचवाते (अरण्यकाण्ड, दोहा 28)। उनके यहाँ रेखा का ज़िक्र बाद में लंकाकाण्ड में आता है, जहाँ मंदोदरी रावण को ताना देती हैं कि वह लक्ष्मण की खींची छोटी-सी रेखा भी नहीं लाँघ पाया।'),
+        lamps=dict(
+            film=UNKNOWN,
+            valmiki=dict(state='dark', lines=['vr-3-45-25'], note=dict(
+                en='No line. Lakshman leaves Sita with a blessing.',
+                hi='कोई रेखा नहीं। लक्ष्मण आशीर्वाद देकर जाते हैं।')),
+            tulsidas=dict(state='partial', lines=['rcm-3-24-3', 'rcm-6-36-1'], note=dict(
+                en='No line in the scene. Mandodari mentions one later, in Lanka Kand.',
+                hi='दृश्य में रेखा नहीं। मंदोदरी बाद में लंकाकाण्ड में इसका ज़िक्र करती हैं।')),
+        ),
+        arc=dict(
+            en=['In both texts Lakshman leaves Sita under protest, after her hard words, and puts her in the care of the forest and its gods.',
+                'The drawn line, and Sita stepping over it to give alms, come from later retellings and stage versions. The Manas has only Mandodari’s single line.',
+                'The phrase lives on in Hindi as the name for a limit that must not be crossed.'],
+            hi=['दोनों ग्रंथों में लक्ष्मण सीता की कड़वी बातों के बाद, मन मारकर जाते हैं, और उन्हें वन और देवताओं के भरोसे छोड़ते हैं।',
+                'खींची हुई रेखा, और भिक्षा देने के लिए सीता का उसे लाँघना, बाद की कथाओं और रामलीला से आए हैं। मानस में बस मंदोदरी की एक पंक्ति है।',
+                'हिंदी में यह शब्द आज भी उस हद के लिए बोला जाता है जिसे पार नहीं करना चाहिए।']),
+        asks=dict(
+            en='Lakshman left Sita with a blessing even after hard words. When you leave someone upset with you this week, leave them with a kind word.',
+            hi='कड़वी बातों के बाद भी लक्ष्मण सीता को आशीर्वाद देकर गए। इस हफ़्ते कोई आपसे नाराज़ हो और आपको जाना पड़े, तो एक अच्छी बात कहकर जाएँ।'),
+        meta=dict(title='Is the Lakshman Rekha in the original Ramayana? | Wisdom',
+                  description='Valmiki has no line (Aranya Kanda 45). Tulsidas mentions it once, through Mandodari in Lanka Kand. The original lines with plain English and references.'),
+    ),
+    dict(
+        slug='jatayu', kand='aranya',
+        title=dict(en='Jatayu fights Ravana', hi='जटायु और रावण'),
+        question=dict(en='What does Jatayu say to Ravana in the Ramayana?', hi='रामायण में जटायु रावण से क्या कहते हैं?'),
+        verdict=dict(en='In both', hi='दोनों में'),
+        quick=dict(
+            en='Both texts have the fight. In Valmiki (Aranya Kanda, sargas 50 and 51), the old vulture king tells Ravana that he is old and Ravana young and armed, yet he will not let him take Sita, and he fights him. Ram cremates him like his own kin (sarga 68). Tulsidas tells it in Aranya Kand, dohas 29 to 32.',
+            hi='दोनों ग्रंथों में यह लड़ाई है। वाल्मीकि (अरण्यकाण्ड, सर्ग 50 और 51) में बूढ़े गिद्धराज रावण से कहते हैं कि मैं बूढ़ा हूँ और तुम जवान और हथियारबंद, फिर भी सीता को नहीं ले जाने दूँगा, और वे लड़ते हैं। राम उन्हें मरणासन्न पाते हैं और अपने सगे की तरह उनका दाह करते हैं (सर्ग 68)। तुलसीदास इसे अरण्यकाण्ड, दोहा 29 से 32 में कहते हैं।'),
+        lamps=dict(
+            film=dict(state='lit', source=GLAMSHAM_JATAYU, note=dict(
+                en="In the film's telling (from trailers and the makers): Jatayu is in the film; press reports in 2024 said the bird would be voiced as a cameo. How the fight plays is not yet known.",
+                hi='फ़िल्म में (ट्रेलर और फ़िल्म बनाने वालों के हिसाब से): जटायु फ़िल्म में हैं, 2024 की खबरों के मुताबिक उन्हें एक कैमियो में आवाज़ दी गई है। लड़ाई कैसे दिखेगी, यह अभी पता नहीं।')),
+            valmiki=dict(state='lit', lines=['vr-3-50-18', 'vr-3-68-27'], note=dict(
+                en='Jatayu stands up to Ravana; Ram cremates him as kin.',
+                hi='जटायु रावण के सामने डटते हैं, राम सगे की तरह उनका दाह करते हैं।')),
+            tulsidas=dict(state='lit', lines=['rcm-3-25-8', 'rcm-3-28-d1'], note=dict(
+                en='Jatayu warns Ravana, fights, and Ram performs his last rites.',
+                hi='जटायु रावण को चेताते हैं, लड़ते हैं, और राम उनकी अंतिम क्रिया करते हैं।')),
+        ),
+        arc=dict(
+            en=['Jatayu, an old friend of Dasharatha, first reasons with Ravana about what a king owes another man’s wife.',
+                'Then he fights, wrecks Ravana’s chariot, and falls when Ravana cuts his wings.',
+                'He lives long enough to tell Ram who took Sita, and in both texts Ram performs his last rites himself.'],
+            hi=['दशरथ के पुराने मित्र जटायु पहले रावण को समझाते हैं कि एक राजा को पराई स्त्री के साथ कैसा बर्ताव करना चाहिए।',
+                'फिर वे लड़ते हैं, रावण का रथ तोड़ देते हैं, और जब रावण उनके पंख काट देता है तो गिर पड़ते हैं।',
+                'वे इतनी देर जीते हैं कि राम को बता सकें कि सीता को कौन ले गया, और दोनों ग्रंथों में राम खुद उनकी अंतिम क्रिया करते हैं।']),
+        asks=dict(
+            en="Jatayu stood up knowing he could lose. This week, speak up for one person who has no voice in the room.",
+            hi='जटायु हार का अंदाज़ा होते हुए भी डटे रहे। इस हफ़्ते किसी एक ऐसे इंसान के लिए आवाज़ उठाएँ जो खुद नहीं उठा सकता।'),
+        gita=dict(chapter=2, verse=47, note=dict(
+            en='Krishna tells Arjuna that the work is his and the result never was.',
+            hi='कृष्ण अर्जुन से कहते हैं कि कर्म तुम्हारा है, फल कभी तुम्हारा नहीं था।')),
+        meta=dict(title='What Jatayu says to Ravana in the Ramayana | Wisdom',
+                  description='"I am old, you are young and armed. Still you will not take her." Jatayu in Valmiki (Aranya Kanda 50) and Tulsidas, with Sanskrit and plain English.'),
+    ),
+    dict(
+        slug='shabari', kand='aranya',
+        title=dict(en="Shabari's berries", hi='शबरी के बेर'),
+        question=dict(en='Did Shabari taste the berries before giving them to Ram?', hi='क्या शबरी ने बेर चखकर राम को दिए थे?'),
+        verdict=dict(en='A later retelling', hi='बाद की कथा'),
+        quick=dict(
+            en='Neither Valmiki nor Tulsidas says so. In Valmiki (Aranya Kanda, sarga 74), Shabari has gathered forest food from the banks of the Pampa for Ram. In the Ramcharitmanas (Aranya Kand, doha 34), she brings roots, bulbs and fruit, and Ram eats them with love, praising them again and again. The tasted berries come from later devotional retellings.',
+            hi='न वाल्मीकि ऐसा कहते हैं, न तुलसीदास। वाल्मीकि (अरण्यकाण्ड, सर्ग 74) में शबरी ने राम के लिए पम्पा के किनारे से वन के फल-मूल जुटाए हैं। रामचरितमानस (अरण्यकाण्ड, दोहा 34) में वे कंद, मूल और फल लाती हैं, और राम उन्हें प्रेम से खाते हुए बार-बार सराहते हैं। चखे हुए जूठे बेर बाद की भक्ति-कथाओं से आए हैं।'),
+        lamps=dict(
+            film=dict(state='unknown', note=dict(
+                en='The film’s version is still unknown. Part 1 reportedly ends near Sita’s abduction, so this scene may belong to Part 2.',
+                hi='अभी पता नहीं। खबरों के मुताबिक पहला भाग सीता हरण के आसपास खत्म होता है, इसलिए यह दृश्य दूसरे भाग में हो सकता है।')),
+            valmiki=dict(state='dark', lines=['vr-3-74-12', 'vr-3-74-26'], note=dict(
+                en='Forest food gathered for Ram. No tasting.',
+                hi='राम के लिए जुटाए वन के फल-मूल। चखने की बात नहीं।')),
+            tulsidas=dict(state='dark', lines=['rcm-3-30-d1', 'rcm-3-31-2'], note=dict(
+                en='Roots and fruit, eaten with love. No tasting.',
+                hi='कंद-मूल और फल, प्रेम से खाए गए। चखने की बात नहीं।')),
+        ),
+        arc=dict(
+            en=['Shabari served the sage Matanga and his disciples, who told her before they left this world that Ram would come to her hermitage.',
+                'She waited for years. When he came, she washed his feet and fed him what she had gathered.',
+                'In the Manas, Ram answers her shame about her birth with one line, the only kinship he counts is devotion, and then teaches her the nine kinds of devotion.'],
+            hi=['शबरी ने मतंग ऋषि और उनके शिष्यों की सेवा की थी। उन्होंने देह छोड़ने से पहले शबरी से कहा था कि राम उसके आश्रम आएँगे।',
+                'शबरी बरसों राह देखती रहीं। राम आए तो उन्होंने उनके पाँव धोए और जो जुटाया था वह खिलाया।',
+                'मानस में शबरी अपने जन्म को लेकर संकोच करती हैं, तो राम एक पंक्ति में जवाब देते हैं कि वे सिर्फ़ भक्ति का रिश्ता मानते हैं, और फिर उन्हें नवधा भक्ति बताते हैं।']),
+        asks=dict(
+            en="Shabari gave what she had. This week, give someone your time or your cooking without apologising for how little it is.",
+            hi='शबरी ने जो था, वही दिया। इस हफ़्ते किसी को अपना समय या अपने हाथ का खाना दें, और यह माफ़ी न माँगें कि बस इतना ही है।'),
+        gita=dict(chapter=9, verse=26, note=dict(
+            en='Krishna says a leaf, a flower, a fruit or water, offered with love, is accepted.',
+            hi='कृष्ण कहते हैं कि प्रेम से अर्पित एक पत्ता, फूल, फल या जल भी वे स्वीकार करते हैं।')),
+        meta=dict(title="Did Shabari taste the berries for Ram? | Wisdom",
+                  description='Neither Valmiki (Aranya Kanda 74) nor Tulsidas (Aranya Kand 34) has the tasted berries. What Shabari gives Ram in each text, in the original with English.'),
+    ),
+]

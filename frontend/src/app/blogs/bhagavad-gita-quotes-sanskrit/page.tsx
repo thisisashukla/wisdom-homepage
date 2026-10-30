@@ -954,7 +954,12 @@ export default function BhagavadGitaQuotesSanskritPage() {
         </ul>
 
         <p>
-          If you are starting today, start with BG 2.47. Give yourself seven days. Chant it in the morning while your tea is steeping, and in a week a verse that lived in a book will be one you can say from memory. </p> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the wording of 3.35, the 9.26 tagline, the description of 18.66 as Krishna&apos;s parting sentence (it is his last instruction), the attribution for 11.55 (Shankara calls it the essence of the Gita), and the count of ātman in 6.5; removed unsourced claims about funerals, cremations, the bīja-shloka label and the meter&apos;s beat; copy edited.</p>
+          If you are starting today, start with BG 2.47. Give yourself seven days. Chant it in the morning while your tea is steeping, and in a week a verse that lived in a book will be one you can say from memory. </p> <p>
+          For lines you can copy or save as an image, see{' '}
+          <a href="/blogs/krishna-quotes" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_krishna_quotes_hub">Krishna quotes from the Bhagavad Gita</a>{' '}
+          and{' '}
+          <a href="/blogs/bhagavad-gita-quotes" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_gita_quotes">Bhagavad Gita quotes by theme</a>.
+        </p> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the wording of 3.35, the 9.26 tagline, the description of 18.66 as Krishna&apos;s parting sentence (it is his last instruction), the attribution for 11.55 (Shankara calls it the essence of the Gita), and the count of ātman in 6.5; removed unsourced claims about funerals, cremations, the bīja-shloka label and the meter&apos;s beat; copy edited.</p>
       </div>
 
 

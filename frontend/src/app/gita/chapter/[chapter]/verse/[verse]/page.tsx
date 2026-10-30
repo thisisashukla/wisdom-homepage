@@ -28,8 +28,21 @@ import { plansForVerse, PHASE_LABEL } from '@/lib/themePlans'
 import VerseNavReveal from '@/components/gita/VerseNavReveal'
 import SanskritText from '@/components/gita/SanskritText'
 import MantraCards from '@/components/gita/MantraCards'
+import QuoteCard from '@/components/quotes/QuoteCard'
+import { getQuote, quotesByMoment, verseHref } from '@/lib/quotes'
+import type { Quote, Locale } from '@/lib/quotes'
 
 type Params = { chapter: string; verse: string }
+
+/** Verse page of the next-ranked Gita quote that shares this quote's first moment. */
+function anotherLineHref(quote: Quote, locale: Locale): string | null {
+  const moment = quote.moments?.[0]
+  if (!moment) return null
+  const list = quotesByMoment(moment).filter((q) => verseHref(q, locale))
+  if (list.length < 2) return null
+  const i = list.findIndex((q) => q.id === quote.id)
+  return verseHref(list[(i + 1) % list.length], locale)
+}
 
 export async function generateStaticParams() {
   const out: Params[] = []
@@ -156,6 +169,7 @@ export default async function VersePage({ params }: { params: Params }) {
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const audio = getVerseAudio(c, v)
   const blogLinks = getBlogLinksForVerse(c, v)
+  const quote = getQuote(`bg-${c}-${v}`)
   const inPlans = plansForVerse(c, v)
 
   // ── V3 enrichment: raw pipeline labels → human copy ──
@@ -434,6 +448,26 @@ export default async function VersePage({ params }: { params: Params }) {
           </div>
         )}
       </article>
+
+      {/* ── Share this line: the shareable quote card, below the full verse card so the study view comes first ── */}
+      {quote && (
+        <section className="gv-share-line" style={{ marginTop: '48px' }} aria-label="Share this line" data-mp-section={`verse_${c}_${v}_share_line`}>
+          <div className="gv-sechead">
+            <span className="gv-sechead-label">Share this line</span>
+          </div>
+          <QuoteCard
+            quote={quote}
+            locale="en"
+            pageName={`gita_verse_${c}_${v}`}
+            moment={quote.moments?.[0]}
+            variant="hero"
+            compactHero
+            audioSrc={null}
+            verseHref={null}
+            anotherHref={anotherLineHref(quote, 'en')}
+          />
+        </section>
+      )}
 
       {/* ── Word-by-word: interlinear gloss ── */}
       {wordByWord.length > 0 && (

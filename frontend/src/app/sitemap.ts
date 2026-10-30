@@ -4,6 +4,8 @@ import path from 'node:path'
 import { getAllChapters, getAllTopics, getAllVerseRefs, chapterUrl, verseUrl, topicUrl } from '@/lib/gita'
 import { GITA_FOR } from '@/lib/gitaFor'
 import { THEME_SLUGS, THEME_PLANS_PUBLISHED, plansForVerse } from '@/lib/themePlans'
+import { getAllPages } from '@/lib/quotes'
+import { funnelSitemapEntries } from '@/lib/funnelSitemaps'
 
 const BASE = 'https://wisdomquotes.in'
 
@@ -64,7 +66,6 @@ const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
   'beyond-bhagavad-gita-quotes-mental-spiritual-health': { date: '2026-04-08', priority: 0.75 },
   'krishna-three-paths-bhagavad-gita': { date: '2026-05-24', priority: 0.85 },
   'rise-and-failure-of-gitagpt': { date: '2026-06-19', priority: 0.85 },
-  'bhagavad-gita-2-47-karmanye-vadhikaraste': { date: '2026-06-12', priority: 0.9 },
   'sthitaprajna-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
   'nishkama-karma-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
   'bhagavad-gita-on-anxiety': { date: '2026-06-12', priority: 0.88 },
@@ -77,6 +78,31 @@ const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
   'maya-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
   'best-bhagavad-gita-translation': { date: '2026-07-19', priority: 0.9 },
   'atman-not-soul-bhagavad-gita': { date: '2026-08-03', priority: 0.88 },
+}
+
+// Blog slugs that now 301 elsewhere (see next.config.mjs). The page file stays
+// on disk, so the filesystem enumeration would otherwise still list it.
+const REDIRECTED_BLOG_SLUGS = new Set(['bhagavad-gita-2-47-karmanye-vadhikaraste'])
+
+// Quote pages (configs in src/content/quotes/pages.ts) are listed from their configs so the
+// nested /blogs/krishna-quotes/<moment> and /hi/blogs/* routes are included and
+// EN/HI twins carry hreflang alternates.
+const QUOTE_HUBS = new Set(['/blogs/krishna-quotes', '/hi/blogs/krishna-quotes', '/blogs/bhagavad-gita-quotes', '/hi/blogs/bhagavad-gita-quotes'])
+
+function quotePageEntries(): MetadataRoute.Sitemap {
+  return getAllPages().map((p) => {
+    const hub = QUOTE_HUBS.has(p.path)
+    const twin = p.alternatePath
+    const enPath = p.locale === 'en' ? p.path : twin
+    const hiPath = p.locale === 'hi' ? p.path : twin
+    return {
+      url: `${BASE}${p.path}`,
+      lastModified: new Date(p.updated),
+      changeFrequency: hub ? ('weekly' as const) : ('monthly' as const),
+      priority: hub ? 0.9 : 0.85,
+      ...(enPath && hiPath ? { alternates: langAlts(enPath, hiPath) } : {}),
+    }
+  })
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -143,7 +169,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // All blogs — enumerated from the filesystem at build so no post is missed.
-  const blogSlugs = enumerateBlogSlugs()
+  const quotePages = quotePageEntries()
+  const quotePaths = new Set(getAllPages().map((p) => p.path))
+  const blogSlugs = enumerateBlogSlugs().filter(
+    (slug) => !REDIRECTED_BLOG_SLUGS.has(slug) && !quotePaths.has(`/blogs/${slug}`),
+  )
   const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => {
     const override = BLOG_LASTMOD[slug]
     return {
@@ -225,5 +255,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
   })
 
-  return [...staticPages, ...blogPages, ...chapterPages, ...versePages, ...topicPages]
+  return [...staticPages, ...blogPages, ...quotePages, ...funnelSitemapEntries(), ...chapterPages, ...versePages, ...topicPages]
 }

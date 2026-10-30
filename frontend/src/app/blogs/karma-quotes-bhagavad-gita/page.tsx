@@ -2,6 +2,12 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
+import type { ShlokaCardProps } from '@/components/gita/ShlokaCard'
+import QuoteCard from '@/components/quotes/QuoteCard'
+import LineForYou from '@/components/quotes/LineForYou'
+import NextStep from '@/components/quotes/NextStep'
+import { getQuote, getQuotes, getHookFeelings, getPage, audioFor, audioMap } from '@/lib/quotes'
+import type { Quote } from '@/lib/quotes'
 
 import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
@@ -128,7 +134,88 @@ const pageCSS = `
   .related a { display: block; padding: 12px 0; color: var(--text); border-bottom: 1px solid var(--border); }
   .related a:last-child { border-bottom: none; }
   .related a:hover { color: var(--gold-light); }
+
+  .karma-notes { margin: 18px 0 8px; padding-left: 14px; border-left: 1px solid var(--border); }
+  .karma-notes p.karma-notes-label { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--gold-light); margin: 0 0 8px; }
+  .karma-notes p { font-size: 15px; line-height: 1.75; margin-bottom: 0.9rem; }
+  .karma-essence { font-family: "Playfair Display", Georgia, serif; font-style: italic; color: var(--text); }
+  .karma-step { margin: 8px auto 0; }
 `
+
+const PAGE_NAME = 'Quotes: Karma EN'
+
+/**
+ * A verse block on this page. When the verse is in the quote set
+ * (src/content/quotes/verses.json) it renders the shareable QuoteCard, followed by
+ * this page's own translation and essence text so the article copy stays as it was.
+ * Otherwise it falls back to the original ShlokaCard.
+ */
+/** Sentences of `text`, split after . ! ? ; */
+const sentencesOf = (text: string): string[] =>
+  text.split(/(?<=[.!?;])\s+/).map((s) => s.trim()).filter(Boolean)
+
+/** Sorted lowercase word list, so a reordered sentence ("imperfectly done" / "done imperfectly") still matches. */
+const wordKey = (s: string): string =>
+  (s.toLowerCase().match(/[a-zÀ-ɏḀ-ỿ']+/g) ?? []).sort().join(' ')
+
+/** Drops sentences that repeat a sentence of the card meaning word for word. */
+function withoutCardLines(text: string | undefined, cardKeys: Set<string>): string {
+  if (!text) return ''
+  return sentencesOf(text).filter((s) => !cardKeys.has(wordKey(s))).join(' ')
+}
+
+function KarmaVerse({ id, position, ...shloka }: ShlokaCardProps & { id: string; position: number }) {
+  const quote = getQuote(id)
+  if (!quote) return <ShlokaCard {...shloka} />
+  // The card already gives the meaning. The page's own text stays below as commentary,
+  // minus any sentence that repeats the card meaning.
+  const cardKeys = new Set(sentencesOf(quote.meaning.en).map(wordKey))
+  const translation = withoutCardLines(shloka.meaning, cardKeys)
+  const essence = withoutCardLines(shloka.essence, cardKeys)
+  return (
+    <>
+      <QuoteCard
+        quote={quote}
+        locale="en"
+        pageName={PAGE_NAME}
+        moment="karma"
+        position={position}
+        audioSrc={audioFor(quote)}
+      />
+      {(translation || shloka.insight || essence) && (
+        <div className="karma-notes">
+          <p className="karma-notes-label">In context</p>
+          {translation && <p>{translation}</p>}
+          {shloka.insight && <p>{shloka.insight}</p>}
+          {essence && <p className="karma-essence">&ldquo;{essence}&rdquo;</p>}
+        </div>
+      )}
+    </>
+  )
+}
+
+/** "Which line is yours today?" picker, reusing the Krishna quotes hub's question and feelings. */
+function KarmaLineForYou() {
+  const hook = getPage('krishna-quotes-en')?.hook
+  if (!hook) return null
+  const feelings = getHookFeelings(hook.feelingIds)
+  if (!feelings.length) return null
+  const quotes: Record<string, Quote> = {}
+  for (const q of getQuotes(feelings.map((f) => f.quoteId))) quotes[q.id] = q
+  return (
+    <div data-mp-section="line_for_you">
+      <LineForYou
+        feelings={feelings}
+        quotes={quotes}
+        question={hook.question}
+        preset={hook.preset}
+        locale="en"
+        pageName={PAGE_NAME}
+        audio={audioMap(Object.values(quotes))}
+      />
+    </div>
+  )
+}
 
 const schemas = [
   {
@@ -281,7 +368,9 @@ export default function KarmaQuotesPage() {
         </div>
 
         <h2 id="bg-2-47">1. Bhagavad Gita 2.47 — Right to Action, Never to Fruits</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-2-47"
+          position={1}
           verseRef="Bhagavad Gita 2.47"
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
@@ -296,7 +385,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-2-48">2. Bhagavad Gita 2.48 — Evenness of Mind is Yoga</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-2-48"
+          position={2}
           verseRef="Bhagavad Gita 2.48"
           sanskrit="योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥"
           iast="yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya | siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate ||"
@@ -311,7 +402,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-2-50">3. Bhagavad Gita 2.50 — Yoga is Skill in Action</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-2-50"
+          position={3}
           verseRef="Bhagavad Gita 2.50"
           sanskrit="बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते । तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥"
           iast="buddhiyukto jahātīha ubhe sukṛtaduṣkṛte | tasmādyogāya yujyasva yogaḥ karmasu kauśalam ||"
@@ -324,9 +417,12 @@ export default function KarmaQuotesPage() {
         <p>
           <a href="/gita/chapter/2/verse/50" data-mp-location="quote_full_2_50" style={{ color: 'var(--gold-light)' }}>Read the full verse page for 2.50 →</a>
         </p>
+        <KarmaLineForYou />
 
         <h2 id="bg-3-9">4. Bhagavad Gita 3.9 — Action as Sacred Offering</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-3-9"
+          position={4}
           verseRef="Bhagavad Gita 3.9"
           sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
           iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
@@ -341,7 +437,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-3-19">5. Bhagavad Gita 3.19 — Always Act Unattached</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-3-19"
+          position={5}
           verseRef="Bhagavad Gita 3.19"
           sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
           iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
@@ -356,7 +454,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-3-35">6. Bhagavad Gita 3.35 — Your Own Duty, Imperfectly Done</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-3-35"
+          position={6}
           verseRef="Bhagavad Gita 3.35"
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
@@ -371,7 +471,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-4-18">7. Bhagavad Gita 4.18 — Seeing Action in Inaction</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-4-18"
+          position={7}
           verseRef="Bhagavad Gita 4.18"
           sanskrit="कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः । स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ॥"
           iast="karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ | sa buddhimānmanuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt ||"
@@ -386,7 +488,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-4-20">8. Bhagavad Gita 4.20 — Free from Clinging to Fruits</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-4-20"
+          position={8}
           verseRef="Bhagavad Gita 4.20"
           sanskrit="त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥"
           iast="tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto'pi naiva kiñcitkaroti saḥ ||"
@@ -401,7 +505,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-4-37">9. Bhagavad Gita 4.37 — Knowledge Burns All Karma</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-4-37"
+          position={9}
           verseRef="Bhagavad Gita 4.37"
           sanskrit="यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥"
           iast="yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna | jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||"
@@ -416,7 +522,9 @@ export default function KarmaQuotesPage() {
         </p>
 
         <h2 id="bg-5-10">10. Bhagavad Gita 5.10 — Offering Actions to Brahman</h2>
-        <ShlokaCard
+        <KarmaVerse
+          id="bg-5-10"
+          position={10}
           verseRef="Bhagavad Gita 5.10"
           sanskrit="ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥"
           iast="brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ | lipyate na sa pāpena padmapatramivāmbhasā ||"
@@ -434,6 +542,9 @@ export default function KarmaQuotesPage() {
 
 
       <FeedbackWidget pageType="blog" />
+      <div className="content karma-step" style={{ paddingTop: 0, paddingBottom: 0 }}>
+        <NextStep locale="en" pageName={PAGE_NAME} placement="before_faq" />
+      </div>
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
 
@@ -470,7 +581,7 @@ export default function KarmaQuotesPage() {
         <div className="related-title">Read next</div>
         <a href="/blogs/bhagavad-gita-karma-meaning" data-mp-location="read_next_karma_meaning">Karma in the Bhagavad Gita — The Real Meaning →</a>
         <a href="/blogs/nishkama-karma-bhagavad-gita" data-mp-location="read_next_nishkama">Nishkama Karma — Acting Without Attachment →</a>
-        <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" data-mp-location="read_next_2_47_blog">Bhagavad Gita 2.47 — Karmanye Vadhikaraste, Explained →</a>
+        <a href="/gita/chapter/2/verse/47" data-mp-location="read_next_2_47_blog">Bhagavad Gita 2.47, Karmanye Vadhikaraste, word by word →</a>
         <a href="/gita/topic/karma-phala" data-mp-location="read_next_karma_phala_topic">Topic: Karma Phala (Fruit of Action) →</a>
       </div>
       <SiteFooter />

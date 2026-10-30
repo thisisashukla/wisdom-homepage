@@ -1,6 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: { unoptimized: true },
+
+  // /api/quote-card/[id] (share images): load satori and resvg from node_modules at
+  // runtime instead of bundling them, and ship the files the route reads from disk
+  // (resvg wasm, bundled fonts, quote JSON, Gita verse JSON) with the function.
+  experimental: {
+    serverComponentsExternalPackages: ['satori', '@resvg/resvg-wasm'],
+    outputFileTracingIncludes: {
+      '/api/quote-card/**': [
+        './node_modules/@resvg/resvg-wasm/index_bg.wasm',
+        './src/app/api/quote-card/fonts/**/*',
+        './src/content/quotes/*.json',
+        './src/content/gita/verses/*.json',
+      ],
+    },
+  },
   // Consistent no-trailing-slash policy across the site (matches how internal
   // links + sitemap URLs are written).  Prevents 308 redirects on links that
   // accidentally include the trailing slash.
@@ -34,6 +49,13 @@ const nextConfig = {
       { source: '/blog', destination: '/blogs', permanent: true },
       { source: '/blog/:slug', destination: '/blogs/:slug', permanent: true },
       { source: '/support.html', destination: '/support', permanent: true },
+      // The 2.47 essay now lives on the verse page, which carries the shareable
+      // quote card at the top. The old page file stays on disk but is unreachable.
+      {
+        source: '/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste',
+        destination: '/gita/chapter/2/verse/47',
+        statusCode: 301,
+      },
     ]
   },
 

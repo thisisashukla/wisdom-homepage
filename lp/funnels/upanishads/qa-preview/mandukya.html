@@ -1,0 +1,700 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+/* Shared quote card, next step, sheet and toast (src/components/quotes).
+   Imported by QuoteCard, NextStep and NextStepSheet, so a route that renders
+   only a hero card gets only this file. Page layout lives in quotes.css.
+   Calm editorial look: maroon night, diya gold as the only accent, cream text.
+   Mobile first (360 to 412px). Motion: entrance cubic-bezier(0.4,0,0.2,1),
+   feedback cubic-bezier(0.2,0,0,1); 160ms feedback, 500ms entrances, 900ms draws.
+   Only elements created by a user action animate, so everything rendered on the
+   server is visible without JS. Reduced motion: opacity only. */
+
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) {
+  --q-night: #120505;
+  --q-leaf: #1b0908;
+  --q-leaf-2: #210c0a;
+  --q-raise: #2a1210;
+  --q-line: rgba(200, 136, 30, 0.2);
+  --q-line-strong: rgba(200, 136, 30, 0.42);
+  --q-gold: #c8881e;
+  --q-gold-hi: #f2c766;
+  --q-cream: #f5e8cc;
+  --q-cream-2: rgba(245, 232, 204, 0.78);
+  --q-cream-3: rgba(245, 232, 204, 0.62);
+  --q-display: var(--font-playfair), 'Playfair Display', var(--font-noto-devanagari), Georgia, serif;
+  --q-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  --q-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --q-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), 'Noto Sans Devanagari', serif;
+  --q-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --q-fb: cubic-bezier(0.2, 0, 0, 1);
+}
+
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *,
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *::before,
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *::after {
+  box-sizing: border-box;
+}
+
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar) :focus-visible {
+  outline: 2px solid var(--q-gold-hi);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+@keyframes q-rise {
+  from { opacity: 0; transform: translateY(14px) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes q-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes q-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes q-sheet {
+  from { transform: translateY(100%); }
+  to { transform: none; }
+}
+
+/* Icons as CSS masks: one copy in the stylesheet, no per-card SVG. */
+.qi { display: block; width: 18px; height: 18px; flex: 0 0 auto; background-color: currentColor; -webkit-mask: var(--qi) center / contain no-repeat; mask: var(--qi) center / contain no-repeat; }
+.qi-copy { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='8' width='12' height='12' rx='2.5'/%3E%3Cpath d='M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2'/%3E%3C/svg%3E"); }
+.qi-check { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
+.qi-whatsapp { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20l1.3-3.9A8 8 0 1 1 8 18.8L4 20z'/%3E%3Cpath d='M9.2 9.3c.3 1.9 1.6 3.4 3.5 4.1l1-1 1.8.8c-.2 1-1 1.6-2 1.6-2.9-.3-5.2-2.6-5.5-5.5 0-1 .6-1.8 1.6-2l.8 1.8-1.2.2z'/%3E%3C/svg%3E"); }
+.qi-save { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11'/%3E%3Cpath d='M7.5 10.5L12 15l4.5-4.5'/%3E%3Cpath d='M5 19h14'/%3E%3C/svg%3E"); }
+.qi-play { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 5.5v13l10-6.5-10-6.5z'/%3E%3C/svg%3E"); }
+.qi-pause { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 5.5v13M15 5.5v13'/%3E%3C/svg%3E"); }
+.qi-share { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 15V4'/%3E%3Cpath d='M8 8l4-4 4 4'/%3E%3Cpath d='M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6'/%3E%3C/svg%3E"); }
+.qi-close { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E"); }
+
+/* ── Quote card ───────────────────────────────────────────────────────── */
+
+.qc {
+  position: relative;
+  background: var(--q-leaf);
+  border: 1px solid var(--q-line);
+  border-radius: 16px;
+  padding: 22px 20px 4px;
+  color: var(--q-cream);
+  font-family: var(--q-ui);
+  scroll-margin-top: 80px;
+}
+.qc:lang(hi) { font-family: var(--q-deva); }
+:where(.qc) p { margin: 0; }
+.qc:target { border-color: var(--q-line-strong); }
+
+.qc-badge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--q-gold-hi);
+}
+.qc-badge-n { color: var(--q-cream-3); }
+
+.qc-sa {
+  font-family: var(--q-sa);
+  font-weight: 400;
+  font-size: clamp(23px, 6.3vw, 28px);
+  line-height: 1.74;
+  color: var(--q-gold-hi);
+  overflow-wrap: break-word;
+}
+.qc-pada { display: block; }
+/* Balanced lines, so no word like कदाचन sits alone; pretty where balance is missing. */
+.qc-sa,
+.qc-iast,
+.qc-meaning {
+  text-wrap: pretty;
+  text-wrap: balance;
+}
+.qc-iast {
+  margin-top: 8px;
+  font-family: var(--q-sa);
+  font-style: italic;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--q-cream-3);
+  overflow-wrap: break-word;
+}
+.qc-meaning {
+  margin-top: 16px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--q-cream);
+}
+.qc-meaning:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; line-height: 1.75; }
+
+.qc-source { margin-top: 14px; }
+.qc-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 4px 12px;
+  border: 1px solid var(--q-line);
+  border-radius: 999px;
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  color: var(--q-gold);
+  text-decoration: none;
+}
+a.qc-chip::after { content: ''; position: absolute; inset: -8px -4px; }
+a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
+
+.qc-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
+  margin: 18px -10px 0;
+  padding-top: 4px;
+  border-top: 1px solid var(--q-line);
+}
+.qc-act {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  min-height: 58px;
+  padding: 6px 4px;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  color: var(--q-cream-2);
+  font: inherit;
+  font-size: 12.5px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 160ms var(--q-fb), background-color 160ms var(--q-fb);
+}
+.qc-act:hover { color: var(--q-gold-hi); }
+.qc-act:active { background: rgba(200, 136, 30, 0.1); }
+.qc-act[data-on],
+.qc-act[aria-expanded='true'] { color: var(--q-gold-hi); }
+.qc-ico { position: relative; width: 18px; height: 18px; display: block; }
+.qc-ico > .qi { position: absolute; inset: 0; transition: opacity 160ms var(--q-fb), transform 160ms var(--q-fb); }
+.qc-ico > .qi-check { opacity: 0; transform: scale(0.8); }
+.qc-copy[data-done] { color: var(--q-gold-hi); }
+.qc-copy[data-done] .qi-copy { opacity: 0; transform: scale(0.8); }
+.qc-copy[data-done] .qi-check { opacity: 1; transform: none; }
+
+.qc-save { position: relative; }
+.qc-menu {
+  position: absolute;
+  z-index: 30;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  width: 208px;
+  margin-left: -104px;
+  padding: 6px;
+  background: var(--q-raise);
+  border: 1px solid var(--q-line-strong);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  animation: q-rise 160ms var(--q-fb) backwards;
+}
+.qc-menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 52px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--q-cream);
+}
+.qc-menu a:hover { background: rgba(200, 136, 30, 0.12); }
+.qc-menu strong { font-size: 15px; font-weight: 500; }
+.qc-menu span { font-size: 12.5px; color: var(--q-cream-3); }
+
+.qc-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+}
+.qc-foot-end { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; }
+.qc-more,
+.qc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 4px;
+  background: none;
+  border: 0;
+  color: var(--q-cream-2);
+  font: inherit;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: var(--q-line-strong);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.qc-link { text-decoration: none; }
+.qc-more:hover,
+.qc-link:hover { color: var(--q-gold-hi); }
+.qc-another { color: var(--q-gold-hi); text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+
+.qc-more-body {
+  border-top: 1px solid var(--q-line);
+  padding: 14px 0 18px;
+  display: grid;
+  gap: 16px;
+  animation: q-rise 500ms var(--q-in) backwards;
+}
+.qc-label { font-size: 13px; font-weight: 500; color: var(--q-cream-3); margin-bottom: 6px; }
+.qc-context p:not(.qc-label) { font-size: 15.5px; line-height: 1.65; color: var(--q-cream-2); }
+.qc-foryou dl { margin: 0; display: grid; gap: 12px; }
+.qc-foryou dt { font-size: 13.5px; font-weight: 500; color: var(--q-gold); }
+.qc-foryou dd { margin: 2px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--q-cream-2); }
+
+.qc-toast {
+  font-family: var(--q-ui);
+  position: fixed;
+  z-index: 1100;
+  left: 50%;
+  bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  max-width: calc(100vw - 32px);
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--q-cream);
+  color: var(--q-night);
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 8px);
+  transition: opacity 160ms var(--q-fb), transform 160ms var(--q-fb);
+}
+.qc-toast:empty { visibility: hidden; }
+.qc-toast[data-show] { opacity: 1; transform: translate(-50%, 0); }
+
+/* Hero: verse page top. */
+.qc-hero { padding: 28px 22px 6px; border-radius: 18px; }
+.qc-hero .qc-sa { font-size: clamp(26px, 7.6vw, 38px); line-height: 1.7; }
+.qc-hero .qc-iast { font-size: 15.5px; }
+.qc-hero .qc-meaning { font-size: 18.5px; }
+.qc-hero .qc-meaning:lang(hi) { font-size: 19px; }
+
+/* Compact: under a line Krishna never said. */
+.qc-compact { padding: 18px 16px 6px; }
+.qc-compact .qc-sa { font-size: clamp(20px, 5.4vw, 23px); }
+.qc-compact .qc-meaning { font-size: 16px; }
+.qc-compact .qc-actions { margin-top: 14px; }
+
+/* ── Next step ────────────────────────────────────────────────────────── */
+
+.qns { display: grid; gap: 14px; justify-items: start; }
+:where(.qns) p { margin: 0; }
+.qns-line {
+  font-family: var(--q-display);
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--q-cream);
+  max-width: 28em;
+}
+.qns-line:lang(hi) { font-family: var(--q-deva); font-size: 18px; line-height: 1.65; }
+.qns-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--q-gold);
+  color: #1a0606;
+  font-family: var(--q-ui);
+  font-size: 15.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 160ms var(--q-fb), transform 160ms var(--q-fb);
+}
+.qns-btn:lang(hi) { font-family: var(--q-deva); }
+.qns-btn:hover { background: #d99a32; }
+.qns-btn:active { transform: scale(0.98); }
+.qns-btn:focus-visible { outline: 2px solid var(--q-cream); outline-offset: 3px; }
+
+/* ── Sheet ────────────────────────────────────────────────────────────── */
+
+.qsheet-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: var(--q-ui);
+  color: var(--q-cream);
+}
+.qsheet-wrap:lang(hi) { font-family: var(--q-deva); }
+.qsheet-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 2, 2, 0.66);
+  animation: q-fade 260ms var(--q-in) backwards;
+}
+.qsheet {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--q-leaf-2);
+  border: 1px solid var(--q-line-strong);
+  border-bottom: 0;
+  border-radius: 20px 20px 0 0;
+  padding: 26px 22px calc(14px + env(safe-area-inset-bottom, 0px));
+  animation: q-sheet 260ms var(--q-in) backwards;
+}
+:where(.qsheet) p { margin: 0; }
+.qsheet-title {
+  font-family: var(--q-display);
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.3;
+  padding-right: 44px;
+  margin-bottom: 14px;
+}
+.qsheet-title:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.5; }
+.qsheet-x,
+.qsheet-later {
+  background: none;
+  border: 0;
+  color: var(--q-cream-2);
+  font: inherit;
+  cursor: pointer;
+}
+.qsheet-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+}
+.qsheet-x:hover,
+.qsheet-later:hover { color: var(--q-cream); }
+.qsheet-later { display: block; min-height: 44px; margin-top: 8px; padding: 0 4px; font-size: 14.5px; }
+@media (min-width: 700px) {
+  .qsheet { border-radius: 20px; border-bottom: 1px solid var(--q-line-strong); margin-bottom: 28px; }
+}
+
+
+@media (min-width: 720px) {
+  .qc { padding: 28px 30px 6px; }
+}
+
+/* ── Reduced motion: opacity only, no movement ────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .qc-menu,
+  .qc-more-body,
+  .qsheet {
+    animation-name: q-fade;
+  }
+  .qc-toast,
+  .qc-toast[data-show] { transform: translate(-50%, 0); }
+  .qc-ico > .qi { transform: none !important; }
+  .qns-btn:active { transform: none; }
+}
+
+@media (forced-colors: active) {
+  .qi { background-color: CanvasText; forced-color-adjust: none; }
+}
+/* "Aranya" (forest dawn): the Upanishads funnel palette and layout.
+   Scoped under .fx-upanishads. Light by default; pre-dawn dusk in dark mode.
+   Tokens from lp/funnels/upanishads/RESEARCH.md section 5. --ash-ink and
+   --sal-ink are darker text-weight versions of ash and sal so small text
+   passes WCAG AA on bark; the original tones are kept for rules and threads.
+   Motion: entrance cubic-bezier(0.4,0,0.2,1) 500ms, thread draw 900ms,
+   feedback cubic-bezier(0.2,0,0,1) 160ms. Reduced motion: opacity only. */
+
+.fx-upanishads {
+  --bark: #f3ebdd;
+  --ink: #1f2a2e;
+  --dusk: #2e3a59;
+  --lamp: #c8862a;
+  --sal: #5e7a5a;
+  --ash: #8c877d;
+  --ash-ink: #625d55;
+  --sal-ink: #44603f;
+  --lamp-ink: #8a5a12;
+  --leaf: #faf5ec;
+  --rule: rgba(31, 42, 46, 0.14);
+  --rule-strong: rgba(31, 42, 46, 0.28);
+  --wisdom-gold: #f5c96a;
+  --fx-serif: var(--fx-spectral), 'Spectral', Georgia, serif;
+  --fx-ui: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  --fx-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
+  --fx-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --fx-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --fx-fb: cubic-bezier(0.2, 0, 0, 1);
+
+  background: var(--bark);
+  color: var(--ink);
+  font-family: var(--fx-ui);
+  font-size: 17px;
+  line-height: 1.65;
+  padding: 18px 0 72px;
+  min-height: 60vh;
+}
+.fx-upanishads:lang(hi) { font-family: var(--fx-deva); }
+.fx-upanishads *,
+.fx-upanishads *::before,
+.fx-upanishads *::after { box-sizing: border-box; }
+
+@media (prefers-color-scheme: dark) {
+  .fx-upanishads {
+    --bark: #2e3a59;
+    --ink: #f3ebdd;
+    --ash-ink: #c9c2b5;
+    --sal-ink: #a9c6a5;
+    --lamp-ink: #e8b25e;
+    --leaf: #36446a;
+    --rule: rgba(243, 235, 221, 0.16);
+    --rule-strong: rgba(243, 235, 221, 0.32);
+    --sal: #8fb08a;
+  }
+}
+
+.fx-wrap { max-width: 42rem; margin: 0 auto; padding: 0 20px; }
+
+.fx-upanishads a { color: var(--sal-ink); text-decoration: underline; text-decoration-color: var(--sal); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.fx-upanishads a:hover { color: var(--ink); }
+.fx-upanishads :focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; border-radius: 4px; }
+
+.fx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ── Crumbs and toolbar ───────────────────────────────────────────── */
+.fx-crumbs ol { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 0; font-size: 14px; color: var(--ash-ink); }
+.fx-crumbs li + li::before { content: '/'; margin: 0 8px; color: var(--ash); }
+.fx-crumbs a { color: var(--ash-ink); text-decoration-color: var(--rule-strong); display: inline-block; padding: 10px 0; }
+.fx-crumbs span { display: inline-block; padding: 10px 0; }
+.fx-toolbar { display: flex; justify-content: flex-end; margin: -6px 0 8px; }
+
+.fx-toggle { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 3px; gap: 2px; }
+.fx-toggle button {
+  min-height: 40px; min-width: 44px; padding: 0 14px; border: 0; border-radius: 999px; background: none;
+  color: var(--ash-ink); font: 500 14px/1 var(--fx-ui); cursor: pointer;
+  transition: background-color 160ms var(--fx-fb), color 160ms var(--fx-fb);
+}
+.fx-toggle button span { font-family: var(--fx-sa); font-size: 15px; font-weight: 400; }
+.fx-toggle button[aria-pressed='true'] { background: var(--ink); color: var(--bark); }
+
+/* Script switch: one script at a time. */
+.fx-upanishads .s-iast { display: none; }
+.fx-upanishads[data-script='iast'] .s-iast { display: block; }
+.fx-upanishads[data-script='iast'] .s-deva { display: none; }
+.fx-upanishads:not([data-script='iast']) .qc-iast { display: none; }
+.fx-upanishads[data-script='iast'] .qc-sa { display: none; }
+.fx-upanishads[data-script='iast'] .qc-iast { font-size: 19px; font-style: normal; color: var(--ink); margin-top: 0; }
+
+/* ── Type ─────────────────────────────────────────────────────────── */
+.fx-upanishads h1,
+.fx-upanishads h2,
+.fx-upanishads h3 { font-family: var(--fx-serif); font-weight: 500; color: var(--ink); margin: 0; text-wrap: balance; }
+.fx-upanishads:lang(hi) h1,
+.fx-upanishads:lang(hi) h2,
+.fx-upanishads:lang(hi) h3 { font-family: var(--fx-deva); font-weight: 500; }
+.fx-upanishads h1 { font-size: clamp(31px, 7.4vw, 46px); line-height: 1.12; letter-spacing: -0.012em; }
+.fx-upanishads h2 { font-size: 25px; line-height: 1.25; margin-bottom: 14px; }
+.fx-upanishads h3 { font-size: 20px; line-height: 1.3; }
+.fx-upanishads p { margin: 0 0 14px; }
+.fx-ref { font-family: var(--fx-serif); font-style: italic; font-size: 16px; color: var(--ash-ink); margin: 0 0 8px; }
+.fx-lede { font-family: var(--fx-serif); font-size: 21px; line-height: 1.5; color: var(--ink); max-width: 34em; }
+.fx-quick { margin: 18px 0 0; font-size: 17.5px; line-height: 1.7; max-width: 36em; }
+
+.fx-sec { margin-top: 56px; }
+.fx-sec > p,
+.fx-sec li { max-width: 36em; }
+
+/* ── The line (hero) ──────────────────────────────────────────────── */
+.fx-line { margin: 36px 0 0; padding: 30px 0 26px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); position: relative; }
+.fx-line::before { content: ''; position: absolute; left: 0; top: -1px; width: 64px; height: 2px; background: var(--lamp); transform-origin: left; }
+html.motion .fx-line::before { animation: fx-draw 900ms var(--fx-in) 200ms backwards; }
+.fx-line .fx-en-line { font-family: var(--fx-serif); font-size: 22px; line-height: 1.5; margin: 18px 0 0; max-width: 30em; }
+
+.fx-sa p { margin: 0; }
+.fx-sa span { display: block; }
+.fx-sa .s-deva { font-family: var(--fx-sa); color: var(--ink); overflow-wrap: break-word; text-wrap: balance; }
+.fx-sa .s-iast { font-family: var(--fx-sa); color: var(--ink); overflow-wrap: break-word; }
+.fx-sa-hero .s-deva { font-size: clamp(27px, 7.6vw, 42px); line-height: 1.72; }
+.fx-sa-hero .s-iast { font-size: clamp(20px, 5.4vw, 27px); line-height: 1.55; font-style: italic; }
+.fx-sa-verse .s-deva { font-size: clamp(21px, 5.6vw, 25px); line-height: 1.78; }
+.fx-sa-verse .s-iast { font-size: 17.5px; line-height: 1.6; font-style: italic; }
+.fx-sa-small .s-deva { font-size: 20px; line-height: 1.75; }
+.fx-sa-small .s-iast { font-size: 16px; line-height: 1.6; font-style: italic; }
+
+/* ── Verses in a complete text ────────────────────────────────────── */
+.fx-v { position: relative; padding: 18px 0 22px; scroll-margin-top: 80px; }
+.fx-v + .fx-v { border-top: 1px solid var(--rule); }
+.fx-v-ref { display: flex; gap: 12px; align-items: baseline; margin: 0 0 8px; font-family: var(--fx-serif); font-size: 15px; color: var(--ash-ink); }
+.fx-v-ref a { color: var(--ash-ink); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
+.fx-v-ref a:hover { text-decoration: underline; }
+.fx-v-who { font-style: italic; }
+.fx-v-en { font-family: var(--fx-serif); font-size: 19px; line-height: 1.6; margin: 12px 0 0; max-width: 34em; }
+.fx-v:target { background: linear-gradient(90deg, rgba(200, 134, 42, 0.1), transparent 70%); }
+.fx-v:target::before { content: ''; position: absolute; left: -14px; top: 18px; bottom: 22px; width: 2px; background: var(--lamp); }
+.fx-v-note { font-size: 15.5px; color: var(--ash-ink); margin: 10px 0 0; max-width: 34em; }
+@media (min-width: 760px) {
+  .fx-v { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0 18px; }
+  .fx-v-ref { flex-direction: column; gap: 2px; margin: 6px 0 0; }
+}
+
+.fx-part { margin-top: 48px; }
+.fx-part > h2 { padding-bottom: 10px; border-bottom: 1px solid var(--rule-strong); }
+
+/* ── Panels and lists ─────────────────────────────────────────────── */
+.fx-scene { font-family: var(--fx-serif); font-size: 19px; line-height: 1.6; }
+.fx-who { font-size: 15px; color: var(--ash-ink); margin-bottom: 8px; }
+.fx-acharya h3 { font-size: 17px; font-family: var(--fx-ui); font-weight: 600; margin: 18px 0 6px; }
+.fx-upanishads:lang(hi) .fx-acharya h3 { font-family: var(--fx-deva); }
+
+.fx-forms { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 12px; }
+.fx-forms li { display: grid; gap: 2px; padding: 14px 16px; background: var(--leaf); border: 1px solid var(--rule); border-radius: 10px; }
+.fx-forms .f-sa { font-family: var(--fx-sa); font-size: 26px; line-height: 1.6; }
+.fx-forms .f-iast { font-family: var(--fx-sa); font-style: italic; font-size: 17px; }
+.fx-forms .f-label { font-size: 14px; color: var(--ash-ink); }
+
+.fx-print { margin: 20px 0 0; display: grid; gap: 14px; }
+.fx-print-img { display: block; max-width: 320px; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--leaf); }
+.fx-print img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+.fx-print figcaption p { margin: 0 0 8px; font-size: 15.5px; color: var(--ash-ink); }
+.fx-print-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.fx-print-links a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
+
+.fx-bridge { position: relative; padding: 4px 0 4px 16px; border-left: 3px solid var(--wisdom-gold); max-width: 36em; }
+.fx-upanishads .fx-bridge a { color: var(--ink); font-weight: 600; text-decoration-color: var(--wisdom-gold); text-decoration-thickness: 2px; }
+.fx-bridge-lead { color: var(--ash-ink); }
+
+.fx-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+.fx-links a { display: flex; flex-direction: column; padding: 12px 0; min-height: 44px; text-decoration: none; color: var(--ink); border-bottom: 1px solid var(--rule); }
+.fx-links a strong { font-family: var(--fx-serif); font-weight: 500; font-size: 19px; color: var(--sal-ink); }
+.fx-links a span { font-size: 15.5px; color: var(--ash-ink); }
+.fx-links a:hover strong { text-decoration: underline; text-decoration-color: var(--sal); text-underline-offset: 4px; }
+.fx-links .fx-links-sa { font-family: var(--fx-sa); font-size: 19px; color: var(--ink); }
+
+.fx-table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin: 8px 0 0; }
+.fx-table th,
+.fx-table td { text-align: left; padding: 10px 10px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.fx-table th { font-weight: 600; font-size: 14px; color: var(--ash-ink); }
+.fx-table-wrap { overflow-x: auto; }
+
+.fx-faq dl { margin: 0; display: grid; gap: 18px; }
+.fx-faq dt { font-weight: 600; margin-bottom: 4px; }
+.fx-faq dd { margin: 0; max-width: 36em; }
+.fx-sources p { font-size: 15px; color: var(--ash-ink); }
+
+.fx-books { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+.fx-books li { padding-left: 14px; border-left: 2px solid var(--rule-strong); max-width: 36em; }
+.fx-books strong { font-family: var(--fx-serif); font-weight: 500; font-size: 19px; display: block; }
+.fx-books em { color: var(--ash-ink); font-style: normal; font-size: 15px; display: block; margin-bottom: 4px; }
+
+/* Plan days */
+.fx-plan { display: grid; gap: 10px; margin-top: 8px; }
+.fx-plan details { border: 1px solid var(--rule); border-radius: 12px; background: var(--leaf); }
+.fx-plan summary { list-style: none; cursor: pointer; display: flex; gap: 14px; align-items: baseline; padding: 14px 16px; min-height: 52px; }
+.fx-plan summary::-webkit-details-marker { display: none; }
+.fx-plan .d-n { font-family: var(--fx-serif); font-size: 15px; color: var(--ash-ink); min-width: 3.2em; }
+.fx-plan .d-t { font-family: var(--fx-serif); font-size: 20px; }
+.fx-plan details[open] summary { border-bottom: 1px solid var(--rule); }
+.fx-plan .d-body { padding: 16px; }
+.fx-plan .d-sit { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--rule-strong); }
+
+/* QuoteCard and NextStep in Aranya colours */
+.fx-upanishads :is(.qc, .qns, .qsheet-wrap) {
+  --q-night: #f3ebdd;
+  --q-leaf: var(--leaf);
+  --q-leaf-2: var(--leaf);
+  --q-raise: var(--leaf);
+  --q-line: var(--rule);
+  --q-line-strong: var(--rule-strong);
+  --q-gold: var(--lamp-ink);
+  --q-gold-hi: var(--ink);
+  --q-cream: var(--ink);
+  --q-cream-2: var(--ink);
+  --q-cream-3: var(--ash-ink);
+  --q-display: var(--fx-serif);
+}
+.fx-upanishads .qc { margin-top: 18px; }
+.fx-upanishads .qc-sa { font-size: clamp(22px, 6vw, 27px); }
+.fx-upanishads .qns-btn { background: var(--ink); color: var(--bark); }
+.fx-upanishads .qns-btn:hover { background: var(--dusk); }
+.fx-next { padding: 26px 22px; background: var(--leaf); border: 1px solid var(--rule); border-radius: 14px; }
+.fx-next h2 { font-size: 21px; }
+@media (prefers-color-scheme: dark) {
+  .fx-upanishads .qns-btn { background: var(--lamp); color: #1f2a2e; }
+  .fx-upanishads .qsheet-backdrop { background: rgba(10, 14, 24, 0.66); }
+}
+
+/* ── Sit closer ───────────────────────────────────────────────────── */
+.sc { margin-top: 12px; }
+.sc-ex { margin-top: 40px; }
+.fx-upanishads .sc-title { margin-bottom: 6px; }
+.sc-cue { font-family: var(--fx-serif); font-style: italic; color: var(--ash-ink); font-size: 17px; }
+.sc-ask { position: relative; }
+.sc-answer { position: relative; margin-left: 6px; padding-left: 20px; }
+.sc-answer::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--sal); transform-origin: top; }
+.sc-answer::after { content: ''; position: absolute; left: -3px; top: -4px; width: 7px; height: 7px; border-radius: 50%; background: var(--sal); }
+.sc-on .sc-ex[data-new] .sc-answer { animation: sc-rise 500ms var(--fx-in) backwards; }
+.sc-on .sc-ex[data-new] .sc-answer::before { animation: fx-draw-y 900ms var(--fx-in) backwards; }
+.sc-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 18px 0 0 6px; padding-left: 20px; border-left: 1px dashed var(--sal); }
+.sc-btn {
+  min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid var(--sal-ink); background: var(--bark);
+  color: var(--ink); font: 500 16px/1 var(--fx-serif); cursor: pointer;
+  transition: background-color 160ms var(--fx-fb), transform 160ms var(--fx-fb);
+}
+.sc-btn:hover { background: var(--leaf); }
+.sc-btn:active { transform: scale(0.98); }
+.sc-all { min-height: 44px; border: 0; background: none; padding: 0; color: var(--ash-ink); font: 15px var(--fx-ui); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--rule-strong); cursor: pointer; }
+.sc-progress { font-size: 14.5px; color: var(--ash-ink); margin: 0; }
+.sc-done { margin-top: 28px; }
+
+/* ── Neti, neti ───────────────────────────────────────────────────── */
+.neti { margin-top: 18px; padding: 22px 20px; border: 1px solid var(--rule); border-radius: 14px; background: var(--leaf); }
+.neti-list { list-style: none; padding: 0; margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 10px 18px; }
+.neti-list li { display: grid; transition: opacity 500ms var(--fx-in); }
+.neti-list li[data-gone] { opacity: 0.12; }
+.neti-sa { font-family: var(--fx-sa); font-size: 20px; line-height: 1.5; }
+.neti-sa.s-iast { font-style: italic; font-size: 17px; }
+.neti-en { font-size: 13.5px; color: var(--ash-ink); }
+.neti-rest { display: grid; margin: 0 0 16px; }
+.neti-rest .s-deva,
+.neti-rest .s-iast { font-family: var(--fx-sa); font-size: 28px; line-height: 1.5; }
+.neti-rest .s-iast { font-style: italic; font-size: 23px; }
+.neti[data-done] .neti-rest .s-deva,
+.neti[data-done] .neti-rest .s-iast { color: var(--lamp-ink); }
+.neti-cta { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+
+@keyframes fx-draw { from { transform: scaleX(0); } to { transform: none; } }
+@keyframes fx-draw-y { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes sc-rise { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes sc-fade { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-on .sc-ex[data-new] .sc-answer { animation-name: sc-fade; }
+  .sc-on .sc-ex[data-new] .sc-answer::before,
+  html.motion .fx-line::before { animation: none; }
+  .sc-btn:active { transform: none; }
+}
+
+@media print {
+  .fx-toolbar, .fx-next, .sc-cta, .neti-cta, .fx-crumbs { display: none; }
+  .fx-upanishads { background: #fff; color: #000; }
+}
+.sc-answer:focus { outline: none; }
+body{margin:0} .font-var{--fx-spectral:"Spectral";--q-tiro:"Tiro Devanagari Sanskrit"}</style></head><body>
+<div class="fx-upanishads font-var font-var" data-script="deva" lang="en"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wisdomquotes.in/"},{"@type":"ListItem","position":2,"name":"Upanishads","item":"https://wisdomquotes.in/upanishads"},{"@type":"ListItem","position":3,"name":"Mandukya","item":"https://wisdomquotes.in/upanishads/mandukya"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Mandukya Upanishad: Full Text in Sanskrit and English","description":"All 12 verses of the Mandukya Upanishad: Om, waking, dream, deep sleep and turiya, the fourth. Sanskrit, plain English, and Shankara’s reading.","inLanguage":"en","mainEntityOfPage":"https://wisdomquotes.in/upanishads/mandukya","datePublished":"2026-10-30","dateModified":"2026-10-30","author":{"@type":"Person","name":"Ankur Shukla","url":"https://wisdomquotes.in/about"},"publisher":{"@type":"Organization","name":"Wisdom","logo":{"@type":"ImageObject","url":"https://wisdomquotes.in/assets/new-light-logo.webp"}},"citation":"Mandukya Upanishad (Atharva Veda); Gaudapada’s Karika and Shankara’s commentary.","about":"Mandukya Upanishad"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many verses are in the Mandukya Upanishad?","acceptedAnswer":{"@type":"Answer","text":"Twelve, which makes it the shortest of the principal Upanishads. It belongs to the Atharva Veda."}},{"@type":"Question","name":"What is turiya?","acceptedAnswer":{"@type":"Answer","text":"\"The fourth\": the Self described in verse 7, apart from waking, dream and deep sleep, and present through all three. The verse calls it peace, the good, one without a second."}},{"@type":"Question","name":"What does the Mandukya say about Om?","acceptedAnswer":{"@type":"Answer","text":"Its three sounds, a, u and m, stand for waking, dream and deep sleep, and the silence after them stands for the fourth (verses 8 to 12)."}}]}</script><div class="fx-wrap"><nav class="fx-crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/upanishads">Upanishads</a></li><li><span aria-current="page">Mandukya</span></li></ol></nav><div class="fx-toolbar"><div class="fx-toggle" role="group" aria-label="Show the Sanskrit in"><button type="button" aria-pressed="true"><span lang="sa">देवनागरी</span></button><button type="button" aria-pressed="false">IAST</button></div></div><header><p class="fx-ref">Atharva Veda</p><h1>The Mandukya Upanishad, all twelve verses</h1><p id="quick-answer" class="fx-quick">The Mandukya Upanishad is twelve verses long, from the Atharva Veda. It says all of this is Om, that &quot;this Self is Brahman&quot; (verse 2), and maps the Self through waking, dream and deep sleep to a fourth, turiya, which verse 7 describes by taking every description away.</p></header><section class="fx-part" aria-labelledby="text"><h2 id="text">The text</h2><div><div class="fx-v" id="v1"><p class="fx-v-ref"><a href="#v1" aria-label="Mandukya 1">1</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>ॐ इत्येतदक्षरमिदं सर्वं तस्योपव्याख्यानं</span><span>भूतं भवद् भविष्यदिति सर्वमोङ्कार एव</span><span>यच्चान्यत् त्रिकालातीतं तदप्योङ्कार एव ॥</span></p><p class="s-iast" lang="sa-Latn"><span>oṃ ityetadakṣaramidaṃ sarvaṃ tasyopavyākhyānaṃ</span><span>bhūtaṃ bhavad bhaviṣyaditi sarvamoṅkāra eva</span><span>yaccānyat trikālātītaṃ tadapyoṅkāra eva ||</span></p></div><p class="fx-v-en">Om. This syllable is all of this. Here is its explanation. What has been, what is, and what will be: all of it is Om. Whatever else lies beyond the three times, that too is Om.</p></div></div></div><div><div class="fx-v" id="v2"><p class="fx-v-ref"><a href="#v2" aria-label="Mandukya 2">2</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>सर्वं ह्येतद् ब्रह्मायमात्मा ब्रह्म सोऽयमात्मा चतुष्पात् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>sarvaṃ hyetad brahmāyamātmā brahma so&#x27;yamātmā catuṣpāt ||</span></p></div><p class="fx-v-en">All of this is Brahman. This Self is Brahman. This Self has four quarters.</p><div class="fx-v-note">Ayam atma brahma, &quot;this Self is Brahman&quot;, is one of the four<!-- --> <a href="/upanishads/mahavakyas" data-mp-location="mandukya_v2_mahavakyas">mahavakyas</a>.</div></div></div></div><div><div class="fx-v" id="v3"><p class="fx-v-ref"><a href="#v3" aria-label="Mandukya 3">3</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>जागरितस्थानो बहिष्प्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः</span><span>स्थूलभुग्वैश्वानरः प्रथमः पादः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>jāgaritasthāno bahiṣprajñaḥ saptāṅga ekonaviṃśatimukhaḥ</span><span>sthūlabhugvaiśvānaraḥ prathamaḥ pādaḥ ||</span></p></div><p class="fx-v-en">The first quarter is Vaishvanara. Its place is waking. It knows what is outside. It has seven limbs and nineteen mouths, and it takes in the solid world.</p><div class="fx-v-note">Shankara lists the nineteen mouths as the five senses, the five organs of action, the five breaths, and mind, intellect, ego and memory. The seven limbs are the cosmic body described in the Chandogya (5.18.2).</div></div></div></div><div><div class="fx-v" id="v4"><p class="fx-v-ref"><a href="#v4" aria-label="Mandukya 4">4</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स्वप्नस्थानोऽन्तःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः</span><span>प्रविविक्तभुक्तैजसो द्वितीयः पादः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>svapnasthāno&#x27;ntaḥprajñaḥ saptāṅga ekonaviṃśatimukhaḥ</span><span>praviviktabhuktaijaso dvitīyaḥ pādaḥ ||</span></p></div><p class="fx-v-en">The second quarter is Taijasa. Its place is dream. It knows what is inside. It has seven limbs and nineteen mouths, and it takes in the subtle world.</p></div></div></div><div><div class="fx-v" id="v5"><p class="fx-v-ref"><a href="#v5" aria-label="Mandukya 5">5</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यत्र सुप्तो न कञ्चन कामं कामयते न कञ्चन स्वप्नं</span><span>पश्यति तत् सुषुप्तम् ।</span><span>सुषुप्तस्थान एकीभूतः प्रज्ञानघन</span><span>एवानन्दमयो ह्यानन्दभुक् चेतोमुखः प्राज्ञस्तृतीयः पादः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yatra supto na kañcana kāmaṃ kāmayate na kañcana svapnaṃ</span><span>paśyati tat suṣuptam |</span><span>suṣuptasthāna ekībhūtaḥ prajñānaghana</span><span>evānandamayo hyānandabhuk cetomukhaḥ prājñastṛtīyaḥ pādaḥ ||</span></p></div><p class="fx-v-en">When a sleeper wants nothing and sees no dream, that is deep sleep. The third quarter is Prajna. Its place is deep sleep. In it everything has become one, a single mass of knowing. It is made of bliss and takes in bliss, and awareness is its door.</p><div class="fx-v-note">Prajna is the self in deep sleep: nothing is divided there, and it wakes up saying, &quot;I slept well, I knew nothing.&quot;</div></div></div></div><div><div class="fx-v" id="v6"><p class="fx-v-ref"><a href="#v6" aria-label="Mandukya 6">6</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एष सर्वेश्वरः एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य</span><span>प्रभवाप्ययौ हि भूतानाम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>eṣa sarveśvaraḥ eṣa sarvajña eṣo&#x27;ntaryāmyeṣa yoniḥ sarvasya</span><span>prabhavāpyayau hi bhūtānām ||</span></p></div><p class="fx-v-en">This is the lord of all. This knows all. This is the ruler within. This is where everything comes from, for beings arise from it and return to it.</p></div></div></div><div><div class="fx-v" id="v7"><p class="fx-v-ref"><a href="#v7" aria-label="Mandukya 7">7</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नान्तःप्रज्ञं न बहिष्प्रज्ञं नोभयतःप्रज्ञं न प्रज्ञानघनं</span><span>न प्रज्ञं नाप्रज्ञम् ।</span><span>अदृष्टमव्यवहार्यमग्राह्यमलक्षणं</span><span>अचिन्त्यमव्यपदेश्यमेकात्मप्रत्ययसारं प्रपञ्चोपशमं</span><span>शान्तं शिवमद्वैतं चतुर्थं मन्यन्ते स आत्मा स विज्ञेयः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>nāntaḥprajñaṃ na bahiṣprajñaṃ nobhayataḥprajñaṃ na prajñānaghanaṃ</span><span>na prajñaṃ nāprajñam |</span><span>adṛṣṭamavyavahāryamagrāhyamalakṣaṇaṃ</span><span>acintyamavyapadeśyamekātmapratyayasāraṃ prapañcopaśamaṃ</span><span>śāntaṃ śivamadvaitaṃ caturthaṃ manyante sa ātmā sa vijñeyaḥ ||</span></p></div><p class="fx-v-en">Not turned inward, not turned outward, not both ways at once, not a mass of knowing, not knowing, not unknowing. It cannot be seen, used, grasped or marked. It cannot be thought or named. Its substance is the one steady sense of self. In it the world falls quiet. It is peace, it is good, it is one without a second. This they call the fourth. That is the Self. That is what is to be known.</p><div class="fx-v-note">Turiya, &quot;the fourth&quot;, is described only by taking away. Shankara: it is the same Self present through waking, dream and sleep, never a fourth place one travels to. Try setting the descriptions aside one at a time below.</div></div></div><div id="neti-neti" data-mp-section="neti"><h3>Neti, neti: not this, not this</h3><p>Each tap sets one description aside. What is left is what the verse calls the fourth.</p><div class="neti"><ul class="neti-list"><li><span class="neti-sa s-deva" lang="sa">नान्तःप्रज्ञम्</span><span class="neti-sa s-iast" lang="sa-Latn">nāntaḥprajñam</span><span class="neti-en">not turned inward</span></li><li><span class="neti-sa s-deva" lang="sa">न बहिष्प्रज्ञम्</span><span class="neti-sa s-iast" lang="sa-Latn">na bahiṣprajñam</span><span class="neti-en">not turned outward</span></li><li><span class="neti-sa s-deva" lang="sa">नोभयतःप्रज्ञम्</span><span class="neti-sa s-iast" lang="sa-Latn">nobhayataḥprajñam</span><span class="neti-en">not both ways</span></li><li><span class="neti-sa s-deva" lang="sa">न प्रज्ञानघनम्</span><span class="neti-sa s-iast" lang="sa-Latn">na prajñānaghanam</span><span class="neti-en">not a mass of knowing</span></li><li><span class="neti-sa s-deva" lang="sa">न प्रज्ञम्</span><span class="neti-sa s-iast" lang="sa-Latn">na prajñam</span><span class="neti-en">not knowing</span></li><li><span class="neti-sa s-deva" lang="sa">नाप्रज्ञम्</span><span class="neti-sa s-iast" lang="sa-Latn">nāprajñam</span><span class="neti-en">not unknowing</span></li><li><span class="neti-sa s-deva" lang="sa">अदृष्टम्</span><span class="neti-sa s-iast" lang="sa-Latn">adṛṣṭam</span><span class="neti-en">unseen</span></li><li><span class="neti-sa s-deva" lang="sa">अव्यवहार्यम्</span><span class="neti-sa s-iast" lang="sa-Latn">avyavahāryam</span><span class="neti-en">not to be used</span></li><li><span class="neti-sa s-deva" lang="sa">अग्राह्यम्</span><span class="neti-sa s-iast" lang="sa-Latn">agrāhyam</span><span class="neti-en">not to be grasped</span></li><li><span class="neti-sa s-deva" lang="sa">अलक्षणम्</span><span class="neti-sa s-iast" lang="sa-Latn">alakṣaṇam</span><span class="neti-en">without marks</span></li><li><span class="neti-sa s-deva" lang="sa">अचिन्त्यम्</span><span class="neti-sa s-iast" lang="sa-Latn">acintyam</span><span class="neti-en">beyond thought</span></li><li><span class="neti-sa s-deva" lang="sa">अव्यपदेश्यम्</span><span class="neti-sa s-iast" lang="sa-Latn">avyapadeśyam</span><span class="neti-en">beyond naming</span></li></ul><p class="neti-rest"><span class="s-deva" lang="sa">शान्तं शिवमद्वैतम्</span><span class="s-iast" lang="sa-Latn">śāntaṃ śivam advaitam</span><span class="neti-en">peace, the good, one without a second</span></p></div></div></div><div><div class="fx-v" id="v8"><p class="fx-v-ref"><a href="#v8" aria-label="Mandukya 8">8</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>सोऽयमात्माध्यक्षरमोङ्कारोऽधिमात्रं पादा मात्रा मात्राश्च</span><span>पादा अकार उकारो मकार इति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>so&#x27;yamātmādhyakṣaramoṅkāro&#x27;dhimātraṃ pādā mātrā mātrāśca</span><span>pādā akāra ukāro makāra iti ||</span></p></div><p class="fx-v-en">This Self, taken as a syllable, is Om. Taken as sounds, the quarters are the sounds and the sounds are the quarters: a, u and m.</p></div></div></div><div><div class="fx-v" id="v9"><p class="fx-v-ref"><a href="#v9" aria-label="Mandukya 9">9</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>जागरितस्थानो वैश्वानरोऽकारः प्रथमा मात्राऽऽप्तेरादिमत्त्वाद्</span><span>वाऽऽप्नोति ह वै सर्वान् कामानादिश्च भवति य एवं वेद ॥</span></p><p class="s-iast" lang="sa-Latn"><span>jāgaritasthāno vaiśvānaro&#x27;kāraḥ prathamā mātrā&#x27;&#x27;pterādimattvād</span><span>vā&#x27;&#x27;pnoti ha vai sarvān kāmānādiśca bhavati ya evaṃ veda ||</span></p></div><p class="fx-v-en">Vaishvanara, whose place is waking, is a, the first sound, because it runs through everything and because it comes first. One who knows this gains what they wish for and becomes first.</p></div></div></div><div><div class="fx-v" id="v10"><p class="fx-v-ref"><a href="#v10" aria-label="Mandukya 10">10</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षात्</span><span>उभयत्वाद्वोत्कर्षति ह वै ज्ञानसन्ततिं समानश्च भवति</span><span>नास्याब्रह्मवित्कुले भवति य एवं वेद ॥</span></p><p class="s-iast" lang="sa-Latn"><span>svapnasthānastaijasa ukāro dvitīyā mātrotkarṣāt</span><span>ubhayatvādvotkarṣati ha vai jñānasantatiṃ samānaśca bhavati</span><span>nāsyābrahmavitkule bhavati ya evaṃ veda ||</span></p></div><p class="fx-v-en">Taijasa, whose place is dream, is u, the second sound, because it is higher and because it stands between the two. One who knows this carries knowledge forward and is even with everyone. No one in their family is born without knowing Brahman.</p></div></div></div><div><div class="fx-v" id="v11"><p class="fx-v-ref"><a href="#v11" aria-label="Mandukya 11">11</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>सुषुप्तस्थानः प्राज्ञो मकारस्तृतीया मात्रा मितेरपीतेर्वा</span><span>मिनोति ह वा इदं सर्वमपीतिश्च भवति य एवं वेद ॥</span></p><p class="s-iast" lang="sa-Latn"><span>suṣuptasthānaḥ prājño makārastṛtīyā mātrā miterapītervā</span><span>minoti ha vā idaṃ sarvamapītiśca bhavati ya evaṃ veda ||</span></p></div><p class="fx-v-en">Prajna, whose place is deep sleep, is m, the third sound, because it measures and because everything merges into it. One who knows this measures all of this and becomes the place where it merges.</p></div></div></div><div><div class="fx-v" id="v12"><p class="fx-v-ref"><a href="#v12" aria-label="Mandukya 12">12</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अमात्रश्चतुर्थोऽव्यवहार्यः प्रपञ्चोपशमः शिवोऽद्वैत</span><span>एवमोङ्कार आत्मैव संविशत्यात्मनाऽऽत्मानं य एवं वेद ॥</span></p><p class="s-iast" lang="sa-Latn"><span>amātraścaturtho&#x27;vyavahāryaḥ prapañcopaśamaḥ śivo&#x27;dvaita</span><span>evamoṅkāra ātmaiva saṃviśatyātmanā&#x27;&#x27;tmānaṃ ya evaṃ veda ||</span></p></div><p class="fx-v-en">The fourth has no sound. It cannot be used or handled. In it the world falls quiet. It is good and one without a second. So Om is the Self itself. One who knows this goes into the Self by the Self.</p><div class="fx-v-note">Gaudapada, the teacher of Shankara’s teacher, wrote verses on the Mandukya (the Karika), and Shankara commented on both together.</div></div></div></div></section><section class="fx-sec" aria-labelledby="gita"><h2 id="gita">The Mandukya and the Gita</h2><p class="fx-bridge"><a href="/gita/chapter/8/verse/13" data-mp-location="gita_bridge_8_13">Bhagavad Gita 8.13</a><span>: <!-- -->Krishna on leaving the body while saying Om, the one syllable that is Brahman.</span></p><p class="fx-bridge"><a href="/gita/chapter/2/verse/69" data-mp-location="gita_bridge_2_69">Bhagavad Gita 2.69</a><span>: <!-- -->what is night for all beings is where the steady one is awake.</span></p></section><section class="fx-sec fx-next" aria-labelledby="next-text-end"><h2 id="next-text-end">One line each morning</h2><div class="qns" data-kind="email" lang="en"><p class="qns-line">A week of lines for what you are going through, one each morning by email. The first week is free.</p><a class="qns-btn" href="/start?ref=q-upanishads-mandukya-text-end">Send my week</a></div></section><section class="fx-sec" aria-labelledby="next-text"><h2 id="next-text">Read next</h2><ul class="fx-links"><li><a href="/upanishads/mahavakyas" data-mp-location="mandukya_next_mahavakyas"><strong>The four mahavakyas</strong><span>Ayam atma brahma and the other three great sentences</span></a></li><li><a href="/upanishads/katha" data-mp-location="mandukya_next_katha"><strong>The Katha Upanishad</strong><span>The same Self, taught by Death to a boy</span></a></li><li><a href="/upanishads/who-am-i" data-mp-location="mandukya_next_plan"><strong>Who am I: a 7-verse plan</strong><span>Mandukya 2 is day 5</span></a></li></ul></section><section class="fx-sec fx-faq" aria-labelledby="faq"><h2 id="faq">Questions people ask</h2><dl><div><dt>How many verses are in the Mandukya Upanishad?</dt><dd>Twelve, which makes it the shortest of the principal Upanishads. It belongs to the Atharva Veda.</dd></div><div><dt>What is turiya?</dt><dd>&quot;The fourth&quot;: the Self described in verse 7, apart from waking, dream and deep sleep, and present through all three. The verse calls it peace, the good, one without a second.</dd></div><div><dt>What does the Mandukya say about Om?</dt><dd>Its three sounds, a, u and m, stand for waking, dream and deep sleep, and the silence after them stands for the fourth (verses 8 to 12).</dd></div></dl></section><section class="fx-sec fx-sources" aria-labelledby="sources"><h2 id="sources">Sources and method</h2><p>Sanskrit from the Wisdom corpus, read against the sanskritdocuments.org editions (and GRETIL where it has the text); where the two differ, the proofread edition is used and the difference is listed for review. English is Wisdom’s own, drafted from the Sanskrit with Shankara’s commentary (S. Sitarama Sastri’s public-domain English) and checked for tone against Swami Paramananda (1919).</p><p>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, under human review.</p></section></div></div></body></html>

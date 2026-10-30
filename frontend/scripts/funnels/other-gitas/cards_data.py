@@ -1,0 +1,23 @@
+# Share-card lines: Wisdom's own short meanings (at most 20 words), English and Hindi.
+CARDS = {
+'1.2': ("If you want freedom, leave sense objects like poison and take forgiveness, honesty, kindness, contentment and truth like nectar.", "मुक्ति चाहिए तो विषयों को ज़हर की तरह छोड़ो, और क्षमा, सरलता, दया, संतोष, सत्य को अमृत की तरह अपनाओ।"),
+'1.3': ("You are not earth, water, fire, air or space. Know yourself as the witness of these, made of awareness.", "तुम न पृथ्वी हो, न जल, न अग्नि, न वायु, न आकाश। खुद को इन सबका साक्षी, चेतना जानो।"),
+'1.4': ("Set the body apart and rest in awareness, and you are happy, at peace and free right now.", "शरीर को अलग देखो और चेतना में टिक जाओ, तो इसी पल सुखी, शांत और मुक्त हो।"),
+'1.6': ("You are not the doer and not the one who enjoys. You are free, always.", "तुम न कर्ता हो, न भोक्ता। तुम हमेशा से मुक्त हो।"),
+'1.8': ("Bitten by the snake 'I am the doer', drink the nectar 'I am not the doer', and be happy.", "'मैं कर्ता हूँ' के काले साँप ने डसा है। 'मैं कर्ता नहीं' का अमृत पियो और सुखी रहो।"),
+'1.11': ("Think yourself free and you are free, bound and you are bound. As you hold yourself, so you become.", "जो खुद को मुक्त माने वह मुक्त है, जो बंधा माने वह बंधा है। जैसी मति, वैसी गति।"),
+'1.14': ("Cut the old rope of 'I am the body' with the sword of 'I am awareness', and be happy.", "'मैं शरीर हूँ' की पुरानी रस्सी को 'मैं चेतना हूँ' की तलवार से काटो और सुखी रहो।"),
+'1.16': ("This whole world is strung on you. You are pure awareness. Do not fall into smallness of mind.", "यह पूरा जगत तुम में पिरोया हुआ है। तुम शुद्ध चेतना हो, मन को छोटा मत करो।"),
+'1.18': ("What has form passes. What is formless does not move. Know this, and you are not born again.", "जिसका आकार है वह टिकता नहीं, निराकार अचल है। यह जान लो तो फिर जन्म नहीं।"),
+'2.1': ("I am spotless, at peace, awareness itself. All this time I was fooled by delusion.", "मैं निर्मल हूँ, शांत हूँ, चेतना हूँ। इतने समय तक मोह ने मुझे भरमाए रखा।"),
+'2.25': ("In me, the endless ocean, living beings rise like waves, collide, play and sink back by their own nature.", "मुझ अनंत सागर में जीवों की लहरें उठती हैं, टकराती हैं, खेलती हैं और फिर समा जाती हैं।"),
+'8.1': ("It is bondage when the mind wants or grieves, grabs or lets go, is pleased or angry.", "जब मन कुछ चाहता है, शोक करता है, पकड़ता है, छोड़ता है, खुश या नाराज़ होता है, वही बंधन है।"),
+'8.4': ("When there is no 'I', there is freedom. When there is 'I', there is bondage. Take nothing, drop nothing, lightly.", "जब 'मैं' नहीं, तब मुक्ति। जब 'मैं' है, तब बंधन। सहज रहो, न कुछ पकड़ो, न छोड़ो।"),
+'11.5': ("Sorrow is born of worry and of nothing else. Know this, and be happy, at peace, free of wanting.", "दुख चिंता से ही पैदा होता है। यह जान लो तो सुखी, शांत और इच्छा से मुक्त रहो।"),
+'15.4': ("You are not the body, not the doer. You are awareness, always the witness. Move about at ease.", "तुम न शरीर हो, न कर्ता। तुम चेतना हो, सदा साक्षी। सुख से विचरो।"),
+'15.8': ("Trust, my child, trust. You are the Self, made of knowledge, beyond nature.", "श्रद्धा रखो, बेटा, श्रद्धा रखो। तुम आत्मा हो, ज्ञानस्वरूप, प्रकृति से परे।"),
+'15.11': ("Let the wave of the world rise or fall in you, the endless ocean. You neither grow nor shrink.", "तुम अनंत सागर हो। संसार की लहर उठे या गिरे, तुम न बढ़ते हो, न घटते हो।"),
+'17.3': ("Sense objects do not please one who delights in the Self, as neem leaves do not please an elephant.", "आत्मा में रमने वाले को विषय नहीं लुभाते, जैसे सल्लकी खाने वाले हाथी को नीम के पत्ते।"),
+'18.59': ("At ease he sits, sleeps, comes and goes, speaks and eats. A calm mind is at ease in daily life.", "वह सुख से बैठता है, सोता है, आता-जाता है, बोलता है, खाता है। शांत मन हर काम में सुखी है।"),
+'18.100': ("A mind at peace runs neither to the crowd nor to the forest. Wherever it is, it stays the same.", "शांत मन न भीड़ की ओर भागता है, न जंगल की ओर। जहाँ भी हो, वैसा ही रहता है।"),
+}

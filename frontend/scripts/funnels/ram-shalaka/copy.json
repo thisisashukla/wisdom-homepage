@@ -1,0 +1,387 @@
+{
+  "signs": {
+    "shubh": {
+      "hi": "शुभ",
+      "en": "Auspicious"
+    },
+    "sanshay": {
+      "hi": "संशय",
+      "en": "Uncertain"
+    },
+    "ashubh": {
+      "hi": "अभी नहीं",
+      "en": "Not now"
+    }
+  },
+  "signNotes": {
+    "shubh": {
+      "hi": "परंपरा में यह चौपाई शुभ उत्तर मानी जाती है: कार्य सिद्ध होने का संकेत।",
+      "en": "Tradition reads this chaupai as an auspicious answer: the work will come through."
+    },
+    "sanshay": {
+      "hi": "परंपरा में इसे संशय का उत्तर माना जाता है: परिणाम अभी पक्का नहीं, सोच-समझकर चलें।",
+      "en": "Tradition reads this as an uncertain answer: the outcome is open, so go carefully."
+    },
+    "ashubh": {
+      "hi": "परंपरा में इसे ‘अभी नहीं’ का उत्तर माना जाता है। इसे रुककर जाँचने का संकेत मानें और चौपाई की बात पर मनन करें।",
+      "en": "Tradition reads this as a ‘not now’ answer. Take it as a sign to pause and look again, and sit with what the line asks."
+    }
+  },
+  "ui": {
+    "hi": {
+      "eyebrow1": "श्रीराम शलाका प्रश्नावली",
+      "sankalpTitle": "मन में एक प्रश्न रखें",
+      "sankalpSub": "श्रीराम का स्मरण करें। प्रश्न लिखना ज़रूरी नहीं। लिखेंगे तो यह इसी फ़ोन पर रहेगा।",
+      "qLabel": "आपका प्रश्न (वैकल्पिक)",
+      "qPh": "जैसे: क्या यह नौकरी बदलूँ?",
+      "sankalpBtn": "प्रश्न मन में है",
+      "rule": "परंपरा: शुद्ध मन से पूछें। एक प्रश्न एक ही बार। दिन में तीन प्रश्न।",
+      "eyebrow2": "ध्यान",
+      "holdBtn": "दबाकर रखें",
+      "dhyanHint": "श्रीराम का नाम पूरा होने तक थामे रहें",
+      "dhyanEarly": "थोड़ा और ठहरें",
+      "eyebrow3": "शलाका",
+      "shalakaSub": "आँखें मूँदें। पर्दे पर कहीं भी उँगली टिकाकर थामे रहें।",
+      "shalakaOpen": "किसी भी खाने पर उँगली टिकाकर थामे रहें।",
+      "veilLabel": "यहाँ उँगली टिकाएँ",
+      "veilAria": "ढकी हुई तालिका पर शलाका रखें",
+      "liftBtn": "पर्दा हटाकर चुनें",
+      "coverBtn": "पर्दा वापस डालें",
+      "counting": "हर नौवाँ अक्षर आपकी चौपाई चुन रहा है",
+      "cell": "खाना",
+      "gridLabel": "श्रीराम शलाका तालिका, 15 × 15",
+      "eyebrow4": "आपकी चौपाई",
+      "srcPrefix": "श्रीरामचरितमानस",
+      "tradition": "परंपरा",
+      "tabYou": "आज आपके लिए",
+      "tabScene": "प्रसंग",
+      "planBtn": "मेरा 7 दिन का पाठ बनाएँ",
+      "shareBtn": "अपना उत्तर शेयर करें",
+      "waBtn": "WhatsApp पर भेजें",
+      "readLine": "पूरी चौपाई और प्रसंग",
+      "again": "एक और प्रश्न",
+      "left": "बचे",
+      "doneTitle": "आज के तीन प्रश्न पूरे हुए",
+      "doneSub": "परंपरा कहती है, दिन में तीन से अधिक नहीं। जो मिला है उस पर मनन करें।",
+      "seeMala": "अपनी मानस माला देखें",
+      "resetAt": "दीप प्रातः 4 बजे (ब्रह्म मुहूर्त) फिर जलेंगे। बचा समय:",
+      "mala": "मानस माला",
+      "malaBead": "चौपाई",
+      "repeat": "यह प्रश्न आज पूछा जा चुका है। तब यह चौपाई मिली थी:",
+      "diyasLeft": "आज के प्रश्न बचे:",
+      "sound": "ध्वनि",
+      "soundAria": "घंटी की ध्वनि",
+      "cardTitle": "शेयर कार्ड",
+      "cardAlt": "इस चौपाई का शेयर कार्ड",
+      "saveImage": "इमेज सेव करें",
+      "copyBtn": "चौपाई कॉपी करें",
+      "copied": "चौपाई कॉपी हुई",
+      "close": "बंद करें",
+      "expertNote": "शलाका मन को दिशा देती है। स्वास्थ्य, क़ानून या पैसे के निर्णय में विशेषज्ञ की सलाह भी लें।",
+      "shareFoot": "श्रीराम शलाका प्रश्नावली",
+      "noscript": "शलाका की विधि के लिए इस ब्राउज़र में JavaScript चालू करें। नीचे पूरी तालिका और नौ उत्तर इसके बिना भी पढ़ सकते हैं।",
+      "langSwitch": "English",
+      "naam": [
+        "श्री",
+        "राम",
+        "जय",
+        "राम",
+        "जय",
+        "जय",
+        "राम"
+      ],
+      "next": {
+        "app": {
+          "line": "हर सुबह एक पंक्ति, आपके iPhone पर।",
+          "cta": "हर सुबह एक पंक्ति पाएं"
+        },
+        "whatsapp": {
+          "line": "हर सुबह मानस की एक पंक्ति, WhatsApp पर।",
+          "cta": "रोज़ एक चौपाई"
+        },
+        "email": {
+          "line": "आपकी बात के लिए एक हफ़्ते की पंक्तियाँ, ईमेल पर।",
+          "cta": "मेरा हफ़्ता भेजें"
+        }
+      },
+      "kicker": "श्रीराम शलाका प्रश्नावली",
+      "askTitle": "मन में एक प्रश्न रखें",
+      "askSub": "श्रीराम का स्मरण करें। फिर पूछें।",
+      "askBtn": "शलाका उठाएँ",
+      "askNote": "प्रश्न लिखना ज़रूरी नहीं। लिखा प्रश्न इसी फ़ोन पर रहता है।",
+      "chips": "नौकरी|क्या मुझे यह नौकरी बदलनी चाहिए?|decision;विवाह|क्या यह रिश्ता मेरे लिए शुभ है?|partner;परीक्षा|क्या इस परीक्षा में सफलता मिलेगी?|didnt_work_out;नया काम|क्या यह नया काम शुरू करूँ?|decision;यात्रा|क्या यह यात्रा सफल होगी?|;घर|क्या यह घर हमारे लिए ठीक है?|decision",
+      "silentQ": "मन का प्रश्न",
+      "pickTitle": "आँखें मूँदें, एक अक्षर छुएँ",
+      "pickRandom": "श्रीराम पर छोड़ें",
+      "countDone": "चौपाई पूरी हुई",
+      "verdictLead": "श्रीराम का उत्तर",
+      "shareInvite": "मैंने श्रीराम शलाका से प्रश्न पूछा। उत्तर मिला:",
+      "shareAsk": "आप भी पूछें",
+      "malaCount": "चौपाइयाँ मिलीं",
+      "tomorrow": "प्रातः 4 बजे फिर पूछें",
+      "gateTitle": "शलाका फिर उठाएँ",
+      "gateSub": "शलाका मुफ़्त है और मुफ़्त रहेगी। आगे पूछने के लिए एक बार Google से जुड़ें।",
+      "gateBtn": "Google से जारी रखें",
+      "gateBusy": "जुड़ रहे हैं…",
+      "gateFine": "हम आपकी ओर से कुछ पोस्ट नहीं करते, न मार्केटिंग ईमेल भेजते हैं।",
+      "gateError": "Google से जुड़ना पूरा नहीं हुआ। फिर से कोशिश करें।",
+      "gateBack": "वापस जाएँ",
+      "gateBackAnswer": "अपना पिछला उत्तर देखें",
+      "againGated": "Google से, मुफ़्त",
+      "planTitle": "अपने प्रश्न पर सात दिन ठहरें",
+      "planSub": "आपकी बात के लिए गीता से रोज़ एक श्लोक और उसका अर्थ, आपके जीवन के हिसाब से।",
+      "planFree": "पहला हफ़्ता मुफ़्त"
+    },
+    "en": {
+      "eyebrow1": "Shri Ram Shalaka Prashnavali",
+      "sankalpTitle": "Hold one question in your heart",
+      "sankalpSub": "Remember Shri Ram. You don't need to type it. If you do, it stays on this phone.",
+      "qLabel": "Your question (optional)",
+      "qPh": "For example: should I change this job?",
+      "sankalpBtn": "My question is ready",
+      "rule": "Tradition: ask with a clear mind. Each question once. Three questions a day.",
+      "eyebrow2": "Dhyan",
+      "holdBtn": "Press and hold",
+      "dhyanHint": "Keep holding until Ram's name is complete",
+      "dhyanEarly": "Stay a little longer",
+      "eyebrow3": "Shalaka",
+      "shalakaSub": "Close your eyes. Rest your finger anywhere on the cloth and keep it there.",
+      "shalakaOpen": "Rest your finger on any square and keep it there.",
+      "veilLabel": "Rest your finger here",
+      "veilAria": "Place the shalaka on the covered grid",
+      "liftBtn": "Lift the cloth and choose",
+      "coverBtn": "Cover the grid again",
+      "counting": "Every ninth syllable is finding your chaupai",
+      "cell": "Square",
+      "gridLabel": "Shri Ram Shalaka grid, 15 by 15",
+      "eyebrow4": "Your chaupai",
+      "srcPrefix": "Ramcharitmanas",
+      "tradition": "Tradition",
+      "tabYou": "For you today",
+      "tabScene": "The scene",
+      "planBtn": "Create my 7-day Gita plan",
+      "shareBtn": "Share my answer",
+      "waBtn": "Send on WhatsApp",
+      "readLine": "The full chaupai and its scene",
+      "again": "Ask another",
+      "left": "left",
+      "doneTitle": "Today's three questions are done",
+      "doneSub": "Tradition asks for no more than three a day. Sit with what you received.",
+      "seeMala": "See your Manas mala",
+      "resetAt": "The diyas relight at 4 AM (Brahma muhurta). Time left:",
+      "mala": "Manas mala",
+      "malaBead": "Chaupai",
+      "repeat": "You asked this today already. The chaupai then was:",
+      "diyasLeft": "Questions left today:",
+      "sound": "Sound",
+      "soundAria": "Bell sound",
+      "cardTitle": "Share card",
+      "cardAlt": "Share card for this chaupai",
+      "saveImage": "Save image",
+      "copyBtn": "Copy chaupai",
+      "copied": "Chaupai copied",
+      "close": "Close",
+      "expertNote": "The shalaka gives the mind a direction. For health, legal or money decisions, take an expert's advice as well.",
+      "shareFoot": "Shri Ram Shalaka Prashnavali",
+      "noscript": "Turn on JavaScript in this browser for the shalaka ritual. The full grid and the nine answers below work without it.",
+      "langSwitch": "हिन्दी",
+      "naam": [
+        "श्री",
+        "राम",
+        "जय",
+        "राम",
+        "जय",
+        "जय",
+        "राम"
+      ],
+      "next": {
+        "app": {
+          "line": "A line each morning, on your iPhone.",
+          "cta": "Get a line each morning"
+        },
+        "whatsapp": {
+          "line": "A line from the Manas each morning, on WhatsApp.",
+          "cta": "A chaupai a day"
+        },
+        "email": {
+          "line": "A week of lines for what you're going through, in your inbox.",
+          "cta": "Send my week"
+        }
+      },
+      "kicker": "Shri Ram Shalaka Prashnavali",
+      "askTitle": "Hold one question in your heart",
+      "askSub": "Remember Shri Ram. Then ask.",
+      "askBtn": "Pick up the shalaka",
+      "askNote": "Typing is optional. Your words stay on this phone.",
+      "chips": "Job|Should I change this job?|decision;Marriage|Is this relationship right for me?|partner;Exam|Will I pass this exam?|didnt_work_out;New start|Should I begin this new work?|decision;Journey|Will this journey go well?|;Home|Is this the right home for us?|decision",
+      "silentQ": "The question in your heart",
+      "pickTitle": "Close your eyes. Touch one syllable.",
+      "pickRandom": "Leave it to Shri Ram",
+      "countDone": "Your chaupai is complete",
+      "verdictLead": "Shri Ram's answer",
+      "shareInvite": "I asked the Shri Ram Shalaka. My answer:",
+      "shareAsk": "Ask yours",
+      "malaCount": "chaupais received",
+      "tomorrow": "Ask again after 4 AM",
+      "gateTitle": "Pick up the shalaka again",
+      "gateSub": "The shalaka is free and stays free. Sign in once with Google to keep asking.",
+      "gateBtn": "Continue with Google",
+      "gateBusy": "Signing in…",
+      "gateFine": "We never post for you or send marketing email.",
+      "gateError": "Google sign-in didn't go through. Try again.",
+      "gateBack": "Go back",
+      "gateBackAnswer": "See your last answer",
+      "againGated": "free with Google",
+      "planTitle": "Stay with your question for seven days",
+      "planSub": "One Gita verse a day for what you are facing, with its meaning, tuned to your life.",
+      "planFree": "Week 1 free"
+    }
+  },
+  "page": {
+    "hi": {
+      "title": "श्रीराम शलाका प्रश्नावली: चौपाई, अर्थ और प्रसंग सहित",
+      "description": "श्रीराम शलाका प्रश्नावली ऑनलाइन: मन में प्रश्न रखें, शलाका रखें और मानस की चौपाई उत्तर, अर्थ और प्रसंग के साथ पाएं। नौ उत्तर, विधि और नियम।",
+      "h1": "श्रीराम शलाका प्रश्नावली",
+      "crumbHome": "Wisdom",
+      "crumbSelf": "श्रीराम शलाका",
+      "whatHeading": "श्रीराम शलाका प्रश्नावली क्या है",
+      "quickAnswer": "श्रीराम शलाका प्रश्नावली 15 × 15 खानों की एक तालिका है, जिसे परंपरा गोस्वामी तुलसीदास से जोड़ती है: मन में प्रश्न रखकर किसी खाने पर शलाका रखें और हर नौवाँ अक्षर गिनें, तो श्रीरामचरितमानस की नौ चौपाइयों में से एक बनती है, वही उत्तर है। यह तालिका गीता प्रेस, गोरखपुर से छपी श्रीरामचरितमानस की प्रतियों के साथ छपी मिलती है।",
+      "howHeading": "प्रश्नावली देखने की विधि",
+      "howSteps": [
+        "शांत और शुद्ध मन से श्रीराम का स्मरण करें।",
+        "मन में एक ही प्रश्न रखें। एक प्रश्न एक ही बार पूछें।",
+        "आँखें मूँदकर तालिका के किसी खाने पर उँगली या शलाका (तिनका) रखें।",
+        "उस खाने का अक्षर लिखें, फिर हर नौवाँ अक्षर लिखते जाएँ। तालिका का अंत आए तो पहले खाने से गिनती जारी रखें।",
+        "25 अक्षरों से एक चौपाई बनेगी। उसे नीचे के नौ उत्तरों में देखें और उसके प्रसंग पर मनन करें।"
+      ],
+      "howRules": "परंपरा के तीन नियम: शुद्ध मन से पूछें, एक प्रश्न एक ही बार पूछें, और दिन में तीन से अधिक प्रश्न न पूछें। ऊपर के तीन दीप यही तीन प्रश्न हैं।",
+      "tableHeading": "पूरी तालिका",
+      "tableNote": "यह वही 225 खानों की तालिका है। किसी भी खाने से शुरू करके हर नौवाँ अक्षर पढ़ें, और अंत पर पहुँचकर पहली पंक्ति से गिनती जारी रखें।",
+      "tableCaption": "श्रीराम शलाका प्रश्नावली की तालिका: 15 पंक्तियाँ, 15 स्तंभ, 225 अक्षर",
+      "nineHeading": "नौ उत्तर, अर्थ और प्रसंग सहित",
+      "nineIntro": "पाँच चौपाइयाँ परंपरा में शुभ मानी जाती हैं, दो संशय की और दो ‘अभी नहीं’ की। हर उत्तर के साथ उसका प्रसंग और आज के लिए उसकी बात दी है।",
+      "meaningLabel": "अर्थ",
+      "sceneLabel": "प्रसंग",
+      "youLabel": "आज आपके लिए",
+      "readMore": "पूरी चौपाई और प्रसंग",
+      "scriptLabel": "लिपि",
+      "faqHeading": "अक्सर पूछे जाने वाले प्रश्न",
+      "faq": [
+        {
+          "q": "श्रीराम शलाका प्रश्नावली कैसे देखें?",
+          "a": "श्रीराम का स्मरण करके मन में एक प्रश्न रखें। आँखें मूँदकर तालिका के किसी खाने पर उँगली रखें, फिर उस खाने से हर नौवाँ अक्षर लिखते जाएँ। 25 अक्षरों से एक चौपाई बनती है, वही आपके प्रश्न का उत्तर है। ऊपर की शलाका यह गिनती आपके लिए करती है।"
+        },
+        {
+          "q": "दिन में कितने प्रश्न पूछ सकते हैं?",
+          "a": "परंपरा कहती है दिन में तीन से अधिक नहीं, और एक प्रश्न एक ही बार। इस पेज पर ऊपर के तीन दीप आज के तीन प्रश्न हैं, जो प्रातः 4 बजे फिर जलते हैं।"
+        },
+        {
+          "q": "‘अभी नहीं’ वाली चौपाई आए तो क्या करें?",
+          "a": "नौ में से दो चौपाइयाँ परंपरा में ‘अभी नहीं’ का उत्तर मानी जाती हैं। इन्हें रुककर देखने का संकेत मानें। उघरहिं अंत न होइ निबाहू कहती है कि कहीं कपट हो तो पहले उसे सुधारें, और बरुन कुबेर सुरेस समीरा याद दिलाती है कि बल के साथ धर्म भी देखें।"
+        },
+        {
+          "q": "यह प्रश्नावली कहाँ से आई है?",
+          "a": "परंपरा इसे गोस्वामी तुलसीदास से जोड़ती है। गीता प्रेस, गोरखपुर की श्रीरामचरितमानस की प्रतियों के साथ यह तालिका और इसके नौ उत्तर छपे मिलते हैं। सभी नौ चौपाइयाँ मानस में हैं: छह बालकाण्ड से, दो सुन्दरकाण्ड से और एक लंकाकाण्ड से।"
+        },
+        {
+          "q": "क्या मेरा प्रश्न कहीं भेजा जाता है?",
+          "a": "प्रश्न लिखना ज़रूरी नहीं। लिखा हुआ प्रश्न इसी फ़ोन पर रहता है, हम उसे कहीं नहीं भेजते और शेयर कार्ड पर भी नहीं छापते।"
+        },
+        {
+          "q": "नौ उत्तर वाली चौपाइयाँ कौन सी हैं?",
+          "a": "सुनु सिय सत्य असीस हमारी, प्रबिसि नगर कीजे सब काजा, उघरहिं अंत न होइ निबाहू, बिधि बस सुजन कुसंगत परहीं, होइहि सोइ जो राम रचि राखा, मुद मंगलमय संत समाजू, गरल सुधा रिपु करहिं मिताई, बरुन कुबेर सुरेस समीरा और सुफल मनोरथ होहुँ तुम्हारे।"
+        }
+      ],
+      "manasHeading": "मानस और गीता",
+      "manasText": "हर चौपाई के पेज पर उसकी पूरी चौपाई, प्रसंग और गीता का वह श्लोक है जो यही बात कहता है। रामायण की पूरी कथा के लिए",
+      "manasLink": "रामायण पेज देखें",
+      "sourcesHeading": "स्रोत और विधि",
+      "sources": "तालिका और नौ चौपाइयाँ गीता प्रेस, गोरखपुर की श्रीरामचरितमानस के साथ छपी पारंपरिक प्रश्नावली से हैं, और हमने हर खाने को मानस के पाठ से मिलाकर जाँचा है। अर्थ, प्रसंग और ‘आज आपके लिए’ Wisdom के अपने शब्द हैं, जो गीता प्रेस परंपरा की टीका के अनुसार लिखे गए हैं।"
+    },
+    "en": {
+      "title": "Shri Ram Shalaka Prashnavali in English, with meanings",
+      "description": "Ask the Shri Ram Shalaka Prashnavali online: hold a question, place the shalaka and get a Ramcharitmanas chaupai with its meaning and scene.",
+      "h1": "Shri Ram Shalaka Prashnavali",
+      "crumbHome": "Wisdom",
+      "crumbSelf": "Shri Ram Shalaka",
+      "whatHeading": "What the Ram Shalaka Prashnavali is",
+      "quickAnswer": "The Shri Ram Shalaka Prashnavali is a 15 by 15 grid of syllables that tradition links to Goswami Tulsidas: hold a question, place a finger on any square and read every ninth syllable, and it spells one of nine chaupais from the Ramcharitmanas, which is your answer. The grid is printed with Gita Press, Gorakhpur editions of the Ramcharitmanas.",
+      "howHeading": "How to ask",
+      "howSteps": [
+        "Remember Shri Ram with a calm, clear mind.",
+        "Hold one question. Ask each question only once.",
+        "With your eyes closed, rest a finger or a shalaka (a straw) on any square of the grid.",
+        "Write down that square's syllable, then every ninth syllable after it. When you reach the end of the grid, carry on counting from the first square.",
+        "The 25 syllables make one chaupai. Find it among the nine answers below and sit with its scene."
+      ],
+      "howRules": "The three traditional rules: ask with a clear mind, ask each question once, and ask no more than three a day. The three diyas above are those three questions.",
+      "tableHeading": "The full grid",
+      "tableNote": "This is the traditional grid of 225 squares. Start from any square, read every ninth syllable, and when you reach the end carry on from the first row.",
+      "tableCaption": "The Shri Ram Shalaka Prashnavali grid: 15 rows, 15 columns, 225 syllables",
+      "nineHeading": "The nine answers, with meanings and scenes",
+      "nineIntro": "Tradition reads five of the chaupais as auspicious, two as uncertain and two as ‘not now’. Each answer comes with its scene and what it asks of you today.",
+      "meaningLabel": "Meaning",
+      "sceneLabel": "The scene",
+      "youLabel": "For you today",
+      "readMore": "Full chaupai and scene, in Hindi",
+      "scriptLabel": "Script",
+      "faqHeading": "Questions people ask",
+      "faq": [
+        {
+          "q": "How do I use the Ram Shalaka Prashnavali?",
+          "a": "Remember Shri Ram and hold one question. Close your eyes and rest a finger on any square, then write down every ninth syllable from that square. The 25 syllables spell a chaupai from the Ramcharitmanas, and that chaupai is your answer. The shalaka above does the counting for you."
+        },
+        {
+          "q": "How many questions can I ask in a day?",
+          "a": "Tradition says no more than three a day, and each question only once. The three diyas at the top of this page are today's three questions, and they relight at 4 AM."
+        },
+        {
+          "q": "What if I get a ‘not now’ chaupai?",
+          "a": "Two of the nine chaupais are read as ‘not now’. Take them as a sign to pause. Ugharahin ant na hoi nibahu asks you to set right any pretense first, and Barun kuber sures samira reminds you to ask whether the thing is right as well as whether you can do it."
+        },
+        {
+          "q": "Where does the prashnavali come from?",
+          "a": "Tradition links it to Goswami Tulsidas. The grid and its nine answers are printed with Gita Press, Gorakhpur editions of the Ramcharitmanas. All nine chaupais are in the Manas: six from the Bal Kand, two from the Sundar Kand and one from the Lanka Kand."
+        },
+        {
+          "q": "Is my question sent anywhere?",
+          "a": "You don't have to type it. If you do, it stays on your phone. We never send it anywhere and never print it on the share card."
+        },
+        {
+          "q": "Which chaupais are the nine answers?",
+          "a": "Sunu siya satya asis hamari, Prabisi nagar kije sab kaja, Ugharahin ant na hoi nibahu, Bidhi bas sujan kusangat parahin, Hoihi soi jo Ram rachi rakha, Mud mangalmay sant samaju, Garal sudha ripu karahin mitai, Barun kuber sures samira and Suphal manorath hohun tumhare."
+        }
+      ],
+      "manasHeading": "The Manas and the Gita",
+      "manasText": "Each chaupai's page carries the full chaupai, its scene and the Gita verse that says the same thing. For the whole story of Ram,",
+      "manasLink": "read the Ramayana page",
+      "sourcesHeading": "Sources and method",
+      "sources": "The grid and the nine chaupais are the traditional prashnavali printed with the Gita Press, Gorakhpur edition of the Ramcharitmanas, and we checked every square against the text of the Manas. The meanings, scenes and ‘for you today’ lines are Wisdom's own English, written in line with the Gita Press commentary tradition."
+    }
+  },
+  "line": {
+    "hi": {
+      "titleSuffix": ": अर्थ और प्रसंग",
+      "sub": "अर्थ और प्रसंग",
+      "crumbSelf": "श्रीराम शलाका",
+      "unitHeading": "पूरी चौपाई",
+      "answerTag": "शलाका का उत्तर",
+      "meaningHeading": "अर्थ",
+      "sceneHeading": "प्रसंग",
+      "youHeading": "यह चौपाई आपसे क्या माँगती है",
+      "signHeading": "परंपरा में संकेत",
+      "gitaHeading": "गीता में यही बात",
+      "gitaLink": "श्लोक पढ़ें",
+      "ask": "शलाका से प्रश्न पूछें",
+      "askNote": "मन में कोई प्रश्न है? श्रीराम शलाका से पूछें।",
+      "plan": "इस चौपाई से 7 दिन का पाठ",
+      "prev": "पिछली चौपाई",
+      "next": "अगली चौपाई",
+      "allNine": "सभी नौ उत्तर",
+      "inEnglish": "In English",
+      "sourcesHeading": "स्रोत और विधि",
+      "sources": "चौपाई श्रीरामचरितमानस के पाठ से है, और यह गीता प्रेस, गोरखपुर की मानस के साथ छपी श्रीराम शलाका प्रश्नावली के नौ उत्तरों में से एक है। अर्थ, प्रसंग और ‘आपसे क्या माँगती है’ Wisdom के अपने शब्द हैं, गीता प्रेस परंपरा की टीका के अनुसार।",
+      "ramayana": "रामायण की पूरी कथा के लिए रामायण पेज देखें।"
+    }
+  }
+}

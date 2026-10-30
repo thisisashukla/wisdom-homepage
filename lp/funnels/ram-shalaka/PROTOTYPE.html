@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shri Ram Shalaka spec</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Noto+Sans+Devanagari:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* One visual world: sandhya aarti at night. Maroon-black room, ivory pothi page, vermilion and diya gold.
+   Layout: a spec page with the live prototype as the first thing you touch, then the reasoning below it. */
+:root{
+  --night:#120707;
+  --room:#1c0c0a;
+  --line:#3b221b;
+  --paper:#f2e4c9;
+  --ink:#3b1d12;
+  --gold:#f5c96a;
+  --gold-dim:#b48d47;
+  --sindoor:#d6452a;
+  --veil:#5a0f10;
+  --text:#f3e9dc;
+  --dim:#c2b09d;
+  --dimmer:#8f7b69;
+  --silver:#cfc7bb;
+  --scripture:"Tiro Devanagari Hindi","Noto Sans Devanagari",serif;
+  --hi:"Noto Sans Devanagari","Inter",sans-serif;
+  --display:"Playfair Display",Georgia,serif;
+  --body:"Inter","Noto Sans Devanagari",-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--night);color:var(--text)}
+body{font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,34px);line-height:1.2;color:var(--text);margin-bottom:10px}
+h3{font-family:var(--display);font-weight:500;font-size:20px;color:var(--gold);margin-bottom:6px}
+p{max-width:68ch}
+.lede{color:var(--dim);font-size:17px;max-width:66ch}
+.deva{font-family:var(--hi)}
+.small{font-size:13.5px;color:var(--dimmer)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+
+/* masthead */
+.mast{padding:36px 0 22px;background:radial-gradient(900px 340px at 18% -40%, rgba(245,201,106,.16), transparent 70%)}
+.mast-row{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-end;justify-content:space-between}
+.mast h1{font-family:var(--scripture);font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1.05;color:var(--gold)}
+.mast .en{font-family:var(--display);font-size:clamp(18px,2vw,22px);color:var(--text);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:12.5px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;color:var(--dim);background:var(--room)}
+.toc{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:22px;font-size:14px}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.toc a:hover{color:var(--gold);border-color:var(--gold-dim)}
+
+/* prototype layout */
+.proto{display:grid;grid-template-columns:400px minmax(0,1fr);gap:48px;align-items:start;padding-top:28px}
+@media (max-width:920px){.proto{grid-template-columns:1fr;gap:32px}}
+.phone{width:100%;max-width:400px;margin:0 auto;background:linear-gradient(180deg,#1e0d0b,#150807);border:1px solid var(--line);border-radius:34px;padding:14px 14px 18px;box-shadow:0 30px 80px rgba(0,0,0,.55), inset 0 0 0 6px #0c0404;position:relative;min-height:720px;overflow:hidden}
+.phone::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 260px at 50% 0%, rgba(245,201,106,.10), transparent 70%);pointer-events:none}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:8px 8px 10px;position:relative;z-index:2}
+.diyas{display:flex;gap:6px;align-items:center}
+.diya{width:18px;height:22px;position:relative}
+.diya i{position:absolute;left:50%;top:1px;width:8px;height:12px;transform:translateX(-50%);border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:radial-gradient(circle at 50% 70%, #fff4c8 0 20%, var(--gold) 45%, #e07a22 80%);box-shadow:0 0 10px rgba(245,201,106,.7)}
+.diya b{position:absolute;left:1px;right:1px;bottom:1px;height:7px;border-radius:0 0 9px 9px;background:#b9662e}
+.diya.out i{background:#4a2a20;box-shadow:none;opacity:.5}
+.bar-r{display:flex;gap:6px}
+.chipbtn{font:500 12px var(--hi);color:var(--dim);background:transparent;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
+.chipbtn[aria-pressed="true"]{color:var(--night);background:var(--gold);border-color:var(--gold)}
+.screen{display:none;position:relative;z-index:2;padding:6px 8px}
+.screen.on{display:block;animation:rise .5s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.eyebrow{font:500 12px var(--hi);letter-spacing:.06em;color:var(--gold-dim)}
+.s-title{font-family:var(--scripture);font-size:30px;line-height:1.25;color:var(--text);margin:6px 0 10px}
+.s-sub{font-family:var(--hi);font-size:15px;color:var(--dim);line-height:1.7}
+textarea{width:100%;min-height:96px;margin:18px 0 8px;background:#0f0505;border:1px solid var(--line);border-radius:14px;color:var(--text);font:15px/1.6 var(--hi);padding:12px 14px;resize:none}
+textarea::placeholder{color:var(--dimmer)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;font:600 16px var(--hi);color:#2a1206;background:linear-gradient(180deg,#f8d686,var(--gold));border:0;border-radius:14px;padding:14px 18px;cursor:pointer;box-shadow:0 6px 24px rgba(245,201,106,.25)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold-dim);box-shadow:none;font-weight:500}
+.btn.quiet{background:transparent;color:var(--dim);border:1px solid var(--line);box-shadow:none;font-weight:500;font-size:14.5px;padding:11px 14px}
+.rule{margin-top:14px;font:13px/1.6 var(--hi);color:var(--dimmer)}
+.notice{margin-top:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--gold-dim);background:rgba(245,201,106,.07);font:14px/1.6 var(--hi);color:var(--text);display:none}
+.notice.on{display:block}
+
+/* dhyan */
+.flame-wrap{height:230px;display:grid;place-items:center;position:relative;margin:8px 0 4px}
+.halo{position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle, rgba(245,201,106,.22), transparent 65%);transition:transform .4s, opacity .4s;opacity:.5}
+.flame{position:relative;width:46px;height:78px;border-radius:50% 50% 50% 50% / 62% 62% 38% 38%;background:radial-gradient(circle at 50% 72%, #fffbe6 0 14%, #ffe08a 30%, var(--gold) 50%, #e2741f 82%, transparent 84%);filter:drop-shadow(0 0 22px rgba(245,201,106,.65));transform-origin:50% 90%;animation:flick 2.6s ease-in-out infinite}
+.flame.low{transform:scale(.55);opacity:.55}
+@keyframes flick{0%,100%{transform:rotate(-1.5deg) scaleY(1)}50%{transform:rotate(1.5deg) scaleY(1.05)}}
+.lamp{position:absolute;bottom:22px;width:120px;height:34px;border-radius:0 0 70px 70px;background:linear-gradient(180deg,#c47637,#7b3a17);box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.naam{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;font-family:var(--scripture);font-size:26px;color:var(--dimmer);min-height:84px;margin:6px 0 16px}
+.naam span{transition:color .3s, text-shadow .3s}
+.naam span.lit{color:var(--gold);text-shadow:0 0 14px rgba(245,201,106,.55)}
+.hold{position:relative;user-select:none;-webkit-user-select:none;touch-action:none}
+.hold .ring{position:absolute;inset:-4px;border-radius:17px;pointer-events:none;background:conic-gradient(var(--sindoor) calc(var(--p,0)*1turn), transparent 0);-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;padding:3px}
+
+/* grid */
+.board{position:relative;margin:12px auto 0;width:100%;aspect-ratio:1/1;border-radius:6px;background:var(--paper);box-shadow:0 0 0 3px var(--paper),0 0 0 4px var(--sindoor),0 0 0 8px var(--paper),0 0 0 9px var(--sindoor),0 18px 40px rgba(0,0,0,.45);touch-action:none;user-select:none;-webkit-user-select:none}
+.grid{position:absolute;inset:6px;display:grid;grid-template-columns:repeat(15,1fr);grid-template-rows:repeat(15,1fr)}
+.cell{display:grid;place-items:center;font:500 12px/1 var(--hi);color:var(--ink);border-right:1px solid rgba(59,29,18,.12);border-bottom:1px solid rgba(59,29,18,.12);transition:background .25s,color .25s,transform .25s;cursor:pointer;background:transparent;padding:0}
+.cell.sm{font-size:9.5px;letter-spacing:-.02em}
+.cell:nth-child(15n){border-right:0}
+.cell:nth-child(n+211){border-bottom:0}
+.cell.chosen{background:var(--sindoor);color:#fff4e6;transform:scale(1.12);border-radius:3px;z-index:2;box-shadow:0 0 12px rgba(214,69,42,.7)}
+.cell.lit{background:rgba(245,201,106,.85);color:#3a1405;border-radius:3px}
+.cell.dim{color:rgba(59,29,18,.28)}
+.thread{position:absolute;inset:6px;pointer-events:none;z-index:3;overflow:visible}
+.thread polyline{fill:none;stroke:var(--gold-dim);stroke-width:1.3;stroke-linejoin:round;opacity:.9}
+.veil{position:absolute;inset:-9px;border-radius:8px;z-index:4;overflow:hidden;background:
+  repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 2px, transparent 2px 6px),
+  radial-gradient(120% 90% at 50% 40%, #7a1716, var(--veil) 70%, #3c0809);
+  box-shadow:inset 0 0 0 6px rgba(245,201,106,.35), inset 0 0 0 9px #3c0809, inset 0 0 0 10px rgba(245,201,106,.25);
+  transition:opacity .9s ease, transform .9s ease;cursor:pointer}
+.veil.up{opacity:0;transform:translateY(-14%);pointer-events:none}
+.veil .naamlekh{position:absolute;inset:16px;font:15px/1.55 var(--scripture);color:rgba(245,201,106,.22);word-spacing:6px;overflow:hidden;text-align:justify}
+.veil .vlabel{position:absolute;left:0;right:0;bottom:16px;text-align:center;font:500 13px var(--hi);color:rgba(245,201,106,.8)}
+.touch{position:absolute;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;pointer-events:none;z-index:6;background:conic-gradient(var(--gold) calc(var(--p,0)*1turn), rgba(245,201,106,.15) 0);-webkit-mask:radial-gradient(circle, transparent 26px, #000 27px);mask:radial-gradient(circle, transparent 26px, #000 27px);display:none}
+.touch.on{display:block}
+.slots{display:grid;grid-template-columns:repeat(13,1fr);gap:3px;margin:22px 2px 0}
+.slot{height:24px;border-radius:5px;border:1px dashed rgba(245,201,106,.25);display:grid;place-items:center;font:500 11.5px var(--hi);color:var(--gold);transition:background .2s}
+.slot.f{border-style:solid;border-color:rgba(245,201,106,.6);background:rgba(245,201,106,.1)}
+.slot.gap{border:0}
+.under{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:10px}
+.linkbtn{font:500 13.5px var(--hi);color:var(--gold);background:none;border:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:4px 0}
+
+/* answer */
+.chaupai{font-family:var(--scripture);font-size:25px;line-height:1.6;color:var(--gold);margin:12px 0 4px;text-shadow:0 0 22px rgba(245,201,106,.18)}
+.chaupai.iast{font-family:var(--display);font-style:italic;font-size:20px}
+.chaupai span{display:block}
+.src{font:13px var(--hi);color:var(--dimmer);margin-bottom:12px}
+.phal{display:inline-flex;align-items:center;gap:8px;font:600 13.5px var(--hi);padding:6px 12px;border-radius:999px;margin:4px 0 12px}
+.phal::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.phal.shubh{color:var(--gold);background:rgba(245,201,106,.12);border:1px solid rgba(245,201,106,.45)}
+.phal.sanshay{color:var(--silver);background:rgba(207,199,187,.08);border:1px solid rgba(207,199,187,.35)}
+.phal.ashubh{color:#e8a08f;background:rgba(214,69,42,.10);border:1px solid rgba(214,69,42,.45)}
+.mean{font:15.5px/1.7 var(--hi);color:var(--text)}
+.tabs{display:flex;gap:6px;margin:16px 0 8px}
+.tab{font:500 13.5px var(--hi);padding:7px 12px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--dim);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--room);color:var(--gold);border-color:var(--gold-dim)}
+.panel{font:14.5px/1.7 var(--hi);color:var(--dim);min-height:96px}
+.mala{display:flex;align-items:center;gap:7px;margin:16px 0 4px}
+.bead{width:12px;height:12px;border-radius:50%;border:1px solid var(--gold-dim)}
+.bead.got{background:var(--gold-dim)}
+.bead.now{background:var(--gold);box-shadow:0 0 10px rgba(245,201,106,.8)}
+.mala small{font:12.5px var(--hi);color:var(--dimmer);margin-left:4px}
+.acts{display:grid;gap:8px;margin-top:14px}
+.acts-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.toast{position:absolute;left:16px;right:16px;bottom:16px;z-index:20;background:#0b0303;border:1px solid var(--gold-dim);color:var(--text);font:13.5px/1.5 var(--hi);padding:10px 12px;border-radius:12px;opacity:0;transform:translateY(8px);transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:none}
+.modal{position:absolute;inset:0;z-index:15;background:rgba(10,3,3,.86);display:none;place-items:center;padding:22px}
+.modal.on{display:grid}
+.card{width:100%;aspect-ratio:4/5;border-radius:18px;padding:26px 22px;background:radial-gradient(120% 80% at 50% 0%, #3a1410, #140606 70%);border:1px solid var(--gold-dim);display:flex;flex-direction:column;justify-content:space-between;text-align:center}
+.card .c-top{font:500 12px var(--hi);color:var(--gold-dim);letter-spacing:.08em}
+.card .c-ch{font:24px/1.65 var(--scripture);color:var(--gold)}
+.card .c-mean{font:13.5px/1.6 var(--hi);color:var(--dim)}
+.card .c-foot{font:12px var(--hi);color:var(--dimmer)}
+.review{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:14px}
+.review .chipbtn{font-size:12px}
+
+/* right column */
+.side h2{margin-bottom:12px}
+.notice-list{display:grid;gap:14px;margin-top:22px}
+.nl{display:grid;grid-template-columns:28px 1fr;gap:10px}
+.nl .n{font:600 13px var(--body);color:var(--night);background:var(--gold);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;margin-top:2px}
+.nl p{color:var(--dim);font-size:15px}
+.nl b{color:var(--text);font-weight:600}
+
+/* generic blocks */
+.cols2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:26px}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:26px}
+@media (max-width:860px){.cols2,.cols3{grid-template-columns:1fr}}
+.box{background:var(--room);border:1px solid var(--line);border-radius:16px;padding:22px}
+.box p{color:var(--dim);font-size:15px}
+.box p+p{margin-top:8px}
+.kicker{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:6px}
+.move{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.move:first-child{border-top:0}
+.move .num{font:500 34px/1 var(--scripture);color:var(--gold)}
+.move h3{font-size:22px}
+.move p{color:var(--dim);margin-top:6px}
+.move .why{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+@media (max-width:700px){.move .why{grid-template-columns:1fr}}
+.why div{font-size:14px;color:var(--dim);border-left:2px solid var(--gold-dim);padding-left:12px}
+.why div b{display:block;color:var(--text);font-weight:600;font-size:13px;margin-bottom:2px}
+.tbl{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{font:600 12px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-dim);background:var(--room)}
+td{color:var(--dim)}
+tr:last-child td{border-bottom:0}
+td .dv{font:17px/1.6 var(--scripture);color:var(--gold)}
+td .hi{font-family:var(--hi)}
+td b{color:var(--text);font-weight:600}
+.tag{display:inline-block;font:600 11.5px var(--hi);padding:2px 8px;border-radius:999px;white-space:nowrap}
+.tag.shubh{color:var(--gold);border:1px solid rgba(245,201,106,.45)}
+.tag.sanshay{color:var(--silver);border:1px solid rgba(207,199,187,.35)}
+.tag.ashubh{color:#e8a08f;border:1px solid rgba(214,69,42,.45)}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:18px}
+.sw{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--room)}
+.sw i{display:block;height:58px}
+.sw div{padding:8px 10px;font-size:12.5px;color:var(--dim)}
+.sw b{display:block;color:var(--text);font-weight:600;font-size:13px}
+.typeline{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line);align-items:baseline}
+.typeline:first-of-type{border-top:0}
+.typeline span{font-size:13px;color:var(--dimmer)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+pre{background:#0c0404;border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto;color:var(--dim);margin-top:14px;line-height:1.55}
+ul.clean{list-style:none;display:grid;gap:8px;margin-top:10px}
+ul.clean li{color:var(--dim);font-size:15px;padding-left:18px;position:relative;max-width:70ch}
+ul.clean li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold-dim)}
+ul.clean li b{color:var(--text);font-weight:600}
+.big{font:600 34px/1 var(--display);color:var(--gold);font-variant-numeric:tabular-nums}
+.stat p{font-size:14px;color:var(--dim);margin-top:6px}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--dimmer);font-size:13px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-row">
+      <div>
+        <h1>श्रीराम शलाका</h1>
+        <div class="en">Ram Shalaka Prashnavali: product and UX spec</div>
+      </div>
+      <div class="meta">
+        <span class="pill">wisdomquotes.in/hi/ram-shalaka</span>
+        <span class="pill">English twin /ram-shalaka</span>
+        <span class="pill">30 Oct 2026 · v1 draft</span>
+      </div>
+    </div>
+    <nav class="toc" aria-label="Sections">
+      <a href="#prototype">Prototype</a><a href="#why">Why build it</a><a href="#moves">Five design moves</a><a href="#flow">Flow and copy</a><a href="#nine">The nine chaupais</a><a href="#system">Look, motion, sound</a><a href="#rules">Rules and edge cases</a><a href="#growth">Growth loops</a><a href="#seo">Pages and SEO</a><a href="#build">Build spec</a><a href="#measure">Metrics and risks</a><a href="#plan">Seven-day plan</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="prototype" style="padding-top:20px">
+  <div class="wrap proto">
+    <div>
+      <div class="phone" id="phone">
+        <div class="bar">
+          <div class="diyas" id="diyas" aria-label="Questions left today"></div>
+          <div class="bar-r">
+            <button class="chipbtn" id="langBtn" aria-pressed="false" title="Switch language">EN</button>
+            <button class="chipbtn" id="soundBtn" aria-pressed="true" title="Sound on or off">ध्वनि</button>
+          </div>
+        </div>
+
+        <!-- 1 Sankalp -->
+        <div class="screen on" id="s-sankalp">
+          <div class="eyebrow" data-t="eyebrow1"></div>
+          <div class="s-title" data-t="sankalpTitle"></div>
+          <p class="s-sub" data-t="sankalpSub"></p>
+          <label for="q" class="small" style="display:block;margin-top:14px" data-t="qLabel"></label>
+          <textarea id="q" data-ph="qPh"></textarea>
+          <button class="btn" id="toDhyan" data-t="sankalpBtn"></button>
+          <div class="notice" id="repeatNote"></div>
+          <p class="rule" data-t="rule"></p>
+        </div>
+
+        <!-- 2 Dhyan -->
+        <div class="screen" id="s-dhyan">
+          <div class="eyebrow" data-t="eyebrow2"></div>
+          <div class="flame-wrap"><div class="halo" id="halo"></div><div class="lamp"></div><div class="flame low" id="flame"></div></div>
+          <div class="naam" id="naam" aria-live="polite"></div>
+          <div class="hold"><button class="btn" id="holdBtn" data-t="holdBtn"></button><span class="ring" id="holdRing"></span></div>
+          <p class="rule" id="dhyanHint" data-t="dhyanHint" style="text-align:center"></p>
+        </div>
+
+        <!-- 3 Shalaka + count -->
+        <div class="screen" id="s-shalaka">
+          <div class="eyebrow" data-t="eyebrow3"></div>
+          <p class="s-sub" id="shalakaSub" data-t="shalakaSub" style="margin-top:4px"></p>
+          <div class="board" id="board">
+            <div class="grid" id="grid" role="grid" aria-label="Ram Shalaka grid, 15 by 15"></div>
+            <svg class="thread" id="thread"><polyline id="threadLine" points=""></polyline></svg>
+            <div class="veil" id="veil"><div class="naamlekh" id="naamlekh" aria-hidden="true"></div><div class="vlabel" data-t="veilLabel"></div></div>
+            <div class="touch" id="touch"></div>
+          </div>
+          <div class="slots" id="slots" aria-live="polite"></div>
+          <div class="under"><button class="linkbtn" id="liftBtn" data-t="liftBtn"></button><span class="small" id="countNote"></span></div>
+        </div>
+
+        <!-- 4 Answer -->
+        <div class="screen" id="s-uttar">
+          <div class="eyebrow" data-t="eyebrow4"></div>
+          <div class="chaupai" id="chaupai"></div>
+          <div class="src" id="src"></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+            <span class="phal" id="phal"></span>
+            <button class="chipbtn" id="scriptBtn" aria-pressed="false">IAST</button>
+            <button class="chipbtn" id="listenBtn" data-t="listen"></button>
+          </div>
+          <p class="mean" id="mean"></p>
+          <div class="tabs" role="tablist">
+            <button class="tab" role="tab" id="tab-you" aria-selected="true" data-t="tabYou"></button>
+            <button class="tab" role="tab" id="tab-prasang" aria-selected="false" data-t="tabPrasang"></button>
+          </div>
+          <div class="panel" id="panel" role="tabpanel"></div>
+          <div class="mala" id="mala"></div>
+          <div class="acts">
+            <button class="btn" id="planBtn" data-t="planBtn"></button>
+            <div class="acts-row">
+              <button class="btn quiet" id="shareBtn" data-t="shareBtn"></button>
+              <button class="btn quiet" id="waBtn" data-t="waBtn"></button>
+            </div>
+            <button class="btn ghost" id="againBtn"></button>
+          </div>
+        </div>
+
+        <!-- 5 Done for today -->
+        <div class="screen" id="s-done">
+          <div class="flame-wrap" style="height:170px"><div class="halo"></div><div class="lamp"></div><div class="flame low"></div></div>
+          <div class="s-title" data-t="doneTitle" style="text-align:center"></div>
+          <p class="s-sub" data-t="doneSub" style="text-align:center"></p>
+          <p class="rule" id="doneTime" style="text-align:center"></p>
+          <div class="acts" style="margin-top:22px"><button class="btn ghost" id="seeMala" data-t="seeMala"></button></div>
+        </div>
+
+        <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Share card preview">
+          <div style="width:100%">
+            <div class="card" id="card"></div>
+            <div class="acts-row" style="margin-top:12px"><button class="btn quiet" id="copyBtn" data-t="copyBtn"></button><button class="btn quiet" id="closeModal" data-t="close"></button></div>
+          </div>
+        </div>
+        <div class="toast" id="toast" role="status"></div>
+      </div>
+      <div class="review" aria-label="Jump to a screen for review">
+        <span class="small" style="width:100%;text-align:center">Review shortcuts</span>
+        <button class="chipbtn" data-jump="sankalp">1 Sankalp</button>
+        <button class="chipbtn" data-jump="dhyan">2 Dhyan</button>
+        <button class="chipbtn" data-jump="shalaka">3 Shalaka</button>
+        <button class="chipbtn" data-jump="uttar">4 Answer</button>
+        <button class="chipbtn" data-jump="done">5 Day done</button>
+        <button class="chipbtn" id="resetDemo">Reset demo</button>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="kicker">The idea in one line</div>
+      <h2>A ritual you can feel in the hand, ending in one line of the Manas and the scene it came from.</h2>
+      <p class="lede">Every rival page is the same: a 15×15 table, a click, and a chaupai with a one-line verdict. Ours keeps every step of the tradition: remembering Ram, asking once, eyes closed, the shalaka (needle), counting every ninth square. Each step becomes something you do with your finger, and the answer comes with the story behind the line, so it carries meaning on top of the yes or no.</p>
+      <div class="notice-list">
+        <div class="nl"><span class="n">1</span><p><b>Sankalp.</b> Hold a question. Typing is optional and stays on the phone. Three diyas at the top are today's three questions, the traditional limit.</p></div>
+        <div class="nl"><span class="n">2</span><p><b>Dhyan.</b> Press and hold. The diya rises and <span class="deva">श्री राम जय राम जय जय राम</span> lights word by word. Let go early and the flame dips.</p></div>
+        <div class="nl"><span class="n">3</span><p><b>Shalaka.</b> The grid sits under a cloth written with Ram naam. Rest your finger anywhere on it and hold: that is the digital "eyes closed".</p></div>
+        <div class="nl"><span class="n">4</span><p><b>The count.</b> The cloth lifts. A gold thread hops every ninth square, wrapping around, and each syllable drops into its slot until the chaupai assembles itself. This is exactly how Tulsidas's grid works, made visible.</p></div>
+        <div class="nl"><span class="n">5</span><p><b>Uttar.</b> The chaupai, the traditional sign, the meaning, the scene it comes from, and what it asks of you today. Then a share card, a 7-day reading plan from this line, and the mala of nine.</p></div>
+      </div>
+      <p class="small" style="margin-top:22px">The prototype is fully working: the grid is the traditional layout, and the answer you get comes from the cell you choose by the ninth-square rule. Hindi is the default; EN shows the English twin. Sound is a soft synthesized bell per hop. Diyas and the mala are saved in this browser only.</p>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="kicker">Why build it</div>
+    <h2>Big, steady Hindi demand, served by plain tables</h2>
+    <p class="lede">People who search this already want what Wisdom does: one line of scripture for what they are facing right now. Here they ask for it in a form their families have trusted for generations.</p>
+    <div class="cols3">
+      <div class="box stat"><div class="big">&gt;10K</div><p>"ram shalaka" per month in India, plus "shri ram shalaka", "ram shalaka prashnavali" and "shri ram shalaka prashnavali" at &gt;1K each; "with answers", "online", "with answers in hindi" at &gt;100. Ahrefs free, India, 30 Oct 2026.</p></div>
+      <div class="box stat"><div class="big">9 of 9</div><p>All nine answer chaupais are already in our Manas data (ids in the table below), and all 225 cells of the traditional grid are verified: every start column reproduces its chaupai exactly.</p></div>
+      <div class="box stat"><div class="big">1–2.5K</div><p>Estimated visits per month by month 4. Revised down from 2–4K: drikpanchang.com, one of the largest Hindu sites, ranks with its own grid, and shubhpanchang and ajmerastro have one too. Ahrefs' "Easy" undersells that.</p></div>
+    </div>
+    <div class="cols2">
+      <div class="box">
+        <h3>What rivals do</h3>
+        <p>drikpanchang: a 15×15 grid inside a panchang page with ads and a saffron-brown theme; click a cell, read the chaupai. It also lists the traditional rules: ask with a clean mind, don't repeat a question, at most three a day.</p>
+        <p>shubhpanchang and ajmerastro: a similar grid with long text around it, next to Hanuman, Ganesh, Durga and Sai prashnavalis and astrology services.</p>
+      </div>
+      <div class="box">
+        <h3>The gap we take</h3>
+        <p>No ritual pacing, so it feels like a lottery click. No scene: who said the line, to whom, in which moment. Negative answers land as bare verdicts. No reason to come back and nothing worth sharing. Nothing leads to reading the Manas itself.</p>
+        <p>We keep the tradition exactly as it is and give it presence, context and a next step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="moves">
+  <div class="wrap">
+    <div class="kicker">The spin</div>
+    <h2>Five design moves</h2>
+    <p class="lede">Each move turns one element of the tradition into something the person does. Engagement comes from the ritual itself, so there are no streaks or points.</p>
+    <div style="margin-top:20px">
+      <div class="move"><div class="num">१</div><div>
+        <h3>The cloth of Ram naam</h3>
+        <p>The grid sits under a red cloth woven with "राम" written over and over, like a Ram naam lekhan sheet. You rest your finger on the cloth and hold for about a second while a gold ring closes. The cloth then lifts like a curtain at an aarti.</p>
+        <div class="why"><div><b>Keeps it sacred</b>Choosing blind is the traditional instruction (eyes closed, finger on the page). The cloth makes it impossible to "pick a nice letter".</div><div><b>Makes it engaging</b>The hold gives weight to the choice, and the lift is a reveal. "Lift the cloth" is there for anyone who wants to choose with open eyes.</div></div>
+      </div></div>
+      <div class="move"><div class="num">२</div><div>
+        <h3>The count made visible</h3>
+        <p>From your cell, a gold thread hops every ninth square, wrapping around the grid, about 170 ms per hop. Each syllable drops into one of 25 slots in the line's own order, so the chaupai assembles out of order, starting wherever your finger landed. A soft bell sounds per hop and the phone gives a tiny vibration on Android.</p>
+        <div class="why"><div><b>Keeps it sacred</b>It shows exactly how the prashnavali works: Tulsidas's 225 syllables, counted by nines. Nothing is random or hidden, and devotees can check it.</div><div><b>Makes it engaging</b>Four seconds of watching your answer spell itself out is the moment people screen-record and share.</div></div>
+      </div></div>
+      <div class="move"><div class="num">३</div><div>
+        <h3>Three diyas a day</h3>
+        <p>The tradition says at most three questions a day and never the same question twice. Three diyas at the top are today's questions; each one goes out when used. The day resets at 4 AM (Brahma muhurta). A repeated question gets "यह प्रश्न आज पूछा जा चुका है" and the earlier chaupai.</p>
+        <div class="why"><div><b>Keeps it sacred</b>The rule comes from the tradition and is shown as such. It stops people re-rolling until they get a "yes".</div><div><b>Makes it engaging</b>A limit makes each question count, and the diyas coming back at dawn give people a reason to return.</div></div>
+      </div></div>
+      <div class="move"><div class="num">४</div><div>
+        <h3>The scene behind your line</h3>
+        <p>Every answer has two tabs. "आज आपके लिए" says what the line asks of you today. "प्रसंग" tells the story: Lankini sending Hanuman into Lanka, Shiva letting Sati go, Mandodari over Ravana. The traditional sign stays visible as a chip: shubh, sanshay, or "अभी नहीं".</p>
+        <div class="why"><div><b>Keeps it sacred</b>We never hide or soften the traditional reading. We add what the episode teaches when you read its whole arc.</div><div><b>Makes it engaging</b>A "no" turns into guidance ("somewhere in this there is pretense, set it right first"), which is what makes people trust the tool and come back.</div></div>
+      </div></div>
+      <div class="move"><div class="num">५</div><div>
+        <h3>The mala of nine</h3>
+        <p>Nine beads under the answer, one per chaupai. The beads you've received stay lit, and each opens its own page. Over weeks, a person learns nine chaupais of the Manas by heart without trying. Saved on the device; a mala synced to the Wisdom account comes later.</p>
+        <div class="why"><div><b>Keeps it sacred</b>The mala is a devotional object, so collecting feels like japa. There are no points or badges.</div><div><b>Makes it engaging</b>An empty bead invites the next visit, and the full mala is a natural moment for "read the Manas with us: 7 days".</div></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div class="kicker">Flow and copy</div>
+    <h2>Five screens, about 40 seconds end to end</h2>
+    <p class="lede">Hindi is the source copy; English is the twin for /ram-shalaka (diaspora, Fiji, Mauritius, Trinidad). All copy follows the Wisdom rules: no dashes, no contrast patterns, written about what the person feels and does.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Screen</th><th>Job</th><th>Hindi copy</th><th>English copy</th><th>Interaction and timing</th></tr></thead>
+      <tbody id="flowRows"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="nine">
+  <div class="wrap">
+    <div class="kicker">Content model</div>
+    <h2>The nine chaupais</h2>
+    <p class="lede">Five lines are traditionally read as shubh, two as sanshay, two as "not now". Speakers and scenes are as in the Manas. The "for you" lines are first drafts and need review against traditional commentary before launch. Doha numbering differs between editions, so match the visible refs to the Gita Press edition; the data ids are ours.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>#</th><th>Chaupai</th><th>Where and who</th><th>Sign</th><th>Meaning</th><th>What it asks of you</th><th>Data id</th></tr></thead>
+      <tbody id="nineRows"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="system">
+  <div class="wrap">
+    <div class="kicker">Look, motion, sound</div>
+    <h2>Sandhya aarti, at night</h2>
+    <p class="lede">The setting is the Wisdom room (maroon-black and gold) with a pothi page on the altar. The grid is the one light-coloured object on screen, like a Gita Press page lit by a diya. There is no deity art: the sacred is carried by the text, the cloth, the flame and the thread.</p>
+    <div class="swatches">
+      <div class="sw"><i style="background:#120707"></i><div><b>Night</b>Page ground</div></div>
+      <div class="sw"><i style="background:#1c0c0a"></i><div><b>Room</b>Cards, phone body</div></div>
+      <div class="sw"><i style="background:#f2e4c9"></i><div><b>Pothi paper</b>Grid face only</div></div>
+      <div class="sw"><i style="background:#f5c96a"></i><div><b>Diya gold</b>Chaupai, thread, CTA</div></div>
+      <div class="sw"><i style="background:#d6452a"></i><div><b>Sindoor</b>Chosen cell, grid rules</div></div>
+      <div class="sw"><i style="background:#5a0f10"></i><div><b>Cloth</b>The veil</div></div>
+    </div>
+    <div class="cols2">
+      <div class="box">
+        <h3>Type</h3>
+        <div class="typeline"><span>Scripture</span><div style="font:24px var(--scripture);color:var(--gold)">प्रबिसि नगर कीजे सब काजा</div></div>
+        <div class="typeline"><span>Hindi UI</span><div class="deva" style="font-size:16px">मन में एक प्रश्न रखें</div></div>
+        <div class="typeline"><span>English display</span><div style="font:500 20px var(--display)">Hold one question in your heart</div></div>
+        <div class="typeline"><span>IAST</span><div style="font:italic 18px var(--display)">prabisi nagara kīje saba kājā</div></div>
+        <p class="small" style="margin-top:10px">Tiro Devanagari Hindi for scripture (calligraphic, close to a Gita Press page). Noto Sans Devanagari and Inter stay as the Wisdom UI faces. Load Tiro subset with Google Fonts' text= parameter limited to the grid and chaupai glyphs (about 6 KB).</p>
+      </div>
+      <div class="box">
+        <h3>Motion and sound</h3>
+        <ul class="clean">
+          <li><b>Dhyan hold:</b> 3.5 s. The flame scales from 0.55 to 1 and the halo grows; the seven words light in step. Letting go early dips the flame back.</li>
+          <li><b>Shalaka hold:</b> 0.9 s ring fill at the finger, then the cloth lifts in 0.9 s.</li>
+          <li><b>Count:</b> 25 hops at 170 ms (about 4.3 s), a bell at 1,320 Hz per hop, a two-note bell at the end. Vibration of 6 ms per hop where supported.</li>
+          <li><b>Reduced motion:</b> no flicker or lift; all slots fill in one step; sound stays off by default.</li>
+          <li><b>Production audio:</b> replace the synth with a recorded manjira tick and a temple bell, plus an optional tanpura drone. Recite the chaupai in Manas-path style (recorded, or the Wisdom TTS voice).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="wrap">
+    <div class="kicker">Rules and edge cases</div>
+    <h2>Respectful by construction</h2>
+    <div class="cols2">
+      <div class="box">
+        <h3>Product rules</h3>
+        <ul class="clean">
+          <li><b>Three per day, reset at 4 AM local.</b> Shown as diyas; the fourth attempt opens "आज के तीन प्रश्न पूरे हुए".</li>
+          <li><b>No repeat questions.</b> Typed questions are normalised and hashed on the device. A repeat shows the earlier answer. Untyped questions are trusted.</li>
+          <li><b>Private.</b> The question never leaves the phone. It goes to /start only if the person taps "7-day plan" and agrees, using the same consent sheet as the app.</li>
+          <li><b>No ads, no astrology upsell, no deity images.</b> This is a big part of how we stand apart from every rival.</li>
+          <li><b>The traditional sign is never hidden.</b> Negative signs use calm colours (muted sindoor, never alarm red) and always come with "what it asks of you".</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Edge cases</h3>
+        <ul class="clean">
+          <li><b>Health, legal, money questions:</b> if typed text matches a small keyword list (doctor, surgery, case, loan…), show one line under the answer: "शलाका मन को दिशा देती है। स्वास्थ्य, क़ानून या पैसे के निर्णय में विशेषज्ञ की सलाह भी लें।"</li>
+          <li><b>Lifted finger mid-hold:</b> the ring resets and nothing is chosen.</li>
+          <li><b>Tap by keyboard or screen reader:</b> the cloth exposes a "choose a square" button. When lifted, cells are focusable buttons with aria-labels, and Enter chooses.</li>
+          <li><b>No storage</b> (private mode): the tool still works, diyas reset on reload, and the mala doesn't persist.</li>
+          <li><b>Low-end Android:</b> no canvas, no images, CSS only. The grid is server-rendered HTML; JS under 25 KB gzipped.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="growth">
+  <div class="wrap">
+    <div class="kicker">Growth loops</div>
+    <h2>From one question to a reader</h2>
+    <div class="cols3">
+      <div class="box"><h3>Share card</h3><p>A 4:5 and 9:16 card with the chaupai, the scene in one line and "श्रीराम शलाका · wisdomquotes.in". The question is never printed. WhatsApp first, then Save image. Generated server-side with @vercel/og so it works on any phone.</p></div>
+      <div class="box"><h3>Nine line pages</h3><p>Each chaupai gets its own page (/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja), with the meaning, the scene, the other 3 lines of the full chaupai unit and audio. These capture "&lt;line&gt; meaning" searches and are where the mala beads lead.</p></div>
+      <div class="box"><h3>Into Wisdom</h3><p>"इस चौपाई से 7 दिन का पाठ" opens /start seeded with this line's theme (and the question, if consented). Android: the WhatsApp channel "रोज़ एक चौपाई". iPhone: "इस चौपाई को लॉक स्क्रीन पर रखें" with an App Store deep link. A full mala prompts a 7-day Manas plan.</p></div>
+    </div>
+    <p class="small" style="margin-top:16px">Be realistic: this audience is Hindi, Android-heavy and older North Indian. Expect it to grow reach and the WhatsApp and email list. App revenue from here will be small.</p>
+  </div>
+</section>
+
+<section id="seo">
+  <div class="wrap">
+    <div class="kicker">Pages and SEO</div>
+    <h2>One tool page, nine line pages, one English twin</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>URL</th><th>Targets</th><th>Title tag</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td><code>/hi/ram-shalaka</code></td><td class="hi">ram shalaka, shri ram shalaka prashnavali, with answers, online</td><td class="hi">श्रीराम शलाका प्रश्नावली: चौपाई, अर्थ और प्रसंग सहित</td><td>Tool above the fold. The grid is server-rendered as a real HTML table (225 cells), so it can be crawled. Below it: how to use (the traditional rules), all nine answers with meanings (this is the "with answers" query), the scenes, FAQ, a link to the Manas hub.</td></tr>
+        <tr><td><code>/hi/ram-shalaka/[line]</code> ×9</td><td class="hi">"prabisi nagar kije sab kaja" meaning, "hoihi soi jo ram rachi rakha" arth, etc.</td><td class="hi">होइहि सोइ जो राम रचि राखा: अर्थ और प्रसंग</td><td>Full chaupai unit (4 lines), word meanings, scene, audio, "ask the shalaka" button. Several of these lines are famous on their own; "hoihi soi" in particular is quoted everywhere.</td></tr>
+        <tr><td><code>/ram-shalaka</code></td><td>ram shalaka in english, ram shalaka prashnavali english</td><td>Shri Ram Shalaka Prashnavali in English, with meanings</td><td>Same tool with English UI and an IAST toggle; hreflang pair with /hi. Serves the US/UK diaspora and Fiji, Mauritius and Trinidad.</td></tr>
+      </tbody>
+    </table></div>
+    <ul class="clean" style="margin-top:18px">
+      <li><b>Schema:</b> FAQPage for the how-to and rules; Article with citation to the Ramcharitmanas for each line page.</li>
+      <li><b>Speed:</b> no layout shift on the grid (fixed aspect-ratio), Tiro subset, no third-party scripts except the existing analytics.</li>
+      <li><b>Internal links:</b> /hi homepage card "मन में प्रश्न है? श्रीराम शलाका से पूछिए", the Manas and Ramayana hubs, every chaupai verse page.</li>
+      <li><b>AI citation:</b> the top of the tool page says in two sentences what the prashnavali is and that it is printed in Gita Press editions of the Manas, and lists the nine lines with refs. That is the passage answer engines quote.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="build">
+  <div class="wrap">
+    <div class="kicker">Build spec</div>
+    <h2>Next.js, one data file, one client component</h2>
+    <div class="cols2">
+      <div class="box">
+        <h3>Structure</h3>
+        <ul class="clean">
+          <li><code>content/ram-shalaka.json</code>: the 225-cell grid, the nine line records, and the copy for hi and en.</li>
+          <li><code>app/hi/ram-shalaka/page.tsx</code>: a server component that renders the grid table, the nine answers, how-to and FAQ.</li>
+          <li><code>components/shalaka/Ritual.tsx</code>: a client component with the state machine sankalp → dhyan → shalaka → ganana → uttar → done.</li>
+          <li><code>lib/shalaka.ts</code>: <code>sequence(p)</code> returns 25 cell indices; class k = p mod 9, start position m = (p − k) / 9, positions m..24 then 0..m−1.</li>
+          <li><code>app/api/og/shalaka/[k]/route.tsx</code>: the share card image.</li>
+          <li>Storage key <code>wq_shalaka_v1</code>: {day, used, asked:[{hash,k}], mala:[k]}, inside try/catch.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Events (Mixpanel, same style as /start)</h3>
+        <ul class="clean">
+          <li><b>Shalaka Opened</b> {lang, device, referrer}</li>
+          <li><b>Sankalp Set</b> {typed: bool}</li>
+          <li><b>Diya Lit</b> {held_ms}, <b>Dhyan Abandoned</b></li>
+          <li><b>Shalaka Placed</b> {cell, veil: bool}</li>
+          <li><b>Chaupai Revealed</b> {k, sign, nth_today}</li>
+          <li><b>Prasang Opened</b>, <b>Listen Played</b></li>
+          <li><b>Shalaka Shared</b> {channel}, <b>Plan From Chaupai</b> {k}, <b>WhatsApp Joined</b></li>
+          <li><b>Daily Limit Reached</b>, <b>Repeat Question Blocked</b></li>
+        </ul>
+      </div>
+    </div>
+    <pre id="jsonSample"></pre>
+  </div>
+</section>
+
+<section id="measure">
+  <div class="wrap">
+    <div class="kicker">Metrics and risks</div>
+    <h2>What good looks like at day 60</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Metric</th><th>Target</th><th>Why this number</th></tr></thead>
+      <tbody>
+        <tr><td><b>Placed → revealed</b></td><td>85%+</td><td>The count takes 4 seconds. If people leave during it, shorten the hop time.</td></tr>
+        <tr><td><b>Dhyan completion</b></td><td>75%+</td><td>If fewer finish the hold, cut it to 2.5 s or make the button tap-to-start.</td></tr>
+        <tr><td><b>Second question, same visit</b></td><td>30%</td><td>The diyas invite it; above 60% would mean people are re-rolling.</td></tr>
+        <tr><td><b>Share rate</b></td><td>8%</td><td>The share card is the main loop for this audience.</td></tr>
+        <tr><td><b>7-day return</b></td><td>15%</td><td>The site average is about 8%. Diyas at dawn and the mala should double it.</td></tr>
+        <tr><td><b>WhatsApp or /start from answer</b></td><td>5%</td><td>This is how reach becomes a list.</td></tr>
+        <tr><td><b>Google clicks</b></td><td>1–2.5K/mo by month 4</td><td>Tool page at positions 3 to 6 plus the nine line pages.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="cols2">
+      <div class="box"><h3>Risks</h3><ul class="clean">
+        <li><b>Brand fit.</b> This is divination, and Wisdom is calm, sourced reading. The mitigation is to show the source, the scene and the guidance, and to tie the page to the Manas hub. If it still feels off, launch it under /hi only.</li>
+        <li><b>Literal readings of "not now".</b> Use calm colours, add the guidance line and the expert-advice note for health, legal and money.</li>
+        <li><b>drikpanchang's authority.</b> We win on experience, line pages and shares, not on links. Expect positions 4 to 8 at first.</li>
+      </ul></div>
+      <div class="box"><h3>Open questions for you</h3><ul class="clean">
+        <li>Ship the cloth as the default, or offer the open grid first with the cloth as a choice?</li>
+        <li>Keep the 4 AM reset, or use local midnight?</li>
+        <li>Record the chaupai audio yourself (or a kathavachak), or use the Wisdom TTS voice?</li>
+        <li>Should the English twin launch with the Hindi page, or after the Ramayana film window?</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="wrap">
+    <div class="kicker">Seven-day plan</div>
+    <h2>Solo, nights and weekends</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Day</th><th>Work</th><th>Done when</th></tr></thead>
+      <tbody>
+        <tr><td><b>1</b></td><td>Data file: grid, nine records, meanings, scenes, "for you" lines reviewed against traditional commentary; match Gita Press refs.</td><td>A unit test passes: each of the 225 start cells yields its chaupai.</td></tr>
+        <tr><td><b>2</b></td><td>Server page: the grid as a table, the nine answers, how-to, FAQ, schema.</td><td>The page is fully readable with JS off.</td></tr>
+        <tr><td><b>3</b></td><td>Ritual component: sankalp, dhyan hold, cloth and shalaka hold, the count with thread and slots.</td><td>Runs at 60 fps on a ₹10K Android; reduced motion works.</td></tr>
+        <tr><td><b>4</b></td><td>Answer screen: sign chip, tabs, mala, diyas, repeat guard, the 4 AM reset.</td><td>Three questions use up the diyas; a repeat shows the old answer.</td></tr>
+        <tr><td><b>5</b></td><td>Share card (OG route), WhatsApp share, the "7-day plan" bridge to /start, the iPhone Lock Screen CTA.</td><td>The card renders in WhatsApp preview on Android and iPhone.</td></tr>
+        <tr><td><b>6</b></td><td>The nine line pages, the English twin, hreflang, Mixpanel events, audio.</td><td>Events show up in the live view.</td></tr>
+        <tr><td><b>7</b></td><td>QA, Search Console submit, /hi homepage card, first Reel (screen recording of the count).</td><td>The page is indexed and the Reel is posted.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Grid: the traditional Shri Ram Shalaka Prashnavali as printed with Gita Press editions of the Ramcharitmanas, transcribed from drikpanchang.com's grid and checked cell by cell against our Manas data. Demand: Ahrefs free Keyword Generator, India, 30 Oct 2026. Film and festival context: separate funnel doc. Prepared for Wisdom, wisdomquotes.in.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var ROWS=[
+"सु प्र उ बि हो मु ग ब सु नु बि घ धि इ द",
+"र रु फ सि सि रहिं बस हि मं ल न ल य न अं",
+"सुज सो ग सु कु म स ग त न इ ल धा बे नो",
+"त्य र न कु जो म रि र र अ की हो सं रा य",
+"पु सु थ सी जे इ ग म सं क रे हो स स नि",
+"त र त र स हुँ ह ब ब प चि स हिं स तु",
+"म का ा र र म मि मी म्हा ा जा हू हीं ा ा",
+"ता रा रे री हृ का फ खा जू ई र रा पू द ल",
+"नि को जो गो न मु जि यँ ने मनि क ज प स ल",
+"हि रा मि स रि ग द न्मु ख म खि जि म त जं",
+"सिं ख नु न को मि निज र्क ग धु ध सु का स र",
+"गु ब म अ रि नि म ल ा न ढ़ ती न क भ",
+"ना पु व अ ा र ल ा ए तु र न नु वै थ",
+"सि हुँ सु म्ह रा र स स र त न ख ा ज ा",
+"र ा ा ला धी ा री ा हू हीं खा जू ई रा रे"];
+var CELLS=[];ROWS.forEach(function(r){r.split(" ").forEach(function(c){CELLS.push(c);});});
+
+var CH=[
+{k:0,id:"rcm.1.224.chaupai.4",sign:"shubh",
+ deva:["सुनु सिय सत्य असीस हमारी।","पूजिहि मन कामना तुम्हारी॥"],
+ iast:["sunu siya satya asīsa hamārī,","pūjihi mana kāmanā tumhārī"],
+ kand:{hi:"बालकाण्ड · पुष्पवाटिका",en:"Bal Kand · the garden in Janakpur"},
+ who:{hi:"माँ गौरी, सीता जी से",en:"Goddess Gauri, to Sita"},
+ mean:{hi:"हे सीता, हमारी सच्ची आशीष सुनो, तुम्हारी मनोकामना पूरी होगी।",en:"Listen, Sita, my blessing is true: the wish in your heart will be fulfilled."},
+ prasang:{hi:"जनकपुर की पुष्पवाटिका में सीता जी गौरी माँ के मंदिर गईं और मन ही मन श्रीराम को माँगा। माँ की मूर्ति मुस्कुराई, उसकी माला खिसक कर गिरी, और यह आशीष मिली।",en:"In Janakpur's garden, Sita went to Gauri's shrine and silently asked for Ram. The goddess smiled, her garland slipped down, and she gave this blessing."},
+ you:{hi:"जो आपने सच्चे मन से माँगा है, वह मिलेगा। अपनी प्रार्थना पर भरोसा रखें।",en:"What you asked for with a true heart will come. Trust your prayer."},
+ signTxt:{hi:"शुभ संकेत · कार्य सिद्ध होगा",en:"Auspicious · it will come through"}},
+{k:1,id:"rcm.5.4.chaupai.1",sign:"shubh",
+ deva:["प्रबिसि नगर कीजे सब काजा।","हृदयँ राखि कोसलपुर राजा॥"],
+ iast:["prabisi nagara kīje saba kājā,","hṛdayã rākhi kosalapura rājā"],
+ kand:{hi:"सुन्दरकाण्ड · लंका का द्वार",en:"Sundar Kand · the gate of Lanka"},
+ who:{hi:"लंकिनी, हनुमान जी से",en:"Lankini, to Hanuman"},
+ mean:{hi:"नगर में प्रवेश करके, कोसलपुर के राजा श्रीराम को हृदय में रखकर सब काम कीजिए।",en:"Enter the city and do all your work, keeping the King of Kosala in your heart."},
+ prasang:{hi:"हनुमान जी रात में लंका में प्रवेश कर रहे थे। द्वार पर लंकिनी ने रोका। उनके एक मुक्के से उसका अहंकार टूटा, और उसी ने यह कहकर उन्हें भीतर भेजा।",en:"Hanuman was slipping into Lanka by night. Lankini, its guardian, blocked him. One blow broke her pride, and she herself sent him in with these words."},
+ you:{hi:"आरंभ करें। राम को हृदय में रखकर हर कदम उठाएँ।",en:"Begin. Take each step with Ram in your heart."},
+ signTxt:{hi:"शुभ संकेत · आरंभ करें",en:"Auspicious · begin"}},
+{k:2,id:"rcm.1.7.chaupai.3",sign:"ashubh",
+ deva:["उघरहिं अंत न होइ निबाहू।","कालनेमि जिमि रावन राहू॥"],
+ iast:["ugharahiṃ anta na hoi nibāhū,","kālanemi jimi rāvana rāhū"],
+ kand:{hi:"बालकाण्ड · आरंभ की वंदना",en:"Bal Kand · the opening"},
+ who:{hi:"गोस्वामी तुलसीदास",en:"Goswami Tulsidas"},
+ mean:{hi:"कपट अंत में खुल जाता है, उसका निबाह नहीं होता, जैसे कालनेमि, रावण और राहु का हुआ।",en:"Pretense is exposed in the end and cannot last, as it was with Kalanemi, Ravana and Rahu."},
+ prasang:{hi:"तुलसीदास कहते हैं कि जो अच्छा वेश धरकर ठगते हैं, उनका कपट अंत में खुलता है। कालनेमि साधु बनकर हनुमान को रोकना चाहता था, राहु देवता बनकर अमृत पी गया, रावण साधु बनकर सीता को ले गया।",en:"Tulsidas says those who wear a good disguise to deceive are exposed in the end. Kalanemi posed as a sage to stop Hanuman, Rahu as a god to drink nectar, Ravana as a monk to take Sita."},
+ you:{hi:"इस काम में कहीं कपट है, आपका या किसी और का। आगे बढ़ने से पहले उसे सुधारें।",en:"Somewhere in this there is pretense, yours or someone else's. Set it right before you go further."},
+ signTxt:{hi:"अभी नहीं · रुकें और जाँचें",en:"Not now · pause and look again"}},
+{k:3,id:"rcm.1.3.chaupai.5",sign:"sanshay",
+ deva:["बिधि बस सुजन कुसंगत परहीं।","फनि मनि सम निज गुन अनुसरहीं॥"],
+ iast:["bidhi basa sujana kusaṃgata parahīṃ,","phani mani sama nija guna anusarahīṃ"],
+ kand:{hi:"बालकाण्ड · सत्संग और कुसंग",en:"Bal Kand · on good and bad company"},
+ who:{hi:"गोस्वामी तुलसीदास",en:"Goswami Tulsidas"},
+ mean:{hi:"विधि के वश सज्जन कुसंग में पड़ जाते हैं, पर साँप के फन की मणि की तरह अपना गुण नहीं छोड़ते।",en:"By fate, good people fall into bad company, yet like the gem in a serpent's hood they keep their own nature."},
+ prasang:{hi:"मानस के आरंभ में तुलसीदास सत्संग और कुसंग की बात करते हैं। संयोग से सज्जन बुरी संगत में पड़ भी जाएँ, तो भी अपना स्वभाव नहीं छोड़ते।",en:"In the opening of the Manas, Tulsidas speaks of good and bad company. Chance may place good people among the wrong ones, but they keep their nature."},
+ you:{hi:"इस काम से जुड़े लोगों को परखें। संगत ठीक न हो तो भी अपना स्वभाव न छोड़ें।",en:"Look closely at the people around this. Even if the company is wrong, keep your own nature."},
+ signTxt:{hi:"संशय · संगत परखें",en:"Uncertain · look at the company around it"}},
+{k:4,id:"rcm.1.48.chaupai.8",sign:"sanshay",
+ deva:["होइहि सोइ जो राम रचि राखा।","को करि तर्क बढ़ावै साखा॥"],
+ iast:["hoihi soi jo rāma raci rākhā,","ko kari tarka baṛhāvai sākhā"],
+ kand:{hi:"बालकाण्ड · सती का संशय",en:"Bal Kand · Sati's doubt"},
+ who:{hi:"भगवान शिव",en:"Lord Shiva"},
+ mean:{hi:"जो राम ने रच रखा है वही होगा। तर्क करके बात की शाखाएँ कौन बढ़ाए।",en:"What Ram has ordained will come to pass. Why grow more branches by arguing?"},
+ prasang:{hi:"सती जी शिव जी के समझाने पर भी श्रीराम की परीक्षा लेने चली गईं। शिव जी ने तर्क छोड़ दिया, यह चौपाई कही, और राम-नाम जपने लगे।",en:"Sati went to test Ram although Shiva had advised against it. Shiva stopped arguing, said this, and turned to chanting Ram's name."},
+ you:{hi:"जो आपके हाथ में था, कर लिया। अब परिणाम से बहस न करें, प्रतीक्षा करें और नाम जपें।",en:"You have done what was in your hands. Stop arguing with the outcome; wait, and remember the Name."},
+ signTxt:{hi:"संशय · परिणाम प्रभु पर छोड़ें",en:"Uncertain · leave the outcome to Ram"}},
+{k:5,id:"rcm.1.2.chaupai.4",sign:"shubh",
+ deva:["मुद मंगलमय संत समाजू।","जो जग जंगम तीरथराजू॥"],
+ iast:["muda maṃgalamaya saṃta samājū,","jo jaga jaṃgama tīratharājū"],
+ kand:{hi:"बालकाण्ड · संत समाज की वंदना",en:"Bal Kand · praise of the company of saints"},
+ who:{hi:"गोस्वामी तुलसीदास",en:"Goswami Tulsidas"},
+ mean:{hi:"संतों का समाज आनंद और मंगल से भरा है, जो संसार में चलता-फिरता तीर्थराज प्रयाग है।",en:"The company of saints is joy and blessing itself, a Prayag that walks the earth."},
+ prasang:{hi:"मानस के आरंभ में तुलसीदास संत समाज की वंदना करते हैं। वे कहते हैं कि सत्संग चलता-फिरता प्रयागराज है, जिसमें राम-भक्ति गंगा की धारा है।",en:"At the start of the Manas, Tulsidas honours the company of saints: a Prayag that walks, with devotion to Ram as its Ganga."},
+ you:{hi:"कार्य शुभ है। इसे अच्छे लोगों के साथ और उनकी सलाह से करें।",en:"The work is auspicious. Do it with good people and take their counsel."},
+ signTxt:{hi:"शुभ संकेत · मंगल होगा",en:"Auspicious · it will go well"}},
+{k:6,id:"rcm.5.4.chaupai.1",sign:"shubh",
+ deva:["गरल सुधा रिपु करहिं मिताई।","गोपद सिंधु अनल सितलाई॥"],
+ iast:["garala sudhā ripu karahiṃ mitāī,","gopada siṃdhu anala sitalāī"],
+ kand:{hi:"सुन्दरकाण्ड · लंका का द्वार",en:"Sundar Kand · the gate of Lanka"},
+ who:{hi:"लंकिनी, हनुमान जी से",en:"Lankini, to Hanuman"},
+ mean:{hi:"जिसके हृदय में राम हों, उसके लिए विष अमृत हो जाता है, शत्रु मित्र बन जाते हैं, समुद्र गाय के खुर जितना और आग शीतल हो जाती है।",en:"For one who holds Ram in the heart, poison turns to nectar, enemies turn friendly, the ocean shrinks to a calf's hoofprint and fire turns cool."},
+ prasang:{hi:"हनुमान जी को भीतर भेजते हुए लंकिनी आगे कहती है कि जिसके हृदय में राम बसते हैं, उसके लिए हर कठिनाई उलट जाती है।",en:"Sending Hanuman in, Lankini goes on: for the one who carries Ram within, every hardship turns around."},
+ you:{hi:"रास्ते की बाधाएँ जितनी बड़ी दिखती हैं, उतनी हैं नहीं। मन स्थिर रखकर आगे बढ़ें।",en:"The obstacles are smaller than they look. Keep your mind steady and go on."},
+ signTxt:{hi:"शुभ संकेत · बाधाएँ हटेंगी",en:"Auspicious · obstacles will ease"}},
+{k:7,id:"rcm.6.104.chaupai.4",sign:"ashubh",
+ deva:["बरुन कुबेर सुरेस समीरा।","रन सन्मुख धरि काहुँ न धीरा॥"],
+ iast:["baruna kubera suresa samīrā,","rana sanmukha dhari kāhũ na dhīrā"],
+ kand:{hi:"लंकाकाण्ड · मंदोदरी का विलाप",en:"Lanka Kand · Mandodari's lament"},
+ who:{hi:"मंदोदरी, रावण के लिए",en:"Mandodari, over Ravana"},
+ mean:{hi:"वरुण, कुबेर, इंद्र और वायु, इनमें से कोई भी युद्ध में तुम्हारे सामने धैर्य न रख सका।",en:"Varuna, Kubera, Indra and Vayu: none of them could hold steady before you in battle."},
+ prasang:{hi:"युद्ध के बाद मंदोदरी रावण के शरीर के पास विलाप करती है। वह याद करती है कि देवता भी उसके सामने टिक न सके, फिर भी राम से वैर ने सब छीन लिया।",en:"After the war, Mandodari mourns over Ravana. She recalls that even the gods could not stand before him, and yet his enmity with Ram cost him everything."},
+ you:{hi:"ताक़त अकेली काफ़ी नहीं होती, रावण के पास सब था। पूछिए कि यह कार्य धर्म के अनुकूल है या नहीं।",en:"Strength alone is not enough; Ravana had all of it. Ask whether this is right, as well as whether you can."},
+ signTxt:{hi:"अभी नहीं · रुकें और जाँचें",en:"Not now · pause and look again"}},
+{k:8,id:"rcm.1.224.chaupai.6",sign:"shubh",
+ deva:["सुफल मनोरथ होहुँ तुम्हारे।","रामु लखनु सुनि भए सुखारे॥"],
+ iast:["suphala manoratha hohũ tumhāre,","rāmu lakhanu suni bhae sukhāre"],
+ kand:{hi:"बालकाण्ड · गुरु का आशीर्वाद",en:"Bal Kand · the guru's blessing"},
+ who:{hi:"विश्वामित्र, राम-लक्ष्मण से",en:"Vishwamitra, to Ram and Lakshman"},
+ mean:{hi:"तुम्हारे मनोरथ सफल हों। यह सुनकर राम और लक्ष्मण प्रसन्न हुए।",en:"May your hopes bear fruit. Hearing this, Ram and Lakshman were glad."},
+ prasang:{hi:"उसी सुबह राम और लक्ष्मण गुरु विश्वामित्र की पूजा के लिए फूल लाए। गुरु ने फूल लेकर पूजा की और दोनों भाइयों को यह आशीष दी।",en:"That same morning Ram and Lakshman brought flowers for their guru's worship. Vishwamitra accepted them and blessed the brothers."},
+ you:{hi:"आपकी मेहनत और सेवा देखी गई है। मनोरथ सफल होगा।",en:"Your effort and service have been seen. Your hope will bear fruit."},
+ signTxt:{hi:"शुभ संकेत · मनोरथ सफल होगा",en:"Auspicious · your hope will bear fruit"}}
+];
+
+var T={
+ hi:{eyebrow1:"श्रीराम शलाका प्रश्नावली",sankalpTitle:"मन में एक प्रश्न रखें",sankalpSub:"श्रीराम का स्मरण करें। प्रश्न लिखना ज़रूरी नहीं। लिखेंगे तो यह इसी फ़ोन पर रहेगा।",qLabel:"आपका प्रश्न (वैकल्पिक)",qPh:"जैसे: क्या मुझे यह नौकरी बदलनी चाहिए?",sankalpBtn:"प्रश्न मन में है",rule:"परंपरा: शुद्ध मन से पूछें। एक प्रश्न एक ही बार। दिन में तीन प्रश्न।",eyebrow2:"ध्यान",holdBtn:"दबाकर रखें",dhyanHint:"श्रीराम का नाम पूरा होने तक थामे रहें",dhyanEarly:"थोड़ा और ठहरें",eyebrow3:"शलाका",shalakaSub:"आँखें मूँदें। पर्दे पर कहीं भी उँगली टिकाकर थामे रहें।",shalakaOpen:"किसी भी खाने पर उँगली टिकाकर थामे रहें।",veilLabel:"यहाँ उँगली टिकाएँ",liftBtn:"पर्दा हटाकर चुनें",coverBtn:"पर्दा वापस डालें",counting:"हर नौवाँ अक्षर गिना जा रहा है",eyebrow4:"आपकी चौपाई",listen:"सुनें",tabYou:"आज आपके लिए",tabPrasang:"प्रसंग",planBtn:"इस चौपाई से 7 दिन का पाठ",shareBtn:"शेयर कार्ड",waBtn:"रोज़ एक चौपाई",again:"एक और प्रश्न",left:"बचे",doneTitle:"आज के तीन प्रश्न पूरे हुए",doneSub:"परंपरा कहती है, दिन में तीन से अधिक नहीं। जो मिला है उस पर मनन करें।",seeMala:"अपनी मानस माला देखें",copyBtn:"चौपाई कॉपी करें",close:"बंद करें",mala:"मानस माला",repeat:"यह प्रश्न आज पूछा जा चुका है। तब यह चौपाई मिली थी:",tPlan:"प्रोटोटाइप: /start खुलेगा, इस चौपाई के भाव से 7 दिन का पाठ बनेगा।",tWa:"प्रोटोटाइप: Android पर WhatsApp चैनल \"रोज़ एक चौपाई\" खुलेगा। iPhone पर: इस चौपाई को लॉक स्क्रीन पर रखें।",tCopy:"चौपाई कॉपी हुई",tListen:"इस ब्राउज़र में आवाज़ उपलब्ध नहीं। असली पेज पर रिकॉर्ड की गई चौपाई चलेगी।",resetAt:"दीप प्रातः 4 बजे (ब्रह्म मुहूर्त) फिर जलेंगे। बचा समय:",cardTop:"श्रीराम शलाका",cardFoot:"wisdomquotes.in/hi/ram-shalaka",naam:["श्री","राम","जय","राम","जय","जय","राम"]},
+ en:{eyebrow1:"Shri Ram Shalaka Prashnavali",sankalpTitle:"Hold one question in your heart",sankalpSub:"Remember Shri Ram. You don't need to type it. If you do, it stays on this phone.",qLabel:"Your question (optional)",qPh:"For example: should I change this job?",sankalpBtn:"My question is ready",rule:"Tradition: ask with a clear mind. Each question once. Three questions a day.",eyebrow2:"Dhyan",holdBtn:"Press and hold",dhyanHint:"Keep holding until Ram's name is complete",dhyanEarly:"Stay a little longer",eyebrow3:"Shalaka",shalakaSub:"Close your eyes. Rest your finger anywhere on the cloth and keep it there.",shalakaOpen:"Rest your finger on any square and keep it there.",veilLabel:"Rest your finger here",liftBtn:"Lift the cloth and choose",coverBtn:"Cover the grid again",counting:"Counting every ninth syllable",eyebrow4:"Your chaupai",listen:"Listen",tabYou:"For you today",tabPrasang:"The scene",planBtn:"A 7-day reading from this line",shareBtn:"Share card",waBtn:"A chaupai a day",again:"Ask another",left:"left",doneTitle:"Today's three questions are done",doneSub:"Tradition asks for no more than three a day. Sit with what you received.",seeMala:"See your Manas mala",copyBtn:"Copy chaupai",close:"Close",mala:"Manas mala",repeat:"You asked this today already. The chaupai then was:",tPlan:"Prototype: opens /start with a 7-day reading built on this line.",tWa:"Prototype: Android opens the WhatsApp channel. iPhone: keep this chaupai on your Lock Screen.",tCopy:"Chaupai copied",tListen:"No voice in this browser. The live page plays a recorded chaupai.",resetAt:"The diyas relight at 4 AM (Brahma muhurta). Time left:",cardTop:"Shri Ram Shalaka",cardFoot:"wisdomquotes.in/ram-shalaka",naam:["श्री","राम","जय","राम","जय","जय","राम"]}
+};
+
+var $=function(id){return document.getElementById(id);};
+var lang="hi", sound=true, script="deva", current=1, veilOn=true, busy=false, tab="you";
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(reduce){sound=false;}
+
+/* storage */
+function dayKey(){var d=new Date(Date.now()-4*3600*1000);return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();}
+var mem={day:dayKey(),used:0,asked:[],mala:[]};
+function load(){try{var s=JSON.parse(localStorage.getItem("wq_shalaka_v1")||"null");if(s){mem.mala=s.mala||[];if(s.day===dayKey()){mem.used=s.used||0;mem.asked=s.asked||[];}}}catch(e){}}
+function save(){try{mem.day=dayKey();localStorage.setItem("wq_shalaka_v1",JSON.stringify(mem));}catch(e){}}
+load();
+
+/* i18n */
+function t(k){return T[lang][k];}
+function applyLang(){
+  document.querySelectorAll("[data-t]").forEach(function(el){var v=t(el.getAttribute("data-t"));if(typeof v==="string")el.textContent=v;});
+  $("q").placeholder=t("qPh");
+  $("langBtn").textContent=lang==="hi"?"EN":"हिं";
+  $("langBtn").setAttribute("aria-pressed",lang==="en");
+  $("soundBtn").textContent=lang==="hi"?"ध्वनि":"Sound";
+  $("liftBtn").textContent=veilOn?t("liftBtn"):t("coverBtn");
+  $("shalakaSub").textContent=veilOn?t("shalakaSub"):t("shalakaOpen");
+  renderNaam(0);renderDiyas();renderAnswer();renderAgain();renderMala();
+}
+
+/* diyas */
+function renderDiyas(){var h="";for(var i=0;i<3;i++){h+='<span class="diya'+(i<mem.used?" out":"")+'"><i></i><b></b></span>';}$("diyas").innerHTML=h;$("diyas").setAttribute("aria-label",(3-mem.used)+" of 3 questions left today");}
+
+/* screens */
+function show(name){document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("on");});$("s-"+name).classList.add("on");}
+
+/* sound */
+var ac=null;
+function bell(f,dur,g){if(!sound)return;try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();var o=ac.createOscillator(),o2=ac.createOscillator(),gn=ac.createGain(),t0=ac.currentTime;o.type="sine";o2.type="sine";o.frequency.value=f;o2.frequency.value=f*2.76;gn.gain.setValueAtTime(0.0001,t0);gn.gain.exponentialRampToValueAtTime(g||0.05,t0+0.01);gn.gain.exponentialRampToValueAtTime(0.0001,t0+(dur||0.6));o.connect(gn);o2.connect(gn);gn.connect(ac.destination);o.start(t0);o2.start(t0);o.stop(t0+(dur||0.6));o2.stop(t0+(dur||0.6));}catch(e){}}
+function buzz(ms){try{if(navigator.vibrate)navigator.vibrate(ms);}catch(e){}}
+
+/* toast */
+var tt=null;function toast(m){var el=$("toast");el.textContent=m;el.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){el.classList.remove("on");},3200);}
+
+/* sankalp */
+function norm(s){return (s||"").toLowerCase().replace(/[\s\?\.\,।!]+/g," ").trim();}
+$("toDhyan").addEventListener("click",function(){
+  var q=norm($("q").value);
+  $("repeatNote").classList.remove("on");
+  if(q){var prev=mem.asked.filter(function(a){return a.q===q;})[0];
+    if(prev){var c=CH[prev.k];$("repeatNote").innerHTML=t("repeat")+'<br><span style="font-family:var(--scripture);color:var(--gold);font-size:18px">'+c.deva[0]+" "+c.deva[1]+"</span>";$("repeatNote").classList.add("on");return;}}
+  if(mem.used>=3){goDone();return;}
+  show("dhyan");resetDhyan();
+});
+
+/* dhyan hold */
+var hT=null,hStart=0,HOLD=reduce?600:3500;
+function renderNaam(n){var w=t("naam"),h="";for(var i=0;i<w.length;i++)h+='<span class="'+(i<n?"lit":"")+'">'+w[i]+"</span>";$("naam").innerHTML=h;}
+function resetDhyan(){renderNaam(0);$("flame").classList.add("low");$("halo").style.transform="scale(.8)";$("holdRing").style.setProperty("--p",0);$("dhyanHint").textContent=t("dhyanHint");}
+function holdFrame(){var p=Math.min(1,(performance.now()-hStart)/HOLD);$("holdRing").style.setProperty("--p",p);var n=Math.floor(p*7+0.0001);renderNaam(n);$("halo").style.transform="scale("+(0.8+p*0.5)+")";if(p>=1){hT=null;bell(990,1.2,0.05);setTimeout(function(){show("shalaka");prepShalaka();},450);return;}hT=requestAnimationFrame(holdFrame);}
+function holdStart(e){if(e)e.preventDefault();if(hT)return;hStart=performance.now();$("flame").classList.remove("low");hT=requestAnimationFrame(holdFrame);}
+function holdEnd(){if(!hT)return;cancelAnimationFrame(hT);hT=null;resetDhyan();$("dhyanHint").textContent=t("dhyanEarly");}
+var hb=$("holdBtn");
+hb.addEventListener("pointerdown",holdStart);hb.addEventListener("pointerup",holdEnd);hb.addEventListener("pointerleave",holdEnd);hb.addEventListener("pointercancel",holdEnd);
+hb.addEventListener("keydown",function(e){if((e.key===" "||e.key==="Enter")&&!e.repeat)holdStart(e);});
+hb.addEventListener("keyup",function(e){if(e.key===" "||e.key==="Enter")holdEnd();});
+hb.addEventListener("contextmenu",function(e){e.preventDefault();});
+
+/* grid */
+function buildGrid(){var g=$("grid"),h="";for(var i=0;i<225;i++){var c=CELLS[i];var sm=c.length>2?" sm":"";h+='<button class="cell'+sm+'" role="gridcell" data-i="'+i+'" tabindex="-1" aria-label="खाना '+(i+1)+'">'+c+"</button>";}g.innerHTML=h;}
+function buildVeil(){var s="";for(var i=0;i<260;i++)s+="राम ";$("naamlekh").textContent=s;}
+function buildSlots(){var h="";for(var i=0;i<25;i++)h+='<span class="slot" data-s="'+i+'"></span>';$("slots").innerHTML=h;}
+function prepShalaka(){busy=false;buildSlots();$("threadLine").setAttribute("points","");document.querySelectorAll(".cell").forEach(function(c){c.className="cell"+(c.textContent.length>2?" sm":"");c.tabIndex=veilOn?-1:0;});$("veil").classList.toggle("up",!veilOn);$("countNote").textContent="";$("liftBtn").style.visibility="visible";}
+buildGrid();buildVeil();buildSlots();
+
+/* shalaka hold on board */
+var sT=null,sStart=0,sPt=null,SHOLD=reduce?200:900;
+function cellAt(x,y){var r=$("grid").getBoundingClientRect();var cx=Math.floor((x-r.left)/r.width*15),cy=Math.floor((y-r.top)/r.height*15);cx=Math.max(0,Math.min(14,cx));cy=Math.max(0,Math.min(14,cy));return cy*15+cx;}
+function sFrame(){var p=Math.min(1,(performance.now()-sStart)/SHOLD);$("touch").style.setProperty("--p",p);if(p>=1){sT=null;$("touch").classList.remove("on");place(cellAt(sPt.x,sPt.y));return;}sT=requestAnimationFrame(sFrame);}
+function sDown(e){if(busy)return;e.preventDefault();var b=$("board").getBoundingClientRect();sPt={x:e.clientX,y:e.clientY};var tc=$("touch");tc.style.left=(e.clientX-b.left)+"px";tc.style.top=(e.clientY-b.top)+"px";tc.style.setProperty("--p",0);tc.classList.add("on");sStart=performance.now();if(sT)cancelAnimationFrame(sT);sT=requestAnimationFrame(sFrame);}
+function sUp(){if(sT){cancelAnimationFrame(sT);sT=null;$("touch").classList.remove("on");}}
+var bd=$("board");
+bd.addEventListener("pointerdown",sDown);bd.addEventListener("pointerup",sUp);bd.addEventListener("pointerleave",sUp);bd.addEventListener("pointercancel",sUp);bd.addEventListener("contextmenu",function(e){e.preventDefault();});
+$("grid").addEventListener("keydown",function(e){if(busy||veilOn)return;var el=e.target;if(!el.classList.contains("cell"))return;var i=+el.dataset.i,n=i;if(e.key==="ArrowRight")n=Math.min(224,i+1);else if(e.key==="ArrowLeft")n=Math.max(0,i-1);else if(e.key==="ArrowDown")n=Math.min(224,i+15);else if(e.key==="ArrowUp")n=Math.max(0,i-15);else if(e.key==="Enter"||e.key===" "){e.preventDefault();place(i);return;}else return;e.preventDefault();document.querySelector('.cell[data-i="'+n+'"]').focus();});
+$("veil").addEventListener("keydown",function(e){if(busy)return;if(e.key==="Enter"||e.key===" "){e.preventDefault();place(Math.floor(Math.random()*225));}});
+$("veil").tabIndex=0;$("veil").setAttribute("role","button");$("veil").setAttribute("aria-label","Place the shalaka on the covered grid");
+$("liftBtn").addEventListener("click",function(){if(busy)return;veilOn=!veilOn;$("veil").classList.toggle("up",!veilOn);$("liftBtn").textContent=veilOn?t("liftBtn"):t("coverBtn");$("shalakaSub").textContent=veilOn?t("shalakaSub"):t("shalakaOpen");document.querySelectorAll(".cell").forEach(function(c){c.tabIndex=veilOn?-1:0;});});
+
+/* the count */
+function sequence(p){var k=p%9,m=(p-k)/9,out=[];for(var i=0;i<25;i++){out.push(k+9*((m+i)%25));}return out;}
+function center(i){var g=$("grid").getBoundingClientRect(),c=document.querySelector('.cell[data-i="'+i+'"]').getBoundingClientRect();return [(c.left-g.left+c.width/2).toFixed(1),(c.top-g.top+c.height/2).toFixed(1)];}
+function place(p){
+  if(busy)return;busy=true;
+  var k=p%9;current=k;
+  $("veil").classList.add("up");$("liftBtn").style.visibility="hidden";
+  var q=norm($("q").value);
+  mem.used=Math.min(3,mem.used+1);if(q)mem.asked.push({q:q,k:k});if(mem.mala.indexOf(k)<0)mem.mala.push(k);save();renderDiyas();
+  var seq=sequence(p),cells=document.querySelectorAll(".cell");
+  cells.forEach(function(c){var i=+c.dataset.i;if(i%9!==k)c.classList.add("dim");});
+  document.querySelector('.cell[data-i="'+p+'"]').classList.add("chosen");
+  $("countNote").textContent=t("counting");
+  var g=$("grid").getBoundingClientRect();$("thread").setAttribute("viewBox","0 0 "+g.width+" "+g.height);
+  var pts=[],step=0,m=(p-k)/9,delay=reduce?0:170;
+  function hop(){
+    var i=seq[step],pos=(m+step)%25;
+    var el=document.querySelector('.cell[data-i="'+i+'"]');if(step>0)el.classList.add("lit");
+    pts.push(center(i).join(","));$("threadLine").setAttribute("points",pts.join(" "));
+    var sl=document.querySelector('.slot[data-s="'+pos+'"]');sl.textContent=CELLS[i];sl.classList.add("f");
+    bell(1320,0.35,0.025);buzz(6);
+    step++;
+    if(step<25){if(delay)setTimeout(hop,delay);else hop();}
+    else{bell(660,1.6,0.06);setTimeout(function(){bell(990,1.6,0.04);},180);setTimeout(function(){tab="you";renderAnswer();renderAgain();renderMala();show("uttar");},reduce?50:1100);}
+  }
+  setTimeout(hop,reduce?0:650);
+}
+
+/* answer */
+function renderAnswer(){
+  var c=CH[current];if(!c)return;
+  var lines=script==="deva"?c.deva:c.iast;
+  $("chaupai").className="chaupai"+(script==="iast"?" iast":"");
+  $("chaupai").innerHTML="<span>"+lines[0]+"</span><span>"+lines[1]+"</span>";
+  $("src").textContent=(lang==="hi"?"श्रीरामचरितमानस · ":"Ramcharitmanas · ")+c.kand[lang]+" · "+c.who[lang];
+  $("phal").className="phal "+c.sign;$("phal").textContent=(lang==="hi"?"परंपरा: ":"Tradition: ")+c.signTxt[lang];
+  $("scriptBtn").textContent=script==="deva"?"IAST":"देवनागरी";
+  $("mean").textContent=c.mean[lang];
+  $("tab-you").setAttribute("aria-selected",tab==="you");$("tab-prasang").setAttribute("aria-selected",tab==="prasang");
+  $("panel").textContent=tab==="you"?c.you[lang]:c.prasang[lang];
+  $("card").innerHTML='<div class="c-top">'+t("cardTop")+'</div><div class="c-ch">'+c.deva[0]+"<br>"+c.deva[1]+'</div><div class="c-mean">'+c.mean[lang]+"<br><br>"+c.who[lang]+" · "+c.kand[lang]+'</div><div class="c-foot">'+t("cardFoot")+"</div>";
+}
+function renderAgain(){var left=3-mem.used;$("againBtn").textContent=t("again")+" · "+left+" "+t("left");}
+function renderMala(){var h="";for(var i=0;i<9;i++){var cls="bead";if(i===current)cls+=" now";else if(mem.mala.indexOf(i)>=0)cls+=" got";h+='<span class="'+cls+'" title="'+CH[i].deva[0]+'"></span>';}h+="<small>"+t("mala")+" "+mem.mala.length+"/9</small>";$("mala").innerHTML=h;}
+$("tab-you").addEventListener("click",function(){tab="you";renderAnswer();});
+$("tab-prasang").addEventListener("click",function(){tab="prasang";renderAnswer();});
+$("scriptBtn").addEventListener("click",function(){script=script==="deva"?"iast":"deva";$("scriptBtn").setAttribute("aria-pressed",script==="iast");renderAnswer();});
+$("listenBtn").addEventListener("click",function(){try{var c=CH[current];var u=new SpeechSynthesisUtterance(c.deva.join(" "));u.lang="hi-IN";u.rate=0.8;var v=speechSynthesis.getVoices().filter(function(x){return /hi/i.test(x.lang);})[0];if(!v){toast(t("tListen"));return;}u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){toast(t("tListen"));}});
+$("planBtn").addEventListener("click",function(){toast(t("tPlan")+" seed="+CH[current].id);});
+$("waBtn").addEventListener("click",function(){toast(t("tWa"));});
+$("shareBtn").addEventListener("click",function(){$("modal").classList.add("on");$("closeModal").focus();});
+$("closeModal").addEventListener("click",function(){$("modal").classList.remove("on");});
+$("copyBtn").addEventListener("click",function(){var c=CH[current];try{navigator.clipboard.writeText(c.deva.join(" ")+"\n"+c.mean[lang]+"\n"+t("cardFoot")).then(function(){toast(t("tCopy"));},function(){toast(t("tCopy"));});}catch(e){}});
+$("againBtn").addEventListener("click",function(){if(mem.used>=3){goDone();return;}$("q").value="";$("repeatNote").classList.remove("on");show("sankalp");});
+$("seeMala").addEventListener("click",function(){show("uttar");});
+
+/* done */
+function goDone(){var now=new Date(),next=new Date(now);next.setHours(4,0,0,0);if(next<=now)next.setDate(next.getDate()+1);var mins=Math.round((next-now)/60000);$("doneTime").textContent=t("resetAt")+" "+Math.floor(mins/60)+":"+String(mins%60).padStart(2,"0");show("done");}
+
+/* top bar */
+$("langBtn").addEventListener("click",function(){lang=lang==="hi"?"en":"hi";document.documentElement.lang=lang==="hi"?"hi":"en";applyLang();});
+$("soundBtn").addEventListener("click",function(){sound=!sound;$("soundBtn").setAttribute("aria-pressed",sound);if(sound)bell(1320,0.4,0.03);});
+$("soundBtn").setAttribute("aria-pressed",sound);
+
+/* review shortcuts */
+document.querySelectorAll("[data-jump]").forEach(function(b){b.addEventListener("click",function(){var j=b.getAttribute("data-jump");
+  if(j==="dhyan"){show("dhyan");resetDhyan();}
+  else if(j==="shalaka"){show("shalaka");prepShalaka();}
+  else if(j==="uttar"){current=current||1;renderAnswer();renderAgain();renderMala();show("uttar");}
+  else if(j==="done"){goDone();}
+  else show(j);});});
+$("resetDemo").addEventListener("click",function(){mem={day:dayKey(),used:0,asked:[],mala:[]};save();renderDiyas();renderAgain();renderMala();$("q").value="";$("repeatNote").classList.remove("on");show("sankalp");toast(lang==="hi"?"डेमो रीसेट हुआ":"Demo reset");});
+
+/* doc tables from the same data */
+var flow=[
+ ["1 Sankalp","Settle the person; make the question theirs","मन में एक प्रश्न रखें · श्रीराम का स्मरण करें। प्रश्न लिखना ज़रूरी नहीं। · [प्रश्न मन में है]","Hold one question in your heart · Remember Shri Ram. You don't need to type it. · [My question is ready]","Optional text box, stored on device only. Repeat guard checks here. Three diyas visible in the top bar."],
+ ["2 Dhyan","Slow down; turn a click into a ritual","श्री राम जय राम जय जय राम · [दबाकर रखें] · थोड़ा और ठहरें","Same mantra in Devanagari · [Press and hold] · Stay a little longer","Hold 3.5 s; the flame rises; seven words light in step. Releasing early resets. Space or Enter holds by keyboard."],
+ ["3 Shalaka","Choose blind, with intent","आँखें मूँदें। पर्दे पर कहीं भी उँगली टिकाकर थामे रहें। · [पर्दा हटाकर चुनें]","Close your eyes. Rest your finger anywhere on the cloth and keep it there. · [Lift the cloth and choose]","0.9 s ring at the finger; the cloth lifts; the chosen cell turns sindoor. Other cells fade except the nine-step column."],
+ ["4 Ganana","Show the mechanism; build suspense","हर नौवाँ अक्षर गिना जा रहा है","Counting every ninth syllable","25 hops at 170 ms; gold thread; slots fill in line order; a bell per hop; final two-note bell; 1.1 s hold before the answer."],
+ ["5 Uttar","Answer, context, next step","आपकी चौपाई · परंपरा: शुभ संकेत · आज आपके लिए | प्रसंग · [इस चौपाई से 7 दिन का पाठ]","Your chaupai · Tradition: Auspicious · For you today | The scene · [A 7-day reading from this line]","Devanagari or IAST toggle (never both), Listen, the mala of nine, share card, WhatsApp or Lock Screen by device, Ask another (n left)."],
+ ["6 Day done","Respect the limit; invite tomorrow","आज के तीन प्रश्न पूरे हुए · दीप प्रातः 4 बजे फिर जलेंगे","Today's three questions are done · The diyas relight at 4 AM","Countdown to 4 AM local; link back to today's answers and the mala."]
+];
+$("flowRows").innerHTML=flow.map(function(r){return "<tr><td><b>"+r[0]+"</b></td><td>"+r[1]+'</td><td class="hi">'+r[2]+"</td><td>"+r[3]+"</td><td>"+r[4]+"</td></tr>";}).join("");
+var signName={shubh:"शुभ",sanshay:"संशय",ashubh:"अभी नहीं"};
+$("nineRows").innerHTML=CH.map(function(c){return "<tr><td><b>"+(c.k+1)+'</b></td><td><div class="dv">'+c.deva[0]+"<br>"+c.deva[1]+'</div></td><td class="hi">'+c.kand.hi+"<br>"+c.who.hi+'<br><span class="small">'+c.kand.en+'</span></td><td><span class="tag '+c.sign+'">'+signName[c.sign]+'</span></td><td class="hi">'+c.mean.hi+'<br><span class="small">'+c.mean.en+'</span></td><td class="hi">'+c.you.hi+'<br><span class="small">'+c.you.en+"</span></td><td><code>"+c.id+"</code></td></tr>";}).join("");
+$("jsonSample").textContent=JSON.stringify({grid:{rows:15,cols:15,cells:CELLS.slice(0,15).concat(["…210 more"])},lines:[{k:1,id:CH[1].id,deva:CH[1].deva,iast:CH[1].iast,sign:CH[1].sign,kand:CH[1].kand,speaker:CH[1].who,meaning:CH[1].mean,scene:{hi:"…",en:"…"},for_you:CH[1].you,slug:{hi:"prabisi-nagar-kije-sab-kaja"}}]},null,2);
+
+applyLang();renderDiyas();
+})();
+</script>
+</body>
+</html>

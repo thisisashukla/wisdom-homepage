@@ -88,7 +88,7 @@ export const THEME_READING: Record<string, { href: string; label: string }[]> = 
     { href: '/blogs/bhagavad-gita-anxiety-mental-peace', label: 'The Gita on anxiety and mental peace' },
   ],
   'fear-of-failure': [
-    { href: '/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste', label: 'Karmanye Vadhikaraste (2.47) explained' },
+    { href: '/gita/chapter/2/verse/47', label: 'Karmanye Vadhikaraste (2.47) explained' },
     { href: '/blogs/nishkama-karma-bhagavad-gita', label: 'Nishkama karma: acting without craving results' },
   ],
   grief: [

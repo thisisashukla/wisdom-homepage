@@ -98,6 +98,16 @@ const FAQ = [
   },
 ]
 
+const BEYOND: { key: string; href: string; label: string; note: string; lang?: string }[] = [
+  { key: 'ramayana', href: '/ramayana/in-the-original', label: 'Ramayana, in the original', note: 'Film scenes, checked against Valmiki and Tulsidas →' },
+  { key: 'hanuman_chalisa', href: '/hanuman-chalisa', label: 'Hanuman Chalisa', note: 'Every line, with its meaning →' },
+  { key: 'upanishads', href: '/upanishads', label: 'Upanishads', note: 'Tat tvam asi and nine more lines →' },
+  { key: 'mahabharata', href: '/mahabharata/where-is-the-gita', label: 'Mahabharata', note: 'Where the Gita sits in it →' },
+  { key: 'ashtavakra', href: '/ashtavakra-gita', label: 'Ashtavakra Gita', note: 'Janaka asks, Ashtavakra answers →' },
+  { key: 'vivekananda', href: '/vivekananda-quotes', label: 'Swami Vivekananda', note: 'Lines checked against his own words →' },
+  { key: 'ram_shalaka', href: '/hi/ram-shalaka', label: 'श्रीराम शलाका', note: 'मन में प्रश्न है? चौपाई से उत्तर →', lang: 'hi' },
+]
+
 export default async function HomePage() {
   const todayRef = todaysVerseRef()
   const todayVerse = todayRef ? await getVerse(todayRef.chapter, todayRef.verse) : null
@@ -294,6 +304,24 @@ export default async function HomePage() {
             ))}
           </div>
           <p style={{ marginTop: '22px' }}><a href="/reading-plans" className="btn-ghost" data-mp-location="home_gita_for_all_plans">All reading plans →</a></p>
+        </div>
+      </section>
+
+      <section className="section" id="beyond-the-gita" data-mp-section="home_beyond">
+        <div className="wrap">
+          <div className="sec-head rv">
+            <div className="eyebrow">Beyond the Gita</div>
+            <h2 className="heading">The Ramayana, the Upanishads and <em>the Chalisa you grew up with.</em></h2>
+            <p className="subtext">Each line in its original, with plain English and where it comes from.</p>
+          </div>
+          <div className="gita-for-grid" data-stagger="30">
+            {BEYOND.map((b) => (
+              <a key={b.key} href={b.href} className="gita-for-tile rv" data-mp-location={`home_beyond_${b.key}`} lang={b.lang}>
+                <span className="gita-for-label">{b.label}</span>
+                <span className="gita-for-count">{b.note}</span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

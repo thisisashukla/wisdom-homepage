@@ -24,6 +24,21 @@ export default function SiteFooter({ locale = 'en' }: { locale?: 'en' | 'hi' }) 
           Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed.{' '}
           <a href="/methodology">Methodology →</a>
         </p>
+        <nav className="site-footer-beyond" aria-label={hi ? 'गीता के आगे' : 'Beyond the Gita'}>
+          <p className="site-footer-beyond-label">{hi ? 'गीता के आगे' : 'Beyond the Gita'}</p>
+          <ul className="site-footer-links">
+            <li><a href="/ramayana" data-mp-location="footer_beyond_ramayana">Ramayana</a></li>
+            <li><a href="/hi/ram-shalaka" hrefLang="hi" data-mp-location="footer_beyond_ram_shalaka">श्रीराम शलाका</a></li>
+            <li><a href={hi ? '/hi/hanuman-chalisa' : '/hanuman-chalisa'} data-mp-location="footer_beyond_hanuman_chalisa">{hi ? 'हनुमान चालीसा' : 'Hanuman Chalisa'}</a></li>
+            <li><a href={hi ? '/hi/upanishad' : '/upanishads'} data-mp-location="footer_beyond_upanishads">{hi ? 'उपनिषद' : 'Upanishads'}</a></li>
+            <li><a href="/mahabharata" data-mp-location="footer_beyond_mahabharata">Mahabharata</a></li>
+            <li><a href="/ashtavakra-gita" data-mp-location="footer_beyond_ashtavakra">Ashtavakra Gita</a></li>
+            <li><a href="/gitas" data-mp-location="footer_beyond_gitas">{hi ? 'अन्य गीताएँ' : 'Other Gitas'}</a></li>
+            <li><a href={hi ? '/hi/vivekananda-quotes' : '/vivekananda-quotes'} data-mp-location="footer_beyond_vivekananda">{hi ? 'विवेकानंद के विचार' : 'Vivekananda quotes'}</a></li>
+            <li><a href="/hi/kabir-ke-dohe" hrefLang="hi" data-mp-location="footer_beyond_kabir">कबीर के दोहे</a></li>
+            <li><a href="/hi/chanakya-niti" hrefLang="hi" data-mp-location="footer_beyond_chanakya">चाणक्य नीति</a></li>
+          </ul>
+        </nav>
         <ul className="site-footer-links">
           <li><a href="/gita">Read the Gita</a></li>
           <li><a href="/hi/gita" hrefLang="hi">हिंदी गीता</a></li>

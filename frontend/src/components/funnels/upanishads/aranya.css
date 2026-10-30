@@ -1,0 +1,282 @@
+/* "Aranya" (forest dawn): the Upanishads funnel palette and layout.
+   Scoped under .fx-upanishads. Light by default; pre-dawn dusk in dark mode.
+   Tokens from lp/funnels/upanishads/RESEARCH.md section 5. --ash-ink and
+   --sal-ink are darker text-weight versions of ash and sal so small text
+   passes WCAG AA on bark; the original tones are kept for rules and threads.
+   Motion: entrance cubic-bezier(0.4,0,0.2,1) 500ms, thread draw 900ms,
+   feedback cubic-bezier(0.2,0,0,1) 160ms. Reduced motion: opacity only. */
+
+.fx-upanishads {
+  --bark: #f3ebdd;
+  --ink: #1f2a2e;
+  --dusk: #2e3a59;
+  --lamp: #c8862a;
+  --sal: #5e7a5a;
+  --ash: #8c877d;
+  --ash-ink: #625d55;
+  --sal-ink: #44603f;
+  --lamp-ink: #8a5a12;
+  --leaf: #faf5ec;
+  --rule: rgba(31, 42, 46, 0.14);
+  --rule-strong: rgba(31, 42, 46, 0.28);
+  --wisdom-gold: #f5c96a;
+  --fx-serif: var(--fx-spectral), 'Spectral', Georgia, serif;
+  --fx-ui: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  --fx-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
+  --fx-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --fx-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --fx-fb: cubic-bezier(0.2, 0, 0, 1);
+
+  background: var(--bark);
+  color: var(--ink);
+  font-family: var(--fx-ui);
+  font-size: 17px;
+  line-height: 1.65;
+  padding: 18px 0 72px;
+  min-height: 60vh;
+}
+.fx-upanishads:lang(hi) { font-family: var(--fx-deva); }
+.fx-upanishads *,
+.fx-upanishads *::before,
+.fx-upanishads *::after { box-sizing: border-box; }
+
+@media (prefers-color-scheme: dark) {
+  .fx-upanishads {
+    --bark: #2e3a59;
+    --ink: #f3ebdd;
+    --ash-ink: #c9c2b5;
+    --sal-ink: #a9c6a5;
+    --lamp-ink: #e8b25e;
+    --leaf: #36446a;
+    --rule: rgba(243, 235, 221, 0.16);
+    --rule-strong: rgba(243, 235, 221, 0.32);
+    --sal: #8fb08a;
+  }
+}
+
+.fx-wrap { max-width: 42rem; margin: 0 auto; padding: 0 20px; }
+
+:where(.fx-upanishads) a:not([class]) { color: var(--sal-ink); text-decoration: underline; text-decoration-color: var(--sal); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+:where(.fx-upanishads) a:not([class]):hover { color: var(--ink); }
+.fx-upanishads :focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; border-radius: 4px; }
+
+.fx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ── Crumbs and toolbar ───────────────────────────────────────────── */
+.fx-crumbs ol { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 0; font-size: 14px; color: var(--ash-ink); }
+.fx-crumbs li + li::before { content: '/'; margin: 0 8px; color: var(--ash); }
+.fx-crumbs a { color: var(--ash-ink); text-decoration-color: var(--rule-strong); display: inline-block; padding: 10px 0; }
+.fx-crumbs span { display: inline-block; padding: 10px 0; }
+.fx-toolbar { display: flex; justify-content: flex-end; margin: -6px 0 8px; }
+
+.fx-toggle { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 3px; gap: 2px; }
+.fx-toggle button {
+  min-height: 40px; min-width: 44px; padding: 0 14px; border: 0; border-radius: 999px; background: none;
+  color: var(--ash-ink); font: 500 14px/1 var(--fx-ui); cursor: pointer;
+  transition: background-color 160ms var(--fx-fb), color 160ms var(--fx-fb);
+}
+.fx-toggle button span { font-family: var(--fx-sa); font-size: 15px; font-weight: 400; }
+.fx-toggle button[aria-pressed='true'] { background: var(--ink); color: var(--bark); }
+
+/* Script switch: one script at a time. */
+.fx-upanishads .s-iast { display: none; }
+.fx-upanishads[data-script='iast'] .s-iast { display: block; }
+.fx-upanishads[data-script='iast'] .s-deva { display: none; }
+.fx-upanishads:not([data-script='iast']) .qc-iast { display: none; }
+.fx-upanishads[data-script='iast'] .qc-sa { display: none; }
+.fx-upanishads[data-script='iast'] .qc-iast { font-size: 19px; font-style: normal; color: var(--ink); margin-top: 0; }
+
+/* ── Type ─────────────────────────────────────────────────────────── */
+.fx-upanishads h1,
+.fx-upanishads h2,
+.fx-upanishads h3 { font-family: var(--fx-serif); font-weight: 500; color: var(--ink); margin: 0; text-wrap: balance; }
+.fx-upanishads:lang(hi) h1,
+.fx-upanishads:lang(hi) h2,
+.fx-upanishads:lang(hi) h3 { font-family: var(--fx-deva); font-weight: 500; }
+.fx-upanishads h1 { font-size: clamp(31px, 7.4vw, 46px); line-height: 1.12; letter-spacing: -0.012em; }
+.fx-upanishads h2 { font-size: 25px; line-height: 1.25; margin-bottom: 14px; }
+.fx-upanishads h3 { font-size: 20px; line-height: 1.3; }
+.fx-upanishads p { margin: 0 0 14px; }
+.fx-ref { font-family: var(--fx-serif); font-style: italic; font-size: 16px; color: var(--ash-ink); margin: 0 0 8px; }
+.fx-lede { font-family: var(--fx-serif); font-size: 21px; line-height: 1.5; color: var(--ink); max-width: 34em; }
+.fx-quick { margin: 18px 0 0; font-size: 17.5px; line-height: 1.7; max-width: 36em; }
+
+.fx-sec { margin-top: 56px; }
+.fx-sec > p,
+.fx-sec li { max-width: 36em; }
+
+/* ── The line (hero) ──────────────────────────────────────────────── */
+.fx-line { margin: 36px 0 0; padding: 30px 0 26px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); position: relative; }
+.fx-line::before { content: ''; position: absolute; left: 0; top: -1px; width: 64px; height: 2px; background: var(--lamp); transform-origin: left; }
+html.motion .fx-line::before { animation: fx-draw 900ms var(--fx-in) 200ms backwards; }
+.fx-line .fx-en-line { font-family: var(--fx-serif); font-size: 22px; line-height: 1.5; margin: 18px 0 0; max-width: 30em; }
+
+.fx-sa p { margin: 0; }
+.fx-sa span { display: block; }
+.fx-sa .s-deva { font-family: var(--fx-sa); color: var(--ink); overflow-wrap: break-word; text-wrap: balance; }
+.fx-sa .s-iast { font-family: var(--fx-sa); color: var(--ink); overflow-wrap: break-word; }
+.fx-sa-hero .s-deva { font-size: clamp(27px, 7.6vw, 42px); line-height: 1.72; }
+.fx-sa-hero .s-iast { font-size: clamp(20px, 5.4vw, 27px); line-height: 1.55; font-style: italic; }
+.fx-sa-verse .s-deva { font-size: clamp(21px, 5.6vw, 25px); line-height: 1.78; }
+.fx-sa-verse .s-iast { font-size: 17.5px; line-height: 1.6; font-style: italic; }
+.fx-sa-small .s-deva { font-size: 20px; line-height: 1.75; }
+.fx-sa-small .s-iast { font-size: 16px; line-height: 1.6; font-style: italic; }
+
+/* ── Verses in a complete text ────────────────────────────────────── */
+.fx-v { position: relative; padding: 18px 0 22px; scroll-margin-top: 80px; }
+.fx-v + .fx-v { border-top: 1px solid var(--rule); }
+.fx-v-ref { display: flex; gap: 12px; align-items: baseline; margin: 0 0 8px; font-family: var(--fx-serif); font-size: 15px; color: var(--ash-ink); }
+.fx-v-ref a { color: var(--ash-ink); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
+.fx-v-ref a:hover { text-decoration: underline; }
+.fx-v-who { font-style: italic; }
+.fx-v-en { font-family: var(--fx-serif); font-size: 19px; line-height: 1.6; margin: 12px 0 0; max-width: 34em; }
+.fx-v:target { background: linear-gradient(90deg, rgba(200, 134, 42, 0.1), transparent 70%); }
+.fx-v:target::before { content: ''; position: absolute; left: -14px; top: 18px; bottom: 22px; width: 2px; background: var(--lamp); }
+.fx-v-note { font-size: 15.5px; color: var(--ash-ink); margin: 10px 0 0; max-width: 34em; }
+@media (min-width: 760px) {
+  .fx-v { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0 18px; }
+  .fx-v-ref { flex-direction: column; gap: 2px; margin: 6px 0 0; }
+}
+
+.fx-part { margin-top: 48px; }
+.fx-part > h2 { padding-bottom: 10px; border-bottom: 1px solid var(--rule-strong); }
+
+/* ── Panels and lists ─────────────────────────────────────────────── */
+.fx-scene { font-family: var(--fx-serif); font-size: 19px; line-height: 1.6; }
+.fx-who { font-size: 15px; color: var(--ash-ink); margin-bottom: 8px; }
+.fx-acharya h3 { font-size: 17px; font-family: var(--fx-ui); font-weight: 600; margin: 18px 0 6px; }
+.fx-upanishads:lang(hi) .fx-acharya h3 { font-family: var(--fx-deva); }
+
+.fx-forms { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 12px; }
+.fx-forms li { display: grid; gap: 2px; padding: 14px 16px; background: var(--leaf); border: 1px solid var(--rule); border-radius: 10px; }
+.fx-forms .f-sa { font-family: var(--fx-sa); font-size: 26px; line-height: 1.6; }
+.fx-forms .f-iast { font-family: var(--fx-sa); font-style: italic; font-size: 17px; }
+.fx-forms .f-label { font-size: 14px; color: var(--ash-ink); }
+
+.fx-print { margin: 20px 0 0; display: grid; gap: 14px; }
+.fx-print-img { display: block; max-width: 320px; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--leaf); }
+.fx-print img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+.fx-print figcaption p { margin: 0 0 8px; font-size: 15.5px; color: var(--ash-ink); }
+.fx-print-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.fx-print-links a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
+
+.fx-bridge { position: relative; padding: 4px 0 4px 16px; border-left: 3px solid var(--wisdom-gold); max-width: 36em; }
+.fx-upanishads .fx-bridge a { color: var(--ink); font-weight: 600; text-decoration-color: var(--wisdom-gold); text-decoration-thickness: 2px; }
+.fx-bridge-lead { color: var(--ash-ink); }
+
+.fx-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+.fx-links a { display: flex; flex-direction: column; padding: 12px 0; min-height: 44px; text-decoration: none; color: var(--ink); border-bottom: 1px solid var(--rule); }
+.fx-links a strong { font-family: var(--fx-serif); font-weight: 500; font-size: 19px; color: var(--sal-ink); }
+.fx-links a span { font-size: 15.5px; color: var(--ash-ink); }
+.fx-links a:hover strong { text-decoration: underline; text-decoration-color: var(--sal); text-underline-offset: 4px; }
+.fx-links .fx-links-sa { font-family: var(--fx-sa); font-size: 19px; color: var(--ink); }
+
+.fx-table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin: 8px 0 0; }
+.fx-table th,
+.fx-table td { text-align: left; padding: 10px 10px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.fx-table th { font-weight: 600; font-size: 14px; color: var(--ash-ink); }
+.fx-table-wrap { overflow-x: auto; }
+
+.fx-faq dl { margin: 0; display: grid; gap: 18px; }
+.fx-faq dt { font-weight: 600; margin-bottom: 4px; }
+.fx-faq dd { margin: 0; max-width: 36em; }
+.fx-sources p { font-size: 15px; color: var(--ash-ink); }
+
+.fx-books { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+.fx-books li { padding-left: 14px; border-left: 2px solid var(--rule-strong); max-width: 36em; }
+.fx-books strong { font-family: var(--fx-serif); font-weight: 500; font-size: 19px; display: block; }
+.fx-books em { color: var(--ash-ink); font-style: normal; font-size: 15px; display: block; margin-bottom: 4px; }
+
+/* Plan days */
+.fx-plan { display: grid; gap: 10px; margin-top: 8px; }
+.fx-plan details { border: 1px solid var(--rule); border-radius: 12px; background: var(--leaf); }
+.fx-plan summary { list-style: none; cursor: pointer; display: flex; gap: 14px; align-items: baseline; padding: 14px 16px; min-height: 52px; }
+.fx-plan summary::-webkit-details-marker { display: none; }
+.fx-plan .d-n { font-family: var(--fx-serif); font-size: 15px; color: var(--ash-ink); min-width: 3.2em; }
+.fx-plan .d-t { font-family: var(--fx-serif); font-size: 20px; }
+.fx-plan details[open] summary { border-bottom: 1px solid var(--rule); }
+.fx-plan .d-body { padding: 16px; }
+.fx-plan .d-sit { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--rule-strong); }
+
+/* QuoteCard and NextStep in Aranya colours */
+.fx-upanishads :is(.qc, .qns, .qsheet-wrap) {
+  --q-night: #f3ebdd;
+  --q-leaf: var(--leaf);
+  --q-leaf-2: var(--leaf);
+  --q-raise: var(--leaf);
+  --q-line: var(--rule);
+  --q-line-strong: var(--rule-strong);
+  --q-gold: var(--lamp-ink);
+  --q-gold-hi: var(--ink);
+  --q-cream: var(--ink);
+  --q-cream-2: var(--ink);
+  --q-cream-3: var(--ash-ink);
+  --q-display: var(--fx-serif);
+}
+.fx-upanishads .qc { margin-top: 18px; }
+.fx-upanishads .qc-sa { font-size: clamp(22px, 6vw, 27px); }
+.fx-upanishads .qns-btn { background: var(--ink); color: var(--bark); }
+.fx-upanishads .qns-btn:hover { background: var(--dusk); }
+.fx-next { padding: 26px 22px; background: var(--leaf); border: 1px solid var(--rule); border-radius: 14px; }
+.fx-next h2 { font-size: 21px; }
+@media (prefers-color-scheme: dark) {
+  .fx-upanishads .qns-btn { background: var(--lamp); color: #1f2a2e; }
+  .fx-upanishads .qsheet-backdrop { background: rgba(10, 14, 24, 0.66); }
+}
+
+/* ── Sit closer ───────────────────────────────────────────────────── */
+.sc { margin-top: 12px; }
+.sc-ex { margin-top: 40px; }
+.fx-upanishads .sc-title { margin-bottom: 6px; }
+.sc-cue { font-family: var(--fx-serif); font-style: italic; color: var(--ash-ink); font-size: 17px; }
+.sc-ask { position: relative; }
+.sc-answer { position: relative; margin-left: 6px; padding-left: 20px; }
+.sc-answer::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--sal); transform-origin: top; }
+.sc-answer::after { content: ''; position: absolute; left: -3px; top: -4px; width: 7px; height: 7px; border-radius: 50%; background: var(--sal); }
+.sc-on .sc-ex[data-new] .sc-answer { animation: sc-rise 500ms var(--fx-in) backwards; }
+.sc-on .sc-ex[data-new] .sc-answer::before { animation: fx-draw-y 900ms var(--fx-in) backwards; }
+.sc-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 18px 0 0 6px; padding-left: 20px; border-left: 1px dashed var(--sal); }
+.sc-btn {
+  min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid var(--sal-ink); background: var(--bark);
+  color: var(--ink); font: 500 16px/1 var(--fx-serif); cursor: pointer;
+  transition: background-color 160ms var(--fx-fb), transform 160ms var(--fx-fb);
+}
+.sc-btn:hover { background: var(--leaf); }
+.sc-btn:active { transform: scale(0.98); }
+.sc-all { min-height: 44px; border: 0; background: none; padding: 0; color: var(--ash-ink); font: 15px var(--fx-ui); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--rule-strong); cursor: pointer; }
+.sc-progress { font-size: 14.5px; color: var(--ash-ink); margin: 0; }
+.sc-done { margin-top: 28px; }
+
+/* ── Neti, neti ───────────────────────────────────────────────────── */
+.neti { margin-top: 18px; padding: 22px 20px; border: 1px solid var(--rule); border-radius: 14px; background: var(--leaf); }
+.neti-list { list-style: none; padding: 0; margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 10px 18px; }
+.neti-list li { display: grid; transition: opacity 500ms var(--fx-in); }
+.neti-list li[data-gone] { opacity: 0.12; }
+.neti-sa { font-family: var(--fx-sa); font-size: 20px; line-height: 1.5; }
+.neti-sa.s-iast { font-style: italic; font-size: 17px; }
+.neti-en { font-size: 13.5px; color: var(--ash-ink); }
+.neti-rest { display: grid; margin: 0 0 16px; }
+.neti-rest .s-deva,
+.neti-rest .s-iast { font-family: var(--fx-sa); font-size: 28px; line-height: 1.5; }
+.neti-rest .s-iast { font-style: italic; font-size: 23px; }
+.neti[data-done] .neti-rest .s-deva,
+.neti[data-done] .neti-rest .s-iast { color: var(--lamp-ink); }
+.neti-cta { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+
+@keyframes fx-draw { from { transform: scaleX(0); } to { transform: none; } }
+@keyframes fx-draw-y { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes sc-rise { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes sc-fade { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-on .sc-ex[data-new] .sc-answer { animation-name: sc-fade; }
+  .sc-on .sc-ex[data-new] .sc-answer::before,
+  html.motion .fx-line::before { animation: none; }
+  .sc-btn:active { transform: none; }
+}
+
+@media print {
+  .fx-toolbar, .fx-next, .sc-cta, .neti-cta, .fx-crumbs { display: none; }
+  .fx-upanishads { background: #fff; color: #000; }
+}
+.sc-answer:focus { outline: none; }

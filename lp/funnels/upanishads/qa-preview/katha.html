@@ -1,0 +1,700 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+/* Shared quote card, next step, sheet and toast (src/components/quotes).
+   Imported by QuoteCard, NextStep and NextStepSheet, so a route that renders
+   only a hero card gets only this file. Page layout lives in quotes.css.
+   Calm editorial look: maroon night, diya gold as the only accent, cream text.
+   Mobile first (360 to 412px). Motion: entrance cubic-bezier(0.4,0,0.2,1),
+   feedback cubic-bezier(0.2,0,0,1); 160ms feedback, 500ms entrances, 900ms draws.
+   Only elements created by a user action animate, so everything rendered on the
+   server is visible without JS. Reduced motion: opacity only. */
+
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) {
+  --q-night: #120505;
+  --q-leaf: #1b0908;
+  --q-leaf-2: #210c0a;
+  --q-raise: #2a1210;
+  --q-line: rgba(200, 136, 30, 0.2);
+  --q-line-strong: rgba(200, 136, 30, 0.42);
+  --q-gold: #c8881e;
+  --q-gold-hi: #f2c766;
+  --q-cream: #f5e8cc;
+  --q-cream-2: rgba(245, 232, 204, 0.78);
+  --q-cream-3: rgba(245, 232, 204, 0.62);
+  --q-display: var(--font-playfair), 'Playfair Display', var(--font-noto-devanagari), Georgia, serif;
+  --q-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  --q-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --q-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), 'Noto Sans Devanagari', serif;
+  --q-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --q-fb: cubic-bezier(0.2, 0, 0, 1);
+}
+
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *,
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *::before,
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *::after {
+  box-sizing: border-box;
+}
+
+:where(.qp, .qc, .qns, .qsheet-wrap, .qbar) :focus-visible {
+  outline: 2px solid var(--q-gold-hi);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+@keyframes q-rise {
+  from { opacity: 0; transform: translateY(14px) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes q-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes q-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes q-sheet {
+  from { transform: translateY(100%); }
+  to { transform: none; }
+}
+
+/* Icons as CSS masks: one copy in the stylesheet, no per-card SVG. */
+.qi { display: block; width: 18px; height: 18px; flex: 0 0 auto; background-color: currentColor; -webkit-mask: var(--qi) center / contain no-repeat; mask: var(--qi) center / contain no-repeat; }
+.qi-copy { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='8' width='12' height='12' rx='2.5'/%3E%3Cpath d='M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2'/%3E%3C/svg%3E"); }
+.qi-check { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
+.qi-whatsapp { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20l1.3-3.9A8 8 0 1 1 8 18.8L4 20z'/%3E%3Cpath d='M9.2 9.3c.3 1.9 1.6 3.4 3.5 4.1l1-1 1.8.8c-.2 1-1 1.6-2 1.6-2.9-.3-5.2-2.6-5.5-5.5 0-1 .6-1.8 1.6-2l.8 1.8-1.2.2z'/%3E%3C/svg%3E"); }
+.qi-save { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11'/%3E%3Cpath d='M7.5 10.5L12 15l4.5-4.5'/%3E%3Cpath d='M5 19h14'/%3E%3C/svg%3E"); }
+.qi-play { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 5.5v13l10-6.5-10-6.5z'/%3E%3C/svg%3E"); }
+.qi-pause { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 5.5v13M15 5.5v13'/%3E%3C/svg%3E"); }
+.qi-share { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 15V4'/%3E%3Cpath d='M8 8l4-4 4 4'/%3E%3Cpath d='M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6'/%3E%3C/svg%3E"); }
+.qi-close { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E"); }
+
+/* ── Quote card ───────────────────────────────────────────────────────── */
+
+.qc {
+  position: relative;
+  background: var(--q-leaf);
+  border: 1px solid var(--q-line);
+  border-radius: 16px;
+  padding: 22px 20px 4px;
+  color: var(--q-cream);
+  font-family: var(--q-ui);
+  scroll-margin-top: 80px;
+}
+.qc:lang(hi) { font-family: var(--q-deva); }
+:where(.qc) p { margin: 0; }
+.qc:target { border-color: var(--q-line-strong); }
+
+.qc-badge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--q-gold-hi);
+}
+.qc-badge-n { color: var(--q-cream-3); }
+
+.qc-sa {
+  font-family: var(--q-sa);
+  font-weight: 400;
+  font-size: clamp(23px, 6.3vw, 28px);
+  line-height: 1.74;
+  color: var(--q-gold-hi);
+  overflow-wrap: break-word;
+}
+.qc-pada { display: block; }
+/* Balanced lines, so no word like कदाचन sits alone; pretty where balance is missing. */
+.qc-sa,
+.qc-iast,
+.qc-meaning {
+  text-wrap: pretty;
+  text-wrap: balance;
+}
+.qc-iast {
+  margin-top: 8px;
+  font-family: var(--q-sa);
+  font-style: italic;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--q-cream-3);
+  overflow-wrap: break-word;
+}
+.qc-meaning {
+  margin-top: 16px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--q-cream);
+}
+.qc-meaning:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; line-height: 1.75; }
+
+.qc-source { margin-top: 14px; }
+.qc-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 4px 12px;
+  border: 1px solid var(--q-line);
+  border-radius: 999px;
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  color: var(--q-gold);
+  text-decoration: none;
+}
+a.qc-chip::after { content: ''; position: absolute; inset: -8px -4px; }
+a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
+
+.qc-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
+  margin: 18px -10px 0;
+  padding-top: 4px;
+  border-top: 1px solid var(--q-line);
+}
+.qc-act {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  min-height: 58px;
+  padding: 6px 4px;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  color: var(--q-cream-2);
+  font: inherit;
+  font-size: 12.5px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 160ms var(--q-fb), background-color 160ms var(--q-fb);
+}
+.qc-act:hover { color: var(--q-gold-hi); }
+.qc-act:active { background: rgba(200, 136, 30, 0.1); }
+.qc-act[data-on],
+.qc-act[aria-expanded='true'] { color: var(--q-gold-hi); }
+.qc-ico { position: relative; width: 18px; height: 18px; display: block; }
+.qc-ico > .qi { position: absolute; inset: 0; transition: opacity 160ms var(--q-fb), transform 160ms var(--q-fb); }
+.qc-ico > .qi-check { opacity: 0; transform: scale(0.8); }
+.qc-copy[data-done] { color: var(--q-gold-hi); }
+.qc-copy[data-done] .qi-copy { opacity: 0; transform: scale(0.8); }
+.qc-copy[data-done] .qi-check { opacity: 1; transform: none; }
+
+.qc-save { position: relative; }
+.qc-menu {
+  position: absolute;
+  z-index: 30;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  width: 208px;
+  margin-left: -104px;
+  padding: 6px;
+  background: var(--q-raise);
+  border: 1px solid var(--q-line-strong);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  animation: q-rise 160ms var(--q-fb) backwards;
+}
+.qc-menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 52px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--q-cream);
+}
+.qc-menu a:hover { background: rgba(200, 136, 30, 0.12); }
+.qc-menu strong { font-size: 15px; font-weight: 500; }
+.qc-menu span { font-size: 12.5px; color: var(--q-cream-3); }
+
+.qc-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+}
+.qc-foot-end { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; }
+.qc-more,
+.qc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 4px;
+  background: none;
+  border: 0;
+  color: var(--q-cream-2);
+  font: inherit;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: var(--q-line-strong);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.qc-link { text-decoration: none; }
+.qc-more:hover,
+.qc-link:hover { color: var(--q-gold-hi); }
+.qc-another { color: var(--q-gold-hi); text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+
+.qc-more-body {
+  border-top: 1px solid var(--q-line);
+  padding: 14px 0 18px;
+  display: grid;
+  gap: 16px;
+  animation: q-rise 500ms var(--q-in) backwards;
+}
+.qc-label { font-size: 13px; font-weight: 500; color: var(--q-cream-3); margin-bottom: 6px; }
+.qc-context p:not(.qc-label) { font-size: 15.5px; line-height: 1.65; color: var(--q-cream-2); }
+.qc-foryou dl { margin: 0; display: grid; gap: 12px; }
+.qc-foryou dt { font-size: 13.5px; font-weight: 500; color: var(--q-gold); }
+.qc-foryou dd { margin: 2px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--q-cream-2); }
+
+.qc-toast {
+  font-family: var(--q-ui);
+  position: fixed;
+  z-index: 1100;
+  left: 50%;
+  bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  max-width: calc(100vw - 32px);
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--q-cream);
+  color: var(--q-night);
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 8px);
+  transition: opacity 160ms var(--q-fb), transform 160ms var(--q-fb);
+}
+.qc-toast:empty { visibility: hidden; }
+.qc-toast[data-show] { opacity: 1; transform: translate(-50%, 0); }
+
+/* Hero: verse page top. */
+.qc-hero { padding: 28px 22px 6px; border-radius: 18px; }
+.qc-hero .qc-sa { font-size: clamp(26px, 7.6vw, 38px); line-height: 1.7; }
+.qc-hero .qc-iast { font-size: 15.5px; }
+.qc-hero .qc-meaning { font-size: 18.5px; }
+.qc-hero .qc-meaning:lang(hi) { font-size: 19px; }
+
+/* Compact: under a line Krishna never said. */
+.qc-compact { padding: 18px 16px 6px; }
+.qc-compact .qc-sa { font-size: clamp(20px, 5.4vw, 23px); }
+.qc-compact .qc-meaning { font-size: 16px; }
+.qc-compact .qc-actions { margin-top: 14px; }
+
+/* ── Next step ────────────────────────────────────────────────────────── */
+
+.qns { display: grid; gap: 14px; justify-items: start; }
+:where(.qns) p { margin: 0; }
+.qns-line {
+  font-family: var(--q-display);
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--q-cream);
+  max-width: 28em;
+}
+.qns-line:lang(hi) { font-family: var(--q-deva); font-size: 18px; line-height: 1.65; }
+.qns-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--q-gold);
+  color: #1a0606;
+  font-family: var(--q-ui);
+  font-size: 15.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 160ms var(--q-fb), transform 160ms var(--q-fb);
+}
+.qns-btn:lang(hi) { font-family: var(--q-deva); }
+.qns-btn:hover { background: #d99a32; }
+.qns-btn:active { transform: scale(0.98); }
+.qns-btn:focus-visible { outline: 2px solid var(--q-cream); outline-offset: 3px; }
+
+/* ── Sheet ────────────────────────────────────────────────────────────── */
+
+.qsheet-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: var(--q-ui);
+  color: var(--q-cream);
+}
+.qsheet-wrap:lang(hi) { font-family: var(--q-deva); }
+.qsheet-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 2, 2, 0.66);
+  animation: q-fade 260ms var(--q-in) backwards;
+}
+.qsheet {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--q-leaf-2);
+  border: 1px solid var(--q-line-strong);
+  border-bottom: 0;
+  border-radius: 20px 20px 0 0;
+  padding: 26px 22px calc(14px + env(safe-area-inset-bottom, 0px));
+  animation: q-sheet 260ms var(--q-in) backwards;
+}
+:where(.qsheet) p { margin: 0; }
+.qsheet-title {
+  font-family: var(--q-display);
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.3;
+  padding-right: 44px;
+  margin-bottom: 14px;
+}
+.qsheet-title:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.5; }
+.qsheet-x,
+.qsheet-later {
+  background: none;
+  border: 0;
+  color: var(--q-cream-2);
+  font: inherit;
+  cursor: pointer;
+}
+.qsheet-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+}
+.qsheet-x:hover,
+.qsheet-later:hover { color: var(--q-cream); }
+.qsheet-later { display: block; min-height: 44px; margin-top: 8px; padding: 0 4px; font-size: 14.5px; }
+@media (min-width: 700px) {
+  .qsheet { border-radius: 20px; border-bottom: 1px solid var(--q-line-strong); margin-bottom: 28px; }
+}
+
+
+@media (min-width: 720px) {
+  .qc { padding: 28px 30px 6px; }
+}
+
+/* ── Reduced motion: opacity only, no movement ────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .qc-menu,
+  .qc-more-body,
+  .qsheet {
+    animation-name: q-fade;
+  }
+  .qc-toast,
+  .qc-toast[data-show] { transform: translate(-50%, 0); }
+  .qc-ico > .qi { transform: none !important; }
+  .qns-btn:active { transform: none; }
+}
+
+@media (forced-colors: active) {
+  .qi { background-color: CanvasText; forced-color-adjust: none; }
+}
+/* "Aranya" (forest dawn): the Upanishads funnel palette and layout.
+   Scoped under .fx-upanishads. Light by default; pre-dawn dusk in dark mode.
+   Tokens from lp/funnels/upanishads/RESEARCH.md section 5. --ash-ink and
+   --sal-ink are darker text-weight versions of ash and sal so small text
+   passes WCAG AA on bark; the original tones are kept for rules and threads.
+   Motion: entrance cubic-bezier(0.4,0,0.2,1) 500ms, thread draw 900ms,
+   feedback cubic-bezier(0.2,0,0,1) 160ms. Reduced motion: opacity only. */
+
+.fx-upanishads {
+  --bark: #f3ebdd;
+  --ink: #1f2a2e;
+  --dusk: #2e3a59;
+  --lamp: #c8862a;
+  --sal: #5e7a5a;
+  --ash: #8c877d;
+  --ash-ink: #625d55;
+  --sal-ink: #44603f;
+  --lamp-ink: #8a5a12;
+  --leaf: #faf5ec;
+  --rule: rgba(31, 42, 46, 0.14);
+  --rule-strong: rgba(31, 42, 46, 0.28);
+  --wisdom-gold: #f5c96a;
+  --fx-serif: var(--fx-spectral), 'Spectral', Georgia, serif;
+  --fx-ui: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  --fx-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
+  --fx-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --fx-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --fx-fb: cubic-bezier(0.2, 0, 0, 1);
+
+  background: var(--bark);
+  color: var(--ink);
+  font-family: var(--fx-ui);
+  font-size: 17px;
+  line-height: 1.65;
+  padding: 18px 0 72px;
+  min-height: 60vh;
+}
+.fx-upanishads:lang(hi) { font-family: var(--fx-deva); }
+.fx-upanishads *,
+.fx-upanishads *::before,
+.fx-upanishads *::after { box-sizing: border-box; }
+
+@media (prefers-color-scheme: dark) {
+  .fx-upanishads {
+    --bark: #2e3a59;
+    --ink: #f3ebdd;
+    --ash-ink: #c9c2b5;
+    --sal-ink: #a9c6a5;
+    --lamp-ink: #e8b25e;
+    --leaf: #36446a;
+    --rule: rgba(243, 235, 221, 0.16);
+    --rule-strong: rgba(243, 235, 221, 0.32);
+    --sal: #8fb08a;
+  }
+}
+
+.fx-wrap { max-width: 42rem; margin: 0 auto; padding: 0 20px; }
+
+.fx-upanishads a { color: var(--sal-ink); text-decoration: underline; text-decoration-color: var(--sal); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.fx-upanishads a:hover { color: var(--ink); }
+.fx-upanishads :focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; border-radius: 4px; }
+
+.fx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ── Crumbs and toolbar ───────────────────────────────────────────── */
+.fx-crumbs ol { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 0; font-size: 14px; color: var(--ash-ink); }
+.fx-crumbs li + li::before { content: '/'; margin: 0 8px; color: var(--ash); }
+.fx-crumbs a { color: var(--ash-ink); text-decoration-color: var(--rule-strong); display: inline-block; padding: 10px 0; }
+.fx-crumbs span { display: inline-block; padding: 10px 0; }
+.fx-toolbar { display: flex; justify-content: flex-end; margin: -6px 0 8px; }
+
+.fx-toggle { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 3px; gap: 2px; }
+.fx-toggle button {
+  min-height: 40px; min-width: 44px; padding: 0 14px; border: 0; border-radius: 999px; background: none;
+  color: var(--ash-ink); font: 500 14px/1 var(--fx-ui); cursor: pointer;
+  transition: background-color 160ms var(--fx-fb), color 160ms var(--fx-fb);
+}
+.fx-toggle button span { font-family: var(--fx-sa); font-size: 15px; font-weight: 400; }
+.fx-toggle button[aria-pressed='true'] { background: var(--ink); color: var(--bark); }
+
+/* Script switch: one script at a time. */
+.fx-upanishads .s-iast { display: none; }
+.fx-upanishads[data-script='iast'] .s-iast { display: block; }
+.fx-upanishads[data-script='iast'] .s-deva { display: none; }
+.fx-upanishads:not([data-script='iast']) .qc-iast { display: none; }
+.fx-upanishads[data-script='iast'] .qc-sa { display: none; }
+.fx-upanishads[data-script='iast'] .qc-iast { font-size: 19px; font-style: normal; color: var(--ink); margin-top: 0; }
+
+/* ── Type ─────────────────────────────────────────────────────────── */
+.fx-upanishads h1,
+.fx-upanishads h2,
+.fx-upanishads h3 { font-family: var(--fx-serif); font-weight: 500; color: var(--ink); margin: 0; text-wrap: balance; }
+.fx-upanishads:lang(hi) h1,
+.fx-upanishads:lang(hi) h2,
+.fx-upanishads:lang(hi) h3 { font-family: var(--fx-deva); font-weight: 500; }
+.fx-upanishads h1 { font-size: clamp(31px, 7.4vw, 46px); line-height: 1.12; letter-spacing: -0.012em; }
+.fx-upanishads h2 { font-size: 25px; line-height: 1.25; margin-bottom: 14px; }
+.fx-upanishads h3 { font-size: 20px; line-height: 1.3; }
+.fx-upanishads p { margin: 0 0 14px; }
+.fx-ref { font-family: var(--fx-serif); font-style: italic; font-size: 16px; color: var(--ash-ink); margin: 0 0 8px; }
+.fx-lede { font-family: var(--fx-serif); font-size: 21px; line-height: 1.5; color: var(--ink); max-width: 34em; }
+.fx-quick { margin: 18px 0 0; font-size: 17.5px; line-height: 1.7; max-width: 36em; }
+
+.fx-sec { margin-top: 56px; }
+.fx-sec > p,
+.fx-sec li { max-width: 36em; }
+
+/* ── The line (hero) ──────────────────────────────────────────────── */
+.fx-line { margin: 36px 0 0; padding: 30px 0 26px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); position: relative; }
+.fx-line::before { content: ''; position: absolute; left: 0; top: -1px; width: 64px; height: 2px; background: var(--lamp); transform-origin: left; }
+html.motion .fx-line::before { animation: fx-draw 900ms var(--fx-in) 200ms backwards; }
+.fx-line .fx-en-line { font-family: var(--fx-serif); font-size: 22px; line-height: 1.5; margin: 18px 0 0; max-width: 30em; }
+
+.fx-sa p { margin: 0; }
+.fx-sa span { display: block; }
+.fx-sa .s-deva { font-family: var(--fx-sa); color: var(--ink); overflow-wrap: break-word; text-wrap: balance; }
+.fx-sa .s-iast { font-family: var(--fx-sa); color: var(--ink); overflow-wrap: break-word; }
+.fx-sa-hero .s-deva { font-size: clamp(27px, 7.6vw, 42px); line-height: 1.72; }
+.fx-sa-hero .s-iast { font-size: clamp(20px, 5.4vw, 27px); line-height: 1.55; font-style: italic; }
+.fx-sa-verse .s-deva { font-size: clamp(21px, 5.6vw, 25px); line-height: 1.78; }
+.fx-sa-verse .s-iast { font-size: 17.5px; line-height: 1.6; font-style: italic; }
+.fx-sa-small .s-deva { font-size: 20px; line-height: 1.75; }
+.fx-sa-small .s-iast { font-size: 16px; line-height: 1.6; font-style: italic; }
+
+/* ── Verses in a complete text ────────────────────────────────────── */
+.fx-v { position: relative; padding: 18px 0 22px; scroll-margin-top: 80px; }
+.fx-v + .fx-v { border-top: 1px solid var(--rule); }
+.fx-v-ref { display: flex; gap: 12px; align-items: baseline; margin: 0 0 8px; font-family: var(--fx-serif); font-size: 15px; color: var(--ash-ink); }
+.fx-v-ref a { color: var(--ash-ink); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
+.fx-v-ref a:hover { text-decoration: underline; }
+.fx-v-who { font-style: italic; }
+.fx-v-en { font-family: var(--fx-serif); font-size: 19px; line-height: 1.6; margin: 12px 0 0; max-width: 34em; }
+.fx-v:target { background: linear-gradient(90deg, rgba(200, 134, 42, 0.1), transparent 70%); }
+.fx-v:target::before { content: ''; position: absolute; left: -14px; top: 18px; bottom: 22px; width: 2px; background: var(--lamp); }
+.fx-v-note { font-size: 15.5px; color: var(--ash-ink); margin: 10px 0 0; max-width: 34em; }
+@media (min-width: 760px) {
+  .fx-v { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0 18px; }
+  .fx-v-ref { flex-direction: column; gap: 2px; margin: 6px 0 0; }
+}
+
+.fx-part { margin-top: 48px; }
+.fx-part > h2 { padding-bottom: 10px; border-bottom: 1px solid var(--rule-strong); }
+
+/* ── Panels and lists ─────────────────────────────────────────────── */
+.fx-scene { font-family: var(--fx-serif); font-size: 19px; line-height: 1.6; }
+.fx-who { font-size: 15px; color: var(--ash-ink); margin-bottom: 8px; }
+.fx-acharya h3 { font-size: 17px; font-family: var(--fx-ui); font-weight: 600; margin: 18px 0 6px; }
+.fx-upanishads:lang(hi) .fx-acharya h3 { font-family: var(--fx-deva); }
+
+.fx-forms { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 12px; }
+.fx-forms li { display: grid; gap: 2px; padding: 14px 16px; background: var(--leaf); border: 1px solid var(--rule); border-radius: 10px; }
+.fx-forms .f-sa { font-family: var(--fx-sa); font-size: 26px; line-height: 1.6; }
+.fx-forms .f-iast { font-family: var(--fx-sa); font-style: italic; font-size: 17px; }
+.fx-forms .f-label { font-size: 14px; color: var(--ash-ink); }
+
+.fx-print { margin: 20px 0 0; display: grid; gap: 14px; }
+.fx-print-img { display: block; max-width: 320px; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--leaf); }
+.fx-print img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+.fx-print figcaption p { margin: 0 0 8px; font-size: 15.5px; color: var(--ash-ink); }
+.fx-print-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.fx-print-links a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
+
+.fx-bridge { position: relative; padding: 4px 0 4px 16px; border-left: 3px solid var(--wisdom-gold); max-width: 36em; }
+.fx-upanishads .fx-bridge a { color: var(--ink); font-weight: 600; text-decoration-color: var(--wisdom-gold); text-decoration-thickness: 2px; }
+.fx-bridge-lead { color: var(--ash-ink); }
+
+.fx-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+.fx-links a { display: flex; flex-direction: column; padding: 12px 0; min-height: 44px; text-decoration: none; color: var(--ink); border-bottom: 1px solid var(--rule); }
+.fx-links a strong { font-family: var(--fx-serif); font-weight: 500; font-size: 19px; color: var(--sal-ink); }
+.fx-links a span { font-size: 15.5px; color: var(--ash-ink); }
+.fx-links a:hover strong { text-decoration: underline; text-decoration-color: var(--sal); text-underline-offset: 4px; }
+.fx-links .fx-links-sa { font-family: var(--fx-sa); font-size: 19px; color: var(--ink); }
+
+.fx-table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin: 8px 0 0; }
+.fx-table th,
+.fx-table td { text-align: left; padding: 10px 10px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.fx-table th { font-weight: 600; font-size: 14px; color: var(--ash-ink); }
+.fx-table-wrap { overflow-x: auto; }
+
+.fx-faq dl { margin: 0; display: grid; gap: 18px; }
+.fx-faq dt { font-weight: 600; margin-bottom: 4px; }
+.fx-faq dd { margin: 0; max-width: 36em; }
+.fx-sources p { font-size: 15px; color: var(--ash-ink); }
+
+.fx-books { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+.fx-books li { padding-left: 14px; border-left: 2px solid var(--rule-strong); max-width: 36em; }
+.fx-books strong { font-family: var(--fx-serif); font-weight: 500; font-size: 19px; display: block; }
+.fx-books em { color: var(--ash-ink); font-style: normal; font-size: 15px; display: block; margin-bottom: 4px; }
+
+/* Plan days */
+.fx-plan { display: grid; gap: 10px; margin-top: 8px; }
+.fx-plan details { border: 1px solid var(--rule); border-radius: 12px; background: var(--leaf); }
+.fx-plan summary { list-style: none; cursor: pointer; display: flex; gap: 14px; align-items: baseline; padding: 14px 16px; min-height: 52px; }
+.fx-plan summary::-webkit-details-marker { display: none; }
+.fx-plan .d-n { font-family: var(--fx-serif); font-size: 15px; color: var(--ash-ink); min-width: 3.2em; }
+.fx-plan .d-t { font-family: var(--fx-serif); font-size: 20px; }
+.fx-plan details[open] summary { border-bottom: 1px solid var(--rule); }
+.fx-plan .d-body { padding: 16px; }
+.fx-plan .d-sit { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--rule-strong); }
+
+/* QuoteCard and NextStep in Aranya colours */
+.fx-upanishads :is(.qc, .qns, .qsheet-wrap) {
+  --q-night: #f3ebdd;
+  --q-leaf: var(--leaf);
+  --q-leaf-2: var(--leaf);
+  --q-raise: var(--leaf);
+  --q-line: var(--rule);
+  --q-line-strong: var(--rule-strong);
+  --q-gold: var(--lamp-ink);
+  --q-gold-hi: var(--ink);
+  --q-cream: var(--ink);
+  --q-cream-2: var(--ink);
+  --q-cream-3: var(--ash-ink);
+  --q-display: var(--fx-serif);
+}
+.fx-upanishads .qc { margin-top: 18px; }
+.fx-upanishads .qc-sa { font-size: clamp(22px, 6vw, 27px); }
+.fx-upanishads .qns-btn { background: var(--ink); color: var(--bark); }
+.fx-upanishads .qns-btn:hover { background: var(--dusk); }
+.fx-next { padding: 26px 22px; background: var(--leaf); border: 1px solid var(--rule); border-radius: 14px; }
+.fx-next h2 { font-size: 21px; }
+@media (prefers-color-scheme: dark) {
+  .fx-upanishads .qns-btn { background: var(--lamp); color: #1f2a2e; }
+  .fx-upanishads .qsheet-backdrop { background: rgba(10, 14, 24, 0.66); }
+}
+
+/* ── Sit closer ───────────────────────────────────────────────────── */
+.sc { margin-top: 12px; }
+.sc-ex { margin-top: 40px; }
+.fx-upanishads .sc-title { margin-bottom: 6px; }
+.sc-cue { font-family: var(--fx-serif); font-style: italic; color: var(--ash-ink); font-size: 17px; }
+.sc-ask { position: relative; }
+.sc-answer { position: relative; margin-left: 6px; padding-left: 20px; }
+.sc-answer::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--sal); transform-origin: top; }
+.sc-answer::after { content: ''; position: absolute; left: -3px; top: -4px; width: 7px; height: 7px; border-radius: 50%; background: var(--sal); }
+.sc-on .sc-ex[data-new] .sc-answer { animation: sc-rise 500ms var(--fx-in) backwards; }
+.sc-on .sc-ex[data-new] .sc-answer::before { animation: fx-draw-y 900ms var(--fx-in) backwards; }
+.sc-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 18px 0 0 6px; padding-left: 20px; border-left: 1px dashed var(--sal); }
+.sc-btn {
+  min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid var(--sal-ink); background: var(--bark);
+  color: var(--ink); font: 500 16px/1 var(--fx-serif); cursor: pointer;
+  transition: background-color 160ms var(--fx-fb), transform 160ms var(--fx-fb);
+}
+.sc-btn:hover { background: var(--leaf); }
+.sc-btn:active { transform: scale(0.98); }
+.sc-all { min-height: 44px; border: 0; background: none; padding: 0; color: var(--ash-ink); font: 15px var(--fx-ui); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--rule-strong); cursor: pointer; }
+.sc-progress { font-size: 14.5px; color: var(--ash-ink); margin: 0; }
+.sc-done { margin-top: 28px; }
+
+/* ── Neti, neti ───────────────────────────────────────────────────── */
+.neti { margin-top: 18px; padding: 22px 20px; border: 1px solid var(--rule); border-radius: 14px; background: var(--leaf); }
+.neti-list { list-style: none; padding: 0; margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 10px 18px; }
+.neti-list li { display: grid; transition: opacity 500ms var(--fx-in); }
+.neti-list li[data-gone] { opacity: 0.12; }
+.neti-sa { font-family: var(--fx-sa); font-size: 20px; line-height: 1.5; }
+.neti-sa.s-iast { font-style: italic; font-size: 17px; }
+.neti-en { font-size: 13.5px; color: var(--ash-ink); }
+.neti-rest { display: grid; margin: 0 0 16px; }
+.neti-rest .s-deva,
+.neti-rest .s-iast { font-family: var(--fx-sa); font-size: 28px; line-height: 1.5; }
+.neti-rest .s-iast { font-style: italic; font-size: 23px; }
+.neti[data-done] .neti-rest .s-deva,
+.neti[data-done] .neti-rest .s-iast { color: var(--lamp-ink); }
+.neti-cta { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+
+@keyframes fx-draw { from { transform: scaleX(0); } to { transform: none; } }
+@keyframes fx-draw-y { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes sc-rise { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes sc-fade { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-on .sc-ex[data-new] .sc-answer { animation-name: sc-fade; }
+  .sc-on .sc-ex[data-new] .sc-answer::before,
+  html.motion .fx-line::before { animation: none; }
+  .sc-btn:active { transform: none; }
+}
+
+@media print {
+  .fx-toolbar, .fx-next, .sc-cta, .neti-cta, .fx-crumbs { display: none; }
+  .fx-upanishads { background: #fff; color: #000; }
+}
+.sc-answer:focus { outline: none; }
+body{margin:0} .font-var{--fx-spectral:"Spectral";--q-tiro:"Tiro Devanagari Sanskrit"}</style></head><body>
+<div class="fx-upanishads font-var font-var" data-script="deva" lang="en"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wisdomquotes.in/"},{"@type":"ListItem","position":2,"name":"Upanishads","item":"https://wisdomquotes.in/upanishads"},{"@type":"ListItem","position":3,"name":"Katha","item":"https://wisdomquotes.in/upanishads/katha"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Katha Upanishad: Nachiketa and Death, Full Text","description":"The whole Katha Upanishad, 119 verses, as the conversation it is: Nachiketa’s questions and Yama’s answers in Sanskrit and plain English.","inLanguage":"en","mainEntityOfPage":"https://wisdomquotes.in/upanishads/katha","datePublished":"2026-10-30","dateModified":"2026-10-30","author":{"@type":"Person","name":"Ankur Shukla","url":"https://wisdomquotes.in/about"},"publisher":{"@type":"Organization","name":"Wisdom","logo":{"@type":"ImageObject","url":"https://wisdomquotes.in/assets/new-light-logo.webp"}},"citation":"Katha Upanishad (Krishna Yajur Veda); Shankara’s commentary.","about":"Katha Upanishad"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Katha Upanishad about?","acceptedAnswer":{"@type":"Answer","text":"A boy, Nachiketa, is given to Death by his angry father. He waits three nights at Yama’s door, is offered three wishes, and uses the third to ask what happens after death. Yama tries to buy him off with wealth and long life; Nachiketa refuses, and Yama teaches him the Self."}},{"@type":"Question","name":"How many verses does the Katha Upanishad have?","acceptedAnswer":{"@type":"Answer","text":"119, in two chapters of three sections (vallis) each. It belongs to the Krishna Yajur Veda."}},{"@type":"Question","name":"Which Gita verses come from the Katha?","acceptedAnswer":{"@type":"Answer","text":"Gita 2.19 and 2.20 are close to Katha 1.2.19 and 1.2.18; Gita 8.11 echoes Katha 1.2.15; the upside-down fig tree of Gita 15.1 is the tree of Katha 2.3.1."}}]}</script><div class="fx-wrap"><nav class="fx-crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/upanishads">Upanishads</a></li><li><span aria-current="page">Katha</span></li></ol></nav><div class="fx-toolbar"><div class="fx-toggle" role="group" aria-label="Show the Sanskrit in"><button type="button" aria-pressed="true"><span lang="sa">देवनागरी</span></button><button type="button" aria-pressed="false">IAST</button></div></div><header><p class="fx-ref">Krishna Yajur Veda</p><h1>The Katha Upanishad: Nachiketa and Death</h1><p class="fx-lede" style="margin-top:14px">A boy walks to Death&#x27;s door and waits three nights for an answer.</p><p id="quick-answer" class="fx-quick">The Katha Upanishad belongs to the Krishna Yajur Veda and has 119 verses in two chapters. Nachiketa, given away to Death by his father, waits three nights at Yama&#x27;s door and is offered three wishes. With the third he asks what happens after death. Yama&#x27;s answer is the teaching.</p></header><section class="fx-sec" aria-labelledby="how"><h2 id="how">How to read it here</h2><p>Upanishad means sitting down near. The text below is laid out as the conversation it is: the student&#x27;s side first, then the teacher&#x27;s answer when you tap Sit closer. Take one exchange at a sitting if you like. The whole text is always one tap away.</p></section><section class="fx-part" aria-labelledby="text"><h2 id="text">The text</h2><div class="fx-v" id="invocation"><p class="fx-v-ref"><a href="#invocation" aria-label="Katha Invocation">Invocation</a><span class="fx-v-who">Teacher and student</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>ॐ सह नाववतु ।</span><span>सह नौ भुनक्तु ।</span><span>सह वीर्यं करवावहै ।</span><span>तेजस्वि नावधीतमस्तु मा विद्विषावहै ॥</span><span>ॐ शान्तिः शान्तिः शान्तिः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>oṃ saha nāvavatu |</span><span>saha nau bhunaktu |</span><span>saha vīryaṃ karavāvahai |</span><span>tejasvi nāvadhītamastu mā vidviṣāvahai ||</span><span>oṃ śāntiḥ śāntiḥ śāntiḥ ||</span></p></div><p class="fx-v-en">May he protect us both. May he nourish us both. May we work together with strength. May what we study shine. May we never resent each other. Om, peace, peace, peace.</p></div></div><div class="sc" id="sit-closer"><section class="sc-ex" aria-labelledby="sc-door"><h3 class="sc-title" id="sc-door">Three nights at Death’s door</h3><div class="sc-ask"><div class="fx-v" id="v1-1-1"><p class="fx-v-ref"><a href="#v1-1-1" aria-label="Katha 1.1.1">1.1.1</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>उशन् ह वै वाजश्रवसः सर्ववेदसं ददौ ।</span><span>तस्य ह नचिकेता नाम पुत्र आस ॥</span></p><p class="s-iast" lang="sa-Latn"><span>uśan ha vai vājaśravasaḥ sarvavedasaṃ dadau |</span><span>tasya ha naciketā nāma putra āsa ||</span></p></div><p class="fx-v-en">Wanting the fruit of a great rite, Vajashravasa gave away everything he owned. He had a son named Nachiketa.</p></div></div><div class="fx-v" id="v1-1-2"><p class="fx-v-ref"><a href="#v1-1-2" aria-label="Katha 1.1.2">1.1.2</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>तंह कुमारंसन्तं दक्षिणासु नीयमानासु श्रद्धाविवेश सोऽमन्यत ॥</span></p><p class="s-iast" lang="sa-Latn"><span>taṃha kumāraṃsantaṃ dakṣiṇāsu nīyamānāsu śraddhāviveśa so&#x27;manyata ||</span></p></div><p class="fx-v-en">He was still a boy, but as the gifts were led away, faith came into him, and he thought:</p></div></div><div class="fx-v" id="v1-1-3"><p class="fx-v-ref"><a href="#v1-1-3" aria-label="Katha 1.1.3">1.1.3</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>पीतोदका जग्धतृणा दुग्धदोहा निरिन्द्रियाः।</span><span>अनन्दा नाम ते लोकास्तान्स गच्छति ता ददत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>pītodakā jagdhatṛṇā dugdhadohā nirindriyāḥ|</span><span>anandā nāma te lokāstānsa gacchati tā dadat ||</span></p></div><p class="fx-v-en">These cows have drunk their last water, eaten their last grass, given their last milk, and will bear no more calves. Joyless are the worlds a man goes to who gives gifts like these.</p></div></div><div class="fx-v" id="v1-1-4"><p class="fx-v-ref"><a href="#v1-1-4" aria-label="Katha 1.1.4">1.1.4</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स होवाच पितरं तत कस्मै मां दास्यसीति ।</span><span>द्वितीयं तृतीयं तं होवाच मृत्यवे त्वा ददामीति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>sa hovāca pitaraṃ tata kasmai māṃ dāsyasīti |</span><span>dvitīyaṃ tṛtīyaṃ taṃ hovāca mṛtyave tvā dadāmīti ||</span></p></div><p class="fx-v-en">He said to his father, &quot;Father, to whom will you give me?&quot; He asked a second time, and a third. His father said, &quot;I give you to Death.&quot;</p></div></div><div class="fx-v" id="v1-1-5"><p class="fx-v-ref"><a href="#v1-1-5" aria-label="Katha 1.1.5">1.1.5</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>बहूनामेमि प्रथमो बहूनामेमि मध्यमः ।</span><span>किं स्विद्यमस्य कर्तव्यं यन्मयाऽद्य करिष्यति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>bahūnāmemi prathamo bahūnāmemi madhyamaḥ |</span><span>kiṃ svidyamasya kartavyaṃ yanmayā&#x27;dya kariṣyati ||</span></p></div><p class="fx-v-en">Of many, I go first. Of many, I go in the middle. What work does Yama have that he will do through me today?</p></div></div><div class="fx-v" id="v1-1-6"><p class="fx-v-ref"><a href="#v1-1-6" aria-label="Katha 1.1.6">1.1.6</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अनुपश्य यथा पूर्वे प्रतिपश्य तथाऽपरे ।</span><span>सस्यमिव मर्त्यः पच्यते सस्यमिवाजायते पुनः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>anupaśya yathā pūrve pratipaśya tathā&#x27;pare |</span><span>sasyamiva martyaḥ pacyate sasyamivājāyate punaḥ ||</span></p></div><p class="fx-v-en">Look at how those before us went, and see how those after us will go. A mortal ripens like grain, and like grain is born again.</p></div></div><div class="fx-v" id="v1-1-7"><p class="fx-v-ref"><a href="#v1-1-7" aria-label="Katha 1.1.7">1.1.7</a><span class="fx-v-who">Yama’s household</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>वैश्वानरः प्रविशत्यतिथिर्ब्राह्मणो गृहान् ।</span><span>तस्यैतां शान्तिं कुर्वन्ति हर वैवस्वतोदकम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>vaiśvānaraḥ praviśatyatithirbrāhmaṇo gṛhān |</span><span>tasyaitāṃ śāntiṃ kurvanti hara vaivasvatodakam ||</span></p></div><p class="fx-v-en">A Brahmin guest comes into a house like fire. People calm that fire with an offering. Bring water, son of Vivasvat.</p></div></div><div class="fx-v" id="v1-1-8"><p class="fx-v-ref"><a href="#v1-1-8" aria-label="Katha 1.1.8">1.1.8</a><span class="fx-v-who">Yama’s household</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>आशाप्रतीक्षे संगतं सूनृतां चेष्टापूर्ते पुत्रपशूंश्च सर्वान् ।</span><span>एतद्वृङ्क्ते पुरुषस्याल्पमेधसो यस्यानश्नन्वसति ब्राह्मणो गृहे ॥</span></p><p class="s-iast" lang="sa-Latn"><span>āśāpratīkṣe saṃgataṃ sūnṛtāṃ ceṣṭāpūrte putrapaśūṃśca sarvān |</span><span>etadvṛṅkte puruṣasyālpamedhaso yasyānaśnanvasati brāhmaṇo gṛhe ||</span></p></div><p class="fx-v-en">Hope and expectation, friendship and kind words, rites and good works, sons and cattle: the man of little sense loses them all when a Brahmin stays in his house without food.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-1-9"><p class="fx-v-ref"><a href="#v1-1-9" aria-label="Katha 1.1.9">1.1.9</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>तिस्रो रात्रीर्यदवात्सीर्गृहे मेऽनश्नन् ब्रह्मन्नतिथिर्नमस्यः ।</span><span>नमस्तेऽस्तु ब्रह्मन् स्वस्ति मेऽस्तु तस्मात्प्रति त्रीन्वरान्वृणीष्व ॥</span></p><p class="s-iast" lang="sa-Latn"><span>tisro rātrīryadavātsīrgṛhe me&#x27;naśnan brahmannatithirnamasyaḥ |</span><span>namaste&#x27;stu brahman svasti me&#x27;stu tasmātprati trīnvarānvṛṇīṣva ||</span></p></div><p class="fx-v-en">Brahmin, you are a guest who deserves respect, and you have stayed three nights in my house without food. I bow to you; may it go well with me. In return, choose three wishes.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-first-wish"><h3 class="sc-title" id="sc-first-wish">The first wish</h3><div class="sc-ask"><div class="fx-v" id="v1-1-10"><p class="fx-v-ref"><a href="#v1-1-10" aria-label="Katha 1.1.10">1.1.10</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>शान्तसंकल्पः सुमना यथा स्याद् वीतमन्युर्गौतमो माऽभि मृत्यो ।</span><span>त्वत्प्रसृष्टं माऽभिवदेत्प्रतीत एतत् त्रयाणां प्रथमं वरं वृणे ॥</span></p><p class="s-iast" lang="sa-Latn"><span>śāntasaṃkalpaḥ sumanā yathā syād vītamanyurgautamo mā&#x27;bhi mṛtyo |</span><span>tvatprasṛṣṭaṃ mā&#x27;bhivadetpratīta etat trayāṇāṃ prathamaṃ varaṃ vṛṇe ||</span></p></div><p class="fx-v-en">Death, let Gautama, my father, be calm in his mind and kind to me, his anger gone. When you send me back, let him know me and speak to me. Of the three, this is my first wish.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-1-11"><p class="fx-v-ref"><a href="#v1-1-11" aria-label="Katha 1.1.11">1.1.11</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यथा पुरस्ताद् भविता प्रतीत औद्दालकिरारुणिर्मत्प्रसृष्टः ।</span><span>सुखं रात्रीः शयिता वीतमन्युः त्वां ददृशिवान्मृत्युमुखात् प्रमुक्तम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yathā purastād bhavitā pratīta auddālakirāruṇirmatprasṛṣṭaḥ |</span><span>sukhaṃ rātrīḥ śayitā vītamanyuḥ tvāṃ dadṛśivānmṛtyumukhāt pramuktam ||</span></p></div><p class="fx-v-en">Auddalaki Aruni, your father, will know you as before. Sent back by me, seeing you freed from the mouth of death, he will sleep well at night, his anger gone.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-second-wish"><h3 class="sc-title" id="sc-second-wish">The second wish</h3><div class="sc-ask"><div class="fx-v" id="v1-1-12"><p class="fx-v-ref"><a href="#v1-1-12" aria-label="Katha 1.1.12">1.1.12</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स्वर्गे लोके न भयं किंचनास्ति न तत्र त्वं न जरया बिभेति ।</span><span>उभे तीर्त्वाऽशनायापिपासे शोकातिगो मोदते स्वर्गलोके ॥</span></p><p class="s-iast" lang="sa-Latn"><span>svarge loke na bhayaṃ kiṃcanāsti na tatra tvaṃ na jarayā bibheti |</span><span>ubhe tīrtvā&#x27;śanāyāpipāse śokātigo modate svargaloke ||</span></p></div><p class="fx-v-en">In the world of heaven there is no fear at all. You are not there, and no one fears old age. Past hunger and thirst, beyond sorrow, one is glad in heaven.</p></div></div><div class="fx-v" id="v1-1-13"><p class="fx-v-ref"><a href="#v1-1-13" aria-label="Katha 1.1.13">1.1.13</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स त्वमग्निं स्वर्ग्यमध्येषि मृत्यो प्रब्रूहि त्वं श्रद्दधानाय मह्यम् ।</span><span>स्वर्गलोका अमृतत्वं भजन्त एतद् द्वितीयेन वृणे वरेण ॥</span></p><p class="s-iast" lang="sa-Latn"><span>sa tvamagniṃ svargyamadhyeṣi mṛtyo prabrūhi tvaṃ śraddadhānāya mahyam |</span><span>svargalokā amṛtatvaṃ bhajanta etad dvitīyena vṛṇe vareṇa ||</span></p></div><p class="fx-v-en">Death, you know the fire that leads to heaven. Teach it to me, since I have faith. Those who reach heaven share in the deathless. This I choose as my second wish.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-1-14"><p class="fx-v-ref"><a href="#v1-1-14" aria-label="Katha 1.1.14">1.1.14</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>प्र ते ब्रवीमि तदु मे निबोध स्वर्ग्यमग्निं नचिकेतः प्रजानन् ।</span><span>अनन्तलोकाप्तिमथो प्रतिष्ठां विद्धि त्वमेतं निहितं गुहायाम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>pra te bravīmi tadu me nibodha svargyamagniṃ naciketaḥ prajānan |</span><span>anantalokāptimatho pratiṣṭhāṃ viddhi tvametaṃ nihitaṃ guhāyām ||</span></p></div><p class="fx-v-en">I will tell you; listen and understand, Nachiketa. I know the fire that leads to heaven. Know that fire, the way to endless worlds and their support, as hidden in the cave of the heart.</p></div></div><div class="fx-v" id="v1-1-15"><p class="fx-v-ref"><a href="#v1-1-15" aria-label="Katha 1.1.15">1.1.15</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>लोकादिमग्निं तमुवाच तस्मै या इष्टका यावतीर्वा यथा वा ।</span><span>स चापि तत्प्रत्यवदद्यथोक्तं अथास्य मृत्युः पुनरेवाह तुष्टः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>lokādimagniṃ tamuvāca tasmai yā iṣṭakā yāvatīrvā yathā vā |</span><span>sa cāpi tatpratyavadadyathoktaṃ athāsya mṛtyuḥ punarevāha tuṣṭaḥ ||</span></p></div><p class="fx-v-en">He told him of the fire that begins the worlds: which bricks, how many, and how to lay them. Nachiketa said it all back as it was told. Pleased with him, Death spoke again.</p></div></div><div class="fx-v" id="v1-1-16"><p class="fx-v-ref"><a href="#v1-1-16" aria-label="Katha 1.1.16">1.1.16</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>तमब्रवीत् प्रीयमाणो महात्मा वरं तवेहाद्य ददामि भूयः ।</span><span>तवैव नाम्ना भविताऽयमग्निः सृङ्कां चेमामनेकरूपां गृहाण ॥</span></p><p class="s-iast" lang="sa-Latn"><span>tamabravīt prīyamāṇo mahātmā varaṃ tavehādya dadāmi bhūyaḥ |</span><span>tavaiva nāmnā bhavitā&#x27;yamagniḥ sṛṅkāṃ cemāmanekarūpāṃ gṛhāṇa ||</span></p></div><p class="fx-v-en">Delighted, the great one said: Here I give you one more wish today. This fire will be known by your name. Take this chain of many forms as well.</p></div></div><div class="fx-v" id="v1-1-17"><p class="fx-v-ref"><a href="#v1-1-17" aria-label="Katha 1.1.17">1.1.17</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>त्रिणाचिकेतस्त्रिभिरेत्य सन्धिं त्रिकर्मकृत्तरति जन्ममृत्यू ।</span><span>ब्रह्मजज्ञं देवमीड्यं विदित्वा निचाय्येमां शान्तिमत्यन्तमेति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>triṇāciketastribhiretya sandhiṃ trikarmakṛttarati janmamṛtyū |</span><span>brahmajajñaṃ devamīḍyaṃ viditvā nicāyyemāṃ śāntimatyantameti ||</span></p></div><p class="fx-v-en">One who lights the Nachiketa fire three times, joined with the three, and does the three kinds of work, crosses birth and death. Knowing the bright one born of Brahman, worthy of praise, and seeing him, one reaches lasting peace.</p></div></div><div class="fx-v" id="v1-1-18"><p class="fx-v-ref"><a href="#v1-1-18" aria-label="Katha 1.1.18">1.1.18</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>त्रिणाचिकेतस्त्रयमेतद्विदित्वा य एवं विद्वांश्चिनुते नाचिकेतम् ।</span><span>स मृत्युपाशान् पुरतः प्रणोद्य शोकातिगो मोदते स्वर्गलोके ॥</span></p><p class="s-iast" lang="sa-Latn"><span>triṇāciketastrayametadviditvā ya evaṃ vidvāṃścinute nāciketam |</span><span>sa mṛtyupāśān purataḥ praṇodya śokātigo modate svargaloke ||</span></p></div><p class="fx-v-en">One who knows these three and, knowing them, builds the Nachiketa fire, throws off the ropes of death ahead of time and, beyond sorrow, is glad in heaven.</p></div></div><div class="fx-v" id="v1-1-19"><p class="fx-v-ref"><a href="#v1-1-19" aria-label="Katha 1.1.19">1.1.19</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एष तेऽग्निर्नचिकेतः स्वर्ग्यो यमवृणीथा द्वितीयेन वरेण ।</span><span>एतमग्निं तवैव प्रवक्ष्यन्ति जनासः तृतीयं वरं नचिकेतो वृणीष्व ॥</span></p><p class="s-iast" lang="sa-Latn"><span>eṣa te&#x27;gnirnaciketaḥ svargyo yamavṛṇīthā dvitīyena vareṇa |</span><span>etamagniṃ tavaiva pravakṣyanti janāsaḥ tṛtīyaṃ varaṃ naciketo vṛṇīṣva ||</span></p></div><p class="fx-v-en">This is your fire that leads to heaven, Nachiketa, which you chose with your second wish. People will call this fire by your name. Now, Nachiketa, choose your third wish.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-third-wish"><h3 class="sc-title" id="sc-third-wish">The third wish</h3><div class="sc-ask"><div class="fx-v" id="v1-1-20"><p class="fx-v-ref"><a href="#v1-1-20" aria-label="Katha 1.1.20">1.1.20</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>येयं प्रेते विचिकित्सा मनुष्येऽस्तीत्येके नायमस्तीति चैके ।</span><span>एतद्विद्यामनुशिष्टस्त्वयाऽहं वराणामेष वरस्तृतीयः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yeyaṃ prete vicikitsā manuṣye&#x27;stītyeke nāyamastīti caike |</span><span>etadvidyāmanuśiṣṭastvayā&#x27;haṃ varāṇāmeṣa varastṛtīyaḥ ||</span></p></div><p class="fx-v-en">When a person dies, there is this doubt. Some say, &quot;He is.&quot; Others say, &quot;He is not.&quot; I want to know this, taught by you. Of my wishes, this is the third.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-1-21"><p class="fx-v-ref"><a href="#v1-1-21" aria-label="Katha 1.1.21">1.1.21</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>देवैरत्रापि विचिकित्सितं पुरा न हि सुविज्ञेयमणुरेष धर्मः ।</span><span>अन्यं वरं नचिकेतो वृणीष्व मा मोपरोत्सीरति मा सृजैनम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>devairatrāpi vicikitsitaṃ purā na hi suvijñeyamaṇureṣa dharmaḥ |</span><span>anyaṃ varaṃ naciketo vṛṇīṣva mā moparotsīrati mā sṛjainam ||</span></p></div><p class="fx-v-en">Even the gods doubted this long ago. It is not easy to understand; it is a fine point. Choose another wish, Nachiketa. Do not hold me to this one. Let it go.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-no-other"><h3 class="sc-title" id="sc-no-other">Only the third wish</h3><div class="sc-ask"><div class="fx-v" id="v1-1-22"><p class="fx-v-ref"><a href="#v1-1-22" aria-label="Katha 1.1.22">1.1.22</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>देवैरत्रापि विचिकित्सितं किल त्वं च मृत्यो यन्न सुज्ञेयमात्थ ।</span><span>वक्ता चास्य त्वादृगन्यो न लभ्यो नान्यो वरस्तुल्य एतस्य कश्चित् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>devairatrāpi vicikitsitaṃ kila tvaṃ ca mṛtyo yanna sujñeyamāttha |</span><span>vaktā cāsya tvādṛganyo na labhyo nānyo varastulya etasya kaścit ||</span></p></div><p class="fx-v-en">Even the gods doubted it, and you, Death, say it is not easy to understand. Another teacher like you cannot be found, and no other wish is equal to this one.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-1-23"><p class="fx-v-ref"><a href="#v1-1-23" aria-label="Katha 1.1.23">1.1.23</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>शतायुषः पुत्रपौत्रान्वृणीष्वा बहून्पशून् हस्तिहिरण्यमश्वान् ।</span><span>भूमेर्महदायतनं वृणीष्व स्वयं च जीव शरदो यावदिच्छसि ॥</span></p><p class="s-iast" lang="sa-Latn"><span>śatāyuṣaḥ putrapautrānvṛṇīṣvā bahūnpaśūn hastihiraṇyamaśvān |</span><span>bhūmermahadāyatanaṃ vṛṇīṣva svayaṃ ca jīva śarado yāvadicchasi ||</span></p></div><p class="fx-v-en">Choose sons and grandsons who will live a hundred years. Choose cattle, elephants, gold and horses. Choose wide lands, and live yourself for as many autumns as you like.</p></div></div><div class="fx-v" id="v1-1-24"><p class="fx-v-ref"><a href="#v1-1-24" aria-label="Katha 1.1.24">1.1.24</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एतत्तुल्यं यदि मन्यसे वरं वृणीष्व वित्तं चिरजीविकां च ।</span><span>महाभूमौ नचिकेतस्त्वमेधि कामानां त्वा कामभाजं करोमि ॥</span></p><p class="s-iast" lang="sa-Latn"><span>etattulyaṃ yadi manyase varaṃ vṛṇīṣva vittaṃ cirajīvikāṃ ca |</span><span>mahābhūmau naciketastvamedhi kāmānāṃ tvā kāmabhājaṃ karomi ||</span></p></div><p class="fx-v-en">If you can think of a wish equal to this, choose it: wealth, and a long life with it. Be great on the wide earth, Nachiketa. I will make you enjoy every desire.</p></div></div><div class="fx-v" id="v1-1-25"><p class="fx-v-ref"><a href="#v1-1-25" aria-label="Katha 1.1.25">1.1.25</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>ये ये कामा दुर्लभा मर्त्यलोके सर्वान् कामांश्छन्दतः प्रार्थयस्व ।</span><span>इमा रामाः सरथाः सतूर्या न हीदृशा लम्भनीया मनुष्यैः ।</span><span>आभिर्मत्प्रत्ताभिः परिचारयस्व नचिकेतो मरणं माऽनुप्राक्षीः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ye ye kāmā durlabhā martyaloke sarvān kāmāṃśchandataḥ prārthayasva |</span><span>imā rāmāḥ sarathāḥ satūryā na hīdṛśā lambhanīyā manuṣyaiḥ |</span><span>ābhirmatprattābhiḥ paricārayasva naciketo maraṇaṃ mā&#x27;nuprākṣīḥ ||</span></p></div><p class="fx-v-en">Whatever desires are hard to win in the world of mortals, ask for all of them as you please. Here are lovely women with chariots and music; men cannot win their like. I give them to you; let them serve you. Nachiketa, do not ask about death.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-keep-your-horses"><h3 class="sc-title" id="sc-keep-your-horses">Keep your horses</h3><div class="sc-ask"><div class="fx-v" id="v1-1-26"><p class="fx-v-ref"><a href="#v1-1-26" aria-label="Katha 1.1.26">1.1.26</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>श्वोभावा मर्त्यस्य यदन्तकैतत् सर्वेंद्रियाणां जरयन्ति तेजः ।</span><span>अपि सर्वं जीवितमल्पमेव तवैव वाहास्तव नृत्यगीते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>śvobhāvā martyasya yadantakaitat sarveṃdriyāṇāṃ jarayanti tejaḥ |</span><span>api sarvaṃ jīvitamalpameva tavaiva vāhāstava nṛtyagīte ||</span></p></div><p class="fx-v-en">These last until tomorrow, Death, and they wear down the strength of every sense. Even a whole life is short. Keep your horses, and your dancing and singing.</p></div></div><div class="fx-v" id="v1-1-27"><p class="fx-v-ref"><a href="#v1-1-27" aria-label="Katha 1.1.27">1.1.27</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न वित्तेन तर्पणीयो मनुष्यो लप्स्यामहे वित्तमद्राक्ष्म चेत्त्वा ।</span><span>जीविष्यामो यावदीशिष्यसि त्वं वरस्तु मे वरणीयः स एव ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na vittena tarpaṇīyo manuṣyo lapsyāmahe vittamadrākṣma cettvā |</span><span>jīviṣyāmo yāvadīśiṣyasi tvaṃ varastu me varaṇīyaḥ sa eva ||</span></p></div><p class="fx-v-en">No one is ever satisfied by wealth. Will we lack wealth now that we have seen you? We will live as long as you rule. The wish I choose is that one only.</p></div></div><div class="fx-v" id="v1-1-28"><p class="fx-v-ref"><a href="#v1-1-28" aria-label="Katha 1.1.28">1.1.28</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अजीर्यताममृतानामुपेत्य जीर्यन्मर्त्यः क्वधःस्थः प्रजानन् ।</span><span>अभिध्यायन् वर्णरतिप्रमोदान् अतिदीर्घे जीविते को रमेत ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ajīryatāmamṛtānāmupetya jīryanmartyaḥ kvadhaḥsthaḥ prajānan |</span><span>abhidhyāyan varṇaratipramodān atidīrghe jīvite ko rameta ||</span></p></div><p class="fx-v-en">Once he has come near those who do not age or die, what mortal down here, ageing and knowing it, who has weighed up beauty and pleasure and delight, would enjoy a very long life?</p></div></div><div class="fx-v" id="v1-1-29"><p class="fx-v-ref"><a href="#v1-1-29" aria-label="Katha 1.1.29">1.1.29</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यस्मिन्निदं विचिकित्सन्ति मृत्यो यत्साम्पराये महति ब्रूहि नस्तत् ।</span><span>योऽयं वरो गूढमनुप्रविष्टो नान्यं तस्मान्नचिकेता वृणीते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yasminnidaṃ vicikitsanti mṛtyo yatsāmparāye mahati brūhi nastat |</span><span>yo&#x27;yaṃ varo gūḍhamanupraviṣṭo nānyaṃ tasmānnaciketā vṛṇīte ||</span></p></div><p class="fx-v-en">Tell us, Death, the thing people doubt, what happens in the great passing on. This wish goes into what is hidden. Nachiketa chooses no other.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-2-1"><p class="fx-v-ref"><a href="#v1-2-1" aria-label="Katha 1.2.1">1.2.1</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अन्यच्छ्रेयोऽन्यदुतैव प्रेयस्ते उभे नानार्थे पुरुषं सिनीतः ।</span><span>तयोः श्रेय आददानस्य साधु भवति हीयतेऽर्थाद्य उ प्रेयो वृणीते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>anyacchreyo&#x27;nyadutaiva preyaste ubhe nānārthe puruṣaṃ sinītaḥ |</span><span>tayoḥ śreya ādadānasya sādhu bhavati hīyate&#x27;rthādya u preyo vṛṇīte ||</span></p></div><p class="fx-v-en">The good is one thing, and the pleasant is another. Both take hold of a person, toward different ends. It goes well for the one who takes the good. The one who chooses the pleasant misses the goal.</p></div></div><div class="fx-v" id="v1-2-2"><p class="fx-v-ref"><a href="#v1-2-2" aria-label="Katha 1.2.2">1.2.2</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>श्रेयश्च प्रेयश्च मनुष्यमेतः तौ सम्परीत्य विविनक्ति धीरः ।</span><span>श्रेयो हि धीरोऽभि प्रेयसो वृणीते प्रेयो मन्दो योगक्षेमाद्वृणीते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>śreyaśca preyaśca manuṣyametaḥ tau samparītya vivinakti dhīraḥ |</span><span>śreyo hi dhīro&#x27;bhi preyaso vṛṇīte preyo mando yogakṣemādvṛṇīte ||</span></p></div><p class="fx-v-en">The good and the pleasant both come to a person. The steady one looks at both and tells them apart. The steady one chooses the good over the pleasant. The dull one chooses the pleasant, for getting and keeping.</p></div></div><div class="fx-v" id="v1-2-3"><p class="fx-v-ref"><a href="#v1-2-3" aria-label="Katha 1.2.3">1.2.3</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स त्वं प्रियान्प्रियरूपांश्च कामान् अभिध्यायन्नचिकेतोऽत्यस्राक्षीः ।</span><span>नैतां सृङ्कां वित्तमयीमवाप्तो यस्यां मज्जन्ति बहवो मनुष्याः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>sa tvaṃ priyānpriyarūpāṃśca kāmān abhidhyāyannaciketo&#x27;tyasrākṣīḥ |</span><span>naitāṃ sṛṅkāṃ vittamayīmavāpto yasyāṃ majjanti bahavo manuṣyāḥ ||</span></p></div><p class="fx-v-en">You, Nachiketa, have looked hard at pleasures that are dear and look dear, and let them go. You did not take this chain of wealth in which so many people sink.</p></div></div><div class="fx-v" id="v1-2-4"><p class="fx-v-ref"><a href="#v1-2-4" aria-label="Katha 1.2.4">1.2.4</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>दूरमेते विपरीते विषूची अविद्या या च विद्येति ज्ञाता ।</span><span>विद्याभीप्सिनं नचिकेतसं मन्ये न त्वा कामा बहवोऽलोलुपन्त ॥</span></p><p class="s-iast" lang="sa-Latn"><span>dūramete viparīte viṣūcī avidyā yā ca vidyeti jñātā |</span><span>vidyābhīpsinaṃ naciketasaṃ manye na tvā kāmā bahavo&#x27;lolupanta ||</span></p></div><p class="fx-v-en">These two are far apart and lead different ways: ignorance, and what is known as knowledge. I see Nachiketa wants knowledge. All those pleasures did not pull you away.</p></div></div><div class="fx-v" id="v1-2-5"><p class="fx-v-ref"><a href="#v1-2-5" aria-label="Katha 1.2.5">1.2.5</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अविद्यायामन्तरे वर्तमानाः स्वयं धीराः पण्डितंमन्यमानाः ।</span><span>दन्द्रम्यमाणाः परियन्ति मूढा अन्धेनैव नीयमाना यथान्धाः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>avidyāyāmantare vartamānāḥ svayaṃ dhīrāḥ paṇḍitaṃmanyamānāḥ |</span><span>dandramyamāṇāḥ pariyanti mūḍhā andhenaiva nīyamānā yathāndhāḥ ||</span></p></div><p class="fx-v-en">Living inside ignorance, sure they are wise and learned, fools go round and round, like the blind led by the blind.</p></div></div><div class="fx-v" id="v1-2-6"><p class="fx-v-ref"><a href="#v1-2-6" aria-label="Katha 1.2.6">1.2.6</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न साम्परायः प्रतिभाति बालं प्रमाद्यन्तं वित्तमोहेन मूढम् ।</span><span>अयं लोको नास्ति पर इति मानी पुनः पुनर्वशमापद्यते मे ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na sāmparāyaḥ pratibhāti bālaṃ pramādyantaṃ vittamohena mūḍham |</span><span>ayaṃ loko nāsti para iti mānī punaḥ punarvaśamāpadyate me ||</span></p></div><p class="fx-v-en">The passing on does not show itself to a careless child, dazed by wealth. &quot;This world is all there is; there is no other,&quot; he thinks, and he falls into my hands again and again.</p></div></div><div class="fx-v" id="v1-2-7"><p class="fx-v-ref"><a href="#v1-2-7" aria-label="Katha 1.2.7">1.2.7</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>श्रवणायापि बहुभिर्यो न लभ्यः शृण्वन्तोऽपि बहवो यं न विद्युः ।</span><span>आश्चर्यो वक्ता कुशलोऽस्य लब्धा आश्चर्यो ज्ञाता कुशलानुशिष्टः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>śravaṇāyāpi bahubhiryo na labhyaḥ śṛṇvanto&#x27;pi bahavo yaṃ na vidyuḥ |</span><span>āścaryo vaktā kuśalo&#x27;sya labdhā āścaryo jñātā kuśalānuśiṣṭaḥ ||</span></p></div><p class="fx-v-en">Many never even hear of it. Many who hear of it do not understand. Wonderful is the one who can teach it, and skilled the one who receives it. Wonderful is the one who knows it, taught by the skilled.</p></div></div><div class="fx-v" id="v1-2-8"><p class="fx-v-ref"><a href="#v1-2-8" aria-label="Katha 1.2.8">1.2.8</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न नरेणावरेण प्रोक्त एष सुविज्ञेयो बहुधा चिन्त्यमानः ।</span><span>अनन्यप्रोक्ते गतिरत्र नास्ति अणीयान् ह्यतर्क्यमणुप्रमाणात् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na nareṇāvareṇa prokta eṣa suvijñeyo bahudhā cintyamānaḥ |</span><span>ananyaprokte gatiratra nāsti aṇīyān hyatarkyamaṇupramāṇāt ||</span></p></div><p class="fx-v-en">Taught by someone who has not understood, it cannot be known well, however much it is thought about. Unless another who knows teaches it, there is no way in, for it is finer than the finest and beyond argument.</p></div></div><div class="fx-v" id="v1-2-9"><p class="fx-v-ref"><a href="#v1-2-9" aria-label="Katha 1.2.9">1.2.9</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नैषा तर्केण मतिरापनेया प्रोक्तान्येनैव सुज्ञानाय प्रेष्ठ ।</span><span>यां त्वमापः सत्यधृतिर्बतासि त्वादृङ्नो भूयान्नचिकेतः प्रष्टा ॥</span></p><p class="s-iast" lang="sa-Latn"><span>naiṣā tarkeṇa matirāpaneyā proktānyenaiva sujñānāya preṣṭha |</span><span>yāṃ tvamāpaḥ satyadhṛtirbatāsi tvādṛṅno bhūyānnaciketaḥ praṣṭā ||</span></p></div><p class="fx-v-en">This understanding is not reached by argument, dear one. Taught by another, it is easy to know. You have it, and you hold firm to truth. May we find more questioners like you, Nachiketa.</p></div></div><div class="fx-v" id="v1-2-10"><p class="fx-v-ref"><a href="#v1-2-10" aria-label="Katha 1.2.10">1.2.10</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>जानाम्यहं शेवधिरित्यनित्यं न ह्यध्रुवैः प्राप्यते हि ध्रुवं तत् ।</span><span>ततो मया नाचिकेतश्चितोऽग्निः अनित्यैर्द्रव्यैः प्राप्तवानस्मि नित्यम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>jānāmyahaṃ śevadhirityanityaṃ na hyadhruvaiḥ prāpyate hi dhruvaṃ tat |</span><span>tato mayā nāciketaścito&#x27;gniḥ anityairdravyaiḥ prāptavānasmi nityam ||</span></p></div><p class="fx-v-en">I know that treasure does not last, and the lasting cannot be reached by things that pass. Still, I built the Nachiketa fire with passing things, and so I gained what lasts.</p></div></div><div class="fx-v" id="v1-2-11"><p class="fx-v-ref"><a href="#v1-2-11" aria-label="Katha 1.2.11">1.2.11</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>कामस्याप्तिं जगतः प्रतिष्ठां क्रतोरानन्त्यमभयस्य पारम् ।</span><span>स्तोममहदुरुगायं प्रतिष्ठां दृष्ट्वा धृत्या धीरो नचिकेतोऽत्यस्राक्षीः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>kāmasyāptiṃ jagataḥ pratiṣṭhāṃ kratorānantyamabhayasya pāram |</span><span>stomamahadurugāyaṃ pratiṣṭhāṃ dṛṣṭvā dhṛtyā dhīro naciketo&#x27;tyasrākṣīḥ ||</span></p></div><p class="fx-v-en">You saw the fulfilment of desire, the ground of the world, the endless reward of rites, the far shore of fearlessness, great and wide praise, and a firm place to stand. Wise Nachiketa, you were steady and let them all go.</p></div></div><div class="fx-v" id="v1-2-12"><p class="fx-v-ref"><a href="#v1-2-12" aria-label="Katha 1.2.12">1.2.12</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>तं दुर्दर्शं गूढमनुप्रविष्टं गुहाहितं गह्वरेष्ठं पुराणम्।</span><span>अध्यात्मयोगाधिगमेन देवं मत्वा धीरो हर्षशोकौ जहाति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>taṃ durdarśaṃ gūḍhamanupraviṣṭaṃ guhāhitaṃ gahvareṣṭhaṃ purāṇam|</span><span>adhyātmayogādhigamena devaṃ matvā dhīro harṣaśokau jahāti ||</span></p></div><p class="fx-v-en">The wise one, by turning the mind toward the Self, knows that God who is hard to see, who has entered what is hidden, who sits in the cave and lives in the depths, the first one. Knowing him, he leaves joy and grief behind.</p></div></div><div class="fx-v" id="v1-2-13"><p class="fx-v-ref"><a href="#v1-2-13" aria-label="Katha 1.2.13">1.2.13</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एतच्छ्रुत्वा सम्परिगृह्य मर्त्यः प्रवृह्य धर्म्यमणुमेतमाप्य।</span><span>स मोदते मोदनीयं हि लब्ध्वा विवृतं सद्म नचिकेतसं मन्ये ॥</span></p><p class="s-iast" lang="sa-Latn"><span>etacchrutvā samparigṛhya martyaḥ pravṛhya dharmyamaṇumetamāpya|</span><span>sa modate modanīyaṃ hi labdhvā vivṛtaṃ sadma naciketasaṃ manye ||</span></p></div><p class="fx-v-en">A mortal who hears this and takes it in, who separates the fine Self from the body and reaches it, is glad, for he has found what is worth gladness. I think the door stands open for Nachiketa.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-beyond"><h3 class="sc-title" id="sc-beyond">What lies beyond</h3><div class="sc-ask"><div class="fx-v" id="v1-2-14"><p class="fx-v-ref"><a href="#v1-2-14" aria-label="Katha 1.2.14">1.2.14</a><span class="fx-v-who">Nachiketa</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अन्यत्र धर्मादन्यत्राधर्मादन्यत्रास्मात्कृताकृतात्।</span><span>अन्यत्र भूताच्च भव्याच्च यत्तत्पश्यसि तद्वद ॥</span></p><p class="s-iast" lang="sa-Latn"><span>anyatra dharmādanyatrādharmādanyatrāsmātkṛtākṛtāt|</span><span>anyatra bhūtācca bhavyācca yattatpaśyasi tadvada ||</span></p></div><p class="fx-v-en">Tell me what you see that is apart from right and wrong, apart from what is done and not done, apart from what has been and what will be.</p></div></div></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-2-15"><p class="fx-v-ref"><a href="#v1-2-15" aria-label="Katha 1.2.15">1.2.15</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>सर्वे वेदा यत्पदमामनन्ति तपांसि सर्वाणि च यद्वदन्ति ।</span><span>यदिच्छन्तो ब्रह्मचर्यं चरन्ति तत्ते पदं सङ्ग्रहेण ब्रवीम्योमित्येतत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>sarve vedā yatpadamāmananti tapāṃsi sarvāṇi ca yadvadanti |</span><span>yadicchanto brahmacaryaṃ caranti tatte padaṃ saṅgraheṇa bravīmyomityetat ||</span></p></div><p class="fx-v-en">The word all the Vedas point to, which every discipline speaks of, for which people live as students under a teacher: I will tell you that word in brief. It is Om.</p></div></div><div class="fx-v" id="v1-2-16"><p class="fx-v-ref"><a href="#v1-2-16" aria-label="Katha 1.2.16">1.2.16</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एतद्ध्येवाक्षरं ब्रह्म एतद्ध्येवाक्षरं परम् ।</span><span>एतद्ध्येवाक्षरं ज्ञात्वा यो यदिच्छति तस्य तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>etaddhyevākṣaraṃ brahma etaddhyevākṣaraṃ param |</span><span>etaddhyevākṣaraṃ jñātvā yo yadicchati tasya tat ||</span></p></div><p class="fx-v-en">This syllable is Brahman. This syllable is the highest. One who knows this syllable has whatever they wish for.</p></div></div><div class="fx-v" id="v1-2-17"><p class="fx-v-ref"><a href="#v1-2-17" aria-label="Katha 1.2.17">1.2.17</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एतदालम्बनं श्रेष्ठमेतदालम्बनं परम् ।</span><span>एतदालम्बनं ज्ञात्वा ब्रह्मलोके महीयते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>etadālambanaṃ śreṣṭhametadālambanaṃ param |</span><span>etadālambanaṃ jñātvā brahmaloke mahīyate ||</span></p></div><p class="fx-v-en">This is the best support. This is the highest support. One who knows this support is honoured in the world of Brahman.</p></div></div><div class="fx-v" id="v1-2-18"><p class="fx-v-ref"><a href="#v1-2-18" aria-label="Katha 1.2.18">1.2.18</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न जायते म्रियते वा विपश्चिन् नायं कुतश्चिन्न बभूव कश्चित् ।</span><span>अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na jāyate mriyate vā vipaścin nāyaṃ kutaścinna babhūva kaścit |</span><span>ajo nityaḥ śāśvato&#x27;yaṃ purāṇo na hanyate hanyamāne śarīre ||</span></p></div><p class="fx-v-en">The knowing Self is not born and does not die. It did not come from anything, and nothing came from it. Unborn, lasting, always, first, it is not killed when the body is killed.</p></div></div><div class="fx-v" id="v1-2-19"><p class="fx-v-ref"><a href="#v1-2-19" aria-label="Katha 1.2.19">1.2.19</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>हन्ता चेन्मन्यते हन्तुं हतश्चेन्मन्यते हतम् ।</span><span>उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>hantā cenmanyate hantuṃ hataścenmanyate hatam |</span><span>ubhau tau na vijānīto nāyaṃ hanti na hanyate ||</span></p></div><p class="fx-v-en">If the killer thinks he kills, and the killed thinks he is killed, neither of them understands. This does not kill, and it is not killed.</p></div></div><div class="fx-v" id="v1-2-20"><p class="fx-v-ref"><a href="#v1-2-20" aria-label="Katha 1.2.20">1.2.20</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अणोरणीयान्महतो महीयानात्माऽस्य जन्तोर्निहितो गुहायाम् ।</span><span>तमक्रतुः पश्यति वीतशोको धातुप्रसादान्महिमानमात्मनः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>aṇoraṇīyānmahato mahīyānātmā&#x27;sya jantornihito guhāyām |</span><span>tamakratuḥ paśyati vītaśoko dhātuprasādānmahimānamātmanaḥ ||</span></p></div><p class="fx-v-en">Finer than the fine, greater than the great, the Self sits in the heart of every creature. One who is free of wanting sees its greatness, through the clearness of the senses and mind, and is free of grief.</p></div></div><div class="fx-v" id="v1-2-21"><p class="fx-v-ref"><a href="#v1-2-21" aria-label="Katha 1.2.21">1.2.21</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>आसीनो दूरं व्रजति शयानो याति सर्वतः ।</span><span>कस्तं मदामदं देवं मदन्यो ज्ञातुमर्हति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>āsīno dūraṃ vrajati śayāno yāti sarvataḥ |</span><span>kastaṃ madāmadaṃ devaṃ madanyo jñātumarhati ||</span></p></div><p class="fx-v-en">Sitting still, it travels far. Lying down, it goes everywhere. Who but me can know that God, glad and not glad?</p></div></div><div class="fx-v" id="v1-2-22"><p class="fx-v-ref"><a href="#v1-2-22" aria-label="Katha 1.2.22">1.2.22</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अशरीरं शरीरेष्वनवस्थेष्ववस्थितम् ।</span><span>महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>aśarīraṃ śarīreṣvanavastheṣvavasthitam |</span><span>mahāntaṃ vibhumātmānaṃ matvā dhīro na śocati ||</span></p></div><p class="fx-v-en">Bodiless among bodies, steady among things that shift, great and present everywhere: knowing the Self this way, the wise one does not grieve.</p></div></div><div class="fx-v" id="v1-2-23"><p class="fx-v-ref"><a href="#v1-2-23" aria-label="Katha 1.2.23">1.2.23</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नायमात्मा प्रवचनेन लभ्यो न मेधया न बहुना श्रुतेन ।</span><span>यमेवैष वृणुते तेन लभ्यः तस्यैष आत्मा विवृणुते तनूं स्वाम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>nāyamātmā pravacanena labhyo na medhayā na bahunā śrutena |</span><span>yamevaiṣa vṛṇute tena labhyaḥ tasyaiṣa ātmā vivṛṇute tanūṃ svām ||</span></p></div><p class="fx-v-en">This Self is not reached by teaching, nor by cleverness, nor by much hearing. It is reached by the one who chooses it. To that one the Self shows its own nature.</p></div></div><div class="fx-v" id="v1-2-24"><p class="fx-v-ref"><a href="#v1-2-24" aria-label="Katha 1.2.24">1.2.24</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नाविरतो दुश्चरितान्नाशान्तो नासमाहितः ।</span><span>नाशान्तमानसो वाऽपि प्रज्ञानेनैनमाप्नुयात् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>nāvirato duścaritānnāśānto nāsamāhitaḥ |</span><span>nāśāntamānaso vā&#x27;pi prajñānenainamāpnuyāt ||</span></p></div><p class="fx-v-en">One who has not turned away from wrong conduct, who is not calm, not collected, whose mind is not at rest, cannot reach it by knowing.</p></div></div><div class="fx-v" id="v1-2-25"><p class="fx-v-ref"><a href="#v1-2-25" aria-label="Katha 1.2.25">1.2.25</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यस्य ब्रह्म च क्षत्रं च उभे भवत ओदनः ।</span><span>मृत्युर्यस्योपसेचनं क इत्था वेद यत्र सः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yasya brahma ca kṣatraṃ ca ubhe bhavata odanaḥ |</span><span>mṛtyuryasyopasecanaṃ ka itthā veda yatra saḥ ||</span></p></div><p class="fx-v-en">For whom the priest and the warrior are both food, and death is the sauce poured over it: who can know where he is?</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-chariot"><h3 class="sc-title" id="sc-chariot">The chariot</h3><div class="sc-ask"><p class="sc-cue">Nachiketa listens. Yama gives him an image he can hold.</p></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v1-3-1"><p class="fx-v-ref"><a href="#v1-3-1" aria-label="Katha 1.3.1">1.3.1</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>ऋतं पिबन्तौ सुकृतस्य लोके गुहां प्रविष्टौ परमे परार्धे ।</span><span>छायातपौ ब्रह्मविदो वदन्ति पञ्चाग्नयो ये च त्रिणाचिकेताः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ṛtaṃ pibantau sukṛtasya loke guhāṃ praviṣṭau parame parārdhe |</span><span>chāyātapau brahmavido vadanti pañcāgnayo ye ca triṇāciketāḥ ||</span></p></div><p class="fx-v-en">Two drink the fruit of what was done well in the world, both entered into the cave, the highest place. The knowers of Brahman call them shade and light, and so do those who keep the five fires and those who build the Nachiketa fire three times.</p></div></div><div class="fx-v" id="v1-3-2"><p class="fx-v-ref"><a href="#v1-3-2" aria-label="Katha 1.3.2">1.3.2</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यः सेतुरीजानानामक्षरं ब्रह्म यत् परम् ।</span><span>अभयं तितीर्षतां पारं नाचिकेतं शकेमहि ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yaḥ seturījānānāmakṣaraṃ brahma yat param |</span><span>abhayaṃ titīrṣatāṃ pāraṃ nāciketaṃ śakemahi ||</span></p></div><p class="fx-v-en">May we master the Nachiketa fire, the bridge for those who offer, and the highest Brahman that does not decay, the fearless far shore for those who want to cross.</p></div></div><div class="fx-v" id="v1-3-3"><p class="fx-v-ref"><a href="#v1-3-3" aria-label="Katha 1.3.3">1.3.3</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>आत्मानं रथिनं विद्धि शरीरं रथमेव तु ।</span><span>बुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ātmānaṃ rathinaṃ viddhi śarīraṃ rathameva tu |</span><span>buddhiṃ tu sārathiṃ viddhi manaḥ pragrahameva ca ||</span></p></div><p class="fx-v-en">Know the Self as the rider in the chariot, and the body as the chariot. Know the intellect as the driver, and the mind as the reins.</p></div></div><div class="fx-v" id="v1-3-4"><p class="fx-v-ref"><a href="#v1-3-4" aria-label="Katha 1.3.4">1.3.4</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>इन्द्रियाणि हयानाहुर्विषयां स्तेषु गोचरान् ।</span><span>आत्मेन्द्रियमनोयुक्तं भोक्तेत्याहुर्मनीषिणः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>indriyāṇi hayānāhurviṣayāṃ steṣu gocarān |</span><span>ātmendriyamanoyuktaṃ bhoktetyāhurmanīṣiṇaḥ ||</span></p></div><p class="fx-v-en">The senses, they say, are the horses, and the things of the senses are the roads they run on. The Self joined to body, senses and mind is the one who experiences, the wise say.</p></div></div><div class="fx-v" id="v1-3-5"><p class="fx-v-ref"><a href="#v1-3-5" aria-label="Katha 1.3.5">1.3.5</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यस्त्वविज्ञानवान्भवत्ययुक्तेन मनसा सदा ।</span><span>तस्येन्द्रियाण्यवश्यानि दुष्टाश्वा इव सारथेः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yastvavijñānavānbhavatyayuktena manasā sadā |</span><span>tasyendriyāṇyavaśyāni duṣṭāśvā iva sāratheḥ ||</span></p></div><p class="fx-v-en">When a person has no understanding and his mind is never held, his senses run out of control, like a driver&#x27;s unbroken horses.</p></div></div><div class="fx-v" id="v1-3-6"><p class="fx-v-ref"><a href="#v1-3-6" aria-label="Katha 1.3.6">1.3.6</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यस्तु विज्ञानवान्भवति युक्तेन मनसा सदा ।</span><span>तस्येन्द्रियाणि वश्यानि सदश्वा इव सारथेः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yastu vijñānavānbhavati yuktena manasā sadā |</span><span>tasyendriyāṇi vaśyāni sadaśvā iva sāratheḥ ||</span></p></div><p class="fx-v-en">When a person has understanding and his mind is always held, his senses stay in control, like a driver&#x27;s good horses.</p></div></div><div class="fx-v" id="v1-3-7"><p class="fx-v-ref"><a href="#v1-3-7" aria-label="Katha 1.3.7">1.3.7</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यस्त्वविज्ञानवान्भवत्यमनस्कः सदाऽशुचिः ।</span><span>न स तत्पदमाप्नोति संसारं चाधिगच्छति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yastvavijñānavānbhavatyamanaskaḥ sadā&#x27;śuciḥ |</span><span>na sa tatpadamāpnoti saṃsāraṃ cādhigacchati ||</span></p></div><p class="fx-v-en">One who has no understanding, who is careless and never clean within, does not reach that place, and comes back into the round of births.</p></div></div><div class="fx-v" id="v1-3-8"><p class="fx-v-ref"><a href="#v1-3-8" aria-label="Katha 1.3.8">1.3.8</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यस्तु विज्ञानवान्भवति समनस्कः सदा शुचिः ।</span><span>स तु तत्पदमाप्नोति यस्माद्भूयो न जायते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yastu vijñānavānbhavati samanaskaḥ sadā śuciḥ |</span><span>sa tu tatpadamāpnoti yasmādbhūyo na jāyate ||</span></p></div><p class="fx-v-en">One who has understanding, who is careful and always clean within, reaches that place from which he is not born again.</p></div></div><div class="fx-v" id="v1-3-9"><p class="fx-v-ref"><a href="#v1-3-9" aria-label="Katha 1.3.9">1.3.9</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>विज्ञानसारथिर्यस्तु मनः प्रग्रहवान्नरः ।</span><span>सोऽध्वनः पारमाप्नोति तद्विष्णोः परमं पदम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>vijñānasārathiryastu manaḥ pragrahavānnaraḥ |</span><span>so&#x27;dhvanaḥ pāramāpnoti tadviṣṇoḥ paramaṃ padam ||</span></p></div><p class="fx-v-en">One whose driver is understanding, and who holds the reins of the mind, reaches the end of the road, the highest place of Vishnu.</p></div></div><div class="fx-v" id="v1-3-10"><p class="fx-v-ref"><a href="#v1-3-10" aria-label="Katha 1.3.10">1.3.10</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>इन्द्रियेभ्यः परा ह्यर्था अर्थेभ्यश्च परं मनः ।</span><span>मनसस्तु परा बुद्धिर्बुद्धेरात्मा महान्परः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>indriyebhyaḥ parā hyarthā arthebhyaśca paraṃ manaḥ |</span><span>manasastu parā buddhirbuddherātmā mahānparaḥ ||</span></p></div><p class="fx-v-en">Beyond the senses are their objects. Beyond the objects is the mind. Beyond the mind is the intellect. Beyond the intellect is the great self.</p></div></div><div class="fx-v" id="v1-3-11"><p class="fx-v-ref"><a href="#v1-3-11" aria-label="Katha 1.3.11">1.3.11</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>महतः परमव्यक्तमव्यक्तात्पुरुषः परः ।</span><span>पुरुषान्न परं किंचित्सा काष्ठा सा परा गतिः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>mahataḥ paramavyaktamavyaktātpuruṣaḥ paraḥ |</span><span>puruṣānna paraṃ kiṃcitsā kāṣṭhā sā parā gatiḥ ||</span></p></div><p class="fx-v-en">Beyond the great is the unmanifest. Beyond the unmanifest is the Person. Beyond the Person there is nothing. That is the end. That is the highest goal.</p></div></div><div class="fx-v" id="v1-3-12"><p class="fx-v-ref"><a href="#v1-3-12" aria-label="Katha 1.3.12">1.3.12</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एष सर्वेषु भूतेषु गूढोऽऽत्मा न प्रकाशते ।</span><span>दृश्यते त्वग्र्यया बुद्ध्या सूक्ष्मया सूक्ष्मदर्शिभिः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>eṣa sarveṣu bhūteṣu gūḍho&#x27;&#x27;tmā na prakāśate |</span><span>dṛśyate tvagryayā buddhyā sūkṣmayā sūkṣmadarśibhiḥ ||</span></p></div><p class="fx-v-en">This Self is hidden in every being and does not shine out. Those who see finely see it, with a sharp and subtle intellect.</p></div></div><div class="fx-v" id="v1-3-13"><p class="fx-v-ref"><a href="#v1-3-13" aria-label="Katha 1.3.13">1.3.13</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यच्छेद्वाङ्मनसी प्राज्ञस्तद्यच्छेज्ज्ञान आत्मनि ।</span><span>ज्ञानमात्मनि महति नियच्छेत्तद्यच्छेच्छान्त आत्मनि ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yacchedvāṅmanasī prājñastadyacchejjñāna ātmani |</span><span>jñānamātmani mahati niyacchettadyacchecchānta ātmani ||</span></p></div><p class="fx-v-en">The wise one should draw speech into the mind, the mind into the knowing self, the knowing self into the great self, and the great self into the Self at peace.</p></div></div><div class="fx-v" id="v1-3-14"><p class="fx-v-ref"><a href="#v1-3-14" aria-label="Katha 1.3.14">1.3.14</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत ।</span><span>क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>uttiṣṭhata jāgrata prāpya varānnibodhata |</span><span>kṣurasya dhārā niśitā duratyayā durgaṃ pathastatkavayo vadanti ||</span></p></div><p class="fx-v-en">Arise. Awake. Go to the great teachers and learn. The wise say the path is as sharp as a razor&#x27;s edge, hard to cross and hard to walk.</p></div></div><div class="fx-v" id="v1-3-15"><p class="fx-v-ref"><a href="#v1-3-15" aria-label="Katha 1.3.15">1.3.15</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अशब्दमस्पर्शमरूपमव्ययं तथाऽरसं नित्यमगन्धवच्च यत् ।</span><span>अनाद्यनन्तं महतः परं ध्रुवं निचाय्य तन्मृत्युमुखात् प्रमुच्यते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>aśabdamasparśamarūpamavyayaṃ tathā&#x27;rasaṃ nityamagandhavacca yat |</span><span>anādyanantaṃ mahataḥ paraṃ dhruvaṃ nicāyya tanmṛtyumukhāt pramucyate ||</span></p></div><p class="fx-v-en">Without sound, touch, form or decay, without taste or smell, always, without beginning or end, beyond the great, unmoving: knowing That, one is freed from the mouth of death.</p></div></div><div class="fx-v" id="v1-3-16"><p class="fx-v-ref"><a href="#v1-3-16" aria-label="Katha 1.3.16">1.3.16</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नाचिकेतमुपाख्यानं मृत्युप्रोक्तं सनातनम् ।</span><span>उक्त्वा श्रुत्वा च मेधावी ब्रह्मलोके महीयते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>nāciketamupākhyānaṃ mṛtyuproktaṃ sanātanam |</span><span>uktvā śrutvā ca medhāvī brahmaloke mahīyate ||</span></p></div><p class="fx-v-en">The wise one who hears and tells this first story of Nachiketa, as Death told it, is honoured in the world of Brahman.</p></div></div><div class="fx-v" id="v1-3-17"><p class="fx-v-ref"><a href="#v1-3-17" aria-label="Katha 1.3.17">1.3.17</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>य इमं परमं गुह्यं श्रावयेद् ब्रह्मसंसदि ।</span><span>प्रयतः श्राद्धकाले वा तदानन्त्याय कल्पते ।</span><span>तदानन्त्याय कल्पत इति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ya imaṃ paramaṃ guhyaṃ śrāvayed brahmasaṃsadi |</span><span>prayataḥ śrāddhakāle vā tadānantyāya kalpate |</span><span>tadānantyāya kalpata iti ||</span></p></div><p class="fx-v-en">One who, made clean, recites this highest secret in a gathering of Brahmins, or at the rite for the dead, gains what is endless. He gains what is endless.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-outward"><h3 class="sc-title" id="sc-outward">The senses face outward</h3><div class="sc-ask"><p class="sc-cue">The second part begins. Yama turns to why the Self is missed.</p></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v2-1-1"><p class="fx-v-ref"><a href="#v2-1-1" aria-label="Katha 2.1.1">2.1.1</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>पराञ्चि खानि व्यतृणत् स्वयम्भूस्तस्मात्पराङ्पश्यति नान्तरात्मन्।</span><span>कश्चिद्धीरः प्रत्यगात्मानमैक्षदावृत्तचक्षुरमृतत्वमिच्छन् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>parāñci khāni vyatṛṇat svayambhūstasmātparāṅpaśyati nāntarātman|</span><span>kaściddhīraḥ pratyagātmānamaikṣadāvṛttacakṣuramṛtatvamicchan ||</span></p></div><p class="fx-v-en">The Self-born cut the openings of the senses facing outward, so a person looks out and not within. A wise one, wanting the deathless, turned his eyes inward and saw the Self.</p></div></div><div class="fx-v" id="v2-1-2"><p class="fx-v-ref"><a href="#v2-1-2" aria-label="Katha 2.1.2">2.1.2</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>पराचः कामाननुयन्ति बालास्ते मृत्योर्यन्ति विततस्य पाशम् ।</span><span>अथ धीरा अमृतत्वं विदित्वा ध्रुवमध्रुवेष्विह न प्रार्थयन्ते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>parācaḥ kāmānanuyanti bālāste mṛtyoryanti vitatasya pāśam |</span><span>atha dhīrā amṛtatvaṃ viditvā dhruvamadhruveṣviha na prārthayante ||</span></p></div><p class="fx-v-en">Children run after outward pleasures and walk into the wide net of death. The wise, knowing what is deathless and sure, do not look for the lasting among the things here that pass.</p></div></div><div class="fx-v" id="v2-1-3"><p class="fx-v-ref"><a href="#v2-1-3" aria-label="Katha 2.1.3">2.1.3</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>येन रूपं रसं गन्धं शब्दान् स्पर्शांश्च मैथुनान् ।</span><span>एतेनैव विजानाति किमत्र परिशिष्यते ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yena rūpaṃ rasaṃ gandhaṃ śabdān sparśāṃśca maithunān |</span><span>etenaiva vijānāti kimatra pariśiṣyate |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">That by which one knows form, taste, smell, sound, touch and the pleasures of love: what is left here that it does not know? This is That.</p></div></div><div class="fx-v" id="v2-1-4"><p class="fx-v-ref"><a href="#v2-1-4" aria-label="Katha 2.1.4">2.1.4</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>स्वप्नान्तं जागरितान्तं चोभौ येनानुपश्यति ।</span><span>महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>svapnāntaṃ jāgaritāntaṃ cobhau yenānupaśyati |</span><span>mahāntaṃ vibhumātmānaṃ matvā dhīro na śocati ||</span></p></div><p class="fx-v-en">That by which one sees both dream and waking: knowing it as the great Self present everywhere, the wise one does not grieve.</p></div></div><div class="fx-v" id="v2-1-5"><p class="fx-v-ref"><a href="#v2-1-5" aria-label="Katha 2.1.5">2.1.5</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>य इमं मध्वदं वेद आत्मानं जीवमन्तिकात् ।</span><span>ईशानं भूतभव्यस्य न ततो विजुगुप्सते ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ya imaṃ madhvadaṃ veda ātmānaṃ jīvamantikāt |</span><span>īśānaṃ bhūtabhavyasya na tato vijugupsate |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">One who knows this Self that tastes the honey of life, the living one close at hand, lord of what was and what will be, shrinks from nothing after that. This is That.</p></div></div><div class="fx-v" id="v2-1-6"><p class="fx-v-ref"><a href="#v2-1-6" aria-label="Katha 2.1.6">2.1.6</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यः पूर्वं तपसो जातमद्भ्यः पूर्वमजायत ।</span><span>गुहां प्रविश्य तिष्ठन्तं यो भूतेभिर्व्यपश्यत ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yaḥ pūrvaṃ tapaso jātamadbhyaḥ pūrvamajāyata |</span><span>guhāṃ praviśya tiṣṭhantaṃ yo bhūtebhirvyapaśyata |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">The one who was born first, from discipline, born before the waters, who entered the cave and stays there among the elements, and is seen there: This is That.</p></div></div><div class="fx-v" id="v2-1-7"><p class="fx-v-ref"><a href="#v2-1-7" aria-label="Katha 2.1.7">2.1.7</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>या प्राणेन संभवत्यदितिर्देवतामयी ।</span><span>गुहां प्रविश्य तिष्ठन्तीं या भूतेभिर्व्यजायत ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yā prāṇena saṃbhavatyaditirdevatāmayī |</span><span>guhāṃ praviśya tiṣṭhantīṃ yā bhūtebhirvyajāyata |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">Aditi, who rises as life itself, made of the gods, who entered the cave and stays there, born together with the elements: This is That.</p></div></div><div class="fx-v" id="v2-1-8"><p class="fx-v-ref"><a href="#v2-1-8" aria-label="Katha 2.1.8">2.1.8</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अरण्योर्निहितो जातवेदा गर्भ इव सुभृतो गर्भिणीभिः ।</span><span>दिवे दिवे ईड्यो जागृवद्भिर्हविष्मद्भिर्मनुष्येभिरग्निः ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>araṇyornihito jātavedā garbha iva subhṛto garbhiṇībhiḥ |</span><span>dive dive īḍyo jāgṛvadbhirhaviṣmadbhirmanuṣyebhiragniḥ |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">Agni, who knows all that is born, hidden in the two fire sticks like a child well guarded by mothers, praised every day by people who are awake and make offerings: This is That.</p></div></div><div class="fx-v" id="v2-1-9"><p class="fx-v-ref"><a href="#v2-1-9" aria-label="Katha 2.1.9">2.1.9</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यतश्चोदेति सूर्योऽस्तं यत्र च गच्छति ।</span><span>तं देवाः सर्वेऽर्पितास्तदु नात्येति कश्चन ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yataścodeti sūryo&#x27;staṃ yatra ca gacchati |</span><span>taṃ devāḥ sarve&#x27;rpitāstadu nātyeti kaścana |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">That from which the sun rises and into which it sets, in which all the gods are fixed, beyond which no one passes: This is That.</p></div></div><div class="fx-v" id="v2-1-10"><p class="fx-v-ref"><a href="#v2-1-10" aria-label="Katha 2.1.10">2.1.10</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यदेवेह तदमुत्र यदमुत्र तदन्विह ।</span><span>मृत्योः स मृत्युमाप्नोति य इह नानेव पश्यति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yadeveha tadamutra yadamutra tadanviha |</span><span>mṛtyoḥ sa mṛtyumāpnoti ya iha nāneva paśyati ||</span></p></div><p class="fx-v-en">What is here is there, and what is there is here. One who sees difference here goes from death to death.</p></div></div><div class="fx-v" id="v2-1-11"><p class="fx-v-ref"><a href="#v2-1-11" aria-label="Katha 2.1.11">2.1.11</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>मनसैवेदमाप्तव्यं नेह नानाऽस्ति किंचन ।</span><span>मृत्योः स मृत्युं गच्छति य इह नानेव पश्यति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>manasaivedamāptavyaṃ neha nānā&#x27;sti kiṃcana |</span><span>mṛtyoḥ sa mṛtyuṃ gacchati ya iha nāneva paśyati ||</span></p></div><p class="fx-v-en">This is to be reached by the mind alone: there is no difference here at all. One who sees difference here goes from death to death.</p></div></div><div class="fx-v" id="v2-1-12"><p class="fx-v-ref"><a href="#v2-1-12" aria-label="Katha 2.1.12">2.1.12</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अङ्गुष्ठमात्रः पुरुषो मध्य आत्मनि तिष्ठति ।</span><span>ईशानं भूतभव्यस्य न ततो विजुगुप्सते ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>aṅguṣṭhamātraḥ puruṣo madhya ātmani tiṣṭhati |</span><span>īśānaṃ bhūtabhavyasya na tato vijugupsate |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">The Person the size of a thumb stands in the middle of the body, lord of what was and what will be. One who knows him shrinks from nothing after that. This is That.</p></div></div><div class="fx-v" id="v2-1-13"><p class="fx-v-ref"><a href="#v2-1-13" aria-label="Katha 2.1.13">2.1.13</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अङ्गुष्ठमात्रः पुरुषो ज्योतिरिवाधूमकः ।</span><span>ईशानो भूतभव्यस्य स एवाद्य स उ श्वः ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>aṅguṣṭhamātraḥ puruṣo jyotirivādhūmakaḥ |</span><span>īśāno bhūtabhavyasya sa evādya sa u śvaḥ |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">The Person the size of a thumb is like a flame without smoke, lord of what was and what will be. He is here today, and he will be here tomorrow. This is That.</p></div></div><div class="fx-v" id="v2-1-14"><p class="fx-v-ref"><a href="#v2-1-14" aria-label="Katha 2.1.14">2.1.14</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यथोदकं दुर्गे वृष्टं पर्वतेषु विधावति ।</span><span>एवं धर्मान् पृथक् पश्यंस्तानेवानुविधावति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yathodakaṃ durge vṛṣṭaṃ parvateṣu vidhāvati |</span><span>evaṃ dharmān pṛthak paśyaṃstānevānuvidhāvati ||</span></p></div><p class="fx-v-en">As rain that falls on high ground runs off down the hills, one who sees things as separate runs after them.</p></div></div><div class="fx-v" id="v2-1-15"><p class="fx-v-ref"><a href="#v2-1-15" aria-label="Katha 2.1.15">2.1.15</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यथोदकं शुद्धे शुद्धमासिक्तं तादृगेव भवति ।</span><span>एवं मुनेर्विजानत आत्मा भवति गौतम ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yathodakaṃ śuddhe śuddhamāsiktaṃ tādṛgeva bhavati |</span><span>evaṃ munervijānata ātmā bhavati gautama ||</span></p></div><p class="fx-v-en">As clear water poured into clear water becomes just that, so does the Self of the sage who knows, Gautama.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-city"><h3 class="sc-title" id="sc-city">The city with eleven gates</h3><div class="sc-ask"><p class="sc-cue">Yama speaks of the body as a city and of what lives in it.</p></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v2-2-1"><p class="fx-v-ref"><a href="#v2-2-1" aria-label="Katha 2.2.1">2.2.1</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>पुरमेकादशद्वारमजस्यावक्रचेतसः ।</span><span>अनुष्ठाय न शोचति विमुक्तश्च विमुच्यते ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>puramekādaśadvāramajasyāvakracetasaḥ |</span><span>anuṣṭhāya na śocati vimuktaśca vimucyate |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">The city of the unborn one, whose knowing is never bent, has eleven gates. One who attends to him grieves no more, and, set free, is free. This is That.</p></div></div><div class="fx-v" id="v2-2-2"><p class="fx-v-ref"><a href="#v2-2-2" aria-label="Katha 2.2.2">2.2.2</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>हंसः शुचिषद्वसुरन्तरिक्षसद्होता वेदिषदतिथिर्दुरोणसत् ।</span><span>नृषद्वरसदृतसद्व्योमसद् अब्जा गोजा ऋतजा अद्रिजा ऋतं बृहत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>haṃsaḥ śuciṣadvasurantarikṣasadhotā vediṣadatithirduroṇasat |</span><span>nṛṣadvarasadṛtasadvyomasad abjā gojā ṛtajā adrijā ṛtaṃ bṛhat ||</span></p></div><p class="fx-v-en">He is the sun moving in the bright sky, the wind in the middle air, the fire on the altar, the guest in the house. He is in people, in the gods, in what is right, in the sky. He is born in water, born of earth, born in the rite, born on the mountains. He is the true, the vast.</p></div></div><div class="fx-v" id="v2-2-3"><p class="fx-v-ref"><a href="#v2-2-3" aria-label="Katha 2.2.3">2.2.3</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>ऊर्ध्वं प्राणमुन्नयत्यपानं प्रत्यगस्यति ।</span><span>मध्ये वामनमासीनं विश्वे देवा उपासते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ūrdhvaṃ prāṇamunnayatyapānaṃ pratyagasyati |</span><span>madhye vāmanamāsīnaṃ viśve devā upāsate ||</span></p></div><p class="fx-v-en">He leads the out-breath upward and pushes the in-breath down. All the gods serve the small one who sits in the middle.</p></div></div><div class="fx-v" id="v2-2-4"><p class="fx-v-ref"><a href="#v2-2-4" aria-label="Katha 2.2.4">2.2.4</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अस्य विस्रंसमानस्य शरीरस्थस्य देहिनः ।</span><span>देहाद्विमुच्यमानस्य किमत्र परिशिष्यते ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>asya visraṃsamānasya śarīrasthasya dehinaḥ |</span><span>dehādvimucyamānasya kimatra pariśiṣyate |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">When this one who lives in the body slips away and is freed from the body, what is left here? This is That.</p></div></div><div class="fx-v" id="v2-2-5"><p class="fx-v-ref"><a href="#v2-2-5" aria-label="Katha 2.2.5">2.2.5</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न प्राणेन नापानेन मर्त्यो जीवति कश्चन ।</span><span>इतरेण तु जीवन्ति यस्मिन्नेतावुपाश्रितौ ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na prāṇena nāpānena martyo jīvati kaścana |</span><span>itareṇa tu jīvanti yasminnetāvupāśritau ||</span></p></div><p class="fx-v-en">No mortal lives by the out-breath or by the in-breath. People live by something else, on which these two rest.</p></div></div><div class="fx-v" id="v2-2-6"><p class="fx-v-ref"><a href="#v2-2-6" aria-label="Katha 2.2.6">2.2.6</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>हन्त त इदं प्रवक्ष्यामि गुह्यं ब्रह्म सनातनम् ।</span><span>यथा च मरणं प्राप्य आत्मा भवति गौतम ॥</span></p><p class="s-iast" lang="sa-Latn"><span>hanta ta idaṃ pravakṣyāmi guhyaṃ brahma sanātanam |</span><span>yathā ca maraṇaṃ prāpya ātmā bhavati gautama ||</span></p></div><p class="fx-v-en">Now I will tell you about this hidden Brahman that has always been, and what becomes of the self after death, Gautama.</p></div></div><div class="fx-v" id="v2-2-7"><p class="fx-v-ref"><a href="#v2-2-7" aria-label="Katha 2.2.7">2.2.7</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>योनिमन्ये प्रपद्यन्ते शरीरत्वाय देहिनः ।</span><span>स्थाणुमन्येऽनुसंयन्ति यथाकर्म यथाश्रुतम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yonimanye prapadyante śarīratvāya dehinaḥ |</span><span>sthāṇumanye&#x27;nusaṃyanti yathākarma yathāśrutam ||</span></p></div><p class="fx-v-en">Some go into a womb to take a body. Others go into things that do not move, each according to what they have done and what they have learned.</p></div></div><div class="fx-v" id="v2-2-8"><p class="fx-v-ref"><a href="#v2-2-8" aria-label="Katha 2.2.8">2.2.8</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>य एष सुप्तेषु जागर्ति कामं कामं पुरुषो निर्मिमाणः ।</span><span>तदेव शुक्रं तद्ब्रह्म तदेवामृतमुच्यते ।</span><span>तस्मिंल्लोकाः श्रिताः सर्वे तदु नात्येति कश्चन ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ya eṣa supteṣu jāgarti kāmaṃ kāmaṃ puruṣo nirmimāṇaḥ |</span><span>tadeva śukraṃ tadbrahma tadevāmṛtamucyate |</span><span>tasmiṃllokāḥ śritāḥ sarve tadu nātyeti kaścana |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">The one who stays awake in those who sleep, shaping one desire after another: that is the bright, that is Brahman, that is called the deathless. All worlds rest in it, and no one passes beyond it. This is That.</p></div></div><div class="fx-v" id="v2-2-9"><p class="fx-v-ref"><a href="#v2-2-9" aria-label="Katha 2.2.9">2.2.9</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अग्निर्यथैको भुवनं प्रविष्टो रूपं रूपं प्रतिरूपो बभूव ।</span><span>एकस्तथा सर्वभूतान्तरात्मा रूपं रूपं प्रतिरूपो बहिश्च ॥</span></p><p class="s-iast" lang="sa-Latn"><span>agniryathaiko bhuvanaṃ praviṣṭo rūpaṃ rūpaṃ pratirūpo babhūva |</span><span>ekastathā sarvabhūtāntarātmā rūpaṃ rūpaṃ pratirūpo bahiśca ||</span></p></div><p class="fx-v-en">As the one fire, entering the world, takes the shape of whatever it burns, so the one Self inside all beings takes the shape of each, and is also outside them.</p></div></div><div class="fx-v" id="v2-2-10"><p class="fx-v-ref"><a href="#v2-2-10" aria-label="Katha 2.2.10">2.2.10</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>वायुर्यथैको भुवनं प्रविष्टो रूपं रूपं प्रतिरूपो बभूव ।</span><span>एकस्तथा सर्वभूतान्तरात्मा रूपं रूपं प्रतिरूपो बहिश्च ॥</span></p><p class="s-iast" lang="sa-Latn"><span>vāyuryathaiko bhuvanaṃ praviṣṭo rūpaṃ rūpaṃ pratirūpo babhūva |</span><span>ekastathā sarvabhūtāntarātmā rūpaṃ rūpaṃ pratirūpo bahiśca ||</span></p></div><p class="fx-v-en">As the one air, entering the world, takes the shape of whatever it fills, so the one Self inside all beings takes the shape of each, and is also outside them.</p></div></div><div class="fx-v" id="v2-2-11"><p class="fx-v-ref"><a href="#v2-2-11" aria-label="Katha 2.2.11">2.2.11</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>सूर्यो यथा सर्वलोकस्य चक्षुः न लिप्यते चाक्षुषैर्बाह्यदोषैः ।</span><span>एकस्तथा सर्वभूतान्तरात्मा न लिप्यते लोकदुःखेन बाह्यः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>sūryo yathā sarvalokasya cakṣuḥ na lipyate cākṣuṣairbāhyadoṣaiḥ |</span><span>ekastathā sarvabhūtāntarātmā na lipyate lokaduḥkhena bāhyaḥ ||</span></p></div><p class="fx-v-en">As the sun, the eye of the whole world, is not touched by the faults of the eyes or of what they see, so the one Self inside all beings is not touched by the world&#x27;s pain, for it stands outside it.</p></div></div><div class="fx-v" id="v2-2-12"><p class="fx-v-ref"><a href="#v2-2-12" aria-label="Katha 2.2.12">2.2.12</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>एको वशी सर्वभूतान्तरात्मा एकं रूपं बहुधा यः करोति ।</span><span>तमात्मस्थं येऽनुपश्यन्ति धीराः तेषां सुखं शाश्वतं नेतरेषाम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>eko vaśī sarvabhūtāntarātmā ekaṃ rūpaṃ bahudhā yaḥ karoti |</span><span>tamātmasthaṃ ye&#x27;nupaśyanti dhīrāḥ teṣāṃ sukhaṃ śāśvataṃ netareṣām ||</span></p></div><p class="fx-v-en">The one ruler, the Self inside all beings, who makes one form into many: the wise who see him in themselves have lasting happiness. Others do not.</p></div></div><div class="fx-v" id="v2-2-13"><p class="fx-v-ref"><a href="#v2-2-13" aria-label="Katha 2.2.13">2.2.13</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नित्योऽनित्यानां चेतनश्चेतनानाम् एको बहूनां यो विदधाति कामान् ।</span><span>तमात्मस्थं येऽनुपश्यन्ति धीराः तेषां शान्तिः शाश्वती नेतरेषाम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>nityo&#x27;nityānāṃ cetanaścetanānām eko bahūnāṃ yo vidadhāti kāmān |</span><span>tamātmasthaṃ ye&#x27;nupaśyanti dhīrāḥ teṣāṃ śāntiḥ śāśvatī netareṣām ||</span></p></div><p class="fx-v-en">The lasting among things that pass, the awareness in all who are aware, the one who answers the wishes of many: the wise who see him in themselves have lasting peace. Others do not.</p></div></div><div class="fx-v" id="v2-2-14"><p class="fx-v-ref"><a href="#v2-2-14" aria-label="Katha 2.2.14">2.2.14</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>तदेतदिति मन्यन्तेऽनिर्देश्यं परमं सुखम् ।</span><span>कथं नु तद्विजानीयां किमु भाति विभाति वा ॥</span></p><p class="s-iast" lang="sa-Latn"><span>tadetaditi manyante&#x27;nirdeśyaṃ paramaṃ sukham |</span><span>kathaṃ nu tadvijānīyāṃ kimu bhāti vibhāti vā ||</span></p></div><p class="fx-v-en">&quot;This is That,&quot; the wise know, the highest happiness, which cannot be put into words. How shall I know it? Does it shine on its own, or by another light?</p></div></div><div class="fx-v" id="v2-2-15"><p class="fx-v-ref"><a href="#v2-2-15" aria-label="Katha 2.2.15">2.2.15</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न तत्र सूर्यो भाति न चन्द्रतारकं नेमा विद्युतो भान्ति कुतोऽयमग्निः ।</span><span>तमेव भान्तमनुभाति सर्वं तस्य भासा सर्वमिदं विभाति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na tatra sūryo bhāti na candratārakaṃ nemā vidyuto bhānti kuto&#x27;yamagniḥ |</span><span>tameva bhāntamanubhāti sarvaṃ tasya bhāsā sarvamidaṃ vibhāti ||</span></p></div><p class="fx-v-en">The sun does not shine there, nor the moon and stars, nor these flashes of lightning, still less this fire. Everything shines after him as he shines. By his light all of this shines.</p></div></div></div></section><section class="sc-ex" aria-labelledby="sc-tree"><h3 class="sc-title" id="sc-tree">The tree with its roots above</h3><div class="sc-ask"><p class="sc-cue">The last teaching, and what became of Nachiketa.</p></div><div class="sc-answer" tabindex="-1"><div class="fx-v" id="v2-3-1"><p class="fx-v-ref"><a href="#v2-3-1" aria-label="Katha 2.3.1">2.3.1</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>ऊर्ध्वमूलोऽवाक्शाख एषोऽश्वत्थः सनातनः ।</span><span>तदेव शुक्रं तद्ब्रह्म तदेवामृतमुच्यते ।</span><span>तस्मिंल्लोकाः श्रिताः सर्वे तदु नात्येति कश्चन ।</span><span>एतद्वै तत् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>ūrdhvamūlo&#x27;vākśākha eṣo&#x27;śvatthaḥ sanātanaḥ |</span><span>tadeva śukraṃ tadbrahma tadevāmṛtamucyate |</span><span>tasmiṃllokāḥ śritāḥ sarve tadu nātyeti kaścana |</span><span>etadvai tat ||</span></p></div><p class="fx-v-en">This is the old fig tree with its roots above and its branches below. That is the bright, that is Brahman, that is called the deathless. All worlds rest in it, and no one passes beyond it. This is That.</p></div></div><div class="fx-v" id="v2-3-2"><p class="fx-v-ref"><a href="#v2-3-2" aria-label="Katha 2.3.2">2.3.2</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यदिदं किं च जगत् सर्वं प्राण एजति निःसृतम् ।</span><span>महद्भयं वज्रमुद्यतं य एतद्विदुरमृतास्ते भवन्ति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yadidaṃ kiṃ ca jagat sarvaṃ prāṇa ejati niḥsṛtam |</span><span>mahadbhayaṃ vajramudyataṃ ya etadviduramṛtāste bhavanti ||</span></p></div><p class="fx-v-en">Whatever there is, the whole world, came out of life and moves within it. It is a great fear, like a raised thunderbolt. Those who know it become deathless.</p></div></div><div class="fx-v" id="v2-3-3"><p class="fx-v-ref"><a href="#v2-3-3" aria-label="Katha 2.3.3">2.3.3</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>भयादस्याग्निस्तपति भयात्तपति सूर्यः ।</span><span>भयादिन्द्रश्च वायुश्च मृत्युर्धावति पञ्चमः ॥</span></p><p class="s-iast" lang="sa-Latn"><span>bhayādasyāgnistapati bhayāttapati sūryaḥ |</span><span>bhayādindraśca vāyuśca mṛtyurdhāvati pañcamaḥ ||</span></p></div><p class="fx-v-en">From fear of him the fire burns. From fear the sun gives heat. From fear Indra and the wind, and Death as the fifth, run their course.</p></div></div><div class="fx-v" id="v2-3-4"><p class="fx-v-ref"><a href="#v2-3-4" aria-label="Katha 2.3.4">2.3.4</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>इह चेदशकद्बोद्धुं प्राक्षरीरस्य विस्रसः ।</span><span>ततः सर्गेषु लोकेषु शरीरत्वाय कल्पते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>iha cedaśakadboddhuṃ prākṣarīrasya visrasaḥ |</span><span>tataḥ sargeṣu lokeṣu śarīratvāya kalpate ||</span></p></div><p class="fx-v-en">If a person comes to know it here, before the body falls away, he is free. If not, he takes a body again in the made worlds.</p></div></div><div class="fx-v" id="v2-3-5"><p class="fx-v-ref"><a href="#v2-3-5" aria-label="Katha 2.3.5">2.3.5</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यथाऽऽदर्शे तथाऽऽत्मनि यथा स्वप्ने तथा पितृलोके ।</span><span>यथाऽप्सु परीव ददृशे तथा गन्धर्वलोके छायातपयोरिव ब्रह्मलोके ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yathā&#x27;&#x27;darśe tathā&#x27;&#x27;tmani yathā svapne tathā pitṛloke |</span><span>yathā&#x27;psu parīva dadṛśe tathā gandharvaloke chāyātapayoriva brahmaloke ||</span></p></div><p class="fx-v-en">As in a mirror, so it is seen in oneself. As in a dream, so in the world of the ancestors. As in water, so in the world of the gandharvas. As light and shade, so in the world of Brahman.</p></div></div><div class="fx-v" id="v2-3-6"><p class="fx-v-ref"><a href="#v2-3-6" aria-label="Katha 2.3.6">2.3.6</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>इन्द्रियाणां पृथग्भावमुदयास्तमयौ च यत् ।</span><span>पृथगुत्पद्यमानानां मत्वा धीरो न शोचति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>indriyāṇāṃ pṛthagbhāvamudayāstamayau ca yat |</span><span>pṛthagutpadyamānānāṃ matvā dhīro na śocati ||</span></p></div><p class="fx-v-en">Knowing that the senses are separate, and that their rising and setting belongs to them alone, the wise one does not grieve.</p></div></div><div class="fx-v" id="v2-3-7"><p class="fx-v-ref"><a href="#v2-3-7" aria-label="Katha 2.3.7">2.3.7</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>इन्द्रियेभ्यः परं मनो मनसः सत्त्वमुत्तमम् ।</span><span>सत्त्वादधि महानात्मा महतोऽव्यक्तमुत्तमम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>indriyebhyaḥ paraṃ mano manasaḥ sattvamuttamam |</span><span>sattvādadhi mahānātmā mahato&#x27;vyaktamuttamam ||</span></p></div><p class="fx-v-en">Higher than the senses is the mind. Higher than the mind is the clear intellect. Above the intellect is the great self, and higher than the great is the unmanifest.</p></div></div><div class="fx-v" id="v2-3-8"><p class="fx-v-ref"><a href="#v2-3-8" aria-label="Katha 2.3.8">2.3.8</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अव्यक्तात्तु परः पुरुषो व्यापकोऽलिङ्ग एव च ।</span><span>यं ज्ञात्वा मुच्यते जन्तुरमृतत्वं च गच्छति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>avyaktāttu paraḥ puruṣo vyāpako&#x27;liṅga eva ca |</span><span>yaṃ jñātvā mucyate janturamṛtatvaṃ ca gacchati ||</span></p></div><p class="fx-v-en">Higher than the unmanifest is the Person, present everywhere and without any marks. Knowing him, a creature is set free and reaches the deathless.</p></div></div><div class="fx-v" id="v2-3-9"><p class="fx-v-ref"><a href="#v2-3-9" aria-label="Katha 2.3.9">2.3.9</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>न संदृशे तिष्ठति रूपमस्य न चक्षुषा पश्यति कश्चनैनम् ।</span><span>हृदा मनीषा मनसाऽभिक्लृप्तो य एतद्विदुरमृतास्ते भवन्ति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>na saṃdṛśe tiṣṭhati rūpamasya na cakṣuṣā paśyati kaścanainam |</span><span>hṛdā manīṣā manasā&#x27;bhiklṛpto ya etadviduramṛtāste bhavanti ||</span></p></div><p class="fx-v-en">His form is not something the eye can stand before. No one sees him with the eye. He is grasped by the heart, by insight, by the mind. Those who know this become deathless.</p></div></div><div class="fx-v" id="v2-3-10"><p class="fx-v-ref"><a href="#v2-3-10" aria-label="Katha 2.3.10">2.3.10</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यदा पञ्चावतिष्ठन्ते ज्ञानानि मनसा सह ।</span><span>बुद्धिश्च न विचेष्टते तामाहुः परमां गतिम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yadā pañcāvatiṣṭhante jñānāni manasā saha |</span><span>buddhiśca na viceṣṭate tāmāhuḥ paramāṃ gatim ||</span></p></div><p class="fx-v-en">When the five senses of knowing rest together with the mind, and the intellect does not stir, that, they say, is the highest state.</p></div></div><div class="fx-v" id="v2-3-11"><p class="fx-v-ref"><a href="#v2-3-11" aria-label="Katha 2.3.11">2.3.11</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>तां योगमिति मन्यन्ते स्थिरामिन्द्रियधारणाम् ।</span><span>अप्रमत्तस्तदा भवति योगो हि प्रभवाप्ययौ ॥</span></p><p class="s-iast" lang="sa-Latn"><span>tāṃ yogamiti manyante sthirāmindriyadhāraṇām |</span><span>apramattastadā bhavati yogo hi prabhavāpyayau ||</span></p></div><p class="fx-v-en">This steady holding of the senses is what they call yoga. Then a person becomes watchful, for yoga comes and it goes.</p></div></div><div class="fx-v" id="v2-3-12"><p class="fx-v-ref"><a href="#v2-3-12" aria-label="Katha 2.3.12">2.3.12</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>नैव वाचा न मनसा प्राप्तुं शक्यो न चक्षुषा ।</span><span>अस्तीति ब्रुवतोऽन्यत्र कथं तदुपलभ्यते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>naiva vācā na manasā prāptuṃ śakyo na cakṣuṣā |</span><span>astīti bruvato&#x27;nyatra kathaṃ tadupalabhyate ||</span></p></div><p class="fx-v-en">It cannot be reached by speech, or by the mind, or by the eye. How can it be known except by one who says, &quot;It is&quot;?</p></div></div><div class="fx-v" id="v2-3-13"><p class="fx-v-ref"><a href="#v2-3-13" aria-label="Katha 2.3.13">2.3.13</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अस्तीत्येवोपलब्धव्यस्तत्त्वभावेन चोभयोः ।</span><span>अस्तीत्येवोपलब्धस्य तत्त्वभावः प्रसीदति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>astītyevopalabdhavyastattvabhāvena cobhayoḥ |</span><span>astītyevopalabdhasya tattvabhāvaḥ prasīdati ||</span></p></div><p class="fx-v-en">It is first to be grasped as &quot;It is,&quot; and then in its true nature, of the two. Once grasped as &quot;It is,&quot; its true nature becomes clear.</p></div></div><div class="fx-v" id="v2-3-14"><p class="fx-v-ref"><a href="#v2-3-14" aria-label="Katha 2.3.14">2.3.14</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यदा सर्वे प्रमुच्यन्ते कामा येऽस्य हृदि श्रिताः ।</span><span>अथ मर्त्योऽमृतो भवत्यत्र ब्रह्म समश्नुते ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yadā sarve pramucyante kāmā ye&#x27;sya hṛdi śritāḥ |</span><span>atha martyo&#x27;mṛto bhavatyatra brahma samaśnute ||</span></p></div><p class="fx-v-en">When every desire lodged in the heart lets go, the mortal becomes deathless and reaches Brahman here.</p></div></div><div class="fx-v" id="v2-3-15"><p class="fx-v-ref"><a href="#v2-3-15" aria-label="Katha 2.3.15">2.3.15</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>यदा सर्वे प्रभिद्यन्ते हृदयस्येह ग्रन्थयः ।</span><span>अथ मर्त्योऽमृतो भवत्येतावद्ध्यनुशासनम् ॥</span></p><p class="s-iast" lang="sa-Latn"><span>yadā sarve prabhidyante hṛdayasyeha granthayaḥ |</span><span>atha martyo&#x27;mṛto bhavatyetāvaddhyanuśāsanam ||</span></p></div><p class="fx-v-en">When every knot of the heart is cut here, the mortal becomes deathless. This is all the teaching there is.</p></div></div><div class="fx-v" id="v2-3-16"><p class="fx-v-ref"><a href="#v2-3-16" aria-label="Katha 2.3.16">2.3.16</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>शतं चैका च हृदयस्य नाड्यस्तासां मूर्धानमभिनिःसृतैका ।</span><span>तयोर्ध्वमायन्नमृतत्वमेति विष्वङ्ङन्या उत्क्रमणे भवन्ति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>śataṃ caikā ca hṛdayasya nāḍyastāsāṃ mūrdhānamabhiniḥsṛtaikā |</span><span>tayordhvamāyannamṛtatvameti viṣvaṅṅanyā utkramaṇe bhavanti ||</span></p></div><p class="fx-v-en">The heart has a hundred and one channels. One of them goes up through the crown of the head. Going up by it, one reaches the deathless. The others lead out in all directions.</p></div></div><div class="fx-v" id="v2-3-17"><p class="fx-v-ref"><a href="#v2-3-17" aria-label="Katha 2.3.17">2.3.17</a><span class="fx-v-who">Yama</span></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>अङ्गुष्ठमात्रः पुरुषोऽन्तरात्मा सदा जनानां हृदये संनिविष्टः ।</span><span>तं स्वाच्छरीरात्प्रवृहेन्मुञ्जादिवेषीकां धैर्येण ।</span><span>तं विद्याच्छुक्रममृतं तं विद्याच्छुक्रममृतमिति ॥</span></p><p class="s-iast" lang="sa-Latn"><span>aṅguṣṭhamātraḥ puruṣo&#x27;ntarātmā sadā janānāṃ hṛdaye saṃniviṣṭaḥ |</span><span>taṃ svāccharīrātpravṛhenmuñjādiveṣīkāṃ dhairyeṇa |</span><span>taṃ vidyācchukramamṛtaṃ taṃ vidyācchukramamṛtamiti ||</span></p></div><p class="fx-v-en">The Person the size of a thumb, the Self within, always sits in the heart of people. Draw him out from your own body with patience, as a stalk is drawn from a reed. Know him as the bright, the deathless. Know him as the bright, the deathless.</p></div></div><div class="fx-v" id="v2-3-18"><p class="fx-v-ref"><a href="#v2-3-18" aria-label="Katha 2.3.18">2.3.18</a></p><div class="fx-v-body"><div class="fx-sa fx-sa-verse"><p class="s-deva" lang="sa"><span>मृत्युप्रोक्तां नचिकेतोऽथ लब्ध्वा विद्यामेतां योगविधिं च कृत्स्नम् ।</span><span>ब्रह्मप्राप्तो विरजोऽभूद्विमृत्युरन्योऽप्येवं यो विदध्यात्ममेव ॥</span></p><p class="s-iast" lang="sa-Latn"><span>mṛtyuproktāṃ naciketo&#x27;tha labdhvā vidyāmetāṃ yogavidhiṃ ca kṛtsnam |</span><span>brahmaprāpto virajo&#x27;bhūdvimṛtyuranyo&#x27;pyevaṃ yo vidadhyātmameva ||</span></p></div><p class="fx-v-en">So Nachiketa, having received this knowledge from Death, and the whole practice of yoga, reached Brahman, free of stain and free of death. So will anyone else who knows the inner Self this way.</p></div></div></div></section></div></section><section class="fx-sec fx-acharya" aria-labelledby="acharyas"><h2 id="acharyas">Where the acharyas read it differently</h2><h3>1.2.20: whose clearness</h3><p>Shankara reads dhatu-prasadat as &quot;through the clearness of the senses and mind&quot;: the Self is seen when the instruments are calm. Readers in Ramanuja&#x27;s and Madhva&#x27;s lines read it as dhatuh prasadat, &quot;by the grace of the creator&quot;.</p><h3>1.2.23: who chooses whom</h3><p>Shankara: the person who chooses the Self, and nothing else, gains it, and to that person the Self shows itself. Ramanuja and Madhva: the Lord chooses the one he favours, and grace decides.</p><h3>1.3.14: arise, awake</h3><p>The verbs are plural. Shankara hears Yama speaking past Nachiketa to everyone asleep in not knowing the Self.<!-- --> <a href="/upanishads/uttishthata-jagrata" data-mp-location="katha_line_uttishthata">More on this line</a>.</p></section><section class="fx-sec" aria-labelledby="gita"><h2 id="gita">The Katha and the Gita</h2><p class="fx-bridge"><a href="/gita/chapter/2/verse/20" data-mp-location="gita_bridge_2_20">Bhagavad Gita 2.20</a><span>: <!-- -->the Self is not born and does not die; Katha 1.2.18 in almost the same words.</span></p><p class="fx-bridge"><a href="/gita/chapter/2/verse/19" data-mp-location="gita_bridge_2_19">Bhagavad Gita 2.19</a><span>: <!-- -->neither the killer nor the killed understands; Katha 1.2.19.</span></p><p class="fx-bridge"><a href="/gita/chapter/8/verse/11" data-mp-location="gita_bridge_8_11">Bhagavad Gita 8.11</a><span>: <!-- -->the word the knowers of the Veda speak of, for which people live as students; Katha 1.2.15.</span></p><p class="fx-bridge"><a href="/gita/chapter/15/verse/1" data-mp-location="gita_bridge_15_1">Bhagavad Gita 15.1</a><span>: <!-- -->the fig tree with roots above and branches below; Katha 2.3.1.</span></p></section><section class="fx-sec fx-next" aria-labelledby="next-text-end"><h2 id="next-text-end">One line each morning</h2><div class="qns" data-kind="email" lang="en"><p class="qns-line">A week of lines for what you are going through, one each morning by email. The first week is free.</p><a class="qns-btn" href="/start?ref=q-upanishads-katha-text-end">Send my week</a></div></section><section class="fx-sec" aria-labelledby="next-text"><h2 id="next-text">Read next</h2><ul class="fx-links"><li><a href="/upanishads/who-am-i" data-mp-location="katha_next_plan"><strong>Who am I: a 7-verse plan</strong><span>Katha 1.2.18 is day 3</span></a></li><li><a href="/upanishads/isha" data-mp-location="katha_next_isha"><strong>The Isha Upanishad</strong><span>Eighteen verses, one sitting</span></a></li><li><a href="/blogs/atman-not-soul-bhagavad-gita" data-mp-location="katha_next_atman"><strong>Atman vs soul</strong><span>Why the Gita and the Katha say the Self is never born</span></a></li></ul></section><section class="fx-sec fx-faq" aria-labelledby="faq"><h2 id="faq">Questions people ask</h2><dl><div><dt>What is the Katha Upanishad about?</dt><dd>A boy, Nachiketa, is given to Death by his angry father. He waits three nights at Yama’s door, is offered three wishes, and uses the third to ask what happens after death. Yama tries to buy him off with wealth and long life; Nachiketa refuses, and Yama teaches him the Self.</dd></div><div><dt>How many verses does the Katha Upanishad have?</dt><dd>119, in two chapters of three sections (vallis) each. It belongs to the Krishna Yajur Veda.</dd></div><div><dt>Which Gita verses come from the Katha?</dt><dd>Gita 2.19 and 2.20 are close to Katha 1.2.19 and 1.2.18; Gita 8.11 echoes Katha 1.2.15; the upside-down fig tree of Gita 15.1 is the tree of Katha 2.3.1.</dd></div></dl></section><section class="fx-sec fx-sources" aria-labelledby="sources"><h2 id="sources">Sources and method</h2><p>Sanskrit from the Wisdom corpus, read against the sanskritdocuments.org editions (and GRETIL where it has the text); where the two differ, the proofread edition is used and the difference is listed for review. English is Wisdom’s own, drafted from the Sanskrit with Shankara’s commentary (S. Sitarama Sastri’s public-domain English) and checked for tone against Swami Paramananda (1919).<!-- --> The corpus text of 1.1.4 to 1.2.11 had many OCR errors (1.2.9 was a prose paraphrase); those verses follow the proofread sanskritdocuments.org edition, and the old readings are kept in our review notes.</p><p>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, under human review.</p></section></div></div></body></html>

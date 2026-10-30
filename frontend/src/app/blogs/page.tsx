@@ -954,7 +954,7 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">26 articles published</span>
+        <span className="section-count">31 articles published</span>
       </div>
 
       <div className="articles-grid">
@@ -1007,21 +1007,136 @@ export default function BlogIndexPage() {
         {/* Krishna Quotes 50 */}
         <a href="/blogs/krishna-quotes" className="article-card" data-mp-article="Krishna Quotes 50">
           <div className="card-thumb card-thumb-krishna">
-            <div className="card-chapter-badge">Collection · 50 Teachings · Verse-Referenced</div>
-            <div className="card-thumb-title">Krishna Quotes —<br /><em>50 Teachings from the Gita</em></div>
+            <div className="card-chapter-badge">Collection · Verse-Referenced</div>
+            <div className="card-thumb-title">Krishna Quotes<br /><em>His own words, with the verse</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
               <span className="tag tag-sanskrit">कृष्ण</span>
-              <span className="tag tag-philosophy">50 Quotes</span>
-              <span className="tag tag-shloka">10 Themes</span>
-              <span className="tag tag-chapter">Reference</span>
+              <span className="tag tag-philosophy">By Moment</span>
+              <span className="tag tag-shloka">Sanskrit Line</span>
+              <span className="tag tag-chapter">Copy &amp; Share</span>
             </div>
             <div className="card-desc">
-              Fifty Krishna quotes from the Bhagavad Gita, grouped by theme, each with the verse reference and the context most social-media versions strip away. Action, devotion, meditation, surrender, character.
+              Lord Krishna quotes from the Bhagavad Gita, grouped by what you are going through. Each one has its Sanskrit line and verse number, ready to copy or send.
             </div>
             <div className="card-meta">
-              <span className="card-read-time">~14 min read</span>
+              <span className="card-read-time">Quote cards</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Bhagavad Gita Quotes */}
+        <a href="/blogs/bhagavad-gita-quotes" className="article-card" data-mp-article="Bhagavad Gita Quotes">
+          <div className="card-thumb card-thumb-gita">
+            <div className="card-chapter-badge">Collection · By Theme &amp; Chapter</div>
+            <div className="card-thumb-title">Bhagavad Gita Quotes<br /><em>By theme, with the Sanskrit</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">गीता</span>
+              <span className="tag tag-philosophy">By Theme</span>
+              <span className="tag tag-shloka">Verse-Referenced</span>
+              <span className="tag tag-chapter">Copy &amp; Share</span>
+            </div>
+            <div className="card-desc">
+              Lines from the Gita grouped by what you are going through. Each one has its Sanskrit and verse number, ready to copy or save as an image.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">Quote cards</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Krishna Quotes Trust */}
+        <a href="/blogs/krishna-quotes/trust" className="article-card" data-mp-article="Krishna Quotes Trust">
+          <div className="card-thumb card-thumb-krishna">
+            <div className="card-chapter-badge">Krishna Quotes · Trust</div>
+            <div className="card-thumb-title">Krishna Quotes on Trust<br /><em>For when you need to let go</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">शरण</span>
+              <span className="tag tag-philosophy">Trust</span>
+              <span className="tag tag-shloka">Verse-Referenced</span>
+              <span className="tag tag-chapter">Copy &amp; Share</span>
+            </div>
+            <div className="card-desc">
+              What Krishna tells Arjuna about trust and surrender, in his own words. Each line has its Sanskrit and verse number.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">Quote cards</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Krishna Quotes Positive Life */}
+        <a href="/blogs/krishna-quotes/positive-life" className="article-card" data-mp-article="Krishna Quotes Positive Life">
+          <div className="card-thumb card-thumb-krishna">
+            <div className="card-chapter-badge">Krishna Quotes · Life</div>
+            <div className="card-thumb-title">Positive Krishna Quotes on Life<br /><em>For the days you need a push</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">जीवन</span>
+              <span className="tag tag-philosophy">Life</span>
+              <span className="tag tag-shloka">Verse-Referenced</span>
+              <span className="tag tag-chapter">Copy &amp; Share</span>
+            </div>
+            <div className="card-desc">
+              Lines from the Gita for exam weeks, hard days at work and starting over after a loss. Each one has its Sanskrit and verse number.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">Quote cards</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Krishna Quotes Hard Times */}
+        <a href="/blogs/krishna-quotes/hard-times" className="article-card" data-mp-article="Krishna Quotes Hard Times">
+          <div className="card-thumb card-thumb-krishna">
+            <div className="card-chapter-badge">Krishna Quotes · Hard Times</div>
+            <div className="card-thumb-title">Krishna Quotes for Hard Times<br /><em>What he said to a man ready to quit</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">धैर्य</span>
+              <span className="tag tag-philosophy">Hard Times</span>
+              <span className="tag tag-shloka">Verse-Referenced</span>
+              <span className="tag tag-chapter">Copy &amp; Share</span>
+            </div>
+            <div className="card-desc">
+              Arjuna sat down in his chariot and could not go on. These are the lines Krishna gave him, each with its Sanskrit and verse number.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">Quote cards</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Sanskrit Shlok for Instagram Bio */}
+        <a href="/blogs/sanskrit-shlok-for-instagram-bio" className="article-card" data-mp-article="Sanskrit Shlok for Instagram Bio">
+          <div className="card-thumb card-thumb-shlok">
+            <div className="card-chapter-badge">Collection · Short Shlokas · Bio Length</div>
+            <div className="card-thumb-title">Sanskrit Shlok for Instagram Bio<br /><em>Short lines with their source</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">श्लोक</span>
+              <span className="tag tag-philosophy">Fits Your Bio</span>
+              <span className="tag tag-shloka">Gita &amp; Subhashita</span>
+              <span className="tag tag-chapter">Copy &amp; Share</span>
+            </div>
+            <div className="card-desc">
+              Short Sanskrit lines that fit an Instagram bio, each with its meaning and source so you know what you are posting.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">Quote cards</span>
               <span className="card-arrow">Read →</span>
             </div>
           </div>
@@ -1281,7 +1396,7 @@ export default function BlogIndexPage() {
         </a>
 
         {/* BG 2.47 */}
-        <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" className="article-card" data-mp-article="BG 2.47 Karmanye Vadhikaraste">
+        <a href="/gita/chapter/2/verse/47" className="article-card" data-mp-article="BG 2.47 Karmanye Vadhikaraste">
           <div className="card-thumb card-thumb-247">
             <div className="card-chapter-badge">Verse Deep Dive · Chapter 2, Verse 47</div>
             <div className="card-thumb-title">Karmanye Vadhikaraste —<br /><em>BG 2.47, Word by Word</em></div>

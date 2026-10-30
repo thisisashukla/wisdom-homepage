@@ -1,0 +1,356 @@
+/* Quote page layout (src/components/quotes): header, chips, sections and
+   filtering, the line picker, line bar, fakes, daily line, FAQ, related.
+   Tokens, keyframes and the card itself are in card.css (imported first). */
+
+/* ── Page ─────────────────────────────────────────────────────────────── */
+
+.qp {
+  background: var(--q-night);
+  color: var(--q-cream);
+  font-family: var(--q-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 18px 112px;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+.qp:lang(hi) { font-family: var(--q-deva); }
+.qp > * {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+:where(.qp) a { color: inherit; }
+:where(.qp) p { margin: 0; }
+
+.qp-head { padding-top: 14px; }
+.qp-crumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  font-size: 12.5px;
+  color: var(--q-cream-3);
+}
+.qp-crumbs li + li::before { content: '/'; margin-right: 8px; opacity: 0.6; }
+.qp-crumbs a { text-decoration: none; }
+.qp-crumbs a:hover { color: var(--q-gold-hi); }
+.qp-crumbs [aria-current] { color: var(--q-cream-2); }
+
+.qp-eyebrow {
+  margin-top: 18px;
+  font-size: 13.5px;
+  color: var(--q-cream-3);
+}
+.qp-h1 {
+  font-family: var(--q-display);
+  font-weight: 600;
+  font-size: clamp(29px, 7.6vw, 46px);
+  line-height: 1.14;
+  letter-spacing: -0.005em;
+  color: var(--q-cream);
+  margin: 8px 0 0;
+  text-wrap: balance;
+}
+.qp-h1:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.32; }
+.qp-promise {
+  margin-top: 12px;
+  font-size: 16.5px;
+  line-height: 1.55;
+  color: var(--q-cream-2);
+  max-width: 34em;
+}
+
+.qp-h2 {
+  font-family: var(--q-display);
+  font-weight: 600;
+  font-size: clamp(23px, 5.8vw, 28px);
+  line-height: 1.22;
+  color: var(--q-cream);
+  margin: 0;
+  text-wrap: balance;
+}
+.qp-h2:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.4; }
+.qp-intro {
+  margin-top: 8px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--q-cream-2);
+  max-width: 36em;
+}
+
+/* ── Moment chips ─────────────────────────────────────────────────────── */
+
+.qchips { margin: 18px -18px 0; }
+.qchips-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 18px 6px;
+  scroll-padding-inline: 18px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.qchips-row::-webkit-scrollbar { display: none; }
+
+.qchip {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--q-line);
+  background: transparent;
+  color: var(--q-cream-2);
+  font: inherit;
+  font-size: 14.5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 160ms var(--q-fb), border-color 160ms var(--q-fb), color 160ms var(--q-fb), transform 160ms var(--q-fb);
+}
+.qchip:hover { border-color: var(--q-line-strong); color: var(--q-cream); }
+.qchip:active { transform: scale(0.97); }
+.qchip[aria-pressed='true'] {
+  background: rgba(200, 136, 30, 0.16);
+  border-color: var(--q-gold);
+  color: var(--q-gold-hi);
+}
+
+.qchips-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+/* ── Sections and filtering ───────────────────────────────────────────── */
+
+.qp-section { margin-top: 44px; }
+.qp-sections > .qp-section:first-child { margin-top: 26px; }
+.qp-section-head { margin-bottom: 16px; }
+.qp-cards { display: grid; gap: 16px; }
+
+/* Filtering is by section moment. With data-filter set on the page root,
+   sections (and their cards) of other moments hide. The section holding
+   LineForYou never hides: only its other cards and its heading do. */
+.qp[data-filter="karma"] .qp-item:not([data-moment="karma"]),
+.qp[data-filter="karma"] .qp-section:not([data-moment="karma"]):not([data-has-hook]),
+.qp[data-filter="karma"] .qp-section[data-has-hook]:not([data-moment="karma"]) > .qp-section-head { display: none; }
+.qp[data-filter="trust"] .qp-item:not([data-moment="trust"]),
+.qp[data-filter="trust"] .qp-section:not([data-moment="trust"]):not([data-has-hook]),
+.qp[data-filter="trust"] .qp-section[data-has-hook]:not([data-moment="trust"]) > .qp-section-head { display: none; }
+.qp[data-filter="hard-times"] .qp-item:not([data-moment="hard-times"]),
+.qp[data-filter="hard-times"] .qp-section:not([data-moment="hard-times"]):not([data-has-hook]),
+.qp[data-filter="hard-times"] .qp-section[data-has-hook]:not([data-moment="hard-times"]) > .qp-section-head { display: none; }
+.qp[data-filter="peace"] .qp-item:not([data-moment="peace"]),
+.qp[data-filter="peace"] .qp-section:not([data-moment="peace"]):not([data-has-hook]),
+.qp[data-filter="peace"] .qp-section[data-has-hook]:not([data-moment="peace"]) > .qp-section-head { display: none; }
+.qp[data-filter="positive-life"] .qp-item:not([data-moment="positive-life"]),
+.qp[data-filter="positive-life"] .qp-section:not([data-moment="positive-life"]):not([data-has-hook]),
+.qp[data-filter="positive-life"] .qp-section[data-has-hook]:not([data-moment="positive-life"]) > .qp-section-head { display: none; }
+.qp[data-filter="devotion"] .qp-item:not([data-moment="devotion"]),
+.qp[data-filter="devotion"] .qp-section:not([data-moment="devotion"]):not([data-has-hook]),
+.qp[data-filter="devotion"] .qp-section[data-has-hook]:not([data-moment="devotion"]) > .qp-section-head { display: none; }
+.qp[data-filter="self"] .qp-item:not([data-moment="self"]),
+.qp[data-filter="self"] .qp-section:not([data-moment="self"]):not([data-has-hook]),
+.qp[data-filter="self"] .qp-section[data-has-hook]:not([data-moment="self"]) > .qp-section-head { display: none; }
+.qp[data-filter="wisdom"] .qp-item:not([data-moment="wisdom"]),
+.qp[data-filter="wisdom"] .qp-section:not([data-moment="wisdom"]):not([data-has-hook]),
+.qp[data-filter="wisdom"] .qp-section[data-has-hook]:not([data-moment="wisdom"]) > .qp-section-head { display: none; }
+.qp[data-filter="character"] .qp-item:not([data-moment="character"]),
+.qp[data-filter="character"] .qp-section:not([data-moment="character"]):not([data-has-hook]),
+.qp[data-filter="character"] .qp-section[data-has-hook]:not([data-moment="character"]) > .qp-section-head { display: none; }
+.qp[data-filter="one-line"] .qp-item:not([data-moment="one-line"]),
+.qp[data-filter="one-line"] .qp-section:not([data-moment="one-line"]):not([data-has-hook]),
+.qp[data-filter="one-line"] .qp-section[data-has-hook]:not([data-moment="one-line"]) > .qp-section-head { display: none; }
+.qp[data-filter="bio"] .qp-item:not([data-moment="bio"]),
+.qp[data-filter="bio"] .qp-section:not([data-moment="bio"]):not([data-has-hook]),
+.qp[data-filter="bio"] .qp-section[data-has-hook]:not([data-moment="bio"]) > .qp-section-head { display: none; }
+.qp[data-filter="students"] .qp-item:not([data-moment="students"]),
+.qp[data-filter="students"] .qp-section:not([data-moment="students"]):not([data-has-hook]),
+.qp[data-filter="students"] .qp-section[data-has-hook]:not([data-moment="students"]) > .qp-section-head { display: none; }
+
+/* ── Line for you ─────────────────────────────────────────────────────── */
+
+.qp-hook-slot { margin: 12px 0; }
+.qlf {
+  background: var(--q-leaf-2);
+  border: 1px solid var(--q-line-strong);
+  border-radius: 18px;
+  padding: 24px 18px 20px;
+  scroll-margin-top: 72px;
+}
+:where(.qlf) p { margin: 0; }
+.qlf-q {
+  font-family: var(--q-display);
+  font-weight: 600;
+  font-size: clamp(22px, 5.8vw, 26px);
+  line-height: 1.25;
+  color: var(--q-cream);
+  margin: 0;
+}
+.qlf-q:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.45; }
+.qlf-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.qlf-chip { white-space: normal; text-align: left; }
+.qlf-reveal:empty { display: none; }
+.qlf-result { position: relative; margin-top: 22px; padding-top: 18px; }
+.qlf-rule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--q-gold);
+  transform-origin: left center;
+}
+.qlf-kicker { font-size: 14px; color: var(--q-cream-3); margin-bottom: 12px; }
+.qlf .qc { background: var(--q-night); }
+.qlf-lines { margin-top: 16px; display: grid; gap: 8px; }
+.qlf-line {
+  font-family: var(--q-display);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--q-cream);
+}
+.qlf-line:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; line-height: 1.75; }
+.qlf-next { margin-top: 20px; }
+
+.qlf-result[data-animate] .qlf-rule { animation: q-draw 900ms var(--q-in) backwards; }
+.qlf-result[data-animate] .qlf-kicker,
+.qlf-result[data-animate] .qlf-card { animation: q-rise 600ms var(--q-in) backwards; }
+.qlf-result[data-animate] .qlf-line {
+  animation: q-rise 500ms var(--q-in) backwards;
+  animation-delay: calc(140ms + var(--i, 0) * 300ms);
+}
+.qlf-result[data-animate] .qlf-next { animation: q-rise 500ms var(--q-in) 520ms backwards; }
+
+/* ── Line bar (phones) ────────────────────────────────────────────────── */
+
+.qbar {
+  position: fixed;
+  z-index: 900;
+  left: 12px;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  align-items: center;
+  background: var(--q-raise);
+  border: 1px solid var(--q-line-strong);
+  border-radius: 999px;
+  font-family: var(--q-ui);
+  animation: q-rise 500ms var(--q-in) backwards;
+}
+.qbar:lang(hi) { font-family: var(--q-deva); }
+:where(.qbar) button { background: none; border: 0; font: inherit; cursor: pointer; color: var(--q-cream); }
+.qbar-go { flex: 1; min-height: 50px; padding: 0 8px 0 22px; text-align: left; font-size: 15.5px; font-weight: 500; }
+.qbar-x { width: 50px; height: 50px; display: grid; place-items: center; color: var(--q-cream-2); border-radius: 999px; }
+html[data-q-sheet] .qbar { display: none; }
+@media (min-width: 760px) {
+  .qbar { display: none; }
+}
+
+/* ── Lines Krishna never said ─────────────────────────────────────────── */
+
+.qfakes { margin-top: 60px; }
+.qfakes-list { margin-top: 8px; }
+.qfake { padding: 24px 0 8px; border-bottom: 1px solid var(--q-line); }
+.qfake:last-child { border-bottom: 0; }
+:where(.qfake) p { margin: 0; }
+.qfake-tag { font-size: 13px; font-weight: 600; color: var(--q-gold); }
+.qfake-line {
+  margin-top: 6px;
+  font-family: var(--q-display);
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--q-cream-2);
+}
+.qfake-line:lang(hi) { font-family: var(--q-deva); font-size: 18.5px; line-height: 1.65; }
+.qfake-line s { text-decoration-thickness: 1px; text-decoration-color: rgba(200, 136, 30, 0.75); }
+.qfake-origin { margin-top: 8px; font-size: 14.5px; line-height: 1.6; color: var(--q-cream-3); }
+.qfake-origin-k { color: var(--q-cream-2); }
+.qfake-real { margin-top: 18px; }
+.qfake-real-k { font-size: 14px; color: var(--q-cream-2); margin-bottom: 10px; }
+.qfake-note { margin-top: 12px; font-size: 15px; line-height: 1.6; color: var(--q-cream-2); }
+
+/* ── Daily line, extra text, FAQ, related ─────────────────────────────── */
+
+.qp-daily { margin-top: 60px; padding-top: 28px; border-top: 1px solid var(--q-gold); }
+.qp-daily .qns { margin-top: 20px; }
+
+.qp-extra { margin-top: 52px; }
+.qp-extra p { margin-top: 12px; font-size: 16.5px; line-height: 1.75; color: var(--q-cream-2); max-width: 38em; }
+
+.qp-faq { margin-top: 56px; }
+.qp-faq-list { margin-top: 10px; border-top: 1px solid var(--q-line); }
+.qp-faq-item { border-bottom: 1px solid var(--q-line); }
+.qp-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+  padding: 12px 0;
+  font-size: 16.5px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--q-cream);
+  cursor: pointer;
+  list-style: none;
+}
+.qp-faq-item summary::-webkit-details-marker { display: none; }
+.qp-faq-item summary::after {
+  content: '+';
+  flex: 0 0 auto;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--q-gold);
+  transition: transform 160ms var(--q-fb);
+}
+.qp-faq-item[open] summary::after { transform: rotate(45deg); }
+.qp-faq-item p { padding: 0 0 18px; font-size: 15.5px; line-height: 1.7; color: var(--q-cream-2); max-width: 38em; }
+
+.qp-related { margin-top: 52px; }
+.qp-related ul { list-style: none; margin: 10px 0 0; padding: 0; border-top: 1px solid var(--q-line); }
+.qp-related li { border-bottom: 1px solid var(--q-line); }
+.qp-related a {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--q-cream);
+  text-decoration: none;
+}
+.qp-related a:hover { color: var(--q-gold-hi); }
+
+/* ── Wider screens ────────────────────────────────────────────────────── */
+
+@media (min-width: 720px) {
+  .qp { padding-left: 28px; padding-right: 28px; }
+  .qp-head { padding-top: 22px; }
+  .qchips { margin-left: 0; margin-right: 0; }
+  .qchips-row { flex-wrap: wrap; overflow: visible; padding-left: 0; padding-right: 0; }
+  .qlf { padding: 30px 28px 26px; }
+}
+
+/* ── Reduced motion: opacity only, no movement ────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .qbar,
+  .qlf-result[data-animate] .qlf-kicker,
+  .qlf-result[data-animate] .qlf-card,
+  .qlf-result[data-animate] .qlf-line,
+  .qlf-result[data-animate] .qlf-next,
+  .qlf-result[data-animate] .qlf-rule {
+    animation-name: q-fade;
+  }
+  .qchip:active { transform: none; }
+}

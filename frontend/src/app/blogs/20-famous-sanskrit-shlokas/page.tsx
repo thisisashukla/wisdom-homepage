@@ -757,6 +757,12 @@ export default function TwentyFamousSanskritShlokasPage() {
         <p>
           Start with the twenty in this article, one a day.
         </p>
+        <p>
+          For a line to post or send, see{' '}
+          <a href="/blogs/krishna-quotes" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_krishna_quotes_hub">Krishna quotes from the Bhagavad Gita</a>{' '}
+          you can copy or save as an image, or{' '}
+          <a href="/blogs/sanskrit-shlok-for-instagram-bio" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_insta_bio">Sanskrit shlokas short enough for an Instagram bio</a>.
+        </p>
       <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the description of Om Purnamadah&apos;s form and the meal-time use of Gita 15.15 (chapter 15 is chanted before meals), and removed overclaims about where and by whom these verses are quoted; copy edited.</p>
       </div>
 

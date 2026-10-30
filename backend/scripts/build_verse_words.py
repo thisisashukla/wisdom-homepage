@@ -29,6 +29,12 @@ def main():
         pairs = [[s, g] for _, s, g in sorted(rs) if s and g]
         if 2 <= len(pairs) <= 48:
             out[vid] = pairs
+    # the rest, from fill_verse_words.py (checked against the original); sanscripts' own parse wins
+    llm = OUT.with_name("verse_words_llm.json")
+    if llm.exists():
+        for vid, pairs in json.loads(llm.read_text(encoding="utf-8")).items():
+            if vid in ids and vid not in out and 2 <= len(pairs) <= 48:
+                out[vid] = pairs
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     fam = collections.Counter(v["family"] for v in lib["verses"])
     got = collections.Counter(v["family"] for v in lib["verses"] if v["id"] in out)

@@ -26,7 +26,6 @@ export interface BlogLink {
 
 /** One representative image per blog slug. */
 const BLOG_IMAGES: Record<string, string> = {
-  'bhagavad-gita-2-47-karmanye-vadhikaraste':      '/assets/chapter2.webp',
   'bhagavad-gita-karma-meaning':                    '/assets/chapter3.webp',
   'nishkama-karma-bhagavad-gita':                   '/assets/chapter3.webp',
   'sthitaprajna-bhagavad-gita':                     '/assets/chapter2.webp',
@@ -108,11 +107,6 @@ const VERSE_BLOG_MAP: Record<string, RawLink[]> = {
   ],
 
   '2-47': [
-    {
-      slug: 'bhagavad-gita-2-47-karmanye-vadhikaraste',
-      title: 'Karmanye Vadhikaraste — Full Essay',
-      cta: 'Every word of this verse, unpacked — the dedicated deep-dive →',
-    },
     {
       slug: 'nishkama-karma-bhagavad-gita',
       title: 'Nishkama Karma',

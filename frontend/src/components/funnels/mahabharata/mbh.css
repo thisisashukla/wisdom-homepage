@@ -1,0 +1,330 @@
+/* Mahabharata funnel: "Lamp before the war".
+   A night page lit by one lamp: palm-leaf text on night, bronze for the thread
+   you pull, teal and red only for the two armies, ash for what is quiet.
+   Wisdom gold (#f5c96a) appears only on links back to the Gita.
+   Mobile first (360 to 412px). Only transform and opacity animate.
+   Everything is visible without JS; reduced motion gets opacity only. */
+
+.fx-mahabharata {
+  --mb-night: #11131c;
+  --mb-night-2: #171a26;
+  --mb-leaf: #efe6d2;
+  --mb-leaf-2: rgba(239, 230, 210, 0.8);
+  --mb-leaf-3: rgba(239, 230, 210, 0.66);
+  --mb-bronze: #b07a3a;
+  --mb-bronze-hi: #d29a55;
+  --mb-pandu: #2f5d62;
+  --mb-kuru: #7a1f1f;
+  --mb-ash: #8a8578;
+  --mb-gold: #f5c96a;
+  --mb-rule: rgba(176, 122, 58, 0.28);
+  --mb-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, sans-serif;
+  --mb-head: var(--mb-display), 'Cormorant Garamond', var(--font-playfair), Georgia, serif;
+  --mb-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
+  --mb-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --mb-fb: cubic-bezier(0.2, 0, 0, 1);
+
+  /* NextStep and the toast read these. */
+  --q-gold: var(--mb-bronze);
+  --q-gold-hi: var(--mb-bronze-hi);
+  --q-cream: var(--mb-leaf);
+  --q-cream-2: var(--mb-leaf-2);
+  --q-line: var(--mb-rule);
+
+  display: block;
+  background:
+    radial-gradient(120% 60% at 12% 0%, rgba(176, 122, 58, 0.16), rgba(17, 19, 28, 0) 60%),
+    var(--mb-night);
+  color: var(--mb-leaf);
+  font-family: var(--mb-ui);
+  font-size: 16px;
+  line-height: 1.65;
+  padding: 0 0 72px;
+  min-height: 60vh;
+}
+.fx-mahabharata *,
+.fx-mahabharata *::before,
+.fx-mahabharata *::after { box-sizing: border-box; }
+.fx-mahabharata :focus-visible { outline: 2px solid var(--mb-bronze-hi); outline-offset: 3px; border-radius: 6px; }
+.fx-mahabharata a { color: var(--mb-leaf); text-decoration-color: var(--mb-bronze); text-underline-offset: 3px; }
+.fx-mahabharata a:hover { color: #fff; }
+.fx-mahabharata [lang='hi'],
+.fx-mahabharata:lang(hi) { font-family: var(--font-noto-devanagari), var(--mb-ui); }
+
+/* Column */
+.fx-mahabharata > * { width: min(100% - 32px, 720px); margin-inline: auto; }
+.fx-mahabharata .mb-wide { width: min(100% - 24px, 1040px); }
+
+/* Top bar: crumbs + script toggle */
+.mb-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 18px 0 6px; }
+.mb-crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 0; padding: 0; font-size: 13.5px; color: var(--mb-leaf-3); }
+.mb-crumbs li + li::before { content: '/'; margin-right: 6px; color: var(--mb-ash); }
+.mb-crumbs a { color: var(--mb-leaf-3); }
+.mb-script { display: inline-flex; align-items: center; gap: 2px; border: 1px solid var(--mb-rule); border-radius: 999px; padding: 3px; font-size: 13.5px; }
+.mb-script-label { color: var(--mb-ash); padding: 0 8px 0 10px; }
+.mb-script button {
+  min-height: 36px; min-width: 44px; padding: 4px 12px; border: 0; border-radius: 999px; background: transparent;
+  color: var(--mb-leaf-2); font: inherit; cursor: pointer; transition: background-color 160ms var(--mb-fb), color 160ms var(--mb-fb);
+}
+.mb-script button[lang='sa'] { font-family: var(--mb-sa); font-size: 15px; }
+.mb-script button[aria-pressed='true'] { background: var(--mb-bronze); color: var(--mb-night); }
+
+/* Script toggle: Devanagari by default, IAST when chosen. Never both. */
+.fx-mahabharata .mb-iast { display: none; }
+.fx-mahabharata[data-script='iast'] .mb-iast { display: block; }
+.fx-mahabharata[data-script='iast'] .mb-deva { display: none; }
+
+/* Head */
+.mb-head { padding: 26px 0 8px; }
+.mb-kicker { margin: 0 0 10px; color: var(--mb-bronze-hi); font-size: 15px; }
+.mb-head h1 {
+  font-family: var(--mb-head); font-weight: 600; font-size: clamp(38px, 10vw, 60px); line-height: 1.04; letter-spacing: -0.01em;
+  margin: 0 0 18px; color: var(--mb-leaf); text-wrap: balance;
+}
+.mb-head h1 [lang='sa'], .mb-head h1 [lang='hi'] { font-family: var(--mb-sa); font-weight: 400; }
+#quick-answer, .mb-quick {
+  font-size: 18px; line-height: 1.62; color: var(--mb-leaf); margin: 0 0 6px; max-width: 62ch;
+  padding-left: 16px; border-left: 2px solid var(--mb-bronze);
+}
+.mb-head .mb-sub { color: var(--mb-leaf-2); margin: 14px 0 0; max-width: 62ch; }
+
+/* Sections */
+.mb-sec { padding: 38px 0 6px; }
+.mb-sec > h2, .mb-h2 {
+  font-family: var(--mb-head); font-weight: 600; font-size: clamp(28px, 7vw, 38px); line-height: 1.12;
+  margin: 0 0 14px; color: var(--mb-leaf); text-wrap: balance;
+}
+.mb-sec > h2:lang(hi) { font-family: var(--font-noto-devanagari), var(--mb-head); font-weight: 500; font-size: clamp(24px, 6.4vw, 32px); }
+.mb-sec h3 { font-family: var(--mb-head); font-weight: 600; font-size: 24px; line-height: 1.2; margin: 26px 0 8px; }
+.mb-sec p { max-width: 64ch; }
+.mb-lede { color: var(--mb-leaf-2); margin: 0 0 18px; }
+.mb-note { font-size: 14.5px; color: var(--mb-leaf-3); }
+
+/* Line card: a wick of bronze down the left, the Sanskrit large */
+.mb-line { position: relative; padding: 18px 0 16px 18px; margin: 0 0 14px; border-left: 2px solid var(--mb-rule); }
+.mb-line-label { margin: 0 0 6px; font-size: 13.5px; color: var(--mb-bronze-hi); }
+.mb-deva, .mb-iast { margin: 0 0 10px; }
+.mb-deva span, .mb-iast span { display: block; }
+.mb-deva { font-family: var(--mb-sa); font-size: clamp(21px, 5.6vw, 26px); line-height: 1.7; color: var(--mb-leaf); }
+.mb-iast { font-family: var(--mb-sa); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--mb-leaf); }
+.mb-meaning { margin: 0 0 8px; font-size: 17px; line-height: 1.6; color: var(--mb-leaf); }
+.mb-meaning[lang='hi'] { font-size: 18px; line-height: 1.75; }
+.mb-context { margin: 0 0 8px; font-size: 14.5px; color: var(--mb-leaf-3); }
+.mb-src { margin: 0; display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 13.5px; color: var(--mb-leaf-3); }
+.mb-ref { color: var(--mb-bronze-hi); font-variant-numeric: tabular-nums; }
+.mb-acts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.mb-acts button, .mb-acts a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--mb-rule); border-radius: 999px;
+  background: transparent; color: var(--mb-leaf-2); font: inherit; font-size: 14px; text-decoration: none; cursor: pointer;
+  transition: border-color 160ms var(--mb-fb), color 160ms var(--mb-fb);
+}
+.mb-acts button:hover, .mb-acts a:hover { border-color: var(--mb-bronze); color: var(--mb-leaf); }
+.mb-acts [data-done] { border-color: var(--mb-bronze); color: var(--mb-bronze-hi); }
+
+/* Gita links: the only gold on the page */
+.fx-mahabharata a.mb-gita { color: var(--mb-gold); text-decoration-color: rgba(245, 201, 106, 0.55); }
+.fx-mahabharata a.mb-gita:hover { color: #ffe3a3; }
+.mb-bridge { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.mb-bridge li { padding: 14px 16px; border: 1px solid rgba(245, 201, 106, 0.22); border-radius: 12px; }
+.mb-bridge a.mb-gita { font-weight: 600; }
+.mb-bridge p { margin: 4px 0 0; color: var(--mb-leaf-2); font-size: 15.5px; }
+
+/* Their choice */
+.mb-choice { margin: 26px 0 0; border: 1px solid var(--mb-bronze); border-radius: 14px; background: rgba(176, 122, 58, 0.06); }
+.mb-choice summary { list-style: none; cursor: pointer; padding: 16px 18px; display: grid; gap: 4px; min-height: 44px; }
+.mb-choice summary::-webkit-details-marker { display: none; }
+.mb-choice-k { font-size: 13.5px; color: var(--mb-bronze-hi); }
+.mb-choice-moment { font-family: var(--mb-head); font-size: 23px; line-height: 1.25; font-weight: 600; }
+.mb-choice-cue { font-size: 14px; color: var(--mb-leaf-3); text-decoration: underline; text-decoration-color: var(--mb-bronze); text-underline-offset: 3px; }
+.mb-choice[open] .mb-choice-cue { display: none; }
+.mb-choice-body { padding: 0 18px 12px; }
+.mb-choice-body .mb-line { border-left-color: var(--mb-bronze); }
+.mb-choice-plain { font-size: 17px; margin: 0 0 6px; }
+
+/* Lineage strip */
+.mb-lineage { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 18px 0 0; padding: 12px 0; border-top: 1px solid var(--mb-rule); border-bottom: 1px solid var(--mb-rule); font-size: 14.5px; }
+.mb-lineage div { display: flex; flex-wrap: wrap; gap: 4px; align-items: baseline; }
+.mb-lineage dt { color: var(--mb-ash); margin-right: 4px; }
+.mb-lineage dd { margin: 0; }
+
+/* Arc: a real sequence, so numbered */
+.mb-arc { list-style: none; margin: 0; padding: 0; counter-reset: beat; }
+.mb-arc li { counter-increment: beat; position: relative; padding: 0 0 18px 44px; }
+.mb-arc li::before {
+  content: counter(beat); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%;
+  border: 1px solid var(--mb-bronze); color: var(--mb-bronze-hi); display: grid; place-items: center; font-size: 14px;
+}
+.mb-arc li::after { content: ''; position: absolute; left: 15px; top: 34px; bottom: 4px; width: 1px; background: var(--mb-rule); }
+.mb-arc li:last-child::after { display: none; }
+.mb-arc strong { display: block; font-family: var(--mb-head); font-size: 21px; font-weight: 600; line-height: 1.25; }
+.mb-arc p { margin: 2px 0 0; color: var(--mb-leaf-2); }
+.mb-arc .mb-ref { font-size: 13.5px; }
+
+/* Lists of links (start here, characters, chapters) */
+.mb-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--mb-rule); }
+.mb-links li { border-bottom: 1px solid var(--mb-rule); }
+.mb-links a { display: block; padding: 14px 2px; text-decoration: none; min-height: 44px; }
+.mb-links a strong { display: block; font-family: var(--mb-head); font-size: 22px; font-weight: 600; line-height: 1.2; }
+.mb-links a span { display: block; color: var(--mb-leaf-3); font-size: 14.5px; }
+
+/* Parvas */
+.mb-parvas { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.mb-parva { display: grid; grid-template-columns: 34px 1fr; gap: 0 12px; padding: 12px 0; border-bottom: 1px solid var(--mb-rule); }
+.mb-parva-n { font-family: var(--mb-head); font-size: 24px; color: var(--mb-ash); line-height: 1.2; text-align: right; font-variant-numeric: lining-nums; }
+.mb-parva h3 { margin: 0; font-size: 21px; }
+.mb-parva p { margin: 2px 0 0; color: var(--mb-leaf-2); font-size: 15px; }
+.mb-parva-tag { display: inline-block; margin-top: 6px; font-size: 13px; color: var(--mb-bronze-hi); }
+.mb-parva[data-held] .mb-parva-n { color: var(--mb-bronze-hi); }
+.mb-parva[data-gita] { border-left: 2px solid var(--mb-gold); padding-left: 8px; margin-left: -10px; }
+.mb-parva[data-gita] .mb-parva-n { color: var(--mb-gold); }
+
+/* Gita chapter grid */
+.mb-chapters { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.mb-chapters a { display: block; min-height: 44px; padding: 10px 12px; border: 1px solid rgba(245, 201, 106, 0.22); border-radius: 10px; text-decoration: none; font-size: 14.5px; line-height: 1.35; }
+.mb-chapters a span { display: block; color: var(--mb-leaf-3); font-size: 13px; }
+
+/* Bhishma Parva strip on where-is-the-gita */
+.mb-strip { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--mb-rule); }
+.mb-strip li { position: relative; padding: 0 0 16px 20px; }
+.mb-strip li::before { content: ''; position: absolute; left: -6px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--mb-night); border: 2px solid var(--mb-ash); }
+.mb-strip li[data-gita]::before { border-color: var(--mb-gold); background: var(--mb-gold); }
+.mb-strip strong { display: block; font-family: var(--mb-head); font-size: 21px; font-weight: 600; line-height: 1.25; }
+.mb-strip p { margin: 2px 0 0; color: var(--mb-leaf-2); font-size: 15.5px; }
+
+/* Yaksha Q and A */
+.mb-qa { margin: 0 0 24px; padding: 0 0 8px; border-bottom: 1px solid var(--mb-rule); }
+.mb-qa h3 { margin-top: 0; }
+.mb-qa .mb-line:first-of-type { border-left-color: var(--mb-ash); }
+.mb-qa .mb-line + .mb-line { border-left-color: var(--mb-bronze); }
+
+/* Quiz */
+.mb-quiz { border: 1px solid var(--mb-rule); border-radius: 16px; padding: 18px; background: var(--mb-night-2); }
+.mb-quiz-count { margin: 0 0 6px; font-size: 13.5px; color: var(--mb-ash); }
+.mb-quiz h3 { font-family: var(--mb-head); font-size: 25px; line-height: 1.2; margin: 0 0 14px; }
+.mb-quiz-opts { display: grid; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
+.mb-quiz-opts button {
+  width: 100%; min-height: 48px; text-align: left; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--mb-rule);
+  background: transparent; color: var(--mb-leaf); font: inherit; cursor: pointer; transition: border-color 160ms var(--mb-fb), background-color 160ms var(--mb-fb);
+}
+.mb-quiz-opts button:hover:not(:disabled) { border-color: var(--mb-bronze); }
+.mb-quiz-opts button:disabled { cursor: default; }
+.mb-quiz-opts button[data-state='right'] { border-color: var(--mb-bronze-hi); background: rgba(176, 122, 58, 0.18); }
+.mb-quiz-opts button[data-state='wrong'] { border-color: var(--mb-ash); opacity: 0.75; text-decoration: line-through; text-decoration-color: var(--mb-ash); }
+.mb-quiz-why { margin: 0 0 12px; color: var(--mb-leaf-2); }
+.mb-quiz-why strong { color: var(--mb-leaf); }
+.mb-btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 20px; border-radius: 999px; border: 0;
+  background: var(--mb-bronze); color: var(--mb-night); font: inherit; font-weight: 600; cursor: pointer; text-decoration: none;
+}
+.mb-btn:hover { background: var(--mb-bronze-hi); color: var(--mb-night); }
+.mb-btn-ghost { background: transparent; color: var(--mb-leaf); border: 1px solid var(--mb-rule); }
+.mb-btn-ghost:hover { background: transparent; border-color: var(--mb-bronze); color: var(--mb-leaf); }
+
+/* FAQ */
+.mb-faq dl { margin: 0; }
+.mb-faq-item { padding: 14px 0; border-bottom: 1px solid var(--mb-rule); }
+.mb-faq dt { font-family: var(--mb-head); font-size: 21px; font-weight: 600; line-height: 1.25; margin: 0 0 4px; }
+.mb-faq dt:lang(hi) { font-family: var(--font-noto-devanagari), var(--mb-head); font-size: 18px; font-weight: 500; }
+.mb-faq dd { margin: 0; color: var(--mb-leaf-2); }
+
+/* Sources and method */
+.mb-method { font-size: 14.5px; color: var(--mb-leaf-3); }
+.mb-method h2 { font-size: 24px !important; }
+
+/* Next step */
+.mb-next .qns { padding: 18px; border: 1px solid var(--mb-rule); border-radius: 16px; background: var(--mb-night-2); }
+
+/* ── Family tree: "Pull a thread" ── */
+.mb-tree-wrap { position: relative; }
+.mb-tree-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 0 0 14px; }
+.mb-army {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px 0 10px; border-radius: 999px;
+  border: 1px solid var(--mb-rule); background: transparent; color: var(--mb-leaf); font: inherit; font-size: 14.5px; cursor: pointer;
+}
+.mb-army-dot { width: 34px; height: 20px; border-radius: 999px; background: var(--mb-night-2); border: 1px solid var(--mb-ash); position: relative; }
+.mb-army-dot::after { content: ''; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--mb-ash); transition: transform 160ms var(--mb-fb), background-color 160ms var(--mb-fb); }
+.mb-army[aria-pressed='true'] .mb-army-dot::after { transform: translateX(14px); background: var(--mb-bronze-hi); }
+.mb-tree-hint { margin: 0; font-size: 14px; color: var(--mb-leaf-3); }
+.mb-legend { display: none; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 12px; padding: 0; list-style: none; font-size: 13.5px; color: var(--mb-leaf-2); }
+.mb-tree-wrap[data-army] .mb-legend { display: flex; }
+.mb-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.mb-legend i { display: inline-block; width: 14px; height: 14px; border-radius: 4px; }
+.mb-legend .lg-p { background: var(--mb-pandu); }
+.mb-legend .lg-k { background: var(--mb-kuru); }
+.mb-legend .lg-n { border: 1px dashed var(--mb-ash); }
+
+.mb-tree { position: relative; padding: 4px 0 6px; }
+.mb-threads { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.mb-threads path { fill: none; stroke: var(--mb-bronze-hi); stroke-width: 1.5; stroke-linecap: round; opacity: 0.85; }
+.mb-threads path[data-k='spouse'] { stroke-dasharray: 4 5; }
+.mb-threads[data-motion] path.draw:not([data-k='spouse']) { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: mb-draw 900ms var(--mb-in) forwards; }
+.mb-threads[data-motion] path.draw[data-k='spouse'] { animation: mb-fade 500ms var(--mb-in) both; }
+@keyframes mb-fade { from { opacity: 0; } to { opacity: 0.85; } }
+@keyframes mb-draw { to { stroke-dashoffset: 0; } }
+
+.mb-row { position: relative; margin: 0 0 12px; }
+.mb-row-label { margin: 0 0 6px; font-size: 12.5px; color: var(--mb-ash); }
+.mb-row-groups { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.mb-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; }
+.mb-group-label { flex-basis: 100%; margin: 0; font-size: 12px; color: var(--mb-ash); }
+.mb-node {
+  position: relative; z-index: 1; min-height: 44px; padding: 6px 12px; border-radius: 10px; border: 1px solid rgba(239, 230, 210, 0.22);
+  background: var(--mb-night-2); color: var(--mb-leaf); font: inherit; font-size: 14.5px; line-height: 1.2; cursor: pointer; text-align: left;
+  transition: opacity 260ms var(--mb-in), border-color 160ms var(--mb-fb), background-color 260ms var(--mb-in), color 260ms var(--mb-in);
+}
+.mb-node small { display: block; font-size: 11.5px; color: var(--mb-leaf-3); margin-top: 2px; }
+.mb-node:hover { border-color: var(--mb-bronze); }
+.mb-node[data-page]::after { content: ''; position: absolute; top: 6px; right: 6px; width: 5px; height: 5px; border-radius: 50%; background: var(--mb-bronze); }
+.mb-tree[data-sel] .mb-node { opacity: 0.34; }
+.mb-tree[data-sel] .mb-node[data-rel] { opacity: 1; border-color: var(--mb-bronze); background: rgba(176, 122, 58, 0.16); }
+.mb-tree[data-sel] .mb-node[data-rel='self'] { background: var(--mb-bronze); color: var(--mb-night); border-color: var(--mb-bronze-hi); }
+.mb-tree[data-sel] .mb-node[data-rel='self'] small { color: rgba(17, 19, 28, 0.75); }
+/* Day 1 armies */
+.mb-tree[data-army] .mb-node[data-side='pandava'] { background: var(--mb-pandu); border-color: #4d8a90; }
+.mb-tree[data-army] .mb-node[data-side='kaurava'] { background: var(--mb-kuru); border-color: #a8433f; }
+.mb-tree[data-army] .mb-node[data-side='none'] { background: transparent; border-style: dashed; border-color: var(--mb-ash); color: var(--mb-leaf-2); }
+.mb-tree[data-sel][data-army] .mb-node[data-rel] { box-shadow: 0 0 0 2px var(--mb-bronze-hi); }
+.mb-tree[data-sel][data-army] .mb-node[data-rel='self'] { color: var(--mb-leaf); }
+
+.mb-person { margin: 14px 0 0; padding: 16px 18px; border: 1px solid var(--mb-bronze); border-radius: 14px; background: rgba(176, 122, 58, 0.06); }
+.mb-person h3 { margin: 0 0 4px; font-family: var(--mb-head); font-size: 28px; }
+.mb-person h3 [lang] { font-family: var(--mb-sa); font-weight: 400; font-size: 20px; color: var(--mb-leaf-3); margin-left: 8px; }
+.mb-person p { margin: 0 0 8px; }
+.mb-person-rel { display: grid; gap: 6px; margin: 8px 0 10px; font-size: 14.5px; }
+.mb-person-rel div { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.mb-person-rel span { color: var(--mb-ash); min-width: 64px; }
+.mb-person-rel button { min-height: 36px; padding: 2px 10px; border-radius: 8px; border: 1px solid var(--mb-rule); background: transparent; color: var(--mb-leaf); font: inherit; cursor: pointer; }
+.mb-person-rel button:hover { border-color: var(--mb-bronze); }
+.mb-person .mb-line { margin-top: 10px; border-left-color: var(--mb-bronze); }
+.mb-person-links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
+.mb-person-empty { color: var(--mb-leaf-3); font-size: 15px; margin: 14px 0 0; }
+
+.mb-family-list summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; color: var(--mb-leaf-2); }
+.mb-family-list dl { margin: 10px 0 0; font-size: 15px; }
+.mb-family-list dt { font-weight: 600; margin-top: 10px; }
+.mb-family-list dd { margin: 0; color: var(--mb-leaf-2); }
+
+/* Screened lines */
+.mb-screened { font-size: 14.5px; color: var(--mb-leaf-3); }
+.mb-screened code { font-family: inherit; color: var(--mb-leaf-2); }
+
+@media (min-width: 760px) {
+  .mb-head { padding-top: 44px; }
+  .mb-faq dl { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  .mb-node { font-size: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-mahabharata *, .fx-mahabharata *::before, .fx-mahabharata *::after { animation: none !important; transition-property: opacity !important; }
+  .mb-threads path.draw { stroke-dashoffset: 0 !important; }
+}
+
+/* Hindi pages: Devanagari headings in Noto, not the Latin display face */
+.fx-mahabharata:lang(hi) :is(.mb-head h1, .mb-sec h2, .mb-sec h3, .mb-strip strong, .mb-faq dt, .mb-links strong) {
+  font-family: var(--font-noto-devanagari), var(--mb-ui);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+.fx-mahabharata:lang(hi) .mb-head h1 { font-size: clamp(30px, 8vw, 44px); }
+.fx-mahabharata:lang(hi) #quick-answer, .fx-mahabharata:lang(hi) .mb-meaning { line-height: 1.8; }
