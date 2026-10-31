@@ -4,12 +4,10 @@
  */
 import raw from '@/content/funnels/ram-shalaka/ram-shalaka.json'
 import { cardImageUrl } from '@/lib/quotes-shared'
-import type { RsL10n, RsLine, RsLocale, RsNextCopy, RsRitualLine, RsSign } from './core'
+import type { Locale } from '@/lib/locale'
+import type { RsL10n, RsLine, RsNextCopy, RsRitualLine, RsSign } from './core'
 
 export * from './core'
-
-export const SITE = 'https://wisdomquotes.in'
-
 
 type Raw = {
   updated: string
@@ -17,8 +15,8 @@ type Raw = {
   lines: RsLine[]
   signs: Record<RsSign, RsL10n>
   signNotes: Record<RsSign, RsL10n>
-  ui: Record<RsLocale, Record<string, unknown>>
-  page: Record<RsLocale, RsPageCopy>
+  ui: Record<Locale, Record<string, unknown>>
+  page: Record<Locale, RsPageCopy>
   line: { hi: Record<string, string> }
 }
 
@@ -60,22 +58,22 @@ export const getGrid = (): string[][] => data.grid
 export const getCells = (): string[] => data.grid.flat()
 export const getLines = (): RsLine[] => data.lines
 export const getLineBySlug = (slug: string): RsLine | undefined => data.lines.find((l) => l.slug === slug)
-export const signName = (s: RsSign, locale: RsLocale): string => data.signs[s][locale]
-export const signNote = (s: RsSign, locale: RsLocale): string => data.signNotes[s][locale]
-export const pageCopy = (locale: RsLocale): RsPageCopy => data.page[locale]
+export const signName = (s: RsSign, locale: Locale): string => data.signs[s][locale]
+export const signNote = (s: RsSign, locale: Locale): string => data.signNotes[s][locale]
+export const pageCopy = (locale: Locale): RsPageCopy => data.page[locale]
 export const lineCopy = (): Record<string, string> => data.line.hi
 
 /** Flat UI strings for the ritual, plus the mantra words and the NextStep override. */
-export function ritualCopy(locale: RsLocale): { ui: Record<string, string>; naam: string[]; next: RsNextCopy } {
+export function ritualCopy(locale: Locale): { ui: Record<string, string>; naam: string[]; next: RsNextCopy } {
   const { naam, next, ...rest } = data.ui[locale] as Record<string, unknown>
   return { ui: rest as Record<string, string>, naam: naam as string[], next: next as RsNextCopy }
 }
 
-export function sourceLabel(l: RsLine, locale: RsLocale): string {
+export function sourceLabel(l: RsLine, locale: Locale): string {
   return `${l.kand[locale]} · ${l.place[locale]}`
 }
 
-export function ritualLines(locale: RsLocale): RsRitualLine[] {
+export function ritualLines(locale: Locale): RsRitualLine[] {
   return data.lines.map((l) => ({
     n: l.n,
     k: l.k,
@@ -95,10 +93,10 @@ export function ritualLines(locale: RsLocale): RsRitualLine[] {
 /** "प्रबिसि नगर कीजे सब काजा" from "प्रबिसि नगर कीजे सब काजा।" */
 export const firstHalf = (l: RsLine): string => l.deva[0].replace(/[।॥\s]+$/g, '')
 
-export const gitaHref = (l: RsLine, locale: RsLocale): string =>
+export const gitaHref = (l: RsLine, locale: Locale): string =>
   `${locale === 'hi' ? '/hi' : ''}/gita/chapter/${l.gita.chapter}/verse/${l.gita.verse}`
 
-export const cardUrl = (n: number, format: 'post' | 'status', lang: RsLocale): string =>
+export const cardUrl = (n: number, format: 'post' | 'status', lang: Locale): string =>
   cardImageUrl(`rs-${n}`, { format, lang, theme: 'night' })
 
 export function neighbours(l: RsLine): { prev: RsLine; next: RsLine } {

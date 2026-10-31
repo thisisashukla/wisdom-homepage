@@ -6,17 +6,9 @@
  */
 
 import chalisaJson from '@/content/funnels/hanuman-chalisa/chalisa.json'
-import type { Metadata } from 'next'
-import {
-  abs,
-  anchorId,
-  HUB_PATH,
-  HUB_PATH_HI,
-  linePath,
-  type BeadInfo,
-  type HcLocale,
-  type HcUnit,
-} from './shared'
+import { abs } from '@/lib/seo'
+import type { Locale } from '@/lib/locale'
+import { anchorId, HUB_PATH, HUB_PATH_HI, linePath, type BeadInfo, type HcUnit } from './shared'
 
 export * from './shared'
 
@@ -50,7 +42,7 @@ export function neighbors(u: HcUnit): { prev: HcUnit | null; next: HcUnit | null
 }
 
 /** Mala beads. mode 'anchor' links to the line on the same page, 'page' to its own page. */
-export function beads(locale: HcLocale, mode: 'anchor' | 'page'): BeadInfo[] {
+export function beads(locale: Locale, mode: 'anchor' | 'page'): BeadInfo[] {
   return doc.units.map((u) => ({
     id: u.id,
     pos: u.pos,
@@ -72,7 +64,7 @@ export type LineView = {
   href: string
 }
 
-export const toLineView = (u: HcUnit, locale: HcLocale): LineView => ({
+export const toLineView = (u: HcUnit, locale: Locale): LineView => ({
   id: u.id,
   pos: u.pos,
   label: u.label[locale],
@@ -83,61 +75,12 @@ export const toLineView = (u: HcUnit, locale: HcLocale): LineView => ({
   href: linePath(u.slug),
 })
 
-// ── SEO helpers ────────────────────────────────────────────────────────────
+// ── SEO helpers (funnel-specific schema; URLs and metadata come from lib/seo) ──
 
-const OG_DEFAULT = 'https://wisdomquotes.in/og-image.webp'
-
-export const cardOg = (cardId: string, lang: HcLocale = 'en') =>
+export const cardOg = (cardId: string, lang: Locale = 'en') =>
   abs(`/api/quote-card/${encodeURIComponent(cardId)}?format=post&lang=${lang}&theme=paper`)
 
-export function pageMeta(opts: {
-  title: string
-  description: string
-  path: string
-  locale?: HcLocale
-  /** EN/HI twin paths when the page has a Hindi twin. */
-  twin?: { en: string; hi: string }
-  ogImage?: string
-  index?: boolean
-}): Metadata {
-  const url = abs(opts.path)
-  const languages = opts.twin
-    ? {
-        en: abs(opts.twin.en),
-        'en-IN': abs(opts.twin.en),
-        hi: abs(opts.twin.hi),
-        'hi-IN': abs(opts.twin.hi),
-        'x-default': abs(opts.twin.en),
-      }
-    : undefined
-  const image = opts.ogImage ?? OG_DEFAULT
-  return {
-    title: { absolute: opts.title },
-    description: opts.description,
-    alternates: { canonical: url, ...(languages ? { languages } : {}) },
-    openGraph: {
-      title: opts.title,
-      description: opts.description,
-      url,
-      type: 'article',
-      siteName: 'Wisdom',
-      locale: opts.locale === 'hi' ? 'hi_IN' : 'en_IN',
-      images: [{ url: image }],
-    },
-    twitter: { card: 'summary_large_image', title: opts.title, description: opts.description, images: [image] },
-    ...(opts.index === false ? { robots: { index: false, follow: true } } : {}),
-  }
-}
-
 export const HUB_TWIN = { en: HUB_PATH, hi: HUB_PATH_HI }
-
-export function breadcrumbLd(items: { name: string; path: string }[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: abs(it.path) })),
-  }
-}
 
 /** The work itself, for `isPartOf` and `citation`. */
 export const chalisaWorkLd = {
@@ -157,30 +100,6 @@ export const editionCitation = {
   inLanguage: 'awa',
 }
 
-export const PUBLISHER_LD = {
-  '@type': 'Organization',
-  name: 'Wisdom',
-  url: 'https://wisdomquotes.in',
-  logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
-}
-
-export const AUTHOR_LD = {
-  '@type': 'Person',
-  name: 'Ankur Shukla',
-  url: 'https://wisdomquotes.in/about',
-}
-
-export function faqLd(faq: { q: string; a: string }[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-  }
-}
-
-/** JSON for a <script type="application/ld+json">, safe against </script>. */
-export const ldJson = (x: unknown) => JSON.stringify(x).replace(/</g, '\\u003c')
-
 // ── Next step copy (NextStep `copy` override) ─────────────────────────────
 
 export const NEXT_COPY = {
@@ -196,4 +115,3 @@ export const NEXT_COPY = {
   },
 } as const
 
-export { anchorId }

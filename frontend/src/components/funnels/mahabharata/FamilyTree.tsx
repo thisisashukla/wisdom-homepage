@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import type { Person, Side } from '@/lib/funnels/mahabharata/family'
-import GitaLink from './GitaLink'
-import { mbTrack } from './track'
+import { Button, GitaBridge, VerseCard } from '@/components/site'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 export type TreeLine = { deva: string; iast: string; en: string; ref: string; speaker: string; anchor: string }
 
@@ -12,7 +12,6 @@ type Props = {
   people: Person[]
   rows: { label: string; groups: { label?: string; ids: string[] }[] }[]
   lines: Record<string, TreeLine>
-  page: string
 }
 
 const SIDE: Record<Side, string> = { pandava: 'Pandava side', kaurava: 'Kaurava side', none: 'Not fighting' }
@@ -27,11 +26,11 @@ function relationsFor(people: Person[], id: string) {
 }
 
 /**
- * "Pull a thread": tap a name and their parents, spouses and children light in bronze,
+ * "Pull a thread": tap a name and their parents, spouses and children light in gold,
  * joined by drawn threads; everyone else dims. "Day 1" splits the family into the two armies.
  * Server-rendered as plain buttons; FamilyList carries the same relations as text.
  */
-export default function FamilyTree({ people, rows, lines, page }: Props) {
+export default function FamilyTree({ people, rows, lines }: Props) {
   const [sel, setSel] = useState<string | null>(null)
   const [army, setArmy] = useState(false)
   const [paths, setPaths] = useState<{ d: string; k: Rel }[]>([])
@@ -57,9 +56,9 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
   const pick = useCallback(
     (id: string, source: 'tree' | 'panel' | 'url') => {
       setSel((cur) => (cur === id && source === 'tree' ? null : id))
-      if (source !== 'url') mbTrack('Family Node Tapped', page, 'en', { person: id, source })
+      if (source !== 'url') trackEvent(EVENTS.FamilyNodeClicked, { item_id: id, item_type: 'person', location: source })
     },
-    [page],
+    [],
   )
 
   useEffect(() => {
@@ -156,7 +155,7 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
   const toggleArmy = () => {
     const on = !army
     setArmy(on)
-    mbTrack('Army View Toggled', page, 'en', { on })
+    trackEvent(EVENTS.ArmyViewToggled, { to: on ? 'on' : 'off' })
   }
 
   const p = sel ? byId.get(sel) : undefined
@@ -287,53 +286,38 @@ export default function FamilyTree({ people, rows, lines, page }: Props) {
               )}
             </div>
             {ln && (
-              <div className="mb-person-line">
-                <p className="qc-sa mb-deva" lang="sa">
-                  {ln.deva.split('\n').map((r, i) => (
-                    <span key={i} className="qc-pada">
-                      {r}
-                    </span>
-                  ))}
-                </p>
-                <p className="qc-iast mb-iast" lang="sa-Latn">
-                  {ln.iast.split('\n').map((r, i) => (
-                    <span key={i} className="qc-pada">
-                      {r}
-                    </span>
-                  ))}
-                </p>
-                <p className="qc-meaning">{ln.en}</p>
-                <p className="qc-source">
-                  <span className="qc-chip">
-                    {ln.speaker} · {ln.ref}
-                  </span>
-                </p>
-              </div>
+              <VerseCard
+                className="mb-person-line"
+                as="div"
+                size="compact"
+                align="left"
+                original={ln.deva}
+                iast={ln.iast}
+                meaning={ln.en}
+                source={`${ln.speaker} · ${ln.ref}`}
+              />
             )}
-            <p className="mb-person-links">
-              {p.page && (
-                <a href={`/mahabharata/characters/${p.page}`} className="mb-person-page">
-                  Read {p.name}&apos;s story
-                </a>
-              )}
+            <div className="mb-person-links">
+              {p.page && <Button href={`/mahabharata/characters/${p.page}`} label={<>Read {p.name}&apos;s story</>} location="tree_person_page" variant="primary" />}
               {p.gita && (
-                <GitaLink
+                <GitaBridge
+                  variant="inline"
                   href={`/gita/chapter/${p.gita.c}/verse/${p.gita.v}`}
-                  from={`tree_${p.id}`}
-                  toRef={`${p.gita.c}.${p.gita.v}`}
-                  page={page}
-                  locale="en"
-                >
-                  Gita {p.gita.c}.{p.gita.v}: {p.gita.why}
-                </GitaLink>
+                  location={`tree_${p.id}`}
+                  label={
+                    <>
+                      Gita {p.gita.c}.{p.gita.v}: {p.gita.why}
+                    </>
+                  }
+                />
               )}
-            </p>
+            </div>
           </div>
         ) : (
           <div className="mb-person mb-person-empty">
             <p className="mb-person-k">Tap a name to pull its thread</p>
             <p>
-              Names with a small gold dot have their own page. Try Karna, then Kunti: the thread between them is the secret of the Udyoga Parva.
+              Try Karna, then Kunti, and see what she kept from him until the eve of the war.
             </p>
           </div>
         )}

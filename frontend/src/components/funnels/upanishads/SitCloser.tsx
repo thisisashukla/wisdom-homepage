@@ -2,22 +2,19 @@
 
 /**
  * "Sit closer": the Katha as a conversation. The student's side shows; each tap
- * brings the teacher's answer in, joined by a thin sal-green thread. Progress is
+ * brings the teacher's answer in, hanging off a gold thread. Progress is
  * exchanges heard. Without JS (and before mount) every verse is visible.
  */
 import { useEffect, useRef, useState } from 'react'
-import type { Locale } from '@/lib/quotes-shared'
-import VerseBlock, { type VerseView } from './VerseBlock'
-import { upTrack } from './track'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import { TextVerse, type VerseView } from './parts'
 
 export type SCVerse = VerseView
 export type SCExchange = { id: string; title: string; cue?: string; ask: SCVerse[]; answer: SCVerse[] }
 
-type Props = { exchanges: SCExchange[]; text: string; page: string; locale: Locale; refPrefix: string }
+type Props = { exchanges: SCExchange[]; text: string; refPrefix: string }
 
-const Verse = ({ v, refPrefix }: { v: SCVerse; refPrefix: string }) => <VerseBlock v={v} label={refPrefix} />
-
-export default function SitCloser({ exchanges, text, page, locale, refPrefix }: Props) {
+export default function SitCloser({ exchanges, text, refPrefix }: Props) {
   const [enhanced, setEnhanced] = useState(false)
   const [heard, setHeard] = useState(0)
   const [all, setAll] = useState(false)
@@ -38,12 +35,12 @@ export default function SitCloser({ exchanges, text, page, locale, refPrefix }: 
   const sitCloser = () => {
     const next = heard + 1
     setHeard(next)
-    upTrack('Sit Closer Tapped', page, locale, { text, exchange: next, exchange_id: exchanges[next - 1]?.id })
+    trackEvent(EVENTS.SitCloserClicked, { item_id: exchanges[next - 1]?.id, item_type: 'exchange', position: next, text })
   }
 
   const readAll = () => {
     setAll(true)
-    upTrack('Sit Closer Read All', page, locale, { text, heard })
+    trackEvent(EVENTS.SitCloserCompleted, { item_id: text, item_type: 'text', heard, method: 'read_all' })
   }
 
   const showAll = !enhanced || all
@@ -62,27 +59,27 @@ export default function SitCloser({ exchanges, text, page, locale, refPrefix }: 
         if (!visible) return null
         return (
           <section key={ex.id} className="sc-ex" aria-labelledby={`sc-${ex.id}`} data-new={!showAll && i === heard - 1 ? '' : undefined}>
-            <h3 className="sc-title" id={`sc-${ex.id}`}>
+            <h3 className="sx-h3 sc-title" id={`sc-${ex.id}`}>
               {ex.title}
             </h3>
             <div className="sc-ask">
               {ex.cue && <p className="sc-cue">{ex.cue}</p>}
               {ex.ask.map((v) => (
-                <Verse key={v.ref} v={v} refPrefix={refPrefix} />
+                <TextVerse key={v.ref} v={v} label={refPrefix} />
               ))}
             </div>
             {answered ? (
               <div className="sc-answer" tabIndex={-1} ref={!showAll && i === heard - 1 ? lastAnswer : undefined}>
                 {ex.answer.map((v) => (
-                  <Verse key={v.ref} v={v} refPrefix={refPrefix} />
+                  <TextVerse key={v.ref} v={v} label={refPrefix} />
                 ))}
               </div>
             ) : (
               <div className="sc-cta">
-                <button type="button" className="sc-btn" onClick={sitCloser}>
+                <button type="button" className="sx-btn sx-btn--primary" onClick={sitCloser}>
                   Sit closer
                 </button>
-                <button type="button" className="sc-all" onClick={readAll}>
+                <button type="button" className="sx-btn sx-btn--link" onClick={readAll}>
                   Read the whole text straight through
                 </button>
               </div>

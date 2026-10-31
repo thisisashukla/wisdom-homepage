@@ -2,7 +2,7 @@
 
 import { GoogleAuthProvider, signInWithPopup, signInWithRedirect, type User } from 'firebase/auth'
 import { auth, googleProvider } from '@/lib/firebase'
-import { mixpanel, initMixpanel, trackEvent } from '@/lib/mixpanel'
+import { EVENTS, mixpanel, initMixpanel, trackEvent } from '@/lib/mixpanel'
 
 /** Browser helpers for the "your verse" funnel: sign-in, API calls, Razorpay. */
 
@@ -125,7 +125,7 @@ export async function startWeeklyPlanCheckout(source: string): Promise<boolean> 
   )
   if (sub.active) return true
   const Razorpay = await loadRazorpay()
-  trackEvent('Purchase Started', { product: 'web_plan_weekly', source })
+  trackEvent(EVENTS.PurchaseStarted, { product: 'web_plan_weekly', source })
   return new Promise((resolve, reject) => {
     const rzp = new Razorpay({
       key: sub.key_id,
@@ -137,21 +137,21 @@ export async function startWeeklyPlanCheckout(source: string): Promise<boolean> 
       theme: { color: '#c8881e' },
       modal: {
         ondismiss: () => {
-          trackEvent('Purchase Cancelled', { product: 'web_plan_weekly', source })
+          trackEvent(EVENTS.PurchaseCancelled, { product: 'web_plan_weekly', source })
           resolve(false)
         },
       },
       handler: async (r: RazorpayResponse) => {
         try {
           await api('/api/pay/verify', { body: r })
-          trackEvent('Purchase Completed', { product: 'web_plan_weekly', price_inr: 89, source })
+          trackEvent(EVENTS.PurchaseCompleted, { product: 'web_plan_weekly', price_inr: 89, source })
           resolve(true)
         } catch (e) {
           reject(e)
         }
       },
     })
-    rzp.on('payment.failed', () => trackEvent('Purchase Failed', { product: 'web_plan_weekly', source }))
+    rzp.on('payment.failed', () => trackEvent(EVENTS.PurchaseFailed, { product: 'web_plan_weekly', source }))
     rzp.open()
   })
 }

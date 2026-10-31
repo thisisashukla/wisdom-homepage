@@ -4,10 +4,6 @@
  * '@/lib/funnels/hanuman-chalisa'.
  */
 
-export type HcLocale = 'en' | 'hi'
-
-export const FUNNEL = 'hanuman-chalisa'
-export const SITE = 'https://wisdomquotes.in'
 export const HUB_PATH = '/hanuman-chalisa'
 export const HUB_PATH_HI = '/hi/hanuman-chalisa'
 export const LEARN_PATH = '/hanuman-chalisa/learn'
@@ -46,13 +42,22 @@ export type HcUnit = {
 export type BeadInfo = { id: string; pos: number; label: string; href: string; day: number }
 
 export const linePath = (slug: string) => `${HUB_PATH}/${slug}`
-export const abs = (p: string) => (p.startsWith('http') ? p : `${SITE}${p}`)
 
 /** DOM id of a line on the hub (anchor target for the mala). */
 export const anchorId = (id: string) => id.replace('.', '-')
 
-/** Every funnel event carries these. */
-export const baseProps = (page: string, locale: HcLocale) => ({ funnel: FUNNEL, page, locale })
+/** item_type for analytics: 'doha' or 'chaupai', from a unit id (hc.d1, hc.c7). */
+export const kindOf = (id: string): 'doha' | 'chaupai' => (id.startsWith('hc.d') ? 'doha' : 'chaupai')
+
+/** Keep the danda with its last word (display only; the data is unchanged). */
+export const nb = (t: string) => t.replace(/ ([।॥|]+)/g, '\u00a0$1')
+
+/** VerseCard props for a unit: the two Awadhi halves and their IAST, set in Tiro Hindi. */
+export const unitVerse = (u: { awadhi: [string, string]; iast: [string, string] }) => ({
+  original: u.awadhi.map(nb),
+  iast: u.iast.map(nb),
+  lang: 'awa' as const,
+})
 
 /** localStorage helpers that never throw. */
 export function readStore<T>(key: string, fallback: T): T {
@@ -75,7 +80,6 @@ export function writeStore(key: string, value: unknown): void {
 
 export const LEARN_KEY = 'wq_hc_learn_v1'
 export const COUNTER_KEY = 'wq_hc_counter_v1'
-export const SCRIPT_KEY = 'wq_hc_script'
 
 export type LearnState = { learned: Record<string, number>; day: number; completedDays: number[] }
 export const LEARN_EMPTY: LearnState = { learned: {}, day: 1, completedDays: [] }

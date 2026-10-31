@@ -1,7 +1,8 @@
 /** The tool page, shared by /hi/ram-shalaka (Hindi, default) and /ram-shalaka (English twin). */
-import BlogTracker from '@/components/BlogTracker'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, PageHero, ScriptToggle, Section, VerseCard, VerseList } from '@/components/site'
+import type { Locale } from '@/lib/locale'
 import {
-  SITE,
   getCells,
   getGrid,
   getLines,
@@ -13,161 +14,132 @@ import {
   signName,
   sourceLabel,
   toolHref,
-  type RsLocale,
 } from '@/lib/funnels/ram-shalaka'
 import { toolJsonLd } from '@/lib/funnels/ram-shalaka/seo'
 import GridTable from './GridTable'
 import Ritual from './Ritual'
-import RsNext from './RsNext'
-import ScriptToggle from './ScriptToggle'
-import { rsTiro, rsYatra } from './fonts'
+import ShalakaNext from './ShalakaNext'
 import './shalaka.css'
 
-export default function ToolPage({ locale }: { locale: RsLocale }) {
+export default function ToolPage({ locale }: { locale: Locale }) {
   const c = pageCopy(locale)
   const { ui, naam, next } = ritualCopy(locale)
   const lines = getLines()
-  const pageKey = locale === 'hi' ? 'ram-shalaka' : 'ram-shalaka-en'
-  const other: RsLocale = locale === 'hi' ? 'en' : 'hi'
+  const other: Locale = locale === 'hi' ? 'en' : 'hi'
   const lineNote = locale === 'en' ? { hrefLang: 'hi' } : {}
+  const plan = { planTitle: ui.planTitle, planSub: ui.planSub, planBtn: ui.planBtn, planFree: ui.planFree }
 
   return (
-    <main className={`fx-ram-shalaka ${rsTiro.variable} ${rsYatra.variable}`} lang={locale}>
-      <BlogTracker pageName={pageKey} />
-      {toolJsonLd(locale).map((ld, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      ))}
+    <main className="fx-ram-shalaka" lang={locale}>
+      <PageTracker pageName={locale === 'hi' ? 'Ram Shalaka Tool HI' : 'Ram Shalaka Tool'} />
+      <JsonLd data={toolJsonLd(locale)} />
 
-      <section className="rs-stage" aria-label={ui.kicker}>
-        <Ritual
-          locale={locale}
-          pageKey={pageKey}
-          h1={c.h1}
-          cells={getCells()}
-          lines={ritualLines(locale)}
-          ui={ui}
-          naam={naam}
-          next={next}
-          langHref={toolHref(other)}
-          siteUrl={SITE}
-        />
-        <noscript>
-          <p className="rs-noscript">{ui.noscript}</p>
-        </noscript>
-      </section>
+      <PageHero
+        locale={locale}
+        crumbs={[{ label: c.crumbSelf, href: toolHref(locale) }]}
+        eyebrow={ui.srcPrefix}
+        title={c.h1}
+        sub={ui.rule}
+        visual={
+          <section className="rs-stage" aria-label={ui.kicker}>
+            <Ritual locale={locale} cells={getCells()} lines={ritualLines(locale)} ui={ui} naam={naam} next={next} langHref={toolHref(other)} />
+            <noscript>
+              <p className="rs-noscript">{ui.noscript}</p>
+            </noscript>
+          </section>
+        }
+      />
 
-      <div className="rs-after">
-        <nav className="rs-crumbs" aria-label="Breadcrumb">
-          <ol>
-            <li>
-              <a href="/">{c.crumbHome}</a>
-            </li>
-            <li aria-current="page">{c.crumbSelf}</li>
-          </ol>
-        </nav>
+      <Section id="what" title={c.whatHeading} track="rs_what" width="narrow" tone="band">
+        <p className="sx-prose rs-lede" id="quick-answer">
+          {c.quickAnswer}
+        </p>
+      </Section>
 
-        <section className="rs-sec" id="what" data-mp-section="rs_what">
-          <h2 className="rs-h2">{c.whatHeading}</h2>
-          <p className="rs-lede" id="quick-answer">
-            {c.quickAnswer}
-          </p>
-        </section>
-
-        <section className="rs-sec wide" id="nine" data-mp-section="rs_nine" data-rs-script="deva">
-          <div className="rs-nine-head">
-            <h2 className="rs-h2">{c.nineHeading}</h2>
-            <ScriptToggle target="nine" label={c.scriptLabel} />
-          </div>
-          <p className="rs-p">{c.nineIntro}</p>
-          <ul className="rs-nine">
-            {lines.map((l) => (
-              <li key={l.k} className="rs-ans" id={`uttar-${l.n}`}>
-                <span className={`rs-tag ${l.sign}`}>{signName(l.sign, locale)}</span>
-                <p className="rs-ans-line rs-deva" lang="hi">
-                  <span>{l.deva[0]}</span>
-                  <span>{l.deva[1]}</span>
-                </p>
-                <p className="rs-ans-line rs-iast" lang="hi-Latn">
-                  <span>{l.iast[0]},</span>
-                  <span>{l.iast[1]}</span>
-                </p>
-                <p className="rs-ans-src">
-                  {sourceLabel(l, locale)} · {l.who[locale]}
-                </p>
-                <dl>
-                  <dt>{c.meaningLabel}</dt>
-                  <dd>{l.meaning[locale]}</dd>
-                  <dt>{c.youLabel}</dt>
-                  <dd>{l.forYou[locale]}</dd>
-                </dl>
+      <Section id="nine" title={c.nineHeading} intro={c.nineIntro} track="rs_nine">
+        <div className="rs-tools">
+          <ScriptToggle locale={locale} />
+        </div>
+        <VerseList columns={2}>
+          {lines.map((l) => (
+            <VerseCard
+              key={l.k}
+              as="li"
+              id={`uttar-${l.n}`}
+              label={<span className={`rs-tag ${l.sign}`}>{signName(l.sign, locale)}</span>}
+              original={l.deva}
+              iast={l.iast}
+              lang="awa"
+              meaning={l.meaning[locale]}
+              source={`${sourceLabel(l, locale)} · ${l.who[locale]}`}
+              size="compact"
+              align="left"
+              locale={locale}
+              rv
+              actions={
                 <p className="rs-ans-links">
-                  <a href={lineHref(l.slug)} data-mp-location="rs_nine_line" {...lineNote}>
+                  <a className="sx-btn sx-btn--link" href={lineHref(l.slug)} data-mp-location="rs_nine_line" {...lineNote}>
                     {c.readMore}
                   </a>
-                  <a href={gitaHref(l, locale)} className="rs-gita-link" data-mp-location="rs_nine_gita">
-                    {locale === 'hi' ? `गीता ${l.gita.chapter}.${l.gita.verse}` : `Gita ${l.gita.chapter}.${l.gita.verse}`}
-                  </a>
+                  <GitaBridge
+                    variant="inline"
+                    href={gitaHref(l, locale)}
+                    label={locale === 'hi' ? `गीता ${l.gita.chapter}.${l.gita.verse}` : `Gita ${l.gita.chapter}.${l.gita.verse}`}
+                    location="rs_nine_gita"
+                    from={`rs-${l.n}`}
+                    locale={locale}
+                  />
                 </p>
-              </li>
-            ))}
-          </ul>
-        </section>
+              }
+            >
+              <dl className="rs-dl">
+                <dt>{c.youLabel}</dt>
+                <dd>{l.forYou[locale]}</dd>
+              </dl>
+            </VerseCard>
+          ))}
+        </VerseList>
+      </Section>
 
-        <section className="rs-sec" id="next" data-mp-section="rs_next">
-          <RsNext
-            locale={locale}
-            pageKey={pageKey}
-            placement="page"
-            copy={{ planTitle: ui.planTitle, planSub: ui.planSub, planBtn: ui.planBtn, planFree: ui.planFree, appLine: next.app.line, appBtn: next.app.cta }}
-          />
-        </section>
+      <Section id="next" track="rs_next" width="narrow" tone="band">
+        <ShalakaNext locale={locale} placement="page" plan={plan} next={next} />
+      </Section>
 
-        <section className="rs-sec" id="faq" data-mp-section="rs_faq">
-          <h2 className="rs-h2">{c.faqHeading}</h2>
-          <div className="rs-faq">
-            <details className="rs-more" id="how" data-mp-section="rs_how" data-mp-disclosure="how_to_ask">
-              <summary>{c.howHeading}</summary>
-              <div>
-                <ol className="rs-steps" lang={locale}>
-                  {c.howSteps.map((s, i) => (
-                    <li key={i}>{s}</li>
-                  ))}
-                </ol>
-                <p className="rs-rules">{c.howRules}</p>
-              </div>
-            </details>
-            <details className="rs-more" id="grid" data-mp-section="rs_grid" data-mp-disclosure="full_grid">
-              <summary>{c.tableHeading}</summary>
-              <div>
-                <p className="rs-p">{c.tableNote}</p>
-                <GridTable grid={getGrid()} caption={c.tableCaption} />
-              </div>
-            </details>
-            {c.faq.map((f, i) => (
-              <details key={i} className="rs-more" data-track="faq" data-q={f.q}>
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
+      <Section id="faq" title={c.faqHeading} track="rs_faq" width="narrow">
+        <details className="rs-more" id="how" data-mp-section="rs_how" data-mp-disclosure="how_to_ask">
+          <summary>{c.howHeading}</summary>
+          <div>
+            <ol className="rs-steps" lang={locale}>
+              {c.howSteps.map((s, i) => (
+                <li key={i}>{s}</li>
+              ))}
+            </ol>
+            <p className="rs-rules">{c.howRules}</p>
           </div>
-        </section>
+        </details>
+        <details className="rs-more" id="grid" data-mp-section="rs_grid" data-mp-disclosure="full_grid">
+          <summary>{c.tableHeading}</summary>
+          <div>
+            <p>{c.tableNote}</p>
+            <GridTable grid={getGrid()} caption={c.tableCaption} />
+          </div>
+        </details>
+        <Faq items={c.faq} locale={locale} ld={false} />
+      </Section>
 
-        <section className="rs-sec" id="manas">
-          <h2 className="rs-h2">{c.manasHeading}</h2>
-          <p className="rs-p">
-            {c.manasText}{' '}
-            <a href="/ramayana" data-mp-location="rs_ramayana">
-              {c.manasLink}
-            </a>
-            {locale === 'hi' ? '।' : '.'}
-          </p>
-        </section>
+      <Section id="manas" title={c.manasHeading} width="narrow" tone="band">
+        <p className="sx-prose">
+          {c.manasText}{' '}
+          <a className="sx-link" href="/ramayana" data-mp-location="rs_ramayana">
+            {c.manasLink}
+          </a>
+          {locale === 'hi' ? '।' : '.'}
+        </p>
+      </Section>
 
-        <section className="rs-sec" id="sources">
-          <h2 className="rs-h2">{c.sourcesHeading}</h2>
-          <p className="rs-sources">{c.sources}</p>
-        </section>
-      </div>
+      <Section id="sources" title={c.sourcesHeading} width="narrow">
+        <p className="rs-sources">{c.sources}</p>
+      </Section>
     </main>
   )
 }

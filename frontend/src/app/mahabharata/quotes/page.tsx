@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
-import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
-import LineCard from '@/components/funnels/mahabharata/LineCard'
-import GitaLink from '@/components/funnels/mahabharata/GitaLink'
-import Faq from '@/components/funnels/mahabharata/Faq'
-import NextBlock from '@/components/funnels/mahabharata/NextBlock'
-import { heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
-import { PATHS, abs, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, NextStep, PageHero, Section, VerseList } from '@/components/site'
+import Line from '@/components/funnels/mahabharata/Line'
+import { heroVerseOf, line } from '@/lib/funnels/mahabharata/lines'
+import { NEXT } from '@/lib/funnels/mahabharata/next'
+import { PATHS, articleLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
+import { abs } from '@/lib/seo'
+import '@/components/funnels/mahabharata/mbh.css'
 
-const PAGE = 'mbh-quotes'
+const PAGE_KEY = 'mbh-quotes'
 const PATH = PATHS.quotes
 const CARD = 'mbh-5-39-9'
 const TITLE = 'Mahabharata Quotes in Sanskrit, With Verse Numbers'
@@ -57,82 +58,87 @@ export default function Page() {
         }
       }),
     },
-    faqLd(FAQ),
-    breadcrumbLd([
-      { name: 'Home', path: '/' },
-      { name: 'Mahabharata', path: PATHS.hub },
-      { name: 'Quotes', path: PATH },
-    ]),
   )
   return (
-    <Shell
-      page={PAGE}
-      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Quotes' }]}
-      jsonLd={ld}
-      hero={{
-        eyebrow: '25 lines, every one with its verse',
-        h1: <>Mahabharata quotes, in the epic&apos;s own Sanskrit</>,
-        line: heroLineOf('mbh.5.39.9'),
-        facts: [`${all.length} lines`, 'Speaker and verse number', 'Copy, WhatsApp or save as image'],
-        cta: (
-          <a href={`#${GROUPS[0].id}`} className="btn-read-gita btn-read-gita-primary" data-mp-location="quotes_hero_start">
-            Read the {all.length} lines
-          </a>
-        ),
-      }}
-    >
-      <Band className="mb-intro">
-        <p id="quick-answer" className="tp-intro rv">
-          These are 25 lines from the Mahabharata&apos;s Sanskrit, each with its verse number and the person who says it. Among them is
-          &quot;Where dharma is, there is victory&quot;, which Dhritarashtra says while refusing to act on it (MBh 5.39.9). Copy a line, send it
-          on WhatsApp, or save it as an image.
-        </p>
-        <nav aria-label="Themes on this page" className="rv">
-          <ul className="mb-jump">
-            {GROUPS.map((g) => (
-              <li key={g.id}>
-                <a href={`#${g.id}`} data-mp-location={`quotes_jump_${g.id}`}>
-                  {g.h.replace(/^On /, '').replace(/^./, (c) => c.toUpperCase())}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </Band>
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Mahabharata Quotes" />
+      <main className="fx-mbh" lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Mahabharata', href: PATHS.hub },
+            { label: 'Quotes', href: PATH },
+          ]}
+          eyebrow="Lines people still quote"
+          title={<>Mahabharata quotes, in the epic&apos;s own Sanskrit</>}
+          facts={[`${all.length} lines`, 'Grouped by what you are facing']}
+          actions={[{ href: `#${GROUPS[0].id}`, label: `Read the ${all.length} lines`, location: 'quotes_hero_start' }]}
+          verse={heroVerseOf('mbh.5.39.9')}
+        />
 
-      {GROUPS.map((g, gi) => (
-        <Band key={g.id} alt={gi % 2 === 0} id={g.id} mp={`quotes_${g.id}`} h={g.h} hId={`${g.id}-h`} lede={g.lede}>
-          {g.ids.map((id) => (
-            <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
-          ))}
-          {g.id === 'self' && (
-            <ul className="mb-bridge rv">
-              <li>
-                <GitaLink href="/gita/chapter/6/verse/5" from="quotes_self" toRef="6.5" page={PAGE} locale="en">
-                  Gita 6.5
-                </GitaLink>
-                <p>Lift yourself by yourself. Draupadi and Vidura both say a version of Krishna&apos;s line.</p>
-              </li>
+        <Section spacing="tight">
+          <div className="sx-prose rv">
+            <p id="quick-answer">
+              These are 25 lines from the Mahabharata&apos;s Sanskrit, grouped by what you might be facing, with who says each one and where. Among them is
+              &quot;Where dharma is, there is victory&quot;, which Dhritarashtra says while refusing to act on it (MBh 5.39.9). Pick the one that fits
+              the week you are having.
+            </p>
+          </div>
+          <nav aria-label="Themes on this page" className="mb-jump-nav rv">
+            <ul className="mb-jump">
+              {GROUPS.map((g) => (
+                <li key={g.id}>
+                  <a href={`#${g.id}`} data-mp-location={`quotes_jump_${g.id}`}>
+                    {g.h.replace(/^On /, '').replace(/^./, (c) => c.toUpperCase())}
+                  </a>
+                </li>
+              ))}
             </ul>
-          )}
-        </Band>
-      ))}
+          </nav>
+        </Section>
 
-      <Faq items={FAQ} heading="Questions people ask" alt={GROUPS.length % 2 === 0} />
-      <NextBlock page={PAGE} alt={GROUPS.length % 2 === 1} />
+        {GROUPS.map((g, gi) => (
+          <Section key={g.id} tone={gi % 2 === 0 ? 'band' : 'default'} id={g.id} track={`quotes_${g.id}`} title={g.h} intro={g.lede} width="narrow">
+            <VerseList>
+              {g.ids.map((id) => (
+                <Line key={id} as="li" line={line(id)} path={PATH} pageKey={PAGE_KEY} />
+              ))}
+            </VerseList>
+            {g.id === 'self' && (
+              <GitaBridge
+                className="mb-after rv"
+                href="/gita/chapter/6/verse/5"
+                location="quotes_self"
+                label="Gita 6.5"
+                why={<>Lift yourself by yourself. Draupadi and Vidura both say a version of Krishna&apos;s line.</>}
+              />
+            )}
+          </Section>
+        ))}
 
-      <Band className="mb-method" h="Sources and method" hId="method-h">
-        <p>
-          Every line comes from the Sanskrit we hold for books 3, 5, 12, 13 and 14, a southern-recension text whose numbering runs close to the
-          Kumbhakonam edition. Verse numbers can differ from the Pune critical edition. The English is Wisdom&apos;s own, read with
-          Nilakantha&apos;s commentary, with K. M. Ganguli&apos;s public-domain translation consulted.
-        </p>
-        <p>
-          We leave out lines in these books that demean women, such as a few in the Anushasana Parva and in Vidura Niti, and say why on{' '}
-          <a href={`${PATHS.vidura}#left-out`}>the Vidura Niti page</a>.
-        </p>
-        <p>Wisdom translation, edited by Ankur Shukla.</p>
-      </Band>
-    </Shell>
+        <Section tone={GROUPS.length % 2 === 0 ? 'band' : 'default'} track="faq" title="Questions people ask" width="narrow">
+          <Faq items={FAQ} />
+        </Section>
+
+        <Section tone={GROUPS.length % 2 === 1 ? 'band' : 'default'} track="next_step" title={NEXT.en.head} width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={PAGE_KEY} placement="end" copy={NEXT.en.copy} />
+          </div>
+        </Section>
+
+        <Section className="mb-method" title="Sources and method" width="narrow">
+          <p>
+            Every line comes from the Sanskrit we hold for books 3, 5, 12, 13 and 14, a southern-recension text whose numbering runs close to the
+            Kumbhakonam edition. Verse numbers can differ from the Pune critical edition. The English is Wisdom&apos;s own, read with
+            Nilakantha&apos;s commentary, with K. M. Ganguli&apos;s public-domain translation consulted.
+          </p>
+          <p>
+            We leave out lines in these books that demean women, such as a few in the Anushasana Parva and in Vidura Niti, and say why on{' '}
+            <a href={`${PATHS.vidura}#left-out`}>the Vidura Niti page</a>.
+          </p>
+          <p>Wisdom translation, edited by Ankur Shukla.</p>
+        </Section>
+      </main>
+    </>
   )
 }

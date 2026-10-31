@@ -1,22 +1,12 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/locale'
+import { NAV_APP, NAV_PLAN, NAV_PRIMARY, NAV_SCRIPTURES, NAV_SECONDARY, SCRIPTURES_LABEL, type NavItem } from '@/lib/nav'
 
-const PLAN_HREF = '/start?ref=menu'
-const PLAN_LABEL = 'Create my free Gita reading plan'
-
-const links = [
-  { href: '/gita', label: 'Read the Gita' },
-  { href: '/hi/gita', label: 'हिंदी गीता' },
-  { href: '/gita/today', label: 'Verse of the Day' },
-  { href: '/gita-for', label: 'Gita for Life' },
-  { href: '/blogs', label: 'Blog' },
-  { href: '/app', label: 'The Wisdom app' },
-  { href: '/about', label: 'About' },
-]
-
-
-export function MobileNavToggle() {
+/** Phone drawer: the same links as the desktop bar and More menu (lib/nav.ts), in the same order. */
+export function MobileNavToggle({ locale = 'en', active = null }: { locale?: Locale; active?: NavItem | null }) {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -34,47 +24,54 @@ export function MobileNavToggle() {
     }
   }, [open])
 
+  const toggle = () => {
+    if (!open) trackEvent(EVENTS.NavMenuOpened, { menu: 'drawer' })
+    setOpen((o) => !o)
+  }
+  const close = () => setOpen(false)
+  const item = (it: NavItem, location: string) => {
+    const href = it.href[locale]
+    return (
+      <li key={it.href.en}>
+        <a href={href} aria-current={active === it ? 'page' : undefined} hrefLang={href.startsWith('/hi') ? 'hi' : undefined} data-mp-location={location} onClick={close}>
+          {it.label[locale]}
+        </a>
+      </li>
+    )
+  }
+
   return (
     <>
       <button
         type="button"
         className="mobile-nav-toggle"
-        aria-label="Menu"
+        aria-label={locale === 'hi' ? 'मेन्यू' : 'Menu'}
         aria-expanded={open}
         aria-controls="mobile-nav-drawer"
         data-open={open || undefined}
-        onClick={() => setOpen((o) => !o)}
+        onClick={toggle}
       >
         <span />
         <span />
         <span />
       </button>
-      <div
-        id="mobile-nav-drawer"
-        className="mobile-nav-drawer"
-        data-open={open || undefined}
-        hidden={!open}
-      >
+      <div id="mobile-nav-drawer" className="mobile-nav-drawer" data-open={open || undefined} hidden={!open}>
         <ul>
           <li>
-            <a
-              href={PLAN_HREF}
-              className="mobile-nav-app"
-              data-mp-location="mobile_nav_drawer_app"
-              onClick={() => setOpen(false)}
-            >
-              {PLAN_LABEL}
-              <span className="mobile-nav-app-sub">Week 1 free</span>
+            <a href={NAV_PLAN.href} className="mobile-nav-app" data-mp-location="mobile_nav_drawer_plan" onClick={close}>
+              {NAV_PLAN.label[locale]}
             </a>
           </li>
-          {links.map((l) => (
-            <li key={l.href}>
-              <a href={l.href} onClick={() => setOpen(false)}>
-                {l.label}
-              </a>
-            </li>
-          ))}
+          {NAV_PRIMARY.map((it) => item(it, 'nav_drawer'))}
+          <li>
+            <a href={NAV_APP.href} aria-current={undefined} data-mp-location="mobile_nav_drawer_app" onClick={close}>
+              {NAV_APP.label[locale]}
+            </a>
+          </li>
         </ul>
+        <p className="mobile-nav-label">{SCRIPTURES_LABEL[locale]}</p>
+        <ul className="mobile-nav-grid">{NAV_SCRIPTURES.map((it) => item(it, 'nav_drawer_more'))}</ul>
+        <ul className="mobile-nav-foot">{NAV_SECONDARY.map((it) => item(it, 'nav_drawer_more'))}</ul>
       </div>
     </>
   )

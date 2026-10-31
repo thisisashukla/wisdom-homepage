@@ -8,6 +8,7 @@
 
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
+import { Button } from '@/components/site'
 import { Icon } from '@/components/quotes/Icons'
 import { VERDICT_LABEL, type DrawerData, type Locale } from '@/lib/funnels/sayings/shared'
 import '@/components/quotes/card.css'
@@ -112,9 +113,7 @@ export default function SourceDrawer({ data, locale, onClose }: { data: DrawerDa
         </blockquote>
         {data.translated && <p className="fxd-note">{t.translated}</p>}
         <p className="fxd-note">{t.dash}</p>
-        <a className="qns-btn" href={data.url} target="_blank" rel="noopener" data-mp-location="source_drawer">
-          {t.open}
-        </a>
+        <Button href={data.url} label={t.open} location="source_drawer" variant="primary" external className="fxd-open" />
       </div>
     </div>,
     document.body,

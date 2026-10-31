@@ -8,22 +8,23 @@
  */
 
 import { useEffect, useId, useRef, useState } from 'react'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/locale'
 import type { LampId, LampView } from '@/lib/funnels/ramayana/types'
-import { trackFunnel } from '@/lib/funnels/ramayana/track'
 import Diya from './Diya'
-import LineBlock from './LineBlock'
-import ScriptToggle from './ScriptToggle'
+import LineVerse from './LineVerse'
 
 type Props = {
   scene: string
   lamps: LampView[]
-  locale: 'en' | 'hi'
-  page: string
+  locale: Locale
   /** Lamp open on first render (scene pages). Hub rows start closed. */
   initial?: LampId | null
   /** Accessible name for the lamp row, e.g. the scene title. */
   label: string
   size?: 'large' | 'small'
+  /** Scene pages: send Scene Viewed once when the lamps mount. */
+  trackView?: boolean
 }
 
 const T = {
@@ -31,12 +32,15 @@ const T = {
   hi: { instead: 'ग्रंथ में इसकी जगह क्या है', film: 'स्रोत', open: 'दिखाएँ', close: 'छिपाएँ', none: 'दिखाने को कोई पंक्ति नहीं।' },
 }
 
-export default function ThreeLamps({ scene, lamps, locale, page, initial = null, label, size = 'large' }: Props) {
+export default function ThreeLamps({ scene, lamps, locale, initial = null, label, size = 'large', trackView = false }: Props) {
   const [open, setOpen] = useState<LampId | null>(initial)
   const uid = useId().replace(/:/g, '')
   const t = T[locale]
   // The kindle: on scene pages the three flames light in turn the first time the row is seen.
   // Server HTML has the flames lit; hiding applies only once JS has marked the row as waiting.
+  useEffect(() => {
+    if (trackView) trackEvent(EVENTS.SceneViewed, { item_id: scene, item_type: 'scene' })
+  }, [trackView, scene])
   const rowRef = useRef<HTMLDivElement>(null)
   const [kindle, setKindle] = useState<'off' | 'wait' | 'lit'>('off')
   useEffect(() => {
@@ -63,7 +67,7 @@ export default function ThreeLamps({ scene, lamps, locale, page, initial = null,
   const tap = (l: LampView) => {
     const next = open === l.id ? null : l.id
     setOpen(next)
-    if (next) trackFunnel('Scene Lamp Tapped', { page, locale }, { scene, lamp: l.id, state: l.state })
+    if (next) trackEvent(EVENTS.SceneLampClicked, { item_id: scene, item_type: 'scene', lamp: l.id, state: l.state })
   }
 
   return (
@@ -115,10 +119,9 @@ export default function ThreeLamps({ scene, lamps, locale, page, initial = null,
             )}
             {l.lines.map((line, n) => (
               <div key={line.key} className="rl-panel-step" style={{ ['--i' as string]: Math.min(n + 2, 3) }}>
-                <LineBlock line={line} locale={locale} />
+                <LineVerse line={line} locale={locale} framed={false} toggle={n === 0} />
               </div>
             ))}
-            {l.lines.length > 0 && <ScriptToggle locale={locale} page={page} />}
           </section>
         )
       })}

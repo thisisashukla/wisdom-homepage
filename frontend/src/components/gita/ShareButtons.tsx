@@ -7,7 +7,7 @@
  */
 
 import { useEffect, useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 type Props = {
   /** Page-relative URL, e.g. /gita/chapter/2/verse/47 */
@@ -40,7 +40,7 @@ export default function ShareButtons({ url, text, title, locale = 'en' }: Props)
   const waUrl = `https://wa.me/?text=${encodeURIComponent(composed)}`
 
   const onNative = async () => {
-    trackEvent('Share Clicked', { method: 'native', url, locale })
+    trackEvent(EVENTS.ShareClicked, { method: 'native', url, locale })
     try {
       await (navigator as Navigator & { share: (data: ShareData) => Promise<void> }).share({ title, text, url: fullUrl })
     } catch {
@@ -48,7 +48,7 @@ export default function ShareButtons({ url, text, title, locale = 'en' }: Props)
     }
   }
   const onCopy = async () => {
-    trackEvent('Share Clicked', { method: 'copy', url, locale })
+    trackEvent(EVENTS.ShareClicked, { method: 'copy', url, locale })
     try {
       await navigator.clipboard.writeText(fullUrl)
       setCopied(true)
@@ -57,7 +57,7 @@ export default function ShareButtons({ url, text, title, locale = 'en' }: Props)
       /* clipboard blocked */
     }
   }
-  const trackOut = (method: string) => () => trackEvent('Share Clicked', { method, url, locale })
+  const trackOut = (method: string) => () => trackEvent(EVENTS.ShareClicked, { method, url, locale })
 
   return (
     <div className="gita-share" role="group" aria-label={t.label}>

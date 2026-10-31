@@ -1,108 +1,61 @@
 /**
  * Server blocks shared by the Chalisa pages: the full text with meaning on
- * tap, the FAQ, the next step, the sources note, and the house section head.
+ * tap (VerseCards in a VerseList) and the sources note.
  */
 
-import type { ReactNode } from 'react'
-import NextStep from '@/components/quotes/NextStep'
-import { anchorId, NEXT_COPY, START_SITUATION, type HcLocale, type HcUnit } from '@/lib/funnels/hanuman-chalisa'
-import LineText from './LineText'
+import { VerseCard, VerseList } from '@/components/site'
+import type { Locale } from '@/lib/locale'
+import { anchorId, unitVerse, type HcUnit } from '@/lib/funnels/hanuman-chalisa'
 
 const T = {
   en: { meaning: 'Meaning', words: 'Word by word and where it happens' },
   hi: { meaning: 'अर्थ', words: 'शब्दार्थ (अंग्रेज़ी में)' },
 } as const
 
-/** House section head: left-aligned eyebrow, heading, subtext. */
-export function SecHead({ id, eyebrow, title, sub, lang }: { id: string; eyebrow?: string; title: ReactNode; sub?: ReactNode; lang?: HcLocale }) {
-  return (
-    <div className="sec-head hc-sec-head rv" lang={lang}>
-      {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-      <h2 className="heading" id={id}>
-        {title}
-      </h2>
-      {sub && <p className="subtext">{sub}</p>}
-    </div>
-  )
-}
-
-export function FullText({ units, locale, withLinks = true }: { units: HcUnit[]; locale: HcLocale; withLinks?: boolean }) {
+/** All 43 units in order. Each meaning opens on tap (Line Opened, via MeaningTracker); the mala follows the line in view. */
+export function FullText({ units, locale, withLinks = true }: { units: HcUnit[]; locale: Locale; withLinks?: boolean }) {
   const t = T[locale]
   return (
-    <ol className="hc-text">
+    <VerseList className="hc-text">
       {units.map((u) => (
-        <li key={u.id} id={anchorId(u.id)} data-unit={u.id} data-kind={u.kind} className="hc-unit">
-          <span className="hc-num" aria-hidden="true">
-            {u.kind === 'chaupai' ? u.n : ''}
-          </span>
-          <div>
-            <p className="hc-unit-label" lang={locale}>
-              {u.label[locale]}
+        <VerseCard
+          key={u.id}
+          as="li"
+          id={anchorId(u.id)}
+          className={`hc-unit hc-unit--${u.kind}`}
+          size="compact"
+          align="left"
+          locale={locale}
+          label={<span lang={locale}>{u.label[locale]}</span>}
+          {...unitVerse(u)}
+        >
+          <details className="hc-mean" data-hc-line={u.id}>
+            <summary lang={locale}>{t.meaning}</summary>
+            <p className="hc-mean-body" lang={locale}>
+              {u.meaning[locale]}
             </p>
-            <LineText awadhi={u.awadhi} iast={u.iast} />
-            <details className="hc-mean" data-hc-line={u.id}>
-              <summary lang={locale}>{t.meaning}</summary>
-              <p className="hc-mean-body" lang={locale}>
-                {u.meaning[locale]}
+            {withLinks && (
+              <p className="hc-mean-more">
+                <a href={`/hanuman-chalisa/${u.slug}`} data-mp-location="hub_line_link" lang={locale}>
+                  {t.words}
+                </a>
               </p>
-              {withLinks && (
-                <p className="hc-mean-more">
-                  <a href={`/hanuman-chalisa/${u.slug}`} data-mp-location="hub_line_link" lang={locale}>
-                    {t.words}
-                  </a>
-                </p>
-              )}
-            </details>
-          </div>
-        </li>
+            )}
+          </details>
+        </VerseCard>
       ))}
-    </ol>
+    </VerseList>
   )
 }
 
-export function Faq({ items, locale, heading }: { items: { q: string; a: string }[]; locale: HcLocale; heading: string }) {
-  return (
-    <section className="section hc-band" aria-labelledby="hc-faq-h">
-      <div className="wrap hc-col">
-        <h2 className="hc-h2 rv" id="hc-faq-h" lang={locale}>
-          {heading}
-        </h2>
-        <div className="hc-faq" lang={locale} data-stagger="60">
-          {items.map((f) => (
-            <details key={f.q} className="hc-faq-item rv">
-              <summary>{f.q}</summary>
-              <p>{f.a}</p>
-            </details>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export function HcNextStep({ locale, pageName, pageKey, placement }: { locale: HcLocale; pageName: string; pageKey: string; placement: string }) {
-  return (
-    <div className="hc-next-step rv">
-      <NextStep funnel="hanuman-chalisa"
-        locale={locale}
-        pageName={pageName}
-        pageKey={pageKey}
-        placement={placement}
-        startSituation={START_SITUATION}
-        copy={NEXT_COPY[locale]}
-      />
-    </div>
-  )
-}
-
-export function Sources({ locale }: { locale: HcLocale }) {
+export function Sources({ locale }: { locale: Locale }) {
   if (locale === 'hi') {
     return (
       <section className="hc-sources" aria-labelledby="hc-src-h">
-        <h2 className="hc-h3" id="hc-src-h" lang="hi">
+        <h2 className="sx-h3" id="hc-src-h" lang="hi">
           स्रोत और तरीका
         </h2>
-        <div className="hc-prose hc-small" lang="hi">
+        <div className="sx-prose hc-small" lang="hi">
           <p>
             मूल पाठ गोस्वामी तुलसीदास की अवधी रचना है, गीता प्रेस, गोरखपुर के प्रचलित पाठ के अनुसार। हमने इसे गीता प्रेस की तीन
             प्रतियों, जगद्गुरु रामभद्राचार्य की महावीरी व्याख्या के मूल पाठ और कविता कोश से मिलाया है। जहाँ पाठ अलग है, वहाँ
@@ -115,10 +68,10 @@ export function Sources({ locale }: { locale: HcLocale }) {
   }
   return (
     <section className="hc-sources" aria-labelledby="hc-src-h">
-      <h2 className="hc-h3" id="hc-src-h">
+      <h2 className="sx-h3" id="hc-src-h">
         Sources and method
       </h2>
-      <div className="hc-prose hc-small">
+      <div className="sx-prose hc-small">
         <p>
           The Awadhi text is Goswami Tulsidas&apos;s, in the popular Gita Press, Gorakhpur reading. We checked every line against three
           Gita Press printings, the mool text of Jagadguru Rambhadracharya&apos;s Mahaviri commentary, and Kavita Kosh. Where editions

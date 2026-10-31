@@ -23,9 +23,9 @@ export const FOUND_SHORT: Record<FoundIn, { hi: string; en: string }> = {
 export const KAB_HUB = {
   hi: {
     title: 'कबीर के दोहे अर्थ सहित: 50 प्रसिद्ध दोहे',
-    description: 'कबीर के 50 प्रसिद्ध दोहे, आसान हिंदी और अंग्रेज़ी अर्थ, कठिन शब्दों के अर्थ, और हर दोहा किस संग्रह में मिलता है। कॉपी करें या स्टेटस बनाएं।',
+    description: 'कबीर के 50 प्रसिद्ध दोहे, आसान हिंदी और अंग्रेज़ी अर्थ, कठिन शब्दों के अर्थ, और हर दोहा किस संग्रह में मिलता है।',
     h1: 'कबीर के दोहे, अर्थ सहित',
-    promise: 'पचास दोहे जो लोग सबसे ज़्यादा खोजते और भेजते हैं। किसी भी रेखांकित शब्द पर टैप करें, उसका अर्थ वहीं दिखेगा।',
+    promise: 'पचास दोहे जो लोग सबसे ज़्यादा खोजते और भेजते हैं, धीरे पढ़ने के लिए या किसी अपने को भेजने के लिए।',
     quick:
       'कबीर के सबसे मशहूर दोहे, जैसे "गुरु गोविंद दोऊ खड़े" और "बुरा जो देखन मैं चला", रामनरेश त्रिपाठी की कविता-कौमुदी (1917) में छपे मिलते हैं। यहाँ 50 दोहे हैं: हर एक का आसान हिंदी अर्थ, अंग्रेज़ी अर्थ, कठिन शब्दों के अर्थ, और यह कि दोहा किस संग्रह में मिलता है।',
     faq: [
@@ -39,9 +39,9 @@ export const KAB_HUB = {
   },
   en: {
     title: 'Kabir Dohe in English: 50 Dohas With Meaning',
-    description: 'Fifty of Kabir\'s best known dohe in the original, with plain English meanings, word meanings and where each one is found. Copy or share any line.',
+    description: 'Fifty of Kabir\'s best known dohe in the original, with plain English meanings, word meanings and where each one is found.',
     h1: 'Kabir\'s dohe in English',
-    promise: 'Fifty dohe in Kabir\'s own words, each with a plain English meaning. Tap an underlined word to see what it means.',
+    promise: 'Fifty of Kabir\'s dohe, to read slowly or to send to someone who needs one today.',
     quick:
       'Kabir\'s best known doha, "Guru Govind dou khade", asks whom to bow to first, the guru or God, and answers: the guru, who showed the way to God. It is in Kavita-Kaumudi (1917). Below are 50 dohe in the original with our English meanings and where each one is found.',
     faq: [

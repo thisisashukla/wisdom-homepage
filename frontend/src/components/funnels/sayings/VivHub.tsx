@@ -1,13 +1,12 @@
 /** /vivekananda-quotes and /hi/vivekananda-quotes (server). */
 
-import { BlogTracker } from '@/components/BlogTracker'
-import { VIV_THEMES, VERDICT_LABEL, checkDrawer, vivBridge, vivChecks, vivDrawer, vivEdition, vivLines, type Locale, type VivLine, type VivTheme } from '@/lib/funnels/sayings/data'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, PageHero, Section, VerseCard, VerseList } from '@/components/site'
+import { VIV_THEMES, VERDICT_LABEL, checkDrawer, chipText, vivBridge, vivChecks, vivDrawer, vivEdition, vivLine, vivLines, type Locale, type VivBridge, type VivLine, type VivTheme } from '@/lib/funnels/sayings/data'
 import { VIV_HUB, VIV_PATH, VIV_PATH_HI, VIV_THEME_COPY, THEME_INTRO, vivCheckPath, vivThemePath } from '@/lib/funnels/sayings/copy-viv'
-import { abs, cardOg, ldArticle, ldBreadcrumb, ldFaq, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
-import VivCard from './VivCard'
-import FxNextStep from './FxNextStep'
-import { DailyBand, Faq, Head, JsonLd, Method, NextPanel, Related, Sec, Shell } from './parts'
-import { tiroSa } from './fonts'
+import { abs, cardOg, ldArticle, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
+import { VivVerse } from './cards'
+import { JumpChips, Method, NextBand, NextPanel, Related } from './parts'
 
 export const vivShareText = (l: VivLine, locale: Locale, path: string): string =>
   [
@@ -18,8 +17,31 @@ export const vivShareText = (l: VivLine, locale: Locale, path: string): string =
     `${abs(path)}?utm_source=copy&utm_medium=quote#${l.id}`,
   ].join('\n')
 
+/** One Gita verse Swamiji quoted: the Sanskrit line, his English, why it mattered, and the link to the verse. */
+export function VivGitaCard({ b, locale, readLabel }: { b: VivBridge; locale: Locale; readLabel: string }) {
+  return (
+    <VerseCard
+      as="li"
+      align="left"
+      rv
+      className="fx-card"
+      locale={locale}
+      original={b.sanskritLine}
+      meaning={<span lang="en">&ldquo;{b.his}&rdquo;</span>}
+      source={<span lang="en">{`Complete Works vol ${b.source.volume}, ${b.source.work}`}</span>}
+    >
+      <p className="fx-bridge-note">{b.note[locale]}</p>
+      <GitaBridge variant="inline" href={`${locale === 'hi' ? '/hi' : ''}/gita/chapter/${b.chapter}/verse/${b.verse}`} label={readLabel} location="gita_bridge" locale={locale} />
+    </VerseCard>
+  )
+}
+
+/** The hero verse: Katha 1.3.14, which his best-known line adapts, with his line as the meaning. */
+const ARISE = { sa: 'उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत ।', iast: 'uttiṣṭhata jāgrata prāpya varān nibodhata |', label: { en: 'Katha Upanishad 1.3.14', hi: 'कठोपनिषद 1.3.14' } }
+
 const T = {
   en: {
+    cta: 'Read the lines',
     crumbs: [{ label: 'Home', href: '/' }, { label: 'Vivekananda quotes' }],
     meta: '61 lines, each checked against the Complete Works. Updated 30 October 2026.',
     themes: 'Read by theme',
@@ -39,6 +61,7 @@ const T = {
     seeCheck: 'Read the check',
   },
   hi: {
+    cta: 'वचन पढ़ें',
     crumbs: [{ label: 'होम', href: '/' }, { label: 'स्वामी विवेकानंद के विचार' }],
     meta: '61 वचन, हर एक कम्प्लीट वर्क्स से मिलाया हुआ। 30 अक्टूबर 2026 को अपडेट।',
     themes: 'विषय के हिसाब से',
@@ -70,23 +93,16 @@ export default function VivHub({ locale }: { locale: Locale }) {
   const c = VIV_HUB[locale]
   const path = locale === 'hi' ? VIV_PATH_HI : VIV_PATH
   const pageKey = locale === 'hi' ? 'viv-hub-hi' : 'viv-hub-en'
-  const pageName = locale === 'hi' ? 'Vivekananda Quotes Hub HI' : 'Vivekananda Quotes Hub EN'
   const lines = vivLines()
   const byPrimary = (th: VivTheme) => lines.filter((l) => l.themes[0] === th)
   const checks = vivChecks()
   const flagged = checks.filter((x) => x.verdict !== 'in-his-words')
   const confirmed = checks.filter((x) => x.verdict === 'in-his-words')
   const checkByLine = new Map(checks.filter((x) => x.hubLine).map((x) => [x.hubLine as string, x.slug]))
+  const arise = vivLine('arise-awake')
   let pos = 0
 
   const ld = [
-    ldBreadcrumb([
-      { name: 'Wisdom', path: '/' },
-      {
-        name: locale === 'hi' ? 'स्वामी विवेकानंद के विचार' : 'Vivekananda quotes',
-        path,
-      },
-    ]),
     ldArticle({
       headline: c.h1,
       description: c.description,
@@ -96,7 +112,6 @@ export default function VivHub({ locale }: { locale: Locale }) {
       about: 'Swami Vivekananda',
       image: cardOg('viv-arise-awake', locale),
     }),
-    ldFaq(c.faq),
     ldItemList(
       c.h1,
       lines.map((l) =>
@@ -113,121 +128,115 @@ export default function VivHub({ locale }: { locale: Locale }) {
   ]
 
   return (
-    <Shell hub="vivekananda" locale={locale} fonts={tiroSa.variable}>
-      <BlogTracker pageName={pageName} />
-      {ld.map((d, i) => (
-        <JsonLd key={i} data={d} />
-      ))}
-      <Head
-        crumbs={t.crumbs}
+    <>
+      <PageTracker pageName={locale === 'hi' ? 'Vivekananda Quotes Hub HI' : 'Vivekananda Quotes Hub'} />
+      <JsonLd data={ld} />
+      <PageHero
         locale={locale}
+        crumbs={[{ label: t.crumbs[1].label, href: path }]}
         eyebrow={t.meta}
-        h1={c.h1}
-        promise={c.promise}
-        quick={c.quick}
-        chips={[
-          ...VIV_THEMES.map((th) => ({
-            href: `#${th}`,
-            label: locale === 'hi' ? THEME_HI[th] : VIV_THEME_COPY[th].label,
-          })),
-          { href: '#gita', label: t.jumpBridge },
-          { href: '#did-he-say', label: t.jumpChecks },
-        ]}
+        title={c.h1}
+        sub={c.promise}
+        actions={[{ href: `#${VIV_THEMES[0]}`, label: t.cta, location: 'hub_hero_lines' }]}
+        below={
+          <>
+            <p id="quick-answer" className="fx-quick">
+              {c.quick}
+            </p>
+            <JumpChips
+              locale={locale}
+              items={[
+                ...VIV_THEMES.map((th) => ({
+                  href: `#${th}`,
+                  label: locale === 'hi' ? THEME_HI[th] : VIV_THEME_COPY[th].label,
+                })),
+                { href: '#gita', label: t.jumpBridge },
+                { href: '#did-he-say', label: t.jumpChecks },
+              ]}
+            />
+          </>
+        }
+        verse={
+          arise
+            ? {
+                label: ARISE.label[locale],
+                original: ARISE.sa,
+                iast: ARISE.iast,
+                meaning: locale === 'hi' ? arise.meaning.hi : arise.text,
+                source: chipText(arise.source, locale),
+              }
+            : undefined
+        }
       />
 
-      <div className="qp-sections">
-        {VIV_THEMES.map((th, si) => (
-          <Sec
-            key={th}
-            id={th}
-            hid={`${th}-h`}
-            heading={locale === 'hi' ? THEME_HI[th] : VIV_THEME_COPY[th].label}
-            intro={
-              <>
-                {THEME_INTRO[th][locale]}{' '}
-                {locale === 'en' && (
-                  <a href={vivThemePath(th)} data-mp-location={`theme_${th}`}>
-                    {`All ${VIV_THEME_COPY[th].label.toLowerCase()} lines`}
-                  </a>
-                )}
-              </>
-            }
-          >
-            <div className="qp-cards">
-              {byPrimary(th).map((l) => {
-                pos += 1
-                const slug = checkByLine.get(l.slug)
-                return (
-                  <VivCard
-                    key={l.id}
-                    drawer={vivDrawer(l, locale)}
-                    meaning={locale === 'hi' ? l.meaning.hi : undefined}
-                    meaningLang="hi"
-                    cardId={l.card ? l.id : undefined}
-                    locale={locale}
-                    pageName={pageName}
-                    pageKey={pageKey}
-                    position={pos}
-                    section={th}
-                    shareText={vivShareText(l, locale, path)}
-                    checkHref={slug && locale === 'en' ? vivCheckPath(slug) : undefined}
-                  />
-                )
-              })}
-            </div>
-            {si === 0 && (
-              <NextPanel heading={t.nextH}>
-                <FxNextStep hub="vivekananda" locale={locale} pageName={pageName} pageKey={pageKey} placement="mid" />
-              </NextPanel>
-            )}
-          </Sec>
-        ))}
+      {VIV_THEMES.map((th, si) => (
+        <Section
+          key={th}
+          id={th}
+          tone={si % 2 ? 'band' : 'default'}
+          width="narrow"
+          title={locale === 'hi' ? THEME_HI[th] : VIV_THEME_COPY[th].label}
+          intro={
+            <>
+              {THEME_INTRO[th][locale]}{' '}
+              {locale === 'en' && (
+                <a className="sx-link" href={vivThemePath(th)} data-mp-location={`theme_${th}`}>
+                  {`All ${VIV_THEME_COPY[th].label.toLowerCase()} lines`}
+                </a>
+              )}
+            </>
+          }
+        >
+          <VerseList>
+            {byPrimary(th).map((l) => {
+              pos += 1
+              const slug = checkByLine.get(l.slug)
+              return (
+                <VivVerse
+                  key={l.id}
+                  as="li"
+                  drawer={vivDrawer(l, locale)}
+                  meaning={locale === 'hi' ? l.meaning.hi : undefined}
+                  meaningLang="hi"
+                  cardId={l.card ? l.id : undefined}
+                  locale={locale}
+                  pageKey={pageKey}
+                  position={pos}
+                  section={th}
+                  shareText={vivShareText(l, locale, path)}
+                  checkHref={slug && locale === 'en' ? vivCheckPath(slug) : undefined}
+                />
+              )
+            })}
+          </VerseList>
+          {si === 0 && <NextPanel heading={t.nextH} hub="vivekananda" locale={locale} pageKey={pageKey} />}
+        </Section>
+      ))}
 
-        <Sec id="gita" hid="gita-h" heading={t.bridgeH} intro={t.bridgeIntro}>
-          <div className="qp-cards">
-            {vivBridge().map((b) => (
-              <div key={`${b.chapter}-${b.verse}`} className="qc fx-card rv">
-                <p className="qc-sa" lang="sa">
-                  {b.sanskritLine}
-                </p>
-                <p className="fx-bridge-his" lang="en">
-                  &ldquo;{b.his}&rdquo;
-                </p>
-                <p className="fx-bridge-note">{b.note[locale]}</p>
-                <p className="fx-bridge-foot">
-                  <span lang="en">{`Complete Works vol ${b.source.volume}, ${b.source.work}`}</span>
-                  <a className="fx-gita" href={`${locale === 'hi' ? '/hi' : ''}/gita/chapter/${b.chapter}/verse/${b.verse}`} data-mp-location="gita_bridge">
-                    {t.readVerse(b.chapter, b.verse)}
-                  </a>
-                </p>
-              </div>
-            ))}
-          </div>
-        </Sec>
-      </div>
+      <Section id="gita" width="narrow" title={t.bridgeH} intro={t.bridgeIntro}>
+        <VerseList>
+          {vivBridge().map((b) => (
+            <VivGitaCard key={`${b.chapter}-${b.verse}`} b={b} locale={locale} readLabel={t.readVerse(b.chapter, b.verse)} />
+          ))}
+        </VerseList>
+      </Section>
 
-      <section id="did-he-say" className="qfakes" aria-labelledby="checks-h">
-        <div className="qp-section-head rv">
-          <h2 id="checks-h" className="qp-h2">
-            {t.checksH}
-          </h2>
-          <p className="qp-intro">{t.checksIntro}</p>
-        </div>
-        <div className="qfakes-list">
+      <Section id="did-he-say" tone="band" width="narrow" title={t.checksH} intro={t.checksIntro}>
+        <div className="fx-fakes">
           {flagged.map((x) => {
             const real = checkDrawer(x, locale)
             return (
-              <div key={x.slug} className="qfake rv">
+              <div key={x.slug} className="fx-fake rv">
                 <p>
                   <span className="fx-stamp" data-verdict={x.verdict}>
                     {VERDICT_LABEL[x.verdict][locale]}
                   </span>
                 </p>
-                <p className="qfake-line" lang="en">
+                <p className="fx-fake-line" lang="en">
                   <s>&ldquo;{x.shared}&rdquo;</s>
                 </p>
                 {x.note && (
-                  <p className="qfake-origin" lang={locale}>
+                  <p className="fx-fake-origin" lang={locale}>
                     {x.note[locale]}
                   </p>
                 )}
@@ -240,7 +249,7 @@ export default function VivHub({ locale }: { locale: Locale }) {
                 )}
                 {locale === 'en' && (
                   <p>
-                    <a href={vivCheckPath(x.slug)} className="fx-link" data-mp-location="fact_check_list">
+                    <a href={vivCheckPath(x.slug)} className="sx-link" data-mp-location="fact_check_list">
                       {t.seeCheck}
                     </a>
                   </p>
@@ -259,13 +268,13 @@ export default function VivHub({ locale }: { locale: Locale }) {
             ))}
           </ul>
         </details>
-      </section>
+      </Section>
 
-      <DailyBand heading={t.nextH}>
-        <FxNextStep hub="vivekananda" locale={locale} pageName={pageName} pageKey={pageKey} placement="end" />
-      </DailyBand>
+      <NextBand heading={t.nextH} hub="vivekananda" locale={locale} pageKey={pageKey} />
 
-      <Faq items={c.faq} heading={t.faq} />
+      <Section id="faq" width="narrow" title={t.faq}>
+        <Faq items={c.faq} locale={locale} />
+      </Section>
 
       <Method heading={t.method}>
         {locale === 'en' ? (
@@ -293,6 +302,7 @@ export default function VivHub({ locale }: { locale: Locale }) {
 
       <Related
         heading={t.related}
+        locale={locale}
         links={
           locale === 'en'
             ? [
@@ -326,6 +336,6 @@ export default function VivHub({ locale }: { locale: Locale }) {
               ]
         }
       />
-    </Shell>
+    </>
   )
 }

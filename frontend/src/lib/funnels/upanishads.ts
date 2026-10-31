@@ -10,11 +10,12 @@ import mandukya from '@/content/funnels/upanishads/texts/mandukya.json'
 import katha from '@/content/funnels/upanishads/texts/katha.json'
 import passagesJson from '@/content/funnels/upanishads/passages.json'
 import cardsJson from '@/content/funnels/upanishads/cards.json'
-import type { Locale, Quote, QuoteView } from '@/lib/quotes-shared'
+import type { Quote, QuoteView } from '@/lib/quotes-shared'
 import { toView } from '@/lib/quotes-shared'
+import type { Locale } from '@/lib/locale'
+import { AUTHOR_LD, PUBLISHER_LD, SITE, abs, pageMeta } from '@/lib/seo'
 
-export const FUNNEL = 'upanishads'
-export const SITE = 'https://wisdomquotes.in'
+export { SITE }
 export const UPDATED = '2026-10-30'
 export const DISCLOSURE_EN = 'Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, under human review.'
 
@@ -111,6 +112,14 @@ export const pageKey = (s: string) =>
 export const gitaHref = (c: number, v: number, locale: Locale = 'en') =>
   `${locale === 'hi' ? '/hi' : ''}/gita/chapter/${c}/verse/${v}`
 
+/** A Sanskrit passage as padas: one row per line and per danda, the danda kept with its word. */
+export const padas = (s: string): string[] =>
+  s
+    .split('\n')
+    .flatMap((l) => l.split(/(?<=[।|])\s+(?=\S)/u))
+    .map((l) => l.trim().replace(/\s+([।॥|]+)/gu, '\u00a0$1'))
+    .filter(Boolean)
+
 // ── SEO ─────────────────────────────────────────────────────────────────────
 
 type MetaInput = {
@@ -124,57 +133,20 @@ type MetaInput = {
   index?: boolean
 }
 
+/**
+ * pageMeta (lib/seo) plus what this funnel has always sent: a self hreflang when there is no twin,
+ * the share card as the OG image with its size, and an explicit robots tag.
+ */
 export function upMeta({ title, description, path, locale = 'en', twin, ogCard, index = true }: MetaInput): Metadata {
-  const url = `${SITE}${path}`
-  const enPath = locale === 'en' ? path : twin
-  const hiPath = locale === 'hi' ? path : twin
-  const languages: Record<string, string> = {}
-  if (twin && enPath && hiPath) {
-    languages.en = `${SITE}${enPath}`
-    languages['en-IN'] = `${SITE}${enPath}`
-    languages.hi = `${SITE}${hiPath}`
-    languages['hi-IN'] = `${SITE}${hiPath}`
-    languages['x-default'] = `${SITE}${enPath}`
-  } else {
-    languages[locale] = url
-    languages['x-default'] = url
-  }
-  const image = ogCard
-    ? { url: `${SITE}${cardImage(ogCard, 'post', locale)}`, width: 1080, height: 1350 }
-    : { url: `${SITE}/og-image.webp`, width: 1200, height: 630 }
+  const url = abs(path)
+  const pair = twin ? (locale === 'en' ? { en: path, hi: twin } : { en: twin, hi: path }) : undefined
+  const image = ogCard ? { url: abs(cardImage(ogCard, 'post', locale)), width: 1080, height: 1350 } : { url: `${SITE}/og-image.webp`, width: 1200, height: 630 }
+  const m = pageMeta({ title, description, path, locale, twin: pair, ogImage: image.url, index })
   return {
-    title: { absolute: title },
-    description,
-    alternates: { canonical: url, languages },
-    openGraph: {
-      title,
-      description,
-      url,
-      type: 'article',
-      siteName: 'Wisdom',
-      locale: locale === 'hi' ? 'hi_IN' : 'en_IN',
-      images: [image],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: [image.url] },
+    ...m,
+    alternates: pair ? m.alternates : { canonical: url, languages: { [locale]: url, 'x-default': url } },
+    openGraph: { ...m.openGraph, images: [image] },
     robots: index ? { index: true, follow: true } : { index: false, follow: true },
-  }
-}
-
-export type Crumb = { name: string; path: string }
-
-export function breadcrumbLd(items: Crumb[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: `${SITE}${c.path}` })),
-  }
-}
-
-export function faqLd(faq: { q: string; a: string }[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
   }
 }
 
@@ -185,11 +157,11 @@ export function articleLd(o: { headline: string; description: string; path: stri
     headline: o.headline,
     description: o.description,
     inLanguage: o.locale === 'hi' ? 'hi-IN' : 'en',
-    mainEntityOfPage: `${SITE}${o.path}`,
+    mainEntityOfPage: abs(o.path),
     datePublished: UPDATED,
     dateModified: UPDATED,
-    author: { '@type': 'Person', name: 'Ankur Shukla', url: `${SITE}/about` },
-    publisher: { '@type': 'Organization', name: 'Wisdom', logo: { '@type': 'ImageObject', url: `${SITE}/assets/new-light-logo.webp` } },
+    author: AUTHOR_LD,
+    publisher: PUBLISHER_LD,
     citation: o.citation,
     ...(o.about ? { about: o.about } : {}),
   }

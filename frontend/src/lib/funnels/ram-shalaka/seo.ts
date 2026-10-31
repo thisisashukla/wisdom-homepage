@@ -1,33 +1,18 @@
-/** Ram Shalaka metadata and JSON-LD builders. */
+/**
+ * Ram Shalaka metadata and JSON-LD builders (funnel-specific schema on top of lib/seo).
+ * BreadcrumbList comes from PageHero; these return the rest.
+ */
 import type { Metadata } from 'next'
-import {
-  SITE,
-  cardUrl,
-  firstHalf,
-  getLines,
-  lineCopy,
-  pageCopy,
-  toolHref,
-  type RsLine,
-  type RsLocale,
-} from './index'
+import type { Locale } from '@/lib/locale'
+import { AUTHOR_LD, PUBLISHER_LD, SITE, faqLd } from '@/lib/seo'
+import { cardUrl, firstHalf, getLines, lineCopy, pageCopy, toolHref, type RsLine } from './index'
 
 const PUBLISHED = '2026-10-30'
 const MODIFIED = '2026-10-31'
 
-export const AUTHOR = {
-  '@type': 'Person',
-  name: 'Ankur Shukla',
-  url: `${SITE}/about`,
-  sameAs: ['https://www.linkedin.com/in/thisisashukla/', 'https://x.com/thisisashukla'],
-}
-export const PUBLISHER = {
-  '@type': 'Organization',
-  name: 'Wisdom',
-  url: SITE,
-  logo: { '@type': 'ImageObject', url: `${SITE}/assets/new-light-logo.webp` },
-}
-export const MANAS_CITATION = {
+const AUTHOR = { ...AUTHOR_LD, sameAs: ['https://www.linkedin.com/in/thisisashukla/', 'https://x.com/thisisashukla'] }
+const PUBLISHER = PUBLISHER_LD
+const MANAS_CITATION = {
   '@type': 'Book',
   name: 'Shri Ramcharitmanas',
   alternateName: 'श्रीरामचरितमानस',
@@ -44,7 +29,7 @@ const langs = () => ({
   'x-default': `${SITE}/ram-shalaka`,
 })
 
-export function toolMetadata(locale: RsLocale): Metadata {
+export function toolMetadata(locale: Locale): Metadata {
   const c = pageCopy(locale)
   const url = `${SITE}${toolHref(locale)}`
   const image = `${SITE}${cardUrl(2, 'post', locale)}`
@@ -66,19 +51,11 @@ export function toolMetadata(locale: RsLocale): Metadata {
   }
 }
 
-export function toolJsonLd(locale: RsLocale): object[] {
+export function toolJsonLd(locale: Locale): object[] {
   const c = pageCopy(locale)
   const url = `${SITE}${toolHref(locale)}`
   const lines = getLines()
   return [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Wisdom', item: SITE },
-        { '@type': 'ListItem', position: 2, name: c.crumbSelf, item: url },
-      ],
-    },
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -123,12 +100,7 @@ export function toolJsonLd(locale: RsLocale): object[] {
       publisher: PUBLISHER,
       about: MANAS_CITATION,
     },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      inLanguage: locale,
-      mainEntity: c.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-    },
+    { ...faqLd(c.faq), inLanguage: locale },
   ]
 }
 
@@ -179,15 +151,6 @@ export function lineJsonLd(l: RsLine): object[] {
   const url = `${SITE}/hi/ram-shalaka/${l.slug}`
   const speaker = { '@type': 'Person', name: l.who.en.split(',')[0].split(' to ')[0].split(' over ')[0] }
   return [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Wisdom', item: SITE },
-        { '@type': 'ListItem', position: 2, name: 'श्रीराम शलाका', item: `${SITE}/hi/ram-shalaka` },
-        { '@type': 'ListItem', position: 3, name: firstHalf(l), item: url },
-      ],
-    },
     {
       '@context': 'https://schema.org',
       '@type': 'Article',

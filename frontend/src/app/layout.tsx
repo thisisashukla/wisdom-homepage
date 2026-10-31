@@ -3,6 +3,9 @@ import { Playfair_Display, Inter, Noto_Sans_Devanagari } from 'next/font/google'
 import './globals.css'
 import { AuthProvider } from '@/context/AuthContext'
 import MixpanelProvider from '@/components/MixpanelProvider'
+import Motion from '@/components/site/Motion'
+import { scriptureFontVars } from '@/lib/fonts'
+import { SCRIPT_BOOT } from '@/lib/scriptBoot'
 
 // Self-host Google Fonts via next/font — eliminates render-blocking fetches
 // to fonts.googleapis.com and fonts.gstatic.com, and preloads the primary
@@ -36,9 +39,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://wisdomquotes.in'),
   title: {
     template: '%s | Wisdom',
-    default: 'Wisdom — Bhagavad Gita, Sanskrit Shlokas & Wisdom Quotes',
+    default: 'Wisdom: Bhagavad Gita, Sanskrit Shlokas and Wisdom Quotes',
   },
-  description: 'Read the Bhagavad Gita verse by verse — Sanskrit shlokas with Hindi and English meaning, wisdom quotes, and daily spiritual practice. Free, ad-free, beautifully presented.',
+  description: 'Read the Bhagavad Gita verse by verse in Sanskrit, with Hindi and English meaning, and find the verses for what you are going through. Free, no ads.',
   applicationName: 'Wisdom',
   authors: [{ name: 'Ankur Shukla', url: 'https://wisdomquotes.in/about' }],
   creator: 'Ankur Shukla',
@@ -93,9 +96,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} ${notoSansDevanagari.variable}`}
+      className={`${playfair.variable} ${inter.variable} ${notoSansDevanagari.variable} ${scriptureFontVars}`}
+      suppressHydrationWarning
     >
       <head>
+        {/* Devanagari or IAST, chosen once for the whole site (lib/script.ts); applied before paint. */}
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_BOOT }} />
         <link rel="icon" href="/assets/new-light-logo.webp" />
         {/* Ties this site to the iOS app for App Store rich results & smart banner. */}
         <meta
@@ -107,6 +113,7 @@ export default function RootLayout({
         <AuthProvider>
           <MixpanelProvider>
             {children}
+            <Motion />
           </MixpanelProvider>
         </AuthProvider>
       </body>

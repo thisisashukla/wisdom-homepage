@@ -13,7 +13,7 @@ import './card.css'
 export type NextStepSheetProps = {
   action: SheetAction
   locale: Locale
-  pageName: string
+  pageName?: string
   pageKey?: string
   onClose: () => void
   startSituation?: string

@@ -1,3 +1,4 @@
+import type { Locale } from '@/lib/locale'
 import Diya from './Diya'
 
 const ITEMS = {
@@ -15,7 +16,7 @@ const ITEMS = {
   ],
 } as const
 
-export default function LampLegend({ locale }: { locale: 'en' | 'hi' }) {
+export default function LampLegend({ locale }: { locale: Locale }) {
   return (
     <ul className="rl-legend" aria-label={locale === 'hi' ? 'दीयों का मतलब' : 'What the lamps mean'}>
       {ITEMS[locale].map((it) => (

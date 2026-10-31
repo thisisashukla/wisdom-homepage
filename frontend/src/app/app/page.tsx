@@ -292,7 +292,7 @@ export default function AppLandingPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
 
-      <Nav pageName="App Landing" />
+      <Nav />
 
       <main className="ap" data-tone="night">
         <noscript>

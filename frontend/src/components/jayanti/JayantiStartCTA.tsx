@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { trackLinkClick } from '@/lib/mixpanel'
+import { Button } from '@/components/site/Button'
 import { daysIncl, chapterFor } from './jayantiDate'
 
 const TOTAL_VERSES = 700
@@ -34,16 +34,17 @@ function ctaFor(n: number | null): Cta {
   return { label: 'Start with chapter 1', href: '/gita/chapter/1', line: 'One chapter a day, whenever you begin.', key: 'after' }
 }
 
-export default function JayantiStartCTA({ className, location }: { className?: string; location: string }) {
+/**
+ * The hero's main button: today's chapter from the reader's own date (kit primary Button; the click is
+ * Link Clicked { location: <location>_<key> } through data-mp-location), with the line under it.
+ */
+export default function JayantiStartCTA({ location }: { location: string }) {
   const [n, setN] = useState<number | null>(null)
   useEffect(() => setN(daysIncl(new Date())), [])
   const c = ctaFor(n)
-  const loc = `${location}_${c.key}`
   return (
     <div className="gj-start">
-      <a href={c.href} className={className} data-mp-location={loc} onClick={() => trackLinkClick('Gita Jayanti', loc, c.href)}>
-        {c.label}
-      </a>
+      <Button href={c.href} label={c.label} location={`${location}_${c.key}`} variant="primary" />
       <p className="gj-start-line">{c.line}</p>
     </div>
   )

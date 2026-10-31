@@ -8,7 +8,7 @@ import ReadingPlansHub from '../ReadingPlansHub'
  */
 export const metadata: Metadata = {
   description:
-    'Free Bhagavad Gita reading plans: seven verses each on overthinking, stress, grief, anger, guilt, gratitude, joy, new beginnings and more. Plus the whole Gita in 18 days.',
+    'Free Bhagavad Gita reading plans, seven verses each, for overthinking, stress, grief, anger, guilt, joy and more, plus the whole Gita in 18 days.',
   openGraph: { title: 'Bhagavad Gita Reading Plans: 7 Verses for What You Face', url: 'https://wisdomquotes.in/reading-plans', type: 'website', siteName: 'Wisdom', images: [{ url: 'https://wisdomquotes.in/og/reading-plans.webp', width: 1200, height: 630 }] },
   title: { absolute: 'Bhagavad Gita Reading Plans: 7 Verses for What You Face | Wisdom' },
   alternates: { canonical: 'https://wisdomquotes.in/reading-plans' },

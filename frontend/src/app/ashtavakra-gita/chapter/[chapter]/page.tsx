@@ -1,23 +1,11 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import FxFrame from '@/components/funnels/other-gitas/FxFrame'
-import ScriptToggle from '@/components/funnels/other-gitas/ScriptToggle'
-import VerseLines from '@/components/funnels/other-gitas/VerseLines'
-import NextBand from '@/components/funnels/other-gitas/NextBand'
-import FxHero from '@/components/funnels/other-gitas/FxHero'
-import FxSources from '@/components/funnels/other-gitas/FxSources'
-import {
-  agChapterPath,
-  agVersePath,
-  chapterVerses,
-  getChapter,
-  getChapters,
-  HUB_PATH,
-  isIndexable,
-  speakerLabel,
-} from '@/lib/funnels/other-gitas/data'
-import { DISCLOSURE, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
-import { articleLd, breadcrumbLd, ldScript, pageMeta } from '@/lib/funnels/other-gitas/seo'
+import PageTracker from '@/components/BlogTracker'
+import { JsonLd, NextStep, PageHero, ScriptToggle, Section, VerseCard, VerseList } from '@/components/site'
+import PrevNext from '@/components/funnels/other-gitas/PrevNext'
+import { agChapterPath, agVersePath, chapterVerses, getChapter, getChapters, HUB_PATH, isIndexable, speakerLabel, verseCardOf } from '@/lib/funnels/other-gitas/data'
+import { DISCLOSURE, NEXT_COPY, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
+import { articleLd, pageMeta } from '@/lib/funnels/other-gitas/seo'
 
 type Params = { chapter: string }
 
@@ -30,7 +18,7 @@ export function generateStaticParams(): Params[] {
 function quick(n: number): string {
   const ch = getChapter(n)!
   const who = n === 1 ? 'King Janaka asks one question and Ashtavakra answers' : `${speakerLabel(ch.speaker)} speaks`
-  return `Chapter ${n} of the Ashtavakra Gita, "${ch.title}", has ${ch.count} verses. ${who}. ${ch.gist} Every verse is below in Sanskrit and in Wisdom's plain English.`
+  return `Chapter ${n} of the Ashtavakra Gita, "${ch.title}", has ${ch.count} verses. ${who}. ${ch.gist} Read it a few verses at a time.`
 }
 
 export function generateMetadata({ params }: { params: Params }): Metadata {
@@ -51,119 +39,82 @@ export default function AshtavakraChapterPage({ params }: { params: Params }) {
   const path = agChapterPath(n)
   const prev = getChapter(n - 1)
   const next = getChapter(n + 1)
-
-  const ld = [
-    breadcrumbLd([
-      { name: 'Ashtavakra Gita', path: HUB_PATH },
-      { name: `Chapter ${n}`, path },
-    ]),
-    articleLd({ path, headline: `Ashtavakra Gita chapter ${n}: ${ch.title}`, description: ch.gist, about: 'Ashtavakra Gita' }),
-  ]
-
+  const ld = articleLd({ path, headline: `Ashtavakra Gita chapter ${n}: ${ch.title}`, description: ch.gist, about: 'Ashtavakra Gita' })
   const first = verses[0]
 
   return (
-    <FxFrame pageKey={pageKey}>
-      {ld.map((d, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
-      ))}
-      <main>
-        <FxHero
-          crumbs={[{ label: 'Ashtavakra Gita', href: HUB_PATH }, { label: `Chapter ${n}` }]}
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Ashtavakra Gita Chapter" />
+      <main className="fx-og" lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Ashtavakra Gita', href: HUB_PATH },
+            { label: `Chapter ${n}`, href: path },
+          ]}
           eyebrow={`Chapter ${n} of 20`}
           title={
             <>
               Ashtavakra Gita chapter {n}: {ch.title}
             </>
           }
-          facts={[`${ch.count} verses`, speakerLabel(ch.speaker), 'Sanskrit and plain English']}
-          cta={{ href: `#v${first.v}`, label: `Read from verse ${n}.${first.v}`, location: `ag_ch_${n}_hero_start` }}
-          art={
-            <div className="og-hero-verse" aria-hidden="true">
-              <p className="og-hero-ref">
-                Verse {n}.{first.v}
-              </p>
-              <VerseLines verse={first} />
-              <hr className="og-rule" />
-            </div>
-          }
+          facts={[`${ch.count} verses`, speakerLabel(ch.speaker)]}
+          actions={[{ href: `#v${first.v}`, label: `Read from verse ${n}.${first.v}`, location: `ag_ch_${n}_hero_start` }]}
+          verse={{ ...verseCardOf(first), label: `Verse ${n}.${first.v}` }}
         />
 
-        <section className="og-intro">
-          <div className="wrap og-col">
-            <div className="og-prose">
-              <p id="quick-answer" className="og-lead">
-                {quick(n)}
-              </p>
-            </div>
+        <Section spacing="tight" width="narrow">
+          <div className="sx-prose rv">
+            <p id="quick-answer">{quick(n)}</p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section" aria-labelledby="all-verses">
-          <div className="wrap og-col">
-            <div className="og-list-head">
-              <div className="og-head">
-                <h2 className="heading" id="all-verses">
-                  All {ch.count} verses
-                </h2>
-              </div>
-              <ScriptToggle page={pageKey} />
-            </div>
-            <ol className="og-vlist">
-              {verses.map((x) => (
-                <li key={x.id} id={`v${x.v}`} className="og-vcard rv">
-                  <div className="og-vcard-head">
-                    <a className="og-vcard-ref" href={agVersePath(x.c, x.v)}>
-                      {x.c}.{x.v}
+        <Section id="all-verses" track="verses" title={`All ${ch.count} verses`} width="narrow">
+          <div className="og-list-tools">
+            <ScriptToggle />
+          </div>
+          <VerseList className="og-vlist">
+            {verses.map((x) => (
+              <VerseCard
+                key={x.id}
+                as="li"
+                id={`v${x.v}`}
+                rv
+                size="compact"
+                {...verseCardOf(x)}
+                source={`${x.c}.${x.v}`}
+                sourceHref={agVersePath(x.c, x.v)}
+              >
+                {isIndexable(x) ? (
+                  <p className="og-vtag-row">
+                    <a className="og-vtag" href={agVersePath(x.c, x.v)}>
+                      Word meanings and notes
                     </a>
-                    {isIndexable(x) && (
-                      <a className="og-vcard-tag" href={agVersePath(x.c, x.v)}>
-                        Word meanings and notes
-                      </a>
-                    )}
-                  </div>
-                  <VerseLines verse={x} />
-                  <hr className="og-rule" aria-hidden="true" />
-                </li>
-              ))}
-            </ol>
+                  </p>
+                ) : undefined}
+              </VerseCard>
+            ))}
+          </VerseList>
 
-            <nav className="gita-pn og-pn-ch" aria-label="Previous and next chapter">
-              {prev ? (
-                <a
-                  className="gita-pn-link"
-                  href={agChapterPath(prev.n)}
-                  data-fx-event="Verse Nav Clicked"
-                  data-fx-props={JSON.stringify({ direction: 'prev', from: `ch${n}`, to: `ch${prev.n}` })}
-                >
-                  <div className="gita-pn-label">← Chapter {prev.n}</div>
-                  <div className="gita-pn-target">{prev.title}</div>
-                </a>
-              ) : (
-                <span />
-              )}
-              {next && (
-                <a
-                  className="gita-pn-link right"
-                  href={agChapterPath(next.n)}
-                  data-fx-event="Verse Nav Clicked"
-                  data-fx-props={JSON.stringify({ direction: 'next', from: `ch${n}`, to: `ch${next.n}` })}
-                >
-                  <div className="gita-pn-label">Chapter {next.n} →</div>
-                  <div className="gita-pn-target">{next.title}</div>
-                </a>
-              )}
-            </nav>
+          <PrevNext
+            label="Previous and next chapter"
+            from={`ch${n}`}
+            prev={prev ? { href: agChapterPath(prev.n), label: `← Chapter ${prev.n}`, target: prev.title, to: `ch${prev.n}` } : null}
+            next={next ? { href: agChapterPath(next.n), label: `Chapter ${next.n} →`, target: next.title, to: `ch${next.n}` } : null}
+          />
+        </Section>
+
+        <Section tone="band" track="next_step" width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={pageKey} placement="end" copy={NEXT_COPY} />
           </div>
-        </section>
+        </Section>
 
-        <NextBand pageKey={pageKey} />
-
-        <FxSources>
+        <Section className="og-sources" title="Sources and method" width="narrow" spacing="tight">
           <p>{SOURCES_NOTE}</p>
           <p>{DISCLOSURE}</p>
-        </FxSources>
+        </Section>
       </main>
-    </FxFrame>
+    </>
   )
 }

@@ -1,6 +1,5 @@
 /** Ramayana funnel: shared types. Client-safe (no fs). */
 
-export type Locale = 'en' | 'hi'
 export type L10n = { en: string; hi: string }
 
 export type LineText = 'vr' | 'rcm' | 'bg'

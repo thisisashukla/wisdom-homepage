@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import FxFrame from '@/components/funnels/other-gitas/FxFrame'
+import PageTracker from '@/components/BlogTracker'
+import { GitaBridge, JsonLd, LinkCards, NextStep, PageHero, ScriptToggle, Section, VerseCard } from '@/components/site'
 import HoldStill from '@/components/funnels/other-gitas/HoldStill'
-import ScriptToggle from '@/components/funnels/other-gitas/ScriptToggle'
-import VerseLines from '@/components/funnels/other-gitas/VerseLines'
-import BridgeLink from '@/components/funnels/other-gitas/BridgeLink'
-import NextBand from '@/components/funnels/other-gitas/NextBand'
-import FxSources from '@/components/funnels/other-gitas/FxSources'
+import PrevNext from '@/components/funnels/other-gitas/PrevNext'
 import {
   abs,
   agChapterPath,
@@ -15,14 +12,16 @@ import {
   getChapter,
   getVerse,
   getVerses,
+  gitaVersePath,
   HUB_PATH,
   isIndexable,
   neighbours,
   speakerLabel,
+  verseCardOf,
   verseTitle,
 } from '@/lib/funnels/other-gitas/data'
-import { DISCLOSURE, FAMOUS, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
-import { AG_CITATION, articleLd, breadcrumbLd, cardOg, ldScript, pageMeta } from '@/lib/funnels/other-gitas/seo'
+import { DISCLOSURE, FAMOUS, NEXT_COPY, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
+import { AG_CITATION, articleLd, cardOg, pageMeta } from '@/lib/funnels/other-gitas/seo'
 
 type Params = { chapter: string; verse: string }
 
@@ -63,11 +62,6 @@ export default function AshtavakraVersePage({ params }: { params: Params }) {
   const who = x.speaker === 'janaka' ? 'King Janaka, to Ashtavakra' : 'Ashtavakra, to King Janaka'
 
   const ld = [
-    breadcrumbLd([
-      { name: 'Ashtavakra Gita', path: HUB_PATH },
-      { name: `Chapter ${x.c}`, path: agChapterPath(x.c) },
-      { name: `Verse ${ref}`, path },
-    ]),
     {
       '@context': 'https://schema.org',
       '@type': 'Quotation',
@@ -78,184 +72,143 @@ export default function AshtavakraVersePage({ params }: { params: Params }) {
       isPartOf: AG_CITATION,
       citation: `Ashtavakra Gita ${ref}`,
     },
-    ...(full
-      ? [articleLd({ path, headline: `Ashtavakra Gita ${ref}: meaning and commentary`, description: x.notice ?? x.en, about: 'Ashtavakra Gita' })]
-      : []),
+    ...(full ? [articleLd({ path, headline: `Ashtavakra Gita ${ref}: meaning and commentary`, description: x.notice ?? x.en, about: 'Ashtavakra Gita' })] : []),
   ]
 
+  // Section grounds alternate from the first section under the hero.
+  let band = false
+  const tone = () => ((band = !band) ? 'default' : 'band') as 'default' | 'band'
+
   return (
-    <FxFrame pageKey={pageKey}>
-      {ld.map((d, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
-      ))}
-      <main className="og-main">
-        <div data-fx-fade="">
-          <nav className="gita-crumb" aria-label="Breadcrumb">
-            <a href={HUB_PATH}>Ashtavakra Gita</a>
-            <span className="sep" aria-hidden="true">›</span>
-            <a href={agChapterPath(x.c)}>
-              Chapter {x.c}: {ch.title}
-            </a>
-            <span className="sep" aria-hidden="true">›</span>
-            <span>Verse {ref}</span>
-          </nav>
-          <header className="gv-hero-head">
-            <div className="gv-hero-eyebrow">The verse</div>
-            <h1 className="gita-h1 gv-hero-h1">
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Ashtavakra Gita Verse" />
+      <main className="fx-og" lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Ashtavakra Gita', href: HUB_PATH },
+            { label: `Chapter ${x.c}: ${ch.title}`, href: agChapterPath(x.c) },
+            { label: `Verse ${ref}`, href: path },
+          ]}
+          eyebrow="The verse"
+          title={
+            <>
               Ashtavakra Gita {ref}
               <span className="og-h1-sub">
                 Chapter {x.c}, Verse {x.v}
               </span>
-            </h1>
-            <div className="gv-hero-badges">
-              <span className="gv-hero-pill">{speakerLabel(x.speaker)}</span>
-            </div>
-            <p id="quick-answer" className="og-quick">
-              {x.quick}
-            </p>
-          </header>
-        </div>
-
-        <HoldStill
-          verseRef={ref}
-          page={pageKey}
-          after={<NextBand pageKey={pageKey} placement="hold" bare />}
-        >
-          <span className="gv-card-chip">The verse</span>
-          <div className="gv-diamonds" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-          </div>
-          <ScriptToggle page={pageKey} />
-          <VerseLines verse={x} keep />
-          <p className="og-speaker">{who}</p>
-          <hr className="og-rule fx-keep" aria-hidden="true" />
-          <div className="gv-card-attrib">Ashtavakra Gita · {ref}</div>
-        </HoldStill>
-
-        <div data-fx-fade="">
-          {full ? (
-            <>
-              <section className="og-sec rv">
-                <h2 className="gv-sechead">
-                  <span className="gv-sechead-label">What to notice</span>
-                </h2>
-                <div className="gv-insight">
-                  <span className="gv-insight-icon" aria-hidden="true">
-                    ✦
-                  </span>
-                  <p>{x.notice}</p>
-                </div>
-              </section>
-
-              <section className="og-sec rv">
-                <h2 className="gv-sechead">
-                  <span className="gv-sechead-label">Word by word</span>
-                </h2>
-                <dl className="gv-wbw-flow">
-                  {x.words!.map((w) => (
-                    <div key={w.w} className="gv-word">
-                      <dt className="gv-word-sa" lang="sa-Latn">
-                        {w.w}
-                      </dt>
-                      <dd className="gv-word-en">{w.m}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </section>
-
-              <section className="og-sec rv">
-                <div className="gv-cmnt">
-                  <span className="gv-cmnt-ghost" aria-hidden="true">
-                    {ref}
-                  </span>
-                  <div className="gv-cmnt-kicker">In plain words</div>
-                  <h2 className="gv-cmnt-h">Reading the verse</h2>
-                  <p className="gv-cmnt-p">{x.commentary}</p>
-                </div>
-              </section>
-
-              {x.bridge && (
-                <section className="og-sec rv">
-                  <h2 className="gv-sechead">
-                    <span className="gv-sechead-label">
-                      {x.bridge.kind === 'same' ? 'Same thread in the Bhagavad Gita' : 'Where the Bhagavad Gita differs'}
-                    </span>
-                  </h2>
-                  <BridgeLink from={ref} bridge={x.bridge} />
-                </section>
-              )}
             </>
-          ) : (
-            <section className="og-sec rv">
-              <div className="og-pending">
-                <p>
-                  Word meanings and a note for this verse are still being written. Read it in context on the{' '}
-                  <a href={agChapterPath(x.c)}>chapter {x.c} page</a>, or start with the verses in{' '}
-                  <a href={HUB_PATH}>where to begin</a>.
-                </p>
+          }
+          sub={<span id="quick-answer">{x.quick}</span>}
+          facts={[speakerLabel(x.speaker)]}
+          visual={
+            <HoldStill
+              verseRef={ref}
+              after={<NextStep locale="en" pageKey={pageKey} placement="hold" copy={NEXT_COPY} />}
+            >
+              <div className="og-hold-top">
+                <span className="og-hold-k">The verse</span>
+                <ScriptToggle size="compact" />
               </div>
-            </section>
-          )}
+              <VerseCard className="fx-keep" as="div" framed={false} size="hero" reveal {...verseCardOf(x)} />
+              <p className="og-speaker">{who}</p>
+              <hr className="og-rule fx-keep" aria-hidden="true" />
+              <p className="og-attrib">Ashtavakra Gita · {ref}</p>
+            </HoldStill>
+          }
+        />
 
-          <a href={agChapterPath(x.c)} className="og-chcard rv">
-            <div className="og-chcard-top">
-              <div className="og-chcard-k">Chapter {x.c} of 20</div>
-              <div className="og-chcard-h">{ch.title}</div>
-            </div>
-            <div className="og-chcard-b">
+        {full ? (
+          <>
+            <Section tone={tone()} track="notice" title="What to notice" width="narrow">
+              <p className="og-insight rv">{x.notice}</p>
+            </Section>
+
+            <Section tone={tone()} track="word_by_word" title="Word by word" width="narrow">
+              <dl className="og-words rv">
+                {x.words!.map((w) => (
+                  <div key={w.w} className="og-word">
+                    <dt lang="sa-Latn">{w.w}</dt>
+                    <dd>{w.m}</dd>
+                  </div>
+                ))}
+              </dl>
+            </Section>
+
+            <Section tone={tone()} track="commentary" eyebrow="In plain words" title="Reading the verse" width="narrow">
+              <div className="sx-prose rv">
+                <p>{x.commentary}</p>
+              </div>
+            </Section>
+
+            {x.bridge && (
+              <Section
+                tone={tone()}
+                track="gita_bridge"
+                title={x.bridge.kind === 'same' ? 'Same thread in the Bhagavad Gita' : 'Where the Bhagavad Gita differs'}
+                width="narrow"
+              >
+                <GitaBridge
+                  className="rv"
+                  href={gitaVersePath(x.bridge.c, x.bridge.v)}
+                  location="ag_verse_bridge"
+                  from={ref}
+                  label={`Bhagavad Gita ${x.bridge.c}.${x.bridge.v}`}
+                  why={x.bridge.note}
+                />
+              </Section>
+            )}
+          </>
+        ) : (
+          <Section tone={tone()} width="narrow">
+            <div className="og-pending rv">
               <p>
-                Chapter {x.c}, {ch.title}: {ch.gist}
+                Read this verse in context on the{' '}
+                <a href={agChapterPath(x.c)}>chapter {x.c} page</a>, or start with the verses in <a href={HUB_PATH}>where to begin</a>.
               </p>
-              <span className="og-chcard-go">Read all {ch.count} verses in this chapter →</span>
             </div>
-          </a>
+          </Section>
+        )}
 
-          <nav className="gita-pn" aria-label="Previous and next verse">
-            {prev ? (
-              <a
-                className="gita-pn-link"
-                href={agVersePath(prev.c, prev.v)}
-                data-fx-event="Verse Nav Clicked"
-                data-fx-props={JSON.stringify({ direction: 'prev', from: ref, to: `${prev.c}.${prev.v}` })}
-              >
-                <div className="gita-pn-label">← Previous</div>
-                <div className="gita-pn-target">
-                  {prev.c}.{prev.v}
-                </div>
-              </a>
-            ) : (
-              <span />
-            )}
-            {next && (
-              <a
-                className="gita-pn-link right"
-                href={agVersePath(next.c, next.v)}
-                data-fx-event="Verse Nav Clicked"
-                data-fx-props={JSON.stringify({ direction: 'next', from: ref, to: `${next.c}.${next.v}` })}
-              >
-                <div className="gita-pn-label">Next →</div>
-                <div className="gita-pn-target">
-                  {next.c}.{next.v}
-                </div>
-              </a>
-            )}
-          </nav>
-        </div>
+        <Section tone={tone()} track="chapter" width="narrow">
+          <LinkCards
+            items={[
+              {
+                href: agChapterPath(x.c),
+                kicker: `Chapter ${x.c} of 20`,
+                title: ch.title,
+                body: (
+                  <>
+                    Chapter {x.c}, {ch.title}: {ch.gist}
+                    <span className="og-go">Read all {ch.count} verses in this chapter →</span>
+                  </>
+                ),
+                location: 'ag_verse_chapter_card',
+              },
+            ]}
+          />
+          <PrevNext
+            label="Previous and next verse"
+            from={ref}
+            prev={prev ? { href: agVersePath(prev.c, prev.v), label: '← Previous', target: `${prev.c}.${prev.v}`, to: `${prev.c}.${prev.v}` } : null}
+            next={next ? { href: agVersePath(next.c, next.v), label: 'Next →', target: `${next.c}.${next.v}`, to: `${next.c}.${next.v}` } : null}
+          />
+        </Section>
 
-        <div className="og-verse-tail" data-fx-fade="">
-          <NextBand pageKey={pageKey} bare />
-          <p className="og-next-after">
+        <Section tone={tone()} track="next_step" width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={pageKey} placement="end" copy={NEXT_COPY} />
+          </div>
+          <p className="og-after-next">
             New to this text? <a href="/ashtavakra-gita/seven-mornings">Seven mornings with the Ashtavakra Gita</a> gives you one verse a day for a week.
           </p>
-        </div>
-      </main>
+        </Section>
 
-      <FxSources>
-        <p>{SOURCES_NOTE}</p>
-        <p>{DISCLOSURE}</p>
-      </FxSources>
-    </FxFrame>
+        <Section tone={tone()} className="og-sources" title="Sources and method" width="narrow" spacing="tight">
+          <p>{SOURCES_NOTE}</p>
+          <p>{DISCLOSURE}</p>
+        </Section>
+      </main>
+    </>
   )
 }

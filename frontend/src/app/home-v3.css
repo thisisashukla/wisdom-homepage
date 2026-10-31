@@ -199,20 +199,7 @@
    Durations: quick 160ms (feedback), standard 500ms (entrances), slow 900ms.
    Entrance: fade + rise 14px + scale 98.5%→100%. Stagger budget <= 420ms.
    Elements are visible without JS: hiding only applies under html.motion. */
-:root {
-  --ease: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-out: cubic-bezier(0.2, 0, 0, 1);
-  --t-quick: 160ms;
-  --t-std: 500ms;
-  --t-slow: 900ms;
-}
-.motion .rv { opacity: 0; transform: translateY(14px) scale(0.985); }
-.motion .rv.in {
-  opacity: 1;
-  transform: none;
-  transition: opacity var(--t-std) var(--ease), transform var(--t-std) var(--ease);
-  transition-delay: var(--d, 0ms);
-}
+/* :root motion tokens and .rv reveals live in styles/tokens.css and styles/motion.css. */
 
 /* Hero entrance: replace the overshoot curves with the signature easing.
    Primary = headline; secondary = eyebrow/sub/widget follow through. */
@@ -241,7 +228,6 @@
 .blog-row-card:hover { transform: translateY(-2px); border-color: rgba(245, 201, 106, 0.45); }
 
 @media (prefers-reduced-motion: reduce) {
-  .motion .rv, .motion .rv.in { transform: none; transition: opacity 250ms linear; }
   .hero.hero-v3 .hero-bg, .hero.hero-v3 .hero-glow { animation: none; }
   .hero.hero-v3 .hero-eyebrow, .hero.hero-v3 h1, .hero.hero-v3 .hero-sub, .hero.hero-v3 .yv, .hero.hero-v3 .hero-secondary-nav { animation: heroFade 250ms linear both; }
   .motion .week::before { transform: none; transition: none; }

@@ -1,29 +1,16 @@
 /**
- * Sayings funnel (Vivekananda, Kabir, Chanakya): client-safe types, constants
- * and the event helper. Server loaders live in ./data.ts.
+ * Sayings funnel (Vivekananda, Kabir, Chanakya): client-safe types and constants.
+ * Server loaders live in ./data.ts. Events go through trackEvent(EVENTS.X) (lib/mixpanel).
  */
 
-import { trackEvent, trackEventBeacon } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/locale'
 
-export type Locale = 'en' | 'hi'
+export type { Locale }
 export type L10n = { en: string; hi: string }
 export type Hub = 'vivekananda' | 'kabir' | 'chanakya' | 'rahim'
 export type Verdict = 'in-his-words' | 'paraphrase' | 'not-found'
 
-export const FUNNEL = 'sayings'
-export const SITE = 'https://wisdomquotes.in'
 export const UPDATED = '2026-10-30'
-
-/** Every funnel event carries funnel, page, locale and hub. */
-export type EventBase = { page: string; locale: Locale; hub: Hub }
-
-export function fxTrack(event: string, base: EventBase, props: Record<string, unknown> = {}): void {
-  trackEvent(event, { funnel: FUNNEL, ...base, ...props })
-}
-
-export function fxBeacon(event: string, base: EventBase, props: Record<string, unknown> = {}): void {
-  trackEventBeacon(event, { funnel: FUNNEL, ...base, ...props })
-}
 
 export const VERDICT_LABEL: Record<Verdict, L10n> = {
   'in-his-words': { en: 'In his words', hi: 'उनके अपने शब्द' },

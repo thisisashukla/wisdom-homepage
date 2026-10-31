@@ -91,7 +91,7 @@ export const THREADS: { ag: string; c: number; v: number; line: string }[] = [
 export const FAMOUS = ['1.11', '1.3', '1.4', '1.8', '15.4', '8.4', '1.6', '1.14', '1.16', '1.18', '2.1', '2.25', '8.1', '11.5', '15.8', '15.11', '17.3', '18.59', '18.100', '1.2']
 
 export const QUOTES_QUICK =
-  "The line people quote most often from the Ashtavakra Gita is 1.11: as you hold yourself, so you become. Below are twenty of its best-known verses, each with the Sanskrit, Wisdom's own plain English and a link to the full verse with word meanings and commentary."
+  "The line people quote most often from the Ashtavakra Gita is 1.11: as you hold yourself, so you become. Here are twenty of its best-known verses. Find the one that stops you and read the whole verse around it."
 
 export const START_HERE: { key: string; why: string }[] = [
   { key: '1.3', why: 'The method in one verse: set aside what you can see, and notice the one who sees.' },
@@ -112,7 +112,7 @@ export const PLAN: PlanDay[] = [
 ]
 
 export const PLAN_QUICK =
-  'Seven mornings with the Ashtavakra Gita: one verse a day, read aloud in Sanskrit and in plain English, with one small thing to try. It starts with 1.3, you are the witness, and ends with 18.59, at ease in ordinary life. Each morning takes about three minutes.'
+  'Seven mornings with the Ashtavakra Gita: one verse a day and one small thing to try. It starts with 1.3, you are the witness, and ends with 18.59, at ease in ordinary life. Each morning takes about three minutes.'
 
 /** NextStep lines for this funnel. The app holds Gita lines, so the iPhone line promises only that. */
 export const NEXT_COPY = {

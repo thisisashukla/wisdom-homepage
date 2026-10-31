@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 type PageType = 'blog' | 'chapter' | 'verse'
 type Phase = 'rating' | 'detail' | 'done'
@@ -69,7 +69,7 @@ export function FeedbackWidget({ pageType, pageId, pageName }: FeedbackWidgetPro
   const handleLike = (isLiked: boolean) => {
     setLiked(isLiked)
     setPhase('detail')
-    trackEvent('Feedback Content Rated', {
+    trackEvent(EVENTS.FeedbackContentRated, {
       page,
       page_type: pageType,
       page_id: pid,
@@ -88,7 +88,7 @@ export function FeedbackWidget({ pageType, pageId, pageName }: FeedbackWidgetPro
 
   const handleSubmit = () => {
     const trimmed = text.trim()
-    trackEvent('Feedback Submitted', {
+    trackEvent(EVENTS.FeedbackSubmitted, {
       page,
       page_type: pageType,
       page_id: pid,

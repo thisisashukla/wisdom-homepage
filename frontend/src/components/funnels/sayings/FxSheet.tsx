@@ -7,9 +7,8 @@ import { createPortal } from 'react-dom'
 import { Icon } from '@/components/quotes/Icons'
 import type { SheetAction } from '@/components/quotes/session'
 import type { Hub, Locale } from '@/lib/funnels/sayings/shared'
-import FxNextStep from './FxNextStep'
+import SayingsNextStep from './NextStep'
 import '@/components/quotes/card.css'
-import './sayings.css'
 
 const TITLES: Record<Locale, Record<SheetAction, string>> = {
   en: {
@@ -33,14 +32,12 @@ export default function FxSheet({
   action,
   hub,
   locale,
-  pageName,
   pageKey,
   onClose,
 }: {
   action: SheetAction
   hub: Hub
   locale: Locale
-  pageName: string
   pageKey: string
   onClose: () => void
 }) {
@@ -95,7 +92,7 @@ export default function FxSheet({
         <p id={titleId} className="qsheet-title">
           {TITLES[locale][action]}
         </p>
-        <FxNextStep hub={hub} locale={locale} pageName={pageName} pageKey={pageKey} placement="sheet" />
+        <SayingsNextStep hub={hub} locale={locale} pageKey={pageKey} placement="sheet" />
         <button type="button" className="qsheet-later" onClick={onClose}>
           {l.later}
         </button>

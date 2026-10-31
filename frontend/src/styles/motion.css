@@ -1,0 +1,21 @@
+/* The one motion system. <Motion /> (root layout) adds html.motion and reveals .rv elements as they
+   scroll in. Everything is visible without JS: hiding applies only under html.motion.
+   Entrance: fade + rise 14px + scale 98.5% to 100%, 500ms on --ease. Groups marked data-stagger="60"
+   stagger their .rv children, capped at 420ms. Feedback: 160ms on --ease-out. */
+
+.motion .rv { opacity: 0; transform: translateY(14px) scale(0.985); }
+.motion .rv.in {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--t-std) var(--ease), transform var(--t-std) var(--ease);
+  transition-delay: var(--d, 0ms);
+}
+
+/* Hero entrance used by <PageHero>: children rise in order. */
+@keyframes sx-rise { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes sx-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sx-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .motion .rv, .motion .rv.in { opacity: 1; transform: none; transition: none; }
+}

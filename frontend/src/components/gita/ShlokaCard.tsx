@@ -1,4 +1,5 @@
 import React from 'react'
+import ScriptToggle from '@/components/site/ScriptToggle'
 import SanskritText from './SanskritText'
 import VerseAudioPlayer from './VerseAudioPlayer'
 import { getVerseAudio, verseUrl } from '@/lib/gita'
@@ -84,16 +85,19 @@ export default function ShlokaCard({
       <div className="shloka-header">
         <span className="shloka-ref">{verseRef}</span>
         {speaker && <span className="shloka-speaker">Speaker: {speaker}</span>}
+        {iast && !audio && <ScriptToggle locale={locale === 'hi' ? 'hi' : 'en'} size="compact" className="shloka-script" />}
       </div>
 
       {audio ? (
         <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={sanskrit} chapter={ch} verse={vs} />
       ) : (
-        <SanskritText text={sanskrit} className="shloka-sanskrit" />
+        <SanskritText text={sanskrit} className={`shloka-sanskrit${iast ? ' sx-deva' : ''}`} />
       )}
 
+      {/* With audio, the player carries the Devanagari, so IAST stays visible under it; otherwise the
+          site-wide script setting shows one of the two (styles/tokens.css). */}
       {iast && (
-        <div className="shloka-iast">
+        <div className={`shloka-iast${audio ? '' : ' sx-iast'}`}>
           {formatIast(iast)}
         </div>
       )}

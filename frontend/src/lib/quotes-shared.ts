@@ -5,7 +5,9 @@
  * Contract: lp/quotes-build/SPEC.md
  */
 
-export type Locale = 'en' | 'hi'
+import { SITE, abs } from './seo'
+export type { Locale } from './locale'
+import type { Locale } from './locale'
 export type L10n = { en: string; hi: string }
 export type MomentId =
   | 'karma'
@@ -94,9 +96,9 @@ export type QuotePageConfig = {
 export type CardFormat = 'post' | 'status' | 'square'
 export type CardTheme = 'paper' | 'night'
 
-export const SITE_URL = 'https://wisdomquotes.in'
-
-export const absUrl = (path: string): string => (path.startsWith('http') ? path : `${SITE_URL}${path}`)
+/** Aliases of lib/seo (SITE, abs), kept for existing imports. */
+export const SITE_URL = SITE
+export const absUrl = abs
 
 /**
  * Card image route in its canonical query order: format, lang, theme, v, download.

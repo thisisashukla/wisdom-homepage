@@ -1,6 +1,7 @@
-import Shell, { Band, Faq, GitaBridge, Head, HeroLine, SourcesNote, Tiles, UpNext } from '@/components/funnels/upanishads/Shell'
-import Sanskrit from '@/components/funnels/upanishads/Sanskrit'
-import { articleLd, faqLd, SITE, upMeta } from '@/lib/funnels/upanishads'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, LinkCards, PageHero, Section, VerseCard } from '@/components/site'
+import { Bridge, Bridges, SourcesNote, UpNext } from '@/components/funnels/upanishads/parts'
+import { articleLd, padas, SITE, upMeta } from '@/lib/funnels/upanishads'
 import { LINES } from '@/content/funnels/upanishads/lines'
 import { PRINCIPAL, SHVETASHVATARA, GITA_DHYANAM } from '@/content/funnels/upanishads/principal'
 
@@ -44,101 +45,91 @@ export default function Page() {
       name: '10 मुख्य उपनिषद',
       itemListElement: PRINCIPAL.map((u, i) => ({ '@type': 'ListItem', position: i + 1, name: `${u.hi} उपनिषद`, ...(u.href ? { url: `${SITE}${u.href}` } : {}) })),
     },
-    faqLd(FAQ),
   ]
   return (
-    <Shell
-      pageName={PAGE}
-      locale="hi"
-      crumbs={[{ name: 'होम', path: '/' }, { name: 'उपनिषद', path: PATH }]}
-      jsonLd={jsonLd}
-      hero={{
-        eyebrow: 'उपनिषद: गुरु के पास बैठकर',
-        title: 'उपनिषद क्या है, और कितने उपनिषद हैं',
-        facts: ['108 उपनिषद', '10 मुख्य उपनिषद', 'संस्कृत और हिंदी'],
-        cta: { href: '#how-many', label: '10 मुख्य उपनिषद देखें', loc: 'hub_hero_ten' },
-        second: { href: '#lines', label: 'प्रसिद्ध श्लोक', loc: 'hub_hero_lines' },
-        visual: <HeroLine sa={'सत्यमेव जयते नानृतं'} iast={'satyam eva jayate nānṛtam'} meaning="जीत सत्य की ही होती है, झूठ की नहीं।" cite="मुण्डक उपनिषद 3.1.6" lang="hi" />,
-      }}
-    >
-      <Band labelledBy="word">
-        <p id="quick-answer" className="tp-intro rv">
+    <>
+      <PageTracker pageName="Upanishads Hub HI" />
+      <JsonLd data={jsonLd} />
+      <PageHero
+        locale="hi"
+        crumbs={[{ label: 'उपनिषद', href: PATH }]}
+        eyebrow="उपनिषद: गुरु के पास बैठकर"
+        title="उपनिषद क्या है, और कितने उपनिषद हैं"
+        facts={['108 उपनिषद', '10 मुख्य उपनिषद']}
+        actions={[
+          { href: '#how-many', label: '10 मुख्य उपनिषद देखें', location: 'hub_hero_ten' },
+          { href: '#lines', label: 'प्रसिद्ध श्लोक', location: 'hub_hero_lines' },
+        ]}
+        verse={{ original: ['सत्यमेव जयते नानृतं'], iast: ['satyam eva jayate nānṛtam'], meaning: 'जीत सत्य की ही होती है, झूठ की नहीं।', source: 'मुण्डक उपनिषद 3.1.6' }}
+      />
+
+      <Section id="word" width="narrow">
+        <p id="quick-answer" className="sx-intro rv">
           उपनिषद वेदों का आख़िरी हिस्सा हैं, इसलिए इन्हें वेदांत कहते हैं। इनमें आत्मा और ब्रह्म की शिक्षा है, ज़्यादातर गुरु और शिष्य की बातचीत के रूप में।
           परंपरा 108 उपनिषद गिनती है। इनमें से 10 मुख्य उपनिषद कहलाते हैं, क्योंकि आदि शंकराचार्य ने इन पर भाष्य लिखा।
         </p>
-        <div className="fx-card fx-card-story rv">
-          <h2 id="word" className="tp-label">
+        <div className="up-card up-card--story rv">
+          <h2 id="word-h" className="sx-eyebrow">
             उपनिषद शब्द का अर्थ
           </h2>
-          <p className="fx-scene">
+          <p className="up-scene">
             उप (पास), नि (नीचे), षद् (बैठना): गुरु के पास नीचे बैठकर सुनी गई शिक्षा। शंकराचार्य इसी धातु का एक और अर्थ बताते हैं: वह ज्ञान जो अज्ञान की
             पकड़ को ढीला कर दे।
           </p>
         </div>
-      </Band>
+      </Section>
 
-      <Band alt wide labelledBy="how-many">
-        <Head id="how-many" sub="मुक्तिका उपनिषद में 108 उपनिषदों की सूची है। इनमें ये दस मुख्य हैं, जिन पर शंकराचार्य ने भाष्य लिखा:">
-          कितने उपनिषद हैं, और 10 मुख्य उपनिषद
-        </Head>
-        <ul className="fx-ten" data-stagger="40">
+      <Section id="how-many" tone="band" title="कितने उपनिषद हैं, और 10 मुख्य उपनिषद" intro="मुक्तिका उपनिषद में 108 उपनिषदों की सूची है। इनमें ये दस मुख्य हैं, जिन पर शंकराचार्य ने भाष्य लिखा:">
+        <ul className="up-ten" data-stagger="40">
           {PRINCIPAL.map((u) => (
             <li key={u.id} className="rv">
-              <span className="fx-ten-name">{u.hi}</span>
-              <span className="fx-ten-meta">
+              <span className="up-ten-name">{u.hi}</span>
+              <span className="up-ten-meta">
                 {u.veda.hi}, {u.size.hi}
               </span>
-              <span className="fx-ten-about">{u.about.hi}</span>
+              <span className="up-ten-about">{u.about.hi}</span>
             </li>
           ))}
         </ul>
-        <p className="fx-p rv" style={{ marginTop: 20 }}>
-          {SHVETASHVATARA.hi}
-        </p>
-      </Band>
+        <p className="sx-prose up-after rv">{SHVETASHVATARA.hi}</p>
+      </Section>
 
-      <Band wide labelledBy="lines">
-        <Head id="lines">उपनिषद के प्रसिद्ध श्लोक</Head>
-        <Tiles
-          cols={3}
+      <Section id="lines" title="उपनिषद के प्रसिद्ध श्लोक">
+        <LinkCards
+          columns={3}
           items={[
-            ...hiLines.map((l) => ({ href: `/hi/upanishads/${l.slug}`, sa: l.writing.forms[0].sa, title: l.hi?.h1 ?? l.h1, sub: l.ref, loc: `hub_line_${l.slug}` })),
-            { href: '/upanishads', lang: 'en', title: 'सभी 10 प्रसिद्ध श्लोक और पूरे उपनिषद (अंग्रेज़ी)', sub: 'ईश, कठ और माण्डूक्य उपनिषद पूरे, संस्कृत के साथ', loc: 'hub_english' },
+            ...hiLines.map((l) => ({ href: `/hi/upanishads/${l.slug}`, orig: l.writing.forms[0].sa, title: l.hi?.h1 ?? l.h1, body: l.ref, location: `hub_line_${l.slug}` })),
+            { href: '/upanishads', hrefLang: 'en', title: 'सभी 10 प्रसिद्ध श्लोक और पूरे उपनिषद (अंग्रेज़ी)', body: 'ईश, कठ और माण्डूक्य उपनिषद पूरे, संस्कृत के साथ', location: 'hub_english' },
           ]}
         />
-      </Band>
+      </Section>
 
-      <Band alt labelledBy="first">
-        <div className="fx-card fx-card-story rv">
-          <h2 id="first" className="tp-label">
+      <Section id="first" tone="band" width="narrow">
+        <div className="up-card up-card--story rv">
+          <h2 id="first-h" className="sx-eyebrow">
             पढ़ना कहाँ से शुरू करें
           </h2>
-          <p className="fx-scene">
+          <p className="up-scene">
             ईश उपनिषद से। इसमें बस 18 मंत्र हैं, आज रात ख़त्म हो जाएगा। फिर कठ उपनिषद, जो एक कहानी है: बालक नचिकेता तीन रात यमराज के दरवाज़े पर बैठा रहता है
             और जवाब लिए बिना नहीं लौटता। उसके बाद माण्डूक्य, 12 मंत्रों में जाग्रत, स्वप्न और गहरी नींद की बात।
           </p>
         </div>
-      </Band>
+      </Section>
 
-      <Band labelledBy="gita">
-        <Head id="gita">उपनिषद और गीता</Head>
-        <div className="fx-v rv">
-          <p className="fx-v-ref-plain">गीता ध्यानम्, श्लोक 4</p>
-          <Sanskrit sa={GITA_DHYANAM.sa} iast={GITA_DHYANAM.iast} size="small" />
-          <p className="fx-v-en">{GITA_DHYANAM.hi}</p>
-        </div>
-        <p className="fx-p rv" style={{ marginTop: 28 }}>
-          कठ उपनिषद में यमराज नचिकेता से जो कहते हैं, वही बात श्रीकृष्ण अर्जुन से लगभग उन्हीं शब्दों में कहते हैं:
-        </p>
-        <div className="fx-bridges" data-stagger="60">
-          <GitaBridge c={2} v={20} note="आत्मा न जन्म लेता है, न मरता है (कठ 1.2.18 से मिलाएँ)" locale="hi" />
-          <GitaBridge c={2} v={19} note="न मारने वाला समझता है, न मरने वाला (कठ 1.2.19 से मिलाएँ)" locale="hi" />
-        </div>
-      </Band>
+      <Section id="gita" width="narrow" title="उपनिषद और गीता">
+        <VerseCard align="left" label="गीता ध्यानम्, श्लोक 4" original={padas(GITA_DHYANAM.sa)} iast={padas(GITA_DHYANAM.iast)} meaning={GITA_DHYANAM.hi} locale="hi" rv />
+        <p className="sx-prose up-after rv">कठ उपनिषद में यमराज नचिकेता से जो कहते हैं, वही बात श्रीकृष्ण अर्जुन से लगभग उन्हीं शब्दों में कहते हैं:</p>
+        <Bridges>
+          <Bridge c={2} v={20} note="आत्मा न जन्म लेता है, न मरता है (कठ 1.2.18 से मिलाएँ)" locale="hi" />
+          <Bridge c={2} v={19} note="न मारने वाला समझता है, न मरने वाला (कठ 1.2.19 से मिलाएँ)" locale="hi" />
+        </Bridges>
+      </Section>
 
-      <UpNext locale="hi" pageName={PAGE} pageKey={PAGE} placement="hub-end" heading="हर सुबह एक श्लोक" />
+      <UpNext locale="hi" pageKey={PAGE} placement="hub-end" heading="हर सुबह एक श्लोक" />
 
-      <Faq items={FAQ} heading="लोग अक्सर पूछते हैं" />
+      <Section id="faq" width="narrow" title="लोग अक्सर पूछते हैं">
+        <Faq items={FAQ} locale="hi" />
+      </Section>
 
       <SourcesNote heading="स्रोत और तरीका">
         <p>
@@ -151,6 +142,6 @@ export default function Page() {
           </a>
         </p>
       </SourcesNote>
-    </Shell>
+    </>
   )
 }

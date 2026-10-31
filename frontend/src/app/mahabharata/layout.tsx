@@ -4,7 +4,7 @@ import SiteFooter from '@/components/SiteFooter'
 export default function MahabharataLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Nav pageName="Mahabharata" />
+      <Nav />
       {children}
       <SiteFooter />
     </>

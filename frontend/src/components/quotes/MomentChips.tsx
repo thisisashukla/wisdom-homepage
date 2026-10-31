@@ -9,15 +9,15 @@
  */
 
 import { useRef, useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import type { Locale, MomentId, QuotePageConfig } from '@/lib/quotes-shared'
-import './card.css'
 import './quotes.css'
 
 export type MomentChipsProps = {
   chips: QuotePageConfig['chips']
   locale: Locale
-  pageName: string
+  /** @deprecated The page comes from <PageTracker>. */
+  pageName?: string
 }
 
 const T = {
@@ -25,7 +25,7 @@ const T = {
   hi: { all: 'सभी', label: 'किसी पल के लिए श्लोक चुनें', showing: (n: number) => `${n} श्लोक दिख रहे हैं` },
 }
 
-export default function MomentChips({ chips, locale, pageName }: MomentChipsProps) {
+export default function MomentChips({ chips, locale }: MomentChipsProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState<MomentId | null>(null)
   const [status, setStatus] = useState('')
@@ -40,7 +40,7 @@ export default function MomentChips({ chips, locale, pageName }: MomentChipsProp
       setStatus(t.showing(n))
     }
     setActive(m)
-    trackEvent('Moment Chip Tapped', { moment: m ?? 'all', page: pageName, locale, kind: 'filter' })
+    trackEvent(EVENTS.MomentChipClicked, { moment: m ?? 'all', kind: 'filter' })
   }
 
   if (!chips.length) return null
@@ -57,7 +57,7 @@ export default function MomentChips({ chips, locale, pageName }: MomentChipsProp
               key={c.moment + c.href}
               className="qchip qchip-link"
               href={c.href}
-              onClick={() => trackEvent('Moment Chip Tapped', { moment: c.moment, page: pageName, locale, kind: 'link', href: c.href })}
+              onClick={() => trackEvent(EVENTS.MomentChipClicked, { moment: c.moment, kind: 'link', href: c.href })}
             >
               {c.label}
             </a>

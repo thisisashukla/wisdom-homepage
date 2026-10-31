@@ -1,14 +1,14 @@
 /** /vivekananda-quotes/did-he-say/[slug] (server, English). The first sentence answers the question. */
 
-import { BlogTracker } from '@/components/BlogTracker'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, PageHero, Section, VerseList } from '@/components/site'
 import { VERDICT_LABEL, checkDrawer, vivChecks, vivDrawer, vivEdition, vivLine, vivLines, type VivCheck, type VivLine } from '@/lib/funnels/sayings/data'
 import { VIV_PATH, VIV_THEME_COPY, vivCheckPath, vivThemePath } from '@/lib/funnels/sayings/copy-viv'
-import { abs, cardOg, ldArticle, ldBreadcrumb, ldClaimReview, ldFaq, ldQuotation } from '@/lib/funnels/sayings/seo'
-import VivCard from './VivCard'
-import FxNextStep from './FxNextStep'
+import { abs, cardOg, ldArticle, ldClaimReview, ldQuotation } from '@/lib/funnels/sayings/seo'
+import { VivVerse } from './cards'
 import FactCheckTracker from './FactCheckTracker'
 import { vivShareText } from './VivHub'
-import { DailyBand, Faq, Head, JsonLd, Method, Related, Sec, Shell } from './parts'
+import { Method, NextBand, Related } from './parts'
 
 /** Real lines to read instead, for shared lines that are not his. */
 const INSTEAD: Record<string, string[]> = {
@@ -45,7 +45,6 @@ const RATING = { 'in-his-words': 3, paraphrase: 2, 'not-found': 1 } as const
 export default function VivCheckPage({ check: x }: { check: VivCheck }) {
   const path = vivCheckPath(x.slug)
   const pageKey = `viv-check-${x.slug}`.slice(0, 40).replace(/-+$/, '')
-  const pageName = `Vivekananda Fact Check ${x.slug}`
   const short = checkShort(x.shared)
   const h1 = `Did Vivekananda say "${short}"?`
   const answer = checkAnswer(x)
@@ -83,12 +82,6 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
     },
   ]
   const ld = [
-    ldBreadcrumb([
-      { name: 'Wisdom', path: '/' },
-      { name: 'Vivekananda quotes', path: VIV_PATH },
-      { name: 'Did he say it?', path: `${VIV_PATH}#did-he-say` },
-      { name: short, path },
-    ]),
     ldClaimReview({
       claim: `Swami Vivekananda said: "${x.shared}"`,
       verdict: VERDICT_LABEL[x.verdict].en,
@@ -105,7 +98,6 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
       about: 'Swami Vivekananda',
       ...(hub?.card ? { image: cardOg(hub.id) } : {}),
     }),
-    ldFaq(faq),
     ...(real
       ? [
           {
@@ -122,81 +114,80 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
       : []),
   ]
   return (
-    <Shell hub="vivekananda" locale="en">
-      <BlogTracker pageName={pageName} />
-      <FactCheckTracker slug={x.slug} verdict={x.verdict} pageKey={pageKey} locale="en" />
-      {ld.map((d, i) => (
-        <JsonLd key={i} data={d} />
-      ))}
-      <Head
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Vivekananda quotes', href: VIV_PATH }, { label: 'Did he say it?', href: `${VIV_PATH}#did-he-say` }, { label: short }]}
-        locale="en"
-        h1={h1}
-      >
-        <p className="fx-verdict rv">
-          <span className="fx-stamp" data-verdict={x.verdict}>
-            {VERDICT_LABEL[x.verdict].en}
-          </span>
-        </p>
-        <p id="quick-answer" className="fx-quick rv">
-          {[answer, kindLine, translated, x.note?.en].filter(Boolean).join(' ')}
-        </p>
-      </Head>
+    <>
+      <PageTracker pageName="Vivekananda Fact Check" />
+      <FactCheckTracker slug={x.slug} verdict={x.verdict} />
+      <JsonLd data={ld} />
+      <PageHero
+        crumbs={[
+          { label: 'Vivekananda quotes', href: VIV_PATH },
+          { label: 'Did he say it?', href: `${VIV_PATH}#did-he-say` },
+          { label: short, href: path },
+        ]}
+        title={h1}
+        below={
+          <>
+            <p className="fx-verdict">
+              <span className="fx-stamp" data-verdict={x.verdict}>
+                {VERDICT_LABEL[x.verdict].en}
+              </span>
+            </p>
+            <p id="quick-answer" className="fx-quick">
+              {[answer, kindLine, translated, x.note?.en].filter(Boolean).join(' ')}
+            </p>
+          </>
+        }
+      />
 
-      <div className="qp-sections">
-        <Sec hid="shared-h" heading="The version people share">
-          <p className="fx-shared rv">{x.verdict === 'not-found' ? <s>&ldquo;{x.shared}&rdquo;</s> : <>&ldquo;{x.shared}&rdquo;</>}</p>
-          <p className="fx-seen">{`Seen on: ${x.seenOn}.`}</p>
-        </Sec>
+      <Section id="shared" width="narrow" title="The version people share">
+        <p className="fx-shared rv">{x.verdict === 'not-found' ? <s>&ldquo;{x.shared}&rdquo;</s> : <>&ldquo;{x.shared}&rdquo;</>}</p>
+        <p className="fx-seen">{`Seen on: ${x.seenOn}.`}</p>
+      </Section>
 
-        {real && (
-          <Sec hid="real-h" heading="What he said" intro="Tap the source to read the whole paragraph.">
-            <div className="qp-cards">
-              <VivCard
-                drawer={real}
-                cardId={hub?.card ? hub.id : undefined}
+      {real && (
+        <Section id="real" tone="band" width="narrow" title="What he said" intro="The line as it appears in his Complete Works.">
+          <VivVerse
+            drawer={real}
+            cardId={hub?.card ? hub.id : undefined}
+            locale="en"
+            pageKey={pageKey}
+            section="fact-check"
+            shareText={[real.line, '', `Swami Vivekananda, Complete Works vol ${real.volume}, ${real.work}`, `${abs(path)}?utm_source=copy&utm_medium=quote`].join('\n')}
+          />
+          {x.also?.map((a) => (
+            <p key={a.text} className="fx-also">
+              <span>Also in his words</span>
+              &ldquo;{a.text}&rdquo; {`Complete Works vol ${a.source.volume}, ${a.source.work}.`}
+            </p>
+          ))}
+        </Section>
+      )}
+
+      {(instead.length > 0 || more.length > 0) && (
+        <Section id="instead" width="narrow" title={x.verdict === 'not-found' ? 'Lines he did say' : 'More in his words'}>
+          <VerseList>
+            {[...instead, ...more].slice(0, 3).map((l, i) => (
+              <VivVerse
+                key={l.id}
+                as="li"
+                drawer={vivDrawer(l, 'en')}
+                cardId={l.card ? l.id : undefined}
                 locale="en"
-                pageName={pageName}
                 pageKey={pageKey}
-                section="fact-check"
-                shareText={[real.line, '', `Swami Vivekananda, Complete Works vol ${real.volume}, ${real.work}`, `${abs(path)}?utm_source=copy&utm_medium=quote`].join('\n')}
+                position={i + 1}
+                section="instead"
+                shareText={vivShareText(l, 'en', VIV_PATH)}
               />
-            </div>
-            {x.also?.map((a) => (
-              <p key={a.text} className="fx-also">
-                <span>Also in his words</span>
-                &ldquo;{a.text}&rdquo; {`Complete Works vol ${a.source.volume}, ${a.source.work}.`}
-              </p>
             ))}
-          </Sec>
-        )}
+          </VerseList>
+        </Section>
+      )}
 
-        {(instead.length > 0 || more.length > 0) && (
-          <Sec hid="instead-h" heading={x.verdict === 'not-found' ? 'Lines he did say' : 'More in his words'}>
-            <div className="qp-cards">
-              {[...instead, ...more].slice(0, 3).map((l, i) => (
-                <VivCard
-                  key={l.id}
-                  drawer={vivDrawer(l, 'en')}
-                  cardId={l.card ? l.id : undefined}
-                  locale="en"
-                  pageName={pageName}
-                  pageKey={pageKey}
-                  position={i + 1}
-                  section="instead"
-                  shareText={vivShareText(l, 'en', VIV_PATH)}
-                />
-              ))}
-            </div>
-          </Sec>
-        )}
-      </div>
+      <NextBand heading="Keep one line with you" hub="vivekananda" locale="en" pageKey={pageKey} />
 
-      <DailyBand heading="Keep one line with you">
-        <FxNextStep hub="vivekananda" locale="en" pageName={pageName} pageKey={pageKey} placement="end" />
-      </DailyBand>
-
-      <Faq items={faq} heading="Questions people ask" />
+      <Section id="faq" width="narrow" title="Questions people ask">
+        <Faq items={faq} />
+      </Section>
       <Method heading="Sources and method">
         <p>
           Matched against The Complete Works of Swami Vivekananda, Mayavati Memorial Edition, vols 1 to 8 (9,239 paragraphs, Bengali translations checked separately), with Python
@@ -206,6 +197,7 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
       </Method>
       <Related
         heading="Read next"
+        locale="en"
         links={[
           { href: VIV_PATH, label: 'All 61 checked Vivekananda quotes' },
           { href: vivThemePath(theme), label: VIV_THEME_COPY[theme].h1 },
@@ -218,6 +210,6 @@ export default function VivCheckPage({ check: x }: { check: VivCheck }) {
             })),
         ]}
       />
-    </Shell>
+    </>
   )
 }

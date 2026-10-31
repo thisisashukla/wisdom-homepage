@@ -4,7 +4,7 @@ import SiteFooter from '@/components/SiteFooter'
 export default function HiMahabharataLayout({ children }: { children: React.ReactNode }) {
   return (
     <div lang="hi">
-      <Nav pageName="Mahabharata HI" />
+      <Nav />
       {children}
       <SiteFooter locale="hi" />
     </div>

@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { useEffect, useRef, useState } from 'react'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 type Tab = { id: string; label: string; count: number }
 
@@ -15,6 +15,7 @@ type Tab = { id: string; label: string; count: number }
  */
 export default function PlanFilterTabs({ tabs, total, variant }: { tabs: Tab[]; total: number; variant: 'in' | 'global' }) {
   const [active, setActive] = useState('all')
+  const filtered = useRef(false)
 
   useEffect(() => {
     const qs = new URLSearchParams(window.location.search)
@@ -24,8 +25,7 @@ export default function PlanFilterTabs({ tabs, total, variant }: { tabs: Tab[]; 
     } catch {
       /* bad referrer */
     }
-    trackEvent('Reading Plans Viewed', {
-      page: 'Reading Plans',
+    trackEvent(EVENTS.ReadingPlansViewed, {
       variant,
       referrer_host: refHost || 'direct',
       utm_source: qs.get('utm_source'),
@@ -41,7 +41,7 @@ export default function PlanFilterTabs({ tabs, total, variant }: { tabs: Tab[]; 
           const theme = el.dataset.theme!
           if (!e.isIntersecting || seen.has(theme)) continue
           seen.add(theme)
-          trackEvent('Reading Plan Card Seen', { page: 'Reading Plans', theme, position: cards.indexOf(el) + 1, variant })
+          trackEvent(EVENTS.ReadingPlanCardSeen, { theme, position: cards.indexOf(el) + 1, variant })
         }
       },
       { threshold: 0.5 },
@@ -54,13 +54,16 @@ export default function PlanFilterTabs({ tabs, total, variant }: { tabs: Tab[]; 
     document.querySelectorAll<HTMLElement>('.rp-card[data-group]').forEach((el, i) => {
       const show = active === 'all' || el.dataset.group === active
       el.classList.toggle('is-hidden', !show)
+      // Cards rise in again after a filter change (the first reveal is the site's .rv).
+      el.classList.toggle('is-filtered', filtered.current && show)
       el.style.setProperty('--n', String(i))
     })
   }, [active])
 
   const pick = (id: string) => {
+    filtered.current = true
     setActive(id)
-    trackEvent('Reading Plans Filter', { page: 'Reading Plans', tab: id, variant })
+    trackEvent(EVENTS.ReadingPlansFilter, { tab: id, variant })
   }
 
   const all: Tab[] = [{ id: 'all', label: 'All plans', count: total }, ...tabs]

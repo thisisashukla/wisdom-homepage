@@ -8,7 +8,7 @@
  */
 
 import { useRef, useState, type CSSProperties } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import type { HookFeeling, Locale, Quote, QuoteView } from '@/lib/quotes-shared'
 import QuoteCard from './QuoteCard'
 import NextStep from './NextStep'
@@ -26,7 +26,8 @@ export type LineForYouProps = {
   question: string
   preset?: string
   locale: Locale
-  pageName: string
+  /** @deprecated The page comes from <PageTracker>. */
+  pageName?: string
   pageKey?: string
   /** quote id -> recitation URL */
   audio?: Record<string, string | null>
@@ -49,7 +50,7 @@ const norm = (f: FeelingView | HookFeeling, locale: Locale): FeelingView =>
         startSituation: f.startSituation,
       }
 
-export default function LineForYou({ feelings, quotes, question, preset, locale, pageName, pageKey, audio, pagePath }: LineForYouProps) {
+export default function LineForYou({ feelings, quotes, question, preset, locale, pageKey, audio, pagePath }: LineForYouProps) {
   const usable = feelings.map((f) => norm(f, locale)).filter((f) => quotes[f.quoteId])
   const initial = preset && usable.some((f) => f.id === preset) ? preset : null
   const [picked, setPicked] = useState<string | null>(initial)
@@ -67,8 +68,8 @@ export default function LineForYou({ feelings, quotes, question, preset, locale,
     setPicked(f.id)
     setAnimate(true)
     setRound((r) => r + 1)
-    trackEvent('Hook Feeling Picked', { feeling: f.id, page: pageName, locale })
-    trackEvent('Hook Line Revealed', { quote_id: f.quoteId, feeling: f.id, page: pageName, locale })
+    trackEvent(EVENTS.HookFeelingPicked, { feeling: f.id })
+    trackEvent(EVENTS.HookLineRevealed, { item_id: f.quoteId, item_type: 'quote', feeling: f.id })
     requestAnimationFrame(() => {
       const el = revealRef.current
       if (!el) return
@@ -101,7 +102,6 @@ export default function LineForYou({ feelings, quotes, question, preset, locale,
               <QuoteCard
                 quote={quote}
                 locale={locale}
-                pageName={pageName}
                 pageKey={pageKey}
                 position={0}
                 audioSrc={audio?.[feeling.quoteId] ?? null}
@@ -118,7 +118,7 @@ export default function LineForYou({ feelings, quotes, question, preset, locale,
               ))}
             </div>
             <div className="qlf-next">
-              <NextStep locale={locale} pageName={pageName} pageKey={pageKey} placement="hook" startSituation={feeling.startSituation} />
+              <NextStep locale={locale} pageKey={pageKey} placement="hook" startSituation={feeling.startSituation} />
             </div>
           </div>
         )}

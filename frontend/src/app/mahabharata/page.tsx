@@ -1,22 +1,23 @@
 import type { Metadata } from 'next'
-import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, Section } from '@/components/site'
 import FamilyTree, { type TreeLine } from '@/components/funnels/mahabharata/FamilyTree'
 import FamilyList from '@/components/funnels/mahabharata/FamilyList'
-import GitaLink from '@/components/funnels/mahabharata/GitaLink'
-import Faq from '@/components/funnels/mahabharata/Faq'
-import NextBlock from '@/components/funnels/mahabharata/NextBlock'
 import { PEOPLE, ROWS } from '@/lib/funnels/mahabharata/family'
 import { PARVAS } from '@/lib/funnels/mahabharata/parvas'
 import { CHARACTERS } from '@/lib/funnels/mahabharata/characters'
-import { domIdOf, heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
-import { PATHS, abs, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
+import { domIdOf, heroVerseOf, line } from '@/lib/funnels/mahabharata/lines'
+import { NEXT } from '@/lib/funnels/mahabharata/next'
+import { PATHS, articleLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
+import { abs } from '@/lib/seo'
+import '@/components/funnels/mahabharata/mbh.css'
 
-const PAGE = 'mbh-hub'
+const PAGE_KEY = 'mbh-hub'
 const PATH = PATHS.hub
 const CARD = 'mbh-3-314-119'
 const TITLE = 'Mahabharata: Family Tree, Characters and the Gita'
 const DESC =
-  "The Mahabharata's 18 books in brief, an interactive Kuru family tree, the people who matter, and where the Bhagavad Gita sits. Sanskrit with verse numbers."
+  "The Mahabharata's 18 books in brief, the Kuru family and who fought on which side, the people who matter, and where the Bhagavad Gita sits."
 
 export const metadata: Metadata = meta({ title: TITLE, description: DESC, path: PATH, cardId: CARD })
 
@@ -44,133 +45,119 @@ export default function Page() {
       name: 'The eighteen books of the Mahabharata',
       itemListElement: PARVAS.map((p) => ({ '@type': 'ListItem', position: p.n, name: p.name, description: p.summary, ...(p.href ? { url: abs(p.href) } : {}) })),
     },
-    faqLd(FAQ),
-    breadcrumbLd([
-      { name: 'Home', path: '/' },
-      { name: 'Mahabharata', path: PATH },
-    ]),
   )
   return (
-    <Shell
-      page={PAGE}
-      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata' }]}
-      jsonLd={ld}
-      hero={{
-        eyebrow: 'Eighteen books, one family, eighteen days',
-        h1: 'The Mahabharata',
-        line: heroLineOf('mbh.3.314.119'),
-        calm: true,
-        facts: ['18 books', 'Kuru family tree', 'Sanskrit with verse numbers'],
-        cta: (
-          <a href="#tree" className="btn-read-gita btn-read-gita-primary" data-mp-location="hub_hero_tree">
-            Pull a thread in the family tree
-          </a>
-        ),
-      }}
-    >
-      <Band className="mb-intro">
-        <p id="quick-answer" className="tp-intro rv">
-          The Mahabharata is a Sanskrit epic in eighteen books about one family, the Kurus, and the war between its two branches. Tradition names
-          the sage Vyasa as its author; he is also grandfather to both sides. The Bhagavad Gita sits in book six, and its lines echo elsewhere:
-          Vidura speaks Gita 16.21 word for word (MBh 5.33.73).
-        </p>
-      </Band>
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Mahabharata Hub" />
+      <main className="fx-mbh" lang="en">
+        <PageHero
+          crumbs={[{ label: 'Mahabharata', href: PATH }]}
+          eyebrow="Vyasa’s epic of the Kuru family"
+          title="The Mahabharata"
+          facts={['18 books', 'The Gita is in book six']}
+          actions={[{ href: '#tree', label: 'Pull a thread in the family tree', location: 'hub_hero_tree' }]}
+          verse={heroVerseOf('mbh.3.314.119')}
+        />
 
-      <Band
-        alt
-        wide
-        id="tree"
-        mp="family_tree"
-        h="Pull a thread"
-        hId="tree-h"
-        lede="Tap a name and their parents, husbands or wives, and children light up in gold. Switch on Day 1 to see who stood on which side when the war began."
-        className="mb-treeband"
-      >
-        <FamilyTree people={PEOPLE} rows={ROWS} lines={lines} page={PAGE} />
-        <FamilyList />
-      </Band>
+        <Section spacing="tight">
+          <div className="sx-prose rv">
+            <p id="quick-answer">
+              The Mahabharata is a Sanskrit epic in eighteen books about one family, the Kurus, and the war between its two branches. Tradition names
+              the sage Vyasa as its author; he is also grandfather to both sides. The Bhagavad Gita sits in book six, and its lines echo elsewhere:
+              Vidura speaks Gita 16.21 word for word (MBh 5.33.73).
+            </p>
+          </div>
+        </Section>
 
-      <Band mp="start_here" h="Start here" hId="start-h" wide>
-        <div className="mb-tiles mb-tiles-3" data-stagger="60">
-          <a href={PATHS.gita} className="mb-tile mb-tile-gita rv">
-            <strong>Where the Gita sits</strong>
-            <span>Book six, chapters 23 to 40, told by Sanjaya after Bhishma falls.</span>
-          </a>
-          <a href={PATHS.yaksha} className="mb-tile rv">
-            <strong>The Yaksha&apos;s questions</strong>
-            <span>What is heavier than the earth? Every answer, and a 10-question quiz.</span>
-          </a>
-          <a href={PATHS.quotes} className="mb-tile rv">
-            <strong>25 lines from the Mahabharata</strong>
-            <span>Each with its Sanskrit, speaker and verse number.</span>
-          </a>
-        </div>
-      </Band>
+        <Section
+          tone="band"
+          id="tree"
+          track="family_tree"
+          title="Pull a thread"
+          intro="Pick someone you know from the story and follow their family out from there, then see who stood on which side on the first day of the war."
+        >
+          <FamilyTree people={PEOPLE} rows={ROWS} lines={lines} />
+          <FamilyList />
+        </Section>
 
-      <Band alt mp="characters" h="Six people and the choice each one made" hId="people-h" wide>
-        <div className="mb-tiles" data-stagger="60">
-          {CHARACTERS.map((c) => (
-            <a key={c.slug} href={PATHS.character(c.slug)} className="mb-tile mb-person-tile rv">
-              <strong>{c.name}</strong>
-              <span>{c.choice.moment}</span>
-            </a>
-          ))}
-        </div>
-      </Band>
+        <Section track="start_here" title="Start here">
+          <LinkCards
+            columns={3}
+            items={[
+              { href: PATHS.gita, title: 'Where the Gita sits', body: 'Book six, chapters 23 to 40, told by Sanjaya after Bhishma falls.', location: 'hub_start_gita' },
+              { href: PATHS.yaksha, title: <>The Yaksha&apos;s questions</>, body: 'What is heavier than the earth? Yudhishthira’s answers, and a chance to try your own.', location: 'hub_start_yaksha' },
+              { href: PATHS.quotes, title: '25 lines from the Mahabharata', body: 'Lines people still quote, and the moment in the story each one comes from.', location: 'hub_start_quotes' },
+            ]}
+          />
+        </Section>
 
-      <Band
-        id="books"
-        mp="parvas"
-        h="The eighteen books"
-        hId="books-h"
-        wide
-        lede={<>Books marked &quot;Sanskrit here&quot; are the ones we hold in Sanskrit and quote from: 3, 5, 12, 13 and 14. More will follow.</>}
-      >
-        <ol className="mb-parvas" data-stagger="40">
-          {PARVAS.map((p) => (
-            <li key={p.n} className="mb-parva rv" data-held={p.held ? '' : undefined} data-gita={p.gita ? '' : undefined}>
-              <span className="mb-parva-n" aria-hidden="true">
-                {p.n}
-              </span>
-              <div>
-                <h3>
-                  {p.href ? <a href={p.href}>{p.name}</a> : p.name} <span lang="hi">{p.hi}</span>
-                </h3>
-                <p>{p.summary}</p>
-                {p.held && <span className="mb-parva-tag">Sanskrit here</span>}
-                {p.gita && (
-                  <p className="mb-parva-gita">
-                    <GitaLink href="/gita" from="hub_parvas" toRef="gita" page={PAGE} locale="en">
-                      Read the Bhagavad Gita
-                    </GitaLink>
-                  </p>
-                )}
-              </div>
-            </li>
-          ))}
-        </ol>
-      </Band>
+        <Section tone="band" track="characters" title="Six people and the choice each one made">
+          <LinkCards
+            columns={3}
+            items={CHARACTERS.map((c) => ({ href: PATHS.character(c.slug), title: c.name, body: c.choice.moment, location: 'hub_characters' }))}
+          />
+        </Section>
 
-      <Band alt mp="screen" h="If you came here from a series" hId="screen-h">
-        <p className="mb-prose rv">
-          BR Chopra&apos;s Mahabharat (1988), the Star Plus serial (2013) and Kurukshetra, the animated series on Netflix since October 2025,
-          all draw on these books, closely in places and freely in others. Kurukshetra tells the war in 18 episodes, each from one
-          warrior&apos;s side. Switch on Day 1 in the tree above to see where the family stood, then read what the Sanskrit has them say.
-        </p>
-      </Band>
+        <Section
+          id="books"
+          track="parvas"
+          title="The eighteen books"
+          intro={<>Each book in a few lines, so you know where you are in the story.</>}
+        >
+          <ol className="mb-parvas" data-stagger="40">
+            {PARVAS.map((p) => (
+              <li key={p.n} className="mb-parva rv" data-held={p.held ? '' : undefined} data-gita={p.gita ? '' : undefined}>
+                <span className="mb-parva-n" aria-hidden="true">
+                  {p.n}
+                </span>
+                <div>
+                  <h3>
+                    {p.href ? <a href={p.href}>{p.name}</a> : p.name} <span lang="hi">{p.hi}</span>
+                  </h3>
+                  <p>{p.summary}</p>
+                  {p.held && <span className="mb-parva-tag">Sanskrit here</span>}
+                  {p.gita && (
+                    <p className="mb-parva-gita">
+                      <GitaBridge variant="inline" href="/gita" location="hub_parvas" label="Read the Bhagavad Gita" />
+                    </p>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Section>
 
-      <Faq items={FAQ} heading="Questions people ask" />
-      <NextBlock page={PAGE} alt />
+        <Section tone="band" track="screen" title="If you came here from a series" width="narrow">
+          <div className="sx-prose rv">
+            <p>
+              BR Chopra&apos;s Mahabharat (1988), the Star Plus serial (2013) and Kurukshetra, the animated series on Netflix since October 2025,
+              all draw on these books, closely in places and freely in others. Kurukshetra tells the war in 18 episodes, each from one
+              warrior&apos;s side. If a character from the screen stayed with you, find them in the family above and read what the Sanskrit has them say.
+            </p>
+          </div>
+        </Section>
 
-      <Band className="mb-method" h="Sources and method" hId="method-h">
-        <p>
-          The family tree uses only well-established relations. Divine fathers and mothers the epic leaves unnamed are given in words, never as
-          names on the tree. Lines come from the Sanskrit we hold for books 3, 5, 12, 13 and 14, a southern-recension text whose numbering runs
-          close to the Kumbhakonam edition. The English is Wisdom&apos;s own, read with Nilakantha&apos;s commentary, with K. M. Ganguli&apos;s
-          public-domain translation consulted.
-        </p>
-        <p>Wisdom translation, edited by Ankur Shukla.</p>
-      </Band>
-    </Shell>
+        <Section track="faq" title="Questions people ask" width="narrow">
+          <Faq items={FAQ} />
+        </Section>
+
+        <Section tone="band" track="next_step" title={NEXT.en.head} width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={PAGE_KEY} placement="end" copy={NEXT.en.copy} />
+          </div>
+        </Section>
+
+        <Section className="mb-method" title="Sources and method" width="narrow">
+          <p>
+            The family tree uses only well-established relations. Divine fathers and mothers the epic leaves unnamed are given in words, never as
+            names on the tree. Lines come from the Sanskrit we hold for books 3, 5, 12, 13 and 14, a southern-recension text whose numbering runs
+            close to the Kumbhakonam edition. The English is Wisdom&apos;s own, read with Nilakantha&apos;s commentary, with K. M. Ganguli&apos;s
+            public-domain translation consulted.
+          </p>
+          <p>Wisdom translation, edited by Ankur Shukla.</p>
+        </Section>
+      </main>
+    </>
   )
 }

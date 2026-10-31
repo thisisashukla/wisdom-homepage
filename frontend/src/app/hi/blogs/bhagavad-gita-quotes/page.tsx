@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getPage } from '@/lib/quotes'
-import QuotePage, { quotePageMetadata } from '@/components/quotes/QuotePage'
+import QuotePage, { quotePageMetadata, quotePageName } from '@/components/quotes/QuotePage'
 import BlogTracker from '@/components/BlogTracker'
 
 const KEY = 'gita-quotes-hi'
@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <>
       <QuotePage config={c} />
-      <BlogTracker pageName={c.pageName} />
+      <BlogTracker pageName={quotePageName(c)} />
     </>
   )
 }

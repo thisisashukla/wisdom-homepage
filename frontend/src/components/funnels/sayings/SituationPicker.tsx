@@ -6,18 +6,17 @@
  */
 
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import { fxTrack, type Locale } from '@/lib/funnels/sayings/shared'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/funnels/sayings/shared'
 
 export default function SituationPicker({
   situations,
   locale,
-  pageKey,
   label,
   children,
 }: {
   situations: { id: string; label: string }[]
   locale: Locale
-  pageKey: string
   label: string
   children: ReactNode
 }) {
@@ -33,14 +32,14 @@ export default function SituationPicker({
   }, [js, on])
   const pick = (id: string) => {
     setOn(id)
-    fxTrack('Situation Picked', { page: pageKey, locale, hub: 'chanakya' }, { situation: id })
+    trackEvent(EVENTS.SituationSelected, { item_id: id, item_type: 'situation' })
     requestAnimationFrame(() => document.getElementById(`sit-${id}`)?.focus({ preventScroll: false }))
   }
   return (
     <div ref={root} className="fx-sit" data-js={js ? '' : undefined}>
       <div className="fx-sit-chips" role="group" aria-label={label}>
         {situations.map((s) => (
-          <button key={s.id} type="button" className="qchip" aria-pressed={on === s.id} onClick={() => pick(s.id)} lang={locale}>
+          <button key={s.id} type="button" className="sx-chip fx-sit-chip" aria-pressed={on === s.id} onClick={() => pick(s.id)} lang={locale}>
             {s.label}
           </button>
         ))}

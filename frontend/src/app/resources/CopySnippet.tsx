@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 export default function CopySnippet({ text }: { text: string }) {
   const [copied, setCopied] = useState(false)
@@ -15,7 +15,7 @@ export default function CopySnippet({ text }: { text: string }) {
       setCopied(false)
     }
     try {
-      trackEvent('Resources Link Snippet Copied', { page: 'resources' })
+      trackEvent(EVENTS.ResourcesLinkSnippetCopied, { page: 'resources' })
     } catch {}
   }
 

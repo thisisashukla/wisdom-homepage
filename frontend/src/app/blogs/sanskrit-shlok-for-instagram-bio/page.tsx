@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getPage } from '@/lib/quotes'
-import QuotePage, { quotePageMetadata } from '@/components/quotes/QuotePage'
+import QuotePage, { quotePageMetadata, quotePageName } from '@/components/quotes/QuotePage'
 import BlogTracker from '@/components/BlogTracker'
 import SiteFooter from '@/components/SiteFooter'
 
@@ -18,7 +18,7 @@ export default function Page() {
     <>
       <QuotePage config={c} />
       <SiteFooter />
-      <BlogTracker pageName={c.pageName} />
+      <BlogTracker pageName={quotePageName(c)} />
     </>
   )
 }

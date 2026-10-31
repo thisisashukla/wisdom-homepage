@@ -161,7 +161,7 @@ nav.site-nav.site-nav--scrolled .nav-page-link {
 }
 
 /* Mobile: one plain link to the reader beside the menu (not a button). */
-.nav-read-mobile { display: none; }
+.nav-read-mobile { display: none; } /* retired: "Read the Gita" lives in the drawer */
 @media (max-width: 960px) {
   .nav-read-mobile { display: inline; margin-left: auto; margin-right: 18px; font-size: 13.5px; font-weight: 600; color: rgba(245, 232, 204, 0.75); white-space: nowrap; }
   .nav-read-mobile + .mobile-nav-toggle { margin-left: 0; }
@@ -237,4 +237,43 @@ a.nav-app-link:focus-visible {
   font-weight: 700;
   border-bottom: 0 !important;
   text-decoration: none;
+}
+
+/* ── Current section ─────────────────────────────────────────────────── */
+.nav-links a[aria-current='page'],
+.nav-more-btn[aria-current='true'] { color: #f5c96a !important; }
+.nav-links .nav-page-link[aria-current='page'] { text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.6); text-decoration-thickness: 2px; text-underline-offset: 8px; }
+
+/* ── More menu (desktop) ─────────────────────────────────────────────── */
+.nav-more { position: relative; }
+.nav-more-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0; border: 0; background: none; cursor: pointer; font: 600 14px/1 var(--font-ui); }
+.nav-more-caret { transition: transform var(--t-quick) var(--ease-out); }
+.nav-more-btn[aria-expanded='true'] .nav-more-caret { transform: rotate(180deg); }
+.nav-more-btn:focus-visible { outline: 2px solid #f5c96a; outline-offset: 4px; border-radius: 6px; }
+.nav-more-panel { position: absolute; top: calc(100% + 14px); right: -140px; width: min(560px, 92vw); padding: 18px; border-radius: 16px;
+  background: #170706; border: 1px solid rgba(200, 136, 30, 0.28); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  transform-origin: top right; animation: navMoreIn var(--t-quick) var(--ease-out) both; z-index: 210; }
+.nav-more-panel[hidden] { display: none; }
+@keyframes navMoreIn { from { opacity: 0; transform: translateY(-6px) scale(0.98); } to { opacity: 1; transform: none; } }
+.nav-more-label { margin: 0 0 10px 8px; font: 700 11px/1.4 var(--font-ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dimmer); }
+.nav-more-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
+.nav-links .nav-more-item { display: flex; flex-direction: column; gap: 3px; padding: 10px 10px; border-radius: 10px; color: var(--text) !important; transition: background-color var(--t-quick) var(--ease-out); }
+.nav-links .nav-more-item:hover, .nav-links .nav-more-item:focus-visible { background: rgba(200, 136, 30, 0.1); outline: none; }
+.nav-links .nav-more-item[aria-current='page'] { background: rgba(200, 136, 30, 0.14); }
+.nav-more-title { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: #f5c96a; }
+.nav-more-note { font-size: 12.5px; line-height: 1.4; color: var(--text-dim); }
+.nav-more-foot { list-style: none; margin: 12px 0 0; padding: 12px 8px 0; border-top: 1px solid rgba(200, 136, 30, 0.16); display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.nav-links .nav-more-sub { font-size: 13.5px; font-weight: 500; color: var(--text-dim); }
+.nav-links .nav-more-sub:hover { color: #f5c96a; }
+
+/* ── Drawer sections (phone) ─────────────────────────────────────────── */
+.mobile-nav-drawer .mobile-nav-label { margin: 22px 4px 4px; font: 700 11px/1.4 var(--font-ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dimmer); }
+.mobile-nav-drawer ul.mobile-nav-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; }
+.mobile-nav-drawer ul.mobile-nav-grid a { font-size: 15px; }
+.mobile-nav-drawer ul.mobile-nav-foot { margin-top: 14px; }
+.mobile-nav-drawer ul.mobile-nav-foot a { font-size: 14px; color: var(--text-dim); }
+.mobile-nav-drawer a[aria-current='page'] { color: #f5c96a; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-more-panel { animation: none; }
 }

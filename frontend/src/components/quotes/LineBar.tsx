@@ -8,7 +8,7 @@
 
 import { useEffect, useState } from 'react'
 import { detectPlatform } from '@/lib/app'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import type { Locale } from '@/lib/quotes-shared'
 import { Icon } from './Icons'
 import { LINEBAR_KEY, prefersReducedMotion, sessionFlag, setSessionFlag } from './session'
@@ -20,7 +20,7 @@ const T = {
   hi: { go: 'आज का अपना श्लोक पाएं', close: 'यह पट्टी हटाएं' },
 }
 
-export default function LineBar({ locale, pageName }: { locale: Locale; pageName: string }) {
+export default function LineBar({ locale }: { locale: Locale; /** @deprecated */ pageName?: string }) {
   const [show, setShow] = useState(false)
   const [dismissed, setDismissed] = useState(true)
   const t = T[locale]
@@ -62,7 +62,7 @@ export default function LineBar({ locale, pageName }: { locale: Locale; pageName
 
   const go = () => {
     const target = document.getElementById('line-for-you')
-    trackEvent('Line Bar Tapped', { page: pageName, locale })
+    trackEvent(EVENTS.LineBarClicked)
     if (!target) return
     target.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' })
     target.querySelector<HTMLElement>('button')?.focus({ preventScroll: true })

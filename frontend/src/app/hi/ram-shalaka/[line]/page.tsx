@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import BlogTracker from '@/components/BlogTracker'
-import RsNext from '@/components/funnels/ram-shalaka/RsNext'
-import ScriptToggle from '@/components/funnels/ram-shalaka/ScriptToggle'
-import { rsTiro, rsYatra } from '@/components/funnels/ram-shalaka/fonts'
+import PageTracker from '@/components/BlogTracker'
+import { Actions, GitaBridge, JsonLd, LinkCards, PageHero, ScriptToggle, Section, VerseCard, VerseList } from '@/components/site'
+import ShalakaNext from '@/components/funnels/ram-shalaka/ShalakaNext'
+import ShalakaShare from '@/components/funnels/ram-shalaka/ShalakaShare'
 import '@/components/funnels/ram-shalaka/shalaka.css'
 import {
   firstHalf,
@@ -14,11 +14,13 @@ import {
   lineHref,
   neighbours,
   ritualCopy,
+  ritualLines,
   signName,
   signNote,
   sourceLabel,
 } from '@/lib/funnels/ram-shalaka'
 import { lineJsonLd, lineMetadata } from '@/lib/funnels/ram-shalaka/seo'
+import { SITE } from '@/lib/seo'
 
 type Params = { line: string }
 
@@ -39,164 +41,147 @@ export default function LinePage({ params }: { params: Params }) {
   const t = lineCopy()
   const { ui, next } = ritualCopy('hi')
   const { prev, next: nextLine } = neighbours(l)
-  const pageKey = `ram-shalaka-line-${l.n}`
+  const rl = ritualLines('hi')[l.k]
+  const url = `${SITE}${lineHref(l.slug)}`
+  const directive = (l.signText.hi.split('·').pop() || '').trim()
+  const plan = { planTitle: ui.planTitle, planSub: ui.planSub, planBtn: ui.planBtn, planFree: ui.planFree }
+  const copyText = [l.deva.join('\n'), '', l.meaning.hi, '', `श्रीरामचरितमानस, ${sourceLabel(l, 'hi')}`, url].join('\n')
+  const shareText = [l.deva.join('\n'), '', l.meaning.hi, '', `${ui.shareAsk}: ${SITE}/hi/ram-shalaka?utm_source=whatsapp&utm_medium=share&utm_campaign=rs-${l.n}`].join('\n')
 
   return (
-    <main className={`fx-ram-shalaka ${rsTiro.variable} ${rsYatra.variable}`} lang="hi">
-      <BlogTracker pageName={pageKey} />
-      {lineJsonLd(l).map((ld, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      ))}
+    <main className="fx-ram-shalaka" lang="hi">
+      <PageTracker pageName="Ram Shalaka Line HI" />
+      <JsonLd data={lineJsonLd(l)} />
 
-      <div className="rs-line-hero">
-        <div className="rs-cloth" aria-hidden="true">
-          {Array.from({ length: 22 }, (_, r) => (
-            <span key={r}>{'राम '.repeat(34)}</span>
-          ))}
+      <PageHero
+        locale="hi"
+        lang="hi"
+        crumbs={[
+          { label: t.crumbSelf, href: '/hi/ram-shalaka' },
+          { label: firstHalf(l), href: lineHref(l.slug) },
+        ]}
+        eyebrow={l.signText.hi}
+        title={
+          <>
+            <span className="rs-h1-line">{l.deva[0]}</span>
+            <span className="rs-h1-line">{l.deva[1]}</span>
+            <small className="rs-h1-sub">{t.sub}</small>
+          </>
+        }
+        sub={<span id="quick-answer">{l.quick.hi}</span>}
+        facts={[`श्रीरामचरितमानस, ${sourceLabel(l, 'hi')}`, l.who.hi]}
+        actions={[{ href: '/hi/ram-shalaka', label: t.ask, location: 'rs_line_hero_ask' }]}
+        visual={
+          <div className={`rs-line-seal ${l.sign}`} aria-hidden="true">
+            <span className="rs-line-seal-word">{signName(l.sign, 'hi')}</span>
+          </div>
+        }
+      />
+
+      <Section id="unit" title={t.unitHeading} width="narrow" tone="band">
+        <div className="rs-tools">
+          <ScriptToggle locale="hi" />
         </div>
-        <header className="rs-line-head">
-          <nav className="rs-crumbs" aria-label="Breadcrumb">
-            <ol>
-              <li>
-                <a href="/">Wisdom</a>
-              </li>
-              <li>
-                <a href="/hi/ram-shalaka" data-mp-location="rs_line_crumb">
-                  {t.crumbSelf}
-                </a>
-              </li>
-              <li aria-current="page">{firstHalf(l)}</li>
-            </ol>
-          </nav>
-          <div className="rs-line-top">
-            <span className={`rs-mini-seal ${l.sign}`} aria-hidden="true">
-              {signName(l.sign, 'hi')}
-            </span>
-            <h1 className="rs-line-h1">
-              <span>{l.deva[0]}</span>
-              <span>{l.deva[1]}</span>
-              <small>{t.sub}</small>
-            </h1>
-          </div>
-          <p className="rs-line-meta">
-            {l.signText.hi} · श्रीरामचरितमानस, {sourceLabel(l, 'hi')} · {l.who.hi}
-          </p>
-          <a className="rs-cta" href="/hi/ram-shalaka" data-mp-location="rs_line_hero_ask">
-            {t.ask}
-          </a>
-        </header>
-      </div>
-
-      <section className="rs-sec" style={{ paddingTop: 20 }}>
-        <p className="rs-lede" id="quick-answer">
-          {l.quick.hi}
-        </p>
-
-        <div className="rs-unit" id="unit" data-rs-script="deva">
-          <div className="rs-unit-top">
-            <h2 className="rs-h3">{t.unitHeading}</h2>
-            <ScriptToggle target="unit" label="लिपि" />
-          </div>
+        <VerseList>
           {l.unit.map((p, i) => (
-            <div key={i} className={`rs-pair${p.answer ? ' ans' : ''}`}>
-              {p.answer && <span className="rs-pair-tag">{t.answerTag}</span>}
-              <p className="rs-pair-text rs-deva">
-                <span>{p.deva[0]}</span>
-                <span>{p.deva[1]}</span>
-              </p>
-              <p className="rs-pair-text rs-iast" lang="hi-Latn">
-                <span>{p.iast[0]},</span>
-                <span>{p.iast[1]}</span>
-              </p>
-              <p className="rs-pair-mean">{p.meaning.hi}</p>
-              <p className="rs-pair-mean-en" lang="en">
+            <VerseCard
+              key={i}
+              as="li"
+              label={p.answer ? t.answerTag : undefined}
+              original={p.deva}
+              iast={[`${p.iast[0]},`, p.iast[1]]}
+              lang="awa"
+              meaning={p.meaning.hi}
+              locale="hi"
+              rv
+              actions={
+                p.answer ? (
+                  <ShalakaShare
+                    line={rl}
+                    locale="hi"
+                    card={{
+                      kicker: ui.kicker,
+                      lead: ui.verdictLead,
+                      directive,
+                      source: `${ui.srcPrefix} · ${rl.source}`,
+                      invite: ui.shareAsk,
+                      host: `${SITE.replace(/^https?:\/\//, '')}/hi/ram-shalaka`,
+                    }}
+                    copyText={copyText}
+                    shareText={shareText}
+                    pageKey={`rs-${l.n}`}
+                    props={{ k: l.k, sign: l.sign }}
+                  />
+                ) : undefined
+              }
+            >
+              <p className="rs-en" lang="en">
                 {p.meaning.en}
               </p>
-            </div>
+            </VerseCard>
           ))}
+        </VerseList>
+      </Section>
+
+      <Section id="arth" title={t.meaningHeading} width="narrow">
+        <div className="sx-prose">
+          <p className="rs-lede">{l.meaning.hi}</p>
+          <p className="rs-en" lang="en">
+            {t.inEnglish}: {l.meaning.en}
+          </p>
         </div>
-      </section>
+      </Section>
 
-      <section className="rs-sec" id="arth">
-        <h2 className="rs-h2">{t.meaningHeading}</h2>
-        <p className="rs-lede">{l.meaning.hi}</p>
-        <p className="rs-p" lang="en" style={{ marginTop: 8 }}>
-          {t.inEnglish}: {l.meaning.en}
-        </p>
-      </section>
+      <Section id="prasang" title={t.sceneHeading} width="narrow" tone="band">
+        <div className="sx-prose">
+          <p className="rs-lede">{l.scene.hi}</p>
+          <p className="rs-en" lang="en">
+            {t.inEnglish}: {l.scene.en}
+          </p>
+        </div>
+      </Section>
 
-      <section className="rs-sec" id="prasang">
-        <h2 className="rs-h2">{t.sceneHeading}</h2>
-        <p className="rs-lede">{l.scene.hi}</p>
-        <p className="rs-p" lang="en" style={{ marginTop: 8 }}>
-          {t.inEnglish}: {l.scene.en}
-        </p>
-      </section>
-
-      <section className="rs-sec" id="aapse">
-        <h2 className="rs-h2">{t.youHeading}</h2>
-        <p className="rs-lede">{l.forYou.hi}</p>
-        <h3 className="rs-h3" style={{ marginTop: 22 }}>
-          {t.signHeading}
-        </h3>
-        <p className="rs-p">
+      <Section id="aapse" title={t.youHeading} width="narrow">
+        <div className="sx-prose">
+          <p className="rs-lede">{l.forYou.hi}</p>
+        </div>
+        <h3 className="sx-h3 rs-sign-h">{t.signHeading}</h3>
+        <p className="rs-sign-row">
           <span className={`rs-tag ${l.sign}`}>{l.signText.hi}</span>
         </p>
-        <p className="rs-p">{signNote(l.sign, 'hi')}</p>
-        <div className="rs-cta-row">
-          <a className="rs-cta" href="/hi/ram-shalaka" data-mp-location="rs_line_ask">
-            {t.ask}
-          </a>
-        </div>
-      </section>
+        <p className="sx-prose">{signNote(l.sign, 'hi')}</p>
+        <Actions className="rs-line-actions" items={[{ href: '/hi/ram-shalaka', label: t.ask, location: 'rs_line_ask' }]} />
+      </Section>
 
-      <section className="rs-sec" id="gita">
-        <h2 className="rs-h2">{t.gitaHeading}</h2>
-        <p className="rs-p">
-          {l.gita.note.hi}{' '}
-          <a href={gitaHref(l, 'hi')} className="rs-gita-link" data-mp-location="rs_line_gita">
-            {t.gitaLink}
-          </a>
-        </p>
-      </section>
+      <Section id="gita" title={t.gitaHeading} width="narrow" tone="band">
+        <GitaBridge href={gitaHref(l, 'hi')} label={t.gitaLink} why={l.gita.note.hi} location="rs_line_gita" from={`rs-${l.n}`} locale="hi" />
+      </Section>
 
-      <section className="rs-sec">
-        <RsNext
-          locale="hi"
-          pageKey={pageKey}
-          placement="line"
-          n={l.n}
-          k={l.k}
-          copy={{ planTitle: ui.planTitle, planSub: ui.planSub, planBtn: ui.planBtn, planFree: ui.planFree, appLine: next.app.line, appBtn: next.app.cta }}
-        />
-      </section>
+      <Section id="next" track="rs_next" width="narrow">
+        <ShalakaNext locale="hi" placement="line" plan={plan} next={next} n={l.n} />
+      </Section>
 
-      <section className="rs-sec">
-        <nav className="rs-pn" aria-label={t.allNine}>
-          <a href={lineHref(prev.slug)} data-mp-location="rs_line_prev">
-            <small>{t.prev}</small>
-            <span>{firstHalf(prev)}</span>
-          </a>
-          <a href={lineHref(nextLine.slug)} data-mp-location="rs_line_next">
-            <small>{t.next}</small>
-            <span>{firstHalf(nextLine)}</span>
-          </a>
+      <Section id="more" width="narrow" tone="band">
+        <nav aria-label={t.allNine}>
+          <LinkCards
+            items={[
+              { href: lineHref(prev.slug), kicker: t.prev, title: firstHalf(prev), location: 'rs_line_prev' },
+              { href: lineHref(nextLine.slug), kicker: t.next, title: firstHalf(nextLine), location: 'rs_line_next' },
+            ]}
+          />
         </nav>
-        <p className="rs-p" style={{ marginTop: 16 }}>
-          <a href="/hi/ram-shalaka#nine" data-mp-location="rs_line_all">
-            {t.allNine}
-          </a>
-          {' · '}
-          <a href="/ramayana" data-mp-location="rs_line_ramayana">
-            {t.ramayana}
-          </a>
-        </p>
-      </section>
+        <Actions
+          className="rs-line-more"
+          items={[
+            { href: '/hi/ram-shalaka#nine', label: t.allNine, location: 'rs_line_all', variant: 'link' },
+            { href: '/ramayana', label: t.ramayana, location: 'rs_line_ramayana', variant: 'link' },
+          ]}
+        />
+      </Section>
 
-      <section className="rs-sec">
-        <h2 className="rs-h2">{t.sourcesHeading}</h2>
+      <Section id="sources" title={t.sourcesHeading} width="narrow">
         <p className="rs-sources">{t.sources}</p>
-      </section>
+      </Section>
     </main>
   )
 }

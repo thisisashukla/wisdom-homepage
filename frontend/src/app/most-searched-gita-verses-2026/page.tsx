@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
+import { Actions, Faq, JsonLd, LinkCards, PageHero, Section, VerseCard } from '@/components/site'
+import PlanFine from '@/components/plan/PlanFine'
+import { planAction } from '@/components/plan/planAction'
 import VerseIndexChart from '@/components/searched/VerseIndexChart'
 import WeeklyChart from '@/components/searched/WeeklyChart'
 import { getVerse, verseUrl } from '@/lib/gita'
@@ -19,9 +21,6 @@ import {
   fmtIndex,
   shareOfTop,
 } from '@/lib/searchedVerses2026'
-import '../home.css'
-import '../home-v3.css'
-import '../gita-jayanti/gita-jayanti.css'
 import '../gita-jayanti/guides.css'
 import './searched.css'
 
@@ -218,58 +217,56 @@ export default async function MostSearchedVersesPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Nav pageName="Most Searched Verses 2026" />
+      <JsonLd data={schema} />
+      <Nav />
+
+      <PageHero
+        crumbs={[
+          { label: 'Bhagavad Gita', href: '/gita' },
+          { label: 'Most searched verses 2026', href: '/most-searched-gita-verses-2026' },
+        ]}
+        crumbsLd={false}
+        eyebrow="Search data, 2026"
+        title={TITLE}
+        sub={
+          <>
+            We measured Google searches for {STUDY.verses} well-known Bhagavad Gita verses from {STUDY.window}, using Google Trends,
+            Ahrefs, and Search Console and visitor data from this site. Two verses take most of the searching, and in the US and UK the
+            most searched line is in English.
+          </>
+        }
+        below={
+          <p className="gjg-note sv-byline">
+            By Ankur Shukla · Published 29 October 2026 · <a href="#method">How we measured</a> · <a href={CSV} download>Download the data (CSV)</a>
+          </p>
+        }
+      />
 
       <main className="gjg sv">
-        <header className="gjg-head">
-          <div className="wrap">
-            <div className="gjg-col">
-              <nav className="gjg-crumbs" aria-label="Breadcrumb">
-                <a href="/">Home</a> / <a href="/gita">Bhagavad Gita</a> / <span>Most searched verses 2026</span>
-              </nav>
-              <div className="gjg-eyebrow">Search data, 2026</div>
-              <h1 className="gjg-h1">{TITLE}</h1>
-              <p className="gjg-lede">
-                We measured Google searches for {STUDY.verses} well-known Bhagavad Gita verses from {STUDY.window}, using Google Trends,
-                Ahrefs, and Search Console and visitor data from this site. Two verses take most of the searching, and in the US and UK the
-                most searched line is in English.
-              </p>
-              <p className="gjg-note">By Ankur Shukla · Published 29 October 2026 · <a href="#method">How we measured</a> · <a href={CSV} download>Download the data (CSV)</a></p>
-            </div>
-          </div>
-        </header>
-
-        <section className="section sv-findings-sec">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">What we found</h2>
+        <Section id="findings" width="narrow" title="What we found">
             <ol className="sv-findings">
               {FINDINGS.map((f, i) => (
                 <li key={i}>{f}</li>
               ))}
             </ol>
-          </div>
-        </section>
+        </Section>
 
-        <section className="section section-alt" id="ranking">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">The ranking</h2>
+        <Section id="ranking" tone="band" width="narrow" title="The ranking">
+          <div className="sx-prose">
             <p>
               Google Trends does not give search counts. It gives each search a share of all searches in a region, so we set 2.47 to 100
               and scored every other verse against it, separately for the world and for India. A verse at 50 was searched half as much as
               2.47 in that region. Each verse counts its common spellings together, in Roman letters and Devanagari.
             </p>
+          </div>
             <VerseIndexChart verses={top} />
             <p className="gjg-note">
               The top 12 of {STUDY.verses}. Scores below 1 rest on very few searches and can move a lot. The <a href="#table">full table</a> has
               all {STUDY.verses}.
             </p>
-          </div>
-        </section>
+        </Section>
 
-        <section className="section">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">The six verses at the top</h2>
+        <Section id="top-six" width="narrow" title="The six verses at the top">
             <div className="gjg-picks">
               {FEATURED.map((f, i) => {
                 const d = verseData.get(f.ref)
@@ -279,31 +276,29 @@ export default async function MostSearchedVersesPage() {
                     <span className="gjg-pick-time">#{i + 1} worldwide · {f.ref}</span>
                     <h3 className="sv-h3">{f.heading}</h3>
                     {d && (
-                      <div className="gjg-verse">
-                        <div className="gjg-verse-ref">
-                          <a href={verseUrl(x.chapter, x.verse)} data-mp-location={`searched_verse_${x.chapter}_${x.verse}`}>
-                            {f.ref}
-                          </a>{' '}
-                          · {d.speaker}
-                        </div>
-                        <p className="gjg-verse-sa" lang="sa">{SANSKRIT_OVERRIDE[f.ref] ?? d.sanskrit}</p>
-                        <p className="gjg-verse-en">“{d.englishTranslation.replace(/^The Blessed Lord said:\s*/, '')}”</p>
-                      </div>
+                      <VerseCard
+                        className="gjg-versecard"
+                        size="compact"
+                        original={SANSKRIT_OVERRIDE[f.ref] ?? d.sanskrit}
+                        meaning={`“${d.englishTranslation.replace(/^The Blessed Lord said:\s*/, '')}”`}
+                        source={`${f.ref} · ${d.speaker}`}
+                        sourceHref={verseUrl(x.chapter, x.verse)}
+                      />
                     )}
-                    {f.body.map((b, k) => <p key={k}>{b}</p>)}
-                    <a className="gjg-day-go" href={verseUrl(x.chapter, x.verse)} data-mp-location={`searched_read_${x.chapter}_${x.verse}`}>
+                    <div className="sx-prose">
+                      {f.body.map((b, k) => <p key={k}>{b}</p>)}
+                    </div>
+                    <a className="sx-btn sx-btn--link" href={verseUrl(x.chapter, x.verse)} data-mp-location={`searched_read_${x.chapter}_${x.verse}`}>
                       Read {f.ref} with word meanings →
                     </a>
                   </article>
                 )
               })}
             </div>
-          </div>
-        </section>
+        </Section>
 
-        <section className="section section-alt" id="english">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">In the US and UK, people search the English</h2>
+        <Section id="english" tone="band" width="narrow" title="In the US and UK, people search the English">
+          <div className="sx-prose">
             <p>
               In the US, “i am become death” drew more than {usTimes} times the search interest of karmanye vadhikaraste and about{' '}
               {usShareOfGita}% as much as “bhagavad gita”. In the UK the Sanskrit lines barely register next to it. Ahrefs puts “i am become
@@ -316,28 +311,28 @@ export default async function MostSearchedVersesPage() {
               6.5 (uddhared atmanatmanam) shows the same pattern.
             </p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section" id="year">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Janmashtami, and a slower year</h2>
+        <Section id="year" width="narrow" title="Janmashtami, and a slower year">
+          <div className="sx-prose">
             <p>
               Searches for 4.7 reached their high for the year in the week of Janmashtami ({JANMASHTAMI.date}), {JANMASHTAMI.ratio} times
               its median week. 2.47 rose that week too, by less. On Krishna’s birthday, people look up the verse where he promises to
               return.
             </p>
+          </div>
             <WeeklyChart data={WEEKLY_INDIA} markWeek={JANMASHTAMI.week} markLabel="30 Aug" />
+          <div className="sx-prose">
             <p>
               Across the year the share of searches for both lines drifted down: October was {Math.abs(JAN_TO_OCT.v47)}% below January for 4.7 and{' '}
               {Math.abs(JAN_TO_OCT.v247)}% for 2.47. Google Trends cannot say why. One possibility is that more people now get the meaning
               from an AI answer without searching again.
             </p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section section-alt" id="by-number">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">By the words, or by the number</h2>
+        <Section id="by-number" tone="band" width="narrow" title="By the words, or by the number">
+          <div className="sx-prose">
             <p>
               Our own Search Console data shows the other way people find a verse. From {GSC.window}, Google showed wisdomquotes.in for{' '}
               {GSC.queries} different searches that named one specific verse. {numericShare}% of those impressions came from searches typed as a number,
@@ -345,6 +340,7 @@ export default async function MostSearchedVersesPage() {
               reference in a class, a book or a post and wants the verse itself. This reflects the searches our site appears for; the famous lines above are mostly searched by their
               words.
             </p>
+          </div>
             <div className="gjg-table-wrap">
               <table className="gjg-table">
                 <caption className="sv-caption">Verses looked up most by number, excluding 2.47 (Google impressions for wisdomquotes.in)</caption>
@@ -362,6 +358,7 @@ export default async function MostSearchedVersesPage() {
                 </tbody>
               </table>
             </div>
+          <div className="sx-prose">
             <p>
               2.47 went the other way: {karmanyeWords}% of its {GSC.karmanye.impressions} impressions came from searches for its words.
             </p>
@@ -371,11 +368,9 @@ export default async function MostSearchedVersesPage() {
               <a href="/read-gita-in-18-days">18-day reading plan</a> is one way through.
             </p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section" id="table">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">All {STUDY.verses} verses</h2>
+        <Section id="table" width="narrow" title={`All ${STUDY.verses} verses`}>
             <div className="gjg-table-wrap">
               <table className="gjg-table sv-full">
                 <caption className="sv-caption">Google search interest, 1 Jan to 28 Oct 2026. 2.47 = 100 in each region.</caption>
@@ -395,12 +390,9 @@ export default async function MostSearchedVersesPage() {
                 </tbody>
               </table>
             </div>
-          </div>
-        </section>
+        </Section>
 
-        <section className="section section-alt" id="method">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">How we measured</h2>
+        <Section id="method" tone="band" width="narrow" title="How we measured">
             <ul className="sv-method">
               <li>
                 <strong>Google Trends</strong>, web search, {STUDY.window}, read on 29 October 2026. We chose {STUDY.verses} verses that are
@@ -433,54 +425,38 @@ export default async function MostSearchedVersesPage() {
               </li>
             </ul>
             <p>
-              <a className="gjg-day-go" href={CSV} download data-mp-location="searched_csv">Download the data (CSV) →</a>
+              <a className="sx-btn sx-btn--link" href={CSV} download data-mp-location="searched_csv">Download the data (CSV) →</a>
             </p>
             <p className="gjg-note">
               To cite: Wisdom (wisdomquotes.in), “{TITLE}”, 29 October 2026, {URL}. The data is free to reuse with a link to this page.
             </p>
-          </div>
-        </section>
+        </Section>
 
-        <section className="section">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Questions</h2>
-            <div className="gjg-faq">
-              {FAQ.map((f) => (
-                <details key={f.q}>
-                  <summary>{f.q}</summary>
-                  <p>{f.a}</p>
-                </details>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Section id="faq" width="narrow" title="Questions">
+          <Faq items={FAQ} ld={false} />
+        </Section>
 
-        <section className="section section-alt gjg-cta">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Or start from what you’re facing</h2>
-            <p>Tell Wisdom what’s going on and it picks a verse a day for seven days, with what each one means for you.</p>
-            <HeroPlanCTA campaign="web_searched_2026" location="searched_create_plan" pageName="Most Searched Verses 2026" />
-          </div>
-        </section>
+        <Section
+          id="your-plan"
+          tone="band"
+          width="narrow"
+          title="Or start from what you’re facing"
+          intro="Tell Wisdom what’s going on and it picks a verse a day for seven days, with what each one means for you."
+        >
+          <Actions items={[planAction({ campaign: 'web_searched_2026', location: 'searched_create_plan' })]} />
+          <PlanFine />
+        </Section>
 
-        <section className="section gjg-related">
-          <div className="wrap">
-            <h2 className="gjg-h2">For Gita Jayanti, 20 December</h2>
-            <div className="gjg-related-grid">
-              {[
-                { href: '/gita-jayanti', title: 'Gita Jayanti 2026', dek: 'The date, the Ekadashi tithi timings and a countdown.' },
-                { href: '/read-gita-in-18-days', title: 'Read the Gita in 18 days', dek: 'One chapter a day, finishing on Gita Jayanti.' },
-                { href: '/gita-jayanti/which-chapter-to-read', title: 'Which chapter to read', dek: 'What to read with five minutes, twenty, or the whole day.' },
-              ].map((c) => (
-                <a key={c.href} href={c.href} className="gjg-related-card" data-mp-location={`searched_related_${c.href.replace(/\W+/g, '_')}`}>
-                  <span className="gjg-related-title">{c.title}</span>
-                  <span className="gjg-related-dek">{c.dek}</span>
-                  <span className="gjg-related-go" aria-hidden="true">→</span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Section id="jayanti" title="For Gita Jayanti, 20 December">
+          <LinkCards
+            columns={3}
+            items={[
+              { href: '/gita-jayanti', title: 'Gita Jayanti 2026', body: 'The date, the Ekadashi tithi timings and a countdown.' },
+              { href: '/read-gita-in-18-days', title: 'Read the Gita in 18 days', body: 'One chapter a day, finishing on Gita Jayanti.' },
+              { href: '/gita-jayanti/which-chapter-to-read', title: 'Which chapter to read', body: 'What to read with five minutes, twenty, or the whole day.' },
+            ].map((c) => ({ ...c, location: `searched_related_${c.href.replace(/\W+/g, '_')}` }))}
+          />
+        </Section>
       </main>
 
       <SiteFooter />

@@ -1,18 +1,16 @@
 'use client'
 
 import { useRef, type ReactNode } from 'react'
-import { mbTrack } from './track'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
-/** "Their choice": the moment is visible; opening shows the verse and what it meant. A house story card. */
+/** "Their choice": the moment is visible; opening shows the verse (a kit VerseCard) and what it meant. */
 export default function ChoiceCard({
   person,
   moment,
-  page,
   children,
 }: {
   person: string
   moment: string
-  page: string
   children: ReactNode
 }) {
   const sent = useRef(false)
@@ -23,7 +21,7 @@ export default function ChoiceCard({
       onToggle={(e) => {
         if ((e.currentTarget as HTMLDetailsElement).open && !sent.current) {
           sent.current = true
-          mbTrack('Character Choice Opened', page, 'en', { person })
+          trackEvent(EVENTS.CharacterChoiceOpened, { item_id: person, item_type: 'character' })
         }
       }}
     >

@@ -21,7 +21,7 @@ export const VIV_THEME_COPY: Record<VivTheme, {
     label: 'For students',
     labelHi: 'विद्यार्थियों के लिए',
     title: 'Vivekananda Quotes for Students, With Sources',
-    description: 'Swami Vivekananda quotes for students, each checked against his Complete Works with the volume and work. Copy, share or save as an image.',
+    description: 'Swami Vivekananda quotes for students, each checked against his Complete Works with the volume and work.',
     h1: 'Vivekananda quotes for students',
     promise: 'Lines he spoke to young people about focus, strength and learning, each one checked against his Complete Works.',
     quick:
@@ -84,7 +84,7 @@ export const VIV_HUB = {
     title: 'Vivekananda Quotes: 61 Lines Checked Against His Works',
     description: 'Swami Vivekananda quotes checked against his Complete Works, vols 1 to 8, each with its volume and work. Plus nine popular lines he never said as written.',
     h1: 'Vivekananda quotes, checked against his own words',
-    promise: 'Every line here is checked against his Complete Works. Tap the source on any card to read the paragraph it comes from.',
+    promise: 'Find the line you came looking for, and read the lecture or letter where he said it.',
     quick:
       'Swami Vivekananda\'s best known line, "Arise, awake, and stop not till the goal is reached", is from his Calcutta address of 1897 (Complete Works vol 3), adapted from Katha Upanishad 1.3.14. Below are 61 lines checked against volumes 1 to 8, each with its volume and work, and nine popular lines he never said as written.',
     faq: [
@@ -100,7 +100,7 @@ export const VIV_HUB = {
     title: 'स्वामी विवेकानंद के अनमोल वचन, मूल स्रोत के साथ',
     description: 'स्वामी विवेकानंद के 61 विचार, कम्प्लीट वर्क्स से जाँचे हुए, हर एक का हिंदी अर्थ और खंड। साथ में वे पंक्तियाँ जो उन्होंने ऐसे कभी नहीं कहीं।',
     h1: 'स्वामी विवेकानंद के अनमोल वचन, उन्हीं के शब्दों में',
-    promise: 'हर पंक्ति उनकी कम्प्लीट वर्क्स से मिलाई गई है। मूल अंग्रेज़ी के साथ हमारा हिंदी अर्थ। किसी भी कार्ड पर स्रोत दबाएं और वह अनुच्छेद पढ़ें।',
+    promise: 'जो पंक्ति आप ढूँढ रहे थे, उसे खोजिए, और पढ़िए कि स्वामीजी ने उसे किस व्याख्यान या पत्र में कहा।',
     quick:
       'स्वामी विवेकानंद का सबसे मशहूर वचन "उठो, जागो, और लक्ष्य मिलने तक मत रुको" 1897 में कलकत्ता के अभिनंदन के उत्तर में कहा गया (कम्प्लीट वर्क्स खंड 3)। यह कठोपनिषद 1.3.14 से लिया गया है। यहाँ खंड 1 से 8 से जाँचे गए 61 वचन हैं, और नौ ऐसी पंक्तियाँ जो उन्होंने ऐसे नहीं कहीं।',
     faq: [
@@ -115,7 +115,7 @@ export const VIV_HUB = {
 }
 
 export const THEME_INTRO: Record<VivTheme, { en: string; hi: string }> = {
-  students: { en: 'For exam weeks, first jobs and the year you are deciding what to become.', hi: 'परीक्षा के दिनों, पहली नौकरी और आगे क्या बनना है, उस साल के लिए।' },
+  students: { en: 'For exam weeks, and for the year you are deciding what to become.', hi: 'परीक्षा के दिनों के लिए, और उस साल के लिए जब आप तय कर रहे हों कि आगे क्या बनना है।' },
   education: { en: 'What he thought teaching and learning are for.', hi: 'पढ़ने-पढ़ाने का असली मकसद, उनकी नज़र में।' },
   'fear-and-strength': { en: 'For the night before something you are afraid of.', hi: 'किसी डराने वाले काम से पहले की रात के लिए।' },
   'work-and-success': { en: 'For the work in front of you, and the days it goes badly.', hi: 'सामने वाले काम के लिए, और उन दिनों के लिए जब वह बिगड़ जाए।' },

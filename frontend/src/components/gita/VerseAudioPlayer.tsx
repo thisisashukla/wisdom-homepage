@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useCallback, useEffect } from 'react'
 import type { AudioTimestamp } from '@/lib/gita'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import SanskritText from './SanskritText'
 
 interface Props {
@@ -77,7 +77,7 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
       rafRef.current = requestAnimationFrame(tick)
       if (!hasTracked.current) {
         hasTracked.current = true
-        trackEvent('Shloka Played', {
+        trackEvent(EVENTS.ShlokaPlayed, {
           chapter,
           verse,
           shloka: chapter && verse ? `${chapter}.${verse}` : undefined,

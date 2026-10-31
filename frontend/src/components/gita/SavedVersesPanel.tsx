@@ -8,7 +8,7 @@
 import { useEffect, useState } from 'react'
 import indexJson from '@/content/gita/index.json'
 import type { IndexEntry } from '@/lib/gita'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 const KEY = 'wisdom.bookmarks'
 
@@ -62,7 +62,7 @@ export default function SavedVersesPanel({ locale = 'en' as 'en' | 'hi' }) {
             <a
               href={path(v.chapter, v.verse)}
               data-mp-location="saved_verse"
-              onClick={() => trackEvent('Saved Verse Opened', { chapter: v.chapter, verse: v.verse, locale })}
+              onClick={() => trackEvent(EVENTS.SavedVerseOpened, { chapter: v.chapter, verse: v.verse, locale })}
             >
               <span className="gita-verse-num">{v.chapter}.{v.verse}</span>
               <span className="gita-verse-snippet">{v.essence || v.snippet}</span>

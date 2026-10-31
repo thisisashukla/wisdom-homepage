@@ -1,34 +1,29 @@
 import type { Metadata } from 'next'
-import BlogTracker from '@/components/BlogTracker'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, ScriptToggle, Section } from '@/components/site'
 import Mala from '@/components/funnels/hanuman-chalisa/Mala'
-import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { MeaningTracker, PrintButton } from '@/components/funnels/hanuman-chalisa/Trackers'
-import { Faq, FullText, HcNextStep, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
-import HcHero, { HeroLine } from '@/components/funnels/hanuman-chalisa/Hero'
+import { FullText, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
+import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
 import {
-  abs,
-  AUTHOR_LD,
   beads,
-  breadcrumbLd,
   cardOg,
   chalisaWorkLd,
   COUNTER_PATH,
   editionCitation,
-  faqLd,
   getUnits,
   HOW_MANY_PATH,
   HUB_PATH,
+  HUB_PATH_HI,
   HUB_TWIN,
   JAYANTI_PATH,
   LEARN_PATH,
-  ldJson,
   linePath,
-  pageMeta,
-  PUBLISHER_LD,
+  NEXT_COPY,
+  START_SITUATION,
+  unitVerse,
   UPDATED,
 } from '@/lib/funnels/hanuman-chalisa'
-
-const PAGE = 'hanuman-chalisa-hub'
 
 export const metadata: Metadata = pageMeta({
   title: 'Hanuman Chalisa in English, Meaning Line by Line | Wisdom',
@@ -92,133 +87,83 @@ export default function HanumanChalisaHub() {
     numberOfItems: units.length,
     itemListElement: units.map((u) => ({ '@type': 'ListItem', position: u.pos, name: `${u.label.en}: ${u.iast[0]}`, url: abs(linePath(u.slug)) })),
   }
-  const crumbs = breadcrumbLd([
-    { name: 'Wisdom', path: '/' },
-    { name: 'Hanuman Chalisa', path: HUB_PATH },
-  ])
 
   const d1 = units[0]
 
   return (
-    <main className="hc-main">
-      <BlogTracker pageName={PAGE} />
-      <MeaningTracker page={PAGE} locale="en" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([workLd, listLd, crumbs, faqLd(FAQ)]) }} />
+    <main>
+      <PageTracker pageName="Hanuman Chalisa Hub" />
+      <MeaningTracker />
+      <JsonLd data={[workLd, listLd]} />
 
-      <HcHero
-        crumbs={
-          <nav className="hc-crumbs hc-noprint" aria-label="Breadcrumb">
-            <a href="/">Wisdom</a> / <span>Hanuman Chalisa</span> /{' '}
-            <a href="/hi/hanuman-chalisa" hrefLang="hi" lang="hi">
-              हिंदी में
-            </a>
-          </nav>
-        }
+      <PageHero
+        crumbs={[{ label: 'Hanuman Chalisa', href: HUB_PATH }]}
         eyebrow="Tulsidas, in Awadhi"
         title="Hanuman Chalisa in English, line by line"
         sub={
-          <>
+          <span id="quick-answer">
             The Hanuman Chalisa is a 43-line Awadhi hymn to Hanuman by Goswami Tulsidas: two opening dohas, forty chaupais and a closing
-            doha. Below is the full text in the Gita Press reading, in Devanagari or English letters, with the meaning of every line one
-            tap away. Each line also has its own page, word by word.
-          </>
+            doha. Read it slowly, a line at a time, and stop on any line whose meaning you want to know before you say it again.
+          </span>
         }
-        facts={['43 lines', 'Gita Press reading', 'Meaning for every line']}
-        actions={
-          <a href="#hc-text" className="btn-read-gita btn-read-gita-primary" data-mp-location="hub_hero_read">
-            Read it line by line
-          </a>
-        }
-        links={
-          <>
-            <a href={LEARN_PATH} data-mp-location="hub_learn">
-              Learn it by heart, 4 lines a day
-            </a>
-            <a href={COUNTER_PATH} data-mp-location="hub_counter">
-              Count 11, 21 or 108
-            </a>
-          </>
-        }
-        visual={<HeroLine awadhi={d1.awadhi} iast={d1.iast} caption="Doha 1, the opening line" />}
+        facts={['Said on Tuesdays and Saturdays', '6 to 10 minutes to recite']}
+        actions={[
+          { href: '#hc-text', label: 'Read it line by line', location: 'hub_hero_read' },
+          { href: LEARN_PATH, label: 'Learn it by heart, 4 lines a day', location: 'hub_learn' },
+          { href: COUNTER_PATH, label: 'Count 11, 21 or 108', location: 'hub_counter' },
+          { href: HUB_PATH_HI, label: <span lang="hi">हिंदी में</span>, location: 'hub_hindi', hrefLang: 'hi' },
+        ]}
+        verse={{ ...unitVerse(d1), label: 'Doha 1, the opening line' }}
       />
 
-      <section className="section hc-band" id="hc-text" aria-labelledby="hc-text-h">
-        <div className="wrap">
-          <div className="sec-head hc-sec-head rv">
-            <p className="eyebrow">43 lines</p>
-            <h2 className="heading" id="hc-text-h">
-              The full text
-            </h2>
-            <div className="hc-controls hc-noprint">
-              <ScriptToggle locale="en" page={PAGE} />
-              <PrintButton label="Print the text" page={PAGE} locale="en" />
-            </div>
-            <p className="hc-note">
-              The English letters follow the way the Chalisa is sung: the short a at the end of a word is dropped, so जय reads jay and ज्ञान
-              reads jñān.
-            </p>
-          </div>
-
-          <div className="hc-read">
-            <aside className="hc-read-aside" aria-label="Mala: one bead for each line">
-              <Mala beads={beadList} locale="en" page={PAGE} mode="anchor" currentId="hc.d1" label="Mala of 43 beads, one for each line" caption="One bead for each of the 43 lines. Tap a bead to go to its line.">
-                <span className="hc-mala-name">Hanuman Chalisa</span>
-                <span className="hc-mala-sub">2 dohas, 40 chaupais, 1 doha</span>
-              </Mala>
-            </aside>
-            <div className="rv">
-              <FullText units={units} locale="en" />
-            </div>
-          </div>
+      <Section id="hc-text" tone="band" eyebrow="43 lines" title="The full text">
+        <div className="hc-controls hc-noprint">
+          <ScriptToggle />
+          <PrintButton label="Print the text" />
         </div>
-      </section>
+        <p className="hc-note">
+          The English letters follow the way the Chalisa is sung: the short a at the end of a word is dropped, so जय reads jay and ज्ञान
+          reads jñān.
+        </p>
 
-      <section className="section section-alt hc-band hc-noprint" aria-labelledby="hc-gita-h">
-        <div className="wrap hc-col">
-          <div className="hc-bridge rv">
-            <p className="eyebrow">The thread to the Gita</p>
-            <h2 className="hc-h2" id="hc-gita-h">
-              Hanuman in the Gita
-            </h2>
-            <div className="hc-prose">
-              <p>
-                Hanuman is on Arjuna&apos;s chariot at Kurukshetra. In the Bhagavad Gita, Arjuna is called kapi-dhvaja, the one whose
-                banner bears the vanara, as he lifts his bow just before the dialogue with Krishna begins.{' '}
-                <a className="hc-gita" href="/gita/chapter/1/verse/20" data-mp-location="hub_gita_1_20">
-                  Read Bhagavad Gita 1.20
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <h2 className="hc-h2 rv" id="hc-more-h" style={{ marginTop: 56 }}>
-            Reciting it
-          </h2>
-          <ul className="hc-tiles" aria-labelledby="hc-more-h" data-stagger="60">
-            <li className="rv">
-              <a className="hc-tile" href={HOW_MANY_PATH} data-mp-location="hub_how_many">
-                <strong>How many times to recite it</strong>
-                <span>Once, 11, 21, 108, or a 40-day vow</span>
-              </a>
-            </li>
-            <li className="rv">
-              <a className="hc-tile" href={JAYANTI_PATH} data-mp-location="hub_jayanti">
-                <strong>Hanuman Jayanti, 20 April 2027</strong>
-                <span>A one-week family plan</span>
-              </a>
-            </li>
-          </ul>
+        <div className="hc-read hc-gap">
+          <aside className="hc-read-aside" aria-label="Mala: one bead for each line">
+            <Mala beads={beadList} locale="en" mode="anchor" currentId="hc.d1" label="Mala of 43 beads, one for each line" caption="One bead for each of the 43 lines. Tap a bead to go to its line.">
+              <span className="hc-mala-name">Hanuman Chalisa</span>
+              <span className="hc-mala-sub">2 dohas, 40 chaupais, 1 doha</span>
+            </Mala>
+          </aside>
+          <FullText units={units} locale="en" />
         </div>
-      </section>
+      </Section>
 
-      <Faq items={FAQ} locale="en" heading="Questions people ask" />
+      <Section id="hc-gita" eyebrow="The thread to the Gita" title="Hanuman in the Gita" className="hc-noprint">
+        <GitaBridge
+          href="/gita/chapter/1/verse/20"
+          label="Read Bhagavad Gita 1.20"
+          why="Hanuman is on Arjuna's chariot at Kurukshetra. In the Bhagavad Gita, Arjuna is called kapi-dhvaja, the one whose banner bears the vanara, as he lifts his bow just before the dialogue with Krishna begins."
+          location="hub_gita_1_20"
+          className="rv"
+        />
+      </Section>
 
-      <section className="section section-alt hc-band">
-        <div className="wrap hc-col">
-          <HcNextStep locale="en" pageName={PAGE} pageKey="hc-hub" placement="hub_end" />
-          <Sources locale="en" />
-        </div>
-      </section>
+      <Section id="hc-more" tone="band" title="Reciting it" className="hc-noprint">
+        <LinkCards
+          items={[
+            { href: HOW_MANY_PATH, title: 'How many times to recite it', body: 'Once, 11, 21, 108, or a 40-day vow', location: 'hub_how_many' },
+            { href: JAYANTI_PATH, title: 'Hanuman Jayanti, 20 April 2027', body: 'A one-week family plan', location: 'hub_jayanti' },
+          ]}
+        />
+      </Section>
+
+      <Section id="hc-faq" title="Questions people ask">
+        <Faq items={FAQ} />
+      </Section>
+
+      <Section tone="band" className="hc-next">
+        <NextStep locale="en" pageKey="hc-hub" placement="hub_end" startSituation={START_SITUATION} copy={NEXT_COPY.en} />
+        <Sources locale="en" />
+      </Section>
     </main>
   )
 }

@@ -13,12 +13,14 @@
  *   Theme Audio Played     a recitation starts {verse, ref}
  *   Theme Translation Opened / Theme FAQ Opened   {verse, ref} / {question}
  *   Theme CTA Seen         the "create your own" block is 40% in view {verses_read}
- *   (clicks via BlogTracker data-mp-event: Theme CTA Clicked, Theme Strip Clicked, Theme Verse Opened,
- *    Theme Related Clicked, Theme Further Reading Clicked, Theme Continue Clicked)
+ *   Theme CTA Clicked      the hero's "Read the first verse" {cta: 'start_verse_1'} (sent here; the app link sends
+ *                          its own via data-mp-event {cta: 'app_store'})
+ *   (other clicks via BlogTracker data-mp-event: Theme Strip Clicked, Theme Verse Page Opened,
+ *    Theme Related Clicked, Theme Further Reading Clicked; Theme Continue Clicked is sent here)
  *   Theme Plan Exit        page hidden/closed (beacon) {verses_seen, verses_read, max_verse_seen, max_verse_read, coverage_pct, seconds_on_page, completed, audio_plays}
  */
 import { useEffect } from 'react'
-import { trackEvent, trackEventBeacon } from '@/lib/mixpanel'
+import { EVENTS, trackEvent, trackEventBeacon } from '@/lib/mixpanel'
 
 type DayMeta = { day: number; phase: string; ref: string | null; words: number }
 
@@ -74,7 +76,7 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
     } catch {
       /* bad referrer */
     }
-    trackEvent('Theme Plan Viewed', {
+    trackEvent(EVENTS.ThemePlanViewed, {
       ...base,
       returning: before.size > 0,
       verses_read_before: before.size,
@@ -93,9 +95,9 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
       if (el.dataset.track === 'translation') {
         const card = el.closest<HTMLElement>('.tp-day')
         const d = Number(card?.dataset.day)
-        trackEvent('Theme Translation Opened', { ...base, verse: d, ref: meta.get(d)?.ref })
+        trackEvent(EVENTS.ThemeTranslationOpened, { ...base, verse: d, ref: meta.get(d)?.ref })
       } else if (el.dataset.track === 'faq') {
-        trackEvent('Theme FAQ Opened', { ...base, question: el.dataset.q })
+        trackEvent(EVENTS.ThemeFaqOpened, { ...base, question: el.dataset.q })
       }
     }
     root.addEventListener('toggle', onToggle, true)
@@ -106,7 +108,7 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
     if (cta) {
       ctaObs = new IntersectionObserver(([e]) => {
         if (!e.isIntersecting) return
-        trackEvent('Theme CTA Seen', { ...base, verses_read: read.size })
+        trackEvent(EVENTS.ThemeCtaSeen, { ...base, verses_read: read.size })
         ctaObs?.disconnect()
       }, { threshold: 0.4 })
       ctaObs.observe(cta)
@@ -139,12 +141,17 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
       cont.href = `#verse-${next}`
       cont.querySelector('span')!.textContent = `Pick up at verse ${next}`
       cont.hidden = false
-      cont.addEventListener('click', () => trackEvent('Theme Continue Clicked', { ...base, verse: next }))
+      cont.addEventListener('click', () => trackEvent(EVENTS.ThemeContinueClicked, { ...base, verse: next }))
     }
     paint()
 
+    // The hero's "Read the first verse" is a kit Button (no data-mp-event), so its Theme CTA Clicked is sent here.
+    const start = root.querySelector<HTMLAnchorElement>(`a[data-mp-location="theme_${slug}_start"]`)
+    const onStart = () => trackEventBeacon(EVENTS.ThemeCtaClicked, { theme: slug, cta: 'start_verse_1', location: `theme_${slug}_start`, href: start?.getAttribute('href') })
+    start?.addEventListener('click', onStart)
+
     // Show the pill once the hero is gone.
-    const hero = root.querySelector('.tp-hero')
+    const hero = root.querySelector('.sx-hero')
     let heroObs: IntersectionObserver | null = null
     if (hero && pill) {
       heroObs = new IntersectionObserver(([e]) => pill.classList.toggle('is-on', !e.isIntersecting), { threshold: 0 })
@@ -160,10 +167,10 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
       if (read.has(d)) return
       read.add(d)
       const m = meta.get(d)
-      trackEvent('Theme Verse Read', { ...base, verse: d, phase: m?.phase, ref: m?.ref, seconds: Math.round((dwell.get(d) ?? 0) / 1000) })
+      trackEvent(EVENTS.ThemeVerseRead, { ...base, verse: d, phase: m?.phase, ref: m?.ref, seconds: Math.round((dwell.get(d) ?? 0) / 1000) })
       const n = read.size
-      if (n === 3 || n === 5 || n === 7) trackEvent('Theme Plan Progress', { ...base, verses_read: n })
-      if (d === 7 && n >= 5) trackEvent('Theme Plan Completed', { ...base, verses_read: n })
+      if (n === 3 || n === 5 || n === 7) trackEvent(EVENTS.ThemePlanProgress, { ...base, verses_read: n })
+      if (d === 7 && n >= 5) trackEvent(EVENTS.ThemePlanCompleted, { ...base, verses_read: n })
       const s = load()
       s[slug] = { read: Array.from(read).sort(), at: Date.now() }
       save(s)
@@ -189,7 +196,7 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
           if (!seen.has(d)) {
             seen.add(d)
             const m = meta.get(d)
-            trackEvent('Theme Verse Seen', { ...base, verse: d, phase: m?.phase, ref: m?.ref })
+            trackEvent(EVENTS.ThemeVerseSeen, { ...base, verse: d, phase: m?.phase, ref: m?.ref })
             paint()
           }
         }
@@ -244,7 +251,7 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
       if (!card) return
       audioPlays += 1
       const d = Number(card.dataset.day)
-      trackEvent('Theme Audio Played', { ...base, verse: d, ref: meta.get(d)?.ref })
+      trackEvent(EVENTS.ThemeAudioPlayed, { ...base, verse: d, ref: meta.get(d)?.ref })
     }
     document.addEventListener('play', onPlay, true)
 
@@ -256,7 +263,7 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
       const now = Date.now()
       visibleSince.forEach((_, d) => flush(d, now))
       const maxOf = (s: Set<number>) => (s.size ? Math.max(...Array.from(s)) : 0)
-      trackEventBeacon('Theme Plan Exit', {
+      trackEventBeacon(EVENTS.ThemePlanExit, {
         ...base,
         verses_seen: seen.size,
         verses_read: read.size,
@@ -283,6 +290,7 @@ export default function ThemePlanClient({ slug, variant, days }: Props) {
       ctaObs?.disconnect()
       root.removeEventListener('toggle', onToggle, true)
       heroObs?.disconnect()
+      start?.removeEventListener('click', onStart)
       window.clearInterval(tick)
       window.removeEventListener('scroll', onScroll)
       cancelAnimationFrame(raf)

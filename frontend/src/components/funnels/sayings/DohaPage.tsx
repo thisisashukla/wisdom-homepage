@@ -1,15 +1,13 @@
 /** /hi/kabir-ke-dohe/[slug]: one doha (Hindi). Server. */
 
-import { BlogTracker } from '@/components/BlogTracker'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, PageHero, Section } from '@/components/site'
 import { dohe, kabirSources, type Doha } from '@/lib/funnels/sayings/data'
 import { FOUND_SHORT, KAB_PATH, KAB_PATH_EN, KAB_THEME, dohaPath } from '@/lib/funnels/sayings/copy-kabir'
-import { cardOg, ldArticle, ldBreadcrumb, ldFaq, ldQuotation } from '@/lib/funnels/sayings/seo'
-import DevaCard from './DevaCard'
-import FxNextStep from './FxNextStep'
-import ScriptToggle from './ScriptToggle'
-import { dohaShareText, foundChip, kabirCardId } from './KabirHub'
-import { DailyBand, Faq, Head, JsonLd, Method, Related, Sec, Shell } from './parts'
-import { tiroHi, tiroSa } from './fonts'
+import { cardOg, ldArticle, ldQuotation } from '@/lib/funnels/sayings/seo'
+import { devaVerseProps } from './cards'
+import { dohaShareText, foundIn, kabirCardId } from './KabirHub'
+import { Method, NextBand, Related } from './parts'
 
 export const dohaTitle = (d: Doha): string => {
   const first = d.lines[0].replace(/[।॥,]/g, '').trim()
@@ -20,7 +18,6 @@ export const dohaTitle = (d: Doha): string => {
 export default function DohaPage({ doha: d }: { doha: Doha }) {
   const path = dohaPath(d.slug)
   const pageKey = `kabir-doha-${d.slug}`.slice(0, 40).replace(/-+$/, '')
-  const pageName = `Kabir Doha ${d.slug}`
   const first = d.lines[0].replace(/[।॥]/g, '').trim()
   const src = kabirSources()
   const all = dohe()
@@ -37,11 +34,6 @@ export default function DohaPage({ doha: d }: { doha: Doha }) {
     { q: 'What does this doha mean in English?', a: d.meaning.en },
   ]
   const ld = [
-    ldBreadcrumb([
-      { name: 'Wisdom', path: '/' },
-      { name: 'कबीर के दोहे', path: KAB_PATH },
-      { name: first, path },
-    ]),
     ldArticle({
       headline: dohaTitle(d),
       description: d.meaning.hi,
@@ -61,90 +53,84 @@ export default function DohaPage({ doha: d }: { doha: Doha }) {
         citation: d.foundIn.map((f) => src[f].en).join('; '),
       }),
     },
-    ldFaq(faq),
   ]
   return (
-    <Shell hub="kabir" locale="hi" fonts={`${tiroHi.variable} ${tiroSa.variable}`} script>
-      <BlogTracker pageName={pageName} />
-      {ld.map((x, k) => (
-        <JsonLd key={k} data={x} />
-      ))}
-      <Head
-        crumbs={[{ label: 'होम', href: '/' }, { label: 'कबीर के दोहे', href: KAB_PATH }, { label: first }]}
+    <>
+      <PageTracker pageName="Kabir Doha HI" />
+      <JsonLd data={ld} />
+      <PageHero
         locale="hi"
+        crumbs={[
+          { label: 'कबीर के दोहे', href: KAB_PATH },
+          { label: first, href: path },
+        ]}
         eyebrow={FOUND_SHORT[d.foundIn[0]].hi}
-        h1={`${first}: अर्थ सहित`}
-        quick={quick}
-      >
-        <div className="fx-head-tools rv">
-          <ScriptToggle locale="hi" />
+        title={`${first}: अर्थ सहित`}
+        actions={[{ href: '#shabd', label: 'शब्दार्थ', location: 'doha_hero_words' }]}
+        below={
+          <p id="quick-answer" className="fx-quick">
+            {quick}
+          </p>
+        }
+        verse={devaVerseProps({
+          id: d.id,
+          hub: 'kabir',
+          lines: d.lines,
+          roman: d.roman,
+          lang: 'hi',
+          meaning: d.meaning.hi,
+          meaning2: { text: d.meaning.en, lang: 'en' },
+          gloss: d.gloss,
+          source: foundIn(d, 'hi'),
+          cardId: kabirCardId(d),
+          locale: 'hi',
+          pageKey,
+          section: d.theme,
+          shareText: dohaShareText(d, 'hi'),
+          fileStem: `kabir-doha-${d.slug}`,
+          reveal: false,
+        })}
+      />
+
+      <Section id="shabd" width="narrow" title="शब्दार्थ">
+        <dl className="fx-words rv">
+          {d.gloss.map((g) => (
+            <div key={g.w}>
+              <dt lang="hi">{g.w}</dt>
+              <dd>
+                {g.hi} <span lang="en">({g.en})</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
+      <Section id="src" tone="band" width="narrow" title="यह दोहा कहाँ मिलता है">
+        <div className="sx-prose">
+          <p>
+            {d.foundIn.map((f) => src[f].hi).join(' और ')}।{' '}
+            {d.foundIn.includes('sung')
+              ? 'यह दोहा कबीर ग्रंथावली या कविता-कौमुदी में इस रूप में नहीं मिला, पर लोक और भजन गायकी में कबीर के नाम से गाया जाता है।'
+              : 'छपे हुए संग्रह में मिलना इसे कबीर की परंपरा से जोड़ता है, क्योंकि कबीर ने खुद कुछ नहीं लिखा।'}{' '}
+            <a href={d.record.url} rel="noopener" target="_blank">
+              स्रोत पाठ
+            </a>
+          </p>
+          <p>{`विषय: ${KAB_THEME[d.theme].hi}।`}</p>
         </div>
-      </Head>
+      </Section>
 
-      <div className="fx-hero rv">
-        <DevaCard
-          id={d.id}
-          hub="kabir"
-          lines={d.lines}
-          roman={d.roman}
-          lang="hi"
-          meaning={d.meaning.hi}
-          meaning2={{ text: d.meaning.en, lang: 'en' }}
-          gloss={d.gloss}
-          chip={foundChip(d, 'hi')}
-          cardId={kabirCardId(d)}
-          locale="hi"
-          pageName={pageName}
-          pageKey={pageKey}
-          section={d.theme}
-          shareText={dohaShareText(d, 'hi')}
-          fileStem={`kabir-doha-${d.slug}`}
-          variant="hero"
-          reveal={false}
-        />
-      </div>
+      <NextBand heading="एक पंक्ति रोज़ अपने साथ रखें" hub="kabir" locale="hi" pageKey={pageKey} />
 
-      <div className="qp-sections">
-        <Sec hid="shabd-h" heading="शब्दार्थ">
-          <dl className="fx-words rv">
-            {d.gloss.map((g) => (
-              <div key={g.w}>
-                <dt lang="hi">{g.w}</dt>
-                <dd>
-                  {g.hi} <span lang="en">({g.en})</span>
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </Sec>
-      </div>
-
-      <section className="qp-extra" aria-labelledby="src-h">
-        <h2 id="src-h" className="qp-h2 rv">
-          यह दोहा कहाँ मिलता है
-        </h2>
-        <p>
-          {d.foundIn.map((f) => src[f].hi).join(' और ')}।{' '}
-          {d.foundIn.includes('sung')
-            ? 'यह दोहा कबीर ग्रंथावली या कविता-कौमुदी में इस रूप में नहीं मिला, पर लोक और भजन गायकी में कबीर के नाम से गाया जाता है।'
-            : 'छपे हुए संग्रह में मिलना इसे कबीर की परंपरा से जोड़ता है, क्योंकि कबीर ने खुद कुछ नहीं लिखा।'}{' '}
-          <a href={d.record.url} rel="noopener" target="_blank">
-            स्रोत पाठ
-          </a>
-        </p>
-        <p>{`विषय: ${KAB_THEME[d.theme].hi}।`}</p>
-      </section>
-
-      <DailyBand heading="एक पंक्ति रोज़ अपने साथ रखें" label="आगे">
-        <FxNextStep hub="kabir" locale="hi" pageName={pageName} pageKey={pageKey} placement="end" />
-      </DailyBand>
-
-      <Faq items={faq} heading="लोग अक्सर पूछते हैं" />
+      <Section id="faq" width="narrow" title="लोग अक्सर पूछते हैं">
+        <Faq items={faq} locale="hi" />
+      </Section>
       <Method heading="स्रोत और तरीका">
         <p>{`पाठ: ${d.record.section}।${d.fixes.length ? ` टाइपिंग की गलती ठीक की गई: ${d.fixes.map((f) => `${f.from} से ${f.to}`).join(', ')}।` : ''} अर्थ और शब्दार्थ Wisdom के अपने हैं।`}</p>
       </Method>
       <Related
         heading="आगे पढ़ें"
+        locale="hi"
         links={[
           ...sameTheme.map((x) => ({
             href: dohaPath(x.slug),
@@ -162,6 +148,6 @@ export default function DohaPage({ doha: d }: { doha: Doha }) {
           { href: KAB_PATH_EN, label: 'Kabir dohe in English' },
         ]}
       />
-    </Shell>
+    </>
   )
 }

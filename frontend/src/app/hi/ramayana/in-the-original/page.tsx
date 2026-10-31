@@ -1,22 +1,21 @@
 import type { Metadata } from 'next'
-import BlogTracker from '@/components/BlogTracker'
-import NextStep from '@/components/quotes/NextStep'
-import Shell from '@/components/funnels/ramayana/Shell'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, LinkCards, NextStep, PageHero, Section } from '@/components/site'
 import SceneLedger from '@/components/funnels/ramayana/SceneLedger'
 import LampLegend from '@/components/funnels/ramayana/LampLegend'
 import KeepCards from '@/components/funnels/ramayana/KeepCards'
-import Hero from '@/components/funnels/ramayana/Hero'
-import { Band, Faq, JsonLd, MethodHi, Tiles } from '@/components/funnels/ramayana/Bits'
+import { Speaker } from '@/components/funnels/ramayana/LineVerse'
+import { MethodHi } from '@/components/funnels/ramayana/Method'
 import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
 import { SCENES, getLine, lineView } from '@/lib/funnels/ramayana/data'
 import { HUB_COUNTS, HUB_FAQ, HUB_QUICK } from '@/lib/funnels/ramayana/hubCopy'
 import { PATHS } from '@/lib/funnels/ramayana/paths'
-import { articleLd, breadcrumbLd, faqLd, itemListLd, pageMeta } from '@/lib/funnels/ramayana/seo'
+import { articleLd, itemListLd, ramayanaMeta } from '@/lib/funnels/ramayana/seo'
+import { lineOriginal } from '@/lib/funnels/ramayana/verse'
 
-const PAGE = 'ramayana-in-the-original-hi'
 const DESC = 'लक्ष्मण रेखा, अहल्या, केवट, शबरी के बेर: रामायण फ़िल्म के कौन से दृश्य वाल्मीकि में हैं और कौन से तुलसीदास के, मूल पंक्तियों और हिंदी अर्थ के साथ।'
 
-export const metadata: Metadata = pageMeta({
+export const metadata: Metadata = ramayanaMeta({
   title: 'लक्ष्मण रेखा, अहल्या, शबरी: मूल रामायण में क्या है',
   description: DESC,
   path: PATHS.hiOriginal,
@@ -26,81 +25,77 @@ export const metadata: Metadata = pageMeta({
 })
 
 export default function HiInTheOriginalPage() {
+  const hero = lineView(getLine('rcm-6-36-1'), 'hi')
   return (
-    <Shell locale="hi">
-      <BlogTracker pageName={PAGE} />
+    <main>
+      <PageTracker pageName="Ramayana In The Original HI" />
       <JsonLd
         data={[
-          breadcrumbLd([
-            { name: 'Wisdom', path: '/' },
-            { name: 'रामायण', path: PATHS.hub },
-            { name: 'मूल ग्रंथ में', path: PATHS.hiOriginal },
-          ]),
           articleLd({ headline: 'रामायण, मूल ग्रंथ में', description: DESC, path: PATHS.hiOriginal, locale: 'hi', about: ['रामायण', 'रामचरितमानस'] }),
           itemListLd(
             'रामायण फ़िल्म के दृश्य, वाल्मीकि और तुलसीदास से मिलाकर',
             SCENES.map((s) => ({ name: s.question.hi, path: `${PATHS.hiOriginal}#${s.slug}` })),
           ),
-          faqLd(HUB_FAQ.hi),
         ]}
       />
-      <Hero
+      <PageHero
         locale="hi"
-        crumbLabel="पथ"
-        crumbs={[{ name: 'Wisdom', href: '/' }, { name: 'रामायण', href: PATHS.hub }, { name: 'मूल ग्रंथ में' }]}
-        eyebrow="फ़िल्म, वाल्मीकि, तुलसीदास"
-        h1="रामायण, मूल ग्रंथ में"
-        sub="बड़े पर्दे पर देखा, अब वह पंक्ति पढ़िए जहाँ से वह दृश्य आया।"
+        lang="hi"
+        crumbs={[
+          { label: 'रामायण', href: PATHS.hub },
+          { label: 'मूल ग्रंथ में', href: PATHS.hiOriginal },
+        ]}
+        eyebrow="फ़िल्म और मूल ग्रंथ"
+        title="रामायण, मूल ग्रंथ में"
+        sub="फ़िल्म या ट्रेलर का कोई दृश्य चुनिए और पढ़िए कि वाल्मीकि और तुलसीदास ने असल में क्या लिखा।"
         facts={[`${HUB_COUNTS.total} दृश्य`, `${HUB_COUNTS.both} दोनों ग्रंथों में`, `${HUB_COUNTS.tulsidasOnly} सिर्फ़ तुलसीदास के यहाँ`]}
-        cta={{ href: '#scenes', label: 'दृश्य देखें', loc: 'hero_scenes' }}
-        lines={[lineView(getLine('rcm-6-36-1'), 'hi')]}
+        actions={[{ href: '#scenes', label: 'दृश्य देखें', location: 'hero_scenes' }]}
+        verse={{ ...lineOriginal(hero), label: <Speaker line={hero} locale="hi" />, source: hero.ref }}
       />
 
-      <Band className="rl-introsec">
-        <p className="rl-intro rv" id="quick-answer">
+      <Section spacing="tight" rv={false} lang="hi">
+        <p className="sx-prose rv" id="quick-answer">
           {HUB_QUICK.hi}
         </p>
-      </Band>
+      </Section>
 
-      <Band
+      <Section
         id="lamps"
+        tone="band"
+        lang="hi"
         title="हर दृश्य के तीन दीये"
-        tone="alt"
-        lede="हर दृश्य के साथ तीन दीये हैं: फ़िल्म, वाल्मीकि और तुलसीदास। जलता दीया मतलब वह प्रसंग उस रूप में है। किसी दीये पर टैप करें और उस ग्रंथ की मूल पंक्ति सरल हिंदी अर्थ के साथ पढ़ें।"
+        intro="फ़िल्म के कुछ प्रसंग वाल्मीकि में हैं, और कुछ सिर्फ़ तुलसीदास या बाद की कथाओं में। जलता दीया बताता है कि प्रसंग किस ग्रंथ में है।"
       >
         <div className="rv">
           <LampLegend locale="hi" />
         </div>
-      </Band>
+      </Section>
 
-      <Band id="scenes" title="दृश्य, कथा के क्रम में">
-        <SceneLedger scenes={SCENES} locale="hi" page={PAGE} showQuick />
-      </Band>
+      <Section id="scenes" title="दृश्य, कथा के क्रम में" lang="hi">
+        <SceneLedger scenes={SCENES} locale="hi" showQuick />
+      </Section>
 
-      <Band id="keep" title="सहेजने लायक पंक्तियाँ" lede="कॉपी करें, WhatsApp पर भेजें, या इमेज सेव करें।" tone="alt" wide>
-        <div className="rv">
-          <KeepCards ids={['ram-anirveda', 'ram-trouble-passes', 'ram-good-sense', 'ram-hundred-years']} locale="hi" page={PAGE} pageKey="ramayana-original-hi" path={PATHS.hiOriginal} />
-        </div>
-      </Band>
+      <Section id="keep" tone="band" title="सहेजने लायक पंक्तियाँ" intro="एक पंक्ति इस हफ़्ते के लिए रख लें, या उस दोस्त को भेजें जो फ़िल्म देखने जा रहा है।" lang="hi">
+        <KeepCards ids={['ram-anirveda', 'ram-trouble-passes', 'ram-good-sense', 'ram-hundred-years']} locale="hi" pageKey="ramayana-original-hi" path={PATHS.hiOriginal} />
+      </Section>
 
-      <Band>
-        <div className="rl-final rv">
-          <NextStep funnel="ramayana" locale="hi" pageName={PAGE} pageKey="ramayana-original-hi" placement="end" copy={NEXT_COPY.hi} />
-        </div>
-      </Band>
+      <Section>
+        <NextStep locale="hi" pageKey="ramayana-original-hi" placement="end" copy={NEXT_COPY.hi} />
+      </Section>
 
-      <Band id="more" title="और पढ़ें" tone="alt" wide>
-        <Tiles
+      <Section id="more" tone="band" title="और पढ़ें" lang="hi">
+        <LinkCards
           items={[
-            { href: PATHS.hiDiwali, t: 'राम की घर वापसी, वाल्मीकि और तुलसीदास के शब्दों में', s: 'दिवाली के पीछे की कथा, पंक्ति दर पंक्ति।' },
-            { href: PATHS.original, t: 'Read in English', s: 'यही दृश्य, अंग्रेज़ी में, हर दृश्य के अलग पन्ने के साथ।', lang: 'en' },
+            { href: PATHS.hiDiwali, title: 'राम की घर वापसी, वाल्मीकि और तुलसीदास के शब्दों में', body: 'दिवाली के पीछे की कथा, पंक्ति दर पंक्ति।', location: 'links_diwali' },
+            { href: PATHS.original, title: <span lang="en">Read in English</span>, body: 'यही दृश्य, अंग्रेज़ी में, हर दृश्य के अलग पन्ने के साथ।', hrefLang: 'en', location: 'links_english' },
           ]}
-          loc={(href) => (href === PATHS.hiDiwali ? 'links_diwali' : 'links_english')}
         />
-      </Band>
+      </Section>
 
-      <Faq heading="लोग पूछते हैं" qas={HUB_FAQ.hi} />
+      <Section id="faq" title="लोग पूछते हैं" lang="hi">
+        <Faq items={HUB_FAQ.hi} locale="hi" />
+      </Section>
       <MethodHi />
-    </Shell>
+    </main>
   )
 }

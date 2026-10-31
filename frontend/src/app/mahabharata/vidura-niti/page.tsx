@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
-import Shell, { Band } from '@/components/funnels/mahabharata/Shell'
-import LineCard from '@/components/funnels/mahabharata/LineCard'
-import GitaLink from '@/components/funnels/mahabharata/GitaLink'
-import Faq from '@/components/funnels/mahabharata/Faq'
-import NextBlock from '@/components/funnels/mahabharata/NextBlock'
-import { heroLineOf, line } from '@/lib/funnels/mahabharata/lines'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, NextStep, PageHero, Section, VerseList } from '@/components/site'
+import Line from '@/components/funnels/mahabharata/Line'
+import { heroVerseOf, line } from '@/lib/funnels/mahabharata/lines'
 import data from '@/content/funnels/mahabharata/lines.json'
-import { PATHS, articleLd, breadcrumbLd, faqLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
+import { NEXT } from '@/lib/funnels/mahabharata/next'
+import { PATHS, articleLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
+import '@/components/funnels/mahabharata/mbh.css'
 
-const PAGE = 'mbh-vidura-niti'
+const PAGE_KEY = 'mbh-vidura-niti'
 const PATH = PATHS.vidura
 const CARD = 'mbh-5-37-15'
 const TITLE = 'Vidura Niti: Sanskrit Verses With Meaning'
@@ -54,97 +54,107 @@ export default function Page() {
       name: 'Seven verses on anger from Vidura Niti',
       itemListElement: ANGER.map((id, i) => ({ '@type': 'ListItem', position: i + 1, name: line(id).ref, url: `https://wisdomquotes.in${PATH}#mbh-${id.slice(4).replace(/\./g, '-')}` })),
     },
-    faqLd(FAQ),
-    breadcrumbLd([
-      { name: 'Home', path: '/' },
-      { name: 'Mahabharata', path: PATHS.hub },
-      { name: 'Vidura Niti', path: PATH },
-    ]),
   )
-  const count = ANGER.length + GROUPS.reduce((n, g) => n + g.ids.length, 0)
   return (
-    <Shell
-      page={PAGE}
-      crumbs={[{ label: 'Home', href: '/' }, { label: 'Mahabharata', href: PATHS.hub }, { label: 'Vidura Niti' }]}
-      jsonLd={ld}
-      hero={{
-        eyebrow: 'Udyoga Parva, the night before the message',
-        h1: 'Vidura Niti',
-        line: heroLineOf('mbh.5.37.15'),
-        facts: ['MBh 5.33 to 5.40', `${count} verses with meaning`, 'Sanskrit with verse numbers'],
-        cta: (
-          <a href="#anger" className="btn-read-gita btn-read-gita-primary" data-mp-location="vidura_hero_anger">
-            Read the seven verses on anger
-          </a>
-        ),
-      }}
-    >
-      <Band className="mb-intro">
-        <p id="quick-answer" className="tp-intro rv">
-          Vidura Niti is the counsel Vidura gives the sleepless King Dhritarashtra in eight chapters of the Udyoga Parva (MBh 5.33 to 5.40).
-          Its best-known line: people who say pleasant things are easy to find, but rare is the one who says the hard, helpful thing, and rare the
-          one who listens (MBh 5.37.15).
-        </p>
-        <p className="mb-sub rv">
-          Sanjaya has come back from the Pandavas and will deliver their message in the hall tomorrow. The king cannot sleep, and sends for his
-          half-brother. <a href={PATHS.character('vidura')}>Who Vidura was</a>.
-        </p>
-      </Band>
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Mahabharata Vidura Niti" />
+      <main className="fx-mbh" lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Mahabharata', href: PATHS.hub },
+            { label: 'Vidura Niti', href: PATH },
+          ]}
+          eyebrow="Udyoga Parva, the night before the message"
+          title="Vidura Niti"
+          facts={['MBh 5.33 to 5.40', 'One sleepless night']}
+          actions={[{ href: '#anger', label: 'Read the seven verses on anger', location: 'vidura_hero_anger' }]}
+          verse={heroVerseOf('mbh.5.37.15')}
+        />
 
-      <Band alt id="anger" mp="vidura_anger" h="Seven verses on anger" hId="anger-h" lede="From the gate anger opens to the ways it is won over.">
-        {ANGER.map((id) => (
-          <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
+        <Section spacing="tight">
+          <div className="sx-prose rv">
+            <p id="quick-answer">
+              Vidura Niti is the counsel Vidura gives the sleepless King Dhritarashtra in eight chapters of the Udyoga Parva (MBh 5.33 to 5.40).
+              Its best-known line: people who say pleasant things are easy to find, but rare is the one who says the hard, helpful thing, and rare the
+              one who listens (MBh 5.37.15).
+            </p>
+            <p>
+              Sanjaya has come back from the Pandavas and will deliver their message in the hall tomorrow. The king cannot sleep, and sends for his
+              half-brother. <a href={PATHS.character('vidura')}>Who Vidura was</a>.
+            </p>
+          </div>
+        </Section>
+
+        <Section tone="band" id="anger" track="vidura_anger" title="Seven verses on anger" intro="From the gate anger opens to the ways it is won over." width="narrow">
+          <VerseList>
+            {ANGER.map((id) => (
+              <Line key={id} as="li" line={line(id)} path={PATH} pageKey={PAGE_KEY} />
+            ))}
+          </VerseList>
+          <ul className="mb-bridges mb-after" data-stagger="60">
+            <li className="rv">
+              <GitaBridge
+                href="/gita/chapter/16/verse/21"
+                location="vidura_anger"
+                label="Gita 16.21"
+                why={<>The first verse above appears again in the Gita, word for word, in Krishna&apos;s mouth.</>}
+              />
+            </li>
+            <li className="rv">
+              <GitaBridge
+                href="/gita/chapter/2/verse/63"
+                location="vidura_anger"
+                label="Gita 2.63"
+                why="From anger comes confusion, and from confusion a lost memory. The Gita traces where anger leads."
+              />
+            </li>
+          </ul>
+        </Section>
+
+        {GROUPS.map((g, gi) => (
+          <Section key={g.id} tone={gi % 2 === 1 ? 'band' : 'default'} id={g.id} track={`vidura_${g.id}`} title={g.h} intro={g.lede} width="narrow">
+            <VerseList>
+              {g.ids.map((id) => (
+                <Line key={id} as="li" line={line(id)} path={PATH} pageKey={PAGE_KEY} />
+              ))}
+            </VerseList>
+            {g.gita && (
+              <GitaBridge
+                className="mb-after rv"
+                href={`/gita/chapter/${g.gita.c}/verse/${g.gita.v}`}
+                location={`vidura_${g.id}`}
+                label={`Gita ${g.gita.c}.${g.gita.v}`}
+                why={g.gita.why}
+              />
+            )}
+          </Section>
         ))}
-        <ul className="mb-bridge rv">
-          <li>
-            <GitaLink href="/gita/chapter/16/verse/21" from="vidura_anger" toRef="16.21" page={PAGE} locale="en">
-              Gita 16.21
-            </GitaLink>
-            <p>The first verse above appears again in the Gita, word for word, in Krishna&apos;s mouth.</p>
-          </li>
-          <li>
-            <GitaLink href="/gita/chapter/2/verse/63" from="vidura_anger" toRef="2.63" page={PAGE} locale="en">
-              Gita 2.63
-            </GitaLink>
-            <p>From anger comes confusion, and from confusion a lost memory. The Gita traces where anger leads.</p>
-          </li>
-        </ul>
-      </Band>
 
-      {GROUPS.map((g, gi) => (
-        <Band key={g.id} alt={gi % 2 === 1} id={g.id} mp={`vidura_${g.id}`} h={g.h} hId={`${g.id}-h`} lede={g.lede}>
-          {g.ids.map((id) => (
-            <LineCard key={id} line={line(id)} page={PAGE} path={PATH} />
-          ))}
-          {g.gita && (
-            <ul className="mb-bridge rv">
-              <li>
-                <GitaLink href={`/gita/chapter/${g.gita.c}/verse/${g.gita.v}`} from={`vidura_${g.id}`} toRef={`${g.gita.c}.${g.gita.v}`} page={PAGE} locale="en">
-                  Gita {g.gita.c}.{g.gita.v}
-                </GitaLink>
-                <p>{g.gita.why}</p>
-              </li>
-            </ul>
-          )}
-        </Band>
-      ))}
+        <Section tone={GROUPS.length % 2 === 1 ? 'band' : 'default'} track="faq" title="Questions people ask" width="narrow">
+          <Faq items={FAQ} />
+        </Section>
 
-      <Faq items={FAQ} heading="Questions people ask" alt={GROUPS.length % 2 === 1} />
-      <NextBlock page={PAGE} alt={GROUPS.length % 2 === 0} />
+        <Section tone={GROUPS.length % 2 === 0 ? 'band' : 'default'} track="next_step" title={NEXT.en.head} width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={PAGE_KEY} placement="end" copy={NEXT.en.copy} />
+          </div>
+        </Section>
 
-      <Band className="mb-method" alt={GROUPS.length % 2 === 1} h="Sources and method" hId="method-h">
-        <p>
-          Sanskrit from a southern-recension text of the Udyoga Parva, chapters 33 to 40. Where the digital text had obvious typing errors we
-          restored the standard reading and kept a record. The English is Wisdom&apos;s own, read with Nilakantha&apos;s commentary, with K. M.
-          Ganguli&apos;s public-domain translation consulted.
-        </p>
-        <p id="left-out" className="mb-screened">
-          Lines we leave out. Some verses in these chapters demean or confine women. The epic&apos;s own women answer them: Draupadi&apos;s question
-          of law, Vidula, Kunti, Gandhari. We do not show these lines or make cards of them: {screened.map((s) => s.id.replace('mbh.', 'MBh ')).join(', ')}.
-          The same goes for a handful of Anushasana Parva lines, a book many scholars read as a late teaching layer.
-        </p>
-        <p>Wisdom translation, edited by Ankur Shukla.</p>
-      </Band>
-    </Shell>
+        <Section tone={GROUPS.length % 2 === 1 ? 'band' : 'default'} className="mb-method" title="Sources and method" width="narrow">
+          <p>
+            Sanskrit from a southern-recension text of the Udyoga Parva, chapters 33 to 40. Where the digital text had obvious typing errors we
+            restored the standard reading and kept a record. The English is Wisdom&apos;s own, read with Nilakantha&apos;s commentary, with K. M.
+            Ganguli&apos;s public-domain translation consulted.
+          </p>
+          <p id="left-out" className="mb-screened">
+            Lines we leave out. Some verses in these chapters demean or confine women. The epic&apos;s own women answer them: Draupadi&apos;s question
+            of law, Vidula, Kunti, Gandhari. We do not show these lines or make cards of them: {screened.map((s) => s.id.replace('mbh.', 'MBh ')).join(', ')}.
+            The same goes for a handful of Anushasana Parva lines, a book many scholars read as a late teaching layer.
+          </p>
+          <p>Wisdom translation, edited by Ankur Shukla.</p>
+        </Section>
+      </main>
+    </>
   )
 }

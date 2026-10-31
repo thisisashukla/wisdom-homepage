@@ -1,24 +1,21 @@
 import type { Metadata } from 'next'
-import FxFrame from '@/components/funnels/other-gitas/FxFrame'
-import NextBand from '@/components/funnels/other-gitas/NextBand'
-import FxHero from '@/components/funnels/other-gitas/FxHero'
-import FxSources from '@/components/funnels/other-gitas/FxSources'
-import VerseLines from '@/components/funnels/other-gitas/VerseLines'
-import QuoteCard from '@/components/quotes/QuoteCard'
+import PageTracker from '@/components/BlogTracker'
+import { JsonLd, NextStep, PageHero, Section, VerseCard, VerseList } from '@/components/site'
+import QuoteShare from '@/components/funnels/other-gitas/QuoteShare'
 import type { QuoteView } from '@/lib/quotes-shared'
-import { abs, agVersePath, getVerseByKey, HUB_PATH, padas, speakerLabel, type AgVerse } from '@/lib/funnels/other-gitas/data'
-import { DISCLOSURE, FAMOUS, QUOTES_QUICK, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
+import { abs, agVersePath, getVerseByKey, HUB_PATH, padas, speakerLabel, verseCardOf, type AgVerse } from '@/lib/funnels/other-gitas/data'
+import { DISCLOSURE, FAMOUS, NEXT_COPY, QUOTES_QUICK, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
 import cards from '@/content/funnels/other-gitas/cards.json'
-import { articleLd, breadcrumbLd, cardOg, ldScript, pageMeta } from '@/lib/funnels/other-gitas/seo'
+import { articleLd, cardOg, pageMeta } from '@/lib/funnels/other-gitas/seo'
 
-const PAGE = 'ag-quotes'
+const PAGE_KEY = 'ag-quotes'
 const PATH = '/ashtavakra-gita/quotes'
 
 export const metadata: Metadata = pageMeta({
   path: PATH,
   title: 'Ashtavakra Gita quotes: 20 lines in Sanskrit and English',
   description:
-    'Twenty lines from the Ashtavakra Gita, each with the Sanskrit, a plain English meaning and the verse it comes from, ready to copy or share.',
+    'Twenty lines from the Ashtavakra Gita, each with the Sanskrit, a plain English meaning and the verse it comes from.',
   image: cardOg('ag-1-11'),
 })
 
@@ -44,10 +41,6 @@ function view(x: AgVerse): QuoteView {
 export default function AshtavakraQuotesPage() {
   const verses = FAMOUS.map((k) => getVerseByKey(k)!)
   const ld = [
-    breadcrumbLd([
-      { name: 'Ashtavakra Gita', path: HUB_PATH },
-      { name: 'Quotes', path: PATH },
-    ]),
     articleLd({ path: PATH, headline: 'Ashtavakra Gita quotes', description: QUOTES_QUICK, about: 'Ashtavakra Gita' }),
     {
       '@context': 'https://schema.org',
@@ -72,66 +65,68 @@ export default function AshtavakraQuotesPage() {
   const lead = verses[0]
 
   return (
-    <FxFrame pageKey={PAGE}>
-      {ld.map((d, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
-      ))}
-      <main>
-        <FxHero
-          crumbs={[{ label: 'Ashtavakra Gita', href: HUB_PATH }, { label: 'Quotes' }]}
-          eyebrow="20 lines to copy or share"
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Ashtavakra Gita Quotes" />
+      <main className="fx-og" lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Ashtavakra Gita', href: HUB_PATH },
+            { label: 'Quotes', href: PATH },
+          ]}
+          eyebrow="Lines people quote"
           title="Ashtavakra Gita quotes"
-          facts={['20 lines', 'Sanskrit and plain English', 'Each with its verse']}
-          cta={{ href: '#lines', label: 'See the lines', location: 'ag_quotes_hero_lines' }}
-          art={
-            <div className="og-hero-verse" aria-hidden="true">
-              <p className="og-hero-ref">
-                Ashtavakra Gita {lead.c}.{lead.v}
-              </p>
-              <VerseLines verse={lead} />
-              <hr className="og-rule" />
-            </div>
-          }
+          facts={['20 lines', 'Ashtavakra and Janaka']}
+          actions={[{ href: '#lines', label: 'See the lines', location: 'ag_quotes_hero_lines' }]}
+          verse={{ ...verseCardOf(lead), label: `Ashtavakra Gita ${lead.c}.${lead.v}` }}
         />
 
-        <section className="og-intro">
-          <div className="wrap og-col">
-            <div className="og-prose">
-              <p id="quick-answer" className="og-lead">
-                {QUOTES_QUICK}
-              </p>
-            </div>
+        <Section spacing="tight" width="narrow">
+          <div className="sx-prose rv">
+            <p id="quick-answer">{QUOTES_QUICK}</p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section" id="lines" aria-label="Ashtavakra Gita quotes">
-          <div className="wrap">
-            <div className="og-cards">
-              {verses.map((x, i) => (
-                <QuoteCard key={x.id} quote={view(x)} locale="en" pageName={PAGE} pageKey={PAGE} position={i + 1} />
-              ))}
-            </div>
+        <Section id="lines" track="quotes">
+          <VerseList columns={2}>
+            {verses.map((x, i) => {
+              const q = view(x)
+              return (
+                <VerseCard
+                  key={x.id}
+                  as="li"
+                  id={x.id}
+                  rv
+                  {...verseCardOf(x)}
+                  meaning={q.meaning}
+                  source={q.sourceLine}
+                  sourceHref={q.href ?? undefined}
+                  actions={<QuoteShare quote={q} pageKey={PAGE_KEY} position={i + 1} />}
+                />
+              )
+            })}
+          </VerseList>
 
-            <div className="og-prose" style={{ marginTop: 40 }}>
-              <p>
-                Each card links to its verse, with word meanings and a short commentary. If you are new to the text, start with
-                the <a href={HUB_PATH}>Ashtavakra Gita guide</a> or read it beside the{' '}
-                <a className="fx-gita-link" href="/ashtavakra-gita-vs-bhagavad-gita">
-                  Bhagavad Gita
-                </a>
-                .
-              </p>
-            </div>
+          <div className="sx-prose" style={{ marginTop: 40 }}>
+            <p>
+              If a line stops you, open its verse and read it slowly. If you are new to the text, start with
+              the <a href={HUB_PATH}>Ashtavakra Gita guide</a> or read it beside the{' '}
+              <a href="/ashtavakra-gita-vs-bhagavad-gita">Bhagavad Gita</a>.
+            </p>
           </div>
-        </section>
+        </Section>
 
-        <NextBand pageKey={PAGE} />
+        <Section tone="band" track="next_step" width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={PAGE_KEY} placement="end" copy={NEXT_COPY} />
+          </div>
+        </Section>
 
-        <FxSources>
+        <Section className="og-sources" title="Sources and method" width="narrow" spacing="tight">
           <p>{SOURCES_NOTE} The card meanings are short versions of our verse translations.</p>
           <p>{DISCLOSURE}</p>
-        </FxSources>
+        </Section>
       </main>
-    </FxFrame>
+    </>
   )
 }

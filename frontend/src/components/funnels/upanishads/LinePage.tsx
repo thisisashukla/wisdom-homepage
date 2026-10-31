@@ -3,13 +3,14 @@
  * the brief: quick answer, the line, plain meaning, then the arc.
  */
 import type { Metadata } from 'next'
-import QuoteCard from '@/components/quotes/QuoteCard'
-import type { Locale } from '@/lib/quotes-shared'
-import { articleLd, card, cardView, faqLd, passage, pageKey, SITE, upMeta, DISCLOSURE_EN, UPDATED } from '@/lib/funnels/upanishads'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, LinkCards, PageHero, Section, VerseCard } from '@/components/site'
+import type { Locale } from '@/lib/locale'
+import { articleLd, card, cardView, passage, padas, pageKey, SITE, upMeta, DISCLOSURE_EN, UPDATED } from '@/lib/funnels/upanishads'
 import { LINES, lineBySlug, type FamousLine } from '@/content/funnels/upanishads/lines'
-import Shell, { Band, Faq, GitaBridge, Head, HeroLine, SourcesNote, Tiles, UpNext } from './Shell'
-import Sanskrit from './Sanskrit'
+import { Bridge, Bridges, SourcesNote, UpNext } from './parts'
 import PrintCard from './PrintCard'
+import LineShare from './LineShare'
 
 const enPath = (slug: string) => `/upanishads/${slug}`
 const hiPath = (slug: string) => `/hi/upanishads/${slug}`
@@ -37,12 +38,11 @@ const T = {
     shankara: 'Shankara',
     others: 'Where others read it differently',
     writing: 'Writing it out',
-    cardCaption: 'A print-ready card in Devanagari, 1080 by 1350 pixels. Open it full size for a tattoo stencil, calligraphy reference or framing.',
+    cardCaption: 'Open the card full size if you want to frame the line or take it to a tattoo artist.',
     post: 'Open the 4:5 card',
     status: 'Open the 9:16 story card',
     use: 'Copy or share the line',
     gita: 'The same thought in the Gita',
-    gitaLead: 'Read next to',
     next: 'One line each morning',
     more: 'Keep reading',
     faq: 'Questions people ask',
@@ -59,12 +59,11 @@ const T = {
     shankara: 'शंकराचार्य',
     others: 'दूसरी बात',
     writing: 'लिखने का सही रूप',
-    cardCaption: 'देवनागरी में प्रिंट के लायक कार्ड, 1080 x 1350 पिक्सेल। फ़्रेम, सुलेख या टैटू के लिए पूरे साइज़ में खोलें।',
+    cardCaption: 'इस श्लोक को फ़्रेम करवाना हो या टैटू बनवाना हो, तो कार्ड पूरे साइज़ में खोलें।',
     post: '4:5 कार्ड खोलें',
     status: '9:16 स्टेटस कार्ड खोलें',
     use: 'श्लोक कॉपी या शेयर करें',
     gita: 'गीता में यही बात',
-    gitaLead: 'साथ में पढ़ें',
     next: 'हर सुबह एक श्लोक',
     more: 'आगे पढ़ें',
     faq: 'लोग अक्सर पूछते हैं',
@@ -86,27 +85,14 @@ export default function LinePage({ slug, locale }: { slug: string; locale: Local
   const t = T[locale]
   const hi = locale === 'hi' ? line.hi : undefined
   const path = locale === 'hi' ? hiPath(slug) : enPath(slug)
-  const pageName = locale === 'hi' ? `upanishads-hi-${slug}` : `upanishads-${slug}`
-  const key = pageKey(pageName)
+  const key = pageKey(locale === 'hi' ? `upanishads-hi-${slug}` : `upanishads-${slug}`)
   const p = passage(line.passage)
   const showWhole = (hi?.fullMeaning ?? line.fullMeaning) !== ''
   const h1 = hi?.h1 ?? line.h1
   const description = hi?.description ?? line.description
   const faq = hi?.faq ?? line.faq
   const refLabel = locale === 'hi' ? card(line.cardId).sourceName.hi : line.ref
-
-  const crumbs =
-    locale === 'hi'
-      ? [
-          { name: 'होम', path: '/' },
-          { name: t.upanishads, path: '/hi/upanishad' },
-          { name: h1.split(':')[0], path },
-        ]
-      : [
-          { name: 'Home', path: '/' },
-          { name: t.upanishads, path: '/upanishads' },
-          { name: h1.split(':')[0], path },
-        ]
+  const view = cardView(line.cardId, locale, path)
 
   const jsonLd = [
     articleLd({ headline: h1, description, path, citation: `${line.ref}. Sanskrit: ${p.basis.startsWith('sanscripts corpus') ? 'Wisdom corpus' : p.basis}. English: Wisdom translation.`, locale, about: line.textName }),
@@ -121,144 +107,141 @@ export default function LinePage({ slug, locale }: { slug: string; locale: Local
       image: `${SITE}/api/quote-card/${line.cardId}?format=post&lang=${locale}&theme=paper`,
       dateModified: UPDATED,
     },
-    faqLd(faq),
   ]
 
   const share = locale === 'hi' ? 'यह श्लोक शेयर करें' : 'Share this line'
-  const facts = locale === 'hi' ? ['संस्कृत और हिंदी अर्थ', 'प्रिंट के लिए कार्ड'] : [line.veda, 'Sanskrit, IAST, English', 'Print-ready card']
+  const facts = locale === 'hi' ? [] : [line.veda]
 
   return (
-    <Shell
-      pageName={pageName}
-      locale={locale}
-      crumbs={crumbs}
-      jsonLd={jsonLd}
-      hero={{
-        eyebrow: refLabel,
-        title: h1,
-        facts,
-        cta: { href: '#share', label: t.use, loc: 'line_hero_share' },
-        second: showWhole ? { href: '#whole', label: t.whole, loc: 'line_hero_whole' } : undefined,
-        visual: <HeroLine sa={line.sa} iast={line.iast} meaning={hi?.meaning ?? line.meaning} lang={locale} section="line" />,
-      }}
-    >
-      <Band labelledBy={showWhole ? 'whole' : undefined} label={showWhole ? undefined : t.use}>
-        <p id="quick-answer" className="tp-intro rv">
+    <>
+      <PageTracker pageName={locale === 'hi' ? 'Upanishads Line HI' : 'Upanishads Line'} />
+      <JsonLd data={jsonLd} />
+      <PageHero
+        locale={locale}
+        crumbs={[
+          { label: t.upanishads, href: locale === 'hi' ? '/hi/upanishad' : '/upanishads' },
+          { label: h1.split(':')[0], href: path },
+        ]}
+        eyebrow={refLabel}
+        title={h1}
+        facts={facts}
+        actions={[
+          { href: '#share', label: t.use, location: 'line_hero_share' },
+          ...(showWhole ? [{ href: '#whole', label: t.whole, location: 'line_hero_whole' }] : []),
+        ]}
+        visual={
+          <div data-mp-section="line">
+            <VerseCard original={padas(line.sa)} iast={padas(line.iast)} meaning={hi?.meaning ?? line.meaning} size="hero" reveal toggle locale={locale} />
+          </div>
+        }
+      />
+
+      <Section id="answer" width="narrow" spacing="tight">
+        <p id="quick-answer" className="sx-intro rv">
           {hi?.quick ?? line.quick}
         </p>
+      </Section>
 
-        {showWhole && (
-          <div className="fx-whole rv">
-            <h2 id="whole" className="tp-h2">
-              {t.whole}
-            </h2>
-            <div className="fx-v">
-              <p className="fx-v-ref-plain">{refLabel}</p>
-              <Sanskrit sa={p.sa} iast={p.iast} size="small" />
-              <p className="fx-v-en">{hi?.fullMeaning ?? line.fullMeaning}</p>
-            </div>
-          </div>
-        )}
+      <Section id={showWhole ? 'whole' : 'use'} tone="band" width="narrow" title={showWhole ? t.whole : undefined}>
+        {showWhole && <VerseCard align="left" label={refLabel} original={padas(p.sa)} iast={padas(p.iast)} meaning={hi?.fullMeaning ?? line.fullMeaning} locale={locale} rv />}
 
-        <div id="share" className="fx-share">
-          <p className="fx-share-label" aria-hidden="true">
+        <div id="share" className="up-share">
+          <p className="up-share-label" aria-hidden="true">
             {share}
           </p>
-          <h3 className="fx-sr">{t.use}</h3>
-          <QuoteCard quote={cardView(line.cardId, locale, path)} locale={locale} pageName={pageName} pageKey={key} verseHref={null} />
+          <h3 className="up-sr">{t.use}</h3>
+          <VerseCard
+            original={padas(view.sa)}
+            iast={view.iast ? padas(view.iast) : undefined}
+            meaning={view.meaning}
+            source={view.sourceLine}
+            locale={locale}
+            rv
+            actions={
+              <LineShare view={view} locale={locale} pageKey={key} />
+            }
+          />
         </div>
-      </Band>
+      </Section>
 
-      <Band alt labelledBy="who">
-        <Head id="who">{t.who}</Head>
-        <div className="fx-card fx-card-story rv">
-          {locale === 'en' && <p className="fx-who">{line.who}</p>}
-          <p className="fx-scene">{hi?.scene ?? line.scene}</p>
+      <Section id="who" width="narrow" title={t.who}>
+        <div className="up-card up-card--story rv">
+          {locale === 'en' && <p className="up-who-chip">{line.who}</p>}
+          <p className="up-scene">{hi?.scene ?? line.scene}</p>
         </div>
         {line.textHref && locale === 'en' && (
-          <p className="fx-p rv" style={{ marginTop: 18 }}>
-            <a href={line.textHref} className="fx-link" data-mp-location="line_read_text">
+          <p className="up-after rv">
+            <a href={line.textHref} className="sx-link" data-mp-location="line_read_text">
               {t.read}: {line.textName}
             </a>
           </p>
         )}
-      </Band>
+      </Section>
 
-      <Band labelledBy="acharyas" className="fx-acharya">
-        <Head id="acharyas">{t.acharyas}</Head>
-        <div className="fx-grid-2" data-stagger="60">
-          <div className="fx-card rv">
-            <h3 className="tp-label">{t.shankara}</h3>
+      <Section id="acharyas" tone="band" title={t.acharyas}>
+        <div className="up-grid-2" data-stagger="60">
+          <div className="up-card rv">
+            <h3 className="sx-h3">{t.shankara}</h3>
             <p>{hi?.shankara ?? line.shankara}</p>
           </div>
-          <div className="fx-card rv">
-            <h3 className="tp-label">{t.others}</h3>
+          <div className="up-card rv">
+            <h3 className="sx-h3">{t.others}</h3>
             <p>{hi?.others ?? line.others}</p>
           </div>
         </div>
-      </Band>
+      </Section>
 
-      <Band alt labelledBy="writing">
-        <div data-mp-section="writing">
-          <Head id="writing">{t.writing}</Head>
-          <ul className="fx-forms" data-stagger="60">
-            {line.writing.forms.map((f) => (
-              <li key={f.sa} className="rv">
-                <span className="f-sa s-deva" lang="sa">
-                  {f.sa}
-                </span>
-                <span className="f-iast s-iast" lang="sa-Latn">
-                  {f.iast}
-                </span>
-                {locale === 'en' && <span className="f-label">{f.label}</span>}
-              </li>
-            ))}
-          </ul>
-          <p className="fx-p rv">{hi?.writingNote ?? line.writing.note}</p>
-          <PrintCard
-            cardId={line.cardId}
-            line={slug}
-            page={pageName}
-            locale={locale}
-            alt={`${line.sa} (${line.ref})`}
-            labels={{ post: t.post, status: t.status, caption: t.cardCaption }}
-          />
-        </div>
-      </Band>
+      <Section id="writing" width="narrow" title={t.writing} track="writing">
+        <ul className="up-forms" data-stagger="60">
+          {line.writing.forms.map((f) => (
+            <li key={f.sa} className="rv">
+              <span className="up-form-sa sx-deva" lang="sa">
+                {f.sa}
+              </span>
+              <span className="up-form-sa up-form-iast sx-iast" lang="sa-Latn">
+                {f.iast}
+              </span>
+              {locale === 'en' && <span className="up-form-label">{f.label}</span>}
+            </li>
+          ))}
+        </ul>
+        <p className="sx-prose rv">{hi?.writingNote ?? line.writing.note}</p>
+        <PrintCard cardId={line.cardId} line={slug} locale={locale} alt={`${line.sa} (${line.ref})`} labels={{ post: t.post, status: t.status, caption: t.cardCaption }} />
+      </Section>
 
       {line.gita.length > 0 && (
-        <Band labelledBy="gita">
-          <Head id="gita">{t.gita}</Head>
-          <div className="fx-bridges" data-stagger="60">
+        <Section id="gita" width="narrow" title={t.gita}>
+          <Bridges>
             {line.gita.map((g) => (
-              <GitaBridge key={`${g.c}.${g.v}`} c={g.c} v={g.v} note={locale === 'en' ? g.note : ''} locale={locale} lead={t.gitaLead} />
+              <Bridge key={`${g.c}.${g.v}`} c={g.c} v={g.v} note={locale === 'en' ? g.note : ''} locale={locale} from={line.cardId} />
             ))}
-          </div>
-        </Band>
+          </Bridges>
+        </Section>
       )}
 
-      <UpNext locale={locale} pageName={pageName} pageKey={key} placement="line-end" heading={t.next} />
+      <UpNext locale={locale} pageKey={key} placement="line-end" heading={t.next} />
 
-      <Band wide labelledBy="more">
-        <Head id="more">{t.more}</Head>
-        <Tiles
-          cols={3}
+      <Section id="more" title={t.more}>
+        <LinkCards
+          columns={3}
           items={[
             ...relatedLines(line, locale).map((l) => ({
               href: locale === 'hi' ? hiPath(l.slug) : enPath(l.slug),
-              sa: l.sa.split(/\s*[।|]/u)[0],
+              orig: l.sa.split(/\s*[।|]/u)[0],
               title: locale === 'hi' && l.hi ? l.hi.h1 : l.h1,
-              sub: l.ref,
-              loc: `related_${l.slug}`,
+              body: l.ref,
+              location: `related_${l.slug}`,
             })),
-            ...(locale === 'hi' ? [{ href: enPath(slug), lang: 'en', title: `English: ${line.h1}`, sub: line.ref, loc: 'related_english' }] : []),
-            { href: '/upanishads/who-am-i', title: t.plan.label, sub: t.plan.sub, loc: 'related_plan' },
-            { href: locale === 'hi' ? '/hi/upanishad' : '/upanishads', title: t.hub.label, sub: t.hub.sub, loc: 'related_hub' },
+            ...(locale === 'hi' ? [{ href: enPath(slug), hrefLang: 'en', title: `English: ${line.h1}`, body: line.ref, location: 'related_english' }] : []),
+            { href: '/upanishads/who-am-i', title: t.plan.label, body: t.plan.sub, location: 'related_plan' },
+            { href: locale === 'hi' ? '/hi/upanishad' : '/upanishads', title: t.hub.label, body: t.hub.sub, location: 'related_hub' },
           ]}
         />
-      </Band>
+      </Section>
 
-      <Faq items={faq} heading={t.faq} />
+      <Section id="faq" tone="band" width="narrow" title={t.faq}>
+        <Faq items={faq} locale={locale} />
+      </Section>
 
       <SourcesNote heading={t.sources}>
         {locale === 'hi' ? (
@@ -278,6 +261,6 @@ export default function LinePage({ slug, locale }: { slug: string; locale: Local
           </>
         )}
       </SourcesNote>
-    </Shell>
+    </>
   )
 }

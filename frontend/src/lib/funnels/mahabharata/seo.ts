@@ -1,9 +1,9 @@
-/** Metadata and JSON-LD helpers for the Mahabharata funnel. */
+/** Metadata and JSON-LD builders specific to the Mahabharata funnel. Site URLs and page metadata come from lib/seo. */
 import type { Metadata } from 'next'
 import { cardImageUrl } from '@/lib/quotes-shared'
+import { AUTHOR_LD, SITE, abs, pageMeta } from '@/lib/seo'
+import type { Locale } from '@/lib/locale'
 
-export const SITE = 'https://wisdomquotes.in'
-export const abs = (p: string) => (p.startsWith('http') ? p : `${SITE}${p}`)
 export const UPDATED = '2026-10-30'
 
 export const PATHS = {
@@ -24,57 +24,18 @@ export const CITATION = {
 
 export const ogImage = (cardId: string) => abs(cardImageUrl(cardId, { format: 'post', lang: 'en' }))
 
-export function meta(opts: {
-  title: string
-  description: string
-  path: string
-  locale?: 'en' | 'hi'
-  twin?: { en: string; hi: string }
-  cardId?: string
-}): Metadata {
-  const url = abs(opts.path)
+/** Page metadata: lib/seo pageMeta with this funnel's title suffix and 4:5 share card. */
+export function meta(opts: { title: string; description: string; path: string; locale?: Locale; twin?: { en: string; hi: string }; cardId?: string }): Metadata {
   const image = opts.cardId ? ogImage(opts.cardId) : `${SITE}/og-image.webp`
-  const languages = opts.twin
-    ? {
-        en: abs(opts.twin.en),
-        'en-IN': abs(opts.twin.en),
-        hi: abs(opts.twin.hi),
-        'hi-IN': abs(opts.twin.hi),
-        'x-default': abs(opts.twin.en),
-      }
-    : undefined
+  const m = pageMeta({ title: `${opts.title} | Wisdom`, description: opts.description, path: opts.path, locale: opts.locale, twin: opts.twin, ogImage: image })
   return {
-    title: { absolute: `${opts.title} | Wisdom` },
-    description: opts.description,
-    alternates: { canonical: url, ...(languages ? { languages } : {}) },
-    openGraph: {
-      title: opts.title,
-      description: opts.description,
-      url,
-      type: 'article',
-      siteName: 'Wisdom',
-      locale: opts.locale === 'hi' ? 'hi_IN' : 'en_IN',
-      images: [{ url: image, width: 1080, height: 1350 }],
-    },
-    twitter: { card: 'summary_large_image', title: opts.title, description: opts.description, images: [image] },
+    ...m,
+    openGraph: { ...(m.openGraph as object), title: opts.title, images: [{ url: image, width: 1080, height: 1350 }] },
+    twitter: { ...(m.twitter as object), title: opts.title },
   }
 }
 
-export function breadcrumbLd(items: { name: string; path: string }[]) {
-  return {
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: abs(it.path) })),
-  }
-}
-
-export function faqLd(items: { q: string; a: string }[]) {
-  return {
-    '@type': 'FAQPage',
-    mainEntity: items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-  }
-}
-
-export function articleLd(opts: { headline: string; description: string; path: string; locale?: 'en' | 'hi'; image?: string; about?: string }) {
+export function articleLd(opts: { headline: string; description: string; path: string; locale?: Locale; image?: string; about?: string }) {
   return {
     '@type': 'Article',
     headline: opts.headline,
@@ -83,7 +44,7 @@ export function articleLd(opts: { headline: string; description: string; path: s
     datePublished: UPDATED,
     dateModified: UPDATED,
     image: opts.image ?? `${SITE}/og-image.webp`,
-    author: { '@type': 'Person', name: 'Ankur Shukla', url: `${SITE}/about` },
+    author: AUTHOR_LD,
     publisher: { '@type': 'Organization', name: 'Wisdom', logo: `${SITE}/assets/new-light-logo.webp` },
     mainEntityOfPage: abs(opts.path),
     citation: CITATION,
@@ -91,4 +52,5 @@ export function articleLd(opts: { headline: string; description: string; path: s
   }
 }
 
+/** One JSON-LD graph per page. BreadcrumbList comes from PageHero and FAQPage from the kit Faq. */
 export const graph = (...nodes: object[]) => ({ '@context': 'https://schema.org', '@graph': nodes })

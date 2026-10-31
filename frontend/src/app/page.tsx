@@ -100,8 +100,8 @@ const FAQ = [
 ]
 
 const BEYOND: { key: string; href: string; label: string; note: string; line: string; lineLang: string; feature?: boolean }[] = [
-  { key: 'ramayana', href: '/ramayana/in-the-original', label: 'Ramayana, in the original', note: 'Saw the film? Read what Valmiki and Tulsidas wrote, scene by scene.', line: 'रामो विग्रहवान् धर्मः', lineLang: 'sa', feature: true },
-  { key: 'hanuman_chalisa', href: '/hanuman-chalisa', label: 'Hanuman Chalisa', note: 'Every line, with its meaning', line: 'जय हनुमान ज्ञान गुन सागर', lineLang: 'awa' },
+  { key: 'ramayana', href: '/ramayana/in-the-original', label: 'Ramayana, in the original', note: 'Seeing the film? Read what Valmiki and Tulsidas wrote, scene by scene.', line: 'रामो विग्रहवान् धर्मः', lineLang: 'sa', feature: true },
+  { key: 'hanuman_chalisa', href: '/hanuman-chalisa', label: 'Hanuman Chalisa', note: 'Know what each line means as you say it', line: 'जय हनुमान ज्ञान गुन सागर', lineLang: 'awa' },
   { key: 'upanishads', href: '/upanishads', label: 'Upanishads', note: 'Tat tvam asi and nine more lines', line: 'तत्त्वमसि', lineLang: 'sa' },
   { key: 'mahabharata', href: '/mahabharata/where-is-the-gita', label: 'Mahabharata', note: 'Where the Gita sits in it', line: 'यतो धर्मस्ततो जयः', lineLang: 'sa' },
   { key: 'ashtavakra', href: '/ashtavakra-gita', label: 'Ashtavakra Gita', note: 'Janaka asks, Ashtavakra answers', line: 'मुक्ताभिमानी मुक्तो हि', lineLang: 'sa' },
@@ -123,7 +123,7 @@ export default async function HomePage() {
 
       {/* ── NAV + HERO: "your verse, right now" ── */}
       <div className="hero-shell">
-        <Nav overlayHero pageName="Home" />
+        <Nav overlayHero />
 
         <section className="hero hero-immersive hero-v3">
           <img
@@ -216,7 +216,7 @@ export default async function HomePage() {
         <div className="wrap">
           <div className="sec-head rv">
             <div className="eyebrow">Real plans</div>
-            <h2 className="heading">Pick one. See all <em>seven days.</em></h2>
+            <h2 className="heading">See all seven days <em>of a real plan.</em></h2>
           </div>
           <div className="rv">
             <PlanPreview />
@@ -294,7 +294,7 @@ export default async function HomePage() {
           <div className="sec-head rv">
             <div className="eyebrow">Gita for life</div>
             <h2 className="heading">What Krishna said about overthinking, grief, failure <em>and anger.</em></h2>
-            <p className="subtext">Each page gathers the verses on one problem, with Sanskrit, Hindi and English.</p>
+            <p className="subtext">Find the problem closest to yours and read what Krishna said about it.</p>
           </div>
           <div className="gita-for-grid" data-stagger="30">
             {GITA_FOR.map((p) => (
@@ -312,8 +312,8 @@ export default async function HomePage() {
         <div className="wrap">
           <div className="sec-head rv">
             <div className="eyebrow">Beyond the Gita</div>
-            <h2 className="heading">The Ramayana, the Upanishads and <em>the Chalisa you grew up with.</em></h2>
-            <p className="subtext">Each line in its original, with plain English and where it comes from.</p>
+            <h2 className="heading">The stories and prayers <em>you grew up with.</em></h2>
+            <p className="subtext">Go back to the texts your family already knows and read what they say in their own words.</p>
           </div>
           <div className={`beyond-grid ${tiro.variable}`} data-stagger="60">
             {BEYOND.map((b) => (
@@ -354,7 +354,7 @@ export default async function HomePage() {
             <div className="eyebrow">Read the Bhagavad Gita</div>
             <h2 className="heading">All 700 verses, <em>in Sanskrit with meaning.</em></h2>
             <p className="subtext">
-              18 chapters, one verse per page: the shloka in Devanagari, Hindi anuvad, an English translation and commentary.
+              Start at chapter 1, where Arjuna sits down in his chariot, or open the chapter you need today.
               Free, with no login and no ads.
             </p>
           </div>
@@ -392,7 +392,7 @@ export default async function HomePage() {
             <div>
               <div className="eyebrow" style={{ marginBottom: 6 }}>हिंदी में</div>
               <p className="hindi-callout-head">भगवद गीता के 700 श्लोक, हिंदी में अर्थ सहित</p>
-              <p className="hindi-callout-sub">संस्कृत श्लोक, हिंदी अनुवाद और विस्तृत अर्थ। सभी 18 अध्याय, निःशुल्क।</p>
+              <p className="hindi-callout-sub">गीता अपनी भाषा में पढ़ें, पहले अध्याय से या उस अध्याय से जिसकी आज ज़रूरत है। सभी 18 अध्याय, निःशुल्क।</p>
             </div>
             <a href="/hi/gita" hrefLang="hi" className="btn-nav" data-mp-location="home_hindi_callout">हिंदी गीता खोलें →</a>
           </div>

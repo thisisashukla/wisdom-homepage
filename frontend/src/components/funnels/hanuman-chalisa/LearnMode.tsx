@@ -8,16 +8,16 @@
  */
 
 import { useEffect, useMemo, useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/locale'
 import {
-  baseProps,
+  kindOf,
   LEARN_DAYS,
   LEARN_EMPTY,
   LEARN_KEY,
   readStore,
   writeStore,
   type BeadInfo,
-  type HcLocale,
   type LearnState,
 } from '@/lib/funnels/hanuman-chalisa/shared'
 import Mala from './Mala'
@@ -97,7 +97,7 @@ function Words({ text, level, offset }: { text: string; level: number; offset: n
   )
 }
 
-export default function LearnMode({ lines, beads, locale, page }: { lines: LearnLine[]; beads: BeadInfo[]; locale: HcLocale; page: string }) {
+export default function LearnMode({ lines, beads, locale }: { lines: LearnLine[]; beads: BeadInfo[]; locale: Locale }) {
   const t = T[locale]
   const [state, setState] = useState<LearnState>(LEARN_EMPTY)
   const [day, setDay] = useState(1)
@@ -128,11 +128,11 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
   const mark = (l: LearnLine) => {
     const learned = { ...state.learned, [l.id]: day }
     let completedDays = state.completedDays
-    trackEvent('Learn Line Marked', { ...baseProps(page, locale), line: l.id, day })
+    trackEvent(EVENTS.LearnLineMarked, { item_id: l.id, item_type: kindOf(l.id), day })
     const nowDone = today.every((x) => learned[x.id])
     if (nowDone && !completedDays.includes(day)) {
       completedDays = [...completedDays, day]
-      trackEvent('Learn Day Completed', { ...baseProps(page, locale), day, learned: Object.keys(learned).length })
+      trackEvent(EVENTS.LearnDayCompleted, { day, learned: Object.keys(learned).length })
     }
     save({ ...state, learned, completedDays })
   }
@@ -155,7 +155,7 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
   return (
     <div className="hc-learn">
       <aside className="hc-learn-aside" aria-label={t.mala}>
-        <Mala beads={beads} locale={locale} page={page} mode="button" currentId={current} learned={learnedIds} onSelect={onBead} label={t.mala} caption={t.mala}>
+        <Mala beads={beads} locale={locale} mode="button" currentId={current} learned={learnedIds} onSelect={onBead} label={t.mala} caption={t.mala}>
           <span className="hc-mala-big">{learnedIds.length}</span>
           <span className="hc-mala-sub" lang={locale}>
             {locale === 'hi' ? '43 में से' : 'of 43 learned'}
@@ -184,7 +184,7 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
           ))}
         </ul>
 
-        <h2 className="hc-h2 hc-learn-h" lang={locale}>
+        <h2 className="sx-h3 hc-learn-h" lang={locale}>
           {t.of(day)}
         </h2>
         <div className="hc-learn-list">
@@ -196,15 +196,13 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
               <p className="hc-learn-label" lang={locale}>
                 <a href={l.href}>{l.label}</a>
               </p>
-              <p className="hc-line">
-                <span className="hc-deva" lang="hi">
-                  <Words text={l.awadhi[0]} level={lv} offset={0} />
-                  <Words text={l.awadhi[1]} level={lv} offset={1} />
-                </span>
-                <span className="hc-iast" lang="hi-Latn">
-                  <Words text={l.iast[0]} level={lv} offset={0} />
-                  <Words text={l.iast[1]} level={lv} offset={1} />
-                </span>
+              <p className="hc-learn-orig sx-deva" lang="awa">
+                <Words text={l.awadhi[0]} level={lv} offset={0} />
+                <Words text={l.awadhi[1]} level={lv} offset={1} />
+              </p>
+              <p className="hc-learn-orig hc-learn-iast sx-iast" lang="awa-Latn">
+                <Words text={l.iast[0]} level={lv} offset={0} />
+                <Words text={l.iast[1]} level={lv} offset={1} />
               </p>
               {lv === 0 && (
                 <p className="hc-learn-mean" lang={locale}>
@@ -213,21 +211,21 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
               )}
               <div className="hc-learn-acts">
                 {lv < 3 ? (
-                  <button type="button" className="hc-btn" onClick={() => setLevel(l.id, lv + 1)} lang={locale}>
+                  <button type="button" className="sx-btn sx-btn--secondary" onClick={() => setLevel(l.id, lv + 1)} lang={locale}>
                     {t.fade}
                   </button>
                 ) : null}
                 {lv > 0 && (
-                  <button type="button" className="hc-btn" onClick={() => setLevel(l.id, 0)} lang={locale}>
+                  <button type="button" className="sx-btn sx-btn--secondary" onClick={() => setLevel(l.id, 0)} lang={locale}>
                     {t.show}
                   </button>
                 )}
                 {isL ? (
-                  <button type="button" className="hc-btn" onClick={() => unmark(l)} lang={locale} aria-label={`${t.undo}: ${l.label}`}>
+                  <button type="button" className="sx-btn sx-btn--secondary" onClick={() => unmark(l)} lang={locale} aria-label={`${t.undo}: ${l.label}`}>
                     {t.undo}
                   </button>
                 ) : (
-                  <button type="button" className="hc-btn hc-btn-primary" onClick={() => mark(l)} lang={locale}>
+                  <button type="button" className="sx-btn sx-btn--primary" onClick={() => mark(l)} lang={locale}>
                     {t.say}
                   </button>
                 )}
@@ -239,10 +237,10 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
 
         {(dayDone || allDone) && (
           <div className="hc-done" role="status" lang={locale}>
-            <p style={{ margin: 0 }}>{allDone ? t.finished : t.done(day)}</p>
+            <p>{allDone ? t.finished : t.done(day)}</p>
             {!allDone && day < LEARN_DAYS && (
-              <p style={{ margin: '12px 0 0' }}>
-                <button type="button" className="hc-btn" onClick={() => pickDay(day + 1)}>
+              <p>
+                <button type="button" className="sx-btn sx-btn--secondary" onClick={() => pickDay(day + 1)}>
                   {t.nextDay(day + 1)}
                 </button>
               </p>
@@ -253,7 +251,7 @@ export default function LearnMode({ lines, beads, locale, page }: { lines: Learn
         <p className="hc-reset">
           <button
             type="button"
-            className="hc-btn"
+            className="sx-btn sx-btn--secondary"
             onClick={() => {
               if (window.confirm(t.resetAsk)) {
                 save(LEARN_EMPTY)

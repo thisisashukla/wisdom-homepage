@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wisdom growth dashboard</title>
+<style>
+.viz-root{
+  color-scheme:light;
+  --bg:#f6f5f2; --surface-1:#fcfcfb; --border:#e4e2dc;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7873;
+  --grid:#ecebe7; --series-1:#2a78d6; --series-1-soft:#cde2fb; --series-2:#eb6834;
+  --good:#0ca30c; --warn:#b97f00; --crit:#d03b3b; --track:#efeee9;
+}
+@media (prefers-color-scheme:dark){
+  :root:where(:not([data-theme="light"])) .viz-root{
+    color-scheme:dark;
+    --bg:#121211; --surface-1:#1a1a19; --border:#2e2e2b;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+    --grid:#2a2a27; --series-1:#3987e5; --series-1-soft:#184f95; --series-2:#d95926;
+    --good:#0ca30c; --warn:#fab219; --crit:#e66767; --track:#262624;
+  }
+}
+:root[data-theme="dark"] .viz-root{
+  color-scheme:dark;
+  --bg:#121211; --surface-1:#1a1a19; --border:#2e2e2b;
+  --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+  --grid:#2a2a27; --series-1:#3987e5; --series-1-soft:#184f95; --series-2:#d95926;
+  --good:#0ca30c; --warn:#fab219; --crit:#e66767; --track:#262624;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+.viz-root{background:var(--bg);color:var(--text-primary);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;min-height:100vh;padding:28px 20px 60px}
+.wrap{max-width:1120px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+h1{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+h2{font-size:15px;margin:0 0 2px}
+h3{font-size:13px;margin:0 0 10px;color:var(--text-secondary);font-weight:600}
+.sub{color:var(--text-secondary);font-size:13px}
+.muted{color:var(--text-muted);font-size:12px}
+.tabs{display:flex;gap:4px;background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:3px}
+.tabs button{border:0;background:transparent;color:var(--text-secondary);font:inherit;font-size:13px;padding:6px 12px;border-radius:7px;cursor:pointer}
+.tabs button.on{background:var(--bg);color:var(--text-primary);font-weight:600}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.g4{grid-template-columns:1fr 1fr}.g2,.g3{grid-template-columns:1fr}}
+.card{background:var(--surface-1);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+.section{margin-top:26px}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;gap:12px;flex-wrap:wrap}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.big{font-size:40px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.kpi .v{font-size:26px;font-weight:700;letter-spacing:-.01em;margin:4px 0 2px}
+.kpi .l{font-size:12px;color:var(--text-secondary);font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:2px 7px;border-radius:99px;border:1px solid var(--border);color:var(--text-secondary)}
+.pill i{width:7px;height:7px;border-radius:50%;display:inline-block}
+.bar{height:10px;background:var(--track);border-radius:99px;overflow:hidden}
+.bar>span{display:block;height:100%;background:var(--series-1);border-radius:99px}
+.prog-row{display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);margin:12px 0 5px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;padding:0 8px 8px 0;border-bottom:1px solid var(--border)}
+td{padding:9px 8px 9px 0;border-bottom:1px solid var(--grid);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.n{text-align:right}
+.funnel .row{display:grid;grid-template-columns:minmax(140px,1.2fr) 72px 1.6fr 58px;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--grid)}
+.funnel .row:last-child{border-bottom:0}
+.funnel .name{font-size:13px}
+.funnel .cnt{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.funnel .pct{text-align:right;font-size:12px;color:var(--text-secondary);font-variant-numeric:tabular-nums}
+.funnel .row.leak .pct{color:var(--crit);font-weight:700}
+.funnel .hdr{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.obsess td:first-child{width:28px;color:var(--text-muted);font-weight:700}
+.status{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;white-space:nowrap}
+.status svg{flex:none}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:var(--text-primary);color:var(--surface-1);font-size:12px;padding:6px 8px;border-radius:7px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .08s}
+.note{font-size:12px;color:var(--text-secondary);margin-top:8px}
+.fix li{margin:0 0 8px}
+.fix b{font-weight:600}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--text-secondary);margin-bottom:6px}
+.legend i{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.split{display:flex;height:14px;border-radius:99px;overflow:hidden;gap:2px;margin:10px 0 8px}
+.split span{display:block;height:100%}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap" id="app"></div>
+</div>
+<script id="dashboard-data" type="application/json">{"asOf": "2026-10-31", "asOfLabel": "31 Oct 2026", "goal": {"payers": 0, "payersNeeded": 307, "installsWeek": 14, "installsNeeded": 240, "installsMonth": 60}, "gates": [{"name": "Day-2 verse reveal", "hint": "does the first verse land?", "now": "7%", "nowNote": "v2 D1", "target": "35%"}, {"name": "Install → trial start", "hint": "paywall says yes", "now": "0%", "nowNote": "", "target": "10%"}, {"name": "Site → app handoff", "hint": "App Store tap or /start", "now": "1.2%", "nowNote": "", "target": "5%"}], "fullFunnel": [["Attention: search impressions + reel views", 34856, "GSC 33,126 · Zernio 1,730"], ["Visited the site", 1468, "all sources, Mixpanel"], ["Stepped toward the app", 18, "App Store tap or /start sign-in"], ["Installed", 54, "all sources, incl. App Store search"], ["Saw the paywall", 10, "v2"], ["Paid", 0, ""]], "fullFunnelNote": "Two sources feed the top. Search produces 33.1k impressions and 753 clicks. Social produces 1,730 views (Instagram 1,297, YouTube 433) but no site visits from Instagram or YouTube in the last 28 days. From \"Site visitors\" down, people from all sources are counted together, and installs include App Store search, so the steps aren't one strict cohort. Use them to see where the drop-offs are.", "obsess": [{"name": "Reel views / week", "def": "Zernio views, Instagram + YouTube, Wisdom profile", "now": "~680", "nowNote": "", "target": "20k", "state": "crit"}, {"name": "Reel hold", "def": "Instagram avg watch ÷ reel length (inverse of skip rate)", "now": "~19%", "nowNote": "skip 76%", "target": "50%", "state": "crit"}, {"name": "ICP search clicks / week", "def": "GSC clicks from US, UK, CA, AU", "now": "~26", "nowNote": "", "target": "150", "state": "crit"}, {"name": "Funnel-page search clicks / week", "def": "GSC clicks on the SEO funnel pages launched 31 Oct", "now": "0", "nowNote": "4 of 11 hubs indexed, no clicks yet", "target": "200", "state": "crit"}, {"name": "Site → app handoff", "def": "(App Store Button Clicked + Onboarding Signin Started) ÷ Page Viewed, uniques", "now": "1.2%", "nowNote": "", "target": "5%", "state": "crit"}, {"name": "Installs / week", "def": "$ae_first_open, unique, prod builds", "now": "14", "nowNote": "", "target": "240", "state": "crit"}, {"name": "Install → first verse revealed", "def": "$ae_first_open → Verse Revealed (context onboarding), 1 day", "now": "42%", "nowNote": "v3 test, n=12", "target": "70%", "state": "warn"}, {"name": "Day-2 verse reveal", "def": "Verse Revealed (home, day 2) within 48h of Onboarding Completed", "now": "7%", "nowNote": "v2 D1 return", "target": "35%", "state": "crit"}, {"name": "Install → trial start", "def": "rc_trial_started_event ÷ installs (RevenueCat → Mixpanel)", "now": "0%", "nowNote": "", "target": "10%", "state": "crit"}, {"name": "Trial → paid", "def": "rc_trial_converted_event ÷ rc_trial_started_event", "now": "n/a", "nowNote": "", "target": "40%", "state": "na"}], "fixes": ["<b>Turn on the RevenueCat → Mixpanel integration.<\/b> Trials, conversions, renewals and refunds land on the same person, which unlocks trial → paid and real MRR.", "<b>Tag App Store links on the site with campaign tokens<\/b> (<code>?pt=…&amp;ct=home_hero<\/code>, <code>ct=start_done<\/code> and so on). App Store Connect then shows installs per placement, which closes the site → install gap.", "<b>Give every social link its own tag.<\/b> Point the Instagram and YouTube bio links to <code>wisdomquotes.in/?utm_source=instagram<\/code> (or youtube), and send any direct App Store link with <code>ct=ig_bio<\/code> / <code>ct=yt_bio<\/code>. Zernio reports 0 profile views and 0 website clicks for every reel, so check the Instagram account's insights permission in Zernio as well.", "<b>Filter sandbox purchases.<\/b> Add <code>environment<\/code> (sandbox/production) to Purchase Completed and exclude $ae_iap from reports. Today's 47 v3 events are all tests.", "<b>Add <code>country<\/code> as a super property in the app<\/b> so every funnel can be split into ICP vs India from day one of v3.", "<b>Name the web /start events to match the app<\/b> (Verse Revealed, Week Started) so the web 7-day plan and the app plan show up in one Mixpanel funnel."], "funnelPages": {"launch": "2026-10-31", "urlsInSitemap": 290, "sitemapSubmitted": 1951, "sitemapIndexed": 1665, "sitemapIndexedBaseline": 1665, "hubsIndexed": 4, "hubsTotal": 11, "clicksSinceLaunch": 0, "imprSinceLaunch": 0, "visitorsSinceLaunch": 1, "handoffSinceLaunch": 0, "aiReferrals28": 8, "aiReferralsBaseline": 6, "aiReferralsDetail": "ChatGPT 6 · Gemini 1 · Copilot 1", "daily": {"labels": ["31 Oct"], "impr": [0], "clicks": [0], "visitors": [1]}, "byFunnel": [{"funnel": "Hanuman Chalisa", "urls": 49, "hub": "discovered", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}, {"funnel": "Other Gitas (Ashtavakra)", "urls": 65, "hub": "indexed", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}, {"funnel": "Sayings (Vivekananda, Kabir, Chanakya)", "urls": 103, "hub": "crawled", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}, {"funnel": "Ramayana", "urls": 18, "hub": "discovered", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}, {"funnel": "Upanishads", "urls": 20, "hub": "discovered", "impr": 0, "clicks": 0, "pos": null, "visitors": 1, "handoff": 0}, {"funnel": "Mahabharata", "urls": 12, "hub": "indexed", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}, {"funnel": "Ram Shalaka", "urls": 11, "hub": "discovered", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}, {"funnel": "Quote pages", "urls": 12, "hub": "indexed", "impr": 0, "clicks": 0, "pos": null, "visitors": 0, "handoff": 0}], "topQueries": [], "note": "Google indexed the Mahabharata, Ashtavakra Gita and Bhagavad Gita quotes hubs within a day of launch, so 4 of 11 hubs are now in the index. Vivekananda was crawled but not indexed, Ramayana, Ram Shalaka, Hanuman Chalisa and Upanishads are discovered only, and Kabir and Chanakya are still unknown to Google. GSC has no data for the funnel pages yet; Ramayana still needs to be indexed before 5 Nov.", "launchLabel": "31 Oct"}, "social": {"range": "20 Sep to 29 Oct", "views7": 678, "views7Delta": "+29% vs prior 7d", "views7Good": true, "followersTotal": 162, "followersDetail": "IG 58 (+1) · YT 72 (+4) · X 32 (+0), last 6 weeks", "skip": "76%", "avgWatch": "avg watch 3.7s of 33s", "siteVisits28": 0, "weekly": {"labels": ["14 Sep", "21 Sep", "28 Sep", "5 Oct", "12 Oct", "19 Oct", "26 Oct"], "ig": [120, 0, 0, 157, 291, 531, 198], "yt": [0, 0, 0, 0, 0, 0, 433]}, "weeklyNote": "Views count toward the week a post was published. Volume tracks how often you post: 11 Shorts went up on 27 Oct and lifted that week, at about 39 views each.", "funnel": [["Reel views", 1730, "Instagram 1,297 · YouTube 433"], ["Reached (Instagram)", 1085, ""], ["Engaged", 58, "likes, saves, shares"], ["Visited profile", 0, "Zernio"], ["Visited site", 0, "Mixpanel, instagram/youtube referrers"]], "funnelNote": "Of 1,730 views, 58 led to a like, save or share (3.4%). From there it stops: Zernio shows 0 profile views and 0 website clicks, and Mixpanel shows no site visits from Instagram or YouTube in 28 days. Nobody can follow a viewer from a reel to an install yet.", "posts": [["Everyone your age seems so far ahead of you", "Gita 3.35", 223, 6, 2, "79%", "2.9s / 13s"], ["The Bhagavad Gita was not made for you", "55s story", 210, 15, 1, "78%", "9.1s / 55s"], ["It's 4 p.m. and you still haven't started", "", 147, 3, 1, "74%", "3.0s / 13s"], ["Opened your phone. Forgot why. Again.", "", 131, 6, 0, "75%", "2.8s / 14s"], ["You snapped at someone you love. Again.", "", 127, 1, 2, "81%", "2.3s / 14s"], ["The Bhagavad Gita was never a sermon for everyone", "131s story", 124, 3, 0, "78%", "3.3s / 131s"], ["Scrolled till 2 a.m. Woke up exhausted. Again.", "", 70, 2, 0, "68%", "2.3s / 14s"]], "postsNote": "The 55-second story reel (\"not made for you\") still has 2.5× the likes of any other post and the longest watch time. The 131-second follow-up from 29 Oct has settled at a 78% skip rate and 3.3s average watch on 124 views, the same as the short quote cards. Story length alone did not hold people; the first 3 seconds decide it."}, "web": {"clicks7": 341, "clicks7Delta": "+117% vs prior 7d", "clicks7Good": true, "visitors28": 1468, "visitorsMix": "70% from search, 25% direct", "icpShare": "23%", "icpDetail": "US 266 · UK 41 · CA 24 · AU 12", "appTaps28": 12, "appTapsPct": "0.8% of visitors", "weeklyClicks": {"labels": ["31 Aug", "7 Sep", "14 Sep", "21 Sep", "28 Sep", "5 Oct", "12 Oct", "19 Oct", "26 Oct"], "clicks": [72, 79, 103, 159, 137, 130, 146, 170, 270], "impr": [3727, 3690, 5215, 7775, 6234, 5912, 6721, 7966, 10886]}, "weeklyClicksNote": "CTR holds at about 2.3%, so growth comes from impressions. The jump since 24 Oct lines up with the SEO fixes from 25 Oct; 30 Oct dipped to 36 clicks, which may be partial data.", "weeklyVisitors": {"labels": ["31 Aug", "7 Sep", "14 Sep", "21 Sep", "28 Sep", "5 Oct", "12 Oct", "19 Oct", "26 Oct"], "values": [228, 213, 223, 295, 863, 296, 341, 340, 278]}, "weeklyVisitorsNote": "The 28 Sep spike (863) was a one-off. Underneath it, visitors were flat at about 300 a week until the last week, when daily visitors rose to 80 to 90.", "handoffNote": "GSC: 33,126 impressions → 753 clicks (2.3% CTR)", "handoff": [["Site visitors", 1468, "all sources"], ["Played a shloka", 151, "engaged"], ["Tapped App Store", 12, ""]], "start": [["Opened /start", 31, ""], ["Answered a question", 18, ""], ["Verses generated", 6, ""], ["Started Google sign-in", 6, ""], ["Signed in", 1, ""], ["Completed", 1, ""]], "startNote": "Only a third of people who answer a question get to see verses. That is the leak to fix first: the verse should appear before they are asked anything else. The first web /start completion showed up this week (1 of 31).", "split": [["India", 970], ["US / UK / CA / AU (ICP)", 343], ["Rest of world", 155]], "splitNote": "Your ICP is the diaspora (US, UK, CA, AU), but they are only 1 in 4 visitors. Over 28 days US CTR is 1.65% against 2.37% for India, at a similar position (7.3 vs 6.8). In the last 7 days US CTR rose to 2.6%, an early sign the new titles help.", "topPages": [["/hi/gita", 258, "4.8%", 5.8], ["/blogs/karma-quotes-bhagavad-gita", 98, "3.1%", 5.9], ["/ (home)", 54, "6.1%", 6.3], ["/blogs/best-bhagavad-gita-translation", 47, "1.5%", 6.9], ["/blogs/krishna-quotes", 47, "1.4%", 6.6], ["/blogs/20-famous-sanskrit-shlokas", 35, "2.3%", 6.5]], "topPagesNote": "The top page is the Hindi Gita page, which pulls Indian, Hindi-reading visitors (not the ICP). The English blogs with 1.3 to 1.5% CTR are where better titles pay off for the diaspora."}, "app": {"installs4w": 54, "installs4wNote": "~14 a week, almost all from the App Store directly", "wau": 21, "wauNote": "week of 19 Oct, all versions", "d1": "7%", "d7": "Day 7: 1%", "purchases": 0, "purchasesNote": "real purchases, v2, 60 days · 10 saw the paywall", "v2": [["Installed", 112, ""], ["Saw splash", 83, ""], ["Began onboarding", 82, ""], ["Committed (after reflection)", 26, ""], ["Saw paywall", 10, ""], ["Purchased", 0, ""]], "v2Note": "68% drop at the reflection and journaling steps. This is the old effort-heavy flow that v3 replaces.", "v3": [["Installed", 12, ""], ["Answered onboarding", 6, ""], ["Verses generated", 5, ""], ["First verse revealed", 5, ""], ["Saw paywall", 3, ""], ["Started purchase", 0, ""]], "v3Note": "n = 12, so read this for shape, not for rates. Make this report your launch-day baseline. The 47 purchase events on 3.0.0 are sandbox tests and must be filtered out.", "installsWeekly": {"labels": ["31 Aug", "7 Sep", "14 Sep", "21 Sep", "28 Sep", "5 Oct", "12 Oct", "19 Oct", "26 Oct"], "all": [8, 5, 14, 11, 10, 12, 23, 15, 4], "v3": [0, 0, 0, 0, 0, 0, 7, 5, 0]}, "retention": [82, 7, 3, 3, 3, 1, 0, 1], "retentionNote": "Benchmark for a daily-habit app: D1 at least 30%, D7 at least 15%. v3's whole bet is the Day-2 verse reveal, so put a Mixpanel retention report on Verse Revealed (home), cohorted by first_open_date, on the day you launch."}, "footnote": "Goal math uses the 15 Oct unit economics model (10% trial start, 40% trial → paid, 70/30 annual/monthly, ~7.5 paid months). Week labels are Monday starts; the latest week is partial. Refreshed daily."}</script>
+<script>
+const D=JSON.parse(document.getElementById('dashboard-data').textContent);
+const fmt=n=>n==null?'n/a':(typeof n==='number'?n.toLocaleString('en-US'):n);
+const pill=(txt,kind)=>`<div class="pill"><i style="background:var(--${kind})"></i>${txt}</div>`;
+const kpi=(l,v,sub)=>`<div class="card kpi"><div class="l">${l}</div><div class="v">${fmt(v)}</div>${sub||''}</div>`;
+const muted=t=>t?`<div class="muted">${t}</div>`:'';
+const note=t=>t?`<p class="note">${t}</p>`:'';
+const ST={crit:['var(--crit)','Off track','M6 1.5 L10.5 10 H1.5 Z',1],warn:['var(--warn)','Behind','M6 1.5 L10.5 10 H1.5 Z',1],good:['var(--good)','On track','M2 6.5 L5 9 L10 3',0],na:['var(--text-muted)','Not measured','M2 6 H10',0]};
+const status=k=>{const [c,l,p,f]=ST[k]||ST.na;return `<span class="status" style="color:${c}"><svg width="12" height="12" viewBox="0 0 12 12"><path d="${p}" fill="${f?c:'none'}" stroke="${c}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>${l}</span>`};
+let uid=0;const FUN=[],CH=[];
+const funnelBox=rows=>{const id='f'+(uid++);FUN.push([id,rows]);return `<div class="funnel" id="${id}"></div>`};
+const chartBox=(labels,series,opt)=>{const id='c'+(uid++);CH.push([id,labels,series,opt||{}]);return `<div class="chart" id="${id}"></div>`};
+const legend=items=>`<div class="legend">${items.map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join('')}</div>`;
+const sec=(key,title,sub,inner)=>`<div class="section"${key?` data-sec="${key}"`:''}><div class="section-head"><div><h2>${title}</h2><div class="sub">${sub}</div></div></div>${inner}</div>`;
+
+const g=D.goal, fp=D.funnelPages, so=D.social, w=D.web, a=D.app;
+const pctW=Math.min(100,g.installsWeek/g.installsNeeded*100);
+let h=`
+<header>
+  <div>
+    <h1>Wisdom growth dashboard</h1>
+    <div class="sub">wisdomquotes.in + Wisdom iOS (v2 live, v3 in test) · refreshed ${D.asOfLabel}</div>
+    <div class="muted">Sources: Zernio, Google Search Console, Mixpanel (Wisdom, Wisdom-Homepage), Supabase</div>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="on" data-tab="all">Everything</button>
+    <button data-tab="seo">New pages</button>
+    <button data-tab="social">Social</button>
+    <button data-tab="web">Homepage</button>
+    <button data-tab="app">App</button>
+  </div>
+</header>
+<div class="hero">
+  <div class="card">
+    <h3>North star · paying subscribers</h3>
+    <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
+      <div class="big">${g.payers} <span style="font-size:20px;color:var(--text-muted);font-weight:600">/ ${g.payersNeeded}</span></div>
+      <div class="sub">needed for $1k MRR</div>
+    </div>
+    <div class="prog-row"><span>Installs per week</span><span><b style="color:var(--text-primary)">${g.installsWeek}</b> now · <b style="color:var(--text-primary)">~${g.installsNeeded}</b> needed</span></div>
+    <div class="bar"><span style="width:${pctW.toFixed(1)}%"></span></div>
+    <p class="note">$1k needs about ${g.payersNeeded} payers at $3.26 net a month each (70% on the $39.99 annual plan, 30% on the $4.99 monthly, after Apple's 15%). At 10% of installs starting a trial and 40% of trials converting, and payers staying about 7.5 months, you need about 1,000 installs a month. Today you get about ${g.installsMonth}, so installs need to grow roughly <b>${Math.round(1000/Math.max(g.installsMonth,1))}×</b>. The rates on the right need to improve too, and that is where the work goes first.</p>
+  </div>
+  <div class="card">
+    <h3>The 3 numbers that gate everything</h3>
+    <table><tr><th>Metric</th><th class="n">Now</th><th class="n">Target</th></tr>
+    ${D.gates.map(x=>`<tr><td>${x.name}${muted(x.hint)}</td><td class="n">${x.now}${muted(x.nowNote)}</td><td class="n">${x.target}</td></tr>`).join('')}
+    </table>
+    <p class="note">Fix them in this order. Extra traffic is wasted until Day 2 retention and the trial start rate are working.</p>
+  </div>
+</div>`;
+
+h+=sec('','The whole funnel, last 28 days','Social and search bring attention, the site hands people to the app, and the app turns them into payers.',`<div class="card">${funnelBox(D.fullFunnel)}${note(D.fullFunnelNote)}</div>`);
+
+h+=sec('','What to track every week',`${D.obsess.length} metrics, one per funnel stage, starting with social.`,`<div class="card"><table class="obsess"><tr><th></th><th>Metric</th><th>Definition</th><th class="n">Now</th><th class="n">Target</th><th>State</th></tr>${D.obsess.map((o,i)=>`<tr><td>${i+1}</td><td><b>${o.name}</b></td><td class="sub">${o.def}</td><td class="n">${o.now}${muted(o.nowNote)}</td><td class="n">${o.target}</td><td>${status(o.state)}</td></tr>`).join('')}</table></div>`);
+
+/* NEW SEO FUNNEL PAGES */
+const idx=fp.sitemapIndexed-fp.sitemapIndexedBaseline;
+const aiDelta=fp.aiReferrals28-fp.aiReferralsBaseline;
+const hubCls=s=>s==='indexed'?'good':(s==='crawled'||s==='discovered'?'warn':'na');
+const hubTxt=s=>({indexed:'Indexed',crawled:'Crawled, not indexed',discovered:'Discovered',unknown:'Unknown to Google'})[s]||s;
+h+=sec('seo',`New SEO funnel pages · launched ${fp.launchLabel}`,`About ${fp.urlsInSitemap} pages across Ramayana, Ram Shalaka, Hanuman Chalisa, Upanishads, Mahabharata, other Gitas, sayings and quote pages. Their job is new search and AI-assistant traffic that hands people to the app.`,`
+<div class="grid g4">
+  ${kpi('Sitemap URLs indexed',`${fmt(fp.sitemapIndexed)}`,`<div class="muted">of ${fmt(fp.sitemapSubmitted)} submitted · ${idx>=0?'+':''}${idx} since launch · hubs ${fp.hubsIndexed}/${fp.hubsTotal}</div>`)}
+  ${kpi('Search impressions since launch',fp.imprSinceLaunch,`<div class="muted">${fmt(fp.clicksSinceLaunch)} clicks</div>`)}
+  ${kpi('Visitors to the new pages',fp.visitorsSinceLaunch,`<div class="muted">${fmt(fp.handoffSinceLaunch)} tapped toward the app</div>`)}
+  ${kpi('AI-assistant referrals, 28 days',fp.aiReferrals28,pill(`${aiDelta>=0?'+':''}${aiDelta} vs ${fp.aiReferralsBaseline} at launch`,aiDelta>0?'good':'track')+muted(fp.aiReferralsDetail))}
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>Daily search impressions on the new pages (GSC)</h3>${chartBox(fp.daily.labels,[{n:'Impressions',v:fp.daily.impr,c:'var(--series-1)',extra:i=>` · ${fp.daily.clicks[i]} clicks`}],{aria:'Daily impressions on funnel pages'})}<p class="note">GSC data lags 2 to 3 days, so the last days are always low.</p></div>
+  <div class="card"><h3>Daily visitors to the new pages (Mixpanel, unique)</h3>${chartBox(fp.daily.labels,[{n:'Visitors',v:fp.daily.visitors,c:'var(--series-1)'}],{aria:'Daily funnel page visitors'})}${note(fp.note)}</div>
+</div>
+<div class="card" style="margin-top:14px">
+  <h3>By funnel, since launch</h3>
+  <table><tr><th>Funnel</th><th class="n">Pages</th><th>Hub page</th><th class="n">Impr.</th><th class="n">Clicks</th><th class="n">CTR</th><th class="n">Pos</th><th class="n">Visitors</th><th class="n">To app</th></tr>
+  ${fp.byFunnel.map(r=>`<tr><td>${r.funnel}</td><td class="n">${r.urls}</td><td>${status(hubCls(r.hub)).replace(/(On track|Behind|Not measured)/,hubTxt(r.hub))}</td><td class="n">${fmt(r.impr)}</td><td class="n">${fmt(r.clicks)}</td><td class="n">${r.impr?(r.clicks/r.impr*100).toFixed(1)+'%':'n/a'}</td><td class="n">${r.pos==null?'n/a':r.pos}</td><td class="n">${fmt(r.visitors)}</td><td class="n">${fmt(r.handoff)}</td></tr>`).join('')}
+  </table>
+  ${fp.topQueries.length?`<h3 style="margin-top:16px">Top queries landing on the new pages</h3><table><tr><th>Query</th><th>Page</th><th class="n">Impr.</th><th class="n">Clicks</th><th class="n">Pos</th></tr>${fp.topQueries.map(q=>`<tr><td>${q[0]}</td><td class="sub">${q[1]}</td><td class="n">${fmt(q[2])}</td><td class="n">${fmt(q[3])}</td><td class="n">${q[4]}</td></tr>`).join('')}</table>`:'<p class="note">No queries yet. They appear once Google indexes the pages and starts showing them.</p>'}
+</div>`);
+
+/* SOCIAL */
+h+=sec('social','Social · @wisdomquoteapp (Instagram), Wisdom Quotes (YouTube), @wisdomquotesin (X)',`From Zernio, ${so.range}. Social's job is to stop the scroll and send ICP viewers to the app.`,`
+<div class="grid g4">
+  ${kpi('Views, last 7 days',so.views7,pill(so.views7Delta,so.views7Good?'good':'crit'))}
+  ${kpi('Followers',so.followersTotal,muted(so.followersDetail))}
+  ${kpi('Instagram reel skip rate',so.skip,pill(so.avgWatch,'crit'))}
+  ${kpi('Site visits from social, 28 days',so.siteVisits28,pill('Mixpanel: instagram, youtube referrers','crit'))}
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>Views per week, by publish week</h3>${legend([['Instagram','var(--series-1)'],['YouTube Shorts','var(--series-2)']])}${chartBox(so.weekly.labels,[{n:'Instagram',v:so.weekly.ig,c:'var(--series-1)'},{n:'YouTube',v:so.weekly.yt,c:'var(--series-2)'}],{aria:'Weekly social views'})}${note(so.weeklyNote)}</div>
+  <div class="card"><h3>Social funnel, ${so.range}</h3>${funnelBox(so.funnel)}${note(so.funnelNote)}</div>
+</div>
+<div class="card" style="margin-top:14px"><h3>Posts by views (Instagram reels, Zernio)</h3>
+<table><tr><th>Hook</th><th class="n">Views</th><th class="n">Likes</th><th class="n">Saves</th><th class="n">Skip</th><th class="n">Avg watch</th></tr>
+${so.posts.map(p=>`<tr><td>${p[0]}${p[1]?` <span class="muted">· ${p[1]}</span>`:''}</td><td class="n">${p[2]}</td><td class="n">${p[3]}</td><td class="n">${p[4]}</td><td class="n">${p[5]}</td><td class="n">${p[6]}</td></tr>`).join('')}
+</table>${note(so.postsNote)}</div>`);
+
+/* HOMEPAGE */
+const tot=w.split.reduce((s,x)=>s+x[1],0);const sc=['var(--series-1)','var(--series-2)','var(--text-muted)'];
+h+=sec('web','Homepage · wisdomquotes.in',"The site's job is to bring the right people in and pass them to the app.",`
+<div class="grid g4">
+  ${kpi('Search clicks, last 7 days',w.clicks7,pill(w.clicks7Delta,w.clicks7Good?'good':'crit'))}
+  ${kpi('Visitors, 28 days',w.visitors28,muted(w.visitorsMix))}
+  ${kpi('ICP share of visitors',w.icpShare,muted(w.icpDetail))}
+  ${kpi('App Store taps, 28 days',w.appTaps28,pill(w.appTapsPct,'crit'))}
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>Search clicks per week (GSC)</h3>${chartBox(w.weeklyClicks.labels,[{n:'Clicks',v:w.weeklyClicks.clicks,c:'var(--series-1)',extra:i=>` · ${fmt(w.weeklyClicks.impr[i])} impr.`}],{aria:'Weekly search clicks'})}${note(w.weeklyClicksNote)}</div>
+  <div class="card"><h3>Site visitors per week (Mixpanel, unique)</h3>${chartBox(w.weeklyVisitors.labels,[{n:'Visitors',v:w.weeklyVisitors.values,c:'var(--series-1)'}],{aria:'Weekly site visitors'})}${note(w.weeklyVisitorsNote)}</div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>Visitor → app handoff, last 28 days</h3><p class="muted" style="margin:-6px 0 6px">${w.handoffNote}</p>${funnelBox(w.handoff)}</div>
+  <div class="card"><h3>/start flow (web 7-day plan)</h3>${funnelBox(w.start)}${note(w.startNote)}</div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>Who visits (28 days, Mixpanel)</h3>
+    <div class="split">${w.split.map((s,i)=>`<span title="${s[0]}: ${s[1]}" style="width:${s[1]/tot*100}%;background:${sc[i]}"></span>`).join('')}</div>
+    <div class="legend">${w.split.map((s,i)=>`<span><i style="background:${sc[i]};height:10px;width:10px;border-radius:3px"></i>${s[0]} · ${Math.round(s[1]/tot*100)}%</span>`).join('')}</div>${note(w.splitNote)}</div>
+  <div class="card"><h3>Top search pages (GSC, 28 days)</h3><table><tr><th>Page</th><th class="n">Clicks</th><th class="n">CTR</th><th class="n">Pos</th></tr>${w.topPages.map(p=>`<tr><td>${p[0]}</td><td class="n">${p[1]}</td><td class="n">${p[2]}</td><td class="n">${p[3]}</td></tr>`).join('')}</table>${note(w.topPagesNote)}</div>
+</div>`);
+
+/* APP */
+h+=sec('app','App · Wisdom iOS','v2 (2.1.x) is live on the App Store. v3 (3.0.0) is in TestFlight, so treat its numbers as a smoke test.',`
+<div class="grid g4">
+  ${kpi('Installs, last 4 weeks',a.installs4w,muted(a.installs4wNote))}
+  ${kpi('Weekly active users',a.wau,muted(a.wauNote))}
+  ${kpi('v2 Day-1 return',a.d1,pill(a.d7,'crit'))}
+  ${kpi('Real purchases',a.purchases,muted(a.purchasesNote))}
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>v2 install → purchase (7-day window)</h3>${funnelBox(a.v2)}${note(a.v2Note)}</div>
+  <div class="card"><h3>v3 install → purchase (TestFlight)</h3>${funnelBox(a.v3)}${note(a.v3Note)}</div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3>Installs per week</h3>${legend([['All versions','var(--series-1)'],['v3 test builds','var(--series-2)']])}${chartBox(a.installsWeekly.labels,[{n:'All versions',v:a.installsWeekly.all,c:'var(--series-1)'},{n:'v3 test',v:a.installsWeekly.v3,c:'var(--series-2)'}],{aria:'Weekly installs'})}</div>
+  <div class="card"><h3>v2 retention, share of installs active on day N</h3>${chartBox(a.retention.map((_,i)=>'D'+i),[{n:'Active',v:a.retention,c:'var(--series-1)'}],{bar:true,pct:true,max:100,aria:'v2 retention by day',tipLabel:i=>'Day '+i})}${note(a.retentionNote)}</div>
+</div>`);
+
+h+=sec('','Fix the tracking before you trust the numbers','Without these, social → install, trial start and trial → paid can\'t be measured.',`<div class="card"><ol class="fix">${D.fixes.map(f=>`<li>${f}</li>`).join('')}</ol></div>`);
+h+=`<p class="muted" style="margin-top:24px">${D.footnote}</p>`;
+document.getElementById('app').innerHTML=h;
+
+/* funnels */
+function funnel(el,rows){
+  let worst=-1,wv=2;rows.forEach((r,i)=>{if(i>0&&rows[i-1][1]>0&&r[1]<=rows[i-1][1]){const c=r[1]/rows[i-1][1];if(c<wv){wv=c;worst=i}}});
+  const max=rows[0][1];
+  el.innerHTML=`<div class="row hdr"><span>Step</span><span style="text-align:right">Users</span><span>Share of first step</span><span style="text-align:right">Step conv.</span></div>`+
+  rows.map((r,i)=>{const wd=max?Math.max(r[1]/max*100,r[1]?1.2:0):0;const p=i===0?'':(rows[i-1][1]?(r[1]>rows[i-1][1]?'n/a':Math.round(r[1]/rows[i-1][1]*1000)/10+'%'):'n/a');
+   return `<div class="row${i===worst?' leak':''}" title="${r[0]}: ${fmt(r[1])}"><span class="name">${r[0]}${muted(r[2])}</span><span class="cnt">${fmt(r[1])}</span><span class="bar"><span style="width:${wd}%"></span></span><span class="pct">${p}</span></div>`}).join('');
+}
+FUN.forEach(([id,rows])=>funnel(document.getElementById(id),rows));
+
+/* charts */
+function niceMax(m){if(m<=0)return 4;const p=Math.pow(10,Math.floor(Math.log10(m)));const n=m/p;const s=n<=1?1:n<=2?2:n<=4?4:n<=5?5:10;return s*p*(m/(s*p)>0.9?1.25:1)}
+function chart(el,labels,series,opt){
+  const W=520,H=opt.h||190,P={l:38,r:12,t:12,b:26};
+  const all=series.flatMap(s=>s.v);let mx=opt.max||niceMax(Math.max(...all,0)*1.1);if(!opt.max){const st=mx/4;mx=Math.ceil(mx/st)*st}
+  const n=labels.length;
+  const bw=opt.bar?Math.min(26,(W-P.l-P.r)/n*0.55):0;
+  const X=i=>opt.bar?P.l+bw/2+i*((W-P.l-P.r-bw)/Math.max(n-1,1)):(n===1?(P.l+W-P.r)/2:P.l+i*(W-P.l-P.r)/(n-1));
+  const y=v=>H-P.b-(v/mx)*(H-P.t-P.b);
+  let g='';for(let k=0;k<=4;k++){const v=mx*k/4,yy=y(v);g+=`<line x1="${P.l}" x2="${W-P.r}" y1="${yy}" y2="${yy}" stroke="var(--grid)"/><text x="${P.l-6}" y="${yy+4}" text-anchor="end" font-size="10" fill="var(--text-muted)">${opt.pct?Math.round(v)+'%':(v>=1000?(v/1000).toFixed(v%1000?1:0)+'k':Math.round(v))}</text>`}
+  const every=Math.ceil(n/10);labels.forEach((l,i)=>{if(i%every===0||i===n-1)g+=`<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="10" fill="var(--text-muted)">${l}</text>`});
+  let m='';
+  series.forEach(s=>{
+    if(opt.bar){s.v.forEach((v,i)=>{const hh=H-P.b-y(v);const r=Math.min(4,hh/2);const x0=X(i)-bw/2,y0=y(v);m+=hh>0?`<path d="M${x0},${H-P.b} V${y0+r} Q${x0},${y0} ${x0+r},${y0} H${x0+bw-r} Q${x0+bw},${y0} ${x0+bw},${y0+r} V${H-P.b} Z" fill="${s.c}"/>`:''})}
+    else{if(n>1)m+=`<path d="${s.v.map((v,i)=>(i?'L':'M')+X(i)+','+y(v)).join(' ')}" fill="none" stroke="${s.c}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+      const li=s.v.length-1;m+=`<circle cx="${X(li)}" cy="${y(s.v[li])}" r="4" fill="${s.c}" stroke="var(--surface-1)" stroke-width="2"/>`}
+  });
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${opt.aria||''}">${g}${m}<line class="xh" y1="${P.t}" y2="${H-P.b}" stroke="var(--text-muted)" stroke-dasharray="3 3" opacity="0"/><rect x="${P.l}" y="0" width="${W-P.l-P.r}" height="${H}" fill="transparent"/></svg><div class="tip"></div>`;
+  const svg=el.querySelector('svg'),tip=el.querySelector('.tip'),xh=el.querySelector('.xh');
+  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const px=(e.clientX-r.left)/r.width*W;let i=0,b=1e9;labels.forEach((_,k)=>{const d=Math.abs(X(k)-px);if(d<b){b=d;i=k}});
+    xh.setAttribute('x1',X(i));xh.setAttribute('x2',X(i));xh.setAttribute('opacity',opt.bar?0:1);
+    tip.innerHTML=`<b>${opt.tipLabel?opt.tipLabel(i):labels[i]}</b><br>`+series.map(s=>`${s.n}: ${fmt(s.v[i])}${opt.pct?'%':''}${s.extra?s.extra(i):''}`).join('<br>');
+    tip.style.left=(X(i)/W*r.width)+'px';tip.style.top=(y(Math.max(...series.map(s=>s.v[i])))/H*r.height)+'px';tip.style.opacity=1});
+  svg.addEventListener('mouseleave',()=>{tip.style.opacity=0;xh.setAttribute('opacity',0)});
+}
+CH.forEach(([id,l,s,o])=>chart(document.getElementById(id),l,s,o));
+
+/* tabs */
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  const t=b.dataset.tab;document.querySelectorAll('[data-sec]').forEach(s=>s.classList.toggle('hidden',t!=='all'&&s.dataset.sec!==t));
+});
+</script>
+</body>
+</html>

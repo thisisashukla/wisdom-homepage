@@ -1,24 +1,24 @@
 /** /hi/chanakya-niti (Hindi). Server. */
 
-import { BlogTracker } from '@/components/BlogTracker'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, PageHero, Section, VerseList } from '@/components/site'
 import { CHK_SECTIONS, chkEdition, chkNotSaid, chkSituations, chkVerse, chkVerses, chkWomen, type ChkVerse } from '@/lib/funnels/sayings/data'
 import { CHK_HUB, CHK_PATH, CHK_SECTION, sealText } from '@/lib/funnels/sayings/copy-chanakya'
-import { abs, cardOg, ldArticle, ldBreadcrumb, ldFaq, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
-import DevaCard from './DevaCard'
-import FxNextStep from './FxNextStep'
-import ScriptToggle from './ScriptToggle'
+import { abs, cardOg, ldArticle, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
+import { DevaVerse } from './cards'
 import SituationPicker from './SituationPicker'
-import { DailyBand, Faq, Head, JsonLd, Method, NextPanel, Related, Sec, Shell } from './parts'
-import { tiroSa } from './fonts'
+import { JumpChips, Method, NextBand, NextPanel, Related } from './parts'
 
 const PAGE_KEY = 'chanakya-hub-hi'
-const PAGE_NAME = 'Chanakya Niti Hub HI'
+/** The verse the hub opens with: the straight trees (7.12), the line people quote most. */
+const HERO_REF = '7.12'
 
 const shareText = (v: ChkVerse) => [...v.lines, '', v.meaning.hi, '', `चाणक्य नीति ${v.ref}`, `${abs(CHK_PATH)}?utm_source=copy&utm_medium=quote#${v.id}`].join('\n')
 
-function Card({ v, pos, section, domId, reveal }: { v: ChkVerse; pos?: number; section: string; domId?: string; reveal?: boolean }) {
+function Card({ v, pos, section, domId, reveal, as }: { v: ChkVerse; pos?: number; section: string; domId?: string; reveal?: boolean; as?: 'li' | 'article' }) {
   return (
-    <DevaCard
+    <DevaVerse
+      as={as}
       id={v.id}
       domId={domId}
       hub="chanakya"
@@ -28,10 +28,9 @@ function Card({ v, pos, section, domId, reveal }: { v: ChkVerse; pos?: number; s
       meaning={v.meaning.hi}
       seal={sealText(v.ref)}
       sealLabel={`चाणक्य नीति ${v.ref}`}
-      chip={<span className="fx-tag">{`चाणक्य नीति, अध्याय ${v.chapter}, श्लोक ${v.verse}`}</span>}
+      source={`चाणक्य नीति, अध्याय ${v.chapter}, श्लोक ${v.verse}`}
       cardId={v.card ? v.id : undefined}
       locale="hi"
-      pageName={PAGE_NAME}
       pageKey={PAGE_KEY}
       position={pos}
       section={section}
@@ -46,12 +45,9 @@ export default function ChanakyaHub() {
   const c = CHK_HUB
   const verses = chkVerses()
   const women = chkWomen()
+  const hero = chkVerse(HERO_REF)
   let pos = 0
   const ld = [
-    ldBreadcrumb([
-      { name: 'Wisdom', path: '/' },
-      { name: 'चाणक्य नीति', path: CHK_PATH },
-    ]),
     ldArticle({
       headline: c.h1,
       description: c.description,
@@ -61,7 +57,6 @@ export default function ChanakyaHub() {
       about: 'Chanakya Niti',
       image: cardOg('chk-13-2', 'hi'),
     }),
-    ldFaq(c.faq),
     ldItemList(
       c.h1,
       verses.map((v) =>
@@ -77,36 +72,48 @@ export default function ChanakyaHub() {
     ),
   ]
   return (
-    <Shell hub="chanakya" locale="hi" fonts={tiroSa.variable} script>
-      <BlogTracker pageName={PAGE_NAME} />
-      {ld.map((d, i) => (
-        <JsonLd key={i} data={d} />
-      ))}
-      <Head
-        crumbs={[{ label: 'होम', href: '/' }, { label: 'चाणक्य नीति' }]}
+    <>
+      <PageTracker pageName="Chanakya Niti Hub HI" />
+      <JsonLd data={ld} />
+      <PageHero
         locale="hi"
-        h1={c.h1}
-        promise={c.promise}
-        quick={c.quick}
-        chips={[
-          ...CHK_SECTIONS.map((s) => ({
-            href: `#${s}`,
-            label: CHK_SECTION[s].hi,
-          })),
-          { href: '#nahin-kaha', label: c.notSaidH },
-        ]}
-      >
-        <div className="fx-head-tools rv">
-          <ScriptToggle locale="hi" />
-        </div>
-      </Head>
+        crumbs={[{ label: 'चाणक्य नीति', href: CHK_PATH }]}
+        title={c.h1}
+        sub={c.promise}
+        actions={[{ href: '#pick', label: 'अपनी स्थिति चुनें', location: 'hub_hero_pick' }]}
+        below={
+          <>
+            <p id="quick-answer" className="fx-quick">
+              {c.quick}
+            </p>
+            <JumpChips
+              locale="hi"
+              items={[
+                ...CHK_SECTIONS.map((s) => ({
+                  href: `#${s}`,
+                  label: CHK_SECTION[s].hi,
+                })),
+                { href: '#nahin-kaha', label: c.notSaidH },
+              ]}
+            />
+          </>
+        }
+        verse={
+          hero
+            ? {
+                label: `चाणक्य नीति ${hero.ref}`,
+                original: hero.lines,
+                iast: hero.roman,
+                meaning: hero.meaning.hi,
+                source: `चाणक्य नीति, अध्याय ${hero.chapter}, श्लोक ${hero.verse}`,
+                sourceHref: `#${hero.id}`,
+              }
+            : undefined
+        }
+      />
 
-      <section className="qlf fx-sit-wrap rv" aria-labelledby="pick-h">
-        <h2 id="pick-h" className="qlf-q">
-          {c.pickerH}
-        </h2>
-        <p className="qp-intro">{c.pickerIntro}</p>
-        <SituationPicker situations={chkSituations().map((s) => ({ id: s.id, label: s.hi }))} locale="hi" pageKey={PAGE_KEY} label={c.pickerH}>
+      <Section id="pick" tone="band" width="narrow" title={c.pickerH} intro={c.pickerIntro} className="fx-sit-wrap">
+        <SituationPicker situations={chkSituations().map((s) => ({ id: s.id, label: s.hi }))} locale="hi" label={c.pickerH}>
           {chkSituations().map((s) => (
             <div key={s.id} id={`sit-${s.id}`} data-sit={s.id} className="fx-sit-group" tabIndex={-1}>
               <h3>{s.hi}</h3>
@@ -119,55 +126,43 @@ export default function ChanakyaHub() {
             </div>
           ))}
         </SituationPicker>
-      </section>
+      </Section>
 
-      <div className="qp-sections">
-        {CHK_SECTIONS.map((s, si) => (
-          <Sec key={s} id={s} hid={`${s}-h`} heading={CHK_SECTION[s].hi} intro={CHK_SECTION[s].intro}>
-            <div className="qp-cards">
-              {verses
-                .filter((v) => v.section === s)
-                .map((v) => {
-                  pos += 1
-                  return <Card key={v.id} v={v} pos={pos} section={s} />
-                })}
-            </div>
-            {si === 1 && (
-              <NextPanel heading="हर सुबह काम की एक पंक्ति">
-                <FxNextStep hub="chanakya" locale="hi" pageName={PAGE_NAME} pageKey={PAGE_KEY} placement="mid" />
-              </NextPanel>
-            )}
-          </Sec>
-        ))}
-      </div>
+      {CHK_SECTIONS.map((s, si) => (
+        <Section key={s} id={s} tone={si % 2 ? 'band' : 'default'} width="narrow" title={CHK_SECTION[s].hi} intro={CHK_SECTION[s].intro}>
+          <VerseList>
+            {verses
+              .filter((v) => v.section === s)
+              .map((v) => {
+                pos += 1
+                return <Card key={v.id} as="li" v={v} pos={pos} section={s} />
+              })}
+          </VerseList>
+          {si === 1 && <NextPanel heading="हर सुबह काम की एक पंक्ति" hub="chanakya" locale="hi" pageKey={PAGE_KEY} />}
+        </Section>
+      ))}
 
-      <section id="nahin-kaha" className="qfakes" aria-labelledby="ns-h">
-        <div className="qp-section-head rv">
-          <h2 id="ns-h" className="qp-h2">
-            {c.notSaidH}
-          </h2>
-          <p className="qp-intro">{c.notSaidIntro}</p>
-        </div>
-        <div className="qfakes-list">
+      <Section id="nahin-kaha" tone={CHK_SECTIONS.length % 2 ? 'band' : 'default'} width="narrow" title={c.notSaidH} intro={c.notSaidIntro}>
+        <div className="fx-fakes">
           {chkNotSaid().map((n) => (
-            <div key={n.slug} className="qfake rv">
+            <div key={n.slug} className="fx-fake rv">
               <p>
                 <span className="fx-stamp" data-verdict={n.realRef === '7.12' ? 'paraphrase' : 'not-found'}>
                   {n.realRef === '7.12' ? 'आधा सच' : 'चाणक्य नीति में नहीं'}
                 </span>
               </p>
-              <p className="qfake-line">
+              <p className="fx-fake-line">
                 <s>&ldquo;{n.line.hi}&rdquo;</s>
               </p>
-              <p className="qfake-origin">{n.finding.hi}</p>
+              <p className="fx-fake-origin">{n.finding.hi}</p>
               {n.realRef && (
                 <p>
-                  <a className="fx-link" href={`#${chkVerse(n.realRef)?.id ?? ''}`}>{`असली श्लोक ${n.realRef} पढ़ें`}</a>
+                  <a className="sx-link" href={`#${chkVerse(n.realRef)?.id ?? ''}`}>{`असली श्लोक ${n.realRef} पढ़ें`}</a>
                 </p>
               )}
               {n.source && (
                 <p>
-                  <a className="fx-link" href={n.source.url} target="_blank" rel="noopener">
+                  <a className="sx-link" href={n.source.url} target="_blank" rel="noopener">
                     {n.source.label}
                   </a>
                 </p>
@@ -179,13 +174,13 @@ export default function ChanakyaHub() {
           <p>{c.exclusion}</p>
           <p className="fx-meta">{`स्त्रियों के ज़िक्र वाले श्लोक: ${women.mentions}। हटाए गए: ${women.excluded}।`}</p>
         </div>
-      </section>
+      </Section>
 
-      <DailyBand heading="एक श्लोक रोज़ अपने साथ रखें" label="आगे">
-        <FxNextStep hub="chanakya" locale="hi" pageName={PAGE_NAME} pageKey={PAGE_KEY} placement="end" />
-      </DailyBand>
+      <NextBand heading="एक श्लोक रोज़ अपने साथ रखें" hub="chanakya" locale="hi" pageKey={PAGE_KEY} />
 
-      <Faq items={c.faq} heading="लोग अक्सर पूछते हैं" />
+      <Section id="faq" width="narrow" title="लोग अक्सर पूछते हैं">
+        <Faq items={c.faq} locale="hi" />
+      </Section>
       <Method heading="स्रोत और तरीका">
         <p>
           पाठ: चाणक्य नीति (वृद्ध-चाणक्य), 17 अध्याय, 342 श्लोक, Wisdom के संस्कृत संग्रह से। श्लोक संख्या इसी पाठ के हिसाब से है; दूसरे छपे संस्करणों में कुछ अध्यायों की गिनती अलग
@@ -194,6 +189,7 @@ export default function ChanakyaHub() {
       </Method>
       <Related
         heading="आगे पढ़ें"
+        locale="hi"
         links={[
           {
             href: '/hi/gita',
@@ -207,6 +203,6 @@ export default function ChanakyaHub() {
           },
         ]}
       />
-    </Shell>
+    </>
   )
 }

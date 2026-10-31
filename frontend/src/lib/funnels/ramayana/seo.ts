@@ -1,63 +1,45 @@
-/** Ramayana funnel: metadata and JSON-LD builders. */
+/** Ramayana funnel: metadata and the funnel's own JSON-LD builders, on top of lib/seo. */
 
 import type { Metadata } from 'next'
+import type { Locale } from '@/lib/locale'
+import { abs, AUTHOR_LD, OG_DEFAULT, pageMeta, SITE, type Twin } from '@/lib/seo'
 import { cardImageUrl } from '@/lib/quotes-shared'
-import { SITE, UPDATED } from './paths'
-
-const abs = (p: string) => (p.startsWith('http') ? p : `${SITE}${p}`)
+import { UPDATED } from './paths'
 
 type MetaInput = {
   title: string
   description: string
   path: string
-  locale: 'en' | 'hi'
+  locale: Locale
   /** EN and HI paths of a twin pair; omit for pages with no twin. */
-  twin?: { en: string; hi: string }
+  twin?: Twin
   /** Share card id for the Open Graph image. */
   card?: string
   noindex?: boolean
 }
 
-export function pageMeta({ title, description, path, locale, twin, card, noindex }: MetaInput): Metadata {
+/**
+ * lib/seo pageMeta plus what this funnel has always sent: a length check on title and description,
+ * a self-referencing hreflang on pages with no twin, and the share card (with its size) as the OG image.
+ */
+export function ramayanaMeta({ title, description, path, locale, twin, card, noindex }: MetaInput): Metadata {
   if (title.length > 60) throw new Error(`ramayana: title over 60 chars: ${title}`)
   if (description.length > 155) throw new Error(`ramayana: description over 155 chars: ${path}`)
-  const languages: Record<string, string> = twin
-    ? {
-        en: abs(twin.en),
-        'en-IN': abs(twin.en),
-        hi: abs(twin.hi),
-        'hi-IN': abs(twin.hi),
-        'x-default': abs(twin.en),
-      }
+  const image = card
+    ? { url: abs(cardImageUrl(card, { format: 'post', lang: locale })), width: 1080, height: 1350 }
+    : { url: OG_DEFAULT, width: 1200, height: 630 }
+  const meta = pageMeta({ title, description, path, locale, twin, ogImage: image.url, index: !noindex })
+  const languages = twin
+    ? undefined
     : locale === 'en'
       ? { en: abs(path), 'en-IN': abs(path), 'x-default': abs(path) }
       : { hi: abs(path), 'hi-IN': abs(path) }
-  const image = card
-    ? { url: abs(cardImageUrl(card, { format: 'post', lang: locale })), width: 1080, height: 1350 }
-    : { url: `${SITE}/og-image.webp`, width: 1200, height: 630 }
   return {
-    title: { absolute: title },
-    description,
-    alternates: { canonical: abs(path), languages },
-    openGraph: {
-      title,
-      description,
-      url: abs(path),
-      type: 'article',
-      siteName: 'Wisdom',
-      locale: locale === 'hi' ? 'hi_IN' : 'en_IN',
-      images: [image],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: [image.url] },
-    ...(noindex ? { robots: { index: false, follow: true } } : {}),
+    ...meta,
+    alternates: { ...meta.alternates, ...(languages ? { languages } : {}) },
+    openGraph: { ...meta.openGraph, images: [image] },
   }
 }
-
-export const breadcrumbLd = (items: { name: string; path: string }[]) => ({
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: abs(it.path) })),
-})
 
 const VALMIKI_WORK = {
   '@type': 'Book',
@@ -73,14 +55,7 @@ const MANAS_WORK = {
   bookEdition: 'Gita Press, Gorakhpur (doha numbering)',
 }
 
-export function articleLd(opts: {
-  headline: string
-  description: string
-  path: string
-  locale: 'en' | 'hi'
-  citations?: string[]
-  about?: string[]
-}) {
+export function articleLd(opts: { headline: string; description: string; path: string; locale: Locale; citations?: string[]; about?: string[] }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -91,7 +66,7 @@ export function articleLd(opts: {
     mainEntityOfPage: abs(opts.path),
     datePublished: UPDATED,
     dateModified: UPDATED,
-    author: { '@type': 'Person', name: 'Ankur Shukla', url: `${SITE}/about` },
+    author: AUTHOR_LD,
     publisher: { '@type': 'Organization', name: 'Wisdom', url: SITE },
     isBasedOn: [VALMIKI_WORK, MANAS_WORK],
     citation: [
@@ -102,12 +77,6 @@ export function articleLd(opts: {
     ...(opts.about ? { about: opts.about.map((name) => ({ '@type': 'Thing', name })) } : {}),
   }
 }
-
-export const faqLd = (qas: { q: string; a: string }[]) => ({
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: qas.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })),
-})
 
 export const itemListLd = (name: string, items: { name: string; path: string }[]) => ({
   '@context': 'https://schema.org',

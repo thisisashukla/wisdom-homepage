@@ -1,16 +1,15 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import BlogTracker from '@/components/BlogTracker'
-import NextStep from '@/components/quotes/NextStep'
-import Shell from '@/components/funnels/ramayana/Shell'
+import PageTracker from '@/components/BlogTracker'
+import { GitaBridge, JsonLd, LinkCards, NextStep, PageHero, Section } from '@/components/site'
 import ThreeLamps from '@/components/funnels/ramayana/ThreeLamps'
-import TrackOnView from '@/components/funnels/ramayana/TrackOnView'
-import Hero from '@/components/funnels/ramayana/Hero'
-import { Band, JsonLd, MethodEn } from '@/components/funnels/ramayana/Bits'
+import { Speaker } from '@/components/funnels/ramayana/LineVerse'
+import { MethodEn } from '@/components/funnels/ramayana/Method'
 import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
 import { KAND_LABEL, SCENES, defaultLamp, getLine, getScene, lampViews, lineView, sceneCitations } from '@/lib/funnels/ramayana/data'
 import { PATHS, gitaHref } from '@/lib/funnels/ramayana/paths'
-import { articleLd, breadcrumbLd, pageMeta, quotationLd } from '@/lib/funnels/ramayana/seo'
+import { articleLd, quotationLd, ramayanaMeta } from '@/lib/funnels/ramayana/seo'
+import { lineOriginal } from '@/lib/funnels/ramayana/verse'
 import { slugify } from '@/lib/quotes-shared'
 
 type Params = { scene: string }
@@ -24,13 +23,12 @@ export function generateStaticParams(): Params[] {
 export function generateMetadata({ params }: { params: Params }): Metadata {
   const s = getScene(params.scene)
   if (!s) return {}
-  return pageMeta({ title: s.meta.title, description: s.meta.description, path: PATHS.scene(s.slug), locale: 'en' })
+  return ramayanaMeta({ title: s.meta.title, description: s.meta.description, path: PATHS.scene(s.slug), locale: 'en' })
 }
 
 export default function ScenePage({ params }: { params: Params }) {
   const s = getScene(params.scene)
   if (!s) notFound()
-  const page = `ramayana-scene-${s.slug}`
   const pageKey = slugify(`ram-${s.slug}`, 30)
   const i = SCENES.findIndex((x) => x.slug === s.slug)
   const prev = SCENES[i - 1]
@@ -38,19 +36,13 @@ export default function ScenePage({ params }: { params: Params }) {
   const lamps = lampViews(s, 'en')
   const firstLine = [...(s.lamps.valmiki.lines ?? []), ...(s.lamps.tulsidas.lines ?? [])][0]
   const quoted = firstLine ? getLine(firstLine) : null
+  const hero = quoted ? lineView(quoted, 'en') : null
 
   return (
-    <Shell locale="en">
-      <BlogTracker pageName={page} />
-      <TrackOnView event="Scene Viewed" page={page} locale="en" props={{ scene: s.slug }} />
+    <main>
+      <PageTracker pageName="Ramayana Scene" />
       <JsonLd
         data={[
-          breadcrumbLd([
-            { name: 'Wisdom', path: '/' },
-            { name: 'Ramayana', path: PATHS.hub },
-            { name: 'In the original', path: PATHS.original },
-            { name: s.title.en, path: PATHS.scene(s.slug) },
-          ]),
           articleLd({
             headline: s.question.en,
             description: s.meta.description,
@@ -64,89 +56,79 @@ export default function ScenePage({ params }: { params: Params }) {
             : []),
         ]}
       />
-      <Hero
-        locale="en"
-        crumbLabel="Breadcrumb"
-        crumbs={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana', href: PATHS.hub }, { name: 'In the original', href: PATHS.original }, { name: s.title.en }]}
+      <PageHero
+        crumbs={[
+          { label: 'Ramayana', href: PATHS.hub },
+          { label: 'In the original', href: PATHS.original },
+          { label: s.title.en, href: PATHS.scene(s.slug) },
+        ]}
         eyebrow={`${s.title.en}, ${KAND_LABEL[s.kand].en}`}
-        h1={s.question.en}
-        h1Class="rl-question"
-        chip={s.verdict.en}
-        cta={{ href: '#three-lamps', label: 'See the three versions', loc: 'hero_lamps' }}
-        lines={quoted ? [lineView(quoted, 'en')] : []}
+        title={s.question.en}
+        facts={[s.verdict.en]}
+        actions={[{ href: '#three-lamps', label: 'See the three versions', location: 'hero_lamps' }]}
+        verse={hero ? { ...lineOriginal(hero), label: <Speaker line={hero} locale="en" />, source: hero.ref } : undefined}
       />
 
-      <Band className="rl-introsec">
-        <p className="rl-intro rv" id="quick-answer">
+      <Section spacing="tight" rv={false}>
+        <p className="sx-prose rv" id="quick-answer">
           {s.quick.en}
         </p>
-      </Band>
+      </Section>
 
-      <Band id="three-lamps" title="Film, Valmiki, Tulsidas" lede="Tap a lamp to see what that version has." tone="alt">
+      <Section id="three-lamps" tone="band" title="The film and the two texts" intro="Tap a lamp to see what that version has.">
         <div className="rv">
-          <ThreeLamps scene={s.slug} lamps={lamps} locale="en" page={page} initial={defaultLamp(s)} label={`${s.title.en}: three versions`} />
+          <ThreeLamps scene={s.slug} lamps={lamps} locale="en" initial={defaultLamp(s)} label={`${s.title.en}: three versions`} trackView />
         </div>
-      </Band>
+      </Section>
 
-      <Band id="arc" title="The whole episode">
+      <Section id="arc" title="The whole episode">
         <ol className="rl-arc rv">
           {s.arc.en.map((p, k) => (
             <li key={k}>{p}</li>
           ))}
         </ol>
-      </Band>
+      </Section>
 
-      <Band id="asks" title="What it asks of you this week" tone="warm">
+      <Section id="asks" tone="band" title="What it asks of you this week">
         <div className="rl-asks rv">
           <p>{s.asks.en}</p>
         </div>
         {s.gita && (
-          <div className="rl-bridge rv">
-            <p>{s.gita.note.en}</p>
-            <a href={gitaHref(s.gita.chapter, s.gita.verse)} data-mp-location="gita_bridge">
-              Read Bhagavad Gita {s.gita.chapter}.{s.gita.verse}
-            </a>
-          </div>
+          <GitaBridge
+            href={gitaHref(s.gita.chapter, s.gita.verse)}
+            label={`Read Bhagavad Gita ${s.gita.chapter}.${s.gita.verse}`}
+            why={s.gita.note.en}
+            location="gita_bridge"
+            from={s.slug}
+            className="rl-gap rv"
+          />
         )}
-      </Band>
+      </Section>
 
-      <Band>
-        <div className="rl-final rv">
-          <NextStep funnel="ramayana" locale="en" pageName={page} pageKey={pageKey} placement="end" copy={NEXT_COPY.en} />
-          <p className="rl-start">
-            Or start with seven mornings: <a href={PATHS.afterFilm} data-mp-location="after_film">four Ramayana lines, then three from the Gita</a>.
-          </p>
-        </div>
-      </Band>
+      <Section>
+        <NextStep locale="en" pageKey={pageKey} placement="end" copy={NEXT_COPY.en} />
+        <p className="rl-start">
+          Or start with seven mornings: <a href={PATHS.afterFilm} data-mp-location="after_film">four Ramayana lines, then three from the Gita</a>.
+        </p>
+      </Section>
 
-      <Band tone="alt">
-        <nav className="rl-nav rv" aria-label="More scenes">
-          {prev ? (
-            <a href={PATHS.scene(prev.slug)} data-mp-location="prev_scene">
-              <span className="rl-nav-k">Before this</span>
-              <span className="rl-nav-t">{prev.title.en}</span>
-            </a>
-          ) : (
-            <span />
-          )}
-          {next ? (
-            <a href={PATHS.scene(next.slug)} data-mp-location="next_scene">
-              <span className="rl-nav-k">Next</span>
-              <span className="rl-nav-t">{next.title.en}</span>
-            </a>
-          ) : (
-            <a href={PATHS.original} data-mp-location="all_scenes">
-              <span className="rl-nav-k">Back to</span>
-              <span className="rl-nav-t">All scenes</span>
-            </a>
-          )}
+      <Section tone="band">
+        <nav aria-label="More scenes">
+          <LinkCards
+            items={[
+              ...(prev ? [{ href: PATHS.scene(prev.slug), kicker: 'Before this', title: prev.title.en, location: 'prev_scene' }] : []),
+              next
+                ? { href: PATHS.scene(next.slug), kicker: 'Next', title: next.title.en, location: 'next_scene' }
+                : { href: PATHS.original, kicker: 'Back to', title: 'All scenes', location: 'all_scenes' },
+            ]}
+          />
         </nav>
         <p className="rl-muted rv">
           See <a href={PATHS.original}>all {SCENES.length} scenes</a>, or read <a href={PATHS.compare}>Valmiki and Tulsidas, side by side</a>.
         </p>
-      </Band>
+      </Section>
 
       <MethodEn />
-    </Shell>
+    </main>
   )
 }

@@ -1,85 +1,57 @@
-/* Quote page layout (src/components/quotes): header, chips, sections and
-   filtering, the line picker, line bar, fakes, daily line, FAQ, related.
-   Tokens, keyframes and the card itself are in card.css (imported first). */
+/* Quote pages (src/components/quotes): moment chips and filtering, the line picker, the line bar,
+   "Lines Krishna never said". The hero, sections, FAQ and related links are the site kit
+   (components/site); the cards are QuoteCard (card.css). Built on styles/tokens.css.
 
-/* ── Page ─────────────────────────────────────────────────────────────── */
+   The "Legacy page layout" block at the end is the old .qp shell. Only the sayings funnel still
+   renders it (components/funnels/sayings); delete it once that funnel is on the kit. */
 
-.qp {
-  background: var(--q-night);
-  color: var(--q-cream);
-  font-family: var(--q-ui);
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 0 18px 112px;
-  overflow-x: clip;
-  -webkit-font-smoothing: antialiased;
-}
-.qp:lang(hi) { font-family: var(--q-deva); }
-.qp > * {
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-:where(.qp) a { color: inherit; }
-:where(.qp) p { margin: 0; }
+/* ── Page (QuotePage on the kit) ──────────────────────────────────────── */
 
-.qp-head { padding-top: 14px; }
-.qp-crumbs ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 8px;
-  font-size: 12.5px;
-  color: var(--q-cream-3);
-}
-.qp-crumbs li + li::before { content: '/'; margin-right: 8px; opacity: 0.6; }
-.qp-crumbs a { text-decoration: none; }
-.qp-crumbs a:hover { color: var(--q-gold-hi); }
-.qp-crumbs [aria-current] { color: var(--q-cream-2); }
+.qp-page { padding-bottom: 40px; overflow-x: clip; }
+.qp-page .qp-cards { display: grid; gap: 16px; }
+.qp-page .qchips { margin: 18px calc(-1 * var(--site-gutter)) 0; }
+.qp-page .qchips-row { padding-left: var(--site-gutter); padding-right: var(--site-gutter); scroll-padding-inline: var(--site-gutter); }
+@media (max-width: 759px) { .qp-page { padding-bottom: 96px; } }
 
-.qp-eyebrow {
-  margin-top: 18px;
-  font-size: 13.5px;
-  color: var(--q-cream-3);
-}
-.qp-h1 {
-  font-family: var(--q-display);
-  font-weight: 600;
-  font-size: clamp(29px, 7.6vw, 46px);
-  line-height: 1.14;
-  letter-spacing: -0.005em;
-  color: var(--q-cream);
-  margin: 8px 0 0;
-  text-wrap: balance;
-}
-.qp-h1:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.32; }
-.qp-promise {
-  margin-top: 12px;
-  font-size: 16.5px;
-  line-height: 1.55;
-  color: var(--q-cream-2);
-  max-width: 34em;
-}
-
-.qp-h2 {
-  font-family: var(--q-display);
-  font-weight: 600;
-  font-size: clamp(23px, 5.8vw, 28px);
-  line-height: 1.22;
-  color: var(--q-cream);
-  margin: 0;
-  text-wrap: balance;
-}
-.qp-h2:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.4; }
-.qp-intro {
-  margin-top: 8px;
-  font-size: 15.5px;
-  line-height: 1.6;
-  color: var(--q-cream-2);
-  max-width: 36em;
-}
+/* Filtering is by section moment. With data-filter set on the page root, sections (and their
+   cards) of other moments hide. The section holding LineForYou never hides: only its other cards
+   and its heading do. */
+.qp-page[data-filter="karma"] .qp-item:not([data-moment="karma"]),
+.qp-page[data-filter="karma"] .qp-moment:not(.qp-m-karma):not(.qp-has-hook),
+.qp-page[data-filter="karma"] .qp-moment.qp-has-hook:not(.qp-m-karma) .sx-head { display: none; }
+.qp-page[data-filter="trust"] .qp-item:not([data-moment="trust"]),
+.qp-page[data-filter="trust"] .qp-moment:not(.qp-m-trust):not(.qp-has-hook),
+.qp-page[data-filter="trust"] .qp-moment.qp-has-hook:not(.qp-m-trust) .sx-head { display: none; }
+.qp-page[data-filter="hard-times"] .qp-item:not([data-moment="hard-times"]),
+.qp-page[data-filter="hard-times"] .qp-moment:not(.qp-m-hard-times):not(.qp-has-hook),
+.qp-page[data-filter="hard-times"] .qp-moment.qp-has-hook:not(.qp-m-hard-times) .sx-head { display: none; }
+.qp-page[data-filter="peace"] .qp-item:not([data-moment="peace"]),
+.qp-page[data-filter="peace"] .qp-moment:not(.qp-m-peace):not(.qp-has-hook),
+.qp-page[data-filter="peace"] .qp-moment.qp-has-hook:not(.qp-m-peace) .sx-head { display: none; }
+.qp-page[data-filter="positive-life"] .qp-item:not([data-moment="positive-life"]),
+.qp-page[data-filter="positive-life"] .qp-moment:not(.qp-m-positive-life):not(.qp-has-hook),
+.qp-page[data-filter="positive-life"] .qp-moment.qp-has-hook:not(.qp-m-positive-life) .sx-head { display: none; }
+.qp-page[data-filter="devotion"] .qp-item:not([data-moment="devotion"]),
+.qp-page[data-filter="devotion"] .qp-moment:not(.qp-m-devotion):not(.qp-has-hook),
+.qp-page[data-filter="devotion"] .qp-moment.qp-has-hook:not(.qp-m-devotion) .sx-head { display: none; }
+.qp-page[data-filter="self"] .qp-item:not([data-moment="self"]),
+.qp-page[data-filter="self"] .qp-moment:not(.qp-m-self):not(.qp-has-hook),
+.qp-page[data-filter="self"] .qp-moment.qp-has-hook:not(.qp-m-self) .sx-head { display: none; }
+.qp-page[data-filter="wisdom"] .qp-item:not([data-moment="wisdom"]),
+.qp-page[data-filter="wisdom"] .qp-moment:not(.qp-m-wisdom):not(.qp-has-hook),
+.qp-page[data-filter="wisdom"] .qp-moment.qp-has-hook:not(.qp-m-wisdom) .sx-head { display: none; }
+.qp-page[data-filter="character"] .qp-item:not([data-moment="character"]),
+.qp-page[data-filter="character"] .qp-moment:not(.qp-m-character):not(.qp-has-hook),
+.qp-page[data-filter="character"] .qp-moment.qp-has-hook:not(.qp-m-character) .sx-head { display: none; }
+.qp-page[data-filter="one-line"] .qp-item:not([data-moment="one-line"]),
+.qp-page[data-filter="one-line"] .qp-moment:not(.qp-m-one-line):not(.qp-has-hook),
+.qp-page[data-filter="one-line"] .qp-moment.qp-has-hook:not(.qp-m-one-line) .sx-head { display: none; }
+.qp-page[data-filter="bio"] .qp-item:not([data-moment="bio"]),
+.qp-page[data-filter="bio"] .qp-moment:not(.qp-m-bio):not(.qp-has-hook),
+.qp-page[data-filter="bio"] .qp-moment.qp-has-hook:not(.qp-m-bio) .sx-head { display: none; }
+.qp-page[data-filter="students"] .qp-item:not([data-moment="students"]),
+.qp-page[data-filter="students"] .qp-moment:not(.qp-m-students):not(.qp-has-hook),
+.qp-page[data-filter="students"] .qp-moment.qp-has-hook:not(.qp-m-students) .sx-head { display: none; }
 
 /* ── Moment chips ─────────────────────────────────────────────────────── */
 
@@ -102,9 +74,9 @@
   min-height: 44px;
   padding: 0 16px;
   border-radius: 999px;
-  border: 1px solid var(--q-line);
+  border: 1px solid var(--border);
   background: transparent;
-  color: var(--q-cream-2);
+  color: var(--text-dim);
   font: inherit;
   font-size: 14.5px;
   line-height: 1.2;
@@ -112,14 +84,14 @@
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: background-color 160ms var(--q-fb), border-color 160ms var(--q-fb), color 160ms var(--q-fb), transform 160ms var(--q-fb);
+  transition: background-color var(--t-quick) var(--ease-out), border-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out);
 }
-.qchip:hover { border-color: var(--q-line-strong); color: var(--q-cream); }
+.qchip:hover { border-color: var(--border-strong); color: var(--text); }
 .qchip:active { transform: scale(0.97); }
 .qchip[aria-pressed='true'] {
   background: rgba(200, 136, 30, 0.16);
-  border-color: var(--q-gold);
-  color: var(--q-gold-hi);
+  border-color: var(--gold);
+  color: var(--gold-light);
 }
 
 .qchips-status {
@@ -131,12 +103,218 @@
   clip-path: inset(50%);
   white-space: nowrap;
 }
-/* ── Sections and filtering ───────────────────────────────────────────── */
+/* ── Line for you ─────────────────────────────────────────────────────── */
 
-.qp-section { margin-top: 44px; }
+.qp-hook-slot { margin: 12px 0; }
+.qlf {
+  background: var(--bg-leaf);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  padding: 24px 18px 20px;
+  scroll-margin-top: 72px;
+}
+:where(.qlf) p { margin: 0; }
+.qlf-q {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(22px, 5.8vw, 26px);
+  line-height: 1.25;
+  color: var(--text);
+  margin: 0;
+}
+.qlf-q:lang(hi) { font-family: var(--font-deva-ui); font-weight: 500; line-height: 1.45; }
+.qlf-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.qlf-chip { white-space: normal; text-align: left; }
+.qlf-reveal:empty { display: none; }
+.qlf-result { position: relative; margin-top: 22px; padding-top: 18px; }
+.qlf-rule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gold);
+  transform-origin: left center;
+}
+.qlf-kicker { font-size: 14px; color: var(--text-dim); margin-bottom: 12px; }
+.qlf .qc { background: var(--bg); }
+.qlf-lines { margin-top: 16px; display: grid; gap: 8px; }
+.qlf-line {
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.qlf-line:lang(hi) { font-family: var(--font-deva-ui); font-size: 17.5px; line-height: 1.75; }
+.qlf-next { margin-top: 20px; }
+
+.qlf-result[data-animate] .qlf-rule { animation: q-draw 900ms var(--ease) backwards; }
+.qlf-result[data-animate] .qlf-kicker,
+.qlf-result[data-animate] .qlf-card { animation: q-rise 600ms var(--ease) backwards; }
+.qlf-result[data-animate] .qlf-line {
+  animation: q-rise var(--t-std) var(--ease) backwards;
+  animation-delay: calc(140ms + var(--i, 0) * 300ms);
+}
+.qlf-result[data-animate] .qlf-next { animation: q-rise var(--t-std) var(--ease) 520ms backwards; }
+
+/* ── Line bar (phones) ────────────────────────────────────────────────── */
+
+.qbar {
+  position: fixed;
+  z-index: 900;
+  left: 12px;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  align-items: center;
+  background: var(--bg-raise);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-family: var(--font-ui);
+  animation: q-rise var(--t-std) var(--ease) backwards;
+}
+.qbar:lang(hi) { font-family: var(--font-deva-ui); }
+:where(.qbar) button { background: none; border: 0; font: inherit; cursor: pointer; color: var(--text); }
+.qbar-go { flex: 1; min-height: 50px; padding: 0 8px 0 22px; text-align: left; font-size: 15.5px; font-weight: 500; }
+.qbar-x { width: 50px; height: 50px; display: grid; place-items: center; color: var(--text-dim); border-radius: 999px; }
+html[data-q-sheet] .qbar { display: none; }
+@media (min-width: 760px) {
+  .qbar { display: none; }
+}
+
+/* ── Lines Krishna never said ─────────────────────────────────────────── */
+
+.qp .qfakes { margin-top: 60px; }
+.qfakes-list { margin-top: 8px; }
+.qfake { padding: 24px 0 8px; border-bottom: 1px solid var(--border); }
+.qfake:last-child { border-bottom: 0; }
+:where(.qfake) p { margin: 0; }
+.qfake-tag { font-size: 13px; font-weight: 600; color: var(--gold); }
+.qfake-line {
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+.qfake-line:lang(hi) { font-family: var(--font-deva-ui); font-size: 18.5px; line-height: 1.65; }
+.qfake-line s { text-decoration-thickness: 1px; text-decoration-color: rgba(200, 136, 30, 0.75); }
+.qfake-origin { margin-top: 8px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim); }
+.qfake-origin-k { color: var(--text-dim); }
+.qfake-real { margin-top: 18px; }
+.qfake-real-k { font-size: 14px; color: var(--text-dim); margin-bottom: 10px; }
+.qfake-note { margin-top: 12px; font-size: 15px; line-height: 1.6; color: var(--text-dim); }
+
+/* ── Wider screens ────────────────────────────────────────────────────── */
+
+@media (min-width: 720px) {
+  .qp { padding-left: 28px; padding-right: 28px; }
+  .qp-head { padding-top: 22px; }
+  .qchips, .qp-page .qchips { margin-left: 0; margin-right: 0; }
+  .qp-page .qchips-row { padding-left: 0; padding-right: 0; }
+  .qchips-row { flex-wrap: wrap; overflow: visible; padding-left: 0; padding-right: 0; }
+  .qlf { padding: 30px 28px 26px; }
+}
+
+/* ── Reduced motion: opacity only, no movement ────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .qbar,
+  .qlf-result[data-animate] .qlf-kicker,
+  .qlf-result[data-animate] .qlf-card,
+  .qlf-result[data-animate] .qlf-line,
+  .qlf-result[data-animate] .qlf-next,
+  .qlf-result[data-animate] .qlf-rule {
+    animation-name: q-fade;
+  }
+  .qchip:active { transform: none; }
+}
+
+/* ── Legacy page layout (sayings funnel only) ─────────────────────────── */
+
+.qp {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 18px 112px;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+.qp:lang(hi) { font-family: var(--font-deva-ui); }
+.qp > * {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+:where(.qp) a { color: inherit; }
+:where(.qp) p { margin: 0; }
+
+.qp-head { padding-top: 14px; }
+.qp-crumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+.qp-crumbs li + li::before { content: '/'; margin-right: 8px; opacity: 0.6; }
+.qp-crumbs a { text-decoration: none; }
+.qp-crumbs a:hover { color: var(--gold-light); }
+.qp-crumbs [aria-current] { color: var(--text-dim); }
+
+.qp-eyebrow {
+  margin-top: 18px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+}
+.qp-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(29px, 7.6vw, 46px);
+  line-height: 1.14;
+  letter-spacing: -0.005em;
+  color: var(--text);
+  margin: 8px 0 0;
+  text-wrap: balance;
+}
+.qp-h1:lang(hi) { font-family: var(--font-deva-ui); font-weight: 500; line-height: 1.32; }
+.qp-promise {
+  margin-top: 12px;
+  font-size: 16.5px;
+  line-height: 1.55;
+  color: var(--text-dim);
+  max-width: 34em;
+}
+
+.qp-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(23px, 5.8vw, 28px);
+  line-height: 1.22;
+  color: var(--text);
+  margin: 0;
+  text-wrap: balance;
+}
+.qp-h2:lang(hi) { font-family: var(--font-deva-ui); font-weight: 500; line-height: 1.4; }
+.qp-intro {
+  margin-top: 8px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  max-width: 36em;
+}
+
+/* Legacy sections and filtering (.qp shell) */
+
+.qp .qp-section { margin-top: 44px; }
 .qp-sections > .qp-section:first-child { margin-top: 26px; }
 .qp-section-head { margin-bottom: 16px; }
-.qp-cards { display: grid; gap: 16px; }
+.qp .qp-cards { display: grid; gap: 16px; }
 
 /* Filtering is by section moment. With data-filter set on the page root,
    sections (and their cards) of other moments hide. The section holding
@@ -178,119 +356,17 @@
 .qp[data-filter="students"] .qp-section:not([data-moment="students"]):not([data-has-hook]),
 .qp[data-filter="students"] .qp-section[data-has-hook]:not([data-moment="students"]) > .qp-section-head { display: none; }
 
-/* ── Line for you ─────────────────────────────────────────────────────── */
+/* Legacy daily line, extra text, FAQ, related */
 
-.qp-hook-slot { margin: 12px 0; }
-.qlf {
-  background: var(--q-leaf-2);
-  border: 1px solid var(--q-line-strong);
-  border-radius: 18px;
-  padding: 24px 18px 20px;
-  scroll-margin-top: 72px;
-}
-:where(.qlf) p { margin: 0; }
-.qlf-q {
-  font-family: var(--q-display);
-  font-weight: 600;
-  font-size: clamp(22px, 5.8vw, 26px);
-  line-height: 1.25;
-  color: var(--q-cream);
-  margin: 0;
-}
-.qlf-q:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.45; }
-.qlf-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.qlf-chip { white-space: normal; text-align: left; }
-.qlf-reveal:empty { display: none; }
-.qlf-result { position: relative; margin-top: 22px; padding-top: 18px; }
-.qlf-rule {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--q-gold);
-  transform-origin: left center;
-}
-.qlf-kicker { font-size: 14px; color: var(--q-cream-3); margin-bottom: 12px; }
-.qlf .qc { background: var(--q-night); }
-.qlf-lines { margin-top: 16px; display: grid; gap: 8px; }
-.qlf-line {
-  font-family: var(--q-display);
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--q-cream);
-}
-.qlf-line:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; line-height: 1.75; }
-.qlf-next { margin-top: 20px; }
-
-.qlf-result[data-animate] .qlf-rule { animation: q-draw 900ms var(--q-in) backwards; }
-.qlf-result[data-animate] .qlf-kicker,
-.qlf-result[data-animate] .qlf-card { animation: q-rise 600ms var(--q-in) backwards; }
-.qlf-result[data-animate] .qlf-line {
-  animation: q-rise 500ms var(--q-in) backwards;
-  animation-delay: calc(140ms + var(--i, 0) * 300ms);
-}
-.qlf-result[data-animate] .qlf-next { animation: q-rise 500ms var(--q-in) 520ms backwards; }
-
-/* ── Line bar (phones) ────────────────────────────────────────────────── */
-
-.qbar {
-  position: fixed;
-  z-index: 900;
-  left: 12px;
-  right: 12px;
-  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-  display: flex;
-  align-items: center;
-  background: var(--q-raise);
-  border: 1px solid var(--q-line-strong);
-  border-radius: 999px;
-  font-family: var(--q-ui);
-  animation: q-rise 500ms var(--q-in) backwards;
-}
-.qbar:lang(hi) { font-family: var(--q-deva); }
-:where(.qbar) button { background: none; border: 0; font: inherit; cursor: pointer; color: var(--q-cream); }
-.qbar-go { flex: 1; min-height: 50px; padding: 0 8px 0 22px; text-align: left; font-size: 15.5px; font-weight: 500; }
-.qbar-x { width: 50px; height: 50px; display: grid; place-items: center; color: var(--q-cream-2); border-radius: 999px; }
-html[data-q-sheet] .qbar { display: none; }
-@media (min-width: 760px) {
-  .qbar { display: none; }
-}
-
-/* ── Lines Krishna never said ─────────────────────────────────────────── */
-
-.qfakes { margin-top: 60px; }
-.qfakes-list { margin-top: 8px; }
-.qfake { padding: 24px 0 8px; border-bottom: 1px solid var(--q-line); }
-.qfake:last-child { border-bottom: 0; }
-:where(.qfake) p { margin: 0; }
-.qfake-tag { font-size: 13px; font-weight: 600; color: var(--q-gold); }
-.qfake-line {
-  margin-top: 6px;
-  font-family: var(--q-display);
-  font-size: 20px;
-  line-height: 1.45;
-  color: var(--q-cream-2);
-}
-.qfake-line:lang(hi) { font-family: var(--q-deva); font-size: 18.5px; line-height: 1.65; }
-.qfake-line s { text-decoration-thickness: 1px; text-decoration-color: rgba(200, 136, 30, 0.75); }
-.qfake-origin { margin-top: 8px; font-size: 14.5px; line-height: 1.6; color: var(--q-cream-3); }
-.qfake-origin-k { color: var(--q-cream-2); }
-.qfake-real { margin-top: 18px; }
-.qfake-real-k { font-size: 14px; color: var(--q-cream-2); margin-bottom: 10px; }
-.qfake-note { margin-top: 12px; font-size: 15px; line-height: 1.6; color: var(--q-cream-2); }
-
-/* ── Daily line, extra text, FAQ, related ─────────────────────────────── */
-
-.qp-daily { margin-top: 60px; padding-top: 28px; border-top: 1px solid var(--q-gold); }
+.qp-daily { margin-top: 60px; padding-top: 28px; border-top: 1px solid var(--gold); }
 .qp-daily .qns { margin-top: 20px; }
 
 .qp-extra { margin-top: 52px; }
-.qp-extra p { margin-top: 12px; font-size: 16.5px; line-height: 1.75; color: var(--q-cream-2); max-width: 38em; }
+.qp-extra p { margin-top: 12px; font-size: 16.5px; line-height: 1.75; color: var(--text-dim); max-width: 38em; }
 
 .qp-faq { margin-top: 56px; }
-.qp-faq-list { margin-top: 10px; border-top: 1px solid var(--q-line); }
-.qp-faq-item { border-bottom: 1px solid var(--q-line); }
+.qp-faq-list { margin-top: 10px; border-top: 1px solid var(--border); }
+.qp-faq-item { border-bottom: 1px solid var(--border); }
 .qp-faq-item summary {
   display: flex;
   align-items: center;
@@ -301,7 +377,7 @@ html[data-q-sheet] .qbar { display: none; }
   font-size: 16.5px;
   font-weight: 500;
   line-height: 1.45;
-  color: var(--q-cream);
+  color: var(--text);
   cursor: pointer;
   list-style: none;
 }
@@ -311,46 +387,23 @@ html[data-q-sheet] .qbar { display: none; }
   flex: 0 0 auto;
   font-size: 22px;
   line-height: 1;
-  color: var(--q-gold);
-  transition: transform 160ms var(--q-fb);
+  color: var(--gold);
+  transition: transform var(--t-quick) var(--ease-out);
 }
 .qp-faq-item[open] summary::after { transform: rotate(45deg); }
-.qp-faq-item p { padding: 0 0 18px; font-size: 15.5px; line-height: 1.7; color: var(--q-cream-2); max-width: 38em; }
+.qp-faq-item p { padding: 0 0 18px; font-size: 15.5px; line-height: 1.7; color: var(--text-dim); max-width: 38em; }
 
 .qp-related { margin-top: 52px; }
-.qp-related ul { list-style: none; margin: 10px 0 0; padding: 0; border-top: 1px solid var(--q-line); }
-.qp-related li { border-bottom: 1px solid var(--q-line); }
+.qp-related ul { list-style: none; margin: 10px 0 0; padding: 0; border-top: 1px solid var(--border); }
+.qp-related li { border-bottom: 1px solid var(--border); }
 .qp-related a {
   display: flex;
   align-items: center;
   min-height: 52px;
   padding: 10px 0;
   font-size: 16px;
-  color: var(--q-cream);
+  color: var(--text);
   text-decoration: none;
 }
-.qp-related a:hover { color: var(--q-gold-hi); }
+.qp-related a:hover { color: var(--gold-light); }
 
-/* ── Wider screens ────────────────────────────────────────────────────── */
-
-@media (min-width: 720px) {
-  .qp { padding-left: 28px; padding-right: 28px; }
-  .qp-head { padding-top: 22px; }
-  .qchips { margin-left: 0; margin-right: 0; }
-  .qchips-row { flex-wrap: wrap; overflow: visible; padding-left: 0; padding-right: 0; }
-  .qlf { padding: 30px 28px 26px; }
-}
-
-/* ── Reduced motion: opacity only, no movement ────────────────────────── */
-
-@media (prefers-reduced-motion: reduce) {
-  .qbar,
-  .qlf-result[data-animate] .qlf-kicker,
-  .qlf-result[data-animate] .qlf-card,
-  .qlf-result[data-animate] .qlf-line,
-  .qlf-result[data-animate] .qlf-next,
-  .qlf-result[data-animate] .qlf-rule {
-    animation-name: q-fade;
-  }
-  .qchip:active { transform: none; }
-}

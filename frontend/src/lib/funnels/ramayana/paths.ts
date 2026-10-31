@@ -1,7 +1,6 @@
 /** Ramayana funnel routes. Client-safe. */
 
-export const FUNNEL = 'ramayana'
-export const SITE = 'https://wisdomquotes.in'
+import type { Locale } from '@/lib/locale'
 
 export const PATHS = {
   hub: '/ramayana',
@@ -14,7 +13,7 @@ export const PATHS = {
   hiDiwali: '/hi/ramayana/diwali',
 } as const
 
-export const gitaHref = (chapter: number, verse: number, locale: 'en' | 'hi' = 'en') =>
+export const gitaHref = (chapter: number, verse: number, locale: Locale = 'en') =>
   `${locale === 'hi' ? '/hi' : ''}/gita/chapter/${chapter}/verse/${verse}`
 
 /** Updated date shown on pages and in the sitemap. */

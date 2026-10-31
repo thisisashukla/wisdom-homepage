@@ -4,7 +4,8 @@ import linesJson from '@/content/funnels/ramayana/lines.json'
 import scenesJson from '@/content/funnels/ramayana/scenes.json'
 import planJson from '@/content/funnels/ramayana/plan.json'
 import diwaliJson from '@/content/funnels/ramayana/diwali.json'
-import type { Diwali, Lamp, LampId, LampState, LampView, Line, LineView, Locale, PlanDay, Scene } from './types'
+import type { Locale } from '@/lib/locale'
+import type { Diwali, Lamp, LampId, LampState, LampView, Line, LineView, PlanDay, Scene } from './types'
 
 export const LINES = linesJson as unknown as Record<string, Line>
 export const SCENES = (scenesJson as unknown as Scene[]).slice().sort((a, b) => a.order - b.order)

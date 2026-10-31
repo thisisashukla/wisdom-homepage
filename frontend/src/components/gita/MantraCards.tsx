@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 interface Variant {
   format: string
@@ -37,7 +37,7 @@ export default function MantraCards({ variants, chapter, verse, locale = 'en' }:
       await navigator.clipboard.writeText(text)
       setCopied(i)
       setTimeout(() => setCopied((c) => (c === i ? null : c)), 1800)
-      trackEvent('Mantra Copied', {
+      trackEvent(EVENTS.MantraCopied, {
         chapter,
         verse,
         shloka: `${chapter}.${verse}`,

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { appStoreUrl, detectPlatform } from '@/lib/app'
-import { trackEvent, trackLinkClick } from '@/lib/mixpanel'
+import { EVENTS, trackEvent, trackLinkClick } from '@/lib/mixpanel'
 import CreatePlanLink from './CreatePlanLink'
 
 /**
@@ -25,7 +25,7 @@ export default function DevicePlans({ pageName = 'Home' }: { pageName?: string }
   const pick = (d: Device) => {
     if (d === device) return
     setDevice(d)
-    trackEvent('Device Plan Switch', { page: pageName, device: d })
+    trackEvent(EVENTS.DevicePlanSwitch, { page: pageName, device: d })
   }
   const onKey = (e: React.KeyboardEvent) => {
     if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return

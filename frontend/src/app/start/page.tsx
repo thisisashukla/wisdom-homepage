@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Newsreader, Noto_Serif_Devanagari, Tiro_Devanagari_Sanskrit } from 'next/font/google'
+import { Newsreader, Noto_Serif_Devanagari } from 'next/font/google'
 import StartFlow from '@/components/onboarding/StartFlow'
 import './start.css'
 
@@ -7,7 +7,6 @@ import './start.css'
 // references and Sanskrit on cards, Noto Serif Devanagari bold for the
 // revealed verse (wisdom/app/design/tokens/WTypography.ts).
 const newsreader = Newsreader({ subsets: ['latin'], weight: ['400', '500', '600', '700'], style: ['normal', 'italic'], display: 'swap', variable: '--ob-serif' })
-const tiro = Tiro_Devanagari_Sanskrit({ subsets: ['devanagari', 'latin'], weight: '400', style: ['normal', 'italic'], display: 'swap', variable: '--ob-tiro' })
 const notoSerif = Noto_Serif_Devanagari({ subsets: ['devanagari'], weight: '700', display: 'swap', variable: '--ob-deva' })
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export const viewport: Viewport = {
 
 export default function StartPage() {
   return (
-    <div className={`${newsreader.variable} ${tiro.variable} ${notoSerif.variable}`}>
+    <div className={`${newsreader.variable} ${notoSerif.variable}`} style={{ ['--ob-tiro' as string]: 'var(--font-tiro-sa)' }}>
       <StartFlow />
     </div>
   )

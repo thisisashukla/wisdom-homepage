@@ -2,23 +2,23 @@
 
 /**
  * Small trackers for the Chalisa pages.
- * LineOpenedOnView: "Chalisa Line Opened" once when a line page loads.
- * MeaningTracker: "Chalisa Line Opened" when a meaning is opened on the hub (details[data-hc-line]).
- * PrintButton: opens every meaning, then prints the sheet.
+ * LineOpenedOnView: Line Opened once when a line page loads.
+ * MeaningTracker: Line Opened when a meaning is opened in the full text (details[data-hc-line]).
+ * PrintButton: opens every meaning, then prints the sheet (Sheet Printed).
  */
 
 import { useEffect } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
-import { baseProps, type HcLocale } from '@/lib/funnels/hanuman-chalisa/shared'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import { kindOf } from '@/lib/funnels/hanuman-chalisa/shared'
 
-export function LineOpenedOnView({ line, page, locale }: { line: string; page: string; locale: HcLocale }) {
+export function LineOpenedOnView({ line }: { line: string }) {
   useEffect(() => {
-    trackEvent('Chalisa Line Opened', { ...baseProps(page, locale), line, via: 'page' })
-  }, [line, page, locale])
+    trackEvent(EVENTS.LineOpened, { item_id: line, item_type: kindOf(line), location: 'page' })
+  }, [line])
   return null
 }
 
-export function MeaningTracker({ page, locale }: { page: string; locale: HcLocale }) {
+export function MeaningTracker() {
   useEffect(() => {
     const seen = new Set<string>()
     const onToggle = (e: Event) => {
@@ -27,15 +27,15 @@ export function MeaningTracker({ page, locale }: { page: string; locale: HcLocal
       const line = el.dataset.hcLine
       if (!line || seen.has(line)) return
       seen.add(line)
-      trackEvent('Chalisa Line Opened', { ...baseProps(page, locale), line, via: 'meaning' })
+      trackEvent(EVENTS.LineOpened, { item_id: line, item_type: kindOf(line), location: 'meaning' })
     }
     document.addEventListener('toggle', onToggle, true)
     return () => document.removeEventListener('toggle', onToggle, true)
-  }, [page, locale])
+  }, [])
   return null
 }
 
-export function PrintButton({ label, page, locale }: { label: string; page: string; locale: HcLocale }) {
+export function PrintButton({ label }: { label: string }) {
   useEffect(() => {
     const open = () => document.querySelectorAll<HTMLDetailsElement>('details.hc-mean').forEach((d) => (d.open = true))
     window.addEventListener('beforeprint', open)
@@ -44,10 +44,10 @@ export function PrintButton({ label, page, locale }: { label: string; page: stri
   return (
     <button
       type="button"
-      className="hc-btn hc-noprint"
+      className="sx-btn sx-btn--secondary hc-noprint"
       onClick={() => {
         document.querySelectorAll<HTMLDetailsElement>('details.hc-mean').forEach((d) => (d.open = true))
-        trackEvent('Chalisa Sheet Printed', baseProps(page, locale))
+        trackEvent(EVENTS.SheetPrinted)
         window.print()
       }}
     >

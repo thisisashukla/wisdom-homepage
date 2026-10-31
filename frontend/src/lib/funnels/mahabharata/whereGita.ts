@@ -88,9 +88,9 @@ export const EN: WhereCopy = {
   read18: 'Read the Gita in 18 days, a chapter a day',
   afterH: 'After the war, Arjuna asks to hear it again',
   afterLede:
-    "In the Ashvamedhika Parva, with the war won, Arjuna admits that what Krishna told him has slipped away. Krishna says he cannot tell it the same way twice, and tells him an older story instead, the Anugita. We hold this book in Sanskrit.",
+    "In the Ashvamedhika Parva, with the war won, Arjuna admits that what Krishna told him has slipped away. Krishna says he cannot tell it the same way twice, and tells him an older story instead, the Anugita.",
   echoesH: "The Gita's ideas elsewhere in the epic",
-  echoesLede: 'Some of the Gita\'s lines turn up in other mouths, in books we hold in Sanskrit.',
+  echoesLede: 'Some of the Gita\'s lines turn up elsewhere in the epic, spoken by other people.',
   echoes: [
     { lineId: 'mbh.5.33.73', c: 16, v: 21, why: 'The same verse, word for word, in Vidura\'s counsel to Dhritarashtra.' },
     { lineId: 'mbh.5.34.65', c: 6, v: 5, why: 'The second half of Vidura\'s line is the second half of Krishna\'s 6.5.' },

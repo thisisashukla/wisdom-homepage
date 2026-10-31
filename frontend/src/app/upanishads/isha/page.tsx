@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react'
-import Shell, { Band, Faq, GitaBridge, Head, HeroLine, SourcesNote, Tiles, UpNext } from '@/components/funnels/upanishads/Shell'
-import VerseBlock from '@/components/funnels/upanishads/VerseBlock'
-import { articleLd, faqLd, TEXTS, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, LinkCards, PageHero, Section } from '@/components/site'
+import { Bridge, Bridges, SourcesNote, TextVerse, UpNext } from '@/components/funnels/upanishads/parts'
+import { articleLd, padas, TEXTS, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
 
 const PATH = '/upanishads/isha'
 const PAGE = 'upanishads-isha'
@@ -49,89 +50,80 @@ export default function Page() {
   const inv = isha.invocation!
   const jsonLd = [
     articleLd({ headline: TITLE, description: DESC, path: PATH, citation: 'Isha Upanishad (Shukla Yajur Veda, Vajasaneyi Samhita 40); Shankara’s commentary.', about: 'Isha Upanishad' }),
-    faqLd(FAQ),
   ]
   const v1 = isha.verses[0]
   return (
-    <Shell
-      pageName={PAGE}
-      locale="en"
-      crumbs={[
-        { name: 'Home', path: '/' },
-        { name: 'Upanishads', path: '/upanishads' },
-        { name: 'Isha', path: PATH },
-      ]}
-      jsonLd={jsonLd}
-      hero={{
-        eyebrow: 'Shukla Yajur Veda',
-        title: 'The Isha Upanishad, all eighteen verses',
-        sub: 'Start with eighteen verses. Finish them tonight.',
-        facts: ['18 verses', 'The purnamadah invocation', 'Sanskrit and plain English'],
-        cta: { href: '#v1', label: 'Read verse 1', loc: 'isha_hero_v1' },
-        second: { href: '#invocation', label: 'The invocation', loc: 'isha_hero_invocation' },
-        visual: (
-          <HeroLine
-            sa={v1.sa.split('\n')[0]}
-            iast={v1.iast.split('\n')[0]}
-            meaning={v1.en.split('. ')[0] + '.'}
-            cite="Isha Upanishad 1"
-          />
-        ),
-      }}
-    >
-      <Band labelledBy="text">
-        <p id="quick-answer" className="tp-intro rv">
-          The Isha Upanishad is eighteen verses long and is chapter 40 of the Shukla Yajur Veda Samhita. It opens with ishavasyam idam sarvam, &quot;all
-          this is to be covered by the Lord&quot;, and is recited between two readings of the purnamadah invocation. Below is the whole text, verse by
-          verse, with Shankara&apos;s reading of the hard ones.
-        </p>
+    <>
+      <PageTracker pageName="Upanishads Text" />
+      <JsonLd data={jsonLd} />
+      <PageHero
+        crumbs={[
+          { label: 'Upanishads', href: '/upanishads' },
+          { label: 'Isha', href: PATH },
+        ]}
+        eyebrow="Shukla Yajur Veda"
+        title="The Isha Upanishad, all eighteen verses"
+        sub="You can read all eighteen verses tonight, slowly, before you sleep."
+        facts={['18 verses', 'The purnamadah invocation']}
+        actions={[
+          { href: '#v1', label: 'Read verse 1', location: 'isha_hero_v1' },
+          { href: '#invocation', label: 'The invocation', location: 'isha_hero_invocation' },
+        ]}
+        verse={{ original: padas(v1.sa.split('\n')[0]), iast: padas(v1.iast.split('\n')[0]), meaning: v1.en.split('. ')[0] + '.', source: 'Isha Upanishad 1' }}
+      />
 
-        <h2 id="text" className="tp-h2 rv">
-          The text
-        </h2>
+      <Section id="answer" width="narrow" spacing="tight">
+        <p id="quick-answer" className="sx-intro rv">
+          The Isha Upanishad is eighteen verses long and is chapter 40 of the Shukla Yajur Veda Samhita. It opens with ishavasyam idam sarvam, &quot;all
+          this is to be covered by the Lord&quot;, and is recited between two readings of the purnamadah invocation. Read it verse by verse,
+          and lean on Shankara&apos;s reading where it gets hard.
+        </p>
+      </Section>
+
+      <Section id="text" tone="band" width="narrow" title="The text" className="up-text">
         <nav aria-label="Verses" className="rv">
-          <ul className="fx-jump">
+          <ul className="up-jump">
             {isha.verses.map((v) => (
               <li key={v.ref}>
-                <a href={`#${v.anchor}`} aria-label={`Go to verse ${v.ref}`}>
+                <a className="sx-chip" href={`#${v.anchor}`} aria-label={`Go to verse ${v.ref}`}>
                   {v.ref}
                 </a>
               </li>
             ))}
           </ul>
         </nav>
-        <div className="fx-verses">
-          <VerseBlock v={{ ref: 'Invocation', anchor: 'invocation', sa: inv.sa, iast: inv.iast, en: inv.en, who: null }} label="Isha" note={<a href="/upanishads/purnamadah-purnamidam">More on purnamadah</a>} />
+        <div className="up-verses">
+          <TextVerse v={{ ref: 'Invocation', anchor: 'invocation', sa: inv.sa, iast: inv.iast, en: inv.en, who: null }} label="Isha" note={<a href="/upanishads/purnamadah-purnamidam">More on purnamadah</a>} />
           {isha.verses.map((v) => (
-            <VerseBlock key={v.ref} v={{ ...v, who: null }} label="Isha" note={NOTES[v.ref]} />
+            <TextVerse key={v.ref} v={{ ...v, who: null }} label="Isha" note={NOTES[v.ref]} />
           ))}
         </div>
-      </Band>
+      </Section>
 
-      <Band alt labelledBy="gita">
-        <Head id="gita">The Isha and the Gita</Head>
-        <div className="fx-bridges" data-stagger="60">
-          <GitaBridge c={5} v={10} note="act and offer the work, untouched like a lotus leaf by water; compare verses 1 and 2." />
-          <GitaBridge c={6} v={29} note="the one who sees the Self in all beings and all beings in the Self; compare verse 6." />
-          <GitaBridge c={3} v={8} note="do your work; compare verse 2." />
-        </div>
-      </Band>
+      <Section id="gita" width="narrow" title="The Isha and the Gita">
+        <Bridges>
+          <Bridge c={5} v={10} note="act and offer the work, untouched like a lotus leaf by water; compare verses 1 and 2." />
+          <Bridge c={6} v={29} note="the one who sees the Self in all beings and all beings in the Self; compare verse 6." />
+          <Bridge c={3} v={8} note="do your work; compare verse 2." />
+        </Bridges>
+      </Section>
 
-      <UpNext locale="en" pageName={PAGE} pageKey={PAGE} placement="text-end" heading="One line each morning" />
+      <UpNext locale="en" pageKey={PAGE} placement="text-end" heading="One line each morning" />
 
-      <Band wide labelledBy="next-text">
-        <Head id="next-text">Read next</Head>
-        <Tiles
-          cols={3}
+      <Section id="next-text" title="Read next">
+        <LinkCards
+          columns={3}
           items={[
-            { href: '/upanishads/katha', title: 'The Katha Upanishad', sub: <>A boy at Death&apos;s door, as a conversation</>, loc: 'isha_next_katha' },
-            { href: '/upanishads/mandukya', title: 'The Mandukya Upanishad', sub: 'Twelve verses on Om and the four states', loc: 'isha_next_mandukya' },
-            { href: '/upanishads/who-am-i', title: 'Who am I: a 7-verse plan', sub: 'Isha 6 is day 4', loc: 'isha_next_plan' },
+            { href: '/upanishads/katha', title: 'The Katha Upanishad', body: <>A boy at Death&apos;s door, as a conversation</>, location: 'isha_next_katha' },
+            { href: '/upanishads/mandukya', title: 'The Mandukya Upanishad', body: 'Twelve verses on Om and the four states', location: 'isha_next_mandukya' },
+            { href: '/upanishads/who-am-i', title: 'Who am I: a 7-verse plan', body: 'Isha 6 is day 4', location: 'isha_next_plan' },
           ]}
         />
-      </Band>
+      </Section>
 
-      <Faq items={FAQ} heading="Questions people ask" />
+      <Section id="faq" tone="band" width="narrow" title="Questions people ask">
+        <Faq items={FAQ} />
+      </Section>
 
       <SourcesNote heading="Sources and method">
         <p>
@@ -139,6 +131,6 @@ export default function Page() {
         </p>
         <p>{DISCLOSURE_EN}</p>
       </SourcesNote>
-    </Shell>
+    </>
   )
 }

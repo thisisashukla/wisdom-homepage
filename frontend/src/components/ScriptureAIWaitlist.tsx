@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import './scripture-ai-waitlist.css'
 
 // ── Query options — trimmed to 4 for low cognitive load ──────────────────────
@@ -61,7 +61,7 @@ function WaitlistModal({
 
   // ── Mixpanel: fire "Opened" once when the modal first appears ───────────────
   useEffect(() => {
-    trackEvent('Scripture AI Waitlist Opened', {
+    trackEvent(EVENTS.ScriptureAiWaitlistOpened, {
       page: pageName,
       location: mpLocation,
       path: typeof window !== 'undefined' ? window.location.pathname : undefined,
@@ -73,7 +73,7 @@ function WaitlistModal({
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (e.key === 'Escape') {
-        trackEvent('Scripture AI Waitlist Dismissed', {
+        trackEvent(EVENTS.ScriptureAiWaitlistDismissed, {
           page: pageName,
           location: mpLocation,
           method: 'esc',
@@ -100,7 +100,7 @@ function WaitlistModal({
       const wasSelected = next.has(id)
       if (wasSelected) next.delete(id)
       else next.add(id)
-      trackEvent('Scripture AI Interest Toggled', {
+      trackEvent(EVENTS.ScriptureAiInterestToggled, {
         page: pageName,
         location: mpLocation,
         interest: id,
@@ -117,7 +117,7 @@ function WaitlistModal({
     const validation = validateEmail(email)
     if (!validation.ok) {
       setError(validation.error || 'Enter a valid email.')
-      trackEvent('Scripture AI Waitlist Validation Failed', {
+      trackEvent(EVENTS.ScriptureAiWaitlistValidationFailed, {
         page: pageName,
         location: mpLocation,
         reason: validation.error,
@@ -139,7 +139,7 @@ function WaitlistModal({
       })
       if (!res.ok) throw new Error('server_' + res.status)
 
-      trackEvent('Scripture AI Waitlist Submitted', {
+      trackEvent(EVENTS.ScriptureAiWaitlistSubmitted, {
         page: pageName,
         location: mpLocation,
         path: typeof window !== 'undefined' ? window.location.pathname : undefined,
@@ -152,7 +152,7 @@ function WaitlistModal({
       setDone(true)
     } catch (e) {
       const msg = e instanceof Error ? e.message : 'unknown'
-      trackEvent('Scripture AI Waitlist Submit Failed', {
+      trackEvent(EVENTS.ScriptureAiWaitlistSubmitFailed, {
         page: pageName,
         location: mpLocation,
         error: msg,
@@ -165,7 +165,7 @@ function WaitlistModal({
 
   function handleClose() {
     if (!done) {
-      trackEvent('Scripture AI Waitlist Dismissed', {
+      trackEvent(EVENTS.ScriptureAiWaitlistDismissed, {
         page: pageName,
         location: mpLocation,
         method: 'close',
@@ -599,7 +599,7 @@ function InlineGitaSignup({
       const wasSelected = next.has(id)
       if (wasSelected) next.delete(id)
       else next.add(id)
-      trackEvent('Scripture AI Interest Toggled', {
+      trackEvent(EVENTS.ScriptureAiInterestToggled, {
         page: pageName,
         location: mpLocation,
         interest: id,
@@ -619,7 +619,7 @@ function InlineGitaSignup({
     if (!validation.ok) {
       setErrorMsg(t.invalid)
       setStatus('error')
-      trackEvent('Scripture AI Waitlist Validation Failed', {
+      trackEvent(EVENTS.ScriptureAiWaitlistValidationFailed, {
         page: pageName,
         location: mpLocation,
         reason: validation.error,
@@ -646,7 +646,7 @@ function InlineGitaSignup({
       })
       if (!res.ok) throw new Error('server_' + res.status)
 
-      trackEvent('Scripture AI Waitlist Submitted', {
+      trackEvent(EVENTS.ScriptureAiWaitlistSubmitted, {
         page: pageName,
         location: mpLocation,
         path: typeof window !== 'undefined' ? window.location.pathname : undefined,
@@ -667,7 +667,7 @@ function InlineGitaSignup({
       setStatus('done')
     } catch (e) {
       const msg = e instanceof Error ? e.message : 'unknown'
-      trackEvent('Scripture AI Waitlist Submit Failed', {
+      trackEvent(EVENTS.ScriptureAiWaitlistSubmitFailed, {
         page: pageName,
         location: mpLocation,
         error: msg,

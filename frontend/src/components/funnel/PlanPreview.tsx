@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from 'react'
 import { SAMPLE_PLANS, SAMPLE_PLANS_DATE } from '@/lib/samplePlans'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import CreatePlanLink from './CreatePlanLink'
 
 /**
@@ -20,7 +20,7 @@ export default function PlanPreview({ pageName = 'Home' }: { pageName?: string }
     if (i === active) return
     setActive(i)
     if (focus) tabs.current[i]?.focus()
-    trackEvent('Plan Preview Tab', { page: pageName, situation: SAMPLE_PLANS[i].situation })
+    trackEvent(EVENTS.PlanPreviewTab, { page: pageName, situation: SAMPLE_PLANS[i].situation })
   }
 
   const onKey = (e: React.KeyboardEvent) => {

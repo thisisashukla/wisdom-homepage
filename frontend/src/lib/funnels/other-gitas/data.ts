@@ -3,6 +3,9 @@
  * Built by scripts/funnels/other-gitas/build.py. English is Wisdom's own; reviewed: false until checked.
  */
 import raw from '@/content/funnels/other-gitas/ashtavakra.json'
+import { SITE, abs } from '@/lib/seo'
+
+export { SITE, abs }
 
 export type Speaker = 'ashtavakra' | 'janaka'
 export type AgWord = { w: string; m: string }
@@ -26,7 +29,6 @@ export type AgChapter = { n: number; title: string; gist: string; count: number;
 
 const DATA = raw as unknown as { chapters: AgChapter[]; verses: AgVerse[] }
 
-export const SITE = 'https://wisdomquotes.in'
 export const FUNNEL = 'other-gitas'
 export const UPDATED = '2026-10-30'
 export const TOTAL_VERSES = DATA.verses.length
@@ -35,7 +37,6 @@ export const HUB_PATH = '/ashtavakra-gita'
 export const agChapterPath = (n: number) => `/ashtavakra-gita/chapter/${n}`
 export const agVersePath = (c: number, v: number) => `/ashtavakra-gita/chapter/${c}/verse/${v}`
 export const gitaVersePath = (c: number, v: number) => `/gita/chapter/${c}/verse/${v}`
-export const abs = (p: string) => (p.startsWith('http') ? p : `${SITE}${p}`)
 
 export const getChapters = (): AgChapter[] => DATA.chapters
 export const getChapter = (n: number): AgChapter | undefined => DATA.chapters.find((c) => c.n === n)
@@ -85,3 +86,6 @@ export function clip(s: string, n: number): string {
   const cut = s.slice(0, n - 1)
   return `${cut.slice(0, cut.lastIndexOf(' '))}...`
 }
+
+/** A verse as kit VerseCard props: Devanagari and IAST split at the dandas, and Wisdom's English. */
+export const verseCardOf = (x: AgVerse) => ({ original: padas(x.sa), iast: padas(x.iast), meaning: x.en, lang: 'sa' as const })

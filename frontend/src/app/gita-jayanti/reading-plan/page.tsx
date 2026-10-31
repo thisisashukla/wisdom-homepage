@@ -2,14 +2,13 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
+import { Actions, Faq, JsonLd, PageHero, Section } from '@/components/site'
 import JayantiRelated from '@/components/jayanti/JayantiRelated'
 import PlanFromToday from '@/components/jayanti/PlanFromToday'
+import PlanFine from '@/components/plan/PlanFine'
+import { planAction } from '@/components/plan/planAction'
 import { getAllChapters, chapterUrl } from '@/lib/gita'
 import { minutesEn, hoursLabel, runIso, fmtDay } from '@/lib/jayanti'
-import '../../home.css'
-import '../../home-v3.css'
-import '../gita-jayanti.css'
 import '../guides.css'
 
 const URL = 'https://wisdomquotes.in/gita-jayanti/reading-plan'
@@ -103,139 +102,141 @@ export default function ReadingPlanPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Nav pageName="Gita Jayanti Reading Plan" />
+      <JsonLd data={schema} />
+      <Nav />
+
+      <PageHero
+        crumbs={[
+          { label: 'Gita Jayanti 2026', href: '/gita-jayanti' },
+          { label: 'Reading plan', href: '/gita-jayanti/reading-plan' },
+        ]}
+        crumbsLd={false}
+        eyebrow="18 days, 9 days, 3 days or one"
+        title="Gita Jayanti reading plan: finish the Gita by 20 December"
+        sub={
+          <>
+            <a className="sx-link" href="/gita-jayanti">Gita Jayanti 2026</a> falls on Sunday, 20 December. Pick the plan that matches the
+            day you can start. Every plan covers all 18 chapters and 700 verses.
+          </>
+        }
+      />
 
       <main className="gjg">
-        <header className="gjg-head">
-          <div className="wrap">
-            <div className="gjg-col">
-              <nav className="gjg-crumbs" aria-label="Breadcrumb">
-                <a href="/">Home</a> / <a href="/gita-jayanti">Gita Jayanti 2026</a> / <span>Reading plan</span>
-              </nav>
-              <div className="gjg-eyebrow">18 days, 9 days, 3 days or one</div>
-              <h1 className="gjg-h1">Gita Jayanti reading plan: finish the Gita by 20 December</h1>
-              <p className="gjg-lede">
-                <a href="/gita-jayanti">Gita Jayanti 2026</a> falls on Sunday, 20 December. Pick the plan that matches the
-                day you can start. Every plan covers all 18 chapters and 700 verses.
-              </p>
-
-              <div className="gjg-table-wrap">
-                <table className="gjg-table">
-                  <thead>
-                    <tr><th>Plan</th><th>Start</th><th>Each day</th><th>Time a day</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><a href="#plan-18">18 days</a></td><td>Thu 3 Dec</td><td>1 chapter</td><td>4–13 min</td></tr>
-                    <tr><td><a href="#plan-9">9 days</a></td><td>Sat 12 Dec</td><td>2 chapters</td><td>{range(nine)}</td></tr>
-                    <tr><td><a href="#plan-3">3 days</a></td><td>Fri 18 Dec</td><td>6 chapters</td><td>{range(three)}</td></tr>
-                    <tr><td><a href="#plan-1">1 day</a></td><td>Sun 20 Dec</td><td>All 18</td><td>About {hoursLabel(totalMin)}</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="gjg-note">Times are for reading the English at about 10 seconds a verse. Reciting the Sanskrit takes about half as long again.</p>
-
-              <div className="gjg-today-box">
-                <h2>Starting on a different day?</h2>
-                <PlanFromToday chapters={chs.map(({ number, verses }) => ({ number, verses }))} />
-              </div>
-            </div>
+        <Section id="plans-at-a-glance" width="narrow" spacing="tight">
+          <div className="gjg-table-wrap">
+            <table className="gjg-table">
+              <thead>
+                <tr><th>Plan</th><th>Start</th><th>Each day</th><th>Time a day</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><a href="#plan-18">18 days</a></td><td>Thu 3 Dec</td><td>1 chapter</td><td>4–13 min</td></tr>
+                <tr><td><a href="#plan-9">9 days</a></td><td>Sat 12 Dec</td><td>2 chapters</td><td>{range(nine)}</td></tr>
+                <tr><td><a href="#plan-3">3 days</a></td><td>Fri 18 Dec</td><td>6 chapters</td><td>{range(three)}</td></tr>
+                <tr><td><a href="#plan-1">1 day</a></td><td>Sun 20 Dec</td><td>All 18</td><td>About {hoursLabel(totalMin)}</td></tr>
+              </tbody>
+            </table>
           </div>
-        </header>
+          <p className="gjg-note">Times are for reading the English at about 10 seconds a verse. Reciting the Sanskrit takes about half as long again.</p>
 
-        <section className="section">
-          <div className="wrap gjg-col">
-            <article className="gjg-plan" id="plan-18">
-              <h2>18 days: one chapter a day</h2>
-              <p className="gjg-plan-sub">Thursday 3 December to Sunday 20 December</p>
+          <div className="gjg-today-box">
+            <h2>Starting on a different day?</h2>
+            <PlanFromToday chapters={chs.map(({ number, verses }) => ({ number, verses }))} />
+          </div>
+        </Section>
+
+        <Section id="plans" width="narrow" spacing="tight">
+          <article className="gjg-plan" id="plan-18">
+            <h2>18 days: one chapter a day</h2>
+            <p className="gjg-plan-sub">Thursday 3 December to Sunday 20 December</p>
+            <div className="sx-prose">
               <p>
                 Chapter 1 on 3 December, chapter 18 on Jayanti. The shortest days are chapters 12 and 15 at 20 verses; the
                 longest is chapter 18 at 78. Each day of this plan, with what the chapter covers and a verse from it, is on{' '}
                 <a href="/read-gita-in-18-days">Read the Gita in 18 days</a>.
               </p>
-              <a className="gj-btn-ghost" href="/gita-jayanti-18-days.ics" download data-mp-location="plan_18_ics">Add all 18 days to my calendar</a>
-            </article>
+            </div>
+            <a className="sx-btn sx-btn--secondary gjg-plan-btn" href="/gita-jayanti-18-days.ics" download data-mp-location="plan_18_ics">Add all 18 days to my calendar</a>
+          </article>
 
-            <article className="gjg-plan" id="plan-9">
-              <h2>9 days: two chapters a day</h2>
-              <p className="gjg-plan-sub">Saturday 12 December to Sunday 20 December</p>
+          <article className="gjg-plan" id="plan-9">
+            <h2>9 days: two chapters a day</h2>
+            <p className="gjg-plan-sub">Saturday 12 December to Sunday 20 December</p>
+            <div className="sx-prose">
               <p>The heaviest day is the first, chapters 1 and 2, because chapter 2 has 72 verses. The lightest is chapters 15 and 16.</p>
-              <ol className="gjg-split">
-                {nine.map((g, i) => (
-                  <li key={i}>
-                    <span className="gjg-split-day">{fmtDay(runIso([2026, 11, 12], i + 1))}</span>
-                    <a className="gjg-split-what" href={chapterUrl(g[0].number)}>{span(g)}</a>
-                    <span className="gjg-split-time">{sum(g)} verses · {minutesEn(sum(g))} min</span>
-                  </li>
-                ))}
-              </ol>
-            </article>
+            </div>
+            <ol className="gjg-split">
+              {nine.map((g, i) => (
+                <li key={i}>
+                  <span className="gjg-split-day">{fmtDay(runIso([2026, 11, 12], i + 1))}</span>
+                  <a className="gjg-split-what" href={chapterUrl(g[0].number)}>{span(g)}</a>
+                  <span className="gjg-split-time">{sum(g)} verses · {minutesEn(sum(g))} min</span>
+                </li>
+              ))}
+            </ol>
+          </article>
 
-            <article className="gjg-plan" id="plan-3">
-              <h2>3 days: six chapters a day</h2>
-              <p className="gjg-plan-sub">Friday 18 December to Sunday 20 December</p>
+          <article className="gjg-plan" id="plan-3">
+            <h2>3 days: six chapters a day</h2>
+            <p className="gjg-plan-sub">Friday 18 December to Sunday 20 December</p>
+            <div className="sx-prose">
               <p>
                 Commentators often read the Gita as three sets of six chapters, broadly on action, devotion and knowledge.
                 This plan reads one set a day, so the last six chapters, ending with chapter 18, fall on Jayanti.
               </p>
-              <ol className="gjg-split">
-                {three.map((g, i) => (
-                  <li key={i}>
-                    <span className="gjg-split-day">{fmtDay(runIso([2026, 11, 18], i + 1))} · {SIX_NAMES[i]}</span>
-                    <a className="gjg-split-what" href={chapterUrl(g[0].number)}>{span(g)}</a>
-                    <span className="gjg-split-time">{sum(g)} verses · {minutesEn(sum(g))} min</span>
-                  </li>
-                ))}
-              </ol>
-            </article>
+            </div>
+            <ol className="gjg-split">
+              {three.map((g, i) => (
+                <li key={i}>
+                  <span className="gjg-split-day">{fmtDay(runIso([2026, 11, 18], i + 1))} · {SIX_NAMES[i]}</span>
+                  <a className="gjg-split-what" href={chapterUrl(g[0].number)}>{span(g)}</a>
+                  <span className="gjg-split-time">{sum(g)} verses · {minutesEn(sum(g))} min</span>
+                </li>
+              ))}
+            </ol>
+          </article>
 
-            <article className="gjg-plan" id="plan-1">
-              <h2>1 day: the whole Gita on Jayanti</h2>
-              <p className="gjg-plan-sub">Sunday 20 December</p>
+          <article className="gjg-plan" id="plan-1">
+            <h2>1 day: the whole Gita on Jayanti</h2>
+            <p className="gjg-plan-sub">Sunday 20 December</p>
+            <div className="sx-prose">
               <p>
                 Many temples and families read the full Gita on the day. Split into three sittings, each is under an hour in
                 English. In New Delhi the Ekadashi tithi ends at 8:14 pm IST, so start the evening sitting by about 7 pm if
                 you want to finish within it.
               </p>
-              <ol className="gjg-split">
-                {three.map((g, i) => (
-                  <li key={i}>
-                    <span className="gjg-split-day">{ONE_DAY_SLOTS[i]}</span>
-                    <a className="gjg-split-what" href={chapterUrl(g[0].number)}>{span(g)}</a>
-                    <span className="gjg-split-time">{sum(g)} verses · {minutesEn(sum(g))} min</span>
-                  </li>
-                ))}
-              </ol>
+            </div>
+            <ol className="gjg-split">
+              {three.map((g, i) => (
+                <li key={i}>
+                  <span className="gjg-split-day">{ONE_DAY_SLOTS[i]}</span>
+                  <a className="gjg-split-what" href={chapterUrl(g[0].number)}>{span(g)}</a>
+                  <span className="gjg-split-time">{sum(g)} verses · {minutesEn(sum(g))} min</span>
+                </li>
+              ))}
+            </ol>
+            <div className="sx-prose">
               <p>
                 Short on time on the day itself? See <a href="/gita-jayanti/which-chapter-to-read">which chapter to read on Gita Jayanti</a>.
               </p>
-            </article>
-          </div>
-        </section>
-
-        <section className="section section-alt">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Questions about the plans</h2>
-            <div className="gjg-faq">
-              {FAQ.map((f) => (
-                <details key={f.q}>
-                  <summary>{f.q}</summary>
-                  <p>{f.a}</p>
-                </details>
-              ))}
             </div>
-          </div>
-        </section>
+          </article>
+        </Section>
 
-        <section className="section gjg-cta">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Or one verse a day, for what you’re facing</h2>
-            <p>Tell Wisdom what’s going on and it picks a verse a day for seven days, with what each one means for you.</p>
-            <HeroPlanCTA campaign="web_jayanti_plan" location="jayanti_plan_create_plan" pageName="Gita Jayanti Reading Plan" />
-          </div>
-        </section>
+        <Section id="faq" tone="band" width="narrow" title="Questions about the plans">
+          <Faq items={FAQ} ld={false} />
+        </Section>
 
-        <JayantiRelated current="plan" />
+        <Section
+          id="your-plan"
+          width="narrow"
+          title="Or one verse a day, for what you’re facing"
+          intro="Tell Wisdom what’s going on and it picks a verse a day for seven days, with what each one means for you."
+        >
+          <Actions items={[planAction({ campaign: 'web_jayanti_plan', location: 'jayanti_plan_create_plan' })]} />
+          <PlanFine />
+        </Section>
+
+        <JayantiRelated current="plan" tone="band" />
       </main>
 
       <SiteFooter />

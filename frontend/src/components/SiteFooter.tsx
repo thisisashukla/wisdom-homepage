@@ -1,4 +1,5 @@
 import './site-footer.css'
+import { NAV_SCRIPTURES, SCRIPTURES_LABEL } from '@/lib/nav'
 
 /**
  * The one site footer. Every page renders this — previously the homepage,
@@ -25,27 +26,24 @@ export default function SiteFooter({ locale = 'en' }: { locale?: 'en' | 'hi' }) 
           <a href="/methodology">Methodology →</a>
         </p>
         <nav className="site-footer-beyond" aria-label={hi ? 'गीता के आगे' : 'Beyond the Gita'}>
-          <p className="site-footer-beyond-label">{hi ? 'गीता के आगे' : 'Beyond the Gita'}</p>
+          <p className="site-footer-beyond-label">{SCRIPTURES_LABEL[locale]}</p>
           <ul className="site-footer-links">
-            <li><a href="/ramayana" data-mp-location="footer_beyond_ramayana">Ramayana</a></li>
-            <li><a href="/hi/ram-shalaka" hrefLang="hi" data-mp-location="footer_beyond_ram_shalaka">श्रीराम शलाका</a></li>
-            <li><a href={hi ? '/hi/hanuman-chalisa' : '/hanuman-chalisa'} data-mp-location="footer_beyond_hanuman_chalisa">{hi ? 'हनुमान चालीसा' : 'Hanuman Chalisa'}</a></li>
-            <li><a href={hi ? '/hi/upanishad' : '/upanishads'} data-mp-location="footer_beyond_upanishads">{hi ? 'उपनिषद' : 'Upanishads'}</a></li>
-            <li><a href="/mahabharata" data-mp-location="footer_beyond_mahabharata">Mahabharata</a></li>
-            <li><a href="/ashtavakra-gita" data-mp-location="footer_beyond_ashtavakra">Ashtavakra Gita</a></li>
-            <li><a href="/gitas" data-mp-location="footer_beyond_gitas">{hi ? 'अन्य गीताएँ' : 'Other Gitas'}</a></li>
-            <li><a href={hi ? '/hi/vivekananda-quotes' : '/vivekananda-quotes'} data-mp-location="footer_beyond_vivekananda">{hi ? 'विवेकानंद के विचार' : 'Vivekananda quotes'}</a></li>
-            <li><a href="/hi/kabir-ke-dohe" hrefLang="hi" data-mp-location="footer_beyond_kabir">कबीर के दोहे</a></li>
-            <li><a href="/hi/chanakya-niti" hrefLang="hi" data-mp-location="footer_beyond_chanakya">चाणक्य नीति</a></li>
+            {NAV_SCRIPTURES.map((it) => (
+              <li key={it.href.en}>
+                <a href={it.href[locale]} hrefLang={it.href[locale].startsWith('/hi') ? 'hi' : undefined} data-mp-location={`footer_beyond_${it.href.en.replace(/^\/(hi\/)?/, '').replace(/-/g, '_')}`}>
+                  {it.label[locale]}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
         <ul className="site-footer-links">
           <li><a href="/gita">Read the Gita</a></li>
           <li><a href="/hi/gita" hrefLang="hi">हिंदी गीता</a></li>
-          <li><a href="/reading-plans">Reading plans</a></li>
+          <li><a href="/reading-plans">Reading Plans</a></li>
           <li><a href="/gita-for">Gita for life</a></li>
           <li><a href="/blogs">Blog</a></li>
-          <li><a href="/app">iPhone app</a></li>
+          <li><a href="/app">Wisdom app</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/resources">Resources</a></li>
           <li><a href="/privacy">Privacy</a></li>

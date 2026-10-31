@@ -7,9 +7,9 @@
  */
 
 import { useEffect, useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/locale'
 import {
-  baseProps,
   COUNTER_EMPTY,
   COUNTER_KEY,
   goalTarget,
@@ -18,7 +18,6 @@ import {
   type BeadInfo,
   type CounterGoal,
   type CounterState,
-  type HcLocale,
 } from '@/lib/funnels/hanuman-chalisa/shared'
 import Mala from './Mala'
 
@@ -35,8 +34,8 @@ const localDate = () => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
-export default function Counter({ beads, page }: { beads: BeadInfo[]; page: string }) {
-  const locale: HcLocale = 'en'
+export default function Counter({ beads }: { beads: BeadInfo[] }) {
+  const locale: Locale = 'en'
   const [s, setS] = useState<CounterState>(COUNTER_EMPTY)
   const [ready, setReady] = useState(false)
   const [msg, setMsg] = useState('')
@@ -54,7 +53,7 @@ export default function Counter({ beads, page }: { beads: BeadInfo[]; page: stri
   const setGoal = (goal: CounterGoal) => {
     save({ goal, count: 0, days: [], startedAt: localDate(), reached: false })
     setMsg('')
-    trackEvent('Counter Goal Set', { ...baseProps(page, locale), goal: String(goal) })
+    trackEvent(EVENTS.CounterGoalSet, { goal: String(goal) })
   }
 
   const target = s.goal ? goalTarget(s.goal) : 0
@@ -75,9 +74,9 @@ export default function Counter({ beads, page }: { beads: BeadInfo[]; page: stri
     const reachedNow = !s.reached && n.count >= target
     if (reachedNow) n.reached = true
     save(n)
-    trackEvent('Recitation Counted', { ...baseProps(page, locale), count: n.count, goal: String(s.goal) })
+    trackEvent(EVENTS.RecitationCounted, { count: n.count, goal: String(s.goal) })
     if (reachedNow) {
-      trackEvent('Counter Goal Reached', { ...baseProps(page, locale), goal: String(s.goal) })
+      trackEvent(EVENTS.CounterGoalReached, { goal: String(s.goal) })
       setMsg(isVow ? 'Forty days kept. Jai Hanuman.' : `${target} recitations complete. Jai Hanuman.`)
     } else {
       setMsg(isVow ? `Day ${n.count} of 40 counted.` : `${n.count} of ${target}.`)
@@ -111,7 +110,6 @@ export default function Counter({ beads, page }: { beads: BeadInfo[]; page: stri
         <Mala
           beads={beads}
           locale={locale}
-          page={page}
           mode="anchor"
           currentId={null}
           outer={picking ? 0 : shown}
@@ -130,7 +128,7 @@ export default function Counter({ beads, page }: { beads: BeadInfo[]; page: stri
 
       {picking ? (
         <div className="hc-counter-panel">
-          <h2 className="hc-h2">Choose your sankalp</h2>
+          <h2 className="sx-h3 hc-counter-h">Choose your sankalp</h2>
           <ul className="hc-goals">
             {GOALS.map((g) => (
               <li key={String(g.goal)}>
@@ -149,13 +147,13 @@ export default function Counter({ beads, page }: { beads: BeadInfo[]; page: stri
             {msg || (isVow ? `${s.count} of 40 days kept.` : `${s.count} of ${target} recitations.`)}
           </p>
           <div className="hc-counter-acts">
-            <button type="button" className="hc-btn hc-btn-primary" onClick={count} disabled={doneToday || (s.reached && isVow)}>
+            <button type="button" className="sx-btn sx-btn--primary" onClick={count} disabled={doneToday || (s.reached && isVow)}>
               {isVow ? (doneToday ? 'Done for today' : 'I recited it today') : 'I finished one recitation'}
             </button>
-            <button type="button" className="hc-btn" onClick={undo} disabled={s.count === 0}>
+            <button type="button" className="sx-btn sx-btn--secondary" onClick={undo} disabled={s.count === 0}>
               Undo
             </button>
-            <button type="button" className="hc-btn" onClick={reset}>
+            <button type="button" className="sx-btn sx-btn--secondary" onClick={reset}>
               New sankalp
             </button>
           </div>

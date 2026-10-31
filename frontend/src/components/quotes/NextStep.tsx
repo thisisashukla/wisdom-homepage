@@ -11,13 +11,15 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { appStoreUrl, detectPlatform, startUrl, type Platform } from '@/lib/app'
-import { trackEvent, trackEventBeacon, trackLinkClick } from '@/lib/mixpanel'
+import { EVENTS, trackEvent, trackEventBeacon, trackLinkClick } from '@/lib/mixpanel'
 import { slugify, type Locale } from '@/lib/quotes-shared'
+import '@/components/site/site.css'
 import './card.css'
 
 export type NextStepProps = {
   locale: Locale
-  pageName: string
+  /** Only used for the attribution slug when pageKey is missing; events take the page from <PageTracker>. */
+  pageName?: string
   /** QuotePageConfig.key, used in the attribution slug. Falls back to pageName. */
   pageKey?: string
   placement: string
@@ -25,7 +27,7 @@ export type NextStepProps = {
   className?: string
   /** Funnel pages override the Krishna-specific lines per kind (e.g. a Ramayana or Upanishad line). */
   copy?: Partial<Record<Kind, { line: string; cta: string }>>
-  /** Funnel slug added to Next Step Shown / Tapped so funnel pages can be split in Mixpanel. */
+  /** Optional override; the funnel is added from the URL automatically. Leave unset. */
   funnel?: string
 }
 
@@ -59,7 +61,7 @@ export default function NextStep({ locale, pageName, pageKey, placement, startSi
 
   const p: Platform = platform ?? 'desktop'
   const kind: Kind = p === 'ios' ? 'app' : p === 'android' && WHATSAPP_CHANNEL ? 'whatsapp' : 'email'
-  const slug = slugify(`q-${pageKey || pageName}-${placement}`)
+  const slug = slugify(`q-${pageKey || pageName || 'page'}-${placement}`)
   const href =
     kind === 'app' ? appStoreUrl(slug) : kind === 'whatsapp' ? WHATSAPP_CHANNEL : startUrl({ s: startSituation, ref: slug })
   const target = kind === 'app' ? 'app_store' : kind === 'whatsapp' ? 'whatsapp' : 'start'
@@ -74,7 +76,7 @@ export default function NextStep({ locale, pageName, pageKey, placement, startSi
     const fire = () => {
       if (shown.current) return
       shown.current = true
-      trackEvent('Next Step Shown', { platform, placement, target, page: pageName, page_key: pageKey ?? null, locale, funnel: funnel ?? null })
+      trackEvent(EVENTS.NextStepViewed, { platform, placement, target, page_key: pageKey ?? null, funnel: funnel ?? undefined })
     }
     if (typeof IntersectionObserver === 'undefined') {
       fire()
@@ -91,18 +93,18 @@ export default function NextStep({ locale, pageName, pageKey, placement, startSi
     )
     io.observe(el)
     return () => io.disconnect()
-  }, [platform, placement, target, pageName, pageKey, locale, funnel])
+  }, [platform, placement, target, pageKey, funnel])
 
   const onTap = () => {
-    trackEventBeacon('Next Step Tapped', { platform: p, placement, target, page: pageName, page_key: pageKey ?? null, ref: slug, locale, funnel: funnel ?? null })
-    trackLinkClick(pageName, `next_step_${placement}`, href)
+    trackEventBeacon(EVENTS.NextStepClicked, { platform: p, placement, target, page_key: pageKey ?? null, ref: slug, funnel: funnel ?? undefined })
+    trackLinkClick(null, `next_step_${placement}`, href)
   }
 
   return (
     <div ref={rootRef} className={`qns${className ? ` ${className}` : ''}`} data-kind={kind} lang={locale}>
       <p className="qns-line">{t.line}</p>
       <a
-        className="qns-btn"
+        className="sx-btn sx-btn--primary qns-btn"
         data-mp-tracked="next_step"
         href={href}
         target={external ? '_blank' : undefined}

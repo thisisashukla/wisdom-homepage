@@ -1,18 +1,14 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import BlogTracker from '@/components/BlogTracker'
-import LineText from '@/components/funnels/hanuman-chalisa/LineText'
+import PageTracker from '@/components/BlogTracker'
+import { Actions, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, Section, VerseCard } from '@/components/site'
 import LineShare from '@/components/funnels/hanuman-chalisa/LineShare'
 import Mala from '@/components/funnels/hanuman-chalisa/Mala'
-import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { LineOpenedOnView } from '@/components/funnels/hanuman-chalisa/Trackers'
-import { HcNextStep } from '@/components/funnels/hanuman-chalisa/Blocks'
-import HcHero from '@/components/funnels/hanuman-chalisa/Hero'
+import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
 import {
-  abs,
-  AUTHOR_LD,
+  anchorId,
   beads,
-  breadcrumbLd,
   cardOg,
   chalisaWorkLd,
   COUNTER_PATH,
@@ -21,11 +17,11 @@ import {
   getUnits,
   HUB_PATH,
   LEARN_PATH,
-  ldJson,
   linePath,
+  NEXT_COPY,
   neighbors,
-  pageMeta,
-  PUBLISHER_LD,
+  START_SITUATION,
+  unitVerse,
   UPDATED,
   type HcUnit,
 } from '@/lib/funnels/hanuman-chalisa'
@@ -104,10 +100,10 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
   const u = getUnitBySlug(params.line)
   if (!u) notFound()
   const { prev, next } = neighbors(u)
-  const page = 'hanuman-chalisa-line'
   const path = linePath(u.slug)
   const bridge = GITA_BRIDGES[u.id]
   const source = `Tulsidas, Hanuman Chalisa, ${u.label.en}`
+  const pageKey = `hc-line-${u.pos}`
 
   const quoteLd = {
     '@context': 'https://schema.org',
@@ -130,198 +126,151 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
     },
     ...(u.cardId ? { image: cardOg(u.cardId) } : {}),
   }
-  const crumbs = breadcrumbLd([
-    { name: 'Wisdom', path: '/' },
-    { name: 'Hanuman Chalisa', path: HUB_PATH },
-    { name: u.label.en, path },
-  ])
+
+  // Sections after the hero alternate grounds; some are only there for some lines.
+  let n = 0
+  const tone = () => (n++ % 2 === 0 ? 'band' : 'default') as 'band' | 'default'
 
   const card = (
-    <article className="hc-card" aria-label={`${u.label.en}, Awadhi and meaning`}>
-      <div className="hc-card-head">
-        <p className="hc-card-label">{u.label.en}</p>
-        <ScriptToggle locale="en" page={page} />
-      </div>
-      <LineText awadhi={u.awadhi} iast={u.iast} as="blockquote" className="hc-line" />
-      <p className="hc-card-meaning">{u.meaning.en}</p>
-      <p className="hc-card-src">
-        <span className="hc-chip">{source}, Gita Press reading</span>
-      </p>
-      {u.audio && (
-        <audio className="hc-audio" controls preload="none" src={u.audio}>
-          <track kind="captions" />
-        </audio>
-      )}
-      <LineShare id={u.id} awadhi={u.awadhi} meaning={u.meaning.en} source={source} path={path} cardId={u.cardId} page={page} locale="en" />
-    </article>
+    <VerseCard
+      as="article"
+      label={u.label.en}
+      toggle
+      {...unitVerse(u)}
+      meaning={u.meaning.en}
+      source={`${source}, Gita Press reading`}
+      actions={<LineShare id={u.id} awadhi={u.awadhi} meaning={u.meaning.en} source={source} path={path} cardId={u.cardId} audioSrc={u.audio} pageKey={pageKey} locale="en" />}
+    >
+      <h2 className="hc-gloss-h" id="hc-words-h">
+        Word by word
+      </h2>
+      <dl className="hc-gloss" aria-labelledby="hc-words-h">
+        {u.words.map((w, i) => (
+          <div className="hc-gloss-row" key={`${w.w}-${i}`}>
+            <dt className="sx-deva" lang="awa">
+              {w.w}
+            </dt>
+            <dt className="sx-iast" lang="awa-Latn">
+              {w.iast}
+            </dt>
+            <dd>{w.gloss}</dd>
+          </div>
+        ))}
+      </dl>
+    </VerseCard>
   )
 
   return (
-    <main className="hc-main">
-      <BlogTracker pageName={page} />
-      <LineOpenedOnView line={u.id} page={page} locale="en" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([quoteLd, crumbs]) }} />
+    <main>
+      <PageTracker pageName="Hanuman Chalisa Line" />
+      <LineOpenedOnView line={u.id} />
+      <JsonLd data={quoteLd} />
 
-      <HcHero
-        variant="mala"
-        crumbs={
-          <nav className="hc-crumbs" aria-label="Breadcrumb">
-            <a href="/">Wisdom</a> / <a href={HUB_PATH}>Hanuman Chalisa</a> / <span>{u.label.en}</span>
-          </nav>
-        }
+      <PageHero
+        className="hc-line-hero"
+        crumbs={[
+          { label: 'Hanuman Chalisa', href: HUB_PATH },
+          { label: u.label.en, href: path },
+        ]}
         eyebrow={`Hanuman Chalisa, ${u.label.en}`}
         title={<>Meaning of &ldquo;{u.iast[0]}&rdquo;</>}
-        sub={u.quick}
+        sub={<span id="quick-answer">{u.quick}</span>}
+        actions={[
+          next
+            ? { href: linePath(next.slug), label: `Next: ${next.label.en}`, location: 'hero_next' }
+            : { href: HUB_PATH, label: 'Read the whole Chalisa', location: 'hero_hub' },
+        ]}
         below={card}
         visual={
-          <Mala
-            beads={beads('en', 'page')}
-            locale="en"
-            page={page}
-            mode="page"
-            currentId={u.id}
-            label="Mala of 43 beads, one for each line"
-            caption="Tap a bead to open that line."
-          >
-            <span className="hc-mala-big">{u.pos}</span>
-            <span className="hc-mala-sub">of 43</span>
-          </Mala>
+          <div className="hc-line-mala">
+            <Mala beads={beads('en', 'page')} locale="en" mode="page" currentId={u.id} label="Mala of 43 beads, one for each line" caption="Tap a bead to open that line.">
+              <span className="hc-mala-big">{u.pos}</span>
+              <span className="hc-mala-sub">of 43</span>
+            </Mala>
+          </div>
         }
       />
 
-      <section className="section hc-band">
-        <div className="wrap hc-col">
-          <section className="hc-block" aria-labelledby="hc-words-h">
-            <h2 className="hc-h2 rv" id="hc-words-h">
-              Word by word
-            </h2>
-            <dl className="hc-gloss rv">
-              {u.words.map((w, i) => (
-                <div className="hc-gloss-row" key={`${w.w}-${i}`}>
-                  <dt>
-                    <span className="hc-deva" lang="hi">
-                      {w.w}
-                    </span>
-                    <span className="hc-iast" lang="hi-Latn">
-                      {w.iast}
-                    </span>
-                  </dt>
-                  <dd>{w.gloss}</dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-
-          <section className="hc-block" aria-labelledby="hc-ram-h">
-            <h2 className="hc-h2 rv" id="hc-ram-h">
-              Where this happens in the Ramayana
-            </h2>
-            {u.ramayana ? (
-              <div className="hc-prose rv">
-                <p>{u.ramayana.en}</p>
-                {u.ramayana.refs.map((r) => (
-                  <div className="hc-ref" key={r.id}>
-                    {r.text && (
-                      <p className="hc-ref-text" lang={r.id.startsWith('vr') ? 'sa' : 'hi'}>
-                        {r.text}
-                      </p>
-                    )}
-                    <p className="hc-ref-label">{r.label}</p>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="hc-prose rv">
-                <p>
-                  This line praises Hanuman or speaks to the reader. It does not retell one episode, so there is no single place in the
-                  Ramayana to point to.
-                </p>
-              </div>
-            )}
-          </section>
-
-          {u.variants.length > 0 && (
-            <section className="hc-block" aria-labelledby="hc-var-h">
-              <h2 className="hc-h2 rv" id="hc-var-h">
-                Other readings
-              </h2>
-              <ul className="hc-variants rv">
-                {u.variants.map((v) => (
-                  <li key={v}>{v}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {bridge && (
-            <section className="hc-block hc-bridge rv" aria-labelledby="hc-gita-h">
-              <p className="eyebrow">The thread to the Gita</p>
-              <h2 className="hc-h2" id="hc-gita-h">
-                The same thought in the Gita
-              </h2>
-              <div className="hc-prose">
-                <p>
-                  {bridge.why}{' '}
-                  <a className="hc-gita" href={bridge.href} data-mp-location="line_gita_bridge">
-                    Read {bridge.label}
-                  </a>
-                </p>
-              </div>
-            </section>
-          )}
-
-          <div className="hc-block">
-            <nav className="hc-pager rv" aria-label="Previous and next line">
-              {prev && (
-                <a href={linePath(prev.slug)} rel="prev" data-mp-location="line_prev">
-                  <small>Previous, {prev.label.en}</small>
-                  <span lang="hi">{prev.awadhi[0].replace(/\s*[।॥]\s*$/, '')}</span>
-                </a>
+      <Section id="hc-ram" tone={tone()} title="Where this happens in the Ramayana">
+        {u.ramayana ? (
+          <>
+            <p className="sx-prose rv">{u.ramayana.en}</p>
+            <div className="hc-refs">
+              {u.ramayana.refs.map((r) =>
+                r.text ? (
+                  <VerseCard
+                    key={r.id}
+                    size="compact"
+                    align="left"
+                    lang={r.id.startsWith('vr') ? 'sa' : 'awa'}
+                    original={r.text.match(/[^।॥]+[।॥]*/gu) ?? [r.text]}
+                    source={r.label}
+                    rv
+                  />
+                ) : (
+                  <p className="hc-ref-label" key={r.id}>
+                    {r.label}
+                  </p>
+                ),
               )}
-              {next && (
-                <a href={linePath(next.slug)} rel="next" className="hc-next" data-mp-location="line_next">
-                  <small>Next, {next.label.en}</small>
-                  <span lang="hi">{next.awadhi[0].replace(/\s*[।॥]\s*$/, '')}</span>
-                </a>
-              )}
-            </nav>
+            </div>
+          </>
+        ) : (
+          <p className="sx-prose rv">
+            This line praises Hanuman or speaks to the reader. It does not retell one episode, so there is no single place in the Ramayana to
+            point to.
+          </p>
+        )}
+      </Section>
 
-            <ul className="hc-links rv">
-              <li>
-                <a className="hc-btn" href={`${HUB_PATH}#${u.id.replace('.', '-')}`} data-mp-location="line_hub">
-                  See it in the full text
-                </a>
-              </li>
-              <li>
-                <a className="hc-btn" href={LEARN_PATH} data-mp-location="line_learn">
-                  Learn it by heart
-                </a>
-              </li>
-              <li>
-                <a className="hc-btn" href={COUNTER_PATH} data-mp-location="line_counter">
-                  Count recitations
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      {u.variants.length > 0 && (
+        <Section id="hc-var" tone={tone()} title="Other readings">
+          <ul className="hc-variants rv">
+            {u.variants.map((v) => (
+              <li key={v}>{v}</li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
-      <section className="section section-alt hc-band">
-        <div className="wrap hc-col">
-          <HcNextStep locale="en" pageName={page} pageKey={`hc-line-${u.pos}`} placement="line_end" />
+      {bridge && (
+        <Section id="hc-gita" tone={tone()} eyebrow="The thread to the Gita" title="The same thought in the Gita">
+          <GitaBridge href={bridge.href} label={`Read ${bridge.label}`} why={bridge.why} location="line_gita_bridge" from={u.id} className="rv" />
+        </Section>
+      )}
 
-          <section className="hc-sources" aria-labelledby="hc-src-h">
-            <h2 className="hc-h3" id="hc-src-h">
-              Sources and method
-            </h2>
-            <p className="hc-small">
-              Awadhi text: Goswami Tulsidas, Gita Press reading, checked against three Gita Press printings and Rambhadracharya&apos;s
-              Mahaviri. English meaning and word glosses: Wisdom&apos;s own, following the traditional reading, edited by Ankur Shukla.
-            </p>
-          </section>
-        </div>
-      </section>
+      <Section tone={tone()}>
+        <nav aria-label="Previous and next line">
+          <LinkCards
+            items={[
+              ...(prev ? [{ href: linePath(prev.slug), title: `Previous, ${prev.label.en}`, orig: prev.awadhi[0].replace(/\s*[।॥]\s*$/, ''), location: 'line_prev' }] : []),
+              ...(next ? [{ href: linePath(next.slug), title: `Next, ${next.label.en}`, orig: next.awadhi[0].replace(/\s*[।॥]\s*$/, ''), location: 'line_next' }] : []),
+            ]}
+          />
+        </nav>
+        <Actions
+          className="hc-gap rv"
+          items={[
+            { href: `${HUB_PATH}#${anchorId(u.id)}`, label: 'See it in the full text', location: 'line_hub', variant: 'secondary' },
+            { href: LEARN_PATH, label: 'Learn it by heart', location: 'line_learn', variant: 'secondary' },
+            { href: COUNTER_PATH, label: 'Count recitations', location: 'line_counter', variant: 'secondary' },
+          ]}
+        />
+      </Section>
+
+      <Section tone={tone()} className="hc-next">
+        <NextStep locale="en" pageKey={pageKey} placement="line_end" startSituation={START_SITUATION} copy={NEXT_COPY.en} />
+
+        <section className="hc-sources" aria-labelledby="hc-src-h">
+          <h2 className="sx-h3" id="hc-src-h">
+            Sources and method
+          </h2>
+          <p className="hc-small">
+            Awadhi text: Goswami Tulsidas, Gita Press reading, checked against three Gita Press printings and Rambhadracharya&apos;s
+            Mahaviri. English meaning and word glosses: Wisdom&apos;s own, following the traditional reading, edited by Ankur Shukla.
+          </p>
+        </section>
+      </Section>
     </main>
   )
 }

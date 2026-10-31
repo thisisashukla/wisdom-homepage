@@ -2,20 +2,21 @@
 
 /**
  * "Hold to be still": press and hold the verse (touch or mouse, 350ms), rest the pointer on it for 3s, or hold
- * the space bar while the verse is in view. Navigation, notes and the call to action fade over 2s, leaving the
- * line and a slow gold rule (house gold; the page puts <hr class="og-rule fx-keep"> inside the children). On release the device-specific next step appears under the verse.
+ * the space bar while the verse is in view. A veil of the page ground rises over everything else and the site nav
+ * fades over 2s, leaving the line (children marked .fx-keep: the VerseCard and a slow gold rule). On release the
+ * device-specific next step appears under the verse. Events: Hold Still Started / Completed { item_id, held_ms }.
  * Reduced motion: opacity only, no pulse (CSS). Without JS the verse simply reads as text.
  */
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
-type Props = { verseRef: string; page: string; children: ReactNode; after: ReactNode }
+type Props = { verseRef: string; children: ReactNode; after: ReactNode }
 
 const PRESS_MS = 350
 const HOVER_MS = 3000
 const MOVE_PX = 12
 
-export default function HoldStill({ verseRef, page, children, after }: Props) {
+export default function HoldStill({ verseRef, children, after }: Props) {
   const ref = useRef<HTMLDivElement>(null)
   const timer = useRef<number | null>(null)
   const startedAt = useRef<number | null>(null)
@@ -25,8 +26,8 @@ export default function HoldStill({ verseRef, page, children, after }: Props) {
   const [released, setReleased] = useState(false)
   const [hint, setHint] = useState<'touch' | 'desktop' | null>(null)
 
-  const base = useCallback(() => ({ funnel: 'other-gitas', page, locale: 'en', verse: verseRef }), [page, verseRef])
-  const root = () => ref.current?.closest('[data-fx-root]') ?? null
+  const base = useCallback(() => ({ item_id: verseRef, item_type: 'verse' }), [verseRef])
+  const root = () => (typeof document === 'undefined' ? null : document.documentElement)
 
   const clear = () => {
     if (timer.current !== null) {
@@ -40,7 +41,7 @@ export default function HoldStill({ verseRef, page, children, after }: Props) {
     if (startedAt.current !== null) return
     startedAt.current = performance.now()
     root()?.classList.add('fx-still')
-    trackEvent('Hold Still Started', base())
+    trackEvent(EVENTS.HoldStillStarted, base())
   }, [base])
 
   const end = useCallback(() => {
@@ -52,7 +53,7 @@ export default function HoldStill({ verseRef, page, children, after }: Props) {
     const held = Math.round(performance.now() - startedAt.current)
     startedAt.current = null
     root()?.classList.remove('fx-still')
-    trackEvent('Hold Still Completed', { ...base(), held_ms: held })
+    trackEvent(EVENTS.HoldStillCompleted, { ...base(), held_ms: held })
     setReleased(true)
   }, [base])
 
@@ -93,11 +94,12 @@ export default function HoldStill({ verseRef, page, children, after }: Props) {
     document.addEventListener('keydown', onKeyDown)
     document.addEventListener('keyup', onKeyUp)
     const node = root()
+    node?.classList.add('fx-hold-page')
     return () => {
       document.removeEventListener('keydown', onKeyDown)
       document.removeEventListener('keyup', onKeyUp)
       clear()
-      node?.classList.remove('fx-still')
+      node?.classList.remove('fx-still', 'fx-hold-page')
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [end])
@@ -139,6 +141,7 @@ export default function HoldStill({ verseRef, page, children, after }: Props) {
           if (holding || startedAt.current !== null) e.preventDefault()
         }}
       >
+        <span className="fx-veil" aria-hidden="true" />
         <span className="og-ground" aria-hidden="true" />
         {children}
         {hint && (

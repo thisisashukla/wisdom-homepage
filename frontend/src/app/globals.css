@@ -1,3 +1,6 @@
+@import "../styles/tokens.css";
+@import "../styles/motion.css";
+
 /* Fonts self-hosted via next/font in src/app/layout.tsx.
    CSS variables --font-playfair, --font-inter, --font-noto-devanagari
    are set on <html>. The named fallbacks below ("Playfair Display",
@@ -251,6 +254,7 @@ a {
 .shloka-card:hover {
   border-color: rgba(200, 136, 30, 0.4);
 }
+.shloka-header .shloka-script { margin-left: auto; }
 .shloka-header {
   display: flex;
   align-items: center;
@@ -258,6 +262,7 @@ a {
   padding: 12px 22px;
   border-bottom: 1px solid var(--border, rgba(200,136,30,0.2));
   background: rgba(200, 136, 30, 0.05);
+  gap: 10px;
 }
 .shloka-ref {
   font-size: 11px;

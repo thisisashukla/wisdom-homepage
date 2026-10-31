@@ -1,16 +1,13 @@
 import type { Metadata } from 'next'
-import FxFrame from '@/components/funnels/other-gitas/FxFrame'
-import ScriptToggle from '@/components/funnels/other-gitas/ScriptToggle'
-import VerseLines from '@/components/funnels/other-gitas/VerseLines'
-import NextBand from '@/components/funnels/other-gitas/NextBand'
-import FxHero from '@/components/funnels/other-gitas/FxHero'
-import FxSources from '@/components/funnels/other-gitas/FxSources'
+import PageTracker from '@/components/BlogTracker'
+import { JsonLd, NextStep, PageHero, ScriptToggle, Section, VerseCard } from '@/components/site'
+import DayDetails from '@/components/funnels/other-gitas/DayDetails'
 import { startUrl } from '@/lib/app'
-import { abs, agVersePath, getVerseByKey, HUB_PATH } from '@/lib/funnels/other-gitas/data'
-import { DISCLOSURE, PLAN, PLAN_QUICK, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
-import { articleLd, breadcrumbLd, ldScript, pageMeta } from '@/lib/funnels/other-gitas/seo'
+import { abs, agVersePath, getVerseByKey, HUB_PATH, verseCardOf } from '@/lib/funnels/other-gitas/data'
+import { DISCLOSURE, NEXT_COPY, PLAN, PLAN_QUICK, SOURCES_NOTE } from '@/lib/funnels/other-gitas/content'
+import { articleLd, pageMeta } from '@/lib/funnels/other-gitas/seo'
 
-const PAGE = 'ag-seven-mornings'
+const PAGE_KEY = 'ag-seven-mornings'
 const PATH = '/ashtavakra-gita/seven-mornings'
 
 export const metadata: Metadata = pageMeta({
@@ -23,10 +20,6 @@ export const metadata: Metadata = pageMeta({
 export default function SevenMorningsPage() {
   const days = PLAN.map((d) => ({ ...d, x: getVerseByKey(d.key)! }))
   const ld = [
-    breadcrumbLd([
-      { name: 'Ashtavakra Gita', path: HUB_PATH },
-      { name: 'Seven mornings', path: PATH },
-    ]),
     articleLd({ path: PATH, headline: 'Seven mornings with the Ashtavakra Gita', description: PLAN_QUICK, about: 'Ashtavakra Gita' }),
     {
       '@context': 'https://schema.org',
@@ -45,122 +38,96 @@ export default function SevenMorningsPage() {
   const d1 = days[0]
 
   return (
-    <FxFrame pageKey={PAGE}>
-      {ld.map((d, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={ldScript(d)} />
-      ))}
-      <main>
-        <FxHero
-          crumbs={[{ label: 'Ashtavakra Gita', href: HUB_PATH }, { label: 'Seven mornings' }]}
+    <>
+      <JsonLd data={ld} />
+      <PageTracker pageName="Ashtavakra Gita Seven Mornings" />
+      <main className="fx-og" lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Ashtavakra Gita', href: HUB_PATH },
+            { label: 'Seven mornings', href: PATH },
+          ]}
           eyebrow="7-morning reading plan"
           title="Seven mornings with the Ashtavakra Gita"
-          facts={['7 verses', 'About 3 minutes a morning', 'Sanskrit and plain English']}
-          cta={{ href: '#day-1', label: 'Begin with day 1', location: 'ag_seven_mornings_hero_day_1' }}
-          art={
-            <div className="og-hero-verse" aria-hidden="true">
-              <p className="og-hero-ref">
-                Day 1, Ashtavakra Gita {d1.key}
-              </p>
-              <VerseLines verse={d1.x} />
-              <hr className="og-rule" />
-            </div>
-          }
+          facts={['7 verses', 'About 3 minutes a morning']}
+          actions={[{ href: '#day-1', label: 'Begin with day 1', location: 'ag_seven_mornings_hero_day_1' }]}
+          verse={{ ...verseCardOf(d1.x), label: `Day 1, Ashtavakra Gita ${d1.key}` }}
         />
 
-        <section className="og-intro">
-          <div className="wrap og-col">
-            <div className="og-prose">
-              <p id="quick-answer" className="og-lead">
-                {PLAN_QUICK}
-              </p>
-              <p>
-                Read the Sanskrit aloud once, even slowly, even badly. Read the English. Try the one thing. That is the whole
-                morning. Open a day to begin.
-              </p>
-            </div>
+        <Section spacing="tight" width="narrow">
+          <div className="sx-prose rv">
+            <p id="quick-answer">{PLAN_QUICK}</p>
+            <p>
+              Read the Sanskrit aloud once, however slowly, then the English, and try the one small thing
+              before the day gets busy.
+            </p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section" aria-labelledby="the-week">
-          <div className="wrap og-col">
-            <div className="og-list-head">
-              <div className="og-head">
-                <h2 className="heading" id="the-week">
-                  The seven mornings
-                </h2>
-              </div>
-              <ScriptToggle page={PAGE} />
-            </div>
-            <ol className="og-days" data-stagger="60">
-              {days.map((d) => (
-                <li key={d.day} id={`day-${d.day}`} className="rv">
-                  <details className="og-day" data-fx-day={d.day} open={d.day === 1}>
-                    <summary>
-                      <span className="og-day-node" aria-hidden="true">
-                        {d.day}
-                      </span>
-                      <span>
-                        <strong className="og-day-h">
-                          {d.title}
-                        </strong>
-                        <em className="og-day-m">Day {d.day} · Ashtavakra Gita {d.key}</em>
-                      </span>
-                      <span className="og-day-x" aria-hidden="true">
-                        +
-                      </span>
-                    </summary>
-                    <div className="og-day-body">
-                      <div className="og-day-verse">
-                        <VerseLines verse={d.x} />
-                      </div>
-                      <div className="tp-today">
-                        <h3 className="tp-label">This morning</h3>
-                        <p>{d.practice}</p>
-                      </div>
-                      <p className="og-day-link">
-                        <a href={agVersePath(d.x.c, d.x.v)}>Word meanings and notes for {d.key}</a>
-                      </p>
+        <Section id="the-week" track="plan_days" title="The seven mornings" width="narrow">
+          <div className="og-list-tools">
+            <ScriptToggle />
+          </div>
+          <ol className="og-days" data-stagger="60">
+            {days.map((d) => (
+              <li key={d.day} id={`day-${d.day}`} className="rv">
+                <DayDetails className="og-day" day={d.day} open={d.day === 1}>
+                  <summary>
+                    <span className="og-day-node" aria-hidden="true">
+                      {d.day}
+                    </span>
+                    <span>
+                      <strong className="og-day-h">{d.title}</strong>
+                      <em className="og-day-m">Day {d.day} · Ashtavakra Gita {d.key}</em>
+                    </span>
+                    <span className="og-day-x" aria-hidden="true">
+                      +
+                    </span>
+                  </summary>
+                  <div className="og-day-body">
+                    <VerseCard as="div" size="compact" {...verseCardOf(d.x)} />
+                    <div className="og-today">
+                      <h3>This morning</h3>
+                      <p>{d.practice}</p>
                     </div>
-                  </details>
-                </li>
-              ))}
-            </ol>
+                    <p className="og-day-link">
+                      <a href={agVersePath(d.x.c, d.x.v)}>Word meanings and notes for {d.key}</a>
+                    </p>
+                  </div>
+                </DayDetails>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <Section tone="band" track="after_plan" title="After the seventh morning" width="narrow">
+          <div className="sx-prose rv">
+            <p>
+              If one of these verses stayed with you, read its chapter from the start. Chapter 1 is twenty verses and holds the
+              whole teaching. If you would rather keep a line each morning, the Bhagavad Gita is the place most people go next,
+              and you can have a week of it chosen for what you are going through.
+            </p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section section-alt">
-          <div className="wrap og-col">
-            <div className="og-head rv">
-              <h2 className="heading">After the seventh morning</h2>
-            </div>
-            <div className="og-prose rv">
-              <p>
-                If one of these verses stayed with you, read its chapter from the start. Chapter 1 is twenty verses and holds the
-                whole teaching. If you would rather keep a line each morning, the Bhagavad Gita is the place most people go next,
-                and you can have a week of it chosen for what you are going through.
-              </p>
-            </div>
+        <Section track="next_step" width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey={PAGE_KEY} placement="end" copy={NEXT_COPY} />
           </div>
-        </section>
+          <p className="og-after-next">
+            On a computer?{' '}
+            <a href={startUrl({ ref: 'q-ag-seven-mornings-link' })} data-mp-location="ag_seven_mornings_start">
+              Get a week of Gita readings by email
+            </a>
+            .
+          </p>
+        </Section>
 
-        <NextBand
-          pageKey={PAGE}
-          after={
-            <>
-              On a computer?{' '}
-              <a href={startUrl({ ref: 'q-ag-seven-mornings-link' })} data-mp-location="ag_seven_mornings_start">
-                Get a week of Gita readings by email
-              </a>
-              .
-            </>
-          }
-        />
-
-        <FxSources>
+        <Section tone="band" className="og-sources" title="Sources and method" width="narrow" spacing="tight">
           <p>{SOURCES_NOTE}</p>
           <p>{DISCLOSURE}</p>
-        </FxSources>
+        </Section>
       </main>
-    </FxFrame>
+    </>
   )
 }

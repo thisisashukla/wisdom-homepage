@@ -1,14 +1,12 @@
 /** /hi/kabir-ke-dohe (Hindi) and /kabir-dohe-in-english (English). Server. */
 
-import { BlogTracker } from '@/components/BlogTracker'
-import { KABIR_THEMES, dohe, kabirNotes, kabirWomenReview, type Doha, type Locale } from '@/lib/funnels/sayings/data'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, PageHero, Section, VerseList } from '@/components/site'
+import { KABIR_THEMES, doha, dohe, kabirNotes, kabirWomenReview, type Doha, type Locale } from '@/lib/funnels/sayings/data'
 import { FOUND_SHORT, KAB_HUB, KAB_PATH, KAB_PATH_EN, KAB_THEME, dohaPath } from '@/lib/funnels/sayings/copy-kabir'
-import { abs, cardOg, ldArticle, ldBreadcrumb, ldFaq, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
-import DevaCard from './DevaCard'
-import FxNextStep from './FxNextStep'
-import ScriptToggle from './ScriptToggle'
-import { DailyBand, Faq, Head, JsonLd, Method, NextPanel, Related, Sec, Shell } from './parts'
-import { tiroHi, tiroSa } from './fonts'
+import { abs, cardOg, ldArticle, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
+import { DevaVerse } from './cards'
+import { JumpChips, Method, NextBand, NextPanel, Related } from './parts'
 
 const WORD_HINT: Record<Locale, string> = {
   en: 'Tap an underlined word for its meaning',
@@ -37,34 +35,24 @@ export const kabirCardId = (d: Doha): string | undefined => (CARD_SLUGS.has(d.sl
 export const dohaShareText = (d: Doha, locale: Locale): string =>
   [...d.lines, '', d.meaning[locale], '', locale === 'hi' ? 'कबीर' : 'Kabir', `${abs(dohaPath(d.slug))}?utm_source=copy&utm_medium=quote`].join('\n')
 
-export const foundChip = (d: Doha, locale: Locale) => (
-  <>
-    {d.foundIn.map((f) => (
-      <span key={f} className="fx-tag">
-        {FOUND_SHORT[f][locale]}
-      </span>
-    ))}
-  </>
-)
+/** Where the doha is found, for the card's source line. */
+export const foundIn = (d: Doha, locale: Locale): string => d.foundIn.map((f) => FOUND_SHORT[f][locale]).join(', ')
+
+/** The doha the hub opens with: the one people send most. */
+const HERO_SLUG = 'guru-govind-dou-khade'
+const HERO_CTA: Record<Locale, string> = { en: 'Read the dohe', hi: 'दोहे पढ़ें' }
 
 export default function KabirHub({ locale }: { locale: Locale }) {
   const c = KAB_HUB[locale]
   const path = locale === 'hi' ? KAB_PATH : KAB_PATH_EN
   const pageKey = locale === 'hi' ? 'kabir-hub-hi' : 'kabir-hub-en'
-  const pageName = locale === 'hi' ? 'Kabir Dohe Hub HI' : 'Kabir Dohe Hub EN'
   const all = dohe()
   const notes = kabirNotes()
   const women = kabirWomenReview()
   const excluded = women.filter((w) => w.decision === 'exclude')
+  const hero = doha(HERO_SLUG)
   let pos = 0
   const ld = [
-    ldBreadcrumb([
-      { name: 'Wisdom', path: '/' },
-      {
-        name: locale === 'hi' ? 'कबीर के दोहे' : 'Kabir dohe in English',
-        path,
-      },
-    ]),
     ldArticle({
       headline: c.h1,
       description: c.description,
@@ -74,7 +62,6 @@ export default function KabirHub({ locale }: { locale: Locale }) {
       about: 'Kabir',
       image: cardOg('kab-guru-govind-dou-khade', locale),
     }),
-    ldFaq(c.faq),
     ldItemList(
       c.h1,
       all.map((d) =>
@@ -89,130 +76,140 @@ export default function KabirHub({ locale }: { locale: Locale }) {
     ),
   ]
   return (
-    <Shell hub="kabir" locale={locale} fonts={`${tiroHi.variable} ${tiroSa.variable}`} script>
-      <BlogTracker pageName={pageName} />
-      {ld.map((d, i) => (
-        <JsonLd key={i} data={d} />
-      ))}
-      <Head
-        crumbs={locale === 'hi' ? [{ label: 'होम', href: '/' }, { label: 'कबीर के दोहे' }] : [{ label: 'Home', href: '/' }, { label: 'Kabir dohe in English' }]}
+    <>
+      <PageTracker pageName={locale === 'hi' ? 'Kabir Dohe Hub HI' : 'Kabir Dohe Hub'} />
+      <JsonLd data={ld} />
+      <PageHero
         locale={locale}
-        h1={c.h1}
-        promise={c.promise}
-        quick={c.quick}
-        chips={[
-          ...KABIR_THEMES.map((th) => ({
-            href: `#${th}`,
-            label: KAB_THEME[th][locale],
-          })),
-          {
-            href: '#where',
-            label: locale === 'hi' ? 'ये दोहे कहाँ मिलते हैं' : 'Where these are found',
-          },
-        ]}
-      >
-        <div className="fx-head-tools rv">
-          <ScriptToggle locale={locale} />
-          <p className="fx-word-hint fx-script-deva">{WORD_HINT[locale]}</p>
+        crumbs={[{ label: locale === 'hi' ? 'कबीर के दोहे' : 'Kabir dohe in English', href: path }]}
+        title={c.h1}
+        sub={c.promise}
+        actions={[{ href: `#${KABIR_THEMES[0]}`, label: HERO_CTA[locale], location: 'hub_hero_dohe' }]}
+        below={
+          <>
+            <p id="quick-answer" className="fx-quick">
+              {c.quick}
+            </p>
+            <JumpChips
+              locale={locale}
+              items={[
+                ...KABIR_THEMES.map((th) => ({
+                  href: `#${th}`,
+                  label: KAB_THEME[th][locale],
+                })),
+                {
+                  href: '#where',
+                  label: locale === 'hi' ? 'ये दोहे कहाँ मिलते हैं' : 'Where these are found',
+                },
+              ]}
+            />
+            <p className="fx-word-hint">{WORD_HINT[locale]}</p>
+          </>
+        }
+        verse={
+          hero
+            ? {
+                lang: 'hi',
+                original: hero.lines,
+                iast: hero.roman,
+                meaning: hero.meaning[locale],
+                label: locale === 'hi' ? 'कबीर' : 'Kabir',
+                source: foundIn(hero, locale),
+                sourceHref: locale === 'hi' ? dohaPath(hero.slug) : undefined,
+              }
+            : undefined
+        }
+      />
+
+      {KABIR_THEMES.map((th, si) => (
+        <Section key={th} id={th} tone={si % 2 ? 'band' : 'default'} width="narrow" title={KAB_THEME[th][locale]} intro={locale === 'hi' ? KAB_THEME[th].introHi : KAB_THEME[th].introEn}>
+          <VerseList>
+            {all
+              .filter((d) => d.theme === th)
+              .map((d) => {
+                pos += 1
+                return (
+                  <DevaVerse
+                    key={d.id}
+                    as="li"
+                    id={d.id}
+                    hub="kabir"
+                    lines={d.lines}
+                    roman={d.roman}
+                    lang="hi"
+                    meaning={d.meaning[locale]}
+                    gloss={d.gloss}
+                    source={foundIn(d, locale)}
+                    href={locale === 'hi' ? dohaPath(d.slug) : undefined}
+                    hrefLabel="पूरा अर्थ और शब्दार्थ"
+                    cardId={kabirCardId(d)}
+                    locale={locale}
+                    pageKey={pageKey}
+                    position={pos}
+                    section={th}
+                    shareText={dohaShareText(d, locale)}
+                    fileStem={`kabir-doha-${d.slug}`}
+                  />
+                )
+              })}
+          </VerseList>
+          {si === 1 && <NextPanel heading={locale === 'hi' ? 'रोज़ सुबह एक पंक्ति' : 'One line each morning'} hub="kabir" locale={locale} pageKey={pageKey} />}
+        </Section>
+      ))}
+
+      <Section id="where" tone={KABIR_THEMES.length % 2 ? 'band' : 'default'} width="narrow" title={locale === 'hi' ? 'ये दोहे कहाँ मिलते हैं' : 'Where these dohe are found'}>
+        <div className="sx-prose">
+          {locale === 'hi' ? (
+            <>
+              <p>
+                कबीर ने कुछ लिखा नहीं, गाया। उनके दोहे सदियों तक साधुओं और गायकों के ज़रिए फैले, और हर इलाके ने उन्हें अपनी बोली में ढाल लिया। इसलिए हम किसी दोहे को नकली नहीं कहते।
+                हर दोहे पर लिखा है कि वह कहाँ मिलता है:
+              </p>
+              <dl className="fx-sources">
+                <div>
+                  <dt>कबीर ग्रंथावली (श्यामसुंदर दास)</dt>
+                  <dd>कबीर की साखियों का सबसे पुराना छपा हुआ विद्वानों का संस्करण।</dd>
+                </div>
+                <div>
+                  <dt>कविता-कौमुदी भाग 1 (रामनरेश त्रिपाठी, 1917)</dt>
+                  <dd>सौ साल से ज़्यादा पुराना संग्रह।</dd>
+                </div>
+                <div>
+                  <dt>गायन परंपरा</dt>
+                  <dd>वे दोहे जो इन दोनों में नहीं, पर लोक और भजन गायकी में कबीर के नाम से गाए जाते हैं।</dd>
+                </div>
+              </dl>
+            </>
+          ) : (
+            <>
+              <p>
+                Kabir did not write; he sang. His dohe travelled for centuries through wandering singers, and each region shaped them to its own speech. So we do not call any doha
+                fake. Each card says where the doha is found:
+              </p>
+              <dl className="fx-sources">
+                <div>
+                  <dt>Kabir Granthavali (ed. Shyamsundar Das)</dt>
+                  <dd>The standard scholarly edition of his sakhis.</dd>
+                </div>
+                <div>
+                  <dt>Kavita-Kaumudi vol 1 (Ramnaresh Tripathi, 1917)</dt>
+                  <dd>An anthology more than a century old.</dd>
+                </div>
+                <div>
+                  <dt>Sung tradition</dt>
+                  <dd>Dohe that are in neither, but are sung in Kabir&apos;s name in folk and bhajan singing.</dd>
+                </div>
+              </dl>
+            </>
+          )}
         </div>
-      </Head>
+      </Section>
 
-      <div className="qp-sections">
-        {KABIR_THEMES.map((th, si) => (
-          <Sec key={th} id={th} hid={`${th}-h`} heading={KAB_THEME[th][locale]} intro={locale === 'hi' ? KAB_THEME[th].introHi : KAB_THEME[th].introEn}>
-            <div className="qp-cards">
-              {all
-                .filter((d) => d.theme === th)
-                .map((d) => {
-                  pos += 1
-                  return (
-                    <DevaCard
-                      key={d.id}
-                      id={d.id}
-                      hub="kabir"
-                      lines={d.lines}
-                      roman={d.roman}
-                      lang="hi"
-                      meaning={d.meaning[locale]}
-                      gloss={d.gloss}
-                      chip={foundChip(d, locale)}
-                      href={locale === 'hi' ? dohaPath(d.slug) : undefined}
-                      hrefLabel="पूरा अर्थ और शब्दार्थ"
-                      cardId={kabirCardId(d)}
-                      locale={locale}
-                      pageName={pageName}
-                      pageKey={pageKey}
-                      position={pos}
-                      section={th}
-                      shareText={dohaShareText(d, locale)}
-                      fileStem={`kabir-doha-${d.slug}`}
-                    />
-                  )
-                })}
-            </div>
-            {si === 1 && (
-              <NextPanel heading={locale === 'hi' ? 'रोज़ सुबह एक पंक्ति' : 'One line each morning'}>
-                <FxNextStep hub="kabir" locale={locale} pageName={pageName} pageKey={pageKey} placement="mid" />
-              </NextPanel>
-            )}
-          </Sec>
-        ))}
-      </div>
+      <NextBand heading={locale === 'hi' ? 'एक पंक्ति रोज़ अपने साथ रखें' : 'Keep one line with you'} hub="kabir" locale={locale} pageKey={pageKey} />
 
-      <section id="where" className="qp-extra" aria-labelledby="where-h">
-        <h2 id="where-h" className="qp-h2 rv">
-          {locale === 'hi' ? 'ये दोहे कहाँ मिलते हैं' : 'Where these dohe are found'}
-        </h2>
-        {locale === 'hi' ? (
-          <>
-            <p>
-              कबीर ने कुछ लिखा नहीं, गाया। उनके दोहे सदियों तक साधुओं और गायकों के ज़रिए फैले, और हर इलाके ने उन्हें अपनी बोली में ढाल लिया। इसलिए हम किसी दोहे को नकली नहीं कहते।
-              हर दोहे पर लिखा है कि वह कहाँ मिलता है:
-            </p>
-            <dl className="fx-sources">
-              <div>
-                <dt>कबीर ग्रंथावली (श्यामसुंदर दास)</dt>
-                <dd>कबीर की साखियों का सबसे पुराना छपा हुआ विद्वानों का संस्करण।</dd>
-              </div>
-              <div>
-                <dt>कविता-कौमुदी भाग 1 (रामनरेश त्रिपाठी, 1917)</dt>
-                <dd>सौ साल से ज़्यादा पुराना संग्रह।</dd>
-              </div>
-              <div>
-                <dt>गायन परंपरा</dt>
-                <dd>वे दोहे जो इन दोनों में नहीं, पर लोक और भजन गायकी में कबीर के नाम से गाए जाते हैं।</dd>
-              </div>
-            </dl>
-          </>
-        ) : (
-          <>
-            <p>
-              Kabir did not write; he sang. His dohe travelled for centuries through wandering singers, and each region shaped them to its own speech. So we do not call any doha
-              fake. Each card says where the doha is found:
-            </p>
-            <dl className="fx-sources">
-              <div>
-                <dt>Kabir Granthavali (ed. Shyamsundar Das)</dt>
-                <dd>The standard scholarly edition of his sakhis.</dd>
-              </div>
-              <div>
-                <dt>Kavita-Kaumudi vol 1 (Ramnaresh Tripathi, 1917)</dt>
-                <dd>An anthology more than a century old.</dd>
-              </div>
-              <div>
-                <dt>Sung tradition</dt>
-                <dd>Dohe that are in neither, but are sung in Kabir&apos;s name in folk and bhajan singing.</dd>
-              </div>
-            </dl>
-          </>
-        )}
-      </section>
-
-      <DailyBand heading={locale === 'hi' ? 'एक पंक्ति रोज़ अपने साथ रखें' : 'Keep one line with you'} label={locale === 'hi' ? 'आगे' : 'Next'}>
-        <FxNextStep hub="kabir" locale={locale} pageName={pageName} pageKey={pageKey} placement="end" />
-      </DailyBand>
-
-      <Faq items={c.faq} heading={locale === 'hi' ? 'लोग अक्सर पूछते हैं' : 'Questions people ask'} />
+      <Section id="faq" width="narrow" title={locale === 'hi' ? 'लोग अक्सर पूछते हैं' : 'Questions people ask'}>
+        <Faq items={c.faq} locale={locale} />
+      </Section>
 
       <Method heading={locale === 'hi' ? 'स्रोत और तरीका' : 'Sources and method'}>
         {locale === 'hi' ? (
@@ -241,6 +238,7 @@ export default function KabirHub({ locale }: { locale: Locale }) {
 
       <Related
         heading={locale === 'hi' ? 'आगे पढ़ें' : 'Read next'}
+        locale={locale}
         links={
           locale === 'hi'
             ? [
@@ -265,6 +263,6 @@ export default function KabirHub({ locale }: { locale: Locale }) {
               ]
         }
       />
-    </Shell>
+    </>
   )
 }

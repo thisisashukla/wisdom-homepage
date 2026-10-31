@@ -2,10 +2,10 @@
 
 import { useState } from 'react'
 import type { QuizQ } from '@/lib/funnels/mahabharata/yaksha'
-import { mbTrack } from './track'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 /** Ten questions from the lake. One at a time; the answer and its verse show after each pick. */
-export default function YakshaQuiz({ quiz, refs, page }: { quiz: QuizQ[]; refs: Record<string, string>; page: string }) {
+export default function YakshaQuiz({ quiz, refs }: { quiz: QuizQ[]; refs: Record<string, string> }) {
   const [i, setI] = useState(0)
   const [picked, setPicked] = useState<number | null>(null)
   const [score, setScore] = useState(0)
@@ -19,7 +19,7 @@ export default function YakshaQuiz({ quiz, refs, page }: { quiz: QuizQ[]; refs: 
     setPicked(k)
     setMarks((m) => [...m, correct ? 'right' : 'wrong'])
     if (correct) setScore((s) => s + 1)
-    mbTrack('Yaksha Quiz Answered', page, 'en', { q: q.id, correct })
+    trackEvent(EVENTS.YakshaQuizAnswered, { item_id: q.id, item_type: 'question', position: i + 1, correct })
   }
 
   const next = () => {
@@ -29,7 +29,7 @@ export default function YakshaQuiz({ quiz, refs, page }: { quiz: QuizQ[]; refs: 
       return
     }
     setDone(true)
-    mbTrack('Yaksha Quiz Completed', page, 'en', { score })
+    trackEvent(EVENTS.YakshaQuizCompleted, { score, total: quiz.length })
   }
 
   const restart = () => {
@@ -65,7 +65,7 @@ export default function YakshaQuiz({ quiz, refs, page }: { quiz: QuizQ[]; refs: 
           {score} of {quiz.length}
         </p>
         <p className="mb-quiz-why">{line}</p>
-        <button type="button" className="btn-ghost" onClick={restart}>
+        <button type="button" className="sx-btn sx-btn--secondary" onClick={restart}>
           Try again
         </button>
       </div>
@@ -81,7 +81,7 @@ export default function YakshaQuiz({ quiz, refs, page }: { quiz: QuizQ[]; refs: 
         {dots}
       </div>
       <div className="mb-quiz-q" key={q.id}>
-      <h3 id={`quiz-${q.id}`}>{q.prompt}</h3>
+        <h3 id={`quiz-${q.id}`}>{q.prompt}</h3>
       <ul className="mb-quiz-opts" aria-labelledby={`quiz-${q.id}`}>
         {q.options.map((o, k) => (
           <li key={k}>
@@ -103,7 +103,7 @@ export default function YakshaQuiz({ quiz, refs, page }: { quiz: QuizQ[]; refs: 
               <strong>{picked === q.correct ? 'Right.' : `It is "${q.options[q.correct]}".`}</strong> {q.why}{' '}
               <span className="mb-ref">{refs[q.lineId]}</span>
             </p>
-            <button type="button" className="btn-primary" onClick={next}>
+            <button type="button" className="sx-btn sx-btn--primary" onClick={next}>
               {i + 1 < quiz.length ? 'Next question' : 'See my score'}
             </button>
           </>

@@ -1,34 +1,28 @@
 import type { Metadata } from 'next'
-import BlogTracker from '@/components/BlogTracker'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, ScriptToggle, Section } from '@/components/site'
 import Mala from '@/components/funnels/hanuman-chalisa/Mala'
-import ScriptToggle from '@/components/funnels/hanuman-chalisa/ScriptToggle'
 import { MeaningTracker, PrintButton } from '@/components/funnels/hanuman-chalisa/Trackers'
-import { Faq, FullText, HcNextStep, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
-import HcHero, { HeroLine } from '@/components/funnels/hanuman-chalisa/Hero'
+import { FullText, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
+import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
 import {
-  abs,
-  AUTHOR_LD,
   beads,
-  breadcrumbLd,
   cardOg,
   chalisaWorkLd,
   COUNTER_PATH,
   editionCitation,
-  faqLd,
   getUnits,
   HUB_PATH,
   HUB_PATH_HI,
   HUB_TWIN,
   JAYANTI_PATH,
   LEARN_PATH,
-  ldJson,
   linePath,
-  pageMeta,
-  PUBLISHER_LD,
+  NEXT_COPY,
+  START_SITUATION,
+  unitVerse,
   UPDATED,
 } from '@/lib/funnels/hanuman-chalisa'
-
-const PAGE = 'hanuman-chalisa-hub-hi'
 
 export const metadata: Metadata = pageMeta({
   title: 'हनुमान चालीसा अर्थ सहित, हर चौपाई का अर्थ | Wisdom',
@@ -86,124 +80,81 @@ export default function HanumanChalisaHubHi() {
     numberOfItems: units.length,
     itemListElement: units.map((u) => ({ '@type': 'ListItem', position: u.pos, name: `${u.label.hi}: ${u.awadhi[0]}`, url: abs(linePath(u.slug)) })),
   }
-  const crumbs = breadcrumbLd([
-    { name: 'Wisdom', path: '/' },
-    { name: 'हनुमान चालीसा', path: HUB_PATH_HI },
-  ])
 
   const d1 = units[0]
 
   return (
-    <main className="hc-main">
-      <BlogTracker pageName={PAGE} />
-      <MeaningTracker page={PAGE} locale="hi" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson([workLd, listLd, crumbs, faqLd(FAQ)]) }} />
+    <main>
+      <PageTracker pageName="Hanuman Chalisa Hub HI" />
+      <MeaningTracker />
+      <JsonLd data={[workLd, listLd]} />
 
-      <HcHero
+      <PageHero
+        locale="hi"
         lang="hi"
-        crumbs={
-          <nav className="hc-crumbs hc-noprint" aria-label="ब्रेडक्रम्ब">
-            <a href="/">Wisdom</a> / <span>हनुमान चालीसा</span> /{' '}
-            <a href={HUB_PATH} hrefLang="en" lang="en">
-              In English
-            </a>
-          </nav>
-        }
+        crumbs={[{ label: 'हनुमान चालीसा', href: HUB_PATH_HI }]}
         eyebrow="गोस्वामी तुलसीदास, अवधी में"
         title="हनुमान चालीसा अर्थ सहित"
         sub={
-          <>
-            हनुमान चालीसा गोस्वामी तुलसीदास की अवधी रचना है, जिसमें शुरू के दो दोहे, चालीस चौपाइयाँ और अंत का एक दोहा है। नीचे गीता प्रेस
-            के पाठ के अनुसार पूरी चालीसा है। हर पंक्ति के नीचे &ldquo;अर्थ&rdquo; छूने पर उसका सरल हिंदी अर्थ खुल जाता है, जिसे आप प्रिंट भी
-            कर सकते हैं।
-          </>
+          <span id="quick-answer">
+            हनुमान चालीसा गोस्वामी तुलसीदास की अवधी रचना है, जिसमें शुरू के दो दोहे, चालीस चौपाइयाँ और अंत का एक दोहा है। इसे धीरे-धीरे, एक-एक पंक्ति करके पढ़ें, और जिस पंक्ति पर मन रुके, दोबारा बोलने से पहले उसका अर्थ जान लें।
+          </span>
         }
-        factsLabel="इस पेज के बारे में"
-        facts={['43 पंक्तियाँ', 'गीता प्रेस पाठ', 'हर पंक्ति का अर्थ']}
-        actions={
-          <a href="#hc-text" className="btn-read-gita btn-read-gita-primary" data-mp-location="hub_hi_hero_read" lang="hi">
-            पूरी चालीसा पढ़ें
-          </a>
-        }
-        links={
-          <>
-            <a href={LEARN_PATH} data-mp-location="hub_hi_learn" lang="hi">
-              रोज़ 4 पंक्तियाँ याद करें (अंग्रेज़ी में)
-            </a>
-            <a href={COUNTER_PATH} data-mp-location="hub_hi_counter" lang="hi">
-              11, 21 या 108 पाठ गिनें
-            </a>
-          </>
-        }
-        visual={<HeroLine awadhi={d1.awadhi} iast={d1.iast} caption="पहला दोहा" />}
+        facts={['मंगलवार और शनिवार का पाठ', 'एक पाठ में 6 से 10 मिनट']}
+        actions={[
+          { href: '#hc-text', label: 'पूरी चालीसा पढ़ें', location: 'hub_hi_hero_read' },
+          { href: LEARN_PATH, label: 'रोज़ 4 पंक्तियाँ याद करें (अंग्रेज़ी में)', location: 'hub_hi_learn' },
+          { href: COUNTER_PATH, label: '11, 21 या 108 पाठ गिनें', location: 'hub_hi_counter' },
+          { href: HUB_PATH, label: <span lang="en">In English</span>, location: 'hub_hi_english', hrefLang: 'en' },
+        ]}
+        verse={{ ...unitVerse(d1), label: 'पहला दोहा' }}
       />
 
-      <section className="section hc-band" id="hc-text" aria-labelledby="hc-text-h">
-        <div className="wrap">
-          <div className="sec-head hc-sec-head rv" lang="hi">
-            <p className="eyebrow">43 पंक्तियाँ</p>
-            <h2 className="heading" id="hc-text-h">
-              पूरी हनुमान चालीसा
-            </h2>
-            <div className="hc-controls hc-noprint">
-              <ScriptToggle locale="hi" page={PAGE} />
-              <PrintButton label="प्रिंट करें" page={PAGE} locale="hi" />
-            </div>
-          </div>
-
-          <div className="hc-read">
-            <aside className="hc-read-aside" aria-label="माला: हर पंक्ति का एक मनका">
-              <Mala beads={beads('hi', 'anchor')} locale="hi" page={PAGE} mode="anchor" currentId="hc.d1" label="43 मनकों की माला, हर पंक्ति का एक" caption="हर पंक्ति का एक मनका। मनका छुएं, वही पंक्ति खुलेगी।">
-                <span className="hc-mala-name" lang="hi">
-                  हनुमान चालीसा
-                </span>
-                <span className="hc-mala-sub" lang="hi">
-                  2 दोहे, 40 चौपाई, 1 दोहा
-                </span>
-              </Mala>
-            </aside>
-            <div className="rv">
-              <FullText units={units} locale="hi" />
-            </div>
-          </div>
+      <Section id="hc-text" tone="band" eyebrow="43 पंक्तियाँ" title="पूरी हनुमान चालीसा" lang="hi">
+        <div className="hc-controls hc-noprint">
+          <ScriptToggle locale="hi" />
+          <PrintButton label="प्रिंट करें" />
         </div>
-      </section>
 
-      <section className="section section-alt hc-band hc-noprint" aria-labelledby="hc-gita-h">
-        <div className="wrap hc-col">
-          <div className="hc-bridge rv">
-            <h2 className="hc-h2" id="hc-gita-h" lang="hi">
-              गीता में हनुमान
-            </h2>
-            <div className="hc-prose" lang="hi">
-              <p>
-                कुरुक्षेत्र में हनुमान जी अर्जुन के रथ की ध्वजा पर हैं। गीता में अर्जुन को कपिध्वज कहा गया है, जब वे कृष्ण से संवाद से ठीक
-                पहले धनुष उठाते हैं।{' '}
-                <a className="hc-gita" href="/hi/gita/chapter/1/verse/20" hrefLang="hi" data-mp-location="hub_hi_gita_1_20">
-                  भगवद गीता 1.20 पढ़ें
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <ul className="hc-tiles" style={{ marginTop: 24 }}>
-            <li className="rv">
-              <a className="hc-tile" href={JAYANTI_PATH} hrefLang="en" lang="hi">
-                <strong>हनुमान जयंती 2027: मंगलवार, 20 अप्रैल (अंग्रेज़ी में)</strong>
-              </a>
-            </li>
-          </ul>
+        <div className="hc-read hc-gap">
+          <aside className="hc-read-aside" aria-label="माला: हर पंक्ति का एक मनका">
+            <Mala beads={beads('hi', 'anchor')} locale="hi" mode="anchor" currentId="hc.d1" label="43 मनकों की माला, हर पंक्ति का एक" caption="हर पंक्ति का एक मनका। मनका छुएं, वही पंक्ति खुलेगी।">
+              <span className="hc-mala-name" lang="hi">
+                हनुमान चालीसा
+              </span>
+              <span className="hc-mala-sub" lang="hi">
+                2 दोहे, 40 चौपाई, 1 दोहा
+              </span>
+            </Mala>
+          </aside>
+          <FullText units={units} locale="hi" />
         </div>
-      </section>
+      </Section>
 
-      <Faq items={FAQ} locale="hi" heading="अक्सर पूछे जाने वाले सवाल" />
-
-      <section className="section section-alt hc-band">
-        <div className="wrap hc-col">
-          <HcNextStep locale="hi" pageName={PAGE} pageKey="hc-hub-hi" placement="hub_end" />
-          <Sources locale="hi" />
+      <Section id="hc-gita" title="गीता में हनुमान" lang="hi" className="hc-noprint">
+        <GitaBridge
+          href="/hi/gita/chapter/1/verse/20"
+          label="भगवद गीता 1.20 पढ़ें"
+          why="कुरुक्षेत्र में हनुमान जी अर्जुन के रथ की ध्वजा पर हैं। गीता में अर्जुन को कपिध्वज कहा गया है, जब वे कृष्ण से संवाद से ठीक पहले धनुष उठाते हैं।"
+          location="hub_hi_gita_1_20"
+          locale="hi"
+          className="rv"
+        />
+        <div className="hc-gap">
+          <LinkCards
+            items={[{ href: JAYANTI_PATH, title: 'हनुमान जयंती 2027: मंगलवार, 20 अप्रैल (अंग्रेज़ी में)', hrefLang: 'en', location: 'hub_hi_jayanti' }]}
+          />
         </div>
-      </section>
+      </Section>
+
+      <Section id="hc-faq" tone="band" title="अक्सर पूछे जाने वाले सवाल" lang="hi">
+        <Faq items={FAQ} locale="hi" />
+      </Section>
+
+      <Section className="hc-next">
+        <NextStep locale="hi" pageKey="hc-hub-hi" placement="hub_end" startSituation={START_SITUATION} copy={NEXT_COPY.hi} />
+        <Sources locale="hi" />
+      </Section>
     </main>
   )
 }

@@ -1,20 +1,19 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import BlogTracker from '@/components/BlogTracker'
-import HomeAnimations from '@/components/HomeAnimations'
 import Nav from '@/components/Nav'
-import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
+import SiteFooter from '@/components/SiteFooter'
+import { Actions, JsonLd, LinkCards, PageHero, Section, VerseCard, VerseList } from '@/components/site'
+import PlanFine from '@/components/plan/PlanFine'
+import { planAction } from '@/components/plan/planAction'
 import { GITA_FOR, gitaForBySlug } from '@/lib/gitaFor'
 import { getVerse, verseUrl } from '@/lib/gita'
 import { appStoreUrl } from '@/lib/app'
 import { THEME_SLUGS, themePlanBySlug } from '@/lib/themePlans'
 import { themePlanMetadata } from '@/lib/themePlanMeta'
 import ThemePlanPage from './ThemePlanPage'
-import '../../home.css'
-import '../../home-v3.css'
 import '../gita-for.css'
 
-import SiteFooter from '@/components/SiteFooter'
 export const dynamicParams = false
 
 export function generateStaticParams() {
@@ -84,83 +83,84 @@ export default async function GitaForPage({ params }: { params: { slug: string }
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Nav pageName={pageName} />
+      <JsonLd data={schema} />
+      <Nav />
 
       <article className="gf">
-        <header className="section gf-hero">
-          <div className="wrap gf-col">
-            <nav className="gf-crumbs" aria-label="Breadcrumb">
-              <a href="/">Home</a> / <a href="/gita-for">Gita for life</a> / <span>{page.label}</span>
-            </nav>
-            <h1 className="heading">{page.h1}</h1>
-            <p className="subtext">{page.intro}</p>
-            <a href="#your-verse" className="btn-ghost" data-mp-location={`gita_for_${page.slug}_jump`}>
-              Skip to the verse for your situation ↓
-            </a>
-          </div>
-        </header>
+        <PageHero
+          crumbs={[
+            { label: 'Gita for life', href: '/gita-for' },
+            { label: page.label, href: `/gita-for/${page.slug}` },
+          ]}
+          crumbsLd={false}
+          title={page.h1}
+          sub={page.intro}
+          actions={[{ href: '#your-verse', label: 'Skip to the verse for your situation ↓', location: `gita_for_${page.slug}_jump`, variant: 'secondary' }]}
+        />
 
-        <section className="section gf-verses">
-          <div className="wrap gf-col">
-            <h2 className="gf-h2">{verses.length} verses from the Gita</h2>
-            <ol className="gf-list">
-              {verses.map(({ ref, data }) => (
-                <li key={`${ref.chapter}.${ref.verse}`} className="gf-verse">
-                  <div className="gf-ref">
-                    <a href={verseUrl(ref.chapter, ref.verse)} data-mp-location={`gita_for_${page.slug}_${ref.chapter}_${ref.verse}`}>
-                      Bhagavad Gita {ref.chapter}.{ref.verse}
-                    </a>
-                    {data!.speaker ? <span> · {data!.speaker}</span> : null}
-                  </div>
-                  <h3 className="gf-why">{ref.why}</h3>
-                  {data!.sanskrit && <p className="gf-sanskrit" lang="sa">{data!.sanskrit}</p>}
-                  <p className="gf-en">“{data!.englishTranslation}”</p>
-                  {data!.hindiTranslation && <p className="gf-hi" lang="hi">{data!.hindiTranslation}</p>}
+        <Section id="verses" title={`${verses.length} verses from the Gita`} width="narrow">
+          <VerseList>
+            {verses.map(({ ref, data }) => (
+              <li key={`${ref.chapter}.${ref.verse}`} className="gf-item rv">
+                <h3 className="gf-why">{ref.why}</h3>
+                <VerseCard
+                  as="div"
+                  size="compact"
+                  original={data!.sanskrit}
+                  meaning={`“${data!.englishTranslation}”`}
+                  source={`Bhagavad Gita ${ref.chapter}.${ref.verse}${data!.speaker ? ` · ${data!.speaker}` : ''}`}
+                  sourceHref={verseUrl(ref.chapter, ref.verse)}
+                >
+                  {data!.hindiTranslation && (
+                    <p className="gf-hi" lang="hi">
+                      {data!.hindiTranslation}
+                    </p>
+                  )}
                   {data!.simpleInsight && <p className="gf-insight">{data!.simpleInsight}</p>}
-                  <a className="gf-more" href={verseUrl(ref.chapter, ref.verse)}>Meaning and commentary →</a>
-                </li>
-              ))}
-            </ol>
-            {page.note && <p className="gf-note">{page.note}</p>}
-          </div>
-        </section>
+                  <a className="sx-link gf-more" href={verseUrl(ref.chapter, ref.verse)} data-mp-location={`gita_for_${page.slug}_${ref.chapter}_${ref.verse}`}>
+                    Meaning and commentary →
+                  </a>
+                </VerseCard>
+              </li>
+            ))}
+          </VerseList>
+          {page.note && <p className="gf-note">{page.note}</p>}
+        </Section>
 
-        <section className="section section-alt" id="find">
-          <div className="wrap gf-col gf-widget">
-            <div className="eyebrow">Your situation is your own</div>
-            <h2 className="heading">A week of verses, picked for <em>your</em> {page.label.toLowerCase()}.</h2>
-            <p className="subtext">
-              These verses are for everyone. Tell us a little about yours and Wisdom will pick the one that speaks to it.
-            </p>
-            <div id="your-verse"><HeroPlanCTA campaign={`web_gita_for_${page.slug}`} location={`gita_for_${page.slug}_create_plan`} pageName="Gita For" situation={page.situation} /></div>
-            <p className="gf-app">
-              On iPhone, Wisdom turns this into a 7-day plan, read aloud.{' '}
-              <a href={appStoreUrl(`web_gita_for_${page.slug.replace(/-/g, '_')}`)} target="_blank" rel="noopener" data-mp-location={`gita_for_${page.slug}_app`}>
-                Get the app →
-              </a>
-            </p>
+        <Section
+          id="find"
+          tone="band"
+          width="narrow"
+          eyebrow="Your situation is your own"
+          title={
+            <>
+              A week of verses, picked for <em>your</em> {page.label.toLowerCase()}.
+            </>
+          }
+          intro="These verses are for everyone. Tell us a little about yours and Wisdom will pick the one that speaks to it."
+        >
+          <div id="your-verse">
+            <Actions items={[planAction({ campaign: `web_gita_for_${page.slug}`, location: `gita_for_${page.slug}_create_plan`, situation: page.situation })]} />
+            <PlanFine />
           </div>
-        </section>
+          <p className="plan-app">
+            On iPhone, Wisdom turns this into a 7-day plan, read aloud.{' '}
+            <a href={appStoreUrl(`web_gita_for_${page.slug.replace(/-/g, '_')}`)} target="_blank" rel="noopener" data-mp-location={`gita_for_${page.slug}_app`}>
+              Get the app →
+            </a>
+          </p>
+        </Section>
 
-        <section className="section">
-          <div className="wrap gf-col">
-            <h2 className="gf-h2">More from the Gita</h2>
-            <div className="gita-for-grid">
-              {related.map((p) => (
-                <a key={p.slug} href={`/gita-for/${p.slug}`} className="gita-for-tile" data-mp-location={`gita_for_${page.slug}_related_${p.slug}`}>
-                  <span className="gita-for-label">{p.label}</span>
-                  <span className="gita-for-count">{p.verses.length} verses →</span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Section id="more" title="More from the Gita">
+          <LinkCards
+            columns={3}
+            items={related.map((p) => ({ href: `/gita-for/${p.slug}`, title: p.label, body: `${p.verses.length} verses →`, location: `gita_for_${page.slug}_related_${p.slug}` }))}
+          />
+        </Section>
       </article>
 
       <SiteFooter />
       <BlogTracker pageName={pageName} />
-      <HomeAnimations />
     </>
   )
 }

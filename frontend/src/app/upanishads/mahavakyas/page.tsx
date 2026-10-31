@@ -1,6 +1,7 @@
-import Shell, { Band, Faq, HeroLine, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
-import Sanskrit from '@/components/funnels/upanishads/Sanskrit'
-import { articleLd, faqLd, SITE, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, JsonLd, PageHero, Section, VerseCard, VerseList } from '@/components/site'
+import { SourcesNote, UpNext } from '@/components/funnels/upanishads/parts'
+import { articleLd, SITE, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
 import { MAHAVAKYAS } from '@/content/funnels/upanishads/mahavakyas'
 
 const PATH = '/upanishads/mahavakyas'
@@ -43,72 +44,68 @@ export default function Page() {
       name: 'The four mahavakyas',
       itemListElement: MAHAVAKYAS.map((m, i) => ({ '@type': 'ListItem', position: i + 1, name: `${m.iast} (${m.ref})`, url: `${SITE}${PATH}#${slug(m.iast)}` })),
     },
-    faqLd(FAQ),
   ]
   return (
-    <Shell
-      pageName={PAGE}
-      locale="en"
-      crumbs={[
-        { name: 'Home', path: '/' },
-        { name: 'Upanishads', path: '/upanishads' },
-        { name: 'Mahavakyas', path: PATH },
-      ]}
-      jsonLd={jsonLd}
-      hero={{
-        eyebrow: 'Four Upanishads, four Vedas',
-        title: 'The four mahavakyas',
-        facts: ['Rig, Yajur, Sama, Atharva', 'Sanskrit, IAST, English'],
-        cta: { href: `#${slug(MAHAVAKYAS[0].iast)}`, label: 'Read the four', loc: 'mahavakyas_hero_read' },
-        visual: (
-          <HeroLine
-            sa={MAHAVAKYAS.map((m) => m.sa).join('\n')}
-            iast={MAHAVAKYAS.map((m) => m.iast).join('\n')}
-          />
-        ),
-      }}
-    >
-      <Band wide label="The four mahavakyas">
-        <div className="fx-col fx-col-inline">
-          <p id="quick-answer" className="tp-intro rv">
-            The mahavakyas are four &quot;great sentences&quot; from four Upanishads, one from each Veda: prajnanam brahma (Aitareya 3.1.3), aham
-            brahmasmi (Brihadaranyaka 1.4.10), tat tvam asi (Chandogya 6.8.7) and ayam atma brahma (Mandukya 2). Each says, in its own way, that the
-            Self and Brahman are one.
-          </p>
-        </div>
-        <div className="fx-maha" data-stagger="80">
+    <>
+      <PageTracker pageName="Upanishads Mahavakyas" />
+      <JsonLd data={jsonLd} />
+      <PageHero
+        crumbs={[
+          { label: 'Upanishads', href: '/upanishads' },
+          { label: 'Mahavakyas', href: PATH },
+        ]}
+        eyebrow="Four Upanishads, four Vedas"
+        title="The four mahavakyas"
+        facts={['Rig, Yajur, Sama, Atharva']}
+        actions={[{ href: `#${slug(MAHAVAKYAS[0].iast)}`, label: 'Read the four', location: 'mahavakyas_hero_read' }]}
+        verse={{ original: MAHAVAKYAS.map((m) => m.sa), iast: MAHAVAKYAS.map((m) => m.iast) }}
+      />
+
+      <Section id="the-four" width="wide" className="up-maha-band">
+        <p id="quick-answer" className="sx-intro up-maha-intro rv">
+          The mahavakyas are four &quot;great sentences&quot; from four Upanishads, one from each Veda: prajnanam brahma (Aitareya 3.1.3), aham
+          brahmasmi (Brihadaranyaka 1.4.10), tat tvam asi (Chandogya 6.8.7) and ayam atma brahma (Mandukya 2). Each says, in its own way, that the
+          Self and Brahman are one.
+        </p>
+        <VerseList columns={2}>
           {MAHAVAKYAS.map((m) => (
-            <section key={m.iast} id={slug(m.iast)} className="fx-maha-card rv" aria-labelledby={`h-${slug(m.iast)}`}>
-              <p className="fx-v-ref-plain">
-                {m.ref}, {m.veda}
-              </p>
-              <h2 id={`h-${slug(m.iast)}`} className="fx-sr">
+            <VerseCard
+              key={m.iast}
+              as="li"
+              id={slug(m.iast)}
+              rv
+              label={`${m.ref}, ${m.veda}`}
+              original={m.sa}
+              iast={m.iast}
+              meaning={m.en}
+            >
+              <h2 className="up-sr">
                 {m.iast}: {m.en}
               </h2>
-              <Sanskrit sa={m.sa} iast={m.iast} size="verse" />
-              <p className="fx-maha-en">{m.en}</p>
-              <p className="fx-who">{m.kind}</p>
-              <p className="fx-maha-note">{m.note}</p>
+              <p className="up-who-chip">{m.kind}</p>
+              <p className="up-maha-note">{m.note}</p>
               {!m.href.startsWith(PATH) && (
                 <p>
-                  <a href={m.href} className="fx-link" data-mp-location={`mahavakya_${slug(m.iast)}`}>
+                  <a href={m.href} className="sx-link" data-mp-location={`mahavakya_${slug(m.iast)}`}>
                     Read it in its place
                   </a>
                 </p>
               )}
-            </section>
+            </VerseCard>
           ))}
-        </div>
-      </Band>
+        </VerseList>
+      </Section>
 
-      <UpNext locale="en" pageName={PAGE} pageKey={PAGE} placement="mahavakyas-end" heading="One line each morning" />
+      <UpNext locale="en" pageKey={PAGE} placement="mahavakyas-end" heading="One line each morning" />
 
-      <Faq items={FAQ} heading="Questions people ask" />
+      <Section id="faq" width="narrow" title="Questions people ask">
+        <Faq items={FAQ} />
+      </Section>
 
       <SourcesNote heading="Sources and method">
         <p>{SOURCES_NOTE_EN}</p>
         <p>{DISCLOSURE_EN}</p>
       </SourcesNote>
-    </Shell>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import ReadingPlansHub from './ReadingPlansHub'
 const URL = 'https://wisdomquotes.in/reading-plans'
 const TITLE = 'Bhagavad Gita Reading Plans: 7 Verses for What You Face'
 const DESCRIPTION =
-  'Free Bhagavad Gita reading plans: seven verses each on overthinking, stress, grief, anger, guilt, gratitude, joy, new beginnings and more. Plus the whole Gita in 18 days.'
+  'Free Bhagavad Gita reading plans, seven verses each, for overthinking, stress, grief, anger, guilt, joy and more, plus the whole Gita in 18 days.'
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | Wisdom` },

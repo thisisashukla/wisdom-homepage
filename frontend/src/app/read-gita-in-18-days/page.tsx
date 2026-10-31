@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
+import { Actions, Button, Faq, JsonLd, PageHero, Section, VerseCard } from '@/components/site'
 import JayantiRelated from '@/components/jayanti/JayantiRelated'
+import PlanFine from '@/components/plan/PlanFine'
+import { planAction } from '@/components/plan/planAction'
 import { getAllChapters, getVerse, verseUrl, chapterUrl } from '@/lib/gita'
 import { CHAPTER_GUIDE, minutesEn, minutesSa, runIso, fmtDay } from '@/lib/jayanti'
-import '../home.css'
-import '../home-v3.css'
-import '../gita-jayanti/gita-jayanti.css'
 import '../gita-jayanti/guides.css'
 
 const URL = 'https://wisdomquotes.in/read-gita-in-18-days'
@@ -51,6 +51,17 @@ const FAQ = [
     a: 'All 700 verses take about two hours to read in English at an unhurried pace, or about three hours to recite in Sanskrit. Spread over 18 days, that is between 4 and 13 minutes a day in English.',
   },
 ]
+
+/** Two answers end with a link. The kit's Faq types `a` as the JSON-LD string; it renders any node, and this page
+ *  emits its own FAQPage from FAQ (ld={false}), so the linked answers are passed as nodes here. */
+const FAQ_LINK: Record<string, ReactNode> = {
+  'Do I need': <a className="sx-link" href="/gita-jayanti/which-chapter-to-read">Which chapters to pick →</a>,
+  'Which translation': <a className="sx-link" href="/blogs/best-bhagavad-gita-translation">Compare translations →</a>,
+}
+const faqItems = FAQ.map((f) => {
+  const link = Object.entries(FAQ_LINK).find(([k]) => f.q.startsWith(k))?.[1]
+  return link ? { q: f.q, a: (<>{f.a} {link}</>) as unknown as string } : f
+})
 
 export default async function ReadIn18DaysPage() {
   const chapters = getAllChapters()
@@ -104,118 +115,101 @@ export default async function ReadIn18DaysPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Nav pageName="Read Gita 18 Days" />
+      <JsonLd data={schema} />
+      <Nav />
+
+      <PageHero
+        crumbs={[
+          { label: 'Gita Jayanti 2026', href: '/gita-jayanti' },
+          { label: 'Read the Gita in 18 days', href: '/read-gita-in-18-days' },
+        ]}
+        crumbsLd={false}
+        eyebrow="18 chapters, 18 days"
+        title="Read the Bhagavad Gita in 18 days"
+        sub="The Gita has 18 chapters, so a chapter a day takes 18 days. Chapters run from 20 verses (12 and 15) to 78 (chapter 18). A day’s reading takes 4 to 13 minutes in English, or 5 to 20 minutes to recite the Sanskrit."
+        below={
+          <>
+            <p className="gjg-lede">
+              You can start any day. For <a className="sx-link" href="/gita-jayanti">Gita Jayanti 2026</a>, start on Thursday, 3 December and
+              chapter 18 falls on Sunday, 20 December, the day tradition says the Gita was spoken.
+            </p>
+            <div className="sx-actions">
+              <Button href={chapterUrl(1)} label="Start with chapter 1" location="read18_start_ch1" variant="primary" />
+              <a href="/gita-jayanti-18-days.ics" download className="sx-btn sx-btn--secondary" data-mp-location="read18_ics">
+                Add 3–20 Dec to my calendar
+              </a>
+            </div>
+            <p className="gjg-note">Times assume about 10 seconds a verse for the English and 15 to recite the Sanskrit.</p>
+          </>
+        }
+        visual={
+          <div className="gjg-art">
+            <img src="/assets/chapter1.webp" alt="Arjuna seated in his chariot beside Krishna at Kurukshetra" fetchPriority="high" />
+          </div>
+        }
+      />
 
       <main className="gjg">
-        <header className="gjg-head">
-          <div className="wrap">
-            <div className="gjg-col">
-              <nav className="gjg-crumbs" aria-label="Breadcrumb">
-                <a href="/">Home</a> / <a href="/gita-jayanti">Gita Jayanti 2026</a> / <span>Read the Gita in 18 days</span>
-              </nav>
-              <div className="gjg-eyebrow">18 chapters, 18 days</div>
-              <h1 className="gjg-h1">Read the Bhagavad Gita in 18 days</h1>
-              <p className="gjg-lede">
-                The Gita has 18 chapters, so a chapter a day takes 18 days. Chapters run from 20 verses (12 and 15) to 78
-                (chapter 18). A day’s reading takes 4 to 13 minutes in English, or 5 to 20 minutes to recite the Sanskrit.
-              </p>
-              <p className="gjg-lede">
-                You can start any day. For <a href="/gita-jayanti">Gita Jayanti 2026</a>, start on Thursday, 3 December and
-                chapter 18 falls on Sunday, 20 December, the day tradition says the Gita was spoken.
-              </p>
-              <div className="gjg-actions">
-                <a href={chapterUrl(1)} className="btn-read-gita btn-read-gita-primary gj-btn" data-mp-location="read18_start_ch1">
-                  Start with chapter 1
+        <Section id="days" width="narrow" spacing="tight">
+          <ol className="gjg-days">
+            {days.map(({ c, g, v, date }) => (
+              <li key={c.number} id={`day-${c.number}`} className={`gjg-day${c.number === 18 ? ' is-jayanti' : ''}`}>
+                <div className="gjg-day-meta">
+                  Day {c.number}
+                  <span>
+                    {c.totalVerses} verses · {minutesEn(c.totalVerses)} min in English · {minutesSa(c.totalVerses)} min to recite
+                  </span>
+                  <span>For Jayanti: {fmtDay(date)}{c.number === 18 ? ', Gita Jayanti' : ''}</span>
+                </div>
+                <h2>
+                  Chapter {c.number}: {c.enTitle}
+                  <small>{c.enName}</small>
+                </h2>
+                <div className="sx-prose">
+                  <p>{g.line}</p>
+                </div>
+                {v && (
+                  <VerseCard
+                    className="gjg-versecard"
+                    size="compact"
+                    original={v.sanskrit}
+                    meaning={`“${v.englishTranslation}”`}
+                    source={`${c.number}.${g.verse} · ${v.speaker}`}
+                    sourceHref={verseUrl(c.number, g.verse)}
+                  />
+                )}
+                <a className="sx-btn sx-btn--link" href={chapterUrl(c.number)} data-mp-location={`read18_read_ch${c.number}`}>
+                  Read chapter {c.number} →
                 </a>
-                <a href="/gita-jayanti-18-days.ics" download className="gj-btn-ghost" data-mp-location="read18_ics">
-                  Add 3–20 Dec to my calendar
-                </a>
-              </div>
-              <p className="gjg-note">Times assume about 10 seconds a verse for the English and 15 to recite the Sanskrit.</p>
-            </div>
-            <div className="gjg-art">
-              <img src="/assets/chapter1.webp" alt="Arjuna seated in his chariot beside Krishna at Kurukshetra" fetchPriority="high" />
-            </div>
-          </div>
-        </header>
+              </li>
+            ))}
+          </ol>
+        </Section>
 
-        <section className="section">
-          <div className="wrap">
-            <div className="gjg-col">
-              <ol className="gjg-days">
-                {days.map(({ c, g, v, date }) => (
-                  <li key={c.number} id={`day-${c.number}`} className={`gjg-day${c.number === 18 ? ' is-jayanti' : ''}`}>
-                    <div className="gjg-day-meta">
-                      Day {c.number}
-                      <span>
-                        {c.totalVerses} verses · {minutesEn(c.totalVerses)} min in English · {minutesSa(c.totalVerses)} min to recite
-                      </span>
-                      <span>For Jayanti: {fmtDay(date)}{c.number === 18 ? ', Gita Jayanti' : ''}</span>
-                    </div>
-                    <h2>
-                      Chapter {c.number}: {c.enTitle}
-                      <small>{c.enName}</small>
-                    </h2>
-                    <p>{g.line}</p>
-                    {v && (
-                      <div className="gjg-verse">
-                        <div className="gjg-verse-ref">
-                          <a href={verseUrl(c.number, g.verse)} data-mp-location={`read18_verse_${c.number}_${g.verse}`}>
-                            {c.number}.{g.verse}
-                          </a>{' '}
-                          · {v.speaker}
-                        </div>
-                        <p className="gjg-verse-sa" lang="sa">{v.sanskrit}</p>
-                        <p className="gjg-verse-en">“{v.englishTranslation}”</p>
-                      </div>
-                    )}
-                    <a className="gjg-day-go" href={chapterUrl(c.number)} data-mp-location={`read18_read_ch${c.number}`}>
-                      Read chapter {c.number} →
-                    </a>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </div>
-        </section>
-
-        <section className="section section-alt">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Fewer than 18 days?</h2>
+        <Section id="fewer" tone="band" width="narrow" title="Fewer than 18 days?">
+          <div className="sx-prose">
             <p>
               The <a href="/gita-jayanti/reading-plan">Gita Jayanti reading plan</a> fits the same 700 verses into 9 days,
               3 days or the day itself, and can split them evenly from whatever day you start. If you only have one sitting,
               see <a href="/gita-jayanti/which-chapter-to-read">which chapter to read on Gita Jayanti</a>.
             </p>
           </div>
-        </section>
+        </Section>
 
-        <section className="section">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Questions about reading a chapter a day</h2>
-            <div className="gjg-faq">
-              {FAQ.map((f) => (
-                <details key={f.q}>
-                  <summary>{f.q}</summary>
-                  <p>
-                    {f.a}{' '}
-                    {f.q.startsWith('Do I need') && <a href="/gita-jayanti/which-chapter-to-read">Which chapters to pick →</a>}
-                    {f.q.startsWith('Which translation') && <a href="/blogs/best-bhagavad-gita-translation">Compare translations →</a>}
-                  </p>
-                </details>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Section id="faq" width="narrow" title="Questions about reading a chapter a day">
+          <Faq items={faqItems} ld={false} />
+        </Section>
 
-        <section className="section section-alt gjg-cta">
-          <div className="wrap gjg-col">
-            <h2 className="gjg-h2">Or one verse a day, for what you’re facing</h2>
-            <p>Tell Wisdom what’s going on and it picks a verse a day for seven days, with what each one means for you.</p>
-            <HeroPlanCTA campaign="web_read18" location="read18_create_plan" pageName="Read Gita 18 Days" />
-          </div>
-        </section>
+        <Section
+          id="your-plan"
+          tone="band"
+          width="narrow"
+          title="Or one verse a day, for what you’re facing"
+          intro="Tell Wisdom what’s going on and it picks a verse a day for seven days, with what each one means for you."
+        >
+          <Actions items={[planAction({ campaign: 'web_read18', location: 'read18_create_plan' })]} />
+          <PlanFine />
+        </Section>
 
         <JayantiRelated current="eighteen" />
       </main>

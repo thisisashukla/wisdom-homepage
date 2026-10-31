@@ -1,30 +1,29 @@
-import BlogTracker from '@/components/BlogTracker'
-import NextStep from '@/components/quotes/NextStep'
-import Shell from './Shell'
-import LineBlock from './LineBlock'
-import ScriptToggle from './ScriptToggle'
-import KeepCards from './KeepCards'
-import Hero from './Hero'
-import Diya from './Diya'
-import { Band, Faq, JsonLd, MethodEn, MethodHi, Tiles } from './Bits'
-import { NEXT_COPY } from './copy'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, ScriptToggle, Section, VerseCard } from '@/components/site'
+import type { Locale } from '@/lib/locale'
 import { DIWALI, getLine, lineView } from '@/lib/funnels/ramayana/data'
 import { PATHS, gitaHref } from '@/lib/funnels/ramayana/paths'
-import { articleLd, breadcrumbLd, faqLd } from '@/lib/funnels/ramayana/seo'
+import { articleLd } from '@/lib/funnels/ramayana/seo'
+import { lineOriginal } from '@/lib/funnels/ramayana/verse'
+import Diya from './Diya'
+import KeepCards from './KeepCards'
+import LineVerse, { Speaker } from './LineVerse'
+import { MethodEn, MethodHi } from './Method'
+import { NEXT_COPY } from './copy'
 
 const T = {
   en: {
-    crumbs: ['Wisdom', 'Ramayana', 'Diwali'],
+    crumbs: ['Ramayana', 'Diwali'],
     eyebrow: 'Diwali, 8 November',
-    facts: ['Valmiki, Yuddha Kanda', 'Tulsidas, Uttar Kand', 'Six moments, line by line'],
+    facts: ['Valmiki, Yuddha Kanda', 'Tulsidas, Uttar Kand'],
     cta: 'Read the homecoming',
     h1: 'The homecoming, as Valmiki and Tulsidas tell it',
-    promise: 'Diwali is a return. Here is the return, in the words of the two texts most families know.',
+    promise: 'Read how Ram came home to Ayodhya, the return Diwali remembers, in the words of the two texts most families know.',
     linesNote: 'Switch the original lines between Devanagari and IAST.',
     asksH: 'What it asks of you this week',
     gitaLink: (c: number, v: number) => `Read Bhagavad Gita ${c}.${v}`,
     keepH: 'A line for your Diwali messages',
-    keepLede: 'Copy it, send it on WhatsApp, or save it as an image.',
+    keepLede: 'Send it with your Diwali wishes to someone who grew up on these stories.',
     moreH: 'More from the Ramayana',
     more: [
       { href: PATHS.original, t: 'Ramayana, in the original', s: 'Film scenes checked against Valmiki and Tulsidas.' },
@@ -33,21 +32,21 @@ const T = {
     ],
     faqH: 'Questions people ask',
     pageKey: 'ramayana-diwali',
-    page: 'ramayana-diwali',
+    page: 'Ramayana Diwali',
     path: PATHS.diwali,
   },
   hi: {
-    crumbs: ['Wisdom', 'रामायण', 'दिवाली'],
+    crumbs: ['रामायण', 'दिवाली'],
     eyebrow: 'दिवाली, 8 नवंबर',
-    facts: ['वाल्मीकि, युद्धकाण्ड', 'तुलसीदास, उत्तरकाण्ड', 'छह प्रसंग, पंक्ति दर पंक्ति'],
+    facts: ['वाल्मीकि, युद्धकाण्ड', 'तुलसीदास, उत्तरकाण्ड'],
     cta: 'घर वापसी पढ़ें',
     h1: 'राम की घर वापसी, वाल्मीकि और तुलसीदास के शब्दों में',
-    promise: 'दिवाली घर लौटने का त्योहार है। यह रही वह वापसी, उन दो ग्रंथों के शब्दों में जिन्हें ज़्यादातर परिवार जानते हैं।',
+    promise: 'पढ़िए राम कैसे अयोध्या लौटे, वही वापसी जिसे दिवाली याद करती है, उन दो ग्रंथों के शब्दों में जिन्हें ज़्यादातर परिवार जानते हैं।',
     linesNote: 'मूल पंक्तियों को देवनागरी या IAST में पढ़ें।',
     asksH: 'इस हफ़्ते के लिए',
     gitaLink: (c: number, v: number) => `भगवद गीता ${c}.${v} पढ़ें`,
     keepH: 'दिवाली के संदेश के लिए एक पंक्ति',
-    keepLede: 'कॉपी करें, WhatsApp पर भेजें, या इमेज सेव करें।',
+    keepLede: 'अपनी दिवाली की शुभकामनाओं के साथ उन्हें भेजें जो ये कथाएँ सुनकर बड़े हुए।',
     moreH: 'रामायण से और',
     more: [
       { href: PATHS.hiOriginal, t: 'रामायण, मूल ग्रंथ में', s: 'फ़िल्म के दृश्य, वाल्मीकि और तुलसीदास से मिलाकर।' },
@@ -55,7 +54,7 @@ const T = {
     ],
     faqH: 'लोग पूछते हैं',
     pageKey: 'ramayana-diwali-hi',
-    page: 'ramayana-diwali-hi',
+    page: 'Ramayana Diwali HI',
     path: PATHS.hiDiwali,
   },
 }
@@ -91,107 +90,122 @@ export const DIWALI_FAQ = {
   ],
 }
 
-export default function DiwaliPage({ locale, description }: { locale: 'en' | 'hi'; description: string }) {
+export default function DiwaliPage({ locale, description }: { locale: Locale; description: string }) {
   const t = T[locale]
-  const crumbPaths = ['/', PATHS.hub, t.path]
+  const hero = lineView(getLine('rcm-7-29-4'), locale)
   return (
-    <Shell locale={locale}>
-      <BlogTracker pageName={t.page} />
+    <main>
+      <PageTracker pageName={t.page} />
       <JsonLd
-        data={[
-          breadcrumbLd(t.crumbs.map((name, i) => ({ name, path: crumbPaths[i] }))),
-          articleLd({
-            headline: t.h1,
-            description,
-            path: t.path,
-            locale,
-            citations: DIWALI.sections.flatMap((s) => s.lines.map((k) => getLine(k).ref.en)),
-            about: ['Diwali', 'Ramayana', 'Ramcharitmanas'],
-          }),
-          faqLd(DIWALI_FAQ[locale]),
-        ]}
+        data={articleLd({
+          headline: t.h1,
+          description,
+          path: t.path,
+          locale,
+          citations: DIWALI.sections.flatMap((s) => s.lines.map((k) => getLine(k).ref.en)),
+          about: ['Diwali', 'Ramayana', 'Ramcharitmanas'],
+        })}
       />
-      <Hero
+      <PageHero
         locale={locale}
-        warm
-        crumbLabel={locale === 'hi' ? 'पथ' : 'Breadcrumb'}
-        crumbs={[{ name: t.crumbs[0], href: '/' }, { name: t.crumbs[1], href: PATHS.hub }, { name: t.crumbs[2] }]}
+        lang={locale}
+        crumbs={[
+          { label: t.crumbs[0], href: PATHS.hub },
+          { label: t.crumbs[1], href: t.path },
+        ]}
         eyebrow={t.eyebrow}
-        h1={t.h1}
+        title={t.h1}
         sub={t.promise}
         facts={t.facts}
-        cta={{ href: `#dw-${DIWALI.sections[0].id}`, label: t.cta, loc: 'hero_homecoming' }}
-        lines={[lineView(getLine('rcm-7-29-4'), locale)]}
+        actions={[{ href: `#dw-${DIWALI.sections[0].id}`, label: t.cta, location: 'hero_homecoming' }]}
+        visual={
+          <div className="rl-hero-diwali">
+            <VerseCard size="hero" reveal locale={locale} toggle {...lineOriginal(hero)} label={<Speaker line={hero} locale={locale} />} source={hero.ref} />
+            <div className="rl-hero-row" aria-hidden="true">
+              {[0, 1, 2, 3, 4].map((k) => (
+                <span key={k} style={{ ['--k' as string]: k }}>
+                  <Diya lamp="plain" state="lit" size={k === 2 ? 44 : 34} />
+                </span>
+              ))}
+            </div>
+          </div>
+        }
       />
 
-      <Band className="rl-introsec">
-        <p className="rl-intro rv" id="quick-answer">
+      <Section spacing="tight" rv={false}>
+        <p className="sx-prose rv" id="quick-answer">
           {DIWALI.quick[locale]}
         </p>
-      </Band>
+      </Section>
 
-      <Band tone="warm">
+      <Section tone="band" lang={locale}>
         <div className="rl-scriptbar rv">
           <p>{t.linesNote}</p>
-          <ScriptToggle locale={locale} page={t.page} />
+          <ScriptToggle locale={locale} size="compact" />
         </div>
-        <div>
-          <ol className="rl-thread">
-            {DIWALI.sections.map((sec) => (
-              <li key={sec.id} className="rv">
-                <span className="rl-node" aria-hidden="true">
-                  <Diya lamp="plain" state="lit" size={30} />
-                </span>
-                <section className="rl-dw-card" aria-labelledby={`dw-${sec.id}`}>
-                  <h2 className="rl-h3" id={`dw-${sec.id}`}>
-                    {sec.heading[locale]}
-                  </h2>
-                  <p className="rl-p">{sec.body[locale]}</p>
+        <ol className="rl-thread">
+          {DIWALI.sections.map((sec) => (
+            <li key={sec.id} className="rv">
+              <span className="rl-node" aria-hidden="true">
+                <Diya lamp="plain" state="lit" size={30} />
+              </span>
+              <section className="rl-dw-card" aria-labelledby={`dw-${sec.id}`}>
+                <h2 className="sx-h3 rl-dw-h" id={`dw-${sec.id}`}>
+                  {sec.heading[locale]}
+                </h2>
+                <p className="sx-prose rl-dw-p">{sec.body[locale]}</p>
+                <div className="rl-dw-lines">
                   {sec.lines.map((k) => (
-                    <div key={k} className="rl-verse">
-                      <LineBlock line={lineView(getLine(k), locale)} locale={locale} />
-                    </div>
+                    <LineVerse key={k} line={lineView(getLine(k), locale)} locale={locale} />
                   ))}
-                </section>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </Band>
+                </div>
+              </section>
+            </li>
+          ))}
+        </ol>
+      </Section>
 
-      <Band id="dw-asks" title={t.asksH}>
+      <Section id="dw-asks" title={t.asksH} lang={locale}>
         <div className="rl-asks rv">
           <p>{DIWALI.asks[locale]}</p>
         </div>
-        <div className="rl-bridge rv">
-          <p>{DIWALI.gita.note[locale]}</p>
-          <a href={gitaHref(DIWALI.gita.chapter, DIWALI.gita.verse, locale)} data-mp-location="gita_bridge">
-            {t.gitaLink(DIWALI.gita.chapter, DIWALI.gita.verse)}
-          </a>
-        </div>
-      </Band>
-
-      <Band id="dw-keep" title={t.keepH} lede={t.keepLede} tone="warm" wide>
-        <div className="rv">
-          <KeepCards ids={['ram-hundred-years', 'ram-all-things-part']} locale={locale} page={t.page} pageKey={t.pageKey} path={t.path} />
-        </div>
-      </Band>
-
-      <Band>
-        <div className="rl-final rv">
-          <NextStep funnel="ramayana" locale={locale} pageName={t.page} pageKey={t.pageKey} placement="end" copy={NEXT_COPY[locale]} />
-        </div>
-      </Band>
-
-      <Band id="dw-more" title={t.moreH} tone="alt" wide>
-        <Tiles
-          items={t.more.map((m) => ({ href: m.href, t: m.t, s: m.s, lang: 'hi' in m ? (m.hi ? ('hi' as const) : ('en' as const)) : undefined }))}
-          loc={(href) => `more_${href.replace(/\W+/g, '_')}`}
+        <GitaBridge
+          href={gitaHref(DIWALI.gita.chapter, DIWALI.gita.verse, locale)}
+          label={t.gitaLink(DIWALI.gita.chapter, DIWALI.gita.verse)}
+          why={DIWALI.gita.note[locale]}
+          location="gita_bridge"
+          locale={locale}
+          className="rl-gap rv"
         />
-      </Band>
+      </Section>
 
-      <Faq heading={t.faqH} qas={DIWALI_FAQ[locale]} id="dw-faq" />
+      <Section id="dw-keep" tone="band" title={t.keepH} intro={t.keepLede} lang={locale}>
+        <KeepCards ids={['ram-hundred-years', 'ram-all-things-part']} locale={locale} pageKey={t.pageKey} path={t.path} />
+      </Section>
+
+      <Section>
+        <NextStep locale={locale} pageKey={t.pageKey} placement="end" copy={NEXT_COPY[locale]} />
+      </Section>
+
+      <Section id="dw-more" tone="band" title={t.moreH} lang={locale}>
+        <LinkCards
+          items={t.more.map((m) => {
+            const lang = 'hi' in m ? (m.hi ? 'hi' : 'en') : undefined
+            return {
+              href: m.href,
+              title: lang ? <span lang={lang}>{m.t}</span> : m.t,
+              body: m.s,
+              hrefLang: lang,
+              location: `more_${m.href.replace(/\W+/g, '_')}`,
+            }
+          })}
+        />
+      </Section>
+
+      <Section id="dw-faq" title={t.faqH} lang={locale}>
+        <Faq items={DIWALI_FAQ[locale]} locale={locale} />
+      </Section>
       {locale === 'hi' ? <MethodHi film={false} /> : <MethodEn film={false} />}
-    </Shell>
+    </main>
   )
 }

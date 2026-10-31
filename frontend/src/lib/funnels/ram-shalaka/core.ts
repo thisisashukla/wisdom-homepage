@@ -3,7 +3,8 @@
  * The ninth-square rule here is the one scripts/funnels/ram-shalaka/check.mjs asserts.
  */
 
-export type RsLocale = 'hi' | 'en'
+import type { Locale } from '@/lib/locale'
+
 export type RsL10n = { hi: string; en: string }
 export type RsSign = 'shubh' | 'sanshay' | 'ashubh'
 
@@ -31,7 +32,7 @@ export type RsLine = {
   reviewed: boolean
 }
 
-/** One line as the ritual needs it: a single locale, so the client payload stays small. */
+/** One line as the ritual (and its share card) needs it: a single locale, so the client payload stays small. */
 export type RsRitualLine = {
   n: number
   k: number
@@ -108,5 +109,4 @@ export function needsExpertNote(question: string): boolean {
 }
 
 export const lineHref = (slug: string): string => `/hi/ram-shalaka/${slug}`
-export const toolHref = (locale: RsLocale): string => (locale === 'hi' ? '/hi/ram-shalaka' : '/ram-shalaka')
-export const planHref = (n: number): string => `/start?ref=rs-${n}`
+export const toolHref = (locale: Locale): string => (locale === 'hi' ? '/hi/ram-shalaka' : '/ram-shalaka')

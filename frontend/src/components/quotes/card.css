@@ -1,40 +1,33 @@
-/* Shared quote card, next step, sheet and toast (src/components/quotes).
-   Imported by QuoteCard, NextStep and NextStepSheet, so a route that renders
-   only a hero card gets only this file. Page layout lives in quotes.css.
-   Calm editorial look: maroon night, diya gold as the only accent, cream text.
-   Mobile first (360 to 412px). Motion: entrance cubic-bezier(0.4,0,0.2,1),
-   feedback cubic-bezier(0.2,0,0,1); 160ms feedback, 500ms entrances, 900ms draws.
-   Only elements created by a user action animate, so everything rendered on the
-   server is visible without JS. Reduced motion: opacity only. */
+/* Quote card extras, the share bar (ShareActions), next step, sheet and toast (src/components/quotes).
+   The verse itself is the kit's VerseCard (components/site); this file adds only what the kit does not:
+   the share-bar buttons and save menu, the More body, the bio badge, the next step, the sheet and the toast.
+   Built on styles/tokens.css. Motion: transform and opacity only, entrances on --ease, feedback on
+   --ease-out. Only elements created by a user action animate. Reduced motion: opacity only. */
 
-:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) {
-  --q-night: #120505;
-  --q-leaf: #1b0908;
-  --q-leaf-2: #210c0a;
-  --q-raise: #2a1210;
-  --q-line: rgba(200, 136, 30, 0.2);
-  --q-line-strong: rgba(200, 136, 30, 0.42);
-  --q-gold: #c8881e;
-  --q-gold-hi: #f2c766;
-  --q-cream: #f5e8cc;
-  --q-cream-2: rgba(245, 232, 204, 0.78);
-  --q-cream-3: rgba(245, 232, 204, 0.62);
-  --q-display: var(--font-playfair), 'Playfair Display', var(--font-noto-devanagari), Georgia, serif;
-  --q-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
-  --q-deva: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
-  --q-sa: var(--q-tiro), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), 'Noto Sans Devanagari', serif;
-  --q-in: cubic-bezier(0.4, 0, 0.2, 1);
-  --q-fb: cubic-bezier(0.2, 0, 0, 1);
+:root {
+  /* Legacy aliases for funnel CSS that still reads --q-*. Every value is a house token
+     (styles/tokens.css); new CSS uses the tokens directly. */
+  --q-night: var(--bg);
+  --q-leaf: var(--bg-leaf);
+  --q-leaf-2: var(--bg-leaf);
+  --q-raise: var(--bg-raise);
+  --q-line: var(--border);
+  --q-line-strong: var(--border-strong);
+  --q-gold: var(--gold);
+  --q-gold-hi: var(--gold-light);
+  --q-cream: var(--text);
+  --q-cream-2: var(--text-dim);
+  --q-cream-3: var(--text-dim);
+  --q-display: var(--font-display);
+  --q-ui: var(--font-ui);
+  --q-deva: var(--font-deva-ui);
+  --q-sa: var(--font-sa);
+  --q-in: var(--ease);
+  --q-fb: var(--ease-out);
 }
 
-:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *,
-:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *::before,
-:where(.qp, .qc, .qns, .qsheet-wrap, .qbar, .qlf, .qchips, .qfakes, .qc-toast) *::after {
-  box-sizing: border-box;
-}
-
-:where(.qp, .qc, .qns, .qsheet-wrap, .qbar) :focus-visible {
-  outline: 2px solid var(--q-gold-hi);
+:where(.qp, .qc, .qc-card, .qns, .qsheet-wrap, .qbar) :focus-visible {
+  outline: 2px solid var(--gold-light);
   outline-offset: 2px;
   border-radius: 8px;
 }
@@ -67,42 +60,51 @@
 .qi-share { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 15V4'/%3E%3Cpath d='M8 8l4-4 4 4'/%3E%3Cpath d='M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6'/%3E%3C/svg%3E"); }
 .qi-close { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E"); }
 
-/* ── Quote card ───────────────────────────────────────────────────────── */
+/* ── Quote card (QuoteCard = VerseCard + ShareActions) ───────────────── */
 
-.qc {
-  position: relative;
-  background: var(--q-leaf);
-  border: 1px solid var(--q-line);
-  border-radius: 16px;
-  padding: 22px 20px 4px;
-  color: var(--q-cream);
-  font-family: var(--q-ui);
-  scroll-margin-top: 80px;
-}
-.qc:lang(hi) { font-family: var(--q-deva); }
-:where(.qc) p { margin: 0; }
-.qc:target { border-color: var(--q-line-strong); }
+.qc-card { scroll-margin-top: 80px; }
+.qc-card:target { border-color: var(--border-strong); }
+.qc-card .qc-actions { margin-top: 0; }
+.qc-card .qc-foot,
+.qc-card .qc-more-body { text-align: left; }
 
 .qc-badge {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 12px;
-  margin-bottom: 12px;
   font-size: 13px;
-  color: var(--q-gold-hi);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--gold-light);
 }
-.qc-badge-n { color: var(--q-cream-3); }
+.qc-badge-n { color: var(--text-dim); }
 
+/* Legacy text block: still used by funnel line cards that are not on VerseCard yet
+   (mahabharata LineCard, FamilyTree, WhereIsGita; sayings VivCard). Delete once they move. */
+.qc {
+  position: relative;
+  background: var(--bg-leaf);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 20px 4px;
+  color: var(--text);
+  font-family: var(--font-ui);
+  scroll-margin-top: 80px;
+}
+.qc:lang(hi) { font-family: var(--font-deva-ui); }
+:where(.qc) p { margin: 0; }
+.qc:target { border-color: var(--border-strong); }
+.qc .qc-badge { margin-bottom: 12px; }
 .qc-sa {
-  font-family: var(--q-sa);
+  font-family: var(--font-sa);
   font-weight: 400;
   font-size: clamp(23px, 6.3vw, 28px);
   line-height: 1.74;
-  color: var(--q-gold-hi);
+  color: var(--gold-light);
   overflow-wrap: break-word;
 }
 .qc-pada { display: block; }
-/* Balanced lines, so no word like कदाचन sits alone; pretty where balance is missing. */
 .qc-sa,
 .qc-iast,
 .qc-meaning {
@@ -111,21 +113,20 @@
 }
 .qc-iast {
   margin-top: 8px;
-  font-family: var(--q-sa);
+  font-family: var(--font-sa);
   font-style: italic;
   font-size: 14.5px;
   line-height: 1.6;
-  color: var(--q-cream-3);
+  color: var(--text-dim);
   overflow-wrap: break-word;
 }
 .qc-meaning {
   margin-top: 16px;
   font-size: 17px;
   line-height: 1.6;
-  color: var(--q-cream);
+  color: var(--text);
 }
-.qc-meaning:lang(hi) { font-family: var(--q-deva); font-size: 17.5px; line-height: 1.75; }
-
+.qc-meaning:lang(hi) { font-family: var(--font-deva-ui); font-size: 17.5px; line-height: 1.75; }
 .qc-source { margin-top: 14px; }
 .qc-chip {
   position: relative;
@@ -133,23 +134,28 @@
   align-items: center;
   min-height: 30px;
   padding: 4px 12px;
-  border: 1px solid var(--q-line);
+  border: 1px solid var(--border);
   border-radius: 999px;
   font-size: 12.5px;
   letter-spacing: 0.03em;
   line-height: 1.35;
-  color: var(--q-gold);
+  color: var(--gold);
   text-decoration: none;
 }
 a.qc-chip::after { content: ''; position: absolute; inset: -8px -4px; }
-a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
+a.qc-chip:hover { color: var(--gold-light); border-color: var(--border-strong); }
+@media (min-width: 720px) {
+  .qc { padding: 28px 30px 6px; }
+}
+
+/* ── Share bar (ShareActions) ─────────────────────────────────────────── */
 
 .qc-actions {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
   margin: 18px -10px 0;
   padding-top: 4px;
-  border-top: 1px solid var(--q-line);
+  border-top: 1px solid var(--border);
 }
 .qc-act {
   display: flex;
@@ -163,7 +169,7 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   background: none;
   border: 0;
   border-radius: 10px;
-  color: var(--q-cream-2);
+  color: var(--text-dim);
   font: inherit;
   font-size: 12.5px;
   line-height: 1.2;
@@ -171,16 +177,16 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: color 160ms var(--q-fb), background-color 160ms var(--q-fb);
+  transition: color var(--t-quick) var(--ease-out), background-color var(--t-quick) var(--ease-out);
 }
-.qc-act:hover { color: var(--q-gold-hi); }
+.qc-act:hover { color: var(--gold-light); }
 .qc-act:active { background: rgba(200, 136, 30, 0.1); }
 .qc-act[data-on],
-.qc-act[aria-expanded='true'] { color: var(--q-gold-hi); }
+.qc-act[aria-expanded='true'] { color: var(--gold-light); }
 .qc-ico { position: relative; width: 18px; height: 18px; display: block; }
-.qc-ico > .qi { position: absolute; inset: 0; transition: opacity 160ms var(--q-fb), transform 160ms var(--q-fb); }
+.qc-ico > .qi { position: absolute; inset: 0; transition: opacity var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out); }
 .qc-ico > .qi-check { opacity: 0; transform: scale(0.8); }
-.qc-copy[data-done] { color: var(--q-gold-hi); }
+.qc-copy[data-done] { color: var(--gold-light); }
 .qc-copy[data-done] .qi-copy { opacity: 0; transform: scale(0.8); }
 .qc-copy[data-done] .qi-check { opacity: 1; transform: none; }
 
@@ -193,11 +199,11 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   width: 208px;
   margin-left: -104px;
   padding: 6px;
-  background: var(--q-raise);
-  border: 1px solid var(--q-line-strong);
+  background: var(--bg-raise);
+  border: 1px solid var(--border-strong);
   border-radius: 12px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
-  animation: q-rise 160ms var(--q-fb) backwards;
+  animation: q-rise var(--t-quick) var(--ease-out) backwards;
 }
 .qc-menu a {
   display: flex;
@@ -207,11 +213,11 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   padding: 8px 12px;
   border-radius: 8px;
   text-decoration: none;
-  color: var(--q-cream);
+  color: var(--text);
 }
 .qc-menu a:hover { background: rgba(200, 136, 30, 0.12); }
 .qc-menu strong { font-size: 15px; font-weight: 500; }
-.qc-menu span { font-size: 12.5px; color: var(--q-cream-3); }
+.qc-menu span { font-size: 12.5px; color: var(--text-dim); }
 
 .qc-foot {
   display: flex;
@@ -220,7 +226,6 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   gap: 12px;
   min-height: 48px;
 }
-.qc-foot-end { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; }
 .qc-more,
 .qc-link {
   display: inline-flex;
@@ -230,34 +235,34 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   padding: 0 4px;
   background: none;
   border: 0;
-  color: var(--q-cream-2);
+  color: var(--text-dim);
   font: inherit;
   font-size: 14px;
   text-decoration: underline;
-  text-decoration-color: var(--q-line-strong);
+  text-decoration-color: var(--border-strong);
   text-underline-offset: 4px;
   cursor: pointer;
 }
 .qc-link { text-decoration: none; }
 .qc-more:hover,
-.qc-link:hover { color: var(--q-gold-hi); }
-.qc-another { color: var(--q-gold-hi); text-decoration: underline; text-decoration-color: var(--q-line-strong); text-underline-offset: 4px; }
+.qc-link:hover { color: var(--gold-light); }
+.qc-another { color: var(--gold-light); text-decoration: underline; text-decoration-color: var(--border-strong); text-underline-offset: 4px; }
 
 .qc-more-body {
-  border-top: 1px solid var(--q-line);
+  border-top: 1px solid var(--border);
   padding: 14px 0 18px;
   display: grid;
   gap: 16px;
-  animation: q-rise 500ms var(--q-in) backwards;
+  animation: q-rise var(--t-std) var(--ease) backwards;
 }
-.qc-label { font-size: 13px; font-weight: 500; color: var(--q-cream-3); margin-bottom: 6px; }
-.qc-context p:not(.qc-label) { font-size: 15.5px; line-height: 1.65; color: var(--q-cream-2); }
+.qc-label { font-size: 13px; font-weight: 500; color: var(--text-dim); margin-bottom: 6px; }
+.qc-context p:not(.qc-label) { font-size: 15.5px; line-height: 1.65; color: var(--text-dim); }
 .qc-foryou dl { margin: 0; display: grid; gap: 12px; }
-.qc-foryou dt { font-size: 13.5px; font-weight: 500; color: var(--q-gold); }
-.qc-foryou dd { margin: 2px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--q-cream-2); }
+.qc-foryou dt { font-size: 13.5px; font-weight: 500; color: var(--gold); }
+.qc-foryou dd { margin: 2px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--text-dim); }
 
 .qc-toast {
-  font-family: var(--q-ui);
+  font-family: var(--font-ui);
   position: fixed;
   z-index: 1100;
   left: 50%;
@@ -265,8 +270,8 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   max-width: calc(100vw - 32px);
   padding: 10px 18px;
   border-radius: 999px;
-  background: var(--q-cream);
-  color: var(--q-night);
+  background: var(--text);
+  color: var(--bg);
   font-size: 14.5px;
   font-weight: 500;
   line-height: 1.35;
@@ -274,55 +279,44 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   pointer-events: none;
   opacity: 0;
   transform: translate(-50%, 8px);
-  transition: opacity 160ms var(--q-fb), transform 160ms var(--q-fb);
+  transition: opacity var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out);
 }
 .qc-toast:empty { visibility: hidden; }
 .qc-toast[data-show] { opacity: 1; transform: translate(-50%, 0); }
-
-/* Hero: verse page top. */
-.qc-hero { padding: 28px 22px 6px; border-radius: 18px; }
-.qc-hero .qc-sa { font-size: clamp(26px, 7.6vw, 38px); line-height: 1.7; }
-.qc-hero .qc-iast { font-size: 15.5px; }
-.qc-hero .qc-meaning { font-size: 18.5px; }
-.qc-hero .qc-meaning:lang(hi) { font-size: 19px; }
-
-/* Compact: under a line Krishna never said. */
-.qc-compact { padding: 18px 16px 6px; }
-.qc-compact .qc-sa { font-size: clamp(20px, 5.4vw, 23px); }
-.qc-compact .qc-meaning { font-size: 16px; }
-.qc-compact .qc-actions { margin-top: 14px; }
 
 /* ── Next step ────────────────────────────────────────────────────────── */
 
 .qns { display: grid; gap: 14px; justify-items: start; }
 :where(.qns) p { margin: 0; }
 .qns-line {
-  font-family: var(--q-display);
+  font-family: var(--font-display);
   font-size: 19px;
   line-height: 1.45;
-  color: var(--q-cream);
+  color: var(--text);
   max-width: 28em;
 }
-.qns-line:lang(hi) { font-family: var(--q-deva); font-size: 18px; line-height: 1.65; }
-.qns-btn {
+.qns-line:lang(hi) { font-family: var(--font-deva-ui); font-size: 18px; line-height: 1.65; }
+/* The NextStep button is the kit's primary button (.sx-btn); .qns-btn alone is the legacy look
+   for funnel copies that still render their own (sayings FxNextStep, SourceDrawer). */
+.qns-btn:not(.sx-btn) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 48px;
   padding: 0 24px;
   border-radius: 999px;
-  background: var(--q-gold);
+  background: var(--gold);
   color: #1a0606;
-  font-family: var(--q-ui);
+  font-family: var(--font-ui);
   font-size: 15.5px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 160ms var(--q-fb), transform 160ms var(--q-fb);
+  transition: background-color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out);
 }
-.qns-btn:lang(hi) { font-family: var(--q-deva); }
-.qns-btn:hover { background: #d99a32; }
-.qns-btn:active { transform: scale(0.98); }
-.qns-btn:focus-visible { outline: 2px solid var(--q-cream); outline-offset: 3px; }
+.qns-btn:lang(hi) { font-family: var(--font-deva-ui); }
+.qns-btn:not(.sx-btn):hover { background: #d49424; }
+.qns-btn:not(.sx-btn):active { transform: scale(0.98); }
+.qns-btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
 
 /* ── Sheet ────────────────────────────────────────────────────────────── */
 
@@ -333,15 +327,15 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  font-family: var(--q-ui);
-  color: var(--q-cream);
+  font-family: var(--font-ui);
+  color: var(--text);
 }
-.qsheet-wrap:lang(hi) { font-family: var(--q-deva); }
+.qsheet-wrap:lang(hi) { font-family: var(--font-deva-ui); }
 .qsheet-backdrop {
   position: absolute;
   inset: 0;
   background: rgba(8, 2, 2, 0.66);
-  animation: q-fade 260ms var(--q-in) backwards;
+  animation: q-fade 260ms var(--ease) backwards;
 }
 .qsheet {
   position: relative;
@@ -349,28 +343,28 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   max-width: 520px;
   max-height: 90vh;
   overflow-y: auto;
-  background: var(--q-leaf-2);
-  border: 1px solid var(--q-line-strong);
+  background: var(--bg-leaf);
+  border: 1px solid var(--border-strong);
   border-bottom: 0;
   border-radius: 20px 20px 0 0;
   padding: 26px 22px calc(14px + env(safe-area-inset-bottom, 0px));
-  animation: q-sheet 260ms var(--q-in) backwards;
+  animation: q-sheet 260ms var(--ease) backwards;
 }
 :where(.qsheet) p { margin: 0; }
 .qsheet-title {
-  font-family: var(--q-display);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 23px;
   line-height: 1.3;
   padding-right: 44px;
   margin-bottom: 14px;
 }
-.qsheet-title:lang(hi) { font-family: var(--q-deva); font-weight: 500; line-height: 1.5; }
+.qsheet-title:lang(hi) { font-family: var(--font-deva-ui); font-weight: 500; line-height: 1.5; }
 .qsheet-x,
 .qsheet-later {
   background: none;
   border: 0;
-  color: var(--q-cream-2);
+  color: var(--text-dim);
   font: inherit;
   cursor: pointer;
 }
@@ -385,16 +379,12 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   border-radius: 999px;
 }
 .qsheet-x:hover,
-.qsheet-later:hover { color: var(--q-cream); }
+.qsheet-later:hover { color: var(--text); }
 .qsheet-later { display: block; min-height: 44px; margin-top: 8px; padding: 0 4px; font-size: 14.5px; }
 @media (min-width: 700px) {
-  .qsheet { border-radius: 20px; border-bottom: 1px solid var(--q-line-strong); margin-bottom: 28px; }
+  .qsheet { border-radius: 20px; border-bottom: 1px solid var(--border-strong); margin-bottom: 28px; }
 }
 
-
-@media (min-width: 720px) {
-  .qc { padding: 28px 30px 6px; }
-}
 
 /* ── Reduced motion: opacity only, no movement ────────────────────────── */
 
@@ -407,7 +397,7 @@ a.qc-chip:hover { color: var(--q-gold-hi); border-color: var(--q-line-strong); }
   .qc-toast,
   .qc-toast[data-show] { transform: translate(-50%, 0); }
   .qc-ico > .qi { transform: none !important; }
-  .qns-btn:active { transform: none; }
+  .qns-btn:not(.sx-btn):active { transform: none; }
 }
 
 @media (forced-colors: active) {

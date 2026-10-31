@@ -1,8 +1,8 @@
 /**
- * Quote page template (server). Renders one QuotePageConfig: header, moment
- * chips, sections of QuoteCards with the LineForYou hook after the 3rd card,
- * "Lines Krishna never said", the daily line, extra text, FAQ, related links,
- * LineBar, and JSON-LD. Nav and footer come from the route layouts.
+ * Quote page template (server). Renders one QuotePageConfig on the site kit: PageHero (crumbs,
+ * eyebrow, H1, promise, moment chips, the script switch), a Section per moment with QuoteCards and
+ * the LineForYou hook after the 3rd card, "Lines Krishna never said", the daily line, extra text,
+ * Faq, related LinkCards, LineBar, and JSON-LD. Nav and footer come from the route layouts.
  */
 
 import type { Metadata } from 'next'
@@ -22,6 +22,12 @@ import {
   type Quote,
   type QuotePageConfig,
 } from '@/lib/quotes'
+import PageHero from '@/components/site/PageHero'
+import Section from '@/components/site/Section'
+import Faq from '@/components/site/Faq'
+import LinkCards from '@/components/site/LinkCards'
+import JsonLd from '@/components/site/JsonLd'
+import type { Crumb } from '@/components/site/Breadcrumbs'
 import QuoteCard from './QuoteCard'
 import MomentChips from './MomentChips'
 import LineForYou from './LineForYou'
@@ -36,14 +42,12 @@ const HOOK_AFTER = 3
 
 const T = {
   en: {
-    crumbs: 'Breadcrumb',
     eyebrow: (n: number, when: string) => `${n} lines, each with its Sanskrit. Updated ${when}.`,
     fakes: 'Lines Krishna never said',
     faq: 'Questions people ask',
     related: 'Read next',
   },
   hi: {
-    crumbs: 'पेज का रास्ता',
     eyebrow: (n: number, when: string) => `${n} श्लोक, हर एक मूल संस्कृत के साथ। ${when} में अपडेट।`,
     fakes: 'जो बातें कृष्ण ने कभी नहीं कहीं',
     faq: 'लोग अक्सर पूछते हैं',
@@ -61,8 +65,6 @@ function monthYear(iso: string, locale: 'en' | 'hi'): string {
   }
 }
 
-const jsonLd = (data: unknown) => ({ __html: JSON.stringify(data).replace(/</g, '\\u003c') })
-
 type Placed = { quote: Quote; domId: string; position: number }
 type SectionView = {
   key: string
@@ -75,7 +77,7 @@ type SectionView = {
 }
 
 export default function QuotePage({ config }: { config: QuotePageConfig }) {
-  const { locale, pageName } = config
+  const { locale } = config
   const t = T[locale]
   const bioPage = /bio/.test(config.key)
 
@@ -152,50 +154,37 @@ export default function QuotePage({ config }: { config: QuotePageConfig }) {
   const present = new Set(sections.map((s) => s.moment))
   const chips = config.chips.filter((c) => c.href || present.has(c.moment))
 
-  // ── JSON-LD ──
+  // ── JSON-LD ── (BreadcrumbList comes from PageHero, FAQPage from Faq)
   const pageUrl = absUrl(config.path)
-  // Items without href are skipped, except the last one (this page).
-  const crumbs = config.breadcrumb
+  // Breadcrumbs: Home is added by the kit (its JSON-LD name stays "Wisdom"). Items without href are
+  // skipped, except the last one (this page).
+  const crumbs: Crumb[] = config.breadcrumb
     .map((b, i) => ({ ...b, href: b.href ?? (i === config.breadcrumb.length - 1 ? config.path : undefined) }))
     .filter((b): b is { label: string; href: string } => Boolean(b.href))
-    .map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.label, item: absUrl(b.href) }))
-  const ld: unknown[] = [
-    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'ItemList',
-      name: config.h1,
-      url: pageUrl,
-      numberOfItems: uniqueQuotes.length,
-      // Kept lean on purpose: everything here ships twice (HTML and RSC payload).
-      itemListElement: uniqueQuotes.map((q, i) => {
-        const who = speakerName(q)
-        return {
-          '@type': 'ListItem',
-          position: i + 1,
-          item: {
-            '@type': 'Quotation',
-            url: `${pageUrl}#${q.id}`,
-            text: q.meaning[locale],
-            inLanguage: locale,
-            ...(who ? { spokenByCharacter: { '@type': 'Person', name: who } } : {}),
-            isPartOf: { '@type': 'Book', name: workName(q) },
-            image: absUrl(cardImageUrl(q.id, { format: 'post', lang: locale, v: q.cardV })),
-          },
-        }
-      }),
-    },
-  ]
-  if (config.faq.length) {
-    ld.push({
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: config.faq.map((f) => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
-      })),
-    })
+    .filter((b, i) => !(i === 0 && b.href === '/'))
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: config.h1,
+    url: pageUrl,
+    numberOfItems: uniqueQuotes.length,
+    // Kept lean on purpose: everything here ships twice (HTML and RSC payload).
+    itemListElement: uniqueQuotes.map((q, i) => {
+      const who = speakerName(q)
+      return {
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'Quotation',
+          url: `${pageUrl}#${q.id}`,
+          text: q.meaning[locale],
+          inLanguage: locale,
+          ...(who ? { spokenByCharacter: { '@type': 'Person', name: who } } : {}),
+          isPartOf: { '@type': 'Book', name: workName(q) },
+          image: absUrl(cardImageUrl(q.id, { format: 'post', lang: locale, v: q.cardV })),
+        },
+      }
+    }),
   }
 
   const sectionIds = new Set<string>()
@@ -212,7 +201,6 @@ export default function QuotePage({ config }: { config: QuotePageConfig }) {
       <QuoteCard
         quote={view(p.quote)}
         locale={locale}
-        pageName={pageName}
         pageKey={config.key}
         moment={sec.moment}
         position={p.position}
@@ -225,73 +213,60 @@ export default function QuotePage({ config }: { config: QuotePageConfig }) {
     </div>
   )
 
+  // Sections alternate grounds; the ones after the moment sections continue the rhythm.
+  let band = false
+  const tone = () => {
+    band = !band
+    return band ? ('band' as const) : ('default' as const)
+  }
+
   return (
-    <main className="qp" lang={locale} data-qp-root="" data-page={config.key}>
-      {ld.map((d, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={jsonLd(d)} />
+    <main className="qp-page" lang={locale} data-qp-root="" data-page={config.key}>
+      <JsonLd data={itemList} />
+
+      <PageHero
+        locale={locale}
+        crumbs={crumbs}
+        eyebrow={t.eyebrow(uniqueQuotes.length, monthYear(config.updated, locale))}
+        title={config.h1}
+        sub={config.promise}
+        scriptToggle
+        lang={locale}
+        below={<MomentChips chips={chips} locale={locale} />}
+      />
+
+      {sections.map((sec) => (
+        <Section
+          key={sec.key}
+          id={sectionId(sec.moment)}
+          title={sec.heading}
+          intro={sec.intro}
+          tone={tone()}
+          width="narrow"
+          spacing="tight"
+          className={`qp-moment qp-m-${sec.moment}${sec.hasHook ? ' qp-has-hook' : ''}`}
+        >
+          <div className="qp-cards">
+            {sec.items.map((it) =>
+              it === 'hook' ? (
+                <div key="hook" className="qp-hook-slot">
+                  <LineForYou
+                    feelings={feelingViews}
+                    quotes={hookMap}
+                    question={config.hook.question}
+                    preset={config.hook.preset}
+                    locale={locale}
+                    pageKey={config.key}
+                    audio={hookAudio}
+                  />
+                </div>
+              ) : (
+                renderCard(it, sec)
+              ),
+            )}
+          </div>
+        </Section>
       ))}
-
-      <header className="qp-head">
-        {config.breadcrumb.length > 0 && (
-          <nav className="qp-crumbs" aria-label={t.crumbs}>
-            <ol>
-              {config.breadcrumb.map((b, i) => (
-                <li key={i}>
-                  {b.href && i < config.breadcrumb.length - 1 ? (
-                    <a href={b.href}>{b.label}</a>
-                  ) : (
-                    <span aria-current={i === config.breadcrumb.length - 1 ? 'page' : undefined}>{b.label}</span>
-                  )}
-                </li>
-              ))}
-            </ol>
-          </nav>
-        )}
-        <p className="qp-eyebrow">{t.eyebrow(uniqueQuotes.length, monthYear(config.updated, locale))}</p>
-        <h1 className="qp-h1">{config.h1}</h1>
-        <p className="qp-promise">{config.promise}</p>
-        <MomentChips chips={chips} locale={locale} pageName={pageName} />
-      </header>
-
-      <div className="qp-sections">
-        {sections.map((sec) => (
-          <section
-            key={sec.key}
-            id={sectionId(sec.moment)}
-            className="qp-section"
-            data-moment={sec.moment}
-            data-has-hook={sec.hasHook ? '' : undefined}
-            aria-labelledby={`h-${sec.key}`}
-          >
-            <div className="qp-section-head">
-              <h2 id={`h-${sec.key}`} className="qp-h2">
-                {sec.heading}
-              </h2>
-              {sec.intro && <p className="qp-intro">{sec.intro}</p>}
-            </div>
-            <div className="qp-cards">
-              {sec.items.map((it) =>
-                it === 'hook' ? (
-                  <div key="hook" className="qp-hook-slot">
-                    <LineForYou
-                      feelings={feelingViews}
-                      quotes={hookMap}
-                      question={config.hook.question}
-                      preset={config.hook.preset}
-                      locale={locale}
-                      pageName={pageName}
-                      pageKey={config.key}
-                      audio={hookAudio}
-                    />
-                  </div>
-                ) : (
-                  renderCard(it, sec)
-                ),
-              )}
-            </div>
-          </section>
-        ))}
-      </div>
 
       {fakes.length > 0 && (
         <FakeQuotes
@@ -299,67 +274,46 @@ export default function QuotePage({ config }: { config: QuotePageConfig }) {
           quotes={fakeMap}
           locale={locale}
           heading={config.fakesHeading ?? t.fakes}
-          pageName={pageName}
           pageKey={config.key}
           audio={audio}
           usedIds={usedIds}
+          tone={tone()}
         />
       )}
 
-      <section className="qp-daily" aria-labelledby="daily-h">
-        <h2 id="daily-h" className="qp-h2">
-          {config.dailyLine.heading}
-        </h2>
-        <p className="qp-intro">{config.dailyLine.sub}</p>
-        <NextStep locale={locale} pageName={pageName} pageKey={config.key} placement="daily" />
-      </section>
+      <Section id="daily" title={config.dailyLine.heading} intro={config.dailyLine.sub} tone={tone()} width="narrow">
+        <NextStep locale={locale} pageKey={config.key} placement="daily" />
+      </Section>
 
       {config.extraSections?.map((x, i) => (
-        <section key={i} className="qp-extra" aria-labelledby={`x-${i}`}>
-          <h2 id={`x-${i}`} className="qp-h2">
-            {x.heading}
-          </h2>
-          {x.paragraphs.map((p, j) => (
-            <p key={j}>{p}</p>
-          ))}
-        </section>
+        <Section key={i} id={`x-${i}`} title={x.heading} tone={tone()} width="narrow">
+          <div className="sx-prose">
+            {x.paragraphs.map((p, j) => (
+              <p key={j}>{p}</p>
+            ))}
+          </div>
+        </Section>
       ))}
 
       {config.faq.length > 0 && (
-        <section className="qp-faq" aria-labelledby="faq-h">
-          <h2 id="faq-h" className="qp-h2">
-            {t.faq}
-          </h2>
-          <div className="qp-faq-list">
-            {config.faq.map((f, i) => (
-              <details key={i} className="qp-faq-item">
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
-          </div>
-        </section>
+        <Section id="faq" title={t.faq} tone={tone()} width="narrow">
+          <Faq items={config.faq} locale={locale} />
+        </Section>
       )}
 
       {config.related.length > 0 && (
-        <nav className="qp-related" aria-labelledby="related-h">
-          <h2 id="related-h" className="qp-h2">
-            {t.related}
-          </h2>
-          <ul>
-            {config.related.map((r) => (
-              <li key={r.href}>
-                <a href={r.href}>{r.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <Section id="related" title={t.related} tone={tone()} width="narrow">
+          <LinkCards items={config.related.map((r) => ({ href: r.href, title: r.label }))} />
+        </Section>
       )}
 
-      {showHook && <LineBar locale={locale} pageName={pageName} />}
+      {showHook && <LineBar locale={locale} />}
     </main>
   )
 }
+
+/** PageTracker name for a quote page (the template, " HI" on Hindi twins). */
+export const quotePageName = (config: Pick<QuotePageConfig, 'locale'>): string => (config.locale === 'hi' ? 'Quote Page HI' : 'Quote Page')
 
 /** Next Metadata for a quote page: title, description, canonical, hreflang twins, card OG image. */
 export function quotePageMetadata(config: QuotePageConfig): Metadata {

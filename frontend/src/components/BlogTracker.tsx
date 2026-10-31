@@ -2,10 +2,14 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import { trackPageViewed, trackLinkClick, trackEvent, trackEventBeacon, funnelForPath } from '@/lib/mixpanel'
+import { EVENTS, trackPageViewed, trackLinkClick, trackEvent, trackEventBeacon, trackDynamic, funnelForPath, setPageContext } from '@/lib/mixpanel'
 
 interface BlogTrackerProps {
-  /** Page identifier used as the `page` attribution property on every event. */
+  /**
+   * Page name sent as `page` on every event from this page, Title Case, e.g.
+   * "Hanuman Chalisa Line". Components on the page read it from the analytics
+   * context, so they never pass `page` themselves.
+   */
   pageName: string
 }
 
@@ -18,23 +22,19 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
   // ── Page Viewed ────────────────────────────────────────────────────────────
   useEffect(() => {
     trackPageViewed(pageName, pathname)
+    return () => setPageContext(null)
   }, [pageName, pathname])
 
   // ── Link Click tracking (a[data-mp-location]) ──────────────────────────────
-  // Also handles optional data-mp-event for a dedicated event name and
-  // data-mp-props (JSON string) for extra properties on that event.
+  // Delegated, so links rendered after mount (menus, sheets, client lists) count too.
+  // Optional data-mp-event names a registry event to send as well, with data-mp-props (JSON).
   useEffect(() => {
-    const links = document.querySelectorAll<HTMLAnchorElement>('a[data-mp-location]')
-
-    const handleLinkClick = (event: Event) => {
-      const link = event.currentTarget as HTMLAnchorElement
+    const onClick = (event: MouseEvent) => {
+      const link = (event.target as HTMLElement | null)?.closest?.<HTMLAnchorElement>('a[data-mp-location]')
+      if (!link) return
       const location = link.getAttribute('data-mp-location') || 'unknown'
       const href = link.getAttribute('href') || ''
-
-      // Standard link / App Store click
       trackLinkClick(pageName, location, href)
-
-      // Optional dedicated event — e.g. data-mp-event="Path Selected"
       const customEventName = link.getAttribute('data-mp-event')
       if (customEventName) {
         let extraProps: Record<string, unknown> = {}
@@ -44,18 +44,15 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
         } catch {
           // ignore malformed JSON
         }
-        trackEvent(customEventName, { page: pageName, location, href, ...extraProps })
+        trackDynamic(customEventName, { page: pageName, location, href, ...extraProps }, true)
       }
     }
-
-    links.forEach((link) => link.addEventListener('click', handleLinkClick))
-    return () => {
-      links.forEach((link) => link.removeEventListener('click', handleLinkClick))
-    }
+    document.addEventListener('click', onClick, true)
+    return () => document.removeEventListener('click', onClick, true)
   }, [pageName])
 
-  // ── Funnel catch-all link tracking ─────────────────────────────────────────
-  // On the non-Gita funnel pages, any link without its own tracking
+  // ── Catch-all link tracking ────────────────────────────────────────────────
+  // On every page that belongs to a funnel (see funnelForPath), any link without its own tracking
   // (data-mp-location, or data-mp-tracked for links that fire their own event)
   // still sends "Link Clicked" with the section it sat in and what kind of
   // link it was, so share, /start, Gita bridge and cross-links are measurable.
@@ -97,12 +94,12 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
       if (!summary || !details || details.tagName !== 'DETAILS' || (details as HTMLDetailsElement).open) return false
       const text = (summary.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120)
       if (/faq/i.test(details.className) || details.getAttribute('data-track') === 'faq') {
-        trackEvent('FAQ Opened', { page: pageName, question: details.getAttribute('data-q') || text, section: sectionOf(details) })
+        trackEvent(EVENTS.FaqOpened, { page: pageName, question: details.getAttribute('data-q') || text, section: sectionOf(details) })
         return true
       }
       const name = details.getAttribute('data-mp-disclosure')
       if (name) {
-        trackEvent('Disclosure Opened', { page: pageName, disclosure: name, label: text })
+        trackEvent(EVENTS.DisclosureOpened, { page: pageName, disclosure: name, label: text })
         return true
       }
       return false
@@ -121,7 +118,7 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
         trackLinkClick(pageName, location, href)
         return
       }
-      trackEventBeacon('Link Clicked', {
+      trackEventBeacon(EVENTS.LinkClicked, {
         page: pageName,
         path: pathname,
         location,
@@ -153,7 +150,7 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
       for (const milestone of SCROLL_MILESTONES) {
         if (pct >= milestone && !fired.has(milestone)) {
           fired.add(milestone)
-          trackEvent('Scroll Depth', {
+          trackEvent(EVENTS.ScrollDepth, {
             page: pageName,
             path: pathname,
             depth_pct: milestone,
@@ -181,7 +178,7 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const section = (entry.target as HTMLElement).dataset.mpSection ?? 'unknown'
-            trackEvent('Section Viewed', { page: pageName, section })
+            trackEvent(EVENTS.SectionViewed, { page: pageName, section })
             observer.unobserve(entry.target)
           }
         })
@@ -195,5 +192,8 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
 
   return null
 }
+
+/** Preferred name: every page mounts one <PageTracker pageName="..." />. */
+export const PageTracker = BlogTracker
 
 export default BlogTracker

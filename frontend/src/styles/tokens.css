@@ -1,0 +1,65 @@
+/* Wisdom house tokens: the one palette, type scale and motion system for every page.
+   Imported once by app/globals.css. Page and funnel CSS use these and add no palette of their own.
+   Ground: maroon night. Accent: diya gold. Text: cream. One secondary accent, --sindoor, used sparingly
+   for marks (never as a background or a button). */
+
+:root {
+  /* palette */
+  --maroon: #3d0c0c;
+  --maroon-mid: #5c1a1a;
+  --maroon-deep: #1a0606;
+  --gold: #c8881e;
+  --gold-light: #f5c96a;
+  --gold-pale: #fdf3dc;
+  --gold-border: #e8c97a;
+  --gold-dim: rgba(200, 136, 30, 0.15);
+  --sindoor: #e0884f;
+  --text: #f5e8cc;
+  --text-dim: rgba(245, 232, 204, 0.65);
+  --text-dimmer: rgba(245, 232, 204, 0.35);
+  --border: rgba(200, 136, 30, 0.2);
+  --border-strong: rgba(200, 136, 30, 0.42);
+  --bg: #120505;
+  --bg-warm: #190707;
+  --bg-alt: #0f0404;
+  --bg-card: rgba(255, 255, 255, 0.035);
+  --bg-leaf: #1b0908;
+  --bg-raise: #2a1210;
+  --scrim: rgba(18, 5, 5, 0.45);
+
+  /* type */
+  --font-display: var(--font-playfair), 'Playfair Display', var(--font-noto-devanagari), Georgia, serif;
+  --font-ui: var(--font-inter), 'Inter', var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  --font-deva-ui: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
+  --font-sa: var(--font-tiro-sa), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
+  --font-awadhi: var(--font-tiro-hi), 'Tiro Devanagari Hindi', var(--font-tiro-sa), var(--font-noto-devanagari), serif;
+  /* legacy alias: quotes/card.css reads --q-tiro */
+  --q-tiro: var(--font-tiro-sa);
+
+  /* layout */
+  --site-max: 1100px;
+  --site-gutter: 20px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+
+  /* motion: entrances 500ms on --ease, feedback 160ms on --ease-out, draws 900ms.
+     Only transform and opacity animate. Reduced motion: opacity only. */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+  --t-quick: 160ms;
+  --t-std: 500ms;
+  --t-slow: 900ms;
+  --stagger: 70ms;
+}
+
+@media (min-width: 700px) {
+  :root { --site-gutter: 28px; }
+}
+
+/* Devanagari / IAST: one script at a time, site-wide. data-script on <html> is set before paint
+   by the inline script in app/layout.tsx and by <ScriptToggle>. Mark scripture spans with
+   .sx-deva / .sx-iast. Without JS the page shows Devanagari. */
+html:not([data-script='iast']) .sx-iast { display: none !important; }
+html[data-script='iast'] .sx-deva { display: none !important; }

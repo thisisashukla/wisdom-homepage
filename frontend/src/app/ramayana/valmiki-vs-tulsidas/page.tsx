@@ -1,18 +1,16 @@
 import type { Metadata } from 'next'
-import BlogTracker from '@/components/BlogTracker'
-import NextStep from '@/components/quotes/NextStep'
-import Shell from '@/components/funnels/ramayana/Shell'
-import Hero from '@/components/funnels/ramayana/Hero'
-import { Band, Faq, JsonLd, MethodEn } from '@/components/funnels/ramayana/Bits'
-import { getLine, lineView } from '@/lib/funnels/ramayana/data'
+import PageTracker from '@/components/BlogTracker'
+import { Faq, GitaBridge, JsonLd, NextStep, PageHero, Section, VerseCard } from '@/components/site'
+import { MethodEn } from '@/components/funnels/ramayana/Method'
 import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
+import { getLine, lineView } from '@/lib/funnels/ramayana/data'
 import { PATHS } from '@/lib/funnels/ramayana/paths'
-import { articleLd, breadcrumbLd, faqLd, pageMeta } from '@/lib/funnels/ramayana/seo'
+import { articleLd, ramayanaMeta } from '@/lib/funnels/ramayana/seo'
+import { lineOriginal } from '@/lib/funnels/ramayana/verse'
 
-const PAGE = 'ramayana-valmiki-vs-tulsidas'
 const DESC = 'Valmiki Ramayana vs Ramcharitmanas: language, shape, how each tells Ram and Sita, scene by scene, and what the Ramayana: Part 1 film draws on.'
 
-export const metadata: Metadata = pageMeta({
+export const metadata: Metadata = ramayanaMeta({
   title: 'Valmiki Ramayana vs Ramcharitmanas, and the film',
   description: DESC,
   path: PATHS.compare,
@@ -83,50 +81,65 @@ const FAQ = [
 ]
 
 export default function ComparePage() {
+  const pair = [
+    { label: 'Valmiki', line: lineView(getLine('vr-1-67-14'), 'en') },
+    { label: 'Tulsidas', line: lineView(getLine('rcm-1-247-4'), 'en') },
+  ]
   return (
-    <Shell locale="en">
-      <BlogTracker pageName={PAGE} />
+    <main>
+      <PageTracker pageName="Ramayana Valmiki Vs Tulsidas" />
       <JsonLd
-        data={[
-          breadcrumbLd([
-            { name: 'Wisdom', path: '/' },
-            { name: 'Ramayana', path: PATHS.hub },
-            { name: 'Valmiki and Tulsidas', path: PATHS.compare },
-          ]),
-          articleLd({
-            headline: 'Valmiki Ramayana and the Ramcharitmanas, side by side',
-            description: DESC,
-            path: PATHS.compare,
-            locale: 'en',
-            about: ['Valmiki Ramayana', 'Ramcharitmanas', 'Tulsidas', 'Valmiki', 'Ramayana: Part 1'],
-          }),
-          faqLd(FAQ),
-        ]}
+        data={articleLd({
+          headline: 'Valmiki Ramayana and the Ramcharitmanas, side by side',
+          description: DESC,
+          path: PATHS.compare,
+          locale: 'en',
+          about: ['Valmiki Ramayana', 'Ramcharitmanas', 'Tulsidas', 'Valmiki', 'Ramayana: Part 1'],
+        })}
       />
-      <Hero
-        locale="en"
-        crumbLabel="Breadcrumb"
-        crumbs={[{ name: 'Wisdom', href: '/' }, { name: 'Ramayana', href: PATHS.hub }, { name: 'Valmiki and Tulsidas' }]}
+      <PageHero
+        crumbs={[
+          { label: 'Ramayana', href: PATHS.hub },
+          { label: 'Valmiki and Tulsidas', href: PATHS.compare },
+        ]}
         eyebrow="Valmiki Ramayana and Ramcharitmanas"
-        h1="Valmiki and Tulsidas, side by side"
-        sub="Two tellings of one story, and the film between them."
-        facts={['Sanskrit and Awadhi', 'Seven kandas each', `${ROWS.filter((r) => r.scene).length} scenes compared`]}
-        cta={{ href: '#table', label: 'Compare the two texts', loc: 'hero_table' }}
-        lines={[lineView(getLine('vr-1-67-14'), 'en'), lineView(getLine('rcm-1-247-4'), 'en')]}
-        lineLabels={['Valmiki', 'Tulsidas']}
+        title="Valmiki and Tulsidas, side by side"
+        sub="See where Valmiki's Sanskrit and Tulsidas's Awadhi tell Ram's story differently, and which one a film scene follows."
+        facts={['Sanskrit and Awadhi', 'Seven kandas each']}
+        actions={[{ href: '#table', label: 'Compare the two texts', location: 'hero_table' }]}
+        visual={
+          <div className="rl-hero-pair">
+            {pair.map(({ label, line }, i) => (
+              <VerseCard
+                key={line.key}
+                size="hero"
+                reveal
+                toggle={i === 0}
+                {...lineOriginal(line)}
+                label={
+                  <>
+                    <span className={`rl-mark rl-mark-${line.text}`} aria-hidden="true" />
+                    {label}
+                  </>
+                }
+                source={`${line.speaker} · ${line.ref}`}
+              />
+            ))}
+          </div>
+        }
       />
 
-      <Band className="rl-introsec">
-        <p className="rl-intro rv" id="quick-answer">
+      <Section spacing="tight" rv={false}>
+        <p className="sx-prose rv" id="quick-answer">
           Valmiki&apos;s Ramayana is the Sanskrit epic in seven kandas, opening with Narada naming a man of every virtue. Tulsidas&apos;s
           Ramcharitmanas is an Awadhi retelling begun in 1574 (samvat 1631, Bal Kand), told by Shiva to Parvati, with Ram as God
           throughout. Many families in North India know the story through Tulsidas and the television Ramayan, which is why so many
           well-known scenes turn out to be his.
         </p>
-      </Band>
+      </Section>
 
-      <Band id="table" title="The two texts" tone="alt" wide>
-        <div className="rl-table-wrap rv" role="region" aria-labelledby="table" tabIndex={0}>
+      <Section id="table" tone="band" title="The two texts">
+        <div className="rl-table-wrap rv" role="region" aria-labelledby="table-h" tabIndex={0}>
           <table className="rl-table">
             <caption>Scene rows link to the full check with the original lines.</caption>
             <thead>
@@ -157,10 +170,11 @@ export default function ComparePage() {
             </tbody>
           </table>
         </div>
-      </Band>
+      </Section>
 
-      <Band id="film" title="What the film draws on">
-        <p className="rl-p rv">
+      <Section id="film" title="What the film draws on">
+        <div className="sx-prose rv">
+        <p>
           The makers of Ramayana: Part 1 have not published a list of the texts they used, and reports on the credits name
           screenwriter Shridhar Raghavan for the story. The trailers show Ram breaking Shiva&apos;s bow (
           <a href="https://www.esquireindia.co.in/entertainment/at-the-movies/whos-playing-who-in-ramayana-part-1-and-a-few-things-the-trailer-holds-back" target="_blank" rel="noopener">
@@ -173,45 +187,42 @@ export default function ComparePage() {
           </a>
           ). Every one of these is in both Valmiki and Tulsidas.
         </p>
-        <p className="rl-p rv">
+        <p>
           Part 1 reportedly ends near Sita&apos;s abduction, with Hanuman arriving only at the end (
           <a href="https://www.theweek.in/news/entertainment/2026/09/01/ramayana-part-1-sunny-deol-hanuman-surprise.html" target="_blank" rel="noopener">
             The Week, 1 Sep 2026
           </a>
           ). If the film shows Ahalya as a stone, the boatman washing Ram&apos;s feet or a drawn Lakshman Rekha, it is following
           Tulsidas and the tellings that came after him. If it shows Lakshman warning that the deer is Maricha, or Sita taken in
-          person, it is following Valmiki. Both are old and loved; the pages below show the lines.
+          person, it is following Valmiki. Families have loved both tellings for centuries.
         </p>
-        <p className="rl-p rv">
+        <p>
           <a href={PATHS.original} data-mp-location="to_original">
-            Check eleven film scenes against both texts
+            See which text each film scene comes from
           </a>
         </p>
-      </Band>
+        </div>
+      </Section>
 
-      <Band id="reading" title="Reading them alongside the Gita" tone="warm">
-        <p className="rl-p rv">
+      <Section id="reading" tone="band" title="Reading them alongside the Gita">
+        <p className="sx-prose rv">
           Both texts keep returning to what the Bhagavad Gita teaches outright: do your part, hold the result loosely, and stay
           steady when things come and go. Bharata ruling from Nandigram without calling the kingdom his is{' '}
-          <a className="rl-gold" href="/gita/chapter/2/verse/71" data-mp-location="gita_2_71">
-            Gita 2.71
-          </a>{' '}
+          <GitaBridge variant="inline" href="/gita/chapter/2/verse/71" label="Gita 2.71" location="gita_2_71" />{' '}
           in practice, and Jatayu fighting a fight he could not win is{' '}
-          <a className="rl-gold" href="/gita/chapter/2/verse/47" data-mp-location="gita_2_47">
-            Gita 2.47
-          </a>
+          <GitaBridge variant="inline" href="/gita/chapter/2/verse/47" label="Gita 2.47" location="gita_2_47" />
           .
         </p>
-      </Band>
+      </Section>
 
-      <Band>
-        <div className="rl-final rv">
-          <NextStep funnel="ramayana" locale="en" pageName={PAGE} pageKey="ramayana-compare" placement="end" copy={NEXT_COPY.en} />
-        </div>
-      </Band>
+      <Section>
+        <NextStep locale="en" pageKey="ramayana-compare" placement="end" copy={NEXT_COPY.en} />
+      </Section>
 
-      <Faq heading="Questions people ask" qas={FAQ} tone="alt" />
+      <Section id="faq" tone="band" title="Questions people ask">
+        <Faq items={FAQ} />
+      </Section>
       <MethodEn />
-    </Shell>
+    </main>
   )
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 interface Props {
   /** Mixpanel page attribution (matches the pageName used by BlogTracker on the host page) */
@@ -70,14 +70,14 @@ export default function DailyVerseEmail({ page, locale = 'en' }: Props) {
     if (!validation.ok) {
       setError(validation.error || copy.errorFallback)
       setStatus('error')
-      trackEvent('Daily Verse Waitlist Validation Failed', {
+      trackEvent(EVENTS.DailyVerseWaitlistValidationFailed, {
         page, locale, source: 'daily_verse',
       })
       return
     }
     setStatus('loading')
     setError(null)
-    trackEvent('Daily Verse Waitlist Attempt', {
+    trackEvent(EVENTS.DailyVerseWaitlistAttempt, {
       page, locale, source: 'daily_verse', mode: 'waitlist',
     })
     try {
@@ -93,7 +93,7 @@ export default function DailyVerseEmail({ page, locale = 'en' }: Props) {
       })
       if (!res.ok) throw new Error(`status ${res.status}`)
       setStatus('done')
-      trackEvent('Daily Verse Waitlist Joined', {
+      trackEvent(EVENTS.DailyVerseWaitlistJoined, {
         page,
         locale,
         source: 'daily_verse',
@@ -104,7 +104,7 @@ export default function DailyVerseEmail({ page, locale = 'en' }: Props) {
     } catch (err) {
       setStatus('error')
       setError(copy.errorFallback)
-      trackEvent('Daily Verse Waitlist Error', {
+      trackEvent(EVENTS.DailyVerseWaitlistError, {
         page, locale, source: 'daily_verse', mode: 'waitlist',
         error: err instanceof Error ? err.message : 'unknown',
       })

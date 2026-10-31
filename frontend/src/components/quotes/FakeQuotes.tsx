@@ -4,6 +4,7 @@
  */
 
 import type { FakeQuote, Locale, Quote, QuoteView } from '@/lib/quotes-shared'
+import Section from '@/components/site/Section'
 import QuoteCard from './QuoteCard'
 import './card.css'
 import './quotes.css'
@@ -14,12 +15,15 @@ export type FakeQuotesProps = {
   quotes: Record<string, QuoteView | Quote>
   locale: Locale
   heading: string
-  pageName: string
+  /** @deprecated The page comes from <PageTracker>. */
+  pageName?: string
   pageKey?: string
   audio?: Record<string, string | null>
   pagePath?: string
   /** DOM ids already used on the page, so repeated quotes get unique ids. */
   usedIds?: Set<string>
+  /** Section ground ('band' alternates with the section before). */
+  tone?: 'default' | 'band'
 }
 
 const T = {
@@ -27,15 +31,12 @@ const T = {
   hi: { tag: 'गीता में नहीं है', origin: 'असल में कहां से आया', real: 'गीता में असल में क्या है' },
 }
 
-export default function FakeQuotes({ fakes, quotes, locale, heading, pageName, pageKey, audio, pagePath, usedIds }: FakeQuotesProps) {
+export default function FakeQuotes({ fakes, quotes, locale, heading, pageKey, audio, pagePath, usedIds, tone = 'default' }: FakeQuotesProps) {
   const t = T[locale]
   const list = fakes.filter((f) => quotes[f.realQuoteId])
   if (!list.length) return null
   return (
-    <section className="qfakes" id="never-said" aria-labelledby="never-said-h">
-      <h2 id="never-said-h" className="qp-h2">
-        {heading}
-      </h2>
+    <Section id="never-said" title={heading} tone={tone} width="narrow" className="qp-fakes">
       <div className="qfakes-list">
         {list.map((f) => {
           const real = quotes[f.realQuoteId]
@@ -59,16 +60,7 @@ export default function FakeQuotes({ fakes, quotes, locale, heading, pageName, p
               </div>
               <div className="qfake-real">
                 <p className="qfake-real-k">{t.real}</p>
-                <QuoteCard
-                  quote={real}
-                  locale={locale}
-                  pageName={pageName}
-                  pageKey={pageKey}
-                  variant="compact"
-                  audioSrc={audio?.[real.id] ?? null}
-                  domId={domId}
-                  pagePath={pagePath}
-                />
+                <QuoteCard quote={real} locale={locale} pageKey={pageKey} variant="compact" audioSrc={audio?.[real.id] ?? null} domId={domId} pagePath={pagePath} />
                 <p className="qfake-note" lang={locale}>
                   {f.note[locale]}
                 </p>
@@ -77,6 +69,6 @@ export default function FakeQuotes({ fakes, quotes, locale, heading, pageName, p
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }

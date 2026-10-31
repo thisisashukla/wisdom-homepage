@@ -14,7 +14,7 @@ import {
   type FeelingId,
   type Platform,
 } from '@/lib/app'
-import { trackEvent, trackLinkClick } from '@/lib/mixpanel'
+import { EVENTS, trackEvent, trackLinkClick } from '@/lib/mixpanel'
 import {
   ApiError,
   api,
@@ -122,12 +122,12 @@ export default function YourVerse({
         setVerse(out.hook)
         if (out.hook) setSeen((prev) => [...prev, out.hook!.id])
         setStage('revealed')
-        trackEvent('Hook Revealed', props({ verse: out.hook?.ref, safety: Boolean(out.safety) }))
+        trackEvent(EVENTS.HookRevealed, props({ verse: out.hook?.ref, safety: Boolean(out.safety) }))
         requestAnimationFrame(() => rootRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
       } catch (e) {
         if (e instanceof ApiError && e.status === 401) {
           setStage('gate')
-          trackEvent('Hook Signin Shown', props())
+          trackEvent(EVENTS.HookSigninShown, props())
           return
         }
         setError(
@@ -151,7 +151,7 @@ export default function YourVerse({
         if (p?.source === source && p.feeling) {
           setFeeling(p.feeling as FeelingId)
           setSituation((p.situation as string) ?? null)
-          trackEvent('Hook Signin Completed', { page: pageName, source, method: 'redirect' })
+          trackEvent(EVENTS.HookSigninCompleted, { page: pageName, source, method: 'redirect' })
           void fetchVerse(p.feeling as FeelingId, (p.situation as string) ?? null)
         }
       })
@@ -162,10 +162,10 @@ export default function YourVerse({
   const go = (f: FeelingId, s: string | null) => {
     setFeeling(f)
     setSituation(s)
-    trackEvent('Hook Requested', props({ feeling: f, situation: s }))
+    trackEvent(EVENTS.HookRequested, props({ feeling: f, situation: s }))
     if (!isIOS && !user) {
       setStage('gate')
-      trackEvent('Hook Signin Shown', props({ feeling: f, situation: s }))
+      trackEvent(EVENTS.HookSigninShown, props({ feeling: f, situation: s }))
       return
     }
     void fetchVerse(f, s)
@@ -173,7 +173,7 @@ export default function YourVerse({
 
   // The hero's one button. With a preset (a /gita-for page or ?s= from a reel) it goes straight to the verse.
   const start = () => {
-    trackEvent('Hook Started', props())
+    trackEvent(EVENTS.HookStarted, props())
     if (feeling || situation) {
       const preset = ASK.find((a) => a.situation === situation)
       go(feeling ?? preset?.feeling ?? 'replay', situation)
@@ -186,7 +186,7 @@ export default function YourVerse({
     const a = ASK.find((x) => x.id === id)
     if (!a) return
     setAnswer(a.about ?? null)
-    trackEvent('Hook Situation Picked', props({ answer: a.id, situation: a.situation ?? null, feeling: a.feeling }))
+    trackEvent(EVENTS.HookSituationPicked, props({ answer: a.id, situation: a.situation ?? null, feeling: a.feeling }))
     go(a.feeling, a.situation ?? null)
   }
 
@@ -209,7 +209,7 @@ export default function YourVerse({
     try {
       const u = await signInWithGoogle({ source, feeling, situation })
       if (!u) return
-      trackEvent('Hook Signin Completed', props({ method: 'popup' }))
+      trackEvent(EVENTS.HookSigninCompleted, props({ method: 'popup' }))
       void fetchVerse(feeling, situation)
     } catch {
       setError('Google sign-in did not go through. Please try again.')
@@ -217,7 +217,7 @@ export default function YourVerse({
   }
 
   const another = () => {
-    trackEvent('Hook Another', props({ verse: verse?.ref }))
+    trackEvent(EVENTS.HookAnother, props({ verse: verse?.ref }))
     if (result?.alternate && !seen.includes(result.alternate.id)) {
       setVerse(result.alternate)
       setSeen((prev) => [...prev, result.alternate!.id])
@@ -230,12 +230,12 @@ export default function YourVerse({
     if (!verse) return
     const url = `https://wisdomquotes.in/?f=${feeling ?? ''}${situation ? `&s=${situation}` : ''}`
     const text = `${verse.sanskrit ? verse.sanskrit + '\n\n' : ''}“${verse.line}” (${verse.ref})\n\nA 7-day reading plan for your situation, starting with the Gita: ${url}`
-    trackEvent('Verse Shared', props({ verse: verse.ref, network: 'whatsapp' }))
+    trackEvent(EVENTS.VerseShared, props({ verse: verse.ref, network: 'whatsapp' }))
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener')
   }
 
   const startCustomise = () => {
-    trackEvent('Customise Opened', props({ verse: verse?.ref }))
+    trackEvent(EVENTS.CustomiseOpened, props({ verse: verse?.ref }))
     setStage('note')
   }
 
@@ -249,7 +249,7 @@ export default function YourVerse({
       const status = await api<{ active: boolean; configured?: boolean }>('/api/pay/status')
       if (!status.active) {
         setStage('paying')
-        trackEvent('Paywall Viewed', props({ product: 'web_plan_weekly', price_inr: WEB_PLAN_PRICE_INR }))
+        trackEvent(EVENTS.PaywallViewed, props({ product: 'web_plan_weekly', price_inr: WEB_PLAN_PRICE_INR }))
         const paid = await startWeeklyPlanCheckout(source)
         if (!paid) {
           setStage('note')
@@ -260,7 +260,7 @@ export default function YourVerse({
       const out = await api<WebPlanData>('/api/verse/plan', { body: { feeling, situation, note }, timeoutMs: API_TIMEOUT.plan })
       setPlan(out)
       setStage('plan')
-      trackEvent('Web Plan Generated', props({ days: out.days.length }))
+      trackEvent(EVENTS.WebPlanGenerated, props({ days: out.days.length }))
       requestAnimationFrame(() => rootRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
     } catch (e) {
       const code = e instanceof ApiError ? e.code : ''

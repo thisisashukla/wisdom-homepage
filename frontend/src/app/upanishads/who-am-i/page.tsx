@@ -1,7 +1,8 @@
-import Shell, { Band, GitaBridge, Head, HeroLine, SourcesNote, UpNext } from '@/components/funnels/upanishads/Shell'
-import Sanskrit from '@/components/funnels/upanishads/Sanskrit'
+import PageTracker from '@/components/BlogTracker'
+import { JsonLd, PageHero, Section, VerseCard } from '@/components/site'
+import { Bridge, SourcesNote, UpNext } from '@/components/funnels/upanishads/parts'
 import PlanTracker from '@/components/funnels/upanishads/PlanTracker'
-import { articleLd, passage, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
+import { articleLd, padas, passage, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from '@/lib/funnels/upanishads'
 import { WHO_AM_I } from '@/content/funnels/upanishads/plan'
 
 const PATH = '/upanishads/who-am-i'
@@ -25,63 +26,55 @@ export default function Page() {
   const kena = passage(WHO_AM_I[0].passage)
   const first = (x: string, cut: string) => x.split('\n')[0].replace(/^(ॐ|oṃ)\s+/u, '').split(cut)[0]
   return (
-    <Shell
-      pageName={PAGE}
-      locale="en"
-      crumbs={[
-        { name: 'Home', path: '/' },
-        { name: 'Upanishads', path: '/upanishads' },
-        { name: 'Who am I', path: PATH },
-      ]}
-      jsonLd={jsonLd}
-      hero={{
-        eyebrow: '7-verse reading plan',
-        title: 'Who am I: seven lines from the Upanishads',
-        sub: 'Seven lines on who you are. One each morning.',
-        facts: ['7 days', 'Seven Upanishads', 'About 5 min a day'],
-        cta: { href: '#day-1', label: 'Read day 1', loc: 'plan_hero_day1' },
-        visual: (
-          <HeroLine
-            sa={first(kena.sa, ' केन प्राणः')}
-            iast={first(kena.iast, ' kena prāṇaḥ')}
-            meaning={WHO_AM_I[0].en.split('? ')[0] + '?'}
-            cite={WHO_AM_I[0].ref}
-          />
-        ),
-      }}
-    >
-      <PlanTracker page={PAGE} locale="en" />
-      <Band labelledBy="days">
-        <p id="quick-answer" className="tp-intro rv">
+    <>
+      <PageTracker pageName="Upanishads Plan" />
+      <PlanTracker />
+      <JsonLd data={jsonLd} />
+      <PageHero
+        crumbs={[
+          { label: 'Upanishads', href: '/upanishads' },
+          { label: 'Who am I', href: PATH },
+        ]}
+        eyebrow="7-verse reading plan"
+        title="Who am I: seven lines from the Upanishads"
+        sub="Read one line each morning for a week and carry the question of who you are into the day."
+        facts={['7 days', 'Seven Upanishads', 'About 5 min a day']}
+        actions={[{ href: '#day-1', label: 'Read day 1', location: 'plan_hero_day1' }]}
+        verse={{
+          original: padas(first(kena.sa, ' केन प्राणः')),
+          iast: padas(first(kena.iast, ' kena prāṇaḥ')),
+          meaning: WHO_AM_I[0].en.split('? ')[0] + '?',
+          source: WHO_AM_I[0].ref,
+        }}
+      />
+
+      <Section id="answer" width="narrow" spacing="tight">
+        <p id="quick-answer" className="sx-intro rv">
           This plan takes the question &quot;who am I&quot; through seven Upanishads, one line a day: Kena 1.1, Mundaka 3.1.1, Katha 1.2.18, Isha 6,
-          Mandukya 2, Chandogya 6.8.7 and Brihadaranyaka 1.4.10. Each day gives the Sanskrit, a plain English line and one small thing to notice. It
-          takes about five minutes.
+          Mandukya 2, Chandogya 6.8.7 and Brihadaranyaka 1.4.10. Each day comes with one small thing to notice
+          and takes about five minutes.
         </p>
-        <h2 id="days" className="tp-h2 rv">
-          The seven days
-        </h2>
-        <div className="fx-plan" data-stagger="60">
+      </Section>
+
+      <Section id="days" tone="band" width="narrow" title="The seven days">
+        <div className="up-plan" data-stagger="60">
           {WHO_AM_I.map((d) => {
             const p = passage(d.passage)
             return (
               <details key={d.day} data-plan-day={d.day} open={d.day === 1} id={`day-${d.day}`} className="rv">
                 <summary>
-                  <span className="d-n">Day {d.day}</span>
-                  <span className="d-t">{d.title}</span>
+                  <span className="up-plan-n">Day {d.day}</span>
+                  <span className="up-plan-t">{d.title}</span>
                 </summary>
-                <div className="d-body">
-                  <div className="tp-verse">
-                    <p className="fx-v-ref-plain">{d.ref}</p>
-                    <Sanskrit sa={p.sa} iast={p.iast} size="small" />
-                    <p className="fx-v-en">{d.en}</p>
-                  </div>
-                  <div className="tp-today d-sit">
+                <div className="up-plan-body">
+                  <VerseCard align="left" size="compact" framed={false} label={d.ref} original={padas(p.sa)} iast={padas(p.iast)} meaning={d.en} />
+                  <div className="up-plan-sit">
                     <p>{d.sit}</p>
                   </div>
-                  {d.gita && <GitaBridge c={d.gita.c} v={d.gita.v} note={d.gita.note} lead="Read next to" />}
+                  {d.gita && <Bridge c={d.gita.c} v={d.gita.v} note={d.gita.note} />}
                   {d.href && (
                     <p>
-                      <a href={d.href} className="fx-link" data-mp-location={`plan_day_${d.day}_source`}>
+                      <a href={d.href} className="sx-link" data-mp-location={`plan_day_${d.day}_source`}>
                         Read it in its place
                       </a>
                     </p>
@@ -91,13 +84,12 @@ export default function Page() {
             )
           })}
         </div>
-      </Band>
+      </Section>
 
-      <UpNext locale="en" pageName={PAGE} pageKey={PAGE} placement="plan-end" heading="Keep one line each morning" />
+      <UpNext locale="en" pageKey={PAGE} placement="plan-end" heading="Keep one line each morning" />
 
-      <Band labelledBy="after">
-        <Head id="after">After the seven days</Head>
-        <div className="fx-prose rv">
+      <Section id="after" width="narrow" title="After the seven days">
+        <div className="sx-prose rv">
           <p>
             Read the texts these lines come from, start to finish:{' '}
             <a href="/upanishads/isha" data-mp-location="plan_after_isha">
@@ -118,14 +110,14 @@ export default function Page() {
             .
           </p>
         </div>
-      </Band>
+      </Section>
 
       <SourcesNote heading="Sources and method">
         <p>
-          {SOURCES_NOTE_EN} Kena 1.1 is not in our corpus and was imported from the sanskritdocuments.org edition.
+          {SOURCES_NOTE_EN} Kena 1.1 follows the sanskritdocuments.org edition.
         </p>
         <p>{DISCLOSURE_EN}</p>
       </SourcesNote>
-    </Shell>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { getRedirectResult } from 'firebase/auth'
 import { auth } from '@/lib/firebase'
 import { useAuth } from '@/context/AuthContext'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import { api, API_TIMEOUT, ApiError, identify, signInWithGoogle, takePending } from '@/lib/funnelClient'
 import { situationById } from '@/lib/app'
 import {
@@ -110,7 +110,7 @@ export default function StartFlow() {
     } else {
       setAnswers((a) => ({ ...a, ...preset }))
     }
-    trackEvent('Onboarding Viewed', { page: 'Start', source: q.get('ref') ?? q.get('src') ?? 'direct', situation: sit ?? null, resumed: !!s })
+    trackEvent(EVENTS.OnboardingViewed, { page: 'Start', source: q.get('ref') ?? q.get('src') ?? 'direct', situation: sit ?? null, resumed: !!s })
   }, [])
 
   useEffect(() => {
@@ -120,7 +120,7 @@ export default function StartFlow() {
   }, [step, answers, results])
 
   const go = useCallback((next: Step, props?: Record<string, unknown>) => {
-    trackEvent('Onboarding Step Completed', { page: 'Start', step, next, ...props })
+    trackEvent(EVENTS.OnboardingStepCompleted, { page: 'Start', step, next, ...props })
     if (reducedMotion()) { setStep(next); setError(null); return }
     setLeaving(true)
     setTimeout(() => {
@@ -156,13 +156,13 @@ export default function StartFlow() {
     ).then(async (r) => {
       setResults({ understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety })
       resultsRef.current = { understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety }
-      trackEvent('Verses Generated', { page: 'Start', ok: !!r.hook, has_note: !!a.note, crisis: !!(r.safety as { crisis?: boolean } | null)?.crisis })
+      trackEvent(EVENTS.VersesGenerated, { page: 'Start', ok: !!r.hook, has_note: !!a.note, crisis: !!(r.safety as { crisis?: boolean } | null)?.crisis })
       if (r.safety?.message) setSafetyOpen(true)
       // The week comes next, so "Curating your plan" finishes once it is in (or the cap passes).
       if (r.hook) await Promise.race([loadWeek(), sleep(PLAN_CAP)])
       return { ok: !!r.hook, mirror: r.understanding?.mirror ?? null, library: r.library }
     }).catch((e) => {
-      trackEvent('Verses Generated', { page: 'Start', ok: false, error: e instanceof ApiError ? e.code : 'network' })
+      trackEvent(EVENTS.VersesGenerated, { page: 'Start', ok: false, error: e instanceof ApiError ? e.code : 'network' })
       return { ok: false }
     })
     setHookReq(p)
@@ -189,7 +189,7 @@ export default function StartFlow() {
         identify(cred.user)
         const p = takePending()
         if (p?.source === 'start') {
-          trackEvent('Onboarding Signin Completed', { page: 'Start', method: 'redirect' })
+          trackEvent(EVENTS.OnboardingSigninCompleted, { page: 'Start', method: 'redirect' })
           if (p.next === 'age') go('age')
           else afterSignIn()
         }
@@ -202,14 +202,14 @@ export default function StartFlow() {
     setError(null)
     setBusy(true)
     try {
-      trackEvent('Onboarding Signin Started', { page: 'Start', at: next })
+      trackEvent(EVENTS.OnboardingSigninStarted, { page: 'Start', at: next })
       const u = await signInWithGoogle({ source: 'start', next })
       if (!u) return
-      trackEvent('Onboarding Signin Completed', { page: 'Start', method: 'popup' })
+      trackEvent(EVENTS.OnboardingSigninCompleted, { page: 'Start', method: 'popup' })
       if (next === 'age') go('age')
       else afterSignIn()
     } catch (e) {
-      trackEvent('Onboarding Signin Failed', { page: 'Start', at: next, code: (e as { code?: string })?.code || 'unknown' })
+      trackEvent(EVENTS.OnboardingSigninFailed, { page: 'Start', at: next, code: (e as { code?: string })?.code || 'unknown' })
       setError('Google sign-in did not go through. Please try again.')
     } finally {
       setBusy(false)
@@ -235,7 +235,7 @@ export default function StartFlow() {
     setBusy(true)
     try {
       await unseal()
-      trackEvent('Onboarding Completed', { page: 'Start', outcome: 'free_week', emailed: !!resultsRef.current.emailedTo })
+      trackEvent(EVENTS.OnboardingCompleted, { page: 'Start', outcome: 'free_week', emailed: !!resultsRef.current.emailedTo })
     } catch (e) {
       if (e instanceof ApiError && e.status === 401) { setStep('signin'); return }
       setError(

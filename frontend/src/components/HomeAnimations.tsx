@@ -91,32 +91,7 @@ export default function HomeAnimations() {
       navObserver.observe(heroEl)
     }
 
-    // ── Scroll reveals (.rv) ───────────────────────────────────────────
-    // Premium/calm personality: one entrance pattern, stagger capped so a
-    // group never takes longer than ~420ms to arrive. Content stays visible
-    // if this never runs, because hiding only applies under html.motion.
-    const root = document.documentElement
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    root.classList.add('motion')
-    document.querySelectorAll<HTMLElement>('[data-stagger]').forEach((group) => {
-      const step = Number(group.dataset.stagger || 60)
-      const kids = Array.from(group.querySelectorAll<HTMLElement>(':scope > .rv, :scope > * > .rv'))
-      const cap = 420
-      kids.forEach((k, i) => k.style.setProperty('--d', `${reduce ? 0 : Math.min(i * step, cap)}ms`))
-    })
-    const rvObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return
-          entry.target.classList.add('in')
-          rvObserver.unobserve(entry.target)
-        })
-      },
-      // threshold 0: tall blocks (plan card, chapter grid) must start revealing as soon
-      // their top edge enters, or the bottom of the screen sits blank.
-      { threshold: 0, rootMargin: '0px 0px -24px 0px' }
-    )
-    document.querySelectorAll('.rv').forEach((el) => rvObserver.observe(el))
+    // Scroll reveals (.rv) run site-wide in components/site/Motion.tsx.
     const weekObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -134,7 +109,6 @@ export default function HomeAnimations() {
       countObserver.disconnect()
       navObserver?.disconnect()
       faqHandlers.forEach(({ btn, fn }) => btn.removeEventListener('click', fn))
-      rvObserver.disconnect()
       weekObserver.disconnect()
     }
   }, [])

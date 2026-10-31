@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { api, bgLink } from '@/lib/funnelClient'
-import { trackEvent } from '@/lib/mixpanel'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
 
 export type WebPlanData = {
   mirror: string | null
@@ -114,7 +114,7 @@ function CancelLink() {
           onClick={async () => {
             try {
               await api('/api/pay/cancel', { body: {} })
-              trackEvent('Subscription Cancelled', { product: 'web_plan_weekly' })
+              trackEvent(EVENTS.SubscriptionCancelled, { product: 'web_plan_weekly' })
               setState('done')
             } catch {
               setState('error')

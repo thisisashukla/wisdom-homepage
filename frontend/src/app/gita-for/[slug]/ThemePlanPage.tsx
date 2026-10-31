@@ -1,7 +1,9 @@
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import HeroPlanCTA from '@/components/funnel/HeroPlanCTA'
+import { Actions, Faq, JsonLd, PageHero, Section } from '@/components/site'
+import PlanFine from '@/components/plan/PlanFine'
+import { planAction } from '@/components/plan/planAction'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import SanskritText from '@/components/gita/SanskritText'
 import ThemePlanClient from '@/components/plan/ThemePlanClient'
@@ -10,9 +12,6 @@ import { gitaForBySlug } from '@/lib/gitaFor'
 import { appStoreUrl } from '@/lib/app'
 import { PHASE_LABEL, THEME_PLANS, THEME_PLANS_PUBLISHED, THEME_READING, planGroupOf, planMinutesTotal, planSources, type ThemePlan } from '@/lib/themePlans'
 import { themeHero, type ThemeVariant } from '@/lib/themeAssets'
-import '../../home.css'
-import '../../home-v3.css'
-import '../gita-for.css'
 import '../theme-plan.css'
 
 const BASE = 'https://wisdomquotes.in'
@@ -67,7 +66,7 @@ export default async function ThemePlanPage({ plan, variant }: { plan: ThemePlan
           .filter((x) => x.r && x.verse)
           .map(({ r }) => ({ '@type': 'CreativeWork', name: `Bhagavad Gita ${r![0]}.${r![1]}`, url: `${BASE}${verseUrl(r![0], r![1])}` })),
         isPartOf: { '@type': 'CollectionPage', name: 'Bhagavad Gita reading plans', url: `${BASE}/reading-plans` },
-        speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.tp-h1', '.tp-intro', '.tp-line'] },
+        speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.sx-h1', '.tp-intro', '.tp-line'] },
         isAccessibleForFree: true,
         timeRequired: `PT${planMinutesTotal(plan)}M`,
       },
@@ -107,66 +106,53 @@ export default async function ThemePlanPage({ plan, variant }: { plan: ThemePlan
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Nav pageName={pageName} />
+      <JsonLd data={schema} />
+      <Nav />
 
       <article className={`tp tp-${plan.slug}`} data-theme={plan.slug} data-variant={variant} suppressHydrationWarning>
         <script dangerouslySetInnerHTML={{ __html: REVEAL_BOOT }} />
 
         {/* ── Hero ── */}
-        <header className="tp-hero">
-          <picture className="tp-hero-art">
-            <source media="(max-width: 700px)" srcSet={hero.mobile} />
-            <img src={hero.desktop} alt={hero.alt} width={1920} height={1080} decoding="async" fetchPriority="high" />
-          </picture>
-          <div className="tp-hero-shade" aria-hidden="true" />
-          <div className="wrap tp-hero-inner">
-            <nav className="gf-crumbs tp-crumbs" aria-label="Breadcrumb">
-              <a href="/">Home</a> / <a href="/reading-plans">Reading plans</a> / <span>{plan.label}</span>
-            </nav>
-            <div className="tp-eyebrow">7-verse reading plan</div>
-            <h1 className="tp-h1">{plan.h1}</h1>
-            <p className="tp-sub">{plan.subtitle}</p>
-            <ul className="tp-facts" aria-label="About this plan">
-              <li>7 verses</li>
-              <li>{planSources(plan)}</li>
-              <li>About {planMinutesTotal(plan)} min to read</li>
-              <li>Sanskrit, English, audio</li>
-            </ul>
-            <div className="tp-hero-actions">
-              <a href="#verse-1" className="btn-read-gita btn-read-gita-primary tp-start" data-mp-location={`theme_${plan.slug}_start`} data-mp-event="Theme CTA Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, cta: 'start_verse_1' })}>
-                Read the first verse
-              </a>
-              <a href="#verse-1" className="tp-continue" hidden data-mp-location={`theme_${plan.slug}_continue`}>
-                <span>Pick up where you left off</span> →
-              </a>
-            </div>
-          </div>
-        </header>
+        <PageHero
+          crumbs={[
+            { label: 'Reading plans', href: '/reading-plans' },
+            { label: plan.label, href: `/gita-for/${plan.slug}` },
+          ]}
+          crumbsLd={false}
+          art={{ src: hero.desktop, alt: hero.alt, width: 1920, height: 1080 }}
+          eyebrow="7-verse reading plan"
+          title={plan.h1}
+          sub={plan.subtitle}
+          facts={['7 verses', planSources(plan), `About ${planMinutesTotal(plan)} min to read`, 'Sanskrit, English, audio']}
+          actions={[{ href: '#verse-1', label: 'Read the first verse', location: `theme_${plan.slug}_start` }]}
+          below={
+            <a href="#verse-1" className="sx-btn sx-btn--link tp-continue" hidden data-mp-location={`theme_${plan.slug}_continue`}>
+              <span>Pick up where you left off</span> →
+            </a>
+          }
+        />
 
         {/* ── Intro and the week at a glance ── */}
-        <section className="section tp-introsec">
-          <div className="wrap tp-col">
-            <p className="tp-intro">{plan.intro}</p>
-            <h2 className="tp-h2">The seven verses</h2>
-            <ol className="tp-strip">
-              {plan.days.map((d) => (
-                <li key={d.day}>
-                  <a href={`#verse-${d.day}`} className="tp-strip-item" data-day={d.day} data-mp-location={`theme_${plan.slug}_strip_${d.day}`} data-mp-event="Theme Strip Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, verse: d.day })}>
-                    <span className="tp-strip-n">Verse {d.day}</span>
-                    <span className="tp-strip-phase">{PHASE_LABEL[d.phase]}</span>
-                    <span className="tp-strip-head">{d.heading}</span>
-                    <span className="tp-strip-ref">{d.ref ? `Gita ${d.ref[0]}.${d.ref[1]}` : (d.verse?.ref ?? d.story?.source ?? '').split(',')[0]}</span>
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
+        <Section id="glance" width="narrow" spacing="tight" rv={false}>
+          <p className="tp-intro">{plan.intro}</p>
+          <h2 className="sx-h2">The seven verses</h2>
+          <ol className="tp-strip">
+            {plan.days.map((d) => (
+              <li key={d.day}>
+                <a href={`#verse-${d.day}`} className="tp-strip-item" data-day={d.day} data-mp-location={`theme_${plan.slug}_strip_${d.day}`} data-mp-event="Theme Strip Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, verse: d.day })}>
+                  <span className="tp-strip-n">Verse {d.day}</span>
+                  <span className="tp-strip-phase">{PHASE_LABEL[d.phase]}</span>
+                  <span className="tp-strip-head">{d.heading}</span>
+                  <span className="tp-strip-ref">{d.ref ? `Gita ${d.ref[0]}.${d.ref[1]}` : (d.verse?.ref ?? d.story?.source ?? '').split(',')[0]}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </Section>
 
         {/* ── The week ── */}
-        <section className="section tp-weeksec" aria-label="The seven verses">
-          <div className="wrap tp-col tp-week">
+        <section className="sx-section sx-section--tight tp-weeksec" aria-label="The seven verses">
+          <div className="sx-wrap sx-wrap--narrow tp-week">
             <div className="tp-thread" aria-hidden="true"><div className="tp-thread-fill" /></div>
 
             {days.map(({ d, r, verse, audio }) => {
@@ -242,111 +228,103 @@ export default async function ThemePlanPage({ plan, variant }: { plan: ThemePlan
 
             <div className="tp-done" data-mp-section={`theme_${plan.slug}_done`}>
               <div className="tp-done-seal" aria-hidden="true">✦</div>
-              <h2 className="tp-h2">That&apos;s all seven.</h2>
+              <h2 className="sx-h2">That&apos;s all seven.</h2>
               <p>
-                Come back to the one that stayed with you. Or let Wisdom pick seven verses for your own situation, with the Sanskrit
-                read aloud.
+                Come back to the one that stayed with you, or let Wisdom pick seven verses for your own
+                situation.
               </p>
             </div>
           </div>
         </section>
 
         {/* ── Next step ── */}
-        <section className="section section-alt" id="find">
-          <div className="wrap tp-col gf-widget">
-            <div className="eyebrow">Your situation is your own</div>
-            <h2 className="heading">Seven verses picked for <em>your</em> {plan.label.toLowerCase()}.</h2>
-            <p className="subtext">
-              Everyone gets the same seven on this page. Tell Wisdom what you&apos;re facing in a sentence or two, and it picks verses for you.
-            </p>
-            <div id="your-verse">
-              <HeroPlanCTA campaign={`web_theme_${plan.slug}`} location={`theme_${plan.slug}_create_plan`} pageName={pageName} situation={legacy?.situation} />
-            </div>
-            <p className="gf-app">
-              On iPhone, Wisdom gives you one verse each morning, read aloud.{' '}
-              <a href={appStoreUrl(`web_theme_${plan.slug.replace(/-/g, '_')}`)} target="_blank" rel="noopener" data-mp-location={`theme_${plan.slug}_app`} data-mp-event="Theme CTA Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, cta: 'app_store' })}>
-                Get the app →
-              </a>
-            </p>
+        <Section
+          id="find"
+          tone="band"
+          width="narrow"
+          eyebrow="Your situation is your own"
+          title={
+            <>
+              Seven verses picked for <em>your</em> {plan.label.toLowerCase()}.
+            </>
+          }
+          intro="Everyone gets the same seven on this page. Tell Wisdom what you're facing in a sentence or two, and it picks verses for you."
+        >
+          <div id="your-verse">
+            <Actions items={[planAction({ campaign: `web_theme_${plan.slug}`, location: `theme_${plan.slug}_create_plan`, situation: legacy?.situation })]} />
+            <PlanFine />
           </div>
-        </section>
+          <p className="plan-app">
+            On iPhone, Wisdom gives you one verse each morning, read aloud.{' '}
+            <a href={appStoreUrl(`web_theme_${plan.slug.replace(/-/g, '_')}`)} target="_blank" rel="noopener" data-mp-location={`theme_${plan.slug}_app`} data-mp-event="Theme CTA Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, cta: 'app_store' })}>
+              Get the app →
+            </a>
+          </p>
+        </Section>
 
-        {/* ── FAQ ── */}
-        <section className="section">
-          <div className="wrap tp-col">
-            <h2 className="tp-h2">Common questions</h2>
-            <div className="tp-faq">
-              {plan.faq.map((f) => (
-                <details key={f.q} className="tp-faq-item" data-track="faq" data-q={f.q}>
-                  <summary>{f.q}</summary>
-                  <p>{f.a}</p>
-                </details>
-              ))}
-              <details className="tp-faq-item" data-track="faq" data-q="One verse a day or all seven at once?">
-                <summary>Should I read one verse a day or all seven at once?</summary>
-                <p>
-                  Either works. All seven take about {planMinutesTotal(plan)} minutes. One a day gives each verse time to settle, and the
-                  page remembers where you stopped.
-                </p>
-              </details>
+        {/* ── FAQ ── (Theme FAQ Opened: ThemePlanClient listens for details[data-track="faq"]) */}
+        <Section id="faq" title="Common questions" width="narrow">
+          <Faq
+            ld={false}
+            items={[
+              ...plan.faq,
+              {
+                q: 'Should I read one verse a day or all seven at once?',
+                a: `Either works. All seven take about ${planMinutesTotal(plan)} minutes. One a day gives each verse time to settle, and the page remembers where you stopped.`,
+              },
+            ]}
+          />
+
+          {more.length > 0 && (
+            <div className="tp-more-block">
+              <h2 className="sx-h2">More Gita verses on {plan.label.toLowerCase()}</h2>
+              <ul className="tp-more">
+                {more.map((v) => (
+                  <li key={`${v.chapter}.${v.verse}`}>
+                    <a href={verseUrl(v.chapter, v.verse)} data-mp-location={`theme_${plan.slug}_more_${v.chapter}_${v.verse}`}>Bhagavad Gita {v.chapter}.{v.verse}</a>
+                    <span>{v.why}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
+          )}
 
-            {more.length > 0 && (
-              <>
-                <h2 className="tp-h2 tp-more-h">More Gita verses on {plan.label.toLowerCase()}</h2>
-                <ul className="tp-more">
-                  {more.map((v) => (
-                    <li key={`${v.chapter}.${v.verse}`}>
-                      <a href={verseUrl(v.chapter, v.verse)} data-mp-location={`theme_${plan.slug}_more_${v.chapter}_${v.verse}`}>Bhagavad Gita {v.chapter}.{v.verse}</a>
-                      <span>{v.why}</span>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
+          {reading.length > 0 && (
+            <div className="tp-more-block">
+              <h2 className="sx-h2">Read further</h2>
+              <ul className="tp-more">
+                {reading.map((l) => (
+                  <li key={l.href}><a href={l.href} data-mp-location={`theme_${plan.slug}_read_${l.href.split('/').pop()}`} data-mp-event="Theme Further Reading Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, to: l.href })}>{l.label}</a></li>
+                ))}
+                <li><a href="/read-gita-in-18-days" data-mp-location={`theme_${plan.slug}_read_18_days`}>Read the whole Gita in 18 days</a></li>
+              </ul>
+            </div>
+          )}
 
-            {reading.length > 0 && (
-              <>
-                <h2 className="tp-h2 tp-more-h">Read further</h2>
-                <ul className="tp-more">
-                  {reading.map((l) => (
-                    <li key={l.href}><a href={l.href} data-mp-location={`theme_${plan.slug}_read_${l.href.split('/').pop()}`} data-mp-event="Theme Further Reading Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, to: l.href })}>{l.label}</a></li>
-                  ))}
-                  <li><a href="/read-gita-in-18-days" data-mp-location={`theme_${plan.slug}_read_18_days`}>Read the whole Gita in 18 days</a></li>
-                </ul>
-              </>
-            )}
+          {plan.crisis && (
+            <aside className="tp-crisis" aria-label="If you need help now">
+              <strong>If you&apos;re thinking about harming yourself, please reach out now.</strong> US and Canada: call or text 988. UK and Ireland:
+              Samaritans, 116 123. India: Tele-MANAS, 14416. Australia: Lifeline, 13 11 14. You deserve support from a person.
+            </aside>
+          )}
+        </Section>
 
-            {plan.crisis && (
-              <aside className="tp-crisis" aria-label="If you need help now">
-                <strong>If you&apos;re thinking about harming yourself, please reach out now.</strong> US and Canada: call or text 988. UK and Ireland:
-                Samaritans, 116 123. India: Tele-MANAS, 14416. Australia: Lifeline, 13 11 14. You deserve support from a person.
-              </aside>
-            )}
+        {/* ── Other plans ── (image cards: Theme Related Clicked) */}
+        <Section id="related" tone="band" title="More 7-verse plans">
+          <div className="tp-related" data-stagger="60">
+            {related.map((p) => {
+              const h = themeHero(p, variant)
+              return (
+                <a key={p.slug} href={`/gita-for/${p.slug}`} className="tp-rel rv" data-mp-location={`theme_${plan.slug}_related_${p.slug}`} data-mp-event="Theme Related Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, to: p.slug })}>
+                  <img src={h.tile} alt="" loading="lazy" decoding="async" width={800} height={450} />
+                  <span className="tp-rel-label">{p.label}</span>
+                  <span className="tp-rel-sub">7 verses · {planMinutesTotal(p)} min →</span>
+                </a>
+              )
+            })}
           </div>
-        </section>
-
-        {/* ── Other plans ── */}
-        <section className="section section-alt">
-          <div className="wrap">
-            <div className="tp-related-head">
-              <h2 className="tp-h2">More 7-verse plans</h2>
-              <a href="/reading-plans" data-mp-location={`theme_${plan.slug}_all_plans`}>All reading plans →</a>
-            </div>
-            <div className="tp-related">
-              {related.map((p) => {
-                const h = themeHero(p, variant)
-                return (
-                  <a key={p.slug} href={`/gita-for/${p.slug}`} className="tp-rel" data-mp-location={`theme_${plan.slug}_related_${p.slug}`} data-mp-event="Theme Related Clicked" data-mp-props={JSON.stringify({ theme: plan.slug, to: p.slug })}>
-                    <img src={h.tile} alt="" loading="lazy" decoding="async" width={800} height={450} />
-                    <span className="tp-rel-label">{p.label}</span>
-                    <span className="tp-rel-sub">7 verses · {planMinutesTotal(p)} min →</span>
-                  </a>
-                )
-              })}
-            </div>
-          </div>
-        </section>
+          <Actions className="tp-related-all" items={[{ href: '/reading-plans', label: 'All reading plans →', location: `theme_${plan.slug}_all_plans`, variant: 'link' }]} />
+        </Section>
 
         {/* ── Sticky progress ── */}
         <div className="tp-pill" role="status" aria-live="polite">

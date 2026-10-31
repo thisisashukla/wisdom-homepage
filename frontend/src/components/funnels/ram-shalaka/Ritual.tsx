@@ -9,12 +9,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { getRedirectResult } from 'firebase/auth'
+import { VerseCard } from '@/components/site'
 import { useAuth } from '@/context/AuthContext'
 import { auth } from '@/lib/firebase'
 import { identify, signInWithGoogle, takePending } from '@/lib/funnelClient'
 import { detectPlatform } from '@/lib/app'
-import { mixpanel, trackEvent, trackEventBeacon } from '@/lib/mixpanel'
-import { cardImageUrl } from '@/lib/quotes-shared'
+import type { Locale } from '@/lib/locale'
+import { EVENTS, trackEvent, trackEventBeacon, updateProfile } from '@/lib/mixpanel'
+import { SITE } from '@/lib/seo'
 import {
   RS_DAILY,
   RS_FUNNEL,
@@ -26,32 +28,30 @@ import {
   needsExpertNote,
   normQuestion,
   sequence,
-  type RsLocale,
   type RsNextCopy,
   type RsRitualLine,
 } from '@/lib/funnels/ram-shalaka/core'
-import RsNext from './RsNext'
-import { drawCard } from './shareCard'
+import ShalakaNext from './ShalakaNext'
+import ShalakaShare from './ShalakaShare'
 
 type Screen = 'ask' | 'gate' | 'pick' | 'uttar' | 'done'
 type Mem = { day: string; used: number; asked: { h: string; k: number }[]; mala: number[] }
 
 type Props = {
-  locale: RsLocale
-  pageKey: string
-  h1: string
+  locale: Locale
   cells: string[]
   lines: RsRitualLine[]
   ui: Record<string, string>
   naam: string[]
   next: RsNextCopy
   langHref: string
-  siteUrl: string
 }
 
 const COUNT_DELAY_MS = 700
 const FLY_MS = 560
 const AFTER_COUNT_MS = 1300
+/** The chaupai card mounts once the seal has landed, so its kit reveal plays as the next beat. */
+const VERSE_AT_MS = 1000
 
 /** Slow, fast, slow: the shalaka gathers speed through the middle of the count. */
 const hopGap = (i: number) => Math.round(70 + 210 * (1 - Math.sin(Math.PI * (i / 24))))
@@ -98,13 +98,8 @@ function markFreeUsed() {
 }
 /** Counts on the person's Mixpanel profile, once they are identified. */
 function bumpProfile(sign: string) {
-  try {
-    mixpanel.people.increment({ shalaka_asks: 1, [`shalaka_${sign}`]: 1 })
-    mixpanel.people.set_once({ shalaka_first_at: new Date().toISOString() })
-    mixpanel.people.set({ shalaka_last_at: new Date().toISOString() })
-  } catch {
-    // mixpanel not ready
-  }
+  const now = new Date().toISOString()
+  updateProfile({ increment: { shalaka_asks: 1, [`shalaka_${sign}`]: 1 }, setOnce: { shalaka_first_at: now }, set: { shalaka_last_at: now } })
 }
 
 /* ---------------------------------------------------------------- sound */
@@ -187,7 +182,7 @@ const PETALS = Array.from({ length: 28 }, (_, i) => {
 })
 
 /* ---------------------------------------------------------------- ritual */
-export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, next, langHref, siteUrl }: Props) {
+export default function Ritual({ locale, cells, lines, ui, naam, next, langHref }: Props) {
   const [screen, setScreen] = useState<Screen>('ask')
   const [mem, setMem] = useState<Mem>({ day: '', used: 0, asked: [], mala: [] })
   const [sound, setSound] = useState(true)
@@ -201,22 +196,18 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
   const [complete, setComplete] = useState(false)
   const [focusIdx, setFocusIdx] = useState(112)
   const [current, setCurrent] = useState<number | null>(null)
-  const [script, setScript] = useState<'deva' | 'iast'>('deva')
+  const [showVerse, setShowVerse] = useState(false)
   const [tab, setTab] = useState<'you' | 'scene'>('you')
   const [expert, setExpert] = useState(false)
-  const [modal, setModal] = useState(false)
-  const [copied, setCopied] = useState(false)
   const [resetText, setResetText] = useState('')
   const [moved, setMoved] = useState(false)
-  const [cardUrl, setCardUrl] = useState('')
   const [gateBusy, setGateBusy] = useState(false)
   const [gateError, setGateError] = useState(false)
   const [freeCount, setFreeCount] = useState(0)
   const { user } = useAuth()
   const signedIn = !!user
-  const cardBlob = useRef<{ k: number; blob: Blob } | null>(null)
 
-  const base = useMemo(() => ({ funnel: RS_FUNNEL, page: pageKey, locale, signed_in: signedIn }), [pageKey, locale, signedIn])
+  const base = useMemo(() => ({ signed_in: signedIn }), [signedIn])
   const soundOn = useRef(true)
   const busy = useRef(false)
   const timers = useRef<number[]>([])
@@ -224,15 +215,10 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
   const trayRef = useRef<HTMLDivElement>(null)
   const flyRef = useRef<HTMLDivElement>(null)
   const headRef = useRef<HTMLHeadingElement>(null)
-  const closeRef = useRef<HTMLButtonElement>(null)
-  const shareRef = useRef<HTMLButtonElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
   const shownScreen = useRef<Screen>('ask')
 
-  const nextCopy = useMemo(
-    () => ({ planTitle: ui.planTitle, planSub: ui.planSub, planBtn: ui.planBtn, planFree: ui.planFree, appLine: next.app.line, appBtn: next.app.cta }),
-    [ui, next],
-  )
+  const plan = useMemo(() => ({ planTitle: ui.planTitle, planSub: ui.planSub, planBtn: ui.planBtn, planFree: ui.planFree }), [ui])
   const chips = useMemo(
     () =>
       (ui.chips || '')
@@ -252,7 +238,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
         const p = takePending()
         if (p?.source !== RS_FUNNEL) return
         identify(cred.user)
-        trackEvent('Shalaka Signin Completed', { funnel: RS_FUNNEL, page: pageKey, locale, signed_in: true, method: 'redirect' })
+        trackEvent(EVENTS.ShalakaSigninCompleted, { signed_in: true, method: 'redirect' })
       })
       .catch(() => {})
     setMem(readMem())
@@ -268,10 +254,11 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
     } catch {
       referrer = ''
     }
-    trackEvent('Shalaka Opened', { ...base, lang: locale, device: detectPlatform(), referrer: referrer || 'direct', free_used: freeUsed() })
+    trackEvent(EVENTS.ShalakaOpened, { ...base, device: detectPlatform(), referrer: referrer || 'direct', free_used: freeUsed() })
     const ts = timers.current
     return () => ts.forEach((t) => window.clearTimeout(t))
-  }, [base, locale])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Move focus to the new screen's heading so keyboard and screen reader users follow along.
   useEffect(() => {
@@ -280,21 +267,22 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
     setMoved(true)
     headRef.current?.focus({ preventScroll: true })
     const top = panelRef.current?.getBoundingClientRect().top ?? 0
-    if (top < -40 || top > 120) window.scrollTo({ top: window.scrollY + top - 60, behavior: reduce || Math.abs(top) > 900 ? 'instant' : 'smooth' })
+    if (top < -40 || top > 120) window.scrollTo({ top: window.scrollY + top - 80, behavior: reduce || Math.abs(top) > 900 ? 'instant' : 'smooth' })
   }, [screen, reduce])
 
+  // The verdict, beat by beat: seal, directive, then the chaupai card with its own reveal.
   useEffect(() => {
-    if (!modal) return
-    closeRef.current?.focus()
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setModal(false)
-        shareRef.current?.focus()
-      }
+    if (screen !== 'uttar') {
+      setShowVerse(false)
+      return
     }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [modal])
+    if (reduce) {
+      setShowVerse(true)
+      return
+    }
+    const t = window.setTimeout(() => setShowVerse(true), VERSE_AT_MS)
+    return () => window.clearTimeout(t)
+  }, [screen, reduce, current])
 
   const later = (fn: () => void, ms: number) => {
     timers.current.push(window.setTimeout(fn, ms))
@@ -318,12 +306,12 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
       const prev = mem.asked.find((a) => a.h === h)
       if (prev) {
         setRepeatK(prev.k)
-        trackEvent('Repeat Question Blocked', { ...base, k: prev.k })
+        trackEvent(EVENTS.RepeatQuestionBlocked, { ...base, k: prev.k, item_id: `rs-${lines[prev.k].n}`, item_type: 'shalaka' })
         return
       }
     }
     if (mem.used >= RS_DAILY) {
-      trackEvent('Daily Limit Reached', { ...base })
+      trackEvent(EVENTS.DailyLimitReached, { ...base })
       goDone()
       return
     }
@@ -331,7 +319,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
     if (!isSignedIn && freeUsed() >= FREE_ATTEMPTS) {
       setGateError(false)
       setScreen('gate')
-      trackEvent('Shalaka Gate Shown', { ...base, typed: !!q, free_used: freeUsed(), asked_today: mem.used })
+      trackEvent(EVENTS.ShalakaGateViewed, { ...base, typed: !!q, free_used: freeUsed(), asked_today: mem.used })
       return
     }
     startPick()
@@ -339,11 +327,11 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
 
   const startPick = () => {
     const q = normQuestion(question)
-    trackEvent('Sankalp Set', { ...base, typed: !!q, chip: chips.some((c) => c.q === question) })
+    trackEvent(EVENTS.SankalpSet, { ...base, typed: !!q, chip: chips.some((c) => c.q === question) })
     setExpert(needsExpertNote(question))
     setAsked(question.trim())
     setAskedSit(chips.find((c) => c.q === question)?.sit ?? null)
-    trackEvent('Shalaka Grid Shown', { ...base, typed: !!q })
+    trackEvent(EVENTS.ShalakaGridViewed, { ...base, typed: !!q })
     setChosen(null)
     setStep(0)
     setComplete(false)
@@ -357,24 +345,24 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
     if (gateBusy) return
     setGateBusy(true)
     setGateError(false)
-    trackEvent('Shalaka Signin Started', { ...base })
+    trackEvent(EVENTS.ShalakaSigninStarted, { ...base })
     try {
       const u = await signInWithGoogle({ source: RS_FUNNEL })
       if (!u) {
-        trackEvent('Shalaka Signin Cancelled', { ...base })
+        trackEvent(EVENTS.ShalakaSigninCancelled, { ...base })
         return
       }
-      trackEvent('Shalaka Signin Completed', { ...base, signed_in: true, method: 'popup' })
+      trackEvent(EVENTS.ShalakaSigninCompleted, { ...base, signed_in: true, method: 'popup' })
       startPick()
     } catch (e) {
       setGateError(true)
-      trackEvent('Shalaka Signin Failed', { ...base, code: (e as { code?: string })?.code || 'unknown' })
+      trackEvent(EVENTS.ShalakaSigninFailed, { ...base, code: (e as { code?: string })?.code || 'unknown' })
     } finally {
       setGateBusy(false)
     }
   }
   const onGateBack = () => {
-    trackEvent('Shalaka Gate Dismissed', { ...base })
+    trackEvent(EVENTS.ShalakaGateDismissed, { ...base })
     setScreen(current !== null ? 'uttar' : 'ask')
   }
 
@@ -427,7 +415,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
       markFreeUsed()
       setFreeCount(freeUsed())
     }
-    trackEvent('Shalaka Placed', { ...base, cell: p, veil: false, how, free_attempt: freeAttempt })
+    trackEvent(EVENTS.ShalakaPlaced, { ...base, cell: p, position: p + 1, veil: false, how, free_attempt: freeAttempt })
     setChosen(p)
     setStep(0)
     setCurrent(k)
@@ -442,9 +430,8 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
         () => {
           flyRef.current?.replaceChildren()
           setTab('you')
-          setScript('deva')
           setScreen('uttar')
-          trackEvent('Chaupai Revealed', { ...base, k, n: lines[k].n, sign: lines[k].sign, nth_today: used, typed: !!h, free_attempt: freeAttempt, mala_size: nm.mala.length })
+          trackEvent(EVENTS.ChaupaiRevealed, { ...base, item_id: `rs-${lines[k].n}`, item_type: 'shalaka', k, n: lines[k].n, sign: lines[k].sign, nth_today: used, typed: !!h, free_attempt: freeAttempt, mala_size: nm.mala.length })
           bumpProfile(lines[k].sign)
           later(() => {
             ring(523, 2.2, 0.07)
@@ -494,93 +481,24 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
   const directive = line ? (line.signText.split('·').pop() || '').trim() : ''
   const directiveCap = directive ? directive.charAt(0).toUpperCase() + directive.slice(1) : ''
   const toolPath = locale === 'hi' ? '/hi/ram-shalaka' : '/ram-shalaka'
-  const shareUrl = (n: number, src: string) => `${siteUrl}${toolPath}?utm_source=${src}&utm_medium=share&utm_campaign=rs-${n}`
+  const shareUrl = (n: number, src: string) => `${SITE}${toolPath}?utm_source=${src}&utm_medium=share&utm_campaign=rs-${n}`
   const shareText = (l: RsRitualLine, src: string) =>
     [`${ui.shareInvite} ${l.signWord}`, '', l.deva.join('\n'), '', l.meaning, '', `${ui.shareAsk}: ${shareUrl(l.n, src)}`].join('\n')
-  const waHref = line ? `https://wa.me/?text=${encodeURIComponent(shareText(line, 'whatsapp'))}` : '#'
-  const cardSrc = line ? cardImageUrl(`rs-${line.n}`, { format: 'status', lang: locale, theme: 'night' }) : ''
-  const cardSave = line ? cardImageUrl(`rs-${line.n}`, { format: 'status', lang: locale, theme: 'night', download: true }) : ''
-
-  // Draw the answer card once the seal has landed, so the share sheet can open inside the tap.
-  useEffect(() => {
-    if (screen !== 'uttar' || !line) return
-    if (cardBlob.current?.k === line.k) return
-    let alive = true
-    const t = window.setTimeout(async () => {
-      try {
-        const cs = getComputedStyle(panelRef.current || document.body)
-        const fonts = {
-          brush: cs.getPropertyValue('--rs-brush').trim() || 'serif',
-          scripture: cs.getPropertyValue('--rs-scripture').trim() || 'serif',
-          sans: cs.getPropertyValue('--rs-hi').trim() || 'sans-serif',
-        }
-        const blob = await drawCard(
-          line,
-          {
-            kicker: ui.kicker,
-            lead: ui.verdictLead,
-            directive: directiveCap,
-            source: `${ui.srcPrefix} · ${line.source}`,
-            invite: ui.shareAsk,
-            host: `${siteUrl.replace(/^https?:\/\//, '')}${toolPath}`,
-          },
-          fonts,
-          locale,
-        )
-        if (!alive) return
-        cardBlob.current = { k: line.k, blob }
-        setCardUrl((old) => {
-          if (old) URL.revokeObjectURL(old)
-          return URL.createObjectURL(blob)
-        })
-      } catch {
-        // canvas unavailable: the sheet falls back to the server card
+  const card = line
+    ? {
+        kicker: ui.kicker,
+        lead: ui.verdictLead,
+        directive: directiveCap,
+        source: `${ui.srcPrefix} · ${line.source}`,
+        invite: ui.shareAsk,
+        host: `${SITE.replace(/^https?:\/\//, '')}${toolPath}`,
       }
-    }, 1200)
-    return () => {
-      alive = false
-      window.clearTimeout(t)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [screen, line?.k])
-
-  const onShare = async () => {
-    if (!line) return
-    const nav = navigator as Navigator & { canShare?: (d: ShareData) => boolean }
-    const ready = cardBlob.current?.k === line.k ? cardBlob.current.blob : null
-    if (ready && nav.share && /iphone|ipad|android/i.test(navigator.userAgent)) {
-      const file = new File([ready], `ram-shalaka-${line.slug}.png`, { type: 'image/png' })
-      const data: ShareData = { files: [file], text: shareText(line, 'share') }
-      if (nav.canShare?.(data)) {
-        trackEvent('Shalaka Shared', { ...base, channel: 'native', k: line.k })
-        try {
-          await nav.share(data)
-        } catch {
-          // share sheet dismissed
-        }
-        return
-      }
-    }
-    trackEvent('Shalaka Shared', { ...base, channel: 'card', k: line.k })
-    setModal(true)
-  }
-
-  const onCopy = async () => {
-    if (!line) return
-    trackEvent('Shalaka Shared', { ...base, channel: 'copy', k: line.k })
-    try {
-      await navigator.clipboard.writeText(shareText(line, 'copy'))
-    } catch {
-      // clipboard blocked
-    }
-    setCopied(true)
-    later(() => setCopied(false), 2400)
-  }
+    : null
 
   const onAgain = () => {
-    trackEvent('Shalaka Again Tapped', { ...base, left: Math.max(0, RS_DAILY - mem.used), gated: !signedIn && freeCount >= FREE_ATTEMPTS })
+    trackEvent(EVENTS.ShalakaAgainClicked, { ...base, left: Math.max(0, RS_DAILY - mem.used), gated: !signedIn && freeCount >= FREE_ATTEMPTS })
     if (mem.used >= RS_DAILY) {
-      trackEvent('Daily Limit Reached', { ...base })
+      trackEvent(EVENTS.DailyLimitReached, { ...base })
       goDone()
       return
     }
@@ -596,7 +514,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
     const v = !sound
     setSound(v)
     soundOn.current = v
-    trackEvent('Shalaka Sound Toggled', { ...base, on: v })
+    trackEvent(EVENTS.ShalakaSoundToggled, { ...base, to: v ? 'on' : 'off' })
     if (v) bell(1320, 0.4, 0.03)
   }
 
@@ -642,7 +560,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
                 aria-label={`${ui.malaBead} ${l.n}: ${l.deva[0].replace(/[।॥]/g, '')}`}
                 data-mp-location="rs_mala"
                 hrefLang="hi"
-                onClick={() => trackEventBeacon('Shalaka Mala Opened', { ...base, k: l.k, got, screen })}
+                onClick={() => trackEventBeacon(EVENTS.ShalakaMalaOpened, { ...base, item_id: `rs-${l.n}`, item_type: 'shalaka', k: l.k, got, screen })}
               >
                 <span aria-hidden="true" />
               </a>
@@ -690,14 +608,13 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
               </span>
             ))}
           </div>
-          <h1 className="rs-kicker">{h1}</h1>
           <div className="rs-bar-r">
             <a data-mp-tracked=""
               className="rs-chip"
               href={langHref}
               hrefLang={locale === 'hi' ? 'en' : 'hi'}
               lang={locale === 'hi' ? 'en' : 'hi'}
-              onClick={() => trackEventBeacon('Shalaka Language Switched', { ...base, to: locale === 'hi' ? 'en' : 'hi', screen })}
+              onClick={() => trackEventBeacon(EVENTS.LanguageSwitched, { ...base, to: locale === 'hi' ? 'en' : 'hi', screen })}
             >
               {ui.langSwitch}
             </a>
@@ -748,7 +665,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
                   className={`rs-pill${question === c.q ? ' on' : ''}`}
                   aria-pressed={question === c.q}
                   onClick={() => {
-                    if (question !== c.q) trackEvent('Shalaka Example Picked', { ...base, label: c.label })
+                    if (question !== c.q) trackEvent(EVENTS.ShalakaExampleSelected, { ...base, label: c.label })
                     setQuestion(question === c.q ? '' : c.q)
                     setRepeatK(null)
                   }}
@@ -757,7 +674,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
                 </button>
               ))}
             </div>
-            <button type="button" className="rs-cta" onClick={onAsk}>
+            <button type="button" className="sx-btn sx-btn--primary sx-btn--block rs-go" onClick={onAsk}>
               {ui.askBtn}
             </button>
             {repeatK !== null && (
@@ -849,7 +766,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
                   <h2 className="rs-pick-title" ref={headRef} tabIndex={-1}>
                     {ui.pickTitle}
                   </h2>
-                  <button type="button" className="rs-ghost" onClick={() => place(Math.floor(Math.random() * 225), 'random')}>
+                  <button type="button" className="sx-btn rs-ghost" onClick={() => place(Math.floor(Math.random() * 225), 'random')}>
                     {ui.pickRandom}
                   </button>
                 </div>
@@ -894,57 +811,54 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
               </div>
             </div>
             <p className="rs-directive">{directiveCap}</p>
-            <p className={`rs-chaupai${script === 'iast' ? ' iast' : ''}`} lang={script === 'iast' ? 'hi-Latn' : 'hi'}>
-              {(script === 'iast' ? line.iast : line.deva).map((half, r) => (
-                <span key={r} className="rs-half">
-                  {half.split(' ').map((w, i) => (
-                    <span key={i} className="rs-w" style={{ '--i': r * 6 + i } as CSSProperties}>
-                      {w}{' '}
-                    </span>
-                  ))}
-                </span>
-              ))}
-            </p>
-            <p className="rs-src">
-              {ui.srcPrefix} · {line.source}
-              <button type="button" className="rs-scr" aria-pressed={script === 'iast'} onClick={() => {
-                  trackEvent('Shalaka Script Toggled', { ...base, to: script === 'deva' ? 'iast' : 'deva' })
-                  setScript((s) => (s === 'deva' ? 'iast' : 'deva'))
-                }}>
-                {script === 'deva' ? 'ABC' : 'अआ'}
-              </button>
-            </p>
-            <p className="rs-mean">{line.meaning}</p>
+            <div className="rs-verse-slot">
+              {showVerse && card && (
+                <div className="rs-verse-in">
+                  <VerseCard
+                    original={line.deva}
+                    iast={line.iast}
+                    meaning={line.meaning}
+                    source={`${ui.srcPrefix} · ${line.source}`}
+                    lang="awa"
+                    locale={locale}
+                    toggle
+                    reveal
+                    actions={
+                      <>
+                        <p className="rs-share-label">{ui.shareBtn}</p>
+                        <ShalakaShare
+                          key={line.k}
+                          line={line}
+                          locale={locale}
+                          card={card}
+                          copyText={shareText(line, 'copy')}
+                          shareText={shareText(line, 'whatsapp')}
+                          nextStep={false}
+                          props={{ ...base, k: line.k, sign: line.sign }}
+                          size="compact"
+                        />
+                      </>
+                    }
+                  />
+                </div>
+              )}
+            </div>
             {expert && <p className="rs-expert">{ui.expertNote}</p>}
 
             <div className="rs-acts">
-              <button type="button" className="rs-cta gold" ref={shareRef} onClick={onShare}>
-                {ui.shareBtn}
+              <button type="button" className="sx-btn sx-btn--block rs-again" onClick={onAgain}>
+                {left > 0 ? (
+                  <>
+                    {ui.again} <small>{!signedIn && freeCount >= FREE_ATTEMPTS ? ui.againGated : `${left} ${ui.left}`}</small>
+                  </>
+                ) : (
+                  ui.tomorrow
+                )}
               </button>
-              <div className="rs-acts-row">
-                <a data-mp-tracked=""
-                  className="rs-ghost"
-                  href={waHref}
-                  target="_blank"
-                  rel="noopener"
-                  onClick={() => trackEventBeacon('Shalaka Shared', { ...base, channel: 'whatsapp', k: line.k })}
-                >
-                  {ui.waBtn}
-                </a>
-                <button type="button" className="rs-ghost" onClick={onAgain}>
-                  {left > 0 ? (
-                    <>
-                      {ui.again} <small>{!signedIn && freeCount >= FREE_ATTEMPTS ? ui.againGated : `${left} ${ui.left}`}</small>
-                    </>
-                  ) : (
-                    ui.tomorrow
-                  )}
-                </button>
-              </div>
             </div>
 
             <div className="rs-next-wrap">
-              <RsNext locale={locale} pageKey={pageKey} placement="answer" copy={nextCopy} n={line.n} k={line.k} situation={askedSit} signedIn={signedIn} />
+              <ShalakaNext locale={locale} placement="answer" plan={plan} next={next} n={line.n} situation={askedSit} />
             </div>
 
             <div className="rs-deeper">
@@ -968,7 +882,7 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
                   aria-controls="rs-tabpanel"
                   className="rs-tab"
                   onClick={() => {
-                    if (tab !== 'scene') trackEvent('Prasang Opened', { ...base, k: line.k })
+                    if (tab !== 'scene') trackEvent(EVENTS.PrasangOpened, { ...base, item_id: `rs-${line.n}`, item_type: 'shalaka', k: line.k })
                     setTab('scene')
                   }}
                 >
@@ -980,7 +894,13 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
               </p>
               {mala}
               <div className="rs-links">
-                <a href={lineHref(line.slug)} hrefLang="hi" data-mp-location="rs_answer_line" onClick={() => trackEventBeacon('Shalaka Line Opened', { ...base, k: line.k })}>
+                <a
+                  className="sx-btn sx-btn--link"
+                  href={lineHref(line.slug)}
+                  hrefLang="hi"
+                  data-mp-location="rs_answer_line"
+                  onClick={() => trackEventBeacon(EVENTS.LineOpened, { ...base, item_id: `rs-${line.n}`, item_type: 'shalaka', k: line.k, location: 'answer' })}
+                >
                   {ui.readLine}
                 </a>
               </div>
@@ -1004,51 +924,16 @@ export default function Ritual({ locale, pageKey, h1, cells, lines, ui, naam, ne
             </p>
             {mala}
             <div className="rs-next-wrap">
-              <RsNext locale={locale} pageKey={pageKey} placement="done" copy={nextCopy} n={line?.n ?? null} k={line?.k ?? null} situation={askedSit} signedIn={signedIn} />
+              <ShalakaNext locale={locale} placement="done" plan={plan} next={next} n={line?.n ?? null} situation={askedSit} />
             </div>
             {line && (
-              <button type="button" className="rs-ghost" onClick={() => setScreen('uttar')}>
+              <button type="button" className="sx-btn rs-ghost" onClick={() => setScreen('uttar')}>
                 {ui.seeMala}
               </button>
             )}
           </div>
         )}
       </div>
-
-      {modal && line && (
-        <div className="rs-modal" role="dialog" aria-modal="true" aria-label={ui.cardTitle} onClick={(e) => e.target === e.currentTarget && setModal(false)}>
-          <div className="rs-modal-box">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="rs-card-img" src={cardUrl || cardSrc} alt={ui.cardAlt} width={1080} height={1920} />
-            <div className="rs-acts">
-              <a data-mp-tracked=""
-                className="rs-cta gold"
-                href={cardUrl || cardSave}
-                download={`ram-shalaka-${line.slug}.png`}
-                onClick={() => trackEventBeacon('Shalaka Shared', { ...base, channel: 'save_image', k: line.k })}
-              >
-                {ui.saveImage}
-              </a>
-              <div className="rs-acts-row">
-                <button type="button" className="rs-ghost" onClick={onCopy} aria-live="polite">
-                  {copied ? ui.copied : ui.copyBtn}
-                </button>
-                <button
-                  type="button"
-                  className="rs-ghost"
-                  ref={closeRef}
-                  onClick={() => {
-                    setModal(false)
-                    shareRef.current?.focus()
-                  }}
-                >
-                  {ui.close}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   )
 }

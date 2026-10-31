@@ -19,13 +19,13 @@
  */
 
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
-import { trackEvent, trackEventBeacon } from '@/lib/mixpanel'
-import { baseProps, type BeadInfo, type HcLocale } from '@/lib/funnels/hanuman-chalisa/shared'
+import { EVENTS, trackEvent, trackEventBeacon } from '@/lib/mixpanel'
+import type { Locale } from '@/lib/locale'
+import { kindOf, type BeadInfo } from '@/lib/funnels/hanuman-chalisa/shared'
 
 export type MalaProps = {
   beads: BeadInfo[]
-  locale: HcLocale
-  page: string
+  locale: Locale
   /** 'anchor': beads jump within the page and follow the line in view. 'page': beads open line pages. 'button': calls onSelect. */
   mode: 'anchor' | 'page' | 'button'
   currentId?: string | null
@@ -60,7 +60,6 @@ const T = {
 export default function Mala({
   beads,
   locale,
-  page,
   mode,
   currentId = null,
   learned = [],
@@ -113,15 +112,18 @@ export default function Mala({
   // Anchor mode: the bead follows the line in view.
   useEffect(() => {
     if (mode !== 'anchor' || typeof IntersectionObserver === 'undefined') return
-    const els = beads
-      .map((b) => document.getElementById(b.href.slice(1)))
-      .filter((x): x is HTMLElement => !!x)
+    const idOf = new Map<Element, string>()
+    for (const b of beads) {
+      const el = document.getElementById(b.href.slice(1))
+      if (el) idOf.set(el, b.id)
+    }
+    const els = Array.from(idOf.keys())
     if (!els.length) return
     const io = new IntersectionObserver(
       (entries) => {
         const vis = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
         if (!vis.length) return
-        const id = vis[0].target.getAttribute('data-unit')
+        const id = idOf.get(vis[0].target)
         if (id) {
           setCurrent(id)
           document.querySelectorAll('.hc-unit.is-current').forEach((el) => el.classList.remove('is-current'))
@@ -142,7 +144,7 @@ export default function Mala({
 
   const tapped = (b: BeadInfo, e?: React.MouseEvent) => {
     const track = mode === 'page' ? trackEventBeacon : trackEvent
-    track('Mala Bead Tapped', { ...baseProps(page, locale), line: b.id, mode })
+    track(EVENTS.MalaBeadClicked, { item_id: b.id, item_type: kindOf(b.id), position: b.pos, mode })
     if (mode === 'anchor' && e) {
       const el = document.getElementById(b.href.slice(1))
       if (el) {

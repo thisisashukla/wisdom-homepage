@@ -1,6 +1,8 @@
-import QuoteCard from '@/components/quotes/QuoteCard'
-import { cardFileName, type QuoteView } from '@/lib/quotes-shared'
+import { VerseCard, VerseList } from '@/components/site'
+import type { Locale } from '@/lib/locale'
+import { padasDeva, padasIast } from '@/lib/funnels/ramayana/verse'
 import cardsJson from '@/content/funnels/ramayana/cards.json'
+import KeepShare from './KeepShare'
 
 type Card = {
   id: string
@@ -9,32 +11,52 @@ type Card = {
   sanskritLine: string
   iast: string
   meaning: { en: string; hi: string }
+  lineKey?: string
 }
 const CARDS = cardsJson as unknown as Card[]
 
-/** Share cards (Copy, WhatsApp, Save image) for a few Ramayana lines. Devanagari only, so a card never shows both scripts. */
-export default function KeepCards({ ids, locale, page, pageKey, path }: { ids: string[]; locale: 'en' | 'hi'; page: string; pageKey: string; path: string }) {
+const slug = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
+/** A few Ramayana lines to keep: each a VerseCard with Copy, WhatsApp and Save image. */
+export default function KeepCards({ ids, locale, pageKey, path }: { ids: string[]; locale: Locale; pageKey: string; path: string }) {
   const cards = ids.map((id) => CARDS.find((c) => c.id === id)).filter((c): c is Card => Boolean(c))
   return (
-    <div className="rl-cards">
+    <VerseList columns={2}>
       {cards.map((c, i) => {
-        const view: QuoteView = {
-          kind: 'view',
-          id: c.id,
-          sa: c.sanskritLine,
-          iast: '',
-          meaning: c.meaning[locale],
-          sourceLine: `${c.speaker[locale]} · ${c.sourceName[locale]}`,
-          href: null,
-          sharePath: path,
-          file: cardFileName(
-            { id: c.id, source: 'other', sourceName: c.sourceName, sanskritFull: c.sanskritLine, sanskritLine: c.sanskritLine, iast: c.iast, meaning: c.meaning, context: c.meaning, moments: [], rank: 0 },
-            'post',
-          ).replace(/-post\.png$/, ''),
-          v: '',
-        }
-        return <QuoteCard key={c.id} quote={view} locale={locale} pageName={page} pageKey={pageKey} position={i + 1} variant="compact" verseHref={null} />
+        const sourceLine = `${c.speaker[locale]} · ${c.sourceName[locale]}`
+        return (
+          <VerseCard
+            key={c.id}
+            as="li"
+            id={c.id}
+            size="compact"
+            rv
+            locale={locale}
+            lang={c.lineKey?.startsWith('rcm') ? 'awa' : 'sa'}
+            original={padasDeva(c.sanskritLine)}
+            iast={c.iast ? padasIast(c.iast) : undefined}
+            meaning={c.meaning[locale]}
+            source={sourceLine}
+            actions={
+              <KeepShare
+                id={c.id}
+                sa={c.sanskritLine}
+                meaning={c.meaning[locale]}
+                sourceLine={sourceLine}
+                path={path}
+                fileBase={`shlok-${slug(c.sourceName.en) || c.id}`}
+                position={i + 1}
+                pageKey={pageKey}
+                locale={locale}
+              />
+            }
+          />
+        )
       })}
-    </div>
+    </VerseList>
   )
 }

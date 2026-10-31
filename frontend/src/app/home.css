@@ -1,23 +1,7 @@
 
       :root {
-        --maroon: #3d0c0c;
-        --maroon-mid: #5c1a1a;
-        --maroon-deep: #1a0606;
-        --gold: #c8881e;
-        --gold-light: #f5c96a;
-        --gold-pale: #fdf3dc;
-        --gold-border: #e8c97a;
-        --gold-dim: rgba(200, 136, 30, 0.15);
-        --text: #f5e8cc;
-        --text-dim: rgba(245, 232, 204, 0.65);
-        --text-dimmer: rgba(245, 232, 204, 0.35);
-        --border: rgba(200, 136, 30, 0.2);
-        --bg: #120505;
-        --bg-warm: #190707;
-        --bg-alt: #0f0404;
-        --bg-card: rgba(255, 255, 255, 0.035);
+        /* Palette lives in styles/tokens.css (imported by globals.css). */
         --max: 1100px;
-        --r-lg: 20px;
         --r-xl: 28px;
         --r-phone: 44px;
       }

@@ -1,0 +1,707 @@
+{
+ "asOf": "2026-10-31",
+ "asOfLabel": "31 Oct 2026",
+ "goal": {
+  "payers": 0,
+  "payersNeeded": 307,
+  "installsWeek": 14,
+  "installsNeeded": 240,
+  "installsMonth": 60
+ },
+ "gates": [
+  {
+   "name": "Day-2 verse reveal",
+   "hint": "does the first verse land?",
+   "now": "7%",
+   "nowNote": "v2 D1",
+   "target": "35%"
+  },
+  {
+   "name": "Install → trial start",
+   "hint": "paywall says yes",
+   "now": "0%",
+   "nowNote": "",
+   "target": "10%"
+  },
+  {
+   "name": "Site → app handoff",
+   "hint": "App Store tap or /start",
+   "now": "1.2%",
+   "nowNote": "",
+   "target": "5%"
+  }
+ ],
+ "fullFunnel": [
+  [
+   "Attention: search impressions + reel views",
+   34856,
+   "GSC 33,126 · Zernio 1,730"
+  ],
+  [
+   "Visited the site",
+   1468,
+   "all sources, Mixpanel"
+  ],
+  [
+   "Stepped toward the app",
+   18,
+   "App Store tap or /start sign-in"
+  ],
+  [
+   "Installed",
+   54,
+   "all sources, incl. App Store search"
+  ],
+  [
+   "Saw the paywall",
+   10,
+   "v2"
+  ],
+  [
+   "Paid",
+   0,
+   ""
+  ]
+ ],
+ "fullFunnelNote": "Two sources feed the top. Search produces 33.1k impressions and 753 clicks. Social produces 1,730 views (Instagram 1,297, YouTube 433) but no site visits from Instagram or YouTube in the last 28 days. From \"Site visitors\" down, people from all sources are counted together, and installs include App Store search, so the steps aren't one strict cohort. Use them to see where the drop-offs are.",
+ "obsess": [
+  {
+   "name": "Reel views / week",
+   "def": "Zernio views, Instagram + YouTube, Wisdom profile",
+   "now": "~680",
+   "nowNote": "",
+   "target": "20k",
+   "state": "crit"
+  },
+  {
+   "name": "Reel hold",
+   "def": "Instagram avg watch ÷ reel length (inverse of skip rate)",
+   "now": "~19%",
+   "nowNote": "skip 76%",
+   "target": "50%",
+   "state": "crit"
+  },
+  {
+   "name": "ICP search clicks / week",
+   "def": "GSC clicks from US, UK, CA, AU",
+   "now": "~26",
+   "nowNote": "",
+   "target": "150",
+   "state": "crit"
+  },
+  {
+   "name": "Funnel-page search clicks / week",
+   "def": "GSC clicks on the SEO funnel pages launched 31 Oct",
+   "now": "0",
+   "nowNote": "4 of 11 hubs indexed, no clicks yet",
+   "target": "200",
+   "state": "crit"
+  },
+  {
+   "name": "Site → app handoff",
+   "def": "(App Store Button Clicked + Onboarding Signin Started) ÷ Page Viewed, uniques",
+   "now": "1.2%",
+   "nowNote": "",
+   "target": "5%",
+   "state": "crit"
+  },
+  {
+   "name": "Installs / week",
+   "def": "$ae_first_open, unique, prod builds",
+   "now": "14",
+   "nowNote": "",
+   "target": "240",
+   "state": "crit"
+  },
+  {
+   "name": "Install → first verse revealed",
+   "def": "$ae_first_open → Verse Revealed (context onboarding), 1 day",
+   "now": "42%",
+   "nowNote": "v3 test, n=12",
+   "target": "70%",
+   "state": "warn"
+  },
+  {
+   "name": "Day-2 verse reveal",
+   "def": "Verse Revealed (home, day 2) within 48h of Onboarding Completed",
+   "now": "7%",
+   "nowNote": "v2 D1 return",
+   "target": "35%",
+   "state": "crit"
+  },
+  {
+   "name": "Install → trial start",
+   "def": "rc_trial_started_event ÷ installs (RevenueCat → Mixpanel)",
+   "now": "0%",
+   "nowNote": "",
+   "target": "10%",
+   "state": "crit"
+  },
+  {
+   "name": "Trial → paid",
+   "def": "rc_trial_converted_event ÷ rc_trial_started_event",
+   "now": "n/a",
+   "nowNote": "",
+   "target": "40%",
+   "state": "na"
+  }
+ ],
+ "fixes": [
+  "<b>Turn on the RevenueCat → Mixpanel integration.</b> Trials, conversions, renewals and refunds land on the same person, which unlocks trial → paid and real MRR.",
+  "<b>Tag App Store links on the site with campaign tokens</b> (<code>?pt=…&amp;ct=home_hero</code>, <code>ct=start_done</code> and so on). App Store Connect then shows installs per placement, which closes the site → install gap.",
+  "<b>Give every social link its own tag.</b> Point the Instagram and YouTube bio links to <code>wisdomquotes.in/?utm_source=instagram</code> (or youtube), and send any direct App Store link with <code>ct=ig_bio</code> / <code>ct=yt_bio</code>. Zernio reports 0 profile views and 0 website clicks for every reel, so check the Instagram account's insights permission in Zernio as well.",
+  "<b>Filter sandbox purchases.</b> Add <code>environment</code> (sandbox/production) to Purchase Completed and exclude $ae_iap from reports. Today's 47 v3 events are all tests.",
+  "<b>Add <code>country</code> as a super property in the app</b> so every funnel can be split into ICP vs India from day one of v3.",
+  "<b>Name the web /start events to match the app</b> (Verse Revealed, Week Started) so the web 7-day plan and the app plan show up in one Mixpanel funnel."
+ ],
+ "funnelPages": {
+  "launch": "2026-10-31",
+  "urlsInSitemap": 290,
+  "sitemapSubmitted": 1951,
+  "sitemapIndexed": 1665,
+  "sitemapIndexedBaseline": 1665,
+  "hubsIndexed": 4,
+  "hubsTotal": 11,
+  "clicksSinceLaunch": 0,
+  "imprSinceLaunch": 0,
+  "visitorsSinceLaunch": 1,
+  "handoffSinceLaunch": 0,
+  "aiReferrals28": 8,
+  "aiReferralsBaseline": 6,
+  "aiReferralsDetail": "ChatGPT 6 · Gemini 1 · Copilot 1",
+  "daily": {
+   "labels": [
+    "31 Oct"
+   ],
+   "impr": [
+    0
+   ],
+   "clicks": [
+    0
+   ],
+   "visitors": [
+    1
+   ]
+  },
+  "byFunnel": [
+   {
+    "funnel": "Hanuman Chalisa",
+    "urls": 49,
+    "hub": "discovered",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   },
+   {
+    "funnel": "Other Gitas (Ashtavakra)",
+    "urls": 65,
+    "hub": "indexed",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   },
+   {
+    "funnel": "Sayings (Vivekananda, Kabir, Chanakya)",
+    "urls": 103,
+    "hub": "crawled",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   },
+   {
+    "funnel": "Ramayana",
+    "urls": 18,
+    "hub": "discovered",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   },
+   {
+    "funnel": "Upanishads",
+    "urls": 20,
+    "hub": "discovered",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 1,
+    "handoff": 0
+   },
+   {
+    "funnel": "Mahabharata",
+    "urls": 12,
+    "hub": "indexed",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   },
+   {
+    "funnel": "Ram Shalaka",
+    "urls": 11,
+    "hub": "discovered",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   },
+   {
+    "funnel": "Quote pages",
+    "urls": 12,
+    "hub": "indexed",
+    "impr": 0,
+    "clicks": 0,
+    "pos": null,
+    "visitors": 0,
+    "handoff": 0
+   }
+  ],
+  "topQueries": [],
+  "note": "Google indexed the Mahabharata, Ashtavakra Gita and Bhagavad Gita quotes hubs within a day of launch, so 4 of 11 hubs are now in the index. Vivekananda was crawled but not indexed, Ramayana, Ram Shalaka, Hanuman Chalisa and Upanishads are discovered only, and Kabir and Chanakya are still unknown to Google. GSC has no data for the funnel pages yet; Ramayana still needs to be indexed before 5 Nov.",
+  "launchLabel": "31 Oct"
+ },
+ "social": {
+  "range": "20 Sep to 29 Oct",
+  "views7": 678,
+  "views7Delta": "+29% vs prior 7d",
+  "views7Good": true,
+  "followersTotal": 162,
+  "followersDetail": "IG 58 (+1) · YT 72 (+4) · X 32 (+0), last 6 weeks",
+  "skip": "76%",
+  "avgWatch": "avg watch 3.7s of 33s",
+  "siteVisits28": 0,
+  "weekly": {
+   "labels": [
+    "14 Sep",
+    "21 Sep",
+    "28 Sep",
+    "5 Oct",
+    "12 Oct",
+    "19 Oct",
+    "26 Oct"
+   ],
+   "ig": [
+    120,
+    0,
+    0,
+    157,
+    291,
+    531,
+    198
+   ],
+   "yt": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    433
+   ]
+  },
+  "weeklyNote": "Views count toward the week a post was published. Volume tracks how often you post: 11 Shorts went up on 27 Oct and lifted that week, at about 39 views each.",
+  "funnel": [
+   [
+    "Reel views",
+    1730,
+    "Instagram 1,297 · YouTube 433"
+   ],
+   [
+    "Reached (Instagram)",
+    1085,
+    ""
+   ],
+   [
+    "Engaged",
+    58,
+    "likes, saves, shares"
+   ],
+   [
+    "Visited profile",
+    0,
+    "Zernio"
+   ],
+   [
+    "Visited site",
+    0,
+    "Mixpanel, instagram/youtube referrers"
+   ]
+  ],
+  "funnelNote": "Of 1,730 views, 58 led to a like, save or share (3.4%). From there it stops: Zernio shows 0 profile views and 0 website clicks, and Mixpanel shows no site visits from Instagram or YouTube in 28 days. Nobody can follow a viewer from a reel to an install yet.",
+  "posts": [
+   [
+    "Everyone your age seems so far ahead of you",
+    "Gita 3.35",
+    223,
+    6,
+    2,
+    "79%",
+    "2.9s / 13s"
+   ],
+   [
+    "The Bhagavad Gita was not made for you",
+    "55s story",
+    210,
+    15,
+    1,
+    "78%",
+    "9.1s / 55s"
+   ],
+   [
+    "It's 4 p.m. and you still haven't started",
+    "",
+    147,
+    3,
+    1,
+    "74%",
+    "3.0s / 13s"
+   ],
+   [
+    "Opened your phone. Forgot why. Again.",
+    "",
+    131,
+    6,
+    0,
+    "75%",
+    "2.8s / 14s"
+   ],
+   [
+    "You snapped at someone you love. Again.",
+    "",
+    127,
+    1,
+    2,
+    "81%",
+    "2.3s / 14s"
+   ],
+   [
+    "The Bhagavad Gita was never a sermon for everyone",
+    "131s story",
+    124,
+    3,
+    0,
+    "78%",
+    "3.3s / 131s"
+   ],
+   [
+    "Scrolled till 2 a.m. Woke up exhausted. Again.",
+    "",
+    70,
+    2,
+    0,
+    "68%",
+    "2.3s / 14s"
+   ]
+  ],
+  "postsNote": "The 55-second story reel (\"not made for you\") still has 2.5× the likes of any other post and the longest watch time. The 131-second follow-up from 29 Oct has settled at a 78% skip rate and 3.3s average watch on 124 views, the same as the short quote cards. Story length alone did not hold people; the first 3 seconds decide it."
+ },
+ "web": {
+  "clicks7": 341,
+  "clicks7Delta": "+117% vs prior 7d",
+  "clicks7Good": true,
+  "visitors28": 1468,
+  "visitorsMix": "70% from search, 25% direct",
+  "icpShare": "23%",
+  "icpDetail": "US 266 · UK 41 · CA 24 · AU 12",
+  "appTaps28": 12,
+  "appTapsPct": "0.8% of visitors",
+  "weeklyClicks": {
+   "labels": [
+    "31 Aug",
+    "7 Sep",
+    "14 Sep",
+    "21 Sep",
+    "28 Sep",
+    "5 Oct",
+    "12 Oct",
+    "19 Oct",
+    "26 Oct"
+   ],
+   "clicks": [
+    72,
+    79,
+    103,
+    159,
+    137,
+    130,
+    146,
+    170,
+    270
+   ],
+   "impr": [
+    3727,
+    3690,
+    5215,
+    7775,
+    6234,
+    5912,
+    6721,
+    7966,
+    10886
+   ]
+  },
+  "weeklyClicksNote": "CTR holds at about 2.3%, so growth comes from impressions. The jump since 24 Oct lines up with the SEO fixes from 25 Oct; 30 Oct dipped to 36 clicks, which may be partial data.",
+  "weeklyVisitors": {
+   "labels": [
+    "31 Aug",
+    "7 Sep",
+    "14 Sep",
+    "21 Sep",
+    "28 Sep",
+    "5 Oct",
+    "12 Oct",
+    "19 Oct",
+    "26 Oct"
+   ],
+   "values": [
+    228,
+    213,
+    223,
+    295,
+    863,
+    296,
+    341,
+    340,
+    278
+   ]
+  },
+  "weeklyVisitorsNote": "The 28 Sep spike (863) was a one-off. Underneath it, visitors were flat at about 300 a week until the last week, when daily visitors rose to 80 to 90.",
+  "handoffNote": "GSC: 33,126 impressions → 753 clicks (2.3% CTR)",
+  "handoff": [
+   [
+    "Site visitors",
+    1468,
+    "all sources"
+   ],
+   [
+    "Played a shloka",
+    151,
+    "engaged"
+   ],
+   [
+    "Tapped App Store",
+    12,
+    ""
+   ]
+  ],
+  "start": [
+   [
+    "Opened /start",
+    31,
+    ""
+   ],
+   [
+    "Answered a question",
+    18,
+    ""
+   ],
+   [
+    "Verses generated",
+    6,
+    ""
+   ],
+   [
+    "Started Google sign-in",
+    6,
+    ""
+   ],
+   [
+    "Signed in",
+    1,
+    ""
+   ],
+   [
+    "Completed",
+    1,
+    ""
+   ]
+  ],
+  "startNote": "Only a third of people who answer a question get to see verses. That is the leak to fix first: the verse should appear before they are asked anything else. The first web /start completion showed up this week (1 of 31).",
+  "split": [
+   [
+    "India",
+    970
+   ],
+   [
+    "US / UK / CA / AU (ICP)",
+    343
+   ],
+   [
+    "Rest of world",
+    155
+   ]
+  ],
+  "splitNote": "Your ICP is the diaspora (US, UK, CA, AU), but they are only 1 in 4 visitors. Over 28 days US CTR is 1.65% against 2.37% for India, at a similar position (7.3 vs 6.8). In the last 7 days US CTR rose to 2.6%, an early sign the new titles help.",
+  "topPages": [
+   [
+    "/hi/gita",
+    258,
+    "4.8%",
+    5.8
+   ],
+   [
+    "/blogs/karma-quotes-bhagavad-gita",
+    98,
+    "3.1%",
+    5.9
+   ],
+   [
+    "/ (home)",
+    54,
+    "6.1%",
+    6.3
+   ],
+   [
+    "/blogs/best-bhagavad-gita-translation",
+    47,
+    "1.5%",
+    6.9
+   ],
+   [
+    "/blogs/krishna-quotes",
+    47,
+    "1.4%",
+    6.6
+   ],
+   [
+    "/blogs/20-famous-sanskrit-shlokas",
+    35,
+    "2.3%",
+    6.5
+   ]
+  ],
+  "topPagesNote": "The top page is the Hindi Gita page, which pulls Indian, Hindi-reading visitors (not the ICP). The English blogs with 1.3 to 1.5% CTR are where better titles pay off for the diaspora."
+ },
+ "app": {
+  "installs4w": 54,
+  "installs4wNote": "~14 a week, almost all from the App Store directly",
+  "wau": 21,
+  "wauNote": "week of 19 Oct, all versions",
+  "d1": "7%",
+  "d7": "Day 7: 1%",
+  "purchases": 0,
+  "purchasesNote": "real purchases, v2, 60 days · 10 saw the paywall",
+  "v2": [
+   [
+    "Installed",
+    112,
+    ""
+   ],
+   [
+    "Saw splash",
+    83,
+    ""
+   ],
+   [
+    "Began onboarding",
+    82,
+    ""
+   ],
+   [
+    "Committed (after reflection)",
+    26,
+    ""
+   ],
+   [
+    "Saw paywall",
+    10,
+    ""
+   ],
+   [
+    "Purchased",
+    0,
+    ""
+   ]
+  ],
+  "v2Note": "68% drop at the reflection and journaling steps. This is the old effort-heavy flow that v3 replaces.",
+  "v3": [
+   [
+    "Installed",
+    12,
+    ""
+   ],
+   [
+    "Answered onboarding",
+    6,
+    ""
+   ],
+   [
+    "Verses generated",
+    5,
+    ""
+   ],
+   [
+    "First verse revealed",
+    5,
+    ""
+   ],
+   [
+    "Saw paywall",
+    3,
+    ""
+   ],
+   [
+    "Started purchase",
+    0,
+    ""
+   ]
+  ],
+  "v3Note": "n = 12, so read this for shape, not for rates. Make this report your launch-day baseline. The 47 purchase events on 3.0.0 are sandbox tests and must be filtered out.",
+  "installsWeekly": {
+   "labels": [
+    "31 Aug",
+    "7 Sep",
+    "14 Sep",
+    "21 Sep",
+    "28 Sep",
+    "5 Oct",
+    "12 Oct",
+    "19 Oct",
+    "26 Oct"
+   ],
+   "all": [
+    8,
+    5,
+    14,
+    11,
+    10,
+    12,
+    23,
+    15,
+    4
+   ],
+   "v3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    5,
+    0
+   ]
+  },
+  "retention": [
+   82,
+   7,
+   3,
+   3,
+   3,
+   1,
+   0,
+   1
+  ],
+  "retentionNote": "Benchmark for a daily-habit app: D1 at least 30%, D7 at least 15%. v3's whole bet is the Day-2 verse reveal, so put a Mixpanel retention report on Verse Revealed (home), cohorted by first_open_date, on the day you launch."
+ },
+ "footnote": "Goal math uses the 15 Oct unit economics model (10% trial start, 40% trial → paid, 70/30 annual/monthly, ~7.5 paid months). Week labels are Monday starts; the latest week is partial. Refreshed daily."
+}
