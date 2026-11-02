@@ -14,6 +14,8 @@ export type RsLine = {
   n: number
   k: number
   slug: string
+  /** The first half as people type it in Latin letters, for titles and search matching. */
+  roman: string
   id: string
   sign: RsSign
   deva: string[]

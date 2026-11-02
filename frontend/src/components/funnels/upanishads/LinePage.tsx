@@ -4,7 +4,7 @@
  */
 import type { Metadata } from 'next'
 import PageTracker from '@/components/BlogTracker'
-import { Faq, JsonLd, LinkCards, PageHero, Section, VerseCard } from '@/components/site'
+import { Faq, JsonLd, LinkCards, PageHero, Section, VerseCard, VerseList } from '@/components/site'
 import type { Locale } from '@/lib/locale'
 import { articleLd, card, cardView, passage, padas, pageKey, SITE, upMeta, DISCLOSURE_EN, UPDATED } from '@/lib/funnels/upanishads'
 import { LINES, lineBySlug, type FamousLine } from '@/content/funnels/upanishads/lines'
@@ -33,6 +33,8 @@ const T = {
   en: {
     upanishads: 'Upanishads',
     whole: 'The whole passage',
+    lineByLine: 'The mantra, line by line',
+    passageMore: 'Read it as the Upanishad gives it',
     who: 'Who said it, and to whom',
     acharyas: 'How the acharyas read it',
     shankara: 'Shankara',
@@ -54,6 +56,8 @@ const T = {
   hi: {
     upanishads: 'उपनिषद',
     whole: 'पूरा अंश',
+    lineByLine: 'मंत्र, हर पंक्ति का अर्थ',
+    passageMore: 'उपनिषद में यह अंश कैसे आता है',
     who: 'किसने, किससे कहा',
     acharyas: 'आचार्य इसे कैसे पढ़ते हैं',
     shankara: 'शंकराचार्य',
@@ -93,6 +97,13 @@ export default function LinePage({ slug, locale }: { slug: string; locale: Local
   const faq = hi?.faq ?? line.faq
   const refLabel = locale === 'hi' ? card(line.cardId).sourceName.hi : line.ref
   const view = cardView(line.cardId, locale, path)
+  const recited = line.recited
+  const recitedRows = recited ? recited.sa.split('\n') : []
+  const recitedIast = recited ? recited.iast.split('\n') : []
+  const recitedMeaning = recited ? (locale === 'hi' ? recited.hiMeaning : recited.meaning) : []
+  const wholeCard = showWhole ? (
+    <VerseCard align="left" label={refLabel} original={padas(p.sa)} iast={padas(p.iast)} meaning={hi?.fullMeaning ?? line.fullMeaning} locale={locale} rv={!recited} />
+  ) : null
 
   const jsonLd = [
     articleLd({ headline: h1, description, path, citation: `${line.ref}. Sanskrit: ${p.basis.startsWith('sanscripts corpus') ? 'Wisdom corpus' : p.basis}. English: Wisdom translation.`, locale, about: line.textName }),
@@ -131,7 +142,15 @@ export default function LinePage({ slug, locale }: { slug: string; locale: Local
         ]}
         visual={
           <div data-mp-section="line">
-            <VerseCard original={padas(line.sa)} iast={padas(line.iast)} meaning={hi?.meaning ?? line.meaning} size="hero" reveal toggle locale={locale} />
+            <VerseCard
+              original={recited ? recitedRows : padas(line.sa)}
+              iast={recited ? recitedIast : padas(line.iast)}
+              meaning={hi?.meaning ?? line.meaning}
+              size="hero"
+              reveal
+              toggle
+              locale={locale}
+            />
           </div>
         }
       />
@@ -142,8 +161,28 @@ export default function LinePage({ slug, locale }: { slug: string; locale: Local
         </p>
       </Section>
 
-      <Section id={showWhole ? 'whole' : 'use'} tone="band" width="narrow" title={showWhole ? t.whole : undefined}>
-        {showWhole && <VerseCard align="left" label={refLabel} original={padas(p.sa)} iast={padas(p.iast)} meaning={hi?.fullMeaning ?? line.fullMeaning} locale={locale} rv />}
+      {recited && (
+        <Section id="line-by-line" width="narrow" title={t.lineByLine} track="line_by_line">
+          <VerseList>
+            {recitedRows.map((row, i) => (
+              <VerseCard key={row} as="li" size="compact" original={[row]} iast={[recitedIast[i]]} meaning={recitedMeaning[i]} locale={locale} rv />
+            ))}
+          </VerseList>
+        </Section>
+      )}
+
+      <Section id={showWhole ? 'whole' : 'use'} tone="band" width="narrow" title={showWhole && !recited ? t.whole : undefined}>
+        {showWhole &&
+          (recited ? (
+            <details className="up-more rv">
+              <summary>
+                {t.passageMore} <span className="up-more-ref">{refLabel}</span>
+              </summary>
+              {wholeCard}
+            </details>
+          ) : (
+            wholeCard
+          ))}
 
         <div id="share" className="up-share">
           <p className="up-share-label" aria-hidden="true">

@@ -63,9 +63,11 @@ export default function LinePage({ params }: { params: Params }) {
         eyebrow={l.signText.hi}
         title={
           <>
-            <span className="rs-h1-line">{l.deva[0]}</span>
-            <span className="rs-h1-line">{l.deva[1]}</span>
-            <small className="rs-h1-sub">{t.sub}</small>
+            <span className="rs-h1-line">{l.deva[0]}</span>{' '}
+            <span className="rs-h1-line">{l.deva[1]}</span>{' '}
+            <small className="rs-h1-sub">
+              <span lang="hi-Latn">{l.roman}</span> · {t.sub}
+            </small>
           </>
         }
         sub={<span id="quick-answer">{l.quick.hi}</span>}

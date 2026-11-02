@@ -94,7 +94,7 @@ export default function VerseCard({
       <p className={`sx-verse-orig${hasIast ? ' sx-deva' : ''}`} lang={lang === 'bra' ? 'hi' : lang}>
         {deva.map((r, i) => (
           <span key={i} className="sx-verse-row" style={{ ['--i' as string]: i }}>
-            {r}
+            {r}{' '}
           </span>
         ))}
       </p>
@@ -102,7 +102,7 @@ export default function VerseCard({
         <p className="sx-verse-orig sx-iast" lang={`${lang === 'bra' ? 'hi' : lang}-Latn`}>
           {roman.map((r, i) => (
             <span key={i} className="sx-verse-row" style={{ ['--i' as string]: i }}>
-              {r}
+              {r}{' '}
             </span>
           ))}
         </p>

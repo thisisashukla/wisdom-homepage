@@ -104,7 +104,10 @@ export function toolJsonLd(locale: Locale): object[] {
   ]
 }
 
-export const lineTitle = (l: RsLine): string => `${firstHalf(l)}${lineCopy().titleSuffix}`
+/** "गरल सुधा रिपु करहिं मिताई का अर्थ | Garal Sudha Ripu Karahi Mitai": most searches for a line are typed in Latin letters. */
+export const lineTitle = (l: RsLine): string => `${firstHalf(l)}${lineCopy().titleSuffix} | ${l.roman}`
+
+const secondHalf = (l: RsLine): string => l.deva[1].replace(/[।॥\s]+$/g, '')
 
 const SIGN_PHRASE: Record<RsLine['sign'], string> = {
   shubh: 'शुभ उत्तर',
@@ -114,15 +117,15 @@ const SIGN_PHRASE: Record<RsLine['sign'], string> = {
 
 export function lineDescription(l: RsLine): string {
   const meaning = l.meaning.hi.length > 110 ? l.cardMeaning.hi : l.meaning.hi
-  const lead = `${firstHalf(l)} का अर्थ: ${meaning} `
+  const lead = `${firstHalf(l)}, ${secondHalf(l)}, अर्थ: ${meaning} `
   const answer = SIGN_PHRASE[l.sign]
   const tails = [
     `${l.kand.hi}, ${l.place.hi}। श्रीराम शलाका में ${answer}।`,
     `श्रीराम शलाका में ${answer}, प्रसंग सहित।`,
     'प्रसंग सहित।',
   ]
-  for (const t of tails) if ((lead + t).length <= 155) return lead + t
-  return lead.trim().slice(0, 155)
+  for (const t of tails) if ((lead + t).length <= 160) return lead + t
+  return lead.trim()
 }
 
 export function lineMetadata(l: RsLine): Metadata {

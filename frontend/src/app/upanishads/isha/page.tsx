@@ -6,7 +6,7 @@ import { articleLd, padas, TEXTS, upMeta, DISCLOSURE_EN, SOURCES_NOTE_EN } from 
 
 const PATH = '/upanishads/isha'
 const PAGE = 'upanishads-isha'
-const TITLE = 'Isha Upanishad: Full Text in Sanskrit and English'
+const TITLE = 'Isha (Ishavasya) Upanishad: All 18 Verses in Sanskrit and English'
 const DESC =
   'All 18 verses of the Isha Upanishad with the purnamadah invocation: Sanskrit (Devanagari or IAST), plain English, and Shankara’s reading of hard verses.'
 

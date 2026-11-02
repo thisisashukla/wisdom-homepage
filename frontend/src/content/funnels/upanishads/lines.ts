@@ -43,6 +43,11 @@ export type FamousLine = {
   writing: { forms: { sa: string; iast: string; label: string }[]; note: string }
   gita: { c: number; v: number; note: string }[]
   textHref?: string
+  /**
+   * The form people chant, when it differs from the passage (Om before, the shanti close after).
+   * When set, the page leads with it and shows it line by line; the passage form moves into a fold.
+   */
+  recited?: { sa: string; iast: string; meaning: string[]; hiMeaning: string[] }
   related: string[]
   faq: { q: string; a: string }[]
   hi?: LineHi
@@ -194,18 +199,24 @@ export const LINES: FamousLine[] = [
     refShort: 'Brihadaranyaka 1.3.28',
     textName: 'Brihadaranyaka Upanishad',
     veda: 'Shukla Yajur Veda',
-    title: 'Asato Ma Sadgamaya Meaning and Source',
+    title: 'Om Asato Ma Sadgamaya: Mantra Lyrics and Meaning',
     description:
-      'Asato ma sadgamaya, tamaso ma jyotirgamaya: Brihadaranyaka Upanishad 1.3.28. Sanskrit, meaning line by line, the Upanishad\u2019s own gloss, a print card.',
+      'Asato ma sadgamaya, tamaso ma jyotirgamaya, mrityor ma amritam gamaya: the full mantra with Om shanti, what each line means, and its source (Brihadaranyaka 1.3.28).',
     h1: 'Asato ma sadgamaya: lead me from the unreal to the real',
     quick:
-      'Asato ma sadgamaya ("lead me from the unreal to the real") is from the Brihadaranyaka Upanishad 1.3.28, in the Shukla Yajur Veda. It is a chant the patron of a Soma rite says under his breath while the priest sings. Its three lines ask to be led from unreal to real, darkness to light, death to the deathless.',
+      'Asato ma sadgamaya is a three-line prayer: lead me from the unreal to the real, from darkness to light, from death to the deathless. It comes from the Brihadaranyaka Upanishad 1.3.28, in the Shukla Yajur Veda. Schools and yoga classes chant it with Om before it and "Om shanti shanti shanti" after; the Upanishad gives the three lines alone, as a chant for a Soma rite.',
     sa: 'असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्माऽमृतं गमय ॥',
     iast: 'asato mā sad gamaya | tamaso mā jyotir gamaya | mṛtyor mā’mṛtaṃ gamaya ||',
     meaning: 'Lead me from the unreal to the real. Lead me from darkness to light. Lead me from death to the deathless.',
     fullMeaning:
       'When the priest begins the chant, the patron should say: lead me from the unreal to the real, lead me from darkness to light, lead me from death to the deathless. The Upanishad explains: the unreal is death and the real is the deathless, so "from the unreal to the real" means "make me deathless". Darkness is death and light is the deathless, so it means the same. In "from death to the deathless" nothing is hidden.',
     who: 'The patron of a Soma rite, while the priest sings',
+    recited: {
+      sa: 'ॐ असतो मा सद्गमय ।\nतमसो मा ज्योतिर्गमय ।\nमृत्योर्मा अमृतं गमय ।\nॐ शान्तिः शान्तिः शान्तिः ॥',
+      iast: 'oṃ asato mā sadgamaya |\ntamaso mā jyotirgamaya |\nmṛtyormā amṛtaṃ gamaya |\noṃ śāntiḥ śāntiḥ śāntiḥ ||',
+      meaning: ['Lead me from the unreal to the real.', 'Lead me from darkness to light.', 'Lead me from death to the deathless.', 'Om, peace, peace, peace.'],
+      hiMeaning: ['मुझे असत्य से सत्य की ओर ले चलो।', 'मुझे अंधेरे से रोशनी की ओर ले चलो।', 'मुझे मृत्यु से अमृत की ओर ले चलो।', 'ॐ, शान्ति, शान्ति, शान्ति।'],
+    },
     scene:
       'There is no dialogue here. The passage gives instructions for a Soma rite: when the priest begins the purifying chant, the patron of the rite recites these three lines under his breath. Then the Upanishad explains its own words, and all three lines turn out to ask one thing: make me deathless.',
     shankara:
@@ -227,6 +238,10 @@ export const LINES: FamousLine[] = [
         q: 'What is the meaning of asato ma sadgamaya?',
         a: 'Lead me from the unreal to the real, from darkness to light, from death to the deathless. The Upanishad itself says all three lines mean "make me deathless".',
       },
+      {
+        q: 'What are the full lyrics of asato ma sadgamaya?',
+        a: 'ॐ असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मा अमृतं गमय । ॐ शान्तिः शान्तिः शान्तिः ॥ Om asato ma sadgamaya, tamaso ma jyotirgamaya, mrityor ma amritam gamaya, Om shanti shanti shanti.',
+      },
       { q: 'Which Upanishad is asato ma sadgamaya from?', a: 'The Brihadaranyaka Upanishad, 1.3.28, in the Shukla Yajur Veda.' },
       {
         q: 'Is "Om shanti shanti shanti" part of it?',
@@ -234,12 +249,12 @@ export const LINES: FamousLine[] = [
       },
     ],
     hi: {
-      title: 'असतो मा सद्गमय का अर्थ, बृहदारण्यक उपनिषद',
+      title: 'असतो मा सद्गमय मंत्र का हिंदी अर्थ | Asato Ma Sadgamaya in Hindi',
       description:
-        'असतो मा सद्गमय, तमसो मा ज्योतिर्गमय, मृत्योर्मामृतं गमय: बृहदारण्यक उपनिषद 1.3.28। संस्कृत, हर पंक्ति का हिंदी अर्थ और प्रिंट कार्ड।',
+        'ॐ असतो मा सद्गमय, तमसो मा ज्योतिर्गमय, मृत्योर्मा अमृतं गमय: पूरा मंत्र ॐ शान्ति के साथ, हर पंक्ति का हिंदी अर्थ, और स्रोत बृहदारण्यक उपनिषद 1.3.28।',
       h1: 'असतो मा सद्गमय: असत्य से सत्य की ओर',
       quick:
-        'असतो मा सद्गमय ("मुझे असत्य से सत्य की ओर ले चलो") बृहदारण्यक उपनिषद 1.3.28 का मंत्र है, जो शुक्ल यजुर्वेद का उपनिषद है। सोम यज्ञ में जब पुरोहित गान शुरू करता है, तब यजमान ये तीन पंक्तियाँ धीरे से जपता है: असत्य से सत्य, अंधेरे से रोशनी, और मृत्यु से अमृत की ओर।',
+        'असतो मा सद्गमय तीन पंक्तियों की प्रार्थना है: मुझे असत्य से सत्य की ओर, अंधेरे से रोशनी की ओर, और मृत्यु से अमृत की ओर ले चलो। यह बृहदारण्यक उपनिषद 1.3.28 का मंत्र है, जो शुक्ल यजुर्वेद का उपनिषद है। स्कूलों और योग कक्षाओं में इसे आगे ॐ और अंत में "ॐ शान्तिः शान्तिः शान्तिः" लगाकर गाया जाता है। उपनिषद में ये तीन पंक्तियाँ ही हैं, सोम यज्ञ के जप के रूप में।',
       meaning: 'मुझे असत्य से सत्य की ओर ले चलो। अंधेरे से रोशनी की ओर ले चलो। मृत्यु से अमृत की ओर ले चलो।',
       fullMeaning:
         'जब पुरोहित गान शुरू करे, तब यजमान कहे: मुझे असत्य से सत्य की ओर ले चलो, अंधेरे से रोशनी की ओर ले चलो, मृत्यु से अमृत की ओर ले चलो। उपनिषद खुद समझाता है: असत्य मृत्यु है और सत्य अमृत है, इसलिए इसका अर्थ है "मुझे अमर कर दो"। अंधेरा मृत्यु है और रोशनी अमृत, अर्थ वही है। "मृत्यु से अमृत की ओर" में कुछ छिपा नहीं है।',
@@ -254,6 +269,10 @@ export const LINES: FamousLine[] = [
         {
           q: 'असतो मा सद्गमय का अर्थ क्या है?',
           a: 'मुझे असत्य से सत्य की ओर, अंधेरे से रोशनी की ओर, और मृत्यु से अमृत की ओर ले चलो। उपनिषद कहता है कि तीनों का एक ही अर्थ है: मुझे अमर कर दो।',
+        },
+        {
+          q: 'असतो मा सद्गमय का पूरा मंत्र क्या है?',
+          a: 'ॐ असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मा अमृतं गमय । ॐ शान्तिः शान्तिः शान्तिः ॥',
         },
         { q: 'असतो मा सद्गमय किस उपनिषद से है?', a: 'बृहदारण्यक उपनिषद 1.3.28 से, जो शुक्ल यजुर्वेद का उपनिषद है।' },
         { q: 'क्या "ॐ शान्तिः शान्तिः शान्तिः" इसका हिस्सा है?', a: 'नहीं। प्रार्थना के रूप में गाते समय शान्ति पाठ जोड़ा जाता है। उपनिषद में ये तीन पंक्तियाँ और उनकी व्याख्या ही है।' },
@@ -472,10 +491,10 @@ export const LINES: FamousLine[] = [
     refShort: 'Taittiriya 1.11.2',
     textName: 'Taittiriya Upanishad',
     veda: 'Krishna Yajur Veda',
-    title: 'Matru Devo Bhava Meaning and Source',
+    title: 'Matru Devo Bhava, Pitru Devo Bhava: Full Sloka and Meaning',
     description:
-      'Matru devo bhava, pitru devo bhava, acharya devo bhava, atithi devo bhava: Taittiriya Upanishad 1.11.2. Sanskrit, meaning and the teacher’s full advice.',
-    h1: 'Matru devo bhava: let your mother be a god to you',
+      'Matru devo bhava, pitru devo bhava, acharya devo bhava, atithi devo bhava: the full sloka from Taittiriya Upanishad 1.11.2, with the meaning of each line.',
+    h1: 'Matru devo bhava, pitru devo bhava: let your mother and father be gods to you',
     quick:
       'Matru devo bhava ("let your mother be a god to you") is from the Taittiriya Upanishad 1.11.2, in the Krishna Yajur Veda. A teacher says it to students finishing their Vedic study, with pitru devo bhava, acharya devo bhava and atithi devo bhava: father, teacher and guest as gods too.',
     sa: 'मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ।',
@@ -492,16 +511,52 @@ export const LINES: FamousLine[] = [
     writing: {
       forms: [
         { sa: 'मातृदेवो भव', iast: 'mātṛdevo bhava', label: 'Mother' },
+        { sa: 'मातृदेवो भव । पितृदेवो भव ।', iast: 'mātṛdevo bhava | pitṛdevo bhava |', label: 'Mother and father' },
         { sa: 'अतिथिदेवो भव', iast: 'atithidevo bhava', label: 'Guest' },
+        { sa: 'మాతృదేవో భవ । పితృదేవో భవ ।', iast: 'mātṛdevo bhava | pitṛdevo bhava |', label: 'In Telugu script' },
+        { sa: 'ಮಾತೃದೇವೋ ಭವ । ಪಿತೃದೇವೋ ಭವ ।', iast: 'mātṛdevo bhava | pitṛdevo bhava |', label: 'In Kannada script' },
       ],
-      note: 'One compound and one verb: मातृ + देवः becomes मातृदेवो before भव, "be".',
+      note: 'One compound and one verb: मातृ + देवः becomes मातृदेवो before भव, "be". Written as separate words, matru devo bhava reads the same.',
     },
     gita: [{ c: 17, v: 14, note: 'Krishna on the discipline of the body: honouring the gods, the twice-born, teachers and the wise.' }],
     related: ['sahana-vavatu', 'satyameva-jayate', 'uttishthata-jagrata'],
     faq: [
       { q: 'Matru devo bhava is from which Upanishad?', a: 'The Taittiriya Upanishad, 1.11.2, in the Krishna Yajur Veda.' },
-      { q: 'What is the full line?', a: 'मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ॥ Let your mother, your father, your teacher and your guest be gods to you.' },
+      {
+        q: 'What does matru devo bhava pitru devo bhava mean?',
+        a: 'Let your mother be a god to you; let your father be a god to you. The teacher goes on with acharya devo bhava, your teacher, and atithi devo bhava, your guest.',
+      },
+      { q: 'What is the full sloka?', a: 'मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ॥ Let your mother, your father, your teacher and your guest be gods to you.' },
     ],
+    hi: {
+      title: 'मातृ देवो भव, पितृ देवो भव: पूरा श्लोक और अर्थ',
+      description:
+        'मातृदेवो भव, पितृदेवो भव, आचार्यदेवो भव, अतिथिदेवो भव: माता, पिता, गुरु और अतिथि को देवता मानो। तैत्तिरीय उपनिषद 1.11.2 का पूरा श्लोक, हिंदी अर्थ और प्रसंग।',
+      h1: 'मातृदेवो भव, पितृदेवो भव: माता पिता को देवता मानो',
+      quick:
+        'मातृदेवो भव ("माता को देवता मानो") तैत्तिरीय उपनिषद 1.11.2 का वाक्य है, जो कृष्ण यजुर्वेद का उपनिषद है। गुरु यह बात उन शिष्यों से कहते हैं जो पढ़ाई पूरी करके घर लौट रहे हैं। साथ में पितृदेवो भव, आचार्यदेवो भव और अतिथिदेवो भव: पिता, गुरु और अतिथि को भी देवता मानो।',
+      meaning: 'माता को देवता मानो। पिता को देवता मानो। गुरु को देवता मानो। अतिथि को देवता मानो।',
+      fullMeaning:
+        'देवताओं और पितरों के प्रति अपने कर्तव्य में ढील मत देना। माता को देवता मानो। पिता को देवता मानो। गुरु को देवता मानो। अतिथि को देवता मानो। जो कर्म निर्दोष हैं, वही करो, दूसरे नहीं। हमारे जो अच्छे आचरण हैं, उन्हीं को अपनाओ, बाकी को नहीं।',
+      scene:
+        'यह गुरु का विदाई उपदेश है, शिक्षा वल्ली का ग्यारहवाँ अनुवाक। यह "सत्यं वद, धर्मं चर, स्वाध्याय में ढील मत दो" (1.11.1) से शुरू होता है और फिर बताता है कि पढ़ाई पूरी करके निकला शिष्य किन लोगों का आदर करे। अंत में सीधी सलाह है: हमारा सिर्फ़ अच्छा आचरण अपनाओ, श्रद्धा और विनय से दान दो, और जब कोई शंका हो तो वैसा करो जैसा आसपास के समझदार और दयालु लोग करते हैं।',
+      shankara:
+        'शंकराचार्य कहते हैं कि माता, पिता, गुरु और अतिथि का आदर वैसे ही करो जैसे देवता का करते हो। वे जोड़ते हैं कि यह उपदेश कर्म करने वाले गृहस्थ के लिए है। इससे मन साफ़ होता है और आगे की वल्लियों के ज्ञान के लिए तैयार होता है।',
+      others: 'इसे कोई आचार्य अलग ढंग से नहीं पढ़ता। अतिथिदेवो भव भारत के पर्यटन विभाग का नारा भी है।',
+      writingNote:
+        'एक समास और एक क्रिया: मातृ + देवः मिलकर भव से पहले मातृदेवो बनता है, और भव का अर्थ है "हो जाओ"। आम तौर पर इसे अलग अलग शब्दों में "मातृ देवो भव" भी लिखा जाता है।',
+      faq: [
+        { q: 'मातृ देवो भव किस उपनिषद से है?', a: 'तैत्तिरीय उपनिषद 1.11.2 से, जो कृष्ण यजुर्वेद का उपनिषद है। यह शिक्षा वल्ली के ग्यारहवें अनुवाक में है।' },
+        {
+          q: 'मातृ देवो भव पितृ देवो भव का अर्थ क्या है?',
+          a: 'माता को देवता मानो, पिता को देवता मानो। श्लोक आगे कहता है: आचार्यदेवो भव (गुरु को देवता मानो) और अतिथिदेवो भव (अतिथि को देवता मानो)।',
+        },
+        {
+          q: 'पूरा श्लोक क्या है?',
+          a: 'मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ॥ इससे पहले "देवपितृकार्याभ्यां न प्रमदितव्यम्" आता है, यानी देवताओं और पितरों के काम में ढील मत देना।',
+        },
+      ],
+    },
     reviewed: false,
   },
   {

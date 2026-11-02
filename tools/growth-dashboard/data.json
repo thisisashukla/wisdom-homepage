@@ -1,12 +1,12 @@
 {
- "asOf": "2026-10-31",
- "asOfLabel": "31 Oct 2026",
+ "asOf": "2026-11-02",
+ "asOfLabel": "2 Nov 2026",
  "goal": {
   "payers": 0,
   "payersNeeded": 307,
   "installsWeek": 14,
   "installsNeeded": 240,
-  "installsMonth": 60
+  "installsMonth": 68
  },
  "gates": [
   {
@@ -34,22 +34,22 @@
  "fullFunnel": [
   [
    "Attention: search impressions + reel views",
-   34856,
-   "GSC 33,126 · Zernio 1,730"
+   39162,
+   "GSC 37,530 · Zernio 1,632"
   ],
   [
    "Visited the site",
-   1468,
+   1539,
    "all sources, Mixpanel"
   ],
   [
    "Stepped toward the app",
-   18,
+   19,
    "App Store tap or /start sign-in"
   ],
   [
    "Installed",
-   54,
+   57,
    "all sources, incl. App Store search"
   ],
   [
@@ -63,12 +63,12 @@
    ""
   ]
  ],
- "fullFunnelNote": "Two sources feed the top. Search produces 33.1k impressions and 753 clicks. Social produces 1,730 views (Instagram 1,297, YouTube 433) but no site visits from Instagram or YouTube in the last 28 days. From \"Site visitors\" down, people from all sources are counted together, and installs include App Store search, so the steps aren't one strict cohort. Use them to see where the drop-offs are.",
+ "fullFunnelNote": "Two sources feed the top. Search produces 37.5k impressions and 856 clicks. Social produces 1,632 views (Instagram 1,199, YouTube 433) but no site visits from Instagram or YouTube in the last 28 days. From \"Visited the site\" down, people from all sources are counted together, and installs include App Store search, so the steps aren't one strict cohort. Use them to see where the drop-offs are.",
  "obsess": [
   {
    "name": "Reel views / week",
    "def": "Zernio views, Instagram + YouTube, Wisdom profile",
-   "now": "~680",
+   "now": "~650",
    "nowNote": "",
    "target": "20k",
    "state": "crit"
@@ -76,24 +76,24 @@
   {
    "name": "Reel hold",
    "def": "Instagram avg watch ÷ reel length (inverse of skip rate)",
-   "now": "~19%",
-   "nowNote": "skip 76%",
+   "now": "~21%",
+   "nowNote": "skip 73%",
    "target": "50%",
    "state": "crit"
   },
   {
    "name": "ICP search clicks / week",
    "def": "GSC clicks from US, UK, CA, AU",
-   "now": "~26",
-   "nowNote": "",
+   "now": "~30",
+   "nowNote": "US 20 · UK 6 · CA 4",
    "target": "150",
    "state": "crit"
   },
   {
    "name": "Funnel-page search clicks / week",
    "def": "GSC clicks on the SEO funnel pages launched 31 Oct",
-   "now": "0",
-   "nowNote": "4 of 11 hubs indexed, no clicks yet",
+   "now": "54",
+   "nowNote": "5 of 11 hubs indexed; includes the older Krishna quotes page",
    "target": "200",
    "state": "crit"
   },
@@ -109,7 +109,7 @@
    "name": "Installs / week",
    "def": "$ae_first_open, unique, prod builds",
    "now": "14",
-   "nowNote": "",
+   "nowNote": "avg of last 4 full weeks; last week 7",
    "target": "240",
    "state": "crit"
   },
@@ -133,7 +133,7 @@
    "name": "Install → trial start",
    "def": "rc_trial_started_event ÷ installs (RevenueCat → Mixpanel)",
    "now": "0%",
-   "nowNote": "",
+   "nowNote": "no rc_ events yet",
    "target": "10%",
    "state": "crit"
   },
@@ -160,27 +160,31 @@
   "sitemapSubmitted": 1951,
   "sitemapIndexed": 1665,
   "sitemapIndexedBaseline": 1665,
-  "hubsIndexed": 4,
+  "hubsIndexed": 5,
   "hubsTotal": 11,
-  "clicksSinceLaunch": 0,
-  "imprSinceLaunch": 0,
-  "visitorsSinceLaunch": 1,
-  "handoffSinceLaunch": 0,
-  "aiReferrals28": 8,
+  "clicksSinceLaunch": 19,
+  "imprSinceLaunch": 1455,
+  "visitorsSinceLaunch": 97,
+  "handoffSinceLaunch": 1,
+  "aiReferrals28": 6,
   "aiReferralsBaseline": 6,
-  "aiReferralsDetail": "ChatGPT 6 · Gemini 1 · Copilot 1",
+  "aiReferralsDetail": "ChatGPT 4 · Gemini 1 · Copilot 1",
   "daily": {
    "labels": [
-    "31 Oct"
+    "31 Oct",
+    "1 Nov"
    ],
    "impr": [
-    0
+    644,
+    811
    ],
    "clicks": [
-    0
+    9,
+    10
    ],
    "visitors": [
-    1
+    79,
+    23
    ]
   },
   "byFunnel": [
@@ -188,96 +192,167 @@
     "funnel": "Hanuman Chalisa",
     "urls": 49,
     "hub": "discovered",
-    "impr": 0,
+    "impr": 35,
     "clicks": 0,
-    "pos": null,
-    "visitors": 0,
+    "pos": 6.2,
+    "visitors": 13,
     "handoff": 0
    },
    {
     "funnel": "Other Gitas (Ashtavakra)",
     "urls": 65,
     "hub": "indexed",
-    "impr": 0,
-    "clicks": 0,
-    "pos": null,
-    "visitors": 0,
+    "impr": 112,
+    "clicks": 1,
+    "pos": 7.8,
+    "visitors": 8,
     "handoff": 0
    },
    {
     "funnel": "Sayings (Vivekananda, Kabir, Chanakya)",
     "urls": 103,
-    "hub": "crawled",
-    "impr": 0,
-    "clicks": 0,
-    "pos": null,
-    "visitors": 0,
-    "handoff": 0
+    "hub": "indexed",
+    "impr": 221,
+    "clicks": 9,
+    "pos": 6.9,
+    "visitors": 26,
+    "handoff": 1
    },
    {
     "funnel": "Ramayana",
     "urls": 18,
     "hub": "discovered",
-    "impr": 0,
+    "impr": 81,
     "clicks": 0,
-    "pos": null,
-    "visitors": 0,
+    "pos": 5.1,
+    "visitors": 8,
     "handoff": 0
    },
    {
     "funnel": "Upanishads",
     "urls": 20,
     "hub": "discovered",
-    "impr": 0,
+    "impr": 137,
     "clicks": 0,
-    "pos": null,
-    "visitors": 1,
+    "pos": 9.3,
+    "visitors": 11,
     "handoff": 0
    },
    {
     "funnel": "Mahabharata",
     "urls": 12,
     "hub": "indexed",
-    "impr": 0,
-    "clicks": 0,
-    "pos": null,
-    "visitors": 0,
+    "impr": 40,
+    "clicks": 1,
+    "pos": 6.8,
+    "visitors": 11,
     "handoff": 0
    },
    {
     "funnel": "Ram Shalaka",
     "urls": 11,
     "hub": "discovered",
-    "impr": 0,
-    "clicks": 0,
-    "pos": null,
-    "visitors": 0,
+    "impr": 65,
+    "clicks": 1,
+    "pos": 7.7,
+    "visitors": 9,
     "handoff": 0
    },
    {
     "funnel": "Quote pages",
     "urls": 12,
     "hub": "indexed",
-    "impr": 0,
-    "clicks": 0,
-    "pos": null,
-    "visitors": 0,
+    "impr": 764,
+    "clicks": 7,
+    "pos": 6.4,
+    "visitors": 11,
     "handoff": 0
    }
   ],
-  "topQueries": [],
-  "note": "Google indexed the Mahabharata, Ashtavakra Gita and Bhagavad Gita quotes hubs within a day of launch, so 4 of 11 hubs are now in the index. Vivekananda was crawled but not indexed, Ramayana, Ram Shalaka, Hanuman Chalisa and Upanishads are discovered only, and Kabir and Chanakya are still unknown to Google. GSC has no data for the funnel pages yet; Ramayana still needs to be indexed before 5 Nov.",
+  "topQueries": [
+   [
+    "krishna quote",
+    "/blogs/krishna-quotes",
+    20,
+    1,
+    6.0
+   ],
+   [
+    "krishna quotes in english",
+    "/blogs/krishna-quotes",
+    17,
+    0,
+    7.6
+   ],
+   [
+    "krishna quotes from bhagavad gita",
+    "/blogs/krishna-quotes",
+    12,
+    0,
+    8.3
+   ],
+   [
+    "pothi padh padh jag mua",
+    "/hi/kabir-ke-dohe/pothi-padh-padh-jag-mua",
+    12,
+    0,
+    9.4
+   ],
+   [
+    "krishna's quotes",
+    "/blogs/krishna-quotes",
+    11,
+    0,
+    7.5
+   ],
+   [
+    "krishna quotes",
+    "/blogs/krishna-quotes",
+    10,
+    1,
+    6.5
+   ],
+   [
+    "krishna says quotes",
+    "/blogs/krishna-quotes",
+    10,
+    0,
+    7.1
+   ],
+   [
+    "garal sudha ripu karahi mitai ka arth",
+    "/hi/ram-shalaka/garal-sudha-ripu-karahin-mitai",
+    7,
+    0,
+    5.9
+   ],
+   [
+    "krishna quotes in one line",
+    "/blogs/krishna-quotes",
+    7,
+    0,
+    2.7
+   ],
+   [
+    "krishna said quotes",
+    "/blogs/krishna-quotes",
+    6,
+    0,
+    5.5
+   ]
+  ],
+  "note": "Vivekananda was indexed on 1 Nov, so 5 of 11 hubs are now in. Ramayana, Ram Shalaka, Hanuman Chalisa, Upanishads, Kabir and Chanakya are discovered but not yet crawled, and Ramayana still needs to be indexed before 5 Nov. GSC now shows 1,455 impressions and 19 clicks on funnel pages since launch; 6 of those clicks are the older Krishna quotes page, and Kabir doha pages already pick up long-tail Hindi queries.",
   "launchLabel": "31 Oct"
  },
  "social": {
-  "range": "20 Sep to 29 Oct",
-  "views7": 678,
-  "views7Delta": "+29% vs prior 7d",
+  "range": "20 Sep to 1 Nov",
+  "views7": 650,
+  "views7Delta": "+22% vs prior 7d",
   "views7Good": true,
   "followersTotal": 162,
   "followersDetail": "IG 58 (+1) · YT 72 (+4) · X 32 (+0), last 6 weeks",
-  "skip": "76%",
-  "avgWatch": "avg watch 3.7s of 33s",
+  "skip": "73%",
+  "avgWatch": "avg watch 4.2s of 34s",
   "siteVisits28": 0,
   "weekly": {
    "labels": [
@@ -295,8 +370,8 @@
     0,
     157,
     291,
-    531,
-    198
+    534,
+    217
    ],
    "yt": [
     0,
@@ -312,17 +387,17 @@
   "funnel": [
    [
     "Reel views",
-    1730,
-    "Instagram 1,297 · YouTube 433"
+    1752,
+    "Instagram 1,319 · YouTube 433"
    ],
    [
     "Reached (Instagram)",
-    1085,
+    1096,
     ""
    ],
    [
     "Engaged",
-    58,
+    59,
     "likes, saves, shares"
    ],
    [
@@ -336,7 +411,7 @@
     "Mixpanel, instagram/youtube referrers"
    ]
   ],
-  "funnelNote": "Of 1,730 views, 58 led to a like, save or share (3.4%). From there it stops: Zernio shows 0 profile views and 0 website clicks, and Mixpanel shows no site visits from Instagram or YouTube in 28 days. Nobody can follow a viewer from a reel to an install yet.",
+  "funnelNote": "Of 1,752 views, 59 led to a like, save or share (3.4%). From there it stops: Zernio shows 0 profile views and 0 website clicks, and Mixpanel shows no site visits from Instagram or YouTube in 28 days. Nobody can follow a viewer from a reel to an install yet.",
   "posts": [
    [
     "Everyone your age seems so far ahead of you",
@@ -359,7 +434,7 @@
    [
     "It's 4 p.m. and you still haven't started",
     "",
-    147,
+    148,
     3,
     1,
     "74%",
@@ -377,7 +452,7 @@
    [
     "You snapped at someone you love. Again.",
     "",
-    127,
+    128,
     1,
     2,
     "81%",
@@ -386,32 +461,32 @@
    [
     "The Bhagavad Gita was never a sermon for everyone",
     "131s story",
-    124,
+    126,
     3,
     0,
     "78%",
-    "3.3s / 131s"
+    "4.4s / 131s"
    ],
    [
     "Scrolled till 2 a.m. Woke up exhausted. Again.",
     "",
-    70,
+    75,
     2,
     0,
-    "68%",
-    "2.3s / 14s"
+    "67%",
+    "3.2s / 14s"
    ]
   ],
-  "postsNote": "The 55-second story reel (\"not made for you\") still has 2.5× the likes of any other post and the longest watch time. The 131-second follow-up from 29 Oct has settled at a 78% skip rate and 3.3s average watch on 124 views, the same as the short quote cards. Story length alone did not hold people; the first 3 seconds decide it."
+  "postsNote": "The 55-second story reel (\"not made for you\") still has 2.5× the likes of any other post and the longest watch time. The 131-second follow-up from 29 Oct sits at a 78% skip rate and 4.4s average watch on 126 views, close to the short quote cards. Story length alone did not hold people; the first 3 seconds decide it."
  },
  "web": {
-  "clicks7": 341,
-  "clicks7Delta": "+117% vs prior 7d",
+  "clicks7": 410,
+  "clicks7Delta": "+141% vs prior 7d",
   "clicks7Good": true,
-  "visitors28": 1468,
-  "visitorsMix": "70% from search, 25% direct",
-  "icpShare": "23%",
-  "icpDetail": "US 266 · UK 41 · CA 24 · AU 12",
+  "visitors28": 1539,
+  "visitorsMix": "73% from search, 25% direct",
+  "icpShare": "21%",
+  "icpDetail": "US 241 · UK 42 · CA 26 · AU 11",
   "appTaps28": 12,
   "appTapsPct": "0.8% of visitors",
   "weeklyClicks": {
@@ -435,7 +510,7 @@
     130,
     146,
     170,
-    270
+    410
    ],
    "impr": [
     3727,
@@ -446,10 +521,10 @@
     5912,
     6721,
     7966,
-    10886
+    16931
    ]
   },
-  "weeklyClicksNote": "CTR holds at about 2.3%, so growth comes from impressions. The jump since 24 Oct lines up with the SEO fixes from 25 Oct; 30 Oct dipped to 36 clicks, which may be partial data.",
+  "weeklyClicksNote": "CTR holds at about 2.4%, so growth comes from impressions. The week of 26 Oct more than doubled the week before (410 clicks on 16.9k impressions), in line with the SEO fixes from 25 Oct.",
   "weeklyVisitors": {
    "labels": [
     "31 Aug",
@@ -471,20 +546,20 @@
     296,
     341,
     340,
-    278
+    482
    ]
   },
-  "weeklyVisitorsNote": "The 28 Sep spike (863) was a one-off. Underneath it, visitors were flat at about 300 a week until the last week, when daily visitors rose to 80 to 90.",
-  "handoffNote": "GSC: 33,126 impressions → 753 clicks (2.3% CTR)",
+  "weeklyVisitorsNote": "The 28 Sep spike (863) was a one-off. Underneath it, visitors were flat at about 300 a week until the week of 26 Oct, which reached 482.",
+  "handoffNote": "GSC: 37,530 impressions → 856 clicks (2.3% CTR)",
   "handoff": [
    [
     "Site visitors",
-    1468,
+    1539,
     "all sources"
    ],
    [
     "Played a shloka",
-    151,
+    154,
     "engaged"
    ],
    [
@@ -496,97 +571,97 @@
   "start": [
    [
     "Opened /start",
-    31,
+    40,
     ""
    ],
    [
     "Answered a question",
-    18,
+    27,
     ""
    ],
    [
     "Verses generated",
-    6,
+    10,
     ""
    ],
    [
     "Started Google sign-in",
-    6,
+    7,
     ""
    ],
    [
     "Signed in",
-    1,
+    2,
     ""
    ],
    [
     "Completed",
-    1,
+    2,
     ""
    ]
   ],
-  "startNote": "Only a third of people who answer a question get to see verses. That is the leak to fix first: the verse should appear before they are asked anything else. The first web /start completion showed up this week (1 of 31).",
+  "startNote": "Only about a third of people who answer a question get to see verses (10 of 27). That is the leak to fix first: the verse should appear before they are asked anything else. Web /start completions are now 2 of 40 in 28 days.",
   "split": [
    [
     "India",
-    970
+    1060
    ],
    [
     "US / UK / CA / AU (ICP)",
-    343
+    320
    ],
    [
     "Rest of world",
-    155
+    159
    ]
   ],
-  "splitNote": "Your ICP is the diaspora (US, UK, CA, AU), but they are only 1 in 4 visitors. Over 28 days US CTR is 1.65% against 2.37% for India, at a similar position (7.3 vs 6.8). In the last 7 days US CTR rose to 2.6%, an early sign the new titles help.",
+  "splitNote": "Your ICP is the diaspora (US, UK, CA, AU), but they are only 1 in 5 visitors. In the last 7 days US search CTR was 2.8% against 2.4% for India at a similar position (7.0 vs 6.5), an early sign the new titles help.",
   "topPages": [
    [
     "/hi/gita",
-    258,
+    290,
     "4.8%",
-    5.8
-   ],
-   [
-    "/blogs/karma-quotes-bhagavad-gita",
-    98,
-    "3.1%",
     5.9
    ],
    [
+    "/blogs/karma-quotes-bhagavad-gita",
+    121,
+    "3.2%",
+    5.7
+   ],
+   [
+    "/blogs/krishna-quotes",
+    56,
+    "1.3%",
+    6.5
+   ],
+   [
     "/ (home)",
-    54,
-    "6.1%",
+    52,
+    "5.6%",
+    6.4
+   ],
+   [
+    "/blogs/20-famous-sanskrit-shlokas",
+    52,
+    "2.3%",
     6.3
    ],
    [
     "/blogs/best-bhagavad-gita-translation",
-    47,
-    "1.5%",
-    6.9
-   ],
-   [
-    "/blogs/krishna-quotes",
-    47,
+    45,
     "1.4%",
-    6.6
-   ],
-   [
-    "/blogs/20-famous-sanskrit-shlokas",
-    35,
-    "2.3%",
-    6.5
+    6.8
    ]
   ],
-  "topPagesNote": "The top page is the Hindi Gita page, which pulls Indian, Hindi-reading visitors (not the ICP). The English blogs with 1.3 to 1.5% CTR are where better titles pay off for the diaspora."
+  "topPagesNote": "The top page is the Hindi Gita page, which pulls Indian, Hindi-reading visitors (not the ICP). The English blogs at 1.3 to 1.4% CTR (Krishna quotes, best translation) are where better titles pay off for the diaspora."
  },
  "app": {
-  "installs4w": 54,
-  "installs4wNote": "~14 a week, almost all from the App Store directly",
-  "wau": 21,
-  "wauNote": "week of 19 Oct, all versions",
-  "d1": "7%",
+  "installs4w": 57,
+  "installs4wNote": "~14 a week, almost all from the App Store directly; last week 7",
+  "wau": 19,
+  "wauNote": "week of 26 Oct, all versions",
+  "d1": "9%",
   "d7": "Day 7: 1%",
   "purchases": 0,
   "purchasesNote": "real purchases, v2, 60 days · 10 saw the paywall",
@@ -677,7 +752,7 @@
     12,
     23,
     15,
-    4
+    7
    ],
    "v3": [
     0,
@@ -692,13 +767,13 @@
    ]
   },
   "retention": [
-   82,
-   7,
+   83,
+   9,
+   8,
+   9,
+   8,
    3,
-   3,
-   3,
-   1,
-   0,
+   5,
    1
   ],
   "retentionNote": "Benchmark for a daily-habit app: D1 at least 30%, D7 at least 15%. v3's whole bet is the Day-2 verse reveal, so put a Mixpanel retention report on Verse Revealed (home), cohorted by first_open_date, on the day you launch."

@@ -13,3 +13,6 @@ backend/.env.supabase.local
 
 frontend/.env*.local
 .slop-review/
+
+# RAG eval cache (frozen readings, labels)
+backend/evals/rag/cache/

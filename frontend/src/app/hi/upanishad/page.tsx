@@ -4,18 +4,28 @@ import { Bridge, Bridges, SourcesNote, UpNext } from '@/components/funnels/upani
 import { articleLd, padas, SITE, upMeta } from '@/lib/funnels/upanishads'
 import { LINES } from '@/content/funnels/upanishads/lines'
 import { PRINCIPAL, SHVETASHVATARA, GITA_DHYANAM } from '@/content/funnels/upanishads/principal'
+import { MUKTIKA } from '@/content/funnels/upanishads/muktika'
 
 const PATH = '/hi/upanishad'
 const PAGE = 'upanishads-hi-hub'
-const TITLE = 'उपनिषद क्या है और कितने हैं: 10 मुख्य उपनिषद'
-const DESC = 'उपनिषद क्या है, कितने उपनिषद हैं (108, जिनमें 10 मुख्य), कौन सा उपनिषद किस वेद का है, और पढ़ना कहाँ से शुरू करें। प्रसिद्ध श्लोक संस्कृत में।'
+const TITLE = 'उपनिषद कितने हैं? 108 उपनिषदों के नाम, 10 मुख्य उपनिषद'
+const DESC = 'उपनिषद 108 हैं, मुक्तिका उपनिषद की सूची के अनुसार, और इनमें 10 मुख्य हैं। सभी 108 उपनिषदों के नाम वेद के अनुसार, और पढ़ना कहाँ से शुरू करें।'
+const PRINCIPAL_HREF = new Map(PRINCIPAL.map((u) => [u.en, u.href]))
 
 export const metadata = upMeta({ title: TITLE, description: DESC, path: PATH, locale: 'hi', twin: '/upanishads', ogCard: 'up-satyameva-jayate' })
 
 const FAQ = [
   {
-    q: 'उपनिषद कितने हैं?',
-    a: 'परंपरा 108 उपनिषद मानती है, मुक्तिका उपनिषद की सूची के अनुसार। वैसे 200 से ज़्यादा ग्रंथों के नाम में उपनिषद आता है। इनमें 10 मुख्य उपनिषद हैं: ईश, केन, कठ, प्रश्न, मुण्डक, माण्डूक्य, तैत्तिरीय, ऐतरेय, छान्दोग्य और बृहदारण्यक।',
+    q: 'उपनिषद कितने हैं और उनके नाम क्या हैं?',
+    a: 'परंपरा 108 उपनिषद मानती है, मुक्तिका उपनिषद की सूची के अनुसार। वैसे 200 से ज़्यादा ग्रंथों के नाम में उपनिषद आता है। इनमें 10 मुख्य उपनिषद हैं: ईश, केन, कठ, प्रश्न, मुण्डक, माण्डूक्य, तैत्तिरीय, ऐतरेय, छान्दोग्य और बृहदारण्यक। सभी 108 के नाम ऊपर वेद के अनुसार दिए हैं।',
+  },
+  {
+    q: 'कौन सा उपनिषद किस वेद का है?',
+    a: 'मुक्तिका की सूची में ऋग्वेद के 10, शुक्ल यजुर्वेद के 19, कृष्ण यजुर्वेद के 32, सामवेद के 16 और अथर्ववेद के 31 उपनिषद हैं। मुख्य उपनिषदों में ऐतरेय ऋग्वेद का है; ईश और बृहदारण्यक शुक्ल यजुर्वेद के; कठ और तैत्तिरीय कृष्ण यजुर्वेद के; केन और छान्दोग्य सामवेद के; प्रश्न, मुण्डक और माण्डूक्य अथर्ववेद के।',
+  },
+  {
+    q: 'Upanishad kitne hai?',
+    a: 'Upanishad 108 hain, मुक्तिका उपनिषद की सूची के अनुसार। इनमें 10 मुख्य उपनिषद हैं, जिन पर आदि शंकराचार्य ने भाष्य लिखा।',
   },
   {
     q: 'उपनिषद किसने लिखे?',
@@ -45,7 +55,15 @@ export default function Page() {
       name: '10 मुख्य उपनिषद',
       itemListElement: PRINCIPAL.map((u, i) => ({ '@type': 'ListItem', position: i + 1, name: `${u.hi} उपनिषद`, ...(u.href ? { url: `${SITE}${u.href}` } : {}) })),
     },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: '108 उपनिषद (मुक्तिका उपनिषद की सूची)',
+      numberOfItems: 108,
+      itemListElement: MUKTIKA.flatMap((g) => g.names).map((u, i) => ({ '@type': 'ListItem', position: i + 1, name: `${u.hi} उपनिषद` })),
+    },
   ]
+  const starts = MUKTIKA.map((_, gi) => 1 + MUKTIKA.slice(0, gi).reduce((a, g) => a + g.names.length, 0))
   return (
     <>
       <PageTracker pageName="Upanishads Hub HI" />
@@ -54,10 +72,11 @@ export default function Page() {
         locale="hi"
         crumbs={[{ label: 'उपनिषद', href: PATH }]}
         eyebrow="उपनिषद: गुरु के पास बैठकर"
-        title="उपनिषद क्या है, और कितने उपनिषद हैं"
+        title="उपनिषद क्या है, कितने हैं, और उनके नाम"
         facts={['108 उपनिषद', '10 मुख्य उपनिषद']}
         actions={[
           { href: '#how-many', label: '10 मुख्य उपनिषद देखें', location: 'hub_hero_ten' },
+          { href: '#all-108', label: '108 उपनिषदों के नाम', location: 'hub_hero_108' },
           { href: '#lines', label: 'प्रसिद्ध श्लोक', location: 'hub_hero_lines' },
         ]}
         verse={{ original: ['सत्यमेव जयते नानृतं'], iast: ['satyam eva jayate nānṛtam'], meaning: 'जीत सत्य की ही होती है, झूठ की नहीं।', source: 'मुण्डक उपनिषद 3.1.6' }}
@@ -65,8 +84,9 @@ export default function Page() {
 
       <Section id="word" width="narrow">
         <p id="quick-answer" className="sx-intro rv">
+          उपनिषद 108 हैं। यह गिनती मुक्तिका उपनिषद की सूची से आती है: ऋग्वेद के 10, शुक्ल यजुर्वेद के 19, कृष्ण यजुर्वेद के 32, सामवेद के 16 और अथर्ववेद के 31।
+          इनमें 10 मुख्य उपनिषद हैं, जिन पर आदि शंकराचार्य ने भाष्य लिखा: ईश, केन, कठ, प्रश्न, मुण्डक, माण्डूक्य, तैत्तिरीय, ऐतरेय, छान्दोग्य और बृहदारण्यक।
           उपनिषद वेदों का आख़िरी हिस्सा हैं, इसलिए इन्हें वेदांत कहते हैं। इनमें आत्मा और ब्रह्म की शिक्षा है, ज़्यादातर गुरु और शिष्य की बातचीत के रूप में।
-          परंपरा 108 उपनिषद गिनती है। इनमें से 10 मुख्य उपनिषद कहलाते हैं, क्योंकि आदि शंकराचार्य ने इन पर भाष्य लिखा।
         </p>
         <div className="up-card up-card--story rv">
           <h2 id="word-h" className="sx-eyebrow">
@@ -92,6 +112,41 @@ export default function Page() {
           ))}
         </ul>
         <p className="sx-prose up-after rv">{SHVETASHVATARA.hi}</p>
+      </Section>
+
+      <Section
+        id="all-108"
+        width="narrow"
+        title="सभी 108 उपनिषदों के नाम, वेद के अनुसार"
+        intro="मुक्तिका उपनिषद में श्रीराम हनुमान जी को 108 उपनिषदों के नाम बताते हैं। यहाँ वही सूची वेद के अनुसार है। मोटे अक्षरों वाले 10 मुख्य उपनिषद हैं।"
+        track="all_108"
+      >
+        <div className="up-108-groups">
+          {MUKTIKA.map((g, gi) => (
+            <details key={g.id} className="up-more rv">
+              <summary>
+                {g.veda.hi} <span className="up-more-ref">{g.names.length} उपनिषद</span>
+              </summary>
+              <ol className="up-108" start={starts[gi]}>
+                {g.names.map((u) => {
+                  const href = PRINCIPAL_HREF.get(u.en)
+                  const main = PRINCIPAL_HREF.has(u.en)
+                  return (
+                    <li key={u.en} className={main ? 'is-main' : undefined}>
+                      {href ? (
+                        <a href={href} hrefLang="en" data-mp-location={`hub_108_${u.en.toLowerCase()}`}>
+                          {u.hi}
+                        </a>
+                      ) : (
+                        u.hi
+                      )}
+                    </li>
+                  )
+                })}
+              </ol>
+            </details>
+          ))}
+        </div>
       </Section>
 
       <Section id="lines" title="उपनिषद के प्रसिद्ध श्लोक">

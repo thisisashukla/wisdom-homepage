@@ -80,6 +80,7 @@ const variants = []
 const lines = CH.map((c) => {
   const ex = extras.lines[String(c.k)]
   if (!ex) throw new Error(`no extras for k=${c.k}`)
+  if (!ex.roman) throw new Error(`no roman for k=${c.k}`)
   const rec = corpus.get(c.id)
   const unit = splitUnit(rec)
   const [kandHi, placeHi] = c.kand.hi.split(' · ')
@@ -110,6 +111,8 @@ const lines = CH.map((c) => {
     n: c.k + 1,
     k: c.k,
     slug: ex.slug,
+    /** The line as people type it in Latin letters ("Garal Sudha Ripu Karahi Mitai"); used in the title and H1. */
+    roman: ex.roman,
     id: c.id,
     sign: c.sign,
     deva: [...c.deva],

@@ -152,6 +152,24 @@
 @keyframes up-draw { from { transform: scaleX(0); } to { transform: none; } }
 @keyframes up-draw-y { from { transform: scaleY(0); } to { transform: none; } }
 
+/* ── Fold: the Upanishad passage behind a recited mantra, the 108 list by Veda ── */
+.up-more { border: 1px solid var(--border); border-radius: var(--r-md); background: var(--bg-card); transition: border-color var(--t-quick) var(--ease-out); }
+.up-more[open] { border-color: rgba(245, 201, 106, 0.32); }
+.up-more summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px 18px; min-height: 52px; font-weight: 600; color: var(--gold-light); }
+.up-more summary::-webkit-details-marker { display: none; }
+.up-more summary::after { content: '+'; margin-left: auto; font: 400 22px/1 var(--font-ui); color: var(--gold); transition: transform var(--t-quick) var(--ease-out); }
+.up-more[open] summary::after { transform: rotate(45deg); }
+.up-more summary:hover { color: var(--gold-pale); }
+.up-more-ref { font-weight: 400; font-size: 13px; color: var(--text-dimmer); }
+.up-more > .sx-verse { margin: 0 14px 14px; }
+.up-108-groups { display: grid; gap: 10px; }
+.up-108 { margin: 0; padding: 4px 18px 18px 46px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 18px; font-family: var(--font-sa); font-size: 18px; line-height: 1.6; color: var(--text-dim); }
+.up-108 li::marker { font: 400 12px var(--font-ui); color: var(--text-dimmer); }
+.up-108 li.is-main { color: var(--gold-light); font-weight: 700; }
+.up-108 a { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 4px; }
+@media (max-width: 580px) { .up-108 { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-left: 40px; } }
+@media (prefers-reduced-motion: reduce) { .up-more, .up-more summary::after { transition: none; } }
+
 /* ── Responsive ──────────────────────────────────────────────────────── */
 @media (max-width: 899px) {
   .up-grid-2, .up-ten, .up-books { grid-template-columns: minmax(0, 1fr); }
