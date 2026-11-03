@@ -1,0 +1,116 @@
+{
+  "week1": {
+    "pairwise_cos": 0.593,
+    "adjacent_cos": 0.593,
+    "same_beat_cos": 0.598,
+    "level_fit": {
+      "situation": 0.386,
+      "pattern": 0.386,
+      "self": 0.16
+    },
+    "distinct_share": 0.341,
+    "top_verses": [
+      [
+        "bg.6.34",
+        0.184
+      ],
+      [
+        "mbh.5.133.7",
+        0.158
+      ],
+      [
+        "bh.niti.84",
+        0.149
+      ],
+      [
+        "rcm.2.163.doha.1",
+        0.14
+      ],
+      [
+        "bg.2.47",
+        0.114
+      ]
+    ],
+    "jaccard_same_mech": 0.129,
+    "jaccard_diff_mech": 0.019
+  },
+  "week2": {
+    "pairwise_cos": 0.584,
+    "adjacent_cos": 0.593,
+    "same_beat_cos": 0.601,
+    "level_fit": {
+      "situation": 0.331,
+      "pattern": 0.488,
+      "self": 0.155
+    },
+    "distinct_share": 0.325,
+    "top_verses": [
+      [
+        "yv.5.66.34",
+        0.228
+      ],
+      [
+        "mbh.3.210.46",
+        0.193
+      ],
+      [
+        "mbh.3.32.58",
+        0.14
+      ],
+      [
+        "bh.vairagya.31",
+        0.14
+      ],
+      [
+        "avadhuta.8.7",
+        0.105
+      ]
+    ],
+    "jaccard_same_mech": 0.218,
+    "jaccard_diff_mech": 0.014
+  },
+  "week3": {
+    "pairwise_cos": 0.587,
+    "adjacent_cos": 0.59,
+    "same_beat_cos": 0.602,
+    "level_fit": {
+      "situation": 0.259,
+      "pattern": 0.301,
+      "self": 0.525
+    },
+    "distinct_share": 0.202,
+    "top_verses": [
+      [
+        "bg.13.33",
+        0.465
+      ],
+      [
+        "ashtavakra.15.4",
+        0.333
+      ],
+      [
+        "ashtavakra.15.9",
+        0.325
+      ],
+      [
+        "ashtavakra.18.11",
+        0.246
+      ],
+      [
+        "ashtavakra.18.81",
+        0.237
+      ]
+    ],
+    "jaccard_same_mech": 0.346,
+    "jaccard_diff_mech": 0.071
+  },
+  "week1_self_by_slot": {
+    "act#1": 0.098,
+    "act#2": 0.126,
+    "diagnose#1": 0.18,
+    "hook#1": 0.055,
+    "steady#1": 0.138,
+    "steady#2": 0.361
+  },
+  "library_random_pair_cos": 0.543
+}

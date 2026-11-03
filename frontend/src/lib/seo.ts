@@ -11,11 +11,29 @@ export const OG_DEFAULT = `${SITE}/og-image.webp`
 /** Absolute URL for a site path (absolute URLs pass through). */
 export const abs = (path: string): string => (path.startsWith('http') ? path : `${SITE}${path.startsWith('/') ? '' : '/'}${path}`)
 
+/** The site's name. "Wisdom" alone is too generic to search or cite, so the alternates carry the domain. */
+export const SITE_NAME = 'Wisdom'
+export const SITE_NAME_FULL = 'Wisdom (wisdomquotes.in)'
+export const SITE_ALT_NAMES = [SITE_NAME_FULL, 'wisdomquotes.in', 'Wisdom Gita'] as const
+export const ORG_ID = `${SITE}/#organization`
+export const WEBSITE_ID = `${SITE}/#website`
+export const LOGO_URL = `${SITE}/assets/new-light-logo.webp`
+
+/** Official profiles of the site and app (Organization sameAs). */
+export const SAME_AS = [
+  'https://apps.apple.com/app/id6747684125',
+  'https://www.instagram.com/wisdomquoteapp/',
+  'https://x.com/sansearchapp',
+] as const
+
 export const PUBLISHER_LD = {
   '@type': 'Organization',
-  name: 'Wisdom',
+  '@id': ORG_ID,
+  name: SITE_NAME,
+  alternateName: SITE_ALT_NAMES,
   url: SITE,
-  logo: { '@type': 'ImageObject', url: `${SITE}/assets/new-light-logo.webp` },
+  logo: { '@type': 'ImageObject', url: LOGO_URL },
+  sameAs: SAME_AS,
 } as const
 
 export const AUTHOR_LD = { '@type': 'Person', name: 'Ankur Shukla', url: `${SITE}/about` } as const
@@ -51,7 +69,7 @@ export function pageMeta(o: PageMetaOptions): Metadata {
       description: o.description,
       url,
       type: o.type ?? 'article',
-      siteName: 'Wisdom',
+      siteName: SITE_NAME_FULL,
       locale: o.locale === 'hi' ? 'hi_IN' : 'en_IN',
       images: [{ url: image }],
     },

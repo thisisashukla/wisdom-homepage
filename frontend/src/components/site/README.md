@@ -26,7 +26,7 @@ If a page needs something the kit can't do, add a prop to the kit component (one
 | `NextStep` | The device-aware next step (app / WhatsApp / email). | `placement`, `copy`, `pageKey`, `startSituation` |
 | `GitaBridge` | Any link from another scripture back to a Gita verse. | `href`, `label`, `why`, `location`, `variant` ('card' / 'inline') |
 | `Faq` | FAQs + FAQPage JSON-LD. | `items`, `locale`, `ld` |
-| `LinkCards` | Related / up-next / hub listings. | `items {href,title,body,kicker,orig}`, `columns` |
+| `LinkCards` | Related / up-next / hub listings, file downloads. | `items {href,title,body,kicker,orig,location,download,event,eventProps}`, `columns` |
 | `JsonLd` | Any other schema. | `data` |
 | `Nav`, `SiteFooter` | From `components/`; same on every page. `Nav` takes `overlayHero` and `locale` (defaults from the URL). |
 

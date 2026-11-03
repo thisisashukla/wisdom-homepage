@@ -4,6 +4,12 @@ import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl 
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import BlogTracker from '@/components/BlogTracker'
+import {
+  gitaTopicDefinition,
+  gitaTopicDescriptionHi,
+  gitaTopicHiName,
+  gitaTopicTitleHi,
+} from '@/content/topics/gita-definitions'
 
 type Params = { slug: string }
 
@@ -61,21 +67,44 @@ const TOPIC_CASCADE_HI: Record<string, {
     chapter: 2,
     verse: 62,
     eyebrow: 'आगे पढ़ें · अहंकार की कड़ी',
-    headline: 'गीता 2.62–63 — कामना, क्रोध और बुद्धिनाश की शृंखला',
+    headline: 'गीता 2.62-63: कामना, क्रोध और बुद्धिनाश की शृंखला',
     sub: 'अहंकार अकेला नहीं टूटता। कृष्ण दो श्लोकों में वह पूरी शृंखला बताते हैं जो विषय-चिंतन से शुरू होकर बुद्धि के नाश पर समाप्त होती है।',
   },
+}
+
+/** Hindi labels for the verse depth chip (data values stay English for CSS). */
+const DEPTH_HI: Record<string, string> = {
+  surface: 'सरल',
+  medium: 'मध्यम',
+  mid: 'मध्यम',
+  deep: 'गहन',
+}
+
+/** First half-line of the Sanskrit verse, up to the first danda. */
+const firstPada = (sanskrit: string): string => {
+  const head = sanskrit.split('।')[0]?.trim() ?? ''
+  return head ? `${head} ।` : sanskrit
+}
+
+/** Shorten a Hindi translation at a sentence or word boundary. */
+const clipHi = (text: string, max = 140): string => {
+  const t = text.replace(/\s+/g, ' ').trim()
+  if (t.length <= max) return t
+  const cut = t.slice(0, max)
+  const danda = cut.lastIndexOf('।')
+  if (danda >= 60) return cut.slice(0, danda + 1)
+  const space = cut.lastIndexOf(' ')
+  return `${cut.slice(0, space > 0 ? space : max)}…`
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const topic = await getTopic(params.slug)
   if (!topic) return { title: 'विषय नहीं मिला' }
-  const cap = topic.label.replace(/\b\w/g, (c) => c.toUpperCase())
   const aliases = TOPIC_ALIASES[params.slug]
-  const aliasString = aliases && aliases.length > 0
-    ? ` (${aliases.slice(0, 3).join(', ')})`
-    : ''
-  const title = `भगवद् गीता में ${cap}${aliasString} — ${topic.verseCount} श्लोक`
-  const description = `भगवद् गीता के ${topic.verseCount} श्लोक जो ${topic.label}${aliasString} पर हैं — संस्कृत, हिन्दी और अंग्रेज़ी अनुवाद सहित। सभी 18 अध्यायों से चुने गए।`
+  // Devanagari-first title and a Hindi description that opens with the
+  // Hindi definition (src/content/topics/gita-definitions.ts).
+  const title = gitaTopicTitleHi(topic.slug, topic.label, topic.verseCount)
+  const description = gitaTopicDescriptionHi(topic.slug, topic.label, topic.verseCount)
   return {
     title,
     description,
@@ -114,8 +143,10 @@ export default async function TopicPageHi({ params }: { params: Params }) {
   // Retired slugs are 308'd by src/middleware.ts before reaching here.
   if (!topic) notFound()
   const verses = await getTopicVerses(topic.slug, 50)
-  const cap = topic.label.replace(/\b\w/g, (c) => c.toUpperCase())
+  const hiName = gitaTopicHiName(topic.slug, topic.label)
+  const definition = gitaTopicDefinition(topic.slug)
   const intro = topicIntro(topic.slug, 'hi')
+  const pageUrl = `https://wisdomquotes.in${topicUrl(topic.slug, 'hi')}`
 
   // ── Featured / rest split. Hero renders the first 3 verses as full ShlokaCards
   //    (Sanskrit + Hindi + audio if available + deep-link to full verse page) so
@@ -128,7 +159,8 @@ export default async function TopicPageHi({ params }: { params: Params }) {
   const itemListLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: `भगवद् गीता में ${topic.label} पर श्लोक`,
+    name: `भगवद् गीता में ${hiName} पर श्लोक`,
+    ...(definition ? { description: definition.hiDef } : {}),
     inLanguage: 'hi',
     numberOfItems: verses.length,
     itemListElement: verses.map((v, i) => ({
@@ -146,26 +178,46 @@ export default async function TopicPageHi({ params }: { params: Params }) {
       {
         '@type': 'ListItem',
         position: 2,
-        name: `भगवद् गीता में ${topic.label}`,
-        item: `https://wisdomquotes.in${topicUrl(topic.slug, 'hi')}`,
+        name: `भगवद् गीता में ${hiName}`,
+        item: pageUrl,
       },
     ],
   }
+  const definedTermLd = definition && definition.kind === 'term'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTerm',
+        name: hiName,
+        alternateName: Array.from(new Set([topic.label, ...(TOPIC_ALIASES[topic.slug] ?? [])]))
+          .filter((a) => a !== hiName),
+        description: definition.hiDef,
+        url: pageUrl,
+        inLanguage: 'hi',
+        inDefinedTermSet: {
+          '@type': 'DefinedTermSet',
+          name: 'भगवद् गीता के मूल शब्द',
+          url: 'https://wisdomquotes.in/hi/gita',
+        },
+      }
+    : null
 
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_topic_hi_${topic.slug}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {definedTermLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(definedTermLd) }} />
+      )}
 
       <nav className="gita-crumb" aria-label="Breadcrumb">
         <a href="/hi/gita" data-mp-location={`topic_hi_${topic.slug}_crumb_gita`}>भगवद् गीता</a>
         <span className="sep">›</span>
-        <span>विषय: {topic.label}</span>
+        <span>विषय: {hiName}</span>
       </nav>
 
       <div className="lang-switch">
-        <span className="lang-switch-label">Also in</span>
+        <span className="lang-switch-label">अन्य भाषा</span>
         <a
           href={topicUrl(topic.slug, 'en')}
           data-mp-location={`topic_hi_${topic.slug}_lang_en`}
@@ -175,9 +227,14 @@ export default async function TopicPageHi({ params }: { params: Params }) {
       </div>
 
       <div className="gita-eyebrow">विषय · {topic.verseCount} श्लोक</div>
-      <h1 className="gita-h1">भगवद् गीता में {cap}</h1>
+      <h1 className="gita-h1">भगवद् गीता में {hiName}</h1>
+      {definition && (
+        <p className="gita-lede" style={{ color: 'var(--text)', marginBottom: 12 }}>
+          {definition.hiDef}
+        </p>
+      )}
       <p className="gita-lede">
-        {intro ?? `भगवद् गीता के ${topic.verseCount} श्लोक जो ${topic.label} पर हैं — सभी अध्यायों से, क्रम में।`}
+        {intro ?? `गीता के ${topic.verseCount} श्लोक जो ${hiName} पर हैं, सभी अध्यायों से, क्रम में।`}
       </p>
 
       {/* ── Above-the-fold Hindi app CTA. High-bounce Hindi topic pages (Ahankara
@@ -190,20 +247,18 @@ export default async function TopicPageHi({ params }: { params: Params }) {
       {featured.length > 0 && (
         <section aria-label="चुने हुए श्लोक" style={{ margin: '8px 0 40px' }}>
           <div className="gv-sechead" style={{ marginBottom: 14 }}>
-            <span className="gv-sechead-label">चुने हुए {featured.length} श्लोक — पूरा पाठ + संस्कृत ऑडियो</span>
+            <span className="gv-sechead-label">चुने हुए {featured.length} श्लोक: पूरा पाठ और संस्कृत ऑडियो</span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {featured.map((v) => (
+              // Hindi page: Sanskrit + Hindi meaning only. The English insight,
+              // essence and "Speaker:" label live on the EN hub (hreflang pair).
               <ShlokaCard
                 key={`${v.chapter}-${v.verse}`}
                 verseRef={`भगवद् गीता ${v.chapter}.${v.verse}`}
-                speaker={v.speaker}
                 sanskrit={v.sanskrit}
-                meaningLabel="अर्थ · हिन्दी"
+                meaningLabel="हिन्दी अर्थ"
                 meaning={v.hindiTranslation}
-                insightLabel="सार"
-                insight={v.simpleMeaning || v.insight}
-                essence={v.essence}
                 locale="hi"
                 mpLocation={`topic_hi_${topic.slug}_featured_${v.chapter}_${v.verse}`}
               />
@@ -277,15 +332,17 @@ export default async function TopicPageHi({ params }: { params: Params }) {
                     <span className="gita-verse-ref-ch">अ. {v.chapter}</span>
                   </div>
                   <div className="gita-verse-body">
-                    <p className="gita-verse-essence">
-                      {v.essence || v.englishTranslation}
+                    <p className="gita-verse-essence" lang="sa">
+                      {firstPada(v.sanskrit)}
                     </p>
-                    <p className="gita-verse-insight">
-                      {(v.hindiTranslation || v.englishTranslation).slice(0, 120)}
-                    </p>
+                    {v.hindiTranslation && (
+                      <p className="gita-verse-insight">
+                        {clipHi(v.hindiTranslation)}
+                      </p>
+                    )}
                     <div className="gita-verse-footer">
                       {v.depth
-                        ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span>
+                        ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{DEPTH_HI[v.depth] ?? v.depth}</span>
                         : <span />
                       }
                       <span className="gita-verse-arrow">→</span>

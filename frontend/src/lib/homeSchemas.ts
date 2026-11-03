@@ -1,21 +1,21 @@
 // Structured data for the homepage — the free Bhagavad Gita web reader.
 // The MobileApplication schema has moved to appSchemas.ts (used on /app).
+import { SITE, SITE_NAME, SITE_ALT_NAMES, ORG_ID, WEBSITE_ID, LOGO_URL, SAME_AS } from './seo'
+
 const schemas = [
   {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'WebSite',
-        name: 'Wisdom: Bhagavad Gita, 700 Verses in Sanskrit with Meaning',
-        url: 'https://wisdomquotes.in',
+        '@id': WEBSITE_ID,
+        name: SITE_NAME,
+        alternateName: SITE_ALT_NAMES,
+        url: SITE,
+        inLanguage: ['en', 'hi'],
         description:
           'All 700 verses of the Bhagavad Gita in Sanskrit with meaning: 18 chapters in Sanskrit, Hindi and English, free, with no login. One verse per page with simple meaning and detailed commentary, and a new verse every day.',
-        publisher: {
-          '@type': 'Organization',
-          name: 'Wisdom',
-          url: 'https://wisdomquotes.in',
-          logo: 'https://wisdomquotes.in/assets/new-light-logo.webp',
-        },
+        publisher: { '@id': ORG_ID },
         potentialAction: {
           '@type': 'SearchAction',
           target: 'https://wisdomquotes.in/gita?q={search_term_string}',
@@ -37,16 +37,14 @@ const schemas = [
       },
       {
         '@type': 'Organization',
-        name: 'Wisdom',
-        url: 'https://wisdomquotes.in',
-        logo: 'https://wisdomquotes.in/assets/new-light-logo.webp',
+        '@id': ORG_ID,
+        name: SITE_NAME,
+        alternateName: SITE_ALT_NAMES,
+        url: SITE,
+        logo: { '@type': 'ImageObject', url: LOGO_URL },
         description:
           'Wisdom tunes the Bhagavad Gita to your life. The website has every verse in Sanskrit, Hindi and English with meaning and commentary, and picks a verse for how you feel today. The iPhone app builds a 7-day audio plan around your situation.',
-        sameAs: [
-          'https://apps.apple.com/app/id6747684125',
-          'https://www.instagram.com/wisdomquoteapp/',
-          'https://wisdomquotes.in',
-        ],
+        sameAs: SAME_AS,
       },
       {
         '@type': 'FAQPage',

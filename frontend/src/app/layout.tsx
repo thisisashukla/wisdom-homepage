@@ -6,6 +6,7 @@ import MixpanelProvider from '@/components/MixpanelProvider'
 import Motion from '@/components/site/Motion'
 import { scriptureFontVars } from '@/lib/fonts'
 import { SCRIPT_BOOT } from '@/lib/scriptBoot'
+import { SITE_NAME_FULL } from '@/lib/seo'
 
 // Self-host Google Fonts via next/font — eliminates render-blocking fetches
 // to fonts.googleapis.com and fonts.gstatic.com, and preloads the primary
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    siteName: 'Wisdom',
+    siteName: SITE_NAME_FULL,
     type: 'website',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
@@ -103,6 +104,8 @@ export default function RootLayout({
         {/* Devanagari or IAST, chosen once for the whole site (lib/script.ts); applied before paint. */}
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_BOOT }} />
         <link rel="icon" href="/assets/new-light-logo.webp" />
+        {/* Plain-text guide to the site for AI assistants (llmstxt.org). */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
         {/* Ties this site to the iOS app for App Store rich results & smart banner. */}
         <meta
           name="apple-itunes-app"

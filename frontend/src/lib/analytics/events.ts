@@ -65,6 +65,7 @@ export const EVENTS = {
   PrintCardOpened: 'Print Card Opened',
   NextStepViewed: 'Next Step Viewed',
   NextStepClicked: 'Next Step Clicked',
+  DownloadClicked: 'Download Clicked',
   GitaBridgeClicked: 'Gita Bridge Clicked',
 
   // ── Funnel-specific interactions (one place each) ────────────────────────

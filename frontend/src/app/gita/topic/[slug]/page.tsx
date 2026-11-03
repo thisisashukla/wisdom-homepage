@@ -5,6 +5,11 @@ import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl 
 // for the Scripture AI waitlist while that product launches.
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import BlogTracker from '@/components/BlogTracker'
+import {
+  gitaTopicDefinition,
+  gitaTopicDescriptionEn,
+  gitaTopicTitleEn,
+} from '@/content/topics/gita-definitions'
 
 type Params = { slug: string }
 
@@ -36,13 +41,11 @@ const TOPIC_ALIASES: Record<string, string[]> = {
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const topic = await getTopic(params.slug)
   if (!topic) return { title: 'Topic not found' }
-  const cap = topic.label.replace(/\b\w/g, (c) => c.toUpperCase())
   const aliases = TOPIC_ALIASES[params.slug]
-  const aliasString = aliases && aliases.length > 1
-    ? ` (also spelled ${aliases.filter(a => a.toLowerCase() !== topic.label.toLowerCase()).join(', ')})`
-    : ''
-  const title = `${cap} in the Bhagavad Gita — ${topic.verseCount} Verses with Meaning`
-  const description = `${topic.verseCount} Bhagavad Gita verses on ${topic.label}${aliasString}, in Sanskrit, Hindi and English. The Gita's teaching on ${topic.label}, drawn from across all chapters.`
+  // Definition-first: the description opens with the one-line definition
+  // (src/content/topics/gita-definitions.ts) so SERPs and AI answers lift it.
+  const title = gitaTopicTitleEn(topic.slug, topic.label, topic.verseCount)
+  const description = gitaTopicDescriptionEn(topic.slug, topic.label, topic.verseCount)
   return {
     title,
     description,
@@ -79,11 +82,14 @@ export default async function TopicPage({ params }: { params: Params }) {
   // Retired slugs are 308'd by src/middleware.ts before reaching here.
   if (!topic) notFound()
   const verses = await getTopicVerses(topic.slug, 50)
+  const definition = gitaTopicDefinition(topic.slug)
+  const pageUrl = `https://wisdomquotes.in${topicUrl(topic.slug)}`
 
   const itemListLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: `Bhagavad Gita verses on ${topic.label}`,
+    ...(definition ? { description: definition.en } : {}),
     numberOfItems: verses.length,
     itemListElement: verses.map((v, i) => ({
       '@type': 'ListItem',
@@ -111,11 +117,33 @@ export default async function TopicPage({ params }: { params: Params }) {
   const cap = topic.label.replace(/\b\w/g, (c) => c.toUpperCase())
   const intro = topicIntro(topic.slug, 'en')
 
+  // Sanskrit concepts get a DefinedTerm so the definition is machine-readable.
+  const definedTermLd = definition && definition.kind === 'term'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTerm',
+        name: cap,
+        alternateName: Array.from(new Set([definition.hi, ...(TOPIC_ALIASES[topic.slug] ?? [])]))
+          .filter((a) => a.toLowerCase() !== topic.label.toLowerCase()),
+        description: definition.en,
+        url: pageUrl,
+        inLanguage: 'en',
+        inDefinedTermSet: {
+          '@type': 'DefinedTermSet',
+          name: 'Bhagavad Gita concepts',
+          url: 'https://wisdomquotes.in/gita',
+        },
+      }
+    : null
+
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_topic_${topic.slug}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {definedTermLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(definedTermLd) }} />
+      )}
 
       <nav className="gita-crumb" aria-label="Breadcrumb">
         <a href="/gita" data-mp-location={`topic_${topic.slug}_crumb_gita`}>Bhagavad Gita</a>
@@ -135,6 +163,11 @@ export default async function TopicPage({ params }: { params: Params }) {
 
       <div className="gita-eyebrow">Theme · {topic.verseCount} verses</div>
       <h1 className="gita-h1">{cap} in the Bhagavad Gita</h1>
+      {definition && (
+        <p className="gita-lede" style={{ color: 'var(--text)', marginBottom: 12 }}>
+          {definition.en}
+        </p>
+      )}
       <p className="gita-lede">
         {intro ?? `Verses across the Gita that speak to ${topic.label}, drawn from all chapters and ordered by where they appear.`}
       </p>

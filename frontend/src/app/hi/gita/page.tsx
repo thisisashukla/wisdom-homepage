@@ -9,11 +9,15 @@ import {
 } from '@/lib/gita'
 import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
+import { LinkCards } from '@/components/site'
+import { EVENTS } from '@/lib/analytics/events'
+
+const PDF_PATH = '/downloads/bhagavad-gita-700-shlok-hindi.pdf'
 
 export const metadata: Metadata = {
   title: 'भगवद गीता के 700 श्लोक हिंदी में — अर्थ सहित, 18 अध्याय',
   description:
-    'सम्पूर्ण भगवद् गीता हिन्दी में पढ़ें — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ सहित। 18 अध्याय, 700 श्लोक, सरल हिन्दी में। PDF डाउनलोड की ज़रूरत नहीं — सीधे ऑनलाइन, निःशुल्क।',
+    'सम्पूर्ण भगवद् गीता हिन्दी में पढ़ें: संस्कृत श्लोक, शब्द-अर्थ और भावार्थ सहित। 18 अध्याय, 700 श्लोक, सरल हिन्दी में। यहीं ऑनलाइन पढ़ें या मुफ़्त PDF डाउनलोड करें।',
   alternates: {
     canonical: 'https://wisdomquotes.in/hi/gita',
     languages: {
@@ -26,7 +30,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित | सभी 18 अध्याय',
-    description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ। 18 अध्याय, 700 श्लोक। PDF की ज़रूरत नहीं, सीधे ऑनलाइन पढ़ें।',
+    description: 'सम्पूर्ण भगवद् गीता हिन्दी में: संस्कृत श्लोक, शब्द-अर्थ और भावार्थ। 18 अध्याय, 700 श्लोक। ऑनलाइन पढ़ें या PDF डाउनलोड करें।',
     url: 'https://wisdomquotes.in/hi/gita',
     type: 'website',
     siteName: 'Wisdom',
@@ -37,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित',
-    description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ।',
+    description: 'सम्पूर्ण भगवद् गीता हिन्दी में: संस्कृत श्लोक, शब्द-अर्थ और भावार्थ। ऑनलाइन पढ़ें या PDF डाउनलोड करें।',
     images: ['/og-image.webp'],
   },
 }
@@ -137,6 +141,32 @@ export default function GitaIndexPageHi() {
           </div>
         </div>
       </section>
+
+      {/* SHORTCUTS: famous shlokas, full PDF */}
+      <div style={{ marginTop: 32 }}>
+        <LinkCards
+          items={[
+            {
+              href: '/hi/blogs/bhagavad-gita-quotes',
+              kicker: 'चुने हुए श्लोक',
+              title: 'गीता के 50 प्रसिद्ध श्लोक, हिंदी अर्थ सहित',
+              orig: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन',
+              body: 'वे श्लोक जो लोग सबसे ज़्यादा ढूँढते हैं। कोई भी कॉपी करें या शेयर करें।',
+              location: 'gita_hi_index_famous_shlokas',
+            },
+            {
+              href: PDF_PATH,
+              kicker: 'PDF डाउनलोड',
+              title: 'पूरी गीता PDF में, संस्कृत और हिंदी अर्थ सहित',
+              body: '18 अध्याय, 700 श्लोक। फ़ोन में सेव करें और बिना इंटरनेट के पढ़ें।',
+              location: 'gita_hi_index_pdf',
+              download: 'bhagavad-gita-700-shlok-hindi.pdf',
+              event: EVENTS.DownloadClicked,
+              eventProps: { item_id: 'bhagavad-gita-700-shlok-hindi', item_type: 'pdf' },
+            },
+          ]}
+        />
+      </div>
 
       <SavedVersesPanel locale="hi" />
 
