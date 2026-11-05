@@ -17,8 +17,8 @@ it can match a verse line, (b) do only its own job (a hook never advises, an act
 always an imperative), (c) carry the chosen root cause, and (d) be safe to act on.
 A statement that fails is replaced by the template for its mechanism, never sent raw.
 
-Privacy: the note is sent to the LLM for this request only. It is never logged or
-stored; only counts, flags and timings are logged.
+Privacy: the note is sent to the LLM for this request only. It is never logged; the plan
+endpoints keep it raw in raw_notes (ai/note_store.py). Only counts, flags and timings are logged.
 """
 from __future__ import annotations
 

@@ -17,7 +17,7 @@ How it scores
   3. Selection. One verse per prasang, at most two per text family, never a
      verse the library says must not be shown alone.
 
-Privacy: the note is used for this request only. It is never logged or stored.
+Privacy: the note is never logged; the endpoints keep it raw in raw_notes (ai/note_store.py).
 Embeddings are optional: without the model the note is matched by keywords.
 """
 from __future__ import annotations

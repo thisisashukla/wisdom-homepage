@@ -6,16 +6,18 @@ what the person told us: age band, life stages, phone hours, feeling, and an
 optional note in their own words (spoken or typed). We return a few verses from
 the curated v2 library, each with its prasang, plus the situations we read.
 
-Privacy: the note is used for this request only. It is never logged, stored or
-sent anywhere else. Only counts and timings are logged.
+Privacy: the note is kept raw in Supabase table raw_notes with the verses chosen for it
+(ai/note_store.py). It is never logged; only counts and timings are logged.
 """
 from __future__ import annotations
 
+import asyncio
 import logging
 import time
 
 from fastapi import APIRouter, HTTPException
 
+from ai import note_store
 from ai.recommender import get_recommender
 from common.models import RecommendRequest, RecommendResponse
 
@@ -39,4 +41,8 @@ async def recommend(req: RecommendRequest) -> RecommendResponse:
         req.feeling, req.age, len(req.stages), "yes" if req.note else "no", out["matching"],
         len(out["verses"]), bool(out["safety"]), (time.perf_counter() - t0) * 1000,
     )
+    r = note_store.row("recommend", req, {"situations": out.get("situations")}, out["verses"],
+                       out.get("library_version"), "legacy")
+    if r is not None:
+        await asyncio.to_thread(note_store.put, r)
     return RecommendResponse(**out)

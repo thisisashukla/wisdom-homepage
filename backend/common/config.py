@@ -93,6 +93,9 @@ class Settings(BaseSettings):
     hook_cache_enabled: bool = True
     hook_cache_ttl_days: int = 7
     hook_cache_timeout_s: float = 1.5
+    # Raw notes the app sends for verse selection, kept in Supabase table raw_notes (ai/note_store.py).
+    note_store_enabled: bool = True
+    note_store_timeout_s: float = 1.5
 
     # Local BGE-M3 model weights directory.
     # If empty or non-existent, loads from HuggingFace (cached after first download).

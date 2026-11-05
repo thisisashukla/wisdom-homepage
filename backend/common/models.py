@@ -218,7 +218,7 @@ class RecommendRequest(BaseModel):
     age: Optional[AgeBand] = None
     stages: List[LifeStage] = Field(default_factory=list, max_length=7)
     phone_hours: Optional[int] = Field(None, ge=1, le=12)        # 12 = 12 or more
-    note: Optional[str] = Field(None, max_length=1000)          # their own words; never stored or logged
+    note: Optional[str] = Field(None, max_length=1000)          # their own words; kept raw in raw_notes, never logged
     note_source: Optional[Literal["voice", "text"]] = None
     count: int = Field(5, ge=1, le=10)
     exclude: List[str] = Field(default_factory=list, max_length=200)   # verse ids already shown
@@ -327,7 +327,7 @@ class PlanInput(BaseModel):
     phone_hours: Optional[int] = Field(None, ge=1, le=12)
     topic: Optional[ChipId] = None        # problem chip, row 1 (e.g. "someone"), if the app asked
     follow: Optional[ChipId] = None       # problem chip, row 2 (e.g. "parents")
-    note: Optional[str] = Field(None, max_length=1000)          # their own words; never stored or logged
+    note: Optional[str] = Field(None, max_length=1000)          # their own words; kept raw in raw_notes, never logged
     note_source: Optional[Literal["voice", "text"]] = None
     exclude: List[str] = Field(default_factory=list, max_length=200)
     journey: Optional[JourneyIn] = None   # later requests only (Home): what they have lived so far
@@ -402,7 +402,7 @@ class ReplaceResponse(BaseModel):
 
 class RefineRequest(PlanRequest):
     # "Update my plan" (Pro, once a week, Day 2 to Day 6): the person adds context in their own words
-    # (`note`, voice or typed; never stored or logged). The earlier reading (`understanding`) and the
+    # (`note`, voice or typed; kept raw in raw_notes, never logged). The earlier reading (`understanding`) and the
     # new words are read together, and the week is chosen again from `from_day` (day in week) to Day 7.
     # `exclude` holds every id in the plan so far, including the days being replaced, so all are new.
     # A stance correction ("I'm not the problem here") re-weaves the week with no note: then `note` is

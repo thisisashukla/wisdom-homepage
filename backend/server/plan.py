@@ -29,8 +29,9 @@ the person, not just the struggle (ai/llm_rerank.py); every word written for the
 "What it says" and "For you", "Go deeper") is written from ai/voice.py: the storyteller friend's
 voice, and the promise never to change what a verse says.
 
-Privacy: the note is used for this request only (and sent to the LLM for the reading).
-It is never stored or logged; only flags, counts and timings are logged.
+Privacy: the note is sent to the LLM for the reading and, when the person allowed AI, kept raw in
+Supabase table raw_notes with the verses chosen for it (ai/note_store.py), to study verse selection.
+It is never written to the logs; only flags, counts and timings are logged.
 """
 from __future__ import annotations
 
@@ -45,7 +46,7 @@ from pydantic import BaseModel, Field
 
 from ai.ask import answer as answer_question, support_candidates
 from ai.depth import DepthCache, cache_key, person_key, write_depth
-from ai import consent, hook_cache
+from ai import consent, hook_cache, note_store
 from ai.scene import scene_for
 from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
@@ -217,6 +218,14 @@ def _understanding_out(u: Understanding, rec) -> dict:
     d["mechanism_label"] = MECHANISMS[u.mechanism]["label"]
     d["situations"] = [{**s, "label": rec.situations[s["id"]]["label"]} for s in u.situations if s["id"] in rec.situations]
     return d
+
+
+async def _keep_note(kind: str, req, understanding: Optional[dict], chosen, library_version: Optional[str],
+                     reading_source: Optional[str] = None) -> None:
+    """The raw note, its reading and the ids chosen for it, to raw_notes (ai/note_store.py). Never fails a request."""
+    r = note_store.row(kind, req, understanding, chosen, library_version, reading_source)
+    if r is not None:
+        await asyncio.to_thread(note_store.put, r)
 
 
 def _time_left(t0: float) -> float:
@@ -415,6 +424,8 @@ async def hook(req: HookRequest) -> HookResponse:
             hit["understanding"]["flags"] = [*hit["understanding"].get("flags", []), "hook_cache:hit"]
             hit["timings_ms"] = {"cache": int((time.perf_counter() - t0) * 1000), "total": int((time.perf_counter() - t0) * 1000)}
             resp = HookResponse(**hit)
+            await _keep_note("hook", req, hit.get("understanding"), [hit.get("hook"), *(hit.get("alternates") or [])],
+                             hit.get("library_version"), "cache")
             logger.info("hook: cache hit %s hook=%s %.0fms", ckey[:12], (hit.get("hook") or {}).get("id"), (time.perf_counter() - t0) * 1000)
             return resp
         except Exception as e:      # a row from an older shape: answer afresh and overwrite it
@@ -441,6 +452,7 @@ async def hook(req: HookRequest) -> HookResponse:
     stored = hook_cache.cacheable(resp.model_dump(mode="json"), reranked)
     if stored:
         await asyncio.to_thread(hook_cache.put, ckey, resp.model_dump(mode="json"), rec.version)
+    await _keep_note("hook", req, out["understanding"], [out["hook"], *out["alternates"]], rec.version)
     _log("hook", req, u, t0, hook=bool(out["hook"]), alts=len(out["alternates"]), reranked=reranked, cached=stored)
     return resp
 
@@ -469,6 +481,7 @@ async def preview(req: PreviewRequest) -> PreviewResponse:
         "matching": "semantic" if planner.semantic else "keywords", "library_version": rec.version,
         "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)},
     }
+    await _keep_note("preview", req, out["understanding"], list(beats.values()), rec.version)
     _log("preview", req, u, t0, beats=sum(1 for v in beats.values() if v))
     return PreviewResponse(**out)
 
@@ -518,6 +531,7 @@ async def plan(req: PlanRequest) -> PlanResponse:
         "matching": "semantic" if planner.semantic else "keywords", "library_version": rec.version,
         "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)},
     }
+    await _keep_note("plan", req, out["understanding"], out_days, rec.version)
     _log("plan", req, u, t0, days=len(out_days), week=req.week or 0, level=out_days[0]["level"] if out_days else "-", shape=shape)
     return PlanResponse(**out)
 
@@ -586,7 +600,7 @@ async def refine(req: RefineRequest) -> RefineResponse:
     """"Update my plan" (Pro, once a week, Day 2 to Day 6; the app enforces both). The person adds context;
     their reading is renewed with it and the week is chosen again from `from_day` to Day 7, never repeating an
     id in `exclude`. The days before `from_day` are theirs already and stay. The new words are used for this
-    request only: never stored, never logged."""
+    request and kept raw in raw_notes (ai/note_store.py); never logged."""
     _consent(req)
     rec, planner, und = _services()
     shape = _shape(req)
@@ -618,6 +632,7 @@ async def refine(req: RefineRequest) -> RefineResponse:
         "heard": u.mirror, "safety": _safety(u),
         "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)},
     }
+    await _keep_note("refine", req, out["understanding"], out_days, rec.version)
     _log("refine", req, u, t0, week=req.week, from_day=req.from_day, days=len(out_days), source=u.source,
          correction=req.correction or "-")
     return RefineResponse(**out)
