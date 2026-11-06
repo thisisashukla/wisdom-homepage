@@ -1164,7 +1164,7 @@ export default function KrishnaThreePathsPage() {
         </p>
 
         <p>
-          <strong>Karma Yoga answers worry about outcomes</strong>: the low-grade fever of needing the next thing to go well. Krishna asks you to care about the work and leave the result to him. Later commentators call this <em>nishkama karma</em>, action without desire for its fruit, and 3.30 asks Arjuna to fight without the fever.
+          <strong>Karma Yoga answers worry about outcomes</strong>: the low-grade fever of needing the next thing to go well. Krishna asks you to care about the work and leave the result to him. Later commentators call this <em><a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">nishkama karma</a></em>, action without desire for its fruit, and 3.30 asks Arjuna to fight without the fever.
         </p>
 
         <p>
@@ -1187,7 +1187,7 @@ export default function KrishnaThreePathsPage() {
         </p>
 
         <p>
-          If your restlessness wants to <em>do</em>, if sitting still is the hardest thing, if your relief comes from solving something, building something, finishing something, your path likely begins with <strong>Karma Yoga</strong>. The discipline is to keep doing, fully, while letting go of the part of you that demands a particular result. The verse to live with is 2.47.
+          If your restlessness wants to <em>do</em>, if sitting still is the hardest thing, if your relief comes from solving something, building something, finishing something, your path likely begins with <strong>Karma Yoga</strong>. The discipline is to keep doing, fully, while letting go of the part of you that demands a particular result. The verse to live with is <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>.
         </p>
 
         <p>

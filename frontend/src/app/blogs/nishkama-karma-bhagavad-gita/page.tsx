@@ -692,7 +692,7 @@ export default function NishkamaKarmaPage() {
           Much of the anxiety people describe at work comes from outcome-dependence. You work on something and the whole time your mind runs a parallel thread: will this work? What if it doesn&apos;t? What will people think? What does it say about me if it fails? That thread consumes attention, degrades the quality of the work, and delivers suffering regardless of whether the outcome arrives, because the anxiety is present before the result is known.
         </p>
         <p>
-          BG 2.47 separates the work from its result: the work is yours, the result is not.
+          <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> separates the work from its result: the work is yours, the result is not.
         </p>
         <p>
           BG 3.9 comes at it from the other side. Krishna says that work done as yajña, as an offering, does not bind; work done for any other purpose binds.
@@ -700,7 +700,7 @@ export default function NishkamaKarmaPage() {
 
         <h2>Offering the Action: BG 18.11</h2>
         <p>
-          By Chapter 18, the Gita is completing its argument. Krishna makes a point that is easy to miss: an embodied person cannot give up action entirely.
+          By <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a>, the Gita is completing its argument. Krishna makes a point that is easy to miss: an embodied person cannot give up action entirely.
         </p>
 
                 <ShlokaCard

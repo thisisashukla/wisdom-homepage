@@ -555,7 +555,7 @@ export default function ForBeginnersPage() {
 
         <h2>The 18 Chapters: A Quick Map</h2>
         <p>
-            The Gita is organized into 18 chapters, each with its own focus. Here is a brief overview so you know what to expect.
+            The Gita is organized into <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_gita_structure">18 chapters</a>, each with its own focus. Here is a brief overview so you know what to expect.
         </p>
         <p>
             Chapters 1 and 2 set the stage. Chapter 1 is devoted to Arjuna&apos;s crisis: what he sees, what happens to his body, and his arguments against fighting. Chapter 2 is where the philosophical teaching begins. Krishna introduces the foundational ideas: the eternal nature of the atman, the nature of action and inaction, the concept of equanimity, and the beginning of the teaching on karma and dharma.
@@ -581,12 +581,12 @@ export default function ForBeginnersPage() {
             In Chapter 1 you meet Arjuna and read his own words: his fear, his grief and his reasons for refusing to fight. With those stakes in mind, Chapter 2 reads as Krishna&apos;s answer to a particular man.
         </p>
         <p>
-            Then read Chapter 2. This is where the core teachings begin. Here you meet the atman, the idea of equanimity, and the start of karma yoga. Verse 2.47, &ldquo;Your right is to the action, never to its fruits&rdquo;, is here, and much of the Gita&apos;s teaching on action builds on it.
+            Then read Chapter 2. This is where the core teachings begin. Here you meet the atman, the idea of equanimity, and the start of karma yoga. <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">Verse 2.47</a>, &ldquo;Your right is to the action, never to its fruits&rdquo;, is here, and much of the Gita&apos;s teaching on action builds on it.
         </p>
 
         <h2>Which Translation Should You Choose?</h2>
         <p>
-            There are many English translations of the Gita, and they differ a lot. Here are four that are often recommended.
+            There are many <a href="/blogs/best-bhagavad-gita-translation" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_best_translation">English translations of the Gita</a>, and they differ a lot. Here are four that are often recommended.
         </p>
         <p>
             The Bhagavad Gita As It Is, translated with commentary by A.C. Bhaktivedanta Swami Prabhupada, gives each verse in Sanskrit, transliteration and word-for-word meaning, followed by long commentary. Its commentary follows one devotional school (Gaudiya Vaishnavism), which suits some readers more than others.

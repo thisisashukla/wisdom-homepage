@@ -1444,7 +1444,7 @@ export default function ChapterTwoPage() {
           <div className="faq-item">
             <div className="faq-q">What is the best-known verse in Chapter 2?</div>
             <div className="faq-a">
-              The best known is 2.47, &quot;karmany evadhikaras te ma phaleshu kadachana&quot;, often translated as &quot;you have a right to work, not to the fruits of work.&quot; But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
+              The best known is 2.47, &quot;<a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">karmany evadhikaras te ma phaleshu kadachana</a>&quot;, often translated as &quot;you have a right to work, not to the fruits of work.&quot; But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
             </div>
           </div>
           <div className="faq-item">

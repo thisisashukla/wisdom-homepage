@@ -76,6 +76,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/assets/new-light-logo.webp',
   },
+  // Ties this site to the iOS app for App Store rich results & smart banner. Set in
+  // metadata (not a hard-coded <meta>) so a sub-site such as /dhyaan can override it.
+  itunes: { appId: '6747684125', appArgument: 'https://wisdomquotes.in' },
   formatDetection: {
     email: false,
     address: false,
@@ -103,14 +106,8 @@ export default function RootLayout({
       <head>
         {/* Devanagari or IAST, chosen once for the whole site (lib/script.ts); applied before paint. */}
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_BOOT }} />
-        <link rel="icon" href="/assets/new-light-logo.webp" />
         {/* Plain-text guide to the site for AI assistants (llmstxt.org). */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
-        {/* Ties this site to the iOS app for App Store rich results & smart banner. */}
-        <meta
-          name="apple-itunes-app"
-          content="app-id=6747684125, app-argument=https://wisdomquotes.in"
-        />
       </head>
       <body>
         <AuthProvider>

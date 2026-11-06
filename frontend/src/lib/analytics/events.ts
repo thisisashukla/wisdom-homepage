@@ -194,6 +194,17 @@ export const EVENTS = {
   CtaShown: 'CTA Shown',
   CtaPlacementShown: 'CTA Placement Shown',
   PlanPreviewCreate: 'Plan Preview Create',
+  // Dhyaan waitlist site (dhyaan.wisdomquotes.in)
+  DhyaanWaitlistSubmitted: 'Dhyaan Waitlist Submitted',
+  DhyaanWaitlistJoined: 'Dhyaan Waitlist Joined',
+  DhyaanWaitlistFailed: 'Dhyaan Waitlist Failed',
+  DhyaanReferralCopied: 'Dhyaan Referral Copied',
+  DhyaanReferralShared: 'Dhyaan Referral Shared',
+  NivataTestStarted: 'Nivata Test Started',
+  NivataTestCompleted: 'Nivata Test Completed',
+  NivataTestFailed: 'Nivata Test Failed',
+  NivataCardShared: 'Nivata Card Shared',
+  NivataCardSaved: 'Nivata Card Saved',
 } as const
 
 export type EventKey = keyof typeof EVENTS

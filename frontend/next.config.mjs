@@ -1,3 +1,9 @@
+// Dhyaan waitlist site host (see src/app/dhyaan/_lib/site.ts).
+const DHYAAN_HOST = 'dhyaan.wisdomquotes.in'
+const WISDOM_HOSTS = '(www\\.)?wisdomquotes\\.in'
+// Hosts that serve the Dhyaan site: production, plus dhyaan.localhost for local dev.
+const DHYAAN_HOSTS = 'dhyaan\\.(wisdomquotes\\.in|localhost)'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: { unoptimized: true },
@@ -26,6 +32,12 @@ const nextConfig = {
   // /blogs/bhagwat-geeta-chapter-{1..5} are the canonical pages now.
   async redirects() {
     return [
+      // Dhyaan lives on its own subdomain; the /dhyaan tree on the main host 301s there
+      // so search engines see one canonical copy.
+      { source: '/dhyaan', has: [{ type: 'host', value: WISDOM_HOSTS }], destination: `https://${DHYAAN_HOST}`, permanent: true },
+      { source: '/dhyaan/:path*', has: [{ type: 'host', value: WISDOM_HOSTS }], destination: `https://${DHYAAN_HOST}/:path*`, permanent: true },
+      // Share-card short link (printed on the in-app Nivāta card).
+      { source: '/n', has: [{ type: 'host', value: DHYAAN_HOSTS }], destination: '/nivata', permanent: false },
       // Google has indexed the old static-export .html URL; 301 to the clean canonical.
       {
         source: '/blogs/bhagwat-geeta-chapter-1.html',
@@ -60,8 +72,21 @@ const nextConfig = {
   },
 
   // /support is the App Store support URL — served from public/support.html.
+  // Dhyaan: every path on the Dhyaan host is served from the /dhyaan route tree
+  // (src/app/dhyaan). beforeFiles so /, /robots.txt and /sitemap.xml on that host
+  // resolve to Dhyaan's own versions instead of Wisdom's public files.
   async rewrites() {
-    return [{ source: '/support', destination: '/support.html' }]
+    return {
+      beforeFiles: [
+        { source: '/', has: [{ type: 'host', value: DHYAAN_HOSTS }], destination: '/dhyaan' },
+        {
+          source: '/:path((?!api/|_next/|dhyaan-assets/|dhyaan$|dhyaan/).+)',
+          has: [{ type: 'host', value: DHYAAN_HOSTS }],
+          destination: '/dhyaan/:path',
+        },
+      ],
+      afterFiles: [{ source: '/support', destination: '/support.html' }],
+    }
   },
 
   async headers() {

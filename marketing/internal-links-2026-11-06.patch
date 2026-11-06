@@ -1,0 +1,295 @@
+diff --git a/frontend/src/app/blogs/ahankara-meaning-bhagavad-gita/page.tsx b/frontend/src/app/blogs/ahankara-meaning-bhagavad-gita/page.tsx
+index b2ba5045..d0210714 100644
+--- a/frontend/src/app/blogs/ahankara-meaning-bhagavad-gita/page.tsx
++++ b/frontend/src/app/blogs/ahankara-meaning-bhagavad-gita/page.tsx
+@@ -563,7 +563,7 @@ export default function AhankaraMeaningPage() {
+ 
+         <h2>Liberation from Ahankara: BG 18.58–59</h2>
+         <p>
+-          The Gita answers ahankara with a change of orientation, without violence toward the self. Chapter 18 sets out two stances in back-to-back verses.
++          The Gita answers ahankara with a change of orientation, without violence toward the self. <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a> sets out two stances in back-to-back verses.
+         </p>
+ 
+         <ShlokaCard
+@@ -657,7 +657,7 @@ export default function AhankaraMeaningPage() {
+         <div className="faq-item">
+           <strong>How do you overcome ahankara in the Gita?</strong>
+           <p>
+-            The Gita asks for a change of orientation rather than an attack on the ego. Nishkama karma (action without attachment to results) takes away ahankara&apos;s fuel, which is credit for outcomes. Bhakti (devotion) moves the center away from the bounded self. Viveka (discernment), noticing that you can watch ahankara at work, loosens identification with it. All three converge on the same shift: from the constructed self as center, to the witnessing awareness as ground.
++            The Gita asks for a change of orientation rather than an attack on the ego. <a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">Nishkama karma</a> (action without attachment to results) takes away ahankara&apos;s fuel, which is credit for outcomes. Bhakti (devotion) moves the center away from the bounded self. Viveka (discernment), noticing that you can watch ahankara at work, loosens identification with it. All three converge on the same shift: from the constructed self as center, to the witnessing awareness as ground.
+           </p>
+         </div>
+ 
+diff --git a/frontend/src/app/blogs/best-bhagavad-gita-translation/page.tsx b/frontend/src/app/blogs/best-bhagavad-gita-translation/page.tsx
+index 8ec99b1a..29bdd145 100644
+--- a/frontend/src/app/blogs/best-bhagavad-gita-translation/page.tsx
++++ b/frontend/src/app/blogs/best-bhagavad-gita-translation/page.tsx
+@@ -673,7 +673,7 @@ export default function BestGitaTranslationPage() {
+           <h3>Bal Gangadhar Tilak, Gita Rahasya</h3>
+           <div className="pick-author">Written in Mandalay prison, 1910&ndash;11; published 1915 · Marathi; English in 2 volumes</div>
+           <p>
+-            Tilak wrote his 1,200-page argument in a Burmese prison cell: the Gita&apos;s core teaching is energetic desireless action, nishkama karma yoga, and the renunciatory reading gets the text backwards. He argues through Mimamsa interpretive rules and compares Kant and Mill along the way. The book became the intellectual engine of the Gita&apos;s role in India&apos;s freedom movement. Gandhi read it in Yerwada jail, revered it, and disagreed with it; his own Gujarati Gita, <em>Anasakti Yoga</em>, reaches the opposite conclusion about violence from the same activist premise.
++            Tilak wrote his 1,200-page argument in a Burmese prison cell: the Gita&apos;s core teaching is energetic desireless action, <a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">nishkama karma</a> yoga, and the renunciatory reading gets the text backwards. He argues through Mimamsa interpretive rules and compares Kant and Mill along the way. The book became the intellectual engine of the Gita&apos;s role in India&apos;s freedom movement. Gandhi read it in Yerwada jail, revered it, and disagreed with it; his own Gujarati Gita, <em>Anasakti Yoga</em>, reaches the opposite conclusion about violence from the same activist premise.
+           </p>
+           <p>
+             <span className="kb">Worth knowing</span> It is long, lawyerly, and openly polemical toward Shankara&apos;s school, a critique traditional Advaitins regard as unfair to a commentator writing in an entirely different debate. Read it as the strongest case for one side of a real argument.
+diff --git a/frontend/src/app/blogs/bhagavad-gita-complete-structure-all-chapters/page.tsx b/frontend/src/app/blogs/bhagavad-gita-complete-structure-all-chapters/page.tsx
+index d47e0775..01c01f2a 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-complete-structure-all-chapters/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-complete-structure-all-chapters/page.tsx
+@@ -661,7 +661,7 @@ export default function CompleteStructurePage() {
+         />
+ 
+         <p>
+-          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, one of the Gita&apos;s best-known verses. It comes after the atman teaching, and it leans on it: if you are not the outcome, you can act without clinging to it.
++          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>, one of the Gita&apos;s best-known verses. It comes after the atman teaching, and it leans on it: if you are not the outcome, you can act without clinging to it.
+         </p>
+ 
+                 <ShlokaCard
+@@ -762,7 +762,7 @@ export default function CompleteStructurePage() {
+ 
+           <div className="faq-item">
+             <div className="faq-q">How is the Bhagavad Gita structured?</div>
+-            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. In Chapters 7–12 Krishna describes his own nature, and in Chapter 11 he shows Arjuna the Vishwarupa, his cosmic form. Chapters 13–18 go back over the earlier teachings: the field and its knower, the three gunas, the divine and demonic natures, and the summing-up of Chapter 18.</div>
++            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. In Chapters 7–12 Krishna describes his own nature, and in Chapter 11 he shows Arjuna the Vishwarupa, his cosmic form. Chapters 13–18 go back over the earlier teachings: the field and its knower, the three gunas, the divine and demonic natures, and the summing-up of <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a>.</div>
+           </div>
+ 
+           <div className="faq-item">
+diff --git a/frontend/src/app/blogs/bhagavad-gita-for-beginners/page.tsx b/frontend/src/app/blogs/bhagavad-gita-for-beginners/page.tsx
+index 03435a02..c122a389 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-for-beginners/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-for-beginners/page.tsx
+@@ -555,7 +555,7 @@ export default function ForBeginnersPage() {
+ 
+         <h2>The 18 Chapters: A Quick Map</h2>
+         <p>
+-            The Gita is organized into 18 chapters, each with its own focus. Here is a brief overview so you know what to expect.
++            The Gita is organized into <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_gita_structure">18 chapters</a>, each with its own focus. Here is a brief overview so you know what to expect.
+         </p>
+         <p>
+             Chapters 1 and 2 set the stage. Chapter 1 is devoted to Arjuna&apos;s crisis: what he sees, what happens to his body, and his arguments against fighting. Chapter 2 is where the philosophical teaching begins. Krishna introduces the foundational ideas: the eternal nature of the atman, the nature of action and inaction, the concept of equanimity, and the beginning of the teaching on karma and dharma.
+@@ -581,12 +581,12 @@ export default function ForBeginnersPage() {
+             In Chapter 1 you meet Arjuna and read his own words: his fear, his grief and his reasons for refusing to fight. With those stakes in mind, Chapter 2 reads as Krishna&apos;s answer to a particular man.
+         </p>
+         <p>
+-            Then read Chapter 2. This is where the core teachings begin. Here you meet the atman, the idea of equanimity, and the start of karma yoga. Verse 2.47, &ldquo;Your right is to the action, never to its fruits&rdquo;, is here, and much of the Gita&apos;s teaching on action builds on it.
++            Then read Chapter 2. This is where the core teachings begin. Here you meet the atman, the idea of equanimity, and the start of karma yoga. <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">Verse 2.47</a>, &ldquo;Your right is to the action, never to its fruits&rdquo;, is here, and much of the Gita&apos;s teaching on action builds on it.
+         </p>
+ 
+         <h2>Which Translation Should You Choose?</h2>
+         <p>
+-            There are many English translations of the Gita, and they differ a lot. Here are four that are often recommended.
++            There are many <a href="/blogs/best-bhagavad-gita-translation" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_best_translation">English translations of the Gita</a>, and they differ a lot. Here are four that are often recommended.
+         </p>
+         <p>
+             The Bhagavad Gita As It Is, translated with commentary by A.C. Bhaktivedanta Swami Prabhupada, gives each verse in Sanskrit, transliteration and word-for-word meaning, followed by long commentary. Its commentary follows one devotional school (Gaudiya Vaishnavism), which suits some readers more than others.
+diff --git a/frontend/src/app/blogs/bhagavad-gita-for-students/page.tsx b/frontend/src/app/blogs/bhagavad-gita-for-students/page.tsx
+index cfedd1b8..788be132 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-for-students/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-for-students/page.tsx
+@@ -728,7 +728,7 @@ export default function GitaForStudentsPage() {
+ 
+       <h2>The One Verse to Keep Near an Exam</h2>
+       <p>
+-        If you memorise one verse before an exam, make it BG 2.47, and read it as a practical instruction.
++        If you memorise one verse before an exam, make it <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a>, and read it as a practical instruction.
+       </p>
+ 
+       <div className="highlight-box">
+@@ -758,7 +758,7 @@ export default function GitaForStudentsPage() {
+       <div className="faq-item">
+         <strong>What does the Gita say about hard work?</strong>
+         <p>
+-          BG 3.8 says to do your prescribed work, because action is better than inaction. The Gita pairs this with the teaching of nishkama karma in BG 2.47: work fully, and let go of attachment to the outcome.
++          BG 3.8 says to do your prescribed work, because action is better than inaction. The Gita pairs this with the teaching of <a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">nishkama karma</a> in BG 2.47: work fully, and let go of attachment to the outcome.
+         </p>
+       </div>
+ 
+diff --git a/frontend/src/app/blogs/bhagavad-gita-karma-meaning/page.tsx b/frontend/src/app/blogs/bhagavad-gita-karma-meaning/page.tsx
+index 565fe4df..6d171f65 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-karma-meaning/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-karma-meaning/page.tsx
+@@ -715,7 +715,7 @@ export default function KarmaMeaningPage() {
+         <div className="faq-item">
+             <strong>What does the Bhagavad Gita say about karma?</strong>
+             <p>
+-                The best-known karma teaching is verse 2.47: "You have a right to perform your prescribed duties, but not to the fruits of your actions." This is the basis of karma yoga, the practice of acting without attachment to outcomes. Act fully, and don't let the expected fruit be your motive.
++                The best-known karma teaching is <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">verse 2.47</a>: "You have a right to perform your prescribed duties, but not to the fruits of your actions." This is the basis of karma yoga, the practice of acting without attachment to outcomes. Act fully, and don't let the expected fruit be your motive.
+             </p>
+         </div>
+ 
+diff --git a/frontend/src/app/blogs/bhagavad-gita-on-anxiety/page.tsx b/frontend/src/app/blogs/bhagavad-gita-on-anxiety/page.tsx
+index 9ee672df..3d66e421 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-on-anxiety/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-on-anxiety/page.tsx
+@@ -766,7 +766,7 @@ export default function GitaOnAnxietyPage() {
+           Much everyday worry is about outcomes: whether something will work, and what people will think if it fails. The Gita speaks to this directly.
+         </p>
+         <p>
+-          BG 2.47 says your right is to the action, never to its fruits. Outcomes still matter. The trouble starts when the expected result becomes the reason for acting and the measure of your worth, because then you depend on something you cannot fully control, and the work turns into constant checking on whether the result is still on track.
++          <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> says your right is to the action, never to its fruits. Outcomes still matter. The trouble starts when the expected result becomes the reason for acting and the measure of your worth, because then you depend on something you cannot fully control, and the work turns into constant checking on whether the result is still on track.
+         </p>
+         <p>
+           BG 2.38 gives the instruction: treat pleasure and pain, gain and loss, victory and defeat alike, and then fight. Krishna is asking for an even mind while acting, which lets Arjuna act without being ruled by what might happen.
+diff --git a/frontend/src/app/blogs/bhagavad-gita-quotes-sanskrit/page.tsx b/frontend/src/app/blogs/bhagavad-gita-quotes-sanskrit/page.tsx
+index 08751ac8..5d7db898 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-quotes-sanskrit/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-quotes-sanskrit/page.tsx
+@@ -914,7 +914,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
+           If you had to pick one verse to stand for the whole Gita, two candidates come up again and again. Each has a real claim, and which one you pick says something about what you came to the Gita for.
+         </p>
+         <p>
+-          The first is <strong>BG 2.47</strong>: <em>karmaṇyevādhikāraste mā phaleṣu kadācana.</em> This is the verse for the reader who comes to the Gita for guidance about how to live. It fits in a single breath and contains four commands and no theology. You can use it without accepting any metaphysics or believing in an avatāra. You only have to admit that you have been trying to control outcomes and that this has been costing you your peace. If the Gita is a book about action, 2.47 is its answer.
++          The first is <strong><a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a></strong>: <em>karmaṇyevādhikāraste mā phaleṣu kadācana.</em> This is the verse for the reader who comes to the Gita for guidance about how to live. It fits in a single breath and contains four commands and no theology. You can use it without accepting any metaphysics or believing in an avatāra. You only have to admit that you have been trying to control outcomes and that this has been costing you your peace. If the Gita is a book about action, 2.47 is its answer.
+         </p>
+         <p>
+           The second is <strong>BG 18.66</strong>: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja.</em> Sri Vaishnava commentators call this the caramaśloka, the final verse, because it is Krishna&apos;s last instruction, introduced in 18.64 as sarva-guhyatamam, the secret of all secrets. 18.66 is the verse for the reader who has already tried 2.47 for years and discovered that even karma yoga becomes a subtle claim, another dharma to master. At some point the frameworks themselves need to be released. Then 18.66 opens.
+diff --git a/frontend/src/app/blogs/bhagavad-gita-vs-stoicism/page.tsx b/frontend/src/app/blogs/bhagavad-gita-vs-stoicism/page.tsx
+index c1a19d18..b394f318 100644
+--- a/frontend/src/app/blogs/bhagavad-gita-vs-stoicism/page.tsx
++++ b/frontend/src/app/blogs/bhagavad-gita-vs-stoicism/page.tsx
+@@ -792,7 +792,7 @@ export default function GitaVsStoicismPage() {
+       </div>
+ 
+       <p>
+-        The Gita&apos;s karma yoga makes a similar point: act fully now, without dwelling on past results or anticipating future ones. In practice, BG 2.47 puts your attention on the present action, since the fruit belongs to the future.
++        The Gita&apos;s karma yoga makes a similar point: act fully now, without dwelling on past results or anticipating future ones. In practice, <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> puts your attention on the present action, since the fruit belongs to the future.
+       </p>
+ 
+       <h2>Similarity 4: The Role You Are Given</h2>
+diff --git a/frontend/src/app/blogs/bhagwat-geeta-chapter-1/page.tsx b/frontend/src/app/blogs/bhagwat-geeta-chapter-1/page.tsx
+index a51fa601..e2a4df11 100644
+--- a/frontend/src/app/blogs/bhagwat-geeta-chapter-1/page.tsx
++++ b/frontend/src/app/blogs/bhagwat-geeta-chapter-1/page.tsx
+@@ -1396,7 +1396,7 @@ export default function ChapterOnePage() {
+             What is the most famous shloka in Bhagavad Gita Chapter 1?
+           </div>
+           <div className="faq-a">
+-            Chapter 2 holds the verses people cite most often, such as 2.47. From Chapter 1, commonly quoted shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
++            Chapter 2 holds the verses people cite most often, such as <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>. From Chapter 1, commonly quoted shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
+             physical symptoms), and 1.32, "I do not desire victory, nor
+             kingdom, nor pleasures." Verse 1.47, where Arjuna sets down his bow, closes the chapter and is often quoted too.
+           </div>
+diff --git a/frontend/src/app/blogs/bhagwat-geeta-chapter-2/page.tsx b/frontend/src/app/blogs/bhagwat-geeta-chapter-2/page.tsx
+index 50070f4f..134f4c7d 100644
+--- a/frontend/src/app/blogs/bhagwat-geeta-chapter-2/page.tsx
++++ b/frontend/src/app/blogs/bhagwat-geeta-chapter-2/page.tsx
+@@ -1444,7 +1444,7 @@ export default function ChapterTwoPage() {
+           <div className="faq-item">
+             <div className="faq-q">What is the best-known verse in Chapter 2?</div>
+             <div className="faq-a">
+-              The best known is 2.47, &quot;karmany evadhikaras te ma phaleshu kadachana&quot;, often translated as &quot;you have a right to work, not to the fruits of work.&quot; But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
++              The best known is 2.47, &quot;<a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">karmany evadhikaras te ma phaleshu kadachana</a>&quot;, often translated as &quot;you have a right to work, not to the fruits of work.&quot; But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
+             </div>
+           </div>
+           <div className="faq-item">
+diff --git a/frontend/src/app/blogs/bhagwat-geeta-saar/page.tsx b/frontend/src/app/blogs/bhagwat-geeta-saar/page.tsx
+index 2cad8390..769e5179 100644
+--- a/frontend/src/app/blogs/bhagwat-geeta-saar/page.tsx
++++ b/frontend/src/app/blogs/bhagwat-geeta-saar/page.tsx
+@@ -567,7 +567,7 @@ export default function BhagwatGeetaSaarPage() {
+ 
+         <h2>The Seven Ideas That Hold the Whole Book Together</h2>
+         <p>
+-          Step back from the 18 chapters and seven themes keep returning.
++          Step back from the <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_gita_structure">18 chapters</a> and seven themes keep returning.
+         </p>
+ 
+         <ul className="practice-list">
+@@ -597,7 +597,7 @@ export default function BhagwatGeetaSaarPage() {
+         <h2>Three Common Misreadings</h2>
+         <h3>Misreading 1: &ldquo;The Gita teaches passivity&rdquo;</h3>
+         <p>
+-          BG 2.47 is often quoted as though it teaches indifference to results. The verse contains four instructions, and in the fourth, which warns against attachment to inaction, Krishna blocks the passivity reading. The Gita is a book delivered on a battlefield to a soldier who wanted to leave. Its message is: act, act fully, but release the craving.
++          <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> is often quoted as though it teaches indifference to results. The verse contains four instructions, and in the fourth, which warns against attachment to inaction, Krishna blocks the passivity reading. The Gita is a book delivered on a battlefield to a soldier who wanted to leave. Its message is: act, act fully, but release the craving.
+         </p>
+ 
+         <h3>Misreading 2: &ldquo;Whatever happens is for the good&rdquo;</h3>
+@@ -624,7 +624,7 @@ export default function BhagwatGeetaSaarPage() {
+ 
+         <ul className="practice-list">
+           <li>
+-            <span><strong>Start with chapters 2, 12, and 18.</strong> If you only ever read three chapters, read these. Chapter 2 gives you the metaphysical foundation and the karma yoga instruction. Chapter 12 gives you the practical portrait of a devotee. Chapter 18 pulls the argument together.</span>
++            <span><strong>Start with chapters 2, 12, and 18.</strong> If you only ever read three chapters, read these. Chapter 2 gives you the metaphysical foundation and the karma yoga instruction. Chapter 12 gives you the practical portrait of a devotee. <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a> pulls the argument together.</span>
+           </li>
+           <li>
+             <span><strong>Memorize the four essence verses.</strong> 2.47, 15.7, 18.66, 9.22. Write them down. Return to them when you are anxious about outcomes, uncertain about who you are, exhausted by too many dharmas, or wondering if effort is worth it.</span>
+diff --git a/frontend/src/app/blogs/dharma-meaning-bhagavad-gita/page.tsx b/frontend/src/app/blogs/dharma-meaning-bhagavad-gita/page.tsx
+index b4cf4a0e..e2d65377 100644
+--- a/frontend/src/app/blogs/dharma-meaning-bhagavad-gita/page.tsx
++++ b/frontend/src/app/blogs/dharma-meaning-bhagavad-gita/page.tsx
+@@ -646,7 +646,7 @@ export default function DharmaMeaningPage() {
+ 
+         <h2>BG 18.47: The Teaching on Svadharma, Restated</h2>
+         <p>
+-          The first line of BG 3.35 is repeated word for word in 18.47. By Chapter 18, Arjuna and the reader have been through the whole arc of the Gita, and the teaching still stands.
++          The first line of BG 3.35 is repeated word for word in 18.47. By <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a>, Arjuna and the reader have been through the whole arc of the Gita, and the teaching still stands.
+         </p>
+ 
+                 <ShlokaCard
+@@ -711,7 +711,7 @@ export default function DharmaMeaningPage() {
+         </div>
+ 
+         <p>
+-          Put together, the Gita&apos;s position on dharma runs like this. Understand what you are and act from it (3.35, 18.47). Let go of the fruits (2.47). Don&apos;t fake another&apos;s dharma to look more impressive. And in the end, take refuge in Krishna and hold even dharma lightly (18.66).
++          Put together, the Gita&apos;s position on dharma runs like this. Understand what you are and act from it (3.35, 18.47). Let go of the fruits (<a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>). Don&apos;t fake another&apos;s dharma to look more impressive. And in the end, take refuge in Krishna and hold even dharma lightly (18.66).
+         </p>
+         <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected 18.66 to end &ldquo;Do not grieve&rdquo; and described it as Krishna&apos;s last instruction; removed an unverified count of the word dharma and the invented category &ldquo;rita dharma&rdquo;; copy edited.</p>
+       </div>
+diff --git a/frontend/src/app/blogs/karma-quotes-bhagavad-gita/page.tsx b/frontend/src/app/blogs/karma-quotes-bhagavad-gita/page.tsx
+index 7470c8c9..66428ab9 100644
+--- a/frontend/src/app/blogs/karma-quotes-bhagavad-gita/page.tsx
++++ b/frontend/src/app/blogs/karma-quotes-bhagavad-gita/page.tsx
+@@ -551,7 +551,7 @@ export default function KarmaQuotesPage() {
+         <div className="faq-item">
+           <strong>What are the most famous karma quotes in the Bhagavad Gita?</strong>
+           <p>
+-            The best-known karma quote is Bhagavad Gita 2.47 — <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> — &ldquo;You have a right to action, never to its fruits.&rdquo; Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 3.35, repeated in 18.47 (do your own duty).
++            The best-known karma quote is <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">Bhagavad Gita 2.47</a> — <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> — &ldquo;You have a right to action, never to its fruits.&rdquo; Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 3.35, repeated in 18.47 (do your own duty).
+           </p>
+         </div>
+ 
+diff --git a/frontend/src/app/blogs/krishna-three-paths-bhagavad-gita/page.tsx b/frontend/src/app/blogs/krishna-three-paths-bhagavad-gita/page.tsx
+index 8b1a9fed..871bea52 100644
+--- a/frontend/src/app/blogs/krishna-three-paths-bhagavad-gita/page.tsx
++++ b/frontend/src/app/blogs/krishna-three-paths-bhagavad-gita/page.tsx
+@@ -1164,7 +1164,7 @@ export default function KrishnaThreePathsPage() {
+         </p>
+ 
+         <p>
+-          <strong>Karma Yoga answers worry about outcomes</strong>: the low-grade fever of needing the next thing to go well. Krishna asks you to care about the work and leave the result to him. Later commentators call this <em>nishkama karma</em>, action without desire for its fruit, and 3.30 asks Arjuna to fight without the fever.
++          <strong>Karma Yoga answers worry about outcomes</strong>: the low-grade fever of needing the next thing to go well. Krishna asks you to care about the work and leave the result to him. Later commentators call this <em><a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">nishkama karma</a></em>, action without desire for its fruit, and 3.30 asks Arjuna to fight without the fever.
+         </p>
+ 
+         <p>
+@@ -1187,7 +1187,7 @@ export default function KrishnaThreePathsPage() {
+         </p>
+ 
+         <p>
+-          If your restlessness wants to <em>do</em>, if sitting still is the hardest thing, if your relief comes from solving something, building something, finishing something, your path likely begins with <strong>Karma Yoga</strong>. The discipline is to keep doing, fully, while letting go of the part of you that demands a particular result. The verse to live with is 2.47.
++          If your restlessness wants to <em>do</em>, if sitting still is the hardest thing, if your relief comes from solving something, building something, finishing something, your path likely begins with <strong>Karma Yoga</strong>. The discipline is to keep doing, fully, while letting go of the part of you that demands a particular result. The verse to live with is <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>.
+         </p>
+ 
+         <p>
+diff --git a/frontend/src/app/blogs/nishkama-karma-bhagavad-gita/page.tsx b/frontend/src/app/blogs/nishkama-karma-bhagavad-gita/page.tsx
+index 699b81c0..491424df 100644
+--- a/frontend/src/app/blogs/nishkama-karma-bhagavad-gita/page.tsx
++++ b/frontend/src/app/blogs/nishkama-karma-bhagavad-gita/page.tsx
+@@ -692,7 +692,7 @@ export default function NishkamaKarmaPage() {
+           Much of the anxiety people describe at work comes from outcome-dependence. You work on something and the whole time your mind runs a parallel thread: will this work? What if it doesn&apos;t? What will people think? What does it say about me if it fails? That thread consumes attention, degrades the quality of the work, and delivers suffering regardless of whether the outcome arrives, because the anxiety is present before the result is known.
+         </p>
+         <p>
+-          BG 2.47 separates the work from its result: the work is yours, the result is not.
++          <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> separates the work from its result: the work is yours, the result is not.
+         </p>
+         <p>
+           BG 3.9 comes at it from the other side. Krishna says that work done as yajña, as an offering, does not bind; work done for any other purpose binds.
+@@ -700,7 +700,7 @@ export default function NishkamaKarmaPage() {
+ 
+         <h2>Offering the Action: BG 18.11</h2>
+         <p>
+-          By Chapter 18, the Gita is completing its argument. Krishna makes a point that is easy to miss: an embodied person cannot give up action entirely.
++          By <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a>, the Gita is completing its argument. Krishna makes a point that is easy to miss: an embodied person cannot give up action entirely.
+         </p>
+ 
+                 <ShlokaCard

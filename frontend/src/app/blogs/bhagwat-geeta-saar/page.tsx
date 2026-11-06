@@ -567,7 +567,7 @@ export default function BhagwatGeetaSaarPage() {
 
         <h2>The Seven Ideas That Hold the Whole Book Together</h2>
         <p>
-          Step back from the 18 chapters and seven themes keep returning.
+          Step back from the <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_gita_structure">18 chapters</a> and seven themes keep returning.
         </p>
 
         <ul className="practice-list">
@@ -597,7 +597,7 @@ export default function BhagwatGeetaSaarPage() {
         <h2>Three Common Misreadings</h2>
         <h3>Misreading 1: &ldquo;The Gita teaches passivity&rdquo;</h3>
         <p>
-          BG 2.47 is often quoted as though it teaches indifference to results. The verse contains four instructions, and in the fourth, which warns against attachment to inaction, Krishna blocks the passivity reading. The Gita is a book delivered on a battlefield to a soldier who wanted to leave. Its message is: act, act fully, but release the craving.
+          <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> is often quoted as though it teaches indifference to results. The verse contains four instructions, and in the fourth, which warns against attachment to inaction, Krishna blocks the passivity reading. The Gita is a book delivered on a battlefield to a soldier who wanted to leave. Its message is: act, act fully, but release the craving.
         </p>
 
         <h3>Misreading 2: &ldquo;Whatever happens is for the good&rdquo;</h3>
@@ -624,7 +624,7 @@ export default function BhagwatGeetaSaarPage() {
 
         <ul className="practice-list">
           <li>
-            <span><strong>Start with chapters 2, 12, and 18.</strong> If you only ever read three chapters, read these. Chapter 2 gives you the metaphysical foundation and the karma yoga instruction. Chapter 12 gives you the practical portrait of a devotee. Chapter 18 pulls the argument together.</span>
+            <span><strong>Start with chapters 2, 12, and 18.</strong> If you only ever read three chapters, read these. Chapter 2 gives you the metaphysical foundation and the karma yoga instruction. Chapter 12 gives you the practical portrait of a devotee. <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a> pulls the argument together.</span>
           </li>
           <li>
             <span><strong>Memorize the four essence verses.</strong> 2.47, 15.7, 18.66, 9.22. Write them down. Return to them when you are anxious about outcomes, uncertain about who you are, exhausted by too many dharmas, or wondering if effort is worth it.</span>

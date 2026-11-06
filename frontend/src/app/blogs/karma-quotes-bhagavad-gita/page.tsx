@@ -551,7 +551,7 @@ export default function KarmaQuotesPage() {
         <div className="faq-item">
           <strong>What are the most famous karma quotes in the Bhagavad Gita?</strong>
           <p>
-            The best-known karma quote is Bhagavad Gita 2.47 — <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> — &ldquo;You have a right to action, never to its fruits.&rdquo; Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 3.35, repeated in 18.47 (do your own duty).
+            The best-known karma quote is <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">Bhagavad Gita 2.47</a> — <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> — &ldquo;You have a right to action, never to its fruits.&rdquo; Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 3.35, repeated in 18.47 (do your own duty).
           </p>
         </div>
 

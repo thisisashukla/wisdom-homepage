@@ -792,7 +792,7 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <p>
-        The Gita&apos;s karma yoga makes a similar point: act fully now, without dwelling on past results or anticipating future ones. In practice, BG 2.47 puts your attention on the present action, since the fruit belongs to the future.
+        The Gita&apos;s karma yoga makes a similar point: act fully now, without dwelling on past results or anticipating future ones. In practice, <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> puts your attention on the present action, since the fruit belongs to the future.
       </p>
 
       <h2>Similarity 4: The Role You Are Given</h2>

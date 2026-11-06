@@ -766,7 +766,7 @@ export default function GitaOnAnxietyPage() {
           Much everyday worry is about outcomes: whether something will work, and what people will think if it fails. The Gita speaks to this directly.
         </p>
         <p>
-          BG 2.47 says your right is to the action, never to its fruits. Outcomes still matter. The trouble starts when the expected result becomes the reason for acting and the measure of your worth, because then you depend on something you cannot fully control, and the work turns into constant checking on whether the result is still on track.
+          <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> says your right is to the action, never to its fruits. Outcomes still matter. The trouble starts when the expected result becomes the reason for acting and the measure of your worth, because then you depend on something you cannot fully control, and the work turns into constant checking on whether the result is still on track.
         </p>
         <p>
           BG 2.38 gives the instruction: treat pleasure and pain, gain and loss, victory and defeat alike, and then fight. Krishna is asking for an even mind while acting, which lets Arjuna act without being ruled by what might happen.

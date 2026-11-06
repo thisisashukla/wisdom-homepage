@@ -646,7 +646,7 @@ export default function DharmaMeaningPage() {
 
         <h2>BG 18.47: The Teaching on Svadharma, Restated</h2>
         <p>
-          The first line of BG 3.35 is repeated word for word in 18.47. By Chapter 18, Arjuna and the reader have been through the whole arc of the Gita, and the teaching still stands.
+          The first line of BG 3.35 is repeated word for word in 18.47. By <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a>, Arjuna and the reader have been through the whole arc of the Gita, and the teaching still stands.
         </p>
 
                 <ShlokaCard
@@ -711,7 +711,7 @@ export default function DharmaMeaningPage() {
         </div>
 
         <p>
-          Put together, the Gita&apos;s position on dharma runs like this. Understand what you are and act from it (3.35, 18.47). Let go of the fruits (2.47). Don&apos;t fake another&apos;s dharma to look more impressive. And in the end, take refuge in Krishna and hold even dharma lightly (18.66).
+          Put together, the Gita&apos;s position on dharma runs like this. Understand what you are and act from it (3.35, 18.47). Let go of the fruits (<a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>). Don&apos;t fake another&apos;s dharma to look more impressive. And in the end, take refuge in Krishna and hold even dharma lightly (18.66).
         </p>
         <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected 18.66 to end &ldquo;Do not grieve&rdquo; and described it as Krishna&apos;s last instruction; removed an unverified count of the word dharma and the invented category &ldquo;rita dharma&rdquo;; copy edited.</p>
       </div>

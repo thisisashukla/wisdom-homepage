@@ -48,10 +48,12 @@ const FUNNEL_PREFIXES: [RegExp, string][] = [
   [/^\/(hi\/)?blogs(\/|$)/, 'blog'],
   [/^\/start(\/|$)/, 'start'],
   [/^\/app(\/|$)/, 'app-page'],
+  [/^\/dhyaan(\/|$)/, 'dhyaan'],
   [/^\/(hi)?$/, 'home'],
 ]
 
 export function funnelForPath(path: string | undefined | null): string | null {
+  if (typeof window !== 'undefined' && window.location.hostname.startsWith('dhyaan.')) return 'dhyaan'
   if (!path) return null
   for (const [re, name] of FUNNEL_PREFIXES) if (re.test(path)) return name
   return null

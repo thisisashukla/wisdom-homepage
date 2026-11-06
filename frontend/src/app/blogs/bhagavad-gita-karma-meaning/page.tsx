@@ -715,7 +715,7 @@ export default function KarmaMeaningPage() {
         <div className="faq-item">
             <strong>What does the Bhagavad Gita say about karma?</strong>
             <p>
-                The best-known karma teaching is verse 2.47: "You have a right to perform your prescribed duties, but not to the fruits of your actions." This is the basis of karma yoga, the practice of acting without attachment to outcomes. Act fully, and don't let the expected fruit be your motive.
+                The best-known karma teaching is <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">verse 2.47</a>: "You have a right to perform your prescribed duties, but not to the fruits of your actions." This is the basis of karma yoga, the practice of acting without attachment to outcomes. Act fully, and don't let the expected fruit be your motive.
             </p>
         </div>
 

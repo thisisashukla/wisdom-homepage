@@ -563,7 +563,7 @@ export default function AhankaraMeaningPage() {
 
         <h2>Liberation from Ahankara: BG 18.58–59</h2>
         <p>
-          The Gita answers ahankara with a change of orientation, without violence toward the self. Chapter 18 sets out two stances in back-to-back verses.
+          The Gita answers ahankara with a change of orientation, without violence toward the self. <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a> sets out two stances in back-to-back verses.
         </p>
 
         <ShlokaCard
@@ -657,7 +657,7 @@ export default function AhankaraMeaningPage() {
         <div className="faq-item">
           <strong>How do you overcome ahankara in the Gita?</strong>
           <p>
-            The Gita asks for a change of orientation rather than an attack on the ego. Nishkama karma (action without attachment to results) takes away ahankara&apos;s fuel, which is credit for outcomes. Bhakti (devotion) moves the center away from the bounded self. Viveka (discernment), noticing that you can watch ahankara at work, loosens identification with it. All three converge on the same shift: from the constructed self as center, to the witnessing awareness as ground.
+            The Gita asks for a change of orientation rather than an attack on the ego. <a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">Nishkama karma</a> (action without attachment to results) takes away ahankara&apos;s fuel, which is credit for outcomes. Bhakti (devotion) moves the center away from the bounded self. Viveka (discernment), noticing that you can watch ahankara at work, loosens identification with it. All three converge on the same shift: from the constructed self as center, to the witnessing awareness as ground.
           </p>
         </div>
 

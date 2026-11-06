@@ -728,7 +728,7 @@ export default function GitaForStudentsPage() {
 
       <h2>The One Verse to Keep Near an Exam</h2>
       <p>
-        If you memorise one verse before an exam, make it BG 2.47, and read it as a practical instruction.
+        If you memorise one verse before an exam, make it <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a>, and read it as a practical instruction.
       </p>
 
       <div className="highlight-box">
@@ -758,7 +758,7 @@ export default function GitaForStudentsPage() {
       <div className="faq-item">
         <strong>What does the Gita say about hard work?</strong>
         <p>
-          BG 3.8 says to do your prescribed work, because action is better than inaction. The Gita pairs this with the teaching of nishkama karma in BG 2.47: work fully, and let go of attachment to the outcome.
+          BG 3.8 says to do your prescribed work, because action is better than inaction. The Gita pairs this with the teaching of <a href="/blogs/nishkama-karma-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_nishkama_karma">nishkama karma</a> in BG 2.47: work fully, and let go of attachment to the outcome.
         </p>
       </div>
 

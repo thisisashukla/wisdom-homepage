@@ -1396,7 +1396,7 @@ export default function ChapterOnePage() {
             What is the most famous shloka in Bhagavad Gita Chapter 1?
           </div>
           <div className="faq-a">
-            Chapter 2 holds the verses people cite most often, such as 2.47. From Chapter 1, commonly quoted shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
+            Chapter 2 holds the verses people cite most often, such as <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>. From Chapter 1, commonly quoted shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
             physical symptoms), and 1.32, "I do not desire victory, nor
             kingdom, nor pleasures." Verse 1.47, where Arjuna sets down his bow, closes the chapter and is often quoted too.
           </div>

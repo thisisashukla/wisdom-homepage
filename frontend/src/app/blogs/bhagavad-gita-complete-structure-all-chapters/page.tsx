@@ -661,7 +661,7 @@ export default function CompleteStructurePage() {
         />
 
         <p>
-          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, one of the Gita&apos;s best-known verses. It comes after the atman teaching, and it leans on it: if you are not the outcome, you can act without clinging to it.
+          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">2.47</a>, one of the Gita&apos;s best-known verses. It comes after the atman teaching, and it leans on it: if you are not the outcome, you can act without clinging to it.
         </p>
 
                 <ShlokaCard
@@ -762,7 +762,7 @@ export default function CompleteStructurePage() {
 
           <div className="faq-item">
             <div className="faq-q">How is the Bhagavad Gita structured?</div>
-            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. In Chapters 7–12 Krishna describes his own nature, and in Chapter 11 he shows Arjuna the Vishwarupa, his cosmic form. Chapters 13–18 go back over the earlier teachings: the field and its knower, the three gunas, the divine and demonic natures, and the summing-up of Chapter 18.</div>
+            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. In Chapters 7–12 Krishna describes his own nature, and in Chapter 11 he shows Arjuna the Vishwarupa, his cosmic form. Chapters 13–18 go back over the earlier teachings: the field and its knower, the three gunas, the divine and demonic natures, and the summing-up of <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_chapter_18">Chapter 18</a>.</div>
           </div>
 
           <div className="faq-item">
