@@ -4,6 +4,7 @@ import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl 
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import BlogTracker from '@/components/BlogTracker'
+import PathNav from '@/components/learn/PathNav'
 import {
   gitaTopicDefinition,
   gitaTopicDescriptionHi,
@@ -354,6 +355,8 @@ export default async function TopicPageHi({ params }: { params: Params }) {
           </ul>
         </>
       )}
+
+      <PathNav slug={topic.slug} lang="hi" />
 
       <GitaAppCTA variant="chapter" locale="hi" />
     </main>

@@ -6,6 +6,7 @@
  */
 
 import chalisaJson from '@/content/funnels/hanuman-chalisa/chalisa.json'
+import scriptsJson from '@/content/funnels/hanuman-chalisa/scripts.json'
 import { abs } from '@/lib/seo'
 import type { Locale } from '@/lib/locale'
 import { anchorId, HUB_PATH, HUB_PATH_HI, linePath, type BeadInfo, type HcUnit } from './shared'
@@ -33,6 +34,19 @@ export const EDITION = doc.edition
 export const EDITION_SHORT = doc.editionShort
 
 export const getUnits = (): HcUnit[] => doc.units
+
+type ScriptsDoc = { scripts: Record<'te' | 'gu' | 'kn', Record<string, [string, string]>> }
+const scriptsDoc = scriptsJson as unknown as ScriptsDoc
+for (const [code, lines] of Object.entries(scriptsDoc.scripts)) {
+  if (Object.keys(lines).length !== 43) throw new Error(`hanuman-chalisa: scripts.json ${code} must hold 43 units`)
+}
+
+/** The two halves of a unit in Telugu, Gujarati or Kannada letters. */
+export const scriptLines = (code: 'te' | 'gu' | 'kn', id: string): [string, string] => {
+  const l = scriptsDoc.scripts[code][id]
+  if (!l) throw new Error(`hanuman-chalisa: no ${code} text for ${id}`)
+  return l
+}
 export const getUnitBySlug = (slug: string): HcUnit | null => doc.units.find((u) => u.slug === slug) ?? null
 export const getUnit = (id: string): HcUnit | null => doc.units.find((u) => u.id === id) ?? null
 

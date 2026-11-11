@@ -84,3 +84,14 @@ Page names for BlogTracker: `hanuman-chalisa-hub`, `hanuman-chalisa-hub-hi`, `ha
 - Audio: none shipped. Add a URL to a unit's `audio` field (via the build script) and the line page shows a player.
 - Ramayana numbering follows the corpus, which can differ from the Gita Press Manas by a doha (REVIEW.md section 5).
 - The learn page and counter are English only; the Hindi hub links to them labelled "(अंग्रेज़ी में)".
+
+## US hub pass (11 Nov 2026)
+
+Tuned for US iPhone families (queries: "hanuman chalisa lyrics in English", "pdf", "telugu", "for kids", "how many times", singer names).
+
+- **Hub** `/hanuman-chalisa`: title "Hanuman Chalisa Lyrics in English with Meaning, PDF | Wisdom", H1 "Hanuman Chalisa lyrics in English, with meaning"; hero actions to the PDF, the families section and the script pages; Download the PDF beside the script switch; a fuller pronunciation note; an iPhone-only Add to Home Screen tip (`IosTip`); new sections: "Read it in Telugu, Gujarati, Kannada or Hindi", "Teaching it to your kids" (3 steps, learn mode, kids' PDF), "Which recording to sing along with" (Hariharan, Hari Om Sharan, M. S. Subbulakshmi, Krishna Das, linked to YouTube searches); four new FAQs; Reciting it now links the counter and the line 18 explainer.
+- **`/hanuman-chalisa/pdf`**: six free PDFs (US Letter, fits A4) with DownloadClicked events: English letters + meaning (7 pp), Devanagari + Hindi and English meaning (10), kids' 11-day sheet (11), Telugu, Gujarati, Kannada + English meaning (8 each). Built by `frontend/scripts/pdf/build-chalisa-pdf.mjs` from chalisa.json and scripts.json; fonts in `scripts/pdf/fonts` (OFL).
+- **`/hanuman-chalisa/telugu`, `/gujarati`, `/kannada`**: the 43 lines in that script with English meaning on tap, the mala, the script switch relabelled (తెలుగు / IAST), the script's PDF, FAQ. **noindex and out of the sitemap until `indexed: true`** in `SCRIPT_PAGES`; review sheet: `SCRIPTS_REVIEW.md`.
+- **Line 18** (`/hanuman-chalisa/18-jug-sahastra-jojan-par-bhanu#sun`): "Did the Chalisa give the distance to the sun?" with the viral sum, what jug and jojan can mean, the yojana range, the Valmiki story, 2 FAQs (FAQPage JSON-LD), sources; own title and description.
+- **Site kit** (one place each): `VerseCard` lang 'te' | 'gu' | 'kn'; `ScriptToggle native` label (ScriptToggled `to` = te/gu/kn); `Button`/`Action` `download`, `event`, `eventProps`; tokens `--font-te/gu/kn` from next/font (Noto Serif Telugu/Gujarati/Kannada, preload false).
+- Owner decisions: the PDF page says groups may print copies for temple, satsang or Bal Vihar use (keep the footer line); remove the FAQ if you prefer otherwise.

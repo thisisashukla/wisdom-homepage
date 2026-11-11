@@ -52,6 +52,7 @@
   user-select: none;
 }
 .rs-cloth span { display: block; white-space: nowrap; word-spacing: 0.35em; }
+.rs-cloth span::before { content: 'राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम राम '; }
 .rs-cloth span:nth-child(even) { transform: translateX(-1.1em); color: rgba(200, 136, 30, 0.045); }
 
 .rs-fly { position: fixed; inset: 0; z-index: 80; pointer-events: none; }

@@ -28,7 +28,7 @@ export function wireEventName(event: EventName): string {
 /**
  * Funnel a path belongs to, so every event (Page Viewed, Scroll Depth, Link Clicked,
  * Section Viewed, ...) can be segmented without each component passing it.
- * Returns null for pages outside any funnel (about, legal, search).
+ * Returns null for pages outside any funnel (about, legal).
  */
 const FUNNEL_PREFIXES: [RegExp, string][] = [
   [/^\/(hi\/)?ramayana(\/|$)/, 'ramayana'],
@@ -44,7 +44,11 @@ const FUNNEL_PREFIXES: [RegExp, string][] = [
   [/^\/(hi\/)?reading-plans(\/|$)/, 'reading-plans'],
   [/^\/(hi\/)?gita-for(\/|$)/, 'gita-for'],
   [/^\/(gita-jayanti|read-gita-in-18-days|most-searched-gita-verses-\d{4})(\/|$)/, 'gita-seasonal'],
+  [/^\/(best-apps|best-bhagavad-gita-apps|best-hindu-prayer-apps|best-hanuman-chalisa-apps|bhagavad-gita-widget-iphone)(\/|$)/, 'app-compare'],
+  // The 12 key ideas (learning path) report on their own; read mode stays in gita-reader.
+  [/^\/(gita\/key-ideas|hi\/gita\/mool-shabd)(\/|$)/, 'learning-path'],
   [/^\/(hi\/)?gita(\/|$)/, 'gita-reader'],
+  [/^\/(hi\/)?search(\/|$)/, 'search'],
   [/^\/(hi\/)?blogs(\/|$)/, 'blog'],
   [/^\/start(\/|$)/, 'start'],
   [/^\/app(\/|$)/, 'app-page'],

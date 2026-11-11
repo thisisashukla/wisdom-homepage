@@ -6,9 +6,13 @@ import {
   gitaHeroImage,
   chapterUrl,
   topicUrl,
+  getChapterGist,
 } from '@/lib/gita'
 import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
+import ResumeCard from '@/components/reader/ResumeCardLazy'
+import VerseJump from '@/components/search/VerseJump'
+import { PATH_LENGTH } from '@/lib/learningPath'
 
 export const metadata: Metadata = {
   title: 'Bhagavad Gita — All 18 Chapters, Sanskrit Verses with Hindi & English Translation',
@@ -96,6 +100,7 @@ export default function GitaIndexPage() {
               <div className="gita-stat-label">Languages</div>
             </div>
           </div>
+          <VerseJump lang="en" location="gita_hub" className="gita-hub-jump" />
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 28 }}>
             <a
               href="/gita/today"
@@ -127,6 +132,7 @@ export default function GitaIndexPage() {
         </div>
       </section>
 
+      <ResumeCard lang="en" location="gita_index" showSaved={false} />
       <SavedVersesPanel locale="en" />
 
       {/* CHAPTERS */}
@@ -149,6 +155,9 @@ export default function GitaIndexPage() {
                 <div className="gita-card-eyebrow">Chapter {ch.number}</div>
                 <div className="gita-card-title">{ch.enName}</div>
                 <div className="gita-card-sub">{ch.enTitle}</div>
+                {getChapterGist(ch.number)?.en.line && (
+                  <div className="gita-card-line">{getChapterGist(ch.number)?.en.line}</div>
+                )}
                 <div className="gita-card-meta">
                   {ch.processedVerses === ch.totalVerses
                     ? `${ch.totalVerses} verses`
@@ -165,6 +174,11 @@ export default function GitaIndexPage() {
       <p className="gita-lede">
         Verses gathered around the ideas they speak to most — karma, dharma, devotion, the steady mind. Drawn from
         across the Gita.
+      </p>
+      <p className="gita-readmode-link">
+        <a href="/gita/key-ideas" data-mp-location="gita_index_key_ideas">
+          New to the Gita? Start with its {PATH_LENGTH} key ideas, in order →
+        </a>
       </p>
       <div className="gita-grid">
         {topics.slice(0, 18).map((t) => (

@@ -10,6 +10,46 @@ export const LEARN_PATH = '/hanuman-chalisa/learn'
 export const COUNTER_PATH = '/hanuman-chalisa/108'
 export const HOW_MANY_PATH = '/hanuman-chalisa/how-many-times'
 export const JAYANTI_PATH = '/hanuman-jayanti-2027'
+export const PDF_PATH = '/hanuman-chalisa/pdf'
+/** Line 18 and the sun-distance question. */
+export const SUN_LINE_ID = 'hc.c18'
+
+/** Printable PDFs (public/downloads), built by scripts/pdf/build-chalisa-pdf.mjs. US Letter, fits A4. */
+export type PdfKey = 'english' | 'devanagari' | 'kids' | 'telugu' | 'gujarati' | 'kannada'
+export const PDF_FILES: Record<PdfKey, string> = {
+  english: '/downloads/hanuman-chalisa-english-with-meaning.pdf',
+  devanagari: '/downloads/hanuman-chalisa-hindi-devanagari-with-meaning.pdf',
+  kids: '/downloads/hanuman-chalisa-kids-11-day-learning-sheet.pdf',
+  telugu: '/downloads/hanuman-chalisa-telugu-with-english-meaning.pdf',
+  gujarati: '/downloads/hanuman-chalisa-gujarati-with-english-meaning.pdf',
+  kannada: '/downloads/hanuman-chalisa-kannada-with-english-meaning.pdf',
+}
+
+/** What each PDF is, for the /pdf page and the download buttons. Page counts from the last build. */
+export type PdfInfo = { key: PdfKey; title: string; body: string; pages: number; lang?: string }
+export const PDF_INFO: Record<PdfKey, PdfInfo> = {
+  english: { key: 'english', title: 'English letters, with meaning', body: 'All 43 lines as they are sung, each with its meaning, and a note on saying the letters.', pages: 7 },
+  devanagari: { key: 'devanagari', title: 'Devanagari, with Hindi and English meaning', body: 'For the reader at home who reads Hindi, with the English beside it for everyone else.', pages: 10 },
+  kids: { key: 'kids', title: 'For kids: four lines a day for 11 days', body: 'Large English letters, a short meaning and a box to tick when everyone can say the day\'s lines.', pages: 11 },
+  telugu: { key: 'telugu', title: 'Telugu letters, with English meaning', body: 'The same Awadhi words in తెలుగు script.', pages: 8, lang: 'te' },
+  gujarati: { key: 'gujarati', title: 'Gujarati letters, with English meaning', body: 'The same Awadhi words in ગુજરાતી script.', pages: 8, lang: 'gu' },
+  kannada: { key: 'kannada', title: 'Kannada letters, with English meaning', body: 'The same Awadhi words in ಕನ್ನಡ script.', pages: 8, lang: 'kn' },
+}
+
+/**
+ * The Chalisa in other scripts: the same Awadhi words in Telugu, Gujarati or Kannada letters
+ * (scripts.json, from scripts/funnels/hanuman-chalisa/build_scripts.py), with English meaning.
+ * `indexed` stays false until a native reader has checked every line; until then the page is
+ * noindex and out of the sitemap, but still linked from the hub.
+ */
+export type ScriptKey = 'telugu' | 'gujarati' | 'kannada'
+export type ScriptInfo = { key: ScriptKey; code: 'te' | 'gu' | 'kn'; name: string; native: string; path: string; pdf: PdfKey; indexed: boolean }
+export const SCRIPT_PAGES: Record<ScriptKey, ScriptInfo> = {
+  telugu: { key: 'telugu', code: 'te', name: 'Telugu', native: 'తెలుగు', path: '/hanuman-chalisa/telugu', pdf: 'telugu', indexed: false },
+  gujarati: { key: 'gujarati', code: 'gu', name: 'Gujarati', native: 'ગુજરાતી', path: '/hanuman-chalisa/gujarati', pdf: 'gujarati', indexed: false },
+  kannada: { key: 'kannada', code: 'kn', name: 'Kannada', native: 'ಕನ್ನಡ', path: '/hanuman-chalisa/kannada', pdf: 'kannada', indexed: false },
+}
+export const SCRIPT_LIST: ScriptInfo[] = Object.values(SCRIPT_PAGES)
 
 /** /start situation for the desktop next step: the closest to "courage before a hard day". */
 export const START_SITUATION = 'didnt_work_out'

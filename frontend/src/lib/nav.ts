@@ -40,7 +40,10 @@ export const NAV_SCRIPTURES: NavItem[] = [
 /** Secondary links (More menu foot, drawer foot). */
 export const NAV_SECONDARY: NavItem[] = [
   { label: { en: 'हिंदी गीता', hi: 'English Gita' }, href: { en: '/hi/gita', hi: '/gita' } },
+  { label: { en: 'Find a verse', hi: 'श्लोक खोजें' }, href: { en: '/search', hi: '/hi/search' }, match: ['/search', '/hi/search'] },
   { label: { en: 'Gita for life', hi: 'जीवन के लिए गीता' }, href: same('/gita-for'), match: ['/gita-for'] },
+  { label: { en: 'Understand the Gita', hi: 'गीता को समझें' }, href: same('/understand-the-gita'), match: ['/understand-the-gita'] },
+  { label: { en: '12 key ideas', hi: '12 मूल शब्द' }, href: { en: '/gita/key-ideas', hi: '/hi/gita/mool-shabd' }, match: ['/gita/key-ideas', '/hi/gita/mool-shabd'] },
   { label: { en: 'About', hi: 'परिचय' }, href: same('/about'), match: ['/about'] },
 ]
 

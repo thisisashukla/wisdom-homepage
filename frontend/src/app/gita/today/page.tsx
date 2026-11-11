@@ -16,6 +16,7 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import BlogTracker from '@/components/BlogTracker'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import WhatsAppDaily from '@/components/daily/WhatsAppDailyLazy'
 // DailyVerseEmail source preserved at @/components/gita/DailyVerseEmail — usage
 // disabled for now; only the Scripture AI waitlist is shown on this page.
 // import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
@@ -285,6 +286,7 @@ export default async function TodayPage() {
       {/* ── DailyVerseEmail removed for now — Scripture AI waitlist below is
              the only signup on this page. Component code preserved at
              @/components/gita/DailyVerseEmail. */}
+      <WhatsAppDaily lang="en" location="gita_today" trigger="inline" />
 
       {/* ── The backstory ── */}
       {context && (

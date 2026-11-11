@@ -1,9 +1,12 @@
+import { existsSync } from 'node:fs'
+import path from 'node:path'
 import type { Metadata } from 'next'
 import type { CSSProperties } from 'react'
 import PageTracker from '@/components/BlogTracker'
 import { GitaBridge, JsonLd, NextStep, PageHero, Section } from '@/components/site'
 import { abs } from '@/lib/seo'
 import { DISCLOSURE, NEXT_COPY } from '@/lib/funnels/other-gitas/content'
+import { GITA_ART } from '@/lib/funnels/other-gitas/art'
 import { GITAS, GITAS_QUICK, KIND_LABEL } from '@/lib/funnels/other-gitas/gitas'
 import { articleLd, pageMeta } from '@/lib/funnels/other-gitas/seo'
 
@@ -11,6 +14,13 @@ import { articleLd, pageMeta } from '@/lib/funnels/other-gitas/seo'
 const NAMES = ['श्रीमद्भगवद्गीता', 'अष्टावक्रगीता', 'अवधूतगीता', 'उद्धवगीता', 'अनुगीता', 'गुरुगीता', 'ऋभुगीता', 'देवीगीता', 'गणेशगीता', 'रामगीता']
 
 const PAGE_KEY = 'gitas-hub'
+
+/** A Gita's image, or null until its file is in public/ (checked at build time). */
+function artFor(slug: string) {
+  const art = GITA_ART[slug]
+  if (!art) return null
+  return existsSync(path.join(process.cwd(), 'public', art.src)) ? art : null
+}
 const PATH = '/gitas'
 
 export const metadata: Metadata = pageMeta({
@@ -91,6 +101,31 @@ export default function GitasHubPage() {
                 data-kind={g.kind}
                 className={`og-gita rv${g.slug === 'bhagavad' ? ' is-feature' : g.href ? ' is-link' : ''}`}
               >
+                {(() => {
+                  const art = artFor(g.slug)
+                  if (!art) return null
+                  const img = (
+                    <img
+                      src={art.src}
+                      alt={art.alt}
+                      width={1200}
+                      height={800}
+                      loading={g.slug === 'bhagavad' ? 'eager' : 'lazy'}
+                      decoding="async"
+                    />
+                  )
+                  return (
+                    <figure className="og-gita-art">
+                      {g.href ? (
+                        <a href={g.href} tabIndex={-1} aria-hidden="true" data-mp-location={`gitas_list_art_${g.slug}`}>
+                          {img}
+                        </a>
+                      ) : (
+                        img
+                      )}
+                    </figure>
+                  )
+                })()}
                 <span className="og-gita-kind">{KIND_LABEL[g.kind]}</span>
                 <h2 className="og-gita-h">
                   {g.href && g.slug === 'bhagavad' ? (

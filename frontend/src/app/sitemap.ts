@@ -14,6 +14,24 @@ const BASE = 'https://wisdomquotes.in'
 // today on every rebuild.  Bump this when the underlying corpus changes.
 const CORPUS_UPDATED = new Date('2026-08-01')
 
+// Hindi commentary (bhavarth, shabdarth, context) went live on 11 Nov 2026 on the Hindi verse pages
+// that have a file in src/content/gita/hi-commentary, and those chapters' Hindi pages changed with it.
+const HINDI_COMMENTARY_UPDATED = new Date('2026-11-11')
+function hindiCommentaryRefs(): Set<string> {
+  try {
+    const dir = path.join(process.cwd(), 'src', 'content', 'gita', 'hi-commentary')
+    return new Set(
+      fs
+        .readdirSync(dir)
+        .map((f) => /^(\d+)-(\d+)\.json$/.exec(f))
+        .filter((m): m is RegExpExecArray => Boolean(m))
+        .map((m) => `${Number(m[1])}.${Number(m[2])}`),
+    )
+  } catch {
+    return new Set()
+  }
+}
+
 // Locale-alternates helper — Google reads both `en-IN`/`hi-IN` (region-tagged)
 // and `en`/`hi` (region-agnostic); emit both so India-outside users also match.
 // Also emits `x-default` per Google's hreflang guidance.
@@ -59,8 +77,8 @@ function enumerateBlogSlugs(): string[] {
 // tent-pole articles where publication date matters. Slugs not in the map
 // default to CORPUS_UPDATED and priority 0.75.
 const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
-  'bhagavad-gita-for-beginners': { date: '2026-04-08', priority: 0.75 },
-  'bhagavad-gita-karma-meaning': { date: '2026-04-08', priority: 0.75 },
+  'bhagavad-gita-for-beginners': { date: '2026-11-11', priority: 0.88 },
+  'bhagavad-gita-karma-meaning': { date: '2026-11-11', priority: 0.85 },
   'bhagavad-gita-anxiety-mental-peace': { date: '2026-04-08', priority: 0.75 },
   'bhagavad-gita-complete-structure-all-chapters': { date: '2026-04-08', priority: 0.75 },
   'beyond-bhagavad-gita-quotes-mental-spiritual-health': { date: '2026-04-08', priority: 0.75 },
@@ -73,7 +91,7 @@ const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
   'dharma-meaning-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
   'sattva-rajas-tamas-three-gunas-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
   'bhagavad-gita-for-students': { date: '2026-06-12', priority: 0.88 },
-  'bhagavad-gita-vs-stoicism': { date: '2026-06-12', priority: 0.88 },
+  'bhagavad-gita-vs-stoicism': { date: '2026-11-11', priority: 0.88 },
   'ahankara-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
   'maya-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
   'best-bhagavad-gita-translation': { date: '2026-07-19', priority: 0.9 },
@@ -120,6 +138,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/gita-jayanti/reading-plan`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti/which-chapter-to-read`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${BASE}/most-searched-gita-verses-2026`, lastModified: new Date('2026-10-29'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/understand-the-gita`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/oppenheimer-bhagavad-gita`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.9 },
+    // App comparisons (/best-apps hub and its guides)
+    { url: `${BASE}/best-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/best-bhagavad-gita-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/best-hindu-prayer-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/best-hanuman-chalisa-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/bhagavad-gita-widget-iphone`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/reading-plans`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE}/gita-for`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'monthly', priority: 0.85 },
     ...GITA_FOR.map((p) => {
@@ -137,7 +163,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/methodology`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/resources`, lastModified: new Date('2026-10-29'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/tts`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.4 },
-    { url: `${BASE}/search`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
+    // Verse search (EN + HI paired)
+    { url: `${BASE}/search`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.5, alternates: langAlts('/search', '/hi/search') },
+    { url: `${BASE}/hi/search`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.5, alternates: langAlts('/search', '/hi/search') },
+    // 12 key ideas of the Gita (EN + HI paired). The chapter read-mode pages are noindex and stay out.
+    { url: `${BASE}/gita/key-ideas`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.85, alternates: langAlts('/gita/key-ideas', '/hi/gita/mool-shabd') },
+    { url: `${BASE}/hi/gita/mool-shabd`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.85, alternates: langAlts('/gita/key-ideas', '/hi/gita/mool-shabd') },
     {
       url: `${BASE}/gita`,
       lastModified: CORPUS_UPDATED,
@@ -185,6 +216,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // Chapter reading pages (EN + HI paired)
+  const hiCommentary = hindiCommentaryRefs()
+  const hiCommentaryChapters = new Set(Array.from(hiCommentary, (r) => Number(r.split('.')[0])))
   const chapters = getAllChapters()
   const chapterPages: MetadataRoute.Sitemap = chapters.flatMap((ch) => {
     const en = chapterUrl(ch.number, 'en')
@@ -199,7 +232,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
       {
         url: `${BASE}${hi}`,
-        lastModified: CORPUS_UPDATED,
+        lastModified: hiCommentaryChapters.has(ch.number) ? HINDI_COMMENTARY_UPDATED : CORPUS_UPDATED,
         changeFrequency: 'monthly',
         priority: 0.85,
         alternates: langAlts(en, hi),
@@ -224,7 +257,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
       {
         url: `${BASE}${hi}`,
-        lastModified: CORPUS_UPDATED,
+        lastModified: hiCommentary.has(`${r.chapter}.${r.verse}`) ? HINDI_COMMENTARY_UPDATED : CORPUS_UPDATED,
         changeFrequency: 'yearly',
         priority: 0.7,
         alternates: langAlts(en, hi),

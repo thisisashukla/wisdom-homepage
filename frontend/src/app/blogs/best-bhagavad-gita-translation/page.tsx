@@ -712,6 +712,10 @@ export default function BestGitaTranslationPage() {
             So own three: a text, a teacher, and a poem. Read the text first, straight through, in two or three sittings. Pick the teacher whose door matches your temperament, and let the criticisms above tell you what you are choosing, not what to avoid. The commentaries disagree because the Gita is deep enough to sustain the disagreement. 
         </p>
 
+        <p>
+            Reading on your phone? Our <a href="/best-apps" data-mp-location="internal_link_best_apps" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>comparison of Gita and Hindu practice apps</a> notes whose translation and commentary each app carries.
+        </p>
+
         <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: removed two unsupported superlatives (on Bhagavad-gita As It Is and the Jnaneshwari); copy edited.</p>
 
         <div className="highlight-box">

@@ -4,6 +4,9 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+# Search result URLs (?q=) repeat /search; the bare /search and /hi/search pages stay crawlable.
+Disallow: /search?
+Disallow: /hi/search?
 
 # Explicit allowance for well-behaved AI research crawlers so our
 # Bhagavad Gita corpus reaches the LLM knowledge layer.

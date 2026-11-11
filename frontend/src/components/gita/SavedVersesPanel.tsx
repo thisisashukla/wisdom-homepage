@@ -9,15 +9,12 @@ import { useEffect, useState } from 'react'
 import indexJson from '@/content/gita/index.json'
 import type { IndexEntry } from '@/lib/gita'
 import { EVENTS, trackEvent } from '@/lib/mixpanel'
-
-const KEY = 'wisdom.bookmarks'
+import { getSaved } from '@/lib/readingProgress'
 
 const labels = {
   en: { title: 'Your saved verses', empty: '', cta: 'Continue reading →', subtitle: 'Verses you’ve bookmarked, kept on this device.' },
   hi: { title: 'आपके सहेजे गए श्लोक', empty: '', cta: 'पढ़ना जारी रखें →', subtitle: 'इस device पर रखे गए श्लोक।' },
 }
-
-type Bookmark = { chapter: number; verse: number; addedAt: number }
 
 export default function SavedVersesPanel({ locale = 'en' as 'en' | 'hi' }) {
   const t = labels[locale]
@@ -27,9 +24,9 @@ export default function SavedVersesPanel({ locale = 'en' as 'en' | 'hi' }) {
   useEffect(() => {
     setReady(true)
     try {
-      const raw = window.localStorage.getItem(KEY)
-      if (!raw) return
-      const bms = JSON.parse(raw) as Bookmark[]
+      // Every save on this device: wq_reading.saved and the older 'wisdom.bookmarks' list.
+      const bms = getSaved()
+      if (!bms.length) return
       const idx = indexJson as IndexEntry[]
       const matched = bms
         .map((b) => {

@@ -3,6 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import VideoFigure from '@/components/site/VideoFigure'
 
 import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
@@ -636,6 +637,8 @@ export default function AnxietyMentalPeacePage() {
         <p>
             These verses help more when you come back to them than when you read them once. One way is to read a single verse in the morning while you are calm and keep it in mind through the day, so it is familiar by the time you need it.
         </p>
+
+        <VideoFigure video="overthinking" location="blog_gita_mental_peace_video" />
 
         <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the quotation of 1.29–30, removed the claim that 5.24 comes near the end of the Gita, removed the medical framing of Arjuna&apos;s state and the Gita&apos;s age in years, and fixed the meta description to match the chapters covered; copy edited.</p>
     </div>

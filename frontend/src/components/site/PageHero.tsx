@@ -5,6 +5,7 @@ import { Actions, type Action } from './Button'
 import Facts from './Facts'
 import ScriptToggle from './ScriptToggle'
 import VerseCard, { type VerseCardProps } from './VerseCard'
+import AnswerFirst, { type AnswerFirstProps } from '@/components/learn/AnswerFirst'
 import './site.css'
 
 export type PageHeroProps = {
@@ -15,6 +16,11 @@ export type PageHeroProps = {
   crumbsLd?: boolean
   eyebrow?: ReactNode
   title: ReactNode
+  /**
+   * A direct answer right under the H1 (question as searchers ask it, one or two sentences, and
+   * the source line it rests on), for pages that answer one question. Facts and actions stay below.
+   */
+  answer?: AnswerFirstProps
   sub?: ReactNode
   facts?: string[]
   /** First action is the gold primary button; the rest render as links. */
@@ -37,7 +43,7 @@ export type PageHeroProps = {
 
 /**
  * The one page hero. Order is fixed on every page:
- * phone: crumbs, eyebrow, H1, sub, facts, actions, then the verse or visual;
+ * phone: crumbs, eyebrow, H1, answer, sub, facts, actions, then the verse or visual;
  * desktop: the text column on the left, the verse or visual on the right.
  */
 export default function PageHero({
@@ -46,6 +52,7 @@ export default function PageHero({
   crumbsLd = true,
   eyebrow,
   title,
+  answer,
   sub,
   facts,
   actions = [],
@@ -80,6 +87,7 @@ export default function PageHero({
         <div className="sx-hero-text" lang={lang}>
           {eyebrow && <p className="sx-eyebrow">{eyebrow}</p>}
           <h1 className="sx-h1">{title}</h1>
+          {answer && <AnswerFirst locale={locale} {...answer} />}
           {sub && <p className="sx-sub">{sub}</p>}
           {facts && facts.length > 0 && <Facts items={facts} locale={locale} />}
           {actions.length > 0 && <Actions items={actions} />}

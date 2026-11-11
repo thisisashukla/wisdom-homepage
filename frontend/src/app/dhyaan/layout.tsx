@@ -5,7 +5,7 @@ import './home.css'
 import './ui.css'
 import { DhFooter, DhNav } from './_components/Chrome'
 import Reveal from './_components/home/Reveal'
-import { DHYAAN_URL, ICON, NAME, OG_IMAGE, ONE_LINER } from './_lib/site'
+import { APPLE_ICON, DHYAAN_URL, ICON, NAME, OG_IMAGE, ONE_LINER } from './_lib/site'
 
 // Newsreader stands in for New York, the serif the iOS app uses.
 const serif = Newsreader({ subsets: ['latin'], axes: ['opsz'], style: ['normal', 'italic'], display: 'swap', variable: '--dh-display' })
@@ -23,8 +23,11 @@ export const metadata: Metadata = {
   alternates: { canonical: DHYAAN_URL },
   openGraph: { siteName: NAME, type: 'website', locale: 'en_US', url: DHYAAN_URL, images: [{ url: OG_IMAGE, width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', creator: '@thisisashukla', images: [OG_IMAGE] },
-  icons: { icon: ICON, apple: ICON },
+  icons: { icon: { url: ICON, type: 'image/webp' }, apple: APPLE_ICON },
   itunes: null,
+  // No Wisdom web app manifest on the Dhyaan site, so Chrome offers no Wisdom install here.
+  // The root layout links it through metadata (app/manifest.webmanifest/route.ts), so this null removes it.
+  manifest: null,
 }
 
 export const viewport: Viewport = { themeColor: '#0F0B09' }

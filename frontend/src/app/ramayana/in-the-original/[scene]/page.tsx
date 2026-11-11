@@ -9,8 +9,9 @@ import { NEXT_COPY } from '@/components/funnels/ramayana/copy'
 import { KAND_LABEL, SCENES, defaultLamp, getLine, getScene, lampViews, lineView, sceneCitations } from '@/lib/funnels/ramayana/data'
 import { PATHS, gitaHref } from '@/lib/funnels/ramayana/paths'
 import { articleLd, quotationLd, ramayanaMeta } from '@/lib/funnels/ramayana/seo'
-import { lineOriginal } from '@/lib/funnels/ramayana/verse'
+import { lineOriginal, padasDeva, padasIast } from '@/lib/funnels/ramayana/verse'
 import { slugify } from '@/lib/quotes-shared'
+import { SCENE_ANSWERS } from './answers'
 
 type Params = { scene: string }
 
@@ -36,7 +37,11 @@ export default function ScenePage({ params }: { params: Params }) {
   const lamps = lampViews(s, 'en')
   const firstLine = [...(s.lamps.valmiki.lines ?? []), ...(s.lamps.tulsidas.lines ?? [])][0]
   const quoted = firstLine ? getLine(firstLine) : null
-  const hero = quoted ? lineView(quoted, 'en') : null
+  // Answer-first block under the H1 (./answers.ts). Its source line is not repeated as the hero verse.
+  const answer = SCENE_ANSWERS[s.slug]
+  const answerLine = answer ? lineView(getLine(answer.line), 'en') : null
+  const heroKey = answer?.heroLine ?? (answer && firstLine === answer.line ? undefined : firstLine)
+  const hero = heroKey ? lineView(getLine(heroKey), 'en') : null
 
   return (
     <main>
@@ -64,6 +69,20 @@ export default function ScenePage({ params }: { params: Params }) {
         ]}
         eyebrow={`${s.title.en}, ${KAND_LABEL[s.kand].en}`}
         title={s.question.en}
+        answer={
+          answer && answerLine
+            ? {
+                question: answer.question,
+                answer: answer.answer,
+                source: {
+                  text: padasDeva(answerLine.sa).join('\n'),
+                  iast: answerLine.iast ? padasIast(answerLine.iast).join('\n') : undefined,
+                  ref: answerLine.ref,
+                  lang: answerLine.lang,
+                },
+              }
+            : undefined
+        }
         facts={[s.verdict.en]}
         actions={[{ href: '#three-lamps', label: 'See the three versions', location: 'hero_lamps' }]}
         verse={hero ? { ...lineOriginal(hero), label: <Speaker line={hero} locale="en" />, source: hero.ref } : undefined}

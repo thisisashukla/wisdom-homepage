@@ -5,15 +5,22 @@
 
 import { VerseCard, VerseList } from '@/components/site'
 import type { Locale } from '@/lib/locale'
-import { anchorId, unitVerse, type HcUnit } from '@/lib/funnels/hanuman-chalisa'
+import { anchorId, nb, scriptLines, unitVerse, type HcUnit } from '@/lib/funnels/hanuman-chalisa'
 
 const T = {
   en: { meaning: 'Meaning', words: 'Word by word and where it happens' },
   hi: { meaning: 'अर्थ', words: 'शब्दार्थ (अंग्रेज़ी में)' },
 } as const
 
-/** All 43 units in order. Each meaning opens on tap (Line Opened, via MeaningTracker); the mala follows the line in view. */
-export function FullText({ units, locale, withLinks = true }: { units: HcUnit[]; locale: Locale; withLinks?: boolean }) {
+/** A unit's VerseCard props, in Devanagari or (script) in Telugu, Gujarati or Kannada letters. */
+const verseFor = (u: HcUnit, script?: 'te' | 'gu' | 'kn') =>
+  script ? { original: scriptLines(script, u.id).map(nb), iast: u.iast.map(nb), lang: script } : unitVerse(u)
+
+/**
+ * All 43 units in order. Each meaning opens on tap (Line Opened, via MeaningTracker); the mala follows the line in view.
+ * `script` sets the lines in Telugu, Gujarati or Kannada letters instead of Devanagari (English letters stay on the switch).
+ */
+export function FullText({ units, locale, withLinks = true, script }: { units: HcUnit[]; locale: Locale; withLinks?: boolean; script?: 'te' | 'gu' | 'kn' }) {
   const t = T[locale]
   return (
     <VerseList className="hc-text">
@@ -27,7 +34,7 @@ export function FullText({ units, locale, withLinks = true }: { units: HcUnit[];
           align="left"
           locale={locale}
           label={<span lang={locale}>{u.label[locale]}</span>}
-          {...unitVerse(u)}
+          {...verseFor(u, script)}
         >
           <details className="hc-mean" data-hc-line={u.id}>
             <summary lang={locale}>{t.meaning}</summary>

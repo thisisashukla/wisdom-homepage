@@ -1,1012 +1,309 @@
 import type { Metadata } from 'next'
-import BlogTracker from '@/components/BlogTracker'
-import FeedbackWidget from '@/components/FeedbackWidget'
-import ShlokaCard from '@/components/gita/ShlokaCard'
-import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-
+import PageTracker from '@/components/BlogTracker'
 import SiteFooter from '@/components/SiteFooter'
+import { Faq, JsonLd, LinkCards, NextStep, PageHero, Section, VerseCard, VersePair } from '@/components/site'
+import { CURIOUS_CONCEPTS, CURIOUS_NEXT, CURIOUS_START, HUB_PATH, curiousArticleLd, curiousCards } from '@/lib/curious'
+import { gitaLines, verseProps } from '@/lib/gitaLines'
+import { pageMeta } from '@/lib/seo'
+
+const PATH = '/blogs/bhagavad-gita-vs-stoicism'
+const TITLE = 'Bhagavad Gita vs Stoicism: Five Verses Beside Epictetus, Marcus Aurelius and Seneca'
+const DESCRIPTION =
+  'Krishna and the Stoics agree on what is yours to do and differ on why. Gita 2.47, 2.14, 2.56, 6.5 and 3.35 beside Epictetus, Marcus Aurelius and Seneca, and an honest account of where they part.'
+
 export const metadata: Metadata = {
-  title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
-  description: "Marcus Aurelius and Krishna never met, yet reached strikingly similar conclusions on action, equanimity and duty. 9 side-by-side teachings — where Stoicism and the Gita agree, and where they part ways.",
-  keywords: "bhagavad gita vs stoicism, bhagavad gita stoicism comparison, stoicism and hinduism, marcus aurelius bhagavad gita, gita and stoic philosophy, stoicism karma yoga, epictetus bhagavad gita, meditations marcus aurelius gita, stoicism detachment results",
-  openGraph: {
-    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
-    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and where Stoicism and the Gita part ways.",
-    type: 'article',
-    url: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
-    siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@sansearchapp',
-    creator: '@thisisashukla',
-    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
-    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and where Stoicism and the Gita part ways.",
-    images: ['https://wisdomquotes.in/og-image.webp'],
-  },
-  alternates: {
-    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
-    languages: {
-      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
-      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
-      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
-    },
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
-  },
+  ...pageMeta({ title: TITLE, description: DESCRIPTION, path: PATH }),
+  keywords:
+    'bhagavad gita vs stoicism, stoicism and the gita, marcus aurelius and krishna, nishkama karma vs stoicism, epictetus bhagavad gita, seneca bhagavad gita, dichotomy of control gita 2.47, sthitaprajna stoic sage',
 }
 
-const pageCSS = `
+const LONG_EPICTETUS = 'https://www.gutenberg.org/ebooks/10661'
+const LONG_DISCOURSES_2_19 = 'https://en.wikisource.org/wiki/The_Discourses_of_Epictetus;_with_the_Encheiridion_and_Fragments/Book_2/Chapter_19'
+const LONG_MARCUS = 'https://www.gutenberg.org/ebooks/15877'
+const GUMMERE_113 = 'https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_113'
 
-        :root {
-            --maroon: #3d0c0c;
-            --maroon-mid: #5c1a1a;
-            --gold: #c8881e;
-            --gold-light: #f5c96a;
-            --gold-pale: #fdf3dc;
-            --gold-border: #e8c97a;
-            --gold-dim: rgba(200,136,30,0.15);
-            --text: #f5e8cc;
-            --text-dim: rgba(245,232,204,0.65);
-            --text-dimmer: rgba(245,232,204,0.35);
-            --muted-2: rgba(245,232,204,0.35);
-            --border: rgba(200,136,30,0.2);
-            --bg: #120505;
-            --bg-warm: #190707;
-            --bg-alt: #0f0404;
-            --bg-card: rgba(255,255,255,0.04);
-            --bg-card-hover: rgba(255,255,255,0.07);
-            --max: 780px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
-            font-size: 16px;
-        }
-
-        /* ── BREADCRUMB ── */
-        .breadcrumb {
-            background: var(--bg-alt);
-            border-bottom: 1px solid var(--border);
-        }
-        .breadcrumb-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 10px 28px;
-            font-size: 12px;
-            color: var(--text-dimmer);
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-        .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
-        .breadcrumb-inner a:hover { color: var(--gold-light); }
-        .bc-sep { opacity: 0.4; }
-
-        /* ── ARTICLE HERO ── */
-        .article-hero {
-            background: var(--bg-warm);
-            padding: 64px 28px 56px;
-            border-bottom: 1px solid var(--border);
-            position: relative;
-            overflow: hidden;
-        }
-        .article-hero::before {
-            content: "ज्ञान";
-            position: absolute;
-            right: -10px;
-            bottom: -30px;
-            font-family: "Noto Sans Devanagari", serif;
-            font-size: 220px;
-            color: rgba(200, 136, 30, 0.04);
-            line-height: 1;
-            pointer-events: none;
-            user-select: none;
-        }
-        .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
-        .chapter-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(200, 136, 30, 0.1);
-            border: 1px solid rgba(200, 136, 30, 0.28);
-            color: var(--gold-light);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            padding: 5px 14px;
-            border-radius: 100px;
-            margin-bottom: 20px;
-        }
-        .chapter-badge-dot {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: var(--gold);
-            box-shadow: 0 0 6px var(--gold);
-            flex-shrink: 0;
-        }
-        h1.article-title {
-            font-family: "Playfair Display", Georgia, serif;
-            font-size: clamp(28px, 4vw, 48px);
-            font-weight: 700;
-            color: var(--gold-light);
-            line-height: 1.15;
-            letter-spacing: -0.5px;
-            margin-bottom: 14px;
-        }
-        h1.article-title em { font-style: italic; color: #fff; }
-        .article-subtitle {
-            font-size: 17px;
-            color: var(--text-dim);
-            font-weight: 300;
-            margin-bottom: 32px;
-            line-height: 1.65;
-            max-width: 620px;
-        }
-        .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-        .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
-        .meta-sep { color: var(--border); }
-
-        .lead {
-            font-size: 1.1rem;
-            color: var(--text-dim);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        /* CHAPTER IMAGE */
-        .chapter-image {
-            margin: 32px 0 36px;
-            border-radius: 14px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            box-shadow: 0 4px 32px rgba(0,0,0,0.4);
-        }
-        .chapter-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-        }
-        .chapter-image figcaption {
-            padding: 10px 18px;
-            background: var(--bg-card);
-            font-size: 11.5px;
-            color: var(--text-dimmer);
-            letter-spacing: 0.04em;
-            font-style: italic;
-            border-top: 1px solid var(--border);
-        }
-
-        /* Main Content */
-        .content {
-            max-width: var(--max);
-            margin: 0 auto;
-            padding: 0 2rem 4rem;
-        }
-
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 2.5rem 0 1.5rem 0;
-            color: var(--gold);
-            border-bottom: 2px solid var(--gold-dim);
-            padding-bottom: 0.75rem;
-        }
-
-        h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.5rem 0 1rem 0;
-            color: var(--text);
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            color: var(--text-dim);
-        }
-
-        /* Pull Quote */
-        .pull-quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 2rem;
-            margin: 2.5rem 0;
-            font-size: 1.15rem;
-            color: var(--gold-light);
-            font-style: italic;
-            line-height: 1.8;
-        }
-
-        /* Stoic Quote Card */
-        .stoic-quote {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(200,136,30,0.15);
-            border-left: 4px solid rgba(200,136,30,0.5);
-            border-radius: 6px;
-            padding: 1.5rem 1.5rem 1.5rem 2rem;
-            margin: 1.5rem 0;
-        }
-
-        .stoic-quote .quote-text {
-            color: var(--text-dim);
-            font-size: 1rem;
-            line-height: 1.75;
-            font-style: italic;
-            margin-bottom: 0.6rem;
-        }
-
-        .stoic-quote .quote-source {
-            font-size: 0.8rem;
-            color: var(--text-dimmer);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        /* Similarity Label */
-        .similarity-label {
-            display: inline-block;
-            background: rgba(200,136,30,0.12);
-            border: 1px solid rgba(200,136,30,0.3);
-            color: var(--gold);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            padding: 3px 10px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-
-        /* Highlight Box */
-        .highlight-box {
-            background: var(--gold-dim);
-            border: 1px solid var(--gold-border);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .highlight-box h3 {
-            color: var(--gold);
-            margin-top: 0;
-        }
-
-        .highlight-box p {
-            color: var(--text);
-            margin-bottom: 0.75rem;
-        }
-
-        /* Comparison Table */
-        .comparison-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .comparison-cell {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 1rem 1.25rem;
-        }
-
-        .comparison-cell .cell-label {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-        }
-
-        .comparison-cell p {
-            font-size: 0.92rem;
-            margin-bottom: 0;
-            color: var(--text-dim);
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            max-width: var(--max);
-            margin: 3rem auto;
-            padding: 0 2rem;
-        }
-
-        .faq-item {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 2rem;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-item strong {
-            color: var(--gold-light);
-            font-size: 1.05rem;
-        }
-
-        .faq-item p {
-            margin-top: 0.75rem;
-        }
-
-        /* App CTA */
-        .app-cta {
-          background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
-          border: 1px solid rgba(200, 136, 30, 0.25);
-          border-top: 3px solid var(--gold);
-          border-radius: 20px;
-          padding: 44px 48px 40px;
-          margin: 48px 0 60px;
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-        }
-        .app-cta::before {
-          content: "ज्ञान";
-          position: absolute;
-          top: -14px;
-          right: -8px;
-          font-family: "Noto Sans Devanagari", sans-serif;
-          font-size: 130px;
-          color: rgba(200, 136, 30, 0.05);
-          line-height: 1;
-          pointer-events: none;
-          user-select: none;
-        }
-        .app-cta-eyebrow {
-          display: inline-flex;
-          align-items: center;
-          background: rgba(200, 136, 30, 0.12);
-          border: 1px solid rgba(200, 136, 30, 0.35);
-          color: var(--gold-light);
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          padding: 5px 14px;
-          border-radius: 20px;
-          margin-bottom: 20px;
-        }
-        .app-cta-headline {
-          font-family: "Playfair Display", serif;
-          font-size: clamp(22px, 3vw, 30px);
-          font-weight: 700;
-          color: var(--text);
-          line-height: 1.25;
-          margin-bottom: 14px;
-        }
-        .app-cta-desc {
-          font-size: 15px;
-          color: var(--text-dim);
-          line-height: 1.7;
-          max-width: 480px;
-          margin: 0 auto 22px;
-        }
-        .app-cta-features {
-          display: flex;
-          gap: 6px 18px;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin-bottom: 28px;
-        }
-        .app-cta-features span {
-          font-size: 13px;
-          color: var(--gold-light);
-          opacity: 0.8;
-        }
-        .app-cta-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          background: var(--gold);
-          color: #120505;
-          text-decoration: none;
-          padding: 15px 34px;
-          border-radius: 12px;
-          font-size: 16px;
-          font-weight: 700;
-          letter-spacing: -0.01em;
-          transition: all 0.2s;
-          box-shadow: 0 4px 22px rgba(200, 136, 30, 0.3);
-        }
-        .app-cta-btn:hover {
-          background: var(--gold-light);
-          transform: translateY(-2px);
-          box-shadow: 0 8px 32px rgba(200, 136, 30, 0.5);
-        }
-        .app-cta-sub {
-          font-size: 12px;
-          color: rgba(245, 232, 204, 0.35);
-          margin-top: 14px;
-          letter-spacing: 0.04em;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--bg-warm);
-            border-top: 1px solid var(--border);
-            padding: 3rem 2rem;
-            text-align: center;
-            color: var(--text-dimmer);
-            margin-top: 4rem;
-        }
-
-        footer a {
-            color: var(--gold);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .article-hero { padding: 44px 20px 40px; }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            .comparison-row {
-                grid-template-columns: 1fr;
-            }
-        }
-
-`
-
-const schemas = [
+const FAQ = [
   {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Bhagavad Gita vs Stoicism: 9 Teachings That Are Surprisingly Similar | Wisdom",
-    "description": "Marcus Aurelius and Krishna never met. But they reached similar conclusions about action, equanimity, duty, and the self. 9 parallel teachings and where they differ.",
-    "datePublished": "2026-06-12",
-    "dateModified": "2026-08-01",
-    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" },
-    "author": {
-      "@type": "Person",
-      "name": "Ankur Shukla",
-      "url": "https://wisdomquotes.in/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/thisisashukla/",
-        "https://x.com/thisisashukla"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Wisdom",
-      "url": "https://wisdomquotes.in",
-      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
-    }
+    q: 'Is Stoicism similar to the Bhagavad Gita?',
+    a: 'In its practical advice, yes. Both separate what you do from what follows, both ask for steadiness in pleasure and pain, and both describe an ideal person whom fortune cannot shake. They differ in what stands behind that advice: Stoic reason and providence on one side, the Gita’s undying self, devotion to Krishna and the hope of liberation on the other.',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
-      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" }
-    ]
+    q: 'What is the difference between Stoicism and the Bhagavad Gita?',
+    a: 'Three differences matter most. The Stoic god is reason running through a physical cosmos, while the Gita’s Lord is a person who can be loved. The Gita asks for every action to be offered to that Lord, which Stoicism never asks. And the Stoic goal is a flourishing life in agreement with nature, while the Gita aims at moksha, freedom from the round of birth and death.',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is Stoicism similar to the Bhagavad Gita?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, in several core areas. Both teach that you should focus on what you can control and release what you cannot. Both emphasize virtue over external reward. Both call for equanimity in success and failure. Both argue for the importance of doing one's duty regardless of outcome. The similarities are most likely independent: there is no evidence either tradition influenced the other, and they grew up thousands of miles apart."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the difference between Stoicism and Hinduism?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Gita includes devotion (bhakti) to Bhagavan, which Stoicism lacks entirely. The Gita has a clear metaphysics of atman (individual self) and Brahman (ultimate reality). Stoicism uses the Logos as its cosmic organizing principle, but this is impersonal. The Gita offers personal liberation (moksha). Stoicism aims at eudaimonia (flourishing) within this life. The Gita's goal is to transcend the guna framework; Stoicism's goal is to live in accordance with nature and reason."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Did the Stoics influence the Bhagavad Gita?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Almost certainly not. The Bhagavad Gita is generally dated by mainstream scholarship to somewhere between the 5th century BCE and the 2nd century CE — though this refers to the text as compiled and preserved. Recent researchers like Nilesh Oak (When Did the Mahabharata War Happen?, 2011) use astronomical observations embedded in the Mahabharata to argue the underlying events and oral tradition are far older, potentially dating to around 5561 BCE. Most historians do not accept this dating. Stoicism was founded by Zeno of Citium around 300 BCE in Athens. While there was some contact between Greek and Indian philosophical traditions (especially after Alexander), no direct line of influence connects Stoicism to the Gita. The similarities are most likely independent convergence: different people asking the same questions about human flourishing and reaching similar answers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I follow both Stoicism and the Bhagavad Gita?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In practice, yes. The areas of overlap are substantial: detachment from outcomes, focus on what you control, duty-based ethics, self-examination, and equanimity. Where they differ (personal devotion in the Gita, impersonal Logos in Stoicism; the Gita's metaphysics of atman vs. Stoicism's focus on reason) represent genuinely different frameworks, but many people find value in both without needing to resolve every tension."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What did Marcus Aurelius say that is similar to the Bhagavad Gita?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Marcus Aurelius wrote in his Meditations: 'If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgement about it. And it is in thy power to wipe out this judgement now.' (Meditations 8.47, tr. George Long) It sits close to BG 2.14, where Krishna tells Arjuna to bear the sensations that come and go. He also wrote extensively about performing one's role with full effort regardless of recognition, which echoes svadharma and nishkama karma. His observation that you can always retreat into the self as an inner citadel parallels the Gita's teaching on the atman as the unchanging witness."
-        }
-      }
-    ]
-  }
+    q: 'Is nishkama karma the same as the Stoic dichotomy of control?',
+    a: 'They are close cousins. Epictetus divides things into what is in our power, our judgments and desires, and what is not. Gita 2.47 gives you a right to action and none to its fruit, then adds two warnings: do not let the fruit become your motive, and do not fall back into doing nothing. The Gita draws its line at the deed, Epictetus inside the mind.',
+  },
+  {
+    q: 'Did the Stoics influence the Gita, or the Gita the Stoics?',
+    a: 'There is no evidence of influence in either direction. Stoicism began in Athens around 300 BCE, and scholars usually date the Gita to the last centuries BCE. The likeness is best read as two traditions meeting the same human questions.',
+  },
+  {
+    q: 'What did Marcus Aurelius say that sounds like Krishna?',
+    a: 'In Meditations 4.3 (George Long’s translation) he reminds himself that “things do not touch the soul” and that “all these things, which thou seest, change immediately and will no longer be.” In Gita 2.14 Krishna tells Arjuna that heat and cold, pleasure and pain come and go, and asks him to endure them.',
+  },
+  {
+    q: 'Can you practise both?',
+    a: 'Many readers do. The daily disciplines overlap: attention to what is yours to do, steadiness when results go either way, and honest self-examination. Where the frameworks differ, in God, the self and the goal, it helps to know which one you are leaning on.',
+  },
 ]
 
-export default function GitaVsStoicismPage() {
+export default async function GitaVsStoicismPage() {
+  const v = await gitaLines(['2.48', '2.47', '2.14', '2.56', '6.5', '3.35', '9.27', '2.20'])
+  const ld = curiousArticleLd({
+    path: PATH,
+    headline: 'The Bhagavad Gita and Stoicism, verse by verse',
+    description: DESCRIPTION,
+    datePublished: '2026-06-12',
+    dateModified: '2026-11-11',
+    about: ['Bhagavad Gita', 'Stoicism', 'Epictetus', 'Marcus Aurelius', 'Seneca'],
+    citation: [
+      { name: 'A Selection from the Discourses of Epictetus with the Encheiridion', author: 'George Long (tr.)', url: LONG_EPICTETUS },
+      { name: 'Thoughts of Marcus Aurelius Antoninus', author: 'George Long (tr.)', datePublished: '1862', url: LONG_MARCUS },
+      { name: 'Moral Letters to Lucilius', author: 'Richard Mott Gummere (tr.)', datePublished: '1925', url: GUMMERE_113 },
+      { name: 'Sapiens and Sthitaprajna: A Comparative Study in Seneca’s Stoicism and the Bhagavadgita', author: 'Ashwini Mokashi', datePublished: '2019' },
+      { name: 'Stoicism, Stanford Encyclopedia of Philosophy', author: 'Dirk Baltzly', url: 'https://plato.stanford.edu/entries/stoicism/' },
+    ],
+  })
+
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: pageCSS }} />
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
-
-    <div className="breadcrumb">
-      <div className="breadcrumb-inner">
-        <a href="/">Wisdom</a>
-        <span className="bc-sep">/</span>
-        <a href="/blogs">Blog</a>
-        <span className="bc-sep">/</span>
-        Bhagavad Gita vs Stoicism
-      </div>
-    </div>
-
-    <div className="article-hero">
-      <div className="article-hero-inner">
-        <div className="chapter-badge">
-          <div className="chapter-badge-dot"></div>
-          Comparative Philosophy
-          <div className="chapter-badge-dot"></div>
-        </div>
-        <h1 className="article-title">
-          Bhagavad Gita and Stoicism:<br />
-          <em>The Two Philosophies That Keep Finding Each Other</em>
-        </h1>
-        <p className="article-subtitle">
-          Written thousands of miles apart, both have a lot to say about a restless mind, an uncertain outcome, and a role you did not choose.
-        </p>
-        <div className="article-meta">
-          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
-          <span className="meta-sep">·</span>
-          <span className="meta-item">Comparative Philosophy</span>
-          <span className="meta-sep">·</span>
-          <span className="meta-item">~8 min read</span>
-          <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Gita references use Wisdom translation, edited by Ankur Shukla. Stoic quotes from public domain translations. AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
-        </div>
-      </div>
-    </div>
-
-    <div className="content">
-      {/* ── Above-the-fold comparison table + BG 2.47 hand-off. GSC says this
-           page pulls comparison-intent search — users want the side-by-side
-           right away, not 8 minutes of prose to get to it. The 2.47 CTA below
-           gives the single most useful onward click ("nishkama karma vs
-           Stoic dichotomy of control") to search readers who bounce fast. ── */}
-      <section
-        aria-label="Bhagavad Gita vs Stoicism — quick comparison"
-        style={{
-          margin: '28px 0 32px',
-          padding: '20px 22px 22px',
-          background: 'linear-gradient(160deg, rgba(200,136,30,0.08) 0%, rgba(200,136,30,0.03) 100%)',
-          border: '1px solid rgba(200,136,30,0.28)',
-          borderRadius: '14px',
-        }}
-      >
-        <div style={{
-          fontSize: 11,
-          letterSpacing: '0.14em',
-          textTransform: 'uppercase',
-          fontWeight: 700,
-          color: 'var(--gold, #c8881e)',
-          marginBottom: 10,
-        }}>
-          The comparison, at a glance
-        </div>
-        <table style={{
-          width: '100%',
-          borderCollapse: 'collapse',
-          fontSize: '14px',
-          lineHeight: 1.55,
-          color: 'var(--text-dim)',
-        }}>
-          <thead>
-            <tr>
-              <th style={{ textAlign: 'left', padding: '8px 10px 10px 0', fontWeight: 700, color: 'var(--gold-light)', width: '28%', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Question</th>
-              <th style={{ textAlign: 'left', padding: '8px 10px', fontWeight: 700, color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Stoicism</th>
-              <th style={{ textAlign: 'left', padding: '8px 0 10px 10px', fontWeight: 700, color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Bhagavad Gita</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is up to me?</td>
-              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Judgments, desires, actions — the dichotomy of control (Epictetus).</td>
-              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>The action itself, never the fruit — <em>nishkama karma</em> (BG 2.47).</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is the good?</td>
-              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Virtue alone. Externals are preferred indifferents.</td>
-              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Dharma</em> lived without craving results.</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What holds it together?</td>
-              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Impersonal Logos — cosmic reason.</td>
-              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Bhagavan</em> — personal, and relatable through <em>bhakti</em>.</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is the self?</td>
-              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Rational faculty (<em>hēgemonikon</em>) — physical, and dispersed at or after death.</td>
-              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Atman</em> — unborn, undying, witness (BG 2.20).</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px 10px 10px 0', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>The goal?</td>
-              <td style={{ padding: '10px', verticalAlign: 'top' }}><em>Eudaimonia</em> — flourishing, in this life, through reason.</td>
-              <td style={{ padding: '10px 0 10px 10px', verticalAlign: 'top' }}><em>Moksha</em> — liberation, beyond the guna framework.</td>
-            </tr>
-          </tbody>
-        </table>
-        <a
-          href="/gita/chapter/2/verse/47"
-          data-mp-location="stoic_blog_hero_cta_2_47"
-          data-mp-event="Stoic Blog 2.47 Hand-off Clicked"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '14px',
-            marginTop: '22px',
-            padding: '14px 18px',
-            background: 'rgba(200,136,30,0.12)',
-            border: '1px solid rgba(200,136,30,0.4)',
-            borderLeft: '4px solid var(--gold, #c8881e)',
-            borderRadius: '0 10px 10px 0',
-            textDecoration: 'none',
-            color: 'var(--text)',
-          }}
-        >
-          <div>
-            <div style={{ fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 700, color: 'var(--gold, #c8881e)', marginBottom: 4 }}>The one verse to read next</div>
-            <div style={{ fontSize: '15.5px', fontWeight: 700, color: 'var(--gold-light, #f5c96a)', lineHeight: 1.35 }}>
-              BG 2.47 — <em>Nishkama karma</em> vs the Stoic dichotomy of control
-            </div>
-            <div style={{ fontSize: 13, color: 'var(--text-dim)', marginTop: 3 }}>
-              Sanskrit + audio + line-by-line meaning. 2 minutes.
-            </div>
-          </div>
-          <span aria-hidden="true" style={{ fontSize: 22, color: 'var(--gold-light)', flexShrink: 0 }}>→</span>
-        </a>
-      </section>
-
-      <figure className="chapter-image">
-        <img
-          src="/assets/gita-montage.webp"
-          alt="Bhagavad Gita vs Stoicism: parallel teachings on action, equanimity, and the self"
-          width="1200"
-          height="675"
-          loading="eager"
-          fetchPriority="high"
+      <JsonLd data={ld} />
+      <PageTracker pageName="Bhagavad Gita vs Stoicism" />
+      <main lang="en">
+        <PageHero
+          crumbs={[
+            { label: 'Understand the Gita', href: HUB_PATH },
+            { label: 'The Gita and Stoicism', href: PATH },
+          ]}
+          eyebrow="The Gita and the Stoics"
+          title="The Bhagavad Gita and Stoicism, verse by verse"
+          sub="Both teach that your work is yours and its outcome is not, and both picture a person whom pleasure and pain cannot shake. They part on why. The Stoics trust reason and a providential nature; Krishna asks Arjuna to offer his action to God, and points beyond this life to freedom."
+          facts={['Five verse pairs', 'Epictetus, Marcus Aurelius, Seneca', 'Where they meet, where they part']}
+          actions={[
+            { href: '#pairs', label: 'Read the five pairs', location: 'stoicism_hero_pairs' },
+            { href: '#differ', label: 'Where they differ', location: 'stoicism_hero_differ' },
+          ]}
+          verse={{ ...verseProps(v['2.48']), label: 'Bhagavad Gita 2.48' }}
         />
-        <figcaption>Two traditions, one question: how do you act well in a world you cannot control?</figcaption>
-      </figure>
 
-      <p className="lead">
-        Marcus Aurelius almost certainly never heard of Krishna. Yet if you put the Meditations next to the Bhagavad Gita, you keep finding the same advice in different words: how to act under pressure, how to handle what you cannot control, and how to do your duty without being destroyed by it.
-      </p>
+        <Section spacing="tight" width="narrow" track="quick_answer">
+          <div className="sx-prose rv" id="quick-answer">
+            <p>
+              No line of influence runs between them. Stoicism began with Zeno in Athens around 300 BCE; the Gita, set inside the Mahabharata, is
+              usually dated by scholars to the last centuries BCE. The likeness comes from two traditions facing the same question: how to act
+              well when the outcome is out of your hands.
+            </p>
+            <p>
+              Ashwini Mokashi’s comparative study <em>Sapiens and Sthitaprajna</em> (2019) sets Seneca’s sage beside the Gita’s person of steady
+              wisdom and finds a shared core: virtue, sound judgment, and a mind no longer ruled by passion. She also marks the gap. The Gita’s
+              path runs through meditation toward liberation, the Stoic path through reasoning, case by case, toward a good life here. The five
+              pairs below follow both halves of that finding. Oppenheimer, who learned the Gita in Sanskrit, said his teacher Arthur Ryder “felt
+              and thought and talked as a Stoic”; <a href="/oppenheimer-bhagavad-gita" data-mp-location="stoicism_link_oppenheimer">that story is
+              here</a>.
+            </p>
+          </div>
+        </Section>
 
-      <h2>Brief Background</h2>
-      <p>
-        <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stoicism</a> began with Zeno of Citium, who founded a school in Athens around 300 BCE. It was developed by Cleanthes, Chrysippus, and later popularized in Rome by <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus</a> (a former slave) and Marcus Aurelius (an emperor). Stoicism teaches that the good life consists in living according to reason and nature, focusing on what is within your control — what Epictetus called <em>ta eph&apos; hēmin</em> (things up to us) — and accepting everything else with equanimity.
-      </p>
-      <p>
-        The Bhagavad Gita is set within the Mahabharata. Its date is actively debated. Mainstream scholarship places the text&apos;s composition or final compilation between 400 BCE and 200 CE. Nilesh Oak&apos;s <em>When Did the Mahabharata War Happen?</em> (2011) dates the war to about 5561 BCE from astronomical references in the epic; most historians reject this. It records a conversation between the warrior Arjuna and his charioteer Krishna (an avatar of Vishnu) on the eve of a war. The core of Krishna&apos;s teaching is about the nature of action, duty, self, and liberation. 
-      </p>
-      <p>
-        The two traditions almost certainly did not influence each other. What they share, they arrived at independently.
-      </p>
+        <Section id="pairs" tone="band" track="pairs" title="Five pairs" intro="Each Gita verse is shown with its Sanskrit. Each Stoic line is in a public-domain translation, with its exact place in the text.">
+          <VersePair
+            id="control"
+            title="What is yours: Gita 2.47 and Epictetus on what is in our power"
+            verse={verseProps(v['2.47'])}
+            other={{
+              text: '“Of things some are in our power, and others are not. In our power are opinion, movement towards a thing, desire, aversion, turning from a thing; and in a word, whatever are our acts. Not in our power are the body, property, reputation, offices (magisterial power), and in a word, whatever are not our own acts.”',
+              who: 'Epictetus',
+              work: 'Enchiridion 1',
+              translator: 'tr. George Long',
+              href: LONG_EPICTETUS,
+              location: 'stoicism_source_enchiridion_1',
+            }}
+            meet="Both draw a line through every situation. On one side stands what you do; on the other, what follows from it. Peace begins with knowing which side a thing is on."
+            part={
+              <>
+                <p>
+                  Epictetus draws the line inside the mind: judgments and desires are ours, and even the body is not. Krishna draws it at the
+                  deed: action is your right, its fruit never.
+                </p>
+                <p>
+                  Then he adds two warnings Epictetus has no need of. Do not let the fruit become your reason for acting, and do not slide into
+                  doing nothing. More on this in{' '}
+                  <a href="/blogs/nishkama-karma-bhagavad-gita" data-mp-location="stoicism_link_nishkama">nishkama karma</a>.
+                </p>
+              </>
+            }
+          />
+          <VersePair
+            id="impressions"
+            title="What comes and goes: Gita 2.14 and Marcus Aurelius on things that change"
+            verse={verseProps(v['2.14'])}
+            other={{
+              text: '“One is that things do not touch the soul, for they are external and remain immovable; but our perturbations come only from the opinion which is within. The other is that all these things, which thou seest, change immediately and will no longer be … The universe is transformation: life is opinion.”',
+              who: 'Marcus Aurelius',
+              work: 'Meditations 4.3',
+              translator: 'tr. George Long',
+              href: LONG_MARCUS,
+              location: 'stoicism_source_meditations_4_3',
+            }}
+            meet="Heat and cold, pleasure and pain arrive and leave. Both texts ask you to watch that coming and going clearly, and to stay where you are."
+            part="Marcus finds the trouble in opinion: change the judgment and the disturbance goes. Krishna names the contacts plainly and asks Arjuna to bear them (titikṣasva). In the next verse he promises that the one they cannot shake is fit for amṛtatva, the deathless state. No Stoic makes that promise."
+          />
+          <VersePair
+            id="steady"
+            title="The steady one: Gita 2.56 and the Stoic sage"
+            verse={verseProps(v['2.56'])}
+            other={{
+              text: '“Show me a man who is sick and happy, in danger and happy, dying and happy, in exile and happy, in disgrace and happy. Show him: I desire, by the gods, to see a Stoic.”',
+              who: 'Epictetus',
+              work: 'Discourses 2.19',
+              translator: 'tr. George Long',
+              href: LONG_DISCOURSES_2_19,
+              location: 'stoicism_source_discourses_2_19',
+            }}
+            meet="Each tradition sketches a person whom fortune cannot move. The Gita calls such a person sthitaprajña, steady in wisdom: undisturbed in sorrow, without craving in joy, free of attachment, fear and anger."
+            part={
+              <>
+                <p>
+                  Epictetus admits he has never met a finished Stoic and asks only for someone on the way. The Gita speaks of the sthitaprajña
+                  as a real possibility and roots that steadiness in contentment in the self (2.55).
+                </p>
+                <p>
+                  The Stoic sage still has feelings of a good kind, such as joy and caution, in place of passions. The Gita’s full
+                  portrait runs from 2.55 to 2.72; we read it in{' '}
+                  <a href="/blogs/sthitaprajna-bhagavad-gita" data-mp-location="stoicism_link_sthitaprajna">sthitaprajna</a>.
+                </p>
+              </>
+            }
+          />
+          <VersePair
+            id="self-mastery"
+            title="Lifting yourself: Gita 6.5 and Seneca on self-command"
+            verse={verseProps(v['6.5'])}
+            other={{
+              text: '“[Alexander] had made it his aim to win control over everything except his emotions … Self-Command is the greatest command of all.”',
+              who: 'Seneca',
+              work: 'Moral Letters 113.29 to 31',
+              translator: 'tr. Richard M. Gummere',
+              href: GUMMERE_113,
+              location: 'stoicism_source_seneca_113',
+            }}
+            meet="Both picture a person as their own friend or their own enemy, and rule over oneself as the kingdom that counts."
+            part="For Seneca, self-command is reason governing the passions. In 6.5 the word ātman works on two levels, and the old commentators read it with care: Shankara speaks of lifting oneself out of the sea of worldly existence, and Ramanuja reads the self that lifts as a mind no longer tied to the objects of the senses. The aim reaches past good self-government, toward freedom from that sea."
+          />
+          <VersePair
+            id="role"
+            title="Your own part: Gita 3.35 and Epictetus on the actor"
+            verse={verseProps(v['3.35'])}
+            other={{
+              text: '“Remember that thou art an actor in a play, of such a kind as the teacher (author) may choose; if short, of a short one; if long, of a long one: if he wishes you to act the part of a poor man, see that you act the part naturally; if the part of a lame man, of a magistrate, of a private person, (do the same). For this is your duty, to act well the part that is given to you; but to select the part, belongs to another.”',
+              who: 'Epictetus',
+              work: 'Enchiridion 17',
+              translator: 'tr. George Long',
+              href: LONG_EPICTETUS,
+              location: 'stoicism_source_enchiridion_17',
+            }}
+            meet="Neither asks you to pick the grandest role. Both ask you to play your own one well."
+            part={
+              <>
+                <p>
+                  For Epictetus the part is handed to you by another, the author of the play. The Gita roots your part in your own nature: 18.47
+                  repeats this verse and adds that work set by one’s own nature brings no fault.
+                </p>
+                <p>
+                  And 3.35 goes further than any Stoic line: better to die in your own dharma, since another’s brings fear. More in{' '}
+                  <a href="/blogs/dharma-meaning-bhagavad-gita" data-mp-location="stoicism_link_dharma">dharma</a>.
+                </p>
+              </>
+            }
+          />
+        </Section>
 
-      <h2>Similarity 1: Control What You Can, Release What You Cannot</h2>
-      <div className="similarity-label">Similarity 1 of 9</div>
+        <Section id="differ" track="differ" title="Where they differ" width="narrow">
+          <div className="sx-prose rv">
+            <h3>What holds the world together</h3>
+            <p>
+              For the Stoics, god is reason running through the cosmos: present everywhere, rational, providential, and as bodily as everything
+              else, a fine fiery breath (<em>pneuma</em>). The Gita speaks of a self in every being that is never born and never dies, and of a
+              Lord who is both the ground of the world and a person Arjuna can love. In chapter 11 Arjuna sees that Lord face to face.
+            </p>
+          </div>
+          <VerseCard {...verseProps(v['2.20'])} label="Bhagavad Gita 2.20" size="compact" toggle rv />
+          <div className="sx-prose rv">
+            <h3>To whom the action is offered</h3>
+            <p>
+              A Stoic acts well because acting well is the only good. Krishna asks for more: whatever you do, eat, offer, give or endure, make it
+              an offering to me. The Gita’s freedom from results rests on devotion, and the teaching it builds to, in 18.66, is a call to
+              take refuge.
+            </p>
+          </div>
+          <VerseCard {...verseProps(v['9.27'])} label="Bhagavad Gita 9.27" size="compact" toggle rv />
+          <div className="sx-prose rv">
+            <h3>Where the road ends</h3>
+            <p>
+              The Stoic end is <em>eudaimonia</em>, a life that goes well, lived in agreement with nature. The Gita aims at{' '}
+              <em lang="sa-Latn">mokṣa</em>, release from the round of birth and death. Mokashi’s study names this as the deepest gap: much of
+              the same advice, set toward different ends.
+            </p>
+            <h3>What the self is</h3>
+            <p>
+              Stoic souls were made of that same fine breath, a body among bodies. The Gita’s self, in 2.20 above, is unborn, eternal and
+              untouched when the body is struck down. On why “soul” is a loose fit for that self, see{' '}
+              <a href="/blogs/atman-not-soul-bhagavad-gita" data-mp-location="stoicism_link_atman">ātman</a>.
+            </p>
+          </div>
+        </Section>
 
-      <p>
-        Epictetus opens the Enchiridion with a distinction: some things are in our power, and some are not. His whole practice is built on it.
-      </p>
+        <Section tone="band" track="faq" title="Questions people ask" width="narrow">
+          <Faq items={FAQ} />
+        </Section>
 
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Some things are in our control and others not. Things in our control are opinion, pursuit, desire, aversion, and, in a word, whatever are our own actions. Things not in our control are body, property, reputation, command, and, in one word, whatever are not our own actions.&rdquo;</div>
-        <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, I</a> (tr. Carter)</div>
-      </div>
+        <Section track="next_step" width="narrow">
+          <div className="rv">
+            <NextStep locale="en" pageKey="stoicism" placement="end" copy={CURIOUS_NEXT} />
+          </div>
+        </Section>
 
-            <ShlokaCard
-        verseRef="Bhagavad Gita 2.47"
-        sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।"
-        iast="karmaṇyevādhikāraste mā phaleṣu kadācana"
-        meaningLabel="Translation"
-        meaning="You have a right to perform your prescribed duties, but never to the fruits of your actions."
-        insightLabel="The Parallel"
-        insight="The Gita lines up closely with Epictetus's dichotomy. The Sanskrit reads karmaṇy evādhikāras te mā phaleṣu kadācana: karmaṇi (in action), eva (only), adhikāraḥ (your right), mā phaleṣu kadācana (never in the fruits). Action (karma) is yours and the fruit (phala) is out of your hands. The second half of the verse adds mā te saṅgo &apos;stv akarmaṇi: do not become attached to inaction either. Epictetus draws a line between internals and externals; the Gita draws the same line and then warns you against using it as an excuse to stop acting. Both end with the same instruction: put in full effort and let go of the result."
-        mpLocation="stoic_blog_shloka_read_2_47"
-      />
+        <Section tone="band" track="keep_reading" title="Keep reading">
+          <LinkCards items={[...curiousCards(CURIOUS_START, 'stoicism_related', 'stoicism'), ...curiousCards(CURIOUS_CONCEPTS, 'stoicism_related').filter((c) => /karma|sthitaprajna|dharma|atman/.test(c.href)).slice(0, 4)]} />
+        </Section>
 
-      <h2>Similarity 2: Virtue Is the Only True Good</h2>
-      <div className="similarity-label">Similarity 2 of 9</div>
-
-      <p>
-        Stoicism holds that external goods, wealth, reputation, health, success, are &quot;preferred indifferents&quot;: worth choosing when available, but outside the good. For the Stoics the only good is virtue: wisdom, justice, courage, moderation.
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Never esteem anything as of advantage to you that will make you break your word or lose your self-respect.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, III.7</a></div>
-      </div>
-
-      <p>
-        The Gita&apos;s <a href="https://www.wisdomlib.org/concept/nishkama-karma" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>nishkama karma</a>, action without desire for the fruit, makes the same structural claim. You act because the action is right and is your dharma, and the external reward is incidental.
-      </p>
-
-      <div className="comparison-row">
-        <div className="comparison-cell">
-          <div className="cell-label">Stoicism</div>
-          <p>Virtue is the only true good. External outcomes are preferred indifferents. Moral integrity cannot be traded for any external gain.</p>
-        </div>
-        <div className="comparison-cell">
-          <div className="cell-label">Bhagavad Gita</div>
-          <p>Act from dharma, not from desire for reward. Nishkama karma: action without attachment to its fruits. The quality of action is what you own.</p>
-        </div>
-      </div>
-
-      <h2>Similarity 3: The Present Moment</h2>
-      <div className="similarity-label">Similarity 3 of 9</div>
-
-      <p>
-        Marcus Aurelius returns again and again to the present moment as the only real location of life and action. He writes about how much suffering comes from projecting into the past (regret) or the future (anxiety).
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Wipe out the imagination. Stop the pulling of the strings. Confine thyself to the present.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.29</a> (tr. Long)</div>
-      </div>
-
-      <p>
-        The Gita&apos;s karma yoga makes a similar point: act fully now, without dwelling on past results or anticipating future ones. In practice, <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_2_47">BG 2.47</a> puts your attention on the present action, since the fruit belongs to the future.
-      </p>
-
-      <h2>Similarity 4: The Role You Are Given</h2>
-      <div className="similarity-label">Similarity 4 of 9</div>
-
-      <p>
-        Epictetus, who was born a slave, developed a specific teaching about the roles you find yourself in. You don&apos;t always choose the role. You choose how well you play it.
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Remember that you are an actor in a drama, of such a kind as the author pleases to make it. If short, of a short one; if long, of a long one. If it is his pleasure you should act a poor man, a cripple, a governor, or a private person, see that you act it naturally. For this is your business, to act well the character assigned you; to choose it is another&apos;s.&rdquo;</div>
-        <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, XVII</a> (tr. Carter)</div>
-      </div>
-
-            <ShlokaCard
-        verseRef="Bhagavad Gita 3.35"
-        mpLocation="stoic_blog_shloka_read_3_35"
-        sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।"
-        iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt"
-        meaningLabel="Translation (BG 3.35)"
-        meaning="Better is one's own dharma, though imperfectly performed, than the dharma of another well performed."
-        insightLabel="The Parallel"
-        insight="Svadharma — your own duty in your own circumstances — maps closely to Epictetus's act the part given to you. The Gita states this twice, in slightly different registers. BG 3.35 says your own imperfect duty is better than another's well-executed one — and adds that svadharme nidhanam sreyah: dying in your own duty is preferable to following another's path. BG 18.47 repeats the first line but adds svabhava-niyatam karma: action fixed by your own nature. So the Gita ties duty to a person's nature as well as their social role. Both traditions say that you may not have chosen the role, and your task is to do it well."
-      />
-
-      <h2>Similarity 5: Equanimity in Success and Failure</h2>
-      <div className="similarity-label">Similarity 5 of 9</div>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Just that you do the right thing. The rest doesn&apos;t matter.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.2</a> (tr. Hays)</div>
-      </div>
-
-            <ShlokaCard
-        verseRef="Bhagavad Gita 2.38"
-        mpLocation="stoic_blog_shloka_read_2_38"
-        sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
-        iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
-        meaningLabel="Translation"
-        meaning="Be equal in pleasure and pain, in gain and loss, in victory and defeat. Then enter the battle. You will not incur papa."
-        insightLabel="The Parallel"
-        insight="Both Marcus and Krishna ask for steadiness regardless of outcome. The Sanskrit lists the pairs — sukha-duḥkhe (pleasure and pain), lābhālābhau (gain and loss), jayājayau (victory and defeat) — and asks you to treat each pair alike (same kṛtvā). The nearest Stoic idea is apatheia, freedom from the passions that disturb judgment, which the Stoic sage keeps whether fortune is good or bad. Neither tradition asks you to stop caring. Both ask you to put your care into the action rather than into what it produces."
-        essence="Treat pleasure and pain, gain and loss, victory and defeat alike, then fight."
-      />
-
-      <h2>Similarity 6: The Inner Citadel</h2>
-      <div className="similarity-label">Similarity 6 of 9</div>
-
-      <p>
-        Marcus Aurelius had a concept he returned to frequently: the inner citadel, the idea that there is a place within yourself that external circumstances cannot reach. He wrote:
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Nowhere can man find a quieter or more untroubled retreat than in his own soul.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, IV.3</a> (tr. Farquharson)</div>
-      </div>
-
-      <p>
-        The Gita&apos;s teaching on the atman is the metaphysical version of the same insight. The atman is the unchanging witness self, the part of you that watches the gunas rise and fall, that is not destroyed by circumstances, that cannot be cut by weapons or burned by fire (BG 2.23). This is close to the &quot;retreating into yourself&quot; that Marcus describes, with a theory of the self underneath it.
-      </p>
-
-      <h2>Similarity 7: Memento Mori and the Eternal Self</h2>
-      <div className="similarity-label">Similarity 7 of 9</div>
-
-      <p>
-        Stoicism practices memento mori, the active contemplation of death, as a way to clarify what matters and to stop treating trivial things as catastrophic. The fear of death, for the Stoics, is the root of most irrational behavior.
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Think of yourself as dead. You have lived your life. Now take what&apos;s left and live it properly.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.56</a> (tr. Hays)</div>
-      </div>
-
-            <ShlokaCard
-        verseRef="Bhagavad Gita 2.19"
-        mpLocation="stoic_blog_shloka_read_2_19"
-        sanskrit="य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥"
-        iast="ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||"
-        meaningLabel="Translation"
-        meaning="Those who think the atman kills or is killed are mistaken. The atman neither kills nor is killed."
-        insightLabel="The Parallel and the Difference"
-        insight="Both traditions conclude that the fear of death should not drive your choices, by different routes. The Gita grounds this in the atman. BG 2.20 uses four terms for it: aja (unborn), nitya (eternal), śāśvata (everlasting) and purāṇa (ancient), and 2.21 adds avyaya (imperishable). Stoicism treats death as an indifferent, neither good nor evil, since only vice is evil. Marcus&apos;s memento mori is a discipline for the living; the Gita&apos;s teaching is a claim about what the self is. They agree on what to do and disagree on why."
-      />
-
-      <h2>Similarity 8: Service, Duty, and the Common Good</h2>
-      <div className="similarity-label">Similarity 8 of 9</div>
-
-      <p>
-        Stoicism teaches cosmopolitanism: you are a citizen of the world as well as of your city or country. Marcus wrote about this frequently as a Roman emperor who could have defined his obligations very narrowly but chose to frame them in terms of humanity.
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;That which is not good for the swarm, neither is it good for the bee.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.54</a> (tr. Long)</div>
-      </div>
-
-      <p>
-        The Gita&apos;s karma yoga frames selfless action as yajna, an offering. In BG 3.9, Krishna says actions performed as offerings are liberating; actions performed only for personal gain create bondage. The frame is different: the Gita&apos;s is explicitly religious, the Stoic&apos;s is cosmopolitan and rational. But both arrive at the same ethical instruction: act for the good of the whole, not only for personal benefit.
-      </p>
-
-      <h2>Similarity 9: The Examined Life</h2>
-      <div className="similarity-label">Similarity 9 of 9</div>
-
-      <p>
-        Stoicism and the Gita both treat unexamined emotion and unreflective action as the source of most human suffering. Marcus Aurelius kept a private journal (the Meditations) to examine his own motives, reactions, and failures with unsparing honesty. He was an emperor writing to himself about how he was falling short.
-      </p>
-
-      <div className="stoic-quote">
-        <div className="quote-text">&ldquo;When you wake up in the morning, tell yourself: the people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous and surly. They are like this because they can&apos;t tell good from evil. But I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own — not of the same blood or birth, but the same mind, and possessing a share of the divine.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, II.1</a> (tr. Hays)</div>
-      </div>
-
-      <p>
-        The Gita requires the same self-examination. Krishna repeatedly asks Arjuna to look at his own motives: is he refusing to fight from moral scruple, or from attachment and fear? Diagnosing delusion (moha) takes the same willingness to look honestly at what is driving you. Both traditions distrust the story you tell yourself about your own goodness.
-      </p>
-
-      <h2>Where They Differ</h2>
-      <p>
-        The differences are as real as the parallels.
-      </p>
-
-      <div className="highlight-box">
-        <h3>Differences</h3>
-        <p>
-          The Gita has bhakti and Stoicism has none. Krishna&apos;s last instruction, in 18.66, is surrender to him. There is Bhagavan, a personal relationship, and kripa that descends to the devotee. Stoicism&apos;s Logos is impersonal. You align with it through reason. There is no divine relationship, no surrender, no grace.
-        </p>
-        <p>
-          The Gita has a full metaphysics of atman and Brahman: the individual self and the cosmic self are ultimately identical. Stoicism has nothing like it. For the Stoics the soul was physical, and at most it lasted until it was reabsorbed into the cosmos. They had no concept of moksha, liberation from the cycle of birth and death.
-        </p>
-        <p>
-          The Gita offers multiple paths, karma yoga, jnana yoga, bhakti yoga, dhyana yoga, for different types of practitioners. Stoicism is essentially one path: reason applied consistently to the dichotomy of control. This makes Stoicism simpler and in some ways more portable. The Gita is more expansive.
-        </p>
-        <p>
-          The Gita is more relational and more cosmic. The relationship between Arjuna and Krishna, a human and the divine, is at the center of the text. Stoicism is more solitary: Marcus writing alone in his tent, Epictetus reasoning through his circumstances alone.
-        </p>
-      </div>
-
-      <h2>What the Comparison Shows</h2>
-      <p>
-        Side by side, the two traditions keep their differences. The Gita is richer in metaphysics and in devotion. Stoicism is more austere and more purely philosophical. Both are worth reading on their own terms.
-      </p>
-      <p>
-        When two cultures far apart ask &quot;how should a person act when the outcome is uncertain and the stakes are high?&quot; and reach similar answers, some parts of those answers may hold beyond either culture.
-      </p>
-
-      <p className="pull-quote">
-        Both Krishna and Marcus place your responsibility in the action you take and leave the outcome to forces outside you.
-      </p>
-
-      <p>
-        If you have found Stoicism useful and have not read the Gita, the second is likely to reward you. If you have read the Gita and find the Meditations unfamiliar, the overlay is closer than you might expect. The disagreements, where they exist, are worth sitting with too.
-      </p>
-
-      <div className="highlight-box" style={{marginTop: '2rem'}}>
-        <h3>Primary Sources and Further Reading</h3>
-        <p>
-          <strong>Stoic texts:</strong> The <a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Meditations of Marcus Aurelius</a> (tr. George Long, Project Gutenberg) and the <a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Enchiridion of Epictetus</a> (tr. Elizabeth Carter, MIT Classics Archive) are available free online. For scholarly context on Stoic ethics and the doctrine of indifferents, see the <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stanford Encyclopedia of Philosophy entry on Stoicism</a> (Baltzly, 2023) and the <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>entry on Epictetus</a> (Graver, 2025).
-        </p>
-        <p>
-          <strong>Bhagavad Gita:</strong> Browse the full text verse by verse at <a href="/gita/chapter/2/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>wisdomquotes.in/gita</a>, with Sanskrit, transliteration, and meaning for all 700 shlokas. The key verses discussed in this article: <a href="/gita/chapter/2/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 2.47</a> (nishkama karma), <a href="/gita/chapter/2/verse/38" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 2.38</a> (equanimity), <a href="/gita/chapter/2/verse/19" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 2.19–20</a> (the atman), <a href="/gita/chapter/3/verse/35" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 3.35</a> and <a href="/gita/chapter/18/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 18.47</a> (svadharma). For the nishkama karma doctrine in depth, see our <a href="/blogs/nishkama-karma-bhagavad-gita" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>dedicated piece on nishkama karma</a>.
-        </p>
-        <p style={{fontSize: '0.85em', opacity: 0.7, marginTop: '0.75rem'}}>
-          <strong>Note on translations:</strong> Stoic quotes in this article draw on three English translations: George Long (1862, public domain), A.S.L. Farquharson (Oxford, 1944), and Gregory Hays (Modern Library, 2002). Where the translation used differs from the Project Gutenberg (Long) text, it is noted inline. The Gita translations follow the Sanskrit closely; <em>karma</em> (action), <em>phala</em> (fruit/result), <em>dharma</em> (duty/cosmic order), and <em>svadharma</em> (one&apos;s own duty) are used in their original sense throughout.
-        </p>
-      </div>
-    <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: removed a misattributed Marcus Aurelius quote and an atman reference in his translation; corrected the Gita dating, the account of the Stoic soul, the Nilesh Oak dating claim, and the distance between the traditions; corrected the IAST of 2.47 and 2.38, the Stoic parallel to samatva (apatheia, not eudaimonia), the terms in 2.20, the Enchiridion I and XVII and Meditations VI.54 and VII.29 quotations, and raja yoga (dhyana yoga); copy edited.</p>
-    </div>
-      <FeedbackWidget pageType="blog" />
-    <div className="faq-section">
-      <h2>Frequently Asked Questions</h2>
-
-      <div className="faq-item">
-        <strong>Is Stoicism similar to the Bhagavad Gita?</strong>
-        <p>
-          In several core areas, yes. Both teach focusing on what you can control and releasing what you cannot. Both emphasize virtue over external reward. Both call for equanimity in success and failure. Both argue for performing your duty regardless of outcome. The similarities are most likely independent: there is no evidence either tradition influenced the other, and they grew up thousands of miles apart.
-        </p>
-      </div>
-
-      <div className="faq-item">
-        <strong>What is the difference between Stoicism and Hinduism?</strong>
-        <p>
-          The Gita includes devotion (bhakti) to Bhagavan, which Stoicism lacks entirely. The Gita has a complete metaphysics of atman (individual self) and Brahman (cosmic self), and offers liberation (moksha). Stoicism&apos;s goal is eudaimonia (flourishing) within this life, through reason and virtue. Stoicism is impersonal; the Gita is both philosophical and devotional. The Gita has multiple paths for different practitioners; Stoicism has essentially one.
-        </p>
-      </div>
-
-      <div className="faq-item">
-        <strong>Did the Stoics influence the Bhagavad Gita?</strong>
-        <p>
-          Almost certainly not. Mainstream scholarship places the Gita&apos;s compilation between roughly 400 BCE and 200 CE. Stoicism began in Athens around 300 BCE. While some contact existed between Greek and Indian thought after Alexander, no direct line connects these two traditions. The similarities are most likely independent convergence: different people asking the same questions about human action and reaching similar answers.
-        </p>
-      </div>
-
-      <div className="faq-item">
-        <strong>What did Marcus Aurelius say that is similar to the Bhagavad Gita?</strong>
-        <p>
-          Marcus wrote: &quot;If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgement about it&quot; (Meditations 8.47, tr. George Long). It sits close to BG 2.14, where Krishna tells Arjuna to bear the sensations that come and go. He also wrote extensively on performing one&apos;s role with full effort regardless of recognition, which echoes svadharma and nishkama karma. His concept of retreating to the &ldquo;inner citadel&rdquo; parallels the Gita&apos;s teaching on the atman as the unchanging witness self.
-        </p>
-      </div>
-
-      <div className="faq-item">
-        <strong>Can I follow both Stoicism and the Bhagavad Gita?</strong>
-        <p>
-          In practice, yes. The overlapping areas are substantial: detachment from outcomes, focus on what you control, duty-based ethics, self-examination, and equanimity. Where they differ, personal devotion in the Gita versus Stoicism&apos;s impersonal Logos, the Gita&apos;s metaphysics of atman versus Stoicism&apos;s focus on reason, represent genuinely different frameworks. But many readers find value in both without needing to resolve every tension between them.
-        </p>
-      </div>
-    </div>
-
-    <div className="content">
-      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita vs Stoicism"} />
-    </div>
-
-    <SiteFooter />
-
-    <BlogTracker pageName="Bhagavad Gita vs Stoicism" />
+        <Section track="sources" title="Sources and translations" width="narrow" spacing="tight">
+          <div className="sx-prose">
+            <ol>
+              <li>
+                Epictetus, <a href={LONG_EPICTETUS} target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">A Selection from the Discourses of Epictetus with the Encheiridion</a>, tr. George Long (Project Gutenberg). Enchiridion 1 and 17. Long’s bracketed Greek glosses are left out of Enchiridion 1.
+              </li>
+              <li>
+                Epictetus, <a href={LONG_DISCOURSES_2_19} target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">Discourses 2.19</a>, tr. George Long, 1877 (Wikisource).
+              </li>
+              <li>
+                Marcus Aurelius, <a href={LONG_MARCUS} target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">Thoughts of Marcus Aurelius Antoninus</a>, tr. George Long, 1862 (Project Gutenberg). Meditations 4.3.
+              </li>
+              <li>
+                Seneca, <a href={GUMMERE_113} target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">Moral Letters to Lucilius, Letter 113</a>, tr. Richard M. Gummere, Loeb vol. 3, 1925 (Wikisource). Sections as numbered there.
+              </li>
+              <li>
+                Dirk Baltzly, <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">“Stoicism”</a>, Stanford Encyclopedia of Philosophy. The Stoic god, the soul as pneuma, the sage, the end of life.
+              </li>
+              <li>
+                Ashwini Mokashi, <a href="https://appa.edu/books/sapiens-and-sthitaprajna" target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">Sapiens and Sthitaprajna: A Comparative Study in Seneca’s Stoicism and the Bhagavadgita</a> (D.K. Printworld, 2019).
+              </li>
+              <li>
+                Shankara and Ramanuja on Gita 6.5, <a href="https://heritage.iitk.ac.in/SBG/6.5" target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">Sanskrit text, IIT Kanpur</a>. English ours.
+              </li>
+              <li>
+                James A. Hijiya, <a href="https://www.thphys.uni-heidelberg.de/~stamatescu/DIDEPG/WiSe23/TEXTE23/oppenheimer.pdf" target="_blank" rel="noopener noreferrer" data-mp-location="stoicism_source">“The Gita of J. Robert Oppenheimer”</a> (2000), quoting Time, 8 November 1948, for Oppenheimer on Ryder.
+              </li>
+            </ol>
+            <p>
+              Gita verses: Sanskrit from this site’s verse files, IAST generated from the Devanagari, English our own. Rebuilt in November 2026
+              with public-domain Stoic translations only; earlier versions quoted modern translations.
+            </p>
+          </div>
+        </Section>
+      </main>
+      <SiteFooter />
     </>
   )
 }

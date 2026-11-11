@@ -15,8 +15,10 @@ export const TAGLINE = 'Silent meditation for iPhone and Apple Watch'
 export const ONE_LINER =
   'Dhyaan is a silent meditation app for iPhone, Apple Watch and AirPods. After the bell it reads your sit back to you: when you arrived, how still you stayed, how your heart settled. No voice, no grade.'
 export const LAUNCH = 'early 2027'
-export const OG_IMAGE = `${DHYAAN_URL}/dhyaan-assets/og.png`
-export const ICON = '/dhyaan-assets/icon.png'
+export const OG_IMAGE = `${DHYAAN_URL}/dhyaan-assets/og.webp`
+export const ICON = '/dhyaan-assets/icon.webp'
+// iOS ignores WebP for home-screen icons, so this one stays PNG.
+export const APPLE_ICON = '/dhyaan-assets/apple-touch-icon.png'
 export const WISDOM_URL = 'https://wisdomquotes.in'
 
 export const ORG_LD = {
@@ -24,7 +26,7 @@ export const ORG_LD = {
   '@id': `${DHYAAN_URL}/#organization`,
   name: NAME,
   url: DHYAAN_URL,
-  logo: `${DHYAAN_URL}/dhyaan-assets/icon.png`,
+  logo: `${DHYAAN_URL}/dhyaan-assets/icon.webp`,
   description: ONE_LINER,
   founder: { '@type': 'Person', name: 'Ankur Shukla', url: `${WISDOM_URL}/about` },
   parentOrganization: { '@type': 'Organization', name: 'Wisdom', url: WISDOM_URL },

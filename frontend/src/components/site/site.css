@@ -16,6 +16,12 @@
 .sx-head--center { margin-left: auto; margin-right: auto; text-align: center; }
 .sx-eyebrow { display: block; font: 700 11.5px/1.4 var(--font-ui); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-light); margin: 0 0 12px; }
 :lang(hi) .sx-eyebrow, .sx-eyebrow:lang(hi) { letter-spacing: 0.02em; font-size: 13px; text-transform: none; }
+/* Indic words inside a tracked, uppercase label (an eyebrow or card kicker naming a script): letter-spacing breaks their conjuncts */
+.sx-eyebrow [lang]:not([lang|='en']), .sx-card-kicker [lang]:not([lang|='en']) { letter-spacing: 0; text-transform: none; font-size: 1.15em; }
+.sx-eyebrow [lang='hi'], .sx-card-kicker [lang='hi'] { font-family: var(--font-deva-ui); }
+.sx-eyebrow [lang='te'], .sx-card-kicker [lang='te'] { font-family: var(--font-te); }
+.sx-eyebrow [lang='gu'], .sx-card-kicker [lang='gu'] { font-family: var(--font-gu); }
+.sx-eyebrow [lang='kn'], .sx-card-kicker [lang='kn'] { font-family: var(--font-kn); }
 .sx-h2 { font-family: var(--font-display); font-weight: 600; font-size: clamp(24px, 3vw, 34px); line-height: 1.18; color: var(--gold-light); margin: 0 0 12px; text-wrap: balance; }
 .sx-h3 { font-family: var(--font-display); font-weight: 600; font-size: clamp(19px, 2.2vw, 22px); line-height: 1.3; color: var(--text); margin: 0 0 8px; }
 .sx-intro { font-size: 16.5px; line-height: 1.7; color: var(--text-dim); margin: 0; text-wrap: pretty; }
@@ -60,6 +66,9 @@ a.sx-chip:hover { color: var(--gold-light); border-color: var(--border-strong); 
   color: var(--text-dim); font: 500 12.5px/1 var(--font-ui);
   transition: background-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out); }
 .sx-script button[lang='sa'] { font-family: var(--font-deva-ui); font-size: 13px; }
+.sx-script button[lang='te'] { font-family: var(--font-te); font-size: 13px; }
+.sx-script button[lang='gu'] { font-family: var(--font-gu); font-size: 13px; }
+.sx-script button[lang='kn'] { font-family: var(--font-kn); font-size: 13px; }
 .sx-script button[aria-pressed='true'] { background: var(--gold); color: #1a0606; }
 .sx-script button:not([aria-pressed='true']):hover { color: var(--gold-light); }
 .sx-script--compact button { min-height: 28px; min-width: 40px; padding: 0 10px; font-size: 12px; }
@@ -121,6 +130,10 @@ a.sx-chip:hover { color: var(--gold-light); border-color: var(--border-strong); 
 .sx-verse-top .sx-script { margin-left: auto; }
 .sx-verse-orig { font-family: var(--font-sa); font-size: clamp(21px, 5.4vw, 28px); line-height: 1.7; color: var(--gold-light); margin: 0; text-wrap: balance; }
 .sx-verse--awa .sx-verse-orig, .sx-verse--hi .sx-verse-orig { font-family: var(--font-awadhi); }
+.sx-verse--te .sx-verse-orig.sx-deva { font-family: var(--font-te); line-height: 1.85; }
+.sx-verse--gu .sx-verse-orig.sx-deva { font-family: var(--font-gu); line-height: 1.85; }
+.sx-verse--kn .sx-verse-orig.sx-deva { font-family: var(--font-kn); line-height: 1.85; }
+.sx-verse--te .sx-verse-orig.sx-iast, .sx-verse--gu .sx-verse-orig.sx-iast, .sx-verse--kn .sx-verse-orig.sx-iast { font-family: var(--font-awadhi); }
 .sx-verse-orig.sx-iast { font-style: italic; font-size: clamp(18px, 4.4vw, 22px); line-height: 1.6; color: var(--text); }
 .sx-verse-row { display: block; }
 .sx-verse-meaning { font-family: var(--font-display); font-style: italic; font-size: clamp(16px, 1.8vw, 18.5px); line-height: 1.55; color: var(--gold-pale); max-width: 34em; margin: 14px auto 0; text-wrap: pretty; }
@@ -190,6 +203,49 @@ a.sx-card:hover { transform: translateY(-2px); border-color: rgba(245, 201, 106,
 .sx-faq-a { padding: 0 0 20px; font-size: 15.5px; line-height: 1.7; color: var(--text-dim); max-width: 68ch; }
 .sx-faq-item[open] .sx-faq-a { animation: sx-fade var(--t-std) var(--ease) both; }
 
+/* ── Long-form prose: lists, quotes, subheads ───────────────────────────── */
+.sx-prose h3 { font-family: var(--font-display); font-weight: 600; font-size: clamp(19px, 2.2vw, 22px); line-height: 1.3; color: var(--text); margin: 1.8em 0 0.5em; }
+.sx-prose ul, .sx-prose ol { margin: 1em 0; padding-left: 1.3em; }
+.sx-prose li + li { margin-top: 0.5em; }
+.sx-prose li::marker { color: var(--gold); }
+.sx-prose blockquote { margin: 1.4em 0; padding: 4px 0 4px 18px; border-left: 2px solid var(--gold); font-family: var(--font-display); font-style: italic; font-size: 1.08em; line-height: 1.6; color: var(--gold-pale); }
+.sx-prose blockquote cite { display: block; margin-top: 8px; font: 400 13px/1.5 var(--font-ui); font-style: normal; color: var(--text-dim); }
+.sx-prose em[lang], .sx-prose i[lang] { color: var(--gold-pale); }
+.sx-prose .sx-deva-inline { font-family: var(--font-sa); font-style: normal; color: var(--gold-light); }
+.sx-prose + .sx-pair, .sx-pair + .sx-pair, .sx-prose + .sx-renderings, .sx-renderings + .sx-prose, .sx-pair + .sx-prose, .sx-prose + .sx-verse, .sx-verse + .sx-prose, .sx-prose + .sx-verse-list, .sx-verse-list + .sx-prose { margin-top: 28px; }
+
+/* ── VersePair: a Gita verse beside a line from another tradition ──────── */
+.sx-pair { padding: 24px 0 8px; border-top: 1px solid var(--border); }
+.sx-pair:first-child { border-top: 0; padding-top: 0; }
+.sx-pair-title { margin-bottom: 16px; }
+.sx-pair-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; align-items: stretch; }
+@media (min-width: 900px) { .sx-pair-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; } }
+.sx-pair-other { margin: 0; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 22px 20px 18px; border-radius: var(--r-md); border: 1px solid var(--border); background: var(--bg-card); }
+.sx-pair-quote { margin: 0; font-family: var(--font-display); font-style: italic; font-size: clamp(16px, 1.8vw, 18px); line-height: 1.6; color: var(--text); text-wrap: pretty; }
+.sx-pair-cite { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; font-size: 13px; line-height: 1.5; color: var(--text-dim); }
+.sx-pair-who { font-weight: 600; color: var(--gold-light); }
+.sx-pair-cite a { color: var(--gold); text-decoration: underline; text-decoration-color: rgba(200, 136, 30, 0.45); text-underline-offset: 3px; }
+.sx-pair-cite a:hover { color: var(--gold-light); }
+.sx-pair-tr { color: var(--text-dim); }
+.sx-pair-notes { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px 24px; margin-top: 18px; }
+@media (min-width: 900px) { .sx-pair-notes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sx-pair-k { font: 700 11px/1.4 var(--font-ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin: 0 0 6px; }
+.sx-pair-body { font-size: 15.5px; line-height: 1.7; color: var(--text); }
+.sx-pair-body p + p { margin-top: 0.8em; }
+.sx-pair-body a { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.45); text-underline-offset: 3px; }
+
+/* ── Renderings: one verse in several translations ─────────────────────── */
+.sx-renderings { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .sx-renderings { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sx-rendering { padding: 20px; border-radius: var(--r-md); border: 1px solid var(--border); background: var(--bg-card); }
+.sx-rendering--own { border-color: rgba(245, 201, 106, 0.32); background: rgba(200, 136, 30, 0.06); }
+.sx-rendering-who { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin: 0 0 10px; font-weight: 600; font-size: 14.5px; color: var(--gold-light); }
+.sx-rendering-year { font: 600 12px/1.4 var(--font-ui); letter-spacing: 0.08em; color: var(--text-dim); }
+.sx-rendering-text { margin: 0; font-family: var(--font-display); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--text); }
+.sx-rendering-note { margin: 12px 0 0; font-size: 14.5px; line-height: 1.6; color: var(--text-dim); }
+.sx-rendering-src { margin: 10px 0 0; font-size: 12.5px; color: var(--text-dim); }
+.sx-rendering-src a { color: var(--gold); text-decoration: underline; text-decoration-color: rgba(200, 136, 30, 0.45); text-underline-offset: 3px; }
+
 /* ── Focus ──────────────────────────────────────────────────────────────── */
 :where(.sx-hero, .sx-section, .sx-verse, .sx-faq, .sx-cards, .sx-bridge, .sx-btn, .sx-script) :focus-visible,
 .sx-btn:focus-visible, .sx-bridge:focus-visible, .sx-card:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; border-radius: 8px; }
@@ -202,3 +258,39 @@ a.sx-card:hover { transform: translateY(-2px); border-color: rgba(245, 201, 106,
 @media print {
   .sx-script, .sx-verse-actions, .sx-hero-glow, .sx-actions { display: none !important; }
 }
+
+/* ── Video (VideoFigure): framed like the blogs' header image ──────────── */
+.sx-video { margin: 32px 0 36px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4); background: var(--bg-card); }
+.sx-video-frame { position: relative; aspect-ratio: 16 / 9; background: #000; }
+.sx-video-frame iframe, .sx-video-play { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.sx-video-play { display: block; padding: 0; margin: 0; background: none; cursor: pointer; }
+.sx-video-play img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.sx-video-play::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0) 60%); pointer-events: none; }
+.sx-video-icon { position: absolute; z-index: 1; top: 50%; left: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; display: grid; place-items: center; padding-left: 4px;
+  border-radius: 50%; background: var(--gold); color: #1a0606; box-shadow: 0 12px 32px rgba(200, 136, 30, 0.35), 0 0 0 6px rgba(200, 136, 30, 0.18);
+  transition: transform var(--t-quick) var(--ease-out); }
+.sx-video-play:hover .sx-video-icon { transform: scale(1.06); }
+.sx-video-play:active .sx-video-icon { transform: scale(0.97); }
+.sx-video-play:focus-visible { outline: 2px solid var(--gold-light); outline-offset: -4px; }
+.sx-video figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 10px 18px; background: var(--bg-card); border-top: 1px solid var(--border);
+  font-size: 11.5px; line-height: 1.5; letter-spacing: 0.04em; font-style: italic; color: var(--text-dimmer); }
+.sx-video figcaption a { flex: none; font-style: normal; color: var(--gold-light); text-decoration: none; border-bottom: 1px solid rgba(200, 136, 30, 0.3); }
+.sx-video figcaption a:hover { border-bottom-color: var(--gold-light); }
+@media (max-width: 600px) { .sx-video-icon { width: 56px; height: 56px; margin: -28px 0 0 -28px; } }
+@media (prefers-reduced-motion: reduce) { .sx-video-icon { transition: none; } }
+
+/* ── Bottom of the screen: one stacking scale ─────────────────────────────
+   Everything fixed to the bottom edge takes its z-index from here (each use keeps the same
+   number as its fallback, for pages that do not load this file):
+   docked Play-All player < verse navigator < install card < quote LineBar.
+   Only one shows at a time: the install card waits while any other bar is on screen
+   (lib/install.ts bottomBarVisible), and pages pad their bottom while the player is docked. */
+:root {
+  --z-dock-player: 60;
+  --z-dock-nav: 90;
+  --z-dock-prompt: 95;
+  --z-dock-bar: 900;
+}
+
+/* A smaller button for tight spots (the install card, a search field): same look, 44px tall. */
+.sx-btn--sm { min-height: 44px; padding: 10px 16px; font-size: 14px; }

@@ -9,7 +9,14 @@ import {
   chapterLede,
   chapterUrl,
   verseUrl,
+  getChapterGist,
+  splitSpeaker,
 } from '@/lib/gita'
+import type { Verse } from '@/lib/gita'
+import ChapterProgress, { ReadTick } from '@/components/reader/ChapterProgress'
+import { readModeUrl } from '@/lib/gitaUrls'
+import SanskritText from '@/components/gita/SanskritText'
+import LinkCards from '@/components/site/LinkCards'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
 // for the Scripture AI waitlist while that product launches.
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
@@ -103,6 +110,33 @@ export default async function ChapterPage({ params }: { params: Params }) {
   }
 
   const lede = chapterLede(ch.number, 'en')
+  const gist = getChapterGist(ch.number)
+  const famous = (gist?.famous ?? [])
+    .map((f) => verses.find((v) => v.verse === f.verse))
+    .filter((v): v is Verse => Boolean(v))
+
+  /** One verse row of the list, with the reader's read mark. */
+  const verseItem = (v: Verse) => (
+    <li key={v.verse}>
+      <a href={verseUrl(v.chapter, v.verse)} data-mp-location={`chapter_${ch.number}_verse_list_${v.verse}`}>
+        <div className="gita-verse-ref">
+          <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
+          <span className="gita-verse-ref-ch">Ch. {v.chapter}</span>
+          <ReadTick chapter={v.chapter} verse={v.verse} lang="en" />
+        </div>
+        <div className="gita-verse-body">
+          <p className="gita-verse-essence">{v.essence || v.englishTranslation}</p>
+          {(v.simpleInsight || v.simpleMeaning) && (
+            <p className="gita-verse-insight">{v.simpleInsight || v.simpleMeaning}</p>
+          )}
+          <div className="gita-verse-footer">
+            {v.depth ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span> : <span />}
+            <span className="gita-verse-arrow">→</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  )
 
   return (
     <main className="gita-main">
@@ -128,6 +162,11 @@ export default async function ChapterPage({ params }: { params: Params }) {
         Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
         <a href="/methodology" style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>Methodology →</a>
       </p>
+      <p className="gita-readmode-link">
+        <a href={readModeUrl(ch.number, 'en')} data-mp-location={`chapter_${ch.number}_read_mode`}>
+          Read the whole chapter on one page, or listen to it →
+        </a>
+      </p>
       <p style={{ fontSize: 13.5, color: 'var(--text-dim)', marginTop: 10 }}>
         Reading a chapter a day? This is day {ch.number} of 18.{' '}
         <a
@@ -139,9 +178,32 @@ export default async function ChapterPage({ params }: { params: Params }) {
         </a>
       </p>
 
+      {gist && (
+        <section className="gita-gist" aria-label="The chapter in brief">
+          <div className="gita-translation-label">The chapter in brief</div>
+          <p className="gita-translation-text">{gist.en.saar}</p>
+        </section>
+      )}
+
       <figure className="gita-chapter-hero">
         <img src={chapterImage(ch.number).src} alt={chapterImage(ch.number).alt} loading="eager" />
       </figure>
+
+      {famous.length > 0 && (
+        <section className="gita-famous" aria-label="Famous verses of this chapter">
+          <h2 className="gita-h2">Famous verses of this chapter</h2>
+          <LinkCards
+            columns={3}
+            items={famous.map((v) => ({
+              href: verseUrl(v.chapter, v.verse),
+              kicker: `Verse ${v.chapter}.${v.verse}`,
+              title: v.essence || v.englishTranslation,
+              orig: splitSpeaker(v.sanskrit).text.split(/[।॥]/)[0]?.trim(),
+              location: `chapter_${ch.number}_famous_${v.verse}`,
+            }))}
+          />
+        </section>
+      )}
 
       {/* ── FIRST VERSE INLINE ── */}
       {firstVerse && (
@@ -152,7 +214,7 @@ export default async function ChapterPage({ params }: { params: Params }) {
           <div style={{ background: 'var(--bg-card, rgba(255,255,255,0.04))', border: '1px solid rgba(245,201,106,0.3)', borderRadius: '14px', padding: '24px 26px' }}>
             {firstVerse.sanskrit && (
               <div style={{ fontFamily: "'Noto Sans Devanagari', 'Mangal', serif", fontSize: '18px', lineHeight: 1.8, color: 'var(--text)', marginBottom: '16px', textAlign: 'center' }}>
-                {firstVerse.sanskrit}
+                <SanskritText text={firstVerse.sanskrit} />
               </div>
             )}
             <blockquote style={{ borderLeft: '2px solid rgba(245,201,106,0.4)', paddingLeft: '14px', margin: '0 0 14px', fontStyle: 'italic', fontSize: '15px', color: 'var(--gold-pale, #f5e6b8)', lineHeight: 1.6 }}>
@@ -176,52 +238,15 @@ export default async function ChapterPage({ params }: { params: Params }) {
 
 
       <h2 className="gita-h2" style={{ marginTop: '40px' }}>All verses</h2>
+      <ChapterProgress chapter={ch.number} total={ch.totalVerses} lang="en" />
       <ul className="gita-verse-list">
-        {verses.slice(0, Math.ceil(verses.length / 2)).map((v) => (
-          <li key={v.verse}>
-            <a href={verseUrl(v.chapter, v.verse)} data-mp-location={`chapter_${ch.number}_verse_list_${v.verse}`}>
-              <div className="gita-verse-ref">
-                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
-                <span className="gita-verse-ref-ch">Ch. {v.chapter}</span>
-              </div>
-              <div className="gita-verse-body">
-                <p className="gita-verse-essence">{v.essence || v.englishTranslation}</p>
-                {(v.simpleInsight || v.simpleMeaning) && (
-                  <p className="gita-verse-insight">{v.simpleInsight || v.simpleMeaning}</p>
-                )}
-                <div className="gita-verse-footer">
-                  {v.depth ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span> : <span />}
-                  <span className="gita-verse-arrow">→</span>
-                </div>
-              </div>
-            </a>
-          </li>
-        ))}
+        {verses.slice(0, Math.ceil(verses.length / 2)).map(verseItem)}
       </ul>
 
       <FeedbackWidget pageType="chapter" pageId={`chapter_${ch.number}`} pageName={`gita_chapter_${ch.number}`} />
 
       <ul className="gita-verse-list">
-        {verses.slice(Math.ceil(verses.length / 2)).map((v) => (
-          <li key={v.verse}>
-            <a href={verseUrl(v.chapter, v.verse)} data-mp-location={`chapter_${ch.number}_verse_list_${v.verse}`}>
-              <div className="gita-verse-ref">
-                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
-                <span className="gita-verse-ref-ch">Ch. {v.chapter}</span>
-              </div>
-              <div className="gita-verse-body">
-                <p className="gita-verse-essence">{v.essence || v.englishTranslation}</p>
-                {(v.simpleInsight || v.simpleMeaning) && (
-                  <p className="gita-verse-insight">{v.simpleInsight || v.simpleMeaning}</p>
-                )}
-                <div className="gita-verse-footer">
-                  {v.depth ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span> : <span />}
-                  <span className="gita-verse-arrow">→</span>
-                </div>
-              </div>
-            </a>
-          </li>
-        ))}
+        {verses.slice(Math.ceil(verses.length / 2)).map(verseItem)}
       </ul>
 
       <VerseFunnelCTA variant="chapter" locale="en" chapter={ch} pageName={`Gita Chapter ${ch.number}`} />

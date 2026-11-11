@@ -9,7 +9,19 @@ import {
   chapterLede,
   chapterUrl,
   verseUrl,
+  getChapterGist,
+  getChapterHindiCommentary,
+  getChapterJointGroups,
+  hindiVerseLine,
+  jointRefsHi,
+  splitSpeaker,
+  hasHindiTranslation,
 } from '@/lib/gita'
+import type { Verse } from '@/lib/gita'
+import ChapterProgress, { ReadTick } from '@/components/reader/ChapterProgress'
+import { readModeUrl } from '@/lib/gitaUrls'
+import SanskritText from '@/components/gita/SanskritText'
+import LinkCards from '@/components/site/LinkCards'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
 // for the Scripture AI waitlist while that product launches.
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
@@ -75,6 +87,50 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
   ])
 
   const lede = chapterLede(ch.number, 'hi')
+  const gist = getChapterGist(ch.number)
+  const [commentary, joints] = await Promise.all([
+    getChapterHindiCommentary(ch.number),
+    getChapterJointGroups(ch.number),
+  ])
+  const famous = (gist?.famous ?? [])
+    .map((f) => verses.find((v) => v.verse === f.verse))
+    .filter((v): v is Verse => Boolean(v))
+
+  /** One verse row of the list: Hindi line, read mark, joint-meaning note. */
+  const verseItem = (v: Verse) => {
+    const hcv = commentary.get(v.verse)
+    const group = joints.get(v.verse)
+    const hindi = (v.hindiTranslation || '').replace(/\s+/g, ' ').trim()
+    const showHindi = Boolean(hcv?.saar) && hasHindiTranslation(v)
+    return (
+      <li key={v.verse}>
+        <a href={verseUrl(v.chapter, v.verse, 'hi')} data-mp-location={`chapter_hi_${ch.number}_verse_list_${v.verse}`}>
+          <div className="gita-verse-ref">
+            <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
+            <span className="gita-verse-ref-ch">अ. {v.chapter}</span>
+            <ReadTick chapter={v.chapter} verse={v.verse} lang="hi" />
+          </div>
+          <div className="gita-verse-body">
+            <p className="gita-verse-essence gita-verse-essence--hi">{hindiVerseLine(v, hcv)}</p>
+            {showHindi && (
+              <p className="gita-verse-insight">
+                {hindi.slice(0, 120)}
+                {hindi.length > 120 ? '…' : ''}
+              </p>
+            )}
+            <div className="gita-verse-footer">
+              {group ? (
+                <span className="gita-verse-depth gita-verse-joint">{jointRefsHi(v.chapter, group)} का अर्थ साथ में</span>
+              ) : (
+                <span />
+              )}
+              <span className="gita-verse-arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    )
+  }
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -125,13 +181,43 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
           : `${ch.processedVerses} / ${ch.totalVerses} श्लोक उपलब्ध — और जोड़े जा रहे हैं।`}
       </p>
       <p style={{ fontSize: 12, color: 'var(--text-dimmer)', marginTop: 8, fontStyle: 'italic' }}>
-        Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
-        <a href="/methodology" style={{ color: 'var(--text-dimmer)', textDecoration: 'underline' }}>Methodology →</a>
+        {[...commentary.values()].some((x) => !x.reviewed)
+          ? 'Wisdom अनुवाद, संपादन: अंकुर शुक्ला। इस अध्याय की हिंदी टिप्पणी पारंपरिक भाष्यों के आधार पर AI की मदद से तैयार की गई है, और इसकी समीक्षा अभी बाकी है।'
+          : 'Wisdom अनुवाद, संपादन: अंकुर शुक्ला। टिप्पणी AI से तैयार, फिर व्यक्ति द्वारा जाँची गई (जून 2026)।'}{' '}
+        <a href="/methodology" style={{ color: 'var(--text-dimmer)', textDecoration: 'underline' }}>कैसे बनता है →</a>
       </p>
+      <p className="gita-readmode-link">
+        <a href={readModeUrl(ch.number, 'hi')} data-mp-location={`chapter_hi_${ch.number}_read_mode`}>
+          पूरा अध्याय एक पृष्ठ पर पढ़ें या सुनें →
+        </a>
+      </p>
+
+      {gist && (
+        <section className="gita-gist" aria-label="अध्याय का सार">
+          <div className="gita-translation-label">अध्याय का सार</div>
+          <p className="gita-translation-text gita-translation-text--hi">{gist.hi.saar}</p>
+        </section>
+      )}
 
       <figure className="gita-chapter-hero">
         <img src={chapterImage(ch.number).src} alt={chapterImage(ch.number).alt} loading="eager" />
       </figure>
+
+      {famous.length > 0 && (
+        <section className="gita-famous" aria-label="इस अध्याय के प्रसिद्ध श्लोक">
+          <h2 className="gita-h2">इस अध्याय के प्रसिद्ध श्लोक</h2>
+          <LinkCards
+            columns={3}
+            items={famous.map((v) => ({
+              href: verseUrl(v.chapter, v.verse, 'hi'),
+              kicker: `श्लोक ${v.chapter}.${v.verse}`,
+              title: hindiVerseLine(v, commentary.get(v.verse), 80),
+              orig: splitSpeaker(v.sanskrit).text.split(/[।॥]/)[0]?.trim(),
+              location: `chapter_hi_${ch.number}_famous_${v.verse}`,
+            }))}
+          />
+        </section>
+      )}
 
       {/* ── FIRST VERSE INLINE ── */}
       {firstVerse && (
@@ -142,7 +228,7 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
           <div style={{ background: 'var(--bg-card, rgba(255,255,255,0.04))', border: '1px solid rgba(245,201,106,0.3)', borderRadius: '14px', padding: '24px 26px' }}>
             {firstVerse.sanskrit && (
               <div style={{ fontFamily: "'Noto Sans Devanagari', 'Mangal', serif", fontSize: '18px', lineHeight: 1.8, color: 'var(--text)', marginBottom: '16px', textAlign: 'center' }}>
-                {firstVerse.sanskrit}
+                <SanskritText text={firstVerse.sanskrit} />
               </div>
             )}
             {firstVerse.hindiTranslation && (
@@ -163,54 +249,15 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
 
 
       <h2 className="gita-h2" style={{ marginTop: '40px' }}>सभी श्लोक</h2>
+      <ChapterProgress chapter={ch.number} total={ch.totalVerses} lang="hi" />
       <ul className="gita-verse-list">
-        {verses.slice(0, Math.ceil(verses.length / 2)).map((v) => (
-          <li key={v.verse}>
-            <a href={verseUrl(v.chapter, v.verse, 'hi')} data-mp-location={`chapter_hi_${ch.number}_verse_list_${v.verse}`}>
-              <div className="gita-verse-ref">
-                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
-                <span className="gita-verse-ref-ch">अ. {v.chapter}</span>
-              </div>
-              <div className="gita-verse-body">
-                <p className="gita-verse-essence">{v.essence || v.englishTranslation}</p>
-                <p className="gita-verse-insight">
-                  {(v.hindiTranslation || v.englishTranslation).slice(0, 120)}
-                  {(v.hindiTranslation || v.englishTranslation).length > 120 ? '…' : ''}
-                </p>
-                <div className="gita-verse-footer">
-                  {v.depth ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span> : <span />}
-                  <span className="gita-verse-arrow">→</span>
-                </div>
-              </div>
-            </a>
-          </li>
-        ))}
+        {verses.slice(0, Math.ceil(verses.length / 2)).map(verseItem)}
       </ul>
 
       <FeedbackWidget pageType="chapter" pageId={`chapter_hi_${ch.number}`} pageName={`gita_chapter_hi_${ch.number}`} />
 
       <ul className="gita-verse-list">
-        {verses.slice(Math.ceil(verses.length / 2)).map((v) => (
-          <li key={v.verse}>
-            <a href={verseUrl(v.chapter, v.verse, 'hi')} data-mp-location={`chapter_hi_${ch.number}_verse_list_${v.verse}`}>
-              <div className="gita-verse-ref">
-                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
-                <span className="gita-verse-ref-ch">अ. {v.chapter}</span>
-              </div>
-              <div className="gita-verse-body">
-                <p className="gita-verse-essence">{v.essence || v.englishTranslation}</p>
-                <p className="gita-verse-insight">
-                  {(v.hindiTranslation || v.englishTranslation).slice(0, 120)}
-                  {(v.hindiTranslation || v.englishTranslation).length > 120 ? '…' : ''}
-                </p>
-                <div className="gita-verse-footer">
-                  {v.depth ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span> : <span />}
-                  <span className="gita-verse-arrow">→</span>
-                </div>
-              </div>
-            </a>
-          </li>
-        ))}
+        {verses.slice(Math.ceil(verses.length / 2)).map(verseItem)}
       </ul>
 
       <VerseFunnelCTA variant="chapter" locale="hi" chapter={ch} pageName={`Hindi Gita Chapter ${ch.number}`} />

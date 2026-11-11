@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import PageTracker from '@/components/BlogTracker'
 import { Actions, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, Section, VerseCard } from '@/components/site'
 import LineShare from '@/components/funnels/hanuman-chalisa/LineShare'
+import SunDistance from '@/components/funnels/hanuman-chalisa/SunDistance'
 import Mala from '@/components/funnels/hanuman-chalisa/Mala'
 import { LineOpenedOnView } from '@/components/funnels/hanuman-chalisa/Trackers'
 import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
@@ -21,6 +22,7 @@ import {
   NEXT_COPY,
   neighbors,
   START_SITUATION,
+  SUN_LINE_ID,
   unitVerse,
   UPDATED,
   type HcUnit,
@@ -65,7 +67,17 @@ const phraseOf = (u: HcUnit) =>
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ')
 
+/** Lines whose page answers a bigger question than the line's meaning get their own title and description. */
+const META_OVERRIDES: Record<string, { title: string; description: string }> = {
+  [SUN_LINE_ID]: {
+    title: 'Jug Sahasra Jojan Par Bhanu Meaning and the Sun Distance',
+    description:
+      '"jug sahasra jojan par bhānū" (Hanuman Chalisa 18): the child Hanuman leaps for the sun, taking it for fruit. Does the line give the sun\'s distance?',
+  },
+}
+
 function titleFor(u: HcUnit): string {
+  if (META_OVERRIDES[u.id]) return META_OVERRIDES[u.id].title
   const p = phraseOf(u)
   const n = u.kind === 'chaupai' ? `Chaupai ${u.n}` : u.label.en
   const tries = [`${p} Meaning | Hanuman Chalisa ${n}`, `${p} Meaning, Chalisa ${n}`, `${p} Meaning | Hanuman Chalisa`, `${p} Meaning`]
@@ -73,6 +85,7 @@ function titleFor(u: HcUnit): string {
 }
 
 function descFor(u: HcUnit): string {
+  if (META_OVERRIDES[u.id]) return META_OVERRIDES[u.id].description
   const lead = `"${u.iast[0]}" (Hanuman Chalisa, ${u.label.en}) means: `
   const tail = ' Word by word, with the Awadhi.'
   const room = 155 - lead.length - tail.length
@@ -179,6 +192,7 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
           next
             ? { href: linePath(next.slug), label: `Next: ${next.label.en}`, location: 'hero_next' }
             : { href: HUB_PATH, label: 'Read the whole Chalisa', location: 'hero_hub' },
+          ...(u.id === SUN_LINE_ID ? [{ href: '#sun', label: "Does it give the sun's distance?", location: 'hero_sun' }] : []),
         ]}
         below={card}
         visual={
@@ -222,6 +236,12 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
           </p>
         )}
       </Section>
+
+      {u.id === SUN_LINE_ID && (
+        <Section id="sun" tone={tone()} eyebrow="The sum people share" title="Did the Chalisa give the distance to the sun?">
+          <SunDistance />
+        </Section>
+      )}
 
       {u.variants.length > 0 && (
         <Section id="hc-var" tone={tone()} title="Other readings">

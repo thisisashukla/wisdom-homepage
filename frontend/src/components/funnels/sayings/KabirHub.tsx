@@ -1,10 +1,14 @@
 /** /hi/kabir-ke-dohe (Hindi) and /kabir-dohe-in-english (English). Server. */
 
+import { Fragment } from 'react'
 import PageTracker from '@/components/BlogTracker'
 import { Faq, JsonLd, PageHero, Section, VerseList } from '@/components/site'
 import { KABIR_THEMES, doha, dohe, kabirNotes, kabirWomenReview, type Doha, type Locale } from '@/lib/funnels/sayings/data'
 import { FOUND_SHORT, KAB_HUB, KAB_PATH, KAB_PATH_EN, KAB_THEME, dohaPath } from '@/lib/funnels/sayings/copy-kabir'
 import { abs, cardOg, ldArticle, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
+import KeepScope from '@/components/quotes/KeepScope'
+import HubTop from '@/components/quotes/HubTop'
+import { hubLinesFrom } from '@/components/quotes/hubLines'
 import { DevaVerse } from './cards'
 import { JumpChips, Method, NextBand, NextPanel, Related } from './parts'
 
@@ -52,6 +56,15 @@ export default function KabirHub({ locale }: { locale: Locale }) {
   const excluded = women.filter((w) => w.decision === 'exclude')
   const hero = doha(HERO_SLUG)
   let pos = 0
+  // Lines for HubTop (Today's line, Lines you kept): every doha in page order, as the quote hubs do (QuotePage).
+  const { lines: hubLines, todayCount } = hubLinesFrom(
+    (d: Doha) => ({ id: d.id, meaning: d.meaning[locale], source: `${locale === 'hi' ? 'कबीर' : 'Kabir'}, ${foundIn(d, locale)}` }),
+    KABIR_THEMES.flatMap((th) => all.filter((d) => d.theme === th)),
+  )
+  const hubLabels =
+    locale === 'hi'
+      ? { today: 'आज का दोहा', kept: 'आपके रखे दोहे', note: 'आज इसे मन में रखें। कल एक नया दोहा मिलेगा।' }
+      : { today: "Today's doha", kept: 'Dohas you kept' }
   const ld = [
     ldArticle({
       headline: c.h1,
@@ -76,7 +89,7 @@ export default function KabirHub({ locale }: { locale: Locale }) {
     ),
   ]
   return (
-    <>
+    <KeepScope hub={path}>
       <PageTracker pageName={locale === 'hi' ? 'Kabir Dohe Hub HI' : 'Kabir Dohe Hub'} />
       <JsonLd data={ld} />
       <PageHero
@@ -122,39 +135,42 @@ export default function KabirHub({ locale }: { locale: Locale }) {
       />
 
       {KABIR_THEMES.map((th, si) => (
-        <Section key={th} id={th} tone={si % 2 ? 'band' : 'default'} width="narrow" title={KAB_THEME[th][locale]} intro={locale === 'hi' ? KAB_THEME[th].introHi : KAB_THEME[th].introEn}>
-          <VerseList>
-            {all
-              .filter((d) => d.theme === th)
-              .map((d) => {
-                pos += 1
-                return (
-                  <DevaVerse
-                    key={d.id}
-                    as="li"
-                    id={d.id}
-                    hub="kabir"
-                    lines={d.lines}
-                    roman={d.roman}
-                    lang="hi"
-                    meaning={d.meaning[locale]}
-                    gloss={d.gloss}
-                    source={foundIn(d, locale)}
-                    href={locale === 'hi' ? dohaPath(d.slug) : undefined}
-                    hrefLabel="पूरा अर्थ और शब्दार्थ"
-                    cardId={kabirCardId(d)}
-                    locale={locale}
-                    pageKey={pageKey}
-                    position={pos}
-                    section={th}
-                    shareText={dohaShareText(d, locale)}
-                    fileStem={`kabir-doha-${d.slug}`}
-                  />
-                )
-              })}
-          </VerseList>
-          {si === 1 && <NextPanel heading={locale === 'hi' ? 'रोज़ सुबह एक पंक्ति' : 'One line each morning'} hub="kabir" locale={locale} pageKey={pageKey} />}
-        </Section>
+        <Fragment key={th}>
+          <Section key={th} id={th} tone={si % 2 ? 'band' : 'default'} width="narrow" title={KAB_THEME[th][locale]} intro={locale === 'hi' ? KAB_THEME[th].introHi : KAB_THEME[th].introEn}>
+            <VerseList>
+              {all
+                .filter((d) => d.theme === th)
+                .map((d) => {
+                  pos += 1
+                  return (
+                    <DevaVerse
+                      key={d.id}
+                      as="li"
+                      id={d.id}
+                      hub="kabir"
+                      lines={d.lines}
+                      roman={d.roman}
+                      lang="hi"
+                      meaning={d.meaning[locale]}
+                      gloss={d.gloss}
+                      source={foundIn(d, locale)}
+                      href={locale === 'hi' ? dohaPath(d.slug) : undefined}
+                      hrefLabel="पूरा अर्थ और शब्दार्थ"
+                      cardId={kabirCardId(d)}
+                      locale={locale}
+                      pageKey={pageKey}
+                      position={pos}
+                      section={th}
+                      shareText={dohaShareText(d, locale)}
+                      fileStem={`kabir-doha-${d.slug}`}
+                    />
+                  )
+                })}
+            </VerseList>
+            {si === 1 && <NextPanel heading={locale === 'hi' ? 'रोज़ सुबह एक पंक्ति' : 'One line each morning'} hub="kabir" locale={locale} pageKey={pageKey} />}
+          </Section>
+          {si === 0 && <HubTop hub={path} locale={locale} lines={hubLines} todayCount={todayCount} labels={hubLabels} />}
+        </Fragment>
       ))}
 
       <Section id="where" tone={KABIR_THEMES.length % 2 ? 'band' : 'default'} width="narrow" title={locale === 'hi' ? 'ये दोहे कहाँ मिलते हैं' : 'Where these dohe are found'}>
@@ -263,6 +279,6 @@ export default function KabirHub({ locale }: { locale: Locale }) {
               ]
         }
       />
-    </>
+    </KeepScope>
   )
 }

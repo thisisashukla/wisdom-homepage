@@ -1,0 +1,163 @@
+/* Keep (KeepButton) and the top of a quote hub (HubTop: Today's line, Lines you kept).
+   Built on styles/tokens.css and the share-bar look in card.css (.qc-act); no new colours.
+   Motion: opacity and transform on the heart, opacity only on content that fills in. */
+
+@keyframes qk-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── Heart icons (CSS masks, like card.css) ───────────────────────────── */
+
+.qi-heart { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.4 5.1a5.1 5.1 0 0 0-7.3 0L12 6.2l-1.1-1.1a5.1 5.1 0 0 0-7.3 7.3l1.1 1.1L12 20.8l7.3-7.3 1.1-1.1a5.1 5.1 0 0 0 0-7.3z'/%3E%3C/svg%3E"); }
+.qi-heart-fill { --qi: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.4 5.1a5.1 5.1 0 0 0-7.3 0L12 6.2l-1.1-1.1a5.1 5.1 0 0 0-7.3 7.3l1.1 1.1L12 20.8l7.3-7.3 1.1-1.1a5.1 5.1 0 0 0 0-7.3z'/%3E%3C/svg%3E"); }
+
+/* ── Keep button (a .qc-act) ──────────────────────────────────────────── */
+
+.qc-keep .qc-ico > .qi { transition: opacity var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out); }
+.qc-keep .qi-heart-fill { opacity: 0; transform: scale(0.7); }
+.qc-keep[aria-pressed='true'] { color: var(--gold-light); }
+.qc-keep[aria-pressed='true'] .qi-heart { opacity: 0; }
+.qc-keep[aria-pressed='true'] .qi-heart-fill { opacity: 1; transform: none; }
+
+/* Inline (Today's line head): icon and label side by side. */
+.qc-act.qc-keep--inline {
+  flex-direction: row;
+  gap: 6px;
+  width: auto;
+  min-height: 44px;
+  padding: 0 10px;
+  font-size: 13.5px;
+}
+
+/* ── Top of the hub (HubTop) ─────────────────────────────────────────── */
+
+.qhub-top-band { background: var(--bg); padding: 36px 0; }
+.qhub-top { display: grid; gap: 14px; }
+:where(.qhub-top) p,
+:where(.qhub-top) h2 { margin: 0; }
+
+.qtl-kicker {
+  font: 700 11.5px/1.4 var(--font-ui);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.qtl-kicker:lang(hi) { font: 600 14px/1.5 var(--font-deva-ui); letter-spacing: 0; text-transform: none; }
+
+/* Today's line: a fixed-height slot. The server renders it with the heading and the note only;
+   the line fills in on the client without moving anything. */
+.qtl {
+  display: grid;
+  grid-template-rows: 44px minmax(0, 1fr) auto;
+  height: 222px;
+  padding: 10px 18px 16px;
+  background: var(--bg-leaf);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.qtl:lang(hi) { height: 240px; }
+.qtl-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-right: -10px; }
+.qtl-body { min-height: 0; overflow: hidden; }
+.qtl-line { display: grid; gap: 10px; animation: qk-fade var(--t-std) var(--ease) backwards; }
+.qtl-meaning {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text);
+  text-wrap: pretty;
+}
+.qtl-meaning:lang(hi) { font-family: var(--font-deva-ui); font-size: 17.5px; line-height: 1.7; }
+.qtl-foot { display: flex; align-items: baseline; gap: 12px; font-size: 13px; line-height: 1.4; }
+.qtl-src { flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--gold); }
+.qtl-read {
+  flex: 0 0 auto;
+  position: relative;
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 4px;
+}
+.qtl-read::after { content: ''; position: absolute; inset: -12px -6px; }
+.qtl-read:hover { color: var(--text); }
+.qtl-note { padding-top: 8px; font-size: 13.5px; line-height: 1.45; color: var(--text-dim); }
+
+/* Lines you kept: only rendered when this device kept lines here. One scrolling row. */
+.qsv { animation: qk-fade var(--t-std) var(--ease) backwards; }
+.qsv-head { display: flex; align-items: center; gap: 10px; }
+.qsv-n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  font: 600 12px/1 var(--font-ui);
+  color: var(--gold-light);
+}
+.qsv-sub { margin-top: 4px; font-size: 14px; line-height: 1.5; color: var(--text-dim); }
+.qsv-row {
+  display: flex;
+  gap: 10px;
+  margin: 12px calc(-1 * var(--site-gutter)) 0;
+  padding: 2px var(--site-gutter) 6px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: var(--site-gutter);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.qsv-row::-webkit-scrollbar { display: none; }
+.qsv-row > li { flex: 0 0 auto; width: min(260px, 78vw); scroll-snap-align: start; }
+.qsv-item {
+  display: grid;
+  align-content: space-between;
+  gap: 10px;
+  height: 100%;
+  min-height: 112px;
+  padding: 14px 16px;
+  background: var(--bg-leaf);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color var(--t-quick) var(--ease-out);
+}
+.qsv-item:hover { border-color: var(--border-strong); }
+.qsv-item:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+.qsv-meaning {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.qsv-meaning:lang(hi) { font-family: var(--font-deva-ui); line-height: 1.65; }
+.qsv-src { font-size: 12.5px; line-height: 1.35; color: var(--gold); }
+
+.qtl :focus-visible,
+.qc-keep:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; border-radius: 8px; }
+
+@media (min-width: 720px) {
+  .qtl { height: 206px; padding: 12px 24px 18px; }
+  .qtl:lang(hi) { height: 224px; }
+  .qhub-top-band { padding: 48px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qc-keep .qc-ico > .qi { transform: none !important; }
+}
+
+@media print {
+  .qhub-top-band, .qc-keep { display: none !important; }
+}

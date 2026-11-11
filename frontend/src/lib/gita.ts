@@ -22,6 +22,11 @@ import path from 'path'
 import chaptersJson from '@/content/gita/chapters.json'
 import indexJson from '@/content/gita/index.json'
 import topicsJson from '@/content/gita/topics.json'
+import chapterGistJson from '@/content/gita/chapter-gist.json'
+import topicNamesHiJson from '@/content/gita/topic-names-hi.json'
+import { normaliseDevanagari, splitSpeaker, sanskritPadas } from '@/lib/devanagari'
+
+export { normaliseDevanagari, splitSpeaker, sanskritPadas }
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -105,7 +110,10 @@ export type Topic = TopicSummary & {
 // ── Loaders ──────────────────────────────────────────────────────────────────
 
 const chapters = chaptersJson as Chapter[]
-const indexEntries = indexJson as IndexEntry[]
+const indexEntries = (indexJson as IndexEntry[]).map((e) => ({
+  ...e,
+  snippet: normaliseDevanagari(e.snippet),
+}))
 const topicSummaries = topicsJson as TopicSummary[]
 
 export const getAllChapters = (): Chapter[] => chapters
@@ -116,10 +124,21 @@ export const getChapter = (number: number): Chapter | undefined =>
 export const getAllVerseRefs = (): Array<{ chapter: number; verse: number }> =>
   indexEntries.map((e) => ({ chapter: e.chapter, verse: e.verse }))
 
+/**
+ * Fix encoding faults in the generated verse JSON at load time (prebuild regenerates
+ * src/content/gita/verses, so the files themselves are not edited). Returns a copy.
+ */
+const normaliseVerse = (v: Verse): Verse => ({
+  ...v,
+  sanskrit: normaliseDevanagari(v.sanskrit),
+  hindiTranslation: normaliseDevanagari(v.hindiTranslation),
+  ...(v.translationLiteral !== undefined && { translationLiteral: normaliseDevanagari(v.translationLiteral) }),
+})
+
 export const getVerse = async (chapter: number, verse: number): Promise<Verse | null> => {
   try {
     const data = await import(`@/content/gita/verses/${chapter}-${verse}.json`)
-    return data.default as Verse
+    return normaliseVerse(data.default as Verse)
   } catch {
     return null
   }
@@ -151,6 +170,11 @@ export const topicLabel = (slug: string): string =>
     .split(' ')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ')
+
+const topicNamesHi = topicNamesHiJson as Record<string, string>
+
+/** Hindi display name for a tag slug ("karma-yoga" → "कर्म योग"); falls back to topicLabel. */
+export const hindiTagName = (slug: string): string => topicNamesHi[slug] ?? topicLabel(slug)
 
 // Retired topic URLs (tags without a hub) are 308-redirected by
 // src/middleware.ts using src/content/gita/topic-redirects.json, which
@@ -264,6 +288,144 @@ export const getTopicBridgesForVerse = (tags: string[], limit = 3): TopicSummary
     .filter((t) => tagSet.has(t.slug))
     .sort((a, b) => b.verseCount - a.verseCount)
   return bridges.slice(0, limit)
+}
+
+// ── Hindi commentary, chapter gist, joint translations ──────────────────────
+
+export type HindiCommentary = {
+  chapter: number
+  verse: number
+  /** One line: what the verse says. */
+  saar: string
+  /** भावार्थ: the meaning in plain Hindi. */
+  bhavarth: string
+  /** शब्दार्थ: word and its meaning, in shloka order. */
+  shabdarth: { w: string; m: string }[]
+  /** संदर्भ: who is speaking, why, what is at stake. */
+  sandarbh: string
+  /** आज के जीवन में: a present day scene where the verse lands. */
+  aaj: string
+  /** Other verses of this chapter whose meaning is given together with this one. */
+  jointWith?: number[]
+  source?: string
+  reviewed?: boolean
+}
+
+/** Hindi commentary for a verse (src/content/gita/hi-commentary/{ch}-{vs}.json), or null. */
+export const getHindiCommentary = async (chapter: number, verse: number): Promise<HindiCommentary | null> => {
+  try {
+    const data = await import(`@/content/gita/hi-commentary/${chapter}-${verse}.json`)
+    const hc = data.default as HindiCommentary
+    return hc && hc.bhavarth ? hc : null
+  } catch {
+    return null
+  }
+}
+
+/** Hindi commentary for every verse of a chapter that has one, keyed by verse number. */
+export const getChapterHindiCommentary = async (chapter: number): Promise<Map<number, HindiCommentary>> => {
+  const out = new Map<number, HindiCommentary>()
+  for (const v of getChapter(chapter)?.verses ?? []) {
+    const hc = await getHindiCommentary(chapter, v)
+    if (hc) out.set(v, hc)
+  }
+  return out
+}
+
+export type ChapterGist = {
+  chapter: number
+  hi: { line: string; saar: string }
+  en: { line: string; saar: string }
+  famous: { verse: number }[]
+}
+
+const chapterGists = chapterGistJson as ChapterGist[]
+
+/** One-line and two-sentence summary of a chapter in both languages, plus its 3 famous verses. */
+export const getChapterGist = (chapter: number): ChapterGist | null =>
+  chapterGists.find((g) => g.chapter === chapter) ?? null
+
+const SPEAKER_HI: Record<string, string> = {
+  krishna: 'कृष्ण',
+  arjuna: 'अर्जुन',
+  sanjaya: 'संजय',
+  dhritarashtra: 'धृतराष्ट्र',
+  duryodhana: 'दुर्योधन',
+}
+
+/** Speaker name in Hindi ("Krishna" → "कृष्ण"); empty string when unknown. */
+export const speakerHi = (speaker: string | undefined): string =>
+  SPEAKER_HI[(speaker || '').trim().toLowerCase()] ?? ''
+
+/** A real Hindi translation: at least 20 Devanagari letters (a few corpus rows are stubs; 18.2 is just "॥"). */
+const isRealHindi = (hindi: string | undefined): boolean => (hindi || '').replace(/[^\u0900-\u097F]/g, '').length >= 20
+
+/** The verse has a real Hindi translation (not a stub). Use this, not a local check. */
+export const hasHindiTranslation = (v: Pick<Verse, 'hindiTranslation'>): boolean => isRealHindi(v.hindiTranslation)
+
+/** Whitespace-free Hindi translation, or '' when it is a stub. */
+const jointKey = (hindi: string | undefined): string => {
+  const k = (hindi || '').replace(/\s+/g, '')
+  return isRealHindi(k) ? k : ''
+}
+
+/**
+ * Verses (of the same chapter) whose meaning is given together with this one, in order and
+ * including `verse` itself; [verse] when it stands alone. Uses the Hindi commentary's
+ * jointWith when present, otherwise neighbouring verses with an identical Hindi translation.
+ */
+export const jointGroup = async (chapter: number, verse: number): Promise<number[]> => {
+  const hc = await getHindiCommentary(chapter, verse)
+  if (hc?.jointWith?.length) {
+    return Array.from(new Set([verse, ...hc.jointWith])).sort((a, b) => a - b)
+  }
+  const self = await getVerse(chapter, verse)
+  const key = jointKey(self?.hindiTranslation)
+  if (!key) return [verse]
+  const group = [verse]
+  for (let n = verse - 1; n >= 1; n--) {
+    const o = await getVerse(chapter, n)
+    if (!o || jointKey(o.hindiTranslation) !== key) break
+    group.unshift(n)
+  }
+  for (let n = verse + 1; ; n++) {
+    const o = await getVerse(chapter, n)
+    if (!o || jointKey(o.hindiTranslation) !== key) break
+    group.push(n)
+  }
+  return group
+}
+
+/** jointGroup for every verse of a chapter that shares its meaning with others. */
+export const getChapterJointGroups = async (chapter: number): Promise<Map<number, number[]>> => {
+  const out = new Map<number, number[]>()
+  for (const v of getChapter(chapter)?.verses ?? []) {
+    const g = await jointGroup(chapter, v)
+    if (g.length > 1) out.set(v, g)
+  }
+  return out
+}
+
+/** "3.1 और 3.2", "1.4, 1.5 और 1.6" */
+export const jointRefsHi = (chapter: number, group: number[]): string => {
+  const refs = group.map((n) => `${chapter}.${n}`)
+  return refs.length > 1 ? `${refs.slice(0, -1).join(', ')} और ${refs[refs.length - 1]}` : refs[0] ?? ''
+}
+
+/**
+ * Short Hindi line for a verse in lists: the commentary's saar, else the Hindi translation
+ * trimmed to whole words, else the first pada of the shloka.
+ */
+export const hindiVerseLine = (v: Verse, hc: HindiCommentary | null | undefined, max = 110): string => {
+  if (hc?.saar) return hc.saar
+  const hindi = (v.hindiTranslation || '').replace(/\s+/g, ' ').trim()
+  if (jointKey(hindi)) {
+    if (hindi.length <= max) return hindi
+    const cut = hindi.slice(0, max)
+    const sp = cut.lastIndexOf(' ')
+    return `${(sp > 40 ? cut.slice(0, sp) : cut).replace(/[,;:।]$/, '')}…`
+  }
+  return splitSpeaker(v.sanskrit).text.split(/[।॥]/)[0]?.trim() ?? ''
 }
 
 // ── Chapter imagery ──────────────────────────────────────────────────────────
@@ -500,11 +662,5 @@ export function getVerseAudio(chapter: number, verse: number): VerseAudio | null
 
 // ── URL helpers ──────────────────────────────────────────────────────────────
 
-export const verseUrl = (chapter: number, verse: number, lang: 'en' | 'hi' = 'en') =>
-  lang === 'hi' ? `/hi/gita/chapter/${chapter}/verse/${verse}` : `/gita/chapter/${chapter}/verse/${verse}`
-
-export const chapterUrl = (chapter: number, lang: 'en' | 'hi' = 'en') =>
-  lang === 'hi' ? `/hi/gita/chapter/${chapter}` : `/gita/chapter/${chapter}`
-
-export const topicUrl = (slug: string, lang: 'en' | 'hi' = 'en') =>
-  lang === 'hi' ? `/hi/gita/topic/${slug}` : `/gita/topic/${slug}`
+// Defined in lib/gitaUrls.ts (client-safe); re-exported so server pages keep one import.
+export { verseUrl, chapterUrl, topicUrl, readModeUrl, verseAudioUrl } from '@/lib/gitaUrls'

@@ -1,0 +1,194 @@
+/* Reader features: resume card, chapter progress, read ticks, chapter read mode, play-all player.
+   Uses only the house tokens from styles/tokens.css (maroon night, diya gold, cream text).
+   Works inside .gita-shell and on pages without it (home). Prefix: rd-. */
+
+/* ── shared bits ─────────────────────────────────────────────────────────── */
+.rd-ref {
+  font: 600 13px/1 var(--font-ui);
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-light);
+}
+
+.rd-icon-btn:focus-visible, .rd-resume-saved a:focus-visible, a.rd-verse-num:focus-visible, a.rd-deeper:focus-visible, .gita-readmode-link a:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+
+/* ── progress (resume card + chapter) ────────────────────────────────────── */
+.rd-progress { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.rd-progress-bar {
+  position: relative;
+  flex: 0 1 160px;
+  height: 4px;
+  border-radius: var(--r-pill);
+  background: var(--gold-dim);
+  overflow: hidden;
+}
+.rd-progress-bar > span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+.rd-progress-label { font: 500 13px/1.3 var(--font-ui); color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.rd-progress-label:lang(hi), .rd-progress:lang(hi) .rd-progress-label { font-family: var(--font-deva-ui); }
+.rd-progress--chapter { margin: 0 0 18px; }
+.rd-progress--chapter.is-done .rd-progress-label { color: var(--gold-light); }
+
+/* ── read tick ───────────────────────────────────────────────────────────── */
+.rd-tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  color: var(--gold-light);
+  vertical-align: middle;
+}
+
+/* ── resume card ─────────────────────────────────────────────────────────── */
+.rd-resume {
+  position: relative;
+  margin: 24px 0;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: radial-gradient(120% 160% at 0% 0%, rgba(245, 201, 106, 0.08), rgba(0, 0, 0, 0) 60%), var(--bg-leaf);
+  color: var(--text);
+  font-family: var(--font-ui);
+  animation: rd-fade var(--t-std) var(--ease) both;
+}
+.rd-resume:lang(hi) { font-family: var(--font-deva-ui); }
+.rd-resume-main { display: flex; align-items: center; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap; }
+.rd-resume-text { min-width: 0; flex: 1 1 260px; }
+.rd-resume-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2.4vw, 23px);
+  line-height: 1.3;
+  color: var(--gold-light);
+}
+.rd-resume-title:lang(hi), .rd-resume:lang(hi) .rd-resume-title { font-family: var(--font-deva-ui); font-weight: 600; }
+.rd-resume-saved { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+.rd-resume-saved-head { margin: 0 0 8px; font-size: 13px; color: var(--text-dimmer); }
+.rd-resume-saved ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.rd-resume .rd-resume-saved a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 13.5px;
+  transition: border-color var(--t-quick) var(--ease-out);
+}
+.rd-resume .rd-resume-saved a:hover { border-color: var(--border-strong); color: var(--text); }
+.rd-resume-saved-name { white-space: nowrap; }
+@media (max-width: 560px) {
+  .rd-resume { padding: 18px 16px; }
+  .rd-resume-main .sx-btn { width: 100%; }
+}
+
+/* ── chapter read mode ───────────────────────────────────────────────────── */
+.rd-intro { font-size: 15px; color: var(--text-dim); margin: -8px 0 22px; max-width: 640px; }
+.rd-intro:lang(hi) { font-family: var(--font-deva-ui); }
+.rd-backlinks { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 22px; font-size: 14px; }
+.gita-shell .rd-backlinks a, .rd-backlinks a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
+
+.rd-verses { margin-top: 28px; }
+.rd-verses > li { scroll-margin-top: 84px; transition: border-color var(--t-std) var(--ease), box-shadow var(--t-std) var(--ease); }
+.rd-verses > li.is-playing { border-color: var(--gold-light); box-shadow: 0 0 0 1px rgba(245, 201, 106, 0.35), 0 10px 40px -18px rgba(245, 201, 106, 0.45); }
+.rd-verses > li.is-playing .sx-verse-rule { width: 200px; margin-left: -100px; }
+.rd-verse-label { display: inline-flex; align-items: center; gap: 2px; }
+.gita-shell a.rd-verse-num, a.rd-verse-num { color: var(--gold); text-decoration: none; }
+a.rd-verse-num:hover { color: var(--gold-light); }
+.rd-verse-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 18px; }
+.gita-shell a.rd-deeper, a.rd-deeper { font: 500 13.5px/1.3 var(--font-ui); color: var(--gold-light); text-decoration: none; }
+a.rd-deeper:lang(hi) { font-family: var(--font-deva-ui); }
+a.rd-deeper:hover { text-decoration: underline; text-underline-offset: 3px; }
+.rd-listen-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: transparent;
+  color: var(--text-dim);
+  font: 500 13px/1 var(--font-ui);
+  cursor: pointer;
+  transition: border-color var(--t-quick) var(--ease-out), color var(--t-quick) var(--ease-out);
+}
+.rd-listen-btn:lang(hi) { font-family: var(--font-deva-ui); }
+.rd-listen-btn:hover { border-color: var(--border-strong); color: var(--text); }
+.rd-listen-btn:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+
+/* ── play-all player ─────────────────────────────────────────────────────── */
+.rd-player-slot { min-height: 76px; margin: 0 0 8px; }
+.rd-player {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px 12px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-md);
+  background: var(--bg-raise);
+  color: var(--text);
+  font-family: var(--font-ui);
+}
+.rd-player:lang(hi) { font-family: var(--font-deva-ui); }
+.rd-player--docked {
+  position: fixed;
+  z-index: var(--z-dock-player, 60);
+  left: 50%;
+  bottom: max(14px, env(safe-area-inset-bottom));
+  width: min(720px, calc(100vw - 24px));
+  transform: translateX(-50%);
+  box-shadow: 0 18px 50px -12px rgba(0, 0, 0, 0.7);
+  animation: rd-dock var(--t-std) var(--ease) both;
+}
+.rd-player-meta { min-width: 0; flex: 1 1 auto; }
+.rd-player-title { margin: 0; font-size: 15px; font-weight: 600; color: var(--gold-light); line-height: 1.3; }
+.rd-player-sub { margin: 2px 0 0; font-size: 13px; color: var(--text-dim); line-height: 1.35; font-variant-numeric: tabular-nums; }
+.rd-player-controls { display: flex; align-items: center; gap: 6px; flex: none; }
+.rd-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color var(--t-quick) var(--ease-out), transform var(--t-quick) var(--ease-out);
+}
+.rd-icon-btn:hover { color: var(--gold-light); }
+.rd-icon-btn:active { transform: scale(0.94); }
+.rd-icon-btn:disabled { opacity: 0.35; cursor: default; }
+.rd-icon-btn--main { width: 48px; height: 48px; background: var(--gold); color: var(--maroon-deep); }
+.rd-icon-btn--main:hover { background: var(--gold-light); color: var(--maroon-deep); }
+.rd-player-progress { position: absolute; left: 16px; right: 16px; bottom: 0; height: 2px; border-radius: 2px; background: var(--gold-dim); overflow: hidden; }
+.rd-player-progress > span { position: absolute; inset: 0 auto 0 0; background: var(--gold-light); }
+@media (max-width: 480px) {
+  .rd-player { gap: 10px; padding: 10px 10px 10px 12px; }
+  .rd-player-controls { gap: 2px; }
+  .rd-player-controls .rd-icon-btn:not(.rd-icon-btn--main) { width: 44px; height: 44px; }
+}
+
+/* While the player is docked, keep the last verse and the chapter links clear of it. */
+body:has(.rd-player--docked) { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+
+@keyframes rd-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rd-dock { from { opacity: 0; transform: translate(-50%, 16px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@media (prefers-reduced-motion: reduce) {
+  .rd-player--docked { animation: rd-fade var(--t-quick) linear both; }
+  .rd-icon-btn, .rd-verses > li { transition: none; }
+}

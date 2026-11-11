@@ -5,6 +5,7 @@ import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
 import StoreCTA from '@/components/app-page/StoreCTA'
+import AppButtonForPlatform from '@/components/install/AppButtonForPlatform'
 import AppStoreQR from '@/components/app-page/AppStoreQR'
 import HeroDemo from '@/components/app-page/HeroDemo'
 import AppPageMotion from '@/components/app-page/AppPageMotion'
@@ -338,7 +339,10 @@ export default function AppLandingPage() {
                 English, read to you in about two minutes.
               </p>
               <div className="ap-hero-ctas ap-in" style={{ '--d': '660ms' } as React.CSSProperties}>
-                <StoreCTA campaign="web_app_hero" location="app_hero_download" androidRef="app_page_android" size="lg" />
+                {/* Android: add to home screen when Chrome offers it, else /start (same ref as before). */}
+                <AppButtonForPlatform lang="en" location="app_hero_download" androidRef="app_page_android" androidClassName="ap-webbtn">
+                  <StoreCTA campaign="web_app_hero" location="app_hero_download" androidRef="app_page_android" size="lg" />
+                </AppButtonForPlatform>
                 <AppStoreQR className="ap-qr-hero" caption="On a computer? Scan with your iPhone camera." />
               </div>
               <ul className="ap-hero-meta ap-in" style={{ '--d': '780ms' } as React.CSSProperties}>
@@ -512,13 +516,21 @@ export default function AppLandingPage() {
               Tell Wisdom what is on your mind and read it in a minute. Week 1 is free.
             </p>
             <div className="ap-final-ctas ap-reveal" style={{ '--d': '320ms' } as React.CSSProperties}>
-              <StoreCTA campaign="web_app_final" location="app_final_download" androidRef="app_page_final" size="lg" />
+              <AppButtonForPlatform lang="en" location="app_final_download" androidRef="app_page_final" androidClassName="ap-webbtn">
+                <StoreCTA campaign="web_app_final" location="app_final_download" androidRef="app_page_final" size="lg" />
+              </AppButtonForPlatform>
               <AppStoreQR className="ap-qr-final" caption="Scan with your iPhone camera." />
             </div>
             <p className="ap-final-alt ap-reveal" style={{ '--d': '420ms' } as React.CSSProperties}>
               On Android?{' '}
               <a href="/start?ref=app_page_final" data-mp-location="app_final_android">
                 Get your verse and a 7-day plan on the web
+              </a>
+            </p>
+            <p className="ap-final-alt ap-reveal" style={{ '--d': '480ms' } as React.CSSProperties}>
+              Weighing it against other apps?{' '}
+              <a href="/best-apps" data-mp-location="app_final_compare">
+                See how Gita and Hindu practice apps compare
               </a>
             </p>
           </div>

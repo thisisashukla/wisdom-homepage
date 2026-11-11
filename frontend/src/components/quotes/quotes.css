@@ -161,7 +161,7 @@
 
 .qbar {
   position: fixed;
-  z-index: 900;
+  z-index: var(--z-dock-bar, 900);
   left: 12px;
   right: 12px;
   bottom: calc(12px + env(safe-area-inset-bottom, 0px));

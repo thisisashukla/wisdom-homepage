@@ -1,0 +1,81 @@
+/* App comparison kit (cx-): disclosure note, comparison table, app entries, method.
+   Built only from styles/tokens.css and the site kit (sx-). Used by /best-apps and its pages.
+   Motion: entries use the shared .rv reveal; nothing here animates on its own. */
+
+/* ── Disclosure note ─────────────────────────────────────────────────── */
+.cx-note { padding: 18px 20px; border-radius: var(--r-md); border: 1px solid var(--border-strong); background: rgba(200, 136, 30, 0.06); font-size: 15px; line-height: 1.65; color: var(--text); max-width: 760px; }
+.cx-note p + p { margin-top: 0.6em; }
+.cx-note strong { color: var(--gold-light); font-weight: 600; }
+.cx-note a { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.45); text-underline-offset: 3px; }
+.cx-checked { font-size: 13px; color: var(--text-dim); }
+
+/* ── Comparison table: a wide table on desktop, one card per app on phones ── */
+.cx-table-wrap { border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--bg-card); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.cx-table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5; }
+.cx-table caption { caption-side: bottom; text-align: left; padding: 12px 16px 14px; font-size: 12.5px; color: var(--text-dim); border-top: 1px solid var(--border); }
+.cx-table th, .cx-table td { text-align: left; vertical-align: top; padding: 14px 14px; border-top: 1px solid var(--border); }
+.cx-table thead th { border-top: 0; font: 700 11px/1.35 var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); background: rgba(200, 136, 30, 0.06); white-space: nowrap; }
+.cx-table tbody th { min-width: 10rem; }
+.cx-table td { color: var(--text); min-width: 6.5rem; }
+/* Desktop: the app column stays put while the rest scrolls sideways. */
+@media (min-width: 760px) {
+  .cx-table thead th:first-child, .cx-table tbody th { position: sticky; left: 0; z-index: 1; background: var(--bg-leaf); box-shadow: 1px 0 0 var(--border); }
+  .cx-table thead th:first-child { background: var(--bg-raise); }
+  .cx-row--ours th { background: var(--bg-raise); }
+}
+.cx-table-hint { margin: 0 0 10px; font-size: 13px; color: var(--text-dim); }
+@media (max-width: 759px) { .cx-table-hint { display: none; } }
+.cx-app { display: block; font-family: var(--font-display); font-size: 16.5px; line-height: 1.3; color: var(--gold-light); text-decoration: none; }
+a.cx-app:hover { text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.45); text-underline-offset: 3px; }
+.cx-dev { display: block; margin-top: 3px; font: 400 12.5px/1.4 var(--font-ui); color: var(--text-dim); }
+.cx-row--ours { background: rgba(200, 136, 30, 0.05); }
+.cx-ours { display: inline-flex; align-items: center; margin-left: 8px; padding: 2px 8px; border-radius: var(--r-pill); border: 1px solid var(--border-strong); font: 600 10.5px/1.4 var(--font-ui); letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-light); vertical-align: middle; }
+.cx-mark { display: block; font-weight: 600; }
+.cx-mark--yes { color: var(--gold-light); }
+.cx-mark--part { color: var(--text); }
+.cx-mark--no { color: var(--text-dim); font-weight: 500; }
+.cx-mark--ns { color: var(--text-dim); font-weight: 400; font-style: italic; }
+.cx-cell-note { display: block; margin-top: 2px; font-size: 12.5px; line-height: 1.45; color: var(--text-dim); }
+.cx-stale { color: var(--sindoor); }
+@media (max-width: 759px) {
+  .cx-table-wrap { overflow: visible; }
+  .cx-table, .cx-table tbody, .cx-table tr, .cx-table th, .cx-table td { display: block; width: auto; min-width: 0; }
+  .cx-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .cx-table caption { display: block; }
+  .cx-table tr { padding: 18px 16px 14px; border-top: 1px solid var(--border); }
+  .cx-table tbody tr:first-child { border-top: 0; }
+  .cx-table th, .cx-table td { border: 0; padding: 0; }
+  .cx-table tbody th { margin-bottom: 10px; }
+  .cx-table td { display: grid; grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr); column-gap: 12px; padding: 6px 0; border-top: 1px solid rgba(200, 136, 30, 0.1); }
+  .cx-table td::before { content: attr(data-col); font: 600 11px/1.5 var(--font-ui); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); padding-top: 2px; }
+}
+
+/* ── App entries ─────────────────────────────────────────────────────── */
+.cx-entries { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.cx-entry { scroll-margin-top: 96px; padding: 24px 20px 20px; border-radius: var(--r-lg); border: 1px solid var(--border); background: var(--bg-card); }
+.cx-entry--ours { border-color: var(--border-strong); background: radial-gradient(110% 80% at 0% 0%, rgba(200, 136, 30, 0.09), rgba(200, 136, 30, 0) 60%), var(--bg-card); }
+.cx-entry-kicker { margin: 0 0 6px; font: 700 11px/1.4 var(--font-ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.cx-entry .sx-h3 { color: var(--gold-light); }
+.cx-entry-kind { margin: 0 0 14px; font-size: 15px; line-height: 1.55; color: var(--text-dim); }
+.cx-entry .sx-facts { margin: 0 0 14px; }
+.cx-entry-stale { margin: 0 0 12px; font-size: 14px; color: var(--sindoor); }
+.cx-entry-cols { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 820px) { .cx-entry { padding: 28px 28px 24px; } .cx-entry-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; } }
+.cx-entry-k { margin: 0 0 8px; font: 700 11px/1.4 var(--font-ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); }
+.cx-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.cx-list li { position: relative; padding-left: 16px; font-size: 15px; line-height: 1.6; color: var(--text); }
+.cx-list li::before { content: ''; position: absolute; left: 0; top: 0.68em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+.cx-list--worth li::before { background: transparent; border: 1px solid var(--gold); }
+.cx-entry-small { margin: 16px 0 0; font-size: 13px; line-height: 1.6; color: var(--text-dim); }
+.cx-entry-links { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; }
+.cx-entry-links .sx-btn--link { min-height: 40px; font-size: 14.5px; }
+
+/* ── Simple lists inside prose (steps, apps without widgets) ─────────── */
+.cx-steps { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; font-size: 16px; line-height: 1.7; color: var(--text); }
+.cx-steps li::marker { color: var(--gold); font-weight: 600; }
+.cx-plain { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; font-size: 15.5px; line-height: 1.65; color: var(--text); }
+.cx-plain li::marker { color: var(--gold); }
+
+/* ── Method ──────────────────────────────────────────────────────────── */
+.cx-method h3 { margin-top: 1.4em; }
+.cx-method .cx-plain { margin-top: 0.4em; }

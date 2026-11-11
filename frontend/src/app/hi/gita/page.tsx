@@ -6,10 +6,16 @@ import {
   gitaHeroImage,
   chapterUrl,
   topicUrl,
+  getChapterGist,
+  hindiTagName,
 } from '@/lib/gita'
 import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
-import { LinkCards } from '@/components/site'
+import ResumeCard from '@/components/reader/ResumeCardLazy'
+import VerseJump from '@/components/search/VerseJump'
+import { PATH_LENGTH } from '@/lib/learningPath'
+import PdfDownloadWatch from '@/components/gita/PdfDownloadWatch'
+import LinkCards from '@/components/site/LinkCards'
 import { EVENTS } from '@/lib/analytics/events'
 
 const PDF_PATH = '/downloads/bhagavad-gita-700-shlok-hindi.pdf'
@@ -111,6 +117,7 @@ export default function GitaIndexPageHi() {
               <div className="gita-stat-label">भाषाएँ</div>
             </div>
           </div>
+          <VerseJump lang="hi" location="hi_gita_hub" className="gita-hub-jump" />
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 28 }}>
             <a
               href="/hi/gita/today"
@@ -142,31 +149,35 @@ export default function GitaIndexPageHi() {
         </div>
       </section>
 
+      <ResumeCard lang="hi" location="hi_gita_index" showSaved={false} />
+
       {/* SHORTCUTS: famous shlokas, full PDF */}
-      <div style={{ marginTop: 32 }}>
-        <LinkCards
-          items={[
-            {
-              href: '/hi/blogs/bhagavad-gita-quotes',
-              kicker: 'चुने हुए श्लोक',
-              title: 'गीता के 50 प्रसिद्ध श्लोक, हिंदी अर्थ सहित',
-              orig: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन',
-              body: 'वे श्लोक जो लोग सबसे ज़्यादा ढूँढते हैं। कोई भी कॉपी करें या शेयर करें।',
-              location: 'gita_hi_index_famous_shlokas',
-            },
-            {
-              href: PDF_PATH,
-              kicker: 'PDF डाउनलोड',
-              title: 'पूरी गीता PDF में, संस्कृत और हिंदी अर्थ सहित',
-              body: '18 अध्याय, 700 श्लोक। फ़ोन में सेव करें और बिना इंटरनेट के पढ़ें।',
-              location: 'gita_hi_index_pdf',
-              download: 'bhagavad-gita-700-shlok-hindi.pdf',
-              event: EVENTS.DownloadClicked,
-              eventProps: { item_id: 'bhagavad-gita-700-shlok-hindi', item_type: 'pdf' },
-            },
-          ]}
-        />
-      </div>
+      <PdfDownloadWatch href={PDF_PATH} lang="hi" location="pdf">
+        <div style={{ marginTop: 32 }}>
+          <LinkCards
+            items={[
+              {
+                href: '/hi/blogs/bhagavad-gita-quotes',
+                kicker: 'चुने हुए श्लोक',
+                title: 'गीता के 50 प्रसिद्ध श्लोक, हिंदी अर्थ सहित',
+                orig: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन',
+                body: 'वे श्लोक जो लोग सबसे ज़्यादा ढूँढते हैं। कोई भी कॉपी करें या शेयर करें।',
+                location: 'gita_hi_index_famous_shlokas',
+              },
+              {
+                href: PDF_PATH,
+                kicker: 'PDF डाउनलोड',
+                title: 'पूरी गीता PDF में, संस्कृत और हिंदी अर्थ सहित',
+                body: '18 अध्याय, 700 श्लोक। फ़ोन में सेव करें और बिना इंटरनेट के पढ़ें।',
+                location: 'gita_hi_index_pdf',
+                download: 'bhagavad-gita-700-shlok-hindi.pdf',
+                event: EVENTS.DownloadClicked,
+                eventProps: { item_id: 'bhagavad-gita-700-shlok-hindi', item_type: 'pdf' },
+              },
+            ]}
+          />
+        </div>
+      </PdfDownloadWatch>
 
       <SavedVersesPanel locale="hi" />
 
@@ -190,6 +201,9 @@ export default function GitaIndexPageHi() {
                 <div className="gita-card-eyebrow">अध्याय {ch.number}</div>
                 <div className="gita-card-title">{ch.hiName}</div>
                 <div className="gita-card-sub">{ch.hiTitle}</div>
+                {getChapterGist(ch.number)?.hi.line && (
+                  <div className="gita-card-line">{getChapterGist(ch.number)?.hi.line}</div>
+                )}
                 <div className="gita-card-meta">
                   {ch.processedVerses === ch.totalVerses
                     ? `${ch.totalVerses} श्लोक`
@@ -202,6 +216,11 @@ export default function GitaIndexPageHi() {
       </div>
 
       <h2 className="gita-h2">विषय अनुसार</h2>
+      <p className="gita-readmode-link">
+        <a href="/hi/gita/mool-shabd" data-mp-location="gita_hi_index_mool_shabd">
+          गीता पहली बार पढ़ रहे हैं? उसके {PATH_LENGTH} मूल शब्द क्रम से पढ़ें →
+        </a>
+      </p>
       <div className="gita-grid">
         {topics.slice(0, 18).map((t) => (
           <a
@@ -211,7 +230,7 @@ export default function GitaIndexPageHi() {
             data-mp-location={`gita_hi_topic_${t.slug}`}
           >
             <div className="gita-card-title" style={{ textTransform: 'capitalize' }}>
-              {t.label}
+              {hindiTagName(t.slug)}
             </div>
             <div className="gita-card-meta">{t.verseCount} श्लोक</div>
           </a>

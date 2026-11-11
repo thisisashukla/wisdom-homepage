@@ -409,7 +409,7 @@ const schemas = [
   "headline": "Karma in the Bhagavad Gita: Meaning and Key Verses | Wisdom",
   "description": "Karma means action. What the Bhagavad Gita teaches about karma in 2.47, 3.9 and 4.37.",
   "datePublished": "2026-05-05",
-  "dateModified": "2026-08-01",
+  "dateModified": "2026-11-11",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" },
   "author": {
     "@type": "Person",
@@ -499,7 +499,7 @@ export default function KarmaMeaningPage() {
           <em>Action, Its Fruits, and Knowledge</em>
         </h1>
         <p className="article-subtitle">
-          In popular use, karma means &ldquo;what goes around comes around.&rdquo; The Bhagavad Gita uses the word for action, and teaches how to act without being bound by it.
+          Karma means action. In the Bhagavad Gita it is what you do and the spirit you do it in, and Krishna teaches how to act without being bound by what the action brings.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -529,7 +529,7 @@ export default function KarmaMeaningPage() {
         </figure>
 
         <p className="lead">
-            &ldquo;Karma will get them.&rdquo; &ldquo;Good vibes only, the universe is watching.&rdquo; &ldquo;What goes around comes around.&rdquo; These have become the modern meaning of karma. They describe a cosmic justice system: you put in goodness, the universe deposits goodness back. You do wrong, cosmic punishment arrives. The Bhagavad Gita uses karma differently. In the Gita, karma means action: what you do, and the attitude you do it with.
+            In the Gita, karma means action: what you do, and the attitude you do it with. In everyday English the word has drifted. &ldquo;Karma will get them.&rdquo; &ldquo;What goes around comes around.&rdquo; Those phrases describe a cosmic justice system: you put in goodness, the universe deposits goodness back; you do wrong, and punishment arrives. The Gita starts from the plainer meaning, the act itself.
         </p>
         <h2>The Literal Meaning: Karma Is Action</h2>
         <p>

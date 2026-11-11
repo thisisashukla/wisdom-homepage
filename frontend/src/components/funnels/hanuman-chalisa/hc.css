@@ -334,3 +334,44 @@
   .hc-mean-body { color: #000; }
   .rv { opacity: 1 !important; transform: none !important; }
 }
+
+/* ── US hub additions: iPhone tip, steps, script cards, line 18 ───────── */
+.hc-ios-tip { display: flex; align-items: flex-start; gap: 8px; max-width: 64ch; margin: 10px 0 0; font-size: 14px; line-height: 1.6; color: var(--text-dim); }
+.hc-ios-icon { flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; margin-top: 1px; border: 1px solid var(--border); border-radius: 6px; color: var(--gold-light); }
+
+.hc-steps { margin: 18px 0 0; padding: 0; list-style: none; counter-reset: hc-step; max-width: 66ch; }
+.hc-steps li { position: relative; margin: 0 0 14px; padding-left: 40px; line-height: 1.65; counter-increment: hc-step; }
+.hc-steps li::before {
+  content: counter(hc-step);
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font: 600 12.5px/1 var(--font-ui);
+  color: var(--gold-light);
+}
+.hc-steps strong { color: var(--text); }
+.hc-steps a { color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(245, 201, 106, 0.4); text-underline-offset: 3px; }
+
+/* A first line in another script on a link card */
+.hc-card-script { display: block; font-family: var(--font-awadhi); font-size: 17px; line-height: 1.7; color: var(--gold-light); }
+.hc-card-script--te { font-family: var(--font-te); }
+.hc-card-script--gu { font-family: var(--font-gu); }
+.hc-card-script--kn { font-family: var(--font-kn); }
+.hc-mala-name:lang(te) { font-family: var(--font-te); }
+.hc-mala-name:lang(gu) { font-family: var(--font-gu); }
+.hc-mala-name:lang(kn) { font-family: var(--font-kn); }
+
+/* Line 18: the sun-distance sum */
+.hc-sun { max-width: 70ch; }
+.hc-sun strong { color: var(--gold-light); font-weight: 600; }
+.hc-sun-list { margin: 18px 0; display: grid; gap: 12px; }
+.hc-sun-list > div { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--r-md); background: var(--bg-card); }
+.hc-sun-list dt { margin: 0; font: 600 12px/1.6 var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); }
+.hc-sun-list dd { margin: 0; line-height: 1.65; }
+@media (max-width: 520px) { .hc-sun-list > div { grid-template-columns: 1fr; gap: 4px; } }

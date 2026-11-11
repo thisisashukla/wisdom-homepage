@@ -1,10 +1,14 @@
 /** /hi/chanakya-niti (Hindi). Server. */
 
+import { Fragment } from 'react'
 import PageTracker from '@/components/BlogTracker'
 import { Faq, JsonLd, PageHero, Section, VerseList } from '@/components/site'
 import { CHK_SECTIONS, chkEdition, chkNotSaid, chkSituations, chkVerse, chkVerses, chkWomen, type ChkVerse } from '@/lib/funnels/sayings/data'
 import { CHK_HUB, CHK_PATH, CHK_SECTION, sealText } from '@/lib/funnels/sayings/copy-chanakya'
 import { abs, cardOg, ldArticle, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
+import KeepScope from '@/components/quotes/KeepScope'
+import HubTop from '@/components/quotes/HubTop'
+import { hubLinesFrom } from '@/components/quotes/hubLines'
 import { DevaVerse } from './cards'
 import SituationPicker from './SituationPicker'
 import { JumpChips, Method, NextBand, NextPanel, Related } from './parts'
@@ -47,6 +51,19 @@ export default function ChanakyaHub() {
   const women = chkWomen()
   const hero = chkVerse(HERO_REF)
   let pos = 0
+  // Lines for HubTop (Today's line, Lines you kept), as the quote hubs do (QuotePage): the verses in page
+  // order first (Today's line picks from these), then any situation-picker verse not among them.
+  const { lines: hubLines, todayCount } = hubLinesFrom(
+    (v: ChkVerse) => ({ id: v.id, meaning: v.meaning.hi, source: `चाणक्य नीति, अध्याय ${v.chapter}, श्लोक ${v.verse}` }),
+    CHK_SECTIONS.flatMap((s) => verses.filter((v) => v.section === s)),
+    chkSituations().flatMap((s) =>
+      s.refs
+        .map((r) => chkVerse(r))
+        .filter((v): v is ChkVerse => Boolean(v))
+        .map((v) => ({ item: v, anchor: `${v.id}-${s.id}` })),
+    ),
+  )
+  const hubLabels = { today: 'आज की नीति', kept: 'आपकी रखी नीतियाँ', note: 'आज इसे मन में रखें। कल एक नई नीति मिलेगी।' }
   const ld = [
     ldArticle({
       headline: c.h1,
@@ -72,7 +89,7 @@ export default function ChanakyaHub() {
     ),
   ]
   return (
-    <>
+    <KeepScope hub={CHK_PATH}>
       <PageTracker pageName="Chanakya Niti Hub HI" />
       <JsonLd data={ld} />
       <PageHero
@@ -129,17 +146,20 @@ export default function ChanakyaHub() {
       </Section>
 
       {CHK_SECTIONS.map((s, si) => (
-        <Section key={s} id={s} tone={si % 2 ? 'band' : 'default'} width="narrow" title={CHK_SECTION[s].hi} intro={CHK_SECTION[s].intro}>
-          <VerseList>
-            {verses
-              .filter((v) => v.section === s)
-              .map((v) => {
-                pos += 1
-                return <Card key={v.id} as="li" v={v} pos={pos} section={s} />
-              })}
-          </VerseList>
-          {si === 1 && <NextPanel heading="हर सुबह काम की एक पंक्ति" hub="chanakya" locale="hi" pageKey={PAGE_KEY} />}
-        </Section>
+        <Fragment key={s}>
+          <Section key={s} id={s} tone={si % 2 ? 'band' : 'default'} width="narrow" title={CHK_SECTION[s].hi} intro={CHK_SECTION[s].intro}>
+            <VerseList>
+              {verses
+                .filter((v) => v.section === s)
+                .map((v) => {
+                  pos += 1
+                  return <Card key={v.id} as="li" v={v} pos={pos} section={s} />
+                })}
+            </VerseList>
+            {si === 1 && <NextPanel heading="हर सुबह काम की एक पंक्ति" hub="chanakya" locale="hi" pageKey={PAGE_KEY} />}
+          </Section>
+          {si === 0 && <HubTop hub={CHK_PATH} locale="hi" lines={hubLines} todayCount={todayCount} labels={hubLabels} />}
+        </Fragment>
       ))}
 
       <Section id="nahin-kaha" tone={CHK_SECTIONS.length % 2 ? 'band' : 'default'} width="narrow" title={c.notSaidH} intro={c.notSaidIntro}>
@@ -203,6 +223,6 @@ export default function ChanakyaHub() {
           },
         ]}
       />
-    </>
+    </KeepScope>
   )
 }

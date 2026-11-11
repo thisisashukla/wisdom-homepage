@@ -1754,7 +1754,7 @@ a.gv-key:hover {
   bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 90;
+  z-index: var(--z-dock-nav, 90);
   display: flex;
   align-items: center;
   gap: 2px;
@@ -1950,4 +1950,64 @@ a.gv-key:hover {
 /* Touch devices generally: hover-dimming off */
 @media (hover: none) {
   .gv-wbw-flow:hover .gv-word:not(:hover) { opacity: 1; }
+}
+
+/* ── Reader integration (Nov 2026) ───────────────────────────────────────── */
+
+/* Speaker line of a shloka ("धृतराष्ट्र उवाच"), set by SanskritText on its own line */
+.sa-speaker {
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+}
+
+/* Hindi verse page: note under a translation shared by two or more verses */
+.gv-joint-note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-dimmer);
+  margin: 10px auto 0;
+  max-width: 560px;
+}
+
+/* Hindi शब्दार्थ uses the word-by-word chips as a list */
+.gv-wbw-list { list-style: none; margin: 0; }
+.gv-word-hi {
+  font-family: var(--font-deva-ui);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+/* "English में पढ़ें" switch and the English explanation it opens */
+.gv-lang-toggle { margin: 28px 0 8px; }
+.gv-lang-toggle > [id] { margin-top: 18px; }
+
+/* Chapter pages: read mode link, chapter in brief, famous verses */
+.gita-readmode-link {
+  margin-top: 12px;
+  font-size: 14.5px;
+}
+.gita-readmode-link a {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.gita-gist { margin: 24px 0 8px; }
+.gita-famous { margin: 8px 0 12px; }
+.gita-famous .gita-h2 { margin-top: 32px; }
+.gita-verse-essence--hi {
+  font-family: var(--font-deva-ui);
+  font-style: normal;
+  font-size: 16.5px;
+}
+.gita-verse-joint { letter-spacing: 0.02em; text-transform: none; }
+.gita-verse-ref .rd-tick { margin: 6px 0 0; }
+
+/* Hubs: verse jump under the stat row, chapter one-liner on each card */
+.gita-hub-jump { margin-top: 20px; max-width: 520px; }
+.gita-card-line {
+  margin-top: 8px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text);
 }

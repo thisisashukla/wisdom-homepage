@@ -15,6 +15,7 @@ import sayingsJson from '@/content/quotes/sayings.json'
 import fakesJson from '@/content/quotes/fakes.json'
 import hookJson from '@/content/quotes/hook.json'
 import { getVerseAudio } from '@/lib/gita'
+import { verseAudioUrl } from '@/lib/gitaUrls'
 import { QUOTE_PAGES } from '@/content/quotes/pages'
 import type { FakeQuote, HookFeeling, MomentId, Quote, QuotePageConfig } from './quotes-shared'
 
@@ -105,7 +106,6 @@ export function anotherQuote(quote: Quote): Quote | null {
   return gita[0] ?? null
 }
 
-const AUDIO_BASE = 'https://pheysuesndqmmsogtdbt.supabase.co/storage/v1/object/public/wisdom-homepage/audio/bhagavad_gita/'
 
 /** Recitation URL for a Gita quote (same files as the verse pages), else null. */
 export function audioFor(quote: Quote): string | null {
@@ -113,7 +113,7 @@ export function audioFor(quote: Quote): string | null {
   try {
     const a = getVerseAudio(quote.chapter, quote.verse)
     if (!a?.audio) return null
-    return a.audio.startsWith('http') ? a.audio : `${AUDIO_BASE}${a.audio.replace(/^gita\//, '')}`
+    return verseAudioUrl(a.audio)
   } catch {
     return null
   }

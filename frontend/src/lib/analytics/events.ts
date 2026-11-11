@@ -67,6 +67,7 @@ export const EVENTS = {
   NextStepClicked: 'Next Step Clicked',
   DownloadClicked: 'Download Clicked',
   GitaBridgeClicked: 'Gita Bridge Clicked',
+  VideoPlayed: 'Video Played',
 
   // ── Funnel-specific interactions (one place each) ────────────────────────
   // Hanuman Chalisa
@@ -205,6 +206,31 @@ export const EVENTS = {
   NivataTestFailed: 'Nivata Test Failed',
   NivataCardShared: 'Nivata Card Shared',
   NivataCardSaved: 'Nivata Card Saved',
+  // Reader features (Nov 2026): continue reading, chapter read mode, search, daily, install
+  ResumeCardViewed: 'Resume Card Viewed',
+  ResumeCardClicked: 'Resume Card Clicked',
+  VerseRead: 'Verse Read',
+  ChapterReadModeOpened: 'Chapter Read Mode Opened',
+  PlayAllStarted: 'Play All Started',
+  PlayAllCompleted: 'Play All Completed',
+  /** Play-All controls: { control: 'pause' | 'resume' | 'next' | 'prev' | 'restart' | 'listen_from_here', item_id: 'bg-ch-N', position, location } */
+  PlayerControlClicked: 'Player Control Clicked',
+  ExplanationLanguageToggled: 'Explanation Language Toggled',
+  /** { query, result: 'verse' | 'chapter' | 'invalid' | 'search', item_id?, location } */
+  VerseJumpCompleted: 'Verse Jump Completed',
+  /** { query, results, script, location } */
+  SearchCompleted: 'Search Completed',
+  /** { item_id, item_type, position, query, location: 'results' | 'suggestion' } */
+  SearchResultClicked: 'Search Result Clicked',
+  WhatsAppJoinViewed: 'WhatsApp Join Viewed',
+  WhatsAppJoinClicked: 'WhatsApp Join Clicked',
+  InstallPromptViewed: 'Install Prompt Viewed',
+  InstallPromptClicked: 'Install Prompt Clicked',
+  AppInstalled: 'App Installed',
+  /** Keep / रखें on a quote line: { item_id, item_type, to: 'kept' | 'released', location } */
+  QuoteKeepToggled: 'Quote Keep Toggled',
+  TodayLineViewed: 'Today Line Viewed',
+  LearningPathStepClicked: 'Learning Path Step Clicked',
 } as const
 
 export type EventKey = keyof typeof EVENTS

@@ -1,14 +1,16 @@
 'use client'
 
 /**
- * Per-verse bookmark toggle. Persists to localStorage under 'wisdom.bookmarks'.
- * Used on verse pages; the saved list is rendered by <SavedVersesPanel/> on /gita.
+ * Per-verse save toggle ("Save" / "सहेजें"). Writes through lib/readingProgress (wq_reading.saved),
+ * so the resume card and the saved list on /gita update at once. Verses saved before Nov 2026
+ * live in the older 'wisdom.bookmarks' list, which readingProgress still reads (and unsaving
+ * removes from), so nobody loses a save.
  */
 
-import { useEffect, useState, useCallback } from 'react'
-import { trackEvent } from '@/lib/mixpanel'
-
-const KEY = 'wisdom.bookmarks'
+import { useCallback, useEffect, useState } from 'react'
+import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import { isSaved, setSaved as storeSaved, subscribeReading } from '@/lib/readingProgress'
+import { verseItemId } from '@/lib/gitaUrls'
 
 const labels = {
   en: { save: 'Save', saved: 'Saved' },
@@ -23,38 +25,21 @@ type Props = {
 
 export type Bookmark = { chapter: number; verse: number; addedAt: number }
 
-const read = (): Bookmark[] => {
-  if (typeof window === 'undefined') return []
-  try {
-    const raw = window.localStorage.getItem(KEY)
-    return raw ? (JSON.parse(raw) as Bookmark[]) : []
-  } catch {
-    return []
-  }
-}
-const write = (bms: Bookmark[]) => {
-  if (typeof window === 'undefined') return
-  try { window.localStorage.setItem(KEY, JSON.stringify(bms)) } catch { /* quota */ }
-}
-
 export default function VerseBookmark({ chapter, verse, locale = 'en' }: Props) {
   const t = labels[locale]
   const [saved, setSaved] = useState(false)
 
   useEffect(() => {
-    const list = read()
-    setSaved(list.some((b) => b.chapter === chapter && b.verse === verse))
+    const check = () => setSaved(isSaved(chapter, verse))
+    check()
+    return subscribeReading(check)
   }, [chapter, verse])
 
   const toggle = useCallback(() => {
-    const list = read()
-    const exists = list.some((b) => b.chapter === chapter && b.verse === verse)
-    const next = exists
-      ? list.filter((b) => !(b.chapter === chapter && b.verse === verse))
-      : [...list, { chapter, verse, addedAt: Date.now() }].slice(-100)
-    write(next)
-    setSaved(!exists)
-    trackEvent(exists ? 'Verse Unbookmarked' : 'Verse Bookmarked', { chapter, verse, locale })
+    const next = !isSaved(chapter, verse)
+    storeSaved(chapter, verse, next)
+    setSaved(next)
+    trackEvent(next ? EVENTS.VerseBookmarked : EVENTS.VerseUnbookmarked, { chapter, verse, locale, item_id: verseItemId(chapter, verse), item_type: 'verse' })
   }, [chapter, verse, locale])
 
   return (

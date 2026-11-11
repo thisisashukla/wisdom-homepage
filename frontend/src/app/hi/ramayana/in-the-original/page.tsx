@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import PageTracker from '@/components/BlogTracker'
 import { Faq, JsonLd, LinkCards, NextStep, PageHero, Section } from '@/components/site'
+import AnswerFirst from '@/components/learn/AnswerFirst'
 import SceneLedger from '@/components/funnels/ramayana/SceneLedger'
 import LampLegend from '@/components/funnels/ramayana/LampLegend'
 import KeepCards from '@/components/funnels/ramayana/KeepCards'
@@ -11,7 +12,8 @@ import { SCENES, getLine, lineView } from '@/lib/funnels/ramayana/data'
 import { HUB_COUNTS, HUB_FAQ, HUB_QUICK } from '@/lib/funnels/ramayana/hubCopy'
 import { PATHS } from '@/lib/funnels/ramayana/paths'
 import { articleLd, itemListLd, ramayanaMeta } from '@/lib/funnels/ramayana/seo'
-import { lineOriginal } from '@/lib/funnels/ramayana/verse'
+import { lineOriginal, padasDeva, padasIast } from '@/lib/funnels/ramayana/verse'
+import { sceneAnswerHi } from './answers'
 
 const DESC = 'लक्ष्मण रेखा, अहल्या, केवट, शबरी के बेर: रामायण फ़िल्म के कौन से दृश्य वाल्मीकि में हैं और कौन से तुलसीदास के, मूल पंक्तियों और हिंदी अर्थ के साथ।'
 
@@ -26,6 +28,11 @@ export const metadata: Metadata = ramayanaMeta({
 
 export default function HiInTheOriginalPage() {
   const hero = lineView(getLine('rcm-6-36-1'), 'hi')
+  // Answer-first blocks, one per scene (./answers.ts): the English scene answers in Hindi, on the same source line.
+  const answers = SCENES.flatMap((s) => {
+    const a = sceneAnswerHi(s.slug)
+    return a ? [{ slug: s.slug, ...a, view: lineView(getLine(a.line), 'hi') }] : []
+  })
   return (
     <main>
       <PageTracker pageName="Ramayana In The Original HI" />
@@ -74,6 +81,27 @@ export default function HiInTheOriginalPage() {
       <Section id="scenes" title="दृश्य, कथा के क्रम में" lang="hi">
         <SceneLedger scenes={SCENES} locale="hi" showQuick />
       </Section>
+
+      {answers.length > 0 && (
+        <Section id="answers" title="सीधे उत्तर, मूल पंक्ति के साथ" intro="हर प्रश्न का छोटा उत्तर, और वह पंक्ति जिस पर वह टिका है।" lang="hi">
+          {answers.map((a) => (
+            <AnswerFirst
+              key={a.slug}
+              id={`answer-${a.slug}`}
+              locale="hi"
+              className="rv"
+              question={a.question}
+              answer={a.answer}
+              source={{
+                text: padasDeva(a.view.sa).join('\n'),
+                iast: a.view.iast ? padasIast(a.view.iast).join('\n') : undefined,
+                ref: a.view.ref,
+                lang: a.view.lang,
+              }}
+            />
+          ))}
+        </Section>
+      )}
 
       <Section id="keep" tone="band" title="सहेजने लायक पंक्तियाँ" intro="एक पंक्ति इस हफ़्ते के लिए रख लें, या उस दोस्त को भेजें जो फ़िल्म देखने जा रहा है।" lang="hi">
         <KeepCards ids={['ram-anirveda', 'ram-trouble-passes', 'ram-good-sense', 'ram-hundred-years']} locale="hi" pageKey="ramayana-original-hi" path={PATHS.hiOriginal} />

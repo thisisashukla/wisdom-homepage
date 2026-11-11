@@ -4,7 +4,8 @@
  * Device-aware next step after someone uses a line.
  * iPhone: the app (App Store, campaign ct = q-<pagekey>-<placement>).
  * Every link carries the same slug (ref on /start), lowercase a to z, 0 to 9 and hyphens, at most 40 characters.
- * Android: the WhatsApp channel when NEXT_PUBLIC_WHATSAPP_CHANNEL_URL is set, else /start.
+ * Android: the WhatsApp channel when NEXT_PUBLIC_WHATSAPP_CHANNEL_URL is set and the reader has
+ * not joined yet (lib/whatsapp hasJoined, shared with <WhatsAppDaily />), else /start.
  * Desktop (and the server render): /start, a week of lines by email.
  * The server renders the desktop version so nothing jumps on desktop; phones swap after mount.
  */
@@ -13,6 +14,7 @@ import { useEffect, useRef, useState } from 'react'
 import { appStoreUrl, detectPlatform, startUrl, type Platform } from '@/lib/app'
 import { EVENTS, trackEvent, trackEventBeacon, trackLinkClick } from '@/lib/mixpanel'
 import { slugify, type Locale } from '@/lib/quotes-shared'
+import { hasJoined, markJoined, whatsappChannelUrl } from '@/lib/whatsapp'
 import '@/components/site/site.css'
 import './card.css'
 
@@ -50,20 +52,23 @@ const COPY: Record<Locale, Record<Kind, { line: string; cta: string }>> = {
   },
 }
 
-const WHATSAPP_CHANNEL = process.env.NEXT_PUBLIC_WHATSAPP_CHANNEL_URL || ''
-
 export default function NextStep({ locale, pageName, pageKey, placement, startSituation, className, copy: copyOverride, funnel }: NextStepProps) {
   const [platform, setPlatform] = useState<Platform | null>(null)
+  const [joined, setJoined] = useState(false)
   const rootRef = useRef<HTMLDivElement>(null)
   const shown = useRef(false)
 
-  useEffect(() => setPlatform(detectPlatform()), [])
+  useEffect(() => {
+    setPlatform(detectPlatform())
+    setJoined(hasJoined())
+  }, [])
 
+  const channel = whatsappChannelUrl()
   const p: Platform = platform ?? 'desktop'
-  const kind: Kind = p === 'ios' ? 'app' : p === 'android' && WHATSAPP_CHANNEL ? 'whatsapp' : 'email'
+  const kind: Kind = p === 'ios' ? 'app' : p === 'android' && channel && !joined ? 'whatsapp' : 'email'
   const slug = slugify(`q-${pageKey || pageName || 'page'}-${placement}`)
   const href =
-    kind === 'app' ? appStoreUrl(slug) : kind === 'whatsapp' ? WHATSAPP_CHANNEL : startUrl({ s: startSituation, ref: slug })
+    kind === 'app' ? appStoreUrl(slug) : kind === 'whatsapp' && channel ? channel : startUrl({ s: startSituation, ref: slug })
   const target = kind === 'app' ? 'app_store' : kind === 'whatsapp' ? 'whatsapp' : 'start'
   const external = kind !== 'email'
   const copy = copyOverride?.[kind] ?? COPY[locale][kind]
@@ -98,6 +103,7 @@ export default function NextStep({ locale, pageName, pageKey, placement, startSi
   const onTap = () => {
     trackEventBeacon(EVENTS.NextStepClicked, { platform: p, placement, target, page_key: pageKey ?? null, ref: slug, funnel: funnel ?? undefined })
     trackLinkClick(null, `next_step_${placement}`, href)
+    if (kind === 'whatsapp') markJoined()
   }
 
   return (

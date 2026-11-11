@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import type { EventName } from '@/lib/analytics/events'
 import './site.css'
 
 export type Action = {
@@ -10,16 +11,24 @@ export type Action = {
   hrefLang?: string
   /** Opens in a new tab (external). */
   external?: boolean
+  /** Links to a file: sets the download attribute (a string names the saved file). */
+  download?: boolean | string
+  /** A registry event sent with Link Clicked (as on LinkCards: data-mp-event + data-mp-props). */
+  event?: EventName
+  eventProps?: Record<string, unknown>
 }
 
 /** The one button/link style: primary (gold), secondary (outline), link (underlined gold). */
-export function Button({ href, label, location, variant = 'secondary', hrefLang, external, className = '' }: Action & { className?: string }) {
+export function Button({ href, label, location, variant = 'secondary', hrefLang, external, download, event, eventProps, className = '' }: Action & { className?: string }) {
   return (
     <a
       href={href}
       hrefLang={hrefLang}
+      download={download}
       className={`sx-btn sx-btn--${variant} ${className}`.trim()}
       data-mp-location={location}
+      data-mp-event={event}
+      data-mp-props={eventProps ? JSON.stringify(eventProps) : undefined}
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
     >
       {label}

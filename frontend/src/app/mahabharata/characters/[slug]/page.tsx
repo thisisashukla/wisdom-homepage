@@ -10,6 +10,7 @@ import { heroVerseOf, line } from '@/lib/funnels/mahabharata/lines'
 import { NEXT } from '@/lib/funnels/mahabharata/next'
 import { PATHS, articleLd, graph, meta, ogImage } from '@/lib/funnels/mahabharata/seo'
 import '@/components/funnels/mahabharata/mbh.css'
+import { CHARACTER_ANSWERS } from './answers'
 
 type Params = { slug: string }
 
@@ -48,6 +49,9 @@ export default function Page({ params }: { params: Params }) {
   const ld = graph(articleLd({ headline: `${c.name} in the Mahabharata`, description: c.description, path, image: card ? ogImage(card) : undefined, about: c.name }))
   const others = CHARACTERS.filter((x) => x.slug !== c.slug)
   const side = p.side === 'pandava' ? 'Pandava side' : p.side === 'kaurava' ? 'Kaurava side' : 'not fighting'
+  // Answer-first block under the H1 (./answers.ts).
+  const answer = CHARACTER_ANSWERS[c.slug]
+  const answerLine = answer ? line(answer.lineId) : null
   return (
     <>
       <JsonLd data={ld} />
@@ -65,6 +69,15 @@ export default function Page({ params }: { params: Params }) {
             </>
           }
           sub={p.role}
+          answer={
+            answer && answerLine
+              ? {
+                  question: answer.question,
+                  answer: answer.answer,
+                  source: { text: answerLine.deva, iast: answerLine.iast, ref: `${answerLine.speaker.en} · ${answerLine.ref}`, lang: 'sa' },
+                }
+              : undefined
+          }
           facts={[`${c.beats.length} turns in the story`, `${c.lineIds.length} lines in Sanskrit`, `On Day 1: ${side}`]}
           actions={[{ href: '#choice', label: <>Read {c.name}&apos;s choice</>, location: 'char_hero_choice' }]}
           verse={heroVerseOf(c.heroLineId)}

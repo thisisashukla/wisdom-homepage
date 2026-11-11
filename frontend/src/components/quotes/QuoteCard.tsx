@@ -13,6 +13,9 @@
  * Events (ShareActions): Quote Copied, Quote Shared { method }, Quote Image Saved / Save Failed /
  * Save Cancelled { format }, Quote Audio Played; all with item_id, item_type 'quote', moment,
  * position and mode ('bio' | 'full').
+ *
+ * Inside a KeepScope (every QuotePage hub) the action row also has Keep / रखें (KeepButton, passed to
+ * ShareActions as `extra`), which keeps the line on this device for that hub: Quote Keep Toggled { to }.
  */
 
 import { useState, type ReactNode } from 'react'
@@ -20,6 +23,8 @@ import { cardImageUrl, isQuoteView, toView, viewCopyText, viewShareUrl, type Loc
 import VerseCard from '@/components/site/VerseCard'
 import ShareActions from '@/components/site/ShareActions'
 import { MoreBody } from './QuoteMore'
+import KeepButton from './KeepButton'
+import { useKeepHub } from './KeepScope'
 import './card.css'
 
 export type QuoteCardProps = {
@@ -86,6 +91,7 @@ export default function QuoteCard({
   const lean = variant === 'hero' && compactHero
   const moreBody = variant === 'compact' ? null : children ?? (full ? <MoreBody quote={full} locale={locale} /> : null)
   const [expanded, setExpanded] = useState(false)
+  const keepHub = useKeepHub()
 
   const chipHref = verseHref === undefined ? (variant === 'hero' ? null : view.href) : verseHref
   const iast = !lean && view.iast ? view.iast : undefined
@@ -118,21 +124,26 @@ export default function QuoteCard({
       actions={
         <>
           <ShareActions
-            item={{ id: view.id, type: 'quote' }}
-            locale={locale}
-            copyText={bio ? view.sa : viewCopyText(view, 'copy')}
-            shareText={viewCopyText(view, 'whatsapp')}
-            whatsappFallback={viewShareUrl(view, 'whatsapp')}
-            copyLabel={bio ? t.copyBio : undefined}
-            image={{
-              url: (format) => cardImageUrl(view.id, { format, lang: locale, v: view.v, download: true }),
-              fileName: (format) => `${view.file}-${format}.png`,
-            }}
-            audioSrc={lean ? null : audioSrc}
-            pageKey={pageKey}
-            startSituation={startSituation}
-            props={{ moment: moment ?? null, position: position ?? null, mode: bio ? 'bio' : 'full' }}
-          />
+              item={{ id: view.id, type: 'quote' }}
+              locale={locale}
+              copyText={bio ? view.sa : viewCopyText(view, 'copy')}
+              shareText={viewCopyText(view, 'whatsapp')}
+              whatsappFallback={viewShareUrl(view, 'whatsapp')}
+              copyLabel={bio ? t.copyBio : undefined}
+              image={{
+                url: (format) => cardImageUrl(view.id, { format, lang: locale, v: view.v, download: true }),
+                fileName: (format) => `${view.file}-${format}.png`,
+              }}
+              audioSrc={lean ? null : audioSrc}
+              pageKey={pageKey}
+              startSituation={startSituation}
+              props={{ moment: moment ?? null, position: position ?? null, mode: bio ? 'bio' : 'full' }}
+              extra={
+                keepHub ? (
+                  <KeepButton id={view.id} hub={keepHub} locale={locale} props={{ moment: moment ?? null, position: position ?? null, location: 'card' }} />
+                ) : undefined
+              }
+            />
           {(moreBody || showAnother) && (
             <div className="qc-foot">
               {moreBody && (
@@ -157,3 +168,4 @@ export default function QuoteCard({
     />
   )
 }
+

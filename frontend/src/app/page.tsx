@@ -14,6 +14,8 @@ import { GITA_FOR } from '@/lib/gitaFor'
 import { THEME_SLUGS } from '@/lib/themePlans'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import PlatformOnly from '@/components/funnel/PlatformOnly'
+import AppButtonForPlatform from '@/components/install/AppButtonForPlatform'
+import ResumeCard from '@/components/reader/ResumeCardLazy'
 import { tiro } from '@/components/quotes/fonts'
 import './home.css'
 import './home-v3.css'
@@ -158,6 +160,11 @@ export default async function HomePage() {
         </section>
       </div>
 
+      {/* ── RESUME: returning readers go back to their last verse (renders nothing for new visitors) ── */}
+      <div className="wrap">
+        <ResumeCard lang="auto" location="home" />
+      </div>
+
       {/* ── TODAY'S VERSE ── */}
       {todayVerse && todayRef && (
         <section className="section section-alt" id="today" data-mp-section="today_verse_card">
@@ -200,11 +207,14 @@ export default async function HomePage() {
                 >
                   Read this verse in full →
                 </a>
-                <PlatformOnly on={['ios']}>
-                  <a href={appStoreUrl('web_home_today_lockscreen')} target="_blank" rel="noopener" className="btn-ghost" data-mp-location="home_today_lockscreen">
-                    Put it on your Lock Screen
-                  </a>
-                </PlatformOnly>
+                {/* iPhone: the Lock Screen link. Android: add to home screen, or /start. Computers: nothing. */}
+                <AppButtonForPlatform lang="en" location="home_today_lockscreen" androidClassName="btn-ghost">
+                  <PlatformOnly on={['ios']}>
+                    <a href={appStoreUrl('web_home_today_lockscreen')} target="_blank" rel="noopener" className="btn-ghost" data-mp-location="home_today_lockscreen">
+                      Put it on your Lock Screen
+                    </a>
+                  </PlatformOnly>
+                </AppButtonForPlatform>
               </div>
             </div>
           </div>

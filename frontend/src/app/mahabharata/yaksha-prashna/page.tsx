@@ -18,6 +18,14 @@ const DESC =
 
 export const metadata: Metadata = meta({ title: TITLE, description: DESC, path: PATH, cardId: CARD })
 
+/** Answer-first block under the H1: the question as people search it, answered from the page's own lines. */
+const ANSWER = {
+  question: 'What did the Yaksha ask Yudhishthira?',
+  answer:
+    'The Yaksha asked what is heavier than the earth, what is faster than the wind, which enemy is hardest to defeat and what the greatest wonder is, among dozens of questions. Yudhishthira answered every one, and his four brothers lived again.',
+  lineId: 'mbh.3.314.62',
+}
+
 const FAQ = [
   { q: 'What is the Yaksha prashna?', a: 'The questions a yaksha puts to Yudhishthira at a lake in the forest, in the Vana Parva. The yaksha has struck down his four brothers for drinking without answering. Yudhishthira answers every question, and they live again (MBh 3.314).' },
   { q: 'Who was the Yaksha?', a: 'Dharma, Yudhishthira\'s own father, who came to test him. "I am your father, child: Dharma," he says once the questions are done (MBh 3.315.6).' },
@@ -45,6 +53,16 @@ export default function Page() {
           ]}
           eyebrow="Vana Parva, at the lake"
           title="The Yaksha's questions"
+          answer={{
+            question: ANSWER.question,
+            answer: ANSWER.answer,
+            source: {
+              text: line(ANSWER.lineId).deva,
+              iast: line(ANSWER.lineId).iast,
+              ref: `${line(ANSWER.lineId).speaker.en} · ${line(ANSWER.lineId).ref}`,
+              lang: 'sa',
+            },
+          }}
           facts={['MBh 3.313 to 3.315', 'Twelfth year of exile']}
           actions={[{ href: '#quiz', label: 'Try the 10-question quiz', location: 'yaksha_hero_quiz' }]}
           verse={heroVerseOf('mbh.3.314.118')}

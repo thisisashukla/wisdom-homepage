@@ -3,9 +3,14 @@
  * eyebrow, H1, promise, moment chips, the script switch), a Section per moment with QuoteCards and
  * the LineForYou hook after the 3rd card, "Lines Krishna never said", the daily line, extra text,
  * Faq, related LinkCards, LineBar, and JSON-LD. Nav and footer come from the route layouts.
+ *
+ * Below the first section of lines, HubTop shows "Today's line" (a new line each day, IST) and, for returning
+ * visitors, "Lines you kept". The page sits in a KeepScope, so every QuoteCard on it (sections,
+ * the line picker, "Lines Krishna never said") has Keep / रखें beside its share buttons.
  */
 
 import type { Metadata } from 'next'
+import { Fragment } from 'react'
 import {
   absUrl,
   audioMap,
@@ -34,9 +39,13 @@ import LineForYou from './LineForYou'
 import NextStep from './NextStep'
 import LineBar from './LineBar'
 import FakeQuotes from './FakeQuotes'
+import KeepScope from './KeepScope'
+import HubTop from './HubTop'
+import { hubLinesFrom } from './hubLines'
 import { MoreBody, hasMore } from './QuoteMore'
 import './card.css'
 import './quotes.css'
+import './keep.css'
 
 const HOOK_AFTER = 3
 
@@ -150,6 +159,17 @@ export default function QuotePage({ config }: { config: QuotePageConfig }) {
     ...(f.startSituation ? { startSituation: f.startSituation } : {}),
   }))
 
+  // Lines for HubTop: the main lines first (Today's line picks from these), then the picker's and
+  // the "never said" cards' lines, so a line kept there still shows in "Lines you kept".
+  const { lines: hubLines, todayCount } = hubLinesFrom(
+    (q: Quote) => ({ id: q.id, meaning: q.meaning[locale], source: view(q).sourceLine }),
+    uniqueQuotes,
+    [
+      ...(showHook ? hookQuotes.map((q) => ({ item: q, anchor: 'line-for-you' })) : []),
+      ...fakeReal.map((q) => ({ item: q, anchor: `${q.id}-real` })),
+    ],
+  )
+
   // Filtering is by section moment. Filter chips only for moments that have a section; link chips always.
   const present = new Set(sections.map((s) => s.moment))
   const chips = config.chips.filter((c) => c.href || present.has(c.moment))
@@ -221,94 +241,99 @@ export default function QuotePage({ config }: { config: QuotePageConfig }) {
   }
 
   return (
-    <main className="qp-page" lang={locale} data-qp-root="" data-page={config.key}>
-      <JsonLd data={itemList} />
+    <KeepScope hub={config.path}>
+      <main className="qp-page" lang={locale} data-qp-root="" data-page={config.key}>
+        <JsonLd data={itemList} />
 
-      <PageHero
-        locale={locale}
-        crumbs={crumbs}
-        eyebrow={t.eyebrow(uniqueQuotes.length, monthYear(config.updated, locale))}
-        title={config.h1}
-        sub={config.promise}
-        scriptToggle
-        lang={locale}
-        below={<MomentChips chips={chips} locale={locale} />}
-      />
-
-      {sections.map((sec) => (
-        <Section
-          key={sec.key}
-          id={sectionId(sec.moment)}
-          title={sec.heading}
-          intro={sec.intro}
-          tone={tone()}
-          width="narrow"
-          spacing="tight"
-          className={`qp-moment qp-m-${sec.moment}${sec.hasHook ? ' qp-has-hook' : ''}`}
-        >
-          <div className="qp-cards">
-            {sec.items.map((it) =>
-              it === 'hook' ? (
-                <div key="hook" className="qp-hook-slot">
-                  <LineForYou
-                    feelings={feelingViews}
-                    quotes={hookMap}
-                    question={config.hook.question}
-                    preset={config.hook.preset}
-                    locale={locale}
-                    pageKey={config.key}
-                    audio={hookAudio}
-                  />
-                </div>
-              ) : (
-                renderCard(it, sec)
-              ),
-            )}
-          </div>
-        </Section>
-      ))}
-
-      {fakes.length > 0 && (
-        <FakeQuotes
-          fakes={fakes}
-          quotes={fakeMap}
+        <PageHero
           locale={locale}
-          heading={config.fakesHeading ?? t.fakes}
-          pageKey={config.key}
-          audio={audio}
-          usedIds={usedIds}
-          tone={tone()}
+          crumbs={crumbs}
+          eyebrow={t.eyebrow(uniqueQuotes.length, monthYear(config.updated, locale))}
+          title={config.h1}
+          sub={config.promise}
+          scriptToggle
+          lang={locale}
+          below={<MomentChips chips={chips} locale={locale} />}
         />
-      )}
 
-      <Section id="daily" title={config.dailyLine.heading} intro={config.dailyLine.sub} tone={tone()} width="narrow">
-        <NextStep locale={locale} pageKey={config.key} placement="daily" />
-      </Section>
+        {sections.map((sec, si) => (
+          <Fragment key={sec.key}>
+            <Section
+              key={sec.key}
+              id={sectionId(sec.moment)}
+              title={sec.heading}
+              intro={sec.intro}
+              tone={tone()}
+              width="narrow"
+              spacing="tight"
+              className={`qp-moment qp-m-${sec.moment}${sec.hasHook ? ' qp-has-hook' : ''}`}
+            >
+              <div className="qp-cards">
+                {sec.items.map((it) =>
+                  it === 'hook' ? (
+                    <div key="hook" className="qp-hook-slot">
+                      <LineForYou
+                        feelings={feelingViews}
+                        quotes={hookMap}
+                        question={config.hook.question}
+                        preset={config.hook.preset}
+                        locale={locale}
+                        pageKey={config.key}
+                        audio={hookAudio}
+                      />
+                    </div>
+                  ) : (
+                    renderCard(it, sec)
+                  ),
+                )}
+              </div>
+            </Section>
+            {si === 0 && <HubTop hub={config.path} locale={locale} lines={hubLines} todayCount={todayCount} />}
+          </Fragment>
+        ))}
 
-      {config.extraSections?.map((x, i) => (
-        <Section key={i} id={`x-${i}`} title={x.heading} tone={tone()} width="narrow">
-          <div className="sx-prose">
-            {x.paragraphs.map((p, j) => (
-              <p key={j}>{p}</p>
-            ))}
-          </div>
+        {fakes.length > 0 && (
+          <FakeQuotes
+            fakes={fakes}
+            quotes={fakeMap}
+            locale={locale}
+            heading={config.fakesHeading ?? t.fakes}
+            pageKey={config.key}
+            audio={audio}
+            usedIds={usedIds}
+            tone={tone()}
+          />
+        )}
+
+        <Section id="daily" title={config.dailyLine.heading} intro={config.dailyLine.sub} tone={tone()} width="narrow">
+          <NextStep locale={locale} pageKey={config.key} placement="daily" />
         </Section>
-      ))}
 
-      {config.faq.length > 0 && (
-        <Section id="faq" title={t.faq} tone={tone()} width="narrow">
-          <Faq items={config.faq} locale={locale} />
-        </Section>
-      )}
+        {config.extraSections?.map((x, i) => (
+          <Section key={i} id={`x-${i}`} title={x.heading} tone={tone()} width="narrow">
+            <div className="sx-prose">
+              {x.paragraphs.map((p, j) => (
+                <p key={j}>{p}</p>
+              ))}
+            </div>
+          </Section>
+        ))}
 
-      {config.related.length > 0 && (
-        <Section id="related" title={t.related} tone={tone()} width="narrow">
-          <LinkCards items={config.related.map((r) => ({ href: r.href, title: r.label }))} />
-        </Section>
-      )}
+        {config.faq.length > 0 && (
+          <Section id="faq" title={t.faq} tone={tone()} width="narrow">
+            <Faq items={config.faq} locale={locale} />
+          </Section>
+        )}
 
-      {showHook && <LineBar locale={locale} />}
-    </main>
+        {config.related.length > 0 && (
+          <Section id="related" title={t.related} tone={tone()} width="narrow">
+            <LinkCards items={config.related.map((r) => ({ href: r.href, title: r.label }))} />
+          </Section>
+        )}
+
+        {showHook && <LineBar locale={locale} />}
+      </main>
+    </KeepScope>
   )
 }
 

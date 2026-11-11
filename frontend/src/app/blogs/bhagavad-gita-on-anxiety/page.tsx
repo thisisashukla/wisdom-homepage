@@ -3,6 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import VideoFigure from '@/components/site/VideoFigure'
 
 import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
@@ -742,6 +743,8 @@ export default function GitaOnAnxietyPage() {
         <p>
           Abhyasa means returning to the practice again and again. Vairagya means loosening the grip of craving. Krishna makes no promise about speed.
         </p>
+
+        <VideoFigure video="overthinking" location="blog_gita_on_anxiety_video" />
 
         <h2>Two Common Misreadings</h2>
         <p>

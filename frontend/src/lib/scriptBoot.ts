@@ -3,5 +3,12 @@ export const SCRIPT_KEY = 'wq.script'
 /** Keys the funnels used before the site-wide setting; read once so a saved choice carries over. */
 const LEGACY_KEYS = ['mbh_script', 'fx-up-script', 'fx-script', 'wisdom.ramayana.script', 'wq_hc_script']
 
+/**
+ * Pages that open in English letters for a reader who has not chosen yet: the English Hanuman Chalisa
+ * pages, which promise "lyrics in English" and are read mostly by families outside India. The
+ * Telugu, Gujarati and Kannada pages open in their own script. A saved choice always wins.
+ */
+const IAST_FIRST = '^/hanuman-chalisa(?:/(?!telugu|gujarati|kannada)|$)'
+
 /** Inline <script> body for <head>: sets data-script before paint. */
-export const SCRIPT_BOOT = `try{var s=localStorage.getItem('${SCRIPT_KEY}');if(!s){var k=${JSON.stringify(LEGACY_KEYS)};for(var i=0;i<k.length;i++){if(localStorage.getItem(k[i])==='iast'){s='iast';break}}}if(s==='iast')document.documentElement.setAttribute('data-script','iast')}catch(e){}`
+export const SCRIPT_BOOT = `try{var s=localStorage.getItem('${SCRIPT_KEY}');if(!s){var k=${JSON.stringify(LEGACY_KEYS)};for(var i=0;i<k.length;i++){if(localStorage.getItem(k[i])==='iast'){s='iast';break}}}if(!s&&new RegExp(${JSON.stringify(IAST_FIRST)}).test(location.pathname))s='iast';if(s==='iast')document.documentElement.setAttribute('data-script','iast')}catch(e){}`

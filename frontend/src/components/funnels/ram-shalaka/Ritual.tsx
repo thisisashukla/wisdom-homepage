@@ -591,9 +591,11 @@ export default function Ritual({ locale, cells, lines, ui, naam, next, langHref 
       data-sign={screen === 'uttar' && line ? line.sign : undefined}
       ref={panelRef}
     >
+      {/* Ramnami cloth. The राम text lives in CSS (::before) so it is not page text:
+          as DOM text it was over half the words on /hi/ram-shalaka and Google marked it Soft 404. */}
       <div className="rs-cloth" aria-hidden="true">
         {Array.from({ length: 34 }, (_, r) => (
-          <span key={r}>{'राम '.repeat(34)}</span>
+          <span key={r} />
         ))}
       </div>
       <div className="rs-fly" ref={flyRef} aria-hidden="true" />

@@ -17,13 +17,24 @@ import {
   hasTopic,
   topicUrl,
   findTopicForConcept,
-  topicLabel,
+  getHindiCommentary,
+  hindiTagName,
+  jointGroup,
+  jointRefsHi,
+  speakerHi,
+  splitSpeaker,
+  hasHindiTranslation,
 } from '@/lib/gita'
-import type { IndexEntry } from '@/lib/gita'
+import { firstLine, fitPada } from '@/lib/devanagari'
+import type { IndexEntry, Verse } from '@/lib/gita'
+import ReadingTracker from '@/components/reader/ReadingTracker'
+import { VERSE_TRANSLATION_ID } from '@/components/reader/ids'
+import VerseShareBar from '@/components/gita/VerseShareBar'
+import WhatsAppDaily from '@/components/daily/WhatsAppDailyLazy'
+import ExplanationLanguageToggle from '@/components/gita/ExplanationLanguageToggle'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
-import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
 import SanskritText from '@/components/gita/SanskritText'
 import MantraCards from '@/components/gita/MantraCards'
@@ -41,6 +52,37 @@ function anotherLineHref(quote: Quote, locale: Locale): string | null {
   if (list.length < 2) return null
   const i = list.findIndex((q) => q.id === quote.id)
   return verseHref(list[(i + 1) % list.length], locale)
+}
+
+/**
+ * The English commentary cards (meaning, context, today) and the takeaway, labelled in Hindi.
+ * Shown openly on verses without Hindi commentary (heading h2) and inside the
+ * "अंग्रेज़ी में पढ़ें" toggle on verses that have it (heading h3).
+ */
+function EnglishCommentary({ verse, heading: H }: { verse: Verse; heading: 'h2' | 'h3' }) {
+  const cards = [
+    verse.simpleMeaning && { n: '01', label: 'इस श्लोक का अर्थ', kicker: 'सरल शब्दों में', text: verse.simpleMeaning },
+    verse.detailedMeaning && { n: '02', label: 'संदर्भ और टिप्पणी', kicker: 'युद्धभूमि पर', text: verse.detailedMeaning },
+    verse.modernRelevance && { n: '03', label: 'आज के जीवन में महत्व', kicker: 'आपके जीवन में', text: verse.modernRelevance },
+  ].filter((x): x is { n: string; label: string; kicker: string; text: string } => Boolean(x))
+  return (
+    <>
+      {cards.map(({ n, label, kicker, text }) => (
+        <div key={n} className="gv-cmnt gv-reveal">
+          <span className="gv-cmnt-ghost" aria-hidden="true">{n}</span>
+          <div className="gv-cmnt-kicker">{kicker} · अंग्रेज़ी में</div>
+          <H className="gv-cmnt-h">{label}</H>
+          <p className="gv-cmnt-p" lang="en">{text}</p>
+        </div>
+      ))}
+      {verse.simpleInsight && (
+        <div className="gv-takeaway gv-reveal">
+          <div className="gv-takeaway-kicker">सार</div>
+          <p className="gv-takeaway-quote">&ldquo;{verse.simpleInsight}&rdquo;</p>
+        </div>
+      )}
+    </>
+  )
 }
 
 export async function generateStaticParams() {
@@ -94,13 +136,22 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const verse = await getVerse(c, v)
   if (!verse) return { title: 'श्लोक नहीं मिला' }
   const ch = getChapter(c)
+  const hc = await getHindiCommentary(c, v)
   // ── Title: Hindi-first, with the shloka's opening pada as a fingerprint
   //    ("गीता श्लोक … अर्थ सहित" is how Hindi searchers phrase it). Falls back
   //    to a shorter form when the pada would push past ~60 characters. ──
-  const devaOpen = firstDevaPada(verse.sanskrit, 32)
-  const withPada = `गीता ${c}.${v} (BG ${c}.${v}): ${devaOpen} — अर्थ सहित`
-  const title = devaOpen && withPada.length <= 61
-    ? withPada
+  // Opening pada of the verse itself (normalised in lib/gita), without the speaker line.
+  // On a verse that opens with a speaker line, the pada after it is often longer than
+  // the room left, so cut that opening line at a word boundary instead of dropping it.
+  // Verses without a speaker line keep the title they had before.
+  const titlePrefix = `गीता ${c}.${v} (BG ${c}.${v}): `
+  const titleSuffix = ' — अर्थ सहित'
+  const titleRoom = 61 - titlePrefix.length - titleSuffix.length
+  const spoken = splitSpeaker(verse.sanskrit)
+  const pada32 = firstDevaPada(spoken.text, 32)
+  const devaOpen = pada32.length <= titleRoom ? pada32 : spoken.speaker ? fitPada(firstLine(verse.sanskrit), titleRoom) : ''
+  const title = devaOpen
+    ? `${titlePrefix}${devaOpen}${titleSuffix}`
     : `भगवद् गीता ${c}.${v} (BG ${c}.${v}) — श्लोक का हिंदी अर्थ`
 
   // ── Description: always Hindi. simpleMeaning/detailedMeaning are English in
@@ -136,7 +187,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       },
     },
     openGraph: {
-      title: `भगवद् गीता ${c}.${v} — ${verse.essence || ''}`,
+      title: hc?.saar ? `भगवद् गीता ${c}.${v}: ${hc.saar}` : `भगवद् गीता ${c}.${v} — ${verse.essence || ''}`,
       description: verse.hindiTranslation,
       url: `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
       type: 'article',
@@ -168,6 +219,9 @@ export default async function VersePageHi({ params }: { params: Params }) {
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const blogLinks = getBlogLinksForVerse(c, v)
   const quote = getQuote(`bg-${c}-${v}`)
+  const hc = await getHindiCommentary(c, v)
+  const joint = await jointGroup(c, v)
+  const speakerName = speakerHi(verse.speaker)
 
   const wordByWord = verse.translationLiteral
     ? verse.translationLiteral
@@ -226,6 +280,8 @@ export default async function VersePageHi({ params }: { params: Params }) {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
     text: verse.hindiTranslation || verse.englishTranslation,
+    // The original shloka: conjuncts normalised (lib/gita) and the "X उवाच" speaker line split off.
+    isBasedOn: { '@type': 'Quotation', text: splitSpeaker(verse.sanskrit).text, inLanguage: 'sa' },
     creator: speakerPerson,
     spokenByCharacter: speakerPerson,
     about: verse.tags,
@@ -318,7 +374,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
   // ── Auto-generated FAQ + FAQPage schema (Hindi) ──
   type Faq = { q: string; a: string }
   const faqs: Faq[] = []
-  const hindiMeaning = verse.simpleMeaning || verse.hindiTranslation || verse.englishTranslation
+  const hindiMeaning = hc?.bhavarth || verse.simpleMeaning || verse.hindiTranslation || verse.englishTranslation
   if (hindiMeaning) {
     faqs.push({
       q: `भगवद् गीता ${c}.${v} का क्या अर्थ है?`,
@@ -328,7 +384,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
   if (verse.speaker) {
     faqs.push({
       q: `भगवद् गीता ${c}.${v} किसने कहा है?`,
-      a: `यह श्लोक ${verse.speaker} द्वारा कहा गया है${ch ? `, कुरुक्षेत्र की भूमि पर, अध्याय "${ch.hiName}" में।` : '।'}`,
+      a: `यह श्लोक ${speakerName || verse.speaker} द्वारा कहा गया है${ch ? `, कुरुक्षेत्र की भूमि पर, अध्याय "${ch.hiName}" में।` : '।'}`,
     })
   }
   if (ch) {
@@ -337,10 +393,10 @@ export default async function VersePageHi({ params }: { params: Params }) {
       a: `श्लोक ${v} भगवद् गीता के ${c}वें अध्याय में है — ${ch.hiName}। इस अध्याय में कुल ${ch.totalVerses} श्लोक हैं।`,
     })
   }
-  if (verse.modernRelevance) {
+  if (hc?.aaj || verse.modernRelevance) {
     faqs.push({
       q: `भगवद् गीता ${c}.${v} आज के जीवन में क्यों प्रासंगिक है?`,
-      a: verse.modernRelevance,
+      a: hc?.aaj || verse.modernRelevance || '',
     })
   }
   const faqLd = faqs.length >= 2 ? {
@@ -357,6 +413,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_verse_hi_${c}_${v}`} />
+      <ReadingTracker chapter={c} verse={v} lang="hi" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quotationLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {articleLd && (
@@ -394,13 +451,15 @@ export default async function VersePageHi({ params }: { params: Params }) {
         {heroNote && (
           <p className="gv-hero-note gv-rise" style={{ '--d': '0.21s' } as CSSProperties}>{heroNote}</p>
         )}
-        {verse.essence && (
-          <p className="gv-hero-essence gv-rise" style={{ '--d': '0.24s' } as CSSProperties}>
-            &ldquo;{verse.essence}&rdquo;
+        {hc?.saar && (
+          <p className="gv-hero-essence gv-rise" style={{ '--d': '0.24s' } as CSSProperties} lang="hi">
+            &ldquo;{hc.saar}&rdquo;
           </p>
         )}
         <p className="gv-hero-byline gv-rise" style={{ '--d': '0.3s' } as CSSProperties}>
-          Wisdom अनुवाद, संपादन: अंकुर शुक्ला। टिप्पणी AI से तैयार, फिर व्यक्ति द्वारा जाँची गई (जून 2026)।{' '}
+          {hc && !hc.reviewed
+            ? 'Wisdom अनुवाद, संपादन: अंकुर शुक्ला। यह हिंदी टिप्पणी पारंपरिक भाष्यों के आधार पर AI की मदद से तैयार की गई है, और इसकी समीक्षा अभी बाकी है।'
+            : 'Wisdom अनुवाद, संपादन: अंकुर शुक्ला। टिप्पणी AI से तैयार, फिर व्यक्ति द्वारा जाँची गई (जून 2026)।'}{' '}
           <a href="/methodology">कैसे बनता है →</a>
         </p>
       </header>
@@ -414,8 +473,11 @@ export default async function VersePageHi({ params }: { params: Params }) {
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
 
-        <p className="gv-en-quote" lang="hi">{verse.hindiTranslation}</p>
-        {verse.speaker && <div className="gv-en-speaker">— {verse.speaker}</div>}
+        <p className="gv-en-quote" lang="hi" id={VERSE_TRANSLATION_ID}>{verse.hindiTranslation}</p>
+        {joint.length > 1 && (
+          <p className="gv-joint-note" lang="hi">श्लोक {jointRefsHi(c, joint)} का अर्थ साथ में</p>
+        )}
+        {speakerName && <div className="gv-en-speaker" lang="hi">{speakerName}</div>}
 
         <div className="gv-orn-divider" aria-hidden="true">
           <span /><em>❋</em><span />
@@ -439,7 +501,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                 className="gita-tag"
                 data-mp-location={`verse_hi_${c}_${v}_tag_${t}`}
               >
-                {topicLabel(t)}
+                {hindiTagName(t)}
               </a>
             ))}
             <VerseBookmark chapter={c} verse={v} locale="hi" />
@@ -544,7 +606,24 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </section>
       )}
 
-      {wordByWord.length > 0 && (
+      {hc && hc.shabdarth.length > 0 && (
+        <section className="gv-wbw gv-reveal" aria-label="शब्दार्थ" lang="hi">
+          <div className="gv-sechead">
+            <span className="gv-sechead-label">शब्दार्थ</span>
+          </div>
+          <p className="gv-sechead-sub">श्लोक के हर शब्द का अर्थ, उसी क्रम में जिसमें वह श्लोक में आता है।</p>
+          <ul className="gv-wbw-flow gv-wbw-list">
+            {hc.shabdarth.map((w, i) => (
+              <li key={i} className="gv-word">
+                <span className="gv-word-sa" lang="sa">{w.w}</span>
+                <span className="gv-word-en gv-word-hi">{w.m}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {!hc && wordByWord.length > 0 && (
         <section className="gv-wbw gv-reveal" aria-label="शब्दार्थ">
           <div className="gv-sechead">
             <span className="gv-sechead-label">शब्द-दर-शब्द</span>
@@ -567,13 +646,13 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </section>
       )}
 
-      {(verse.simpleMeaning || verse.detailedMeaning) && (
+      {(hc || verse.simpleMeaning || verse.detailedMeaning) && (
         <section className="gita-commentary" aria-label="अर्थ और संदर्भ" style={{ marginTop: '52px' }}>
 
           <div className="gv-sechead gv-reveal">
             <span className="gv-sechead-label">श्लोक को समझें</span>
           </div>
-          {verse.insight && (
+          {!hc && verse.insight && (
             <div className="gv-insight gv-reveal">
               <span className="gv-insight-icon" aria-hidden="true">✦</span>
               <p>{verse.insight}</p>
@@ -590,9 +669,9 @@ export default async function VersePageHi({ params }: { params: Params }) {
                     href={topicUrl(topic.slug, 'hi')}
                     className="gv-key"
                     data-mp-location={`verse_hi_${c}_${v}_concept_${topic.slug}`}
-                    title={`${topic.label} पर ${topic.verseCount} श्लोक`}
+                    title={`${hindiTagName(topic.slug)} पर ${topic.verseCount} श्लोक`}
                   >
-                    {name}
+                    {hindiTagName(topic.slug)}
                     <span className="gv-key-count">{topic.verseCount}</span>
                   </a>
                 ) : (
@@ -602,27 +681,53 @@ export default async function VersePageHi({ params }: { params: Params }) {
             </div>
           )}
 
-          {[
-            verse.simpleMeaning   && { n: '01', label: 'इस श्लोक का अर्थ',   kicker: 'सरल शब्दों में', text: verse.simpleMeaning },
-            verse.detailedMeaning && { n: '02', label: 'संदर्भ और टिप्पणी',   kicker: 'युद्धभूमि पर',   text: verse.detailedMeaning },
-            verse.modernRelevance && { n: '03', label: 'आज के जीवन में महत्व', kicker: 'आपके जीवन में',  text: verse.modernRelevance },
-          ].filter(Boolean).map((item) => {
-            const { n, label, kicker, text } = item as { n: string; label: string; kicker: string; text: string }
-            return (
-              <div key={n} className="gv-cmnt gv-reveal">
-                <span className="gv-cmnt-ghost" aria-hidden="true">{n}</span>
-                <div className="gv-cmnt-kicker">{kicker} · अंग्रेज़ी में</div>
-                <h2 className="gv-cmnt-h">{label}</h2>
-                <p className="gv-cmnt-p" lang="en">{text}</p>
-              </div>
-            )
-          })}
+          {hc ? (
+            <>
+              {[
+                { n: '01', label: 'भावार्थ', kicker: 'सरल शब्दों में', text: hc.bhavarth },
+                { n: '02', label: 'संदर्भ', kicker: 'युद्धभूमि पर', text: hc.sandarbh },
+                { n: '03', label: 'आज के जीवन में', kicker: 'आपके जीवन में', text: hc.aaj },
+              ].filter((item) => item.text).map(({ n, label, kicker, text }) => (
+                <div key={n} className="gv-cmnt gv-reveal">
+                  <span className="gv-cmnt-ghost" aria-hidden="true">{n}</span>
+                  <div className="gv-cmnt-kicker">{kicker}</div>
+                  <h2 className="gv-cmnt-h">{label}</h2>
+                  <p className="gv-cmnt-p" lang="hi">{text}</p>
+                </div>
+              ))}
 
-          {verse.simpleInsight && (
-            <div className="gv-takeaway gv-reveal">
-              <div className="gv-takeaway-kicker">सार</div>
-              <p className="gv-takeaway-quote">&ldquo;{verse.simpleInsight}&rdquo;</p>
-            </div>
+              <ExplanationLanguageToggle chapter={c} verse={v}>
+                {verse.insight && (
+                  <div className="gv-insight gv-reveal">
+                    <span className="gv-insight-icon" aria-hidden="true">✦</span>
+                    <p>{verse.insight}</p>
+                  </div>
+                )}
+
+                {wordByWord.length > 0 && (
+                  <section className="gv-wbw" aria-label="शब्दार्थ, अंग्रेज़ी में">
+                    <div className="gv-sechead">
+                      <span className="gv-sechead-label">शब्दार्थ · अंग्रेज़ी में</span>
+                    </div>
+                    <div className="gv-wbw-flow">
+                      {wordByWord.map((w, i) => (
+                        <span key={i} className="gv-word" tabIndex={0}>
+                          <span className="gv-word-sa" lang="sa">{w.sanskrit}</span>
+                          <span className="gv-word-en">{w.gloss}</span>
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                )}
+                {/* Hidden until opened, and secondary to the Hindi above: h3, so the page keeps one set of h2s. */}
+                <EnglishCommentary verse={verse} heading="h3" />
+
+              </ExplanationLanguageToggle>
+            </>
+          ) : (
+            <>
+              <EnglishCommentary verse={verse} heading="h2" />
+            </>
           )}
 
           {(verse.quoteVariants?.length ?? 0) > 0 && (
@@ -631,11 +736,11 @@ export default async function VersePageHi({ params }: { params: Params }) {
             </div>
           )}
 
-          <ShareButtons
-            url={verseUrl(c, v, 'hi')}
-            text={verse.quoteVariants?.find((q) => q.format === 'card')?.text || verse.essence || verse.hindiTranslation || verse.englishTranslation}
-            title={`भगवद् गीता ${c}.${v}`}
-            locale="hi"
+          <VerseShareBar
+            chapter={c}
+            verse={v}
+            lang="hi"
+            line={hc?.saar || (hasHindiTranslation(verse) ? verse.hindiTranslation : splitSpeaker(verse.sanskrit).text)}
           />
 
           {ch && (
@@ -700,7 +805,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                     style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
                     data-mp-location={`verse_hi_${c}_${v}_bridge_${t.slug}`}
                   >
-                    {t.label}
+                    {hindiTagName(t.slug)}
                   </a>
                   {' '}
                   <span style={{ color: 'var(--text-dimmer)' }}>({t.verseCount} श्लोक)</span>
@@ -710,6 +815,8 @@ export default async function VersePageHi({ params }: { params: Params }) {
           )}
         </section>
       )}
+
+      <WhatsAppDaily lang="hi" location="verse_end" trigger="after-read" />
 
       {/* ── सामान्य प्रश्न (matches FAQPage schema) ── */}
       {faqs.length >= 2 && (
@@ -872,7 +979,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                   >
                     <div className="gv-rel-top">
                       <span className="gv-rel-num">{r.chapter}.{r.verse}</span>
-                      {sharedTag && <span className="gv-rel-tag">{sharedTag.replace(/-/g, ' ')}</span>}
+                      {sharedTag && <span className="gv-rel-tag">{hindiTagName(sharedTag)}</span>}
                     </div>
                     <p className="gv-rel-quote">&ldquo;{r.essence || r.snippet}&rdquo;</p>
                     <span className="gv-rel-cta">श्लोक पढ़ें →</span>
@@ -896,7 +1003,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                   >
                     <div className="gv-rel-top">
                       <span className="gv-rel-num">{r.chapter}.{r.verse}</span>
-                      {sharedTag && <span className="gv-rel-tag">{sharedTag.replace(/-/g, ' ')}</span>}
+                      {sharedTag && <span className="gv-rel-tag">{hindiTagName(sharedTag)}</span>}
                     </div>
                     <p className="gv-rel-quote">&ldquo;{r.essence || r.snippet}&rdquo;</p>
                     <span className="gv-rel-cta">श्लोक पढ़ें →</span>

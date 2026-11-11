@@ -124,7 +124,16 @@ html.fx-still .fx-hold .og-rule { opacity: 1; animation: ogPulse 3.6s var(--ease
 .og-gita.is-link .og-gita-kind { color: var(--gold-light); border-color: rgba(245, 201, 106, 0.35); }
 .og-gita[data-kind='modern'] { border-style: dashed; background: transparent; }
 .og-gita[data-kind='modern'] .og-gita-kind { color: var(--text-dim); border-style: dashed; }
-@media (max-width: 760px) { .og-gitas { grid-template-columns: 1fr; gap: 10px; } .og-gita { padding: 18px 18px 16px; } .og-gita dl { grid-template-columns: 1fr; gap: 0; } .og-gita dd { margin-bottom: 8px; } }
+/* Each Gita's image: framed like the blogs' chapter images */
+.og-gita-art { margin: 0 0 16px; aspect-ratio: 3 / 2; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4); background: var(--bg-card); }
+.og-gita-art a { display: block; width: 100%; height: 100%; }
+.og-gita-art img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1); }
+.og-gita.is-link:hover .og-gita-art img, .og-gita.is-feature:hover .og-gita-art img { transform: scale(1.03); }
+.og-gita.is-feature .og-gita-art { aspect-ratio: 21 / 9; }
+.og-gita.is-feature .og-gita-art img { object-position: 50% 30%; }
+.og-gita[data-kind='modern'] .og-gita-art { opacity: 0.85; }
+@media (prefers-reduced-motion: reduce) { .og-gita-art img { transition: none; } }
+@media (max-width: 760px) { .og-gitas { grid-template-columns: 1fr; gap: 10px; } .og-gita { padding: 18px 18px 16px; } .og-gita.is-feature .og-gita-art { aspect-ratio: 3 / 2; } .og-gita dl { grid-template-columns: 1fr; gap: 0; } .og-gita dd { margin-bottom: 8px; } }
 
 /* ── Paired panels (who should start where) ─────────────────────────── */
 .og-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; background: var(--bg-card); }

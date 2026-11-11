@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useCallback, useEffect } from 'react'
 import type { AudioTimestamp } from '@/lib/gita'
+import { verseAudioUrl } from '@/lib/gitaUrls'
 import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import SanskritText from './SanskritText'
 
@@ -120,7 +121,7 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
     <div className="verse-audio-player">
       <audio
         ref={audioRef}
-        src={`https://pheysuesndqmmsogtdbt.supabase.co/storage/v1/object/public/wisdom-homepage/audio/bhagavad_gita/${audioSrc.replace('gita/', '')}`}
+        src={verseAudioUrl(audioSrc)}
         preload="metadata"
       />
 

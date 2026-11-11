@@ -15,6 +15,7 @@ import BlogTracker from '@/components/BlogTracker'
 import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import WhatsAppDaily from '@/components/daily/WhatsAppDailyLazy'
 import { getVerseAudio } from '@/lib/gita'
 
 export const revalidate = 3600
@@ -270,6 +271,7 @@ export default async function TodayPageHi() {
 
       {/* ── Email capture — daily verse retention hook ── */}
       <DailyVerseEmail page="gita_today_hi" locale="hi" />
+      <WhatsAppDaily lang="hi" location="hi_gita_today" trigger="inline" />
 
       {/* ── The backstory ── */}
       {context && (

@@ -33,6 +33,10 @@
   --font-deva-ui: var(--font-noto-devanagari), 'Noto Sans Devanagari', var(--font-inter), sans-serif;
   --font-sa: var(--font-tiro-sa), 'Tiro Devanagari Sanskrit', var(--font-noto-devanagari), serif;
   --font-awadhi: var(--font-tiro-hi), 'Tiro Devanagari Hindi', var(--font-tiro-sa), var(--font-noto-devanagari), serif;
+  /* the same verse in other Indian scripts (Chalisa script pages) */
+  --font-te: var(--font-noto-te), 'Noto Serif Telugu', serif;
+  --font-gu: var(--font-noto-gu), 'Noto Serif Gujarati', serif;
+  --font-kn: var(--font-noto-kn), 'Noto Serif Kannada', serif;
   /* legacy alias: quotes/card.css reads --q-tiro */
   --q-tiro: var(--font-tiro-sa);
 

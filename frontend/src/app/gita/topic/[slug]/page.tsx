@@ -5,6 +5,7 @@ import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl 
 // for the Scripture AI waitlist while that product launches.
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import BlogTracker from '@/components/BlogTracker'
+import PathNav from '@/components/learn/PathNav'
 import {
   gitaTopicDefinition,
   gitaTopicDescriptionEn,
@@ -204,6 +205,8 @@ export default async function TopicPage({ params }: { params: Params }) {
           </li>
         ))}
       </ul>
+
+      <PathNav slug={topic.slug} lang="en" />
 
       <VerseFunnelCTA variant="chapter" locale="en" pageName="Gita Topic" />
     </main>

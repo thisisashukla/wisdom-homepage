@@ -4,8 +4,10 @@ import './globals.css'
 import { AuthProvider } from '@/context/AuthContext'
 import MixpanelProvider from '@/components/MixpanelProvider'
 import Motion from '@/components/site/Motion'
+import PwaRoot from '@/components/install/PwaRoot'
 import { scriptureFontVars } from '@/lib/fonts'
 import { SCRIPT_BOOT } from '@/lib/scriptBoot'
+import { INSTALL_BOOT } from '@/lib/installBoot'
 import { SITE_NAME_FULL } from '@/lib/seo'
 
 // Self-host Google Fonts via next/font — eliminates render-blocking fetches
@@ -75,7 +77,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/assets/new-light-logo.webp',
+    apple: [{ url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
   },
+  // Web app manifest (app/manifest.webmanifest/route.ts). Set here, not by a file-based
+  // app/manifest.ts, so the Dhyaan layout's `manifest: null` removes it on that site.
+  manifest: '/manifest.webmanifest',
   // Ties this site to the iOS app for App Store rich results & smart banner. Set in
   // metadata (not a hard-coded <meta>) so a sub-site such as /dhyaan can override it.
   itunes: { appId: '6747684125', appArgument: 'https://wisdomquotes.in' },
@@ -106,6 +112,8 @@ export default function RootLayout({
       <head>
         {/* Devanagari or IAST, chosen once for the whole site (lib/script.ts); applied before paint. */}
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_BOOT }} />
+        {/* Hold Chrome's install offer from the first moment, so a slow hydration does not lose it (lib/install.ts adopts it). */}
+        <script dangerouslySetInnerHTML={{ __html: INSTALL_BOOT }} />
         {/* Plain-text guide to the site for AI assistants (llmstxt.org). */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
       </head>
@@ -114,6 +122,8 @@ export default function RootLayout({
           <MixpanelProvider>
             {children}
             <Motion />
+            {/* Service worker + Android install offer (lib/install.ts), loaded after the page is interactive; the card picks en/hi from the URL. */}
+            <PwaRoot location="install_banner" />
           </MixpanelProvider>
         </AuthProvider>
       </body>

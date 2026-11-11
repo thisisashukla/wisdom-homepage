@@ -113,7 +113,7 @@ export default function Article({
             dateModified: updated ?? published,
             author: { '@type': 'Person', name: 'Ankur Shukla', url: `${WISDOM_URL}/about` },
             publisher: { '@id': `${DHYAAN_URL}/#organization` },
-            image: COVERS[slug] ? dabs(COVERS[slug]) : `${DHYAAN_URL}/dhyaan-assets/og.png`,
+            image: COVERS[slug] ? dabs(COVERS[slug]) : `${DHYAAN_URL}/dhyaan-assets/og.webp`,
             mainEntityOfPage: url,
           },
           {

@@ -1,10 +1,14 @@
 /** /vivekananda-quotes and /hi/vivekananda-quotes (server). */
 
+import { Fragment } from 'react'
 import PageTracker from '@/components/BlogTracker'
 import { Faq, GitaBridge, JsonLd, PageHero, Section, VerseCard, VerseList } from '@/components/site'
 import { VIV_THEMES, VERDICT_LABEL, checkDrawer, chipText, vivBridge, vivChecks, vivDrawer, vivEdition, vivLine, vivLines, type Locale, type VivBridge, type VivLine, type VivTheme } from '@/lib/funnels/sayings/data'
 import { VIV_HUB, VIV_PATH, VIV_PATH_HI, VIV_THEME_COPY, THEME_INTRO, vivCheckPath, vivThemePath } from '@/lib/funnels/sayings/copy-viv'
 import { abs, cardOg, ldArticle, ldItemList, ldQuotation } from '@/lib/funnels/sayings/seo'
+import KeepScope from '@/components/quotes/KeepScope'
+import HubTop from '@/components/quotes/HubTop'
+import { hubLinesFrom } from '@/components/quotes/hubLines'
 import { VivVerse } from './cards'
 import { JumpChips, Method, NextBand, NextPanel, Related } from './parts'
 
@@ -101,6 +105,13 @@ export default function VivHub({ locale }: { locale: Locale }) {
   const checkByLine = new Map(checks.filter((x) => x.hubLine).map((x) => [x.hubLine as string, x.slug]))
   const arise = vivLine('arise-awake')
   let pos = 0
+  // Lines for HubTop (Today's line, Lines you kept): every line in page order, as the quote hubs do (QuotePage).
+  const { lines: hubLines, todayCount } = hubLinesFrom(
+    (l: VivLine) => ({ id: l.id, meaning: locale === 'hi' && l.meaning.hi ? l.meaning.hi : l.text, source: chipText(l.source, locale) }),
+    VIV_THEMES.flatMap((th) => byPrimary(th)),
+  )
+  const hubLabels =
+    locale === 'hi' ? { today: 'आज का विचार', kept: 'आपके रखे विचार', note: 'आज इसे मन में रखें। कल एक नया विचार मिलेगा।' } : undefined
 
   const ld = [
     ldArticle({
@@ -128,7 +139,7 @@ export default function VivHub({ locale }: { locale: Locale }) {
   ]
 
   return (
-    <>
+    <KeepScope hub={path}>
       <PageTracker pageName={locale === 'hi' ? 'Vivekananda Quotes Hub HI' : 'Vivekananda Quotes Hub'} />
       <JsonLd data={ld} />
       <PageHero
@@ -170,47 +181,50 @@ export default function VivHub({ locale }: { locale: Locale }) {
       />
 
       {VIV_THEMES.map((th, si) => (
-        <Section
-          key={th}
-          id={th}
-          tone={si % 2 ? 'band' : 'default'}
-          width="narrow"
-          title={locale === 'hi' ? THEME_HI[th] : VIV_THEME_COPY[th].label}
-          intro={
-            <>
-              {THEME_INTRO[th][locale]}{' '}
-              {locale === 'en' && (
-                <a className="sx-link" href={vivThemePath(th)} data-mp-location={`theme_${th}`}>
-                  {`All ${VIV_THEME_COPY[th].label.toLowerCase()} lines`}
-                </a>
-              )}
-            </>
-          }
-        >
-          <VerseList>
-            {byPrimary(th).map((l) => {
-              pos += 1
-              const slug = checkByLine.get(l.slug)
-              return (
-                <VivVerse
-                  key={l.id}
-                  as="li"
-                  drawer={vivDrawer(l, locale)}
-                  meaning={locale === 'hi' ? l.meaning.hi : undefined}
-                  meaningLang="hi"
-                  cardId={l.card ? l.id : undefined}
-                  locale={locale}
-                  pageKey={pageKey}
-                  position={pos}
-                  section={th}
-                  shareText={vivShareText(l, locale, path)}
-                  checkHref={slug && locale === 'en' ? vivCheckPath(slug) : undefined}
-                />
-              )
-            })}
-          </VerseList>
-          {si === 0 && <NextPanel heading={t.nextH} hub="vivekananda" locale={locale} pageKey={pageKey} />}
-        </Section>
+        <Fragment key={th}>
+          <Section
+            key={th}
+            id={th}
+            tone={si % 2 ? 'band' : 'default'}
+            width="narrow"
+            title={locale === 'hi' ? THEME_HI[th] : VIV_THEME_COPY[th].label}
+            intro={
+              <>
+                {THEME_INTRO[th][locale]}{' '}
+                {locale === 'en' && (
+                  <a className="sx-link" href={vivThemePath(th)} data-mp-location={`theme_${th}`}>
+                    {`All ${VIV_THEME_COPY[th].label.toLowerCase()} lines`}
+                  </a>
+                )}
+              </>
+            }
+          >
+            <VerseList>
+              {byPrimary(th).map((l) => {
+                pos += 1
+                const slug = checkByLine.get(l.slug)
+                return (
+                  <VivVerse
+                    key={l.id}
+                    as="li"
+                    drawer={vivDrawer(l, locale)}
+                    meaning={locale === 'hi' ? l.meaning.hi : undefined}
+                    meaningLang="hi"
+                    cardId={l.card ? l.id : undefined}
+                    locale={locale}
+                    pageKey={pageKey}
+                    position={pos}
+                    section={th}
+                    shareText={vivShareText(l, locale, path)}
+                    checkHref={slug && locale === 'en' ? vivCheckPath(slug) : undefined}
+                  />
+                )
+              })}
+            </VerseList>
+            {si === 0 && <NextPanel heading={t.nextH} hub="vivekananda" locale={locale} pageKey={pageKey} />}
+          </Section>
+          {si === 0 && <HubTop hub={path} locale={locale} lines={hubLines} todayCount={todayCount} labels={hubLabels} />}
+        </Fragment>
       ))}
 
       <Section id="gita" width="narrow" title={t.bridgeH} intro={t.bridgeIntro}>
@@ -336,6 +350,6 @@ export default function VivHub({ locale }: { locale: Locale }) {
               ]
         }
       />
-    </>
+    </KeepScope>
   )
 }

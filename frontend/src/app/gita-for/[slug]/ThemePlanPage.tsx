@@ -1,7 +1,7 @@
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import { Actions, Faq, JsonLd, PageHero, Section } from '@/components/site'
+import { Actions, Faq, JsonLd, PageHero, Section, VideoFigure } from '@/components/site'
 import PlanFine from '@/components/plan/PlanFine'
 import { planAction } from '@/components/plan/planAction'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
@@ -12,6 +12,7 @@ import { gitaForBySlug } from '@/lib/gitaFor'
 import { appStoreUrl } from '@/lib/app'
 import { PHASE_LABEL, THEME_PLANS, THEME_PLANS_PUBLISHED, THEME_READING, planGroupOf, planMinutesTotal, planSources, type ThemePlan } from '@/lib/themePlans'
 import { themeHero, type ThemeVariant } from '@/lib/themeAssets'
+import { THEME_VIDEO } from '@/lib/videos'
 import '../theme-plan.css'
 
 const BASE = 'https://wisdomquotes.in'
@@ -41,6 +42,7 @@ export default async function ThemePlanPage({ plan, variant }: { plan: ThemePlan
   const related = [...others.filter((p) => planGroupOf(p.slug) === group), ...others.filter((p) => planGroupOf(p.slug) !== group)].slice(0, 6)
   const reading = THEME_READING[plan.slug] ?? []
   const pageName = `Theme Plan ${plan.label}`
+  const video = THEME_VIDEO[plan.slug]
 
   const schema = {
     '@context': 'https://schema.org',
@@ -135,6 +137,7 @@ export default async function ThemePlanPage({ plan, variant }: { plan: ThemePlan
         {/* ── Intro and the week at a glance ── */}
         <Section id="glance" width="narrow" spacing="tight" rv={false}>
           <p className="tp-intro">{plan.intro}</p>
+          {video && <VideoFigure video={video} location={`theme_${plan.slug}_video`} />}
           <h2 className="sx-h2">The seven verses</h2>
           <ol className="tp-strip">
             {plan.days.map((d) => (

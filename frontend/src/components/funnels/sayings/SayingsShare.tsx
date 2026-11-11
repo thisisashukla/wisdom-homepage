@@ -5,12 +5,16 @@
  * The first copy, share or save of the session opens the hub's own sheet (FxSheet, with the hub's
  * next step) instead of the kit's Gita sheet. ShareActions has no hook for that yet
  * (KIT_REQUEST: ShareActions `sheet` render prop), so this listens for the same taps.
+ * Inside a KeepScope (the Kabir, Chanakya and Vivekananda hubs) Keep / रखें (KeepButton) sits
+ * in the bar through ShareActions `extra`, as on the quote hubs (QuoteCard).
  */
 
 import { useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { ShareActions } from '@/components/site'
 import { claimFirstAction, hideToast, type SheetAction } from '@/components/quotes/session'
+import KeepButton from '@/components/quotes/KeepButton'
+import { useKeepHub } from '@/components/quotes/KeepScope'
 import { cardImageUrl } from '@/lib/quotes-shared'
 import type { Hub, Locale } from '@/lib/funnels/sayings/shared'
 
@@ -34,6 +38,7 @@ export type SayingsShareProps = {
 export default function SayingsShare({ id, type, hub, locale, text, cardId, fileStem, pageKey, position, section }: SayingsShareProps) {
   const [sheet, setSheet] = useState<SheetAction | null>(null)
   const root = useRef<HTMLDivElement>(null)
+  const keepHub = useKeepHub()
 
   const open = (action: SheetAction) => {
     if (!claimFirstAction()) return
@@ -70,6 +75,11 @@ export default function SayingsShare({ id, type, hub, locale, text, cardId, file
                 fileName: (format) => `${fileStem}-${format}.png`,
               }
             : undefined
+        }
+        extra={
+          keepHub ? (
+            <KeepButton id={id} hub={keepHub} locale={locale} props={{ position: position ?? null, moment: section ?? null, location: 'card' }} />
+          ) : undefined
         }
       />
       {sheet && <FxSheet action={sheet} hub={hub} locale={locale} pageKey={pageKey} onClose={() => setSheet(null)} />}

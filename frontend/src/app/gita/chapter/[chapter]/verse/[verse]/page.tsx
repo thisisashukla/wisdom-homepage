@@ -16,12 +16,16 @@ import {
   topicUrl,
   findTopicForConcept,
   topicLabel,
+  splitSpeaker,
 } from '@/lib/gita'
 import type { IndexEntry } from '@/lib/gita'
+import ReadingTracker from '@/components/reader/ReadingTracker'
+import { VERSE_TRANSLATION_ID } from '@/components/reader/ids'
+import VerseShareBar from '@/components/gita/VerseShareBar'
+import WhatsAppDaily from '@/components/daily/WhatsAppDailyLazy'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
-import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import { plansForVerse, PHASE_LABEL } from '@/lib/themePlans'
@@ -225,6 +229,8 @@ export default async function VersePage({ params }: { params: Params }) {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
     text: verse.englishTranslation,
+    // The original shloka: conjuncts normalised (lib/gita) and the "X उवाच" speaker line split off.
+    isBasedOn: { '@type': 'Quotation', text: splitSpeaker(verse.sanskrit).text, inLanguage: 'sa' },
     creator: speakerPerson,
     spokenByCharacter: speakerPerson,
     about: verse.tags,
@@ -362,6 +368,7 @@ export default async function VersePage({ params }: { params: Params }) {
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_verse_${c}_${v}`} />
+      <ReadingTracker chapter={c} verse={v} lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quotationLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {articleLd && (
@@ -416,7 +423,7 @@ export default async function VersePage({ params }: { params: Params }) {
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
 
-        <p className="gv-en-quote" lang="en">{verse.englishTranslation}</p>
+        <p className="gv-en-quote" lang="en" id={VERSE_TRANSLATION_ID}>{verse.englishTranslation}</p>
         {verse.speaker && <div className="gv-en-speaker">— {verse.speaker}</div>}
 
         <div className="gv-orn-divider" aria-hidden="true">
@@ -558,11 +565,11 @@ export default async function VersePage({ params }: { params: Params }) {
             </div>
           )}
 
-          <ShareButtons
-            url={verseUrl(c, v)}
-            text={verse.quoteVariants?.find((q) => q.format === 'card')?.text || verse.essence || verse.englishTranslation}
-            title={`Bhagavad Gita ${c}.${v}`}
-            locale="en"
+          <VerseShareBar
+            chapter={c}
+            verse={v}
+            lang="en"
+            line={verse.quoteVariants?.find((q) => q.format === 'card')?.text || verse.essence || verse.englishTranslation}
           />
 
           {ch && (
@@ -637,6 +644,8 @@ export default async function VersePage({ params }: { params: Params }) {
           )}
         </section>
       )}
+
+      <WhatsAppDaily lang="en" location="verse_end" trigger="after-read" />
 
       {/* ── 7-day plans that use this verse ── */}
       {inPlans.length > 0 && (

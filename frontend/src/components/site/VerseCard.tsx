@@ -1,9 +1,16 @@
 import type { ReactNode } from 'react'
 import type { Locale } from '@/lib/locale'
-import ScriptToggle from './ScriptToggle'
+import ScriptToggle, { type NativeScript } from './ScriptToggle'
 import './site.css'
 
-export type VerseLang = 'sa' | 'awa' | 'hi' | 'bra'
+export type VerseLang = 'sa' | 'awa' | 'hi' | 'bra' | 'te' | 'gu' | 'kn'
+
+/** Awadhi (or Sanskrit) written in another Indian script: the label its script switch shows. */
+const NATIVE: Partial<Record<VerseLang, NativeScript>> = {
+  te: { code: 'te', label: 'తెలుగు' },
+  gu: { code: 'gu', label: 'ગુજરાતી' },
+  kn: { code: 'kn', label: 'ಕನ್ನಡ' },
+}
 
 export type VerseCardProps = {
   /** The original, in Devanagari. A string with \n line breaks, or an array of lines (padas). */
@@ -17,7 +24,9 @@ export type VerseCardProps = {
   sourceHref?: string
   /** Small label above the verse ("Chaupai 7", "The line people quote"). */
   label?: ReactNode
-  /** Language of the original: Sanskrit (default) sets Tiro Sanskrit; Awadhi, Hindi and Braj set Tiro Hindi. */
+  /** Script of the original: Sanskrit (default) sets Tiro Sanskrit; Awadhi, Hindi and Braj set Tiro Hindi;
+   *  'te' / 'gu' / 'kn' set Awadhi written in Telugu, Gujarati or Kannada letters (Noto Serif), and the
+   *  script switch then reads that script / IAST. */
   lang?: VerseLang
   size?: 'hero' | 'default' | 'compact'
   /** Bordered card (default) or bare text. */
@@ -38,6 +47,9 @@ export type VerseCardProps = {
   id?: string
   className?: string
 }
+
+/** BCP 47 script subtags for Awadhi written in another script (awa-Telu, awa-Gujr, awa-Knda). */
+const SCRIPT_TAG: Record<string, string> = { te: 'Telu', gu: 'Gujr', kn: 'Knda' }
 
 const rows = (v: string | string[]) => (Array.isArray(v) ? v : v.split('\n')).map((r) => r.trim()).filter(Boolean)
 
@@ -88,10 +100,10 @@ export default function VerseCard({
       {showTop && (
         <div className="sx-verse-top">
           {label ? <span className="sx-verse-label">{label}</span> : <span />}
-          {toggle && hasIast && <ScriptToggle locale={locale} size="compact" />}
+          {toggle && hasIast && <ScriptToggle locale={locale} size="compact" native={NATIVE[lang]} />}
         </div>
       )}
-      <p className={`sx-verse-orig${hasIast ? ' sx-deva' : ''}`} lang={lang === 'bra' ? 'hi' : lang}>
+      <p className={`sx-verse-orig${hasIast ? ' sx-deva' : ''}`} lang={lang === 'bra' ? 'hi' : NATIVE[lang] ? `awa-${SCRIPT_TAG[lang]}` : lang}>
         {deva.map((r, i) => (
           <span key={i} className="sx-verse-row" style={{ ['--i' as string]: i }}>
             {r}{' '}
@@ -99,7 +111,7 @@ export default function VerseCard({
         ))}
       </p>
       {hasIast && (
-        <p className="sx-verse-orig sx-iast" lang={`${lang === 'bra' ? 'hi' : lang}-Latn`}>
+        <p className="sx-verse-orig sx-iast" lang={`${lang === 'bra' ? 'hi' : NATIVE[lang] ? 'awa' : lang}-Latn`}>
           {roman.map((r, i) => (
             <span key={i} className="sx-verse-row" style={{ ['--i' as string]: i }}>
               {r}{' '}
