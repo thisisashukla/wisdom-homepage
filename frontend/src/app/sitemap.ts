@@ -14,6 +14,16 @@ const BASE = 'https://wisdomquotes.in'
 // today on every rebuild.  Bump this when the underlying corpus changes.
 const CORPUS_UPDATED = new Date('2026-08-01')
 
+// Real change dates for the page groups that changed after CORPUS_UPDATED. Google only trusts
+// lastmod when it is accurate, and ~240 verse pages it marked "Crawled - currently not indexed"
+// were last fetched in May, so these tell it which pages are worth fetching again.
+// Bump the matching date whenever that group's visible content changes.
+const VERSE_COPY_UPDATED = new Date('2026-10-25') // all 701 verse JSONs rewritten (meaning, insight, modern relevance)
+const CHAPTERS_UPDATED = new Date('2026-11-12') // chapter gist + three famous verses on chapter pages
+const TOPICS_UPDATED = new Date('2026-11-03') // definitions, new titles, Devanagari-only HI cards
+const GITA_HUBS_UPDATED = new Date('2026-11-12') // /, /gita, /hi/gita: verse jump, resume card, chapter gists
+const latest = (...d: Date[]) => new Date(Math.max(...d.map((x) => x.getTime())))
+
 // Hindi commentary (bhavarth, shabdarth, context) went live on 11 Nov 2026 on the Hindi verse pages
 // that have a file in src/content/gita/hi-commentary, and those chapters' Hindi pages changed with it.
 const HINDI_COMMENTARY_UPDATED = new Date('2026-11-11')
@@ -127,7 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE,
-      lastModified: CORPUS_UPDATED,
+      lastModified: GITA_HUBS_UPDATED,
       changeFrequency: 'weekly',
       priority: 1.0,
       alternates: langAlts('/', '/hi/gita'),
@@ -171,14 +181,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/hi/gita/mool-shabd`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.85, alternates: langAlts('/gita/key-ideas', '/hi/gita/mool-shabd') },
     {
       url: `${BASE}/gita`,
-      lastModified: CORPUS_UPDATED,
+      lastModified: GITA_HUBS_UPDATED,
       changeFrequency: 'weekly',
       priority: 0.95,
       alternates: langAlts('/gita', '/hi/gita'),
     },
     {
       url: `${BASE}/hi/gita`,
-      lastModified: CORPUS_UPDATED,
+      lastModified: GITA_HUBS_UPDATED,
       changeFrequency: 'weekly',
       priority: 0.95,
       alternates: langAlts('/gita', '/hi/gita'),
@@ -225,14 +235,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
       {
         url: `${BASE}${en}`,
-        lastModified: CORPUS_UPDATED,
+        lastModified: CHAPTERS_UPDATED,
         changeFrequency: 'monthly',
         priority: 0.85,
         alternates: langAlts(en, hi),
       },
       {
         url: `${BASE}${hi}`,
-        lastModified: hiCommentaryChapters.has(ch.number) ? HINDI_COMMENTARY_UPDATED : CORPUS_UPDATED,
+        lastModified: hiCommentaryChapters.has(ch.number) ? latest(CHAPTERS_UPDATED, HINDI_COMMENTARY_UPDATED) : CHAPTERS_UPDATED,
         changeFrequency: 'monthly',
         priority: 0.85,
         alternates: langAlts(en, hi),
@@ -250,14 +260,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
       {
         url: `${BASE}${en}`,
-        lastModified: inPlan ? new Date(THEME_PLANS_PUBLISHED) : CORPUS_UPDATED,
+        lastModified: inPlan ? latest(VERSE_COPY_UPDATED, new Date(THEME_PLANS_PUBLISHED)) : VERSE_COPY_UPDATED,
         changeFrequency: 'yearly',
         priority: 0.7,
         alternates: langAlts(en, hi),
       },
       {
         url: `${BASE}${hi}`,
-        lastModified: hiCommentary.has(`${r.chapter}.${r.verse}`) ? HINDI_COMMENTARY_UPDATED : CORPUS_UPDATED,
+        lastModified: hiCommentary.has(`${r.chapter}.${r.verse}`) ? HINDI_COMMENTARY_UPDATED : VERSE_COPY_UPDATED,
         changeFrequency: 'yearly',
         priority: 0.7,
         alternates: langAlts(en, hi),
@@ -273,14 +283,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
       {
         url: `${BASE}${en}`,
-        lastModified: CORPUS_UPDATED,
+        lastModified: TOPICS_UPDATED,
         changeFrequency: 'monthly',
         priority: 0.8,
         alternates: langAlts(en, hi),
       },
       {
         url: `${BASE}${hi}`,
-        lastModified: CORPUS_UPDATED,
+        lastModified: TOPICS_UPDATED,
         changeFrequency: 'monthly',
         priority: 0.8,
         alternates: langAlts(en, hi),

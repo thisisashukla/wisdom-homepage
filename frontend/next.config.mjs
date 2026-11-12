@@ -61,6 +61,7 @@ const nextConfig = {
       { source: '/blog', destination: '/blogs', permanent: true },
       { source: '/blog/:slug', destination: '/blogs/:slug', permanent: true },
       { source: '/support.html', destination: '/support', permanent: true },
+      { source: '/reading-plans1', destination: '/reading-plans', permanent: true },
       // The 2.47 essay now lives on the verse page, which carries the shareable
       // quote card at the top. The old page file stays on disk but is unreachable.
       {
