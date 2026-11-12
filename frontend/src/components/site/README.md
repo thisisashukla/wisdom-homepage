@@ -28,10 +28,11 @@ If a page needs something the kit can't do, add a prop to the kit component (one
 | `NextStep` | The device-aware next step (app / WhatsApp / email). | `placement`, `copy`, `pageKey`, `startSituation` |
 | `GitaBridge` | Any link from another scripture back to a Gita verse. | `href`, `label`, `why`, `location`, `variant` ('card' / 'inline') |
 | `Faq` | FAQs + FAQPage JSON-LD. | `items`, `locale`, `ld` |
-| `LinkCards` | Related / up-next / hub listings, file downloads. | `items {href,title,body,kicker,orig,location,download,event,eventProps}`, `columns` |
+| `LinkCards` | Related / up-next / hub listings, file downloads. With `img` on an item the card gets a 16:9 picture on top (the reading-plan look). `layout="rail"` scrolls sideways with snap on phones (for a row of picture cards) and is the normal grid from 700px. | `items {href,title,body,kicker,orig,img {src,alt,position},location,download,event,eventProps}`, `columns`, `layout` ('grid' / 'rail') |
 | `VersePair` | A Gita verse beside a line from another tradition (Stoic, etc.), with where they meet and where they part. Stacked on phones, two columns on desktop. | `verse` (VerseCard props), `other {text, who, work, translator, href, location}`, `meet`, `part`, `title`, `id` |
 | `Renderings` | One verse in several translations, each with translator, year, a note and its source. Public-domain or our own text only. | `items {who, year, lines, note, source, href, location, own}`, `label` |
 | `JsonLd` | Any other schema. | `data` |
+| `Figure` | A painting or photo in the flow of a page, framed like VideoFigure (rounded, hairline border, italic caption). Lazy by default; pass the -800 tile as `srcSmall`. | `src`, `alt`, `width`, `height`, `caption`, `ratio`, `position`, `srcSmall`, `priority`, `narrow` |
 | `VideoFigure` | A Wisdom YouTube video in an article, framed like the blog header image. Thumbnail until play (no YouTube script before), then the youtube-nocookie player; VideoObject JSON-LD; sends Video Played. Add the video to `lib/videos.ts` (and `THEME_VIDEO` to show it on a theme plan). | `video`, `location`, `caption`, `ld`, `priority` |
 | `Nav`, `SiteFooter` | From `components/`; same on every page. `Nav` takes `overlayHero` and `locale` (defaults from the URL). |
 

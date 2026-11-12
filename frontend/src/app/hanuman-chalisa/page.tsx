@@ -1,12 +1,15 @@
 import type { Metadata } from 'next'
 import PageTracker from '@/components/BlogTracker'
-import { Faq, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, ScriptToggle, Section } from '@/components/site'
+import { Faq, Figure, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, ScriptToggle, Section } from '@/components/site'
 import IosTip from '@/components/funnels/hanuman-chalisa/IosTip'
 import Mala from '@/components/funnels/hanuman-chalisa/Mala'
 import { MeaningTracker, PrintButton } from '@/components/funnels/hanuman-chalisa/Trackers'
 import { FullText, Sources } from '@/components/funnels/hanuman-chalisa/Blocks'
 import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
 import {
+  art,
+  ART_FAMILY,
+  ART_HERO,
   beads,
   cardOg,
   chalisaWorkLd,
@@ -23,6 +26,7 @@ import {
   NEXT_COPY,
   PDF_FILES,
   PDF_PATH,
+  SCENES,
   SCRIPT_LIST,
   scriptLines,
   START_SITUATION,
@@ -180,6 +184,7 @@ export default function HanumanChalisaHub() {
           { href: '#hc-scripts', label: 'In Telugu, Gujarati, Kannada or Hindi', location: 'hub_hero_scripts' },
         ]}
         verse={{ ...unitVerse(d1), label: 'Doha 1, the opening line' }}
+        art={ART_HERO}
       />
 
       <Section id="hc-text" tone="band" eyebrow="43 lines" title="The full text">
@@ -218,6 +223,74 @@ export default function HanumanChalisaHub() {
             </Mala>
           </aside>
           <FullText units={units} locale="en" />
+        </div>
+      </Section>
+
+      <Section id="hc-scenes" eyebrow="The story inside the hymn" title="The Chalisa in six scenes" className="hc-noprint">
+        <p className="sx-prose rv">
+          Most of the Chalisa retells the Ramayana in a line or two: a leap, a ring, a burning city, a mountain carried through the night.
+          Each scene opens the line that sings it, word by word, with the passage of the Ramayana it comes from.
+        </p>
+        <div className="hc-gap">
+          <LinkCards
+            columns={3}
+            layout="rail"
+            items={SCENES.map((sc) => {
+              const u = getUnit(sc.line)!
+              return {
+                href: linePath(u.slug),
+                img: { src: art(sc.img, 'tile'), alt: sc.alt, position: sc.position },
+                kicker: u.label.en,
+                title: sc.title,
+                body: sc.body,
+                location: `hub_scene_${sc.key}`,
+              }
+            })}
+          />
+        </div>
+      </Section>
+
+      <Section id="hc-family" tone="band" eyebrow="For families" title="Teaching it to your kids" className="hc-noprint">
+        <p className="sx-prose rv">
+          Most families teach the Chalisa the way it was taught to them: a few lines at a time, out loud, on many evenings in a row.
+          Children often remember the sound first. The meaning is what makes it stay.
+        </p>
+        <Figure {...ART_FAMILY} srcSmall={art('family', 'tile')} narrow className="rv" caption="Four lines an evening, from the printed sheet or a tablet." />
+        <ol className="hc-steps sx-prose rv">
+          <li>
+            <strong>Four lines an evening.</strong> Say them together slowly, twice, then once more at bedtime. The learn mode shows the
+            day&apos;s four and keeps your place.
+          </li>
+          <li>
+            <strong>One word a night.</strong> Ask what a word means and open its line. Every line has its own page, word by word, with the
+            Ramayana story it comes from.
+          </li>
+          <li>
+            <strong>The whole Chalisa on Tuesday or Saturday.</strong> Say it together from the printed sheet. By the eleventh day they will
+            know all 43 lines.
+          </li>
+        </ol>
+        <div className="hc-gap">
+          <LinkCards
+            items={[
+              {
+                href: LEARN_PATH,
+                title: 'Learn it by heart, 4 lines a day',
+                body: "Today's lines, a loop to say them back, and your place kept",
+                location: 'hub_family_learn',
+              },
+              {
+                href: PDF_FILES.kids,
+                kicker: 'PDF · 11 pages',
+                title: 'The 11-day sheet for kids',
+                body: 'Large English letters and a box to tick each evening',
+                download: PDF_FILES.kids.split('/').pop(),
+                location: 'hub_family_pdf',
+                event: EVENTS.DownloadClicked,
+                eventProps: { item_id: 'kids', item_type: 'pdf' },
+              },
+            ]}
+          />
         </div>
       </Section>
 
@@ -262,50 +335,7 @@ export default function HanumanChalisaHub() {
         </div>
       </Section>
 
-      <Section id="hc-family" tone="band" eyebrow="For families" title="Teaching it to your kids" className="hc-noprint">
-        <p className="sx-prose rv">
-          Most families teach the Chalisa the way it was taught to them: a few lines at a time, out loud, on many evenings in a row.
-          Children often remember the sound first. The meaning is what makes it stay.
-        </p>
-        <ol className="hc-steps sx-prose rv">
-          <li>
-            <strong>Four lines an evening.</strong> Say them together slowly, twice, then once more at bedtime. The learn mode shows the
-            day&apos;s four and keeps your place.
-          </li>
-          <li>
-            <strong>One word a night.</strong> Ask what a word means and open its line. Every line has its own page, word by word, with the
-            Ramayana story it comes from.
-          </li>
-          <li>
-            <strong>The whole Chalisa on Tuesday or Saturday.</strong> Say it together from the printed sheet. By the eleventh day they will
-            know all 43 lines.
-          </li>
-        </ol>
-        <div className="hc-gap">
-          <LinkCards
-            items={[
-              {
-                href: LEARN_PATH,
-                title: 'Learn it by heart, 4 lines a day',
-                body: "Today's lines, a loop to say them back, and your place kept",
-                location: 'hub_family_learn',
-              },
-              {
-                href: PDF_FILES.kids,
-                kicker: 'PDF · 11 pages',
-                title: 'The 11-day sheet for kids',
-                body: 'Large English letters and a box to tick each evening',
-                download: PDF_FILES.kids.split('/').pop(),
-                location: 'hub_family_pdf',
-                event: EVENTS.DownloadClicked,
-                eventProps: { item_id: 'kids', item_type: 'pdf' },
-              },
-            ]}
-          />
-        </div>
-      </Section>
-
-      <Section id="hc-listen" eyebrow="Listen along" title="Which recording to sing along with" className="hc-noprint">
+      <Section id="hc-listen" tone="band" eyebrow="Listen along" title="Which recording to sing along with" className="hc-noprint">
         <p className="sx-prose rv">
           Most people learn the tune from a recording before they learn the words. These four are the ones families come back to, from brisk
           to slow. If you recite it 7 or 11 times at a sitting, a faster recording helps once you know the words.
@@ -315,7 +345,7 @@ export default function HanumanChalisaHub() {
         </div>
       </Section>
 
-      <Section id="hc-gita" tone="band" eyebrow="The thread to the Gita" title="Hanuman in the Gita" className="hc-noprint">
+      <Section id="hc-gita" eyebrow="The thread to the Gita" title="Hanuman in the Gita" className="hc-noprint">
         <GitaBridge
           href="/gita/chapter/1/verse/20"
           label="Read Bhagavad Gita 1.20"
@@ -325,7 +355,7 @@ export default function HanumanChalisaHub() {
         />
       </Section>
 
-      <Section id="hc-more" title="Reciting it" className="hc-noprint">
+      <Section id="hc-more" tone="band" title="Reciting it" className="hc-noprint">
         <LinkCards
           items={[
             {
@@ -351,7 +381,7 @@ export default function HanumanChalisaHub() {
         />
       </Section>
 
-      <Section id="hc-faq" tone="band" title="Questions people ask">
+      <Section id="hc-faq" title="Questions people ask">
         <Faq items={FAQ} />
       </Section>
 

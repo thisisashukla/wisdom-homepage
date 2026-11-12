@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import PageTracker from '@/components/BlogTracker'
-import { Actions, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, Section, VerseCard } from '@/components/site'
+import { Actions, Figure, GitaBridge, JsonLd, LinkCards, NextStep, PageHero, Section, VerseCard } from '@/components/site'
 import LineShare from '@/components/funnels/hanuman-chalisa/LineShare'
 import SunDistance from '@/components/funnels/hanuman-chalisa/SunDistance'
 import Mala from '@/components/funnels/hanuman-chalisa/Mala'
@@ -9,6 +9,7 @@ import { LineOpenedOnView } from '@/components/funnels/hanuman-chalisa/Trackers'
 import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
 import {
   anchorId,
+  art,
   beads,
   cardOg,
   chalisaWorkLd,
@@ -21,6 +22,9 @@ import {
   linePath,
   NEXT_COPY,
   neighbors,
+  SCENES,
+  sceneFor,
+  getUnit,
   START_SITUATION,
   SUN_LINE_ID,
   unitVerse,
@@ -113,6 +117,7 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
   const u = getUnitBySlug(params.line)
   if (!u) notFound()
   const { prev, next } = neighbors(u)
+  const scene = sceneFor(u.id)
   const path = linePath(u.slug)
   const bridge = GITA_BRIDGES[u.id]
   const source = `Tulsidas, Hanuman Chalisa, ${u.label.en}`
@@ -206,6 +211,18 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
       />
 
       <Section id="hc-ram" tone={tone()} title="Where this happens in the Ramayana">
+        {scene && (
+          <Figure
+            src={art(scene.img)}
+            srcSmall={art(scene.img, 'tile')}
+            alt={scene.alt}
+            width={1200}
+            height={scene.img === 'sanjivani' || scene.img === 'ram-darbar' ? 900 : 896}
+            caption={scene.title}
+            narrow
+            className="rv"
+          />
+        )}
         {u.ramayana ? (
           <>
             <p className="sx-prose rv">{u.ramayana.en}</p>
@@ -258,6 +275,24 @@ export default function ChalisaLinePage({ params }: { params: Params }) {
           <GitaBridge href={bridge.href} label={`Read ${bridge.label}`} why={bridge.why} location="line_gita_bridge" from={u.id} className="rv" />
         </Section>
       )}
+
+      <Section id="hc-scenes" tone={tone()} eyebrow="The story inside the hymn" title="Scenes from the Chalisa">
+        <LinkCards
+          columns={3}
+          layout="rail"
+          items={SCENES.filter((sc) => sc.line !== u.id).map((sc) => {
+            const su = getUnit(sc.line)!
+            return {
+              href: linePath(su.slug),
+              img: { src: art(sc.img, 'tile'), alt: sc.alt, position: sc.position },
+              kicker: su.label.en,
+              title: sc.title,
+              body: sc.body,
+              location: `line_scene_${sc.key}`,
+            }
+          })}
+        />
+      </Section>
 
       <Section tone={tone()}>
         <nav aria-label="Previous and next line">

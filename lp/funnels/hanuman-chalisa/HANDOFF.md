@@ -95,3 +95,12 @@ Tuned for US iPhone families (queries: "hanuman chalisa lyrics in English", "pdf
 - **Line 18** (`/hanuman-chalisa/18-jug-sahastra-jojan-par-bhanu#sun`): "Did the Chalisa give the distance to the sun?" with the viral sum, what jug and jojan can mean, the yojana range, the Valmiki story, 2 FAQs (FAQPage JSON-LD), sources; own title and description.
 - **Site kit** (one place each): `VerseCard` lang 'te' | 'gu' | 'kn'; `ScriptToggle native` label (ScriptToggled `to` = te/gu/kn); `Button`/`Action` `download`, `event`, `eventProps`; tokens `--font-te/gu/kn` from next/font (Noto Serif Telugu/Gujarati/Kannada, preload false).
 - Owner decisions: the PDF page says groups may print copies for temple, satsang or Bal Vihar use (keep the footer line); remove the FAQ if you prefer otherwise.
+
+## Art pass (12 Nov 2026)
+- Eight paintings: six from Gemini (sparkle watermark bottom right), three from Grok Imagine ("Grok" watermark bottom right). Sources in `lp/funnels/hanuman-chalisa/art/`; web copies in `frontend/public/assets/hanuman/` (1200 wide + `-800` tile, WebP).
+- Data: `ART_HERO`, `ART_FAMILY`, `SCENES` (six scenes, each tied to a line: c18 sun, c19 ocean, c31 Sita, c9 Lanka, c11 Sanjivani, d3 Rama's court) and `sceneFor()` in `lib/funnels/hanuman-chalisa/shared.ts`.
+- Kit: `LinkCards` items take `img` (reading-plan card look) and the list takes `layout="rail"` (sideways snap on phones). New `Figure` component. README updated.
+- Hub: art hero; new "The Chalisa in six scenes" rail after the full text; family painting in "Teaching it to your kids"; order is now text, scenes, family, scripts, listen, Gita, reciting, FAQ.
+- Line pages: the scene painting heads "Where this happens in the Ramayana" on the six scene lines; every line page has a "Scenes from the Chalisa" rail.
+- PDF page: family painting as hero art.
+- Open: crop the watermarks or keep them; a portrait crop for the phone hero if the face sits too far right on small screens.

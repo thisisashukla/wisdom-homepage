@@ -4,6 +4,7 @@ import { Faq, JsonLd, LinkCards, NextStep, PageHero, Section } from '@/component
 import { EVENTS } from '@/lib/analytics/events'
 import { abs, AUTHOR_LD, pageMeta, PUBLISHER_LD } from '@/lib/seo'
 import {
+  ART_FAMILY,
   cardOg,
   chalisaWorkLd,
   getUnits,
@@ -121,6 +122,7 @@ export default function HanumanChalisaPdf() {
           { href: '#pdf-all', label: 'See all six', location: 'pdf_hero_all' },
         ]}
         verse={{ ...unitVerse(d1), label: 'Doha 1, the opening line' }}
+        art={{ ...ART_FAMILY, position: '62% 45%' }}
       />
 
       <Section id="pdf-all" tone="band" eyebrow="Six sheets" title="Pick the one your family reads">

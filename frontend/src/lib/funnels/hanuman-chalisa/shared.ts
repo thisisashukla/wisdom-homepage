@@ -52,6 +52,24 @@ export const SCRIPT_PAGES: Record<ScriptKey, ScriptInfo> = {
 export const SCRIPT_LIST: ScriptInfo[] = Object.values(SCRIPT_PAGES)
 
 /** /start situation for the desktop next step: the closest to "courage before a hard day". */
+/** Painted art for the hub, the PDF page and the line pages (public/assets/hanuman). Each file has an -800 tile. */
+export const ART_DIR = '/assets/hanuman'
+export const art = (name: string, size: 'full' | 'tile' = 'full') => `${ART_DIR}/${name}${size === 'tile' ? '-800' : ''}.webp`
+export const ART_HERO = { src: art('devotion'), alt: 'Hanuman seated in prayer on a mountain ledge at sunrise, above a sea of clouds', width: 1200, height: 896, position: '78% 40%' }
+export const ART_FAMILY = { src: art('family'), alt: 'A family seated on a rug before a home altar with a painting of Hanuman and a lit diya, reading the Chalisa from a printed sheet and a tablet', width: 1200, height: 900 }
+
+/** The Ramayana scenes the Chalisa sings, in story order. `line` is the chaupai or doha the picture goes with. */
+export type Scene = { key: string; line: string; img: string; alt: string; title: string; body: string; position?: string }
+export const SCENES: Scene[] = [
+  { key: 'sun', line: 'hc.c18', img: 'sun', title: 'The child who reached for the sun', body: 'As a boy he took the rising sun for a ripe fruit and leapt for it.', alt: 'Child Hanuman leaping from a cliff toward a glowing sun he takes for a fruit' },
+  { key: 'ocean', line: 'hc.c19', img: 'ocean', title: 'The leap across the ocean', body: "With Rama's ring in his mouth, he clears the ocean to Lanka.", alt: 'Hanuman in mid-leap over the ocean toward the golden city of Lanka at sunrise', position: '70% 40%' },
+  { key: 'sita', line: 'hc.c31', img: 'sita-ring', title: "Sita's blessing in the Ashoka grove", body: 'He gives Sita the ring, and she blesses him: ageless, deathless.', alt: "Hanuman kneeling before Sita in the Ashoka grove, holding out Rama's ring", position: '40% 50%' },
+  { key: 'lanka', line: 'hc.c9', img: 'lanka', title: 'Lanka on fire', body: 'Tiny before Sita, fearsome over Lanka, his tail alight.', alt: 'Hanuman with his tail ablaze leaping over the golden domes of Lanka at night' },
+  { key: 'sanjivani', line: 'hc.c11', img: 'sanjivani', title: 'The mountain of healing herbs', body: 'He carries the whole mountain back, and Lakshmana lives.', alt: 'Hanuman flying through a twilight sky carrying a mountain glowing with healing herbs' },
+  { key: 'darbar', line: 'hc.d3', img: 'ram-darbar', title: 'At the feet of Rama', body: '"Live in my heart with Rama, Lakshmana and Sita."', alt: 'Hanuman kneeling with folded hands before Rama, Sita and Lakshmana on a throne', position: '30% 50%' },
+]
+export const sceneFor = (lineId: string) => SCENES.find((s) => s.line === lineId)
+
 export const START_SITUATION = 'didnt_work_out'
 
 export type HcWord = { w: string; iast: string; gloss: string }
