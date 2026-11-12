@@ -97,7 +97,7 @@ Tuned for US iPhone families (queries: "hanuman chalisa lyrics in English", "pdf
 - Owner decisions: the PDF page says groups may print copies for temple, satsang or Bal Vihar use (keep the footer line); remove the FAQ if you prefer otherwise.
 
 ## Art pass (12 Nov 2026)
-- Eight paintings: six from Gemini (sparkle watermark bottom right), three from Grok Imagine ("Grok" watermark bottom right). Sources in `lp/funnels/hanuman-chalisa/art/`; web copies in `frontend/public/assets/hanuman/` (1200 wide + `-800` tile, WebP).
+- Eight paintings: six from Gemini (sparkle watermark bottom right), three from Grok Imagine ("Grok" watermark bottom right). Sources (WebP, q90, full size) in `lp/funnels/hanuman-chalisa/art/`; web copies in `frontend/public/assets/hanuman/` (1200 wide + `-800` tile, WebP).
 - Data: `ART_HERO`, `ART_FAMILY`, `SCENES` (six scenes, each tied to a line: c18 sun, c19 ocean, c31 Sita, c9 Lanka, c11 Sanjivani, d3 Rama's court) and `sceneFor()` in `lib/funnels/hanuman-chalisa/shared.ts`.
 - Kit: `LinkCards` items take `img` (reading-plan card look) and the list takes `layout="rail"` (sideways snap on phones). New `Figure` component. README updated.
 - Hub: art hero; new "The Chalisa in six scenes" rail after the full text; family painting in "Teaching it to your kids"; order is now text, scenes, family, scripts, listen, Gita, reciting, FAQ.
