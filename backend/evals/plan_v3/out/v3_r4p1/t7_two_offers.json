@@ -1,0 +1,1247 @@
+{
+ "case": "t7_two_offers",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "I keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I have to make a big decision. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but I'm scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.55,asp=0.25,wro=0.1,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:alt:blocked_for_stance",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "stuck",
+    "trail": [
+     "overthinking",
+     "stuck"
+    ],
+    "paused": "overthinking",
+    "stance": "seeking",
+    "states": [
+     "chinta",
+     "dharma_sankata",
+     "sankalpa",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "big_decision",
+     "quit_or_stay",
+     "career_switch"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "vr.5.13.17"
+   }
+  },
+  "hook": {
+   "id": "vr.5.13.17",
+   "ref": "Valmiki Ramayana, Sundara Kanda 13.17",
+   "ref_iast": "Vālmīki Rāmāyaṇa 5.13.17",
+   "family": "vr",
+   "speaker": "Hanuman",
+   "listener": "himself",
+   "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+   "sanskrit": null,
+   "line": "If I report it, I am wrong, and if I stay silent, I am wrong. I do not see what I should do.",
+   "translation": "If I report the situation, I will be blamed, and if I do not report it, I will be blamed. The right course of action is unclear to me.",
+   "words": [],
+   "why": "When you have looked everywhere, look again; giving up costs too much.",
+   "misuse": null,
+   "tone": null,
+   "matched": [],
+   "prasang": {
+    "id": "vr.p.search_despair",
+    "title": "Hanuman's search and near despair",
+    "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+    "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+    "lesson": "When you have looked everywhere, look again; giving up costs too much."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You keep walking the same ground, and a verse is chosen to sit with you.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You keep walking the same ground, and a verse is chosen to sit with you.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "bg.6.37",
+    "ref": "Bhagavad Gita 6.37",
+    "ref_iast": "Bhagavad Gītā 6.37",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+    "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+    "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+    "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "अयतिः",
+      "en": "one without steady effort"
+     },
+     {
+      "sa": "श्रद्धयोपेतः",
+      "en": "endowed with faith"
+     },
+     {
+      "sa": "योगात्",
+      "en": "from yoga"
+     },
+     {
+      "sa": "चलितमानसः",
+      "en": "with a mind turned away"
+     },
+     {
+      "sa": "अप्राप्य",
+      "en": "without attaining"
+     },
+     {
+      "sa": "योगसंसिद्धिम्",
+      "en": "perfection in yoga"
+     },
+     {
+      "sa": "कां गतिम्",
+      "en": "what state"
+     },
+     {
+      "sa": "कृष्ण",
+      "en": "O Krishna"
+     },
+     {
+      "sa": "गच्छति",
+      "en": "does he go"
+     }
+    ],
+    "why": "No sincere effort is wasted; you pick up where you left off.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p06.5",
+     "title": "What becomes of one who falls from yoga",
+     "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+     "story_hook": "",
+     "lesson": "No sincere effort is wasted; you pick up where you left off."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.2.7",
+    "ref": "Bhagavad Gita 2.7",
+    "ref_iast": "Bhagavad Gītā 2.7",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+    "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+    "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+    "words": [
+     {
+      "sa": "कार्पण्यदोषोपहतस्वभावः",
+      "en": "nature overcome by weakness"
+     },
+     {
+      "sa": "पृच्छामि",
+      "en": "I ask"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "धर्मसंमूढचेताः",
+      "en": "mind confused about duty"
+     },
+     {
+      "sa": "यत्",
+      "en": "which"
+     },
+     {
+      "sa": "श्रेयः",
+      "en": "the highest good"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "may be"
+     },
+     {
+      "sa": "निश्चितम्",
+      "en": "certainly"
+     },
+     {
+      "sa": "ब्रूहि",
+      "en": "tell"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "मे",
+      "en": "to me"
+     },
+     {
+      "sa": "शिष्यः",
+      "en": "student"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "शाधि",
+      "en": "instruct"
+     },
+     {
+      "sa": "माम्",
+      "en": "me"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "प्रपन्नम्",
+      "en": "one who has taken refuge"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "big_decision",
+      "label": "I have to make a big decision"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 242,
+   "v3_candidates": 63,
+   "v3_fast_read": 1793,
+   "v3_select": 2413,
+   "v3_first_line": 619,
+   "v3_total": 3033,
+   "total": 3035
+  },
+  "_ms": 3044
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:no",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "stuck",
+    "trail": [
+     "overthinking",
+     "stuck"
+    ],
+    "paused": "overthinking",
+    "stance": "seeking",
+    "states": [
+     "chinta",
+     "dharma_sankata",
+     "sankalpa",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "big_decision",
+     "quit_or_stay",
+     "career_switch"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.5.13.17",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.5.13.17",
+     "ref": "Valmiki Ramayana, Sundara Kanda 13.17",
+     "ref_iast": "Vālmīki Rāmāyaṇa 5.13.17",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+     "sanskrit": null,
+     "line": "If I report it, I am wrong, and if I stay silent, I am wrong. I do not see what I should do.",
+     "translation": "If I report the situation, I will be blamed, and if I do not report it, I will be blamed. The right course of action is unclear to me.",
+     "words": [],
+     "why": "When you have looked everywhere, look again; giving up costs too much.",
+     "misuse": null,
+     "tone": null,
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.search_despair",
+      "title": "Hanuman's search and near despair",
+      "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+      "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+      "lesson": "When you have looked everywhere, look again; giving up costs too much."
+     },
+     "score": 9.647,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Two paths sit before you, and each one feels like a loss. You do not have to choose the right path right now. You only have to notice where your feet are willing to stand.",
+     "try_today": "Notice where your feet are willing to stand today.",
+     "scene_line": "You sit on the city wall, weighing two reports, and neither silence nor speech feels safe.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "vr.5.13.17",
+     "path": "Day 1 kept from the first screen (bh.vairagya.76 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.3.2",
+      "bg.2.7",
+      "bg.6.39"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:untraced_sentence(choic,going,heavy,weight)",
+      "audio_open:pathologises_a_light_state(the weight)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.4.17",
+     "ref": "Bhagavad Gita 4.17",
+     "ref_iast": "Bhagavad Gītā 4.17",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna reveals the ancient lineage of this teaching and why he comes into the world.",
+     "sanskrit": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः । अकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः ॥",
+     "line": "What to do, what to avoid, when to hold back: the way of action is deep.",
+     "translation": "One must understand what action is, what wrong action is, and what inaction is; the way of action is deep.",
+     "words": [
+      {
+       "sa": "कर्मणः",
+       "en": "of action"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "अपि",
+       "en": "also"
+      },
+      {
+       "sa": "बोद्धव्यम्",
+       "en": "must be understood"
+      },
+      {
+       "sa": "बोद्धव्यम्",
+       "en": "must be understood"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "विकर्मणः",
+       "en": "of forbidden action"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "of inaction"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "बोद्धव्यम्",
+       "en": "must be understood"
+      },
+      {
+       "sa": "गहना",
+       "en": "deep, hard to grasp"
+      },
+      {
+       "sa": "कर्मणः",
+       "en": "of action"
+      },
+      {
+       "sa": "गतिः",
+       "en": "movement, course"
+      }
+     ],
+     "why": "Every path sincerely walked is met; goodness keeps finding a way back.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.1",
+      "title": "The Lord's power and the yoga of action",
+      "summary": "Krishna says he taught this yoga long ago, that he appears whenever goodness declines, and that he meets people on whatever path they come by. He calls the way of action deep.",
+      "story_hook": "",
+      "lesson": "Every path sincerely walked is met; goodness keeps finding a way back."
+     },
+     "score": 3.195,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today, the way of action is deep. You do not need to resolve the offers before Friday. You only need to understand what action is.",
+     "try_today": "Notice which offer feels like wrong action and which feels like inaction.",
+     "scene_line": "You stand with two offers in your hands while Krishna speaks of the deep way of action.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.4.17",
+     "path": "bg.4.17 -heals-> samshaya [label only: move normalizes]",
+     "why": [
+      "confusion about the right act is not stupidity; the matter is deep"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.38.chaupai.3",
+      "rcm.7.87.chaupai.8",
+      "ashtavakra.15.1"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana, Sundara Kanda 13.17) was about torn between duties; today asks where it comes from.",
+      "link": [
+       "state",
+       "dharma_sankata"
+      ]
+     },
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:imported_doctrine_or_technique(breathe)",
+      "for_you:pathologises_a_light_state(the weight)",
+      "practice:invented_life_detail(your body)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.39",
+     "ref": "Bhagavad Gita 4.39",
+     "ref_iast": "Bhagavad Gītā 4.39",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः । ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ॥",
+     "line": "Trust, commitment and self-control bring understanding, and understanding soon brings peace.",
+     "translation": "The person of faith, devoted to it and with senses controlled, gains knowledge. Having gained knowledge, he soon reaches supreme peace.",
+     "words": [
+      {
+       "sa": "श्रद्धावाँल्लभते",
+       "en": "faithful obtains"
+      },
+      {
+       "sa": "ज्ञानं",
+       "en": "knowledge"
+      },
+      {
+       "sa": "तत्परः",
+       "en": "dedicated"
+      },
+      {
+       "sa": "संयतेन्द्रियः",
+       "en": "self-controlled"
+      },
+      {
+       "sa": "ज्ञानं",
+       "en": "knowledge"
+      },
+      {
+       "sa": "लब्ध्वा",
+       "en": "having obtained"
+      },
+      {
+       "sa": "परां",
+       "en": "supreme"
+      },
+      {
+       "sa": "शान्तिम्",
+       "en": "peace"
+      },
+      {
+       "sa": "अचिरेण",
+       "en": "quickly"
+      },
+      {
+       "sa": "अधिगच्छति",
+       "en": "attains"
+      }
+     ],
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 9.617,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, Krishna said the way of action is hard to fathom. Today, he says faith and steady intent bring knowledge. That knowledge brings peace. You can trust this process while you wait.",
+     "try_today": "Notice when your mind changes its mind. Let it rest there without deciding.",
+     "scene_line": "In the quiet between offers, you hold faith and steady intent.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.4.39",
+     "path": "bg.4.39 -heals-> samshaya via shraddha",
+     "why": [
+      "Trust is what the Gita sets against the doubting self.",
+      "faith and steady application are named as what carries one through to understanding"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.3.314.119",
+      "viv.3.dare_to_be_free",
+      "rcm.1.66.chaupai.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 4.17) was about doubt; today gives ground to stand on.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:preachy(you have to)"
+     ],
+     "bridge": "Yesterday, Krishna said the way of action is hard to fathom."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.30",
+     "ref": "Bhagavad Gita 18.30",
+     "ref_iast": "Bhagavad Gītā 18.30",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna sorts knowledge, action, doers, judgement, resolve and happiness by the three qualities.",
+     "sanskrit": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये । बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥",
+     "line": "Clear judgement knows when to act and when to wait, what to fear, and what frees you.",
+     "translation": "The understanding that knows action and withdrawal, what should and should not be done, what is to be feared and what not, bondage and freedom, that understanding is sattvic, Partha.",
+     "words": [
+      {
+       "sa": "प्रवृत्तिं",
+       "en": "activity"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "निवृत्तिं",
+       "en": "inactivity"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कार्याकार्ये",
+       "en": "in what should be done and not done"
+      },
+      {
+       "sa": "भयाभये",
+       "en": "fear and fearlessness"
+      },
+      {
+       "sa": "बन्धं",
+       "en": "bondage"
+      },
+      {
+       "sa": "मोक्षं",
+       "en": "freedom"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "या",
+       "en": "which"
+      },
+      {
+       "sa": "वेत्ति",
+       "en": "knows"
+      },
+      {
+       "sa": "बुद्धिः",
+       "en": "intellect"
+      },
+      {
+       "sa": "सा",
+       "en": "that"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O son of Pritha"
+      },
+      {
+       "sa": "सात्त्विकी",
+       "en": "is of purity"
+      }
+     ],
+     "why": "Choose the joy that's hard at first and sweet later.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.3",
+      "title": "Knowledge, action, doer, intellect, resolve and happiness by the three gunas",
+      "summary": "Krishna describes clear, restless and dull versions of action, doer, judgement, resolve and happiness: the best joy is poison first and nectar later; the restless kind is nectar first and poison later.",
+      "story_hook": "",
+      "lesson": "Choose the joy that's hard at first and sweet later."
+     },
+     "score": 10.909,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today, your mind can know when to choose and when to wait. One offer is not the end of the other. You can hold both possibilities without choosing yet.",
+     "try_today": "Ask what happens if you choose one, and what happens if you wait.",
+     "scene_line": "Two offers sit before you, and the intellect that knows both paths is clear.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.30",
+     "path": "bg.18.30 -heals-> samshaya",
+     "why": [
+      "describes the clear judgement that can tell when to act and when to step back",
+      "Weigh the two duties; ask what happens if I do and if I do not."
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.35.51",
+      "yv.1.1.7",
+      "bg.5.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 4.39) was about doubt; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:preachy(you have to)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.175.8",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 175.8",
+     "family": "mbh",
+     "speaker": "Brihaspati",
+     "listener": "Yudhishthira",
+     "setting": "The sage Brihaspati gives Yudhishthira the whole of dharma in one line.",
+     "sanskrit": "न तत्परस्य संदध्यात्प्रतिकूलं यदात्मनः / एष साङ्ग्राहिको धर्मः कामादन्यः प्रवर्तते",
+     "line": "Don't do to others what would hurt you. That, in short, is the whole of right conduct.",
+     "translation": "Do not do to another what you would find hurtful yourself. This, in short, is dharma; anything else comes from desire.",
+     "words": [],
+     "why": "Don't do to others what would hurt you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.brihaspati_golden_rule",
+      "title": "Brihaspati's golden rule",
+      "summary": "Brihaspati sums up all of right conduct in one line: don't do to others what would hurt you.",
+      "story_hook": "",
+      "lesson": "Don't do to others what would hurt you."
+     },
+     "score": 3.745,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": "Yudhishthira hears dharma in one line, while you stand at the crossroads of two offers.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.13.175.8",
+     "path": "mbh.13.175.8 -cultivates-> viveka",
+     "why": [
+      "Dharma compressed to one question"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.495",
+      "yv.2.11.58",
+      "yv.5.12.26"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.30) was about torn between duties; today brings one practice for it.",
+      "link": [
+       "state",
+       "dharma_sankata"
+      ]
+     },
+     "personal_source": {
+      "scene_line": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(pain)",
+      "practice:pathologises_a_light_state(hurt)",
+      "audio_open:pathologises_a_light_state(fear)",
+      "for_you:pathologises_a_light_state(pain)",
+      "practice:pathologises_a_light_state(pain)"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.133.13",
+     "ref": "Mahabharata · Vana Parva · Vana: Shibi and the dove",
+     "ref_iast": "Mahābhārata, Vana Parva 133.13",
+     "family": "mbh",
+     "speaker": "The hawk (Indra in disguise)",
+     "listener": "King Shibi",
+     "setting": "A hawk demands the dove King Shibi is sheltering, arguing that rules can clash.",
+     "sanskrit": "गुरुलाघवमाज्ञाय धर्माधर्मविनिश्चये / यतो भूयांस्ततो राजन्कुरु धर्मविनिश्चयम्",
+     "line": "When two duties pull against each other, weigh them, and choose the one that does more good.",
+     "translation": "When deciding between right and wrong, weigh what is heavier against what is lighter, and choose the course where the greater good lies.",
+     "words": [],
+     "why": "When duties collide, weigh them honestly, and keep your word to those who trust you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      },
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.shibi_dove",
+      "title": "King Shibi and the dove",
+      "summary": "A frightened dove flies to King Shibi for refuge; a hawk demands it back as its rightful food. Shibi offers the hawk anything else, finally his own flesh weighed against the dove, and climbs onto the scale himself. The birds reveal themselves as gods.",
+      "story_hook": "A king put himself on the scale to save a bird that had come to him for help.",
+      "lesson": "When duties collide, weigh them honestly, and keep your word to those who trust you."
+     },
+     "score": 4.745,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday you heard not to do to others what would hurt you. Today the hawk asks you to weigh the heavier against the lighter. Two offers stand before you. Each choice carries a different good. The greater good will show itself when you look at the full weight of both.",
+     "try_today": "Weigh the two duties against each other once and choose the one with the greater good.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.3.133.13",
+     "path": "mbh.3.133.13 -cultivates-> viveka",
+     "why": [
+      "Weigh the two duties; ask what happens if I do and if I do not.",
+      "Guru-laghava, comparing weights"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.76.chaupai.3",
+      "rcm.4.30.chaupai.2",
+      "shambhu_gita.7.53"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Anushasana Parva · Anushasana) was about torn between duties; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "dharma_sankata"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday you heard not to do to others what would hurt you."
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.hanuman_chambers_unease",
+     "title": "Hanuman's unease in Ravana's chambers",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman, sent to find a stolen queen, ends up in a room no decent person should enter, and stops to ask whether he has just lost himself.",
+     "summary": "Searching Ravana's palace at night, Hanuman finds himself looking across Ravana's sleeping wives and is seized by fear that he has broken dharma. He examines his own mind, finds it unmoved, reasons that the search itself required it, and goes on searching with a clear conscience.",
+     "lesson": "Judge yourself by your intention and your mind's state, not only by what your eyes happened to meet while doing your duty.",
+     "matched": [],
+     "anchor": null,
+     "score": 12.566,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Hanuman, sent to find a stolen queen, ends up in a room no decent person should enter, and stops to ask whether he has just lost himself.",
+     "for_you": "Yesterday you weighed two duties against each other. Today you examine the mind behind your choice and the necessity of the act. Judge the offers by the intention and the need, then go on.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.hanuman_uneasy_in_ravanas_chambers",
+     "path": "st.vr.hanuman_uneasy_in_ravanas_chambers -enacts_in-> dharma_sankata, samshaya ; st.vr.hanuman_uneasy_in_ravanas_chambers -enacts_turn-> sankalpa, shanti, viveka",
+     "why": [
+      "Judge an act by the mind behind it and by its necessity; examine yourself honestly, then go on."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.up.convocation_parting_words",
+      "st.yv.karunya_stops_acting",
+      "st.vr.ram_checks_if_bharata_wants_the_throne"
+     ],
+     "thin": false,
+     "story_id": "st.vr.hanuman_uneasy_in_ravanas_chambers",
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Vana Parva · Vana: Shibi and the dove) was about torn between duties; today someone in the texts lives it.",
+      "link": [
+       "state",
+       "dharma_sankata"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday you weighed two duties against each other."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn both ways",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 48,
+   "v3_w1_write": 1648,
+   "v3_w1_calls": 1,
+   "v3_w1_total": 1698,
+   "select": 1698,
+   "total": 1701
+  },
+  "_ms": 1706,
+  "_day_ms": [
+   6348,
+   1668,
+   3981,
+   3747,
+   2540,
+   1443
+  ],
+  "_day_calls": [
+   4,
+   1,
+   2,
+   2,
+   1,
+   1
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true,
+  "_d7_redone": true
+ }
+}

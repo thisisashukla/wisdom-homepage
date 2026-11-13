@@ -1,0 +1,1066 @@
+{
+ "case": "r2_voice_validation",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't focus, my mind is restless",
+   "mirror": "I can't focus, my mind is restless",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.7,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I can't focus, my mind is restless. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a seeker whose mind will not settle, facing a mind that won't settle."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels restless; closest to \"I can't focus, my mind is restless\" and \"I can't stop overthinking\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.15,see=0.04",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "overthinking",
+    "trail": [
+     "overthinking"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dvesha",
+     "pramada",
+     "dainya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "doubt_faith",
+     "gratitude"
+    ],
+    "age": "25_34",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "yv.5.66.34",
+    "first_line": "You worry how to make sure others like you, and your mind is caught in endless lists of what you have done, are doing, and must do."
+   }
+  },
+  "hook": {
+   "id": "yv.5.66.34",
+   "ref": "Yoga Vasishtha",
+   "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+   "family": "yv",
+   "speaker": "Bhasa",
+   "listener": "Vilasa",
+   "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+   "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+   "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+   "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+   "words": [],
+   "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing"
+    }
+   ],
+   "prasang": {
+    "id": "yv.p.bhasa_vilasa",
+    "title": "Two old friends meet again and admit they never found peace",
+    "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+    "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+    "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You worry how to make sure others like you, and your mind is caught in endless lists of what you have done, are doing, and must do.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You worry how to make sure others like you, and your mind is caught in endless lists of what you have done, are doing, and must do.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "rcm.7.4.chaupai.8",
+    "ref": "Ramcharitmanas, Uttar Kand 7.4 (chaupai 8)",
+    "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 7.4",
+    "family": "rcm",
+    "speaker": "Bharat",
+    "listener": "Hanuman",
+    "setting": "After fourteen years, Hanuman brings Bharat the news that Ram is coming; Bharat has one question.",
+    "sanskrit": "तब हनुमंत नाइ पद माथा। कहे सकल रघुपति गुन गाथा॥ कहु कपि कबहुँ कृपाल गोसाईं। सुमिरहिं मोहि दास की नाईं ॥",
+    "line": "Tell me: does he ever think of me?",
+    "translation": "Then Hanuman bowed at his feet and told all of Raghupati's virtues. 'Tell me, Hanuman: does the kind master ever remember me, as one remembers a servant?'",
+    "words": [
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "हनुमंत",
+      "en": "Hanuman"
+     },
+     {
+      "sa": "नाइ",
+      "en": "bowing"
+     },
+     {
+      "sa": "पद",
+      "en": "feet"
+     },
+     {
+      "sa": "माथा",
+      "en": "head"
+     },
+     {
+      "sa": "कहे",
+      "en": "spoke"
+     },
+     {
+      "sa": "सकल",
+      "en": "all"
+     },
+     {
+      "sa": "रघुपति",
+      "en": "Lord of the Raghu clan"
+     },
+     {
+      "sa": "गुन",
+      "en": "virtues"
+     },
+     {
+      "sa": "गाथा",
+      "en": "song/story"
+     },
+     {
+      "sa": "कहु",
+      "en": "tell"
+     },
+     {
+      "sa": "कपि",
+      "en": "O monkey"
+     },
+     {
+      "sa": "कबहुँ",
+      "en": "ever"
+     },
+     {
+      "sa": "कृपाल",
+      "en": "gracious"
+     },
+     {
+      "sa": "गोसाईं",
+      "en": "Lord"
+     },
+     {
+      "sa": "सुमिरहिं",
+      "en": "remember"
+     },
+     {
+      "sa": "मोहि",
+      "en": "me"
+     },
+     {
+      "sa": "दास",
+      "en": "servant"
+     },
+     {
+      "sa": "की नाईं",
+      "en": "like"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.1.141.chaupai.3",
+    "ref": "Ramcharitmanas · Bal Kand",
+    "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 141",
+    "family": "rcm",
+    "speaker": "Manu",
+    "listener": "Vishnu",
+    "setting": "Manu, offered any boon after years of austerity, hesitates to ask for what he truly wants.",
+    "sanskrit": "जथा दरिद्र बिबुधतरु पाई। बहु संपति मागत सकुचाई॥ तासु प्रभाउ जान नहिं सोई। तथा हृदयँ मम संसय होई ॥",
+    "line": "Like a poor man before the wishing tree, we hesitate to ask for what we really want.",
+    "translation": "Like a poor man who finds the wish-fulfilling tree and still hesitates to ask for much, not knowing its power, so doubt rises in my heart.",
+    "words": [
+     {
+      "sa": "जथा",
+      "en": "like"
+     },
+     {
+      "sa": "दरिद्र",
+      "en": "poor"
+     },
+     {
+      "sa": "बिबुधतरु",
+      "en": "wish-fulfilling tree"
+     },
+     {
+      "sa": "पाई",
+      "en": "having found"
+     },
+     {
+      "sa": "बहु",
+      "en": "many"
+     },
+     {
+      "sa": "संपति",
+      "en": "wealth"
+     },
+     {
+      "sa": "मागत",
+      "en": "asking for"
+     },
+     {
+      "sa": "सकुचाई",
+      "en": "hesitates"
+     },
+     {
+      "sa": "तासु",
+      "en": "its"
+     },
+     {
+      "sa": "प्रभाउ",
+      "en": "power"
+     },
+     {
+      "sa": "जान",
+      "en": "knows"
+     },
+     {
+      "sa": "नहिं",
+      "en": "not"
+     },
+     {
+      "sa": "सोई",
+      "en": "that one"
+     },
+     {
+      "sa": "तथा",
+      "en": "so"
+     },
+     {
+      "sa": "हृदयँ",
+      "en": "in the heart"
+     },
+     {
+      "sa": "मम",
+      "en": "my"
+     },
+     {
+      "sa": "संसय",
+      "en": "doubt"
+     },
+     {
+      "sa": "होई",
+      "en": "arises"
+     }
+    ],
+    "why": "It is not too late to turn towards what matters, but it takes courage to ask for it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "rcm.p.manu_shatarupa",
+     "title": "Manu and Shatarupa ask late in life",
+     "summary": "King Manu and Queen Shatarupa realise in old age that a whole life has passed without what mattered most to them. They hand over the kingdom, go to the forest and practise austerity for years. When Vishnu offers a boon, Manu hesitates like a poor man before the wishing tree, then asks for a son like God himself.",
+     "story_hook": "The king had ruled well for a lifetime, and one morning he realised he had missed the point.",
+     "lesson": "It is not too late to turn towards what matters, but it takes courage to ask for it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 313,
+   "v3_candidates": 797,
+   "v3_fast_read": 1687,
+   "v3_select": 2806,
+   "v3_first_line": 682,
+   "v3_total": 3488,
+   "total": 3492
+  },
+  "_ms": 3511
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't focus, my mind is restless",
+   "mirror": "I can't focus, my mind is restless",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.7,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I can't focus, my mind is restless. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a seeker whose mind will not settle, facing a mind that won't settle."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels restless; closest to \"I can't focus, my mind is restless\" and \"I can't stop overthinking\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:4/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "overthinking",
+    "trail": [
+     "overthinking"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dvesha",
+     "pramada",
+     "dainya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "doubt_faith",
+     "gratitude"
+    ],
+    "age": "25_34",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "yv.5.66.34",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You worry how to make sure others like you, and your mind is caught in endless lists of what you have done, are doing, and must do."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "words": [],
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 5.048,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is caught in a net of reckonings, and that is a heavy thing. The mind faints when it cannot rest, and you carry this weight while raising your children. The bird of the mind is tangled in endless lists.",
+     "try_today": "Count the tasks you have already done today.",
+     "scene_line": "You sit among the quiet tasks of the day, and the mind keeps naming what is done and what is not.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "yv.5.66.34",
+     "path": "Day 1 kept from the first screen (rcm.7.4.chaupai.8 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.141.chaupai.3",
+      "rcm.5.6.chaupai.1",
+      "viv.8.mental_hell_lifted"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not a reward for finishing. It is)",
+      "for_you:imported_doctrine_or_technique(breathe)",
+      "audio_open:untraced_sentence(cannot,liked,switch,wonder)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 4.431,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is a fire that keeps finding fuel in the question of who likes you. You do not need to burn it out. You only need to stop feeding it.",
+     "try_today": "Notice when the mind starts feeding the worry, and do not add another thought to it.",
+     "scene_line": "Like the brothers by the Ganga, you are grieving and the mind is making bonds of 'mine' and 'not mine' that are not real.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "yv.5.21.6",
+     "path": "yv.5.21.6 -states_chain-> yv.worry_fed_by_thought [sankalpa_kalpana -causes-> chinta]",
+     "why": [
+      "Worry grows when you feed it (Yoga Vasishtha 5.21.6)",
+      "worry is shown to live on the attention it is fed"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.5.11.6",
+      "up_maitrayani.86",
+      "mbh.12.305.32"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not the problem)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.66.7",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+     "family": "vr",
+     "speaker": "Jambavan",
+     "listener": "Hanuman",
+     "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+     "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+     "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+     "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+     "words": [],
+     "why": "Sometimes you need someone to remind you what you are capable of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.jambavan_rouses",
+      "title": "Jambavan reminds Hanuman who he is",
+      "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+      "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+      "lesson": "Sometimes you need someone to remind you what you are capable of."
+     },
+     "score": 6.385,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when your mind asks for proof of being liked.",
+     "scene_line": "You stand at the edge of your own ocean, while old Jambavan waits to remind you of the power you have forgotten.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "vr.4.66.7",
+     "path": "vr.4.66.7 -heals-> dainya via karuna",
+     "why": [
+      "'Do not feel small'; someone reminds you who you are.",
+      "an elder names the capacities he has forgotten"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.3.32.58",
+      "bg.2.48",
+      "viv.5.great_convictions"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:names_a_vice_they_never_showed(resentment)",
+      "practice:untraced_sentence(anyone,asking,else,recogn,withou,worth)",
+      "for_you:contrast_pattern(is not broken. It is)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.5.12.14",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.14",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha describes King Janaka after his awakening, still ruling his kingdom.",
+     "sanskrit": "भविष्यं नानुसंधत्ते नातीतं चिन्तयत्यसौ । वर्तमाननिमेषं तु हसन्नेवानुवर्तते ॥",
+     "line": "Don't chase the future or brood on the past. Meet this moment with a smile.",
+     "translation": "He does not chase the future or brood on the past; he simply goes along with the present moment, smiling.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 5.668,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are trying to make sure others like you while your mind spins. That worry does not need to be fixed. Meet this moment with a smile.",
+     "try_today": "Notice when your mind is chasing the future or the past, and return to this moment.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "yv.5.12.14",
+     "path": "yv.5.12.14 -heals-> chinta via c:vartamana",
+     "why": [
+      "Do not chase the future or brood on the past.",
+      "a picture of a mind not living ahead or behind"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.71.67",
+      "viv.2.remedy_weakness",
+      "viv.1.assimilate_grow"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_brihadaranyak.92",
+     "ref": "Brihadaranyaka Upanishad 1.4.16",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.16",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "How a householder becomes a 'world' for others.",
+     "sanskrit": "यन्मनुष्यान्वासयते यदेभ्योऽशनं ददाति तेन मनुष्याणामथ यत्पशुभ्यस्तृणोदकं विन्दति तेन पशूनां यदस्य गृहेषु श्वापदा वयाꣳस्या पिपीलिकाभ्य उपजीवन्ति तेन तेषां लोको",
+     "line": "Feed people, find water for animals; when even ants live off your home, you become a world for them.",
+     "translation": "By housing people and giving them food, he becomes a world for people. By finding grass and water for animals, he becomes a world for animals. When beasts, birds and even ants live off his house, he becomes a world for them.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "gratitude",
+       "label": "I want to feel more grateful"
+      }
+     ],
+     "prasang": null,
+     "score": 3.275,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are trying to find a way to be liked by everyone, and your mind keeps turning it over. You do not have to earn their presence. Your house is already a world for the ones who live in it.",
+     "try_today": "Notice one small way you shelter or feed another being today.",
+     "scene_line": "You become a world for the ants and the birds who rest at your door.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_brihadaranyak.92",
+     "path": "up_brihadaranyak.92 -cultivates-> kritajnata",
+     "why": [
+      "a household is seen as something many lives rest on"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.172.20",
+      "yv.6a.26.8",
+      "up_maha.532"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.1.53.9",
+     "ref": "Valmiki Ramayana · Bala Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 53.9",
+     "family": "vr",
+     "speaker": "Vasishtha",
+     "listener": "King Vishvamitra",
+     "setting": "A powerful king offers a fortune for the sage's cow, the source of his whole way of life.",
+     "sanskrit": "नाहं शतसहस्रेण नापि कोटिशतैर्गवाम्॥ राजन् दास्यामि शबलां राशिभी रजतस्य वा। न परित्यागमयं मत्सकाशादरिंदम ॥",
+     "line": "Not for any price. Some things are not for sale, however powerful the buyer.",
+     "translation": "Not for a hundred thousand cows, not for a billion, not for heaps of silver, O king, will I give up Shabala. She stays with me.",
+     "words": [
+      {
+       "sa": "नाहम्",
+       "en": "I will not"
+      },
+      {
+       "sa": "शतसहस्रेण",
+       "en": "by a hundred thousand"
+      },
+      {
+       "sa": "नापि",
+       "en": "nor even"
+      },
+      {
+       "sa": "कोटिशतैः",
+       "en": "by hundreds of crores"
+      },
+      {
+       "sa": "गवाम्",
+       "en": "of cows"
+      },
+      {
+       "sa": "राजन्",
+       "en": "O king"
+      },
+      {
+       "sa": "दास्यामि",
+       "en": "I will give"
+      },
+      {
+       "sa": "शबलाम्",
+       "en": "Sabala"
+      },
+      {
+       "sa": "राशिभिः",
+       "en": "by heaps"
+      },
+      {
+       "sa": "रजतस्य",
+       "en": "of silver"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "Envy and force cannot take what someone will not give; real power is built inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.vasishtha_cow",
+      "title": "The king who wanted the cow",
+      "summary": "King Vishvamitra is feasted by the sage Vasishtha and covets the wish-granting cow that made it possible. Vasishtha refuses every offer; the king takes her by force and is routed, then fails again with divine weapons. Humbled, he resolves to transform himself through inner discipline instead of force.",
+      "story_hook": "A king who had everything saw one thing he could not buy, and it undid him.",
+      "lesson": "Envy and force cannot take what someone will not give; real power is built inside."
+     },
+     "score": 2.67,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when you bargain for peace of mind, and let the thought be.",
+     "scene_line": "You sit in the quiet kitchen while the world outside offers you a fortune for your worth.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.1.53.9",
+     "path": "vr.1.53.9 -cultivates-> santosha",
+     "why": [
+      "what sustains his life is not for sale",
+      "a plain no to someone far more powerful"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.2.16.8",
+      "mbh.12.103.34",
+      "bh.niti.53"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(buy,calm,circl,liked,trying)",
+      "for_you:untraced_sentence(anothe,approv,trade,worth)",
+      "for_you:untraced_sentence(else,pay,set,trying,worth)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.kashyapa_jackal",
+     "title": "Kashyapa and the jackal: the gift of hands",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Kashyapa",
+      "Indra (as a jackal)",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Lying in the dust where a rich man's chariot had thrown him, Kashyapa wanted to die, and a jackal laughed at him.",
+     "summary": "A young brahmin, Kashyapa, knocked down by a rich man's chariot, wants to die in humiliation. A jackal tells him how lucky he is to have hands and a human life, and that craving grows like fire fed with wood. The jackal is Indra.",
+     "lesson": "You already have what others long for. Craving is a fire that more fuel only feeds.",
+     "matched": [],
+     "anchor": null,
+     "score": 6.8,
+     "why": null,
+     "hook_title": "Knocked into the dust by a rich man's chariot, a young man wanted to die",
+     "teaser": "Knocked into the dust by a rich man's chariot, a young man wanted to die",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.kashyapa_and_the_jackal",
+     "path": "st.mbh.kashyapa_and_the_jackal -enacts_in-> dainya, matsarya ; st.mbh.kashyapa_and_the_jackal -enacts_turn-> kritajnata, santosha, tejas ; st.mbh.kashyapa_and_the_jackal -fits_situation-> comparison",
+     "why": [
+      "Before counting what you lack, count what you have; a human life with hands is already the great gain."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bh.ascetic_and_king",
+      "st.viv.chicago_no_speech_prepared",
+      "st.bhakti.tulsi_abandoned_as_a_child"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.kashyapa_and_the_jackal",
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(caught,loop,wonder,worry)",
+      "for_you:untraced_sentence(betwee,circl,gap,like)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A mind that won't settle",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 374,
+   "v3_w1_write": 8682,
+   "v3_w1_total": 9060,
+   "select": 9060,
+   "total": 9068
+  },
+  "_ms": 9081
+ }
+}

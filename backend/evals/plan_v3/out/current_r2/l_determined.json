@@ -1,0 +1,957 @@
+{
+ "case": "l_determined",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't stay consistent",
+   "mirror": "I can't stay consistent",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 2.296,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 2.262,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.917,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.474,
+     "source": "note"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels determined; closest to \"I can't stay consistent\" and \"I keep procrastinating\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.7,wro=0.0,see=0.05",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.3.8",
+   "ref": "Bhagavad Gita 3.8",
+   "ref_iast": "Bhagavad Gītā 3.8",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+   "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥",
+   "line": "Do the work that's yours. Doing something beats doing nothing; even living needs action.",
+   "translation": "Do your allotted work, for action is better than inaction. Even the maintenance of your body would not be possible without action.",
+   "words": [
+    {
+     "sa": "नियतं",
+     "en": "prescribed"
+    },
+    {
+     "sa": "कुरु",
+     "en": "do"
+    },
+    {
+     "sa": "कर्म",
+     "en": "action"
+    },
+    {
+     "sa": "त्वं",
+     "en": "you"
+    },
+    {
+     "sa": "कर्म",
+     "en": "action"
+    },
+    {
+     "sa": "ज्यायः",
+     "en": "better"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "अकर्मणः",
+     "en": "than inaction"
+    },
+    {
+     "sa": "अपि",
+     "en": "even body maintenance"
+    },
+    {
+     "sa": "च",
+     "en": "also"
+    },
+    {
+     "sa": "ते",
+     "en": "your"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "प्रसिद्ध्येत",
+     "en": "can be sustained"
+    },
+    {
+     "sa": "अकर्मणः",
+     "en": "without action"
+    }
+   ],
+   "why": "Not acting is still a choice; do the work that is yours.",
+   "misuse": "",
+   "tone": "challenging",
+   "matched": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p03.1",
+    "title": "Why doing your duty without attachment is better",
+    "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+    "story_hook": "",
+    "lesson": "Not acting is still a choice; do the work that is yours."
+   },
+   "score": 2.5885,
+   "beat": "hook",
+   "role_fit": 0.0,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.3.19",
+    "ref": "Bhagavad Gita 3.19",
+    "ref_iast": "Bhagavad Gītā 3.19",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on why even the fulfilled keep working for the world.",
+    "sanskrit": "तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥",
+    "line": "So keep doing the work that needs doing, well and without clinging. That's how you rise.",
+    "translation": "Therefore, always do the work that has to be done, without attachment; by working without attachment a person reaches the highest.",
+    "words": [
+     {
+      "sa": "तस्मात्",
+      "en": "therefore"
+     },
+     {
+      "sa": "असक्तः",
+      "en": "without attachment"
+     },
+     {
+      "sa": "सततं",
+      "en": "continuously"
+     },
+     {
+      "sa": "कार्यं",
+      "en": "duty"
+     },
+     {
+      "sa": "कर्म",
+      "en": "action"
+     },
+     {
+      "sa": "समाचर",
+      "en": "perform well"
+     },
+     {
+      "sa": "असक्तः",
+      "en": "without attachment"
+     },
+     {
+      "sa": "हि",
+      "en": "indeed"
+     },
+     {
+      "sa": "आचरन्",
+      "en": "performing"
+     },
+     {
+      "sa": "कर्म",
+      "en": "action"
+     },
+     {
+      "sa": "परम्",
+      "en": "supreme"
+     },
+     {
+      "sa": "आप्नोति",
+      "en": "attains"
+     },
+     {
+      "sa": "पूरुषः",
+      "en": "person"
+     }
+    ],
+    "why": "People copy what you do, not what you say; keep showing up.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "discipline",
+      "label": "I can't stay consistent"
+     },
+     {
+      "id": "outcome_anxiety",
+      "label": "I'm anxious about how things will turn out"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p03.3",
+     "title": "Even the wise, even God, act for the world's sake",
+     "summary": "The one content in the self has nothing left to gain, yet the wise, like Janaka and Krishna himself, keep working because others follow their example.",
+     "story_hook": "",
+     "lesson": "People copy what you do, not what you say; keep showing up."
+    },
+    "score": 2.4043,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.18.48",
+    "ref": "Bhagavad Gita 18.48",
+    "ref_iast": "Bhagavad Gītā 18.48",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+    "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥",
+    "line": "Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke.",
+    "translation": "One should not give up the work suited to one's nature, Kaunteya, even if it has faults; for all undertakings are clouded by faults, as fire is by smoke.",
+    "words": [
+     {
+      "sa": "सहजं",
+      "en": "natural"
+     },
+     {
+      "sa": "कर्म",
+      "en": "action"
+     },
+     {
+      "sa": "कौन्तेय",
+      "en": "O son of Kunti"
+     },
+     {
+      "sa": "सदोषम्",
+      "en": "faulty"
+     },
+     {
+      "sa": "अपि",
+      "en": "even"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "त्यजेत्",
+      "en": "should abandon"
+     },
+     {
+      "sa": "सर्वारम्भा",
+      "en": "all beginnings"
+     },
+     {
+      "sa": "हि",
+      "en": "indeed"
+     },
+     {
+      "sa": "दोषेण",
+      "en": "by fault"
+     },
+     {
+      "sa": "धूमेन",
+      "en": "by smoke"
+     },
+     {
+      "sa": "अग्नि",
+      "en": "fire"
+     },
+     {
+      "sa": "इव",
+      "en": "like"
+     },
+     {
+      "sa": "आवृताः",
+      "en": "covered"
+     }
+    ],
+    "why": "Do the work that fits you, flaws and all, as an offering.",
+    "misuse": "Not 'never change jobs'. It answers perfectionism, not a reason to stay where you're harmed.",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p18.4",
+     "title": "Duties by nature, and their fruit",
+     "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+     "story_hook": "",
+     "lesson": "Do the work that fits you, flaws and all, as an offering."
+    },
+    "score": 2.2208,
+    "beat": "hook",
+    "role_fit": 0.19,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 540,
+   "llm": 7011,
+   "total": 10858,
+   "select": 3305
+  },
+  "_ms": 10863
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't stay consistent",
+   "mirror": "I can't stay consistent",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 2.296,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 2.262,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.917,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.474,
+     "source": "note"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels determined; closest to \"I can't stay consistent\" and \"I keep procrastinating\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:8=0.6,26=0.3,84=0.3,16=0.0,15=0.6,31=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.60,max=0.68",
+    "dropped:invented=1,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.8",
+     "ref": "Bhagavad Gita 3.8",
+     "ref_iast": "Bhagavad Gītā 3.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥",
+     "line": "Do the work that's yours. Doing something beats doing nothing; even living needs action.",
+     "translation": "Do your allotted work, for action is better than inaction. Even the maintenance of your body would not be possible without action.",
+     "words": [
+      {
+       "sa": "नियतं",
+       "en": "prescribed"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "ज्यायः",
+       "en": "better"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "than inaction"
+      },
+      {
+       "sa": "अपि",
+       "en": "even body maintenance"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "प्रसिद्ध्येत",
+       "en": "can be sustained"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "without action"
+      }
+     ],
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 2.5482,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna is speaking to Arjuna, who has just asked why he should fight when wisdom is the goal. Krishna replies that no one can truly stop acting. The body keeps moving whether the mind wants it to or not. Repressing the body while the mind indulges is just self-deception. The plain truth is that action is better than inaction. Even the basic maintenance of your body is impossible without action. The point is that not acting is still a choice, and you could do the work that is yours.",
+     "for_you": "You are not lazy. You are stuck and not starting. The work that is yours is right in front of you. The next step is yours to take.",
+     "try_today": "Open your books and read one line.",
+     "scene_line": "You stand at the edge of the book, waiting for a reason to begin.",
+     "asks": [
+      "How do I move from waiting to doing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.33.85",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.85",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "षड्दोषाः पुरुषेणेह हातव्या भूतिमिच्छता / निद्रा तन्द्री भयं क्रोध आलस्यं दीर्घसूत्रता",
+     "line": "Six habits block every rise: oversleeping, drowsiness, fear, anger, laziness and procrastination.",
+     "translation": "Six faults must be given up by anyone who wants to prosper: too much sleep, drowsiness, fear, anger, laziness and procrastination.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.238,
+     "beat": "diagnose",
+     "role_fit": 0.495,
+     "meaning": null,
+     "for_you": "You are sitting with your books and the doubt is louder than the page. That is the pattern. The verse names it as one of the six faults that block every rise, not as a flaw in you. Decide calmly. Act steadily. That is your part right now.",
+     "try_today": "Set one small task and do it without checking your phone.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0241,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from a place of quiet resolve. They tell you to let the world do its worst. Let friends praise or blame you. Let money come or go. Let death arrive today or in a hundred years. The point is simple. The steady do not step off the right path. They keep moving forward no matter what the world says or what fortune brings. It is a call to stand firm in what you know is right and to keep walking.",
+     "for_you": "You want to study and you know the work is yours. Let your friends praise or blame your habits. Let money come or go. The steady do not step off the right path.",
+     "try_today": "Open the book and read one paragraph.",
+     "scene_line": "You are at your desk with the book open.",
+     "asks": [
+      "How do I stop the doubt from taking my energy?",
+      "What is the right path for my studies?",
+      "How do I keep going when I feel stuck?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.6.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.18",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "ऐहिकः प्राक्तनं हन्ति प्राक्तनोऽद्यतनं बलात् । सर्वदा पुरुषस्पन्दस्तत्रानुद्वेगवाञ्जयी ॥",
+     "line": "Today's effort and yesterday's keep wrestling. Whoever stays calm through it wins.",
+     "translation": "Present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 2.777,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Vasishtha is speaking to the young prince Rama, who is sitting with his head in his hands, convinced that his future is already written. Vasishtha tells him that what people call fate is just the result of actions done before, and that what is happening right now is another contest, like two rams fighting. The effort you put in today can beat the habits of yesterday, but only if you stay calm while it happens. The past is not a chain. It is only a weight that your present effort can lift.",
+     "for_you": "You are in that contest right now. The doubt about your past consistency is a ram, and the work you could do today is the other. You do not need to win the whole week today.",
+     "try_today": "Do the one small task you have been putting off, and do not judge how well it goes.",
+     "scene_line": "You are the calm ram in your own contest with yesterday's doubt.",
+     "asks": [
+      "How do I stay calm when the work feels heavy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "words": [],
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.9588,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Medhavin speaks to his father, who is laying out the conventional path of study, family, and ritual. Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+     "for_you": "Your studying has a real goal, and the doubt is just noise. Open the book you keep avoiding. Start with one paragraph. Let the work speak for itself.",
+     "try_today": "Open the book you keep avoiding and read one paragraph.",
+     "scene_line": "You are the son who woke his father to the passing of time.",
+     "asks": [
+      "How do I tell doing the work from doing the right work?",
+      "What if I start and still feel stuck?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_chhandogya.581",
+     "ref": "Chhandogya Upanishad 7.21.1",
+     "ref_iast": "Chāndogya Upaniṣad 7.21.1",
+     "family": "up",
+     "speaker": "Sanatkumara",
+     "listener": "Narada",
+     "setting": "A step in Sanatkumara's ladder: faith rests on steadiness, steadiness on action.",
+     "sanskrit": "यदा वै करोत्यथ निस्तिष्ठति नाकृत्वा निस्तिष्ठति कृत्वैव निस्तिष्ठति कृतिस्त्वेव विजिज्ञासितव्येति कृतिं भगवो विजिज्ञास इति ॥",
+     "line": "Steadiness comes from doing. No one becomes steady without acting; act, and steadiness follows.",
+     "translation": "When one acts, one becomes steadfast. One does not become steadfast without acting; only by acting does one become steadfast. So action itself must be understood. 'Sir, I wish to understand action.'",
+     "words": [],
+     "why": "Success and learning don't cure sadness; only the infinite does.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.chhandogya.narada",
+      "title": "Narada: learned but sad",
+      "summary": "Narada, who has mastered every science of his day, comes to Sanatkumara and admits he is unhappy: he knows words, not himself. Sanatkumara leads him step by step from names up through action and joy to the infinite, teaching that happiness is found only in the vast, never in the small.",
+      "story_hook": "Narada knew every subject worth knowing, and still came to Sanatkumara feeling sad.",
+      "lesson": "Success and learning don't cure sadness; only the infinite does."
+     },
+     "score": 3.4616,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Sanatkumara is guiding Narada up a ladder of understanding. Narada has mastered every subject but feels empty and sad. Sanatkumara tells him that faith rests on steadiness, and steadiness rests on action. When one acts, one becomes steadfast. One does not become steadfast without acting. Only by acting does one become steadfast. So action itself must be understood.",
+     "for_you": "You are building a future through study, but doubt is spending the energy you would use to begin. The texts say steadiness comes from doing, not from waiting for the right mood. Your resolve is real. The test is that the work feels too large, so you sit and stare.",
+     "try_today": "Open the first chapter of the text you are avoiding, and read exactly one paragraph.",
+     "scene_line": "You are Narada, standing at the bottom of a ladder, knowing the steps but not yet climbing.",
+     "asks": [
+      "How do I start when the whole syllabus feels like a mountain?",
+      "Can small action really build the steadiness I need?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "anchor": {
+      "id": "yv.1.1.7",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 1.7",
+      "family": "yv",
+      "speaker": "Agastya",
+      "listener": "Sutikshna",
+      "setting": "The sage Agastya answers a student torn between action and knowledge.",
+      "sanskrit": "उभाभ्यामेव पक्षाभ्यां यथा खे पक्षिणां गतिः । तथैव ज्ञानकर्मभ्यां जायते परमं पदम् ॥",
+      "line": "A bird flies on two wings. You need both understanding and action to get anywhere that matters.",
+      "translation": "Just as birds fly through the sky on both their wings, the highest state is reached through both knowledge and action.",
+      "words": [],
+      "why": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "procrastination",
+        "label": "I keep procrastinating"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.karunya_two_wings",
+       "title": "Karunya stops acting: knowledge and action as two wings",
+       "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+       "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+       "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": "Karunya stopped everything to get the answer right first. You are standing at the same point, waiting to feel ready before you begin. The story says knowledge and action are the two wings of one bird. You do not need to choose between understanding and doing.",
+     "asks": [
+      "How do I start before I feel ready?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Stuck at the start",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12332,
+   "total": 12333
+  },
+  "_ms": 12337
+ }
+}

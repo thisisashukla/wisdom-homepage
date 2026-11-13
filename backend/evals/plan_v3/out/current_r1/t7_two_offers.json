@@ -1,0 +1,1083 @@
+{
+ "case": "t7_two_offers",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 1.523,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.471,
+     "source": "note"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 1.371,
+     "source": "note"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.32,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I have to make a big decision. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but I'm scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.55,asp=0.31,wro=0.1,see=0.0",
+    "llm_error:TooManyRequestsError"
+   ]
+  },
+  "hook": {
+   "id": "bg.3.2",
+   "ref": "Bhagavad Gita 3.2",
+   "ref_iast": "Bhagavad Gītā 3.2",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+   "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे । तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ॥",
+   "line": "Your advice sounds mixed and confuses me. Tell me the one thing I should do.",
+   "translation": "With these seemingly mixed words you confuse my mind. Tell me decisively that one thing by which I may reach the highest good.",
+   "words": [
+    {
+     "sa": "व्यामिश्रेण",
+     "en": "mixed"
+    },
+    {
+     "sa": "इव",
+     "en": "as if"
+    },
+    {
+     "sa": "वाक्येन",
+     "en": "by words"
+    },
+    {
+     "sa": "बुद्धिम्",
+     "en": "understanding"
+    },
+    {
+     "sa": "मोहयसि",
+     "en": "you confuse"
+    },
+    {
+     "sa": "इव",
+     "en": "as if"
+    },
+    {
+     "sa": "मे",
+     "en": "my"
+    },
+    {
+     "sa": "तत्",
+     "en": "that"
+    },
+    {
+     "sa": "एकम्",
+     "en": "one"
+    },
+    {
+     "sa": "वद",
+     "en": "speak"
+    },
+    {
+     "sa": "निश्िचत्य",
+     "en": "after deciding"
+    },
+    {
+     "sa": "येन",
+     "en": "by which"
+    },
+    {
+     "sa": "श्रेयः",
+     "en": "highest good"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "आप्नुयाम्",
+     "en": "may attain"
+    }
+   ],
+   "why": "Not acting is still a choice; do the work that is yours.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p03.1",
+    "title": "Why doing your duty without attachment is better",
+    "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+    "story_hook": "",
+    "lesson": "Not acting is still a choice; do the work that is yours."
+   },
+   "score": 3.2512,
+   "beat": "hook",
+   "role_fit": 0.405,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.2.6",
+    "ref": "Bhagavad Gita 2.6",
+    "ref_iast": "Bhagavad Gītā 2.6",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+    "line": "I can't tell which is better, or even what winning would look like.",
+    "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+    "words": [
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "एतत्",
+      "en": "this"
+     },
+     {
+      "sa": "विद्मः",
+      "en": "we know"
+     },
+     {
+      "sa": "कतरत्",
+      "en": "which of the two"
+     },
+     {
+      "sa": "नः",
+      "en": "for us"
+     },
+     {
+      "sa": "गरीयः",
+      "en": "better"
+     },
+     {
+      "sa": "यत् वा",
+      "en": "or which"
+     },
+     {
+      "sa": "जयेम",
+      "en": "we would conquer"
+     },
+     {
+      "sa": "यदि वा",
+      "en": "or whether"
+     },
+     {
+      "sa": "नः",
+      "en": "us"
+     },
+     {
+      "sa": "जयेयुः",
+      "en": "they would conquer"
+     },
+     {
+      "sa": "यान्",
+      "en": "those whom"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "हत्वा",
+      "en": "having killed"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "जिजीविषामः",
+      "en": "we wish to live"
+     },
+     {
+      "sa": "ते",
+      "en": "they"
+     },
+     {
+      "sa": "अवस्थिताः",
+      "en": "standing"
+     },
+     {
+      "sa": "प्रमुखे",
+      "en": "in front"
+     },
+     {
+      "sa": "धार्तराष्ट्राः",
+      "en": "sons of Dhritarashtra"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "big_decision",
+      "label": "I have to make a big decision"
+     },
+     {
+      "id": "quit_or_stay",
+      "label": "Should I quit my job or stay"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 3.2171,
+    "beat": "hook",
+    "role_fit": 0.845,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.2.7",
+    "ref": "Bhagavad Gita 2.7",
+    "ref_iast": "Bhagavad Gītā 2.7",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+    "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+    "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+    "words": [
+     {
+      "sa": "कार्पण्यदोषोपहतस्वभावः",
+      "en": "nature overcome by weakness"
+     },
+     {
+      "sa": "पृच्छामि",
+      "en": "I ask"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "धर्मसंमूढचेताः",
+      "en": "mind confused about duty"
+     },
+     {
+      "sa": "यत्",
+      "en": "which"
+     },
+     {
+      "sa": "श्रेयः",
+      "en": "the highest good"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "may be"
+     },
+     {
+      "sa": "निश्चितम्",
+      "en": "certainly"
+     },
+     {
+      "sa": "ब्रूहि",
+      "en": "tell"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "मे",
+      "en": "to me"
+     },
+     {
+      "sa": "शिष्यः",
+      "en": "student"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "शाधि",
+      "en": "instruct"
+     },
+     {
+      "sa": "माम्",
+      "en": "me"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "प्रपन्नम्",
+      "en": "one who has taken refuge"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "big_decision",
+      "label": "I have to make a big decision"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 2.5196,
+    "beat": "hook",
+    "role_fit": 0.94,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 221,
+   "llm": 58,
+   "total": 2059,
+   "select": 1780
+  },
+  "_ms": 2063
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 1.523,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.471,
+     "source": "note"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 1.371,
+     "source": "note"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.32,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I have to make a big decision. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_sim:mean=0.60,max=0.65",
+    "retried:7",
+    "day1:third_try",
+    "dropped:fallback_lesson=1,fallback_line=6,missing=13",
+    "for_you:7/7",
+    "meaning:0/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.2",
+     "ref": "Bhagavad Gita 3.2",
+     "ref_iast": "Bhagavad Gītā 3.2",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे । तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ॥",
+     "line": "Your advice sounds mixed and confuses me. Tell me the one thing I should do.",
+     "translation": "With these seemingly mixed words you confuse my mind. Tell me decisively that one thing by which I may reach the highest good.",
+     "words": [
+      {
+       "sa": "व्यामिश्रेण",
+       "en": "mixed"
+      },
+      {
+       "sa": "इव",
+       "en": "as if"
+      },
+      {
+       "sa": "वाक्येन",
+       "en": "by words"
+      },
+      {
+       "sa": "बुद्धिम्",
+       "en": "understanding"
+      },
+      {
+       "sa": "मोहयसि",
+       "en": "you confuse"
+      },
+      {
+       "sa": "इव",
+       "en": "as if"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "एकम्",
+       "en": "one"
+      },
+      {
+       "sa": "वद",
+       "en": "speak"
+      },
+      {
+       "sa": "निश्िचत्य",
+       "en": "after deciding"
+      },
+      {
+       "sa": "येन",
+       "en": "by which"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "highest good"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "आप्नुयाम्",
+       "en": "may attain"
+      }
+     ],
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 3.2445,
+     "beat": "hook",
+     "role_fit": 0.405,
+     "meaning": null,
+     "for_you": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.135.26",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 135.26-27",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "सर्वेषां कर्मणां तात फले नित्यमनित्यता / अनित्यमिति जानन्तो न भवन्ति भवन्ति च अथ ये नैव कुर्वन्ति नैव जातु भवन्ति ते / ऐकगुण्यमनीहायामभावः कर्मणां फलम्",
+     "line": "Every result is uncertain. Some who try succeed and some don't. Those who never try never do.",
+     "translation": "The result of every action is uncertain. Knowing this, some people act and succeed, some do not. But those who never act never succeed at all.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.5757,
+     "beat": "diagnose",
+     "role_fit": 0.85,
+     "meaning": null,
+     "for_you": "The self is not the roles you play; when you act from who you are, your duty is not a burden but your own nature.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1334,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": null,
+     "for_you": "Do your own duty as an offering, from the self rather than from fear or pressure, and leave the rest to the divine.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.19",
+     "ref": "Ashtavakra Gita 15.19",
+     "ref_iast": "Aṣṭāvakra Gītā 15.19",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "मा सङ्कल्पविकल्पाभ्यां चित्तं क्षोभय चिन्मय । उपशाम्य सुखं तिष्ठ स्वात्मन्यानन्दविग्रहे ॥",
+     "line": "Don't churn your mind with plans and second thoughts. Be still and rest in yourself.",
+     "translation": "Do not stir your mind with yes and no, with plans and doubts. Be still, and rest happily in your own joyful Self.",
+     "words": [
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "सङ्कल्पविकल्पाभ्यां",
+       "en": "by decisions and doubts"
+      },
+      {
+       "sa": "चित्तं",
+       "en": "mind"
+      },
+      {
+       "sa": "क्षोभय",
+       "en": "disturb"
+      },
+      {
+       "sa": "चिन्मय",
+       "en": "O conscious being"
+      },
+      {
+       "sa": "उपशाम्य",
+       "en": "calmly"
+      },
+      {
+       "sa": "सुखं",
+       "en": "happily"
+      },
+      {
+       "sa": "तिष्ठ",
+       "en": "stay"
+      },
+      {
+       "sa": "स्वात्मन्यानन्दविग्रहे",
+       "en": "in the form of bliss of own true self"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "Not a reason to avoid decisions; decide, then stop churning.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.442,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.40.12",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 40.12",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "इदं च त्वां सर्वपरं ब्रवीमि / पुण्यं पदं तात महाविशिष्टम् / न जातु कामान्न भयान्न लोभा- / द्धर्मं जह्याज्जीविस्यापि हेतोः",
+     "line": "Never give up what is right, not for desire, not from fear, not for money.",
+     "translation": "Here is the highest thing I can tell you, the purest and most valuable: never abandon what is right, not out of desire, not out of fear, not out of greed, not even to save your life.",
+     "words": [],
+     "why": "Don't trade what's right for desire, fear or money. Only your deeds stay with you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "big_decision",
+       "label": "I have to make a big decision"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.40",
+      "title": "Vidura Niti: never abandon what is right",
+      "summary": "Vidura closes with the heart of his counsel: never give up what is right for desire, fear or greed; only our deeds go with us; ask the wise when unsure.",
+      "story_hook": "",
+      "lesson": "Don't trade what's right for desire, fear or money. Only your deeds stay with you."
+     },
+     "score": 3.5279,
+     "beat": "act",
+     "role_fit": 0.851,
+     "meaning": null,
+     "for_you": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.8",
+     "ref": "Bhagavad Gita 18.8",
+     "ref_iast": "Bhagavad Gītā 18.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what true renunciation is; Krishna answers.",
+     "sanskrit": "दुःखमित्येव यत्कर्म कायक्लेशभयात्त्यजेत् । स कृत्वा राजसं त्यागं नैव त्यागफलं लभेत् ॥",
+     "line": "Dropping a duty just because it's hard or you fear the strain isn't freedom. It gains you nothing.",
+     "translation": "One who gives up work because it is painful, out of fear of bodily strain, performs rajasic renunciation and does not gain its fruit.",
+     "words": [
+      {
+       "sa": "दुःखमिति",
+       "en": "as suffering"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "यत्कर्म",
+       "en": "any action"
+      },
+      {
+       "sa": "कायक्लेशभयात्",
+       "en": "due to fear of bodily pain"
+      },
+      {
+       "sa": "त्यजेत्",
+       "en": "should be abandoned"
+      },
+      {
+       "sa": "स",
+       "en": "he"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "having done"
+      },
+      {
+       "sa": "राजसं",
+       "en": "passionate"
+      },
+      {
+       "sa": "त्यागं",
+       "en": "renunciation"
+      },
+      {
+       "sa": "नैव",
+       "en": "not"
+      },
+      {
+       "sa": "त्यागफलं",
+       "en": "fruit of renunciation"
+      },
+      {
+       "sa": "लभेत्",
+       "en": "obtains"
+      }
+     ],
+     "why": "Don't drop what matters out of fear; drop the clinging instead.",
+     "misuse": "Not 'never quit'. Leaving for good reasons is wise; this warns against fleeing out of fear alone.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.1",
+      "title": "What true renunciation is",
+      "summary": "Krishna says good acts shouldn't be dropped; dropping duty out of fear or confusion gains nothing; real renunciation is giving up clinging to results, since no embodied being can stop acting.",
+      "story_hook": "",
+      "lesson": "Don't drop what matters out of fear; drop the clinging instead."
+     },
+     "score": 2.7121,
+     "beat": "act",
+     "role_fit": 0.501,
+     "meaning": null,
+     "for_you": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn both ways",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 4164,
+   "total": 4166
+  },
+  "_ms": 4171
+ }
+}

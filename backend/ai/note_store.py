@@ -3,7 +3,8 @@ note_store.py — keep the raw notes the app sends for verse selection.
 
 Every plan endpoint that receives the person's own words (/recommend/hook, /preview, /plan, /refine and the
 legacy /recommend) writes one row to Supabase table raw_notes (migration 006): the note exactly as sent, the
-answers that came with it, the reading it produced and the verse and story ids chosen. This is the dataset for
+answers that came with it, the reading it produced and the verse and story ids chosen, plus the tracking ids
+(request_id, onboarding_id, distinct_id) that join it to its plan_runs row (ai/run_log.py) and to Mixpanel. This is the dataset for
 studying and evaluating verse selection against real inputs.
 
 Only when the person allowed AI: with `ai: false`, _consent() in server/plan.py clears the note before this runs.
@@ -48,8 +49,18 @@ def row(endpoint: str, req, understanding: Optional[dict] = None, chosen: Iterab
     if not note or not note.strip():
         return None
     u = understanding or {}
+    from ai.run_log import client_of, country_of
+    c = client_of(req)
     return {
         "endpoint": endpoint,
+        "request_id": c.get("request_id"),
+        "onboarding_id": c.get("onboarding_id"),
+        "distinct_id": c.get("distinct_id"),
+        "user_id": c.get("user_id"),
+        "platform": c.get("platform"),
+        "country": country_of(req),
+        "emotion": c.get("emotion"),
+        "dev": bool(c.get("dev")),
         "note": note,
         "note_source": getattr(req, "note_source", None),
         "feeling": getattr(req, "feeling", None),

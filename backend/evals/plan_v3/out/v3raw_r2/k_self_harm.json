@@ -1,0 +1,327 @@
+{
+ "case": "k_self_harm",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "self_harm",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "It sounds like you're carrying something very heavy right now.",
+   "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+    "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "template",
+    "steady": "safety",
+    "act": "safety",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Between things. Feels searching; closest to \"I can't handle not knowing what comes next\" and \"I'm burned out and running on empty\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "engine:v3",
+    "fast_read:raw",
+    "day1:graph_pick",
+    "first_line:budget"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "empty"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "nirveda",
+     "vishada"
+    ],
+    "risk": "self_harm",
+    "situations": [
+     "burnout",
+     "procrastination",
+     "uncertainty"
+    ],
+    "age": "25_34",
+    "stages": [
+     "between"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.37"
+   }
+  },
+  "hook": {
+   "id": "bg.6.37",
+   "ref": "Bhagavad Gita 6.37",
+   "ref_iast": "Bhagavad Gītā 6.37",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+   "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+   "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+   "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+   "words": [
+    {
+     "sa": "अर्जुन उवाच",
+     "en": "Arjuna said"
+    },
+    {
+     "sa": "अयतिः",
+     "en": "one without steady effort"
+    },
+    {
+     "sa": "श्रद्धयोपेतः",
+     "en": "endowed with faith"
+    },
+    {
+     "sa": "योगात्",
+     "en": "from yoga"
+    },
+    {
+     "sa": "चलितमानसः",
+     "en": "with a mind turned away"
+    },
+    {
+     "sa": "अप्राप्य",
+     "en": "without attaining"
+    },
+    {
+     "sa": "योगसंसिद्धिम्",
+     "en": "perfection in yoga"
+    },
+    {
+     "sa": "कां गतिम्",
+     "en": "what state"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "गच्छति",
+     "en": "does he go"
+    }
+   ],
+   "why": "No sincere effort is wasted; you pick up where you left off.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "bg.p06.5",
+    "title": "What becomes of one who falls from yoga",
+    "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+    "story_hook": "",
+    "lesson": "No sincere effort is wasted; you pick up where you left off."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "It sounds like you're carrying something very heavy right now.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "It sounds like you're carrying something very heavy right now.",
+   "first_line_source": "safety"
+  },
+  "alternates": [
+   {
+    "id": "yv.1.12.22",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 12.22",
+    "family": "yv",
+    "speaker": "Rama",
+    "listener": "Vishvamitra and Vasishtha",
+    "setting": "Young Rama, back from his travels, tells the sages in his father's court why nothing interests him.",
+    "sanskrit": "संसारदुःखपाषाणनीरन्ध्रहृदयोऽप्यहम् । निजलोकभयादेव गलद्वाष्पं न रोदिमि ॥",
+    "line": "My heart feels heavy as stone, but I don't cry, because of what people would think.",
+    "translation": "Though my heart is packed tight with the stones of life's sorrows, I don't let my tears fall, only out of fear of what my own people would think.",
+    "words": [],
+    "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+    "misuse": "Holding tears in is not strength. Rama's healing began when he finally said it aloud.",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     }
+    ],
+    "prasang": {
+     "id": "yv.p.ram_lament",
+     "title": "Rama's lament: what is the point of all this?",
+     "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+     "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+     "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "yv.1.31.17",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 31.17",
+    "family": "yv",
+    "speaker": "Rama",
+    "listener": "Vasishtha and Vishvamitra",
+    "setting": "Rama, ending his questions, asks for one practical skill.",
+    "sanskrit": "व्यवहारवतो युक्त्या दुःखं नायाति मे यया । अथवा व्यवहारस्य ब्रूत तां युक्तिमुत्तमाम् ॥",
+    "line": "Teach me how to keep working in the world without the work filling me with sorrow.",
+    "translation": "Tell me the skill by which sorrow doesn't come to me while I go about my work, or else tell me the best way of dealing with life itself.",
+    "words": [],
+    "why": "The real question isn't whether to quit life, but how to live it without being swallowed.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     }
+    ],
+    "prasang": {
+     "id": "yv.p.ram_questions",
+     "title": "Rama asks how to live in the world without being crushed by it",
+     "summary": "After his lament Rama turns to questions. How did King Janaka and others stay free while running kingdoms? How can a person work in the world untouched, like water on a lotus leaf? He asks for one practical skill that lets him work without sorrow.",
+     "story_hook": "Having said what was wrong, Rama finally asked the question that matters: how do the wise do it?",
+     "lesson": "The real question isn't whether to quit life, but how to live it without being swallowed."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": {
+   "kind": "self_harm",
+   "message": "If you're thinking about ending your life or harming yourself, please reach out now. You deserve support from a person.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "988 Suicide & Crisis Lifeline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "UK & Ireland",
+     "name": "Samaritans",
+     "contact": "Call 116 123"
+    },
+    {
+     "region": "Canada",
+     "name": "9-8-8 Suicide Crisis Helpline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "Australia",
+     "name": "Lifeline",
+     "contact": "Call 13 11 14"
+    },
+    {
+     "region": "New Zealand",
+     "name": "1737",
+     "contact": "Call or text 1737"
+    },
+    {
+     "region": "India",
+     "name": "Tele-MANAS",
+     "contact": "Call 14416"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 237,
+   "v3_candidates": 44,
+   "v3_select": 283,
+   "v3_total": 283,
+   "total": 283
+  },
+  "_ms": 286
+ }
+}

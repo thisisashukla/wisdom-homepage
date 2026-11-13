@@ -1,0 +1,1201 @@
+{
+ "case": "t3_friend_harvard",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel jealous of someone close to me",
+   "mirror": "I feel jealous of someone close to me",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 1.487,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.476,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.378,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.344,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel jealous of someone close to me. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Your own path, walked imperfectly, is better than another's walked well; what is yours is enough to begin with.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A story of a seeker whose mind will not settle, facing measuring yourself against others."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel jealous of someone close to me\" and \"I feel ashamed of who I am\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.3,wro=0.1,see=0.05",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.4.22",
+   "ref": "Bhagavad Gita 4.22",
+   "ref_iast": "Bhagavad Gītā 4.22",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna to Arjuna on how the wise live and work.",
+   "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+   "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+   "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+   "words": [
+    {
+     "sa": "यदृच्छा",
+     "en": "by chance"
+    },
+    {
+     "sa": "लाभ",
+     "en": "gain"
+    },
+    {
+     "sa": "सन्तुष्टो",
+     "en": "content"
+    },
+    {
+     "sa": "द्वन्द्वातीतो",
+     "en": "beyond dualities"
+    },
+    {
+     "sa": "विमत्सरः",
+     "en": "free from envy"
+    },
+    {
+     "sa": "समः",
+     "en": "equal"
+    },
+    {
+     "sa": "सिद्धा",
+     "en": "success"
+    },
+    {
+     "sa": "अवसिद्धौ",
+     "en": "failure"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "कृत्वा",
+     "en": "doing"
+    },
+    {
+     "sa": "अपि",
+     "en": "even"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "निबध्यते",
+     "en": "bound"
+    }
+   ],
+   "why": "Contentment and freedom from envy let you work without being bound.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p04.2",
+    "title": "How the great yogis live",
+    "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+    "story_hook": "",
+    "lesson": "Contentment and freedom from envy let you work without being bound."
+   },
+   "score": 2.2754,
+   "beat": "hook",
+   "role_fit": 0.015,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.18.54",
+    "ref": "Bhagavad Gita 18.54",
+    "ref_iast": "Bhagavad Gītā 18.54",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna on the steadiness of one established in knowledge.",
+    "sanskrit": "ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति । समः सर्वेषु भूतेषु मद्भक्तिं लभते पराम् ॥",
+    "line": "Serene within, they neither grieve nor crave, and treat all beings alike.",
+    "translation": "Become one with Brahman, serene in self, one neither grieves nor craves. The same to all beings, one gains supreme devotion to me.",
+    "words": [
+     {
+      "sa": "ब्रह्मभूतः",
+      "en": "becoming supreme reality"
+     },
+     {
+      "sa": "प्रसन्नात्मा",
+      "en": "serene-minded"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "शोचति",
+      "en": "grieves"
+     },
+     {
+      "sa": "न",
+      "en": "nor"
+     },
+     {
+      "sa": "काङ्क्षति",
+      "en": "desires"
+     },
+     {
+      "sa": "समः",
+      "en": "equal"
+     },
+     {
+      "sa": "सर्वेषु",
+      "en": "in all"
+     },
+     {
+      "sa": "भूतेषु",
+      "en": "beings"
+     },
+     {
+      "sa": "मद्भक्तिं",
+      "en": "my devoted love"
+     },
+     {
+      "sa": "लभते",
+      "en": "attains"
+     },
+     {
+      "sa": "पराम",
+      "en": "highest"
+     }
+    ],
+    "why": "Drop the 'mine' and peace follows.",
+    "misuse": "Not 'don't grieve'. It describes a serenity that grows, not a rule against sorrow.",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "envy",
+      "label": "I feel jealous of someone close to me"
+     },
+     {
+      "id": "grief_general",
+      "label": "I'm grieving someone I loved"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p18.5",
+     "title": "Established in knowledge",
+     "summary": "Free of ego, force, arrogance, desire, anger and possessiveness, one becomes peaceful, neither grieving nor craving, the same to all.",
+     "story_hook": "",
+     "lesson": "Drop the 'mine' and peace follows."
+    },
+    "score": 2.2342,
+    "beat": "hook",
+    "role_fit": 0.12,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.10.41",
+    "ref": "Bhagavad Gita 10.41",
+    "ref_iast": "Bhagavad Gītā 10.41",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna names the chief glories in which the divine shows itself.",
+    "sanskrit": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा । तत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम् ॥",
+    "line": "Whatever shines with excellence, beauty or power, see it as a spark of the divine.",
+    "translation": "Whatever is glorious, prosperous or powerful, know that it springs from a spark of my splendour.",
+    "words": [
+     {
+      "sa": "यद्यत्",
+      "en": "whatever"
+     },
+     {
+      "sa": "विभूतिमत्",
+      "en": "manifestation"
+     },
+     {
+      "sa": "सत्त्वं",
+      "en": "being"
+     },
+     {
+      "sa": "श्रीमत्",
+      "en": "glorious"
+     },
+     {
+      "sa": "ऊर्जितम्",
+      "en": "powerful"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "वा",
+      "en": "or"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "तद्",
+      "en": "that"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "अवगच्छ",
+      "en": "understand"
+     },
+     {
+      "sa": "त्वं",
+      "en": "you"
+     },
+     {
+      "sa": "मम",
+      "en": "my"
+     },
+     {
+      "sa": "तेजः",
+      "en": "energy"
+     },
+     {
+      "sa": "अशः",
+      "en": "portion"
+     },
+     {
+      "sa": "सम्भवम्",
+      "en": "originated"
+     }
+    ],
+    "why": "Whatever excellence you admire is a spark of the divine.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "envy",
+      "label": "I feel jealous of someone close to me"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p10.4",
+     "title": "Krishna describes his glories",
+     "summary": "Krishna lists his manifestations: among lights the sun, among rivers the Ganga, and ends by saying any excellence is a spark of his splendour.",
+     "story_hook": "",
+     "lesson": "Whatever excellence you admire is a spark of the divine."
+    },
+    "score": 2.7382,
+    "beat": "hook",
+    "role_fit": 0.06,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 378,
+   "llm": 7016,
+   "total": 13997,
+   "select": 6600
+  },
+  "_ms": 14001
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel jealous of someone close to me",
+   "mirror": "I feel jealous of someone close to me",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 1.487,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.476,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.378,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.344,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel jealous of someone close to me. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Your own path, walked imperfectly, is better than another's walked well; what is yours is enough to begin with.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A story of a seeker whose mind will not settle, facing measuring yourself against others."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel jealous of someone close to me\" and \"I feel ashamed of who I am\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:22=0.3,17=0.3,4=0.6,16=0.3,35=0.3,59=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.74",
+    "dropped:repeat=1,soft_kept=1,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.3603,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna is telling Arjuna how the wise move through the world. They are not pulled around by what they get or what they miss. They work, but their mind is not a slave to the results. They are content with whatever arrives, and they do not envy the path someone else is walking. This steadiness in success and failure is what keeps a person free.",
+     "for_you": "You are sitting with your books and comparing your progress to the people next to you. The texts say the wise are beyond envy. Your worth is not a scoreboard. Let your work be your own path, not a race against theirs.",
+     "try_today": "Notice one moment today when you compare yourself to someone else, and let that thought go.",
+     "scene_line": "You are in your own study space, and the question is whose life seems larger than yours right now.",
+     "asks": [
+      "How do I stop measuring my progress against theirs?",
+      "What does it mean to be content with my own work?",
+      "How can I feel steady in my own path?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.1.8.chaupai.7",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, introducing his work, on how rarely people rejoice at someone else's rise.",
+     "sanskrit": "जग बहु नर सर सरि सम भाई। जे निज बाढ़ि बढ़हि जल पाई॥ सज्जन सकृत सिंधु सम कोई। देखि पूर बिधु बाढ़इ जोई ॥",
+     "line": "Most of us swell only at our own rise. Rare is the one who surges at another's.",
+     "translation": "Brother, most people in the world are like ponds and rivers: they swell only when their own waters rise. Rare is the good soul who, like the ocean, surges with joy on seeing another's moon grow full.",
+     "words": [
+      {
+       "sa": "जग",
+       "en": "world"
+      },
+      {
+       "sa": "बहु",
+       "en": "many"
+      },
+      {
+       "sa": "नर",
+       "en": "people"
+      },
+      {
+       "sa": "सर",
+       "en": "pond"
+      },
+      {
+       "sa": "सरि",
+       "en": "river"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "भाई",
+       "en": "brother"
+      },
+      {
+       "sa": "जे",
+       "en": "those who"
+      },
+      {
+       "sa": "निज",
+       "en": "their own"
+      },
+      {
+       "sa": "बाढ़ि",
+       "en": "increase"
+      },
+      {
+       "sa": "बढ़हि",
+       "en": "grow"
+      },
+      {
+       "sa": "जल",
+       "en": "water"
+      },
+      {
+       "sa": "पाई",
+       "en": "having received"
+      },
+      {
+       "sa": "सज्जन",
+       "en": "noble people"
+      },
+      {
+       "sa": "सकृत",
+       "en": "once"
+      },
+      {
+       "sa": "सिंधु",
+       "en": "ocean"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "कोई",
+       "en": "someone"
+      },
+      {
+       "sa": "देखि",
+       "en": "seeing"
+      },
+      {
+       "sa": "पूर",
+       "en": "fullness"
+      },
+      {
+       "sa": "बिधु",
+       "en": "moon"
+      },
+      {
+       "sa": "बाढ़इ",
+       "en": "swells"
+      },
+      {
+       "sa": "जोई",
+       "en": "who"
+      }
+     ],
+     "why": "Notice whether you can be glad at someone else's good work, not only your own.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.tulsi_humility",
+      "title": "Tulsidas on loving our own work",
+      "summary": "Tulsidas calls his own poetry plain and asks readers to forgive it. Along the way he notes that everyone loves their own work, that few are glad at another's success, and that most people swell only with their own rising waters.",
+      "story_hook": "",
+      "lesson": "Notice whether you can be glad at someone else's good work, not only your own."
+     },
+     "score": 3.5223,
+     "beat": "diagnose",
+     "role_fit": 0.5,
+     "meaning": "Tulsidas is writing his poem and knows it is not grand. He asks the reader to forgive its plainness. Then he watches people and sees that most are like ponds and rivers. They swell only when their own waters rise. They do not cheer when someone else finds a good path. The ocean is different. It does not own the moon, but it still surges when the moon grows full. The verse asks you to look at your own heart and see if it is a pond or an ocean.",
+     "for_you": "You are in a room with books and screens, and someone close to you has just done something bright. You feel the old tightness in your chest, as if their light is pushing your own into shadow. That is the pond.",
+     "try_today": null,
+     "scene_line": "You are a pond watching another's waters rise.",
+     "asks": [
+      "What does the ocean feel like inside my chest?",
+      "Is my gladness for them smaller than my envy?",
+      "How do I stop my own waters from rising first?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.197.chaupai.4",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.197 (chaupai 4)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.197",
+     "family": "rcm",
+     "speaker": "Triveni (a voice from the rivers)",
+     "listener": "Bharat",
+     "setting": "Bharat is consumed by shame over the exile; the holy rivers answer him.",
+     "sanskrit": "तात भरत तुम्ह सब बिधि साधू। राम चरन अनुराग अगाधू॥ बादि गलानि करहु मन माहीं। तुम्ह सम रामहि कोउ प्रिय नाहीं ॥",
+     "line": "You torment yourself with guilt for nothing. No one is dearer to Ram than you.",
+     "translation": "Child Bharat, you are good in every way; your love for Ram's feet is boundless. You torment yourself with guilt for nothing; no one is dearer to Ram than you.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharat"
+      },
+      {
+       "sa": "तुम्ह",
+       "en": "you"
+      },
+      {
+       "sa": "सब बिधि",
+       "en": "in every way"
+      },
+      {
+       "sa": "साधू",
+       "en": "noble, good"
+      },
+      {
+       "sa": "राम",
+       "en": "Ram"
+      },
+      {
+       "sa": "चरन",
+       "en": "feet"
+      },
+      {
+       "sa": "अनुराग",
+       "en": "love, attachment"
+      },
+      {
+       "sa": "अगाधू",
+       "en": "boundless, unfathomable"
+      },
+      {
+       "sa": "बादि",
+       "en": "futile, in vain"
+      },
+      {
+       "sa": "गलानि",
+       "en": "self-blame, remorse"
+      },
+      {
+       "sa": "करहु",
+       "en": "you do"
+      },
+      {
+       "sa": "मन माहीं",
+       "en": "in the mind"
+      },
+      {
+       "sa": "तुम्ह सम",
+       "en": "equal to you"
+      },
+      {
+       "sa": "रामहि",
+       "en": "to Ram"
+      },
+      {
+       "sa": "कोउ",
+       "en": "anyone"
+      },
+      {
+       "sa": "प्रिय",
+       "en": "dear"
+      },
+      {
+       "sa": "नाहीं",
+       "en": "not"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": null,
+     "score": 2.6306,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Triveni speaks to Bharat while he is drowning in guilt. Bharat feels he has failed because he was not with Ram in the forest. Triveni tells him his love is boundless and his guilt is for nothing. She says no one is dearer to Ram than he is. The verse proposes that your own worth is not something you earn by being present at every moment. It is already there, complete and full.",
+     "for_you": "You feel small because you measure your study against your friend's. But your worth is not a grade you could chase. It is already full, even in the quiet of your own room. Your part is to trust what you already carry.",
+     "try_today": "Notice one thing you did well today without comparing it to anyone.",
+     "scene_line": "You sit with your books, and the shame of not being enough begins to dissolve.",
+     "asks": [
+      "How do I stop comparing my worth to theirs?",
+      "What does it mean to be full when I feel empty?",
+      "Can I trust my own progress without their approval?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "words": [
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "व्याप्तम्",
+       "en": "pervaded"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "विश्वं",
+       "en": "world"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "प्रोतं",
+       "en": "woven"
+      },
+      {
+       "sa": "यथार्थतः",
+       "en": "truly"
+      },
+      {
+       "sa": "शुद्धबुद्धस्वरूपः",
+       "en": "pure-consciousness-form"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "गमः",
+       "en": "go, be affected"
+      },
+      {
+       "sa": "क्षुद्रचित्तताम्",
+       "en": "by petty minds"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 2.6168,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka asks the boy-sage Ashtavakra how to be free. Ashtavakra answers that this whole universe is strung on you. You are pure awareness by nature. Do not let your mind shrink into pettiness.",
+     "for_you": "Your mind is making your life small by measuring it against another's. You are not just a student, a friend, or a body. You are the awareness that holds all of it. Your worth is not smaller than theirs. It is not larger either. It is simply there, untouched.",
+     "try_today": "When you catch yourself measuring, stop and name one thing you see without judging it.",
+     "scene_line": "You are the awareness that holds your own smallness and another's rise.",
+     "asks": [
+      "How do I stop my mind from shrinking into pettiness?",
+      "What does it mean to be pure awareness when I am studying?",
+      "Can I be free while my life still looks small?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "words": [
+      {
+       "sa": "श्रेयान्",
+       "en": "better"
+      },
+      {
+       "sa": "स्वधर्मः",
+       "en": "own duty"
+      },
+      {
+       "sa": "विगुणः",
+       "en": "defective"
+      },
+      {
+       "sa": "परधर्मात्",
+       "en": "than another's duty"
+      },
+      {
+       "sa": "स्वनुष्ठितात्",
+       "en": "well performed"
+      },
+      {
+       "sa": "स्वधर्मे",
+       "en": "in own duty"
+      },
+      {
+       "sa": "निधनं",
+       "en": "death"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "better"
+      },
+      {
+       "sa": "परधर्मो",
+       "en": "another's duty"
+      },
+      {
+       "sa": "भयावहः",
+       "en": "fearful"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.5273,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, telling him that the right way to act is to follow his own nature and duty rather than copying someone else. He says it is better to do your own work imperfectly than to do another person's work perfectly. Borrowing someone else's life is dangerous. The point is that your own path, walked with all its flaws, is safer and truer than living through someone else's success.",
+     "for_you": "You are studying and you keep measuring your progress against the people around you. You see their strengths and your own feels small. But your own path is not a borrowed life. Your work is your own, and its worth is not decided by how it looks next to theirs.",
+     "try_today": "Notice one moment when you compare your work to a friend's. Step back and name your own effort instead.",
+     "scene_line": "You stand in the library, watching a friend's success. The choice is between their path and your own.",
+     "asks": [
+      "How do I know my path is truly my own?",
+      "What if my own path feels too small?",
+      "How do I stop measuring my worth against others?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.33",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.33",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage warns the deposed prince against resenting others' success.",
+     "sanskrit": "सहस्व श्रियमन्येषां यद्यपि त्वयि नास्ति सा / अन्यत्रापि सतीं लक्ष्मीं कुशला भुञ्जते नराः / अभिनिष्यन्दते देही श्रीभूतश्च द्विषज्जनात्",
+     "line": "Make peace with other people's success, even when you lack it. The wise can enjoy good fortune that isn't theirs.",
+     "translation": "Bear the good fortune of others, even though it is not with you. Wise people know how to enjoy good fortune even when it belongs to someone else; good fortune drains away from the one who resents.",
+     "words": [],
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "envy",
+       "label": "I feel jealous of someone close to me"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.6442,
+     "beat": "act",
+     "role_fit": 0.539,
+     "meaning": "Kalakavrikshiya speaks to the deposed prince Kshemadarshi, who has lost his kingdom and wealth. The sage warns him that grief cannot bring back what is gone, and that resenting others only drains his own remaining strength. The sage says wise people know how to enjoy the good fortune of others even when it is not theirs, because wanting what you do not have only wastes the energy you still possess.",
+     "for_you": "You keep looking at the life of a friend and feeling your own days shrink. The sage is saying that your jealousy is not a signal to change your path, it is a weight you are carrying.",
+     "try_today": "Notice one small thing about your own work that you did well, and let it be enough.",
+     "scene_line": "You are a prince who has lost a kingdom, and the sage warns you against resenting the fortune of others.",
+     "asks": [
+      "How do I stop measuring my days against theirs?",
+      "What is within reach that I keep ignoring?",
+      "Can I let their success be their own?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.uttanka",
+     "title": "Uttanka confronts Krishna",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Uttanka",
+      "Krishna"
+     ],
+     "story_hook": "The sage wanted to curse Krishna for the war, and Krishna asked him only to listen first.",
+     "summary": "Returning home after the war, Krishna meets the sage Uttanka, who is furious that Krishna let the cousins destroy each other and threatens to curse him. Krishna explains that he tried hard for peace and was refused, and calms him.",
+     "lesson": "You can try your best for peace and still fail. Others' choices are not your guilt.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "anchor": {
+      "id": "mbh.14.53.15",
+      "ref": "Mahabharata · Ashvamedhika Parva · Ashvamedhika",
+      "ref_iast": "Mahābhārata, Āśvamedhika Parva 53.15",
+      "family": "mbh",
+      "speaker": "Krishna",
+      "listener": "The sage Uttanka",
+      "setting": "Uttanka, furious that the war happened, threatens to curse Krishna for not stopping it.",
+      "sanskrit": "कृतो यत्नो मया पूर्वं सौशाम्ये कौरवान्प्रति / नाशक्यन्त यदा साम्ये ते स्थापयितुमञ्जसा",
+      "line": "I tried hard to make peace. When people refuse to be reconciled, you can't force it.",
+      "translation": "I made every effort earlier to bring the Kauravas to peace. But they could not be brought to agree, however I tried.",
+      "words": [],
+      "why": "You can try your best for peace and still fail. Others' choices are not your guilt.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "guilt",
+        "label": "I feel guilty about something I did"
+       }
+      ],
+      "prasang": {
+       "id": "mbh.p.uttanka",
+       "title": "Uttanka confronts Krishna",
+       "summary": "Returning home after the war, Krishna meets the sage Uttanka, who is furious that Krishna let the cousins destroy each other and threatens to curse him. Krishna explains that he tried hard for peace and was refused, and calms him.",
+       "story_hook": "The sage wanted to curse Krishna for the war, and Krishna asked him only to listen first.",
+       "lesson": "You can try your best for peace and still fail. Others' choices are not your guilt."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A sage blamed Krishna for the war and was ready to curse him",
+     "teaser": "A sage blamed Krishna for the war and was ready to curse him",
+     "for_you": "Uttanka wanted to punish Krishna for the war. You want to punish yourself for a feeling you did not choose. Krishna told him he tried hard for peace and was refused. You can try to be kind to yourself and still feel the shame.",
+     "asks": [
+      "How do I stop my mind from running that comparison?",
+      "Can I be proud of my own work without hating theirs?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Measuring yourself",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12613,
+   "total": 12615
+  },
+  "_ms": 12620
+ }
+}

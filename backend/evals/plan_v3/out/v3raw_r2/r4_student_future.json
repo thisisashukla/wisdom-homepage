@@ -1,0 +1,322 @@
+{
+ "case": "r4_student_future",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels restless; closest to \"I'm anxious about how things will turn out\" and \"I feel anxious most of the time\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.3,wro=0.0,see=0.05",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "anxious"
+    ],
+    "paused": "overthinking",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "chinta"
+    ],
+    "risk": "distress",
+    "situations": [
+     "outcome_anxiety",
+     "uncertainty",
+     "anxiety_general"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.33",
+    "first_line": "You feel your mind reel with restlessness, yet you still strive to find your footing."
+   }
+  },
+  "hook": {
+   "id": "bg.6.33",
+   "ref": "Bhagavad Gita 6.33",
+   "ref_iast": "Bhagavad Gītā 6.33",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+   "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+   "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+   "words": [
+    {
+     "sa": "अर्जुन उवाच",
+     "en": "Arjuna said"
+    },
+    {
+     "sa": "यः",
+     "en": "which"
+    },
+    {
+     "sa": "अयम्",
+     "en": "this"
+    },
+    {
+     "sa": "योगः",
+     "en": "yoga"
+    },
+    {
+     "sa": "त्वया",
+     "en": "by you"
+    },
+    {
+     "sa": "प्रोक्तः",
+     "en": "spoken"
+    },
+    {
+     "sa": "साम्येन",
+     "en": "with balance"
+    },
+    {
+     "sa": "मधुसूदन",
+     "en": "O Madhusudana"
+    },
+    {
+     "sa": "एतस्य",
+     "en": "of this"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "पश्यामि",
+     "en": "see"
+    },
+    {
+     "sa": "चञ्चलत्वात्",
+     "en": "because of restlessness"
+    },
+    {
+     "sa": "स्थितिम्",
+     "en": "steady state"
+    },
+    {
+     "sa": "स्थिराम्",
+     "en": "firm"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You feel your mind reel with restlessness, yet you still strive to find your footing.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You feel your mind reel with restlessness, yet you still strive to find your footing.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "bg.6.37",
+    "ref": "Bhagavad Gita 6.37",
+    "ref_iast": "Bhagavad Gītā 6.37",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+    "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+    "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+    "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "अयतिः",
+      "en": "one without steady effort"
+     },
+     {
+      "sa": "श्रद्धयोपेतः",
+      "en": "endowed with faith"
+     },
+     {
+      "sa": "योगात्",
+      "en": "from yoga"
+     },
+     {
+      "sa": "चलितमानसः",
+      "en": "with a mind turned away"
+     },
+     {
+      "sa": "अप्राप्य",
+      "en": "without attaining"
+     },
+     {
+      "sa": "योगसंसिद्धिम्",
+      "en": "perfection in yoga"
+     },
+     {
+      "sa": "कां गतिम्",
+      "en": "what state"
+     },
+     {
+      "sa": "कृष्ण",
+      "en": "O Krishna"
+     },
+     {
+      "sa": "गच्छति",
+      "en": "does he go"
+     }
+    ],
+    "why": "No sincere effort is wasted; you pick up where you left off.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p06.5",
+     "title": "What becomes of one who falls from yoga",
+     "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+     "story_hook": "",
+     "lesson": "No sincere effort is wasted; you pick up where you left off."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 181,
+   "v3_candidates": 39,
+   "v3_fast_read": 2834,
+   "v3_select": 3056,
+   "v3_total": 3056,
+   "total": 3057
+  },
+  "_ms": 3061
+ }
+}

@@ -1,0 +1,230 @@
+{
+ "case": "d_chemo_daughter",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm burned out and running on empty",
+   "mirror": "I'm burned out and running on empty",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm burned out and running on empty. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a warrior or servant doing hard duty, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to \"I'm burned out and running on empty\" and \"Someone I love is seriously ill\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.0,wro=0.15,see=0.0",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "bhaya"
+    ],
+    "risk": "distress",
+    "situations": [
+     "burnout",
+     "illness_family",
+     "fear_death"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "yv.5.66.34",
+    "first_line": "Running between the hospital, the office, and home alone, your mind faints on endless waves of tasks."
+   }
+  },
+  "hook": {
+   "id": "yv.5.66.34",
+   "ref": "Yoga Vasishtha",
+   "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+   "family": "yv",
+   "speaker": "Bhasa",
+   "listener": "Vilasa",
+   "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+   "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+   "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+   "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+   "words": [],
+   "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking"
+    }
+   ],
+   "prasang": {
+    "id": "yv.p.bhasa_vilasa",
+    "title": "Two old friends meet again and admit they never found peace",
+    "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+    "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+    "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Running between the hospital, the office, and home alone, your mind faints on endless waves of tasks.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Running between the hospital, the office, and home alone, your mind faints on endless waves of tasks.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "yv.1.31.17",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 31.17",
+    "family": "yv",
+    "speaker": "Rama",
+    "listener": "Vasishtha and Vishvamitra",
+    "setting": "Rama, ending his questions, asks for one practical skill.",
+    "sanskrit": "व्यवहारवतो युक्त्या दुःखं नायाति मे यया । अथवा व्यवहारस्य ब्रूत तां युक्तिमुत्तमाम् ॥",
+    "line": "Teach me how to keep working in the world without the work filling me with sorrow.",
+    "translation": "Tell me the skill by which sorrow doesn't come to me while I go about my work, or else tell me the best way of dealing with life itself.",
+    "words": [],
+    "why": "The real question isn't whether to quit life, but how to live it without being swallowed.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     }
+    ],
+    "prasang": {
+     "id": "yv.p.ram_questions",
+     "title": "Rama asks how to live in the world without being crushed by it",
+     "summary": "After his lament Rama turns to questions. How did King Janaka and others stay free while running kingdoms? How can a person work in the world untouched, like water on a lotus leaf? He asks for one practical skill that lets him work without sorrow.",
+     "story_hook": "Having said what was wrong, Rama finally asked the question that matters: how do the wise do it?",
+     "lesson": "The real question isn't whether to quit life, but how to live it without being swallowed."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 234,
+   "v3_candidates": 25,
+   "v3_fast_read": 1981,
+   "v3_select": 2243,
+   "v3_total": 2243,
+   "total": 2244
+  },
+  "_ms": 2249
+ }
+}

@@ -5,7 +5,7 @@ import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'How the Wisdom app and wisdomquotes.in handle your data: what we collect, which AI reads your words and only with your yes, and how to delete your account.',
+  description: 'How the Wisdom app and wisdomquotes.in handle your data: what we collect, what we store in Mixpanel for analytics, which AI partners read your words and only with your yes, and how to delete your account.',
   alternates: { canonical: 'https://wisdomquotes.in/privacy' },
   robots: { index: true, follow: true },
 }
@@ -26,14 +26,14 @@ export default function PrivacyPage() {
         <div className="legal-wrap">
           <div className="legal-eyebrow">Legal</div>
           <h1 className="legal-h1">Privacy Policy</h1>
-          <p className="legal-meta">Last updated: 29 October 2026 &nbsp;·&nbsp; Wisdom app (iPhone) &amp; wisdomquotes.in</p>
+          <p className="legal-meta">Last updated: 13 November 2026 &nbsp;·&nbsp; Wisdom app (iPhone) &amp; wisdomquotes.in</p>
 
           <div className="legal-body">
 
             <p>Wisdom is made by Ankur Shukla, an independent developer in India (&ldquo;we&rdquo;). This policy explains what the Wisdom iPhone app and wisdomquotes.in collect, why, who else handles it, and how to delete it.</p>
 
             <div className="highlight-box">
-              <strong>In short:</strong> we don&apos;t sell your data, show ads, or track you across other apps and websites. What you write about your life is read by an AI model only after you tap <em>Allow</em>, only to choose your verses, and under the providers&apos; terms it isn&apos;t used to train AI models. You can delete your account and its data from <em>Settings → Account</em> at any time.
+              <strong>In short:</strong> we don&apos;t sell your data, show ads, or track you across other apps and websites. Your answers and how you use Wisdom are stored in Mixpanel, for analytics only. Your answers are also sent to our AI partners to choose your verses. What you write about your life is sent to our AI partners only after you tap <em>Allow</em>, and under their terms it isn&apos;t used to train AI models. We keep your answers, and your words if you allowed AI, in our own database to check and improve how verses are chosen. You can delete your account and its data from <em>Settings → Account</em> at any time.
             </div>
 
             <h2>1. What the app collects</h2>
@@ -56,15 +56,15 @@ export default function PrivacyPage() {
                 </tr>
                 <tr>
                   <td>Your answers</td>
-                  <td>Age range, stage of life, what weighs on you, time on your phone</td>
-                  <td>Choose the verses for your plan</td>
-                  <td>Sent without your user ID; kept on your phone</td>
+                  <td>Age range, stage of life, the feeling words you tap, what weighs on you, time on your phone</td>
+                  <td>Choose the verses for your plan (sent to our AI partners, section 2); analytics in Mixpanel (section 3); check and improve how verses are chosen</td>
+                  <td>Yes. Stored in our database with your user ID, and in Mixpanel with your analytics ID</td>
                 </tr>
                 <tr>
                   <td>Your words</td>
                   <td>The note you type or speak, questions you ask about a verse, and anything you add when your situation changes</td>
-                  <td>Read by an AI model to choose and explain your verses, <strong>only if you allow it</strong> (section 2)</td>
-                  <td>Sent without your user ID; not stored by us</td>
+                  <td>Sent to our AI partners to choose and explain your verses, <strong>only if you allow it</strong> (section 2)</td>
+                  <td>Yes. If you allow AI, your note and what you add later are stored in our database with your user ID. Your words are never sent to Mixpanel. Questions about a verse aren&apos;t stored</td>
                 </tr>
                 <tr>
                   <td>Journal backup</td>
@@ -74,9 +74,15 @@ export default function PrivacyPage() {
                 </tr>
                 <tr>
                   <td>Usage</td>
-                  <td>Screens opened, buttons tapped, plan progress, an app-generated device ID, and the city and country Mixpanel infers from your IP address</td>
-                  <td>Understand what helps and fix what doesn&apos;t</td>
+                  <td>Screens opened, buttons tapped, your answers (above), whether you wrote a note and how long it was (never the words), plan progress, an app-generated device ID, and the city and country Mixpanel infers from your IP address</td>
+                  <td>Stored in Mixpanel for analytics: understand what helps and fix what doesn&apos;t</td>
                   <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Plan records</td>
+                  <td>For each plan we build: the verses chosen, how our system read your answers (short labels such as the kind of situation), timings, errors, your country, and the same onboarding ID as in Mixpanel</td>
+                  <td>Check that verses fit the people they were chosen for, and match our records with our analytics</td>
+                  <td>Yes. Stored in our database with your user ID</td>
                 </tr>
                 <tr>
                   <td>Feature requests</td>
@@ -98,26 +104,26 @@ export default function PrivacyPage() {
             <p>Before anything you write leaves your phone, the app asks you. If you tap <em>Allow</em>:</p>
             <ul>
               <li><strong>What is sent:</strong> your answers (section 1) and your words: your note, your questions about a verse, and what you add when your situation changes.</li>
-              <li><strong>Who reads it:</strong> our server (hosted on Vercel) passes it to <strong>Sarvam AI</strong> (Axonwise Private Limited, India), whose language model reads it to choose your verses and write the lines meant for you. <strong>Cloudflare</strong> (Workers AI) turns short descriptions of your situation into search vectors so the right verses can be found. Sarvam AI&apos;s voice model reads your daily audio aloud.</li>
-              <li><strong>What it&apos;s used for:</strong> only to make and explain your plan. Under Sarvam AI&apos;s and Cloudflare&apos;s terms it isn&apos;t used to train their AI models.</li>
-              <li><strong>What we keep:</strong> we don&apos;t store or log your note or your questions. To give the same answers the same verse, we keep the chosen first verse and our reading of the situation (never your note) for up to 7 days, under a one-way code that isn&apos;t linked to your account. Audio readings are saved as files named by a one-way code so the same reading isn&apos;t made twice.</li>
+              <li><strong>Who reads it:</strong> our server (hosted on Vercel) passes it to our AI partners. Today these are <strong>Sarvam AI</strong> (Axonwise Private Limited, India), whose language model reads it to choose your verses and write the lines meant for you, and <strong>Cloudflare</strong> (Workers AI), which turns short descriptions of your situation into search vectors so the right verses can be found. Sarvam AI&apos;s voice model reads your daily audio aloud.</li>
+              <li><strong>What it&apos;s used for:</strong> to make and explain your plan. Under our AI partners&apos; terms it isn&apos;t used to train their AI models.</li>
+              <li><strong>What we keep:</strong> your note and anything you add when your situation changes are stored in our database (Supabase) with your user ID and the verses chosen for them, so we can check and improve how verses are chosen. We don&apos;t write them to our server logs and never send them to Mixpanel. Questions you ask about a verse are used only to answer them and aren&apos;t stored. To give the same answers the same verse, we also keep the chosen first verse and our reading of the situation (never your note) for up to 7 days, under a one-way code. Audio readings are saved as files named by a one-way code so the same reading isn&apos;t made twice.</li>
             </ul>
-            <p>If you tap <em>Not now</em>, nothing you write is sent. Your plan is chosen from your answers alone, with no AI model, and your note stays on your phone. You can change this at any time in <em>Settings → Your words</em>. If we ever change which AI providers read your words, the app will ask you again.</p>
+            <p>If you tap <em>Not now</em>, nothing you write is sent or stored. Your plan is chosen from your answers alone, with no AI model, and your note stays on your phone. Your answers are still used and recorded as section 1 describes. You can change this at any time in <em>Settings → Your words</em>. If we ever change which AI partners read your words, the app will ask you again.</p>
             <p>Wisdom offers reflection from scripture. It isn&apos;t medical or mental-health advice. If something you write suggests you may be in danger, the app shows helplines instead of verses.</p>
 
             <h2>3. On this website</h2>
             <ul>
-              <li><strong>Analytics:</strong> Mixpanel records page views and taps, under a random browser ID.</li>
-              <li><strong>Your week by email (wisdomquotes.in/start):</strong> what you choose and write on <em>/start</em> is sent to our server and read by Sarvam AI, as in section 2, to build your Day 1 and your week. If you then sign in with Google (through Firebase Authentication) to get the week by email, we keep your email, name, the kind of device, and the feeling and situation you picked, and we email your week through Resend.</li>
+              <li><strong>Analytics:</strong> Mixpanel stores page views, taps, and the answers you choose on <em>/start</em> (age range, stage of life, feeling words, and whether you wrote a note and how long it was, never the words), under a random browser ID, for analytics only.</li>
+              <li><strong>Your week by email (wisdomquotes.in/start):</strong> what you choose and write on <em>/start</em> is sent to our server and to our AI partners, as in section 2, to build your Day 1 and your week. We keep your answers, your note and a plan record in our database, as in sections 1 and 2, under the same onboarding ID as in Mixpanel. If you then sign in with Google (through Firebase Authentication) to get the week by email, we keep your email, name, the kind of device, and the feeling and situation you picked, and we email your week through Resend.</li>
             </ul>
 
             <h2>4. Who handles your data</h2>
             <ul>
-              <li><strong>Supabase:</strong> accounts, the journal backup and our database. <a href="https://supabase.com/privacy" {...ext}>Privacy →</a></li>
+              <li><strong>Supabase:</strong> accounts, the journal backup and our database, including your answers, plan records and, if you allowed AI, your words. <a href="https://supabase.com/privacy" {...ext}>Privacy →</a></li>
               <li><strong>Vercel:</strong> hosts our server. <a href="https://vercel.com/legal/privacy-policy" {...ext}>Privacy →</a></li>
-              <li><strong>Sarvam AI:</strong> language and voice models, only with your permission (section 2). <a href="https://www.sarvam.ai/privacy-policy" {...ext}>Privacy →</a></li>
-              <li><strong>Cloudflare:</strong> Workers AI for verse search (section 2). <a href="https://www.cloudflare.com/privacypolicy/" {...ext}>Privacy →</a></li>
-              <li><strong>Mixpanel:</strong> usage analytics. <a href="https://mixpanel.com/legal/privacy-policy/" {...ext}>Privacy →</a></li>
+              <li><strong>Sarvam AI:</strong> AI partner for language and voice models; reads your words only with your permission (section 2). <a href="https://www.sarvam.ai/privacy-policy" {...ext}>Privacy →</a></li>
+              <li><strong>Cloudflare:</strong> AI partner, Workers AI for verse search (section 2). <a href="https://www.cloudflare.com/privacypolicy/" {...ext}>Privacy →</a></li>
+              <li><strong>Mixpanel:</strong> stores usage and your answers for analytics. <a href="https://mixpanel.com/legal/privacy-policy/" {...ext}>Privacy →</a></li>
               <li><strong>RevenueCat:</strong> manages subscriptions with the App Store. <a href="https://www.revenuecat.com/privacy" {...ext}>Privacy →</a></li>
               <li><strong>Apple:</strong> the App Store, payments, Sign in with Apple and speech recognition. <a href="https://www.apple.com/legal/privacy/" {...ext}>Privacy →</a></li>
               <li><strong>Google:</strong> Google Sign-In in the app, Firebase Authentication on the website, and fonts on the website. <a href="https://policies.google.com/privacy" {...ext}>Privacy →</a></li>
@@ -130,9 +136,9 @@ export default function PrivacyPage() {
 
             <h2>6. Keeping and deleting your data</h2>
             <ul>
-              <li><strong>Delete your account in the app:</strong> <em>Settings → Account → Delete account</em>. This immediately deletes your account, your journal backup and everything stored with your user ID in our database, and clears the app on your phone. Deleting your account doesn&apos;t cancel an App Store subscription; cancel that in <em>Manage subscription</em>.</li>
+              <li><strong>Delete your account in the app:</strong> <em>Settings → Account → Delete account</em>. This immediately deletes your account, your journal backup and everything stored with your user ID in our database (including your answers, plan records and stored words), and clears the app on your phone. Deleting your account doesn&apos;t cancel an App Store subscription; cancel that in <em>Manage subscription</em>.</li>
               <li><strong>Analytics and purchase records:</strong> usage analytics held by Mixpanel and subscription records held by RevenueCat and Apple aren&apos;t deleted automatically. Email us and we&apos;ll have your analytics deleted within 30 days. Purchase records are kept as long as accounting and tax rules require.</li>
-              <li><strong>Website data:</strong> email us and we&apos;ll delete your email sign-up within 30 days.</li>
+              <li><strong>Website data:</strong> email us and we&apos;ll delete your email sign-up, your answers, your note and your plan records within 30 days.</li>
               <li>Otherwise, account data is kept while your account exists, and analytics are kept under Mixpanel&apos;s retention policy.</li>
             </ul>
 

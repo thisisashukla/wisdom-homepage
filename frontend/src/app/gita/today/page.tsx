@@ -26,7 +26,7 @@ import { getVerseAudio } from '@/lib/gita'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Gita Verse of the Day: Today\'s Shlok & Meaning',
+  title: 'Bhagavad Gita Verse of the Day: Today\'s Shlok and Meaning',
   description:
     'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, plus the story behind why this shloka fits today.',
   alternates: {
@@ -317,6 +317,14 @@ export default async function TodayPage() {
           </a>
         </p>
       )}
+
+      <p style={{ margin: '20px 0 0', fontSize: 15, color: 'var(--text-dim)' }}>
+        Want the verses in order, one each morning?{' '}
+        <a href="/bhagavad-gita-one-verse-a-day" data-mp-location="gita_today_verse_a_day" style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>
+          Start the verse-a-day month
+        </a>{' '}
+        or see <a href="/reading-plans" data-mp-location="gita_today_reading_plans" style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>all reading plans</a>.
+      </p>
 
       <VerseFunnelCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />
     </main>

@@ -1,0 +1,1000 @@
+{
+ "case": "x_widower_gita",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.9,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I want to reconnect with my roots\" and \"I've retired and feel lost\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.0,see=0.91",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick",
+    "first_line:llm_error"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lonely",
+    "trail": [
+     "lonely"
+    ],
+    "paused": null,
+    "stance": "wronged",
+    "states": [
+     "shoka",
+     "jijnasa",
+     "shraddha",
+     "viraha"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "grief_general",
+     "retirement"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1"
+   }
+  },
+  "hook": {
+   "id": "rcm.5.6.chaupai.1",
+   "ref": "Ramcharitmanas · Sundar Kand",
+   "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+   "family": "rcm",
+   "speaker": "Vibhishan",
+   "listener": "Hanuman",
+   "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+   "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+   "line": "I live here like the tongue among the teeth.",
+   "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+   "words": [
+    {
+     "sa": "सुनहु",
+     "en": "listen"
+    },
+    {
+     "sa": "पवनसुत",
+     "en": "son of the wind"
+    },
+    {
+     "sa": "रहनि",
+     "en": "way of living"
+    },
+    {
+     "sa": "हमारी",
+     "en": "my"
+    },
+    {
+     "sa": "जिमि",
+     "en": "like"
+    },
+    {
+     "sa": "दसनन्हि",
+     "en": "teeth"
+    },
+    {
+     "sa": "महुँ",
+     "en": "within"
+    },
+    {
+     "sa": "जीभ",
+     "en": "tongue"
+    },
+    {
+     "sa": "बिचारी",
+     "en": "poor, helpless"
+    },
+    {
+     "sa": "तात",
+     "en": "friend"
+    },
+    {
+     "sa": "कबहुँ",
+     "en": "ever"
+    },
+    {
+     "sa": "मोहि",
+     "en": "me"
+    },
+    {
+     "sa": "जानि",
+     "en": "knowing"
+    },
+    {
+     "sa": "अनाथा",
+     "en": "helpless, without a protector"
+    },
+    {
+     "sa": "करिहहिं",
+     "en": "will do"
+    },
+    {
+     "sa": "कृपा",
+     "en": "grace"
+    },
+    {
+     "sa": "भानुकुल",
+     "en": "solar line"
+    },
+    {
+     "sa": "नाथा",
+     "en": "Lord"
+    }
+   ],
+   "why": "Even in a hostile place there may be one ally; find them.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "rcm.p.vibhishan_hanuman",
+    "title": "Hanuman finds a friend in Lanka",
+    "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+    "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+    "lesson": "Even in a hostile place there may be one ally; find them."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You feel on your own with this, and a verse has been chosen with it in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You feel on your own with this, and a verse has been chosen with it in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "mbh.5.71.28",
+    "ref": "Mahabharata · Udyoga Parva · Udyoga: Krishna's peace embassy",
+    "ref_iast": "Mahābhārata, Udyoga Parva 71.28",
+    "family": "mbh",
+    "speaker": "Yudhishthira",
+    "listener": "Krishna",
+    "setting": "Before Krishna leaves for the Kaurava court, Yudhishthira lays out why he wants peace, not war.",
+    "sanskrit": "अधनाद्धि निवर्तन्ते ज्ञातयः सुहृदो द्विजाः / अपुष्पादफलाद्वृक्षाद्यथा कृष्ण पतत्रिणः",
+    "line": "When money runs out, some friends drift away, like birds leaving a tree with no fruit.",
+    "translation": "When a man has no money, relatives, friends and brahmins turn away from him, the way birds leave a tree that has no flowers and no fruit.",
+    "words": [],
+    "why": "Winning a feud still costs you peace. Hostility only ends when someone stops feeding it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.yudhishthira_peace_case",
+     "title": "Yudhishthira's case for peace",
+     "summary": "Before Krishna sets out as peace envoy, Yudhishthira opens his heart: poverty humiliates, greed corrodes, victory breeds enmity, and hostility is never ended by hostility. He asks only for five villages.",
+     "story_hook": "",
+     "lesson": "Winning a feud still costs you peace. Hostility only ends when someone stops feeding it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "tulsi_kv.7.57",
+    "ref": "Kavitavali",
+    "ref_iast": "Kavitāvalī, Uttar Kāṇḍ 57",
+    "family": "tulsi",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "Tulsidas on his own childhood: abandoned at birth, he grew up begging.",
+    "sanskrit": "मातु-पिताँ जग जाइ तज्यो बिधिहूँ न लिखी कछु भाल भलाई। नीच, निरादरभाजन, कादर, कूकर-टूकन लागि ललाई॥ रामु-सुभाउ सुन्यो तुलसीं प्रभुसों कह्यो बारक पेटु खलाई। स्वारथको परमारथको रघुनाथु सो साहेबु, खोरि न लाई॥",
+    "line": "Abandoned as a child, he poured out his hunger just once, and was held.",
+    "translation": "My mother and father brought me into the world and left me; fate wrote nothing good on my forehead. Lowly, scorned, timid, I hungered like a dog for scraps. Then Tulsi heard of Ram's nature and, just once, showed the Lord his empty stomach. Such a master is Raghunath that he held nothing back, in this world or the next.",
+    "words": [],
+    "why": "It is never too late.",
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 353,
+   "v3_candidates": 38,
+   "v3_fast_read": 1764,
+   "v3_select": 2158,
+   "v3_first_line": 45,
+   "v3_total": 2203,
+   "total": 2204
+  },
+  "_ms": 2205
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.9,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I want to reconnect with my roots\" and retired and feel lost\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "v3:for_you:0/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lonely",
+    "trail": [
+     "lonely"
+    ],
+    "paused": null,
+    "stance": "wronged",
+    "states": [
+     "shoka",
+     "jijnasa",
+     "shraddha",
+     "viraha"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "grief_general",
+     "retirement"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.5.6.chaupai.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+     "family": "rcm",
+     "speaker": "Vibhishan",
+     "listener": "Hanuman",
+     "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+     "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+     "line": "I live here like the tongue among the teeth.",
+     "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+     "words": [
+      {
+       "sa": "सुनहु",
+       "en": "listen"
+      },
+      {
+       "sa": "पवनसुत",
+       "en": "son of the wind"
+      },
+      {
+       "sa": "रहनि",
+       "en": "way of living"
+      },
+      {
+       "sa": "हमारी",
+       "en": "my"
+      },
+      {
+       "sa": "जिमि",
+       "en": "like"
+      },
+      {
+       "sa": "दसनन्हि",
+       "en": "teeth"
+      },
+      {
+       "sa": "महुँ",
+       "en": "within"
+      },
+      {
+       "sa": "जीभ",
+       "en": "tongue"
+      },
+      {
+       "sa": "बिचारी",
+       "en": "poor, helpless"
+      },
+      {
+       "sa": "तात",
+       "en": "friend"
+      },
+      {
+       "sa": "कबहुँ",
+       "en": "ever"
+      },
+      {
+       "sa": "मोहि",
+       "en": "me"
+      },
+      {
+       "sa": "जानि",
+       "en": "knowing"
+      },
+      {
+       "sa": "अनाथा",
+       "en": "helpless, without a protector"
+      },
+      {
+       "sa": "करिहहिं",
+       "en": "will do"
+      },
+      {
+       "sa": "कृपा",
+       "en": "grace"
+      },
+      {
+       "sa": "भानुकुल",
+       "en": "solar line"
+      },
+      {
+       "sa": "नाथा",
+       "en": "Lord"
+      }
+     ],
+     "why": "Even in a hostile place there may be one ally; find them.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vibhishan_hanuman",
+      "title": "Hanuman finds a friend in Lanka",
+      "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+      "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+      "lesson": "Even in a hostile place there may be one ally; find them."
+     },
+     "score": 8.412,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "rcm.5.6.chaupai.1",
+     "path": "Day 1 kept from the first screen (mbh.5.81.26 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.6.chaupai.1",
+      "mbh.5.71.28",
+      "tulsi_kv.7.57"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "viv.5.ridicule_opposition",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 5",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Letter from the USA, 9 July 1895, on opposition to his work in America.",
+     "sanskrit": null,
+     "line": "Each work has to pass through these stages — ridicule, opposition, and then acceptance.",
+     "translation": "Each work has to pass through these stages — ridicule, opposition, and then acceptance. Each man who thinks ahead of his time is sure to be misunderstood.",
+     "words": [],
+     "why": "Ridicule and opposition are stages, not verdicts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.letter.khetri_1895",
+      "title": "Ridicule, opposition, acceptance (letter to Khetri, 1895)",
+      "summary": "Facing opposition from some clergy in America, he writes to his friend the Maharaja that every work passes through ridicule, opposition and then acceptance. Anyone ahead of their time will be misunderstood, so he will stay steady.",
+      "story_hook": "",
+      "lesson": "Ridicule and opposition are stages, not verdicts."
+     },
+     "score": 2.14,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "viv.5.ridicule_opposition",
+     "path": "viv.5.ridicule_opposition -depicts-> manyu",
+     "why": [
+      "being mocked and opposed for one's work"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.39.63",
+      "mbh.12.114.15"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.8.8",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 8.8",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Newly bound in friendship, Sugriva tells Ram what a friend means to him.",
+     "sanskrit": "आढ्यो वापि दरिद्रो वा दुःखितः सुखितोऽपि वा। निर्दोषश्च सदोषश्च वयस्यः परमा गतिः॥",
+     "line": "Rich or poor, happy or sad, flawed or not, a friend is your greatest refuge.",
+     "translation": "Rich or poor, happy or unhappy, faultless or flawed, a friend is one's greatest refuge.",
+     "words": [],
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 7.091,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "vr.4.8.8",
+     "path": "vr.4.8.8 -heals-> viraha via c:satsanga",
+     "why": [
+      "Find the friend; trees that stand together hold each other up.",
+      "a friend is named as refuge in every condition"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.18.64",
+      "bg.10.1",
+      "viv.8.exchange_grief"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.17",
+     "ref": "Valmiki Ramayana, Aranya 66.17",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.17",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "Sita has been taken; Lakshman, the younger brother, gently tries to bring Ram back to himself.",
+     "sanskrit": "बुद्धिश्च ते महाप्राज्ञ देवैरपि दुरन्वया। शोकेनाभिप्रसुप्तं ते ज्ञानं सम्बोधयाम्यहम्॥",
+     "line": "Your wisdom isn't gone. Grief has only put it to sleep for a while.",
+     "translation": "Your understanding, wise one, is beyond even the gods' reckoning. Grief has only put your wisdom to sleep, and I am here to wake it.",
+     "words": [
+      {
+       "sa": "बुद्धिः",
+       "en": "intellect"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "महाप्राज्ञ",
+       "en": "O very wise one"
+      },
+      {
+       "sa": "देवैः",
+       "en": "by the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "दुरन्वया",
+       "en": "hard to follow"
+      },
+      {
+       "sa": "शोकेन",
+       "en": "by sorrow"
+      },
+      {
+       "sa": "अभिप्रसुप्तम्",
+       "en": "fallen asleep"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "wisdom"
+      },
+      {
+       "sa": "सम्बोधयामि",
+       "en": "I am rousing"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 7.07,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "vr.3.66.17",
+     "path": "vr.3.66.17 -heals-> shoka via dhriti",
+     "why": [
+      "Feelings come and go, bear them; your wisdom is asleep, not gone (Lakshmana to Rama).",
+      "grief is treated as a sleep over wisdom, not its loss"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.36.62",
+      "viv.2.stony_heart",
+      "mbh.5.35.60"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.46.127",
+     "ref": "Mahabharata, Shanti 46.127",
+     "ref_iast": "Mahābhārata, Śānti Parva 46.127",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Krishna",
+     "setting": "From the closing verses of Bhishma's hymn.",
+     "sanskrit": "प्राणकान्तारपाथेयं संसारोच्छेदभेषजम् / दुःखशोकपरित्राणं हरिरित्यक्षरद्वयम्॥]",
+     "line": "Food for the long road, medicine, rescue from grief: just two syllables, Ha-ri.",
+     "translation": "Provisions for the wilderness of life, medicine that cuts the bonds of the world, rescue from sorrow and grief: the two syllables 'Ha-ri'.",
+     "words": [],
+     "why": "The one you think of in your hardest hour is already thinking of you.",
+     "misuse": "The name as a place to rest, not a cure that replaces medical, legal or emotional help.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.k.krishna_bhishma",
+      "title": "Krishna and Bhishma on the bed of arrows",
+      "summary": "After the war, Krishna sits motionless; he explains that the dying Bhishma is thinking of him, so his mind has gone to Bhishma. They visit; Bhishma sings his hymn to Krishna, admits his pain and that he stands only on Krishna's strength. Krishna grants him relief, asks the next morning whether he slept well, and steps back so that Bhishma, not he, will teach Yudhishthira.",
+      "story_hook": "Yudhishthira found Krishna sitting so still that not a hair on his body moved, like a lamp in a windless place.",
+      "lesson": "The one you think of in your hardest hour is already thinking of you."
+     },
+     "score": 4.126,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.12.46.127",
+     "path": "mbh.12.46.127 -cultivates-> shraddha",
+     "why": [
+      "Trust in two syllables",
+      "Remembering the name"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_devi.19",
+      "bg.18.57",
+      "viv.4.servant_while_leading"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.28",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 28",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of the section praising learning: the 'sword's-edge vow' of the good.",
+     "sanskrit": "असन्तो नाभ्यर्थ्याः सुहृदपि न याच्यः कृशधनः प्रिया न्याय्या वृत्तिर्मलिनमसुभङ्गेऽप्यसुकरम् । विपद्युच्चैः स्थेयं पदमनुविधेयं च महतां सतां केनोद्दिष्टं विषममसिधाराव्रतमिदम् ॥",
+     "line": "Don't beg favours from the wicked or money from a struggling friend. Stand tall in hard times.",
+     "translation": "Do not ask the wicked for favours; do not ask a friend of slender means for money; love a just way of earning; do nothing base even when life is at stake; stand tall in trouble; follow in the footsteps of the great. Who taught the good this vow, hard as walking a sword's edge?",
+     "words": [],
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "'Even when life is at stake' is the poet's intensity; no principle asks you to harm yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 3.945,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bh.niti.28",
+     "path": "bh.niti.28 -cultivates-> dhriti",
+     "why": [
+      "The sword-edge vow of integrity",
+      "Standing tall in trouble"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.2.16.8",
+      "shambhu_gita.7.53",
+      "vr.6.16.24"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.mbh.kunti_watches_them_leave",
+     "title": "Kunti watches her sons and daughter-in-law walk into exile",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Kunti",
+      "Draupadi",
+      "Yudhishthira",
+      "Vidura"
+     ],
+     "story_hook": "She was too old to go with them. She stood at the gate and said one thing to her daughter-in-law, and then she wept.",
+     "summary": "Kunti is too old for the forest, so Vidura will keep her in his house. She watches her five sons leave in deerskins, heads down, mocked by Duhshasana. Draupadi comes to take her leave in a single stained garment with her hair loose.",
+     "lesson": "A parent's part, when the children must go, is to bless them truthfully and bear the waiting.",
+     "matched": [],
+     "anchor": null,
+     "score": 8.532,
+     "why": null,
+     "hook_title": null,
+     "teaser": "She was too old to go with them. She stood at the gate and said one thing to her daughter-in-law, and then she wept.",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.kunti_watches_them_leave",
+     "path": "st.mbh.kunti_watches_them_leave -enacts_in-> shoka, viraha ; st.mbh.kunti_watches_them_leave -enacts_turn-> dhriti, shraddha ; st.mbh.kunti_watches_them_leave -fits_situation-> grief_general",
+     "why": [
+      "A parent's part, when the children must go, is to bless them truthfully and bear the waiting."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.draupadi_no_one_is_mine",
+      "st.mbh.damayanti_alone_sets_her_terms",
+      "st.vr.vibhishana_distrusted_by_the_right_side"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.kunti_watches_them_leave",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {}
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Feeling alone",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 21,
+   "v3_w1_write": 105,
+   "v3_w1_total": 127,
+   "select": 127,
+   "total": 128
+  },
+  "_ms": 130
+ }
+}

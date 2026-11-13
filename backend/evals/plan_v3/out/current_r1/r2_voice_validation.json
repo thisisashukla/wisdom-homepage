@@ -1,0 +1,1102 @@
+{
+ "case": "r2_voice_validation",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.043,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.711,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels restless; closest to \"I'm anxious about how things will turn out\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.15,see=0.06",
+    "llm_error:TooManyRequestsError"
+   ]
+  },
+  "hook": {
+   "id": "bg.6.34",
+   "ref": "Bhagavad Gita 6.34",
+   "ref_iast": "Bhagavad Gītā 6.34",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+   "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+   "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+   "words": [
+    {
+     "sa": "चञ्चलम्",
+     "en": "restless"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "मनः",
+     "en": "mind"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "प्रमाथि",
+     "en": "turbulent"
+    },
+    {
+     "sa": "बलवत्",
+     "en": "strong"
+    },
+    {
+     "sa": "दृढम्",
+     "en": "stubborn, firm"
+    },
+    {
+     "sa": "तस्य",
+     "en": "of that"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "निग्रहम्",
+     "en": "control, restraint"
+    },
+    {
+     "sa": "मन्ये",
+     "en": "consider"
+    },
+    {
+     "sa": "वायोः",
+     "en": "of wind"
+    },
+    {
+     "sa": "इव",
+     "en": "like"
+    },
+    {
+     "sa": "सुदुष्करम्",
+     "en": "very difficult"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 3.0722,
+   "beat": "hook",
+   "role_fit": 0.73,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.6.26",
+    "ref": "Bhagavad Gita 6.26",
+    "ref_iast": "Bhagavad Gītā 6.26",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+    "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+    "line": "Wherever the restless mind wanders, gently bring it back. Again and again.",
+    "translation": "Wherever the restless, unsteady mind wanders, from there one should draw it back and bring it under the control of the self.",
+    "words": [
+     {
+      "sa": "यतो यतः",
+      "en": "wherever"
+     },
+     {
+      "sa": "निश्चरति",
+      "en": "wanders out"
+     },
+     {
+      "sa": "मनः",
+      "en": "the mind"
+     },
+     {
+      "sa": "चञ्चलम्",
+      "en": "restless"
+     },
+     {
+      "sa": "अस्थिरम्",
+      "en": "unsteady"
+     },
+     {
+      "sa": "ततस्ततः",
+      "en": "from there, from there"
+     },
+     {
+      "sa": "नियम्य",
+      "en": "restraining"
+     },
+     {
+      "sa": "एतत्",
+      "en": "this"
+     },
+     {
+      "sa": "आत्मनि",
+      "en": "in the true self"
+     },
+     {
+      "sa": "एव",
+      "en": "only"
+     },
+     {
+      "sa": "वशम्",
+      "en": "under control"
+     },
+     {
+      "sa": "नयेत्",
+      "en": "should bring"
+     }
+    ],
+    "why": "Moderation and gentle return, again and again, settle the mind.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "restless_mind",
+      "label": "I can't focus, my mind is restless"
+     },
+     {
+      "id": "overthinking",
+      "label": "I can't stop overthinking"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.3",
+     "title": "Meditation in detail",
+     "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+     "story_hook": "",
+     "lesson": "Moderation and gentle return, again and again, settle the mind."
+    },
+    "score": 2.479,
+    "beat": "hook",
+    "role_fit": 0.12,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.5.20",
+    "ref": "Bhagavad Gita 5.20",
+    "ref_iast": "Bhagavad Gītā 5.20",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+    "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+    "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+    "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+    "words": [
+     {
+      "sa": "na",
+      "en": "not"
+     },
+     {
+      "sa": "prahṛṣyet",
+      "en": "rejoices"
+     },
+     {
+      "sa": "priyaṃ",
+      "en": "pleasant"
+     },
+     {
+      "sa": "prāpya",
+      "en": "having obtained"
+     },
+     {
+      "sa": "no",
+      "en": "not"
+     },
+     {
+      "sa": "udvijet",
+      "en": "is disturbed"
+     },
+     {
+      "sa": "prāpya",
+      "en": "having obtained"
+     },
+     {
+      "sa": "ca",
+      "en": "and"
+     },
+     {
+      "sa": "apriyam",
+      "en": "unpleasant"
+     },
+     {
+      "sa": "sthira-buddhiḥ",
+      "en": "steady wisdom"
+     },
+     {
+      "sa": "asammūḍhaḥ",
+      "en": "unconfused"
+     },
+     {
+      "sa": "brahma-vid",
+      "en": "knower of the supreme reality"
+     },
+     {
+      "sa": "brahmaṇi",
+      "en": "in the supreme reality"
+     },
+     {
+      "sa": "sthitaḥ",
+      "en": "situated"
+     }
+    ],
+    "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "outcome_anxiety",
+      "label": "I'm anxious about how things will turn out"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p05.3",
+     "title": "The yoga of knowledge",
+     "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+     "story_hook": "",
+     "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+    },
+    "score": 2.3398,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 489,
+   "llm": 63,
+   "total": 2524,
+   "select": 1970
+  },
+  "_ms": 2526
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.043,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.711,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels restless; closest to anxious about how things will turn out\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "week_sim:mean=0.62,max=0.67",
+    "retried:7",
+    "day1:third_try",
+    "dropped:fallback_lesson=1,fallback_line=6,missing=13",
+    "for_you:7/7",
+    "meaning:0/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.0723,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": null,
+     "for_you": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.14",
+     "ref": "Bhagavad Gita 18.14",
+     "ref_iast": "Bhagavad Gītā 18.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on the five causes behind every action.",
+     "sanskrit": "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् । विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम् ॥",
+     "line": "Every result has five causes: the setting, the doer, the tools, the efforts, and the unseen. You're one of them.",
+     "translation": "The seat, the doer, the various instruments, the many kinds of effort, and fifth, providence: these are the five causes of every action.",
+     "words": [
+      {
+       "sa": "अधिष्ठानम्",
+       "en": "the basis"
+      },
+      {
+       "sa": "तथा",
+       "en": "and"
+      },
+      {
+       "sa": "कर्ता",
+       "en": "the doer"
+      },
+      {
+       "sa": "करणम्",
+       "en": "the instruments"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "पृथग्विधम्",
+       "en": "of many kinds"
+      },
+      {
+       "sa": "विविधाः",
+       "en": "varied"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "पृथक्",
+       "en": "separate"
+      },
+      {
+       "sa": "चेष्टाः",
+       "en": "efforts"
+      },
+      {
+       "sa": "दैवम्",
+       "en": "the unseen force"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "अत्र",
+       "en": "here"
+      },
+      {
+       "sa": "पञ्चमम्",
+       "en": "the fifth"
+      }
+     ],
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not 'it wasn't my fault'. You own your part; you just aren't the only cause.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.8462,
+     "beat": "diagnose",
+     "role_fit": 0.611,
+     "meaning": null,
+     "for_you": "You are not the result of your work; success and failure come and go, while the one who acts stays whole through both.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.453",
+     "ref": "Maha Upanishad 5.171",
+     "ref_iast": "Mahā Upaniṣad 5.171",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on the mark of the wise.",
+     "sanskrit": "अनागतानां भोगानामवाञ्छनमकृत्रिमम् । आगतानां च संभोग इति पण्डितलक्षणम् ॥",
+     "line": "Not pining for pleasures still to come, and enjoying the ones already here: that is wisdom.",
+     "translation": "Not longing for pleasures yet to come, and enjoying those that have come: this, unforced, is the mark of the wise.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3182,
+     "beat": "steady",
+     "role_fit": 0.715,
+     "meaning": null,
+     "for_you": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.48",
+     "ref": "Bhagavad Gita 2.48",
+     "ref_iast": "Bhagavad Gītā 2.48",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥",
+     "line": "Do the work steadily, letting go of clinging. Stay the same in success and failure; that balance is yoga.",
+     "translation": "Established in yoga, do your work, Dhananjaya, giving up attachment, the same in success and failure. This evenness is called yoga.",
+     "words": [
+      {
+       "sa": "योगस्थः",
+       "en": "established in yoga"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "सङ्गं",
+       "en": "attachment"
+      },
+      {
+       "sa": "त्यक्त्वा",
+       "en": "having abandoned"
+      },
+      {
+       "sa": "धनञ्जय",
+       "en": "O Dhananjaya"
+      },
+      {
+       "sa": "सिद्ध्यसिद्ध्योः",
+       "en": "success and failure"
+      },
+      {
+       "sa": "समो",
+       "en": "equal"
+      },
+      {
+       "sa": "भूत्वा",
+       "en": "being"
+      },
+      {
+       "sa": "समत्वं",
+       "en": "evenness"
+      },
+      {
+       "sa": "योग",
+       "en": "yoga"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "Even in success and failure doesn't mean indifferent to them; learn from both without being thrown.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.249,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.9258,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": null,
+     "for_you": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.6.2",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.2",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "यथा यथा प्रयत्नः स्याद्भवेदाशु फलं तथा । इति पौरुषमेवास्ति दैवमस्तु तदेव च ॥",
+     "line": "Results follow effort. Call it fate if you like, but it is the same effort.",
+     "translation": "As the effort, so quickly comes the fruit. So there is only effort; if you want to call it fate, it is that same effort.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 2.9562,
+     "beat": "act",
+     "role_fit": 0.501,
+     "meaning": null,
+     "for_you": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.12.10",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+      "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+      "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+      "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+      "words": [],
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "When you have looked everywhere, look again; giving up costs too much.",
+     "asks": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When the outcome holds you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 2498,
+   "total": 2499
+  },
+  "_ms": 2501
+ }
+}

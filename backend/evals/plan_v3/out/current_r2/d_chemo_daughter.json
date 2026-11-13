@@ -1,0 +1,2353 @@
+{
+ "case": "d_chemo_daughter",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 2.062,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.836,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.547,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.458,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to \"I'm anxious about how things will turn out\" and \"I'm burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.0,wro=0.15,see=0.0",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.2.47",
+   "ref": "Bhagavad Gita 2.47",
+   "ref_iast": "Bhagavad Gītā 2.47",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna to Arjuna on how to act without being chained to results.",
+   "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+   "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+   "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+   "words": [
+    {
+     "sa": "कर्मणि",
+     "en": "in action"
+    },
+    {
+     "sa": "एव",
+     "en": "only"
+    },
+    {
+     "sa": "अधिकारः",
+     "en": "right"
+    },
+    {
+     "sa": "ते",
+     "en": "your"
+    },
+    {
+     "sa": "मा",
+     "en": "not"
+    },
+    {
+     "sa": "फलेषु",
+     "en": "in the fruits"
+    },
+    {
+     "sa": "कदाचन",
+     "en": "ever"
+    },
+    {
+     "sa": "मा",
+     "en": "not"
+    },
+    {
+     "sa": "कर्मफलहेतुर्भूः",
+     "en": "cause of the fruit of action"
+    },
+    {
+     "sa": "भूः",
+     "en": "become"
+    },
+    {
+     "sa": "मा",
+     "en": "not"
+    },
+    {
+     "sa": "ते",
+     "en": "your"
+    },
+    {
+     "sa": "सङ्गः",
+     "en": "attachment"
+    },
+    {
+     "sa": "अस्तु",
+     "en": "be"
+    },
+    {
+     "sa": "अकर्मणि",
+     "en": "in inaction"
+    }
+   ],
+   "why": "Do the work fully; let go of owning the result.",
+   "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p02.4",
+    "title": "The yoga of action",
+    "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+    "story_hook": "",
+    "lesson": "Do the work fully; let go of owning the result."
+   },
+   "score": 3.2016,
+   "beat": "hook",
+   "role_fit": 0.085,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.2.49",
+    "ref": "Bhagavad Gita 2.49",
+    "ref_iast": "Bhagavad Gītā 2.49",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on how to act without being chained to results.",
+    "sanskrit": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय । बुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः ॥",
+    "line": "Working only for the payoff makes you poor inside. Take shelter in clear understanding.",
+    "translation": "Action done for its rewards is far inferior to action done with a steady mind. Seek refuge in that understanding; those who work only for the fruit are to be pitied.",
+    "words": [
+     {
+      "sa": "दूरेण",
+      "en": "far"
+     },
+     {
+      "sa": "हि",
+      "en": "indeed"
+     },
+     {
+      "sa": "अवरं",
+      "en": "inferior"
+     },
+     {
+      "sa": "कर्म",
+      "en": "action"
+     },
+     {
+      "sa": "बुद्धियोगात्",
+      "en": "than wisdom-yoga"
+     },
+     {
+      "sa": "धनञ्जय",
+      "en": "O Dhananjaya"
+     },
+     {
+      "sa": "बुद्धौ",
+      "en": "in wisdom"
+     },
+     {
+      "sa": "शरणम्",
+      "en": "refuge"
+     },
+     {
+      "sa": "अन्विच्छ",
+      "en": "seek"
+     },
+     {
+      "sa": "कृपणाः",
+      "en": "miserly"
+     },
+     {
+      "sa": "फलहेतवः",
+      "en": "result-driven"
+     }
+    ],
+    "why": "Do the work fully; let go of owning the result.",
+    "misuse": "Not 'ambition is wrong'. It's about not letting rewards be the only reason you work.",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "outcome_anxiety",
+      "label": "I'm anxious about how things will turn out"
+     },
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.4",
+     "title": "The yoga of action",
+     "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+     "story_hook": "",
+     "lesson": "Do the work fully; let go of owning the result."
+    },
+    "score": 3.1423,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.12.6",
+    "ref": "Bhagavad Gita 12.6",
+    "ref_iast": "Bhagavad Gītā 12.6",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna describes those whom he lifts out of the sea of mortality (12.7).",
+    "sanskrit": "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः । अनन्येनैव योगेन मां ध्यायन्त उपासते ॥ तेषामहं समुद्धर्ता मृत्युसंसारसागरात् । भवामि नचिरात्पार्थ मय्यावेशितचेतसाम् ॥",
+    "line": "Lay your work in me and keep your mind on me; I soon lift you out of the drowning sea.",
+    "translation": "But those who lay all their actions in me, intent on me, and worship me meditating with single-minded yoga — for them, whose minds are set on me, I soon become the one who lifts them out of the ocean of death and rebirth, Partha.",
+    "words": [
+     {
+      "sa": "ये",
+      "en": "those"
+     },
+     {
+      "sa": "तु",
+      "en": "indeed"
+     },
+     {
+      "sa": "सर्वाणि",
+      "en": "all"
+     },
+     {
+      "sa": "कर्माणि",
+      "en": "actions"
+     },
+     {
+      "sa": "मयि",
+      "en": "to me"
+     },
+     {
+      "sa": "संन्यस्य",
+      "en": "dedicating"
+     },
+     {
+      "sa": "मत्पराः",
+      "en": "devoted to me"
+     },
+     {
+      "sa": "अनन्येनैव",
+      "en": "with exclusive"
+     },
+     {
+      "sa": "योगेन",
+      "en": "yoga"
+     },
+     {
+      "sa": "मां",
+      "en": "me"
+     },
+     {
+      "sa": "ध्यायन्त",
+      "en": "meditate"
+     },
+     {
+      "sa": "उपासते",
+      "en": "worship"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [
+     {
+      "id": "outcome_anxiety",
+      "label": "I'm anxious about how things will turn out"
+     },
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     }
+    ],
+    "prasang": null,
+    "score": 2.9222,
+    "beat": "hook",
+    "role_fit": 0.19,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 468,
+   "llm": 7018,
+   "total": 11630,
+   "select": 4141
+  },
+  "_ms": 11634
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 2.062,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.836,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.547,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.458,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to anxious about how things will turn out\" and burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:47=1.0,5=1.0,536=1.0,85=0.6,46=0.0,2=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.73",
+    "dropped:copied=1,repeat=4,soft_kept=5",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.3078,
+     "beat": "hook",
+     "role_fit": 0.085,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. The armies are drawn up, and Arjuna is paralyzed by grief and doubt about the future. Krishna tells him that his right is only to the work itself, never to the fruits of the action. He says do not let the results be your motive, and do not cling to inaction. The teaching is to act fully, to put your whole self into what is in front of you, and then to let go of owning the outcome.",
+     "for_you": "You are carrying the weight of how things will turn out before they even arrive. You are trying to control the result to make the waiting feel safe. Let the work in front of you have its own value, separate from the future it might bring.",
+     "try_today": "Notice the urge to check how a task will turn out, and return to the task itself.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.11.5",
+     "ref": "Ashtavakra Gita 11.5",
+     "ref_iast": "Aṣṭāvakra Gītā 11.5",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra lists the certainties that make the wise calm.",
+     "sanskrit": "चिन्तया जायते दुःखं नान्यथेहेति निश्चयी । तया हीनः सुखी शान्तः सर्वत्र गलितस्पृहः ॥",
+     "line": "Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "translation": "One who knows for certain that suffering here is born of worry and nothing else is free of it, happy, at peace, and unattached everywhere.",
+     "words": [
+      {
+       "sa": "चिन्तया",
+       "en": "by worry"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      },
+      {
+       "sa": "दुःखं",
+       "en": "suffering"
+      },
+      {
+       "sa": "नान्यथे",
+       "en": "not otherwise"
+      },
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "निश्चयी",
+       "en": "one who is certain"
+      },
+      {
+       "sa": "तया",
+       "en": "by that"
+      },
+      {
+       "sa": "हीनः",
+       "en": "devoid"
+      },
+      {
+       "sa": "सुखी",
+       "en": "happy"
+      },
+      {
+       "sa": "शान्तः",
+       "en": "calm"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "गलितस्पृहः",
+       "en": "desire dissolved"
+      }
+     ],
+     "why": "Most suffering is made of worry; knowing what you can't control loosens it.",
+     "misuse": "Real problems still need attention; this is about the extra pain rumination adds.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.wisdom",
+      "title": "The certainties of the calm",
+      "summary": "Ashtavakra lists convictions that make a person calm: things arise and pass by nature, fortune and misfortune come in their time, and suffering is born of worry alone.",
+      "story_hook": "",
+      "lesson": "Most suffering is made of worry; knowing what you can't control loosens it."
+     },
+     "score": 2.9222,
+     "beat": "diagnose",
+     "role_fit": 0.831,
+     "meaning": "Ashtavakra speaks to Janaka, listing the truths that steady a person. He tells him that suffering is born only of worry, and nothing else. This means the real weight is not the work itself, but the mind that keeps turning over how it will end. Once you see that, the grip loosens.",
+     "for_you": "You are carrying the weight of the outcome, not just the work. That is where the exhaustion lives. Let the work be what it is, and let your mind rest from the result.",
+     "try_today": "Notice when you start to worry about how things will turn out.",
+     "scene_line": "You are in the waiting room of your own life, holding the future in your hands.",
+     "asks": [
+      "How do I stop the mind from turning over the outcome?",
+      "Can I care for my parents without holding the result?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.2871,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu speaks to Nidagha about how a free person lives in the world. Ribhu is teaching that you can be busy on the outside and unhurried inside. You do the work that comes to you. You let go of what is lost. You take up what is next. You speak gently. You move through the world with a clear mind. You act fully, but you do not let the work agitate you.",
+     "for_you": "The work at hand is yours, the outcome is not. Let the next task be enough. You are busy on the outside and unhurried inside. The work at hand is enough.",
+     "try_today": "Let the next task be enough.",
+     "scene_line": "You are busy on the outside and unhurried inside.",
+     "asks": [
+      "How do I let go of what is lost?",
+      "How do I stay unhurried inside?",
+      "How do I speak gently when I am tired?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.4648,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari tells the reader from his section on steadfastness. He speaks to someone who has been knocked down, comparing them to a ball struck by the hand. The ball flies right back up, and as a rule, the misfortunes of those who live rightly do not last. The verse proposes that setbacks rarely last for those who keep going on the right path. The idea is that a temporary fall is not the end of the story.",
+     "for_you": "You are carrying the weight of how things will turn out, and that is what keeps you running on empty. The verse places its trust in the path you are already on, not in a perfect result. Your work is yours to do. The results are not yours to hold.",
+     "try_today": "Notice one small setback from today and let it fall where it lands.",
+     "scene_line": "You are the ball, struck by the day, and still rising.",
+     "asks": [
+      "How do I keep going when I feel so low?",
+      "What does the right path look like to me today?",
+      "How do I tell a setback from a stop?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.12",
+     "ref": "Bhagavad Gita 12.12",
+     "ref_iast": "Bhagavad Gītā 12.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which devotee is best; Krishna offers a ladder of practices.",
+     "sanskrit": "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते । ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥",
+     "line": "Practice is good, understanding better, meditation better still. But letting go of results brings peace at once.",
+     "translation": "Knowledge is better than mere practice; meditation is better than knowledge; giving up the fruit of action is better than meditation. From that renunciation, peace follows immediately.",
+     "words": [
+      {
+       "sa": "श्रेयो",
+       "en": "better"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "knowledge"
+      },
+      {
+       "sa": "अभ्यासात्",
+       "en": "from practice"
+      },
+      {
+       "sa": "ज्ञानात्",
+       "en": "than knowledge"
+      },
+      {
+       "sa": "ध्यानम्",
+       "en": "meditation"
+      },
+      {
+       "sa": "विशिष्यते",
+       "en": "surpasses"
+      },
+      {
+       "sa": "ध्यानात्",
+       "en": "than meditation"
+      },
+      {
+       "sa": "कर्मफलत्यागः",
+       "en": "renunciation of fruits of action"
+      },
+      {
+       "sa": "त्यागात्",
+       "en": "than renunciation"
+      },
+      {
+       "sa": "शान्तिः",
+       "en": "peace"
+      },
+      {
+       "sa": "अनन्तरम्",
+       "en": "immediately"
+      }
+     ],
+     "why": "If the ideal is too hard, take the next step down, and keep going.",
+     "misuse": "Not 'stop caring how things turn out'. Peace comes from releasing the grip, not from indifference.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p12.1",
+      "title": "Form or formless: which devotee is best, and the ways to reach him",
+      "summary": "Krishna says devotion to a personal form is easier, then offers a ladder: fix your mind; if not, practise; if not, work for me; if not, let go of results. Letting go brings peace at once.",
+      "story_hook": "",
+      "lesson": "If the ideal is too hard, take the next step down, and keep going."
+     },
+     "score": 3.6942,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna has asked which devotee is the best, and Krishna is offering a ladder of practices. He tells Arjuna that meditation is better than practice, and giving up the fruits of action is better than meditation. From that letting go, peace follows immediately.",
+     "for_you": "You are carrying the weight of how the day turns out for your parents and your work. The Gita says peace comes when you let go of that grip. The rest is not indifference.",
+     "try_today": "Notice the moment you check for the outcome and let it go.",
+     "scene_line": "You are in the middle of the battlefield, asked which way is best, and offered a ladder down.",
+     "asks": [
+      "How do I let go without stopping my care?",
+      "Can I be busy and still be at peace?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.6.2",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.2",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "यथा यथा प्रयत्नः स्याद्भवेदाशु फलं तथा । इति पौरुषमेवास्ति दैवमस्तु तदेव च ॥",
+     "line": "Results follow effort. Call it fate if you like, but it is the same effort.",
+     "translation": "As the effort, so quickly comes the fruit. So there is only effort; if you want to call it fate, it is that same effort.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.1062,
+     "beat": "act",
+     "role_fit": 0.501,
+     "meaning": "Vasishtha is speaking to Rama, who feels lost and blames his fate. Vasishtha tells him that what people call fate is just the result of past effort, and what they call effort is just future fate. The point is that your past effort built today, and your present effort builds tomorrow. You cannot change what was never in your hands, but you can steer your habits now to shape what comes next.",
+     "for_you": "You are holding the future like a weight in your hands, waiting for the work to turn out a certain way before you will rest. The tiredness is not just the care. It is the refusal to let the effort be enough. Today, let the work be the work.",
+     "try_today": "When you finish one task, let your hands rest before you look at the next.",
+     "scene_line": "You are where the effort is, and the result is not yet written.",
+     "asks": [
+      "How do I tell effort from worry?",
+      "What is the smallest part of my work I can finish today?",
+      "Can I rest before the result is here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are doing the work of the day and caring for your parents while your mind is still caught in the question of how it will all turn out. Janaka did not leave his kingdom to find peace.",
+     "asks": [
+      "How do I let the work be done without my mind clutching the result?",
+      "Can I sit with my parents and let the outcome be unknown?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When the outcome holds you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 10857,
+   "total": 10859
+  },
+  "_ms": 10863
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 2.062,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.836,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.547,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.458,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to anxious about how things will turn out\" and burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:34=0.9,12=0.8,50=0.8,50=0.7,2=0.8,46=0.3",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.62,max=0.71",
+    "dropped:fallback_lesson=1,fallback_line=1,invented=1,not_second_person=1,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "words": [],
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 2.9276,
+     "beat": "hook",
+     "role_fit": 0.69,
+     "meaning": "Two old friends meet again after many years apart. One asks if the other has found peace. The friend admits there is no peace at all. He says the mind is carried along on endless great waves of tasks. It is always thinking about what has been done and what must be done next. Because of this constant running through lists, the mind never rests. It faints, caught in a net of reckonings.",
+     "for_you": "The tiredness you feel comes from the mind running through every task and outcome. It is not the work itself that drains you, but the endless list of what must happen before you can stop. Let the mind rest in the doing, not only in the results.",
+     "try_today": "Notice one moment of rest inside the work itself.",
+     "scene_line": "You are in your own forest, still running the lists.",
+     "asks": [
+      "How do I rest when the tasks are not done?",
+      "Is this running through lists all I have left?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.5.12",
+     "ref": "Bhagavad Gita 5.12",
+     "ref_iast": "Bhagavad Gītā 5.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् । अयुक्तः कामकारेण फले सक्तो निबध्यते ॥",
+     "line": "Let go of the payoff and you find lasting peace. Chase it and it chains you.",
+     "translation": "The disciplined person, giving up the fruit of action, attains lasting peace. The undisciplined, attached to the fruit and driven by desire, is bound.",
+     "words": [
+      {
+       "sa": "युक्तः",
+       "en": "engaged"
+      },
+      {
+       "sa": "कर्मफलम्",
+       "en": "fruit of action"
+      },
+      {
+       "sa": "त्यक्त्वा",
+       "en": "having abandoned"
+      },
+      {
+       "sa": "शान्तिम्",
+       "en": "peace"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "नैष्ठिकीम्",
+       "en": "steadfast"
+      },
+      {
+       "sa": "अयुक्तः",
+       "en": "not engaged"
+      },
+      {
+       "sa": "कामकारेण",
+       "en": "by desire and attachment"
+      },
+      {
+       "sa": "फले",
+       "en": "to the fruit"
+      },
+      {
+       "sa": "सक्तः",
+       "en": "attached"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "is bound"
+      }
+     ],
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "Letting go of the payoff isn't refusing fair pay or recognition; it's not being chained to it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 3.9575,
+     "beat": "diagnose",
+     "role_fit": 0.761,
+     "meaning": "Krishna speaks to Arjuna about how to work in the world without being stained by it. The disciplined person gives up the fruit of action and finds lasting peace. The undisciplined person, attached to the fruit and driven by desire, is bound. This means acting in the middle of the mess without letting the result soak in. The disciplined person acts like a lotus leaf untouched by water. The undisciplined person is chained by what they expect to get.",
+     "for_you": "Your mind is restless because it is chained to how things must turn out before you can rest. This is the pattern underneath your exhaustion. Let the work be what it is without letting the result decide your peace. The work is yours, not the outcome.",
+     "try_today": "Let the work be the work and not the verdict.",
+     "scene_line": "You are in your own kitchen, holding the weight of what must turn out.",
+     "asks": [
+      "How do I let go of the payoff without losing focus?",
+      "What is the fruit I am chained to right now?",
+      "How do I rest without knowing how it will turn out?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.50",
+     "ref": "Bhagavad Gita 2.50",
+     "ref_iast": "Bhagavad Gītā 2.50",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते । तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥",
+     "line": "Yoga is skill in action: doing the work well, without being bound by it.",
+     "translation": "One joined to this understanding casts off both good and bad results here. So devote yourself to yoga; yoga is skill in action.",
+     "words": [
+      {
+       "sa": "बुद्धियुक्तो",
+       "en": "with intellect united"
+      },
+      {
+       "sa": "जहातीह",
+       "en": "abandons here"
+      },
+      {
+       "sa": "उभे",
+       "en": "both"
+      },
+      {
+       "sa": "सुकृतदुष्कृते",
+       "en": "good deeds and bad deeds"
+      },
+      {
+       "sa": "तस्माद्योगाय",
+       "en": "therefore for yoga"
+      },
+      {
+       "sa": "युज्यस्व",
+       "en": "engage"
+      },
+      {
+       "sa": "योगः",
+       "en": "yoga"
+      },
+      {
+       "sa": "कर्मसु",
+       "en": "in actions"
+      },
+      {
+       "sa": "कौशलम्",
+       "en": "skill"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.8775,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna is speaking to Arjuna on the field. The war is at a halt, and Arjuna is paralyzed by what will happen next. Krishna tells him to act with skill in the doing, to cast off both good and bad results. This is the yoga of action. It means the work itself is the offering, and the outcome is not yours to own. You do the work fully, and you let go of the result.",
+     "for_you": "The lists in your head are endless because you are holding the outcome. The work at your desk and the care at the hospital both ask for your full skill, but the result belongs to the moment, not to your mind. You do what you can do.",
+     "try_today": "Notice the moment your mind reaches for the result before the work is finished.",
+     "scene_line": "You stand in the middle of a war that has not yet begun, waiting for the outcome of every choice.",
+     "asks": [
+      "What does it mean to cast off the result when someone I love is ill?",
+      "Is the work the only thing I have control over?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.50",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.50",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "कुर्वतो नार्थसिद्धिर्मे भवतीति ह भारत / निर्वेदो नात्र गन्तव्यो द्वावन्तौ यस्य कर्मणः",
+     "line": "Don't despair because effort hasn't paid off yet. Every attempt can go either way.",
+     "translation": "'I keep working and still don't succeed' is no reason to despair. Every effort can end two ways, in success or not; only by not acting is the outcome certain.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1645,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": "Draupadi speaks to Yudhishthira in the forest. Yudhishthira is grieving, believing that because they have done right, they deserve an easy outcome. Draupadi argues that effort is not a guarantee. Every attempt can end in success or not. Only by refusing to act is the result certain. The verse proposes that you do right for its own sake, and then work as if everything depends on you. It asks you to act with skill and care, but to let go of the idea that the outcome is already decided by your virtue.",
+     "for_you": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+     "try_today": "Notice one task done well, then step away without checking the result.",
+     "scene_line": "You are in the forest, waiting for a good outcome that your effort alone cannot promise.",
+     "asks": [
+      "How do I do my work well without needing it to turn out a certain way?",
+      "What does it mean to act as if everything depends on me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.7481,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The Seer speaks to the reader about how to live and work. They say you may wish to live a full hundred years doing your work here, but for you there is no other way than this. Done in this spirit, action does not cling to a person.",
+     "for_you": "The lists for work and for your parents never seem to end, and the mind stays restless because it wants the results to land a certain way before it can rest.",
+     "try_today": "Do one small task for your parents without deciding how it must end.",
+     "scene_line": "You are in your own long life, working and caring, with the outcome still open.",
+     "asks": [
+      "How do I do the work without holding the outcome?",
+      "What does it mean for action to not cling to me?",
+      "Can I wish for a hundred years while I am this tired?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.50",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address continues.",
+     "sanskrit": "आचार्याय प्रियं धनमाहृत्य प्रजातन्तुं मा व्यवच्छेत्सीः । सत्यान्न प्रमदितव्यम् । धर्मान्न प्रमदितव्यम् । कुशलान्न प्रमदितव्यम् । भूत्यै न प्रमदितव्यम् । स्वाध्यायप्रवचनाभ्यां न प्रमदितव्यम् ॥",
+     "line": "Do not drift from truth or duty. Do not neglect your wellbeing, your prosperity, or your learning.",
+     "translation": "Having brought your teacher the gift he values, do not cut off the line of your family. Do not drift from truth. Do not drift from what is right. Do not neglect your wellbeing. Do not neglect your prosperity. Do not neglect study and teaching.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.7142,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "The teacher is speaking to a student who has just finished his studies and is about to leave. He is giving final instructions for the life ahead. He says do not drift from truth. Do not drift from what is right. Do not neglect your wellbeing. Do not neglect your prosperity. Do not neglect study and teaching. He is reminding the student that a whole life rests on these things. The work is not just about getting ahead or surviving. It is about staying true to the path while also caring for the self.",
+     "for_you": "You are standing at a point where the work and the care for your parents pull in different directions. The mind wants to settle on a single outcome, but the days keep moving. This verse asks you to hold the work and the care as part of one whole life.",
+     "try_today": "Before you rest, name one thing you did today that was right, not just productive.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.13.43",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 13.43",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Unable to find Sita, Hanuman considers giving up altogether, then chooses to keep going.",
+      "sanskrit": "विनाशे बहवो दोषा जीवन् प्राप्नोति भद्रकम्। तस्मात् प्राणान् धरिष्यामि ध्रुवो जीवति संगमः॥",
+      "line": "Giving up costs too much. Whoever keeps going finds good things again.",
+      "translation": "Giving up brings many harms; one who lives on finds good things. So I will hold on to life; for the living, meeting again is certain.",
+      "words": [],
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "Hanuman is rejecting despair; anyone in crisis should reach out to someone right away.",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 2.6415
+     },
+     "score": 2.6415,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "When you have looked everywhere, look again; giving up costs too much.",
+     "asks": [
+      "How do I keep going when I feel I have already tried everything?",
+      "What does it mean to look again when I am already so tired?",
+      "How do I let go of the outcome without abandoning my duty?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "Effort without the grip",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12032,
+   "total": 12033
+  },
+  "_ms": 12036
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 2.062,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.836,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.547,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 1.458,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to anxious about how things will turn out\" and burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:9=0.3,17=0.6,22=0.6,11=0.3,54=0.0,27=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.72",
+    "dropped:fallback_line=1,missing=2,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "ashtavakra.15.9",
+     "ref": "Ashtavakra Gita 15.9",
+     "ref_iast": "Aṣṭāvakra Gītā 15.9",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "गुणैः संवेष्टितो देहस्तिष्ठत्यायाति याति च । आत्मा न गन्ता नागन्ता किमेनमनुशोचसि ॥",
+     "line": "The body comes and goes; what you truly are does not. Why grieve so?",
+     "translation": "The body, made of nature's qualities, comes, stays and goes. The Self neither comes nor goes. Why grieve for it?",
+     "words": [
+      {
+       "sa": "गुणैः",
+       "en": "by qualities"
+      },
+      {
+       "sa": "संवेष्टितो",
+       "en": "enveloped"
+      },
+      {
+       "sa": "देहः",
+       "en": "body"
+      },
+      {
+       "sa": "तिष्ठति",
+       "en": "stands/remains"
+      },
+      {
+       "sa": "आयाति",
+       "en": "comes"
+      },
+      {
+       "sa": "याति",
+       "en": "goes"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आत्मा",
+       "en": "the true self"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "गन्ता",
+       "en": "going"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आगन्ता",
+       "en": "coming"
+      },
+      {
+       "sa": "किम्",
+       "en": "why"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind/thought"
+      },
+      {
+       "sa": "अशोचसि",
+       "en": "grieves"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "Grief is natural; this offers perspective, not a rule against mourning.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      },
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.0099,
+     "beat": "hook",
+     "role_fit": 0.28,
+     "meaning": "Ashtavakra tells Janaka that the body is born, it stays for a time, and it dies. It is made of changing qualities. But the Self is not like that. The Self neither arrives nor leaves. It simply is. So why do you mourn for something that was never truly yours to lose?",
+     "for_you": "Your mind is caught in the coming and going of days, of work, of worry. You feel the weight of what might happen next. But you are not the one who must hold it all. You are the space in which these worries move, not the worries themselves.",
+     "try_today": "Notice one moment today when you are not the doer, only the space around it.",
+     "scene_line": "You are the stillness in which the body and its tasks rise and fall.",
+     "asks": [
+      "How can I tell the difference between my thoughts and the space they move in?",
+      "Can I let the outcome go without letting go of the work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.31.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 31.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vasishtha and Vishvamitra",
+     "setting": "Rama, ending his questions, asks for one practical skill.",
+     "sanskrit": "व्यवहारवतो युक्त्या दुःखं नायाति मे यया । अथवा व्यवहारस्य ब्रूत तां युक्तिमुत्तमाम् ॥",
+     "line": "Teach me how to keep working in the world without the work filling me with sorrow.",
+     "translation": "Tell me the skill by which sorrow doesn't come to me while I go about my work, or else tell me the best way of dealing with life itself.",
+     "words": [],
+     "why": "The real question isn't whether to quit life, but how to live it without being swallowed.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_questions",
+      "title": "Rama asks how to live in the world without being crushed by it",
+      "summary": "After his lament Rama turns to questions. How did King Janaka and others stay free while running kingdoms? How can a person work in the world untouched, like water on a lotus leaf? He asks for one practical skill that lets him work without sorrow.",
+      "story_hook": "Having said what was wrong, Rama finally asked the question that matters: how do the wise do it?",
+      "lesson": "The real question isn't whether to quit life, but how to live it without being swallowed."
+     },
+     "score": 2.651,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": null,
+     "for_you": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "words": [
+      {
+       "sa": "यदृच्छा",
+       "en": "by chance"
+      },
+      {
+       "sa": "लाभ",
+       "en": "gain"
+      },
+      {
+       "sa": "सन्तुष्टो",
+       "en": "content"
+      },
+      {
+       "sa": "द्वन्द्वातीतो",
+       "en": "beyond dualities"
+      },
+      {
+       "sa": "विमत्सरः",
+       "en": "free from envy"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सिद्धा",
+       "en": "success"
+      },
+      {
+       "sa": "अवसिद्धौ",
+       "en": "failure"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कृत्वा",
+       "en": "doing"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "निबध्यते",
+       "en": "bound"
+      }
+     ],
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 3.3514,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna tells Arjuna that the wise person is content with whatever comes unasked and free from envy. They remain steady in success and failure, and even while acting, they are not bound. This is not about stopping work. It is about working without being chained to the result, keeping the inner self separate from the outer doing.",
+     "for_you": "Your mind will not settle because you are trying to hold the outcome before it happens. The teaching is to do the work and let the result go, to be steady in success and failure. You are not the work. You are the one who stands apart from it.",
+     "try_today": "Notice one moment when you do a task without checking the result.",
+     "scene_line": "You are working, but your mind is holding the result before it comes.",
+     "asks": [
+      "How do I let the work go without it falling apart?",
+      "What does it mean to be steady when I am tired?",
+      "Can I rest while the work is still open?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.11",
+     "ref": "Ashtavakra Gita 18.11",
+     "ref_iast": "Aṣṭāvakra Gītā 18.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "स्वाराज्ये भैक्षवृत्तौ च लाभालाभे जने वने । निर्विकल्पस्वभावस्य न विशेषोऽस्ति योगिनः ॥",
+     "line": "Throne or begging bowl, gain or loss, crowd or solitude: a steady person stays the same.",
+     "translation": "For the yogi of steady nature there is no difference between ruling a kingdom and living on alms, gain and loss, the crowd and the forest.",
+     "words": [
+      {
+       "sa": "स्वाराज्ये",
+       "en": "in self-rule"
+      },
+      {
+       "sa": "भैक्षवृत्तौ",
+       "en": "in begging"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "लाभालाभे",
+       "en": "gain and loss"
+      },
+      {
+       "sa": "जने",
+       "en": "in society"
+      },
+      {
+       "sa": "वने",
+       "en": "in forest"
+      },
+      {
+       "sa": "निर्विकल्पस्वभावस्य",
+       "en": "of the one with undoubting nature"
+      },
+      {
+       "sa": "न",
+       "en": "no"
+      },
+      {
+       "sa": "विशेषः",
+       "en": "difference"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "योगिनः",
+       "en": "of the yogi"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.6266,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Janaka, the king who sits on a throne, has asked how to live in the world without being swallowed by it. Ashtavakra tells him that the wise person does not move between places to find peace. The same calm that sits on a throne sits in a begging bowl. The same mind that does not break under gain does not break under loss. The same ease is found in a crowded city and in a silent forest. The difference is not in the chair or the bowl but in the one who holds them.",
+     "for_you": "The work and the care for your parents are your throne and your forest. You do not need to run from one to the other to find rest. The same mind that holds the work can hold the care. The same breath can move through both.",
+     "try_today": "Feel the difference between the task and the one who does it.",
+     "scene_line": "You sit with your parents in the quiet of the evening, and the work is still in your hands.",
+     "asks": [
+      "How do I hold the work and the care without one swallowing the other?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": null,
+     "score": 2.1391,
+     "beat": "act",
+     "role_fit": 0.554,
+     "meaning": "A teacher is laying out the rules for a person who has stepped away from the world. The teacher says do not wear out your body chasing pleasure or fleeing pain. If someone praises you, do not let it swell your chest. If someone blames you, do not turn that blame into a weapon against others.",
+     "for_you": "The body comes and goes. What you truly are does not. Praised, don't gloat. Blamed, don't curse others.",
+     "try_today": "Pause before reacting to a slight or a win today.",
+     "scene_line": "You stand in your kitchen, caught between your parents' care and your work's demands, with praise or blame waiting at the door.",
+     "asks": [
+      "How do I stop my body from wearing out?",
+      "How do I stay steady when I am blamed?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.8978,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna is telling Arjuna that no effort put into doing what is right is ever lost. Even a small step on this path is enough to guard against great fear. The point is to give the work your full attention, but to let go of owning the result. The work itself is the practice, and the result is not yours to keep.",
+     "for_you": "The work with your parents and your job demands your full attention, but the result is not yours to own. The rest you need comes from letting go of the outcome. Your part is the effort, not the final shape of things.",
+     "try_today": "Notice the work itself, not the outcome it will bring.",
+     "scene_line": "You are in your own waiting room, and the work is not lost.",
+     "asks": [
+      "How do I let go of the outcome?",
+      "How can I rest without knowing the result?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.pingala",
+     "title": "Pingala's song: the night she stopped waiting",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Pingala",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+     "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+     "lesson": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "anchor": {
+      "id": "mbh.12.173.64",
+      "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+      "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+      "family": "mbh",
+      "speaker": "Pingala (quoted by Bhishma)",
+      "listener": "(herself)",
+      "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+      "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+      "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+      "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+      "words": [],
+      "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+      "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "outcome_anxiety",
+        "label": "I'm anxious about how things will turn out"
+       }
+      ],
+      "prasang": {
+       "id": "mbh.p.pingala",
+       "title": "Pingala's song: the night she stopped waiting",
+       "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+       "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+       "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+      },
+      "score": 2.6949
+     },
+     "score": 2.6949,
+     "why": null,
+     "hook_title": "Pingala waited all night for a man who never came",
+     "teaser": "Pingala waited all night for a man who never came",
+     "for_you": "Pingala waited for a man who would never come, and her peace was stolen by the waiting. Your mind is doing the same thing with the future, holding on to how the work and the care must turn out. The exhaustion is the cost of that waiting.",
+     "asks": [
+      "How do I let go of the outcome without giving up on my work and care?",
+      "What is the smallest way I can release the grip on the future today?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "More than the result",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 11010,
+   "total": 11012
+  },
+  "_ms": 11022
+ }
+}

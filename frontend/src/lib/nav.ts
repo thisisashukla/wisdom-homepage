@@ -19,7 +19,7 @@ const same = (p: string) => ({ en: p, hi: p })
 export const NAV_PRIMARY: NavItem[] = [
   { label: { en: 'Read the Gita', hi: 'गीता पढ़ें' }, href: { en: '/gita', hi: '/hi/gita' }, match: ['/gita', '/hi/gita'] },
   { label: { en: 'Verse of the Day', hi: 'आज का श्लोक' }, href: { en: '/gita/today', hi: '/hi/gita/today' }, match: ['/gita/today', '/hi/gita/today'] },
-  { label: { en: 'Reading Plans', hi: 'रीडिंग प्लान' }, href: same('/reading-plans'), match: ['/reading-plans', '/gita-for'] },
+  { label: { en: 'Reading Plans', hi: 'रीडिंग प्लान' }, href: same('/reading-plans'), match: ['/reading-plans', '/gita-for', '/bhagavad-gita-in-30-days', '/bhagavad-gita-in-7-days', '/bhagavad-gita-one-verse-a-day', '/read-gita-in-18-days'] },
   { label: { en: 'Blog', hi: 'ब्लॉग' }, href: same('/blogs'), match: ['/blogs', '/hi/blogs'] },
 ]
 
@@ -41,6 +41,7 @@ export const NAV_SCRIPTURES: NavItem[] = [
 export const NAV_SECONDARY: NavItem[] = [
   { label: { en: 'हिंदी गीता', hi: 'English Gita' }, href: { en: '/hi/gita', hi: '/gita' } },
   { label: { en: 'Find a verse', hi: 'श्लोक खोजें' }, href: { en: '/search', hi: '/hi/search' }, match: ['/search', '/hi/search'] },
+  { label: { en: 'How to read the Gita', hi: 'गीता कैसे पढ़ें' }, href: same('/how-to-read-bhagavad-gita'), match: ['/how-to-read-bhagavad-gita'] },
   { label: { en: 'Gita for life', hi: 'जीवन के लिए गीता' }, href: same('/gita-for'), match: ['/gita-for'] },
   { label: { en: 'Understand the Gita', hi: 'गीता को समझें' }, href: same('/understand-the-gita'), match: ['/understand-the-gita'] },
   { label: { en: '12 key ideas', hi: '12 मूल शब्द' }, href: { en: '/gita/key-ideas', hi: '/hi/gita/mool-shabd' }, match: ['/gita/key-ideas', '/hi/gita/mool-shabd'] },

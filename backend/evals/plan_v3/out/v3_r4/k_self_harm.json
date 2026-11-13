@@ -1,0 +1,1054 @@
+{
+ "case": "k_self_harm",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "self_harm",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "It sounds like you're carrying something very heavy right now.",
+   "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+    "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "template",
+    "steady": "safety",
+    "act": "safety",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Between things. Feels searching; closest to \"I can't handle not knowing what comes next\" and \"I'm burned out and running on empty\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:library_fallback",
+    "day1:r4_relaxed",
+    "day1:graph_pick",
+    "first_line:budget"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "empty"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "nirveda",
+     "vishada"
+    ],
+    "risk": "self_harm",
+    "situations": [
+     "burnout",
+     "procrastination",
+     "uncertainty"
+    ],
+    "age": "25_34",
+    "stages": [
+     "between"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "tulsi_kv.7.50"
+   }
+  },
+  "hook": {
+   "id": "tulsi_kv.7.50",
+   "ref": "Kavitavali, Uttar Kand 7.50",
+   "ref_iast": "Kavitāvalī, Uttar Kāṇḍ 7.50",
+   "family": "tulsi",
+   "speaker": "Tulsidas",
+   "listener": "the reader",
+   "setting": "Tulsidas imagines being lost in a wilderness of dangers.",
+   "sanskrit": "संकट कोटि जहाँ 'तुलसी', सुत, मातु, पिता, हित, बंधु न नेरे॥ राखिहैँ रामु कृपालु तहाँ, हनुमानु-से सेवक हैं जेहि केरे। नाक, रसातल, भूतलमें रघुनायकु एकु सहायकु मेरे॥",
+   "line": "Where a million dangers surround you and no family is near, he is still there, with Hanuman.",
+   "translation": "Where there are a million dangers, Tulsi, and no son, mother, father, friend or kin is near, kind Ram will protect you there, he who has a servant like Hanuman. In heaven, the underworld or on earth, Raghunayak is my one helper.",
+   "words": [],
+   "why": null,
+   "misuse": "Devotion is not a promise of a particular outcome, and it does not replace medical, legal or emotional help.",
+   "tone": "comforting",
+   "matched": [],
+   "prasang": null,
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "It sounds like you're carrying something very heavy right now.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "It sounds like you're carrying something very heavy right now.",
+   "first_line_source": "safety"
+  },
+  "alternates": [],
+  "safety": {
+   "kind": "self_harm",
+   "message": "If you're thinking about ending your life or harming yourself, please reach out now. You deserve support from a person.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "988 Suicide & Crisis Lifeline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "UK & Ireland",
+     "name": "Samaritans",
+     "contact": "Call 116 123"
+    },
+    {
+     "region": "Canada",
+     "name": "9-8-8 Suicide Crisis Helpline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "Australia",
+     "name": "Lifeline",
+     "contact": "Call 13 11 14"
+    },
+    {
+     "region": "New Zealand",
+     "name": "1737",
+     "contact": "Call or text 1737"
+    },
+    {
+     "region": "India",
+     "name": "Tele-MANAS",
+     "contact": "Call 14416"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 608,
+   "v3_candidates": 136,
+   "v3_select": 864,
+   "v3_total": 864,
+   "total": 864
+  },
+  "_ms": 866
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "self_harm",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "It sounds like you're carrying something very heavy right now.",
+   "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+    "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "client",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Between things. Feels searching; closest to \"I can't handle not knowing what comes next\" and burned out and running on empty\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads",
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "empty"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "nirveda",
+     "vishada"
+    ],
+    "risk": "self_harm",
+    "situations": [
+     "burnout",
+     "procrastination",
+     "uncertainty"
+    ],
+    "age": "25_34",
+    "stages": [
+     "between"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "tulsi_kv.7.50",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "tulsi_kv.7.50",
+     "ref": "Kavitavali, Uttar Kand 7.50",
+     "ref_iast": "Kavitāvalī, Uttar Kāṇḍ 7.50",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas imagines being lost in a wilderness of dangers.",
+     "sanskrit": "संकट कोटि जहाँ 'तुलसी', सुत, मातु, पिता, हित, बंधु न नेरे॥ राखिहैँ रामु कृपालु तहाँ, हनुमानु-से सेवक हैं जेहि केरे। नाक, रसातल, भूतलमें रघुनायकु एकु सहायकु मेरे॥",
+     "line": "Where a million dangers surround you and no family is near, he is still there, with Hanuman.",
+     "translation": "Where there are a million dangers, Tulsi, and no son, mother, father, friend or kin is near, kind Ram will protect you there, he who has a servant like Hanuman. In heaven, the underworld or on earth, Raghunayak is my one helper.",
+     "words": [],
+     "why": null,
+     "misuse": "Devotion is not a promise of a particular outcome, and it does not replace medical, legal or emotional help.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": null,
+     "score": 4.0,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "tulsi_kv.7.50",
+     "path": "Day 1 kept from the first screen (viv.5.bob_up_soon was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.25.chaupai.4",
+      "vr.3.66.9"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.71,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.3.66.5",
+     "path": "kept from the plan the app holds",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "vr.3.66.9",
+      "rcm.1.25.chaupai.4"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Kavitavali, Uttar Kand 7.50) named fear, and today's verse grows steadiness; today asks where it comes from.",
+      "link": [
+       "antidote",
+       "bhaya>dhriti"
+      ]
+     }
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.4.no_winter",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 4",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Poem 'Hold On Yet a While, Brave Heart', second stanza.",
+     "sanskrit": null,
+     "line": "No winter was but summer came behind,",
+     "translation": "No winter was but summer came behind, Each hollow crests the wave, They push each other in light and shade; Be steady then and brave.",
+     "words": [],
+     "why": "No struggle is wasted; hold on a little longer.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.poem.hold_on",
+      "title": "'Hold on yet a while, brave heart' (poem to the Maharaja of Khetri)",
+      "summary": "A short poem of encouragement to a friend. Clouds hide the sun for a while, summer always follows winter, and no honest struggle is wasted even when hopes fail.",
+      "story_hook": "",
+      "lesson": "No struggle is wasted; hold on a little longer."
+     },
+     "score": 8.656,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.4.no_winter",
+     "path": "viv.4.no_winter -heals-> vishada",
+     "why": [
+      "each hollow crests the wave",
+      "the dark season turns"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.3.66.5",
+      "mbh.12.173.41",
+      "bg.6.40"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana · Aranya Kanda) was about collapse; today gives ground to stand on.",
+      "link": [
+       "state",
+       "vishada"
+      ]
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.36",
+     "ref": "Bhagavad Gita 18.36",
+     "ref_iast": "Bhagavad Gītā 18.36",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna sorts knowledge, action, doers, judgement, resolve and happiness by the three qualities.",
+     "sanskrit": "सुखं त्विदानीं त्रिविधं श्रृणु मे भरतर्षभ । अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति ॥",
+     "line": "There is a joy you grow into through practice, one that brings sorrow to an end.",
+     "translation": "Now hear from me the three kinds of happiness, best of the Bharatas: the happiness one comes to enjoy through practice, and in which one reaches the end of sorrow.",
+     "words": [
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "तु",
+       "en": "indeed"
+      },
+      {
+       "sa": "इदानीम्",
+       "en": "now"
+      },
+      {
+       "sa": "त्रिविधम्",
+       "en": "threefold"
+      },
+      {
+       "sa": "श्रृणु",
+       "en": "hear"
+      },
+      {
+       "sa": "मे",
+       "en": "from me"
+      },
+      {
+       "sa": "भरतर्षभ",
+       "en": "O best of the Bharatas"
+      },
+      {
+       "sa": "अभ्यासात्",
+       "en": "from practice"
+      },
+      {
+       "sa": "रमते",
+       "en": "finds delight"
+      },
+      {
+       "sa": "यत्र",
+       "en": "where"
+      },
+      {
+       "sa": "दुःख-अन्तम्",
+       "en": "end of sorrow"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "निगच्छति",
+       "en": "attains"
+      }
+     ],
+     "why": "Choose the joy that's hard at first and sweet later.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.3",
+      "title": "Knowledge, action, doer, intellect, resolve and happiness by the three gunas",
+      "summary": "Krishna describes clear, restless and dull versions of action, doer, judgement, resolve and happiness: the best joy is poison first and nectar later; the restless kind is nectar first and poison later.",
+      "story_hook": "",
+      "lesson": "Choose the joy that's hard at first and sweet later."
+     },
+     "score": 6.226,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.36",
+     "path": "bg.18.36 -heals-> nirveda",
+     "why": [
+      "there is a joy that is grown into, not found ready-made",
+      "practice is how it is reached"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.hearts_purified",
+      "up_brihadaranyak.92"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Swami Vivekananda) named fear, and today's verse grows joy; today turns it to another way of seeing.",
+      "link": [
+       "antidote",
+       "bhaya>ananda"
+      ]
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.40",
+     "ref": "Bhagavad Gita 6.40",
+     "ref_iast": "Bhagavad Gītā 6.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "श्री भगवानुवाचपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते । नहि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ॥",
+     "line": "Whoever does good never comes to ruin, my friend. Not here, not after.",
+     "translation": "The Blessed Lord said: Partha, there is no ruin for him either in this world or the next. No one who does good, my friend, ever comes to grief.",
+     "words": [
+      {
+       "sa": "श्री भगवानुवाच",
+       "en": "the Blessed One said"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O Partha"
+      },
+      {
+       "sa": "नैव",
+       "en": "not at all"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अमुत्र",
+       "en": "in the other world"
+      },
+      {
+       "sa": "विनाशः",
+       "en": "destruction"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of him"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "there is"
+      },
+      {
+       "sa": "नहि",
+       "en": "indeed not"
+      },
+      {
+       "sa": "कल्याणकृत्",
+       "en": "one who does good"
+      },
+      {
+       "sa": "कश्चित्",
+       "en": "anyone"
+      },
+      {
+       "sa": "दुर्गतिम्",
+       "en": "bad end"
+      },
+      {
+       "sa": "तात",
+       "en": "my dear"
+      },
+      {
+       "sa": "गच्छति",
+       "en": "goes"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 5.946,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "bg.6.40",
+     "path": "bg.6.40 -cultivates-> utsaha",
+     "why": [
+      "frees a person to try again",
+      "No one who does good is lost and no effort is wasted: the ground under someone who thinks it was all for nothing."
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.92",
+      "viv.4.hearts_purified"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.36) named weariness, and today's verse grows energy; today brings one practice for it.",
+      "link": [
+       "antidote",
+       "nirveda>utsaha"
+      ]
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.4.30.chaupai.1",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 30",
+     "family": "rcm",
+     "speaker": "Sampati",
+     "listener": "the monkey search party",
+     "setting": "Sampati, his wings regrown, urges the monkeys who had given up the search.",
+     "sanskrit": "जो नाघइ सत जोजन सागर। करइ सो राम काज मति आगर॥ मोहि बिलोकि धरहु मन धीरा। राम कृपाँ कस भयउ सरीरा ॥",
+     "line": "Look at me and take heart. My burned wings have grown back.",
+     "translation": "Whoever can leap the hundred-league ocean, wise and capable, will do Ram's work. Look at me and take heart: see what Ram's grace has done to my body.",
+     "words": [
+      {
+       "sa": "जो",
+       "en": "whoever"
+      },
+      {
+       "sa": "नाघइ",
+       "en": "crosses"
+      },
+      {
+       "sa": "सत जोजन",
+       "en": "hundred yojanas"
+      },
+      {
+       "sa": "सागर",
+       "en": "ocean"
+      },
+      {
+       "sa": "करइ",
+       "en": "does"
+      },
+      {
+       "sa": "सो",
+       "en": "that one"
+      },
+      {
+       "sa": "राम काज",
+       "en": "Ram's work"
+      },
+      {
+       "sa": "मति आगर",
+       "en": "wise, foremost in understanding"
+      },
+      {
+       "sa": "मोहि",
+       "en": "me"
+      },
+      {
+       "sa": "बिलोकि",
+       "en": "seeing"
+      },
+      {
+       "sa": "धरहु",
+       "en": "keep"
+      },
+      {
+       "sa": "मन धीरा",
+       "en": "mind steady"
+      },
+      {
+       "sa": "राम कृपाँ",
+       "en": "by Ram's grace"
+      },
+      {
+       "sa": "कस",
+       "en": "how"
+      },
+      {
+       "sa": "भयउ",
+       "en": "became"
+      },
+      {
+       "sa": "सरीरा",
+       "en": "body"
+      }
+     ],
+     "why": "Even after the fall your pride caused, you can still be useful, and hope can return.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.sampati",
+      "title": "Sampati's burned wings",
+      "summary": "The search party, past its deadline with no news, sits down by the sea to die. A huge old vulture, Sampati, overhears them talking of his brother Jatayu. He tells them how pride once made him fly too close to the sun and burn his wings; a sage told him they would grow back when he helped Ram's messengers. He tells them where Sita is, and his wings grow back as he speaks.",
+      "story_hook": "The monkeys had given up and were waiting to die when a vulture with no wings spoke to them.",
+      "lesson": "Even after the fall your pride caused, you can still be useful, and hope can return."
+     },
+     "score": 4.595,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.4.30.chaupai.1",
+     "path": "rcm.4.30.chaupai.1 -cultivates-> utsaha",
+     "why": [
+      "a party that had sat down to die gets up",
+      "grace has visibly acted once already"
+     ],
+     "writer_note": null,
+     "alts": [],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 6.40) was about collapse; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "vishada"
+      ]
+     }
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.k.markandeya_child",
+     "title": "Markandeya and the child on the banyan leaf",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Markandeya",
+      "Narayana (the divine child)",
+      "the Pandavas",
+      "Krishna"
+     ],
+     "story_hook": "The whole world was one dark ocean, and on it floated a single banyan tree with a child asleep on a branch.",
+     "summary": "At the end of an age, the sage Markandeya drifts alone over a flooded world and sees a radiant child on a banyan branch. The child draws him inside his body, where he sees all the worlds, then asks if he has been resting, tired. Narayana explains he showed himself because he saw Markandeya's distress. Markandeya tells the Pandavas that this child is Krishna, sitting with them.",
+     "lesson": "When everything you knew is underwater, you have not been forgotten; you are being held.",
+     "matched": [],
+     "anchor": null,
+     "score": 8.462,
+     "why": null,
+     "hook_title": "An old sage drifted alone over a drowned world, and found a child asleep on a leaf",
+     "teaser": "An old sage drifted alone over a drowned world, and found a child asleep on a leaf",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.markandeya_finds_the_child",
+     "path": "st.mbh.markandeya_finds_the_child -enacts_in-> bhaya, nirveda, shrama, viraha ; st.mbh.markandeya_finds_the_child -enacts_turn-> shanti ; st.mbh.markandeya_finds_the_child -fits_situation-> burnout",
+     "why": [
+      "When there is no shelter left anywhere, the one who holds the world knows we are tired and offers rest."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.ram_exhausted_before_the_last_fight",
+      "st.vr.ram_waits_out_the_monsoon",
+      "st.bhakti.sur_gajendra_calls_last"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.markandeya_finds_the_child",
+     "arc": {
+      "line": "This week moves through weariness in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Kishkindha Kand) was about weariness; today someone in the texts lives it.",
+      "link": null
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "self_harm",
+   "message": "If you're thinking about ending your life or harming yourself, please reach out now. You deserve support from a person.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "988 Suicide & Crisis Lifeline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "UK & Ireland",
+     "name": "Samaritans",
+     "contact": "Call 116 123"
+    },
+    {
+     "region": "Canada",
+     "name": "9-8-8 Suicide Crisis Helpline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "Australia",
+     "name": "Lifeline",
+     "contact": "Call 13 11 14"
+    },
+    {
+     "region": "New Zealand",
+     "name": "1737",
+     "contact": "Call or text 1737"
+    },
+    {
+     "region": "India",
+     "name": "Tele-MANAS",
+     "contact": "Call 14416"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 113,
+   "v3_w1_write": 0,
+   "v3_w1_calls": 0,
+   "v3_w1_total": 114,
+   "select": 114,
+   "total": 114
+  },
+  "_ms": 116,
+  "_day_ms": [
+   139,
+   123,
+   121,
+   205,
+   126,
+   129
+  ],
+  "_day_calls": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": false
+ }
+}

@@ -1,0 +1,276 @@
+{
+ "case": "t1_overthinking_2am",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't stop overthinking",
+   "mirror": "I can't stop overthinking",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.8,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.65,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I can't stop overthinking. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a seeker whose mind will not settle, facing a mind that won't settle."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I can't stop overthinking\" and \"I can't focus, my mind is restless\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.1,see=0.0",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "overthinking",
+    "trail": [
+     "anxious",
+     "overthinking"
+    ],
+    "paused": "anxious",
+    "stance": "struggle",
+    "states": [
+     "chinta"
+    ],
+    "risk": "none",
+    "situations": [
+     "overthinking"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "up_maha.114",
+    "first_line": "Your mind is a restless monkey, reaching for a past conversation that is already gone."
+   }
+  },
+  "hook": {
+   "id": "up_maha.114",
+   "ref": "Maha Upanishad 3.23",
+   "ref_iast": "Mahā Upaniṣad 3.23",
+   "family": "up",
+   "speaker": "Nidagha",
+   "listener": "Ribhu",
+   "setting": "Nidagha on craving, continued.",
+   "sanskrit": "पदं करोत्यलङ्घ्येऽपि तृप्ता विफलमीहते । चिरं तिष्ठति नैकत्र तृष्णा चपलमर्कटी ॥",
+   "line": "Craving is a restless monkey: never in one place, never satisfied, reaching even where it cannot go.",
+   "translation": "It sets foot even where no one can go; even when satisfied it strives in vain; it never stays long in one place: craving is a restless monkey.",
+   "words": [],
+   "why": "Naming how restless your mind is, is where peace begins.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "up.p.maha.nidagha",
+    "title": "Nidagha's lament",
+    "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+    "story_hook": "",
+    "lesson": "Naming how restless your mind is, is where peace begins."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind is a restless monkey, reaching for a past conversation that is already gone.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind is a restless monkey, reaching for a past conversation that is already gone.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "bg.6.33",
+    "ref": "Bhagavad Gita 6.33",
+    "ref_iast": "Bhagavad Gītā 6.33",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+    "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+    "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+    "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "यः",
+      "en": "which"
+     },
+     {
+      "sa": "अयम्",
+      "en": "this"
+     },
+     {
+      "sa": "योगः",
+      "en": "yoga"
+     },
+     {
+      "sa": "त्वया",
+      "en": "by you"
+     },
+     {
+      "sa": "प्रोक्तः",
+      "en": "spoken"
+     },
+     {
+      "sa": "साम्येन",
+      "en": "with balance"
+     },
+     {
+      "sa": "मधुसूदन",
+      "en": "O Madhusudana"
+     },
+     {
+      "sa": "एतस्य",
+      "en": "of this"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "पश्यामि",
+      "en": "see"
+     },
+     {
+      "sa": "चञ्चलत्वात्",
+      "en": "because of restlessness"
+     },
+     {
+      "sa": "स्थितिम्",
+      "en": "steady state"
+     },
+     {
+      "sa": "स्थिराम्",
+      "en": "firm"
+     }
+    ],
+    "why": "The mind is hard to hold, but practice and letting go train it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "restless_mind",
+      "label": "I can't focus, my mind is restless"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.4",
+     "title": "Mastering the mind",
+     "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+     "story_hook": "",
+     "lesson": "The mind is hard to hold, but practice and letting go train it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 437,
+   "v3_candidates": 41,
+   "v3_fast_read": 1289,
+   "v3_select": 2029,
+   "v3_total": 2029,
+   "total": 2034
+  },
+  "_ms": 2046
+ }
+}

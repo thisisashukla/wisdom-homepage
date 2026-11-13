@@ -87,7 +87,7 @@ function enumerateBlogSlugs(): string[] {
 // tent-pole articles where publication date matters. Slugs not in the map
 // default to CORPUS_UPDATED and priority 0.75.
 const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
-  'bhagavad-gita-for-beginners': { date: '2026-11-11', priority: 0.88 },
+  'bhagavad-gita-for-beginners': { date: '2026-11-13', priority: 0.88 },
   'bhagavad-gita-karma-meaning': { date: '2026-11-11', priority: 0.85 },
   'bhagavad-gita-anxiety-mental-peace': { date: '2026-04-08', priority: 0.75 },
   'bhagavad-gita-complete-structure-all-chapters': { date: '2026-04-08', priority: 0.75 },
@@ -104,7 +104,7 @@ const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
   'bhagavad-gita-vs-stoicism': { date: '2026-11-11', priority: 0.88 },
   'ahankara-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
   'maya-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
-  'best-bhagavad-gita-translation': { date: '2026-07-19', priority: 0.9 },
+  'best-bhagavad-gita-translation': { date: '2026-11-13', priority: 0.9 },
   'atman-not-soul-bhagavad-gita': { date: '2026-08-03', priority: 0.88 },
 }
 
@@ -144,8 +144,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/app`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${BASE}/read-gita-in-18-days`, lastModified: new Date('2026-10-25'), changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${BASE}/gita-jayanti/reading-plan`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${BASE}/read-gita-in-18-days`, lastModified: new Date('2026-11-13'), changeFrequency: 'monthly', priority: 0.85 },
+    // Length reading plans and the how-to-read guide (lib/readingPlans.ts); also listed with images in /sitemap-plans.xml
+    { url: `${BASE}/how-to-read-bhagavad-gita`, lastModified: new Date('2026-11-13'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/bhagavad-gita-in-30-days`, lastModified: new Date('2026-11-13'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/bhagavad-gita-in-7-days`, lastModified: new Date('2026-11-13'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/bhagavad-gita-one-verse-a-day`, lastModified: new Date('2026-11-13'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/gita-jayanti/reading-plan`, lastModified: new Date('2026-11-13'), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${BASE}/gita-jayanti/which-chapter-to-read`, lastModified: new Date('2026-10-25'), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${BASE}/most-searched-gita-verses-2026`, lastModified: new Date('2026-10-29'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/understand-the-gita`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.85 },
@@ -156,7 +161,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/best-hindu-prayer-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/best-hanuman-chalisa-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/bhagavad-gita-widget-iphone`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/reading-plans`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE}/reading-plans`, lastModified: new Date('2026-11-13'), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE}/gita-for`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'monthly', priority: 0.85 },
     ...GITA_FOR.map((p) => {
       const plan = THEME_SLUGS.includes(p.slug)

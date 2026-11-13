@@ -1,0 +1,1001 @@
+{
+ "case": "d_hopeful_founder",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.1,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Building something of their own. Feels determined; closest to \"I've retired and feel lost\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.63,wro=0.0,see=0.15",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "ananda",
+     "utsaha",
+     "shrama",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "retirement",
+     "midlife"
+    ],
+    "age": "55p",
+    "stages": [
+     "own_thing"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "first_line": "You want to keep this energy going at fifty-eight, and this verse says such calm learning and free wandering are the fruit of great austerity."
+   }
+  },
+  "hook": {
+   "id": "bh.vairagya.82",
+   "ref": "Bhartrihari · Vairagya Shatakam",
+   "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+   "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+   "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+   "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+   "words": [],
+   "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost"
+    }
+   ],
+   "prasang": {
+    "id": "bh.p.vairagya.shiva",
+    "title": "Vairagyashatakam: Worship of Shiva",
+    "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+    "story_hook": "",
+    "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You want to keep this energy going at fifty-eight, and this verse says such calm learning and free wandering are the fruit of great austerity.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You want to keep this energy going at fifty-eight, and this verse says such calm learning and free wandering are the fruit of great austerity.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "viv.6.glad_blunders",
+    "ref": "Swami Vivekananda",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Josephine MacLeod ('Joe')",
+    "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+    "sanskrit": null,
+    "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "words": [],
+    "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "midlife",
+      "label": "Midlife and wondering if this is it"
+     },
+     {
+      "id": "retirement",
+      "label": "I've retired and feel lost"
+     }
+    ],
+    "prasang": {
+     "id": "viv.p.letter.joe_1900",
+     "title": "'I am drifting': a letter from Alameda (1900)",
+     "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+     "story_hook": "",
+     "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "vr.5.12.10",
+    "ref": "Valmiki Ramayana · Sundara Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+    "family": "vr",
+    "speaker": "Hanuman",
+    "listener": "himself",
+    "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+    "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+    "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+    "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+    "words": [],
+    "why": "When you have looked everywhere, look again; giving up costs too much.",
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [
+     {
+      "id": "side_project",
+      "label": "I can't tell if continuing is discipline or stubbornness"
+     }
+    ],
+    "prasang": {
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 656,
+   "v3_candidates": 55,
+   "v3_fast_read": 1734,
+   "v3_select": 2450,
+   "v3_first_line": 626,
+   "v3_total": 3077,
+   "total": 3078
+  },
+  "_ms": 3082
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.1,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Building something of their own. Feels determined; closest to retired and feel lost\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "v3:for_you:4/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "ananda",
+     "utsaha",
+     "shrama",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "retirement",
+     "midlife"
+    ],
+    "age": "55p",
+    "stages": [
+     "own_thing"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "first_line": "You want to keep this energy going at fifty-eight, and this verse says such calm learning and free wandering are the fruit of great austerity."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.82",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+     "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+     "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+     "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+     "words": [],
+     "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.shiva",
+      "title": "Vairagyashatakam: Worship of Shiva",
+      "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+      "story_hook": "",
+      "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+     },
+     "score": 6.539,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are building something new at this stage of life. The freedom you have now, the simple food you eat, and the calm learning you are doing are the fruit of great austerity. Keep this energy going.",
+     "try_today": "Notice the calm your learning brings today.",
+     "scene_line": "You look outward for long, yet your mind stirs only gently among these noble people.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.82",
+     "path": "Day 1 kept from the first screen (bg.2.40 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.10",
+      "bg.6.43",
+      "bh.vairagya.82"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.16.3",
+     "ref": "Ashtavakra Gita 16.3",
+     "ref_iast": "Aṣṭāvakra Gītā 16.3",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra's 'special instruction' to Janaka on why striving and study do not bring peace.",
+     "sanskrit": "आयासात्सकलो दुःखी नैनं जानाति कश्चन । अनेनैवोपदेशेन धन्यः प्राप्नोति निर्वृतिम् ॥",
+     "line": "Everyone suffers from constant straining, and no one notices. Seeing this alone brings peace.",
+     "translation": "Everyone is miserable from straining after things, and no one realises it. By this single teaching the fortunate one finds peace.",
+     "words": [
+      {
+       "sa": "आयासात्",
+       "en": "from effort"
+      },
+      {
+       "sa": "सकलो",
+       "en": "all"
+      },
+      {
+       "sa": "दुःखी",
+       "en": "suffering"
+      },
+      {
+       "sa": "नैनं",
+       "en": "this"
+      },
+      {
+       "sa": "जानाति",
+       "en": "knows"
+      },
+      {
+       "sa": "कश्चन",
+       "en": "anyone"
+      },
+      {
+       "sa": "अनेनैव",
+       "en": "by this alone"
+      },
+      {
+       "sa": "उपदेशेन",
+       "en": "teaching"
+      },
+      {
+       "sa": "धन्यः",
+       "en": "fortunate"
+      },
+      {
+       "sa": "प्राप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "निर्वृतिम्",
+       "en": "freedom"
+      }
+     ],
+     "why": "Peace isn't another achievement; strain less, and stop expecting escape to fix you.",
+     "misuse": "Not against effort; against the anxious straining that rides on it.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.special_instruction",
+      "title": "Why striving and study do not bring peace",
+      "summary": "Ashtavakra warns that reading scriptures, working or meditating will not bring peace on their own; everyone suffers from straining, and running away from the world doesn't end pain. Even pride in being free is just more suffering.",
+      "story_hook": "",
+      "lesson": "Peace isn't another achievement; strain less, and stop expecting escape to fix you."
+     },
+     "score": 3.838,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "ashtavakra.16.3",
+     "path": "ashtavakra.16.3 -states_chain-> ashtavakra.craving [trishna -causes-> shrama]",
+     "why": [
+      "Where craving is, the round is (Ashtavakra Gita 10.3)",
+      "names the straining itself as the cause of the misery"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.582",
+      "bg.6.16",
+      "up_chhandogya.489"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.17",
+     "ref": "Bhagavad Gita 6.17",
+     "ref_iast": "Bhagavad Gītā 6.17",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु । युक्तस्वप्नावबोधस्य योगो भवति दुःखहा ॥",
+     "line": "Moderate in food and rest, in work and play, in sleep and waking: that's how sorrow eases.",
+     "translation": "For one who is moderate in food and recreation, measured in effort at work, moderate in sleep and waking, yoga becomes the destroyer of sorrow.",
+     "words": [
+      {
+       "sa": "युक्ताहारविहारस्य",
+       "en": "of balanced eating and recreation"
+      },
+      {
+       "sa": "युक्तचेष्टस्य",
+       "en": "of balanced effort"
+      },
+      {
+       "sa": "कर्मसु",
+       "en": "in actions"
+      },
+      {
+       "sa": "युक्तस्वप्नावबोधस्य",
+       "en": "of balanced sleep and waking"
+      },
+      {
+       "sa": "योगो",
+       "en": "yoga"
+      },
+      {
+       "sa": "भवति",
+       "en": "becomes"
+      },
+      {
+       "sa": "दुःखहा",
+       "en": "destroyer of suffering"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.23,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are building something new. Keep your food, sleep, and play measured so this energy can last.",
+     "try_today": "Notice one area where you can bring a little more measure today.",
+     "scene_line": "You sit down to work, and your sleep and waking are measured.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.6.17",
+     "path": "bg.6.17 -heals-> shrama via c:yukta_vihara",
+     "why": [
+      "Balance in food, rest, work and sleep is the yoga that ends sorrow.",
+      "measure in food, rest, work and sleep is given as the ground of relief"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.5.64.33",
+      "bh.niti.18",
+      "bg.6.45"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.1.duty_sweet_love",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Karma-Yoga class, New York",
+     "setting": "Karma-Yoga classes, New York, 1895–96, chapter 4, on duty that feels like friction.",
+     "sanskrit": null,
+     "line": "Duty is sweet only through love, and love shines in freedom alone.",
+     "translation": "It is only when love greases its wheels that it runs smoothly; it is a continuous friction otherwise. … Duty is sweet only through love, and love shines in freedom alone.",
+     "words": [],
+     "why": "See others through their own eyes, and let love turn duty into something lighter.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.karma_yoga.duty",
+      "title": "Karma-Yoga 4: what is duty?",
+      "summary": "Duty cannot be defined from outside, since customs differ, so we should see others' duties through their eyes. Duty becomes sweet only through love, and small irritations are best met by forbearance. He passes on Pavhari Baba's secret: join the end and the means into one.",
+      "story_hook": "",
+      "lesson": "See others through their own eyes, and let love turn duty into something lighter."
+     },
+     "score": 3.298,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The energy you feel is the love greasing the wheels. Let this new company be the freedom where your duty becomes sweet.",
+     "try_today": "Notice when the work feels like friction and let love return to the wheel.",
+     "scene_line": "You stand at the start of your company, and duty moves with love.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.1.duty_sweet_love",
+     "path": "viv.1.duty_sweet_love -heals-> shrama",
+     "why": [
+      "the grind of obligation is explained: the wheels are dry",
+      "care done from love and not from 'must'"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.master_not_slave",
+      "bg.5.11",
+      "up_aitareya.33"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.52",
+     "ref": "Taittiriya Upanishad 1.11.2",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.2",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The most quoted lines of the graduation address.",
+     "sanskrit": "देवपितृकार्याभ्यां न प्रमदितव्यम् । मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ।",
+     "line": "Treat your mother as divine, your father as divine, your teacher as divine, your guest as divine.",
+     "translation": "Do not neglect your duties to the gods and the ancestors. Let your mother be a god to you. Let your father be a god to you. Let your teacher be a god to you. Let your guest be a god to you.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "Honouring parents does not mean accepting mistreatment or giving up your own conscience.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 4.076,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one person who taught you something and treat them as divine today.",
+     "scene_line": "You are starting your own company as a new graduate receives these parting words.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_taittiriya.52",
+     "path": "up_taittiriya.52 -cultivates-> kritajnata",
+     "why": [
+      "those who raised and taught you are to be honoured as one honours a deity",
+      "the guest and the elder are served as sacred"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.92",
+      "viv.4.servant_while_leading",
+      "mbh.5.33.31"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.292.chaupai.4",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 292",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Bharat",
+     "setting": "Ram asks Bharat to rule in his place for fourteen years.",
+     "sanskrit": "जानि तुम्हहि मृदु कहउँ कठोरा। कुसमयँ तात न अनुचित मोरा॥ होहिं कुठायँ सुबंधु सहाए। ओड़िअहिं हाथ असनिहु के धाए ॥",
+     "line": "In bad times, good siblings are the hands that rise to block the blow.",
+     "translation": "Knowing you are gentle, I still say something hard; in hard times, brother, it isn't wrong of me. In bad times it is good brothers who help; it is the hands that rise to block a thunderbolt.",
+     "words": [
+      {
+       "sa": "जानि",
+       "en": "knowing"
+      },
+      {
+       "sa": "तुम्हहि",
+       "en": "you"
+      },
+      {
+       "sa": "मृदु",
+       "en": "gentle"
+      },
+      {
+       "sa": "कहउँ",
+       "en": "I speak"
+      },
+      {
+       "sa": "कठोरा",
+       "en": "harsh"
+      },
+      {
+       "sa": "कुसमयँ",
+       "en": "in a bad time"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अनुचित",
+       "en": "improper"
+      },
+      {
+       "sa": "मोरा",
+       "en": "mine"
+      },
+      {
+       "sa": "होहिं",
+       "en": "become"
+      },
+      {
+       "sa": "कुठायँ",
+       "en": "in a crisis"
+      },
+      {
+       "sa": "सुबंधु",
+       "en": "true brother"
+      },
+      {
+       "sa": "सहाए",
+       "en": "helpers"
+      },
+      {
+       "sa": "ओड़िअहिं",
+       "en": "stop"
+      },
+      {
+       "sa": "हाथ",
+       "en": "hand"
+      },
+      {
+       "sa": "असनिहु",
+       "en": "lightning"
+      },
+      {
+       "sa": "के",
+       "en": "of"
+      },
+      {
+       "sa": "धाए",
+       "en": "strikes"
+      }
+     ],
+     "why": "A good resolution gives each person a role and something to hold on to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.ram_bharat_resolution",
+      "title": "Ram and Bharat settle it",
+      "summary": "Ram tells Bharat that keeping their father's word is the duty of both brothers, and that the leader must be like the mouth, taking in only to nourish the whole body. He asks him to rule in his place, knowing it is the harder task. Bharat accepts, asking only for Ram's sandals to keep him going.",
+      "story_hook": "Both brothers wanted the other to be king.",
+      "lesson": "A good resolution gives each person a role and something to hold on to."
+     },
+     "score": 3.871,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.2.292.chaupai.4",
+     "path": "rcm.2.292.chaupai.4 -cultivates-> dhriti",
+     "why": [
+      "a gentle person is asked to carry something heavy",
+      "taking the hard share for one's family when times are bad"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.28",
+      "mbh.5.136.1",
+      "viv.5.not_in_a_day"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bharata_waits",
+     "title": "Bharata's fourteen-year wait ends",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Bharata",
+      "Hanuman",
+      "Ram",
+      "Sugriva"
+     ],
+     "story_hook": "For fourteen years Bharata had counted the days; now a stranger was telling him to stop.",
+     "summary": "Hanuman finds Bharata thin, in bark clothes, still waiting. Hearing Ram is near, Bharata faints with joy: a person who stays alive will find joy, even after a hundred years. He places the sandals back on Ram's feet and hands back the kingdom he kept in trust, now ten times richer.",
+     "lesson": "Faithful waiting is rewarded; return what was entrusted to you, and more.",
+     "matched": [],
+     "anchor": null,
+     "score": 4.38,
+     "why": null,
+     "hook_title": "Bharata had counted the days for fourteen years, and then Hanuman arrived",
+     "teaser": "Bharata had counted the days for fourteen years, and then Hanuman arrived",
+     "for_you": "You have grown what was given to you, and now you return it to its source with nothing held back. That completion is the work itself.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.bharata_returns_what_he_held_in_trust",
+     "path": "st.vr.bharata_returns_what_he_held_in_trust -enacts_in-> shrama ; st.vr.bharata_returns_what_he_held_in_trust -enacts_turn-> kritajnata, santosha ; st.vr.bharata_returns_what_he_held_in_trust -fits_situation-> retirement",
+     "why": [
+      "What is held in trust is to be grown and returned without claim; that completes a life's purpose."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.jambavan_admits_he_is_old",
+      "st.mbh.kushika_serves_chyavana",
+      "st.vr.ram_four_days_away_from_his_people"
+     ],
+     "thin": false,
+     "story_id": "st.vr.bharata_returns_what_he_held_in_trust",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 135,
+   "v3_w1_write": 4129,
+   "v3_w1_total": 4265,
+   "select": 4265,
+   "total": 4266
+  },
+  "_ms": 4269
+ }
+}

@@ -32,10 +32,15 @@ voice, and the promise never to change what a verse says.
 Privacy: the note is sent to the LLM for the reading and, when the person allowed AI, kept raw in
 Supabase table raw_notes with the verses chosen for it (ai/note_store.py), to study verse selection.
 It is never written to the logs; only flags, counts and timings are logged.
+
+Tracking: every call also writes one plan_runs row (ai/run_log.py, the @logged decorator): the answers, the
+reading's labels and flags, timings, errors and the ids chosen, never the note. `client.request_id` and
+`client.onboarding_id` join it to raw_notes and to the Mixpanel event that reported the call.
 """
 from __future__ import annotations
 
 import asyncio
+import os
 import logging
 import time
 from collections import Counter
@@ -47,6 +52,8 @@ from pydantic import BaseModel, Field
 from ai.ask import answer as answer_question, support_candidates
 from ai.depth import DepthCache, cache_key, person_key, write_depth
 from ai import consent, hook_cache, note_store
+from ai import plan_v3
+from ai.run_log import logged
 from ai.scene import scene_for
 from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
@@ -64,7 +71,7 @@ from ai.story_titles import hook_title
 from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
                            PlanResponse, PlanWeek, PreviewRequest, PreviewResponse, RefineRequest, RefineResponse, ReplaceRequest,
                            ReplaceResponse, StoryCard,
-                           DepthRequest, DepthResponse, AskRequest, AskResponse, SceneOut, VerseWordsOut)
+                           DayRequest, DepthRequest, DepthResponse, AskRequest, AskResponse, SceneOut, VerseWordsOut)
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -309,6 +316,9 @@ def _story(rec, planner, st: Optional[dict], u: Understanding, why: Optional[str
 async def _personalize(und, u: Understanding, out_days: list, ctx: PersonContext) -> None:
     """Fill `meaning` ("What it says") and `for_you` on every day it can: a few bounded calls in parallel
     for the whole set, grounded in each verse's own source (ai/personalize.py)."""
+    if u.risk == "self_harm" and os.getenv("PERSONALIZE_SELF_HARM", "0") != "1":
+        u.flags.append("personal:skipped_self_harm")    # the safety card leads; no model writes to someone at risk (05_harness)
+        return
     items = []
     for d in out_days:
         card = d.get("verse") or d.get("story")
@@ -410,11 +420,15 @@ def _log(kind: str, req: PlanInput, u: Understanding, t0: float, **extra):
 
 
 @router.post("/recommend/hook", response_model=HookResponse, tags=["plan"])
+@logged("hook")
 async def hook(req: HookRequest) -> HookResponse:
     """Onboarding: read the person and return the one verse that says "this is you"."""
     _consent(req)
     rec, planner, und = _services()
     t0 = time.perf_counter()
+    if plan_v3.enabled():                 # PLAN_ENGINE=v3: the graph planner (server/plan_v3.py); unset: unchanged below
+        from server.plan_v3 import hook_v3
+        return await hook_v3(req, rec, planner, und, t0)
     # The same answers get the same reading and Day 1 verse (ai/hook_cache.py): back, then the CTA again,
     # or a reopened onboarding, must not draw a new mechanism and a new verse.
     ckey = hook_cache.request_key(req, rec.version, UNDERSTANDING_VERSION)
@@ -450,19 +464,26 @@ async def hook(req: HookRequest) -> HookResponse:
         u.flags.append("hook_reranked")
     resp = HookResponse(**out)
     stored = hook_cache.cacheable(resp.model_dump(mode="json"), reranked)
+    # The cache write (two Supabase round trips: upsert, prune) and the note write are independent: run them side by
+    # side so the response waits for the slower one, not their sum. Same writes, same order of effects.
+    writes = [_keep_note("hook", req, out["understanding"], [out["hook"], *out["alternates"]], rec.version)]
     if stored:
-        await asyncio.to_thread(hook_cache.put, ckey, resp.model_dump(mode="json"), rec.version)
-    await _keep_note("hook", req, out["understanding"], [out["hook"], *out["alternates"]], rec.version)
+        writes.append(asyncio.to_thread(hook_cache.put, ckey, resp.model_dump(mode="json"), rec.version))
+    await asyncio.gather(*writes)
     _log("hook", req, u, t0, hook=bool(out["hook"]), alts=len(out["alternates"]), reranked=reranked, cached=stored)
     return resp
 
 
 @router.post("/recommend/preview", response_model=PreviewResponse, tags=["plan"])
+@logged("preview")
 async def preview(req: PreviewRequest) -> PreviewResponse:
     """The arc for one person: hook → diagnose → act → story, plus their three week titles."""
     _consent(req)
     rec, planner, und = _services()
     t0 = time.perf_counter()
+    if plan_v3.enabled():
+        from server.plan_v3 import preview_v3
+        return await preview_v3(req, rec, planner, und, t0)
     u = await _read(req, und)
     t1 = time.perf_counter()
     person = person_brief(_ctx(req, u, rec, planner))
@@ -487,6 +508,7 @@ async def preview(req: PreviewRequest) -> PreviewResponse:
 
 
 @router.post("/recommend/plan", response_model=PlanResponse, tags=["plan"])
+@logged("plan")
 async def plan(req: PlanRequest) -> PlanResponse:
     """One week of the plan (`week`: 1 situation, 2 pattern, 3 self), or `days` days from week 1.
     Each week runs see → steady → act → story in the request's shape (default "2221")."""
@@ -495,6 +517,9 @@ async def plan(req: PlanRequest) -> PlanResponse:
     shape = _shape(req)
     first_week = req.week in (None, 1)
     t0 = time.perf_counter()
+    if plan_v3.enabled():
+        from server.plan_v3 import plan_v3 as plan_v3_week
+        return await plan_v3_week(req, rec, planner, und, t0)
     u = await _read(req, und)
     t1 = time.perf_counter()
     pin, story_pin = None, None
@@ -536,7 +561,21 @@ async def plan(req: PlanRequest) -> PlanResponse:
     return PlanResponse(**out)
 
 
+@router.post("/recommend/day", response_model=PlanResponse, tags=["plan"])
+@logged("day")
+async def plan_day(req: DayRequest) -> PlanResponse:
+    """PLAN_ENGINE=v3 only: one day of a stored plan, written when the app opens it (onboarding writes Day 1 only).
+    Without the flag this path does not exist (404), so the default app is unchanged."""
+    if not plan_v3.enabled():
+        raise HTTPException(status_code=404, detail="Not Found")
+    _consent(req)
+    rec, planner, und = _services()
+    from server.plan_v3 import day_v3
+    return await day_v3(req, rec, planner, und, time.perf_counter())
+
+
 @router.post("/recommend/replace", response_model=ReplaceResponse, tags=["plan"])
+@logged("replace")
 async def replace(req: ReplaceRequest) -> ReplaceResponse:
     """"Not for me" on Day 1 of a week: another verse for the day, from the same reading, never one
     shown before or still to come in the plan, shifted by what they said (and said before)."""
@@ -596,6 +635,7 @@ async def _refined(und, req: RefineRequest, prior: Understanding) -> Understandi
 
 
 @router.post("/recommend/refine", response_model=RefineResponse, tags=["plan"])
+@logged("refine")
 async def refine(req: RefineRequest) -> RefineResponse:
     """"Update my plan" (Pro, once a week, Day 2 to Day 6; the app enforces both). The person adds context;
     their reading is renewed with it and the week is chosen again from `from_day` to Day 7, never repeating an
@@ -639,6 +679,7 @@ async def refine(req: RefineRequest) -> RefineResponse:
 
 
 @router.post("/recommend/depth", response_model=DepthResponse, tags=["plan"])
+@logged("depth")
 async def depth(req: DepthRequest) -> DepthResponse:
     """"Go deeper" on a plan day: what this verse asks of this person (ai/depth.py). Cached per
     verse and reading; anything that fails its check is left out and the app keeps the library."""
@@ -715,6 +756,7 @@ ASK_RETUNE = "It sounds like the plan misread where you stand. Want the rest of 
 
 
 @router.post("/recommend/ask", response_model=AskResponse, tags=["plan"])
+@logged("ask")
 async def ask(req: AskRequest) -> AskResponse:
     """"Ask about this verse" (one free ask in the free week, then Pro; the app enforces the gate). The question is
     used for this request only: never stored, never logged. Distress in the question gets the support lines, never an

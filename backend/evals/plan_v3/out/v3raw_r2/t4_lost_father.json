@@ -1,0 +1,155 @@
+{
+ "case": "t4_lost_father",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost a parent",
+   "mirror": "I lost a parent",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I lost a parent\" and \"I'm afraid of death\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.15,see=0.5",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "day1:no_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "wronged",
+    "states": [
+     "shoka"
+    ],
+    "risk": "distress",
+    "situations": [
+     "grief_parent",
+     "fear_death",
+     "grief_general"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": null,
+    "first_line": "You feel your senses drying up in this grief, and no worldly kingdom can replace your father."
+   }
+  },
+  "hook": null,
+  "alternates": [],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 301,
+   "v3_candidates": 28,
+   "v3_fast_read": 1192,
+   "v3_select": 1525,
+   "v3_total": 1525,
+   "total": 1525
+  },
+  "_ms": 1532
+ }
+}

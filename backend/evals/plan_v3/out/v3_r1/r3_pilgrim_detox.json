@@ -1,0 +1,1077 @@
+{
+ "case": "r3_pilgrim_detox",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.68,wro=0.15,see=0.26",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:error:TooManyRequestsError",
+    "day1:graph_pick",
+    "first_line:llm_error"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "struggle",
+    "states": [
+     "bhaya",
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.38"
+   }
+  },
+  "hook": {
+   "id": "bg.6.38",
+   "ref": "Bhagavad Gita 6.38",
+   "ref_iast": "Bhagavad Gītā 6.38",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+   "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति । अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि ॥",
+   "line": "Fallen from both sides, does he scatter like a torn cloud, with nowhere to stand?",
+   "translation": "Fallen from both, does he not perish like a broken cloud, without support, mighty-armed one, bewildered on the path to Brahman?",
+   "words": [
+    {
+     "sa": "कच्चित्",
+     "en": "whether?"
+    },
+    {
+     "sa": "नोभयविभ्रष्टः",
+     "en": "fallen from both sides"
+    },
+    {
+     "sa": "छिन्नाभ्रम्",
+     "en": "torn cloud"
+    },
+    {
+     "sa": "इव",
+     "en": "like"
+    },
+    {
+     "sa": "नश्यति",
+     "en": "perishes"
+    },
+    {
+     "sa": "अप्रतिष्ठः",
+     "en": "without support"
+    },
+    {
+     "sa": "महाबाहो",
+     "en": "O mighty-armed one"
+    },
+    {
+     "sa": "विमूढः",
+     "en": "deluded"
+    },
+    {
+     "sa": "ब्रह्मणः",
+     "en": "of the supreme reality"
+    },
+    {
+     "sa": "पथि",
+     "en": "on the path"
+    }
+   ],
+   "why": "No sincere effort is wasted; you pick up where you left off.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.5",
+    "title": "What becomes of one who falls from yoga",
+    "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+    "story_hook": "",
+    "lesson": "No sincere effort is wasted; you pick up where you left off."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Things are turning. I want to keep it going.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Things are turning. I want to keep it going.",
+   "first_line_source": "app_emotion_line"
+  },
+  "alternates": [
+   {
+    "id": "bg.6.37",
+    "ref": "Bhagavad Gita 6.37",
+    "ref_iast": "Bhagavad Gītā 6.37",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+    "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+    "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+    "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "अयतिः",
+      "en": "one without steady effort"
+     },
+     {
+      "sa": "श्रद्धयोपेतः",
+      "en": "endowed with faith"
+     },
+     {
+      "sa": "योगात्",
+      "en": "from yoga"
+     },
+     {
+      "sa": "चलितमानसः",
+      "en": "with a mind turned away"
+     },
+     {
+      "sa": "अप्राप्य",
+      "en": "without attaining"
+     },
+     {
+      "sa": "योगसंसिद्धिम्",
+      "en": "perfection in yoga"
+     },
+     {
+      "sa": "कां गतिम्",
+      "en": "what state"
+     },
+     {
+      "sa": "कृष्ण",
+      "en": "O Krishna"
+     },
+     {
+      "sa": "गच्छति",
+      "en": "does he go"
+     }
+    ],
+    "why": "No sincere effort is wasted; you pick up where you left off.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "side_project",
+      "label": "I can't tell if continuing is discipline or stubbornness"
+     },
+     {
+      "id": "discipline",
+      "label": "I can't stay consistent"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.5",
+     "title": "What becomes of one who falls from yoga",
+     "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+     "story_hook": "",
+     "lesson": "No sincere effort is wasted; you pick up where you left off."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "up_maha.113",
+    "ref": "Maha Upanishad 3.22",
+    "ref_iast": "Mahā Upaniṣad 3.22",
+    "family": "up",
+    "speaker": "Nidagha",
+    "listener": "Ribhu",
+    "setting": "Nidagha on craving.",
+    "sanskrit": "यां यामहं मुनिश्रेष्ठ संश्रयामि गुणश्रियम् । तां तां कृन्तति मे तृष्णा तन्त्रीमिव कुमूषिका ॥",
+    "line": "Every good quality I take up, craving gnaws through, like a mouse chewing a string.",
+    "translation": "Whatever good quality I take refuge in, great sage, craving cuts it away, as a mouse gnaws through a string.",
+    "words": [],
+    "why": "Naming how restless your mind is, is where peace begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "craving",
+      "label": "I can't control my cravings"
+     },
+     {
+      "id": "discipline",
+      "label": "I can't stay consistent"
+     }
+    ],
+    "prasang": {
+     "id": "up.p.maha.nidagha",
+     "title": "Nidagha's lament",
+     "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+     "story_hook": "",
+     "lesson": "Naming how restless your mind is, is where peace begins."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 472,
+   "v3_candidates": 91,
+   "v3_fast_read": 50,
+   "v3_select": 615,
+   "v3_first_line": 46,
+   "v3_total": 661,
+   "total": 662
+  },
+  "_ms": 664
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:0/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "struggle",
+    "states": [
+     "bhaya",
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.38",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.38",
+     "ref": "Bhagavad Gita 6.38",
+     "ref_iast": "Bhagavad Gītā 6.38",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति । अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि ॥",
+     "line": "Fallen from both sides, does he scatter like a torn cloud, with nowhere to stand?",
+     "translation": "Fallen from both, does he not perish like a broken cloud, without support, mighty-armed one, bewildered on the path to Brahman?",
+     "words": [
+      {
+       "sa": "कच्चित्",
+       "en": "whether?"
+      },
+      {
+       "sa": "नोभयविभ्रष्टः",
+       "en": "fallen from both sides"
+      },
+      {
+       "sa": "छिन्नाभ्रम्",
+       "en": "torn cloud"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "नश्यति",
+       "en": "perishes"
+      },
+      {
+       "sa": "अप्रतिष्ठः",
+       "en": "without support"
+      },
+      {
+       "sa": "महाबाहो",
+       "en": "O mighty-armed one"
+      },
+      {
+       "sa": "विमूढः",
+       "en": "deluded"
+      },
+      {
+       "sa": "ब्रह्मणः",
+       "en": "of the supreme reality"
+      },
+      {
+       "sa": "पथि",
+       "en": "on the path"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 5.13,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.6.38",
+     "path": "bg.6.38 -depicts-> bhaya (spoken by Arjuna)",
+     "why": [
+      "afraid of ending up with neither the old life nor the new",
+      "What happens to someone who believes, tries, and falls short? Is all of it wasted?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.6.37",
+      "bg.11.24",
+      "bg.11.45"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.37",
+     "ref": "Bhagavad Gita 3.37",
+     "ref_iast": "Bhagavad Gītā 3.37",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what drives people to do wrong against their will; Krishna answers.",
+     "sanskrit": "श्री भगवानुवाचकाम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥",
+     "line": "It's desire, which turns into anger when blocked. Never satisfied, it is the real enemy here.",
+     "translation": "The Blessed Lord said: It is desire, it is anger, born of the quality of passion; all-devouring and greatly harmful. Know this to be the enemy here.",
+     "words": [
+      {
+       "sa": "श्रीभगवानुवाच",
+       "en": "the Lord said"
+      },
+      {
+       "sa": "कामः",
+       "en": "desire"
+      },
+      {
+       "sa": "एषः",
+       "en": "this"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "एषः",
+       "en": "this"
+      },
+      {
+       "sa": "रजोगुणसमुद्भवः",
+       "en": "born from the quality of passion"
+      },
+      {
+       "sa": "महाशनः",
+       "en": "all-devouring"
+      },
+      {
+       "sa": "महापाप्मा",
+       "en": "greatly destructive"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "एनम्",
+       "en": "this"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "वैरिणम्",
+       "en": "as an enemy"
+      }
+     ],
+     "why": "Desire unmet becomes anger; see it clearly and you can master it.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "craving",
+       "label": "I can't control my cravings"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.5",
+      "title": "Restraining desire",
+      "summary": "Arjuna asks why we do wrong as if forced. Krishna names desire, which turns into anger, as the enemy that clouds wisdom like smoke over fire, and tells him to master it.",
+      "story_hook": "",
+      "lesson": "Desire unmet becomes anger; see it clearly and you can master it."
+     },
+     "score": 3.553,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.3.37",
+     "path": "bg.3.37 -states_chain-> bg.desire_anger_rajas [rajas -causes-> kama]",
+     "why": [
+      "What drives us against our will (Bhagavad Gita 3.36-39)",
+      "the force is named and made an opponent one can know"
+     ],
+     "writer_note": "Letting-go teaching for a reader who is building something. Explain it through their own situation and feeling: what is released is the grip that hurts them, never their love, their hope or their work. Never say or imply 'stop caring' or 'your hope is the problem'. Read it after the guard verse, which reassures first.",
+     "alts": [
+      "bg.3.39",
+      "mbh.12.176.25",
+      "up_brihadaranyak.477"
+     ],
+     "thin": false,
+     "guard": {
+      "id": "bg.2.40",
+      "ref": "Bhagavad Gita 2.40",
+      "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+      "is_previous_day": false
+     },
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "words": [
+      {
+       "sa": "अनन्याः",
+       "en": "exclusive"
+      },
+      {
+       "sa": "चिन्तयन्तः",
+       "en": "thinking"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "जनाः",
+       "en": "people"
+      },
+      {
+       "sa": "पर्युपासते",
+       "en": "worship"
+      },
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "नित्याभियुक्तानाम्",
+       "en": "always attached"
+      },
+      {
+       "sa": "योगक्षेमम्",
+       "en": "well-being and protection"
+      },
+      {
+       "sa": "वहामि",
+       "en": "I carry"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 5.845,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Rest the mind on one source before sleep.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.9.22",
+     "path": "bg.9.22 -heals-> bhaya via sharanagati",
+     "why": [
+      "Rama's vow of safety to whoever comes afraid; 'I carry what they lack'.",
+      "what you have is guarded"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.13.chaupai.5",
+      "up_devi.29",
+      "rcm.5.42.chaupai.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "static"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.113.9",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 113.9",
+     "family": "mbh",
+     "speaker": "The river Ganga (retold by Bhishma)",
+     "listener": "the Ocean",
+     "setting": "The Ocean asks the rivers why they uproot great trees but never the humble cane; Ganga answers.",
+     "sanskrit": "वेतसो वेगमायान्तं दृष्ट्वा नमति नापरे / स च वेगे ह्यतिक्रान्ते स्थानमापद्यते पुनः",
+     "line": "The cane bends when the flood comes, and stands up again once it has passed.",
+     "translation": "The cane, seeing the flood coming, bends; no other tree does. And once the force has passed, it stands back up in its place.",
+     "words": [],
+     "why": "Bend with the flood and you stand again after it passes.",
+     "misuse": "Bending under pressure is not giving up your values.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ganga_sagara",
+      "title": "The river and the reeds",
+      "summary": "The Ocean asks the rivers why they uproot great trees but never the reeds. Ganga answers: the reed bends when the flood comes and stands again after; the rigid tree breaks.",
+      "story_hook": "The rivers tore down mighty trees every monsoon, yet never the humble reeds on their banks.",
+      "lesson": "Bend with the flood and you stand again after it passes."
+     },
+     "score": 4.939,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.12.113.9",
+     "path": "mbh.12.113.9 -heals-> bhaya",
+     "why": [
+      "Shows a way through overwhelming force that does not require breaking",
+      "Resilience is pictured as bending and returning to one's place"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.angels_unawares",
+      "vr.1.21.21",
+      "rcm.3.39.chaupai.2"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 7.527,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.33.31",
+     "path": "mbh.5.33.31 -cultivates-> dhriti",
+     "why": [
+      "See the work through",
+      "Reflect fully, then decide and begin."
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.duty_next_to_us",
+      "viv.8.take_things_easy",
+      "rcm.2.163.doha.1"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.136.1",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 136.1",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "नैव राज्ञा दरः कार्यो जातु कस्यांचिदापदि / अथ चेदपि दीर्णः स्यान्नैव वर्तेत दीर्णवत्",
+     "line": "In a crisis, you may be shaken inside. Don't let fear make your decisions for you.",
+     "translation": "A leader should never show fear in any crisis. Even if shaken inside, he should not act like a shaken man.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "This is about not acting from panic, not about hiding your feelings from everyone.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 6.445,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.136.1",
+     "path": "mbh.5.136.1 -cultivates-> dhriti",
+     "why": [
+      "Courage and steadiness are the wheels of the chariot that wins; do not let fear decide.",
+      "Composure for those who depend on one"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.5.not_in_a_day",
+      "mbh.12.55.16",
+      "rcm.2.292.chaupai.4"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [],
+     "anchor": null,
+     "score": 7.98,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.hanuman_despair_and_self_talk_in_lanka",
+     "path": "st.vr.hanuman_despair_and_self_talk_in_lanka -enacts_in-> bhaya ; st.vr.hanuman_despair_and_self_talk_in_lanka -enacts_turn-> dhriti, sankalpa, shraddha",
+     "why": [
+      "Despondency is the enemy of every aim; while one lives, good can still be seen."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.sita_at_the_bow",
+      "st.rcm.dharma_rath",
+      "st.bhakti.tulsi_bahuk_pain_in_the_arm"
+     ],
+     "thin": false,
+     "story_id": "st.vr.hanuman_despair_and_self_talk_in_lanka",
+     "personal_source": {}
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 41,
+   "v3_w1_write": 110,
+   "v3_w1_total": 152,
+   "select": 152,
+   "total": 154
+  },
+  "_ms": 157
+ }
+}

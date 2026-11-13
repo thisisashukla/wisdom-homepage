@@ -1,0 +1,1119 @@
+{
+ "case": "t6_promoted_past_mbas",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.14,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "not_promoted",
+     "imposter"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "first_line": "You feel sick before every presentation like they will find out you do not belong, living here like the tongue among the teeth."
+   }
+  },
+  "hook": {
+   "id": "rcm.5.6.chaupai.1",
+   "ref": "Ramcharitmanas · Sundar Kand",
+   "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+   "family": "rcm",
+   "speaker": "Vibhishan",
+   "listener": "Hanuman",
+   "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+   "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+   "line": "I live here like the tongue among the teeth.",
+   "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+   "words": [
+    {
+     "sa": "सुनहु",
+     "en": "listen"
+    },
+    {
+     "sa": "पवनसुत",
+     "en": "son of the wind"
+    },
+    {
+     "sa": "रहनि",
+     "en": "way of living"
+    },
+    {
+     "sa": "हमारी",
+     "en": "my"
+    },
+    {
+     "sa": "जिमि",
+     "en": "like"
+    },
+    {
+     "sa": "दसनन्हि",
+     "en": "teeth"
+    },
+    {
+     "sa": "महुँ",
+     "en": "within"
+    },
+    {
+     "sa": "जीभ",
+     "en": "tongue"
+    },
+    {
+     "sa": "बिचारी",
+     "en": "poor, helpless"
+    },
+    {
+     "sa": "तात",
+     "en": "friend"
+    },
+    {
+     "sa": "कबहुँ",
+     "en": "ever"
+    },
+    {
+     "sa": "मोहि",
+     "en": "me"
+    },
+    {
+     "sa": "जानि",
+     "en": "knowing"
+    },
+    {
+     "sa": "अनाथा",
+     "en": "helpless, without a protector"
+    },
+    {
+     "sa": "करिहहिं",
+     "en": "will do"
+    },
+    {
+     "sa": "कृपा",
+     "en": "grace"
+    },
+    {
+     "sa": "भानुकुल",
+     "en": "solar line"
+    },
+    {
+     "sa": "नाथा",
+     "en": "Lord"
+    }
+   ],
+   "why": "Even in a hostile place there may be one ally; find them.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "rcm.p.vibhishan_hanuman",
+    "title": "Hanuman finds a friend in Lanka",
+    "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+    "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+    "lesson": "Even in a hostile place there may be one ally; find them."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You feel sick before every presentation like they will find out you do not belong, living here like the tongue among the teeth.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You feel sick before every presentation like they will find out you do not belong, living here like the tongue among the teeth.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "rcm.2.225.chaupai.3",
+    "ref": "Ramcharitmanas, Ayodhya Kand 2.225 (chaupai 3)",
+    "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.225",
+    "family": "rcm",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "Bharat walks toward Ram, slowed by shame, quickened by love.",
+    "sanskrit": "फेरति मनहुँ मातु कृत खोरी। चलत भगति बल धीरज धोरी॥ जब समुझत रघुनाथ सुभाऊ। तब पथ परत उताइल पाऊ ॥",
+    "line": "Shame slowed him. But whenever he remembered Ram's nature, his feet moved faster.",
+    "translation": "It was as if his mother's wrong held him back, while the strength of devotion drove him on like a patient ox. Whenever he remembered Raghunath's nature, his feet moved faster on the path.",
+    "words": [
+     {
+      "sa": "फेरति",
+      "en": "turns back"
+     },
+     {
+      "sa": "मनहुँ",
+      "en": "as if"
+     },
+     {
+      "sa": "मातु",
+      "en": "mother"
+     },
+     {
+      "sa": "कृत",
+      "en": "done"
+     },
+     {
+      "sa": "खोरी",
+      "en": "wrong"
+     },
+     {
+      "sa": "चलत",
+      "en": "while moving"
+     },
+     {
+      "sa": "भगति",
+      "en": "devotion"
+     },
+     {
+      "sa": "बल",
+      "en": "strength"
+     },
+     {
+      "sa": "धीरज",
+      "en": "patience"
+     },
+     {
+      "sa": "धोरी",
+      "en": "bearer"
+     },
+     {
+      "sa": "जब",
+      "en": "when"
+     },
+     {
+      "sa": "रघुनाथ",
+      "en": "Raghunath"
+     },
+     {
+      "sa": "सुभाऊ",
+      "en": "nature"
+     },
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "पथ",
+      "en": "path"
+     },
+     {
+      "sa": "परत",
+      "en": "falling"
+     },
+     {
+      "sa": "उताइल",
+      "en": "quickened"
+     },
+     {
+      "sa": "पाऊ",
+      "en": "feet"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "vr.5.13.20",
+    "ref": "Valmiki Ramayana, Sundara Kanda 13.20",
+    "ref_iast": "Vālmīki Rāmāyaṇa 5.13.20",
+    "family": "vr",
+    "speaker": "Hanuman",
+    "listener": "himself",
+    "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+    "sanskrit": null,
+    "line": "What will Sugriva and the other monkeys say when I get back to Kishkindha?",
+    "translation": "Or what will Sugriva say, and the assembled monkeys, and the two sons of Dasaratha, when I return to Kishkindha?",
+    "words": [],
+    "why": "When you have looked everywhere, look again; giving up costs too much.",
+    "misuse": null,
+    "tone": null,
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 252,
+   "v3_candidates": 78,
+   "v3_fast_read": 1422,
+   "v3_select": 1758,
+   "v3_first_line": 643,
+   "v3_total": 2401,
+   "total": 2402
+  },
+  "_ms": 2407
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "not_promoted",
+     "imposter"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You feel sick before every presentation like they will find out you do not belong, living here like the tongue among the teeth."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.5.6.chaupai.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+     "family": "rcm",
+     "speaker": "Vibhishan",
+     "listener": "Hanuman",
+     "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+     "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+     "line": "I live here like the tongue among the teeth.",
+     "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+     "words": [
+      {
+       "sa": "सुनहु",
+       "en": "listen"
+      },
+      {
+       "sa": "पवनसुत",
+       "en": "son of the wind"
+      },
+      {
+       "sa": "रहनि",
+       "en": "way of living"
+      },
+      {
+       "sa": "हमारी",
+       "en": "my"
+      },
+      {
+       "sa": "जिमि",
+       "en": "like"
+      },
+      {
+       "sa": "दसनन्हि",
+       "en": "teeth"
+      },
+      {
+       "sa": "महुँ",
+       "en": "within"
+      },
+      {
+       "sa": "जीभ",
+       "en": "tongue"
+      },
+      {
+       "sa": "बिचारी",
+       "en": "poor, helpless"
+      },
+      {
+       "sa": "तात",
+       "en": "friend"
+      },
+      {
+       "sa": "कबहुँ",
+       "en": "ever"
+      },
+      {
+       "sa": "मोहि",
+       "en": "me"
+      },
+      {
+       "sa": "जानि",
+       "en": "knowing"
+      },
+      {
+       "sa": "अनाथा",
+       "en": "helpless, without a protector"
+      },
+      {
+       "sa": "करिहहिं",
+       "en": "will do"
+      },
+      {
+       "sa": "कृपा",
+       "en": "grace"
+      },
+      {
+       "sa": "भानुकुल",
+       "en": "solar line"
+      },
+      {
+       "sa": "नाथा",
+       "en": "Lord"
+      }
+     ],
+     "why": "Even in a hostile place there may be one ally; find them.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vibhishan_hanuman",
+      "title": "Hanuman finds a friend in Lanka",
+      "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+      "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+      "lesson": "Even in a hostile place there may be one ally; find them."
+     },
+     "score": 8.205,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel sick before every presentation like they will find out you do not belong, living here like the tongue among the teeth.",
+     "try_today": null,
+     "scene_line": "Like Vibhishan in Ravana's court, you live among those who do not know your worth.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "rcm.5.6.chaupai.1",
+     "path": "Day 1 kept from the first screen (rcm.2.225.chaupai.3 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.6.chaupai.1",
+      "vr.5.13.20",
+      "yv.1.12.22"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "first_line"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(circl,less,other,worry)",
+      "practice:imported_doctrine_or_technique(breath)",
+      "for_you:invented_life_detail(Your body)",
+      "practice:invented_life_detail(your body)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 4.17,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind feels small before the presentations, as if they will find out you do not belong. But the worry only grows because you keep feeding it with that thought. Let it rest, and it will lose its fuel.",
+     "try_today": "Notice when the worry circles, and do not feed it.",
+     "scene_line": "In the quiet of your office, you stand before the room, and the fire of your worry waits for its next thought.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "yv.5.21.6",
+     "path": "yv.5.21.6 -states_chain-> yv.worry_fed_by_thought [sankalpa_kalpana -causes-> chinta]",
+     "why": [
+      "Worry grows when you feed it (Yoga Vasishtha 5.21.6)",
+      "worry is shown to live on the attention it is fed"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.5.11.6",
+      "mbh.12.305.23",
+      "viv.6.fearful_to_hurt"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "words": [],
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 8.481,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel sick before every presentation, as if they will find out you do not belong. This inner wealth of learning cannot be taken from you by anyone, and it grows when you share it.",
+     "try_today": "Share one thing you know with someone today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bh.niti.16",
+     "path": "bh.niti.16 -heals-> dainya",
+     "why": [
+      "A wealth the rich do not outrank",
+      "What one has learned cannot be taken"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.86",
+      "mbh.3.32.58",
+      "vr.4.66.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.62.13",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+     "family": "vr",
+     "speaker": "Sage Nishakara",
+     "listener": "Sampati (recounted)",
+     "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+     "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+     "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+     "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+     "words": [],
+     "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.sampati",
+      "title": "Sampati, the bird who could not fly",
+      "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+      "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+      "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+     },
+     "score": 6.637,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": "You stand before them in the room, and the old vulture Sampati waits, knowing his knowledge will be needed.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "vr.4.62.13",
+     "path": "vr.4.62.13 -heals-> dainya via karuna",
+     "why": [
+      "'Do not feel small'; someone reminds you who you are.",
+      "being grounded is not being useless"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.remedy_weakness",
+      "mbh.3.135.10",
+      "mbh.12.114.15"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(, not the)",
+      "practice:untraced_sentence(body,change,feel,trying,withou)",
+      "practice:invented_life_detail(your body)",
+      "for_you:untraced_sentence(degree,measur,wall,worth)",
+      "practice:untraced_sentence(alone,forwar,help,move,situat)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.961,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have the role right now, and that is enough. The work in front of you does not need your MBA to be valid. Let the speaking be gentle, and trust the work itself to hold you up.",
+     "try_today": "Notice one moment today where you can do the next task without worrying about who is watching.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_maha.532",
+     "path": "up_maha.532 -cultivates-> samatva",
+     "why": [
+      "the same regard for friend and opponent"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.133.17",
+      "bg.18.23",
+      "viv.1.end_and_means"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.1.53.9",
+     "ref": "Valmiki Ramayana · Bala Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 53.9",
+     "family": "vr",
+     "speaker": "Vasishtha",
+     "listener": "King Vishvamitra",
+     "setting": "A powerful king offers a fortune for the sage's cow, the source of his whole way of life.",
+     "sanskrit": "नाहं शतसहस्रेण नापि कोटिशतैर्गवाम्॥ राजन् दास्यामि शबलां राशिभी रजतस्य वा। न परित्यागमयं मत्सकाशादरिंदम ॥",
+     "line": "Not for any price. Some things are not for sale, however powerful the buyer.",
+     "translation": "Not for a hundred thousand cows, not for a billion, not for heaps of silver, O king, will I give up Shabala. She stays with me.",
+     "words": [
+      {
+       "sa": "नाहम्",
+       "en": "I will not"
+      },
+      {
+       "sa": "शतसहस्रेण",
+       "en": "by a hundred thousand"
+      },
+      {
+       "sa": "नापि",
+       "en": "nor even"
+      },
+      {
+       "sa": "कोटिशतैः",
+       "en": "by hundreds of crores"
+      },
+      {
+       "sa": "गवाम्",
+       "en": "of cows"
+      },
+      {
+       "sa": "राजन्",
+       "en": "O king"
+      },
+      {
+       "sa": "दास्यामि",
+       "en": "I will give"
+      },
+      {
+       "sa": "शबलाम्",
+       "en": "Sabala"
+      },
+      {
+       "sa": "राशिभिः",
+       "en": "by heaps"
+      },
+      {
+       "sa": "रजतस्य",
+       "en": "of silver"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "Envy and force cannot take what someone will not give; real power is built inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.vasishtha_cow",
+      "title": "The king who wanted the cow",
+      "summary": "King Vishvamitra is feasted by the sage Vasishtha and covets the wish-granting cow that made it possible. Vasishtha refuses every offer; the king takes her by force and is routed, then fails again with divine weapons. Humbled, he resolves to transform himself through inner discipline instead of force.",
+      "story_hook": "A king who had everything saw one thing he could not buy, and it undid him.",
+      "lesson": "Envy and force cannot take what someone will not give; real power is built inside."
+     },
+     "score": 4.032,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel like they will find out you do not belong, yet some things in you are not for sale. Your worth is not a herd of cows or a heap of silver. You stay with yourself.",
+     "try_today": "Notice one value that no promotion can buy, and let it stay with you today.",
+     "scene_line": "You sit before the room, and the sage says no to the king who offers everything.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.1.53.9",
+     "path": "vr.1.53.9 -cultivates-> santosha",
+     "why": [
+      "what sustains his life is not for sale",
+      "a plain no to someone far more powerful"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.48",
+      "bh.niti.51",
+      "yv.2.16.8"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(anyone,degree,highes,loudes)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "viv.p.chicago.welcome",
+     "title": "'Sisters and Brothers of America': Chicago, 11 September 1893",
+     "kind": "story",
+     "family": "viv",
+     "characters": [
+      "Swami Vivekananda",
+      "Delegates and audience of the World's Parliament of Religions"
+     ],
+     "story_hook": "On 11 September 1893, a young Indian monk with no formal invitation stood up in Chicago and said five words that brought the hall to its feet.",
+     "summary": "An unknown 30-year-old monk from India, with no invitation and little money, rises on the Parliament's opening day and greets the hall as 'Sisters and Brothers of America'. The audience stands and applauds for minutes. In a five-minute address he says India's faith accepts all religions as true and hopes the day marks the death-knell of fanaticism.",
+     "lesson": "You can belong fully to your own tradition and still honour every other path.",
+     "matched": [],
+     "anchor": null,
+     "score": 10.672,
+     "why": null,
+     "hook_title": "Vivekananda had no invitation, and five words brought Chicago to its feet",
+     "teaser": "Vivekananda had no invitation, and five words brought Chicago to its feet",
+     "for_you": "The room feels too big when you worry they will see you do not belong. You can still step up, even with a fluttering heart and nothing written down.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.viv.chicago_no_speech_prepared",
+     "path": "st.viv.chicago_no_speech_prepared -enacts_in-> bhaya, dainya ; st.viv.chicago_no_speech_prepared -enacts_turn-> abhaya, kritajnata, shraddha, tejas ; st.viv.chicago_no_speech_prepared -fits_situation-> imposter",
+     "why": [
+      "One can be unprepared and terrified and still step up, after a moment of surrender."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bh.ascetic_and_king",
+      "st.mbh.kashyapa_and_the_jackal",
+      "st.viv.lion_among_sheep"
+     ],
+     "thin": false,
+     "story_id": "st.viv.chicago_no_speech_prepared",
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "practice:imported_doctrine_or_technique(breath)",
+      "practice:invented_life_detail(your body)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Not feeling enough",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 64,
+   "v3_w1_write": 8379,
+   "v3_w1_total": 8445,
+   "select": 8446,
+   "total": 8448
+  },
+  "_ms": 8454
+ }
+}

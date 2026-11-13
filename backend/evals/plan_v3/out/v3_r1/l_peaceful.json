@@ -1,0 +1,1100 @@
+{
+ "case": "l_peaceful",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "I want to understand what the Gita teaches",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want a calm start to my day",
+   "mirror": "I want a calm start to my day",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels curious; closest to \"I want a calm start to my day\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.05,see=0.6",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:error:TooManyRequestsError",
+    "day1:graph_pick",
+    "first_line:llm_error"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "peaceful",
+    "trail": [
+     "peaceful"
+    ],
+    "paused": null,
+    "stance": "seeking",
+    "states": [
+     "shanti",
+     "jijnasa"
+    ],
+    "risk": "none",
+    "situations": [
+     "morning_calm",
+     "gratitude",
+     "restless_mind"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "ram_gita.52"
+   }
+  },
+  "hook": {
+   "id": "ram_gita.52",
+   "ref": "Ram Gita 52 (Adhyatma Ramayana, Uttara Kanda 5)",
+   "ref_iast": "Rām Gītā 52",
+   "family": "gitas",
+   "speaker": "Rama",
+   "listener": "Lakshmana",
+   "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+   "sanskrit": "एवं सदा जातपरात्मभावनः स्वानन्दतुष्टः परिविस्मृताखिलः । आस्ते स नित्यात्मसुखप्रकाशकः साक्षाद्विमुक्तोऽचलवारिसिन्धुवत् ॥",
+   "line": "Content in an inner joy, he becomes like an ocean of still water.",
+   "translation": "Always absorbed in the sense of the supreme Self, content in his own joy and forgetting all else, he lives radiating that inner happiness, free, like an ocean of still water.",
+   "words": [
+    {
+     "sa": "एवं",
+     "en": "thus"
+    },
+    {
+     "sa": "सदा",
+     "en": "always"
+    },
+    {
+     "sa": "जातपरात्मभावनः",
+     "en": "one who contemplates the supreme self"
+    },
+    {
+     "sa": "स्वानन्दतुष्टः",
+     "en": "content in own bliss"
+    },
+    {
+     "sa": "परिविस्मृताखिलः",
+     "en": "forgetting all"
+    },
+    {
+     "sa": "आस्ते",
+     "en": "exists"
+    },
+    {
+     "sa": "स",
+     "en": "he"
+    },
+    {
+     "sa": "नित्यात्मसुखप्रकाशकः",
+     "en": "eternal self-joy illuminator"
+    },
+    {
+     "sa": "साक्षात्",
+     "en": "directly"
+    },
+    {
+     "sa": "विमुक्तः",
+     "en": "liberated"
+    },
+    {
+     "sa": "अचलवारिसिन्धुवत्",
+     "en": "like an unmoving ocean"
+    }
+   ],
+   "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day"
+    }
+   ],
+   "prasang": {
+    "id": "ram_gita.p.meditation_and_devotion",
+    "title": "Sit quietly, keep faith",
+    "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+    "story_hook": "",
+    "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are here to read, and your calm focus is already a kind of answer.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are here to read, and your calm focus is already a kind of answer.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "bh.vairagya.82",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+    "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+    "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+    "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+    "words": [],
+    "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     },
+     {
+      "id": "morning_calm",
+      "label": "I want a calm start to my day"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.vairagya.shiva",
+     "title": "Vairagyashatakam: Worship of Shiva",
+     "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+     "story_hook": "",
+     "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.3.17",
+    "ref": "Bhagavad Gita 3.17",
+    "ref_iast": "Bhagavad Gītā 3.17",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on why even the fulfilled keep working for the world.",
+    "sanskrit": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः । आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते ॥",
+    "line": "One who is content and delighted in their own self has nothing left to prove.",
+    "translation": "But for the person who delights only in the self, is satisfied with the self, and content in the self alone, there is nothing that must be done.",
+    "words": [
+     {
+      "sa": "यः",
+      "en": "who"
+     },
+     {
+      "sa": "त्वम्",
+      "en": "self"
+     },
+     {
+      "sa": "आत्मरति",
+      "en": "self-delight"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "is"
+     },
+     {
+      "sa": "आत्मतृप्तः",
+      "en": "self-fulfilled"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "मानवः",
+      "en": "person"
+     },
+     {
+      "sa": "आत्मनि",
+      "en": "in the self"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "सन्तुष्टः",
+      "en": "content"
+     },
+     {
+      "sa": "तस्य",
+      "en": "his"
+     },
+     {
+      "sa": "कार्यम्",
+      "en": "duty"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "विद्यते",
+      "en": "exists"
+     }
+    ],
+    "why": "People copy what you do, not what you say; keep showing up.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p03.3",
+     "title": "Even the wise, even God, act for the world's sake",
+     "summary": "The one content in the self has nothing left to gain, yet the wise, like Janaka and Krishna himself, keep working because others follow their example.",
+     "story_hook": "",
+     "lesson": "People copy what you do, not what you say; keep showing up."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 191,
+   "v3_candidates": 92,
+   "v3_fast_read": 41,
+   "v3_select": 327,
+   "v3_first_line": 39,
+   "v3_total": 366,
+   "total": 367
+  },
+  "_ms": 369
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i want to understand what the gita teaches",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want a calm start to my day",
+   "mirror": "I want a calm start to my day",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels curious; closest to \"I want a calm start to my day\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:0/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "peaceful",
+    "trail": [
+     "peaceful"
+    ],
+    "paused": null,
+    "stance": "seeking",
+    "states": [
+     "shanti",
+     "jijnasa"
+    ],
+    "risk": "none",
+    "situations": [
+     "morning_calm",
+     "gratitude",
+     "restless_mind"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "ram_gita.52",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "ram_gita.52",
+     "ref": "Ram Gita 52 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 52",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "एवं सदा जातपरात्मभावनः स्वानन्दतुष्टः परिविस्मृताखिलः । आस्ते स नित्यात्मसुखप्रकाशकः साक्षाद्विमुक्तोऽचलवारिसिन्धुवत् ॥",
+     "line": "Content in an inner joy, he becomes like an ocean of still water.",
+     "translation": "Always absorbed in the sense of the supreme Self, content in his own joy and forgetting all else, he lives radiating that inner happiness, free, like an ocean of still water.",
+     "words": [
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "जातपरात्मभावनः",
+       "en": "one who contemplates the supreme self"
+      },
+      {
+       "sa": "स्वानन्दतुष्टः",
+       "en": "content in own bliss"
+      },
+      {
+       "sa": "परिविस्मृताखिलः",
+       "en": "forgetting all"
+      },
+      {
+       "sa": "आस्ते",
+       "en": "exists"
+      },
+      {
+       "sa": "स",
+       "en": "he"
+      },
+      {
+       "sa": "नित्यात्मसुखप्रकाशकः",
+       "en": "eternal self-joy illuminator"
+      },
+      {
+       "sa": "साक्षात्",
+       "en": "directly"
+      },
+      {
+       "sa": "विमुक्तः",
+       "en": "liberated"
+      },
+      {
+       "sa": "अचलवारिसिन्धुवत्",
+       "en": "like an unmoving ocean"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "morning_calm",
+       "label": "I want a calm start to my day"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 8.176,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "ram_gita.52",
+     "path": "ram_gita.52 -cultivates-> shanti [light_fit]",
+     "why": [
+      "like a still ocean",
+      "tushta, content"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.vairagya.82",
+      "bg.6.20",
+      "bg.6.7"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_kath.1.3.3",
+     "ref": "Katha Upanishad 1.3.3-4",
+     "ref_iast": "Kaṭha Upaniṣad 1.3.3-4",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama's chariot image of the human being.",
+     "sanskrit": "आत्मानँ रथितं विद्धि शरीरँ रथमेव तु । बुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च ॥ इन्द्रियाणि हयानाहुर्विषयांस्तेषु गोचरान् । आत्मेन्द्रिय मनोयुक्त भोक्तेत्याहुर्मनीषिणः ॥",
+     "line": "You are the rider, your body the chariot, your intellect the driver, your mind the reins.",
+     "translation": "Know the self as the rider, the body as the chariot, the intellect as the charioteer and the mind as the reins. The senses, they say, are the horses, and the things of the world are the roads they run on.",
+     "words": [
+      {
+       "sa": "आत्मानँ",
+       "en": "the true self"
+      },
+      {
+       "sa": "रथितं",
+       "en": "as the rider"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "शरीरँ",
+       "en": "the body"
+      },
+      {
+       "sa": "रथमेव",
+       "en": "as the chariot indeed"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "बुद्धिं",
+       "en": "the intellect"
+      },
+      {
+       "sa": "तु",
+       "en": "indeed"
+      },
+      {
+       "sa": "सारथिं",
+       "en": "the charioteer"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "मनः",
+       "en": "the mind"
+      },
+      {
+       "sa": "प्रग्रहमेव",
+       "en": "as the reins indeed"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "Hold the reins of your mind, or your senses will drive for you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.chariot",
+      "title": "The chariot of the self",
+      "summary": "Yama pictures a person as a chariot: the self is the rider, the body the chariot, the intellect the driver, the mind the reins and the senses the horses. With a steady mind the horses obey; without it they bolt. He ends with the call to arise and wake.",
+      "story_hook": "",
+      "lesson": "Hold the reins of your mind, or your senses will drive for you."
+     },
+     "score": 4.329,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "up_kath.1.3.3",
+     "path": "up_kath.1.3.3 -states_chain-> katha.chariot [chanchalya -causes-> samsara]",
+     "why": [
+      "The chariot (Katha Upanishad 1.3.3-9)",
+      "a runaway mind is horses without a hand on the reins; it can be driven"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.66",
+      "bg.2.41",
+      "up_mundaka.1.1.4"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.4.calm_of_heart",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 4",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Reader",
+     "setting": "Poem 'Peace', composed at Ridgely Manor, New York, 1899.",
+     "sanskrit": null,
+     "line": "The silence between speaking; Between two fits of passion — It is the calm of heart.",
+     "translation": "It is sweet rest in music; And pause in sacred art; The silence between speaking; Between two fits of passion — It is the calm of heart.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "morning_calm",
+       "label": "I want a calm start to my day"
+      }
+     ],
+     "prasang": null,
+     "score": 4.403,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.4.calm_of_heart",
+     "path": "viv.4.calm_of_heart -heals-> chanchalya",
+     "why": [
+      "there is a pause even in a busy mind",
+      "the calm of heart"
+     ],
+     "writer_note": null,
+     "alts": [
+      "ashtavakra.18.59",
+      "rcm.4.15.chaupai.4",
+      "bg.6.19"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.1.silence_in_activity",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Karma-Yoga class, New York",
+     "setting": "Karma-Yoga classes, New York, 1895–96, end of chapter 1: the ideal worker.",
+     "sanskrit": null,
+     "line": "in the midst of the intensest activity finds the silence and solitude of the desert.",
+     "translation": "The ideal man is he who, in the midst of the greatest silence and solitude, finds the intensest activity, and in the midst of the intensest activity finds the silence and solitude of the desert. He has learnt the secret of restraint, he has controlled himself. He goes through the streets of a big city with all its traffic, and his mind is as calm as if he were in a cave, where not a sound could reach him; and he is intensely working all the time.",
+     "words": [],
+     "why": "Character is built in ordinary actions, and you are building it right now.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "morning_calm",
+       "label": "I want a calm start to my day"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.karma_yoga.character",
+      "title": "Karma-Yoga 1: how work makes character",
+      "summary": "He defines karma as work and says character is the sum of the impressions our actions leave. Misery teaches as much as joy, and character shows in small daily actions, not big moments. The ideal worker finds calm in the middle of intense activity.",
+      "story_hook": "",
+      "lesson": "Character is built in ordinary actions, and you are building it right now."
+     },
+     "score": 4.098,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.1.silence_in_activity",
+     "path": "viv.1.silence_in_activity -heals-> chanchalya",
+     "why": [
+      "calm is described as portable",
+      "a cave carried into the street"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_maitreya.25",
+      "yv.5.12.14",
+      "sur.vp.423"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.150",
+     "ref": "Maha Upanishad 4.2-3",
+     "ref_iast": "Mahā Upaniṣad 4.2-3",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu begins his answer to Nidagha.",
+     "sanskrit": "मोक्षद्वारे द्वारपालश्चत्वारः परिकीर्तिताः । शमो विचारः सन्तोषश्चतुर्थः साधुसङ्गमः ॥ एकं वा सर्वयत्नेन सर्वमुत्सृज्य संश्रयेत् । एकस्मिन्वशगे यान्ति चत्वारोऽपि वशं गताः ॥",
+     "line": "Freedom has four gatekeepers: calm, inquiry, contentment and good company. Win one, and the others follow.",
+     "translation": "Four gatekeepers are named at the door of freedom: calm, inquiry, contentment, and the company of good people. Take refuge in even one of them with full effort, setting all else aside; when one is won, all four come under your control.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 5.091,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_maha.150",
+     "path": "up_maha.150 -cultivates-> shanti",
+     "why": [
+      "calm is the first gatekeeper",
+      "inquiry is one of the four"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.495",
+      "up_shiv_sankalp.6",
+      "bg.17.16"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.63",
+     "ref": "Bhagavad Gita 18.63",
+     "ref_iast": "Bhagavad Gītā 18.63",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna's final counsel: act with devotion, reflect, choose, and take refuge.",
+     "sanskrit": "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया । विमृश्यैतदशेषेण यथेच्छसि तथा कुरु ॥",
+     "line": "I've told you all I know. Reflect on it fully, then do as you choose.",
+     "translation": "Thus I have declared to you this knowledge, more secret than all secrets. Reflect on it fully, and then do as you wish.",
+     "words": [
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "ते",
+       "en": "to you"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "wisdom"
+      },
+      {
+       "sa": "आख्यातम्",
+       "en": "has been explained"
+      },
+      {
+       "sa": "गुह्यात्",
+       "en": "than the secret"
+      },
+      {
+       "sa": "गुह्यतरम्",
+       "en": "more secret"
+      },
+      {
+       "sa": "मया",
+       "en": "by me"
+      },
+      {
+       "sa": "विमृश्य",
+       "en": "having reflected upon"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "अशेषेण",
+       "en": "completely"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "इच्छसि",
+       "en": "you wish"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      }
+     ],
+     "why": "Reflect fully, choose freely, and set down the fear.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.6",
+      "title": "Action with devotion: surrender",
+      "summary": "Krishna urges Arjuna to offer all action, warns that ego will only trip him, tells him to reflect fully and then choose, and finally to take refuge in him alone and not grieve.",
+      "story_hook": "",
+      "lesson": "Reflect fully, choose freely, and set down the fear."
+     },
+     "score": 3.671,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bg.18.63",
+     "path": "bg.18.63 -cultivates-> viveka",
+     "why": [
+      "full reflection before acting is the instruction",
+      "Reflect fully, then decide and begin."
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.33.108",
+      "yv.2.7.12",
+      "up_taittiriya.56"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "ashtavakra.p.janaka_happiness",
+     "title": "Janaka's songs of simple happiness",
+     "kind": "teaching",
+     "family": "gitas",
+     "characters": [
+      "Janaka"
+     ],
+     "story_hook": "",
+     "summary": "In three short chapters Janaka describes how he has become calm: tired of busy body, speech and thought, he no longer renounces or grabs, and simply does what comes and lives happily.",
+     "lesson": "Happiness can be simple: do what comes, stop both grabbing and renouncing.",
+     "matched": [],
+     "anchor": null,
+     "score": 3.94,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Janaka's songs of simple happiness",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.gitas.janaka_tired_of_doing",
+     "path": "st.gitas.janaka_tired_of_doing -enacts_in-> chanchalya ; st.gitas.janaka_tired_of_doing -enacts_turn-> santosha, shanti ; st.gitas.janaka_tired_of_doing -fits_situation-> morning_calm, restless_mind",
+     "why": [
+      "Peace comes when the compulsion to do, to say and to think has run itself out."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.yv.vitahavya_argues_with_his_mind",
+      "st.up.shuka_at_janakas_gate",
+      "st.viv.ghost_that_must_be_kept_busy"
+     ],
+     "thin": false,
+     "story_id": "st.gitas.janaka_tired_of_doing",
+     "personal_source": {}
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A mind that won't settle",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 21,
+   "v3_w1_write": 98,
+   "v3_w1_total": 120,
+   "select": 120,
+   "total": 121
+  },
+  "_ms": 122
+ }
+}

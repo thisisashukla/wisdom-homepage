@@ -1,0 +1,3069 @@
+{
+ "case": "t4_lost_father",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I want to reconnect with my roots\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.15,see=0.61",
+    "engine:v3",
+    "fast_read:fixed",
+    "note_match:timeout",
+    "fr:pick:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick_refused:r4: depicts or diagnoses a state the person is not in (nirveda,vishada)",
+    "day1:graph_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "seeking",
+    "states": [
+     "shoka",
+     "jijnasa",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bg.6.39"
+   }
+  },
+  "hook": {
+   "id": "bg.6.39",
+   "ref": "Bhagavad Gita 6.39",
+   "ref_iast": "Bhagavad Gītā 6.39",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna, afraid of failing halfway on the inner path, turns to Krishna.",
+   "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः । त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते ॥",
+   "line": "Only you can clear this doubt completely. There is no one else I can ask.",
+   "translation": "Krishna, please cut away this doubt of mine completely. No one but you can remove it.",
+   "words": [
+    {
+     "sa": "एतत्",
+     "en": "this"
+    },
+    {
+     "sa": "मे",
+     "en": "my"
+    },
+    {
+     "sa": "संशयम्",
+     "en": "doubt"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "छेत्तुम्",
+     "en": "to cut"
+    },
+    {
+     "sa": "अर्हसि",
+     "en": "you are able"
+    },
+    {
+     "sa": "अशेषतः",
+     "en": "completely"
+    },
+    {
+     "sa": "त्वदन्यः",
+     "en": "other than you"
+    },
+    {
+     "sa": "संशयस्य",
+     "en": "of the doubt"
+    },
+    {
+     "sa": "अस्य",
+     "en": "of this"
+    },
+    {
+     "sa": "छेत्ता",
+     "en": "cutter"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "उपपद्यते",
+     "en": "is possible"
+    }
+   ],
+   "why": null,
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt"
+    }
+   ],
+   "prasang": null,
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You do not know the way, and a verse is chosen to sit with you.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You do not know the way, and a verse is chosen to sit with you.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "viv.8.faith_totters",
+    "ref": "Complete Works, Vol. 8, Epistles – Fourth Series, XXIII, p. 316",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 8",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Mary and Harriet Hale",
+    "setting": "Letter to the Hale sisters, autumn 1894: even he admits his faith wavers.",
+    "sanskrit": null,
+    "line": "What a rogue am I that in the face of such mercies sometimes the faith totters — seeing every moment that I am in His hands.",
+    "translation": "Glory unto Jagadambâ (Mother of the Universe)! I have gained beyond expectations. The prophet has been honoured and with a vengeance. I am weeping like a child at His mercy — He never leaves His servant, sisters. The letter I send you will explain all, and the printed things are coming to the American people. The names there are the very flower of our country. The President was the chief nobleman of Calcutta, and the other man Mahesh Chandra Nyâyaratna is the principal of the Sanskrit College and the chief Brahmin in all India and recognised by the Government as such. The letter will tell you all. O sisters! What a rogue am I that in the face of such mercies sometimes the faith totters — seeing every moment that I am in His hands. Still the mind sometimes gets despondent. Sister, there is a God — a Father — a Mother who never leaves His Children, never, never, never. Put uncanny theories aside and becoming children take refuge in Him. I cannot write more — I am weeping like a woman.",
+    "words": [],
+    "why": null,
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [
+     {
+      "id": "doubt_faith",
+      "label": "I'm struggling with doubt"
+     }
+    ],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 811,
+   "v3_candidates": 0,
+   "v3_fast_read": 1691,
+   "v3_select": 2505,
+   "v3_first_line": 614,
+   "v3_total": 3119,
+   "total": 3120
+  },
+  "_ms": 3124
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I want to reconnect with my roots\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:0/7",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:day:2:for_you:no",
+    "v3:day:3:for_you:yes",
+    "v3:day:4:for_you:no",
+    "v3:day:5:for_you:no",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "seeking",
+    "states": [
+     "shoka",
+     "jijnasa",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.39",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.39",
+     "ref": "Bhagavad Gita 6.39",
+     "ref_iast": "Bhagavad Gītā 6.39",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, afraid of failing halfway on the inner path, turns to Krishna.",
+     "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः । त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते ॥",
+     "line": "Only you can clear this doubt completely. There is no one else I can ask.",
+     "translation": "Krishna, please cut away this doubt of mine completely. No one but you can remove it.",
+     "words": [
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "संशयम्",
+       "en": "doubt"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "छेत्तुम्",
+       "en": "to cut"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "you are able"
+      },
+      {
+       "sa": "अशेषतः",
+       "en": "completely"
+      },
+      {
+       "sa": "त्वदन्यः",
+       "en": "other than you"
+      },
+      {
+       "sa": "संशयस्य",
+       "en": "of the doubt"
+      },
+      {
+       "sa": "अस्य",
+       "en": "of this"
+      },
+      {
+       "sa": "छेत्ता",
+       "en": "cutter"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "उपपद्यते",
+       "en": "is possible"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 8.74,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice the one question you keep returning to.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.6.39",
+     "path": "Day 1 kept from the first screen (bg.3.2 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.526",
+      "bg.2.7",
+      "bh.vairagya.76"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(doubt)",
+      "practice:pathologises_a_light_state(doubt)",
+      "scene_line:not_second_person",
+      "scene_line:pathologises_a_light_state(afraid)",
+      "for_you:contrast_pattern(are not failing. You are)",
+      "for_you:verdict(You are not failing)",
+      "for_you:pathologises_a_light_state(doubt)",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ram_gita.37",
+     "ref": "Ram Gita 37 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 37",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "यदन्यदन्यत्र विभाव्यते भ्रमादध्यासमित्याहुरमुं विपश्चितः । असर्पभूतेऽहिविभावनं यथा रज्ज्वादिके तद्वदपीश्वरे जगत् ॥",
+     "line": "Confusion sees one thing as another, a rope as a snake. Look again.",
+     "translation": "The wise call it superimposition when, through confusion, one thing is taken for another, as a snake is seen in a rope; so the world is seen in the Lord.",
+     "words": [
+      {
+       "sa": "यद्",
+       "en": "that"
+      },
+      {
+       "sa": "अन्यत्",
+       "en": "other"
+      },
+      {
+       "sa": "अन्यत्र",
+       "en": "in another"
+      },
+      {
+       "sa": "विभाव्यते",
+       "en": "is perceived"
+      },
+      {
+       "sa": "भ्रमात्",
+       "en": "from confusion"
+      },
+      {
+       "sa": "अध्यासम्",
+       "en": "misapprehension"
+      },
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "आहुः",
+       "en": "say"
+      },
+      {
+       "sa": "अमुं",
+       "en": "this"
+      },
+      {
+       "sa": "विपश्चितः",
+       "en": "wise ones"
+      },
+      {
+       "sa": "असर्पभूते",
+       "en": "as a snake-being"
+      },
+      {
+       "sa": "अहि",
+       "en": "snake"
+      },
+      {
+       "sa": "विभावनं",
+       "en": "appearance"
+      },
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "रज्ज्वादिके",
+       "en": "in a rope etc."
+      },
+      {
+       "sa": "तद्वद्",
+       "en": "similarly"
+      },
+      {
+       "sa": "अपि",
+       "en": "also"
+      },
+      {
+       "sa": "ईश्वरे",
+       "en": "in the divine"
+      },
+      {
+       "sa": "जगत्",
+       "en": "world"
+      }
+     ],
+     "why": "Much of our fear is a rope mistaken for a snake; look again.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ram_gita.p.rope_and_snake",
+      "title": "The rope and the snake",
+      "summary": "Rama explains that the Self is never born and never dies, that suffering comes from mistaking one thing for another like a rope for a snake, and that in deep sleep, free of wanting, we simply feel happy.",
+      "story_hook": "",
+      "lesson": "Much of our fear is a rope mistaken for a snake; look again."
+     },
+     "score": 2.731,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "ram_gita.37",
+     "path": "ram_gita.37 -heals-> moha [label only: move explains_cause]",
+     "why": [
+      "names the mechanism of misperception",
+      "Teach me simply how to cross over."
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.38.chaupai.3",
+      "bg.4.17",
+      "rcm.7.87.chaupai.8"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 6.39) was about grief; today asks where it comes from.",
+      "link": null
+     },
+     "personal_source": {},
+     "personal_issues": [
+      "fit_guard:not_for:griever"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.7.14",
+     "ref": "Bhagavad Gita 7.14",
+     "ref_iast": "Bhagavad Gītā 7.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna admits the confusion of the world is hard to get through, and says who gets through it.",
+     "sanskrit": "दैवी ह्येषा गुणमयी मम माया दुरत्यया । मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥",
+     "line": "This tangle is hard to get through. Those who take shelter in me get through it.",
+     "translation": "This divine power of mine, made of the three qualities, is very hard to get past. Those who take refuge in me alone cross beyond it.",
+     "words": [
+      {
+       "sa": "दैवी",
+       "en": "divine"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "एषा",
+       "en": "this"
+      },
+      {
+       "sa": "गुणमयी",
+       "en": "made of qualities"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "माया",
+       "en": "power/illusion"
+      },
+      {
+       "sa": "दुरत्यया",
+       "en": "very difficult to cross"
+      },
+      {
+       "sa": "मामेव",
+       "en": "to me alone"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "प्रपद्यन्ते",
+       "en": "surrender"
+      },
+      {
+       "sa": "मायामेतां",
+       "en": "this power"
+      },
+      {
+       "sa": "तरन्ति",
+       "en": "cross"
+      },
+      {
+       "sa": "ते",
+       "en": "they"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 5.42,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, confusion was named as a snake seen in a rope. Today, you are told that this tangle is hard to get through, and that those who take shelter in me get through it.",
+     "try_today": "Notice one small tangle today and let it be.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.7.14",
+     "path": "bg.7.14 -heals-> moha",
+     "why": [
+      "the confusion is named as truly hard to get through, and a way through is given",
+      "effort alone was never expected to be enough"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.53",
+      "rcm.1.3.chaupai.4",
+      "up_chhandogya.515"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ram Gita 37 (Adhyatma Ramayana, Uttara Kanda 5)) was about cannot see clearly; today gives ground to stand on.",
+      "link": [
+       "state",
+       "moha"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "for_you": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:not_second_person",
+      "scene_line:not_second_person",
+      "audio_close:pathologises_a_light_state(alone)",
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday, confusion was named as a snake seen in a rope."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.35.51",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 35.51",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न देवा यष्टिमादाय रक्षन्ति पशुपालवत् / यं तु रक्षितुमिच्छन्ति बुद्ध्या संयोजयन्ति तम्",
+     "line": "The gods don't stand guard with a stick; whom they protect, they give clear judgement.",
+     "translation": "The gods do not guard a person with a stick in hand, the way a herdsman guards cattle. Whomever they wish to protect, they endow with good judgement.",
+     "words": [],
+     "why": "Character shows under pressure. Do by day what will let you sleep at night.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.35",
+      "title": "Vidura Niti: Keshini's choice and the tests of character",
+      "summary": "Vidura tells how Prahlada judged honestly against his own son when Princess Keshini set two suitors a test, then gives aphorisms: gold is tested by fire, friends by hard times, and a clear conscience lets you sleep.",
+      "story_hook": "",
+      "lesson": "Character shows under pressure. Do by day what will let you sleep at night."
+     },
+     "score": 4.048,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small moment of clear judgement in your day, without forcing it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.5.35.51",
+     "path": "mbh.5.35.51 -heals-> samshaya",
+     "why": [
+      "Answers 'why does no one protect me' by pointing to the judgement one has been given",
+      "Help arrives as clarity"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.509",
+      "rcm.7.68.chaupai.6",
+      "bg.5.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 7.14) was about doubt; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(not guard with a stick, but)",
+      "scene_line:invented_life_detail(sleepless)",
+      "scene_line:pathologises_a_light_state(grief)",
+      "for_you:contrast_pattern(is not somewhere else, but his gift to you is the sound",
+      "scene_line:cliche(sit with the)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.18",
+     "ref": "Isha Upanishad 18",
+     "ref_iast": "Īśa Upaniṣad 18",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Agni",
+     "setting": "Closing prayer of the Isha.",
+     "sanskrit": "अग्ने नय सुपथा राये अस्मान् विश्वानि देव वयुनानि विद्वान् । युयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नमौक्तिं विधेम ॥",
+     "line": "Lead us by the good path. Keep crooked dealing far from us.",
+     "translation": "O Agni, lead us by the good path to true wealth, O god who knows all our ways. Keep crooked wrongdoing away from us. We offer you our fullest words of reverence.",
+     "words": [
+      {
+       "sa": "agne",
+       "en": "O fire/light"
+      },
+      {
+       "sa": "naya",
+       "en": "lead"
+      },
+      {
+       "sa": "supatha",
+       "en": "by the auspicious path"
+      },
+      {
+       "sa": "raye",
+       "en": "to richness/truth"
+      },
+      {
+       "sa": "asman",
+       "en": "us"
+      },
+      {
+       "sa": "visvani",
+       "en": "all"
+      },
+      {
+       "sa": "deva",
+       "en": "O radiant one"
+      },
+      {
+       "sa": "vayanani",
+       "en": "deeds/acts"
+      },
+      {
+       "sa": "vidvan",
+       "en": "knowing"
+      },
+      {
+       "sa": "yuyodhi",
+       "en": "remove"
+      },
+      {
+       "sa": "asmat",
+       "en": "from us"
+      },
+      {
+       "sa": "juhuranam",
+       "en": "the crooked/false"
+      },
+      {
+       "sa": "enah",
+       "en": "wrongness"
+      },
+      {
+       "sa": "bhuyistham",
+       "en": "the deepest"
+      },
+      {
+       "sa": "te",
+       "en": "to you"
+      },
+      {
+       "sa": "nama-uktim",
+       "en": "words of reverence"
+      },
+      {
+       "sa": "vidhema",
+       "en": "we offer"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.564,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_isha.18",
+     "path": "up_isha.18 -cultivates-> shraddha",
+     "why": [
+      "trust that there is a good path"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.9.27",
+      "rcm.7.61.chaupai.2",
+      "bg.4.34"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Udyoga Parva · Vidura Niti) was about doubt; today brings one practice for it.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {},
+     "personal_issues": [
+      "fit_guard:verse_assumes_guilt_they_did_not_name"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.63",
+     "ref": "Bhagavad Gita 18.63",
+     "ref_iast": "Bhagavad Gītā 18.63",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna's final counsel: act with devotion, reflect, choose, and take refuge.",
+     "sanskrit": "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया । विमृश्यैतदशेषेण यथेच्छसि तथा कुरु ॥",
+     "line": "I've told you all I know. Reflect on it fully, then do as you choose.",
+     "translation": "Thus I have declared to you this knowledge, more secret than all secrets. Reflect on it fully, and then do as you wish.",
+     "words": [
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "ते",
+       "en": "to you"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "wisdom"
+      },
+      {
+       "sa": "आख्यातम्",
+       "en": "has been explained"
+      },
+      {
+       "sa": "गुह्यात्",
+       "en": "than the secret"
+      },
+      {
+       "sa": "गुह्यतरम्",
+       "en": "more secret"
+      },
+      {
+       "sa": "मया",
+       "en": "by me"
+      },
+      {
+       "sa": "विमृश्य",
+       "en": "having reflected upon"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "अशेषेण",
+       "en": "completely"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "इच्छसि",
+       "en": "you wish"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      }
+     ],
+     "why": "Reflect fully, choose freely, and set down the fear.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.6",
+      "title": "Action with devotion: surrender",
+      "summary": "Krishna urges Arjuna to offer all action, warns that ego will only trip him, tells him to reflect fully and then choose, and finally to take refuge in him alone and not grieve.",
+      "story_hook": "",
+      "lesson": "Reflect fully, choose freely, and set down the fear."
+     },
+     "score": 3.16,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday was about keeping crooked paths far. Now the teaching asks you to reflect on all of it fully, then choose.",
+     "try_today": "Notice one thought and let it rest before you act on it.",
+     "scene_line": "You stand at a crossroads, and Krishna offers the most hidden knowledge to reflect on fully.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bg.18.63",
+     "path": "bg.18.63 -cultivates-> viveka",
+     "why": [
+      "full reflection before acting is the instruction",
+      "Reflect fully, then decide and begin."
+     ],
+     "writer_note": null,
+     "alts": [
+      "shambhu_gita.7.53",
+      "rcm.1.76.chaupai.3",
+      "rcm.4.30.chaupai.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Isha Upanishad 18) was about doubt; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday was about keeping crooked paths far."
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [],
+     "anchor": null,
+     "score": 5.72,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": "Yesterday was about choosing after reflection. Today, knowledge and action are two wings; neither alone carries you.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.yv.karunya_stops_acting",
+     "path": "st.yv.karunya_stops_acting -enacts_in-> moha, samshaya ; st.yv.karunya_stops_acting -enacts_turn-> sankalpa, viveka",
+     "why": [
+      "Knowledge and action are two wings; neither alone carries you."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.garuda_doubts_after_rescue",
+      "st.bg.arjuna_mixed_messages",
+      "st.mbh.yudhishthira_dharma_not_a_trade"
+     ],
+     "thin": false,
+     "story_id": "st.yv.karunya_stops_acting",
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.63) was about doubt; today someone in the texts lives it.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(alone)",
+      "scene_line:not_second_person",
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday was about choosing after reflection."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Feeling alone",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 72,
+   "v3_w1_write": 3953,
+   "v3_w1_calls": 2,
+   "v3_w1_total": 4026,
+   "select": 4026,
+   "total": 4028
+  },
+  "_ms": 4118,
+  "_day_ms": [
+   59,
+   2838,
+   4512,
+   60,
+   2081,
+   4069
+  ],
+  "_day_calls": [
+   0,
+   2,
+   2,
+   0,
+   1,
+   2
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I want to reconnect with my roots\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w2:written_at_plan:day1_only",
+    "v3:day:2:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:3:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:no",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "seeking",
+    "states": [
+     "shoka",
+     "jijnasa",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.39",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.2",
+     "ref": "Bhagavad Gita 3.2",
+     "ref_iast": "Bhagavad Gītā 3.2",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे । तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ॥",
+     "line": "Your advice sounds mixed and confuses me. Tell me the one thing I should do.",
+     "translation": "With these seemingly mixed words you confuse my mind. Tell me decisively that one thing by which I may reach the highest good.",
+     "words": [
+      {
+       "sa": "व्यामिश्रेण",
+       "en": "mixed"
+      },
+      {
+       "sa": "इव",
+       "en": "as if"
+      },
+      {
+       "sa": "वाक्येन",
+       "en": "by words"
+      },
+      {
+       "sa": "बुद्धिम्",
+       "en": "understanding"
+      },
+      {
+       "sa": "मोहयसि",
+       "en": "you confuse"
+      },
+      {
+       "sa": "इव",
+       "en": "as if"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "एकम्",
+       "en": "one"
+      },
+      {
+       "sa": "वद",
+       "en": "speak"
+      },
+      {
+       "sa": "निश्िचत्य",
+       "en": "after deciding"
+      },
+      {
+       "sa": "येन",
+       "en": "by which"
+      },
+      {
+       "sa": "श्रेयः",
+       "en": "highest good"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "आप्नुयाम्",
+       "en": "may attain"
+      }
+     ],
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 8.89,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking for one clear thing after losing your father. You feel caught between thinking your way through this and acting your way through it. The highest good is found in doing what is in front of you right now.",
+     "try_today": "Do only what is right in front of you today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.3.2",
+     "path": "bg.3.2 -depicts-> moha (spoken by Arjuna)",
+     "why": [
+      "'you are confusing my understanding'",
+      "Your advice sounds contradictory. Should I think my way out or act my way out?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vishnu_gita.1.60",
+      "bg.2.7",
+      "rcm.1.141.chaupai.3"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:pathologises_a_light_state(grief)"
+     ]
+    }
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.7.27",
+     "ref": "Bhagavad Gita 7.27",
+     "ref_iast": "Bhagavad Gītā 7.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on those who miss him and those who know him.",
+     "sanskrit": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत । सर्वभूतानि संमोहं सर्गे यान्ति परन्तप ॥",
+     "line": "From the pull of want and push of dislike comes the confusion that traps every being.",
+     "translation": "Through the delusion of the pairs of opposites, arising from desire and aversion, Bharata, all beings fall into confusion at birth, scorcher of enemies.",
+     "words": [
+      {
+       "sa": "इच्छा",
+       "en": "desire"
+      },
+      {
+       "sa": "द्वेष",
+       "en": "aversion"
+      },
+      {
+       "sa": "समुत्थेन",
+       "en": "arising"
+      },
+      {
+       "sa": "द्वन्द्व",
+       "en": "conflict"
+      },
+      {
+       "sa": "मोहेन",
+       "en": "confusion"
+      },
+      {
+       "sa": "भारत",
+       "en": "O Bharata"
+      },
+      {
+       "sa": "सर्व",
+       "en": "all"
+      },
+      {
+       "sa": "भूतानि",
+       "en": "beings"
+      },
+      {
+       "sa": "संमोहं",
+       "en": "into delusion"
+      },
+      {
+       "sa": "सर्गे",
+       "en": "in creation"
+      },
+      {
+       "sa": "यान्ति",
+       "en": "go"
+      },
+      {
+       "sa": "परन्तप",
+       "en": "O scorcher of foes"
+      }
+     ],
+     "why": "Pull and push of like and dislike are what confuse us.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p07.5",
+      "title": "Those who miss the Lord and those who know him",
+      "summary": "The deluded see only the outer form; desire and aversion confuse all beings. Those freed from confusion come to know the divine fully.",
+      "story_hook": "",
+      "lesson": "Pull and push of like and dislike are what confuse us."
+     },
+     "score": 8.065,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday we named the confusion. Today we look at where it comes from, the pull of want and the push of dislike that traps every being. You are caught between wanting to see him again and not wanting the pain of missing him. This is the trap.",
+     "try_today": "Notice one desire and one aversion that arose today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.7.27",
+     "path": "bg.7.27 -states_chain-> bg.dvandva_moha [kama -causes-> moha; dvesha -causes-> moha]",
+     "why": [
+      "The confusion of opposites (Bhagavad Gita 7.27)",
+      "confusion is the common starting condition, produced by liking and disliking"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.72.chaupai.2",
+      "rcm.5.38.chaupai.3",
+      "bg.4.17"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 3.2) was about cannot see clearly; today asks where it comes from.",
+      "link": [
+       "state",
+       "moha"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:pathologises_a_light_state(grief)"
+     ],
+     "bridge": "Yesterday we named the confusion."
+    }
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.53",
+     "ref": "Bhagavad Gita 2.53",
+     "ref_iast": "Bhagavad Gītā 2.53",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला । समाधावचला बुद्धिस्तदा योगमवाप्स्यसि ॥",
+     "line": "Pulled by conflicting advice, the mind wobbles. When it settles and stays still, you've arrived.",
+     "translation": "When your understanding, now confused by conflicting things you have heard, stands firm and unmoving in deep stillness, then you will attain yoga.",
+     "words": [
+      {
+       "sa": "श्रुतिविप्रतिपन्ना",
+       "en": "confused by scriptures"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "यदा",
+       "en": "when"
+      },
+      {
+       "sa": "स्थास्यति",
+       "en": "stands"
+      },
+      {
+       "sa": "निश्चला",
+       "en": "unshaken"
+      },
+      {
+       "sa": "समाधावचला",
+       "en": "steady in absorbed presence"
+      },
+      {
+       "sa": "बुद्धि",
+       "en": "mind"
+      },
+      {
+       "sa": "तदा",
+       "en": "then"
+      },
+      {
+       "sa": "योगम्",
+       "en": "yoga"
+      },
+      {
+       "sa": "अवाप्स्यसि",
+       "en": "you will attain"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 5.48,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today we look at where it comes from. When the mind wobbles, you do not need to fix it. You only need to let the understanding stand still.",
+     "try_today": "Notice the conflicting thoughts and let the mind rest in stillness without choosing one.",
+     "scene_line": "You stand in stillness while the mind wobbles, and the understanding settles.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.2.53",
+     "path": "bg.2.53 -heals-> moha",
+     "why": [
+      "confusion from conflicting voices is expected, and it can settle",
+      "the wobbling ends when the understanding settles in stillness"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.3.chaupai.4",
+      "viv.1.streams_to_sea",
+      "bg.9.22"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 7.27) was about cannot see clearly; today gives ground to stand on.",
+      "link": [
+       "state",
+       "moha"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.68.chaupai.6",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 68",
+     "family": "rcm",
+     "speaker": "Garuda",
+     "listener": "Kakbhushundi",
+     "setting": "Garuda, his doubt resolved, thanks Kakbhushundi.",
+     "sanskrit": "जो अति आतप ब्याकुल होई। तरु छाया सुख जानइ सोई॥ जौं नहिं होत मोह अति मोही। मिलतेउँ तात कवन बिधि तोही ॥",
+     "line": "Only the one scorched by the sun knows the shade. Without my doubt, I'd never have found you.",
+     "translation": "Only one scorched by the sun knows the comfort of a tree's shade. Friend, had I not been so deeply confused, how would I ever have met you?",
+     "words": [],
+     "why": "Doubt is human; stay long enough in good company and it can lead somewhere better.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.garuda_doubt",
+      "title": "Garuda's doubt",
+      "summary": "Garuda, Vishnu's own mount, frees Ram from a serpent-noose in battle and starts to doubt: how can God be bound? He goes to Narada, Brahma and Shiva, who sends him to an old crow, Kakbhushundi, saying doubts clear only with long time in good company. Kakbhushundi tells him no one has escaped delusion, desire, craving or anger; Garuda ends up grateful for the doubt that led him there.",
+      "story_hook": "The great eagle Garuda flew to a crow to ask a question.",
+      "lesson": "Doubt is human; stay long enough in good company and it can lead somewhere better."
+     },
+     "score": 7.07,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today you see that your confusion led you here. The question about your father is the heat that brought you to this shade.",
+     "try_today": "Notice one moment of heat today, and rest in the shade beside it.",
+     "scene_line": "You stand under a tree, feeling the sun, while Kakbhushundi waits in the cool.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "rcm.7.68.chaupai.6",
+     "path": "kept from the plan the app holds",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.68.chaupai.6",
+      "up_chhandogya.509",
+      "viv.1.truth_to_truth"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 2.53) was about doubt; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.58",
+     "ref": "Ram Gita 58 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 58",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "यावन्न पश्येदखिलं मदात्मकं तावन्मदाराधनतत्परो भवेत् । श्रद्धालुरत्यूर्जितभक्तिलक्षणो यस्तस्य दृश्योऽहमहर्निशं हृदि ॥",
+     "line": "Until you see the divine everywhere, keep praying with faith; it will live in your heart day and night.",
+     "translation": "Until one sees everything as Me, one should be devoted to worshipping Me. To the person of faith and strong devotion, I am visible in the heart day and night.",
+     "words": [
+      {
+       "sa": "यावत्",
+       "en": "as long as"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "पश्येत",
+       "en": "sees"
+      },
+      {
+       "sa": "अखिलं",
+       "en": "everything"
+      },
+      {
+       "sa": "मदात्मकं",
+       "en": "my-self-like"
+      },
+      {
+       "sa": "तावत्",
+       "en": "that much"
+      },
+      {
+       "sa": "मदाराधनतत्परो",
+       "en": "constantly devoted worshipper"
+      },
+      {
+       "sa": "भवेत्",
+       "en": "becomes"
+      },
+      {
+       "sa": "श्रद्धालु",
+       "en": "devoted"
+      },
+      {
+       "sa": "रत्यूः",
+       "en": "intense"
+      },
+      {
+       "sa": "जितभक्तिलक्षणः",
+       "en": "sign of conquered devotion"
+      },
+      {
+       "sa": "यः",
+       "en": "who"
+      },
+      {
+       "sa": "तस्य",
+       "en": "his"
+      },
+      {
+       "sa": "दृश्यः",
+       "en": "vision"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "हरि-निशं",
+       "en": "day and night"
+      },
+      {
+       "sa": "हृदि",
+       "en": "in the heart"
+      }
+     ],
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 2.314,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Give yourself to worshipping the divine in everything today.",
+     "scene_line": "You stand in the quiet of your home, and the heart keeps its own light.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "ram_gita.58",
+     "path": "kept from the plan the app holds",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "ram_gita.58",
+      "yv.2.11.58",
+      "mbh.13.175.8"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Uttar Kand) was about doubt; today brings one practice for it.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(doubt)",
+      "scene_line:not_second_person",
+      "for_you:pathologises_a_light_state(doubt)"
+     ]
+    }
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.1.76.chaupai.3",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 76",
+     "family": "rcm",
+     "speaker": "Parvati",
+     "listener": "the seven sages",
+     "setting": "Parvati answers the sages who mock her resolve to win Shiva through years of austerity.",
+     "sanskrit": "सत्य कहेहु गिरिभव तनु एहा। हठ न छूट छूटै बरु देहा॥ कनकउ पुनि पषान तें होई। जारेहुँ सहजु न परिहर सोई ॥",
+     "line": "Gold comes from stone, and even in fire it stays gold. Hold to what you are.",
+     "translation": "You speak truly: this body was born of a mountain, so its resolve will not break, even if the body does. Gold too is born of stone, and even in fire it does not give up its nature.",
+     "words": [
+      {
+       "sa": "सत्य",
+       "en": "truth"
+      },
+      {
+       "sa": "कहेहु",
+       "en": "you said"
+      },
+      {
+       "sa": "गिरिभव",
+       "en": "mountain-born"
+      },
+      {
+       "sa": "तनु",
+       "en": "body"
+      },
+      {
+       "sa": "एहा",
+       "en": "this"
+      },
+      {
+       "sa": "हठ",
+       "en": "stubbornness"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "छूट",
+       "en": "leaves"
+      },
+      {
+       "sa": "छूटै",
+       "en": "will leave"
+      },
+      {
+       "sa": "बरु",
+       "en": "rather"
+      },
+      {
+       "sa": "देहा",
+       "en": "body"
+      },
+      {
+       "sa": "कनकउ",
+       "en": "gold"
+      },
+      {
+       "sa": "पुनि",
+       "en": "again"
+      },
+      {
+       "sa": "पषान",
+       "en": "stone"
+      },
+      {
+       "sa": "तें",
+       "en": "from"
+      },
+      {
+       "sa": "होई",
+       "en": "comes"
+      },
+      {
+       "sa": "जारेहुँ",
+       "en": "even when burned"
+      },
+      {
+       "sa": "सहजु",
+       "en": "naturally"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "परिहर",
+       "en": "forsake"
+      },
+      {
+       "sa": "सोई",
+       "en": "that"
+      }
+     ],
+     "why": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+     "misuse": "Steadiness is not stubbornness; keep checking that the goal is still worth it.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.parvati_tapas",
+      "title": "Parvati holds to her choice",
+      "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+      "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+      "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish."
+     },
+     "score": 2.35,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday spoke of faith in the heart. Today the sages ask what remains when the body fails. Gold is born of stone and keeps its nature in fire. Your resolve is the gold; it will not break even if your body does.",
+     "try_today": "Notice the one thing your heart has chosen and let it hold steady today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.1.76.chaupai.3",
+     "path": "rcm.1.76.chaupai.3 -cultivates-> sankalpa",
+     "why": [
+      "a resolve that does not bargain when tested"
+     ],
+     "writer_note": null,
+     "alts": [
+      "shambhu_gita.7.53",
+      "mbh.3.133.13",
+      "rcm.4.30.chaupai.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ram Gita 58 (Adhyatma Ramayana, Uttara Kanda 5)) was about doubt; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:cliche(sit with the)"
+     ],
+     "bridge": "Yesterday spoke of faith in the heart."
+    }
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.uddalaka_lessons",
+     "title": "Uddalaka's lessons: tat tvam asi",
+     "kind": "teaching",
+     "family": "up",
+     "characters": [
+      "Uddalaka Aruni",
+      "Shvetaketu"
+     ],
+     "story_hook": "",
+     "summary": "Uddalaka teaches his son through everyday experiments: a fast that dims the mind, a bird on a string, rivers merging in the sea, a banyan seed with nothing visible inside, salt dissolved in water, a blindfolded man finding his way home. Each lesson ends: 'That subtle essence is the self of all. You are that, Shvetaketu.'",
+     "lesson": "What is most real in you is unseen, everywhere, and the same in all.",
+     "matched": [],
+     "anchor": null,
+     "score": 6.008,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Uddalaka's lessons: tat tvam asi",
+     "for_you": "Yesterday asked you to hold to what you are, like gold in fire. Today a man is untied and told which way to walk, and he walks.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.up.man_from_gandhara",
+     "path": "st.up.man_from_gandhara -enacts_in-> bhaya, moha ; st.up.man_from_gandhara -enacts_turn-> sankalpa, shraddha, viveka",
+     "why": [
+      "Lost is not the same as hopeless; one true direction plus your own steps gets you home."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.up.convocation_parting_words",
+      "st.rcm.garuda_doubts_after_rescue",
+      "st.bg.arjuna_mixed_messages"
+     ],
+     "thin": false,
+     "story_id": "st.up.man_from_gandhara",
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Bal Kand) pointed toward resolve; today someone in the texts lives it.",
+      "link": [
+       "toward",
+       "sankalpa"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(away,find,pull,single)",
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday asked you to hold to what you are, like gold in fire."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "Why you feel apart",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w2_graph": 89,
+   "v3_w2_write": 2195,
+   "v3_w2_calls": 1,
+   "v3_w2_total": 2287,
+   "select": 2288,
+   "total": 2663
+  },
+  "_ms": 2677,
+  "_day_ms": [
+   2916,
+   5690,
+   3881,
+   4082,
+   2363,
+   3986
+  ],
+  "_day_calls": [
+   1,
+   3,
+   2,
+   2,
+   1,
+   2
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I want to reconnect with my roots\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w3:written_at_plan:day1_only",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:no",
+    "v3:day:4:for_you:no",
+    "v3:day:5:for_you:yes",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:no"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "seeking",
+    "states": [
+     "shoka",
+     "jijnasa",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.39",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.76",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 76",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Weighing the Lasting and the Passing': not knowing how to spend a short life.",
+     "sanskrit": "तपस्यन्तः सन्तः किमधिनिवसामः सुरनदीं गुणोदारान्दारानुत परिचरामः सविनयम् । पिबामः शास्त्रौघानुत विविधकाव्यामृतरसान् न विद्मः किं कुर्मः कतिपयनिमेषायुषि जने ॥",
+     "line": "Retreat, family, study or art? We cannot choose, and a life lasts only a few blinks.",
+     "translation": "Shall we live as ascetics beside the heavenly river? Or courteously serve our wives, generous in virtue? Or drink the floods of scripture, or the nectar of many kinds of poetry? We do not know what to do, in a human life that lasts a few blinks.",
+     "words": [],
+     "why": "Do what matters most while you still can.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.nitya",
+      "title": "Vairagyashatakam: Weighing the lasting and the passing",
+      "summary": "Weighing what lasts: religion without inner peace is trading; old age can bring neglect; act while healthy, not when the house is on fire. The poet admits not knowing how to spend a short life.",
+      "story_hook": "",
+      "lesson": "Do what matters most while you still can."
+     },
+     "score": 3.57,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are standing at a crossroads after a great loss, asking what comes next. The poem admits it does not know which path is right, only that the time is short.",
+     "try_today": "Notice one small thing that brings you quiet presence today.",
+     "scene_line": "You stand at the edge of many good paths, unsure which one to take.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.76",
+     "path": "bh.vairagya.76 -depicts-> samshaya (spoken by Bhartrihari)",
+     "why": [
+      "Unable to choose among good lives"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.141.chaupai.3",
+      "vishnu_gita.1.60",
+      "ram_gita.5"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_brihadaranyak.477",
+     "ref": "Brihadaranyaka Upanishad 4.4.5",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 4.4.5",
+     "family": "up",
+     "speaker": "Yajnavalkya",
+     "listener": "King Janaka",
+     "setting": "Yajnavalkya on how a person becomes what they are.",
+     "sanskrit": "अथो खल्वाहुः काममय एवायं पुरुष इति स यथाकामो भवति तत्क्रतुर्भवति यत्क्रतुर्भवति तत्कर्म कुरुते यत्कर्म कुरुते तदभिसम्पद्यते ॥",
+     "line": "As your desire, so your will; as your will, so your deeds; as your deeds, so you become.",
+     "translation": "And so they say: a person is made of desire. As his desire is, so is his will; as his will is, so is his deed; and whatever deed he does, that he becomes.",
+     "words": [],
+     "why": "You become what you desire and do; know what matters while you are here.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.brihad.desire",
+      "title": "Yajnavalkya on desire and death",
+      "summary": "Yajnavalkya explains what happens at death with images of a caterpillar and a goldsmith. A person becomes what they desire, will and do; one who knows the self has nothing left to fret about. Know it while you are here, he says, don't brood over many words, and live calm and collected.",
+      "story_hook": "",
+      "lesson": "You become what you desire and do; know what matters while you are here."
+     },
+     "score": 3.365,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your want shapes your resolve, your resolve shapes your act, and your act shapes what you become. Let your wanting now be to understand.",
+     "try_today": null,
+     "scene_line": "Yajnavalkya speaks to King Janaka that a person is made of desire, and you sit with your own wanting to understand what comes after.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "up_brihadaranyak.477",
+     "path": "up_brihadaranyak.477 -states_chain-> brihad.desire_becomes [kama -causes-> sankalpa]",
+     "why": [
+      "As your desire, so you become (Brihadaranyaka Upanishad 4.4.5)",
+      "shows where a want leads, step by step, before it has become a life"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.3.38",
+      "up_maitrayani.86",
+      "rcm.7.72.chaupai.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Vairagya Shatakam) named torn between duties, and today's verse grows resolve; today asks where it comes from.",
+      "link": [
+       "antidote",
+       "dharma_sankata>sankalpa"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "practice:intensifier(quietly)",
+      "practice:untraced_sentence(beneat,choice,shape,wish)"
+     ]
+    }
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.41",
+     "ref": "Bhagavad Gita 4.41",
+     "ref_iast": "Bhagavad Gītā 4.41",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "योगसंन्यस्तकर्माणं ज्ञानसंछिन्नसंशयम् । आत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय ॥",
+     "line": "Doubts cut away by understanding, steady within, your actions stop binding you.",
+     "translation": "Actions do not bind one who has renounced action through yoga, whose doubts are cut away by knowledge, and who is self-possessed, Dhananjaya.",
+     "words": [
+      {
+       "sa": "योगसंन्यस्तकर्माणं",
+       "en": "yoga-renounced-actions"
+      },
+      {
+       "sa": "ज्ञानसंछिन्नसंशयम्",
+       "en": "knowledge-destroyed-doubts"
+      },
+      {
+       "sa": "आत्मवन्तं",
+       "en": "true-self-possessing"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "निबध्नन्ति",
+       "en": "bind"
+      },
+      {
+       "sa": "धनञ्जय",
+       "en": "O Dhananjaya"
+      }
+     ],
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 5.888,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one question that arises today and let it rest without an answer.",
+     "scene_line": "You stand in the quiet space where Krishna and Arjuna once stood.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.4.41",
+     "path": "bg.4.41 -heals-> samshaya via c:jnana",
+     "why": [
+      "Cut the doubt with understanding, then stand up.",
+      "doubt is cut by knowledge"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_mundaka.2.2.8",
+      "bg.2.52",
+      "up_kath.2.3.15"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Brihadaranyaka Upanishad 4.4.5) named craving, and today's verse grows knowing the self; today gives ground to stand on.",
+      "link": [
+       "antidote",
+       "kama>atma_jnana"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:short(11)",
+      "for_you:pathologises_a_light_state(doubt)",
+      "audio_close:pathologises_a_light_state(doubt)",
+      "for_you:pathologises_a_light_state(doubt)",
+      "audio_close:pathologises_a_light_state(doubt)"
+     ]
+    }
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.30",
+     "ref": "Bhagavad Gita 18.30",
+     "ref_iast": "Bhagavad Gītā 18.30",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna sorts knowledge, action, doers, judgement, resolve and happiness by the three qualities.",
+     "sanskrit": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये । बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥",
+     "line": "Clear judgement knows when to act and when to wait, what to fear, and what frees you.",
+     "translation": "The understanding that knows action and withdrawal, what should and should not be done, what is to be feared and what not, bondage and freedom, that understanding is sattvic, Partha.",
+     "words": [
+      {
+       "sa": "प्रवृत्तिं",
+       "en": "activity"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "निवृत्तिं",
+       "en": "inactivity"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कार्याकार्ये",
+       "en": "in what should be done and not done"
+      },
+      {
+       "sa": "भयाभये",
+       "en": "fear and fearlessness"
+      },
+      {
+       "sa": "बन्धं",
+       "en": "bondage"
+      },
+      {
+       "sa": "मोक्षं",
+       "en": "freedom"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "या",
+       "en": "which"
+      },
+      {
+       "sa": "वेत्ति",
+       "en": "knows"
+      },
+      {
+       "sa": "बुद्धिः",
+       "en": "intellect"
+      },
+      {
+       "sa": "सा",
+       "en": "that"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O son of Pritha"
+      },
+      {
+       "sa": "सात्त्विकी",
+       "en": "is of purity"
+      }
+     ],
+     "why": "Choose the joy that's hard at first and sweet later.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.3",
+      "title": "Knowledge, action, doer, intellect, resolve and happiness by the three gunas",
+      "summary": "Krishna describes clear, restless and dull versions of action, doer, judgement, resolve and happiness: the best joy is poison first and nectar later; the restless kind is nectar first and poison later.",
+      "story_hook": "",
+      "lesson": "Choose the joy that's hard at first and sweet later."
+     },
+     "score": 5.58,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small moment today when waiting is wiser than acting.",
+     "scene_line": "Arjuna hears Krishna sort knowledge and action, and you hear it too.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.30",
+     "path": "bg.18.30 -heals-> moha via viveka",
+     "why": [
+      "Telling the good from the pleasant is the text's own opposite of confusion.",
+      "describes the clear judgement that can tell when to act and when to step back"
+     ],
+     "writer_note": null,
+     "alts": [
+      "ashtavakra.9.5",
+      "up_maitrayani.80",
+      "bg.3.42"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 4.41) was about doubt; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "samshaya"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(doubt)",
+      "scene_line:pathologises_a_light_state(grief)",
+      "for_you:pathologises_a_light_state(doubt)"
+     ]
+    }
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.7.61.chaupai.2",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 61",
+     "family": "rcm",
+     "speaker": "Shiva",
+     "listener": "Garuda",
+     "setting": "Shiva, met on the road by the doubt-ridden Garuda, sends him to good company instead of answering.",
+     "sanskrit": "मिलेहु गरुड़ मारग महँ मोही। कवन भाँति समुझावौं तोही॥ तबहिं होइ सब संसय भंगा। जब बहु काल करिअ सतसंगा ॥",
+     "line": "Doubts don't end in a passing conversation. They clear with long time in good company.",
+     "translation": "You met me on the road; how can I explain it to you in passing? All doubts end only when one spends a long time in good company.",
+     "words": [],
+     "why": "Doubt is human; stay long enough in good company and it can lead somewhere better.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.garuda_doubt",
+      "title": "Garuda's doubt",
+      "summary": "Garuda, Vishnu's own mount, frees Ram from a serpent-noose in battle and starts to doubt: how can God be bound? He goes to Narada, Brahma and Shiva, who sends him to an old crow, Kakbhushundi, saying doubts clear only with long time in good company. Kakbhushundi tells him no one has escaped delusion, desire, craving or anger; Garuda ends up grateful for the doubt that led him there.",
+      "story_hook": "The great eagle Garuda flew to a crow to ask a question.",
+      "lesson": "Doubt is human; stay long enough in good company and it can lead somewhere better."
+     },
+     "score": 2.264,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday we spoke of clear judgment. Today we see that a single talk does not end your doubts. You are not meant to find the answer in a passing moment. Let the question sit with you as you move through your day.",
+     "try_today": null,
+     "scene_line": "You stand in the road asking, and Shiva points you to the company of those who have walked further.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "rcm.7.61.chaupai.2",
+     "path": "rcm.7.61.chaupai.2 -cultivates-> shraddha",
+     "why": [
+      "trust grows by staying near those who have it"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.2.14.50",
+      "yv.2.11.58",
+      "mbh.13.175.8"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.30) was about cannot see clearly; today brings one practice for it.",
+      "link": [
+       "state",
+       "moha"
+      ]
+     },
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(doubt)",
+      "practice:imported_doctrine_or_technique(breathe)",
+      "practice:untraced_sentence(breath,easier,help,presen,whose)",
+      "audio_close:pathologises_a_light_state(Doubts)",
+      "practice:untraced_sentence(minut,questi,remain,unansw)",
+      "audio_close:pathologises_a_light_state(Doubt)"
+     ],
+     "bridge": "Yesterday we spoke of clear judgment."
+    }
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.79,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "A single talk does not end your doubts. Let these questions steady your mind today.",
+     "try_today": "Ask where you were, where you go, and who you are.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.12.27.40",
+     "path": "mbh.12.27.40 -cultivates-> viveka",
+     "why": [
+      "Meeting and parting come to all; the mind's pain is met with understanding.",
+      "Self-inquiry as a steadying practice"
+     ],
+     "writer_note": null,
+     "alts": [
+      "shambhu_gita.7.53",
+      "rcm.4.30.chaupai.2",
+      "mbh.3.133.13"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Uttar Kand) was about cannot see clearly; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "moha"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:pathologises_a_light_state(grief)"
+     ],
+     "bridge": "A single talk does not end your doubts."
+    }
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.garuda_doubt",
+     "title": "Garuda's doubt",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Garuda",
+      "Narada",
+      "Brahma",
+      "Shiva",
+      "Kakbhushundi"
+     ],
+     "story_hook": "The great eagle Garuda flew to a crow to ask a question.",
+     "summary": "Garuda, Vishnu's own mount, frees Ram from a serpent-noose in battle and starts to doubt: how can God be bound? He goes to Narada, Brahma and Shiva, who sends him to an old crow, Kakbhushundi, saying doubts clear only with long time in good company. Kakbhushundi tells him no one has escaped delusion, desire, craving or anger; Garuda ends up grateful for the doubt that led him there.",
+     "lesson": "Doubt is human; stay long enough in good company and it can lead somewhere better.",
+     "matched": [],
+     "anchor": null,
+     "score": 5.368,
+     "why": null,
+     "hook_title": "Garuda, the great eagle, had to ask an old crow about his doubt",
+     "teaser": "Garuda, the great eagle, had to ask an old crow about his doubt",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.rcm.garuda_doubts_after_rescue",
+     "path": "st.rcm.garuda_doubts_after_rescue -enacts_in-> moha, samshaya ; st.rcm.garuda_doubts_after_rescue -enacts_turn-> shraddha",
+     "why": [
+      "Doubt born of seeing the great appear small is cured by humble listening in good company, not by argument."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.up.maitreyi_you_have_confused_me",
+      "st.bg.arjuna_mixed_messages",
+      "st.up.convocation_parting_words"
+     ],
+     "thin": false,
+     "story_id": "st.rcm.garuda_doubts_after_rescue",
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira) was about cannot see clearly; today someone in the texts lives it.",
+      "link": [
+       "state",
+       "moha"
+      ]
+     },
+     "personal_source": {
+      "audio_open": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(doubt)",
+      "practice:untraced_sentence(fix,loss,surviv,trying)",
+      "scene_line:not_second_person",
+      "audio_close:pathologises_a_light_state(doubt)",
+      "for_you:not_second_person",
+      "for_you:pathologises_a_light_state(doubted)",
+      "scene_line:not_second_person",
+      "scene_line:pathologises_a_light_state(doubts)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "Never truly separate",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w3_graph": 149,
+   "v3_w3_write": 2073,
+   "v3_w3_calls": 1,
+   "v3_w3_total": 2224,
+   "select": 2224,
+   "total": 2225
+  },
+  "_ms": 2227,
+  "_day_ms": [
+   9963,
+   3724,
+   4168,
+   4986,
+   6162,
+   3520
+  ],
+  "_day_calls": [
+   4,
+   2,
+   2,
+   2,
+   3,
+   2
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true
+ }
+}

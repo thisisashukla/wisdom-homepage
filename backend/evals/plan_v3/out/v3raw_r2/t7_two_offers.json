@@ -1,0 +1,219 @@
+{
+ "case": "t7_two_offers",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I have to make a big decision. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but I'm scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.55,asp=0.25,wro=0.1,see=0.0",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "stuck",
+    "trail": [
+     "overthinking",
+     "stuck"
+    ],
+    "paused": "overthinking",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dharma_sankata",
+     "sankalpa"
+    ],
+    "risk": "none",
+    "situations": [
+     "big_decision",
+     "quit_or_stay",
+     "career_switch"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.5.13.17",
+    "first_line": "You are caught between two offers, feeling that choosing one means losing the other."
+   }
+  },
+  "hook": {
+   "id": "vr.5.13.17",
+   "ref": "Valmiki Ramayana, Sundara Kanda 13.17",
+   "ref_iast": "Vālmīki Rāmāyaṇa 5.13.17",
+   "family": "vr",
+   "speaker": "Hanuman",
+   "listener": "himself",
+   "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+   "sanskrit": null,
+   "line": "If I report it, I am wrong, and if I stay silent, I am wrong. I do not see what I should do.",
+   "translation": "If I report the situation, I will be blamed, and if I do not report it, I will be blamed. The right course of action is unclear to me.",
+   "words": [],
+   "why": "When you have looked everywhere, look again; giving up costs too much.",
+   "misuse": null,
+   "tone": null,
+   "matched": [],
+   "prasang": {
+    "id": "vr.p.search_despair",
+    "title": "Hanuman's search and near despair",
+    "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+    "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+    "lesson": "When you have looked everywhere, look again; giving up costs too much."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are caught between two offers, feeling that choosing one means losing the other.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are caught between two offers, feeling that choosing one means losing the other.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "yv.5.66.34",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+    "family": "yv",
+    "speaker": "Bhasa",
+    "listener": "Vilasa",
+    "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+    "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+    "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+    "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+    "words": [],
+    "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "overthinking",
+      "label": "I can't stop overthinking"
+     }
+    ],
+    "prasang": {
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 232,
+   "v3_candidates": 44,
+   "v3_fast_read": 1332,
+   "v3_select": 1612,
+   "v3_total": 1612,
+   "total": 1613
+  },
+  "_ms": 1619
+ }
+}

@@ -1,0 +1,1034 @@
+{
+ "case": "t6_promoted_past_mbas",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.14,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:model_pick",
+    "first_line:first_line,first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "not_promoted",
+     "imposter"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "yv.5.66.34"
+   }
+  },
+  "hook": {
+   "id": "yv.5.66.34",
+   "ref": "Yoga Vasishtha",
+   "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+   "family": "yv",
+   "speaker": "Bhasa",
+   "listener": "Vilasa",
+   "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+   "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+   "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+   "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+   "words": [],
+   "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing"
+    }
+   ],
+   "prasang": {
+    "id": "yv.p.bhasa_vilasa",
+    "title": "Two old friends meet again and admit they never found peace",
+    "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+    "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+    "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind won't settle while you are working, and a verse was chosen with that weight in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind won't settle while you are working, and a verse was chosen with that weight in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "rcm.2.225.chaupai.3",
+    "ref": "Ramcharitmanas, Ayodhya Kand 2.225 (chaupai 3)",
+    "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.225",
+    "family": "rcm",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "Bharat walks toward Ram, slowed by shame, quickened by love.",
+    "sanskrit": "फेरति मनहुँ मातु कृत खोरी। चलत भगति बल धीरज धोरी॥ जब समुझत रघुनाथ सुभाऊ। तब पथ परत उताइल पाऊ ॥",
+    "line": "Shame slowed him. But whenever he remembered Ram's nature, his feet moved faster.",
+    "translation": "It was as if his mother's wrong held him back, while the strength of devotion drove him on like a patient ox. Whenever he remembered Raghunath's nature, his feet moved faster on the path.",
+    "words": [
+     {
+      "sa": "फेरति",
+      "en": "turns back"
+     },
+     {
+      "sa": "मनहुँ",
+      "en": "as if"
+     },
+     {
+      "sa": "मातु",
+      "en": "mother"
+     },
+     {
+      "sa": "कृत",
+      "en": "done"
+     },
+     {
+      "sa": "खोरी",
+      "en": "wrong"
+     },
+     {
+      "sa": "चलत",
+      "en": "while moving"
+     },
+     {
+      "sa": "भगति",
+      "en": "devotion"
+     },
+     {
+      "sa": "बल",
+      "en": "strength"
+     },
+     {
+      "sa": "धीरज",
+      "en": "patience"
+     },
+     {
+      "sa": "धोरी",
+      "en": "bearer"
+     },
+     {
+      "sa": "जब",
+      "en": "when"
+     },
+     {
+      "sa": "रघुनाथ",
+      "en": "Raghunath"
+     },
+     {
+      "sa": "सुभाऊ",
+      "en": "nature"
+     },
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "पथ",
+      "en": "path"
+     },
+     {
+      "sa": "परत",
+      "en": "falling"
+     },
+     {
+      "sa": "उताइल",
+      "en": "quickened"
+     },
+     {
+      "sa": "पाऊ",
+      "en": "feet"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.5.6.chaupai.1",
+    "ref": "Ramcharitmanas · Sundar Kand",
+    "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+    "family": "rcm",
+    "speaker": "Vibhishan",
+    "listener": "Hanuman",
+    "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+    "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+    "line": "I live here like the tongue among the teeth.",
+    "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+    "words": [
+     {
+      "sa": "सुनहु",
+      "en": "listen"
+     },
+     {
+      "sa": "पवनसुत",
+      "en": "son of the wind"
+     },
+     {
+      "sa": "रहनि",
+      "en": "way of living"
+     },
+     {
+      "sa": "हमारी",
+      "en": "my"
+     },
+     {
+      "sa": "जिमि",
+      "en": "like"
+     },
+     {
+      "sa": "दसनन्हि",
+      "en": "teeth"
+     },
+     {
+      "sa": "महुँ",
+      "en": "within"
+     },
+     {
+      "sa": "जीभ",
+      "en": "tongue"
+     },
+     {
+      "sa": "बिचारी",
+      "en": "poor, helpless"
+     },
+     {
+      "sa": "तात",
+      "en": "friend"
+     },
+     {
+      "sa": "कबहुँ",
+      "en": "ever"
+     },
+     {
+      "sa": "मोहि",
+      "en": "me"
+     },
+     {
+      "sa": "जानि",
+      "en": "knowing"
+     },
+     {
+      "sa": "अनाथा",
+      "en": "helpless, without a protector"
+     },
+     {
+      "sa": "करिहहिं",
+      "en": "will do"
+     },
+     {
+      "sa": "कृपा",
+      "en": "grace"
+     },
+     {
+      "sa": "भानुकुल",
+      "en": "solar line"
+     },
+     {
+      "sa": "नाथा",
+      "en": "Lord"
+     }
+    ],
+    "why": "Even in a hostile place there may be one ally; find them.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "rcm.p.vibhishan_hanuman",
+     "title": "Hanuman finds a friend in Lanka",
+     "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+     "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+     "lesson": "Even in a hostile place there may be one ally; find them."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 230,
+   "v3_candidates": 44,
+   "v3_fast_read": 1681,
+   "v3_select": 1959,
+   "v3_first_line": 1390,
+   "v3_total": 3349,
+   "total": 3350
+  },
+  "_ms": 3356
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:4/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "not_promoted",
+     "imposter"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "yv.5.66.34",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "words": [],
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 8.205,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": "You stand before them, and the mind faints in its net of reckonings.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "yv.5.66.34",
+     "path": "Day 1 kept from the first screen (rcm.2.225.chaupai.3 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.6.chaupai.1",
+      "vr.5.13.20",
+      "bg.6.37"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.7.117.chaupai.17",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi continues listing the diseases of the mind.",
+     "sanskrit": "ममता दादु कंडु इरषाई। हरष बिषाद गरह बहुताई॥ पर सुख देखि जरनि सोइ छई। कुष्ट दुष्टता मन कुटिलई ॥",
+     "line": "Envy is an itch. Burning at another's happiness is a wasting disease of the mind.",
+     "translation": "Possessiveness is ringworm and envy is the itch; the swings of elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy.",
+     "words": [],
+     "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.garuda_questions",
+      "title": "Garuda's seven questions",
+      "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+      "story_hook": "",
+      "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+     },
+     "score": 5.885,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel sick before every presentation, as if they will find out you do not belong. This is the itch of envy, a disease of the mind that burns at another's happiness.",
+     "try_today": "Notice the sickness in your mind when you compare yourself to others.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "rcm.7.117.chaupai.17",
+     "path": "rcm.7.117.chaupai.17 -states_chain-> rcm.manas_rog [moha -causes-> matsarya; moha -causes-> trishna]",
+     "why": [
+      "The illnesses of the mind (Ramcharitmanas, Uttar Kand 121-122 (Gita Press))",
+      "burning at another's joy is named as an illness one suffers, which can be treated"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.1.17.14",
+      "yv.5.21.6",
+      "yv.5.11.6"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model"
+     }
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "words": [],
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 8.481,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice the moment your mind settles into what you already know.",
+     "scene_line": "You stand before a room of titles, holding a wealth no thief can see.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bh.niti.16",
+     "path": "bh.niti.16 -heals-> dainya",
+     "why": [
+      "A wealth the rich do not outrank",
+      "What one has learned cannot be taken"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.86",
+      "mbh.3.32.58",
+      "vr.4.66.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.49",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 49",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: on keeping your dignity before the rich.",
+     "sanskrit": "यद्धात्रा निजभालपट्टलिखितं स्तोकं महद्वा धनं तत् प्राप्नोति मरुस्थलेऽपि नितरां मेरौ ततो नाधिकम् । तद्धीरो भव वित्तवत्सु कृपणां वृत्तिं वृथा मा कृथाः कूपे पश्य पयोनिधावपि घटो गृह्णाति तुल्यं जलम् ॥",
+     "line": "A pot draws the same water from a well or the ocean. Keep your dignity before the rich.",
+     "translation": "Whatever wealth, small or great, the Creator has written on your forehead, you will get it even in a desert, and no more even on Mount Meru. So be steady; do not play the beggar before the rich for nothing. Look: a pot draws the same water from a well as from the ocean.",
+     "words": [],
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "Not a reason to stop working or asking for fair pay; a reason not to grovel.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 9.518,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The water in your pot is the same whether it comes from a well or the ocean. Your worth does not shrink because you did not come from a top school. Stand steady and do not let the fear of being found out steal your dignity.",
+     "try_today": "Notice one moment today when you choose steady dignity over the urge to shrink.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bh.niti.49",
+     "path": "bh.niti.49 -heals-> dainya",
+     "why": [
+      "No need to demean oneself before the rich",
+      "What is due will come"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.apple_standard",
+      "mbh.14.92.75",
+      "mbh.14.92.77"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.28",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.28",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage to the ruined prince Kshemadarshi, who keeps longing for what he lost.",
+     "sanskrit": "अवाप्यान्कामयन्नर्थान्नानवाप्यान्कदाचन / प्रत्युत्पन्नाननुभवन्मा शुचस्त्वमनागतान्",
+     "line": "Want what is within reach. Enjoy what is here now. Don't grieve over what hasn't happened.",
+     "translation": "Wish for what can be had, never for what cannot. Enjoy what is in front of you now, and do not grieve over what has not yet come.",
+     "words": [],
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.121,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one thing in front of you right now and let it be enough.",
+     "scene_line": "The prince sits in an empty hall, and you sit in a room that feels too full, both waiting for what is already here.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.12.104.28",
+     "path": "mbh.12.104.28 -cultivates-> santosha",
+     "why": [
+      "Enjoying what is present is named as the practice"
+     ],
+     "writer_note": "Letting-go teaching for a reader who is building something. Explain it through their own situation and feeling: what is released is the grip that hurts them, never their love, their hope or their work. Never say or imply 'stop caring' or 'your hope is the problem'. Read it after the guard verse, which reassures first.",
+     "alts": [
+      "viv.3.do_not_become_others",
+      "up_maha.532",
+      "viv.1.dont_think_result"
+     ],
+     "thin": false,
+     "guard": {
+      "id": "bh.niti.49",
+      "ref": "Bhartrihari · Niti Shatakam",
+      "line": "A pot draws the same water from a well or the ocean. Keep your dignity before the rich.",
+      "is_previous_day": true
+     },
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.1.53.9",
+     "ref": "Valmiki Ramayana · Bala Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 53.9",
+     "family": "vr",
+     "speaker": "Vasishtha",
+     "listener": "King Vishvamitra",
+     "setting": "A powerful king offers a fortune for the sage's cow, the source of his whole way of life.",
+     "sanskrit": "नाहं शतसहस्रेण नापि कोटिशतैर्गवाम्॥ राजन् दास्यामि शबलां राशिभी रजतस्य वा। न परित्यागमयं मत्सकाशादरिंदम ॥",
+     "line": "Not for any price. Some things are not for sale, however powerful the buyer.",
+     "translation": "Not for a hundred thousand cows, not for a billion, not for heaps of silver, O king, will I give up Shabala. She stays with me.",
+     "words": [
+      {
+       "sa": "नाहम्",
+       "en": "I will not"
+      },
+      {
+       "sa": "शतसहस्रेण",
+       "en": "by a hundred thousand"
+      },
+      {
+       "sa": "नापि",
+       "en": "nor even"
+      },
+      {
+       "sa": "कोटिशतैः",
+       "en": "by hundreds of crores"
+      },
+      {
+       "sa": "गवाम्",
+       "en": "of cows"
+      },
+      {
+       "sa": "राजन्",
+       "en": "O king"
+      },
+      {
+       "sa": "दास्यामि",
+       "en": "I will give"
+      },
+      {
+       "sa": "शबलाम्",
+       "en": "Sabala"
+      },
+      {
+       "sa": "राशिभिः",
+       "en": "by heaps"
+      },
+      {
+       "sa": "रजतस्य",
+       "en": "of silver"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "Envy and force cannot take what someone will not give; real power is built inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.vasishtha_cow",
+      "title": "The king who wanted the cow",
+      "summary": "King Vishvamitra is feasted by the sage Vasishtha and covets the wish-granting cow that made it possible. Vasishtha refuses every offer; the king takes her by force and is routed, then fails again with divine weapons. Humbled, he resolves to transform himself through inner discipline instead of force.",
+      "story_hook": "A king who had everything saw one thing he could not buy, and it undid him.",
+      "lesson": "Envy and force cannot take what someone will not give; real power is built inside."
+     },
+     "score": 4.032,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The promotion is a fortune you did not buy and cannot lose. Your place here is not a commodity traded for an MBA. You belong because you are here.",
+     "try_today": "Notice the feeling of sickness before the next presentation and let it be just a feeling.",
+     "scene_line": "You stand in your own space, while a king offers silver for a cow that sustains a life he cannot buy.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.1.53.9",
+     "path": "vr.1.53.9 -cultivates-> santosha",
+     "why": [
+      "what sustains his life is not for sale",
+      "a plain no to someone far more powerful"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.45.chaupai.3",
+      "bg.2.48",
+      "yv.2.16.8"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     }
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "viv.p.chicago.welcome",
+     "title": "'Sisters and Brothers of America': Chicago, 11 September 1893",
+     "kind": "story",
+     "family": "viv",
+     "characters": [
+      "Swami Vivekananda",
+      "Delegates and audience of the World's Parliament of Religions"
+     ],
+     "story_hook": "On 11 September 1893, a young Indian monk with no formal invitation stood up in Chicago and said five words that brought the hall to its feet.",
+     "summary": "An unknown 30-year-old monk from India, with no invitation and little money, rises on the Parliament's opening day and greets the hall as 'Sisters and Brothers of America'. The audience stands and applauds for minutes. In a five-minute address he says India's faith accepts all religions as true and hopes the day marks the death-knell of fanaticism.",
+     "lesson": "You can belong fully to your own tradition and still honour every other path.",
+     "matched": [],
+     "anchor": null,
+     "score": 10.672,
+     "why": null,
+     "hook_title": "Vivekananda had no invitation, and five words brought Chicago to its feet",
+     "teaser": "Vivekananda had no invitation, and five words brought Chicago to its feet",
+     "for_you": "The fear of not belonging is heavy, and it does not have to hold you back. You can step up while your mind is unsettled and your stomach is tight.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.viv.chicago_no_speech_prepared",
+     "path": "st.viv.chicago_no_speech_prepared -enacts_in-> bhaya, dainya ; st.viv.chicago_no_speech_prepared -enacts_turn-> abhaya, kritajnata, shraddha, tejas ; st.viv.chicago_no_speech_prepared -fits_situation-> imposter",
+     "why": [
+      "One can be unprepared and terrified and still step up, after a moment of surrender."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bh.ascetic_and_king",
+      "st.mbh.kashyapa_and_the_jackal",
+      "st.viv.lion_among_sheep"
+     ],
+     "thin": false,
+     "story_id": "st.viv.chicago_no_speech_prepared",
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Not feeling enough",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 32,
+   "v3_w1_write": 14613,
+   "v3_w1_total": 14646,
+   "select": 14647,
+   "total": 14648
+  },
+  "_ms": 14654
+ }
+}

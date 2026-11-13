@@ -1,0 +1,159 @@
+{
+ "case": "x_layoff_father",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Should I quit my job or stay",
+   "mirror": "Should I quit my job or stay",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Should I quit my job or stay. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"Should I quit my job or stay\" and \"I have to give someone bad news\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.03,wro=0.35,see=0.05",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "day1:no_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "wronged",
+    "states": [
+     "chinta",
+     "shoka",
+     "nirveda"
+    ],
+    "risk": "distress",
+    "situations": [
+     "quit_or_stay",
+     "hard_conversation",
+     "procrastination"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": null,
+    "first_line": "You still wake at six each morning, carrying a grief no kingdom could remove."
+   }
+  },
+  "hook": null,
+  "alternates": [],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 209,
+   "v3_candidates": 43,
+   "v3_fast_read": 1779,
+   "v3_select": 2034,
+   "v3_total": 2034,
+   "total": 2036
+  },
+  "_ms": 2041
+ }
+}

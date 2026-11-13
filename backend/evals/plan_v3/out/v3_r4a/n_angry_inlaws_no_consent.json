@@ -1,0 +1,837 @@
+{
+ "case": "n_angry_inlaws_no_consent",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "none",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels uneasy; closest to \"I feel anxious most of the time\" and \"I can't handle not knowing what comes next\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.1,wro=0.2,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:graph_pick",
+    "first_line:no_model"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "angry",
+    "trail": [
+     "angry"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "krodha",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": false,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "mbh.12.81.6"
+   }
+  },
+  "hook": {
+   "id": "mbh.12.81.6",
+   "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+   "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+   "family": "mbh",
+   "speaker": "Krishna (quoted by Bhishma)",
+   "listener": "Narada",
+   "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+   "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+   "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+   "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+   "words": [],
+   "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+   "misuse": "",
+   "tone": "comforting",
+   "matched": [],
+   "prasang": {
+    "id": "mbh.p.krishna_narada_kin",
+    "title": "Krishna's family troubles: the weapon not made of iron",
+    "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+    "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+    "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "The weight of the unfairness sits heavy while you work, and a verse was chosen with that in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "The weight of the unfairness sits heavy while you work, and a verse was chosen with that in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "vr.2.75.15",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+    "family": "vr",
+    "speaker": "Bharata",
+    "listener": "Kausalya",
+    "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+    "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+    "line": "Why blame me, who knew nothing? You know what I feel for him.",
+    "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+    "words": [],
+    "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "vr.2.19.6",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.6",
+    "family": "vr",
+    "speaker": "Ram",
+    "listener": "Kaikeyi",
+    "setting": "Ram has just accepted fourteen years of exile; one thing still hurts him.",
+    "sanskrit": "अलीकं मानसं त्वेकं हृदयं दहते मम। स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्॥",
+    "line": "What hurt most was not the news, but that he didn't tell me himself.",
+    "translation": "Only one sorrow burns my heart: that the king did not tell me himself about Bharata's coronation.",
+    "words": [],
+    "why": "You cannot control the news; you can control the person who walks out of the room.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_candidates": 0,
+   "v3_select": 0,
+   "v3_total": 0,
+   "total": 0
+  },
+  "_ms": 1
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "none",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels uneasy; closest to \"I feel anxious most of the time\" and \"I can't handle not knowing what comes next\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [],
+   "plan_v3": {
+    "v": 1,
+    "kept": "angry",
+    "trail": [
+     "angry"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "krodha",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": false,
+    "light": false,
+    "pick": "mbh.12.81.6",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.81.6",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+     "family": "mbh",
+     "speaker": "Krishna (quoted by Bhishma)",
+     "listener": "Narada",
+     "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+     "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+     "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+     "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+     "words": [],
+     "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.krishna_narada_kin",
+      "title": "Krishna's family troubles: the weapon not made of iron",
+      "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+      "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+      "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+     },
+     "score": 5.13,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "mbh.12.81.6",
+     "path": "mbh.12.81.6 -depicts-> manyu (spoken by Krishna (quoted by Bhishma))",
+     "why": [
+      "Krishna says plainly that his relatives' words burn him daily",
+      "My own relatives say bitter things and I'm stuck between people I love. What do I do?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.2.75.15",
+      "vr.2.19.6",
+      "bh.niti.58"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "viv.5.ridicule_opposition",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 5",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Letter from the USA, 9 July 1895, on opposition to his work in America.",
+     "sanskrit": null,
+     "line": "Each work has to pass through these stages — ridicule, opposition, and then acceptance.",
+     "translation": "Each work has to pass through these stages — ridicule, opposition, and then acceptance. Each man who thinks ahead of his time is sure to be misunderstood.",
+     "words": [],
+     "why": "Ridicule and opposition are stages, not verdicts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.letter.khetri_1895",
+      "title": "Ridicule, opposition, acceptance (letter to Khetri, 1895)",
+      "summary": "Facing opposition from some clergy in America, he writes to his friend the Maharaja that every work passes through ridicule, opposition and then acceptance. Anyone ahead of their time will be misunderstood, so he will stay steady.",
+      "story_hook": "",
+      "lesson": "Ridicule and opposition are stages, not verdicts."
+     },
+     "score": 2.431,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "viv.5.ridicule_opposition",
+     "path": "viv.5.ridicule_opposition -depicts-> manyu [label only: move normalizes]",
+     "why": [
+      "being mocked and opposed for one's work"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.6.12.chaupai.3",
+      "bg.2.63",
+      "vr.5.55.5"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "words": [],
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 6.08,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "up_brihadaranyak.86",
+     "path": "up_brihadaranyak.86 -heals-> manyu via tejas",
+     "why": [
+      "With what is right the weak can face the strong.",
+      "the wronged person is told their ground is the highest there is"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.17.15",
+      "hans_gita.11",
+      "up_mundaka.3.1.6"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "hans_gita.26",
+     "ref": "Hamsa Gita 26 (Mahabharata, Shanti 12.305.26 in our data)",
+     "ref_iast": "Haṃsa Gītā 26",
+     "family": "gitas",
+     "speaker": "Hamsa (the golden swan)",
+     "listener": "the Sadhyas",
+     "setting": "Bhishma tells Yudhishthira how a golden swan answered the Sadhyas' question about the best way to live.",
+     "sanskrit": "अमृतस्येव सन्तृप्येदवमानस्य वै द्विजः । सुखं ह्यवमतः शेते योऽवमन्ता स नश्यति ॥",
+     "line": "Insulted, you can still sleep in peace. The one who insults carries the damage.",
+     "translation": "The wise should feel as satisfied by an insult as by nectar. The one insulted sleeps in peace; the one who insults is ruined.",
+     "words": [
+      {
+       "sa": "अमृतस्येव",
+       "en": "like nectar"
+      },
+      {
+       "sa": "सन्तृप्येत",
+       "en": "becomes satisfied"
+      },
+      {
+       "sa": "अवमानस्य",
+       "en": "of insult"
+      },
+      {
+       "sa": "वै",
+       "en": "indeed"
+      },
+      {
+       "sa": "द्विजः",
+       "en": "the twice-born/wise"
+      },
+      {
+       "sa": "सुखं",
+       "en": "happily"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "अवमतः",
+       "en": "the insulted"
+      },
+      {
+       "sa": "शेते",
+       "en": "sleeps"
+      },
+      {
+       "sa": "यः",
+       "en": "who"
+      },
+      {
+       "sa": "अवमन्ता",
+       "en": "insults"
+      },
+      {
+       "sa": "स",
+       "en": "that"
+      },
+      {
+       "sa": "नश्यति",
+       "en": "perishes"
+      }
+     ],
+     "why": "When insulted, staying calm protects you more than hitting back.",
+     "misuse": "Not a call to welcome mistreatment; it is about not letting it poison you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "hans_gita.p.insults",
+      "title": "How the swan answers insults",
+      "summary": "The swan teaches that words are arrows, that answering insult with insult only inflames both sides, and that the person who stays calm and wishes no harm sleeps in peace while the insulter carries the damage.",
+      "story_hook": "",
+      "lesson": "When insulted, staying calm protects you more than hitting back."
+     },
+     "score": 5.35,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "hans_gita.26",
+     "path": "hans_gita.26 -heals-> manyu",
+     "why": [
+      "the hurt is set beside the fact that the insulter carries the ruin",
+      "no need to answer the insult in kind"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.5.55.3",
+      "mbh.12.114.15",
+      "bh.niti.4"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.34.19",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 34.19",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "किं नु मे स्यादिदं कृत्वा किं नु मे स्यादकुर्वतः / इति कर्माणि सञ्चिन्त्य कुर्याद्वा पुरुषो न वा",
+     "line": "Before acting, ask two questions: what happens if I do this, and what happens if I don't?",
+     "translation": "'What will happen to me if I do this? What will happen if I don't?' Thinking actions through this way, a person should then act, or not act.",
+     "words": [],
+     "why": "Think before acting; if you did it right and it failed, don't sink. Guard your tongue.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.34",
+      "title": "Vidura Niti: careful action and wounding words",
+      "summary": "Vidura continues through the night: weigh an action before you start it, don't sink when honest effort fails, and remember that words wound deeper than axes.",
+      "story_hook": "",
+      "lesson": "Think before acting; if you did it right and it failed, don't sink. Guard your tongue."
+     },
+     "score": 2.495,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.34.19",
+     "path": "mbh.5.34.19 -cultivates-> viveka",
+     "why": [
+      "Weigh the two duties; ask what happens if I do and if I do not.",
+      "Weigh both branches"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.35.79",
+      "vr.2.100.16",
+      "vr.4.22.23"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.108",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.108–109",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "दश धर्मं न जानन्ति धृतराष्ट्र निबोध तान् / मत्तः प्रमत्त उन्मत्तः श्रान्तः क्रुद्धो बुभुक्षितः त्वरमाणश्च लुब्धश्च भीतः कामी च ते दश / तस्मादेतेषु भावेषु न प्रसञ्जेत पण्डितः",
+     "line": "Don't decide when you are angry, exhausted, hungry, rushed, greedy or afraid; right and wrong blur then.",
+     "translation": "Ten people do not know what is right, Dhritarashtra; hear who they are: the drunk, the careless, the deranged, the exhausted, the angry, the starving, the hurried, the greedy, the frightened and the lustful. So a wise person does not let himself be caught in these states.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.125,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.33.108",
+     "path": "mbh.5.33.108 -cultivates-> viveka",
+     "why": [
+      "Put out anger with good sense as fire with water; do not decide when angry.",
+      "Check one's state before judging what is right"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.58.chaupai.3",
+      "mbh.3.29.20",
+      "bh.niti.51"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.yudhishthira_grief",
+     "title": "After the war: Yudhishthira's grief and his family's counsel",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Yudhishthira",
+      "Arjuna",
+      "Bhima",
+      "Draupadi",
+      "Nakula",
+      "Vyasa",
+      "Devasthana",
+      "Krishna"
+     ],
+     "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+     "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+     "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "matched": [],
+     "anchor": null,
+     "score": 5.84,
+     "why": null,
+     "hook_title": "Yudhishthira won the war, and wanted to walk into the forest forever",
+     "teaser": "Yudhishthira won the war, and wanted to walk into the forest forever",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.bhima_you_only_repeat_the_words",
+     "path": "st.mbh.bhima_you_only_repeat_the_words -enacts_in-> krodha, manyu ; st.mbh.bhima_you_only_repeat_the_words -enacts_turn-> tejas, viveka",
+     "why": [
+      "Words of scripture repeated without their meaning can become a hiding place from duty."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.lakshman_tells_guha_not_to_blame",
+      "st.vr.vali_asks_what_was_my_crime",
+      "st.vr.ram_asks_the_ocean_then_lifts_the_bow"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.bhima_you_only_repeat_the_words"
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 31,
+   "v3_w1_write": 0,
+   "v3_w1_total": 31,
+   "select": 31,
+   "total": 32
+  },
+  "_ms": 33
+ }
+}

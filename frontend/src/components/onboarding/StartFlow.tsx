@@ -5,6 +5,7 @@ import { getRedirectResult } from 'firebase/auth'
 import { auth } from '@/lib/firebase'
 import { useAuth } from '@/context/AuthContext'
 import { EVENTS, trackEvent } from '@/lib/mixpanel'
+import { beginOnboarding, clientFor, emotionTrail, newRequestId, noteEmotionTap, rememberAnswers } from '@/lib/onboarding/trace'
 import { api, API_TIMEOUT, ApiError, identify, signInWithGoogle, takePending } from '@/lib/funnelClient'
 import { situationById } from '@/lib/app'
 import {
@@ -110,6 +111,8 @@ export default function StartFlow() {
     } else {
       setAnswers((a) => ({ ...a, ...preset }))
     }
+    // One id for this onboarding, on every event from here on and on every backend call (lib/onboarding/trace.ts).
+    beginOnboarding(!s || s.step === 'splash')
     trackEvent(EVENTS.OnboardingViewed, { page: 'Start', source: q.get('ref') ?? q.get('src') ?? 'direct', situation: sit ?? null, resumed: !!s })
   }, [])
 
@@ -140,29 +143,49 @@ export default function StartFlow() {
   const loadWeek = useCallback(() => {
     const r = resultsRef.current
     if (!r.understanding || !r.hook) return Promise.resolve()
+    const requestId = newRequestId()
+    const t0 = Date.now()
     weekReq.current = api<{ weeks: string[]; preview: PreviewDay[]; sealed: string }>('/api/start/week', {
-      body: { profile: profile(), understanding: r.understanding, hookId: r.hook.id },
+      body: { profile: profile(), understanding: r.understanding, hookId: r.hook.id, client: clientFor(requestId, { emotion: answersRef.current.emotion }) },
       timeoutMs: API_TIMEOUT.plan,
     })
-      .then((w) => setResults((p) => ({ ...p, weeks: w.weeks, preview: w.preview, sealed: w.sealed })))
-      .catch(() => {})
+      .then((w) => {
+        setResults((p) => ({ ...p, weeks: w.weeks, preview: w.preview, sealed: w.sealed }))
+        trackEvent(EVENTS.PlanBuilt, { page: 'Start', request_id: requestId, ok: !!w.preview?.length, days: w.preview?.length ?? 0, week_ms: Date.now() - t0 })
+      })
+      .catch((e) => {
+        trackEvent(EVENTS.PlanBuilt, { page: 'Start', request_id: requestId, ok: false, days: 0, week_ms: Date.now() - t0, error: e instanceof ApiError ? e.code : 'network' })
+      })
     return weekReq.current
   }, [])
   const findVerse = useCallback(() => {
     const a = answersRef.current
+    const requestId = newRequestId()
+    const t0 = Date.now()
     const p = api<{ understanding: Results['understanding']; hook: HookVerse | null; safety: Results['safety']; library: { verses?: number; prasangs?: number } | null }>(
       '/api/start/hook',
-      { body: { profile: profile(), note: a.note || undefined, noteSource: a.noteSource }, timeoutMs: API_TIMEOUT.hook },
+      { body: { profile: profile(), note: a.note || undefined, noteSource: a.noteSource, client: clientFor(requestId, { emotion: a.emotion }) }, timeoutMs: API_TIMEOUT.hook },
     ).then(async (r) => {
       setResults({ understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety })
       resultsRef.current = { understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety }
-      trackEvent(EVENTS.VersesGenerated, { page: 'Start', ok: !!r.hook, has_note: !!a.note, crisis: !!(r.safety as { crisis?: boolean } | null)?.crisis })
+      // What the backend made of their answers (labels only), joined to its plan_runs row by request_id.
+      const u = (r.understanding ?? {}) as Record<string, unknown>
+      const flags = Array.isArray(u.flags) ? (u.flags as string[]) : []
+      trackEvent(EVENTS.VersesGenerated, {
+        page: 'Start', request_id: requestId, ok: !!r.hook, has_note: !!a.note, latency_ms: Date.now() - t0,
+        crisis: !!(r.safety as { crisis?: boolean } | null)?.crisis, safety: (r.safety as { kind?: string } | null)?.kind ?? null,
+        hook_id: r.hook?.id ?? null,
+        reading: flags.includes('hook_cache:hit') ? 'cache' : (u.source as string) ?? null,
+        note_quality: (u.note_quality as string) ?? null, risk: (u.risk as string) ?? null,
+        stance: (u.stance as string) ?? null, mechanism: (u.mechanism as string) ?? null,
+        situations: Array.isArray(u.situations) ? (u.situations as { id?: string }[]).slice(0, 3).map((x) => x?.id).filter(Boolean) : [],
+      })
       if (r.safety?.message) setSafetyOpen(true)
       // The week comes next, so "Curating your plan" finishes once it is in (or the cap passes).
       if (r.hook) await Promise.race([loadWeek(), sleep(PLAN_CAP)])
       return { ok: !!r.hook, mirror: r.understanding?.mirror ?? null, library: r.library }
     }).catch((e) => {
-      trackEvent(EVENTS.VersesGenerated, { page: 'Start', ok: false, error: e instanceof ApiError ? e.code : 'network' })
+      trackEvent(EVENTS.VersesGenerated, { page: 'Start', request_id: requestId, ok: false, latency_ms: Date.now() - t0, error: e instanceof ApiError ? e.code : 'network' })
       return { ok: false }
     })
     setHookReq(p)
@@ -295,8 +318,8 @@ export default function StartFlow() {
           title="How old" accent="are you?" sub="So your verse fits your stage of life."
           options={AGES} art={AGE_ART}
           initial={answers.age ? [answers.age] : []}
-          onToggle={(id) => setAnswers((a) => ({ ...a, age: id }))}
-          onDone={([id]) => { setAnswers((a) => ({ ...a, age: id, stages: a.stages.filter((s) => stagesFor(id).some((o) => o.id === s)) })); go('stage', { age_range: id }) }}
+          onToggle={(id) => { setAnswers((a) => ({ ...a, age: id })); trackEvent(EVENTS.OptionSelected, { page: 'Start', question: 'age', option: id }) }}
+          onDone={([id]) => { setAnswers((a) => ({ ...a, age: id, stages: a.stages.filter((s) => stagesFor(id).some((o) => o.id === s)) })); rememberAnswers({ age_range: id }); go('stage', { age_range: id }) }}
         />
       )
       break
@@ -307,7 +330,8 @@ export default function StartFlow() {
           title="Where are you" accent="in life?" sub="Choose all that apply"
           options={options} art={STAGE_ART} multi
           initial={answers.stages.filter((id) => options.some((o) => o.id === id))}
-          onDone={(ids) => { setAnswers((a) => ({ ...a, stages: ids })); go('feeling', { life_stage: ids }) }}
+          onToggle={(id, on) => trackEvent(EVENTS.OptionSelected, { page: 'Start', question: 'life_stage', option: id, selected: on })}
+          onDone={(ids) => { setAnswers((a) => ({ ...a, stages: ids })); rememberAnswers({ life_stage: ids }); go('feeling', { life_stage: ids, count: ids.length, age_range: answers.age ?? null }) }}
         />
       )
       break
@@ -316,7 +340,17 @@ export default function StartFlow() {
       screen = (
         <FeelingScreen
           initialEmotion={answers.emotion} initialNeed={answers.need}
-          onDone={(e) => { setAnswers((a) => ({ ...a, need: e.need, emotion: e.id })); go('note', { feeling: e.need, emotion: e.id, tone: e.tone }) }}
+          onPick={(e) => { noteEmotionTap(e.id); trackEvent(EVENTS.OptionSelected, { page: 'Start', question: 'feeling', option: e.id, need: e.need, tone: e.tone }) }}
+          onDone={(e) => {
+            setAnswers((a) => ({ ...a, need: e.need, emotion: e.id }))
+            rememberAnswers({ feeling: e.need, emotion: e.id })
+            const trail = emotionTrail()
+            go('note', {
+              feeling: e.need, emotion: e.id, tone: e.tone,
+              emotion_trail: trail, emotions_tapped: new Set(trail).size, first_emotion: trail[0] ?? e.id,
+              changed_word: !!trail.length && trail[trail.length - 1] !== trail[0],
+            })
+          }}
         />
       )
       break
@@ -328,7 +362,13 @@ export default function StartFlow() {
           onDone={(note, source) => {
             setAnswers((a) => ({ ...a, note: note || undefined, noteSource: note ? source : undefined }))
             answersRef.current = { ...answersRef.current, note: note || undefined, noteSource: note ? source : undefined }
-            const props = { has_note: !!note, note_source: note ? source : 'skipped', note_chars: note.length }
+            // Never the words themselves: that there was a note, how long, spoken or typed (the text goes to the backend only).
+            const props = {
+              has_note: !!note, note_source: note ? source : 'skipped', note_chars: note.length,
+              note_length: note.length === 0 ? 'none' : note.length < 60 ? 'short' : note.length < 160 ? 'medium' : 'long',
+              ai_consent: 'not_asked',
+            }
+            rememberAnswers({ note_given: !!note, note_source: note ? source : 'skipped' })
             findVerse()
             go('finding', props)
           }}

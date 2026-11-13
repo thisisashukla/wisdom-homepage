@@ -1,0 +1,1083 @@
+{
+ "case": "t6_promoted_past_mbas",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.14,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "manyu",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "not_promoted",
+     "imposter"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bg.1.29"
+   }
+  },
+  "hook": {
+   "id": "bg.1.29",
+   "ref": "Bhagavad Gita 1.29–30",
+   "ref_iast": "Bhagavad Gītā 1.29–30",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+   "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+   "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+   "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+   "words": [
+    {
+     "sa": "सीदन्ति",
+     "en": "are failing"
+    },
+    {
+     "sa": "मम",
+     "en": "my"
+    },
+    {
+     "sa": "गात्राणि",
+     "en": "limbs"
+    },
+    {
+     "sa": "मुखं",
+     "en": "mouth"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "परिशुष्यति",
+     "en": "dries up"
+    },
+    {
+     "sa": "वेपथुः",
+     "en": "trembling"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "शरीरे",
+     "en": "in the body"
+    },
+    {
+     "sa": "मे",
+     "en": "my"
+    },
+    {
+     "sa": "रोम-हर्षः",
+     "en": "standing of hair"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "जायते",
+     "en": "arises"
+    }
+   ],
+   "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+   "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p01.4",
+    "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+    "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+    "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+    "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind won't settle while you are working, and a verse was chosen with that weight in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind won't settle while you are working, and a verse was chosen with that weight in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "vr.5.13.20",
+    "ref": "Valmiki Ramayana, Sundara Kanda 13.20",
+    "ref_iast": "Vālmīki Rāmāyaṇa 5.13.20",
+    "family": "vr",
+    "speaker": "Hanuman",
+    "listener": "himself",
+    "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+    "sanskrit": null,
+    "line": "What will Sugriva and the other monkeys say when I get back to Kishkindha?",
+    "translation": "Or what will Sugriva say, and the assembled monkeys, and the two sons of Dasaratha, when I return to Kishkindha?",
+    "words": [],
+    "why": "When you have looked everywhere, look again; giving up costs too much.",
+    "misuse": null,
+    "tone": null,
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.2.225.chaupai.3",
+    "ref": "Ramcharitmanas, Ayodhya Kand 2.225 (chaupai 3)",
+    "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.225",
+    "family": "rcm",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "Bharat walks toward Ram, slowed by shame, quickened by love.",
+    "sanskrit": "फेरति मनहुँ मातु कृत खोरी। चलत भगति बल धीरज धोरी॥ जब समुझत रघुनाथ सुभाऊ। तब पथ परत उताइल पाऊ ॥",
+    "line": "Shame slowed him. But whenever he remembered Ram's nature, his feet moved faster.",
+    "translation": "It was as if his mother's wrong held him back, while the strength of devotion drove him on like a patient ox. Whenever he remembered Raghunath's nature, his feet moved faster on the path.",
+    "words": [
+     {
+      "sa": "फेरति",
+      "en": "turns back"
+     },
+     {
+      "sa": "मनहुँ",
+      "en": "as if"
+     },
+     {
+      "sa": "मातु",
+      "en": "mother"
+     },
+     {
+      "sa": "कृत",
+      "en": "done"
+     },
+     {
+      "sa": "खोरी",
+      "en": "wrong"
+     },
+     {
+      "sa": "चलत",
+      "en": "while moving"
+     },
+     {
+      "sa": "भगति",
+      "en": "devotion"
+     },
+     {
+      "sa": "बल",
+      "en": "strength"
+     },
+     {
+      "sa": "धीरज",
+      "en": "patience"
+     },
+     {
+      "sa": "धोरी",
+      "en": "bearer"
+     },
+     {
+      "sa": "जब",
+      "en": "when"
+     },
+     {
+      "sa": "रघुनाथ",
+      "en": "Raghunath"
+     },
+     {
+      "sa": "सुभाऊ",
+      "en": "nature"
+     },
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "पथ",
+      "en": "path"
+     },
+     {
+      "sa": "परत",
+      "en": "falling"
+     },
+     {
+      "sa": "उताइल",
+      "en": "quickened"
+     },
+     {
+      "sa": "पाऊ",
+      "en": "feet"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 316,
+   "v3_candidates": 78,
+   "v3_fast_read": 957,
+   "v3_select": 1357,
+   "v3_first_line": 511,
+   "v3_total": 1869,
+   "total": 1871
+  },
+  "_ms": 1874
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:no_line_swap:D2_see_why:yv.5.21.6->viv.5.ridicule_opposition:no personal line passed the checker",
+    "v3:for_you:5/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "manyu",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "not_promoted",
+     "imposter"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.1.29",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 8.205,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": "Arjuna's body fails him. His limbs weaken, his mouth dries, his body shakes, his hair stands on end, his bow slips from his hand, and his mind reels. The strong feel fear and grief in their flesh. The teaching begins with this collapse, not with a hero holding steady.",
+     "for_you": null,
+     "try_today": "Feel the weight of the bow in your hands before the next meeting.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.1.29",
+     "path": "Day 1 kept from the first screen (rcm.2.225.chaupai.3 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.6.chaupai.1",
+      "vr.5.13.20",
+      "bh.niti.40"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not weakness. It is)",
+      "scene_line:invented_life_detail(your mouth dry)",
+      "audio_close:invented_life_detail(Your limbs give)",
+      "for_you:contrast_pattern(are not signs of fraud. They are)",
+      "scene_line:invented_life_detail(your limbs give)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "viv.5.ridicule_opposition",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 5",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Letter from the USA, 9 July 1895, on opposition to his work in America.",
+     "sanskrit": null,
+     "line": "Each work has to pass through these stages — ridicule, opposition, and then acceptance.",
+     "translation": "Each work has to pass through these stages — ridicule, opposition, and then acceptance. Each man who thinks ahead of his time is sure to be misunderstood.",
+     "words": [],
+     "why": "Ridicule and opposition are stages, not verdicts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.letter.khetri_1895",
+      "title": "Ridicule, opposition, acceptance (letter to Khetri, 1895)",
+      "summary": "Facing opposition from some clergy in America, he writes to his friend the Maharaja that every work passes through ridicule, opposition and then acceptance. Anyone ahead of their time will be misunderstood, so he will stay steady.",
+      "story_hook": "",
+      "lesson": "Ridicule and opposition are stages, not verdicts."
+     },
+     "score": 0.0,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind circles the same fear before every presentation. You do not belong here, and that worry is heavy. Still, a work ahead of its time meets ridicule first.",
+     "try_today": "Notice the moment before a presentation when the old worry rises. Name it as the first stage of the work.",
+     "scene_line": "You stand before the room while ridicule and opposition wait on the other side of the door.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "viv.5.ridicule_opposition",
+     "path": "D2_see_why: alternate for yv.5.21.6 (no personal line passed the checker)",
+     "why": [],
+     "writer_note": null,
+     "alts": [],
+     "thin": false,
+     "swapped_from": "yv.5.21.6",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "words": [],
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 10.178,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The hurt of being wronged is heavy. Rightness is a power you already have. It stands between you and the strong.",
+     "try_today": "Notice one moment today where your own truth holds its ground.",
+     "scene_line": "You stand before the strong, and rightness is your companion.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "up_brihadaranyak.86",
+     "path": "up_brihadaranyak.86 -heals-> dainya",
+     "why": [
+      "the weaker party is not without standing",
+      "being in the right is a real power when facing someone stronger"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.16",
+      "mbh.3.32.58",
+      "vr.4.66.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(not a sign of weakness, but)",
+      "for_you:untraced_sentence(degre,found,stomac,though,tighte)",
+      "for_you:untraced_sentence(ache,overlo,sign,weakne)",
+      "for_you:untraced_sentence(firm,force,itself,loud,quiet,rightn)",
+      "for_you:invented_life_detail(your stomach tightens)",
+      "scene_line:not_second_person",
+      "audio_close:untraced_sentence(firm,force,itself,loud,quiet,rightn)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 6.804,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your fear of being found out belongs to the room, not to you. The spotlight of their words only shows the snake in their own throat. You can stay quiet and still in it.",
+     "try_today": "Notice when you want to put someone else down, and let it pass.",
+     "scene_line": "You stand before your colleagues, and your own fault is what they see.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.12.114.15",
+     "path": "mbh.12.114.15 -heals-> dainya",
+     "why": [
+      "The slandered person is not the one exposed",
+      "The public insult is turned back on the one who made it"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.4.62.13",
+      "viv.2.remedy_weakness",
+      "mbh.12.114.8"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(, not the)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.961,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have been handed a role you did not ask for, and you are waiting for the moment they notice. Do the work in front of you. Speak gently. Read the room and let your steady hands do the talking.",
+     "try_today": "Notice one thing you are doing well before you speak today.",
+     "scene_line": "You stand at the front of the room while two colleagues watch, and you speak gently.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_maha.532",
+     "path": "up_maha.532 -cultivates-> samatva",
+     "why": [
+      "the same regard for friend and opponent"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.133.17",
+      "bg.18.23",
+      "viv.1.end_and_means"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.1.53.9",
+     "ref": "Valmiki Ramayana · Bala Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 53.9",
+     "family": "vr",
+     "speaker": "Vasishtha",
+     "listener": "King Vishvamitra",
+     "setting": "A powerful king offers a fortune for the sage's cow, the source of his whole way of life.",
+     "sanskrit": "नाहं शतसहस्रेण नापि कोटिशतैर्गवाम्॥ राजन् दास्यामि शबलां राशिभी रजतस्य वा। न परित्यागमयं मत्सकाशादरिंदम ॥",
+     "line": "Not for any price. Some things are not for sale, however powerful the buyer.",
+     "translation": "Not for a hundred thousand cows, not for a billion, not for heaps of silver, O king, will I give up Shabala. She stays with me.",
+     "words": [
+      {
+       "sa": "नाहम्",
+       "en": "I will not"
+      },
+      {
+       "sa": "शतसहस्रेण",
+       "en": "by a hundred thousand"
+      },
+      {
+       "sa": "नापि",
+       "en": "nor even"
+      },
+      {
+       "sa": "कोटिशतैः",
+       "en": "by hundreds of crores"
+      },
+      {
+       "sa": "गवाम्",
+       "en": "of cows"
+      },
+      {
+       "sa": "राजन्",
+       "en": "O king"
+      },
+      {
+       "sa": "दास्यामि",
+       "en": "I will give"
+      },
+      {
+       "sa": "शबलाम्",
+       "en": "Sabala"
+      },
+      {
+       "sa": "राशिभिः",
+       "en": "by heaps"
+      },
+      {
+       "sa": "रजतस्य",
+       "en": "of silver"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      }
+     ],
+     "why": "Envy and force cannot take what someone will not give; real power is built inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.vasishtha_cow",
+      "title": "The king who wanted the cow",
+      "summary": "King Vishvamitra is feasted by the sage Vasishtha and covets the wish-granting cow that made it possible. Vasishtha refuses every offer; the king takes her by force and is routed, then fails again with divine weapons. Humbled, he resolves to transform himself through inner discipline instead of force.",
+      "story_hook": "A king who had everything saw one thing he could not buy, and it undid him.",
+      "lesson": "Envy and force cannot take what someone will not give; real power is built inside."
+     },
+     "score": 4.032,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your worth was never on the market, not even when you were passed over. The place you hold is not for sale. You belong there already.",
+     "try_today": "Notice one thing today that no promotion could buy.",
+     "scene_line": "The king offers a fortune for a cow that sustains the sage; you stand in a room where the price is wrong.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.1.53.9",
+     "path": "vr.1.53.9 -cultivates-> santosha",
+     "why": [
+      "what sustains his life is not for sale",
+      "a plain no to someone far more powerful"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.48",
+      "bh.niti.51",
+      "yv.2.16.8"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "bh.p.vairagya.yati_nripati",
+     "title": "Vairagyashatakam: Dialogue between the ascetic and the king",
+     "kind": "teaching",
+     "family": "bh",
+     "characters": [
+      "an ascetic poet",
+      "a king"
+     ],
+     "story_hook": "",
+     "summary": "An ascetic tells a king who ignores him that learning equals wealth, that contentment in bark equals contentment in silk, and that pride over a few towns is a fever.",
+     "lesson": "When the mind is content, nobody is richer than you.",
+     "matched": [],
+     "anchor": null,
+     "score": 10.746,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Vairagyashatakam: Dialogue between the ascetic and the king",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.bh.ascetic_and_king",
+     "path": "st.bh.ascetic_and_king -enacts_in-> dainya, manyu, matsarya ; st.bh.ascetic_and_king -enacts_turn-> samatva, santosha, tejas ; st.bh.ascetic_and_king -fits_situation-> comparison",
+     "why": [
+      "The poor one is whoever has vast craving; where the mind is content, rich and poor are the same."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.viv.chicago_no_speech_prepared",
+      "st.mbh.kashyapa_and_the_jackal",
+      "st.rcm.sugriva_what_a_friend_is"
+     ],
+     "thin": false,
+     "story_id": "st.bh.ascetic_and_king",
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(, not in)",
+      "scene_line:not_second_person",
+      "for_you:untraced_sentence(degre,return,titl,worth)",
+      "scene_line:not_second_person"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Not feeling enough",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 123,
+   "v3_w1_write": 8272,
+   "v3_w1_total": 8396,
+   "select": 8397,
+   "total": 8397
+  },
+  "_ms": 8400
+ }
+}

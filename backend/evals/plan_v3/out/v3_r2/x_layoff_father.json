@@ -1,0 +1,1025 @@
+{
+ "case": "x_layoff_father",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Should I quit my job or stay",
+   "mirror": "Should I quit my job or stay",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Should I quit my job or stay. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"Should I quit my job or stay\" and \"I have to give someone bad news\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.03,wro=0.35,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:risk_ignored:distress",
+    "day1:library_fallback",
+    "day1:graph_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "wronged",
+    "states": [
+     "chinta",
+     "shoka",
+     "nirveda",
+     "moha"
+    ],
+    "risk": "none",
+    "situations": [
+     "quit_or_stay",
+     "hard_conversation",
+     "procrastination"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "mbh.12.81.6",
+    "first_line": "You wake up at six each morning as if you still have to go to the office, and the harsh words of your own kin keep burning you every day."
+   }
+  },
+  "hook": {
+   "id": "mbh.12.81.6",
+   "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+   "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+   "family": "mbh",
+   "speaker": "Krishna (quoted by Bhishma)",
+   "listener": "Narada",
+   "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+   "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+   "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+   "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+   "words": [],
+   "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+   "misuse": "",
+   "tone": "comforting",
+   "matched": [],
+   "prasang": {
+    "id": "mbh.p.krishna_narada_kin",
+    "title": "Krishna's family troubles: the weapon not made of iron",
+    "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+    "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+    "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You wake up at six each morning as if you still have to go to the office, and the harsh words of your own kin keep burning you every day.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You wake up at six each morning as if you still have to go to the office, and the harsh words of your own kin keep burning you every day.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "tulsi_dv.405",
+    "ref": "Dohavali 405",
+    "ref_iast": "Dohāvalī 405",
+    "family": "tulsi",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "A doha on betrayal.",
+    "sanskrit": "जासु भरोसें सोइऐे राखि गोद में सीस। तुलसी तासु कुचाल तें रखवारो जगदीस॥",
+    "line": "When the person you trusted most turns on you, the Lord of the world still guards you.",
+    "translation": "When the one you trusted enough to sleep with your head in their lap turns on you, Tulsi says, the Lord of the world is your guardian.",
+    "words": [],
+    "why": null,
+    "misuse": "Comfort after betrayal; it does not replace getting real-world help or protection.",
+    "tone": "comforting",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.5.6.chaupai.1",
+    "ref": "Ramcharitmanas · Sundar Kand",
+    "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+    "family": "rcm",
+    "speaker": "Vibhishan",
+    "listener": "Hanuman",
+    "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+    "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+    "line": "I live here like the tongue among the teeth.",
+    "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+    "words": [
+     {
+      "sa": "सुनहु",
+      "en": "listen"
+     },
+     {
+      "sa": "पवनसुत",
+      "en": "son of the wind"
+     },
+     {
+      "sa": "रहनि",
+      "en": "way of living"
+     },
+     {
+      "sa": "हमारी",
+      "en": "my"
+     },
+     {
+      "sa": "जिमि",
+      "en": "like"
+     },
+     {
+      "sa": "दसनन्हि",
+      "en": "teeth"
+     },
+     {
+      "sa": "महुँ",
+      "en": "within"
+     },
+     {
+      "sa": "जीभ",
+      "en": "tongue"
+     },
+     {
+      "sa": "बिचारी",
+      "en": "poor, helpless"
+     },
+     {
+      "sa": "तात",
+      "en": "friend"
+     },
+     {
+      "sa": "कबहुँ",
+      "en": "ever"
+     },
+     {
+      "sa": "मोहि",
+      "en": "me"
+     },
+     {
+      "sa": "जानि",
+      "en": "knowing"
+     },
+     {
+      "sa": "अनाथा",
+      "en": "helpless, without a protector"
+     },
+     {
+      "sa": "करिहहिं",
+      "en": "will do"
+     },
+     {
+      "sa": "कृपा",
+      "en": "grace"
+     },
+     {
+      "sa": "भानुकुल",
+      "en": "solar line"
+     },
+     {
+      "sa": "नाथा",
+      "en": "Lord"
+     }
+    ],
+    "why": "Even in a hostile place there may be one ally; find them.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "rcm.p.vibhishan_hanuman",
+     "title": "Hanuman finds a friend in Lanka",
+     "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+     "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+     "lesson": "Even in a hostile place there may be one ally; find them."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 190,
+   "v3_candidates": 39,
+   "v3_fast_read": 1642,
+   "v3_select": 1926,
+   "v3_first_line": 911,
+   "v3_total": 2837,
+   "total": 2839
+  },
+  "_ms": 2844
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Should I quit my job or stay",
+   "mirror": "Should I quit my job or stay",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Should I quit my job or stay. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest I quit my job or stay\" and \"I have to give someone bad news\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "v3:for_you:5/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "wronged",
+    "states": [
+     "chinta",
+     "shoka",
+     "nirveda",
+     "moha"
+    ],
+    "risk": "none",
+    "situations": [
+     "quit_or_stay",
+     "hard_conversation",
+     "procrastination"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "mbh.12.81.6",
+    "first_line": "You wake up at six each morning as if you still have to go to the office, and the harsh words of your own kin keep burning you every day."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.81.6",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+     "family": "mbh",
+     "speaker": "Krishna (quoted by Bhishma)",
+     "listener": "Narada",
+     "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+     "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+     "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+     "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+     "words": [],
+     "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.krishna_narada_kin",
+      "title": "Krishna's family troubles: the weapon not made of iron",
+      "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+      "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+      "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+     },
+     "score": 3.63,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The words of your own people can keep churning your heart and burning you. You still wake at six because the old rhythm holds you. Let the morning be your own.",
+     "try_today": null,
+     "scene_line": "You stand in the quiet morning, and the memory of that ten minute call burns like a fire stick.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "mbh.12.81.6",
+     "path": "Day 1 kept from the first screen (bh.vairagya.4 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.6.chaupai.1",
+      "rcm.1.74.chaupai.3",
+      "rcm.2.170.chaupai.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.95.48",
+     "ref": "Mahabharata · Udyoga Parva · Udyoga: Krishna's peace embassy",
+     "ref_iast": "Mahābhārata, Udyoga Parva 95.48-49",
+     "family": "mbh",
+     "speaker": "Krishna",
+     "listener": "The Kaurava court",
+     "setting": "Krishna addresses the Kaurava court, asking Dhritarashtra to restrain his sons and make peace.",
+     "sanskrit": "धर्मज्ञेषु सभासत्सु नेह युक्तमसांप्रतम् / यत्र धर्मो ह्यधर्मेण सत्यं यत्रानृतेन च हन्यते प्रेक्षमाणानां हतास्तत्र सभासदः / विद्धो धर्मो ह्यधर्मेण सभां यत्र प्रपद्यते",
+     "line": "When wrong crushes right while others watch in silence, the silent are wounded too.",
+     "translation": "Where right is struck down by wrong and truth by falsehood while the assembly looks on, it is the onlookers who are struck down.",
+     "words": [],
+     "why": "You can make the best case for peace and still be refused. Speak anyway.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.krishna_peace_embassy",
+      "title": "Krishna's peace embassy to the Kauravas",
+      "summary": "Krishna travels to Hastinapura to plead for peace between the cousins. Elders, sages and finally Gandhari urge Duryodhana to share the kingdom; he refuses, even plotting to seize Krishna, and war becomes certain.",
+      "story_hook": "Krishna, who could have ended the quarrel by force, chose to walk into his enemies' court with nothing but words.",
+      "lesson": "You can make the best case for peace and still be refused. Speak anyway."
+     },
+     "score": 3.36,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small truth today that the silence tried to bury.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "mbh.5.95.48",
+     "path": "mbh.5.95.48 [whose smallness it is: curated list for the wronged stance]",
+     "why": [
+      "When wrong crushes right while others watch, the silent are wounded too.",
+      "The wrong was done in front of people who said nothing"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.305.9",
+      "viv.5.ridicule_opposition",
+      "mbh.5.39.63"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     }
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 7.719,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": "On this path, no beginning is lost and no harm results. Even a small amount of this practice protects from great fear. The tradition reads this as a path of action where every step forward counts, and even a little effort shields one from the fear of birth and death.",
+     "for_you": "Twenty-two years of service were not erased in a ten-minute call. Even a little of this steady practice shields you from great fear.",
+     "try_today": "Notice one small task today done without clinging to the result.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.2.40",
+     "path": "bg.2.40 -heals-> samshaya",
+     "why": [
+      "answers the worry that an unfinished effort is a wasted one",
+      "Even a little of this path protects from great fear."
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_mundaka.3.1.6",
+      "viv.4.hold_on_brave_heart",
+      "viv.5.great_convictions"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.48",
+     "ref": "Bhagavad Gita 18.48",
+     "ref_iast": "Bhagavad Gītā 18.48",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥",
+     "line": "Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke.",
+     "translation": "One should not give up the work suited to one's nature, Kaunteya, even if it has faults; for all undertakings are clouded by faults, as fire is by smoke.",
+     "words": [
+      {
+       "sa": "सहजं",
+       "en": "natural"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "सदोषम्",
+       "en": "faulty"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "त्यजेत्",
+       "en": "should abandon"
+      },
+      {
+       "sa": "सर्वारम्भा",
+       "en": "all beginnings"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "दोषेण",
+       "en": "by fault"
+      },
+      {
+       "sa": "धूमेन",
+       "en": "by smoke"
+      },
+      {
+       "sa": "अग्नि",
+       "en": "fire"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आवृताः",
+       "en": "covered"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'never change jobs'. It answers perfectionism, not a reason to stay where you're harmed.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 5.416,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have spent twenty-two years in one place. The work suited you, and its flaws did not stop you. A single meeting does not erase the life you built there.",
+     "try_today": "Notice the work you were born to do today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.48",
+     "path": "bg.18.48 -heals-> samshaya",
+     "why": [
+      "flaws in the work are no reason to drop it; every undertaking has them",
+      "keeps a resolve from breaking on the first flaw"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.5.2",
+      "bg.3.20",
+      "bg.3.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 7.381,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have already decided to stay steady even when the ground under you was pulled away. Let that decision be enough to carry you through this morning and the rest of the day.",
+     "try_today": "Notice one small thing today that you decide to do without hesitation and carry it through to the end.",
+     "scene_line": "In the quiet before dawn, you stand steady like Vidura before the king, waiting to see what the next move will be.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.33.31",
+     "path": "mbh.5.33.31 -cultivates-> sankalpa",
+     "why": [
+      "Reflect fully, then decide and begin.",
+      "Nishchitya: begin from a settled decision"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.35.79",
+      "yv.2.9.30",
+      "mbh.5.34.19"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.7.12",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 7.12",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "अशुभेषु समाविष्टं शुभेष्वेवावतारयेत् । प्रयत्नाच्चित्तमित्येष सर्वशास्त्रार्थसंग्रहः ॥",
+     "line": "When your mind drifts to harmful things, steer it back to good ones. That's the whole teaching.",
+     "translation": "When the mind has sunk into bad things, bring it down into good ones with effort. That is the summary of all the scriptures.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 6.21,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Steer your mind back to the good, each time it drifts toward harm.",
+     "scene_line": "You wake at six, and the habit of going to the office remains, though the call is over.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "yv.2.7.12",
+     "path": "yv.2.7.12 -cultivates-> viveka",
+     "why": [
+      "knowing harmful from helpful",
+      "turn the mind back each time"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.53",
+      "mbh.12.103.34",
+      "up_chhandogya.423"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.mbh.jaratkaru_wife_must_wake_him",
+     "title": "Jaratkaru's wife must choose between his anger and his duty",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Jaratkaru (Vasuki's sister)",
+      "Jaratkaru the sage",
+      "Vasuki"
+     ],
+     "story_hook": "If she woke him, he would be furious. If she did not, he would fail his duty. She had until sunset.",
+     "summary": "Her husband married her on the condition that he would leave the first time she displeased him. Now he is asleep with his head in her lap and the sun is going down. If she wakes him he will be angry. If she lets him sleep he will miss his evening rites.",
+     "lesson": "When both paths carry a cost, choose by which loss is heavier, and say plainly why you chose.",
+     "matched": [],
+     "anchor": null,
+     "score": 9.334,
+     "why": null,
+     "hook_title": null,
+     "teaser": "If she woke him, he would be furious. If she did not, he would fail his duty. She had until sunset.",
+     "for_you": "You were let go with no respect. You still wake at six for a place that no longer holds you. Choose the loss that is heavier, and say plainly why you chose it.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.jaratkaru_wife_must_wake_him",
+     "path": "st.mbh.jaratkaru_wife_must_wake_him -enacts_in-> bhaya, chinta, dharma_sankata ; st.mbh.jaratkaru_wife_must_wake_him -enacts_turn-> tejas, viveka ; st.mbh.jaratkaru_wife_must_wake_him -fits_situation-> hard_conversation",
+     "why": [
+      "When both paths carry a cost, choose by which loss is heavier, and say plainly why you chose."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.mandodari_warning_dismissed",
+      "st.mbh.yudhishthira_dharma_not_a_trade",
+      "st.rcm.ram_and_the_ocean"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.jaratkaru_wife_must_wake_him",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn both ways",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 40,
+   "v3_w1_write": 8646,
+   "v3_w1_total": 8687,
+   "select": 8688,
+   "total": 8690
+  },
+  "_ms": 8695
+ }
+}

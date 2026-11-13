@@ -21,10 +21,13 @@ const WELCOME = "Pick the one that's closest."
 export default function FeelingScreen({
   initialEmotion,
   initialNeed,
+  onPick,
   onDone,
 }: {
   initialEmotion?: string
   initialNeed?: NeedId
+  /** Every tap on a word (tracking: the screen keeps only the last one). */
+  onPick?: (e: Emotion) => void
   onDone: (e: Emotion) => void
 }) {
   const [picked, setPicked] = useState<string | undefined>(() => (emotionById(initialEmotion) ?? emotionForNeed(initialNeed))?.id)
@@ -46,6 +49,7 @@ export default function FeelingScreen({
 
   const choose = (e: Emotion) => {
     haptic()
+    onPick?.(e)
     setPicked(e.id)
     setPop((p) => p + 1)
   }

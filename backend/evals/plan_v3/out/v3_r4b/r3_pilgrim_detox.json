@@ -1,0 +1,948 @@
+{
+ "case": "r3_pilgrim_detox",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.68,wro=0.15,see=0.26",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "aspiration",
+    "states": [
+     "chinta",
+     "utsaha",
+     "shraddha",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": true,
+    "pick": "mbh.12.272.29"
+   }
+  },
+  "hook": {
+   "id": "mbh.12.272.29",
+   "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+   "ref_iast": "Mahābhārata, Śānti Parva 272.29",
+   "family": "mbh",
+   "speaker": "Chirakari",
+   "listener": "Himself",
+   "setting": "Ordered to kill his mother, Chirakari slowly weighs what a mother is.",
+   "sanskrit": "समर्थं वाऽसमर्थं वा कृशं वाप्यकृशं तथा / रक्षत्येव सुतं माता नान्यः पोष्टा विधानतः",
+   "line": "Strong or weak, thriving or struggling, a mother protects her child. No one nurtures like that.",
+   "translation": "Capable or not, thin or well-fed, a mother protects her child. No one else nurtures like that.",
+   "words": [],
+   "why": "In anger, and when loved ones seem to have wronged you, slow down.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "mbh.p.chirakari",
+    "title": "Chirakari, the one who acts slowly",
+    "summary": "In a jealous rage, the sage Gautama orders his son Chirakari to kill his mother and storms off. Chirakari, famous for slowness, weighs a father's word against a mother's worth for so long that Gautama returns, regretful, and finds them both alive.",
+    "story_hook": "Ordered by his furious father to kill his mother, Chirakari did what he always did: he thought about it.",
+    "lesson": "In anger, and when loved ones seem to have wronged you, slow down."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "The light you feel is real, and it is enough that you keep it going while raising kids.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "The light you feel is real, and it is enough that you keep it going while raising kids.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "mbh.13.162.15",
+    "ref": "Mahabharata · Anushasana Parva · Anushasana",
+    "ref_iast": "Mahābhārata, Anuśāsana Parva 162.15",
+    "family": "mbh",
+    "speaker": "Bhishma",
+    "listener": "Yudhishthira",
+    "setting": "Yudhishthira asks Bhishma how an eldest brother should treat his younger brothers, and they him.",
+    "sanskrit": "दशाचार्यानुपाध्याय उपाध्यायान्पिता दश / दश चैव पितॄन्माता सर्वां वा पृथिवीमपि / गौरवेणाभिभवति नास्ति मातृसमो गुरुः",
+    "line": "There is no teacher like a mother.",
+    "translation": "A teacher outweighs ten instructors, a father ten teachers, and a mother ten fathers, even the whole earth. There is no teacher equal to a mother.",
+    "words": [],
+    "why": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.brothers",
+     "title": "Bhishma on elder and younger siblings",
+     "summary": "Yudhishthira asks how the eldest brother should treat the younger ones. Bhishma: overlook small faults and correct gently, beware outsiders who sow division, divide property equally, and honour the mother above all.",
+     "story_hook": "",
+     "lesson": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "mbh.12.272.28",
+    "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+    "ref_iast": "Mahābhārata, Śānti Parva 272.28",
+    "family": "mbh",
+    "speaker": "Chirakari",
+    "listener": "Himself",
+    "setting": "Ordered to kill his mother, Chirakari slowly weighs what a mother is.",
+    "sanskrit": "पुत्रपौत्रोपपन्नोपि जननीं यः समाश्रितः / अपि वर्षशतस्यान्ते स द्विहायनवच्चरेत्",
+    "line": "Whoever still has their mother to turn to is a little child, even at a hundred.",
+    "translation": "Even with sons and grandsons around him, someone who still has his mother to turn to lives like a two-year-old, even at a hundred.",
+    "words": [],
+    "why": "In anger, and when loved ones seem to have wronged you, slow down.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.chirakari",
+     "title": "Chirakari, the one who acts slowly",
+     "summary": "In a jealous rage, the sage Gautama orders his son Chirakari to kill his mother and storms off. Chirakari, famous for slowness, weighs a father's word against a mother's worth for so long that Gautama returns, regretful, and finds them both alive.",
+     "story_hook": "Ordered by his furious father to kill his mother, Chirakari did what he always did: he thought about it.",
+     "lesson": "In anger, and when loved ones seem to have wronged you, slow down."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 389,
+   "v3_candidates": 77,
+   "v3_fast_read": 2522,
+   "v3_select": 2993,
+   "v3_first_line": 575,
+   "v3_total": 3569,
+   "total": 3571
+  },
+  "_ms": 3579
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "aspiration",
+    "states": [
+     "chinta",
+     "utsaha",
+     "shraddha",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "mbh.12.272.29",
+    "threat": false,
+    "caste_ok": false,
+    "health": true,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.272.29",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 272.29",
+     "family": "mbh",
+     "speaker": "Chirakari",
+     "listener": "Himself",
+     "setting": "Ordered to kill his mother, Chirakari slowly weighs what a mother is.",
+     "sanskrit": "समर्थं वाऽसमर्थं वा कृशं वाप्यकृशं तथा / रक्षत्येव सुतं माता नान्यः पोष्टा विधानतः",
+     "line": "Strong or weak, thriving or struggling, a mother protects her child. No one nurtures like that.",
+     "translation": "Capable or not, thin or well-fed, a mother protects her child. No one else nurtures like that.",
+     "words": [],
+     "why": "In anger, and when loved ones seem to have wronged you, slow down.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.chirakari",
+      "title": "Chirakari, the one who acts slowly",
+      "summary": "In a jealous rage, the sage Gautama orders his son Chirakari to kill his mother and storms off. Chirakari, famous for slowness, weighs a father's word against a mother's worth for so long that Gautama returns, regretful, and finds them both alive.",
+      "story_hook": "Ordered by his furious father to kill his mother, Chirakari did what he always did: he thought about it.",
+      "lesson": "In anger, and when loved ones seem to have wronged you, slow down."
+     },
+     "score": 9.178,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are tending to your own life the way a mother tends to her child, with steady care that asks nothing of you in return.",
+     "try_today": "Notice one small way you are protecting yourself today, just as you are.",
+     "scene_line": "You stand at the threshold of a new path, watching over your own wellbeing with the same patience a mother offers her child.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "mbh.12.272.29",
+     "path": "Day 1 kept from the first screen (bg.18.78 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "vr.2.25.2",
+      "vr.4.1.101",
+      "up_chhandogya.644"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:preachy(you have to)",
+      "for_you:untraced_sentence(body,clear,form,resolv)",
+      "for_you:invented_life_detail(your body)",
+      "scene_line:untraced_sentence(care,edge,matter,new)",
+      "audio_open:untraced_sentence(good,moving,news,want)",
+      "audio_open:names_treatment(medications)",
+      "audio_open:pathologises_a_light_state(worry)",
+      "audio_open:untraced_sentence(clear,hope,reach,spoke,taking)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 3.126,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": "The fire of your concern dies down when you stop feeding it with fuel, just as Purna and Pavana learned.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "yv.5.21.6",
+     "path": "yv.5.21.6 -states_chain-> yv.worry_fed_by_thought [sankalpa_kalpana -causes-> chinta]",
+     "why": [
+      "Worry grows when you feed it (Yoga Vasishtha 5.21.6)",
+      "worry is shown to live on the attention it is fed"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.5.11.6",
+      "up_maitrayani.86",
+      "viv.6.fearful_to_hurt"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(burn,clear,lett,space)",
+      "for_you:untraced_sentence(chosen,lett,low,old,run,simp)",
+      "for_you:pathologises_a_light_state(worry)",
+      "practice:pathologises_a_light_state(worry)",
+      "audio_open:names_treatment(detox)",
+      "audio_close:pathologises_a_light_state(Worry)",
+      "for_you:pathologises_a_light_state(worry)",
+      "practice:pathologises_a_light_state(worry)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "words": [
+      {
+       "sa": "अनन्याः",
+       "en": "exclusive"
+      },
+      {
+       "sa": "चिन्तयन्तः",
+       "en": "thinking"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "जनाः",
+       "en": "people"
+      },
+      {
+       "sa": "पर्युपासते",
+       "en": "worship"
+      },
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "नित्याभियुक्तानाम्",
+       "en": "always attached"
+      },
+      {
+       "sa": "योगक्षेमम्",
+       "en": "well-being and protection"
+      },
+      {
+       "sa": "वहामि",
+       "en": "I carry"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 6.634,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are turning toward Vrindavan with a full heart. The part of you that lacks and the part that holds are both in his keeping now.",
+     "try_today": "Notice one small thing you already have and let it rest.",
+     "scene_line": "You stand at the edge of a great change, and the one who guards what you have is already there.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.9.22",
+     "path": "bg.9.22 -heals-> chinta via sharanagati",
+     "why": [
+      "The child relies on the mother and stops worrying.",
+      "the worry of getting and keeping is carried by God for the one wholly turned to him"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.no_winter",
+      "viv.4.hold_on_brave_heart",
+      "bg.2.40"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(alive,fine,resolv,tide,want)",
+      "scene_line:not_second_person",
+      "scene_line:pathologises_a_light_state(carry)",
+      "audio_open:names_treatment(detox)",
+      "audio_open:names_treatment(medications)",
+      "audio_open:pathologises_a_light_state(afraid)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.5.12.14",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.14",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha describes King Janaka after his awakening, still ruling his kingdom.",
+     "sanskrit": "भविष्यं नानुसंधत्ते नातीतं चिन्तयत्यसौ । वर्तमाननिमेषं तु हसन्नेवानुवर्तते ॥",
+     "line": "Don't chase the future or brood on the past. Meet this moment with a smile.",
+     "translation": "He does not chase the future or brood on the past; he simply goes along with the present moment, smiling.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.846,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You want to go to Vrindavan. That resolve is already here. You can go along with this day, smiling.",
+     "try_today": "Notice one moment of the day and meet it with a smile.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "yv.5.12.14",
+     "path": "yv.5.12.14 -heals-> chinta via c:vartamana",
+     "why": [
+      "Do not chase the future or brood on the past.",
+      "a picture of a mind not living ahead or behind"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.18.48",
+      "viv.2.angels_unawares",
+      "yv.6a.26.18"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person",
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 6.494,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "A resolve is already there. The study of your own life continues as you step into the next room.",
+     "try_today": "Speak the truth in one small conversation today.",
+     "scene_line": "You leave the school of study with the truth still to speak and the path still to walk.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_taittiriya.49",
+     "path": "up_taittiriya.49 -cultivates-> dhriti",
+     "why": [
+      "study is to be kept up, not finished",
+      "three plain commitments to carry into working life"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "mbh.5.38.16",
+      "bg.6.25",
+      "up_taittiriya.43"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(enough,going,light,matter,moving,toward)",
+      "scene_line:untraced_sentence(chapte,classr,edge,leave,new,ready)"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.136.1",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 136.1",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "नैव राज्ञा दरः कार्यो जातु कस्यांचिदापदि / अथ चेदपि दीर्णः स्यान्नैव वर्तेत दीर्णवत्",
+     "line": "In a crisis, you may be shaken inside. Don't let fear make your decisions for you.",
+     "translation": "A leader should never show fear in any crisis. Even if shaken inside, he should not act like a shaken man.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "This is about not acting from panic, not about hiding your feelings from everyone.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 7.495,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You want to keep the turning good. A leader may be shaken inside and still act with steadiness. Let your next step be decided by your own will.",
+     "try_today": "Notice the steadiness beneath your hope today.",
+     "scene_line": "You sit with your own resolve, as Vidula found her son, and choose to rise.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.136.1",
+     "path": "mbh.5.136.1 -cultivates-> dhriti",
+     "why": [
+      "Courage and steadiness are the wheels of the chariot that wins; do not let fear decide.",
+      "Composure for those who depend on one"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "mbh.12.55.16",
+      "viv.2.never_mind_failures",
+      "rcm.2.292.chaupai.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:untraced_sentence(action,anyway,choose,steady)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.mbh.sarasvata_keeps_the_learning",
+     "title": "The boy who kept studying through the twelve-year drought",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Sarasvata",
+      "the elder sages"
+     ],
+     "story_hook": "Twelve years of drought made every scholar forget what he knew. Except one boy, who never stopped reciting.",
+     "summary": "A drought lasts twelve years. The great sages scatter in every direction to find food, and in the struggle to survive they forget what they had learned. One young man, the son of the river Sarasvati, is about to leave too.",
+     "lesson": "What is practised daily through the lean years is what survives them; knowledge, not age, makes the teacher.",
+     "matched": [],
+     "anchor": null,
+     "score": 7.464,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Twelve years of drought made every scholar forget what he knew. Except one boy, who never stopped reciting.",
+     "for_you": "You are keeping the practice going through the lean years. That knowledge will make you the teacher when the rains return.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.sarasvata_keeps_the_learning",
+     "path": "st.mbh.sarasvata_keeps_the_learning -enacts_in-> bhaya, chinta ; st.mbh.sarasvata_keeps_the_learning -enacts_turn-> dhriti, shraddha",
+     "why": [
+      "What is practised daily through the lean years is what survives them; knowledge, not age, makes the teacher."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.sunayana_too_young",
+      "st.mbh.savitri_chooses_with_open_eyes",
+      "st.rcm.dharma_rath"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.sarasvata_keeps_the_learning",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 72,
+   "v3_w1_write": 7872,
+   "v3_w1_total": 7946,
+   "select": 7946,
+   "total": 7948
+  },
+  "_ms": 7955
+ }
+}

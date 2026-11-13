@@ -1,0 +1,1079 @@
+{
+ "case": "l_peaceful",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "I want to understand what the Gita teaches",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want a calm start to my day",
+   "mirror": "I want a calm start to my day",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.8,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.275,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.233,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.228,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 1.19,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.55,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels curious; closest to \"I want a calm start to my day\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.06,wro=0.05,see=0.65",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.6.25",
+   "ref": "Bhagavad Gita 6.25",
+   "ref_iast": "Bhagavad Gītā 6.25",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+   "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+   "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+   "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+   "words": [
+    {
+     "sa": "slowly",
+     "en": "gradually"
+    },
+    {
+     "sa": "slowly",
+     "en": "gradually"
+    },
+    {
+     "sa": "surpass",
+     "en": "transcend"
+    }
+   ],
+   "why": "Moderation and gentle return, again and again, settle the mind.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.3",
+    "title": "Meditation in detail",
+    "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+    "story_hook": "",
+    "lesson": "Moderation and gentle return, again and again, settle the mind."
+   },
+   "score": 2.5586,
+   "beat": "hook",
+   "role_fit": 0.015,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.4.34",
+    "ref": "Bhagavad Gita 4.34",
+    "ref_iast": "Bhagavad Gītā 4.34",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+    "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+    "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+    "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+    "words": [
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "विद्धि",
+      "en": "know"
+     },
+     {
+      "sa": "प्रणिपातेन",
+      "en": "by prostration"
+     },
+     {
+      "sa": "परिप्रश्नेन",
+      "en": "by sincere questioning"
+     },
+     {
+      "sa": "सेवया",
+      "en": "by service"
+     },
+     {
+      "sa": "उपदेक्ष्यन्ति",
+      "en": "will teach"
+     },
+     {
+      "sa": "ते",
+      "en": "to you"
+     },
+     {
+      "sa": "ज्ञानम्",
+      "en": "knowledge"
+     },
+     {
+      "sa": "ज्ञानिनः",
+      "en": "the knowers"
+     },
+     {
+      "sa": "तत्त्वदर्शिनः",
+      "en": "who see reality"
+     }
+    ],
+    "why": "Learn humbly, trust the process, and cut through doubt to act.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "reconnect_faith",
+      "label": "I want to reconnect with my roots"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p04.4",
+     "title": "The glory of knowledge",
+     "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+     "story_hook": "",
+     "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+    },
+    "score": 2.168,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.6.35",
+    "ref": "Bhagavad Gita 6.35",
+    "ref_iast": "Bhagavad Gītā 6.35",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+    "sanskrit": "श्री भगवानुवाचअसंशयं महाबाहो मनो दुर्निग्रहं चलं । अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥",
+    "line": "Yes, the mind is restless and hard to hold. But practice and letting go can train it.",
+    "translation": "The Blessed Lord said: Undoubtedly, mighty-armed one, the mind is restless and hard to control. But it is held by practice and by detachment, Kaunteya.",
+    "words": [
+     {
+      "sa": "श्रीभगवानुवाच",
+      "en": "The Supreme Being spoke"
+     },
+     {
+      "sa": "असंशयं",
+      "en": "undoubtedly"
+     },
+     {
+      "sa": "महाबाहो",
+      "en": "O mighty-armed"
+     },
+     {
+      "sa": "मनः",
+      "en": "mind"
+     },
+     {
+      "sa": "दुर्निग्रहं",
+      "en": "difficult to control"
+     },
+     {
+      "sa": "चलं",
+      "en": "restless"
+     },
+     {
+      "sa": "अभ्यासेन",
+      "en": "by practice"
+     },
+     {
+      "sa": "तु",
+      "en": "indeed"
+     },
+     {
+      "sa": "कौन्तेय",
+      "en": "O son of Kunti"
+     },
+     {
+      "sa": "वैराग्येण",
+      "en": "by detachment"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     }
+    ],
+    "why": "The mind is hard to hold, but practice and letting go train it.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "restless_mind",
+      "label": "I can't focus, my mind is restless"
+     },
+     {
+      "id": "discipline",
+      "label": "I can't stay consistent"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.4",
+     "title": "Mastering the mind",
+     "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+     "story_hook": "",
+     "lesson": "The mind is hard to hold, but practice and letting go train it."
+    },
+    "score": 2.1392,
+    "beat": "hook",
+    "role_fit": 0.33,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 414,
+   "llm": 7010,
+   "total": 11296,
+   "select": 3868
+  },
+  "_ms": 11306
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i want to understand what the gita teaches",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want a calm start to my day",
+   "mirror": "I want a calm start to my day",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.8,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.275,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.233,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.228,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 1.19,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.55,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels curious; closest to \"I want a calm start to my day\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:25=0.6,67=0.6,14=0.6,10=0.3,9=0.6,15=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.64,max=0.74",
+    "dropped:repeat=5,soft_kept=5,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.25",
+     "ref": "Bhagavad Gita 6.25",
+     "ref_iast": "Bhagavad Gītā 6.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+     "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+     "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+     "words": [
+      {
+       "sa": "slowly",
+       "en": "gradually"
+      },
+      {
+       "sa": "slowly",
+       "en": "gradually"
+      },
+      {
+       "sa": "surpass",
+       "en": "transcend"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.8054,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna is teaching Arjuna how to sit with the mind. The mind wanders, and it will not stay still all at once. The instruction is to come to rest little by little. One holds understanding steady and fixes the mind on what is real, letting other thoughts go. It is a gentle, repeated settling, not a single forceful act.",
+     "for_you": "Your mind keeps running because it was never taught to stop. It is not a flaw. It is a habit of work and worry that has no switch. You do not need to push it down. You could come to rest little by little, with patience.",
+     "try_today": null,
+     "scene_line": "You are sitting in your quiet morning, and the mind is a lamp in a place where the wind has not yet stopped.",
+     "asks": [
+      "How do I tell my mind to stop without fighting it?",
+      "Can I really let other thoughts go?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "words": [
+      {
+       "sa": "इन्द्रियाणां",
+       "en": "of the senses"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "चरतां",
+       "en": "moving"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "अनुविधीयते",
+       "en": "follows"
+      },
+      {
+       "sa": "तदस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "हरति",
+       "en": "carries away"
+      },
+      {
+       "sa": "प्रज्ञां",
+       "en": "wisdom"
+      },
+      {
+       "sa": "नावम्",
+       "en": "boat"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आम्भसि",
+       "en": "on water"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.8559,
+     "beat": "diagnose",
+     "role_fit": 0.331,
+     "meaning": "Arjuna asks Krishna what a person of steady mind looks like, and Krishna answers by describing someone content within, unshaken by sorrow, and master of the senses. He then traces how this steadiness is lost: when the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water. The point is that steadiness is built by guarding attention, because anger and ruin start with what you dwell on.",
+     "for_you": "You are working with a mind that keeps chasing what is next, and that is exactly what Krishna describes. The restlessness you feel is not a lack of will. It is the wind taking the boat.",
+     "try_today": "Notice one moment when your attention drifts, and let it go without pulling it back.",
+     "scene_line": "You are in your own morning, and the wind is already taking the boat.",
+     "asks": [
+      "How do I guard my attention without forcing it?",
+      "How do I know if I am content or just distracted?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.14",
+     "ref": "Bhagavad Gita 2.14",
+     "ref_iast": "Bhagavad Gītā 2.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥",
+     "line": "Heat and cold, pleasure and pain come and go. They don't last; learn to bear them.",
+     "translation": "Contact of the senses with their objects brings cold and heat, pleasure and pain. They come and go and do not last. Bear them patiently, Arjuna.",
+     "words": [
+      {
+       "sa": "मात्रा",
+       "en": "only"
+      },
+      {
+       "sa": "स्पर्शाः",
+       "en": "touch"
+      },
+      {
+       "sa": "तु",
+       "en": "indeed"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "शीत",
+       "en": "cold"
+      },
+      {
+       "sa": "उष्ण",
+       "en": "hot"
+      },
+      {
+       "sa": "सुख",
+       "en": "pleasure"
+      },
+      {
+       "sa": "दुःख",
+       "en": "pain"
+      },
+      {
+       "sa": "दाः",
+       "en": "giving"
+      },
+      {
+       "sa": "आगम",
+       "en": "coming"
+      },
+      {
+       "sa": "अपायिनः",
+       "en": "going away"
+      },
+      {
+       "sa": "अनित्याः",
+       "en": "impermanent"
+      },
+      {
+       "sa": "तान्",
+       "en": "them"
+      },
+      {
+       "sa": "तितिक्षस्व",
+       "en": "endure"
+      },
+      {
+       "sa": "भारत",
+       "en": "O Bharata"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Bearing passing discomfort is not putting up with harm or abuse; those are not weather to wait out.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.2555,
+     "beat": "steady",
+     "role_fit": 0.615,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him that the true self is never born and never dies, and that the body merely changes like old clothes. He says that contact between the senses and their objects brings cold and heat, pleasure and pain. These experiences come and go, and they do not last. The instruction is to bear these passing states patiently, because what you truly are outlasts every loss and every passing pain.",
+     "for_you": "Your mind moves from one restless thought to the next because it is looking for a solid ground that is not there, and that ground is not in any passing feeling. The work is not to stop the weather, but to know that the sky remains.",
+     "try_today": "Notice one passing feeling without naming it good or bad.",
+     "scene_line": "You stand on the edge of your own morning, watching the weather of your mind move across you.",
+     "asks": [
+      "How do I tell the self apart from the passing thought?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.17.8",
+     "ref": "Bhagavad Gita 17.8",
+     "ref_iast": "Bhagavad Gītā 17.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः । रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ॥",
+     "line": "Food that builds life, strength, health, cheer and calm: that's the food of a clear mind.",
+     "translation": "Foods that increase life, vitality, strength, health, happiness and cheerfulness, that are flavourful, soothing, nourishing and agreeable, are dear to the sattvic.",
+     "words": [
+      {
+       "sa": "आयुः",
+       "en": "life"
+      },
+      {
+       "sa": "सत्त्व",
+       "en": "purity"
+      },
+      {
+       "sa": "बल",
+       "en": "strength"
+      },
+      {
+       "sa": "आरोग्य",
+       "en": "health"
+      },
+      {
+       "sa": "सुख",
+       "en": "happiness"
+      },
+      {
+       "sa": "प्रीतिविवर्धनाः",
+       "en": "increasing cheerfulness"
+      },
+      {
+       "sa": "रस्याः",
+       "en": "tasty"
+      },
+      {
+       "sa": "स्निग्धाः",
+       "en": "smooth"
+      },
+      {
+       "sa": "स्थिराः",
+       "en": "firm"
+      },
+      {
+       "sa": "हृद्या",
+       "en": "pleasing to the heart"
+      },
+      {
+       "sa": "आहाराः",
+       "en": "foods"
+      },
+      {
+       "sa": "सात्त्विकप्रियाः",
+       "en": "dear to the sattvic person"
+      }
+     ],
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 1.8883,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Krishna is telling Arjuna about three kinds of food and three kinds of giving. He is explaining what a clear mind actually eats. Food that builds life, strength, health, cheer and calm is the food of a clear mind. It is not just about what is on the plate. It is about the nature of what you take in. The mind needs nourishment that steadies it. The verse proposes that the mind is fed by what is true, kind, and steady. You could choose what you feed it.",
+     "for_you": "Your mind is restless because it is being fed noise. It is trying to digest things that do not build life. Choose what you take in this morning. Let it be simple and true. Let your mind eat something that creates calm.",
+     "try_today": "Eat one thing that is plain and true, without distraction.",
+     "scene_line": "You are standing in a kitchen, choosing what to take into your body.",
+     "asks": [
+      "How do I know if my food is building calm?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.9",
+     "ref": "Bhagavad Gita 12.9",
+     "ref_iast": "Bhagavad Gītā 12.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which devotee is best; Krishna offers a ladder of practices.",
+     "sanskrit": "अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम् । अभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय ॥",
+     "line": "If you can't keep your mind fixed yet, then reach for it through regular practice.",
+     "translation": "If you cannot fix your mind steadily on me, then seek to reach me by the yoga of practice, Dhananjaya.",
+     "words": [
+      {
+       "sa": "अथ",
+       "en": "then"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "समाधातुम्",
+       "en": "to fix steadily"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "शक्नोषि",
+       "en": "you are able"
+      },
+      {
+       "sa": "मयि",
+       "en": "in me"
+      },
+      {
+       "sa": "स्थिरम्",
+       "en": "steadily"
+      },
+      {
+       "sa": "अभ्यासयोगेन",
+       "en": "through practice yoga"
+      },
+      {
+       "sa": "ततः",
+       "en": "then"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "इच्छ",
+       "en": "seek/desire"
+      },
+      {
+       "sa": "आप्तुम्",
+       "en": "to attain"
+      },
+      {
+       "sa": "धनञ्जय",
+       "en": "Dhananjaya"
+      }
+     ],
+     "why": "If the ideal is too hard, take the next step down, and keep going.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p12.1",
+      "title": "Form or formless: which devotee is best, and the ways to reach him",
+      "summary": "Krishna says devotion to a personal form is easier, then offers a ladder: fix your mind; if not, practise; if not, work for me; if not, let go of results. Letting go brings peace at once.",
+      "story_hook": "",
+      "lesson": "If the ideal is too hard, take the next step down, and keep going."
+     },
+     "score": 3.0333,
+     "beat": "act",
+     "role_fit": 0.424,
+     "meaning": "Arjuna asks Krishna which kind of devotee is the best, and Krishna offers a ladder of practices. He says fix your mind on me. If that is too hard, then reach for me through regular practice. The idea is plain: if the highest step is out of reach right now, take the next step down and keep walking. It is not a failure to not be steady today. It is simply a sign to begin where you are.",
+     "for_you": "Your work has trained you to solve, to move, to fix. But the mind that will not settle asks for a different kind of work, one that returns each day. The verse does not ask you to force stillness. It asks you to return.",
+     "try_today": "Let the first thought of the morning be a return to one practice you will do again tomorrow.",
+     "scene_line": "You are on the step just below the summit, and that is where the path begins.",
+     "asks": [
+      "What is the one practice I can return to tomorrow morning?",
+      "How do I tell returning from forcing?",
+      "What does regular practice look like in my morning?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.8",
+     "ref": "Bhagavad Gita 3.8",
+     "ref_iast": "Bhagavad Gītā 3.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥",
+     "line": "Do the work that's yours. Doing something beats doing nothing; even living needs action.",
+     "translation": "Do your allotted work, for action is better than inaction. Even the maintenance of your body would not be possible without action.",
+     "words": [
+      {
+       "sa": "नियतं",
+       "en": "prescribed"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "ज्यायः",
+       "en": "better"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "than inaction"
+      },
+      {
+       "sa": "अपि",
+       "en": "even body maintenance"
+      },
+      {
+       "sa": "च",
+       "en": "also"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "प्रसिद्ध्येत",
+       "en": "can be sustained"
+      },
+      {
+       "sa": "अकर्मणः",
+       "en": "without action"
+      }
+     ],
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 2.0228,
+     "beat": "act",
+     "role_fit": 0.851,
+     "meaning": "Arjuna asks why he must act at all if understanding is higher. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction. Doing your allotted work is better than doing nothing, because even the maintenance of your body would not be possible without action.",
+     "for_you": "You are looking for a calm start, but the mind that won't settle is still a mind that is moving. The work you do each day is already keeping the body alive, and it is also the ground where a clear mind can begin.",
+     "try_today": "Before you begin your work, take one minute to feel the weight of what you are about to do.",
+     "scene_line": "You are standing at the edge of your work, and the question is how to step in.",
+     "asks": [
+      "How can my work be the place where I rest?",
+      "What does it mean to do my work without running from it?",
+      "How do I tell the difference between action and escape?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "bg.p11.1",
+     "title": "Arjuna asks to see the cosmic form",
+     "kind": "story",
+     "family": "bg",
+     "characters": [
+      "Arjuna",
+      "Krishna"
+     ],
+     "story_hook": "His confusion gone, Arjuna made a bold request of his friend: show me who you really are.",
+     "summary": "Thanking Krishna for dispelling his confusion, Arjuna asks to see his imperishable form if he is able.",
+     "lesson": "Ask humbly for what you long to see.",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": null,
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Arjuna asked his best friend Krishna to show who he really was",
+     "teaser": "Arjuna asked his best friend Krishna to show who he really was",
+     "for_you": "The mind that would not settle asked for a vision of everything. Now you are left with the ordinary morning, the inbox, the quiet before the day. That is where your part is. You do not need to see the whole picture to begin.",
+     "asks": [
+      "How do I let go of the whole picture?",
+      "How do I hold only my small part today?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A mind that won't settle",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12401,
+   "total": 12408
+  },
+  "_ms": 12416
+ }
+}

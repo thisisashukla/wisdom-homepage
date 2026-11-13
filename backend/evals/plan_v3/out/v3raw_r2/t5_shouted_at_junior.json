@@ -1,0 +1,221 @@
+{
+ "case": "t5_shouted_at_junior",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "I keep going over it again and again",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel guilty about something I did",
+   "mirror": "I feel guilty about something I did",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "forgive",
+     "label": "I want to forgive but I can't",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel guilty about something I did. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a seeker whose mind will not settle, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I feel guilty about something I did\" and \"I can't let go of resentment\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.55,asp=0.1,wro=0.14,see=0.0",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "guilty",
+    "trail": [
+     "angry",
+     "guilty"
+    ],
+    "paused": "angry",
+    "stance": "wronged",
+    "states": [
+     "dainya",
+     "shoka"
+    ],
+    "risk": "distress",
+    "situations": [
+     "anger_outburst",
+     "guilt",
+     "resentment"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.2.75.15",
+    "first_line": "You saw the face of the junior and now the weight of your words is crushing you."
+   }
+  },
+  "hook": {
+   "id": "vr.2.75.15",
+   "ref": "Valmiki Ramayana · Ayodhya Kanda",
+   "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+   "family": "vr",
+   "speaker": "Bharata",
+   "listener": "Kausalya",
+   "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+   "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+   "line": "Why blame me, who knew nothing? You know what I feel for him.",
+   "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+   "words": [],
+   "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally"
+    }
+   ],
+   "prasang": {
+    "id": "vr.p.bharata_blamed",
+    "title": "Bharata wrongly blamed",
+    "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+    "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+    "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You saw the face of the junior and now the weight of your words is crushing you.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You saw the face of the junior and now the weight of your words is crushing you.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "mbh.12.81.6",
+    "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+    "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+    "family": "mbh",
+    "speaker": "Krishna (quoted by Bhishma)",
+    "listener": "Narada",
+    "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+    "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+    "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+    "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+    "words": [],
+    "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.krishna_narada_kin",
+     "title": "Krishna's family troubles: the weapon not made of iron",
+     "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+     "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+     "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 210,
+   "v3_candidates": 37,
+   "v3_fast_read": 1743,
+   "v3_select": 1994,
+   "v3_total": 1994,
+   "total": 1995
+  },
+  "_ms": 2000
+ }
+}

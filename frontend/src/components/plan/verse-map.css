@@ -1,0 +1,55 @@
+/* VerseMap: the Gita as 700 lamps. Built on styles/tokens.css. Rows light in once on load
+   (vm--intro); after that only taps animate. Transform and opacity only; reduced motion: none. */
+
+.vm { margin: 0; }
+.vm svg { display: block; width: 100%; height: auto; overflow: visible; -webkit-tap-highlight-color: transparent; }
+.vm--selectable svg { cursor: pointer; }
+
+.vm-ch { font: 600 9px/1 var(--font-display); fill: var(--text-dimmer); font-variant-numeric: lining-nums tabular-nums; }
+.vm-row.is-focus .vm-ch { fill: var(--sindoor); }
+
+/* a verse: an unlit lamp */
+.vm-d { fill: rgba(245, 232, 204, 0.04); stroke: rgba(245, 232, 204, 0.16); stroke-width: 0.9;
+  transition: opacity var(--t-quick) var(--ease-out), fill var(--t-quick) var(--ease-out), stroke var(--t-quick) var(--ease-out); }
+/* days mode: the plan's days alternate gold and cream */
+.vm-a { fill: rgba(245, 201, 106, 0.16); stroke: rgba(245, 201, 106, 0.72); }
+.vm-b { fill: rgba(245, 232, 204, 0.03); stroke: rgba(245, 232, 204, 0.3); }
+/* points mode: the plan verse's own dot sits under its lamp */
+.vm-p { opacity: 0; }
+/* read on this device */
+.vm-d.is-read { fill: var(--gold-light); stroke: var(--gold-light); }
+/* the chapter the guide starts you on */
+.vm-row.is-focus .vm-d { stroke: rgba(224, 136, 79, 0.85); }
+.vm-row.is-focus .vm-d.is-read { fill: var(--sindoor); stroke: var(--sindoor); }
+
+/* lamps (points mode) */
+.vm-halo { fill: rgba(245, 201, 106, 0.1); stroke: rgba(245, 201, 106, 0.42); stroke-width: 0.8; }
+.vm-core { fill: var(--gold-light); }
+.vm-n { font: 600 7.5px/1 var(--font-ui); fill: var(--gold-light); text-anchor: middle; }
+.vm-lamp { transition: opacity var(--t-quick) var(--ease-out); }
+
+/* a day picked: the rest dim, the day rings in sindoor */
+.vm.has-sel .vm-d:not(.is-sel) { opacity: 0.32; }
+.vm.has-sel .vm-d.is-sel { stroke: var(--sindoor); stroke-width: 1.3; }
+.vm.has-sel .vm-d.is-sel.is-read { fill: var(--sindoor); }
+.vm.has-sel .vm-lamp:not(.is-sel) { opacity: 0.4; }
+.vm-lamp.is-sel .vm-halo { stroke: var(--sindoor); fill: rgba(224, 136, 79, 0.16); }
+.vm-lamp.is-sel .vm-core { fill: var(--sindoor); }
+
+.vm-cap { display: flex; flex-direction: column; gap: 4px; margin-top: 12px; font-size: 12.5px; line-height: 1.5; color: var(--text-dimmer); }
+.vm-cap > :first-child:not(.vm-read) { color: var(--text-dim); }
+
+/* the one load moment: chapter rows light in order, then the lamps */
+@keyframes vm-row { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+@keyframes vm-lamp { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: none; } }
+.vm--intro .vm-row { animation: vm-row 520ms var(--ease) both; animation-delay: calc(220ms + var(--r, 0) * 42ms); }
+.vm--intro .vm-lamp { transform-box: fill-box; transform-origin: center; animation: vm-lamp var(--t-std) var(--ease-out) both; animation-delay: calc(950ms + var(--i, 0) * var(--step, 70ms)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .vm--intro .vm-row, .vm--intro .vm-lamp { animation: none; }
+  .vm-d, .vm-lamp { transition: none; }
+}
+@media print {
+  .vm--intro .vm-row, .vm--intro .vm-lamp { animation: none; }
+  .vm-cap .vm-read { display: none; }
+}

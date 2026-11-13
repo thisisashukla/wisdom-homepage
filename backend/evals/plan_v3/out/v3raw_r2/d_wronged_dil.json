@@ -1,0 +1,226 @@
+{
+ "case": "d_wronged_dil",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "work",
+    "partner",
+    "child",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Tension with my in-laws",
+   "mirror": "Tension with my in-laws",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Tension with my in-laws. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+    "act": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands.",
+    "story": "A story of a son or daughter and their parents, facing expecting them to be different."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels uneasy; closest to \"Tension with my in-laws\" and \"My partner and I keep fighting\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.1,wro=0.42,see=0.0",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "hurt",
+     "angry",
+     "hurt"
+    ],
+    "paused": "angry",
+    "stance": "wronged",
+    "states": [
+     "dainya",
+     "shoka",
+     "krodha"
+    ],
+    "risk": "distress",
+    "situations": [
+     "inlaws",
+     "marriage_conflict"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.2.75.15",
+    "first_line": "Your husband's silence as your in-laws belittle you must feel like a deep betrayal."
+   }
+  },
+  "hook": {
+   "id": "vr.2.75.15",
+   "ref": "Valmiki Ramayana · Ayodhya Kanda",
+   "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+   "family": "vr",
+   "speaker": "Bharata",
+   "listener": "Kausalya",
+   "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+   "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+   "line": "Why blame me, who knew nothing? You know what I feel for him.",
+   "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+   "words": [],
+   "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [],
+   "prasang": {
+    "id": "vr.p.bharata_blamed",
+    "title": "Bharata wrongly blamed",
+    "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+    "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+    "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your husband's silence as your in-laws belittle you must feel like a deep betrayal.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your husband's silence as your in-laws belittle you must feel like a deep betrayal.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "mbh.12.81.6",
+    "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+    "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+    "family": "mbh",
+    "speaker": "Krishna (quoted by Bhishma)",
+    "listener": "Narada",
+    "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+    "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+    "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+    "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+    "words": [],
+    "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [
+     {
+      "id": "inlaws",
+      "label": "Tension with my in-laws"
+     }
+    ],
+    "prasang": {
+     "id": "mbh.p.krishna_narada_kin",
+     "title": "Krishna's family troubles: the weapon not made of iron",
+     "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+     "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+     "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 251,
+   "v3_candidates": 42,
+   "v3_fast_read": 2231,
+   "v3_select": 2528,
+   "v3_total": 2528,
+   "total": 2530
+  },
+  "_ms": 2535
+ }
+}

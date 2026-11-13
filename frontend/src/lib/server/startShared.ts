@@ -31,6 +31,43 @@ export function profileBody(p: StartProfile | undefined) {
   }
 }
 
+/**
+ * Tracking ids for the backend's plan_runs row (backend ai/run_log.py), from the browser's `client`
+ * (lib/onboarding/trace.ts) plus what only this server knows: the signed-in uid and the visitor's country.
+ * Never changes the answer.
+ */
+export type StartClient = {
+  requestId?: string
+  onboardingId?: string
+  distinctId?: string
+  context?: string
+  emotion?: string
+  emotionTrail?: string[]
+  dev?: boolean
+}
+const ID_RE = /^[A-Za-z0-9:_.$-]{1,128}$/
+const WORD_RE = /^[a-z_]{1,40}$/
+const id = (v: unknown, max = 64) => (typeof v === 'string' && ID_RE.test(v) ? v.slice(0, max) : null)
+
+export function clientBody(c: StartClient | undefined, req: Request, uid?: string | null) {
+  const x = c ?? {}
+  const country = (req.headers.get('x-vercel-ip-country') || '').trim().slice(0, 8) || null
+  return {
+    request_id: id(x.requestId),
+    onboarding_id: id(x.onboardingId),
+    distinct_id: id(x.distinctId, 128),
+    user_id: uid ? uid.slice(0, 128) : null,
+    platform: 'web' as const,
+    app_version: null,
+    context: typeof x.context === 'string' && WORD_RE.test(x.context) ? x.context : 'onboarding',
+    emotion: typeof x.emotion === 'string' && WORD_RE.test(x.emotion) ? x.emotion : null,
+    emotion_trail: Array.isArray(x.emotionTrail) ? x.emotionTrail.filter((w) => typeof w === 'string' && WORD_RE.test(w)).slice(-20) : [],
+    note_withheld: null,
+    country,
+    dev: !!x.dev,
+  }
+}
+
 /** Some sources fuse the speaker label onto the first word ("अर्जुन उवाचयोऽयं"): drop it for display. */
 export function cleanSanskrit(s?: string | null): string | null {
   if (!s) return null

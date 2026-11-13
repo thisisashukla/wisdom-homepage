@@ -1,0 +1,1021 @@
+{
+ "case": "r4_student_future",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels restless; closest to \"I'm anxious about how things will turn out\" and \"I feel anxious most of the time\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.3,wro=0.0,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "anxious"
+    ],
+    "paused": "overthinking",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "chanchalya",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "outcome_anxiety",
+     "uncertainty",
+     "anxiety_general"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bg.1.29",
+    "first_line": "Your mind won't settle because your future feels uncertain, and your body is reacting to that fear."
+   }
+  },
+  "hook": {
+   "id": "bg.1.29",
+   "ref": "Bhagavad Gita 1.29–30",
+   "ref_iast": "Bhagavad Gītā 1.29–30",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+   "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+   "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+   "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+   "words": [
+    {
+     "sa": "सीदन्ति",
+     "en": "are failing"
+    },
+    {
+     "sa": "मम",
+     "en": "my"
+    },
+    {
+     "sa": "गात्राणि",
+     "en": "limbs"
+    },
+    {
+     "sa": "मुखं",
+     "en": "mouth"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "परिशुष्यति",
+     "en": "dries up"
+    },
+    {
+     "sa": "वेपथुः",
+     "en": "trembling"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "शरीरे",
+     "en": "in the body"
+    },
+    {
+     "sa": "मे",
+     "en": "my"
+    },
+    {
+     "sa": "रोम-हर्षः",
+     "en": "standing of hair"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "जायते",
+     "en": "arises"
+    }
+   ],
+   "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+   "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p01.4",
+    "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+    "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+    "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+    "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind won't settle because your future feels uncertain, and your body is reacting to that fear.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind won't settle because your future feels uncertain, and your body is reacting to that fear.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "yv.5.66.34",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+    "family": "yv",
+    "speaker": "Bhasa",
+    "listener": "Vilasa",
+    "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+    "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+    "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+    "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+    "words": [],
+    "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "overthinking",
+      "label": "I can't stop overthinking"
+     },
+     {
+      "id": "sleep_mind",
+      "label": "I can't sleep, my mind is racing"
+     }
+    ],
+    "prasang": {
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "yv.1.12.22",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 12.22",
+    "family": "yv",
+    "speaker": "Rama",
+    "listener": "Vishvamitra and Vasishtha",
+    "setting": "Young Rama, back from his travels, tells the sages in his father's court why nothing interests him.",
+    "sanskrit": "संसारदुःखपाषाणनीरन्ध्रहृदयोऽप्यहम् । निजलोकभयादेव गलद्वाष्पं न रोदिमि ॥",
+    "line": "My heart feels heavy as stone, but I don't cry, because of what people would think.",
+    "translation": "Though my heart is packed tight with the stones of life's sorrows, I don't let my tears fall, only out of fear of what my own people would think.",
+    "words": [],
+    "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+    "misuse": "Holding tears in is not strength. Rama's healing began when he finally said it aloud.",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "yv.p.ram_lament",
+     "title": "Rama's lament: what is the point of all this?",
+     "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+     "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+     "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 495,
+   "v3_candidates": 80,
+   "v3_fast_read": 1966,
+   "v3_select": 2546,
+   "v3_first_line": 646,
+   "v3_total": 3192,
+   "total": 3193
+  },
+  "_ms": 3198
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm anxious about how things will turn out. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a seeker whose mind will not settle, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels restless; closest to anxious about how things will turn out\" and \"I feel anxious most of the time\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "v3:for_you:5/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "anxious"
+    ],
+    "paused": "overthinking",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "chanchalya",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "outcome_anxiety",
+     "uncertainty",
+     "anxiety_general"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.1.29",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "Your mind won't settle because your future feels uncertain, and your body is reacting to that fear."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "words": [
+      {
+       "sa": "सीदन्ति",
+       "en": "are failing"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "गात्राणि",
+       "en": "limbs"
+      },
+      {
+       "sa": "मुखं",
+       "en": "mouth"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "परिशुष्यति",
+       "en": "dries up"
+      },
+      {
+       "sa": "वेपथुः",
+       "en": "trembling"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "शरीरे",
+       "en": "in the body"
+      },
+      {
+       "sa": "मे",
+       "en": "my"
+      },
+      {
+       "sa": "रोम-हर्षः",
+       "en": "standing of hair"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 9.882,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": "Arjuna's body fails him. His limbs weaken, his mouth dries, his body shakes, his hair stands on end, his bow slips from his hand, and his mind reels. The strong feel fear and grief in their flesh. The teaching begins with this collapse, not with a hero holding steady.",
+     "for_you": "Your mind will not settle, and your future feels heavy. Arjuna’s body shook before he could speak. You do not have to stand firm to be worthy.",
+     "try_today": "Notice where your body holds the worry today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.1.29",
+     "path": "Day 1 kept from the first screen (rcm.2.225.chaupai.3 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "yv.1.12.22",
+      "mbh.3.314.61",
+      "rcm.5.6.chaupai.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:invented_life_detail(your mouth dry)",
+      "scene_line:invented_body_state(your mouth dry)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.11.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 11.6",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "his own mind",
+     "setting": "Janaka, having chosen to keep ruling, talks gently to his own restless mind at night.",
+     "sanskrit": "यथा यथा विकल्पौघान्संकल्पयसि हेलया । तथा तथैति स्फारत्वं संसारस्तव चिन्तया ॥",
+     "line": "The more scenarios you spin, the bigger your world of worry grows.",
+     "translation": "The more you casually spin up fancies and possibilities, the more your world of troubles swells, through your own worrying.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 8.759,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is spinning out futures that do not exist. Each imagined scene feeds a worry that grows beyond its size. Let the spinning stop for a moment.",
+     "try_today": null,
+     "scene_line": "You sit with your books, watching your mind spin futures into a world of worry.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "yv.5.11.6",
+     "path": "yv.5.11.6 -states_chain-> yv.worry_fed_by_thought [sankalpa_kalpana -causes-> chinta]",
+     "why": [
+      "Worry grows when you feed it (Yoga Vasishtha 5.21.6)",
+      "the swelling is traced to the spinning, which can be stopped"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.5.21.6",
+      "bg.2.67",
+      "bg.2.60"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "practice:let_go_of_hope(let it go)",
+      "practice:untraced_sentence(around,map,minute,set,tomorr)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.4.no_winter",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 4",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Poem 'Hold On Yet a While, Brave Heart', second stanza.",
+     "sanskrit": null,
+     "line": "No winter was but summer came behind,",
+     "translation": "No winter was but summer came behind, Each hollow crests the wave, They push each other in light and shade; Be steady then and brave.",
+     "words": [],
+     "why": "No struggle is wasted; hold on a little longer.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.poem.hold_on",
+      "title": "'Hold on yet a while, brave heart' (poem to the Maharaja of Khetri)",
+      "summary": "A short poem of encouragement to a friend. Clouds hide the sun for a while, summer always follows winter, and no honest struggle is wasted even when hopes fail.",
+      "story_hook": "",
+      "lesson": "No struggle is wasted; hold on a little longer."
+     },
+     "score": 11.283,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is restless, and that is a real weight. But even this circling worry is just the wave cresting. Be steady, and let the next light find you.",
+     "try_today": "Notice one moment of shade, and trust that the light is already behind it.",
+     "scene_line": "You push through your days of study, and the light and shade of your effort push each other forward.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.4.no_winter",
+     "path": "viv.4.no_winter -heals-> chinta",
+     "why": [
+      "the dark season turns",
+      "be steady and brave"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.40",
+      "up_chhandogya.492",
+      "mbh.12.104.57"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.6a.26.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 26.18",
+     "family": "yv",
+     "speaker": "Bhushunda",
+     "listener": "Vasishtha",
+     "setting": "Bhushunda, the ancient crow, tells Vasishtha why he lives long and well.",
+     "sanskrit": "किमद्य मम संपन्नं प्रातर्वा भविता पुनः । इति चिन्ताज्वरो नास्ति तेन जीवाम्यनामयः ॥",
+     "line": "'What happened today? What comes tomorrow?' I don't run that fever. That's why I live well.",
+     "translation": "'What has happened to me today? What will come tomorrow?' I have no such fever of worry; so I live long, free of illness.",
+     "words": [],
+     "why": "A long, steady life comes from a mind that stays in the present, wants little and stays kind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhushunda",
+      "title": "Bhushunda, the crow who outlived the ages",
+      "summary": "Vasishtha travels to a wish-fulfilling tree on Mount Meru to meet Bhushunda, a crow who has watched world-ages come and go. Asked how he has lived so long, untroubled, Bhushunda lists his habits: he doesn't brood on the past or future, doesn't fret about what he'll get next, doesn't grow arrogant from knowing, and shares in others' joys and sorrows.",
+      "story_hook": "High on a mountain lived a crow who had watched whole ages of the world rise and fall.",
+      "lesson": "A long, steady life comes from a mind that stays in the present, wants little and stays kind."
+     },
+     "score": 9.494,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "yv.6a.26.18",
+     "path": "yv.6a.26.18 -heals-> chinta via c:vartamana",
+     "why": [
+      "Do not chase the future or brood on the past.",
+      "worry is called a fever he does not run"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.1.21.21",
+      "viv.2.remedy_weakness",
+      "ashtavakra.18.98"
+     ],
+     "thin": false,
+     "personal_source": {},
+     "personal_issues": [
+      "llm_error:ReadTimeout"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "viv.8.take_things_easy",
+     "ref": "Complete Works, Vol. 8, Epistles – Fourth Series, CXXIV, p. 448",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 8",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Swami Ramakrishnananda (Shashi)",
+     "setting": "Letter from Belur, March 1898, to brother monks running a new centre.",
+     "sanskrit": null,
+     "line": "The Lord is watching over us; there is no fear; do not lose your nerves, keep your health and take things easy.",
+     "translation": "Do look after Alasinga. I have an idea that he is breaking himself with work. Tell him, the best work is only done by alternate repose and work. Give him all my love. We had two public lectures in Calcutta, one from Miss Noble and the other from our Sharat. Both of them did very well indeed; there was great enthusiasm, which shows that the Calcutta public has not forgotten us. Some of the members of the Math had a touch of influenza. They are all right now. The thing is working nicely. Shri (Holy) Mother is here, and the European and American ladies went the other day to see her, and what do you think, Mother ate with them even there! Is not that grand? The Lord is watching over us; there is no fear; do not lose your nerves, keep your health and take things easy. It is always good to give a few strong strokes and rest on your oars. Rakhal is living with the new land and buildings. I was not satisfied with the Mahotsava this year. What it should be is a grand mixture of all the different phases here. We shall try it next year — I shall send instructions. With love to all of you there and blessings.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": null,
+     "score": 5.644,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind keeps circling the future, and that worry is heavy. The best work comes from alternating effort with rest.",
+     "try_today": "Work for a while, then rest on your oars.",
+     "scene_line": "You are breaking yourself with work, while the Lord watches over you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "viv.8.take_things_easy",
+     "path": "viv.8.take_things_easy -cultivates-> shanti",
+     "why": [
+      "take things easy",
+      "a few strong strokes, then rest on your oars"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_maha.532",
+      "viv.1.wait_and_watch",
+      "mbh.12.176.67"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.136.1",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 136.1",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "नैव राज्ञा दरः कार्यो जातु कस्यांचिदापदि / अथ चेदपि दीर्णः स्यान्नैव वर्तेत दीर्णवत्",
+     "line": "In a crisis, you may be shaken inside. Don't let fear make your decisions for you.",
+     "translation": "A leader should never show fear in any crisis. Even if shaken inside, he should not act like a shaken man.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "This is about not acting from panic, not about hiding your feelings from everyone.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 4.7,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind circles the future and makes you feel small. You do not have to let that fear choose your next move. You can feel shaken and still keep going.",
+     "try_today": "Notice when fear is trying to make your decision for you.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.136.1",
+     "path": "mbh.5.136.1 -cultivates-> abhaya",
+     "why": [
+      "Bearing of fearlessness",
+      "Courage and steadiness are the wheels of the chariot that wins; do not let fear decide."
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.vairagya.62",
+      "yv.2.16.8",
+      "bg.2.48"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:preachy(you must)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhushunda",
+     "title": "Bhushunda, the crow who outlived the ages",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhushunda",
+      "Vasishtha"
+     ],
+     "story_hook": "High on a mountain lived a crow who had watched whole ages of the world rise and fall.",
+     "summary": "Vasishtha travels to a wish-fulfilling tree on Mount Meru to meet Bhushunda, a crow who has watched world-ages come and go. Asked how he has lived so long, untroubled, Bhushunda lists his habits: he doesn't brood on the past or future, doesn't fret about what he'll get next, doesn't grow arrogant from knowing, and shares in others' joys and sorrows.",
+     "lesson": "A long, steady life comes from a mind that stays in the present, wants little and stays kind.",
+     "matched": [],
+     "anchor": null,
+     "score": 15.11,
+     "why": null,
+     "hook_title": "An old crow had watched whole ages of the world rise and fall, untroubled",
+     "teaser": "An old crow had watched whole ages of the world rise and fall, untroubled",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.yv.bhushunda_the_old_crow",
+     "path": "st.yv.bhushunda_the_old_crow -enacts_in-> bhaya, chinta ; st.yv.bhushunda_the_old_crow -enacts_turn-> abhaya, samatva, shanti ; st.yv.bhushunda_the_old_crow -fits_situation-> anxiety_general",
+     "why": [
+      "Death and fear find little hold on the one who watches the breath and is not burned by worries about past and future."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.sita_at_the_bow",
+      "st.bhakti.tulsi_bahuk_pain_in_the_arm",
+      "st.viv.ghost_that_must_be_kept_busy"
+     ],
+     "thin": false,
+     "story_id": "st.yv.bhushunda_the_old_crow",
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:long(57)",
+      "for_you:contrast_pattern(not survive by pushing the worry away, but)",
+      "audio_close:long(23)",
+      "for_you:inverts_the_claim(without holding)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When the outcome holds you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 69,
+   "v3_w1_write": 8243,
+   "v3_w1_total": 8313,
+   "select": 8314,
+   "total": 8316
+  },
+  "_ms": 8321
+ }
+}

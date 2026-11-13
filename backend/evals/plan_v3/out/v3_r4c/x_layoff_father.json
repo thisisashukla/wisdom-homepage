@@ -1,0 +1,1149 @@
+{
+ "case": "x_layoff_father",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost my job",
+   "mirror": "I lost my job",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.7,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I lost my job. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a warrior or servant doing hard duty, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"I lost my job\" and \"Should I quit my job or stay\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.03,wro=0.35,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "note_cue:layoff",
+    "fr:pick:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:wronged_unsupported",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "struggle",
+    "states": [
+     "dharma_sankata",
+     "shoka",
+     "nirveda",
+     "moha"
+    ],
+    "risk": "none",
+    "situations": [
+     "layoff",
+     "quit_or_stay",
+     "hard_conversation",
+     "procrastination"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": true,
+    "caste_ok": false,
+    "health": false,
+    "pick": "rcm.2.170.chaupai.7",
+    "first_line": "You still wake at 6 as if the office calls, yet even good advice leaves your heart without peace."
+   }
+  },
+  "hook": {
+   "id": "rcm.2.170.chaupai.7",
+   "ref": "Ramcharitmanas · Ayodhya Kand",
+   "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 170",
+   "family": "rcm",
+   "speaker": "Bharat",
+   "listener": "Vasishtha and Kausalya",
+   "setting": "Bharat, urged by his teacher and mother to accept the throne, explains why he cannot.",
+   "sanskrit": "तुम्ह तौ देहु सरल सिख सोई। जो आचरत मोर भल होई॥ जद्यपि यह समुझत हउँ नीकें। तदपि होत परितोष न जी कें ॥",
+   "line": "I understand your advice perfectly. My heart still isn't at peace.",
+   "translation": "You give me simple advice, the kind that would do me good if I followed it. Though I understand it well, my heart is not at peace.",
+   "words": [
+    {
+     "sa": "तुम्ह",
+     "en": "you"
+    },
+    {
+     "sa": "तौ",
+     "en": "indeed"
+    },
+    {
+     "sa": "देहु",
+     "en": "you give"
+    },
+    {
+     "sa": "सरल",
+     "en": "simple"
+    },
+    {
+     "sa": "सिख",
+     "en": "teaching"
+    },
+    {
+     "sa": "सोई",
+     "en": "that same"
+    },
+    {
+     "sa": "जो",
+     "en": "which"
+    },
+    {
+     "sa": "आचरत",
+     "en": "by practicing"
+    },
+    {
+     "sa": "मोर",
+     "en": "my"
+    },
+    {
+     "sa": "भल",
+     "en": "good"
+    },
+    {
+     "sa": "होई",
+     "en": "happens"
+    },
+    {
+     "sa": "जद्यपि",
+     "en": "although"
+    },
+    {
+     "sa": "यह",
+     "en": "this"
+    },
+    {
+     "sa": "समुझत",
+     "en": "understanding"
+    },
+    {
+     "sa": "हउँ",
+     "en": "I am"
+    },
+    {
+     "sa": "नीकें",
+     "en": "well"
+    },
+    {
+     "sa": "तदपि",
+     "en": "still"
+    },
+    {
+     "sa": "होत",
+     "en": "happens"
+    },
+    {
+     "sa": "परितोष",
+     "en": "contentment"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "जी",
+     "en": "heart"
+    },
+    {
+     "sa": "कें",
+     "en": "in"
+    }
+   ],
+   "why": "When head and heart disagree, go and face the person you think you wronged.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "rcm.p.vasishtha_bharat",
+    "title": "Bharat refuses the throne",
+    "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+    "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+    "lesson": "When head and heart disagree, go and face the person you think you wronged."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You still wake at 6 as if the office calls, yet even good advice leaves your heart without peace.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You still wake at 6 as if the office calls, yet even good advice leaves your heart without peace.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "vr.5.13.17",
+    "ref": "Valmiki Ramayana, Sundara Kanda 13.17",
+    "ref_iast": "Vālmīki Rāmāyaṇa 5.13.17",
+    "family": "vr",
+    "speaker": "Hanuman",
+    "listener": "himself",
+    "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+    "sanskrit": null,
+    "line": "If I report it, I am wrong, and if I stay silent, I am wrong. I do not see what I should do.",
+    "translation": "If I report the situation, I will be blamed, and if I do not report it, I will be blamed. The right course of action is unclear to me.",
+    "words": [],
+    "why": "When you have looked everywhere, look again; giving up costs too much.",
+    "misuse": null,
+    "tone": null,
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "yv.1.12.22",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 12.22",
+    "family": "yv",
+    "speaker": "Rama",
+    "listener": "Vishvamitra and Vasishtha",
+    "setting": "Young Rama, back from his travels, tells the sages in his father's court why nothing interests him.",
+    "sanskrit": "संसारदुःखपाषाणनीरन्ध्रहृदयोऽप्यहम् । निजलोकभयादेव गलद्वाष्पं न रोदिमि ॥",
+    "line": "My heart feels heavy as stone, but I don't cry, because of what people would think.",
+    "translation": "Though my heart is packed tight with the stones of life's sorrows, I don't let my tears fall, only out of fear of what my own people would think.",
+    "words": [],
+    "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+    "misuse": "Holding tears in is not strength. Rama's healing began when he finally said it aloud.",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "yv.p.ram_lament",
+     "title": "Rama's lament: what is the point of all this?",
+     "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+     "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+     "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 190,
+   "v3_candidates": 75,
+   "v3_fast_read": 2160,
+   "v3_select": 2428,
+   "v3_first_line": 603,
+   "v3_total": 3032,
+   "total": 3033
+  },
+  "_ms": 3038
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost my job",
+   "mirror": "I lost my job",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.7,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I lost my job. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a warrior or servant doing hard duty, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"I lost my job\" and I quit my job or stay\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "v3:no_line_swap:D2_see_why:mbh.12.27.12->bg.1.47:no personal line passed the checker",
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "struggle",
+    "states": [
+     "dharma_sankata",
+     "shoka",
+     "nirveda",
+     "moha"
+    ],
+    "risk": "none",
+    "situations": [
+     "layoff",
+     "quit_or_stay",
+     "hard_conversation",
+     "procrastination"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.2.170.chaupai.7",
+    "threat": true,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You still wake at 6 as if the office calls, yet even good advice leaves your heart without peace."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.2.170.chaupai.7",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 170",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Vasishtha and Kausalya",
+     "setting": "Bharat, urged by his teacher and mother to accept the throne, explains why he cannot.",
+     "sanskrit": "तुम्ह तौ देहु सरल सिख सोई। जो आचरत मोर भल होई॥ जद्यपि यह समुझत हउँ नीकें। तदपि होत परितोष न जी कें ॥",
+     "line": "I understand your advice perfectly. My heart still isn't at peace.",
+     "translation": "You give me simple advice, the kind that would do me good if I followed it. Though I understand it well, my heart is not at peace.",
+     "words": [
+      {
+       "sa": "तुम्ह",
+       "en": "you"
+      },
+      {
+       "sa": "तौ",
+       "en": "indeed"
+      },
+      {
+       "sa": "देहु",
+       "en": "you give"
+      },
+      {
+       "sa": "सरल",
+       "en": "simple"
+      },
+      {
+       "sa": "सिख",
+       "en": "teaching"
+      },
+      {
+       "sa": "सोई",
+       "en": "that same"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "आचरत",
+       "en": "by practicing"
+      },
+      {
+       "sa": "मोर",
+       "en": "my"
+      },
+      {
+       "sa": "भल",
+       "en": "good"
+      },
+      {
+       "sa": "होई",
+       "en": "happens"
+      },
+      {
+       "sa": "जद्यपि",
+       "en": "although"
+      },
+      {
+       "sa": "यह",
+       "en": "this"
+      },
+      {
+       "sa": "समुझत",
+       "en": "understanding"
+      },
+      {
+       "sa": "हउँ",
+       "en": "I am"
+      },
+      {
+       "sa": "नीकें",
+       "en": "well"
+      },
+      {
+       "sa": "तदपि",
+       "en": "still"
+      },
+      {
+       "sa": "होत",
+       "en": "happens"
+      },
+      {
+       "sa": "परितोष",
+       "en": "contentment"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "जी",
+       "en": "heart"
+      },
+      {
+       "sa": "कें",
+       "en": "in"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 8.667,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The advice makes sense, and your heart still aches. You know what is right, but the rest feels empty right now. The morning routine is a sign of how much you still care.",
+     "try_today": "Notice one small physical sensation today without judging it.",
+     "scene_line": "You stand at the threshold of a door you once knew, while the crown waits and the forest calls.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "rcm.2.170.chaupai.7",
+     "path": "Day 1 kept from the first screen (bg.2.7 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.2.8",
+      "bg.1.29",
+      "mbh.12.81.11"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not in the advice you understand. It is)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.1.47",
+     "ref": "Bhagavad Gita 1.47",
+     "ref_iast": "Bhagavad Gītā 1.47",
+     "family": "bg",
+     "speaker": "Sanjaya",
+     "listener": "Dhritarashtra",
+     "setting": "Sanjaya reports to the blind king the moment Arjuna gives up before the battle.",
+     "sanskrit": "सञ्जय उवाचएवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत् । विसृज्य सशरं चापं शोकसंविग्नमानसः ॥",
+     "line": "Arjuna put down his bow and sat in the chariot, too overwhelmed to go on.",
+     "translation": "Sanjaya said: Having spoken this on the battlefield, Arjuna sank down on the seat of the chariot, letting fall his bow and arrows, his mind overwhelmed by grief.",
+     "words": [
+      {
+       "sa": "सञ्जय उवाच",
+       "en": "Sanjaya said"
+      },
+      {
+       "sa": "एवम्",
+       "en": "thus"
+      },
+      {
+       "sa": "उक्त्वा",
+       "en": "having spoken"
+      },
+      {
+       "sa": "अर्जुनः",
+       "en": "Arjuna"
+      },
+      {
+       "sa": "संख्ये",
+       "en": "in battle"
+      },
+      {
+       "sa": "रथोपस्थे",
+       "en": "on the chariot seat"
+      },
+      {
+       "sa": "उपाविशत्",
+       "en": "sat down"
+      },
+      {
+       "sa": "विसृज्य",
+       "en": "casting aside"
+      },
+      {
+       "sa": "सशरम्",
+       "en": "with arrows"
+      },
+      {
+       "sa": "चापम्",
+       "en": "bow"
+      },
+      {
+       "sa": "शोकसंविग्नमानसः",
+       "en": "mind agitated by grief"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 0.0,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.1.47",
+     "path": "D2_see_why: alternate for mbh.12.27.12 (no personal line passed the checker)",
+     "why": [],
+     "writer_note": null,
+     "alts": [],
+     "thin": false,
+     "swapped_from": "mbh.12.27.12",
+     "personal_source": {},
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 9.434,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": "On this path, no beginning is lost and no harm results. Even a small amount of this practice protects from great fear. The tradition reads this as a path of action where every step forward counts, and even a little effort shields one from the fear of birth and death.",
+     "for_you": "You still rise at six for a work that is gone. That habit is a small effort, and it is not wasted.",
+     "try_today": "Notice one small thing you do today without clinging to its result.",
+     "scene_line": "Arjuna stands with Krishna, unsure of the path ahead, while you stand at the edge of a morning that no longer has a destination.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.2.40",
+     "path": "bg.2.40 -heals-> bhaya via abhaya",
+     "why": [
+      "Even a little of this path protects from great fear.",
+      "a small sincere effort already protects"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_mundaka.3.1.6",
+      "bg.6.40",
+      "bg.9.22"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(ended,minut,six,ten)",
+      "audio_open:preachy(you have to)",
+      "audio_open:preachy(you have to)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.113.9",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 113.9",
+     "family": "mbh",
+     "speaker": "The river Ganga (retold by Bhishma)",
+     "listener": "the Ocean",
+     "setting": "The Ocean asks the rivers why they uproot great trees but never the humble cane; Ganga answers.",
+     "sanskrit": "वेतसो वेगमायान्तं दृष्ट्वा नमति नापरे / स च वेगे ह्यतिक्रान्ते स्थानमापद्यते पुनः",
+     "line": "The cane bends when the flood comes, and stands up again once it has passed.",
+     "translation": "The cane, seeing the flood coming, bends; no other tree does. And once the force has passed, it stands back up in its place.",
+     "words": [],
+     "why": "Bend with the flood and you stand again after it passes.",
+     "misuse": "Bending under pressure is not giving up your values.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ganga_sagara",
+      "title": "The river and the reeds",
+      "summary": "The Ocean asks the rivers why they uproot great trees but never the reeds. Ganga answers: the reed bends when the flood comes and stands again after; the rigid tree breaks.",
+      "story_hook": "The rivers tore down mighty trees every monsoon, yet never the humble reeds on their banks.",
+      "lesson": "Bend with the flood and you stand again after it passes."
+     },
+     "score": 6.0,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You bend now because the force is too large, and that is not giving up. You will stand again in your place once this passes.",
+     "try_today": "Notice when the day feels like a flood and let yourself bend without breaking.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.12.113.9",
+     "path": "mbh.12.113.9 -heals-> bhaya",
+     "why": [
+      "Shows a way through overwhelming force that does not require breaking",
+      "Reading the time and the strength of what is coming"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.angels_unawares",
+      "bg.18.48",
+      "vr.2.97.12"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person",
+      "audio_open:untraced_sentence(heavy,silenc,six,weight)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.35.79",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 35.79–80",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "दिवसेनैव तत्कुर्याद्येन रात्रौ सुखं वसेत् / अष्टमासेन तत्कुर्याद्येन वर्षाः सुखं वसेत् पूर्वे वयसि तत्कुर्याद्येन वृद्धः सुखं वसेत् / यावज्जीवं तु तत्कुर्याद्येन प्रेत्य सुखं वसेत्",
+     "line": "Do today what lets you sleep tonight, and in youth what lets you rest in old age.",
+     "translation": "Do during the day what lets you sleep in peace at night; do in the eight dry months what lets you live comfortably through the rains. Do in youth what makes old age comfortable, and do all your life what brings peace after death.",
+     "words": [],
+     "why": "Character shows under pressure. Do by day what will let you sleep at night.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.35",
+      "title": "Vidura Niti: Keshini's choice and the tests of character",
+      "summary": "Vidura tells how Prahlada judged honestly against his own son when Princess Keshini set two suitors a test, then gives aphorisms: gold is tested by fire, friends by hard times, and a clear conscience lets you sleep.",
+      "story_hook": "",
+      "lesson": "Character shows under pressure. Do by day what will let you sleep at night."
+     },
+     "score": 6.265,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The morning still pulls you toward a door that is now closed. Let the weight of that empty commute be the thing you set down today. Choose one small action that lets your conscience rest, so the evening finds you lighter.",
+     "try_today": "Notice what lets you sleep tonight.",
+     "scene_line": "You sit in the quiet morning, deciding what act will bring you peace.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.35.79",
+     "path": "mbh.5.35.79 -cultivates-> viveka",
+     "why": [
+      "Each stretch of time prepares the next",
+      "Choose today's act by how it will sit at night"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.34.19",
+      "mbh.12.272.73",
+      "bg.6.23"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "practice:untraced_sentence(body,early,exist,longer)",
+      "practice:invented_life_detail(your body)",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.12.10",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+     "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+     "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+     "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+     "words": [],
+     "why": "When you have looked everywhere, look again; giving up costs too much.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.search_despair",
+      "title": "Hanuman's search and near despair",
+      "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+      "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+      "lesson": "When you have looked everywhere, look again; giving up costs too much."
+     },
+     "score": 5.511,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are not finished. You will look again in the places you have not yet looked, and the next step will show itself there.",
+     "try_today": "Ask yourself what remains unseen in the room you are already in.",
+     "scene_line": "You stand in the empty office, and you look again where you have not yet looked.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.5.12.10",
+     "path": "vr.5.12.10 -cultivates-> sankalpa",
+     "why": [
+      "a concrete plan: the places not yet searched",
+      "Lakshmana and Hanuman both set the will to go on against despair, inside scenes of real loss."
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.never_mind_failures",
+      "up_taittiriya.56",
+      "bg.2.14"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(, not a)",
+      "scene_line:not_second_person",
+      "audio_open:preachy(you have to)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "bh.p.niti.vidvat",
+     "title": "Nitishatakam: In praise of learning and the learned",
+     "kind": "teaching",
+     "family": "bh",
+     "characters": [
+      "Bhartrihari"
+     ],
+     "story_hook": "",
+     "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+     "lesson": "What you learn and how you speak are the wealth no one can take from you.",
+     "matched": [],
+     "anchor": null,
+     "score": 10.76,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Nitishatakam: In praise of learning and the learned",
+     "for_you": "You have spent twenty-two years building something solid. That structure does not vanish because one wall fell. The morning routine remains because you are still the person who shows up.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.bh.three_kinds_of_people",
+     "path": "st.bh.three_kinds_of_people -enacts_in-> bhaya, samshaya ; st.bh.three_kinds_of_people -enacts_turn-> dhriti, sankalpa, utsaha ; st.bh.three_kinds_of_people -fits_situation-> procrastination",
+     "why": [
+      "The lowly do not start for fear of obstacles; the middling stop when obstacles come; the best never give up what they have begun."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.up.man_from_gandhara",
+      "st.bhakti.tulsi_bahuk_pain_in_the_arm",
+      "st.yv.karunya_stops_acting"
+     ],
+     "thin": false,
+     "story_id": "st.bh.three_kinds_of_people",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:untraced_sentence(edge,forwar,moving,unknow)",
+      "audio_open:untraced_sentence(exist,longer,moving,six,toward,woke)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 70,
+   "v3_w1_write": 8542,
+   "v3_w1_total": 8613,
+   "select": 8614,
+   "total": 8616
+  },
+  "_ms": 8621
+ }
+}

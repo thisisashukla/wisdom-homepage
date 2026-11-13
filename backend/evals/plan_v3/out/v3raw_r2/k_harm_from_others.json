@@ -1,0 +1,250 @@
+{
+ "case": "k_harm_from_others",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "harm_from_others",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My partner and I keep fighting",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A story of a husband and wife, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels uneasy; closest to \"My partner and I keep fighting\" and \"Tension with my in-laws\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "hurt"
+    ],
+    "paused": null,
+    "stance": "wronged",
+    "states": [
+     "shoka",
+     "dainya",
+     "krodha"
+    ],
+    "risk": "harm_from_others",
+    "situations": [
+     "marriage_conflict",
+     "inlaws",
+     "parent_conflict"
+    ],
+    "age": "35_44",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.2.75.15",
+    "first_line": "You have been wronged by someone who should protect you, and your pain is completely valid."
+   }
+  },
+  "hook": {
+   "id": "vr.2.75.15",
+   "ref": "Valmiki Ramayana · Ayodhya Kanda",
+   "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+   "family": "vr",
+   "speaker": "Bharata",
+   "listener": "Kausalya",
+   "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+   "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+   "line": "Why blame me, who knew nothing? You know what I feel for him.",
+   "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+   "words": [],
+   "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents"
+    }
+   ],
+   "prasang": {
+    "id": "vr.p.bharata_blamed",
+    "title": "Bharata wrongly blamed",
+    "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+    "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+    "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You have been wronged by someone who should protect you, and your pain is completely valid.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You have been wronged by someone who should protect you, and your pain is completely valid.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "bh.vairagya.4",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 4",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Hope",
+    "setting": "From 'Censure of Craving': the poet to his own hope.",
+    "sanskrit": "खलालापाः सोढाः कथमपि तदाराधनपरैः निगृह्यान्तर्बाष्पं हसितमपि शून्येन मनसा । कृतो वित्तस्तम्भप्रतिहतधियामञ्जलिरपि त्वमाशे मोघाशे किमपरमतो नर्तयसि माम् ॥",
+    "line": "I swallowed insults and forced laughter with an empty heart. Hope, how much longer will you make me dance?",
+    "translation": "I somehow put up with the taunts of the wicked while trying to please them; I held back my tears and laughed with an empty heart; I folded my hands even before people whose minds were numbed by money. Hope, futile hope, how much more will you make me dance?",
+    "words": [],
+    "why": "We think we are chasing things; really, the chase is using up our lives.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bh.p.vairagya.trishna",
+     "title": "Vairagyashatakam: Censure of craving",
+     "summary": "The poet confesses everything he did for money and approval: digging for treasure, flattering kings, forcing laughter. He ends with the famous lines that pleasures consumed us and craving never aged, and hope pictured as a river.",
+     "story_hook": "",
+     "lesson": "We think we are chasing things; really, the chase is using up our lives."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 236,
+   "v3_candidates": 36,
+   "v3_fast_read": 1269,
+   "v3_select": 1543,
+   "v3_total": 1543,
+   "total": 1544
+  },
+  "_ms": 1549
+ }
+}

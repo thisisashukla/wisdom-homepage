@@ -3,7 +3,8 @@ import type { ReactNode } from 'react'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import { Actions, Button, Faq, JsonLd, PageHero, Section, VerseCard } from '@/components/site'
+import { Actions, Button, Faq, JsonLd, LinkCards, PageHero, Section, VerseCard } from '@/components/site'
+import { lengthPlanCards } from '@/components/plan/LengthPlanParts'
 import JayantiRelated from '@/components/jayanti/JayantiRelated'
 import PlanFine from '@/components/plan/PlanFine'
 import { planAction } from '@/components/plan/planAction'
@@ -186,8 +187,9 @@ export default async function ReadIn18DaysPage() {
           </ol>
         </Section>
 
-        <Section id="fewer" tone="band" width="narrow" title="Fewer than 18 days?">
-          <div className="sx-prose">
+        <Section id="fewer" tone="band" title="Other ways through the Gita" intro="Shorter days over a month, the whole arc in a week, or one verse each morning.">
+          <LinkCards items={lengthPlanCards('read18_more', 'eighteen')} columns={2} layout="rail" />
+          <div className="sx-prose" style={{ marginTop: 28 }}>
             <p>
               The <a href="/gita-jayanti/reading-plan">Gita Jayanti reading plan</a> fits the same 700 verses into 9 days,
               3 days or the day itself, and can split them evenly from whatever day you start. If you only have one sitting,

@@ -1,0 +1,1140 @@
+{
+ "case": "r4_student_future",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.975,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.9,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 1.794,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.379,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 1.33,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels restless; closest to \"I feel anxious most of the time\" and \"I'm anxious about how things will turn out\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.36,wro=0.0,see=0.05",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.6.34",
+   "ref": "Bhagavad Gita 6.34",
+   "ref_iast": "Bhagavad Gītā 6.34",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+   "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+   "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+   "words": [
+    {
+     "sa": "चञ्चलम्",
+     "en": "restless"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "मनः",
+     "en": "mind"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "प्रमाथि",
+     "en": "turbulent"
+    },
+    {
+     "sa": "बलवत्",
+     "en": "strong"
+    },
+    {
+     "sa": "दृढम्",
+     "en": "stubborn, firm"
+    },
+    {
+     "sa": "तस्य",
+     "en": "of that"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "निग्रहम्",
+     "en": "control, restraint"
+    },
+    {
+     "sa": "मन्ये",
+     "en": "consider"
+    },
+    {
+     "sa": "वायोः",
+     "en": "of wind"
+    },
+    {
+     "sa": "इव",
+     "en": "like"
+    },
+    {
+     "sa": "सुदुष्करम्",
+     "en": "very difficult"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 3.5097,
+   "beat": "hook",
+   "role_fit": 0.73,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.1.29",
+    "ref": "Bhagavad Gita 1.29–30",
+    "ref_iast": "Bhagavad Gītā 1.29–30",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+    "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+    "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+    "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+    "words": [
+     {
+      "sa": "सीदन्ति",
+      "en": "are failing"
+     },
+     {
+      "sa": "मम",
+      "en": "my"
+     },
+     {
+      "sa": "गात्राणि",
+      "en": "limbs"
+     },
+     {
+      "sa": "मुखं",
+      "en": "mouth"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "परिशुष्यति",
+      "en": "dries up"
+     },
+     {
+      "sa": "वेपथुः",
+      "en": "trembling"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "शरीरे",
+      "en": "in the body"
+     },
+     {
+      "sa": "मे",
+      "en": "my"
+     },
+     {
+      "sa": "रोम-हर्षः",
+      "en": "standing of hair"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "जायते",
+      "en": "arises"
+     }
+    ],
+    "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+    "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "anxiety_general",
+      "label": "I feel anxious most of the time"
+     },
+     {
+      "id": "fear_failure",
+      "label": "I'm afraid of failing"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p01.4",
+     "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+     "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+     "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+     "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+    },
+    "score": 3.7755,
+    "beat": "hook",
+    "role_fit": 0.8,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.9.6",
+    "ref": "Bhagavad Gita 9.6",
+    "ref_iast": "Bhagavad Gītā 9.6",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna explains how all beings rest in him without being cramped.",
+    "sanskrit": "यथाऽऽकाशस्थितो नित्यं वायुः सर्वत्रगो महान् । तथा सर्वाणि भूतानि मत्स्थानीत्युपधारय ॥",
+    "line": "As the wind, wherever it blows, always rests in the sky, all beings rest in me.",
+    "translation": "As the mighty wind, moving everywhere, always rests in space, know that all beings rest in me.",
+    "words": [
+     {
+      "sa": "यथा",
+      "en": "just as"
+     },
+     {
+      "sa": "आकाश-स्थितः",
+      "en": "स्थित in space"
+     },
+     {
+      "sa": "नित्यम्",
+      "en": "always"
+     },
+     {
+      "sa": "वायुः",
+      "en": "wind"
+     },
+     {
+      "sa": "सर्वत्र-गः",
+      "en": "moving everywhere"
+     },
+     {
+      "sa": "महान्",
+      "en": "great"
+     },
+     {
+      "sa": "तथा",
+      "en": "so"
+     },
+     {
+      "sa": "सर्वाणि",
+      "en": "all"
+     },
+     {
+      "sa": "भूतानि",
+      "en": "beings"
+     },
+     {
+      "sa": "मत्-स्थानि",
+      "en": "resting in Me"
+     },
+     {
+      "sa": "इति",
+      "en": "thus"
+     },
+     {
+      "sa": "उपधारय",
+      "en": "understand"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "anxiety_general",
+      "label": "I feel anxious most of the time"
+     },
+     {
+      "id": "uncertainty",
+      "label": "I can't handle not knowing what comes next"
+     }
+    ],
+    "prasang": null,
+    "score": 2.959,
+    "beat": "hook",
+    "role_fit": 0.06,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 561,
+   "llm": 7018,
+   "total": 10804,
+   "select": 3222
+  },
+  "_ms": 10810
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.975,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.9,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 1.794,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.379,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 1.33,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels restless; closest to \"I feel anxious most of the time\" and anxious about how things will turn out\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:34=1.0,2=1.0,250=0.6,41=0.3,1=0.6,14=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.62,max=0.69",
+    "dropped:fallback_line=1,invented=1,invented_name=1,repeat=1,soft_kept=1,try_today_long=1",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.4915,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna stands on the field of battle and tells Krishna that the mind is restless, stormy, powerful and stubborn. He says it is as hard to hold as the wind. Krishna agrees that the mind is hard to hold, but says that practice and letting go can train it.",
+     "for_you": "You are studying and your mind will not settle, jumping ahead to what might go wrong. That is the restless wind you feel. You do not need to pin it down, just notice it, and let it pass.",
+     "try_today": "Notice the mind jumping ahead and let it go.",
+     "scene_line": "You stand on the edge of your exams and the mind is the wind.",
+     "asks": [
+      "How do I stop the mind from jumping ahead?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.256.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 256",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Ram",
+     "setting": "Bharat, once Ram and their teacher have reassured him, admits what his dread was made of.",
+     "sanskrit": "अपडर डरेउँ न सोच समूलें। रबिहि न दोसु देव दिसि भूलें॥ मोर अभागु मातु कुटिलाई। बिधि गति बिषम काल कठिनाई ॥",
+     "line": "I was frightened by fears I had imagined. My worry had no root at all.",
+     "translation": "\"I was afraid of imagined fears; my worry had no root at all. If one loses one's direction, the sun is not to blame. It was my misfortune, my mother's crookedness, the hard turn of fate and the difficulty of the times...\"",
+     "words": [
+      {
+       "sa": "अपडर",
+       "en": "false fear"
+      },
+      {
+       "sa": "डरेउँ",
+       "en": "I was afraid"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "सोच",
+       "en": "sorrow, worry"
+      },
+      {
+       "sa": "समूलें",
+       "en": "at the root"
+      },
+      {
+       "sa": "रबिहि",
+       "en": "the sun"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "दोसु",
+       "en": "fault"
+      },
+      {
+       "sa": "देव",
+       "en": "O divine one"
+      },
+      {
+       "sa": "दिसि",
+       "en": "direction"
+      },
+      {
+       "sa": "भूलें",
+       "en": "having lost"
+      },
+      {
+       "sa": "मोर",
+       "en": "my"
+      },
+      {
+       "sa": "अभागु",
+       "en": "misfortune"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कुटिलाई",
+       "en": "crookedness"
+      },
+      {
+       "sa": "बिधि",
+       "en": "fate"
+      },
+      {
+       "sa": "गति",
+       "en": "course"
+      },
+      {
+       "sa": "बिषम",
+       "en": "crooked, harsh"
+      },
+      {
+       "sa": "काल",
+       "en": "time"
+      },
+      {
+       "sa": "कठिनाई",
+       "en": "hardness"
+      }
+     ],
+     "why": "In family conflict, let each speak; name love plainly; lift needless shame.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.chitrakoot_assembly",
+      "title": "The family council at Chitrakoot",
+      "summary": "Vasishtha asks how Ram can be brought home, noting that grieving people cannot judge well. Bharat recalls a brother who never broke his heart and let him win at games, and blames himself. Ram tells him his shame is needless, that love and hostility cannot be hidden, and asks him to say freely what he wants.",
+      "story_hook": "",
+      "lesson": "In family conflict, let each speak; name love plainly; lift needless shame."
+     },
+     "score": 3.2789,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": null,
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes.",
+     "try_today": "Name one worry out loud to yourself. Then state what is actually true about your situation right now.",
+     "scene_line": "You are Bharat in your own council, admitting to yourself that your worry had no root at all.",
+     "asks": [
+      "How do I tell a real fear from an imagined one?",
+      "What happens if I name my worry out loud?",
+      "Who else in my life is carrying a worry with no root?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "tulsi_vp.250",
+     "ref": "Vinay Patrika",
+     "ref_iast": "Vinaya Patrikā, pada 250",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "Ram",
+     "setting": "Frightened by hard times, Tulsidas asks Ram to say the words he needs to hear.",
+     "sanskrit": "रीति सुनि रावरी प्रतीति-प्रीति रावरे सों, डरत हौं देखि कलिकालको कहरु। कहेही बनैगी कै कहाये, बलि जाउँ, राम, “तुलसी ! तू मेरो, हारि हिये न हहरु'॥",
+     "line": "\"You are mine. Do not lose heart, do not tremble.\"",
+     "translation": "Having heard your ways, my trust and love are in you, yet I am afraid, seeing the cruelty of these times. It will only be well if you say it, or have it said, Ram: \"Tulsi, you are mine. Do not lose heart, do not tremble.\"",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": null,
+     "score": 3.7543,
+     "beat": "steady",
+     "role_fit": 0.56,
+     "meaning": "Tulsidas, the poet, is telling Ram, the one they love, that even though they have given everything over to Ram's care, they still feel afraid when they look at the hard times around them. They are asking Ram to say the words that will make them brave. The verse is Ram's reply, telling Tulsidas that they belong to him completely, and that they must not let their heart sink or their body shake.",
+     "for_you": "Your mind is running through every possible exam result, every future plan, every worst case, and it feels like the whole world is asking you to stay calm. You are trying to hold onto your studies while this fear keeps pulling your attention away.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0768,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula finds her son Sanjaya lying on the ground, defeated and unwilling to rise after losing his kingdom. She speaks to him directly. She tells him not to hold himself in contempt or settle for too little. She says to set his mind on what is truly good and to stop being afraid. She wants him to pull himself together and act again. The verse points out that past failure does not have to define a person. The results of trying are uncertain, but those who never try at all never succeed.",
+     "for_you": "You are sitting with your books and your mind is running ahead to every possible bad result. Vidula does not tell her son to erase the loss. She asks him to set his mind on what is truly good instead of staying stuck on what is broken.",
+     "try_today": "Notice the thought of failure and let it pass without acting on it.",
+     "scene_line": "You are on the ground after a loss, and the next move is yours.",
+     "asks": [
+      "What does setting my mind on the good look like right now?",
+      "How do I tell trying again from just hoping it gets better?",
+      "What is the smallest good thing I can set my mind on today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 4.067,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha is speaking to Bharat in Ayodhya. Bharat is shattered. His father has died and his brother Ram has been sent to the forest. The ministers want Bharat to rule, but Bharat cannot bear it. Vasishtha tells him to keep courage in his heart and do what this moment asks of him today. The sage is saying that Bharat should stop waiting for the world to tell him what to do next. He should look at the one thing that is right in front of him and act on it.",
+     "for_you": "Your mind is caught between what you fear and what is real right now. Vasishtha is not telling Bharat to stop grieving. He is telling him to do the one thing that belongs to this hour. In your study room, let the next hour ask only one thing of you.",
+     "try_today": "Pick up the one book or paper that belongs to the next hour of your study.",
+     "scene_line": "You are in your own Ayodhya, with the throne of tomorrow offered and your heart still refusing it.",
+     "asks": [
+      "What does this moment ask of me today?",
+      "How do I hold courage when my mind feels split?",
+      "Can I act on what is true right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.2879,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He tells Arjuna to do his part fully and let go of clinging to what comes after. He says that no honest effort is ever wasted. Even a small step on this path protects you from the worst kinds of fear.",
+     "for_you": "You are studying and your mind keeps running ahead to what might go wrong. The Gita says your effort right now is not wasted. Let your work be the thing you own today.",
+     "try_today": "Do one small part of your study and let the result go.",
+     "scene_line": "You are on a field where the only enemy is the fear of what is not yet here.",
+     "asks": [
+      "What if I still feel scared even after doing my part?",
+      "How do I stop my mind from racing ahead?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.12.10",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+      "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+      "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+      "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+      "words": [],
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "You have searched your own mind for a calm it will not give. But the mind is not a palace to be emptied. It is a place to be walked through. The fear of what comes next is heavy, but it is not the end of the search.",
+     "asks": [
+      "What is the one place in my mind I have not yet walked through?",
+      "How do I know when I am giving up on myself?",
+      "What does it look like to search again after I have already looked everywhere?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13319,
+   "total": 13321
+  },
+  "_ms": 13326
+ }
+}

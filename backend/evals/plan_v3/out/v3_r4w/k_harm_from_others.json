@@ -1,0 +1,964 @@
+{
+ "case": "k_harm_from_others",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "harm_from_others",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My partner and I keep fighting",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A story of a husband and wife, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels uneasy; closest to \"My partner and I keep fighting\" and \"Tension with my in-laws\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:not_a_candidate",
+    "fr:alt:not_a_candidate",
+    "fr:pick:graph_default",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "hurt"
+    ],
+    "paused": null,
+    "stance": "wronged",
+    "states": [
+     "shoka",
+     "dvesha",
+     "manyu"
+    ],
+    "risk": "harm_from_others",
+    "situations": [
+     "marriage_conflict",
+     "inlaws",
+     "parent_conflict"
+    ],
+    "age": "35_44",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "mbh.12.81.6"
+   }
+  },
+  "hook": {
+   "id": "mbh.12.81.6",
+   "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+   "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+   "family": "mbh",
+   "speaker": "Krishna (quoted by Bhishma)",
+   "listener": "Narada",
+   "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+   "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+   "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+   "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+   "words": [],
+   "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+   "misuse": "",
+   "tone": "comforting",
+   "matched": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws"
+    }
+   ],
+   "prasang": {
+    "id": "mbh.p.krishna_narada_kin",
+    "title": "Krishna's family troubles: the weapon not made of iron",
+    "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+    "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+    "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Someone else's actions have left a mark on your days, and a verse was chosen with that in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Someone else's actions have left a mark on your days, and a verse was chosen with that in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "vr.2.75.15",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+    "family": "vr",
+    "speaker": "Bharata",
+    "listener": "Kausalya",
+    "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+    "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+    "line": "Why blame me, who knew nothing? You know what I feel for him.",
+    "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+    "words": [],
+    "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "parent_conflict",
+      "label": "I keep fighting with my parents"
+     }
+    ],
+    "prasang": {
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bh.niti.40",
+    "ref": "Bhartrihari · Niti Shatakam",
+    "ref_iast": "Bhartṛhari, Nītiśatakam 40",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From the section on wealth: how the world treats someone who has lost money.",
+    "sanskrit": "तानीन्द्रियाण्यविकलानि तदेव नाम सा बुद्धिरप्रतिहता वचनं तदेव । अर्थोष्मणा विरहितः पुरुषः क्षणेन सोऽप्यन्य एव भवतीति विचित्रमेतत् ॥",
+    "line": "Same person, same mind, same voice. Lose money, and people suddenly treat you as someone else.",
+    "translation": "The same faculties, unimpaired; the same name; the same unclouded mind; the same speech. Yet a man deprived of the warmth of wealth becomes, in a moment, someone else. How strange!",
+    "words": [],
+    "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+    "misuse": "The verse mocks how the world sees you; it does not measure your worth.",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bh.p.niti.artha",
+     "title": "Nitishatakam: On wealth",
+     "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+     "story_hook": "",
+     "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 566,
+   "v3_candidates": 49,
+   "v3_fast_read": 1325,
+   "v3_select": 1944,
+   "v3_first_line": 331,
+   "v3_total": 2275,
+   "total": 2276
+  },
+  "_ms": 2280
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "harm_from_others",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "partner",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My partner and I keep fighting",
+   "mirror": "It sounds like home doesn't feel safe right now.",
+   "insight": "None of this is your fault. You deserve to feel safe, and you don't have to face it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Living in fear in your own home, hurt by someone who should protect you, and feeling there is no one to turn to.",
+    "diagnose": "Being hurt by someone is never your fault; the one who harms carries that wrong, and silence kept for the sake of peace only lets harm grow.",
+    "steady": "What is being done to you is not your fault and not your burden to carry; your safety and your worth matter.",
+    "act": "Protect yourself and those who depend on you; speak the truth to someone you trust, and find the courage to seek help.",
+    "story": "A story of a husband and wife, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "safety",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels uneasy; closest to partner and I keep fighting\" and with my in-laws\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:5/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "hurt"
+    ],
+    "paused": null,
+    "stance": "wronged",
+    "states": [
+     "shoka",
+     "dvesha",
+     "manyu"
+    ],
+    "risk": "harm_from_others",
+    "situations": [
+     "marriage_conflict",
+     "inlaws",
+     "parent_conflict"
+    ],
+    "age": "35_44",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "mbh.12.81.6",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.81.6",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+     "family": "mbh",
+     "speaker": "Krishna (quoted by Bhishma)",
+     "listener": "Narada",
+     "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+     "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+     "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+     "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+     "words": [],
+     "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.krishna_narada_kin",
+      "title": "Krishna's family troubles: the weapon not made of iron",
+      "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+      "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+      "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+     },
+     "score": 12.05,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The words of your own kin keep burning you, day after day. You do not have to carry this heat alone.",
+     "try_today": null,
+     "scene_line": "You stand in the quiet of your own home, while the fire of his words still lingers.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "mbh.12.81.6",
+     "path": "Day 1 kept from the first screen (vr.2.75.15 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.40",
+      "mbh.5.39.63",
+      "bh.niti.58"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not a sign of failure. It is)",
+      "for_you:untraced_sentence(honest,less,protec,result,suppos,treat)",
+      "practice:invented_life_detail(your body)",
+      "practice:untraced_sentence(fann,flam,heat,pass,rise,withou)",
+      "practice:wronged_told_to_bend(let it pass)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "viv.5.ridicule_opposition",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 5",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Letter from the USA, 9 July 1895, on opposition to his work in America.",
+     "sanskrit": null,
+     "line": "Each work has to pass through these stages — ridicule, opposition, and then acceptance.",
+     "translation": "Each work has to pass through these stages — ridicule, opposition, and then acceptance. Each man who thinks ahead of his time is sure to be misunderstood.",
+     "words": [],
+     "why": "Ridicule and opposition are stages, not verdicts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.letter.khetri_1895",
+      "title": "Ridicule, opposition, acceptance (letter to Khetri, 1895)",
+      "summary": "Facing opposition from some clergy in America, he writes to his friend the Maharaja that every work passes through ridicule, opposition and then acceptance. Anyone ahead of their time will be misunderstood, so he will stay steady.",
+      "story_hook": "",
+      "lesson": "Ridicule and opposition are stages, not verdicts."
+     },
+     "score": 2.14,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "viv.5.ridicule_opposition",
+     "path": "viv.5.ridicule_opposition -depicts-> manyu",
+     "why": [
+      "being mocked and opposed for one's work"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.39.63",
+      "mbh.12.114.15"
+     ],
+     "thin": false,
+     "personal_source": {
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:cliche(Your truth)",
+      "practice:cliche(your truth)",
+      "scene_line:cliche(your truth)",
+      "scene_line:preachy(you should)",
+      "scene_line:wronged_told_to_bend(adjust)",
+      "scene_line:counsels_endurance_under_harm(adjust)",
+      "audio_open:preachy(you should)",
+      "audio_open:wronged_told_to_bend(adjust)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "words": [],
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 16.189,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You stand on the highest ground there is. What is right gives you footing against the strong. Let this truth be your ground today.",
+     "try_today": "Notice one small way you stand by your own truth today.",
+     "scene_line": "You stand in the room while they shout, and you meet their strength with the quiet weight of what is right.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "up_brihadaranyak.86",
+     "path": "up_brihadaranyak.86 -heals-> manyu via tejas",
+     "why": [
+      "With what is right the weak can face the strong.",
+      "the wronged person is told their ground is the highest there is"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.106",
+      "rcm.5.44.chaupai.3",
+      "up_mundaka.3.1.6"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not a flaw in you. It is)",
+      "for_you:wronged_told_to_bend(adjust)",
+      "for_you:counsels_endurance_under_harm(adjust)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "words": [],
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 10.293,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The shouting and the blows are his. They show him, not you. You are the one who stands in the truth of the room.",
+     "try_today": "Notice the moment someone speaks to put you down, and see only their exposed fault.",
+     "scene_line": "You stand in the room while he shouts, and his words only raise his own hood.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.12.114.15",
+     "path": "mbh.12.114.15 -heals-> manyu",
+     "why": [
+      "The public insult is turned back on the one who made it",
+      "The slandered person is not the one exposed"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.3.66.17",
+      "mbh.3.135.12",
+      "rcm.2.271.chaupai.3"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(, not in)",
+      "scene_line:invented_life_detail(your room)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "viv.2.remedy_weakness",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 2",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Audience in London",
+     "setting": "'Practical Vedanta' part 1, London, 10 November 1896.",
+     "sanskrit": null,
+     "line": "The remedy for weakness is not brooding over weakness, but thinking of strength.",
+     "translation": "But, says the Vedanta, being reminded of weakness does not help much; give strength, and strength does not come by thinking of weakness all the time. The remedy for weakness is not brooding over weakness, but thinking of strength.",
+     "words": [],
+     "why": "Stop rehearsing your weakness; think of your strength and act.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.practical_vedanta.faith",
+      "title": "Practical Vedanta 1: faith in yourself (London, 1896)",
+      "summary": "Vedanta must work in ordinary life. Calm minds do the most work, angry ones break themselves. The new religion calls the person who does not believe in himself the atheist, and the remedy for weakness is to think of strength, not brood over weakness.",
+      "story_hook": "",
+      "lesson": "Stop rehearsing your weakness; think of your strength and act."
+     },
+     "score": 7.05,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The hurt you carry is real, but your mind can stay on what is strong in you. Your strength is your own, and it does not depend on anyone else.",
+     "try_today": "Notice one moment today when you stand firm or act with quiet resolve.",
+     "scene_line": "You stand beside those who shout, yet the strength inside you is not theirs to take.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "viv.2.remedy_weakness",
+     "path": "viv.2.remedy_weakness -cultivates-> tejas",
+     "why": [
+      "Think of strength, not of weakness.",
+      "turn the mind to what is strong in you"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.3.make_children_strong",
+      "vr.6.22.42",
+      "viv.2.strike_a_match"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:verdict(You are not weak)",
+      "audio_open:preachy(you should)",
+      "audio_open:wronged_told_to_bend(adjust)",
+      "audio_open:counsels_endurance_under_harm(adjust)"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.53",
+     "ref": "Taittiriya Upanishad 1.11.2",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.2",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The teacher's surprising humility.",
+     "sanskrit": "यान्यनवद्यानि कर्माणि । तानि सेवितव्यानि । नो इतराणि । यान्यस्माकꣳसुचरितानि । तानि त्वयोपास्यानि ॥",
+     "line": "Do only what is blameless. Follow what is good in us, your teachers, and not the rest.",
+     "translation": "Whatever actions are blameless, those you should do, and not others. Whatever good conduct is ours, that you should follow.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 7.471,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small thing today that is blameless, and let it be enough.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "up_taittiriya.53",
+     "path": "up_taittiriya.53 -cultivates-> tejas",
+     "why": [
+      "one's own conscience is given standing",
+      "sort an elder's example into what to keep and what to leave"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.53",
+      "bh.niti.51",
+      "bh.niti.28"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:invented_accusation(blameless)",
+      "scene_line:untraced_sentence(backgr,fade,goodne,harshn,quiet,space)",
+      "audio_close:preachy(you should)",
+      "audio_close:invented_accusation(blameless)",
+      "for_you:untraced_sentence(fault,less,lies,treat)",
+      "for_you:copied_example(understand_examples)",
+      "for_you:invented_accusation(blameless)",
+      "scene_line:invented_accusation(blame)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.bali_indra",
+     "title": "Bali and Indra: the fortune that moves on",
+     "kind": "teaching",
+     "family": "mbh",
+     "characters": [
+      "Bali",
+      "Indra",
+      "Brahma"
+     ],
+     "story_hook": "The king of the gods went looking for his old enemy and found him living as a donkey.",
+     "summary": "Indra, now king of the gods, finds his defeated rival Bali living as a donkey in an empty house and mocks him. Bali calmly answers that fortune has lived with a thousand Indras before, that time gives and takes, and that this is a season for calm.",
+     "lesson": "Success is on loan. Don't gloat in a good season or despair in a bad one.",
+     "matched": [],
+     "anchor": null,
+     "score": 13.142,
+     "why": null,
+     "hook_title": null,
+     "teaser": "The king of the gods went looking for his old enemy and found him living as a donkey.",
+     "for_you": "The one who knows time's turn does not crumble in a fall. Your dignity remains even when the other person shouts. Let this be your footing today.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.bali_after_the_fall",
+     "path": "st.mbh.bali_after_the_fall -enacts_in-> dainya, manyu ; st.mbh.bali_after_the_fall -enacts_turn-> tejas, viveka",
+     "why": [
+      "Fortune moves on by time's turn; the one who knows this neither crumbles in a fall nor gloats in a rise."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.ashtavakra_too_young_at_the_door",
+      "st.rcm.kaushalya_cannot_say_go_or_stay",
+      "st.vr.bharata_suspected_by_everyone"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.bali_after_the_fall",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:short(9)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "harm_from_others",
+   "message": "If someone is hurting or threatening you, you deserve to be safe. Please reach out to someone you trust or a helpline.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "National Domestic Violence Hotline",
+     "contact": "Call 1-800-799-7233 or text START to 88788"
+    },
+    {
+     "region": "UK",
+     "name": "National Domestic Abuse Helpline",
+     "contact": "Call 0808 2000 247"
+    },
+    {
+     "region": "Australia",
+     "name": "1800RESPECT",
+     "contact": "Call 1800 737 732"
+    },
+    {
+     "region": "India",
+     "name": "Women Helpline",
+     "contact": "Call 181"
+    },
+    {
+     "region": "Anywhere",
+     "name": "Emergency services",
+     "contact": "Call your local emergency number if you are in danger now"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 50,
+   "v3_w1_write": 6365,
+   "v3_w1_total": 6417,
+   "select": 6417,
+   "total": 6418
+  },
+  "_ms": 6423
+ }
+}

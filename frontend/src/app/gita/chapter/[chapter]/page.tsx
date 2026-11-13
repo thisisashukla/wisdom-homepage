@@ -15,6 +15,7 @@ import {
 import type { Verse } from '@/lib/gita'
 import ChapterProgress, { ReadTick } from '@/components/reader/ChapterProgress'
 import { readModeUrl } from '@/lib/gitaUrls'
+import { THIRTY_DAYS } from '@/lib/readingPlans'
 import SanskritText from '@/components/gita/SanskritText'
 import LinkCards from '@/components/site/LinkCards'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
@@ -175,7 +176,18 @@ export default async function ChapterPage({ params }: { params: Params }) {
           style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
         >
           {ch.number === 18 ? 'Chapter 18 falls on Gita Jayanti in the 18-day plan →' : 'The 18-day plan →'}
-        </a>
+        </a>{' '}
+        {(() => {
+          const days = THIRTY_DAYS.filter((d) => d.span.ch === ch.number).map((d) => d.day)
+          const first = days[0]
+          const last = days[days.length - 1]
+          return (
+            <>
+              In <a href={`/bhagavad-gita-in-30-days#day-${first}`} data-mp-location={`chapter_${ch.number}_read30`} style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>the Gita in 30 days</a>{' '}
+              it is {first === last ? `day ${first}` : `days ${first} to ${last}`}.
+            </>
+          )
+        })()}
       </p>
 
       {gist && (

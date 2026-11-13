@@ -1,0 +1,3046 @@
+{
+ "case": "t8_fourteen_hours_empty",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Nothing is wrong but nothing feels meaningful",
+   "mirror": "Nothing is wrong but nothing feels meaningful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"Nothing is wrong but nothing feels meaningful\" and \"I'm burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.15,see=0.51",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick_refused:r4: diagnoses a vice the person never showed (trishna)",
+    "day1:graph_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "restless",
+     "empty"
+    ],
+    "paused": "restless",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "nirveda"
+    ],
+    "risk": "none",
+    "situations": [
+     "retirement",
+     "burnout",
+     "no_meaning"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bg.2.8",
+    "first_line": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up."
+   }
+  },
+  "hook": {
+   "id": "bg.2.8",
+   "ref": "Bhagavad Gita 2.8",
+   "ref_iast": "Bhagavad Gītā 2.8",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+   "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+   "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+   "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+   "words": [
+    {
+     "sa": "न हि",
+     "en": "for not"
+    },
+    {
+     "sa": "प्रपश्यामि",
+     "en": "I see"
+    },
+    {
+     "sa": "मम",
+     "en": "my"
+    },
+    {
+     "sa": "अपनुद्यात्",
+     "en": "could remove"
+    },
+    {
+     "sa": "यत्",
+     "en": "that which"
+    },
+    {
+     "sa": "शोकम्",
+     "en": "grief"
+    },
+    {
+     "sa": "उच्छोषणम्",
+     "en": "drying up"
+    },
+    {
+     "sa": "इन्द्रियाणाम्",
+     "en": "of the senses"
+    },
+    {
+     "sa": "अवाप्य",
+     "en": "having obtained"
+    },
+    {
+     "sa": "भूमौ",
+     "en": "on earth"
+    },
+    {
+     "sa": "असपत्नम्",
+     "en": "unrivaled, without enemies"
+    },
+    {
+     "sa": "ऋद्धम्",
+     "en": "prosperous"
+    },
+    {
+     "sa": "राज्यम्",
+     "en": "kingdom"
+    },
+    {
+     "sa": "सुराणाम्",
+     "en": "of the gods"
+    },
+    {
+     "sa": "अपि",
+     "en": "even"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "आधिपत्यम्",
+     "en": "lordship"
+    }
+   ],
+   "why": "Admitting you don't know and asking for help is where clarity begins.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p02.1",
+    "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+    "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+    "story_hook": "",
+    "lesson": "Admitting you don't know and asking for help is where clarity begins."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "up_maitrayani.13",
+    "ref": "Maitri Upanishad 1.7",
+    "ref_iast": "Maitrī Upaniṣad 1.7",
+    "family": "up",
+    "speaker": "King Brihadratha",
+    "listener": "The sage Shakayanya",
+    "setting": "The king's plea after listing everything that passes.",
+    "sanskrit": "सोऽहमित्येतद्विधेऽस्मिन्संसारे किं कामोपभोगैर्यैरेवाश्रितस्यासकृदिहावर्तनं दृश्यत इत्युद्धर्तुमर्हसीत्यन्धोदपानस्थो भेक इवाहमस्मिन्संसारे भगवंस्त्वं नो गतिस्त्वं नो गतिः ॥",
+    "line": "Like a frog in a dark well, I am stuck in this life. Show me the way out.",
+    "translation": "In such a world, what use is the enjoyment of desires, when one who feeds on them is seen to return here again and again? Please lift me out. In this world I am like a frog in a dark well. Sir, you are my way, you are my way.",
+    "words": [],
+    "why": "Even success can leave you feeling stuck; asking for help is the first step out.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "no_meaning",
+      "label": "Nothing is wrong but nothing feels meaningful"
+     },
+     {
+      "id": "retirement",
+      "label": "I've retired and feel lost"
+     }
+    ],
+    "prasang": {
+     "id": "up.p.maitrayani.brihadratha",
+     "title": "King Brihadratha's despair",
+     "summary": "A king hands his throne to his son and goes to the forest, overwhelmed by how everything decays. When a sage offers him a wish, he says he feels like a frog in a dark well and asks to be shown the way out.",
+     "story_hook": "King Brihadratha had everything a king could want, and walked away from all of it.",
+     "lesson": "Even success can leave you feeling stuck; asking for help is the first step out."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bh.vairagya.44",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 44",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From 'On the Greatness of Time'.",
+    "sanskrit": "रात्रिः सैव पुनः स एव दिवसो मत्वा मुधा जन्तवो धावन्त्युद्यमिनस्तथैव निभृतप्रारब्धतत्तत्क्रियाः । व्यापारैः पुनरुक्तभूत विषयैरित्थंविधेनामुना संसारेण कदर्थिता वयमहो मोहान्न लज्जामहे ॥",
+    "line": "Same night, same day, the same tasks on repeat. We run in circles and call it living.",
+    "translation": "Thinking 'it is the same night again, the same day', creatures run about in vain, busy as ever with the tasks they have set going; with work full of the same repeated things, tormented by this round of existence, alas, out of delusion we feel no shame.",
+    "words": [],
+    "why": "Time is passing while you're busy; notice it before it's gone.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     },
+     {
+      "id": "no_meaning",
+      "label": "Nothing is wrong but nothing feels meaningful"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.vairagya.kala",
+     "title": "Vairagyashatakam: On the greatness of Time",
+     "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+     "story_hook": "",
+     "lesson": "Time is passing while you're busy; notice it before it's gone."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 185,
+   "v3_candidates": 51,
+   "v3_fast_read": 1326,
+   "v3_select": 1566,
+   "v3_first_line": 660,
+   "v3_total": 2227,
+   "total": 2228
+  },
+  "_ms": 2231
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Nothing is wrong but nothing feels meaningful",
+   "mirror": "Nothing is wrong but nothing feels meaningful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to is wrong but nothing feels meaningful\" and burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:no",
+    "v3:day:4:for_you:no",
+    "v3:day:5:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:4:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:5:for_you:no",
+    "v3:day:6:for_you:no",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "restless",
+     "empty"
+    ],
+    "paused": "restless",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "nirveda"
+    ],
+    "risk": "none",
+    "situations": [
+     "retirement",
+     "burnout",
+     "no_meaning"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.2.8",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 11.584,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": "Arjuna sees no worldly or heavenly gain that could remove the grief drying up his senses, not even an unrivalled kingdom or rule over the gods.",
+     "for_you": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.2.8",
+     "path": "Day 1 kept from the first screen (up_maitrayani.13 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "yv.1.12.22",
+      "yv.1.10.19",
+      "bh.vairagya.44"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "first_line"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.1.47",
+     "ref": "Bhagavad Gita 1.47",
+     "ref_iast": "Bhagavad Gītā 1.47",
+     "family": "bg",
+     "speaker": "Sanjaya",
+     "listener": "Dhritarashtra",
+     "setting": "Sanjaya reports to the blind king the moment Arjuna gives up before the battle.",
+     "sanskrit": "सञ्जय उवाचएवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत् । विसृज्य सशरं चापं शोकसंविग्नमानसः ॥",
+     "line": "Arjuna put down his bow and sat in the chariot, too overwhelmed to go on.",
+     "translation": "Sanjaya said: Having spoken this on the battlefield, Arjuna sank down on the seat of the chariot, letting fall his bow and arrows, his mind overwhelmed by grief.",
+     "words": [
+      {
+       "sa": "सञ्जय उवाच",
+       "en": "Sanjaya said"
+      },
+      {
+       "sa": "एवम्",
+       "en": "thus"
+      },
+      {
+       "sa": "उक्त्वा",
+       "en": "having spoken"
+      },
+      {
+       "sa": "अर्जुनः",
+       "en": "Arjuna"
+      },
+      {
+       "sa": "संख्ये",
+       "en": "in battle"
+      },
+      {
+       "sa": "रथोपस्थे",
+       "en": "on the chariot seat"
+      },
+      {
+       "sa": "उपाविशत्",
+       "en": "sat down"
+      },
+      {
+       "sa": "विसृज्य",
+       "en": "casting aside"
+      },
+      {
+       "sa": "सशरम्",
+       "en": "with arrows"
+      },
+      {
+       "sa": "चापम्",
+       "en": "bow"
+      },
+      {
+       "sa": "शोकसंविग्नमानसः",
+       "en": "mind agitated by grief"
+      }
+     ],
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.803,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday I said nothing touches this grief. Today, the grief is what drops the bow. You have carried this emptiness through fourteen-hour days, and now your mind is simply overwhelmed by what it cost.",
+     "try_today": "Notice one object in your house that you have earned but do not enjoy.",
+     "scene_line": "Arjuna sits in the chariot, letting go of his bow, while you sit at the edge of your own collapse.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.1.47",
+     "path": "bg.1.47 -states_chain-> bg.arjuna_collapse [sanga -causes-> vishada]",
+     "why": [
+      "Arjuna's collapse (Bhagavad Gita 1.28-30)"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.2.62.14",
+      "vr.3.66.9"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 2.8) left off where the same chain of cause in the text; today asks where it comes from.",
+      "link": [
+       "text",
+       "the same chain of cause in the text"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:untraced_sentence(day',drop,exact,land,should,weight)"
+     ],
+     "bridge": "Yesterday I said nothing touches this grief."
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.45",
+     "ref": "Bhagavad Gita 18.45",
+     "ref_iast": "Bhagavad Gītā 18.45",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः । स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु ॥",
+     "line": "Devoted to your own work, you reach fulfilment. Here's how.",
+     "translation": "Each person, devoted to his own work, attains perfection. Hear how one devoted to his own work finds perfection.",
+     "words": [
+      {
+       "sa": "स्वे",
+       "en": "own"
+      },
+      {
+       "sa": "स्वे",
+       "en": "each"
+      },
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "अभिरतः",
+       "en": "engaged"
+      },
+      {
+       "sa": "संसिद्धिं",
+       "en": "perfection"
+      },
+      {
+       "sa": "लभते",
+       "en": "attains"
+      },
+      {
+       "sa": "नरः",
+       "en": "person"
+      },
+      {
+       "sa": "स्वकर्मनिरतः",
+       "en": "engaged in own action"
+      },
+      {
+       "sa": "सिद्धिं",
+       "en": "success"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "obtains"
+      },
+      {
+       "sa": "तच्छृणु",
+       "en": "hear that"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stay in the job your community or birth assigned'. 'Your own work' means the work that fits your nature.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 7.231,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday your mind collapsed under the weight of grief. Today the Gita offers a place to stand. Your own work, done as worship, is the path to perfection. The house and the title are not the end.",
+     "try_today": "Notice one small task today and offer it as worship.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.18.45",
+     "path": "bg.18.45 -heals-> nirveda",
+     "why": [
+      "one's own ordinary work is named as a road to fulfilment",
+      "no need to look to another's work"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.hold_on_brave_heart",
+      "rcm.1.25.chaupai.4",
+      "bg.18.56"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 1.47) named collapse, and today's verse grows energy; today gives ground to stand on.",
+      "link": [
+       "antidote",
+       "vishada>utsaha"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday your mind collapsed under the weight of grief."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.46",
+     "ref": "Bhagavad Gita 18.46",
+     "ref_iast": "Bhagavad Gītā 18.46",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् । स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥",
+     "line": "Doing your own work well can be your worship of the source of all life.",
+     "translation": "By worshipping, through his own work, Him from whom all beings arise and by whom all this is pervaded, a person attains perfection.",
+     "words": [
+      {
+       "sa": "यतः",
+       "en": "from which"
+      },
+      {
+       "sa": "प्रवृत्तिः",
+       "en": "origin"
+      },
+      {
+       "sa": "भूतानां",
+       "en": "of beings"
+      },
+      {
+       "sa": "येन",
+       "en": "by which"
+      },
+      {
+       "sa": "सर्वम्",
+       "en": "all"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "ततम्",
+       "en": "pervades"
+      },
+      {
+       "sa": "स्वकर्मणा",
+       "en": "by own action"
+      },
+      {
+       "sa": "तम्",
+       "en": "that"
+      },
+      {
+       "sa": "अभ्यर्च्य",
+       "en": "worshiping"
+      },
+      {
+       "sa": "सिद्धिं",
+       "en": "success"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "attains"
+      },
+      {
+       "sa": "मानवः",
+       "en": "a person"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Work as worship doesn't mean overwork or tolerating exploitation.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 7.655,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today, the Gita says that doing your own work well is itself worship. You have given your days to the house and the title, yet the emptiness remains. Your own path, with its own flaws, is the one that leads to peace.",
+     "try_today": "Today, notice one small task done with care, and let it be your worship.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.46",
+     "path": "bg.18.46 -heals-> nirveda",
+     "why": [
+      "work that felt pointless becomes an offering to the source of life",
+      "one's own work as worship"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.3.32.50",
+      "up_chhandogya.10",
+      "rcm.2.73.chaupai.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.45) left off where the text continues; today turns it to another way of seeing.",
+      "link": [
+       "text",
+       "the text continues"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:long(28)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_brihadaranyak.92",
+     "ref": "Brihadaranyaka Upanishad 1.4.16",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.16",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "How a householder becomes a 'world' for others.",
+     "sanskrit": "यन्मनुष्यान्वासयते यदेभ्योऽशनं ददाति तेन मनुष्याणामथ यत्पशुभ्यस्तृणोदकं विन्दति तेन पशूनां यदस्य गृहेषु श्वापदा वयाꣳस्या पिपीलिकाभ्य उपजीवन्ति तेन तेषां लोको",
+     "line": "Feed people, find water for animals; when even ants live off your home, you become a world for them.",
+     "translation": "By housing people and giving them food, he becomes a world for people. By finding grass and water for animals, he becomes a world for animals. When beasts, birds and even ants live off his house, he becomes a world for them.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": null,
+     "score": 4.055,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one creature living off your home today and let it be enough.",
+     "scene_line": "You are alone in a house that has held your life, yet it is already a world for those who find shelter within it.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_brihadaranyak.92",
+     "path": "up_brihadaranyak.92 -cultivates-> seva",
+     "why": [
+      "feeding and housing others is what makes a home a world"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.hearts_purified",
+      "up_isha.2",
+      "shakti_gita.5.133"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.46) was about weariness; today brings one practice for it.",
+      "link": [
+       "state",
+       "nirveda"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.4.30.chaupai.2",
+     "ref": "Ramcharitmanas, Kishkindha Kand 4.30 (chaupai 2)",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 4.30",
+     "family": "rcm",
+     "speaker": "Sampati",
+     "listener": "the monkeys",
+     "setting": "The monkeys despair at the ocean; the old vulture Sampati rouses them.",
+     "sanskrit": "पापिउ जाकर नाम सुमिरहीं। अति अपार भवसागर तरहीं॥ तासु दूत तुम्ह तजि कदराई राम हृदयँ धरि करहु उपाई ॥",
+     "line": "Drop your timidity. Keep Ram in your heart and find a way.",
+     "translation": "Even sinners who remember his name cross the boundless ocean of the world. You are his messengers: give up your timidity, keep Ram in your heart and find a way.",
+     "words": [
+      {
+       "sa": "पापिउ",
+       "en": "even sinners"
+      },
+      {
+       "sa": "जाकर",
+       "en": "whose"
+      },
+      {
+       "sa": "नाम",
+       "en": "name"
+      },
+      {
+       "sa": "सुमिरहीं",
+       "en": "remember"
+      },
+      {
+       "sa": "अति",
+       "en": "very"
+      },
+      {
+       "sa": "अपार",
+       "en": "vast"
+      },
+      {
+       "sa": "भवसागर",
+       "en": "ocean of becoming"
+      },
+      {
+       "sa": "तरहीं",
+       "en": "cross"
+      },
+      {
+       "sa": "तासु",
+       "en": "that"
+      },
+      {
+       "sa": "दूत",
+       "en": "messenger"
+      },
+      {
+       "sa": "तुम्ह",
+       "en": "you"
+      },
+      {
+       "sa": "तजि",
+       "en": "leaving"
+      },
+      {
+       "sa": "कदराई",
+       "en": "cowardice"
+      },
+      {
+       "sa": "राम",
+       "en": "Ram"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धरि",
+       "en": "placing"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "उपाई",
+       "en": "a way"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": null,
+     "score": 3.05,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Hold one small act of duty as an offering to Ram in your heart today.",
+     "scene_line": "As the monkeys stand before the ocean, you stand before your own long days.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.4.30.chaupai.2",
+     "path": "rcm.4.30.chaupai.2 -cultivates-> utsaha",
+     "why": [
+      "get up and devise the means"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.5.12.10",
+      "mbh.12.55.16",
+      "mbh.5.133.21"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Brihadaranyaka Upanishad 1.4.16) named loneliness, and today's verse grows surrender; today takes that practice into the hard moment.",
+      "link": [
+       "antidote",
+       "viraha>sharanagati"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(are not the end. You are)",
+      "scene_line:untraced_sentence(edge,exhaus,long,shore)",
+      "for_you:cliche(You are not alone)",
+      "for_you:overrules_their_feeling(You are not alone)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.k.markandeya_child",
+     "title": "Markandeya and the child on the banyan leaf",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Markandeya",
+      "Narayana (the divine child)",
+      "the Pandavas",
+      "Krishna"
+     ],
+     "story_hook": "The whole world was one dark ocean, and on it floated a single banyan tree with a child asleep on a branch.",
+     "summary": "At the end of an age, the sage Markandeya drifts alone over a flooded world and sees a radiant child on a banyan branch. The child draws him inside his body, where he sees all the worlds, then asks if he has been resting, tired. Narayana explains he showed himself because he saw Markandeya's distress. Markandeya tells the Pandavas that this child is Krishna, sitting with them.",
+     "lesson": "When everything you knew is underwater, you have not been forgotten; you are being held.",
+     "matched": [],
+     "anchor": null,
+     "score": 8.154,
+     "why": null,
+     "hook_title": "An old sage drifted alone over a drowned world, and found a child asleep on a leaf",
+     "teaser": "An old sage drifted alone over a drowned world, and found a child asleep on a leaf",
+     "for_you": "Yesterday, fear asked you to hold Ram in your heart and act. Today, the one who holds the world sees your exhaustion and offers rest. The house and the title are not the shelter you need now. Let the long lonely swim be seen and held.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.markandeya_finds_the_child",
+     "path": "st.mbh.markandeya_finds_the_child -enacts_in-> nirveda, viraha ; st.mbh.markandeya_finds_the_child -enacts_turn-> shanti ; st.mbh.markandeya_finds_the_child -fits_situation-> burnout",
+     "why": [
+      "When there is no shelter left anywhere, the one who holds the world knows we are tired and offers rest."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.yv.rama_stops_eating_after_pilgrimage",
+      "st.bhakti.sur_danced_enough",
+      "st.up.narada_knows_everything_still_grieves"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.markandeya_finds_the_child",
+     "arc": {
+      "line": "This week moves through grief in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas, Kishkindha Kand 4.30 (chaupai 2)) was about fear; today someone in the texts lives it.",
+      "link": [
+       "state",
+       "bhaya"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_scripture_claim(man,shore,show,swam)",
+      "scene_line:not_second_person",
+      "scene_line:untraced_sentence(saw,spoke,swam,wearin,withou)"
+     ],
+     "bridge": "Yesterday, fear asked you to hold Ram in your heart and act."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What's it all for",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 60,
+   "v3_w1_write": 0,
+   "v3_w1_calls": 0,
+   "v3_w1_total": 61,
+   "select": 61,
+   "total": 62
+  },
+  "_ms": 65,
+  "_day_ms": [
+   4596,
+   1616,
+   3890,
+   4808,
+   3261,
+   6305
+  ],
+  "_day_calls": [
+   2,
+   1,
+   2,
+   3,
+   2,
+   3
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Nothing is wrong but nothing feels meaningful",
+   "mirror": "Nothing is wrong but nothing feels meaningful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to is wrong but nothing feels meaningful\" and burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:0/7",
+    "v3:per_day:w2:written_at_plan:day1_only",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:no",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes",
+    "v3:day:7:for_you:yes",
+    "v3:day:2:for_you:no",
+    "v3:day:3:for_you:yes",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:no",
+    "v3:day:6:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "restless",
+     "empty"
+    ],
+    "paused": "restless",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "nirveda"
+    ],
+    "risk": "none",
+    "situations": [
+     "retirement",
+     "burnout",
+     "no_meaning"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.2.8",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up."
+   }
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "up_maha.113",
+     "ref": "Maha Upanishad 3.22",
+     "ref_iast": "Mahā Upaniṣad 3.22",
+     "family": "up",
+     "speaker": "Nidagha",
+     "listener": "Ribhu",
+     "setting": "Nidagha on craving.",
+     "sanskrit": "यां यामहं मुनिश्रेष्ठ संश्रयामि गुणश्रियम् । तां तां कृन्तति मे तृष्णा तन्त्रीमिव कुमूषिका ॥",
+     "line": "Every good quality I take up, craving gnaws through, like a mouse chewing a string.",
+     "translation": "Whatever good quality I take refuge in, great sage, craving cuts it away, as a mouse gnaws through a string.",
+     "words": [],
+     "why": "Naming how restless your mind is, is where peace begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.nidagha",
+      "title": "Nidagha's lament",
+      "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+      "story_hook": "",
+      "lesson": "Naming how restless your mind is, is where peace begins."
+     },
+     "score": 12.777,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small thing you do for yourself today, and let the craving pass without feeding it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "up_maha.113",
+     "path": "up_maha.113 -depicts-> trishna (spoken by Nidagha)",
+     "why": [
+      "first person: every resolve I make, craving chews through",
+      "My mind runs everywhere for nothing, and every good quality I take up, craving chews through. What do I do?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.1.12.15",
+      "up_maha.114",
+      "yv.1.31.17"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:names_a_vice_they_never_showed(craving)",
+      "scene_line:not_second_person",
+      "for_you:intensifier(actually)",
+      "for_you:untraced_sentence(built,hollow,inside,outsid,solid)",
+      "for_you:untraced_sentence(ache,earn,left,quiet)",
+      "for_you:untraced_sentence(ache,actual,compas,matter,point,toward)",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.10",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 10",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of 'Censure of Craving'.",
+     "sanskrit": "आशा नाम नदी मनोरथजला तृष्णातरङ्गाकुला रागग्राहवती वितर्कविहगा धैर्यद्रुमध्वंसिनी । मोहावर्तसुदुस्तरातिगहना प्रोत्तुङ्गचिन्तातटी तस्याः पारगता विशुद्धमनसो नन्दन्ति योगीश्वराः ॥",
+     "line": "Hope is a river: its water is wishes, its waves are craving, and its high banks are worry.",
+     "translation": "There is a river called Hope. Its water is wishes, its waves are craving; passions are its crocodiles, doubts its birds; it uproots the trees of courage; its whirlpools of delusion are hard to cross and deep, and its banks of worry tower high. Only great yogis, pure in mind, who reach the far shore, rejoice.",
+     "words": [],
+     "why": "We think we are chasing things; really, the chase is using up our lives.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.trishna",
+      "title": "Vairagyashatakam: Censure of craving",
+      "summary": "The poet confesses everything he did for money and approval: digging for treasure, flattering kings, forcing laughter. He ends with the famous lines that pleasures consumed us and craving never aged, and hope pictured as a river.",
+      "story_hook": "",
+      "lesson": "We think we are chasing things; really, the chase is using up our lives."
+     },
+     "score": 10.557,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when a wish rises and ask if it is a wave in the river.",
+     "scene_line": "You stand on the high bank of worry, looking at the river of hope.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bh.vairagya.10",
+     "path": "bh.vairagya.10 -states_chain-> bh.river_of_hope [trishna -causes-> chinta; trishna -causes-> moha]",
+     "why": [
+      "The river called Hope (Bhartrihari, Vairagya Shataka 10)",
+      "Craving as the waves"
+     ],
+     "writer_note": null,
+     "alts": [
+      "ashtavakra.16.3",
+      "vr.2.62.14",
+      "up_chhandogya.489"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Maha Upanishad 3.22) was about restless wanting; today asks where it comes from.",
+      "link": [
+       "state",
+       "trishna"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:names_a_vice_they_never_showed(Craving)",
+      "for_you:names_a_vice_they_never_showed(craving)"
+     ]
+    }
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.56",
+     "ref": "Bhagavad Gita 18.56",
+     "ref_iast": "Bhagavad Gītā 18.56",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Near the end, Krishna tells Arjuna that a busy, working life is no barrier.",
+     "sanskrit": "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः । मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम् ॥",
+     "line": "Doing all their work while leaning on me, they reach the lasting home, by my grace.",
+     "translation": "Even while always doing every kind of work, the one who leans on me reaches the eternal, imperishable home by my grace.",
+     "words": [
+      {
+       "sa": "सर्वकर्माणि",
+       "en": "all actions"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "कुर्वाणः",
+       "en": "doing"
+      },
+      {
+       "sa": "मद्व्यपाश्रयः",
+       "en": "taking refuge in me"
+      },
+      {
+       "sa": "मत्प्रसादात्",
+       "en": "by my grace"
+      },
+      {
+       "sa": "अवाप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "शाश्वतम्",
+       "en": "eternal"
+      },
+      {
+       "sa": "पदम्",
+       "en": "state"
+      },
+      {
+       "sa": "अव्ययम्",
+       "en": "imperishable"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 10.105,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, hope was a river of worry. Today, your work has a destination. You do not carry it alone.",
+     "try_today": "Notice one small task today and let it be done leaning on grace.",
+     "scene_line": "You stand in the house you built, leaning on grace, as the work continues.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.18.56",
+     "path": "bg.18.56 -heals-> nirveda",
+     "why": [
+      "daily work is given a destination",
+      "the work continues, but it is done leaning on him"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.hold_on_brave_heart",
+      "bg.18.36",
+      "yv.6b.44.32"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Vairagya Shatakam) named worry, and today's verse grows surrender; today gives ground to stand on.",
+      "link": [
+       "antidote",
+       "chinta>sharanagati"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:not_second_person"
+     ],
+     "bridge": "Yesterday, hope was a river of worry."
+    }
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.50",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.50",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "कुर्वतो नार्थसिद्धिर्मे भवतीति ह भारत / निर्वेदो नात्र गन्तव्यो द्वावन्तौ यस्य कर्मणः",
+     "line": "Don't despair because effort hasn't paid off yet. Every attempt can go either way.",
+     "translation": "'I keep working and still don't succeed' is no reason to despair. Every effort can end two ways, in success or not; only by not acting is the outcome certain.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 6.806,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, Krishna said you do not carry your work alone. Today, unrewarded effort is no reason to despair, since every action can end in either success or failure. You have the house and the title. That is not nothing. You did not fail. You simply chose one of the two possible ends.",
+     "try_today": "Notice one small attempt today and accept that it might end in either success or not.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.3.32.50",
+     "path": "mbh.3.32.50 -heals-> nirveda",
+     "why": [
+      "Weariness at unrewarded work is met by naming both possible ends",
+      "Failure is one of two normal outcomes, not a judgement"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.10",
+      "viv.1.duty_sweet_love",
+      "ashtavakra.18.61"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 18.56) was about weariness; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "nirveda"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday, Krishna said you do not carry your work alone."
+    }
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.7.43.chaupai.1",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 43",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "his brothers",
+     "setting": "Ram sums up his teaching to his brothers in Ayodhya.",
+     "sanskrit": "पर हित सरिस धर्म नहिं भाई। पर पीड़ा सम नहिं अधमाई॥ निर्नय सकल पुरान बेद कर। कहेउँ तात जानहिं कोबिद नर ॥",
+     "line": "No duty equals doing good to others, and nothing is lower than causing others pain.",
+     "translation": "There is no duty equal to doing good to others, brother, and no baseness equal to causing others pain. This is the verdict of all the scriptures; the wise know it.",
+     "words": [],
+     "why": "Do good, feel others' joy as your own, and refuse the pleasure of gossip.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.ram_gita_saints",
+      "title": "Ram on good people and difficult people",
+      "summary": "Bharat asks Ram to explain the difference between good and malicious people. Ram says the good are like sandalwood that perfumes the axe that cuts it; they feel others' sorrow and joy as their own and never speak harshly. The malicious burn at others' success and feast on gossip. No duty equals doing good to others.",
+      "story_hook": "",
+      "lesson": "Do good, feel others' joy as your own, and refuse the pleasure of gossip."
+     },
+     "score": 4.145,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small kindness you can offer today, and let it be enough.",
+     "scene_line": "You stand in the house you built, and Ram stands with his brothers, knowing that doing good to others is the highest duty.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "rcm.7.43.chaupai.1",
+     "path": "rcm.7.43.chaupai.1 -cultivates-> seva",
+     "why": [
+      "others' good as the highest dharma"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.9.27",
+      "shakti_gita.5.133",
+      "bg.12.10"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira) was about weariness; today brings one practice for it.",
+      "link": [
+       "state",
+       "nirveda"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(are not empty. They are)",
+      "scene_line:long(26)",
+      "scene_line:untraced_sentence(beyond,earn,reach,surrou,weight)",
+      "for_you:contrast_pattern(not nothing, but)"
+     ]
+    }
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.12.10",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+     "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+     "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+     "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+     "words": [],
+     "why": "When you have looked everywhere, look again; giving up costs too much.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.search_despair",
+      "title": "Hanuman's search and near despair",
+      "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+      "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+      "lesson": "When you have looked everywhere, look again; giving up costs too much."
+     },
+     "score": 3.213,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Doing good to others was yesterday. Not losing heart is the root of success. You have worked long hours and built a life. The emptiness is real. Refuse to let it stop you. Look again where you have not yet looked.",
+     "try_today": "Look again at your home, your car, your title with fresh eyes today.",
+     "scene_line": "You stand in a house that is full, yet feel the emptiness of missing Sita.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.5.12.10",
+     "path": "vr.5.12.10 -cultivates-> utsaha",
+     "why": [
+      "Lakshmana and Hanuman both set the will to go on against despair, inside scenes of real loss.",
+      "perseverance named as the root of success"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.55.16",
+      "mbh.5.133.21",
+      "viv.2.never_mind_failures"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Uttar Kand) was about weariness; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "nirveda"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Doing good to others was yesterday."
+    }
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.bhakti.sur_danced_enough",
+     "title": "Surdas: I have danced enough, Gopal",
+     "kind": "story",
+     "family": "sur",
+     "characters": [
+      "Surdas"
+     ],
+     "story_hook": "'I have danced enough, Gopal.' Surdas's resignation letter from the show.",
+     "summary": "Surdas looks at his whole life as one long performance on a stage, dressed and made up by his own cravings.",
+     "lesson": "Seen clearly, the life driven by craving is a costume dance; one can ask to stop.",
+     "matched": [],
+     "anchor": null,
+     "score": 11.694,
+     "why": null,
+     "hook_title": null,
+     "teaser": "'I have danced enough, Gopal.' Surdas's resignation letter from the show.",
+     "for_you": "Now, the life driven by craving is a costume dance. You can ask to stop. The emptiness is real. You have danced enough. Ask to stop.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.bhakti.sur_danced_enough",
+     "path": "st.bhakti.sur_danced_enough -enacts_in-> nirveda, shrama ; st.bhakti.sur_danced_enough -enacts_turn-> shanti ; st.bhakti.sur_danced_enough -fits_situation-> burnout, no_meaning",
+     "why": [
+      "Seen clearly, the life driven by craving is a costume dance; one can ask to stop."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.yv.bali_same_days",
+      "st.up.narada_knows_everything_still_grieves",
+      "st.yv.rama_stops_eating_after_pilgrimage"
+     ],
+     "thin": false,
+     "story_id": "st.bhakti.sur_danced_enough",
+     "story_text": "04_stories record, unreviewed",
+     "arc": {
+      "line": "This week moves through grief in the pattern in the mind under it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana · Sundara Kanda) was about weariness; today someone in the texts lives it.",
+      "link": [
+       "state",
+       "nirveda"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "practice:names_a_vice_they_never_showed(craving)",
+      "scene_line:not_second_person",
+      "practice:names_a_vice_they_never_showed(craving)",
+      "scene_line:names_a_vice_they_never_showed(cravings)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "What does not pass",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w2_graph": 62,
+   "v3_w2_write": 3607,
+   "v3_w2_calls": 2,
+   "v3_w2_total": 3670,
+   "select": 3671,
+   "total": 3672
+  },
+  "_ms": 3675,
+  "_day_ms": [
+   3489,
+   2590,
+   1477,
+   4109,
+   1725,
+   5297
+  ],
+  "_day_calls": [
+   2,
+   2,
+   1,
+   2,
+   1,
+   3
+  ],
+  "_days_done": true
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Nothing is wrong but nothing feels meaningful",
+   "mirror": "Nothing is wrong but nothing feels meaningful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to is wrong but nothing feels meaningful\" and burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w3:written_at_plan:day1_only",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:4:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:5:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:no",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:no"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "restless",
+     "empty"
+    ],
+    "paused": "restless",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "nirveda"
+    ],
+    "risk": "none",
+    "situations": [
+     "retirement",
+     "burnout",
+     "no_meaning"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.2.8",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You have the house, the car, the title after ten years of 14-hour days, and still nothing touches this grief drying you up."
+   }
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.3",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 3",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Craving",
+     "setting": "From the opening section, 'Censure of Craving': the poet addresses his own craving.",
+     "sanskrit": "उत्खातं निधिशङ्कया क्षितितलं ध्माता गिरेर्धातवो निस्तीर्णः सरितां पतिर्नृपतयो यत्नेन संतोषिताः । मन्त्राराधनतत्परेण मनसा नीताः श्मशाने निशाः प्राप्तः काणवराटकोऽपि न मया तृष्णे सकामा भव ॥",
+     "line": "I dug, sailed, flattered kings, chased every scheme, and gained not a broken coin. Enough, craving.",
+     "translation": "I dug up the earth hoping for treasure, smelted the ores of mountains, crossed the ocean, lord of rivers, worked hard to please kings, spent nights in cremation grounds with my mind fixed on mantras, and I did not get even a broken cowrie. Craving, be satisfied now!",
+     "words": [],
+     "why": "We think we are chasing things; really, the chase is using up our lives.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.trishna",
+      "title": "Vairagyashatakam: Censure of craving",
+      "summary": "The poet confesses everything he did for money and approval: digging for treasure, flattering kings, forcing laughter. He ends with the famous lines that pleasures consumed us and craving never aged, and hope pictured as a river.",
+      "story_hook": "",
+      "lesson": "We think we are chasing things; really, the chase is using up our lives."
+     },
+     "score": 14.812,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have the house, the car, the title, and the hollow feeling. The chasing has cost you something real. Let the empty be enough for today.",
+     "try_today": "Look at one object you gained and ask what it cost you.",
+     "scene_line": "You stand in your own house with the title in your hand and nothing to show for it.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.3",
+     "path": "bh.vairagya.3 -depicts-> trishna (spoken by Bhartrihari)",
+     "why": [
+      "Years of chasing told in first person",
+      "The tired 'enough' at the end"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.1.12.15",
+      "up_maha.114",
+      "up_chhandogya.526"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:names_a_vice_they_never_showed(craving)"
+     ]
+    }
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.16.3",
+     "ref": "Ashtavakra Gita 16.3",
+     "ref_iast": "Aṣṭāvakra Gītā 16.3",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra's 'special instruction' to Janaka on why striving and study do not bring peace.",
+     "sanskrit": "आयासात्सकलो दुःखी नैनं जानाति कश्चन । अनेनैवोपदेशेन धन्यः प्राप्नोति निर्वृतिम् ॥",
+     "line": "Everyone suffers from constant straining, and no one notices. Seeing this alone brings peace.",
+     "translation": "Everyone is miserable from straining after things, and no one realises it. By this single teaching the fortunate one finds peace.",
+     "words": [
+      {
+       "sa": "आयासात्",
+       "en": "from effort"
+      },
+      {
+       "sa": "सकलो",
+       "en": "all"
+      },
+      {
+       "sa": "दुःखी",
+       "en": "suffering"
+      },
+      {
+       "sa": "नैनं",
+       "en": "this"
+      },
+      {
+       "sa": "जानाति",
+       "en": "knows"
+      },
+      {
+       "sa": "कश्चन",
+       "en": "anyone"
+      },
+      {
+       "sa": "अनेनैव",
+       "en": "by this alone"
+      },
+      {
+       "sa": "उपदेशेन",
+       "en": "teaching"
+      },
+      {
+       "sa": "धन्यः",
+       "en": "fortunate"
+      },
+      {
+       "sa": "प्राप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "निर्वृतिम्",
+       "en": "freedom"
+      }
+     ],
+     "why": "Peace isn't another achievement; strain less, and stop expecting escape to fix you.",
+     "misuse": "Not against effort; against the anxious straining that rides on it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.special_instruction",
+      "title": "Why striving and study do not bring peace",
+      "summary": "Ashtavakra warns that reading scriptures, working or meditating will not bring peace on their own; everyone suffers from straining, and running away from the world doesn't end pain. Even pride in being free is just more suffering.",
+      "story_hook": "",
+      "lesson": "Peace isn't another achievement; strain less, and stop expecting escape to fix you."
+     },
+     "score": 12.127,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Bhartrihari named the craving. Today Ashtavakra names the straining. You have given fourteen years to this effort, and the emptiness is the proof of its cost. The peace is in seeing this clearly.",
+     "try_today": "Notice where you are straining right now without trying to fix it.",
+     "scene_line": "Ashtavakra sees Janaka straining in his court, and you in your life, both caught in the same invisible effort.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "ashtavakra.16.3",
+     "path": "ashtavakra.16.3 -states_chain-> ashtavakra.craving [trishna -causes-> samsara; trishna -causes-> shrama]",
+     "why": [
+      "Where craving is, the round is (Ashtavakra Gita 10.3)",
+      "names the straining itself as the cause of the misery"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.misery_attachment",
+      "mbh.12.173.53",
+      "up_kath.2.1.1"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Vairagya Shatakam) was about exhaustion; today asks where it comes from.",
+      "link": [
+       "state",
+       "shrama"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "for_you": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(ache,decade,motion,spent)",
+      "audio_close:contrast_pattern(, not from)"
+     ],
+     "bridge": "Bhartrihari named the craving."
+    }
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.21",
+     "ref": "Bhagavad Gita 5.21",
+     "ref_iast": "Bhagavad Gītā 5.21",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् । स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते ॥",
+     "line": "Unhooked from outside pleasures, you find a joy within that doesn't run out.",
+     "translation": "One whose self is unattached to outer contacts finds the happiness that is in the self. Joined to Brahman by yoga, he enjoys undying happiness.",
+     "words": [
+      {
+       "sa": "बाह्यस्पर्शेषु",
+       "en": "to external contacts"
+      },
+      {
+       "sa": "असक्तात्मा",
+       "en": "detached self"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "finds"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the self"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "स",
+       "en": "that person"
+      },
+      {
+       "sa": "ब्रह्मयोगयुक्तात्मा",
+       "en": "united with supreme reality"
+      },
+      {
+       "sa": "सुखम्",
+       "en": "happiness"
+      },
+      {
+       "sa": "अक्षयम्",
+       "en": "imperishable"
+      },
+      {
+       "sa": "अश्नुते",
+       "en": "attains"
+      }
+     ],
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 10.203,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You saw yesterday that constant striving brings misery. Now you can look inward, beyond the fourteen-hour days, and find a quiet joy that does not run out.",
+     "try_today": "Notice when the outer prize feels hollow and pause there.",
+     "scene_line": "You stand in the house you built and feel nothing.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.5.21",
+     "path": "bg.5.21 -heals-> trishna",
+     "why": [
+      "the search turns inward",
+      "when outer things stop satisfying, the verse points to a happiness that was never outside"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_taittiriya.146",
+      "bg.18.24",
+      "yv.2.15.1"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ashtavakra Gita 16.3) named exhaustion, and today's verse grows knowing the self; today gives ground to stand on.",
+      "link": [
+       "antidote",
+       "shrama>atma_jnana"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:not_second_person"
+     ],
+     "bridge": "You saw yesterday that constant striving brings misery."
+    }
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.173.64",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+     "family": "mbh",
+     "speaker": "Pingala (quoted by Bhishma)",
+     "listener": "(herself)",
+     "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+     "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+     "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+     "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+     "words": [],
+     "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.pingala",
+      "title": "Pingala's song: the night she stopped waiting",
+      "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+      "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+      "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+     },
+     "score": 8.351,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, Krishna spoke of joy that does not run out. Today, Pingala shows that letting go of expectation is the highest ease. You have waited ten years for a return that never came.",
+     "try_today": "Notice the weight of the title you carry, and let it rest for one hour today.",
+     "scene_line": "You stand at the edge of your empty house, watching Pingala sleep peacefully.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.12.173.64",
+     "path": "mbh.12.173.64 -heals-> trishna via vairagya",
+     "why": [
+      "Dropping the expectation is the ease.",
+      "The waiting itself is shown as the pain, and its end as rest"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.612",
+      "up_maha.453",
+      "yv.5.21.14"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 5.21) was about restless wanting; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "trishna"
+      ]
+     },
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:tells_the_lonely_to_let_go(Let go of the)",
+      "practice:let_go_of_hope(let it go)"
+     ],
+     "bridge": "Yesterday, Krishna spoke of joy that does not run out."
+    }
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.9.27",
+     "ref": "Bhagavad Gita 9.27",
+     "ref_iast": "Bhagavad Gītā 9.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on simple, wholehearted devotion.",
+     "sanskrit": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् । यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥",
+     "line": "Whatever you do, eat, give or endure, do it as an offering.",
+     "translation": "Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever austerity you practise, Kaunteya, do it as an offering to me.",
+     "words": [
+      {
+       "sa": "यत्करोषि",
+       "en": "whatever you do"
+      },
+      {
+       "sa": "यदश्नासि",
+       "en": "whatever you eat"
+      },
+      {
+       "sa": "यज्जुहोषि",
+       "en": "whatever you offer in sacrifice"
+      },
+      {
+       "sa": "ददासि",
+       "en": "you give"
+      },
+      {
+       "sa": "यत्",
+       "en": "whatever"
+      },
+      {
+       "sa": "यत्तपस्यसि",
+       "en": "whatever austerity you practice"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "तत्कुरुष्व",
+       "en": "do that"
+      },
+      {
+       "sa": "मदर्पणम्",
+       "en": "as an offering to me"
+      }
+     ],
+     "why": "Small offerings given with love matter; no one is beyond turning around.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p09.6",
+      "title": "The glory of selfless devotion",
+      "summary": "A leaf, flower, fruit or water offered with love is accepted. Offer everything you do; the divine hates no one, and even a wrongdoer who turns wholeheartedly is counted good.",
+      "story_hook": "",
+      "lesson": "Small offerings given with love matter; no one is beyond turning around."
+     },
+     "score": 4.115,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, Pingala found peace in letting go of expectation. Today, Krishna asks you to offer the work itself, not its return.",
+     "try_today": "Offer one small task to me today, without asking for anything back.",
+     "scene_line": "You stand in a house you built, offering nothing but your weariness.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "bg.9.27",
+     "path": "bg.9.27 -cultivates-> seva",
+     "why": [
+      "work as offering"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.12.10",
+      "shakti_gita.5.133",
+      "yv.2.14.50"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Shanti Parva · Bhishma, Mokshadharma) named worry, and today's verse grows surrender; today brings one practice for it.",
+      "link": [
+       "antidote",
+       "chinta>sharanagati"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "audio_close:untraced_sentence(change,emptin,gift,itself,shape)"
+     ],
+     "bridge": "Yesterday, Pingala found peace in letting go of expectation."
+    }
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.292.chaupai.4",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 292",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Bharat",
+     "setting": "Ram asks Bharat to rule in his place for fourteen years.",
+     "sanskrit": "जानि तुम्हहि मृदु कहउँ कठोरा। कुसमयँ तात न अनुचित मोरा॥ होहिं कुठायँ सुबंधु सहाए। ओड़िअहिं हाथ असनिहु के धाए ॥",
+     "line": "In bad times, good siblings are the hands that rise to block the blow.",
+     "translation": "Knowing you are gentle, I still say something hard; in hard times, brother, it isn't wrong of me. In bad times it is good brothers who help; it is the hands that rise to block a thunderbolt.",
+     "words": [
+      {
+       "sa": "जानि",
+       "en": "knowing"
+      },
+      {
+       "sa": "तुम्हहि",
+       "en": "you"
+      },
+      {
+       "sa": "मृदु",
+       "en": "gentle"
+      },
+      {
+       "sa": "कहउँ",
+       "en": "I speak"
+      },
+      {
+       "sa": "कठोरा",
+       "en": "harsh"
+      },
+      {
+       "sa": "कुसमयँ",
+       "en": "in a bad time"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अनुचित",
+       "en": "improper"
+      },
+      {
+       "sa": "मोरा",
+       "en": "mine"
+      },
+      {
+       "sa": "होहिं",
+       "en": "become"
+      },
+      {
+       "sa": "कुठायँ",
+       "en": "in a crisis"
+      },
+      {
+       "sa": "सुबंधु",
+       "en": "true brother"
+      },
+      {
+       "sa": "सहाए",
+       "en": "helpers"
+      },
+      {
+       "sa": "ओड़िअहिं",
+       "en": "stop"
+      },
+      {
+       "sa": "हाथ",
+       "en": "hand"
+      },
+      {
+       "sa": "असनिहु",
+       "en": "lightning"
+      },
+      {
+       "sa": "के",
+       "en": "of"
+      },
+      {
+       "sa": "धाए",
+       "en": "strikes"
+      }
+     ],
+     "why": "A good resolution gives each person a role and something to hold on to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.ram_bharat_resolution",
+      "title": "Ram and Bharat settle it",
+      "summary": "Ram tells Bharat that keeping their father's word is the duty of both brothers, and that the leader must be like the mouth, taking in only to nourish the whole body. He asks him to rule in his place, knowing it is the harder task. Bharat accepts, asking only for Ram's sandals to keep him going.",
+      "story_hook": "Both brothers wanted the other to be king.",
+      "lesson": "A good resolution gives each person a role and something to hold on to."
+     },
+     "score": 3.065,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today the verse says good siblings are the hands that rise to block the blow. In hard times it is good brothers who take the blow, as hands rise to shield against a thunderbolt.",
+     "try_today": "Notice one small act today that shields another without asking for thanks.",
+     "scene_line": "You stand in the house you built, and the verse speaks of hands rising to block the blow.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.2.292.chaupai.4",
+     "path": "rcm.2.292.chaupai.4 -cultivates-> seva",
+     "why": [
+      "taking the hard share for one's family when times are bad"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.55.16",
+      "mbh.5.133.21",
+      "viv.2.never_mind_failures"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 9.27) named weariness, and today's verse grows service; today takes that practice into the hard moment.",
+      "link": [
+       "antidote",
+       "nirveda>seva"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:long(62)",
+      "scene_line:preachy(who must)"
+     ]
+    }
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.manki",
+     "title": "Manki's song: desire, I know your root",
+     "kind": "teaching",
+     "family": "mbh",
+     "characters": [
+      "Manki",
+      "Janaka (quoted)",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Manki put every coin he had into two young oxen, and lost both in a single afternoon.",
+     "summary": "Manki spends all he has on a pair of oxen; both are killed in an accident. In his despair he sees through desire: it is born of his own imagining, and he resolves to forgive insults and stop feeding it. Bhishma adds Janaka's verse on owning nothing.",
+     "lesson": "Desire grows from what we imagine. Stop feeding it, and it fades.",
+     "matched": [],
+     "anchor": null,
+     "score": 12.236,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Manki put every coin he had into two young oxen, and lost both in a single afternoon.",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.manki_and_the_two_young_bulls",
+     "path": "st.mbh.manki_and_the_two_young_bulls -enacts_in-> nirveda, trishna ; st.mbh.manki_and_the_two_young_bulls -enacts_turn-> santosha, shanti",
+     "why": [
+      "Craving is born of one's own imagining; stop feeding it and it dies at the root."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bh.wrinkles_but_craving_young",
+      "st.yv.bali_same_days",
+      "st.mbh.bhima_keeps_watch_over_his_sleeping_mother"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.manki_and_the_two_young_bulls",
+     "arc": {
+      "line": "This week moves through grief in who you are beyond it: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Ayodhya Kand) was about grief; today someone in the texts lives it.",
+      "link": null
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:not_second_person",
+      "scene_line:not_second_person",
+      "for_you:let_go_of_hope(Let it go)",
+      "scene_line:not_second_person"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "What gives it meaning",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w3_graph": 64,
+   "v3_w3_write": 3474,
+   "v3_w3_calls": 2,
+   "v3_w3_total": 3540,
+   "select": 3540,
+   "total": 3541
+  },
+  "_ms": 3547,
+  "_day_ms": [
+   3419,
+   4487,
+   3203,
+   1440,
+   6129,
+   4474
+  ],
+  "_day_calls": [
+   2,
+   3,
+   2,
+   1,
+   3,
+   2
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true
+ }
+}

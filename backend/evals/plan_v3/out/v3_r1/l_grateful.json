@@ -1,0 +1,943 @@
+{
+ "case": "l_grateful",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "grand",
+    "family"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want to feel more grateful",
+   "mirror": "I want to feel more grateful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "credit_taken",
+     "label": "My manager took credit for my work",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I want to feel more grateful\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.08,see=0.9",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:error:TooManyRequestsError",
+    "day1:graph_pick",
+    "first_line:llm_error"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "grateful",
+    "trail": [
+     "grateful"
+    ],
+    "paused": null,
+    "stance": "seeking",
+    "states": [
+     "kritajnata"
+    ],
+    "risk": "none",
+    "situations": [
+     "gratitude",
+     "illness_family",
+     "credit_taken"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82"
+   }
+  },
+  "hook": {
+   "id": "bh.vairagya.82",
+   "ref": "Bhartrihari · Vairagya Shatakam",
+   "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+   "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+   "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+   "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+   "words": [],
+   "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful"
+    }
+   ],
+   "prasang": {
+    "id": "bh.p.vairagya.shiva",
+    "title": "Vairagyashatakam: Worship of Shiva",
+    "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+    "story_hook": "",
+    "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You want to hold on to this feeling while you are retired.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You want to hold on to this feeling while you are retired.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "viv.6.glad_blunders",
+    "ref": "Swami Vivekananda",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Josephine MacLeod ('Joe')",
+    "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+    "sanskrit": null,
+    "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "words": [],
+    "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "viv.p.letter.joe_1900",
+     "title": "'I am drifting': a letter from Alameda (1900)",
+     "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+     "story_hook": "",
+     "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bh.niti.25",
+    "ref": "Bhartrihari · Niti Shatakam",
+    "ref_iast": "Bhartṛhari, Nītiśatakam 25",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From the section praising learning: the blessings of a good life.",
+    "sanskrit": "सूनुः सच्चरितः सती प्रियतमा स्वामी प्रसादोन्मुखः स्निग्धं मित्रमवञ्चकः परिजनो निष्क्लेशलेशं मनः । आकारो रुचिरः स्थिरश्च विभवो विद्यावदातं मुखं तुष्टे विष्टपकष्टहारिणि हरौ सम्प्राप्यते देहिना ॥",
+    "line": "A good child, a loving spouse, a kind boss, a true friend, a mind at ease: count these as grace.",
+    "translation": "A son of good conduct, a devoted and loving wife, a gracious master, an affectionate friend, kinsfolk who do not cheat, a mind without a trace of strain, a pleasing form, lasting prosperity, a face bright with learning: these come to the one with whom Hari, remover of the world's troubles, is pleased.",
+    "words": [],
+    "why": "What you learn and how you speak are the wealth no one can take from you.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.niti.vidvat",
+     "title": "Nitishatakam: In praise of learning and the learned",
+     "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+     "story_hook": "",
+     "lesson": "What you learn and how you speak are the wealth no one can take from you."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 314,
+   "v3_candidates": 33,
+   "v3_fast_read": 46,
+   "v3_select": 395,
+   "v3_first_line": 120,
+   "v3_total": 516,
+   "total": 516
+  },
+  "_ms": 519
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "grand",
+    "family"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want to feel more grateful",
+   "mirror": "I want to feel more grateful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "credit_taken",
+     "label": "My manager took credit for my work",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I want to feel more grateful\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "v3:for_you:1/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "grateful",
+    "trail": [
+     "grateful"
+    ],
+    "paused": null,
+    "stance": "seeking",
+    "states": [
+     "kritajnata"
+    ],
+    "risk": "none",
+    "situations": [
+     "gratitude",
+     "illness_family",
+     "credit_taken"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.82",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+     "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+     "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+     "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+     "words": [],
+     "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "gratitude",
+       "label": "I want to feel more grateful"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.shiva",
+      "title": "Vairagyashatakam: Worship of Shiva",
+      "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+      "story_hook": "",
+      "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+     },
+     "score": 13.256,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.82",
+     "path": "bh.vairagya.82 -depicts-> kritajnata [light_fit]",
+     "why": [
+      "Wonder at a simple, sufficient life",
+      "Counting what is already here"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.6.glad_blunders",
+      "bh.niti.25",
+      "up_skand.1"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.7.117.chaupai.17",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi continues listing the diseases of the mind.",
+     "sanskrit": "ममता दादु कंडु इरषाई। हरष बिषाद गरह बहुताई॥ पर सुख देखि जरनि सोइ छई। कुष्ट दुष्टता मन कुटिलई ॥",
+     "line": "Envy is an itch. Burning at another's happiness is a wasting disease of the mind.",
+     "translation": "Possessiveness is ringworm and envy is the itch; the swings of elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy.",
+     "words": [],
+     "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.garuda_questions",
+      "title": "Garuda's seven questions",
+      "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+      "story_hook": "",
+      "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+     },
+     "score": 2.5,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "rcm.7.117.chaupai.17",
+     "path": "rcm.7.117.chaupai.17 -states_chain-> rcm.manas_rog [moha -causes-> krodha; moha -causes-> ahankara]",
+     "why": [
+      "The illnesses of the mind (Ramcharitmanas, Uttar Kand 121-122 (Gita Press))",
+      "burning at another's joy is named as an illness one suffers, which can be treated"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.582",
+      "up_kath.1.3.3",
+      "rcm.7.117.chaupai.15"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "words": [
+      {
+       "sa": "अनन्याः",
+       "en": "exclusive"
+      },
+      {
+       "sa": "चिन्तयन्तः",
+       "en": "thinking"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "जनाः",
+       "en": "people"
+      },
+      {
+       "sa": "पर्युपासते",
+       "en": "worship"
+      },
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "नित्याभियुक्तानाम्",
+       "en": "always attached"
+      },
+      {
+       "sa": "योगक्षेमम्",
+       "en": "well-being and protection"
+      },
+      {
+       "sa": "वहामि",
+       "en": "I carry"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 4.114,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are looking for a place to land. Let the whole mind settle there. What is missing will be met, and what is found will be kept.",
+     "try_today": "Fix the mind on one source at dawn.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.9.22",
+     "path": "bg.9.22 -heals-> bhaya via sharanagati",
+     "why": [
+      "Rama's vow of safety to whoever comes afraid; 'I carry what they lack'.",
+      "what you have is guarded"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.56",
+      "bg.11.55",
+      "avadhuta.2.24"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "static",
+      "practice": "static"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.3.servant_first",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 3",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Hindus of Jaffna",
+     "setting": "'Vedantism', Jaffna, Ceylon, January 1897. Closing words.",
+     "sanskrit": null,
+     "line": "Always first learn to be a servant, and then you will be fit to be a master.",
+     "translation": "Always first learn to be a servant, and then you will be fit to be a master.",
+     "words": [],
+     "why": "Thoughts shape us, so teach yourself and your children strength.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.jaffna",
+      "title": "'Whatever you think, that you will be' (Jaffna, 1897)",
+      "summary": "On his first tour after the West he summarises Vedanta for the Hindus of Jaffna. Thinking yourself weak makes you weak; children should be raised strong and told of the glory of the soul. Learn to serve before you lead.",
+      "story_hook": "",
+      "lesson": "Thoughts shape us, so teach yourself and your children strength."
+     },
+     "score": 5.346,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.3.servant_first",
+     "path": "viv.3.servant_first -heals-> ahankara via seva",
+     "why": [
+      "Work for the good of all.",
+      "leadership earned through service"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.3.20",
+      "mbh.14.92.75",
+      "bh.niti.71"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.9.27",
+     "ref": "Bhagavad Gita 9.27",
+     "ref_iast": "Bhagavad Gītā 9.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on simple, wholehearted devotion.",
+     "sanskrit": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् । यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥",
+     "line": "Whatever you do, eat, give or endure, do it as an offering.",
+     "translation": "Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever austerity you practise, Kaunteya, do it as an offering to me.",
+     "words": [
+      {
+       "sa": "यत्करोषि",
+       "en": "whatever you do"
+      },
+      {
+       "sa": "यदश्नासि",
+       "en": "whatever you eat"
+      },
+      {
+       "sa": "यज्जुहोषि",
+       "en": "whatever you offer in sacrifice"
+      },
+      {
+       "sa": "ददासि",
+       "en": "you give"
+      },
+      {
+       "sa": "यत्",
+       "en": "whatever"
+      },
+      {
+       "sa": "यत्तपस्यसि",
+       "en": "whatever austerity you practice"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "तत्कुरुष्व",
+       "en": "do that"
+      },
+      {
+       "sa": "मदर्पणम्",
+       "en": "as an offering to me"
+      }
+     ],
+     "why": "Small offerings given with love matter; no one is beyond turning around.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.6",
+      "title": "The glory of selfless devotion",
+      "summary": "A leaf, flower, fruit or water offered with love is accepted. Offer everything you do; the divine hates no one, and even a wrongdoer who turns wholeheartedly is counted good.",
+      "story_hook": "",
+      "lesson": "Small offerings given with love matter; no one is beyond turning around."
+     },
+     "score": 4.867,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "bg.9.27",
+     "path": "bg.9.27 -cultivates-> seva",
+     "why": [
+      "work as offering",
+      "each meal and gift is handed back"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_taittiriya.52",
+      "bh.niti.64",
+      "viv.1.grateful_to_helped"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.48",
+     "ref": "Bhagavad Gita 2.48",
+     "ref_iast": "Bhagavad Gītā 2.48",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥",
+     "line": "Do the work steadily, letting go of clinging. Stay the same in success and failure; that balance is yoga.",
+     "translation": "Established in yoga, do your work, Dhananjaya, giving up attachment, the same in success and failure. This evenness is called yoga.",
+     "words": [
+      {
+       "sa": "योगस्थः",
+       "en": "established in yoga"
+      },
+      {
+       "sa": "कुरु",
+       "en": "do"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "सङ्गं",
+       "en": "attachment"
+      },
+      {
+       "sa": "त्यक्त्वा",
+       "en": "having abandoned"
+      },
+      {
+       "sa": "धनञ्जय",
+       "en": "O Dhananjaya"
+      },
+      {
+       "sa": "सिद्ध्यसिद्ध्योः",
+       "en": "success and failure"
+      },
+      {
+       "sa": "समो",
+       "en": "equal"
+      },
+      {
+       "sa": "भूत्वा",
+       "en": "being"
+      },
+      {
+       "sa": "समत्वं",
+       "en": "evenness"
+      },
+      {
+       "sa": "योग",
+       "en": "yoga"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "Even in success and failure doesn't mean indifferent to them; learn from both without being thrown.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.54,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bg.2.48",
+     "path": "bg.2.48 -cultivates-> samatva",
+     "why": [
+      "evenness is given as the very definition of yoga"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.37.51",
+      "rcm.4.30.chaupai.2",
+      "rcm.6.19.doha.1"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.shabari",
+     "title": "Ram visits Shabari",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "She had swept the path every morning for years for a guest who might never come.",
+     "summary": "An old forest woman, Shabari, has waited years for Ram. When he comes she washes his feet and feeds him roots and fruit, and he praises every bite. He tells her he recognises only the bond of devotion and describes nine forms of it, ending with contentment, not hunting faults, and being simple and without guile.",
+     "lesson": "What counts is the heart you bring, not who you are on paper.",
+     "matched": [],
+     "anchor": null,
+     "score": 3.204,
+     "why": null,
+     "hook_title": "Shabari swept the path every morning for years for Ram, who might never come",
+     "teaser": "Shabari swept the path every morning for years for Ram, who might never come",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.rcm.shabari_waited_and_was_taught",
+     "path": "st.rcm.shabari_waited_and_was_taught -enacts_turn-> ananda, kritajnata, sharanagati ; st.rcm.shabari_waited_and_was_taught -fits_situation-> gratitude",
+     "why": [
+      "Devotion is the only kinship the Lord counts; any one of the nine ways, held firmly, is enough."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.jambavan_admits_he_is_old",
+      "st.bg.sanjaya_remembering",
+      "st.rcm.kevat_bargains"
+     ],
+     "thin": false,
+     "story_id": "st.rcm.shabari_waited_and_was_taught",
+     "personal_source": {}
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What's it all for",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 26,
+   "v3_w1_write": 90,
+   "v3_w1_total": 117,
+   "select": 117,
+   "total": 118
+  },
+  "_ms": 119
+ }
+}

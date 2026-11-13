@@ -148,6 +148,28 @@ export function trackAppStoreClick(page: string, location: string, href: string)
   trackLinkClick(page, location, href)
 }
 
+/** Super properties: sent with every later event from this browser (mixpanel.register), through the one entry point. */
+export function registerSuper(props: Record<string, unknown>) {
+  if (typeof window === 'undefined') return
+  initMixpanel()
+  try {
+    mixpanel.register(props)
+  } catch {
+    // not ready
+  }
+}
+
+/** Mixpanel's id for this visitor right now (anonymous device id, or the uid once identified). */
+export function distinctId(): string | null {
+  if (typeof window === 'undefined') return null
+  initMixpanel()
+  try {
+    return String(mixpanel.get_distinct_id() ?? '') || null
+  } catch {
+    return null
+  }
+}
+
 /** Profile properties on the identified person (people.increment / set_once / set), through the one Mixpanel entry point. */
 export function updateProfile(p: { increment?: Record<string, number>; setOnce?: Record<string, unknown>; set?: Record<string, unknown> }) {
   if (typeof window === 'undefined') return

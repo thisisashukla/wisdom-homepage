@@ -1,0 +1,290 @@
+{
+ "case": "x_widower_gita",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want to reconnect with my roots",
+   "mirror": "I want to reconnect with my roots",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.9,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I want to reconnect with my roots\" and \"I've retired and feel lost\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.0,see=0.91",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lonely",
+    "trail": [
+     "lonely"
+    ],
+    "paused": null,
+    "stance": "wronged",
+    "states": [
+     "shoka",
+     "vishada"
+    ],
+    "risk": "distress",
+    "situations": [
+     "reconnect_faith",
+     "grief_general",
+     "retirement"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "first_line": "You keep busy with seva, but the evenings ask for a truth that holds your grief."
+   }
+  },
+  "hook": {
+   "id": "rcm.5.6.chaupai.1",
+   "ref": "Ramcharitmanas · Sundar Kand",
+   "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+   "family": "rcm",
+   "speaker": "Vibhishan",
+   "listener": "Hanuman",
+   "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+   "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+   "line": "I live here like the tongue among the teeth.",
+   "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+   "words": [
+    {
+     "sa": "सुनहु",
+     "en": "listen"
+    },
+    {
+     "sa": "पवनसुत",
+     "en": "son of the wind"
+    },
+    {
+     "sa": "रहनि",
+     "en": "way of living"
+    },
+    {
+     "sa": "हमारी",
+     "en": "my"
+    },
+    {
+     "sa": "जिमि",
+     "en": "like"
+    },
+    {
+     "sa": "दसनन्हि",
+     "en": "teeth"
+    },
+    {
+     "sa": "महुँ",
+     "en": "within"
+    },
+    {
+     "sa": "जीभ",
+     "en": "tongue"
+    },
+    {
+     "sa": "बिचारी",
+     "en": "poor, helpless"
+    },
+    {
+     "sa": "तात",
+     "en": "friend"
+    },
+    {
+     "sa": "कबहुँ",
+     "en": "ever"
+    },
+    {
+     "sa": "मोहि",
+     "en": "me"
+    },
+    {
+     "sa": "जानि",
+     "en": "knowing"
+    },
+    {
+     "sa": "अनाथा",
+     "en": "helpless, without a protector"
+    },
+    {
+     "sa": "करिहहिं",
+     "en": "will do"
+    },
+    {
+     "sa": "कृपा",
+     "en": "grace"
+    },
+    {
+     "sa": "भानुकुल",
+     "en": "solar line"
+    },
+    {
+     "sa": "नाथा",
+     "en": "Lord"
+    }
+   ],
+   "why": "Even in a hostile place there may be one ally; find them.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "rcm.p.vibhishan_hanuman",
+    "title": "Hanuman finds a friend in Lanka",
+    "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+    "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+    "lesson": "Even in a hostile place there may be one ally; find them."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You keep busy with seva, but the evenings ask for a truth that holds your grief.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You keep busy with seva, but the evenings ask for a truth that holds your grief.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "mbh.5.71.28",
+    "ref": "Mahabharata · Udyoga Parva · Udyoga: Krishna's peace embassy",
+    "ref_iast": "Mahābhārata, Udyoga Parva 71.28",
+    "family": "mbh",
+    "speaker": "Yudhishthira",
+    "listener": "Krishna",
+    "setting": "Before Krishna leaves for the Kaurava court, Yudhishthira lays out why he wants peace, not war.",
+    "sanskrit": "अधनाद्धि निवर्तन्ते ज्ञातयः सुहृदो द्विजाः / अपुष्पादफलाद्वृक्षाद्यथा कृष्ण पतत्रिणः",
+    "line": "When money runs out, some friends drift away, like birds leaving a tree with no fruit.",
+    "translation": "When a man has no money, relatives, friends and brahmins turn away from him, the way birds leave a tree that has no flowers and no fruit.",
+    "words": [],
+    "why": "Winning a feud still costs you peace. Hostility only ends when someone stops feeding it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.yudhishthira_peace_case",
+     "title": "Yudhishthira's case for peace",
+     "summary": "Before Krishna sets out as peace envoy, Yudhishthira opens his heart: poverty humiliates, greed corrodes, victory breeds enmity, and hostility is never ended by hostility. He asks only for five villages.",
+     "story_hook": "",
+     "lesson": "Winning a feud still costs you peace. Hostility only ends when someone stops feeding it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 206,
+   "v3_candidates": 44,
+   "v3_fast_read": 1580,
+   "v3_select": 1832,
+   "v3_total": 1832,
+   "total": 1834
+  },
+  "_ms": 1840
+ }
+}

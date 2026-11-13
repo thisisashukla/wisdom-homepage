@@ -1,0 +1,1105 @@
+{
+ "case": "x_layoff_father",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"I feel anxious most of the time\" and \"Someone I love is seriously ill\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.0,wro=0.35,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "note_match:timeout",
+    "fast_read:error:TooManyRequestsError",
+    "day1:graph_pick",
+    "first_line:llm_error"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "struggle",
+    "states": [
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.37"
+   }
+  },
+  "hook": {
+   "id": "bg.6.37",
+   "ref": "Bhagavad Gita 6.37",
+   "ref_iast": "Bhagavad Gītā 6.37",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+   "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+   "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+   "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+   "words": [
+    {
+     "sa": "अर्जुन उवाच",
+     "en": "Arjuna said"
+    },
+    {
+     "sa": "अयतिः",
+     "en": "one without steady effort"
+    },
+    {
+     "sa": "श्रद्धयोपेतः",
+     "en": "endowed with faith"
+    },
+    {
+     "sa": "योगात्",
+     "en": "from yoga"
+    },
+    {
+     "sa": "चलितमानसः",
+     "en": "with a mind turned away"
+    },
+    {
+     "sa": "अप्राप्य",
+     "en": "without attaining"
+    },
+    {
+     "sa": "योगसंसिद्धिम्",
+     "en": "perfection in yoga"
+    },
+    {
+     "sa": "कां गतिम्",
+     "en": "what state"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "गच्छति",
+     "en": "does he go"
+    }
+   ],
+   "why": "No sincere effort is wasted; you pick up where you left off.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.5",
+    "title": "What becomes of one who falls from yoga",
+    "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+    "story_hook": "",
+    "lesson": "No sincere effort is wasted; you pick up where you left off."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are raising children and the path ahead feels unclear, so a verse was chosen with that in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are raising children and the path ahead feels unclear, so a verse was chosen with that in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "bg.6.39",
+    "ref": "Bhagavad Gita 6.39",
+    "ref_iast": "Bhagavad Gītā 6.39",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna, afraid of failing halfway on the inner path, turns to Krishna.",
+    "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः । त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते ॥",
+    "line": "Only you can clear this doubt completely. There is no one else I can ask.",
+    "translation": "Krishna, please cut away this doubt of mine completely. No one but you can remove it.",
+    "words": [
+     {
+      "sa": "एतत्",
+      "en": "this"
+     },
+     {
+      "sa": "मे",
+      "en": "my"
+     },
+     {
+      "sa": "संशयम्",
+      "en": "doubt"
+     },
+     {
+      "sa": "कृष्ण",
+      "en": "O Krishna"
+     },
+     {
+      "sa": "छेत्तुम्",
+      "en": "to cut"
+     },
+     {
+      "sa": "अर्हसि",
+      "en": "you are able"
+     },
+     {
+      "sa": "अशेषतः",
+      "en": "completely"
+     },
+     {
+      "sa": "त्वदन्यः",
+      "en": "other than you"
+     },
+     {
+      "sa": "संशयस्य",
+      "en": "of the doubt"
+     },
+     {
+      "sa": "अस्य",
+      "en": "of this"
+     },
+     {
+      "sa": "छेत्ता",
+      "en": "cutter"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "हि",
+      "en": "indeed"
+     },
+     {
+      "sa": "उपपद्यते",
+      "en": "is possible"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "fear_failure",
+      "label": "I'm afraid of failing"
+     },
+     {
+      "id": "uncertainty",
+      "label": "I can't handle not knowing what comes next"
+     }
+    ],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.6.33",
+    "ref": "Bhagavad Gita 6.33",
+    "ref_iast": "Bhagavad Gītā 6.33",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+    "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+    "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+    "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "यः",
+      "en": "which"
+     },
+     {
+      "sa": "अयम्",
+      "en": "this"
+     },
+     {
+      "sa": "योगः",
+      "en": "yoga"
+     },
+     {
+      "sa": "त्वया",
+      "en": "by you"
+     },
+     {
+      "sa": "प्रोक्तः",
+      "en": "spoken"
+     },
+     {
+      "sa": "साम्येन",
+      "en": "with balance"
+     },
+     {
+      "sa": "मधुसूदन",
+      "en": "O Madhusudana"
+     },
+     {
+      "sa": "एतस्य",
+      "en": "of this"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "पश्यामि",
+      "en": "see"
+     },
+     {
+      "sa": "चञ्चलत्वात्",
+      "en": "because of restlessness"
+     },
+     {
+      "sa": "स्थितिम्",
+      "en": "steady state"
+     },
+     {
+      "sa": "स्थिराम्",
+      "en": "firm"
+     }
+    ],
+    "why": "The mind is hard to hold, but practice and letting go train it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p06.4",
+     "title": "Mastering the mind",
+     "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+     "story_hook": "",
+     "lesson": "The mind is hard to hold, but practice and letting go train it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 803,
+   "v3_candidates": 0,
+   "v3_fast_read": 59,
+   "v3_select": 867,
+   "v3_first_line": 50,
+   "v3_total": 917,
+   "total": 918
+  },
+  "_ms": 923
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.75,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"I feel anxious most of the time\" and I love is seriously ill\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "v3:for_you:1/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "stuck",
+     "lost"
+    ],
+    "paused": "stuck",
+    "stance": "struggle",
+    "states": [
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "45_54",
+    "stages": [
+     "working",
+     "raising_kids",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.37",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.37",
+     "ref": "Bhagavad Gita 6.37",
+     "ref_iast": "Bhagavad Gītā 6.37",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+     "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+     "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+     "words": [
+      {
+       "sa": "अर्जुन उवाच",
+       "en": "Arjuna said"
+      },
+      {
+       "sa": "अयतिः",
+       "en": "one without steady effort"
+      },
+      {
+       "sa": "श्रद्धयोपेतः",
+       "en": "endowed with faith"
+      },
+      {
+       "sa": "योगात्",
+       "en": "from yoga"
+      },
+      {
+       "sa": "चलितमानसः",
+       "en": "with a mind turned away"
+      },
+      {
+       "sa": "अप्राप्य",
+       "en": "without attaining"
+      },
+      {
+       "sa": "योगसंसिद्धिम्",
+       "en": "perfection in yoga"
+      },
+      {
+       "sa": "कां गतिम्",
+       "en": "what state"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "गच्छति",
+       "en": "does he go"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 6.05,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.6.37",
+     "path": "bg.6.37 -depicts-> samshaya (spoken by Arjuna)",
+     "why": [
+      "'what becomes of such a person?'",
+      "What happens to someone who believes, tries, and falls short? Is all of it wasted?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.6.39",
+      "bg.6.33",
+      "bg.2.7"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.7.27",
+     "ref": "Bhagavad Gita 7.27",
+     "ref_iast": "Bhagavad Gītā 7.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on those who miss him and those who know him.",
+     "sanskrit": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत । सर्वभूतानि संमोहं सर्गे यान्ति परन्तप ॥",
+     "line": "From the pull of want and push of dislike comes the confusion that traps every being.",
+     "translation": "Through the delusion of the pairs of opposites, arising from desire and aversion, Bharata, all beings fall into confusion at birth, scorcher of enemies.",
+     "words": [
+      {
+       "sa": "इच्छा",
+       "en": "desire"
+      },
+      {
+       "sa": "द्वेष",
+       "en": "aversion"
+      },
+      {
+       "sa": "समुत्थेन",
+       "en": "arising"
+      },
+      {
+       "sa": "द्वन्द्व",
+       "en": "conflict"
+      },
+      {
+       "sa": "मोहेन",
+       "en": "confusion"
+      },
+      {
+       "sa": "भारत",
+       "en": "O Bharata"
+      },
+      {
+       "sa": "सर्व",
+       "en": "all"
+      },
+      {
+       "sa": "भूतानि",
+       "en": "beings"
+      },
+      {
+       "sa": "संमोहं",
+       "en": "into delusion"
+      },
+      {
+       "sa": "सर्गे",
+       "en": "in creation"
+      },
+      {
+       "sa": "यान्ति",
+       "en": "go"
+      },
+      {
+       "sa": "परन्तप",
+       "en": "O scorcher of foes"
+      }
+     ],
+     "why": "Pull and push of like and dislike are what confuse us.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p07.5",
+      "title": "Those who miss the Lord and those who know him",
+      "summary": "The deluded see only the outer form; desire and aversion confuse all beings. Those freed from confusion come to know the divine fully.",
+      "story_hook": "",
+      "lesson": "Pull and push of like and dislike are what confuse us."
+     },
+     "score": 6.231,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.7.27",
+     "path": "bg.7.27 -states_chain-> bg.dvandva_moha [kama -causes-> moha; dvesha -causes-> moha]",
+     "why": [
+      "The confusion of opposites (Bhagavad Gita 7.27)",
+      "confusion is the common starting condition, produced by liking and disliking"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.18.39",
+      "bg.14.13",
+      "bg.14.8"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 4.599,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": "On this path, no beginning is lost and no harm results. Even a small amount of this practice protects from great fear. The tradition reads this as a path of action where every step forward counts, and even a little effort shields one from the fear of birth and death.",
+     "for_you": "You may feel stuck, but no sincere effort here is ever wasted. Even a little of this practice shields you from great fear.",
+     "try_today": "Move forward one small step.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.2.40",
+     "path": "bg.2.40 -heals-> samshaya",
+     "why": [
+      "answers the worry that an unfinished effort is a wasted one",
+      "supports the decision to start small"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.6.36",
+      "viv.5.great_convictions",
+      "vr.4.66.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "static",
+      "practice": "static"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.68.chaupai.6",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 68",
+     "family": "rcm",
+     "speaker": "Garuda",
+     "listener": "Kakbhushundi",
+     "setting": "Garuda, his doubt resolved, thanks Kakbhushundi.",
+     "sanskrit": "जो अति आतप ब्याकुल होई। तरु छाया सुख जानइ सोई॥ जौं नहिं होत मोह अति मोही। मिलतेउँ तात कवन बिधि तोही ॥",
+     "line": "Only the one scorched by the sun knows the shade. Without my doubt, I'd never have found you.",
+     "translation": "Only one scorched by the sun knows the comfort of a tree's shade. Friend, had I not been so deeply confused, how would I ever have met you?",
+     "words": [],
+     "why": "Doubt is human; stay long enough in good company and it can lead somewhere better.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.garuda_doubt",
+      "title": "Garuda's doubt",
+      "summary": "Garuda, Vishnu's own mount, frees Ram from a serpent-noose in battle and starts to doubt: how can God be bound? He goes to Narada, Brahma and Shiva, who sends him to an old crow, Kakbhushundi, saying doubts clear only with long time in good company. Kakbhushundi tells him no one has escaped delusion, desire, craving or anger; Garuda ends up grateful for the doubt that led him there.",
+      "story_hook": "The great eagle Garuda flew to a crow to ask a question.",
+      "lesson": "Doubt is human; stay long enough in good company and it can lead somewhere better."
+     },
+     "score": 4.32,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "rcm.7.68.chaupai.6",
+     "path": "rcm.7.68.chaupai.6 -heals-> samshaya",
+     "why": [
+      "doubt is honoured for where it took him"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.3.whatever_you_think",
+      "viv.1.assimilate_grow",
+      "ashtavakra.9.4"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.95,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.33.31",
+     "path": "mbh.5.33.31 -cultivates-> sankalpa",
+     "why": [
+      "Reflect fully, then decide and begin.",
+      "Nishchitya: begin from a settled decision"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.34.19",
+      "mbh.5.35.79",
+      "mbh.12.272.73"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.7.12",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 7.12",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "अशुभेषु समाविष्टं शुभेष्वेवावतारयेत् । प्रयत्नाच्चित्तमित्येष सर्वशास्त्रार्थसंग्रहः ॥",
+     "line": "When your mind drifts to harmful things, steer it back to good ones. That's the whole teaching.",
+     "translation": "When the mind has sunk into bad things, bring it down into good ones with effort. That is the summary of all the scriptures.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.573,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "yv.2.7.12",
+     "path": "yv.2.7.12 -cultivates-> viveka",
+     "why": [
+      "knowing harmful from helpful",
+      "turn the mind back each time"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_taittiriya.56",
+      "bh.niti.53",
+      "rcm.5.2.chaupai.5"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [],
+     "anchor": null,
+     "score": 7.496,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.yv.karunya_stops_acting",
+     "path": "st.yv.karunya_stops_acting -enacts_in-> alasya, moha, samshaya ; st.yv.karunya_stops_acting -enacts_turn-> sankalpa, viveka",
+     "why": [
+      "Knowledge and action are two wings; neither alone carries you."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bg.my_delusion_is_gone",
+      "st.bg.arjuna_mixed_messages",
+      "st.bg.arjuna_i_will_not_fight"
+     ],
+     "thin": false,
+     "story_id": "st.yv.karunya_stops_acting",
+     "personal_source": {}
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 21,
+   "v3_w1_write": 98,
+   "v3_w1_total": 120,
+   "select": 120,
+   "total": 122
+  },
+  "_ms": 128
+ }
+}

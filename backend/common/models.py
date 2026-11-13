@@ -206,6 +206,24 @@ class VerseOfDayResponse(BaseModel):
     themes: List[str] = []
 
 
+class ClientMeta(BaseModel):
+    """Who is asking and from where, for tracking only (ai/run_log.py, Supabase plan_runs). Never changes the answer.
+    The app and the web make `onboarding_id` once per onboarding and `request_id` once per call, and send the same
+    ids to Mixpanel, so a plan_runs row and its Mixpanel event can be joined (scripts/reconcile_mixpanel.py)."""
+    request_id: Optional[str] = Field(None, max_length=64)
+    onboarding_id: Optional[str] = Field(None, max_length=64)
+    distinct_id: Optional[str] = Field(None, max_length=128)    # Mixpanel's id for the person when they asked
+    user_id: Optional[str] = Field(None, max_length=128)        # Supabase uid (app) or Firebase uid (web)
+    platform: Optional[Literal["ios", "android", "web"]] = None
+    app_version: Optional[str] = Field(None, max_length=32)
+    context: Optional[str] = Field(None, max_length=40)         # onboarding | home | new_situation | plan_update | week_start | day
+    emotion: Optional[str] = Field(None, max_length=40)         # the word they kept on the feeling screen
+    emotion_trail: List[Annotated[str, StringConstraints(max_length=40)]] = Field(default_factory=list, max_length=20)
+    note_withheld: Optional[bool] = None                        # wrote a note but declined AI: it stayed on the phone
+    country: Optional[str] = Field(None, max_length=8)          # the web's own server passes the visitor's country
+    dev: bool = False
+
+
 # ── Recommend endpoint (onboarding verse picks) ───────────────────────────────
 
 AgeBand = Literal["u25", "25_34", "35_44", "45_54", "55p"]
@@ -222,6 +240,7 @@ class RecommendRequest(BaseModel):
     note_source: Optional[Literal["voice", "text"]] = None
     count: int = Field(5, ge=1, le=10)
     exclude: List[str] = Field(default_factory=list, max_length=200)   # verse ids already shown
+    client: Optional[ClientMeta] = None
 
 
 class RecommendSituation(BaseModel):
@@ -333,6 +352,7 @@ class PlanInput(BaseModel):
     journey: Optional[JourneyIn] = None   # later requests only (Home): what they have lived so far
     # The person allowed third-party AI (App Review 5.1.2(i)). False: no LLM call, no note (ai/consent.py).
     ai: bool = True
+    client: Optional[ClientMeta] = None   # tracking ids (ai/run_log.py); never changes the answer
 
 
 class HookRequest(PlanInput):
@@ -478,6 +498,8 @@ class UnderstandingOut(BaseModel):
     age: Optional[str] = None
     stages: List[str] = []
     flags: List[str] = []
+    # PLAN_ENGINE=v3 only (absent otherwise): the graph reading to send back with /preview and /plan.
+    plan_v3: Optional[Dict[str, Any]] = Field(None, exclude_if=lambda v: v is None)
 
 
 class BeatVerse(RecommendedVerse):
@@ -488,6 +510,9 @@ class BeatVerse(RecommendedVerse):
     try_today: Optional[str] = None    # plan days: "One thing for today", at most 20 words
     scene_line: Optional[str] = None   # plan days: the one personal line that closes "The scene"
     asks: List[str] = []               # plan days: up to 3 questions in their voice for "Ask about this verse"
+    # PLAN_ENGINE=v3 only (absent otherwise): Day 1's first personal line and where it came from (model | chip | safety ...).
+    first_line: Optional[str] = Field(None, exclude_if=lambda v: v is None)
+    first_line_source: Optional[str] = Field(None, exclude_if=lambda v: v is None)
 
 
 class StoryCard(BaseModel):
@@ -527,6 +552,9 @@ class PlanDayOut(BaseModel):
     beat: Beat
     verse: Optional[BeatVerse] = None
     story: Optional[StoryCard] = None
+    # PLAN_ENGINE=v3 only (absent otherwise): slot, graph path, whys, the soothing guard verse to show with a letting-go
+    # teaching, the writer note and alternates.
+    plan_v3: Optional[Dict[str, Any]] = Field(None, exclude_if=lambda v: v is None)
 
 
 class PlanWeek(BaseModel):
@@ -572,6 +600,15 @@ class PlanResponse(BaseModel):
     matching: Literal["semantic", "keywords"]
     library_version: str
     timings_ms: Dict[str, int] = {}
+
+
+class DayRequest(PlanRequest):
+    """PLAN_ENGINE=v3 only (POST /recommend/day): one day of a plan already built, written now. Send the week's verse and story
+    ids in order (`week_ids`, as /recommend/plan returned them), the day wanted, and the personal line shown on the day before
+    (`prev_for_you`) so today's bridge can carry it forward. `understanding` (with plan_v3) is required, as for /plan."""
+    day_in_week: int = Field(..., ge=1, le=7)
+    week_ids: List[Annotated[str, StringConstraints(max_length=80)]] = Field(default_factory=list, max_length=7)
+    prev_for_you: Optional[str] = Field(None, max_length=600)
 
 
 class DepthRequest(PreviewRequest):

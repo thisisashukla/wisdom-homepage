@@ -1,0 +1,182 @@
+{
+ "case": "l_determined",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I keep procrastinating",
+   "mirror": "I keep procrastinating",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 1.6,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels determined; closest to \"I keep procrastinating\" and \"I can't handle not knowing what comes next\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.7,wro=0.0,see=0.05",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "determined",
+    "trail": [
+     "determined"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "dhriti"
+    ],
+    "risk": "none",
+    "situations": [
+     "uncertainty",
+     "outcome_anxiety",
+     "procrastination"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.niti.84",
+    "first_line": "Your determination to finally follow your timetable through to the UPSC prelims is a vow your forebears would be proud to see fulfilled."
+   }
+  },
+  "hook": {
+   "id": "bh.niti.84",
+   "ref": "Bhartrihari · Niti Shatakam",
+   "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From the section on steadfastness.",
+   "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+   "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+   "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+   "words": [],
+   "why": "Setbacks rarely last for those who keep going on the right path.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [],
+   "prasang": {
+    "id": "bh.p.niti.dhairya",
+    "title": "Nitishatakam: On steadfastness",
+    "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+    "story_hook": "",
+    "lesson": "Setbacks rarely last for those who keep going on the right path."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your determination to finally follow your timetable through to the UPSC prelims is a vow your forebears would be proud to see fulfilled.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your determination to finally follow your timetable through to the UPSC prelims is a vow your forebears would be proud to see fulfilled.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 498,
+   "v3_candidates": 44,
+   "v3_fast_read": 1784,
+   "v3_select": 2329,
+   "v3_total": 2329,
+   "total": 2330
+  },
+  "_ms": 2335
+ }
+}

@@ -1,0 +1,1230 @@
+{
+ "case": "r2_voice_validation",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't focus, my mind is restless",
+   "mirror": "I can't focus, my mind is restless",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.7,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I can't focus, my mind is restless. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a seeker whose mind will not settle, facing a mind that won't settle."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels restless; closest to \"I can't focus, my mind is restless\" and \"I can't stop overthinking\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.15,see=0.04",
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "overthinking",
+    "trail": [
+     "overthinking"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "chanchalya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "doubt_faith",
+     "gratitude"
+    ],
+    "age": "25_34",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bg.6.34",
+    "first_line": "You worry about whether others like you, and this restless mind feels as hard to hold as the wind."
+   }
+  },
+  "hook": {
+   "id": "bg.6.34",
+   "ref": "Bhagavad Gita 6.34",
+   "ref_iast": "Bhagavad Gītā 6.34",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+   "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+   "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+   "words": [
+    {
+     "sa": "चञ्चलम्",
+     "en": "restless"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "मनः",
+     "en": "mind"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "प्रमाथि",
+     "en": "turbulent"
+    },
+    {
+     "sa": "बलवत्",
+     "en": "strong"
+    },
+    {
+     "sa": "दृढम्",
+     "en": "stubborn, firm"
+    },
+    {
+     "sa": "तस्य",
+     "en": "of that"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "निग्रहम्",
+     "en": "control, restraint"
+    },
+    {
+     "sa": "मन्ये",
+     "en": "consider"
+    },
+    {
+     "sa": "वायोः",
+     "en": "of wind"
+    },
+    {
+     "sa": "इव",
+     "en": "like"
+    },
+    {
+     "sa": "सुदुष्करम्",
+     "en": "very difficult"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You worry about whether others like you, and this restless mind feels as hard to hold as the wind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You worry about whether others like you, and this restless mind feels as hard to hold as the wind.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "mbh.3.314.61",
+    "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+    "ref_iast": "Mahābhārata, Vana Parva 314.61–62",
+    "family": "mbh",
+    "speaker": "Yudhishthira",
+    "listener": "the Yaksha (Dharma in disguise)",
+    "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+    "sanskrit": "किंस्विद्गुरुतरं भूमेः किंस्विदुच्चतरं च स्वात् / किंस्विच्छीघ्रतरं वायोः किंस्विद्बहुतरं तृणात् माता गुरुतरा भूमेः खात्पितोच्चतरस्तथा / मनः शीघ्रतरं वाताच्चिन्ता बहुतरी तृणात्",
+    "line": "The mind is faster than the wind, and worries outnumber the blades of grass.",
+    "translation": "Yaksha: 'What is heavier than the earth? What is higher than the sky? What is faster than the wind? What is more numerous than blades of grass?' Yudhishthira: 'A mother is heavier than the earth; a father is higher than the sky; the mind is faster than the wind; worries are more numerous than blades of grass.'",
+    "words": [],
+    "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "overthinking",
+      "label": "I can't stop overthinking"
+     },
+     {
+      "id": "restless_mind",
+      "label": "I can't focus, my mind is restless"
+     }
+    ],
+    "prasang": {
+     "id": "mbh.p.yaksha_prashna",
+     "title": "Yaksha Prashna: the questions at the lake",
+     "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+     "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+     "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.6.33",
+    "ref": "Bhagavad Gita 6.33",
+    "ref_iast": "Bhagavad Gītā 6.33",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+    "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+    "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+    "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "यः",
+      "en": "which"
+     },
+     {
+      "sa": "अयम्",
+      "en": "this"
+     },
+     {
+      "sa": "योगः",
+      "en": "yoga"
+     },
+     {
+      "sa": "त्वया",
+      "en": "by you"
+     },
+     {
+      "sa": "प्रोक्तः",
+      "en": "spoken"
+     },
+     {
+      "sa": "साम्येन",
+      "en": "with balance"
+     },
+     {
+      "sa": "मधुसूदन",
+      "en": "O Madhusudana"
+     },
+     {
+      "sa": "एतस्य",
+      "en": "of this"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "पश्यामि",
+      "en": "see"
+     },
+     {
+      "sa": "चञ्चलत्वात्",
+      "en": "because of restlessness"
+     },
+     {
+      "sa": "स्थितिम्",
+      "en": "steady state"
+     },
+     {
+      "sa": "स्थिराम्",
+      "en": "firm"
+     }
+    ],
+    "why": "The mind is hard to hold, but practice and letting go train it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "restless_mind",
+      "label": "I can't focus, my mind is restless"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.4",
+     "title": "Mastering the mind",
+     "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+     "story_hook": "",
+     "lesson": "The mind is hard to hold, but practice and letting go train it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 265,
+   "v3_candidates": 59,
+   "v3_fast_read": 1500,
+   "v3_select": 1830,
+   "v3_first_line": 593,
+   "v3_total": 2424,
+   "total": 2426
+  },
+  "_ms": 2429
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't focus, my mind is restless",
+   "mirror": "I can't focus, my mind is restless",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.7,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I can't focus, my mind is restless. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a seeker whose mind will not settle, facing a mind that won't settle."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Raising kids. Feels restless; closest to \"I can't focus, my mind is restless\" and \"I can't stop overthinking\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "overthinking",
+    "trail": [
+     "overthinking"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "chanchalya"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "doubt_faith",
+     "gratitude"
+    ],
+    "age": "25_34",
+    "stages": [
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.34",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You worry about whether others like you, and this restless mind feels as hard to hold as the wind."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 7.04,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": "The mind is restless, turbulent, strong and stubborn; restraining it seems as hard as restraining the wind. The mind churns the body and senses, is tough and powerful like a cord, and its control is difficult.",
+     "for_you": "You worry about whether others like you, and this restless mind feels as hard to hold as the wind.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.6.34",
+     "path": "Day 1 kept from the first screen (bg.6.33 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "mbh.3.314.61",
+      "rcm.7.4.chaupai.8",
+      "up_maha.109"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "first_line"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "words": [
+      {
+       "sa": "इन्द्रियाणां",
+       "en": "of the senses"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "चरतां",
+       "en": "moving"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "अनुविधीयते",
+       "en": "follows"
+      },
+      {
+       "sa": "तदस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "हरति",
+       "en": "carries away"
+      },
+      {
+       "sa": "प्रज्ञां",
+       "en": "wisdom"
+      },
+      {
+       "sa": "नावम्",
+       "en": "boat"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आम्भसि",
+       "en": "on water"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 4.01,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday the mind felt like the wind. Today it is the boat. Your mind chases what others think, and the current pulls your understanding away. Notice the water. Then hold your own direction.",
+     "try_today": "When a thought about others rises, notice the water and return to your own course.",
+     "scene_line": "You are in the boat, and the wind is the worry that others do not like you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.2.67",
+     "path": "bg.2.67 -states_chain-> bg.senses_carry_mind [indriya_chara -causes-> chanchalya]",
+     "why": [
+      "The boat and the wind (Bhagavad Gita 2.60)",
+      "shows the mechanism: the mind follows one sense and the whole understanding is blown off course"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.60",
+      "yv.5.21.6",
+      "yv.5.11.6"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 6.34) was about restless mind; today asks where it comes from.",
+      "link": [
+       "state",
+       "chanchalya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday the mind felt like the wind."
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.26",
+     "ref": "Bhagavad Gita 6.26",
+     "ref_iast": "Bhagavad Gītā 6.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+     "line": "Wherever the restless mind wanders, gently bring it back. Again and again.",
+     "translation": "Wherever the restless, unsteady mind wanders, from there one should draw it back and bring it under the control of the self.",
+     "words": [
+      {
+       "sa": "यतो यतः",
+       "en": "wherever"
+      },
+      {
+       "sa": "निश्चरति",
+       "en": "wanders out"
+      },
+      {
+       "sa": "मनः",
+       "en": "the mind"
+      },
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "अस्थिरम्",
+       "en": "unsteady"
+      },
+      {
+       "sa": "ततस्ततः",
+       "en": "from there, from there"
+      },
+      {
+       "sa": "नियम्य",
+       "en": "restraining"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "आत्मनि",
+       "en": "in the true self"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "वशम्",
+       "en": "under control"
+      },
+      {
+       "sa": "नयेत्",
+       "en": "should bring"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 6.63,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": "Wherever the restless, unsteady mind wanders, one should restrain it and bring it back under the self's control. The mind turns outward to sounds and objects. Seeing that cause as unreal, one restrains the mind and settles it under the sway of the self.",
+     "for_you": "Yesterday the mind was swept away by the wind. Today it is a boat. You are trying to make sure others like you. The mind wanders there. Gently bring it back. Again and again.",
+     "try_today": "Notice where the mind wanders, and gently bring it back to your own direction.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.6.26",
+     "path": "bg.6.26 -heals-> chinta",
+     "why": [
+      "each time the mind runs to a worry it can be brought back",
+      "Krishna's direct answer to Arjuna."
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.492",
+      "mbh.12.104.57",
+      "vr.4.66.7"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 2.67) was about restless mind; today gives ground to stand on.",
+      "link": [
+       "state",
+       "chanchalya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday the mind was swept away by the wind."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.5.12.14",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.14",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha describes King Janaka after his awakening, still ruling his kingdom.",
+     "sanskrit": "भविष्यं नानुसंधत्ते नातीतं चिन्तयत्यसौ । वर्तमाननिमेषं तु हसन्नेवानुवर्तते ॥",
+     "line": "Don't chase the future or brood on the past. Meet this moment with a smile.",
+     "translation": "He does not chase the future or brood on the past; he simply goes along with the present moment, smiling.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 5.668,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice the mind circling and smile at the present moment.",
+     "scene_line": "You stand in the middle of your day, and the mind still circles the worry of being liked.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "yv.5.12.14",
+     "path": "yv.5.12.14 -heals-> chinta via c:vartamana",
+     "why": [
+      "Do not chase the future or brood on the past.",
+      "a picture of a mind not living ahead or behind"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.remedy_weakness",
+      "vr.4.62.13",
+      "yv.6a.26.18"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 6.26) was about worry; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "chinta"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not asked to chase the future or brood on the past. "
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.6a.26.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 26.8",
+     "family": "yv",
+     "speaker": "Bhushunda",
+     "listener": "Vasishtha",
+     "setting": "Bhushunda, the ancient crow who has watched the ages pass, tells Vasishtha why he lives long and well.",
+     "sanskrit": "न भूतं न भविष्यं च चिन्तयामि कदाचन । दृष्टिमालम्ब्य तिष्ठामि वर्तमानामिहात्मना ॥",
+     "line": "I don't brood over the past or the future. I keep my attention on now.",
+     "translation": "I never brood over the past or the future. I hold my attention on the present, here, with myself.",
+     "words": [],
+     "why": "A long, steady life comes from a mind that stays in the present, wants little and stays kind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.bhushunda",
+      "title": "Bhushunda, the crow who outlived the ages",
+      "summary": "Vasishtha travels to a wish-fulfilling tree on Mount Meru to meet Bhushunda, a crow who has watched world-ages come and go. Asked how he has lived so long, untroubled, Bhushunda lists his habits: he doesn't brood on the past or future, doesn't fret about what he'll get next, doesn't grow arrogant from knowing, and shares in others' joys and sorrows.",
+      "story_hook": "High on a mountain lived a crow who had watched whole ages of the world rise and fall.",
+      "lesson": "A long, steady life comes from a mind that stays in the present, wants little and stays kind."
+     },
+     "score": 2.69,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday was about not chasing the future. Today, the mind stays here with you, even while the children sleep.",
+     "try_today": "Notice where your attention is right now.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "yv.6a.26.8",
+     "path": "yv.6a.26.8 -cultivates-> santosha",
+     "why": [
+      "a long life lived lightly",
+      "attention resting in the present"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.92",
+      "up_maha.532",
+      "viv.8.take_things_easy"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Yoga Vasishtha) was about worry; today brings one practice for it.",
+      "link": [
+       "state",
+       "chinta"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday was about not chasing the future."
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "words": [],
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.01,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday was about not chasing the future. Now your mind keeps circling on whether others will like you. It can rest. It takes what comes without rehearsing the past or scripting tomorrow.",
+     "try_today": null,
+     "scene_line": "You sit in the quiet of the house and the mind wanders to the next moment of judgment.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bh.vairagya.62",
+     "path": "bh.vairagya.62 -cultivates-> santosha",
+     "why": [
+      "Enjoying what arrives unplanned",
+      "Vishramyatam"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.1.53.9",
+      "yv.2.16.8",
+      "mbh.12.103.34"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Yoga Vasishtha) was about worry; today takes that practice into the hard moment.",
+      "link": [
+       "state",
+       "chinta"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "practice:imported_doctrine_or_technique(breath)",
+      "practice:let_go_of_hope(let it go)"
+     ],
+     "bridge": "Yesterday was about not chasing the future."
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.kashyapa_jackal",
+     "title": "Kashyapa and the jackal: the gift of hands",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Kashyapa",
+      "Indra (as a jackal)",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Lying in the dust where a rich man's chariot had thrown him, Kashyapa wanted to die, and a jackal laughed at him.",
+     "summary": "A young brahmin, Kashyapa, knocked down by a rich man's chariot, wants to die in humiliation. A jackal tells him how lucky he is to have hands and a human life, and that craving grows like fire fed with wood. The jackal is Indra.",
+     "lesson": "You already have what others long for. Craving is a fire that more fuel only feeds.",
+     "matched": [],
+     "anchor": null,
+     "score": 6.8,
+     "why": null,
+     "hook_title": "Knocked into the dust by a rich man's chariot, a young man wanted to die",
+     "teaser": "Knocked into the dust by a rich man's chariot, a young man wanted to die",
+     "for_you": "Yesterday, Bhartrihari asked your mind to rest. Today, Kashyapa is shown what he already holds before counting his lacks. A human life with hands is already the great gain. Notice the hands that hold your children.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.kashyapa_and_the_jackal",
+     "path": "st.mbh.kashyapa_and_the_jackal -enacts_in-> dainya, matsarya ; st.mbh.kashyapa_and_the_jackal -enacts_turn-> kritajnata, santosha, tejas ; st.mbh.kashyapa_and_the_jackal -fits_situation-> comparison",
+     "why": [
+      "Before counting what you lack, count what you have; a human life with hands is already the great gain."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.yv.uddalaka_restless_meditation",
+      "st.bh.ascetic_and_king",
+      "st.bhakti.kabir_slowly_mind"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.kashyapa_and_the_jackal",
+     "arc": {
+      "line": "This week moves through worry in your situation: naming it, where it comes from, ground to stand on, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Vairagya Shatakam) pointed toward contentment; today someone in the texts lives it.",
+      "link": [
+       "toward",
+       "santosha"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday, Bhartrihari asked your mind to rest."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A mind that won't settle",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 54,
+   "v3_w1_write": 0,
+   "v3_w1_calls": 0,
+   "v3_w1_total": 54,
+   "select": 54,
+   "total": 55
+  },
+  "_ms": 58,
+  "_day_ms": [
+   2524,
+   2256,
+   7487,
+   1861,
+   4398,
+   2007
+  ],
+  "_day_calls": [
+   1,
+   1,
+   4,
+   1,
+   2,
+   1
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": false
+ }
+}

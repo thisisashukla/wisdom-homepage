@@ -1,0 +1,1156 @@
+{
+ "case": "t7_two_offers",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I have to make a big decision. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but I'm scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.55,asp=0.25,wro=0.1,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "stuck",
+    "trail": [
+     "overthinking",
+     "stuck"
+    ],
+    "paused": "overthinking",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dharma_sankata",
+     "samshaya",
+     "moha"
+    ],
+    "risk": "none",
+    "situations": [
+     "big_decision",
+     "quit_or_stay",
+     "career_switch"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.33"
+   }
+  },
+  "hook": {
+   "id": "bg.6.33",
+   "ref": "Bhagavad Gita 6.33",
+   "ref_iast": "Bhagavad Gītā 6.33",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+   "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+   "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+   "words": [
+    {
+     "sa": "अर्जुन उवाच",
+     "en": "Arjuna said"
+    },
+    {
+     "sa": "यः",
+     "en": "which"
+    },
+    {
+     "sa": "अयम्",
+     "en": "this"
+    },
+    {
+     "sa": "योगः",
+     "en": "yoga"
+    },
+    {
+     "sa": "त्वया",
+     "en": "by you"
+    },
+    {
+     "sa": "प्रोक्तः",
+     "en": "spoken"
+    },
+    {
+     "sa": "साम्येन",
+     "en": "with balance"
+    },
+    {
+     "sa": "मधुसूदन",
+     "en": "O Madhusudana"
+    },
+    {
+     "sa": "एतस्य",
+     "en": "of this"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "पश्यामि",
+     "en": "see"
+    },
+    {
+     "sa": "चञ्चलत्वात्",
+     "en": "because of restlessness"
+    },
+    {
+     "sa": "स्थितिम्",
+     "en": "steady state"
+    },
+    {
+     "sa": "स्थिराम्",
+     "en": "firm"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You keep walking the same ground, and a verse is chosen to sit with you.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You keep walking the same ground, and a verse is chosen to sit with you.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "bg.2.7",
+    "ref": "Bhagavad Gita 2.7",
+    "ref_iast": "Bhagavad Gītā 2.7",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+    "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+    "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+    "words": [
+     {
+      "sa": "कार्पण्यदोषोपहतस्वभावः",
+      "en": "nature overcome by weakness"
+     },
+     {
+      "sa": "पृच्छामि",
+      "en": "I ask"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "धर्मसंमूढचेताः",
+      "en": "mind confused about duty"
+     },
+     {
+      "sa": "यत्",
+      "en": "which"
+     },
+     {
+      "sa": "श्रेयः",
+      "en": "the highest good"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "may be"
+     },
+     {
+      "sa": "निश्चितम्",
+      "en": "certainly"
+     },
+     {
+      "sa": "ब्रूहि",
+      "en": "tell"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "मे",
+      "en": "to me"
+     },
+     {
+      "sa": "शिष्यः",
+      "en": "student"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "शाधि",
+      "en": "instruct"
+     },
+     {
+      "sa": "माम्",
+      "en": "me"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "प्रपन्नम्",
+      "en": "one who has taken refuge"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "big_decision",
+      "label": "I have to make a big decision"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.6.37",
+    "ref": "Bhagavad Gita 6.37",
+    "ref_iast": "Bhagavad Gītā 6.37",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+    "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+    "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+    "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "अयतिः",
+      "en": "one without steady effort"
+     },
+     {
+      "sa": "श्रद्धयोपेतः",
+      "en": "endowed with faith"
+     },
+     {
+      "sa": "योगात्",
+      "en": "from yoga"
+     },
+     {
+      "sa": "चलितमानसः",
+      "en": "with a mind turned away"
+     },
+     {
+      "sa": "अप्राप्य",
+      "en": "without attaining"
+     },
+     {
+      "sa": "योगसंसिद्धिम्",
+      "en": "perfection in yoga"
+     },
+     {
+      "sa": "कां गतिम्",
+      "en": "what state"
+     },
+     {
+      "sa": "कृष्ण",
+      "en": "O Krishna"
+     },
+     {
+      "sa": "गच्छति",
+      "en": "does he go"
+     }
+    ],
+    "why": "No sincere effort is wasted; you pick up where you left off.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p06.5",
+     "title": "What becomes of one who falls from yoga",
+     "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+     "story_hook": "",
+     "lesson": "No sincere effort is wasted; you pick up where you left off."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 283,
+   "v3_candidates": 49,
+   "v3_fast_read": 1790,
+   "v3_select": 2128,
+   "v3_first_line": 672,
+   "v3_total": 2800,
+   "total": 2801
+  },
+  "_ms": 2807
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i keep going over it again and again",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I have to make a big decision",
+   "mirror": "I have to make a big decision",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "inertia_doubt",
+   "situations": [
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.95,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I have to make a big decision. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Confusion comes when duties pull in different directions and fear clouds which one is truly yours.",
+    "steady": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A story of a seeker whose mind will not settle, facing torn between duties."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Torn both ways",
+    "Which duty is yours",
+    "Acting as yourself"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I have to make a big decision\" and \"I want to change careers but scared\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:5/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "stuck",
+    "trail": [
+     "overthinking",
+     "stuck"
+    ],
+    "paused": "overthinking",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dharma_sankata",
+     "samshaya",
+     "moha"
+    ],
+    "risk": "none",
+    "situations": [
+     "big_decision",
+     "quit_or_stay",
+     "career_switch"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.6.33",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.33",
+     "ref": "Bhagavad Gita 6.33",
+     "ref_iast": "Bhagavad Gītā 6.33",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+     "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+     "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+     "words": [
+      {
+       "sa": "अर्जुन उवाच",
+       "en": "Arjuna said"
+      },
+      {
+       "sa": "यः",
+       "en": "which"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "योगः",
+       "en": "yoga"
+      },
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "प्रोक्तः",
+       "en": "spoken"
+      },
+      {
+       "sa": "साम्येन",
+       "en": "with balance"
+      },
+      {
+       "sa": "मधुसूदन",
+       "en": "O Madhusudana"
+      },
+      {
+       "sa": "एतस्य",
+       "en": "of this"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "पश्यामि",
+       "en": "see"
+      },
+      {
+       "sa": "चञ्चलत्वात्",
+       "en": "because of restlessness"
+      },
+      {
+       "sa": "स्थितिम्",
+       "en": "steady state"
+      },
+      {
+       "sa": "स्थिराम्",
+       "en": "firm"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 12.552,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel you are losing the other offer every time you pick one. The mind is hard to hold, like the wind. Let the decision rest in the moment you are in.",
+     "try_today": "Notice the next time the mind swings to the other offer.",
+     "scene_line": "Arjuna sees the mind as hard to hold, and you see the offers as hard to choose.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.6.33",
+     "path": "Day 1 kept from the first screen (bg.6.37 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.6.33",
+      "bg.2.7",
+      "bg.6.38"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.14.8",
+     "ref": "Bhagavad Gita 14.8",
+     "ref_iast": "Bhagavad Gītā 14.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna explains the three qualities: clarity, restlessness and dullness.",
+     "sanskrit": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥",
+     "line": "Dullness, born of ignorance, ties you down through carelessness, laziness and too much sleep.",
+     "translation": "Know tamas to be born of ignorance, deluding all embodied beings. It binds through heedlessness, laziness and sleep, Bharata.",
+     "words": [
+      {
+       "sa": "तमः",
+       "en": "darkness/inertia"
+      },
+      {
+       "sa": "तु",
+       "en": "indeed"
+      },
+      {
+       "sa": "अज्ञानजम्",
+       "en": "born of ignorance"
+      },
+      {
+       "sa": "विद्धि",
+       "en": "know"
+      },
+      {
+       "sa": "मोहनम्",
+       "en": "deluding"
+      },
+      {
+       "sa": "सर्वदेहिनाम्",
+       "en": "of all embodied beings"
+      },
+      {
+       "sa": "प्रमाद-आलस्य-निद्राभिः",
+       "en": "through heedlessness, laziness, and sleep"
+      },
+      {
+       "sa": "तत्",
+       "en": "that"
+      },
+      {
+       "sa": "निबध्नाति",
+       "en": "binds"
+      },
+      {
+       "sa": "भारत",
+       "en": "Arjuna"
+      }
+     ],
+     "why": "Notice which mood is running you: clarity, restlessness or dullness.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p14.2",
+      "title": "Sattva, rajas, tamas: the three gunas",
+      "summary": "Sattva binds through attachment to happiness and knowledge, rajas through craving and activity, tamas through laziness and sleep. Each shows itself in recognisable signs.",
+      "story_hook": "",
+      "lesson": "Notice which mood is running you: clarity, restlessness or dullness."
+     },
+     "score": 5.191,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel you lose the other offer every time you choose, as if picking one is a kind of sleep that keeps you from seeing the path ahead.",
+     "try_today": "Notice when your mind feels heavy and slow, and name it as dullness rather than a real obstacle.",
+     "scene_line": "You sit with two offers on the table while dullness clouds your mind like a heavy fog.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.14.8",
+     "path": "bg.14.8 -states_chain-> bg.gunas_fruits [tamas -causes-> alasya; tamas -causes-> moha]",
+     "why": [
+      "What each guna yields (Bhagavad Gita 14.17)",
+      "laziness and oversleep are explained as the binding of tamas, common to all embodied beings"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.14.13",
+      "bh.vairagya.10",
+      "bg.18.39"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     }
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 9.562,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": "On this path, no beginning is lost and no harm results. Even a small amount of this practice protects from great fear. The tradition reads this as a path of action where every step forward counts, and even a little effort shields one from the fear of birth and death.",
+     "for_you": "You are caught between two doors, and every step feels like a loss of the other. This path asks you to act without clinging to which door you open. Even a little of this steady action will shield you from that great fear.",
+     "try_today": "Do one small step toward one offer, then release the outcome until tomorrow.",
+     "scene_line": "You stand at a crossroads, and even a little of this path shields you from the great fear of choosing wrong.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.2.40",
+     "path": "bg.2.40 -heals-> samshaya",
+     "why": [
+      "answers the worry that an unfinished effort is a wasted one",
+      "Even a little of this path protects from great fear."
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.5.great_convictions",
+      "bg.6.36",
+      "up_mundaka.3.1.6"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.3.whatever_you_think",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 3",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Hindus of Jaffna",
+     "setting": "'Vedantism', Jaffna, Ceylon, January 1897.",
+     "sanskrit": null,
+     "line": "If you think yourselves weak, weak you will be; if you think yourselves strong, strong you will be;",
+     "translation": "Whatever you think, that you will be. If you think yourselves weak, weak you will be; if you think yourselves strong, strong you will be;",
+     "words": [],
+     "why": "Thoughts shape us, so teach yourself and your children strength.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.jaffna",
+      "title": "'Whatever you think, that you will be' (Jaffna, 1897)",
+      "summary": "On his first tour after the West he summarises Vedanta for the Hindus of Jaffna. Thinking yourself weak makes you weak; children should be raised strong and told of the glory of the soul. Learn to serve before you lead.",
+      "story_hook": "",
+      "lesson": "Thoughts shape us, so teach yourself and your children strength."
+     },
+     "score": 6.139,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when your mind says you are losing something, and gently name the thought as just a thought.",
+     "scene_line": "You stand between two doors, each one a future you are thinking into being.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.3.whatever_you_think",
+     "path": "viv.3.whatever_you_think -heals-> samshaya",
+     "why": [
+      "self-doubt is shown as self-making",
+      "faith in oneself"
+     ],
+     "writer_note": null,
+     "alts": [
+      "ashtavakra.9.4",
+      "rcm.7.68.chaupai.6",
+      "vr.2.97.12"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 8.281,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You keep going over the same two choices. Decide, then begin. Let the rest wait.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.33.31",
+     "path": "mbh.5.33.31 -cultivates-> sankalpa",
+     "why": [
+      "Reflect fully, then decide and begin.",
+      "Nishchitya: begin from a settled decision"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.35.79",
+      "yv.2.9.30",
+      "viv.1.duty_next_to_us"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.7.12",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 7.12",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "अशुभेषु समाविष्टं शुभेष्वेवावतारयेत् । प्रयत्नाच्चित्तमित्येष सर्वशास्त्रार्थसंग्रहः ॥",
+     "line": "When your mind drifts to harmful things, steer it back to good ones. That's the whole teaching.",
+     "translation": "When the mind has sunk into bad things, bring it down into good ones with effort. That is the summary of all the scriptures.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 6.291,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": "You stand between two futures, and your mind drifts toward the harm of losing one, again and again.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "yv.2.7.12",
+     "path": "yv.2.7.12 -cultivates-> sankalpa",
+     "why": [
+      "turn the mind back each time",
+      "knowing harmful from helpful"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.5.not_in_a_day",
+      "vr.1.64.15",
+      "vr.5.12.10"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     }
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.hanuman_chambers_unease",
+     "title": "Hanuman's unease in Ravana's chambers",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman, sent to find a stolen queen, ends up in a room no decent person should enter, and stops to ask whether he has just lost himself.",
+     "summary": "Searching Ravana's palace at night, Hanuman finds himself looking across Ravana's sleeping wives and is seized by fear that he has broken dharma. He examines his own mind, finds it unmoved, reasons that the search itself required it, and goes on searching with a clear conscience.",
+     "lesson": "Judge yourself by your intention and your mind's state, not only by what your eyes happened to meet while doing your duty.",
+     "matched": [],
+     "anchor": null,
+     "score": 12.566,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Hanuman, sent to find a stolen queen, ends up in a room no decent person should enter, and stops to ask whether he has just lost himself.",
+     "for_you": "You keep going over the same choice. The mind behind it is not wrong; it is simply tired. Examine the necessity of the act honestly, then go on.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.hanuman_uneasy_in_ravanas_chambers",
+     "path": "st.vr.hanuman_uneasy_in_ravanas_chambers -enacts_in-> dharma_sankata, samshaya ; st.vr.hanuman_uneasy_in_ravanas_chambers -enacts_turn-> sankalpa, shanti, viveka",
+     "why": [
+      "Judge an act by the mind behind it and by its necessity; examine yourself honestly, then go on."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bh.three_kinds_of_people",
+      "st.mbh.yuyutsu_crosses_over",
+      "st.yv.karunya_stops_acting"
+     ],
+     "thin": false,
+     "story_id": "st.vr.hanuman_uneasy_in_ravanas_chambers",
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn both ways",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 133,
+   "v3_w1_write": 9639,
+   "v3_w1_total": 9773,
+   "select": 9774,
+   "total": 9776
+  },
+  "_ms": 9782
+ }
+}

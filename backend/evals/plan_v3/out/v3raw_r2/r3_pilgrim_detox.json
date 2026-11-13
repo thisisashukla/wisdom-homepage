@@ -1,0 +1,228 @@
+{
+ "case": "r3_pilgrim_detox",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.68,wro=0.15,see=0.26",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "bhaya",
+     "sankalpa"
+    ],
+    "risk": "distress",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "up_maha.113",
+    "first_line": "Your hope for Vrindavan meets the gnawing fear of withdrawal, yet you still hold your intention to heal."
+   }
+  },
+  "hook": {
+   "id": "up_maha.113",
+   "ref": "Maha Upanishad 3.22",
+   "ref_iast": "Mahā Upaniṣad 3.22",
+   "family": "up",
+   "speaker": "Nidagha",
+   "listener": "Ribhu",
+   "setting": "Nidagha on craving.",
+   "sanskrit": "यां यामहं मुनिश्रेष्ठ संश्रयामि गुणश्रियम् । तां तां कृन्तति मे तृष्णा तन्त्रीमिव कुमूषिका ॥",
+   "line": "Every good quality I take up, craving gnaws through, like a mouse chewing a string.",
+   "translation": "Whatever good quality I take refuge in, great sage, craving cuts it away, as a mouse gnaws through a string.",
+   "words": [],
+   "why": "Naming how restless your mind is, is where peace begins.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent"
+    }
+   ],
+   "prasang": {
+    "id": "up.p.maha.nidagha",
+    "title": "Nidagha's lament",
+    "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+    "story_hook": "",
+    "lesson": "Naming how restless your mind is, is where peace begins."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your hope for Vrindavan meets the gnawing fear of withdrawal, yet you still hold your intention to heal.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your hope for Vrindavan meets the gnawing fear of withdrawal, yet you still hold your intention to heal.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "viv.1.true_to_nature",
+    "ref": "Swami Vivekananda",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Audience in San Francisco",
+    "setting": "Lecture on the Prophet Mohammed, California, 1900, recorded in shorthand by Ida Ansell.",
+    "sanskrit": null,
+    "line": "The greatest religion is to be true to your own nature. Have faith in yourselves!",
+    "translation": "The greatest religion is to be true to your own nature. Have faith in yourselves!",
+    "words": [],
+    "why": null,
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 494,
+   "v3_candidates": 48,
+   "v3_fast_read": 2100,
+   "v3_select": 2645,
+   "v3_total": 2645,
+   "total": 2647
+  },
+  "_ms": 2651
+ }
+}

@@ -7,27 +7,17 @@ import PlanFine from '@/components/plan/PlanFine'
 import { planAction } from '@/components/plan/planAction'
 import { PLAN_GROUPS, THEME_PLANS, planGroupOf, planMinutesTotal, planOpening, planSources } from '@/lib/themePlans'
 import { themeHero, type ThemeVariant } from '@/lib/themeAssets'
+import { LENGTH_PLANS, eighteenDaySegments } from '@/lib/readingPlans'
+import VerseMap from '@/components/plan/VerseMap'
+import '@/components/plan/length-plans.css'
+import { TimePicker } from '@/components/plan/LengthPlanParts'
+import { HUB_DESCRIPTION, HUB_URL } from './meta'
 import './reading-plans.css'
 
 const BASE = 'https://wisdomquotes.in'
 const PAGE = 'Reading Plans'
 
-const LONGER = [
-  {
-    href: '/read-gita-in-18-days',
-    img: '/og/read-gita-in-18-days.webp',
-    title: 'Read the whole Gita in 18 days',
-    sub: 'One chapter a day, with what each covers and one verse from it.',
-    meta: '18 days · 4 to 13 min a day',
-  },
-  {
-    href: '/gita-jayanti/reading-plan',
-    img: '/og/gita-jayanti-reading-plan.webp',
-    title: 'Finish the Gita by Gita Jayanti',
-    sub: 'Schedules that end on 20 December, from whatever day you start.',
-    meta: '3 to 18 days',
-  },
-]
+const LONGER = LENGTH_PLANS
 
 const plan = (location: string) => planAction({ campaign: 'web_reading_plans', location })
 
@@ -41,8 +31,8 @@ export default function ReadingPlansHub({ variant }: { variant: ThemeVariant }) 
       {
         '@type': 'CollectionPage',
         name: 'Bhagavad Gita reading plans',
-        url: `${BASE}/reading-plans`,
-        description: 'Free 7-verse reading plans by topic, from the Bhagavad Gita first and then the Ramayana, Mahabharata, Upanishads and Yoga Vasishtha. Plus the whole Gita in 18 days.',
+        url: HUB_URL,
+        description: HUB_DESCRIPTION,
         inLanguage: 'en',
         isPartOf: { '@type': 'WebSite', name: 'Wisdom', url: BASE },
         about: { '@type': 'Book', name: 'Bhagavad Gita', sameAs: ['https://en.wikipedia.org/wiki/Bhagavad_Gita', 'https://www.wikidata.org/wiki/Q48268'] },
@@ -52,14 +42,14 @@ export default function ReadingPlansHub({ variant }: { variant: ThemeVariant }) 
         '@type': 'ItemList',
         name: 'Bhagavad Gita reading plans',
         itemListElement: [
+          ...LONGER.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${BASE}${l.href}`, name: l.title, description: `${l.sub} ${l.span}, ${l.daily}.`, image: `${BASE}${l.img}` })),
           ...cards.map(({ p, min }, i) => ({
             '@type': 'ListItem',
-            position: i + 1,
+            position: LONGER.length + i + 1,
             url: `${BASE}/gita-for/${p.slug}`,
             name: p.title,
             description: `${p.subtitle} 7 verses, about ${min} minutes in all.`,
           })),
-          ...LONGER.map((l, i) => ({ '@type': 'ListItem', position: cards.length + i + 1, url: `${BASE}${l.href}`, name: l.title })),
         ],
       },
       {
@@ -80,27 +70,74 @@ export default function ReadingPlansHub({ variant }: { variant: ThemeVariant }) 
       <PageHero
         crumbs={[{ label: 'Reading plans', href: '/reading-plans' }]}
         crumbsLd={false}
-        eyebrow="Bhagavad Gita reading plans"
-        title={
-          <>
-            Seven verses <em>for what you&apos;re carrying.</em>
-          </>
-        }
-        sub="A racing mind, a loss, a hard choice, a good day you want to keep. Each plan gives you seven verses for one of them, from the Gita first and then the epics and Upanishads, with the Sanskrit, plain English and one thing to try. Read one a day or all seven at once."
-        actions={[plan('reading_plans_hero_create')]}
+        eyebrow="Free, in Sanskrit and plain English"
+        title="Bhagavad Gita reading plans"
+        sub="Read the whole Gita in a week, a month or a chapter a day, or one verse each morning. Or take seven verses for what’s on your mind today: a racing mind, a loss, a hard choice."
+        actions={[
+          { href: '#by-time', label: 'Find a plan for my time', location: 'reading_plans_hero_by_time' },
+          { ...plan('reading_plans_hero_create'), variant: 'link' },
+        ]}
         below={<PlanFine />}
+        visual={
+          <div className="rpl-maphold">
+            <span className="rpl-maphold-k">The Gita: 18 chapters, 700 verses</span>
+            <VerseMap
+              plan="hub"
+              segments={eighteenDaySegments()}
+              selectable={false}
+              label="Map of the Bhagavad Gita’s 700 verses, one row per chapter"
+              caption="Each circle is a verse, each row a chapter. Every plan below walks through them."
+            />
+          </div>
+        }
       />
 
       <main>
+        <Section id="by-time" width="narrow" title="How much time do you have each day?" intro="Each one follows the Gita in order, and each can start today.">
+          <TimePicker location="reading_plans_pick" />
+          <p className="sx-intro" style={{ marginTop: 18 }}>
+            New to the Gita?{' '}
+            <a className="sx-link" href="/how-to-read-bhagavad-gita" data-mp-location="reading_plans_how_to_read">
+              Start with how to read it
+            </a>
+            : where to begin, how long it takes, and where readers get stuck.
+          </p>
+        </Section>
+
+        <Section
+          id="whole-gita"
+          tone="band"
+          eyebrow={`${LONGER.length} plans`}
+          title="Read the whole Gita"
+          intro="Each picture is the plan drawn on the Gita’s 700 verses."
+        >
+          <div className="rp-grid" data-stagger="60">
+            {LONGER.map((l) => (
+              <a key={l.href} href={l.href} className="rp-card rv" data-mp-location={`reading_plans_${l.key.replace(/\W+/g, '_')}`}>
+                <div className="rp-thumb rp-thumb--map">
+                  <img src={l.img} alt={`${l.title}: Bhagavad Gita reading plan, ${l.span}, drawn on a map of all 700 verses`} loading="lazy" decoding="async" width={1200} height={675} />
+                </div>
+                <div className="rp-body">
+                  <div className="rp-meta">
+                    <span>{l.span}</span>
+                    <span>{l.daily}</span>
+                  </div>
+                  <h3 className="rp-title">{l.title}</h3>
+                  <p className="rp-desc">{l.sub}</p>
+                  <span className="rp-go">
+                    See the plan <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </Section>
+
         <Section
           id="plans"
           eyebrow={`${cards.length} plans`}
-          title={
-            <>
-              Pick what&apos;s <em>on your mind</em>
-            </>
-          }
-          tone="band"
+          title="Seven verses for what’s on your mind"
+          intro="Each plan gives you seven verses for one feeling or situation, the Gita first and then the epics and Upanishads, with one thing to try. Read one a day or all seven at once."
         >
           <PlanFilterTabs tabs={tabs} total={cards.length} variant={variant} />
 
@@ -130,36 +167,6 @@ export default function ReadingPlansHub({ variant }: { variant: ThemeVariant }) 
                   <p className="rp-src">{sources}</p>
                   <span className="rp-go">
                     Read the plan <span aria-hidden="true">→</span>
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </Section>
-
-        <Section
-          id="whole-gita"
-          eyebrow={`${LONGER.length} plans`}
-          title={
-            <>
-              Read the <em>whole Gita</em>
-            </>
-          }
-        >
-          <div className="rp-grid rp-grid-2" data-stagger="60">
-            {LONGER.map((l) => (
-              <a key={l.href} href={l.href} className="rp-card rp-card-wide rv" data-mp-location={`reading_plans_${l.href.replace(/\W+/g, '_')}`}>
-                <div className="rp-thumb">
-                  <img src={l.img} alt="" loading="lazy" decoding="async" width={1200} height={630} />
-                </div>
-                <div className="rp-body">
-                  <div className="rp-meta">
-                    <span>{l.meta}</span>
-                  </div>
-                  <h3 className="rp-title">{l.title}</h3>
-                  <p className="rp-desc">{l.sub}</p>
-                  <span className="rp-go">
-                    See the schedule <span aria-hidden="true">→</span>
                   </span>
                 </div>
               </a>

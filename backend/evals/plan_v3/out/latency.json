@@ -1,0 +1,193 @@
+{
+ "summary": {
+  "day1_wall_ms": {
+   "p50": 2234,
+   "p90": 2523,
+   "max": 2828
+  },
+  "day1_parts_median": {
+   "v3_note_match": 272,
+   "v3_candidates": 44,
+   "v3_fast_read": 1322,
+   "v3_first_line": 460,
+   "v3_select": 1684
+  },
+  "week1_wall_ms": [
+   7009,
+   5364,
+   4498
+  ],
+  "first_line_sources": [
+   "model",
+   "chip",
+   "model",
+   "model",
+   "chip",
+   "model",
+   "model",
+   "chip",
+   "chip",
+   "model"
+  ]
+ },
+ "day1": [
+  {
+   "case": "t1_overthinking_2am",
+   "wall_ms": 2828,
+   "v3_note_match": 275,
+   "v3_candidates": 40,
+   "v3_fast_read": 1844,
+   "v3_select": 2163,
+   "v3_first_line": 658,
+   "v3_total": 2822,
+   "total": 2824,
+   "line": "model"
+  },
+  {
+   "case": "d_wronged_dil",
+   "wall_ms": 2328,
+   "v3_note_match": 225,
+   "v3_candidates": 43,
+   "v3_fast_read": 1385,
+   "v3_select": 1656,
+   "v3_first_line": 664,
+   "v3_total": 2321,
+   "total": 2322,
+   "line": "chip"
+  },
+  {
+   "case": "l_hopeful",
+   "wall_ms": 2140,
+   "v3_note_match": 227,
+   "v3_candidates": 54,
+   "v3_fast_read": 1426,
+   "v3_select": 1712,
+   "v3_first_line": 420,
+   "v3_total": 2132,
+   "total": 2134,
+   "line": "model"
+  },
+  {
+   "case": "t1_overthinking_2am",
+   "wall_ms": 2465,
+   "v3_note_match": 802,
+   "v3_candidates": 0,
+   "v3_fast_read": 1125,
+   "v3_select": 1932,
+   "v3_first_line": 525,
+   "v3_total": 2457,
+   "total": 2459,
+   "line": "model"
+  },
+  {
+   "case": "d_wronged_dil",
+   "wall_ms": 1841,
+   "v3_note_match": 250,
+   "v3_candidates": 42,
+   "v3_fast_read": 1111,
+   "v3_select": 1407,
+   "v3_first_line": 427,
+   "v3_total": 1835,
+   "total": 1836,
+   "line": "chip"
+  },
+  {
+   "case": "l_hopeful",
+   "wall_ms": 1899,
+   "v3_note_match": 270,
+   "v3_candidates": 53,
+   "v3_fast_read": 1148,
+   "v3_select": 1476,
+   "v3_first_line": 416,
+   "v3_total": 1893,
+   "total": 1894,
+   "line": "model"
+  },
+  {
+   "case": "t1_overthinking_2am",
+   "wall_ms": 2523,
+   "v3_note_match": 530,
+   "v3_candidates": 111,
+   "v3_fast_read": 1423,
+   "v3_select": 2069,
+   "v3_first_line": 445,
+   "v3_total": 2514,
+   "total": 2515,
+   "line": "model"
+  },
+  {
+   "case": "d_wronged_dil",
+   "wall_ms": 1925,
+   "v3_note_match": 455,
+   "v3_candidates": 45,
+   "v3_fast_read": 883,
+   "v3_select": 1388,
+   "v3_first_line": 528,
+   "v3_total": 1916,
+   "total": 1918,
+   "line": "chip"
+  },
+  {
+   "case": "l_hopeful",
+   "wall_ms": 1996,
+   "v3_note_match": 200,
+   "v3_candidates": 47,
+   "v3_fast_read": 1260,
+   "v3_select": 1512,
+   "v3_first_line": 476,
+   "v3_total": 1988,
+   "total": 1990,
+   "line": "chip"
+  },
+  {
+   "case": "t1_overthinking_2am",
+   "wall_ms": 2412,
+   "v3_note_match": 535,
+   "v3_candidates": 26,
+   "v3_fast_read": 1408,
+   "v3_select": 1974,
+   "v3_first_line": 429,
+   "v3_total": 2404,
+   "total": 2406,
+   "line": "model"
+  }
+ ],
+ "weeks": [
+  {
+   "case": "t1_overthinking_2am",
+   "wall_ms": 7009,
+   "v3_w1_graph": 32,
+   "v3_w1_write": 6960,
+   "v3_w1_total": 6994,
+   "select": 6994,
+   "total": 6998,
+   "for_you": [
+    "v3:for_you:5/7"
+   ]
+  },
+  {
+   "case": "d_wronged_dil",
+   "wall_ms": 5364,
+   "v3_w1_graph": 36,
+   "v3_w1_write": 5319,
+   "v3_w1_total": 5356,
+   "select": 5356,
+   "total": 5359,
+   "for_you": [
+    "v3:for_you:4/7"
+   ]
+  },
+  {
+   "case": "l_hopeful",
+   "wall_ms": 4498,
+   "v3_w1_graph": 45,
+   "v3_w1_write": 4440,
+   "v3_w1_total": 4488,
+   "select": 4488,
+   "total": 4491,
+   "for_you": [
+    "v3:for_you:4/7"
+   ]
+  }
+ ]
+}

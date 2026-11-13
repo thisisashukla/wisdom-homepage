@@ -1,0 +1,226 @@
+{
+ "case": "l_grateful",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "grand",
+    "family"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want to feel more grateful",
+   "mirror": "I want to feel more grateful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "credit_taken",
+     "label": "My manager took credit for my work",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I want to feel more grateful\" and \"I don't know my purpose\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.08,see=0.9",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:pick:blocked_for_stance",
+    "fr:pick:graph_default"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "grateful",
+    "trail": [
+     "grateful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "kritajnata",
+     "shanti",
+     "ananda"
+    ],
+    "risk": "none",
+    "situations": [
+     "gratitude",
+     "illness_family",
+     "credit_taken"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "mbh.5.33.96",
+    "first_line": "You are satisfied in the self alone, so there is no duty beyond this quiet gratitude."
+   }
+  },
+  "hook": {
+   "id": "mbh.5.33.96",
+   "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+   "ref_iast": "Mahābhārata, Udyoga Parva 33.96",
+   "family": "mbh",
+   "speaker": "Vidura",
+   "listener": "Dhritarashtra",
+   "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+   "sanskrit": "आरोग्यमानृण्यमविप्रवासः / सद्भिर्मनुष्यैः सह संप्रयोगः / स्वप्रत्यया वृत्तिरभीतवासः / षट् जीवलोकस्य सुखानि राजन्",
+   "line": "Health, no debt, home, good people, work of your own, a life without fear: that is real happiness.",
+   "translation": "Health, freedom from debt, living at home, the company of good people, a livelihood of one's own, and living without fear: these, O king, are the six joys of this world.",
+   "words": [],
+   "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful"
+    }
+   ],
+   "prasang": {
+    "id": "mbh.p.vidura_niti.33",
+    "title": "Vidura Niti: the wise and the fool",
+    "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+    "story_hook": "",
+    "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are satisfied in the self alone, so there is no duty beyond this quiet gratitude.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are satisfied in the self alone, so there is no duty beyond this quiet gratitude.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "bh.vairagya.82",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+    "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+    "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+    "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+    "words": [],
+    "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.vairagya.shiva",
+     "title": "Vairagyashatakam: Worship of Shiva",
+     "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+     "story_hook": "",
+     "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 411,
+   "v3_candidates": 56,
+   "v3_fast_read": 1990,
+   "v3_select": 2459,
+   "v3_total": 2459,
+   "total": 2460
+  },
+  "_ms": 2466
+ }
+}

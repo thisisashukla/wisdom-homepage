@@ -1,0 +1,219 @@
+{
+ "case": "t8_fourteen_hours_empty",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Nothing is wrong but nothing feels meaningful",
+   "mirror": "Nothing is wrong but nothing feels meaningful",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"Nothing is wrong but nothing feels meaningful\" and \"I'm burned out and running on empty\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.15,see=0.51",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "restless",
+     "empty"
+    ],
+    "paused": "restless",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "dainya",
+     "nirveda"
+    ],
+    "risk": "distress",
+    "situations": [
+     "retirement",
+     "burnout",
+     "no_meaning"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "up_maha.114",
+    "first_line": "You have the house, the car, and the title, yet the mind still runs here and there, restless and to no purpose."
+   }
+  },
+  "hook": {
+   "id": "up_maha.114",
+   "ref": "Maha Upanishad 3.23",
+   "ref_iast": "Mahā Upaniṣad 3.23",
+   "family": "up",
+   "speaker": "Nidagha",
+   "listener": "Ribhu",
+   "setting": "Nidagha on craving, continued.",
+   "sanskrit": "पदं करोत्यलङ्घ्येऽपि तृप्ता विफलमीहते । चिरं तिष्ठति नैकत्र तृष्णा चपलमर्कटी ॥",
+   "line": "Craving is a restless monkey: never in one place, never satisfied, reaching even where it cannot go.",
+   "translation": "It sets foot even where no one can go; even when satisfied it strives in vain; it never stays long in one place: craving is a restless monkey.",
+   "words": [],
+   "why": "Naming how restless your mind is, is where peace begins.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "up.p.maha.nidagha",
+    "title": "Nidagha's lament",
+    "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+    "story_hook": "",
+    "lesson": "Naming how restless your mind is, is where peace begins."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You have the house, the car, and the title, yet the mind still runs here and there, restless and to no purpose.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You have the house, the car, and the title, yet the mind still runs here and there, restless and to no purpose.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "bh.vairagya.3",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 3",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Craving",
+    "setting": "From the opening section, 'Censure of Craving': the poet addresses his own craving.",
+    "sanskrit": "उत्खातं निधिशङ्कया क्षितितलं ध्माता गिरेर्धातवो निस्तीर्णः सरितां पतिर्नृपतयो यत्नेन संतोषिताः । मन्त्राराधनतत्परेण मनसा नीताः श्मशाने निशाः प्राप्तः काणवराटकोऽपि न मया तृष्णे सकामा भव ॥",
+    "line": "I dug, sailed, flattered kings, chased every scheme, and gained not a broken coin. Enough, craving.",
+    "translation": "I dug up the earth hoping for treasure, smelted the ores of mountains, crossed the ocean, lord of rivers, worked hard to please kings, spent nights in cremation grounds with my mind fixed on mantras, and I did not get even a broken cowrie. Craving, be satisfied now!",
+    "words": [],
+    "why": "We think we are chasing things; really, the chase is using up our lives.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bh.p.vairagya.trishna",
+     "title": "Vairagyashatakam: Censure of craving",
+     "summary": "The poet confesses everything he did for money and approval: digging for treasure, flattering kings, forcing laughter. He ends with the famous lines that pleasures consumed us and craving never aged, and hope pictured as a river.",
+     "story_hook": "",
+     "lesson": "We think we are chasing things; really, the chase is using up our lives."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 240,
+   "v3_candidates": 115,
+   "v3_fast_read": 1963,
+   "v3_select": 2321,
+   "v3_total": 2321,
+   "total": 2322
+  },
+  "_ms": 2327
+ }
+}

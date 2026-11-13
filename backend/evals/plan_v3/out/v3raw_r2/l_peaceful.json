@@ -1,0 +1,234 @@
+{
+ "case": "l_peaceful",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I want to understand what the Gita teaches",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I want a calm start to my day",
+   "mirror": "I want a calm start to my day",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels curious; closest to \"I want a calm start to my day\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.05,see=0.6",
+    "engine:v3",
+    "fast_read:raw",
+    "fr:stance:defaulted",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "peaceful",
+    "trail": [
+     "peaceful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "samatva",
+     "shanti"
+    ],
+    "risk": "none",
+    "situations": [
+     "morning_calm",
+     "gratitude",
+     "restless_mind"
+    ],
+    "age": "45_54",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "first_line": "Your quiet mornings are leading you to a still ocean of joy."
+   }
+  },
+  "hook": {
+   "id": "bh.vairagya.82",
+   "ref": "Bhartrihari · Vairagya Shatakam",
+   "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+   "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+   "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+   "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+   "words": [],
+   "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day"
+    }
+   ],
+   "prasang": {
+    "id": "bh.p.vairagya.shiva",
+    "title": "Vairagyashatakam: Worship of Shiva",
+    "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+    "story_hook": "",
+    "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your quiet mornings are leading you to a still ocean of joy.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your quiet mornings are leading you to a still ocean of joy.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "bh.niti.25",
+    "ref": "Bhartrihari · Niti Shatakam",
+    "ref_iast": "Bhartṛhari, Nītiśatakam 25",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From the section praising learning: the blessings of a good life.",
+    "sanskrit": "सूनुः सच्चरितः सती प्रियतमा स्वामी प्रसादोन्मुखः स्निग्धं मित्रमवञ्चकः परिजनो निष्क्लेशलेशं मनः । आकारो रुचिरः स्थिरश्च विभवो विद्यावदातं मुखं तुष्टे विष्टपकष्टहारिणि हरौ सम्प्राप्यते देहिना ॥",
+    "line": "A good child, a loving spouse, a kind boss, a true friend, a mind at ease: count these as grace.",
+    "translation": "A son of good conduct, a devoted and loving wife, a gracious master, an affectionate friend, kinsfolk who do not cheat, a mind without a trace of strain, a pleasing form, lasting prosperity, a face bright with learning: these come to the one with whom Hari, remover of the world's troubles, is pleased.",
+    "words": [],
+    "why": "What you learn and how you speak are the wealth no one can take from you.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     },
+     {
+      "id": "morning_calm",
+      "label": "I want a calm start to my day"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.niti.vidvat",
+     "title": "Nitishatakam: In praise of learning and the learned",
+     "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+     "story_hook": "",
+     "lesson": "What you learn and how you speak are the wealth no one can take from you."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 217,
+   "v3_candidates": 44,
+   "v3_fast_read": 951,
+   "v3_select": 1215,
+   "v3_total": 1215,
+   "total": 1216
+  },
+  "_ms": 1222
+ }
+}

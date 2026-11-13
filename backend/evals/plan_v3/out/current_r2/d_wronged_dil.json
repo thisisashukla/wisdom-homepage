@@ -1,0 +1,2504 @@
+{
+ "case": "d_wronged_dil",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "work",
+    "partner",
+    "child",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Tension with my in-laws",
+   "mirror": "Tension with my in-laws",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.202,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Tension with my in-laws. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+    "act": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands.",
+    "story": "A story of a son or daughter and their parents, facing expecting them to be different."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels uneasy; closest to \"Tension with my in-laws\" and \"My partner and I keep fighting\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.1,wro=0.45,see=0.0",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.6.34",
+   "ref": "Bhagavad Gita 6.34",
+   "ref_iast": "Bhagavad Gītā 6.34",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+   "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+   "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+   "words": [
+    {
+     "sa": "चञ्चलम्",
+     "en": "restless"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "मनः",
+     "en": "mind"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "प्रमाथि",
+     "en": "turbulent"
+    },
+    {
+     "sa": "बलवत्",
+     "en": "strong"
+    },
+    {
+     "sa": "दृढम्",
+     "en": "stubborn, firm"
+    },
+    {
+     "sa": "तस्य",
+     "en": "of that"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "निग्रहम्",
+     "en": "control, restraint"
+    },
+    {
+     "sa": "मन्ये",
+     "en": "consider"
+    },
+    {
+     "sa": "वायोः",
+     "en": "of wind"
+    },
+    {
+     "sa": "इव",
+     "en": "like"
+    },
+    {
+     "sa": "सुदुष्करम्",
+     "en": "very difficult"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 1.74,
+   "beat": "hook",
+   "role_fit": 0.73,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.2.6",
+    "ref": "Bhagavad Gita 2.6",
+    "ref_iast": "Bhagavad Gītā 2.6",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+    "line": "I can't tell which is better, or even what winning would look like.",
+    "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+    "words": [
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "एतत्",
+      "en": "this"
+     },
+     {
+      "sa": "विद्मः",
+      "en": "we know"
+     },
+     {
+      "sa": "कतरत्",
+      "en": "which of the two"
+     },
+     {
+      "sa": "नः",
+      "en": "for us"
+     },
+     {
+      "sa": "गरीयः",
+      "en": "better"
+     },
+     {
+      "sa": "यत् वा",
+      "en": "or which"
+     },
+     {
+      "sa": "जयेम",
+      "en": "we would conquer"
+     },
+     {
+      "sa": "यदि वा",
+      "en": "or whether"
+     },
+     {
+      "sa": "नः",
+      "en": "us"
+     },
+     {
+      "sa": "जयेयुः",
+      "en": "they would conquer"
+     },
+     {
+      "sa": "यान्",
+      "en": "those whom"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "हत्वा",
+      "en": "having killed"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "जिजीविषामः",
+      "en": "we wish to live"
+     },
+     {
+      "sa": "ते",
+      "en": "they"
+     },
+     {
+      "sa": "अवस्थिताः",
+      "en": "standing"
+     },
+     {
+      "sa": "प्रमुखे",
+      "en": "in front"
+     },
+     {
+      "sa": "धार्तराष्ट्राः",
+      "en": "sons of Dhritarashtra"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "uncertainty",
+      "label": "I can't handle not knowing what comes next"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 1.5113,
+    "beat": "hook",
+    "role_fit": 0.845,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.2.7",
+    "ref": "Bhagavad Gita 2.7",
+    "ref_iast": "Bhagavad Gītā 2.7",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+    "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+    "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+    "words": [
+     {
+      "sa": "कार्पण्यदोषोपहतस्वभावः",
+      "en": "nature overcome by weakness"
+     },
+     {
+      "sa": "पृच्छामि",
+      "en": "I ask"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "धर्मसंमूढचेताः",
+      "en": "mind confused about duty"
+     },
+     {
+      "sa": "यत्",
+      "en": "which"
+     },
+     {
+      "sa": "श्रेयः",
+      "en": "the highest good"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "may be"
+     },
+     {
+      "sa": "निश्चितम्",
+      "en": "certainly"
+     },
+     {
+      "sa": "ब्रूहि",
+      "en": "tell"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "मे",
+      "en": "to me"
+     },
+     {
+      "sa": "शिष्यः",
+      "en": "student"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "शाधि",
+      "en": "instruct"
+     },
+     {
+      "sa": "माम्",
+      "en": "me"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "प्रपन्नम्",
+      "en": "one who has taken refuge"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "uncertainty",
+      "label": "I can't handle not knowing what comes next"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 1.672,
+    "beat": "hook",
+    "role_fit": 0.94,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 1089,
+   "llm": 7018,
+   "total": 12964,
+   "select": 4853
+  },
+  "_ms": 12970
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "work",
+    "partner",
+    "child",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Tension with my in-laws",
+   "mirror": "Tension with my in-laws",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.202,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Tension with my in-laws. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+    "act": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands.",
+    "story": "A story of a son or daughter and their parents, facing expecting them to be different."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels uneasy; closest to with my in-laws\" and partner and I keep fighting\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:34=1.0,2=0.6,179=0.6,536=0.6,78=0.6,6=0.6",
+    "week_same:179,536",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.55,max=0.59",
+    "dropped:copied=1,repeat=3,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.7133,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna says to Krishna that the mind is restless, turbulent and stubborn, and that it is as hard to hold as the wind. Krishna agrees with him and tells him that practice and letting go can train it.",
+     "for_you": "The picture you hold of how things should be keeps breaking, and that hurts. The mind is restless, stormy and stubborn. Practice and letting go can train it. Let the picture break.",
+     "try_today": "Notice when the mind races toward how they should be.",
+     "scene_line": "You are in a moment of confession, and the mind is as hard to hold as the wind.",
+     "asks": [
+      "How do I stop the mind from racing?",
+      "Can I really let go of how things should be?",
+      "What does practice look like for me right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.90.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 90",
+     "family": "rcm",
+     "speaker": "Lakshman",
+     "listener": "Nishad Guha",
+     "setting": "Lakshman, keeping watch at night, to Guha who blames Kaikeyi for Ram sleeping on the ground.",
+     "sanskrit": "बोले लखन मधुर मृदु बानी। ग्यान बिराग भगति रस सानी॥ काहु न कोउ सुख दुख कर दाता। निज कृत करम भोग सबु भ्राता ॥",
+     "line": "No one else is the giver of your joy or sorrow. You live out the fruit of your own actions.",
+     "translation": "Then Lakshman spoke in a sweet, gentle voice, steeped in knowledge, detachment and devotion: \"No one is the giver of another's joy or sorrow, brother. Everyone lives out the fruit of their own actions.\"",
+     "words": [
+      {
+       "sa": "बोले",
+       "en": "spoke) लखन (Lakshman) मधुर (sweet) मृदु (gentle) बानी (speech"
+      },
+      {
+       "sa": "ग्यान",
+       "en": "wisdom) बिराग (detachment) भगति (devotion) रस (essence) सानी (filled"
+      },
+      {
+       "sa": "काहु",
+       "en": "anyone) न (not) कोउ (anyone) सुख (pleasure) दुख (pain) कर (do) दाता (giver"
+      }
+     ],
+     "why": "Before blaming someone for your pain, look at the whole chain of causes, including yourself.",
+     "misuse": "Not \"you deserve your suffering\"; it is about not handing your peace to others.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.nishad_lakshman",
+      "title": "Lakshman and Guha by the sleeping Ram",
+      "summary": "On the first night of exile, Guha the boatmen's chief sees Ram and Sita sleeping on grass and weeps with anger at Kaikeyi. Lakshman, keeping watch, tells him no one gives us joy or sorrow; we live out our own actions, so don't blame anyone needlessly.",
+      "story_hook": "",
+      "lesson": "Before blaming someone for your pain, look at the whole chain of causes, including yourself."
+     },
+     "score": 2.6989,
+     "beat": "diagnose",
+     "role_fit": 0.596,
+     "meaning": "Guha, the boatman chief, sees Ram sleeping on the ground and blames Kaikeyi for the sorrow. Lakshman, keeping watch, speaks gently. He says no one gives another their joy or sorrow. You live out the fruit of your own actions. Before you blame someone for your pain, look at the whole chain of causes, including yourself.",
+     "for_you": "The blame you hold for your in-laws and the fights with your partner is a chain of causes you are also in. You cannot hand your peace to them. Let your own part in the pattern be seen. The picture of how they were meant to be is what breaks.",
+     "try_today": "Watch the chain of causes in one argument today.",
+     "scene_line": "You are keeping watch while the one you love sleeps on the ground of your own making.",
+     "asks": [
+      "How do I see my own part in the blame?",
+      "Where do I stop the chain of causes?",
+      "What is the fruit of my own actions here?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.539",
+     "ref": "Maha Upanishad 6.71",
+     "ref_iast": "Mahā Upaniṣad 6.71",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on the large-hearted person.",
+     "sanskrit": "अयं बन्धुरयं नेति गणना लघुचेतसाम् । उदारचरितानां तु वसुधैव कुटुम्बकम् ॥",
+     "line": "'Ours' and 'theirs' is how small minds count. For the large-hearted, the whole earth is family.",
+     "translation": "'This one is my own, that one is not': this is how the small-minded reckon. For those of generous character, the whole earth is one family.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.6965,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Ribhu is telling his student Nidagha how a free person lives. Ribhu says that the small-minded see the world as divided into what is theirs and what is not theirs. But for the generous, the whole earth is one family. This means a free person can live fully in the world. They let go of what is lost, they take up what comes, they do the work at hand, they speak gently, they are busy outside, and they are calm inside.",
+     "for_you": "You are holding the line between your family and your in-laws. The verse asks you to treat the whole earth as family. That does not mean you could agree with everyone.",
+     "try_today": "Notice when you divide the world into ours and theirs.",
+     "scene_line": "You are standing between two families, holding the line.",
+     "asks": [
+      "How do I let go of the picture I hold of them?",
+      "Can I be busy outside and calm inside at the same time?",
+      "What is the work at hand that I can do today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.48.chaupai.3",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 48",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "the people of Ayodhya",
+     "setting": "Ram to the citizens, describing the person at peace.",
+     "sanskrit": "बैर न बिग्रह आस न त्रासा। सुखमय ताहि सदा सब आसा॥ अनारंभ अनिकेत अमानी। अनघ अरोष दच्छ बिग्यानी ॥",
+     "line": "No grudges, no quarrels, no craving, no fear: for such a person every direction is joy.",
+     "translation": "\"Holding no grudge and picking no quarrel, with neither craving nor fear, every direction is joyful to him. He starts nothing out of craving for results, clings to no house, wants no honour, is free of wrongdoing and anger, skilled and wise.\"",
+     "words": [],
+     "why": "A good leader invites correction; a good life is simple, honest and free of grudges.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_gita_citizens",
+      "title": "Ram's address to the citizens",
+      "summary": "Ram calls his people together and says he speaks without pride of rank: if he says anything wrong, stop him without fear. The way he recommends needs no grand effort, only a simple nature, an honest mind, contentment, and no grudges, no quarrels, no craving and no fear.",
+      "story_hook": "",
+      "lesson": "A good leader invites correction; a good life is simple, honest and free of grudges."
+     },
+     "score": 1.8383,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ram speaks to the people of Ayodhya. He tells them he is not above correction. If he ever says something wrong, they should stop him without fear. He describes the person at peace. This person holds no grudges and picks no quarrels. They have no craving and no fear. For them, every direction is joyful. They do not start things out of craving for results. They do not cling to any house or want honour. They are free of wrongdoing and anger. They are skilled and wise.",
+     "for_you": "The mind grows stormy when it holds on to what should be different. You feel the weight of your in-laws' words and your partner's silence. That picture you hold of how things should be is what breaks. You are skilled and wise enough to see the storm without fighting it.",
+     "try_today": "Notice one moment today where you do not start a quarrel.",
+     "scene_line": "You stand in a room where every direction feels like a quarrel.",
+     "asks": [
+      "How do I stop myself from craving a different result?",
+      "What does it mean to pick no quarrel in my own home?",
+      "Where does my craving for honour show up today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 2.7981,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha, the king's wise brother, speaks to Bharat, who is shattered by his father's death and his brother's exile. Bharat refuses the throne, saying his heart is not at peace. Vasishtha tells him to keep courage and do what today asks of him. Bharat rises and makes ready to go to the forest to find Ram.",
+     "for_you": "The mind is a storm between what your in-laws did and the picture you hold of how they were meant to be. That picture is breaking, and it hurts. The way forward is not to win the argument or wait for them to change.",
+     "try_today": "Speak one true sentence to the person you think you wronged, without asking them to fix anything.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.158",
+     "ref": "Taittiriya Upanishad 3.10.1",
+     "ref_iast": "Taittirīya Upaniṣad 3.10.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Reader",
+     "setting": "The hospitality vow.",
+     "sanskrit": "न कञ्चन वसतौ प्रत्याचक्षीत । तद्व्रतम् । तस्माद्यया कया च विधया बह्वन्नं प्राप्नुयात् ।",
+     "line": "Turn no one away from your door. Make that a vow, and keep enough to share.",
+     "translation": "Turn no one away from your home; that is a vow. So one should gather plenty of food by whatever means, for people say of such a person: food is ready for him.",
+     "words": [],
+     "why": "Respect food and keep your door open.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.food",
+      "title": "Vows of food and hospitality",
+      "summary": "After Bhrigu's discovery come simple household vows: never speak ill of food, never waste it, make it plentiful, and turn no one away from your door.",
+      "story_hook": "",
+      "lesson": "Respect food and keep your door open."
+     },
+     "score": 2.5555,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher is laying out a simple rule for daily life. They are telling the reader that a home should never close its door on a guest. The way to make sure this happens is to gather enough food, and to gather it by honest means. The point is not just about charity. It is about respecting what you have. If you respect the food on your table, you will never be afraid to share it. You will always have enough.",
+     "for_you": "The fights with your in-laws and the tension at home are eating at you. You are trying to hold on to the picture of a perfect family. This verse asks you to stop guarding the table and start gathering enough for everyone. You do not need to fix them.",
+     "try_today": "Notice one moment when you feel the urge to close the door, and stay open instead.",
+     "scene_line": "You are keeping the table set for a family that is not yet at peace.",
+     "asks": [
+      "How do I stop guarding the table and start sharing?",
+      "Can keeping the door open change how I feel?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "words": [],
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "anxiety_general",
+        "label": "I feel anxious most of the time"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "The picture you hold of how your family should be keeps breaking, and that hurts. Sumitra did not tell Kausalya to stop grieving. She sat with her in the ache. You do not need to fix the picture right now.",
+     "asks": [
+      "How do I sit with the ache without trying to fix it?",
+      "Can I let the picture break without trying to hold it?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When they don't see you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13219,
+   "total": 13221
+  },
+  "_ms": 13226
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "work",
+    "partner",
+    "child",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Tension with my in-laws",
+   "mirror": "Tension with my in-laws",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.202,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Tension with my in-laws. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+    "act": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands.",
+    "story": "A story of a son or daughter and their parents, facing expecting them to be different."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels uneasy; closest to with my in-laws\" and partner and I keep fighting\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_sim:mean=0.58,max=0.65",
+    "dropped:gendered=1,invented=2,scene_line_invented=1,try_today_long=2",
+    "for_you:7/7",
+    "meaning:3/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.44",
+     "ref": "Bhagavad Gita 11.44",
+     "ref_iast": "Bhagavad Gītā 11.44",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shaken by the cosmic vision, asks Krishna to forgive his years of casual familiarity.",
+     "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥",
+     "line": "Bear with me as a father bears with a son, a friend with a friend, a lover with the beloved.",
+     "translation": "So, bowing and prostrating my body, I ask your grace, adorable Lord. As a father with his son, a friend with his friend, a lover with the beloved, please bear with me.",
+     "words": [
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "प्रणम्य",
+       "en": "bowing down"
+      },
+      {
+       "sa": "प्रणिधाय",
+       "en": "placing down"
+      },
+      {
+       "sa": "कायम्",
+       "en": "the body"
+      },
+      {
+       "sa": "प्रसादये",
+       "en": "I seek to please"
+      },
+      {
+       "sa": "त्वाम्",
+       "en": "You"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "ईशम्",
+       "en": "the Lord"
+      },
+      {
+       "sa": "ईड्यम्",
+       "en": "worthy of praise"
+      },
+      {
+       "sa": "पितेव",
+       "en": "like a father"
+      },
+      {
+       "sa": "पुत्रस्य",
+       "en": "of a son"
+      },
+      {
+       "sa": "सखा इव",
+       "en": "like a friend"
+      },
+      {
+       "sa": "सख्युः",
+       "en": "of a friend"
+      },
+      {
+       "sa": "प्रियः",
+       "en": "a beloved"
+      },
+      {
+       "sa": "प्रियायाः",
+       "en": "of a beloved"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "You should"
+      },
+      {
+       "sa": "देव",
+       "en": "O radiant one"
+      }
+     ],
+     "why": "We take those closest to us for granted; it is never too late to say sorry.",
+     "misuse": "Asking for forgiveness is not demanding it; the other person still decides.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "marriage_conflict",
+       "label": "My partner and I keep fighting"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p11.6",
+      "title": "Terrified, Arjuna prays to see the gentle four-armed form",
+      "summary": "Trembling, Arjuna praises Krishna, asks pardon for having treated him as just a friend, begs him to bear with him as a father, friend or lover would, and asks to see his familiar form.",
+      "story_hook": "Arjuna remembered every joke, every careless 'Hey, Krishna!' across years of friendship, and his voice broke.",
+      "lesson": "We take those closest to us for granted; it is never too late to say sorry."
+     },
+     "score": 1.9936,
+     "beat": "hook",
+     "role_fit": 0.78,
+     "meaning": null,
+     "for_you": "The tension with your in-laws and the fights with your partner come from an expectation that they should be different from who they are. You have been holding a picture of how you were meant to be, and it keeps breaking.",
+     "try_today": "Notice one moment when you expect your in-laws to act differently, and let the expectation sit without acting on it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.11.5",
+     "ref": "Ashtavakra Gita 11.5",
+     "ref_iast": "Aṣṭāvakra Gītā 11.5",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra lists the certainties that make the wise calm.",
+     "sanskrit": "चिन्तया जायते दुःखं नान्यथेहेति निश्चयी । तया हीनः सुखी शान्तः सर्वत्र गलितस्पृहः ॥",
+     "line": "Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "translation": "One who knows for certain that suffering here is born of worry and nothing else is free of it, happy, at peace, and unattached everywhere.",
+     "words": [
+      {
+       "sa": "चिन्तया",
+       "en": "by worry"
+      },
+      {
+       "sa": "जायते",
+       "en": "arises"
+      },
+      {
+       "sa": "दुःखं",
+       "en": "suffering"
+      },
+      {
+       "sa": "नान्यथे",
+       "en": "not otherwise"
+      },
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "निश्चयी",
+       "en": "one who is certain"
+      },
+      {
+       "sa": "तया",
+       "en": "by that"
+      },
+      {
+       "sa": "हीनः",
+       "en": "devoid"
+      },
+      {
+       "sa": "सुखी",
+       "en": "happy"
+      },
+      {
+       "sa": "शान्तः",
+       "en": "calm"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "गलितस्पृहः",
+       "en": "desire dissolved"
+      }
+     ],
+     "why": "Most suffering is made of worry; knowing what you can't control loosens it.",
+     "misuse": "Real problems still need attention; this is about the extra pain rumination adds.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.wisdom",
+      "title": "The certainties of the calm",
+      "summary": "Ashtavakra lists convictions that make a person calm: things arise and pass by nature, fortune and misfortune come in their time, and suffering is born of worry alone.",
+      "story_hook": "",
+      "lesson": "Most suffering is made of worry; knowing what you can't control loosens it."
+     },
+     "score": 3.402,
+     "beat": "diagnose",
+     "role_fit": 0.831,
+     "meaning": "Ashtavakra speaks to Janaka, who sits on his throne burdened by a kingdom he cannot fully control. The sage lists what makes a person calm, and he names one thing above all others. Suffering is born of worry, nothing else. Free of worry, you are happy and at peace. This is not to say the world stops being hard. It is to say the extra weight you carry is often your own mind turning a problem over and over, and knowing that loosens the grip.",
+     "for_you": "The fight with your partner and the unease with your in-laws are heavy enough on their own.",
+     "try_today": null,
+     "scene_line": "You are on the throne, and the worry is heavier than the crown.",
+     "asks": [
+      "How do I tell the problem from the worry about the problem?",
+      "What if I let go of the worry and the problem is still there?",
+      "How do I stop turning the fight over and over in my mind?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.179",
+     "ref": "Maha Upanishad 4.30",
+     "ref_iast": "Mahā Upaniṣad 4.30",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on calm, continued.",
+     "sanskrit": "मातरीव परं यान्ति विषमाणि मृदूनि च । विश्वासमिह भूतानि सर्वाणि शमशालिनि ॥",
+     "line": "Everyone, gentle or fierce, comes to trust a calm person, the way we trust a mother.",
+     "translation": "All beings, the harsh and the gentle alike, come to trust the person who is calm, as they would trust a mother.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "marriage_conflict",
+       "label": "My partner and I keep fighting"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.2127,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": null,
+     "for_you": "The fighting with your partner and the tension with your in-laws are loud because your mind is restless. A calm presence is not about being quiet. It is about the steadiness you hold inside the room. Trust is not demanded. It is offered by the calm you carry.",
+     "try_today": "Notice one moment when your body feels calm today.",
+     "scene_line": "You sit in the room with your in-laws and your partner, and you choose to be the calm they can trust.",
+     "asks": [
+      "How do I tell the difference between calm and giving up?",
+      "What does a calm mind look like in my kitchen today?",
+      "Who trusts me when I am calm?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_adhyatma.54",
+     "ref": "Adhyatma Upanishad 47",
+     "ref_iast": "Adhyātma Upaniṣad 47",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seeker",
+     "setting": "One of a series of marks of a person free while living.",
+     "sanskrit": "साधुभिः पूज्यमानेऽस्मिन्पीड्यमानेऽपि दुर्जनैः । समभावो भवेद्यस्य स जीवन्मुक्त इष्यते ॥",
+     "line": "Praised by the good or harassed by the cruel, the free person stays the same.",
+     "translation": "Whether honoured by the good or harassed by the wicked, one who stays the same is called free while living.",
+     "words": [],
+     "why": null,
+     "misuse": "Staying even does not mean staying in a harmful situation.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 2.3405,
+     "beat": "steady",
+     "role_fit": 0.595,
+     "meaning": "A seeker asks what marks a person who is free while living. The seer answers with a steady quality. Whether praised by the good or harassed by the wicked, one who stays the same is called free while living. The point is a deep inner stillness that does not tilt with the weather of praise or blame. It is not about changing the world around you, but about keeping your own center steady when it shifts.",
+     "for_you": "You are caught between two rooms, the one with your in-laws and the one with your partner, and the expectation of how each should be has cracked. The picture of a calm home is breaking against the noise. The free person is not the one who stops the noise.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "words": [],
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.1093,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "The poet Bhartrihari tells the reader how a good person behaves. They say you could cut off craving, give up arrogance, and speak the truth. You could follow the path of the good, win over even your enemies, and be kind to those in pain. Real success does not make you stand taller. It makes you bow lower. Your true ornaments are not gold or praise. They are listening, giving, and helping. This is how the good behave.",
+     "for_you": "You are trying to win over your in-laws, but you are also holding on to how they should be. You are waiting for them to change their nature. That waiting is a craving.",
+     "try_today": "Offer one small thing to your children or your partner without asking for a change in return.",
+     "scene_line": "You are in your own home, waiting for your in-laws to see you differently.",
+     "asks": [
+      "How do I stop waiting for my in-laws to change?",
+      "What does it look like to bow lower in my own house?",
+      "Can I be kind to them without wanting them to be different?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.29",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.29",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "क्षिप्रं विजानाति चिरं शृणोति / विज्ञाय चार्थं भजते न कामात् / नासंपृष्टो व्युपयुङ्क्ते परार्थे / तत्प्रज्ञानं प्रथमं पण्डितस्य",
+     "line": "Understand quickly, listen long, act from judgement not impulse, and stay out of others' business unless asked.",
+     "translation": "He understands quickly, listens patiently, acts on understanding and not on impulse, and does not meddle in other people's affairs unasked: this is the first mark of a wise person.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 2.8435,
+     "beat": "act",
+     "role_fit": 0.769,
+     "meaning": null,
+     "for_you": "You are caught between the fight with your partner and the tension with your in-laws, and you are trying to manage both. Vidura says the wise person does not meddle in other people's affairs unasked.",
+     "try_today": "Notice one moment you are about to meddle in your partner's family business, and step back.",
+     "scene_line": null,
+     "asks": [
+      "How do I know when to step in and when to step back?",
+      "Can I really stay out of my partner's family business?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "words": [],
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 2.5088
+     },
+     "score": 2.5088,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "You are standing in the same place, having done the hard work of building a life, yet the mind never stops. The endless lists of what you have done and what you could do keep you from the quiet you need.",
+     "asks": [
+      "How do I stop the list in my head?",
+      "Can I be well without fixing the picture?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "What's yours, what's theirs",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 9613,
+   "total": 9614
+  },
+  "_ms": 9617
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "inlaws",
+    "family",
+    "work",
+    "partner",
+    "child",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Tension with my in-laws",
+   "mirror": "Tension with my in-laws",
+   "insight": "What they did hurts, and so does the picture you hold of how they were meant to be, which keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 1.202,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Tension with my in-laws. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+    "act": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands.",
+    "story": "A story of a son or daughter and their parents, facing expecting them to be different."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels uneasy; closest to with my in-laws\" and partner and I keep fighting\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:4=0.0,6=0.0,33=0.6,81=0.6,54=0.0,3=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.63",
+    "dropped:copied=1,repeat=1,slang=1,soft_kept=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "ashtavakra.15.4",
+     "ref": "Ashtavakra Gita 15.4",
+     "ref_iast": "Aṣṭāvakra Gītā 15.4",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "न त्वं देहो न ते देहो भोक्ता कर्ता न वा भवान् । चिद्रूपोऽसि सदा साक्षी निरपेक्षः सुखं चर ॥",
+     "line": "You are not your body or your achievements. You are the awareness watching it all. Live lightly.",
+     "translation": "You are not the body, nor is the body yours; you are not the doer or the enjoyer. You are awareness itself, the ever-present witness, needing nothing. Live happily.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "देहो",
+       "en": "body"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "देहो",
+       "en": "body"
+      },
+      {
+       "sa": "भोक्ता",
+       "en": "experiencer"
+      },
+      {
+       "sa": "कर्ता",
+       "en": "doer"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "वा",
+       "en": "indeed"
+      },
+      {
+       "sa": "भवान्",
+       "en": "you"
+      },
+      {
+       "sa": "चिद्-रूपः",
+       "en": "consciousness-form"
+      },
+      {
+       "sa": "असि",
+       "en": "are"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "साक्षी",
+       "en": "witness"
+      },
+      {
+       "sa": "निरपेक्षः",
+       "en": "impartial"
+      },
+      {
+       "sa": "सुखं",
+       "en": "happy/at ease"
+      },
+      {
+       "sa": "चर",
+       "en": "moving/wandering"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.7162,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Ashtavakra tells Janaka that he is not the body or the doer, but the ever-present awareness that simply witnesses. The body and its actions are like waves on the ocean, rising and falling, but the ocean itself remains untouched. He urges Janaka to stop grieving over the roles he plays and to rest in the knowledge that he is the silent watcher, not the one caught in the struggle.",
+     "for_you": "The picture you hold of how your in-laws or partner should be is a wave crashing against the shore of your mind. The fight with your partner and the tension with your in-laws are not the real you. You are the awareness that sees the storm.",
+     "try_today": "Notice one moment today when you watch your own mind without joining the fight.",
+     "scene_line": "You stand in your own home, watching the waves of expectation crash against the shore of your mind.",
+     "asks": [
+      "How do I stop my mind from making the fight about me?",
+      "What is the part of me that is not the tension?",
+      "How do I let the waves of expectation pass?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "words": [
+      {
+       "sa": "ध्यायतो",
+       "en": "focusing"
+      },
+      {
+       "sa": "विषयान्",
+       "en": "on objects"
+      },
+      {
+       "sa": "पुंसः",
+       "en": "person's"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "तेषु",
+       "en": "in them"
+      },
+      {
+       "sa": "उपजायते",
+       "en": "arises"
+      },
+      {
+       "sa": "सङ्गात्",
+       "en": "from attachment"
+      },
+      {
+       "sa": "संजायते",
+       "en": "is born"
+      },
+      {
+       "sa": "कामः",
+       "en": "desire"
+      },
+      {
+       "sa": "कामात्",
+       "en": "from desire"
+      },
+      {
+       "sa": "क्रोधः",
+       "en": "anger"
+      },
+      {
+       "sa": "अभिजायते",
+       "en": "is born"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.1655,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Arjuna asks Krishna what a steady person is like. Krishna says this person is content and in control of their senses. Then he explains the trap. When you keep thinking about something, you start to want it. When that wanting is blocked, it turns into anger. The path to steadiness is not about fighting the anger directly. It is about where you place your attention. If you stop dwelling on the things that stir you up, the wanting does not have a chance to grow, and the anger never arrives.",
+     "for_you": "You are caught between your in-laws and your partner. The anger you feel comes from dwelling on what they did or what they should be. That constant replay turns into wanting them to change, and when they do not, the frustration hardens into a fight.",
+     "try_today": "Notice when your mind returns to the argument and let it go without picking it up again.",
+     "scene_line": "You are in your own waiting room, replaying the scene that leads to anger.",
+     "asks": [
+      "What am I dwelling on that I could simply stop thinking about?",
+      "How does my mind keep returning to the same picture of them?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.13.33",
+     "ref": "Bhagavad Gita 13.32",
+     "ref_iast": "Bhagavad Gītā 13.32",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on nature and spirit, and seeing the same self in all.",
+     "sanskrit": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते । सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते ॥",
+     "line": "Like the sky, untouched by everything that moves through it, the self stays unstained.",
+     "translation": "As the all-pervading sky, because of its subtlety, is not stained, so the self, present in every body, is not stained.",
+     "words": [
+      {
+       "sa": "यथा",
+       "en": "just as"
+      },
+      {
+       "sa": "सर्वगतं",
+       "en": "all-pervading"
+      },
+      {
+       "sa": "सौक्ष्म्याद्",
+       "en": "because of subtlety"
+      },
+      {
+       "sa": "आकाशं",
+       "en": "sky"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "उपलिप्यते",
+       "en": "is tainted"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "अवस्थितः",
+       "en": "situated"
+      },
+      {
+       "sa": "देहे",
+       "en": "in the body"
+      },
+      {
+       "sa": "तथा",
+       "en": "thus"
+      },
+      {
+       "sa": "आत्मा",
+       "en": "the true self"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "उपलिप्यते",
+       "en": "is tainted"
+      }
+     ],
+     "why": "See the same presence in everyone and you stop wounding yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p13.2",
+      "title": "Nature and spirit",
+      "summary": "Nature does the acting; the self witnesses. Some reach the truth by meditation, some by reason, some by work, some by listening. Whoever sees the same divine in all beings stops harming themselves.",
+      "story_hook": "",
+      "lesson": "See the same presence in everyone and you stop wounding yourself."
+     },
+     "score": 3.5747,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Krishna is showing Arjuna the difference between what happens and who you are. He says that nature does all the acting. The self is just the witness. It is like the sky. The sky is everywhere and the clouds and birds move through it, but the sky itself is not stained by any of it. The self is in every body, but it is not stained by what they do. The point is that you can see the same presence in everyone, and when you do, you stop wounding yourself.",
+     "for_you": "You are in a room with people who do not meet your picture of them, and you feel the stain of their actions on you. Krishna says the self is the sky, untouched by the clouds.",
+     "try_today": "Notice one moment when you feel stained by them, and let it pass like a cloud.",
+     "scene_line": "You are the sky, and the storm is passing through.",
+     "asks": [
+      "How do I hold the sky when the storm is loud?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.2224,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ashtavakra speaks to Janaka about the calm of the wise. He says a steady person does not beg for gain, nor grieve over loss, and their cool mind stays full as if with nectar. This is not about running away from the world, but about holding ordinary life without being shaken by it. The restless chase peace and never find it. The wise do not need to change their circumstances, only their grip on them.",
+     "for_you": "You keep fighting with your partner because you are trying to get them to be different. The fight is the loss, the quiet is the gain. Your mind is full of what is missing. Let the fight be there without letting it fill you.",
+     "try_today": "Notice one moment today when the tension is present and let it be without fixing it.",
+     "scene_line": "You are the sky, and the storm with your in-laws moves through you.",
+     "asks": [
+      "How do I stop my mind from filling with what is missing?",
+      "Can I be full even when my partner and I are fighting?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.4.8.chaupai.3",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Sugriva",
+     "setting": "Ram to Sugriva on the marks of a good friend.",
+     "sanskrit": "देत लेत मन संक न धरई। बल अनुमान सदा हित करई॥ बिपति काल कर सतगुन नेहा। श्रुति कह संत मित्र गुन एहा ॥",
+     "line": "A good friend gives without keeping score, and loves you a hundredfold more in hard times.",
+     "translation": "He gives and takes without suspicion, always does you good as far as he is able, and in hard times loves you a hundred times more. These, say the scriptures, are the qualities of a good friend.",
+     "words": [
+      {
+       "sa": "देत",
+       "en": "giving"
+      },
+      {
+       "sa": "लेत",
+       "en": "receiving"
+      },
+      {
+       "sa": "मन",
+       "en": "mind"
+      },
+      {
+       "sa": "संक",
+       "en": "doubt"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "धरई",
+       "en": "holds"
+      },
+      {
+       "sa": "बल",
+       "en": "strength"
+      },
+      {
+       "sa": "अनुमान",
+       "en": "according to"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "हित",
+       "en": "good"
+      },
+      {
+       "sa": "करई",
+       "en": "does"
+      },
+      {
+       "sa": "बिपति",
+       "en": "hardship"
+      },
+      {
+       "sa": "काल",
+       "en": "time"
+      },
+      {
+       "sa": "कर",
+       "en": "of"
+      },
+      {
+       "sa": "सतगुन",
+       "en": "hundredfold"
+      },
+      {
+       "sa": "नेहा",
+       "en": "affection"
+      },
+      {
+       "sa": "श्रुति",
+       "en": "the Vedas"
+      },
+      {
+       "sa": "कह",
+       "en": "say"
+      },
+      {
+       "sa": "संत",
+       "en": "true"
+      },
+      {
+       "sa": "मित्र",
+       "en": "friend"
+      },
+      {
+       "sa": "गुन",
+       "en": "qualities"
+      },
+      {
+       "sa": "एहा",
+       "en": "these"
+      }
+     ],
+     "why": "A friend treats your trouble as bigger than their own.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.friendship_pact",
+      "title": "Ram and Sugriva become friends",
+      "summary": "Hanuman, sent to check whether the two strangers are Bali's spies, recognises Ram and brings him to Sugriva, who has been driven out by his brother. Before a fire as witness they become friends, and Ram describes what friendship asks: your friend's small trouble is a mountain, your own is dust; steer him right, hide his faults, love him more in hard times.",
+      "story_hook": "",
+      "lesson": "A friend treats your trouble as bigger than their own."
+     },
+     "score": 2.4913,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram is telling Sugriva what a true friend is. They have just met and become allies. Ram says that a good friend gives and takes without keeping score. They do what they can to help you, and when times are hard, their love for you grows even stronger. A friend makes your small trouble feel like a mountain and their own trouble feel like dust. They hide your faults and steer you right.",
+     "for_you": "Your in-laws and partner are not keeping score of you. The picture you hold of how they were meant to be is breaking because you are measuring their actions against an idea of them that does not exist.",
+     "try_today": "Notice one moment when they do something small for you and let it be enough.",
+     "scene_line": "You stand in your kitchen, waiting for the score to be kept.",
+     "asks": [
+      "What would it look like if I let their small trouble be dust?",
+      "How do I stop keeping score with my partner?",
+      "What part of me wants them to be different?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.2386,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": null,
+     "for_you": "The fighting with your partner and the unease with your in-laws come from holding on to how things should be. The verse asks you to keep doing what you do, but to let go of the grip. Your part is the work, not the result.",
+     "try_today": "Do one small task at home or work while letting go of how it should turn out.",
+     "scene_line": "You are at your kitchen table, doing the work of the day, and you let go.",
+     "asks": [
+      "How do I let go of the result without giving up?",
+      "What is my part in the fight with my partner?",
+      "Can I see myself in my in-laws today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_consents",
+     "title": "Kausalya lets Ram go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+     "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+     "lesson": "Love sometimes means staying behind to care for someone else.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.2.24.20",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 24.20",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Kausalya",
+      "setting": "Ram's mother wants to follow him into exile; he asks her instead to stay and look after his grieving father.",
+      "sanskrit": "यथा मयि तु निष्क्रान्ते पुत्रशोकेन पार्थिवः॥ श्रमं नावाप्नुयात् किंचिदप्रमत्ता तथा कुरु। दारुणश्चाप्ययं शोको यथैनं न विनाशयेत्॥ राज्ञो वृद्धस्य सततं हितं चर समाहिता।",
+      "line": "When I'm gone, look after him. Don't let his grief wear him down.",
+      "translation": "Take care that when I am gone the king does not wear himself out with grief for his son, that this terrible sorrow does not destroy him. Look after the old king's welfare always.",
+      "words": [],
+      "why": "Love sometimes means staying behind to care for someone else.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "illness_family",
+        "label": "Someone I love is seriously ill"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.kausalya_consents",
+       "title": "Kausalya lets Ram go",
+       "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+       "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+       "lesson": "Love sometimes means staying behind to care for someone else."
+      },
+      "score": 2.2218
+     },
+     "score": 2.2218,
+     "why": null,
+     "hook_title": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "teaser": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "for_you": "You are standing in a version of the morning Ram left, where your own leaving feels like a betrayal. You want to hold your partner close, yet your in-laws stand in the doorway, and the fight with them is the fight with the person you love.",
+     "asks": [
+      "How do I hold my partner close without taking on their anger?",
+      "What does it look like to look after someone without letting their grief wear me down?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "The same self in them",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 10723,
+   "total": 10725
+  },
+  "_ms": 10728
+ }
+}

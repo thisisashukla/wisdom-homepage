@@ -1,0 +1,239 @@
+{
+ "case": "n_angry_inlaws_no_consent",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "none",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels uneasy; closest to \"I feel anxious most of the time\" and \"I can't handle not knowing what comes next\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.1,wro=0.2,see=0.0",
+    "engine:v3",
+    "fast_read:raw",
+    "day1:graph_pick",
+    "first_line:no_model"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "angry",
+    "trail": [
+     "angry"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "krodha",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": false,
+    "light": false,
+    "pick": "mbh.12.81.6"
+   }
+  },
+  "hook": {
+   "id": "mbh.12.81.6",
+   "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+   "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+   "family": "mbh",
+   "speaker": "Krishna (quoted by Bhishma)",
+   "listener": "Narada",
+   "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+   "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+   "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+   "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+   "words": [],
+   "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+   "misuse": "",
+   "tone": "comforting",
+   "matched": [],
+   "prasang": {
+    "id": "mbh.p.krishna_narada_kin",
+    "title": "Krishna's family troubles: the weapon not made of iron",
+    "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+    "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+    "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "The weight of the unfairness sits heavy while you work, and a verse was chosen with that in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "The weight of the unfairness sits heavy while you work, and a verse was chosen with that in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "vr.2.75.15",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+    "family": "vr",
+    "speaker": "Bharata",
+    "listener": "Kausalya",
+    "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+    "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+    "line": "Why blame me, who knew nothing? You know what I feel for him.",
+    "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+    "words": [],
+    "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "vr.2.19.6",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.6",
+    "family": "vr",
+    "speaker": "Ram",
+    "listener": "Kaikeyi",
+    "setting": "Ram has just accepted fourteen years of exile; one thing still hurts him.",
+    "sanskrit": "अलीकं मानसं त्वेकं हृदयं दहते मम। स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्॥",
+    "line": "What hurt most was not the news, but that he didn't tell me himself.",
+    "translation": "Only one sorrow burns my heart: that the king did not tell me himself about Bharata's coronation.",
+    "words": [],
+    "why": "You cannot control the news; you can control the person who walks out of the room.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_candidates": 0,
+   "v3_select": 0,
+   "v3_total": 0,
+   "total": 0
+  },
+  "_ms": 3
+ }
+}

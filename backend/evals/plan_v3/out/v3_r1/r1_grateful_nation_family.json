@@ -1,0 +1,844 @@
+{
+ "case": "r1_grateful_nation_family",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "family",
+    "work",
+    "child",
+    "parent",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Success is going to my head",
+   "mirror": "Success is going to my head",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids and caring for their parents and studying and retired. Feels determined; closest to \"Success is going to my head\" and \"I need to set boundaries with family\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents",
+    "studying",
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.78,wro=0.31,see=0.25",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:error:TooManyRequestsError",
+    "day1:graph_pick",
+    "first_line:llm_error"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "success_pride",
+     "boundaries_family",
+     "morning_calm"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids",
+     "caring_parents",
+     "studying",
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82"
+   }
+  },
+  "hook": {
+   "id": "bh.vairagya.82",
+   "ref": "Bhartrihari · Vairagya Shatakam",
+   "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+   "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+   "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+   "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+   "words": [],
+   "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day"
+    }
+   ],
+   "prasang": {
+    "id": "bh.p.vairagya.shiva",
+    "title": "Vairagyashatakam: Worship of Shiva",
+    "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+    "story_hook": "",
+    "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are here with hope in your heart.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are here with hope in your heart.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "viv.6.glad_blunders",
+    "ref": "Swami Vivekananda",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Josephine MacLeod ('Joe')",
+    "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+    "sanskrit": null,
+    "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "words": [],
+    "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "viv.p.letter.joe_1900",
+     "title": "'I am drifting': a letter from Alameda (1900)",
+     "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+     "story_hook": "",
+     "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "mbh.13.162.15",
+    "ref": "Mahabharata · Anushasana Parva · Anushasana",
+    "ref_iast": "Mahābhārata, Anuśāsana Parva 162.15",
+    "family": "mbh",
+    "speaker": "Bhishma",
+    "listener": "Yudhishthira",
+    "setting": "Yudhishthira asks Bhishma how an eldest brother should treat his younger brothers, and they him.",
+    "sanskrit": "दशाचार्यानुपाध्याय उपाध्यायान्पिता दश / दश चैव पितॄन्माता सर्वां वा पृथिवीमपि / गौरवेणाभिभवति नास्ति मातृसमो गुरुः",
+    "line": "There is no teacher like a mother.",
+    "translation": "A teacher outweighs ten instructors, a father ten teachers, and a mother ten fathers, even the whole earth. There is no teacher equal to a mother.",
+    "words": [],
+    "why": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.brothers",
+     "title": "Bhishma on elder and younger siblings",
+     "summary": "Yudhishthira asks how the eldest brother should treat the younger ones. Bhishma: overlook small faults and correct gently, beware outsiders who sow division, divide property equally, and honour the mother above all.",
+     "story_hook": "",
+     "lesson": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 218,
+   "v3_candidates": 38,
+   "v3_fast_read": 44,
+   "v3_select": 303,
+   "v3_first_line": 42,
+   "v3_total": 346,
+   "total": 346
+  },
+  "_ms": 348
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "family",
+    "work",
+    "child",
+    "parent",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Success is going to my head",
+   "mirror": "Success is going to my head",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids and caring for their parents and studying and retired. Feels determined; closest to is going to my head\" and \"I need to set boundaries with family\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents",
+    "studying",
+    "retired"
+   ],
+   "flags": [
+    "v3:for_you:0/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "success_pride",
+     "boundaries_family",
+     "morning_calm"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids",
+     "caring_parents",
+     "studying",
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.82",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+     "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+     "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+     "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+     "words": [],
+     "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "morning_calm",
+       "label": "I want a calm start to my day"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.shiva",
+      "title": "Vairagyashatakam: Worship of Shiva",
+      "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+      "story_hook": "",
+      "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+     },
+     "score": 5.706,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.82",
+     "path": "bh.vairagya.82 -depicts-> kritajnata [light_fit]",
+     "why": [
+      "Wonder at a simple, sufficient life",
+      "Counting what is already here"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.10",
+      "vr.4.1.101",
+      "vr.5.12.10"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.582",
+     "ref": "Chhandogya Upanishad 7.22.1",
+     "ref_iast": "Chāndogya Upaniṣad 7.22.1",
+     "family": "up",
+     "speaker": "Sanatkumara",
+     "listener": "Narada",
+     "setting": "The next step: action rests on happiness.",
+     "sanskrit": "यदा वै सुखं लभतेऽथ करोति नासुखं लब्ध्वा करोति सुखमेव लब्ध्वा करोति सुखं त्वेव विजिज्ञासितव्यमिति सुखं भगवो विजिज्ञास इति ॥",
+     "line": "We act only when we find joy in it. Understand the joy, and action follows.",
+     "translation": "When one finds happiness, one acts. No one acts without finding happiness; only by finding happiness does one act. So happiness itself must be understood. 'Sir, I wish to understand happiness.'",
+     "words": [],
+     "why": "Success and learning don't cure sadness; only the infinite does.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.chhandogya.narada",
+      "title": "Narada: learned but sad",
+      "summary": "Narada, who has mastered every science of his day, comes to Sanatkumara and admits he is unhappy: he knows words, not himself. Sanatkumara leads him step by step from names up through action and joy to the infinite, teaching that happiness is found only in the vast, never in the small.",
+      "story_hook": "Narada knew every subject worth knowing, and still came to Sanatkumara feeling sad.",
+      "lesson": "Success and learning don't cure sadness; only the infinite does."
+     },
+     "score": 2.246,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "up_chhandogya.582",
+     "path": "up_chhandogya.582 -states_chain-> chandogya.narada_ladder [shraddha -leads_to-> mati]",
+     "why": [
+      "Narada: learned and still grieving (Chandogya Upanishad 7.1.3)"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.6.40",
+      "bg.6.6",
+      "vr.5.55.5"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 4.195,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "mbh.5.33.33",
+     "path": "mbh.5.33.33 -heals-> mada via samatva",
+     "why": [
+      "Do not swell with praise.",
+      "Same in honour and dishonour"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.no_winter",
+      "mbh.12.173.41",
+      "up_mundaka.3.1.6"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.1.judge_character",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Karma-Yoga class, New York",
+     "setting": "Karma-Yoga classes, New York, winter 1895–96, chapter 1: how work shapes character.",
+     "sanskrit": null,
+     "line": "Watch a man do his most common actions; those are indeed the things which will tell you the real character of a great man.",
+     "translation": "If you really want to judge of the character of a man, look not at his great performances. Every fool may become a hero at one time or another. Watch a man do his most common actions; those are indeed the things which will tell you the real character of a great man. Great occasions rouse even the lowest of human beings to some kind of greatness, but he alone is the really great man whose character is great always, the same wherever he be.",
+     "words": [],
+     "why": "Character is built in ordinary actions, and you are building it right now.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "success_pride",
+       "label": "Success is going to my head"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.karma_yoga.character",
+      "title": "Karma-Yoga 1: how work makes character",
+      "summary": "He defines karma as work and says character is the sum of the impressions our actions leave. Misery teaches as much as joy, and character shows in small daily actions, not big moments. The ideal worker finds calm in the middle of intense activity.",
+      "story_hook": "",
+      "lesson": "Character is built in ordinary actions, and you are building it right now."
+     },
+     "score": 4.142,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.1.judge_character",
+     "path": "viv.1.judge_character -heals-> mada",
+     "why": [
+      "one big success proves little about who one is",
+      "the small daily acts are where character is built"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.moral_gymnasium",
+      "bh.niti.71",
+      "rcm.7.68.chaupai.6"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.52",
+     "ref": "Taittiriya Upanishad 1.11.2",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.2",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The most quoted lines of the graduation address.",
+     "sanskrit": "देवपितृकार्याभ्यां न प्रमदितव्यम् । मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ।",
+     "line": "Treat your mother as divine, your father as divine, your teacher as divine, your guest as divine.",
+     "translation": "Do not neglect your duties to the gods and the ancestors. Let your mother be a god to you. Let your father be a god to you. Let your teacher be a god to you. Let your guest be a god to you.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "Honouring parents does not mean accepting mistreatment or giving up your own conscience.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 4.205,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_taittiriya.52",
+     "path": "up_taittiriya.52 -cultivates-> kritajnata",
+     "why": [
+      "those who raised and taught you are to be honoured as one honours a deity",
+      "the guest and the elder are served as sacred"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.servant_while_leading",
+      "up_brihadaranyak.92",
+      "bh.niti.64"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.136.1",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 136.1",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "नैव राज्ञा दरः कार्यो जातु कस्यांचिदापदि / अथ चेदपि दीर्णः स्यान्नैव वर्तेत दीर्णवत्",
+     "line": "In a crisis, you may be shaken inside. Don't let fear make your decisions for you.",
+     "translation": "A leader should never show fear in any crisis. Even if shaken inside, he should not act like a shaken man.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "This is about not acting from panic, not about hiding your feelings from everyone.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.85,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.136.1",
+     "path": "mbh.5.136.1 -cultivates-> dhriti",
+     "why": [
+      "Courage and steadiness are the wheels of the chariot that wins; do not let fear decide.",
+      "Composure for those who depend on one"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.37.51",
+      "mbh.12.55.16",
+      "viv.5.not_in_a_day"
+     ],
+     "thin": false,
+     "personal_source": {}
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.bhakti.ram_owes_hanuman",
+     "title": "Ram cannot repay Hanuman",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Hanuman",
+      "Jambavan"
+     ],
+     "story_hook": "Hanuman had burned a city and found the queen; now he lay on the ground in front of Ram and refused to stand up.",
+     "summary": "Back from Lanka, Hanuman tells Ram how Sita survives: his name guards her day and night. Ram, in tears, asks whether one who relies on him can meet calamity; Hanuman answers that the only calamity is forgetting him. Ram says he can never repay Hanuman and cannot even look him in the face; Hanuman falls at his feet and will not get up. Offered anything, he asks only for unwavering devotion, and credits every deed to Ram.",
+     "lesson": "Do the work, give away the credit, and ask only to keep loving.",
+     "matched": [],
+     "anchor": null,
+     "score": 4.12,
+     "why": null,
+     "hook_title": "Hanuman lay at Ram's feet and refused to stand up",
+     "teaser": "Hanuman lay at Ram's feet and refused to stand up",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.rcm.hanuman_gives_the_credit_away",
+     "path": "st.rcm.hanuman_gives_the_credit_away -enacts_in-> mada ; st.rcm.hanuman_gives_the_credit_away -enacts_turn-> kritajnata, seva, shanti ; st.rcm.hanuman_gives_the_credit_away -fits_situation-> success_pride",
+     "why": [
+      "When praised most, give the credit to its source; praise is where pride enters."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.narada_asks_do_you",
+      "st.vr.ram_questions_bharata_on_ruling",
+      "st.mbh.bhima_cannot_lift_the_tail"
+     ],
+     "thin": false,
+     "story_id": "st.rcm.hanuman_gives_the_credit_away",
+     "personal_source": {}
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 31,
+   "v3_w1_write": 51,
+   "v3_w1_total": 84,
+   "select": 84,
+   "total": 85
+  },
+  "_ms": 86
+ }
+}

@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { BACKEND_TIMEOUT, backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
 import { seal, WEEK_AAD } from '@/lib/server/seal'
-import { BackendStory, BackendVerse, cleanSanskrit, FullDay, profileBody, refOf, StartProfile } from '@/lib/server/startShared'
+import { BackendStory, BackendVerse, cleanSanskrit, clientBody, FullDay, profileBody, refOf, StartClient, StartProfile } from '@/lib/server/startShared'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -35,7 +35,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'rate_limited' }, { status: 429 })
   }
 
-  let body: { profile?: StartProfile; understanding?: unknown; hookId?: string }
+  let body: { profile?: StartProfile; understanding?: unknown; hookId?: string; client?: StartClient }
   try {
     body = await req.json()
   } catch {
@@ -56,6 +56,7 @@ export async function POST(req: Request) {
         week: 1,
         shape: null,
         feedback: [],
+        client: clientBody(body.client, req, user?.uid),
       },
       BACKEND_TIMEOUT.plan,
     )

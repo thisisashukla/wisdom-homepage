@@ -1,0 +1,389 @@
+{
+ "case": "n_anxious_student_no_consent",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "none",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't focus, my mind is restless",
+   "mirror": "I can't focus, my mind is restless",
+   "insight": "Your mind was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I can't focus, my mind is restless. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "The mind can be trained slowly, by practice and letting go; each time it wanders, it can be gently brought back.",
+    "act": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice.",
+    "story": "A story of a seeker whose mind will not settle, facing a mind that won't settle."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "A mind that won't settle",
+    "Why it races",
+    "Watching the mind"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels restless; closest to \"I can't focus, my mind is restless\" and \"I can't stop overthinking\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.3,wro=0.04,see=0.05",
+    "engine:v3",
+    "fast_read:raw",
+    "day1:graph_pick",
+    "first_line:no_model"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": false,
+    "light": false,
+    "pick": "bg.6.37"
+   }
+  },
+  "hook": {
+   "id": "bg.6.37",
+   "ref": "Bhagavad Gita 6.37",
+   "ref_iast": "Bhagavad Gītā 6.37",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+   "sanskrit": "अर्जुन उवाचअयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥",
+   "line": "What happens to someone who believes, tries, slips, and doesn't make it to the end?",
+   "translation": "Arjuna said: One who has faith but does not strive enough, whose mind falls away from yoga before reaching perfection, what end does he come to, Krishna?",
+   "words": [
+    {
+     "sa": "अर्जुन उवाच",
+     "en": "Arjuna said"
+    },
+    {
+     "sa": "अयतिः",
+     "en": "one without steady effort"
+    },
+    {
+     "sa": "श्रद्धयोपेतः",
+     "en": "endowed with faith"
+    },
+    {
+     "sa": "योगात्",
+     "en": "from yoga"
+    },
+    {
+     "sa": "चलितमानसः",
+     "en": "with a mind turned away"
+    },
+    {
+     "sa": "अप्राप्य",
+     "en": "without attaining"
+    },
+    {
+     "sa": "योगसंसिद्धिम्",
+     "en": "perfection in yoga"
+    },
+    {
+     "sa": "कां गतिम्",
+     "en": "what state"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "गच्छति",
+     "en": "does he go"
+    }
+   ],
+   "why": "No sincere effort is wasted; you pick up where you left off.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "bg.p06.5",
+    "title": "What becomes of one who falls from yoga",
+    "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+    "story_hook": "",
+    "lesson": "No sincere effort is wasted; you pick up where you left off."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind won't settle while you are studying, and a verse was chosen with that weight in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind won't settle while you are studying, and a verse was chosen with that weight in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "rcm.2.225.chaupai.3",
+    "ref": "Ramcharitmanas, Ayodhya Kand 2.225 (chaupai 3)",
+    "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.225",
+    "family": "rcm",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "Bharat walks toward Ram, slowed by shame, quickened by love.",
+    "sanskrit": "फेरति मनहुँ मातु कृत खोरी। चलत भगति बल धीरज धोरी॥ जब समुझत रघुनाथ सुभाऊ। तब पथ परत उताइल पाऊ ॥",
+    "line": "Shame slowed him. But whenever he remembered Ram's nature, his feet moved faster.",
+    "translation": "It was as if his mother's wrong held him back, while the strength of devotion drove him on like a patient ox. Whenever he remembered Raghunath's nature, his feet moved faster on the path.",
+    "words": [
+     {
+      "sa": "फेरति",
+      "en": "turns back"
+     },
+     {
+      "sa": "मनहुँ",
+      "en": "as if"
+     },
+     {
+      "sa": "मातु",
+      "en": "mother"
+     },
+     {
+      "sa": "कृत",
+      "en": "done"
+     },
+     {
+      "sa": "खोरी",
+      "en": "wrong"
+     },
+     {
+      "sa": "चलत",
+      "en": "while moving"
+     },
+     {
+      "sa": "भगति",
+      "en": "devotion"
+     },
+     {
+      "sa": "बल",
+      "en": "strength"
+     },
+     {
+      "sa": "धीरज",
+      "en": "patience"
+     },
+     {
+      "sa": "धोरी",
+      "en": "bearer"
+     },
+     {
+      "sa": "जब",
+      "en": "when"
+     },
+     {
+      "sa": "रघुनाथ",
+      "en": "Raghunath"
+     },
+     {
+      "sa": "सुभाऊ",
+      "en": "nature"
+     },
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "पथ",
+      "en": "path"
+     },
+     {
+      "sa": "परत",
+      "en": "falling"
+     },
+     {
+      "sa": "उताइल",
+      "en": "quickened"
+     },
+     {
+      "sa": "पाऊ",
+      "en": "feet"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.6.38",
+    "ref": "Bhagavad Gita 6.38",
+    "ref_iast": "Bhagavad Gītā 6.38",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+    "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति । अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि ॥",
+    "line": "Fallen from both sides, does he scatter like a torn cloud, with nowhere to stand?",
+    "translation": "Fallen from both, does he not perish like a broken cloud, without support, mighty-armed one, bewildered on the path to Brahman?",
+    "words": [
+     {
+      "sa": "कच्चित्",
+      "en": "whether?"
+     },
+     {
+      "sa": "नोभयविभ्रष्टः",
+      "en": "fallen from both sides"
+     },
+     {
+      "sa": "छिन्नाभ्रम्",
+      "en": "torn cloud"
+     },
+     {
+      "sa": "इव",
+      "en": "like"
+     },
+     {
+      "sa": "नश्यति",
+      "en": "perishes"
+     },
+     {
+      "sa": "अप्रतिष्ठः",
+      "en": "without support"
+     },
+     {
+      "sa": "महाबाहो",
+      "en": "O mighty-armed one"
+     },
+     {
+      "sa": "विमूढः",
+      "en": "deluded"
+     },
+     {
+      "sa": "ब्रह्मणः",
+      "en": "of the supreme reality"
+     },
+     {
+      "sa": "पथि",
+      "en": "on the path"
+     }
+    ],
+    "why": "No sincere effort is wasted; you pick up where you left off.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p06.5",
+     "title": "What becomes of one who falls from yoga",
+     "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+     "story_hook": "",
+     "lesson": "No sincere effort is wasted; you pick up where you left off."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_candidates": 0,
+   "v3_select": 0,
+   "v3_total": 0,
+   "total": 1
+  },
+  "_ms": 4
+ }
+}

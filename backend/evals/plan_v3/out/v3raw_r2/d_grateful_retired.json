@@ -1,0 +1,220 @@
+{
+ "case": "d_grateful_retired",
+ "method": "v3raw",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.55,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I've retired and feel lost\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.0,see=0.92",
+    "engine:v3",
+    "fast_read:raw"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "grateful",
+    "trail": [
+     "grateful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "kritajnata",
+     "santosha",
+     "shanti"
+    ],
+    "risk": "none",
+    "situations": [
+     "gratitude",
+     "retirement"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "mbh.3.314.75",
+    "first_line": "You are content with the life you have built and want to keep this grateful feeling."
+   }
+  },
+  "hook": {
+   "id": "mbh.3.314.75",
+   "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+   "ref_iast": "Mahābhārata, Vana Parva 314.75–76",
+   "family": "mbh",
+   "speaker": "Yudhishthira",
+   "listener": "the Yaksha (Dharma in disguise)",
+   "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+   "sanskrit": "धन्यानामुत्तमं किंस्विद्धनानां स्यात्किमुत्तमम् / लाभानामुत्तमं किंस्यात्सुखानां स्यात्किमुत्तमं धन्यानामुत्तमं दाक्ष्यंधनानामुत्तमं श्रुतम् / लाभानां श्रेय आरोग्यं सुखानां तुष्टिरुत्तमा",
+   "line": "The best gain is health. The highest happiness is contentment.",
+   "translation": "Yaksha: 'What is the best of good fortunes? The best of riches? The best of gains? The best of joys?' Yudhishthira: 'Competence is the best fortune; learning is the best wealth; health is the best gain; contentment is the highest happiness.'",
+   "words": [],
+   "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful"
+    }
+   ],
+   "prasang": {
+    "id": "mbh.p.yaksha_prashna",
+    "title": "Yaksha Prashna: the questions at the lake",
+    "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+    "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+    "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are content with the life you have built and want to keep this grateful feeling.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are content with the life you have built and want to keep this grateful feeling.",
+   "first_line_source": "fast_read"
+  },
+  "alternates": [
+   {
+    "id": "viv.6.glad_blunders",
+    "ref": "Swami Vivekananda",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Josephine MacLeod ('Joe')",
+    "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+    "sanskrit": null,
+    "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "words": [],
+    "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "retirement",
+      "label": "I've retired and feel lost"
+     }
+    ],
+    "prasang": {
+     "id": "viv.p.letter.joe_1900",
+     "title": "'I am drifting': a letter from Alameda (1900)",
+     "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+     "story_hook": "",
+     "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 397,
+   "v3_candidates": 41,
+   "v3_fast_read": 1615,
+   "v3_select": 2056,
+   "v3_total": 2056,
+   "total": 2057
+  },
+  "_ms": 2063
+ }
+}

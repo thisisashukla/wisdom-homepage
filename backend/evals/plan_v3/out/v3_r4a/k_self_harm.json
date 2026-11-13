@@ -1,0 +1,898 @@
+{
+ "case": "k_self_harm",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "self_harm",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "It sounds like you're carrying something very heavy right now.",
+   "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+    "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "template",
+    "steady": "safety",
+    "act": "safety",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Between things. Feels searching; closest to \"I can't handle not knowing what comes next\" and \"I'm burned out and running on empty\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:graph_pick",
+    "first_line:budget"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "empty"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "nirveda",
+     "vishada"
+    ],
+    "risk": "self_harm",
+    "situations": [
+     "burnout",
+     "procrastination",
+     "uncertainty"
+    ],
+    "age": "25_34",
+    "stages": [
+     "between"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "up_maha.248"
+   }
+  },
+  "hook": {
+   "id": "up_maha.248",
+   "ref": "Maha Upanishad 4.99",
+   "ref_iast": "Mahā Upaniṣad 4.99",
+   "family": "up",
+   "speaker": "Ribhu",
+   "listener": "Nidagha",
+   "setting": "Ribhu on the nature of the mind.",
+   "sanskrit": "न हि चञ्चलताहीनं मनः क्वचन दृश्यते । चञ्चलत्वं मनोधर्मो वह्नेर्धर्मो यथोष्णता ॥",
+   "line": "A mind without restlessness is nowhere to be found. Restlessness is its nature, as heat is fire's.",
+   "translation": "A mind without restlessness is nowhere to be seen. Restlessness is the nature of the mind, as heat is the nature of fire.",
+   "words": [],
+   "why": "Start with calm or contentment, and the rest follows.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "up.p.maha.ribhu_calm",
+    "title": "Ribhu on calm and contentment",
+    "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+    "story_hook": "",
+    "lesson": "Start with calm or contentment, and the rest follows."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "It sounds like you're carrying something very heavy right now.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "It sounds like you're carrying something very heavy right now.",
+   "first_line_source": "safety"
+  },
+  "alternates": [
+   {
+    "id": "rcm.7.117.chaupai.7",
+    "ref": "Ramcharitmanas · Uttar Kand",
+    "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+    "family": "rcm",
+    "speaker": "Kakbhushundi",
+    "listener": "Garuda",
+    "setting": "Kakbhushundi answers Garuda's questions: what is the greatest sorrow, and the greatest joy?",
+    "sanskrit": "नहिं दरिद्र सम दुख जग माहीं। संत मिलन सम सुख जग नाहीं॥ पर उपकार बचन मन काया। संत सहज सुभाउ खगराया ॥",
+    "line": "No sorrow like want, no joy like meeting good people.",
+    "translation": "There is no sorrow in the world like poverty, and no joy like meeting good people. To do good to others in word, thought and deed is the natural way of the good.",
+    "words": [],
+    "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "rcm.p.garuda_questions",
+     "title": "Garuda's seven questions",
+     "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+     "story_hook": "",
+     "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.2.60",
+    "ref": "Bhagavad Gita 2.60",
+    "ref_iast": "Bhagavad Gītā 2.60",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+    "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः । इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ॥",
+    "line": "Even a wise, striving person can be dragged off by restless senses. Don't be surprised; be ready.",
+    "translation": "The turbulent senses forcibly carry away the mind even of a wise person who is striving, Arjuna.",
+    "words": [
+     {
+      "sa": "यततः",
+      "en": "for one striving"
+     },
+     {
+      "sa": "हि",
+      "en": "indeed"
+     },
+     {
+      "sa": "अपि",
+      "en": "even"
+     },
+     {
+      "sa": "कौन्तेय",
+      "en": "O son of Kunti"
+     },
+     {
+      "sa": "पुरुषस्य",
+      "en": "of a person"
+     },
+     {
+      "sa": "विपश्चितः",
+      "en": "of the wise"
+     },
+     {
+      "sa": "इन्द्रियाणि",
+      "en": "the senses"
+     },
+     {
+      "sa": "प्रमाथीनि",
+      "en": "restless, turbulent"
+     },
+     {
+      "sa": "हरन्ति",
+      "en": "carry away"
+     },
+     {
+      "sa": "प्रसभं",
+      "en": "forcibly"
+     },
+     {
+      "sa": "मनः",
+      "en": "the mind"
+     }
+    ],
+    "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p02.5",
+     "title": "The person of steady wisdom",
+     "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+     "story_hook": "",
+     "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": {
+   "kind": "self_harm",
+   "message": "If you're thinking about ending your life or harming yourself, please reach out now. You deserve support from a person.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "988 Suicide & Crisis Lifeline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "UK & Ireland",
+     "name": "Samaritans",
+     "contact": "Call 116 123"
+    },
+    {
+     "region": "Canada",
+     "name": "9-8-8 Suicide Crisis Helpline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "Australia",
+     "name": "Lifeline",
+     "contact": "Call 13 11 14"
+    },
+    {
+     "region": "New Zealand",
+     "name": "1737",
+     "contact": "Call or text 1737"
+    },
+    {
+     "region": "India",
+     "name": "Tele-MANAS",
+     "contact": "Call 14416"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 367,
+   "v3_candidates": 140,
+   "v3_select": 509,
+   "v3_total": 509,
+   "total": 510
+  },
+  "_ms": 512
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "self_harm",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "It sounds like you're carrying something very heavy right now.",
+   "insight": "What you're carrying is heavy, and it is not a measure of your worth. You don't have to carry it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.15,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "When the darkness feels endless and the heart is too tired to go on, and no one seems to see the pain.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "This darkness is a passing night, not the whole of you; the self within you is whole, held and never alone.",
+    "act": "Hold on through the dark night and reach out to someone who cares; the self within you is not broken and is never alone.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "safety",
+    "diagnose": "client",
+    "steady": "safety",
+    "act": "safety",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Between things. Feels searching; closest to \"I can't handle not knowing what comes next\" and burned out and running on empty\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "v3:personal:skipped_self_harm",
+    "v3:safety_card_leads"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "empty",
+    "trail": [
+     "empty"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "nirveda",
+     "vishada"
+    ],
+    "risk": "self_harm",
+    "situations": [
+     "burnout",
+     "procrastination",
+     "uncertainty"
+    ],
+    "age": "25_34",
+    "stages": [
+     "between"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "up_maha.248",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "up_maha.248",
+     "ref": "Maha Upanishad 4.99",
+     "ref_iast": "Mahā Upaniṣad 4.99",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on the nature of the mind.",
+     "sanskrit": "न हि चञ्चलताहीनं मनः क्वचन दृश्यते । चञ्चलत्वं मनोधर्मो वह्नेर्धर्मो यथोष्णता ॥",
+     "line": "A mind without restlessness is nowhere to be found. Restlessness is its nature, as heat is fire's.",
+     "translation": "A mind without restlessness is nowhere to be seen. Restlessness is the nature of the mind, as heat is the nature of fire.",
+     "words": [],
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 1.57,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "up_maha.248",
+     "path": "up_maha.248 -heals-> glani [self-harm risk: consoling only]",
+     "why": [
+      "a restless mind is doing what minds do; it is no defect of character"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.117.chaupai.7",
+      "bg.2.60"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.5.12.10",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+     "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+     "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+     "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+     "words": [],
+     "why": "When you have looked everywhere, look again; giving up costs too much.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.search_despair",
+      "title": "Hanuman's search and near despair",
+      "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+      "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+      "lesson": "When you have looked everywhere, look again; giving up costs too much."
+     },
+     "score": 5.907,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.5.12.10",
+     "path": "vr.5.12.10 -heals-> nirveda [self-harm risk: consoling only]",
+     "why": [
+      "Not losing heart is the root of fortune.",
+      "weariness is refused a verdict"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.3.66.9",
+      "tulsi_vp.167"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.4.hold_on_brave_heart",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 4",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Poem 'Hold On Yet a While, Brave Heart', written to the Maharaja of Khetri.",
+     "sanskrit": null,
+     "line": "Still hold on yet a while, brave heart, The victory is sure to come.",
+     "translation": "If the sun by the cloud is hidden a bit, If the welkin shows but gloom, Still hold on yet a while, brave heart, The victory is sure to come. … Not a work will be lost, no struggle vain, Though hopes be blighted, powers gone; … Then hold on yet a while, brave soul, No good is e'er undone.",
+     "words": [],
+     "why": "No struggle is wasted; hold on a little longer.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.poem.hold_on",
+      "title": "'Hold on yet a while, brave heart' (poem to the Maharaja of Khetri)",
+      "summary": "A short poem of encouragement to a friend. Clouds hide the sun for a while, summer always follows winter, and no honest struggle is wasted even when hopes fail.",
+      "story_hook": "",
+      "lesson": "No struggle is wasted; hold on a little longer."
+     },
+     "score": 11.617,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.4.hold_on_brave_heart",
+     "path": "viv.4.hold_on_brave_heart -heals-> nirveda",
+     "why": [
+      "no good is ever undone",
+      "no struggle is vain"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.4.no_winter",
+      "bg.2.40",
+      "bg.9.22"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.50",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.50",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "कुर्वतो नार्थसिद्धिर्मे भवतीति ह भारत / निर्वेदो नात्र गन्तव्यो द्वावन्तौ यस्य कर्मणः",
+     "line": "Don't despair because effort hasn't paid off yet. Every attempt can go either way.",
+     "translation": "'I keep working and still don't succeed' is no reason to despair. Every effort can end two ways, in success or not; only by not acting is the outcome certain.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 10.206,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.3.32.50",
+     "path": "mbh.3.32.50 -heals-> nirveda",
+     "why": [
+      "Weariness at unrewarded work is met by naming both possible ends",
+      "Failure is one of two normal outcomes, not a judgement"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.135.25",
+      "viv.2.angels_unawares",
+      "rcm.3.39.chaupai.2"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_narayana.16",
+     "ref": "Narayana Upanishad 16-17",
+     "ref_iast": "Nārāyaṇa Upaniṣad 16-17",
+     "family": "up",
+     "speaker": "Devotee",
+     "listener": "Vishnu",
+     "setting": "The well-known meditation verse on Vishnu, printed at the end of the Narayana Upanishad.",
+     "sanskrit": "शान्ताकारं भुजगशयनं पद्मनाभं सुरेशं विश्वाधारं गगनसदृशं मेघवर्णं शुभाङ्गम् । लक्ष्मीकान्तं कमलनयनं योगिभिर्ध्यानगम्यं वन्दे विष्णुं भवभयहरं सर्वलोकैकनाथम् ॥",
+     "line": "I bow to Vishnu, peaceful in form, who takes away the fear of life and holds the universe.",
+     "translation": "Peaceful in form, resting on the serpent, lotus-naveled, lord of the gods, support of the universe, vast as the sky, cloud-coloured, beautiful; beloved of Lakshmi, lotus-eyed, reached by yogis in meditation: I bow to Vishnu, who takes away the fear of worldly life, the one lord of all worlds.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.856,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_narayana.16",
+     "path": "up_narayana.16 -cultivates-> shanti",
+     "why": [
+      "the first word is 'peaceful in form', and the verse is a picture to rest the mind on",
+      "he is addressed as the remover of the fear of this life"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_shwetashwetar.3.5",
+      "up_brihadaranyak.92",
+      "viv.4.hearts_purified"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "viv.2.never_mind_failures",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 2",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Audience in London",
+     "setting": "'God in Everything', London, 27 October 1896.",
+     "sanskrit": null,
+     "line": "hold the ideal a thousand times, and if you fail a thousand times, make the attempt once more.",
+     "translation": "Never mind failures; they are quite natural, they are the beauty of life, these failures. What would life be without them? It would not be worth having if it were not for struggles. Where would be the poetry of life? Never mind the struggles, the mistakes. I never heard a cow tell a lie, but it is only a cow — never a man. So never mind these failures, these little backslidings; hold the ideal a thousand times, and if you fail a thousand times, make the attempt once more.",
+     "words": [],
+     "why": "Failure is part of the path; try once more.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.jnana.god_in_everything",
+      "title": "Never mind failures (London, 1896)",
+      "summary": "Fill the mind with the highest thoughts. Failures are natural, even the beauty of life; hold the ideal a thousand times, and if you fail a thousand times, try once more.",
+      "story_hook": "",
+      "lesson": "Failure is part of the path; try once more."
+     },
+     "score": 5.601,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "viv.2.never_mind_failures",
+     "path": "viv.2.never_mind_failures -cultivates-> utsaha",
+     "why": [
+      "make the attempt once more",
+      "hold the ideal a thousand times"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.4.chaupai.1",
+      "rcm.5.20.doha.1"
+     ],
+     "thin": false
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.k.markandeya_child",
+     "title": "Markandeya and the child on the banyan leaf",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Markandeya",
+      "Narayana (the divine child)",
+      "the Pandavas",
+      "Krishna"
+     ],
+     "story_hook": "The whole world was one dark ocean, and on it floated a single banyan tree with a child asleep on a branch.",
+     "summary": "At the end of an age, the sage Markandeya drifts alone over a flooded world and sees a radiant child on a banyan branch. The child draws him inside his body, where he sees all the worlds, then asks if he has been resting, tired. Narayana explains he showed himself because he saw Markandeya's distress. Markandeya tells the Pandavas that this child is Krishna, sitting with them.",
+     "lesson": "When everything you knew is underwater, you have not been forgotten; you are being held.",
+     "matched": [],
+     "anchor": null,
+     "score": 8.462,
+     "why": null,
+     "hook_title": "An old sage drifted alone over a drowned world, and found a child asleep on a leaf",
+     "teaser": "An old sage drifted alone over a drowned world, and found a child asleep on a leaf",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.markandeya_finds_the_child",
+     "path": "st.mbh.markandeya_finds_the_child -enacts_in-> bhaya, nirveda, shrama, viraha ; st.mbh.markandeya_finds_the_child -enacts_turn-> shanti ; st.mbh.markandeya_finds_the_child -fits_situation-> burnout",
+     "why": [
+      "When there is no shelter left anywhere, the one who holds the world knows we are tired and offers rest."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.ram_exhausted_before_the_last_fight",
+      "st.rcm.ram_waits_out_the_rains",
+      "st.vr.ram_waits_out_the_monsoon"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.markandeya_finds_the_child"
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": {
+   "kind": "self_harm",
+   "message": "If you're thinking about ending your life or harming yourself, please reach out now. You deserve support from a person.",
+   "lines": [
+    {
+     "region": "US",
+     "name": "988 Suicide & Crisis Lifeline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "UK & Ireland",
+     "name": "Samaritans",
+     "contact": "Call 116 123"
+    },
+    {
+     "region": "Canada",
+     "name": "9-8-8 Suicide Crisis Helpline",
+     "contact": "Call or text 988"
+    },
+    {
+     "region": "Australia",
+     "name": "Lifeline",
+     "contact": "Call 13 11 14"
+    },
+    {
+     "region": "New Zealand",
+     "name": "1737",
+     "contact": "Call or text 1737"
+    },
+    {
+     "region": "India",
+     "name": "Tele-MANAS",
+     "contact": "Call 14416"
+    }
+   ]
+  },
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 104,
+   "v3_w1_write": 0,
+   "v3_w1_total": 105,
+   "select": 105,
+   "total": 105
+  },
+  "_ms": 107
+ }
+}

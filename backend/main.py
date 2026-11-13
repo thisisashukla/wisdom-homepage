@@ -151,6 +151,18 @@ app.add_middleware(
     allow_headers     = ["*"],
 )
 
+@app.middleware("http")
+async def _visitor_country(request, call_next):
+    """The visitor's country (Vercel's header) for plan_runs and raw_notes rows (ai/run_log.py)."""
+    from ai.run_log import request_country
+    c = (request.headers.get("x-vercel-ip-country") or "").strip()[:8] or None
+    token = request_country.set(c)
+    try:
+        return await call_next(request)
+    finally:
+        request_country.reset(token)
+
+
 app.include_router(intent_router.router,        prefix="/api/v1")
 app.include_router(search_router.router,        prefix="/api/v1")
 app.include_router(rag_router.router,           prefix="/api/v1")

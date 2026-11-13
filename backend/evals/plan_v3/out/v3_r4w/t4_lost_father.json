@@ -1,0 +1,2831 @@
+{
+ "case": "t4_lost_father",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost a parent",
+   "mirror": "I lost a parent",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I lost a parent\" and \"I'm afraid of death\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.15,see=0.5",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:wronged_unsupported",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick_refused:r4: depicts or diagnoses a state the person is not in (nirveda,viraha)",
+    "day1:graph_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "grief_parent",
+     "fear_death",
+     "grief_general"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bg.2.8",
+    "first_line": "You keep asking if he is somewhere, because you see nothing that could drive away this grief."
+   }
+  },
+  "hook": {
+   "id": "bg.2.8",
+   "ref": "Bhagavad Gita 2.8",
+   "ref_iast": "Bhagavad Gītā 2.8",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+   "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+   "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+   "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+   "words": [
+    {
+     "sa": "न हि",
+     "en": "for not"
+    },
+    {
+     "sa": "प्रपश्यामि",
+     "en": "I see"
+    },
+    {
+     "sa": "मम",
+     "en": "my"
+    },
+    {
+     "sa": "अपनुद्यात्",
+     "en": "could remove"
+    },
+    {
+     "sa": "यत्",
+     "en": "that which"
+    },
+    {
+     "sa": "शोकम्",
+     "en": "grief"
+    },
+    {
+     "sa": "उच्छोषणम्",
+     "en": "drying up"
+    },
+    {
+     "sa": "इन्द्रियाणाम्",
+     "en": "of the senses"
+    },
+    {
+     "sa": "अवाप्य",
+     "en": "having obtained"
+    },
+    {
+     "sa": "भूमौ",
+     "en": "on earth"
+    },
+    {
+     "sa": "असपत्नम्",
+     "en": "unrivaled, without enemies"
+    },
+    {
+     "sa": "ऋद्धम्",
+     "en": "prosperous"
+    },
+    {
+     "sa": "राज्यम्",
+     "en": "kingdom"
+    },
+    {
+     "sa": "सुराणाम्",
+     "en": "of the gods"
+    },
+    {
+     "sa": "अपि",
+     "en": "even"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "आधिपत्यम्",
+     "en": "lordship"
+    }
+   ],
+   "why": "Admitting you don't know and asking for help is where clarity begins.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p02.1",
+    "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+    "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+    "story_hook": "",
+    "lesson": "Admitting you don't know and asking for help is where clarity begins."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You keep asking if he is somewhere, because you see nothing that could drive away this grief.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You keep asking if he is somewhere, because you see nothing that could drive away this grief.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "bg.1.47",
+    "ref": "Bhagavad Gita 1.47",
+    "ref_iast": "Bhagavad Gītā 1.47",
+    "family": "bg",
+    "speaker": "Sanjaya",
+    "listener": "Dhritarashtra",
+    "setting": "Sanjaya reports to the blind king the moment Arjuna gives up before the battle.",
+    "sanskrit": "सञ्जय उवाचएवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत् । विसृज्य सशरं चापं शोकसंविग्नमानसः ॥",
+    "line": "Arjuna put down his bow and sat in the chariot, too overwhelmed to go on.",
+    "translation": "Sanjaya said: Having spoken this on the battlefield, Arjuna sank down on the seat of the chariot, letting fall his bow and arrows, his mind overwhelmed by grief.",
+    "words": [
+     {
+      "sa": "सञ्जय उवाच",
+      "en": "Sanjaya said"
+     },
+     {
+      "sa": "एवम्",
+      "en": "thus"
+     },
+     {
+      "sa": "उक्त्वा",
+      "en": "having spoken"
+     },
+     {
+      "sa": "अर्जुनः",
+      "en": "Arjuna"
+     },
+     {
+      "sa": "संख्ये",
+      "en": "in battle"
+     },
+     {
+      "sa": "रथोपस्थे",
+      "en": "on the chariot seat"
+     },
+     {
+      "sa": "उपाविशत्",
+      "en": "sat down"
+     },
+     {
+      "sa": "विसृज्य",
+      "en": "casting aside"
+     },
+     {
+      "sa": "सशरम्",
+      "en": "with arrows"
+     },
+     {
+      "sa": "चापम्",
+      "en": "bow"
+     },
+     {
+      "sa": "शोकसंविग्नमानसः",
+      "en": "mind agitated by grief"
+     }
+    ],
+    "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p01.4",
+     "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+     "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+     "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+     "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "tulsi_gv.2.52",
+    "ref": "Gitavali",
+    "ref_iast": "Gītāvalī, Ayodhyā Kāṇḍ 52",
+    "family": "tulsi",
+    "speaker": "Tulsidas (narrating)",
+    "listener": "the reader",
+    "setting": "After Ram leaves for the forest, his mother Kausalya keeps his childhood things.",
+    "sanskrit": "जननी निरखति बान-धनुहियाँ। बार-बार उर नैननि लावति प्रभुजूकी ललित पनहियाँ॥ कबहुँ प्रथम ज्यों जाइ जगावति कहि प्रिय बचन सँवारे। उठहु तात! बलि मातु बदनपर, अनुज-सखा सब द्वारे॥",
+    "line": "She held his little shoes to her heart, and some mornings still went to wake him.",
+    "translation": "The mother gazes at his little bow and arrows. Again and again she presses the Lord's small, lovely shoes to her heart and eyes. Sometimes, as before, she goes to wake him with tender words: \"Get up, my child, your mother adores your face; your brothers and friends are all at the door.\"",
+    "words": [],
+    "why": "Grief is love.",
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [
+     {
+      "id": "grief_general",
+      "label": "I'm grieving someone I loved"
+     },
+     {
+      "id": "grief_parent",
+      "label": "I lost a parent"
+     }
+    ],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 256,
+   "v3_candidates": 80,
+   "v3_fast_read": 1283,
+   "v3_select": 1625,
+   "v3_first_line": 510,
+   "v3_total": 2135,
+   "total": 2136
+  },
+  "_ms": 2139
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost a parent",
+   "mirror": "I lost a parent",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I lost a parent\" and afraid of death\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:7/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "grief_parent",
+     "fear_death",
+     "grief_general"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.2.8",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You keep asking if he is somewhere, because you see nothing that could drive away this grief."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "words": [
+      {
+       "sa": "न हि",
+       "en": "for not"
+      },
+      {
+       "sa": "प्रपश्यामि",
+       "en": "I see"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "अपनुद्यात्",
+       "en": "could remove"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "शोकम्",
+       "en": "grief"
+      },
+      {
+       "sa": "उच्छोषणम्",
+       "en": "drying up"
+      },
+      {
+       "sa": "इन्द्रियाणाम्",
+       "en": "of the senses"
+      },
+      {
+       "sa": "अवाप्य",
+       "en": "having obtained"
+      },
+      {
+       "sa": "भूमौ",
+       "en": "on earth"
+      },
+      {
+       "sa": "असपत्नम्",
+       "en": "unrivaled, without enemies"
+      },
+      {
+       "sa": "ऋद्धम्",
+       "en": "prosperous"
+      },
+      {
+       "sa": "राज्यम्",
+       "en": "kingdom"
+      },
+      {
+       "sa": "सुराणाम्",
+       "en": "of the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "आधिपत्यम्",
+       "en": "lordship"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 8.376,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": "Arjuna sees no worldly or heavenly gain that could remove the grief drying up his senses, not even an unrivalled kingdom or rule over the gods.",
+     "for_you": "You are asking what happens when we die while this grief is drying you up inside. No answer right now can remove that weight, not even every comfort you could ever gain.",
+     "try_today": "Notice one thing today that does not dry you up. Let it sit beside the rest.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.2.8",
+     "path": "Day 1 kept from the first screen (bg.1.47 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.1.29",
+      "tulsi_gv.2.52",
+      "rcm.1.318.chaupai.3"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.12",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.12",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to stay steady when people and wealth come and go.",
+     "sanskrit": "मानसानां पुनर्योनिर्दुःखानां चित्तविभ्रमः / अनिष्टोपनिपातो वा तृतीयं नोपपद्यते",
+     "line": "Mental pain comes from two places: something you didn't want happened, or your mind is spinning. No third.",
+     "translation": "Sorrow of the mind has only two sources: a confused, wandering mind, or something unwanted happening to you. There is no third.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 8.313,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking about the end of your father's life. That is one source of your sorrow. The other is the mind that cannot stop turning. Both are heavy.",
+     "try_today": "Notice when the mind spins and name it as the second cause of sorrow.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "mbh.12.27.12",
+     "path": "mbh.12.27.12 -states_chain-> mbh.ashma_two_causes [moha -causes-> shoka; anishta_yoga -causes-> shoka]",
+     "why": [
+      "Two sources of the mind's pain (Mahabharata, Shanti Parva (Ashma Gita))",
+      "Names chitta-vibhrama as a cause"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.7",
+      "vr.2.62.14"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 8.654,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking where he is now. The text says trouble touches every living being like fire and then it passes. Let this moment be one of those fires.",
+     "try_today": "Notice one small thing that passes by today.",
+     "scene_line": "You search the empty hut for Sita while Lakshman reminds you that trouble comes to everyone.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "vr.3.66.5",
+     "path": "vr.3.66.5 -heals-> shoka via dhriti",
+     "why": [
+      "Feelings come and go, bear them; your wisdom is asleep, not gone (Lakshmana to Rama).",
+      "sorrow is shown as common to all and not a mark against him"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.8.exchange_grief",
+      "vr.5.34.5",
+      "mbh.12.173.21"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.17",
+     "ref": "Valmiki Ramayana, Aranya 66.17",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.17",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "Sita has been taken; Lakshman, the younger brother, gently tries to bring Ram back to himself.",
+     "sanskrit": "बुद्धिश्च ते महाप्राज्ञ देवैरपि दुरन्वया। शोकेनाभिप्रसुप्तं ते ज्ञानं सम्बोधयाम्यहम्॥",
+     "line": "Your wisdom isn't gone. Grief has only put it to sleep for a while.",
+     "translation": "Your understanding, wise one, is beyond even the gods' reckoning. Grief has only put your wisdom to sleep, and I am here to wake it.",
+     "words": [
+      {
+       "sa": "बुद्धिः",
+       "en": "intellect"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "महाप्राज्ञ",
+       "en": "O very wise one"
+      },
+      {
+       "sa": "देवैः",
+       "en": "by the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "दुरन्वया",
+       "en": "hard to follow"
+      },
+      {
+       "sa": "शोकेन",
+       "en": "by sorrow"
+      },
+      {
+       "sa": "अभिप्रसुप्तम्",
+       "en": "fallen asleep"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "wisdom"
+      },
+      {
+       "sa": "सम्बोधयामि",
+       "en": "I am rousing"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 7.651,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your father is not gone from you. His wisdom is only sleeping, and your own understanding is beyond even the gods. You will find the way forward.",
+     "try_today": "Notice when your mind feels clear, and let that be enough.",
+     "scene_line": "You stand in the forest of your own sorrow, while Lakshman speaks to the sleeping wisdom within Ram.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "vr.3.66.17",
+     "path": "vr.3.66.17 -heals-> shoka via dhriti",
+     "why": [
+      "Feelings come and go, bear them; your wisdom is asleep, not gone (Lakshmana to Rama).",
+      "grief is treated as a sleep over wisdom, not its loss"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.stony_heart",
+      "vr.1.2.36",
+      "vr.3.74.22"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not gone. It is)",
+      "practice:untraced_sentence(forwar,guide,quiet,taught)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.40.23",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 40.23",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "प्रज्ञावृद्धं धर्मवृद्धं स्वबन्धुं / विद्यावृद्धं वयसा चापि वृद्धम् / कार्याकार्ये पूजयित्वा प्रसाद्य / यः संपृच्छेन्न स मुह्येत्कदाचित्",
+     "line": "When unsure what to do, respectfully ask someone older and wiser. You won't go astray.",
+     "translation": "One who honours and wins over a kinsman mature in wisdom, in goodness, in learning and in years, and asks him what should and should not be done, is never confused.",
+     "words": [],
+     "why": "Don't trade what's right for desire, fear or money. Only your deeds stay with you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.40",
+      "title": "Vidura Niti: never abandon what is right",
+      "summary": "Vidura closes with the heart of his counsel: never give up what is right for desire, fear or greed; only our deeds go with us; ask the wise when unsure.",
+      "story_hook": "",
+      "lesson": "Don't trade what's right for desire, fear or money. Only your deeds stay with you."
+     },
+     "score": 4.215,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You do not have to see the way forward on your own. There is someone older and wiser who can hold the light while you walk. Let their steadiness be your compass today.",
+     "try_today": "Ask one person you trust what they would do next.",
+     "scene_line": "You stand in the dark, asking the wise what to do, just as Dhritarashtra asked Vidura.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.40.23",
+     "path": "mbh.5.40.23 -cultivates-> shraddha",
+     "why": [
+      "Trust in the experienced"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_isha.18",
+      "mbh.12.46.127",
+      "bg.18.57"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.16.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 16.8",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the fourth gatekeeper: good company (satsanga).",
+     "sanskrit": "अपि कष्टतरां प्राप्तैर्दशां विवशतां गतैः । मनागपि न संत्याज्या मानवैः साधुसंगतिः ॥",
+     "line": "Even at your lowest and most helpless, don't let go of good company.",
+     "translation": "Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "words": [],
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 4.805,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are in a hard place, and it is right to ask what comes after. Good company is a steady hand when you cannot see the path ahead. Let the people who sit with your grief hold you for now.",
+     "try_today": "Notice one person who steadies you today and let them stay close.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "yv.2.16.8",
+     "path": "yv.2.16.8 -cultivates-> shraddha",
+     "why": [
+      "holding to those who steady you"
+     ],
+     "writer_note": null,
+     "alts": [
+      "shambhu_gita.7.53",
+      "mbh.12.55.16",
+      "viv.2.never_mind_failures"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:tells_the_lonely_to_let_go(let go of the)",
+      "scene_line:untraced_scripture_claim(edge,grief,near,remind)",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.sita_hanuman",
+     "title": "Hanuman reaches Sita",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Sita",
+      "Hanuman",
+      "Ravana",
+      "Trijata"
+     ],
+     "story_hook": "A ring fell out of the tree onto Sita's lap, and it had Ram's name on it.",
+     "summary": "Sita, captive and threatened by Ravana, has nearly lost hope; only the guard Trijata has been kind. Hanuman drops Ram's ring from a tree, then tells her Ram's whole story. Sita says he has been her ship in a sea of separation; he gives her Ram's message that speaking of pain helps, but there is no one to tell, and asks her to wait a few days more.",
+     "lesson": "When someone is near despair, a message that they are remembered can carry them.",
+     "matched": [],
+     "anchor": null,
+     "score": 8.85,
+     "why": null,
+     "hook_title": "A ring fell into Sita's lap, and it had Ram's name on it",
+     "teaser": "A ring fell into Sita's lap, and it had Ram's name on it",
+     "for_you": "You keep asking where he is and if you will see him again. Saying these questions out loud might ease them a little, even if there is no one to answer. Love itself carries the message.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.rcm.ram_message_no_one_to_tell",
+     "path": "st.rcm.ram_message_no_one_to_tell -enacts_in-> shoka, viraha ; st.rcm.ram_message_no_one_to_tell -enacts_turn-> dhriti, shraddha",
+     "why": [
+      "Speaking pain eases it; where there is no one to tell, love itself carries the message."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.kunti_watches_them_leave",
+      "st.vr.sumitra_sits_with_kausalya",
+      "st.up.man_from_gandhara"
+     ],
+     "thin": false,
+     "story_id": "st.rcm.ram_message_no_one_to_tell",
+     "personal_source": {
+      "for_you": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "practice:untraced_sentence(air,aloud,empty,grief)",
+      "scene_line:not_second_person",
+      "practice:untraced_sentence(forwar,loud,memory,sound)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What's it all for",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 62,
+   "v3_w1_write": 6842,
+   "v3_w1_total": 6905,
+   "select": 6906,
+   "total": 6908
+  },
+  "_ms": 6915
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost a parent",
+   "mirror": "I lost a parent",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I lost a parent\" and afraid of death\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "grief_parent",
+     "fear_death",
+     "grief_general"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.2.8",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You keep asking if he is somewhere, because you see nothing that could drive away this grief."
+   }
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.6",
+     "ref": "Bhagavad Gita 2.6",
+     "ref_iast": "Bhagavad Gītā 2.6",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+     "line": "I can't tell which is better, or even what winning would look like.",
+     "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "विद्मः",
+       "en": "we know"
+      },
+      {
+       "sa": "कतरत्",
+       "en": "which of the two"
+      },
+      {
+       "sa": "नः",
+       "en": "for us"
+      },
+      {
+       "sa": "गरीयः",
+       "en": "better"
+      },
+      {
+       "sa": "यत् वा",
+       "en": "or which"
+      },
+      {
+       "sa": "जयेम",
+       "en": "we would conquer"
+      },
+      {
+       "sa": "यदि वा",
+       "en": "or whether"
+      },
+      {
+       "sa": "नः",
+       "en": "us"
+      },
+      {
+       "sa": "जयेयुः",
+       "en": "they would conquer"
+      },
+      {
+       "sa": "यान्",
+       "en": "those whom"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "हत्वा",
+       "en": "having killed"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "जिजीविषामः",
+       "en": "we wish to live"
+      },
+      {
+       "sa": "ते",
+       "en": "they"
+      },
+      {
+       "sa": "अवस्थिताः",
+       "en": "standing"
+      },
+      {
+       "sa": "प्रमुखे",
+       "en": "in front"
+      },
+      {
+       "sa": "धार्तराष्ट्राः",
+       "en": "sons of Dhritarashtra"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 11.959,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You stand where the people you would not want to live without are facing you, and you cannot tell which is better, to fight or not. The one you lost is on the other side of your grief, and you do not know what winning looks like anymore. You do not know which is better.",
+     "try_today": "Notice who you would not want to live without today.",
+     "scene_line": "You stand where the people you would not want to live without are facing you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bg.2.6",
+     "path": "bg.2.6 -asks-> dlg.bg.tell_me_plainly (Arjuna to Krishna) -asked_from-> moha",
+     "why": [
+      "I can't tell what is right any more. Just tell me clearly what I should do.",
+      "the people he would not want to live without are on the other side"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.1.29",
+      "tulsi_gv.2.52",
+      "rcm.1.196.chaupai.3"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 6.454,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking if your father is somewhere. Grief is asking that question for you. It is wearing away your steadiness right now.",
+     "try_today": "Notice when grief is speaking through your thoughts and separate its voice from your own.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.2.62.14",
+     "path": "vr.2.62.14 -states_chain-> vr.grief_destroys [shoka -destroys-> dhriti; shoka -destroys-> viveka]",
+     "why": [
+      "No enemy like grief (Valmiki Ramayana, Ayodhya Kanda 62)",
+      "spoken by a mother who has just seen what her grief made her say"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.7",
+      "rcm.7.72.chaupai.2",
+      "rcm.5.38.chaupai.3"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:long(60)",
+      "for_you:preachy(you need to)",
+      "for_you:untraced_sentence(exact,need,questi,tear)",
+      "for_you:untraced_sentence(cannot,fact,forwar,gone,onto)",
+      "scene_line:not_second_person",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.1.3.chaupai.4",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 3",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, opening the Manas, on why the company we keep matters.",
+     "sanskrit": "बिनु सतसंग बिबेक न होई। राम कृपा बिनु सुलभ न सोई॥ सतसंगत मुद मंगल मूला। सोई फल सिधि सब साधन फूला ॥",
+     "line": "Without good company, there is no clear judgement.",
+     "translation": "Without good company there is no clear judgement, and by Ram's grace alone such company comes easily. Good company is the root of joy and well-being; finding it is the fruit, and every other practice is only the flower.",
+     "words": [
+      {
+       "sa": "बिनु",
+       "en": "without"
+      },
+      {
+       "sa": "सतसंग",
+       "en": "holy company"
+      },
+      {
+       "sa": "बिबेक",
+       "en": "discernment"
+      },
+      {
+       "sa": "न होई",
+       "en": "does not happen"
+      },
+      {
+       "sa": "राम कृपा",
+       "en": "Ram's grace"
+      },
+      {
+       "sa": "बिनु",
+       "en": "without"
+      },
+      {
+       "sa": "सुलभ",
+       "en": "easily found"
+      },
+      {
+       "sa": "न सोई",
+       "en": "not that"
+      },
+      {
+       "sa": "सतसंगत",
+       "en": "in holy company"
+      },
+      {
+       "sa": "मुद",
+       "en": "joy"
+      },
+      {
+       "sa": "मंगल",
+       "en": "well-being"
+      },
+      {
+       "sa": "मूला",
+       "en": "root"
+      },
+      {
+       "sa": "सोई",
+       "en": "that"
+      },
+      {
+       "sa": "फल",
+       "en": "fruit"
+      },
+      {
+       "sa": "सिधि",
+       "en": "accomplishment"
+      },
+      {
+       "sa": "सब",
+       "en": "all"
+      },
+      {
+       "sa": "साधन",
+       "en": "practices"
+      },
+      {
+       "sa": "फूला",
+       "en": "flowers"
+      }
+     ],
+     "why": "The people around you shape your judgement; choose them, and take the good from everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.sant_asant",
+      "title": "Tulsidas on good company and difficult people",
+      "summary": "Before the story begins, Tulsidas bows to good people and, with gentle irony, to troublesome ones too. He describes how each acts, why company shapes us, and how the wise take the good and leave the rest, like the swan taking milk from water.",
+      "story_hook": "",
+      "lesson": "The people around you shape your judgement; choose them, and take the good from everyone."
+     },
+     "score": 9.989,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking what happens when we die, and you do not know which way to go. In this fog, your father is not here to guide you. Let the company of those who know the path hold you for a little while.",
+     "try_today": "Notice one person today whose presence leaves you feeling a little more clear.",
+     "scene_line": "In the quiet of your home, let the memory of his goodness be your company.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "rcm.1.3.chaupai.4",
+     "path": "rcm.1.3.chaupai.4 -heals-> moha via c:satsanga",
+     "why": [
+      "No discernment without good company; doubt and delusion clear with time among the good.",
+      "confusion is partly a matter of whose company one keeps"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.7.14",
+      "up_chhandogya.515",
+      "bg.10.11"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(fog,know,right,walk)"
+     ]
+    }
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.30",
+     "ref": "Bhagavad Gita 18.30",
+     "ref_iast": "Bhagavad Gītā 18.30",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna sorts knowledge, action, doers, judgement, resolve and happiness by the three qualities.",
+     "sanskrit": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये । बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥",
+     "line": "Clear judgement knows when to act and when to wait, what to fear, and what frees you.",
+     "translation": "The understanding that knows action and withdrawal, what should and should not be done, what is to be feared and what not, bondage and freedom, that understanding is sattvic, Partha.",
+     "words": [
+      {
+       "sa": "प्रवृत्तिं",
+       "en": "activity"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "निवृत्तिं",
+       "en": "inactivity"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "कार्याकार्ये",
+       "en": "in what should be done and not done"
+      },
+      {
+       "sa": "भयाभये",
+       "en": "fear and fearlessness"
+      },
+      {
+       "sa": "बन्धं",
+       "en": "bondage"
+      },
+      {
+       "sa": "मोक्षं",
+       "en": "freedom"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "या",
+       "en": "which"
+      },
+      {
+       "sa": "वेत्ति",
+       "en": "knows"
+      },
+      {
+       "sa": "बुद्धिः",
+       "en": "intellect"
+      },
+      {
+       "sa": "सा",
+       "en": "that"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O son of Pritha"
+      },
+      {
+       "sa": "सात्त्विकी",
+       "en": "is of purity"
+      }
+     ],
+     "why": "Choose the joy that's hard at first and sweet later.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.3",
+      "title": "Knowledge, action, doer, intellect, resolve and happiness by the three gunas",
+      "summary": "Krishna describes clear, restless and dull versions of action, doer, judgement, resolve and happiness: the best joy is poison first and nectar later; the restless kind is nectar first and poison later.",
+      "story_hook": "",
+      "lesson": "Choose the joy that's hard at first and sweet later."
+     },
+     "score": 9.777,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking what happens after death, and the answer is that clear judgement knows what to fear and what frees you. You are not wrong to ask this. You can carry this truth with you today.",
+     "try_today": "Notice one moment today when you know exactly what to do and what to leave alone.",
+     "scene_line": "You stand at the edge of grief, and Krishna asks which understanding knows what is to be feared and what is not.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.30",
+     "path": "bg.18.30 -heals-> moha via viveka",
+     "why": [
+      "Telling the good from the pleasant is the text's own opposite of confusion.",
+      "clear understanding knows what is truly to be feared and what is not"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.35.51",
+      "viv.2.stony_heart",
+      "mbh.5.135.26"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.18",
+     "ref": "Isha Upanishad 18",
+     "ref_iast": "Īśa Upaniṣad 18",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Agni",
+     "setting": "Closing prayer of the Isha.",
+     "sanskrit": "अग्ने नय सुपथा राये अस्मान् विश्वानि देव वयुनानि विद्वान् । युयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नमौक्तिं विधेम ॥",
+     "line": "Lead us by the good path. Keep crooked dealing far from us.",
+     "translation": "O Agni, lead us by the good path to true wealth, O god who knows all our ways. Keep crooked wrongdoing away from us. We offer you our fullest words of reverence.",
+     "words": [
+      {
+       "sa": "agne",
+       "en": "O fire/light"
+      },
+      {
+       "sa": "naya",
+       "en": "lead"
+      },
+      {
+       "sa": "supatha",
+       "en": "by the auspicious path"
+      },
+      {
+       "sa": "raye",
+       "en": "to richness/truth"
+      },
+      {
+       "sa": "asman",
+       "en": "us"
+      },
+      {
+       "sa": "visvani",
+       "en": "all"
+      },
+      {
+       "sa": "deva",
+       "en": "O radiant one"
+      },
+      {
+       "sa": "vayanani",
+       "en": "deeds/acts"
+      },
+      {
+       "sa": "vidvan",
+       "en": "knowing"
+      },
+      {
+       "sa": "yuyodhi",
+       "en": "remove"
+      },
+      {
+       "sa": "asmat",
+       "en": "from us"
+      },
+      {
+       "sa": "juhuranam",
+       "en": "the crooked/false"
+      },
+      {
+       "sa": "enah",
+       "en": "wrongness"
+      },
+      {
+       "sa": "bhuyistham",
+       "en": "the deepest"
+      },
+      {
+       "sa": "te",
+       "en": "to you"
+      },
+      {
+       "sa": "nama-uktim",
+       "en": "words of reverence"
+      },
+      {
+       "sa": "vidhema",
+       "en": "we offer"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.975,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_isha.18",
+     "path": "up_isha.18 -cultivates-> shraddha",
+     "why": [
+      "trust that there is a good path"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.46.127",
+      "rcm.7.61.chaupai.2",
+      "bg.12.8"
+     ],
+     "thin": false,
+     "personal_source": {},
+     "personal_issues": [
+      "fit_guard:verse_assumes_guilt_they_did_not_name"
+     ]
+    }
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "shambhu_gita.7.53",
+     "ref": "Shambhu Gita 7.53",
+     "ref_iast": "Śambhu Gītā 7.53",
+     "family": "gitas",
+     "speaker": "The ancestors (pitris)",
+     "listener": "Shiva",
+     "setting": "Ending a long hymn, the ancestors stop asking for anything particular and hand the outcome to Shiva.",
+     "sanskrit": "विहारिन् ! विभो ! भक्तचेतोनिकेते शरण्यं किलैकान्ततस्त्वां व्रजामः । यथा नो भवेदत्र कल्याणमाशु तदेवाधुना देव ! शम्भो ! विधेहि ॥",
+     "line": "You who live in devotees' hearts: we come to you alone. Do whatever is truly good for us.",
+     "translation": "Dweller in the shrine of devotees' hearts, all-pervading one, we come to you alone for refuge. Do now, divine Shambhu, whatever will quickly bring us good here.",
+     "words": [
+      {
+       "sa": "विहारिन्",
+       "en": "dweller"
+      },
+      {
+       "sa": "विभो",
+       "en": "divine one"
+      },
+      {
+       "sa": "भक्तचेतोनिकेते",
+       "en": "in the temple of devotee's mind"
+      },
+      {
+       "sa": "शरण्यं",
+       "en": "refuge"
+      },
+      {
+       "sa": "किल",
+       "en": "indeed"
+      },
+      {
+       "sa": "एकान्तत",
+       "en": "exclusive"
+      },
+      {
+       "sa": "तस्त्वां",
+       "en": "therefore to you"
+      },
+      {
+       "sa": "व्रजामः",
+       "en": "we go"
+      },
+      {
+       "sa": "यथा",
+       "en": "so that"
+      },
+      {
+       "sa": "नो",
+       "en": "our"
+      },
+      {
+       "sa": "भवेद",
+       "en": "may be"
+      },
+      {
+       "sa": "अत्र",
+       "en": "here"
+      },
+      {
+       "sa": "कल्याणमाशु",
+       "en": "well-being quickly"
+      },
+      {
+       "sa": "तदेव",
+       "en": "that indeed"
+      },
+      {
+       "sa": "अधुना",
+       "en": "now"
+      },
+      {
+       "sa": "देव",
+       "en": "divine one"
+      },
+      {
+       "sa": "शम्भो",
+       "en": "Shambhu"
+      },
+      {
+       "sa": "विधेहि",
+       "en": "grant"
+      }
+     ],
+     "why": "You can hand over the outcome and still keep working, with devotion woven through.",
+     "misuse": "Handing over the outcome comes after the effort; it is not a reason to stop acting.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "shambhu_gita.p.pitris_hymn",
+      "title": "The ancestors' hymn to Shiva and his easy way",
+      "summary": "Bewildered by Shiva's limitless form, the ancestors praise him and finally hand him the outcome: do whatever is truly good for us. Shiva tells them their work needs a mind joined to him, then gives an easy way: see him everywhere, even in a loving embrace, so devotion never lapses amid hard work.",
+      "story_hook": "",
+      "lesson": "You can hand over the outcome and still keep working, with devotion woven through."
+     },
+     "score": 3.775,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking where your father is, and what comes after. In this moment, you do not have to see the path ahead. You only have to let the one who holds all hearts take the outcome. Let him do what is good.",
+     "try_today": "Notice one place today where you feel held, and let it be enough.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "shambhu_gita.7.53",
+     "path": "shambhu_gita.7.53 -cultivates-> shraddha",
+     "why": [
+      "trusting the Lord to know the good"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.6.109.23",
+      "up_taittiriya.56",
+      "mbh.12.55.16"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:long(29)"
+     ]
+    }
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.uddalaka_lessons",
+     "title": "Uddalaka's lessons: tat tvam asi",
+     "kind": "teaching",
+     "family": "up",
+     "characters": [
+      "Uddalaka Aruni",
+      "Shvetaketu"
+     ],
+     "story_hook": "",
+     "summary": "Uddalaka teaches his son through everyday experiments: a fast that dims the mind, a bird on a string, rivers merging in the sea, a banyan seed with nothing visible inside, salt dissolved in water, a blindfolded man finding his way home. Each lesson ends: 'That subtle essence is the self of all. You are that, Shvetaketu.'",
+     "lesson": "What is most real in you is unseen, everywhere, and the same in all.",
+     "matched": [],
+     "anchor": null,
+     "score": 12.38,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Uddalaka's lessons: tat tvam asi",
+     "for_you": "Your father is not gone from you. His direction is still here, and your steps keep you close.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.up.man_from_gandhara",
+     "path": "st.up.man_from_gandhara -enacts_in-> bhaya, moha, viraha ; st.up.man_from_gandhara -enacts_turn-> shraddha, viveka",
+     "why": [
+      "Lost is not the same as hopeless; one true direction plus your own steps gets you home."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.up.two_birds",
+      "st.vr.lakshman_holds_up_his_elder_brother",
+      "st.rcm.dharma_rath"
+     ],
+     "thin": false,
+     "story_id": "st.up.man_from_gandhara",
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not gone. He is)",
+      "for_you:preachy(who must)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "What does not pass",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w2_graph": 529,
+   "v3_w2_write": 6142,
+   "v3_w2_total": 6674,
+   "select": 6675,
+   "total": 6676
+  },
+  "_ms": 6684
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I lost a parent",
+   "mirror": "I lost a parent",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids. Feels searching; closest to \"I lost a parent\" and afraid of death\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:7/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "lost",
+    "trail": [
+     "empty",
+     "lost"
+    ],
+    "paused": "empty",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "moha",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "grief_parent",
+     "fear_death",
+     "grief_general"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "bg.2.8",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You keep asking if he is somewhere, because you see nothing that could drive away this grief."
+   }
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "up_chhandogya.526",
+     "ref": "Chhandogya Upanishad 7.1.3",
+     "ref_iast": "Chāndogya Upaniṣad 7.1.3",
+     "family": "up",
+     "speaker": "Narada",
+     "listener": "Sanatkumara",
+     "setting": "Narada, master of every science, comes to Sanatkumara.",
+     "sanskrit": "सोऽहं भगवो मन्त्रविदेवास्मि नात्मविच्छ्रुतꣳ ह्येव मे भगवद्दृशेभ्यस्तरति शोकमात्मविदिति सोऽहं भगवः शोचामि तं मा भगवाञ्छोकस्य पारं तारयत्विति तꣳ होवाच यद्वै किंचैतदध्यगीष्ठा नामैवैतत् ॥",
+     "line": "I have learned so much, yet I am sad. I know words, not myself. Help me cross this sorrow.",
+     "translation": "'Sir, I know only the texts; I do not know the self. I have heard from people like you that one who knows the self crosses beyond sorrow. I am in sorrow, sir. Please take me across.' He said to him: 'Whatever you have studied is only name.'",
+     "words": [],
+     "why": "Success and learning don't cure sadness; only the infinite does.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.chhandogya.narada",
+      "title": "Narada: learned but sad",
+      "summary": "Narada, who has mastered every science of his day, comes to Sanatkumara and admits he is unhappy: he knows words, not himself. Sanatkumara leads him step by step from names up through action and joy to the infinite, teaching that happiness is found only in the vast, never in the small.",
+      "story_hook": "Narada knew every subject worth knowing, and still came to Sanatkumara feeling sad.",
+      "lesson": "Success and learning don't cure sadness; only the infinite does."
+     },
+     "score": 6.55,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have learned the words, but the question remains. The one you loved is gone, and the words do not answer. Knowing the self is the only way across this water.",
+     "try_today": "Notice when you ask where he is, and let the question sit without an answer.",
+     "scene_line": "Like Narada before the sage, you ask for passage beyond sorrow without yet knowing the self.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "up_chhandogya.526",
+     "path": "up_chhandogya.526 -depicts-> shoka (spoken by Narada)",
+     "why": [
+      "'I am in sorrow, sir', said by the most learned man of his age",
+      "I have learned so much and I am still sad. I know the words, not myself. Can you get me across this?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.2.170.chaupai.7",
+      "rcm.5.13.chaupai.3",
+      "viv.2.cannot_give_up"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.31",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 31",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Opening verse of 'On the Instability of Pleasures'.",
+     "sanskrit": "भोगे रोगभयं कुले च्युतिभयं वित्ते नृपालाद्भयं माने दैन्यभयं बले रिपुभयं रूपे जराया भयम् । शास्त्रे वादिभयं गुणे खलभयं काये कृतान्ताद्भयं सर्वं वस्तु भयान्वितं भुवि नृणां वैराग्यमेवाभयम् ॥",
+     "line": "Wealth fears loss, fame fears disgrace, beauty fears age. Only letting go is free of fear.",
+     "translation": "In pleasure lies the fear of disease; in high birth, the fear of a fall; in wealth, fear of the king; in honour, fear of humiliation; in strength, fear of enemies; in beauty, fear of old age; in learning, fear of rival debaters; in virtue, fear of the wicked; in the body, fear of death. Everything in this world carries fear; only dispassion is fearless.",
+     "words": [],
+     "why": "Everything you hold carries fear; hold it more lightly.",
+     "misuse": "Dispassion is not giving up on life; it is holding things without clutching.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.bhoga",
+      "title": "Vairagyashatakam: On the instability of pleasures",
+      "summary": "Everything carries its own fear, health is uprooted, life leaks like water from a cracked pot. Only dispassion is fearless.",
+      "story_hook": "",
+      "lesson": "Everything you hold carries fear; hold it more lightly."
+     },
+     "score": 4.192,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking what happens after death because your father is gone. That question holds its own fear, and you are not wrong to feel it. The world keeps its own worries, and you can hold them without clutching.",
+     "try_today": "Notice one thing you are holding tightly today and let your fingers rest.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bh.vairagya.31",
+     "path": "bh.vairagya.31 -states_chain-> bh.fear_in_everything [sanga -causes-> bhaya]",
+     "why": [
+      "Everything comes with a fear (Bhartrihari, Vairagya Shataka 31)",
+      "Fear is explained as the shadow of holding, not as weakness"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.72.chaupai.2",
+      "rcm.5.38.chaupai.3",
+      "bg.2.41"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:cliche(sit with the)"
+     ]
+    }
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.7.14",
+     "ref": "Bhagavad Gita 7.14",
+     "ref_iast": "Bhagavad Gītā 7.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna admits the confusion of the world is hard to get through, and says who gets through it.",
+     "sanskrit": "दैवी ह्येषा गुणमयी मम माया दुरत्यया । मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥",
+     "line": "This tangle is hard to get through. Those who take shelter in me get through it.",
+     "translation": "This divine power of mine, made of the three qualities, is very hard to get past. Those who take refuge in me alone cross beyond it.",
+     "words": [
+      {
+       "sa": "दैवी",
+       "en": "divine"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "एषा",
+       "en": "this"
+      },
+      {
+       "sa": "गुणमयी",
+       "en": "made of qualities"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "माया",
+       "en": "power/illusion"
+      },
+      {
+       "sa": "दुरत्यया",
+       "en": "very difficult to cross"
+      },
+      {
+       "sa": "मामेव",
+       "en": "to me alone"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "प्रपद्यन्ते",
+       "en": "surrender"
+      },
+      {
+       "sa": "मायामेतां",
+       "en": "this power"
+      },
+      {
+       "sa": "तरन्ति",
+       "en": "cross"
+      },
+      {
+       "sa": "ते",
+       "en": "they"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 12.385,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are walking through a tangle that feels impossible to untangle. You are not meant to untangle it alone. Let yourself be carried through it.",
+     "try_today": "Notice the moment you ask what happens after death, and rest there.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.7.14",
+     "path": "bg.7.14 -heals-> moha via sharanagati",
+     "why": [
+      "The Manas gives devotion as the herb for the root illness.",
+      "the confusion is named as truly hard to get through, and a way through is given"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_isha.7",
+      "up_kath.1.2.22",
+      "bg.2.53"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:invented_life_detail(your kitchen)"
+     ]
+    }
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.35.51",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 35.51",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न देवा यष्टिमादाय रक्षन्ति पशुपालवत् / यं तु रक्षितुमिच्छन्ति बुद्ध्या संयोजयन्ति तम्",
+     "line": "The gods don't stand guard with a stick; whom they protect, they give clear judgement.",
+     "translation": "The gods do not guard a person with a stick in hand, the way a herdsman guards cattle. Whomever they wish to protect, they endow with good judgement.",
+     "words": [],
+     "why": "Character shows under pressure. Do by day what will let you sleep at night.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.35",
+      "title": "Vidura Niti: Keshini's choice and the tests of character",
+      "summary": "Vidura tells how Prahlada judged honestly against his own son when Princess Keshini set two suitors a test, then gives aphorisms: gold is tested by fire, friends by hard times, and a clear conscience lets you sleep.",
+      "story_hook": "",
+      "lesson": "Character shows under pressure. Do by day what will let you sleep at night."
+     },
+     "score": 6.862,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are asking where your father is and if you will see him again. The gods do not guard with a staff; they give clear judgement to those they wish to protect. You have been given the mind to hold this grief and still see clearly.",
+     "try_today": "Notice one small choice today that comes from clear thinking rather than fear.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.5.35.51",
+     "path": "mbh.5.35.51 -heals-> bhaya",
+     "why": [
+      "Protection is located in clear thinking",
+      "Answers 'why does no one protect me' by pointing to the judgement one has been given"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.6a.93.29",
+      "bg.14.22",
+      "mbh.5.135.26"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(not a sign you are lost, but)",
+      "scene_line:long(30)",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.46.127",
+     "ref": "Mahabharata, Shanti 46.127",
+     "ref_iast": "Mahābhārata, Śānti Parva 46.127",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Krishna",
+     "setting": "From the closing verses of Bhishma's hymn.",
+     "sanskrit": "प्राणकान्तारपाथेयं संसारोच्छेदभेषजम् / दुःखशोकपरित्राणं हरिरित्यक्षरद्वयम्॥]",
+     "line": "Food for the long road, medicine, rescue from grief: just two syllables, Ha-ri.",
+     "translation": "Provisions for the wilderness of life, medicine that cuts the bonds of the world, rescue from sorrow and grief: the two syllables 'Ha-ri'.",
+     "words": [],
+     "why": "The one you think of in your hardest hour is already thinking of you.",
+     "misuse": "The name as a place to rest, not a cure that replaces medical, legal or emotional help.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.k.krishna_bhishma",
+      "title": "Krishna and Bhishma on the bed of arrows",
+      "summary": "After the war, Krishna sits motionless; he explains that the dying Bhishma is thinking of him, so his mind has gone to Bhishma. They visit; Bhishma sings his hymn to Krishna, admits his pain and that he stands only on Krishna's strength. Krishna grants him relief, asks the next morning whether he slept well, and steps back so that Bhishma, not he, will teach Yudhishthira.",
+      "story_hook": "Yudhishthira found Krishna sitting so still that not a hair on his body moved, like a lamp in a windless place.",
+      "lesson": "The one you think of in your hardest hour is already thinking of you."
+     },
+     "score": 3.935,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your father is not gone into nothing. The syllables Ha-ri are provisions for the wilderness of grief, a medicine that cuts the world's bonds. Keep this name with you today.",
+     "try_today": "Notice the name Hari as you move through the day.",
+     "scene_line": "You stand at the edge of a forest, and Bhishma offers you two syllables of provision.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.12.46.127",
+     "path": "mbh.12.46.127 -cultivates-> shraddha",
+     "why": [
+      "Trust in two syllables"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.18.57",
+      "rcm.7.61.chaupai.2",
+      "up_devi.19"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(not a cure for the pain you feel, but)",
+      "scene_line:long(25)"
+     ]
+    }
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.19,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You have lost your father, and you are asking where he is now and if you will see him again. Grief does not need to be answered with a map. Ask yourself where you were before this loss, and where your path is going. Let that steadiness hold you today.",
+     "try_today": "Notice where your thoughts drift when you ask where you are going.",
+     "scene_line": "You stand in the middle of your days, holding the questions of your father's ending and your own beginning.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.12.27.40",
+     "path": "mbh.12.27.40 -cultivates-> viveka",
+     "why": [
+      "Meeting and parting come to all; the mind's pain is met with understanding.",
+      "Self-inquiry as a steadying practice"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.14",
+      "vr.6.109.23",
+      "up_taittiriya.56"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:intensifier(quietly)"
+     ]
+    }
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.yaksha_prashna",
+     "title": "Yaksha Prashna: the questions at the lake",
+     "kind": "teaching",
+     "family": "mbh",
+     "characters": [
+      "Yudhishthira",
+      "The Yaksha (Dharma)"
+     ],
+     "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+     "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+     "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "matched": [],
+     "anchor": null,
+     "score": 13.47,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+     "for_you": "You are asking where your father is, and that question is the grief itself. He is not here to answer. In this not-knowing, you do not have to choose a way forward yet. Let the not-knowing be the place you stand today.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.yudhishthira_at_the_lake",
+     "path": "st.mbh.yudhishthira_at_the_lake -enacts_in-> bhaya, moha, shoka ; st.mbh.yudhishthira_at_the_lake -enacts_turn-> dhriti, viveka ; st.mbh.yudhishthira_at_the_lake -fits_situation-> grief_general",
+     "why": [
+      "In the worst moment, stopping to understand the cause before acting is what saves; grief is named as not-knowing."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.dhritarashtra_refuses_sight",
+      "st.mbh.vidura_man_in_the_well",
+      "st.bg.arjuna_i_will_not_fight"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.yudhishthira_at_the_lake",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "What gives it meaning",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w3_graph": 234,
+   "v3_w3_write": 6350,
+   "v3_w3_total": 6591,
+   "select": 6591,
+   "total": 6593
+  },
+  "_ms": 6601
+ }
+}

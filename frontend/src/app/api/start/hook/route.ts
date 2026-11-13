@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { BACKEND_TIMEOUT, backendPost, clientIp, rateLimit } from '@/lib/server/backend'
 import { bearer, verifyFirebaseToken } from '@/lib/server/firebaseToken'
-import { BackendVerse, cleanSanskrit, profileBody, refOf, StartProfile } from '@/lib/server/startShared'
+import { BackendVerse, cleanSanskrit, clientBody, profileBody, refOf, StartClient, StartProfile } from '@/lib/server/startShared'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -10,7 +10,8 @@ export const maxDuration = 60
 /**
  * Onboarding "Finding your verse": the person's answers and (optionally) their
  * own words → their reading and Day 1's verse (POST /recommend/hook, as in the
- * app). Open before sign-in (rate-limited by IP). The note is passed through once and never stored.
+ * app). Open before sign-in (rate-limited by IP). The note is passed through once; the backend keeps it in
+ * raw_notes and the call in plan_runs, joined to Mixpanel by `client` (lib/onboarding/trace.ts).
  */
 type HookBackend = {
   understanding?: Record<string, unknown> & { mirror?: string; insight?: string; weeks?: string[] }
@@ -27,7 +28,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'rate_limited' }, { status: 429 })
   }
 
-  let body: { profile?: StartProfile; note?: string; noteSource?: string }
+  let body: { profile?: StartProfile; note?: string; noteSource?: string; client?: StartClient }
   try {
     body = await req.json()
   } catch {
@@ -43,6 +44,7 @@ export async function POST(req: Request) {
         note: note || null,
         note_source: note ? (body.noteSource === 'voice' ? 'voice' : 'text') : null,
         alternates: 0,
+        client: clientBody(body.client, req, user?.uid),
       },
       BACKEND_TIMEOUT.hook,
     )

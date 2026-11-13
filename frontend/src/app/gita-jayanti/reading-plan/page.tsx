@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 import SiteFooter from '@/components/SiteFooter'
-import { Actions, Faq, JsonLd, PageHero, Section } from '@/components/site'
+import { Actions, Faq, JsonLd, LinkCards, PageHero, Section } from '@/components/site'
+import { lengthPlanCards } from '@/components/plan/LengthPlanParts'
 import JayantiRelated from '@/components/jayanti/JayantiRelated'
 import PlanFromToday from '@/components/jayanti/PlanFromToday'
 import PlanFine from '@/components/plan/PlanFine'
@@ -220,6 +221,10 @@ export default function ReadingPlanPage() {
               </p>
             </div>
           </article>
+        </Section>
+
+        <Section id="after-jayanti" title="After Gita Jayanti, or with more time" intro="The same Gita at a slower pace: 3 to 6 minutes a day for a month, or one verse each morning.">
+          <LinkCards items={lengthPlanCards('jayanti_plan_more', 'jayanti')} columns={2} layout="rail" />
         </Section>
 
         <Section id="faq" tone="band" width="narrow" title="Questions about the plans">

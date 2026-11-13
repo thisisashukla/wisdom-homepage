@@ -1,0 +1,1173 @@
+{
+ "case": "t6_promoted_past_mbas",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.789,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.742,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.7,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 1.285,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 1.276,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I was passed over for promotion\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.1,wro=0.14,see=0.0",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.6.34",
+   "ref": "Bhagavad Gita 6.34",
+   "ref_iast": "Bhagavad Gītā 6.34",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+   "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+   "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+   "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+   "words": [
+    {
+     "sa": "चञ्चलम्",
+     "en": "restless"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "मनः",
+     "en": "mind"
+    },
+    {
+     "sa": "कृष्ण",
+     "en": "O Krishna"
+    },
+    {
+     "sa": "प्रमाथि",
+     "en": "turbulent"
+    },
+    {
+     "sa": "बलवत्",
+     "en": "strong"
+    },
+    {
+     "sa": "दृढम्",
+     "en": "stubborn, firm"
+    },
+    {
+     "sa": "तस्य",
+     "en": "of that"
+    },
+    {
+     "sa": "अहम्",
+     "en": "I"
+    },
+    {
+     "sa": "निग्रहम्",
+     "en": "control, restraint"
+    },
+    {
+     "sa": "मन्ये",
+     "en": "consider"
+    },
+    {
+     "sa": "वायोः",
+     "en": "of wind"
+    },
+    {
+     "sa": "इव",
+     "en": "like"
+    },
+    {
+     "sa": "सुदुष्करम्",
+     "en": "very difficult"
+    }
+   ],
+   "why": "The mind is hard to hold, but practice and letting go train it.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p06.4",
+    "title": "Mastering the mind",
+    "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+    "story_hook": "",
+    "lesson": "The mind is hard to hold, but practice and letting go train it."
+   },
+   "score": 2.2355,
+   "beat": "hook",
+   "role_fit": 0.73,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.6.26",
+    "ref": "Bhagavad Gita 6.26",
+    "ref_iast": "Bhagavad Gītā 6.26",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+    "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+    "line": "Wherever the restless mind wanders, gently bring it back. Again and again.",
+    "translation": "Wherever the restless, unsteady mind wanders, from there one should draw it back and bring it under the control of the self.",
+    "words": [
+     {
+      "sa": "यतो यतः",
+      "en": "wherever"
+     },
+     {
+      "sa": "निश्चरति",
+      "en": "wanders out"
+     },
+     {
+      "sa": "मनः",
+      "en": "the mind"
+     },
+     {
+      "sa": "चञ्चलम्",
+      "en": "restless"
+     },
+     {
+      "sa": "अस्थिरम्",
+      "en": "unsteady"
+     },
+     {
+      "sa": "ततस्ततः",
+      "en": "from there, from there"
+     },
+     {
+      "sa": "नियम्य",
+      "en": "restraining"
+     },
+     {
+      "sa": "एतत्",
+      "en": "this"
+     },
+     {
+      "sa": "आत्मनि",
+      "en": "in the true self"
+     },
+     {
+      "sa": "एव",
+      "en": "only"
+     },
+     {
+      "sa": "वशम्",
+      "en": "under control"
+     },
+     {
+      "sa": "नयेत्",
+      "en": "should bring"
+     }
+    ],
+    "why": "Moderation and gentle return, again and again, settle the mind.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "restless_mind",
+      "label": "I can't focus, my mind is restless"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.3",
+     "title": "Meditation in detail",
+     "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+     "story_hook": "",
+     "lesson": "Moderation and gentle return, again and again, settle the mind."
+    },
+    "score": 1.4273,
+    "beat": "hook",
+    "role_fit": 0.12,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.18.48",
+    "ref": "Bhagavad Gita 18.48",
+    "ref_iast": "Bhagavad Gītā 18.48",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+    "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥",
+    "line": "Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke.",
+    "translation": "One should not give up the work suited to one's nature, Kaunteya, even if it has faults; for all undertakings are clouded by faults, as fire is by smoke.",
+    "words": [
+     {
+      "sa": "सहजं",
+      "en": "natural"
+     },
+     {
+      "sa": "कर्म",
+      "en": "action"
+     },
+     {
+      "sa": "कौन्तेय",
+      "en": "O son of Kunti"
+     },
+     {
+      "sa": "सदोषम्",
+      "en": "faulty"
+     },
+     {
+      "sa": "अपि",
+      "en": "even"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "त्यजेत्",
+      "en": "should abandon"
+     },
+     {
+      "sa": "सर्वारम्भा",
+      "en": "all beginnings"
+     },
+     {
+      "sa": "हि",
+      "en": "indeed"
+     },
+     {
+      "sa": "दोषेण",
+      "en": "by fault"
+     },
+     {
+      "sa": "धूमेन",
+      "en": "by smoke"
+     },
+     {
+      "sa": "अग्नि",
+      "en": "fire"
+     },
+     {
+      "sa": "इव",
+      "en": "like"
+     },
+     {
+      "sa": "आवृताः",
+      "en": "covered"
+     }
+    ],
+    "why": "Do the work that fits you, flaws and all, as an offering.",
+    "misuse": "Not 'never change jobs'. It answers perfectionism, not a reason to stay where you're harmed.",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "imposter",
+      "label": "I feel like an imposter"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p18.4",
+     "title": "Duties by nature, and their fruit",
+     "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+     "story_hook": "",
+     "lesson": "Do the work that fits you, flaws and all, as an offering."
+    },
+    "score": 2.3406,
+    "beat": "hook",
+    "role_fit": 0.19,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 427,
+   "llm": 7017,
+   "total": 11585,
+   "select": 4138
+  },
+  "_ms": 11592
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel like an imposter",
+   "mirror": "I feel like an imposter",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.789,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 1.742,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.7,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 1.285,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 1.276,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel like an imposter. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a warrior or servant doing hard duty, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels restless; closest to \"I feel like an imposter\" and \"I was passed over for promotion\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:34=1.0,58=0.6,85=0.6,16=0.6,5=1.0,59=0.3",
+    "week_same:85",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.64,max=0.72",
+    "dropped:repeat=1,scene_line_long=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "words": [
+      {
+       "sa": "चञ्चलम्",
+       "en": "restless"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "कृष्ण",
+       "en": "O Krishna"
+      },
+      {
+       "sa": "प्रमाथि",
+       "en": "turbulent"
+      },
+      {
+       "sa": "बलवत्",
+       "en": "strong"
+      },
+      {
+       "sa": "दृढम्",
+       "en": "stubborn, firm"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      },
+      {
+       "sa": "निग्रहम्",
+       "en": "control, restraint"
+      },
+      {
+       "sa": "मन्ये",
+       "en": "consider"
+      },
+      {
+       "sa": "वायोः",
+       "en": "of wind"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "सुदुष्करम्",
+       "en": "very difficult"
+      }
+     ],
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.2302,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna stands on the battlefield and tells Krishna that the mind is restless, turbulent, powerful and stubborn, and that holding it feels as hard as grasping the wind. Krishna agrees with him. He says that practice and letting go can train the mind, so it is not impossible to steady it.",
+     "for_you": "You are sitting with the feeling of not being good enough after the promotion. You are holding yourself to a standard you would never give to a friend. The mind feels like a storm you cannot quiet. Still, the practice of letting go gives you a way to steady it.",
+     "try_today": "Notice one moment when you compare yourself to another person.",
+     "scene_line": "You are standing with your mind as hard to hold as the wind.",
+     "asks": [
+      "How do I stop the mind from feeling like a storm?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "words": [],
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      },
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.4217,
+     "beat": "diagnose",
+     "role_fit": 0.76,
+     "meaning": "Draupadi speaks to Yudhishthira in the forest. She sees him waiting for fate to turn and asks why he is giving up. She tells him that a person should never look down on themselves, and the one who despises themselves will never find real prosperity. She says that effort still matters. Do right for its own sake, then work as if everything depends on you.",
+     "for_you": "You are sitting with the news that you were passed over while others moved ahead, and the voice telling you that you are not good enough is loud right now. Draupadi is saying that real prosperity does not grow from looking down on yourself.",
+     "try_today": "Name one small thing you did well at work today that needed no one's praise.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.40",
+     "ref": "Bhagavad Gita 6.40",
+     "ref_iast": "Bhagavad Gītā 6.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "श्री भगवानुवाचपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते । नहि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ॥",
+     "line": "Whoever does good never comes to ruin, my friend. Not here, not after.",
+     "translation": "The Blessed Lord said: Partha, there is no ruin for him either in this world or the next. No one who does good, my friend, ever comes to grief.",
+     "words": [
+      {
+       "sa": "श्री भगवानुवाच",
+       "en": "the Blessed One said"
+      },
+      {
+       "sa": "पार्थ",
+       "en": "O Partha"
+      },
+      {
+       "sa": "नैव",
+       "en": "not at all"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अमुत्र",
+       "en": "in the other world"
+      },
+      {
+       "sa": "विनाशः",
+       "en": "destruction"
+      },
+      {
+       "sa": "तस्य",
+       "en": "of him"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "there is"
+      },
+      {
+       "sa": "नहि",
+       "en": "indeed not"
+      },
+      {
+       "sa": "कल्याणकृत्",
+       "en": "one who does good"
+      },
+      {
+       "sa": "कश्चित्",
+       "en": "anyone"
+      },
+      {
+       "sa": "दुर्गतिम्",
+       "en": "bad end"
+      },
+      {
+       "sa": "तात",
+       "en": "my dear"
+      },
+      {
+       "sa": "गच्छति",
+       "en": "goes"
+      }
+     ],
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 2.9527,
+     "beat": "steady",
+     "role_fit": 0.395,
+     "meaning": "Arjuna asks what happens to someone who tries to steady their mind and then falls back into chaos. Krishna tells him that no one who does good ever comes to ruin. The effort itself is not lost. It is like a torn cloud that gathers again. You do not start from nothing. You pick up exactly where you left off.",
+     "for_you": "The promotion passed you by. Now your mind will not settle. You are waiting for the next test. Krishna says you are not ruined. The effort you put in is still there. You do not have to prove yourself all over again today. You pick up where you left off.",
+     "try_today": "Notice one effort you made that still stands.",
+     "scene_line": "You are standing on the ground you already covered.",
+     "asks": [
+      "How do I trust my past effort now?",
+      "What does ruin look like to me?",
+      "Where did I leave off?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "words": [
+      {
+       "sa": "त्वया",
+       "en": "by you"
+      },
+      {
+       "sa": "व्याप्तम्",
+       "en": "pervaded"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "विश्वं",
+       "en": "world"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "प्रोतं",
+       "en": "woven"
+      },
+      {
+       "sa": "यथार्थतः",
+       "en": "truly"
+      },
+      {
+       "sa": "शुद्धबुद्धस्वरूपः",
+       "en": "pure-consciousness-form"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "मा",
+       "en": "do not"
+      },
+      {
+       "sa": "गमः",
+       "en": "go, be affected"
+      },
+      {
+       "sa": "क्षुद्रचित्तताम्",
+       "en": "by petty minds"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 2.4073,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka asks the young sage Ashtavakra how a person becomes free. Ashtavakra tells him that the whole universe is pervaded by you and strung on you, and by nature you are pure awareness, so do not fall into smallness of mind. The point is that you are more than your roles and worries, and freedom starts with how you see yourself.",
+     "for_you": "You are holding yourself to a standard you would never put on a friend, and the mind is paying the price for it. The comparison and the sting of the passed-over promotion are real, but they are not the whole picture of who you are.",
+     "try_today": "Notice when the mind shrinks into smallness, and let it rest.",
+     "scene_line": "You are the awareness that holds the whole universe, and the question is whether you will fall into smallness of mind.",
+     "asks": [
+      "How do I stop the mind from shrinking into smallness?",
+      "How do I hold the promotion news without falling into self-contempt?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.7575,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna is telling Arjuna that you are the only one who can pull yourself up or drag yourself down. The self can be its own greatest friend, or its own worst enemy. You have the power to choose which role you play, to lift yourself by your own strength rather than letting yourself sink into self-doubt.",
+     "for_you": "You have been waiting for someone to see you and fix how you feel, but no one is coming. You are the one who must choose to stop being your own worst critic.",
+     "try_today": "Name one thing you did well today without waiting for praise.",
+     "scene_line": "You stand in the mirror of your own doubt, and you could be the one to look away.",
+     "asks": [
+      "How do I stop being my own worst critic?",
+      "What would it look like to be my own friend?",
+      "Can I trust my own judgment today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.7543,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for too little. She says to set his mind on what is truly good and stop fearing, and to pull himself together. The idea is that past failure does not define a person. Results are uncertain, but those who never try never succeed, so he must rise and fight for what is his again.",
+     "for_you": "You have been passed over and you keep comparing yourself to others, and the mind is restless because it is holding itself to a standard you would never give a friend. Vidula shows that a lost position is not a lost self.",
+     "try_today": "Write down one thing you did well today without comparing it to anyone else's work.",
+     "scene_line": null,
+     "asks": [
+      "What does it mean to set my mind on what is truly good?",
+      "How do I pull myself together when the setback feels like proof of my limits?",
+      "Can I stop fearing without pretending the loss did not hurt?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.jambavant",
+     "title": "Jambavant reminds Hanuman of his strength",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Jambavant",
+      "Hanuman",
+      "Angad"
+     ],
+     "story_hook": "Everyone said how far they could jump, and Hanuman said nothing at all.",
+     "summary": "Nobody can leap the ocean. Old Jambavant admits honestly that he is no longer young. Then he turns to the silent Hanuman and asks why he sits quiet: what task in the world is too hard for him? Hanuman grows to the size of a mountain.",
+     "lesson": "Sometimes we need someone else to remind us what we can do; and the old can be that someone.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.4.31.chaupai.3",
+      "ref": "Ramcharitmanas · Kishkindha Kand",
+      "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 31",
+      "family": "rcm",
+      "speaker": "Jambavant",
+      "listener": "Hanuman",
+      "setting": "The old bear Jambavant to Hanuman, who sits silent while others say the ocean is too wide.",
+      "sanskrit": "कवन सो काज कठिन जग माहीं। जो नहिं होइ तात तुम्ह पाहीं॥ राम काज लगि तव अवतारा। सुनतहिं भयउ पर्बताकारा ॥",
+      "line": "What task in the world is too hard for you? You were made for this.",
+      "translation": "\"What task in the world is too hard for you, my son? You were born for Ram's work.\" Hearing this, Hanuman grew to the size of a mountain.",
+      "words": [
+       {
+        "sa": "कवन",
+        "en": "which"
+       },
+       {
+        "sa": "सो",
+        "en": "that"
+       },
+       {
+        "sa": "काज",
+        "en": "task"
+       },
+       {
+        "sa": "कठिन",
+        "en": "difficult"
+       },
+       {
+        "sa": "जग",
+        "en": "world"
+       },
+       {
+        "sa": "माहीं",
+        "en": "in"
+       },
+       {
+        "sa": "जो",
+        "en": "which"
+       },
+       {
+        "sa": "नहिं",
+        "en": "not"
+       },
+       {
+        "sa": "होइ",
+        "en": "is"
+       },
+       {
+        "sa": "तात",
+        "en": "dear one"
+       },
+       {
+        "sa": "तुम्ह",
+        "en": "you"
+       },
+       {
+        "sa": "पाहीं",
+        "en": "by/with you)॥ राम (Ram"
+       },
+       {
+        "sa": "काज",
+        "en": "work"
+       },
+       {
+        "sa": "लगि",
+        "en": "for"
+       },
+       {
+        "sa": "तव",
+        "en": "your"
+       },
+       {
+        "sa": "अवतारा",
+        "en": "incarnation/birth"
+       },
+       {
+        "sa": "सुनतहिं",
+        "en": "upon hearing"
+       },
+       {
+        "sa": "भयउ",
+        "en": "became"
+       },
+       {
+        "sa": "पर्बताकारा",
+        "en": "mountain-shaped, विशालकाय"
+       }
+      ],
+      "why": "Sometimes we need someone else to remind us what we can do; and the old can be that someone.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "imposter",
+        "label": "I feel like an imposter"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.jambavant",
+       "title": "Jambavant reminds Hanuman of his strength",
+       "summary": "Nobody can leap the ocean. Old Jambavant admits honestly that he is no longer young. Then he turns to the silent Hanuman and asks why he sits quiet: what task in the world is too hard for him? Hanuman grows to the size of a mountain.",
+       "story_hook": "Everyone said how far they could jump, and Hanuman said nothing at all.",
+       "lesson": "Sometimes we need someone else to remind us what we can do; and the old can be that someone."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could jump, and Hanuman said nothing at all",
+     "teaser": "Everyone said how far they could jump, and Hanuman said nothing at all",
+     "for_you": "You sit in the meeting where the promotion goes to someone else, and the old doubt returns. It is not that you lack skill. It is that you have forgotten what you are capable of. Someone else once saw your strength when you could not see it yourself.",
+     "asks": [
+      "Why do I wait for others to tell me I am enough?",
+      "How do I remember my strength when no one is watching?",
+      "What if I am not the one who needs reminding?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Not feeling enough",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12825,
+   "total": 12827
+  },
+  "_ms": 12831
+ }
+}

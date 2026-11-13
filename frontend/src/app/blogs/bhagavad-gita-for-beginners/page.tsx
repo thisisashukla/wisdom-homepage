@@ -171,6 +171,14 @@ export default async function WhatIsTheGitaPage() {
               A few verses at a sitting is enough. At one verse a day the whole takes about two years, and many readers find that pace gives
               each verse time to come back to them during the day.
             </p>
+            <h3>Pick a pace you can keep</h3>
+            <p>
+              <a href="/bhagavad-gita-one-verse-a-day" data-mp-location="beginners_link_verse_a_day">One verse each morning</a>,{' '}
+              <a href="/bhagavad-gita-in-30-days" data-mp-location="beginners_link_30_days">the whole Gita in 30 days</a> at 3 to 6 minutes a day, or{' '}
+              <a href="/read-gita-in-18-days" data-mp-location="beginners_link_18_days">a chapter a day</a>. Our guide to{' '}
+              <a href="/how-to-read-bhagavad-gita" data-mp-location="beginners_link_how_to_read">how to read the Bhagavad Gita</a> covers where readers
+              get stuck and how long each part takes.
+            </p>
             <h3>Choose one translation, and stay with it</h3>
             <p>
               English translations differ a great deal in voice and in the school they follow. Eknath Easwaran’s is often suggested for a first

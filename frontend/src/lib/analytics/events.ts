@@ -61,6 +61,10 @@ export const EVENTS = {
   FactCheckViewed: 'Fact Check Viewed',
   SituationSelected: 'Situation Selected',
   PlanDayOpened: 'Plan Day Opened',
+  // Length plans (30 days, 7 days, a verse a day): a day picked on the verse map or list, a day marked read, a month started.
+  PlanDaySelected: 'Plan Day Selected',
+  PlanDayCompleted: 'Plan Day Completed',
+  DailyPlanStarted: 'Daily Plan Started',
   SheetPrinted: 'Sheet Printed',
   PrintCardOpened: 'Print Card Opened',
   NextStepViewed: 'Next Step Viewed',
@@ -133,6 +137,11 @@ export const EVENTS = {
   HookSigninCompleted: 'Hook Signin Completed',
   WebPlanGenerated: 'Web Plan Generated',
   VersesGenerated: 'Verses Generated',
+  // The same names as the app (wisdom/app/services/Analytics.ts), so app and web onboarding read alike.
+  // Option Selected: every tap on an onboarding answer (question, option, selected); Plan Built: week 1 back.
+  // Both, with Verses Generated, carry request_id and onboarding_id to join Supabase plan_runs.
+  OptionSelected: 'Option Selected',
+  PlanBuilt: 'Plan Built',
   DailyLimitReached: 'Daily Limit Reached',
   DevicePlanSwitch: 'Device Plan Switch',
   PlanPreviewTab: 'Plan Preview Tab',

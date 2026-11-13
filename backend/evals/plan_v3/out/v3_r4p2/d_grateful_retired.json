@@ -1,0 +1,1246 @@
+{
+ "case": "d_grateful_retired",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.55,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to \"I've retired and feel lost\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.0,wro=0.0,see=0.92",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:alt:blocked_for_stance",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "grateful",
+    "trail": [
+     "grateful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "kritajnata"
+    ],
+    "risk": "none",
+    "situations": [
+     "gratitude",
+     "retirement"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "viv.6.glad_blunders",
+    "first_line": "You want to hold on to this feeling, and you can, because this gladness is exactly the peace that was earned."
+   }
+  },
+  "hook": {
+   "id": "viv.6.glad_blunders",
+   "ref": "Swami Vivekananda",
+   "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+   "family": "viv",
+   "speaker": "Swami Vivekananda",
+   "listener": "Josephine MacLeod ('Joe')",
+   "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+   "sanskrit": null,
+   "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+   "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+   "words": [],
+   "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost"
+    }
+   ],
+   "prasang": {
+    "id": "viv.p.letter.joe_1900",
+    "title": "'I am drifting': a letter from Alameda (1900)",
+    "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+    "story_hook": "",
+    "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You want to hold on to this feeling, and you can, because this gladness is exactly the peace that was earned.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You want to hold on to this feeling, and you can, because this gladness is exactly the peace that was earned.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "bh.vairagya.82",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+    "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+    "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+    "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+    "words": [],
+    "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     },
+     {
+      "id": "retirement",
+      "label": "I've retired and feel lost"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.vairagya.shiva",
+     "title": "Vairagyashatakam: Worship of Shiva",
+     "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+     "story_hook": "",
+     "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.3.17",
+    "ref": "Bhagavad Gita 3.17",
+    "ref_iast": "Bhagavad Gītā 3.17",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on why even the fulfilled keep working for the world.",
+    "sanskrit": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः । आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते ॥",
+    "line": "One who is content and delighted in their own self has nothing left to prove.",
+    "translation": "But for the person who delights only in the self, is satisfied with the self, and content in the self alone, there is nothing that must be done.",
+    "words": [
+     {
+      "sa": "यः",
+      "en": "who"
+     },
+     {
+      "sa": "त्वम्",
+      "en": "self"
+     },
+     {
+      "sa": "आत्मरति",
+      "en": "self-delight"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "is"
+     },
+     {
+      "sa": "आत्मतृप्तः",
+      "en": "self-fulfilled"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "मानवः",
+      "en": "person"
+     },
+     {
+      "sa": "आत्मनि",
+      "en": "in the self"
+     },
+     {
+      "sa": "एव",
+      "en": "indeed"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "सन्तुष्टः",
+      "en": "content"
+     },
+     {
+      "sa": "तस्य",
+      "en": "his"
+     },
+     {
+      "sa": "कार्यम्",
+      "en": "duty"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "विद्यते",
+      "en": "exists"
+     }
+    ],
+    "why": "People copy what you do, not what you say; keep showing up.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "no_meaning",
+      "label": "Nothing is wrong but nothing feels meaningful"
+     },
+     {
+      "id": "gratitude",
+      "label": "I want to feel more grateful"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p03.3",
+     "title": "Even the wise, even God, act for the world's sake",
+     "summary": "The one content in the self has nothing left to gain, yet the wise, like Janaka and Krishna himself, keep working because others follow their example.",
+     "story_hook": "",
+     "lesson": "People copy what you do, not what you say; keep showing up."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 442,
+   "v3_candidates": 54,
+   "v3_fast_read": 1440,
+   "v3_select": 2252,
+   "v3_first_line": 599,
+   "v3_total": 2852,
+   "total": 2854
+  },
+  "_ms": 2863
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "desire_craving",
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.55,
+     "source": "note"
+    },
+    {
+     "id": "gratitude",
+     "label": "I want to feel more grateful",
+     "weight": 1.45,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 1.1,
+     "source": "profile"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Retired. Feels searching; closest to retired and feel lost\" and \"I want to feel more grateful\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:yes",
+    "v3:day:6:for_you:no",
+    "v3:day:7:for_you:yes",
+    "v3:day:2:for_you:no",
+    "v3:day:3:for_you:yes",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:yes",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "grateful",
+    "trail": [
+     "grateful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "kritajnata"
+    ],
+    "risk": "none",
+    "situations": [
+     "gratitude",
+     "retirement"
+    ],
+    "age": "55p",
+    "stages": [
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "viv.6.glad_blunders",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You want to hold on to this feeling, and you can, because this gladness is exactly the peace that was earned."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "viv.6.glad_blunders",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Josephine MacLeod ('Joe')",
+     "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+     "sanskrit": null,
+     "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+     "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+     "words": [],
+     "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.letter.joe_1900",
+      "title": "'I am drifting': a letter from Alameda (1900)",
+      "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+      "story_hook": "",
+      "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+     },
+     "score": 14.266,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You want to hold on to this feeling, and you can, because this gladness is exactly the peace that was earned.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "viv.6.glad_blunders",
+     "path": "Day 1 kept from the first screen (bh.vairagya.82 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.25",
+      "up_skand.1",
+      "mbh.12.53.23"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "first_line"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.4.1.101",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 1.101",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "At Lake Pampa, Lakshman pulls Ram out of despair after Sita has been taken.",
+     "sanskrit": "उत्साहो बलवानार्य नास्त्युत्साहात् परं बलम्। सोत्साहस्य हि लोकेषु न किंचिदपि दुर्लभम्॥",
+     "line": "There is no strength greater than enthusiasm. For the one who has it, nothing is out of reach.",
+     "translation": "Noble brother, enthusiasm is powerful; there is no strength greater than enthusiasm. For the person who has it, nothing in the world is out of reach.",
+     "words": [
+      {
+       "sa": "उत्साहो",
+       "en": "enthusiasm"
+      },
+      {
+       "sa": "बलवान्",
+       "en": "powerful"
+      },
+      {
+       "sa": "आर्य",
+       "en": "noble"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "is not"
+      },
+      {
+       "sa": "उत्साहात्",
+       "en": "than enthusiasm"
+      },
+      {
+       "sa": "परं",
+       "en": "supreme"
+      },
+      {
+       "sa": "बलम्",
+       "en": "strength"
+      },
+      {
+       "sa": "सोत्साहस्य",
+       "en": "for one who is enthusiastic"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "there is"
+      },
+      {
+       "sa": "लोके",
+       "en": "in the world"
+      },
+      {
+       "sa": "अस्मिन्",
+       "en": "in this"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "किञ्चित्",
+       "en": "anything"
+      },
+      {
+       "sa": "अपि",
+       "en": "at all"
+      },
+      {
+       "sa": "दुर्लभम्",
+       "en": "difficult"
+      }
+     ],
+     "why": "Beauty can sharpen grief; a friend can remind you of your own strength.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.pampa_grief",
+      "title": "Grief in springtime at Pampa",
+      "summary": "At the beautiful lake of Pampa in spring, everything reminds Ram of Sita and his grief deepens. Lakshman tells him there is no strength greater than enthusiasm, and to rouse himself.",
+      "story_hook": "Spring had come to the lake, and every flower made Ram's grief worse.",
+      "lesson": "Beauty can sharpen grief; a friend can remind you of your own strength."
+     },
+     "score": 1.258,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small thing today that your steady spirit made possible.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.4.1.101",
+     "path": "vr.4.1.101 -states_chain-> vr.utsaha [utsaha -leads_to-> siddhi]",
+     "why": [
+      "No strength greater than the will to go on (Valmiki Ramayana, Kishkindha 1.121 (Gita Press))"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.2.16.19",
+      "rcm.7.48.chaupai.1"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Swami Vivekananda) was about gratitude; today asks where it comes from.",
+      "link": null
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(suffered)",
+      "scene_line:not_second_person",
+      "for_you:not_second_person",
+      "for_you:contrast_pattern(not a feeling to hold, but)",
+      "scene_line:not_second_person",
+      "scene_line:pathologises_a_light_state(grief)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.74.12",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+     "family": "vr",
+     "speaker": "Shabari",
+     "listener": "Ram",
+     "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+     "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+     "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+     "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+     "words": [],
+     "why": "Faithful waiting, unseen by the world, is not wasted.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.shabari",
+      "title": "Shabari's long wait",
+      "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+      "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+      "lesson": "Faithful waiting, unseen by the world, is not wasted."
+     },
+     "score": 3.285,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Resolute energy is the greatest strength. The waiting was spent preparing an offering her whole practice points to this meeting. Your gratitude is the gathered offering, ready for the moment you now see it.",
+     "try_today": "Notice one small detail today that your waiting prepared for you.",
+     "scene_line": "You stand at Pampa's banks, holding the gathered food that your waiting prepared.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "vr.3.74.12",
+     "path": "vr.3.74.12 -cultivates-> seva",
+     "why": [
+      "the waiting was spent preparing an offering",
+      "her whole practice points to this meeting"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.3.11",
+      "bg.18.36",
+      "bg.12.4"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana · Kishkindha Kanda) named collapse, and today's verse grows trust; today gives ground to stand on.",
+      "link": [
+       "antidote",
+       "vishada>shraddha"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Resolute energy is the greatest strength."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.3.20",
+     "ref": "Bhagavad Gita 3.20",
+     "ref_iast": "Bhagavad Gītā 3.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on why even the fulfilled keep working for the world.",
+     "sanskrit": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः । लोकसंग्रहमेवापि संपश्यन्कर्तुमर्हसि ॥",
+     "line": "Janaka and others reached fulfilment through action. Keep working, if only for the good of the world.",
+     "translation": "Janaka and others attained perfection through action alone. And looking to the welfare of the world, you too should act.",
+     "words": [
+      {
+       "sa": "कर्मणैव",
+       "en": "by action alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "संसिद्धिमास्थिता",
+       "en": "perfection established"
+      },
+      {
+       "sa": "जनकादयः",
+       "en": "King Janaka and others"
+      },
+      {
+       "sa": "लोकसंग्रहमेवापि",
+       "en": "even for the world's welfare"
+      },
+      {
+       "sa": "संपश्यन्",
+       "en": "seeing"
+      },
+      {
+       "sa": "कर्तुमर्हसि",
+       "en": "you should act"
+      }
+     ],
+     "why": "People copy what you do, not what you say; keep showing up.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.3",
+      "title": "Even the wise, even God, act for the world's sake",
+      "summary": "The one content in the self has nothing left to gain, yet the wise, like Janaka and Krishna himself, keep working because others follow their example.",
+      "story_hook": "",
+      "lesson": "People copy what you do, not what you say; keep showing up."
+     },
+     "score": 5.125,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your waiting became a gathered offering. Janaka and others reached fulfilment through action. Their work held the world together. You too can keep working, if only for the good of the world.",
+     "try_today": "Do one small act for the good of the world today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.3.20",
+     "path": "bg.3.20 -cultivates-> seva",
+     "why": [
+      "Meaning through work for others.",
+      "acting for the holding together of the world"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.2.73.chaupai.2",
+      "bg.3.22",
+      "bg.18.46"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana · Aranya Kanda) pointed toward service; today turns it to another way of seeing.",
+      "link": [
+       "toward",
+       "seva"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Your waiting became a gathered offering."
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.25",
+     "ref": "Bhagavad Gita 3.25",
+     "ref_iast": "Bhagavad Gītā 3.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत । कुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम् ॥",
+     "line": "Work as hard as the ambitious do, but for everyone's good, not your own grip on results.",
+     "translation": "As the unwise act with attachment to their work, Bharata, so should the wise act without attachment, wishing to hold the world together.",
+     "words": [
+      {
+       "sa": "सक्ताः",
+       "en": "attached"
+      },
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "अविद्वांसः",
+       "en": "the ignorant"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "कुर्वन्ति",
+       "en": "perform"
+      },
+      {
+       "sa": "भारत",
+       "en": "O Bharata"
+      },
+      {
+       "sa": "कुर्यात्",
+       "en": "should perform"
+      },
+      {
+       "sa": "विद्वान्",
+       "en": "the wise"
+      },
+      {
+       "sa": "तथा",
+       "en": "likewise"
+      },
+      {
+       "sa": "असक्तः",
+       "en": "without attachment"
+      },
+      {
+       "sa": "चिकीर्षुः",
+       "en": "desiring to do"
+      },
+      {
+       "sa": "लोकसंग्रहम्",
+       "en": "the welfare/order of the world"
+      }
+     ],
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 5.145,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Janaka worked for the good of the world and found peace. You too can act for the good of all, keeping your gratitude alive without needing to hold on. Your work is the offering.",
+     "try_today": "Notice the difference between holding the outcome and holding the good intention.",
+     "scene_line": "You watch the world with a quiet wish for its welfare.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "bg.3.25",
+     "path": "bg.3.25 -cultivates-> seva",
+     "why": [
+      "Work for the good of all.",
+      "acting to hold the world together"
+     ],
+     "writer_note": "Letting-go teaching for a reader who is building something. Explain it through their own situation and feeling: what is released is the grip that hurts them, never their love, their hope or their work. Never say or imply 'stop caring' or 'your hope is the problem'. Read it after the guard verse, which reassures first.",
+     "alts": [
+      "up_taittiriya.52",
+      "bg.9.27",
+      "up_brihadaranyak.92"
+     ],
+     "thin": false,
+     "guard": {
+      "id": "bg.12.4",
+      "ref": "Bhagavad Gita 12.4",
+      "line": "Senses in hand, even-minded everywhere, glad in the good of all beings: they reach me too.",
+      "is_previous_day": false
+     },
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 3.20) was about weariness; today brings one practice for it.",
+      "link": [
+       "state",
+       "nirveda"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:contrast_pattern(, not your)"
+     ],
+     "bridge": "Janaka worked for the good of the world and found peace."
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.4.30.chaupai.2",
+     "ref": "Ramcharitmanas, Kishkindha Kand 4.30 (chaupai 2)",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 4.30",
+     "family": "rcm",
+     "speaker": "Sampati",
+     "listener": "the monkeys",
+     "setting": "The monkeys despair at the ocean; the old vulture Sampati rouses them.",
+     "sanskrit": "पापिउ जाकर नाम सुमिरहीं। अति अपार भवसागर तरहीं॥ तासु दूत तुम्ह तजि कदराई राम हृदयँ धरि करहु उपाई ॥",
+     "line": "Drop your timidity. Keep Ram in your heart and find a way.",
+     "translation": "Even sinners who remember his name cross the boundless ocean of the world. You are his messengers: give up your timidity, keep Ram in your heart and find a way.",
+     "words": [
+      {
+       "sa": "पापिउ",
+       "en": "even sinners"
+      },
+      {
+       "sa": "जाकर",
+       "en": "whose"
+      },
+      {
+       "sa": "नाम",
+       "en": "name"
+      },
+      {
+       "sa": "सुमिरहीं",
+       "en": "remember"
+      },
+      {
+       "sa": "अति",
+       "en": "very"
+      },
+      {
+       "sa": "अपार",
+       "en": "vast"
+      },
+      {
+       "sa": "भवसागर",
+       "en": "ocean of becoming"
+      },
+      {
+       "sa": "तरहीं",
+       "en": "cross"
+      },
+      {
+       "sa": "तासु",
+       "en": "that"
+      },
+      {
+       "sa": "दूत",
+       "en": "messenger"
+      },
+      {
+       "sa": "तुम्ह",
+       "en": "you"
+      },
+      {
+       "sa": "तजि",
+       "en": "leaving"
+      },
+      {
+       "sa": "कदराई",
+       "en": "cowardice"
+      },
+      {
+       "sa": "राम",
+       "en": "Ram"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धरि",
+       "en": "placing"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "उपाई",
+       "en": "a way"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": null,
+     "score": 1.97,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, Janaka offered his work for the good of the world. Today, Sampati tells you to hold Ram in your heart and act without timidity.",
+     "try_today": "Notice one small act today done for the good of others without seeking your own gain.",
+     "scene_line": "You stand at the shore of your past, ready to act with Ram in your heart.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.4.30.chaupai.2",
+     "path": "rcm.4.30.chaupai.2 -cultivates-> sharanagati",
+     "why": [
+      "act with Ram held in the heart"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.6.19.doha.1",
+      "rcm.5.4.chaupai.1",
+      "bh.niti.28"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhagavad Gita 3.25) named ego, and today's verse grows surrender; today takes that practice into the hard moment.",
+      "link": [
+       "antidote",
+       "ahankara>sharanagati"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday, Janaka offered his work for the good of the world."
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_sends_lakshman",
+     "title": "Sumitra sends Lakshman with Ram",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Lakshman",
+      "Ram",
+      "Sita"
+     ],
+     "story_hook": "His mother did not ask him to stay; she told him how to make the forest home.",
+     "summary": "As the exiles leave, Lakshman's mother blesses him: treat Ram as your father, Sita as your mother, and the forest as home. She tells him to go happily.",
+     "lesson": "Home is the people you are with; you can carry it into any wilderness.",
+     "matched": [],
+     "anchor": null,
+     "score": 3.46,
+     "why": null,
+     "hook_title": "Lakshman's mother Sumitra didn't ask him to stay",
+     "teaser": "Lakshman's mother Sumitra didn't ask him to stay",
+     "for_you": "Yesterday you let go of timidity and held Ram in your heart. Today you see that your own gratitude is a form of love, chosen freely and held in simple, daily tasks.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.lakshman_chooses_to_serve",
+     "path": "st.vr.lakshman_chooses_to_serve -enacts_turn-> sankalpa, seva ; st.vr.lakshman_chooses_to_serve -fits_situation-> gratitude",
+     "why": [
+      "Service chosen freely, and described in concrete tasks, is a form of love."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.bharata_returns_what_he_held_in_trust",
+      "st.rcm.forest_people_hosts",
+      "st.mbh.parrot_and_the_withered_tree"
+     ],
+     "thin": false,
+     "story_id": "st.vr.lakshman_chooses_to_serve",
+     "arc": {
+      "line": "This week stays with gratitude in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas, Kishkindha Kand 4.30 (chaupai 2)) was about fear; today someone in the texts lives it.",
+      "link": [
+       "state",
+       "bhaya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:pathologises_a_light_state(carry)"
+     ],
+     "bridge": "Yesterday you let go of timidity and held Ram in your heart."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What's it all for",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 50,
+   "v3_w1_write": 0,
+   "v3_w1_calls": 0,
+   "v3_w1_total": 53,
+   "select": 53,
+   "total": 55
+  },
+  "_ms": 58,
+  "_day_ms": [
+   3330,
+   1977,
+   1734,
+   3748,
+   2214,
+   2205
+  ],
+  "_day_calls": [
+   2,
+   1,
+   1,
+   2,
+   1,
+   1
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true
+ }
+}

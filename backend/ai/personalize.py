@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import math
 import re
 import time
 from collections import Counter
@@ -355,6 +356,8 @@ def _user(ctx: PersonContext, items: List[dict], redo: Optional[Dict[str, List[s
             row += "\n  already said this week (do not restate; add the move this day's job asks for): " + " | ".join(it["earlier_lines"])
         rows.append(row + "\n" + grounding_block(it))
     head = f"THE PERSON\n{person_block(ctx)}\n\nDAYS\n" + "\n".join(rows)
+    ids = ", ".join(it["id"] for it in items)
+    head += f"\n\nWrite ONLY these ids: {ids}. Nothing for any other verse, then close the JSON."
     if redo:
         notes = "\n".join(f"- {i}: {'; '.join(REASON_TEXT.get(r, r) for r in rs)}" for i, rs in redo.items())
         head += ("\n\nSECOND ATTEMPT. Your earlier words for these days were set aside for the reasons below. Write them again,\n"
@@ -364,6 +367,17 @@ def _user(ctx: PersonContext, items: List[dict], redo: Optional[Dict[str, List[s
 
 def system_prompt() -> str:
     return SYSTEM.format(voice=VOICE, fidelity=FIDELITY)
+
+
+def _max_tokens(n_items: int) -> int:
+    """Output cap for one writer call: settings.writer_max_tokens per day (env WRITER_MAX_TOKENS, default 650). A call
+    that runs away (writes days it was not asked for) now ends near 2,000 characters instead of at the HTTP timeout."""
+    try:
+        from common.config import settings
+        per = int(settings.writer_max_tokens)
+    except Exception:                                  # pragma: no cover  (settings unavailable in a bare import)
+        per = 650
+    return max(200, per) * max(1, n_items)
 
 
 async def _call(llm, ctx: PersonContext, items: List[dict], timeout_s: float, redo: Optional[Dict[str, List[str]]] = None) -> dict:
@@ -376,8 +390,8 @@ async def _call(llm, ctx: PersonContext, items: List[dict], timeout_s: float, re
             break
         try:
             raw = await asyncio.wait_for(
-                asyncio.to_thread(llm.chat_json, msgs, temperature=0.45 if attempt == 1 else 0.3, max_tokens=1300 * len(items) + 400,
-                                  timeout_s=max(2, int(left))),
+                asyncio.to_thread(llm.chat_json, msgs, temperature=0.45 if attempt == 1 else 0.3, max_tokens=_max_tokens(len(items)),
+                                  timeout_s=max(2, math.ceil(left))),     # ceil: int() made a 6 s deadline a 5 s HTTP timeout
                 timeout=left)
             break
         except Exception as e:

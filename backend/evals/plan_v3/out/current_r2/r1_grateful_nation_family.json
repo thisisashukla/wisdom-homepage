@@ -1,0 +1,1000 @@
+{
+ "case": "r1_grateful_nation_family",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "family",
+    "work",
+    "child",
+    "parent",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Everything in my life is changing at once",
+   "mirror": "Everything in my life is changing at once",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 1.767,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.551,
+     "source": "note"
+    },
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.399,
+     "source": "note"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.339,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids and caring for their parents and studying and retired. Feels determined; closest to \"Everything in my life is changing at once\" and \"I'm anxious about how things will turn out\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents",
+    "studying",
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.77,wro=0.31,see=0.25",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.3.19",
+   "ref": "Bhagavad Gita 3.19",
+   "ref_iast": "Bhagavad Gītā 3.19",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna to Arjuna on why even the fulfilled keep working for the world.",
+   "sanskrit": "तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥",
+   "line": "So keep doing the work that needs doing, well and without clinging. That's how you rise.",
+   "translation": "Therefore, always do the work that has to be done, without attachment; by working without attachment a person reaches the highest.",
+   "words": [
+    {
+     "sa": "तस्मात्",
+     "en": "therefore"
+    },
+    {
+     "sa": "असक्तः",
+     "en": "without attachment"
+    },
+    {
+     "sa": "सततं",
+     "en": "continuously"
+    },
+    {
+     "sa": "कार्यं",
+     "en": "duty"
+    },
+    {
+     "sa": "कर्म",
+     "en": "action"
+    },
+    {
+     "sa": "समाचर",
+     "en": "perform well"
+    },
+    {
+     "sa": "असक्तः",
+     "en": "without attachment"
+    },
+    {
+     "sa": "हि",
+     "en": "indeed"
+    },
+    {
+     "sa": "आचरन्",
+     "en": "performing"
+    },
+    {
+     "sa": "कर्म",
+     "en": "action"
+    },
+    {
+     "sa": "परम्",
+     "en": "supreme"
+    },
+    {
+     "sa": "आप्नोति",
+     "en": "attains"
+    },
+    {
+     "sa": "पूरुषः",
+     "en": "person"
+    }
+   ],
+   "why": "People copy what you do, not what you say; keep showing up.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p03.3",
+    "title": "Even the wise, even God, act for the world's sake",
+    "summary": "The one content in the self has nothing left to gain, yet the wise, like Janaka and Krishna himself, keep working because others follow their example.",
+    "story_hook": "",
+    "lesson": "People copy what you do, not what you say; keep showing up."
+   },
+   "score": 2.4363,
+   "beat": "hook",
+   "role_fit": 0.015,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.2.47",
+    "ref": "Bhagavad Gita 2.47",
+    "ref_iast": "Bhagavad Gītā 2.47",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on how to act without being chained to results.",
+    "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+    "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+    "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+    "words": [
+     {
+      "sa": "कर्मणि",
+      "en": "in action"
+     },
+     {
+      "sa": "एव",
+      "en": "only"
+     },
+     {
+      "sa": "अधिकारः",
+      "en": "right"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "मा",
+      "en": "not"
+     },
+     {
+      "sa": "फलेषु",
+      "en": "in the fruits"
+     },
+     {
+      "sa": "कदाचन",
+      "en": "ever"
+     },
+     {
+      "sa": "मा",
+      "en": "not"
+     },
+     {
+      "sa": "कर्मफलहेतुर्भूः",
+      "en": "cause of the fruit of action"
+     },
+     {
+      "sa": "भूः",
+      "en": "become"
+     },
+     {
+      "sa": "मा",
+      "en": "not"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "सङ्गः",
+      "en": "attachment"
+     },
+     {
+      "sa": "अस्तु",
+      "en": "be"
+     },
+     {
+      "sa": "अकर्मणि",
+      "en": "in inaction"
+     }
+    ],
+    "why": "Do the work fully; let go of owning the result.",
+    "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "outcome_anxiety",
+      "label": "I'm anxious about how things will turn out"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.4",
+     "title": "The yoga of action",
+     "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+     "story_hook": "",
+     "lesson": "Do the work fully; let go of owning the result."
+    },
+    "score": 2.6436,
+    "beat": "hook",
+    "role_fit": 0.085,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.18.45",
+    "ref": "Bhagavad Gita 18.45",
+    "ref_iast": "Bhagavad Gītā 18.45",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+    "sanskrit": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः । स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु ॥",
+    "line": "Devoted to your own work, you reach fulfilment. Here's how.",
+    "translation": "Each person, devoted to his own work, attains perfection. Hear how one devoted to his own work finds perfection.",
+    "words": [
+     {
+      "sa": "स्वे",
+      "en": "own"
+     },
+     {
+      "sa": "स्वे",
+      "en": "each"
+     },
+     {
+      "sa": "कर्मणि",
+      "en": "in action"
+     },
+     {
+      "sa": "अभिरतः",
+      "en": "engaged"
+     },
+     {
+      "sa": "संसिद्धिं",
+      "en": "perfection"
+     },
+     {
+      "sa": "लभते",
+      "en": "attains"
+     },
+     {
+      "sa": "नरः",
+      "en": "person"
+     },
+     {
+      "sa": "स्वकर्मनिरतः",
+      "en": "engaged in own action"
+     },
+     {
+      "sa": "सिद्धिं",
+      "en": "success"
+     },
+     {
+      "sa": "यथा",
+      "en": "as"
+     },
+     {
+      "sa": "विन्दति",
+      "en": "obtains"
+     },
+     {
+      "sa": "तच्छृणु",
+      "en": "hear that"
+     }
+    ],
+    "why": "Do the work that fits you, flaws and all, as an offering.",
+    "misuse": "Not 'stay in the job your community or birth assigned'. 'Your own work' means the work that fits your nature.",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p18.4",
+     "title": "Duties by nature, and their fruit",
+     "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+     "story_hook": "",
+     "lesson": "Do the work that fits you, flaws and all, as an offering."
+    },
+    "score": 2.0062,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 471,
+   "llm": 7003,
+   "total": 10712,
+   "select": 3235
+  },
+  "_ms": 10717
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "family",
+    "work",
+    "child",
+    "parent",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Everything in my life is changing at once",
+   "mirror": "Everything in my life is changing at once",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 1.767,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.551,
+     "source": "note"
+    },
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.399,
+     "source": "note"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 1.339,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids and caring for their parents and studying and retired. Feels determined; closest to in my life is changing at once\" and anxious about how things will turn out\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents",
+    "studying",
+    "retired"
+   ],
+   "flags": [
+    "week_fit:19=0.6,26=0.6,84=0.6,81=0.0,15=0.6,31=0.6",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.60,max=0.67",
+    "redo:3",
+    "redo_fixed:4",
+    "dropped:invented=1,repeat=3,soft_kept=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.19",
+     "ref": "Bhagavad Gita 3.19",
+     "ref_iast": "Bhagavad Gītā 3.19",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on why even the fulfilled keep working for the world.",
+     "sanskrit": "तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥",
+     "line": "So keep doing the work that needs doing, well and without clinging. That's how you rise.",
+     "translation": "Therefore, always do the work that has to be done, without attachment; by working without attachment a person reaches the highest.",
+     "words": [
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "असक्तः",
+       "en": "without attachment"
+      },
+      {
+       "sa": "सततं",
+       "en": "continuously"
+      },
+      {
+       "sa": "कार्यं",
+       "en": "duty"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "समाचर",
+       "en": "perform well"
+      },
+      {
+       "sa": "असक्तः",
+       "en": "without attachment"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आचरन्",
+       "en": "performing"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "परम्",
+       "en": "supreme"
+      },
+      {
+       "sa": "आप्नोति",
+       "en": "attains"
+      },
+      {
+       "sa": "पूरुषः",
+       "en": "person"
+      }
+     ],
+     "why": "People copy what you do, not what you say; keep showing up.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.3",
+      "title": "Even the wise, even God, act for the world's sake",
+      "summary": "The one content in the self has nothing left to gain, yet the wise, like Janaka and Krishna himself, keep working because others follow their example.",
+      "story_hook": "",
+      "lesson": "People copy what you do, not what you say; keep showing up."
+     },
+     "score": 2.3584,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna has just laid down his bow and refused to fight. Krishna tells him that even the fulfilled, even God, act for the world's sake. The one content in the self has nothing left to gain, yet the wise keep working because others follow their example. So keep doing the work that needs doing, well and without clinging. That is how you rise.",
+     "for_you": "You are building your own work while the ground beneath your feet is shifting. People watch what you do. Show up for the work that is in front of you. Let the rest wait.",
+     "try_today": "Notice one small task at your work or with your children that only you can do today.",
+     "scene_line": "You are on the field of with your bow in hand, facing the change you cannot stop.",
+     "asks": [
+      "How do I know when to start and when to wait?",
+      "What is the work that only I can do right now?",
+      "How do I let go of the outcome while I am still in it?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.135.26",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 135.26-27",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "सर्वेषां कर्मणां तात फले नित्यमनित्यता / अनित्यमिति जानन्तो न भवन्ति भवन्ति च अथ ये नैव कुर्वन्ति नैव जातु भवन्ति ते / ऐकगुण्यमनीहायामभावः कर्मणां फलम्",
+     "line": "Every result is uncertain. Some who try succeed and some don't. Those who never try never do.",
+     "translation": "The result of every action is uncertain. Knowing this, some people act and succeed, some do not. But those who never act never succeed at all.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.144,
+     "beat": "diagnose",
+     "role_fit": 0.85,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after he has lost his kingdom. She does not let him stay there. She tells him that the result of any action is uncertain. Some who try succeed and some do not. But those who never try never do. She is saying that failure in the past does not have to be the end. The only certain thing is that nothing happens to those who refuse to act.",
+     "for_you": "You are building something of your own while the rest of your life is shifting around you. That feeling of being stuck and not starting is not a sign that you could stop. It is a sign that the next step is yours alone.",
+     "try_today": "Do one small part of the new thing you have been waiting to begin.",
+     "scene_line": "You are in your own room of defeat, with a kingdom to reclaim.",
+     "asks": [
+      "How do I tell trying from failing?",
+      "What is the one thing I can do today?",
+      "How do I keep going when the results are unknown?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "words": [],
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.033,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from a quiet room, knowing that the world will not stop judging. He says that fortune will come and go, that people will offer praise or blame, and that death may arrive at any hour. Through all of this, the steady person does not step off the path of what is right. The idea is that setbacks rarely last for those who keep going on the right path. The steady keep doing what is right, no matter the noise around them.",
+     "for_you": "You are building your own work while raising children and caring for parents, and the noise of the world feels loud right now. The verse does not ask you to ignore the changes, only to keep your hand on the right path while they happen.",
+     "try_today": "Notice one small task that is right for you today and do it fully, without checking if it will succeed.",
+     "scene_line": "You are in your own room of change, and the world is outside judging it.",
+     "asks": [
+      "How do I know what the right path looks like right now?",
+      "What if the praise I get is not for the right work?",
+      "Can the path stay steady if I am changing so fast?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.4",
+     "ref": "Ashtavakra Gita 1.4",
+     "ref_iast": "Aṣṭāvakra Gītā 1.4",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "यदि देहं पृथक् कृत्य चिति विश्राम्य तिष्ठसि । अधुनैव सुखी शान्तो बन्धमुक्तो भविष्यसि ॥",
+     "line": "Step back from the body, rest as awareness, and right now you can be happy, calm and free.",
+     "translation": "If you set the body apart and rest in awareness, then this very moment you will be happy, at peace and free of bondage.",
+     "words": [
+      {
+       "sa": "यदि",
+       "en": "if"
+      },
+      {
+       "sa": "देहं",
+       "en": "body"
+      },
+      {
+       "sa": "पृथक्",
+       "en": "separate"
+      },
+      {
+       "sa": "कृत्य",
+       "en": "having done"
+      },
+      {
+       "sa": "चिति",
+       "en": "consciousness"
+      },
+      {
+       "sa": "विश्राम्य",
+       "en": "resting"
+      },
+      {
+       "sa": "तिष्ठसि",
+       "en": "you stand/remain"
+      },
+      {
+       "sa": "अधुनैव",
+       "en": "right now"
+      },
+      {
+       "sa": "सुखी",
+       "en": "happy"
+      },
+      {
+       "sa": "शान्तो",
+       "en": "peaceful"
+      },
+      {
+       "sa": "बन्धमुक्तो",
+       "en": "bondage-free"
+      },
+      {
+       "sa": "भविष्यसि",
+       "en": "you will be"
+      }
+     ],
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "morning_calm",
+       "label": "I want a calm start to my day"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 1.9698,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "King Janaka asks the young sage Ashtavakra how a person becomes free. Ashtavakra answers that you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+     "for_you": "You are building your own work while raising children and caring for your parents. It is a heavy load, and your mind is full. The teaching is that you are not the roles you play or the tasks you carry. You are the awareness that sees them all.",
+     "try_today": "Notice the part of you that is watching your thoughts and tasks.",
+     "scene_line": "You are the awareness that sees your own life unfold.",
+     "asks": [
+      "How do I rest as awareness when my days are full?",
+      "Can I be free while my body is still doing everything?",
+      "What does it mean to step back from my own life?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "words": [],
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.483,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Medhavin, a young man, speaks to his father, who is delaying his spiritual life. The father wants to wait for the right time, to finish his duties and rest. Medhavin says the hours and days are passing like arrows. Death can come to a person in the middle of their tasks. He tells his father to do tomorrow's work today, and the afternoon's in the morning. The point is that life moves forward while we stay busy. You could act on what matters right now.",
+     "for_you": "You are building your own work, raising children, and caring for your parents, all while studying. It is easy to think you could finish one thing before you begin another. But the days and nights are passing like arrows.",
+     "try_today": "Do tomorrow's work today",
+     "scene_line": "You are in the middle of your tasks.",
+     "asks": [
+      "How do I know what matters now?",
+      "How do I stop waiting for the right time?",
+      "How do I keep moving when I am busy?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "words": [],
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.1862,
+     "beat": "act",
+     "role_fit": 0.916,
+     "meaning": null,
+     "for_you": "You are building something of your own while your days are full. The doubt you feel is using the energy that could start the work. Decide on one small step and begin it now, without waiting for the whole path to be clear.",
+     "try_today": "Pick one task and begin it before the day ends.",
+     "scene_line": "You are the king in the night, called to counsel your own next move.",
+     "asks": [
+      "How do I know when I have decided enough?",
+      "What if I choose the wrong step to begin with?",
+      "How do I keep my hand steady when everything is changing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.hanuman_leap",
+     "title": "Hanuman's leap",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman",
+      "Mainaka",
+      "Surasa",
+      "Simhika"
+     ],
+     "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+     "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+     "lesson": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.1.146",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+      "family": "vr",
+      "speaker": "Beings of the sky",
+      "listener": "Hanuman",
+      "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+      "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+      "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+      "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+      "words": [],
+      "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.hanuman_leap",
+       "title": "Hanuman's leap",
+       "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+       "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+       "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Halfway across the ocean, a mountain rose up and offered Hanuman a rest",
+     "teaser": "Halfway across the ocean, a mountain rose up and offered Hanuman a rest",
+     "for_you": "You are building something that asks for your full weight, yet your mind keeps offering you places to pause. The texts say that steadiness and focus can walk together, and that knowing when to be large and when to be small is the mark of someone who will not sink.",
+     "asks": [
+      "How do I know when to shrink and when to grow?",
+      "Where is my golden mountain offering me a false rest?",
+      "What is the one promise I am making to myself right now?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Stuck at the start",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 14868,
+   "total": 14870
+  },
+  "_ms": 14877
+ }
+}

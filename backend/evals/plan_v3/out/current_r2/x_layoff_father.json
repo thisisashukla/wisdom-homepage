@@ -1,0 +1,1247 @@
+{
+ "case": "x_layoff_father",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "I can't handle not knowing what comes next",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 2.068,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 1.497,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 1.474,
+     "source": "note"
+    },
+    {
+     "id": "greed_more",
+     "label": "I always want more",
+     "weight": 1.37,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I can't handle not knowing what comes next. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"I can't handle not knowing what comes next\" and \"Should I quit my job or stay\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.03,wro=0.35,see=0.05",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.2.6",
+   "ref": "Bhagavad Gita 2.6",
+   "ref_iast": "Bhagavad Gītā 2.6",
+   "family": "bg",
+   "speaker": "Arjuna",
+   "listener": "Krishna",
+   "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+   "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+   "line": "I can't tell which is better, or even what winning would look like.",
+   "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+   "words": [
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "एतत्",
+     "en": "this"
+    },
+    {
+     "sa": "विद्मः",
+     "en": "we know"
+    },
+    {
+     "sa": "कतरत्",
+     "en": "which of the two"
+    },
+    {
+     "sa": "नः",
+     "en": "for us"
+    },
+    {
+     "sa": "गरीयः",
+     "en": "better"
+    },
+    {
+     "sa": "यत् वा",
+     "en": "or which"
+    },
+    {
+     "sa": "जयेम",
+     "en": "we would conquer"
+    },
+    {
+     "sa": "यदि वा",
+     "en": "or whether"
+    },
+    {
+     "sa": "नः",
+     "en": "us"
+    },
+    {
+     "sa": "जयेयुः",
+     "en": "they would conquer"
+    },
+    {
+     "sa": "यान्",
+     "en": "those whom"
+    },
+    {
+     "sa": "एव",
+     "en": "indeed"
+    },
+    {
+     "sa": "हत्वा",
+     "en": "having killed"
+    },
+    {
+     "sa": "न",
+     "en": "not"
+    },
+    {
+     "sa": "जिजीविषामः",
+     "en": "we wish to live"
+    },
+    {
+     "sa": "ते",
+     "en": "they"
+    },
+    {
+     "sa": "अवस्थिताः",
+     "en": "standing"
+    },
+    {
+     "sa": "प्रमुखे",
+     "en": "in front"
+    },
+    {
+     "sa": "धार्तराष्ट्राः",
+     "en": "sons of Dhritarashtra"
+    }
+   ],
+   "why": "Admitting you don't know and asking for help is where clarity begins.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p02.1",
+    "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+    "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+    "story_hook": "",
+    "lesson": "Admitting you don't know and asking for help is where clarity begins."
+   },
+   "score": 3.3442,
+   "beat": "hook",
+   "role_fit": 0.845,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.2.7",
+    "ref": "Bhagavad Gita 2.7",
+    "ref_iast": "Bhagavad Gītā 2.7",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+    "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+    "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+    "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+    "words": [
+     {
+      "sa": "कार्पण्यदोषोपहतस्वभावः",
+      "en": "nature overcome by weakness"
+     },
+     {
+      "sa": "पृच्छामि",
+      "en": "I ask"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "धर्मसंमूढचेताः",
+      "en": "mind confused about duty"
+     },
+     {
+      "sa": "यत्",
+      "en": "which"
+     },
+     {
+      "sa": "श्रेयः",
+      "en": "the highest good"
+     },
+     {
+      "sa": "स्यात्",
+      "en": "may be"
+     },
+     {
+      "sa": "निश्चितम्",
+      "en": "certainly"
+     },
+     {
+      "sa": "ब्रूहि",
+      "en": "tell"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "मे",
+      "en": "to me"
+     },
+     {
+      "sa": "शिष्यः",
+      "en": "student"
+     },
+     {
+      "sa": "ते",
+      "en": "your"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "शाधि",
+      "en": "instruct"
+     },
+     {
+      "sa": "माम्",
+      "en": "me"
+     },
+     {
+      "sa": "त्वाम्",
+      "en": "you"
+     },
+     {
+      "sa": "प्रपन्नम्",
+      "en": "one who has taken refuge"
+     }
+    ],
+    "why": "Admitting you don't know and asking for help is where clarity begins.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "uncertainty",
+      "label": "I can't handle not knowing what comes next"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p02.1",
+     "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+     "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+     "story_hook": "",
+     "lesson": "Admitting you don't know and asking for help is where clarity begins."
+    },
+    "score": 2.8023,
+    "beat": "hook",
+    "role_fit": 0.94,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.3.2",
+    "ref": "Bhagavad Gita 3.2",
+    "ref_iast": "Bhagavad Gītā 3.2",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+    "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे । तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ॥",
+    "line": "Your advice sounds mixed and confuses me. Tell me the one thing I should do.",
+    "translation": "With these seemingly mixed words you confuse my mind. Tell me decisively that one thing by which I may reach the highest good.",
+    "words": [
+     {
+      "sa": "व्यामिश्रेण",
+      "en": "mixed"
+     },
+     {
+      "sa": "इव",
+      "en": "as if"
+     },
+     {
+      "sa": "वाक्येन",
+      "en": "by words"
+     },
+     {
+      "sa": "बुद्धिम्",
+      "en": "understanding"
+     },
+     {
+      "sa": "मोहयसि",
+      "en": "you confuse"
+     },
+     {
+      "sa": "इव",
+      "en": "as if"
+     },
+     {
+      "sa": "मे",
+      "en": "my"
+     },
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "एकम्",
+      "en": "one"
+     },
+     {
+      "sa": "वद",
+      "en": "speak"
+     },
+     {
+      "sa": "निश्िचत्य",
+      "en": "after deciding"
+     },
+     {
+      "sa": "येन",
+      "en": "by which"
+     },
+     {
+      "sa": "श्रेयः",
+      "en": "highest good"
+     },
+     {
+      "sa": "अहम्",
+      "en": "I"
+     },
+     {
+      "sa": "आप्नुयाम्",
+      "en": "may attain"
+     }
+    ],
+    "why": "Not acting is still a choice; do the work that is yours.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "uncertainty",
+      "label": "I can't handle not knowing what comes next"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p03.1",
+     "title": "Why doing your duty without attachment is better",
+     "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+     "story_hook": "",
+     "lesson": "Not acting is still a choice; do the work that is yours."
+    },
+    "score": 2.5828,
+    "beat": "hook",
+    "role_fit": 0.405,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 180,
+   "llm": 7009,
+   "total": 10159,
+   "select": 2967
+  },
+  "_ms": 10163
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't handle not knowing what comes next",
+   "mirror": "I can't handle not knowing what comes next",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 2.068,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 1.497,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 1.474,
+     "source": "note"
+    },
+    {
+     "id": "greed_more",
+     "label": "I always want more",
+     "weight": 1.37,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I can't handle not knowing what comes next. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and caring for their parents. Feels uneasy; closest to \"I can't handle not knowing what comes next\" and I quit my job or stay\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:6=0.6,2=0.3,5=0.6,10=0.3,1=0.6,1=0.6",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.69",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:repeat=3,soft_kept=2,try_today_technique=1",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.6",
+     "ref": "Bhagavad Gita 2.6",
+     "ref_iast": "Bhagavad Gītā 2.6",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+     "line": "I can't tell which is better, or even what winning would look like.",
+     "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+     "words": [
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "विद्मः",
+       "en": "we know"
+      },
+      {
+       "sa": "कतरत्",
+       "en": "which of the two"
+      },
+      {
+       "sa": "नः",
+       "en": "for us"
+      },
+      {
+       "sa": "गरीयः",
+       "en": "better"
+      },
+      {
+       "sa": "यत् वा",
+       "en": "or which"
+      },
+      {
+       "sa": "जयेम",
+       "en": "we would conquer"
+      },
+      {
+       "sa": "यदि वा",
+       "en": "or whether"
+      },
+      {
+       "sa": "नः",
+       "en": "us"
+      },
+      {
+       "sa": "जयेयुः",
+       "en": "they would conquer"
+      },
+      {
+       "sa": "यान्",
+       "en": "those whom"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "हत्वा",
+       "en": "having killed"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "जिजीविषामः",
+       "en": "we wish to live"
+      },
+      {
+       "sa": "ते",
+       "en": "they"
+      },
+      {
+       "sa": "अवस्थिताः",
+       "en": "standing"
+      },
+      {
+       "sa": "प्रमुखे",
+       "en": "in front"
+      },
+      {
+       "sa": "धार्तराष्ट्राः",
+       "en": "sons of Dhritarashtra"
+      }
+     ],
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 3.2419,
+     "beat": "hook",
+     "role_fit": 0.845,
+     "meaning": "Arjuna stands on the battlefield and looks at the people he must fight. He does not know which choice is right. He cannot tell if fighting or staying is better. He does not know if they will win or lose. He feels that even if they win, he would not want to live after killing these people. He admits he is lost. He asks Krishna to teach him.",
+     "for_you": "You are standing at a crossroads where neither path feels clear. You do not know if leaving your work is the right move or if staying is the right move. You are afraid of what comes next, and that fear is heavy.",
+     "try_today": "Notice when your mind races ahead to the worst possible outcome.",
+     "scene_line": "You are on your own battlefield, looking at the people you love and not knowing which way to turn.",
+     "asks": [
+      "How do I ask for help when I am supposed to have the answers?",
+      "What does it mean to admit I do not know?",
+      "Can I stay in this uncertainty without falling apart?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "words": [
+      {
+       "sa": "दीनताजं",
+       "en": "from humility"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "माने",
+       "en": "in honor"
+      },
+      {
+       "sa": "गुणे",
+       "en": "in virtue"
+      },
+      {
+       "sa": "खलभयं",
+       "en": "fear of wickedness"
+      },
+      {
+       "sa": "खलु",
+       "en": "indeed"
+      },
+      {
+       "sa": "भयं",
+       "en": "fear"
+      },
+      {
+       "sa": "निन्दकजं",
+       "en": "born of criticism"
+      },
+      {
+       "sa": "शक्तौ",
+       "en": "in strength"
+      },
+      {
+       "sa": "विद्यायां",
+       "en": "in knowledge"
+      },
+      {
+       "sa": "वादिनं",
+       "en": "of the debater"
+      },
+      {
+       "sa": "भयम्",
+       "en": "fear"
+      }
+     ],
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 3.0671,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "The frightened gods ask Vishnu how to become fearless. He answers that fear is the price of every gain. Honour brings the fear of disgrace. Virtue brings the fear of the wicked. Power brings the fear of critics. Learning brings the fear of rival debaters. Every possession carries its own danger. The only way out is to hold things lightly.",
+     "for_you": "You are caught between keeping your job or walking away, and the fear of what comes next. This verse names the trap you are in. You are trying to secure your family's future by controlling the outcome, but every gain brings its own fear.",
+     "try_today": "Notice one moment where you try to control an outcome today.",
+     "scene_line": "You are in your own kitchen, holding a cup of tea, and the fear of what comes next is the only thing you are holding.",
+     "asks": [
+      "What if I let go of the outcome today?",
+      "How do I hold my work lightly?",
+      "What is the fear that comes with my gain?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "tulsi_vp.250",
+     "ref": "Vinay Patrika",
+     "ref_iast": "Vinaya Patrikā, pada 250",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "Ram",
+     "setting": "Frightened by hard times, Tulsidas asks Ram to say the words he needs to hear.",
+     "sanskrit": "रीति सुनि रावरी प्रतीति-प्रीति रावरे सों, डरत हौं देखि कलिकालको कहरु। कहेही बनैगी कै कहाये, बलि जाउँ, राम, “तुलसी ! तू मेरो, हारि हिये न हहरु'॥",
+     "line": "\"You are mine. Do not lose heart, do not tremble.\"",
+     "translation": "Having heard your ways, my trust and love are in you, yet I am afraid, seeing the cruelty of these times. It will only be well if you say it, or have it said, Ram: \"Tulsi, you are mine. Do not lose heart, do not tremble.\"",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0587,
+     "beat": "steady",
+     "role_fit": 0.56,
+     "meaning": "Frightened by the cruelty of these times, Tulsidas turns to Ram. He says his trust and love are in Ram, yet he is afraid. He asks Ram to say the words that will hold him steady. Ram replies, 'You are mine. Do not lose heart, do not tremble.' verse offers a promise of belonging as the answer to fear.",
+     "for_you": "You are standing in the middle of a choice that feels too large to hold, and your mind is already living through the worst of it. Tulsidas was afraid too, but he was also held. The work you do and the people you care for are yours.",
+     "try_today": "Notice one moment where you are held, not where you might fall.",
+     "scene_line": "You are afraid in the middle of hard times, and you ask for a word to hold.",
+     "asks": [
+      "How do I know if I am losing heart or just pausing?",
+      "Can a promise keep me from trembling when the choice is real?",
+      "What does it mean to be held when I am the one holding everything?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "words": [],
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 2.0242,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama is teaching Nachiketa about the self that lives inside the body and outlives it. He says the true self is not born and does not die. It is not cut down when the body is cut. It is bodiless, steady, and all-pervading. Knowing this, the wise one does not grieve.",
+     "for_you": "Your mind is rehearsing futures that have not happened. The work you do, the care you give, the children you are raising, they all rest on something that cannot be lost. That steady core is what stays when the plans change.",
+     "try_today": null,
+     "scene_line": "You are inside the changing body, waiting for the steady self to show itself.",
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "धीरजु",
+       "en": "patience, courage"
+      },
+      {
+       "sa": "धरहु",
+       "en": "hold"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "जो",
+       "en": "which"
+      },
+      {
+       "sa": "अवसर",
+       "en": "occasion, task"
+      },
+      {
+       "sa": "आजु",
+       "en": "today"
+      },
+      {
+       "sa": "उठे",
+       "en": "rose"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "गुर",
+       "en": "guru's"
+      },
+      {
+       "sa": "बचन",
+       "en": "words"
+      },
+      {
+       "sa": "सुनि",
+       "en": "hearing"
+      },
+      {
+       "sa": "करन",
+       "en": "to do"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "सबु",
+       "en": "all"
+      },
+      {
+       "sa": "साजु",
+       "en": "arrangements"
+      }
+     ],
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 4.0515,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is broken after his father's death and his brother's exile. Bharat wants to give the throne up and go to the forest to beg for forgiveness. Vasishtha tells him to keep courage in his heart and do what this moment asks. Bharat rises and gets everything ready to leave. The verse asks you to stop living in the future and simply meet the task in front of you.",
+     "for_you": "You are caught between staying and leaving, and the unknown is eating at you. Vasishtha tells Bharat to stop weighing the crown and simply do what the moment asks. In your own quiet, do what this hour asks of you.",
+     "try_today": "Name the single task waiting for you right now.",
+     "scene_line": "You stand at the edge of the forest, ready to do what this moment asks.",
+     "asks": [
+      "What is the very next task I can do today?",
+      "How do I keep courage when I feel I have wronged them?",
+      "What does doing what today asks look like for me?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.1.247.chaupai.1",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 247",
+     "family": "rcm",
+     "speaker": "Narrator",
+     "listener": "the reader",
+     "setting": "Ram, standing before Shiva's bow, sees Sita's anguish and knows the moment won't wait.",
+     "sanskrit": "देखी बिपुल बिकल बैदेही। निमिष बिहात कलप सम तेही। तृषित बारि बिनु जो तनु त्यागा। मुएँ करइ का सुधा तड़ागा ॥ का बरषा सब कृषी सुखानें। समय चुकें पुनि का पछितानें॥ अस जियँ जानि जानकी देखी। प्रभु पुलके लखि प्रीति बिसेषी ॥",
+     "line": "What use is rain after the crops have dried? Act while the moment is still here.",
+     "translation": "He saw Vaidehi in deep distress, each moment passing like an age. If a thirsty man dies for want of water, what use is a lake of nectar after he is gone? What use is rain when the crops have dried? What use is regret once the moment has passed? Knowing this, he looked at Janaki, and seeing her deep love, he thrilled.",
+     "words": [
+      {
+       "sa": "देखी",
+       "en": "saw"
+      },
+      {
+       "sa": "बिपुल",
+       "en": "greatly"
+      },
+      {
+       "sa": "बिकल",
+       "en": "distressed"
+      },
+      {
+       "sa": "बैदेही",
+       "en": "Vaidehi"
+      },
+      {
+       "sa": "निमिष",
+       "en": "moment"
+      },
+      {
+       "sa": "बिहात",
+       "en": "passing"
+      },
+      {
+       "sa": "कलप",
+       "en": "an age"
+      },
+      {
+       "sa": "सम",
+       "en": "like"
+      },
+      {
+       "sa": "तेही",
+       "en": "for her"
+      },
+      {
+       "sa": "तृषित",
+       "en": "thirsty"
+      },
+      {
+       "sa": "बारि",
+       "en": "water"
+      },
+      {
+       "sa": "बिनु",
+       "en": "without"
+      },
+      {
+       "sa": "जो",
+       "en": "who"
+      },
+      {
+       "sa": "तनु",
+       "en": "body"
+      },
+      {
+       "sa": "त्यागा",
+       "en": "gave up"
+      },
+      {
+       "sa": "मुएँ",
+       "en": "after dying"
+      },
+      {
+       "sa": "करइ",
+       "en": "does"
+      },
+      {
+       "sa": "का",
+       "en": "what"
+      },
+      {
+       "sa": "सुधा",
+       "en": "nectar"
+      },
+      {
+       "sa": "तड़ागा",
+       "en": "pool"
+      }
+     ],
+     "why": "Some moments do not wait; when it is time, act.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bow",
+      "title": "Janaka's despair and the bow",
+      "summary": "Ten thousand kings fail to lift Shiva's bow, and Janaka cries out that the earth has no heroes left. Lakshman bristles; Vishwamitra sends Ram forward. Ram sees Sita's anguish, knows that rain after the crops have dried is useless, lifts the bow and breaks it in a moment.",
+      "story_hook": "Ten thousand kings had tried the bow, and the room had gone quiet.",
+      "lesson": "Some moments do not wait; when it is time, act."
+     },
+     "score": 2.8949,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "The narrator asks the reader to consider a man who has died of thirst. A lake of nectar and a downpour of rain cannot help him now. The moment has passed. The point is that some moments do not wait for our readiness. When the time is here, action is the only answer, because regret after the moment is useless.",
+     "for_you": "You are standing at a moment that will not wait. The mind imagines a thousand futures, but the present is already here. The question is not what might happen, but what today asks of you. Let the next move be small and real.",
+     "try_today": "Ask what this exact moment asks of you, and do that one thing.",
+     "scene_line": "You are at the moment that will not wait, with a choice that cannot be put off.",
+     "asks": [
+      "What does this exact moment ask of me?",
+      "How do I stop waiting for a better feeling to act?",
+      "What is the smallest move I can make right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "words": [],
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "uncertainty",
+        "label": "I can't handle not knowing what comes next"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are the king. The sages sing, but the roof is still there. You do not need to leave your work, your parents, your children. You only need to do the next thing with a hand that is not white-knuckled. The fear is not the problem.",
+     "asks": [
+      "How do I do my work with a mind that is not clutching?",
+      "What is the first thing I can do without gripping it?",
+      "How do I know the difference between holding on and letting go?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12705,
+   "total": 12707
+  },
+  "_ms": 12712
+ }
+}

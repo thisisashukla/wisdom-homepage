@@ -1,0 +1,1141 @@
+{
+ "case": "t3_friend_harvard",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel jealous of someone close to me",
+   "mirror": "I feel jealous of someone close to me",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel jealous of someone close to me. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Your own path, walked imperfectly, is better than another's walked well; what is yours is enough to begin with.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A story of a seeker whose mind will not settle, facing measuring yourself against others."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel jealous of someone close to me\" and \"I feel ashamed of who I am\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.3,wro=0.1,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:alt:blocked_for_stance",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "uneasy",
+    "trail": [
+     "hurt",
+     "uneasy"
+    ],
+    "paused": "hurt",
+    "stance": "wronged",
+    "states": [
+     "chinta",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "envy",
+     "shame",
+     "anger_outburst"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.2.75.15",
+    "first_line": "You hate that you feel this way, yet you know your love for her is as deep as Bharata's for Ram."
+   }
+  },
+  "hook": {
+   "id": "vr.2.75.15",
+   "ref": "Valmiki Ramayana · Ayodhya Kanda",
+   "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+   "family": "vr",
+   "speaker": "Bharata",
+   "listener": "Kausalya",
+   "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+   "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+   "line": "Why blame me, who knew nothing? You know what I feel for him.",
+   "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+   "words": [],
+   "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [],
+   "prasang": {
+    "id": "vr.p.bharata_blamed",
+    "title": "Bharata wrongly blamed",
+    "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+    "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+    "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You hate that you feel this way, yet you know your love for her is as deep as Bharata's for Ram.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You hate that you feel this way, yet you know your love for her is as deep as Bharata's for Ram.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "rcm.2.170.chaupai.7",
+    "ref": "Ramcharitmanas · Ayodhya Kand",
+    "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 170",
+    "family": "rcm",
+    "speaker": "Bharat",
+    "listener": "Vasishtha and Kausalya",
+    "setting": "Bharat, urged by his teacher and mother to accept the throne, explains why he cannot.",
+    "sanskrit": "तुम्ह तौ देहु सरल सिख सोई। जो आचरत मोर भल होई॥ जद्यपि यह समुझत हउँ नीकें। तदपि होत परितोष न जी कें ॥",
+    "line": "I understand your advice perfectly. My heart still isn't at peace.",
+    "translation": "You give me simple advice, the kind that would do me good if I followed it. Though I understand it well, my heart is not at peace.",
+    "words": [
+     {
+      "sa": "तुम्ह",
+      "en": "you"
+     },
+     {
+      "sa": "तौ",
+      "en": "indeed"
+     },
+     {
+      "sa": "देहु",
+      "en": "you give"
+     },
+     {
+      "sa": "सरल",
+      "en": "simple"
+     },
+     {
+      "sa": "सिख",
+      "en": "teaching"
+     },
+     {
+      "sa": "सोई",
+      "en": "that same"
+     },
+     {
+      "sa": "जो",
+      "en": "which"
+     },
+     {
+      "sa": "आचरत",
+      "en": "by practicing"
+     },
+     {
+      "sa": "मोर",
+      "en": "my"
+     },
+     {
+      "sa": "भल",
+      "en": "good"
+     },
+     {
+      "sa": "होई",
+      "en": "happens"
+     },
+     {
+      "sa": "जद्यपि",
+      "en": "although"
+     },
+     {
+      "sa": "यह",
+      "en": "this"
+     },
+     {
+      "sa": "समुझत",
+      "en": "understanding"
+     },
+     {
+      "sa": "हउँ",
+      "en": "I am"
+     },
+     {
+      "sa": "नीकें",
+      "en": "well"
+     },
+     {
+      "sa": "तदपि",
+      "en": "still"
+     },
+     {
+      "sa": "होत",
+      "en": "happens"
+     },
+     {
+      "sa": "परितोष",
+      "en": "contentment"
+     },
+     {
+      "sa": "न",
+      "en": "not"
+     },
+     {
+      "sa": "जी",
+      "en": "heart"
+     },
+     {
+      "sa": "कें",
+      "en": "in"
+     }
+    ],
+    "why": "When head and heart disagree, go and face the person you think you wronged.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "rcm.p.vasishtha_bharat",
+     "title": "Bharat refuses the throne",
+     "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+     "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+     "lesson": "When head and heart disagree, go and face the person you think you wronged."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "mbh.12.81.6",
+    "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+    "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+    "family": "mbh",
+    "speaker": "Krishna (quoted by Bhishma)",
+    "listener": "Narada",
+    "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+    "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+    "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+    "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+    "words": [],
+    "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+    "misuse": "",
+    "tone": "comforting",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.krishna_narada_kin",
+     "title": "Krishna's family troubles: the weapon not made of iron",
+     "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+     "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+     "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 435,
+   "v3_candidates": 47,
+   "v3_fast_read": 1710,
+   "v3_select": 2196,
+   "v3_first_line": 650,
+   "v3_total": 2847,
+   "total": 2849
+  },
+  "_ms": 2854
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel jealous of someone close to me",
+   "mirror": "I feel jealous of someone close to me",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel jealous of someone close to me. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Your own path, walked imperfectly, is better than another's walked well; what is yours is enough to begin with.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A story of a seeker whose mind will not settle, facing measuring yourself against others."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel jealous of someone close to me\" and \"I feel ashamed of who I am\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "v3:for_you:5/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "uneasy",
+    "trail": [
+     "hurt",
+     "uneasy"
+    ],
+    "paused": "hurt",
+    "stance": "wronged",
+    "states": [
+     "chinta",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "envy",
+     "shame",
+     "anger_outburst"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.2.75.15",
+    "first_line": "You hate that you feel this way, yet you know your love for her is as deep as Bharata's for Ram."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.2.75.15",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+     "family": "vr",
+     "speaker": "Bharata",
+     "listener": "Kausalya",
+     "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+     "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+     "line": "Why blame me, who knew nothing? You know what I feel for him.",
+     "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+     "words": [],
+     "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.bharata_blamed",
+      "title": "Bharata wrongly blamed",
+      "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+      "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+      "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+     },
+     "score": 6.55,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Someone is blaming you for a wound that was not your making. You do not need to carry this weight they have placed on you. Let your own innocence be the quiet ground you stand on today.",
+     "try_today": "Notice where you feel the weight of blame you did not earn.",
+     "scene_line": "You stand in the quiet of the bathroom, holding the echo of a congratulatory word while the unfairness of the blame settles in.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "vr.2.75.15",
+     "path": "vr.2.75.15 -depicts-> manyu (spoken by Bharata)",
+     "why": [
+      "falsely accused by someone he loves, for something done in his name",
+      "Father is dead and it happened because of my mother. Come back and take what is yours. How do I carry this?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.81.6",
+      "bh.niti.40",
+      "bh.vairagya.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.95.48",
+     "ref": "Mahabharata · Udyoga Parva · Udyoga: Krishna's peace embassy",
+     "ref_iast": "Mahābhārata, Udyoga Parva 95.48-49",
+     "family": "mbh",
+     "speaker": "Krishna",
+     "listener": "The Kaurava court",
+     "setting": "Krishna addresses the Kaurava court, asking Dhritarashtra to restrain his sons and make peace.",
+     "sanskrit": "धर्मज्ञेषु सभासत्सु नेह युक्तमसांप्रतम् / यत्र धर्मो ह्यधर्मेण सत्यं यत्रानृतेन च हन्यते प्रेक्षमाणानां हतास्तत्र सभासदः / विद्धो धर्मो ह्यधर्मेण सभां यत्र प्रपद्यते",
+     "line": "When wrong crushes right while others watch in silence, the silent are wounded too.",
+     "translation": "Where right is struck down by wrong and truth by falsehood while the assembly looks on, it is the onlookers who are struck down.",
+     "words": [],
+     "why": "You can make the best case for peace and still be refused. Speak anyway.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.krishna_peace_embassy",
+      "title": "Krishna's peace embassy to the Kauravas",
+      "summary": "Krishna travels to Hastinapura to plead for peace between the cousins. Elders, sages and finally Gandhari urge Duryodhana to share the kingdom; he refuses, even plotting to seize Krishna, and war becomes certain.",
+      "story_hook": "Krishna, who could have ended the quarrel by force, chose to walk into his enemies' court with nothing but words.",
+      "lesson": "You can make the best case for peace and still be refused. Speak anyway."
+     },
+     "score": 3.16,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when silence sits heavy in a room and name it to yourself.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "mbh.5.95.48",
+     "path": "mbh.5.95.48 [whose smallness it is: curated list for the wronged stance]",
+     "why": [
+      "When wrong crushes right while others watch, the silent are wounded too.",
+      "The wrong was done in front of people who said nothing"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.305.9",
+      "viv.5.ridicule_opposition",
+      "vr.2.100.51"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.252.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 252",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Bharat",
+     "setting": "Ram to Bharat, who blames himself for the exile and their father's death.",
+     "sanskrit": "तात जायँ जियँ करहु गलानी। ईस अधीन जीव गति जानी॥ तीनि काल तिभुअन मत मोरें। पुन्यसिलोक तात तर तोरें ॥",
+     "line": "You torment yourself with shame for nothing. In my eyes you stand above them all.",
+     "translation": "Brother, you torment your heart with shame for nothing; know that a soul's course is in God's hands. In my view, all the virtuous of past, present and future, in all three worlds, stand below you.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "father"
+      },
+      {
+       "sa": "जायँ",
+       "en": "go"
+      },
+      {
+       "sa": "जियँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "गलानी",
+       "en": "grief, self-reproach"
+      },
+      {
+       "sa": "ईस",
+       "en": "the divine"
+      },
+      {
+       "sa": "अधीन",
+       "en": "under the control of"
+      },
+      {
+       "sa": "जीव",
+       "en": "living being"
+      },
+      {
+       "sa": "गति",
+       "en": "fate, course"
+      },
+      {
+       "sa": "जानी",
+       "en": "knowing"
+      },
+      {
+       "sa": "तीनि",
+       "en": "three"
+      },
+      {
+       "sa": "काल",
+       "en": "times"
+      },
+      {
+       "sa": "तिभुअन",
+       "en": "three worlds"
+      },
+      {
+       "sa": "मत",
+       "en": "in my view"
+      },
+      {
+       "sa": "मोरें",
+       "en": "my"
+      },
+      {
+       "sa": "पुन्यसिलोक",
+       "en": "virtuous, blessed beings"
+      },
+      {
+       "sa": "तात",
+       "en": "father"
+      },
+      {
+       "sa": "तर",
+       "en": "below"
+      },
+      {
+       "sa": "तोरें",
+       "en": "you"
+      }
+     ],
+     "why": "In family conflict, let each speak; name love plainly; lift needless shame.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.chitrakoot_assembly",
+      "title": "The family council at Chitrakoot",
+      "summary": "Vasishtha asks how Ram can be brought home, noting that grieving people cannot judge well. Bharat recalls a brother who never broke his heart and let him win at games, and blames himself. Ram tells him his shame is needless, that love and hostility cannot be hidden, and asks him to say freely what he wants.",
+      "story_hook": "",
+      "lesson": "In family conflict, let each speak; name love plainly; lift needless shame."
+     },
+     "score": 6.8,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your shame is for nothing. You stand above all the people you are measuring yourself against today. Let that be enough.",
+     "try_today": "Notice when you compare yourself to others and let the thought go.",
+     "scene_line": "You stand above them all, even the one who just earned her place.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "rcm.2.252.chaupai.3",
+     "path": "rcm.2.252.chaupai.3 -heals-> glani via karuna",
+     "why": [
+      "The texts send a voice that lifts the shame: 'you torment yourself for nothing'.",
+      "the very person he believes he wronged tells him the shame is for nothing"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.3.32.58",
+      "viv.1.not_hate_ourselves",
+      "rcm.2.253.chaupai.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.48",
+     "ref": "Bhagavad Gita 18.48",
+     "ref_iast": "Bhagavad Gītā 18.48",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥",
+     "line": "Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke.",
+     "translation": "One should not give up the work suited to one's nature, Kaunteya, even if it has faults; for all undertakings are clouded by faults, as fire is by smoke.",
+     "words": [
+      {
+       "sa": "सहजं",
+       "en": "natural"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "सदोषम्",
+       "en": "faulty"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "त्यजेत्",
+       "en": "should abandon"
+      },
+      {
+       "sa": "सर्वारम्भा",
+       "en": "all beginnings"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "दोषेण",
+       "en": "by fault"
+      },
+      {
+       "sa": "धूमेन",
+       "en": "by smoke"
+      },
+      {
+       "sa": "अग्नि",
+       "en": "fire"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आवृताः",
+       "en": "covered"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'never change jobs'. It answers perfectionism, not a reason to stay where you're harmed.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 5.57,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your own work holds its own worth even when it is not perfect. The smoke does not mean the fire has failed. Let the fault in the undertaking be the smoke, and let you remain at the fire.",
+     "try_today": "Notice one small flaw in your own work and let it be smoke.",
+     "scene_line": "You stand by your own work as smoke rises from the fire.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "bg.18.48",
+     "path": "bg.18.48 -heals-> samshaya",
+     "why": [
+      "flaws in the work are no reason to drop it; every undertaking has them",
+      "imperfection is the condition of all work, not proof of unfitness"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.68.chaupai.6",
+      "bg.18.47",
+      "bg.3.35"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.34.19",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 34.19",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "किं नु मे स्यादिदं कृत्वा किं नु मे स्यादकुर्वतः / इति कर्माणि सञ्चिन्त्य कुर्याद्वा पुरुषो न वा",
+     "line": "Before acting, ask two questions: what happens if I do this, and what happens if I don't?",
+     "translation": "'What will happen to me if I do this? What will happen if I don't?' Thinking actions through this way, a person should then act, or not act.",
+     "words": [],
+     "why": "Think before acting; if you did it right and it failed, don't sink. Guard your tongue.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.34",
+      "title": "Vidura Niti: careful action and wounding words",
+      "summary": "Vidura continues through the night: weigh an action before you start it, don't sink when honest effort fails, and remember that words wound deeper than axes.",
+      "story_hook": "",
+      "lesson": "Think before acting; if you did it right and it failed, don't sink. Guard your tongue."
+     },
+     "score": 3.445,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You felt joy for your friend, and then felt a hollow ache. You are allowed to hold both. See what happens if you let yourself rest, and what happens if you do not.",
+     "try_today": "Notice one moment today where you hold two feelings at once.",
+     "scene_line": "You stand in the bathroom, holding your friend's good news and your own hidden grief.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.34.19",
+     "path": "mbh.5.34.19 -cultivates-> viveka",
+     "why": [
+      "Weigh the two duties; ask what happens if I do and if I do not.",
+      "Weigh both branches"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.3.314.114",
+      "mbh.5.33.31",
+      "up_maha.150"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.1.58.chaupai.3",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 58",
+     "family": "rcm",
+     "speaker": "Shiva",
+     "listener": "Sati",
+     "setting": "Shiva, when Sati wants to attend her father's ceremony uninvited, where Shiva is resented.",
+     "sanskrit": "जदपि मित्र प्रभु पितु गुर गेहा। जाइअ बिनु बोलेहुँ न सँदेहा॥ तदपि बिरोध मान जहँ कोई। तहाँ गएँ कल्यानु न होई ॥",
+     "line": "You may visit family without an invitation. But where there is hostility toward you, going brings no good.",
+     "translation": "It is true that one may go uninvited to the home of a friend, a master, a father or a teacher. Yet where someone holds hostility toward you, no good comes of going there.",
+     "words": [
+      {
+       "sa": "जदपि",
+       "en": "although"
+      },
+      {
+       "sa": "मित्र",
+       "en": "friend"
+      },
+      {
+       "sa": "प्रभु",
+       "en": "lord"
+      },
+      {
+       "sa": "पितु",
+       "en": "father"
+      },
+      {
+       "sa": "गुर",
+       "en": "teacher"
+      },
+      {
+       "sa": "गेहा",
+       "en": "home"
+      },
+      {
+       "sa": "जाइअ",
+       "en": "one should go"
+      },
+      {
+       "sa": "बिनु बोलेहुँ",
+       "en": "without being called"
+      },
+      {
+       "sa": "न",
+       "en": "no"
+      },
+      {
+       "sa": "सँदेहा",
+       "en": "doubt"
+      },
+      {
+       "sa": "तदपि",
+       "en": "still"
+      },
+      {
+       "sa": "बिरोध",
+       "en": "hostility"
+      },
+      {
+       "sa": "मान",
+       "en": "feeling"
+      },
+      {
+       "sa": "जहँ",
+       "en": "where"
+      },
+      {
+       "sa": "कोई",
+       "en": "someone"
+      },
+      {
+       "sa": "तहाँ",
+       "en": "there"
+      },
+      {
+       "sa": "गएँ",
+       "en": "by going"
+      },
+      {
+       "sa": "कल्यानु",
+       "en": "good"
+      },
+      {
+       "sa": "न होई",
+       "en": "does not happen"
+      }
+     ],
+     "why": "You may go to family without an invitation, but not into open hostility; listen to that warning.",
+     "misuse": "Not a rule to cut off family; a caution about walking into known hostility.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.daksha_yajna",
+      "title": "Sati goes to her father's sacrifice uninvited",
+      "summary": "Sati's father Daksha holds a great sacrifice and invites everyone except Shiva and her. Shiva warns her that going where there is hostility brings no good, but she goes. Her father ignores her and insults her husband in front of everyone, and the visit ends in catastrophe.",
+      "story_hook": "The sky over Kailash filled with chariots heading to her father's feast, and none of them had come for her.",
+      "lesson": "You may go to family without an invitation, but not into open hostility; listen to that warning."
+     },
+     "score": 5.217,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": "You stand outside a door where your presence is a problem, and the host has already shown his hand.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.1.58.chaupai.3",
+     "path": "rcm.1.58.chaupai.3 -cultivates-> tejas",
+     "why": [
+      "self-respect may decline a room that holds contempt",
+      "custom allows the visit, judgement looks at the host's heart"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.53",
+      "up_taittiriya.53",
+      "bh.niti.51"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Bharata",
+      "Kaikeyi",
+      "Kausalya"
+     ],
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+     "matched": [],
+     "anchor": null,
+     "score": 8.546,
+     "why": null,
+     "hook_title": "Bharata had done nothing, and Kausalya was sure he had done it all",
+     "teaser": "Bharata had done nothing, and Kausalya was sure he had done it all",
+     "for_you": "You did not ask for this comparison. Let your own steady conduct speak, and let your plain word be enough.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.bharata_suspected_by_everyone",
+     "path": "st.vr.bharata_suspected_by_everyone -enacts_in-> dainya, glani, manyu ; st.vr.bharata_suspected_by_everyone -enacts_turn-> dhriti, tejas ; st.vr.bharata_suspected_by_everyone -fits_situation-> shame",
+     "why": [
+      "When you are blamed for what your family did, your own plain word and steady conduct are your answer."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.karna_at_the_tournament",
+      "st.mbh.kashyapa_and_the_jackal",
+      "st.mbh.shalya_asked_to_drive"
+     ],
+     "thin": false,
+     "story_id": "st.vr.bharata_suspected_by_everyone",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Measuring yourself",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 159,
+   "v3_w1_write": 8028,
+   "v3_w1_total": 8188,
+   "select": 8188,
+   "total": 8191
+  },
+  "_ms": 8196
+ }
+}

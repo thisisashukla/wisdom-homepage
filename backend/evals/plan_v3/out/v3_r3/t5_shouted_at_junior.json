@@ -1,0 +1,1139 @@
+{
+ "case": "t5_shouted_at_junior",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I keep going over it again and again",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel guilty about something I did",
+   "mirror": "I feel guilty about something I did",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "forgive",
+     "label": "I want to forgive but I can't",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel guilty about something I did. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a seeker whose mind will not settle, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I feel guilty about something I did\" and \"I can't let go of resentment\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.55,asp=0.1,wro=0.14,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:wronged_unsupported",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "guilty",
+    "trail": [
+     "angry",
+     "guilty"
+    ],
+    "paused": "angry",
+    "stance": "struggle",
+    "states": [
+     "glani",
+     "dharma_sankata",
+     "shoka",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [
+     "anger_outburst",
+     "guilt",
+     "resentment"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "mbh.12.81.6",
+    "first_line": "You cannot take back the shouting, and the image of his face burns you now like the harsh words of kin that churn a fire stick."
+   }
+  },
+  "hook": {
+   "id": "mbh.12.81.6",
+   "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+   "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+   "family": "mbh",
+   "speaker": "Krishna (quoted by Bhishma)",
+   "listener": "Narada",
+   "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+   "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+   "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+   "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+   "words": [],
+   "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+   "misuse": "",
+   "tone": "comforting",
+   "matched": [],
+   "prasang": {
+    "id": "mbh.p.krishna_narada_kin",
+    "title": "Krishna's family troubles: the weapon not made of iron",
+    "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+    "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+    "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You cannot take back the shouting, and the image of his face burns you now like the harsh words of kin that churn a fire stick.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You cannot take back the shouting, and the image of his face burns you now like the harsh words of kin that churn a fire stick.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "vr.2.75.15",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+    "family": "vr",
+    "speaker": "Bharata",
+    "listener": "Kausalya",
+    "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+    "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+    "line": "Why blame me, who knew nothing? You know what I feel for him.",
+    "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+    "words": [],
+    "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "criticism",
+      "label": "I take criticism very personally"
+     }
+    ],
+    "prasang": {
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.3.36",
+    "ref": "Bhagavad Gita 3.36",
+    "ref_iast": "Bhagavad Gītā 3.36",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what drives people to do wrong against their will; Krishna answers.",
+    "sanskrit": "अर्जुन उवाचअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः । अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः ॥",
+    "line": "Why do I do the wrong thing even when I don't want to, as if something forces me?",
+    "translation": "Arjuna said: Then what drives a person to do wrong, Krishna, even against his will, as if pushed by force?",
+    "words": [
+     {
+      "sa": "अर्जुन उवाच",
+      "en": "Arjuna said"
+     },
+     {
+      "sa": "अथ",
+      "en": "then"
+     },
+     {
+      "sa": "केन",
+      "en": "by what"
+     },
+     {
+      "sa": "प्रयुक्तः",
+      "en": "impelled"
+     },
+     {
+      "sa": "अयम्",
+      "en": "this"
+     },
+     {
+      "sa": "पापम्",
+      "en": "wrongdoing"
+     },
+     {
+      "sa": "चरति",
+      "en": "does"
+     },
+     {
+      "sa": "पूरुषः",
+      "en": "person"
+     },
+     {
+      "sa": "अनिच्छन्",
+      "en": "not desiring"
+     },
+     {
+      "sa": "अपि",
+      "en": "even"
+     },
+     {
+      "sa": "वार्ष्णेय",
+      "en": "O descendant of the Vrishni clan"
+     },
+     {
+      "sa": "बलात्",
+      "en": "by force"
+     },
+     {
+      "sa": "इव",
+      "en": "as if"
+     }
+    ],
+    "why": "Desire unmet becomes anger; see it clearly and you can master it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "guilt",
+      "label": "I feel guilty about something I did"
+     },
+     {
+      "id": "anger_outburst",
+      "label": "I lost my temper and regret it"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p03.5",
+     "title": "Restraining desire",
+     "summary": "Arjuna asks why we do wrong as if forced. Krishna names desire, which turns into anger, as the enemy that clouds wisdom like smoke over fire, and tells him to master it.",
+     "story_hook": "",
+     "lesson": "Desire unmet becomes anger; see it clearly and you can master it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 471,
+   "v3_candidates": 43,
+   "v3_fast_read": 1947,
+   "v3_select": 2464,
+   "v3_first_line": 601,
+   "v3_total": 3065,
+   "total": 3067
+  },
+  "_ms": 3071
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "i keep going over it again and again",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel guilty about something I did",
+   "mirror": "I feel guilty about something I did",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "forgive",
+     "label": "I want to forgive but I can't",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel guilty about something I did. Inside, I keep going over it again and again, and I don't know how to carry it.",
+    "diagnose": "Guilt and shame turn the mind against itself; the one who keeps pushing themselves down becomes their own enemy.",
+    "steady": "A mistake is something you did, not who you are; no one who tries to do good is ever lost.",
+    "act": "Be on your own side: lift yourself up, make amends where you can, and begin again; no one who does good is lost.",
+    "story": "A story of a seeker whose mind will not settle, facing not feeling good enough."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Not feeling enough",
+    "The verdict you keep passing",
+    "Whole as you are"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels stuck; closest to \"I feel guilty about something I did\" and \"I can't let go of resentment\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "guilty",
+    "trail": [
+     "angry",
+     "guilty"
+    ],
+    "paused": "angry",
+    "stance": "struggle",
+    "states": [
+     "glani",
+     "dharma_sankata",
+     "shoka",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [
+     "anger_outburst",
+     "guilt",
+     "resentment"
+    ],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "mbh.12.81.6",
+    "first_line": "You cannot take back the shouting, and the image of his face burns you now like the harsh words of kin that churn a fire stick."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.81.6",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 81.6",
+     "family": "mbh",
+     "speaker": "Krishna (quoted by Bhishma)",
+     "listener": "Narada",
+     "setting": "Krishna, tired of feuds in his own clan, confides in the sage Narada and asks how to keep the peace.",
+     "sanskrit": "अरणीमग्निकामो वा मथ्नाति दहृयं मम / वाचा दुरुक्तं देवर्षे तन्मां दहति नित्यदा",
+     "line": "Harsh words from family can keep burning long after they're said. Even Krishna felt it.",
+     "translation": "My heart is churned the way someone wanting fire churns a fire-stick. The harsh words my relatives say keep burning me, day after day.",
+     "words": [],
+     "why": "In family feuds, the weapon that works is gentleness, patience and respect.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.krishna_narada_kin",
+      "title": "Krishna's family troubles: the weapon not made of iron",
+      "summary": "Even Krishna struggles with his clan: he does their work, bears their harsh words, and feels like the mother of two gamblers playing each other. Narada tells him the only weapon that works is soft: generosity, patience, sincerity, gentleness and respect.",
+      "story_hook": "Krishna, who guided a war, admitted to a sage that he could not keep the peace in his own family.",
+      "lesson": "In family feuds, the weapon that works is gentleness, patience and respect."
+     },
+     "score": 9.245,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You cannot take back the shouting, and the image of his face burns you now like the harsh words of kin that churn a fire stick.",
+     "try_today": "Notice when the image of his face returns. Let it be there without churning it again.",
+     "scene_line": "Krishna bears the harsh words of his own kin, and you bear the memory of a junior’s face.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "mbh.12.81.6",
+     "path": "Day 1 kept from the first screen (vr.2.75.15 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.3.36",
+      "rcm.2.225.chaupai.3",
+      "rcm.2.170.chaupai.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "first_line"
+     }
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.5.55.5",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 55.5",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "After setting Lanka ablaze in fury, Hanuman fears he has harmed Sita and turns on his own anger.",
+     "sanskrit": "वाच्यावाच्यं प्रकुपितो न विजानाति कर्हिचित्। नाकार्यमस्ति क्रुद्धस्य नावाच्यं विद्यते क्वचित्॥",
+     "line": "In anger we lose the sense of what should never be said.",
+     "translation": "An angry person never knows what should and should not be said. For the angry, nothing is off limits to do or to say.",
+     "words": [],
+     "why": "Anger can win a small fight and ruin the real goal.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lanka_burning",
+      "title": "Hanuman's anger and the burning of Lanka",
+      "summary": "Hanuman decides to test the enemy, smashes a grove, is captured and has his tail set on fire. He burns the city in fury, then is horrified that Sita might have died in the fire: in anger, he says, he nearly wrecked the very thing he came to do.",
+      "story_hook": "The city was burning behind him, and then a terrible thought stopped him cold.",
+      "lesson": "Anger can win a small fight and ruin the real goal."
+     },
+     "score": 7.047,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You saw his face after you shouted. That image is a wound that will not close. You cannot take it back, but you can hold what you did without letting it become all of you.",
+     "try_today": null,
+     "scene_line": "In the hush after your shout, you stand beside Hanuman, who burns the city and then burns with regret for what his anger cost.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.5.55.5",
+     "path": "vr.5.55.5 -states_chain-> vr.anger_hanuman [krodha -causes-> glani]",
+     "why": [
+      "What anger made me do (Valmiki Ramayana, Sundara Kanda 55)",
+      "shows exactly what anger removes: the sense of limits"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.3.37",
+      "mbh.12.27.12",
+      "mbh.12.173.53"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.198.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 198",
+     "family": "rcm",
+     "speaker": "Bharadwaj",
+     "listener": "Bharat",
+     "setting": "The sage Bharadwaj to Bharat, who is consumed by shame over what his mother did.",
+     "sanskrit": "तुम्ह गलानि जियँ जनि करहु समुझि मातु करतूति। तात कैकइहि दोसु नहिं गई गिरा मति धूति ॥",
+     "line": "Don't eat yourself up with shame for what someone else in your family did.",
+     "translation": "Don't eat yourself up with shame remembering your mother's deed. Child, Kaikeyi is not at fault either; the goddess of speech clouded her mind.",
+     "words": [
+      {
+       "sa": "तुम्ह",
+       "en": "you"
+      },
+      {
+       "sa": "गलानि",
+       "en": "remorse"
+      },
+      {
+       "sa": "जियँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "जनि",
+       "en": "do not"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "समुझि",
+       "en": "remembering, understanding"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother's"
+      },
+      {
+       "sa": "करतूति",
+       "en": "actions"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "कैकइहि",
+       "en": "Kaikeyi"
+      },
+      {
+       "sa": "दोसु",
+       "en": "fault"
+      },
+      {
+       "sa": "नहिं",
+       "en": "not"
+      },
+      {
+       "sa": "गई",
+       "en": "went"
+      },
+      {
+       "sa": "गिरा",
+       "en": "speech"
+      },
+      {
+       "sa": "मति",
+       "en": "understanding"
+      },
+      {
+       "sa": "धूति",
+       "en": "clouded, disturbed"
+      }
+     ],
+     "why": "You are not your family's mistakes; carry only what is yours.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bharadwaj",
+      "title": "Bharadwaj lifts Bharat's shame",
+      "summary": "At Prayag Bharat meets the sage Bharadwaj, too ashamed to speak. The sage tells him not to eat himself up over his mother's deed and that what Bharat sees as a stain is a lesson for everyone. Bharat answers that he fears neither the world's talk nor the afterlife; only the thought that Ram suffers because of him keeps him awake.",
+      "story_hook": "Bharat sat before the sage like a man hiding in his own house.",
+      "lesson": "You are not your family's mistakes; carry only what is yours."
+     },
+     "score": 9.158,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice the weight of the shame, then set it down for a moment.",
+     "scene_line": "You stand before your team, and Bharadwaj sits across from Bharat, both knowing the weight of a parent's clouded mind.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "rcm.2.198.doha.1",
+     "path": "rcm.2.198.doha.1 -heals-> glani via karuna",
+     "why": [
+      "The texts send a voice that lifts the shame: 'you torment yourself for nothing'.",
+      "a sage lifts a family member's act off the one who did not do it"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.2.252.chaupai.3",
+      "rcm.2.159.chaupai.3",
+      "mbh.3.32.58"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     }
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.98",
+     "ref": "Ashtavakra Gita 18.98",
+     "ref_iast": "Aṣṭāvakra Gītā 18.98",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "मुक्तो यथास्थितिस्वस्थः कृतकर्तव्यनिर्वृतः । समः सर्वत्र वैतृष्ण्यान्न स्मरत्यकृतं कृतम् ॥",
+     "line": "Free of craving, you stop replaying what you did and didn't do.",
+     "translation": "The free one is at ease in whatever state he finds himself, done with what needed doing; even everywhere, free of craving, he does not dwell on what he did or left undone.",
+     "words": [
+      {
+       "sa": "मुक्तो",
+       "en": "liberated"
+      },
+      {
+       "sa": "यथा",
+       "en": "as"
+      },
+      {
+       "sa": "स्थिति",
+       "en": "state"
+      },
+      {
+       "sa": "स्वस्थः",
+       "en": "steady"
+      },
+      {
+       "sa": "कृतकर्तव्य",
+       "en": "done-undone"
+      },
+      {
+       "sa": "निर्वृतः",
+       "en": "free"
+      },
+      {
+       "sa": "समः",
+       "en": "equal"
+      },
+      {
+       "sa": "सर्वत्र",
+       "en": "everywhere"
+      },
+      {
+       "sa": "वैतृष्ण्या",
+       "en": "without craving"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "स्मरति",
+       "en": "remembers"
+      },
+      {
+       "sa": "अकृतं",
+       "en": "undone"
+      },
+      {
+       "sa": "कृतम्",
+       "en": "done"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "Not a way to dodge accountability; make amends, then stop replaying.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 6.223,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You saw his face and you cannot take it back. The free one is done with what needed doing. He does not dwell on what he did or left undone.",
+     "try_today": "Notice when the replay begins, and let it go.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "ashtavakra.18.98",
+     "path": "ashtavakra.18.98 -heals-> glani",
+     "why": [
+      "the replay of done and undone falls away",
+      "no recalling of what was left undone"
+     ],
+     "writer_note": null,
+     "alts": [
+      "hans_gita.26",
+      "viv.2.remedy_weakness",
+      "viv.2.angels_unawares"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.35.79",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 35.79–80",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "दिवसेनैव तत्कुर्याद्येन रात्रौ सुखं वसेत् / अष्टमासेन तत्कुर्याद्येन वर्षाः सुखं वसेत् पूर्वे वयसि तत्कुर्याद्येन वृद्धः सुखं वसेत् / यावज्जीवं तु तत्कुर्याद्येन प्रेत्य सुखं वसेत्",
+     "line": "Do today what lets you sleep tonight, and in youth what lets you rest in old age.",
+     "translation": "Do during the day what lets you sleep in peace at night; do in the eight dry months what lets you live comfortably through the rains. Do in youth what makes old age comfortable, and do all your life what brings peace after death.",
+     "words": [],
+     "why": "Character shows under pressure. Do by day what will let you sleep at night.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.35",
+      "title": "Vidura Niti: Keshini's choice and the tests of character",
+      "summary": "Vidura tells how Prahlada judged honestly against his own son when Princess Keshini set two suitors a test, then gives aphorisms: gold is tested by fire, friends by hard times, and a clear conscience lets you sleep.",
+      "story_hook": "",
+      "lesson": "Character shows under pressure. Do by day what will let you sleep at night."
+     },
+     "score": 4.636,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You saw his face, and the weight of it will not lift until you choose differently. Do today what lets you sleep tonight, because in youth you are building the rest of your life.",
+     "try_today": "Notice the moment you are about to speak, and choose the act that lets you sleep tonight.",
+     "scene_line": "You stand in the office after shouting at the junior, and Vidura stands before the sleeping king with the same warning.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.35.79",
+     "path": "mbh.5.35.79 -cultivates-> sankalpa",
+     "why": [
+      "Choose today's act by how it will sit at night",
+      "Each stretch of time prepares the next"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.5.33.31",
+      "mbh.12.7.34",
+      "mbh.12.272.73"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.3.65.4",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 65.4",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Ram in fury threatens to destroy the world; Lakshman steadies him.",
+     "sanskrit": "एकस्य नापराधेन लोकान् हन्तुं त्वमर्हसि। ननु जानामि कस्यायं भग्नः सांग्रामिको रथः॥",
+     "line": "Don't punish the whole world for one person's wrong.",
+     "translation": "You should not destroy the worlds for the wrong done by one. Surely we can find out whose broken war chariot this is.",
+     "words": [
+      {
+       "sa": "एकस्य",
+       "en": "of one"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अपराधेन",
+       "en": "by fault"
+      },
+      {
+       "sa": "हन्तुम्",
+       "en": "to destroy"
+      },
+      {
+       "sa": "त्वम्",
+       "en": "you"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "are fit"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "जानामि",
+       "en": "I know"
+      },
+      {
+       "sa": "कस्य",
+       "en": "whose"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "भग्नः",
+       "en": "broken"
+      },
+      {
+       "sa": "साङ्ग्रामिकः",
+       "en": "battle-ready"
+      },
+      {
+       "sa": "रथः",
+       "en": "chariot"
+      },
+      {
+       "sa": "केन",
+       "en": "by whom"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "कस्य",
+       "en": "whose"
+      },
+      {
+       "sa": "वा",
+       "en": "or"
+      },
+      {
+       "sa": "हेतोः",
+       "en": "for what reason"
+      },
+      {
+       "sa": "सायुधः",
+       "en": "with weapons"
+      },
+      {
+       "sa": "सपरिच्छदः",
+       "en": "with all equipment"
+      }
+     ],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 4.641,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You saw the boy’s face. That pain is yours now. It does not have to be the end of the story.",
+     "try_today": "Notice the one small thing that is still right today.",
+     "scene_line": "The junior stands before you, and the forest is empty.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "vr.3.65.4",
+     "path": "vr.3.65.4 -cultivates-> karuna",
+     "why": [
+      "the innocent are kept in view",
+      "find who actually did this before acting"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.1.64.15",
+      "mbh.5.33.108",
+      "yv.2.7.12"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     }
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.mbh.yudhishthira_and_arjuna_quarrel",
+     "title": "Two exhausted brothers nearly destroy each other in a tent",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Yudhishthira",
+      "Arjuna",
+      "Krishna"
+     ],
+     "story_hook": "The day before the war was won, Arjuna drew his sword on his own brother.",
+     "summary": "Yudhishthira lies wounded and humiliated; Karna beat him and let him live with a taunt. Arjuna leaves the fight to check on him. The elder brother assumes he has come with news that Karna is dead. He has not. Seventeen days of fear pour out: you have failed us, your bow is useless, give your Gandiva to someone else.",
+     "lesson": "Dharma is subtle, and a vow is not kept by an act that destroys what the vow was for.",
+     "matched": [],
+     "anchor": null,
+     "score": 11.682,
+     "why": null,
+     "hook_title": null,
+     "teaser": "The day before the war was won, Arjuna drew his sword on his own brother.",
+     "for_you": "You saw his face. A vow to be a leader is not kept when it destroys the trust you were meant to protect. The moment is heavy with what cannot be taken back.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.yudhishthira_and_arjuna_quarrel",
+     "path": "st.mbh.yudhishthira_and_arjuna_quarrel -enacts_in-> glani, krodha, manyu ; st.mbh.yudhishthira_and_arjuna_quarrel -enacts_turn-> kshama, viveka ; st.mbh.yudhishthira_and_arjuna_quarrel -fits_situation-> anger_outburst, guilt",
+     "why": [
+      "Dharma is subtle, and a vow is not kept by an act that destroys what the vow was for."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.gautami_and_the_serpent",
+      "st.vr.hanuman_burns_lanka_then_panics",
+      "st.rcm.bharat_comes_home_to_blame"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.yudhishthira_and_arjuna_quarrel",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     }
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Not feeling enough",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 32,
+   "v3_w1_write": 10072,
+   "v3_w1_total": 10105,
+   "select": 10105,
+   "total": 10107
+  },
+  "_ms": 10113
+ }
+}

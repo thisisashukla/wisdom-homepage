@@ -18,6 +18,7 @@ import time
 from fastapi import APIRouter, HTTPException
 
 from ai import note_store
+from ai.run_log import logged
 from ai.recommender import get_recommender
 from common.models import RecommendRequest, RecommendResponse
 
@@ -26,6 +27,7 @@ router = APIRouter()
 
 
 @router.post("/recommend", response_model=RecommendResponse, tags=["recommend"])
+@logged("recommend")
 async def recommend(req: RecommendRequest) -> RecommendResponse:
     try:
         rec = get_recommender()

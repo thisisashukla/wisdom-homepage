@@ -1,0 +1,1100 @@
+{
+ "case": "t3_friend_harvard",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel jealous of someone close to me",
+   "mirror": "I feel jealous of someone close to me",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel jealous of someone close to me. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Your own path, walked imperfectly, is better than another's walked well; what is yours is enough to begin with.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A story of a seeker whose mind will not settle, facing measuring yourself against others."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel jealous of someone close to me\" and \"I feel ashamed of who I am\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.3,wro=0.1,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "day1:model_pick_refused:r4: diagnoses a vice the person never showed (matsarya)",
+    "day1:graph_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "uneasy",
+    "trail": [
+     "hurt",
+     "uneasy"
+    ],
+    "paused": "hurt",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "envy",
+     "shame",
+     "anger_outburst"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "vr.5.13.18",
+    "first_line": "You hate that you cried in the bathroom after your friend got into Harvard, and your effort feels useless if you return without finding peace."
+   }
+  },
+  "hook": {
+   "id": "vr.5.13.18",
+   "ref": "Valmiki Ramayana, Sundara Kanda 13.18",
+   "ref_iast": "Vālmīki Rāmāyaṇa 5.13.18",
+   "family": "vr",
+   "speaker": "Hanuman",
+   "listener": "himself",
+   "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+   "sanskrit": null,
+   "line": "If I return to my lord without seeing Sita, my effort will be useless.",
+   "translation": "Having considered what is timely and appropriate in this situation, Hanuman reflected further on what he should do. He thought, \"If I return to the lord of the monkeys without having seen Sita, what will be the value of my effort?\"",
+   "words": [],
+   "why": "When you have looked everywhere, look again; giving up costs too much.",
+   "misuse": null,
+   "tone": null,
+   "matched": [],
+   "prasang": {
+    "id": "vr.p.search_despair",
+    "title": "Hanuman's search and near despair",
+    "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+    "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+    "lesson": "When you have looked everywhere, look again; giving up costs too much."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You hate that you cried in the bathroom after your friend got into Harvard, and your effort feels useless if you return without finding peace.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You hate that you cried in the bathroom after your friend got into Harvard, and your effort feels useless if you return without finding peace.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "rcm.7.4.chaupai.8",
+    "ref": "Ramcharitmanas, Uttar Kand 7.4 (chaupai 8)",
+    "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 7.4",
+    "family": "rcm",
+    "speaker": "Bharat",
+    "listener": "Hanuman",
+    "setting": "After fourteen years, Hanuman brings Bharat the news that Ram is coming; Bharat has one question.",
+    "sanskrit": "तब हनुमंत नाइ पद माथा। कहे सकल रघुपति गुन गाथा॥ कहु कपि कबहुँ कृपाल गोसाईं। सुमिरहिं मोहि दास की नाईं ॥",
+    "line": "Tell me: does he ever think of me?",
+    "translation": "Then Hanuman bowed at his feet and told all of Raghupati's virtues. 'Tell me, Hanuman: does the kind master ever remember me, as one remembers a servant?'",
+    "words": [
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "हनुमंत",
+      "en": "Hanuman"
+     },
+     {
+      "sa": "नाइ",
+      "en": "bowing"
+     },
+     {
+      "sa": "पद",
+      "en": "feet"
+     },
+     {
+      "sa": "माथा",
+      "en": "head"
+     },
+     {
+      "sa": "कहे",
+      "en": "spoke"
+     },
+     {
+      "sa": "सकल",
+      "en": "all"
+     },
+     {
+      "sa": "रघुपति",
+      "en": "Lord of the Raghu clan"
+     },
+     {
+      "sa": "गुन",
+      "en": "virtues"
+     },
+     {
+      "sa": "गाथा",
+      "en": "song/story"
+     },
+     {
+      "sa": "कहु",
+      "en": "tell"
+     },
+     {
+      "sa": "कपि",
+      "en": "O monkey"
+     },
+     {
+      "sa": "कबहुँ",
+      "en": "ever"
+     },
+     {
+      "sa": "कृपाल",
+      "en": "gracious"
+     },
+     {
+      "sa": "गोसाईं",
+      "en": "Lord"
+     },
+     {
+      "sa": "सुमिरहिं",
+      "en": "remember"
+     },
+     {
+      "sa": "मोहि",
+      "en": "me"
+     },
+     {
+      "sa": "दास",
+      "en": "servant"
+     },
+     {
+      "sa": "की नाईं",
+      "en": "like"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.1.141.chaupai.3",
+    "ref": "Ramcharitmanas · Bal Kand",
+    "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 141",
+    "family": "rcm",
+    "speaker": "Manu",
+    "listener": "Vishnu",
+    "setting": "Manu, offered any boon after years of austerity, hesitates to ask for what he truly wants.",
+    "sanskrit": "जथा दरिद्र बिबुधतरु पाई। बहु संपति मागत सकुचाई॥ तासु प्रभाउ जान नहिं सोई। तथा हृदयँ मम संसय होई ॥",
+    "line": "Like a poor man before the wishing tree, we hesitate to ask for what we really want.",
+    "translation": "Like a poor man who finds the wish-fulfilling tree and still hesitates to ask for much, not knowing its power, so doubt rises in my heart.",
+    "words": [
+     {
+      "sa": "जथा",
+      "en": "like"
+     },
+     {
+      "sa": "दरिद्र",
+      "en": "poor"
+     },
+     {
+      "sa": "बिबुधतरु",
+      "en": "wish-fulfilling tree"
+     },
+     {
+      "sa": "पाई",
+      "en": "having found"
+     },
+     {
+      "sa": "बहु",
+      "en": "many"
+     },
+     {
+      "sa": "संपति",
+      "en": "wealth"
+     },
+     {
+      "sa": "मागत",
+      "en": "asking for"
+     },
+     {
+      "sa": "सकुचाई",
+      "en": "hesitates"
+     },
+     {
+      "sa": "तासु",
+      "en": "its"
+     },
+     {
+      "sa": "प्रभाउ",
+      "en": "power"
+     },
+     {
+      "sa": "जान",
+      "en": "knows"
+     },
+     {
+      "sa": "नहिं",
+      "en": "not"
+     },
+     {
+      "sa": "सोई",
+      "en": "that one"
+     },
+     {
+      "sa": "तथा",
+      "en": "so"
+     },
+     {
+      "sa": "हृदयँ",
+      "en": "in the heart"
+     },
+     {
+      "sa": "मम",
+      "en": "my"
+     },
+     {
+      "sa": "संसय",
+      "en": "doubt"
+     },
+     {
+      "sa": "होई",
+      "en": "arises"
+     }
+    ],
+    "why": "It is not too late to turn towards what matters, but it takes courage to ask for it.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "rcm.p.manu_shatarupa",
+     "title": "Manu and Shatarupa ask late in life",
+     "summary": "King Manu and Queen Shatarupa realise in old age that a whole life has passed without what mattered most to them. They hand over the kingdom, go to the forest and practise austerity for years. When Vishnu offers a boon, Manu hesitates like a poor man before the wishing tree, then asks for a son like God himself.",
+     "story_hook": "The king had ruled well for a lifetime, and one morning he realised he had missed the point.",
+     "lesson": "It is not too late to turn towards what matters, but it takes courage to ask for it."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 401,
+   "v3_candidates": 67,
+   "v3_fast_read": 1441,
+   "v3_select": 1913,
+   "v3_first_line": 501,
+   "v3_total": 2415,
+   "total": 2416
+  },
+  "_ms": 2419
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel jealous of someone close to me",
+   "mirror": "I feel jealous of someone close to me",
+   "insight": "Your life looks small only next to the lives you keep measuring it against.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "envy",
+     "label": "I feel jealous of someone close to me",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel jealous of someone close to me. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own.",
+    "steady": "Your own path, walked imperfectly, is better than another's walked well; what is yours is enough to begin with.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A story of a seeker whose mind will not settle, facing measuring yourself against others."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel jealous of someone close to me\" and \"I feel ashamed of who I am\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "uneasy",
+    "trail": [
+     "hurt",
+     "uneasy"
+    ],
+    "paused": "hurt",
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "samshaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "envy",
+     "shame",
+     "anger_outburst"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "vr.5.13.18",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You hate that you cried in the bathroom after your friend got into Harvard, and your effort feels useless if you return without finding peace."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.5.13.18",
+     "ref": "Valmiki Ramayana, Sundara Kanda 13.18",
+     "ref_iast": "Vālmīki Rāmāyaṇa 5.13.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Having searched every house, garden and street of Lanka without finding Sita, Hanuman sits on the city wall and weighs what to do next.",
+     "sanskrit": null,
+     "line": "If I return to my lord without seeing Sita, my effort will be useless.",
+     "translation": "Having considered what is timely and appropriate in this situation, Hanuman reflected further on what he should do. He thought, \"If I return to the lord of the monkeys without having seen Sita, what will be the value of my effort?\"",
+     "words": [],
+     "why": "When you have looked everywhere, look again; giving up costs too much.",
+     "misuse": null,
+     "tone": null,
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.search_despair",
+      "title": "Hanuman's search and near despair",
+      "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+      "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+      "lesson": "When you have looked everywhere, look again; giving up costs too much."
+     },
+     "score": 4.997,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your friend's news sits heavy. You wonder what your own path is worth. The effort you have already given is not nothing.",
+     "try_today": "Notice one small thing you have already done today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "vr.5.13.18",
+     "path": "Day 1 kept from the first screen (rcm.7.4.chaupai.8 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.6.33",
+      "rcm.1.141.chaupai.3",
+      "viv.8.mental_hell_lifted"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "words": [],
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 4.431,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel uneasy because your mind keeps returning to your friend's success. The thought of it feeds itself, like a fire fed with dry wood. Let the image rest without adding fuel to it today.",
+     "try_today": "Notice the worry and stop feeding it with another thought.",
+     "scene_line": "In the quiet of the bathroom, you let the thought of your friend's success burn out.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "yv.5.21.6",
+     "path": "yv.5.21.6 -states_chain-> yv.worry_fed_by_thought [sankalpa_kalpana -causes-> chinta]",
+     "why": [
+      "Worry grows when you feed it (Yoga Vasishtha 5.21.6)",
+      "worry is shown to live on the attention it is fed"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.5.11.6",
+      "up_maitrayani.86",
+      "up_maitrayani.78"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.252.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 252",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Bharat",
+     "setting": "Ram to Bharat, who blames himself for the exile and their father's death.",
+     "sanskrit": "तात जायँ जियँ करहु गलानी। ईस अधीन जीव गति जानी॥ तीनि काल तिभुअन मत मोरें। पुन्यसिलोक तात तर तोरें ॥",
+     "line": "You torment yourself with shame for nothing. In my eyes you stand above them all.",
+     "translation": "Brother, you torment your heart with shame for nothing; know that a soul's course is in God's hands. In my view, all the virtuous of past, present and future, in all three worlds, stand below you.",
+     "words": [
+      {
+       "sa": "तात",
+       "en": "father"
+      },
+      {
+       "sa": "जायँ",
+       "en": "go"
+      },
+      {
+       "sa": "जियँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "करहु",
+       "en": "do"
+      },
+      {
+       "sa": "गलानी",
+       "en": "grief, self-reproach"
+      },
+      {
+       "sa": "ईस",
+       "en": "the divine"
+      },
+      {
+       "sa": "अधीन",
+       "en": "under the control of"
+      },
+      {
+       "sa": "जीव",
+       "en": "living being"
+      },
+      {
+       "sa": "गति",
+       "en": "fate, course"
+      },
+      {
+       "sa": "जानी",
+       "en": "knowing"
+      },
+      {
+       "sa": "तीनि",
+       "en": "three"
+      },
+      {
+       "sa": "काल",
+       "en": "times"
+      },
+      {
+       "sa": "तिभुअन",
+       "en": "three worlds"
+      },
+      {
+       "sa": "मत",
+       "en": "in my view"
+      },
+      {
+       "sa": "मोरें",
+       "en": "my"
+      },
+      {
+       "sa": "पुन्यसिलोक",
+       "en": "virtuous, blessed beings"
+      },
+      {
+       "sa": "तात",
+       "en": "father"
+      },
+      {
+       "sa": "तर",
+       "en": "below"
+      },
+      {
+       "sa": "तोरें",
+       "en": "you"
+      }
+     ],
+     "why": "In family conflict, let each speak; name love plainly; lift needless shame.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.chitrakoot_assembly",
+      "title": "The family council at Chitrakoot",
+      "summary": "Vasishtha asks how Ram can be brought home, noting that grieving people cannot judge well. Bharat recalls a brother who never broke his heart and let him win at games, and blames himself. Ram tells him his shame is needless, that love and hostility cannot be hidden, and asks him to say freely what he wants.",
+      "story_hook": "",
+      "lesson": "In family conflict, let each speak; name love plainly; lift needless shame."
+     },
+     "score": 7.357,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your shame is baseless. A soul's course lies in hands beyond your own, and you stand above every virtue in all the worlds.",
+     "try_today": "Notice where the shame lives in your chest today.",
+     "scene_line": "You stand above all the virtuous, even in the bathroom stall.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "rcm.2.252.chaupai.3",
+     "path": "rcm.2.252.chaupai.3 -heals-> glani via karuna",
+     "why": [
+      "The texts send a voice that lifts the shame: 'you torment yourself for nothing'.",
+      "the very person he believes he wronged tells him the shame is for nothing"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.not_hate_ourselves",
+      "rcm.2.253.chaupai.1",
+      "vr.4.66.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not your failure. You are)",
+      "for_you:blames_them_for_the_event(your failure)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.2.remedy_weakness",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 2",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Audience in London",
+     "setting": "'Practical Vedanta' part 1, London, 10 November 1896.",
+     "sanskrit": null,
+     "line": "The remedy for weakness is not brooding over weakness, but thinking of strength.",
+     "translation": "But, says the Vedanta, being reminded of weakness does not help much; give strength, and strength does not come by thinking of weakness all the time. The remedy for weakness is not brooding over weakness, but thinking of strength.",
+     "words": [],
+     "why": "Stop rehearsing your weakness; think of your strength and act.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.practical_vedanta.faith",
+      "title": "Practical Vedanta 1: faith in yourself (London, 1896)",
+      "summary": "Vedanta must work in ordinary life. Calm minds do the most work, angry ones break themselves. The new religion calls the person who does not believe in himself the atheist, and the remedy for weakness is to think of strength, not brood over weakness.",
+      "story_hook": "",
+      "lesson": "Stop rehearsing your weakness; think of your strength and act."
+     },
+     "score": 6.033,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is circling your friend's success and your own pain. That is not the only thing in the room. Strength is also here, waiting to be named.",
+     "try_today": "Name one strength you used today, even a small one.",
+     "scene_line": "In the quiet of the bathroom, she is not the only one who feels weak; strength is available to both of you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.2.remedy_weakness",
+     "path": "viv.2.remedy_weakness -heals-> chinta",
+     "why": [
+      "rumination is given a replacement",
+      "going over one's faults again is declared no cure"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.7.68.chaupai.6",
+      "bg.18.48",
+      "ashtavakra.18.98"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not the problem)",
+      "for_you:untraced_sentence(absenc,ache,choice,envy,instea,joy)",
+      "practice:long(24)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.34.19",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 34.19",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "किं नु मे स्यादिदं कृत्वा किं नु मे स्यादकुर्वतः / इति कर्माणि सञ्चिन्त्य कुर्याद्वा पुरुषो न वा",
+     "line": "Before acting, ask two questions: what happens if I do this, and what happens if I don't?",
+     "translation": "'What will happen to me if I do this? What will happen if I don't?' Thinking actions through this way, a person should then act, or not act.",
+     "words": [],
+     "why": "Think before acting; if you did it right and it failed, don't sink. Guard your tongue.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.34",
+      "title": "Vidura Niti: careful action and wounding words",
+      "summary": "Vidura continues through the night: weigh an action before you start it, don't sink when honest effort fails, and remember that words wound deeper than axes.",
+      "story_hook": "",
+      "lesson": "Think before acting; if you did it right and it failed, don't sink. Guard your tongue."
+     },
+     "score": 3.445,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You congratulated her and then cried in the bathroom. That split is the hurt. Before you act, look at what happens if you speak and what happens if you stay quiet. That is the way forward.",
+     "try_today": "Before your next move, ask what happens if you do it and what happens if you don't.",
+     "scene_line": "You sit beside her joy, and your own doubt weighs the two branches.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.5.34.19",
+     "path": "mbh.5.34.19 -cultivates-> viveka",
+     "why": [
+      "Weigh the two duties; ask what happens if I do and if I do not.",
+      "Weigh both branches"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.5.30.18",
+      "rcm.4.8.chaupai.1",
+      "vr.5.30.40"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.56",
+     "ref": "Taittiriya Upanishad 1.11.3-4",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.3-4",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The teacher's advice for when the rules run out.",
+     "sanskrit": "अथ यदि ते कर्मविचिकित्सा वा वृत्तविचिकित्सा वा स्यात् ॥ ये तत्र ब्राह्मणाः संमर्शिनः । युक्ता आयुक्ताः । अलूक्षा धर्मकामाः स्युः । यथा ते तत्र वर्तेरन् । तथा तत्र वर्तेथाः । अथाभ्याख्यातेषु । ये तत्र ब्राह्मणाः संमर्शिनः । युक्ता आयुक्ताः । अलूक्षा धर्मकामाः स्युः । यथा ते तेषु वर्तेरन् । तथा तेषु वर्तेथाः । एष आदेशः । एष उपदेशः ।",
+     "line": "When unsure what to do, ask how thoughtful, gentle, fair-minded people would act, and do that.",
+     "translation": "Now, if you are ever unsure about an action or about conduct, look to the thoughtful people there: devoted, independent, not harsh, lovers of what is right. As they would act, so should you act. And towards people under accusation, act as such people would. This is the instruction, this is the teaching.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.645,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Watch how a thoughtful person handles a moment of doubt.",
+     "scene_line": "You stand in the bathroom, and the teacher asks you to look at the thoughtful people who would act with care toward your friend.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "up_taittiriya.56",
+     "path": "up_taittiriya.56 -cultivates-> viveka",
+     "why": [
+      "judgement is borrowed from people who are thoughtful, unforced and not harsh"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.51",
+      "up_taittiriya.53",
+      "mbh.5.133.21"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(hollow,joy,shame,tear)",
+      "practice:untraced_sentence(acts,care,exampl,quiet,settle)",
+      "for_you:untraced_sentence(feel,heavy,split,weight)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.mbh.pandavas_choose_their_disguises",
+     "title": "Five princes and a queen choose the humble jobs they will live in for a year",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Yudhishthira",
+      "Bhima",
+      "Arjuna",
+      "Nakula",
+      "Sahadeva",
+      "Draupadi"
+     ],
+     "story_hook": "A king became a dice-player, a warrior became a dance teacher, a queen became a maid. For one year.",
+     "summary": "The twelve years of forest are over; now comes the thirteenth, which must be lived in a city without being recognised, or the exile starts again. Yudhishthira asks each brother in turn what work he will do in King Virata's court. He grieves at each answer: how will Bhima, who never served anyone, cook for a king? How will Draupadi, a queen, serve as a maid?",
+     "lesson": "When circumstances force one into a humbler role, choose the one your real skills can serve, and live it fully until the time is complete.",
+     "matched": [],
+     "anchor": null,
+     "score": 6.4,
+     "why": null,
+     "hook_title": null,
+     "teaser": "A king became a dice-player, a warrior became a dance teacher, a queen became a maid. For one year.",
+     "for_you": "Something doesn't sit right. You are in a place where your friend's good news feels like a weight. You do not need to fix this feeling or name it. You only need to live this year fully, with your real skills, until the time is complete.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.pandavas_choose_their_disguises",
+     "path": "st.mbh.pandavas_choose_their_disguises -enacts_in-> chinta, dainya, glani ; st.mbh.pandavas_choose_their_disguises -fits_situation-> shame",
+     "why": [
+      "When circumstances force one into a humbler role, choose the one your real skills can serve, and live it fully until the time is complete."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.dhritarashtra_cannot_sleep",
+      "st.yv.suraghu_punish_or_pardon",
+      "st.rcm.bharat_last_day"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.pandavas_choose_their_disguises",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:verdict(You are not broken)",
+      "for_you:names_a_vice_they_never_showed(wanting more)",
+      "practice:intensifier(actually)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Measuring yourself",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 135,
+   "v3_w1_write": 8188,
+   "v3_w1_total": 8324,
+   "select": 8324,
+   "total": 8325
+  },
+  "_ms": 8328
+ }
+}

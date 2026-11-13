@@ -66,7 +66,14 @@ class Settings(BaseSettings):
     day1_other_texts: bool = False       # tried on 21-22 Oct 2026: the other texts lack the Gita's curation and surfaced wounding Day 1 lines; off
     day1_gita_floor: float = 0.6         # the Gita opens the plan unless its best hook scores under this on the fit rerank...
     day1_other_margin: float = 0.25      # ...and a verse from another text beats it by this much
-    for_you_timeout_s: float = 14.0      # "What it says" + "For you" under each plan day (parallel calls per week, one rewrite round)
+    # "What it says" + "For you" under each plan day (parallel calls per week, one rewrite round). Was 14.0 until 13 Nov 2026:
+    # 1 to 3 of the 7 one-day calls ran away (the model kept writing days for verses it was not asked about) and held the
+    # week to the 13 s HTTP timeout (plan_engine_v3/05_harness/CHANGES.md). 6 s was tried and lost 6 of 10 Day 1 parts
+    # when Sarvam was slow (one-day calls took 3.8 to 5.8 s); 8 s kept 10 of 10. FOR_YOU_TIMEOUT_S=14 restores the old value.
+    for_you_timeout_s: float = 8.0
+    # Output cap per day in one writer call (one day of meaning, for_you, try_today, scene_line, asks is about 250 to 420
+    # tokens; 1,400 characters at most in 50 measured calls). Was 1300 per day + 400. WRITER_MAX_TOKENS=1700 restores it.
+    writer_max_tokens: int = 650
     # "Listen" on a plan day (server/narration.py): a storyteller narrator in English, and a devotional
     # reciter for the verse in its own language (Devanagari read in Hindi script mode, a little slower).
     tts_model: str = "bulbul:v4-flash"
@@ -96,6 +103,9 @@ class Settings(BaseSettings):
     # Raw notes the app sends for verse selection, kept in Supabase table raw_notes (ai/note_store.py).
     note_store_enabled: bool = True
     note_store_timeout_s: float = 1.5
+    # Every plan-endpoint call, kept in Supabase table plan_runs (ai/run_log.py), joined to Mixpanel by request_id.
+    run_log_enabled: bool = True
+    run_log_timeout_s: float = 1.5
 
     # Local BGE-M3 model weights directory.
     # If empty or non-existent, loads from HuggingFace (cached after first download).

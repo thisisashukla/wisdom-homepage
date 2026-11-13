@@ -1,0 +1,920 @@
+{
+ "case": "x_trail_heavy_then_hopeful",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "none",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't stay consistent",
+   "mirror": "I can't stay consistent",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels determined; closest to \"I can't stay consistent\" and \"I keep procrastinating\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.55,wro=0.1,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:states:unknown_dropped",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "lonely",
+     "lost",
+     "lonely",
+     "empty",
+     "hopeful"
+    ],
+    "paused": "empty",
+    "stance": "aspiration",
+    "states": [
+     "santosha",
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": true,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bh.vairagya.82",
+    "first_line": "You want to keep this good energy going, and this verse says that the freedom to wander, simple food, and quiet learning are the fruit of some great austerity."
+   }
+  },
+  "hook": {
+   "id": "bh.vairagya.82",
+   "ref": "Bhartrihari · Vairagya Shatakam",
+   "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+   "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+   "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+   "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+   "words": [],
+   "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [],
+   "prasang": {
+    "id": "bh.p.vairagya.shiva",
+    "title": "Vairagyashatakam: Worship of Shiva",
+    "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+    "story_hook": "",
+    "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You want to keep this good energy going, and this verse says that the freedom to wander, simple food, and quiet learning are the fruit of some great austerity.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You want to keep this good energy going, and this verse says that the freedom to wander, simple food, and quiet learning are the fruit of some great austerity.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "bh.niti.84",
+    "ref": "Bhartrihari · Niti Shatakam",
+    "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From the section on steadfastness.",
+    "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+    "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+    "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+    "words": [],
+    "why": "Setbacks rarely last for those who keep going on the right path.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "bh.p.niti.dhairya",
+     "title": "Nitishatakam: On steadfastness",
+     "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+     "story_hook": "",
+     "lesson": "Setbacks rarely last for those who keep going on the right path."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "vr.2.25.2",
+    "ref": "Valmiki Ramayana, Ayodhya 25.2",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 25.2",
+    "family": "vr",
+    "speaker": "Kausalya",
+    "listener": "Ram",
+    "setting": "Holding back tears, Kausalya blesses her son before he leaves for fourteen years in the forest.",
+    "sanskrit": "यं पालयसि धर्म त्वं प्रीत्या च नियमेन च। स वै राघवशार्दूल धर्मस्त्वामभिरक्षतु॥",
+    "line": "May the good you have lived by, gladly and faithfully, now protect you.",
+    "translation": "May the goodness you have kept so gladly and so faithfully protect you, tiger of the Raghus.",
+    "words": [],
+    "why": null,
+    "misuse": "A mother's blessing, not a promise that good people never suffer.",
+    "tone": "comforting",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_candidates": 0,
+   "v3_fast_read": 1825,
+   "v3_select": 2131,
+   "v3_first_line": 756,
+   "v3_total": 2888,
+   "total": 2890
+  },
+  "_ms": 2900
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "none",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.52,
+   "core_struggle": "I can't stay consistent",
+   "mirror": "I can't stay consistent",
+   "insight": "Doubt is spending the energy you would use to begin.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Doubt and delay feed each other; waiting to feel ready keeps us stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and do the next right thing; act without waiting for certainty, and keep at it day by day.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Stuck at the start",
+    "Why we wait",
+    "Already free to begin"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels determined; closest to \"I can't stay consistent\" and \"I keep procrastinating\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:day:2:for_you:no",
+    "v3:day:3:for_you:no",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:4:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:5:for_you:yes",
+    "v3:day:6:for_you:no",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "lonely",
+     "lost",
+     "lonely",
+     "empty",
+     "hopeful"
+    ],
+    "paused": "empty",
+    "stance": "aspiration",
+    "states": [
+     "santosha",
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [],
+    "age": "25_34",
+    "stages": [
+     "working"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You want to keep this good energy going, and this verse says that the freedom to wander, simple food, and quiet learning are the fruit of some great austerity."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.82",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+     "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+     "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+     "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+     "words": [],
+     "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.shiva",
+      "title": "Vairagyashatakam: Worship of Shiva",
+      "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+      "story_hook": "",
+      "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+     },
+     "score": 4.66,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You want to keep this good energy going, and this verse says that the freedom to wander, simple food, and quiet learning are the fruit of some great austerity.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.82",
+     "path": "Day 1 kept from the first screen (bg.6.43 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.17.3",
+      "vr.2.25.2",
+      "bg.4.39"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "first_line"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.12",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.12",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to stay steady when people and wealth come and go.",
+     "sanskrit": "मानसानां पुनर्योनिर्दुःखानां चित्तविभ्रमः / अनिष्टोपनिपातो वा तृतीयं नोपपद्यते",
+     "line": "Mental pain comes from two places: something you didn't want happened, or your mind is spinning. No third.",
+     "translation": "Sorrow of the mind has only two sources: a confused, wandering mind, or something unwanted happening to you. There is no third.",
+     "words": [],
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 1.933,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "mbh.12.27.12",
+     "path": "mbh.12.27.12 -states_chain-> mbh.ashma_two_causes [moha -causes-> shoka]",
+     "why": [
+      "Two sources of the mind's pain (Mahabharata, Shanti Parva (Ashma Gita))",
+      "Names chitta-vibhrama as a cause"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.misery_attachment",
+      "rcm.2.247.chaupai.1",
+      "ashtavakra.16.2"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Vairagya Shatakam) was about contentment; today asks where it comes from.",
+      "link": null
+     },
+     "personal_source": {},
+     "personal_issues": [
+      "fit_guard:light:verse_treats_reader_as_struggling"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.4.hold_on_brave_heart",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 4",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Poem 'Hold On Yet a While, Brave Heart', written to the Maharaja of Khetri.",
+     "sanskrit": null,
+     "line": "Still hold on yet a while, brave heart, The victory is sure to come.",
+     "translation": "If the sun by the cloud is hidden a bit, If the welkin shows but gloom, Still hold on yet a while, brave heart, The victory is sure to come. … Not a work will be lost, no struggle vain, Though hopes be blighted, powers gone; … Then hold on yet a while, brave soul, No good is e'er undone.",
+     "words": [],
+     "why": "No struggle is wasted; hold on a little longer.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.poem.hold_on",
+      "title": "'Hold on yet a while, brave heart' (poem to the Maharaja of Khetri)",
+      "summary": "A short poem of encouragement to a friend. Clouds hide the sun for a while, summer always follows winter, and no honest struggle is wasted even when hopes fail.",
+      "story_hook": "",
+      "lesson": "No struggle is wasted; hold on a little longer."
+     },
+     "score": 3.918,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one small thing today that is already turning out well.",
+     "scene_line": "You stand in the open air while the sun hides behind the clouds.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.4.hold_on_brave_heart",
+     "path": "viv.4.hold_on_brave_heart -heals-> nirveda",
+     "why": [
+      "no good is ever undone",
+      "no struggle is vain"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.4.8.8",
+      "bh.niti.18",
+      "bg.18.36"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira) was about worry; today gives ground to stand on.",
+      "link": [
+       "state",
+       "chinta"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(pain)",
+      "audio_open:short(9)",
+      "for_you:pathologises_a_light_state(pain)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.35.60",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 35.60",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "तृणोल्कया ज्ञायते जातरूपं / वृत्तेन भद्रो व्यवहारेण साधुः / शूरो भयेष्वर्थकृच्छ्रेषु धीरः / कृच्छ्रेष्वापत्सु सुहृदश्चारयश्च",
+     "line": "Gold shows in fire, character in conduct, courage in danger, and true friends in hard times.",
+     "translation": "Gold is known by a flame of straw; a good person by conduct, an honest one by dealings, a brave one in danger, a steady one in money troubles, and friends and enemies in hard times.",
+     "words": [],
+     "why": "Character shows under pressure. Do by day what will let you sleep at night.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.35",
+      "title": "Vidura Niti: Keshini's choice and the tests of character",
+      "summary": "Vidura tells how Prahlada judged honestly against his own son when Princess Keshini set two suitors a test, then gives aphorisms: gold is tested by fire, friends by hard times, and a clear conscience lets you sleep.",
+      "story_hook": "",
+      "lesson": "Character shows under pressure. Do by day what will let you sleep at night."
+     },
+     "score": 3.566,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today you see that your own steady conduct is the test. Your resolve and energy are the flame that shows what is real.",
+     "try_today": "Watch your conduct today, and notice who remains steady beside you.",
+     "scene_line": "You stand at the edge of hard times, knowing your character by the way you meet them.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.5.35.60",
+     "path": "mbh.5.35.60 -heals-> viraha",
+     "why": [
+      "Explains why hard times thin out one's circle",
+      "Hardship is recast as the test that shows what is real"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.3.20",
+      "viv.1.inside_the_machine",
+      "rcm.2.271.chaupai.3"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Swami Vivekananda) was about collapse; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "vishada"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "audio_close:invented_person(friend)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.335,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today the teacher asks you to speak truth, practise what is right, and keep studying.",
+     "try_today": "Choose one thing to study or observe this week.",
+     "scene_line": "You stand at the start of your working life, ready to act as the teacher instructed.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_taittiriya.49",
+     "path": "up_taittiriya.49 -cultivates-> dhriti",
+     "why": [
+      "study is to be kept up, not finished",
+      "three plain commitments to carry into working life"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.6.23",
+      "mbh.5.38.16",
+      "up_taittiriya.43"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Udyoga Parva · Vidura Niti) pointed toward steadiness; today brings one practice for it.",
+      "link": [
+       "toward",
+       "dhriti"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:invented_person(teacher)",
+      "scene_line:invented_person(teacher)"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.55.16",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 55.16",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on his bed of arrows begins teaching Yudhishthira how to lead.",
+     "sanskrit": "विपन्ने च समारम्भे सन्तापं मा स्म वै कृथाः / घटेतैवं सदाऽऽत्मानं राज्ञामेष परो नयः",
+     "line": "When something you started fails, don't torment yourself. Gather yourself and apply yourself again.",
+     "translation": "If an undertaking fails, do not torment yourself over it. Keep applying yourself again and again; this is the highest rule for those who lead.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": null,
+     "score": 2.81,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.12.55.16",
+     "path": "mbh.12.55.16 -cultivates-> dhriti",
+     "why": [
+      "Keep applying yourself"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.28",
+      "up_chhandogya.423",
+      "rcm.1.76.chaupai.3"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Taittiriya Upanishad 1.11.1) pointed toward steadiness; today takes that practice into the hard moment.",
+      "link": [
+       "toward",
+       "dhriti"
+      ]
+     },
+     "personal_source": {},
+     "personal_issues": [
+      "fit_guard:light:verse_treats_reader_as_struggling"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "bg.p18.7",
+     "title": "The glory of the Gita",
+     "kind": "teaching",
+     "family": "bg",
+     "characters": [
+      "Arjuna",
+      "Krishna",
+      "Sanjaya",
+      "Dhritarashtra"
+     ],
+     "story_hook": "",
+     "summary": "Krishna asks if Arjuna's confusion is gone; Arjuna says yes and that he will act. Sanjaya rejoices and declares that where Krishna and Arjuna stand, victory follows.",
+     "lesson": "Clarity, once found, turns into action.",
+     "matched": [],
+     "anchor": null,
+     "score": 2.84,
+     "why": null,
+     "hook_title": null,
+     "teaser": "The glory of the Gita",
+     "for_you": "Yesterday you gathered yourself again. Now your memory is back and you stand firm in the very moment that called you forward. Trust what is turning and let it guide your hands.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.bg.my_delusion_is_gone",
+     "path": "st.bg.my_delusion_is_gone -enacts_in-> moha, samshaya ; st.bg.my_delusion_is_gone -enacts_turn-> dhriti, sankalpa",
+     "why": [
+      "When delusion goes, a person remembers who he is and can act without doubt in the very situation that broke him."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bh.three_kinds_of_people",
+      "st.rcm.jambavan_why_so_silent",
+      "st.vr.jambavan_wakes_hanuman"
+     ],
+     "thin": false,
+     "story_id": "st.bg.my_delusion_is_gone",
+     "arc": {
+      "line": "This week stays with contentment in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Shanti Parva · Bhishma, Rajadharma) pointed toward steadiness; today someone in the texts lives it.",
+      "link": [
+       "toward",
+       "dhriti"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(doubt)",
+      "scene_line:pathologises_a_light_state(doubt)",
+      "audio_close:pathologises_a_light_state(doubt)"
+     ],
+     "bridge": "Yesterday you gathered yourself again."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Stuck at the start",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 52,
+   "v3_w1_write": 0,
+   "v3_w1_calls": 0,
+   "v3_w1_total": 54,
+   "select": 55,
+   "total": 56
+  },
+  "_ms": 59,
+  "_day_ms": [
+   49,
+   4328,
+   4223,
+   6346,
+   57,
+   4211
+  ],
+  "_day_calls": [
+   0,
+   2,
+   2,
+   4,
+   0,
+   2
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true,
+  "_d7_redone": true
+ }
+}

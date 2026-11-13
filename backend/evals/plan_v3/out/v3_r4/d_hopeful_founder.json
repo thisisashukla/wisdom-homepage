@@ -1,0 +1,1071 @@
+{
+ "case": "d_hopeful_founder",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.1,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Building something of their own. Feels determined; closest to \"I've retired and feel lost\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.63,wro=0.0,see=0.15",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "day1:model_pick"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "sankalpa",
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "retirement",
+     "midlife"
+    ],
+    "age": "55p",
+    "stages": [
+     "own_thing"
+    ],
+    "consent": true,
+    "light": true,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "bh.vairagya.82",
+    "first_line": "You want to keep this energy, and this freedom to wander at will and live among noble people is the fruit of some great austerity."
+   }
+  },
+  "hook": {
+   "id": "bh.vairagya.82",
+   "ref": "Bhartrihari · Vairagya Shatakam",
+   "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+   "family": "bh",
+   "speaker": "Bhartrihari",
+   "listener": "Reader",
+   "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+   "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+   "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+   "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+   "words": [],
+   "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+   "misuse": "",
+   "tone": "steadying",
+   "matched": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost"
+    }
+   ],
+   "prasang": {
+    "id": "bh.p.vairagya.shiva",
+    "title": "Vairagyashatakam: Worship of Shiva",
+    "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+    "story_hook": "",
+    "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You want to keep this energy, and this freedom to wander at will and live among noble people is the fruit of some great austerity.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You want to keep this energy, and this freedom to wander at will and live among noble people is the fruit of some great austerity.",
+   "first_line_source": "model"
+  },
+  "alternates": [
+   {
+    "id": "viv.6.glad_blunders",
+    "ref": "Swami Vivekananda",
+    "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+    "family": "viv",
+    "speaker": "Swami Vivekananda",
+    "listener": "Josephine MacLeod ('Joe')",
+    "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+    "sanskrit": null,
+    "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+    "words": [],
+    "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "midlife",
+      "label": "Midlife and wondering if this is it"
+     },
+     {
+      "id": "retirement",
+      "label": "I've retired and feel lost"
+     }
+    ],
+    "prasang": {
+     "id": "viv.p.letter.joe_1900",
+     "title": "'I am drifting': a letter from Alameda (1900)",
+     "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+     "story_hook": "",
+     "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bh.niti.84",
+    "ref": "Bhartrihari · Niti Shatakam",
+    "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From the section on steadfastness.",
+    "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+    "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+    "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+    "words": [],
+    "why": "Setbacks rarely last for those who keep going on the right path.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "bh.p.niti.dhairya",
+     "title": "Nitishatakam: On steadfastness",
+     "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+     "story_hook": "",
+     "lesson": "Setbacks rarely last for those who keep going on the right path."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 208,
+   "v3_candidates": 72,
+   "v3_fast_read": 1491,
+   "v3_select": 1776,
+   "v3_first_line": 682,
+   "v3_total": 2459,
+   "total": 2460
+  },
+  "_ms": 2463
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I've retired and feel lost",
+   "mirror": "I've retired and feel lost",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.1,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Building something of their own. Feels determined; closest to retired and feel lost\" and \"I keep comparing myself to others\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "sankalpa",
+     "utsaha",
+     "shraddha"
+    ],
+    "risk": "none",
+    "situations": [
+     "comparison",
+     "retirement",
+     "midlife"
+    ],
+    "age": "55p",
+    "stages": [
+     "own_thing"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "bh.vairagya.82",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": "You want to keep this energy, and this freedom to wander at will and live among noble people is the fruit of some great austerity."
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.82",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+     "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+     "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+     "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+     "words": [],
+     "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.shiva",
+      "title": "Vairagyashatakam: Worship of Shiva",
+      "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+      "story_hook": "",
+      "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+     },
+     "score": 5.893,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You want to keep this energy, and this freedom to wander at will and live among noble people is the fruit of some great austerity.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "bh.vairagya.82",
+     "path": "Day 1 kept from the first screen (vr.5.12.10 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.10",
+      "mbh.5.135.26",
+      "yv.2.4.17"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "first_line"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.4.1.101",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 1.101",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "At Lake Pampa, Lakshman pulls Ram out of despair after Sita has been taken.",
+     "sanskrit": "उत्साहो बलवानार्य नास्त्युत्साहात् परं बलम्। सोत्साहस्य हि लोकेषु न किंचिदपि दुर्लभम्॥",
+     "line": "There is no strength greater than enthusiasm. For the one who has it, nothing is out of reach.",
+     "translation": "Noble brother, enthusiasm is powerful; there is no strength greater than enthusiasm. For the person who has it, nothing in the world is out of reach.",
+     "words": [
+      {
+       "sa": "उत्साहो",
+       "en": "enthusiasm"
+      },
+      {
+       "sa": "बलवान्",
+       "en": "powerful"
+      },
+      {
+       "sa": "आर्य",
+       "en": "noble"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "is not"
+      },
+      {
+       "sa": "उत्साहात्",
+       "en": "than enthusiasm"
+      },
+      {
+       "sa": "परं",
+       "en": "supreme"
+      },
+      {
+       "sa": "बलम्",
+       "en": "strength"
+      },
+      {
+       "sa": "सोत्साहस्य",
+       "en": "for one who is enthusiastic"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "there is"
+      },
+      {
+       "sa": "लोके",
+       "en": "in the world"
+      },
+      {
+       "sa": "अस्मिन्",
+       "en": "in this"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "किञ्चित्",
+       "en": "anything"
+      },
+      {
+       "sa": "अपि",
+       "en": "at all"
+      },
+      {
+       "sa": "दुर्लभम्",
+       "en": "difficult"
+      }
+     ],
+     "why": "Beauty can sharpen grief; a friend can remind you of your own strength.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.pampa_grief",
+      "title": "Grief in springtime at Pampa",
+      "summary": "At the beautiful lake of Pampa in spring, everything reminds Ram of Sita and his grief deepens. Lakshman tells him there is no strength greater than enthusiasm, and to rouse himself.",
+      "story_hook": "Spring had come to the lake, and every flower made Ram's grief worse.",
+      "lesson": "Beauty can sharpen grief; a friend can remind you of your own strength."
+     },
+     "score": 2.438,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday you earned this freedom and company through great austerity. Now you see that no strength is greater than the resolve that keeps trying, and nothing in the world is out of reach.",
+     "try_today": "Notice the first step you take today.",
+     "scene_line": "You stand at the edge of your new company while Lakshmana stands at the edge of the lake urging Rama forward.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.4.1.101",
+     "path": "vr.4.1.101 -states_chain-> vr.utsaha [utsaha -leads_to-> siddhi]",
+     "why": [
+      "No strength greater than the will to go on (Valmiki Ramayana, Kishkindha 1.121 (Gita Press))"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.6.43"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Vairagya Shatakam) was about resolve; today asks where it comes from.",
+      "link": null
+     },
+     "personal_source": {
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:not_second_person",
+      "practice:invented_life_detail(your body)",
+      "scene_line:not_second_person"
+     ],
+     "bridge": "Yesterday you earned this freedom and company through great austerity."
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.106",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 106",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on action.",
+     "sanskrit": "कदर्थितस्यापि हि धैर्यवृत्तेर्न शक्यते धैर्यगुणः प्रमार्ष्टुम् । अधोमुखस्यापि कृतस्य वह्नेर्नाधः शिखा याति कदाचिदेव ॥",
+     "line": "Turn a torch upside down and its flame still rises. Steadiness survives humiliation.",
+     "translation": "Even when harassed, the steadfast cannot be robbed of their steadiness. Hold a torch upside down: its flame never points downward.",
+     "words": [],
+     "why": "Your actions are the one thing fate itself must answer to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.karma",
+      "title": "Nitishatakam: On action",
+      "summary": "The answer to the fate section: even fate only delivers the fruit of actions, so bow to action itself. Weigh outcomes before rash deeds, keep steady under humiliation, and speak kindly. The closing verses are miscellaneous maxims in some editions.",
+      "story_hook": "",
+      "lesson": "Your actions are the one thing fate itself must answer to."
+     },
+     "score": 4.141,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday, nothing was out of reach through resolve. Today, that resolve keeps its own height even when others look down. You are building something real and steady. Hold your ground.",
+     "try_today": "Notice one moment today when your energy holds steady despite what others say.",
+     "scene_line": "You hold your own light while the world looks at your feet.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bh.niti.106",
+     "path": "bh.niti.106 -heals-> dainya",
+     "why": [
+      "Humiliation does not reach what one is",
+      "Dhairya as an inalienable quality"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.4.66.7",
+      "up_maha.165",
+      "bg.6.45"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana · Kishkindha Kanda) named inertia, and today's verse grows steadiness; today gives ground to stand on.",
+      "link": [
+       "antidote",
+       "alasya>dhriti"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "practice": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "practice:imported_doctrine_or_technique(breath)",
+      "audio_close:short(3)"
+     ],
+     "bridge": "Yesterday, nothing was out of reach through resolve."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.271.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 271",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Sunayana",
+     "setting": "Kausalya, to Sita's mother at Chitrakoot, on Bharat's character.",
+     "sanskrit": "जानउँ सदा भरत कुलदीपा। बार बार मोहि कहेउ महीपा॥ कसें कनकु मनि पारिखि पाएँ। पुरुष परिखिअहिं समयँ सुभाएँ ॥",
+     "line": "Gold is proved on the touchstone. People are proved by time.",
+     "translation": "I have always known Bharat to be the lamp of our family; the king told me so again and again. Gold is known on the touchstone and a gem when a jeweller comes; a person is tested by time and shows his nature.",
+     "words": [
+      {
+       "sa": "जानउँ",
+       "en": "I know"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "भरत",
+       "en": "Bharata"
+      },
+      {
+       "sa": "कुलदीपा",
+       "en": "lamp of the family"
+      },
+      {
+       "sa": "बार बार",
+       "en": "again and again"
+      },
+      {
+       "sa": "मोहि",
+       "en": "to me"
+      },
+      {
+       "sa": "कहेउ",
+       "en": "said"
+      },
+      {
+       "sa": "महीपा",
+       "en": "the king"
+      },
+      {
+       "sa": "कसें",
+       "en": "by testing"
+      },
+      {
+       "sa": "कनकु",
+       "en": "gold"
+      },
+      {
+       "sa": "मनि",
+       "en": "gem"
+      },
+      {
+       "sa": "पारिखि",
+       "en": "by the tester/jeweler"
+      },
+      {
+       "sa": "पाएँ",
+       "en": "is obtained/recognized"
+      },
+      {
+       "sa": "पुरुष",
+       "en": "a person"
+      },
+      {
+       "sa": "परिखिअहिं",
+       "en": "is tested"
+      },
+      {
+       "sa": "समयँ",
+       "en": "in time"
+      },
+      {
+       "sa": "सुभाएँ",
+       "en": "by nature/character"
+      }
+     ],
+     "why": "When you are too close to a decision, say so, and speak briefly and honestly.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.janaka_chitrakoot",
+      "title": "Janaka's family joins the council",
+      "summary": "Sita's parents arrive and the two families grieve together. Kausalya tells Sunayana that people, like gold, are proved by time. Janaka asks Bharat to decide, and Bharat declines: duty and self-interest pull apart, hatred is blind and love cannot reason, so he will follow Ram's wish. His few words leave the whole court in awe.",
+      "story_hook": "Sita's parents walked into the forest camp, and two grieving families sat down together.",
+      "lesson": "When you are too close to a decision, say so, and speak briefly and honestly."
+     },
+     "score": 4.181,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Bhartrihari said steadiness survives humiliation. Now Kausalya speaks of gold and time. You are beginning your company at fifty-eight. This is the hour of trial that shows your nature. The touchstone is the work itself, and the work is beginning.",
+     "try_today": "Notice one small act today that proves your nature to yourself.",
+     "scene_line": "Kausalya speaks of gold to Sunayana as you speak of your company to the world.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "rcm.2.271.chaupai.3",
+     "path": "rcm.2.271.chaupai.3 -heals-> dainya",
+     "why": [
+      "the hard season is where one's quality gets to show",
+      "being tested is treated as assay, not punishment"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.1.inside_the_machine",
+      "bg.6.1",
+      "mbh.5.35.60"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Niti Shatakam) was about feeling small; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "dainya"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Bhartrihari said steadiness survives humiliation."
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_brihadaranyak.92",
+     "ref": "Brihadaranyaka Upanishad 1.4.16",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.16",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "How a householder becomes a 'world' for others.",
+     "sanskrit": "यन्मनुष्यान्वासयते यदेभ्योऽशनं ददाति तेन मनुष्याणामथ यत्पशुभ्यस्तृणोदकं विन्दति तेन पशूनां यदस्य गृहेषु श्वापदा वयाꣳस्या पिपीलिकाभ्य उपजीवन्ति तेन तेषां लोको",
+     "line": "Feed people, find water for animals; when even ants live off your home, you become a world for them.",
+     "translation": "By housing people and giving them food, he becomes a world for people. By finding grass and water for animals, he becomes a world for animals. When beasts, birds and even ants live off his house, he becomes a world for them.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": null,
+     "score": 3.966,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday spoke of gold and time. Today, your home becomes a world for others. You are feeding people and finding water for animals. Keep this energy. Let your house shelter many lives.",
+     "try_today": "Offer water to a bird or leave food for an ant today.",
+     "scene_line": "When birds and ants live off your home, you become a world for them.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_brihadaranyak.92",
+     "path": "up_brihadaranyak.92 -cultivates-> kritajnata",
+     "why": [
+      "a household is seen as something many lives rest on",
+      "feeding and housing others is what makes a home a world"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.268",
+      "up_taittiriya.52",
+      "up_taittiriya.49"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Ramcharitmanas · Ayodhya Kand) named feeling small, and today's verse grows compassion; today brings one practice for it.",
+      "link": [
+       "antidote",
+       "dainya>karuna"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday spoke of gold and time."
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.56",
+     "ref": "Taittiriya Upanishad 1.11.3-4",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.3-4",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The teacher's advice for when the rules run out.",
+     "sanskrit": "अथ यदि ते कर्मविचिकित्सा वा वृत्तविचिकित्सा वा स्यात् ॥ ये तत्र ब्राह्मणाः संमर्शिनः । युक्ता आयुक्ताः । अलूक्षा धर्मकामाः स्युः । यथा ते तत्र वर्तेरन् । तथा तत्र वर्तेथाः । अथाभ्याख्यातेषु । ये तत्र ब्राह्मणाः संमर्शिनः । युक्ता आयुक्ताः । अलूक्षा धर्मकामाः स्युः । यथा ते तेषु वर्तेरन् । तथा तेषु वर्तेथाः । एष आदेशः । एष उपदेशः ।",
+     "line": "When unsure what to do, ask how thoughtful, gentle, fair-minded people would act, and do that.",
+     "translation": "Now, if you are ever unsure about an action or about conduct, look to the thoughtful people there: devoted, independent, not harsh, lovers of what is right. As they would act, so should you act. And towards people under accusation, act as such people would. This is the instruction, this is the teaching.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.15,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday your home became a world. Today, when the path ahead is unclear, look to those who act with thoughtfulness and fairness.",
+     "try_today": "Notice one fair and gentle choice you can make today.",
+     "scene_line": "You are starting your own company at fifty-eight, and you act as the thoughtful people would.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "up_taittiriya.56",
+     "path": "up_taittiriya.56 -cultivates-> viveka",
+     "why": [
+      "judgement is borrowed from people who are thoughtful, unforced and not harsh"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.28",
+      "bh.niti.51",
+      "mbh.5.133.21"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Brihadaranyaka Upanishad 1.4.16) named weariness, and today's verse grows wanting to understand; today takes that practice into the hard moment.",
+      "link": [
+       "antidote",
+       "nirveda>jijnasa"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday your home became a world."
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [],
+     "anchor": null,
+     "score": 4.682,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "Yesterday you looked to those who act with fairness. Today you see your own limits and give what only you can give.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.jambavan_admits_he_is_old",
+     "path": "st.vr.jambavan_admits_he_is_old -enacts_in-> dainya ; st.vr.jambavan_admits_he_is_old -enacts_turn-> santosha, seva, viveka ; st.vr.jambavan_admits_he_is_old -fits_situation-> midlife, retirement",
+     "why": [
+      "An honest account of your limits frees you to give what you can give."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.viv.chicago_no_speech_prepared",
+      "st.up.indra_virochana",
+      "st.bh.ascetic_and_king"
+     ],
+     "thin": false,
+     "story_id": "st.vr.jambavan_admits_he_is_old",
+     "arc": {
+      "line": "This week stays with resolve in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Taittiriya Upanishad 1.11.3-4) pointed toward discernment; today someone in the texts lives it.",
+      "link": [
+       "toward",
+       "viveka"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [],
+     "bridge": "Yesterday you looked to those who act with fairness."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 63,
+   "v3_w1_write": 0,
+   "v3_w1_calls": 0,
+   "v3_w1_total": 65,
+   "select": 65,
+   "total": 66
+  },
+  "_ms": 70,
+  "_day_ms": [
+   5488,
+   3744,
+   1946,
+   1475,
+   1598,
+   1749
+  ],
+  "_day_calls": [
+   3,
+   2,
+   1,
+   1,
+   1,
+   1
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": false
+ }
+}

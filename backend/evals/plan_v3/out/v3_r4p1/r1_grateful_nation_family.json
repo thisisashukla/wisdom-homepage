@@ -1,0 +1,978 @@
+{
+ "case": "r1_grateful_nation_family",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "family",
+    "work",
+    "child",
+    "parent",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Success is going to my head",
+   "mirror": "Success is going to my head",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids and caring for their parents and studying and retired. Feels determined; closest to \"Success is going to my head\" and \"I need to set boundaries with family\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents",
+    "studying",
+    "retired"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.78,wro=0.31,see=0.25",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:alt:blocked_for_stance",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "ananda",
+     "prasada",
+     "santosha",
+     "utsaha"
+    ],
+    "risk": "none",
+    "situations": [
+     "success_pride",
+     "boundaries_family",
+     "morning_calm"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids",
+     "caring_parents",
+     "studying",
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "viv.6.glad_blunders"
+   }
+  },
+  "hook": {
+   "id": "viv.6.glad_blunders",
+   "ref": "Swami Vivekananda",
+   "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+   "family": "viv",
+   "speaker": "Swami Vivekananda",
+   "listener": "Josephine MacLeod ('Joe')",
+   "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+   "sanskrit": null,
+   "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+   "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+   "words": [],
+   "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "viv.p.letter.joe_1900",
+    "title": "'I am drifting': a letter from Alameda (1900)",
+    "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+    "story_hook": "",
+    "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "You are here with hope in your heart.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "You are here with hope in your heart.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "bh.vairagya.82",
+    "ref": "Bhartrihari · Vairagya Shatakam",
+    "ref_iast": "Bhartṛhari, Vairāgyaśatakam 82",
+    "family": "bh",
+    "speaker": "Bhartrihari",
+    "listener": "Reader",
+    "setting": "From 'Worship of Shiva': gratitude for a simple life.",
+    "sanskrit": "यदेतत्स्वच्छन्दं विहरणमकार्पण्यमशनं सहार्यैः संवासः श्रुतमुपशमैकव्रतफलम् । मनो मन्दस्पन्दं बहिरपि चिरस्यापि विमृशन् न जाने कस्यैष परिणतिरुदारस्य तपसः ॥",
+    "line": "Freedom, simple food, good company, learning that brings calm: what did I do to deserve this?",
+    "translation": "This freedom to wander at will, food eaten without humiliation, living among noble people, learning whose only fruit is calm, a mind that stirs only gently even when it looks outward for long: I do not know what generous austerity this is the fruit of.",
+    "words": [],
+    "why": "Gratitude for a simple life, and devotion without rivalry between forms of God.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "morning_calm",
+      "label": "I want a calm start to my day"
+     }
+    ],
+    "prasang": {
+     "id": "bh.p.vairagya.shiva",
+     "title": "Vairagyashatakam: Worship of Shiva",
+     "summary": "Devotional verses longing for a quiet life by the Ganga in Shiva's presence, including a famous non-sectarian line that Shiva and Vishnu are one in essence.",
+     "story_hook": "",
+     "lesson": "Gratitude for a simple life, and devotion without rivalry between forms of God."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "mbh.13.162.15",
+    "ref": "Mahabharata · Anushasana Parva · Anushasana",
+    "ref_iast": "Mahābhārata, Anuśāsana Parva 162.15",
+    "family": "mbh",
+    "speaker": "Bhishma",
+    "listener": "Yudhishthira",
+    "setting": "Yudhishthira asks Bhishma how an eldest brother should treat his younger brothers, and they him.",
+    "sanskrit": "दशाचार्यानुपाध्याय उपाध्यायान्पिता दश / दश चैव पितॄन्माता सर्वां वा पृथिवीमपि / गौरवेणाभिभवति नास्ति मातृसमो गुरुः",
+    "line": "There is no teacher like a mother.",
+    "translation": "A teacher outweighs ten instructors, a father ten teachers, and a mother ten fathers, even the whole earth. There is no teacher equal to a mother.",
+    "words": [],
+    "why": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [],
+    "prasang": {
+     "id": "mbh.p.brothers",
+     "title": "Bhishma on elder and younger siblings",
+     "summary": "Yudhishthira asks how the eldest brother should treat the younger ones. Bhishma: overlook small faults and correct gently, beware outsiders who sow division, divide property equally, and honour the mother above all.",
+     "story_hook": "",
+     "lesson": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 217,
+   "v3_candidates": 69,
+   "v3_fast_read": 1387,
+   "v3_select": 2028,
+   "v3_first_line": 696,
+   "v3_total": 2724,
+   "total": 2731
+  },
+  "_ms": 2742
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "family",
+    "work",
+    "child",
+    "parent",
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Success is going to my head",
+   "mirror": "Success is going to my head",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "success_pride",
+     "label": "Success is going to my head",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids and caring for their parents and studying and retired. Feels determined; closest to is going to my head\" and \"I need to set boundaries with family\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents",
+    "studying",
+    "retired"
+   ],
+   "flags": [
+    "v3:for_you:1/7",
+    "v3:per_day:w1:written_at_plan:day1_only",
+    "v3:day:2:for_you:yes",
+    "v3:day:3:for_you:yes",
+    "v3:bridge_dropped:bridge_repeats_yesterday",
+    "v3:day:4:for_you:yes",
+    "v3:day:5:for_you:yes",
+    "v3:bridge_dropped:bridge_not_about_yesterday",
+    "v3:day:6:for_you:yes",
+    "v3:day:7:for_you:yes"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "hopeful"
+    ],
+    "paused": null,
+    "stance": "aspiration",
+    "states": [
+     "ananda",
+     "prasada",
+     "santosha",
+     "utsaha"
+    ],
+    "risk": "none",
+    "situations": [
+     "success_pride",
+     "boundaries_family",
+     "morning_calm"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids",
+     "caring_parents",
+     "studying",
+     "retired"
+    ],
+    "consent": true,
+    "light": true,
+    "pick": "viv.6.glad_blunders",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "viv.6.glad_blunders",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 6",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Josephine MacLeod ('Joe')",
+     "setting": "Letter from Alameda, California, 18 April 1900, after laying down his role as leader.",
+     "sanskrit": null,
+     "line": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+     "translation": "I am glad I was born, glad I suffered so, glad I did make big blunders, glad to enter peace.",
+     "words": [],
+     "why": "Honest looking back, with gratitude for the mistakes, can bring peace.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.letter.joe_1900",
+      "title": "'I am drifting': a letter from Alameda (1900)",
+      "summary": "Two years before his death, worn out, he writes that he has laid down the role of leader. He is glad he was born, glad he suffered, glad he made big blunders. He admits that ambition, personality, fear and love of power lay behind his work, and says they are fading as he drifts toward peace.",
+      "story_hook": "",
+      "lesson": "Honest looking back, with gratitude for the mistakes, can bring peace."
+     },
+     "score": 8.666,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The good direction you see around you is worth holding. You can be glad for the turns you took, and the peace you are finding now.",
+     "try_today": "Notice one small sign of this turning and let it be enough.",
+     "scene_line": "You stand in good health, and the nation turns, while the past stays where it is.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "viv.6.glad_blunders",
+     "path": "Day 1 kept from the first screen (bh.vairagya.82 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "vr.4.1.101",
+      "up_mundaka.3.1.4",
+      "vr.5.12.10"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": null,
+      "link": null
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not a denial of the past. It is)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.5.12.10",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+     "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+     "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+     "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+     "words": [],
+     "why": "When you have looked everywhere, look again; giving up costs too much.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.search_despair",
+      "title": "Hanuman's search and near despair",
+      "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+      "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+      "lesson": "When you have looked everywhere, look again; giving up costs too much."
+     },
+     "score": 2.38,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Glad you can be glad for the turns you took. Refusing to lose heart is the root of success, and you are living it. Search again in the places you have not yet searched.",
+     "try_today": "Notice one new place you have not yet looked at today.",
+     "scene_line": "You search again in Lanka where Sita has not yet been found.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.5.12.10",
+     "path": "vr.5.12.10 -states_chain-> vr.utsaha [utsaha -leads_to-> siddhi]",
+     "why": [
+      "No strength greater than the will to go on (Valmiki Ramayana, Kishkindha 1.121 (Gita Press))"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.4.1.101",
+      "bg.2.65"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Swami Vivekananda) named shame, and today's verse grows resolve; today asks where it comes from.",
+      "link": [
+       "antidote",
+       "glani>sankalpa"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:pathologises_a_light_state(suffered)"
+     ],
+     "bridge": "Glad you can be glad for the turns you took."
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.4.no_winter",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 4",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Poem 'Hold On Yet a While, Brave Heart', second stanza.",
+     "sanskrit": null,
+     "line": "No winter was but summer came behind,",
+     "translation": "No winter was but summer came behind, Each hollow crests the wave, They push each other in light and shade; Be steady then and brave.",
+     "words": [],
+     "why": "No struggle is wasted; hold on a little longer.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.poem.hold_on",
+      "title": "'Hold on yet a while, brave heart' (poem to the Maharaja of Khetri)",
+      "summary": "A short poem of encouragement to a friend. Clouds hide the sun for a while, summer always follows winter, and no honest struggle is wasted even when hopes fail.",
+      "story_hook": "",
+      "lesson": "No struggle is wasted; hold on a little longer."
+     },
+     "score": 4.003,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Yesterday said to search where you have not looked. Today says summer always follows winter, so keep steady in the good turn you feel.",
+     "try_today": "Notice the light and shade in the news today. Let both push each other without choosing sides.",
+     "scene_line": "The nation turns back toward good, and your family is well, just as summer follows winter.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.4.no_winter",
+     "path": "viv.4.no_winter -heals-> bhaya",
+     "why": [
+      "be steady and brave",
+      "be steady"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.173.41",
+      "bg.18.26",
+      "bg.6.45"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Valmiki Ramayana · Sundara Kanda) was about collapse; today gives ground to stand on.",
+      "link": [
+       "state",
+       "vishada"
+      ]
+     },
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:not_second_person"
+     ],
+     "bridge": "Yesterday said to search where you have not looked."
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.35.60",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 35.60",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "तृणोल्कया ज्ञायते जातरूपं / वृत्तेन भद्रो व्यवहारेण साधुः / शूरो भयेष्वर्थकृच्छ्रेषु धीरः / कृच्छ्रेष्वापत्सु सुहृदश्चारयश्च",
+     "line": "Gold shows in fire, character in conduct, courage in danger, and true friends in hard times.",
+     "translation": "Gold is known by a flame of straw; a good person by conduct, an honest one by dealings, a brave one in danger, a steady one in money troubles, and friends and enemies in hard times.",
+     "words": [],
+     "why": "Character shows under pressure. Do by day what will let you sleep at night.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.35",
+      "title": "Vidura Niti: Keshini's choice and the tests of character",
+      "summary": "Vidura tells how Prahlada judged honestly against his own son when Princess Keshini set two suitors a test, then gives aphorisms: gold is tested by fire, friends by hard times, and a clear conscience lets you sleep.",
+      "story_hook": "",
+      "lesson": "Character shows under pressure. Do by day what will let you sleep at night."
+     },
+     "score": 3.09,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today says gold shows in flame. Your nation turns and your family is well. Keep steady in this good time.",
+     "try_today": "Watch one act of steady kindness today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.5.35.60",
+     "path": "mbh.5.35.60 -cultivates-> dhriti",
+     "why": [
+      "The steady one is known in want",
+      "Read people by what they do in difficulty"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.1.27.9",
+      "yv.6a.115.26",
+      "yv.2.13.78"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Swami Vivekananda) was about collapse; today turns it to another way of seeing.",
+      "link": [
+       "state",
+       "vishada"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:invented_life_detail(sleepless)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.52",
+     "ref": "Taittiriya Upanishad 1.11.2",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.2",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The most quoted lines of the graduation address.",
+     "sanskrit": "देवपितृकार्याभ्यां न प्रमदितव्यम् । मातृदेवो भव । पितृदेवो भव । आचार्यदेवो भव । अतिथिदेवो भव ।",
+     "line": "Treat your mother as divine, your father as divine, your teacher as divine, your guest as divine.",
+     "translation": "Do not neglect your duties to the gods and the ancestors. Let your mother be a god to you. Let your father be a god to you. Let your teacher be a god to you. Let your guest be a god to you.",
+     "words": [],
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "Honouring parents does not mean accepting mistreatment or giving up your own conscience.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 4.205,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Gold shows in fire. Now let your care for mother, father, teacher and guest shine in this good turning.",
+     "try_today": "Let one person you meet today be a guest to you.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_taittiriya.52",
+     "path": "up_taittiriya.52 -cultivates-> kritajnata",
+     "why": [
+      "those who raised and taught you are to be honoured as one honours a deity",
+      "the guest and the elder are served as sacred"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_brihadaranyak.92",
+      "mbh.12.108.3",
+      "up_chhandogya.268"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Mahabharata · Udyoga Parva · Vidura Niti) named loneliness, and today's verse grows service; today brings one practice for it.",
+      "link": [
+       "antidote",
+       "viraha>seva"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "scene_line:invented_person(teacher)",
+      "audio_close:invented_person(parent)"
+     ],
+     "bridge": "Gold shows in fire."
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.28",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 28",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of the section praising learning: the 'sword's-edge vow' of the good.",
+     "sanskrit": "असन्तो नाभ्यर्थ्याः सुहृदपि न याच्यः कृशधनः प्रिया न्याय्या वृत्तिर्मलिनमसुभङ्गेऽप्यसुकरम् । विपद्युच्चैः स्थेयं पदमनुविधेयं च महतां सतां केनोद्दिष्टं विषममसिधाराव्रतमिदम् ॥",
+     "line": "Don't beg favours from the wicked or money from a struggling friend. Stand tall in hard times.",
+     "translation": "Do not ask the wicked for favours; do not ask a friend of slender means for money; love a just way of earning; do nothing base even when life is at stake; stand tall in trouble; follow in the footsteps of the great. Who taught the good this vow, hard as walking a sword's edge?",
+     "words": [],
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "'Even when life is at stake' is the poet's intensity; no principle asks you to harm yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 2.66,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Today you stand in the hard light of this turning and do not ask for anything base. Keep your feet on the ground.",
+     "try_today": "Notice one small thing today that asks nothing of you and simply let it be.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bh.niti.28",
+     "path": "bh.niti.28 -cultivates-> dhriti",
+     "why": [
+      "The sword-edge vow of integrity"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.2.48",
+      "bh.niti.51"
+     ],
+     "thin": false,
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Taittiriya Upanishad 1.11.2) was about joy; today takes that practice into the hard moment.",
+      "link": null
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:long(27)",
+      "scene_line:pathologises_a_light_state(struggling)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.parrot_tree",
+     "title": "The parrot who stayed with the withered tree",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "The parrot",
+      "Indra",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Every other bird left the dying tree; the parrot stayed.",
+     "summary": "A hunter's poisoned arrow withers the tree where a parrot has always lived. The parrot refuses to leave it. Indra, moved by its loyalty, restores the tree.",
+     "lesson": "Loyalty means staying through the bad season, not only the good.",
+     "matched": [],
+     "anchor": null,
+     "score": 2.8,
+     "why": null,
+     "hook_title": "Every bird left the dying tree except one parrot",
+     "teaser": "Every bird left the dying tree except one parrot",
+     "for_you": "Yesterday asked you to stand tall in hard times. Today the parrot shows you how. You are staying by the one who gave you shelter before, and that loyalty is its own kind of strength. You do not need to leave to be whole.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.mbh.parrot_and_the_withered_tree",
+     "path": "st.mbh.parrot_and_the_withered_tree -enacts_turn-> dhriti, kritajnata, seva",
+     "why": [
+      "Stay by the one who sheltered you when they flourished, now that they are failing."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.forest_people_hosts",
+      "st.rcm.jatayu_old_and_outmatched",
+      "st.vr.bharata_returns_what_he_held_in_trust"
+     ],
+     "thin": false,
+     "story_id": "st.mbh.parrot_and_the_withered_tree",
+     "arc": {
+      "line": "This week stays with joy in your situation: what it is, what tests it, ground to keep it, another way to see it, a practice, the hard moment, and someone who lived it.",
+      "link_from_previous": "Yesterday (Bhartrihari · Niti Shatakam) pointed toward steadiness; today someone in the texts lives it.",
+      "link": [
+       "toward",
+       "dhriti"
+      ]
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:untraced_sentence(gave,old,rememb,shade)"
+     ],
+     "bridge": "Yesterday asked you to stand tall in hard times."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 66,
+   "v3_w1_write": 3647,
+   "v3_w1_calls": 2,
+   "v3_w1_total": 3715,
+   "select": 3715,
+   "total": 3717
+  },
+  "_ms": 3721,
+  "_day_ms": [
+   3848,
+   3629,
+   5611,
+   5478,
+   3733,
+   4215
+  ],
+  "_day_calls": [
+   2,
+   2,
+   3,
+   3,
+   2,
+   2
+  ],
+  "_day_errors": [
+   7
+  ],
+  "_days_done": true,
+  "_d7_redone": true
+ }
+}

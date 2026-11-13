@@ -1,0 +1,1076 @@
+{
+ "case": "r3_pilgrim_detox",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.68,wro=0.15,see=0.26",
+    "engine:v3",
+    "fast_read:fixed",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "trishna",
+     "chinta",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": true,
+    "pick": "viv.1.true_to_nature"
+   }
+  },
+  "hook": {
+   "id": "viv.1.true_to_nature",
+   "ref": "Swami Vivekananda",
+   "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+   "family": "viv",
+   "speaker": "Swami Vivekananda",
+   "listener": "Audience in San Francisco",
+   "setting": "Lecture on the Prophet Mohammed, California, 1900, recorded in shorthand by Ida Ansell.",
+   "sanskrit": null,
+   "line": "The greatest religion is to be true to your own nature. Have faith in yourselves!",
+   "translation": "The greatest religion is to be true to your own nature. Have faith in yourselves!",
+   "words": [],
+   "why": null,
+   "misuse": "",
+   "tone": "challenging",
+   "matched": [],
+   "prasang": null,
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Things are turning. I want to keep it going.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Things are turning. I want to keep it going.",
+   "first_line_source": "app_emotion_line"
+  },
+  "alternates": [
+   {
+    "id": "bg.1.29",
+    "ref": "Bhagavad Gita 1.29–30",
+    "ref_iast": "Bhagavad Gītā 1.29–30",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+    "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+    "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+    "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+    "words": [
+     {
+      "sa": "सीदन्ति",
+      "en": "are failing"
+     },
+     {
+      "sa": "मम",
+      "en": "my"
+     },
+     {
+      "sa": "गात्राणि",
+      "en": "limbs"
+     },
+     {
+      "sa": "मुखं",
+      "en": "mouth"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "परिशुष्यति",
+      "en": "dries up"
+     },
+     {
+      "sa": "वेपथुः",
+      "en": "trembling"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "शरीरे",
+      "en": "in the body"
+     },
+     {
+      "sa": "मे",
+      "en": "my"
+     },
+     {
+      "sa": "रोम-हर्षः",
+      "en": "standing of hair"
+     },
+     {
+      "sa": "च",
+      "en": "and"
+     },
+     {
+      "sa": "जायते",
+      "en": "arises"
+     }
+    ],
+    "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+    "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "bg.p01.4",
+     "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+     "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+     "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+     "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.6.38",
+    "ref": "Bhagavad Gita 6.38",
+    "ref_iast": "Bhagavad Gītā 6.38",
+    "family": "bg",
+    "speaker": "Arjuna",
+    "listener": "Krishna",
+    "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+    "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति । अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि ॥",
+    "line": "Fallen from both sides, does he scatter like a torn cloud, with nowhere to stand?",
+    "translation": "Fallen from both, does he not perish like a broken cloud, without support, mighty-armed one, bewildered on the path to Brahman?",
+    "words": [
+     {
+      "sa": "कच्चित्",
+      "en": "whether?"
+     },
+     {
+      "sa": "नोभयविभ्रष्टः",
+      "en": "fallen from both sides"
+     },
+     {
+      "sa": "छिन्नाभ्रम्",
+      "en": "torn cloud"
+     },
+     {
+      "sa": "इव",
+      "en": "like"
+     },
+     {
+      "sa": "नश्यति",
+      "en": "perishes"
+     },
+     {
+      "sa": "अप्रतिष्ठः",
+      "en": "without support"
+     },
+     {
+      "sa": "महाबाहो",
+      "en": "O mighty-armed one"
+     },
+     {
+      "sa": "विमूढः",
+      "en": "deluded"
+     },
+     {
+      "sa": "ब्रह्मणः",
+      "en": "of the supreme reality"
+     },
+     {
+      "sa": "पथि",
+      "en": "on the path"
+     }
+    ],
+    "why": "No sincere effort is wasted; you pick up where you left off.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "career_switch",
+      "label": "I want to change careers but I'm scared"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p06.5",
+     "title": "What becomes of one who falls from yoga",
+     "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+     "story_hook": "",
+     "lesson": "No sincere effort is wasted; you pick up where you left off."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 505,
+   "v3_candidates": 168,
+   "v3_fast_read": 2797,
+   "v3_select": 3475,
+   "v3_first_line": 693,
+   "v3_total": 4169,
+   "total": 4170
+  },
+  "_ms": 4174
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 0.6,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "v3:for_you:3/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hopeful",
+    "trail": [
+     "inspired",
+     "anxious",
+     "inspired",
+     "determined",
+     "grateful",
+     "hopeful"
+    ],
+    "paused": "grateful",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "trishna",
+     "chinta",
+     "bhaya"
+    ],
+    "risk": "none",
+    "situations": [
+     "reconnect_faith",
+     "craving",
+     "career_switch"
+    ],
+    "age": "55p",
+    "stages": [
+     "working",
+     "own_thing",
+     "raising_kids"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "viv.1.true_to_nature",
+    "threat": false,
+    "caste_ok": false,
+    "health": true,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "viv.1.true_to_nature",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Audience in San Francisco",
+     "setting": "Lecture on the Prophet Mohammed, California, 1900, recorded in shorthand by Ida Ansell.",
+     "sanskrit": null,
+     "line": "The greatest religion is to be true to your own nature. Have faith in yourselves!",
+     "translation": "The greatest religion is to be true to your own nature. Have faith in yourselves!",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": null,
+     "score": 5.989,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one moment today when you choose your own nature over fear.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "viv.1.true_to_nature",
+     "path": "Day 1 kept from the first screen (yv.1.12.22 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bg.6.38",
+      "rcm.1.196.chaupai.3",
+      "up_maha.113"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:invented_life_detail(your body)",
+      "scene_line:untraced_sentence(betwee,hope,medici,pilgri)",
+      "scene_line:names_treatment(medicine)",
+      "audio_open:names_treatment(detox)",
+      "for_you:names_treatment(detox)",
+      "scene_line:names_treatment(medication)",
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.173.53",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 173.53",
+     "family": "mbh",
+     "speaker": "A brahmin (retold by Bhishma)",
+     "listener": "King Senajit",
+     "setting": "The brahmin explains to King Senajit why loss hurts so much.",
+     "sanskrit": "किंचिदेव ममत्वेन यदा भवति कल्पितम् / तदेव परितापाय नाशे संपद्यते तदा",
+     "line": "Whatever you start calling 'mine' becomes a source of pain the day you lose it.",
+     "translation": "Whatever a person begins to think of as 'mine', that very thing becomes a source of anguish when it is lost.",
+     "words": [],
+     "why": "No one suffers forever. Meet what comes with an undefeated heart.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.senajit_brahmin",
+      "title": "King Senajit and the brahmin's consolation",
+      "summary": "King Senajit is crushed by his son's death. A brahmin comforts him: everyone suffers, no sorrow lasts forever, effort beats idleness, and whatever we call 'mine' becomes a source of pain.",
+      "story_hook": "",
+      "lesson": "No one suffers forever. Meet what comes with an undefeated heart."
+     },
+     "score": 3.276,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are holding onto a future that is not yet here, and the fear of losing it is already a kind of pain. The grip itself is what hurts. Let your hope remain. Release only the tight hold.",
+     "try_today": null,
+     "scene_line": "You stand in your own life, and the fear of losing what you built begins to loosen.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "mbh.12.173.53",
+     "path": "mbh.12.173.53 -states_chain-> mbh.pingala [sanga -causes-> shoka]",
+     "why": [
+      "The night she stopped waiting (Mahabharata, Shanti Parva 173-174 (Gita Press))",
+      "Explains the size of the pain without denying it"
+     ],
+     "writer_note": "Letting-go teaching for a reader who is building something. Explain it through their own situation and feeling: what is released is the grip that hurts them, never their love, their hope or their work. Never say or imply 'stop caring' or 'your hope is the problem'. Read it after the guard verse, which reassures first. The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "viv.6.fearful_to_hurt",
+      "bh.vairagya.10",
+      "bg.5.12"
+     ],
+     "thin": false,
+     "guard": {
+      "id": "bg.2.40",
+      "ref": "Bhagavad Gita 2.40",
+      "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+      "is_previous_day": false
+     },
+     "personal_source": {
+      "scene_line": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not your love. It is)",
+      "practice:untraced_sentence(betwee,differ,owning,result)",
+      "audio_open:names_treatment(detox)",
+      "practice:tells_the_lonely_to_let_go(let go of the)",
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "words": [
+      {
+       "sa": "अनन्याः",
+       "en": "exclusive"
+      },
+      {
+       "sa": "चिन्तयन्तः",
+       "en": "thinking"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "जनाः",
+       "en": "people"
+      },
+      {
+       "sa": "पर्युपासते",
+       "en": "worship"
+      },
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "नित्याभियुक्तानाम्",
+       "en": "always attached"
+      },
+      {
+       "sa": "योगक्षेमम्",
+       "en": "well-being and protection"
+      },
+      {
+       "sa": "वहामि",
+       "en": "I carry"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 5.845,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one thing you need to carry today, and let it rest in your thoughts without fixing it.",
+     "scene_line": "You stand at the edge of wanting and fear, while Krishna waits to carry what you lack.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.9.22",
+     "path": "bg.9.22 -heals-> bhaya via sharanagati",
+     "why": [
+      "Rama's vow of safety to whoever comes afraid; 'I carry what they lack'.",
+      "what you have is guarded"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.3.66.5",
+      "mbh.5.33.30",
+      "rcm.5.13.chaupai.5"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:names_treatment(detox)",
+      "for_you:overrules_their_feeling(You are not alone)",
+      "scene_line:not_second_person",
+      "audio_open:names_treatment(detox)",
+      "for_you:untraced_sentence(fear,heavy,peace,right,weight)",
+      "for_you:copied_example(you are carrying)",
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.113.9",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 113.9",
+     "family": "mbh",
+     "speaker": "The river Ganga (retold by Bhishma)",
+     "listener": "the Ocean",
+     "setting": "The Ocean asks the rivers why they uproot great trees but never the humble cane; Ganga answers.",
+     "sanskrit": "वेतसो वेगमायान्तं दृष्ट्वा नमति नापरे / स च वेगे ह्यतिक्रान्ते स्थानमापद्यते पुनः",
+     "line": "The cane bends when the flood comes, and stands up again once it has passed.",
+     "translation": "The cane, seeing the flood coming, bends; no other tree does. And once the force has passed, it stands back up in its place.",
+     "words": [],
+     "why": "Bend with the flood and you stand again after it passes.",
+     "misuse": "Bending under pressure is not giving up your values.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ganga_sagara",
+      "title": "The river and the reeds",
+      "summary": "The Ocean asks the rivers why they uproot great trees but never the reeds. Ganga answers: the reed bends when the flood comes and stands again after; the rigid tree breaks.",
+      "story_hook": "The rivers tore down mighty trees every monsoon, yet never the humble reeds on their banks.",
+      "lesson": "Bend with the flood and you stand again after it passes."
+     },
+     "score": 4.939,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are hoping to go to Vrindavan. The river knows how to bend when the flood comes and stand again once it has passed.",
+     "try_today": "Notice where you bend without breaking today.",
+     "scene_line": "You stand beside the river, watching the cane bend and stand again.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "mbh.12.113.9",
+     "path": "mbh.12.113.9 -heals-> bhaya",
+     "why": [
+      "Shows a way through overwhelming force that does not require breaking",
+      "Resilience is pictured as bending and returning to one's place"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "vr.3.66.17",
+      "viv.1.moral_gymnasium",
+      "viv.2.angels_unawares"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.23",
+     "ref": "Bhagavad Gita 6.23",
+     "ref_iast": "Bhagavad Gītā 6.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् । स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ॥",
+     "line": "Yoga is unhooking from sorrow. Practise it with resolve and a heart that doesn't lose hope.",
+     "translation": "Know that to be yoga: the breaking of contact with sorrow. This yoga should be practised with determination and with an undespairing mind.",
+     "words": [
+      {
+       "sa": "तं",
+       "en": "that"
+      },
+      {
+       "sa": "विद्याद्",
+       "en": "should be known"
+      },
+      {
+       "sa": "दुःखसंयोगवियोगं",
+       "en": "separation from the union with suffering"
+      },
+      {
+       "sa": "योगसंज्ञितम्",
+       "en": "called yoga"
+      },
+      {
+       "sa": "स",
+       "en": "that"
+      },
+      {
+       "sa": "निश्चयेन",
+       "en": "with certainty"
+      },
+      {
+       "sa": "योक्तव्यो",
+       "en": "should be practiced"
+      },
+      {
+       "sa": "योगः",
+       "en": "yoga"
+      },
+      {
+       "sa": "अनिर्विण्णचेतसा",
+       "en": "with an undisturbed mind"
+      }
+     ],
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 5.585,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The sorrow you feel is a heavy thing. You do not need to carry it all at once. Choose to step back from it, just for a moment.",
+     "try_today": "Notice one small thing that is not sorrow today.",
+     "scene_line": "Arjuna, turn your mind away from sorrow and hold to what is steady.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "bg.6.23",
+     "path": "bg.6.23 -cultivates-> dhriti",
+     "why": [
+      "keeping on without losing heart",
+      "practise with determination"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "bg.6.25",
+      "rcm.2.163.doha.1",
+      "viv.8.take_things_easy"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:names_treatment(detoxing)"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.136.1",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 136.1",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "नैव राज्ञा दरः कार्यो जातु कस्यांचिदापदि / अथ चेदपि दीर्णः स्यान्नैव वर्तेत दीर्णवत्",
+     "line": "In a crisis, you may be shaken inside. Don't let fear make your decisions for you.",
+     "translation": "A leader should never show fear in any crisis. Even if shaken inside, he should not act like a shaken man.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "This is about not acting from panic, not about hiding your feelings from everyone.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 6.445,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when fear is steering your next step today.",
+     "scene_line": "You lie defeated, and others around you look to your strength to hold steady.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.136.1",
+     "path": "mbh.5.136.1 -cultivates-> dhriti",
+     "why": [
+      "Courage and steadiness are the wheels of the chariot that wins; do not let fear decide.",
+      "Composure for those who depend on one"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "bg.2.14",
+      "mbh.12.55.16",
+      "rcm.2.292.chaupai.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "for_you:names_treatment(detox)",
+      "for_you:medical_direction(detox will)",
+      "audio_open:names_treatment(detox)",
+      "for_you:names_treatment(detox)",
+      "for_you:medical_direction(detox is)",
+      "audio_open:names_treatment(detox)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [],
+     "anchor": null,
+     "score": 7.98,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": null,
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.hanuman_despair_and_self_talk_in_lanka",
+     "path": "st.vr.hanuman_despair_and_self_talk_in_lanka -enacts_in-> bhaya ; st.vr.hanuman_despair_and_self_talk_in_lanka -enacts_turn-> dhriti, sankalpa, shraddha",
+     "why": [
+      "Despondency is the enemy of every aim; while one lives, good can still be seen."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.ram_cannot_fight_with_lakshman_down",
+      "st.gitas.gods_grow_comfortable",
+      "st.mbh.savitri_follows_yama"
+     ],
+     "thin": false,
+     "story_id": "st.vr.hanuman_despair_and_self_talk_in_lanka",
+     "personal_source": {
+      "practice": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:names_treatment(detox)",
+      "for_you:medical_direction(detox is)",
+      "scene_line:not_second_person",
+      "audio_open:names_treatment(detox)",
+      "for_you:names_treatment(medications)",
+      "scene_line:not_second_person",
+      "scene_line:narrates_self_harm(end his life)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 57,
+   "v3_w1_write": 6782,
+   "v3_w1_total": 6840,
+   "select": 6840,
+   "total": 6841
+  },
+  "_ms": 6845
+ }
+}

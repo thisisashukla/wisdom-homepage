@@ -57,6 +57,7 @@ def norm_note(note: Optional[str]) -> str:
 
 def request_key(req, library_version: str, understanding_version: int) -> str:
     d = req.model_dump(mode="json")
+    d.pop("client", None)           # tracking ids (ai/run_log.py) differ on every call and never change the answer
     note = norm_note(d.pop("note", None))
     d.pop("note_source", None)      # typed or spoken, the same words are the same request
     d["note_sha"] = hashlib.sha256(note.encode()).hexdigest() if note else ""

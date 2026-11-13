@@ -713,6 +713,10 @@ export default function BestGitaTranslationPage() {
         </p>
 
         <p>
+            Once you have your translation, pick a pace. <a href="/how-to-read-bhagavad-gita" data-mp-location="internal_link_how_to_read" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>How to read the Bhagavad Gita</a> covers where to start and how long each part takes, and our <a href="/reading-plans" data-mp-location="internal_link_reading_plans" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>reading plans</a> take you through the whole text: <a href="/bhagavad-gita-in-30-days" data-mp-location="internal_link_30_days" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>in 30 days</a> at 3 to 6 minutes a day, a chapter a day for 18 days, or <a href="/bhagavad-gita-one-verse-a-day" data-mp-location="internal_link_verse_a_day" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>one verse each morning</a>.
+        </p>
+
+        <p>
             Reading on your phone? Our <a href="/best-apps" data-mp-location="internal_link_best_apps" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>comparison of Gita and Hindu practice apps</a> notes whose translation and commentary each app carries.
         </p>
 

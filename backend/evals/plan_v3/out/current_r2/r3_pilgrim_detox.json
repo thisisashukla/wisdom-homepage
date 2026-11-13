@@ -1,0 +1,953 @@
+{
+ "case": "r3_pilgrim_detox",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "I have decided, and I am ready to begin",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.821,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.635,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 1.405,
+     "source": "note"
+    },
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.297,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I can't handle not knowing what comes next\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.63,wro=0.15,see=0.26",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.18.46",
+   "ref": "Bhagavad Gita 18.46",
+   "ref_iast": "Bhagavad Gītā 18.46",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+   "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् । स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥",
+   "line": "Doing your own work well can be your worship of the source of all life.",
+   "translation": "By worshipping, through his own work, Him from whom all beings arise and by whom all this is pervaded, a person attains perfection.",
+   "words": [
+    {
+     "sa": "यतः",
+     "en": "from which"
+    },
+    {
+     "sa": "प्रवृत्तिः",
+     "en": "origin"
+    },
+    {
+     "sa": "भूतानां",
+     "en": "of beings"
+    },
+    {
+     "sa": "येन",
+     "en": "by which"
+    },
+    {
+     "sa": "सर्वम्",
+     "en": "all"
+    },
+    {
+     "sa": "इदं",
+     "en": "this"
+    },
+    {
+     "sa": "ततम्",
+     "en": "pervades"
+    },
+    {
+     "sa": "स्वकर्मणा",
+     "en": "by own action"
+    },
+    {
+     "sa": "तम्",
+     "en": "that"
+    },
+    {
+     "sa": "अभ्यर्च्य",
+     "en": "worshiping"
+    },
+    {
+     "sa": "सिद्धिं",
+     "en": "success"
+    },
+    {
+     "sa": "विन्दति",
+     "en": "attains"
+    },
+    {
+     "sa": "मानवः",
+     "en": "a person"
+    }
+   ],
+   "why": "Do the work that fits you, flaws and all, as an offering.",
+   "misuse": "Work as worship doesn't mean overwork or tolerating exploitation.",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "bg.p18.4",
+    "title": "Duties by nature, and their fruit",
+    "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+    "story_hook": "",
+    "lesson": "Do the work that fits you, flaws and all, as an offering."
+   },
+   "score": 2.185,
+   "beat": "hook",
+   "role_fit": 0.06,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.4.42",
+    "ref": "Bhagavad Gita 4.42",
+    "ref_iast": "Bhagavad Gītā 4.42",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+    "sanskrit": "तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः । छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥",
+    "line": "Cut the doubt in your heart with clear understanding, then stand up and act.",
+    "translation": "Therefore, cutting with the sword of knowledge this doubt in your heart born of ignorance, take refuge in yoga, and stand up, Bharata.",
+    "words": [
+     {
+      "sa": "तस्मात्",
+      "en": "therefore"
+     },
+     {
+      "sa": "अज्ञानसंभूतम्",
+      "en": "born of ignorance"
+     },
+     {
+      "sa": "हृत्स्थम्",
+      "en": "situated in the heart"
+     },
+     {
+      "sa": "ज्ञानासिना",
+      "en": "with the sword of knowledge"
+     },
+     {
+      "sa": "आत्मनः",
+      "en": "of the self"
+     },
+     {
+      "sa": "छित्त्वा",
+      "en": "having cut"
+     },
+     {
+      "sa": "एनम्",
+      "en": "this"
+     },
+     {
+      "sa": "संशयम्",
+      "en": "doubt"
+     },
+     {
+      "sa": "योगम्",
+      "en": "in yoga"
+     },
+     {
+      "sa": "आतिष्ठ",
+      "en": "stand in"
+     },
+     {
+      "sa": "उत्तिष्ठ",
+      "en": "rise up"
+     },
+     {
+      "sa": "भारत",
+      "en": "O Bharata"
+     }
+    ],
+    "why": "Learn humbly, trust the process, and cut through doubt to act.",
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [
+     {
+      "id": "big_decision",
+      "label": "I have to make a big decision"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p04.4",
+     "title": "The glory of knowledge",
+     "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+     "story_hook": "",
+     "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+    },
+    "score": 2.1288,
+    "beat": "hook",
+    "role_fit": 0.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.18.45",
+    "ref": "Bhagavad Gita 18.45",
+    "ref_iast": "Bhagavad Gītā 18.45",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+    "sanskrit": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः । स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु ॥",
+    "line": "Devoted to your own work, you reach fulfilment. Here's how.",
+    "translation": "Each person, devoted to his own work, attains perfection. Hear how one devoted to his own work finds perfection.",
+    "words": [
+     {
+      "sa": "स्वे",
+      "en": "own"
+     },
+     {
+      "sa": "स्वे",
+      "en": "each"
+     },
+     {
+      "sa": "कर्मणि",
+      "en": "in action"
+     },
+     {
+      "sa": "अभिरतः",
+      "en": "engaged"
+     },
+     {
+      "sa": "संसिद्धिं",
+      "en": "perfection"
+     },
+     {
+      "sa": "लभते",
+      "en": "attains"
+     },
+     {
+      "sa": "नरः",
+      "en": "person"
+     },
+     {
+      "sa": "स्वकर्मनिरतः",
+      "en": "engaged in own action"
+     },
+     {
+      "sa": "सिद्धिं",
+      "en": "success"
+     },
+     {
+      "sa": "यथा",
+      "en": "as"
+     },
+     {
+      "sa": "विन्दति",
+      "en": "obtains"
+     },
+     {
+      "sa": "तच्छृणु",
+      "en": "hear that"
+     }
+    ],
+    "why": "Do the work that fits you, flaws and all, as an offering.",
+    "misuse": "Not 'stay in the job your community or birth assigned'. 'Your own work' means the work that fits your nature.",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "career_switch",
+      "label": "I want to change careers but I'm scared"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p18.4",
+     "title": "Duties by nature, and their fruit",
+     "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+     "story_hook": "",
+     "lesson": "Do the work that fits you, flaws and all, as an offering."
+    },
+    "score": 2.526,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 389,
+   "llm": 7016,
+   "total": 12165,
+   "select": 4758
+  },
+  "_ms": 12176
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I can't control my cravings",
+   "mirror": "I can't control my cravings",
+   "insight": "You have decided, and the decision is your own. The hard part comes on the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "craving",
+     "label": "I can't control my cravings",
+     "weight": 1.821,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.635,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 1.405,
+     "source": "note"
+    },
+    {
+     "id": "big_decision",
+     "label": "I have to make a big decision",
+     "weight": 1.297,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.9,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by seeing what others achieved; the resolve to rise, gather your strength and take on what is yours to do.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A story of someone who set out to build or win something that was theirs to do, met the first test, and kept going."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "Working and building something of their own and raising kids. Feels determined; closest to \"I can't control my cravings\" and \"I can't handle not knowing what comes next\".",
+   "details": [],
+   "age": "55p",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:46=0.6,247=0.6,84=0.6,50=0.6,9=0.6,16=0.6",
+    "week_same:84,50",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.64,max=0.67",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:repeat=4,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.46",
+     "ref": "Bhagavad Gita 18.46",
+     "ref_iast": "Bhagavad Gītā 18.46",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् । स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥",
+     "line": "Doing your own work well can be your worship of the source of all life.",
+     "translation": "By worshipping, through his own work, Him from whom all beings arise and by whom all this is pervaded, a person attains perfection.",
+     "words": [
+      {
+       "sa": "यतः",
+       "en": "from which"
+      },
+      {
+       "sa": "प्रवृत्तिः",
+       "en": "origin"
+      },
+      {
+       "sa": "भूतानां",
+       "en": "of beings"
+      },
+      {
+       "sa": "येन",
+       "en": "by which"
+      },
+      {
+       "sa": "सर्वम्",
+       "en": "all"
+      },
+      {
+       "sa": "इदं",
+       "en": "this"
+      },
+      {
+       "sa": "ततम्",
+       "en": "pervades"
+      },
+      {
+       "sa": "स्वकर्मणा",
+       "en": "by own action"
+      },
+      {
+       "sa": "तम्",
+       "en": "that"
+      },
+      {
+       "sa": "अभ्यर्च्य",
+       "en": "worshiping"
+      },
+      {
+       "sa": "सिद्धिं",
+       "en": "success"
+      },
+      {
+       "sa": "विन्दति",
+       "en": "attains"
+      },
+      {
+       "sa": "मानवः",
+       "en": "a person"
+      }
+     ],
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Work as worship doesn't mean overwork or tolerating exploitation.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.2322,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. He tells him that a person reaches perfection not by copying another's path, but by offering their own work to the source of all life. Your own work, with all its flaws, becomes your worship. The work that fits you is the only path that leads to fulfillment.",
+     "for_you": "You have started building your own thing, and that is where your strength lives.",
+     "try_today": "Offer your morning task to the work itself.",
+     "scene_line": "You stand at the start of your own building, holding the tools.",
+     "asks": [
+      "What does my own work look like today?",
+      "How do I keep offering when it feels ordinary?",
+      "What is the source I am building toward?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.247",
+     "ref": "Chhandogya Upanishad 3.14.1",
+     "ref_iast": "Chāndogya Upaniṣad 3.14.1",
+     "family": "up",
+     "speaker": "Shandilya",
+     "listener": "Reader",
+     "setting": "The teaching of Shandilya.",
+     "sanskrit": "सर्वं खल्विदं ब्रह्म तज्जलानिति शान्त उपासीत । अथ खलु क्रतुमयः पुरुषो यथाक्रतुरस्मिꣳल्लोके पुरुषो भवति तथेतः प्रेत्य भवति स क्रतुं कुर्वीत ॥",
+     "line": "A person is made of resolve. As you resolve in this life, so you become. So resolve well.",
+     "translation": "All this is Brahman; from it all arises, into it all dissolves, in it all breathes; so one should meditate on it calmly. A person is made of resolve. As one's resolve is in this world, so one becomes on departing. So let one form a resolve.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3478,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "Shandilya tells the reader, who has come to learn what is real, that a person is nothing more than the resolve they hold. As one's resolve stands in this world, so one becomes when the body falls away. Therefore, one should form a resolve well, because the self is made of it.",
+     "for_you": "You have set out to build what is yours, and that resolve is already making you into someone new. The work is yours, but the shape you take from it is the real question. What you become is the result of how you resolve. Your resolve is your becoming.",
+     "try_today": "Notice one moment today when you choose your work over a passing urge.",
+     "scene_line": "You are in your own workshop, forming the resolve that will become you.",
+     "asks": [
+      "How do I know if my resolve is strong enough?",
+      "What happens if I change my mind halfway through?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "words": [
+      {
+       "sa": "नेहाभिक्रमनाशः",
+       "en": "here no stepping back, no destruction"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "प्रत्यवायः",
+       "en": "no return, no reversal"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "विद्यते",
+       "en": "is found"
+      },
+      {
+       "sa": "अस्य",
+       "en": "even a little of this"
+      },
+      {
+       "sa": "धर्मस्य",
+       "en": "of the principle/duty"
+      },
+      {
+       "sa": "त्रायते",
+       "en": "protects"
+      },
+      {
+       "sa": "महतः",
+       "en": "greatly"
+      },
+      {
+       "sa": "भयात्",
+       "en": "from fear"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.3422,
+     "beat": "steady",
+     "role_fit": 0.285,
+     "meaning": "Krishna is telling Arjuna that in this path of action, no sincere effort is ever lost. Even a little of this practice protects you from great fear. He is urging Arjuna to do the work fully and let go of owning the result, so that they can stay even in success and failure.",
+     "for_you": "The work you are building is its own proof. When the morning excitement fades, the effort itself is what holds you. Keep your hand on the work, not on what comes next. The doing is enough.",
+     "try_today": "Notice one moment where you did the work fully, without checking if it was enough.",
+     "scene_line": "You are standing at the start of what is yours to build.",
+     "asks": [
+      "What is the work itself asking of me today?",
+      "How do I hold the effort when the outcome is hidden?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.6.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.18",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "ऐहिकः प्राक्तनं हन्ति प्राक्तनोऽद्यतनं बलात् । सर्वदा पुरुषस्पन्दस्तत्रानुद्वेगवाञ्जयी ॥",
+     "line": "Today's effort and yesterday's keep wrestling. Whoever stays calm through it wins.",
+     "translation": "Present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins.",
+     "words": [],
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 2.7889,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Vasishtha is speaking to a young Rama who has lost his way. He tells him that what people call fate is only the result of past effort, and present effort can overcome it. He compares it to two rams wrestling, where the one that stays calm wins. The point is that your past shaped today, but your resolve shapes tomorrow. Do not grieve over what was never in your hands.",
+     "for_you": "The work you have built is the fruit of your own past effort. The cravings that pull you now are the past wrestling with the present. You are not failing. You are simply in the contest of building what is yours.",
+     "try_today": "Notice one small part of the work that still feels like your own.",
+     "scene_line": "You are in the contest of your own making.",
+     "asks": [
+      "How do I know when the past is just a memory?",
+      "What does it mean to stay calm in my own contest?",
+      "Is the craving a sign I am losing?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.49.6",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 49.6",
+     "family": "vr",
+     "speaker": "Angada",
+     "listener": "the search party",
+     "setting": "The monkeys searching for Sita are exhausted and failing; young Angada rallies them.",
+     "sanskrit": "अवश्यं कुर्वतां तस्य दृश्यते कर्मणः फलम्। परं निर्वेदमागम्य नहि नोन्मीलनं क्षमम्॥",
+     "line": "Keep working and the results will come. Sink into despair and it is hard to get back up.",
+     "translation": "Those who keep working surely see the fruit of their work. But once you sink into deep despair, you cannot rise again.",
+     "words": [],
+     "why": "Missing a deadline feels final; it rarely is.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.deadline_missed",
+      "title": "The missed deadline",
+      "summary": "The southern search party loses time in a magic cave and misses Sugriva's deadline. Angada rallies them once, then despairs, fearing punishment and certain he will be blamed. Hanuman reasons with him to return.",
+      "story_hook": "They came out of the cave to find that spring had already come, and their deadline had gone.",
+      "lesson": "Missing a deadline feels final; it rarely is."
+     },
+     "score": 3.6087,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "The monkeys searching for Sita are exhausted and failing. Young Angada rallies them. He tells them that those who keep working surely see the fruit of their work. But once you sink into deep despair, you cannot rise again. The verse proposes that continuing the effort, even when it feels futile, is the only way to recover. It treats a missed deadline not as a final judgment but as a moment that can be overcome by not giving up.",
+     "for_you": "You are building something of your own and raising children while your cravings pull at you. The work is yours and the results will come in their own time. The hard part is not the craving but the morning the work stops feeling exciting. Keep going anyway.",
+     "try_today": "Do the one small task you usually skip when the craving feels strongest.",
+     "scene_line": "You stand where the deadline is missed and the cave is dark.",
+     "asks": [
+      "How do I keep going when the craving feels stronger than the work?",
+      "What is the one small task I can do today?",
+      "How do I know the results are coming?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3294,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu describes how a free person lives among others. They let go of what is lost, take up what comes, and do the work at hand. They speak gently, stay busy on the outside, and remain calm within. They move through the world with a clear mind, treating everyone as family.",
+     "for_you": "The work you are building is yours to do, and so is the calm that holds it. When the morning feels heavy or the results stall, the effort itself is the shield. Let the doing be full, but let the inside stay quiet. This is how resolve becomes a life.",
+     "try_today": "Notice one moment today where you can finish the task and let the result go.",
+     "scene_line": "You are busy on the outside and unhurried inside, doing the work at hand.",
+     "asks": [
+      "How do I stay unhurried when the work feels urgent?",
+      "Can I treat this day's work as family?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.hanuman_leap",
+     "title": "Hanuman's leap",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman",
+      "Mainaka",
+      "Surasa",
+      "Simhika"
+     ],
+     "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+     "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+     "lesson": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.1.146",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+      "family": "vr",
+      "speaker": "Beings of the sky",
+      "listener": "Hanuman",
+      "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+      "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+      "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+      "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+      "words": [],
+      "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.hanuman_leap",
+       "title": "Hanuman's leap",
+       "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+       "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+       "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Halfway across the ocean, a mountain rose up and offered Hanuman a rest",
+     "teaser": "Halfway across the ocean, a mountain rose up and offered Hanuman a rest",
+     "for_you": "The mountain offered rest, but Hanuman had already promised the work would not stop. You are in the middle of a promise you made to yourself. Your children are finding their own footing, and your own work is becoming the thing that defines your mornings.",
+     "asks": [
+      "How do I keep my focus when the next step is not clear?",
+      "What is the promise I made to myself that I must keep?",
+      "How do I know when to be big and when to be small?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 17011,
+   "total": 17019
+  },
+  "_ms": 17029
+ }
+}

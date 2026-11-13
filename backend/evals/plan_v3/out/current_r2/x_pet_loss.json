@@ -1,0 +1,2291 @@
+{
+ "case": "x_pet_loss",
+ "method": "current",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "I'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My pet died",
+   "mirror": "My pet died",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "pet_loss",
+     "label": "My pet died",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels searching; closest to \"My pet died\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "stance_inferred:str=0.35,asp=0.1,wro=0.1,see=0.56",
+    "llm_timeout",
+    "hook_reranked"
+   ]
+  },
+  "hook": {
+   "id": "bg.13.26",
+   "ref": "Bhagavad Gita 13.25",
+   "ref_iast": "Bhagavad Gītā 13.25",
+   "family": "bg",
+   "speaker": "Krishna",
+   "listener": "Arjuna",
+   "setting": "Krishna to Arjuna on nature and spirit, and seeing the same self in all.",
+   "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते । तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः ॥",
+   "line": "Others, not knowing these paths, learn by listening to others, and they too cross over.",
+   "translation": "Others, not knowing this, worship having heard it from others; they too cross beyond death, devoted to what they have heard.",
+   "words": [
+    {
+     "sa": "अन्ये",
+     "en": "others"
+    },
+    {
+     "sa": "तु",
+     "en": "but"
+    },
+    {
+     "sa": "एवम्",
+     "en": "thus"
+    },
+    {
+     "sa": "अजानन्तः",
+     "en": "not knowing"
+    },
+    {
+     "sa": "श्रुत्वा",
+     "en": "having heard"
+    },
+    {
+     "sa": "अन्येभ्यः",
+     "en": "from others"
+    },
+    {
+     "sa": "उपासते",
+     "en": "they worship"
+    },
+    {
+     "sa": "ते",
+     "en": "they"
+    },
+    {
+     "sa": "अपि",
+     "en": "also"
+    },
+    {
+     "sa": "च",
+     "en": "and"
+    },
+    {
+     "sa": "अति-तरन्ति",
+     "en": "cross beyond"
+    },
+    {
+     "sa": "एव",
+     "en": "indeed"
+    },
+    {
+     "sa": "मृत्युम्",
+     "en": "death"
+    },
+    {
+     "sa": "श्रुति-परायणाः",
+     "en": "devoted to hearing"
+    }
+   ],
+   "why": "See the same presence in everyone and you stop wounding yourself.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt"
+    }
+   ],
+   "prasang": {
+    "id": "bg.p13.2",
+    "title": "Nature and spirit",
+    "summary": "Nature does the acting; the self witnesses. Some reach the truth by meditation, some by reason, some by work, some by listening. Whoever sees the same divine in all beings stops harming themselves.",
+    "story_hook": "",
+    "lesson": "See the same presence in everyone and you stop wounding yourself."
+   },
+   "score": 1.8409,
+   "beat": "hook",
+   "role_fit": 0.2,
+   "meaning": null,
+   "for_you": null,
+   "try_today": null,
+   "scene_line": null,
+   "asks": []
+  },
+  "alternates": [
+   {
+    "id": "bg.4.34",
+    "ref": "Bhagavad Gita 4.34",
+    "ref_iast": "Bhagavad Gītā 4.34",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+    "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+    "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+    "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+    "words": [
+     {
+      "sa": "तत्",
+      "en": "that"
+     },
+     {
+      "sa": "विद्धि",
+      "en": "know"
+     },
+     {
+      "sa": "प्रणिपातेन",
+      "en": "by prostration"
+     },
+     {
+      "sa": "परिप्रश्नेन",
+      "en": "by sincere questioning"
+     },
+     {
+      "sa": "सेवया",
+      "en": "by service"
+     },
+     {
+      "sa": "उपदेक्ष्यन्ति",
+      "en": "will teach"
+     },
+     {
+      "sa": "ते",
+      "en": "to you"
+     },
+     {
+      "sa": "ज्ञानम्",
+      "en": "knowledge"
+     },
+     {
+      "sa": "ज्ञानिनः",
+      "en": "the knowers"
+     },
+     {
+      "sa": "तत्त्वदर्शिनः",
+      "en": "who see reality"
+     }
+    ],
+    "why": "Learn humbly, trust the process, and cut through doubt to act.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "reconnect_faith",
+      "label": "I want to reconnect with my roots"
+     },
+     {
+      "id": "doubt_faith",
+      "label": "I'm struggling with doubt"
+     }
+    ],
+    "prasang": {
+     "id": "bg.p04.4",
+     "title": "The glory of knowledge",
+     "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+     "story_hook": "",
+     "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+    },
+    "score": 2.6237,
+    "beat": "hook",
+    "role_fit": 0.015,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "bg.18.56",
+    "ref": "Bhagavad Gita 18.56",
+    "ref_iast": "Bhagavad Gītā 18.56",
+    "family": "bg",
+    "speaker": "Krishna",
+    "listener": "Arjuna",
+    "setting": "Near the end, Krishna tells Arjuna that a busy, working life is no barrier.",
+    "sanskrit": "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः । मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम् ॥",
+    "line": "Doing all their work while leaning on me, they reach the lasting home, by my grace.",
+    "translation": "Even while always doing every kind of work, the one who leans on me reaches the eternal, imperishable home by my grace.",
+    "words": [
+     {
+      "sa": "सर्वकर्माणि",
+      "en": "all actions"
+     },
+     {
+      "sa": "अपि",
+      "en": "even"
+     },
+     {
+      "sa": "सदा",
+      "en": "always"
+     },
+     {
+      "sa": "कुर्वाणः",
+      "en": "doing"
+     },
+     {
+      "sa": "मद्व्यपाश्रयः",
+      "en": "taking refuge in me"
+     },
+     {
+      "sa": "मत्प्रसादात्",
+      "en": "by my grace"
+     },
+     {
+      "sa": "अवाप्नोति",
+      "en": "attains"
+     },
+     {
+      "sa": "शाश्वतम्",
+      "en": "eternal"
+     },
+     {
+      "sa": "पदम्",
+      "en": "state"
+     },
+     {
+      "sa": "अव्ययम्",
+      "en": "imperishable"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "reconnect_faith",
+      "label": "I want to reconnect with my roots"
+     },
+     {
+      "id": "no_meaning",
+      "label": "Nothing is wrong but nothing feels meaningful"
+     }
+    ],
+    "prasang": null,
+    "score": 1.7517,
+    "beat": "hook",
+    "role_fit": 0.2,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "note_match": 346,
+   "llm": 7016,
+   "total": 11431,
+   "select": 4067
+  },
+  "_ms": 11437
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My pet died",
+   "mirror": "My pet died",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "pet_loss",
+     "label": "My pet died",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels searching; closest to pet died\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:26=0.3,612=0.6,5=0.6,81=0.6,2=0.3,26=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.69",
+    "for_you:7/7",
+    "meaning:6/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.13.26",
+     "ref": "Bhagavad Gita 13.25",
+     "ref_iast": "Bhagavad Gītā 13.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on nature and spirit, and seeing the same self in all.",
+     "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते । तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः ॥",
+     "line": "Others, not knowing these paths, learn by listening to others, and they too cross over.",
+     "translation": "Others, not knowing this, worship having heard it from others; they too cross beyond death, devoted to what they have heard.",
+     "words": [
+      {
+       "sa": "अन्ये",
+       "en": "others"
+      },
+      {
+       "sa": "तु",
+       "en": "but"
+      },
+      {
+       "sa": "एवम्",
+       "en": "thus"
+      },
+      {
+       "sa": "अजानन्तः",
+       "en": "not knowing"
+      },
+      {
+       "sa": "श्रुत्वा",
+       "en": "having heard"
+      },
+      {
+       "sa": "अन्येभ्यः",
+       "en": "from others"
+      },
+      {
+       "sa": "उपासते",
+       "en": "they worship"
+      },
+      {
+       "sa": "ते",
+       "en": "they"
+      },
+      {
+       "sa": "अपि",
+       "en": "also"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "अति-तरन्ति",
+       "en": "cross beyond"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "मृत्युम्",
+       "en": "death"
+      },
+      {
+       "sa": "श्रुति-परायणाः",
+       "en": "devoted to hearing"
+      }
+     ],
+     "why": "See the same presence in everyone and you stop wounding yourself.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p13.2",
+      "title": "Nature and spirit",
+      "summary": "Nature does the acting; the self witnesses. Some reach the truth by meditation, some by reason, some by work, some by listening. Whoever sees the same divine in all beings stops harming themselves.",
+      "story_hook": "",
+      "lesson": "See the same presence in everyone and you stop wounding yourself."
+     },
+     "score": 1.8495,
+     "beat": "hook",
+     "role_fit": 0.2,
+     "meaning": "Krishna is telling Arjuna that many people do not discover the truth through their own direct seeing. They hear it from others and then worship that teaching. Even so, they cross beyond death. The point is that the self is the same presence in every being. When you see that same self in everyone, you stop wounding yourself.",
+     "for_you": "You are searching for what it is all for. You are listening to others about purpose and roots. You do not need to find a new reason to carry you.",
+     "try_today": "Notice one person at work who seems very different from you.",
+     "scene_line": "You are in your own hearing, where the self is the same in all.",
+     "asks": [
+      "How do I stop wounding myself while I search?",
+      "Can I see the same presence in my work?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "words": [],
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 2.615,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "The Upanishad tells a story about a hidden treasure of gold buried deep in the earth. People walk over that spot every single day without ever knowing it is there. They pass their own wealth and keep searching elsewhere. In the same way, the text says, we all travel into a deeper world every night in deep sleep. We pass through it without recognizing what is ours. The verse points out that we are carried away by untruth. We look outward because we do not know the path that is already under our feet.",
+     "for_you": "You are walking over your own roots every day without knowing it. The search you feel is not for a new place. It is for the ground beneath your feet. What you need is already under your daily route. Let your feet recognize the soil they stand on.",
+     "try_today": "Notice one thing from your past that you still use without thinking.",
+     "scene_line": "You are walking over a buried treasure you do not know how to see.",
+     "asks": [
+      "How do I know what is already mine?",
+      "Where is the path I am walking over?",
+      "What does the untruth look like in my daily walk?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "words": [],
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 2.9292,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "Lakshman finds Ram in the empty hut, searching every corner, asking the trees and animals if they have seen Sita. Ram is lost in a grief that turns into rage, ready to burn the world down for this one loss. Lakshman steps in and tells him to take heart. He asks which living being escapes trouble, saying it strikes like fire and passes in a moment. The point is that a steady presence can stop grief from turning into destruction.",
+     "for_you": "You are feeling the weight of the pet's absence, and the work around you feels hollow right now. Lakshman's words are for a moment when grief wants to burn everything down. The trouble is real, but it is not permanent. It flares up like fire and passes.",
+     "try_today": "Notice one small thing at work that is steady and will still be there tomorrow.",
+     "scene_line": "You stand in the quiet of your own empty room, searching for a sign of what is lost.",
+     "asks": [
+      "How do I hold onto the steady parts of my day?",
+      "Where is the fire in my grief right now?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "words": [
+      {
+       "sa": "नैव",
+       "en": "not even"
+      },
+      {
+       "sa": "प्रार्थयते",
+       "en": "prays"
+      },
+      {
+       "sa": "लाभं",
+       "en": "gain"
+      },
+      {
+       "sa": "न",
+       "en": "nor"
+      },
+      {
+       "sa": "अलाभेन",
+       "en": "by loss"
+      },
+      {
+       "sa": "अनुशोचति",
+       "en": "mourns"
+      },
+      {
+       "sa": "धीरस्य",
+       "en": "of the steady one"
+      },
+      {
+       "sa": "शीतलं",
+       "en": "cool/calm"
+      },
+      {
+       "sa": "चित्तम्",
+       "en": "mind"
+      },
+      {
+       "sa": "अमृतेनैव",
+       "en": "only with nectar"
+      },
+      {
+       "sa": "पूरितम्",
+       "en": "filled"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.8423,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ashtavakra is speaking to Janaka in the long closing chapter on peace. He is describing the inner life of someone who is truly at rest. The verse says this person does not pray for gain or grieve over loss. Their cool mind is filled as if with nectar. The point is that calm is not something you chase or find by changing your circumstances. It is how you hold ordinary life. It is the steady mind that stays full, not by getting what it wants, but by being still in what is.",
+     "for_you": "You are looking for something deeper to lean on after the loss of your pet, and the texts call this searching for what it is all for.",
+     "try_today": "Notice one ordinary thing at work and let your attention rest on it without asking it to be more.",
+     "scene_line": "You are in your own city, holding the quiet after loss, and the steady mind stays cool and full.",
+     "asks": [
+      "How do I hold ordinary life when I am searching for more?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.6652,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Vidula finds her son Sanjaya lying defeated after losing his kingdom, and she does not let him stay there. She tells him to stop thinking less of himself, to stop settling for little, and to set his mind on what is truly good. She says to stop being afraid and to pull himself together. The verse asks him to look past the loss, to refuse the smallness that defeat brings, and to choose a good aim instead.",
+     "for_you": "You are in the quiet after the storm. The reasons that used to carry you feel thin. This verse does not ask you to pretend the ground is firm again.",
+     "try_today": "Name one small thing you can aim toward today.",
+     "scene_line": "You are lying defeated, and the kingdom is lost.",
+     "asks": [
+      "How do I set my mind on something good?",
+      "What is truly good for me right now?",
+      "How do I pull myself together today?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.57",
+     "ref": "Bhagavad Gita 18.57",
+     "ref_iast": "Bhagavad Gītā 18.57",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna's final counsel: act with devotion, reflect, choose, and take refuge.",
+     "sanskrit": "चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः । बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव ॥",
+     "line": "Inwardly hand all your work to the divine, hold it as your goal, and keep your mind on it.",
+     "translation": "Mentally resigning all actions to me, holding me as the highest, relying on the yoga of understanding, keep your mind always on me.",
+     "words": [
+      {
+       "sa": "चेतसा",
+       "en": "with mind"
+      },
+      {
+       "sa": "सर्वकर्माणि",
+       "en": "all actions"
+      },
+      {
+       "sa": "मयि",
+       "en": "in me"
+      },
+      {
+       "sa": "संन्यस्य",
+       "en": "dedicating"
+      },
+      {
+       "sa": "मत्परः",
+       "en": "devoted to me"
+      },
+      {
+       "sa": "बुद्धियोगम्",
+       "en": "yoga of discernment"
+      },
+      {
+       "sa": "उपाश्रित्य",
+       "en": "taking refuge"
+      },
+      {
+       "sa": "मच्चित्तः",
+       "en": "mind fixed on me"
+      },
+      {
+       "sa": "सततं",
+       "en": "always"
+      },
+      {
+       "sa": "भव",
+       "en": "become"
+      }
+     ],
+     "why": "Reflect fully, choose freely, and set down the fear.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.6",
+      "title": "Action with devotion: surrender",
+      "summary": "Krishna urges Arjuna to offer all action, warns that ego will only trip him, tells him to reflect fully and then choose, and finally to take refuge in him alone and not grieve.",
+      "story_hook": "",
+      "lesson": "Reflect fully, choose freely, and set down the fear."
+     },
+     "score": 3.098,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, just before the fighting begins. Arjuna is paralyzed by grief and confusion, unsure whether to fight or flee. Krishna tells him to lay down the burden of deciding the outcome entirely on his shoulders. He asks Arjuna to mentally offer every single action to the divine, to hold the divine as the highest goal, and to keep his mind fixed on that alone. This is not about stopping action. It is about changing the inner direction of the action.",
+     "for_you": "You have been carrying the weight of purpose alone, as if you could find it through effort, comparison, or achievement. This counsel asks you to hand that search over. Offer your daily work, even the empty hours, to something larger than your own ambition, and hold that as the goal.",
+     "try_today": "Offer your work to a cause beyond your own gain, and notice the difference.",
+     "scene_line": "You stand at the edge of your own battlefield, offered a path that asks you to surrender the weight of the outcome.",
+     "asks": [
+      "How do I know what is my part and what is not?",
+      "What do I hold as the highest goal when my own ambition feels hollow?",
+      "Can I offer my work without needing to own the result?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.satyakama",
+     "title": "Satyakama Jabala, the honest boy",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Satyakama",
+      "Jabala",
+      "Haridrumata Gautama"
+     ],
+     "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+     "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+     "lesson": "Honesty about who you are is the best credential you can bring.",
+     "matched": [],
+     "anchor": {
+      "id": "up_chhandogya.304",
+      "ref": "Chhandogya Upanishad 4.4.2",
+      "ref_iast": "Chāndogya Upaniṣad 4.4.2",
+      "family": "up",
+      "speaker": "Jabala",
+      "listener": "Her son Satyakama",
+      "setting": "A boy asks his mother his lineage before seeking a teacher.",
+      "sanskrit": "सा हैनमुवाच नाहमेतद्वेद तात यद्गोत्रस्त्वमसि बह्वहं चरन्ती परिचारिणी यौवने त्वामलभे साहमेतन्न वेद यद्गोत्रस्त्वमसि जबाला तु नामाहमस्मि सत्यकामो नाम त्वमसि स सत्यकाम एव जाबालो ब्रवीथा इति ॥",
+      "line": "His mother said, 'I don't know your father's line. I am Jabala, you are Satyakama. Say exactly that.'",
+      "translation": "She said to him: 'I do not know your lineage, my child. In my youth I moved about a great deal as a serving woman, and then I had you. So I do not know your lineage. My name is Jabala and your name is Satyakama. Just say you are Satyakama Jabala.'",
+      "words": [],
+      "why": "Honesty about who you are is the best credential you can bring.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.chhandogya.satyakama",
+       "title": "Satyakama Jabala, the honest boy",
+       "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+       "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+       "lesson": "Honesty about who you are is the best credential you can bring."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "teaser": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "for_you": "You want to reconnect with your roots, and maybe that is why the loss of your pet sits so heavy. Satyakama Jabala did not know his father, and his mother told him to say exactly that.",
+     "asks": [
+      "What if saying I don't know is enough?",
+      "Can I learn from the world without a teacher?",
+      "What would change if I stopped proving my line?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What's it all for",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13837,
+   "total": 13839
+  },
+  "_ms": 13844
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My pet died",
+   "mirror": "My pet died",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "pet_loss",
+     "label": "My pet died",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels searching; closest to pet died\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:3=0.3,20=0.3,14=0.6,4=0.6,34=0.0,2=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.56,max=0.65",
+    "dropped:fallback_line=3,invented=1,missing=4,try_today_invented=1",
+    "for_you:7/7",
+    "meaning:4/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.1.141.chaupai.3",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 141",
+     "family": "rcm",
+     "speaker": "Manu",
+     "listener": "Vishnu",
+     "setting": "Manu, offered any boon after years of austerity, hesitates to ask for what he truly wants.",
+     "sanskrit": "जथा दरिद्र बिबुधतरु पाई। बहु संपति मागत सकुचाई॥ तासु प्रभाउ जान नहिं सोई। तथा हृदयँ मम संसय होई ॥",
+     "line": "Like a poor man before the wishing tree, we hesitate to ask for what we really want.",
+     "translation": "Like a poor man who finds the wish-fulfilling tree and still hesitates to ask for much, not knowing its power, so doubt rises in my heart.",
+     "words": [
+      {
+       "sa": "जथा",
+       "en": "like"
+      },
+      {
+       "sa": "दरिद्र",
+       "en": "poor"
+      },
+      {
+       "sa": "बिबुधतरु",
+       "en": "wish-fulfilling tree"
+      },
+      {
+       "sa": "पाई",
+       "en": "having found"
+      },
+      {
+       "sa": "बहु",
+       "en": "many"
+      },
+      {
+       "sa": "संपति",
+       "en": "wealth"
+      },
+      {
+       "sa": "मागत",
+       "en": "asking for"
+      },
+      {
+       "sa": "सकुचाई",
+       "en": "hesitates"
+      },
+      {
+       "sa": "तासु",
+       "en": "its"
+      },
+      {
+       "sa": "प्रभाउ",
+       "en": "power"
+      },
+      {
+       "sa": "जान",
+       "en": "knows"
+      },
+      {
+       "sa": "नहिं",
+       "en": "not"
+      },
+      {
+       "sa": "सोई",
+       "en": "that one"
+      },
+      {
+       "sa": "तथा",
+       "en": "so"
+      },
+      {
+       "sa": "हृदयँ",
+       "en": "in the heart"
+      },
+      {
+       "sa": "मम",
+       "en": "my"
+      },
+      {
+       "sa": "संसय",
+       "en": "doubt"
+      },
+      {
+       "sa": "होई",
+       "en": "arises"
+      }
+     ],
+     "why": "It is not too late to turn towards what matters, but it takes courage to ask for it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.manu_shatarupa",
+      "title": "Manu and Shatarupa ask late in life",
+      "summary": "King Manu and Queen Shatarupa realise in old age that a whole life has passed without what mattered most to them. They hand over the kingdom, go to the forest and practise austerity for years. When Vishnu offers a boon, Manu hesitates like a poor man before the wishing tree, then asks for a son like God himself.",
+      "story_hook": "The king had ruled well for a lifetime, and one morning he realised he had missed the point.",
+      "lesson": "It is not too late to turn towards what matters, but it takes courage to ask for it."
+     },
+     "score": 2.0975,
+     "beat": "hook",
+     "role_fit": 0.62,
+     "meaning": "In the Ramcharitmanas, King Manu and Queen Shatarupa have spent their whole life running a kingdom. In their old age, they realise they asked for nothing that truly mattered. They leave the palace, go to the forest, and do hard austerity for years. Then Vishnu appears and offers them any boon they want. Manu hesitates. He stands there like a poor man who has found the wishing tree but is afraid to ask for much, not knowing what it can do. He is afraid his desire is too small or too late.",
+     "for_you": "You have outgrown the old reasons that used to carry you. You are looking for something deeper to lean on now. The doubt you feel is not a sign that you are too late. It is the hesitation of someone who has finally found the tree.",
+     "try_today": "Notice one small thing you actually want today.",
+     "scene_line": "You are standing before the wishing tree, not knowing what to ask for.",
+     "asks": [
+      "How do I know what I truly want?",
+      "What if my desire is too small?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.174.20",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.20",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "His father",
+     "setting": "A young man named Medhavin tells his father not to put off what matters, because time is running out.",
+     "sanskrit": "इदं कृतमिदं कार्यमिदमन्यत्कृताकृतम् / एवमीहासुखासक्तं कृतान्तः कुरुते वशे",
+     "line": "'This is done, this is next, this is half-done.' Life slips by while we keep busy like this.",
+     "translation": "'This is done, this is still to do, this other thing is half done': while a person is busy like this, attached to his little comforts, death takes him.",
+     "words": [],
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 2.8172,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "A young man named Medhavin speaks to his father. He says that life is a series of tasks, some finished, some started, some left hanging. While a person stays caught up in these small comforts and daily routines, death comes and takes them away. The point is that time is running out while we are busy. Do what matters now before the days and nights fall like arrows and take you mid-task.",
+     "for_you": "You are busy with work and the search for purpose, and the days are passing. Medhavin's warning is not about fear, but about the cost of waiting. The work you do today is the only one you can claim as your own. The searching you do is the work itself.",
+     "try_today": "Notice one task you are keeping for tomorrow that you can finish today.",
+     "scene_line": "You are in your own half-done work, with the arrow of time already in flight.",
+     "asks": [
+      "How do I know what matters most right now?",
+      "What if I finish today and still feel lost?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.5.12.14",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.14",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha describes King Janaka after his awakening, still ruling his kingdom.",
+     "sanskrit": "भविष्यं नानुसंधत्ते नातीतं चिन्तयत्यसौ । वर्तमाननिमेषं तु हसन्नेवानुवर्तते ॥",
+     "line": "Don't chase the future or brood on the past. Meet this moment with a smile.",
+     "translation": "He does not chase the future or brood on the past; he simply goes along with the present moment, smiling.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 2.8931,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "Vasishtha is describing King Janaka to Rama. Janaka has just heard hidden sages sing about the true self and his whole life feels shaken. He goes to his palace roof and questions everything he has lived. When his doorkeeper calls him to the day's work, he decides not to run away from it. He gets up and does his duties, but with a mind that no longer clutches at the past or reaches for the future. The verse says that to change your life, you do not have to leave it behind.",
+     "for_you": "You are in your own garden, hearing a song that makes you question the work you do every day. You do not have to quit your job or your search to find something deeper.",
+     "try_today": "Do one small task at work without checking your phone or rushing to the next thing.",
+     "scene_line": "You, on the palace roof, hearing the song that shakes your whole life.",
+     "asks": [
+      "How do I do the work without letting it clutch me?",
+      "Can I really find depth inside a regular workday?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_mundaka.3.1.4",
+     "ref": "Mundaka Upanishad 3.1.4",
+     "ref_iast": "Muṇḍaka Upaniṣad 3.1.4",
+     "family": "up",
+     "speaker": "Angiras",
+     "listener": "Shaunaka",
+     "setting": "Angiras on how the wise live.",
+     "sanskrit": "प्रणो ह्येष यः सर्वभूतैर्विभाति विजानन् विद्वान् भवते नातिवादी । आत्मक्रीड आत्मरतिः क्रियावानेष ब्रह्मविदां वरिष्ठः ॥",
+     "line": "Knowing this, the wise stop arguing. Their joy is within, and they stay fully active.",
+     "translation": "This is the life that shines through all beings. Knowing it, the wise one does not talk over others. Delighting in the self, playing in the self, yet active, such a one is the best of the knowers of Brahman.",
+     "words": [],
+     "why": "There is a calm witness in you that the anxious part can turn to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.mundaka.two_birds",
+      "title": "Two birds on one tree",
+      "summary": "Two birds sit on one tree: one eats the fruit and grieves, the other simply watches. When the anxious bird sees the calm one beside it, its sorrow falls away. The section goes on to praise truth, effort and freedom from craving.",
+      "story_hook": "",
+      "lesson": "There is a calm witness in you that the anxious part can turn to."
+     },
+     "score": 2.5531,
+     "beat": "steady",
+     "role_fit": 0.455,
+     "meaning": null,
+     "for_you": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "words": [
+      {
+       "sa": "कर्मणि",
+       "en": "in action"
+      },
+      {
+       "sa": "एव",
+       "en": "only"
+      },
+      {
+       "sa": "अधिकारः",
+       "en": "right"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "फलेषु",
+       "en": "in the fruits"
+      },
+      {
+       "sa": "कदाचन",
+       "en": "ever"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "कर्मफलहेतुर्भूः",
+       "en": "cause of the fruit of action"
+      },
+      {
+       "sa": "भूः",
+       "en": "become"
+      },
+      {
+       "sa": "मा",
+       "en": "not"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "सङ्गः",
+       "en": "attachment"
+      },
+      {
+       "sa": "अस्तु",
+       "en": "be"
+      },
+      {
+       "sa": "अकर्मणि",
+       "en": "in inaction"
+      }
+     ],
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.8503,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "words": [],
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 2.2033,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In the city of Mithila, a meat-seller named Dharmavyadha is teaching a proud ascetic named Kaushika what goodness really is. The ascetic has been told to learn from this butcher, and the butcher explains that true wisdom is found in ordinary people doing honest work and caring for their parents. He says that if a person who has done wrong turns to doing good, they are freed from all their wrongs, like the moon coming out from behind a great cloud.",
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+     "try_today": null,
+     "scene_line": "You are the ascetic sent to learn from the butcher in Mithila.",
+     "asks": [
+      "How do I know if I am doing good right now?",
+      "What does it mean to care for my parents today?",
+      "How does my work connect to my roots?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.prashna.year",
+     "title": "Six seekers wait a year",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Pippalada",
+      "Sukesha",
+      "Satyakama",
+      "Gargya",
+      "Kausalya",
+      "Bhargava",
+      "Kabandhi"
+     ],
+     "story_hook": "Six seekers arrived with fuel in their hands and questions on their lips, and were told to wait a year.",
+     "summary": "Six earnest seekers come to the sage Pippalada with questions. Instead of answering, he asks them to live with him for a year in discipline and faith, and only promises to answer what he actually knows.",
+     "lesson": "Readiness matters, and a good teacher only claims what he knows.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "anchor": {
+      "id": "up_prashn.3",
+      "ref": "Prashna Upanishad 1.2",
+      "ref_iast": "Praśna Upaniṣad 1.2",
+      "family": "up",
+      "speaker": "Pippalada",
+      "listener": "Six seekers",
+      "setting": "Six seekers arrive with questions; the sage makes them wait.",
+      "sanskrit": "तान्ह स ऋषिरुवाच भूय एव तपसा ब्रह्मचर्येण श्रद्धया संवत्सरं संवत्स्यथ यथाकामं प्रश्नान् पृच्छत यदि विज्ञास्यामः सर्वं ह वो वक्ष्याम इति ॥",
+      "line": "Stay a year in discipline and faith, then ask. If I know, I will tell you everything.",
+      "translation": "The sage said to them: 'Live here one more year with discipline, self-restraint and faith. Then ask whatever you wish. If we know, we will tell you all of it.'",
+      "words": [],
+      "why": "Readiness matters, and a good teacher only claims what he knows.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.prashna.year",
+       "title": "Six seekers wait a year",
+       "summary": "Six earnest seekers come to the sage Pippalada with questions. Instead of answering, he asks them to live with him for a year in discipline and faith, and only promises to answer what he actually knows.",
+       "story_hook": "Six seekers arrived with fuel in their hands and questions on their lips, and were told to wait a year.",
+       "lesson": "Readiness matters, and a good teacher only claims what he knows."
+      },
+      "score": 2.2992
+     },
+     "score": 2.2992,
+     "why": null,
+     "hook_title": "Six seekers came to a sage with their biggest questions, and he made them wait a year",
+     "teaser": "Six seekers came to a sage with their biggest questions, and he made them wait a year",
+     "for_you": "You have been waiting for a sign of purpose since your pet died, and now you are looking for something deeper to lean on. Pippalada did not rush the seekers with answers, and neither will you rush your own search.",
+     "asks": [
+      "How do I know if I am ready to ask?",
+      "What if I do not find what I am looking for?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "What does not pass",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 13856,
+   "total": 13857
+  },
+  "_ms": 13861
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "i'm looking for something deeper to lean on",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "My pet died",
+   "mirror": "My pet died",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "pet_loss",
+     "label": "My pet died",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.7,
+     "source": "profile"
+    },
+    {
+     "id": "doubt_faith",
+     "label": "I'm struggling with doubt",
+     "weight": 0.6,
+     "source": "profile"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to understand what these texts teach, and to find in them something steady to lean on.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A story of a student who came to a teacher with questions and was led, step by step, toward the truth."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "What gives it meaning"
+   ],
+   "seat": "",
+   "life_context": "Working. Feels searching; closest to pet died\" and \"I want to reconnect with my roots\".",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "week_fit:11=0.0,508=0.0,11=0.6,33=0.6,43=0.3,8=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.56,max=0.63",
+    "dropped:repeat=1,slang=1,soft_kept=1,try_today_technique=2",
+    "for_you:7/7",
+    "meaning:5/6"
+   ]
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "up_shwetashwetar.6.11",
+     "ref": "Shvetashvatara Upanishad 6.11",
+     "ref_iast": "Śvetāśvatara Upaniṣad 6.11",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "One of the best-known verses of the Upanishad, on the God within all.",
+     "sanskrit": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा। कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+     "line": "One God is hidden in every being: the inner self of all, the quiet witness of all we do.",
+     "translation": "One God is hidden in all beings: all-pervading, the inner self of every being, overseer of all action, dwelling in all beings, the witness, pure awareness, alone, beyond all qualities.",
+     "words": [],
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.7135,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "A seeker asks what governs the world and our joys and sorrows, and the seer answers that one God is hidden in every being. This inner self is the quiet witness of all we do, pure awareness beyond all qualities, dwelling in all forms. It is not a distant ruler but the very core of our existence, the silent overseer of every action and thought. The verse proposes that true refuge is found not by abandoning the search, but by arriving at the end of it, in the recognition of this ever-present witness.",
+     "for_you": "You have outgrown the old reasons and are searching for what it is all for. This verse speaks to that exact moment of honest questioning. The God or the deeper reality you seek is not somewhere else.",
+     "try_today": "Notice the one quiet part of your day that simply watches everything without judging it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.25",
+     "ref": "Bhagavad Gita 2.25",
+     "ref_iast": "Bhagavad Gītā 2.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते । तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि ॥",
+     "line": "It is unseen, beyond thought, unchanging. Knowing this, ease your grief.",
+     "translation": "It is called unmanifest, unthinkable and unchanging. Knowing it to be so, you should not grieve.",
+     "words": [
+      {
+       "sa": "अव्यक्तः",
+       "en": "unmanifest"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "अचिन्त्यः",
+       "en": "unthinkable"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "अविकार्यः",
+       "en": "unchangeable"
+      },
+      {
+       "sa": "अयम्",
+       "en": "this"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      },
+      {
+       "sa": "तस्मात्",
+       "en": "therefore"
+      },
+      {
+       "sa": "एवम्",
+       "en": "thus"
+      },
+      {
+       "sa": "विदित्वा",
+       "en": "knowing"
+      },
+      {
+       "sa": "एनम्",
+       "en": "this"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अनुशोचितुम्",
+       "en": "to grieve"
+      },
+      {
+       "sa": "अर्हसि",
+       "en": "you should"
+      }
+     ],
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.7795,
+     "beat": "diagnose",
+     "role_fit": 0.471,
+     "meaning": "Krishna is speaking to Arjuna, who has just collapsed on the battlefield, convinced that killing his own kin is the end of everything. Krishna does not argue with the grief. He points to what is underneath the grief and the killing, the thing that is never born and never dies. The verse says the true self is unseen, beyond thought, unchanging. It does not come into being, nor does it pass away. The body is a garment that is put on and taken off. Pleasure and pain, victory and defeat, come and go like seasons.",
+     "for_you": "You are standing in the quiet after a loss, looking for the floor that is still there. The texts call this the unmanifest, the part of you that was there before the pet and will be there after. It does not need to be found, only noticed.",
+     "try_today": null,
+     "scene_line": "You are on the field, and the self is still breathing.",
+     "asks": [
+      "How do I rest in what I cannot see?",
+      "How do I stop the mind from grieving?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.11",
+     "ref": "Ashtavakra Gita 18.11",
+     "ref_iast": "Aṣṭāvakra Gītā 18.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "स्वाराज्ये भैक्षवृत्तौ च लाभालाभे जने वने । निर्विकल्पस्वभावस्य न विशेषोऽस्ति योगिनः ॥",
+     "line": "Throne or begging bowl, gain or loss, crowd or solitude: a steady person stays the same.",
+     "translation": "For the yogi of steady nature there is no difference between ruling a kingdom and living on alms, gain and loss, the crowd and the forest.",
+     "words": [
+      {
+       "sa": "स्वाराज्ये",
+       "en": "in self-rule"
+      },
+      {
+       "sa": "भैक्षवृत्तौ",
+       "en": "in begging"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "लाभालाभे",
+       "en": "gain and loss"
+      },
+      {
+       "sa": "जने",
+       "en": "in society"
+      },
+      {
+       "sa": "वने",
+       "en": "in forest"
+      },
+      {
+       "sa": "निर्विकल्पस्वभावस्य",
+       "en": "of the one with undoubting nature"
+      },
+      {
+       "sa": "न",
+       "en": "no"
+      },
+      {
+       "sa": "विशेषः",
+       "en": "difference"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "exists"
+      },
+      {
+       "sa": "योगिनः",
+       "en": "of the yogi"
+      }
+     ],
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.3897,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Ashtavakra speaks to Janaka in the final verses of his teaching, painting the calm that does not come from chasing or changing places. He says that for the person of steady nature, there is no difference between ruling a kingdom and living on alms. Gain and loss feel the same. Praise and blame pass through. The crowd in the city and the silence of the forest are just different rooms. The restless person runs after peace and never finds it. The calm person holds ordinary life without needing it to be anything else.",
+     "for_you": "You are searching for something deeper to lean on, and you are right to want it. The texts say this steadiness is not found by changing jobs or moving away. It is how you hold the life you already have.",
+     "try_today": null,
+     "scene_line": "You are in your own ordinary room, and the steady self is learning to rest there.",
+     "asks": [
+      "How do I hold my work and my grief at the same time?",
+      "Can I find rest without changing my life?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.8",
+     "ref": "Ashtavakra Gita 15.8",
+     "ref_iast": "Aṣṭāvakra Gītā 15.8",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "श्रद्धस्व तात श्रद्धस्व नात्र मोऽहं कुरुष्व भोः । ज्ञानस्वरूपो भगवानात्मा त्वं प्रकृतेः परः ॥",
+     "line": "Have faith, my child, have faith. You are more than everything that happens to you.",
+     "translation": "Have faith, my son, have faith. Do not be confused about this. You are knowledge itself, the Lord, the Self beyond nature.",
+     "words": [
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "तात",
+       "en": "dear one"
+      },
+      {
+       "sa": "श्रद्धस्व",
+       "en": "have faith"
+      },
+      {
+       "sa": "नात्र",
+       "en": "here not"
+      },
+      {
+       "sa": "मः",
+       "en": "illusion"
+      },
+      {
+       "sa": "कुरुष्व",
+       "en": "do"
+      },
+      {
+       "sa": "भोः",
+       "en": "oh"
+      },
+      {
+       "sa": "ज्ञानस्वरूपो",
+       "en": "embodiment of wisdom"
+      },
+      {
+       "sa": "भगवानात्मा",
+       "en": "supreme self"
+      },
+      {
+       "sa": "त्वं",
+       "en": "you"
+      },
+      {
+       "sa": "प्रकृतेः",
+       "en": "of nature"
+      },
+      {
+       "sa": "परः",
+       "en": "beyond"
+      }
+     ],
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "doubt_faith",
+       "label": "I'm struggling with doubt"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.0567,
+     "beat": "steady",
+     "role_fit": 0.775,
+     "meaning": "Ashtavakra tells Janaka to stop worrying. The world offers two paths: a throne or a begging bowl. Janaka is the king sitting on a throne, yet the teacher says this does not matter. The point is that you are not the role you play or the results you get. You are the knowledge itself, the unchanging Self. The waves of loss and gain will rise and fall, but the ocean inside you stays the same.",
+     "for_you": "The loss of your pet has left a quiet space where your old reasons used to sit. The texts say you are not the grief you feel or the roles you play at work. You are the awareness in which the sorrow happens.",
+     "try_today": "When the weight of the loss feels heavy, rest in the knowledge that you are the observer, not the storm.",
+     "scene_line": "You are the throne and the begging bowl, the loss and the quiet space in between.",
+     "asks": [
+      "How do I hold my grief without becoming it?",
+      "Where is the boundary between who I am and what I feel?",
+      "How does knowing I am awareness change how I carry this loss?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "words": [
+      {
+       "sa": "कुर्वन्",
+       "en": "doing"
+      },
+      {
+       "sa": "एव",
+       "en": "indeed"
+      },
+      {
+       "sa": "इह",
+       "en": "here"
+      },
+      {
+       "sa": "कर्माणि",
+       "en": "actions"
+      },
+      {
+       "sa": "जिजीविषेः",
+       "en": "wishing to live"
+      },
+      {
+       "sa": "चतुः",
+       "en": "hundred"
+      },
+      {
+       "sa": "समाः",
+       "en": "years"
+      },
+      {
+       "sa": "एवं",
+       "en": "thus"
+      },
+      {
+       "sa": "त्वयि",
+       "en": "in you"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "अन्यथा",
+       "en": "otherwise"
+      },
+      {
+       "sa": "एतः",
+       "en": "than this"
+      },
+      {
+       "sa": "अस्ति",
+       "en": "is"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "कर्म",
+       "en": "action"
+      },
+      {
+       "sa": "लिप्यते",
+       "en": "sticks"
+      },
+      {
+       "sa": "नरे",
+       "en": "to the man"
+      }
+     ],
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.2702,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": null,
+     "for_you": "You are at work, and the days are full. The search for what it is all for can feel like a heavy coat you cannot take off. But you can set it down.",
+     "try_today": "At the end of the workday, let your hands go still for one minute.",
+     "scene_line": "You are at your desk, the work done, the wish to live long, and the letting go beginning.",
+     "asks": [
+      "How do I let go of the results at work?",
+      "Can I wish for a full life without fear?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.12.26",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.26",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha, after Janaka's story, praises clear understanding (prajna).",
+     "sanskrit": "य एव यत्नः क्रियते बाह्यार्थोपार्जने जनैः । स एव यत्नः कर्तव्यः पूर्वं प्रज्ञाविवर्धने ॥",
+     "line": "Put the effort you spend earning money into growing wiser first.",
+     "translation": "The very effort people put into earning outer wealth should first be put into growing wisdom.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 2.3686,
+     "beat": "act",
+     "role_fit": 0.865,
+     "meaning": "Vasishtha is speaking to Rama, who is restless after hearing King Janaka’s story. Janaka had stood on his palace roof, shaken by what the sages said, but when his doorkeeper called him to his duties, he walked down and did his work. He did not run away. Vasishtha tells Rama that the very energy you spend chasing money should first go toward growing wisdom. The point is that you do not have to leave your life to change it. You can do the day's work with a mind that does not clutch.",
+     "for_you": "You are at your desk, and the old reasons feel hollow. The effort you put into your job is real. Let some of that energy turn inward instead of only outward. The work will still be there tomorrow, but the mind that does it can loosen its grip.",
+     "try_today": "Pick one work task and do it without clinging to how it will look or what it will bring.",
+     "scene_line": "You are walking down from the roof of your own expectations to do the day's work.",
+     "asks": [
+      "How do I keep my mind loose when my work feels like my whole life?",
+      "What is the difference between doing my duties and clinging to them?",
+      "How do I know when I am growing wiser and not just distracting myself?"
+     ]
+    },
+    "story": null
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.taittiriya.bhrigu",
+     "title": "Bhrigu learns from his father",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Bhrigu",
+      "Varuna"
+     ],
+     "story_hook": "Bhrigu asked his father the biggest question there is, and got only a hint in reply.",
+     "summary": "Bhrigu asks his father Varuna to teach him what is ultimate. Varuna gives only a clue and tells him to reflect. Bhrigu comes back four times with answers (food, breath, mind, understanding) and each time is sent back to go deeper, until he discovers that everything is born from joy, lives by joy and returns to joy.",
+     "lesson": "A wise parent lets a child discover the answer instead of handing it over.",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "anchor": {
+      "id": "up_taittiriya.146",
+      "ref": "Taittiriya Upanishad 3.6.1",
+      "ref_iast": "Taittirīya Upaniṣad 3.6.1",
+      "family": "up",
+      "speaker": "Narrator",
+      "listener": "Reader",
+      "setting": "Bhrigu's final discovery after four returns to his father.",
+      "sanskrit": "आनन्दो ब्रह्मेति व्यजानात्। आनन्दाध्येव खल्विमानि भूतानि जायन्ते । आनन्देन जातानि जीवन्ति । आनन्दं प्रयन्त्यभिसंविशन्तीति । सैषा भार्गवी वारुणी विद्या । परमे व्योमन्प्रतिष्ठिता ।स य एवं वेद प्रतितिष्ठति ।",
+      "line": "At last Bhrigu saw: from joy all beings are born, by joy they live, into joy they return.",
+      "translation": "He understood that joy is Brahman. From joy these beings are born, by joy they live once born, and into joy they enter at death. This is the wisdom of Bhrigu and Varuna, established in the highest space. Whoever knows this becomes established.",
+      "words": [],
+      "why": "A wise parent lets a child discover the answer instead of handing it over.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.taittiriya.bhrigu",
+       "title": "Bhrigu learns from his father",
+       "summary": "Bhrigu asks his father Varuna to teach him what is ultimate. Varuna gives only a clue and tells him to reflect. Bhrigu comes back four times with answers (food, breath, mind, understanding) and each time is sent back to go deeper, until he discovers that everything is born from joy, lives by joy and returns to joy.",
+       "story_hook": "Bhrigu asked his father the biggest question there is, and got only a hint in reply.",
+       "lesson": "A wise parent lets a child discover the answer instead of handing it over."
+      },
+      "score": 2.2108
+     },
+     "score": 2.2108,
+     "why": null,
+     "hook_title": "A young man asked his father the biggest question, and was sent back to think four times",
+     "teaser": "A young man asked his father the biggest question, and was sent back to think four times",
+     "for_you": "Bhrigu did not accept the first hint his father offered. They kept returning to the question until the answer lived inside them. You are looking for something deeper to lean on after your pet died. You already know the surface answers are not enough.",
+     "asks": [
+      "How do I know if I am just chasing a feeling?",
+      "What if the deeper thing I find is not a career?"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "What gives it meaning",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "select": 12030,
+   "total": 12031
+  },
+  "_ms": 12035
+ }
+}

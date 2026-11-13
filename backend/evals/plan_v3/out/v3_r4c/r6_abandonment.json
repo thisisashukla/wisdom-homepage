@@ -1,0 +1,2781 @@
+{
+ "case": "r6_abandonment",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel lonely",
+   "mirror": "I feel lonely",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel lonely. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a husband and wife, facing feeling cut off."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel lonely\" and \"I feel like an imposter\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.3,wro=0.1,see=0.05",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:states:unknown_dropped",
+    "fast_read:wronged_unsupported",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "angry",
+     "uneasy",
+     "angry",
+     "hurt"
+    ],
+    "paused": "angry",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "viraha",
+     "dainya",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [
+     "loneliness",
+     "imposter",
+     "self_worth"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "pick": "viv.3.dares_to_differ"
+   }
+  },
+  "hook": {
+   "id": "viv.3.dares_to_differ",
+   "ref": "Swami Vivekananda",
+   "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 3",
+   "family": "viv",
+   "speaker": "Swami Vivekananda",
+   "listener": "Audience at Victoria Hall, Madras",
+   "setting": "'My Plan of Campaign', Madras, February 1897, on friends who turned critics.",
+   "sanskrit": null,
+   "line": "as soon as he dares to differ, that sympathy is gone, that love vanishes.",
+   "translation": "We hear so much tall talk in this world, of liberal ideas and sympathy with differences of opinion. That is very good, but as a fact, we find that one sympathises with another only so long as the other believes in everything he has to say, but as soon as he dares to differ, that sympathy is gone, that love vanishes.",
+   "words": [],
+   "why": "Judge ideas, and habits, by whether they make you stronger.",
+   "misuse": "",
+   "tone": "challenging",
+   "matched": [],
+   "prasang": {
+    "id": "viv.p.madras.plan_of_campaign",
+    "title": "'Reject it as poison' (Madras, 1897)",
+    "summary": "He answers critics who claimed others made his American success, noting how quickly sympathy vanishes when you dare to differ. His test of truth: whatever makes you weak in body, mind or spirit, reject as poison.",
+    "story_hook": "",
+    "lesson": "Judge ideas, and habits, by whether they make you stronger."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind stays heavy with old pain while you try to learn.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind stays heavy with old pain while you try to learn.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "vr.2.19.6",
+    "ref": "Valmiki Ramayana · Ayodhya Kanda",
+    "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.6",
+    "family": "vr",
+    "speaker": "Ram",
+    "listener": "Kaikeyi",
+    "setting": "Ram has just accepted fourteen years of exile; one thing still hurts him.",
+    "sanskrit": "अलीकं मानसं त्वेकं हृदयं दहते मम। स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्॥",
+    "line": "What hurt most was not the news, but that he didn't tell me himself.",
+    "translation": "Only one sorrow burns my heart: that the king did not tell me himself about Bharata's coronation.",
+    "words": [],
+    "why": "You cannot control the news; you can control the person who walks out of the room.",
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [],
+    "prasang": {
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.7.4.chaupai.8",
+    "ref": "Ramcharitmanas, Uttar Kand 7.4 (chaupai 8)",
+    "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 7.4",
+    "family": "rcm",
+    "speaker": "Bharat",
+    "listener": "Hanuman",
+    "setting": "After fourteen years, Hanuman brings Bharat the news that Ram is coming; Bharat has one question.",
+    "sanskrit": "तब हनुमंत नाइ पद माथा। कहे सकल रघुपति गुन गाथा॥ कहु कपि कबहुँ कृपाल गोसाईं। सुमिरहिं मोहि दास की नाईं ॥",
+    "line": "Tell me: does he ever think of me?",
+    "translation": "Then Hanuman bowed at his feet and told all of Raghupati's virtues. 'Tell me, Hanuman: does the kind master ever remember me, as one remembers a servant?'",
+    "words": [
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "हनुमंत",
+      "en": "Hanuman"
+     },
+     {
+      "sa": "नाइ",
+      "en": "bowing"
+     },
+     {
+      "sa": "पद",
+      "en": "feet"
+     },
+     {
+      "sa": "माथा",
+      "en": "head"
+     },
+     {
+      "sa": "कहे",
+      "en": "spoke"
+     },
+     {
+      "sa": "सकल",
+      "en": "all"
+     },
+     {
+      "sa": "रघुपति",
+      "en": "Lord of the Raghu clan"
+     },
+     {
+      "sa": "गुन",
+      "en": "virtues"
+     },
+     {
+      "sa": "गाथा",
+      "en": "song/story"
+     },
+     {
+      "sa": "कहु",
+      "en": "tell"
+     },
+     {
+      "sa": "कपि",
+      "en": "O monkey"
+     },
+     {
+      "sa": "कबहुँ",
+      "en": "ever"
+     },
+     {
+      "sa": "कृपाल",
+      "en": "gracious"
+     },
+     {
+      "sa": "गोसाईं",
+      "en": "Lord"
+     },
+     {
+      "sa": "सुमिरहिं",
+      "en": "remember"
+     },
+     {
+      "sa": "मोहि",
+      "en": "me"
+     },
+     {
+      "sa": "दास",
+      "en": "servant"
+     },
+     {
+      "sa": "की नाईं",
+      "en": "like"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "reflective",
+    "matched": [
+     {
+      "id": "loneliness",
+      "label": "I feel lonely"
+     }
+    ],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 219,
+   "v3_candidates": 66,
+   "v3_fast_read": 2057,
+   "v3_select": 2348,
+   "v3_first_line": 615,
+   "v3_total": 2964,
+   "total": 2966
+  },
+  "_ms": 2970
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel lonely",
+   "mirror": "I feel lonely",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel lonely. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a husband and wife, facing feeling cut off."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel lonely\" and \"I feel like an imposter\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "v3:for_you:7/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "angry",
+     "uneasy",
+     "angry",
+     "hurt"
+    ],
+    "paused": "angry",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "viraha",
+     "dainya",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [
+     "loneliness",
+     "imposter",
+     "self_worth"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "viv.3.dares_to_differ",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "viv.3.dares_to_differ",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 3",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Audience at Victoria Hall, Madras",
+     "setting": "'My Plan of Campaign', Madras, February 1897, on friends who turned critics.",
+     "sanskrit": null,
+     "line": "as soon as he dares to differ, that sympathy is gone, that love vanishes.",
+     "translation": "We hear so much tall talk in this world, of liberal ideas and sympathy with differences of opinion. That is very good, but as a fact, we find that one sympathises with another only so long as the other believes in everything he has to say, but as soon as he dares to differ, that sympathy is gone, that love vanishes.",
+     "words": [],
+     "why": "Judge ideas, and habits, by whether they make you stronger.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.madras.plan_of_campaign",
+      "title": "'Reject it as poison' (Madras, 1897)",
+      "summary": "He answers critics who claimed others made his American success, noting how quickly sympathy vanishes when you dare to differ. His test of truth: whatever makes you weak in body, mind or spirit, reject as poison.",
+      "story_hook": "",
+      "lesson": "Judge ideas, and habits, by whether they make you stronger."
+     },
+     "score": 9.552,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel you will never be loved without being abandoned. This verse shows that some people only stay close while you agree with them.",
+     "try_today": "Notice who stays when you voice a different thought.",
+     "scene_line": "You sit with your books, feeling small, while the love you hoped for disappears the moment you dare to differ.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "viv.3.dares_to_differ",
+     "path": "Day 1 kept from the first screen (rcm.7.4.chaupai.8 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "bh.niti.40",
+      "rcm.7.20.chaupai.2",
+      "tulsi_vp.101"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:preachy(you must)",
+      "for_you:untraced_sentence(becom,perfor,presen,safe)",
+      "practice:long(22)",
+      "practice:untraced_sentence(change,near,second,though)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "viv.5.ridicule_opposition",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 5",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "The Maharaja of Khetri",
+     "setting": "Letter from the USA, 9 July 1895, on opposition to his work in America.",
+     "sanskrit": null,
+     "line": "Each work has to pass through these stages — ridicule, opposition, and then acceptance.",
+     "translation": "Each work has to pass through these stages — ridicule, opposition, and then acceptance. Each man who thinks ahead of his time is sure to be misunderstood.",
+     "words": [],
+     "why": "Ridicule and opposition are stages, not verdicts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.letter.khetri_1895",
+      "title": "Ridicule, opposition, acceptance (letter to Khetri, 1895)",
+      "summary": "Facing opposition from some clergy in America, he writes to his friend the Maharaja that every work passes through ridicule, opposition and then acceptance. Anyone ahead of their time will be misunderstood, so he will stay steady.",
+      "story_hook": "",
+      "lesson": "Ridicule and opposition are stages, not verdicts."
+     },
+     "score": 3.168,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The work of knowing your worth is being misunderstood right now. This stage is part of the work. Your value is not waiting for their acceptance to begin.",
+     "try_today": "Notice one moment today when you are misunderstood, and let it pass through you without fighting it.",
+     "scene_line": "You stand in a quiet room, feeling small while the world ridicules what you are trying to build.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "viv.5.ridicule_opposition",
+     "path": "viv.5.ridicule_opposition -heals-> dainya [label only: move normalizes]",
+     "why": [
+      "being misunderstood comes with being early"
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.305.23",
+      "rcm.6.12.chaupai.3",
+      "rcm.2.42.doha.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(are not alone in this. You are)",
+      "for_you:cliche(You are not alone)",
+      "for_you:overrules_their_feeling(You are not alone)",
+      "scene_line:untraced_sentence(cannot,memory,shadow,shake)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "words": [],
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 11.456,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "That fear of being left is heavy. You do not need to be strong to stand. Let the truth of your own worth hold you up today.",
+     "try_today": "Notice one moment today when you chose to be honest with yourself.",
+     "scene_line": "You stand beside the Seer, feeling small, yet the truth you speak is already your shield.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "up_brihadaranyak.86",
+     "path": "up_brihadaranyak.86 -heals-> dainya",
+     "why": [
+      "the weaker party is not without standing",
+      "With what is right the weak can face the strong."
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.4.66.7",
+      "mbh.3.32.58",
+      "rcm.4.4.chaupai.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.17",
+     "ref": "Valmiki Ramayana, Aranya 66.17",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.17",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "Sita has been taken; Lakshman, the younger brother, gently tries to bring Ram back to himself.",
+     "sanskrit": "बुद्धिश्च ते महाप्राज्ञ देवैरपि दुरन्वया। शोकेनाभिप्रसुप्तं ते ज्ञानं सम्बोधयाम्यहम्॥",
+     "line": "Your wisdom isn't gone. Grief has only put it to sleep for a while.",
+     "translation": "Your understanding, wise one, is beyond even the gods' reckoning. Grief has only put your wisdom to sleep, and I am here to wake it.",
+     "words": [
+      {
+       "sa": "बुद्धिः",
+       "en": "intellect"
+      },
+      {
+       "sa": "च",
+       "en": "and"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "महाप्राज्ञ",
+       "en": "O very wise one"
+      },
+      {
+       "sa": "देवैः",
+       "en": "by the gods"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "दुरन्वया",
+       "en": "hard to follow"
+      },
+      {
+       "sa": "शोकेन",
+       "en": "by sorrow"
+      },
+      {
+       "sa": "अभिप्रसुप्तम्",
+       "en": "fallen asleep"
+      },
+      {
+       "sa": "ते",
+       "en": "your"
+      },
+      {
+       "sa": "ज्ञानम्",
+       "en": "wisdom"
+      },
+      {
+       "sa": "सम्बोधयामि",
+       "en": "I am rousing"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": null,
+     "score": 10.017,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The ache of being left is still there. But your own sense of being worthy is only resting, not gone. It can wake again today.",
+     "try_today": "Notice one moment today when your understanding shows up, even for a second.",
+     "scene_line": "You stand in the quiet of your own life, feeling small and alone, while Ram waits for his wisdom to wake.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "vr.3.66.17",
+     "path": "vr.3.66.17 -heals-> dainya",
+     "why": [
+      "he is told he is not broken",
+      "Feelings come and go, bear them; your wisdom is asleep, not gone (Lakshmana to Rama)."
+     ],
+     "writer_note": null,
+     "alts": [
+      "mbh.12.114.15",
+      "vr.4.62.13",
+      "viv.3.whatever_you_think"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "practice:untraced_sentence(beside,fear,know,left,quiet,speak)",
+      "scene_line:invented_life_detail(your room)"
+     ]
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.4.8.chaupai.3",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Sugriva",
+     "setting": "Ram to Sugriva on the marks of a good friend.",
+     "sanskrit": "देत लेत मन संक न धरई। बल अनुमान सदा हित करई॥ बिपति काल कर सतगुन नेहा। श्रुति कह संत मित्र गुन एहा ॥",
+     "line": "A good friend gives without keeping score, and loves you a hundredfold more in hard times.",
+     "translation": "He gives and takes without suspicion, always does you good as far as he is able, and in hard times loves you a hundred times more. These, say the scriptures, are the qualities of a good friend.",
+     "words": [
+      {
+       "sa": "देत",
+       "en": "giving"
+      },
+      {
+       "sa": "लेत",
+       "en": "receiving"
+      },
+      {
+       "sa": "मन",
+       "en": "mind"
+      },
+      {
+       "sa": "संक",
+       "en": "doubt"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "धरई",
+       "en": "holds"
+      },
+      {
+       "sa": "बल",
+       "en": "strength"
+      },
+      {
+       "sa": "अनुमान",
+       "en": "according to"
+      },
+      {
+       "sa": "सदा",
+       "en": "always"
+      },
+      {
+       "sa": "हित",
+       "en": "good"
+      },
+      {
+       "sa": "करई",
+       "en": "does"
+      },
+      {
+       "sa": "बिपति",
+       "en": "hardship"
+      },
+      {
+       "sa": "काल",
+       "en": "time"
+      },
+      {
+       "sa": "कर",
+       "en": "of"
+      },
+      {
+       "sa": "सतगुन",
+       "en": "hundredfold"
+      },
+      {
+       "sa": "नेहा",
+       "en": "affection"
+      },
+      {
+       "sa": "श्रुति",
+       "en": "the Vedas"
+      },
+      {
+       "sa": "कह",
+       "en": "say"
+      },
+      {
+       "sa": "संत",
+       "en": "true"
+      },
+      {
+       "sa": "मित्र",
+       "en": "friend"
+      },
+      {
+       "sa": "गुन",
+       "en": "qualities"
+      },
+      {
+       "sa": "एहा",
+       "en": "these"
+      }
+     ],
+     "why": "A friend treats your trouble as bigger than their own.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.friendship_pact",
+      "title": "Ram and Sugriva become friends",
+      "summary": "Hanuman, sent to check whether the two strangers are Bali's spies, recognises Ram and brings him to Sugriva, who has been driven out by his brother. Before a fire as witness they become friends, and Ram describes what friendship asks: your friend's small trouble is a mountain, your own is dust; steer him right, hide his faults, love him more in hard times.",
+      "story_hook": "",
+      "lesson": "A friend treats your trouble as bigger than their own."
+     },
+     "score": 4.206,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The hurt you chose to keep is heavy, and you feel small inside it. A good friend does not keep score, and loves you more when the hard times come. You do not have to earn the love that stays with you.",
+     "try_today": "Notice one small act of care someone gave you today, without keeping score.",
+     "scene_line": "You sit alone in your study, and Ram tells Sugriva that a true friend loves a hundredfold more in hard times.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "rcm.4.8.chaupai.3",
+     "path": "rcm.4.8.chaupai.3 -cultivates-> shraddha",
+     "why": [
+      "giving and taking without misgiving",
+      "love that multiplies in the friend's bad time"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.17.16",
+      "up_devi.9",
+      "mbh.5.40.23"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.21",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.21",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "उद्यम्य धुरमुत्कर्षेदाजानेयकृतं स्मरन् / कुरु सत्वं च मानं च विद्धि पौरुषमात्मनः",
+     "line": "Pick up the load again. Summon your strength and self-respect, and know the power in you.",
+     "translation": "Lift the load and pull it forward, remembering how a thoroughbred works. Summon your strength and your self-respect; know the power that is in you.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 4.272,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Something someone did stays with you, and that weight can feel too heavy to carry. You can still summon your self-respect and feel the strength that is already in you.",
+     "try_today": "Notice the moment you feel small, and choose to pull forward anyway.",
+     "scene_line": "You stand in the quiet after a loss, and Vidula asks you to lift the yoke again.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.133.21",
+     "path": "mbh.5.133.21 -cultivates-> tejas",
+     "why": [
+      "Mana, self-respect, is to be summoned"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.58.chaupai.3",
+      "bh.niti.53",
+      "bg.6.5"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:preachy(you have to)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.up.upakosala_passed_over",
+     "title": "Upakosala is passed over while every other student graduates",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Upakosala Kamalayana",
+      "Satyakama Jabala",
+      "the teacher's wife"
+     ],
+     "story_hook": "Twelve years of work. Everyone else graduated. He was left behind without a word, and he stopped eating.",
+     "summary": "Upakosala has tended his teacher's fires for twelve years. The teacher lets the other students go home, one after another, and says nothing to him. Then the teacher leaves on a journey. Upakosala stops eating.",
+     "lesson": "Service that seemed unnoticed was noticed; what you tended will itself speak for you.",
+     "matched": [],
+     "anchor": null,
+     "score": 10.288,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Twelve years of work. Everyone else graduated. He was left behind without a word, and he stopped eating.",
+     "for_you": "You feel you will never be loved without being abandoned. Someone leaving a mark on you does not mean you are small or unloved. What you have cared for will speak for itself.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.up.upakosala_passed_over",
+     "path": "st.up.upakosala_passed_over -enacts_in-> dainya, manyu ; st.up.upakosala_passed_over -enacts_turn-> prasada, shraddha ; st.up.upakosala_passed_over -fits_situation-> self_worth",
+     "why": [
+      "Service that seemed unnoticed was noticed; what you tended will itself speak for you."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.bharat_last_day",
+      "st.bh.ascetic_and_king",
+      "st.mbh.kashyapa_and_the_jackal"
+     ],
+     "thin": false,
+     "story_id": "st.up.upakosala_passed_over",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Feeling alone",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 55,
+   "v3_w1_write": 9327,
+   "v3_w1_total": 9383,
+   "select": 9384,
+   "total": 9384
+  },
+  "_ms": 9388
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel lonely",
+   "mirror": "I feel lonely",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel lonely. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a husband and wife, facing feeling cut off."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel lonely\" and \"I feel like an imposter\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "v3:write_retry:1",
+    "v3:for_you:7/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "angry",
+     "uneasy",
+     "angry",
+     "hurt"
+    ],
+    "paused": "angry",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "viraha",
+     "dainya",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [
+     "loneliness",
+     "imposter",
+     "self_worth"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "viv.3.dares_to_differ",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.2.72.25",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 72.25",
+     "family": "vr",
+     "speaker": "Bharata",
+     "listener": "Kaikeyi",
+     "setting": "Bharata, away at his uncle's home, returns to find his father has died while he was gone.",
+     "sanskrit": "अम्ब केनात्यगाद् राजा व्याधिना मय्यनागते। धन्या रामादयः सर्वे यैः पिता संस्कृतः स्वयम्॥",
+     "line": "He died while I was away. Blessed are those who were there to say goodbye.",
+     "translation": "Mother, of what illness did the king die while I was away? Blessed are Ram and the others who performed my father's last rites themselves.",
+     "words": [],
+     "why": "Missing a parent's death far from home is its own grief; let yourself feel it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.bharata_returns",
+      "title": "Bharata comes home too late",
+      "summary": "Bharata, living at his uncle's court, has a nightmare and is summoned home. He finds the city silent and learns from his mother that his father has died while he was away, and then that Ram is in exile because of her.",
+      "story_hook": "He rode for seven days and arrived to find his father already gone.",
+      "lesson": "Missing a parent's death far from home is its own grief; let yourself feel it."
+     },
+     "score": 14.304,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Something someone did stays with you, and it makes you feel small. You do not have to carry this alone today.",
+     "try_today": "Notice one moment today when you feel abandoned.",
+     "scene_line": "You stand alone, while Ram and the others stood by the king.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "vr.2.72.25",
+     "path": "vr.2.72.25 -depicts-> glani (spoken by Bharata)",
+     "why": [
+      "the ache of not having been there",
+      "Father is dead and it happened because of my mother. Come back and take what is yours. How do I carry this?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.2.225.chaupai.3",
+      "vr.2.75.15",
+      "rcm.2.170.chaupai.7"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "practice:contrast_pattern(, not the)",
+      "scene_line:untraced_sentence(absenc,apart,feel,final,weight)"
+     ]
+    }
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.173.53",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 173.53",
+     "family": "mbh",
+     "speaker": "A brahmin (retold by Bhishma)",
+     "listener": "King Senajit",
+     "setting": "The brahmin explains to King Senajit why loss hurts so much.",
+     "sanskrit": "किंचिदेव ममत्वेन यदा भवति कल्पितम् / तदेव परितापाय नाशे संपद्यते तदा",
+     "line": "Whatever you start calling 'mine' becomes a source of pain the day you lose it.",
+     "translation": "Whatever a person begins to think of as 'mine', that very thing becomes a source of anguish when it is lost.",
+     "words": [],
+     "why": "No one suffers forever. Meet what comes with an undefeated heart.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.senajit_brahmin",
+      "title": "King Senajit and the brahmin's consolation",
+      "summary": "King Senajit is crushed by his son's death. A brahmin comforts him: everyone suffers, no sorrow lasts forever, effort beats idleness, and whatever we call 'mine' becomes a source of pain.",
+      "story_hook": "",
+      "lesson": "No one suffers forever. Meet what comes with an undefeated heart."
+     },
+     "score": 5.362,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel like you will never be loved without being abandoned. That fear makes you hold on tightly to the few people who stay. The day you lose them, the pain feels like proof that you were right to be afraid.",
+     "try_today": "Notice when you feel the fear of being left, and let your hands loosen around it for a moment.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "mbh.12.173.53",
+     "path": "mbh.12.173.53 -states_chain-> mbh.pingala [sanga -causes-> shoka; sanga -causes-> shoka]",
+     "why": [
+      "The night she stopped waiting (Mahabharata, Shanti Parva 173-174 (Gita Press))",
+      "Explains the size of the pain without denying it"
+     ],
+     "writer_note": "Letting-go teaching for a reader who is young and afraid of being left. Explain it through their own situation and feeling: what is released is the grip that hurts them, never their love, their hope or their work. Never say or imply 'stop caring' or 'your hope is the problem'. Read it after the guard verse, which reassures first.",
+     "alts": [
+      "vr.2.62.14",
+      "vr.5.55.3",
+      "mbh.12.338.9"
+     ],
+     "thin": false,
+     "guard": {
+      "id": "mbh.3.32.58",
+      "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+      "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+      "is_previous_day": false
+     },
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "scene_line:invented_life_detail(your room)",
+      "audio_close:contrast_pattern(, not the)"
+     ]
+    }
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.1.not_hate_ourselves",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Karma-Yoga class, New York",
+     "setting": "Karma-Yoga classes, New York, 1895–96, chapter 2, warning against ideals that breed self-hatred.",
+     "sanskrit": null,
+     "line": "Our first duty is not to hate ourselves, because to advance we must have faith in ourselves first and then in God.",
+     "translation": "Our first duty is not to hate ourselves, because to advance we must have faith in ourselves first and then in God.",
+     "words": [],
+     "why": "Measure yourself by your own ideal, not by someone else's.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.karma_yoga.each_is_great",
+      "title": "Karma-Yoga 2: each is great in his own place",
+      "summary": "Duty differs from person to person, so no one should be judged by another's standard. Hating yourself for not meeting someone else's ideal only weakens you. He ends with the story of a king who learns that the householder and the monk are each great in their own place.",
+      "story_hook": "A king kept asking who was greater, the monk or the householder, until a young sannyasin offered to show him.",
+      "lesson": "Measure yourself by your own ideal, not by someone else's."
+     },
+     "score": 14.275,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel you will never be loved without being abandoned. That is a heavy thing to carry. The first step is to stop hating yourself for feeling it.",
+     "try_today": "Notice when you feel unlovable. Name the feeling. Let it pass without agreeing with it.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "viv.1.not_hate_ourselves",
+     "path": "viv.1.not_hate_ourselves -heals-> glani via c:atma_uddhara",
+     "why": [
+      "Do not push yourself down; never hold yourself in contempt.",
+      "self-hatred is named as the thing to stop first, before any improvement"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.27.chaupai.3",
+      "rcm.2.252.chaupai.3",
+      "rcm.4.4.chaupai.4"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(you are not enough. You are)",
+      "for_you:untraced_sentence(become,enough,inward,pain,voice)",
+      "scene_line:untraced_sentence(alone,beside,left,memory)",
+      "scene_line:invented_life_detail(your room)",
+      "scene_line:cliche(sit with the)"
+     ]
+    }
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.2.remedy_weakness",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 2",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Audience in London",
+     "setting": "'Practical Vedanta' part 1, London, 10 November 1896.",
+     "sanskrit": null,
+     "line": "The remedy for weakness is not brooding over weakness, but thinking of strength.",
+     "translation": "But, says the Vedanta, being reminded of weakness does not help much; give strength, and strength does not come by thinking of weakness all the time. The remedy for weakness is not brooding over weakness, but thinking of strength.",
+     "words": [],
+     "why": "Stop rehearsing your weakness; think of your strength and act.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.practical_vedanta.faith",
+      "title": "Practical Vedanta 1: faith in yourself (London, 1896)",
+      "summary": "Vedanta must work in ordinary life. Calm minds do the most work, angry ones break themselves. The new religion calls the person who does not believe in himself the atheist, and the remedy for weakness is to think of strength, not brood over weakness.",
+      "story_hook": "",
+      "lesson": "Stop rehearsing your weakness; think of your strength and act."
+     },
+     "score": 10.219,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel like you will never be loved without being abandoned. That is the grief you carry. The remedy is not to keep returning to that feeling of weakness.",
+     "try_today": "Notice one small thing you did well today.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.2.remedy_weakness",
+     "path": "viv.2.remedy_weakness -heals-> glani",
+     "why": [
+      "going over one's faults again is declared no cure",
+      "Think of strength, not of weakness."
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.5.42.chaupai.2",
+      "mbh.3.28.6",
+      "viv.8.all_right_long_run"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "retried_transient",
+      "scene_line:cliche(sit with the)"
+     ]
+    }
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.16",
+     "ref": "Bhagavad Gita 17.16",
+     "ref_iast": "Bhagavad Gītā 17.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः । भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥",
+     "line": "A calm mind, gentleness, quiet, self-restraint and a clean heart: that is discipline of mind.",
+     "translation": "Serenity of mind, gentleness, silence, self-restraint and purity of feeling: this is called austerity of the mind.",
+     "words": [
+      {
+       "sa": "मनःप्रसादः",
+       "en": "cheerfulness of mind"
+      },
+      {
+       "sa": "सौम्यत्वम्",
+       "en": "gentleness"
+      },
+      {
+       "sa": "मौनम्",
+       "en": "silence"
+      },
+      {
+       "sa": "आत्मविनिग्रहः",
+       "en": "self-restraint"
+      },
+      {
+       "sa": "भावसंशुद्धिः",
+       "en": "purity of feeling"
+      },
+      {
+       "sa": "इति",
+       "en": "thus"
+      },
+      {
+       "sa": "एतत्",
+       "en": "this"
+      },
+      {
+       "sa": "तपः",
+       "en": "austerity"
+      },
+      {
+       "sa": "मानसम्",
+       "en": "mental"
+      },
+      {
+       "sa": "उच्यते",
+       "en": "is called"
+      }
+     ],
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.805,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Something someone did stays with you, and you feel like you will never be loved without being abandoned. A calm mind and a clean heart are a discipline you can choose today, even while the memory remains.",
+     "try_today": "Notice when your mind races with fear, and gently let it rest in silence.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "bg.17.16",
+     "path": "bg.17.16 -cultivates-> shanti",
+     "why": [
+      "silence and restraint",
+      "gentleness and clean intent toward others"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_devi.9",
+      "bg.12.8",
+      "rcm.4.8.chaupai.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(chest,fear,heavy,left)",
+      "for_you:untraced_sentence(anyone,prove,right,worth)",
+      "scene_line:contrast_pattern(, not the)",
+      "scene_line:cliche(sit with the)"
+     ]
+    }
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "words": [
+      {
+       "sa": "उद्धरेत्",
+       "en": "should uplift"
+      },
+      {
+       "sa": "आत्मना",
+       "en": "by the self"
+      },
+      {
+       "sa": "आत्मानं",
+       "en": "oneself"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "आत्मानम्",
+       "en": "oneself"
+      },
+      {
+       "sa": "अवसादयेत्",
+       "en": "should degrade"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      },
+      {
+       "sa": "आत्मैव",
+       "en": "by the self alone"
+      },
+      {
+       "sa": "रिपुर्",
+       "en": "enemy"
+      },
+      {
+       "sa": "आत्मनः",
+       "en": "of the self"
+      }
+     ],
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 4.328,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": "A person must lift themselves up by their own effort and must not let themselves sink. The self is the only friend, and the self is the only enemy. No outside force can do this for you.",
+     "for_you": "Something someone did stays with you. You do not have to stay small. You can be the one who lifts you up.",
+     "try_today": "Notice when you start to push yourself down. Let yourself be your own friend instead.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bg.6.5",
+     "path": "bg.6.5 -cultivates-> tejas",
+     "why": [
+      "self-respect: you are the one who can lift you",
+      "Lift yourself by yourself"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.1.58.chaupai.3",
+      "up_taittiriya.53",
+      "yv.2.16.8"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:contrast_pattern(you are not abandoned. You are)"
+     ]
+    }
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.bharat_waiting",
+     "title": "The last day of waiting",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Bharat",
+      "Hanuman"
+     ],
+     "story_hook": "There was one day left, and Bharat had begun to wonder whether he had been forgotten.",
+     "summary": "One day is left of the fourteen years and there is no word. Bharat wonders whether Ram has forgotten him, and his mind starts to sink. Just then Hanuman arrives like a boat and says Ram is coming. Bharat says no gift could repay this news.",
+     "lesson": "Waiting is hardest on the last day; hope can arrive just as you go under.",
+     "matched": [],
+     "anchor": null,
+     "score": 13.232,
+     "why": null,
+     "hook_title": "One day was left, and Bharat began to wonder if Ram had forgotten him",
+     "teaser": "One day was left, and Bharat began to wonder if Ram had forgotten him",
+     "for_you": "The ache of waiting is real, and it makes you feel small. But the nature of the one you wait for is not to abandon. Let that steadiness hold you today.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.rcm.bharat_last_day",
+     "path": "st.rcm.bharat_last_day -enacts_in-> dainya, glani, viraha ; st.rcm.bharat_last_day -enacts_turn-> shraddha ; st.rcm.bharat_last_day -fits_situation-> self_worth",
+     "why": [
+      "When waiting turns into self-blame, lean on what you know of the other's nature, not on your own record."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.bhakti.tulsi_abandoned_as_a_child",
+      "st.rcm.bharat_at_prayag",
+      "st.mbh.drona_son_cries_for_milk"
+     ],
+     "thin": false,
+     "story_id": "st.rcm.bharat_last_day",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "Why you feel apart",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w2_graph": 75,
+   "v3_w2_write": 10382,
+   "v3_w2_total": 10458,
+   "select": 10459,
+   "total": 10459
+  },
+  "_ms": 10463
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I feel lonely",
+   "mirror": "I feel lonely",
+   "insight": "Even among people, you've felt unseen, and the distance has grown without anyone saying so.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.3,
+     "source": "note"
+    },
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I feel lonely. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Loneliness and emptiness come from feeling separate from people, purpose and the divine; the heart is searching for where it belongs.",
+    "steady": "You belong more than you feel right now; the people and the practice that hold you are still within reach.",
+    "act": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone.",
+    "story": "A story of a husband and wife, facing feeling cut off."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "Feeling alone",
+    "Why you feel apart",
+    "Never truly separate"
+   ],
+   "seat": "",
+   "life_context": "Studying. Feels uneasy; closest to \"I feel lonely\" and \"I feel like an imposter\".",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "v3:write_retry:1",
+    "v3:for_you:7/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "hurt",
+    "trail": [
+     "anxious",
+     "overthinking",
+     "angry",
+     "uneasy",
+     "angry",
+     "hurt"
+    ],
+    "paused": "angry",
+    "stance": "struggle",
+    "states": [
+     "shoka",
+     "viraha",
+     "dainya",
+     "manyu"
+    ],
+    "risk": "none",
+    "situations": [
+     "loneliness",
+     "imposter",
+     "self_worth"
+    ],
+    "age": "u25",
+    "stages": [
+     "studying"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "viv.3.dares_to_differ",
+    "threat": false,
+    "caste_ok": false,
+    "health": false,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.2.225.chaupai.3",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.225 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.225",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Bharat walks toward Ram, slowed by shame, quickened by love.",
+     "sanskrit": "फेरति मनहुँ मातु कृत खोरी। चलत भगति बल धीरज धोरी॥ जब समुझत रघुनाथ सुभाऊ। तब पथ परत उताइल पाऊ ॥",
+     "line": "Shame slowed him. But whenever he remembered Ram's nature, his feet moved faster.",
+     "translation": "It was as if his mother's wrong held him back, while the strength of devotion drove him on like a patient ox. Whenever he remembered Raghunath's nature, his feet moved faster on the path.",
+     "words": [
+      {
+       "sa": "फेरति",
+       "en": "turns back"
+      },
+      {
+       "sa": "मनहुँ",
+       "en": "as if"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "कृत",
+       "en": "done"
+      },
+      {
+       "sa": "खोरी",
+       "en": "wrong"
+      },
+      {
+       "sa": "चलत",
+       "en": "while moving"
+      },
+      {
+       "sa": "भगति",
+       "en": "devotion"
+      },
+      {
+       "sa": "बल",
+       "en": "strength"
+      },
+      {
+       "sa": "धीरज",
+       "en": "patience"
+      },
+      {
+       "sa": "धोरी",
+       "en": "bearer"
+      },
+      {
+       "sa": "जब",
+       "en": "when"
+      },
+      {
+       "sa": "रघुनाथ",
+       "en": "Raghunath"
+      },
+      {
+       "sa": "सुभाऊ",
+       "en": "nature"
+      },
+      {
+       "sa": "तब",
+       "en": "then"
+      },
+      {
+       "sa": "पथ",
+       "en": "path"
+      },
+      {
+       "sa": "परत",
+       "en": "falling"
+      },
+      {
+       "sa": "उताइल",
+       "en": "quickened"
+      },
+      {
+       "sa": "पाऊ",
+       "en": "feet"
+      }
+     ],
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": null,
+     "score": 11.568,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Something someone did stays with you. Shame slows your steps. Remembering the nature of what is good in you makes your feet move faster.",
+     "try_today": "Notice one moment today where you choose to step forward anyway.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "rcm.2.225.chaupai.3",
+     "path": "rcm.2.225.chaupai.3 -depicts-> glani (spoken by Tulsidas)",
+     "why": [
+      "his feet are pulled back by a wrong that was not his",
+      "Everyone must think I wanted this. I can't look at anyone. Will he even see me?"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.2.170.chaupai.7",
+      "tulsi_vp.270",
+      "tulsi_vp.78"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(choose,forwar,good,move,true)",
+      "scene_line:untraced_sentence(ahead,eyes,feel,gaze,other,past)",
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "words": [
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "धैर्यं",
+       "en": "fortitude"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "श्रुतम्",
+       "en": "scriptures"
+      },
+      {
+       "sa": "शोको",
+       "en": "grief"
+      },
+      {
+       "sa": "नाशयते",
+       "en": "destroys"
+      },
+      {
+       "sa": "सर्वं",
+       "en": "everything"
+      },
+      {
+       "sa": "नास्ति",
+       "en": "there is not"
+      },
+      {
+       "sa": "शोकसमो",
+       "en": "equal to grief"
+      },
+      {
+       "sa": "रिपुः",
+       "en": "enemy"
+      }
+     ],
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 5.037,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You said something stays with you, and that it still hurts. Grief can make your words sharp and your mind unsteady. You are not wrong to feel this, and you do not have to let it decide your life today.",
+     "try_today": "Notice when grief is speaking. Let your judgement wait.",
+     "scene_line": "You sit alone with the memory of being left, and the grief of it still speaks for you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "vr.2.62.14",
+     "path": "vr.2.62.14 -states_chain-> vr.grief_destroys [shoka -destroys-> dhriti; shoka -destroys-> viveka]",
+     "why": [
+      "No enemy like grief (Valmiki Ramayana, Ayodhya Kanda 62)",
+      "the harsh words were grief speaking, and can be owned and mended"
+     ],
+     "writer_note": null,
+     "alts": [
+      "vr.5.55.3",
+      "mbh.12.338.9",
+      "vr.5.55.5"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "retried_transient",
+      "practice:imported_doctrine_or_technique(Breathe)",
+      "practice:untraced_sentence(acting,breath,pass,though)"
+     ]
+    }
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.15.7",
+     "ref": "Bhagavad Gita 15.7",
+     "ref_iast": "Bhagavad Gītā 15.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on the individual soul as a part of the divine.",
+     "sanskrit": "ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥",
+     "line": "Every living being is an eternal part of me, says Krishna.",
+     "translation": "An eternal part of me becomes the living soul in the world of the living, and draws to itself the mind and the five senses that rest in nature.",
+     "words": [
+      {
+       "sa": "ममैव",
+       "en": "my indeed"
+      },
+      {
+       "sa": "अंशः",
+       "en": "part"
+      },
+      {
+       "sa": "जीवलोके",
+       "en": "in the world of living beings"
+      },
+      {
+       "sa": "जीवभूतः",
+       "en": "become a living being"
+      },
+      {
+       "sa": "सनातनः",
+       "en": "eternal"
+      },
+      {
+       "sa": "मनःषष्ठानि",
+       "en": "mind as the sixth, together with the five"
+      },
+      {
+       "sa": "इन्द्रियाणि",
+       "en": "senses"
+      },
+      {
+       "sa": "प्रकृतिस्थानि",
+       "en": "situated in nature"
+      },
+      {
+       "sa": "कर्षति",
+       "en": "draws, pulls"
+      }
+     ],
+     "why": "You are a part of something eternal.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p15.2",
+      "title": "The individual soul",
+      "summary": "Each living being is an eternal part of Krishna, carrying mind and senses from body to body, seen only by the eye of wisdom.",
+      "story_hook": "",
+      "lesson": "You are a part of something eternal."
+     },
+     "score": 16.158,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The part of the divine that is you cannot be abandoned, because it is the eternal part that draws the mind and senses to itself. What stays with you is not a small thing.",
+     "try_today": "Notice when the mind draws to itself the memory of being left, and rest there for a moment.",
+     "scene_line": "You stand in your study, and the eternal part within you draws the mind and the senses that rest in nature.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.15.7",
+     "path": "bg.15.7 -heals-> glani",
+     "why": [
+      "no act removes that belonging",
+      "What you are is not small."
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.498",
+      "bg.9.29",
+      "up_kath.2.2.11"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.5.42.chaupai.2",
+     "ref": "Ramcharitmanas, Sundar Kand 5.42 (chaupai 2)",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 5.42",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Sugriva",
+     "setting": "Ram explains why he trusts the one who turns up at his door.",
+     "sanskrit": "पापवंत कर सहज सुभाऊ। भजनु मोर तेहि भाव न काऊ॥ जौं पै दुष्ट हृदय सोइ होई। मोरें सनमुख आव कि सोई ॥",
+     "line": "If they were truly wicked, would they have turned toward me at all?",
+     "translation": "It is the natural way of a sinner never to like worshipping me. If he were truly wicked at heart, would he come before me at all?",
+     "words": [
+      {
+       "sa": "पापवंत",
+       "en": "sinful"
+      },
+      {
+       "sa": "कर",
+       "en": "of"
+      },
+      {
+       "sa": "सहज",
+       "en": "natural"
+      },
+      {
+       "sa": "सुभाऊ",
+       "en": "nature"
+      },
+      {
+       "sa": "भजनु",
+       "en": "devotion"
+      },
+      {
+       "sa": "मोर",
+       "en": "my"
+      },
+      {
+       "sa": "तेहि",
+       "en": "to that"
+      },
+      {
+       "sa": "भाव",
+       "en": "pleases"
+      },
+      {
+       "sa": "न",
+       "en": "not"
+      },
+      {
+       "sa": "काऊ",
+       "en": "at all"
+      },
+      {
+       "sa": "जौं",
+       "en": "if"
+      },
+      {
+       "sa": "पै",
+       "en": "indeed"
+      },
+      {
+       "sa": "दुष्ट",
+       "en": "cruel, wicked"
+      },
+      {
+       "sa": "हृदय",
+       "en": "heart"
+      },
+      {
+       "sa": "सोइ",
+       "en": "that one"
+      },
+      {
+       "sa": "होई",
+       "en": "is"
+      },
+      {
+       "sa": "मोरें",
+       "en": "before me"
+      },
+      {
+       "sa": "सनमुख",
+       "en": "facing"
+      },
+      {
+       "sa": "आव",
+       "en": "comes"
+      },
+      {
+       "sa": "कि",
+       "en": "whether"
+      },
+      {
+       "sa": "सोई",
+       "en": "that one"
+      }
+     ],
+     "why": "The turning itself is enough to be taken in; your past is not the deciding question.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bhakti.vibhishan_refuge",
+      "title": "Vibhishan crosses over: Ram's refuge speech",
+      "summary": "Kicked out of Lanka for telling his brother the truth, Vibhishan crosses the sea to Ram, dreaming of his feet. Sugriva wants him bound as a spy; Ram says his vow is to remove the fear of anyone who comes for refuge, and if the visitor were truly wicked he would not have come at all. Ram embraces him, asks how he kept his goodness among the cruel, describes the devotee who ties every thread of love to him, and crowns him king, shyly giving what Ravana got for ten heads.",
+      "story_hook": "Kicked out by his own brother, a man stood on the far shore and wondered whether the enemy he was walking toward would let him in.",
+      "lesson": "The turning itself is enough to be taken in; your past is not the deciding question."
+     },
+     "score": 9.926,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel like you will never be loved without being abandoned. But the one who comes before Ram is not wicked of heart. Your reaching out is the proof of the goodness still in you.",
+     "try_today": "Notice the small act of turning toward someone today and see it as evidence.",
+     "scene_line": "You stand at the door, and the one who comes is not wicked of heart.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "rcm.5.42.chaupai.2",
+     "path": "rcm.5.42.chaupai.2 -heals-> glani",
+     "why": [
+      "the turning toward him is itself evidence of the heart",
+      "having come at all counts for him"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.8.all_right_long_run",
+      "rcm.7.69.chaupai.4",
+      "mbh.12.114.8"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_devi.9",
+     "ref": "Devi Upanishad 9",
+     "ref_iast": "Devī Upaniṣad 9",
+     "family": "up",
+     "speaker": "The gods",
+     "listener": "Devi",
+     "setting": "The gods' hymn to the Goddess, a verse shared with the Vedic Durga Suktam.",
+     "sanskrit": "तामग्निवर्णां तपसा ज्वलन्तीं वैरोचनीं कर्मफलेषु जुष्टाम् । दुर्गां देवीं शरणमहं प्रपद्ये सुतरां नाशयते तमः ॥",
+     "line": "I take refuge in Durga, the blazing Goddess. She clears away the darkness.",
+     "translation": "She who is fire-coloured, blazing with austerity, radiant, sought by those who act: in Durga, the Goddess, I take refuge. She utterly destroys the darkness.",
+     "words": [],
+     "why": "The Mother who is everything is also near enough to be called on in fear.",
+     "misuse": "Refuge in the Goddess is strength to face hardship, not a guarantee it will vanish.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.devi_who_are_you",
+      "title": "The gods ask the Goddess: who are you?",
+      "summary": "All the gods come to the Goddess and ask who she is. She answers that she is the highest reality, the source of nature and spirit. The gods bow, praise her as the Mother who protects on every side, and take refuge in her as Durga, who carries beings through hard places.",
+      "story_hook": "Even the gods did not know who she was, so one day they simply went and asked her.",
+      "lesson": "The Mother who is everything is also near enough to be called on in fear."
+     },
+     "score": 3.322,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "That feeling of being left is a heavy thing to carry while you are studying. The darkness of that hurt is real, but it is not the whole of you. You can let the light of your own strength clear a path through it today.",
+     "try_today": "Notice one small spark of light in your day.",
+     "scene_line": "As you sit with your books, you can feel the same fierce protection that the gods found in the blazing Goddess.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_devi.9",
+     "path": "up_devi.9 -cultivates-> tejas",
+     "why": [
+      "the refuge is fierce, and lends that fierceness"
+     ],
+     "writer_note": null,
+     "alts": [
+      "viv.2.strike_a_match",
+      "bg.9.34",
+      "rcm.4.8.chaupai.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:imported_doctrine_or_technique(breath)"
+     ]
+    }
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.1.58.chaupai.3",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 58",
+     "family": "rcm",
+     "speaker": "Shiva",
+     "listener": "Sati",
+     "setting": "Shiva, when Sati wants to attend her father's ceremony uninvited, where Shiva is resented.",
+     "sanskrit": "जदपि मित्र प्रभु पितु गुर गेहा। जाइअ बिनु बोलेहुँ न सँदेहा॥ तदपि बिरोध मान जहँ कोई। तहाँ गएँ कल्यानु न होई ॥",
+     "line": "You may visit family without an invitation. But where there is hostility toward you, going brings no good.",
+     "translation": "It is true that one may go uninvited to the home of a friend, a master, a father or a teacher. Yet where someone holds hostility toward you, no good comes of going there.",
+     "words": [
+      {
+       "sa": "जदपि",
+       "en": "although"
+      },
+      {
+       "sa": "मित्र",
+       "en": "friend"
+      },
+      {
+       "sa": "प्रभु",
+       "en": "lord"
+      },
+      {
+       "sa": "पितु",
+       "en": "father"
+      },
+      {
+       "sa": "गुर",
+       "en": "teacher"
+      },
+      {
+       "sa": "गेहा",
+       "en": "home"
+      },
+      {
+       "sa": "जाइअ",
+       "en": "one should go"
+      },
+      {
+       "sa": "बिनु बोलेहुँ",
+       "en": "without being called"
+      },
+      {
+       "sa": "न",
+       "en": "no"
+      },
+      {
+       "sa": "सँदेहा",
+       "en": "doubt"
+      },
+      {
+       "sa": "तदपि",
+       "en": "still"
+      },
+      {
+       "sa": "बिरोध",
+       "en": "hostility"
+      },
+      {
+       "sa": "मान",
+       "en": "feeling"
+      },
+      {
+       "sa": "जहँ",
+       "en": "where"
+      },
+      {
+       "sa": "कोई",
+       "en": "someone"
+      },
+      {
+       "sa": "तहाँ",
+       "en": "there"
+      },
+      {
+       "sa": "गएँ",
+       "en": "by going"
+      },
+      {
+       "sa": "कल्यानु",
+       "en": "good"
+      },
+      {
+       "sa": "न होई",
+       "en": "does not happen"
+      }
+     ],
+     "why": "You may go to family without an invitation, but not into open hostility; listen to that warning.",
+     "misuse": "Not a rule to cut off family; a caution about walking into known hostility.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.daksha_yajna",
+      "title": "Sati goes to her father's sacrifice uninvited",
+      "summary": "Sati's father Daksha holds a great sacrifice and invites everyone except Shiva and her. Shiva warns her that going where there is hostility brings no good, but she goes. Her father ignores her and insults her husband in front of everyone, and the visit ends in catastrophe.",
+      "story_hook": "The sky over Kailash filled with chariots heading to her father's feast, and none of them had come for her.",
+      "lesson": "You may go to family without an invitation, but not into open hostility; listen to that warning."
+     },
+     "score": 4.052,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You feel like love always leaves. You do not have to walk into a room that holds contempt for you. Your worth is not measured by who stays.",
+     "try_today": "Notice one place today that feels hostile and choose not to enter it.",
+     "scene_line": "You stand at the door of a family that already holds its anger toward you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "rcm.1.58.chaupai.3",
+     "path": "rcm.1.58.chaupai.3 -cultivates-> tejas",
+     "why": [
+      "self-respect may decline a room that holds contempt"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_taittiriya.53",
+      "yv.2.16.8",
+      "bh.niti.51"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(alone,anger,betwee,differ,enter)",
+      "practice:untraced_sentence(energy,free,presen,welcom)"
+     ]
+    }
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "tulsi.p.bhakti.tulsidas_life",
+     "title": "Tulsidas, the boy who begged for scraps",
+     "kind": "story",
+     "family": "tulsi_vp",
+     "characters": [
+      "Tulsidas",
+      "Ram",
+      "Hanuman"
+     ],
+     "story_hook": "The poet of the Ramcharitmanas began life as an unwanted child begging for scraps in the lanes.",
+     "summary": "Across his later works Tulsidas tells his own story: left by his parents at birth, he wandered door to door for scraps, no job, no trade, no skill, ignored by everyone. Good people told him not to worry; Hanuman raised him like a child; Ram's name, he says, turned a thorny babul into a mango tree. Even when he went astray, he was taken back.",
+     "lesson": "Where you start is not where you end; you can be taken in from nothing.",
+     "matched": [],
+     "anchor": null,
+     "score": 13.032,
+     "why": null,
+     "hook_title": "Tulsidas began life as an unwanted child begging for scraps",
+     "teaser": "Tulsidas began life as an unwanted child begging for scraps",
+     "for_you": "Someone left a mark that still aches. You do not have to carry it alone. One honest asking is enough.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.bhakti.tulsi_abandoned_as_a_child",
+     "path": "st.bhakti.tulsi_abandoned_as_a_child -enacts_in-> dainya, glani, shoka ; st.bhakti.tulsi_abandoned_as_a_child -enacts_turn-> shraddha ; st.bhakti.tulsi_abandoned_as_a_child -fits_situation-> self_worth",
+     "why": [
+      "Even the one whom parents and fate abandoned is taken in by the Name; asking once, honestly, is enough."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.rcm.bharat_at_prayag",
+      "st.mbh.drona_son_cries_for_milk",
+      "st.mbh.karna_visits_bhishma"
+     ],
+     "thin": false,
+     "story_id": "st.bhakti.tulsi_abandoned_as_a_child",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "Never truly separate",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w3_graph": 81,
+   "v3_w3_write": 12488,
+   "v3_w3_total": 12570,
+   "select": 12570,
+   "total": 12572
+  },
+  "_ms": 12576
+ }
+}

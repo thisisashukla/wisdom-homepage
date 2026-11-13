@@ -186,6 +186,36 @@ export function isRead(ch: number, vs: number): boolean {
   return getBit(load().bits, bitIndex(ch, vs))
 }
 
+/** Verse-order read flags for the whole Gita (index = order - 1), from one read of the store. */
+export function readFlags(): boolean[] {
+  const { bits } = load()
+  return Array.from({ length: TOTAL_VERSES }, (_, i) => getBit(bits, i))
+}
+
+/** Mark every verse in chapter `ch` from `from` to `to` as read, in one write. Returns how many were new. */
+export function markRangeRead(ch: number, from: number, to: number): number {
+  if (!storage()) return 0
+  const { store, bits } = load()
+  const next = new Uint8Array(bits)
+  let added = 0
+  for (let vs = from; vs <= to; vs++) {
+    const i = bitIndex(ch, vs)
+    if (i < 0 || getBit(next, i)) continue
+    next[i >> 3] |= 1 << (i & 7)
+    added++
+  }
+  if (added) save({ ...store, read: encodeBits(next) })
+  return added
+}
+
+/** Verses read in chapter `ch` from `from` to `to`. */
+export function rangeReadCount(ch: number, from: number, to: number): number {
+  const a = bitIndex(ch, from)
+  const b = bitIndex(ch, to)
+  if (a < 0 || b < 0) return 0
+  return popcount(load().bits, a, b + 1)
+}
+
 /** Verses read across the whole Gita. */
 export function readCount(): number {
   return popcount(load().bits)

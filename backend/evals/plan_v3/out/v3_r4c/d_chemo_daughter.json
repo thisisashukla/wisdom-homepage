@@ -1,0 +1,2553 @@
+{
+ "case": "d_chemo_daughter",
+ "method": "v3",
+ "hook": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm burned out and running on empty",
+   "mirror": "I'm burned out and running on empty",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm burned out and running on empty. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a warrior or servant doing hard duty, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to \"I'm burned out and running on empty\" and \"Someone I love is seriously ill\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance_inferred:str=0.5,asp=0.0,wro=0.15,see=0.0",
+    "engine:v3",
+    "fast_read:fixed",
+    "fr:pick:blocked_for_stance",
+    "fr:alt:blocked_for_stance",
+    "fr:pick:graph_default",
+    "fast_read:wronged_unsupported",
+    "fast_read:risk_ignored:distress",
+    "day1:model_pick",
+    "first_line:first_line"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "glani",
+     "shrama",
+     "viraha"
+    ],
+    "risk": "none",
+    "situations": [
+     "burnout",
+     "illness_family",
+     "fear_death"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "threat": true,
+    "caste_ok": false,
+    "health": true,
+    "pick": "rcm.5.6.chaupai.1"
+   }
+  },
+  "hook": {
+   "id": "rcm.5.6.chaupai.1",
+   "ref": "Ramcharitmanas · Sundar Kand",
+   "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+   "family": "rcm",
+   "speaker": "Vibhishan",
+   "listener": "Hanuman",
+   "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+   "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+   "line": "I live here like the tongue among the teeth.",
+   "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+   "words": [
+    {
+     "sa": "सुनहु",
+     "en": "listen"
+    },
+    {
+     "sa": "पवनसुत",
+     "en": "son of the wind"
+    },
+    {
+     "sa": "रहनि",
+     "en": "way of living"
+    },
+    {
+     "sa": "हमारी",
+     "en": "my"
+    },
+    {
+     "sa": "जिमि",
+     "en": "like"
+    },
+    {
+     "sa": "दसनन्हि",
+     "en": "teeth"
+    },
+    {
+     "sa": "महुँ",
+     "en": "within"
+    },
+    {
+     "sa": "जीभ",
+     "en": "tongue"
+    },
+    {
+     "sa": "बिचारी",
+     "en": "poor, helpless"
+    },
+    {
+     "sa": "तात",
+     "en": "friend"
+    },
+    {
+     "sa": "कबहुँ",
+     "en": "ever"
+    },
+    {
+     "sa": "मोहि",
+     "en": "me"
+    },
+    {
+     "sa": "जानि",
+     "en": "knowing"
+    },
+    {
+     "sa": "अनाथा",
+     "en": "helpless, without a protector"
+    },
+    {
+     "sa": "करिहहिं",
+     "en": "will do"
+    },
+    {
+     "sa": "कृपा",
+     "en": "grace"
+    },
+    {
+     "sa": "भानुकुल",
+     "en": "solar line"
+    },
+    {
+     "sa": "नाथा",
+     "en": "Lord"
+    }
+   ],
+   "why": "Even in a hostile place there may be one ally; find them.",
+   "misuse": "",
+   "tone": "reflective",
+   "matched": [],
+   "prasang": {
+    "id": "rcm.p.vibhishan_hanuman",
+    "title": "Hanuman finds a friend in Lanka",
+    "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+    "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+    "lesson": "Even in a hostile place there may be one ally; find them."
+   },
+   "score": 1.0,
+   "beat": "hook",
+   "role_fit": 1.0,
+   "meaning": null,
+   "for_you": "Your mind won't settle, and a verse was chosen with that weight in mind.",
+   "try_today": null,
+   "scene_line": null,
+   "asks": [],
+   "first_line": "Your mind won't settle, and a verse was chosen with that weight in mind.",
+   "first_line_source": "chip"
+  },
+  "alternates": [
+   {
+    "id": "yv.1.31.17",
+    "ref": "Yoga Vasishtha",
+    "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 31.17",
+    "family": "yv",
+    "speaker": "Rama",
+    "listener": "Vasishtha and Vishvamitra",
+    "setting": "Rama, ending his questions, asks for one practical skill.",
+    "sanskrit": "व्यवहारवतो युक्त्या दुःखं नायाति मे यया । अथवा व्यवहारस्य ब्रूत तां युक्तिमुत्तमाम् ॥",
+    "line": "Teach me how to keep working in the world without the work filling me with sorrow.",
+    "translation": "Tell me the skill by which sorrow doesn't come to me while I go about my work, or else tell me the best way of dealing with life itself.",
+    "words": [],
+    "why": "The real question isn't whether to quit life, but how to live it without being swallowed.",
+    "misuse": "",
+    "tone": "steadying",
+    "matched": [
+     {
+      "id": "burnout",
+      "label": "I'm burned out and running on empty"
+     }
+    ],
+    "prasang": {
+     "id": "yv.p.ram_questions",
+     "title": "Rama asks how to live in the world without being crushed by it",
+     "summary": "After his lament Rama turns to questions. How did King Janaka and others stay free while running kingdoms? How can a person work in the world untouched, like water on a lotus leaf? He asks for one practical skill that lets him work without sorrow.",
+     "story_hook": "Having said what was wrong, Rama finally asked the question that matters: how do the wise do it?",
+     "lesson": "The real question isn't whether to quit life, but how to live it without being swallowed."
+    },
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   },
+   {
+    "id": "rcm.2.225.chaupai.3",
+    "ref": "Ramcharitmanas, Ayodhya Kand 2.225 (chaupai 3)",
+    "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.225",
+    "family": "rcm",
+    "speaker": "Tulsidas",
+    "listener": "the reader",
+    "setting": "Bharat walks toward Ram, slowed by shame, quickened by love.",
+    "sanskrit": "फेरति मनहुँ मातु कृत खोरी। चलत भगति बल धीरज धोरी॥ जब समुझत रघुनाथ सुभाऊ। तब पथ परत उताइल पाऊ ॥",
+    "line": "Shame slowed him. But whenever he remembered Ram's nature, his feet moved faster.",
+    "translation": "It was as if his mother's wrong held him back, while the strength of devotion drove him on like a patient ox. Whenever he remembered Raghunath's nature, his feet moved faster on the path.",
+    "words": [
+     {
+      "sa": "फेरति",
+      "en": "turns back"
+     },
+     {
+      "sa": "मनहुँ",
+      "en": "as if"
+     },
+     {
+      "sa": "मातु",
+      "en": "mother"
+     },
+     {
+      "sa": "कृत",
+      "en": "done"
+     },
+     {
+      "sa": "खोरी",
+      "en": "wrong"
+     },
+     {
+      "sa": "चलत",
+      "en": "while moving"
+     },
+     {
+      "sa": "भगति",
+      "en": "devotion"
+     },
+     {
+      "sa": "बल",
+      "en": "strength"
+     },
+     {
+      "sa": "धीरज",
+      "en": "patience"
+     },
+     {
+      "sa": "धोरी",
+      "en": "bearer"
+     },
+     {
+      "sa": "जब",
+      "en": "when"
+     },
+     {
+      "sa": "रघुनाथ",
+      "en": "Raghunath"
+     },
+     {
+      "sa": "सुभाऊ",
+      "en": "nature"
+     },
+     {
+      "sa": "तब",
+      "en": "then"
+     },
+     {
+      "sa": "पथ",
+      "en": "path"
+     },
+     {
+      "sa": "परत",
+      "en": "falling"
+     },
+     {
+      "sa": "उताइल",
+      "en": "quickened"
+     },
+     {
+      "sa": "पाऊ",
+      "en": "feet"
+     }
+    ],
+    "why": null,
+    "misuse": "",
+    "tone": "challenging",
+    "matched": [],
+    "prasang": null,
+    "score": 0.5,
+    "beat": "hook",
+    "role_fit": 1.0,
+    "meaning": null,
+    "for_you": null,
+    "try_today": null,
+    "scene_line": null,
+    "asks": []
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "library": {
+   "verses": 1743,
+   "prasangs": 462,
+   "texts": 14
+  },
+  "timings_ms": {
+   "v3_note_match": 207,
+   "v3_candidates": 49,
+   "v3_fast_read": 1460,
+   "v3_select": 1720,
+   "v3_first_line": 1471,
+   "v3_total": 3191,
+   "total": 3192
+  },
+  "_ms": 3195
+ },
+ "w1": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm burned out and running on empty",
+   "mirror": "I'm burned out and running on empty",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm burned out and running on empty. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a warrior or servant doing hard duty, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to burned out and running on empty\" and I love is seriously ill\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "v3:for_you:7/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "glani",
+     "shrama",
+     "viraha"
+    ],
+    "risk": "none",
+    "situations": [
+     "burnout",
+     "illness_family",
+     "fear_death"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "threat": true,
+    "caste_ok": false,
+    "health": true,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.5.6.chaupai.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 6",
+     "family": "rcm",
+     "speaker": "Vibhishan",
+     "listener": "Hanuman",
+     "setting": "Vibhishan, Ravana's good-hearted brother, describes his life in Ravana's court.",
+     "sanskrit": "सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥ तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा ॥",
+     "line": "I live here like the tongue among the teeth.",
+     "translation": "Son of the wind, hear how I live: like the poor tongue among the teeth. Friend, knowing me to be without support, will the Lord of the Sun dynasty ever show me grace?",
+     "words": [
+      {
+       "sa": "सुनहु",
+       "en": "listen"
+      },
+      {
+       "sa": "पवनसुत",
+       "en": "son of the wind"
+      },
+      {
+       "sa": "रहनि",
+       "en": "way of living"
+      },
+      {
+       "sa": "हमारी",
+       "en": "my"
+      },
+      {
+       "sa": "जिमि",
+       "en": "like"
+      },
+      {
+       "sa": "दसनन्हि",
+       "en": "teeth"
+      },
+      {
+       "sa": "महुँ",
+       "en": "within"
+      },
+      {
+       "sa": "जीभ",
+       "en": "tongue"
+      },
+      {
+       "sa": "बिचारी",
+       "en": "poor, helpless"
+      },
+      {
+       "sa": "तात",
+       "en": "friend"
+      },
+      {
+       "sa": "कबहुँ",
+       "en": "ever"
+      },
+      {
+       "sa": "मोहि",
+       "en": "me"
+      },
+      {
+       "sa": "जानि",
+       "en": "knowing"
+      },
+      {
+       "sa": "अनाथा",
+       "en": "helpless, without a protector"
+      },
+      {
+       "sa": "करिहहिं",
+       "en": "will do"
+      },
+      {
+       "sa": "कृपा",
+       "en": "grace"
+      },
+      {
+       "sa": "भानुकुल",
+       "en": "solar line"
+      },
+      {
+       "sa": "नाथा",
+       "en": "Lord"
+      }
+     ],
+     "why": "Even in a hostile place there may be one ally; find them.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vibhishan_hanuman",
+      "title": "Hanuman finds a friend in Lanka",
+      "summary": "Searching Lanka, Hanuman is surprised to find a house with Ram's name on it. Its owner, Vibhishan, Ravana's brother, says he lives in Lanka like a tongue among teeth. Hanuman tells him even a restless monkey like himself was given Ram's love.",
+      "story_hook": "In a city of demons, Hanuman heard someone wake up and say Ram's name.",
+      "lesson": "Even in a hostile place there may be one ally; find them."
+     },
+     "score": 8.08,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You move between the hospital, the office, and home alone. That tongue among the teeth cannot rest. You carry a heavy weight, and it is not yours to carry alone.",
+     "try_today": "Notice one moment today when you are not holding the weight.",
+     "scene_line": "You wait among the teeth of duty, wondering if grace will reach you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "rcm.5.6.chaupai.1",
+     "path": "Day 1 kept from the first screen (rcm.2.225.chaupai.3 was the graph's own)",
+     "why": [],
+     "writer_note": null,
+     "alts": [
+      "yv.1.31.17",
+      "ashtavakra.18.3",
+      "yv.5.66.34"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:names_treatment(chemo)"
+     ]
+    }
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.11.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 11.6",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "his own mind",
+     "setting": "Janaka, having chosen to keep ruling, talks gently to his own restless mind at night.",
+     "sanskrit": "यथा यथा विकल्पौघान्संकल्पयसि हेलया । तथा तथैति स्फारत्वं संसारस्तव चिन्तया ॥",
+     "line": "The more scenarios you spin, the bigger your world of worry grows.",
+     "translation": "The more you casually spin up fancies and possibilities, the more your world of troubles swells, through your own worrying.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 7.306,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are moving between the hospital and the office, and the worry grows because of the mind that keeps spinning. The scenarios are not the truth; they are only the mind's own swelling. Let the mind rest for a moment, and the room will feel smaller, and lighter.",
+     "try_today": "Notice when the mind spins a scenario, and name it as just the mind spinning.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "yv.5.11.6",
+     "path": "yv.5.11.6 -states_chain-> yv.worry_fed_by_thought [sankalpa_kalpana -causes-> chinta]",
+     "why": [
+      "Worry grows when you feed it (Yoga Vasishtha 5.21.6)",
+      "the swelling is traced to the spinning, which can be stopped"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.489",
+      "up_maitrayani.78",
+      "mbh.12.27.12"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person",
+      "audio_open:names_treatment(chemo)"
+     ]
+    }
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "words": [
+      {
+       "sa": "अनन्याः",
+       "en": "exclusive"
+      },
+      {
+       "sa": "चिन्तयन्तः",
+       "en": "thinking"
+      },
+      {
+       "sa": "माम्",
+       "en": "me"
+      },
+      {
+       "sa": "ये",
+       "en": "those who"
+      },
+      {
+       "sa": "जनाः",
+       "en": "people"
+      },
+      {
+       "sa": "पर्युपासते",
+       "en": "worship"
+      },
+      {
+       "sa": "तेषाम्",
+       "en": "of them"
+      },
+      {
+       "sa": "नित्याभियुक्तानाम्",
+       "en": "always attached"
+      },
+      {
+       "sa": "योगक्षेमम्",
+       "en": "well-being and protection"
+      },
+      {
+       "sa": "वहामि",
+       "en": "I carry"
+      },
+      {
+       "sa": "अहम्",
+       "en": "I"
+      }
+     ],
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 13.392,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is running between the hospital and the office. The weight of holding both is heavy. You do not have to carry the lack alone.",
+     "try_today": "Notice one moment when you let the outcome rest.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "bg.9.22",
+     "path": "bg.9.22 -heals-> chinta via sharanagati",
+     "why": [
+      "The child relies on the mother and stops worrying.",
+      "the worry of getting and keeping is carried by God for the one wholly turned to him"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.4.4.chaupai.2",
+      "viv.4.no_winter",
+      "bg.2.48"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "viv.1.duty_disease",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Karma-Yoga class, New York",
+     "setting": "Karma-Yoga classes, New York, 1895–96, chapter 7, on 'slaves to duty'.",
+     "sanskrit": null,
+     "line": "Be at rest, be free, and work.",
+     "translation": "Duty becomes a disease with us; it drags us ever forward. … They come home and think of the work for the next day. … Be at rest, be free, and work.",
+     "words": [],
+     "why": "Be at rest, be free, and work.",
+     "misuse": "Not permission to drop real responsibilities; it is about working without compulsion.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "viv.p.karma_yoga.freedom",
+      "title": "Karma-Yoga 7: freedom",
+      "summary": "Misery comes from attachment, not work. He attacks duty that has become a compulsion and asks for work done freely. The greatest people often die unknown, so seek no praise.",
+      "story_hook": "",
+      "lesson": "Be at rest, be free, and work."
+     },
+     "score": 8.24,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are not a machine that must run until it breaks. The night is for rest, not for survival rates. Be at rest, be free, and work.",
+     "try_today": "Notice when work follows you into the night, and choose to leave it there.",
+     "scene_line": "You run between the hospital, the office, and home, while duty waits for no one.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "viv.1.duty_disease",
+     "path": "viv.1.duty_disease -heals-> chinta",
+     "why": [
+      "rest is put before work in the sentence",
+      "the compulsion is called a disease, which means one can get well"
+     ],
+     "writer_note": null,
+     "alts": [
+      "yv.6a.26.18",
+      "ashtavakra.18.98",
+      "viv.2.remedy_weakness"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_devi.25",
+     "ref": "Devi Upanishad 25",
+     "ref_iast": "Devī Upaniṣad 25",
+     "family": "up",
+     "speaker": "The gods",
+     "listener": "Devi",
+     "setting": "Part of the closing hymn to the Goddess.",
+     "sanskrit": "नमामि त्वामहं देवीं महाभयविनाशिनीम् । महादुर्गप्रशमनीं महाकारुण्यरूपिणीम् ॥",
+     "line": "I bow to you, Goddess: you end great fear, you ease great hardship, you are compassion itself.",
+     "translation": "I bow to you, Goddess, destroyer of great fear, who calms great hardship, whose very form is great compassion.",
+     "words": [],
+     "why": "The Mother who is everything is also near enough to be called on in fear.",
+     "misuse": "Praise of the Goddess's compassion, not a promise that hardship will disappear; seek practical help too.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.devi_who_are_you",
+      "title": "The gods ask the Goddess: who are you?",
+      "summary": "All the gods come to the Goddess and ask who she is. She answers that she is the highest reality, the source of nature and spirit. The gods bow, praise her as the Mother who protects on every side, and take refuge in her as Durga, who carries beings through hard places.",
+      "story_hook": "Even the gods did not know who she was, so one day they simply went and asked her.",
+      "lesson": "The Mother who is everything is also near enough to be called on in fear."
+     },
+     "score": 3.951,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are moving between the hospital, the office, and home alone, and at three in the morning you search for survival rates. This is the great fear that keeps circling, and it is exhausting you. You do not have to carry it by yourself.",
+     "try_today": null,
+     "scene_line": "You run between the hospital and the office, and the Goddess is the one who carries you through these hard places.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "up_devi.25",
+     "path": "up_devi.25 -cultivates-> abhaya",
+     "why": [
+      "courage borrowed from the one bowed to"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_shwetashwetar.3.5",
+      "viv.1.wait_and_watch",
+      "up_maha.532"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_close": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "practice:imported_doctrine_or_technique(breath)",
+      "audio_open:names_treatment(chemo)",
+      "practice:untraced_sentence(fix,presen,simp,trying,withou)"
+     ]
+    }
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.136.1",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 136.1",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "नैव राज्ञा दरः कार्यो जातु कस्यांचिदापदि / अथ चेदपि दीर्णः स्यान्नैव वर्तेत दीर्णवत्",
+     "line": "In a crisis, you may be shaken inside. Don't let fear make your decisions for you.",
+     "translation": "A leader should never show fear in any crisis. Even if shaken inside, he should not act like a shaken man.",
+     "words": [],
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "This is about not acting from panic, not about hiding your feelings from everyone.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 4.201,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mother's treatment began last month, and you are moving between the hospital, the office, and home alone. You are exhausted, and worry circles back to you at 3am. It is not weakness to feel shaken by all of this. You do not have to let fear make your decisions today.",
+     "try_today": "Notice one decision today that fear did not make.",
+     "scene_line": "Queen Vidula watches Sanjaya rise from defeat, and so you watch your own feet move forward.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "mbh.5.136.1",
+     "path": "mbh.5.136.1 -cultivates-> abhaya",
+     "why": [
+      "Bearing of fearlessness",
+      "Courage and steadiness are the wheels of the chariot that wins; do not let fear decide."
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "rcm.6.19.doha.1",
+      "yv.2.16.8",
+      "rcm.5.4.chaupai.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(dawn,heavy,house,midnig)"
+     ]
+    }
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhushunda",
+     "title": "Bhushunda, the crow who outlived the ages",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhushunda",
+      "Vasishtha"
+     ],
+     "story_hook": "High on a mountain lived a crow who had watched whole ages of the world rise and fall.",
+     "summary": "Vasishtha travels to a wish-fulfilling tree on Mount Meru to meet Bhushunda, a crow who has watched world-ages come and go. Asked how he has lived so long, untroubled, Bhushunda lists his habits: he doesn't brood on the past or future, doesn't fret about what he'll get next, doesn't grow arrogant from knowing, and shares in others' joys and sorrows.",
+     "lesson": "A long, steady life comes from a mind that stays in the present, wants little and stays kind.",
+     "matched": [],
+     "anchor": null,
+     "score": 10.202,
+     "why": null,
+     "hook_title": "An old crow had watched whole ages of the world rise and fall, untroubled",
+     "teaser": "An old crow had watched whole ages of the world rise and fall, untroubled",
+     "for_you": "You are driving between the hospital and the office, and at three in the morning you search for survival rates. The mind will not settle. It is not burned by worries about what has happened or what may come. Let the breath be the only thing that holds your attention right now.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.yv.bhushunda_the_old_crow",
+     "path": "st.yv.bhushunda_the_old_crow -enacts_in-> bhaya, chinta ; st.yv.bhushunda_the_old_crow -enacts_turn-> abhaya, shanti ; st.yv.bhushunda_the_old_crow -fits_situation-> fear_death",
+     "why": [
+      "Death and fear find little hold on the one who watches the breath and is not burned by worries about past and future."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.mbh.markandeya_finds_the_child",
+      "st.vr.ram_exhausted_before_the_last_fight",
+      "st.viv.boy_gopala_and_his_mother"
+     ],
+     "thin": false,
+     "story_id": "st.yv.bhushunda_the_old_crow",
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person",
+      "audio_open:names_treatment(chemo)",
+      "audio_close:long(23)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When the outcome holds you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w1_graph": 62,
+   "v3_w1_write": 7525,
+   "v3_w1_total": 7588,
+   "select": 7588,
+   "total": 7590
+  },
+  "_ms": 7594
+ },
+ "w2": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm burned out and running on empty",
+   "mirror": "I'm burned out and running on empty",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm burned out and running on empty. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a warrior or servant doing hard duty, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to burned out and running on empty\" and I love is seriously ill\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "v3:no_line_swap:D2_see_why:bg.2.67->bg.2.60:no personal line passed the checker",
+    "v3:for_you:4/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "glani",
+     "shrama",
+     "viraha"
+    ],
+    "risk": "none",
+    "situations": [
+     "burnout",
+     "illness_family",
+     "fear_death"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "threat": true,
+    "caste_ok": false,
+    "health": true,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 8,
+    "day_in_week": 1,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "words": [],
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 9.218,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You run between the hospital, the office, and home alone. Your mind is caught in a net of reckonings, and it is fainting under the weight. Let the bird of your mind rest, even for a moment.",
+     "try_today": "Notice the next time your mind faints from a list of tasks.",
+     "scene_line": "As you sit in the quiet of the night, the bird of your mind is tangled in a net of reckonings.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "yv.5.66.34",
+     "path": "yv.5.66.34 -depicts-> chinta (spoken by Bhasa)",
+     "why": [
+      "its depths dance with worry",
+      "caught in a net of done, doing, to do"
+     ],
+     "writer_note": null,
+     "alts": [
+      "bg.11.24",
+      "mbh.3.314.61",
+      "ashtavakra.18.3"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 9,
+    "day_in_week": 2,
+    "week": 2,
+    "level": "pattern",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.60",
+     "ref": "Bhagavad Gita 2.60",
+     "ref_iast": "Bhagavad Gītā 2.60",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः । इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ॥",
+     "line": "Even a wise, striving person can be dragged off by restless senses. Don't be surprised; be ready.",
+     "translation": "The turbulent senses forcibly carry away the mind even of a wise person who is striving, Arjuna.",
+     "words": [
+      {
+       "sa": "यततः",
+       "en": "for one striving"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "अपि",
+       "en": "even"
+      },
+      {
+       "sa": "कौन्तेय",
+       "en": "O son of Kunti"
+      },
+      {
+       "sa": "पुरुषस्य",
+       "en": "of a person"
+      },
+      {
+       "sa": "विपश्चितः",
+       "en": "of the wise"
+      },
+      {
+       "sa": "इन्द्रियाणि",
+       "en": "the senses"
+      },
+      {
+       "sa": "प्रमाथीनि",
+       "en": "restless, turbulent"
+      },
+      {
+       "sa": "हरन्ति",
+       "en": "carry away"
+      },
+      {
+       "sa": "प्रसभं",
+       "en": "forcibly"
+      },
+      {
+       "sa": "मनः",
+       "en": "the mind"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 0.0,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": null,
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.2.60",
+     "path": "D2_see_why: alternate for bg.2.67 (no personal line passed the checker)",
+     "why": [],
+     "writer_note": null,
+     "alts": [],
+     "thin": false,
+     "swapped_from": "bg.2.67",
+     "personal_source": {},
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 10,
+    "day_in_week": 3,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.4.4.chaupai.2",
+     "ref": "Ramcharitmanas, Kishkindha Kand 4.4 (chaupai 2)",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 4.4",
+     "family": "rcm",
+     "speaker": "Hanuman",
+     "listener": "Ram",
+     "setting": "Hanuman explains why he relies on Ram alone.",
+     "sanskrit": "ता पर मैं रघुबीर दोहाई। जानउँ नहिं कछु भजन उपाई॥ सेवक सुत पति मातु भरोसें। रहइ असोच बनइ प्रभु पोसें ॥",
+     "line": "A child relies on its mother and stops worrying; she has to look after it.",
+     "translation": "And on top of that, I swear by Raghubir, I know no method of worship. A servant relies on his master, a child on its mother, and lives free of worry; the master has to look after him.",
+     "words": [
+      {
+       "sa": "ता पर",
+       "en": "then upon that"
+      },
+      {
+       "sa": "मैं",
+       "en": "I"
+      },
+      {
+       "sa": "रघुबीर",
+       "en": "Raghubir"
+      },
+      {
+       "sa": "दोहाई",
+       "en": "appeal; oath"
+      },
+      {
+       "sa": "जानउँ नहिं",
+       "en": "I do not know"
+      },
+      {
+       "sa": "कछु",
+       "en": "any"
+      },
+      {
+       "sa": "भजन",
+       "en": "devotion; worship"
+      },
+      {
+       "sa": "उपाई",
+       "en": "means; way) ॥ सेवक (servant"
+      },
+      {
+       "sa": "सुत",
+       "en": "son"
+      },
+      {
+       "sa": "पति",
+       "en": "master; husband"
+      },
+      {
+       "sa": "मातु",
+       "en": "mother"
+      },
+      {
+       "sa": "भरोसें",
+       "en": "in trust; relying"
+      },
+      {
+       "sa": "रहइ",
+       "en": "remains"
+      },
+      {
+       "sa": "असोच",
+       "en": "free from worry"
+      },
+      {
+       "sa": "बनइ",
+       "en": "is fitting; is right"
+      },
+      {
+       "sa": "प्रभु",
+       "en": "Lord; master"
+      },
+      {
+       "sa": "पोसें",
+       "en": "by sustaining; by nurturing"
+      }
+     ],
+     "why": "You don't need the right method; being his is enough, and he weeps to have you back.",
+     "misuse": "Surrender here comes after effort and honest reflection; it is not a reason to stop acting or to stay in harm's way.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.bhakti.hanuman_meets_ram",
+      "title": "Hanuman meets Ram",
+      "summary": "Sent by a frightened Sugriva, Hanuman goes disguised as a brahmin to question two strangers. When Ram names himself, Hanuman recognises his Lord, falls at his feet speechless, then gently complains that Ram forgot him. He says he knows no method of worship and relies on Ram as a child relies on its mother. Ram lifts him up, holds him, cools him with his own tears, and tells him he is twice as dear as Lakshman.",
+      "story_hook": "On a mountain path, a monkey in disguise asked two strangers who they were, and then forgot how to speak.",
+      "lesson": "You don't need the right method; being his is enough, and he weeps to have you back."
+     },
+     "score": 8.768,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You carry the weight of the hospital, the office, and the quiet house alone. The mind keeps circling the numbers it finds. You do not need a method to rest. You can let the one you trust look after you, as a child does with its mother.",
+     "try_today": "Let her look after you.",
+     "scene_line": "Like a child that stops worrying, you let Ram look after you while you rest in the waiting room.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "rcm.4.4.chaupai.2",
+     "path": "rcm.4.4.chaupai.2 -heals-> chinta via sharanagati",
+     "why": [
+      "The child relies on the mother and stops worrying.",
+      "the one relied on has to do the looking after"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_chhandogya.492",
+      "mbh.12.104.57",
+      "viv.4.no_winter"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "practice:untraced_sentence(manage,outcom,trust,trying)"
+     ]
+    }
+   },
+   {
+    "day": 11,
+    "day_in_week": 4,
+    "week": 2,
+    "level": "pattern",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.5.12.14",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.14",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha describes King Janaka after his awakening, still ruling his kingdom.",
+     "sanskrit": "भविष्यं नानुसंधत्ते नातीतं चिन्तयत्यसौ । वर्तमाननिमेषं तु हसन्नेवानुवर्तते ॥",
+     "line": "Don't chase the future or brood on the past. Meet this moment with a smile.",
+     "translation": "He does not chase the future or brood on the past; he simply goes along with the present moment, smiling.",
+     "words": [],
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 9.094,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice one thing in the room you are currently in.",
+     "scene_line": "You walk the hospital halls, and the mind smiles at the floor beneath your feet.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "yv.5.12.14",
+     "path": "yv.5.12.14 -heals-> chinta via c:vartamana",
+     "why": [
+      "Do not chase the future or brood on the past.",
+      "a picture of a mind not living ahead or behind"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_maha.536",
+      "yv.6a.26.18",
+      "ashtavakra.18.61"
+     ],
+     "thin": false,
+     "personal_source": {
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(is not meant to be a search engine for survival rates a",
+      "for_you:untraced_sentence(engine,morn,search,three)",
+      "scene_line:not_second_person",
+      "for_you:verdict(You are not failing)"
+     ]
+    }
+   },
+   {
+    "day": 12,
+    "day_in_week": 5,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.176.67",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 176.67",
+     "family": "mbh",
+     "speaker": "Bodhya",
+     "listener": "King Yayati (son of Nahusha)",
+     "setting": "Bodhya describes another of his teachers to King Yayati: an arrow-maker lost in his work.",
+     "sanskrit": "इषुकारो नरः कश्चिदिषावासक्तमानसः / समीपेनापि गच्छन्तं राजानं नावबुद्धवान्",
+     "line": "An arrow-maker was so absorbed in his work, he didn't notice the king walking past.",
+     "translation": "A certain arrow-maker was so absorbed in his arrow that he did not even notice the king passing right beside him.",
+     "words": [],
+     "why": "Learn from everything. Drop what makes you a target, and give your work full attention.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.bodhya",
+      "title": "Bodhya's teachers",
+      "summary": "Asked how he found peace, the sage Bodhya names his teachers: Pingala, the osprey that dropped its scrap of meat and was left alone, the snake, the deer, the arrow-maker so absorbed he did not see the king pass, and a girl's bangle.",
+      "story_hook": "",
+      "lesson": "Learn from everything. Drop what makes you a target, and give your work full attention."
+     },
+     "score": 3.915,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is fixed on survival rates at three in the morning. The arrow-maker did not see the king pass. Let your hands find one thing to do, and let the rest pass by.",
+     "try_today": "Notice one small task without looking up until it is finished.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "mbh.12.176.67",
+     "path": "mbh.12.176.67 -cultivates-> shanti",
+     "why": [
+      "Absorption as rest from distraction",
+      "Single-pointed attention to the work in hand"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "viv.1.wait_and_watch",
+      "bg.17.16",
+      "bg.6.25"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person",
+      "scene_line:contrast_pattern(, not the)"
+     ]
+    }
+   },
+   {
+    "day": 13,
+    "day_in_week": 6,
+    "week": 2,
+    "level": "pattern",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "words": [],
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.89,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Let the next hour arrive without planning it.",
+     "scene_line": "You sit in the waiting room with your mother and the mind asks why you wander.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "bh.vairagya.62",
+     "path": "bh.vairagya.62 -cultivates-> shanti",
+     "why": [
+      "Vishramyatam",
+      "Enjoying what arrives unplanned"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.6.19.doha.1",
+      "yv.2.16.8",
+      "rcm.5.4.chaupai.1"
+     ],
+     "thin": false,
+     "personal_source": {
+      "audio_open": "model",
+      "audio_close": "model",
+      "practice": "model",
+      "scene_line": "model"
+     },
+     "personal_issues": [
+      "for_you:verdict(It is not your fault)",
+      "for_you:blames_them_for_the_event(your fault)",
+      "practice:imported_doctrine_or_technique(breath)",
+      "scene_line:not_second_person",
+      "for_you:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 14,
+    "day_in_week": 7,
+    "week": 2,
+    "level": "pattern",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.bhakti.kabir_slowly_mind",
+     "title": "Kabir to his own restless mind: slowly, slowly",
+     "kind": "story",
+     "family": "kabir",
+     "characters": [
+      "Kabir"
+     ],
+     "story_hook": "The gardener can pour a hundred pots of water. The mango still waits for its season.",
+     "summary": "The mind wants the result now. Kabir talks to it the way a gardener would.",
+     "lesson": "Water faithfully; the fruit comes in its season, not because you poured more.",
+     "matched": [],
+     "anchor": null,
+     "score": 9.86,
+     "why": null,
+     "hook_title": null,
+     "teaser": "The gardener can pour a hundred pots of water. The mango still waits for its season.",
+     "for_you": "Your mind is pouring water without end between the hospital, the office, and the house. The fruit of the season is not in the number of pots you pour. The season will decide its own timing.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.bhakti.kabir_slowly_mind",
+     "path": "st.bhakti.kabir_slowly_mind -enacts_in-> chanchalya, chinta ; st.bhakti.kabir_slowly_mind -enacts_turn-> dhriti, santosha, shanti",
+     "why": [
+      "Water faithfully; the fruit comes in its season, not because you poured more."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.vr.ram_exhausted_before_the_last_fight",
+      "st.yv.uddalaka_restless_meditation",
+      "st.mbh.markandeya_finds_the_child"
+     ],
+     "thin": false,
+     "story_id": "st.bhakti.kabir_slowly_mind",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:names_treatment(chemo)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 2,
+    "title": "Effort without the grip",
+    "level": "pattern",
+    "level_label": "The pattern underneath",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w2_graph": 71,
+   "v3_w2_write": 9833,
+   "v3_w2_total": 9905,
+   "select": 9906,
+   "total": 9907
+  },
+  "_ms": 9911
+ },
+ "w3": {
+  "understanding": {
+   "version": 1,
+   "source": "client",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "my mind won't settle",
+   "bridge": "What you are living with is what the texts call holding on to how it turns out, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "I'm burned out and running on empty",
+   "mirror": "I'm burned out and running on empty",
+   "insight": "The tiredness comes from needing the work to turn out a certain way before you let yourself rest.",
+   "mechanism": "attachment_to_results",
+   "mechanism_label": "Holding on to how it turns out",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.9,
+     "source": "profile"
+    },
+    {
+     "id": "fear_death",
+     "label": "I'm afraid of death",
+     "weight": 0.8,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.8,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.7,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I'm burned out and running on empty. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "The mind suffers when it clings to results it cannot control; gripping the outcome turns honest effort into anxiety.",
+    "steady": "Your part is the effort, not the outcome; work done well is already complete, whatever result comes.",
+    "act": "Do your work fully and well, then let the result go; your part is the effort, not the fruit.",
+    "story": "A story of a warrior or servant doing hard duty, facing holding on to how it turns out."
+   },
+   "query_sources": {
+    "hook": "client",
+    "diagnose": "client",
+    "steady": "client",
+    "act": "client",
+    "story": "client"
+   },
+   "weeks": [
+    "When the outcome holds you",
+    "Effort without the grip",
+    "More than the result"
+   ],
+   "seat": "",
+   "life_context": "Working and caring for their parents. Feels restless; closest to burned out and running on empty\" and I love is seriously ill\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "v3:for_you:6/7"
+   ],
+   "plan_v3": {
+    "v": 1,
+    "kept": "anxious",
+    "trail": [
+     "anxious"
+    ],
+    "paused": null,
+    "stance": "struggle",
+    "states": [
+     "chinta",
+     "glani",
+     "shrama",
+     "viraha"
+    ],
+    "risk": "none",
+    "situations": [
+     "burnout",
+     "illness_family",
+     "fear_death"
+    ],
+    "age": "35_44",
+    "stages": [
+     "working",
+     "caring_parents"
+    ],
+    "consent": true,
+    "light": false,
+    "pick": "rcm.5.6.chaupai.1",
+    "threat": true,
+    "caste_ok": false,
+    "health": true,
+    "first_line": null
+   }
+  },
+  "days": [
+   {
+    "day": 15,
+    "day_in_week": 1,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.3.314.61",
+     "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+     "ref_iast": "Mahābhārata, Vana Parva 314.61–62",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "the Yaksha (Dharma in disguise)",
+     "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+     "sanskrit": "किंस्विद्गुरुतरं भूमेः किंस्विदुच्चतरं च स्वात् / किंस्विच्छीघ्रतरं वायोः किंस्विद्बहुतरं तृणात् माता गुरुतरा भूमेः खात्पितोच्चतरस्तथा / मनः शीघ्रतरं वाताच्चिन्ता बहुतरी तृणात्",
+     "line": "The mind is faster than the wind, and worries outnumber the blades of grass.",
+     "translation": "Yaksha: 'What is heavier than the earth? What is higher than the sky? What is faster than the wind? What is more numerous than blades of grass?' Yudhishthira: 'A mother is heavier than the earth; a father is higher than the sky; the mind is faster than the wind; worries are more numerous than blades of grass.'",
+     "words": [],
+     "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.yaksha_prashna",
+      "title": "Yaksha Prashna: the questions at the lake",
+      "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+      "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+      "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+     },
+     "score": 7.958,
+     "beat": "hook",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": null,
+     "try_today": "Notice when the mind outruns the wind today.",
+     "scene_line": "You stand between the hospital and the office, and the mind outruns the wind while the worries outnumber the blades of grass.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D1_see_name",
+     "graph_id": "mbh.3.314.61",
+     "path": "mbh.3.314.61 -depicts-> chinta (spoken by Yudhishthira)",
+     "why": [
+      "Worries counted as more than blades of grass",
+      "The mind outruns the wind"
+     ],
+     "writer_note": null,
+     "alts": [
+      "ashtavakra.18.3",
+      "up_maha.109",
+      "bg.6.33"
+     ],
+     "thin": false,
+     "personal_source": {
+      "audio_close": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(, not a)",
+      "practice:untraced_sentence(among,blade,pass,worry)",
+      "scene_line:not_second_person",
+      "audio_open:names_treatment(chemotherapy)",
+      "for_you:untraced_sentence(heavy,search,should,show,weight)"
+     ]
+    }
+   },
+   {
+    "day": 16,
+    "day_in_week": 2,
+    "week": 3,
+    "level": "self",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "words": [
+      {
+       "sa": "इन्द्रियाणां",
+       "en": "of the senses"
+      },
+      {
+       "sa": "हि",
+       "en": "indeed"
+      },
+      {
+       "sa": "चरतां",
+       "en": "moving"
+      },
+      {
+       "sa": "यत्",
+       "en": "that which"
+      },
+      {
+       "sa": "मनः",
+       "en": "mind"
+      },
+      {
+       "sa": "अनुविधीयते",
+       "en": "follows"
+      },
+      {
+       "sa": "तदस्य",
+       "en": "of that"
+      },
+      {
+       "sa": "हरति",
+       "en": "carries away"
+      },
+      {
+       "sa": "प्रज्ञां",
+       "en": "wisdom"
+      },
+      {
+       "sa": "नावम्",
+       "en": "boat"
+      },
+      {
+       "sa": "इव",
+       "en": "like"
+      },
+      {
+       "sa": "आम्भसि",
+       "en": "on water"
+      }
+     ],
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 6.718,
+     "beat": "diagnose",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is chasing the roving senses between the hospital and the office, and the current is sweeping you off course. The worry you feel at 3am is the boat being carried by the wind. The wisdom is still there, waiting for the mind to settle.",
+     "try_today": "Notice the mind being carried off course.",
+     "scene_line": null,
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D2_see_why",
+     "graph_id": "bg.2.67",
+     "path": "bg.2.67 -states_chain-> bg.senses_carry_mind [indriya_chara -causes-> chanchalya; chanchalya -causes-> prajna_harana]",
+     "why": [
+      "The boat and the wind (Bhagavad Gita 2.60)",
+      "shows the mechanism: the mind follows one sense and the whole understanding is blown off course"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_kath.1.3.3",
+      "bg.2.41",
+      "bg.6.6"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "scene_line:not_second_person"
+     ]
+    }
+   },
+   {
+    "day": 17,
+    "day_in_week": 3,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_taittiriya.124",
+     "ref": "Taittiriya Upanishad 2.9.1",
+     "ref_iast": "Taittirīya Upaniṣad 2.9.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Students",
+     "setting": "The famous verse closing the Brahmananda Valli.",
+     "sanskrit": "यतो वाचो निवर्तन्ते । अप्राप्य मनसा सह । आनन्दं ब्रह्मणो विद्वान्। न बिभेति कुतश्चनेति ।",
+     "line": "Where words and thoughts turn back unable to reach: whoever knows that joy fears nothing.",
+     "translation": "That from which words turn back, along with the mind, not reaching it: whoever knows the joy of Brahman fears nothing at all.",
+     "words": [],
+     "why": "The deepest joy can't be bought, and it frees you from fear and regret.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "fear_death",
+       "label": "I'm afraid of death"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.joy",
+      "title": "The measure of joy",
+      "summary": "The Upanishad tries to measure joy: a young, good, strong man owning the whole earth has one unit of human joy, and each higher joy is a hundred times greater, yet each is already held by one free of desire. It ends with the joy before which words turn back, which frees a person from fear and from self-torment over past deeds.",
+      "story_hook": "",
+      "lesson": "The deepest joy can't be bought, and it frees you from fear and regret."
+     },
+     "score": 9.105,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "Your mind is trying to outrun a fear it cannot solve. There is a stillness before which all thought turns back, and knowing that joy means you fear nothing at all.",
+     "try_today": "Notice the moment your mind turns back from a worry it cannot solve.",
+     "scene_line": "Between the hospital, the office and home alone, you stand where words turn back, and the joy there is your own.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D3_steady_ground",
+     "graph_id": "up_taittiriya.124",
+     "path": "up_taittiriya.124 -heals-> chinta",
+     "why": [
+      "the mind is told there is a place it need not, and cannot, work out",
+      "The Upanishads' root answer."
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_mundaka.3.1.1",
+      "up_chhandogya.492",
+      "mbh.12.104.57"
+     ],
+     "thin": false,
+     "personal_source": {
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model",
+      "practice": "model"
+     },
+     "personal_issues": [
+      "for_you:untraced_sentence(settle,solv,solve,trying)",
+      "practice:long(21)"
+     ]
+    }
+   },
+   {
+    "day": 18,
+    "day_in_week": 4,
+    "week": 3,
+    "level": "self",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "words": [],
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 8.42,
+     "beat": "steady",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You run between the hospital and the office, and your mind stays on the survival rates. You can keep doing all of that, and leave the three a.m. worry where it is. Let your hands be busy, and your mind be still.",
+     "try_today": "Notice when the mind agitates, and let the doing continue without it.",
+     "scene_line": "Ribhu acts in the world, yet remains a non-doer within; so you move through your days with a clear mind.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D4_steady_reframe",
+     "graph_id": "up_maha.536",
+     "path": "up_maha.536 -heals-> chinta",
+     "why": [
+      "effort outside, stillness inside",
+      "the strain is located in inner agitation, which can be set down while the work goes on"
+     ],
+     "writer_note": null,
+     "alts": [
+      "up_kaushitaki.131",
+      "viv.1.silence_in_activity",
+      "ashtavakra.18.61"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": [
+      "audio_open:names_treatment(chemo)"
+     ]
+    }
+   },
+   {
+    "day": 19,
+    "day_in_week": 5,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "viv.1.wait_and_watch",
+     "ref": "Swami Vivekananda",
+     "ref_iast": "Svāmī Vivekānanda, Complete Works, Vol. 1",
+     "family": "viv",
+     "speaker": "Swami Vivekananda",
+     "listener": "Students of Raja-Yoga, New York",
+     "setting": "Raja-Yoga (1896), chapter 6: the first practice for a racing mind.",
+     "sanskrit": null,
+     "line": "Let the monkey jump as much as he can; you simply wait and watch.",
+     "translation": "The first lesson, then, is to sit for some time and let the mind run on. The mind is bubbling up all the time. It is like that monkey jumping about. Let the monkey jump as much as he can; you simply wait and watch. … But you will find that each day the mind's vagaries are becoming less and less violent, that each day it is becoming calmer.",
+     "words": [],
+     "why": "Watch the mind before trying to control it; calm comes with daily practice.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "viv.p.raja_yoga.monkey_mind",
+      "title": "The drunken monkey: taming a restless mind",
+      "summary": "The mind is a monkey made drunk by desire, stung by jealousy and possessed by pride. The first practice is to sit and watch it without fighting; each day it grows calmer. Then take up one idea and let it fill your life.",
+      "story_hook": "There was a monkey, restless as all monkeys are; someone gave it wine, then a scorpion stung it, and then a demon got into it.",
+      "lesson": "Watch the mind before trying to control it; calm comes with daily practice."
+     },
+     "score": 3.625,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "You are running between the hospital, the office, and home alone. The mind is a monkey jumping all over. Let it jump as much as it can; you simply wait and watch, and each day it will grow calmer.",
+     "try_today": "Watch the mind jump without fighting it. Wait and watch.",
+     "scene_line": "You wait and watch as the mind jumps between the hospital and the office.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D5_act_today",
+     "graph_id": "viv.1.wait_and_watch",
+     "path": "viv.1.wait_and_watch -cultivates-> shanti",
+     "why": [
+      "calm arrives by itself, day by day",
+      "a sitting practice to repeat"
+     ],
+     "writer_note": "The person mentioned medication, detox or treatment. This verse is about resolve or not stopping: apply it only to the other parts of their life they named, never to their medication or treatment. Never imply a medical decision, a pace or a deadline for one.",
+     "alts": [
+      "up_shwetashwetar.3.5",
+      "bg.17.16",
+      "bg.18.57"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 20,
+    "day_in_week": 6,
+    "week": 3,
+    "level": "self",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.6a.115.43",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 115.43",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha's closing advice to Rama on living in the world after the three vows.",
+     "sanskrit": "अन्तर्मुखः सन्सततं समस्तं कुर्वन्बहिष्ठं खलु कार्यजातम् । न खेदमायासि कदाचिदेव निराकृताहंकृतितामुपैषि ॥",
+     "line": "Stay anchored within while you do all your outer work, and you won't burn out.",
+     "translation": "Staying turned inward while doing all the outer work that comes to you, you will never grow weary, and you will be free of the sense of being the doer.",
+     "words": [],
+     "why": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.three_vows",
+      "title": "Shiva's three vows: be a great doer, enjoyer and letter-go",
+      "summary": "Vasishtha gives Rama three vows that Shiva once gave his devotee Bhringi: be a great doer, a great enjoyer, and a great renouncer. A great doer acts fully and on time without clinging; a great enjoyer takes in joys and sorrows evenly, like the ocean takes in rivers; a great renouncer lets go inside. Live this way and work won't wear you out.",
+      "story_hook": "",
+      "lesson": "Work fully, enjoy fully, let go fully; anchored inside, you can do it all without burning out."
+     },
+     "score": 3.675,
+     "beat": "act",
+     "role_fit": 1.0,
+     "meaning": null,
+     "for_you": "The hospital and the office can wait. Your mind is already doing the work of caring. You do not have to carry the weight of every outcome.",
+     "try_today": "Notice one moment today when you are doing something without trying to own it.",
+     "scene_line": "You move between the hospital, the office, and home, and the work itself does not own you.",
+     "asks": []
+    },
+    "story": null,
+    "plan_v3": {
+     "slot": "D6_act_hard_moment",
+     "graph_id": "yv.6a.115.43",
+     "path": "yv.6a.115.43 -cultivates-> shanti",
+     "why": [
+      "an inner anchor during activity"
+     ],
+     "writer_note": null,
+     "alts": [
+      "rcm.6.19.doha.1",
+      "rcm.5.4.chaupai.1",
+      "rcm.7.45.chaupai.3"
+     ],
+     "thin": false,
+     "personal_source": {
+      "for_you": "model",
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model"
+     },
+     "personal_issues": []
+    }
+   },
+   {
+    "day": 21,
+    "day_in_week": 7,
+    "week": 3,
+    "level": "self",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "st.vr.ram_exhausted_before_the_last_fight",
+     "title": "Ram stands exhausted and anxious before the final battle",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Agastya"
+     ],
+     "story_hook": "Before the last fight, even Ram stood there exhausted and worried. Then a sage came up to him.",
+     "summary": "After days of war, Ram is worn out. Ravana is in front of him, ready for the final fight. Ram stands there sunk in thought, weighed down with worry.",
+     "lesson": "Before the hardest moment, draw strength from what is greater than you, then act.",
+     "matched": [],
+     "anchor": null,
+     "score": 9.532,
+     "why": null,
+     "hook_title": null,
+     "teaser": "Before the last fight, even Ram stood there exhausted and worried. Then a sage came up to him.",
+     "for_you": "Your mind will not settle. You are running between the hospital, the office, and home alone. The worry circles until it becomes its own weight. The strength you need is already larger than this exhaustion.",
+     "asks": []
+    },
+    "plan_v3": {
+     "slot": "D7_story",
+     "graph_id": "st.vr.ram_exhausted_before_the_last_fight",
+     "path": "st.vr.ram_exhausted_before_the_last_fight -enacts_in-> chinta, shrama ; st.vr.ram_exhausted_before_the_last_fight -enacts_turn-> dhriti, shraddha ; st.vr.ram_exhausted_before_the_last_fight -fits_situation-> burnout",
+     "why": [
+      "Before the hardest moment, draw strength from what is greater than you, then act."
+     ],
+     "writer_note": null,
+     "alts": [
+      "st.yv.uddalaka_restless_meditation",
+      "st.viv.ghost_that_must_be_kept_busy",
+      "st.rcm.sita_at_the_bow"
+     ],
+     "thin": false,
+     "story_id": "st.vr.ram_exhausted_before_the_last_fight",
+     "story_text": "04_stories record, unreviewed",
+     "personal_source": {
+      "practice": "model",
+      "scene_line": "model",
+      "audio_open": "model",
+      "audio_close": "model",
+      "for_you": "model"
+     },
+     "personal_issues": [
+      "for_you:contrast_pattern(not the absence of worry, but)",
+      "for_you:untraced_sentence(absenc,choice,forwar,move)"
+     ]
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 3,
+    "title": "More than the result",
+    "level": "self",
+    "level_label": "Who you are beyond it",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "v3_w3_graph": 65,
+   "v3_w3_write": 9822,
+   "v3_w3_total": 9888,
+   "select": 9888,
+   "total": 9889
+  },
+  "_ms": 9893
+ }
+}

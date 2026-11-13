@@ -41,3 +41,7 @@
   .rp-card, .rp-thumb img, .rp-go span { transition: none; }
   .rp-card.is-filtered { animation-name: sx-fade; }
 }
+
+/* Whole-Gita plans: the picture is the plan drawn on the verse map (dark ground of its own) */
+.rp-thumb--map img { object-position: center; }
+.rp-thumb--map::after { display: none; }
