@@ -133,6 +133,15 @@ export default function PlanScreen({
             <span className="ob-cta-live" aria-hidden="true" />
             <span className="ob-cta-label">{planToken ? 'Open my plan page' : 'Back to Wisdom'}</span>
           </a>
+          <div className="pv-actions">
+            <a className="pv-link" href="/start?new=1&ref=start_plan_new">
+              <Icon name="sparkle" size={16} />
+              <span>Start a new plan</span>
+            </a>
+            {planToken && (
+              <a className="pv-link" href="/"><span>Back to Wisdom</span></a>
+            )}
+          </div>
         </div>
       )}
     </>

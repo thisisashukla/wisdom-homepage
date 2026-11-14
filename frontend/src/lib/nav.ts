@@ -44,6 +44,7 @@ export const NAV_SECONDARY: NavItem[] = [
   { label: { en: 'How to read the Gita', hi: 'गीता कैसे पढ़ें' }, href: same('/how-to-read-bhagavad-gita'), match: ['/how-to-read-bhagavad-gita'] },
   { label: { en: 'Gita for life', hi: 'जीवन के लिए गीता' }, href: same('/gita-for'), match: ['/gita-for'] },
   { label: { en: 'Understand the Gita', hi: 'गीता को समझें' }, href: same('/understand-the-gita'), match: ['/understand-the-gita'] },
+  { label: { en: 'Map of the mind', hi: 'मन का नक्शा' }, href: same('/explore'), match: ['/explore'] },
   { label: { en: '12 key ideas', hi: '12 मूल शब्द' }, href: { en: '/gita/key-ideas', hi: '/hi/gita/mool-shabd' }, match: ['/gita/key-ideas', '/hi/gita/mool-shabd'] },
   { label: { en: 'About', hi: 'परिचय' }, href: same('/about'), match: ['/about'] },
 ]

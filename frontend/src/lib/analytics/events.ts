@@ -65,6 +65,9 @@ export const EVENTS = {
   PlanPageViewed: 'Plan Page Viewed',
   PlanDayFeedback: 'Plan Day Feedback',
   PlanUnsubscribed: 'Plan Unsubscribed',
+  // /start for someone who already has a plan: the fork shown (day, complete, situation) and what they chose.
+  PlanForkViewed: 'Plan Fork Viewed',
+  PlanForkChosen: 'Plan Fork Chosen',
   // Length plans (30 days, 7 days, a verse a day): a day picked on the verse map or list, a day marked read, a month started.
   PlanDaySelected: 'Plan Day Selected',
   PlanDayCompleted: 'Plan Day Completed',
@@ -244,6 +247,14 @@ export const EVENTS = {
   QuoteKeepToggled: 'Quote Keep Toggled',
   TodayLineViewed: 'Today Line Viewed',
   LearningPathStepClicked: 'Learning Path Step Clicked',
+  // Map of the mind (/explore): a node opened on the map { item_id, item_type: 'state' | 'verse' | 'story', method: 'tap' | 'search' | 'link' | 'url' },
+  // a text family filter { to }, the reflect box matched { words, states, results } (never the text typed),
+  // a state page opened from the map or the reflect box { item_id, location }, a link followed in the panel { from, to, rel }.
+  MapNodeOpened: 'Map Node Opened',
+  MapFilterSelected: 'Map Filter Selected',
+  ReflectionSubmitted: 'Reflection Submitted',
+  StateOpened: 'State Opened',
+  PathFollowed: 'Path Followed',
 } as const
 
 export type EventKey = keyof typeof EVENTS

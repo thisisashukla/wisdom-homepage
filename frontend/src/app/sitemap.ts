@@ -6,6 +6,7 @@ import { GITA_FOR } from '@/lib/gitaFor'
 import { THEME_SLUGS, THEME_PLANS_PUBLISHED, plansForVerse } from '@/lib/themePlans'
 import { getAllPages } from '@/lib/quotes'
 import { funnelSitemapEntries } from '@/lib/funnelSitemaps'
+import EXPLORE_STATES from '@/content/explore/index.json'
 
 const BASE = 'https://wisdomquotes.in'
 
@@ -162,6 +163,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/best-hanuman-chalisa-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/bhagavad-gita-widget-iphone`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/reading-plans`, lastModified: new Date('2026-11-13'), changeFrequency: 'weekly', priority: 0.9 },
+    // Map of the mind (/explore) and one page per inner state (src/content/explore, scripts/build-explore-data.py)
+    { url: `${BASE}/explore`, lastModified: new Date('2026-11-14'), changeFrequency: 'monthly', priority: 0.8 },
+    ...EXPLORE_STATES.map((s) => ({ url: `${BASE}/explore/${s.slug}`, lastModified: new Date('2026-11-14'), changeFrequency: 'monthly' as const, priority: 0.75 })),
     { url: `${BASE}/gita-for`, lastModified: new Date(THEME_PLANS_PUBLISHED), changeFrequency: 'monthly', priority: 0.85 },
     ...GITA_FOR.map((p) => {
       const plan = THEME_SLUGS.includes(p.slug)

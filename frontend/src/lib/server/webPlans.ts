@@ -40,8 +40,15 @@ async function rpc<T>(fn: string, args: Record<string, unknown>, timeoutMs = 800
   }
 }
 
+/** A day as the page gets it: open days in full; days still to come as a sealed glimpse (first six words). */
+export type PlanDay = FullDay & { locked?: false } | { day: number; beat: string; phase: string; line: string; locked: true }
+
 export type SavedPlan = {
-  days: FullDay[]
+  days: PlanDay[]
+  unlocked: number // the newest open day (1..7): opens on its morning, when its email goes
+  complete: boolean // past Day 7's morning (the week-complete email has gone or is due)
+  age: string | null
+  stages: string[]
   weeks: string[]
   week: number
   weekTitle: string | null
@@ -68,6 +75,8 @@ export async function createPlan(p: {
   source?: string | null
   situation?: string | null
   feeling?: string | null
+  age?: string | null
+  stages?: string[]
 }): Promise<string | null> {
   if (!webPlansConfigured()) return null
   try {
@@ -83,11 +92,19 @@ export async function createPlan(p: {
       p_source: p.source ?? null,
       p_situation: p.situation ?? null,
       p_feeling: p.feeling ?? null,
+      p_age: p.age ?? null,
+      p_stages: p.stages ?? [],
     })
   } catch (e) {
     console.error('[web_plans] create', e)
     return null
   }
+}
+
+/** A signed-in visitor's latest plan (not one they replaced), with its token; null when they have none. */
+export async function findPlanForUid(uid: string): Promise<(SavedPlan & { token: string }) | null> {
+  if (!webPlansConfigured()) return null
+  return await rpc<(SavedPlan & { token: string }) | null>('web_plan_for_uid', { p_secret: SECRET, p_uid: uid })
 }
 
 export async function markSent(token: string, day: number) {

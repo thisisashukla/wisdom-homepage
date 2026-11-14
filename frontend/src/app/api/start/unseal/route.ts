@@ -11,6 +11,7 @@ export const dynamic = 'force-dynamic'
 
 const WORD_RE = /^[a-z_]{1,40}$/
 const REF_RE = /^[A-Za-z0-9_.:-]{1,80}$/
+const AGE_RE = /^[a-z0-9_]{1,12}$/
 const TZ_RE = /^[A-Za-z_]+(\/[A-Za-z0-9_+-]+){0,2}$/
 
 /**
@@ -24,7 +25,7 @@ export async function POST(req: Request) {
   const user = await verifyFirebaseToken(bearer(req))
   if (!user) return NextResponse.json({ error: 'signin_required' }, { status: 401 })
 
-  let body: { sealed?: string; email?: boolean; tz?: string; source?: string; situation?: string; feeling?: string; hookId?: string }
+  let body: { sealed?: string; email?: boolean; tz?: string; source?: string; situation?: string; feeling?: string; hookId?: string; age?: string; stages?: string[] }
   try {
     body = await req.json()
   } catch {
@@ -45,6 +46,8 @@ export async function POST(req: Request) {
         source: typeof body.source === 'string' && REF_RE.test(body.source) ? body.source : null,
         situation: typeof body.situation === 'string' && WORD_RE.test(body.situation) ? body.situation : null,
         feeling: typeof body.feeling === 'string' && WORD_RE.test(body.feeling) ? body.feeling : null,
+        age: typeof body.age === 'string' && AGE_RE.test(body.age) ? body.age : null,
+        stages: Array.isArray(body.stages) ? body.stages.filter((x): x is string => typeof x === 'string' && WORD_RE.test(x)).slice(0, 6) : [],
       })
     : null
 

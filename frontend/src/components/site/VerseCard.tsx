@@ -3,7 +3,7 @@ import type { Locale } from '@/lib/locale'
 import ScriptToggle, { type NativeScript } from './ScriptToggle'
 import './site.css'
 
-export type VerseLang = 'sa' | 'awa' | 'hi' | 'bra' | 'te' | 'gu' | 'kn'
+export type VerseLang = 'sa' | 'awa' | 'hi' | 'bra' | 'te' | 'gu' | 'kn' | 'en'
 
 /** Awadhi (or Sanskrit) written in another Indian script: the label its script switch shows. */
 const NATIVE: Partial<Record<VerseLang, NativeScript>> = {
@@ -26,7 +26,7 @@ export type VerseCardProps = {
   label?: ReactNode
   /** Script of the original: Sanskrit (default) sets Tiro Sanskrit; Awadhi, Hindi and Braj set Tiro Hindi;
    *  'te' / 'gu' / 'kn' set Awadhi written in Telugu, Gujarati or Kannada letters (Noto Serif), and the
-   *  script switch then reads that script / IAST. */
+   *  script switch then reads that script / IAST; 'en' sets a line first written in English (Vivekananda) in the display face. */
   lang?: VerseLang
   size?: 'hero' | 'default' | 'compact'
   /** Bordered card (default) or bare text. */

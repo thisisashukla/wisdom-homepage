@@ -24,7 +24,8 @@ import VerseScreen, { type HookVerse } from './VerseScreen'
 import WeekScreen, { type PreviewDay } from './WeekScreen'
 import PlanScreen, { type FullDay } from './PlanScreen'
 import WelcomeScreen from './WelcomeScreen'
-import { PLAN_TOKEN_KEY } from './PlanView'
+import BackScreen from './BackScreen'
+import { findMyPlan, keepToken, type PlanSummary } from '@/lib/planClient'
 
 /**
  * The Wisdom app's onboarding, on the web (every device, iPhone included). Same screens, copy, icons and motion as
@@ -34,13 +35,17 @@ import { PLAN_TOKEN_KEY } from './PlanView'
  * sign-in until Day 1 is read. Then Google sign-in opens the whole free week
  * here, saves it (web_plans) and starts the emails: Day 1 now, then one day
  * each morning around 7 (no paywall; Week 1 is free). The saved week opens on
- * any device at /plan?t=…; /start?new=1 starts a fresh one. There is no listen
- * step (no narration on the web yet).
+ * any device at /plan?t=… ("Begin my week" goes there). /start?new=1 starts a
+ * fresh one. Anyone not mid-onboarding is first looked up (this browser's plan,
+ * else their account's): with a plan they get the fork (BackScreen: continue,
+ * a new plan, a plan for the situation they came with, or a new week once the
+ * week is complete) instead of the questions again. There is no listen step
+ * (no narration on the web yet).
  * The phone-hours screen is out of the
  * flow, as in the app. The logo is drawn once by this shell and never moves;
  * each screen's words fade out and the next rise in.
  */
-type Step = 'splash' | 'age' | 'stage' | 'phone' | 'feeling' | 'note' | 'signin' | 'finding' | 'verse' | 'week' | 'paywall' | 'welcome' | 'plan'
+type Step = 'back' | 'splash' | 'age' | 'stage' | 'phone' | 'feeling' | 'note' | 'signin' | 'finding' | 'verse' | 'week' | 'paywall' | 'welcome' | 'plan'
 type Answers = { age?: AgeId; stages: StageId[]; phoneHours?: number; need?: NeedId; emotion?: string; note?: string; noteSource?: 'voice' | 'text'; topic?: string; follow?: string }
 type Results = {
   understanding?: Record<string, unknown> & { mirror?: string; insight?: string; weeks?: string[] }
@@ -88,6 +93,13 @@ export default function StartFlow() {
   const [vars, setVars] = useState<Record<string, string>>({})
   useEffect(() => setVars(springVars()), [])
   const entry = useRef<{ ref: string | null; situation: string | null }>({ ref: null, situation: null })
+  // Someone who already has a plan (this browser's, or their account's): /start asks before starting another.
+  const [existing, setExisting] = useState<PlanSummary | null>(null)
+  const [checking, setChecking] = useState(true)
+  const lookup = useRef<{ legacy: Saved | null; fresh: boolean } | null>(null)
+  const freshRef = useRef<boolean | null>(null)
+  const stepRef = useRef(step)
+  stepRef.current = step
   const answersRef = useRef(answers)
   answersRef.current = answers
   const resultsRef = useRef(results)
@@ -106,38 +118,81 @@ export default function StartFlow() {
       preset.need = SITUATION_FEELING[situation.id]
     }
     entry.current = { ref: q.get('ref') ?? q.get('src') ?? null, situation: situation?.id ?? null }
-    const fresh = q.get('new') === '1'
+    // Read once: the URL is tidied below, and effects can run twice (React dev).
+    if (freshRef.current === null) freshRef.current = q.get('new') === '1'
+    const fresh = freshRef.current
     if (fresh) {
       // "Start a new plan" (from /plan): keep age and life stage, ask the rest again. The new week replaces the old one.
       q.delete('new')
       window.history.replaceState(null, '', `${window.location.pathname}${q.toString() ? `?${q}` : ''}`)
     }
+    const finished = !!s?.results.paid // a week already opened (older visits kept it here)
+    const inProgress = !!s && !finished && s.step !== 'splash' && s.step !== 'back'
     if (fresh && s?.answers.age) {
       setAnswers({ age: s.answers.age, stages: s.answers.stages ?? [], ...preset })
       setResults({})
       setStep('feeling')
       setLogoUp(true)
     } else if (fresh) {
+      // Age and life stage may be on their account's plan (another device): look before asking again.
       setAnswers((a) => ({ ...a, ...preset }))
-    } else if (s && ['verse', 'week', 'signin', 'paywall', 'welcome', 'plan'].includes(s.step) && s.results.hook) {
+      lookup.current = { legacy: null, fresh: true }
+    } else if (s && inProgress && s.results.hook && ['verse', 'week', 'signin', 'paywall', 'welcome'].includes(s.step)) {
       setAnswers(s.answers)
       setResults(s.results)
-      setStep(s.results.paid || s.step === 'paywall' || s.step === 'welcome' ? 'plan' : s.step)
+      setStep(s.step === 'paywall' || s.step === 'welcome' ? 'plan' : s.step)
       setLogoUp(true)
-    } else if (s && s.step !== 'splash') {
+    } else if (s && inProgress) {
       setAnswers({ ...s.answers, ...preset })
       setStep(s.step === 'finding' || s.step === 'signin' ? 'note' : s.step === 'phone' ? 'feeling' : s.step)
       setLogoUp(true)
     } else {
-      setAnswers((a) => ({ ...a, ...preset }))
+      // Not mid-onboarding: do they already have a plan? (Splash waits for the answer.)
+      setAnswers((a) => ({ ...a, ...(finished && s ? { age: s.answers.age, stages: s.answers.stages } : {}), ...preset }))
+      lookup.current = { legacy: finished ? s : null, fresh: false }
     }
+    if (!lookup.current) setChecking(false)
     // One id for this onboarding, on every event from here on and on every backend call (lib/onboarding/trace.ts).
-    beginOnboarding(fresh || !s || s.step === 'splash')
+    beginOnboarding(fresh || !s || s.step === 'splash' || s.step === 'back' || finished)
     trackEvent(EVENTS.OnboardingViewed, { page: 'Start', source: entry.current.ref ?? 'direct', situation: sit ?? null, resumed: !!s && !fresh, new_plan: fresh })
   }, [])
 
+  // The plan lookup (after auth settles, so a signed-in visitor is found on any device). At most ~3 s on the logo.
+  useEffect(() => {
+    const l = lookup.current
+    if (!l || authLoading) return
+    lookup.current = null
+    Promise.race([findMyPlan(), sleep(3000).then(() => null)]).then((p) => {
+      if (stepRef.current !== 'splash') return // they already began
+      const plan = p && p.status !== 'replaced' ? p : null
+      if (l.fresh) {
+        if (plan?.age) {
+          setAnswers((a) => ({ ...a, age: plan.age as AgeId, stages: (plan.stages ?? []) as StageId[] }))
+          setStep('feeling')
+          setLogoUp(true)
+        }
+      } else if (plan) {
+        setExisting(plan)
+        setAnswers((a) => ({ ...a, age: (plan.age as AgeId) ?? a.age, stages: plan.stages?.length ? (plan.stages as StageId[]) : a.stages }))
+        setStep('back')
+        setLogoUp(true)
+        trackEvent(EVENTS.PlanForkViewed, { page: 'Start', day: plan.unlocked, complete: plan.complete, situation: entry.current.situation, signed_in: !!auth.currentUser })
+      } else if (l.legacy) {
+        // A week opened before plans were saved: show it; it is saved once they're signed in (below).
+        setAnswers(l.legacy.answers)
+        setResults(l.legacy.results)
+        setStep('plan')
+        setLogoUp(true)
+      }
+      setChecking(false)
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authLoading])
+
   useEffect(() => {
     try {
+      // The fork screen is decided fresh on every visit; never resume into it.
+      if (step === 'back') return
       localStorage.setItem(KEY, JSON.stringify({ v: 1, step, answers, results, at: Date.now() } satisfies Saved))
     } catch {}
   }, [step, answers, results])
@@ -225,6 +280,20 @@ export default function StartFlow() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [go])
 
+  // "I already have an account": once signed in, their plan if they have one, else the questions.
+  const afterAccount = useCallback(async () => {
+    const p = await findMyPlan()
+    if (p && p.status !== 'replaced') {
+      setExisting(p)
+      setAnswers((a) => ({ ...a, age: (p.age as AgeId) ?? a.age, stages: p.stages?.length ? (p.stages as StageId[]) : a.stages }))
+      trackEvent(EVENTS.PlanForkViewed, { page: 'Start', day: p.unlocked, complete: p.complete, situation: entry.current.situation, signed_in: true, via: 'have_account' })
+      go('back', { have_account: true, has_plan: true })
+    } else {
+      go(answersRef.current.age ? 'feeling' : 'age', { have_account: true, has_plan: false })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [go])
+
   useEffect(() => {
     getRedirectResult(auth)
       .then((cred) => {
@@ -233,7 +302,7 @@ export default function StartFlow() {
         const p = takePending()
         if (p?.source === 'start') {
           trackEvent(EVENTS.OnboardingSigninCompleted, { page: 'Start', method: 'redirect' })
-          if (p.next === 'age') go('age')
+          if (p.next === 'age') void afterAccount()
           else afterSignIn()
         }
       })
@@ -249,7 +318,7 @@ export default function StartFlow() {
       const u = await signInWithGoogle({ source: 'start', next })
       if (!u) return
       trackEvent(EVENTS.OnboardingSigninCompleted, { page: 'Start', method: 'popup' })
-      if (next === 'age') go('age')
+      if (next === 'age') void afterAccount()
       else afterSignIn()
     } catch (e) {
       trackEvent(EVENTS.OnboardingSigninFailed, { page: 'Start', at: next, code: (e as { code?: string })?.code || 'unknown' })
@@ -269,12 +338,12 @@ export default function StartFlow() {
     try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || null } catch {}
     const a = answersRef.current
     const plan = await api<{ days: FullDay[]; weeks: string[]; emailed?: boolean; email?: string | null; token?: string | null; daily?: boolean }>('/api/start/unseal', {
-      body: { sealed, tz, source: entry.current.ref, situation: entry.current.situation, feeling: a.need ?? null, hookId: resultsRef.current.hook?.id ?? null },
+      body: { sealed, tz, source: entry.current.ref, situation: entry.current.situation, feeling: a.need ?? null, hookId: resultsRef.current.hook?.id ?? null, age: a.age ?? null, stages: a.stages },
     })
     const emailedTo = plan.emailed ? plan.email ?? null : null
     const planToken = plan.token ?? null
     const daily = !!plan.daily
-    if (planToken) try { localStorage.setItem(PLAN_TOKEN_KEY, planToken) } catch {}
+    if (planToken) keepToken(planToken)
     resultsRef.current = { ...resultsRef.current, emailedTo, planToken, daily }
     setResults((p) => ({ ...p, days: plan.days, weeks: plan.weeks, paid: true, emailedTo, planToken, daily }))
   }
@@ -308,6 +377,19 @@ export default function StartFlow() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [step, authLoading])
 
+  // Back on a week opened before plans were saved (no token yet): save it now, so it comes by email
+  // each morning and opens on any device. Quiet: if it can't be saved, the week still shows as before.
+  const upgraded = useRef(false)
+  useEffect(() => {
+    if (step !== 'plan' || !results.paid || results.planToken || !results.sealed || authLoading || upgraded.current || opening.current) return
+    if (!(user || auth.currentUser)) return
+    upgraded.current = true
+    unseal()
+      .then(() => trackEvent(EVENTS.OnboardingCompleted, { page: 'Start', outcome: 'saved_existing_week', emailed: !!resultsRef.current.emailedTo, daily: !!resultsRef.current.daily }))
+      .catch(() => {})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step, authLoading, user, results.paid, results.planToken])
+
   // ── The answers flying into "Finding your verse" ───────────────────────────
   const chips = useMemo<FindChip[]>(() => {
     const a = answers
@@ -331,14 +413,34 @@ export default function StartFlow() {
   let screen: React.ReactNode = null
   switch (step) {
     case 'splash':
-      screen = (
+      // While we look for an existing plan (≤ 3 s), only the background shows: no splash that then jumps away.
+      screen = checking ? null : (
         <SplashScreen
           logoTarget={() => logo.current?.getBoundingClientRect() ?? null}
           onLanded={() => setLogoUp(true)}
           onBegin={() => go('age')}
-          onHaveAccount={() => (user ? go('age') : signIn('age'))}
+          onHaveAccount={() => (user ? void afterAccount() : signIn('age'))}
         />
       )
+      break
+    case 'back':
+      screen = existing ? (
+        <BackScreen
+          plan={existing}
+          name={(user ?? auth.currentUser)?.displayName ?? null}
+          situationLabel={entry.current.situation ? situationById(entry.current.situation)?.label ?? null : null}
+          onContinue={() => {
+            trackEvent(EVENTS.PlanForkChosen, { page: 'Start', choice: existing.complete ? 'revisit' : 'continue', day: existing.unlocked })
+            window.location.assign(`/plan?t=${existing.token}&src=start`)
+          }}
+          onNew={() => {
+            trackEvent(EVENTS.PlanForkChosen, { page: 'Start', choice: existing.complete ? 'new_week' : entry.current.situation ? 'new_for_situation' : 'new_plan', day: existing.unlocked })
+            beginOnboarding(true)
+            setResults({})
+            go(answersRef.current.age ? 'feeling' : 'age', { new_plan: true })
+          }}
+        />
+      ) : null
       break
     case 'age':
       screen = (
@@ -446,7 +548,11 @@ export default function StartFlow() {
           ready={!!results.paid}
           busy={busy}
           error={error}
-          onOpen={() => (results.paid ? go('plan') : openWeek())}
+          onOpen={() =>
+            results.planToken
+              ? window.location.assign(`/plan?t=${results.planToken}&d=1&w=1&src=start`)
+              : results.paid ? go('plan') : openWeek()
+          }
         />
       )
       break

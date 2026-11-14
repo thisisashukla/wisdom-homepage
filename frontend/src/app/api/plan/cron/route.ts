@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { dayEmail, emailConfigured, sendEmail } from '@/lib/server/email'
+import { completeEmail, dayEmail, emailConfigured, sendEmail } from '@/lib/server/email'
 import { claimDue, unclaim, webPlansConfigured } from '@/lib/server/webPlans'
 
 export const runtime = 'nodejs'
@@ -10,7 +10,8 @@ export const maxDuration = 60
  * The morning emails. Called every 30 minutes by pg_cron in Supabase
  * (job 'web-plans-daily-email': net.http_post with x-cron-secret from Vault).
  * Claims every saved plan whose next day is due (around 7 in the person's
- * time zone; Postgres decides, see web_plans_claim) and sends that day. A
+ * time zone; Postgres decides, see web_plans_claim) and sends that day: Days
+ * 2 to 7 with their verse, then Day 8 = "your week is complete". A
  * claimed plan is already marked sent, so a second run never doubles it; a
  * failed send is unclaimed and goes on the next run.
  */
@@ -26,7 +27,7 @@ async function run(req: Request) {
   let sent = 0
   let failed = 0
   for (const p of due) {
-    const msg = dayEmail(p.day, p.days, p.week_title, p.name, p.token)
+    const msg = p.day >= 8 ? completeEmail(p.days, p.week_title, p.name, p.token) : dayEmail(p.day, p.days, p.week_title, p.name, p.token)
     const ok = msg ? await sendEmail(p.email, msg, p.token) : false
     if (ok) sent++
     else {

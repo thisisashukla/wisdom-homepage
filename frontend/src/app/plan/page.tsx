@@ -28,7 +28,7 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 }
 
-export default async function PlanPage({ searchParams }: { searchParams: { t?: string; d?: string; fb?: string } }) {
+export default async function PlanPage({ searchParams }: { searchParams: { t?: string; d?: string; fb?: string; src?: string; w?: string } }) {
   const token = typeof searchParams.t === 'string' && TOKEN_RE.test(searchParams.t) ? searchParams.t : null
   const plan = token ? await getPlan(token) : null
   const day = Number(searchParams.d)
@@ -41,6 +41,8 @@ export default async function PlanPage({ searchParams }: { searchParams: { t?: s
         missing={!!token && !plan}
         initialDay={Number.isInteger(day) && day >= 1 && day <= 7 ? day : null}
         fb={fb}
+        src={typeof searchParams.src === 'string' && /^[a-z_]{1,24}$/.test(searchParams.src) ? searchParams.src : null}
+        welcome={searchParams.w === '1'}
       />
     </div>
   )
