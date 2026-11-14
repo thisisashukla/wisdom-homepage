@@ -61,6 +61,10 @@ export const EVENTS = {
   FactCheckViewed: 'Fact Check Viewed',
   SituationSelected: 'Situation Selected',
   PlanDayOpened: 'Plan Day Opened',
+  // The saved web plan (/plan, opened from the morning emails): page seen, "helped / not for me", emails stopped.
+  PlanPageViewed: 'Plan Page Viewed',
+  PlanDayFeedback: 'Plan Day Feedback',
+  PlanUnsubscribed: 'Plan Unsubscribed',
   // Length plans (30 days, 7 days, a verse a day): a day picked on the verse map or list, a day marked read, a month started.
   PlanDaySelected: 'Plan Day Selected',
   PlanDayCompleted: 'Plan Day Completed',

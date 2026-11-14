@@ -12,6 +12,7 @@ export default function WelcomeScreen({
   name,
   weekTitle,
   emailedTo,
+  daily,
   ready,
   busy,
   error,
@@ -20,6 +21,7 @@ export default function WelcomeScreen({
   name: string | null
   weekTitle: string | null
   emailedTo: string | null
+  daily?: boolean
   ready: boolean
   busy: boolean
   error: string | null
@@ -29,9 +31,13 @@ export default function WelcomeScreen({
   const rows = [
     { icon: 'lotus', text: 'One verse each morning. A few quiet minutes is enough.' },
     { icon: 'journal', text: 'Stay with the line that speaks to you, and carry it into your day.' },
-    emailedTo
-      ? { icon: 'map', text: <>A copy waits in your inbox at <b>{emailedTo}</b>, for the mornings you are away.</> }
-      : { icon: 'map', text: 'Come back here each morning to open the next day.' },
+    daily && emailedTo
+      ? { icon: 'map', text: <>Each morning&apos;s verse comes to <b>{emailedTo}</b> around 7. Day 1 is there now.</> }
+      : daily
+        ? { icon: 'map', text: 'Each morning’s verse comes to your inbox around 7, and opens on any device.' }
+        : emailedTo
+          ? { icon: 'map', text: <>Your week is in your inbox at <b>{emailedTo}</b>, for the mornings you are away.</> }
+          : { icon: 'map', text: 'Come back here each morning to open the next day.' },
   ]
   return (
     <>

@@ -24,15 +24,18 @@ import VerseScreen, { type HookVerse } from './VerseScreen'
 import WeekScreen, { type PreviewDay } from './WeekScreen'
 import PlanScreen, { type FullDay } from './PlanScreen'
 import WelcomeScreen from './WelcomeScreen'
+import { PLAN_TOKEN_KEY } from './PlanView'
 
 /**
  * The Wisdom app's onboarding, on the web (every device, iPhone included). Same screens, copy, icons and motion as
  * wisdom/app/screens/onboarding on branch v3, in the same order: age, life
  * stage, feeling (in their own word), their note, "Curating your plan", the
  * week with every day sealed, then Day 1 brushed open. Value first: no
- * sign-in until Day 1 is read. Then Google sign-in sends the whole free week
- * to their inbox and opens it here (no paywall; Week 1 is free). There is no
- * Day 2 reminder screen or listen step (no push or narration on the web yet).
+ * sign-in until Day 1 is read. Then Google sign-in opens the whole free week
+ * here, saves it (web_plans) and starts the emails: Day 1 now, then one day
+ * each morning around 7 (no paywall; Week 1 is free). The saved week opens on
+ * any device at /plan?t=…; /start?new=1 starts a fresh one. There is no listen
+ * step (no narration on the web yet).
  * The phone-hours screen is out of the
  * flow, as in the app. The logo is drawn once by this shell and never moves;
  * each screen's words fade out and the next rise in.
@@ -50,6 +53,8 @@ type Results = {
   paid?: boolean
   seen?: boolean
   emailedTo?: string | null
+  planToken?: string | null // the saved plan (/plan?t=…), when saving worked
+  daily?: boolean // morning emails are on for it
 }
 type Saved = { v: 1; step: Step; answers: Answers; results: Results; at: number }
 
@@ -82,6 +87,7 @@ export default function StartFlow() {
   const logo = useRef<HTMLDivElement>(null)
   const [vars, setVars] = useState<Record<string, string>>({})
   useEffect(() => setVars(springVars()), [])
+  const entry = useRef<{ ref: string | null; situation: string | null }>({ ref: null, situation: null })
   const answersRef = useRef(answers)
   answersRef.current = answers
   const resultsRef = useRef(results)
@@ -99,7 +105,21 @@ export default function StartFlow() {
       preset.follow = situation.follow
       preset.need = SITUATION_FEELING[situation.id]
     }
-    if (s && ['verse', 'week', 'signin', 'paywall', 'welcome', 'plan'].includes(s.step) && s.results.hook) {
+    entry.current = { ref: q.get('ref') ?? q.get('src') ?? null, situation: situation?.id ?? null }
+    const fresh = q.get('new') === '1'
+    if (fresh) {
+      // "Start a new plan" (from /plan): keep age and life stage, ask the rest again. The new week replaces the old one.
+      q.delete('new')
+      window.history.replaceState(null, '', `${window.location.pathname}${q.toString() ? `?${q}` : ''}`)
+    }
+    if (fresh && s?.answers.age) {
+      setAnswers({ age: s.answers.age, stages: s.answers.stages ?? [], ...preset })
+      setResults({})
+      setStep('feeling')
+      setLogoUp(true)
+    } else if (fresh) {
+      setAnswers((a) => ({ ...a, ...preset }))
+    } else if (s && ['verse', 'week', 'signin', 'paywall', 'welcome', 'plan'].includes(s.step) && s.results.hook) {
       setAnswers(s.answers)
       setResults(s.results)
       setStep(s.results.paid || s.step === 'paywall' || s.step === 'welcome' ? 'plan' : s.step)
@@ -112,8 +132,8 @@ export default function StartFlow() {
       setAnswers((a) => ({ ...a, ...preset }))
     }
     // One id for this onboarding, on every event from here on and on every backend call (lib/onboarding/trace.ts).
-    beginOnboarding(!s || s.step === 'splash')
-    trackEvent(EVENTS.OnboardingViewed, { page: 'Start', source: q.get('ref') ?? q.get('src') ?? 'direct', situation: sit ?? null, resumed: !!s })
+    beginOnboarding(fresh || !s || s.step === 'splash')
+    trackEvent(EVENTS.OnboardingViewed, { page: 'Start', source: entry.current.ref ?? 'direct', situation: sit ?? null, resumed: !!s && !fresh, new_plan: fresh })
   }, [])
 
   useEffect(() => {
@@ -245,10 +265,18 @@ export default function StartFlow() {
     if (!r.sealed) await (weekReq.current ?? loadWeek())
     const sealed = resultsRef.current.sealed
     if (!sealed) throw new Error('no_plan')
-    const plan = await api<{ days: FullDay[]; weeks: string[]; emailed?: boolean; email?: string | null }>('/api/start/unseal', { body: { sealed } })
+    let tz: string | null = null
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || null } catch {}
+    const a = answersRef.current
+    const plan = await api<{ days: FullDay[]; weeks: string[]; emailed?: boolean; email?: string | null; token?: string | null; daily?: boolean }>('/api/start/unseal', {
+      body: { sealed, tz, source: entry.current.ref, situation: entry.current.situation, feeling: a.need ?? null, hookId: resultsRef.current.hook?.id ?? null },
+    })
     const emailedTo = plan.emailed ? plan.email ?? null : null
-    resultsRef.current = { ...resultsRef.current, emailedTo }
-    setResults((p) => ({ ...p, days: plan.days, weeks: plan.weeks, paid: true, emailedTo }))
+    const planToken = plan.token ?? null
+    const daily = !!plan.daily
+    if (planToken) try { localStorage.setItem(PLAN_TOKEN_KEY, planToken) } catch {}
+    resultsRef.current = { ...resultsRef.current, emailedTo, planToken, daily }
+    setResults((p) => ({ ...p, days: plan.days, weeks: plan.weeks, paid: true, emailedTo, planToken, daily }))
   }
   const opening = useRef(false)
   const openWeek = useCallback(async () => {
@@ -414,6 +442,7 @@ export default function StartFlow() {
           name={(user ?? auth.currentUser)?.displayName ?? null}
           weekTitle={weekTitle}
           emailedTo={results.emailedTo ?? null}
+          daily={!!results.daily}
           ready={!!results.paid}
           busy={busy}
           error={error}
@@ -432,6 +461,8 @@ export default function StartFlow() {
           loading={busy}
           error={error}
           emailedTo={results.emailedTo ?? null}
+          planToken={results.planToken ?? null}
+          daily={!!results.daily}
           onRetry={() => (user || auth.currentUser ? openWeek() : go('signin'))}
         />
       )

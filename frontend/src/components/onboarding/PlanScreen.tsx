@@ -34,6 +34,8 @@ export default function PlanScreen({
   loading,
   error,
   emailedTo,
+  planToken,
+  daily,
   onRetry,
 }: {
   days: FullDay[] | null
@@ -44,6 +46,8 @@ export default function PlanScreen({
   loading: boolean
   error: string | null
   emailedTo: string | null
+  planToken?: string | null
+  daily?: boolean
   onRetry: () => void
 }) {
   const [open, setOpen] = useState<number>(1)
@@ -58,7 +62,7 @@ export default function PlanScreen({
             <em>days</em>
           </h1>
           <p className="ob-sub ob-rise" style={{ '--d': '180ms' } as React.CSSProperties}>
-            {paid ? 'Week 1 is yours, free. One a day is enough: open each on its morning.' : loading ? 'Opening your week…' : 'Day 1 is open. The rest of your week is a moment away.'}
+            {paid ? (daily ? 'Week 1 is yours, free. One a day is enough: a new day comes to your inbox each morning.' : 'Week 1 is yours, free. One a day is enough: open each on its morning.') : loading ? 'Opening your week…' : 'Day 1 is open. The rest of your week is a moment away.'}
           </p>
           {weekTitle && (
             <p className="ob-week-chip ob-rise" style={{ '--d': '320ms' } as React.CSSProperties}>
@@ -108,7 +112,15 @@ export default function PlanScreen({
         </div>
         {paid && (
           <p className="ob-plan-foot">
-            {emailedTo ? <>All seven days are in your inbox at <b>{emailedTo}</b>. They&apos;re saved in this browser too.</> : 'Your week is saved in this browser.'}
+            {daily && emailedTo ? (
+              <>Day 1 is in your inbox at <b>{emailedTo}</b>. Day 2 arrives there tomorrow morning, around 7, and one each morning after.</>
+            ) : daily ? (
+              <>Your week is saved. A new day comes to your inbox each morning, around 7.</>
+            ) : emailedTo ? (
+              <>Your week is in your inbox at <b>{emailedTo}</b>, and saved in this browser.</>
+            ) : (
+              'Your week is saved in this browser.'
+            )}
           </p>
         )}
         {error && <p className="ob-error" role="alert">{error}</p>}
@@ -117,9 +129,9 @@ export default function PlanScreen({
         <Cta delay={700} busy={loading} onClick={onRetry}>{loading ? 'Opening your week' : 'Open my week'}</Cta>
       ) : (
         <div className="ob-foot ob-rise" style={{ '--d': '700ms' } as React.CSSProperties}>
-          <a className="ob-cta ob-cta-link" href="/">
+          <a className="ob-cta ob-cta-link" href={planToken ? `/plan?t=${planToken}` : '/'}>
             <span className="ob-cta-live" aria-hidden="true" />
-            <span className="ob-cta-label">Back to Wisdom</span>
+            <span className="ob-cta-label">{planToken ? 'Open my plan page' : 'Back to Wisdom'}</span>
           </a>
         </div>
       )}

@@ -6,11 +6,11 @@ import { GoogleMark, Hero } from './parts'
 
 /**
  * After Day 1 (the app's Ob22b "Keep what you've begun", with Google in place
- * of Apple): they have had their verse; signing in sends the whole free week
- * to their inbox and opens it here.
+ * of Apple): they have had their verse; signing in opens the whole free week
+ * here, and each day comes to their inbox on its morning.
  */
 const KEPT = [
-  { icon: 'journal', text: 'All seven days in your inbox, to read each morning' },
+  { icon: 'journal', text: 'One verse in your inbox each morning, for seven days' },
   { icon: 'map', text: 'Your week opens here too, right away' },
   { icon: 'phone', text: 'Week 1 is free. No card needed.' },
 ]
@@ -18,7 +18,7 @@ const KEPT = [
 export default function SignInScreen({ onSignIn, busy, error, weekTitle }: { onSignIn: () => void; busy: boolean; error: string | null; weekTitle?: string | null }) {
   return (
     <>
-      <Hero title="Get your week" accent="by email" sub={weekTitle ? <>Week 1, <i>{weekTitle.toLowerCase()}</i>: a week of verses chosen for you, free.</> : 'A week of verses chosen for you, free. Sign in and we send them to you.'} />
+      <Hero title="Get your week" accent="by email" sub={weekTitle ? <>Week 1, <i>{weekTitle.toLowerCase()}</i>: a week of verses chosen for you, free.</> : 'A week of verses chosen for you, free. Sign in and we send you one each morning.'} />
       <div className="ob-kept ob-rise" style={{ '--d': '320ms', '--dy': '12px' } as React.CSSProperties}>
         {KEPT.map((k) => (
           <div key={k.text} className="ob-kept-row">
