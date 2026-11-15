@@ -43,6 +43,10 @@ export const EVENTS = {
   DisclosureOpened: 'Disclosure Opened',
   FeedbackSubmitted: 'Feedback Submitted',
   FeedbackContentRated: 'Feedback Content Rated',
+  /** Visible, active time on a page crossed 15 / 60 / 180 s: { engaged_sec, max_scroll_pct }. */
+  PageEngaged: 'Page Engaged',
+  /** Sent once when the page is hidden or closed, with the visible active time: { engaged_sec, max_scroll_pct }. */
+  PageLeft: 'Page Left',
 
   // ── Scripture content, shared by every funnel and the quote pages ───────
   ScriptToggled: 'Script Toggled',
@@ -226,6 +230,8 @@ export const EVENTS = {
   ResumeCardViewed: 'Resume Card Viewed',
   ResumeCardClicked: 'Resume Card Clicked',
   VerseRead: 'Verse Read',
+  /** The "from your list" bar on a verse page: { trail_from, trail_index, trail_total }. */
+  TrailBarViewed: 'Trail Bar Viewed',
   ChapterReadModeOpened: 'Chapter Read Mode Opened',
   PlayAllStarted: 'Play All Started',
   PlayAllCompleted: 'Play All Completed',

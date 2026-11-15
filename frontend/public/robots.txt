@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+# Share images (og:image, Article image) must stay fetchable for Google and link previews.
+Allow: /api/og/
 Disallow: /api/
 # Search result URLs (?q=) repeat /search; the bare /search and /hi/search pages stay crawlable.
 Disallow: /search?

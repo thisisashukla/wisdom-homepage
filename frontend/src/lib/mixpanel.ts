@@ -84,6 +84,22 @@ function withContext(props?: Record<string, unknown>): Record<string, unknown> {
   return out
 }
 
+const BOT_UA = /bot|crawl|spider|slurp|headless|lighthouse|inspectiontool|bingpreview|facebookexternalhit|prerender|phantom|puppeteer|playwright/i
+
+/**
+ * Why this browser looks automated, or 'none'. Sent as the `bot_signal` super property on every
+ * event so reports can keep `bot_signal = none`. Nothing is dropped here: the tag is the filter.
+ */
+export function botSignal(): string {
+  if (typeof window === 'undefined') return 'none'
+  const nav = window.navigator
+  if (nav.webdriver) return 'webdriver'
+  if (BOT_UA.test(nav.userAgent || '')) return 'user_agent'
+  if (!nav.languages || nav.languages.length === 0) return 'no_languages'
+  if (!window.screen || window.screen.width === 0 || window.screen.height === 0) return 'no_screen'
+  return 'none'
+}
+
 export function initMixpanel() {
   if (initialised || typeof window === 'undefined') return
   mixpanel.init(TOKEN, {
@@ -92,6 +108,11 @@ export function initMixpanel() {
     ignore_dnt: true,
   })
   initialised = true
+  try {
+    mixpanel.register({ bot_signal: botSignal() })
+  } catch {
+    // not ready
+  }
 }
 
 function send(event: EventName, props: Record<string, unknown> | undefined, beacon: boolean) {

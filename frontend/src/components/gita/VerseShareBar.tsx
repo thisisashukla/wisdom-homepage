@@ -20,9 +20,11 @@ export type VerseShareBarProps = {
   line: string
   /** Analytics location of the bar. Default "verse_page". */
   location?: string
+  /** 'compact' for the verse page, where sharing sits below the explanation. */
+  size?: 'default' | 'compact'
 }
 
-export default function VerseShareBar({ chapter, verse, lang, line, location = 'verse_page' }: VerseShareBarProps) {
+export default function VerseShareBar({ chapter, verse, lang, line, location = 'verse_page', size }: VerseShareBarProps) {
   const id = verseItemId(chapter, verse)
   const title = lang === 'hi' ? `भगवद् गीता ${chapter}.${verse}` : `Bhagavad Gita ${chapter}.${verse}`
   const link = `https://wisdomquotes.in${verseUrl(chapter, verse, lang)}`
@@ -33,6 +35,7 @@ export default function VerseShareBar({ chapter, verse, lang, line, location = '
       item={{ id, type: 'verse' }}
       locale={lang}
       featured="status"
+      size={size}
       copyText={copy}
       shareText={copy.replace(link, `${link}?utm_source=whatsapp`)}
       image={{

@@ -5,6 +5,7 @@
  */
 import { getAllChapters, getChapterVerses, getChapterHindiCommentary, verseUrl, chapterUrl } from '@/lib/gita'
 import { SITE } from '@/lib/seo'
+import { verseRoman } from '@/lib/verseText'
 
 export const dynamic = 'force-static'
 
@@ -20,7 +21,7 @@ Source: ${SITE}
 Index of the site: ${SITE}/llms.txt
 
 This file lists every verse of the Bhagavad Gita (18 chapters) as published on wisdomquotes.in.
-For each verse: the reference (BG chapter.verse), the page URL, the Sanskrit in Devanagari, and the English translation.
+For each verse: the reference (BG chapter.verse), the page URL, the Sanskrit in Devanagari, the same in IAST transliteration, and the English translation.
 Each verse page also has the Hindi translation, word-by-word meaning, a short essence line and commentary.
 
 Numbering: chapter 13 here opens with Arjuna's question as 13.1, which some editions leave out.
@@ -65,8 +66,9 @@ export async function GET() {
       `\n## Chapter ${ch.number}: ${ch.enName} (${ch.enTitle})\n${ch.hiName} | ${verses.length} verses | ${SITE}${chapterUrl(ch.number)}\n`,
     )
     for (const v of verses) {
+      const iast = verseRoman(v.sanskrit).lines.map((l) => l.iast).join(' / ')
       parts.push(
-        `BG ${v.chapter}.${v.verse} | ${SITE}${verseUrl(v.chapter, v.verse)}\n${cleanSanskrit(v.sanskrit)}\n${oneLine(v.englishTranslation)}\n`,
+        `BG ${v.chapter}.${v.verse} | ${SITE}${verseUrl(v.chapter, v.verse)}\n${cleanSanskrit(v.sanskrit)}\n${iast ? `IAST: ${iast}\n` : ''}${oneLine(v.englishTranslation)}\n`,
       )
     }
   }

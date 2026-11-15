@@ -192,3 +192,58 @@ body:has(.rd-player--docked) { padding-bottom: calc(96px + env(safe-area-inset-b
   .rd-player--docked { animation: rd-fade var(--t-quick) linear both; }
   .rd-icon-btn, .rd-verses > li { transition: none; }
 }
+
+/* ── trail bar (verse page, reader came from a list) ─────────────────────── */
+.rd-trail {
+  margin: 0 0 22px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: radial-gradient(120% 160% at 100% 0%, rgba(245, 201, 106, 0.07), rgba(0, 0, 0, 0) 60%), var(--bg-leaf);
+  font-family: var(--font-ui);
+  animation: rd-fade var(--t-std) var(--ease) both;
+}
+.rd-trail:lang(hi) { font-family: var(--font-deva-ui); }
+.rd-trail-head { display: flex; align-items: baseline; gap: 6px 12px; flex-wrap: wrap; }
+.rd-trail-head .sx-eyebrow { margin: 0; flex-basis: 100%; }
+.rd-trail-label { min-width: 0; flex: 1 1 auto; color: var(--gold-light); font-weight: 600; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rd-trail-label:hover { text-decoration: underline; text-underline-offset: 3px; }
+.rd-trail-count { font-size: 13px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.rd-trail-steps { display: flex; gap: 4px; margin: 10px 0 12px; }
+.rd-trail-steps > span { flex: 1 1 0; max-width: 28px; height: 4px; border-radius: var(--r-pill); background: var(--gold-dim); }
+.rd-trail-steps > span.is-done { background: rgba(245, 201, 106, 0.45); }
+.rd-trail-steps > span.is-here { background: var(--gold-light); }
+.rd-trail-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap; }
+.rd-trail-prev { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--text-dim); text-decoration: none; font-size: 14px; }
+.rd-trail-prev:hover { color: var(--text); }
+.rd-trail-done { font-size: 14px; color: var(--text-dim); }
+.rd-trail-next { margin-left: auto; }
+.rd-trail a:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+@media (max-width: 560px) {
+  .rd-trail-next { width: 100%; justify-content: center; }
+}
+
+/* ── story jumps (chapter 1: where the story turns) ──────────────────────── */
+.rd-jumps {
+  margin: 28px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--bg-leaf);
+  font-family: var(--font-ui);
+}
+.rd-jumps:lang(hi) { font-family: var(--font-deva-ui); }
+.rd-jumps-lead { margin: 6px 0 14px; color: var(--text-dim); font-size: 15px; line-height: 1.6; }
+.rd-jumps-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.rd-jumps-list a {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 52px; padding: 10px 14px;
+  border: 1px solid var(--border); border-radius: var(--r-sm, 10px);
+  color: var(--text); text-decoration: none;
+  transition: border-color var(--t-quick) var(--ease-out);
+}
+.rd-jumps-list a:hover { border-color: var(--border-strong); }
+.rd-jumps-list a:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+.rd-jumps-text { min-width: 0; }
+.rd-jumps-title { display: block; font-weight: 600; color: var(--gold-light); }
+.rd-jumps-sub { display: block; font-size: 13.5px; color: var(--text-dim); }

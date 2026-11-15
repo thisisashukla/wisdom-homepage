@@ -540,3 +540,17 @@ h1, h2, h3 { text-wrap: balance; }
     text-align: center;
   }
 }
+
+/* ── audio: listen to the next verse ─────────────────────────────────────── */
+.verse-audio-next {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 12px; min-height: 44px; padding: 0 16px;
+  border: 1px solid var(--border-strong, rgba(200,136,30,0.45)); border-radius: var(--r-pill, 999px);
+  color: var(--gold-light); text-decoration: none; font-weight: 600; font-size: 14px;
+  animation: verse-audio-fade 240ms ease both;
+}
+.verse-audio-next:hover { background: rgba(245, 201, 106, 0.08); }
+.verse-audio-btn.is-nudge { animation: rd-nudge 1.4s ease-in-out infinite; }
+@keyframes rd-nudge { 0%, 100% { box-shadow: 0 0 0 0 rgba(245, 201, 106, 0.45); } 50% { box-shadow: 0 0 0 10px rgba(245, 201, 106, 0); } }
+@media (prefers-reduced-motion: reduce) { .verse-audio-btn.is-nudge { animation: none; } }
+@keyframes verse-audio-fade { from { opacity: 0; } to { opacity: 1; } }

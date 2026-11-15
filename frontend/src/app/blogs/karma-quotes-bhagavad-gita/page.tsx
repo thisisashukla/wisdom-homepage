@@ -140,6 +140,12 @@ const pageCSS = `
   .karma-notes p { font-size: 15px; line-height: 1.75; margin-bottom: 0.9rem; }
   .karma-essence { font-family: "Playfair Display", Georgia, serif; font-style: italic; color: var(--text); }
   .karma-step { margin: 8px auto 0; }
+
+  .karma-readon { margin: 1.6rem 0 2.2rem; padding: 18px 20px; border: 1px solid var(--border); border-radius: 14px; background: radial-gradient(120% 160% at 0% 0%, rgba(245,201,106,0.08), rgba(0,0,0,0) 60%), var(--bg-card); }
+  .karma-readon-eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 6px; }
+  .karma-readon p { font-size: 15.5px; line-height: 1.65; color: var(--text-dim); margin: 0 0 14px; }
+  .karma-readon a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; background: linear-gradient(135deg, var(--gold) 0%, #e0a24a 100%); color: #120505; font-weight: 700; font-size: 14.5px; text-decoration: none; }
+  .karma-readon a:hover { filter: brightness(1.06); }
 `
 
 const PAGE_NAME = 'Quotes: Karma EN'
@@ -181,6 +187,7 @@ function KarmaVerse({ id, position, ...shloka }: ShlokaCardProps & { id: string;
         moment="karma"
         position={position}
         audioSrc={audioFor(quote)}
+        readOn={false}
       />
       {(translation || shloka.insight || essence) && (
         <div className="karma-notes">
@@ -383,6 +390,17 @@ export default function KarmaQuotesPage() {
         <p>
           <a href="/gita/chapter/2/verse/47" data-mp-location="quote_full_2_47" style={{ color: 'var(--gold-light)' }}>Read the full verse page for 2.47 →</a>
         </p>
+
+        <aside className="karma-readon" data-mp-section="karma_readon_2_47" aria-label="Read on from 2.47">
+          <div className="karma-readon-eyebrow">Stay with this verse a little longer</div>
+          <p>
+            Verses 2.47 to 2.53 are where Krishna shows Arjuna how to act fully and still let the outcome go.
+            Seven verses, each with the Sanskrit recitation. About five quiet minutes.
+          </p>
+          <a href="/gita/chapter/2/verse/47" data-mp-location="karma_readon_2_47">
+            Hear 2.47 and read on <span aria-hidden="true">→</span>
+          </a>
+        </aside>
 
         <h2 id="bg-2-48">2. Bhagavad Gita 2.48 — Evenness of Mind is Yoga</h2>
         <KarmaVerse

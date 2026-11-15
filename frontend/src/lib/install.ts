@@ -50,7 +50,7 @@ export const installExcluded = (path: string | null | undefined): boolean =>
  */
 export function bottomBarVisible(): boolean {
   if (!isBrowser()) return false
-  const els = document.querySelectorAll<HTMLElement>('.rd-player--docked, .gv-versenav:not([data-hidden]), .qbar')
+  const els = document.querySelectorAll<HTMLElement>('.rd-player--docked, .vp-stickynav, .qbar')
   for (const el of Array.from(els)) {
     if (el.getClientRects().length > 0 && getComputedStyle(el).visibility !== 'hidden') return true
   }

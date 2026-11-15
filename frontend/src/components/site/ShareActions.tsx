@@ -14,14 +14,12 @@
  */
 
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import dynamic from 'next/dynamic'
 import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import type { Locale } from '@/lib/locale'
 import { claimFirstAction, ensureToast, hideToast, showToast, writeClipboard, type SheetAction } from '@/components/quotes/session'
 import { Icon } from '@/components/quotes/Icons'
+import NextStepSheet, { loadNextStepSheet } from '@/components/quotes/SafeNextStepSheet'
 import '@/components/quotes/card.css'
-
-const NextStepSheet = dynamic(() => import('@/components/quotes/NextStepSheet'), { ssr: false })
 
 export type ShareFormat = 'post' | 'status'
 
@@ -135,7 +133,12 @@ export default function ShareActions({
   useEffect(() => {
     setCanNative(typeof navigator !== 'undefined' && typeof navigator.share === 'function')
     ensureToast()
+    // Fetch the sheet's code now, not at the moment a save hands off a download.
+    const preload = setTimeout(() => {
+      if (nextStep) loadNextStepSheet().catch(() => {})
+    }, 1500)
     return () => {
+      clearTimeout(preload)
       const a = audioRef.current
       if (a) {
         a.pause()
@@ -146,10 +149,12 @@ export default function ShareActions({
 
   const base = { item_id: item.id, item_type: item.type, ...props }
 
-  const confirm = (action: SheetAction, msg?: string) => {
+  const confirm = (action: SheetAction, msg?: string, delay = 0) => {
     if (nextStep && claimFirstAction()) {
       hideToast()
-      setSheet(action)
+      // After a download, let the browser finish handing the file off before the sheet mounts.
+      if (delay) setTimeout(() => setSheet(action), delay)
+      else setSheet(action)
     } else if (msg) showToast(msg)
   }
 
@@ -201,6 +206,7 @@ export default function ShareActions({
       // Warm both images so the tap below still counts as a user gesture for share().
       getBlob('post').catch(() => {})
       getBlob('status').catch(() => {})
+      if (nextStep) loadNextStepSheet().catch(() => {})
     }
     setSaveOpen(!saveOpen)
   }
@@ -265,7 +271,7 @@ export default function ShareActions({
       setBusy(false)
     }
     trackEvent(EVENTS.QuoteImageSaved, { ...base, format, method: via })
-    confirm('saved', from === 'featured' ? t.featuredSaved : t.saved)
+    confirm('saved', from === 'featured' ? t.featuredSaved : t.saved, via === 'download' ? 600 : 0)
   }
 
   const toggleAudio = () => {
@@ -297,6 +303,7 @@ export default function ShareActions({
   const count = 2 + (image ? 1 : 0) + (audioSrc ? 1 : 0) + (canNative ? 1 : 0) + (extra ? 1 : 0)
   const warmStatus = () => {
     getBlob('status').catch(() => {})
+    if (nextStep) loadNextStepSheet().catch(() => {})
   }
 
   return (

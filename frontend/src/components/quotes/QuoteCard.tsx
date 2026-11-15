@@ -25,6 +25,7 @@ import ShareActions from '@/components/site/ShareActions'
 import { MoreBody } from './QuoteMore'
 import KeepButton from './KeepButton'
 import { useKeepHub } from './KeepScope'
+import { parseVerseHref } from '@/lib/trail'
 import './card.css'
 
 export type QuoteCardProps = {
@@ -57,11 +58,16 @@ export type QuoteCardProps = {
   scriptToggle?: boolean
   /** Server-rendered More body (context and the three lines). */
   children?: ReactNode
+  /**
+   * List cards of Gita lines: a "hear it and read on" link into the verse reader. Default true.
+   * The click also starts a trail (lib/trail.ts), so the verse page keeps this list.
+   */
+  readOn?: boolean
 }
 
 const T = {
-  en: { copyBio: 'Copy line', more: 'More', less: 'Less', bio: 'Fits your bio', chars: (n: number) => `${n} characters`, another: 'Another line' },
-  hi: { copyBio: 'श्लोक कॉपी', more: 'और पढ़ें', less: 'कम दिखाएं', bio: 'बायो में फ़िट', chars: (n: number) => `${n} अक्षर`, another: 'एक और श्लोक' },
+  en: { copyBio: 'Copy line', more: 'More', less: 'Less', bio: 'Fits your bio', chars: (n: number) => `${n} characters`, another: 'Another line', readOn: (ref: string) => `Hear it and read on from ${ref}` },
+  hi: { copyBio: 'श्लोक कॉपी', more: 'और पढ़ें', less: 'कम दिखाएं', bio: 'बायो में फ़िट', chars: (n: number) => `${n} अक्षर`, another: 'एक और श्लोक', readOn: (ref: string) => `${ref} सुनें और आगे पढ़ें` },
 } as const
 
 const SIZE = { list: 'default', hero: 'hero', compact: 'compact' } as const
@@ -83,6 +89,7 @@ export default function QuoteCard({
   startSituation,
   scriptToggle,
   children,
+  readOn = true,
 }: QuoteCardProps) {
   const t = T[locale]
   const full = isQuoteView(quote) ? null : quote
@@ -98,6 +105,7 @@ export default function QuoteCard({
   const padas = view.sa.split(/(?<=[।॥])\s+/u).filter(Boolean)
   const moreId = `${id}-more`
   const showAnother = variant === 'hero' && Boolean(anotherHref)
+  const readOnRef = readOn && variant === 'list' ? parseVerseHref(view.href) : null
 
   const label =
     bio && view.bioSafe ? (
@@ -144,12 +152,21 @@ export default function QuoteCard({
                 ) : undefined
               }
             />
-          {(moreBody || showAnother) && (
+          {(moreBody || showAnother || readOnRef) && (
             <div className="qc-foot">
               {moreBody && (
                 <button type="button" className="qc-more" aria-expanded={expanded} aria-controls={expanded ? moreId : undefined} onClick={() => setExpanded((v) => !v)}>
                   {expanded ? t.less : t.more}
                 </button>
+              )}
+              {readOnRef && view.href && (
+                <a
+                  className="qc-link qc-another qc-readon"
+                  href={view.href}
+                  data-mp-location="quote_read_on"
+                >
+                  {t.readOn(`${readOnRef.ch}.${readOnRef.vs}`)} <span aria-hidden="true">→</span>
+                </a>
               )}
               {showAnother && (
                 <a className="qc-link qc-another" href={anotherHref!}>

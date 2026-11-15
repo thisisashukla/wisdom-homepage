@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useCallback, useEffect } from 'react'
 import type { AudioTimestamp } from '@/lib/gita'
-import { verseAudioUrl } from '@/lib/gitaUrls'
+import { verseAudioUrl, verseUrl } from '@/lib/gitaUrls'
 import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import SanskritText from './SanskritText'
 
@@ -15,10 +15,21 @@ interface Props {
   verse?: number
   /** UI language for the caption and button labels. */
   locale?: 'en' | 'hi'
+  /**
+   * Next verse of the Gita. When the recitation ends, a "listen to the next verse" link appears;
+   * it opens the next verse page with #listen, which starts its recitation (or, where the browser
+   * blocks autoplay, pulses the play button so one tap carries on).
+   */
+  next?: { chapter: number; verse: number } | null
 }
 
-export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, verse, locale = 'en' }: Props) {
+const LISTEN_HASH = '#listen'
+
+export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, verse, locale = 'en', next = null }: Props) {
   const hi = locale === 'hi'
+  const [ended, setEnded] = useState(false)
+  const [nudge, setNudge] = useState(false)
+  const chained = useRef(false)
   const audioRef = useRef<HTMLAudioElement>(null)
   const rafRef = useRef<number>(0)
   const hasTracked = useRef(false)
@@ -75,6 +86,8 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
     if (!audio) return
     const onPlay = () => {
       setPlaying(true)
+      setNudge(false)
+      setEnded(false)
       rafRef.current = requestAnimationFrame(tick)
       if (!hasTracked.current) {
         hasTracked.current = true
@@ -83,11 +96,13 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
           verse,
           shloka: chapter && verse ? `${chapter}.${verse}` : undefined,
           page: window.location.pathname,
+          trigger: chained.current ? 'chain' : 'tap',
         })
       }
     }
     const onPause = () => { setPlaying(false); cancelAnimationFrame(rafRef.current) }
     const onEnded = () => {
+      setEnded(true)
       setPlaying(false)
       setActiveIdx(-1)
       setRevealIdx(timestamps.length)
@@ -111,6 +126,16 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
     }
   }, [tick])
 
+  // Arrived from the previous verse's "listen next": carry the recitation on.
+  useEffect(() => {
+    if (typeof window === 'undefined' || window.location.hash !== LISTEN_HASH) return
+    const audio = audioRef.current
+    if (!audio) return
+    chained.current = true
+    history.replaceState(null, '', window.location.pathname + window.location.search)
+    audio.play().catch(() => setNudge(true))
+  }, [])
+
   const fmt = (s: number) => {
     const m = Math.floor(s / 60)
     const sec = Math.floor(s % 60).toString().padStart(2, '0')
@@ -129,7 +154,7 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
 
       <div className="verse-audio-controls">
         <button
-          className="verse-audio-btn"
+          className={`verse-audio-btn${nudge ? ' is-nudge' : ''}`}
           onClick={toggle}
           aria-label={hi ? (playing ? 'पाठ रोकें' : 'संस्कृत पाठ सुनें') : (playing ? 'Pause recitation' : 'Play Sanskrit recitation')}
           disabled={loadError}
@@ -150,10 +175,20 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
             {hi ? 'संस्कृत पाठ' : 'Sanskrit recitation'}
           </a>
           <span className="verse-audio-time">
-            {fmt(currentTime)}{duration ? ` / ${fmt(duration)}` : ''}
+            {nudge ? (hi ? 'सुनना जारी रखने के लिए दबाएँ' : 'Tap to keep listening') : <>{fmt(currentTime)}{duration ? ` / ${fmt(duration)}` : ''}</>}
           </span>
         </div>
       </div>
+      {ended && next && (
+        <a
+          className="verse-audio-next"
+          href={verseUrl(next.chapter, next.verse, locale) + LISTEN_HASH}
+          data-mp-location={`verse_${chapter}_${verse}_audio_next`}
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+          {hi ? `अगला श्लोक सुनें · ${next.chapter}.${next.verse}` : `Listen to ${next.chapter}.${next.verse} next`}
+        </a>
+      )}
     </div>
   )
 }

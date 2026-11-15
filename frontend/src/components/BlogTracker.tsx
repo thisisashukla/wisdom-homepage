@@ -3,6 +3,8 @@
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { EVENTS, trackPageViewed, trackLinkClick, trackEvent, trackEventBeacon, trackDynamic, funnelForPath, setPageContext } from '@/lib/mixpanel'
+import { useEngagedTime } from '@/lib/analytics/useEngagedTime'
+import { captureTrail } from '@/lib/trail'
 
 interface BlogTrackerProps {
   /**
@@ -24,6 +26,19 @@ export function BlogTracker({ pageName }: BlogTrackerProps) {
     trackPageViewed(pageName, pathname)
     return () => setPageContext(null)
   }, [pageName, pathname])
+
+  // ── Engaged time (Page Engaged at 15/60/180 s, Page Left with the total) ────
+  useEngagedTime(pageName, pathname)
+
+  // ── Trails: a verse link clicked on a list page keeps the list for the verse pages ──
+  useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      const link = (event.target as HTMLElement | null)?.closest?.<HTMLAnchorElement>('a[href]')
+      if (link) captureTrail(link)
+    }
+    document.addEventListener('click', onClick, true)
+    return () => document.removeEventListener('click', onClick, true)
+  }, [])
 
   // ── Link Click tracking (a[data-mp-location]) ──────────────────────────────
   // Delegated, so links rendered after mount (menus, sheets, client lists) count too.

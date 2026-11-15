@@ -10,8 +10,8 @@ import {
   getTopicBridgesForVerse,
   getVerseAudio,
   verseUrl,
+  verseAudioUrl,
   chapterUrl,
-  chapterImage,
   hasTopic,
   topicUrl,
   findTopicForConcept,
@@ -19,34 +19,30 @@ import {
   splitSpeaker,
 } from '@/lib/gita'
 import type { IndexEntry } from '@/lib/gita'
+import { verseRoman, fitDescription, withExtras, capFirst } from '@/lib/verseText'
 import ReadingTracker from '@/components/reader/ReadingTracker'
+import TrailBar from '@/components/reader/TrailBar'
+import StoryJumps from '@/components/reader/StoryJumps'
 import { VERSE_TRANSLATION_ID } from '@/components/reader/ids'
 import VerseShareBar from '@/components/gita/VerseShareBar'
-import WhatsAppDaily from '@/components/daily/WhatsAppDailyLazy'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
 import BlogTracker from '@/components/BlogTracker'
-import FeedbackWidget from '@/components/FeedbackWidget'
-import VerseBookmark from '@/components/gita/VerseBookmark'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
-import { plansForVerse, PHASE_LABEL } from '@/lib/themePlans'
-import VerseNavReveal from '@/components/gita/VerseNavReveal'
 import SanskritText from '@/components/gita/SanskritText'
-import MantraCards from '@/components/gita/MantraCards'
-import QuoteCard from '@/components/quotes/QuoteCard'
-import { getQuote, quotesByMoment, verseHref } from '@/lib/quotes'
-import type { Quote, Locale } from '@/lib/quotes'
+import { plansForVerse } from '@/lib/themePlans'
+import VerseRomanLines from '@/components/gita/verse/VerseRomanLines'
+import VerseWordByWord from '@/components/gita/verse/VerseWordByWord'
+import VerseExplain from '@/components/gita/verse/VerseExplain'
+import VerseBridge from '@/components/gita/verse/VerseBridge'
+import VerseNextCard from '@/components/gita/verse/VerseNextCard'
+import VerseEssays from '@/components/gita/verse/VerseEssays'
+import VerseRelated, { type ThemeLink } from '@/components/gita/verse/VerseRelated'
+import VerseStickyNav from '@/components/gita/verse/VerseStickyNav'
 
 type Params = { chapter: string; verse: string }
 
-/** Verse page of the next-ranked Gita quote that shares this quote's first moment. */
-function anotherLineHref(quote: Quote, locale: Locale): string | null {
-  const moment = quote.moments?.[0]
-  if (!moment) return null
-  const list = quotesByMoment(moment).filter((q) => verseHref(q, locale))
-  if (list.length < 2) return null
-  const i = list.findIndex((q) => q.id === quote.id)
-  return verseHref(list[(i + 1) % list.length], locale)
-}
+/** Content of the verse pages changed on this date (layout, transliteration, schema). */
+const DATE_MODIFIED = '2026-11-15'
 
 export async function generateStaticParams() {
   const out: Params[] = []
@@ -58,48 +54,29 @@ export async function generateStaticParams() {
   return out
 }
 
-/** Trim a string to ~maxChars without breaking a word; appends ellipsis. */
-const trimToLength = (s: string, maxChars: number): string => {
-  if (!s) return ''
-  const collapsed = s.replace(/\s+/g, ' ').trim()
-  if (collapsed.length <= maxChars) return collapsed
-  const cut = collapsed.slice(0, maxChars)
-  const lastSpace = cut.lastIndexOf(' ')
-  return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:—-]$/, '') + '…'
-}
-
-/** Whole sentences of `text` that fit in `max` chars; falls back to a word-boundary trim. */
-const fitSentences = (text: string | undefined, max: number): string => {
-  const clean = (text || '').replace(/\s+/g, ' ').trim()
-  if (clean.length <= max) return clean
+/** Leading words of `plain` that fit in `max` characters, title-cased ("Dharmakshetre Kurukshetre"). */
+const titleWords = (plain: string, max: number): string => {
   let out = ''
-  for (const s of clean.split(/(?<=[.!?।॥])\s+/)) {
-    const next = out ? `${out} ${s}` : s
+  for (const w of plain.split(' ')) {
+    const next = out ? `${out} ${w}` : w
     if (next.length > max) break
     out = next
   }
-  return out || trimToLength(clean, max)
+  // Don't end on a particle ("Karmanyevadhikaraste Ma"): drop trailing words of 1 to 2 letters.
+  const words = out.split(' ').filter(Boolean)
+  while (words.length > 1 && words[words.length - 1].length <= 2) words.pop()
+  return words.map(capFirst).join(' ')
 }
 
-/**
- * Extract the first pada (half-line) of a Devanagari shloka.
- * Splits on ।, ॥, |, ॥, and newlines. Trims to ~50 chars.
- * Used in verse-page titles so Google's SERP shows a distinctive
- * fingerprint for each verse — helps rank for verse-number queries
- * like "9.23", "2.71" where Sanskrit-quoting competitors dominate.
- */
-const firstDevaPada = (sanskrit: string, maxChars = 50): string => {
-  if (!sanskrit) return ''
-  const first = sanskrit
-    .split(/[।॥|\n\r]/)[0]
-    ?.replace(/\s+/g, ' ')
-    .trim()
-  if (!first) return ''
-  if (first.length <= maxChars) return first
-  const cut = first.slice(0, maxChars)
-  const lastSpace = cut.lastIndexOf(' ')
-  return (lastSpace > 20 ? cut.slice(0, lastSpace) : cut) + '…'
-}
+/** Parse "कर्मणि (in action) / एव (only)" into words with glosses. */
+const parseLiteral = (literal?: string) =>
+  (literal || '')
+    .split(' / ')
+    .map((token) => {
+      const m = token.match(/^(.+?)\s+\((.+?)\)$/)
+      return m ? { sa: m[1].trim(), gloss: m[2].trim() } : null
+    })
+    .filter((x): x is { sa: string; gloss: string } => x !== null)
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const c = Number(params.chapter)
@@ -107,21 +84,23 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const verse = await getVerse(c, v)
   if (!verse) return { title: 'Verse not found' }
   const ch = getChapter(c)
+  const roman = verseRoman(verse.sanskrit)
 
-  // ── Title: "Bhagavad Gita c.v" + "BG c.v" (the two forms GSC queries use).
-  //    No "Hindi" here — /hi/gita/... is the Hindi page, and claiming both
-  //    made the two locales compete for the same query. ──
-  const title = `Bhagavad Gita ${c}.${v} (BG ${c}.${v}): Meaning & Commentary`
+  // ── Title: both reference forms searchers use (Bhagavad Gita c.v, BG c.v) plus the verse's
+  //    opening words in Roman, which is how famous verses are searched ("karmanye vadhikaraste
+  //    meaning"). No "Hindi": /hi/gita/... is the Hindi page. ──
+  const words = titleWords(roman.plainFirst, 26)
+  const title = words
+    ? `Bhagavad Gita ${c}.${v} (BG ${c}.${v}): ${words} Meaning`
+    : `Bhagavad Gita ${c}.${v} (BG ${c}.${v}): Meaning and Commentary`
 
-  // ── Description: answer first. English searchers can't read the Devanagari
-  //    opening, so the plain-English meaning leads; then what's on the page. ──
-  const descLead = verse.simpleMeaning || verse.englishTranslation || verse.detailedMeaning
-  const descPrefix = `BG ${c}.${v} meaning: `
-  const descSuffix = ' Sanskrit, transliteration and word meanings.'
-  const description = `${descPrefix}${fitSentences(descLead, 158 - descPrefix.length - descSuffix.length)}${descSuffix}`
-  void firstDevaPada
+  // ── Description: the opening line in Roman, then the meaning in whole sentences. ──
+  const open = roman.plainFirst ? `${capFirst(roman.plainFirst)}. ` : ''
+  const lead = fitDescription([verse.simpleMeaning, verse.englishTranslation, verse.essence], 155 - open.length)
+  const description = withExtras(`${open}${lead}`, ['With Sanskrit, IAST and word meanings.'], 158)
 
   const ogImage = `https://wisdomquotes.in/api/og/gita/${c}/${v}`
+  const shareTitle = `Bhagavad Gita ${c}.${v}${roman.plainFirst ? `: ${capFirst(roman.plainFirst)}` : ''}`
   return {
     title,
     description,
@@ -131,6 +110,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       `gita ${c}.${v}`,
       `${c}.${v}`,
       `bhagavad gita chapter ${c} verse ${v}`,
+      roman.plainFirst,
       ch ? `${ch.enName.toLowerCase()}` : '',
     ].filter(Boolean).join(', '),
     alternates: {
@@ -144,7 +124,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       },
     },
     openGraph: {
-      title: `Bhagavad Gita ${c}.${v} — ${verse.essence || ''}`,
+      title: shareTitle,
       description: verse.englishTranslation,
       url: `https://wisdomquotes.in${verseUrl(c, v)}`,
       type: 'article',
@@ -155,7 +135,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Bhagavad Gita ${c}.${v} — ${verse.essence || ''}`,
+      title: shareTitle,
       description: verse.englishTranslation,
       images: [ogImage],
     },
@@ -173,45 +153,30 @@ export default async function VersePage({ params }: { params: Params }) {
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const audio = getVerseAudio(c, v)
   const blogLinks = getBlogLinksForVerse(c, v)
-  const quote = getQuote(`bg-${c}-${v}`)
-  const inPlans = plansForVerse(c, v)
+  const firstPlan = plansForVerse(c, v)[0]
+  const roman = verseRoman(verse.sanskrit)
+  const words = parseLiteral(verse.translationLiteral)
+  const ref = `${c}.${v}`
+  const verseName = `Bhagavad Gita ${ref}`
 
-  // ── V3 enrichment: raw pipeline labels → human copy ──
-  const typeLabel = ({
-    teaching:    'A core teaching',
-    declaration: 'A declaration',
-    narrative:   'A story moment',
-    inquiry:     'A question',
-    devotional:  'A devotional verse',
-    metaphor:    'A metaphor',
-    description: 'A description',
-  } as Record<string, string>)[verse.verseType ?? '']
-  const toneLabel = verse.tone ? `${verse.tone} in mood` : undefined
-  const depthNote = ({
-    surface: 'easy to enter',
-    medium:  'a little context helps',
-    deep:    'builds on earlier teachings',
-  } as Record<string, string>)[verse.depth ?? '']
-  const heroNote = [typeLabel, toneLabel, depthNote].filter(Boolean).join(' · ')
-  const conceptLinks = (verse.requisiteConcepts ?? []).map((name) => ({
-    name,
-    topic: findTopicForConcept(name),
-  }))
-
-  const wordByWord = verse.translationLiteral
-    ? verse.translationLiteral
-        .split(' / ')
-        .map(token => {
-          const m = token.match(/^(.+?)\s+\((.+?)\)$/)
-          return m ? { sanskrit: m[1].trim(), gloss: m[2].trim() } : null
-        })
-        .filter((x): x is { sanskrit: string; gloss: string } => x !== null)
-    : []
+  // One row of theme links: the verse's topics, then the concepts it builds on, then bridges.
+  const themes: ThemeLink[] = []
+  const seen = new Set<string>()
+  const addTheme = (slug: string, label: string, count?: number) => {
+    if (seen.has(slug) || themes.length >= 6) return
+    seen.add(slug)
+    themes.push({ slug, href: topicUrl(slug), label, count })
+  }
+  verse.tags.filter(hasTopic).forEach((t) => addTheme(t, topicLabel(t)))
+  ;(verse.requisiteConcepts ?? []).forEach((name) => {
+    const topic = findTopicForConcept(name)
+    if (topic) addTheme(topic.slug, name, topic.verseCount)
+  })
+  topicBridges.forEach((t) => addTheme(t.slug, t.label, t.verseCount))
 
   // ── Structured data ─────────────────────────────────────────────────────────
 
-  // Identify speaker as a named Person for entity search — helps Google
-  // connect verses to Krishna/Arjuna knowledge-graph nodes.
+  // Identify speaker as a named Person for entity search: connects verses to Krishna/Arjuna nodes.
   const speakerPerson = verse.speaker
     ? {
         '@type': 'Person',
@@ -225,35 +190,41 @@ export default async function VersePage({ params }: { params: Params }) {
       }
     : undefined
 
+  const chapterLd = {
+    '@type': 'Chapter',
+    name: ch ? `${ch.enName}: ${ch.enTitle}` : `Chapter ${c}`,
+    position: c,
+    isPartOf: { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
+  }
+
   const quotationLd = {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
     text: verse.englishTranslation,
-    // The original shloka: conjuncts normalised (lib/gita) and the "X उवाच" speaker line split off.
-    isBasedOn: { '@type': 'Quotation', text: splitSpeaker(verse.sanskrit).text, inLanguage: 'sa' },
+    // The original shloka (speaker line split off), with its IAST transliteration.
+    isBasedOn: {
+      '@type': 'Quotation',
+      text: splitSpeaker(verse.sanskrit).text,
+      inLanguage: 'sa',
+      ...(roman.lines.length && { alternateName: roman.lines.map((l) => l.iast).join(' / ') }),
+    },
     creator: speakerPerson,
     spokenByCharacter: speakerPerson,
     about: verse.tags,
-    isPartOf: {
-      '@type': 'Chapter',
-      name: ch ? `${ch.enName} — ${ch.enTitle}` : `Chapter ${c}`,
-      position: c,
-      isPartOf: { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
-    },
-    inLanguage: ['sa', 'en', 'hi'],
+    isPartOf: chapterLd,
+    inLanguage: ['sa', 'en'],
     url: `https://wisdomquotes.in${verseUrl(c, v)}`,
   }
 
   const articleLd = (verse.simpleMeaning || verse.detailedMeaning) ? {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: `Bhagavad Gita ${c}.${v} — ${verse.essence || 'Meaning & Commentary'}`,
+    headline: `${verseName}${roman.plainFirst ? `: ${capFirst(roman.plainFirst)}` : ''}`,
     description: verse.simpleMeaning || verse.detailedMeaning,
     articleBody: [
       verse.simpleMeaning,
       verse.detailedMeaning,
       verse.modernRelevance,
-      verse.simpleInsight,
     ].filter(Boolean).join('\n\n'),
     author: {
       '@type': 'Person',
@@ -274,15 +245,10 @@ export default async function VersePage({ params }: { params: Params }) {
       { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
       ...(speakerPerson ? [speakerPerson] : []),
     ],
-    isPartOf: {
-      '@type': 'Chapter',
-      name: ch ? `${ch.enName} — ${ch.enTitle}` : `Chapter ${c}`,
-      position: c,
-      isPartOf: { '@type': 'Book', name: 'Bhagavad Gita' },
-    },
+    isPartOf: chapterLd,
     inLanguage: 'en',
     datePublished: '2026-06-12',
-    dateModified: '2026-08-01',
+    dateModified: DATE_MODIFIED,
   } : null
 
   const breadcrumbLd = {
@@ -305,64 +271,17 @@ export default async function VersePage({ params }: { params: Params }) {
     ],
   }
 
-  // ── Audio schema (only when we have the recitation for this verse) ──
+  // ── Audio schema (only when we have the recitation for this verse). The manifest path is
+  //    relative to the audio CDN, so resolve it the same way the player does. ──
   const audioLd = audio ? {
     '@context': 'https://schema.org',
     '@type': 'AudioObject',
-    name: `Bhagavad Gita ${c}.${v} — Sanskrit recitation`,
-    description: `Sanskrit chanting of Bhagavad Gita verse ${c}.${v}${ch ? ` from ${ch.enName}` : ''}.`,
-    contentUrl: audio.audio.startsWith('http') ? audio.audio : `https://wisdomquotes.in${audio.audio}`,
+    name: `${verseName}: Sanskrit recitation`,
+    description: `Sanskrit chanting of Bhagavad Gita verse ${ref}${ch ? ` from ${ch.enName}` : ''}.`,
+    contentUrl: verseAudioUrl(audio.audio),
     encodingFormat: 'audio/mpeg',
     inLanguage: 'sa',
-    isPartOf: {
-      '@type': 'Book',
-      name: 'Bhagavad Gita',
-      url: 'https://wisdomquotes.in/gita',
-    },
-  } : null
-
-  // ── Auto-generated FAQ + FAQPage schema — grabs People Also Ask real estate
-  //    for verse-number queries. Only emitted when we have enough to answer
-  //    each question honestly. ──
-  type Faq = { q: string; a: string }
-  const faqs: Faq[] = []
-  if (verse.simpleMeaning) {
-    faqs.push({
-      q: `What does Bhagavad Gita ${c}.${v} mean?`,
-      a: verse.simpleMeaning,
-    })
-  } else if (verse.englishTranslation) {
-    faqs.push({
-      q: `What does Bhagavad Gita ${c}.${v} mean?`,
-      a: verse.englishTranslation,
-    })
-  }
-  if (verse.speaker) {
-    faqs.push({
-      q: `Who speaks Bhagavad Gita ${c}.${v}?`,
-      a: `${verse.speaker} speaks this verse${ch ? `, on the battlefield of Kurukshetra, in the chapter titled "${ch.enName}" (${ch.enTitle}).` : '.'}`,
-    })
-  }
-  if (ch) {
-    faqs.push({
-      q: `Which chapter of the Bhagavad Gita contains verse ${c}.${v}?`,
-      a: `Verse ${v} sits in Chapter ${c} of the Bhagavad Gita — ${ch.enName}, "${ch.enTitle}". The chapter has ${ch.totalVerses} verses in total.`,
-    })
-  }
-  if (verse.modernRelevance) {
-    faqs.push({
-      q: `Why does Bhagavad Gita ${c}.${v} matter today?`,
-      a: verse.modernRelevance,
-    })
-  }
-  const faqLd = faqs.length >= 2 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
+    isPartOf: { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
   } : null
 
   return (
@@ -377,9 +296,6 @@ export default async function VersePage({ params }: { params: Params }) {
       {audioLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(audioLd) }} />
       )}
-      {faqLd && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      )}
 
       <nav className="gita-crumb gv-rise" aria-label="Breadcrumb">
         <a href="/gita" data-mp-location={`verse_${c}_${v}_crumb_gita`}>Bhagavad Gita</a>
@@ -389,486 +305,95 @@ export default async function VersePage({ params }: { params: Params }) {
         <span>Verse {v}</span>
       </nav>
 
+      <TrailBar chapter={c} verse={v} lang="en" next={next ? { chapter: next.chapter, verse: next.verse } : null} />
+
       <header className="gv-hero-head">
-        <div className="gv-hero-eyebrow gv-rise" style={{ '--d': '0.06s' } as CSSProperties}>The verse</div>
-        <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.12s' } as CSSProperties}>
-          Bhagavad Gita {c}.{v}
-          <span className="gv-hero-h1-sub" style={{ display: 'block', fontSize: '0.65em', fontWeight: 500, opacity: 0.75, marginTop: '0.35em' }}>
-            BG {c}.{v} · Chapter {c}, Verse {v}
-          </span>
-        </h1>
-        <div className="gv-hero-badges gv-rise" style={{ '--d': '0.18s' } as CSSProperties}>
-          <span className="gv-hero-pill">{ch?.enName ?? `Chapter ${c}`}</span>
-        </div>
-        {heroNote && (
-          <p className="gv-hero-note gv-rise" style={{ '--d': '0.21s' } as CSSProperties}>{heroNote}</p>
-        )}
-        {verse.essence && (
-          <p className="gv-hero-essence gv-rise" style={{ '--d': '0.24s' } as CSSProperties}>
-            &ldquo;{verse.essence}&rdquo;
-          </p>
-        )}
-        <p className="gv-hero-byline gv-rise" style={{ '--d': '0.3s' } as CSSProperties}>
-          Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
-          <a href="/methodology">Methodology →</a>
+        <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.06s' } as CSSProperties}>{verseName}</h1>
+        <p className="vp-meta gv-rise" style={{ '--d': '0.1s' } as CSSProperties}>
+          {verse.speaker ? `${verse.speaker} · ` : ''}Chapter {c}, verse {v}{ch?.totalVerses ? ` of ${ch.totalVerses}` : ''}
         </p>
       </header>
 
-      <article className="gita-verse-card gv-hero-card gv-rise" style={{ '--d': '0.36s' } as CSSProperties}>
-        <span className="gv-card-chip">The verse</span>
+      <article className="gita-verse-card gv-hero-card gv-rise" style={{ '--d': '0.16s' } as CSSProperties}>
         <div className="gv-diamonds" aria-hidden="true"><i /><i /><i /></div>
         {audio ? (
-          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} chapter={c} verse={v} />
+          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} chapter={c} verse={v} next={next ? { chapter: next.chapter, verse: next.verse } : null} />
         ) : (
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
+        <VerseRomanLines roman={roman} />
 
         <p className="gv-en-quote" lang="en" id={VERSE_TRANSLATION_ID}>{verse.englishTranslation}</p>
-        {verse.speaker && <div className="gv-en-speaker">— {verse.speaker}</div>}
+        {verse.speaker && <div className="gv-en-speaker">{verse.speaker}</div>}
 
-        <div className="gv-orn-divider" aria-hidden="true">
-          <span /><em>❋</em><span />
-        </div>
-        <div className="gv-card-attrib">Bhagavad Gita · {c}.{v}</div>
-
-        <div className="gita-translation">
-          <div className="gita-translation-label">Hindi · हिन्दी</div>
-          <div className="gita-translation-text gita-translation-text--hi" lang="hi">
-            {verse.hindiTranslation}
-          </div>
-        </div>
-
-        {verse.tags.length > 0 && (
-          <div className="gita-meta-row">
-            <span>Themes:</span>
-            {verse.tags.filter(hasTopic).map((t) => (
-              <a
-                key={t}
-                href={topicUrl(t)}
-                className="gita-tag"
-                data-mp-location={`verse_${c}_${v}_tag_${t}`}
-              >
-                {topicLabel(t)}
-              </a>
-            ))}
-            <VerseBookmark chapter={c} verse={v} locale="en" />
-          </div>
-        )}
+        <a className="vp-langlink" href={verseUrl(c, v, 'hi')} hrefLang="hi" lang="hi" data-mp-location={`verse_${c}_${v}_to_hindi`}>
+          हिन्दी में पढ़ें
+        </a>
       </article>
 
-      {/* ── Share this line: the shareable quote card, below the full verse card so the study view comes first ── */}
-      {quote && (
-        <section className="gv-share-line" style={{ marginTop: '48px' }} aria-label="Share this line" data-mp-section={`verse_${c}_${v}_share_line`}>
-          <div className="gv-sechead">
-            <span className="gv-sechead-label">Share this line</span>
-          </div>
-          <QuoteCard
-            quote={quote}
-            locale="en"
-            pageName={`gita_verse_${c}_${v}`}
-            moment={quote.moments?.[0]}
-            variant="hero"
-            compactHero
-            audioSrc={null}
-            verseHref={null}
-            anotherHref={anotherLineHref(quote, 'en')}
-          />
-        </section>
-      )}
+      <StoryJumps chapter={c} verse={v} lang="en" />
 
-      {/* ── Word-by-word: interlinear gloss ── */}
-      {wordByWord.length > 0 && (
-        <section className="gv-wbw gv-reveal" aria-label="Word by word translation">
-          <div className="gv-sechead">
-            <span className="gv-sechead-label">Word by word</span>
-          </div>
-          <p className="gv-sechead-sub">
-            The verse in reading order — each Sanskrit word with its meaning beneath. Tap a word to focus on it.
-          </p>
-          <div className="gv-wbw-flow">
-            {wordByWord.map((w, i) => (
-              <span key={i} className="gv-word" tabIndex={0}>
-                <span className="gv-word-sa" lang="sa">{w.sanskrit}</span>
-                <span className="gv-word-en">{w.gloss}</span>
-              </span>
-            ))}
-          </div>
-          <p className="gv-literal">
-            <b>Read literally</b>
-            {wordByWord.map((w) => w.gloss).join(' · ')}
-          </p>
-        </section>
-      )}
+      <VerseExplain
+        section={`verse_${c}_${v}_explain`}
+        label="Meaning and context"
+        blocks={[
+          { id: 'meaning', q: `What does ${verseName} mean?`, text: verse.simpleMeaning || '', lang: 'en' },
+          { id: 'scene', kicker: 'The scene', q: verse.speaker ? `Why does ${verse.speaker} say this?` : 'What is happening here?', text: verse.detailedMeaning || '', lang: 'en' },
+          { id: 'life', kicker: 'In your life', q: 'What does it mean for your life today?', text: verse.modernRelevance || '', lang: 'en' },
+        ]}
+        credit={<>Translation edited by Ankur Shukla. Commentary drafted with AI and reviewed by a person. <a href="/methodology">How we work</a></>}
+      />
 
-      {/* ── Rich commentary block ── */}
-      {(verse.simpleMeaning || verse.detailedMeaning) && (
-        <section className="gita-commentary" aria-label="Meaning and context" style={{ marginTop: '52px' }}>
+      <VerseWordByWord
+        words={words}
+        locale="en"
+        glossLang="en"
+        plain={roman.plainAll}
+        section={`verse_${c}_${v}_wbw`}
+      />
 
-          <div className="gv-sechead gv-reveal">
-            <span className="gv-sechead-label">Understanding the verse</span>
-          </div>
-          {verse.insight && (
-            <div className="gv-insight gv-reveal">
-              <span className="gv-insight-icon" aria-hidden="true">✦</span>
-              <p>{verse.insight}</p>
-            </div>
-          )}
+      <div className="vp-share">
+        <VerseShareBar
+          chapter={c}
+          verse={v}
+          lang="en"
+          size="compact"
+          line={verse.quoteVariants?.find((q) => q.format === 'card')?.text || verse.essence || verse.englishTranslation}
+        />
+      </div>
 
-          {conceptLinks.length > 0 && (
-            <div className="gv-keys gv-reveal" aria-label="Concepts behind this verse">
-              <span className="gv-keys-label">Built on</span>
-              {conceptLinks.map(({ name, topic }) =>
-                topic ? (
-                  <a
-                    key={name}
-                    href={topicUrl(topic.slug)}
-                    className="gv-key"
-                    data-mp-location={`verse_${c}_${v}_concept_${topic.slug}`}
-                    title={`${topic.verseCount} verses on ${topic.label}`}
-                  >
-                    {name}
-                    <span className="gv-key-count">{topic.verseCount}</span>
-                  </a>
-                ) : (
-                  <span key={name} className="gv-key gv-key--plain">{name}</span>
-                ),
-              )}
-            </div>
-          )}
+      <VerseBridge
+        chapter={c}
+        verse={v}
+        lang="en"
+        plan={firstPlan ? { slug: firstPlan.plan.slug, label: firstPlan.plan.label, day: firstPlan.day.day } : null}
+      />
 
-          {[
-            verse.simpleMeaning   && { n: '01', label: 'What this verse means',       kicker: 'In plain words',   text: verse.simpleMeaning },
-            verse.detailedMeaning && { n: '02', label: 'Context & commentary',         kicker: 'On the battlefield', text: verse.detailedMeaning },
-            verse.modernRelevance && { n: '03', label: 'What it looks like today', kicker: 'In your life',      text: verse.modernRelevance },
-          ].filter(Boolean).map((item) => {
-            const { n, label, kicker, text } = item as { n: string; label: string; kicker: string; text: string }
-            return (
-              <div key={n} className="gv-cmnt gv-reveal">
-                <span className="gv-cmnt-ghost" aria-hidden="true">{n}</span>
-                <div className="gv-cmnt-kicker">{kicker}</div>
-                <h2 className="gv-cmnt-h">{label}</h2>
-                <p className="gv-cmnt-p">{text}</p>
-              </div>
-            )
-          })}
+      <VerseNextCard
+        chapter={c}
+        verse={v}
+        lang="en"
+        chapterName={ch?.enName}
+        next={next ? { chapter: next.chapter, verse: next.verse, teaser: next.essence || next.snippet } : null}
+      />
 
-          {verse.simpleInsight && (
-            <div className="gv-takeaway gv-reveal">
-              <div className="gv-takeaway-kicker">The takeaway</div>
-              <p className="gv-takeaway-quote">&ldquo;{verse.simpleInsight}&rdquo;</p>
-            </div>
-          )}
+      <VerseEssays chapter={c} verse={v} lang="en" links={blogLinks} />
 
-          {(verse.quoteVariants?.length ?? 0) > 0 && (
-            <div className="gv-reveal">
-              <MantraCards variants={verse.quoteVariants!} chapter={c} verse={v} />
-            </div>
-          )}
+      <VerseRelated
+        chapter={c}
+        verse={v}
+        lang="en"
+        verses={related.map((r) => ({ chapter: r.chapter, verse: r.verse, teaser: r.essence || r.snippet }))}
+        themes={themes}
+        exclude={next ? { chapter: next.chapter, verse: next.verse } : null}
+      />
 
-          <VerseShareBar
-            chapter={c}
-            verse={v}
-            lang="en"
-            line={verse.quoteVariants?.find((q) => q.format === 'card')?.text || verse.essence || verse.englishTranslation}
-          />
-
-          {ch && (
-            <a
-              href={chapterUrl(c)}
-              data-mp-location={`verse_${c}_${v}_chapter_card`}
-              className="gv-chcard gv-reveal"
-              style={{
-                marginTop: 44,
-                borderRadius: '14px',
-                overflow: 'hidden',
-                border: '1px solid rgba(245,201,106,0.25)',
-                textDecoration: 'none',
-                background: 'var(--bg-card, rgba(255,255,255,0.04))',
-              }}
-            >
-              <div style={{ position: 'relative', height: '130px', overflow: 'hidden' }}>
-                <img
-                  src={chapterImage(c).src}
-                  alt={chapterImage(c).alt}
-                  width={1200}
-                  height={260}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                  loading="lazy"
-                />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(10,5,20,0.15) 0%, rgba(10,5,20,0.75) 100%)' }} />
-                <div style={{
-                  position: 'absolute',
-                  bottom: '12px',
-                  left: '18px',
-                  fontSize: '11px',
-                  fontWeight: 700,
-                  letterSpacing: '0.13em',
-                  textTransform: 'uppercase',
-                  color: 'rgba(245,201,106,0.85)',
-                }}>
-                  Chapter {c} · {ch.enTitle}
-                </div>
-              </div>
-              <div style={{ padding: '16px 20px 18px' }}>
-                <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '5px', lineHeight: 1.3 }}>
-                  {ch.enName}
-                </div>
-                <div style={{ fontSize: '13px', color: 'var(--text-dimmer)', marginBottom: '14px' }}>
-                  {ch.processedVerses}{ch.totalVerses && ch.totalVerses !== ch.processedVerses ? ` of ${ch.totalVerses}` : ''} verses
-                </div>
-                <span style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--gold-light, #e8c070)' }}>
-                  Read all verses in this chapter →
-                </span>
-              </div>
-            </a>
-          )}
-
-          {topicBridges.length > 0 && (
-            <p className="gita-topic-bridges" style={{ marginTop: 16, fontSize: 14, color: 'var(--text-dim)' }}>
-              Explore related themes:{' '}
-              {topicBridges.map((t, idx) => (
-                <span key={t.slug}>
-                  {idx > 0 ? ', ' : ''}
-                  <a
-                    href={topicUrl(t.slug)}
-                    style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
-                    data-mp-location={`verse_${c}_${v}_bridge_${t.slug}`}
-                  >
-                    {t.label}
-                  </a>
-                  {' '}
-                  <span style={{ color: 'var(--text-dimmer)' }}>({t.verseCount} verses)</span>
-                </span>
-              ))}
-            </p>
-          )}
-        </section>
-      )}
-
-      <WhatsAppDaily lang="en" location="verse_end" trigger="after-read" />
-
-      {/* ── 7-day plans that use this verse ── */}
-      {inPlans.length > 0 && (
-        <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="Reading plans with this verse">
-          <div className="gv-sechead">
-            <span className="gv-sechead-label">Part of a 7-verse reading plan</span>
-          </div>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '10px' }}>
-            {inPlans.map(({ plan, day }) => (
-              <li key={`${plan.slug}-${day.day}`} style={{ fontSize: '15px', lineHeight: 1.6, color: 'var(--text-dim)' }}>
-                <a
-                  href={`/gita-for/${plan.slug}#verse-${day.day}`}
-                  style={{ color: 'var(--gold-light)', fontWeight: 600 }}
-                  data-mp-location={`verse_${c}_${v}_plan_${plan.slug}`}
-                >
-                  Verse {day.day} in the reading plan for {plan.label.toLowerCase()}
-                </a>
-                {' · '}{PHASE_LABEL[day.phase]}: {day.heading}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* ── Common questions (rendered to match FAQPage schema above) ── */}
-      {faqs.length >= 2 && (
-        <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="Common questions about this verse">
-          <div className="gv-sechead">
-            <span className="gv-sechead-label">Common questions</span>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '18px' }}>
-            {faqs.map((f, i) => (
-              <details
-                key={i}
-                style={{
-                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
-                  border: '1px solid rgba(245,201,106,0.18)',
-                  borderRadius: '12px',
-                  padding: '14px 18px',
-                }}
-              >
-                <summary
-                  style={{
-                    fontSize: '15px',
-                    fontWeight: 600,
-                    color: 'var(--text)',
-                    cursor: 'pointer',
-                    listStyle: 'none',
-                  }}
-                >
-                  {f.q}
-                </summary>
-                <p style={{ marginTop: '10px', fontSize: '14.5px', lineHeight: 1.65, color: 'var(--text-dim)' }}>
-                  {f.a}
-                </p>
-              </details>
-            ))}
-          </div>
-        </section>
-      )}
-
-
-      {/* ── Go Deeper: curated blog links for this verse ── */}
-      {blogLinks.length > 0 && (
-        <section
-          className="gv-reveal"
-          style={{ margin: '56px 0 0' }}
-          data-mp-section={`verse_${c}_${v}_go_deeper`}
-          aria-label="Go deeper"
-        >
-          <div className="gv-sechead">
-            <span className="gv-sechead-label">Go deeper</span>
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {blogLinks.map((link) => (
-              <a
-                key={link.slug}
-                href={`/blogs/${link.slug}`}
-                data-mp-location={`verse_${c}_${v}_blog_${link.slug}`}
-                data-mp-event="Blog Deep Dive Clicked"
-                data-mp-props={JSON.stringify({ verse: `${c}.${v}`, slug: link.slug })}
-                className="gv-blogcard"
-                style={{
-                  display: 'flex',
-                  alignItems: 'stretch',
-                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
-                  border: '1px solid rgba(245,201,106,0.18)',
-                  borderRadius: '14px',
-                  overflow: 'hidden',
-                  textDecoration: 'none',
-                  minHeight: '96px',
-                }}
-              >
-                <div style={{ flexShrink: 0, width: '110px', position: 'relative', overflow: 'hidden' }}>
-                  <img
-                    src={link.image}
-                    alt=""
-                    aria-hidden="true"
-                    width={110}
-                    height={96}
-                    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
-                    loading="lazy"
-                  />
-                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, rgba(10,5,20,0.55))' }} />
-                </div>
-                <div style={{ padding: '16px 18px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '6px', flex: 1 }}>
-                  <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
-                    Essay
-                  </div>
-                  <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--gold-light, #e8c070)', lineHeight: 1.4 }}>
-                    {link.cta}
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Continue the dialogue: prominent prev/next with teasers ── */}
-      <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="Continue reading">
-        <div className="gv-sechead">
-          <span className="gv-sechead-label">Continue the dialogue</span>
-        </div>
-        <div className="gv-pn">
-          <a
-            className={`gv-pn-card prev ${prev ? '' : 'disabled'}`}
-            href={prev ? verseUrl(prev.chapter, prev.verse) : '#'}
-            data-mp-location={`verse_${c}_${v}_prev`}
-          >
-            <span className="gv-pn-arrow" aria-hidden="true">←</span>
-            <span className="gv-pn-body">
-              <span className="gv-pn-kicker">Back · {prev ? `${prev.chapter}.${prev.verse}` : ''}</span>
-              {prev && <span className="gv-pn-teaser">{prev.essence || prev.snippet}</span>}
-            </span>
-          </a>
-          <a
-            className={`gv-pn-card next ${next ? '' : 'disabled'}`}
-            href={next ? verseUrl(next.chapter, next.verse) : '#'}
-            data-mp-location={`verse_${c}_${v}_next`}
-          >
-            <span className="gv-pn-body right">
-              <span className="gv-pn-kicker">Next verse · {next ? `${next.chapter}.${next.verse}` : ''}</span>
-              {next && <span className="gv-pn-teaser">{next.essence || next.snippet}</span>}
-            </span>
-            <span className="gv-pn-arrow" aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
-
-      {/* ── Floating verse navigator ── */}
-      <VerseNavReveal />
-      <nav className="gv-versenav" aria-label="Verse navigation">
-        {prev ? (
-          <a href={verseUrl(prev.chapter, prev.verse)} className="gv-versenav-btn" data-mp-location={`verse_${c}_${v}_float_prev`} aria-label={`Previous verse ${prev.chapter}.${prev.verse}`}>
-            ← {prev.chapter}.{prev.verse}
-          </a>
-        ) : (
-          <span className="gv-versenav-btn disabled">←</span>
-        )}
-        <span className="gv-versenav-now">{c}.{v}</span>
-        {next ? (
-          <a href={verseUrl(next.chapter, next.verse)} className="gv-versenav-btn" data-mp-location={`verse_${c}_${v}_float_next`} aria-label={`Next verse ${next.chapter}.${next.verse}`}>
-            {next.chapter}.{next.verse} →
-          </a>
-        ) : (
-          <span className="gv-versenav-btn disabled">→</span>
-        )}
-      </nav>
-
-      {related.length > 0 && (
-        <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="Related verses">
-          <div className="gv-sechead">
-            <span className="gv-sechead-label">Verses in the same spirit</span>
-          </div>
-          <ul className="gv-related-grid">
-            {related.slice(0, Math.ceil(related.length / 2)).map((r) => {
-              const sharedTag = r.tags?.find((t) => verse.tags.includes(t))
-              return (
-                <li key={`${r.chapter}-${r.verse}`}>
-                  <a
-                    className="gv-rel-card"
-                    href={verseUrl(r.chapter, r.verse)}
-                    data-mp-location={`verse_${c}_${v}_related_${r.chapter}_${r.verse}`}
-                  >
-                    <div className="gv-rel-top">
-                      <span className="gv-rel-num">{r.chapter}.{r.verse}</span>
-                      {sharedTag && <span className="gv-rel-tag">{sharedTag.replace(/-/g, ' ')}</span>}
-                    </div>
-                    <p className="gv-rel-quote">&ldquo;{r.essence || r.snippet}&rdquo;</p>
-                    <span className="gv-rel-cta">Read verse →</span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
-
-          <FeedbackWidget pageType="verse" pageId={`verse_${c}_${v}`} pageName={`gita_verse_${c}_${v}`} />
-
-          <ul className="gv-related-grid">
-            {related.slice(Math.ceil(related.length / 2)).map((r) => {
-              const sharedTag = r.tags?.find((t) => verse.tags.includes(t))
-              return (
-                <li key={`${r.chapter}-${r.verse}`}>
-                  <a
-                    className="gv-rel-card"
-                    href={verseUrl(r.chapter, r.verse)}
-                    data-mp-location={`verse_${c}_${v}_related_${r.chapter}_${r.verse}`}
-                  >
-                    <div className="gv-rel-top">
-                      <span className="gv-rel-num">{r.chapter}.{r.verse}</span>
-                      {sharedTag && <span className="gv-rel-tag">{sharedTag.replace(/-/g, ' ')}</span>}
-                    </div>
-                    <p className="gv-rel-quote">&ldquo;{r.essence || r.snippet}&rdquo;</p>
-                    <span className="gv-rel-cta">Read verse →</span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
-        </section>
-      )}
+      <VerseStickyNav
+        lang="en"
+        current={{ chapter: c, verse: v }}
+        prev={prev ? { chapter: prev.chapter, verse: prev.verse, teaser: prev.essence || prev.snippet } : null}
+        next={next ? { chapter: next.chapter, verse: next.verse, teaser: next.essence || next.snippet } : null}
+      />
     </main>
   )
 }
