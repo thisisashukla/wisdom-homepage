@@ -12,6 +12,7 @@ import {
 import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 import ResumeCard from '@/components/reader/ResumeCardLazy'
+import { ListenHubLink } from '@/components/listen/ListenLinks'
 import VerseJump from '@/components/search/VerseJump'
 import { PATH_LENGTH } from '@/lib/learningPath'
 import PdfDownloadWatch from '@/components/gita/PdfDownloadWatch'
@@ -150,6 +151,7 @@ export default function GitaIndexPageHi() {
       </section>
 
       <ResumeCard lang="hi" location="hi_gita_index" showSaved={false} />
+      <ListenHubLink lang="hi" location="hi_gita_index_listen" />
 
       {/* SHORTCUTS: famous shlokas, full PDF */}
       <PdfDownloadWatch href={PDF_PATH} lang="hi" location="pdf">

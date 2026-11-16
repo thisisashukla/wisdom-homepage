@@ -1,0 +1,71 @@
+{
+ "chapter": 11,
+ "verse": 27,
+ "style": "who is speaking to whom, and what has just happened",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Arjuna watching the end of the war",
+    "evidence": "संदृश्यन्ते चूर्णितैरुत्तमाङ्गैः"
+   }
+  ],
+  "best": 1
+ },
+ "angle_en": "warriors caught between the teeth",
+ "angle_hi": "योद्धाओं का दांतों के बीच फँसना",
+ "parts": {
+  "en": {
+   "intro": "Arjuna has been staring at the cosmic form, and now he sees the warriors he knows rushing toward certain destruction. Listen for the physical detail of how they enter.",
+   "notice": "Here Arjuna sees the great warriors getting caught between teeth. The heads are crushed. The war ends not with swords, but with bodies being swallowed.",
+   "next": "The next verse says these warriors rush into the mouths like rivers flowing to the sea.",
+   "meaning": "Your blazing, terrible mouths swallow them in haste. Some are seen caught between your teeth, with crushed heads."
+  },
+  "hi": {
+   "intro": "अर्जुन ब्रह्मांड रूप को देख रहा है और अब वह अपने परिचित योद्धाओं को निश्चित विनाश की ओर भागते देख रहा है। सुनिए, वे किस तरह अंदर जा रहे हैं।",
+   "meaning": "कुछ लोग आपके दंष्ट्राकराल और भयंकर मुखों में तेजी से प्रवेश कर रहे हैं। कुछ लोग आपके दांतों के बीच फँसे हुए और उनके सिर कुचले हुए दिख रहे हैं।",
+   "notice": "",
+   "next": "अगले श्लोक में कहा गया है कि ये योद्धा समुद्र की ओर बहती जलधाराओं की तरह आपके मुख में प्रवेश कर रहे हैं।"
+  }
+ },
+ "en": {
+  "intro": "Arjuna has been staring at the cosmic form, and now he sees the warriors he knows rushing toward certain destruction. Listen for the physical detail of how they enter.",
+  "body": "Your blazing, terrible mouths swallow them in haste. Some are seen caught between your teeth, with crushed heads. Here Arjuna sees the great warriors getting caught between teeth. The heads are crushed. The war ends not with swords, but with bodies being swallowed. The next verse says these warriors rush into the mouths like rivers flowing to the sea."
+ },
+ "hi": {
+  "intro": "अर्जुन ब्रह्मांड रूप को देख रहा है और अब वह अपने परिचित योद्धाओं को निश्चित विनाश की ओर भागते देख रहा है। सुनिए, वे किस तरह अंदर जा रहे हैं।",
+  "body": "कुछ लोग आपके दंष्ट्राकराल और भयंकर मुखों में तेजी से प्रवेश कर रहे हैं। कुछ लोग आपके दांतों के बीच फँसे हुए और उनके सिर कुचले हुए दिख रहे हैं। अगले श्लोक में कहा गया है कि ये योद्धा समुद्र की ओर बहती जलधाराओं की तरह आपके मुख में प्रवेश कर रहे हैं।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.notice: contrast template",
+    "plan.best missing"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"कुछ लोग आपके दंष्ट्राकराल और भयंकर मुखों में तेजी से प्रवेश कर रहे हैं\" (The English meaning specifies 'Your blazing, terrible mouths swallow them in haste', but the Hindi translation changes the verb to 'प्रवेश कर रहे हैं' (are entering), which drops the active swallowing and hastening. The source verse says they are swallowed, not just entering.)",
+    "meaning_changed: \"उनके सिर कुचल दिए गए हैं\" (The English meaning says 'with crushed heads', but the Hindi translation changes the tense and agency to 'उनके सिर कुचल दिए गए हैं' (their heads have been crushed), which drops the visual observation of the heads being crushed as a simultaneous detail and changes the tense from present participle to passive past.)",
+    "contrast_template: \"युद्ध तलवारों से समाप्त नहीं होता, बल्कि शरीरों के निगल लिए जाने से होता है\" (The notice contains the contrast 'not X but Y' ('तलवारों से समाप्त नहीं होता, बल्कि...'). The source verse only describes the physical detail of the warriors being swallowed, without contrasting the end of the war.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"युद्ध तलवारों से समाप्त नहीं होता, बल्कि शरीरों के निगल लिए जाने से होता है।\" (This phrase in the Hindi notice contradicts the source meaning. The source verse describes the physical vision of warriors being swallowed with crushed heads, not a philosophical conclusion that the war ends with bodies being swallowed rather than by swords.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "borrowed: \"The next verse says these warriors rush into the mouths like rivers flowing to the sea.\" (This is the content of the NEXT verse (verse 28), not this verse (verse 27), so it misattributes the river metaphor to the current verse.)",
+    "borrowed: \"अगले श्लोक में कहा गया है कि ये योद्धा समुद्र की ओर बहती जलधाराओं की तरह आपके मुख में प्रवेश कर रहे हैं।\" (This is the content of the NEXT verse (verse 28), not this verse (verse 27), so it misattributes the river metaphor to the current verse.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

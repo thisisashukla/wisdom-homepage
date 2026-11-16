@@ -1,0 +1,80 @@
+{
+ "chapter": 5,
+ "verse": 4,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "balah, the unwise, call two paths separate",
+    "evidence": "पृथग्बालाः (the unwise)"
+   },
+   {
+    "angle": "ekam api, even one, is enough",
+    "evidence": "एकमप्यास्थितः (established in even one)"
+   },
+   {
+    "angle": "the wise see that both lead to the same fruit",
+    "evidence": "उभयोर्विन्दते फलम् (attains the fruit of both)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "balah, the unwise, dismiss two paths",
+ "angle_hi": "बालाः, बेसमझ, दो रास्तों को खारिज करते हैं",
+ "parts": {
+  "en": {
+   "intro": "Krishna now calls the idea that two paths lead to different places a childish mistake. Listen to who he calls childish and why.",
+   "notice": "The word balah means the unwise or childish. It is not a polite disagreement, but a dismissal of those who see renunciation and yoga as separate roads.",
+   "next": "The wise see that one established in either path reaches the same fruit, and the next verse shows what that fruit is.",
+   "meaning": "The unwise say that renunciation and yoga lead to different results. The wise see that one who is firmly established in either reaches the same fruit."
+  },
+  "hi": {
+   "intro": "कृष्ण अब उस विचार को बचकाना गलती कहते हैं कि दो रास्ते अलग-अलग मंजिल तक ले जाते हैं। सुनिए, वे किसे बचकाना कहते हैं और क्यों।",
+   "meaning": "बेसमझ लोग सांख्ययोगौ को अलग-अलग फलवाले कहते हैं, न पण्डिताः, क्योंकि एकम् अपि आस्थितः सम्यक् उभयोः विन्दते फलम्",
+   "notice": "",
+   "next": "ज्ञानी लोग यह देखते हैं कि एकम् अपि आस्थितः सम्यक् उभयोः विन्दते फलम्, और अगला श्लोक उस फल को बताता है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna now calls the idea that two paths lead to different places a childish mistake. Listen to who he calls childish and why.",
+  "body": "The unwise say that renunciation and yoga lead to different results. The wise see that one who is firmly established in either reaches the same fruit. The word balah means the unwise or childish. It is not a polite disagreement, but a dismissal of those who see renunciation and yoga as separate roads. The wise see that one established in either path reaches the same fruit, and the next verse shows what that fruit is."
+ },
+ "hi": {
+  "intro": "कृष्ण अब उस विचार को बचकाना गलती कहते हैं कि दो रास्ते अलग-अलग मंजिल तक ले जाते हैं। सुनिए, वे किसे बचकाना कहते हैं और क्यों।",
+  "body": "बेसमझ लोग सांख्ययोगौ को अलग-अलग फलवाले कहते हैं, न पण्डिताः, क्योंकि एकम् अपि आस्थितः सम्यक् उभयोः विन्दते फलम् ज्ञानी लोग यह देखते हैं कि एकम् अपि आस्थितः सम्यक् उभयोः विन्दते फलम्, और अगला श्लोक उस फल को बताता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.meaning: contrast template",
+    "hi.notice: contrast template",
+    "hi.next: contrast template",
+    "meaning_changed: \"बेसमझ लोग सांख्ययोग और कर्मयोग को अलग-अलग फलवाले कहते हैं\" (The source says 'सांख्ययोगौ' (renunciation and yoga), not 'कर्मयोग' (action yoga). This changes the meaning by introducing an incorrect term.)",
+    "meaning_changed: \"न कि पण्डित, क्योंकि इन दोनों में से एक साधन में भी अच्छी तरह से स्थित मनुष्य दोनों के फलस्वरूप परमात्मा को प्राप्त कर लेता है\" (The source says 'न पण्डिताः' (not the wise) and 'एकम् अपि आस्थितः' (even one established). The Hindi meaning drops 'not the wise', adds 'both' before 'the fruit' (फलम्), and adds 'the Supreme Self' (परमात्मा), which contradicts the fixed English meaning and source text.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template",
+    "hi.next: contrast template",
+    "contrast_template: \"ज्ञानी लोग दो रास्ते नहीं, बल्कि एक ही रास्ता देखते हैं\" (The source says the wise see that a person established in either path reaches the same fruit (उभयोर्विन्दते फलम्), not that they see a single path or road. This introduces a 'not X but Y' contrast ('not two roads, but one') that is not supported by the Sanskrit text.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template",
+    "en.next too long (25 words)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

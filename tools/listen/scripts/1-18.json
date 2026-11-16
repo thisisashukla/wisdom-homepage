@@ -1,0 +1,77 @@
+{
+ "chapter": 1,
+ "verse": 18,
+ "style": "a question this verse answers",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "each blew their conches separately",
+    "evidence": "शङ्खान्दध्मुः पृथक्पृथक् (blew their conches separately)"
+   },
+   {
+    "angle": "Abhimanyu, mighty-armed son of Subhadra",
+    "evidence": "सौभद्रश्च महाबाहुः (and mighty-armed son of Subhadra)"
+   },
+   {
+    "angle": "Sanjaya addresses Dhritarashtra as lord of the earth",
+    "evidence": "पृथिवीपते (O lord of the earth)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Each sounding his own conch separately",
+ "angle_hi": "हर कोई अलग-अलग अपना शंख बजा रहा है",
+ "parts": {
+  "en": {
+   "intro": "Sanjaya has just finished naming the great warriors on the Pandava side, and now he describes the sound they make. Listen to how each one claims his own space.",
+   "notice": "Notice the last two words of the verse, separately each. Drupada, the five sons of Draupadi, and Abhimanyu each sound their own conches.",
+   "next": "That terrible sound split the hearts of Dhritarashtra's side, echoing through sky and earth.",
+   "meaning": "Drupada, Draupadi's sons, and mighty Abhimanyu each blew their conches separately, O lord of the earth."
+  },
+  "hi": {
+   "intro": "संजय ने पाण्डव सेना के महान योद्धाओं का नाम लिया है, अब वे उस ध्वनि का वर्णन करते हैं जो ये सब मिलकर कर रहे हैं।",
+   "meaning": "राजन्, राजा द्रुपद, द्रौपदी के पाँचों पुत्र, और लंबी भुजाओं वाले सुभद्रापुत्र अभिमन्यु ने सब ओर से अलग-अलग अपने-अपने शंख बजाए।",
+   "notice": "द्रुपद, द्रौपदी के पुत्र और अभिमन्यु अलग-अलग शंख बजाते हैं",
+   "next": "उस भयानक ध्वनि ने धृतराष्ट्र के पक्ष के हृदयों को चीर दिया, जो आकाश और पृथ्वी में गूँज उठी।"
+  }
+ },
+ "en": {
+  "intro": "Sanjaya has just finished naming the great warriors on the Pandava side, and now he describes the sound they make. Listen to how each one claims his own space.",
+  "body": "Drupada, Draupadi's sons, and mighty Abhimanyu each blew their conches separately, O lord of the earth. Notice the last two words of the verse, separately each. Drupada, the five sons of Draupadi, and Abhimanyu each sound their own conches. That terrible sound split the hearts of Dhritarashtra's side, echoing through sky and earth."
+ },
+ "hi": {
+  "intro": "संजय ने पाण्डव सेना के महान योद्धाओं का नाम लिया है, अब वे उस ध्वनि का वर्णन करते हैं जो ये सब मिलकर कर रहे हैं।",
+  "body": "राजन्, राजा द्रुपद, द्रौपदी के पाँचों पुत्र, और लंबी भुजाओं वाले सुभद्रापुत्र अभिमन्यु ने सब ओर से अलग-अलग अपने-अपने शंख बजाए। द्रुपद, द्रौपदी के पुत्र और अभिमन्यु अलग-अलग शंख बजाते हैं उस भयानक ध्वनि ने धृतराष्ट्र के पक्ष के हृदयों को चीर दिया, जो आकाश और पृथ्वी में गूँज उठी।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.notice: contrast template",
+    "borrowed: \"Notice the last two words of the verse, separately each. Drupada, the five sons of Draupadi, and Abhimanyu do not blow a single horn together.\" (This notice borrows the specific instruction about 'separately each' (पृथक्पृथक्) from the NEXT verse (verse 19), which describes the terrifying sound splitting the hearts of Dhritarashtra's side, and applies it to the current verse's meaning. The current verse (18) is simply about them blowing their conches separately, not about the sound tearing the Kaurava side apart.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"Notice the last two words of the verse, separately each. Drupada, the five sons of Draupadi, and Abhimanyu each sound their own conches, declaring that every ally stands ready and alone.\" (The phrase 'stands ready and alone' adds a new meaning to 'separately each' (पृथक्पृथक्), suggesting they are isolated or independent, which is not supported by the source text. The verse only states they blew their conches separately, not that they stood alone.)",
+    "wrong_fact: \"The sound of those many conches tears the Kaurava side apart before a single arrow is shot.\" (This misattributes the description of the sound to the next verse. The source for the next verse (verse 19) describes the sound splitting the hearts of Dhritarashtra's side and echoing through the sky and earth. It does not mention 'before a single arrow is shot'.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

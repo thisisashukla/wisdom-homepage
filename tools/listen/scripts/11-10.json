@@ -1,0 +1,76 @@
+{
+ "chapter": 11,
+ "verse": 10,
+ "style": "set the scene in one or two plain sentences",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Sanjaya begins a list repeating 'many'",
+    "evidence": "Sanjaya starts listing what the form looks like"
+   },
+   {
+    "angle": "The form has many faces and eyes",
+    "evidence": "अनेकवक्त्रनयनम् (many mouths and eyes)"
+   },
+   {
+    "angle": "The form has many ornaments and raised weapons",
+    "evidence": "अनेकदिव्याभरणं दिव्यनेकोद्यतायुधम् (many divine ornaments and many raised divine weapons)"
+   }
+  ],
+  "best": 1
+ },
+ "angle_en": "Many faces and eyes",
+ "angle_hi": "अनेक मुख और नेत्र",
+ "parts": {
+  "en": {
+   "intro": "Arjuna has just received divine sight. Listen to how Sanjaya begins to describe what he sees.",
+   "notice": "Sanjaya begins a list, repeating the word many, or anek. The form is not a single body but a vast scene filled with countless faces, eyes, ornaments, and raised weapons.",
+   "next": "The vision continues with the form facing everywhere, wearing garlands and divine garments.",
+   "meaning": "With many mouths and eyes, with countless wondrous forms, adorned with many divine ornaments and many uplifted divine weapons."
+  },
+  "hi": {
+   "intro": "अर्जुन को दिव्य दृष्टि मिल चुकी है। अब सुनिए, सैनजाय उस अद्भुत रूप का वर्णन कैसे शुरू करते हैं।",
+   "meaning": "जिसके अनेक मुख और नेत्र हैं, अनेक अद्भुत दर्शन हैं, अनेक दिव्य आभूषण हैं, तथा अनेक दिव्य और उठे हुए हथियार हैं।",
+   "notice": "",
+   "next": "यह रूप चारों ओर मुख वाला है, जो दिव्य मालाएँ और वस्त्र पहने हुए है, तथा दिव्य सुगंधों से सराबोर है।"
+  }
+ },
+ "en": {
+  "intro": "Arjuna has just received divine sight. Listen to how Sanjaya begins to describe what he sees.",
+  "body": "With many mouths and eyes, with countless wondrous forms, adorned with many divine ornaments and many uplifted divine weapons. Sanjaya begins a list, repeating the word many, or anek. The form is not a single body but a vast scene filled with countless faces, eyes, ornaments, and raised weapons. The vision continues with the form facing everywhere, wearing garlands and divine garments."
+ },
+ "hi": {
+  "intro": "अर्जुन को दिव्य दृष्टि मिल चुकी है। अब सुनिए, सैनजाय उस अद्भुत रूप का वर्णन कैसे शुरू करते हैं।",
+  "body": "जिसके अनेक मुख और नेत्र हैं, अनेक अद्भुत दर्शन हैं, अनेक दिव्य आभूषण हैं, तथा अनेक दिव्य और उठे हुए हथियार हैं। यह रूप चारों ओर मुख वाला है, जो दिव्य मालाएँ और वस्त्र पहने हुए है, तथा दिव्य सुगंधों से सराबोर है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"जिसके अनेक मुख और नेत्र हैं, अनेक प्रकार के अद्भुत दर्शन हैं, अनेक दिव्य आभूषण हैं, तथा अनेक दिव्य हथियार उठे हुए हैं, ऐसे भगवान् ने अपना दिव्य रूप दिखाया।\" (The Hindi translation omits several key details from the source text and English meaning. It leaves out 'many eyes' (नयनम्), 'raised' (उद्यत), 'divine' (दिव्य) before weapons and ornaments, 'wondrous' (अद्भुत), and 'wondrous forms' (अद्भुत-दर्शनम्). It also incorrectly attributes the form to God ('ऐसे भगवान् ने अपना दिव्य रूप दिखाया') rather than describing the form itself, which changes the grammatical subject and meaning.)",
+    "meaning_changed: \"सैनजय एक सूची शुरू करते हैं, जिसमें अनेक शब्द बार-बार आता है। यह रूप कोई एक शरीर नहीं, बल्कि एक विशाल दृश्य है जिसमें अनगिनत मुख, नेत्र, आभूषण और उठे हुए हथियार हैं।\" (The Hindi notice adds 'अनगिनत' (countless) to faces and eyes, and 'उठे हुए' (raised) to weapons, which are not in the source text (it says 'many', not 'countless'). It also adds 'आभूषण' (ornaments) to the weapons in the second sentence, which contradicts the source that lists ornaments separately from weapons.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"जिसके अनेक मुख और नेत्र हैं, अनेक अद्भुत दर्शन हैं, अनेक दिव्य आभूषण हैं, तथा अनेक दिव्य और उठे हुए हथियार हैं।\" (The Hindi meaning omits several key details present in the source, such as 'countless wondrous forms' (अनेक-अद्भुत-दर्शनम्), 'hands' (implied by raised weapons), 'divine garments', 'divine garlands', and 'divine sandalwood and kumkum'. It also uses 'हथियार' (weapons/tools) instead of 'आयुध' (divine weapons/weapons), and 'उठे हुए' instead of 'उद्यत' (uplifted/ready), which slightly alters the nuance of the weapons being actively raised.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

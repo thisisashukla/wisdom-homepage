@@ -1,0 +1,76 @@
+{
+ "chapter": 17,
+ "verse": 8,
+ "style": "set the scene in one or two plain sentences",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "rasya means tasty food that nourishes the body",
+    "evidence": "रस्याः (tasty)"
+   },
+   {
+    "angle": "snigdha points to smooth food that gives strength",
+    "evidence": "स्निग्धाः (smooth)"
+   },
+   {
+    "angle": "sattvic food is chosen for its lasting benefit",
+    "evidence": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः (increase life, purity, strength, health, happiness, and cheerfulness)"
+   }
+  ],
+  "best": 2
+ },
+ "angle_en": "rasya and snigdha define sattvic food",
+ "angle_hi": "रसयुक्त और चिकना सात्त्विक भोजन की पहचान हैं",
+ "parts": {
+  "en": {
+   "intro": "Krishna shifts from the battlefield to the kitchen, explaining the food that steadies a clear mind. Listen for the qualities that define this sattvic diet.",
+   "notice": "The word rasya means tasty, pointing to food that is rich and nourishing. The word snigdha, smooth, points to food that is unctuous and easy on the body.",
+   "next": "Krishna now turns to the food that feeds a passionate nature, which is bitter, sour, and painful. Listen to how he names its effects.",
+   "meaning": "Foods that increase life, purity, strength, health, happiness, and cheerfulness, and are tasty, smooth, firm, and pleasing, are dear to the sattvic person."
+  },
+  "hi": {
+   "intro": "कृष्ण अब युद्ध के मैदान से रसोई की ओर मुड़ते हैं, और उस भोजन के बारे में बताते हैं जो मन को स्थिर रखता है। इस सात्त्विक आहार की विशेषताएं सुनिए।",
+   "meaning": "आयु, सत्त्वगुण, बल, आरोग्य, सुख और प्रसन्नता बढ़ानेवाले, स्थिर रहनेवाले, हृदयको शक्ति देनेवाले, रसयुक्त तथा चिकने ऐसे आहार अर्थात् भोजन करनेके पदार्थ सात्त्विक मनुष्यको प्रिय होते हैं।",
+   "notice": "",
+   "next": "अब कृष्ण उस भोजन की ओर बढ़ते हैं जो राजसिक मनुष्य को प्रिय है, जो कड़वा, खट्टा और जलन पैदा करने वाला होता है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna shifts from the battlefield to the kitchen, explaining the food that steadies a clear mind. Listen for the qualities that define this sattvic diet.",
+  "body": "Foods that increase life, purity, strength, health, happiness, and cheerfulness, and are tasty, smooth, firm, and pleasing, are dear to the sattvic person. The word rasya means tasty, pointing to food that is rich and nourishing. The word snigdha, smooth, points to food that is unctuous and easy on the body. Krishna now turns to the food that feeds a passionate nature, which is bitter, sour, and painful. Listen to how he names its effects."
+ },
+ "hi": {
+  "intro": "कृष्ण अब युद्ध के मैदान से रसोई की ओर मुड़ते हैं, और उस भोजन के बारे में बताते हैं जो मन को स्थिर रखता है। इस सात्त्विक आहार की विशेषताएं सुनिए।",
+  "body": "आयु, सत्त्वगुण, बल, आरोग्य, सुख और प्रसन्नता बढ़ानेवाले, स्थिर रहनेवाले, हृदयको शक्ति देनेवाले, रसयुक्त तथा चिकने ऐसे आहार अर्थात् भोजन करनेके पदार्थ सात्त्विक मनुष्यको प्रिय होते हैं। अब कृष्ण उस भोजन की ओर बढ़ते हैं जो राजसिक मनुष्य को प्रिय है, जो कड़वा, खट्टा और जलन पैदा करने वाला होता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template",
+    "wrong_fact: \"The word rasya means tasty, pointing to food that is rich and nourishing.\" (This is a factual claim about the word 'rasya' (रसयुक्त) that is not found in the provided SOURCE. The source only defines 'rasya' as 'tasty' (स्वादयुक्त) in the word meanings, and the Hindi translation describes it as 'रस से भरपूर' (rich in juice/taste). The claim that it specifically 'points to food that is rich and nourishing' is an unsupported interpretation.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"रसयुक्त तथा चिकने\" (The source says 'रसयुक्त' (juicy/tasty) and 'चिकने' (smooth), but the Hindi meaning says 'रसयुक्त तथा चिकने' (juicy and smooth) and adds 'स्थिर रहनेवाले' (steady/firm) and 'हृदयको शक्ति देनेवाले' (giving strength to the heart), which are not in the original Sanskrit or the fixed English meaning.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

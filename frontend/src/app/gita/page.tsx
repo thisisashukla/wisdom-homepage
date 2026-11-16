@@ -11,6 +11,7 @@ import {
 import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 import ResumeCard from '@/components/reader/ResumeCardLazy'
+import { ListenHubLink } from '@/components/listen/ListenLinks'
 import VerseJump from '@/components/search/VerseJump'
 import { PATH_LENGTH } from '@/lib/learningPath'
 
@@ -133,6 +134,7 @@ export default function GitaIndexPage() {
       </section>
 
       <ResumeCard lang="en" location="gita_index" showSaved={false} />
+      <ListenHubLink lang="en" location="gita_index_listen" />
       <SavedVersesPanel locale="en" />
 
       {/* CHAPTERS */}

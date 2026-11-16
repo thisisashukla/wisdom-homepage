@@ -1,0 +1,75 @@
+{
+ "chapter": 1,
+ "verse": 12,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Bhishma's conch lifts Duryodhana's mood",
+    "evidence": "संजनयन्हर्षं (generating joy)"
+   },
+   {
+    "angle": "He does this to answer Duryodhana's hidden fear",
+    "evidence": "दुर्योधन की बातों में छिपी घबराहट भीष्म समझ गए"
+   },
+   {
+    "angle": "The elder of the Kurus roars like a lion and blows his conch",
+    "evidence": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Bhishma answers fear with a lion's roar",
+ "angle_hi": "भीष्म डर का जवाब सिंह की दहाड़ से देते हैं",
+ "parts": {
+  "en": {
+   "intro": "Duryodhana orders his men to protect Bhishma, and the old commander answers with a blast of his conch.",
+   "notice": "Bhishma does not speak. He roars like a lion and blows his conch loudly, and the sound fills Duryodhana with joy because the old man has read the king's fear and answered it with a signal to fight.",
+   "next": "Then the whole battlefield erupts as both armies sound their own battle horns at once.",
+   "meaning": "The elder of the Kuru clan, the powerful grandfather Bhishma, roared like a lion and blew his conch loudly, filling Duryodhana with joy."
+  },
+  "hi": {
+   "intro": "दुर्योधन अपने सैनिकों को भीष्म की रक्षा करने का आदेश देता है, और बूढ़े सेनापति का जवाब अपने शंख के एक प्रहार से आता है।",
+   "meaning": "दुर्योधन की बातों में छिपी घबराहट भीष्म समझ गए। उन्होंने शब्दों में उत्तर देने के बजाय सिंह की तरह ऊँची गर्जना की और ज़ोर से अपना शंख बजाया।",
+   "notice": "भीष्म कोई बात नहीं करते। वे सिंह की तरह दहाड़ते हैं और ज़ोर से शंख बजाते हैं, और उनकी इस आवाज़ से दुर्योधन का मन खुशी से भर जाता है क्योंकि बूढ़े सेनापति ने राजा का डर पढ़ लिया है और युद्ध का इशारा दे दिया है।",
+   "next": "तभी दोनों सेनाओं की ओर से एक साथ शंख, नगाड़े और तुरही बजने लगते हैं और उनकी आवाज़ बादलों की गड़गड़ाहट जैसी हो जाती है।"
+  }
+ },
+ "en": {
+  "intro": "Duryodhana orders his men to protect Bhishma, and the old commander answers with a blast of his conch.",
+  "body": "The elder of the Kuru clan, the powerful grandfather Bhishma, roared like a lion and blew his conch loudly, filling Duryodhana with joy. Bhishma does not speak. He roars like a lion and blows his conch loudly, and the sound fills Duryodhana with joy because the old man has read the king's fear and answered it with a signal to fight. Then the whole battlefield erupts as both armies sound their own battle horns at once."
+ },
+ "hi": {
+  "intro": "दुर्योधन अपने सैनिकों को भीष्म की रक्षा करने का आदेश देता है, और बूढ़े सेनापति का जवाब अपने शंख के एक प्रहार से आता है।",
+  "body": "दुर्योधन की बातों में छिपी घबराहट भीष्म समझ गए। उन्होंने शब्दों में उत्तर देने के बजाय सिंह की तरह ऊँची गर्जना की और ज़ोर से अपना शंख बजाया। भीष्म कोई बात नहीं करते। वे सिंह की तरह दहाड़ते हैं और ज़ोर से शंख बजाते हैं, और उनकी इस आवाज़ से दुर्योधन का मन खुशी से भर जाता है क्योंकि बूढ़े सेनापति ने राजा का डर पढ़ लिया है और युद्ध का इशारा दे दिया है। तभी दोनों सेनाओं की ओर से एक साथ शंख, नगाड़े और तुरही बजने लगते हैं और उनकी आवाज़ बादलों की गड़गड़ाहट जैसी हो जाती है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "meaning_changed: \"filling Duryodhana with joy\" (The Hindi meaning (दुर्योधन का मन खुशी से भर जाता है) and the source verse explicitly state that the sound fills Duryodhana with joy. However, the English intro ('Duryodhana orders his men to protect Bhishma, and the old commander answers with a blast of his conch.') and notice ('Bhishma does not speak. He roars like a lion and blows his conch loudly, and the sound fills Duryodhana with joy because the old man has read the king's fear and answered it with a signal to fight.') frame the action as a response to 'Duryodhana's hidden fear' and a 'signal to fight', which is an interpretation not present in the source verse or the plain meaning. The verse simply states that the sound filled Duryodhana with joy; it does not state that it was a signal to fight because of his fear.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "borrowed: \"Then the whole battlefield erupts as both armies sound their own battle horns at once.\" (This is the content of the NEXT verse (13), not verse 12. The script presents it as the continuation of verse 12.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "borrowed: \"भीष्म सिंह की तरह दहाड़ते हैं और ज़ोर से शंख बजाते हैं, और उनकी इस आवाज़ से दुर्योधन का मन खुशी से भर जाता है।\" (The NOTICE presents the content of the PREVIOUS verse (verse 11, Duryodhana's command to protect Bhishma) as if it were part of this verse. The previous verse is about Duryodhana ordering his men to protect Bhishma, but the notice describes Bhishma roaring and Duryodhana feeling joy, which is the content of the current verse (verse 12). This misattributes the previous verse's content to the current one.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "en.notice: banned phrase \"powerful\"",
+    "borrowed: \"दुर्योधन की बातों में छिपी घबराहट भीष्म समझ गए। उन्होंने शब्दों में उत्तर देने के बजाय सिंह की तरह ऊँची गर्जना की और ज़ोर से अपना शंख बजाया।\" (The Hindi meaning is borrowed from the Hindi context (sandarbh), which is not part of the verse itself. The verse only states that Bhishma roared like a lion and blew his conch, filling Duryodhana with joy. It does not mention Bhishma understanding Duryodhana's hidden fear or responding with words instead of sound.)",
+    "borrowed: \"कौरव सेना भी गर्जना करती है, और शंख तथा नगाड़ों की आवाज़ से धरती काँप उठती है।\" (This is borrowed from the NEXT verse (13), which describes the Kaurava army roaring back and the earth shaking with the sound of conches and drums.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

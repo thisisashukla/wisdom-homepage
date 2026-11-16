@@ -1,0 +1,68 @@
+{
+ "chapter": 10,
+ "verse": 41,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Every splendor is a spark of Krishna's radiance",
+    "evidence": "मम तेजः-अंश-संभवम् (born from a portion of my radiance)"
+   },
+   {
+    "angle": "He limits his infinite manifestations to one source",
+    "evidence": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा (whatever being or thing is endowed with splendour, beauty, or power)"
+   },
+   {
+    "angle": "Whatever exists in splendor is born from his radiance",
+    "evidence": "तत् तत् एव अवगच्छ त्वं (know that very)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Every splendor is a spark of Krishna",
+ "angle_hi": "हर ऐश्वर्य कृष्ण के तेज का एक अंश है",
+ "parts": {
+  "en": {
+   "intro": "Krishna has just said his manifestations are endless, yet now he pulls the point tight. Listen for the single source he names.",
+   "notice": "Krishna tells Arjuna that every grand, strong, or glorious thing is only a portion of his radiance.",
+   "next": "He then steps back from the list and asks if Arjuna really needs to know every detail.",
+   "meaning": "Whatever being or thing is endowed with splendour, beauty, or power, know that to have arisen from a spark of my radiance."
+  },
+  "hi": {
+   "intro": "कृष्ण ने अभी कहा था कि उनके अंश अनंत हैं, फिर भी अब वे इस बात को एक बिंदु पर लाते हैं। वह एक ही स्रोत का नाम लेते हैं।",
+   "meaning": "हे अर्जुन, जो भी प्राणी या वस्तु ऐश्वर्य, शोभा या बल से युक्त है, उसे तू मेरे ही तेज के अंश से उत्पन्न हुआ जान।",
+   "notice": "कृष्ण अर्जुन से कहते हैं कि दुनिया की हर भव्य, बलवान और शोभायुक्त चीज़ उनके ही तेज के अंश से उत्पन्न हुई है।",
+   "next": "वे फिर सूची से पीछे हटकर पूछते हैं कि क्या अर्जुन को यह सब विस्तार से जानना आवश्यक है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna has just said his manifestations are endless, yet now he pulls the point tight. Listen for the single source he names.",
+  "body": "Whatever being or thing is endowed with splendour, beauty, or power, know that to have arisen from a spark of my radiance. Krishna tells Arjuna that every grand, strong, or glorious thing is only a portion of his radiance. He then steps back from the list and asks if Arjuna really needs to know every detail."
+ },
+ "hi": {
+  "intro": "कृष्ण ने अभी कहा था कि उनके अंश अनंत हैं, फिर भी अब वे इस बात को एक बिंदु पर लाते हैं। वह एक ही स्रोत का नाम लेते हैं।",
+  "body": "हे अर्जुन, जो भी प्राणी या वस्तु ऐश्वर्य, शोभा या बल से युक्त है, उसे तू मेरे ही तेज के अंश से उत्पन्न हुआ जान। कृष्ण अर्जुन से कहते हैं कि दुनिया की हर भव्य, बलवान और शोभायुक्त चीज़ उनके ही तेज के अंश से उत्पन्न हुई है। वे फिर सूची से पीछे हटकर पूछते हैं कि क्या अर्जुन को यह सब विस्तार से जानना आवश्यक है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: banned phrase \"powerful\"",
+    "meaning_changed: \"हे अर्जुन, जो भी प्राणी या वस्तु ऐश्वर्य, शोभा या बल से युक्त है, उसे तू मेरे ही तेज के अंश से उत्पन्न हुआ जान।\" (The Sanskrit source uses 'यद्यत्' (whatever), which is an indefinite relative pronoun, while the Hindi translation uses 'जो भी' (whichever/any). 'जो भी' implies a selective or conditional choice among a set, which contradicts the universal, all-encompassing meaning of 'यद्यत्' (whatever/every). Additionally, the English translation explicitly includes 'thing' (वस्तु), but the Hindi translation omits it and only mentions 'being' (प्राणी), dropping the scope.)",
+    "contrast_template: \"दुनिया की हर भव्य, शक्तिशाली और सुंदर चीज़ उनके ही तेज का एक अंश है, उनकी आग की एक चिंगारी।\" (The notice uses the contrast template 'एक अंश है, उनकी आग की एक चिंगारी' (is a fragment, a spark of his fire). The source text uses 'तेज़ोऽंश' (a portion/spark of radiance), but the app's notice explicitly contrasts 'fragment' with 'spark', which is a structural contrast template ('X, not Y') not present in the original Sanskrit or the English translation.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "en.notice: banned phrase \"beautiful\"",
+    "wrong_fact: \"हे अर्जुन, जो भी प्राणी या वस्तु ऐश्वर्य, शोभा या बल से युक्त है, उसे तू मेरे ही तेज के अंश से उत्पन्न हुआ जान।\" (The Hindi translation omits the opening 'Whatever' (यद्यत्/जो भी), changing the universal claim into a direct address to Arjuna ('O Arjuna, whatever being...'). This contradicts the source meaning which is a general instruction to recognize any splendid being or thing as originating from Krishna's radiance.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": []
+  }
+ ],
+ "source": "sarvam"
+}

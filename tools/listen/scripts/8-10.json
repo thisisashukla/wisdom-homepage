@@ -1,0 +1,71 @@
+{
+ "chapter": 8,
+ "verse": 10,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "bhrūvor madhye, between the eyebrows, is the exact place of departure",
+    "evidence": "भ्रुवोर्मध्ये प्राणमावेश्य सम्यक् (placing the life-force properly between the two eyebrows)"
+   },
+   {
+    "angle": "a devotee reaches the supreme person at death with an unmoving mind",
+    "evidence": "प्रयाणकाले मनसाऽचलेन ... तं परं पुरुषमुपैति दिव्यम् (at the time of departure, with an unmoving mind ... reaches the divine supreme person)"
+   },
+   {
+    "angle": "yoga and devotion are the two forces that carry the departing soul",
+    "evidence": "भक्त्या युक्तो योगबलेन चैव (joined with devotion and by the power of yoga)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "bhruvor madhye, the place of departure",
+ "angle_hi": "भ्रुवोर्मध्ये, प्रस्थान का स्थान",
+ "parts": {
+  "en": {
+   "intro": "Krishna carries on from the supreme person's light, and now he asks what inner state carries a person to that same light at departure.",
+   "notice": "Listen to the exact place, bhruvor madhye, between the eyebrows. This is where the life-force is drawn up, and from here the soul departs.",
+   "next": "He now names the imperishable state that the knowers of the Vedas call deathless. ",
+   "meaning": "At the time of departure, one who leaves the body with an unmoving mind, devotion, and the power of yoga, placing the life-force between the eyebrows, reaches the divine supreme person."
+  },
+  "hi": {
+   "intro": "कृष्ण पिछले श्लोक से आगे बढ़ते हैं, और अब यह बताते हैं कि मृत्यु के समय कौन सी आंतरिक अवस्था मनुष्य को उस दिव्य पुरुष तक ले जाती है।",
+   "meaning": "जो मनुष्य शरीर त्यागते समय अचल मन, भक्ति और योगबल से भ्रुवोर मध्य में प्राणों को सम्यक् रूप से प्रविष्ट करा देता है, वह उस दिव्य परम पुरुष को ही प्राप्त होता है।",
+   "notice": "ध्यान दीजिए, भ्रुवोर्मध्ये, यानी दोनों भौहों के मध्य। जीवन शक्ति को इसी स्थान पर लाकर स्थिर करना होता है, और यहीं से आत्मा शरीर से बाहर निकलती है।",
+   "next": "आगे श्रीकृष्ण कहते हैं।"
+  }
+ },
+ "en": {
+  "intro": "Krishna carries on from the supreme person's light, and now he asks what inner state carries a person to that same light at departure.",
+  "body": "At the time of departure, one who leaves the body with an unmoving mind, devotion, and the power of yoga, placing the life-force between the eyebrows, reaches the divine supreme person. Listen to the exact place, bhruvor madhye, between the eyebrows. This is where the life-force is drawn up, and from here the soul departs. He now names the imperishable state that the knowers of the Vedas call deathless. "
+ },
+ "hi": {
+  "intro": "कृष्ण पिछले श्लोक से आगे बढ़ते हैं, और अब यह बताते हैं कि मृत्यु के समय कौन सी आंतरिक अवस्था मनुष्य को उस दिव्य पुरुष तक ले जाती है।",
+  "body": "जो मनुष्य शरीर त्यागते समय अचल मन, भक्ति और योगबल से भ्रुवोर मध्य में प्राणों को सम्यक् रूप से प्रविष्ट करा देता है, वह उस दिव्य परम पुरुष को ही प्राप्त होता है। ध्यान दीजिए, भ्रुवोर्मध्ये, यानी दोनों भौहों के मध्य। जीवन शक्ति को इसी स्थान पर लाकर स्थिर करना होता है, और यहीं से आत्मा शरीर से बाहर निकलती है। आगे श्रीकृष्ण कहते हैं।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "wrong_fact: \"वे उस अविनाशी अवस्था का नाम लेते हैं जिसे वेदों के ज्ञाता अविनाशी कहते हैं।\" (This is the content of the NEXT verse (8.11), which describes the imperishable state. The SCRIPT's 'hi' 'next' field incorrectly attributes the next verse's content to the current verse's 'next' field.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "unsupported: \"और यहीं से आत्मा शरीर से बाहर निकलती है\" (The source text only mentions placing the life-force between the eyebrows; it does not explicitly state that the soul exits the body from this exact spot. This is an unsupported factual claim about the mechanism of departure.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "meaning_changed: \"प्रविष्ट करा देता है\" (The source specifies 'आवेश्य' (placing/directing) the life-force, but the Hindi translation says 'प्राणों को सम्यक् रूप से प्रविष्ट करा देता है' (makes the life-forces enter). This changes the meaning from directing/placing the life-force to making the life-forces enter, which contradicts the original Sanskrit meaning.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "error": "gen: headers: {'date': 'Sun, 15 Nov 2026 19:39:15 GMT', 'content-type': 'application/json', 'content-length': '139', 'connection': 'keep-alive', 'server': 'uvicorn', 'referrer-policy': 'strict-origin-"
+  }
+ ],
+ "source": "sarvam+repair"
+}

@@ -1,0 +1,76 @@
+{
+ "chapter": 11,
+ "verse": 30,
+ "style": "set the scene in one or two plain sentences",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "lelihyase, the word that literally means you lick up",
+    "evidence": "लेलिह्यसे (you lick up)"
+   },
+   {
+    "angle": "Arjuna addresses the cosmic form as Vishnu, the preserver, despite its destructive appearance",
+    "evidence": "विष्णो (O Vishnu)"
+   },
+   {
+    "angle": "the vision devours the worlds from every side",
+    "evidence": "समन्ताल्लोकान्समग्रान् (all the worlds from every side)"
+   }
+  ],
+  "best": 1
+ },
+ "angle_en": "Lelihyase: licking up the worlds",
+ "angle_hi": "लेलिह्यसे: लोकों को चाटना",
+ "parts": {
+  "en": {
+   "intro": "Arjuna stands before the cosmic form, and his voice breaks as he describes what he sees. Listen to the word that makes the universe sound like food.",
+   "notice": "Arjuna calls the blazing mouths that devour everything from every side. The word he uses is lelihyase, you lick up, so the universe is not just being destroyed, it is being eaten like a meal.",
+   "next": "He asks who this fierce form is and begs to know the purpose of this vision.",
+   "meaning": "You lick up all the worlds from every side with your blazing mouths. Your fierce radiance fills the whole universe and burns it, O Vishnu."
+  },
+  "hi": {
+   "intro": "अर्जुन इस विराट रूप को देख रहे हैं और उनका स्वर टूट रहा है। उस शब्द को सुनिए जो ब्रह्मांड को भोजन के समान दिखाता है।",
+   "meaning": "आप अपने प्रज्वलित मुखोंद्वारा सम्पूर्ण लोकोंका ग्रसन करते हुए उन्हें चारों ओरसे बारबार चाट रहे हैं और हे विष्णो आपका उग्र प्रकाश अपने तेजसे सम्पूर्ण जगत् को परिपूर्ण करके सबको तपा रहा है ॥",
+   "notice": "",
+   "next": "वे इस उग्र रूप में आपसे पूछते हैं कि आप कौन हैं और इस दर्शन का उद्देश्य क्या है।"
+  }
+ },
+ "en": {
+  "intro": "Arjuna stands before the cosmic form, and his voice breaks as he describes what he sees. Listen to the word that makes the universe sound like food.",
+  "body": "You lick up all the worlds from every side with your blazing mouths. Your fierce radiance fills the whole universe and burns it, O Vishnu. Arjuna calls the blazing mouths that devour everything from every side. The word he uses is lelihyase, you lick up, so the universe is not just being destroyed, it is being eaten like a meal. He asks who this fierce form is and begs to know the purpose of this vision."
+ },
+ "hi": {
+  "intro": "अर्जुन इस विराट रूप को देख रहे हैं और उनका स्वर टूट रहा है। उस शब्द को सुनिए जो ब्रह्मांड को भोजन के समान दिखाता है।",
+  "body": "आप अपने प्रज्वलित मुखोंद्वारा सम्पूर्ण लोकोंका ग्रसन करते हुए उन्हें चारों ओरसे बारबार चाट रहे हैं और हे विष्णो आपका उग्र प्रकाश अपने तेजसे सम्पूर्ण जगत् को परिपूर्ण करके सबको तपा रहा है ॥ वे इस उग्र रूप में आपसे पूछते हैं कि आप कौन हैं और इस दर्शन का उद्देश्य क्या है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"आप अपने प्रज्वलित मुखोंद्वारा सम्पूर्ण लोकोंका ग्रसन करते हुए उन्हें चारों ओरसे बारबार चाट रहे हैं और हे विष्णो\" (The Hindi meaning adds the word 'बारबार' (again and again), which is not present in the Sanskrit source. The Sanskrit 'लेलिह्यसे' implies a continuous licking action, not a repetitive one.)",
+    "contrast_template: \"ब्रह्मांड केवल नष्ट नहीं हो रहा, बल्कि खाया जा रहा है।\" (The notice uses the contrastive Hindi phrase 'न कि' (rather than / not X but Y) to explicitly contrast 'destroyed' with 'eaten', which is an unsupported interpretive framing not found in the source text.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "borrowed: \"Arjuna calls the blazing mouths that devour everything from every side. The word he uses is lelihyase, you lick up, so the universe is being eaten like a meal.\" (The notice presents the content of the previous verse (verse 29: 'people rush with great speed into your mouths to their destruction') as if it were in this verse, confusing devouring with licking up.)",
+    "borrowed: \"He asks who this fierce form is and begs to know the purpose of this vision.\" (The next verse (verse 31) is misdescribed; the notice presents the content of the next verse (Arjuna asking who You are and begging to know the purpose) as if it were in this verse.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

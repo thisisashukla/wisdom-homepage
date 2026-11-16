@@ -1,0 +1,81 @@
+{
+ "chapter": 18,
+ "verse": 19,
+ "style": "set the scene in one or two plain sentences",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "guna-bhedatah classifies everything",
+    "evidence": "गुणभेदतः (according to the distinctions of the qualities)"
+   },
+   {
+    "angle": "Krishna asks Arjuna to listen to the threefold distinctions.",
+    "evidence": "यथावच्छृणु तान्यपि (listen now to these distinctions as they truly are)"
+   },
+   {
+    "angle": "The three qualities divide knowledge, action, and the doer into three each.",
+    "evidence": "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः प्रोच्यते (knowledge, action, and the doer are each said to be threefold according to the distinctions of the qualities)"
+   }
+  ],
+  "best": 2
+ },
+ "angle_en": "guna-bhedatah classifies everything",
+ "angle_hi": "गुणभेदतः सब कुछ वर्गीकृत करता है",
+ "parts": {
+  "en": {
+   "intro": "Krishna explains how the three qualities shape the world. Listen for how they divide knowledge, action, and the doer into three kinds each.",
+   "notice": "Using the three gunas, Krishna announces that knowledge, action and the doer each come in three kinds.",
+   "next": "Krishna then defines sattvic knowledge as seeing the one undivided reality in all divided beings.",
+   "meaning": "In the analysis of the three qualities, knowledge, action, and the doer are each said to be threefold. Listen now to these distinctions as they truly are."
+  },
+  "hi": {
+   "intro": "कृष्ण समझाते हैं कि तीन गुण दुनिया को कैसे आकार देते हैं। ध्यान से सुनिए कि ये गुण ज्ञान, कर्म और कर्ता को तीन-तीन प्रकार में कैसे बाँटते हैं।",
+   "meaning": "गुणसंख्यान में गुणों के भेदों के अनुसार ज्ञान, कर्म और कर्ता तीन-तीन प्रकार के कहे जाते हैं, तुम उन्हें भी यथार्थ रूप से सुनो।",
+   "notice": "",
+   "next": "कृष्ण फिर सात्विक ज्ञान को उस रूप में परिभाषित करते हैं जिससे एक अविभाज्य सत्य सभी विभाज्यों में दिखाई देता है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna explains how the three qualities shape the world. Listen for how they divide knowledge, action, and the doer into three kinds each.",
+  "body": "In the analysis of the three qualities, knowledge, action, and the doer are each said to be threefold. Listen now to these distinctions as they truly are. Using the three gunas, Krishna announces that knowledge, action and the doer each come in three kinds. Krishna then defines sattvic knowledge as seeing the one undivided reality in all divided beings."
+ },
+ "hi": {
+  "intro": "कृष्ण समझाते हैं कि तीन गुण दुनिया को कैसे आकार देते हैं। ध्यान से सुनिए कि ये गुण ज्ञान, कर्म और कर्ता को तीन-तीन प्रकार में कैसे बाँटते हैं।",
+  "body": "गुणसंख्यान में गुणों के भेदों के अनुसार ज्ञान, कर्म और कर्ता तीन-तीन प्रकार के कहे जाते हैं, तुम उन्हें भी यथार्थ रूप से सुनो। कृष्ण फिर सात्विक ज्ञान को उस रूप में परिभाषित करते हैं जिससे एक अविभाज्य सत्य सभी विभाज्यों में दिखाई देता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template",
+    "meaning_changed: \"ज्ञान, कर्म और कर्ता तीन-तीन प्रकार के कहे जाते हैं, तुम उन्हें भी यथार्थ रूप से सुनो।\" (This drops the crucial qualifier 'tri-dhā' (threefold/three ways) from the original Sanskrit and English translation, and adds an unnecessary 'tum' (you) that is not present in the source. This changes the meaning from 'each said to be threefold' to 'are said to be three types'.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template",
+    "meaning_changed: \"कृष्ण समझाते हैं कि तीन गुण दुनिया को कैसे आकार देते हैं। ध्यान से सुनिए कि ये गुण ज्ञान, कर्म और कर्ता को तीन-तीन प्रकार में कैसे बाँटते हैं।\" (The intro says the three qualities 'divide' (बाँटते हैं) knowledge, action, and the doer into three types each. The source verse says they are 'said to be' (प्रोच्यते) threefold according to the distinctions of the qualities; it does not say the qualities actively divide them at the moment. This introduces an unsupported causal/action verb ('divide') not present in the source.)",
+    "unsupported: \"यह बताता है कि ज्ञान, कर्म और कर्ता स्थिर नहीं हैं, बल्कि उस समय प्रमुख गुण के अनुसार बदलते रहते हैं।\" (The source verse only states that knowledge, action, and the doer are said to be threefold according to the distinctions of the qualities. It does not state that they change according to the dominant quality at any given moment. This is an unsupported factual claim.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template",
+    "borrowed: \"Krishna then defines sattvic knowledge as seeing the one undivided reality in all divided beings.\" (This is the content of the NEXT verse (verse 20), not this verse (verse 19). The 'next' field in the JSON is misstating what the upcoming verse says, presenting the content of verse 20 as if it were verse 19.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

@@ -1,0 +1,79 @@
+{
+ "chapter": 5,
+ "verse": 6,
+ "style": "set the scene in one or two plain sentences",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "renunciation without yoga is hard to attain",
+    "evidence": "दुःखमाप्तुमयोगतः (with difficulty, without yoga)"
+   },
+   {
+    "angle": "the yogi attains the supreme reality without delay",
+    "evidence": "नचिरेणाधिगच्छति (attains without delay)"
+   },
+   {
+    "angle": "the sage joined with yoga quickly reaches the supreme reality",
+    "evidence": "योगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति (the sage joined with yoga attains the supreme reality without delay)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Yogayuktah: joined with yoga",
+ "angle_hi": "योगयुक्तः: योग से जुड़ा हुआ",
+ "parts": {
+  "en": {
+   "intro": "Listen as Krishna speaks.",
+   "notice": "Mighty-armed Arjuna hears that renunciation without yoga is hard, while a disciplined yogi reaches Brahman quickly.",
+   "next": "The disciplined yogi sees the same self in all beings and acts without being tainted by action.",
+   "meaning": "But, mighty-armed one, renunciation without yoga is hard to attain. The disciplined seeker in yoga quickly reaches the supreme reality."
+  },
+  "hi": {
+   "intro": "सुनिए, श्रीकृष्ण क्या कहते हैं।",
+   "meaning": "परन्तु हे महाबाहो कर्मयोगके बिना संन्यास सिद्ध होना कठिन है। मननशील कर्मयोगी शीघ्र ही ब्रह्मको प्राप्त हो जाता है।",
+   "notice": "",
+   "next": "अनुशासित योगी सभी प्राणियों में एक ही आत्मा देखता है और कर्म करते हुए भी कर्म से अछूता रहता है।"
+  }
+ },
+ "en": {
+  "intro": "Listen as Krishna speaks.",
+  "body": "But, mighty-armed one, renunciation without yoga is hard to attain. The disciplined seeker in yoga quickly reaches the supreme reality. Mighty-armed Arjuna hears that renunciation without yoga is hard, while a disciplined yogi reaches Brahman quickly. The disciplined yogi sees the same self in all beings and acts without being tainted by action."
+ },
+ "hi": {
+  "intro": "सुनिए, श्रीकृष्ण क्या कहते हैं।",
+  "body": "परन्तु हे महाबाहो कर्मयोगके बिना संन्यास सिद्ध होना कठिन है। मननशील कर्मयोगी शीघ्र ही ब्रह्मको प्राप्त हो जाता है। अनुशासित योगी सभी प्राणियों में एक ही आत्मा देखता है और कर्म करते हुए भी कर्म से अछूता रहता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.intro: contrast template",
+    "en.notice: contrast template",
+    "hi.intro: contrast template",
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.meaning missing",
+    "meaning_changed: \"केवल कर्म छोड़ना आसान नहीं है\" (The Hindi intro translates the Sanskrit 'दुःखम् आप्तुम्' (hard/difficult to attain) as 'आसान नहीं है' (not easy), which softens the severity. The English intro correctly uses 'not easy', but the Hindi intro contradicts it by implying it might be somewhat easy to just give up action. This is a semantic downgrade of the difficulty.)",
+    "meaning_changed: \"योगयुक्त साधु\" (The word 'मुनिः' means a contemplative sage or thinker, while 'साधु' means a virtuous person or devotee. 'साधु' adds a devotional/moral connotation that is not present in the Sanskrit source.)",
+    "contrast_template: \"जबकि केवल संन्यास कठिन है\" (The Hindi notice uses 'जबकि' (while/whereas), which creates a contrastive structure 'Yogi reaches X, while mere renunciation is difficult'. The Sanskrit 'तु' (but) and 'नचिरेण' (quickly) do not explicitly contrast the two clauses in this way; they simply state the difficulty of the former and the swiftness of the latter.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "meaning_changed: \"कृष्ण अर्जुन से कहते हैं कि केवल कर्म छोड़ना कठिनाई के साथ प्राप्त होता है।\" (The intro claims that 'merely giving up action is hard to achieve', but the Sanskrit source specifies 'renunciation without yoga' (अयोगतः). The Hindi intro incorrectly omits the crucial condition of 'yoga', thereby changing the meaning to suggest that all action-renunciation is inherently difficult.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "meaning_changed: \"परन्तु हे महाबाहो कर्मयोगके बिना संन्यास सिद्ध होना कठिन है। मननशील कर्मयोगी शीघ्र ही ब्रह्मको प्राप्त हो जाता है।\" (The Hindi translation introduces 'कर्मयोगी' (karma-yogi) as the one who quickly attains Brahman in the second half, whereas the Sanskrit source specifies 'मुनिः' (munih - the contemplative sage, the yogi) and does not specify this as a 'karma-yogi'. This shifts the subject of the second clause.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

@@ -10,6 +10,8 @@ import { getQuote, getQuotes, getHookFeelings, getPage, audioFor, audioMap } fro
 import type { Quote } from '@/lib/quotes'
 
 import SiteFooter from '@/components/SiteFooter'
+import { listenSessionForVerse } from '@/lib/listenServer'
+import { sessionUrl } from '@/lib/listen'
 export const metadata: Metadata = {
   title: "Karma Quotes in Sanskrit: 10 Gita Shlokas with Meaning",
   description: "10 Sanskrit quotes on karma from the Bhagavad Gita, starting with 2.47 (karmanye vadhikaraste), each with transliteration, English meaning and essence.",
@@ -149,6 +151,12 @@ const pageCSS = `
 `
 
 const PAGE_NAME = 'Quotes: Karma EN'
+
+/** Listen mode session that holds 2.47, started at 2.47; the verse page when Listen data is missing. */
+function karmaListenHref(): string {
+  const s = listenSessionForVerse(2, 47, 'en')
+  return s ? `${sessionUrl(2, s.n, 'en')}?from=47&play=1` : '/gita/chapter/2/verse/47'
+}
 
 /**
  * A verse block on this page. When the verse is in the quote set
@@ -395,10 +403,10 @@ export default function KarmaQuotesPage() {
           <div className="karma-readon-eyebrow">Stay with this verse a little longer</div>
           <p>
             Verses 2.47 to 2.53 are where Krishna shows Arjuna how to act fully and still let the outcome go.
-            Seven verses, each with the Sanskrit recitation. About five quiet minutes.
+            Each verse is recited in Sanskrit, then explained in a few plain lines. About eight quiet minutes.
           </p>
-          <a href="/gita/chapter/2/verse/47" data-mp-location="karma_readon_2_47">
-            Hear 2.47 and read on <span aria-hidden="true">→</span>
+          <a href={karmaListenHref()} data-mp-location="karma_readon_2_47">
+            Hear 2.47 and the verses after it <span aria-hidden="true">→</span>
           </a>
         </aside>
 

@@ -1,0 +1,72 @@
+{
+ "chapter": 13,
+ "verse": 3,
+ "style": "set the scene in one or two plain sentences",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Krishna calls knowing both the field and the knower the only real knowledge",
+    "evidence": "क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम (true knowledge is knowing the field and the knower of the field)"
+   },
+   {
+    "angle": "He places himself as the knower inside every field",
+    "evidence": "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु (know Me as the knower in all fields)"
+   },
+   {
+    "angle": "He redefines knowledge from the previous verse as a pair",
+    "evidence": "क्षेत्रक्षेत्रज्ञयोः (of field and knower of the field)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Knowing field and knower as the real knowledge",
+ "angle_hi": "क्षेत्र और क्षेत्रज्ञ का ज्ञान ही असली ज्ञान है",
+ "parts": {
+  "en": {
+   "intro": "Krishna shifts from the body as a field to the knower inside it. Listen to how he names the one who knows.",
+   "notice": "He declares that true knowledge is not one thing but a pair, knowing the field and the knower of the field, and he places himself as the knower in every field.",
+   "next": "Now hear the field itself, its nature, its changes, and the knower of the field, in brief.",
+   "meaning": "Know Me as the knower in all fields, Arjuna. In my view, true knowledge is knowing the field and the knower of the field."
+  },
+  "hi": {
+   "intro": "कृष्ण शरीर को क्षेत्र बताते हुए अब उसके भीतर के ज्ञाता की ओर बढ़ते हैं। सुनिए, वे कैसे उस ज्ञाता को नाम देते हैं।",
+   "meaning": "हे भरतवंशोद्भव अर्जुन, तू सम्पूर्ण क्षेत्रोंमें क्षेत्रज्ञ मेरेको ही समझ और क्षेत्रक्षेत्रज्ञका जो ज्ञान है, वही मेरे मतमें ज्ञान है ॥",
+   "notice": "",
+   "next": "अब क्षेत्र को सुनो, उसका स्वभाव, उसकी उत्पत्ति और क्षेत्रज्ञ को, संक्षेप में।"
+  }
+ },
+ "en": {
+  "intro": "Krishna shifts from the body as a field to the knower inside it. Listen to how he names the one who knows.",
+  "body": "Know Me as the knower in all fields, Arjuna. In my view, true knowledge is knowing the field and the knower of the field. He declares that true knowledge is not one thing but a pair, knowing the field and the knower of the field, and he places himself as the knower in every field. Now hear the field itself, its nature, its changes, and the knower of the field, in brief."
+ },
+ "hi": {
+  "intro": "कृष्ण शरीर को क्षेत्र बताते हुए अब उसके भीतर के ज्ञाता की ओर बढ़ते हैं। सुनिए, वे कैसे उस ज्ञाता को नाम देते हैं।",
+  "body": "हे भरतवंशोद्भव अर्जुन, तू सम्पूर्ण क्षेत्रोंमें क्षेत्रज्ञ मेरेको ही समझ और क्षेत्रक्षेत्रज्ञका जो ज्ञान है, वही मेरे मतमें ज्ञान है ॥ अब क्षेत्र को सुनो, उसका स्वभाव, उसकी उत्पत्ति और क्षेत्रज्ञ को, संक्षेप में।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "error": "gen: headers: {'date': 'Sun, 15 Nov 2026 19:46:36 GMT', 'content-type': 'application/json', 'content-length': '139', 'connection': 'keep-alive', 'server': 'uvicorn', 'referrer-policy': 'strict-origin-"
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"वे बताते हैं कि असली ज्ञान एक नहीं, बल्कि दो चीज़ों का ज्ञान है, क्षेत्र और क्षेत्रज्ञ का\" (The source verse says 'true knowledge is knowing the field and the knower of the field' (a single unified knowledge/jnanam). The Hindi notice adds the unsupported contrast 'not one, but two things' (एक नहीं, बल्कि दो चीज़ों), which contradicts the source meaning of a singular, unified knowledge of both.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

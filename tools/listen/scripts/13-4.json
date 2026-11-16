@@ -1,0 +1,74 @@
+{
+ "chapter": 13,
+ "verse": 4,
+ "style": "point the listener to one word to listen for",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Listen for kshetra, the field, which Krishna is defining",
+    "evidence": "तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत्"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Kshetra, the field",
+ "angle_hi": "क्षेत्र, क्षेत्र",
+ "parts": {
+  "en": {
+   "intro": "Listen for the word kshetra, the field, as Krishna begins to describe it and the knower who stands within it.",
+   "notice": "Krishna lists four things about the field: its nature, its changes, its source, and the powers of the knower, showing that the field is a changing object.",
+   "next": "Sages and Vedic hymns have already explained this distinction between the field and the knower.",
+   "meaning": "Listen to the field, its nature, its changes, its source, and the knower of the field, along with that knower's powers, in brief."
+  },
+  "hi": {
+   "intro": "सुनिए, कृष्ण यहाँ 'क्षेत्र' शब्द पर ध्यान दीजिए, क्योंकि वे इस क्षेत्र और उस क्षेत्रज्ञ का वर्णन करने जा रहे हैं जो इसके भीतर हैं।",
+   "meaning": "हे अर्जुन, वह क्षेत्र जो है, कैसा है, किन विकारोंवाला है और जिससे क्या पैदा हुआ है, तथा वह क्षेत्रज्ञ भी जो है और उसका क्या प्रभाव है, वह सब संक्षेपमें मुझसे सुन।",
+   "notice": "",
+   "next": "ऋषियों और वैदिक स्तोत्रों ने इस क्षेत्र और क्षेत्रज्ञ के भेद को पहले ही विस्तार से समझाया है।"
+  }
+ },
+ "en": {
+  "intro": "Listen for the word kshetra, the field, as Krishna begins to describe it and the knower who stands within it.",
+  "body": "Listen to the field, its nature, its changes, its source, and the knower of the field, along with that knower's powers, in brief. Krishna lists four things about the field: its nature, its changes, its source, and the powers of the knower, showing that the field is a changing object. Sages and Vedic hymns have already explained this distinction between the field and the knower."
+ },
+ "hi": {
+  "intro": "सुनिए, कृष्ण यहाँ 'क्षेत्र' शब्द पर ध्यान दीजिए, क्योंकि वे इस क्षेत्र और उस क्षेत्रज्ञ का वर्णन करने जा रहे हैं जो इसके भीतर हैं।",
+  "body": "हे अर्जुन, वह क्षेत्र जो है, कैसा है, किन विकारोंवाला है और जिससे क्या पैदा हुआ है, तथा वह क्षेत्रज्ञ भी जो है और उसका क्या प्रभाव है, वह सब संक्षेपमें मुझसे सुन। ऋषियों और वैदिक स्तोत्रों ने इस क्षेत्र और क्षेत्रज्ञ के भेद को पहले ही विस्तार से समझाया है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.intro missing",
+    "en.notice missing",
+    "en.next missing",
+    "hi.intro missing",
+    "hi.meaning missing",
+    "hi.notice missing",
+    "hi.next missing",
+    "angle_en/angle_hi missing"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: dash"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: dash",
+    "wrong_fact: \"Notice: कृष्ण चार बातें बताते हैं—क्षेत्र का स्वरूप, उसके विकार, उसकी उत्पत्ति और क्षेत्रज्ञ का प्रभाव\" (The notice presents the content of the NEXT verse (verse 5) as if it were in this verse. Verse 5 mentions that sages and Vedic hymns have explained this distinction. The notice incorrectly claims that Krishna lists 'origin/source' (उत्पत्ति) as one of the four things in this verse, when the source (from where it comes) is actually part of the field's description in this verse, and the 'origin' phrasing is a misattribution of the next verse's content.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: dash",
+    "wrong_fact: \"Sages and Vedic hymns have already explained this distinction between the field and the knower.\" (The NEXT verse (verse 5) states that sages, Vedic hymns, and the Brahma Sutras have sung about this truth, but it does not explicitly state that they have already 'explained this distinction'. More importantly, the intro and notice in the Hindi script incorrectly present the content of the PREVIOUS verse (verse 3) as if it belongs to this verse (verse 4). Verse 3 is about knowing Krishna as the knower, while verse 4 is about listing the field's nature, changes, source, and the knower's powers.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

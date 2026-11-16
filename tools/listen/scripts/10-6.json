@@ -1,0 +1,74 @@
+{
+ "chapter": 10,
+ "verse": 6,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "sages born from his mind",
+    "evidence": "मानसा जाताः"
+   },
+   {
+    "angle": "people descend from the sages",
+    "evidence": "येषां लोक इमाः प्रजाः"
+   },
+   {
+    "angle": "the cosmic source of all beings",
+    "evidence": "मद्भावा मानसा जाता"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "sages born from his mind",
+ "angle_hi": "मन से उत्पन्न ऋषि",
+ "parts": {
+  "en": {
+   "intro": "Krishna widens Arjuna’s sight from the battlefield to the source of all life. Listen for the origin he names here.",
+   "notice": "The sages and Manus did not arrive as bodies from outside; they were born from his mind, and every person in the world descends through that single line of thought.",
+   "next": "Krishna then tells Arjuna that knowing this truth makes one stand firm in yoga without any doubt.",
+   "meaning": "The seven great sages, the four ancient sages, and the fourteen Manus were born from my mind. The people of these worlds descend from them."
+  },
+  "hi": {
+   "intro": "कृष्ण अर्जुन की दृष्टि को युद्ध के मैदान से हटाकर जीवन की उत्पत्ति की ओर ले जाते हैं। यहाँ उत्पत्ति के बारे में क्या कहते हैं, सुनिए।",
+   "meaning": "सात महर्षि, चार प्राचीन ऋषि और चौदह मनु मेरे मन से उत्पन्न हुए हैं और इन लोकों की प्रजा उन्हीं से आई है।",
+   "notice": "ये ऋषि और मनु उनके मन से उत्पन्न हुए हैं और इन लोकों की सारी प्रजा उन्हीं से उत्पन्न हुई है।",
+   "next": "इस वंश को जानना ही योग में स्थिर होने का मार्ग है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna widens Arjuna’s sight from the battlefield to the source of all life. Listen for the origin he names here.",
+  "body": "The seven great sages, the four ancient sages, and the fourteen Manus were born from my mind. The people of these worlds descend from them. The sages and Manus did not arrive as bodies from outside; they were born from his mind, and every person in the world descends through that single line of thought. Krishna then tells Arjuna that knowing this truth makes one stand firm in yoga without any doubt."
+ },
+ "hi": {
+  "intro": "कृष्ण अर्जुन की दृष्टि को युद्ध के मैदान से हटाकर जीवन की उत्पत्ति की ओर ले जाते हैं। यहाँ उत्पत्ति के बारे में क्या कहते हैं, सुनिए।",
+  "body": "सात महर्षि, चार प्राचीन ऋषि और चौदह मनु मेरे मन से उत्पन्न हुए हैं और इन लोकों की प्रजा उन्हीं से आई है। ये ऋषि और मनु उनके मन से उत्पन्न हुए हैं और इन लोकों की सारी प्रजा उन्हीं से उत्पन्न हुई है। इस वंश को जानना ही योग में स्थिर होने का मार्ग है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.notice: contrast template",
+    "borrowed: \"जो इस महिमा और योग को जानता है, वह बिना किसी संशय के योग में स्थिर हो जाता है\" (The 'hi.next' field quotes the meaning of the NEXT verse (verse 7), which states that knowing Krishna's glory and yoga makes one steadfast without doubt. This is a borrowed content issue for the current verse's 'next' field.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template",
+    "contrast_template: \"ये ऋषि और मनु बाहर से नहीं आए, बल्कि उनके मन से उत्पन्न हुए\" (The word 'बल्कि' (but rather) is used, which introduces a contrast between arriving from outside and being born from the mind. The original Sanskrit does not contrast these two ideas; it simply states that the sages and Manus were born from Krishna's mind.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "meaning_changed: \"सात महर्षि, चार प्राचीन ऋषि और चौदह मनु मेरे मन से उत्पन्न हुए हैं और इन लोकों की प्रजा उन्हीं से आई है।\" (The Hindi meaning drops the crucial detail that all people of the worlds descend from the sages and Manus (येषां लोक इमाः प्रजाः). It only states that the people of these worlds came from them (इन लोकों की प्रजा उन्हीं से आई है), which is a significant softening of the cosmic chain of creation described in the source.)",
+    "meaning_changed: \"ये ऋषि और मनु उनके मन से उत्पन्न हुए हैं और इस संसार की सारी प्रजा उन्हीं की सन्तान है।\" (The Hindi notice adds the word 'सन्तान' (descendants/offspring), implying a biological or direct lineage. The source text states they were born from his mind (मानसा जाताः) and that people descend from them (येषाम्... प्रजाः), not that they are direct descendants of the sages and Manus in a biological sense. This contradicts the original divine, mental creation concept.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": []
+  }
+ ],
+ "source": "sarvam"
+}

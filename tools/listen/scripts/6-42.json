@@ -1,0 +1,76 @@
+{
+ "chapter": 6,
+ "verse": 42,
+ "style": "point the listener to one word to listen for",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "yoginam, of the wise, and the family shaped by wisdom",
+    "evidence": "योगिनामेव कुले धीमताम् (in the family of wise yogis)"
+   },
+   {
+    "angle": "यदीदृशम्, this kind, a rare chance to start again",
+    "evidence": "यदीदृशम् (of this kind)"
+   },
+   {
+    "angle": "अथवा, or, a better fate for the one who fell",
+    "evidence": "अथवा (or)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Yoginam: a family shaped by wisdom",
+ "angle_hi": "योगिनाम्: ज्ञान से बना कुल",
+ "parts": {
+  "en": {
+   "intro": "Krishna has just described the fate of the yogi who slips. Now listen for a different possibility, one that offers a rare advantage for the one who fell.",
+   "notice": "Listen for the word yoginam, of the yogis. Instead of being born into a wealthy or pure house, the one who fell returns straight into a family shaped by wisdom and discipline, where the path can continue.",
+   "next": "Sanjaya now says that in that family he regains his old understanding and strives again toward success.",
+   "meaning": "Or he is born into the family of wise yogis. Such a birth is very rare in this world."
+  },
+  "hi": {
+   "intro": "कृष्ण ने अभी उस योगभ्रष्ट की गति बताई है जो पथ से भटक गया; अब सुनिए एक दूसरी और ऊँची संभावना, जो पथभ्रष्ट के लिए एक दुर्लभ लाभ देती है।",
+   "meaning": "अथवा वह योगभ्रष्ट, यदि वैराग्यवान था, तो बुद्धिमान योगियों के कुल में ही जन्म लेता है। इस प्रकार का जन्म संसार में बहुत ही दुर्लभ है।",
+   "notice": "या वह बुद्धिमान योगियों के कुल में जन्मता है, ऐसा जन्म दुर्लभ",
+   "next": "संजय अब कहते हैं कि उस कुल में वह अपने पिछले जन्म का ज्ञान स्वतः ही पा लेता है और फिर से पूर्ण सफलता की ओर प्रयास करता है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna has just described the fate of the yogi who slips. Now listen for a different possibility, one that offers a rare advantage for the one who fell.",
+  "body": "Or he is born into the family of wise yogis. Such a birth is very rare in this world. Listen for the word yoginam, of the yogis. Instead of being born into a wealthy or pure house, the one who fell returns straight into a family shaped by wisdom and discipline, where the path can continue. Sanjaya now says that in that family he regains his old understanding and strives again toward success."
+ },
+ "hi": {
+  "intro": "कृष्ण ने अभी उस योगभ्रष्ट की गति बताई है जो पथ से भटक गया; अब सुनिए एक दूसरी और ऊँची संभावना, जो पथभ्रष्ट के लिए एक दुर्लभ लाभ देती है।",
+  "body": "अथवा वह योगभ्रष्ट, यदि वैराग्यवान था, तो बुद्धिमान योगियों के कुल में ही जन्म लेता है। इस प्रकार का जन्म संसार में बहुत ही दुर्लभ है। या वह बुद्धिमान योगियों के कुल में जन्मता है, ऐसा जन्म दुर्लभ संजय अब कहते हैं कि उस कुल में वह अपने पिछले जन्म का ज्ञान स्वतः ही पा लेता है और फिर से पूर्ण सफलता की ओर प्रयास करता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template",
+    "wrong_fact: \"संजय अब कहते हैं कि उस कुल में वह अपने पिछले जन्म का ज्ञान स्वतः ही पा लेता है और फिर से पूर्ण सफलता की ओर प्रयास करता है।\" (The 'next' notice in the Hindi section incorrectly attributes the content of verse 43 (about regaining spiritual understanding from the previous life and striving again) to Sanjaya. In the Bhagavad Gita, Sanjaya is the narrator of the entire dialogue, and Krishna is the speaker of verse 43.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template",
+    "borrowed: \"Listen for the word yoginam, of the yogis. Instead of being born into a wealthy or pure house, the one who fell returns straight into a family shaped by wisdom and discipline, where the path can continue.\" (The phrase 'Instead of being born into a wealthy or pure house' presents content from the PREVIOUS verse (41) as if it were part of the current verse's (42) content. The current verse only contrasts being born into a family of wise yogis versus other possibilities, not specifically 'wealthy or pure houses'.)",
+    "unsupported: \"Then he strives again, with greater force, toward complete success.\" (The phrase 'with greater force' (अधिक बल से) is an unsupported factual claim not found in the Sanskrit source or the provided Hindi bhavarth. The source simply states he strives again (पुनरेव प्रयातायते), without specifying the intensity of the effort.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

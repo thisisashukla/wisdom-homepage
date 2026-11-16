@@ -1,0 +1,80 @@
+{
+ "chapter": 18,
+ "verse": 27,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "rajasic doer is restless and split between joy and grief",
+    "evidence": "हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः (the doer joined with joy and sorrow is called passionate)"
+   },
+   {
+    "angle": "craving and greed for results lead to violence",
+    "evidence": "लुब्धो हिंसात्मकः (greedy and of violent nature)"
+   },
+   {
+    "angle": "rajasic action is impure because it is rooted in craving",
+    "evidence": "अशुचिः (impure)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "rajasic doer is impure and restless",
+ "angle_hi": "राजसिक कर्ता अशुद्ध और अशांत है",
+ "parts": {
+  "en": {
+   "intro": "Krishna has just described the steady doer; now he names the restless middle path.",
+   "notice": "Krishna calls the rajasic doer impure, and that word reveals a restless mind that wants the reward, resents the loss, and cannot rest.",
+   "next": "Next, Krishna names the doer who is careless, crude, and lazy, the tamasic doer.",
+   "meaning": "The doer ruled by craving, chasing results, greedy, violent in nature, impure, and tossed by joy and sorrow is called passionate."
+  },
+  "hi": {
+   "intro": "सुनिए, श्रीकृष्ण क्या कहते हैं।",
+   "meaning": "जो कर्ता रागी, कर्मफलकी इच्छावाला, लोभी, हिंसाके स्वभाववाला, अशुद्ध और हर्षशोकसे युक्त है, वह राजस कहा गया है।",
+   "notice": "कृष्ण इस कर्ता को अशुद्ध कहते हैं, और यह शब्द बताता है कि जो मन फल की लालसा रखता है, हारने पर दुखी होता है, और कभी शांति नहीं पा सकता।",
+   "next": "आगे, कृष्ण उस कर्ता का नाम लेते हैं जो लापरवाह, क्रूर, और आलसी है, तामसिक कर्ता।"
+  }
+ },
+ "en": {
+  "intro": "Krishna has just described the steady doer; now he names the restless middle path.",
+  "body": "The doer ruled by craving, chasing results, greedy, violent in nature, impure, and tossed by joy and sorrow is called passionate. Krishna calls the rajasic doer impure, and that word reveals a restless mind that wants the reward, resents the loss, and cannot rest. Next, Krishna names the doer who is careless, crude, and lazy, the tamasic doer."
+ },
+ "hi": {
+  "intro": "सुनिए, श्रीकृष्ण क्या कहते हैं।",
+  "body": "जो कर्ता रागी, कर्मफलकी इच्छावाला, लोभी, हिंसाके स्वभाववाला, अशुद्ध और हर्षशोकसे युक्त है, वह राजस कहा गया है। कृष्ण इस कर्ता को अशुद्ध कहते हैं, और यह शब्द बताता है कि जो मन फल की लालसा रखता है, हारने पर दुखी होता है, और कभी शांति नहीं पा सकता। आगे, कृष्ण उस कर्ता का नाम लेते हैं जो लापरवाह, क्रूर, और आलसी है, तामसिक कर्ता।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.intro missing",
+    "hi.meaning missing",
+    "hi.notice missing",
+    "hi.next missing",
+    "angle_en/angle_hi missing"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.intro: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.intro: contrast template",
+    "meaning_changed: \"कृष्ण इस कर्ता को अशुद्ध कहते हैं, और यह शब्द बताता है कि जो मन फल की लालसा रखता है, हारने पर दुखी होता है, और कभी शांति नहीं पा सकता।\" (The notice adds a new negative claim ('हारने पर दुखी होता है, और कभी शांति नहीं पा सकता') that is not in the source or the word meanings. The source only states that the doer is 'अशुद्ध' (impure) and 'हर्षशोकसे युक्त' (joined with joy and sorrow), not that he is permanently miserable or can never find peace.)",
+    "meaning_changed: \"कृष्ण इस कर्ता को अशुद्ध कहते हैं\" (This phrasing shifts the focus from the doer to the word 'impure'. The source and English meaning describe the doer as being 'अशुद्ध' (impure), not that Krishna is calling him 'impure' as a specific label in this exact sentence.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.intro: contrast template",
+    "borrowed: \"Next, Krishna names the doer who is careless, crude, and lazy, the tamasic doer.\" (The English 'next' section incorrectly describes the NEXT verse (28) as if it belongs to the current verse (27).)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

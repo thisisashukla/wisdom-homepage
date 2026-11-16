@@ -20,6 +20,7 @@ import {
 import type { Verse } from '@/lib/gita'
 import ChapterProgress, { ReadTick } from '@/components/reader/ChapterProgress'
 import { readModeUrl } from '@/lib/gitaUrls'
+import { ChapterListenStrip } from '@/components/listen/ListenLinks'
 import SanskritText from '@/components/gita/SanskritText'
 import LinkCards from '@/components/site/LinkCards'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
@@ -191,6 +192,7 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
           पूरा अध्याय एक पृष्ठ पर पढ़ें या सुनें →
         </a>
       </p>
+      <ChapterListenStrip chapter={ch.number} lang="hi" />
 
       {gist && (
         <section className="gita-gist" aria-label="अध्याय का सार">

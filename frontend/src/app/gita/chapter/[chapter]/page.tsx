@@ -15,6 +15,7 @@ import {
 import type { Verse } from '@/lib/gita'
 import ChapterProgress, { ReadTick } from '@/components/reader/ChapterProgress'
 import { readModeUrl } from '@/lib/gitaUrls'
+import { ChapterListenStrip } from '@/components/listen/ListenLinks'
 import { THIRTY_DAYS } from '@/lib/readingPlans'
 import SanskritText from '@/components/gita/SanskritText'
 import LinkCards from '@/components/site/LinkCards'
@@ -168,6 +169,7 @@ export default async function ChapterPage({ params }: { params: Params }) {
           Read the whole chapter on one page, or listen to it →
         </a>
       </p>
+      <ChapterListenStrip chapter={ch.number} lang="en" />
       <p style={{ fontSize: 13.5, color: 'var(--text-dim)', marginTop: 10 }}>
         Reading a chapter a day? This is day {ch.number} of 18.{' '}
         <a

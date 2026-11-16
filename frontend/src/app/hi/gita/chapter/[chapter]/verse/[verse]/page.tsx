@@ -29,6 +29,8 @@ import { verseRoman, fitDescription, withExtras } from '@/lib/verseText'
 import ReadingTracker from '@/components/reader/ReadingTracker'
 import TrailBar from '@/components/reader/TrailBar'
 import StoryJumps from '@/components/reader/StoryJumps'
+import VerseListen from '@/components/listen/VerseListen'
+import { listenSessionForVerse } from '@/lib/listenServer'
 import { VERSE_TRANSLATION_ID } from '@/components/reader/ids'
 import VerseShareBar from '@/components/gita/VerseShareBar'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
@@ -348,6 +350,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
         <VerseRomanLines roman={roman} />
+        <VerseListen chapter={c} verse={v} lang="hi" session={listenSessionForVerse(c, v, 'hi')} />
 
         <p className="gv-en-quote" lang="hi" id={VERSE_TRANSLATION_ID}>{verse.hindiTranslation}</p>
         {joint.length > 1 && (

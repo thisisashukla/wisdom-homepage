@@ -1,0 +1,71 @@
+{
+ "chapter": 10,
+ "verse": 14,
+ "style": "point the listener to one word to listen for",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Arjuna accepts all Krishna's words as true",
+    "evidence": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव"
+   },
+   {
+    "angle": "Neither devas nor asuras know your manifested form",
+    "evidence": "न हि ते भगवन् व्यक्ितं विदुर्देवा न दानवाः"
+   },
+   {
+    "angle": "Arjuna addresses Krishna as Keshava and Bhagavan",
+    "evidence": "केशव / भगवन्"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Keshava: the Lord whom even gods do not know",
+ "angle_hi": "केशव: वह प्रभु जिसे देवता भी नहीं जान सकते",
+ "parts": {
+  "en": {
+   "intro": "Arjuna is listening to Krishna describe his divine nature, and he tells Krishna to listen for the one thing that makes this truth so staggering.",
+   "notice": "Arjuna calls Krishna Keshava, and he says he accepts every word as true, yet he admits that neither the devas nor the asuras know your manifested form.",
+   "next": "He now says that only the Supreme Person can know himself, setting up the next verse.",
+   "meaning": "I accept as true all that you have said, O Keshava. O Bhagavan, neither the devas nor the asuras know your manifested form."
+  },
+  "hi": {
+   "intro": "अर्जुन कृष्ण के दिव्य स्वभाव के वर्णन को सुन रहे हैं, और वे कृष्ण से उस एक बात पर ध्यान देने को कहते हैं जो इस सत्य को इतना विस्मयकारी बनाती है।",
+   "meaning": "हे केशव, मेरेसे आप जो कुछ कह रहे हैं, यह सब मैं सत्य मानता हूँ। हे भगवन्, आपके प्रकट होनेको न तो देवता जानते हैं और न दानव ही जानते हैं।",
+   "notice": "अर्जुन कृष्ण को केशव और भगवन् कहते हैं, और वे हर शब्द को सत्य मानते हैं, फिर भी वे मानते हैं कि न देवता और न दानव आपके प्रकट रूप को जान सकते हैं।",
+   "next": "वे अब कहते हैं कि केवल परम पुरुष ही स्वयं को जानता है, जो अगले श्लोक की ओर ले जाता है।"
+  }
+ },
+ "en": {
+  "intro": "Arjuna is listening to Krishna describe his divine nature, and he tells Krishna to listen for the one thing that makes this truth so staggering.",
+  "body": "I accept as true all that you have said, O Keshava. O Bhagavan, neither the devas nor the asuras know your manifested form. Arjuna calls Krishna Keshava, and he says he accepts every word as true, yet he admits that neither the devas nor the asuras know your manifested form. He now says that only the Supreme Person can know himself, setting up the next verse."
+ },
+ "hi": {
+  "intro": "अर्जुन कृष्ण के दिव्य स्वभाव के वर्णन को सुन रहे हैं, और वे कृष्ण से उस एक बात पर ध्यान देने को कहते हैं जो इस सत्य को इतना विस्मयकारी बनाती है।",
+  "body": "हे केशव, मेरेसे आप जो कुछ कह रहे हैं, यह सब मैं सत्य मानता हूँ। हे भगवन्, आपके प्रकट होनेको न तो देवता जानते हैं और न दानव ही जानते हैं। अर्जुन कृष्ण को केशव और भगवन् कहते हैं, और वे हर शब्द को सत्य मानते हैं, फिर भी वे मानते हैं कि न देवता और न दानव आपके प्रकट रूप को जान सकते हैं। वे अब कहते हैं कि केवल परम पुरुष ही स्वयं को जानता है, जो अगले श्लोक की ओर ले जाता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "wrong_fact: \"He now says that only the Supreme Person can know himself, setting up the next verse.\" (This is the content of the NEXT verse (10.15), not this verse. The script presents the next verse's content as if it is part of the current verse's meaning.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "borrowed: \"Arjuna calls Krishna Keshava, and he says he accepts every word as true, yet he admits that neither the devas nor the asuras know your manifested form.\" (The 'notice' presents content from the next verse (verse 15, where Arjuna says only the Supreme Person knows himself) as if it were in this verse. It incorrectly claims Arjuna says 'he admits that neither the devas nor the asuras know your manifested form,' which is actually the meaning of this verse, but the phrasing 'yet he admits that neither...' and 'who only the Supreme Person can know himself, setting up the next verse' is borrowed from the NEXT verse's context.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "borrowed: \"He now says that only the Supreme Person can know himself, setting up the next verse.\" (The 'next' field presents the content of the NEXT verse (verse 15) as if it were in this verse (verse 14). This is a borrowed/misplaced narrative.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": []
+  }
+ ],
+ "source": "sarvam"
+}

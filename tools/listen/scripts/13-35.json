@@ -1,0 +1,65 @@
+{
+ "chapter": 13,
+ "verse": 35,
+ "style": "who is speaking to whom, and what has just happened",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "knowledge-eye separates the knower from the known field",
+    "evidence": "ज्ञानचक्षुषा (with the eye of knowledge)"
+   },
+   {
+    "angle": "Krishna pairs seeing the field with release from nature",
+    "evidence": "क्षेत्र और क्षेत्रज्ञके अन्तरविभाग को तथा कार्यकारणसहित प्रकृतिसे स्वयंको अलग जानते हैं"
+   },
+   {
+    "angle": "knowing the supreme means knowing the field and knower apart",
+    "evidence": "क्षेत्र और क्षेत्रज्ञके अन्तरविभाग को ... वे परमात्माको प्राप्त हो जाते हैं"
+   }
+  ],
+  "best": 2
+ },
+ "angle_en": "knowledge-eye separates the knower from the field",
+ "angle_hi": "ज्ञानचक्षुषा ज्ञाता को क्षेत्र से अलग करता है",
+ "parts": {
+  "en": {
+   "intro": "Krishna is teaching the final truth, that the knower and the known must be seen as different. Listen for the two things a person must know to reach the supreme.",
+   "notice": "Krishna pairs the eye of knowledge with release from nature. He says the supreme is reached by those who know the difference between the field and the knower and also know how to free themselves from material nature.",
+   "next": "Krishna says he will speak again of this highest knowledge, which sages have used to reach the supreme perfection.",
+   "meaning": "In this way, those who know the distinction between the field and the knower of the field with the eye of wisdom, and who know release from the source of nature, attain the supreme."
+  },
+  "hi": {
+   "intro": "कृष्ण अंतिम सत्य सिखा रहे हैं, कि ज्ञाता और ज्ञेय को अलग देखना है। सुनिए, सर्वोच्च को पाने के लिए व्यक्ति को दो बातें क्या जाननी चाहिए।",
+   "meaning": "इस प्रकार जो ज्ञानरूपी नेत्रसे क्षेत्र और क्षेत्रज्ञके अन्तरविभाग को तथा कार्यकारणसहित प्रकृतिसे स्वयंको अलग जानते हैं, वे परमात्माको प्राप्त हो जाते हैं ॥",
+   "notice": "कृष्ण ज्ञानचक्षुषा और भूतप्रकृतिमोक्षम् को एक साथ रखते हैं। वे कहते हैं कि सर्वोच्च वे ही पाते हैं जो क्षेत्र और क्षेत्रज्ञ का भेद जानते हैं और प्रकृति से स्वयं को अलग करना जानते हैं।",
+   "next": "कृष्ण फिर से उस सर्वोच्च ज्ञान की बात करेंगे, जिसे जानकर सभी ऋषि यहाँ से सर्वोच्च पूर्णता को पा चुके हैं।"
+  }
+ },
+ "en": {
+  "intro": "Krishna is teaching the final truth, that the knower and the known must be seen as different. Listen for the two things a person must know to reach the supreme.",
+  "body": "In this way, those who know the distinction between the field and the knower of the field with the eye of wisdom, and who know release from the source of nature, attain the supreme. Krishna pairs the eye of knowledge with release from nature. He says the supreme is reached by those who know the difference between the field and the knower and also know how to free themselves from material nature. Krishna says he will speak again of this highest knowledge, which sages have used to reach the supreme perfection."
+ },
+ "hi": {
+  "intro": "कृष्ण अंतिम सत्य सिखा रहे हैं, कि ज्ञाता और ज्ञेय को अलग देखना है। सुनिए, सर्वोच्च को पाने के लिए व्यक्ति को दो बातें क्या जाननी चाहिए।",
+  "body": "इस प्रकार जो ज्ञानरूपी नेत्रसे क्षेत्र और क्षेत्रज्ञके अन्तरविभाग को तथा कार्यकारणसहित प्रकृतिसे स्वयंको अलग जानते हैं, वे परमात्माको प्राप्त हो जाते हैं ॥ कृष्ण ज्ञानचक्षुषा और भूतप्रकृतिमोक्षम् को एक साथ रखते हैं। वे कहते हैं कि सर्वोच्च वे ही पाते हैं जो क्षेत्र और क्षेत्रज्ञ का भेद जानते हैं और प्रकृति से स्वयं को अलग करना जानते हैं। कृष्ण फिर से उस सर्वोच्च ज्ञान की बात करेंगे, जिसे जानकर सभी ऋषि यहाँ से सर्वोच्च पूर्णता को पा चुके हैं।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "wrong_fact: \"Next: 'कृष्ण कहते हैं कि वे फिर से उस सर्वोच्च ज्ञान की बात करेंगे, जिसे जानकर सभी ऋषि यहाँ से सर्वोच्च पूर्णता को पा चुके हैं।'\" (The next verse (Chapter 14, verse 1) says Krishna will speak again of this highest knowledge, and that knowing it, sages have reached the supreme perfection. The Hindi translation says sages have already reached it 'from here' (यहाँ से), which misrepresents the future-oriented statement in the source.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "borrowed: \"Next: \"Krishna says he will speak again of this highest knowledge, which sages have used to reach the supreme perfection.\"\" (This next description is borrowed from the NEXT verse (13.35 -> 14.1). The user's instruction states the NEXT field should describe the next verse, but the instruction for 'wrong_fact' explicitly says 'NEXT misdescribes the next verse'. Here, the next description is accurate, but it is placed under the wrong current verse's JSON key, effectively borrowing the next verse's content into the current verse's 'next' field, which violates the structural integrity of the verse-by-verse checking.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": []
+  }
+ ],
+ "source": "sarvam"
+}

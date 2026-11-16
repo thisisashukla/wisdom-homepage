@@ -1,0 +1,75 @@
+{
+ "chapter": 3,
+ "verse": 17,
+ "style": "a question this verse answers",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "आत्मरतिः, delighting in the self",
+    "evidence": "आत्मरतिः (one who delights in the self)"
+   },
+   {
+    "angle": "आत्मतृप्तः, satisfied in the self",
+    "evidence": "आत्मतृप्तः (satisfied in the self)"
+   },
+   {
+    "angle": "कार्यं, duty",
+    "evidence": "कार्यम् (duty, task)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Karyam: duty that is no longer needed",
+ "angle_hi": "कार्यम्: वह कर्तव्य जो अब आवश्यक नहीं",
+ "parts": {
+  "en": {
+   "intro": "If work is for the world, what happens when the world is no longer needed? Listen for the one who has found fullness within.",
+   "notice": "Krishna points to the one who has found fullness within. For this person, no duty remains to be done.",
+   "next": "Krishna then asks what the perfected person, who has no purpose in doing, should do next.",
+   "meaning": "The person who delights in the true self, is satisfied in the true self, and is content in the true self has no duty left."
+  },
+  "hi": {
+   "intro": "अगर कर्म दुनिया के लिए है, तो क्या होगा जब दुनिया की कोई जरूरत ही न बचे? सुनिए, उस व्यक्ति की बात जो भीतर से ही पूरा है।",
+   "meaning": "जो मनुष्य अपने आप में ही रमण करनेवाला, अपने आप में ही तृप्त और अपने आप में ही संतुष्ट है, उसके लिए कोई कर्तव्य नहीं है।",
+   "notice": "कृष्ण कहते हैं कि जो व्यक्ति भीतर से ही पूर्ण है, उसके लिए कोई कर्तव्य शेष नहीं रहता।",
+   "next": "आगे श्रीकृष्ण कहते हैं।"
+  }
+ },
+ "en": {
+  "intro": "If work is for the world, what happens when the world is no longer needed? Listen for the one who has found fullness within.",
+  "body": "The person who delights in the true self, is satisfied in the true self, and is content in the true self has no duty left. Krishna points to the one who has found fullness within. For this person, no duty remains to be done. Krishna then asks what the perfected person, who has no purpose in doing, should do next."
+ },
+ "hi": {
+  "intro": "अगर कर्म दुनिया के लिए है, तो क्या होगा जब दुनिया की कोई जरूरत ही न बचे? सुनिए, उस व्यक्ति की बात जो भीतर से ही पूरा है।",
+  "body": "जो मनुष्य अपने आप में ही रमण करनेवाला, अपने आप में ही तृप्त और अपने आप में ही संतुष्ट है, उसके लिए कोई कर्तव्य नहीं है। कृष्ण कहते हैं कि जो व्यक्ति भीतर से ही पूर्ण है, उसके लिए कोई कर्तव्य शेष नहीं रहता। आगे श्रीकृष्ण कहते हैं।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template",
+    "unsupported: \"कृष्ण फिर पूछते हैं कि जो व्यक्ति पूर्ण हो चुका है, जिसके लिए करने में और न करने में कोई उद्देश्य नहीं बचा, उसे आगे क्या करना चाहिए।\" (This is the content of the NEXT verse (3.18). The script presents it in the 'next' field, which is allowed, but the user instructions specify to report 'wrong_fact: NEXT misdescribes the next verse.' Since this is a direct, accurate description of the next verse (3.18), it does not misdescribe it. However, looking at the Hindi 'next' field, it accurately reflects verse 18. There is no severe problem here.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "borrowed: \"जो व्यक्ति पूर्ण हो चुका है, जिसके लिए करने में और न करने में कोई उद्देश्य नहीं बचा, उसे आगे क्या करना चाहिए।\" (The Hindi 'next' statement presents the content of verse 18 as if it were part of this verse, rather than clearly labeling it as the next verse. It says 'उसे आगे क्या करना चाहिए' (what should he do next), which is an unsupported inference not in the source.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "wrong_fact: \"next: \"परम पुरुष के लिए कुछ भी करने और कुछ भी न करने का कोई उद्देश्य शेष नहीं रहता।\"\" (The Hindi 'next' describes verse 18 ('For the perfected person, no purpose remains in doing, and no purpose remains in not doing'), but it incorrectly attributes this to the current verse (17). Verse 17 is about one who has no duty left because they are self-satisfied, not about the perfected person having no purpose in doing and not doing.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "meaning_changed: \"सुनिए, उस व्यक्ति की बात जो भीतर से ही पूरा है।\" (The Hindi intro changes the meaning from a question about work and the world to a direct instruction to 'listen to the person who is full within'. The SOURCE intro is a rhetorical question about what happens when the world is no longer needed, not a direct address to listen to a person.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

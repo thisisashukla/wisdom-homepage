@@ -1,0 +1,78 @@
+{
+ "chapter": 3,
+ "verse": 2,
+ "style": "a question this verse answers",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "Arjuna calls Krishna's words mixed and confusing",
+    "evidence": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे (Your words seem mixed and confusing to me)"
+   },
+   {
+    "angle": "Arjuna demands one clear teaching for his highest good",
+    "evidence": "तदेकं वद निश्िचत्य येन श्रेयोऽहमाप्नुयाम् (Tell me one thing clearly, so I may find the highest good)"
+   },
+   {
+    "angle": "Arjuna asks why Krishna urges him to terrible action if knowledge is superior",
+    "evidence": "अगर आप कर्मसे बुद्धि ज्ञान को श्रेष्ठ मानते हैं, तो फिर हे केशव मुझे घोर कर्ममें क्यों लगाते हैं"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "evam: the word that shifts blame to the mind",
+ "angle_hi": "इव: एक शब्द जो मन की उलझन को दर्शाता है",
+ "parts": {
+  "en": {
+   "intro": "Arjuna has already collapsed in despair. Now he pushes Krishna with a direct demand: tell me one clear path that leads to the highest good.",
+   "notice": "Arjuna says your words confuse my understanding not by their nature, but because my own mind is entangled. He asks for one teaching not as a student, but as a man demanding a single way out.",
+   "next": "Krishna answers by telling Arjuna that he has already taught two paths, the path of knowledge and the path of action.",
+   "meaning": "Arjuna says: Your words seem mixed and confusing to me. Tell me one thing clearly, so I may find the highest good."
+  },
+  "hi": {
+   "intro": "अर्जुन पहले ही घुटने टेक चुके हैं। अब वे कृष्ण से एक सीधी माँग करते हैं: मुझे वह एक बात बताइए जो मेरे परम कल्याण का मार्ग हो।",
+   "meaning": "अर्जुन कहते हैं कि आपके मिले-जुले से वचन मेरी बुद्धि को मानो मोह में डाल रहे हैं। इसलिए निश्चय करके वह एक बात बताइए जिससे मेरा कल्याण हो।",
+   "notice": "मिली-जुली बातों से उलझा हूँ, एक निश्चित बात कहिए",
+   "next": "कृष्ण उत्तर देते हैं कि उन्होंने पहले ही दो मार्ग बताए हैं, ज्ञान और कर्म।"
+  }
+ },
+ "en": {
+  "intro": "Arjuna has already collapsed in despair. Now he pushes Krishna with a direct demand: tell me one clear path that leads to the highest good.",
+  "body": "Arjuna says: Your words seem mixed and confusing to me. Tell me one thing clearly, so I may find the highest good. Arjuna says your words confuse my understanding not by their nature, but because my own mind is entangled. He asks for one teaching not as a student, but as a man demanding a single way out. Krishna answers by telling Arjuna that he has already taught two paths, the path of knowledge and the path of action."
+ },
+ "hi": {
+  "intro": "अर्जुन पहले ही घुटने टेक चुके हैं। अब वे कृष्ण से एक सीधी माँग करते हैं: मुझे वह एक बात बताइए जो मेरे परम कल्याण का मार्ग हो।",
+  "body": "अर्जुन कहते हैं कि आपके मिले-जुले से वचन मेरी बुद्धि को मानो मोह में डाल रहे हैं। इसलिए निश्चय करके वह एक बात बताइए जिससे मेरा कल्याण हो। मिली-जुली बातों से उलझा हूँ, एक निश्चित बात कहिए कृष्ण उत्तर देते हैं कि उन्होंने पहले ही दो मार्ग बताए हैं, ज्ञान और कर्म।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: Devanagari in English, write Sanskrit words in plain Roman letters",
+    "en.notice: contrast template",
+    "hi.notice: contrast template",
+    "angle_en: Devanagari in English, use plain Roman letters"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"अर्जुन कहते हैं कि आपके वचन मुझे भ्रमित नहीं कर रहे, बल्कि मेरा मन ही उलझा हुआ है।\" (This contradicts the source meaning where Arjuna explicitly asks Krishna to tell him one clear thing so he may attain the highest good. It omits the core request ('tell me one clear thing') and replaces it with a general statement about the mind being entangled, which is not the primary demand of this verse.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template",
+    "meaning_changed: \"Arjuna says your words confuse my understanding not by their nature, but because my own mind is entangled.\" (The Hindi translation of the verse explicitly states that Krishna's words are confusing Arjuna's intellect ('आप अपने मिले हुएसे वचनोंसे मेरी बुद्धिको मोहितसी कर रहे हैं'), directly attributing the confusion to the words themselves. The notice contradicts the source Hindi translation by claiming the confusion is only in Arjuna's mind.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

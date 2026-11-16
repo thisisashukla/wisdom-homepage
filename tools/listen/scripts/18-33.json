@@ -1,0 +1,74 @@
+{
+ "chapter": 18,
+ "verse": 33,
+ "style": "a question this verse answers",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "What is sattvic dhriti?",
+    "evidence": "यया धारयते मनःप्राणेन्द्रियक्रियाः योगेनाव्यभिचारिण्या धृतिः सा पार्थ सात्त्विकी"
+   },
+   {
+    "angle": "Sattvic dhriti is the power to steady mind, breath, and senses",
+    "evidence": "धारयते मनःप्राणेन्द्रियक्रियाः योगेनाव्यभिचारिण्या धृतिः सात्त्विकी"
+   },
+   {
+    "angle": "Krishna defines sattvic steadfastness",
+    "evidence": "धृतिः सात्त्विकी"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Sattvic dhriti steadies mind and senses",
+ "angle_hi": "सात्त्विकी धृति मन और इन्द्रियों को स्थिर रखती है",
+ "parts": {
+  "en": {
+   "intro": "Krishna is now answering the question, what is true inner strength? Listen to how he names the one strength that keeps the mind, breath, and senses steady.",
+   "notice": "Sattvic dhriti holds mind, breath and senses steady through unwavering yoga, Krishna tells Arjuna.",
+   "next": "Krishna now turns to the steadiness that clings to pleasure and wealth while craving results, which he calls passionate.",
+   "meaning": "O Partha, that steadfastness by which one holds steady the functions of mind, life-force, and senses through unwavering yoga is sattvic steadfastness."
+  },
+  "hi": {
+   "intro": "कृष्ण अब यह बता रहे हैं कि सच्ची आंतरिक शक्ति क्या है? सुनिए, वे कैसे उस शक्ति को नाम देते हैं जो मन, प्राण और इन्द्रियों को स्थिर रखती है।",
+   "meaning": "हे पार्थ, जिस धृति से मनुष्य योग के द्वारा मन, प्राण और इन्द्रियों की क्रियाओं को धारण करता है, वह अव्यभिचारिणी धृति सात्त्विकी है।",
+   "notice": "",
+   "next": "अब कृष्ण उस धृति की बात करते हैं जो सुख, लाभ और धन से जुड़ी रहती है और फलों की लालसा करती है, जिसे वे राजसी धृति कहते हैं।"
+  }
+ },
+ "en": {
+  "intro": "Krishna is now answering the question, what is true inner strength? Listen to how he names the one strength that keeps the mind, breath, and senses steady.",
+  "body": "O Partha, that steadfastness by which one holds steady the functions of mind, life-force, and senses through unwavering yoga is sattvic steadfastness. Sattvic dhriti holds mind, breath and senses steady through unwavering yoga, Krishna tells Arjuna. Krishna now turns to the steadiness that clings to pleasure and wealth while craving results, which he calls passionate."
+ },
+ "hi": {
+  "intro": "कृष्ण अब यह बता रहे हैं कि सच्ची आंतरिक शक्ति क्या है? सुनिए, वे कैसे उस शक्ति को नाम देते हैं जो मन, प्राण और इन्द्रियों को स्थिर रखती है।",
+  "body": "हे पार्थ, जिस धृति से मनुष्य योग के द्वारा मन, प्राण और इन्द्रियों की क्रियाओं को धारण करता है, वह अव्यभिचारिणी धृति सात्त्विकी है। अब कृष्ण उस धृति की बात करते हैं जो सुख, लाभ और धन से जुड़ी रहती है और फलों की लालसा करती है, जिसे वे राजसी धृति कहते हैं।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: contrast template",
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "contrast_template: \"यह केवल योग द्वारा आने वाली दृढ़ता है।\" (The source text does not say that sattvic steadfastness is the 'only' steadiness that comes through yoga. The Hindi translation uses the word 'केवल' (only), which is an unsupported addition/softening of the meaning.)"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "borrowed: \"अब कृष्ण उस धृति की बात करते हैं जो सुख, लाभ और धन से जुड़ी रहती है और फलों की लालसा करती है, जिसे वे राजसी धृति कहते हैं।\" (This is the exact content of the NEXT verse (verse 34), which describes passionate (rajasic) steadfastness. It is incorrectly placed as the 'next' pointer in the Hindi script for verse 33, which is about sattvic steadfastness.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "wrong_fact: \"संजय आगे बताते हैं कि जो धृति सुख, लाभ और धन से जुड़ी रहती है और फलों की लालसा करती है, वह राजसी धृति है।\" (The Hindi 'next' incorrectly attributes the description of Rajasic steadfastness to Sanjay (the narrator of the Mahabharata), whereas the SOURCE (verse 34) clearly states that Krishna is the speaker telling Arjuna about it.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

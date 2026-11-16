@@ -1,0 +1,81 @@
+{
+ "chapter": 13,
+ "verse": 21,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "prakriti is the cause of action, purusha the cause of experiencing",
+    "evidence": "प्रकृतिः (nature) / ... / हेतुः (cause) / ... / पुरुषः (the inner being) / ... / भोक्तृत्वे हेतुरुच्यते (is said to be the cause of experiencing)"
+   },
+   {
+    "angle": "the inner being only experiences, it does not act",
+    "evidence": "पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते (the inner being is said to be the cause of experiencing pleasure and pain)"
+   },
+   {
+    "angle": "prakriti is the cause of the body and senses, purusha of pleasure and pain",
+    "evidence": "प्रकृतिरुच्यते (is said to be nature) ... कार्यकारणकर्तृत्वे (in the doership of body, senses, and action) ... पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते (the inner being is said to be the cause of experiencing pleasure and pain)"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "Nature does, Purusha only experiences",
+ "angle_hi": "प्रकृति करती है, पुरुष केवल भोगता है",
+ "parts": {
+  "en": {
+   "intro": "Krishna continues his explanation of the field and the knower of the field by separating the doer from the experiencer.",
+   "notice": "Prakriti causes the body, senses and action, Krishna says, while Purusha is the cause of experiencing pleasure and pain.",
+   "next": "Krishna then explains that the inner being, situated in nature, experiences the qualities born of nature.",
+   "meaning": "Nature is said to be the cause of the body, the senses, and action. The inner being is said to be the cause of experiencing pleasure and pain."
+  },
+  "hi": {
+   "intro": "भगवान् क्षेत्र और क्षेत्रज्ञ के भेद को समझाते हुए कर्ता और भोक्ता को अलग बताते हैं।",
+   "meaning": "प्रकृति को शरीर, इंद्रियों और कर्म का कारण कहा जाता है और पुरुष को सुखदुःखों के अनुभव का कारण कहा जाता है।",
+   "notice": "प्रकृति शरीर और कर्म की कर्ता है, जबकि पुरुष केवल सुखदुःखों को भोगने का कारण है। पुरुष भोक्ता है, कर्ता नहीं।",
+   "next": "भगवान् बताते हैं कि पुरुष प्रकृति में रहकर प्रकृति के गुणों को भोगता है।"
+  }
+ },
+ "en": {
+  "intro": "Krishna continues his explanation of the field and the knower of the field by separating the doer from the experiencer.",
+  "body": "Nature is said to be the cause of the body, the senses, and action. The inner being is said to be the cause of experiencing pleasure and pain. Prakriti causes the body, senses and action, Krishna says, while Purusha is the cause of experiencing pleasure and pain. Krishna then explains that the inner being, situated in nature, experiences the qualities born of nature."
+ },
+ "hi": {
+  "intro": "भगवान् क्षेत्र और क्षेत्रज्ञ के भेद को समझाते हुए कर्ता और भोक्ता को अलग बताते हैं।",
+  "body": "प्रकृति को शरीर, इंद्रियों और कर्म का कारण कहा जाता है और पुरुष को सुखदुःखों के अनुभव का कारण कहा जाता है। प्रकृति शरीर और कर्म की कर्ता है, जबकि पुरुष केवल सुखदुःखों को भोगने का कारण है। पुरुष भोक्ता है, कर्ता नहीं। भगवान् बताते हैं कि पुरुष प्रकृति में रहकर प्रकृति के गुणों को भोगता है।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "hi.intro missing",
+    "hi.meaning missing",
+    "hi.notice missing",
+    "hi.next missing",
+    "angle_en/angle_hi missing",
+    "wrong_fact: \"Sanjaya then explains that the inner being, situated in nature, experiences the qualities born of nature.\" (The next verse (22) is spoken by Krishna, not Sanjaya. The script wrongly attributes the next verse to Sanjaya.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.intro missing",
+    "hi.meaning missing",
+    "hi.notice missing",
+    "hi.next missing"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "borrowed: \"One acts, the other simply feels. / एक करता है, दूसरा केवल महसूस करता है।\" (The phrase 'One acts, the other simply feels' is borrowed from the NEXT verse (verse 22), which states that the inner being (Purusha) experiences the qualities born of nature. This detail is incorrectly inserted into the NOTICE for this verse (verse 21), which should only state that Purusha is the cause of experiencing pleasure and pain.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "en.notice: contrast template"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

@@ -1,0 +1,76 @@
+{
+ "chapter": 1,
+ "verse": 37,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "स्वजनं and सुखिनः show the link between kinship and happiness",
+    "evidence": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव"
+   },
+   {
+    "angle": "Arjuna refuses to kill his own people to be happy",
+    "evidence": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव"
+   },
+   {
+    "angle": "Arjuna refuses to kill his own people to be happy",
+    "evidence": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव"
+   }
+  ]
+ },
+ "angle_en": "swajanam and sukhinah: kinship and happiness",
+ "angle_hi": "स्वजनम् और सुखिनः: रिश्तेदार और खुशी",
+ "parts": {
+  "en": {
+   "intro": "Arjuna now draws the final line, refusing to trade the happiness of kin for the grief of war. Listen for the word that seals his refusal.",
+   "notice": "The word here is swajanam, our own people. Arjuna says that if he kills his own people, he cannot be happy. He does not say he might be sad, he says happiness is impossible, and that is why he refuses to fight.",
+   "next": "Yet even as he refuses, Arjuna sees that his opponents do not see the wrong in destroying a family.",
+   "meaning": "Therefore, we are not fit to kill our own kinsmen, the sons of Dhritarashtra. How could we be happy after killing our relatives, O Madhava?"
+  },
+  "hi": {
+   "intro": "अर्जुन अब अंतिम सीमा खींचते हैं, और युद्ध के बदले अपने लोगों के सुख को चुनते हैं। एक शब्द पर ध्यान दें जो उनके इनकार को पक्का करता है।",
+   "meaning": "धृतराष्ट्र के पुत्रों, जो हमारे अपने बान्धव हैं, उन्हें मारने के लिये हम योग्य नहीं हैं, क्योंकि अपने ही लोगों को मारकर हम कैसे सुखी होंगे? हे माधव।",
+   "notice": "अपने बांधवों को मारना हमें उचित नहीं, फिर सुख कैसे मिलेगा",
+   "next": "फिर भी अर्जुन देखते हैं कि उनके विरोधी परिवार को नष्ट करने में गलती नहीं देखते।"
+  }
+ },
+ "en": {
+  "intro": "Arjuna now draws the final line, refusing to trade the happiness of kin for the grief of war. Listen for the word that seals his refusal.",
+  "body": "Therefore, we are not fit to kill our own kinsmen, the sons of Dhritarashtra. How could we be happy after killing our relatives, O Madhava? The word here is swajanam, our own people. Arjuna says that if he kills his own people, he cannot be happy. He does not say he might be sad, he says happiness is impossible, and that is why he refuses to fight. Yet even as he refuses, Arjuna sees that his opponents do not see the wrong in destroying a family."
+ },
+ "hi": {
+  "intro": "अर्जुन अब अंतिम सीमा खींचते हैं, और युद्ध के बदले अपने लोगों के सुख को चुनते हैं। एक शब्द पर ध्यान दें जो उनके इनकार को पक्का करता है।",
+  "body": "धृतराष्ट्र के पुत्रों, जो हमारे अपने बान्धव हैं, उन्हें मारने के लिये हम योग्य नहीं हैं, क्योंकि अपने ही लोगों को मारकर हम कैसे सुखी होंगे? हे माधव। अपने बांधवों को मारना हमें उचित नहीं, फिर सुख कैसे मिलेगा फिर भी अर्जुन देखते हैं कि उनके विरोधी परिवार को नष्ट करने में गलती नहीं देखते।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "en.notice: Devanagari in English, write Sanskrit words in plain Roman letters",
+    "hi.notice: contrast template",
+    "angle_en: Devanagari in English, use plain Roman letters"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.notice: contrast template"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "hi.notice: contrast template",
+    "borrowed: \"फिर भी अर्जुन देखते हैं कि उनके विरोधी परिवार को नष्ट करने में गलती नहीं देखते।\" (This phrase is taken from the NEXT verse (verse 38) and is placed in the 'next' field of the Hindi script. It misattributes the content of the next verse to the current verse's 'next' field, causing a structural misplacement of content.)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": [
+    "hi.notice: contrast template",
+    "borrowed: \"फिर भी अर्जुन देखते हैं कि उनके विरोधी परिवार को नष्ट करने में गलती नहीं देखते।\" (The 'next' field in the Hindi script presents the content of the NEXT verse (verse 38) as if it were describing this verse (verse 37). This is a borrowed content error.)"
+   ]
+  }
+ ],
+ "source": "sarvam+repair"
+}

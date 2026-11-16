@@ -163,6 +163,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/best-hanuman-chalisa-apps`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/bhagavad-gita-widget-iphone`, lastModified: new Date('2026-11-11'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/reading-plans`, lastModified: new Date('2026-11-13'), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE}/gita/listen`, lastModified: new Date('2026-11-16'), changeFrequency: 'monthly', priority: 0.8, alternates: langAlts('/gita/listen', '/hi/gita/listen') },
+    { url: `${BASE}/hi/gita/listen`, lastModified: new Date('2026-11-16'), changeFrequency: 'monthly', priority: 0.8, alternates: langAlts('/gita/listen', '/hi/gita/listen') },
     // Map of the mind (/explore) and one page per inner state (src/content/explore, scripts/build-explore-data.py)
     { url: `${BASE}/explore`, lastModified: new Date('2026-11-14'), changeFrequency: 'monthly', priority: 0.8 },
     ...EXPLORE_STATES.map((s) => ({ url: `${BASE}/explore/${s.slug}`, lastModified: new Date('2026-11-14'), changeFrequency: 'monthly' as const, priority: 0.75 })),

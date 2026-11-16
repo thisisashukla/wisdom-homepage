@@ -1,0 +1,72 @@
+{
+ "chapter": 7,
+ "verse": 26,
+ "style": "carry on from the previous verse in one line",
+ "plan": {
+  "candidates": [
+   {
+    "angle": "vedah, I know, and its asymmetry",
+    "evidence": "वेद (I know)"
+   },
+   {
+    "angle": "kashchana, anyone, who knows him",
+    "evidence": "माम् तु वेद न कश्चन (no one knows me)"
+   },
+   {
+    "angle": "Krishna knows all beings but remains unknown",
+    "evidence": "समतीतानि वर्तमानानि ... भविष्याणि च भूतानि ... मां तु वेद न कश्चन"
+   }
+  ],
+  "best": 0
+ },
+ "angle_en": "vedah, the asymmetry of knowing",
+ "angle_hi": "वेद, जानने का विषमता",
+ "parts": {
+  "en": {
+   "intro": "Krishna has just said he is hidden from ordinary sight. Now he tells Arjuna what that hiding means.",
+   "notice": "Listen to the word vedah, I know. It is the first verb in the verse, and it carries the entire weight of the verse: Krishna knows every being, but no one knows him.",
+   "next": "O descendant of Bharata, all beings fall into delusion at birth, from the confusion born of desire and aversion, O scorcher of foes.",
+   "meaning": "Arjuna, I know all beings of the past, the present, and the future. No one knows me."
+  },
+  "hi": {
+   "intro": "कृष्ण ने कहा है कि वे साधारण दृष्टि से छिपे हैं। अब वे अर्जुन को बताते हैं कि इस छिपाव का अर्थ क्या है।",
+   "meaning": "हे अर्जुन, मैं उन सभी प्राणियों को जानता हूँ जो भूतकाल, वर्तमान तथा भविष्य में हैं, परन्तु कोई भी मूढ़ मनुष्य मुझे नहीं जानता।",
+   "notice": "वेद शब्द को सुनिए, जिसका अर्थ है जानता हूँ। यह इस श्लोक का पहला शब्द है, और इसमें पूरी बात समाई है: कृष्ण सब प्राणियों को जानते हैं, पर कोई उन्हें नहीं जानता।",
+   "next": "हे अर्जुन, मैं उन सभी प्राणियों को जानता हूँ जो भूतकाल, वर्तमान तथा भविष्य में हैं, परन्तु कोई भी मूढ़ मनुष्य मुझे नहीं जानता।"
+  }
+ },
+ "en": {
+  "intro": "Krishna has just said he is hidden from ordinary sight. Now he tells Arjuna what that hiding means.",
+  "body": "Arjuna, I know all beings of the past, the present, and the future. No one knows me. Listen to the word vedah, I know. It is the first verb in the verse, and it carries the entire weight of the verse: Krishna knows every being, but no one knows him. O descendant of Bharata, all beings fall into delusion at birth, from the confusion born of desire and aversion, O scorcher of foes."
+ },
+ "hi": {
+  "intro": "कृष्ण ने कहा है कि वे साधारण दृष्टि से छिपे हैं। अब वे अर्जुन को बताते हैं कि इस छिपाव का अर्थ क्या है।",
+  "body": "हे अर्जुन, मैं उन सभी प्राणियों को जानता हूँ जो भूतकाल, वर्तमान तथा भविष्य में हैं, परन्तु कोई भी मूढ़ मनुष्य मुझे नहीं जानता। वेद शब्द को सुनिए, जिसका अर्थ है जानता हूँ। यह इस श्लोक का पहला शब्द है, और इसमें पूरी बात समाई है: कृष्ण सब प्राणियों को जानते हैं, पर कोई उन्हें नहीं जानता। हे अर्जुन, मैं उन सभी प्राणियों को जानता हूँ जो भूतकाल, वर्तमान तथा भविष्य में हैं, परन्तु कोई भी मूढ़ मनुष्य मुझे नहीं जानता।"
+ },
+ "review": [
+  {
+   "attempt": 0,
+   "issues": [
+    "wrong_fact: \"next: वे अगले श्लोक में इसका कारण बताते हैं कि कैसे सभी प्राणी जन्म के समय से ही मोह में पड़ जाते हैं।\" (The next verse (27) does not explain the reason why no one knows Krishna; it describes how all beings fall into delusion at birth due to desire and aversion. The script incorrectly presents the content of the next verse as the reason for the current verse's claim.)"
+   ]
+  },
+  {
+   "attempt": 1,
+   "issues": [
+    "hi.next: English words"
+   ]
+  },
+  {
+   "attempt": 2,
+   "issues": [
+    "borrowed: \"O descendant of Bharata, all beings fall into delusion at birth, from the confusion born of desire and aversion, O scorcher of foes.\" (This phrase appears in the SCRIPT under both 'en.next' and 'hi.next'. It belongs to the NEXT verse (7.27), not this verse (7.26).)",
+    "borrowed: \"हे भरत, सभी प्राणी जन्म के समय से ही मोह में पड़ जाते हैं, काम और द्वेष से उत्पन्न भ्रम के कारण।\" (This phrase appears in the SCRIPT under 'hi.next'. It belongs to the NEXT verse (7.27), not this verse (7.26).)"
+   ]
+  },
+  {
+   "attempt": 3,
+   "issues": []
+  }
+ ],
+ "source": "sarvam"
+}

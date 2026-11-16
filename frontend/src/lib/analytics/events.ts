@@ -230,6 +230,17 @@ export const EVENTS = {
   ResumeCardViewed: 'Resume Card Viewed',
   ResumeCardClicked: 'Resume Card Clicked',
   VerseRead: 'Verse Read',
+  // ── Listen mode (lib/listen.ts) ─────────────────────────────────────────
+  /** First play of a session or a single verse: { session_id, mode, scope: 'session'|'single', source, item_id }. */
+  ListenStarted: 'Listen Started',
+  /** A verse heard to the end: { session_id, item_id, index, mode, scope }. */
+  ListenVerseCompleted: 'Listen Verse Completed',
+  /** The last verse of a session heard: { session_id, verses_heard, mode }. */
+  ListenSessionCompleted: 'Listen Session Completed',
+  /** Rolled into the next session without leaving the page: { from, to, auto }. */
+  ListenNextSessionStarted: 'Listen Next Session Started',
+  /** Dock and page controls: { control, session_id, item_id, to }. */
+  ListenControlClicked: 'Listen Control Clicked',
   /** The "from your list" bar on a verse page: { trail_from, trail_index, trail_total }. */
   TrailBarViewed: 'Trail Bar Viewed',
   ChapterReadModeOpened: 'Chapter Read Mode Opened',
