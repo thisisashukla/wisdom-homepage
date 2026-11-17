@@ -48,7 +48,7 @@ export default function NoteScreen({
   onDone: (note: string, source?: 'voice' | 'text') => void
 }) {
   const heading = noteHeading(emotion, need)
-  const examples = useMemo(() => noteExamplesFor(need, age, stages), [need, age, stages])
+  const examples = useMemo(() => noteExamplesFor(need, age, stages, emotion), [need, age, stages, emotion])
   const [note, setNote] = useState(initial ?? '')
   const [source, setSource] = useState<'voice' | 'text' | undefined>(initialSource)
   const [typing, setTyping] = useState(false)

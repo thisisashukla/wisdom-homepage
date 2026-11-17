@@ -17,6 +17,9 @@ Plans (one reading of the person → hook → diagnose → act → story):
     POST /api/v1/recommend/preview     →  the arc: hook, diagnose, act, story + week titles
     POST /api/v1/recommend/plan        →  the multi-day plan (default 21 days)
 
+v2 (rebuilt on the clean onboarding inputs, v2/api.py):
+    POST /api/v2/hook                  →  age, stages, feeling, note, ai → Day 1 verse, alternates, first line
+
 Verse of the Day:
     GET  /api/v1/verse-of-day          →  today's curated Gita verse (Supabase cache)
     POST /api/v1/verse-of-day/generate →  admin: pick + persist verse (called by cron)
@@ -60,6 +63,7 @@ from server import verse_of_day as verse_of_day_router
 from server import recommend as recommend_router
 from server import plan as plan_router
 from server import narration as narration_router
+from v2 import api as v2_api
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -170,6 +174,7 @@ app.include_router(verse_of_day_router.router,  prefix="/api/v1")
 app.include_router(plan_router.router,          prefix="/api/v1")   # before /recommend: more specific paths
 app.include_router(narration_router.router,     prefix="/api/v1")
 app.include_router(recommend_router.router,     prefix="/api/v1")
+app.include_router(v2_api.router,               prefix="/api/v2")
 
 
 @app.get("/", tags=["health"])

@@ -153,8 +153,9 @@ def taps(req) -> Tuple[Optional[str], List[str], Optional[str]]:
     """(kept word, tap trail ending on the kept word, the paused word the pools key on)."""
     from ai.harness_v2.vocab import EMOTIONS, NEED_DEFAULT_EMOTION
     c = getattr(req, "client", None)
+    f = getattr(req, "feeling", None)   # v1: a need code, with the word in client.emotion; v2: the word itself
     kept = getattr(c, "emotion", None) if c else None
-    kept = kept if kept in EMOTIONS else NEED_DEFAULT_EMOTION.get(getattr(req, "feeling", None) or "")
+    kept = kept if kept in EMOTIONS else f if f in EMOTIONS else NEED_DEFAULT_EMOTION.get(f or "")
     trail = [w for w in (getattr(c, "emotion_trail", None) or [] if c else []) if w in EMOTIONS]
     if kept and (not trail or trail[-1] != kept):
         trail = trail + [kept]

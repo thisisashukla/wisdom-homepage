@@ -4,6 +4,7 @@
 // labelled by the time of day the thought tends to arrive.
 import type { NeedId, AgeId, StageId } from "./profile";
 import { FEELING_LINES } from "./noteLines";
+import { EMOTION_LINES } from "./emotionNoteLines";
 
 export type NoteExample = { tag: "Morning" | "Afternoon" | "Night"; text: string };
 
@@ -73,13 +74,21 @@ const STAGE_PRIORITY: StageId[] = ["caring_parents", "raising_kids", "own_thing"
 /**
  * Six example notes: three written for this exact feeling × age × life stage
  * (morning, afternoon, night), then three of the feeling's general notes.
+ * When the word they picked has its own lines (emotionNoteLines: every word that
+ * isn't its need's own word), those come first, so "Grateful" never shows the
+ * "Searching" lines of its need.
  */
-export function noteExamplesFor(need?: NeedId, age?: AgeId, stages: StageId[] = []): NoteExample[] {
+export function noteExamplesFor(need?: NeedId, age?: AgeId, stages: StageId[] = [], emotion?: string): NoteExample[] {
   const feeling = need ?? "quiet";
   const general = BY_FEELING[feeling] ?? BY_FEELING.quiet;
   const a = age ?? "35_44";
   let stage = STAGE_PRIORITY.find((s) => stages.includes(s)) ?? "working";
   if (stage === "retired" && (a === "u25" || a === "25_34")) stage = "working";
+  const word = emotion ? EMOTION_LINES[emotion] : undefined;
+  if (word) {
+    const own = word.byStage[stage as keyof typeof word.byStage] ?? word.byStage.working;
+    return [...set([...own]), ...set([...word.general]).slice(0, 3)];
+  }
   const own = FEELING_LINES[feeling]?.[`${a}|${stage}`];
   if (!own) return general;
   return [...set([...own]), ...general.slice(0, 3)];

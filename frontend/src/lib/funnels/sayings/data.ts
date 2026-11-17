@@ -107,6 +107,8 @@ export type Doha = {
   record: { id: string; section: string; url: string; quality: string }
   fixes: { from: string; to: string }[]
   meaning: L10n
+  /** Wisdom's short reading of the doha (what it points at, where it applies). Shown as भाव. */
+  bhav?: { hi: string }
   gloss: { w: string; hi: string; en: string }[]
   reviewed: boolean
 }

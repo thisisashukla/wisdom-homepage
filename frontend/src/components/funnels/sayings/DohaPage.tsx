@@ -25,8 +25,8 @@ export default function DohaPage({ doha: d }: { doha: Doha }) {
   const sameTheme = all.filter((x) => x.theme === d.theme && x.slug !== d.slug).slice(0, 3)
   const next = all[(i + 1) % all.length]
   const quick = `"${first}" कबीर का दोहा है। इसका अर्थ है: ${d.meaning.hi} यह दोहा ${d.foundIn.map((f) => src[f].hi).join(' और ')} में मिलता है।`
+  // The meaning already shows in the quick answer and the verse card, so the FAQ only adds what they don't.
   const faq = [
-    { q: `"${first}" का अर्थ क्या है?`, a: d.meaning.hi },
     {
       q: 'यह दोहा किस संग्रह में है?',
       a: `${d.foundIn.map((f) => src[f].hi).join(' और ')}। कबीर के दोहे सदियों तक गाए गए, इसलिए शब्दों में थोड़ा फ़र्क मिल सकता है।`,
@@ -36,7 +36,7 @@ export default function DohaPage({ doha: d }: { doha: Doha }) {
   const ld = [
     ldArticle({
       headline: dohaTitle(d),
-      description: d.meaning.hi,
+      description: d.bhav?.hi ?? d.meaning.hi,
       path,
       locale: 'hi',
       citation: d.foundIn.map((f) => src[f].en).join('; '),
@@ -91,6 +91,14 @@ export default function DohaPage({ doha: d }: { doha: Doha }) {
           reveal: false,
         })}
       />
+
+      {d.bhav ? (
+        <Section id="bhav" width="narrow" title="भाव">
+          <div className="sx-prose">
+            <p>{d.bhav.hi}</p>
+          </div>
+        </Section>
+      ) : null}
 
       <Section id="shabd" width="narrow" title="शब्दार्थ">
         <dl className="fx-words rv">
