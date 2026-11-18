@@ -452,7 +452,7 @@ class Graph:
             if day >= 3 and n.get("label_src") == "shard" and not n.get("light_fit") and mv not in ("affirms", "prescribes", "gives_ground"): return "light stance: not light_fit"
             if day == 1 and n.get("label_src") == "shard" and not n.get("light_fit"): return "Day 1 for a light stance needs light_fit"
             if mv == "warns" and day != 2: return "warning outside the 'what tests it' day for a light stance"
-        if day == 1 and risk != "self_harm" and not R.get("_free_day1"):     # v2 sets _free_day1: any kind of verse may open Day 1
+        if day == 1 and risk != "self_harm":
             if mv in ("prescribes", "warns", "promises", "rebukes", "explains_cause", "reveals_self") and not ((R["light"] or stance == "aspiration") and mv == "promises" and n.get("light_fit")): return f"Day 1 cannot be '{mv}' (verdict or prescription)"
             if n.get("label_src") == "shard" and not n.get("day1_ok") and not ((R["light"] or stance == "aspiration") and n.get("light_fit")): return "label: day1_ok false"
             if n.get("label_src") == "silver" and (n.get("beats") or {}).get("hook", 0) < 0.6: return "silver label: weak hook"

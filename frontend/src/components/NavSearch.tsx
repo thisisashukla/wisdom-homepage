@@ -2,6 +2,9 @@
 
 import { useEffect, useRef, type FormEvent } from 'react'
 import type { Locale } from '@/lib/locale'
+import { EVENTS, trackEventBeacon } from '@/lib/mixpanel'
+import { queryScript } from '@/lib/search/match'
+import { currentEntryPath, ENTRY_PATH_PARAM } from '@/lib/search/entry'
 
 const COPY = {
   open: { en: 'Find a verse', hi: 'श्लोक खोजें' },
@@ -56,11 +59,18 @@ export function NavSearchPanel({ open, onClose, locale }: { open: boolean; onClo
     }
   }, [open, onClose])
 
+  const entryPath = useRef<HTMLInputElement>(null)
+
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    if (!input.current?.value.trim()) {
+    const query = input.current?.value.trim() ?? ''
+    if (!query) {
       e.preventDefault()
       input.current?.focus()
+      return
     }
+    if (entryPath.current) entryPath.current.value = currentEntryPath()
+    // Beacon: the page unloads right after, and this is the one event that knows the query for sure.
+    trackEventBeacon(EVENTS.SearchSubmitted, { query, script: queryScript(query), location: 'nav' })
   }
 
   return (
@@ -83,6 +93,7 @@ export function NavSearchPanel({ open, onClose, locale }: { open: boolean; onClo
           />
         </span>
         <input type="hidden" name="from" value="nav_search" />
+        <input ref={entryPath} type="hidden" name={ENTRY_PATH_PARAM} defaultValue="" />
         <button type="submit" className="nav-search-submit">
           {COPY.submit[locale]}
         </button>

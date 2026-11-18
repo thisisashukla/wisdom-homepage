@@ -11,8 +11,10 @@ import {
   search,
   type PreparedIndex,
   type SearchIndex,
+  type SearchHit,
   type SearchItem,
 } from '@/lib/search/match'
+import { readEntryPath } from '@/lib/search/entry'
 import { toIast } from '@/lib/search/translit'
 import type { Locale } from '@/lib/locale'
 import { SearchIcon } from './VerseJump'
@@ -88,6 +90,8 @@ function loadIndex(): Promise<PreparedIndex> {
 export default function VerseSearch({ lang, location: locationProp = 'search_page' }: VerseSearchProps) {
   const c = COPY[lang]
   const [location, setLocation] = useState(locationProp)
+  // The page the search started on (?from_path=), or this page when the reader came straight here.
+  const [entryPath, setEntryPath] = useState<string | undefined>(undefined)
   const id = useId()
   const inputRef = useRef<HTMLInputElement>(null)
   const [query, setQuery] = useState('')
@@ -112,6 +116,7 @@ export default function VerseSearch({ lang, location: locationProp = 'search_pag
     const params = new URLSearchParams(window.location.search)
     const from = params.get('from')
     if (from) setLocation(from.slice(0, 64))
+    setEntryPath(readEntryPath(params) ?? window.location.pathname)
     const q = params.get('q')
     if (q) {
       setQuery(q)
@@ -135,18 +140,29 @@ export default function VerseSearch({ lang, location: locationProp = 'search_pag
   }, [trimmed])
 
   const trackSearch = useCallback(
-    (q: string, results: number) => {
+    (q: string, hits: SearchHit[]) => {
       if (!q || q === lastTracked.current) return
       lastTracked.current = q
-      trackEvent(EVENTS.SearchCompleted, { query: q, results, script: queryScript(q), location })
+      const top = hits[0]
+      trackEvent(EVENTS.SearchCompleted, {
+        query: q,
+        results: hits.length,
+        script: queryScript(q),
+        location,
+        entry_path: entryPath,
+        top_results: hits.slice(0, 5).map((h) => h.item.id),
+        top_result: top?.item.id,
+        top_result_ref: top?.item.r,
+        top_match: top?.how,
+      })
     },
-    [location],
+    [location, entryPath],
   )
 
   // Search Completed once the reader pauses on a query.
   useEffect(() => {
     if (!result || !trimmed) return
-    const t = window.setTimeout(() => trackSearch(trimmed, result.hits.length), 1200)
+    const t = window.setTimeout(() => trackSearch(trimmed, result.hits), 1200)
     return () => window.clearTimeout(t)
   }, [result, trimmed, trackSearch])
 
@@ -160,7 +176,7 @@ export default function VerseSearch({ lang, location: locationProp = 'search_pag
     // A verse number goes straight to the verse, even before the index has loaded.
     const ref = parseRef(q)
     if (ref?.valid && ref.verse !== undefined) {
-      trackEventBeacon(EVENTS.VerseJumpCompleted, { query: q, result: 'verse', item_id: ref.id, location })
+      trackEventBeacon(EVENTS.VerseJumpCompleted, { query: q, result: 'verse', item_id: ref.id, location, entry_path: entryPath })
       window.location.assign(lang === 'hi' ? ref.hiUrl : ref.url)
       return
     }
@@ -168,24 +184,45 @@ export default function VerseSearch({ lang, location: locationProp = 'search_pag
       ensureIndex()
       return
     }
-    trackSearch(q, search(index, q).hits.length)
+    trackSearch(q, search(index, q).hits)
   }
 
   const pick = (q: string, position: number) => {
-    trackEvent(EVENTS.SearchResultClicked, { query: q, item_type: 'suggestion', position, location: 'suggestion' })
+    trackEvent(EVENTS.SearchResultClicked, { query: q, item_type: 'suggestion', position, location: 'suggestion', entry: location, entry_path: entryPath })
     setQuery(q)
     ensureIndex()
     inputRef.current?.focus()
   }
 
-  const onResultClick = (item: SearchItem, position: number) => {
-    trackSearch(trimmed, result?.hits.length ?? 0)
+  const onResultClick = (hit: SearchHit, position: number) => {
+    const all = result?.hits ?? []
+    trackSearch(trimmed, all)
     trackEventBeacon(EVENTS.SearchResultClicked, {
       query: trimmed,
-      item_id: item.id,
-      item_type: ITEM_TYPE[item.k],
+      item_id: hit.item.id,
+      item_type: ITEM_TYPE[hit.item.k],
+      item_ref: hit.item.r,
+      item_source: hit.item.k,
+      match: hit.how,
       position,
+      results: all.length,
       location: 'results',
+      entry: location,
+      entry_path: entryPath,
+    })
+  }
+
+  const onChapterClick = (id: string) => {
+    trackSearch(trimmed, result?.hits ?? [])
+    trackEventBeacon(EVENTS.SearchResultClicked, {
+      query: trimmed,
+      item_id: id,
+      item_type: 'chapter',
+      position: 0,
+      results: result?.hits.length ?? 0,
+      location: 'chapter',
+      entry: location,
+      entry_path: entryPath,
     })
   }
 
@@ -250,7 +287,7 @@ export default function VerseSearch({ lang, location: locationProp = 'search_pag
 
       {ref?.valid && ref.verse === undefined && (
         <p className="vs-chapter">
-          <a href={lang === 'hi' ? ref.hiUrl : ref.url} className="sx-btn sx-btn--link" data-mp-location={`${location}_chapter`}>
+          <a href={lang === 'hi' ? ref.hiUrl : ref.url} className="sx-btn sx-btn--link" data-mp-tracked="" onClick={() => onChapterClick(ref.id)}>
             {c.chapter(ref.chapter)}
           </a>
         </p>
@@ -268,7 +305,7 @@ export default function VerseSearch({ lang, location: locationProp = 'search_pag
                   href={itemHref(it, lang)}
                   className="vs-hit"
                   data-mp-tracked=""
-                  onClick={() => onResultClick(it, i + 1)}
+                  onClick={() => onResultClick(h, i + 1)}
                 >
                   <span className="vs-ref">{lang === 'hi' ? it.rh : it.r}</span>
                   <span className={`vs-line vs-line--${LINE_LANG[it.k]}`} lang={LINE_LANG[it.k]}>

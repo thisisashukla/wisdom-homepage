@@ -251,9 +251,17 @@ export const EVENTS = {
   ExplanationLanguageToggled: 'Explanation Language Toggled',
   /** { query, result: 'verse' | 'chapter' | 'invalid' | 'search', item_id?, location } */
   VerseJumpCompleted: 'Verse Jump Completed',
-  /** { query, results, script, location } */
+  /** Sent from the page the reader is on, the moment they submit the nav search: { query, script, location: 'nav' } (path = that page). */
+  SearchSubmitted: 'Search Submitted',
+  /**
+   * The reader paused on a query and saw results: { query, results, script, location, entry_path,
+   * top_results (first 5 item ids), top_result, top_result_ref, top_match }. entry_path is the page the search started on.
+   */
   SearchCompleted: 'Search Completed',
-  /** { item_id, item_type, position, query, location: 'results' | 'suggestion' } */
+  /**
+   * What the reader picked: { item_id, item_type, item_ref, item_source, match, position, results, query,
+   * location: 'results' | 'suggestion' | 'chapter', entry: where the search box was, entry_path }
+   */
   SearchResultClicked: 'Search Result Clicked',
   WhatsAppJoinViewed: 'WhatsApp Join Viewed',
   WhatsAppJoinClicked: 'WhatsApp Join Clicked',

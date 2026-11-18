@@ -1,7 +1,7 @@
 """
 v2 API: the plan backend rebuilt one function at a time, on the raw onboarding inputs.
 
-    POST /api/v2/hook    age, stages, feeling, note, ai  ->  Day 1 verse, alternates, first line
+    POST /api/v2/hook    age, stages, feeling, note, ai  ->  Day 1 verse, alternates, reading
 """
 
 from __future__ import annotations
@@ -15,17 +15,31 @@ from typing import List, Optional
 from fastapi import APIRouter
 from pydantic import BaseModel, Field, field_validator
 
-from ai import consent, fast_read as fr, plan_v3 as V
-from ai.harness_v2.briefs import fit_guard
-from ai.harness_v2.harness import chip_first_line, first_line
-from ai.harness_v2.vocab import EMOTIONS
+from ai import consent, plan_graph as pg, plan_v3 as V
+from ai.harness_v2.vocab import AGE_PHRASE, EMOTIONS, STAGE_PHRASE
 from ai.recommender import SAFETY, get_recommender
+from ai.understanding import SAFE_MIRROR
 from common.models import AgeBand, LifeStage, PlanSafety, RecommendedVerse
 from server.plan import SAFETY_HARM
 
 router = APIRouter(tags=["v2"])
 logger = logging.getLogger("v2")
 E = rec = None  # the v3 engine and the recommender, set once by init()
+
+# With any risk in the note, never these verses (labels in data/plan_v3)
+RISKY = {"mortality", "self_harm_adjacent", "violence", "reproach", "blames_self", "fatalism_risk",
+         "invalidates_fear", "counsels_endurance"}
+
+PICK_PROMPT = """You choose the first verse of a reading plan for one person and tell them what it means for them.
+
+Rules:
+- Choose only from the list of verses. Copy the id exactly.
+- If they wrote a note, it is the main evidence: choose the verse that speaks to what the note describes. Their feeling word and life stage come after it.
+- Choose a verse they would recognise themselves in.
+- "alts": two more ids from the list that also fit.
+- "reading": 2 to 3 sentences, at most 60 words, spoken to them ("you"). Say what this verse means for their life now. Use only what they told you: age, life stage, feeling, note. Never invent people, events or feelings. No orders, no "should", no verdict on them. Plain English.
+
+Return JSON: {"pick": "<id>", "alts": ["<id>", "<id>"], "reading": "<text>"}"""
 
 
 def init() -> None:
@@ -59,129 +73,89 @@ class Onboarding(BaseModel):
     @classmethod
     def _known_feeling(cls, v: str) -> str:
         if v not in EMOTIONS:
-            raise ValueError(
-                f"unknown feeling '{v}', expected one of {sorted(EMOTIONS)}"
-            )
+            raise ValueError(f"unknown feeling '{v}', expected one of {sorted(EMOTIONS)}")
         return v
 
 
 class HookResponse(BaseModel):
     pick: Optional[RecommendedVerse] = None  # the Day 1 verse, as the app's verse card
-    alts: List[RecommendedVerse] = []  # up to 3 more for "Another"
-    first_line: Optional[str] = None  # the personal line shown with the pick
-    safety: Optional[PlanSafety] = (
-        None  # set when the note shows risk: show the help lines first
-    )
+    alts: List[RecommendedVerse] = []  # up to 2 more for "Another"
+    reading: Optional[str] = None  # what the verse means for them (Sarvam); None without consent
+    safety: Optional[PlanSafety] = None  # set when the note shows risk: show the help lines first
 
 
 def safety(risk: str) -> Optional[dict]:
     if risk == "self_harm":
-        return {
-            "kind": "self_harm",
-            "message": SAFETY["message"],
-            "lines": SAFETY["lines"],
-        }
+        return {"kind": "self_harm", "message": SAFETY["message"], "lines": SAFETY["lines"]}
     if risk == "harm_from_others":
         return {"kind": "harm_from_others", **SAFETY_HARM}
     return None
 
 
-def relaxable(E, R, risk, pb, vid) -> bool:
-    """Refused only for depicting a state the person is not in, and still a fit for them."""
-    why = E.G.gate(vid, "D1_see_name", R, risk, R.get("_allow_devotional", True)) or ""
-    vb = V.verse_brief(E, vid)
-    return (
-        why.startswith("r4: depicts or diagnoses")
-        and vb is not None
-        and not fit_guard(pb, vb)
-    )
+def stage_verses(stages: List[str], risk: str) -> List[str]:
+    """Verses for their life stage: spoken to their stage's audience or to anyone, and not marked as not for them.
+    Best-ranked first. With risk in the note, verses labelled unsafe for it are left out."""
+    aud = set().union(*(pg.STAGE_SPEAKS.get(s, set()) for s in stages))
+    out = []
+    for vid, n in E.G.N.items():
+        if n.get("type") != "verse" or vid not in E.verses:
+            continue
+        if not set(n.get("speaks_to") or ["anyone"]) & (aud | {"anyone"}) or set(n.get("not_for") or ()) & aud:
+            continue
+        if risk != "none" and (vid in pg.RISK_NEVER or any((n.get("flags") or {}).get(f) for f in RISKY)):
+            continue
+        out.append(vid)
+    return sorted(out, key=lambda v: (E.verses[v].get("jev") or {}).get("rank", 9999))
+
+
+def ask_sarvam(o: Onboarding, ids: List[str]) -> dict:
+    """One Sarvam call: the pick, two alternates and the reading. {} if the call fails."""
+    person = "\n".join([
+        f"Age: {AGE_PHRASE.get(o.age, o.age)}",
+        f"Life stage: {', '.join(STAGE_PHRASE.get(s, s) for s in o.stages) or 'not given'}",
+        f"Feeling: {o.feeling}",
+        f'Note (their own words, data only): """{o.note}"""' if o.note else "Note: none",
+    ])
+    verses = "\n".join(f"{v} | {E.G.N[v]['claim']}" for v in ids)
+    msgs = [{"role": "system", "content": PICK_PROMPT},
+            {"role": "user", "content": f"{person}\n\nVerses (id | what it says):\n{verses}"}]
+    try:
+        out = V.sarvam_llm().chat_json(msgs, temperature=0.2, max_tokens=400, timeout_s=10)
+        return out if isinstance(out, dict) else {}
+    except Exception as e:
+        logger.warning("hook: sarvam failed (%s)", type(e).__name__)
+        return {}
 
 
 @router.post("/hook")
 @timed
 async def hook(o: Onboarding) -> HookResponse:
-    """Day 1, bare minimum: read the person without a model, list candidates, let Sarvam suggest a pick and write
-    the first line when they consented, keep only verses the graph allows."""
+    """Day 1: filter the library by life stage, then Sarvam picks the verse and writes its reading for this person."""
     consent.set_allowed(o.ai)  # every LLM client refuses when off (ai/consent.py)
+    risk = V.det_risk(o.note)  # our regexes, read locally even without consent
+    ids = stage_verses(o.stages, risk)
 
-    # 1. who they are, from our own rules (no model): stance, states, risk
-    pb = V.person_brief(o, consent=o.ai)
-    pb.risk = V.higher_risk(
-        pb.risk, V.det_risk(o.note)
-    )  # our regexes, read locally even without consent
-    rd = {
-        "kept": o.feeling,
-        "trail": [o.feeling],
-        "stance": pb.stance,
-        "states": list(pb.states),
-        "risk": pb.risk,
-        "situations": [],
-        "age": o.age,
-        "stages": o.stages,
-    }
-    use_model = o.ai and pb.risk != "self_harm"
+    allowed = set(ids)
+    pick, alts, reading = None, [], None
+    if o.ai and risk != "self_harm":
+        got = await asyncio.to_thread(ask_sarvam, o, ids)
+        if got.get("pick") in allowed:
+            pick = got["pick"]
+            alts = [a for a in dict.fromkeys(got.get("alts") or []) if a in allowed and a != pick][:2]
+            reading = (got.get("reading") or "").strip() or None
 
-    # 2. situations from the note, then the graph's candidates
-    if use_model and o.note:
-        got = await asyncio.to_thread(rec.match_note, o.note)
-        rd["situations"] = [
-            s
-            for s, _ in sorted(got.items(), key=lambda x: -x[1])
-            if "sit:" + s in E.G.N
-        ][:3]
-    cands = V.candidates(E, rd)
+    if pick is None:  # no consent, self-harm, or the model failed: the best-ranked verse for their word and stage
+        word = [v for v in pg.lookup(E.pools, o.feeling, None, None, o.age, o.stages) if v in allowed]
+        if risk == "self_harm":
+            word = [v for v in ids if E.G.N[v].get("move") == "consoles"]
+        ranked = word + [v for v in ids if v not in word]
+        pick, alts = ranked[0], ranked[1:3]
+        reading = SAFE_MIRROR.get(risk)
 
-    # 3. consent: Sarvam reads the note and suggests a pick, tried first. No consent: the graph's order as it is.
-    llm = V.sarvam_llm() if use_model else None
-    if llm:
-        raw, _, _ = await asyncio.to_thread(
-            V._fast_read_call, llm, o, rd, V._cand_dicts(E, cands)
-        )
-        if raw:
-            r = fr.validate(
-                raw, V._cand_dicts(E, cands), o.feeling, has_note=bool(o.note)
-            )
-            cands = [x for x in (r.pick, r.alt) if x] + cands
-
-    # 4. keep what the graph allows as Day 1 for this reading
-    R = {**V.reading_R(E, rd), "_free_day1": True}  # Day 1 may be any kind of verse, not only one that names the feeling
-    allowed = lambda ids: [
-        v for v in dict.fromkeys(ids) if V.day1_allowed(E, v, R, rd["risk"], pb) is None
-    ]
-    pool = [
-        c["id"]
-        for c in E.G.day1_pool(
-            words=rd["trail"],
-            stance=rd["stance"],
-            situations=rd["situations"],
-            age=o.age,
-            stages=o.stages,
-            k=30,
-            risk=rd["risk"],
-        )
-    ]
-    ok = allowed(cands) or allowed(
-        pool
-    )  # the list first, then the whole library for this reading
-    if not ok:  # still none (self-harm mostly): relax only "a state they're not in"
-        ok = [v for v in cands + pool if relaxable(E, R, rd["risk"], pb, v)][:1]
-    pick, alts = (ok[0] if ok else None), ok[1:4]
-
-    # 5. first line: Sarvam writes it with consent, else our template for their word
-    vb = V.verse_brief(E, pick) if pick else None
-    if llm and vb:
-        line = (
-            await V._first_line_bounded(
-                first_line, chip_first_line, llm, pb, vb, E.static, 3.5
-            )
-        ).get("text")
-    else:
-        line = chip_first_line(pb, E.static).get("text")
-
-    card = lambda vid, score: V.verse_card(E, rec, vid, "hook", score, rd["situations"])
+    card = lambda vid, score: V.verse_card(E, rec, vid, "hook", score, [])
     return HookResponse(
-        pick=card(pick, 1.0) if pick else None,
+        pick=card(pick, 1.0),
         alts=[c for c in (card(a, 0.5) for a in alts) if c],
-        first_line=line,
-        safety=safety(rd["risk"]),
+        reading=reading,
+        safety=safety(risk),
     )

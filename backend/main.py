@@ -18,7 +18,7 @@ Plans (one reading of the person → hook → diagnose → act → story):
     POST /api/v1/recommend/plan        →  the multi-day plan (default 21 days)
 
 v2 (rebuilt on the clean onboarding inputs, v2/api.py):
-    POST /api/v2/hook                  →  age, stages, feeling, note, ai → Day 1 verse, alternates, first line
+    POST /api/v2/hook                  →  age, stages, feeling, note, ai → Day 1 verse, alternates, reading
 
 Verse of the Day:
     GET  /api/v1/verse-of-day          →  today's curated Gita verse (Supabase cache)

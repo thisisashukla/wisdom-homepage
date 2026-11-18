@@ -3,6 +3,7 @@
 import { useId, useState, type FormEvent } from 'react'
 import { EVENTS, trackEventBeacon } from '@/lib/mixpanel'
 import { parseRef } from '@/lib/search/parseRef'
+import { currentEntryPath, ENTRY_PATH_PARAM } from '@/lib/search/entry'
 import type { Locale } from '@/lib/locale'
 import '@/components/site/site.css'
 import './search.css'
@@ -59,7 +60,7 @@ export default function VerseJump({ lang, location, className = '' }: VerseJumpP
       return
     }
     trackEventBeacon(EVENTS.VerseJumpCompleted, { query, result: 'search', location })
-    window.location.assign(`${searchPath}?q=${encodeURIComponent(query)}&from=${encodeURIComponent(location)}`)
+    window.location.assign(`${searchPath}?q=${encodeURIComponent(query)}&from=${encodeURIComponent(location)}&${ENTRY_PATH_PARAM}=${encodeURIComponent(currentEntryPath())}`)
   }
 
   return (
