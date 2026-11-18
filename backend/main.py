@@ -117,6 +117,7 @@ async def lifespan(app: FastAPI):
                       writer_llm=roles["writer"], rerank_llm=roles["rerank"])
     logger.info("LLM roles: reader=%s writer=%s rerank=%s", *(getattr(c, "model", "none") for c in roles.values()))
     init_planner(rec, roles_path=settings.verse_roles_path)
+    v2_api.init()                                   # v2: the v3 engine + recommender, loaded once
 
     # 4. Reranker (singleton; weights lazy-loaded on first search).
     # Set RERANKER_MODEL="" to disable — search then degrades to dense only.

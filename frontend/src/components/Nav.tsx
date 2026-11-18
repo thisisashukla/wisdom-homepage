@@ -1,11 +1,12 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { EVENTS, trackEvent } from '@/lib/mixpanel'
 import { localeForPath, type Locale } from '@/lib/locale'
 import { activeItem, MORE_LABEL, NAV_APP, NAV_PRIMARY, NAV_SCRIPTURES, NAV_SECONDARY, SCRIPTURES_LABEL, type NavItem } from '@/lib/nav'
 import MobileNavToggle from './MobileNavToggle'
+import { NavSearchButton, NavSearchPanel } from './NavSearch'
 import './nav.css'
 
 interface NavProps {
@@ -25,6 +26,12 @@ export default function Nav({ overlayHero, locale: localeProp }: NavProps) {
   const locale = localeProp ?? localeForPath(pathname)
   const active = activeItem([...NAV_PRIMARY, ...NAV_SCRIPTURES, ...NAV_SECONDARY], pathname, locale)
   const moreActive = active !== null && (NAV_SCRIPTURES.includes(active) || NAV_SECONDARY.includes(active))
+  const [searchOpen, setSearchOpen] = useState(false)
+  const closeSearch = useCallback(() => setSearchOpen(false), [])
+  const toggleSearch = () => {
+    if (!searchOpen) trackEvent(EVENTS.NavMenuOpened, { menu: 'search' })
+    setSearchOpen(!searchOpen)
+  }
 
   return (
     <nav className={`site-nav${overlayHero ? ' site-nav--overlay' : ''}`} aria-label={locale === 'hi' ? 'मुख्य' : 'Main'}>
@@ -35,6 +42,7 @@ export default function Nav({ overlayHero, locale: localeProp }: NavProps) {
           </div>
           Wisdom
         </a>
+        <NavSearchButton open={searchOpen} onToggle={toggleSearch} locale={locale} className="nav-search-btn--mobile" />
         <a href={NAV_APP.href} className="nav-app-link nav-app-link--mobile" data-nav-app="" data-mp-location="nav_app_mobile">
           <PhoneIcon />
           {NAV_APP.short[locale]}
@@ -50,6 +58,9 @@ export default function Nav({ overlayHero, locale: localeProp }: NavProps) {
             <MoreMenu locale={locale} active={active} current={moreActive} />
           </li>
           <li>
+            <NavSearchButton open={searchOpen} onToggle={toggleSearch} locale={locale} />
+          </li>
+          <li>
             <a href={NAV_APP.href} className="nav-app-link" data-nav-app="" data-mp-location="nav_app_desktop">
               <PhoneIcon />
               {NAV_APP.label[locale]}
@@ -57,6 +68,7 @@ export default function Nav({ overlayHero, locale: localeProp }: NavProps) {
           </li>
         </ul>
       </div>
+      <NavSearchPanel open={searchOpen} onClose={closeSearch} locale={locale} />
     </nav>
   )
 }

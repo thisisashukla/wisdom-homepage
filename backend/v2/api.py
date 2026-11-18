@@ -25,6 +25,14 @@ from server.plan import SAFETY_HARM
 
 router = APIRouter(tags=["v2"])
 logger = logging.getLogger("v2")
+E = rec = None  # the v3 engine and the recommender, set once by init()
+
+
+def init() -> None:
+    """Called once at server start (main.py lifespan), after init_recommender."""
+    global E, rec
+    E, rec = V.engine(), get_recommender()
+    logger.info("v2 ready: engine loaded in %d ms", E.load_ms)
 
 
 def timed(fn):
@@ -95,7 +103,6 @@ async def hook(o: Onboarding) -> HookResponse:
     """Day 1, bare minimum: read the person without a model, list candidates, let Sarvam suggest a pick and write
     the first line when they consented, keep only verses the graph allows."""
     consent.set_allowed(o.ai)  # every LLM client refuses when off (ai/consent.py)
-    E, rec = V.engine(), get_recommender()
 
     # 1. who they are, from our own rules (no model): stance, states, risk
     pb = V.person_brief(o, consent=o.ai)
@@ -137,7 +144,7 @@ async def hook(o: Onboarding) -> HookResponse:
             cands = [x for x in (r.pick, r.alt) if x] + cands
 
     # 4. keep what the graph allows as Day 1 for this reading
-    R = V.reading_R(E, rd)
+    R = {**V.reading_R(E, rd), "_free_day1": True}  # Day 1 may be any kind of verse, not only one that names the feeling
     allowed = lambda ids: [
         v for v in dict.fromkeys(ids) if V.day1_allowed(E, v, R, rd["risk"], pb) is None
     ]
