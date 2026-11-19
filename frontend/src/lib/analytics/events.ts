@@ -48,6 +48,21 @@ export const EVENTS = {
   /** Sent once when the page is hidden or closed, with the visible active time: { engaged_sec, max_scroll_pct }. */
   PageLeft: 'Page Left',
 
+  // ── Account: the sign-in card for readers who stay (components/account), synced progress, the morning verse ──
+  /** The card came up: { trigger: 'page' | 'session', dwell_sec, session_sec, threshold_sec, variant }. */
+  SigninPromptViewed: 'Signin Prompt Viewed',
+  /** A tap on the card: { action: 'google' | 'later' | 'close', daily }. */
+  SigninPromptClicked: 'Signin Prompt Clicked',
+  /** Google sign-in from the card: { location, method: 'popup' | 'redirect', daily } / { code }. */
+  SigninCompleted: 'Signin Completed',
+  SigninFailed: 'Signin Failed',
+  SigninCancelled: 'Signin Cancelled',
+  /** First sync of the session for a signed-in reader: { read_count, saved_count, pulled }. */
+  ReadingSynced: 'Reading Synced',
+  /** The morning verse turned on or off: { to, location }. */
+  DailyEmailToggled: 'Daily Email Toggled',
+  DailyEmailUnsubscribed: 'Daily Email Unsubscribed',
+
   // ── Scripture content, shared by every funnel and the quote pages ───────
   ScriptToggled: 'Script Toggled',
   LanguageSwitched: 'Language Switched',

@@ -19,9 +19,12 @@ const SB_KEY = process.env.WEB_PLANS_SUPABASE_KEY || process.env.DHYAAN_SUPABASE
 const SECRET = process.env.WEB_PLANS_SECRET || ''
 
 export const webPlansConfigured = () => SECRET.length >= 32
+/** The shared secret the guarded functions check (server only). */
+export const webSecret = () => SECRET
 export const TOKEN_RE = /^[0-9a-f]{48}$/
 
-async function rpc<T>(fn: string, args: Record<string, unknown>, timeoutMs = 8000): Promise<T> {
+/** A Postgres function in the "Wisdom App" project (also used by lib/server/readers.ts). */
+export async function rpc<T>(fn: string, args: Record<string, unknown>, timeoutMs = 8000): Promise<T> {
   const ctl = new AbortController()
   const t = setTimeout(() => ctl.abort(), timeoutMs)
   try {

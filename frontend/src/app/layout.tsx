@@ -5,6 +5,7 @@ import { AuthProvider } from '@/context/AuthContext'
 import MixpanelProvider from '@/components/MixpanelProvider'
 import Motion from '@/components/site/Motion'
 import PwaRoot from '@/components/install/PwaRoot'
+import AccountRoot from '@/components/account/AccountRoot'
 import { scriptureFontVars } from '@/lib/fonts'
 import { SCRIPT_BOOT } from '@/lib/scriptBoot'
 import { INSTALL_BOOT } from '@/lib/installBoot'
@@ -124,6 +125,8 @@ export default function RootLayout({
             <Motion />
             {/* Service worker + Android install offer (lib/install.ts), loaded after the page is interactive; the card picks en/hi from the URL. */}
             <PwaRoot location="install_banner" />
+            {/* Signed in: reading progress syncs across devices. Not signed in: the sign-in card for readers who stay (lib/account/nudge). */}
+            <AccountRoot />
           </MixpanelProvider>
         </AuthProvider>
       </body>

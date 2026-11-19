@@ -232,8 +232,82 @@ export function completeEmail(days: FullDay[], weekTitle: string | null, name: s
   return { subject: first ? `${first}, your week is complete` : 'Your week is complete', html, text }
 }
 
-/** Resolves true only when Resend accepted it. */
-export async function sendEmail(to: string, msg: { subject: string; html: string; text: string }, token?: string | null): Promise<boolean> {
+// ── The morning verse (signed-in readers, /api/daily/cron) ───────────────────
+
+export const dailyUnsubUrl = (token: string) => `${SITE}/api/daily/unsubscribe?t=${token}`
+const dailyUnsubPage = (token: string) => `${SITE}/daily/unsubscribe?t=${token}`
+
+export type DailyVerse = {
+  chapter: number
+  verse: number
+  sanskrit: string
+  translation: string
+  takeaway: string | null
+  /** 'next': the verse after where they are; 'today': the verse of the day (no place yet). */
+  kind: 'next' | 'today'
+}
+
+const DAILY_COPY = {
+  en: {
+    hello: (n: string | null) => (n ? `Good morning, ${n}.` : 'Good morning.'),
+    next: 'Your next verse in the Gita:',
+    today: 'Today’s verse from the Gita:',
+    ref: (c: number, v: number) => `Bhagavad Gita ${c}.${v}`,
+    read: 'Read it with its meaning',
+    after: 'Tomorrow morning, the verse after this one.',
+    foot: 'One Gita verse each morning, from where you are in your reading on Wisdom.',
+    stop: 'Stop these emails',
+  },
+  hi: {
+    hello: (n: string | null) => (n ? `सुप्रभात, ${n}।` : 'सुप्रभात।'),
+    next: 'गीता में आपका अगला श्लोक:',
+    today: 'आज का गीता श्लोक:',
+    ref: (c: number, v: number) => `भगवद गीता ${c}.${v}`,
+    read: 'अर्थ के साथ पढ़ें',
+    after: 'कल सुबह, इसके बाद वाला श्लोक।',
+    foot: 'हर सुबह गीता का एक श्लोक, Wisdom पर आपकी पढ़ाई जहाँ तक पहुँची है, वहीं से।',
+    stop: 'ये ईमेल बंद करें',
+  },
+} as const
+
+export function dailyVerseEmail(v: DailyVerse, lang: 'en' | 'hi', name: string | null | undefined, token: string) {
+  const t = DAILY_COPY[lang]
+  const first = firstName(name)
+  const path = lang === 'hi' ? `/hi/gita/chapter/${v.chapter}/verse/${v.verse}` : `/gita/chapter/${v.chapter}/verse/${v.verse}`
+  const href = `${SITE}${path}?src=email_daily`
+  const ref = t.ref(v.chapter, v.verse)
+  const font = lang === 'hi' ? DEVA : SERIF
+  const body = `
+<tr><td style="padding:8px 4px 24px;text-align:center">
+  <div style="font:17px/26px ${font};color:${MUTED}">${esc(t.hello(first))} ${v.kind === 'next' ? t.next : t.today}</div>
+</td></tr>
+<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="background:${CARD};border:1px solid ${LINE};border-radius:16px;padding:26px 24px;text-align:center">
+  ${label(esc(ref), GOLD)}
+  <div lang="sa" style="font:18px/32px ${DEVA};color:${GOLD};margin-top:16px;white-space:pre-line">${esc(v.sanskrit)}</div>
+  <div style="font:20px/30px ${font};color:${INK};margin-top:14px">${esc(v.translation)}</div>
+  ${v.takeaway ? `<div style="font:italic 16px/24px ${font};color:${MUTED};margin-top:14px">${esc(v.takeaway)}</div>` : ''}
+</td></tr></table></td></tr>
+<tr><td style="padding:24px 4px 0;text-align:center">
+  ${button(href, t.read)}
+  <div style="font:14px/22px ${font};color:${MUTED};margin-top:12px">${t.after}</div>
+</td></tr>`
+  const html = shell(clip(v.translation, 90), body, `${t.foot} <a href="${dailyUnsubPage(token)}" style="color:${MUTED}">${t.stop}</a>`)
+  const text = [t.hello(first), v.kind === 'next' ? t.next : t.today, '', ref, v.sanskrit, '', v.translation, v.takeaway ?? '', '', `${t.read}: ${href}`, '', `${t.stop}: ${dailyUnsubPage(token)}`]
+    .filter((x, i, a) => x !== '' || a[i - 1] !== '')
+    .join('\n')
+  return { subject: `${ref}: ${clip(v.translation, 60)}`, html, text }
+}
+
+/**
+ * Resolves true only when Resend accepted it. `token` is a plan's (its one-click unsubscribe goes in the
+ * headers); `listUnsub` overrides that URL for other emails (the morning verse).
+ */
+export async function sendEmail(
+  to: string,
+  msg: { subject: string; html: string; text: string },
+  token?: string | null,
+  listUnsub?: string,
+): Promise<boolean> {
   if (!emailConfigured()) return false
   const ctrl = new AbortController()
   const t = setTimeout(() => ctrl.abort(), 8000)
@@ -247,7 +321,9 @@ export async function sendEmail(to: string, msg: { subject: string; html: string
         subject: msg.subject,
         html: msg.html,
         text: msg.text,
-        ...(token ? { headers: { 'List-Unsubscribe': `<${unsubUrl(token)}>`, 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click' } } : {}),
+        ...(token || listUnsub
+          ? { headers: { 'List-Unsubscribe': `<${listUnsub ?? unsubUrl(token as string)}>`, 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click' } }
+          : {}),
       }),
       signal: ctrl.signal,
     })

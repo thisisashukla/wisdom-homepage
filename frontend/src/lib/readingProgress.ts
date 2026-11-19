@@ -5,7 +5,9 @@
  *   { v: 1,
  *     last: { ch, vs, lang: 'en' | 'hi', t } | null,   last verse page the reader opened
  *     read: string,                                    base64 bitset over every verse
- *     saved: string[] }                                "ch.vs" refs saved on this device
+ *     saved: string[],                                 "ch.vs" refs saved on this device
+ *     st?: { "ch.vs": ms } }                           when each ref was last saved (+) or unsaved (-), so a
+ *                                                      signed-in reader's devices merge (lib/readingMerge.ts)
  *
  * Bit index of a verse = (verses in all earlier chapters) + (verse - 1), which equals
  * `order - 1` in content/gita/index.json. Counts come from BG_COUNTS in lib/search/refs.ts
@@ -26,7 +28,7 @@ import { verseItemId } from '@/lib/gitaUrls'
 
 export type ReadingLang = Locale
 export type LastVisit = { ch: number; vs: number; lang: ReadingLang; t: number }
-export type ReadingStore = { v: 1; last: LastVisit | null; read: string; saved: string[] }
+export type ReadingStore = { v: 1; last: LastVisit | null; read: string; saved: string[]; st?: Record<string, number> }
 export type SavedVerse = { chapter: number; verse: number; addedAt: number }
 
 export const READING_KEY = 'wq_reading'
@@ -124,6 +126,11 @@ const sanitize = (x: unknown): ReadingStore => {
   }
   if (typeof o.read === 'string') s.read = o.read
   if (Array.isArray(o.saved)) s.saved = o.saved.filter((r): r is string => typeof r === 'string').slice(-200)
+  if (o.st && typeof o.st === 'object') {
+    const st: Record<string, number> = {}
+    for (const [r, t] of Object.entries(o.st as Record<string, unknown>)) if (parseRef(r) && typeof t === 'number' && t) st[r] = t
+    s.st = st
+  }
   return s
 }
 
@@ -291,7 +298,28 @@ export function setSaved(ch: number, vs: number, on: boolean): boolean {
     const kept = legacy.filter((b) => !(b.chapter === ch && b.verse === vs))
     if (kept.length !== legacy.length) writeJSON(LEGACY_BOOKMARKS_KEY, kept)
   }
-  return save({ ...store, saved: on ? [...rest, key].slice(-200) : rest })
+  return save({ ...store, saved: on ? [...rest, key].slice(-200) : rest, st: { ...store.st, [key]: on ? Date.now() : -Date.now() } })
+}
+
+/**
+ * This device's progress for syncing (lib/readingSync.ts): the store with the older bookmark list folded
+ * into `saved`, so those saves travel too.
+ */
+export function readingSnapshot(): ReadingStore {
+  const { store } = load()
+  const refs = new Set(store.saved)
+  const legacy = readLegacy()
+    .map((b) => `${b.chapter}.${b.verse}`)
+    .filter((r) => !refs.has(r) && !((store.st?.[r] ?? 0) < 0))
+  return { ...store, saved: [...legacy, ...store.saved] }
+}
+
+/** Write progress merged from the account (lib/readingMerge.ts) as this device's own. */
+export function applyReading(next: ReadingStore): boolean {
+  const legacy = readLegacy()
+  const removed = legacy.filter((b) => (next.st?.[`${b.chapter}.${b.verse}`] ?? 0) < 0)
+  if (removed.length) writeJSON(LEGACY_BOOKMARKS_KEY, legacy.filter((b) => !removed.includes(b)))
+  return save(sanitize(next))
 }
 
 /**

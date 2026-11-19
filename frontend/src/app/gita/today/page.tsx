@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import {
-  getAllVerseRefs,
   getVerse,
   getChapter,
   verseUrl,
@@ -21,6 +20,7 @@ import WhatsAppDaily from '@/components/daily/WhatsAppDailyLazy'
 // disabled for now; only the Scripture AI waitlist is shown on this page.
 // import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import { getVerseAudio } from '@/lib/gita'
+import { deterministicVerseRef, fetchVerseOfDay } from '@/lib/server/verseOfDay'
 
 // Re-render once an hour so the day rolls over cleanly without manual rebuilds.
 export const revalidate = 3600
@@ -56,56 +56,6 @@ export const metadata: Metadata = {
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   keywords: 'hindu verse of the day, bhagavad gita verse of the day, daily shloka, shloka of the day, sanskrit verse daily',
-}
-
-// ── Types ─────────────────────────────────────────────────────────────────────
-
-type VerseOfDayContext = {
-  chapter: number
-  verse: number
-  day_of_week: string
-  deity: string
-  day_name_hi: string
-  date_context: string
-  why_chosen: string
-  story: string
-  themes: string[]
-}
-
-// ── Fallback: deterministic verse when backend is unavailable ─────────────────
-
-const deterministicVerseRef = () => {
-  const refs = getAllVerseRefs()
-  if (refs.length === 0) return null
-  const utc = new Date()
-  const dayOfYear = Math.floor(
-    (Date.UTC(utc.getUTCFullYear(), utc.getUTCMonth(), utc.getUTCDate()) -
-      Date.UTC(utc.getUTCFullYear(), 0, 0)) /
-      86400000,
-  )
-  const yearKey = utc.getUTCFullYear() * 1000
-  return refs[(yearKey + dayOfYear) % refs.length]
-}
-
-// ── Fetch from backend API ────────────────────────────────────────────────────
-
-async function fetchVerseOfDay(): Promise<VerseOfDayContext | null> {
-  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || process.env.BACKEND_URL
-  if (!backendUrl) return null
-
-  try {
-    const res = await fetch(`${backendUrl}/api/v1/verse-of-day`, {
-      next: { revalidate: 3600 },
-    })
-    if (!res.ok) {
-      console.warn(`[today] verse-of-day API returned ${res.status}`)
-      return null
-    }
-    return await res.json() as VerseOfDayContext
-  } catch (err) {
-    console.warn('[today] verse-of-day API unreachable:', err)
-    return null
-  }
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
