@@ -18,7 +18,9 @@ Plans (one reading of the person → hook → diagnose → act → story):
     POST /api/v1/recommend/plan        →  the multi-day plan (default 21 days)
 
 v2 (rebuilt on the clean onboarding inputs, v2/api.py):
-    POST /api/v2/hook                  →  age, stages, feeling, note, ai → Day 1 verse, alternates, reading
+    POST /api/v2/day1                  →  age, stages, feeling, note, ai → matched reading plan + Day 1 verse and reading
+    POST /api/v2/day                   →  the same + plan, day, previous verses → that day's verse or story and its reading
+    POST /api/v2/hook                  →  age, stages, feeling, note, ai → graph-walk Day 1 verse, alternates
 
 Website:
     POST /api/v1/site-ask              →  a reader's "what are you looking for" → short answer + site links

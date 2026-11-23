@@ -435,6 +435,9 @@ export default function HareKrishnaMahamantraPage() {
         <p>
           Japa is the private mode. You sit alone, hold a <em>mala</em> (a strand of 108 wooden beads plus one larger head bead), and pass one bead through your fingers for each recitation of the full mantra. One full pass of the mala is called a <em>round</em>. One round is 108 mantras. Japa can be spoken aloud softly, whispered, or performed entirely internally. The traditional Vaishnava standard, taught by Chaitanya and continued by ISKCON, is 16 rounds a day &mdash; 1,728 mantras, roughly two hours of continuous chanting.
         </p>
+        <p>
+          New to the mala? Our guide to <a href="https://dhyaan.wisdomquotes.in/learn/japa-meditation" data-mp-location="blog_mahamantra_dhyaan_japa_meditation">japa meditation</a> shows you how to sit, how to move the beads, and what to do when your mind drifts mid-mantra.
+        </p>
 
         <h3>Kirtan &mdash; congregational singing</h3>
         <p>

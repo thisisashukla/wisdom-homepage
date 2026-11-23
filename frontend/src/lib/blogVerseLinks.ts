@@ -22,6 +22,10 @@ export interface BlogLink {
   cta: string
   /** Hero image path (from /public) to show on the card */
   image: string
+  /** Absolute URL when the page lives off /blogs (e.g. a Dhyaan /learn guide) */
+  href?: string
+  /** Where the link points; sets the Mixpanel location. Default 'blog'. */
+  source?: 'blog' | 'dhyaan'
 }
 
 /** One representative image per blog slug. */

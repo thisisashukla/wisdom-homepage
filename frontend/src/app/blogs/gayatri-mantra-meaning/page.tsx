@@ -492,6 +492,10 @@ export default function GayatriMantraPage() {
           </li>
         </ul>
 
+        <p>
+          Counting on a mala for the first time? Our guide to <a href="https://dhyaan.wisdomquotes.in/learn/japa-meditation" data-mp-location="blog_gayatri_dhyaan_japa_meditation">japa meditation</a> shows you how to hold the beads, keep your place, and return when your mind drifts mid-mantra.
+        </p>
+
         <h2>Benefits: What Practitioners Report</h2>
         <p>
           A brief note on benefits, because they are often overclaimed. Traditional texts attribute great powers to the Gayatri, such as purification from sin and protection from harm. Modern practitioners report something more modest.

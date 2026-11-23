@@ -28,6 +28,7 @@ import { listenSessionForVerse } from '@/lib/listenServer'
 import { VERSE_TRANSLATION_ID } from '@/components/reader/ids'
 import VerseShareBar from '@/components/gita/VerseShareBar'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
+import { getDhyaanLinksForVerse } from '@/lib/dhyaanVerseLinks'
 import BlogTracker from '@/components/BlogTracker'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import SanskritText from '@/components/gita/SanskritText'
@@ -154,7 +155,7 @@ export default async function VersePage({ params }: { params: Params }) {
   const related = getRelatedVerses(c, v, verse.tags) as IndexEntry[]
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const audio = getVerseAudio(c, v)
-  const blogLinks = getBlogLinksForVerse(c, v)
+  const blogLinks = [...getBlogLinksForVerse(c, v), ...getDhyaanLinksForVerse(c, v)]
   const firstPlan = plansForVerse(c, v)[0]
   const roman = verseRoman(verse.sanskrit)
   const words = parseLiteral(verse.translationLiteral)

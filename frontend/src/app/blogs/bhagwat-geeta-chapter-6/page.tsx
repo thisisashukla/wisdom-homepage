@@ -613,6 +613,10 @@ export default function ChapterPage6() {
           In 6.34 Arjuna objects that the mind is as hard to hold as the wind. Krishna agrees that it is restless, and says it is held by abhyāsa and vairāgya, practice and detachment (6.35): coming back again and again, while caring less about the result.
         </p>
 
+        <p>
+          Ready to try it? Start with <a href="https://dhyaan.wisdomquotes.in/learn/dhyana" data-mp-location="blog_ch6_dhyaan_dhyana">what dhyana means in yoga and the Gita</a>, then <a href="https://dhyaan.wisdomquotes.in/learn/silent-meditation" data-mp-location="blog_ch6_dhyaan_silent_meditation">sit in silence the way 6.10 to 6.14 describe</a>.
+        </p>
+
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
@@ -842,6 +846,14 @@ export default function ChapterPage6() {
           <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
             <div className="related-card-label">Topic Guide</div>
             <div className="related-card-title">Karma: what it means in the Gita</div>
+          </a>
+          <a href="https://dhyaan.wisdomquotes.in/learn/dhyana" className="related-card" data-mp-location="blog_ch6_related_dhyaan_dhyana">
+            <div className="related-card-label">Practice</div>
+            <div className="related-card-title">Dhyana: what meditation means in yoga and the Gita</div>
+          </a>
+          <a href="https://dhyaan.wisdomquotes.in/learn/trataka" className="related-card" data-mp-location="blog_ch6_related_dhyaan_trataka">
+            <div className="related-card-label">Practice</div>
+            <div className="related-card-title">Trataka: gaze at a still flame, the lamp of 6.19</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-5" className="related-card">
             <div className="related-card-label">Chapter 5</div>

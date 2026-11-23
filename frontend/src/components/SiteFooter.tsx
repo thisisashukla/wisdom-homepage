@@ -44,6 +44,7 @@ export default function SiteFooter({ locale = 'en' }: { locale?: 'en' | 'hi' }) 
           <li><a href="/gita-for">Gita for life</a></li>
           <li><a href="/blogs">Blog</a></li>
           <li><a href="/app">Wisdom app</a></li>
+          <li><a href="https://dhyaan.wisdomquotes.in" data-mp-location="footer_dhyaan">Dhyaan: meditation for Apple Watch</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/resources">Resources</a></li>
           <li><a href="/privacy">Privacy</a></li>

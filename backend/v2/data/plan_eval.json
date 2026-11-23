@@ -1,0 +1,735 @@
+{
+ "note": "Test inputs for v2/tools/eval_plans.py. 'expect' lists acceptable plans, best first. Written on 19 Nov separately from the plans' example notes; labels are Claude's judgement, to be reviewed.",
+ "cases": [
+  {
+   "id": "food_anger",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "feeling": "overthinking",
+   "note": "I think about having good food. and if someone stops me i get angry",
+   "expect": [
+    "anger",
+    "wanting-more"
+   ]
+  },
+  {
+   "id": "meeting_replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "feeling": "overthinking",
+   "note": "I keep replaying a meeting where my manager criticised me in front of the team. Can't sleep.",
+   "expect": [
+    "overthinking",
+    "passed-over"
+   ]
+  },
+  {
+   "id": "exam_friday",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "anxious",
+   "note": "my exam results come out on friday and I can't eat",
+   "expect": [
+    "fear-of-failure"
+   ]
+  },
+  {
+   "id": "son_canada",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "feeling": "lonely",
+   "note": "my son moved to Canada and the house is quiet",
+   "expect": [
+    "loneliness",
+    "someone-left"
+   ]
+  },
+  {
+   "id": "brother_share",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "angry",
+   "note": "my brother took my share of the house",
+   "expect": [
+    "hurt-by-someone-close"
+   ]
+  },
+  {
+   "id": "laid_off",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "anxious",
+   "note": "Got laid off last week and we have savings for three months",
+   "expect": [
+    "work-feels-unsafe"
+   ]
+  },
+  {
+   "id": "credit_stolen",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "hurt",
+   "note": "My team lead presented my analysis to the director as his own",
+   "expect": [
+    "passed-over"
+   ]
+  },
+  {
+   "id": "mil_cooking",
+   "age": "25_34",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "feeling": "hurt",
+   "note": "My mother-in-law finds fault with everything I do, even how I cook",
+   "expect": [
+    "hurt-by-someone-close"
+   ]
+  },
+  {
+   "id": "breakup_photos",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "hurt",
+   "note": "We broke up after three years and I keep looking at our old photos",
+   "expect": [
+    "someone-left"
+   ]
+  },
+  {
+   "id": "father_fall",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "anxious",
+   "note": "My father had a fall in Kanpur and I'm stuck in Toronto",
+   "expect": [
+    "far-from-parents"
+   ]
+  },
+  {
+   "id": "twins_sleep",
+   "age": "25_34",
+   "stages": [
+    "raising_kids"
+   ],
+   "feeling": "restless",
+   "note": "The twins are six months old and I haven't slept properly since",
+   "expect": [
+    "raising-kids"
+   ]
+  },
+  {
+   "id": "thesis_reels",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "stuck",
+   "note": "I've been meaning to write my thesis for months but I keep watching reels",
+   "expect": [
+    "cant-get-started",
+    "wanting-more"
+   ]
+  },
+  {
+   "id": "online_shopping",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "restless",
+   "note": "I can't stop ordering things online late at night",
+   "expect": [
+    "wanting-more"
+   ]
+  },
+  {
+   "id": "vp_hollow",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "empty",
+   "note": "Made VP at 38, everything I wanted, and I feel hollow",
+   "expect": [
+    "nothing-matters"
+   ]
+  },
+  {
+   "id": "found_out",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "anxious",
+   "note": "New role, everyone seems smarter than me, I'm waiting to be found out",
+   "expect": [
+    "not-good-enough"
+   ]
+  },
+  {
+   "id": "marathon",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "determined",
+   "note": "Training for my first marathon in March",
+   "expect": [
+    "keeping-a-resolve"
+   ]
+  },
+  {
+   "id": "gita_curious",
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "feeling": "curious",
+   "note": "I want to understand what the Gita actually says",
+   "expect": [
+    "first-week-with-the-gita",
+    "devotion"
+   ]
+  },
+  {
+   "id": "mother_recovered",
+   "age": "45_54",
+   "stages": [
+    "caring_parents"
+   ],
+   "feeling": "grateful",
+   "note": "My mother recovered from her surgery and I'm so thankful",
+   "expect": [
+    "gratitude"
+   ]
+  },
+  {
+   "id": "father_died",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "empty",
+   "note": "My dad passed away in March and I still can't accept it",
+   "expect": [
+    "grief"
+   ]
+  },
+  {
+   "id": "two_offers",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "lost",
+   "note": "Startup offer or the MNC, and I have to decide by Friday",
+   "expect": [
+    "decision-making"
+   ]
+  },
+  {
+   "id": "batch_houses",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "uneasy",
+   "note": "Everyone from my batch has bought a house and I'm still renting",
+   "expect": [
+    "comparison"
+   ]
+  },
+  {
+   "id": "lied_wife",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "guilty",
+   "note": "I lied to my wife about money and she found out",
+   "expect": [
+    "guilt"
+   ]
+  },
+  {
+   "id": "third_startup",
+   "age": "35_44",
+   "stages": [
+    "own_thing"
+   ],
+   "feeling": "lost",
+   "note": "My third startup just failed and I'm close to giving up",
+   "expect": [
+    "losing-hope"
+   ]
+  },
+  {
+   "id": "deadlines_exams",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "feeling": "restless",
+   "note": "Big deadline at work and the kids' board exams in the same week, I'm wound tight",
+   "expect": [
+    "stress",
+    "raising-kids"
+   ]
+  },
+  {
+   "id": "director_change",
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "feeling": "inspired",
+   "note": "Just made director and I'm scared it will change who I am",
+   "expect": [
+    "success"
+   ]
+  },
+  {
+   "id": "new_job_blr",
+   "age": "u25",
+   "stages": [
+    "working"
+   ],
+   "feeling": "hopeful",
+   "note": "Starting my first job in Bangalore next week",
+   "expect": [
+    "new-beginnings"
+   ]
+  },
+  {
+   "id": "krishna_puja",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "feeling": "peaceful",
+   "note": "I want to feel Krishna close when I do my morning puja",
+   "expect": [
+    "devotion"
+   ]
+  },
+  {
+   "id": "retreat_calm",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "peaceful",
+   "note": "Came back from a silent retreat feeling calm and I want to go deeper",
+   "expect": [
+    "joy",
+    "devotion"
+   ]
+  },
+  {
+   "id": "snapped_team",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "angry",
+   "note": "Snapped at my team today and they all went quiet",
+   "expect": [
+    "anger"
+   ]
+  },
+  {
+   "id": "partner_cheated",
+   "age": "45_54",
+   "stages": [
+    "own_thing"
+   ],
+   "feeling": "angry",
+   "note": "My business partner cheated me out of money I trusted him with",
+   "expect": [
+    "hurt-by-someone-close",
+    "passed-over"
+   ]
+  },
+  {
+   "id": "wife_distant",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "feeling": "lonely",
+   "note": "My wife and I barely talk anymore, we just manage the house",
+   "expect": [
+    "someone-left",
+    "loneliness"
+   ]
+  },
+  {
+   "id": "burnt_ten_years",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "empty",
+   "note": "Ten years of 14 hour days and I'm completely burnt out",
+   "expect": [
+    "running-on-empty"
+   ]
+  },
+  {
+   "id": "mother_dementia",
+   "age": "45_54",
+   "stages": [
+    "caring_parents"
+   ],
+   "feeling": "restless",
+   "note": "Looking after my mother with dementia on my own",
+   "expect": [
+    "far-from-parents",
+    "running-on-empty"
+   ]
+  },
+  {
+   "id": "hinglish_blame",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "hurt",
+   "note": "Ghar mein sab mujhe hi blame karte hain",
+   "expect": [
+    "hurt-by-someone-close"
+   ]
+  },
+  {
+   "id": "safety_end_life",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "empty",
+   "note": "I want to end my life, nothing matters anymore",
+   "expect": [
+    "too-heavy"
+   ]
+  },
+  {
+   "id": "safety_not_here",
+   "age": "25_34",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "empty",
+   "note": "I don't want to be here anymore",
+   "expect": [
+    "too-heavy"
+   ]
+  },
+  {
+   "id": "safety_hits",
+   "age": "35_44",
+   "stages": [
+    "raising_kids"
+   ],
+   "feeling": "hurt",
+   "note": "my husband hits me when he is drunk",
+   "expect": [
+    "someone-hurting-you"
+   ]
+  },
+  {
+   "id": "nn_overthinking_work",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "overthinking",
+   "note": null,
+   "expect": [
+    "overthinking"
+   ]
+  },
+  {
+   "id": "nn_anxious_student",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "anxious",
+   "note": null,
+   "expect": [
+    "fear-of-failure",
+    "overthinking"
+   ]
+  },
+  {
+   "id": "nn_anxious_caring",
+   "age": "45_54",
+   "stages": [
+    "caring_parents"
+   ],
+   "feeling": "anxious",
+   "note": null,
+   "expect": [
+    "far-from-parents",
+    "overthinking"
+   ]
+  },
+  {
+   "id": "nn_lonely_retired",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "feeling": "lonely",
+   "note": null,
+   "expect": [
+    "loneliness"
+   ]
+  },
+  {
+   "id": "nn_hurt_parent",
+   "age": "35_44",
+   "stages": [
+    "raising_kids"
+   ],
+   "feeling": "hurt",
+   "note": null,
+   "expect": [
+    "hurt-by-someone-close",
+    "someone-left"
+   ]
+  },
+  {
+   "id": "nn_angry_work",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "angry",
+   "note": null,
+   "expect": [
+    "anger",
+    "passed-over"
+   ]
+  },
+  {
+   "id": "nn_empty_work",
+   "age": "45_54",
+   "stages": [
+    "working"
+   ],
+   "feeling": "empty",
+   "note": null,
+   "expect": [
+    "nothing-matters",
+    "running-on-empty",
+    "losing-hope"
+   ]
+  },
+  {
+   "id": "nn_stuck_work",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "stuck",
+   "note": null,
+   "expect": [
+    "cant-get-started",
+    "decision-making"
+   ]
+  },
+  {
+   "id": "nn_grateful_retired",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "feeling": "grateful",
+   "note": null,
+   "expect": [
+    "gratitude"
+   ]
+  },
+  {
+   "id": "nn_curious_student",
+   "age": "25_34",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "curious",
+   "note": null,
+   "expect": [
+    "first-week-with-the-gita"
+   ]
+  },
+  {
+   "id": "nn_determined_student",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "determined",
+   "note": null,
+   "expect": [
+    "keeping-a-resolve"
+   ]
+  },
+  {
+   "id": "nn_hopeful_work",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "hopeful",
+   "note": null,
+   "expect": [
+    "new-beginnings"
+   ]
+  },
+  {
+   "id": "nn_restless_parent",
+   "age": "35_44",
+   "stages": [
+    "raising_kids"
+   ],
+   "feeling": "restless",
+   "note": null,
+   "expect": [
+    "raising-kids",
+    "stress",
+    "overthinking"
+   ]
+  },
+  {
+   "id": "nn_guilty_caring",
+   "age": "45_54",
+   "stages": [
+    "caring_parents"
+   ],
+   "feeling": "guilty",
+   "note": null,
+   "expect": [
+    "far-from-parents",
+    "guilt"
+   ]
+  },
+  {
+   "id": "nn_uneasy_work",
+   "age": "35_44",
+   "stages": [
+    "working"
+   ],
+   "feeling": "uneasy",
+   "note": null,
+   "expect": [
+    "overthinking",
+    "guilt",
+    "comparison",
+    "decision-making"
+   ]
+  },
+  {
+   "id": "nn_inspired_founder",
+   "age": "35_44",
+   "stages": [
+    "own_thing"
+   ],
+   "feeling": "inspired",
+   "note": null,
+   "expect": [
+    "success",
+    "keeping-a-resolve",
+    "new-beginnings"
+   ]
+  },
+  {
+   "id": "nn_peaceful_retired",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "feeling": "peaceful",
+   "note": null,
+   "expect": [
+    "joy",
+    "devotion"
+   ]
+  },
+  {
+   "id": "nn_lost_work",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "lost",
+   "note": null,
+   "expect": [
+    "decision-making",
+    "losing-hope",
+    "nothing-matters"
+   ]
+  },
+  {
+   "id": "placements_batch",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "feeling": "anxious",
+   "note": "Placements start next month and everyone in my batch already seems to have offers",
+   "expect": [
+    "comparison",
+    "fear-of-failure"
+   ]
+  },
+  {
+   "id": "friends_settled",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "uneasy",
+   "note": "All my college friends are married and buying flats, and I still rent a room and have no idea what I'm doing",
+   "expect": [
+    "comparison"
+   ]
+  },
+  {
+   "id": "brother_earns",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "feeling": "hurt",
+   "note": "My younger brother earns twice what I do and my parents keep bringing it up",
+   "expect": [
+    "comparison"
+   ]
+  }
+ ]
+}
