@@ -66,7 +66,7 @@ SCRIPT_VERSION = "v2"
 class NarrationRequest(BaseModel):
     verse_id: Optional[str] = Field(None, max_length=80)
     story_id: Optional[str] = Field(None, max_length=80)
-    for_you: Optional[str] = Field(None, max_length=400)
+    for_you: Optional[str] = Field(None, max_length=900)      # v2 readings run to 90 words (~600 chars)
     meaning: Optional[str] = Field(None, max_length=900)      # the day's "What it says", so audio and screen agree
     beat: Literal["hook", "diagnose", "steady", "act", "story"] = "hook"
     week: int = Field(1, ge=1, le=3)
