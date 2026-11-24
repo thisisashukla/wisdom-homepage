@@ -5,6 +5,9 @@ v2 API: the plan backend rebuilt one function at a time, on the raw onboarding i
     POST /api/v2/day1    age, stages, feeling, note, ai  ->  a prebuilt plan, its Day 1 verse, what it means for them,
                                                          its meaning told for them, and its Listen script
     POST /api/v2/day     the same + plan, day, previous   ->  that day's verse (or story) and what it means for them
+    POST /api/v2/chips   age, stages, feeling             ->  the situations to offer after the feeling word, with how many
+                                                         verses and stories each has; the one tapped goes to /day1 and
+                                                         /day as `situation`
 
 Every response carries prompt_version and plans_version (v2/plans.py), so production behaviour traces to a release.
 
@@ -33,7 +36,7 @@ from ai import consent, plan_graph as pg, plan_v3 as V
 from ai.harness_v2.vocab import AGE_PHRASE, EMOTIONS, STAGE_PHRASE
 from ai.embedder import get_embedder
 from ai.recommender import SAFETY, get_recommender
-from ai.understanding import SAFE_MIRROR
+from ai.understanding import SAFE_MIRROR, check_note
 from common.models import AgeBand, LifeStage, PlanSafety, RecommendedVerse, StoryCard
 from server.narration import clean_parts
 from server.plan import SAFETY_HARM
@@ -92,6 +95,7 @@ def init() -> None:
         PL.load(em.embed_batch, type(em).__name__)
     except Exception:  # no embedder: plans are matched by feeling and stage only
         PL.load(None)
+    PL.load_situations(E)
 
 
 def timed(fn):
@@ -113,6 +117,12 @@ class Onboarding(BaseModel):
     feeling: str  # the word kept on the feeling screen, e.g. "overthinking"
     note: Optional[str] = Field(None, max_length=1000)
     ai: bool  # they allowed third-party AI; False: no model call, note unread
+    situation: Optional[str] = None  # the chip they tapped (/chips); it decides the plan. Unknown ids are ignored
+
+    @field_validator("situation")
+    @classmethod
+    def _known_situation(cls, v: Optional[str]) -> Optional[str]:
+        return v if v in PL.LABEL else None
 
     @field_validator("feeling")
     @classmethod
@@ -316,11 +326,14 @@ class Day1Response(Versioned):
     meaning: Optional[str] = None  # what the verse says, told for them from their note (with AI consent)
     script: List[ScriptPart] = []  # the Listen script in spoken order; the Sanskrit and the plain line are the library's
     script_source: str = "none"  # model | composed (from the library and the screen's words) | none (safety plans)
-    chosen_by: str  # model | top_match | risk | graph
+    chosen_by: str  # situation | model | top_match | risk | graph
+    situation: Optional[str] = None  # the chip that decided the plan, when one did
     candidates: List[str] = []  # plans considered, best match first
     candidate_scores: List[Candidate] = []  # the same plans with their match scores
     confidence: Optional[float] = None  # the closest plan's raw similarity, before priors (plans.confidence); None when risk decided
-    none_fits: bool = False  # no plan fits their note (Sarvam said none, or confidence < plans.NONE_FITS): the graph walk chose Day 1
+    none_fits: bool = False  # no plan fits their note. With no plan: Sarvam said none, or confidence < plans.NONE_FITS, and the graph
+    # walk chose Day 1. With a plan: the note said nothing about them ("asdf", "is this app free?"), so it was set aside and
+    # the plan comes from their feeling word, as with no note; send /day without the note
     safety: Optional[PlanSafety] = None  # set when the note shows risk: show the help lines first
 
 
@@ -339,20 +352,30 @@ def plan_out(p: dict, day1_verse: Optional[str] = None) -> PlanOut:
 async def day1(o: Onboarding) -> Day1Response:
     """Day 1 from a prebuilt plan: match the person to a plan, Sarvam confirms it, picks the Day 1 verse and writes its reading."""
     consent.set_allowed(o.ai)
-    risk = V.det_risk(o.note)  # our regexes, read locally even without consent
+    risk = V.higher_risk(V.det_risk(o.note), PL.risk_backstop(o.note))  # our regexes, read locally even without consent
     ranked, chosen_by, slug, conf, none_fits = [], "risk", None, None, False
     if risk == "none":
         sims = await asyncio.to_thread(PL.similarity, o)
         ranked = PL.match(o, sims=sims)
         conf = PL.confidence(sims, ranked)
-        if o.ai and o.note:  # with no note Sarvam knows no more than the match did
+        junk = bool(o.note) and check_note(o.note).signal == "junk"  # "asdf", "ok", "🙏🙏🙏": never a cry for help
+        if o.ai and o.note and not junk:  # with no note Sarvam knows no more than the match did
             slug, why, model_risk = await asyncio.to_thread(PL.select, o, ranked, sarvam)
             risk, chosen_by = V.higher_risk(risk, model_risk), "model"
             # Sarvam is asked even when the closest plan is far, for the risk it may see
-            none_fits = slug is None or (conf is not None and conf < PL.NONE_FITS)
-            slug = None if none_fits else slug
+            none_fits = slug in (None, PL.OFF_TOPIC) or (conf is not None and conf < PL.NONE_FITS)
+            slug = None if none_fits and slug != PL.OFF_TOPIC else slug
         else:
             slug, chosen_by = ranked[0][1], "top_match"
+        if risk == "none" and (slug == PL.OFF_TOPIC or (junk and o.ai)):
+            # the note says nothing about them: Day 1 as if they wrote none, from their feeling word (none_fits says so)
+            o = o.model_copy(update={"note": None})
+            sims = await asyncio.to_thread(PL.similarity, o)
+            ranked = PL.match(o, sims=sims)
+            slug, chosen_by, conf, none_fits = ranked[0][1], "top_match", PL.confidence(sims, ranked), True
+    sit_plan = PL.situation_plan(o.situation, E) if o.situation else None
+    if sit_plan is not None and risk == "none":  # they told us which situation is theirs: it decides, the note personalises
+        slug, chosen_by, none_fits = sit_plan["slug"], "situation", False
     if risk in PL.SAFETY_PLAN:
         slug, chosen_by, none_fits = PL.SAFETY_PLAN[risk], "risk", False
 
@@ -387,7 +410,7 @@ async def day1(o: Onboarding) -> Day1Response:
         reading_source=source,
         today=next((d.get("today") for d in (plan or {}).get("days", []) if d.get("verse") == vid), None),
         meaning=meaning, script=script, script_source=script_source,
-        chosen_by=chosen_by,
+        chosen_by=chosen_by, situation=o.situation if chosen_by == "situation" else None,
         candidates=[s for _, s in ranked[:PL.TOP]],
         candidate_scores=[Candidate(slug=s, score=round(x, 4)) for x, s in ranked[:PL.TOP]],
         confidence=conf, none_fits=none_fits,
@@ -431,7 +454,7 @@ def story_out(plan: dict, d: dict) -> Optional[StoryCard]:
 @timed
 async def day(r: DayRequest) -> DayResponse:
     """Days 2-7 of a plan: the day's own verse or story, and what it means for this person after the days before it."""
-    plan = PL.BY_SLUG.get(r.plan)
+    plan = PL.BY_SLUG.get(r.plan) or (PL.situation_plan(r.plan[len(PL.SIT_PREFIX):], E) if r.plan.startswith(PL.SIT_PREFIX) else None)
     d = next((x for x in plan["days"] if x["day"] == r.day), None) if plan else None
     if d is None:
         raise HTTPException(404, f"no day {r.day} in plan {r.plan!r}")
@@ -441,7 +464,9 @@ async def day(r: DayRequest) -> DayResponse:
         src = next((x for x in plan["days"] if x.get("verse") == vid), {})
         d = {**d, "verse": vid, "heading": src.get("heading") or d.get("heading"), "for_you": src.get("for_you"), "today": src.get("today")}
     consent.set_allowed(r.ai)
-    risk = plan["profile"]["safety"] or V.det_risk(r.note)
+    risk = plan["profile"]["safety"] or V.higher_risk(V.det_risk(r.note), PL.risk_backstop(r.note))
+    if r.note and check_note(r.note).signal == "junk":  # as /day1 does: a note that says nothing about them is set aside
+        r = r.model_copy(update={"note": None})
     if r.ai and risk == "none":
         reading, source = await asyncio.to_thread(PL.day_reading, r, plan, d, r.previous, E, sarvam)
     else:  # no consent, or someone at risk: never written by a model
@@ -453,3 +478,27 @@ async def day(r: DayRequest) -> DayResponse:
         story=story_out(plan, d),
         reading=reading, reading_source=source, today=d.get("today"), safety=safety(risk),
     )
+
+
+# ── /chips: the situations offered after the feeling word ──────────────────────────────────────────────────────
+class ChipsRequest(BaseModel):
+    age: Optional[AgeBand] = None
+    stages: List[LifeStage] = Field(default_factory=list, max_length=7)  # in the order they were tapped: the first counts
+    feeling: str
+
+
+class Chip(BaseModel):
+    id: str  # send back to /day1 as `situation`
+    label: str  # "I can't stop overthinking"
+    verses: int  # verses in the library for it
+    stories: int
+    show_counts: bool  # False when the pool is small: show the label alone
+
+
+class ChipsResponse(Versioned):
+    chips: List[Chip] = []  # empty for an unknown feeling: go straight to the note
+
+
+@router.post("/chips")
+async def chips(r: ChipsRequest) -> ChipsResponse:
+    return ChipsResponse(chips=[Chip(**c) for c in PL.chips(r.feeling, r.stages)])

@@ -8,7 +8,8 @@ Prints a short report and writes <split>.metrics.json beside the run. Reading qu
 
     top3_recall          an acceptable plan is in the match's top 3 (cases labelled with a plan)
     plan_accuracy        the final pick is in the acceptable set; a "none" label is right when none_fits (all but safety)
-    false_match_rate     share of none cases given a plan
+    false_match_rate     share of none cases whose note chose a plan (a plan from their feeling word, the note set aside
+                         with none_fits, is right)
     safety_recall        share of safety cases routed to a safety plan (safety_exact: to the plan in the label)
     safety_false_alarms  other cases routed to a safety plan
     fallback_rate        Day 1 readings not written by Sarvam (the checker refused both tries, or Sarvam failed)
@@ -70,7 +71,7 @@ def group(pairs, verdicts) -> dict:
         "n": len(pairs), "n_plan": len(plan_cases), "n_none": len(nones), "n_safety": len(safety),
         "top3_recall": rate(any(e in [x["slug"] for x in r["candidate_scores"][:3]] for e in c["expect"]) for c, r in plan_cases),
         "plan_accuracy": rate(right(c, r) for c, r in pairs if c["type"] != "safety"),
-        "false_match_rate": rate(r["plan"] is not None and r["plan"] not in C.SAFETY_PLANS for r in nones),
+        "false_match_rate": rate(not r["none_fits"] and r["plan"] not in C.SAFETY_PLANS for r in nones),
         "safety_recall": rate(right(c, r) for c, r in safety),
         "safety_exact": rate(r["plan"] in c["expect"] for c, r in safety),
         "safety_false_alarms": sum(r["plan"] in C.SAFETY_PLANS for c, r in pairs if c["type"] != "safety"),

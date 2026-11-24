@@ -8,14 +8,18 @@ Sources:
     missing from the 1,765-verse library or unsafe for the people the plan serves (OVERRIDES)
   - NEW_PLANS below, drafted from v2/tools/plan_candidates.py (reviewed: false until Ankur reviews them)
   - PROFILES below: what each plan is for, in the words matching uses (feelings, situations, example notes, stages)
+  - data/verse_context.json (v2/tools/build_context.py, from the verse research): each plan's arc, each day's "why this
+    verse today" and the day's cautions for this plan's readers; DRAFT_FIXES below came from the research notes
 """
 import json
 import os
+import re
 import sys
 
 BACKEND = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 WEB = os.path.join(os.path.dirname(BACKEND), "frontend", "src", "content", "plans")
 OUT = os.path.join(BACKEND, "v2", "data", "plans.json")
+CONTEXT = os.path.join(BACKEND, "v2", "data", "verse_context.json")
 sys.path.insert(0, BACKEND)
 
 JOB = {"see": "see", "understand": "why", "steady": "steady", "act": "act", "story": "story"}
@@ -36,6 +40,27 @@ OVERRIDES = {
 # duty", so an anxious reader can meet it on Day 1; 3.35 stays on Day 2. A later day whose verse Day 1 took shows the
 # plan's own Day 1 verse instead (api.day).
 WEB_ALTS = {"comparison": ["bg.18.47"]}
+
+# Fixes the verse research found (data/research/out/*_notes.md), applied to draft plans only. Reviewed plans are never
+# changed here: their proposed swaps wait for Ankur in data/plan_fixes_proposed.md.
+DRAFT_FIXES = {  # (slug, day): (new verse, new heading, why)
+    ("raising-kids", 4): ("mbh.3.29.12", "Be the calmer one",
+                          "shambhu_gita.4.83 is mistranslated and is about the ancestors' cosmic rule, not parenting (a 20th-century Mahamandal text)"),
+    ("nothing-matters", 3): ("up_mundaka.1.1.3", "The question under everything",
+                             "surya_gita.3.36 is a 20th-century Bharat Dharma Mahamandal text, not ancient scripture"),
+    ("not-good-enough", 2): ("bh.vairagya.31", "Every gain brings a fear",
+                             "vishnu_gita.1.98 is a 20th-century rework of this Bhartrihari verse: use the original"),
+    ("work-feels-unsafe", 3): ("bh.niti.40", "You are more than the job",
+                               "vr.4.7.9's next verses tell Rama to hold back his tears"),
+    ("work-feels-unsafe", 6): ("vr.6.34.11", "Ask for the truth",
+                               "rcm.2.163.doha.1's 'task today' is cremating a father: a work reading erases that"),
+    ("someone-left", 6): ("bh.niti.76", "Let a friend in",
+                          "mbh.12.338.12's passage says the wise shed no tears, on a plan about a loss"),
+}
+DRAFT_ALT_DROPS = {"raising-kids": "mbh.12.81.11",  # our translation reverses the verse
+                   "work-feels-unsafe": "vishnu_gita.1.60"}  # a 20th-century Mahamandal text
+GRIEF_PLANS = {"grief", "someone-left", "too-heavy"}
+LATE_TEXT = re.compile(r"^((dheesh|shakti|shambhu|surya|vishnu)_gita|up_narayana)\.")
 
 # slug: (title, [(verse_id, heading)] * 6, story_id, day1 alternatives)
 NEW_PLANS = {
@@ -342,8 +367,44 @@ def web_plan(slug):
 def new_plan(slug):
     title, verses, story, alts = NEW_PLANS[slug]
     days = [{"day": i + 1, "job": NEW_JOBS[i], "heading": h, "verse": v} for i, (v, h) in enumerate(verses)]
+    for d in days:
+        if (slug, d["day"]) in DRAFT_FIXES:
+            v, h, why = DRAFT_FIXES[(slug, d["day"])]
+            d.update({"verse": v, "heading": h, "replaced": d["verse"], "fix": why})
     days.append({"day": 7, "job": "story", "story": {"id": story}})
+    alts = [v for v in alts if v != DRAFT_ALT_DROPS.get(slug)]
     return {"slug": slug, "title": title, "source": "drafted", "reviewed": False, "days": days, "day1_alts": alts}
+
+
+def overlap(a, b):
+    w = lambda s: set(re.findall(r"[a-z]{4,}", s.lower()))
+    return len(w(a) & w(b))
+
+
+def enrich(p, C):
+    """From the research: the plan's arc, and for each verse day why this verse today and the cautions for this plan's
+    readers (the verse's own cautions stay in verse_context.json, where the prompts read them)."""
+    who = " ".join([p["profile"]["for_whom"]] + p["profile"]["situations"] + p["profile"]["example_notes"])
+    p["arc"] = "; ".join(f"Day {d['day']} ({d['job']}): {d.get('heading') or (d.get('story') or {}).get('title') or ''}" for d in p["days"])
+    wronged = p["profile"]["stance"] == "wronged"
+    for d in p["days"]:
+        c = C.get(d.get("verse"))
+        if not c:
+            continue
+        fits = sorted(c["speaks_to"], key=lambda s: -overlap(s, who))[:2]
+        d["why_today"] = f"for \"{d.get('heading')}\", as it speaks to {' and '.join(fits)}" if fits else d.get("heading")
+        warn = " ".join(c["cautions"] + c["not_for"])
+        cautions = []
+        if p["slug"] in GRIEF_PLANS and c["data_flags"].get("tells_not_to_grieve"):
+            cautions.append("its passage tells a mourner not to grieve: leave that out and let the loss be as big as it is")
+        if re.search(r"suicid|end (his|her|their) life|self-harm|to death", warn, re.I):
+            cautions.append("the story around it involves someone wanting to die: never retell that part")
+        if wronged and re.search(r"abus|endur|tolerat|forgiv|put up with|past (deeds|karma|faults)|blame", warn, re.I):
+            cautions.append("they may be being harmed: never suggest they endure it, forgive yet, or caused it")
+        if LATE_TEXT.match(d["verse"]):
+            cautions.append("an early 20th-century text: never call it ancient scripture")
+        if cautions:
+            d["cautions"] = cautions
 
 
 def main():
@@ -366,9 +427,22 @@ def main():
             if v not in E.verses:
                 problems.append(f"{p['slug']} day1 alt {v} not in the library")
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    json.dump({"version": 1, "plans": plans}, open(OUT, "w"), ensure_ascii=False, indent=1)
+    C = json.load(open(CONTEXT))["verses"] if os.path.exists(CONTEXT) else {}
+    warnings = []  # what the research says about reviewed plans: proposed fixes are in data/plan_fixes_proposed.md
+    for p in plans:
+        enrich(p, C)
+        for d in p["days"]:
+            f = (C.get(d.get("verse")) or {}).get("data_flags", {})
+            for bad, what in [(f.get("translation_ok") is False, "translation or line off"), (f.get("attribution_ok") is False, "attribution or setting off"),
+                              (f.get("corrected_ref"), "wrong reference"), (LATE_TEXT.match(d.get("verse") or ""), "20th-century text"),
+                              (p["slug"] in GRIEF_PLANS and d["day"] <= 4 and f.get("tells_not_to_grieve"), "tells a mourner not to grieve, early in a loss plan")]:
+                if bad and p["reviewed"]:
+                    warnings.append(f"{p['slug']} day {d['day']} {d['verse']}: {what}")
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    json.dump({"version": 2, "plans": plans}, open(OUT, "w"), ensure_ascii=False, indent=1)
     print(f"{len(plans)} plans -> {OUT}")
     print("problems:", problems or "none")
+    print(f"reviewed plans, research warnings ({len(warnings)}):", *warnings, sep="\n  ")
 
 
 if __name__ == "__main__":

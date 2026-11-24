@@ -1,12 +1,12 @@
 {
- "asOf": "2026-11-23",
- "asOfLabel": "23 Nov 2026",
+ "asOf": "2026-11-24",
+ "asOfLabel": "24 Nov 2026",
  "goal": {
   "payers": 0,
   "payersNeeded": 307,
-  "installsWeek": 15,
+  "installsWeek": 16,
   "installsNeeded": 240,
-  "installsMonth": 61
+  "installsMonth": 63
  },
  "gates": [
   {
@@ -26,7 +26,7 @@
   {
    "name": "Site → app handoff",
    "hint": "App Store tap or /start",
-   "now": "1.2%",
+   "now": "1.1%",
    "nowNote": "",
    "target": "5%"
   }
@@ -34,27 +34,27 @@
  "fullFunnel": [
   [
    "Attention: search impressions + reel views",
-   117832,
-   "GSC 106,013 (18 Nov pull) · Zernio 11,819"
+   146509,
+   "GSC 134,254 · Zernio 12,255"
   ],
   [
    "Visited the site",
-   3468,
+   3544,
    "all sources, Mixpanel"
   ],
   [
    "Stepped toward the app",
-   40,
+   38,
    "App Store tap or /start sign-in"
   ],
   [
    "Installed",
-   64,
+   63,
    "all sources, incl. App Store search"
   ],
   [
    "Saw the paywall",
-   20,
+   22,
    "Paywall Viewed, app"
   ],
   [
@@ -63,13 +63,13 @@
    ""
   ]
  ],
- "fullFunnelNote": "Two sources feed the top. Search produced 106k impressions in 28 days as of the last GSC pull on 18 Nov, and social produced 11,819 views with 3 tagged site visits from Instagram. From \"Visited the site\" down, all sources are counted together and installs include App Store search, so the steps aren't one strict cohort. (stale: GSC unavailable)",
+ "fullFunnelNote": "Two sources feed the top. Search produced 134k impressions in 28 days and social produced 12,255 views with 3 tagged site visits from Instagram. From \"Visited the site\" down, all sources are counted together and installs include App Store search, so the steps aren't one strict cohort.",
  "obsess": [
   {
    "name": "Reel views / week",
    "def": "Zernio views, Instagram + YouTube, Wisdom profile",
-   "now": "4,464",
-   "nowNote": "16 to 22 Nov, -12% vs prior 7d; Lakshmana reel alone now 1,599",
+   "now": "4,890",
+   "nowNote": "16 to 22 Nov, -4% vs prior 7d; Lakshmana reel alone 1,600",
    "target": "20k",
    "state": "crit"
   },
@@ -77,30 +77,30 @@
    "name": "Reel hold",
    "def": "Instagram avg watch ÷ reel length (inverse of skip rate)",
    "now": "~16%",
-   "nowNote": "skip 62%",
+   "nowNote": "skip 63%",
    "target": "50%",
    "state": "crit"
   },
   {
    "name": "ICP search clicks / week",
    "def": "GSC clicks from US, UK, CA, AU",
-   "now": "36",
-   "nowNote": "US 21 · UK 10 · CA 4 · AU 1, 12 to 18 Nov (stale: GSC unavailable)",
+   "now": "39",
+   "nowNote": "US 19 · UK 10 · CA 6 · AU 4, 16 to 22 Nov",
    "target": "150",
    "state": "crit"
   },
   {
    "name": "Funnel-page search clicks / week",
    "def": "GSC clicks on the SEO funnel pages launched 31 Oct",
-   "now": "259",
-   "nowNote": "7 days to 18 Nov, last GSC pull; 10 of 11 hubs indexed (stale: GSC unavailable)",
+   "now": "340",
+   "nowNote": "7 days to 23 Nov; 9 of 11 hubs indexed",
    "target": "200",
    "state": "good"
   },
   {
    "name": "Site → app handoff",
    "def": "(App Store Button Clicked + Onboarding Signin Started) ÷ Page Viewed, uniques",
-   "now": "1.2%",
+   "now": "1.1%",
    "nowNote": "",
    "target": "5%",
    "state": "crit"
@@ -108,8 +108,8 @@
   {
    "name": "Installs / week",
    "def": "$ae_first_open, unique, prod builds",
-   "now": "15",
-   "nowNote": "avg of last 4 full weeks; week of 16 Nov finished at 15",
+   "now": "16",
+   "nowNote": "avg of last 4 full weeks; week of 16 Nov finished at 16",
    "target": "240",
    "state": "crit"
   },
@@ -160,11 +160,11 @@
   "sitemapSubmitted": 2016,
   "sitemapIndexed": 1963,
   "sitemapIndexedBaseline": 1665,
-  "hubsIndexed": 10,
+  "hubsIndexed": 9,
   "hubsTotal": 11,
-  "clicksSinceLaunch": 628,
-  "imprSinceLaunch": 50422,
-  "visitorsSinceLaunch": 1350,
+  "clicksSinceLaunch": 884,
+  "imprSinceLaunch": 72748,
+  "visitorsSinceLaunch": 1418,
   "handoffSinceLaunch": 3,
   "aiReferrals28": 12,
   "aiReferralsBaseline": 6,
@@ -189,12 +189,17 @@
     "15 Nov",
     "16 Nov",
     "17 Nov",
-    "18 Nov"
+    "18 Nov",
+    "19 Nov",
+    "20 Nov",
+    "21 Nov",
+    "22 Nov",
+    "23 Nov"
    ],
    "impr": [
     766,
     1438,
-    1705,
+    1706,
     1976,
     2270,
     2696,
@@ -207,10 +212,15 @@
     2423,
     3410,
     4023,
-    4012,
-    4158,
-    3318,
-    1908
+    4013,
+    4159,
+    3692,
+    3981,
+    4477,
+    4986,
+    5010,
+    3928,
+    1475
    ],
    "clicks": [
     9,
@@ -231,7 +241,12 @@
     34,
     34,
     55,
-    29
+    58,
+    62,
+    44,
+    65,
+    43,
+    13
    ],
    "visitors": [
     73,
@@ -252,7 +267,12 @@
     54,
     65,
     81,
-    81
+    81,
+    87,
+    63,
+    88,
+    59,
+    58
    ]
   },
   "byFunnel": [
@@ -260,80 +280,80 @@
     "funnel": "Hanuman Chalisa",
     "urls": 49,
     "hub": "indexed",
-    "impr": 4456,
-    "clicks": 44,
-    "pos": 7.6,
-    "visitors": 83,
+    "impr": 6531,
+    "clicks": 52,
+    "pos": 7.5,
+    "visitors": 88,
     "handoff": 0
    },
    {
     "funnel": "Other Gitas (Ashtavakra)",
     "urls": 65,
     "hub": "indexed",
-    "impr": 2929,
-    "clicks": 52,
-    "pos": 7.5,
-    "visitors": 115,
+    "impr": 3937,
+    "clicks": 72,
+    "pos": 7.0,
+    "visitors": 118,
     "handoff": 0
    },
    {
     "funnel": "Sayings (Vivekananda, Kabir, Chanakya)",
     "urls": 103,
     "hub": "indexed",
-    "impr": 11691,
-    "clicks": 148,
-    "pos": 7.1,
-    "visitors": 287,
+    "impr": 17573,
+    "clicks": 210,
+    "pos": 7.2,
+    "visitors": 304,
     "handoff": 1
    },
    {
     "funnel": "Ramayana",
     "urls": 18,
-    "hub": "unknown",
-    "impr": 5846,
-    "clicks": 91,
+    "hub": "discovered",
+    "impr": 6893,
+    "clicks": 107,
     "pos": 6.0,
-    "visitors": 215,
+    "visitors": 221,
     "handoff": 0
    },
    {
     "funnel": "Upanishads",
     "urls": 20,
     "hub": "indexed",
-    "impr": 4566,
-    "clicks": 50,
-    "pos": 7.7,
-    "visitors": 94,
+    "impr": 6153,
+    "clicks": 60,
+    "pos": 7.6,
+    "visitors": 100,
     "handoff": 1
    },
    {
     "funnel": "Mahabharata",
     "urls": 12,
     "hub": "indexed",
-    "impr": 738,
-    "clicks": 23,
-    "pos": 7.2,
-    "visitors": 57,
+    "impr": 856,
+    "clicks": 25,
+    "pos": 7.6,
+    "visitors": 62,
     "handoff": 0
    },
    {
     "funnel": "Ram Shalaka",
     "urls": 11,
     "hub": "indexed",
-    "impr": 8329,
-    "clicks": 49,
-    "pos": 7.9,
-    "visitors": 112,
+    "impr": 13946,
+    "clicks": 101,
+    "pos": 7.6,
+    "visitors": 127,
     "handoff": 0
    },
    {
     "funnel": "Quote pages",
     "urls": 12,
     "hub": "indexed",
-    "impr": 11867,
-    "clicks": 171,
-    "pos": 7.0,
-    "visitors": 387,
+    "impr": 16859,
+    "clicks": 257,
+    "pos": 6.8,
+    "visitors": 398,
     "handoff": 1
    }
   ],
@@ -341,23 +361,23 @@
    [
     "prabisi nagar kije sab kaja",
     "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
-    1026,
-    0,
-    9.1
+    1314,
+    1,
+    8.9
    ],
    [
     "krishna quotes",
     "/blogs/krishna-quotes",
-    794,
+    1187,
     6,
-    7.1
+    6.8
    ],
    [
     "ram shalaka",
     "/ram-shalaka",
-    513,
-    6,
-    9.8
+    1064,
+    9,
+    8.4
    ],
    [
     "कबीर के 50 दोहे",
@@ -367,60 +387,60 @@
     4.9
    ],
    [
-    "prabhu shri nagar kije sab kaja",
-    "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
-    281,
-    2,
-    8.5
+    "sanskrit bio for instagram",
+    "/blogs/sanskrit-shlok-for-instagram-bio",
+    355,
+    10,
+    7.7
    ],
    [
     "prabisi nagar kije sab kaja full chaupai",
     "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
-    278,
+    303,
     0,
-    8.4
+    8.5
+   ],
+   [
+    "prabhu shri nagar kije sab kaja",
+    "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
+    282,
+    2,
+    8.5
    ],
    [
     "jug sahastra jojan par bhanu meaning",
     "/hanuman-chalisa/18-jug-sahastra-jojan-par-bhanu",
-    219,
+    279,
     0,
-    10.7
-   ],
-   [
-    "sanskrit bio for instagram",
-    "/blogs/sanskrit-shlok-for-instagram-bio",
-    199,
-    3,
-    8.4
-   ],
-   [
-    "prabisi nagar kije sab kaja chaupai",
-    "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
-    183,
-    0,
-    8.3
+    10.4
    ],
    [
     "pravasi nagar kije sab kaja in hindi",
     "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
-    169,
+    262,
     1,
-    10.1
+    9.6
+   ],
+   [
+    "prabisi nagar kije sab kaja chaupai",
+    "/hi/ram-shalaka/prabisi-nagar-kije-sab-kaja",
+    228,
+    0,
+    8.4
    ]
   ],
-  "note": "GSC still has not answered since the 18 Nov pull, so search numbers stop there: 628 clicks on 50k impressions, with 10 of 11 hubs indexed. About 1,350 people have now visited these pages and 3 stepped toward the app. AI referrals rose to 12, mostly ChatGPT, and another 144 site visitors in 28 days arrived tagged utm_source=chatgpt.com. (stale: GSC unavailable)",
+  "note": "GSC is answering again: funnel pages have 884 clicks on 72.7k impressions since launch, and 340 clicks in the last 7 days, well past the 200 target. Ramayana is still only discovered and /hi/chanakya-niti is now flagged as a soft 404, so 9 of 11 hubs are indexed. About 1,420 people have visited these pages but only 3 stepped toward the app; AI referrals hold at 12.",
   "launchLabel": "31 Oct"
  },
  "social": {
-  "range": "20 Sep to 22 Nov",
-  "views7": 4464,
-  "views7Delta": "-12% vs prior 7d",
+  "range": "20 Sep to 23 Nov",
+  "views7": 4890,
+  "views7Delta": "-4% vs prior 7d",
   "views7Good": false,
-  "followersTotal": 194,
-  "followersDetail": "IG 64 (+7) · YT 96 (+28) · X 34 (+2), last 6 weeks",
-  "skip": "62%",
-  "avgWatch": "avg watch 9.7s of ~60s",
+  "followersTotal": 195,
+  "followersDetail": "IG 64 (+7) · YT 97 (+29) · X 34 (+2), last 6 weeks",
+  "skip": "63%",
+  "avgWatch": "avg watch 9.3s of ~58s",
   "siteVisits28": 3,
   "weekly": {
    "labels": [
@@ -441,7 +461,7 @@
     234,
     1364,
     982,
-    3128
+    3143
    ],
    "yt": [
     0,
@@ -450,25 +470,25 @@
     0,
     436,
     232,
-    4107,
-    1336
+    4115,
+    1747
    ]
   },
-  "weeklyNote": "Views count toward the week a post was published. Volume tracks how often you post and whether YouTube picks up a Short: the week of 9 Nov finished at 5,089 views, 4,107 of them on YouTube. The week of 16 Nov finished at 4,464, with Instagram at 3,128, its best week yet.",
+  "weeklyNote": "Views count toward the week a post was published. Volume tracks how often you post and whether YouTube picks up a Short: the week of 9 Nov finished at 5,097 views, 4,115 of them on YouTube. The week of 16 Nov finished at 4,890, with Instagram at 3,143, its best week yet.",
   "funnel": [
    [
     "Reel views",
-    11819,
-    "Instagram 5,708 · YouTube 6,111, 28 days"
+    12255,
+    "Instagram 5,723 · YouTube 6,532, 28 days"
    ],
    [
     "Reached (Instagram)",
-    4949,
+    4958,
     ""
    ],
    [
     "Engaged",
-    305,
+    315,
     "likes, saves, shares, comments"
    ],
    [
@@ -482,12 +502,12 @@
     "Mixpanel, utm_source=instagram or ig"
    ]
   ],
-  "funnelNote": "Of 11,819 views in 28 days, 305 led to a like, save, share or comment (2.6%). Zernio shows 2 profile views and still 0 website clicks, and Mixpanel has only 3 site visitors tagged from Instagram in 28 days.",
+  "funnelNote": "Of 12,255 views in 28 days, 315 led to a like, save, share or comment (2.6%). Zernio shows 2 profile views and still 0 website clicks, and Mixpanel has only 3 site visitors tagged from Instagram in 28 days.",
   "posts": [
    [
     "Lakshmana drew a line, and Sita was safe inside it",
     "Ramayana",
-    1599,
+    1600,
     11,
     0,
     "48%",
@@ -521,6 +541,15 @@
     "17.9s / 79s"
    ],
    [
+    "Was Ahalya really turned to stone?",
+    "Ramayana",
+    238,
+    3,
+    1,
+    "58%",
+    "10.0s / 80s"
+   ],
+   [
     "Parashurama stormed in over a broken bow",
     "Valmiki vs Tulsidas",
     236,
@@ -528,15 +557,6 @@
     1,
     "46%",
     "11.6s / 75s"
-   ],
-   [
-    "Was Ahalya really turned to stone?",
-    "Ramayana",
-    234,
-    3,
-    1,
-    "58%",
-    "9.6s / 80s"
    ],
    [
     "Everyone your age seems so far ahead of you",
@@ -548,21 +568,20 @@
     "3.0s / 13s"
    ]
   ],
-  "postsNote": "The 19 Nov Lakshmana reel leads at 1,599 views and 48% skip, almost 3x the old leader (584). The Jatayu reel reached 396 at 47% skip, while the short overthinking reels from 18 to 22 Nov sit at 75 to 81%, so the Valmiki vs Tulsidas hooks are what hold."
+  "postsNote": "The 19 Nov Lakshmana reel leads at 1,600 views and 48% skip, almost 3x the next best (584). The Valmiki vs Tulsidas reels hold at 46 to 58% skip, while the short overthinking reels from 18 to 22 Nov sit at 75 to 81%, so the story hooks are what hold."
  },
  "web": {
-  "clicks7": 637,
-  "clicks7Delta": "+5% vs prior 7d",
+  "clicks7": 826,
+  "clicks7Delta": "+36% vs prior 7d",
   "clicks7Good": true,
-  "visitors28": 3468,
-  "visitorsMix": "77% from search, 18% direct",
+  "visitors28": 3544,
+  "visitorsMix": "78% from search, 18% direct",
   "icpShare": "17%",
-  "icpDetail": "US 461 · UK 59 · CA 43 · AU 19",
+  "icpDetail": "US 469 · UK 60 · CA 45 · AU 19",
   "appTaps28": 29,
   "appTapsPct": "0.8% of visitors",
   "weeklyClicks": {
    "labels": [
-    "21 Sep",
     "28 Sep",
     "5 Oct",
     "12 Oct",
@@ -570,10 +589,10 @@
     "26 Oct",
     "2 Nov",
     "9 Nov",
-    "16 Nov"
+    "16 Nov",
+    "23 Nov"
    ],
    "clicks": [
-    159,
     137,
     130,
     146,
@@ -581,10 +600,10 @@
     433,
     564,
     608,
-    298
+    826,
+    41
    ],
    "impr": [
-    7775,
     6234,
     5912,
     6721,
@@ -592,13 +611,13 @@
     18209,
     30258,
     35470,
-    16614
+    49500,
+    2805
    ]
   },
-  "weeklyClicksNote": "The week of 9 Nov finished at 608 clicks on 35.5k impressions, a new best, up from 564 the week before. CTR kept slipping, to about 1.7%, as impressions grew faster than clicks. The week of 16 Nov has 298 clicks after 3 days at about 1.8% CTR. (stale: GSC unavailable)",
+  "weeklyClicksNote": "The week of 16 Nov finished at 826 clicks on 49.5k impressions, a new best and 36% up on the 608 the week before. CTR held at about 1.7% as impressions kept growing. The week of 23 Nov has 41 clicks after 1 day.",
   "weeklyVisitors": {
    "labels": [
-    "21 Sep",
     "28 Sep",
     "5 Oct",
     "12 Oct",
@@ -606,10 +625,10 @@
     "26 Oct",
     "2 Nov",
     "9 Nov",
-    "16 Nov"
+    "16 Nov",
+    "23 Nov"
    ],
    "values": [
-    295,
     863,
     296,
     341,
@@ -617,20 +636,21 @@
     619,
     848,
     916,
-    938
+    1135,
+    123
    ]
   },
-  "weeklyVisitorsNote": "The 28 Sep spike (863) was a one-off. Underneath it, visitors were flat at about 300 a week until the week of 26 Oct, which reached 619. Every week since has grown: 848, then 916, then 938 for the week of 16 Nov, the best so far.",
-  "handoffNote": "GSC: 106,013 impressions → 2,012 clicks (1.9% CTR), 28 days to 18 Nov (stale: GSC unavailable)",
+  "weeklyVisitorsNote": "The 28 Sep spike (863) was a one-off. Underneath it, visitors were flat at about 300 a week until the week of 26 Oct, which reached 619. Every week since has grown: 848, then 916, then 1,135 for the week of 16 Nov, the first above 1,000.",
+  "handoffNote": "GSC: 134,254 impressions → 2,423 clicks (1.8% CTR), 28 days to 23 Nov",
   "handoff": [
    [
     "Site visitors",
-    3468,
+    3544,
     "all sources"
    ],
    [
     "Played a shloka",
-    168,
+    163,
     "engaged"
    ],
    [
@@ -642,27 +662,27 @@
   "start": [
    [
     "Opened /start",
-    128,
+    119,
     ""
    ],
    [
     "Answered a question",
-    72,
+    68,
     ""
    ],
    [
     "Verses generated",
-    35,
+    34,
     ""
    ],
    [
     "Started Google sign-in",
-    10,
+    9,
     ""
    ],
    [
     "Signed in",
-    5,
+    4,
     ""
    ],
    [
@@ -671,71 +691,71 @@
     ""
    ]
   ],
-  "startNote": "Only half of the people who answer a question get to see verses (35 of 72). That is the leak to fix first: the verse should appear before they are asked anything else. Web /start completions are 5 of 128 in 28 days.",
+  "startNote": "Only half of the people who answer a question get to see verses (34 of 68). That is the leak to fix first: the verse should appear before they are asked anything else. Web /start completions are 5 of 119 in 28 days.",
   "split": [
    [
     "India",
-    2657
+    2719
    ],
    [
     "US / UK / CA / AU (ICP)",
-    582
+    593
    ],
    [
     "Rest of world",
-    229
+    232
    ]
   ],
-  "splitNote": "Your ICP is the diaspora (US, UK, CA, AU), but they are fewer than 1 in 5 visitors: 582 of 3,468 in 28 days, against 2,657 from India.",
+  "splitNote": "Your ICP is the diaspora (US, UK, CA, AU), but they are fewer than 1 in 5 visitors: 593 of 3,544 in 28 days, against 2,719 from India.",
   "topPages": [
    [
     "/hi/gita",
-    536,
-    "3.8%",
-    6.1
-   ],
-   [
-    "/blogs/karma-quotes-bhagavad-gita",
-    286,
-    "3.8%",
-    5.0
-   ],
-   [
-    "/blogs/krishna-quotes",
-    139,
-    "1.3%",
-    6.3
-   ],
-   [
-    "/blogs/20-famous-sanskrit-shlokas",
-    131,
-    "2.5%",
+    644,
+    "3.7%",
     6.0
    ],
    [
-    "/ (home)",
-    52,
-    "3.6%",
-    6.6
+    "/blogs/karma-quotes-bhagavad-gita",
+    312,
+    "3.8%",
+    4.7
+   ],
+   [
+    "/blogs/krishna-quotes",
+    153,
+    "1.3%",
+    6.2
+   ],
+   [
+    "/blogs/20-famous-sanskrit-shlokas",
+    127,
+    "2.4%",
+    6.0
    ],
    [
     "/blogs/sanskrit-shlok-for-instagram-bio",
-    46,
-    "2.1%",
-    7.7
+    96,
+    "2.3%",
+    7.5
+   ],
+   [
+    "/ (home)",
+    55,
+    "3.8%",
+    6.7
    ]
   ],
-  "topPagesNote": "The top page is the Hindi Gita page, which pulls Indian, Hindi-reading visitors (not the ICP). The English blogs at 1.3 to 2.1% CTR (Krishna quotes, Sanskrit shlok for Instagram bio) are where better titles pay off for the diaspora. (stale: GSC unavailable)"
+  "topPagesNote": "The top page is the Hindi Gita page, which pulls Indian, Hindi-reading visitors (not the ICP). The English blogs at 1.3 to 2.4% CTR (Krishna quotes, Sanskrit shlok for Instagram bio) are where better titles pay off for the diaspora."
  },
  "app": {
-  "installs4w": 64,
-  "installs4wNote": "~15 a week, almost all from the App Store directly; week of 16 Nov finished at 15",
+  "installs4w": 62,
+  "installs4wNote": "~16 a week, almost all from the App Store directly; week of 16 Nov finished at 16",
   "wau": 22,
   "wauNote": "week of 16 Nov, all versions",
-  "d1": "12%",
+  "d1": "13%",
   "d7": "Day 7: 2%",
   "purchases": 0,
-  "purchasesNote": "real purchases, 60 days · no rc_ events yet · 20 saw the paywall in 28 days",
+  "purchasesNote": "real purchases, 60 days · no rc_ events yet · 22 saw the paywall in 28 days",
   "v2": [
    [
     "Installed",
@@ -804,7 +824,6 @@
   "v3Note": "Now production data: 3.0.0 went live on the App Store on 3 Nov, and this counts installs on 3.0.0 from 3 to 9 Nov (1-day window). n = 15, so read it for shape, not rates. One person started a purchase; no RevenueCat events confirm it yet, and $ae_iap still mixes in sandbox tests.",
   "installsWeekly": {
    "labels": [
-    "21 Sep",
     "28 Sep",
     "5 Oct",
     "12 Oct",
@@ -812,10 +831,10 @@
     "26 Oct",
     "2 Nov",
     "9 Nov",
-    "16 Nov"
+    "16 Nov",
+    "23 Nov"
    ],
    "all": [
-    11,
     10,
     12,
     23,
@@ -823,10 +842,10 @@
     16,
     20,
     10,
-    15
+    16,
+    1
    ],
    "v3": [
-    0,
     0,
     0,
     7,
@@ -834,15 +853,16 @@
     3,
     16,
     10,
-    15
+    16,
+    1
    ]
   },
   "retention": [
    87,
-   12,
+   13,
    10,
    12,
-   8,
+   9,
    3,
    7,
    2

@@ -1,0 +1,2065 @@
+{
+ "run": "v2/eval/runs/fix1/dev.jsonl",
+ "golden": "v2/eval/golden/golden_v1.jsonl",
+ "prompt_version": [
+  "eae6b2b3"
+ ],
+ "plans_version": [
+  "v2-4088d1f8"
+ ],
+ "all": {
+  "n": 464,
+  "n_plan": 409,
+  "n_none": 26,
+  "n_safety": 29,
+  "top3_recall": 0.8313,
+  "plan_accuracy": 0.8023,
+  "false_match_rate": 0.0769,
+  "safety_recall": 1.0,
+  "safety_exact": 1.0,
+  "safety_false_alarms": 2,
+  "fallback_rate": 0.0652,
+  "sarvam_failed": 0,
+  "p50_ms": 2319,
+  "p95_ms": 3183,
+  "day_p95_ms": 883,
+  "cost_per_plan": 0.1489,
+  "weeks_sampled": 19
+ },
+ "release": {
+  "n": 250,
+  "n_plan": 195,
+  "n_none": 26,
+  "n_safety": 29,
+  "top3_recall": 0.8718,
+  "plan_accuracy": 0.8235,
+  "false_match_rate": 0.0769,
+  "safety_recall": 1.0,
+  "safety_exact": 1.0,
+  "safety_false_alarms": 0,
+  "fallback_rate": 0.0758,
+  "sarvam_failed": 0,
+  "p50_ms": 2247,
+  "p95_ms": 3082,
+  "day_p95_ms": 817,
+  "cost_per_plan": 0.1456,
+  "weeks_sampled": 14
+ },
+ "draft": {
+  "n": 214,
+  "n_plan": 214,
+  "n_none": 0,
+  "n_safety": 0,
+  "top3_recall": 0.7944,
+  "plan_accuracy": 0.7804,
+  "false_match_rate": null,
+  "safety_recall": null,
+  "safety_exact": null,
+  "safety_false_alarms": 2,
+  "fallback_rate": 0.0542,
+  "sarvam_failed": 0,
+  "p50_ms": 2391,
+  "p95_ms": 3230,
+  "day_p95_ms": 1023,
+  "cost_per_plan": 0.1512,
+  "weeks_sampled": 5
+ },
+ "by": {
+  "type": {
+   "borderline": {
+    "n": 46,
+    "n_plan": 46,
+    "n_none": 0,
+    "n_safety": 0,
+    "top3_recall": 0.9783,
+    "plan_accuracy": 0.9783,
+    "false_match_rate": null,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.1087,
+    "sarvam_failed": 0,
+    "p50_ms": 2365,
+    "p95_ms": 3221,
+    "day_p95_ms": 517,
+    "cost_per_plan": 0.1692,
+    "weeks_sampled": 2
+   },
+   "labelled": {
+    "n": 336,
+    "n_plan": 336,
+    "n_none": 0,
+    "n_safety": 0,
+    "top3_recall": 0.7976,
+    "plan_accuracy": 0.7649,
+    "false_match_rate": null,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 2,
+    "fallback_rate": 0.0667,
+    "sarvam_failed": 0,
+    "p50_ms": 2349,
+    "p95_ms": 3200,
+    "day_p95_ms": 920,
+    "cost_per_plan": 0.1605,
+    "weeks_sampled": 13
+   },
+   "no_note": {
+    "n": 27,
+    "n_plan": 27,
+    "n_none": 0,
+    "n_safety": 0,
+    "top3_recall": 1.0,
+    "plan_accuracy": 0.8519,
+    "false_match_rate": null,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.037,
+    "sarvam_failed": 0,
+    "p50_ms": 2026,
+    "p95_ms": 2646,
+    "day_p95_ms": null,
+    "cost_per_plan": 0.0605,
+    "weeks_sampled": 0
+   },
+   "none": {
+    "n": 26,
+    "n_plan": 0,
+    "n_none": 26,
+    "n_safety": 0,
+    "top3_recall": null,
+    "plan_accuracy": 0.9231,
+    "false_match_rate": 0.0769,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2380,
+    "p95_ms": 3001,
+    "day_p95_ms": 1086,
+    "cost_per_plan": 0.1771,
+    "weeks_sampled": 2
+   },
+   "safety": {
+    "n": 29,
+    "n_plan": 0,
+    "n_none": 0,
+    "n_safety": 29,
+    "top3_recall": null,
+    "plan_accuracy": null,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": null,
+    "sarvam_failed": 0,
+    "p50_ms": 0,
+    "p95_ms": 764,
+    "day_p95_ms": 0,
+    "cost_per_plan": 0.0016,
+    "weeks_sampled": 2
+   }
+  },
+  "stance": {
+   "aspiration": {
+    "n": 43,
+    "n_plan": 43,
+    "n_none": 0,
+    "n_safety": 0,
+    "top3_recall": 0.9302,
+    "plan_accuracy": 0.8605,
+    "false_match_rate": null,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2150,
+    "p95_ms": 2810,
+    "day_p95_ms": 729,
+    "cost_per_plan": 0.1632,
+    "weeks_sampled": 2
+   },
+   "none": {
+    "n": 26,
+    "n_plan": 0,
+    "n_none": 26,
+    "n_safety": 0,
+    "top3_recall": null,
+    "plan_accuracy": 0.9231,
+    "false_match_rate": 0.0769,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2380,
+    "p95_ms": 3001,
+    "day_p95_ms": 1086,
+    "cost_per_plan": 0.1771,
+    "weeks_sampled": 2
+   },
+   "seeking": {
+    "n": 69,
+    "n_plan": 69,
+    "n_none": 0,
+    "n_safety": 0,
+    "top3_recall": 0.913,
+    "plan_accuracy": 0.8406,
+    "false_match_rate": null,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0152,
+    "sarvam_failed": 0,
+    "p50_ms": 2261,
+    "p95_ms": 3169,
+    "day_p95_ms": 621,
+    "cost_per_plan": 0.1577,
+    "weeks_sampled": 1
+   },
+   "struggle": {
+    "n": 285,
+    "n_plan": 269,
+    "n_none": 0,
+    "n_safety": 16,
+    "top3_recall": 0.8104,
+    "plan_accuracy": 0.7807,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 2,
+    "fallback_rate": 0.0945,
+    "sarvam_failed": 0,
+    "p50_ms": 2350,
+    "p95_ms": 3230,
+    "day_p95_ms": 817,
+    "cost_per_plan": 0.1445,
+    "weeks_sampled": 11
+   },
+   "wronged": {
+    "n": 41,
+    "n_plan": 28,
+    "n_none": 0,
+    "n_safety": 13,
+    "top3_recall": 0.6786,
+    "plan_accuracy": 0.7143,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0714,
+    "sarvam_failed": 0,
+    "p50_ms": 2196,
+    "p95_ms": 3070,
+    "day_p95_ms": 1023,
+    "cost_per_plan": 0.1261,
+    "weeks_sampled": 3
+   }
+  },
+  "age": {
+   "25_34": {
+    "n": 130,
+    "n_plan": 110,
+    "n_none": 8,
+    "n_safety": 12,
+    "top3_recall": 0.7818,
+    "plan_accuracy": 0.7373,
+    "false_match_rate": 0.125,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 1,
+    "fallback_rate": 0.0455,
+    "sarvam_failed": 0,
+    "p50_ms": 2249,
+    "p95_ms": 3082,
+    "day_p95_ms": 779,
+    "cost_per_plan": 0.1421,
+    "weeks_sampled": 5
+   },
+   "35_44": {
+    "n": 121,
+    "n_plan": 111,
+    "n_none": 6,
+    "n_safety": 4,
+    "top3_recall": 0.8288,
+    "plan_accuracy": 0.8291,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 1,
+    "fallback_rate": 0.0619,
+    "sarvam_failed": 0,
+    "p50_ms": 2332,
+    "p95_ms": 3150,
+    "day_p95_ms": 883,
+    "cost_per_plan": 0.176,
+    "weeks_sampled": 4
+   },
+   "45_54": {
+    "n": 92,
+    "n_plan": 84,
+    "n_none": 5,
+    "n_safety": 3,
+    "top3_recall": 0.8452,
+    "plan_accuracy": 0.7753,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0465,
+    "sarvam_failed": 0,
+    "p50_ms": 2423,
+    "p95_ms": 3200,
+    "day_p95_ms": 920,
+    "cost_per_plan": 0.1631,
+    "weeks_sampled": 3
+   },
+   "55p": {
+    "n": 47,
+    "n_plan": 42,
+    "n_none": 3,
+    "n_safety": 2,
+    "top3_recall": 0.881,
+    "plan_accuracy": 0.8667,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0238,
+    "sarvam_failed": 0,
+    "p50_ms": 2290,
+    "p95_ms": 2807,
+    "day_p95_ms": 621,
+    "cost_per_plan": 0.1071,
+    "weeks_sampled": 2
+   },
+   "u25": {
+    "n": 74,
+    "n_plan": 62,
+    "n_none": 4,
+    "n_safety": 8,
+    "top3_recall": 0.871,
+    "plan_accuracy": 0.8636,
+    "false_match_rate": 0.25,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.1587,
+    "sarvam_failed": 0,
+    "p50_ms": 2220,
+    "p95_ms": 3378,
+    "day_p95_ms": 1023,
+    "cost_per_plan": 0.1403,
+    "weeks_sampled": 5
+   }
+  },
+  "feeling": {
+   "angry": {
+    "n": 25,
+    "n_plan": 23,
+    "n_none": 1,
+    "n_safety": 1,
+    "top3_recall": 0.913,
+    "plan_accuracy": 0.9167,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.087,
+    "sarvam_failed": 0,
+    "p50_ms": 2239,
+    "p95_ms": 3001,
+    "day_p95_ms": 514,
+    "cost_per_plan": 0.1609,
+    "weeks_sampled": 1
+   },
+   "anxious": {
+    "n": 54,
+    "n_plan": 45,
+    "n_none": 2,
+    "n_safety": 7,
+    "top3_recall": 0.6889,
+    "plan_accuracy": 0.6596,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.1111,
+    "sarvam_failed": 0,
+    "p50_ms": 2338,
+    "p95_ms": 2964,
+    "day_p95_ms": 514,
+    "cost_per_plan": 0.1248,
+    "weeks_sampled": 3
+   },
+   "curious": {
+    "n": 28,
+    "n_plan": 15,
+    "n_none": 13,
+    "n_safety": 0,
+    "top3_recall": 1.0,
+    "plan_accuracy": 0.8571,
+    "false_match_rate": 0.1538,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2120,
+    "p95_ms": 2558,
+    "day_p95_ms": 1086,
+    "cost_per_plan": 0.1911,
+    "weeks_sampled": 1
+   },
+   "determined": {
+    "n": 16,
+    "n_plan": 15,
+    "n_none": 1,
+    "n_safety": 0,
+    "top3_recall": 1.0,
+    "plan_accuracy": 0.9375,
+    "false_match_rate": 0.0,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2223,
+    "p95_ms": 2750,
+    "day_p95_ms": null,
+    "cost_per_plan": 0.0617,
+    "weeks_sampled": 0
+   },
+   "empty": {
+    "n": 38,
+    "n_plan": 32,
+    "n_none": 0,
+    "n_safety": 6,
+    "top3_recall": 0.8125,
+    "plan_accuracy": 0.7188,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 1,
+    "fallback_rate": 0.0345,
+    "sarvam_failed": 0,
+    "p50_ms": 2197,
+    "p95_ms": 3221,
+    "day_p95_ms": null,
+    "cost_per_plan": 0.0592,
+    "weeks_sampled": 0
+   },
+   "grateful": {
+    "n": 18,
+    "n_plan": 17,
+    "n_none": 1,
+    "n_safety": 0,
+    "top3_recall": 0.9412,
+    "plan_accuracy": 0.7778,
+    "false_match_rate": 0.0,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0556,
+    "sarvam_failed": 0,
+    "p50_ms": 2348,
+    "p95_ms": 3194,
+    "day_p95_ms": null,
+    "cost_per_plan": 0.0702,
+    "weeks_sampled": 0
+   },
+   "guilty": {
+    "n": 21,
+    "n_plan": 20,
+    "n_none": 0,
+    "n_safety": 1,
+    "top3_recall": 0.9,
+    "plan_accuracy": 0.8,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.3,
+    "sarvam_failed": 0,
+    "p50_ms": 2592,
+    "p95_ms": 3377,
+    "day_p95_ms": 920,
+    "cost_per_plan": 0.1731,
+    "weeks_sampled": 1
+   },
+   "hopeful": {
+    "n": 15,
+    "n_plan": 14,
+    "n_none": 1,
+    "n_safety": 0,
+    "top3_recall": 0.9286,
+    "plan_accuracy": 1.0,
+    "false_match_rate": 0.0,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2211,
+    "p95_ms": 2962,
+    "day_p95_ms": 440,
+    "cost_per_plan": 0.1539,
+    "weeks_sampled": 1
+   },
+   "hurt": {
+    "n": 36,
+    "n_plan": 31,
+    "n_none": 0,
+    "n_safety": 5,
+    "top3_recall": 0.9032,
+    "plan_accuracy": 0.9355,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0645,
+    "sarvam_failed": 0,
+    "p50_ms": 2274,
+    "p95_ms": 3191,
+    "day_p95_ms": 1023,
+    "cost_per_plan": 0.1654,
+    "weeks_sampled": 3
+   },
+   "inspired": {
+    "n": 14,
+    "n_plan": 13,
+    "n_none": 1,
+    "n_safety": 0,
+    "top3_recall": 0.8462,
+    "plan_accuracy": 0.9286,
+    "false_match_rate": 0.0,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2110,
+    "p95_ms": 2914,
+    "day_p95_ms": 729,
+    "cost_per_plan": 0.1709,
+    "weeks_sampled": 1
+   },
+   "lonely": {
+    "n": 29,
+    "n_plan": 25,
+    "n_none": 0,
+    "n_safety": 4,
+    "top3_recall": 0.88,
+    "plan_accuracy": 0.8,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2344,
+    "p95_ms": 3379,
+    "day_p95_ms": 817,
+    "cost_per_plan": 0.1699,
+    "weeks_sampled": 1
+   },
+   "lost": {
+    "n": 33,
+    "n_plan": 31,
+    "n_none": 1,
+    "n_safety": 1,
+    "top3_recall": 0.7419,
+    "plan_accuracy": 0.7812,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0645,
+    "sarvam_failed": 0,
+    "p50_ms": 2384,
+    "p95_ms": 3681,
+    "day_p95_ms": 779,
+    "cost_per_plan": 0.1846,
+    "weeks_sampled": 1
+   },
+   "overthinking": {
+    "n": 21,
+    "n_plan": 20,
+    "n_none": 0,
+    "n_safety": 1,
+    "top3_recall": 0.85,
+    "plan_accuracy": 0.75,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.1,
+    "sarvam_failed": 0,
+    "p50_ms": 2452,
+    "p95_ms": 3335,
+    "day_p95_ms": 1023,
+    "cost_per_plan": 0.1583,
+    "weeks_sampled": 2
+   },
+   "peaceful": {
+    "n": 23,
+    "n_plan": 21,
+    "n_none": 2,
+    "n_safety": 0,
+    "top3_recall": 1.0,
+    "plan_accuracy": 0.8696,
+    "false_match_rate": 0.0,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0,
+    "sarvam_failed": 0,
+    "p50_ms": 2242,
+    "p95_ms": 2867,
+    "day_p95_ms": 621,
+    "cost_per_plan": 0.1535,
+    "weeks_sampled": 1
+   },
+   "restless": {
+    "n": 37,
+    "n_plan": 33,
+    "n_none": 3,
+    "n_safety": 1,
+    "top3_recall": 0.6667,
+    "plan_accuracy": 0.6389,
+    "false_match_rate": 0.0,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 1,
+    "fallback_rate": 0.0968,
+    "sarvam_failed": 0,
+    "p50_ms": 2261,
+    "p95_ms": 3214,
+    "day_p95_ms": 1049,
+    "cost_per_plan": 0.1083,
+    "weeks_sampled": 2
+   },
+   "stuck": {
+    "n": 30,
+    "n_plan": 30,
+    "n_none": 0,
+    "n_safety": 0,
+    "top3_recall": 0.7333,
+    "plan_accuracy": 0.8,
+    "false_match_rate": null,
+    "safety_recall": null,
+    "safety_exact": null,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.069,
+    "sarvam_failed": 0,
+    "p50_ms": 2456,
+    "p95_ms": 3235,
+    "day_p95_ms": null,
+    "cost_per_plan": 0.0677,
+    "weeks_sampled": 0
+   },
+   "uneasy": {
+    "n": 26,
+    "n_plan": 24,
+    "n_none": 0,
+    "n_safety": 2,
+    "top3_recall": 0.7917,
+    "plan_accuracy": 0.8333,
+    "false_match_rate": null,
+    "safety_recall": 1.0,
+    "safety_exact": 1.0,
+    "safety_false_alarms": 0,
+    "fallback_rate": 0.0455,
+    "sarvam_failed": 0,
+    "p50_ms": 2140,
+    "p95_ms": 2869,
+    "day_p95_ms": 0,
+    "cost_per_plan": 0.0605,
+    "weeks_sampled": 1
+   }
+  }
+ },
+ "misses": [
+  {
+   "id": "bd-passed-over-02",
+   "type": "borderline",
+   "expect": [
+    "passed-over",
+    "not-good-enough"
+   ],
+   "plan": "fear-of-failure",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "work-feels-unsafe",
+    "overthinking"
+   ],
+   "confidence": 0.6618,
+   "draft": true
+  },
+  {
+   "id": "lab-anger-03",
+   "type": "labelled",
+   "expect": [
+    "anger"
+   ],
+   "plan": "passed-over",
+   "chosen_by": "model",
+   "top3": [
+    "anger",
+    "passed-over",
+    "guilt"
+   ],
+   "confidence": 0.6479,
+   "draft": false
+  },
+  {
+   "id": "lab-anger-04",
+   "type": "labelled",
+   "expect": [
+    "anger"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "overthinking",
+    "stress",
+    "fear-of-failure"
+   ],
+   "confidence": 0.6688,
+   "draft": false
+  },
+  {
+   "id": "lab-anger-11",
+   "type": "labelled",
+   "expect": [
+    "anger"
+   ],
+   "plan": "guilt",
+   "chosen_by": "model",
+   "top3": [
+    "guilt",
+    "far-from-parents",
+    "anger"
+   ],
+   "confidence": 0.7138,
+   "draft": false
+  },
+  {
+   "id": "lab-comparison-03",
+   "type": "labelled",
+   "expect": [
+    "comparison"
+   ],
+   "plan": "not-good-enough",
+   "chosen_by": "top_match",
+   "top3": [
+    "not-good-enough",
+    "comparison",
+    "guilt"
+   ],
+   "confidence": 0.6917,
+   "draft": false
+  },
+  {
+   "id": "lab-comparison-04",
+   "type": "labelled",
+   "expect": [
+    "comparison"
+   ],
+   "plan": "losing-hope",
+   "chosen_by": "model",
+   "top3": [
+    "cant-get-started",
+    "loneliness",
+    "decision-making"
+   ],
+   "confidence": 0.7194,
+   "draft": false
+  },
+  {
+   "id": "lab-comparison-05",
+   "type": "labelled",
+   "expect": [
+    "comparison"
+   ],
+   "plan": "passed-over",
+   "chosen_by": "model",
+   "top3": [
+    "grief",
+    "passed-over",
+    "stress"
+   ],
+   "confidence": 0.6839,
+   "draft": false
+  },
+  {
+   "id": "lab-comparison-06",
+   "type": "labelled",
+   "expect": [
+    "comparison"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "nothing-matters",
+    "decision-making"
+   ],
+   "confidence": 0.6836,
+   "draft": false
+  },
+  {
+   "id": "lab-decision-making-04",
+   "type": "labelled",
+   "expect": [
+    "decision-making"
+   ],
+   "plan": "stress",
+   "chosen_by": "model",
+   "top3": [
+    "work-feels-unsafe",
+    "comparison",
+    "not-good-enough"
+   ],
+   "confidence": 0.6736,
+   "draft": false
+  },
+  {
+   "id": "lab-devotion-05",
+   "type": "labelled",
+   "expect": [
+    "devotion"
+   ],
+   "plan": "first-week-with-the-gita",
+   "chosen_by": "model",
+   "top3": [
+    "devotion",
+    "first-week-with-the-gita",
+    "fear-of-failure"
+   ],
+   "confidence": 0.7251,
+   "draft": false
+  },
+  {
+   "id": "lab-devotion-17",
+   "type": "labelled",
+   "expect": [
+    "devotion"
+   ],
+   "plan": "first-week-with-the-gita",
+   "chosen_by": "model",
+   "top3": [
+    "first-week-with-the-gita",
+    "devotion",
+    "new-beginnings"
+   ],
+   "confidence": 0.6343,
+   "draft": false
+  },
+  {
+   "id": "lab-fear-of-failure-03",
+   "type": "labelled",
+   "expect": [
+    "fear-of-failure"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "overthinking",
+    "stress",
+    "running-on-empty"
+   ],
+   "confidence": 0.6776,
+   "draft": false
+  },
+  {
+   "id": "lab-fear-of-failure-16",
+   "type": "labelled",
+   "expect": [
+    "fear-of-failure"
+   ],
+   "plan": "stress",
+   "chosen_by": "top_match",
+   "top3": [
+    "stress",
+    "overthinking",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.7604,
+   "draft": false
+  },
+  {
+   "id": "lab-grief-03",
+   "type": "labelled",
+   "expect": [
+    "grief"
+   ],
+   "plan": "loneliness",
+   "chosen_by": "model",
+   "top3": [
+    "loneliness",
+    "someone-left",
+    "far-from-parents"
+   ],
+   "confidence": 0.6706,
+   "draft": false
+  },
+  {
+   "id": "lab-grief-09",
+   "type": "labelled",
+   "expect": [
+    "grief"
+   ],
+   "plan": "someone-left",
+   "chosen_by": "model",
+   "top3": [
+    "running-on-empty",
+    "nothing-matters",
+    "losing-hope"
+   ],
+   "confidence": 0.6781,
+   "draft": false
+  },
+  {
+   "id": "lab-grief-16",
+   "type": "labelled",
+   "expect": [
+    "grief"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "top_match",
+   "top3": [
+    "nothing-matters",
+    "running-on-empty",
+    "loneliness"
+   ],
+   "confidence": 0.7728,
+   "draft": false
+  },
+  {
+   "id": "lab-guilt-08",
+   "type": "labelled",
+   "expect": [
+    "guilt"
+   ],
+   "plan": "not-good-enough",
+   "chosen_by": "model",
+   "top3": [
+    "not-good-enough",
+    "guilt",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.6603,
+   "draft": false
+  },
+  {
+   "id": "lab-joy-10",
+   "type": "labelled",
+   "expect": [
+    "joy"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "joy",
+    "devotion",
+    "gratitude"
+   ],
+   "confidence": 0.7416,
+   "draft": false
+  },
+  {
+   "id": "lab-joy-13",
+   "type": "labelled",
+   "expect": [
+    "joy"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "joy",
+    "devotion",
+    "gratitude"
+   ],
+   "confidence": 0.7904,
+   "draft": false
+  },
+  {
+   "id": "lab-joy-14",
+   "type": "labelled",
+   "expect": [
+    "joy"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "gratitude",
+    "joy",
+    "success"
+   ],
+   "confidence": 0.7732,
+   "draft": false
+  },
+  {
+   "id": "lab-joy-16",
+   "type": "labelled",
+   "expect": [
+    "joy"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "gratitude",
+    "joy",
+    "devotion"
+   ],
+   "confidence": 0.7239,
+   "draft": false
+  },
+  {
+   "id": "lab-joy-17",
+   "type": "labelled",
+   "expect": [
+    "joy"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "joy",
+    "devotion",
+    "gratitude"
+   ],
+   "confidence": 0.7569,
+   "draft": false
+  },
+  {
+   "id": "lab-loneliness-05",
+   "type": "labelled",
+   "expect": [
+    "loneliness"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "nothing-matters",
+    "running-on-empty",
+    "cant-get-started"
+   ],
+   "confidence": 0.7499,
+   "draft": false
+  },
+  {
+   "id": "lab-loneliness-15",
+   "type": "labelled",
+   "expect": [
+    "loneliness"
+   ],
+   "plan": "far-from-parents",
+   "chosen_by": "model",
+   "top3": [
+    "loneliness",
+    "far-from-parents",
+    "someone-left"
+   ],
+   "confidence": 0.698,
+   "draft": false
+  },
+  {
+   "id": "lab-losing-hope-06",
+   "type": "labelled",
+   "expect": [
+    "losing-hope"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "nothing-matters",
+    "someone-left"
+   ],
+   "confidence": 0.8276,
+   "draft": false
+  },
+  {
+   "id": "lab-losing-hope-11",
+   "type": "labelled",
+   "expect": [
+    "losing-hope"
+   ],
+   "plan": "stress",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "running-on-empty",
+    "overthinking"
+   ],
+   "confidence": 0.6521,
+   "draft": false
+  },
+  {
+   "id": "lab-losing-hope-14",
+   "type": "labelled",
+   "expect": [
+    "losing-hope"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "nothing-matters",
+    "losing-hope",
+    "running-on-empty"
+   ],
+   "confidence": 0.6361,
+   "draft": false
+  },
+  {
+   "id": "lab-new-beginnings-03",
+   "type": "labelled",
+   "expect": [
+    "new-beginnings"
+   ],
+   "plan": "stress",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "work-feels-unsafe",
+    "fear-of-failure"
+   ],
+   "confidence": 0.66,
+   "draft": false
+  },
+  {
+   "id": "lab-new-beginnings-15",
+   "type": "labelled",
+   "expect": [
+    "new-beginnings"
+   ],
+   "plan": "keeping-a-resolve",
+   "chosen_by": "model",
+   "top3": [
+    "keeping-a-resolve",
+    "success",
+    "new-beginnings"
+   ],
+   "confidence": 0.6651,
+   "draft": false
+  },
+  {
+   "id": "lab-overthinking-12",
+   "type": "labelled",
+   "expect": [
+    "overthinking"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "top_match",
+   "top3": [
+    "running-on-empty",
+    "stress",
+    "overthinking"
+   ],
+   "confidence": 0.7219,
+   "draft": false
+  },
+  {
+   "id": "lab-stress-01",
+   "type": "labelled",
+   "expect": [
+    "stress"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "top_match",
+   "top3": [
+    "running-on-empty",
+    "stress",
+    "overthinking"
+   ],
+   "confidence": 0.7219,
+   "draft": false
+  },
+  {
+   "id": "lab-stress-05",
+   "type": "labelled",
+   "expect": [
+    "stress"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "work-feels-unsafe",
+    "overthinking"
+   ],
+   "confidence": 0.7593,
+   "draft": false
+  },
+  {
+   "id": "lab-stress-06",
+   "type": "labelled",
+   "expect": [
+    "stress"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "running-on-empty",
+    "overthinking"
+   ],
+   "confidence": 0.7174,
+   "draft": false
+  },
+  {
+   "id": "lab-stress-07",
+   "type": "labelled",
+   "expect": [
+    "stress"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "overthinking",
+    "stress",
+    "fear-of-failure"
+   ],
+   "confidence": 0.6927,
+   "draft": false
+  },
+  {
+   "id": "lab-stress-13",
+   "type": "labelled",
+   "expect": [
+    "stress"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "running-on-empty",
+    "overthinking"
+   ],
+   "confidence": 0.6678,
+   "draft": false
+  },
+  {
+   "id": "lab-stress-16",
+   "type": "labelled",
+   "expect": [
+    "stress"
+   ],
+   "plan": "work-feels-unsafe",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "decision-making",
+    "nothing-matters"
+   ],
+   "confidence": 0.6742,
+   "draft": false
+  },
+  {
+   "id": "lab-success-02",
+   "type": "labelled",
+   "expect": [
+    "success"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "gratitude",
+    "joy",
+    "keeping-a-resolve"
+   ],
+   "confidence": 0.7001,
+   "draft": false
+  },
+  {
+   "id": "lab-success-08",
+   "type": "labelled",
+   "expect": [
+    "success"
+   ],
+   "plan": "gratitude",
+   "chosen_by": "model",
+   "top3": [
+    "gratitude",
+    "success",
+    "joy"
+   ],
+   "confidence": 0.7593,
+   "draft": false
+  },
+  {
+   "id": "lab-running-on-empty-06",
+   "type": "labelled",
+   "expect": [
+    "running-on-empty"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "nothing-matters",
+    "decision-making"
+   ],
+   "confidence": 0.6354,
+   "draft": true
+  },
+  {
+   "id": "lab-running-on-empty-07",
+   "type": "labelled",
+   "expect": [
+    "running-on-empty"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "top_match",
+   "top3": [
+    "nothing-matters",
+    "running-on-empty",
+    "loneliness"
+   ],
+   "confidence": 0.7728,
+   "draft": true
+  },
+  {
+   "id": "lab-running-on-empty-09",
+   "type": "labelled",
+   "expect": [
+    "running-on-empty"
+   ],
+   "plan": "someone-hurting-you",
+   "chosen_by": "risk",
+   "top3": [],
+   "confidence": null,
+   "draft": true
+  },
+  {
+   "id": "lab-running-on-empty-13",
+   "type": "labelled",
+   "expect": [
+    "running-on-empty"
+   ],
+   "plan": "stress",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "running-on-empty",
+    "wanting-more"
+   ],
+   "confidence": 0.6741,
+   "draft": true
+  },
+  {
+   "id": "lab-work-feels-unsafe-13",
+   "type": "labelled",
+   "expect": [
+    "work-feels-unsafe"
+   ],
+   "plan": "losing-hope",
+   "chosen_by": "model",
+   "top3": [
+    "decision-making",
+    "wanting-more",
+    "losing-hope"
+   ],
+   "confidence": 0.6699,
+   "draft": true
+  },
+  {
+   "id": "lab-work-feels-unsafe-14",
+   "type": "labelled",
+   "expect": [
+    "work-feels-unsafe"
+   ],
+   "plan": "stress",
+   "chosen_by": "top_match",
+   "top3": [
+    "stress",
+    "overthinking",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.7604,
+   "draft": true
+  },
+  {
+   "id": "lab-passed-over-04",
+   "type": "labelled",
+   "expect": [
+    "passed-over"
+   ],
+   "plan": "comparison",
+   "chosen_by": "model",
+   "top3": [
+    "not-good-enough",
+    "comparison",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.657,
+   "draft": true
+  },
+  {
+   "id": "lab-passed-over-07",
+   "type": "labelled",
+   "expect": [
+    "passed-over"
+   ],
+   "plan": "comparison",
+   "chosen_by": "model",
+   "top3": [
+    "comparison",
+    "decision-making",
+    "stress"
+   ],
+   "confidence": 0.6931,
+   "draft": true
+  },
+  {
+   "id": "lab-passed-over-16",
+   "type": "labelled",
+   "expect": [
+    "passed-over"
+   ],
+   "plan": "hurt-by-someone-close",
+   "chosen_by": "model",
+   "top3": [
+    "hurt-by-someone-close",
+    "someone-left",
+    "grief"
+   ],
+   "confidence": 0.6313,
+   "draft": true
+  },
+  {
+   "id": "lab-hurt-by-someone-close-05",
+   "type": "labelled",
+   "expect": [
+    "hurt-by-someone-close"
+   ],
+   "plan": "loneliness",
+   "chosen_by": "model",
+   "top3": [
+    "loneliness",
+    "someone-left",
+    "far-from-parents"
+   ],
+   "confidence": 0.6883,
+   "draft": true
+  },
+  {
+   "id": "lab-hurt-by-someone-close-13",
+   "type": "labelled",
+   "expect": [
+    "hurt-by-someone-close"
+   ],
+   "plan": "losing-hope",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "someone-left",
+    "decision-making"
+   ],
+   "confidence": 0.7477,
+   "draft": true
+  },
+  {
+   "id": "lab-hurt-by-someone-close-14",
+   "type": "labelled",
+   "expect": [
+    "hurt-by-someone-close"
+   ],
+   "plan": "anger",
+   "chosen_by": "model",
+   "top3": [
+    "anger",
+    "passed-over",
+    "guilt"
+   ],
+   "confidence": 0.6193,
+   "draft": true
+  },
+  {
+   "id": "lab-hurt-by-someone-close-15",
+   "type": "labelled",
+   "expect": [
+    "hurt-by-someone-close"
+   ],
+   "plan": "someone-left",
+   "chosen_by": "model",
+   "top3": [
+    "someone-left",
+    "loneliness",
+    "far-from-parents"
+   ],
+   "confidence": 0.6463,
+   "draft": true
+  },
+  {
+   "id": "lab-someone-left-12",
+   "type": "labelled",
+   "expect": [
+    "someone-left"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "overthinking",
+    "someone-left",
+    "losing-hope"
+   ],
+   "confidence": 0.6578,
+   "draft": true
+  },
+  {
+   "id": "lab-someone-left-16",
+   "type": "labelled",
+   "expect": [
+    "someone-left"
+   ],
+   "plan": "loneliness",
+   "chosen_by": "model",
+   "top3": [
+    "someone-left",
+    "loneliness",
+    "grief"
+   ],
+   "confidence": 0.693,
+   "draft": true
+  },
+  {
+   "id": "lab-far-from-parents-09",
+   "type": "labelled",
+   "expect": [
+    "far-from-parents"
+   ],
+   "plan": "guilt",
+   "chosen_by": "model",
+   "top3": [
+    "far-from-parents",
+    "guilt",
+    "decision-making"
+   ],
+   "confidence": 0.7197,
+   "draft": true
+  },
+  {
+   "id": "lab-far-from-parents-10",
+   "type": "labelled",
+   "expect": [
+    "far-from-parents"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "fear-of-failure",
+    "far-from-parents"
+   ],
+   "confidence": 0.6567,
+   "draft": true
+  },
+  {
+   "id": "lab-far-from-parents-11",
+   "type": "labelled",
+   "expect": [
+    "far-from-parents"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "overthinking",
+    "fear-of-failure",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.6653,
+   "draft": true
+  },
+  {
+   "id": "lab-raising-kids-01",
+   "type": "labelled",
+   "expect": [
+    "raising-kids"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "top_match",
+   "top3": [
+    "running-on-empty",
+    "stress",
+    "raising-kids"
+   ],
+   "confidence": 0.7219,
+   "draft": true
+  },
+  {
+   "id": "lab-raising-kids-03",
+   "type": "labelled",
+   "expect": [
+    "raising-kids"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "overthinking",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.6337,
+   "draft": true
+  },
+  {
+   "id": "lab-raising-kids-15",
+   "type": "labelled",
+   "expect": [
+    "raising-kids"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "running-on-empty",
+    "nothing-matters",
+    "loneliness"
+   ],
+   "confidence": 0.6916,
+   "draft": true
+  },
+  {
+   "id": "lab-raising-kids-16",
+   "type": "labelled",
+   "expect": [
+    "raising-kids"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "overthinking",
+    "raising-kids",
+    "wanting-more"
+   ],
+   "confidence": 0.7133,
+   "draft": true
+  },
+  {
+   "id": "lab-raising-kids-17",
+   "type": "labelled",
+   "expect": [
+    "raising-kids"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "work-feels-unsafe",
+    "fear-of-failure"
+   ],
+   "confidence": 0.6262,
+   "draft": true
+  },
+  {
+   "id": "lab-cant-get-started-07",
+   "type": "labelled",
+   "expect": [
+    "cant-get-started"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "guilt",
+    "running-on-empty",
+    "far-from-parents"
+   ],
+   "confidence": 0.7161,
+   "draft": true
+  },
+  {
+   "id": "lab-cant-get-started-12",
+   "type": "labelled",
+   "expect": [
+    "cant-get-started"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "running-on-empty",
+    "stress",
+    "overthinking"
+   ],
+   "confidence": 0.6825,
+   "draft": true
+  },
+  {
+   "id": "lab-wanting-more-01",
+   "type": "labelled",
+   "expect": [
+    "wanting-more"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "top_match",
+   "top3": [
+    "running-on-empty",
+    "stress",
+    "overthinking"
+   ],
+   "confidence": 0.7219,
+   "draft": true
+  },
+  {
+   "id": "lab-wanting-more-05",
+   "type": "labelled",
+   "expect": [
+    "wanting-more"
+   ],
+   "plan": "stress",
+   "chosen_by": "model",
+   "top3": [
+    "decision-making",
+    "stress",
+    "cant-get-started"
+   ],
+   "confidence": 0.6791,
+   "draft": true
+  },
+  {
+   "id": "lab-wanting-more-15",
+   "type": "labelled",
+   "expect": [
+    "wanting-more"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "nothing-matters",
+    "running-on-empty",
+    "loneliness"
+   ],
+   "confidence": 0.6369,
+   "draft": true
+  },
+  {
+   "id": "lab-wanting-more-16",
+   "type": "labelled",
+   "expect": [
+    "wanting-more"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "guilt",
+    "far-from-parents",
+    "overthinking"
+   ],
+   "confidence": 0.7243,
+   "draft": true
+  },
+  {
+   "id": "lab-wanting-more-17",
+   "type": "labelled",
+   "expect": [
+    "wanting-more"
+   ],
+   "plan": "someone-hurting-you",
+   "chosen_by": "risk",
+   "top3": [],
+   "confidence": null,
+   "draft": true
+  },
+  {
+   "id": "lab-nothing-matters-02",
+   "type": "labelled",
+   "expect": [
+    "nothing-matters"
+   ],
+   "plan": "losing-hope",
+   "chosen_by": "top_match",
+   "top3": [
+    "losing-hope",
+    "decision-making",
+    "cant-get-started"
+   ],
+   "confidence": 0.7442,
+   "draft": true
+  },
+  {
+   "id": "lab-nothing-matters-08",
+   "type": "labelled",
+   "expect": [
+    "nothing-matters"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "running-on-empty",
+    "wanting-more"
+   ],
+   "confidence": 0.7443,
+   "draft": true
+  },
+  {
+   "id": "lab-nothing-matters-14",
+   "type": "labelled",
+   "expect": [
+    "nothing-matters"
+   ],
+   "plan": "running-on-empty",
+   "chosen_by": "model",
+   "top3": [
+    "running-on-empty",
+    "cant-get-started",
+    "stress"
+   ],
+   "confidence": 0.6912,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-01",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "fear-of-failure",
+   "chosen_by": "model",
+   "top3": [
+    "work-feels-unsafe",
+    "stress",
+    "fear-of-failure"
+   ],
+   "confidence": 0.7213,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-03",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "work-feels-unsafe",
+    "stress",
+    "fear-of-failure"
+   ],
+   "confidence": 0.6938,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-04",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "comparison",
+   "chosen_by": "model",
+   "top3": [
+    "work-feels-unsafe",
+    "not-good-enough",
+    "comparison"
+   ],
+   "confidence": 0.6817,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-09",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "decision-making",
+    "nothing-matters"
+   ],
+   "confidence": 0.7211,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-10",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "work-feels-unsafe",
+    "overthinking"
+   ],
+   "confidence": 0.6291,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-15",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "losing-hope",
+   "chosen_by": "model",
+   "top3": [
+    "decision-making",
+    "losing-hope",
+    "stress"
+   ],
+   "confidence": 0.7053,
+   "draft": true
+  },
+  {
+   "id": "lab-not-good-enough-17",
+   "type": "labelled",
+   "expect": [
+    "not-good-enough"
+   ],
+   "plan": "overthinking",
+   "chosen_by": "model",
+   "top3": [
+    "stress",
+    "fear-of-failure",
+    "overthinking"
+   ],
+   "confidence": 0.7577,
+   "draft": true
+  },
+  {
+   "id": "lab-keeping-a-resolve-14",
+   "type": "labelled",
+   "expect": [
+    "keeping-a-resolve"
+   ],
+   "plan": "wanting-more",
+   "chosen_by": "model",
+   "top3": [
+    "wanting-more",
+    "running-on-empty",
+    "overthinking"
+   ],
+   "confidence": 0.6869,
+   "draft": true
+  },
+  {
+   "id": "lab-first-week-with-the-gita-16",
+   "type": "labelled",
+   "expect": [
+    "first-week-with-the-gita"
+   ],
+   "plan": "nothing-matters",
+   "chosen_by": "model",
+   "top3": [
+    "losing-hope",
+    "nothing-matters",
+    "decision-making"
+   ],
+   "confidence": 0.6366,
+   "draft": true
+  },
+  {
+   "id": "nn-inspired-02",
+   "type": "no_note",
+   "expect": [
+    "new-beginnings",
+    "keeping-a-resolve"
+   ],
+   "plan": "success",
+   "chosen_by": "top_match",
+   "top3": [
+    "success",
+    "keeping-a-resolve",
+    "new-beginnings"
+   ],
+   "confidence": 0.7395,
+   "draft": true
+  },
+  {
+   "id": "nn-anxious-02",
+   "type": "no_note",
+   "expect": [
+    "comparison",
+    "overthinking",
+    "not-good-enough",
+    "raising-kids"
+   ],
+   "plan": "stress",
+   "chosen_by": "top_match",
+   "top3": [
+    "stress",
+    "overthinking",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.7604,
+   "draft": true
+  },
+  {
+   "id": "nn-anxious-03",
+   "type": "no_note",
+   "expect": [
+    "comparison",
+    "overthinking",
+    "far-from-parents",
+    "not-good-enough"
+   ],
+   "plan": "stress",
+   "chosen_by": "top_match",
+   "top3": [
+    "stress",
+    "overthinking",
+    "work-feels-unsafe"
+   ],
+   "confidence": 0.7604,
+   "draft": true
+  },
+  {
+   "id": "nn-anxious-04",
+   "type": "no_note",
+   "expect": [
+    "comparison",
+    "overthinking",
+    "not-good-enough"
+   ],
+   "plan": "stress",
+   "chosen_by": "top_match",
+   "top3": [
+    "stress",
+    "overthinking",
+    "not-good-enough"
+   ],
+   "confidence": 0.7604,
+   "draft": true
+  },
+  {
+   "id": "none-23",
+   "type": "none",
+   "expect": [
+    "none"
+   ],
+   "plan": "first-week-with-the-gita",
+   "chosen_by": "model",
+   "top3": [
+    "first-week-with-the-gita",
+    "devotion",
+    "fear-of-failure"
+   ],
+   "confidence": 0.808,
+   "draft": false
+  },
+  {
+   "id": "none-36",
+   "type": "none",
+   "expect": [
+    "none"
+   ],
+   "plan": "first-week-with-the-gita",
+   "chosen_by": "model",
+   "top3": [
+    "first-week-with-the-gita",
+    "devotion",
+    "keeping-a-resolve"
+   ],
+   "confidence": 0.7657,
+   "draft": false
+  }
+ ]
+}

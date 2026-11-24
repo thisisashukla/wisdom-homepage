@@ -1,0 +1,40 @@
+{
+  "version": "draft-2026-11-24",
+  "note": "Feeling word -> library situations offered as chips. 'primary' first, then 'also'. Draft for Ankur's review.",
+  "feelings": {
+    "overthinking": {"primary": ["overthinking", "outcome_anxiety", "sleep_mind", "restless_mind", "big_decision", "uncertainty"], "also": ["fear_failure", "comparison", "criticism", "present_parent", "parents_aging", "quit_or_stay"]},
+    "anxious":      {"primary": ["anxiety_general", "outcome_anxiety", "fear_failure", "uncertainty", "layoff", "money_stress"], "also": ["imposter", "illness_family", "parents_aging", "new_parent", "hard_conversation", "fear_death", "sleep_mind"]},
+    "restless":     {"primary": ["restless_mind", "burnout", "phone_addiction", "procrastination", "discipline", "greed_more"], "also": ["sleep_mind", "midlife", "change_life", "craving", "side_project", "new_parent"]},
+    "stuck":        {"primary": ["procrastination", "discipline", "quit_or_stay", "career_switch", "big_decision", "side_project"], "also": ["failure_project", "self_worth", "purpose_search", "midlife", "craving", "parents_expectations"]},
+    "uneasy":       {"primary": ["guilt", "moral_dilemma", "criticism", "self_worth", "toxic_boss", "people_pleasing"], "also": ["inlaws", "envy", "comparison", "shame", "imposter", "hard_conversation", "interfaith", "boundaries_family"]},
+    "lost":         {"primary": ["purpose_search", "no_meaning", "change_life", "career_switch", "layoff", "retirement"], "also": ["doubt_faith", "midlife", "diaspora_identity", "empty_nest", "failure_project"]},
+    "empty":        {"primary": ["burnout", "no_meaning", "grief_general", "grief_parent", "loneliness", "empty_nest"], "also": ["midlife", "retirement", "marriage_distance"]},
+    "lonely":       {"primary": ["loneliness", "homesick", "diaspora_identity", "breakup", "marriage_distance"], "also": ["empty_nest", "grief_general", "parents_aging", "sibling_rift"]},
+    "hurt":         {"primary": ["betrayal", "breakup", "credit_taken", "not_promoted", "criticism", "sibling_rift"], "also": ["self_worth", "envy", "marriage_conflict", "parent_conflict", "forgive", "resentment", "inlaws"]},
+    "angry":        {"primary": ["anger_outburst", "resentment", "toxic_boss", "credit_taken", "marriage_conflict", "teen_conflict"], "also": ["parent_conflict", "sibling_rift", "inlaws", "forgive", "betrayal"]},
+    "guilty":       {"primary": ["guilt", "shame", "present_parent", "parents_aging"], "also": ["anger_outburst", "craving", "phone_addiction", "parents_expectations", "moral_dilemma"]},
+    "grateful":     {"primary": ["gratitude", "morning_calm", "success_pride"], "also": ["reconnect_faith", "raising_kids_values"]},
+    "peaceful":     {"primary": ["morning_calm", "gratitude", "reconnect_faith"], "also": ["raising_kids_values", "retirement"]},
+    "hopeful":      {"primary": ["change_life", "career_switch", "side_project", "reconnect_faith"], "also": ["new_parent", "purpose_search", "discipline"]},
+    "determined":   {"primary": ["discipline", "procrastination", "side_project", "craving"], "also": ["phone_addiction", "career_switch", "fear_failure"]},
+    "inspired":     {"primary": ["side_project", "success_pride", "purpose_search", "raising_kids_values"], "also": ["career_switch", "reconnect_faith"]},
+    "curious":      {"primary": ["reconnect_faith", "doubt_faith", "purpose_search", "fear_death"], "also": ["interfaith", "diaspora_identity", "raising_kids_values"]}
+  },
+  "stages": {
+    "fit": {
+      "working": ["credit_taken", "burnout", "not_promoted", "toxic_boss", "hard_conversation", "quit_or_stay", "career_switch", "imposter", "failure_project", "money_stress"],
+      "own_thing": ["side_project", "failure_project", "burnout", "money_stress", "career_switch", "fear_failure", "imposter"],
+      "studying": ["fear_failure", "outcome_anxiety", "comparison", "imposter", "procrastination", "discipline", "parents_expectations", "phone_addiction", "purpose_search"],
+      "raising_kids": ["present_parent", "new_parent", "raising_kids_values", "teen_conflict", "marriage_conflict"],
+      "caring_parents": ["parents_aging", "parent_conflict", "parents_expectations", "illness_family", "inlaws"],
+      "retired": ["retirement", "empty_nest", "fear_death", "no_meaning", "reconnect_faith"]
+    },
+    "require": {"present_parent": ["raising_kids"], "new_parent": ["raising_kids"], "teen_conflict": ["raising_kids"], "raising_kids_values": ["raising_kids"], "retirement": ["retired"]},
+    "avoid": {"retired": ["layoff", "not_promoted", "credit_taken", "toxic_boss", "imposter", "career_switch", "quit_or_stay"]}
+  },
+  "reviewed_plan": {
+    "overthinking": "overthinking", "fear_failure": "fear-of-failure", "big_decision": "decision-making", "anger_outburst": "anger",
+    "comparison": "comparison", "grief_general": "grief", "grief_parent": "grief", "loneliness": "loneliness", "guilt": "guilt",
+    "gratitude": "gratitude", "reconnect_faith": "devotion", "change_life": "new-beginnings", "success_pride": "success"
+  }
+}
